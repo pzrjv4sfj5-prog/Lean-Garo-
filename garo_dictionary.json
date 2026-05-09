@@ -1,1305 +1,4577 @@
 {
   "_meta": {
     "language": "Garo",
-    "version": "2.0",
-    "description": "Garo language dictionary with classifier engine, vocabulary, and example sentences",
-    "source": "Garo Language Reference Document"
+    "version": "3.0",
+    "description": "Trilingual dictionary: English, Garo, and Hindi with classifier engine and examples",
+    "source": "Garo Language Reference Document",
+    "languages": [
+      "English",
+      "Garo",
+      "Hindi"
+    ]
   },
-
   "classifier_engine": {
     "_description": "Garo uses noun classifiers (like counters) that must be attached when referring to quantities of a noun. Use the correct classifier based on the noun category.",
     "Mang": {
-      "use_for": ["animals", "birds", "fish", "insects"],
+      "use_for": [
+        "animals",
+        "birds",
+        "fish",
+        "insects"
+      ],
       "examples": [
-        { "english": "one dog", "garo": "achak sa·mang" },
-        { "english": "two birds", "garo": "do·o gni·mang" },
-        { "english": "three fish", "garo": "na·tok gittam·mang" }
+        {
+          "english": "one dog",
+          "garo": "achak mang-sa",
+          "hindi": "एक कुत्ता"
+        },
+        {
+          "english": "two birds",
+          "garo": "do·o mang-gni",
+          "hindi": "दो पक्षी"
+        },
+        {
+          "english": "three fish",
+          "garo": "na·tok mang-gittam",
+          "hindi": "तीन मछलियाँ"
+        }
       ]
     },
     "Sak": {
-      "use_for": ["people", "persons", "humans"],
+      "use_for": [
+        "people",
+        "persons",
+        "humans"
+      ],
       "examples": [
-        { "english": "one person", "garo": "manderang sa·sak" },
-        { "english": "two teachers", "garo": "skigipa gni·sak" },
-        { "english": "three children", "garo": "bi·sa gittam·sak" }
+        {
+          "english": "one person",
+          "garo": "manderang sak-sa",
+          "hindi": "एक व्यक्ति"
+        },
+        {
+          "english": "two teachers",
+          "garo": "skigipa sak-gni",
+          "hindi": "दो शिक्षक"
+        },
+        {
+          "english": "three children",
+          "garo": "bi·sa sak-gittam",
+          "hindi": "तीन बच्चे"
+        }
       ]
     },
     "Gong": {
-      "use_for": ["money", "coins", "currency"],
+      "use_for": [
+        "money",
+        "coins",
+        "currency"
+      ],
       "examples": [
-        { "english": "one coin", "garo": "tangka sa·gong" },
-        { "english": "five rupees", "garo": "tangka bonga·gong" }
+        {
+          "english": "one coin",
+          "garo": "tangka gong-sa",
+          "hindi": "एक सिक्का"
+        },
+        {
+          "english": "five rupees",
+          "garo": "tangka gong-bonga",
+          "hindi": "पाँच रुपये"
+        }
       ]
     },
     "King": {
-      "use_for": ["books", "paper", "leaves", "flat thin objects"],
+      "use_for": [
+        "books",
+        "paper",
+        "leaves",
+        "flat thin objects"
+      ],
       "examples": [
-        { "english": "one book", "garo": "ki·tap sa·king" },
-        { "english": "two papers", "garo": "lekka gni·king" },
-        { "english": "three leaves", "garo": "bijak gittam·king" }
+        {
+          "english": "one book",
+          "garo": "ki·tap king-sa",
+          "hindi": "एक किताब"
+        },
+        {
+          "english": "two papers",
+          "garo": "lekka king-gni",
+          "hindi": "दो कागज़"
+        },
+        {
+          "english": "three leaves",
+          "garo": "bijak king-gittam",
+          "hindi": "तीन पत्ते"
+        }
       ]
     },
     "Ge": {
-      "use_for": ["objects", "things", "items", "tools", "general nouns"],
+      "use_for": [
+        "objects",
+        "things",
+        "items",
+        "tools",
+        "general nouns"
+      ],
       "examples": [
-        { "english": "one chair", "garo": "chokki sa·ge" },
-        { "english": "two knives", "garo": "kettal gni·ge" },
-        { "english": "three pots", "garo": "dik·ke gittam·ge" }
+        {
+          "english": "one chair",
+          "garo": "chokki ge-sa",
+          "hindi": "एक कुर्सी"
+        },
+        {
+          "english": "two knives",
+          "garo": "kettal ge-gni",
+          "hindi": "दो चाकू"
+        },
+        {
+          "english": "three pots",
+          "garo": "dik·ke ge-gittam",
+          "hindi": "तीन बर्तन"
+        }
       ]
     }
   },
-
   "pronouns": {
     "_classifier": null,
     "_examples": [
-      { "english": "I am going", "garo": "Anga re·ang·a" },
-      { "english": "You are eating", "garo": "Na·a cha·enga" },
-      { "english": "He is sleeping", "garo": "Ua tus·enga" },
-      { "english": "We are here", "garo": "An·ching iano dong·a" },
-      { "english": "They came", "garo": "Uamang re·ba·aha" }
+      {
+        "english": "I am going",
+        "garo": "Anga re·ang·a",
+        "hindi": "मैं जा रहा हूँ"
+      },
+      {
+        "english": "You are eating",
+        "garo": "Na·a cha·enga",
+        "hindi": "तुम खा रहे हो"
+      },
+      {
+        "english": "He is sleeping",
+        "garo": "Ua tus·enga",
+        "hindi": "वह सो रहा है"
+      },
+      {
+        "english": "We are here",
+        "garo": "An·ching iano dong·a",
+        "hindi": "हम यहाँ हैं"
+      },
+      {
+        "english": "They came",
+        "garo": "Uamang re·ba·aha",
+        "hindi": "वे आए"
+      }
     ],
-    "i": "Anga",
-    "me": "Angko",
-    "you (singular)": "Na·a",
-    "you (object)": "Nang·na / Nang·ko",
-    "he": "Ua",
-    "she": "Ua",
-    "him": "Una",
-    "her": "Una",
-    "we (excluding listener)": "Chinga",
-    "we (including listener)": "An·ching",
-    "us": "Chingna",
-    "they": "Uamang",
-    "them": "Uamangna",
-    "this": "Ia",
-    "that": "Ua",
-    "these": "Iamang",
-    "those": "Uamang",
-    "here": "Iano",
-    "there": "Uano"
+    "i": {
+      "garo": "Anga",
+      "hindi": "मैं"
+    },
+    "me": {
+      "garo": "Angko",
+      "hindi": "मुझे"
+    },
+    "you (singular)": {
+      "garo": "Na·a",
+      "hindi": "तुम / आप"
+    },
+    "you (object)": {
+      "garo": "Nang·na / Nang·ko",
+      "hindi": "तुम्हें / आपको"
+    },
+    "he": {
+      "garo": "Ua",
+      "hindi": "वह (पु.)"
+    },
+    "she": {
+      "garo": "Ua",
+      "hindi": "वह (स्त्री.)"
+    },
+    "him": {
+      "garo": "Una",
+      "hindi": "उसे (पु.)"
+    },
+    "her": {
+      "garo": "Una",
+      "hindi": "उसे (स्त्री.)"
+    },
+    "we (excluding listener)": {
+      "garo": "Chinga",
+      "hindi": "हम (श्रोता को छोड़कर)"
+    },
+    "we (including listener)": {
+      "garo": "An·ching",
+      "hindi": "हम (श्रोता सहित)"
+    },
+    "us": {
+      "garo": "Chingna",
+      "hindi": "हमें"
+    },
+    "they": {
+      "garo": "Uamang",
+      "hindi": "वे"
+    },
+    "them": {
+      "garo": "Uamangna",
+      "hindi": "उन्हें"
+    },
+    "this": {
+      "garo": "Ia",
+      "hindi": "यह"
+    },
+    "that": {
+      "garo": "Ua",
+      "hindi": "वह"
+    },
+    "these": {
+      "garo": "Iamang",
+      "hindi": "ये"
+    },
+    "those": {
+      "garo": "Uamang",
+      "hindi": "वे"
+    },
+    "here": {
+      "garo": "Iano",
+      "hindi": "यहाँ"
+    },
+    "there": {
+      "garo": "Uano",
+      "hindi": "वहाँ"
+    }
   },
-
   "possessive_pronouns": {
     "_classifier": null,
     "_examples": [
-      { "english": "It is mine", "garo": "Ia angni" },
-      { "english": "It is yours", "garo": "Ia nang·ni" },
-      { "english": "This is my house", "garo": "Ia angni nok" },
-      { "english": "Where is your father?", "garo": "Nang·ni paa bano?" },
-      { "english": "I did it myself", "garo": "Anga an·tang dakaia" }
+      {
+        "english": "It is mine",
+        "garo": "Ia angni",
+        "hindi": "यह मेरा है"
+      },
+      {
+        "english": "It is yours",
+        "garo": "Ia nang·ni",
+        "hindi": "यह तुम्हारा है"
+      },
+      {
+        "english": "This is my house",
+        "garo": "Ia angni nok",
+        "hindi": "यह मेरा घर है"
+      },
+      {
+        "english": "Where is your father?",
+        "garo": "Nang·ni paa bano?",
+        "hindi": "तुम्हारे पिता कहाँ हैं?"
+      },
+      {
+        "english": "I did it myself",
+        "garo": "Anga an·tang dakaia",
+        "hindi": "मैंने खुद किया"
+      }
     ],
-    "my / mine": "Angni",
-    "your / yours": "Nang·ni",
-    "his / her / hers": "Uni",
-    "our / ours": "Chingni / An·chingni",
-    "their / theirs": "Uamangni",
-    "whose?": "Sani?",
-    "someone's": "Saniba",
-    "everyone's": "Pilakni",
-    "myself": "Anga an·tang",
-    "yourself": "Na·a an·tang",
-    "himself / herself": "Ua an·tang",
-    "ourselves": "An·ching an·tangtang"
+    "my / mine": {
+      "garo": "Angni",
+      "hindi": "मेरा / मेरी"
+    },
+    "your / yours": {
+      "garo": "Nang·ni",
+      "hindi": "तुम्हारा / आपका"
+    },
+    "his / her / hers": {
+      "garo": "Uni",
+      "hindi": "उसका / उसकी"
+    },
+    "our / ours": {
+      "garo": "Chingni / An·chingni",
+      "hindi": "हमारा / हमारी"
+    },
+    "their / theirs": {
+      "garo": "Uamangni",
+      "hindi": "उनका / उनकी"
+    },
+    "whose?": {
+      "garo": "Sani?",
+      "hindi": "किसका?"
+    },
+    "someone's": {
+      "garo": "Saniba",
+      "hindi": "किसी का"
+    },
+    "everyone's": {
+      "garo": "Pilakni",
+      "hindi": "सबका"
+    },
+    "myself": {
+      "garo": "Anga an·tang",
+      "hindi": "मैं खुद"
+    },
+    "yourself": {
+      "garo": "Na·a an·tang",
+      "hindi": "तुम खुद"
+    },
+    "himself / herself": {
+      "garo": "Ua an·tang",
+      "hindi": "वह खुद"
+    },
+    "ourselves": {
+      "garo": "An·ching an·tangtang",
+      "hindi": "हम खुद"
+    }
   },
-
   "common_phrases": {
     "_classifier": null,
     "_examples": [
-      { "english": "I don't know", "garo": "Anga u·ija" },
-      { "english": "I know", "garo": "Anga uia" },
-      { "english": "Give it to me", "garo": "Angna on·bo" },
-      { "english": "I love you", "garo": "Anga nang·na ka·saa" },
-      { "english": "Who is he?", "garo": "Ua sawa?" }
+      {
+        "english": "I don't know",
+        "garo": "Anga u·ija",
+        "hindi": "मुझे नहीं पता"
+      },
+      {
+        "english": "I know",
+        "garo": "Anga uia",
+        "hindi": "मुझे पता है"
+      },
+      {
+        "english": "Give it to me",
+        "garo": "Angna on·bo",
+        "hindi": "मुझे दो"
+      },
+      {
+        "english": "I love you",
+        "garo": "Anga nang·na ka·saa",
+        "hindi": "मैं तुमसे प्यार करता हूँ"
+      },
+      {
+        "english": "Who is he?",
+        "garo": "Ua sawa?",
+        "hindi": "वह कौन है?"
+      }
     ],
-    "hello / greetings": "Salam / Namengama",
-    "how are you?": "Na·a namengama?",
-    "i am fine": "Anga namenga",
-    "thank you": "Mitela",
-    "what is your name?": "Na·ani bimungara maia?",
-    "my name is...": "Angni bimungara...",
-    "where are you going?": "Na·a bano re·angenga?",
-    "good morning": "Pringnam",
-    "good afternoon": "Salnam",
-    "good evening": "Attamnam",
-    "good night": "Walnam",
-    "goodbye": "Re·ang-na / Nam-en-dongbo",
-    "see you again": "Pil·tai-grongna",
-    "welcome": "Rimchaksoa",
-    "come in": "Ning·chi re·babo",
-    "sit down": "Asongbo",
-    "eat well": "Name cha·bo",
-    "yes": "Oe",
-    "no": "Ong·ja",
-    "please": "Ka·sapae",
-    "sorry": "Kema-bi·a",
-    "excuse me": "Angko kema-watbo",
-    "i don't know": "Anga u·ija",
-    "come here": "Iano re·ba",
-    "where are you from?": "Na·a bano-ni?",
-    "i am from...": "Anga ...-ni",
-    "how are you doing?": "Na·a namengama?",
-    "fine, and you?": "Namenga, na·ara?"
+    "hello / greetings": {
+      "garo": "Salam / Namengama",
+      "hindi": "नमस्ते"
+    },
+    "how are you?": {
+      "garo": "Na·a namengama?",
+      "hindi": "आप कैसे हैं?"
+    },
+    "i am fine": {
+      "garo": "Anga namenga",
+      "hindi": "मैं ठीक हूँ"
+    },
+    "thank you": {
+      "garo": "Mitela",
+      "hindi": "धन्यवाद"
+    },
+    "what is your name?": {
+      "garo": "Na·ani bimungara maia?",
+      "hindi": "आपका नाम क्या है?"
+    },
+    "my name is...": {
+      "garo": "Angni bimungara...",
+      "hindi": "मेरा नाम ... है"
+    },
+    "where are you going?": {
+      "garo": "Na·a bano re·angenga?",
+      "hindi": "आप कहाँ जा रहे हैं?"
+    },
+    "good morning": {
+      "garo": "Pringnam",
+      "hindi": "सुप्रभात"
+    },
+    "good afternoon": {
+      "garo": "Salnam",
+      "hindi": "शुभ दोपहर"
+    },
+    "good evening": {
+      "garo": "Attamnam",
+      "hindi": "शुभ संध्या"
+    },
+    "good night": {
+      "garo": "Walnam",
+      "hindi": "शुभ रात्रि"
+    },
+    "goodbye": {
+      "garo": "Re·ang-na / Nam-en-dongbo",
+      "hindi": "अलविदा"
+    },
+    "see you again": {
+      "garo": "Pil·tai-grongna",
+      "hindi": "फिर मिलेंगे"
+    },
+    "welcome": {
+      "garo": "Rimchaksoa",
+      "hindi": "स्वागत है"
+    },
+    "come in": {
+      "garo": "Ning·chi re·babo",
+      "hindi": "अंदर आइए"
+    },
+    "sit down": {
+      "garo": "Asongbo",
+      "hindi": "बैठिए"
+    },
+    "eat well": {
+      "garo": "Name cha·bo",
+      "hindi": "अच्छे से खाइए"
+    },
+    "yes": {
+      "garo": "Oe",
+      "hindi": "हाँ"
+    },
+    "no": {
+      "garo": "Ong·ja",
+      "hindi": "नहीं"
+    },
+    "please": {
+      "garo": "Ka·sapae",
+      "hindi": "कृपया"
+    },
+    "sorry": {
+      "garo": "Kema-bi·a",
+      "hindi": "माफ़ करें"
+    },
+    "excuse me": {
+      "garo": "Angko kema-watbo",
+      "hindi": "क्षमा करें"
+    },
+    "i don't know": {
+      "garo": "Anga u·ija",
+      "hindi": "मुझे नहीं पता"
+    },
+    "come here": {
+      "garo": "Iano re·ba",
+      "hindi": "यहाँ आओ"
+    },
+    "where are you from?": {
+      "garo": "Na·a bano-ni?",
+      "hindi": "आप कहाँ से हैं?"
+    },
+    "i am from...": {
+      "garo": "Anga ...-ni",
+      "hindi": "मैं ... से हूँ"
+    },
+    "how are you doing?": {
+      "garo": "Na·a namengama?",
+      "hindi": "आप कैसे हैं?"
+    },
+    "fine, and you?": {
+      "garo": "Namenga, na·ara?",
+      "hindi": "ठीक हूँ, और आप?"
+    }
   },
-
   "question_words": {
     "_classifier": null,
     "_examples": [
-      { "english": "What is this?", "garo": "Ia maia?" },
-      { "english": "Who is she?", "garo": "Ua sawa?" },
-      { "english": "Where is the school?", "garo": "Skul bano?" },
-      { "english": "When did you come?", "garo": "Na·a basako re·ba·a?" },
-      { "english": "Why are you going?", "garo": "Na·a maini-gimin re·ang·a?" }
+      {
+        "english": "What is this?",
+        "garo": "Ia maia?",
+        "hindi": "यह क्या है?"
+      },
+      {
+        "english": "Who is she?",
+        "garo": "Ua sawa?",
+        "hindi": "वह कौन है?"
+      },
+      {
+        "english": "Where is the school?",
+        "garo": "Skul bano?",
+        "hindi": "स्कूल कहाँ है?"
+      },
+      {
+        "english": "When did you come?",
+        "garo": "Na·a basako re·ba·a?",
+        "hindi": "तुम कब आए?"
+      },
+      {
+        "english": "Why are you going?",
+        "garo": "Na·a maini-gimin re·ang·a?",
+        "hindi": "तुम क्यों जा रहे हो?"
+      }
     ],
-    "who": "Sawa",
-    "what": "Maia",
-    "when": "Basako",
-    "where": "Bano",
-    "why": "Maini-gimin",
-    "how": "Maikai",
-    "how many": "Baitarong",
-    "how much": "Baita",
-    "which": "Kon",
-    "whose": "Sani"
+    "who": {
+      "garo": "Sawa",
+      "hindi": "कौन"
+    },
+    "what": {
+      "garo": "Maia",
+      "hindi": "क्या"
+    },
+    "when": {
+      "garo": "Basako",
+      "hindi": "कब"
+    },
+    "where": {
+      "garo": "Bano",
+      "hindi": "कहाँ"
+    },
+    "why": {
+      "garo": "Maini-gimin",
+      "hindi": "क्यों"
+    },
+    "how": {
+      "garo": "Maikai",
+      "hindi": "कैसे"
+    },
+    "how many": {
+      "garo": "Baitarong",
+      "hindi": "कितने"
+    },
+    "how much": {
+      "garo": "Baita",
+      "hindi": "कितना"
+    },
+    "which": {
+      "garo": "Kon",
+      "hindi": "कौन सा"
+    },
+    "whose": {
+      "garo": "Sani",
+      "hindi": "किसका"
+    }
   },
-
   "fruits": {
     "_classifier": "Ge",
     "_examples": [
-      { "english": "I want to eat a mango", "garo": "Anga am sa·ge cha·na ska" },
-      { "english": "Two bananas please", "garo": "Boldug gni·ge ka·sapae" },
-      { "english": "The pineapple is sweet", "garo": "Anaros chi·a" },
-      { "english": "Give me one coconut", "garo": "Angna narikel sa·ge on·bo" },
-      { "english": "Do you have guava?", "garo": "Nang·o goaba dong·a?" }
+      {
+        "english": "I want to eat a mango",
+        "garo": "Anga Te·gachu ge-sa cha·na ska",
+        "hindi": "मैं आम खाना चाहता हूँ"
+      },
+      {
+        "english": "Two bananas please",
+        "garo": "Te·rik ge-gni ka·sapae",
+        "hindi": "दो केले, कृपया"
+      },
+      {
+        "english": "The pineapple is sweet",
+        "garo": "Anaros chi·a",
+        "hindi": "अनानास मीठा है"
+      },
+      {
+        "english": "Give me one coconut",
+        "garo": "Angna narikel ge-sa on·bo",
+        "hindi": "मुझे एक नारियल दो"
+      },
+      {
+        "english": "Do you have guava?",
+        "garo": "Nang·o goaba dong·a?",
+        "hindi": "क्या आपके पास अमरूद है?"
+      }
     ],
-    "pineapple": "Anaros",
-    "banana": "Boldug",
-    "orange": "Narang",
-    "guava": "Goaba",
-    "papaya": "Modu",
-    "jackfruit": "Te·brong",
-    "mango": "Am",
-    "lychee": "Letchu",
-    "coconut": "Narikel",
-    "watermelon": "Te·e raja",
-    "lemon": "Kakji",
-    "pomegranate": "Dalim",
-    "sugar cane": "Ge·rit",
-    "tamarind": "Che·eng",
-    "pear": "Naspati",
-    "custard apple": "Atapol",
-    "pomelo": "Narang-gira",
-    "blackberry": "Jam",
-    "grapes": "Drakka",
-    "wild berry": "Bol-meseng"
+    "pineapple": {
+      "garo": "Anaros",
+      "hindi": "अनानास"
+    },
+    "banana": {
+      "garo": "Te·rik",
+      "hindi": "केला"
+    },
+    "orange": {
+      "garo": "Narang",
+      "hindi": "संतरा"
+    },
+    "guava": {
+      "garo": "Goaba",
+      "hindi": "अमरूद"
+    },
+    "papaya": {
+      "garo": "Modu",
+      "hindi": "पपीता"
+    },
+    "jackfruit": {
+      "garo": "Te·brong",
+      "hindi": "कटहल"
+    },
+    "mango": {
+      "garo": "Te·gachu",
+      "hindi": "आम"
+    },
+    "lychee": {
+      "garo": "Letchu",
+      "hindi": "लीची"
+    },
+    "coconut": {
+      "garo": "Narikel",
+      "hindi": "नारियल"
+    },
+    "watermelon": {
+      "garo": "Te·e raja",
+      "hindi": "तरबूज"
+    },
+    "lemon": {
+      "garo": "Kakji",
+      "hindi": "नींबू"
+    },
+    "pomegranate": {
+      "garo": "Dalim",
+      "hindi": "अनार"
+    },
+    "sugar cane": {
+      "garo": "Ge·rit",
+      "hindi": "गन्ना"
+    },
+    "tamarind": {
+      "garo": "Che·eng",
+      "hindi": "इमली"
+    },
+    "pear": {
+      "garo": "Naspati",
+      "hindi": "नाशपाती"
+    },
+    "custard apple": {
+      "garo": "Atapol",
+      "hindi": "शरीफा"
+    },
+    "pomelo": {
+      "garo": "Narang-gira",
+      "hindi": "चकोतरा"
+    },
+    "blackberry": {
+      "garo": "Jam",
+      "hindi": "जामुन"
+    },
+    "grapes": {
+      "garo": "Drakka",
+      "hindi": "अंगूर"
+    },
+    "wild berry": {
+      "garo": "Bol-meseng",
+      "hindi": "जंगली बेर"
+    }
   },
-
   "vegetables_and_roots": {
     "_classifier": "Ge",
     "_examples": [
-      { "english": "Buy two potatoes", "garo": "Alu gni·ge brea" },
-      { "english": "The chilli is spicy", "garo": "Jal·ik jal·ik saa" },
-      { "english": "I need one pumpkin", "garo": "Angna gominda sa·ge chaina" },
-      { "english": "Ginger is good for health", "garo": "Re·ching an·sengani-na nama" },
-      { "english": "We planted spinach", "garo": "An·ching palong-sam ge·aha" }
+      {
+        "english": "Buy two potatoes",
+        "garo": "Alu ge-gni brea",
+        "hindi": "दो आलू खरीदो"
+      },
+      {
+        "english": "The chilli is spicy",
+        "garo": "Jal·ik jal·ik saa",
+        "hindi": "मिर्च तीखी है"
+      },
+      {
+        "english": "I need one pumpkin",
+        "garo": "Angna gominda ge-sa chaina",
+        "hindi": "मुझे एक कद्दू चाहिए"
+      },
+      {
+        "english": "Ginger is good for health",
+        "garo": "Re·ching an·sengani-na nama",
+        "hindi": "अदरक स्वास्थ्य के लिए अच्छा है"
+      },
+      {
+        "english": "We planted spinach",
+        "garo": "An·ching palong-sam ge·aha",
+        "hindi": "हमने पालक लगाया"
+      }
     ],
-    "pumpkin": "Gominda",
-    "potato": "Alu",
-    "tomato": "Baring belati",
-    "brinjal": "Baring",
-    "bottle gourd": "Lau",
-    "bitter gourd": "Karela",
-    "bamboo shoot": "Me·a",
-    "garlic": "Rasin-gipok",
-    "ginger": "Re·ching",
-    "chilli": "Jal·ik",
-    "okra": "Dorai",
-    "cucumber": "Te·e",
-    "mustard leaves": "Besual",
-    "spinach": "Palong-sam",
-    "broad beans": "Nakap",
-    "yam": "Ta·a",
-    "sweet potato": "Ta·we",
-    "colocasia": "Thabisa",
-    "onion": "Rasin",
-    "cabbage": "Kobi",
-    "cauliflower": "Pul kobi",
-    "carrot": "Kajol",
-    "radish": "Mula",
-    "drumstick": "Sojona",
-    "peas": "Motor"
+    "pumpkin": {
+      "garo": "Gominda",
+      "hindi": "कद्दू"
+    },
+    "potato": {
+      "garo": "Alu",
+      "hindi": "आलू"
+    },
+    "tomato": {
+      "garo": "Baring belati",
+      "hindi": "टमाटर"
+    },
+    "brinjal": {
+      "garo": "Baring",
+      "hindi": "बैंगन"
+    },
+    "bottle gourd": {
+      "garo": "Lau",
+      "hindi": "लौकी"
+    },
+    "bitter gourd": {
+      "garo": "Karela",
+      "hindi": "करेला"
+    },
+    "bamboo shoot": {
+      "garo": "Me·a",
+      "hindi": "बाँस की कोंपल"
+    },
+    "garlic": {
+      "garo": "Rasin-gipok",
+      "hindi": "लहसुन"
+    },
+    "ginger": {
+      "garo": "Re·ching",
+      "hindi": "अदरक"
+    },
+    "chilli": {
+      "garo": "Jal·ik",
+      "hindi": "मिर्च"
+    },
+    "okra": {
+      "garo": "Dorai",
+      "hindi": "भिंडी"
+    },
+    "cucumber": {
+      "garo": "Te·e",
+      "hindi": "खीरा"
+    },
+    "mustard leaves": {
+      "garo": "Besual",
+      "hindi": "सरसों के पत्ते"
+    },
+    "spinach": {
+      "garo": "Palong-sam",
+      "hindi": "पालक"
+    },
+    "broad beans": {
+      "garo": "Nakap",
+      "hindi": "सेम"
+    },
+    "yam": {
+      "garo": "Ta·a",
+      "hindi": "जमीकंद"
+    },
+    "sweet potato": {
+      "garo": "Ta·we",
+      "hindi": "शकरकंद"
+    },
+    "colocasia": {
+      "garo": "Thabisa",
+      "hindi": "अरबी"
+    },
+    "onion": {
+      "garo": "Rasin",
+      "hindi": "प्याज"
+    },
+    "cabbage": {
+      "garo": "Kobi",
+      "hindi": "पत्तागोभी"
+    },
+    "cauliflower": {
+      "garo": "Pul kobi",
+      "hindi": "फूलगोभी"
+    },
+    "carrot": {
+      "garo": "Kajol",
+      "hindi": "गाजर"
+    },
+    "radish": {
+      "garo": "Mula",
+      "hindi": "मूली"
+    },
+    "drumstick": {
+      "garo": "Sojona",
+      "hindi": "सहजन"
+    },
+    "peas": {
+      "garo": "Motor",
+      "hindi": "मटर"
+    }
   },
-
   "animals": {
     "_classifier": "Mang",
     "_examples": [
-      { "english": "I have one dog", "garo": "Angni achak sa·mang dong·a" },
-      { "english": "Two cats are sleeping", "garo": "Menggo gni·mang tus·enga" },
-      { "english": "The elephant is big", "garo": "Mong dal·a" },
-      { "english": "I saw three monkeys", "garo": "Anga makre gittam·mang nika" },
-      { "english": "The tiger is fierce", "garo": "Matcha ka·namja" }
+      {
+        "english": "I have one dog",
+        "garo": "Angni achak mang-sa dong·a",
+        "hindi": "मेरे पास एक कुत्ता है"
+      },
+      {
+        "english": "Two cats are sleeping",
+        "garo": "Menggo mang-gni tus·enga",
+        "hindi": "दो बिल्लियाँ सो रही हैं"
+      },
+      {
+        "english": "The elephant is big",
+        "garo": "Mong dal·a",
+        "hindi": "हाथी बड़ा है"
+      },
+      {
+        "english": "I saw three monkeys",
+        "garo": "Anga makre mang-gittam nika",
+        "hindi": "मैंने तीन बंदर देखे"
+      },
+      {
+        "english": "The tiger is fierce",
+        "garo": "Matcha ka·namja",
+        "hindi": "बाघ क्रूर है"
+      }
     ],
-    "dog": "Achak",
-    "cat": "Menggo",
-    "cow": "Matchu",
-    "elephant": "Mong",
-    "tiger": "Matcha",
-    "deer": "Matchok",
-    "pig": "Wak",
-    "goat": "Do·bok",
-    "horse": "Gure",
-    "monkey": "Makre",
-    "snake": "Chipu",
-    "rat": "Mese",
-    "buffalo": "Matma",
-    "bear": "Matmak",
-    "rabbit": "Sapau"
+    "dog": {
+      "garo": "Achak",
+      "hindi": "कुत्ता"
+    },
+    "cat": {
+      "garo": "Menggo",
+      "hindi": "बिल्ली"
+    },
+    "cow": {
+      "garo": "Matchu",
+      "hindi": "गाय"
+    },
+    "elephant": {
+      "garo": "Mong",
+      "hindi": "हाथी"
+    },
+    "tiger": {
+      "garo": "Matcha",
+      "hindi": "बाघ"
+    },
+    "deer": {
+      "garo": "Matchok",
+      "hindi": "हिरण"
+    },
+    "pig": {
+      "garo": "Wak",
+      "hindi": "सुअर"
+    },
+    "goat": {
+      "garo": "Do·bok",
+      "hindi": "बकरी"
+    },
+    "horse": {
+      "garo": "Gure",
+      "hindi": "घोड़ा"
+    },
+    "monkey": {
+      "garo": "Makre",
+      "hindi": "बंदर"
+    },
+    "snake": {
+      "garo": "Chipu",
+      "hindi": "साँप"
+    },
+    "rat": {
+      "garo": "Mese",
+      "hindi": "चूहा"
+    },
+    "buffalo": {
+      "garo": "Matma",
+      "hindi": "भैंस"
+    },
+    "bear": {
+      "garo": "Matmak",
+      "hindi": "भालू"
+    },
+    "rabbit": {
+      "garo": "Sapau",
+      "hindi": "खरगोश"
+    }
   },
-
   "birds": {
     "_classifier": "Mang",
     "_examples": [
-      { "english": "Two crows are on the tree", "garo": "Do·ka gni·mang bol-o dong·a" },
-      { "english": "The parrot is talking", "garo": "Do·sik agan·enga" },
-      { "english": "I saw an eagle", "garo": "Anga do·reng sa·mang nika" },
-      { "english": "Three hens are in the yard", "garo": "Do·bit gittam·mang nok-mikkang-o dong·a" },
-      { "english": "The peacock is beautiful", "garo": "Do·de nama" }
+      {
+        "english": "Two crows are on the tree",
+        "garo": "Do·ka mang-gni bol-o dong·a",
+        "hindi": "दो कौए पेड़ पर हैं"
+      },
+      {
+        "english": "The parrot is talking",
+        "garo": "Do·sik agan·enga",
+        "hindi": "तोता बात कर रहा है"
+      },
+      {
+        "english": "I saw an eagle",
+        "garo": "Anga do·reng mang-sa nika",
+        "hindi": "मैंने एक चील देखी"
+      },
+      {
+        "english": "Three hens are in the yard",
+        "garo": "Do·bit mang-gittam nok-mikkang-o dong·a",
+        "hindi": "तीन मुर्गियाँ आँगन में हैं"
+      },
+      {
+        "english": "The peacock is beautiful",
+        "garo": "Do·de nama",
+        "hindi": "मोर सुंदर है"
+      }
     ],
-    "crow": "Do·ka",
-    "hen": "Do·bit",
-    "rooster": "Do·bi",
-    "duck": "Do·gep",
-    "owl": "Do·po",
-    "eagle": "Do·reng",
-    "parrot": "Do·sik",
-    "pigeon": "Do·bak",
-    "peacock": "Do·de",
-    "sparrow": "Do·matchi"
+    "crow": {
+      "garo": "Do·ka",
+      "hindi": "कौआ"
+    },
+    "hen": {
+      "garo": "Do·bit",
+      "hindi": "मुर्गी"
+    },
+    "rooster": {
+      "garo": "Do·bi",
+      "hindi": "मुर्गा"
+    },
+    "duck": {
+      "garo": "Do·gep",
+      "hindi": "बत्तख"
+    },
+    "owl": {
+      "garo": "Do·po",
+      "hindi": "उल्लू"
+    },
+    "eagle": {
+      "garo": "Do·reng",
+      "hindi": "चील / गरुड़"
+    },
+    "parrot": {
+      "garo": "Do·sik",
+      "hindi": "तोता"
+    },
+    "pigeon": {
+      "garo": "Do·bak",
+      "hindi": "कबूतर"
+    },
+    "peacock": {
+      "garo": "Do·de",
+      "hindi": "मोर"
+    },
+    "sparrow": {
+      "garo": "Do·matchi",
+      "hindi": "गौरैया"
+    }
   },
-
   "insects_and_aquatic": {
     "_classifier": "Mang",
     "_examples": [
-      { "english": "There is a mosquito", "garo": "Ganggu sa·mang dong·a" },
-      { "english": "I caught two fish", "garo": "Anga na·tok gni·mang rim·aha" },
-      { "english": "The bee makes honey", "garo": "Bija sa·mang madhu ka·a" },
-      { "english": "There are ants on the food", "garo": "Cha·o chibrim dong·a" },
-      { "english": "I saw a frog near the river", "garo": "Anga chibima-sepang beng·blok sa·mang nika" }
+      {
+        "english": "There is a mosquito",
+        "garo": "Ganggu mang-sa dong·a",
+        "hindi": "एक मच्छर है"
+      },
+      {
+        "english": "I caught two fish",
+        "garo": "Anga na·tok mang-gni rim·aha",
+        "hindi": "मैंने दो मछलियाँ पकड़ीं"
+      },
+      {
+        "english": "The bee makes honey",
+        "garo": "Bija mang-sa madhu ka·a",
+        "hindi": "मधुमक्खी शहद बनाती है"
+      },
+      {
+        "english": "There are ants on the food",
+        "garo": "Cha·o chibrim dong·a",
+        "hindi": "खाने पर चींटियाँ हैं"
+      },
+      {
+        "english": "I saw a frog near the river",
+        "garo": "Anga chibima-sepang beng·blok mang-sa nika",
+        "hindi": "मैंने नदी के पास एक मेंढक देखा"
+      }
     ],
-    "fish": "Na·tok",
-    "crab": "Ang·ke",
-    "frog": "Beng·blok",
-    "turtle": "Ki·sing",
-    "prawn / shrimp": "Na·tik",
-    "butterfly": "Me·pilip",
-    "bee": "Bija",
-    "ant": "Chibrim",
-    "mosquito": "Ganggu",
-    "fly": "Tampi",
-    "spider": "Guwang",
-    "cockroach": "Karo",
-    "scorpion": "Mangkram",
-    "worm / caterpillar": "Jo·ong"
+    "fish": {
+      "garo": "Na·tok",
+      "hindi": "मछली"
+    },
+    "crab": {
+      "garo": "Ang·ke",
+      "hindi": "केकड़ा"
+    },
+    "frog": {
+      "garo": "Beng·blok",
+      "hindi": "मेंढक"
+    },
+    "turtle": {
+      "garo": "Ki·sing",
+      "hindi": "कछुआ"
+    },
+    "prawn / shrimp": {
+      "garo": "Na·tik",
+      "hindi": "झींगा"
+    },
+    "butterfly": {
+      "garo": "Me·pilip",
+      "hindi": "तितली"
+    },
+    "bee": {
+      "garo": "Bija",
+      "hindi": "मधुमक्खी"
+    },
+    "ant": {
+      "garo": "Chibrim",
+      "hindi": "चींटी"
+    },
+    "mosquito": {
+      "garo": "Ganggu",
+      "hindi": "मच्छर"
+    },
+    "fly": {
+      "garo": "Tampi",
+      "hindi": "मक्खी"
+    },
+    "spider": {
+      "garo": "Guwang",
+      "hindi": "मकड़ी"
+    },
+    "cockroach": {
+      "garo": "Karo",
+      "hindi": "तिलचट्टा"
+    },
+    "scorpion": {
+      "garo": "Mangkram",
+      "hindi": "बिच्छू"
+    },
+    "worm / caterpillar": {
+      "garo": "Jo·ong",
+      "hindi": "कीड़ा / सुँडी"
+    }
   },
-
   "emotions_and_feelings": {
     "_classifier": null,
     "_examples": [
-      { "english": "I am happy today", "garo": "Anga da·al kusi" },
-      { "english": "She is sad", "garo": "Ua duk nanga" },
-      { "english": "I love you", "garo": "Anga nang·na ka·saa" },
-      { "english": "Don't be afraid", "garo": "Kenani ong·ja" },
-      { "english": "I am grateful to you", "garo": "Anga nang·na mitela nanga" }
+      {
+        "english": "I am happy today",
+        "garo": "Anga da·al kusi",
+        "hindi": "मैं आज खुश हूँ"
+      },
+      {
+        "english": "She is sad",
+        "garo": "Ua duk nanga",
+        "hindi": "वह दुखी है"
+      },
+      {
+        "english": "I love you",
+        "garo": "Anga nang·na ka·saa",
+        "hindi": "मैं तुमसे प्यार करता हूँ"
+      },
+      {
+        "english": "Don't be afraid",
+        "garo": "Kenani ong·ja",
+        "hindi": "डरो मत"
+      },
+      {
+        "english": "I am grateful to you",
+        "garo": "Anga nang·na mitela nanga",
+        "hindi": "मैं तुम्हारा आभारी हूँ"
+      }
     ],
-    "love": "Ka·saa",
-    "happiness": "Kusi",
-    "sadness": "Duk",
-    "anger": "Ka·o nanga",
-    "fear": "Kenani",
-    "hatred": "Mittera",
-    "hope": "Ka·donga",
-    "peace": "Tom·toma",
-    "trust": "Bebe ra·a",
-    "jealousy": "Mikboka",
-    "shame": "Kracha·a",
-    "pride": "Gaora",
-    "surprise": "Jagokani",
-    "worry": "Gisik ding·a",
-    "patience": "Chakchikani",
-    "mercy": "Kema",
-    "satisfaction": "Chu·ongnika",
-    "loneliness": "Saksan",
-    "grateful": "Mitela",
-    "courage": "Ka·rakani"
+    "love": {
+      "garo": "Ka·saa",
+      "hindi": "प्यार"
+    },
+    "happiness": {
+      "garo": "Kusi",
+      "hindi": "खुशी"
+    },
+    "sadness": {
+      "garo": "Duk",
+      "hindi": "दुख"
+    },
+    "anger": {
+      "garo": "Ka·o nanga",
+      "hindi": "गुस्सा"
+    },
+    "fear": {
+      "garo": "Kenani",
+      "hindi": "डर"
+    },
+    "hatred": {
+      "garo": "Mittera",
+      "hindi": "नफ़रत"
+    },
+    "hope": {
+      "garo": "Ka·donga",
+      "hindi": "उम्मीद"
+    },
+    "peace": {
+      "garo": "Tom·toma",
+      "hindi": "शांति"
+    },
+    "trust": {
+      "garo": "Bebe ra·a",
+      "hindi": "भरोसा"
+    },
+    "jealousy": {
+      "garo": "Mikboka",
+      "hindi": "ईर्ष्या"
+    },
+    "shame": {
+      "garo": "Kracha·a",
+      "hindi": "शर्म"
+    },
+    "pride": {
+      "garo": "Gaora",
+      "hindi": "गर्व"
+    },
+    "surprise": {
+      "garo": "Jagokani",
+      "hindi": "हैरानी"
+    },
+    "worry": {
+      "garo": "Gisik ding·a",
+      "hindi": "चिंता"
+    },
+    "patience": {
+      "garo": "Chakchikani",
+      "hindi": "धैर्य"
+    },
+    "mercy": {
+      "garo": "Kema",
+      "hindi": "दया"
+    },
+    "satisfaction": {
+      "garo": "Chu·ongnika",
+      "hindi": "संतोष"
+    },
+    "loneliness": {
+      "garo": "Saksan",
+      "hindi": "अकेलापन"
+    },
+    "grateful": {
+      "garo": "Mitela",
+      "hindi": "कृतज्ञ"
+    },
+    "courage": {
+      "garo": "Ka·rakani",
+      "hindi": "साहस"
+    }
   },
-
   "family_members": {
     "_classifier": "Sak",
     "_examples": [
-      { "english": "My father is a farmer", "garo": "Angni pa sa·sak game-cha·gipa" },
-      { "english": "I have two brothers", "garo": "Angni ada gni·sak dong·a" },
-      { "english": "My grandmother is old", "garo": "Angni ambichang gitcham" },
-      { "english": "Where is your mother?", "garo": "Nang·ni ma bano?" },
-      { "english": "My friend came", "garo": "Angni ripsak sa·sak re·ba·aha" }
+      {
+        "english": "My father is a farmer",
+        "garo": "Angni pa sak-sa game-cha·gipa",
+        "hindi": "मेरे पिता किसान हैं"
+      },
+      {
+        "english": "I have two brothers",
+        "garo": "Angni ada sak-gni dong·a",
+        "hindi": "मेरे दो भाई हैं"
+      },
+      {
+        "english": "My grandmother is old",
+        "garo": "Angni ambichang gitcham",
+        "hindi": "मेरी दादी बूढ़ी हैं"
+      },
+      {
+        "english": "Where is your mother?",
+        "garo": "Nang·ni ma bano?",
+        "hindi": "तुम्हारी माँ कहाँ हैं?"
+      },
+      {
+        "english": "My friend came",
+        "garo": "Angni ripsak sak-sa re·ba·aha",
+        "hindi": "मेरा दोस्त आया"
+      }
     ],
-    "father": "Pa / Apa",
-    "mother": "Ma / Ama",
-    "son": "De-bi-pa",
-    "daughter": "De-me-chik",
-    "grandfather": "Abi-tang",
-    "grandmother": "Ambichang",
-    "elder brother": "Ada",
-    "elder sister": "Abi",
-    "younger sibling": "Jong / No",
-    "uncle": "Mama / Pabok",
-    "aunt": "Mani",
-    "friend": "Ripsak / Ripeng"
+    "father": {
+      "garo": "Pa / Apa",
+      "hindi": "पिता"
+    },
+    "mother": {
+      "garo": "Ma / Ama",
+      "hindi": "माँ"
+    },
+    "son": {
+      "garo": "De-bi-pa",
+      "hindi": "बेटा"
+    },
+    "daughter": {
+      "garo": "De-me-chik",
+      "hindi": "बेटी"
+    },
+    "grandfather": {
+      "garo": "Abi-tang",
+      "hindi": "दादा / नाना"
+    },
+    "grandmother": {
+      "garo": "Ambichang",
+      "hindi": "दादी / नानी"
+    },
+    "elder brother": {
+      "garo": "Ada",
+      "hindi": "बड़ा भाई"
+    },
+    "elder sister": {
+      "garo": "Abi",
+      "hindi": "बड़ी बहन"
+    },
+    "younger sibling": {
+      "garo": "Jong / No",
+      "hindi": "छोटा भाई / बहन"
+    },
+    "uncle": {
+      "garo": "Mama / Pabok",
+      "hindi": "चाचा / मामा"
+    },
+    "aunt": {
+      "garo": "Mani",
+      "hindi": "चाची / मामी"
+    },
+    "friend": {
+      "garo": "Ripsak / Ripeng",
+      "hindi": "दोस्त"
+    }
   },
-
   "body_parts": {
     "_classifier": null,
     "_examples": [
-      { "english": "My head hurts", "garo": "Angni sko sa·dika" },
-      { "english": "Wash your hands", "garo": "Nang·ni jak sua·bo" },
-      { "english": "She has beautiful eyes", "garo": "Uni mikron nama" },
-      { "english": "My stomach is full", "garo": "Angni ok gapa" },
-      { "english": "His leg is hurt", "garo": "Uni ja·a mata" }
+      {
+        "english": "My head hurts",
+        "garo": "Angni sko sa·dika",
+        "hindi": "मेरे सिर में दर्द है"
+      },
+      {
+        "english": "Wash your hands",
+        "garo": "Nang·ni jak sua·bo",
+        "hindi": "अपने हाथ धोओ"
+      },
+      {
+        "english": "She has beautiful eyes",
+        "garo": "Uni mikron nama",
+        "hindi": "उसकी आँखें सुंदर हैं"
+      },
+      {
+        "english": "My stomach is full",
+        "garo": "Angni ok gapa",
+        "hindi": "मेरा पेट भर गया"
+      },
+      {
+        "english": "His leg is hurt",
+        "garo": "Uni ja·a mata",
+        "hindi": "उसके पैर में चोट है"
+      }
     ],
-    "head": "Sko",
-    "eye": "Mikron",
-    "ear": "Nachil",
-    "nose": "Gingting",
-    "mouth": "Ku·sik",
-    "hand": "Jak",
-    "leg": "Ja·a",
-    "hair": "Kni",
-    "stomach": "Ok",
-    "teeth": "Wagam",
-    "tongue": "Sre",
-    "skin": "Bigil",
-    "heart": "Ka·tong"
+    "head": {
+      "garo": "Sko",
+      "hindi": "सिर"
+    },
+    "eye": {
+      "garo": "Mikron",
+      "hindi": "आँख"
+    },
+    "ear": {
+      "garo": "Nachil",
+      "hindi": "कान"
+    },
+    "nose": {
+      "garo": "Gingting",
+      "hindi": "नाक"
+    },
+    "mouth": {
+      "garo": "Ku·sik",
+      "hindi": "मुँह"
+    },
+    "hand": {
+      "garo": "Jak",
+      "hindi": "हाथ"
+    },
+    "leg": {
+      "garo": "Ja·a",
+      "hindi": "पैर"
+    },
+    "hair": {
+      "garo": "Kni",
+      "hindi": "बाल"
+    },
+    "stomach": {
+      "garo": "Ok",
+      "hindi": "पेट"
+    },
+    "teeth": {
+      "garo": "Wagam",
+      "hindi": "दाँत"
+    },
+    "tongue": {
+      "garo": "Sre",
+      "hindi": "जीभ"
+    },
+    "skin": {
+      "garo": "Bigil",
+      "hindi": "त्वचा"
+    },
+    "heart": {
+      "garo": "Ka·tong",
+      "hindi": "दिल"
+    }
   },
-
   "colors": {
     "_classifier": null,
     "_examples": [
-      { "english": "The flower is red", "garo": "Bibal gitchak" },
-      { "english": "The sky is blue", "garo": "Salgi tang-sim" },
-      { "english": "The leaf is green", "garo": "Bijak tangsek" },
-      { "english": "His clothes are white", "garo": "Uni ba·ra gipok" },
-      { "english": "The cat is black", "garo": "Menggo gisim" }
+      {
+        "english": "The flower is red",
+        "garo": "Bibal gitchak",
+        "hindi": "फूल लाल है"
+      },
+      {
+        "english": "The sky is blue",
+        "garo": "Salgi tang-sim",
+        "hindi": "आसमान नीला है"
+      },
+      {
+        "english": "The leaf is green",
+        "garo": "Bijak tangsek",
+        "hindi": "पत्ता हरा है"
+      },
+      {
+        "english": "His clothes are white",
+        "garo": "Uni ba·ra gipok",
+        "hindi": "उसके कपड़े सफ़ेद हैं"
+      },
+      {
+        "english": "The cat is black",
+        "garo": "Menggo gisim",
+        "hindi": "बिल्ली काली है"
+      }
     ],
-    "red": "Gitchak",
-    "white": "Gipok",
-    "black": "Gisim",
-    "green": "Tangsek",
-    "blue": "Tang-sim",
-    "yellow": "Rimit"
+    "red": {
+      "garo": "Gitchak",
+      "hindi": "लाल"
+    },
+    "white": {
+      "garo": "Gipok",
+      "hindi": "सफ़ेद"
+    },
+    "black": {
+      "garo": "Gisim",
+      "hindi": "काला"
+    },
+    "green": {
+      "garo": "Tangsek",
+      "hindi": "हरा"
+    },
+    "blue": {
+      "garo": "Tang-sim",
+      "hindi": "नीला"
+    },
+    "yellow": {
+      "garo": "Rimit",
+      "hindi": "पीला"
+    }
   },
-
   "numbers": {
     "_classifier": null,
     "_examples": [
-      { "english": "I have two books", "garo": "Angni ki·tap gni·king dong·a" },
-      { "english": "Give me three", "garo": "Angna gittam on·bo" },
-      { "english": "There are five people", "garo": "Manderang bonga·sak dong·a" },
-      { "english": "Ten dogs", "garo": "Achak chiking·mang" },
-      { "english": "One hundred rupees", "garo": "Tangka ritchasa·gong" }
+      {
+        "english": "I have two books",
+        "garo": "Angni ki·tap king-gni dong·a",
+        "hindi": "मेरे पास दो किताबें हैं"
+      },
+      {
+        "english": "Give me three",
+        "garo": "Angna gittam on·bo",
+        "hindi": "मुझे तीन दो"
+      },
+      {
+        "english": "There are five people",
+        "garo": "Manderang sak-bonga dong·a",
+        "hindi": "पाँच लोग हैं"
+      },
+      {
+        "english": "Ten dogs",
+        "garo": "Achak mang-chiking",
+        "hindi": "दस कुत्ते"
+      },
+      {
+        "english": "One hundred rupees",
+        "garo": "Tangka ritchasa·gong",
+        "hindi": "सौ रुपये"
+      }
     ],
-    "one": "Sa",
-    "two": "Gni",
-    "three": "Gittam",
-    "four": "Bri",
-    "five": "Bonga",
-    "six": "Dok",
-    "seven": "Sni",
-    "eight": "Chet",
-    "nine": "Sku",
-    "ten": "Chiking",
-    "eleven": "Chi·sa",
-    "twenty": "Kolgrik",
-    "thirty": "Kolatchi",
-    "forty": "Sotbri",
-    "fifty": "Sotbonga",
-    "sixty": "Sotdok",
-    "seventy": "Sotsni",
-    "eighty": "Sotchet",
-    "ninety": "Sotsku",
-    "hundred": "Ritchasa",
-    "one thousand": "Hajalsa"
+    "one": {
+      "garo": "Sa",
+      "hindi": "एक"
+    },
+    "two": {
+      "garo": "Gni",
+      "hindi": "दो"
+    },
+    "three": {
+      "garo": "Gittam",
+      "hindi": "तीन"
+    },
+    "four": {
+      "garo": "Bri",
+      "hindi": "चार"
+    },
+    "five": {
+      "garo": "Bonga",
+      "hindi": "पाँच"
+    },
+    "six": {
+      "garo": "Dok",
+      "hindi": "छह"
+    },
+    "seven": {
+      "garo": "Sni",
+      "hindi": "सात"
+    },
+    "eight": {
+      "garo": "Chet",
+      "hindi": "आठ"
+    },
+    "nine": {
+      "garo": "Sku",
+      "hindi": "नौ"
+    },
+    "ten": {
+      "garo": "Chiking",
+      "hindi": "दस"
+    },
+    "eleven": {
+      "garo": "Chi·sa",
+      "hindi": "ग्यारह"
+    },
+    "twenty": {
+      "garo": "Kolgrik",
+      "hindi": "बीस"
+    },
+    "thirty": {
+      "garo": "Kolatchi",
+      "hindi": "तीस"
+    },
+    "forty": {
+      "garo": "Sotbri",
+      "hindi": "चालीस"
+    },
+    "fifty": {
+      "garo": "Sotbonga",
+      "hindi": "पचास"
+    },
+    "sixty": {
+      "garo": "Sotdok",
+      "hindi": "साठ"
+    },
+    "seventy": {
+      "garo": "Sotsni",
+      "hindi": "सत्तर"
+    },
+    "eighty": {
+      "garo": "Sotchet",
+      "hindi": "अस्सी"
+    },
+    "ninety": {
+      "garo": "Sotsku",
+      "hindi": "नब्बे"
+    },
+    "hundred": {
+      "garo": "Ritchasa",
+      "hindi": "सौ"
+    },
+    "one thousand": {
+      "garo": "Hajalsa",
+      "hindi": "एक हज़ार"
+    }
   },
-
   "verbs_present": {
     "_classifier": null,
     "_examples": [
-      { "english": "I am eating rice", "garo": "Anga mi cha·enga" },
-      { "english": "She is sleeping now", "garo": "Ua da·o tus·enga" },
-      { "english": "We are walking to school", "garo": "An·ching skul-na re·enga" },
-      { "english": "He is speaking Garo", "garo": "Ua Garo ku·sik agan·enga" },
-      { "english": "They are playing", "garo": "Uamang kal·enga" }
+      {
+        "english": "I am eating rice",
+        "garo": "Anga mi cha·enga",
+        "hindi": "मैं चावल खा रहा हूँ"
+      },
+      {
+        "english": "She is sleeping now",
+        "garo": "Ua da·o tus·enga",
+        "hindi": "वह अभी सो रही है"
+      },
+      {
+        "english": "We are walking to school",
+        "garo": "An·ching skul-na re·enga",
+        "hindi": "हम स्कूल जा रहे हैं"
+      },
+      {
+        "english": "He is speaking Garo",
+        "garo": "Ua Garo ku·sik agan·enga",
+        "hindi": "वह गारो बोल रहा है"
+      },
+      {
+        "english": "They are playing",
+        "garo": "Uamang kal·enga",
+        "hindi": "वे खेल रहे हैं"
+      }
     ],
-    "eat": "Cha·a",
-    "drink": "Ringa",
-    "sleep": "Tusia",
-    "walk": "Re·a",
-    "run": "Kat-a",
-    "speak": "Agana",
-    "listen": "Knachika",
-    "see": "Nika",
-    "give": "On·a",
-    "take": "Ra·a",
-    "work": "Dak-a",
-    "play": "Kal·a",
-    "sit": "Asong-a",
-    "stand": "Chadenga",
-    "laugh": "Ka·ding-a",
-    "cry": "Grap-a",
-    "buy": "Brea",
-    "sell": "Pala",
-    "come": "Re·ba-a",
-    "go": "Re·ang-a",
-    "write": "Se·a",
-    "read": "Pora",
-    "cook": "Song·a",
-    "wash": "Su·srong-a",
-    "clean": "Rongtalata",
-    "open": "Oa",
-    "close": "Chip-a",
-    "carry": "De·a",
-    "plant": "Ge·a",
-    "build": "Rika",
-    "fly (animal)": "Bila",
-    "swim": "Jroa",
-    "bite": "Chika",
-    "hunt": "Sikar-ka·a",
-    "catch": "Rim·a",
-    "throw": "Gal-a",
-    "fall": "Ga·aka",
-    "jump": "Bildoa",
-    "pray": "Bi·a",
-    "dig": "Cho·a",
-    "burn": "So·a",
-    "tie": "Kaa",
-    "untie": "Enga",
-    "touch": "Dangtapa",
-    "heal": "An·sengpila"
+    "eat": {
+      "garo": "Cha·a",
+      "hindi": "खाना"
+    },
+    "drink": {
+      "garo": "Ringa",
+      "hindi": "पीना"
+    },
+    "sleep": {
+      "garo": "Tusia",
+      "hindi": "सोना"
+    },
+    "walk": {
+      "garo": "Re·a",
+      "hindi": "चलना"
+    },
+    "run": {
+      "garo": "Kat-a",
+      "hindi": "दौड़ना"
+    },
+    "speak": {
+      "garo": "Agana",
+      "hindi": "बोलना"
+    },
+    "listen": {
+      "garo": "Knachika",
+      "hindi": "सुनना"
+    },
+    "see": {
+      "garo": "Nika",
+      "hindi": "देखना"
+    },
+    "give": {
+      "garo": "On·a",
+      "hindi": "देना"
+    },
+    "take": {
+      "garo": "Ra·a",
+      "hindi": "लेना"
+    },
+    "work": {
+      "garo": "Dak-a",
+      "hindi": "काम करना"
+    },
+    "play": {
+      "garo": "Kal·a",
+      "hindi": "खेलना"
+    },
+    "sit": {
+      "garo": "Asong-a",
+      "hindi": "बैठना"
+    },
+    "stand": {
+      "garo": "Chadenga",
+      "hindi": "खड़े होना"
+    },
+    "laugh": {
+      "garo": "Ka·ding-a",
+      "hindi": "हँसना"
+    },
+    "cry": {
+      "garo": "Grap-a",
+      "hindi": "रोना"
+    },
+    "buy": {
+      "garo": "Brea",
+      "hindi": "खरीदना"
+    },
+    "sell": {
+      "garo": "Pala",
+      "hindi": "बेचना"
+    },
+    "come": {
+      "garo": "Re·ba-a",
+      "hindi": "आना"
+    },
+    "go": {
+      "garo": "Re·ang-a",
+      "hindi": "जाना"
+    },
+    "write": {
+      "garo": "Se·a",
+      "hindi": "लिखना"
+    },
+    "read": {
+      "garo": "Pora",
+      "hindi": "पढ़ना"
+    },
+    "cook": {
+      "garo": "Song·a",
+      "hindi": "रसोइया"
+    },
+    "wash": {
+      "garo": "Su·srong-a",
+      "hindi": "धोना"
+    },
+    "clean": {
+      "garo": "Rongtalata",
+      "hindi": "साफ़"
+    },
+    "open": {
+      "garo": "Oa",
+      "hindi": "खोलना"
+    },
+    "close": {
+      "garo": "Chip-a",
+      "hindi": "बंद करना"
+    },
+    "carry": {
+      "garo": "De·a",
+      "hindi": "ले जाना"
+    },
+    "plant": {
+      "garo": "Ge·a",
+      "hindi": "लगाना"
+    },
+    "build": {
+      "garo": "Rika",
+      "hindi": "बनाना"
+    },
+    "fly (animal)": {
+      "garo": "Bila",
+      "hindi": "उड़ना"
+    },
+    "swim": {
+      "garo": "Jroa",
+      "hindi": "तैरना"
+    },
+    "bite": {
+      "garo": "Chika",
+      "hindi": "काटना"
+    },
+    "hunt": {
+      "garo": "Sikar-ka·a",
+      "hindi": "शिकार करना"
+    },
+    "catch": {
+      "garo": "Rim·a",
+      "hindi": "पकड़ना"
+    },
+    "throw": {
+      "garo": "Gal-a",
+      "hindi": "फेंकना"
+    },
+    "fall": {
+      "garo": "Ga·aka",
+      "hindi": "गिरना"
+    },
+    "jump": {
+      "garo": "Bildoa",
+      "hindi": "कूदना"
+    },
+    "pray": {
+      "garo": "Bi·a",
+      "hindi": "प्रार्थना करना"
+    },
+    "dig": {
+      "garo": "Cho·a",
+      "hindi": "खोदना"
+    },
+    "burn": {
+      "garo": "So·a",
+      "hindi": "जलाना"
+    },
+    "tie": {
+      "garo": "Kaa",
+      "hindi": "बाँधना"
+    },
+    "untie": {
+      "garo": "Enga",
+      "hindi": "खोलना"
+    },
+    "touch": {
+      "garo": "Dangtapa",
+      "hindi": "छूना"
+    },
+    "heal": {
+      "garo": "An·sengpila",
+      "hindi": "ठीक होना"
+    }
   },
-
   "verbs_past": {
     "_classifier": null,
     "_examples": [
-      { "english": "I ate rice", "garo": "Anga mi cha·aha" },
-      { "english": "She came yesterday", "garo": "Ua mejal re·ba·aha" },
-      { "english": "We went to the market", "garo": "An·ching anti-o re·ang·aha" },
-      { "english": "He slept the whole night", "garo": "Ua wal-mik tus·aha" },
-      { "english": "They played well", "garo": "Uamang namen kal·aha" }
+      {
+        "english": "I ate rice",
+        "garo": "Anga mi cha·aha",
+        "hindi": "मैंने चावल खाया"
+      },
+      {
+        "english": "She came yesterday",
+        "garo": "Ua mejal re·ba·aha",
+        "hindi": "वह कल आई"
+      },
+      {
+        "english": "We went to the market",
+        "garo": "An·ching anti-o re·ang·aha",
+        "hindi": "हम बाज़ार गए"
+      },
+      {
+        "english": "He slept the whole night",
+        "garo": "Ua wal-mik tus·aha",
+        "hindi": "वह पूरी रात सोया"
+      },
+      {
+        "english": "They played well",
+        "garo": "Uamang namen kal·aha",
+        "hindi": "उन्होंने अच्छे से खेला"
+      }
     ],
-    "ate": "Cha·aha",
-    "drank": "Ring·aha",
-    "slept": "Tus·aha",
-    "walked": "Re·aha",
-    "ran": "Kat·aha",
-    "spoke": "Agan·aha",
-    "listened": "Knachik·aha",
-    "saw": "Nik·aha",
-    "gave": "On·aha",
-    "took": "Ra·aha",
-    "worked": "Dak·aha",
-    "played": "Kal·aha",
-    "came": "Re·ba·aha",
-    "went": "Re·ang·aha",
-    "wrote": "Se·aha",
-    "cooked": "Song·aha",
-    "bought": "Bre·aha",
-    "sold": "Pal·aha",
-    "laughed": "Ka·ding·aha",
-    "cried": "Grap·aha"
+    "ate": {
+      "garo": "Cha·aha",
+      "hindi": "खाया"
+    },
+    "drank": {
+      "garo": "Ring·aha",
+      "hindi": "पिया"
+    },
+    "slept": {
+      "garo": "Tus·aha",
+      "hindi": "सोया"
+    },
+    "walked": {
+      "garo": "Re·aha",
+      "hindi": "चला"
+    },
+    "ran": {
+      "garo": "Kat·aha",
+      "hindi": "दौड़ा"
+    },
+    "spoke": {
+      "garo": "Agan·aha",
+      "hindi": "बोला"
+    },
+    "listened": {
+      "garo": "Knachik·aha",
+      "hindi": "सुना"
+    },
+    "saw": {
+      "garo": "Nik·aha",
+      "hindi": "देखा"
+    },
+    "gave": {
+      "garo": "On·aha",
+      "hindi": "दिया"
+    },
+    "took": {
+      "garo": "Ra·aha",
+      "hindi": "लिया"
+    },
+    "worked": {
+      "garo": "Dak·aha",
+      "hindi": "काम किया"
+    },
+    "played": {
+      "garo": "Kal·aha",
+      "hindi": "खेला"
+    },
+    "came": {
+      "garo": "Re·ba·aha",
+      "hindi": "आया"
+    },
+    "went": {
+      "garo": "Re·ang·aha",
+      "hindi": "गया"
+    },
+    "wrote": {
+      "garo": "Se·aha",
+      "hindi": "लिखा"
+    },
+    "cooked": {
+      "garo": "Song·aha",
+      "hindi": "पकाया"
+    },
+    "bought": {
+      "garo": "Bre·aha",
+      "hindi": "खरीदा"
+    },
+    "sold": {
+      "garo": "Pal·aha",
+      "hindi": "बेचा"
+    },
+    "laughed": {
+      "garo": "Ka·ding·aha",
+      "hindi": "हँसा"
+    },
+    "cried": {
+      "garo": "Grap·aha",
+      "hindi": "रोया"
+    }
   },
-
   "verbs_future": {
     "_classifier": null,
     "_examples": [
-      { "english": "I will eat tomorrow", "garo": "Anga knal cha·gen" },
-      { "english": "She will come next week", "garo": "Ua skang·anti re·ba·gen" },
-      { "english": "We will go to school", "garo": "An·ching skul-na re·ang·gen" },
-      { "english": "He will sleep early", "garo": "Ua bakkan tus·gen" },
-      { "english": "They will play", "garo": "Uamang kal·gen" }
+      {
+        "english": "I will eat tomorrow",
+        "garo": "Anga knal cha·gen",
+        "hindi": "मैं कल खाऊँगा"
+      },
+      {
+        "english": "She will come next week",
+        "garo": "Ua skang·anti re·ba·gen",
+        "hindi": "वह अगले हफ्ते आएगी"
+      },
+      {
+        "english": "We will go to school",
+        "garo": "An·ching skul-na re·ang·gen",
+        "hindi": "हम स्कूल जाएंगे"
+      },
+      {
+        "english": "He will sleep early",
+        "garo": "Ua bakkan tus·gen",
+        "hindi": "वह जल्दी सोएगा"
+      },
+      {
+        "english": "They will play",
+        "garo": "Uamang kal·gen",
+        "hindi": "वे खेलेंगे"
+      }
     ],
-    "will eat": "Cha·gen",
-    "will drink": "Ring·gen",
-    "will sleep": "Tus·gen",
-    "will walk": "Re·gen",
-    "will run": "Kat·gen",
-    "will speak": "Agan·gen",
-    "will see": "Nik·gen",
-    "will give": "On·gen",
-    "will take": "Ra·gen",
-    "will work": "Dak·gen",
-    "will play": "Kal·gen",
-    "will come": "Re·ba·gen",
-    "will go": "Re·ang·gen",
-    "will cook": "Song·gen",
-    "will buy": "Bre·gen"
+    "will eat": {
+      "garo": "Cha·gen",
+      "hindi": "खाएगा"
+    },
+    "will drink": {
+      "garo": "Ring·gen",
+      "hindi": "पिएगा"
+    },
+    "will sleep": {
+      "garo": "Tus·gen",
+      "hindi": "सोएगा"
+    },
+    "will walk": {
+      "garo": "Re·gen",
+      "hindi": "चलेगा"
+    },
+    "will run": {
+      "garo": "Kat·gen",
+      "hindi": "दौड़ेगा"
+    },
+    "will speak": {
+      "garo": "Agan·gen",
+      "hindi": "बोलेगा"
+    },
+    "will see": {
+      "garo": "Nik·gen",
+      "hindi": "देखेगा"
+    },
+    "will give": {
+      "garo": "On·gen",
+      "hindi": "देगा"
+    },
+    "will take": {
+      "garo": "Ra·gen",
+      "hindi": "लेगा"
+    },
+    "will work": {
+      "garo": "Dak·gen",
+      "hindi": "काम करेगा"
+    },
+    "will play": {
+      "garo": "Kal·gen",
+      "hindi": "खेलेगा"
+    },
+    "will come": {
+      "garo": "Re·ba·gen",
+      "hindi": "आएगा"
+    },
+    "will go": {
+      "garo": "Re·ang·gen",
+      "hindi": "जाएगा"
+    },
+    "will cook": {
+      "garo": "Song·gen",
+      "hindi": "पकाएगा"
+    },
+    "will buy": {
+      "garo": "Bre·gen",
+      "hindi": "खरीदेगा"
+    }
   },
-
   "adjectives_descriptors": {
     "_classifier": null,
     "_examples": [
-      { "english": "The house is big", "garo": "Nok dal·a" },
-      { "english": "The child is small", "garo": "Bi·sa chon·a" },
-      { "english": "The water is cold", "garo": "Chi sin·a" },
-      { "english": "He is very strong", "garo": "Ua be·en bilaka" },
-      { "english": "The road is narrow", "garo": "Rama apchona" }
+      {
+        "english": "The house is big",
+        "garo": "Nok dal·a",
+        "hindi": "घर बड़ा है"
+      },
+      {
+        "english": "The child is small",
+        "garo": "Bi·sa chon·a",
+        "hindi": "बच्चा छोटा है"
+      },
+      {
+        "english": "The water is cold",
+        "garo": "Chi sin·a",
+        "hindi": "पानी ठंडा है"
+      },
+      {
+        "english": "He is very strong",
+        "garo": "Ua be·en bilaka",
+        "hindi": "वह बहुत मज़बूत है"
+      },
+      {
+        "english": "The road is narrow",
+        "garo": "Rama apchona",
+        "hindi": "सड़क संकरी है"
+      }
     ],
-    "big": "Dal·a",
-    "small": "Chon·a",
-    "long": "Ro·a",
-    "short": "Kan·dik-a",
-    "tall": "Chu·a",
-    "new": "Gital",
-    "old": "Gitcham",
-    "good": "Nama",
-    "bad": "Namja",
-    "fast": "Ta·rak-a",
-    "slow": "Ka·sna",
-    "rich": "Nokma / Man·e-cha·gipa",
-    "poor": "Kangal",
-    "dry": "Ran·a",
-    "wet": "Chon·a / Sosia",
-    "hot": "Ding·a",
-    "cold": "Sin·a",
-    "light (weight)": "Ritchenga",
-    "heavy": "Jrima",
-    "hard": "Rak-a",
-    "soft": "Nom·a",
-    "sharp": "Mata",
-    "blunt": "Bin·a",
-    "smooth": "Rinoka",
-    "rough": "Skaka",
-    "deep": "Tu·a",
-    "shallow": "Tu·ja",
-    "high": "Chua",
-    "low": "Ona",
-    "wide": "Apala",
-    "narrow": "Apchona",
-    "clean": "Rongtala",
-    "dirty": "Mitchia",
-    "full": "Gapa",
-    "empty": "Bangbang",
-    "expensive": "Dam-raka",
-    "cheap": "Dam-nom·a",
-    "strong": "Bilaka",
-    "weak": "Bilgri",
-    "healthy": "An·senga",
-    "sick": "Sakama",
-    "hungry": "Okkria",
-    "thirsty": "Chi-ringna-ska",
-    "tired": "Neng·a",
-    "sleepy": "Tusina-ska",
-    "dizzy": "Miksula",
-    "wild": "Buringni",
-    "tame": "Nokni",
-    "fierce": "Ka·namja",
-    "poisonous": "Bisi-gnang",
-    "scary": "Kengni",
-    "light (brightness)": "Seng·a",
-    "dark": "Andala",
-    "thick": "Ritchaa",
-    "thin": "Ba·renga",
-    "holy": "Rongtalgipa",
-    "guilty": "Dos-gnang",
-    "innocent": "Dos-gri",
-    "fresh": "Gital",
-    "stale": "Gitcham"
+    "big": {
+      "garo": "Dal·a",
+      "hindi": "बड़ा"
+    },
+    "small": {
+      "garo": "Chon·a",
+      "hindi": "छोटा"
+    },
+    "long": {
+      "garo": "Ro·a",
+      "hindi": "लंबा"
+    },
+    "short": {
+      "garo": "Kan·dik-a",
+      "hindi": "छोटा / नाटा"
+    },
+    "tall": {
+      "garo": "Chu·a",
+      "hindi": "ऊँचा"
+    },
+    "new": {
+      "garo": "Gital",
+      "hindi": "नया"
+    },
+    "old": {
+      "garo": "Gitcham",
+      "hindi": "पुराना"
+    },
+    "good": {
+      "garo": "Nama",
+      "hindi": "अच्छा"
+    },
+    "bad": {
+      "garo": "Namja",
+      "hindi": "बुरा"
+    },
+    "fast": {
+      "garo": "Ta·rak-a",
+      "hindi": "तेज़"
+    },
+    "slow": {
+      "garo": "Ka·sna",
+      "hindi": "धीमा"
+    },
+    "rich": {
+      "garo": "Nokma / Man·e-cha·gipa",
+      "hindi": "अमीर"
+    },
+    "poor": {
+      "garo": "Kangal",
+      "hindi": "गरीब"
+    },
+    "dry": {
+      "garo": "Ran·a",
+      "hindi": "सूखा"
+    },
+    "wet": {
+      "garo": "Chon·a / Sosia",
+      "hindi": "गीला"
+    },
+    "hot": {
+      "garo": "Ding·a",
+      "hindi": "गर्म"
+    },
+    "cold": {
+      "garo": "Sin·a",
+      "hindi": "ठंडा"
+    },
+    "light (weight)": {
+      "garo": "Ritchenga",
+      "hindi": "हल्का"
+    },
+    "heavy": {
+      "garo": "Jrima",
+      "hindi": "भारी"
+    },
+    "hard": {
+      "garo": "Rak-a",
+      "hindi": "कठोर / कड़ा"
+    },
+    "soft": {
+      "garo": "Nom·a",
+      "hindi": "नरम"
+    },
+    "sharp": {
+      "garo": "Mata",
+      "hindi": "तेज़ / धारदार"
+    },
+    "blunt": {
+      "garo": "Bin·a",
+      "hindi": "कुंद"
+    },
+    "smooth": {
+      "garo": "Rinoka",
+      "hindi": "चिकना"
+    },
+    "rough": {
+      "garo": "Skaka",
+      "hindi": "खुरदरा"
+    },
+    "deep": {
+      "garo": "Tu·a",
+      "hindi": "गहरा"
+    },
+    "shallow": {
+      "garo": "Tu·ja",
+      "hindi": "उथला"
+    },
+    "high": {
+      "garo": "Chua",
+      "hindi": "ऊँचा"
+    },
+    "low": {
+      "garo": "Ona",
+      "hindi": "नीचा"
+    },
+    "wide": {
+      "garo": "Apala",
+      "hindi": "चौड़ा"
+    },
+    "narrow": {
+      "garo": "Apchona",
+      "hindi": "संकरा"
+    },
+    "clean": {
+      "garo": "Rongtala",
+      "hindi": "साफ़"
+    },
+    "dirty": {
+      "garo": "Mitchia",
+      "hindi": "गंदा"
+    },
+    "full": {
+      "garo": "Gapa",
+      "hindi": "भरा"
+    },
+    "empty": {
+      "garo": "Bangbang",
+      "hindi": "खाली"
+    },
+    "expensive": {
+      "garo": "Dam-raka",
+      "hindi": "महँगा"
+    },
+    "cheap": {
+      "garo": "Dam-nom·a",
+      "hindi": "सस्ता"
+    },
+    "strong": {
+      "garo": "Bilaka",
+      "hindi": "मज़बूत"
+    },
+    "weak": {
+      "garo": "Bilgri",
+      "hindi": "कमज़ोर"
+    },
+    "healthy": {
+      "garo": "An·senga",
+      "hindi": "स्वस्थ"
+    },
+    "sick": {
+      "garo": "Sakama",
+      "hindi": "बीमार"
+    },
+    "hungry": {
+      "garo": "Okkria",
+      "hindi": "भूखा"
+    },
+    "thirsty": {
+      "garo": "Chi-ringna-ska",
+      "hindi": "प्यासा"
+    },
+    "tired": {
+      "garo": "Neng·a",
+      "hindi": "थका हुआ"
+    },
+    "sleepy": {
+      "garo": "Tusina-ska",
+      "hindi": "नींद में"
+    },
+    "dizzy": {
+      "garo": "Miksula",
+      "hindi": "चक्कर आना"
+    },
+    "wild": {
+      "garo": "Buringni",
+      "hindi": "जंगली"
+    },
+    "tame": {
+      "garo": "Nokni",
+      "hindi": "पालतू"
+    },
+    "fierce": {
+      "garo": "Ka·namja",
+      "hindi": "क्रूर"
+    },
+    "poisonous": {
+      "garo": "Bisi-gnang",
+      "hindi": "ज़हरीला"
+    },
+    "scary": {
+      "garo": "Kengni",
+      "hindi": "डरावना"
+    },
+    "light (brightness)": {
+      "garo": "Seng·a",
+      "hindi": "उजाला"
+    },
+    "dark": {
+      "garo": "Andala",
+      "hindi": "अंधेरा"
+    },
+    "thick": {
+      "garo": "Ritchaa",
+      "hindi": "मोटा"
+    },
+    "thin": {
+      "garo": "Ba·renga",
+      "hindi": "पतला"
+    },
+    "holy": {
+      "garo": "Rongtalgipa",
+      "hindi": "पवित्र"
+    },
+    "guilty": {
+      "garo": "Dos-gnang",
+      "hindi": "दोषी"
+    },
+    "innocent": {
+      "garo": "Dos-gri",
+      "hindi": "निर्दोष"
+    },
+    "fresh": {
+      "garo": "Gital",
+      "hindi": "ताज़ा"
+    },
+    "stale": {
+      "garo": "Gitcham",
+      "hindi": "बासी"
+    }
   },
-
   "tastes_and_sensations": {
     "_classifier": null,
     "_examples": [
-      { "english": "This mango is sweet", "garo": "Ia am chi·a" },
-      { "english": "The lemon is sour", "garo": "Kakji mesenga" },
-      { "english": "The chilli is spicy", "garo": "Jal·ik jal·ik saa" },
-      { "english": "The food is delicious", "garo": "Cha cha·toa" },
-      { "english": "This tastes bitter", "garo": "Ia ka·a" }
+      {
+        "english": "This mango is sweet",
+        "garo": "Ia Te·gachu chi·a",
+        "hindi": "यह आम मीठा है"
+      },
+      {
+        "english": "The lemon is sour",
+        "garo": "Kakji mesenga",
+        "hindi": "नींबू खट्टा है"
+      },
+      {
+        "english": "The chilli is spicy",
+        "garo": "Jal·ik jal·ik saa",
+        "hindi": "मिर्च तीखी है"
+      },
+      {
+        "english": "The food is delicious",
+        "garo": "Cha cha·toa",
+        "hindi": "खाना स्वादिष्ट है"
+      },
+      {
+        "english": "This tastes bitter",
+        "garo": "Ia ka·a",
+        "hindi": "यह कड़वा लगता है"
+      }
     ],
-    "sweet": "Chi·a",
-    "sour": "Mesenga",
-    "bitter": "Ka·a",
-    "salty": "Kari nanga",
-    "spicy": "Jal·ik saa",
-    "astringent (like raw banana)": "Ka·baka",
-    "tasteless / bland": "Chibroka",
-    "delicious": "Cha·toa",
-    "smelly / stinky": "Senga"
+    "sweet": {
+      "garo": "Chi·a",
+      "hindi": "मीठा"
+    },
+    "sour": {
+      "garo": "Mesenga",
+      "hindi": "खट्टा"
+    },
+    "bitter": {
+      "garo": "Ka·a",
+      "hindi": "कड़वा"
+    },
+    "salty": {
+      "garo": "Kari nanga",
+      "hindi": "नमकीन"
+    },
+    "spicy": {
+      "garo": "Jal·ik saa",
+      "hindi": "तीखा"
+    },
+    "astringent (like raw banana)": {
+      "garo": "Ka·baka",
+      "hindi": "कसैला"
+    },
+    "tasteless / bland": {
+      "garo": "Chibroka",
+      "hindi": "बेस्वाद"
+    },
+    "delicious": {
+      "garo": "Cha·toa",
+      "hindi": "स्वादिष्ट"
+    },
+    "smelly / stinky": {
+      "garo": "Senga",
+      "hindi": "बदबूदार"
+    }
   },
-
   "nature_and_weather": {
     "_classifier": null,
     "_examples": [
-      { "english": "The sun is hot today", "garo": "Da·al sal ding·a" },
-      { "english": "It is raining", "garo": "Mikka ding·enga" },
-      { "english": "The river is deep", "garo": "Chibima tu·a" },
-      { "english": "There is lightning", "garo": "Mikka-kimma dong·a" },
-      { "english": "The forest is full of trees", "garo": "Buring bol-o gapa" }
+      {
+        "english": "The sun is hot today",
+        "garo": "Da·al sal ding·a",
+        "hindi": "आज सूरज गर्म है"
+      },
+      {
+        "english": "It is raining",
+        "garo": "Mikka ding·enga",
+        "hindi": "बारिश हो रही है"
+      },
+      {
+        "english": "The river is deep",
+        "garo": "Chibima tu·a",
+        "hindi": "नदी गहरी है"
+      },
+      {
+        "english": "There is lightning",
+        "garo": "Mikka-kimma dong·a",
+        "hindi": "बिजली चमक रही है"
+      },
+      {
+        "english": "The forest is full of trees",
+        "garo": "Buring bol-o gapa",
+        "hindi": "जंगल पेड़ों से भरा है"
+      }
     ],
-    "sun": "Sal",
-    "moon": "Jajong",
-    "star": "Aski",
-    "sky": "Salgi",
-    "cloud": "Aram",
-    "rain": "Mikka",
-    "wind": "Balwa",
-    "thunder": "Goera",
-    "lightning": "Mikka-kimma",
-    "fire": "Wa·al",
-    "water": "Chi",
-    "earth / soil": "A·a",
-    "stone": "Ro·ong",
-    "sand": "An·cheng",
-    "river": "Chibima",
-    "mountain": "A·bri",
-    "forest": "Buring",
-    "tree": "Bol",
-    "flower": "Bibal",
-    "leaf": "Bijak"
+    "sun": {
+      "garo": "Sal",
+      "hindi": "सूरज"
+    },
+    "moon": {
+      "garo": "Jajong",
+      "hindi": "चाँद"
+    },
+    "star": {
+      "garo": "Aski",
+      "hindi": "तारा"
+    },
+    "sky": {
+      "garo": "Salgi",
+      "hindi": "आसमान"
+    },
+    "cloud": {
+      "garo": "Aram",
+      "hindi": "बादल"
+    },
+    "rain": {
+      "garo": "Mikka",
+      "hindi": "बारिश"
+    },
+    "wind": {
+      "garo": "Balwa",
+      "hindi": "हवा"
+    },
+    "thunder": {
+      "garo": "Goera",
+      "hindi": "गरज"
+    },
+    "lightning": {
+      "garo": "Mikka-kimma",
+      "hindi": "बिजली"
+    },
+    "fire": {
+      "garo": "Wa·al",
+      "hindi": "आग"
+    },
+    "water": {
+      "garo": "Chi",
+      "hindi": "पानी"
+    },
+    "earth / soil": {
+      "garo": "A·a",
+      "hindi": "मिट्टी"
+    },
+    "stone": {
+      "garo": "Ro·ong",
+      "hindi": "पत्थर"
+    },
+    "sand": {
+      "garo": "An·cheng",
+      "hindi": "रेत"
+    },
+    "river": {
+      "garo": "Chibima",
+      "hindi": "नदी"
+    },
+    "mountain": {
+      "garo": "A·bri",
+      "hindi": "पहाड़"
+    },
+    "forest": {
+      "garo": "Buring",
+      "hindi": "जंगल"
+    },
+    "tree": {
+      "garo": "Bol",
+      "hindi": "पेड़"
+    },
+    "flower": {
+      "garo": "Bibal",
+      "hindi": "फूल"
+    },
+    "leaf": {
+      "garo": "Bijak",
+      "hindi": "पत्ता"
+    }
   },
-
   "household_items": {
     "_classifier": "Ge",
     "_examples": [
-      { "english": "Where is the key?", "garo": "Chabi bano?" },
-      { "english": "The door is open", "garo": "Do·ga oa" },
-      { "english": "I need a broom", "garo": "Angna sal-re-at sa·ge chaina" },
-      { "english": "Put it on the table", "garo": "Ia mez-o de·bo" },
-      { "english": "The book is on the bed", "garo": "Ki·tap palang-o dong·a" }
+      {
+        "english": "Where is the key?",
+        "garo": "Chabi bano?",
+        "hindi": "चाबी कहाँ है?"
+      },
+      {
+        "english": "The door is open",
+        "garo": "Do·ga oa",
+        "hindi": "दरवाज़ा खुला है"
+      },
+      {
+        "english": "I need a broom",
+        "garo": "Angna sal-re-at ge-sa chaina",
+        "hindi": "मुझे झाड़ू चाहिए"
+      },
+      {
+        "english": "Put it on the table",
+        "garo": "Ia mez-o de·bo",
+        "hindi": "इसे मेज़ पर रखो"
+      },
+      {
+        "english": "The book is on the bed",
+        "garo": "Ki·tap palang-o dong·a",
+        "hindi": "किताब बिस्तर पर है"
+      }
     ],
-    "house": "Nok",
-    "door": "Do·ga",
-    "window": "Kelki",
-    "bed": "Palang",
-    "chair": "Chokki",
-    "table": "Mez",
-    "plate": "Tala",
-    "cup": "Piala",
-    "spoon": "Chamus",
-    "knife": "Kettal",
-    "pot": "Dik-ke",
-    "broom": "Sal-re-at",
-    "clothes": "Ba·ra",
-    "soap": "Sabon",
-    "mirror": "Janera",
-    "comb": "Ken·chong",
-    "lamp": "Chakki",
-    "key": "Chabi",
-    "bag": "Jol·a",
-    "book": "Ki·tap",
-    "axe": "Rua",
-    "sword / machete": "Mil·am",
-    "hoe": "Gitchima / Kodal",
-    "hammer": "Martul",
-    "nail (metal)": "Gajal / Gojal",
-    "rope": "Budu",
-    "basket (backpack)": "Kokcheng",
-    "umbrella": "Satta",
-    "ladder": "Jang·ke",
-    "bridge": "Jal·ang / Dolong",
-    "boat": "Ring"
+    "house": {
+      "garo": "Nok",
+      "hindi": "घर"
+    },
+    "door": {
+      "garo": "Do·ga",
+      "hindi": "दरवाज़ा"
+    },
+    "window": {
+      "garo": "Kelki",
+      "hindi": "खिड़की"
+    },
+    "bed": {
+      "garo": "Palang",
+      "hindi": "बिस्तर"
+    },
+    "chair": {
+      "garo": "Chokki",
+      "hindi": "कुर्सी"
+    },
+    "table": {
+      "garo": "Mez",
+      "hindi": "मेज़"
+    },
+    "plate": {
+      "garo": "Tala",
+      "hindi": "थाली"
+    },
+    "cup": {
+      "garo": "Piala",
+      "hindi": "कप"
+    },
+    "spoon": {
+      "garo": "Chamus",
+      "hindi": "चम्मच"
+    },
+    "knife": {
+      "garo": "Kettal",
+      "hindi": "चाकू"
+    },
+    "pot": {
+      "garo": "Dik-ke",
+      "hindi": "बर्तन / हाँडी"
+    },
+    "broom": {
+      "garo": "Sal-re-at",
+      "hindi": "झाड़ू"
+    },
+    "clothes": {
+      "garo": "Ba·ra",
+      "hindi": "कपड़े"
+    },
+    "soap": {
+      "garo": "Sabon",
+      "hindi": "साबुन"
+    },
+    "mirror": {
+      "garo": "Janera",
+      "hindi": "शीशा"
+    },
+    "comb": {
+      "garo": "Ken·chong",
+      "hindi": "कंघी"
+    },
+    "lamp": {
+      "garo": "Chakki",
+      "hindi": "दीपक"
+    },
+    "key": {
+      "garo": "Chabi",
+      "hindi": "चाबी"
+    },
+    "bag": {
+      "garo": "Jol·a",
+      "hindi": "थैला"
+    },
+    "book": {
+      "garo": "Ki·tap",
+      "hindi": "किताब"
+    },
+    "axe": {
+      "garo": "Rua",
+      "hindi": "कुल्हाड़ी"
+    },
+    "sword / machete": {
+      "garo": "Mil·am",
+      "hindi": "तलवार / दाव"
+    },
+    "hoe": {
+      "garo": "Gitchima / Kodal",
+      "hindi": "कुदाल"
+    },
+    "hammer": {
+      "garo": "Martul",
+      "hindi": "हथौड़ा"
+    },
+    "nail (metal)": {
+      "garo": "Gajal / Gojal",
+      "hindi": "कील"
+    },
+    "rope": {
+      "garo": "Budu",
+      "hindi": "रस्सी"
+    },
+    "basket (backpack)": {
+      "garo": "Kokcheng",
+      "hindi": "टोकरी (पीठ पर)"
+    },
+    "umbrella": {
+      "garo": "Satta",
+      "hindi": "छाता"
+    },
+    "ladder": {
+      "garo": "Jang·ke",
+      "hindi": "सीढ़ी"
+    },
+    "bridge": {
+      "garo": "Jal·ang / Dolong",
+      "hindi": "पुल"
+    },
+    "boat": {
+      "garo": "Ring",
+      "hindi": "नाव"
+    }
   },
-
   "time_and_days": {
     "_classifier": null,
     "_examples": [
-      { "english": "Today is Monday", "garo": "Da·al sompra ari" },
-      { "english": "I will come tomorrow morning", "garo": "Anga knal pring re·ba·gen" },
-      { "english": "He came yesterday evening", "garo": "Ua mejal attam re·ba·aha" },
-      { "english": "See you next week", "garo": "Skang anti-o grongtaina" },
-      { "english": "It is midnight now", "garo": "Da·o wal-jatchi" }
+      {
+        "english": "Today is Monday",
+        "garo": "Da·al sompra ari",
+        "hindi": "आज सोमवार है"
+      },
+      {
+        "english": "I will come tomorrow morning",
+        "garo": "Anga knal pring re·ba·gen",
+        "hindi": "मैं कल सुबह आऊँगा"
+      },
+      {
+        "english": "He came yesterday evening",
+        "garo": "Ua mejal attam re·ba·aha",
+        "hindi": "वह कल शाम आया"
+      },
+      {
+        "english": "See you next week",
+        "garo": "Skang anti-o grongtaina",
+        "hindi": "अगले हफ्ते मिलते हैं"
+      },
+      {
+        "english": "It is midnight now",
+        "garo": "Da·o wal-jatchi",
+        "hindi": "अभी आधी रात है"
+      }
     ],
-    "day": "Sal",
-    "night": "Wal",
-    "morning": "Pring",
-    "noon": "Saljatchi",
-    "afternoon": "Sal-aksol",
-    "evening": "Attam",
-    "midnight": "Wal-jatchi",
-    "today": "Da·al",
-    "yesterday": "Mejal",
-    "tomorrow": "Knal",
-    "day after tomorrow": "Me·nnalo",
-    "day before yesterday": "Me-si-ja",
-    "now": "Da·o",
-    "later": "Ja·mano",
-    "before": "Skang",
-    "early": "Bakkan / Pring-seng",
-    "late": "Ja·man-chak-a",
-    "always": "Pangnan",
-    "never": "Pangnan-ba (ja)",
-    "sometimes": "Gisep gisep",
-    "week": "Anti",
-    "month": "Ja",
-    "year": "Bilsi",
-    "time": "Somai",
-    "clock / watch": "Guri",
-    "hour": "Konta",
-    "summer": "Ding·kari",
-    "winter": "Sin·kari",
-    "rainy season": "Mikkari",
-    "spring": "Bil-si-gital",
-    "monday": "Sompra ari",
-    "tuesday": "Mongal ari",
-    "wednesday": "Budh ari",
-    "thursday": "Bishpa ari",
-    "friday": "Shukra ari",
-    "saturday": "Shoni ari",
-    "sunday": "Robibara ari"
+    "day": {
+      "garo": "Sal",
+      "hindi": "दिन"
+    },
+    "night": {
+      "garo": "Wal",
+      "hindi": "रात"
+    },
+    "morning": {
+      "garo": "Pring",
+      "hindi": "सुबह"
+    },
+    "noon": {
+      "garo": "Saljatchi",
+      "hindi": "दोपहर"
+    },
+    "afternoon": {
+      "garo": "Sal-aksol",
+      "hindi": "अपराह्न"
+    },
+    "evening": {
+      "garo": "Attam",
+      "hindi": "शाम"
+    },
+    "midnight": {
+      "garo": "Wal-jatchi",
+      "hindi": "आधी रात"
+    },
+    "today": {
+      "garo": "Da·al",
+      "hindi": "आज"
+    },
+    "yesterday": {
+      "garo": "Mejal",
+      "hindi": "कल (बीता)"
+    },
+    "tomorrow": {
+      "garo": "Knal",
+      "hindi": "कल (आने वाला)"
+    },
+    "day after tomorrow": {
+      "garo": "Me·nnalo",
+      "hindi": "परसों"
+    },
+    "day before yesterday": {
+      "garo": "Me-si-ja",
+      "hindi": "परसों (बीता)"
+    },
+    "now": {
+      "garo": "Da·o",
+      "hindi": "अभी"
+    },
+    "later": {
+      "garo": "Ja·mano",
+      "hindi": "बाद में"
+    },
+    "before": {
+      "garo": "Skang",
+      "hindi": "पहले"
+    },
+    "early": {
+      "garo": "Bakkan / Pring-seng",
+      "hindi": "जल्दी"
+    },
+    "late": {
+      "garo": "Ja·man-chak-a",
+      "hindi": "देर से"
+    },
+    "always": {
+      "garo": "Pangnan",
+      "hindi": "हमेशा"
+    },
+    "never": {
+      "garo": "Pangnan-ba (ja)",
+      "hindi": "कभी नहीं"
+    },
+    "sometimes": {
+      "garo": "Gisep gisep",
+      "hindi": "कभी-कभी"
+    },
+    "week": {
+      "garo": "Anti",
+      "hindi": "हफ्ता"
+    },
+    "month": {
+      "garo": "Ja",
+      "hindi": "महीना"
+    },
+    "year": {
+      "garo": "Bilsi",
+      "hindi": "साल"
+    },
+    "time": {
+      "garo": "Somai",
+      "hindi": "समय"
+    },
+    "clock / watch": {
+      "garo": "Guri",
+      "hindi": "घड़ी"
+    },
+    "hour": {
+      "garo": "Konta",
+      "hindi": "घंटा"
+    },
+    "summer": {
+      "garo": "Ding·kari",
+      "hindi": "गर्मी"
+    },
+    "winter": {
+      "garo": "Sin·kari",
+      "hindi": "सर्दी"
+    },
+    "rainy season": {
+      "garo": "Mikkari",
+      "hindi": "बरसात का मौसम"
+    },
+    "spring": {
+      "garo": "Bil-si-gital",
+      "hindi": "बसंत"
+    },
+    "monday": {
+      "garo": "Sompra ari",
+      "hindi": "सोमवार"
+    },
+    "tuesday": {
+      "garo": "Mongal ari",
+      "hindi": "मंगलवार"
+    },
+    "wednesday": {
+      "garo": "Budh ari",
+      "hindi": "बुधवार"
+    },
+    "thursday": {
+      "garo": "Bishpa ari",
+      "hindi": "गुरुवार"
+    },
+    "friday": {
+      "garo": "Shukra ari",
+      "hindi": "शुक्रवार"
+    },
+    "saturday": {
+      "garo": "Shoni ari",
+      "hindi": "शनिवार"
+    },
+    "sunday": {
+      "garo": "Robibara ari",
+      "hindi": "रविवार"
+    }
   },
-
   "clothing_and_wearables": {
     "_classifier": "Ge",
     "_examples": [
-      { "english": "I bought new shoes", "garo": "Anga juta gital sa·ge bre·aha" },
-      { "english": "She is wearing a shawl", "garo": "Ua rekkeng de·enga" },
-      { "english": "Where is my hat?", "garo": "Angni tupi bano?" },
-      { "english": "He has a gold ring", "garo": "Uni jakstem sona sa·ge dong·a" },
-      { "english": "The traditional wrap is beautiful", "garo": "Dakmanda nama" }
+      {
+        "english": "I bought new shoes",
+        "garo": "Anga juta gital ge-sa bre·aha",
+        "hindi": "मैंने नए जूते खरीदे"
+      },
+      {
+        "english": "She is wearing a shawl",
+        "garo": "Ua rekkeng de·enga",
+        "hindi": "वह शॉल पहने हुई है"
+      },
+      {
+        "english": "Where is my hat?",
+        "garo": "Angni tupi bano?",
+        "hindi": "मेरी टोपी कहाँ है?"
+      },
+      {
+        "english": "He has a gold ring",
+        "garo": "Uni jakstem sona ge-sa dong·a",
+        "hindi": "उसके पास सोने की अंगूठी है"
+      },
+      {
+        "english": "The traditional wrap is beautiful",
+        "garo": "Dakmanda nama",
+        "hindi": "पारंपरिक वस्त्र सुंदर है"
+      }
     ],
-    "shirt": "Chola",
-    "traditional wrap (women)": "Dakmanda",
-    "shawl": "Rekkeng",
-    "turban": "Kotip",
-    "shoes": "Juta",
-    "socks": "Moja",
-    "hat": "Tupi",
-    "ring": "Jakstem",
-    "necklace": "Ripok",
-    "earring": "Nachil-ganna"
+    "shirt": {
+      "garo": "Chola",
+      "hindi": "कमीज़"
+    },
+    "traditional wrap (women)": {
+      "garo": "Dakmanda",
+      "hindi": "पारंपरिक वस्त्र (महिला)"
+    },
+    "shawl": {
+      "garo": "Rekkeng",
+      "hindi": "शॉल"
+    },
+    "turban": {
+      "garo": "Kotip",
+      "hindi": "पगड़ी"
+    },
+    "shoes": {
+      "garo": "Juta",
+      "hindi": "जूते"
+    },
+    "socks": {
+      "garo": "Moja",
+      "hindi": "मोज़े"
+    },
+    "hat": {
+      "garo": "Tupi",
+      "hindi": "टोपी"
+    },
+    "ring": {
+      "garo": "Jakstem",
+      "hindi": "अंगूठी"
+    },
+    "necklace": {
+      "garo": "Ripok",
+      "hindi": "हार"
+    },
+    "earring": {
+      "garo": "Nachil-ganna",
+      "hindi": "कानपटी / बाली"
+    }
   },
-
   "places": {
     "_classifier": null,
     "_examples": [
-      { "english": "The school is near", "garo": "Skul sepang" },
-      { "english": "I am going to the market", "garo": "Anga anti-o re·ang·a" },
-      { "english": "He lives in the village", "garo": "Ua song-o dong·a" },
-      { "english": "The hospital is far", "garo": "Hospital chel·a" },
-      { "english": "Where is the church?", "garo": "Gilja-nok bano?" }
+      {
+        "english": "The school is near",
+        "garo": "Skul sepang",
+        "hindi": "स्कूल पास है"
+      },
+      {
+        "english": "I am going to the market",
+        "garo": "Anga anti-o re·ang·a",
+        "hindi": "मैं बाज़ार जा रहा हूँ"
+      },
+      {
+        "english": "He lives in the village",
+        "garo": "Ua song-o dong·a",
+        "hindi": "वह गाँव में रहता है"
+      },
+      {
+        "english": "The hospital is far",
+        "garo": "Hospital chel·a",
+        "hindi": "अस्पताल दूर है"
+      },
+      {
+        "english": "Where is the church?",
+        "garo": "Gilja-nok bano?",
+        "hindi": "गिरजाघर कहाँ है?"
+      }
     ],
-    "village": "Song",
-    "town": "Songjinma",
-    "school": "Skul",
-    "market": "Anti",
-    "road": "Rama",
-    "field": "A·ba",
-    "office": "Kam-ka·chakani",
-    "church": "Gilja-nok",
-    "shop": "Dokan",
-    "hospital": "Hospital / Sam-nok"
+    "village": {
+      "garo": "Song",
+      "hindi": "गाँव"
+    },
+    "town": {
+      "garo": "Songjinma",
+      "hindi": "कस्बा"
+    },
+    "school": {
+      "garo": "Skul",
+      "hindi": "स्कूल"
+    },
+    "market": {
+      "garo": "Anti",
+      "hindi": "बाज़ार"
+    },
+    "road": {
+      "garo": "Rama",
+      "hindi": "सड़क"
+    },
+    "field": {
+      "garo": "A·ba",
+      "hindi": "खेत"
+    },
+    "office": {
+      "garo": "Kam-ka·chakani",
+      "hindi": "दफ़्तर"
+    },
+    "church": {
+      "garo": "Gilja-nok",
+      "hindi": "गिरजाघर"
+    },
+    "shop": {
+      "garo": "Dokan",
+      "hindi": "दुकान"
+    },
+    "hospital": {
+      "garo": "Hospital / Sam-nok",
+      "hindi": "अस्पताल"
+    }
   },
-
   "directions_and_positions": {
     "_classifier": null,
     "_examples": [
-      { "english": "The book is on top", "garo": "Ki·tap kosak-o dong·a" },
-      { "english": "The dog is inside", "garo": "Achak ning·o dong·a" },
-      { "english": "The market is to the left", "garo": "Anti jak-asi dong·a" },
-      { "english": "Go straight ahead", "garo": "Mikkang re·ang·bo" },
-      { "english": "The school is to the north", "garo": "Skul salgro dong·a" }
+      {
+        "english": "The book is on top",
+        "garo": "Ki·tap kosak-o dong·a",
+        "hindi": "किताब ऊपर है"
+      },
+      {
+        "english": "The dog is inside",
+        "garo": "Achak ning·o dong·a",
+        "hindi": "कुत्ता अंदर है"
+      },
+      {
+        "english": "The market is to the left",
+        "garo": "Anti jak-asi dong·a",
+        "hindi": "बाज़ार बाईं ओर है"
+      },
+      {
+        "english": "Go straight ahead",
+        "garo": "Mikkang re·ang·bo",
+        "hindi": "सीधे आगे जाओ"
+      },
+      {
+        "english": "The school is to the north",
+        "garo": "Skul salgro dong·a",
+        "hindi": "स्कूल उत्तर में है"
+      }
     ],
-    "up": "Kosak",
-    "down": "Ka·ma",
-    "left": "Jak-asi",
-    "right": "Jak-ra",
-    "front": "Mikkang",
-    "back": "Janggila",
-    "inside": "Ning·o",
-    "outside": "A·pal",
-    "far": "Chel·a",
-    "near": "Sepang",
-    "north": "Salgro",
-    "south": "Salgipeng",
-    "east": "Salaram",
-    "west": "Saliram",
-    "above": "Kosak",
-    "below": "Ka·ma",
-    "center": "Jatchi",
-    "side": "Rikam"
+    "up": {
+      "garo": "Kosak",
+      "hindi": "ऊपर"
+    },
+    "down": {
+      "garo": "Ka·ma",
+      "hindi": "नीचे"
+    },
+    "left": {
+      "garo": "Jak-asi",
+      "hindi": "बाईं ओर"
+    },
+    "right": {
+      "garo": "Jak-ra",
+      "hindi": "दाईं ओर"
+    },
+    "front": {
+      "garo": "Mikkang",
+      "hindi": "आगे"
+    },
+    "back": {
+      "garo": "Janggila",
+      "hindi": "पीछे"
+    },
+    "inside": {
+      "garo": "Ning·o",
+      "hindi": "अंदर"
+    },
+    "outside": {
+      "garo": "A·pal",
+      "hindi": "बाहर"
+    },
+    "far": {
+      "garo": "Chel·a",
+      "hindi": "दूर"
+    },
+    "near": {
+      "garo": "Sepang",
+      "hindi": "पास"
+    },
+    "north": {
+      "garo": "Salgro",
+      "hindi": "उत्तर"
+    },
+    "south": {
+      "garo": "Salgipeng",
+      "hindi": "दक्षिण"
+    },
+    "east": {
+      "garo": "Salaram",
+      "hindi": "पूर्व"
+    },
+    "west": {
+      "garo": "Saliram",
+      "hindi": "पश्चिम"
+    },
+    "above": {
+      "garo": "Kosak",
+      "hindi": "ऊपर"
+    },
+    "below": {
+      "garo": "Ka·ma",
+      "hindi": "नीचे"
+    },
+    "center": {
+      "garo": "Jatchi",
+      "hindi": "केंद्र"
+    },
+    "side": {
+      "garo": "Rikam",
+      "hindi": "किनारा"
+    }
   },
-
   "occupations": {
     "_classifier": "Sak",
     "_examples": [
-      { "english": "My father is a farmer", "garo": "Angni pa sa·sak game-cha·gipa" },
-      { "english": "The teacher is good", "garo": "Skigipa sa·sak nama" },
-      { "english": "Two doctors came", "garo": "Doctor gni·sak re·ba·aha" },
-      { "english": "The police caught the thief", "garo": "Pulis sa·sak cha·u sa·sak rim·aha" },
-      { "english": "He is a carpenter", "garo": "Ua bal-sol-gipa sa·sak" }
+      {
+        "english": "My father is a farmer",
+        "garo": "Angni pa sak-sa game-cha·gipa",
+        "hindi": "मेरे पिता किसान हैं"
+      },
+      {
+        "english": "The teacher is good",
+        "garo": "Skigipa sak-sa nama",
+        "hindi": "शिक्षक अच्छे हैं"
+      },
+      {
+        "english": "Two doctors came",
+        "garo": "Doctor sak-gni re·ba·aha",
+        "hindi": "दो डॉक्टर आए"
+      },
+      {
+        "english": "The police caught the thief",
+        "garo": "Pulis sak-sa cha·u sak-sa rim·aha",
+        "hindi": "पुलिस ने चोर को पकड़ा"
+      },
+      {
+        "english": "He is a carpenter",
+        "garo": "Ua bal-sol-gipa sak-sa",
+        "hindi": "वह बढ़ई है"
+      }
     ],
-    "farmer": "Game-cha·gipa",
-    "teacher": "Skigipa",
-    "student": "Porai-gipa",
-    "doctor": "Doctor / Sam-on·gipa",
-    "nurse": "Nurse",
-    "driver": "Gari-chalai-gipa",
-    "carpenter": "Bal-sol-gipa",
-    "blacksmith": "Sil-dak-gipa",
-    "shopkeeper": "Dokan-dakgipa",
-    "tailor": "Ba·ra-sikgipa",
-    "worker / laborer": "Kam-ka·gipa",
-    "king": "Raja",
-    "chief": "Nokma",
-    "police": "Pulis",
-    "soldier": "Sipai",
-    "postman": "Chiti-ra·ba-gipa",
-    "cook": "Song.timgipa",
-    "leader": "Dilgipa",
-    "preacher": "Aganprakgipa",
-    "thief": "Cha·u",
-    "guest": "Sokgipa",
-    "stranger": "Agital"
+    "farmer": {
+      "garo": "Game-cha·gipa",
+      "hindi": "किसान"
+    },
+    "teacher": {
+      "garo": "Skigipa",
+      "hindi": "शिक्षक"
+    },
+    "student": {
+      "garo": "Porai-gipa",
+      "hindi": "छात्र"
+    },
+    "doctor": {
+      "garo": "Doctor / Sam-on·gipa",
+      "hindi": "डॉक्टर"
+    },
+    "nurse": {
+      "garo": "Nurse",
+      "hindi": "नर्स"
+    },
+    "driver": {
+      "garo": "Gari-chalai-gipa",
+      "hindi": "चालक"
+    },
+    "carpenter": {
+      "garo": "Bal-sol-gipa",
+      "hindi": "बढ़ई"
+    },
+    "blacksmith": {
+      "garo": "Sil-dak-gipa",
+      "hindi": "लोहार"
+    },
+    "shopkeeper": {
+      "garo": "Dokan-dakgipa",
+      "hindi": "दुकानदार"
+    },
+    "tailor": {
+      "garo": "Ba·ra-sikgipa",
+      "hindi": "दर्जी"
+    },
+    "worker / laborer": {
+      "garo": "Kam-ka·gipa",
+      "hindi": "मज़दूर"
+    },
+    "king": {
+      "garo": "Raja",
+      "hindi": "राजा"
+    },
+    "chief": {
+      "garo": "Nokma",
+      "hindi": "मुखिया"
+    },
+    "police": {
+      "garo": "Pulis",
+      "hindi": "पुलिस"
+    },
+    "soldier": {
+      "garo": "Sipai",
+      "hindi": "सैनिक"
+    },
+    "postman": {
+      "garo": "Chiti-ra·ba-gipa",
+      "hindi": "डाकिया"
+    },
+    "cook": {
+      "garo": "Song.timgipa",
+      "hindi": "रसोइया"
+    },
+    "leader": {
+      "garo": "Dilgipa",
+      "hindi": "नेता"
+    },
+    "preacher": {
+      "garo": "Aganprakgipa",
+      "hindi": "उपदेशक"
+    },
+    "thief": {
+      "garo": "Cha·u",
+      "hindi": "चोर"
+    },
+    "guest": {
+      "garo": "Sokgipa",
+      "hindi": "मेहमान"
+    },
+    "stranger": {
+      "garo": "Agital",
+      "hindi": "अजनबी"
+    }
   },
-
   "education": {
     "_classifier": "King",
     "_examples": [
-      { "english": "I am reading a book", "garo": "Anga ki·tap sa·king por·enga" },
-      { "english": "Write your answer", "garo": "Nang·ni aganchakani se·bo" },
-      { "english": "The exam is tomorrow", "garo": "Porika knal" },
-      { "english": "He answered the question", "garo": "Ua sing·ani aganchakania" },
-      { "english": "Knowledge is power", "garo": "Gni bilaka" }
+      {
+        "english": "I am reading a book",
+        "garo": "Anga ki·tap king-sa por·enga",
+        "hindi": "मैं किताब पढ़ रहा हूँ"
+      },
+      {
+        "english": "Write your answer",
+        "garo": "Nang·ni aganchakani se·bo",
+        "hindi": "अपना उत्तर लिखो"
+      },
+      {
+        "english": "The exam is tomorrow",
+        "garo": "Porika knal",
+        "hindi": "परीक्षा कल है"
+      },
+      {
+        "english": "He answered the question",
+        "garo": "Ua sing·ani aganchakania",
+        "hindi": "उसने सवाल का जवाब दिया"
+      },
+      {
+        "english": "Knowledge is power",
+        "garo": "Gni bilaka",
+        "hindi": "ज्ञान शक्ति है"
+      }
     ],
-    "school": "Skul",
-    "class": "Klas",
-    "book": "Ki·tap",
-    "paper": "Lekka",
-    "pen": "Pen",
-    "pencil": "Pencil",
-    "ink": "Kali",
-    "lesson": "Porani",
-    "letter (alphabet)": "Oikor",
-    "word": "Katta",
-    "sentence": "Katta-ku·chik",
-    "question": "Sing·ani",
-    "answer": "Aganchakani",
-    "test / exam": "Porika",
-    "knowledge": "Gni / Ma·siani",
-    "wisdom": "Seng·ani",
-    "story": "Golpo",
-    "map": "Map",
-    "picture": "Noksa",
-    "mistake": "Gualani"
+    "school": {
+      "garo": "Skul",
+      "hindi": "स्कूल"
+    },
+    "class": {
+      "garo": "Klas",
+      "hindi": "कक्षा"
+    },
+    "book": {
+      "garo": "Ki·tap",
+      "hindi": "किताब"
+    },
+    "paper": {
+      "garo": "Lekka",
+      "hindi": "कागज़"
+    },
+    "pen": {
+      "garo": "Pen",
+      "hindi": "कलम"
+    },
+    "pencil": {
+      "garo": "Pencil",
+      "hindi": "पेंसिल"
+    },
+    "ink": {
+      "garo": "Kali",
+      "hindi": "स्याही"
+    },
+    "lesson": {
+      "garo": "Porani",
+      "hindi": "पाठ"
+    },
+    "letter (alphabet)": {
+      "garo": "Oikor",
+      "hindi": "अक्षर"
+    },
+    "word": {
+      "garo": "Katta",
+      "hindi": "शब्द"
+    },
+    "sentence": {
+      "garo": "Katta-ku·chik",
+      "hindi": "वाक्य"
+    },
+    "question": {
+      "garo": "Sing·ani",
+      "hindi": "प्रश्न"
+    },
+    "answer": {
+      "garo": "Aganchakani",
+      "hindi": "उत्तर"
+    },
+    "test / exam": {
+      "garo": "Porika",
+      "hindi": "परीक्षा"
+    },
+    "knowledge": {
+      "garo": "Gni / Ma·siani",
+      "hindi": "ज्ञान"
+    },
+    "wisdom": {
+      "garo": "Seng·ani",
+      "hindi": "बुद्धि"
+    },
+    "story": {
+      "garo": "Golpo",
+      "hindi": "कहानी"
+    },
+    "map": {
+      "garo": "Map",
+      "hindi": "नक्शा"
+    },
+    "picture": {
+      "garo": "Noksa",
+      "hindi": "तस्वीर"
+    },
+    "mistake": {
+      "garo": "Gualani",
+      "hindi": "गलती"
+    }
   },
-
   "health_and_medical": {
     "_classifier": null,
     "_examples": [
-      { "english": "I have a headache", "garo": "Angni sko sa·dika" },
-      { "english": "Take this medicine", "garo": "Ia sam ra·bo" },
-      { "english": "He has a fever", "garo": "Uni sin·-ding·-a" },
-      { "english": "She is healthy now", "garo": "Ua da·o an·senga" },
-      { "english": "My wound is healing", "garo": "Angni mata an·sengpil·enga" }
+      {
+        "english": "I have a headache",
+        "garo": "Angni sko sa·dika",
+        "hindi": "मेरे सिर में दर्द है"
+      },
+      {
+        "english": "Take this medicine",
+        "garo": "Ia sam ra·bo",
+        "hindi": "यह दवाई लो"
+      },
+      {
+        "english": "He has a fever",
+        "garo": "Uni sin·-ding·-a",
+        "hindi": "उसे बुखार है"
+      },
+      {
+        "english": "She is healthy now",
+        "garo": "Ua da·o an·senga",
+        "hindi": "वह अब स्वस्थ है"
+      },
+      {
+        "english": "My wound is healing",
+        "garo": "Angni mata an·sengpil·enga",
+        "hindi": "मेरा घाव ठीक हो रहा है"
+      }
     ],
-    "medicine": "Sam",
-    "pain": "Sa·dika",
-    "fever": "Sin·-ding·-a",
-    "cough": "Gusua",
-    "headache": "Sko-saa",
-    "stomachache": "Ok-saa",
-    "wound / injury": "Mata",
-    "blood": "An·chi",
-    "bone": "Greng",
-    "healthy": "An·senga",
-    "weak": "Bilgri",
-    "strong": "Bilaka",
-    "blind": "Mikgri",
-    "deaf": "Nachil-kala",
-    "mute": "Ku·ma",
-    "poison": "Bisi",
-    "swelling": "Ripoma",
-    "itch": "Ka·kita",
-    "pill": "Sam"
+    "medicine": {
+      "garo": "Sam",
+      "hindi": "दवाई"
+    },
+    "pain": {
+      "garo": "Sa·dika",
+      "hindi": "दर्द"
+    },
+    "fever": {
+      "garo": "Sin·-ding·-a",
+      "hindi": "बुखार"
+    },
+    "cough": {
+      "garo": "Gusua",
+      "hindi": "खाँसी"
+    },
+    "headache": {
+      "garo": "Sko-saa",
+      "hindi": "सिरदर्द"
+    },
+    "stomachache": {
+      "garo": "Ok-saa",
+      "hindi": "पेट दर्द"
+    },
+    "wound / injury": {
+      "garo": "Mata",
+      "hindi": "घाव / चोट"
+    },
+    "blood": {
+      "garo": "An·chi",
+      "hindi": "खून"
+    },
+    "bone": {
+      "garo": "Greng",
+      "hindi": "हड्डी"
+    },
+    "healthy": {
+      "garo": "An·senga",
+      "hindi": "स्वस्थ"
+    },
+    "weak": {
+      "garo": "Bilgri",
+      "hindi": "कमज़ोर"
+    },
+    "strong": {
+      "garo": "Bilaka",
+      "hindi": "मज़बूत"
+    },
+    "blind": {
+      "garo": "Mikgri",
+      "hindi": "अंधा"
+    },
+    "deaf": {
+      "garo": "Nachil-kala",
+      "hindi": "बहरा"
+    },
+    "mute": {
+      "garo": "Ku·ma",
+      "hindi": "गूँगा"
+    },
+    "poison": {
+      "garo": "Bisi",
+      "hindi": "ज़हर"
+    },
+    "swelling": {
+      "garo": "Ripoma",
+      "hindi": "सूजन"
+    },
+    "itch": {
+      "garo": "Ka·kita",
+      "hindi": "खुजली"
+    },
+    "pill": {
+      "garo": "Sam",
+      "hindi": "गोली"
+    }
   },
-
   "kitchen_and_cooking": {
     "_classifier": "Ge",
     "_examples": [
-      { "english": "Cook the rice", "garo": "Mi song·bo" },
-      { "english": "Add salt to the food", "garo": "Cha-o kari on·bo" },
-      { "english": "Fry the fish", "garo": "Na·tok jo·bo" },
-      { "english": "Boil the water", "garo": "Chi rit·bo" },
-      { "english": "The food smells good", "garo": "Cha nama" }
+      {
+        "english": "Cook the rice",
+        "garo": "Mi song·bo",
+        "hindi": "चावल पकाओ"
+      },
+      {
+        "english": "Add salt to the food",
+        "garo": "Cha-o kari on·bo",
+        "hindi": "खाने में नमक डालो"
+      },
+      {
+        "english": "Fry the fish",
+        "garo": "Na·tok jo·bo",
+        "hindi": "मछली तलो"
+      },
+      {
+        "english": "Boil the water",
+        "garo": "Chi rit·bo",
+        "hindi": "पानी उबालो"
+      },
+      {
+        "english": "The food smells good",
+        "garo": "Cha nama",
+        "hindi": "खाना अच्छा महकता है"
+      }
     ],
-    "rice (uncooked)": "Merong",
-    "rice (cooked)": "Mi",
-    "salt": "Kari",
-    "oil": "To",
-    "water": "Chi",
-    "sugar": "Chini",
-    "milk": "Dutt",
-    "egg": "Do·chi",
-    "meat": "Be·en",
-    "fish": "Na·tok",
-    "dry fish": "Na·kam",
-    "turmeric": "Holdi",
-    "garlic": "Rasin-gipok",
-    "ginger": "Re·ching",
-    "onion": "Rasin",
-    "chili": "Jal·ik",
-    "lentils": "Dalli",
-    "bread": "Ruti",
-    "tea": "Cha",
-    "spices (general)": "Mosila",
-    "to cook": "Song·a",
-    "to fry": "Jo·a",
-    "to boil": "Rita",
-    "to bake / roast": "Ang·a",
-    "to stir": "Mo·ila",
-    "pot": "Me.dik",
-    "pan": "Sospen",
-    "firewood": "Am·bol"
+    "rice (uncooked)": {
+      "garo": "Merong",
+      "hindi": "चावल (कच्चा)"
+    },
+    "rice (cooked)": {
+      "garo": "Mi",
+      "hindi": "चावल (पका)"
+    },
+    "salt": {
+      "garo": "Kari",
+      "hindi": "नमक"
+    },
+    "oil": {
+      "garo": "To",
+      "hindi": "तेल"
+    },
+    "water": {
+      "garo": "Chi",
+      "hindi": "पानी"
+    },
+    "sugar": {
+      "garo": "Chini",
+      "hindi": "चीनी"
+    },
+    "milk": {
+      "garo": "Dutt",
+      "hindi": "दूध"
+    },
+    "egg": {
+      "garo": "Do·chi",
+      "hindi": "अंडा"
+    },
+    "meat": {
+      "garo": "Be·en",
+      "hindi": "माँस"
+    },
+    "fish": {
+      "garo": "Na·tok",
+      "hindi": "मछली"
+    },
+    "dry fish": {
+      "garo": "Na·kam",
+      "hindi": "सूखी मछली"
+    },
+    "turmeric": {
+      "garo": "Holdi",
+      "hindi": "हल्दी"
+    },
+    "garlic": {
+      "garo": "Rasin-gipok",
+      "hindi": "लहसुन"
+    },
+    "ginger": {
+      "garo": "Re·ching",
+      "hindi": "अदरक"
+    },
+    "onion": {
+      "garo": "Rasin",
+      "hindi": "प्याज"
+    },
+    "chili": {
+      "garo": "Jal·ik",
+      "hindi": "मिर्च"
+    },
+    "lentils": {
+      "garo": "Dalli",
+      "hindi": "दाल"
+    },
+    "bread": {
+      "garo": "Ruti",
+      "hindi": "रोटी"
+    },
+    "tea": {
+      "garo": "Cha",
+      "hindi": "चाय"
+    },
+    "spices (general)": {
+      "garo": "Mosila",
+      "hindi": "मसाले"
+    },
+    "to cook": {
+      "garo": "Song·a",
+      "hindi": "पकाना"
+    },
+    "to fry": {
+      "garo": "Jo·a",
+      "hindi": "तलना"
+    },
+    "to boil": {
+      "garo": "Rita",
+      "hindi": "उबालना"
+    },
+    "to bake / roast": {
+      "garo": "Ang·a",
+      "hindi": "सेंकना / भूनना"
+    },
+    "to stir": {
+      "garo": "Mo·ila",
+      "hindi": "चलाना / मिलाना"
+    },
+    "pot": {
+      "garo": "Me.dik",
+      "hindi": "बर्तन / हाँडी"
+    },
+    "pan": {
+      "garo": "Sospen",
+      "hindi": "कड़ाही"
+    },
+    "firewood": {
+      "garo": "Am·bol",
+      "hindi": "लकड़ी (जलाऊ)"
+    }
   },
-
   "travel_and_transport": {
     "_classifier": "Ge",
     "_examples": [
-      { "english": "I am going by car", "garo": "Anga gari-o re·ang·a" },
-      { "english": "The train is fast", "garo": "Rail-gari ta·rak-a" },
-      { "english": "How far is the station?", "garo": "Nengtakani biap baita chel·a?" },
-      { "english": "Buy two tickets", "garo": "Tikit gni·ge bre·bo" },
-      { "english": "The plane has arrived", "garo": "Sildo·reng sokba·aha" }
+      {
+        "english": "I am going by car",
+        "garo": "Anga gari-o re·ang·a",
+        "hindi": "मैं गाड़ी से जा रहा हूँ"
+      },
+      {
+        "english": "The train is fast",
+        "garo": "Rail-gari ta·rak-a",
+        "hindi": "रेलगाड़ी तेज़ है"
+      },
+      {
+        "english": "How far is the station?",
+        "garo": "Nengtakani biap baita chel·a?",
+        "hindi": "स्टेशन कितनी दूर है?"
+      },
+      {
+        "english": "Buy two tickets",
+        "garo": "Tikit ge-gni bre·bo",
+        "hindi": "दो टिकट खरीदो"
+      },
+      {
+        "english": "The plane has arrived",
+        "garo": "Sildo·reng sokba·aha",
+        "hindi": "हवाई जहाज़ आ गया"
+      }
     ],
-    "road / path": "Rama",
-    "car": "Gari",
-    "bicycle": "Rengrengsil",
-    "motorcycle": "Motor-cycle",
-    "train": "Rail-gari",
-    "airplane": "Sildo·reng",
-    "boat": "Ring",
-    "bridge": "Jal·ang",
-    "distance": "Chel·a",
-    "journey": "Songreani",
-    "ticket": "Tikit",
-    "bag / luggage": "Bostu",
-    "to arrive": "Sokbaa",
-    "to leave": "Re·ongkata",
-    "to wait": "Senga",
-    "station / stop": "Nengtakani Biap"
+    "road / path": {
+      "garo": "Rama",
+      "hindi": "सड़क / रास्ता"
+    },
+    "car": {
+      "garo": "Gari",
+      "hindi": "गाड़ी"
+    },
+    "bicycle": {
+      "garo": "Rengrengsil",
+      "hindi": "साइकिल"
+    },
+    "motorcycle": {
+      "garo": "Motor-cycle",
+      "hindi": "मोटरसाइकिल"
+    },
+    "train": {
+      "garo": "Rail-gari",
+      "hindi": "रेलगाड़ी"
+    },
+    "airplane": {
+      "garo": "Sildo·reng",
+      "hindi": "हवाई जहाज़"
+    },
+    "boat": {
+      "garo": "Ring",
+      "hindi": "नाव"
+    },
+    "bridge": {
+      "garo": "Jal·ang",
+      "hindi": "पुल"
+    },
+    "distance": {
+      "garo": "Chel·a",
+      "hindi": "दूरी"
+    },
+    "journey": {
+      "garo": "Songreani",
+      "hindi": "यात्रा"
+    },
+    "ticket": {
+      "garo": "Tikit",
+      "hindi": "टिकट"
+    },
+    "bag / luggage": {
+      "garo": "Bostu",
+      "hindi": "सामान / बैग"
+    },
+    "to arrive": {
+      "garo": "Sokbaa",
+      "hindi": "पहुँचना"
+    },
+    "to leave": {
+      "garo": "Re·ongkata",
+      "hindi": "जाना / निकलना"
+    },
+    "to wait": {
+      "garo": "Senga",
+      "hindi": "इंतज़ार करना"
+    },
+    "station / stop": {
+      "garo": "Nengtakani Biap",
+      "hindi": "स्टेशन / स्टॉप"
+    }
   },
-
   "social_people": {
     "_classifier": "Sak",
     "_examples": [
-      { "english": "He is an old man", "garo": "Ua budepa sa·sak" },
-      { "english": "The children are playing", "garo": "Bi·sa kal·enga" },
-      { "english": "She is my neighbor", "garo": "Ua angni noksul" },
-      { "english": "The village chief is speaking", "garo": "Nokma sa·sak agan·enga" },
-      { "english": "He is a stranger", "garo": "Ua agital sa·sak" }
+      {
+        "english": "He is an old man",
+        "garo": "Ua budepa sak-sa",
+        "hindi": "वह बूढ़ा आदमी है"
+      },
+      {
+        "english": "The children are playing",
+        "garo": "Bi·sa kal·enga",
+        "hindi": "बच्चे खेल रहे हैं"
+      },
+      {
+        "english": "She is my neighbor",
+        "garo": "Ua angni noksul",
+        "hindi": "वह मेरी पड़ोसी है"
+      },
+      {
+        "english": "The village chief is speaking",
+        "garo": "Nokma sak-sa agan·enga",
+        "hindi": "गाँव का मुखिया बोल रहा है"
+      },
+      {
+        "english": "He is a stranger",
+        "garo": "Ua agital sak-sa",
+        "hindi": "वह अजनबी है"
+      }
     ],
-    "man": "Me·asa",
-    "woman": "Me·chik",
-    "boy": "Pante",
-    "girl": "Me·tra",
-    "child": "Bi·sa",
-    "old man": "Budepa",
-    "old woman": "Buchuma",
-    "youth": "Me·tra-pante",
-    "son": "Depante",
-    "daughter": "Demechik",
-    "friend": "Ripeng",
-    "enemy": "Bobil",
-    "neighbor": "Noksul",
-    "guest": "Sokgipa",
-    "master / owner": "Nokgipa",
-    "servant": "Nokkol",
-    "village chief": "Nokma"
+    "man": {
+      "garo": "Me·asa",
+      "hindi": "आदमी"
+    },
+    "woman": {
+      "garo": "Me·chik",
+      "hindi": "औरत"
+    },
+    "boy": {
+      "garo": "Pante",
+      "hindi": "लड़का"
+    },
+    "girl": {
+      "garo": "Me·tra",
+      "hindi": "लड़की"
+    },
+    "child": {
+      "garo": "Bi·sa",
+      "hindi": "बच्चा"
+    },
+    "old man": {
+      "garo": "Budepa",
+      "hindi": "बूढ़ा आदमी"
+    },
+    "old woman": {
+      "garo": "Buchuma",
+      "hindi": "बूढ़ी औरत"
+    },
+    "youth": {
+      "garo": "Me·tra-pante",
+      "hindi": "युवा"
+    },
+    "son": {
+      "garo": "Depante",
+      "hindi": "बेटा"
+    },
+    "daughter": {
+      "garo": "Demechik",
+      "hindi": "बेटी"
+    },
+    "friend": {
+      "garo": "Ripeng",
+      "hindi": "दोस्त"
+    },
+    "enemy": {
+      "garo": "Bobil",
+      "hindi": "दुश्मन"
+    },
+    "neighbor": {
+      "garo": "Noksul",
+      "hindi": "पड़ोसी"
+    },
+    "guest": {
+      "garo": "Sokgipa",
+      "hindi": "मेहमान"
+    },
+    "master / owner": {
+      "garo": "Nokgipa",
+      "hindi": "मालिक"
+    },
+    "servant": {
+      "garo": "Nokkol",
+      "hindi": "नौकर"
+    },
+    "village chief": {
+      "garo": "Nokma",
+      "hindi": "गाँव का मुखिया"
+    }
   },
-
   "materials_and_textures": {
     "_classifier": "Ge",
     "_examples": [
-      { "english": "This is made of wood", "garo": "Ia bol-o ka·a" },
-      { "english": "Gold is expensive", "garo": "Sona dam-raka" },
-      { "english": "The cloth is thin", "garo": "Ba·ra ba·renga" },
-      { "english": "This stone is hard", "garo": "Ia ro·ong raka" },
-      { "english": "Bamboo is light", "garo": "Wa·a ritchenga" }
+      {
+        "english": "This is made of wood",
+        "garo": "Ia bol-o ka·a",
+        "hindi": "यह लकड़ी से बना है"
+      },
+      {
+        "english": "Gold is expensive",
+        "garo": "Sona dam-raka",
+        "hindi": "सोना महँगा है"
+      },
+      {
+        "english": "The cloth is thin",
+        "garo": "Ba·ra ba·renga",
+        "hindi": "कपड़ा पतला है"
+      },
+      {
+        "english": "This stone is hard",
+        "garo": "Ia ro·ong raka",
+        "hindi": "यह पत्थर कठोर है"
+      },
+      {
+        "english": "Bamboo is light",
+        "garo": "Wa·a ritchenga",
+        "hindi": "बाँस हल्का है"
+      }
     ],
-    "wood": "Bol",
-    "stone": "Ro·ong",
-    "iron / metal": "Sil",
-    "gold": "Sona",
-    "silver": "Rupa",
-    "cloth": "Ba·ra",
-    "paper": "Lekka",
-    "plastic": "Plastic",
-    "glass": "Glass",
-    "bamboo": "Wa·a",
-    "thick": "Ritchaa",
-    "thin": "Ba·renga",
-    "hard": "Raka"
+    "wood": {
+      "garo": "Bol",
+      "hindi": "लकड़ी"
+    },
+    "stone": {
+      "garo": "Ro·ong",
+      "hindi": "पत्थर"
+    },
+    "iron / metal": {
+      "garo": "Sil",
+      "hindi": "लोहा / धातु"
+    },
+    "gold": {
+      "garo": "Sona",
+      "hindi": "सोना"
+    },
+    "silver": {
+      "garo": "Rupa",
+      "hindi": "चाँदी"
+    },
+    "cloth": {
+      "garo": "Ba·ra",
+      "hindi": "कपड़ा"
+    },
+    "paper": {
+      "garo": "Lekka",
+      "hindi": "कागज़"
+    },
+    "plastic": {
+      "garo": "Plastic",
+      "hindi": "प्लास्टिक"
+    },
+    "glass": {
+      "garo": "Glass",
+      "hindi": "काँच"
+    },
+    "bamboo": {
+      "garo": "Wa·a",
+      "hindi": "बाँस"
+    },
+    "thick": {
+      "garo": "Ritchaa",
+      "hindi": "मोटा"
+    },
+    "thin": {
+      "garo": "Ba·renga",
+      "hindi": "पतला"
+    },
+    "hard": {
+      "garo": "Raka",
+      "hindi": "कठोर / कड़ा"
+    }
   },
-
   "religious_and_spiritual": {
     "_classifier": null,
     "_examples": [
-      { "english": "Let us pray", "garo": "An·ching bi·bo" },
-      { "english": "God is merciful", "garo": "Isol ka·sachakani" },
-      { "english": "He is a pastor", "garo": "Ua pamong sa·sak" },
-      { "english": "The church is holy", "garo": "Gilja-nok rongtalgipa" },
-      { "english": "I have faith", "garo": "Angni bebera·ani dong·a" }
+      {
+        "english": "Let us pray",
+        "garo": "An·ching bi·bo",
+        "hindi": "आओ प्रार्थना करें"
+      },
+      {
+        "english": "God is merciful",
+        "garo": "Isol ka·sachakani",
+        "hindi": "ईश्वर दयालु है"
+      },
+      {
+        "english": "He is a pastor",
+        "garo": "Ua pamong sak-sa",
+        "hindi": "वह पादरी है"
+      },
+      {
+        "english": "The church is holy",
+        "garo": "Gilja-nok rongtalgipa",
+        "hindi": "गिरजाघर पवित्र है"
+      },
+      {
+        "english": "I have faith",
+        "garo": "Angni bebera·ani dong·a",
+        "hindi": "मेरी आस्था है"
+      }
     ],
-    "god": "Isol",
-    "spirit / soul": "Janggi / Gisik",
-    "ghost": "Me·mang",
-    "heaven": "Salgi",
-    "hell": "Norok",
-    "prayer": "Bi·ani",
-    "to pray": "Bi·a",
-    "worship": "Olakkiani",
-    "church": "Gilja-nok",
-    "sin": "Pap",
-    "blessing": "Pattiani",
-    "sacrifice": "Boli",
-    "holy": "Rongtalgipa",
-    "pastor": "Pamong",
-    "priest": "Kamal",
-    "bible": "Sastro",
-    "faith": "Bebera·ani",
-    "mercy": "Ka·sachakani",
-    "miracle": "Aiao-inmangipa-kam",
-    "angel": "Sa·gre",
-    "tradition": "Dakbewal"
+    "god": {
+      "garo": "Isol",
+      "hindi": "ईश्वर / भगवान"
+    },
+    "spirit / soul": {
+      "garo": "Janggi / Gisik",
+      "hindi": "आत्मा"
+    },
+    "ghost": {
+      "garo": "Me·mang",
+      "hindi": "भूत"
+    },
+    "heaven": {
+      "garo": "Salgi",
+      "hindi": "स्वर्ग"
+    },
+    "hell": {
+      "garo": "Norok",
+      "hindi": "नरक"
+    },
+    "prayer": {
+      "garo": "Bi·ani",
+      "hindi": "प्रार्थना"
+    },
+    "to pray": {
+      "garo": "Bi·a",
+      "hindi": "प्रार्थना करना"
+    },
+    "worship": {
+      "garo": "Olakkiani",
+      "hindi": "पूजा"
+    },
+    "church": {
+      "garo": "Gilja-nok",
+      "hindi": "गिरजाघर"
+    },
+    "sin": {
+      "garo": "Pap",
+      "hindi": "पाप"
+    },
+    "blessing": {
+      "garo": "Pattiani",
+      "hindi": "आशीर्वाद"
+    },
+    "sacrifice": {
+      "garo": "Boli",
+      "hindi": "बलिदान"
+    },
+    "holy": {
+      "garo": "Rongtalgipa",
+      "hindi": "पवित्र"
+    },
+    "pastor": {
+      "garo": "Pamong",
+      "hindi": "पादरी"
+    },
+    "priest": {
+      "garo": "Kamal",
+      "hindi": "पुजारी / पादरी"
+    },
+    "bible": {
+      "garo": "Sastro",
+      "hindi": "बाइबल"
+    },
+    "faith": {
+      "garo": "Bebera·ani",
+      "hindi": "आस्था"
+    },
+    "mercy": {
+      "garo": "Ka·sachakani",
+      "hindi": "दया"
+    },
+    "miracle": {
+      "garo": "Aiao-inmangipa-kam",
+      "hindi": "चमत्कार"
+    },
+    "angel": {
+      "garo": "Sa·gre",
+      "hindi": "फ़रिश्ता"
+    },
+    "tradition": {
+      "garo": "Dakbewal",
+      "hindi": "परंपरा"
+    }
   },
-
   "government_and_law": {
     "_classifier": null,
     "_examples": [
-      { "english": "The law is important", "garo": "Niam chaina" },
-      { "english": "He is innocent", "garo": "Ua dos-gri" },
-      { "english": "They went to court", "garo": "Uamang kachari-o re·ang·aha" },
-      { "english": "Pay your tax", "garo": "Nang·ni kajina gam·bo" },
-      { "english": "Freedom is precious", "garo": "Jakgitelani dam-raka" }
+      {
+        "english": "The law is important",
+        "garo": "Niam chaina",
+        "hindi": "क़ानून महत्वपूर्ण है"
+      },
+      {
+        "english": "He is innocent",
+        "garo": "Ua dos-gri",
+        "hindi": "वह निर्दोष है"
+      },
+      {
+        "english": "They went to court",
+        "garo": "Uamang kachari-o re·ang·aha",
+        "hindi": "वे अदालत गए"
+      },
+      {
+        "english": "Pay your tax",
+        "garo": "Nang·ni kajina gam·bo",
+        "hindi": "अपना टैक्स दो"
+      },
+      {
+        "english": "Freedom is precious",
+        "garo": "Jakgitelani dam-raka",
+        "hindi": "आज़ादी अनमोल है"
+      }
     ],
-    "law": "Niam",
-    "court": "Kachari",
-    "prison": "Patok-nok",
-    "punishment": "Sasti",
-    "reward": "Boksis",
-    "country": "A·song",
-    "freedom": "Jakgitelani",
-    "fight": "Dakgrikani",
-    "tax": "Kajina",
-    "signature": "Jak-soi",
-    "truth": "Bebe",
-    "lie": "Tol·napani",
-    "witness": "Sakki",
-    "guilty": "Dos-gnang",
-    "innocent": "Dos-gri",
-    "to judge": "Bichal-ka·a"
+    "law": {
+      "garo": "Niam",
+      "hindi": "क़ानून"
+    },
+    "court": {
+      "garo": "Kachari",
+      "hindi": "अदालत"
+    },
+    "prison": {
+      "garo": "Patok-nok",
+      "hindi": "जेल"
+    },
+    "punishment": {
+      "garo": "Sasti",
+      "hindi": "सज़ा"
+    },
+    "reward": {
+      "garo": "Boksis",
+      "hindi": "इनाम"
+    },
+    "country": {
+      "garo": "A·song",
+      "hindi": "देश"
+    },
+    "freedom": {
+      "garo": "Jakgitelani",
+      "hindi": "आज़ादी"
+    },
+    "fight": {
+      "garo": "Dakgrikani",
+      "hindi": "लड़ाई"
+    },
+    "tax": {
+      "garo": "Kajina",
+      "hindi": "कर / टैक्स"
+    },
+    "signature": {
+      "garo": "Jak-soi",
+      "hindi": "हस्ताक्षर"
+    },
+    "truth": {
+      "garo": "Bebe",
+      "hindi": "सच"
+    },
+    "lie": {
+      "garo": "Tol·napani",
+      "hindi": "झूठ"
+    },
+    "witness": {
+      "garo": "Sakki",
+      "hindi": "गवाह"
+    },
+    "guilty": {
+      "garo": "Dos-gnang",
+      "hindi": "दोषी"
+    },
+    "innocent": {
+      "garo": "Dos-gri",
+      "hindi": "निर्दोष"
+    },
+    "to judge": {
+      "garo": "Bichal-ka·a",
+      "hindi": "न्याय करना"
+    }
   },
-
   "abstract_concepts": {
     "_classifier": null,
     "_examples": [
-      { "english": "Life is beautiful", "garo": "Janggi nama" },
-      { "english": "I had a dream", "garo": "Angni jumang nik·aha" },
-      { "english": "Truth always wins", "garo": "Bebe pangnan am·a" },
-      { "english": "His voice is loud", "garo": "Uni ku·rang dal·a" },
-      { "english": "There is darkness outside", "garo": "A·pal andala dong·a" }
+      {
+        "english": "Life is beautiful",
+        "garo": "Janggi nama",
+        "hindi": "जीवन सुंदर है"
+      },
+      {
+        "english": "I had a dream",
+        "garo": "Angni jumang nik·aha",
+        "hindi": "मुझे एक सपना आया"
+      },
+      {
+        "english": "Truth always wins",
+        "garo": "Bebe pangnan am·a",
+        "hindi": "सच हमेशा जीतता है"
+      },
+      {
+        "english": "His voice is loud",
+        "garo": "Uni ku·rang dal·a",
+        "hindi": "उसकी आवाज़ तेज़ है"
+      },
+      {
+        "english": "There is darkness outside",
+        "garo": "A·pal andala dong·a",
+        "hindi": "बाहर अँधेरा है"
+      }
     ],
-    "life": "Janggi",
-    "death": "Sia",
-    "truth": "Bebe",
-    "lie": "Tol·a",
-    "war": "Dakgrikani",
-    "peace": "Tom·tomani",
-    "dream": "Jumang",
-    "sound": "Gam·a",
-    "voice": "Ku·rang",
-    "light": "Seng·a",
-    "darkness": "Andala",
-    "ghost": "Me·mang",
-    "tradition": "Dakbewal",
-    "language": "Ku·sik",
-    "shadow": "Jagring"
+    "life": {
+      "garo": "Janggi",
+      "hindi": "जीवन"
+    },
+    "death": {
+      "garo": "Sia",
+      "hindi": "मृत्यु"
+    },
+    "truth": {
+      "garo": "Bebe",
+      "hindi": "सच"
+    },
+    "lie": {
+      "garo": "Tol·a",
+      "hindi": "झूठ"
+    },
+    "war": {
+      "garo": "Dakgrikani",
+      "hindi": "युद्ध"
+    },
+    "peace": {
+      "garo": "Tom·tomani",
+      "hindi": "शांति"
+    },
+    "dream": {
+      "garo": "Jumang",
+      "hindi": "सपना"
+    },
+    "sound": {
+      "garo": "Gam·a",
+      "hindi": "आवाज़"
+    },
+    "voice": {
+      "garo": "Ku·rang",
+      "hindi": "आवाज़"
+    },
+    "light": {
+      "garo": "Seng·a",
+      "hindi": "रोशनी"
+    },
+    "darkness": {
+      "garo": "Andala",
+      "hindi": "अँधेरा"
+    },
+    "ghost": {
+      "garo": "Me·mang",
+      "hindi": "भूत"
+    },
+    "tradition": {
+      "garo": "Dakbewal",
+      "hindi": "परंपरा"
+    },
+    "language": {
+      "garo": "Ku·sik",
+      "hindi": "भाषा"
+    },
+    "shadow": {
+      "garo": "Jagring",
+      "hindi": "परछाईं"
+    }
   },
-
   "quantity_and_degree": {
     "_classifier": null,
     "_examples": [
-      { "english": "Give me all of it", "garo": "Angna gimikan on·bo" },
-      { "english": "I need some water", "garo": "Angna chi mitam chaina" },
-      { "english": "There are many people", "garo": "Manderang bang·a dong·a" },
-      { "english": "I want more rice", "garo": "Anga mi bang·bata chaina" },
-      { "english": "The bag is full", "garo": "Jol·a gapa" }
+      {
+        "english": "Give me all of it",
+        "garo": "Angna gimikan on·bo",
+        "hindi": "मुझे सब दो"
+      },
+      {
+        "english": "I need some water",
+        "garo": "Angna chi mitam chaina",
+        "hindi": "मुझे थोड़ा पानी चाहिए"
+      },
+      {
+        "english": "There are many people",
+        "garo": "Manderang bang·a dong·a",
+        "hindi": "बहुत लोग हैं"
+      },
+      {
+        "english": "I want more rice",
+        "garo": "Anga mi bang·bata chaina",
+        "hindi": "मुझे और चावल चाहिए"
+      },
+      {
+        "english": "The bag is full",
+        "garo": "Jol·a gapa",
+        "hindi": "थैला भरा है"
+      }
     ],
-    "all": "Gimikan",
-    "some": "Mitam",
-    "many / much": "Bang·a",
-    "few / little": "On·titi",
-    "more": "Bang·bata",
-    "less": "Komia",
-    "empty": "Bangbang",
-    "full": "Gapa",
-    "enough": "Chu·onga",
-    "someone": "Saksa",
-    "no one": "Darangba-ong·ja",
-    "everyone": "Sakanti",
-    "each": "Sakprak",
-    "other": "Gipin",
-    "another": "Sakgipin"
+    "all": {
+      "garo": "Gimikan",
+      "hindi": "सब"
+    },
+    "some": {
+      "garo": "Mitam",
+      "hindi": "कुछ"
+    },
+    "many / much": {
+      "garo": "Bang·a",
+      "hindi": "बहुत"
+    },
+    "few / little": {
+      "garo": "On·titi",
+      "hindi": "थोड़ा"
+    },
+    "more": {
+      "garo": "Bang·bata",
+      "hindi": "और / ज़्यादा"
+    },
+    "less": {
+      "garo": "Komia",
+      "hindi": "कम"
+    },
+    "empty": {
+      "garo": "Bangbang",
+      "hindi": "खाली"
+    },
+    "full": {
+      "garo": "Gapa",
+      "hindi": "भरा"
+    },
+    "enough": {
+      "garo": "Chu·onga",
+      "hindi": "काफ़ी"
+    },
+    "someone": {
+      "garo": "Saksa",
+      "hindi": "कोई"
+    },
+    "no one": {
+      "garo": "Darangba-ong·ja",
+      "hindi": "कोई नहीं"
+    },
+    "everyone": {
+      "garo": "Sakanti",
+      "hindi": "सब"
+    },
+    "each": {
+      "garo": "Sakprak",
+      "hindi": "प्रत्येक"
+    },
+    "other": {
+      "garo": "Gipin",
+      "hindi": "दूसरा"
+    },
+    "another": {
+      "garo": "Sakgipin",
+      "hindi": "एक और"
+    }
   },
-
   "conjunctions_and_connectors": {
     "_classifier": null,
     "_examples": [
-      { "english": "I came and sat down", "garo": "Anga re·ba·aha aro asong·aha" },
-      { "english": "He is poor but happy", "garo": "Ua kangal indiba kusi" },
-      { "english": "Come here or go there", "garo": "Iano re·ba ba uano re·ang" },
-      { "english": "I came because I love you", "garo": "Anga re·ba·aha maina nang·na ka·saa" },
-      { "english": "If you go, I will come", "garo": "Na·a re·ang·ode anga re·ba·gen" }
+      {
+        "english": "I came and sat down",
+        "garo": "Anga re·ba·aha aro asong·aha",
+        "hindi": "मैं आया और बैठ गया"
+      },
+      {
+        "english": "He is poor but happy",
+        "garo": "Ua kangal indiba kusi",
+        "hindi": "वह गरीब है लेकिन खुश है"
+      },
+      {
+        "english": "Come here or go there",
+        "garo": "Iano re·ba ba uano re·ang",
+        "hindi": "यहाँ आओ या वहाँ जाओ"
+      },
+      {
+        "english": "I came because I love you",
+        "garo": "Anga re·ba·aha maina nang·na ka·saa",
+        "hindi": "मैं आया क्योंकि मैं तुमसे प्यार करता हूँ"
+      },
+      {
+        "english": "If you go, I will come",
+        "garo": "Na·a re·ang·ode anga re·ba·gen",
+        "hindi": "अगर तुम जाओ, तो मैं आऊँगा"
+      }
     ],
-    "and": "Aro",
-    "but": "Indiba",
-    "or": "Ba",
-    "if": "Ode / -ode",
-    "so / therefore": "Uni gimin",
-    "because": "Maina",
-    "with": "Baksa",
-    "for": "Gimin / -na",
-    "from": "-oni",
-    "to": "-na",
-    "in / at": "-o",
-    "on": "Kosak-o",
-    "under": "Ka·ma-o",
-    "between": "Jatchi-o",
-    "only": "-mangmang / -san",
-    "also": "-ba",
-    "very": "Be·en / Bakkan",
-    "again": "Pil·tai"
+    "and": {
+      "garo": "Aro",
+      "hindi": "और"
+    },
+    "but": {
+      "garo": "Indiba",
+      "hindi": "लेकिन"
+    },
+    "or": {
+      "garo": "Ba",
+      "hindi": "या"
+    },
+    "if": {
+      "garo": "Ode / -ode",
+      "hindi": "अगर"
+    },
+    "so / therefore": {
+      "garo": "Uni gimin",
+      "hindi": "इसलिए"
+    },
+    "because": {
+      "garo": "Maina",
+      "hindi": "क्योंकि"
+    },
+    "with": {
+      "garo": "Baksa",
+      "hindi": "के साथ"
+    },
+    "for": {
+      "garo": "Gimin / -na",
+      "hindi": "के लिए"
+    },
+    "from": {
+      "garo": "-oni",
+      "hindi": "से"
+    },
+    "to": {
+      "garo": "-na",
+      "hindi": "को"
+    },
+    "in / at": {
+      "garo": "-o",
+      "hindi": "में"
+    },
+    "on": {
+      "garo": "Kosak-o",
+      "hindi": "पर"
+    },
+    "under": {
+      "garo": "Ka·ma-o",
+      "hindi": "नीचे"
+    },
+    "between": {
+      "garo": "Jatchi-o",
+      "hindi": "बीच में"
+    },
+    "only": {
+      "garo": "-mangmang / -san",
+      "hindi": "सिर्फ़"
+    },
+    "also": {
+      "garo": "-ba",
+      "hindi": "भी"
+    },
+    "very": {
+      "garo": "Be·en / Bakkan",
+      "hindi": "बहुत"
+    },
+    "again": {
+      "garo": "Pil·tai",
+      "hindi": "फिर"
+    }
   },
-
   "at_the_market": {
     "_classifier": "Gong",
     "_examples": [
-      { "english": "How much does this cost?", "garo": "Ia baita?" },
-      { "english": "It is too expensive", "garo": "Ia dam rakduga" },
-      { "english": "Give me a discount", "garo": "Dam-ko on·tisa komiatbo" },
-      { "english": "I want to buy this", "garo": "Anga iako brena ska" },
-      { "english": "Do you have mangoes?", "garo": "Nang·o am dong·a?" }
+      {
+        "english": "How much does this cost?",
+        "garo": "Ia baita?",
+        "hindi": "यह कितने का है?"
+      },
+      {
+        "english": "It is too expensive",
+        "garo": "Ia dam rakduga",
+        "hindi": "यह बहुत महँगा है"
+      },
+      {
+        "english": "Give me a discount",
+        "garo": "Dam-ko on·tisa komiatbo",
+        "hindi": "मुझे छूट दो"
+      },
+      {
+        "english": "I want to buy this",
+        "garo": "Anga iako brena ska",
+        "hindi": "मैं यह खरीदना चाहता हूँ"
+      },
+      {
+        "english": "Do you have mangoes?",
+        "garo": "Nang·o Te·gachu dong·a?",
+        "hindi": "क्या आपके पास आम हैं?"
+      }
     ],
-    "market": "Anti",
-    "shop": "Dokan",
-    "money": "Tangka",
-    "price": "Dam",
-    "expensive": "Dam-raka",
-    "cheap": "Dam-nom·a",
-    "to buy": "Brea",
-    "to sell": "Pala",
-    "coin": "Tangka-bisil",
-    "scale": "Tochakani",
-    "fresh": "Gital",
-    "stale": "Gitcham",
-    "discount": "Dam-komiatani",
-    "customer": "Bregipa",
-    "shopkeeper": "Dokan-dakgipa",
-    "bag": "Thola",
-    "give me one kilo": "Angna kilo-sa on·bo",
-    "reduce the price": "Dam-ko on·tisa komiatbo"
+    "market": {
+      "garo": "Anti",
+      "hindi": "बाज़ार"
+    },
+    "shop": {
+      "garo": "Dokan",
+      "hindi": "दुकान"
+    },
+    "money": {
+      "garo": "Tangka",
+      "hindi": "पैसा"
+    },
+    "price": {
+      "garo": "Dam",
+      "hindi": "क़ीमत"
+    },
+    "expensive": {
+      "garo": "Dam-raka",
+      "hindi": "महँगा"
+    },
+    "cheap": {
+      "garo": "Dam-nom·a",
+      "hindi": "सस्ता"
+    },
+    "to buy": {
+      "garo": "Brea",
+      "hindi": "खरीदना"
+    },
+    "to sell": {
+      "garo": "Pala",
+      "hindi": "बेचना"
+    },
+    "coin": {
+      "garo": "Tangka-bisil",
+      "hindi": "सिक्का"
+    },
+    "scale": {
+      "garo": "Tochakani",
+      "hindi": "तराज़ू"
+    },
+    "fresh": {
+      "garo": "Gital",
+      "hindi": "ताज़ा"
+    },
+    "stale": {
+      "garo": "Gitcham",
+      "hindi": "बासी"
+    },
+    "discount": {
+      "garo": "Dam-komiatani",
+      "hindi": "छूट"
+    },
+    "customer": {
+      "garo": "Bregipa",
+      "hindi": "ग्राहक"
+    },
+    "shopkeeper": {
+      "garo": "Dokan-dakgipa",
+      "hindi": "दुकानदार"
+    },
+    "bag": {
+      "garo": "Thola",
+      "hindi": "थैला"
+    },
+    "give me one kilo": {
+      "garo": "Angna kilo-sa on·bo",
+      "hindi": "मुझे एक किलो दो"
+    },
+    "reduce the price": {
+      "garo": "Dam-ko on·tisa komiatbo",
+      "hindi": "क़ीमत कम करो"
+    }
   },
-
   "animal_actions_and_parts": {
     "_classifier": "Mang",
     "_examples": [
-      { "english": "The bird is flying", "garo": "Do·o sa·mang bil·enga" },
-      { "english": "The dog is barking", "garo": "Achak sa·mang sing·enga" },
-      { "english": "The snake bit him", "garo": "Chipu sa·mang ua chik·aha" },
-      { "english": "The fish is swimming", "garo": "Na·tok sa·mang jro·enga" },
-      { "english": "The eagle has sharp claws", "garo": "Do·reng uni jakskil mata" }
+      {
+        "english": "The bird is flying",
+        "garo": "Do·o mang-sa bil·enga",
+        "hindi": "पक्षी उड़ रहा है"
+      },
+      {
+        "english": "The dog is barking",
+        "garo": "Achak mang-sa sing·enga",
+        "hindi": "कुत्ता भौंक रहा है"
+      },
+      {
+        "english": "The snake bit him",
+        "garo": "Chipu mang-sa ua chik·aha",
+        "hindi": "साँप ने उसे काटा"
+      },
+      {
+        "english": "The fish is swimming",
+        "garo": "Na·tok mang-sa jro·enga",
+        "hindi": "मछली तैर रही है"
+      },
+      {
+        "english": "The eagle has sharp claws",
+        "garo": "Do·reng uni jakskil mata",
+        "hindi": "चील के तेज़ पंजे हैं"
+      }
     ],
-    "tail": "Ki·me",
-    "horn": "Grong",
-    "wing": "Grang",
-    "feather": "Kimil",
-    "beak": "Ku·chot",
-    "egg": "Do·chi",
-    "nest": "Do·bitip",
-    "hoof": "Ja·skil",
-    "claw": "Jakskil",
-    "to fly": "Bila",
-    "to swim": "Jroa",
-    "to bark": "Sing·a",
-    "to bite": "Chika",
-    "to crawl": "Malama",
-    "to growl": "Randinga",
-    "to lay eggs": "Bitchi-chi·a",
-    "to hunt": "Sikar-ka·a",
-    "to catch": "Rim·a"
+    "tail": {
+      "garo": "Ki·me",
+      "hindi": "पूँछ"
+    },
+    "horn": {
+      "garo": "Grong",
+      "hindi": "सींग"
+    },
+    "wing": {
+      "garo": "Grang",
+      "hindi": "पंख"
+    },
+    "feather": {
+      "garo": "Kimil",
+      "hindi": "पंख (पर)"
+    },
+    "beak": {
+      "garo": "Ku·chot",
+      "hindi": "चोंच"
+    },
+    "egg": {
+      "garo": "Do·chi",
+      "hindi": "अंडा"
+    },
+    "nest": {
+      "garo": "Do·bitip",
+      "hindi": "घोंसला"
+    },
+    "hoof": {
+      "garo": "Ja·skil",
+      "hindi": "खुर"
+    },
+    "claw": {
+      "garo": "Jakskil",
+      "hindi": "पंजा"
+    },
+    "to fly": {
+      "garo": "Bila",
+      "hindi": "उड़ना"
+    },
+    "to swim": {
+      "garo": "Jroa",
+      "hindi": "तैरना"
+    },
+    "to bark": {
+      "garo": "Sing·a",
+      "hindi": "भौंकना"
+    },
+    "to bite": {
+      "garo": "Chika",
+      "hindi": "काटना"
+    },
+    "to crawl": {
+      "garo": "Malama",
+      "hindi": "रेंगना"
+    },
+    "to growl": {
+      "garo": "Randinga",
+      "hindi": "गुर्राना"
+    },
+    "to lay eggs": {
+      "garo": "Bitchi-chi·a",
+      "hindi": "अंडे देना"
+    },
+    "to hunt": {
+      "garo": "Sikar-ka·a",
+      "hindi": "शिकार करना"
+    },
+    "to catch": {
+      "garo": "Rim·a",
+      "hindi": "पकड़ना"
+    }
   },
-
   "household_activities": {
     "_classifier": null,
     "_examples": [
-      { "english": "Sweep the floor", "garo": "Itrok·bo" },
-      { "english": "Wash your clothes", "garo": "Nang·ni ba·ra su·srong·bo" },
-      { "english": "Light the lamp", "garo": "Chakki ching·at·bo" },
-      { "english": "She is building a house", "garo": "Ua nok rik·enga" },
-      { "english": "Tie the rope", "garo": "Budu ka·bo" }
+      {
+        "english": "Sweep the floor",
+        "garo": "Itrok·bo",
+        "hindi": "फर्श झाड़ो"
+      },
+      {
+        "english": "Wash your clothes",
+        "garo": "Nang·ni ba·ra su·srong·bo",
+        "hindi": "अपने कपड़े धोओ"
+      },
+      {
+        "english": "Light the lamp",
+        "garo": "Chakki ching·at·bo",
+        "hindi": "दीपक जलाओ"
+      },
+      {
+        "english": "She is building a house",
+        "garo": "Ua nok rik·enga",
+        "hindi": "वह घर बना रही है"
+      },
+      {
+        "english": "Tie the rope",
+        "garo": "Budu ka·bo",
+        "hindi": "रस्सी बाँधो"
+      }
     ],
-    "to clean": "Rongtalata",
-    "to sweep": "Itroka",
-    "to wash (clothes)": "Su·sranga",
-    "to wash (hands)": "Jaksua",
-    "to wash (face)": "Miksua",
-    "to bathe": "Aua",
-    "to mend / fix": "Namatpila",
-    "to build": "Rika",
-    "to dig": "Cho·a",
-    "to plant": "Ge·a",
-    "to cut (wood)": "Den·a",
-    "to break": "Be·ata",
-    "to burn": "So·a",
-    "to light (lamp)": "Ching·ata",
-    "to put out (fire)": "Kimita",
-    "to wrap": "Kadepa",
-    "to tie": "Kaa",
-    "to untie": "Enga",
-    "to carry (on head)": "Ritchila",
-    "to carry (on back)": "Ripea",
-    "to carry (in hand)": "De·a"
+    "to clean": {
+      "garo": "Rongtalata",
+      "hindi": "साफ़ करना"
+    },
+    "to sweep": {
+      "garo": "Itroka",
+      "hindi": "झाड़ू लगाना"
+    },
+    "to wash (clothes)": {
+      "garo": "Su·sranga",
+      "hindi": "कपड़े धोना"
+    },
+    "to wash (hands)": {
+      "garo": "Jaksua",
+      "hindi": "हाथ धोना"
+    },
+    "to wash (face)": {
+      "garo": "Miksua",
+      "hindi": "मुँह धोना"
+    },
+    "to bathe": {
+      "garo": "Aua",
+      "hindi": "नहाना"
+    },
+    "to mend / fix": {
+      "garo": "Namatpila",
+      "hindi": "ठीक करना"
+    },
+    "to build": {
+      "garo": "Rika",
+      "hindi": "बनाना"
+    },
+    "to dig": {
+      "garo": "Cho·a",
+      "hindi": "खोदना"
+    },
+    "to plant": {
+      "garo": "Ge·a",
+      "hindi": "लगाना"
+    },
+    "to cut (wood)": {
+      "garo": "Den·a",
+      "hindi": "लकड़ी काटना"
+    },
+    "to break": {
+      "garo": "Be·ata",
+      "hindi": "तोड़ना"
+    },
+    "to burn": {
+      "garo": "So·a",
+      "hindi": "जलाना"
+    },
+    "to light (lamp)": {
+      "garo": "Ching·ata",
+      "hindi": "दीपक जलाना"
+    },
+    "to put out (fire)": {
+      "garo": "Kimita",
+      "hindi": "आग बुझाना"
+    },
+    "to wrap": {
+      "garo": "Kadepa",
+      "hindi": "लपेटना"
+    },
+    "to tie": {
+      "garo": "Kaa",
+      "hindi": "बाँधना"
+    },
+    "to untie": {
+      "garo": "Enga",
+      "hindi": "खोलना"
+    },
+    "to carry (on head)": {
+      "garo": "Ritchila",
+      "hindi": "सिर पर उठाना"
+    },
+    "to carry (on back)": {
+      "garo": "Ripea",
+      "hindi": "पीठ पर उठाना"
+    },
+    "to carry (in hand)": {
+      "garo": "De·a",
+      "hindi": "हाथ में ले जाना"
+    }
   },
-
   "physical_actions": {
     "_classifier": null,
     "_examples": [
-      { "english": "He fell from the tree", "garo": "Ua bol-o ga·ak·aha" },
-      { "english": "She jumped over it", "garo": "Ua ia-o bildoa·aha" },
-      { "english": "I hurt myself", "garo": "Anga an·tang mata·aha" },
-      { "english": "The wound healed", "garo": "Mata an·sengpil·aha" },
-      { "english": "Don't touch that", "garo": "Ua dangtap·ong·ja" }
+      {
+        "english": "He fell from the tree",
+        "garo": "Ua bol-o ga·ak·aha",
+        "hindi": "वह पेड़ से गिरा"
+      },
+      {
+        "english": "She jumped over it",
+        "garo": "Ua ia-o bildoa·aha",
+        "hindi": "वह उसके ऊपर कूदी"
+      },
+      {
+        "english": "I hurt myself",
+        "garo": "Anga an·tang mata·aha",
+        "hindi": "मैंने खुद को चोट लगाई"
+      },
+      {
+        "english": "The wound healed",
+        "garo": "Mata an·sengpil·aha",
+        "hindi": "घाव ठीक हो गया"
+      },
+      {
+        "english": "Don't touch that",
+        "garo": "Ua dangtap·ong·ja",
+        "hindi": "उसे मत छूओ"
+      }
     ],
-    "to fall (from height)": "Ga·aka",
-    "to fall (stumble)": "Nang·ting-a",
-    "to fall (slip)": "Ga·soltap",
-    "to fall (collapse)": "Be·a",
-    "to drop": "Ga·akata",
-    "to roll": "Romroma",
-    "to jump": "Bildoa",
-    "to shake": "Moa",
-    "to move (something)": "De·jita",
-    "to feel (general)": "Ui·a",
-    "to feel (emotionally)": "Gisik-o nanga",
-    "to hurt (pain)": "Sa·dika",
-    "to hurt (injure)": "Mata",
-    "to hurt (feelings)": "Saknaata",
-    "to touch": "Dangtapa",
-    "to pinch": "Se·eta",
-    "to scratch (body)": "Brika",
-    "to scratch (object)": "Siksika",
-    "to itch": "Ka·kita",
-    "to burn (sting)": "So·soa",
-    "to heal": "An·sengpila",
-    "to push": "Jit-pak-a",
-    "to pull": "Sal-a",
-    "to break (glass)": "Be·ata",
-    "to tear (paper)": "Gritt-a",
-    "to throw": "Gal-a"
+    "to fall (from height)": {
+      "garo": "Ga·aka",
+      "hindi": "ऊँचाई से गिरना"
+    },
+    "to fall (stumble)": {
+      "garo": "Nang·ting-a",
+      "hindi": "ठोकर खाकर गिरना"
+    },
+    "to fall (slip)": {
+      "garo": "Ga·soltap",
+      "hindi": "फिसलकर गिरना"
+    },
+    "to fall (collapse)": {
+      "garo": "Be·a",
+      "hindi": "ढह जाना"
+    },
+    "to drop": {
+      "garo": "Ga·akata",
+      "hindi": "गिरा देना"
+    },
+    "to roll": {
+      "garo": "Romroma",
+      "hindi": "लुढ़कना"
+    },
+    "to jump": {
+      "garo": "Bildoa",
+      "hindi": "कूदना"
+    },
+    "to shake": {
+      "garo": "Moa",
+      "hindi": "हिलाना"
+    },
+    "to move (something)": {
+      "garo": "De·jita",
+      "hindi": "हटाना"
+    },
+    "to feel (general)": {
+      "garo": "Ui·a",
+      "hindi": "महसूस करना"
+    },
+    "to feel (emotionally)": {
+      "garo": "Gisik-o nanga",
+      "hindi": "भावनात्मक रूप से महसूस करना"
+    },
+    "to hurt (pain)": {
+      "garo": "Sa·dika",
+      "hindi": "दर्द होना"
+    },
+    "to hurt (injure)": {
+      "garo": "Mata",
+      "hindi": "चोट लगाना"
+    },
+    "to hurt (feelings)": {
+      "garo": "Saknaata",
+      "hindi": "भावनाओं को ठेस पहुँचाना"
+    },
+    "to touch": {
+      "garo": "Dangtapa",
+      "hindi": "छूना"
+    },
+    "to pinch": {
+      "garo": "Se·eta",
+      "hindi": "चुटकी लेना"
+    },
+    "to scratch (body)": {
+      "garo": "Brika",
+      "hindi": "खुजाना"
+    },
+    "to scratch (object)": {
+      "garo": "Siksika",
+      "hindi": "खरोंचना"
+    },
+    "to itch": {
+      "garo": "Ka·kita",
+      "hindi": "खुजली होना"
+    },
+    "to burn (sting)": {
+      "garo": "So·soa",
+      "hindi": "जलन होना"
+    },
+    "to heal": {
+      "garo": "An·sengpila",
+      "hindi": "ठीक होना"
+    },
+    "to push": {
+      "garo": "Jit-pak-a",
+      "hindi": "धकेलना"
+    },
+    "to pull": {
+      "garo": "Sal-a",
+      "hindi": "खींचना"
+    },
+    "to break (glass)": {
+      "garo": "Be·ata",
+      "hindi": "टूटना / तोड़ना"
+    },
+    "to tear (paper)": {
+      "garo": "Gritt-a",
+      "hindi": "फाड़ना"
+    },
+    "to throw": {
+      "garo": "Gal-a",
+      "hindi": "फेंकना"
+    }
   }
 }
