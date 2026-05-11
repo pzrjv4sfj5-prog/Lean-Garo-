@@ -1,4 +1,3 @@
-```js
 import garoDictionary from '../garo_dictionary.json'
 
 class GaroTranslationEngine {
@@ -193,10 +192,92 @@ class GaroTranslationEngine {
     ]
 
     this.buildIndexes()
+    this.buildPhraseMap()
+  }
+
+  // =====================================================
+  // BUILD PHRASE MAP
+  // =====================================================
+
+  buildPhraseMap() {
+
+    try {
+
+      this.phraseMap = {
+        ...this.phrases,
+      }
+
+      Object.entries(this.englishToGaro).forEach(([english, garo]) => {
+        if (!english || !garo) {
+          return
+        }
+
+        if (english.includes(' ')) {
+          this.phraseMap[english] = garo
+        }
+      })
+
+      this.maxPhraseLength = Math.max(
+        1,
+        ...Object.keys(this.phraseMap).map(phrase =>
+          String(phrase)
+            .split(' ')
+            .filter(Boolean).length
+        )
+      )
+
+    } catch (error) {
+
+      console.error('Phrase map build failed:', error)
+      this.phraseMap = { ...this.phrases }
+      this.maxPhraseLength = 1
+    }
+  }
+
+  // =====================================================
+  // TRANSLATE WITH PHRASES
+  // =====================================================
+
+  translateWithPhrases(words = []) {
+
+    const result = []
+    let index = 0
+
+    while (index < words.length) {
+
+      let matched = false
+      const maxLen = Math.min(
+        this.maxPhraseLength,
+        words.length - index
+      )
+
+      for (let length = maxLen; length > 0; length--) {
+        const phrase = words
+          .slice(index, index + length)
+          .join(' ')
+
+        const garo = this.phraseMap[phrase]
+
+        if (garo) {
+          result.push(garo)
+          index += length
+          matched = true
+          break
+        }
+      }
+
+      if (!matched) {
+        result.push(this.translateWord(words[index]))
+        index += 1
+      }
+    }
+
+    return result.join(' ').trim()
   }
 
   // =====================================================
   // BUILD INDEXES
+  // =====================================================
   // =====================================================
 
   buildIndexes() {
@@ -516,16 +597,25 @@ class GaroTranslationEngine {
         return ''
       }
 
-      // EXACT PHRASE
+      // EXACT PHRASE OR KNOWN PHRASE MAP
 
-      if (this.phrases[normalized]) {
-        return this.phrases[normalized]
+      if (this.phraseMap?.[normalized]) {
+        return this.phraseMap[normalized]
       }
 
       const words =
         this.tokenize(normalized)
 
-      return this.buildSentence(words)
+      const hasVerb =
+        words.some(word =>
+          Boolean(this.detectVerb(word))
+        )
+
+      if (hasVerb) {
+        return this.buildSentence(words)
+      }
+
+      return this.translateWithPhrases(words)
 
     } catch (error) {
 
@@ -763,4 +853,4 @@ class GaroTranslationEngine {
 }
 
 export default new GaroTranslationEngine()
-```
+
