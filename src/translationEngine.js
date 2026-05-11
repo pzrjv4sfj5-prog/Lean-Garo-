@@ -4,19 +4,19 @@ import garoDictionary from '../garo_dictionary.json'
  * =========================================================
  * GARO AI TRANSLATION ENGINE
  * =========================================================
- * REAL GRAMMAR ENGINE
- * - SOV sentence logic
- * - Context aware
- * - Verb morphology
- * - Prefix/Suffix system
- * - Spoken Garo patterns
- * - Dynamic sentence generation
+ * FEATURES:
+ * - Real Garo grammar logic
+ * - SOV sentence structure
+ * - Object + Verb handling
+ * - Morphology engine
+ * - Tense engine
+ * - Spoken Garo support
  * - Question detection
- * - Negative sentence handling
- * - Command sentence handling
- * - Location suffixes
- * - Object-first Garo grammar
- * - Real-time AI style translation
+ * - Negative sentence logic
+ * - Dynamic sentence generation
+ * - Context aware translation
+ * - AI style grammar parsing
+ * - Compatible with existing frontend
  * =========================================================
  */
 
@@ -30,7 +30,7 @@ class GaroTranslationEngine {
     this.garoToEnglish = {}
 
     // =====================================================
-    // CORE PRONOUNS
+    // PRONOUNS
     // =====================================================
 
     this.PRONOUNS = {
@@ -44,6 +44,8 @@ class GaroTranslationEngine {
       we: 'An·ching',
       my: 'Angni',
       your: 'Nangni',
+      this: 'Ia',
+      that: 'Ua',
     }
 
     // =====================================================
@@ -58,29 +60,32 @@ class GaroTranslationEngine {
       drink: 'ring',
       sleep: 'tusi',
       sit: 'asong',
+      stand: 'chak',
       work: 'dak',
+      help: 'dakchak',
       give: 'on·',
       take: 'ra·',
       see: 'ni',
       watch: 'ni',
       write: 'se·',
+      read: 'porai',
+      speak: 'agan',
       buy: 'bre',
       sell: 'pal',
       know: 'ui',
       love: 'ka·sa',
-      help: 'dakchak',
-      play: 'kal',
-      speak: 'agan',
-      pray: 'bi·',
-      run: 'kat',
       walk: 'song',
+      run: 'kat',
       cook: 'nok',
-      bring: 'ba·ra',
+      wash: 'rong',
       open: '启动',
       close: 'tong',
-      wash: 'rong',
-      read: 'porai',
       learn: 'skie',
+      play: 'kal',
+      pray: 'bi·',
+      bring: 'ba·ra',
+      wait: 'damo',
+      look: 'nia',
     }
 
     // =====================================================
@@ -102,8 +107,8 @@ class GaroTranslationEngine {
       drank: 'drink',
       drinking: 'drink',
 
-      knew: 'know',
-      knowing: 'know',
+      slept: 'sleep',
+      sleeping: 'sleep',
 
       bought: 'buy',
       buying: 'buy',
@@ -111,14 +116,17 @@ class GaroTranslationEngine {
       sold: 'sell',
       selling: 'sell',
 
-      slept: 'sleep',
-      sleeping: 'sleep',
+      wrote: 'write',
+      writing: 'write',
 
-      ran: 'run',
-      running: 'run',
+      read: 'read',
+      reading: 'read',
 
-      walked: 'walk',
-      walking: 'walk',
+      knew: 'know',
+      knowing: 'know',
+
+      played: 'play',
+      playing: 'play',
     }
 
     // =====================================================
@@ -132,65 +140,92 @@ class GaroTranslationEngine {
       future: 'gen',
       imperative: 'bo',
       past: 'a',
-      questionPast: 'ama?',
       questionPresent: 'engma?',
+      questionPast: 'ama?',
       negation: 'ja',
       location: 'chi',
     }
 
     // =====================================================
-    // OBJECT-VERB EXPRESSIONS
-    // IMPORTANT:
-    // GARO USES OBJECT + VERB
+    // LOCATION WORDS
+    // =====================================================
+
+    this.LOCATIONS = {
+
+      market: 'bajal',
+      school: 'skul',
+      home: 'nok',
+      village: 'songnok',
+      church: 'mondoli',
+      field: 'a·king',
+      forest: 'bri',
+    }
+
+    // =====================================================
+    // SPECIAL OBJECT + VERB RULES
     // =====================================================
 
     this.OBJECT_VERB_PATTERNS = {
 
       'drink water': 'Chi ringbo',
+      'drink tea': 'Cha ringbo',
+      'drink milk': 'To ringbo',
       'drink rice beer': 'Chu ringbo',
+
       'eat rice': 'Mi cha·bo',
       'eat food': 'Be·en cha·bo',
+      'eat meat': 'Be·en cha·bo',
+
       'go market': 'Bajalchi re·angbo',
       'go school': 'Skulchi re·angbo',
       'go home': 'Nokchi re·angbo',
+
       'come here': 'Ianona re·babo',
+
       'sit down': 'Asongbo',
-      'sleep now': 'Da·alo tusibo',
+
       'read book': 'Ki·tap poraibo',
+
       'write letter': 'Chithi se·bo',
+
       'play football': 'Football kalbo',
-      'drink tea': 'Cha ringbo',
-      'eat meat': 'Be·en cha·bo',
+
       'wash clothes': 'Gaina rongbo',
     }
 
     // =====================================================
-    // COMMON PHRASES
+    // PHRASES
     // =====================================================
 
     this.PHRASES = {
 
       'hi': 'Salam',
       'hello': 'Salam',
+
       'good morning': 'Pringnam',
+      'good evening': 'Attamnam',
       'good night': 'Walnam',
+
       'thank you': 'Mitela',
       'thanks': 'Mitela',
 
       'how are you': 'Na·a namengama?',
+
       'what are you doing': 'Maidakenga?',
+
       'where are you going': 'Na·a bano re·angenga?',
 
       'i love you': 'Anga nang·na ka·sa',
-      'i dont know': 'Anga uija',
+
       "i don't know": 'Anga uija',
+      'i dont know': 'Anga uija',
 
       "let's go": "Hai re'naha",
       'lets go': "Hai re'naha",
     }
 
     // =====================================================
-    // NEGATIVE EXPRESSIONS
+    // NEGATIVE SPECIALS
     // =====================================================
 
     this.NEGATIVE_SPECIAL = {
@@ -209,19 +244,15 @@ class GaroTranslationEngine {
       and: 'aro',
       but: 'indiba',
       because: 'maina',
-      then: 'unon',
       or: 'ba',
+      then: 'unon',
     }
-
-    // =====================================================
-    // BUILD INDEXES
-    // =====================================================
 
     this.buildIndexes()
   }
 
   // =====================================================
-  // BUILD DICTIONARY INDEX
+  // BUILD INDEXES
   // =====================================================
 
   buildIndexes() {
@@ -261,7 +292,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // NORMALIZER
+  // NORMALIZE
   // =====================================================
 
   normalize(text) {
@@ -285,7 +316,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // TENSE DETECTOR
+  // DETECT TENSE
   // =====================================================
 
   detectTense(words) {
@@ -316,7 +347,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // NEGATIVE DETECTOR
+  // NEGATIVE DETECTION
   // =====================================================
 
   isNegative(words) {
@@ -330,15 +361,16 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // QUESTION DETECTOR
+  // QUESTION DETECTION
   // =====================================================
 
   isQuestion(text) {
+
     return text.trim().endsWith('?')
   }
 
   // =====================================================
-  // VERB RESOLVER
+  // RESOLVE VERB
   // =====================================================
 
   resolveVerb(word) {
@@ -355,7 +387,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // CONJUGATION ENGINE
+  // CONJUGATE VERB
   // =====================================================
 
   conjugateVerb(verbKey, tense, negative = false) {
@@ -406,25 +438,22 @@ class GaroTranslationEngine {
     return (
       this.englishToGaro[word] ||
       this.PRONOUNS[word] ||
+      this.LOCATIONS[word] ||
       word
     )
   }
 
   // =====================================================
-  // SMART OBJECT + VERB PARSER
+  // OBJECT + VERB PARSER
   // =====================================================
 
   parseObjectVerb(words) {
 
     const joined = words.join(' ')
 
-    // exact pattern first
-
     if (this.OBJECT_VERB_PATTERNS[joined]) {
       return this.OBJECT_VERB_PATTERNS[joined]
     }
-
-    // dynamic parser
 
     let object = null
     let verb = null
@@ -477,7 +506,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // QUESTION BUILDER
+  // BUILD QUESTION
   // =====================================================
 
   buildQuestion(words) {
@@ -489,7 +518,8 @@ class GaroTranslationEngine {
 
     for (const word of words) {
 
-      const resolved = this.resolveVerb(word)
+      const resolved =
+        this.resolveVerb(word)
 
       if (resolved) {
         verb = resolved
@@ -500,13 +530,14 @@ class GaroTranslationEngine {
       return null
     }
 
-    const root = this.VERBS[verb]
+    const root =
+      this.VERBS[verb]
 
     return `${subject} ${root}${this.SUFFIX.questionPresent}`
   }
 
   // =====================================================
-  // MAIN SENTENCE BUILDER
+  // BUILD SENTENCE
   // =====================================================
 
   buildSentence(words) {
@@ -524,14 +555,20 @@ class GaroTranslationEngine {
     for (const word of words) {
 
       if (this.PRONOUNS[word]) {
-        subject = this.PRONOUNS[word]
+
+        subject =
+          this.PRONOUNS[word]
+
         continue
       }
 
-      const resolved = this.resolveVerb(word)
+      const resolved =
+        this.resolveVerb(word)
 
       if (resolved) {
+
         verb = resolved
+
         continue
       }
 
@@ -547,13 +584,20 @@ class GaroTranslationEngine {
           'the',
           'a',
           'an',
-          'not',
+          'not'
         ].includes(word)
       ) {
 
-        objects.push(
+        let translated =
           this.translateWord(word)
-        )
+
+        // add location suffix
+
+        if (this.LOCATIONS[word]) {
+          translated += this.SUFFIX.location
+        }
+
+        objects.push(translated)
       }
     }
 
@@ -568,10 +612,8 @@ class GaroTranslationEngine {
         negative
       )
 
-    // =================================================
-    // TRUE GARO WORD ORDER
+    // TRUE GARO ORDER
     // SUBJECT + OBJECT + VERB
-    // =================================================
 
     return [
       subject,
@@ -583,7 +625,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // COMPLEX SENTENCE TRANSLATOR
+  // COMPLEX SENTENCE
   // =====================================================
 
   translateComplex(text) {
@@ -616,7 +658,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // MAIN AI TRANSLATOR
+  // MAIN TRANSLATOR
   // =====================================================
 
   translate(text) {
@@ -628,17 +670,13 @@ class GaroTranslationEngine {
     const normalized =
       this.normalize(text)
 
-    // =================================================
-    // EXACT PHRASES
-    // =================================================
+    // exact phrase
 
     if (this.PHRASES[normalized]) {
       return this.PHRASES[normalized]
     }
 
-    // =================================================
-    // OBJECT + VERB PATTERN
-    // =================================================
+    // object + verb
 
     if (
       this.OBJECT_VERB_PATTERNS[normalized]
@@ -646,9 +684,7 @@ class GaroTranslationEngine {
       return this.OBJECT_VERB_PATTERNS[normalized]
     }
 
-    // =================================================
-    // COMPLEX SENTENCE
-    // =================================================
+    // complex sentence
 
     if (
       /\b(and|but|because|or|then)\b/
@@ -660,9 +696,7 @@ class GaroTranslationEngine {
     const words =
       this.tokenize(normalized)
 
-    // =================================================
-    // QUESTIONS
-    // =================================================
+    // question
 
     if (this.isQuestion(text)) {
 
@@ -674,25 +708,16 @@ class GaroTranslationEngine {
       }
     }
 
-    // =================================================
-    // OBJECT VERB DYNAMIC
-    // =================================================
+    // object verb parser
 
     const ov =
       this.parseObjectVerb(words)
 
     if (ov) {
-
-      // Example:
-      // drink water
-      // => Chi ringbo
-
       return ov
     }
 
-    // =================================================
-    // NORMAL SENTENCE
-    // =================================================
+    // sentence builder
 
     const sentence =
       this.buildSentence(words)
@@ -701,9 +726,7 @@ class GaroTranslationEngine {
       return sentence
     }
 
-    // =================================================
-    // FALLBACK WORD-BY-WORD
-    // =================================================
+    // fallback
 
     return words
       .map(word => this.translateWord(word))
@@ -711,7 +734,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // PUBLIC TRANSLATOR
+  // PUBLIC TRANSLATION
   // =====================================================
 
   translateSentence(text) {
@@ -724,6 +747,116 @@ class GaroTranslationEngine {
 
       language: 'garo',
     }
+  }
+
+  // =====================================================
+  // GRAMMAR ANALYZER
+  // =====================================================
+
+  analyzeGrammar(sentence) {
+
+    const normalized =
+      this.normalize(sentence)
+
+    const words =
+      this.tokenize(normalized)
+
+    const analysis = {
+
+      original: sentence,
+
+      normalized,
+
+      tokens: words,
+
+      tense:
+        this.detectTense(words),
+
+      negative:
+        this.isNegative(words),
+
+      question:
+        this.isQuestion(sentence),
+
+      subject: null,
+
+      verb: null,
+
+      objects: [],
+
+      structure: 'SOV',
+
+      translatedPreview:
+        this.translate(sentence),
+    }
+
+    for (const word of words) {
+
+      // subject
+
+      if (this.PRONOUNS[word]) {
+
+        analysis.subject = {
+
+          english: word,
+
+          garo: this.PRONOUNS[word]
+        }
+
+        continue
+      }
+
+      // verb
+
+      const resolved =
+        this.resolveVerb(word)
+
+      if (resolved) {
+
+        analysis.verb = {
+
+          english: word,
+
+          root: resolved,
+
+          garo: this.VERBS[resolved]
+        }
+
+        continue
+      }
+
+      // objects
+
+      if (
+        ![
+          'am',
+          'is',
+          'are',
+          'was',
+          'were',
+          'will',
+          'to',
+          'the',
+          'a',
+          'an',
+          'not',
+          'did',
+          'do',
+          'does'
+        ].includes(word)
+      ) {
+
+        analysis.objects.push({
+
+          english: word,
+
+          garo:
+            this.translateWord(word)
+        })
+      }
+    }
+
+    return analysis
   }
 }
 
