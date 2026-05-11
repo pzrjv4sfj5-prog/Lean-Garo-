@@ -651,7 +651,7 @@
     }
   },
   "fruits": {
-    "_classifier": "Ge",
+    "_classifier": "ge",
     "_examples": [
       {
         "english": "I want to eat a mango",
@@ -761,7 +761,7 @@
     }
   },
   "vegetables_and_roots": {
-    "_classifier": "Ge",
+    "_classifier": "ge",
     "_examples": [
       {
         "english": "Buy two potatoes",
@@ -891,7 +891,7 @@
     }
   },
   "animals": {
-    "_classifier": "Mang",
+    "_classifier": "mang",
     "_examples": [
       {
         "english": "I have one dog",
@@ -1003,7 +1003,7 @@
     }
   },
   "birds": {
-    "_classifier": "Mang",
+    "_classifier": "mang",
     "_examples": [
       {
         "english": "Two crows are on the tree",
@@ -1082,7 +1082,7 @@
     }
   },
   "insects_and_aquatic": {
-    "_classifier": "Mang",
+    "_classifier": "mang",
     "_examples": [
       {
         "english": "There is a mosquito",
@@ -1304,7 +1304,7 @@
     }
   },
   "family_members": {
-    "_classifier": "Sak",
+    "_classifier": "sak",
     "_examples": [
       {
         "english": "My father is a farmer",
@@ -1349,7 +1349,7 @@
       "hindi": "बेटी"
     },
     "grandfather": {
-      "garo": "Abi-tang",
+      "garo": "At-chu",
       "hindi": "दादा / नाना"
     },
     "grandmother": {
@@ -2723,7 +2723,7 @@
     }
   },
   "household_items": {
-    "_classifier": "Ge",
+    "_classifier": "ge",
     "_examples": [
       {
         "english": "Where is the key?",
@@ -3076,7 +3076,7 @@
     }
   },
   "clothing_and_wearables": {
-    "_classifier": "Ge",
+    "_classifier": "ge",
     "_examples": [
       {
         "english": "I bought new shoes",
@@ -3342,7 +3342,7 @@
     }
   },
   "occupations": {
-    "_classifier": "Sak",
+    "_classifier": "sak",
     "_examples": [
       {
         "english": "My father is a farmer",
@@ -3460,7 +3460,7 @@
     }
   },
   "education": {
-    "_classifier": "King",
+    "_classifier": "king",
     "_examples": [
       {
         "english": "I am reading a book",
@@ -3706,7 +3706,7 @@
     }
   },
   "kitchen_and_cooking": {
-    "_classifier": "Ge",
+    "_classifier": "ge",
     "_examples": [
       {
         "english": "Cook the rice",
@@ -3890,7 +3890,7 @@
     }
   },
   "travel_and_transport": {
-    "_classifier": "Ge",
+    "_classifier": "ge",
     "_examples": [
       {
         "english": "I am going by car",
@@ -3990,7 +3990,7 @@
     }
   },
   "social_people": {
-    "_classifier": "Sak",
+    "_classifier": "sak",
     "_examples": [
       {
         "english": "He is an old man",
@@ -4118,7 +4118,7 @@
     }
   },
   "materials_and_textures": {
-    "_classifier": "Ge",
+    "_classifier": "ge",
     "_examples": [
       {
         "english": "This is made of wood",
@@ -4736,7 +4736,7 @@
     }
   },
   "at_the_market": {
-    "_classifier": "Gong",
+    "_classifier": "gong",
     "_examples": [
       {
         "english": "How much does this cost?",
@@ -4838,7 +4838,7 @@
     }
   },
   "animal_actions_and_parts": {
-    "_classifier": "Mang",
+    "_classifier": "mang",
     "_examples": [
       {
         "english": "The bird is flying",
