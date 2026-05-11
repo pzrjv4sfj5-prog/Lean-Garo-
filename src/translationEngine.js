@@ -7,671 +7,634 @@ import { countNoun, validatePhrase, NUMBERS as NUMBER_WORDS } from './garo_class
  */
 
 class GaroTranslationEngine {
+
   constructor() {
-    // Phrase dictionary for common expressions (checked FIRST before word-by-word)
-    this.phraseDictionary = {
-      // Greetings
-      'hi': 'Salam',
-      'hello': 'Salam',
-      'hi how are you': 'Salam, Na·a namengama?',
-      'hello how are you': 'Salam, Na·a namengama?',
-      'how are you': 'Na·a namengama?',
-      'how are you doing': 'Na·a namengama?',
-      'good morning': 'Pringnam',
-      'good night': 'Walnam',
-      'good evening': 'Attamnam',
-      'good day': 'Salnam',
-      'have a nice day': "Nang·na namgipa sal ong·china",
-
-      // Polite phrases
-      'thank you': 'Mitela',
-      'thanks': 'Mitela',
-      'i am sorry': 'Angko kema ka·pabo',
-      'i am fine': 'Anga namengaba',
-      'i am good': 'Anga namengaba',
-
-      // Questions
-      'what are you doing': 'Maidakenga?',
-      'where are you from': 'Na·ra banoni?',
-      'did you go to the market': 'Na·a bajalchi re·angama?',
-      'did you eat': 'Na·a chiba?',
-      'did you come': 'Na·a chamba?',
-
-      // Statements
-      'i went to the market': 'Anga bajalchi re·ang·a',
-      'i love you': 'Angna nang·na ka·sa',
-
-      // Let's go — full form and spoken short form
-      "let's go": "Hai re'naha",
-      'lets go': "Hai re'naha",
-      'shall we go': "Hai re'naha",
-      "come let's go": "Hai re'naha",
-
-      // Pronouns
-      'i': 'Anga',
-      'you': 'Na·a',
-      'they': 'Bisong',
-
-      // Common words
-      'good': 'Nama',
-      'very good': 'Nambea',
-      'beautiful': 'Nitoa',
-      'rice': 'Mi',
-      'water': 'Chi',
-      'market': 'bajal',
-      'yes': 'Hae',
-      'no': 'Daeh',
-
-      // Verbs + ambiguity notes
-      'drive': "sala (note: also means 'to pull')",
-      'pull': "sala (note: also means 'to drive')",
-      'swim': "jroa (note: also means 'sting/stinging sensation' after insect bite)",
-      'climb': "maldoa (note: both maldoa and gadoa are valid)",
-      'gadoa': "gadoa (note: both maldoa and gadoa are valid)",
-      'pluck': "aka (note: as in plucking fruit from a tree)",
-      'roam': "rorama (note: both rorama and roama are valid)",
-      'lock': "teka (note: as in locking a door)",
-      'shoot': "goa (note: with suffix -ta becomes 'goata' meaning 'to throw')",
-      'throw': "goata (note: goa + suffix -ta)",
-      'look': "nia (note: same word as see and watch)",
-      'see': "nia (note: same word as look and watch)",
-      'watch': "nia (note: same word as look and see)",
-      'stare': "nitata (note: intensive form of nia)",
-      'smell': 'gingsika',
-      'spread': 'barama',
-      'show': 'mesoka',
-      'turn': 'badala',
-      'pour': "rua (note: as a noun means 'axe')",
-      'apply': 'nonga',
-      'go': "re'naha"
-    }
 
     this.dictionary = garoDictionary
+
     this.englishToGaro = {}
     this.garoToEnglish = {}
     this.englishToHindi = {}
     this.hindiToGaro = {}
-    
+
+    // =====================================================
+    // AI LANGUAGE ENGINES
+    // =====================================================
+
+    this.PRONOUNS = {
+      i: 'Anga',
+      me: 'Angko',
+      you: 'Na·a',
+      he: 'Ua',
+      she: 'Ua',
+      they: 'Bisong',
+      we: 'An·ching',
+      my: 'Angni',
+      your: 'Nangni',
+    }
+
+    this.NOUN_LOCATIONS = [
+      'market',
+      'school',
+      'house',
+      'forest',
+      'church',
+      'village',
+    ]
+
+    this.CONJUNCTIONS = {
+      and: 'aro',
+      but: 'indiba',
+      because: 'maina',
+      or: 'ba',
+      while: 'somoio',
+      then: 'unon',
+    }
+
+    this.VERBS = {
+
+      go: 're·ang',
+      come: 're·ba',
+      eat: 'cha·',
+      drink: 'ring',
+      sleep: 'tusi',
+      sit: 'asong',
+      work: 'dak',
+      give: 'on·',
+      take: 'ra·',
+      see: 'ni',
+      watch: 'ni',
+      write: 'se·',
+      buy: 'bre',
+      sell: 'pal',
+      know: 'ui',
+      love: 'ka·sa',
+      help: 'dakchak',
+      play: 'kal',
+      speak: 'agan',
+      pray: 'bi·',
+    }
+
+    this.IRREGULARS = {
+
+      went: 'go',
+      going: 'go',
+      goes: 'go',
+
+      came: 'come',
+      coming: 'come',
+
+      ate: 'eat',
+      eating: 'eat',
+
+      drank: 'drink',
+      drinking: 'drink',
+
+      knew: 'know',
+      knowing: 'know',
+
+      bought: 'buy',
+      buying: 'buy',
+
+      sold: 'sell',
+      selling: 'sell',
+    }
+
+    this.SUFFIX = {
+
+      continuous: 'enga',
+      future: 'gen',
+      imperative: 'bo',
+      past: 'a',
+      questionPast: 'ama?',
+      questionPresent: 'engma?',
+      negation: 'ja',
+      location: 'chi',
+    }
+
+    // =====================================================
+    // PHRASE ENGINE
+    // =====================================================
+
+    this.phraseDictionary = {
+
+      'hi': 'Salam',
+      'hello': 'Salam',
+      'thank you': 'Mitela',
+      'thanks': 'Mitela',
+      'good morning': 'Pringnam',
+      'good night': 'Walnam',
+
+      "let's go": 'Hai re·angha',
+      'lets go': 'Hai re·angha',
+
+      'i love you': 'Anga nang·na ka·sa',
+      'i dont know': 'Anga uija',
+      "i don't know": 'Anga uija',
+    }
+
     this.buildIndexes()
   }
 
+  // =====================================================
+  // NORMALIZATION
+  // =====================================================
+
+  normalize(text) {
+
+    if (!text) return ''
+
+    return text
+      .normalize('NFKC')
+      .toLowerCase()
+      .replace(/[\u2018\u2019]/g, "'")
+      .replace(/[^\w\s'·?!-]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+  }
+
+  tokenize(text) {
+    return this.normalize(text)
+      .split(' ')
+      .filter(Boolean)
+  }
+
+  // =====================================================
+  // INDEX BUILDER
+  // =====================================================
+
   buildIndexes() {
-    // Extract all vocabulary entries
+
     Object.keys(this.dictionary).forEach(category => {
+
       const section = this.dictionary[category]
-      if (!section || typeof section !== 'object') return
 
-      // Skip meta and special sections
-      if (category.startsWith('_') || category === '_meta') return
+      if (!section || typeof section !== 'object') {
+        return
+      }
 
-      // Process each entry in the category
+      if (category.startsWith('_')) {
+        return
+      }
+
       Object.entries(section).forEach(([key, value]) => {
-        if (key.startsWith('_')) return
 
-        const english = key.toLowerCase().trim()
-        
-        // Handle new trilingual format: value is an object with garo and hindi properties
-        let garo = ''
-        let hindi = ''
-        
-        if (typeof value === 'object' && value !== null) {
-          garo = (value.garo || '').toLowerCase().trim()
-          hindi = (value.hindi || '').toLowerCase().trim()
-        } else {
-          // Handle old simple string format
-          garo = String(value).toLowerCase().trim()
+        if (key.startsWith('_')) {
+          return
         }
 
-        // Build indices
+        const english = key.toLowerCase().trim()
+
+        let garo = ''
+        let hindi = ''
+
+        if (typeof value === 'object') {
+
+          garo = (value.garo || '')
+            .toLowerCase()
+            .trim()
+
+          hindi = (value.hindi || '')
+            .toLowerCase()
+            .trim()
+
+        } else {
+
+          garo = String(value)
+            .toLowerCase()
+            .trim()
+        }
+
         if (english && garo) {
+
           this.englishToGaro[english] = {
             garo,
             hindi,
             category,
-            priority: 'exact'
           }
+
           this.garoToEnglish[garo] = {
             english,
             hindi,
             category,
-            priority: 'exact'
-          }
-          if (hindi) {
-            this.englishToHindi[english] = {
-              hindi,
-              garo,
-              category,
-              priority: 'exact'
-            }
-            this.hindiToGaro[hindi] = {
-              garo,
-              english,
-              category,
-              priority: 'exact'
-            }
           }
         }
       })
     })
   }
 
-  /**
-   * Normalize text for matching
-   */
-  normalize(text) {
-    if (!text) return ''
-    return text
-      .toLowerCase()
-      .trim()
-      .replace(/\s+/g, ' ')
-      .replace(/[-]/g, ' ')
-      .replace(/[.,!?;:]/g, '')
+  // =====================================================
+  // AI TENSE DETECTOR
+  // =====================================================
+
+  detectTense(words) {
+
+    if (words.includes('will')) {
+      return 'future'
+    }
+
+    if (
+      words.includes('did') ||
+      words.includes('went') ||
+      words.includes('ate') ||
+      words.includes('came')
+    ) {
+      return 'past'
+    }
+
+    if (
+      words.includes('am') ||
+      words.includes('is') ||
+      words.includes('are') ||
+      words.some(w => w.endsWith('ing'))
+    ) {
+      return 'continuous'
+    }
+
+    return 'present'
   }
 
-  /**
-   * Split text into words/tokens
-   */
-  tokenize(text) {
-    return this.normalize(text).split(/\s+/).filter(t => t.length > 0)
+  // =====================================================
+  // NEGATION DETECTOR
+  // =====================================================
+
+  isNegative(words) {
+
+    return (
+      words.includes('not') ||
+      words.includes("don't") ||
+      words.includes('dont') ||
+      words.includes("didn't") ||
+      words.includes("can't")
+    )
   }
 
-  /**
-   * Find closest matching word (fuzzy matching)
-   */
-  fuzzyMatch(word, dictionary) {
-    const normalized = this.normalize(word)
-    if (dictionary[normalized]) return dictionary[normalized]
+  // =====================================================
+  // QUESTION DETECTOR
+  // =====================================================
 
-    // Try partial matches
-    const keys = Object.keys(dictionary)
-    for (const key of keys) {
-      if (key.includes(normalized) || normalized.includes(key)) {
-        if (key.length > 2 && normalized.length > 2) {
-          return dictionary[key]
-        }
+  isQuestion(input) {
+    return input.trim().endsWith('?')
+  }
+
+  // =====================================================
+  // VERB RESOLVER
+  // =====================================================
+
+  resolveVerb(word) {
+
+    if (this.VERBS[word]) {
+      return word
+    }
+
+    if (this.IRREGULARS[word]) {
+      return this.IRREGULARS[word]
+    }
+
+    return null
+  }
+
+  // =====================================================
+  // CONJUGATION ENGINE
+  // =====================================================
+
+  conjugateVerb(verbKey, tense, negative = false) {
+
+    const root = this.VERBS[verbKey]
+
+    if (!root) return verbKey
+
+    let output = root
+
+    switch (tense) {
+
+      case 'continuous':
+        output += this.SUFFIX.continuous
+        break
+
+      case 'future':
+        output += this.SUFFIX.future
+        break
+
+      case 'past':
+        output += this.SUFFIX.past
+        break
+
+      case 'imperative':
+        output += this.SUFFIX.imperative
+        break
+
+      default:
+        output = root
+    }
+
+    if (negative) {
+
+      if (verbKey === 'know') {
+        return 'uija'
+      }
+
+      output += this.SUFFIX.negation
+    }
+
+    return output
+  }
+
+  // =====================================================
+  // SUBJECT DETECTOR
+  // =====================================================
+
+  detectSubject(words) {
+
+    for (const word of words) {
+
+      if (this.PRONOUNS[word]) {
+        return this.PRONOUNS[word]
       }
     }
 
     return null
   }
 
-  /**
-   * Detect morphology - extract root and affixes
-   */
-  detectMorphology(word) {
-    // Common Garo verb suffixes
-    const verbSuffixes = {
-      'enga': 'present continuous',
-      'aha': 'past tense',
-      'gen': 'future tense',
-    }
+  // =====================================================
+  // OBJECT DETECTOR
+  // =====================================================
 
-    word = word.toLowerCase()
+  detectObjects(words) {
 
-    for (const [suffix, tense] of Object.entries(verbSuffixes)) {
-      if (word.endsWith(suffix)) {
-        const root = word.slice(0, -suffix.length)
-        return {
-          root,
-          suffix,
-          tense,
-          morpheme: suffix
-        }
+    const objects = []
+
+    for (const word of words) {
+
+      const translation = this.englishToGaro[word]
+
+      if (translation) {
+        objects.push(translation.garo)
       }
     }
 
-    return { root: word, suffix: null, tense: null }
+    return objects
   }
 
-  /**
-   * Detect number and classifier
-   */
-  detectNumber(word) {
-    const numbers = {
-      'sa': 1, 'gni': 2, 'gittam': 3, 'bri': 4, 'bonga': 5,
-      'dok': 6, 'sni': 7, 'chet': 8, 'sku': 9, 'chiking': 10,
-      'kolgrik': 20, 'kolatchi': 30, 'sotbri': 40, 'sotbonga': 50,
-      'sotdok': 60, 'sotsni': 70, 'sotchet': 80, 'sotsku': 90,
-      'ritchasa': 100, 'hajalsa': 1000
-    }
+  // =====================================================
+  // LOCATION ENGINE
+  // =====================================================
 
-    word = word.toLowerCase()
-    
-    for (const [numWord, value] of Object.entries(numbers)) {
-      if (word.includes(numWord)) {
-        return { number: value, word: numWord, numeric: true }
+  applyLocation(noun) {
+    return noun + this.SUFFIX.location
+  }
+
+  // =====================================================
+  // QUESTION BUILDER
+  // =====================================================
+
+  buildQuestion(words) {
+
+    const tense = this.detectTense(words)
+
+    const subject = this.detectSubject(words)
+
+    if (!subject) return null
+
+    let verbKey = null
+
+    for (const word of words) {
+
+      const resolved = this.resolveVerb(word)
+
+      if (resolved) {
+        verbKey = resolved
+        break
       }
     }
 
-    return { number: null, numeric: false }
-  }
+    if (!verbKey) return null
 
-  /**
-   * Detect classifier for a noun category
-   */
-  getClassifier(english, category) {
-    const classifierMap = {
-      'animals': 'Mang',
-      'birds': 'Mang',
-      'insects_and_aquatic': 'Mang',
-      'family_members': 'Sak',
-      'occupations': 'Sak',
-      'social_people': 'Sak',
-      'education': 'King',
-      'household_items': 'Ge',
-      'clothing_and_wearables': 'Ge',
-      'kitchen_and_cooking': 'Ge',
-      'at_the_market': 'Gong',
-    }
+    const objects = this.detectObjects(words)
 
-    return classifierMap[category] || null
-  }
+    const processed = objects.map(obj => {
 
-  /**
-   * Generate dynamic numbers
-   */
-  generateNumber(num) {
-    const baseNumbers = {
-      1: 'Sa', 2: 'Gni', 3: 'Gittam', 4: 'Bri', 5: 'Bonga',
-      6: 'Dok', 7: 'Sni', 8: 'Chet', 9: 'Sku', 10: 'Chiking'
-    }
-
-    const tens = {
-      20: 'Kolgrik', 30: 'Kolatchi', 40: 'Sotbri', 50: 'Sotbonga',
-      60: 'Sotdok', 70: 'Sotsni', 80: 'Sotchet', 90: 'Sotsku'
-    }
-
-    const hundreds = {
-      100: 'Ritchasa',
-      1000: 'Hajalsa'
-    }
-
-    if (num <= 10) return baseNumbers[num] || String(num)
-    if (num <= 90) {
-      const tenVal = Math.floor(num / 10) * 10
-      const oneVal = num % 10
-      if (oneVal === 0) return tens[tenVal]
-      return `${tens[tenVal]}-${baseNumbers[oneVal]}`
-    }
-    if (num <= 1000) {
-      const hunVal = Math.floor(num / 100)
-      const remainder = num % 100
-      const hun = hunVal === 1 ? 'Ritchasa' : `${baseNumbers[hunVal]}-Ritchasa`
-      if (remainder === 0) return hun
-      return `${hun}-${this.generateNumber(remainder)}`
-    }
-
-    return String(num)
-  }
-
-  /**
-   * Get classifier for a noun based on category
-   */
-  getClassifierForNoun(englishNoun) {
-    const nounLower = englishNoun.toLowerCase()
-    for (const [classifier, words] of Object.entries(this.CLASSIFIERS)) {
-      if (words.includes(nounLower)) {
-        return classifier
-      }
-    }
-    return 'ge' // default fallback classifier
-  }
-
-  /**
-   * Count a noun with proper classifier and word order
-   * Word order in Garo: NOUN + CLASSIFIER-NUMBER
-   */
-  countNoun(garoNoun, englishNoun, count) {
-    const number = this.garoNumbers[count]
-    if (!number) return `${garoNoun} (number out of range 1-10)`
-    const classifier = this.getClassifierForNoun(englishNoun)
-    return `${garoNoun} ${classifier}-${number}`
-  }
-
-  /**
-   * Detect if a text contains a number word followed by a noun
-   * Returns {hasNumber: bool, count: number, nounStartIndex: number}
-   */
-  detectNumberPhrase(words) {
-    for (let i = 0; i < words.length - 1; i++) {
-      const word = words[i].toLowerCase()
-      if (this.NUMBERS[word]) {
-        return {
-          hasNumber: true,
-          count: this.NUMBERS[word],
-          numberIndex: i,
-          nounIndex: i + 1
-        }
-      }
-    }
-    return { hasNumber: false }
-  }
-
-  /**
-   * Translate single word
-   */
-  translateWord(word, fromLang = 'en', toLang = 'garo') {
-    const normalized = this.normalize(word)
-    let result = null
-
-    if (fromLang === 'en' && toLang === 'garo') {
-      result = this.englishToGaro[normalized] || this.fuzzyMatch(normalized, this.englishToGaro)
-    } else if (fromLang === 'garo' && toLang === 'en') {
-      result = this.garoToEnglish[normalized] || this.fuzzyMatch(normalized, this.garoToEnglish)
-    }
-
-    return result
-  }
-
-  /**
-   * Translate using phrase-first sliding window approach
-   * Checks phrases FIRST (3-word, 2-word) before falling back to word-by-word
-   */
-  translateWithPhrases(text, fromLang = 'en', toLang = 'garo') {
-    const lower = text.toLowerCase().trim()
-    
-    // Only do phrase matching for English to Garo
-    if (fromLang === 'en' && toLang === 'garo') {
-      // Check exact phrase match first
-      if (this.phraseDictionary[lower]) {
-        return this.phraseDictionary[lower]
+      if (
+        obj === 'bajal' ||
+        obj === 'skul' ||
+        obj === 'nok'
+      ) {
+        return this.applyLocation(obj)
       }
 
-      // Sliding window: 3-word, 2-word, then 1-word
-      const words = lower.split(/\s+/)
-      const result = []
-      let i = 0
+      return obj
+    })
 
-      while (i < words.length) {
-        const six = words.slice(i, i + 6).join(' ')
-        const five = words.slice(i, i + 5).join(' ')
-        const four = words.slice(i, i + 4).join(' ')
-        const three = words.slice(i, i + 3).join(' ')
-        const two = words.slice(i, i + 2).join(' ')
-        const one = words[i]
+    const root = this.VERBS[verbKey]
 
-        // Check number + noun pattern first
-        if (i + 1 < words.length && NUMBER_WORDS[one]) {
-          const noun = words[i + 1]
-          const nounTranslation = this.translateWord(noun, fromLang, toLang)
-          if (nounTranslation) {
-            result.push(countNoun(nounTranslation.garo, noun, one))
-            i += 2
-            continue
-          }
-        }
+    if (tense === 'past') {
 
-        // Try phrase matching with sliding window
-        if (this.phraseDictionary[six]) {
-          result.push(this.phraseDictionary[six])
-          i += 6
-        } else if (this.phraseDictionary[five]) {
-          result.push(this.phraseDictionary[five])
-          i += 5
-        } else if (this.phraseDictionary[four]) {
-          result.push(this.phraseDictionary[four])
-          i += 4
-        } else if (this.phraseDictionary[three]) {
-          result.push(this.phraseDictionary[three])
-          i += 3
-        } else if (this.phraseDictionary[two]) {
-          result.push(this.phraseDictionary[two])
-          i += 2
-        } else if (this.phraseDictionary[one]) {
-          result.push(this.phraseDictionary[one])
-          i += 1
-        } else {
-          // Fallback to dictionary word-by-word lookup
-          const translation = this.translateWord(one, fromLang, toLang)
-          result.push(translation ? translation.garo : `[${one}: unknown]`)
-          i += 1
-        }
-      }
-
-      return result.join(' ')
+      return `${subject} ${processed.join(' ')} ${root}${this.SUFFIX.questionPast}`
+        .replace(/\s+/g, ' ')
+        .trim()
     }
 
-    // For non-English or non-Garo, fall back to word-by-word
-    return this.translateSentenceWordByWord(text, fromLang, toLang).translated
+    return `${subject} ${processed.join(' ')} ${root}${this.SUFFIX.questionPresent}`
+      .replace(/\s+/g, ' ')
+      .trim()
   }
 
-  /**
-   * Translate sentence word-by-word (fallback)
-   */
-  translateSentenceWordByWord(text, fromLang = 'en', toLang = 'garo') {
-    const tokens = this.tokenize(text)
-    if (tokens.length === 0) return { original: text, translated: '', breakdown: [] }
+  // =====================================================
+  // COMMAND ENGINE
+  // =====================================================
 
-    const translations = []
-    const breakdown = []
+  buildCommand(words) {
 
-    for (let idx = 0; idx < tokens.length; idx++) {
-      const tokenWord = tokens[idx]
+    let verbKey = null
 
-      if (fromLang === 'en' && NUMBER_WORDS[tokenWord.toLowerCase()] && idx + 1 < tokens.length) {
-        const countWord = tokenWord.toLowerCase()
-        const noun = tokens[idx + 1]
-        const nounTranslation = this.translateWord(noun, fromLang, toLang)
-        if (nounTranslation) {
-          const counted = countNoun(nounTranslation.garo, noun, countWord)
-          translations.push(counted)
-          breakdown.push({
-            english: `${tokenWord} ${noun}`,
-            garo: counted,
-            category: nounTranslation.category
-          })
-          idx += 1
-          continue
-        }
-      }
+    for (const word of words) {
 
-      const result = this.translateWord(tokenWord, fromLang, toLang)
+      const resolved = this.resolveVerb(word)
 
-      if (result) {
-        if (toLang === 'garo') {
-          translations.push(result.garo)
-          breakdown.push({
-            english: tokenWord,
-            garo: result.garo,
-            category: result.category
-          })
-        } else {
-          translations.push(result.english)
-          breakdown.push({
-            garo: tokenWord,
-            english: result.english,
-            category: result.category
-          })
-        }
-      } else {
-        translations.push(`[${tokenWord}: unknown]`)
-        breakdown.push({
-          english: fromLang === 'en' ? tokenWord : '?',
-          garo: fromLang === 'garo' ? tokenWord : '?',
-          category: 'unknown'
-        })
+      if (resolved) {
+        verbKey = resolved
+        break
       }
     }
+
+    if (!verbKey) return null
+
+    return this.conjugateVerb(
+      verbKey,
+      'imperative'
+    )
+  }
+
+  // =====================================================
+  // SENTENCE ENGINE
+  // =====================================================
+
+  buildSentence(words) {
+
+    const tense = this.detectTense(words)
+
+    const negative = this.isNegative(words)
+
+    const subject = this.detectSubject(words)
+
+    if (!subject) return null
+
+    let verbKey = null
+
+    for (const word of words) {
+
+      const resolved = this.resolveVerb(word)
+
+      if (resolved) {
+        verbKey = resolved
+        break
+      }
+    }
+
+    if (!verbKey) return null
+
+    const verb = this.conjugateVerb(
+      verbKey,
+      tense,
+      negative
+    )
+
+    const objects = this.detectObjects(words)
+
+    const processed = objects.map(obj => {
+
+      if (
+        obj === 'bajal' ||
+        obj === 'skul' ||
+        obj === 'nok'
+      ) {
+        return this.applyLocation(obj)
+      }
+
+      return obj
+    })
+
+    return `${subject} ${processed.join(' ')} ${verb}`
+      .replace(/\s+/g, ' ')
+      .trim()
+  }
+
+  // =====================================================
+  // COMPLEX SENTENCE ENGINE
+  // =====================================================
+
+  splitClauses(text) {
+
+    return text
+      .split(/\b(and|but|because|or|while|then)\b/)
+      .map(x => x.trim())
+      .filter(Boolean)
+  }
+
+  translateComplex(text) {
+
+    const parts = this.splitClauses(text)
+
+    const translated = []
+
+    for (const part of parts) {
+
+      if (this.CONJUNCTIONS[part]) {
+
+        translated.push(
+          this.CONJUNCTIONS[part]
+        )
+
+        continue
+      }
+
+      translated.push(
+        this.translate(part)
+      )
+    }
+
+    return translated.join(' ')
+  }
+
+  // =====================================================
+  // MAIN AI TRANSLATOR
+  // =====================================================
+
+  translate(text) {
+
+    if (!text) return ''
+
+    const normalized = this.normalize(text)
+
+    // PHRASE ENGINE
+    if (this.phraseDictionary[normalized]) {
+      return this.phraseDictionary[normalized]
+    }
+
+    // COMPLEX SENTENCE
+    if (
+      /\b(and|but|because|or|while|then)\b/
+        .test(normalized)
+    ) {
+      return this.translateComplex(normalized)
+    }
+
+    const words = this.tokenize(normalized)
+
+    // QUESTION ENGINE
+    if (this.isQuestion(text)) {
+
+      const question = this.buildQuestion(words)
+
+      if (question) {
+        return question
+      }
+    }
+
+    // COMMAND ENGINE
+    if (
+      words.length <= 3 &&
+      !this.detectSubject(words)
+    ) {
+
+      const command = this.buildCommand(words)
+
+      if (command) {
+        return command
+      }
+    }
+
+    // SENTENCE ENGINE
+    const sentence = this.buildSentence(words)
+
+    if (sentence) {
+      return sentence
+    }
+
+    // FALLBACK ENGINE
+    return words.map(word => {
+
+      const entry = this.englishToGaro[word]
+
+      if (entry) {
+        return entry.garo
+      }
+
+      return `[${word}: unknown]`
+
+    }).join(' ')
+  }
+
+  // =====================================================
+  // PUBLIC TRANSLATOR
+  // =====================================================
+
+  translateSentence(text) {
 
     return {
       original: text,
-      translated: translations.join(' '),
-      breakdown,
-      language: toLang
+      translated: this.translate(text),
+      language: 'garo',
     }
-  }
-
-  /**
-   * Translate sentence with phrase-first approach
-   */
-  translateSentence(text, fromLang = 'en', toLang = 'garo') {
-    try {
-      const translated = this.translateWithPhrases(text, fromLang, toLang)
-      const breakdown = []
-      
-      // Build breakdown for display
-      const tokens = this.tokenize(text)
-      tokens.forEach(token => {
-        const result = this.translateWord(token, fromLang, toLang)
-        if (result) {
-          if (toLang === 'garo') {
-            breakdown.push({
-              english: token,
-              garo: result.garo,
-              category: result.category
-            })
-          }
-        }
-      })
-
-      return {
-        original: text,
-        translated,
-        breakdown,
-        language: toLang
-      }
-    } catch (error) {
-      console.error('Translation error:', error)
-      return {
-        original: text,
-        translated: '',
-        breakdown: [],
-        language: toLang,
-        error: 'Translation failed'
-      }
-    }
-  }
-
-  /**
-   * Get all vocabulary in a category
-   */
-  getCategoryVocabulary(category) {
-    const section = this.dictionary[category]
-    if (!section) return []
-
-    const results = []
-    Object.entries(section).forEach(([english, value]) => {
-      if (!english.startsWith('_')) {
-        let garo = ''
-        let hindi = ''
-        
-        if (typeof value === 'object' && value !== null) {
-          garo = value.garo || ''
-          hindi = value.hindi || ''
-        } else {
-          garo = String(value)
-        }
-        
-        results.push({
-          english,
-          garo,
-          hindi,
-          category
-        })
-      }
-    })
-
-    return results
-  }
-
-  /**
-   * Get all categories
-   */
-  getAllCategories() {
-    return Object.keys(this.dictionary).filter(k => !k.startsWith('_'))
-  }
-
-  /**
-   * Search vocabulary
-   */
-  searchVocabulary(query, language = 'all') {
-    const normalized = this.normalize(query)
-    const results = []
-
-    Object.keys(this.dictionary).forEach(category => {
-      if (category.startsWith('_')) return
-
-      const section = this.dictionary[category]
-      Object.entries(section).forEach(([english, value]) => {
-        if (english.startsWith('_')) return
-
-        let garo = ''
-        let hindi = ''
-        
-        if (typeof value === 'object' && value !== null) {
-          garo = value.garo || ''
-          hindi = value.hindi || ''
-        } else {
-          garo = String(value)
-        }
-
-        const eng = english.toLowerCase()
-        const gar = garo.toLowerCase()
-
-        if (language === 'all' || language === 'english') {
-          if (eng.includes(normalized)) {
-            results.push({
-              english: english.toLowerCase(),
-              garo,
-              hindi,
-              category,
-              matched: 'english'
-            })
-          }
-        }
-
-        if (language === 'all' || language === 'garo') {
-          if (gar.includes(normalized)) {
-            results.push({
-              english: english.toLowerCase(),
-              garo,
-              hindi,
-              category,
-              matched: 'garo'
-            })
-          }
-        }
-      })
-    })
-
-    return results
-  }
-
-  /**
-   * Analyze grammar structure
-   */
-  analyzeGrammar(sentence, language = 'en') {
-    const tokens = this.tokenize(sentence)
-    const analysis = {
-      tokens,
-      morphology: [],
-      classifiers: [],
-      numbers: [],
-      tenses: []
-    }
-
-    tokens.forEach(token => {
-      const morph = this.detectMorphology(token)
-      if (morph.tense) {
-        analysis.morphology.push({
-          word: token,
-          ...morph
-        })
-        analysis.tenses.push(morph.tense)
-      }
-
-      const num = this.detectNumber(token)
-      if (num.numeric) {
-        analysis.numbers.push({
-          word: token,
-          ...num
-        })
-      }
-    })
-
-    return analysis
   }
 }
-
-// Export singleton instance
-export default new GaroTranslationEngine()
