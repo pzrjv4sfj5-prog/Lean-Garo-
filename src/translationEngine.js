@@ -138,6 +138,9 @@ class GaroTranslationEngine {
       "let's work":
         "Hai dakha",
 
+      "let's run":
+        "Hai katha",
+
       // =================================================
       // TRUE GARO SENTENCES
       // =================================================

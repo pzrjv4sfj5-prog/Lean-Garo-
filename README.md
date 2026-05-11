@@ -123,6 +123,14 @@ The translation engine is not a simple dictionary lookup. It includes:
 - Phonetic matching for variant spellings
 - Semantic matching as last resort
 
+### `lets` / `let's` Phrase Handling
+- Normalizes `let's` and `lets` to the same matching form
+- Supports Hai expression translations for collective commands
+- Verified translations:
+  - `lets go` → `Hai re·naha`
+  - `lets eat` → `Hai cha·ha`
+  - `lets run` → `Hai katha`
+
 ## 📚 Garo Language Structure
 
 ### Classifiers (Noun Counters)
