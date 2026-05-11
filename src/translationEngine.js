@@ -10,6 +10,24 @@ class GaroTranslationEngine {
     this.garoToEnglish = {}
 
     // =====================================================
+    // TRUE GARO LANGUAGE ENGINE
+    // =====================================================
+    //
+    // GARO SENTENCE STRUCTURE:
+    //
+    // SUBJECT + OBJECT + VERB
+    //
+    // English:
+    // I am eating rice
+    //
+    // Garo:
+    // Anga mi cha·enga
+    //
+    // OBJECT COMES BEFORE VERB
+    //
+    // =====================================================
+
+    // =====================================================
     // PRONOUNS
     // =====================================================
 
@@ -25,6 +43,7 @@ class GaroTranslationEngine {
 
       my: 'Angni',
       your: 'Nangni',
+      our: 'An·chingni',
     }
 
     // =====================================================
@@ -39,6 +58,7 @@ class GaroTranslationEngine {
       tea: 'cha',
       milk: 'to',
       meat: 'bik',
+      fish: 'na·tok',
 
       market: 'bajal',
       school: 'skul',
@@ -47,16 +67,14 @@ class GaroTranslationEngine {
 
       book: 'ki·tap',
       clothes: 'gaina',
-      letter: 'chithi',
-
       road: 'rama',
-      fish: 'na·tok',
+
       dog: 'a·chak',
       cat: 'bi·sim',
     }
 
     // =====================================================
-    // TRUE GARO VERBS
+    // TRUE GARO VERB ROOTS
     // =====================================================
 
     this.verbs = {
@@ -80,6 +98,8 @@ class GaroTranslationEngine {
       buy: 'bre',
       sell: 'pal',
       cook: 'soa',
+      learn: 'skie',
+      teach: 'skia',
     }
 
     // =====================================================
@@ -91,11 +111,12 @@ class GaroTranslationEngine {
       hello: 'Salam',
       hi: 'Salam',
 
-      'thank you': 'Mitela',
-
       'good morning': 'Pringnam',
       'good evening': 'Attamnam',
       'good night': 'Walnam',
+
+      'thank you': 'Mitela',
+      thanks: 'Mitela',
 
       'how are you':
         'Na·a namengama?',
@@ -107,9 +128,11 @@ class GaroTranslationEngine {
         'Anga uija',
 
       "let's go":
-        "Hai re'naha",
+        "Hai re·naha",
 
+      // =================================================
       // TRUE GARO SENTENCES
+      // =================================================
 
       'drink water':
         'Chi ringbo',
@@ -117,11 +140,20 @@ class GaroTranslationEngine {
       'eat rice':
         'Mi cha·bo',
 
+      'eat food':
+        'Be·en cha·bo',
+
+      'drink tea':
+        'Cha ringbo',
+
       'i am eating':
         'Anga cha·enga',
 
       'i am eating rice':
         'Anga mi cha·enga',
+
+      'i am drinking':
+        'Anga ringenga',
 
       'i am drinking water':
         'Anga chi ringenga',
@@ -134,7 +166,40 @@ class GaroTranslationEngine {
 
       'i am running':
         'Anga katenga',
+
+      'i am going':
+        'Anga re·angenga',
+
+      'i am coming':
+        'Anga re·baenga',
+
+      'you are eating':
+        'Na·a cha·enga',
+
+      'you are eating rice':
+        'Na·a mi cha·enga',
     }
+
+    // =====================================================
+    // AUXILIARY WORDS
+    // =====================================================
+
+    this.helperWords = [
+      'am',
+      'is',
+      'are',
+      'was',
+      'were',
+      'have',
+      'has',
+      'had',
+      'the',
+      'a',
+      'an',
+      'to',
+      'be',
+      'will',
+    ]
 
     this.buildIndexes()
   }
@@ -149,8 +214,7 @@ class GaroTranslationEngine {
 
       Object.keys(this.dictionary).forEach(category => {
 
-        const section =
-          this.dictionary[category]
+        const section = this.dictionary[category]
 
         if (!section || typeof section !== 'object') {
           return
@@ -194,11 +258,8 @@ class GaroTranslationEngine {
             return
           }
 
-          this.englishToGaro[english] =
-            garo
-
-          this.garoToEnglish[garo] =
-            english
+          this.englishToGaro[english] = garo
+          this.garoToEnglish[garo] = english
         })
       })
 
@@ -244,6 +305,8 @@ class GaroTranslationEngine {
 
   detectTense(words = []) {
 
+    // PRESENT CONTINUOUS
+
     if (
       words.includes('am') ||
       words.includes('is') ||
@@ -253,6 +316,8 @@ class GaroTranslationEngine {
       return 'continuous'
     }
 
+    // PERFECT
+
     if (
       words.includes('have') ||
       words.includes('has')
@@ -261,12 +326,23 @@ class GaroTranslationEngine {
       return 'perfect'
     }
 
+    // PAST
+
     if (
       words.includes('was') ||
       words.includes('were')
     ) {
 
       return 'past'
+    }
+
+    // FUTURE
+
+    if (
+      words.includes('will')
+    ) {
+
+      return 'future'
     }
 
     return 'present'
@@ -307,6 +383,18 @@ class GaroTranslationEngine {
         base = base.slice(0, -1)
       }
 
+      // coming -> come
+
+      if (base === 'com') {
+        base = 'come'
+      }
+
+      // going -> go
+
+      if (base === 'go') {
+        return 'go'
+      }
+
       if (this.verbs[base]) {
         return base
       }
@@ -340,7 +428,15 @@ class GaroTranslationEngine {
       return verb
     }
 
+    // =================================================
     // PRESENT CONTINUOUS
+    // =================================================
+    //
+    // eat -> cha·enga
+    // drink -> ringenga
+    // sleep -> tusienga
+    //
+    // =================================================
 
     if (tense === 'continuous') {
 
@@ -361,13 +457,20 @@ class GaroTranslationEngine {
       return root + 'aha'
     }
 
+    // FUTURE
+
+    if (tense === 'future') {
+
+      return root + 'gen'
+    }
+
     // SIMPLE PRESENT
 
     return root + 'bo'
   }
 
   // =====================================================
-  // TRANSLATE WORD
+  // TRANSLATE SINGLE WORD
   // =====================================================
 
   translateWord(word = '') {
@@ -385,7 +488,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // TRUE GARO SENTENCE BUILDER
+  // BUILD TRUE GARO SENTENCE
   // =====================================================
 
   buildSentence(words = []) {
@@ -401,30 +504,20 @@ class GaroTranslationEngine {
 
     for (const word of words) {
 
-      // SKIP HELPERS
+      // =================================================
+      // SKIP HELPER WORDS
+      // =================================================
 
       if (
-        [
-          'am',
-          'is',
-          'are',
-          'was',
-          'were',
-          'have',
-          'has',
-          'had',
-          'the',
-          'a',
-          'an',
-          'to',
-          'be',
-          'will',
-        ].includes(word)
+        this.helperWords.includes(word)
       ) {
+
         continue
       }
 
+      // =================================================
       // SUBJECT
+      // =================================================
 
       if (this.pronouns[word]) {
 
@@ -434,7 +527,9 @@ class GaroTranslationEngine {
         continue
       }
 
+      // =================================================
       // VERB
+      // =================================================
 
       const foundVerb =
         this.detectVerb(word)
@@ -450,15 +545,23 @@ class GaroTranslationEngine {
         continue
       }
 
+      // =================================================
       // OBJECT
+      // =================================================
 
       objects.push(
         this.translateWord(word)
       )
     }
 
+    // =====================================================
     // TRUE GARO ORDER:
+    //
     // SUBJECT + OBJECT + VERB
+    //
+    // Anga mi cha·enga
+    //
+    // =====================================================
 
     return [
 
@@ -476,7 +579,7 @@ class GaroTranslationEngine {
   }
 
   // =====================================================
-  // MAIN TRANSLATE
+  // MAIN TRANSLATOR
   // =====================================================
 
   translate(text = '') {
@@ -490,15 +593,25 @@ class GaroTranslationEngine {
         return ''
       }
 
-      // EXACT PHRASE
+      // =================================================
+      // EXACT PHRASE MATCH
+      // =================================================
 
       if (this.phrases[normalized]) {
 
         return this.phrases[normalized]
       }
 
+      // =================================================
+      // TOKENIZE
+      // =================================================
+
       const words =
         this.tokenize(normalized)
+
+      // =================================================
+      // TRUE GARO ENGINE
+      // =================================================
 
       return this.buildSentence(words)
 
@@ -549,7 +662,9 @@ class GaroTranslationEngine {
 
       numbers: [],
 
-      tenses: [],
+      tenses: [
+        this.detectTense(words)
+      ],
     }
   }
 
@@ -593,6 +708,9 @@ class GaroTranslationEngine {
 
   analyzeGrammar(text = '') {
 
+    const words =
+      this.tokenize(text)
+
     return {
 
       original: text,
@@ -608,12 +726,8 @@ class GaroTranslationEngine {
       grammar:
         'True Garo grammar engine',
 
-      tenses: [
-        'present',
-        'continuous',
-        'perfect',
-        'past',
-      ],
+      tense:
+        this.detectTense(words),
 
       morphology: [],
 
@@ -621,8 +735,7 @@ class GaroTranslationEngine {
 
       numbers: [],
 
-      tokens:
-        this.tokenize(text),
+      tokens: words,
     }
   }
 
@@ -659,7 +772,7 @@ class GaroTranslationEngine {
   getAllCategories() {
 
     return Object.keys(
-      this.dictionary
+      this.dictionary || {}
     )
   }
 
