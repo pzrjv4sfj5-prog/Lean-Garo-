@@ -65,7 +65,7 @@ class GaroTranslationEngine {
     }
 
     // =====================================================
-    // TRUE GARO VERBS
+    // VERBS
     // =====================================================
 
     this.verbs = {
@@ -198,25 +198,8 @@ class GaroTranslationEngine {
     }
 
     // =====================================================
-    // HELPER WORDS
+    // BUILD SYSTEMS
     // =====================================================
-
-    this.helperWords = [
-      'am',
-      'is',
-      'are',
-      'was',
-      'were',
-      'have',
-      'has',
-      'had',
-      'the',
-      'a',
-      'an',
-      'to',
-      'be',
-      'will',
-    ]
 
     this.buildIndexes()
     this.buildConversationPatterns()
@@ -547,6 +530,31 @@ class GaroTranslationEngine {
       )
 
       return ''
+    }
+  }
+
+  // =====================================================
+  // TRANSLATE SENTENCE
+  // =====================================================
+
+  translateSentence(sentence = '') {
+
+    try {
+
+      if (!sentence) {
+        return ''
+      }
+
+      return this.translate(sentence)
+
+    } catch (error) {
+
+      console.error(
+        'translateSentence failed:',
+        error
+      )
+
+      return sentence
     }
   }
 }
