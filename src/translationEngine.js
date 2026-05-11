@@ -120,6 +120,24 @@ class GaroTranslationEngine {
       "let's go":
         "Hai re·naha",
 
+      "let's eat":
+        "Hai cha·ha",
+
+      "let's sleep":
+        "Hai tusina",
+
+      "let's drink":
+        "Hai ringaha",
+
+      "let's sit":
+        "Hai asongha",
+
+      "let's play":
+        "Hai kalha",
+
+      "let's work":
+        "Hai dakha",
+
       // =================================================
       // TRUE GARO SENTENCES
       // =================================================
@@ -203,17 +221,27 @@ class GaroTranslationEngine {
 
     try {
 
-      this.phraseMap = {
-        ...this.phrases,
-      }
+      this.phraseMap = {}
+
+      Object.entries(this.phrases).forEach(([english, garo]) => {
+        const normalizedEnglish = this.normalize(english)
+
+        if (!normalizedEnglish || !garo) {
+          return
+        }
+
+        this.phraseMap[normalizedEnglish] = garo
+      })
 
       Object.entries(this.englishToGaro).forEach(([english, garo]) => {
         if (!english || !garo) {
           return
         }
 
-        if (english.includes(' ')) {
-          this.phraseMap[english] = garo
+        const normalizedEnglish = this.normalize(english)
+
+        if (normalizedEnglish.includes(' ')) {
+          this.phraseMap[normalizedEnglish] = garo
         }
       })
 
