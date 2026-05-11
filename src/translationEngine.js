@@ -636,10 +636,37 @@ class GaroTranslationEngine {
     try {
 
       if (!sentence) {
-        return ''
+        return {
+          original: '',
+          translated: '',
+          breakdown: [],
+          language: 'garo',
+          tokens: [],
+          morphology: [],
+          classifiers: [],
+          numbers: [],
+          tenses: [],
+        }
       }
 
-      return this.translate(sentence)
+      const translated = this.translate(sentence)
+      const words = this.tokenize(sentence)
+
+      return {
+        original: sentence,
+        translated,
+        breakdown: words.map(word => ({
+          english: word,
+          garo: this.translateWord(word),
+          category: 'general',
+        })),
+        language: 'garo',
+        tokens: words,
+        morphology: [],
+        classifiers: [],
+        numbers: [],
+        tenses: [this.detectTense(words)],
+      }
 
     } catch (error) {
 
@@ -648,7 +675,17 @@ class GaroTranslationEngine {
         error
       )
 
-      return sentence
+      return {
+        original: sentence,
+        translated: '',
+        breakdown: [],
+        language: 'garo',
+        tokens: [],
+        morphology: [],
+        classifiers: [],
+        numbers: [],
+        tenses: [],
+      }
     }
   }
 
@@ -703,9 +740,17 @@ class GaroTranslationEngine {
       )
 
       return {
-
         original: text,
-        error: true
+        normalized: this.normalize(text),
+        wordCount: 0,
+        words: [],
+        tense: 'unknown',
+        isQuestion: false,
+        hasConversationPattern: false,
+        translation: '',
+        morphology: [],
+        numbers: [],
+        error: true,
       }
     }
   }

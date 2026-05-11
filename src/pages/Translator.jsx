@@ -238,9 +238,9 @@ export default function Translator() {
       )}
 
       {/* Grammar Analysis */}
-      {grammar && (grammar.morphology.length > 0 || grammar.numbers.length > 0) && (
+      {grammar && ((grammar.morphology?.length || 0) > 0 || (grammar.numbers?.length || 0) > 0) && (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {grammar.morphology.length > 0 && (
+          {(grammar.morphology?.length || 0) > 0 && (
             <div className="card dark:bg-gray-800 dark:border-gray-700">
               <h3 className="font-bold text-lg mb-4">📝 Morphology Analysis</h3>
               <div className="space-y-3">
@@ -267,7 +267,7 @@ export default function Translator() {
             </div>
           )}
 
-          {grammar.numbers.length > 0 && (
+          {(grammar.numbers?.length || 0) > 0 && (
             <div className="card dark:bg-gray-800 dark:border-gray-700">
               <h3 className="font-bold text-lg mb-4">🔢 Numbers & Classifiers</h3>
               <div className="space-y-3">
