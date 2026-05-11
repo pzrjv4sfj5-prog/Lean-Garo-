@@ -262,78 +262,7 @@
         "hindi": "यह तुम्हारा है"
       },
       {
-"have": {
-  "garo": "Donga / Man·a",
-  "english": "have / possess / obtain",
-  "pos": "verb",
-  "example": "Anga kolom donga = I have a pen"
-},
-"have/has": {
-  "garo": "Donga",
-  "english": "have / has",
-  "pos": "verb",
-  "example": "Anga kolom donga = I have a pen"
-},
-"don't have": {
-  "garo": "Dongja",
-  "english": "do not have",
-  "pos": "verb",
-  "example": "A’gimiko dongja = I don't have time"
-},
-"have eaten/done": {
-  "garo": "-jok / man·jok",
-  "english": "completion marker",
-  "pos": "suffix",
-  "example": "Anga cha·jok = I have eaten"
-},
-"have you eaten?": {
-  "garo": "Mi cha·jok ma?",
-  "english": "Have you eaten?",
-  "pos": "question",
-  "example": "Mi cha·jok ma? = Have you eaten?"
-},
-"have/had done something": {
-  "garo": "-aha",
-  "english": "past suffix",
-  "pos": "suffix",
-  "example": "Anga dakaha = I have done/made it"
-},
-"i have done it": {
-  "garo": "Anga dakaha",
-  "english": "I have done/made it",
-  "pos": "phrase"
-},
-"do you have?": {
-  "garo": "Dongama? / donga ma?",
-  "english": "Do you have?",
-  "pos": "question"
-},
-"i have": {
-  "garo": "Anga donga",
-  "english": "I have",
-  "pos": "phrase"
-},
-"have you eaten rice?": {
-  "garo": "Na·a mi cha·aha ma? / Mi cha·jok ma?",
-  "english": "Have you eaten rice?",
-  "pos": "question"
-},
-"have you had dinner?": {
-  "garo": "Na·a mi cha·aha ma?",
-  "english": "Have you had dinner?",
-  "pos": "question"
-},
-"i have eaten rice": {
-  "garo": "Anga mi cha·aha",
-  "english": "I have eaten rice",
-  "pos": "phrase"
-},
-"lets": {
-  "garo": "Hai",
-  "english": "lets",
-  "pos": "expression",
-  "example": "Hai re·ang·bo = Let's go"
-},
+,
 "let's": {
   "garo": "Hai",
   "english": "let's",
@@ -578,6 +507,86 @@
       "pos": "verb",
       "example": "Indake dak·ja = don't do like that"
     }
+    ,
+    "have": {
+      "garo": "Donga / Man·a",
+      "english": "have / possess / obtain",
+      "pos": "verb",
+      "example": "Anga kolom donga = I have a pen"
+    },
+    "have/has": {
+      "garo": "Donga",
+      "english": "have / has",
+      "pos": "verb",
+      "example": "Anga kolom donga = I have a pen"
+    },
+    "don't have": {
+      "garo": "Dongja",
+      "english": "do not have",
+      "pos": "verb",
+      "example": "A’gimiko dongja = I don't have time"
+    },
+    "have eaten/done": {
+      "garo": "-jok / man·jok",
+      "english": "completion marker",
+      "pos": "suffix",
+      "example": "Anga cha·jok = I have eaten"
+    },
+    "have you eaten?": {
+      "garo": "Mi cha·jok ma?",
+      "english": "Have you eaten?",
+      "pos": "question",
+      "example": "Mi cha·jok ma? = Have you eaten?"
+    },
+    "have/had done something": {
+      "garo": "-aha",
+      "english": "past suffix",
+      "pos": "suffix",
+      "example": "Anga dakaha = I have done/made it"
+    },
+    "i have done it": {
+      "garo": "Anga dakaha",
+      "english": "I have done/made it",
+      "pos": "phrase"
+    },
+    "do you have?": {
+      "garo": "Dongama? / donga ma?",
+      "english": "Do you have?",
+      "pos": "question"
+    },
+    "i have": {
+      "garo": "Anga donga",
+      "english": "I have",
+      "pos": "phrase"
+    },
+    "have you eaten rice?": {
+      "garo": "Na·a mi cha·aha ma? / Mi cha·jok ma?",
+      "english": "Have you eaten rice?",
+      "pos": "question"
+    },
+    "have you had dinner?": {
+      "garo": "Na·a mi cha·aha ma?",
+      "english": "Have you had dinner?",
+      "pos": "question"
+    },
+    "i have eaten rice": {
+      "garo": "Anga mi cha·aha",
+      "english": "I have eaten rice",
+      "pos": "phrase"
+    },
+    "lets": {
+      "garo": "Hai",
+      "english": "lets",
+      "pos": "expression",
+      "example": "Hai re·ang·bo = Let's go"
+    },
+    "let's": {
+      "garo": "Hai",
+      "english": "let's",
+      "pos": "expression",
+      "example": "Hai re·ang·bo = Let's go"
+    }
+
   },
   "question_words": {
     "_classifier": null,
@@ -921,6 +930,10 @@
     "dog": {
       "garo": "Achak",
       "hindi": "कुत्ता"
+    },
+    "chicken": {
+      "garo": "Do’o",
+      "hindi": "चिकन / मुर्गी"
     },
     "cat": {
       "garo": "Menggo",
