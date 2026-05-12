@@ -3375,17 +3375,17 @@
       },
       {
         "english": "Let's eat",
-        "garo": "Hai cha·ha",
-        "notes": "Hai = expression particle for collective action"
+        "garo": "Hai cha·na",
+        "notes": "Hai = expression particle for collective action; cha·na = imperative eat"
       },
       {
         "english": "Let's go",
-        "garo": "Hai re·naha",
-        "notes": "Spoken short: re·naha"
+        "garo": "Hai re·na",
+        "notes": "Hai = collective action; re·na = imperative go (not continuous re·angenga)"
       },
       {
         "english": "Let's sleep",
-        "garo": "Hai tusina"
+        "garo": "Hai tus·na"
       },
       {
         "english": "Hurry up!",
@@ -3917,7 +3917,7 @@
       },
       {
         "english": "Let's hang out",
-        "garo": "Hai roromna"
+        "garo": "Hai rorom·na"
       },
       {
         "english": "I'm broke",
@@ -4810,8 +4810,8 @@
       },
       {
         "english": "Let's [verb]",
-        "garo": "Hai + verb + ha",
-        "notes": "Hai cha·ha (let's eat), Hai re·naha (let's go)"
+        "garo": "Hai + verb + na",
+        "notes": "Hai cha·na (let's eat), Hai re·na (let's go) — na = imperative marker"
       },
       {
         "english": "Ability / Permission ?",
@@ -5012,32 +5012,38 @@
     "hai_expression_particle": [
       {
         "english": "Let's eat",
-        "garo": "Hai cha·ha"
+        "garo": "Hai cha·na",
+        "notes": "Hai = collective action particle; cha·na = imperative eat"
       },
       {
         "english": "Let's go",
-        "garo": "Hai re·naha",
-        "notes": "Spoken short form: re·naha"
+        "garo": "Hai re·na",
+        "notes": "Hai = collective action particle; re·na = imperative go"
       },
       {
         "english": "Let's sleep",
-        "garo": "Hai tusina"
+        "garo": "Hai tus·na",
+        "notes": "tus·na = imperative sleep"
       },
       {
         "english": "Let's drink",
-        "garo": "Hai ringaha"
+        "garo": "Hai ring·na",
+        "notes": "ring·na = imperative drink"
       },
       {
         "english": "Let's sit",
-        "garo": "Hai asongha"
+        "garo": "Hai asong·na",
+        "notes": "asong·na = imperative sit"
       },
       {
         "english": "Let's play",
-        "garo": "Hai kalaha"
+        "garo": "Hai kal·na",
+        "notes": "kal·na = imperative play"
       },
       {
         "english": "Let's work",
-        "garo": "Hai dakha"
+        "garo": "Hai dak·na",
+        "notes": "dak·na = imperative work"
       }
     ],
     "giving_and_requesting": [
@@ -7449,14 +7455,14 @@
       "really?": "Bebema?",
       "of course!": "Oe, bebe!",
       "let's eat": {
-        "garo": "Hai cha·ha",
-        "notes": "Hai = expression particle for collective action"
+        "garo": "Hai cha·na",
+        "notes": "Hai = expression particle for collective action; cha·na = imperative eat"
       },
       "let's go": {
-        "garo": "Hai re·naha",
-        "notes": "Spoken short: re·naha"
+        "garo": "Hai re·na",
+        "notes": "Hai = collective action; re·na = imperative go (not continuous re·angenga)"
       },
-      "let's sleep": "Hai tusina",
+      "let's sleep": "Hai tus·na",
       "hurry up!": "Tarkbo!",
       "come quick!": {
         "garo": "Tarake re·babo!",
@@ -7684,7 +7690,7 @@
         "garo": "Jala-gipa",
         "notes": "From jalika (chilli)"
       },
-      "let's hang out": "Hai roromna",
+      "let's hang out": "Hai rorom·na",
       "i'm broke": "Anga tangka donja",
       "he/she is lying": "Ua tolenga",
       "mind your own business": "Nangni kamko dakbo",
@@ -7692,8 +7698,8 @@
       "just joking": "Anga kalake roega",
       "chill out / relax": "Nom·a bo",
       "let's go already!": {
-        "garo": "Re·naha ba!",
-        "notes": "ba = now/already filler"
+        "garo": "Hai re·na ba!",
+        "notes": "ba = now/already filler; re·na = imperative go"
       }
     },
     "personality_descriptors": {
