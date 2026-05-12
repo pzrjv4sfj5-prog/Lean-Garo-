@@ -907,7 +907,7 @@
       },
       {
         "english": "I don't know",
-        "garo": "Anga uija."
+        "garo": "Anga u·ija"
       },
       {
         "english": "Come here",
@@ -3317,7 +3317,7 @@
       },
       {
         "english": "I don't know",
-        "garo": "Anga uija."
+        "garo": "Anga u·ija"
       },
       {
         "english": "No more",
@@ -3380,7 +3380,7 @@
       },
       {
         "english": "Let's go",
-        "garo": "Hai re·na",
+        "garo": "Hai re·ang·bo",
         "notes": "Hai = collective action; re·na = imperative go (not continuous re·angenga)"
       },
       {
@@ -4194,7 +4194,7 @@
       },
       {
         "english": "Come (command)",
-        "garo": "Reba",
+        "garo": "Re·ba·bo",
         "notes": "Imperative — short form"
       },
       {
@@ -5007,6 +5007,46 @@
         "english": "ten birds",
         "garo": "do·a mang-chiking",
         "notes": "mang = animals/birds; chiking = 10"
+      },
+      {
+        "english": "rice",
+        "garo": "Mi",
+        "hindi": "चावल"
+      },
+      {
+        "english": "grandfather",
+        "garo": "Atchu",
+        "hindi": "दादा"
+      },
+      {
+        "english": "I ate rice",
+        "garo": "Anga mi cha·a",
+        "hindi": "मैंने चावल खाया"
+      },
+      {
+        "english": "I am eating",
+        "garo": "Anga mi cha·enga",
+        "hindi": "मैं खा रहा हूं"
+      },
+      {
+        "english": "I will go",
+        "garo": "Anga re·ang·gen",
+        "hindi": "मैं जाऊंगा"
+      },
+      {
+        "english": "What is this?",
+        "garo": "Ia maia?",
+        "hindi": "यह क्या है?"
+      },
+      {
+        "english": "I love you",
+        "garo": "Anga nang·na ka·sa·a",
+        "hindi": "मैं तुम्हें प्यार करता हूं"
+      },
+      {
+        "english": "Come!",
+        "garo": "Re·ba·bo",
+        "hindi": "आओ!"
       }
     ],
     "hai_expression_particle": [
