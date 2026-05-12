@@ -5127,6 +5127,26 @@
         "english": "cold",
         "garo": "Thanda",
         "hindi": "ठंडा"
+      },
+      {
+        "english": "three dogs",
+        "garo": "achak mang-gittam",
+        "hindi": "तीन कुत्ते"
+      },
+      {
+        "english": "past tense of go",
+        "garo": "re·ang·a",
+        "hindi": "भूतकाल में जाना"
+      },
+      {
+        "english": "do you have rice",
+        "garo": "Na·a mi dong·a ma?",
+        "hindi": "क्या तुम्हारे पास चावल है?"
+      },
+      {
+        "english": "i am eating rice",
+        "garo": "Anga mi cha·enga",
+        "hindi": ""
       }
     ],
     "hai_expression_particle": [

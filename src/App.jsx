@@ -30,7 +30,7 @@ function App() {
                 <span className="text-2xl">🌍</span>
                 <div className="flex flex-col">
                   <span className="font-bold text-lg leading-none">Garo</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">A'chik Language</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">A&apos;chik Language</span>
                 </div>
               </Link>
 
@@ -110,7 +110,7 @@ function App() {
               <div>
                 <h3 className="font-bold text-lg mb-2">About</h3>
                 <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  A semantic translation platform for A'chik Garo language, designed to preserve and promote the indigenous language of Meghalaya.
+                  A semantic translation platform for A&apos;chik Garo language, designed to preserve and promote the indigenous language of Meghalaya.
                 </p>
               </div>
               <div>
@@ -130,7 +130,7 @@ function App() {
               </div>
             </div>
             <div className={`mt-8 pt-8 border-t ${darkMode ? 'border-gray-700' : 'border-gray-200'} text-center ${darkMode ? 'text-gray-400' : 'text-gray-600'} text-sm`}>
-              © 2024 A'chik Garo Platform. Preserving indigenous languages.
+                © 2024 A&apos;chik Garo Platform. Preserving indigenous languages.
             </div>
           </div>
         </footer>

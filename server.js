@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // API endpoint for translation (if needed in future)
 app.post('/translate', async (req, res) => {
-  const { text, from, to } = req.body;
+  const { text } = req.body;
   try {
     // All translation logic is handled client-side with translationEngine.js
     res.json({ 

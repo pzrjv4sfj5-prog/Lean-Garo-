@@ -369,7 +369,7 @@ export default function VerbsGrammar() {
               👤 Pronouns are Essential in Garo
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
-              Garo distinguishes between inclusive and exclusive "we", and has separate forms for objects and possessives.
+              Garo distinguishes between inclusive and exclusive &quot;we&quot;, and has separate forms for objects and possessives.
             </p>
           </div>
 
@@ -405,7 +405,7 @@ export default function VerbsGrammar() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="card dark:bg-gray-800 dark:border-gray-700">
-              <h4 className="font-bold text-lg mb-3">Inclusive vs Exclusive "We"</h4>
+                <h4 className="font-bold text-lg mb-3">Inclusive vs Exclusive &quot;We&quot;</h4>
               <div className="space-y-3">
                 <div className="p-3 rounded-lg bg-blue-50 dark:bg-blue-900">
                   <div className="font-bold text-blue-900 dark:text-blue-100">Exclusive (Chinga)</div>
