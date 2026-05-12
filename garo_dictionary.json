@@ -1097,7 +1097,7 @@
       },
       {
         "english": "Sky",
-        "garo": "Salgi"
+        "garo": "Anga"
       },
       {
         "english": "Cloud",
@@ -1477,11 +1477,11 @@
       },
       {
         "english": "Dry",
-        "garo": "Ran·a"
+        "garo": "Sukna"
       },
       {
         "english": "Wet",
-        "garo": "Chon·a / Sosia"
+        "garo": "Chiana"
       },
       {
         "english": "Tasty",
@@ -5015,7 +5015,7 @@
       },
       {
         "english": "grandfather",
-        "garo": "Atchu",
+        "garo": "Ait-chu",
         "hindi": "दादा"
       },
       {
@@ -5047,6 +5047,86 @@
         "english": "Come!",
         "garo": "Re·ba·bo",
         "hindi": "आओ!"
+      },
+      {
+        "english": "I have a cat",
+        "garo": "Ango menggo donga",
+        "hindi": "मेरे पास एक बिल्ली है"
+      },
+      {
+        "english": "let's go to market",
+        "garo": "Hai bajal re.na",
+        "hindi": "बाजार चलते हैं"
+      },
+      {
+        "english": "let's",
+        "garo": "Hai",
+        "hindi": "चलो"
+      },
+      {
+        "english": "I have a grandfather",
+        "garo": "Ango Ait-chu donga",
+        "hindi": "मेरे पास एक दादा है"
+      },
+      {
+        "english": "I have",
+        "garo": "Ango donga",
+        "hindi": "मेरे पास है"
+      },
+      {
+        "english": "have",
+        "garo": "donga",
+        "hindi": "होना"
+      },
+      {
+        "english": "bird",
+        "garo": "Mang",
+        "hindi": "पक्षी"
+      },
+      {
+        "english": "sister",
+        "garo": "Aji",
+        "hindi": "बहन"
+      },
+      {
+        "english": "brother",
+        "garo": "Ajo",
+        "hindi": "भाई"
+      },
+      {
+        "english": "rest",
+        "garo": "Kre·a",
+        "hindi": "आराम"
+      },
+      {
+        "english": "earth",
+        "garo": "Mitchi",
+        "hindi": "पृथ्वी"
+      },
+      {
+        "english": "happy",
+        "garo": "Jongna",
+        "hindi": "खुश"
+      },
+      {
+        "english": "sad",
+        "garo": "Dukhna",
+        "hindi": "दुखी"
+      },
+      {
+        "english": "angry",
+        "garo": "Rokna",
+        "hindi": "गुस्सा"
+      },
+      {
+        "english": "hot",
+        "garo": "Garmna",
+        "hindi": "गर्म"
+      },
+      {
+        "english": "cold",
+        "garo": "Thanda",
+        "hindi": "ठंडा"
       }
     ],
     "hai_expression_particle": [
