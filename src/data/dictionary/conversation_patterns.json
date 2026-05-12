@@ -1,705 +1,292 @@
 {
   "_meta": {
-    "description": "Garo conversation patterns for NLP sentence matching",
     "version": "1.0",
-    "word_order": "SOV",
-    "source": "garo_dictionary.json v3.1"
+    "word_order": "SOV"
   },
   "patterns": {
-    "greeting": {
-      "triggers": [
-        "hello",
-        "hi",
-        "greetings",
-        "salam",
-        "namengama"
-      ],
-      "garo_responses": [
-        {
-          "garo": "Salam",
-          "english": "Hello",
-          "hindi": "नमस्ते"
-        },
-        {
-          "garo": "Namengama",
-          "english": "Greetings"
-        },
-        {
-          "garo": "Pringnam",
-          "english": "Good morning"
-        },
-        {
-          "garo": "Walnam",
-          "english": "Good night"
-        }
-      ],
-      "context": "greeting"
-    },
-    "farewell": {
-      "triggers": [
-        "goodbye",
-        "bye",
-        "see you",
-        "later"
-      ],
-      "garo_responses": [
-        {
-          "garo": "Re·ang-na",
-          "english": "Goodbye"
-        },
-        {
-          "garo": "Pil·tai-grongna",
-          "english": "See you again"
-        }
-      ],
-      "context": "farewell"
-    },
-    "thanks": {
-      "triggers": [
-        "thank you",
-        "thanks",
-        "thank"
-      ],
-      "garo_responses": [
-        {
-          "garo": "Mitela",
-          "english": "Thank you",
-          "hindi": "धन्यवाद"
-        }
-      ],
-      "context": "politeness"
-    },
-    "sorry": {
-      "triggers": [
-        "sorry",
-        "excuse me",
-        "forgive"
-      ],
-      "garo_responses": [
-        {
-          "garo": "Kema-bi·a",
-          "english": "Sorry / Forgive me"
-        },
-        {
-          "garo": "Angko kema-watbo",
-          "english": "Excuse me"
-        }
-      ],
-      "context": "politeness"
-    },
-    "how_are_you": {
-      "triggers": [
-        "how are you",
-        "how do you do",
-        "are you okay"
-      ],
-      "garo_responses": [
-        {
-          "garo": "Na·a namengama?",
-          "english": "How are you?"
-        },
-        {
-          "garo": "Anga namenga",
-          "english": "I am fine"
-        },
-        {
-          "garo": "Nama ong·a",
-          "english": "All is well"
-        }
-      ],
-      "context": "health_status"
-    },
-    "help": {
-      "triggers": [
-        "help",
-        "assist",
-        "emergency"
-      ],
-      "garo_responses": [
-        {
-          "garo": "Madengma!",
-          "english": "Help!"
-        },
-        {
-          "garo": "Dak·chak·bo!",
-          "english": "Help me!"
-        },
-        {
-          "garo": "Doktor jong·bo!",
-          "english": "Call a doctor!"
-        }
-      ],
-      "context": "emergency"
-    }
+    "greetings": [
+      {
+        "garo": "Salam / Namengama",
+        "english": "Hello / Greetings",
+        "hindi": "नमस्ते"
+      },
+      {
+        "garo": "Pringnam",
+        "english": "Good morning",
+        "hindi": "सुप्रभात"
+      },
+      {
+        "garo": "Salnam",
+        "english": "Good afternoon",
+        "hindi": "शुभ दोपहर"
+      },
+      {
+        "garo": "Attamnam",
+        "english": "Good evening",
+        "hindi": "शुभ संध्या"
+      },
+      {
+        "garo": "Walnam",
+        "english": "Good night",
+        "hindi": "शुभ रात्रि"
+      },
+      {
+        "garo": "Re·ang-na / Nam-en-dongbo",
+        "english": "Goodbye",
+        "hindi": "अलविदा"
+      },
+      {
+        "garo": "Pil·tai-grongna",
+        "english": "See you again",
+        "hindi": "फिर मिलेंगे"
+      },
+      {
+        "garo": "Rimchaksoa",
+        "english": "Welcome",
+        "hindi": "स्वागत है"
+      }
+    ],
+    "farewell": [
+      {
+        "garo": "Na·a namengama?",
+        "english": "How are you?",
+        "hindi": "आप कैसे हैं?"
+      },
+      {
+        "garo": "Anga namenga",
+        "english": "I am fine",
+        "hindi": "मैं ठीक हूँ"
+      }
+    ],
+    "thanks": [],
+    "sorry": [],
+    "how_are_you": [],
+    "help": [
+      {
+        "garo": "Madengma!",
+        "english": "Help!"
+      },
+      {
+        "garo": "Dak·chak·bo!",
+        "english": "Help me!"
+      },
+      {
+        "garo": "Doktor jong·bo!",
+        "english": "Call a doctor!"
+      },
+      {
+        "garo": "Mataha!",
+        "english": "It hurts!"
+      },
+      {
+        "garo": "Police jong·bo",
+        "english": "Call police"
+      }
+    ]
   },
   "sentence_structures": {
-    "simple_past": {
-      "pattern": "[Subject] [Object] [Verb-a]",
-      "word_order": "SOV",
-      "examples": [
-        {
-          "garo": "Anga mi cha·a",
-          "english": "I ate rice"
-        },
-        {
-          "garo": "Na·a re·ba·a",
-          "english": "You came"
-        },
-        {
-          "garo": "Uamang re·ang·a",
-          "english": "They went"
-        }
-      ]
-    },
-    "present_continuous": {
-      "pattern": "[Subject] [Object] [Verb-enga]",
-      "word_order": "SOV",
-      "examples": [
-        {
-          "garo": "Anga mi cha·enga",
-          "english": "I am eating rice"
-        },
-        {
-          "garo": "Ua tus·enga",
-          "english": "He is sleeping"
-        },
-        {
-          "garo": "Do·o bil·enga",
-          "english": "The bird is flying"
-        }
-      ]
-    },
-    "future": {
-      "pattern": "[Subject] [Object] [Verb-gen]",
-      "word_order": "SOV",
-      "examples": [
-        {
-          "garo": "Anga mi cha·gen",
-          "english": "I will eat rice"
-        },
-        {
-          "garo": "Na·a re·ba·gen",
-          "english": "You will come"
-        },
-        {
-          "garo": "An·ching re·ang·gen",
-          "english": "We will go"
-        }
-      ]
-    },
-    "command": {
-      "pattern": "[Object] [Verb-bo]",
-      "word_order": "OV",
-      "examples": [
-        {
-          "garo": "Mi cha·bo",
-          "english": "Eat rice!"
-        },
-        {
-          "garo": "Re·ba·bo",
-          "english": "Come!"
-        },
-        {
-          "garo": "Chi ring·bo",
-          "english": "Drink water!"
-        }
-      ]
-    },
-    "negation": {
-      "pattern": "[Subject] [Object] [Verb-ja]",
-      "word_order": "SOV",
-      "examples": [
-        {
-          "garo": "Anga mi cha·ja",
-          "english": "I don't eat rice"
-        },
-        {
-          "garo": "Nama ong·ja",
-          "english": "It is not good"
-        },
-        {
-          "garo": "Ua re·ba·ja",
-          "english": "He doesn't come"
-        }
-      ]
-    },
-    "possession": {
-      "pattern": "[Possessive-pronoun-ni] [Noun]",
-      "word_order": "Possessive + Noun",
-      "examples": [
-        {
-          "garo": "Angni nok",
-          "english": "My house"
-        },
-        {
-          "garo": "Nang·ni apa",
-          "english": "Your father"
-        },
-        {
-          "garo": "Uni chi",
-          "english": "His / Her water"
-        }
-      ]
-    },
-    "location": {
-      "pattern": "[Place-noun]-chi",
-      "note": "-chi suffix marks location (at/to)",
-      "examples": [
-        {
-          "garo": "bajal·chi",
-          "english": "at the market"
-        },
-        {
-          "garo": "nok·chi",
-          "english": "at home"
-        },
-        {
-          "garo": "skul·chi",
-          "english": "at school"
-        }
-      ]
-    }
+    "simple_past": [
+      {
+        "english": "I went",
+        "garo": "Anga re·ang·a",
+        "notes": "re·ang (root) + a (suffix) → re·ang·a"
+      },
+      {
+        "english": "I ate",
+        "garo": "Anga cha·a",
+        "notes": "cha· (root) + a (suffix) → cha·a"
+      },
+      {
+        "english": "I drank",
+        "garo": "Anga ringa·a"
+      },
+      {
+        "english": "I came",
+        "garo": "Anga re·ba·a"
+      },
+      {
+        "english": "She slept",
+        "garo": "Ua tusi·a"
+      },
+      {
+        "english": "They worked",
+        "garo": "Uamang dak·a"
+      }
+    ],
+    "present_continuous": [
+      {
+        "english": "I am eating",
+        "garo": "Anga cha·oenga"
+      },
+      {
+        "english": "She is going",
+        "garo": "Ua re·angenga"
+      },
+      {
+        "english": "He is sleeping",
+        "garo": "Ua tusienga"
+      },
+      {
+        "english": "I am coming",
+        "garo": "Anga re·baenga"
+      },
+      {
+        "english": "They are working",
+        "garo": "Uamang dak·oenga"
+      }
+    ],
+    "future": [],
+    "command": [],
+    "negation": [
+      {
+        "garo": "cha·ja",
+        "english": "don't eat / not eating"
+      },
+      {
+        "garo": "ong·ja",
+        "english": "is not"
+      },
+      {
+        "garo": "dong·ja",
+        "english": "don't have"
+      },
+      {
+        "garo": "u·ija",
+        "english": "don't know"
+      }
+    ],
+    "possession": [
+      {
+        "garo": "Angni nok",
+        "english": "My house"
+      },
+      {
+        "garo": "Nang·ni apa",
+        "english": "Your father"
+      },
+      {
+        "garo": "Uni chi",
+        "english": "His / Her water"
+      }
+    ],
+    "location": []
   },
   "question_patterns": {
-    "what": {
-      "trigger_word": "maia",
-      "english_equivalent": "what",
-      "pattern": "Ia maia? / [Subject] maia?",
-      "examples": [
-        {
-          "garo": "Ia maia?",
-          "english": "What is this?"
-        },
-        {
-          "garo": "Na·a maia dak·gipa?",
-          "english": "What do you do?"
-        }
-      ]
-    },
-    "where": {
-      "trigger_word": "bano",
-      "english_equivalent": "where",
-      "pattern": "[Subject/Noun] bano?",
-      "examples": [
-        {
-          "garo": "Na·a bano re·angenga?",
-          "english": "Where are you going?"
-        },
-        {
-          "garo": "Skul bano?",
-          "english": "Where is the school?"
-        }
-      ]
-    },
-    "who": {
-      "trigger_word": "sawa",
-      "english_equivalent": "who",
-      "pattern": "[Subject] sawa?",
-      "examples": [
-        {
-          "garo": "Ua sawa?",
-          "english": "Who is he/she?"
-        }
-      ]
-    },
-    "when": {
-      "trigger_word": "basako",
-      "english_equivalent": "when",
-      "pattern": "[Subject] basako [Verb]?",
-      "examples": [
-        {
-          "garo": "Na·a basako re·ba·a?",
-          "english": "When did you come?"
-        }
-      ]
-    },
-    "why": {
-      "trigger_word": "maini-gimin",
-      "english_equivalent": "why",
-      "pattern": "[Subject] maini-gimin [Verb]?",
-      "examples": [
-        {
-          "garo": "Na·a maini-gimin re·ang·a?",
-          "english": "Why are you going?"
-        }
-      ]
-    },
-    "how": {
-      "trigger_word": "maikai",
-      "english_equivalent": "how",
-      "pattern": "[Subject] maikai [Verb]?",
-      "examples": [
-        {
-          "garo": "Na·a namengama?",
-          "english": "How are you?"
-        }
-      ]
-    },
-    "how_many": {
-      "trigger_word": "baitarong",
-      "english_equivalent": "how many",
-      "pattern": "[Noun] baitarong dong·a?",
-      "examples": [
-        {
-          "garo": "Manderang baitarong dong·a?",
-          "english": "How many people are there?"
-        }
-      ]
-    },
-    "yes_no": {
-      "trigger_word": "ma",
-      "english_equivalent": "yes/no question",
-      "pattern": "[Statement] ma?",
-      "examples": [
-        {
-          "garo": "Na·a cha·enga ma?",
-          "english": "Are you eating?"
-        },
-        {
-          "garo": "Mi dong·a ma?",
-          "english": "Is there rice?"
-        }
-      ]
-    }
+    "what": [],
+    "where": [],
+    "who": [],
+    "when": [],
+    "why": [],
+    "how": [],
+    "how_many": [],
+    "yes_no": []
   },
   "tense_patterns": {
-    "past_simple": {
-      "suffix": "-a",
-      "trigger": "ends in ·a or -a (verb root)",
-      "english_equivalent": "did / was / went",
-      "examples": [
-        {
-          "garo": "cha·a",
-          "english": "ate"
-        },
-        {
-          "garo": "re·ang·a",
-          "english": "went"
-        },
-        {
-          "garo": "re·ba·a",
-          "english": "came"
-        }
-      ]
-    },
-    "past_alternate": {
-      "suffix": "-aha",
-      "trigger": "ends in -aha",
-      "english_equivalent": "did (alternate past)",
-      "examples": [
-        {
-          "garo": "cha·aha",
-          "english": "ate (alt)"
-        },
-        {
-          "garo": "dak·aha",
-          "english": "did / made"
-        }
-      ]
-    },
-    "present_continuous": {
-      "suffix": "-enga",
-      "trigger": "ends in -enga or -oenga",
-      "english_equivalent": "is/are ...ing",
-      "examples": [
-        {
-          "garo": "cha·enga",
-          "english": "is eating"
-        },
-        {
-          "garo": "re·ang·enga",
-          "english": "is going"
-        },
-        {
-          "garo": "tus·enga",
-          "english": "is sleeping"
-        }
-      ]
-    },
-    "future": {
-      "suffix": "-gen",
-      "trigger": "ends in -gen or -en",
-      "english_equivalent": "will ...",
-      "examples": [
-        {
-          "garo": "cha·gen",
-          "english": "will eat"
-        },
-        {
-          "garo": "re·ba·gen",
-          "english": "will come"
-        },
-        {
-          "garo": "dak·gen",
-          "english": "will do"
-        }
-      ]
-    },
-    "command": {
-      "suffix": "-bo",
-      "trigger": "ends in -bo",
-      "english_equivalent": "do! / imperative",
-      "examples": [
-        {
-          "garo": "cha·bo",
-          "english": "eat!"
-        },
-        {
-          "garo": "re·ba·bo",
-          "english": "come!"
-        },
-        {
-          "garo": "on·bo",
-          "english": "give!"
-        }
-      ]
-    },
-    "perfect": {
-      "suffix": "-manjok",
-      "trigger": "ends in -manjok",
-      "english_equivalent": "has/have done",
-      "examples": [
-        {
-          "garo": "cha·manjok",
-          "english": "has eaten"
-        },
-        {
-          "garo": "re·ang·manjok",
-          "english": "has gone"
-        }
-      ]
-    }
+    "past_simple": [],
+    "past_alternate": [],
+    "present_continuous": [],
+    "future": [],
+    "command": [],
+    "perfect": []
   },
   "negation_patterns": {
-    "verb_negation_short": {
-      "suffix": "-ja",
-      "pattern": "[Verb-root]-ja",
-      "examples": [
-        {
-          "garo": "cha·ja",
-          "english": "don't eat"
-        },
-        {
-          "garo": "ong·ja",
-          "english": "is not"
-        },
-        {
-          "garo": "dong·ja",
-          "english": "don't have"
-        },
-        {
-          "garo": "u·ija",
-          "english": "don't know"
-        },
-        {
-          "garo": "re·ba·ja",
-          "english": "doesn't come"
-        }
-      ]
-    },
-    "verb_negation_continuous": {
-      "suffix": "-ong·ja",
-      "pattern": "[Verb-root]-ong·ja",
-      "examples": [
-        {
-          "garo": "cha·ong·ja",
-          "english": "not eating (continuous)"
-        },
-        {
-          "garo": "dak·ong·ja",
-          "english": "not doing (continuous)"
-        }
-      ]
-    },
-    "existence_negation": {
-      "word": "dong·ja",
-      "english": "don't have / not there / absent",
-      "examples": [
-        {
-          "garo": "A·gimiko dong·ja",
-          "english": "I don't have time"
-        },
-        {
-          "garo": "Mi dong·ja",
-          "english": "There is no rice"
-        }
-      ]
-    }
+    "short": [
+      {
+        "garo": "cha·ja",
+        "english": "don't eat / not eating"
+      },
+      {
+        "garo": "ong·ja",
+        "english": "is not"
+      }
+    ],
+    "continuous": [],
+    "existence": []
   },
   "classifier_patterns": {
-    "animals_mang": {
-      "classifier": "mang",
-      "use_for": [
-        "animals",
-        "birds",
-        "fish",
-        "insects"
-      ],
-      "pattern": "[noun] mang-[number]",
-      "examples": [
-        {
-          "garo": "achak mang-sa",
-          "english": "one dog"
-        },
-        {
-          "garo": "achak mang-gni",
-          "english": "two dogs"
-        },
-        {
-          "garo": "do·o mang-gittam",
-          "english": "three birds"
-        },
-        {
-          "garo": "na·tok mang-bonga",
-          "english": "five fish"
-        }
-      ]
-    },
-    "people_sak": {
-      "classifier": "sak",
-      "use_for": [
-        "people",
-        "persons"
-      ],
-      "pattern": "[noun] sak-[number]",
-      "examples": [
-        {
-          "garo": "manderang sak-sa",
-          "english": "one person"
-        },
-        {
-          "garo": "skigipa sak-gni",
-          "english": "two teachers"
-        },
-        {
-          "garo": "bi·sa sak-gittam",
-          "english": "three children"
-        }
-      ]
-    },
-    "flat_objects_king": {
-      "classifier": "king",
-      "use_for": [
-        "books",
-        "paper",
-        "leaves",
-        "flat thin objects"
-      ],
-      "pattern": "[noun] king-[number]",
-      "examples": [
-        {
-          "garo": "ki·tap king-sa",
-          "english": "one book"
-        },
-        {
-          "garo": "lekka king-gni",
-          "english": "two papers"
-        },
-        {
-          "garo": "bijak king-gittam",
-          "english": "three leaves"
-        }
-      ]
-    },
-    "money_gong": {
-      "classifier": "gong",
-      "use_for": [
-        "money",
-        "coins",
-        "currency"
-      ],
-      "pattern": "[noun] gong-[number]",
-      "examples": [
-        {
-          "garo": "tangka gong-sa",
-          "english": "one coin"
-        },
-        {
-          "garo": "tangka gong-bonga",
-          "english": "five rupees"
-        }
-      ]
-    },
-    "general_ge": {
-      "classifier": "ge",
-      "use_for": [
-        "objects",
-        "tools",
-        "things",
-        "default"
-      ],
-      "pattern": "[noun] ge-[number]",
-      "examples": [
-        {
-          "garo": "chokki ge-sa",
-          "english": "one chair"
-        },
-        {
-          "garo": "kettal ge-gni",
-          "english": "two knives"
-        },
-        {
-          "garo": "te·gachu ge-bri",
-          "english": "four mangoes"
-        }
-      ]
-    }
+    "animals_mang": [
+      {
+        "english": "one dog",
+        "garo": "achak mang-sa",
+        "hindi": "एक कुत्ता"
+      },
+      {
+        "english": "two birds",
+        "garo": "do·o mang-gni",
+        "hindi": "दो पक्षी"
+      },
+      {
+        "english": "three fish",
+        "garo": "na·tok mang-gittam",
+        "hindi": "तीन मछलियाँ"
+      }
+    ],
+    "people_sak": [
+      {
+        "english": "one person",
+        "garo": "manderang sak-sa",
+        "hindi": "एक व्यक्ति"
+      },
+      {
+        "english": "two teachers",
+        "garo": "skigipa sak-gni",
+        "hindi": "दो शिक्षक"
+      }
+    ],
+    "flat_objects_king": [
+      {
+        "english": "one book",
+        "garo": "ki·tap king-sa",
+        "hindi": "एक किताब"
+      },
+      {
+        "english": "three leaves",
+        "garo": "bijak king-gittam",
+        "hindi": "तीन पत्ते"
+      }
+    ],
+    "money_gong": [
+      {
+        "english": "one coin",
+        "garo": "tangka gong-sa",
+        "hindi": "एक सिक्का"
+      },
+      {
+        "english": "five rupees",
+        "garo": "tangka gong-bonga",
+        "hindi": "पाँच रुपये"
+      }
+    ],
+    "general_ge": []
   },
   "common_responses": {
-    "yes": {
-      "garo": "Oe",
-      "english": "Yes",
-      "hindi": "हाँ",
-      "context": "affirmative"
-    },
-    "no": {
-      "garo": "Ong·ja",
-      "english": "No",
-      "hindi": "नहीं",
-      "context": "negative"
-    },
-    "i_know": {
-      "garo": "Anga uia",
-      "english": "I know",
-      "context": "knowledge"
-    },
-    "i_dont_know": {
-      "garo": "Anga u·ija",
-      "english": "I don't know",
-      "hindi": "मुझे नहीं पता",
-      "context": "knowledge"
-    },
-    "thank_you": {
-      "garo": "Mitela",
-      "english": "Thank you",
-      "hindi": "धन्यवाद",
-      "context": "politeness"
-    },
-    "sorry": {
-      "garo": "Kema-bi·a",
-      "english": "Sorry",
-      "context": "politeness"
-    },
-    "please": {
-      "garo": "Ka·sapae",
-      "english": "Please",
-      "hindi": "कृपया",
-      "context": "request"
-    },
-    "agreed": {
-      "garo": "Nama ong·a",
-      "english": "That is good / Agreed",
-      "context": "agreement"
-    },
-    "lets_go": {
-      "garo": "Hai re·ang·bo",
-      "english": "Let's go",
-      "context": "action"
-    },
-    "come_here": {
-      "garo": "Iano re·ba",
-      "english": "Come here",
-      "context": "direction"
-    }
+    "yes": [
+      {
+        "garo": "Na·a namengama?",
+        "english": "How are you?",
+        "hindi": "आप कैसे हैं?"
+      }
+    ],
+    "no": [],
+    "i_know": [],
+    "i_dont_know": [],
+    "thank_you": [
+      {
+        "garo": "Ka·sapae",
+        "english": "Please",
+        "hindi": "कृपया"
+      }
+    ],
+    "sorry": [],
+    "please": [],
+    "agreed": [],
+    "lets_go": [
+      {
+        "garo": "Anga uia",
+        "english": "I know",
+        "hindi": "मुझे पता है"
+      }
+    ],
+    "come_here": []
   }
 }
