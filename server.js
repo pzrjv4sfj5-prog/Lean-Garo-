@@ -21,7 +21,7 @@ const numberWords = {
   eighteen: 18, nineteen: 19, twenty: 20
 }
 
-const punctuationRegex = /[.,!?‘’'"“”:;()\[\]\/\-]/g
+const punctuationRegex = /[.,!?‘’'"—_“”:;()\[\]\/\-]/g
 const whitespaceRegex = /\s+/g
 const numberWordRegex = new RegExp(`\\b(${Object.keys(numberWords).join('|')})\\b`, 'gi')
 
@@ -78,6 +78,7 @@ function registerValidatedPair(englishCandidate, garoCandidate) {
   let finalEng = englishCandidate.trim();
   let finalGaro = garoCandidate.trim();
 
+  // Enforce rigid linguistic direction to keep Dictionary columns correct
   if (isGaroLinguisticMatch(finalEng) && !isGaroLinguisticMatch(finalGaro)) {
     let temp = finalEng;
     finalEng = finalGaro;
@@ -116,27 +117,29 @@ function buildSentence(normalized) {
   return [subject, ...objects, verb].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim()
 }
 
-function globalRootCrawler(obj) {
+function ultimateDataCrawler(obj) {
   if (!obj || typeof obj !== 'object') return;
 
   if (Array.isArray(obj)) {
-    obj.forEach(item => globalRootCrawler(item));
+    obj.forEach(item => ultimateDataCrawler(item));
     return;
   }
 
+  // Structural parsing route for items containing standardized attributes
   if (typeof obj.english === 'string' && typeof obj.garo === 'string') {
     registerValidatedPair(obj.english, obj.garo);
   }
 
+  // Deep scanning route across raw key-value blocks
   for (const key in obj) {
     if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      if (key.startsWith('_') || key === 'classifier_engine' || key === 'sources') continue;
+      if (key.startsWith('_') || key === 'sources') continue;
       const value = obj[key];
 
       if (typeof value === 'string' && isNaN(key) && !isGaroLinguisticMatch(key)) {
         registerValidatedPair(key, value);
       } else if (typeof value === 'object' && value !== null) {
-        globalRootCrawler(value);
+        ultimateDataCrawler(value);
       }
     }
   }
@@ -148,9 +151,10 @@ async function initializePlatform() {
     const rawData = await fs.readFile(dataPath, 'utf8')
     const db = JSON.parse(rawData)
 
-    globalRootCrawler(db)
-    
-    const convSource = db.vocabulary?.conversations || db.conversations;
+    // Run the unconstrained deep crawler through the entire data layout object
+    ultimateDataCrawler(db);
+
+    const convSource = db.vocabulary?.conversations || db.conversations || db.conversation_patterns;
     if (convSource && typeof convSource === 'object') {
       Object.keys(convSource).forEach(k => {
         const val = convSource[k];
