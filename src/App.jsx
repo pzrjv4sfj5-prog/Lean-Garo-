@@ -112,6 +112,9 @@ function App() {
                 <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                   A semantic translation platform for A&apos;chik Garo language, designed to preserve and promote the indigenous language of Meghalaya.
                 </p>
+                <p className={`text-sm mt-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                  Live site: <a href="https://lean-garo-translator.vercel.app" target="_blank" rel="noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">lean-garo-translator.vercel.app</a>
+                </p>
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Features</h3>

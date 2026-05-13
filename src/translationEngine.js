@@ -1,5 +1,5 @@
-import garoDictionary from '../garo_dictionary.json'
-import conversationPatterns from './data/dictionary/conversation_patterns.json'
+import garoDictionary from '../garo_dictionary.json' with { type: 'json' }
+import conversationPatterns from './data/dictionary/conversation_patterns.json' with { type: 'json' }
 import { countNoun } from './garo_classifier.js'
 
 const numberWords = {
@@ -191,6 +191,18 @@ class GaroTranslationEngine {
 
       "let's run":
         "Hai katha",
+
+      "let's go to the market":
+        "Hai bajal re·naha",
+
+      "let's go to market":
+        "Hai bajal re·naha",
+
+      "go to the market":
+        "Bajal re·naha",
+
+      "go to market":
+        "Bajal re·naha",
 
       'drink water':
         'Chi ringbo',
