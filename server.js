@@ -21,7 +21,7 @@ const numberWords = {
   eighteen: 18, nineteen: 19, twenty: 20
 }
 
-const punctuationRegex = /[.,!?‘’'"—_“”:;()\[\]\/\-]/g
+const punctuationRegex = /[.,!?‘’'"“”:;()/-]/g
 const whitespaceRegex = /\s+/g
 const numberWordRegex = new RegExp(`\\b(${Object.keys(numberWords).join('|')})\\b`, 'gi')
 
