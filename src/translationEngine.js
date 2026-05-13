@@ -382,60 +382,32 @@ class GaroTranslationEngine {
 
     try {
 
+      // Index vocabulary section
       const vocabularyRoot = this.dictionary?.vocabulary || {}
+      this.indexSection(vocabularyRoot, 'vocabulary')
 
-      const traverseNode = (node, currentPath = '') => {
-        if (!node || typeof node !== 'object' || Array.isArray(node)) {
-          return
+      // Index other sections that might contain vocabulary
+      const sectionsToIndex = [
+        'grammar_rules',
+        'suffix_system',
+        'classifiers',
+        'numbers',
+        'pronouns',
+        'possessive_pronouns',
+        'question_words',
+        'verbs_present',
+        'verb_conjugations',
+        'grammar_patterns',
+        'conversational_phrases',
+        'ambiguous_words'
+      ]
+
+      sectionsToIndex.forEach(sectionName => {
+        const section = this.dictionary?.[sectionName]
+        if (section) {
+          this.indexSection(section, sectionName)
         }
-
-        Object.entries(node).forEach(([key, value]) => {
-          if (!key || String(key).startsWith('_')) {
-            return
-          }
-
-          const categoryPath = currentPath
-            ? `${currentPath}.${key}`
-            : key
-
-          if (
-            value &&
-            typeof value === 'object' &&
-            !Array.isArray(value) &&
-            !('garo' in value || 'hindi' in value)
-          ) {
-            traverseNode(value, categoryPath)
-            return
-          }
-
-          let garoValue = ''
-          if (typeof value === 'object' && value !== null) {
-            garoValue = String(value.garo || '')
-          } else {
-            garoValue = String(value || '')
-          }
-
-          const english = String(key).toLowerCase().trim()
-          const garo = String(garoValue).toLowerCase().trim()
-
-          if (!english || !garo) {
-            return
-          }
-
-          this.englishToGaro[english] = garo
-          this.garoToEnglish[garo] = english
-          this.englishToCategory[english] = categoryPath
-          this.categoryForWord[english] = categoryPath
-          this.categoryIndex[categoryPath] = this.categoryIndex[categoryPath] || []
-          this.categoryIndex[categoryPath].push({
-            english,
-            garo,
-            category: categoryPath,
-          })
-        })
-      }
-
-      traverseNode(vocabularyRoot)
+      })
 
     } catch (error) {
 
@@ -444,6 +416,101 @@ class GaroTranslationEngine {
         error
       )
     }
+  }
+
+  indexSection(section, sectionName) {
+    const traverseNode = (node, currentPath = '') => {
+      if (!node || typeof node !== 'object') {
+        return
+      }
+
+      Object.entries(node).forEach(([key, value]) => {
+        if (!key || String(key).startsWith('_')) {
+          return
+        }
+
+        const categoryPath = currentPath
+          ? `${currentPath}.${key}`
+          : key
+
+        // Handle direct key-value pairs (English -> Garo)
+        if (typeof value === 'string') {
+          // This is a direct English -> Garo mapping
+          const english = String(key).toLowerCase().trim()
+          const garo = String(value).toLowerCase().trim()
+
+          // For vocabulary section, use subcategory names directly (remove 'vocabulary.' prefix)
+          const effectiveCategory = sectionName === 'vocabulary' && currentPath.startsWith('vocabulary.') 
+            ? currentPath.replace('vocabulary.', '') 
+            : (currentPath || sectionName)
+
+          if (english && garo && garo !== 'string') {
+            this.englishToGaro[english] = garo
+            this.garoToEnglish[garo] = english
+            this.englishToCategory[english] = effectiveCategory
+            this.categoryForWord[english] = effectiveCategory
+            this.categoryIndex[effectiveCategory] = this.categoryIndex[effectiveCategory] || []
+            this.categoryIndex[effectiveCategory].push({
+              english,
+              garo,
+              category: effectiveCategory,
+            })
+          }
+          return
+        }
+
+        // Handle objects with garo/hindi properties
+        if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+          if (value.garo || value.hindi) {
+            const english = String(key).toLowerCase().trim()
+            const garo = String(value.garo || '').toLowerCase().trim()
+
+            if (english && garo) {
+              this.englishToGaro[english] = garo
+              this.garoToEnglish[garo] = english
+              this.englishToCategory[english] = currentPath || sectionName
+              this.categoryForWord[english] = currentPath || sectionName
+              this.categoryIndex[currentPath || sectionName] = this.categoryIndex[currentPath || sectionName] || []
+              this.categoryIndex[currentPath || sectionName].push({
+                english,
+                garo,
+                category: currentPath || sectionName,
+              })
+            }
+            return
+          }
+
+          // Handle nested objects
+          traverseNode(value, categoryPath)
+          return
+        }
+
+        // Handle arrays (legacy format)
+        if (Array.isArray(value)) {
+          value.forEach(item => {
+            if (typeof item === 'object' && item.english && item.garo) {
+              const english = String(item.english).toLowerCase().trim()
+              const garo = String(item.garo).toLowerCase().trim()
+
+              if (english && garo) {
+                this.englishToGaro[english] = garo
+                this.garoToEnglish[garo] = english
+                this.englishToCategory[english] = currentPath || sectionName
+                this.categoryForWord[english] = currentPath || sectionName
+                this.categoryIndex[currentPath || sectionName] = this.categoryIndex[currentPath || sectionName] || []
+                this.categoryIndex[currentPath || sectionName].push({
+                  english,
+                  garo,
+                  category: currentPath || sectionName,
+                })
+              }
+            }
+          })
+        }
+      })
+    }
+
+    traverseNode(section, sectionName)
   }
 
   // =====================================================
@@ -931,6 +998,15 @@ class GaroTranslationEngine {
         .map((word) => this.parseNumberWord(word))
         .filter((value) => value !== null)
 
+      // Try Gemini analysis if available
+      let geminiAnalysis = null
+      try {
+        const { analyzeSentence } = await import('./gemini.js')
+        geminiAnalysis = await analyzeSentence(text)
+      } catch (geminiError) {
+        console.warn('Gemini analysis failed:', geminiError.message)
+      }
+
       return {
 
         original: text,
@@ -957,7 +1033,7 @@ class GaroTranslationEngine {
         translation:
           this.translate(text),
 
-        gemini: null,
+        gemini: geminiAnalysis,
 
         morphology: [],
 
