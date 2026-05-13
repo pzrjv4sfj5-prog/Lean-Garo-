@@ -12,10 +12,6 @@ const port = process.env.PORT || 3001
 let englishToGaro = {}
 let garoToEnglish = {}
 let phraseMap = {}
-let classifierMap = {}
-let categoryIndex = {}
-let classifierSuffixMap = {}
-let suffixSystem = {}
 let exactConversationMap = {}
 let indexedEntryCount = 0
 
@@ -72,78 +68,64 @@ function normalizeText(value) {
 
 function normalizeKey(value) { return normalizeText(value) }
 
-function singularizeWord(value) {
-  if (typeof value !== 'string') return ''
-  const normalized = value.toLowerCase().trim()
-  if (englishToGaro[normalized] || pronouns[normalized]) return normalized
-  if (normalized.endsWith('ies')) return normalized.slice(0, -3) + 'y'
-  if (normalized.endsWith('s')) return normalized.slice(0, -1)
-  return normalized
-}
-
-function detectVerb(word) { return verbs[word.toLowerCase().trim()] || null }
-
-function detectTense(words = []) {
-  const normalized = words.map(String).join(' ').toLowerCase()
-  if (words.includes('am') || words.includes('is') || words.includes('are')) return 'present_continuous'
-  if (words.includes('was') || words.includes('were') || words.includes('did')) return 'past'
-  if (words.includes('will') || words.includes('shall') || normalized.includes('going to')) return 'future'
-  return 'unknown'
-}
-
-function buildVerb(root, tense = 'unknown') {
-  if (!root) return ''
-  switch (tense) {
-    case 'present_continuous': return `${root}enga`
-    case 'past': return `${root}aha`
-    case 'future': return `${root}gen`
-    default: return `${root}enga`
-  }
+function registerPhrase(eng, garo) {
+  const k = normalizeKey(eng)
+  if (k && k.includes(' ') && !phraseMap[k]) { phraseMap[k] = garo.trim() }
 }
 
 function buildSentence(normalized) {
   const words = normalized.split(' ').filter(Boolean)
   if (!words.length) return ''
-  const tense = detectTense(words)
   let subject = '', verb = ''
   const objects = []
 
   for (const token of words) {
     if (helperWords.has(token)) continue
     if (!subject && pronouns[token]) { subject = pronouns[token]; continue }
-    const verbRoot = detectVerb(token)
-    if (verbRoot) { verb = buildVerb(verbRoot, tense); continue }
+    if (verbs[token]) { verb = verbs[token] + 'enga'; continue }
     if (englishToGaro[token]) { objects.push(englishToGaro[token]); continue }
     objects.push(token)
   }
   return [subject, ...objects, verb].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim()
 }
 
-function registerPhrase(eng, garo) {
-  const k = normalizeKey(eng)
-  if (k && k.includes(' ') && !phraseMap[k]) { phraseMap[k] = garo.trim() }
-}
-
 function indexEnglishGaroPairs(node) {
   if (!node || typeof node !== 'object') return
+  
   if (Array.isArray(node)) {
-    node.forEach((value) => indexEnglishGaroPairs(value))
+    node.forEach((value) => {
+      if (value && typeof value === 'object' && value.english && value.garo) {
+        const k = normalizeKey(value.english)
+        const v = value.garo.trim()
+        if (k && v && !englishToGaro[k]) {
+          englishToGaro[k] = v
+          garoToEnglish[normalizeKey(v)] = k
+          indexedEntryCount += 1
+          registerPhrase(value.english, value.garo)
+        }
+      } else {
+        indexEnglishGaroPairs(value)
+      }
+    })
     return
   }
-  if (typeof node.english === 'string' && typeof node.garo === 'string') {
-    const englishKey = normalizeKey(node.english)
-    const garoValue = node.garo.trim()
-    if (englishKey && garoValue) {
-      if (!englishToGaro[englishKey]) {
+
+  Object.keys(node).forEach((key) => {
+    if (key.startsWith('_')) return
+    const value = node[key]
+    
+    if (typeof value === 'string') {
+      const englishKey = normalizeKey(key)
+      const garoValue = value.trim()
+      if (englishKey && garoValue && !englishToGaro[englishKey]) {
         englishToGaro[englishKey] = garoValue
         garoToEnglish[normalizeKey(garoValue)] = englishKey
         indexedEntryCount += 1
+        registerPhrase(key, value)
       }
-      registerPhrase(node.english, node.garo)
+    } else if (typeof value === 'object' && value !== null) {
+      indexEnglishGaroPairs(value)
     }
-  }
-  Object.values(node).forEach((value) => {
-    if (typeof value === 'object' && value !== null) indexEnglishGaroPairs(value)
   })
 }
 
