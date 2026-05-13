@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "lean-garo",
+  "name": "lean-garo-translator",
   "builds": [
     {
       "src": "package.json",
@@ -8,6 +8,9 @@
     }
   ],
   "outputDirectory": "dist",
+  "env": {
+    "VITE_GEMINI_API_KEY": "@vite_gemini_api_key"
+  },
   "routes": [
     {
       "handle": "filesystem"
@@ -18,3 +21,4 @@
     }
   ]
 }
+

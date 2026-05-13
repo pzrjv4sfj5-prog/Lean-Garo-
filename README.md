@@ -175,6 +175,8 @@ npm install -g vercel
 vercel
 ```
 
+> If you use a Gemini AI fallback, add `VITE_GEMINI_API_KEY` in your Vercel project settings or via the dashboard.
+
 ### Netlify
 ```bash
 npm install -g netlify-cli

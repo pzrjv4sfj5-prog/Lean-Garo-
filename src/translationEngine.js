@@ -1,5 +1,5 @@
-import garoDictionary from '../garo_dictionary.json' assert { type: 'json' }
-import conversationPatterns from './data/dictionary/conversation_patterns.json' assert { type: 'json' }
+import garoDictionary from '../garo_dictionary.json'
+import conversationPatterns from './data/dictionary/conversation_patterns.json'
 import { countNoun } from './garo_classifier.js'
 
 const numberWords = {
