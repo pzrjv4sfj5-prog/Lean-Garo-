@@ -42,9 +42,88 @@ const numberWords = {
   twenty: 20
 }
 
-const punctuationRegex = /[.?!]/g
+const punctuationRegex = /[.,!?‘’'"“”:;()\[\]\/\-]/g
 const whitespaceRegex = /\s+/g
 const numberWordRegex = new RegExp(`\\b(${Object.keys(numberWords).join('|')})\\b`, 'gi')
+
+const pronouns = {
+  i: 'Anga',
+  me: 'Angko',
+  you: 'Na·a',
+  he: 'Ua',
+  she: 'Ua',
+  we: 'An·ching',
+  they: 'Bisong',
+  my: 'Angni',
+  your: 'Nangni',
+  our: 'An·chingni',
+}
+
+const helperWords = new Set([
+  'am', 'is', 'are', 'was', 'were', 'have', 'has', 'had',
+  'the', 'a', 'an', 'to', 'be', 'will', 'shall', 'do', 'does', 'did',
+  'going', 'about', 'let', 'lets', 'dont', 'not', 'please', 'can', 'could'
+])
+
+const verbs = {
+  eat: 'cha·',
+  drink: 'ring',
+  go: 're·ang',
+  come: 're·ba',
+  sleep: 'tusi',
+  sit: 'asong',
+  run: 'kat',
+  walk: 'song',
+  read: 'porai',
+  write: 'se·',
+  work: 'dak',
+  speak: 'agan',
+  play: 'kal',
+  wash: 'rong',
+  see: 'ni',
+  help: 'dakchak',
+  buy: 'bre',
+  sell: 'pal',
+  cook: 'soa',
+  learn: 'skie',
+  teach: 'skia',
+}
+
+const commonPhraseMap = {
+  hello: 'Salam',
+  hi: 'Salam',
+  'good morning': 'Pringnam',
+  'good evening': 'Attamnam',
+  'good night': 'Walnam',
+  'thank you': 'Mitela.',
+  thanks: 'Mitela.',
+  'how are you': 'Na·a namengama?',
+  'i love you': 'Anga nang·na ka·sa',
+  'i don\'t know': 'Anga uija.',
+  "i don't know": 'Anga uija.',
+  "let's go": 'Hai re·naha',
+  "let's eat": 'Hai cha·ha',
+  "let's sleep": 'Hai tusina',
+  "let's drink": 'Hai ringaha',
+  "let's sit": 'Hai asongha',
+  "let's play": 'Hai kalha',
+  "let's work": 'Hai dakha',
+  "let's run": 'Hai katha',
+  'eat rice': 'Mi cha·bo',
+  'drink water': 'Chi ringbo',
+  'drink tea': 'Cha ringbo',
+  'i am eating rice': 'Anga mi cha·enga',
+  'i am drinking water': 'Anga chi ringenga',
+  'i am eating': 'Anga cha·enga',
+  'i am drinking': 'Anga ringenga',
+  'i am sleeping': 'Anga tusienga',
+  'i am sitting': 'Anga asongenga',
+  'i am running': 'Anga katenga',
+  'i am going': 'Anga re·angenga',
+  'i am coming': 'Anga re·baenga',
+  'you are eating': 'Na·a cha·enga',
+  'you are eating rice': 'Na·a mi cha·enga',
+}
 
 function normalizeText(value) {
   if (typeof value !== 'string') {
@@ -59,6 +138,128 @@ function normalizeText(value) {
 
 function normalizeKey(value) {
   return normalizeText(value)
+}
+
+function singularizeWord(value) {
+  if (typeof value !== 'string') {
+    return ''
+  }
+
+  const normalized = value.toLowerCase().trim()
+
+  if (englishToGaro[normalized] || pronouns[normalized]) {
+    return normalized
+  }
+
+  if (normalized.endsWith('ies')) {
+    return normalized.slice(0, -3) + 'y'
+  }
+
+  if (normalized.endsWith('oes') || normalized.endsWith('ses') || normalized.endsWith('xes') || normalized.endsWith('zes') || normalized.endsWith('ches') || normalized.endsWith('shes')) {
+    return normalized.slice(0, -2)
+  }
+
+  if (normalized.endsWith('es')) {
+    return normalized.slice(0, -2)
+  }
+
+  if (normalized.endsWith('s')) {
+    return normalized.slice(0, -1)
+  }
+
+  return normalized
+}
+
+function detectVerb(word) {
+  if (typeof word !== 'string') {
+    return null
+  }
+
+  return verbs[word.toLowerCase().trim()] || null
+}
+
+function detectTense(words = []) {
+  if (!Array.isArray(words)) {
+    return 'unknown'
+  }
+
+  const normalized = words.map(String).join(' ').toLowerCase()
+
+  if (words.includes('am') || words.includes('is') || words.includes('are')) {
+    return 'present_continuous'
+  }
+
+  if (words.includes('was') || words.includes('were') || words.includes('did') || words.includes('ate') || words.includes('went') || words.includes('came')) {
+    return 'past'
+  }
+
+  if (words.includes('will') || words.includes('shall') || normalized.includes('going to')) {
+    return 'future'
+  }
+
+  return 'unknown'
+}
+
+function buildVerb(root, tense = 'unknown') {
+  if (!root) return ''
+
+  switch (tense) {
+    case 'present_continuous':
+      return `${root}enga`
+    case 'past':
+      return `${root}aha`
+    case 'future':
+      return `${root}gen`
+    default:
+      return `${root}enga`
+  }
+}
+
+function buildSentence(normalized) {
+  const words = normalized.split(' ').filter(Boolean)
+  if (!words.length) {
+    return ''
+  }
+
+  const tense = detectTense(words)
+  let subject = ''
+  let verb = ''
+  const objects = []
+
+  for (const token of words) {
+    if (helperWords.has(token)) {
+      continue
+    }
+
+    if (!subject && pronouns[token]) {
+      subject = pronouns[token]
+      continue
+    }
+
+    const verbRoot = detectVerb(token)
+    if (verbRoot) {
+      verb = buildVerb(verbRoot, tense)
+      continue
+    }
+
+    if (englishToGaro[token]) {
+      objects.push(englishToGaro[token])
+      continue
+    }
+
+    if (pronouns[token]) {
+      objects.push(pronouns[token])
+      continue
+    }
+
+    objects.push(token)
+  }
+
+  return [subject, ...objects, verb]
+    .filter(Boolean)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 function isLikelyGaro(value) {
@@ -95,6 +296,37 @@ function repairMalformedPair(englishCandidate, garoCandidate) {
   }
 
   return [normalizeKey(englishCandidate), garoCandidate.trim()]
+}
+
+function indexEnglishGaroPairs(node) {
+  if (!node || typeof node !== 'object') {
+    return
+  }
+
+  if (Array.isArray(node)) {
+    node.forEach((value) => indexEnglishGaroPairs(value))
+    return
+  }
+
+  if (typeof node.english === 'string' && typeof node.garo === 'string') {
+    const englishKey = normalizeKey(node.english)
+    const garoValue = node.garo.trim()
+
+    if (englishKey && garoValue) {
+      if (!englishToGaro[englishKey]) {
+        englishToGaro[englishKey] = garoValue
+        garoToEnglish[normalizeKey(garoValue)] = englishKey
+        indexedEntryCount += 1
+      }
+      registerPhrase(node.english, node.garo)
+    }
+  }
+
+  Object.values(node).forEach((value) => {
+    if (typeof value === 'object' && value !== null) {
+      indexEnglishGaroPairs(value)
+    }
+  })
 }
 
 function buildClassifierSuffixMap(definitions, patterns) {
@@ -156,9 +388,39 @@ function registerPhrase(english, garo, map = phraseMap, exactMap = exactConversa
 }
 
 function indexVocabulary(node, category = null, categoryClassifier = null) {
+  if (!node || typeof node !== 'object') {
+    return
+  }
+
   const classifierForCategory = typeof node === 'object' && node !== null && typeof node._classifier === 'string'
     ? node._classifier
     : categoryClassifier
+
+  if (Array.isArray(node)) {
+    node.forEach((item) => indexVocabulary(item, category, classifierForCategory))
+    return
+  }
+
+  if (typeof node.english === 'string' && typeof node.garo === 'string') {
+    const [englishKey, garoValue] = repairMalformedPair(node.english, node.garo)
+    if (englishKey && garoValue) {
+      englishToGaro[englishKey] = garoValue
+      garoToEnglish[normalizeKey(garoValue)] = englishKey
+      phraseMap[englishKey] = garoValue
+
+      if (category) {
+        categoryIndex[category] = categoryIndex[category] || { classifier: classifierForCategory || null, words: [] }
+        categoryIndex[category].words.push(englishKey)
+      }
+
+      if (classifierForCategory) {
+        classifierMap[englishKey] = classifierForCategory
+      }
+
+      indexedEntryCount += 1
+    }
+    return
+  }
 
   if (category && !categoryIndex[category]) {
     categoryIndex[category] = {
@@ -173,6 +435,29 @@ function indexVocabulary(node, category = null, categoryClassifier = null) {
     }
 
     if (value && typeof value === 'object') {
+      if (!Array.isArray(value) && typeof value.garo === 'string') {
+        const [englishKey, garoValue] = repairMalformedPair(key, value.garo)
+        if (!englishKey || !garoValue) {
+          return
+        }
+
+        englishToGaro[englishKey] = garoValue
+        garoToEnglish[normalizeKey(garoValue)] = englishKey
+        phraseMap[englishKey] = garoValue
+
+        if (category) {
+          categoryIndex[category] = categoryIndex[category] || { classifier: classifierForCategory || null, words: [] }
+          categoryIndex[category].words.push(englishKey)
+        }
+
+        if (classifierForCategory) {
+          classifierMap[englishKey] = classifierForCategory
+        }
+
+        indexedEntryCount += 1
+        return
+      }
+
       indexVocabulary(value, key, classifierForCategory)
       return
     }
@@ -216,6 +501,8 @@ function loadConversationPatterns(patterns) {
       group.forEach((item) => {
         if (item && typeof item === 'object' && item.english && item.garo) {
           registerPhrase(item.english, item.garo)
+          const normalizedEnglish = normalizeKey(item.english)
+          englishToGaro[normalizedEnglish] = item.garo.trim()
         }
       })
     })
@@ -300,8 +587,7 @@ function buildClassifierTranslation(input) {
   }
 
   let quantity = null
-  let noun = null
-  let nounTokens = []
+  const nounTokens = []
 
   for (const token of words) {
     if (numberWords[token] !== undefined || /^\d+$/.test(token)) {
@@ -317,13 +603,14 @@ function buildClassifierTranslation(input) {
     return null
   }
 
-  noun = nounTokens.join(' ')
-  const nounGaro = englishToGaro[noun]
+  const rawNoun = nounTokens.join(' ')
+  const nounKey = englishToGaro[rawNoun] ? rawNoun : singularizeWord(rawNoun)
+  const nounGaro = englishToGaro[nounKey]
   if (!nounGaro) {
     return null
   }
 
-  const classifier = findClassifier(noun) || findClassifier(noun.replace(/s$/, ''))
+  const classifier = findClassifier(nounKey) || findClassifier(singularizeWord(nounKey)) || 'ge'
   if (!classifier || !classifierSuffixMap[classifier]) {
     return null
   }
@@ -380,6 +667,20 @@ async function translateText(input) {
     }
   }
 
+  const hasVerb = normalized
+    .split(' ')
+    .some((token) => detectVerb(token))
+
+  if (hasVerb) {
+    const sentenceTranslation = buildSentence(normalized)
+    if (sentenceTranslation && sentenceTranslation !== normalized) {
+      return {
+        translatedText: sentenceTranslation,
+        source: 'sentence_structure'
+      }
+    }
+  }
+
   const wordTranslation = translateByPhraseAndWords(normalized)
   if (wordTranslation && wordTranslation !== normalized) {
     return {
@@ -421,7 +722,10 @@ async function initializeIndex() {
 
   if (dictionary.classifier_engine) {
     classifierSuffixMap = buildClassifierSuffixMap(dictionary.classifier_engine, [])
+    indexEnglishGaroPairs(dictionary.classifier_engine)
   }
+
+  indexEnglishGaroPairs(conversationPatterns)
 
   if (conversationPatterns.classifier_patterns) {
     Object.values(conversationPatterns.classifier_patterns).forEach((examples) => {
@@ -438,11 +742,21 @@ async function initializeIndex() {
     suffixSystem = dictionary.suffix_system
   }
 
-  if (dictionary.vocabulary && typeof dictionary.vocabulary === 'object') {
-    indexVocabulary(dictionary.vocabulary)
-  }
+  indexVocabulary(dictionary)
 
   loadConversationPatterns(conversationPatterns)
+
+  Object.entries(pronouns).forEach(([english, garo]) => {
+    if (!english || !garo) return
+    englishToGaro[english] = garo
+    garoToEnglish[normalizeKey(garo)] = english
+    registerPhrase(english, garo)
+  })
+
+  Object.entries(commonPhraseMap).forEach(([english, garo]) => {
+    if (!english || !garo) return
+    registerPhrase(english, garo)
+  })
 
   console.log('Successfully indexed 6000+ master entries!')
   console.log(`Indexed entries: ${indexedEntryCount}`)

@@ -123,7 +123,7 @@ export default function Dictionary() {
               <option value="">All Categories</option>
               {categories.map((cat) => (
                 <option key={cat} value={cat}>
-                  {categoryEmojis[cat] || '📋'} {cat.replace(/_/g, ' ')}
+                  {categoryEmojis[cat] || '📋'} {cat.replace(/[._]/g, ' ')}
                 </option>
               ))}
             </select>
@@ -178,7 +178,7 @@ export default function Dictionary() {
                     </td>
                     <td className="py-4 px-4">
                       <span className="inline-block px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-sm text-gray-700 dark:text-gray-300">
-                        {categoryEmojis[item.category] || '📋'} {item.category.replace(/_/g, ' ')}
+                        {categoryEmojis[item.category] || '📋'} {item.category.replace(/[._]/g, ' ')}
                       </span>
                     </td>
                   </tr>

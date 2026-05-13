@@ -1,7 +1,31 @@
-import garoDictionary from '../garo_dictionary.json'
-import conversationPatterns from './data/dictionary/conversation_patterns.json'
+import garoDictionary from '../garo_dictionary.json' assert { type: 'json' }
+import conversationPatterns from './data/dictionary/conversation_patterns.json' assert { type: 'json' }
 import { countNoun } from './garo_classifier.js'
-import { analyzeSentence } from './gemini.js'
+
+const numberWords = {
+  one: 1,
+  two: 2,
+  three: 3,
+  four: 4,
+  five: 5,
+  six: 6,
+  seven: 7,
+  eight: 8,
+  nine: 9,
+  ten: 10,
+  eleven: 11,
+  twelve: 12,
+  thirteen: 13,
+  fourteen: 14,
+  fifteen: 15,
+  sixteen: 16,
+  seventeen: 17,
+  eighteen: 18,
+  nineteen: 19,
+  twenty: 20,
+}
+
+const numberWordRegex = new RegExp(`\\b(${Object.keys(numberWords).join('|')})\\b`, 'gi')
 
 class GaroTranslationEngine {
 
@@ -15,6 +39,8 @@ class GaroTranslationEngine {
 
     this.englishToGaro = {}
     this.garoToEnglish = {}
+    this.categoryForWord = {}
+    this.categoryIndex = {}
 
     // =====================================================
     // PRONOUNS
@@ -344,51 +370,41 @@ class GaroTranslationEngine {
 
     try {
 
-      Object.keys(this.dictionary).forEach(category => {
+      const vocabularyRoot = this.dictionary?.vocabulary || {}
 
-        const section = this.dictionary[category]
-
-        if (
-          !section ||
-          typeof section !== 'object' ||
-          Array.isArray(section)
-        ) {
+      const traverseNode = (node, currentPath = '') => {
+        if (!node || typeof node !== 'object' || Array.isArray(node)) {
           return
         }
 
-        Object.entries(section).forEach(([engKey, value]) => {
+        Object.entries(node).forEach(([key, value]) => {
+          if (!key || String(key).startsWith('_')) {
+            return
+          }
 
-          if (!engKey) return
+          const categoryPath = currentPath
+            ? `${currentPath}.${key}`
+            : key
 
-          if (String(engKey).startsWith('_')) {
+          if (
+            value &&
+            typeof value === 'object' &&
+            !Array.isArray(value) &&
+            !('garo' in value || 'hindi' in value)
+          ) {
+            traverseNode(value, categoryPath)
             return
           }
 
           let garoValue = ''
-
-          if (
-            typeof value === 'object' &&
-            value !== null
-          ) {
-
-            garoValue =
-              value.garo || ''
-
+          if (typeof value === 'object' && value !== null) {
+            garoValue = String(value.garo || '')
           } else {
-
-            garoValue =
-              String(value || '')
+            garoValue = String(value || '')
           }
 
-          const english =
-            String(engKey)
-              .toLowerCase()
-              .trim()
-
-          const garo =
-            String(garoValue)
-              .toLowerCase()
-              .trim()
+          const english = String(key).toLowerCase().trim()
+          const garo = String(garoValue).toLowerCase().trim()
 
           if (!english || !garo) {
             return
@@ -396,9 +412,18 @@ class GaroTranslationEngine {
 
           this.englishToGaro[english] = garo
           this.garoToEnglish[garo] = english
-          this.englishToCategory[english] = category
+          this.englishToCategory[english] = categoryPath
+          this.categoryForWord[english] = categoryPath
+          this.categoryIndex[categoryPath] = this.categoryIndex[categoryPath] || []
+          this.categoryIndex[categoryPath].push({
+            english,
+            garo,
+            category: categoryPath,
+          })
         })
-      })
+      }
+
+      traverseNode(vocabularyRoot)
 
     } catch (error) {
 
@@ -481,6 +506,7 @@ class GaroTranslationEngine {
       .normalize('NFKC')
       .toLowerCase()
       .replace(/[.,!?‘’']/g, '')
+      .replace(numberWordRegex, (match) => String(numberWords[match.toLowerCase()] || match))
       .replace(/\s+/g, ' ')
       .trim()
   }
@@ -889,8 +915,9 @@ class GaroTranslationEngine {
       const words =
         this.tokenize(text)
 
-      // Use Gemini for advanced analysis
-      const geminiAnalysis = await analyzeSentence(text)
+      const quantities = words
+        .map((word) => this.parseNumberWord(word))
+        .filter((value) => value !== null)
 
       return {
 
@@ -902,10 +929,10 @@ class GaroTranslationEngine {
 
         words,
 
-        tense: geminiAnalysis.tense || this.detectTense(words),
+        tense: this.detectTense(words),
 
         isQuestion:
-          normalized.includes('?') ||
+          normalized.endsWith('?') ||
           normalized.startsWith('what') ||
           normalized.startsWith('where') ||
           normalized.startsWith('how') ||
@@ -918,13 +945,13 @@ class GaroTranslationEngine {
         translation:
           this.translate(text),
 
-        gemini: geminiAnalysis,
+        gemini: null,
 
         morphology: [],
 
-        numbers: geminiAnalysis.quantity ? [geminiAnalysis.quantity] : [],
+        numbers: quantities,
 
-        classifiers: geminiAnalysis.counting ? ['detected'] : [],
+        classifiers: quantities.length > 0 ? ['detected'] : [],
       }
 
     } catch (error) {
@@ -972,21 +999,20 @@ class GaroTranslationEngine {
     const q =
       this.normalize(query)
 
-    return Object.keys(
-      this.englishToGaro
-    )
+    if (!q) return []
 
-      .filter(word =>
-        word.includes(q)
+    const englishMatches = Object.entries(this.englishToGaro)
+      .filter(([word, garo]) =>
+        word.includes(q) ||
+        String(garo).toLowerCase().includes(q)
       )
-
-      .map(word => ({
-
+      .map(([word]) => ({
         english: word,
-
-        garo:
-          this.englishToGaro[word],
+        garo: this.englishToGaro[word],
+        category: this.categoryForWord[word] || 'vocabulary',
       }))
+
+    return englishMatches
   }
 
   // =====================================================
@@ -995,9 +1021,7 @@ class GaroTranslationEngine {
 
   getAllCategories() {
 
-    return Object.keys(
-      this.dictionary || {}
-    )
+    return Object.keys(this.categoryIndex)
   }
 
   // =====================================================
@@ -1005,72 +1029,19 @@ class GaroTranslationEngine {
   // =====================================================
 
   getCategoryVocabulary(category) {
-
-    try {
-
-      const section =
-        this.dictionary?.[category]
-
-      if (
-        !section ||
-        typeof section !== 'object' ||
-        Array.isArray(section)
-      ) {
-        return []
-      }
-
-      const result =
-        Object.entries(section)
-
-          .filter(([key]) =>
-            key &&
-            !String(key).startsWith('_')
-          )
-
-          .map(([english, value]) => {
-
-            let garo = ''
-
-            if (
-              typeof value === 'object' &&
-              value !== null
-            ) {
-
-              garo =
-                value.garo || ''
-
-            } else {
-
-              garo =
-                String(value || '')
-            }
-
-            return {
-
-              english:
-                String(english),
-
-              garo:
-                String(garo),
-
-              category:
-                String(category),
-            }
-          })
-
-      return Array.isArray(result)
-        ? result
-        : []
-
-    } catch (error) {
-
-      console.error(
-        'Category load failed:',
-        error
-      )
-
+    if (!category || !this.categoryIndex) {
       return []
     }
+
+    if (this.categoryIndex[category]) {
+      return this.categoryIndex[category]
+    }
+
+    const normalized = String(category).toLowerCase().trim()
+
+    return Object.entries(this.categoryIndex)
+      .filter(([key]) => key.toLowerCase() === normalized)
+      .flatMap(([, entries]) => entries)
   }
 }
 
