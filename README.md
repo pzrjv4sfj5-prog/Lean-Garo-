@@ -175,6 +175,8 @@ npm install -g vercel
 vercel
 ```
 
+Live deployment: https://lean-garo-translator.vercel.app
+
 > If you use a Gemini AI fallback, add `VITE_GEMINI_API_KEY` in your Vercel project settings or via the dashboard.
 
 ### Netlify
