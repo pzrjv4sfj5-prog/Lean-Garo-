@@ -68,9 +68,36 @@ function normalizeText(value) {
 
 function normalizeKey(value) { return normalizeText(value) }
 
-function registerPhrase(eng, garo) {
-  const k = normalizeKey(eng)
-  if (k && k.includes(' ') && !phraseMap[k]) { phraseMap[k] = garo.trim() }
+function isGaroLinguisticMatch(str) {
+  if (/[·]/.test(str)) return true;
+  if (/\b(gittam|mang|sak|gong|king|ge|na\b|bo\b|engma|gni|sa|ko\b|ni\b|ha\b|ma\b)\b/i.test(str)) return true;
+  return false;
+}
+
+function registerValidatedPair(englishCandidate, garoCandidate) {
+  let finalEng = englishCandidate.trim();
+  let finalGaro = garoCandidate.trim();
+
+  if (isGaroLinguisticMatch(finalEng) && !isGaroLinguisticMatch(finalGaro)) {
+    let temp = finalEng;
+    finalEng = finalGaro;
+    finalGaro = temp;
+  }
+
+  const normalizedEngKey = normalizeKey(finalEng);
+  const normalizedGaroKey = normalizeKey(finalGaro);
+
+  if (normalizedEngKey && finalGaro) {
+    if (!englishToGaro[normalizedEngKey]) {
+      englishToGaro[normalizedEngKey] = finalGaro;
+      garoToEnglish[normalizedGaroKey] = normalizedEngKey;
+      indexedEntryCount += 1;
+
+      if (normalizedEngKey.includes(' ')) {
+        phraseMap[normalizedEngKey] = finalGaro;
+      }
+    }
+  }
 }
 
 function buildSentence(normalized) {
@@ -89,44 +116,30 @@ function buildSentence(normalized) {
   return [subject, ...objects, verb].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim()
 }
 
-function indexEnglishGaroPairs(node) {
-  if (!node || typeof node !== 'object') return
-  
-  if (Array.isArray(node)) {
-    node.forEach((value) => {
-      if (value && typeof value === 'object' && value.english && value.garo) {
-        const k = normalizeKey(value.english)
-        const v = value.garo.trim()
-        if (k && v && !englishToGaro[k]) {
-          englishToGaro[k] = v
-          garoToEnglish[normalizeKey(v)] = k
-          indexedEntryCount += 1
-          registerPhrase(value.english, value.garo)
-        }
-      } else {
-        indexEnglishGaroPairs(value)
-      }
-    })
-    return
+function globalRootCrawler(obj) {
+  if (!obj || typeof obj !== 'object') return;
+
+  if (Array.isArray(obj)) {
+    obj.forEach(item => globalRootCrawler(item));
+    return;
   }
 
-  Object.keys(node).forEach((key) => {
-    if (key.startsWith('_')) return
-    const value = node[key]
-    
-    if (typeof value === 'string') {
-      const englishKey = normalizeKey(key)
-      const garoValue = value.trim()
-      if (englishKey && garoValue && !englishToGaro[englishKey]) {
-        englishToGaro[englishKey] = garoValue
-        garoToEnglish[normalizeKey(garoValue)] = englishKey
-        indexedEntryCount += 1
-        registerPhrase(key, value)
+  if (typeof obj.english === 'string' && typeof obj.garo === 'string') {
+    registerValidatedPair(obj.english, obj.garo);
+  }
+
+  for (const key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      if (key.startsWith('_') || key === 'classifier_engine' || key === 'sources') continue;
+      const value = obj[key];
+
+      if (typeof value === 'string' && isNaN(key) && !isGaroLinguisticMatch(key)) {
+        registerValidatedPair(key, value);
+      } else if (typeof value === 'object' && value !== null) {
+        globalRootCrawler(value);
       }
-    } else if (typeof value === 'object' && value !== null) {
-      indexEnglishGaroPairs(value)
     }
-  })
+  }
 }
 
 async function initializePlatform() {
@@ -135,13 +148,16 @@ async function initializePlatform() {
     const rawData = await fs.readFile(dataPath, 'utf8')
     const db = JSON.parse(rawData)
 
-    indexEnglishGaroPairs(db.vocabulary || db)
+    globalRootCrawler(db)
     
-    if (db.vocabulary && db.vocabulary.conversations) {
-      Object.keys(db.vocabulary.conversations).forEach(k => {
-        exactConversationMap[normalizeKey(k)] = db.vocabulary.conversations[k]
-      })
+    const convSource = db.vocabulary?.conversations || db.conversations;
+    if (convSource && typeof convSource === 'object') {
+      Object.keys(convSource).forEach(k => {
+        const val = convSource[k];
+        if (typeof val === 'string') exactConversationMap[normalizeKey(k)] = val.trim();
+      });
     }
+
     console.log("📚 Garo Language Platform ready!")
     console.log(`Successfully indexed ${indexedEntryCount} master entries!`)
   } catch (err) {
@@ -151,6 +167,10 @@ async function initializePlatform() {
 
 app.use(express.json())
 app.use(express.static(path.join(__dirname, 'dist')))
+
+app.get('/api/dictionary', (req, res) => {
+  res.json({ englishToGaro, garoToEnglish, total: indexedEntryCount });
+});
 
 app.post('/api/translate', async (req, res) => {
   try {
