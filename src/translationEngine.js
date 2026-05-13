@@ -382,7 +382,50 @@ class GaroTranslationEngine {
 
     try {
 
-      // Index vocabulary section
+      // Handle new array format (flat list of entries)
+      if (Array.isArray(this.dictionary)) {
+        console.log(`Indexing ${this.dictionary.length} dictionary entries...`)
+        this.dictionary.forEach((entry, index) => {
+          if (entry && typeof entry === 'object' && entry.english && entry.garo) {
+            const english = String(entry.english).toLowerCase().trim()
+            const garo = String(entry.garo).toLowerCase().trim()
+
+            if (english && garo) {
+              this.englishToGaro[english] = garo
+              this.garoToEnglish[garo] = english
+
+              // Try to infer category from english text
+              let category = 'general'
+              if (english.includes('fruit') || english.includes('apple') || english.includes('banana')) {
+                category = 'fruits'
+              } else if (english.includes('animal') || english.includes('dog') || english.includes('cat')) {
+                category = 'animals'
+              } else if (english.includes('color') || english.includes('red') || english.includes('blue')) {
+                category = 'colors'
+              } else if (english.includes('number') || english.match(/\b(one|two|three|four|five|six|seven|eight|nine|ten)\b/)) {
+                category = 'numbers'
+              } else if (english.includes('verb') || english.match(/\b(go|come|eat|drink|see|hear|run|walk)\b/)) {
+                category = 'verbs'
+              } else if (english.includes('question') || english.match(/\b(what|where|when|why|how|who)\b/)) {
+                category = 'questions'
+              }
+
+              this.englishToCategory[english] = category
+              this.categoryForWord[english] = category
+              this.categoryIndex[category] = this.categoryIndex[category] || []
+              this.categoryIndex[category].push({
+                english,
+                garo,
+                category,
+              })
+            }
+          }
+        })
+        console.log(`Indexed ${Object.keys(this.englishToGaro).length} English->Garo mappings`)
+        return
+      }
+
+      // Index vocabulary section (old format)
       const vocabularyRoot = this.dictionary?.vocabulary || {}
       this.indexSection(vocabularyRoot, 'vocabulary')
 
