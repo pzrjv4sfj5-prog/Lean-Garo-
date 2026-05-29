@@ -1,3 +1,5 @@
+import { toGaroNumber as toGaroNumberImported } from './number_engine.js';
+
 /**
  * garo_classifier.js
  * ==================
@@ -91,11 +93,11 @@ export const CLASSIFIERS = {
  * @param {number} n
  * @returns {string}
  */
+
 export function toGaroNumber(n) {
-  const word = NUMBERS[n];
-  if (!word) throw new Error(`Number ${n} is out of supported range (1-10).`);
-  return word;
+  return toGaroNumberImported(n);
 }
+
 
 /**
  * Get the correct classifier for a dictionary category.
@@ -123,7 +125,7 @@ export function getClassifier(category) {
 export function countNoun(garoNoun, count, category) {
   const classifier = getClassifier(category);
   const number = toGaroNumber(count);
-  return `${garoNoun} ${classifier}-${number}`;
+  return `${classifier}-${number} ${garoNoun}`;
 }
 
 /**
@@ -140,7 +142,7 @@ export function countNounWithClassifier(garoNoun, count, classifier) {
     throw new Error(`Unknown classifier "${classifier}". Valid: ${Object.keys(CLASSIFIERS).join(", ")}`);
   }
   const number = toGaroNumber(count);
-  return `${garoNoun} ${classifier}-${number}`;
+  return `${classifier}-${number} ${garoNoun}`;
 }
 
 /**
@@ -173,15 +175,15 @@ export function buildPhrase(dictionary, category, englishWord, count) {
 
   return {
     english: `${count} ${englishWord}`,
-    garo: `${garoWord} ${classifier}-${number}`,
+    garo: `${classifier}-${number} ${garoWord}`,
     hindi: hindiWord ? `${count} ${hindiWord}` : "",
   };
 }
 
 /**
  * Validate that a Garo counted phrase follows the correct order.
- * Correct:   "achak mang-sa"   (noun  classifier-number)
- * Incorrect: "achak sa-mang"   (noun  number-classifier)
+ * Correct:   "mang-sa achak"   (classifier-number noun)
+ * Incorrect: "achak mang-sa" or "sa-mang achak"
  *
  * @param {string} phrase
  * @returns {{ valid: boolean, message: string }}
@@ -191,7 +193,7 @@ export function validatePhrase(phrase) {
   const numberWords = Object.values(NUMBERS).join("|");
 
   const correctPattern = new RegExp(
-    `^.+\\s+(${classifierLabels})-(${numberWords})$`
+    `^(${classifierLabels})-(${numberWords})\\s+.+$`
   );
   const wrongPattern = new RegExp(
     `(${numberWords})[·\\-](${classifierLabels})`
