@@ -23998,5 +23998,706 @@
   {
     "english": "the mountain",
     "garo": "A·bri"
+  },
+  {
+    "english": "duck",
+    "garo": "do·gep",
+    "pos": "noun"
+  },
+  {
+    "english": "fuck",
+    "garo": "jua",
+    "pos": "verb"
+  },
+  {
+    "english": "inside",
+    "garo": "ning·o",
+    "pos": "adposition",
+    "example_en": "Must be inside",
+    "example_garo": "Ning·o ong·na nanga"
+  },
+  {
+    "english": "joking",
+    "garo": "kal·akenga",
+    "pos": "verb"
+  },
+  {
+    "english": "job",
+    "garo": "kam",
+    "pos": "noun",
+    "example_en": "What job do you do?",
+    "example_garo": "Na·ara mai kamko ka·a?"
+  },
+  {
+    "english": "ability",
+    "garo": "Maiba kamko dakna changani",
+    "pos": "noun"
+  },
+  {
+    "english": "abandon",
+    "garo": "Watgala",
+    "pos": "verb"
+  },
+  {
+    "english": "abnormal",
+    "garo": "ong·ronggijagipa",
+    "pos": "adjective"
+  },
+  {
+    "english": "about",
+    "garo": "gimin",
+    "pos": "adposition",
+    "example_en": "about you and about her",
+    "example_garo": "Nang·ni gimin aro bini gimin"
+  },
+  {
+    "english": "and",
+    "garo": "aro",
+    "pos": "conjunction"
+  },
+  {
+    "english": "ask",
+    "garo": "sing·a",
+    "pos": "verb"
+  },
+  {
+    "english": "at",
+    "garo": "-o",
+    "pos": "suffix"
+  },
+  {
+    "english": "ate",
+    "garo": "cha·aha",
+    "pos": "verb"
+  },
+  {
+    "english": "awesome",
+    "garo": "gasua",
+    "pos": "adjective"
+  },
+  {
+    "english": "awkward",
+    "garo": "nidik nisi daka",
+    "pos": "adjective",
+    "example_en": "This is an awkward thing to see.",
+    "example_garo": "Ia nina nitoja."
+  },
+  {
+    "english": "backward",
+    "garo": "bikpile",
+    "pos": "adverb"
+  },
+  {
+    "english": "backbone",
+    "garo": "jangil bolgro",
+    "pos": "noun"
+  },
+  {
+    "english": "basically",
+    "garo": "chong·motan",
+    "pos": "adverb"
+  },
+  {
+    "english": "bath",
+    "garo": "aua",
+    "pos": "verb"
+  },
+  {
+    "english": "be",
+    "garo": "ong·bo",
+    "pos": "verb",
+    "example_en": "be happy",
+    "example_garo": "kusi ong·bo"
+  },
+  {
+    "english": "beautiful",
+    "garo": "nitoa",
+    "pos": "adjective"
+  },
+  {
+    "english": "beef",
+    "garo": "matchu be·en",
+    "pos": "noun"
+  },
+  {
+    "english": "bright",
+    "garo": "ching·a",
+    "pos": "adjective"
+  },
+  {
+    "english": "butt",
+    "garo": "ki·sang",
+    "pos": "noun"
+  },
+  {
+    "english": "brown",
+    "garo": "gitchakmrang",
+    "pos": "adjective",
+    "example_en": "this house color is brown",
+    "example_garo": "ia nokni rong gitchakmrang ong·a"
+  },
+  {
+    "english": "mat",
+    "garo": "am",
+    "pos": "noun",
+    "example_en": "Sleep on the mat",
+    "example_garo": "Amo tusibo"
+  },
+  {
+    "english": "child",
+    "garo": "de",
+    "pos": "noun",
+    "example_en": "My child",
+    "example_garo": "Ang de"
+  },
+  {
+    "english": "cloud",
+    "garo": "aram",
+    "pos": "noun",
+    "example_en": "Clouds are dark.",
+    "example_garo": "Aramrang gisima."
+  },
+  {
+    "english": "conversation",
+    "garo": "agangrikani",
+    "pos": "noun",
+    "example_en": "their conversation is very nice",
+    "example_garo": "uamangni agangrikani namen nambea"
+  },
+  {
+    "english": "country",
+    "garo": "a·song",
+    "pos": "noun",
+    "example_en": "our country is big",
+    "example_garo": "an·chingni a·song dala"
+  },
+  {
+    "english": "current",
+    "garo": "da·o ong·enggipa",
+    "pos": "adjective"
+  },
+  {
+    "english": "dacoit",
+    "garo": "sekdrae ra·gipa",
+    "pos": "noun"
+  },
+  {
+    "english": "damaged",
+    "garo": "be·gimin",
+    "pos": "adjective"
+  },
+  {
+    "english": "dangerous",
+    "garo": "namen kenbegnigipa",
+    "pos": "adjective"
+  },
+  {
+    "english": "decent",
+    "garo": "kraa",
+    "pos": "adjective"
+  },
+  {
+    "english": "decide",
+    "garo": "tik ka·ani",
+    "pos": "verb"
+  },
+  {
+    "english": "deficiency",
+    "garo": "chu·onggijani",
+    "pos": "noun"
+  },
+  {
+    "english": "depend",
+    "garo": "pangchaka",
+    "pos": "verb"
+  },
+  {
+    "english": "dry fish",
+    "garo": "na·kam",
+    "pos": "noun"
+  },
+  {
+    "english": "early",
+    "garo": "seng·gnang",
+    "pos": "adverb",
+    "example_en": "i need to sleep early tonight",
+    "example_garo": "anga da·al attamo seng·gnang tusina nang·a"
+  },
+  {
+    "english": "earthquake",
+    "garo": "banggria",
+    "pos": "noun"
+  },
+  {
+    "english": "eaten",
+    "garo": "cha·man·aha",
+    "pos": "verb"
+  },
+  {
+    "english": "educated",
+    "garo": "skia man·gipa",
+    "pos": "adjective"
+  },
+  {
+    "english": "echo",
+    "garo": "gam·chak",
+    "pos": "noun"
+  },
+  {
+    "english": "eel",
+    "garo": "na·nil",
+    "pos": "noun"
+  },
+  {
+    "english": "eggshell",
+    "garo": "do·chi bikrok",
+    "pos": "noun"
+  },
+  {
+    "english": "elder",
+    "garo": "dal·bata",
+    "pos": "adjective"
+  },
+  {
+    "english": "face",
+    "garo": "mikkang",
+    "pos": "noun"
+  },
+  {
+    "english": "electricity",
+    "garo": "karen",
+    "pos": "noun"
+  },
+  {
+    "english": "eyebrows",
+    "garo": "miksmil",
+    "pos": "noun"
+  },
+  {
+    "english": "first",
+    "garo": "skang",
+    "pos": "adjective",
+    "example_en": "You're first",
+    "example_garo": "Na·an skang"
+  },
+  {
+    "english": "flower",
+    "garo": "bibal",
+    "pos": "noun"
+  },
+  {
+    "english": "foreigner",
+    "garo": "ruri",
+    "pos": "noun"
+  },
+  {
+    "english": "hair",
+    "garo": "kni",
+    "pos": "noun"
+  },
+  {
+    "english": "room",
+    "garo": "kuturi",
+    "pos": "noun",
+    "example_en": "this room is big",
+    "example_garo": "ia kuturi dala"
+  },
+  {
+    "english": "rice powder",
+    "garo": "pura",
+    "pos": "noun",
+    "example_en": "Bring me the rice powder",
+    "example_garo": "Angna pura ra·ba"
+  },
+  {
+    "english": "sad",
+    "garo": "duk ong·a",
+    "pos": "adjective"
+  },
+  {
+    "english": "saw",
+    "garo": "nikaha",
+    "pos": "verb",
+    "example_en": "I saw a bird in the tree.",
+    "example_garo": "Anga bolo do·oko nikaha."
+  },
+  {
+    "english": "scared",
+    "garo": "kena",
+    "pos": "adjective"
+  },
+  {
+    "english": "shoe",
+    "garo": "juta",
+    "pos": "noun"
+  },
+  {
+    "english": "once upon a time",
+    "garo": "changsa·o",
+    "pos": "adverb"
+  },
+  {
+    "english": "nostril",
+    "garo": "gingkol",
+    "pos": "noun"
+  },
+  {
+    "english": "now",
+    "garo": "da·o",
+    "pos": "adverb"
+  },
+  {
+    "english": "nowadays",
+    "garo": "da·ororo",
+    "pos": "adverb",
+    "example_en": "Nowadays it's hot",
+    "example_garo": "Da·ororode ding·a"
+  },
+  {
+    "english": "pair",
+    "garo": "jora",
+    "pos": "noun",
+    "example_en": "Pair of shoes",
+    "example_garo": "Juta Jorasa"
+  },
+  {
+    "english": "pig",
+    "garo": "wak",
+    "pos": "noun"
+  },
+  {
+    "english": "pork",
+    "garo": "wak be·en",
+    "pos": "noun"
+  },
+  {
+    "english": "praise the Lord",
+    "garo": "Gitelna rasong",
+    "pos": "phrase"
+  },
+  {
+    "english": "priceless",
+    "garo": "dam gri",
+    "pos": "adjective"
+  },
+  {
+    "english": "puppy",
+    "garo": "achak bisa",
+    "pos": "noun"
+  },
+  {
+    "english": "queen",
+    "garo": "rani",
+    "pos": "noun"
+  },
+  {
+    "english": "rainy",
+    "garo": "mikka wabekbeka",
+    "pos": "adjective"
+  },
+  {
+    "english": "reserve",
+    "garo": "kange dona",
+    "pos": "verb"
+  },
+  {
+    "english": "rice",
+    "garo": "mi",
+    "pos": "noun",
+    "example_en": "Have you eaten rice?",
+    "example_garo": "Mi cha·jok ma?"
+  },
+  {
+    "english": "tea",
+    "garo": "cha",
+    "pos": "noun",
+    "example_en": "Drink some tea.",
+    "example_garo": "Cha on·tisa ringbo."
+  },
+  {
+    "english": "such as",
+    "garo": "jekai",
+    "pos": "conjunction"
+  },
+  {
+    "english": "stand",
+    "garo": "chakata",
+    "pos": "verb"
+  },
+  {
+    "english": "speak",
+    "garo": "agana",
+    "pos": "verb",
+    "example_en": "I speak to him",
+    "example_garo": "anga una agana"
+  },
+  {
+    "english": "stop",
+    "garo": "dondip",
+    "pos": "verb",
+    "example_en": "Stop it",
+    "example_garo": "Iako dondipbo"
+  },
+  {
+    "english": "thief",
+    "garo": "cha·ugipa",
+    "pos": "noun"
+  },
+  {
+    "english": "thumb",
+    "garo": "jaksi dalgipa",
+    "pos": "noun"
+  },
+  {
+    "english": "kid",
+    "garo": "dobok bisa",
+    "pos": "noun",
+    "example_en": "this goat kid is ours",
+    "example_garo": "ia dobok bisa chingni ong·a"
+  },
+  {
+    "english": "knowledgeable",
+    "garo": "ui ma·sibegipa mande",
+    "pos": "adjective"
+  },
+  {
+    "english": "last year",
+    "garo": "da·sikkari",
+    "pos": "adverb",
+    "example_en": "Last year we went to Balpakram",
+    "example_garo": "Da·sikkari chinga Balpakram re·angaha"
+  },
+  {
+    "english": "late",
+    "garo": "ja·manchaka",
+    "pos": "adjective"
+  },
+  {
+    "english": "laugh",
+    "garo": "ka·dinga",
+    "pos": "verb",
+    "example_en": "Why do you laugh?",
+    "example_garo": "Maina na·a ka·dinga?"
+  },
+  {
+    "english": "mosquito",
+    "garo": "ganggu",
+    "pos": "noun",
+    "example_en": "A lot of mosquitoes here",
+    "example_garo": "Ganggu bang·bea iano"
+  },
+  {
+    "english": "name",
+    "garo": "bimung",
+    "pos": "noun"
+  },
+  {
+    "english": "earn",
+    "garo": "man·a",
+    "pos": "verb"
+  },
+  {
+    "english": "inheritance",
+    "garo": "man·rikani",
+    "pos": "noun"
+  },
+  {
+    "english": "younger sister",
+    "garo": "nono",
+    "pos": "noun"
+  },
+  {
+    "english": "time",
+    "garo": "somoi",
+    "pos": "noun",
+    "example_en": "What's the time?",
+    "example_garo": "Mai somoi?"
+  },
+  {
+    "english": "today",
+    "garo": "da·alo",
+    "pos": "adverb",
+    "example_en": "we will work today",
+    "example_garo": "chinga da·alo kam ka·gen"
+  },
+  {
+    "english": "town",
+    "garo": "songjinma",
+    "pos": "noun"
+  },
+  {
+    "english": "urgent",
+    "garo": "bakan dakna nanggipa",
+    "pos": "adjective"
+  },
+  {
+    "english": "video",
+    "garo": "vidio",
+    "pos": "noun"
+  },
+  {
+    "english": "village",
+    "garo": "song",
+    "pos": "noun"
+  },
+  {
+    "english": "wash",
+    "garo": "su·gala",
+    "pos": "verb",
+    "example_en": "I wash things",
+    "example_garo": "Anga bostu su·gala"
+  },
+  {
+    "english": "way",
+    "garo": "rama",
+    "pos": "noun"
+  },
+  {
+    "english": "i need your help",
+    "garo": "anga nang·ni dakchakaniko nanga"
+  },
+  {
+    "english": "i thought it was you",
+    "garo": "angade na·akon inesa chanchiachim"
+  },
+  {
+    "english": "i work hard",
+    "garo": "anga rake kam ka·a"
+  },
+  {
+    "english": "i'm waiting",
+    "garo": "anga sengenga"
+  },
+  {
+    "english": "is it good?",
+    "garo": "namama?"
+  },
+  {
+    "english": "People say it's good, is it good?",
+    "garo": "Manderang agana nama ine, namama?"
+  },
+  {
+    "english": "are you busy",
+    "garo": "jakchakjaengama?"
+  },
+  {
+    "english": "are you having fun?",
+    "garo": "an·sengengama?"
+  },
+  {
+    "english": "are you sleeping?",
+    "garo": "na·a tuengama?"
+  },
+  {
+    "english": "In a broad daylight are you sleeping?",
+    "garo": "Salmatraktrak-o na·a tuengama?"
+  },
+  {
+    "english": "are you taken?",
+    "garo": "na·a sakoba ka·a dongama?"
+  },
+  {
+    "english": "are you guys coming?",
+    "garo": "na·simang re·baengama?"
+  },
+  {
+    "english": "are you hungry?",
+    "garo": "okkriengama?"
+  },
+  {
+    "english": "Do you have your boyfriend",
+    "garo": "Nang·ni mikchagipa dongama?"
+  },
+  {
+    "english": "do you know english?",
+    "garo": "na·a inglis man·ama?"
+  },
+  {
+    "english": "do you know hindi?",
+    "garo": "na·a Hindi man·ama?"
+  },
+  {
+    "english": "do you know me?",
+    "garo": "na·a angko ma·siama?"
+  },
+  {
+    "english": "do you play games?",
+    "garo": "na·a gamerangko kal·ama?"
+  },
+  {
+    "english": "do you use whatsapp?",
+    "garo": "na·a whatsapp jakkalama?"
+  },
+  {
+    "english": "No electricity",
+    "garo": "Karen dongja"
+  },
+  {
+    "english": "go home",
+    "garo": "nokchi re·bo"
+  },
+  {
+    "english": "go to youtube",
+    "garo": "iutubchi re·angbo"
+  },
+  {
+    "english": "have you eaten breakfast?",
+    "garo": "na·a nastha cha·aha ma?"
+  },
+  {
+    "english": "he told me",
+    "garo": "bia angna aganaha"
+  },
+  {
+    "english": "He told me about you",
+    "garo": "Bia nang·ni gimin angna aganaha"
+  },
+  {
+    "english": "Are you scared?",
+    "garo": "Na·a kenenga ma?"
+  },
+  {
+    "english": "you really are shameless",
+    "garo": "aai na·ade mikgil gri bebemo"
+  },
+  {
+    "english": "shut up!",
+    "garo": "jrip!"
+  },
+  {
+    "english": "Now what?",
+    "garo": "da·ode maia?"
+  },
+  {
+    "english": "their house is very beautiful",
+    "garo": "uamangni nok namen nitobea"
+  },
+  {
+    "english": "i made a mistake",
+    "garo": "anga ong·gija dakaha"
+  },
+  {
+    "english": "you're lying",
+    "garo": "na·a tol·enga"
+  },
+  {
+    "english": "your feet stinks",
+    "garo": "nang·ni ja·a senga"
+  },
+  {
+    "english": "you're welcome",
+    "garo": "mamingba ong·ja"
+  },
+  {
+    "english": "No need to thank me, you're welcome",
+    "garo": "Mamingba ong·ja, angko mittelna nangjawa"
+  },
+  {
+    "english": "No way ahead",
+    "garo": "Mikkangchi rama gri"
+  },
+  {
+    "english": "What is going on?",
+    "garo": "Mai ong·enga?"
   }
 ]
