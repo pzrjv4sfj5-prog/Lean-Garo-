@@ -24699,5 +24699,11 @@
   {
     "english": "What is going on?",
     "garo": "Mai ong·enga?"
+  },
+  {
+    "english": "a dog bit me",
+    "garo": "An·tangko achik chanjok",
+    "pos": "sentence",
+    "note": "An·tangko: Me, Achik: Dog, Chanjok: Bit"
   }
 ]
