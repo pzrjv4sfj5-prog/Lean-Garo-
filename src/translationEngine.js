@@ -19,4 +19,11 @@ export function translate(text) {
 }
 
 export function getDictionarySize() { return DICTIONARY.size; }
+
+// Object wrapper to support 'import translationEngine from ...'
+const translationEngine = {
+  translate,
+  getDictionarySize
+};
+
 export default translationEngine;
