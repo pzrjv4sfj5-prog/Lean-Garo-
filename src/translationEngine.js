@@ -1,41 +1,61 @@
 import DICT_RAW from '../master_dictionary.json' with { type: 'json' };
 
-const DICTIONARY = new Map(DICT_RAW.map(e => [e.english.toLowerCase(), e.garo]));
+const DICTIONARY = new Map(
+  DICT_RAW.map(entry => [entry.english.toLowerCase(), entry.garo])
+);
 
-export function translate(text) {
+function translate(text) {
   if (!text) return '';
-  const tokens = text.toLowerCase().replace(/[.,!]/g, "").split(/\s+/);
-  if (tokens.length >= 3) {
-    const s = DICTIONARY.get(tokens[0]) || tokens[0];
-    const v = DICTIONARY.get(tokens[tokens.length - 1]) || tokens[tokens.length - 1];
-    const o = tokens.slice(1, tokens.length - 1).map(w => DICTIONARY.get(w) || w).join(" ");
-    return `${s} ${o} ${v}`;
-  }
-  return tokens.map(w => DICTIONARY.get(w) || w).join(" ");
+
+  return text
+    .toLowerCase()
+    .split(/\s+/)
+    .map(word => {
+      const cleanWord = word.replace(
+        /[.,\/#!$%\^&\*;:{}=\-_`~()]/g,
+        ''
+      );
+
+      return DICTIONARY.get(cleanWord) || word;
+    })
+    .join(' ');
 }
 
-export function getDictionarySize() { return DICTIONARY.size; }
-
-// --- ADAPTER METHODS REQUIRED BY UI ---
-export function translateSentence(text) { 
-    return { translated: translate(text), original: text, breakdown: [], direction: 'en_to_garo' }; 
+function getDictionarySize() {
+  return DICTIONARY.size;
 }
-export function analyzeGrammar(text) { 
-    return { wordCount: text.split(' ').length, coverage: '100%', structure: 'direct' }; 
-}
-export function getAllCategories() { return ['General', 'Medical', 'Administrative']; }
-export function searchVocabulary(query) { return []; }
-export function getCategoryVocabulary(cat) { return []; }
 
-// Export everything as a unified object for the UI
+async function translateSentence(text, inputLang = 'en', outputLang = 'garo') {
+  const translated = translate(text);
+
+  return {
+    original: text,
+    translated,
+    breakdown: []
+  };
+}
+
+async function analyzeGrammar(text, language = 'en') {
+  return {
+    language,
+    wordCount: text.trim() ? text.trim().split(/\s+/).length : 0,
+    tense: 'unknown',
+    notes: ['Grammar engine recovery mode']
+  };
+}
+
 const translationEngine = {
   translate,
-  getDictionarySize,
   translateSentence,
   analyzeGrammar,
-  getAllCategories,
-  searchVocabulary,
-  getCategoryVocabulary
+  getDictionarySize
+};
+
+export {
+  translate,
+  translateSentence,
+  analyzeGrammar,
+  getDictionarySize
 };
 
 export default translationEngine;
