@@ -19,3 +19,4 @@ export function translate(text) {
 }
 
 export function getDictionarySize() { return DICTIONARY.size; }
+export default translationEngine;
