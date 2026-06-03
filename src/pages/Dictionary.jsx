@@ -27,7 +27,7 @@ export default function Dictionary() {
     } else if (sortBy === 'garo') {
       results.sort((a, b) => a.garo.localeCompare(b.garo))
     } else {
-      results.sort((a, b) => a.category.localeCompare(b.category))
+      results.sort((a, b) => (a.category || '').localeCompare(b.category || ''))
     }
 
     return results
@@ -119,7 +119,7 @@ export default function Dictionary() {
                     <td className="py-4 px-4 font-mono font-bold text-blue-600 dark:text-blue-400">{item.garo}</td>
                     <td className="py-4 px-4">
                       <span className="inline-block px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-sm text-gray-700 dark:text-gray-300">
-                        {item.category.replace(/[_.]/g, ' ')}
+                        {(item.category || 'uncategorized').replace(/[_.]/g, ' ')}
                       </span>
                     </td>
                   </tr>

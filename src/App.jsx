@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ErrorBoundary from './components/ErrorBoundary'
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom'
 import Translator from './pages/Translator'
 import Dictionary from './pages/Dictionary'
@@ -96,10 +97,10 @@ function App() {
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Routes>
-            <Route path="/" element={<Translator />} />
-            <Route path="/dictionary" element={<Dictionary />} />
-            <Route path="/phrases" element={<Phrases />} />
-            <Route path="/grammar" element={<VerbsGrammar />} />
+            <Route path="/" element={<ErrorBoundary><Translator /></ErrorBoundary>} />
+            <Route path="/dictionary" element={<ErrorBoundary><Dictionary /></ErrorBoundary>} />
+            <Route path="/phrases" element={<ErrorBoundary><Phrases /></ErrorBoundary>} />
+            <Route path="/grammar" element={<ErrorBoundary><VerbsGrammar /></ErrorBoundary>} />
           </Routes>
         </main>
 
