@@ -13,12 +13,11 @@
     "server": "node server.js",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest tests/ 2>/dev/null || node --test tests/unit/translationEngine.test.js"
+    "test": "node --test tests/unit/translationEngine.test.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "express": "^4.18.2",
-    "fuse.js": "^7.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0"

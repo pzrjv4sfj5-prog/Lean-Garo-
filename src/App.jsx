@@ -116,7 +116,7 @@ function App() {
                   A semantic translation platform for A&apos;chik Garo language, designed to preserve and promote the indigenous language of Meghalaya.
                 </p>
                 <p className={`text-sm mt-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Live site: <a href="https://lean-garo.onrender.com" target="_blank" rel="noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">lean-garo.onrender.com</a>
+                  Live site: <a href="https://garo-platform.onrender.com" target="_blank" rel="noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">garo-platform.onrender.com</a>
                 </p>
               </div>
               <div>
