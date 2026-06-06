@@ -5,6 +5,7 @@ import Translator from './pages/Translator'
 import Dictionary from './pages/Dictionary'
 import Phrases from './pages/Phrases'
 import VerbsGrammar from './pages/VerbsGrammar'
+import NotFound from './pages/NotFound'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -101,6 +102,7 @@ function App() {
             <Route path="/dictionary" element={<ErrorBoundary label="Dictionary"><Dictionary /></ErrorBoundary>} />
             <Route path="/phrases" element={<ErrorBoundary label="Phrases"><Phrases /></ErrorBoundary>} />
             <Route path="/grammar" element={<ErrorBoundary label="Grammar &amp; Verbs"><VerbsGrammar /></ErrorBoundary>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 
@@ -114,7 +116,7 @@ function App() {
                   A semantic translation platform for A&apos;chik Garo language, designed to preserve and promote the indigenous language of Meghalaya.
                 </p>
                 <p className={`text-sm mt-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Live site: <a href="https://lean-garo-translator.vercel.app" target="_blank" rel="noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">lean-garo-translator.vercel.app</a>
+                  Live site: <a href="https://lean-garo.onrender.com" target="_blank" rel="noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">lean-garo.onrender.com</a>
                 </p>
               </div>
               <div>
