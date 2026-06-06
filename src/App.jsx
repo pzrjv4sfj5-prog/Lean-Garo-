@@ -97,10 +97,10 @@ function App() {
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Routes>
-            <Route path="/" element={<ErrorBoundary><Translator /></ErrorBoundary>} />
-            <Route path="/dictionary" element={<ErrorBoundary><Dictionary /></ErrorBoundary>} />
-            <Route path="/phrases" element={<ErrorBoundary><Phrases /></ErrorBoundary>} />
-            <Route path="/grammar" element={<ErrorBoundary><VerbsGrammar /></ErrorBoundary>} />
+            <Route path="/" element={<ErrorBoundary label="Translator"><Translator /></ErrorBoundary>} />
+            <Route path="/dictionary" element={<ErrorBoundary label="Dictionary"><Dictionary /></ErrorBoundary>} />
+            <Route path="/phrases" element={<ErrorBoundary label="Phrases"><Phrases /></ErrorBoundary>} />
+            <Route path="/grammar" element={<ErrorBoundary label="Grammar &amp; Verbs"><VerbsGrammar /></ErrorBoundary>} />
           </Routes>
         </main>
 
