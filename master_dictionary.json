@@ -15918,5 +15918,757 @@
     "english": "_classifier",
     "garo": "ge",
     "category": "general"
+  },
+  {
+    "english": "what is going on",
+    "garo": "Maia Kosak-o re·angenga maia?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "is it good",
+    "garo": "Namama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "people say it's good is it good",
+    "garo": "Manderang aganna nama ine, namama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "must be inside",
+    "garo": "Ning·on ong·na nanga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "are you having fun",
+    "garo": "An·sengenga ma?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "are you sleeping",
+    "garo": "Na·a tuengama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "in a broad daylight are you sleeping",
+    "garo": "Salmatraktrak-o na·a tuengama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "are you taken",
+    "garo": "Na·a sakoba ka·a dongama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "are you guys coming",
+    "garo": "Na·simang re·baengama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "are you hungry",
+    "garo": "Okkriengama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "this is an awkward thing to see",
+    "garo": "Ia nina nitoja",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "this house color is brown",
+    "garo": "Ia nok ni rong gitchakmrang ong.a",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "bye i'm going",
+    "garo": "De/Ra/Bai anga re·angengjok",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "sleep on the carpet",
+    "garo": "Amo tusibo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "their conversation is very nice",
+    "garo": "Uamangni agangrikani namen nambea",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "our country is big",
+    "garo": "An.chingni a.song dala",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "do you have a boyfriend",
+    "garo": "Nangni mikchagipa dong.a ma?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "do you know english",
+    "garo": "Na·a inglis man·ama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "do you know hindi",
+    "garo": "Na·a Hindi man·ama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "do you know me",
+    "garo": "Na·a angko ma·siama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "do you play games",
+    "garo": "Na·a gamerangko kal·ama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "do you use whatsapp",
+    "garo": "Na·a whatsapp jakkalama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "i need to sleep early tonight",
+    "garo": "Ang.a da.al atamo seng.gnang tusina nang.a",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "last year we went to balpakram",
+    "garo": "Da·sikkari chinga Balpakram re·anga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "why do you laugh",
+    "garo": "Maina na·a ka·dinga?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "a lot of mosquitoes in here",
+    "garo": "Ganggu bang·bea iano",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "no way ahead",
+    "garo": "Mikkangchi rama gri/dongja",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "now what",
+    "garo": "Da·ode maia?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "nowadays it's hot",
+    "garo": "Da·ororode ding·a",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "our home is far",
+    "garo": "Chingni nok chela",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "our language",
+    "garo": "An·chingni ku·sik",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "pair of shoes",
+    "garo": "Juta jorasa",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "praise the lord",
+    "garo": "Gitel na rasong",
+    "pos": null,
+    "category": "church",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "bring me the rice powder",
+    "garo": "Angna pura ra·ba",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "this room is big",
+    "garo": "Ia kuturi dala",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "are you scared",
+    "garo": "Ma na·a kenenga?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "shut up",
+    "garo": "Jrip!",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "their house is very beautiful",
+    "garo": "Uamang ni nok namen netobea",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "what's the time",
+    "garo": "Mai somoi / baji?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "we will work today",
+    "garo": "Chinga da.alo kam kagen",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "drink some tea",
+    "garo": "Cha on·tisa ringbo",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "he told me",
+    "garo": "Bia angna agana",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "he told me about you",
+    "garo": "Bia nang·ni gimin angna agana",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "i saw a bird in the tree",
+    "garo": "Anga bol-o do·o-ko nikaha",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "i speak to him",
+    "garo": "Anga una agana",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "i wash the dishes",
+    "garo": "Anga bostu su·gala",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "have you eaten breakfast",
+    "garo": "Naa nastha chaa ha ma?",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "have you eaten rice",
+    "garo": "Mi cha·jok ma?",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "clouds are dark",
+    "garo": "Aramrang gisima",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "you're first",
+    "garo": "Na·an skang",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "no need to thank me you're welcome",
+    "garo": "Mamingba ong·ja, angko mittelna nangjawa",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "your feet stinks",
+    "garo": "Nangni ja'a senga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "stop it",
+    "garo": "Iako dondipbo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "this goat kid is ours",
+    "garo": "Ia dobok bisa chingni ong.a",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "about you and about her",
+    "garo": "Nang·nigimin aro binigimin",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "joking",
+    "garo": "Ka·lakenga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "what job do you do",
+    "garo": "Na·ara mai kamko ka·a?",
+    "pos": null,
+    "category": "business",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "abnormal",
+    "garo": "Ong'ronggijagipa",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "at",
+    "garo": "O",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "awkward",
+    "garo": "Nitoja",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "basically",
+    "garo": "Chong.motan",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "be happy",
+    "garo": "Kusi ong.bo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "beautiful",
+    "garo": "Sila",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "bright",
+    "garo": "Ching'a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "bye",
+    "garo": "De / Ra / Bai",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "carpet",
+    "garo": "Am",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "child",
+    "garo": "Degipa",
+    "pos": null,
+    "category": "family",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "coming",
+    "garo": "Re·baengjok",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "country",
+    "garo": "A.song",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "decide",
+    "garo": "Tik ka·ani",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "early",
+    "garo": "Seng·gnang",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "earthquake",
+    "garo": "Banggria",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "electric",
+    "garo": "Karen",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "eyelash",
+    "garo": "Miksmil",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "going",
+    "garo": "Re·angengjok",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "late",
+    "garo": "Ja·manchaka",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "laugh",
+    "garo": "Ka·dinga",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "mouth",
+    "garo": "Kusik",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "must",
+    "garo": "Nang.a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "okay",
+    "garo": "Am",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "our",
+    "garo": "An.chingni",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "sad",
+    "garo": "Duk ong'a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "said",
+    "garo": "Aganaha",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "saying",
+    "garo": "Aganenga",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "shameless",
+    "garo": "Mikil gri",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "stand",
+    "garo": "Chakata",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "studying",
+    "garo": "Poraienga",
+    "pos": null,
+    "category": "education",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "reading",
+    "garo": "Poraienga",
+    "pos": null,
+    "category": "education",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "teach",
+    "garo": "Skia",
+    "pos": null,
+    "category": "education",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "telling",
+    "garo": "Aganenga",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "their",
+    "garo": "Uamangni",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "thief",
+    "garo": "Cha·ugipa",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "wake up",
+    "garo": "Chakatboha",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
+  },
+  {
+    "english": "wash",
+    "garo": "Su·gala",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": null
   }
 ]
