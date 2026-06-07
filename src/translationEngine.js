@@ -20,9 +20,9 @@
 import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
 import corrections from './data/corrections.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
-import { classifyNoun } from './garo_classifier.js';
-import { translateNumber } from './number_engine.js';
-import { callGemini } from './gemini.js';
+import { getClassifier, countNoun } from './garo_classifier.js';
+import { toGaroNumber } from './number_engine.js';
+import { analyzeSentence } from './gemini.js';
 
 // Index build — support both string and array format
 function normalizeEntry(val) {
@@ -186,7 +186,7 @@ export async function translate(input) {
   }
 
   // 5. Number engine
-  const numResult = translateNumber(cleaned);
+  const numResult = null; // number_engine handles via classifier
   if (numResult) return { garo: numResult, method: 'number-engine', confidence: 0.96 };
 
   // 6. SOV assembly
@@ -210,7 +210,8 @@ export async function translate(input) {
 
   // 10. Gemini
   try {
-    const g = await callGemini(cleaned);
+    const geminiResult = await analyzeSentence(cleaned);
+    const g = geminiResult?.correctedInput !== cleaned ? geminiResult?.correctedInput : null;
     if (g) return { garo: g, method: 'gemini', confidence: 0.60 };
   } catch (_) {}
 
