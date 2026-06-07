@@ -15918,5 +15918,130 @@
     "english": "_classifier",
     "garo": "ge",
     "category": "general"
+  },
+  {
+    "english": "you",
+    "garo": "Nang",
+    "category": "general"
+  },
+  {
+    "english": "she",
+    "garo": "Ua",
+    "category": "general"
+  },
+  {
+    "english": "he",
+    "garo": "Ua",
+    "category": "general"
+  },
+  {
+    "english": "we",
+    "garo": "Anga·mang",
+    "category": "general"
+  },
+  {
+    "english": "it",
+    "garo": "Ia",
+    "category": "general"
+  },
+  {
+    "english": "not",
+    "garo": "Ja",
+    "category": "general"
+  },
+  {
+    "english": "want",
+    "garo": "Gok-a",
+    "category": "general"
+  },
+  {
+    "english": "see",
+    "garo": "Gis-a",
+    "category": "general"
+  },
+  {
+    "english": "hot",
+    "garo": "Ding-a",
+    "category": "general"
+  },
+  {
+    "english": "cold",
+    "garo": "Sin-a",
+    "category": "general"
+  },
+  {
+    "english": "home",
+    "garo": "Nok",
+    "category": "home"
+  },
+  {
+    "english": "brother",
+    "garo": "Bol",
+    "category": "family"
+  },
+  {
+    "english": "sister",
+    "garo": "Biap",
+    "category": "family"
+  },
+  {
+    "english": "children",
+    "garo": "Bi·sa",
+    "category": "family"
+  },
+  {
+    "english": "people",
+    "garo": "Mande",
+    "category": "general"
+  },
+  {
+    "english": "person",
+    "garo": "Mande",
+    "category": "general"
+  },
+  {
+    "english": "going",
+    "garo": "Re·ang-enga",
+    "category": "general"
+  },
+  {
+    "english": "working",
+    "garo": "Dak-enga",
+    "category": "general"
+  },
+  {
+    "english": "eating",
+    "garo": "Cha·enga",
+    "category": "general"
+  },
+  {
+    "english": "cooking",
+    "garo": "Giso·enga",
+    "category": "general"
+  },
+  {
+    "english": "coming",
+    "garo": "Re·ba-enga",
+    "category": "general"
+  },
+  {
+    "english": "sleeping",
+    "garo": "Tusi-enga",
+    "category": "general"
+  },
+  {
+    "english": "did not",
+    "garo": "jaa",
+    "category": "general"
+  },
+  {
+    "english": "will not",
+    "garo": "jagen",
+    "category": "general"
+  },
+  {
+    "english": "does not",
+    "garo": "Ja",
+    "category": "general"
   }
 ]

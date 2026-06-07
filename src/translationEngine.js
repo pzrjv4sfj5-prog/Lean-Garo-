@@ -52,6 +52,9 @@ const STOP_WORDS = new Set([
   'have','has','had','do','does','did','will','would','could',
   'should','may','might','shall','can','to','of','in','on',
   'at','by','for','with','about','from',
+  'am','my','your','his','her','its','our','their',
+  'this','that','these','those','it','and','but','or',
+  'not','no','so','as','if','when','then',
 ]);
 
 const VERB_SUFFIXES = {
