@@ -16670,5 +16670,65 @@
     "category": "verbs",
     "classifier": null,
     "notes": null
+  },
+  {
+    "english": "she",
+    "garo": "Ua",
+    "category": "general"
+  },
+  {
+    "english": "we",
+    "garo": "Anga·mang",
+    "category": "general"
+  },
+  {
+    "english": "children",
+    "garo": "Bi·sa",
+    "category": "family"
+  },
+  {
+    "english": "food",
+    "garo": "Mi",
+    "category": "food"
+  },
+  {
+    "english": "sunday",
+    "garo": "Notengpeng",
+    "category": "time"
+  },
+  {
+    "english": "understand",
+    "garo": "Ui-a",
+    "category": "general"
+  },
+  {
+    "english": "family",
+    "garo": "Nokma",
+    "category": "family"
+  },
+  {
+    "english": "books",
+    "garo": "Ki·tap",
+    "category": "education"
+  },
+  {
+    "english": "playing",
+    "garo": "Kala·enga",
+    "category": "general"
+  },
+  {
+    "english": "cooking",
+    "garo": "Giso·enga",
+    "category": "general"
+  },
+  {
+    "english": "walking",
+    "garo": "Re·ang-enga",
+    "category": "general"
+  },
+  {
+    "english": "sitting",
+    "garo": "Asong·enga",
+    "category": "general"
   }
 ]
