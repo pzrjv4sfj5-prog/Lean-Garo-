@@ -7,5 +7,3 @@ src/garo_classifier.js
 src/number_engine.js
 src/gemini.js
 server.js
-new_entries.cjs
-build-master-dictionary.js
