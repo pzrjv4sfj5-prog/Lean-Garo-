@@ -52,6 +52,9 @@ const STOP_WORDS = new Set([
   'have','has','had','do','does','did','will','would','could',
   'should','may','might','shall','can','to','of','in','on',
   'at','by','for','with','about','from',
+  'am','my','your','his','her','its','our','their',
+  'this','that','these','those','it','and','but','or',
+  'not','no','so','as','if','when','then',
 ]);
 
 const VERB_SUFFIXES = {
@@ -232,3 +235,30 @@ export function getAllVocabulary() {
 
 export function getByCategory(category) { return getAllVocabulary().filter(e => e.category === category); }
 export function getCategories() { return [...new Set(getAllVocabulary().map(e => e.category))].sort(); }
+
+// ── DEFAULT EXPORT — platform adapter layer (Claude B) ────────────────────────
+const translationEngine = {
+  async translateSentence(text, inputLang = 'en', outputLang = 'garo') {
+    if (!text || !text.trim()) return null;
+    const r = await translate(text);
+    return { translated: r.garo, original: text, breakdown: [], direction: inputLang === 'garo' ? 'garo_to_en' : 'en_to_garo', method: r.method };
+  },
+  translate(text) {
+    return translate(text).then(r => r.garo);
+  },
+  analyzeGrammar,
+  getAllCategories: getCategories,
+  searchVocabulary(query, lang = 'all', limit = 50) {
+    if (!query) return [];
+    const q = query.toLowerCase();
+    return getAllVocabulary().filter(e => lang === 'garo' ? e.garo.toLowerCase().includes(q) : e.english.toLowerCase().includes(q)).slice(0, limit);
+  },
+  getCategoryVocabulary: getByCategory,
+  getDictionarySize() { return getAllVocabulary().length; },
+  getPhraseSuggestions(query, limit = 10) {
+    if (!query) return [];
+    return translationEngine.searchVocabulary(query, 'en', limit);
+  },
+};
+
+export default translationEngine;

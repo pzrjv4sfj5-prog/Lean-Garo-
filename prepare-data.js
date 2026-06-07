@@ -69,8 +69,9 @@ function main() {
 
   const dict1 = normalizeFile(path.join(__dirname, 'garo_dictionary.json'));
   const dict2 = normalizeFile(path.join(__dirname, 'garo_dictionary (2).json'));
+  const dict3 = normalizeFile(path.join(__dirname, 'master_dictionary.json'));
 
-  const merged = { ...dict1, ...dict2 };
+  const merged = { ...dict1, ...dict2, ...dict3 };
 
   const grammarOverrides = {
     'tasty': 'Toa',

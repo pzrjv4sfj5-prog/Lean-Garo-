@@ -1,14 +1,14 @@
 export const BASE = {
-  1: "Sa",
-  2: "Gni",
-  3: "Gittam",
-  4: "Bri",
-  5: "Bonga",
-  6: "Dok",
-  7: "Sni",
-  8: "Chet",
-  9: "Sku",
-  10: "Chiking",
+  1: "sa",
+  2: "gni",
+  3: "gittam",
+  4: "bri",
+  5: "bonga",
+  6: "dok",
+  7: "sni",
+  8: "chet",
+  9: "sku",
+  10: "chiking",
 };
 
 export const TENS = {
@@ -33,7 +33,7 @@ export function toGaroNumber(n) {
   }
 
   if (n >= 11 && n <= 19) {
-    return "Chi" + BASE[n - 10];
+    return "chi" + BASE[n - 10];
   }
 
   if (n >= 20 && n <= 99) {
@@ -56,9 +56,9 @@ export function toGaroNumber(n) {
     let result = "";
 
     if (hundreds === 1) {
-      result = "Ritchasa";
+      result = "ritchasa";
     } else {
-      result = `${toGaroNumber(hundreds)} Ritchasa`;
+      result = `${toGaroNumber(hundreds)} ritchasa`;
     }
 
     if (remainder > 0) {
@@ -76,9 +76,9 @@ export function toGaroNumber(n) {
     let result = "";
 
     if (thousands === 1) {
-      result = "Hajalsa";
+      result = "hajalsa";
     } else {
-      result = `${toGaroNumber(thousands)} Hajalsa`;
+      result = `${toGaroNumber(thousands)} hajalsa`;
     }
 
     if (remainder > 0) {
