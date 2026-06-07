@@ -1,0 +1,11 @@
+master_dictionary.json
+src/compiled_dict.json
+src/data/phrase_maps.js
+src/data/corrections.json
+src/translationEngine.js
+src/garo_classifier.js
+src/number_engine.js
+src/gemini.js
+server.js
+new_entries.cjs
+build-master-dictionary.js
