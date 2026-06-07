@@ -59,7 +59,7 @@ export const CLASSIFIERS = {
   sak: {
     label: "sak",
     description: "people and persons",
-    categories: ["family_members", "occupations", "social_people"],
+    categories: ["family_members", "occupations", "social_people", "people", "person", "social", "human", "community"],
   },
   gong: {
     label: "gong",
