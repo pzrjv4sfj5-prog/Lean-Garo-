@@ -108,6 +108,22 @@ function main() {
   );
 
   console.log(`Success: Compiled ${Object.keys(finalized).length} unique entries into src/compiled_dict.json`);
+
+  // Write category index from master_dictionary.json
+  const masterPath = path.join(__dirname, 'master_dictionary.json');
+  if (fs.existsSync(masterPath)) {
+    const masterRaw = JSON.parse(fs.readFileSync(masterPath, 'utf8'));
+    const catIndex = {};
+    masterRaw.forEach(item => {
+      const eng = (item.english||'').trim().toLowerCase();
+      const cat = item.category || 'uncategorized';
+      if (eng && cat && cat !== 'uncategorized') catIndex[eng] = cat;
+    });
+    const dataDir = path.join(__dirname, 'src', 'data');
+    if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+    fs.writeFileSync(path.join(dataDir, 'category_index.json'), JSON.stringify(catIndex, null, 2));
+    console.log(`Category index: ${Object.keys(catIndex).length} categorized entries`);
+  }
 }
 
 main();

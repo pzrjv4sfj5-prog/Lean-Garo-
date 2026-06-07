@@ -18,6 +18,7 @@
  */
 
 import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
+import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import corrections from './data/corrections.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
 import { getClassifier, countNoun } from './garo_classifier.js';
@@ -247,13 +248,25 @@ const translationEngine = {
     return translate(text).then(r => r.garo);
   },
   analyzeGrammar,
-  getAllCategories: getCategories,
+  getAllCategories() {
+    const fromIndex = [...new Set(Object.values(CATEGORY_INDEX))].sort();
+    const fromEngine = getCategories();
+    const merged = [...new Set([...fromIndex, ...fromEngine])].filter(Boolean).sort();
+    return merged.length > 1 ? merged : fromIndex.length ? fromIndex : ['uncategorized'];
+  },
   searchVocabulary(query, lang = 'all', limit = 50) {
     if (!query) return [];
     const q = query.toLowerCase();
     return getAllVocabulary().filter(e => lang === 'garo' ? e.garo.toLowerCase().includes(q) : e.english.toLowerCase().includes(q)).slice(0, limit);
   },
-  getCategoryVocabulary: getByCategory,
+  getCategoryVocabulary(category) {
+    const fromEngine = getByCategory(category);
+    if (fromEngine.length > 0) return fromEngine;
+    // Fallback: use CATEGORY_INDEX to find entries
+    const vocab = getAllVocabulary();
+    return vocab.filter(e => (CATEGORY_INDEX[e.english.toLowerCase()] || 'uncategorized') === category)
+      .map(e => ({ ...e, category }));
+  },
   getDictionarySize() { return getAllVocabulary().length; },
   getPhraseSuggestions(query, limit = 10) {
     if (!query) return [];
