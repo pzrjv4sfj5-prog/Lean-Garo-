@@ -91,6 +91,16 @@ const IRREGULAR_VERBS = {
   'walked':'re·aha','walking':'re·enga',
   'stood':'chadenga','standing':'chadenga',
   'sat':'asong-aha','sitting':'asong-enga',
+  'searched':'am-e-nik-na',
+  'searching':'am-e-nik-na',
+  'gossiped':'a-gan-jo-jo-na',
+  'gossiping':'a-gan-jo-jo-na',
+  'conquered':'am-na',
+  'began':'a-ba-cheng-na',
+  'begun':'a-ba-cheng-na',
+  'spoke':'a-gan-na',
+  'answered':'a-gan-chak-na',
+  'discovered':'am-e-nik-na',
 };
 
 const POSSESSIVES = {
