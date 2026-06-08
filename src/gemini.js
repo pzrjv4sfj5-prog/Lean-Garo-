@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai'
 
 const API_KEY =
   typeof import.meta !== 'undefined' &&
-  import.meta.env?.VITE_GEMINI_API_KEY
+  import.meta.env?.VITE_GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY
     ? import.meta.env.VITE_GEMINI_API_KEY
     : process.env.VITE_GEMINI_API_KEY || ''
 
