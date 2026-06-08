@@ -184,7 +184,8 @@ export function analyzeGrammar(input) {
 
     if (objectWords.length > 0) {
       const objEng = objectWords.join(' ');
-      const objGaro = lookupGaro(objEng) || lookupGaro(objectWords[objectWords.length-1]) || '[UNKNOWN]';
+      const lastWord = objectWords[objectWords.length-1];
+      const objGaro = lookupPhrase(objEng) || lookupGaro(objEng) || lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
       object = { english: objEng, garo: objGaro, withMarker: objGaro + '-ko' };
     }
 
