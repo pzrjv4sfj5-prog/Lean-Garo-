@@ -46178,5 +46178,35 @@
     "category": "health",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH v:bil-ong-a / bil-rak-a / mang-rak-a"
+  },
+  {
+    "english": "let us go",
+    "garo": "Hai re·naha",
+    "category": "phrases"
+  },
+  {
+    "english": "let us",
+    "garo": "Hai",
+    "category": "general"
+  },
+  {
+    "english": "you",
+    "garo": "Nang",
+    "category": "general"
+  },
+  {
+    "english": "understanding",
+    "garo": "Ui·enga",
+    "category": "general"
+  },
+  {
+    "english": "will",
+    "garo": "-gen",
+    "category": "general"
+  },
+  {
+    "english": "monday",
+    "garo": "Sombar",
+    "category": "time"
   }
 ]
