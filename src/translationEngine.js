@@ -69,6 +69,43 @@ function applyTense(verbRoot, tense) {
   return clean + suffix;
 }
 
+const IRREGULAR_VERBS = {
+  'went':'re·anga','gone':'re·anga','going':'re·angenga',
+  'ate':'cha·aha','eaten':'cha·man·aha','eating':'cha·oenga',
+  'saw':'nik-aha','seen':'nik-aha','seeing':'nikenga',
+  'told':'agan-aha','said':'aganaha','saying':'aganenga',
+  'came':'re·ba-aha','coming':'re·baenga',
+  'drank':'ring-aha','drinking':'ringenga',
+  'gave':'on·aha','giving':'onenga',
+  'ran':'kat-aha','running':'katenga',
+  'slept':'tus-aha','sleeping':'tusenga',
+  'worked':'dak-aha','working':'dakenga',
+  'laughed':'ka·ding-aha','laughing':'ka·dingeng',
+  'washed':'su·gala','washing':'su·galenga',
+  'bought':'brea-aha','buying':'breaenga',
+  'sold':'pala-aha','selling':'palaenga',
+  'heard':'knachik-aha','hearing':'knachik-enga',
+  'thought':'gisik-aha','thinking':'gisik-o nanga',
+  'forgot':'guala','forgetting':'gualenga',
+  'cried':'grap-aha','crying':'grapenga',
+  'walked':'re·aha','walking':'re·enga',
+  'stood':'chadenga','standing':'chadenga',
+  'sat':'asong-aha','sitting':'asong-enga',
+};
+
+const POSSESSIVES = {
+  'my':'Angni','your':'Nang·ni','his':'Uni','her':'Uni',
+  'our':'An·chingni','their':'Uamangni','its':'Uni',
+};
+
+const PURPOSE_VERBS = {
+  'see':'nik-a-na','eat':'cha-na','drink':'ring-na',
+  'meet':'chap-na','buy':'brea-na','sell':'pala-na',
+  'go':'re·ang-na','come':'re·ba-na','work':'dak-na',
+  'study':'pora-na','pray':'bi·a-na','help':'betoi-na',
+  'find':'mia-na','give':'on·a-na','take':'ra·a-na',
+};
+
 export function analyzeGrammar(input) {
   if (!input || typeof input !== 'string') return null;
   const words = input.trim().split(/\s+/);
@@ -93,26 +130,75 @@ export function analyzeGrammar(input) {
   };
 
   let subject = null, verb = null, object = null;
-  const firstWord = words[0]?.toLowerCase().replace(/[^a-z]/g,'');
-  if (pronounMap[firstWord]) {
-    subject = { english: words[0], garo: pronounMap[firstWord] };
-    if (wordCount >= 2) {
-      const vw = words[1].toLowerCase().replace(/[^a-z]/g,'');
-      const vg = lookupGaro(vw);
-      if (vg) verb = { english: words[1], garo: vg, tense: detectedTense, garoWithTense: applyTense(vg, detectedTense) };
-    }
-    if (verb && wordCount > 2) {
-      const objWords = words.slice(2).join(' ');
-      object = { english: objWords, garo: lookupGaro(objWords) || '[UNKNOWN]' };
-    }
-  }
-
   const classifierHints = [];
   const li = input.toLowerCase();
   if (/\b(dog|cat|cow|bird|fish|animal|insect)\b/.test(li)) classifierHints.push({ classifier: 'mang', reason: 'animal noun' });
   if (/\b(person|man|woman|teacher|student)\b/.test(li)) classifierHints.push({ classifier: 'sak', reason: 'person noun' });
   if (/\b(money|rupee|coin)\b/.test(li)) classifierHints.push({ classifier: 'gong', reason: 'money noun' });
   if (/\b(book|paper|leaf)\b/.test(li)) classifierHints.push({ classifier: 'king', reason: 'flat object' });
+
+  const firstWord = words[0]?.toLowerCase().replace(/[^a-z]/g,'');
+  if (pronounMap[firstWord]) {
+    subject = { english: words[0], garo: pronounMap[firstWord] };
+
+    // Find verb — skip stop words and possessives, check irregular first
+    let verbIndex = -1;
+    for (let i = 1; i < words.length; i++) {
+      const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
+      if (STOP_WORDS.has(w) || POSSESSIVES[w]) continue;
+      const irregGaro = IRREGULAR_VERBS[w];
+      const dictGaro = lookupGaro(w);
+      if (irregGaro || dictGaro) {
+        const garoVerb = irregGaro || dictGaro;
+        verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense: garoVerb, index: i };
+        verbIndex = i;
+        break;
+      }
+    }
+
+    // Extract possessive
+    let possessive = null;
+    for (const w of words) {
+      const p = POSSESSIVES[w.toLowerCase()];
+      if (p) { possessive = { english: w, garo: p }; break; }
+    }
+
+    // Extract object — noun after possessive or after 'to'
+    let objectWords = [];
+    let purposeAction = null;
+
+    for (let i = 1; i < words.length; i++) {
+      const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
+      if (w === 'to' && i + 1 < words.length) {
+        const nextW = words[i+1].toLowerCase().replace(/[^a-z]/g,'');
+        if (PURPOSE_VERBS[nextW]) {
+          purposeAction = { english: words[i+1], garo: PURPOSE_VERBS[nextW] };
+          i++; continue;
+        }
+      }
+      if (POSSESSIVES[w] || STOP_WORDS.has(w) || w === words[0].toLowerCase()) continue;
+      if (verb && words[i] === verb.english) continue;
+      if (IRREGULAR_VERBS[w]) continue;
+      objectWords.push(words[i]);
+    }
+
+    if (objectWords.length > 0) {
+      const objEng = objectWords.join(' ');
+      const objGaro = lookupGaro(objEng) || lookupGaro(objectWords[objectWords.length-1]) || '[UNKNOWN]';
+      object = { english: objEng, garo: objGaro, withMarker: objGaro + '-ko' };
+    }
+
+    return {
+      wordCount, detectedTense, tenseEvidence,
+      garoTenseSuffix: VERB_SUFFIXES[detectedTense] || null,
+      structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
+      subject, verb, object, possessive, purposeAction, classifierHints,
+      garoWordOrder: 'SOV (Subject → Object → Verb)',
+      notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
+    };
+  }
+
+
 
   return {
     wordCount, detectedTense, tenseEvidence,
