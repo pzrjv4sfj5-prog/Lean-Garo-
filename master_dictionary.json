@@ -48320,5 +48320,50 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH/doc7"
+  },
+  {
+    "english": "of course",
+    "garo": "Oe, bebe",
+    "category": "phrases"
+  },
+  {
+    "english": "that's good",
+    "garo": "Ua nama",
+    "category": "phrases"
+  },
+  {
+    "english": "that's bad",
+    "garo": "Ua namja",
+    "category": "phrases"
+  },
+  {
+    "english": "very good",
+    "garo": "Namen nama",
+    "category": "phrases"
+  },
+  {
+    "english": "see you tomorrow",
+    "garo": "Knalo nikgen",
+    "category": "greetings"
+  },
+  {
+    "english": "take care",
+    "garo": "An·tangko simsakbo",
+    "category": "greetings"
+  },
+  {
+    "english": "speak garo every day",
+    "garo": "An-ching Agana salanti.",
+    "category": "culture"
+  },
+  {
+    "english": "our language is our identity",
+    "garo": "An-chingni ba-sa an-chingni chin.",
+    "category": "culture"
+  },
+  {
+    "english": "let us practice garo together",
+    "garo": "Hai sakprak Agana skiebo.",
+    "category": "culture"
   }
 ]

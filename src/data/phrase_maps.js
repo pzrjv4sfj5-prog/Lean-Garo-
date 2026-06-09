@@ -349,6 +349,34 @@ export const PHRASE_MAPS = {
   'healthy': 'An·senga',
   'weak': 'Bilgri',
   'strong': 'Bilaka',
+
+  // Language preservation phrases
+  'speak garo every day': 'An-ching Agana salanti.',
+  "don't forget your language": 'Nangni ba-sa-ko gualboja.',
+  'teach garo to your children': 'Aganako bi·sa-rangna skie on·bo.',
+  'let us keep our language alive': 'Hai an-chingni ba-sa-ko tangtang ong·atbo.',
+  'our language is our identity': 'An-chingni ba-sa an-chingni chin.',
+  'use garo when speaking with elders': 'Dal·gipa-rang baksa Agana aganbo.',
+  'preserve our culture and language': 'An-ching culture aro ba-sa-ko nangchongmotgen.',
+  'we should speak garo more often': 'An-ching Agana bang·bate agangen.',
+  'let us practice garo together': 'Hai sakprak Agana skiebo.',
+  'the future of garo is in our hands': 'Aganani mikkangchi an-chingni jak-o dong·a.',
+  // Conversational responses
+  'really?': 'Bebema?',
+  'really': 'Bebema?',
+  'of course': 'Oe, bebe',
+  'i understand': 'Anga ma·sia',
+  "i don't understand": 'Anga ma·sija',
+  "i don't know": 'Anga uija',
+  "that's good": 'Ua nama',
+  "that's bad": 'Ua namja',
+  'very good': 'Namen nama',
+  'beautiful': 'Sila',
+  'tasty': 'Toa',
+  'not tasty': 'Touja',
+  'bye': 'De',
+  'see you tomorrow': 'Knalo nikgen',
+  'take care': 'An·tangko simsakbo',
 };
 
 export function lookupPhrase(input) {

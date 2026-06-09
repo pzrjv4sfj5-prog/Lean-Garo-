@@ -224,12 +224,23 @@ export function analyzeGrammar(input) {
 function assembleSentenceSOV(words) {
   const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()));
   if (!content.length) return null;
-  const translated = content.map(w => lookupGaro(w) || w);
-  if (translated.every((t, i) => t === content[i])) return null;
+  const corrections = EN_INDEX['__corrections__'] || {};
+  const translated = content.map(w => {
+    const lw = w.toLowerCase().replace(/[^a-z'·]/g,'');
+    return lookupPhrase(lw) || lookupGaro(lw)
+      || IRREGULAR_VERBS[lw]
+      || lookupGaro(lw.replace(/ing$/,'')) || lookupGaro(lw.replace(/ed$/,''))
+      || lookupGaro(lw.replace(/s$/,'')) || null;
+  });
+  const validTranslations = translated.filter(Boolean);
+  if (!validTranslations.length) return null;
+  // Build result using only words that have translations
+  const pairs = content.map((w, i) => ({ eng: w, garo: translated[i] })).filter(p => p.garo);
+  if (pairs.every(p => p.garo === p.eng)) return null;
   const verbs = [], nonVerbs = [];
-  translated.forEach((t, i) => {
-    const e = lookup(content[i].toLowerCase());
-    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$/.test(t)) verbs.push(t);
+  pairs.forEach(({ eng, garo: t }) => {
+    const e = lookup(eng.toLowerCase());
+    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$/.test(t)) verbs.push(t);
     else nonVerbs.push(t);
   });
   return [...nonVerbs, ...verbs].join(' ');
