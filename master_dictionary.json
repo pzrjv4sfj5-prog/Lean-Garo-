@@ -48861,5 +48861,53 @@
     "category": "phrases",
     "classifier": null,
     "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "no need to thank me you are welcome",
+    "garo": "Mamingba ong·ja, angko mittelna nangjawa",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "fix/verified"
+  },
+  {
+    "english": "the doctor explained the anatomy",
+    "garo": "Daktar sepak-ni gimin talate on·aha",
+    "category": "health",
+    "pos": null,
+    "classifier": null,
+    "notes": "fix/verified"
+  },
+  {
+    "english": "people say it is good is it good",
+    "garo": "Manderang aganna nama ine, namama?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "fix/verified"
+  },
+  {
+    "english": "anatomy",
+    "garo": "sep-ak-ni gimin",
+    "category": "health",
+    "pos": null,
+    "classifier": null,
+    "notes": "fix/verified"
+  },
+  {
+    "english": "explain",
+    "garo": "talate on·a",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "fix/verified"
+  },
+  {
+    "english": "explained",
+    "garo": "talate on·aha",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "fix/verified"
   }
 ]
