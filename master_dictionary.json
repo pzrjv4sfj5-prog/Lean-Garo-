@@ -48365,5 +48365,501 @@
     "english": "let us practice garo together",
     "garo": "Hai sakprak Agana skiebo.",
     "category": "culture"
+  },
+  {
+    "english": "I am fine.",
+    "garo": "Anga namenga.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Thank you.",
+    "garo": "Mittela.",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "You're welcome.",
+    "garo": "Mamingba ong·ja.",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Sorry.",
+    "garo": "Kracha·a.",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Bye.",
+    "garo": "De.",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Wait.",
+    "garo": "Damo.",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Let's go.",
+    "garo": "Hai re·naha.",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Let's eat.",
+    "garo": "Hai cha·ha.",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "My name is Tridip.",
+    "garo": "Angni bimungara Tridip.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am going home.",
+    "garo": "Anga nokchi re·angenga.",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am going to the market.",
+    "garo": "Anga bajalchi re·angenga.",
+    "pos": null,
+    "category": "business",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Have you eaten?",
+    "garo": "Na·a cha·ama?",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Have you eaten breakfast?",
+    "garo": "Naa nastha chaa ha ma?",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Exam over?",
+    "garo": "Porikka matchotjokma?",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Where are you from?",
+    "garo": "Na·a banoni?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I don't understand",
+    "garo": "Anga man·ja",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Please speak slowly",
+    "garo": "Tarake agana",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am a Garo",
+    "garo": "Anga Achik",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "This is delicious",
+    "garo": "Ia toa",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am tired",
+    "garo": "Anga jangchakka",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am sick",
+    "garo": "Anga kene dongka",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Please call the doctor",
+    "garo": "Daktar ko bo·angbo",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Where is the hospital?",
+    "garo": "Hospital banoa?",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "How old are you?",
+    "garo": "Na·a baitarong bachcha?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am 25 years old",
+    "garo": "Anga kolpachi bachcha",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Do you have children?",
+    "garo": "Nang·o de dong·a ma?",
+    "pos": null,
+    "category": "family",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I have two children",
+    "garo": "Ang·o gini de dong·a",
+    "pos": null,
+    "category": "family",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am married",
+    "garo": "Anga bora ka·a dongka",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Are you married?",
+    "garo": "Na·a bora ka·a dongama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I live in Tura",
+    "garo": "Anga Tura-o ong·enga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "This is my house",
+    "garo": "Ia angni nok",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Where is the market?",
+    "garo": "Bajal banoa?",
+    "pos": null,
+    "category": "business",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "How far is it?",
+    "garo": "Baita chelkuenga?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Turn left",
+    "garo": "Pila chepbo",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Turn right",
+    "garo": "Rikka chepbo",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Go straight",
+    "garo": "Sang re·angbo",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am learning Garo",
+    "garo": "Anga Achik ku·sik poraienga",
+    "pos": null,
+    "category": "education",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Speak Garo with me",
+    "garo": "Ang·ming Achik agana",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I love Garo language",
+    "garo": "Anga Achik ku·sik kasaenga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "What does this mean?",
+    "garo": "Ia·ara maiko ol·engachim?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "How do you say this in Garo?",
+    "garo": "Ia Achik ku·siko mai ine agana?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I forgot the word",
+    "garo": "Anga ku·sik·ko sik·jokaha",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Can you repeat that?",
+    "garo": "Natani agubo?",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am still learning",
+    "garo": "Anga poraengjoka·o",
+    "pos": null,
+    "category": "education",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am hungry",
+    "garo": "Anga okkrienga",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am full",
+    "garo": "Anga chu·ong",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "It is cold",
+    "garo": "Sikkimba",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "It is raining",
+    "garo": "Mikka wabenga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Where is the bathroom?",
+    "garo": "Bangni banoa?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I need water",
+    "garo": "Ang·o chi nang·a",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Open the door",
+    "garo": "Duar pekatbo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Close the door",
+    "garo": "Duar petbo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Turn on the light",
+    "garo": "Karen jangbo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Turn off the light",
+    "garo": "Karen dondipbo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Give me that",
+    "garo": "Iako angna on·bo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Come with me",
+    "garo": "Ang·ming re·babo",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I will be back",
+    "garo": "Anga pil·en",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "See you tomorrow",
+    "garo": "Atam nikgen",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I missed you",
+    "garo": "Anga nangko matchot·aha",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Take care",
+    "garo": "Ong·bo dakbo",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "Good luck",
+    "garo": "Gasua ong·en",
+    "pos": null,
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
+  },
+  {
+    "english": "I am proud of you",
+    "garo": "Nang·ni gimin anga kusienga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH/200sentences"
   }
 ]
