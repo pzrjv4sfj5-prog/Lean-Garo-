@@ -40,6 +40,15 @@ export const NUMBER_WORDS = {
   'hundred': 100, 'thousand': 1000,
 };
 
+export function parseCount(input) {
+  if (!input) return null;
+  const str = String(input).toLowerCase().trim();
+  if (NUMBER_WORDS[str]) return NUMBER_WORDS[str];
+  const n = parseInt(str);
+  if (!isNaN(n) && n > 0) return n;
+  return null;
+}
+
 export function toGaroNumber(n) {
   const num = parseInt(n);
   if (isNaN(num)) return null;
@@ -272,7 +281,7 @@ export function parseCountingPhrase(input) {
   if (words.length < 2) return null;
 
   // Check first word is a number
-  const count = NUMBER_WORDS[words[0]] || parseInt(words[0]);
+  const count = parseCount(words[0]);
   if (!count || isNaN(count)) return null;
 
   // Noun is everything after the number
