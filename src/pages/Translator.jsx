@@ -29,7 +29,7 @@ export default function Translator() {
 
     try {
       // Perform translation
-      const translationResult = translationEngine.translateSentence(
+      const translationResult = await translationEngine.translateSentence(
         inputText,
         inputLang,
         outputLang

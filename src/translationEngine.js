@@ -18,9 +18,10 @@
  */
 
 import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
+import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import corrections from './data/corrections.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
-import { getClassifier, countNoun } from './garo_classifier.js';
+import { getClassifier, countNoun, parseCountingPhrase } from './garo_classifier.js';
 import { toGaroNumber } from './number_engine.js';
 import { analyzeSentence } from './gemini.js';
 
@@ -54,7 +55,7 @@ const STOP_WORDS = new Set([
   'at','by','for','with','about','from',
   'am','my','your','his','her','its','our','their',
   'this','that','these','those','it','and','but','or',
-  'not','no','so','as','if','when','then',
+  'so','as','if','when','then',
 ]);
 
 const VERB_SUFFIXES = {
@@ -67,6 +68,53 @@ function applyTense(verbRoot, tense) {
   const suffix = VERB_SUFFIXES[tense] || VERB_SUFFIXES.present;
   return clean + suffix;
 }
+
+const IRREGULAR_VERBS = {
+  'went':'re·anga','gone':'re·anga','going':'re·angenga',
+  'ate':'cha·aha','eaten':'cha·man·aha','eating':'cha·oenga',
+  'saw':'nik-aha','seen':'nik-aha','seeing':'nikenga',
+  'told':'agan-aha','said':'aganaha','saying':'aganenga',
+  'came':'re·ba-aha','coming':'re·baenga',
+  'drank':'ring-aha','drinking':'ringenga',
+  'gave':'on·aha','giving':'onenga',
+  'ran':'kat-aha','running':'katenga',
+  'slept':'tus-aha','sleeping':'tusenga',
+  'worked':'dak-aha','working':'dakenga',
+  'laughed':'ka·ding-aha','laughing':'ka·dingeng',
+  'washed':'su·gala','washing':'su·galenga',
+  'bought':'brea-aha','buying':'breaenga',
+  'sold':'pala-aha','selling':'palaenga',
+  'heard':'knachik-aha','hearing':'knachik-enga',
+  'thought':'gisik-aha','thinking':'gisik-o nanga',
+  'forgot':'guala','forgetting':'gualenga',
+  'cried':'grap-aha','crying':'grapenga',
+  'walked':'re·aha','walking':'re·enga',
+  'stood':'chadenga','standing':'chadenga',
+  'sat':'asong-aha','sitting':'asong-enga',
+  'searched':'am-e-nik-na',
+  'searching':'am-e-nik-na',
+  'gossiped':'a-gan-jo-jo-na',
+  'gossiping':'a-gan-jo-jo-na',
+  'conquered':'am-na',
+  'began':'a-ba-cheng-na',
+  'begun':'a-ba-cheng-na',
+  'spoke':'a-gan-na',
+  'answered':'a-gan-chak-na',
+  'discovered':'am-e-nik-na',
+};
+
+const POSSESSIVES = {
+  'my':'Angni','your':'Nang·ni','his':'Uni','her':'Uni',
+  'our':'An·chingni','their':'Uamangni','its':'Uni',
+};
+
+const PURPOSE_VERBS = {
+  'see':'nik-a-na','eat':'cha-na','drink':'ring-na',
+  'meet':'chap-na','buy':'brea-na','sell':'pala-na',
+  'go':'re·ang-na','come':'re·ba-na','work':'dak-na',
+  'study':'pora-na','pray':'bi·a-na','help':'betoi-na',
+  'find':'mia-na','give':'on·a-na','take':'ra·a-na',
+};
 
 export function analyzeGrammar(input) {
   if (!input || typeof input !== 'string') return null;
@@ -92,26 +140,76 @@ export function analyzeGrammar(input) {
   };
 
   let subject = null, verb = null, object = null;
-  const firstWord = words[0]?.toLowerCase().replace(/[^a-z]/g,'');
-  if (pronounMap[firstWord]) {
-    subject = { english: words[0], garo: pronounMap[firstWord] };
-    if (wordCount >= 2) {
-      const vw = words[1].toLowerCase().replace(/[^a-z]/g,'');
-      const vg = lookupGaro(vw);
-      if (vg) verb = { english: words[1], garo: vg, tense: detectedTense, garoWithTense: applyTense(vg, detectedTense) };
-    }
-    if (verb && wordCount > 2) {
-      const objWords = words.slice(2).join(' ');
-      object = { english: objWords, garo: lookupGaro(objWords) || '[UNKNOWN]' };
-    }
-  }
-
   const classifierHints = [];
   const li = input.toLowerCase();
   if (/\b(dog|cat|cow|bird|fish|animal|insect)\b/.test(li)) classifierHints.push({ classifier: 'mang', reason: 'animal noun' });
   if (/\b(person|man|woman|teacher|student)\b/.test(li)) classifierHints.push({ classifier: 'sak', reason: 'person noun' });
   if (/\b(money|rupee|coin)\b/.test(li)) classifierHints.push({ classifier: 'gong', reason: 'money noun' });
   if (/\b(book|paper|leaf)\b/.test(li)) classifierHints.push({ classifier: 'king', reason: 'flat object' });
+
+  const firstWord = words[0]?.toLowerCase().replace(/[^a-z]/g,'');
+  if (pronounMap[firstWord]) {
+    subject = { english: words[0], garo: pronounMap[firstWord] };
+
+    // Find verb — skip stop words and possessives, check irregular first
+    let verbIndex = -1;
+    for (let i = 1; i < words.length; i++) {
+      const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
+      if (STOP_WORDS.has(w) || POSSESSIVES[w]) continue;
+      const irregGaro = IRREGULAR_VERBS[w];
+      const dictGaro = lookupGaro(w);
+      if (irregGaro || dictGaro) {
+        const garoVerb = irregGaro || dictGaro;
+        verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense: garoVerb, index: i };
+        verbIndex = i;
+        break;
+      }
+    }
+
+    // Extract possessive
+    let possessive = null;
+    for (const w of words) {
+      const p = POSSESSIVES[w.toLowerCase()];
+      if (p) { possessive = { english: w, garo: p }; break; }
+    }
+
+    // Extract object — noun after possessive or after 'to'
+    let objectWords = [];
+    let purposeAction = null;
+
+    for (let i = 1; i < words.length; i++) {
+      const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
+      if (w === 'to' && i + 1 < words.length) {
+        const nextW = words[i+1].toLowerCase().replace(/[^a-z]/g,'');
+        if (PURPOSE_VERBS[nextW]) {
+          purposeAction = { english: words[i+1], garo: PURPOSE_VERBS[nextW] };
+          i++; continue;
+        }
+      }
+      if (POSSESSIVES[w] || STOP_WORDS.has(w) || w === words[0].toLowerCase()) continue;
+      if (verb && words[i] === verb.english) continue;
+      if (IRREGULAR_VERBS[w]) continue;
+      objectWords.push(words[i]);
+    }
+
+    if (objectWords.length > 0) {
+      const objEng = objectWords.join(' ');
+      const lastWord = objectWords[objectWords.length-1];
+      const objGaro = lookupPhrase(objEng) || lookupGaro(objEng) || lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
+      object = { english: objEng, garo: objGaro, withMarker: objGaro + '-ko' };
+    }
+
+    return {
+      wordCount, detectedTense, tenseEvidence,
+      garoTenseSuffix: VERB_SUFFIXES[detectedTense] || null,
+      structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
+      subject, verb, object, possessive, purposeAction, classifierHints,
+      garoWordOrder: 'SOV (Subject → Object → Verb)',
+      notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
+    };
+  }
+
+
 
   return {
     wordCount, detectedTense, tenseEvidence,
@@ -126,12 +224,23 @@ export function analyzeGrammar(input) {
 function assembleSentenceSOV(words) {
   const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()));
   if (!content.length) return null;
-  const translated = content.map(w => lookupGaro(w) || w);
-  if (translated.every((t, i) => t === content[i])) return null;
+  const corrections = EN_INDEX['__corrections__'] || {};
+  const translated = content.map(w => {
+    const lw = w.toLowerCase().replace(/[^a-z'·]/g,'');
+    return lookupPhrase(lw) || lookupGaro(lw)
+      || IRREGULAR_VERBS[lw]
+      || lookupGaro(lw.replace(/ing$/,'')) || lookupGaro(lw.replace(/ed$/,''))
+      || lookupGaro(lw.replace(/s$/,'')) || null;
+  });
+  const validTranslations = translated.filter(Boolean);
+  if (!validTranslations.length) return null;
+  // Build result using only words that have translations
+  const pairs = content.map((w, i) => ({ eng: w, garo: translated[i] })).filter(p => p.garo);
+  if (pairs.every(p => p.garo === p.eng)) return null;
   const verbs = [], nonVerbs = [];
-  translated.forEach((t, i) => {
-    const e = lookup(content[i].toLowerCase());
-    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$/.test(t)) verbs.push(t);
+  pairs.forEach(({ eng, garo: t }) => {
+    const e = lookup(eng.toLowerCase());
+    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$/.test(t)) verbs.push(t);
     else nonVerbs.push(t);
   });
   return [...nonVerbs, ...verbs].join(' ');
@@ -170,6 +279,23 @@ export async function translate(input) {
   // 1.5 Phrase map
   const phraseMap = lookupPhrase(lower);
   if (phraseMap) return { garo: phraseMap, method: 'phrase-map', confidence: 0.99 };
+
+  // 1.6 Classifier counting — "2 dogs", "one teacher", "5 birds"
+  const countPhrase = parseCountingPhrase(cleaned);
+  if (countPhrase) {
+    const singular = countPhrase.englishNoun.replace(/s$/, '');
+    const garoNoun = lookupPhrase(countPhrase.englishNoun)
+      || lookupGaro(countPhrase.englishNoun)
+      || lookupPhrase(singular)
+      || lookupGaro(singular);
+    if (garoNoun) {
+      return {
+        garo: countNoun(garoNoun, countPhrase.count, countPhrase.englishNoun),
+        method: 'classifier',
+        confidence: 0.96,
+      };
+    }
+  }
 
   // 2. Exact phrase
   const exactPhrase = lookupGaro(lower);
@@ -247,13 +373,25 @@ const translationEngine = {
     return translate(text).then(r => r.garo);
   },
   analyzeGrammar,
-  getAllCategories: getCategories,
+  getAllCategories() {
+    const fromIndex = [...new Set(Object.values(CATEGORY_INDEX))].sort();
+    const fromEngine = getCategories();
+    const merged = [...new Set([...fromIndex, ...fromEngine])].filter(Boolean).sort();
+    return merged.length > 1 ? merged : fromIndex.length ? fromIndex : ['uncategorized'];
+  },
   searchVocabulary(query, lang = 'all', limit = 50) {
     if (!query) return [];
     const q = query.toLowerCase();
     return getAllVocabulary().filter(e => lang === 'garo' ? e.garo.toLowerCase().includes(q) : e.english.toLowerCase().includes(q)).slice(0, limit);
   },
-  getCategoryVocabulary: getByCategory,
+  getCategoryVocabulary(category) {
+    const fromEngine = getByCategory(category);
+    if (fromEngine.length > 0) return fromEngine;
+    // Fallback: use CATEGORY_INDEX to find entries
+    const vocab = getAllVocabulary();
+    return vocab.filter(e => (CATEGORY_INDEX[e.english.toLowerCase()] || 'uncategorized') === category)
+      .map(e => ({ ...e, category }));
+  },
   getDictionarySize() { return getAllVocabulary().length; },
   getPhraseSuggestions(query, limit = 10) {
     if (!query) return [];

@@ -1,10 +1,31 @@
 {
   "beautiful": "Sila",
   "beautiful to hear": "kin-a-to-a",
+<<<<<<< HEAD
   "rupee": "tangka",
   "rupees": "tangka",
   "bird": "do·o",
   "birds": "do·o",
   "people": "mande",
   "person": "mande"
+=======
+  "fertile": "a'be-en",
+  "land": "a'a",
+  "search": "am-e-nik-na",
+  "gossip": "a-gan-jo-jo-na",
+  "conqueror": "am-gipa",
+  "conquer": "am-na",
+  "speak": "a-gan-na",
+  "answer": "a-gan-chak-na",
+  "begin": "a'ba-cheng-na",
+  "anatomy": "sep-ak-ni gimin",
+  "explained": "talate on·aha",
+  "explain": "talate on·a",
+  "welcome": "Rimchaksoa",
+  "no need to thank me you are welcome": "Mamingba ong·ja, angko mittelna nangjawa",
+  "no need to thank me": "Mamingba ong·ja",
+  "the doctor explained the anatomy": "Daktar sepak-ni gimin talate on·aha",
+  "people say it is good is it good": "Manderang aganna nama ine, namama?",
+  "people say it is good": "Manderang aganna nama ine"
+>>>>>>> 8f7dfba5d7b509587bb12693ee60a25ee210d183
 }
