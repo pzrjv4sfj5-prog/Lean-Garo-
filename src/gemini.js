@@ -1,17 +1,10 @@
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
 const API_KEY =
-<<<<<<< HEAD
   typeof import.meta !== 'undefined' &&
   import.meta.env?.VITE_GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY
     ? import.meta.env.VITE_GEMINI_API_KEY
     : process.env.VITE_GEMINI_API_KEY || ''
-=======
-  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_GEMINI_API_KEY) ||
-  process.env.VITE_GEMINI_API_KEY ||
-  process.env.GEMINI_API_KEY ||
-  ''
->>>>>>> 8f7dfba5d7b509587bb12693ee60a25ee210d183
 
 const genAI = new GoogleGenerativeAI(API_KEY)
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
