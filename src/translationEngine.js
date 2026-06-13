@@ -265,6 +265,51 @@ function fuzzyMatch(input) {
   return best ? { key: best, distance: bestDist } : null;
 }
 
+
+// ── PURPOSE VERB MAP ─────────────────────────────────────────────────────────
+const PURPOSE_MAP = {
+  'see':'nina','meet':'chap-na','buy':'brea-na','sell':'pala-na',
+  'eat':'cha-na','drink':'ring-na','study':'pora-na','read':'pora-na',
+  'work':'dak-na','pray':'bi·a-na','go':'re·ang-na','come':'re·ba-na',
+  'help':'betoi-na','find':'mia-na','give':'on·a-na','take':'ra·a-na',
+  'speak':'a-gan-na','talk':'a-gan-na','learn':'skia-na','teach':'skia on-na',
+  'cook':'song·a-na','wash':'su·gala-na','sleep':'tusia-na','play':'kal·a-na',
+  'run':'kat-na','walk':'re·a-na','write':'sea-na','ask':'sing·a-na',
+  'answer':'a-gan-chak-na','begin':"a'ba-cheng-na",'start':"a'ba-cheng-na",
+  'search':'am-e-nik-na','look':'ni-na','listen':'knachik-na',
+  'visit':'nina re·ang-na','sing':'bit-na','dance':'ruru-na',
+};
+
+function assembleGrammar(grammar) {
+  if (!grammar || !grammar.subject) return null;
+  const parts = [];
+  parts.push(grammar.subject.garo);
+
+  // Possessive + Object + -ko marker
+  if (grammar.possessive && grammar.object && grammar.object.garo !== '[UNKNOWN]') {
+    parts.push(grammar.possessive.garo + ' ' + grammar.object.garo.toLowerCase() + '-ko');
+  } else if (grammar.object && grammar.object.garo !== '[UNKNOWN]') {
+    parts.push(grammar.object.garo.toLowerCase() + '-ko');
+  }
+
+  // Purpose clause
+  if (grammar.purposeAction) {
+    const eng = grammar.purposeAction.english.toLowerCase();
+    const purposeGaro = PURPOSE_MAP[eng] || grammar.purposeAction.garo || (eng + '-na');
+    parts.push(purposeGaro);
+  }
+
+  // Main verb
+  if (grammar.verb) {
+    parts.push(grammar.verb.garoWithTense || grammar.verb.garo);
+  }
+
+  if (parts.length < 2) return null;
+  const result = parts.join(' ');
+  if (result.includes('[UNKNOWN]')) return null;
+  return result;
+}
+
 export async function translate(input) {
   if (!input || typeof input !== 'string') return { garo: '', method: 'empty', confidence: 0 };
 
