@@ -273,7 +273,7 @@ const PURPOSE_MAP = {
   'work':'dak-na','pray':'bi·a-na','go':'re·ang-na','come':'re·ba-na',
   'help':'betoi-na','find':'mia-na','give':'on·a-na','take':'ra·a-na',
   'speak':'a-gan-na','talk':'a-gan-na','learn':'skia-na','teach':'skia on-na',
-  'cook':'song·a-na','wash':'su·gala-na','sleep':'tusia-na','play':'kal·a-na',
+  'cook':'song·a-na','wash':'su·gala-na','sleep':'tusina','play':'kal·a-na',
   'run':'kat-na','walk':'re·a-na','write':'sea-na','ask':'sing·a-na',
   'answer':'a-gan-chak-na','begin':"a'ba-cheng-na",'start':"a'ba-cheng-na",
   'search':'am-e-nik-na','look':'ni-na','listen':'knachik-na',
@@ -363,7 +363,14 @@ export async function translate(input) {
   const numResult = null; // number_engine handles via classifier
   if (numResult) return { garo: numResult, method: 'number-engine', confidence: 0.96 };
 
-  // 6. SOV assembly
+  // 6. Grammar assembly — SOV with -ko object marker and -na purpose clause
+  const grammar = analyzeGrammar(cleaned);
+  const grammarResult = assembleGrammar(grammar);
+  if (grammarResult) {
+    return { garo: grammarResult, method: 'grammar-assembly', confidence: 0.82 };
+  }
+
+  // 6.5 Fallback SOV assembly
   const sov = assembleSentenceSOV(words);
   if (sov) return { garo: sov, method: 'sov-assembly', confidence: 0.75 };
 
