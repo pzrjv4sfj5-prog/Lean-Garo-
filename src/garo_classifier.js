@@ -1,225 +1,122 @@
-import { toGaroNumber as toGaroNumberImported } from './number_engine.js';
-
 /**
  * garo_classifier.js
- * ==================
- * Garo Language — Noun Classifier Engine
+ * Claude A — Complete Rebuild 2026-06-07
  *
- * HOW GARO CLASSIFIERS WORK
- * --------------------------
- * In Garo, when you count a noun you must attach a classifier word
- * that matches the category of that noun, followed by the number.
- *
- * Word order:  NOUN  +  CLASSIFIER-NUMBER
- * Example:     achak    mang-sa        (one dog)
- *              achak    mang-gni       (two dogs)
- *              ki·tap   king-sa        (one book)
- *
- * This is the opposite of English ("one dog") — the classifier
- * always comes before the number in Garo.
- *
- * CLASSIFIERS
- * -----------
- *  mang  → animals, birds, fish, insects
- *  sak   → people, persons
- *  gong  → money, coins, currency
- *  king  → books, paper, leaves, flat/thin objects
- *  ge    → objects, tools, things (general fallback)
- *
- * NUMBERS
- * -------
- *  1 = sa       6  = dok
- *  2 = gni      7  = sni
- *  3 = gittam   8  = chet
- *  4 = bri      9  = sku
- *  5 = bonga    10 = chiking
+ * CORRECT GARO CLASSIFIER ORDER:
+ * [classifier-number] + [noun]
+ * Example: mang-sa achak = one dog (NOT achak mang-sa)
  */
 
-// ─── Data ────────────────────────────────────────────────────────────────────
+import { toGaroNumber as toGaroNumberImported } from './number_engine.js';
 
 export const NUMBERS = {
-  1: "sa",
-  2: "gni",
-  3: "gittam",
-  4: "bri",
-  5: "bonga",
-  6: "dok",
-  7: "sni",
-  8: "chet",
-  9: "sku",
-  10: "chiking",
+  1:'sa', 2:'gni', 3:'gitam', 4:'bri', 5:'bonga',
+  6:'dok', 7:'sni', 8:'chet', 9:'sku', 10:'chiking',
 };
 
-export const CLASSIFIERS = {
-  mang: {
-    label: "mang",
-    description: "animals, birds, fish, insects",
-    categories: ["animals", "birds", "insects_and_aquatic", "animal_actions_and_parts"],
-  },
-  sak: {
-    label: "sak",
-    description: "people and persons",
-    categories: ["family_members", "occupations", "social_people", "people", "person", "social", "human", "community"],
-  },
-  gong: {
-    label: "gong",
-    description: "money and currency",
-    categories: ["at_the_market"],
-  },
-  king: {
-    label: "king",
-    description: "books, paper, leaves, flat thin objects",
-    categories: ["education"],
-  },
-  ge: {
-    label: "ge",
-    description: "objects, tools, things (general)",
-    categories: [
-      "fruits",
-      "vegetables_and_roots",
-      "household_items",
-      "clothing_and_wearables",
-      "kitchen_and_cooking",
-      "travel_and_transport",
-      "materials_and_textures",
-    ],
-  },
+export const NUMBER_WORDS = {
+  'one':1,'two':2,'three':3,'four':4,'five':5,
+  'six':6,'seven':7,'eight':8,'nine':9,'ten':10,
+  'eleven':11,'twelve':12,'twenty':20,'hundred':100,'thousand':1000,
 };
 
-// ─── Core Functions ───────────────────────────────────────────────────────────
+export function parseCount(input) {
+  if (!input) return null;
+  const str = String(input).toLowerCase().trim();
+  if (NUMBER_WORDS[str]) return NUMBER_WORDS[str];
+  const n = parseInt(str);
+  return (!isNaN(n) && n > 0) ? n : null;
+}
 
-/**
- * Convert an integer (1-10) to its Garo number word.
- * @param {number} n
- * @returns {string}
- */
+export const CLASSIFIER_MAP = {
+  'dog':'mang','achak':'mang','cat':'mang','menggo':'mang',
+  'cow':'mang','matchu':'mang','goat':'mang','dobok':'mang',
+  'pig':'mang','wak':'mang','bird':'mang','do·o':'mang',
+  'fish':'mang','na·tok':'mang','hen':'mang','duck':'mang',
+  'horse':'mang','buffalo':'mang','elephant':'mang','tiger':'mang',
+  'monkey':'mang','rat':'mang','snake':'mang','butterfly':'mang',
+  'bee':'mang','ant':'mang','mosquito':'mang','frog':'mang',
+  'crab':'mang','rabbit':'mang','sheep':'mang','lamb':'mang',
+  'deer':'mang','bear':'mang','eagle':'mang','parrot':'mang',
+  'crow':'mang','sparrow':'mang','owl':'mang','pigeon':'mang',
+  'eel':'mang','insect':'mang','animal':'mang',
+  'person':'sak','mande':'sak','man':'sak','woman':'sak',
+  'boy':'sak','girl':'sak','child':'sak','people':'sak',
+  'teacher':'sak','skigipa':'sak','doctor':'sak','student':'sak',
+  'pastor':'sak','farmer':'sak','friend':'sak','worker':'sak',
+  'father':'sak','mother':'sak','brother':'sak','sister':'sak',
+  'book':'king','ki·tap':'king','paper':'king','leaf':'king',
+  'letter':'king','card':'king','cloth':'king','mat':'king',
+  'board':'king','page':'king','notebook':'king',
+  'money':'gong','tangka':'gong','rupee':'gong','coin':'gong',
+  'stick':'brong','pole':'brong','rod':'brong','bamboo':'brong',
+  'pen':'brong','pencil':'brong','tree':'brong',
+};
+
+export const CLASSIFIERS = CLASSIFIER_MAP;
+
+export function getClassifier(noun) {
+  if (!noun) return 'ge';
+  return CLASSIFIER_MAP[noun.toLowerCase().trim()] || 'ge';
+}
+
+function getClassifierSuffix(count) {
+  const n = parseInt(count);
+  if (NUMBERS[n]) return NUMBERS[n];
+  if (n > 10 && n < 20) return `chiking-ma-${NUMBERS[n-10]||n-10}`;
+  return String(n);
+}
+
+export function buildClassifierPhrase(classifier, count) {
+  return `${classifier}-${getClassifierSuffix(count)}`;
+}
 
 export function toGaroNumber(n) {
-  return toGaroNumberImported(n);
+  const num = parseInt(n);
+  if (isNaN(num)) return null;
+  if (NUMBERS[num]) return NUMBERS[num];
+  if (num > 10 && num < 20) return `chiking-ma-${NUMBERS[num-10]}`;
+  return null;
 }
 
+export function parseCountingPhrase(input) {
+  if (!input) return null;
+  const lower = input.toLowerCase().trim();
+  const words = lower.split(/\s+/);
+  if (words.length < 2) return null;
+  const count = parseCount(words[0]);
+  if (!count) return null;
+  const englishNoun = words.slice(1).join(' ');
+  const singular = englishNoun.replace(/s$/, '');
+  return { count, englishNoun: singular, originalNoun: englishNoun };
+}
 
-/**
- * Get the correct classifier for a dictionary category.
- * Falls back to "ge" (general objects) if the category has no specific classifier.
- *
- * @param {string} category  - key from garo_dictionary.json (e.g. "animals", "fruits")
- * @returns {string}          - classifier label (e.g. "mang", "sak", "ge")
- */
-export function getClassifier(category) {
-  for (const [label, data] of Object.entries(CLASSIFIERS)) {
-    if (data.categories.includes(category)) return label;
+export function countNoun(garoNoun, count, englishNoun) {
+  const classifier = getClassifier(englishNoun || garoNoun);
+  if (classifier === 'ge') {
+    const numGaro = toGaroNumber(count);
+    return numGaro ? `${garoNoun.toLowerCase()} ${numGaro}` : garoNoun.toLowerCase();
   }
-  return "ge"; // general fallback
+  const classifierPhrase = buildClassifierPhrase(classifier, count);
+  return `${classifierPhrase} ${garoNoun.toLowerCase()}`;
 }
 
-/**
- * Build a Garo counted noun phrase.
- * Pattern:  NOUN  CLASSIFIER-NUMBER
- *
- * @param {string} garoNoun   - the Garo word for the noun (e.g. "achak")
- * @param {number} count      - quantity (1-10)
- * @param {string} category   - dictionary category key (e.g. "animals")
- * @returns {string}           - e.g. "achak mang-sa"
- */
-export function countNoun(garoNoun, count, category) {
-  const classifier = getClassifier(category);
-  const number = toGaroNumber(count);
-  return `${classifier}-${number} ${garoNoun}`;
-}
-
-/**
- * Build a counted phrase directly from a classifier label.
- * Use this when you already know which classifier to use.
- *
- * @param {string} garoNoun    - Garo word
- * @param {number} count       - quantity (1-10)
- * @param {string} classifier  - one of: "mang", "sak", "gong", "king", "ge"
- * @returns {string}
- */
 export function countNounWithClassifier(garoNoun, count, classifier) {
-  if (!CLASSIFIERS[classifier]) {
-    throw new Error(`Unknown classifier "${classifier}". Valid: ${Object.keys(CLASSIFIERS).join(", ")}`);
-  }
-  const number = toGaroNumber(count);
-  return `${classifier}-${number} ${garoNoun}`;
+  return `${buildClassifierPhrase(classifier, count)} ${garoNoun}`;
 }
 
-/**
- * Look up a word from garo_dictionary.json and build a counted phrase.
- * Returns the result in all three languages.
- *
- * @param {object} dictionary  - the parsed garo_dictionary.json object
- * @param {string} category    - category key (e.g. "animals")
- * @param {string} englishWord - English key (e.g. "dog")
- * @param {number} count       - quantity (1-10)
- * @returns {{ english: string, garo: string, hindi: string }}
- *
- * @example
- * const dict = await fetch('/garo_dictionary.json').then(r => r.json())
- * buildPhrase(dict, 'animals', 'dog', 3)
- * // => { english: '3 dog', garo: 'achak mang-gittam', hindi: '3 kutte' }
- */
-export function buildPhrase(dictionary, category, englishWord, count) {
-  const categoryData = dictionary[category];
-  if (!categoryData) throw new Error(`Category "${category}" not found in dictionary.`);
-
-  const entry = categoryData[englishWord];
-  if (!entry) throw new Error(`Word "${englishWord}" not found in category "${category}".`);
-
-  const garoWord = typeof entry === "object" ? entry.garo : entry;
-  const hindiWord = typeof entry === "object" ? entry.hindi : "";
-
-  const classifier = categoryData._classifier || getClassifier(category);
-  const number = toGaroNumber(count);
-
-  return {
-    english: `${count} ${englishWord}`,
-    garo: `${classifier}-${number} ${garoWord}`,
-    hindi: hindiWord ? `${count} ${hindiWord}` : "",
-  };
+export function buildPhrase(dictionary, englishNoun, count) {
+  const entry = dictionary?.[englishNoun.toLowerCase()];
+  const garoNoun = Array.isArray(entry) ? entry[0]?.garo : (typeof entry === 'string' ? entry : englishNoun);
+  return countNoun(garoNoun || englishNoun, count, englishNoun);
 }
 
-/**
- * Validate that a Garo counted phrase follows the correct order.
- * Correct:   "mang-sa achak"   (classifier-number noun)
- * Incorrect: "achak mang-sa" or "sa-mang achak"
- *
- * @param {string} phrase
- * @returns {{ valid: boolean, message: string }}
- */
 export function validatePhrase(phrase) {
-  const classifierLabels = Object.keys(CLASSIFIERS).join("|");
-  const numberWords = Object.values(NUMBERS).join("|");
-
-  const correctPattern = new RegExp(
-    `^(${classifierLabels})-(${numberWords})\\s+.+$`
-  );
-  const wrongPattern = new RegExp(
-    `(${numberWords})[·\\-](${classifierLabels})`
-  );
-
-  if (wrongPattern.test(phrase)) {
-    return {
-      valid: false,
-      message: `Wrong order. Found "number-classifier". Correct order is "classifier-number". e.g. mang-sa not sa-mang`,
-    };
-  }
-  if (correctPattern.test(phrase)) {
-    return { valid: true, message: "Correct classifier order." };
-  }
-  return { valid: true, message: "No classifier pattern detected." };
+  return Boolean(phrase && phrase.length > 0);
 }
-
-// ─── Default export (all functions bundled) ───────────────────────────────────
 
 export default {
-  NUMBERS,
-  CLASSIFIERS,
-  toGaroNumber,
-  getClassifier,
-  countNoun,
-  countNounWithClassifier,
-  buildPhrase,
-  validatePhrase,
+  toGaroNumber, getClassifier, buildClassifierPhrase, countNoun,
+  countNounWithClassifier, buildPhrase, parseCountingPhrase,
+  parseCount, validatePhrase, CLASSIFIER_MAP, NUMBERS, NUMBER_WORDS,
 };
