@@ -21,7 +21,7 @@ import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import corrections from './data/corrections.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
-import { getClassifier, countNoun } from './garo_classifier.js';
+import { getClassifier, countNoun, parseCountingPhrase } from './garo_classifier.js';
 import { toGaroNumber } from './number_engine.js';
 import { analyzeSentence } from './gemini.js';
 
@@ -55,7 +55,7 @@ const STOP_WORDS = new Set([
   'at','by','for','with','about','from',
   'am','my','your','his','her','its','our','their',
   'this','that','these','those','it','and','but','or',
-  'not','no','so','as','if','when','then',
+  'so','as','if','when','then',
 ]);
 
 const VERB_SUFFIXES = {
@@ -279,6 +279,23 @@ export async function translate(input) {
   // 1.5 Phrase map
   const phraseMap = lookupPhrase(lower);
   if (phraseMap) return { garo: phraseMap, method: 'phrase-map', confidence: 0.99 };
+
+  // 1.6 Classifier counting — "2 dogs", "one teacher", "5 birds"
+  const countPhrase = parseCountingPhrase(cleaned);
+  if (countPhrase) {
+    const singular = countPhrase.englishNoun.replace(/s$/, '');
+    const garoNoun = lookupPhrase(countPhrase.englishNoun)
+      || lookupGaro(countPhrase.englishNoun)
+      || lookupPhrase(singular)
+      || lookupGaro(singular);
+    if (garoNoun) {
+      return {
+        garo: countNoun(garoNoun, countPhrase.count, countPhrase.englishNoun),
+        method: 'classifier',
+        confidence: 0.96,
+      };
+    }
+  }
 
   // 2. Exact phrase
   const exactPhrase = lookupGaro(lower);
