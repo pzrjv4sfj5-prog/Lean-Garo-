@@ -48904,5 +48904,133 @@
     "pos": null,
     "classifier": null,
     "notes": "fix/verified"
+  },
+  {
+    "english": "want",
+    "garo": "sikenga",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "wants",
+    "garo": "sikenga",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "need",
+    "garo": "sikenga",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want to eat",
+    "garo": "Anga cha·na sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want to drink",
+    "garo": "Anga ring·na sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want to go",
+    "garo": "Anga re·ang·na sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want to sleep",
+    "garo": "Anga tusia·na sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want water",
+    "garo": "Anga chi·ko sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want food",
+    "garo": "Anga mi·ko sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want to come",
+    "garo": "Anga re·ba·na sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want to work",
+    "garo": "Anga dak·na sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want to study",
+    "garo": "Anga pora·na sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "i want to pray",
+    "garo": "Anga bi·a·na sikenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "go to sleep",
+    "garo": "Tusibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "go to eat",
+    "garo": "Cha·bo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "go to drink",
+    "garo": "Ringbo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
   }
 ]

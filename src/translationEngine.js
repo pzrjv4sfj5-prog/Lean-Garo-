@@ -74,7 +74,7 @@ const IRREGULAR_VERBS = {
   'ate':'cha·aha','eaten':'cha·man·aha','eating':'cha·oenga',
   'saw':'nik-aha','seen':'nik-aha','seeing':'nikenga',
   'told':'agan-aha','said':'aganaha','saying':'aganenga',
-  'came':'re·ba-aha','coming':'re·baenga',
+  'came':'re·ba-aha','coming':'re·baenga','want':'sikenga','wants':'sikenga','need':'sikenga',
   'drank':'ring-aha','drinking':'ringenga',
   'gave':'on·aha','giving':'onenga',
   'ran':'kat-aha','running':'katenga',
@@ -109,11 +109,11 @@ const POSSESSIVES = {
 };
 
 const PURPOSE_VERBS = {
-  'see':'nik-a-na','eat':'cha-na','drink':'ring-na',
-  'meet':'chap-na','buy':'brea-na','sell':'pala-na',
-  'go':'re·ang-na','come':'re·ba-na','work':'dak-na',
-  'study':'pora-na','pray':'bi·a-na','help':'betoi-na',
-  'find':'mia-na','give':'on·a-na','take':'ra·a-na',
+  'see':'nik-a-na','eat':'cha·na','drink':'ring·na',
+  'meet':'chap·na','buy':'brea·na','sell':'pala·na',
+  'go':'re·ang·na','come':'re·ba·na','work':'dak·na',
+  'study':'pora·na','pray':'bi·a·na','help':'betoi·na',
+  'find':'mia·na','give':'on·a·na','take':'ra·a·na',
 };
 
 export function analyzeGrammar(input) {
@@ -273,8 +273,8 @@ const PURPOSE_MAP = {
   'work':'dak-na','pray':'bi·a-na','go':'re·ang-na','come':'re·ba-na',
   'help':'betoi-na','find':'mia-na','give':'on·a-na','take':'ra·a-na',
   'speak':'a-gan-na','talk':'a-gan-na','learn':'skia-na','teach':'skia on-na',
-  'cook':'song·a-na','wash':'su·gala-na','sleep':'tusina','play':'kal·a-na',
-  'run':'kat-na','walk':'re·a-na','write':'sea-na','ask':'sing·a-na',
+  'cook':'song·a·na','wash':'su·gala·na','sleep':'tusia·na','play':'kal·a-na',
+  'run':'kat·na','walk':'re·a·na','write':'sea·na','ask':'sing·a·na',
   'answer':'a-gan-chak-na','begin':"a'ba-cheng-na",'start':"a'ba-cheng-na",
   'search':'am-e-nik-na','look':'ni-na','listen':'knachik-na',
   'visit':'nina re·ang-na','sing':'bit-na','dance':'ruru-na',
