@@ -294,5 +294,43 @@ git push origin main
 
 ---
 
+## URGENT — CONTAMINATION ENTRIES IN master_dictionary.json
+
+Claude B found **9 meta/documentation entries** embedded in `master_dictionary.json`
+that are leaking into `compiled_dict.json` and are reachable by the engine.
+
+**These must be REMOVED from master_dictionary.json:**
+
+```json
+{ "english": "rakka_note",          "garo": "The rakka (·) is a phonetic marker belonging to the root word. Suffixes are always clean strings." }
+{ "english": "note",                "garo": "Never translate English SVO word order directly into Garo" }
+{ "english": "notes",               "garo": "Khagen = will do/should do (future)" }
+{ "english": "suffix",              "garo": "tai" }
+{ "english": "state suffix (was/were)", "garo": "-ara" }
+{ "english": "location suffix",     "garo": "noun + chi" }
+{ "english": "recipient suffix",    "garo": "person + na" }
+{ "english": "plural marker",       "garo": "-chim" }
+{ "english": "with (suffix)",       "garo": "ming" }
+```
+
+**Impact if left in:**
+- `"note"` → returns `"Never translate English SVO word order directly into Garo"` to users
+- `"suffix"` → returns `"tai"` (meaningless to users)
+- `"rakka_note"` → returns full documentation string to users
+- All 9 appear in compiled_dict — engine can serve them to live site
+
+**Fix:**
+```js
+// In master_dictionary.json — delete all 9 entries above
+// Then run: npm run build  (prepare-data.js will recompile compiled_dict)
+```
+
+**Note on grammar info in these entries:**
+Some contain useful facts (e.g. `-ara` for state suffix, `-chim` for plural).
+Move these to `docs/GARO_GRAMMAR_REFERENCE.md` if not already there — don't lose the knowledge,
+just remove it from the dictionary where it doesn't belong.
+
+---
+
 _Prepared by Claude B — Platform Side_
 _Full grammar research in docs/GARO_GRAMMAR_VALIDATED.md_
