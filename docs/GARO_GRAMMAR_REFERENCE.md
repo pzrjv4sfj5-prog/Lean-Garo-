@@ -169,7 +169,7 @@ All case markers go at the END of the noun phrase. **Subject nouns have NO case 
 | **Nominative (subject)** | _(none)_ | Subject — unmarked | `pi.-sa cha.-a` = the child eats |
 | **Accusative (direct object)** | `-ko` | Object of verb | `mi-ko cha.-a` = eat (the) rice |
 | **Genitive (possessive)** | `-ni` | Of / 's | `ang-ni achak` = my dog |
-| **Dative (indirect object)** | `-na` | To / for | `ang-na boi-ko ron.-ing-a` = giving me a book |
+| **Dative (indirect object)** | `-na` | To / for | `ang-na ki·tap-ko ron.-ing-a` = giving me a book |
 | **Locative (time + space)** | `-o` | At / in / on | `nok-o` = at the house |
 | **Locative (spatial only)** | `-chi` | At / in (place) | — |
 | **Instrumental ("with/by means of")** | `-chi` / `-cha` | With, by means of | `hat-dur-cha dok-a` = hit with a hammer |
@@ -265,7 +265,7 @@ Ang-a bi-ko nik-a   = I see her   (Subject + Object-ko + Verb)
 
 **With indirect object:**
 ```
-Bi-song ang-na boi-ko ron.-ing-a   = They are giving me a book
+Bi-song ang-na ki·tap-ko ron.-ing-a   = They are giving me a book
 (Subject + IO-na + DO-ko + Verb-progressive)
 ```
 
@@ -350,7 +350,7 @@ kat-gip-a mande    = the man who runs / the running man
 | My dog | Ang-ni achak | genitive `-ni` |
 | Your hand | Nang-ni jak | genitive `-ni` |
 | At the house | Nok-o | locative `-o` |
-| Giving me a book | Ang-na boi-ko ron.-ing-a | dative `-na` + accusative `-ko` |
+| Giving me a book | Ang-na ki·tap-ko ron.-ing-a | dative `-na` + accusative `-ko` |
 | I see her | Ang-a bi-ko nik-a | subject (no marker) + object `-ko` |
 | 2 dogs | Mang-gni achak | classifier `mang-` |
 | 3 people | Sak-gitam mande | classifier `sak-` |

@@ -81,7 +81,7 @@ _Last updated: 2026-06-14_
 |---|---|---|---|---|---|---|---|
 | Accusative (object) | `-ko` | ✅ | ✅ | — | ✅ | ✅ (`mi-ko`, `Angako`) | ✅ **CONFIRMED ALL** |
 | Genitive (possessive) | `-ni` | ✅ `ang-ni achak` | ✅ | — | ✅ | — | ✅ **CONFIRMED** |
-| Dative (to/for) | `-na` | ✅ `ang-na boi-ko` | — | — | ✅ | — | ✅ **CONFIRMED** |
+| Dative (to/for) | `-na` | ✅ `ang-na ki·tap-ko` | — | — | ✅ | — | ✅ **CONFIRMED** |
 | Locative (time+space) | `-o` | ✅ `nok-o` | — | — | ✅ | — | ✅ **CONFIRMED** |
 | Locative (spatial) | `-chi` | ✅ | — | — | ✅ | — | ✅ **CONFIRMED** |
 | Instrumental | `-chi`/`-cha` | ✅ `hat-dur-cha` | — | — | ✅ | — | ✅ **CONFIRMED** |
@@ -162,7 +162,7 @@ _Last updated: 2026-06-14_
 | `ang-ni pi.-sa nok-o cha.-ja-ing-a` | My child is not eating at home | S1 Burling | ✅ GOLD | ✅ USE |
 | `Ua mi-ko brea-na re.anga` | She went to buy rice | S1 Burling | ✅ GOLD | ✅ USE |
 | `Ang-a bi-ko nik-a` | I see her | S1 Burling | ✅ GOLD | ✅ USE |
-| `Bi-song ang-na boi-ko ron.-ing-a` | They are giving me a book | S1 Burling | ✅ GOLD | ✅ USE |
+| `Bi-song ang-na ki·tap-ko ron.-ing-a` | They are giving me a book | S1 Burling | ✅ GOLD | ✅ USE |
 | `Ang-a hat-dur-cha dok-a` | I hit with a hammer | S1 Burling | ✅ GOLD | ✅ USE |
 | `Nok nap-e, a-song-jok` | Having entered the house, I sat down | S1 Burling | ✅ GOLD | ✅ USE |
 | `Ang-ni achak` | My dog | S1 Burling | ✅ GOLD | ✅ USE |

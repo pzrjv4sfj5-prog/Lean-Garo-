@@ -263,5 +263,54 @@ npm run build 2>&1 | tail -3
 
 ---
 
+## ORTHOGRAPHY NOTE — RAKA (·) vs HYPHEN (-)
+
+**Problem:** Throughout the codebase, hyphens `-` are being used where the Garo
+raka (glottal stop, written as `·` interpunct) should appear. These are different:
+- `-` (hyphen) = word separator or suffix connector — grammatical/structural
+- `·` (raka/interpunct U+00B7) = glottal stop — phonetic, part of the word itself
+
+**Examples of incorrect hyphen usage that should be raka:**
+```
+WRONG         CORRECT       Word
+bi-ko       → bi·ko         (accusative of bi = plant prefix)
+ki-tap      → ki·tap        = book
+do-o        → do·o          = bird
+cha-a       → cha·a         = eat (present)
+re-anga     → re·anga       = went
+ron-a       → ron·a         = give
+nik-a       → nik·a         = see
+```
+
+**Rule (Burling S1 GOLD):** The raka (raised dot) represents the glottal stop [ʔ].
+It appears at the END of a syllable and is part of the word's pronunciation.
+In typing it is represented by the interpunct `·` (U+00B7), NOT a hyphen.
+
+**What Claude A needs to do:**
+1. Audit `master_dictionary.json` — find all entries where `·` should be present
+   but a hyphen `-` is used in word-internal positions
+2. Audit `src/translationEngine.js` IRREGULAR_VERBS and PURPOSE_MAP for same issue
+3. Audit `src/data/corrections.json` for same issue
+4. The encoding fix `U+02D9 → U+00B7` already applied (commit f06ba90) handles the
+   source data, but manual hyphen-as-raka errors may still exist
+
+**From our dictionary — confirmed correct raka usage:**
+```
+Ki·tap = book          do·o = bird         cha· = eat (root)
+re· = go (root)        ron· = give (root)   nik· = see (root)
+mi· = rice (root?)     mang-sa = one (classifier+number, hyphen correct here)
+```
+
+**Hyphen IS correct in these cases (suffix connectors, not raka):**
+```
+mang-gni  = classifier-number (hyphen = structural connector)  ✅
+sak-gitam = classifier-number ✅
+ang-ni    = pronoun-genitive ✅
+nok-o     = noun-locative ✅
+cha·-ja   = verb root·-negative (raka on root, hyphen before suffix) ✅
+```
+
+---
+
 _Claude B — Platform Side_
 _Reference: docs/GARO_GRAMMAR_VALIDATED.md | docs/GARO_GRAMMAR_REFERENCE.md_
