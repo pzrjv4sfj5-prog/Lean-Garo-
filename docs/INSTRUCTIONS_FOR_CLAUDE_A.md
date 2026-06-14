@@ -180,13 +180,32 @@ is clearly plural AND the context benefits from marking it.
 **Add:**
 ```json
 "i want to sleep": "Anga tusina sikenga",
-"sleep": "tusina",
-"to sleep": "tusina"
+"to sleep": "tusina",
+"i am sleeping": "Anga tusienga"
 ```
+
 **And in IRREGULAR_VERBS:**
 ```js
-'sleep': 'tusina',    // (check current value — was 'tusia-na' if present)
+'sleep': 'tusina',    // infinitive form — "to sleep" (check current value, was 'tusia-na')
 ```
+
+**Important distinction — two valid forms of "sleep":**
+
+| English | Garo | Form | When to use |
+|---|---|---|---|
+| Sleep! / Go to sleep! | `Tusibo` | Imperative (`tusi` + `-bo`) | Telling/commanding someone to sleep |
+| to sleep / sleeping | `tusina` | Infinitive (`tusi` + `-na`) | "I want to sleep", "I need to sleep" |
+| I am sleeping | `Anga tusienga` | Progressive (`tusi` + `-eng-a`) | Ongoing action |
+
+**Current corrections.json already has:**
+- `"go to sleep"` → `"Tusibo"` ✅ correct (imperative)
+
+**What is still missing:**
+- `"i want to sleep"` → `"Anga tusina sikenga"` (infinitive + want)
+- `"sleep"` as a standalone noun/infinitive → `"tusina"`
+
+**Do NOT change `Tusibo`** — it is native speaker verified and academically correct
+(`-bo` = imperative suffix, confirmed Burling S1 GOLD).
 
 ---
 
