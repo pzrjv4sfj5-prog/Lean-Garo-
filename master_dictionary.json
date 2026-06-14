@@ -49048,5 +49048,37 @@
     "pos": null,
     "classifier": "mang",
     "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "let's go to market",
+    "garo": "Hai Bajal Anti Re·na",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "let's go to the market",
+    "garo": "Hai Bajal Anti Re·na",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "bajal",
+    "garo": "bajal",
+    "category": "travel",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "anti",
+    "garo": "Anti",
+    "category": "travel",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/native-speaker"
   }
 ]
