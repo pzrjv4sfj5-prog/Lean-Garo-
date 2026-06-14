@@ -49032,5 +49032,21 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "ant",
+    "garo": "Smilchak",
+    "category": "animals",
+    "pos": null,
+    "classifier": "mang",
+    "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "ants",
+    "garo": "Smilchak",
+    "category": "animals",
+    "pos": null,
+    "classifier": "mang",
+    "notes": "VERIFIED/native-speaker"
   }
 ]
