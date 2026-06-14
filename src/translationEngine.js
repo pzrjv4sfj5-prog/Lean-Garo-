@@ -313,8 +313,10 @@ function assembleGrammar(grammar) {
 export async function translate(input) {
   if (!input || typeof input !== 'string') return { garo: '', method: 'empty', confidence: 0 };
 
-  const cleaned = input.trim();
-  const lower = cleaned.toLowerCase();
+  const cleaned = input.trim().replace(/’/g, "'");
+  // Normalize: strip apostrophes for lookup consistency
+  const normalizedForLookup = cleaned.toLowerCase().replace(/['']/g, '');
+  const lower = cleaned.toLowerCase().replace(/[''\u2019]/g, '');
   const words = lower.split(/\s+/);
 
   // 1. Corrections
