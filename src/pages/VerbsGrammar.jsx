@@ -5,48 +5,50 @@ export default function VerbsGrammar() {
   const [selectedVerbRoot, setSelectedVerbRoot] = useState('cha·a')
 
   const verbRoots = {
-    'cha·a': { en: 'eat', examples: ['cha·enga: eating', 'cha·aha: ate', 'cha·gen: will eat'] },
-    're·a': { en: 'walk', examples: ['re·enga: walking', 're·aha: walked', 're·gen: will walk'] },
-    'nika': { en: 'see', examples: ['NIKAenga: seeing', 'nik·aha: saw', 'nik·gen: will see'] },
-    'agan·a': { en: 'speak', examples: ['agan·enga: speaking', 'agan·aha: spoke', 'agan·gen: will speak'] },
+    'cha·a': { en: 'eat', examples: ['cha·enga: (I am) eating', 'cha·aha: ate', 'cha·gen: will eat', 'cha·bo: Eat! (imperative)', 'cha·ja: does not eat'] },
+    're·anga': { en: 'go', examples: ['re·angenga: (I am) going', 're·anga: went', 're·anggen: will go', 'Tusibo: Go to sleep! (imperative)', 're·ang-ja: does not go'] },
+    'nik·a': { en: 'see', examples: ['nik·enga: (I am) seeing', 'nik·aha: saw', 'nik·gen: will see'] },
+    'agan·a': { en: 'speak / say', examples: ['agan·enga: speaking', 'agan·aha: spoke', 'agan·gen: will speak'] },
     'on·a': { en: 'give', examples: ['on·enga: giving', 'on·aha: gave', 'on·gen: will give'] },
+    'tusina': { en: 'sleep', examples: ['tusienga: (I am) sleeping', 'tusieaha: slept', 'tusibo: Sleep! (imperative)'] },
+    'brea-na': { en: 'buy', examples: ['brea-enga: buying', 'brea-aha: bought', 'brea-gen: will buy'] },
   }
 
   const classifierRules = [
     {
-      classifier: 'Mang',
+      classifier: 'Mang-',
       use_for: 'Animals, Birds, Fish, Insects',
       examples: [
-        'Achak sa·mang (one dog)',
-        'Do·o mang-gni (two chickens)',
-        'Na·tok gittam·mang (three fish)'
+        'mang-sa achak (one dog)',
+        'mang-gni achak (two dogs)',
+        'mang-bonga do·o (five birds)'
       ]
     },
     {
-      classifier: 'Sak',
+      classifier: 'Sak-',
       use_for: 'People, Persons, Humans',
       examples: [
-        'Manderang sa·sak (one person)',
-        'Mande gni·sak (two children)',
-        'Skigipa gittam·sak (three teachers)'
+        'sak-sa mande (one person)',
+        'sak-gni mande (two people)',
+        'sak-gitam mande (three people)'
       ]
     },
     {
-      classifier: 'Gong',
+      classifier: 'Gong-',
       use_for: 'Money, Coins, Currency',
       examples: [
-        'Tangka sa·gong (one rupee)',
-        'Tangka gni·gong (two rupees)',
-        'Tangka bonga·gong (five rupees)'
+        'gong-sa tangka (one rupee)',
+        'gong-gni tangka (two rupees)',
+        'gong-bonga tangka (five rupees)'
       ]
     },
     {
-      classifier: 'King',
+      classifier: 'King-',
       use_for: 'Books, Paper, Leaves, Thin Objects',
       examples: [
-        'Ki·tap sa·king (one book)',
-        'Lekka gni·king (two papers)',
-        'Bijak gittam·king (three leaves)'
+        'king-sa ki·tap (one book)',
+        'king-gni ki·tap (two books)',
+        'king-gitam ki·tap (three books)'
       ]
     },
     {

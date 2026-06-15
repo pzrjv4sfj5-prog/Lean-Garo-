@@ -68,10 +68,14 @@ export default function Translator() {
   }
 
   const examples = [
-    { en: 'hi', garo: 'Salam' },
-    { en: 'hello how are you', garo: 'Salam, Na·a namengama?' },
-    { en: 'thank you', garo: 'Mitela' },
+    { en: 'hello', garo: 'Salam / Namengama' },
+    { en: 'thank you', garo: 'Mittela' },
     { en: 'good morning', garo: 'Pringnam' },
+    { en: 'i love you', garo: 'Ang·a nangna kasa·a' },
+    { en: 'i want to eat', garo: 'Anga cha·na sikenga' },
+    { en: "let's go to market", garo: 'Hai Bajal Anti Re·na' },
+    { en: '2 dogs', garo: 'mang-gni achak' },
+    { en: 'she went to buy rice', garo: 'Ua mi-ko brea-na re·anga' },
   ]
 
   const handleExample = (example) => {

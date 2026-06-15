@@ -13,14 +13,14 @@ Live Site: `https://lean-garo.onrender.com`
 git config --global commit.gpgsign false
 git config --global user.email "pzrjv4sfj5@privaterelay.appleid.com"
 git config --global user.name "pzrjv4sfj5-prog"
-git remote set-url origin https://YOUR_GITHUB_PAT@github.com/pzrjv4sfj5-prog/Lean-Garo-.git
-# (Replace YOUR_GITHUB_PAT with the actual token — ask the user)
+git remote set-url origin https://[GITHUB_PAT]@github.com/pzrjv4sfj5-prog/Lean-Garo-.git
 git pull origin main
 ```
 
 ---
 
-## FILE OWNERSHIP
+## FILE OWNERSHIP — CRITICAL
+
 Claude A owns (your files):
 ```
 src/translationEngine.js
@@ -32,6 +32,7 @@ src/data/phrase_maps.js
 src/data/corrections.json
 master_dictionary.json
 src/compiled_dict.json
+garo_dictionary.json        ← KEY FILE THIS SESSION
 ```
 
 Claude B owns (never touch):
@@ -54,90 +55,157 @@ npm run build to verify after every change
 
 ---
 
-## CURRENT STATE (as of afb433a)
+## CURRENT STATE
 
 ```
-Last commit: afb433a (Claude B docs)
-Last Claude A commit: f94668f
+Last commit: [see git log -1 --oneline after pull]
 Build: ✅ PASS
-Dictionary: 7,318 entries (master_dictionary.json)
-compiled_dict: 5,662 keys
+Dictionary: 7,330 entries (master_dictionary.json)
+compiled_dict: 5,665 keys
 Corrections: 115 entries
-Categories: 21
 ```
 
 ---
 
-## WHAT YOU DID IN YOUR LAST SESSION (f94668f)
+## WHAT CLAUDE A DID LAST SESSION (7f2c34e)
 
-You added 31 new corrections covering:
-
-**Past tense (corrections-based):**
-- `i ate rice` → `Anga mi cha·aha` ✅
-- `i ate` → `Anga cha·aha` ✅
-- `i drank water` → `Anga chi ringaha` ✅
-- `i slept` → `Anga tusieaha` ✅
-- `i ran` → `Anga kataha` ✅
-
-**Negation (corrections-based):**
-- `i am not eating` → `Anga cha·ja` ✅
-- `i did not eat` → `Anga cha·ja-aha` ✅
-- `i will not go` → `Anga re·ang-ja-gen` ✅
-- `do not go` → `Re·angna-be` ✅
-
-**Genitive/possessive (corrections-based):**
-- `my dog` → `ang-ni achak` ✅
-- `my name` → `ang-ni ming` ✅
-- `my mother` → `ang-ni ama` ✅
-- `your name` → `nang-ni ming` ✅
-- `her name` / `his name` → `ua-ni ming` ✅
-
-**Locative (corrections-based):**
-- `at home` → `nok-o` ✅
-- `in the market` → `bajal-o` ✅
-- `at school` → `skul-o` ✅
-- `in meghalaya` → `Meghalaya-o` ✅
-
-**Sleep fix:**
-- `i want to sleep` → `Anga tusina sikenga` ✅ (fixed from `tusia·na` → `tusina`)
-- `sleep` (standalone) → `Tusibo` ⚠️ SEE NOTE BELOW
+Good work — you added 31 corrections:
+- ✅ Past tense: `i ate rice`, `i ran`, `i slept`, `i drank water`
+- ✅ Negation: `i am not eating`, `i did not eat`, `i will not go`, `do not go`
+- ✅ Genitive: `my dog`, `my name`, `my mother`, `your name`, `her name`
+- ✅ Locative: `at home`, `in the market`, `at school`
+- ✅ Sleep: `sleep=tusina`, `i want to sleep`, `i slept`, `i am sleeping`
+- ✅ Progressive: `i am going`, `i am sleeping`
+- ✅ Apostrophe normalization added
 
 ---
 
-## ONE ISSUE TO FIX IMMEDIATELY
+## CURRENT TEST BASELINE (run to verify before starting)
 
-### `sleep` standalone → wrong output
-**Current:** `"sleep"` → `"Tusibo"` [correction]
-**Problem:** `Tusibo` = imperative ("Sleep!" — command to someone).
-As a standalone noun/infinitive, `sleep` should = `tusina`.
-
-**Fix in `src/data/corrections.json`:**
-```json
-"sleep": "tusina"
+```bash
+node --input-type=module << 'EOF'
+import { translate } from './src/translationEngine.js';
+const tests = [
+  '2 dogs','3 people','5 birds',
+  "let's go to market","dog bit me",
+  'this is not good','i do not understand',
+  'go to sleep','i want to sleep','sleep',
+  'i am eating','my dog','at home',
+];
+for (const t of tests) {
+  const r = await translate(t);
+  console.log(`"${t}" -> "${r.garo}" [${r.method}]`);
+}
+EOF
 ```
-(Change `Tusibo` → `tusina` for the `"sleep"` key only.)
 
-**Why:**
-| Form | Garo | Use |
-|---|---|---|
-| `go to sleep` / `sleep!` | `Tusibo` | Imperative — telling someone to sleep ✅ keep |
-| `sleep` (noun/infinitive) | `tusina` | Infinitive form |
-| `i want to sleep` | `Anga tusina sikenga` | Already correct ✅ |
-| `i slept` | `Anga tusieaha` | Past tense ✅ |
+Expected issues you will see:
+- `"3 people"` → `"gittam"` [morphology] ❌ REGRESSION
+- `"i am eating"` → `"Anga chaoenga"` ❌ wrong root (`chao` instead of `cha·`)
 
 ---
 
-## PRIORITY TASKS FOR THIS SESSION
+## PRIORITY TASKS THIS SESSION
 
-Read `docs/INSTRUCTIONS_FOR_CLAUDE_A.md` for full details.
-Summary of what Claude B researched and needs you to implement:
+### TASK 1 — URGENT: Clean `garo_dictionary.json` contamination
 
-### P1 — Apostrophe normalization at INPUT level
-Currently you have duplicate correction entries for `let's/lets` variants.
-Fix the root cause — normalize input BEFORE any lookup in `translationEngine.js`:
-
+**Root cause found by Claude B:**
+`prepare-data.js` merges THREE files:
 ```js
-// Add at top of translate() function, before corrections lookup:
+const dict1 = normalizeFile('garo_dictionary.json');   // ← CONTAMINATED
+const dict2 = normalizeFile('garo_dictionary (2).json');
+const dict3 = normalizeFile('master_dictionary.json'); // clean ✅
+const merged = { ...dict1, ...dict2, ...dict3 };
+```
+
+`garo_dictionary.json` has 109 contamination entries — grammar notes,
+suffix tables, documentation — embedded as dictionary entries.
+They survive into `compiled_dict.json` because `master_dictionary.json`
+doesn't always override them.
+
+**Fix — run this script:**
+```js
+// save as clean_garo_dict.js in repo root, then: node clean_garo_dict.js
+const fs = require('fs');
+const dict = JSON.parse(fs.readFileSync('garo_dictionary.json'));
+const BAD_KEYS = [
+  'note','notes','suffix','rakka_note',
+  'state suffix (was/were)','location suffix',
+  'recipient suffix','plural marker','with (suffix)'
+];
+const cleaned = dict.filter(e => {
+  const eng = (e.english || e.English || '').trim().toLowerCase();
+  return !BAD_KEYS.includes(eng);
+});
+console.log(`Removed ${dict.length - cleaned.length} bad entries`);
+fs.writeFileSync('garo_dictionary.json', JSON.stringify(cleaned, null, 2));
+```
+Then: `npm run build`
+
+**Verify clean:**
+```bash
+node -e "
+const c = require('./src/compiled_dict.json');
+const bad = ['note','notes','suffix','plural marker',
+  'state suffix (was/were)','location suffix',
+  'recipient suffix','with (suffix)'].filter(k => c[k]);
+console.log('Bad remaining:', bad.length, bad);
+"
+```
+Expected: `Bad remaining: 0 []`
+
+---
+
+### TASK 2 — Fix `3 people` regression
+
+**Current:** `"3 people"` → `"gittam"` [morphology] ❌
+**Expected:** `"3 people"` → `"sak-gitam mande"` [classifier] ✅
+
+This was working before your last commit. Something in the classifier/number
+chain broke. Check `src/garo_classifier.js` and `src/number_engine.js`.
+
+Likely cause: `garo_dictionary.json` may have a `"people"` or `"person"` entry
+that the morphology step is hitting before the classifier step.
+
+**Quick diagnosis:**
+```bash
+node -e "
+const c = require('./src/compiled_dict.json');
+console.log('people:', c['people']);
+console.log('person:', c['person']);
+console.log('3 people:', c['3 people']);
+console.log('mande:', c['mande']);
+"
+```
+
+---
+
+### TASK 3 — Fix `i am eating` → wrong root `chao`
+
+**Current:** `"i am eating"` → `"Anga chaoenga"` [exact-phrase] ❌
+**Expected:** `"Anga cha·enga"` (progressive of `cha·` = eat)
+
+The `chao` root is coming from a `garo_dictionary.json` entry.
+Check:
+```bash
+node -e "
+const d = JSON.parse(require('fs').readFileSync('garo_dictionary.json'));
+const e = d.filter(x => x.english && x.english.toLowerCase().includes('eat'));
+e.forEach(x => console.log(JSON.stringify(x)));
+"
+```
+Find the entry with `chao` and either fix it or add a correction:
+```json
+"i am eating": "Anga cha·enga"
+```
+
+---
+
+### TASK 4 — Apostrophe normalization (if not already in engine)
+
+Check if input normalization is in `translationEngine.js`.
+If not, add before the corrections lookup:
+```js
 const normalized = lower
   .replace(/\blets\b/g, "let's")
   .replace(/\bdont\b/g, "don't")
@@ -145,132 +213,114 @@ const normalized = lower
   .replace(/\bdidnt\b/g, "didn't")
   .replace(/\bcant\b/g, "can't")
   .replace(/\bim\b/g, "i'm");
-// then use `normalized` instead of `lower` for lookups
 ```
 
-### P2 — Past tense ALGORITHMIC (not just corrections)
-You've added specific past tense corrections but any new verb fails.
-Implement algorithmically in `assembleSentenceSOV`:
+---
+
+### TASK 5 — Past tense ALGORITHMIC
+
+You've added specific corrections — great. But implement algorithmically
+so ANY verb works without a specific correction entry.
+
+**Rule (Burling GOLD):** past tense = verb root + `-aha`
 
 ```js
-// Irregular past → root map (expand this):
+// Add to IRREGULAR_VERBS or new PAST_TO_ROOT map:
 const PAST_TO_ROOT = {
-  'ate':'cha·', 'went':'re·', 'ran':'kat', 'came':'reba',
-  'saw':'nik·', 'gave':'ron·', 'said':'agan', 'drank':'ring',
-  'bit':'chika', 'slept':'tusi', 'bought':'brea'
+  'ate': 'cha·', 'went': 're·ang', 'ran': 'kat',
+  'came': 'reba', 'saw': 'nik·', 'gave': 'on·',
+  'said': 'agan·', 'drank': 'ring·', 'bit': 'chika',
+  'slept': 'tusi', 'bought': 'brea', 'fell': 'ga·ak',
 };
-// If word is in PAST_TO_ROOT: garoRoot + 'aha'
+// Then: if word in PAST_TO_ROOT → garoRoot + 'aha'
 ```
 
-### P3 — Progressive ALGORITHMIC
-Detect English `-ing` forms → strip to root → apply Garo `-eng-a`:
+---
+
+### TASK 6 — Progressive ALGORITHMIC
 
 ```js
-// If English word ends in -ing:
-// strip -ing → lookup root in dict → root + 'enga'
+// If English word ends in -ing (gerund):
+// strip -ing → lookup root → root + 'enga'
 // e.g. "eating" → "eat" → cha· → "cha·enga"
-```
 
-### P4 — Raka (·) vs Hyphen (-) audit — IMPORTANT
-Claude B found that some entries use `-` (hyphen) where `·` (raka/glottal stop) is needed.
-
-**Rule:**
-- `·` = glottal stop, part of the word itself (phonetic)
-- `-` = suffix connector (structural)
-
-**Audit needed in:**
-1. `src/translationEngine.js` — IRREGULAR_VERBS, PURPOSE_MAP
-2. `src/data/corrections.json` — check all entries
-3. `master_dictionary.json` — spot check verb roots
-
-**Examples of what to look for and fix:**
-```
-WRONG → CORRECT
-bi-ko → bi·ko        (plant prefix + case, raka on root)
-do-o  → do·o         (bird, already fixed in compiled_dict)
-cha-a → cha·a        (eat, raka on verb root)
-ron-a → ron·a        (give)
-nik-a → nik·a        (see)
-```
-
-**Hyphen IS correct (don't change these):**
-```
-mang-gni   ✅ (classifier-number)
-ang-ni     ✅ (pronoun-suffix)
-nok-o      ✅ (noun-locative)
-cha·-ja    ✅ (raka on root, then hyphen before suffix)
-```
-
-### P5 — Book = Ki·tap (not boi)
-The Burling academic example used `boi` as a placeholder word for "book".
-Our dictionary correctly has `book = Ki·tap`.
-
-**Check corrections.json and IRREGULAR_VERBS:**
-If any entry has `boi` as the Garo for "book", replace with `Ki·tap`.
-
-```bash
-# Quick check:
-grep -n "boi" src/data/corrections.json src/translationEngine.js
-```
-
-### P6 — Sleep corrections (from this session)
-Add to `src/data/corrections.json`:
-```json
-"i am sleeping": "Anga tusienga",
-"she is sleeping": "Ua tusienga",
-"he is sleeping": "Ua tusienga"
+// Handle common -ing forms explicitly:
+const PROGRESSIVE_MAP = {
+  'eating': 'cha·enga', 'going': 're·angenga',
+  'running': 'katenga', 'sleeping': 'tusienga',
+  'coming': 'rebaenga', 'seeing': 'nik·enga',
+  'speaking': 'agan·enga', 'giving': 'on·enga',
+  'buying': 'brea-enga',
+};
 ```
 
 ---
 
-## GRAMMAR RESOURCES AVAILABLE (read these first)
+### TASK 7 — Raka (·) vs Hyphen (-) audit
 
-Claude B compiled two reference docs from 13 academic + native sources:
+**Rule:** `·` (U+00B7) = glottal stop, part of the word.
+`-` = suffix connector, structural only.
 
-1. **`docs/GARO_GRAMMAR_REFERENCE.md`** — Complete grammar: all tenses, cases,
-   pronouns, classifiers, adverbial affixes, 60+ sentence examples. 456 lines.
+Check IRREGULAR_VERBS in `translationEngine.js` for entries using `-`
+where `·` should be. Example patterns to look for:
+```
+cha-a  → should be cha·a
+re-anga → should be re·anga
+nik-a  → should be nik·a
+on-a   → should be on·a
+```
 
-2. **`docs/GARO_GRAMMAR_VALIDATED.md`** — Cross-source comparison, each rule
-   tagged GOLD/HIGH/MEDIUM/LOW trust. Conflicts clearly flagged. 298 lines.
-
-3. **`docs/INSTRUCTIONS_FOR_CLAUDE_A.md`** — Full implementation guide with
-   code examples for all 8 priority tasks.
-
-**Key grammar facts confirmed GOLD (Burling 2003):**
-- Past tense: verb root + `-aha`
-- Present: verb root + `-a`
-- Perfect: verb root + `-jok` (change of state, result persists)
-- Progressive: verb root + `-eng-a` (A'chik) / `-ing-a` (Mandi)
-- Negation: insert `-ja-` between root and tense (`cha·ja` = does not eat)
-- Imperative: verb root + `-bo`
-- Negative imperative: verb root + `-na-be`
-- Object marker: `-ko` (accusative)
-- Possessive: `-ni` (genitive)
-- Locative: `-o`
-- Dative: `-na` (to/for)
+Hyphen IS correct in: `mang-gni`, `sak-gitam`, `ang-ni`, `nok-o`
+(classifier-number, pronoun-case, noun-locative separators)
 
 ---
 
-## QUICK VERIFICATION TEST — RUN AFTER EVERY CHANGE
+## GRAMMAR REFERENCE (read these docs)
+
+```
+docs/GARO_GRAMMAR_REFERENCE.md    — Complete grammar, 456 lines
+docs/GARO_GRAMMAR_VALIDATED.md    — 13 sources cross-compared, trust levels
+docs/INSTRUCTIONS_FOR_CLAUDE_A.md — Previous detailed instructions
+docs/pending_corrections.md       — Pending items list
+```
+
+**Key validated grammar (Burling GOLD):**
+```
+Present:    verb root + -a        (cha·a = eats)
+Past:       verb root + -aha      (cha·aha = ate)
+Perfect:    verb root + -jok      (cha·jok = has eaten)
+Prog:       verb root + -eng-a    (cha·enga = is eating)
+Future:     verb root + -gen      (cha·gen = will eat)
+Negative:   -ja- infix            (cha·ja = does not eat)
+Imperative: verb root + -bo       (cha·bo = Eat!)
+Neg imp:    verb root + -na-be    (cha·na-be = Don't eat!)
+```
+
+---
+
+## FULL VERIFICATION TEST — RUN AFTER EVERY CHANGE
+
 ```bash
 node --input-type=module << 'EOF'
 import { translate } from './src/translationEngine.js';
 const tests = [
-  // Existing passing
-  '2 dogs', '3 people', '5 birds',
-  "let's go to market", 'dog bit me',
-  'this is not good', 'i do not understand',
-  'go to sleep', 'i want to sleep',
-  // Past tense
-  'i ate rice', 'i ran', 'i slept',
+  // Classifiers
+  '2 dogs','3 people','5 birds','4 cats','one ant',
+  // Core corrections
+  "let's go to market","lets go to market",
+  'dog bit me','this is not good','i do not understand',
+  // Sleep
+  'go to sleep','i want to sleep','sleep','i slept',
+  // Progressive
+  'i am eating','i am going','i am sleeping',
+  // Past
+  'i ate rice','i ran','i drank water',
   // Negation
-  'i am not eating', 'i did not eat',
-  // Genitive
-  'my dog', 'my name', 'her name',
-  // Locative
-  'at home', 'in the market',
-  // Sleep fix
-  'sleep',
+  'i am not eating','i did not eat','do not go',
+  // Genitive + Locative
+  'my dog','my name','at home','in the market',
+  // Phrase map
+  'hello','thank you','good morning','i love you',
 ];
 for (const t of tests) {
   const r = await translate(t);
@@ -280,91 +330,25 @@ EOF
 npm run build 2>&1 | tail -3
 ```
 
-**Expected output for `"sleep"` after fix:** `"sleep" -> "tusina" [correction]`
-(Currently wrongly returning `Tusibo`)
+**Key expected outputs after fixes:**
+```
+"3 people"    -> "sak-gitam mande" [classifier]  ← fix TASK 2
+"i am eating" -> "Anga cha·enga"   [correction]  ← fix TASK 3
+"note"        -> "[UNKNOWN]"        [passthrough] ← fix TASK 1
+"suffix"      -> "[UNKNOWN]"        [passthrough] ← fix TASK 1
+```
 
 ---
 
 ## COMMIT CONVENTION
 ```bash
-git add src/data/corrections.json src/translationEngine.js  # (only your files)
-git commit --no-gpg-sign -m "fix(Claude A): description of what you fixed"
+git add src/data/corrections.json src/translationEngine.js garo_dictionary.json
+# (only your files — never touch src/pages/, src/components/, src/App.jsx)
+git commit --no-gpg-sign -m "fix(Claude A): description"
 git push origin main
 ```
 
 ---
 
-## URGENT — CONTAMINATION ENTRIES: ROOT CAUSE FOUND
-
-Claude B traced the full chain. Here is the exact problem:
-
-### Root Cause
-`prepare-data.js` merges THREE files in order:
-```js
-const dict1 = normalizeFile('garo_dictionary.json');     // ← SOURCE OF CONTAMINATION
-const dict2 = normalizeFile('garo_dictionary (2).json'); // not found / empty
-const dict3 = normalizeFile('master_dictionary.json');   // clean ✅
-const merged = { ...dict1, ...dict2, ...dict3 };
-```
-
-`garo_dictionary.json` contains **109 contamination entries** — notes, suffix tables,
-and grammar documentation embedded as dictionary entries. These merge into
-`compiled_dict.json` first, and since `master_dictionary.json` doesn't override
-all of them, they survive into the final compiled dict.
-
-Removing them from `master_dictionary.json` alone (as done in f94668f) was NOT enough —
-`garo_dictionary.json` also needs cleaning.
-
-### What Needs Removing from `garo_dictionary.json`
-All entries where `english` = any of these (case-insensitive):
-```
-"note", "notes", "suffix", "rakka_note",
-"state suffix (was/were)", "location suffix",
-"recipient suffix", "plural marker", "with (suffix)"
-```
-
-Quick removal script:
-```js
-const fs = require('fs');
-const dict = JSON.parse(fs.readFileSync('garo_dictionary.json'));
-const BAD_KEYS = ['note','notes','suffix','rakka_note',
-  'state suffix (was/were)','location suffix',
-  'recipient suffix','plural marker','with (suffix)'];
-const cleaned = dict.filter(e => {
-  const eng = (e.english || e.English || '').trim().toLowerCase();
-  return !BAD_KEYS.includes(eng);
-});
-console.log(`Removed ${dict.length - cleaned.length} entries`);
-fs.writeFileSync('garo_dictionary.json', JSON.stringify(cleaned, null, 2));
-```
-Then: `npm run build` to recompile.
-
-### Verify After Fix
-```bash
-node -e "
-const c = require('./src/compiled_dict.json');
-const bad = Object.keys(c).filter(k => ['note','notes','suffix','rakka_note',
-  'state suffix (was/were)','location suffix','recipient suffix',
-  'plural marker','with (suffix)'].includes(k));
-console.log('Remaining bad keys:', bad.length, bad);
-"
-```
-Expected: `Remaining bad keys: 0 []`
-
-### Also: `3 people` REGRESSED
-Was: `sak-gitam mande` [classifier] ✅
-Now: `gittam` [morphology] ❌
-
-Claude B detected this in testing after your last commit. Something in the
-classifier or number lookup chain broke for people. Please investigate
-`src/garo_classifier.js` and `src/number_engine.js`.
-
-### Also: `i am eating` → `Anga chaoenga` — odd `chao` form
-Expected `cha·enga`. The `chao` form suggests a dict entry for "eating" has
-`chao` as the Garo root. Check `garo_dictionary.json` for an `eating` entry
-with `chao` and correct it to `cha·` or `cha·enga`.
-
----
-
 _Prepared by Claude B — Platform Side_
-_Full grammar research in docs/GARO_GRAMMAR_VALIDATED.md_
+_Grammar research: docs/GARO_GRAMMAR_VALIDATED.md_
