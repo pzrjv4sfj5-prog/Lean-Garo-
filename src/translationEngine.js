@@ -325,6 +325,32 @@ function normalizeInput(text) {
     .trim();
 }
 
+
+// ── Algorithmic past tense (Burling GOLD: root + -aha) ───────────────────────
+const PAST_TO_ROOT = {
+  'ate':'cha·','went':'re·ang','ran':'kat','came':'reba',
+  'saw':'nik·','gave':'on·','said':'agan','drank':'ring·',
+  'bit':'chika','slept':'tusi','bought':'brea','fell':'ga·ak',
+  'wore':'gim·','spoke':'agan','told':'agan','heard':'knachik·',
+  'thought':'gisik·','forgot':'gua','cried':'grap·','washed':'su·gal',
+  'sold':'pal·','taught':'ski·','learned':'ski·','prayed':'bi·a',
+  'sang':'bit·','danced':'ruru','sat':'asong·','stood':'chadat',
+};
+
+// ── Algorithmic progressive (Burling GOLD: root + -enga for A'chik) ───────────
+const PROGRESSIVE_MAP = {
+  'eating':'cha·enga','going':'re·angenga','running':'katenga',
+  'sleeping':'tusienga','coming':'rebaenga','drinking':'ringenga',
+  'working':'dakenga','studying':'poraenga','praying':'bi·aenga',
+  'speaking':'aganenga','listening':'knachik-enga','looking':'ni·enga',
+  'cooking':'song·enga','washing':'su·galaenga','buying':'breaenga',
+  'selling':'palaenga','teaching':'skiaenga','learning':'skiaenga',
+  'playing':'kal·enga','sitting':'asongenga','standing':'chadatenga',
+  'waiting':'sengenga','laughing':'ka·dingenga','crying':'grapenga',
+  'walking':'re·enga','writing':'seaenga','reading':'poraenga',
+  'singing':'bitenga','dancing':'ruruaenga','helping':'betoienga',
+};
+
 export async function translate(input) {
   if (!input || typeof input !== 'string') return { garo: '', method: 'empty', confidence: 0 };
 

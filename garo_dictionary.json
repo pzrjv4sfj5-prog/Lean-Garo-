@@ -4180,32 +4180,12 @@
     "garo": "dak·ja"
   },
   {
-    "english": "State suffix (was/were)",
-    "garo": "-ara"
-  },
-  {
-    "english": "Location suffix",
-    "garo": "noun + chi"
-  },
-  {
-    "english": "Recipient suffix",
-    "garo": "person + na"
-  },
-  {
-    "english": "Plural marker",
-    "garo": "-chim"
-  },
-  {
     "english": "Adverb 'well'",
     "garo": "namen"
   },
   {
     "english": "Quickly (adverb)",
     "garo": "tarake"
-  },
-  {
-    "english": "With (suffix)",
-    "garo": "ming"
   },
   {
     "english": "How many",
@@ -4428,16 +4408,8 @@
     "garo": "Donga"
   },
   {
-    "english": "suffix",
-    "garo": "tai"
-  },
-  {
     "english": "example",
     "garo": "pil·tai (again)"
-  },
-  {
-    "english": "note",
-    "garo": "Never translate English SVO word order directly into Garo"
   },
   {
     "english": "description",
@@ -4690,10 +4662,6 @@
   {
     "english": "pos",
     "garo": "verb"
-  },
-  {
-    "english": "notes",
-    "garo": "Khagen = will do/should do (future)"
   },
   {
     "english": "we /us (incl.)",
@@ -9312,32 +9280,12 @@
     "garo": "verb + ong·ja / -ja"
   },
   {
-    "english": "State suffix (was/were)",
-    "garo": "-ara"
-  },
-  {
-    "english": "Location suffix",
-    "garo": "noun + chi"
-  },
-  {
-    "english": "Recipient suffix",
-    "garo": "person + na"
-  },
-  {
-    "english": "Plural marker",
-    "garo": "-chim"
-  },
-  {
     "english": "Adverb 'well'",
     "garo": "namen"
   },
   {
     "english": "Quickly (adverb)",
     "garo": "tarake"
-  },
-  {
-    "english": "With (suffix)",
-    "garo": "ming"
   },
   {
     "english": "Why",
@@ -9640,208 +9588,104 @@
     "garo": "Donga"
   },
   {
-    "english": "suffix",
-    "garo": "a"
-  },
-  {
     "english": "example",
     "garo": "cha·a (ate), re·ang·a (went)"
-  },
-  {
-    "english": "suffix",
-    "garo": "aha"
   },
   {
     "english": "example",
     "garo": "reba·aha (came), cha·aha (ate)"
   },
   {
-    "english": "suffix",
-    "garo": "enga/oenga"
-  },
-  {
     "english": "example",
     "garo": "cha·enga (eating), re·angenga (going)"
-  },
-  {
-    "english": "suffix",
-    "garo": "gen/en"
   },
   {
     "english": "example",
     "garo": "cha·gen (will eat), reba·gen (will come)"
   },
   {
-    "english": "suffix",
-    "garo": "manjok"
-  },
-  {
     "english": "example",
     "garo": "cha·manjok (has eaten)"
-  },
-  {
-    "english": "suffix",
-    "garo": "man+aha"
   },
   {
     "english": "example",
     "garo": "cha·man·aha (had eaten)"
   },
   {
-    "english": "suffix",
-    "garo": "bo"
-  },
-  {
     "english": "example",
     "garo": "cha·bo (eat!), on·bo (give!)"
-  },
-  {
-    "english": "suffix",
-    "garo": "ama"
   },
   {
     "english": "example",
     "garo": "cha·ama? (did you eat?)"
   },
   {
-    "english": "suffix",
-    "garo": "engma"
-  },
-  {
     "english": "example",
     "garo": "cha·engma? (are you eating?)"
-  },
-  {
-    "english": "suffix",
-    "garo": "genma"
   },
   {
     "english": "example",
     "garo": "cha·genma? (will you eat?)"
   },
   {
-    "english": "suffix",
-    "garo": "na mangenma"
-  },
-  {
     "english": "example",
     "garo": "cha·na mangenma? (can you eat?)"
-  },
-  {
-    "english": "suffix",
-    "garo": "mangenva"
   },
   {
     "english": "example",
     "garo": "Hoe mangenva (yes I can)"
   },
   {
-    "english": "suffix",
-    "garo": "na mangengma"
-  },
-  {
     "english": "example",
     "garo": "asong·na mangengma? (may I sit?)"
-  },
-  {
-    "english": "suffix",
-    "garo": "ong·ja"
   },
   {
     "english": "example",
     "garo": "cha·ong·ja (not eating)"
   },
   {
-    "english": "suffix",
-    "garo": "ja"
-  },
-  {
     "english": "example",
     "garo": "ui·ja (don't know)"
-  },
-  {
-    "english": "suffix",
-    "garo": "gipa"
   },
   {
     "english": "example",
     "garo": "dak·gipa (worker)"
   },
   {
-    "english": "suffix",
-    "garo": "ani"
-  },
-  {
     "english": "example",
     "garo": "a·gan·ani (speech)"
-  },
-  {
-    "english": "suffix",
-    "garo": "ni"
   },
   {
     "english": "example",
     "garo": "nok·ni (of the house)"
   },
   {
-    "english": "suffix",
-    "garo": "chi"
-  },
-  {
     "english": "example",
     "garo": "bajal·chi (at/to market)"
-  },
-  {
-    "english": "suffix",
-    "garo": "na"
   },
   {
     "english": "example",
     "garo": "ang·na (to me)"
   },
   {
-    "english": "suffix",
-    "garo": "ming"
-  },
-  {
     "english": "example",
     "garo": "ang·ming (with me)"
-  },
-  {
-    "english": "suffix",
-    "garo": "ko"
   },
   {
     "english": "example",
     "garo": "bi·ko (him/it-object)"
   },
   {
-    "english": "suffix",
-    "garo": "bata"
-  },
-  {
     "english": "example",
     "garo": "nam·bata (best)"
-  },
-  {
-    "english": "suffix",
-    "garo": "bea"
   },
   {
     "english": "example",
     "garo": "nam·bea (better)"
   },
   {
-    "english": "suffix",
-    "garo": "tai"
-  },
-  {
     "english": "example",
     "garo": "pil·tai (again)"
-  },
-  {
-    "english": "note",
-    "garo": "The rakka (·) is part of the root word, NOT a suffix. Suffixes are clean strings — never prepend · to a suffix. e.g. root=re·ang + suffix=a → re·ang·a"
   },
   {
     "english": "description",
@@ -11224,10 +11068,6 @@
     "garo": "SOV — Subject + Object + Verb"
   },
   {
-    "english": "note",
-    "garo": "Never translate English SVO word order directly into Garo"
-  },
-  {
     "english": "I ate rice",
     "garo": "Anga mi cha·a"
   },
@@ -12140,16 +11980,8 @@
     "garo": "Toa"
   },
   {
-    "english": "notes",
-    "garo": "CORRECT — not Cha·toa"
-  },
-  {
     "english": "garo",
     "garo": "Touja"
-  },
-  {
-    "english": "notes",
-    "garo": "Toa + negation -ja"
   },
   {
     "english": "sweet",
@@ -14552,10 +14384,6 @@
     "garo": "Damo / Gisep sengbo"
   },
   {
-    "english": "notes",
-    "garo": "Damo = common spoken wait; Sengbo also valid"
-  },
-  {
     "english": "no problem / never mind",
     "garo": "Maming ba ong·ja"
   },
@@ -14584,10 +14412,6 @@
     "garo": "Inde·a?"
   },
   {
-    "english": "notes",
-    "garo": "Surprise/interest"
-  },
-  {
     "english": "really?",
     "garo": "Bebema?"
   },
@@ -14600,16 +14424,8 @@
     "garo": "Hai cha·ha"
   },
   {
-    "english": "notes",
-    "garo": "Hai = expression particle for collective action"
-  },
-  {
     "english": "garo",
     "garo": "Hai re·naha"
-  },
-  {
-    "english": "notes",
-    "garo": "Spoken short: re·naha"
   },
   {
     "english": "let's sleep",
@@ -14622,10 +14438,6 @@
   {
     "english": "garo",
     "garo": "Tarake re·babo!"
-  },
-  {
-    "english": "notes",
-    "garo": "Tarake = quickly (adverb)"
   },
   {
     "english": "be careful!",
@@ -14776,16 +14588,8 @@
     "garo": "Sala"
   },
   {
-    "english": "notes",
-    "garo": "⚠ Also means 'to pull'"
-  },
-  {
     "english": "garo",
     "garo": "Sala"
-  },
-  {
-    "english": "notes",
-    "garo": "Same as drive"
   },
   {
     "english": "push",
@@ -14796,16 +14600,8 @@
     "garo": "Jroa"
   },
   {
-    "english": "notes",
-    "garo": "⚠ Also means 'sting/stinging sensation'"
-  },
-  {
     "english": "garo",
     "garo": "Maldoa / Gadoa"
-  },
-  {
-    "english": "notes",
-    "garo": "Both valid"
   },
   {
     "english": "jump",
@@ -14824,10 +14620,6 @@
     "garo": "Rorama / Roama"
   },
   {
-    "english": "notes",
-    "garo": "Rorama more common"
-  },
-  {
     "english": "fly",
     "garo": "Bila"
   },
@@ -14844,16 +14636,8 @@
     "garo": "Teka"
   },
   {
-    "english": "notes",
-    "garo": "Locking a door"
-  },
-  {
     "english": "garo",
     "garo": "Goa"
-  },
-  {
-    "english": "notes",
-    "garo": "⚠ Goata = to throw"
   },
   {
     "english": "throw",
@@ -14868,16 +14652,8 @@
     "garo": "Nia"
   },
   {
-    "english": "notes",
-    "garo": "All three map to same Garo word"
-  },
-  {
     "english": "garo",
     "garo": "Nitata"
-  },
-  {
-    "english": "notes",
-    "garo": "Intensive form of nia"
   },
   {
     "english": "show",
@@ -14896,24 +14672,12 @@
     "garo": "Rua"
   },
   {
-    "english": "notes",
-    "garo": "⚠ As noun means 'axe'"
-  },
-  {
     "english": "garo",
     "garo": "Nonga"
   },
   {
-    "english": "notes",
-    "garo": "Makeup or paint"
-  },
-  {
     "english": "garo",
     "garo": "Aka"
-  },
-  {
-    "english": "notes",
-    "garo": "Plucking fruit"
   },
   {
     "english": "turn (page/sheet)",
@@ -15040,10 +14804,6 @@
     "garo": "Wangala"
   },
   {
-    "english": "notes",
-    "garo": "Harvest festival of the Garos"
-  },
-  {
     "english": "traditional dance",
     "garo": "Do·krua"
   },
@@ -15060,24 +14820,12 @@
     "garo": "Mahari"
   },
   {
-    "english": "notes",
-    "garo": "Matrilineal clan system"
-  },
-  {
     "english": "garo",
     "garo": "A·chik daka"
   },
   {
-    "english": "notes",
-    "garo": "Passed through mother's line"
-  },
-  {
     "english": "garo",
     "garo": "Nokma"
-  },
-  {
-    "english": "notes",
-    "garo": "Also: chief / rich person"
   },
   {
     "english": "traditional house",
@@ -15086,10 +14834,6 @@
   {
     "english": "garo",
     "garo": "A·ba daka"
-  },
-  {
-    "english": "notes",
-    "garo": "Traditional farming"
   },
   {
     "english": "sacred grove",
@@ -15116,24 +14860,12 @@
     "garo": "Songsarek"
   },
   {
-    "english": "notes",
-    "garo": "Pre-Christian tradition"
-  },
-  {
     "english": "garo",
     "garo": "Mikrangni bimung gri"
   },
   {
-    "english": "notes",
-    "garo": "Don't see only with your eyes"
-  },
-  {
     "english": "garo",
     "garo": "Baksa nangchim·a, saksan sia"
-  },
-  {
-    "english": "notes",
-    "garo": "Together survive, alone perish"
   },
   {
     "english": "work hard now, rest later",
@@ -15152,16 +14884,8 @@
     "garo": "Mi gual-ata·bo ong·ja"
   },
   {
-    "english": "notes",
-    "garo": "Rice is sacred"
-  },
-  {
     "english": "garo",
     "garo": "Buring on·a, buring ra·a"
-  },
-  {
-    "english": "notes",
-    "garo": "Respect nature"
   },
   {
     "english": "truth always comes out",
@@ -15176,32 +14900,16 @@
     "garo": "Aio!"
   },
   {
-    "english": "notes",
-    "garo": "Surprise or wonder"
-  },
-  {
     "english": "garo",
     "garo": "Himanga!"
-  },
-  {
-    "english": "notes",
-    "garo": "Shock or dismay"
   },
   {
     "english": "garo",
     "garo": "Ei! / O!"
   },
   {
-    "english": "notes",
-    "garo": "Informal"
-  },
-  {
     "english": "garo",
     "garo": "Maiko nanga?"
-  },
-  {
-    "english": "notes",
-    "garo": "Casual greeting"
   },
   {
     "english": "no way! / impossible!",
@@ -15222,10 +14930,6 @@
   {
     "english": "garo",
     "garo": "Jala-gipa"
-  },
-  {
-    "english": "notes",
-    "garo": "From jalika (chilli)"
   },
   {
     "english": "let's hang out",
@@ -15258,10 +14962,6 @@
   {
     "english": "garo",
     "garo": "Re·naha ba!"
-  },
-  {
-    "english": "notes",
-    "garo": "ba = now/already filler"
   },
   {
     "english": "kind / gentle",
@@ -15832,56 +15532,28 @@
     "garo": "Na·a nang pen ko on·a mangenma?"
   },
   {
-    "english": "notes",
-    "garo": "On·a = give; mangenma = can you?"
-  },
-  {
     "english": "garo",
     "garo": "Hoe mangenva."
-  },
-  {
-    "english": "notes",
-    "garo": "Hoe = yes; mangenva = of course / certainly"
   },
   {
     "english": "garo",
     "garo": "Na·a box ko dena mangenma?"
   },
   {
-    "english": "notes",
-    "garo": "Dena = lift/carry"
-  },
-  {
     "english": "garo",
     "garo": "Na·a porikka sena mangenma?"
-  },
-  {
-    "english": "notes",
-    "garo": "Sena = write (ability form)"
   },
   {
     "english": "garo",
     "garo": "Na·ara ang·ming rebagenma?"
   },
   {
-    "english": "notes",
-    "garo": "Ming = with; rebagenma = will come?"
-  },
-  {
     "english": "garo",
     "garo": "Ang·a nangming reangen."
   },
   {
-    "english": "notes",
-    "garo": "Nangming = with you"
-  },
-  {
     "english": "garo",
     "garo": "Anga asongna mangengma?"
-  },
-  {
-    "english": "notes",
-    "garo": "Permission request"
   },
   {
     "english": "can you give me water?",
@@ -15892,136 +15564,68 @@
     "garo": "Na·a angna kasa·a ma?"
   },
   {
-    "english": "notes",
-    "garo": "Kasa·a = love; ma = question marker"
-  },
-  {
     "english": "garo",
     "garo": "Hoe, ang·a nangna kasa·a."
-  },
-  {
-    "english": "notes",
-    "garo": "Hoe = yes"
   },
   {
     "english": "garo",
     "garo": "Ang·a namengava."
   },
   {
-    "english": "notes",
-    "garo": "Namengava = I am fine (affirmative)"
-  },
-  {
     "english": "garo",
     "garo": "Hoe mangenva."
-  },
-  {
-    "english": "notes",
-    "garo": "Strong affirmative"
   },
   {
     "english": "garo",
     "garo": "Haiwa"
   },
   {
-    "english": "notes",
-    "garo": "Distal demonstrative — differs from Ua (that, nearby)"
-  },
-  {
     "english": "garo",
     "garo": "Badia / Badiya"
-  },
-  {
-    "english": "notes",
-    "garo": "Interrogative — badia (adj), badiya (standalone)"
   },
   {
     "english": "garo",
     "garo": "Bagita"
   },
   {
-    "english": "notes",
-    "garo": "Directional which"
-  },
-  {
     "english": "garo",
     "garo": "Baitarong / Baita"
-  },
-  {
-    "english": "notes",
-    "garo": "Baitarong = how many; Baita = how much"
   },
   {
     "english": "garo",
     "garo": "Sako"
   },
   {
-    "english": "notes",
-    "garo": "Object form of 'who'"
-  },
-  {
     "english": "garo",
     "garo": "Walgimik"
-  },
-  {
-    "english": "notes",
-    "garo": "Wal = night + gimik = whole/entire"
   },
   {
     "english": "garo",
     "garo": "Mija antio"
   },
   {
-    "english": "notes",
-    "garo": "Mija = last, antio = week (in)"
-  },
-  {
     "english": "garo",
     "garo": "Ming"
-  },
-  {
-    "english": "notes",
-    "garo": "Suffix: ang·ming = with me; nangming = with you"
   },
   {
     "english": "garo",
     "garo": "Ru·ute"
   },
   {
-    "english": "notes",
-    "garo": "As in arriving late"
-  },
-  {
     "english": "garo",
     "garo": "Namnikgipa"
-  },
-  {
-    "english": "notes",
-    "garo": "The one liked most"
   },
   {
     "english": "garo",
     "garo": "Chibata"
   },
   {
-    "english": "notes",
-    "garo": "Superlative of sweet"
-  },
-  {
     "english": "garo",
     "garo": "Bangbata"
   },
   {
-    "english": "notes",
-    "garo": "Superlative of bang·a (many/big)"
-  },
-  {
     "english": "garo",
     "garo": "Namen"
-  },
-  {
-    "english": "notes",
-    "garo": "As in 'wrote well'"
   },
   {
     "english": "win",
@@ -16032,40 +15636,20 @@
     "garo": "Dena"
   },
   {
-    "english": "notes",
-    "garo": "As in lift a box"
-  },
-  {
     "english": "garo",
     "garo": "Gama"
-  },
-  {
-    "english": "notes",
-    "garo": "Pay money"
   },
   {
     "english": "garo",
     "garo": "Olakiram"
   },
   {
-    "english": "notes",
-    "garo": "Place of worship"
-  },
-  {
     "english": "garo",
     "garo": "Chitthio"
   },
   {
-    "english": "notes",
-    "garo": "In the letter — chitthio = letter+location suffix"
-  },
-  {
     "english": "garo",
     "garo": "Adoko mande"
-  },
-  {
-    "english": "notes",
-    "garo": "Adoko = people count; mande = people"
   },
   {
     "english": "newspaper",
@@ -16076,24 +15660,12 @@
     "garo": "Bilongen nambata"
   },
   {
-    "english": "notes",
-    "garo": "Bilongen = will be; nambata = best"
-  },
-  {
     "english": "garo",
     "garo": "Room"
   },
   {
-    "english": "notes",
-    "garo": "Borrowed from English"
-  },
-  {
     "english": "garo",
     "garo": "Apple"
-  },
-  {
-    "english": "notes",
-    "garo": "Borrowed — no native Garo word"
   },
   {
     "english": "story",
@@ -16108,16 +15680,8 @@
     "garo": "Rong"
   },
   {
-    "english": "notes",
-    "garo": "Already in dictionary — confirmed here"
-  },
-  {
     "english": "garo",
     "garo": "Contact khagen"
-  },
-  {
-    "english": "notes",
-    "garo": "Khagen = will do/should do (future)"
   },
   {
     "english": "one person",
