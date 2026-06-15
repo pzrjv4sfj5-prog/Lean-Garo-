@@ -36,7 +36,7 @@
   "to see": "nina",
   "see": "nina",
   "i want to sleep": "Anga tusina sikenga",
-  "sleep": "Tusibo",
+  "sleep": "tusina",
   "to sleep": "tusina",
   "want": "sikenga",
   "wants": "sikenga",
@@ -111,5 +111,14 @@
   "at market": "bajal-o",
   "at church": "gilja-nok-o",
   "at school": "skul-o",
-  "in meghalaya": "Meghalaya-o"
+  "in meghalaya": "Meghalaya-o",
+  "i am sleeping": "Anga tusienga",
+  "she is sleeping": "Ua tusienga",
+  "he is sleeping": "Ua tusienga",
+  "we are sleeping": "An·ching tusienga",
+  "i am eating rice": "Anga mi cha·enga",
+  "she is eating": "Ua cha·enga",
+  "he is running": "Ua katenga",
+  "we are studying": "An·ching poraenga",
+  "they are working": "Uamang dakenga"
 }

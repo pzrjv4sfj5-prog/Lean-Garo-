@@ -310,6 +310,21 @@ function assembleGrammar(grammar) {
   return result;
 }
 
+
+// Input normalization — apostrophe contraction expansion
+function normalizeInput(text) {
+  return text
+    .toLowerCase()
+    .replace(/\blets\b/g, "let's")
+    .replace(/\bdont\b/g, "don't")
+    .replace(/\bdoesnt\b/g, "doesn't")
+    .replace(/\bdidnt\b/g, "didn't")
+    .replace(/\bcant\b/g, "can't")
+    .replace(/\bwont\b/g, "won't")
+    .replace(/\bim\b(?=\s)/g, "i'm")
+    .trim();
+}
+
 export async function translate(input) {
   if (!input || typeof input !== 'string') return { garo: '', method: 'empty', confidence: 0 };
 

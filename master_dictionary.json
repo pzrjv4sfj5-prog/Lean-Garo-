@@ -5225,26 +5225,6 @@
     "category": "general"
   },
   {
-    "english": "state suffix (was/were)",
-    "garo": "-ara",
-    "category": "general"
-  },
-  {
-    "english": "location suffix",
-    "garo": "noun + chi",
-    "category": "general"
-  },
-  {
-    "english": "recipient suffix",
-    "garo": "person + na",
-    "category": "general"
-  },
-  {
-    "english": "plural marker",
-    "garo": "-chim",
-    "category": "general"
-  },
-  {
     "english": "adverb 'well'",
     "garo": "namen",
     "category": "general"
@@ -5252,11 +5232,6 @@
   {
     "english": "quickly (adverb)",
     "garo": "tarake",
-    "category": "general"
-  },
-  {
-    "english": "with (suffix)",
-    "garo": "ming",
     "category": "general"
   },
   {
@@ -5525,18 +5500,8 @@
     "category": "general"
   },
   {
-    "english": "suffix",
-    "garo": "tai",
-    "category": "general"
-  },
-  {
     "english": "example",
     "garo": "pil·tai (again)",
-    "category": "general"
-  },
-  {
-    "english": "note",
-    "garo": "Never translate English SVO word order directly into Garo",
     "category": "general"
   },
   {
@@ -5847,11 +5812,6 @@
   {
     "english": "pos",
     "garo": "verb",
-    "category": "general"
-  },
-  {
-    "english": "notes",
-    "garo": "Khagen = will do/should do (future)",
     "category": "general"
   },
   {
@@ -15887,11 +15847,6 @@
   {
     "english": "word_order",
     "garo": "SOV",
-    "category": "general"
-  },
-  {
-    "english": "rakka_note",
-    "garo": "The rakka (·) is a phonetic marker belonging to the root word. Suffixes are always clean strings.",
     "category": "general"
   },
   {
