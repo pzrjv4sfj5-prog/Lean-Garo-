@@ -294,41 +294,75 @@ git push origin main
 
 ---
 
-## URGENT — CONTAMINATION ENTRIES IN master_dictionary.json
+## URGENT — CONTAMINATION ENTRIES: ROOT CAUSE FOUND
 
-Claude B found **9 meta/documentation entries** embedded in `master_dictionary.json`
-that are leaking into `compiled_dict.json` and are reachable by the engine.
+Claude B traced the full chain. Here is the exact problem:
 
-**These must be REMOVED from master_dictionary.json:**
-
-```json
-{ "english": "rakka_note",          "garo": "The rakka (·) is a phonetic marker belonging to the root word. Suffixes are always clean strings." }
-{ "english": "note",                "garo": "Never translate English SVO word order directly into Garo" }
-{ "english": "notes",               "garo": "Khagen = will do/should do (future)" }
-{ "english": "suffix",              "garo": "tai" }
-{ "english": "state suffix (was/were)", "garo": "-ara" }
-{ "english": "location suffix",     "garo": "noun + chi" }
-{ "english": "recipient suffix",    "garo": "person + na" }
-{ "english": "plural marker",       "garo": "-chim" }
-{ "english": "with (suffix)",       "garo": "ming" }
-```
-
-**Impact if left in:**
-- `"note"` → returns `"Never translate English SVO word order directly into Garo"` to users
-- `"suffix"` → returns `"tai"` (meaningless to users)
-- `"rakka_note"` → returns full documentation string to users
-- All 9 appear in compiled_dict — engine can serve them to live site
-
-**Fix:**
+### Root Cause
+`prepare-data.js` merges THREE files in order:
 ```js
-// In master_dictionary.json — delete all 9 entries above
-// Then run: npm run build  (prepare-data.js will recompile compiled_dict)
+const dict1 = normalizeFile('garo_dictionary.json');     // ← SOURCE OF CONTAMINATION
+const dict2 = normalizeFile('garo_dictionary (2).json'); // not found / empty
+const dict3 = normalizeFile('master_dictionary.json');   // clean ✅
+const merged = { ...dict1, ...dict2, ...dict3 };
 ```
 
-**Note on grammar info in these entries:**
-Some contain useful facts (e.g. `-ara` for state suffix, `-chim` for plural).
-Move these to `docs/GARO_GRAMMAR_REFERENCE.md` if not already there — don't lose the knowledge,
-just remove it from the dictionary where it doesn't belong.
+`garo_dictionary.json` contains **109 contamination entries** — notes, suffix tables,
+and grammar documentation embedded as dictionary entries. These merge into
+`compiled_dict.json` first, and since `master_dictionary.json` doesn't override
+all of them, they survive into the final compiled dict.
+
+Removing them from `master_dictionary.json` alone (as done in f94668f) was NOT enough —
+`garo_dictionary.json` also needs cleaning.
+
+### What Needs Removing from `garo_dictionary.json`
+All entries where `english` = any of these (case-insensitive):
+```
+"note", "notes", "suffix", "rakka_note",
+"state suffix (was/were)", "location suffix",
+"recipient suffix", "plural marker", "with (suffix)"
+```
+
+Quick removal script:
+```js
+const fs = require('fs');
+const dict = JSON.parse(fs.readFileSync('garo_dictionary.json'));
+const BAD_KEYS = ['note','notes','suffix','rakka_note',
+  'state suffix (was/were)','location suffix',
+  'recipient suffix','plural marker','with (suffix)'];
+const cleaned = dict.filter(e => {
+  const eng = (e.english || e.English || '').trim().toLowerCase();
+  return !BAD_KEYS.includes(eng);
+});
+console.log(`Removed ${dict.length - cleaned.length} entries`);
+fs.writeFileSync('garo_dictionary.json', JSON.stringify(cleaned, null, 2));
+```
+Then: `npm run build` to recompile.
+
+### Verify After Fix
+```bash
+node -e "
+const c = require('./src/compiled_dict.json');
+const bad = Object.keys(c).filter(k => ['note','notes','suffix','rakka_note',
+  'state suffix (was/were)','location suffix','recipient suffix',
+  'plural marker','with (suffix)'].includes(k));
+console.log('Remaining bad keys:', bad.length, bad);
+"
+```
+Expected: `Remaining bad keys: 0 []`
+
+### Also: `3 people` REGRESSED
+Was: `sak-gitam mande` [classifier] ✅
+Now: `gittam` [morphology] ❌
+
+Claude B detected this in testing after your last commit. Something in the
+classifier or number lookup chain broke for people. Please investigate
+`src/garo_classifier.js` and `src/number_engine.js`.
+
+### Also: `i am eating` → `Anga chaoenga` — odd `chao` form
+Expected `cha·enga`. The `chao` form suggests a dict entry for "eating" has
+`chao` as the Garo root. Check `garo_dictionary.json` for an `eating` entry
+with `chao` and correct it to `cha·` or `cha·enga`.
 
 ---
 
