@@ -79,6 +79,14 @@ export function toGaroNumber(n) {
   return null;
 }
 
+
+const IRREGULAR_PLURALS = {
+  'people': 'person', 'children': 'child', 'men': 'man',
+  'women': 'woman', 'mice': 'mouse', 'feet': 'foot',
+  'teeth': 'tooth', 'geese': 'goose', 'oxen': 'ox',
+  'sheep': 'sheep', 'fish': 'fish', 'deer': 'deer',
+};
+
 export function parseCountingPhrase(input) {
   if (!input) return null;
   const lower = input.toLowerCase().trim();
@@ -87,7 +95,7 @@ export function parseCountingPhrase(input) {
   const count = parseCount(words[0]);
   if (!count) return null;
   const englishNoun = words.slice(1).join(' ');
-  const singular = englishNoun.replace(/s$/, '');
+  const singular = IRREGULAR_PLURALS[englishNoun] || englishNoun.replace(/s$/, '');
   return { count, englishNoun: singular, originalNoun: englishNoun };
 }
 
