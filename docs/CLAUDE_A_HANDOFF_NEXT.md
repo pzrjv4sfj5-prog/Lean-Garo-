@@ -352,6 +352,66 @@ Neg imp:    verb root + -na-be    (cha·na-be = Don't eat!)
 
 ---
 
+## ⚠️ NEW BUG — Word Order Inconsistency in Past-Tense Questions
+
+**Found by native speaker correction (2026-06-16):**
+
+`"did you eat food"` currently produces `"Na·a Cha·a Mi"` — **WRONG**.
+Verb placed before Object, breaking SOV order.
+
+**Correct (native speaker verified):** `"Na·a Mi Cha·a"` (Subject → Object → Verb)
+
+**The engine is internally INCONSISTENT** — compare:
+```
+"i eat rice"          -> "Anga mi-ko cha·-a"      [grammar-assembly]  ✅ correct SOV
+"have you eaten food"  -> "Na·a Mi cha·manaha"     [sov-assembly]      ✅ correct SOV
+"did you eat food"     -> "Na·a Cha·a Mi"          [sov-assembly]      ❌ WRONG — verb before object
+```
+
+Both "have you eaten" and "did you eat" go through `sov-assembly`, but only
+the perfect-tense ("have you eaten") path orders correctly. The simple-past
+question path ("did you eat") has a bug — likely the question-detection logic
+("did" + verb) reorders the Object and Verb tokens incorrectly, or treats
+"did you eat" as a fixed two-word verb phrase and appends the object after
+instead of before.
+
+**Required fix:** ALL declarative AND question sentences must follow
+Subject → Object → Verb. Order does not change for questions in Garo —
+only a question particle/suffix (`-ma`) is added, the noun-verb order stays SOV.
+
+```
+Pattern to enforce everywhere in src/translationEngine.js (sov-assembly + grammar-assembly):
+  Subject (no marker) + Object (-ko if needed) + Verb (+ -ma if question)
+
+Examples:
+  "did you eat food?"      -> "Na·a mi-ko cha·aha ma?"   (Subject + Object + Verb-past-question)
+  "have you eaten food?"   -> "Na·a mi-ko cha·jok ma?"   (Subject + Object + Verb-perfect-question)
+  "do you eat rice?"       -> "Na·a mi-ko cha·a ma?"     (Subject + Object + Verb-present-question)
+```
+
+> Native speaker also confirmed: `"Naa Mi cha.aha ma?"` = "Have you eaten food?"
+> Note this uses `cha.aha` (simple past) + `ma` (question) for "have you eaten" —
+> slightly different from the `cha·manaha`/`cha·jok` perfect forms documented
+> earlier. May indicate simple past + question particle is the more natural
+> spoken form vs the formal perfect aspect. Worth checking with native speaker
+> which is more commonly used in casual speech.
+
+**Action for Claude A:**
+1. Find the question-detection code path for "did [subject] [verb] [object]" in `sov-assembly`
+2. Ensure Object is placed BEFORE Verb, not after, regardless of tense/question status
+3. Add `-ma` as question suffix on the verb (not as a separate trailing word)
+4. Test all four combinations: statement/question × simple-past/perfect
+
+**Add to corrections.json as immediate patch while algorithmic fix is pending:**
+```json
+"did you eat food": "Na·a mi-ko cha·aha ma",
+"have you eaten food": "Na·a mi-ko cha·aha ma",
+"did you eat": "Na·a cha·aha ma",
+"do you eat rice": "Na·a mi-ko cha·a ma"
+```
+
+---
+
 ## FULL VERIFICATION TEST — RUN AFTER EVERY CHANGE
 
 ```bash
