@@ -275,7 +275,61 @@ Hyphen IS correct in: `mang-gni`, `sak-gitam`, `ang-ni`, `nok-o`
 
 ---
 
-## GRAMMAR REFERENCE (read these docs)
+## ⚠️ TASK 2 UPDATE — ROOT CAUSE FOUND (Claude B verified)
+
+The `3 people` bug is **NOT** a dictionary issue — it's a **code bug** in
+`src/garo_classifier.js`, line 90:
+
+```js
+const singular = englishNoun.replace(/s$/, '');
+```
+
+This blindly strips trailing `s` from ANY noun. For `"people"` this produces
+`"peopl"` (broken) instead of `"person"`. The lookup then fails to find `"peopl"`
+in the dictionary and falls through to a bad fallback.
+
+**Fix — add an irregular plural exceptions map before the regex strip:**
+```js
+const IRREGULAR_PLURALS = {
+  'people': 'person',
+  'children': 'child',
+  'men': 'man',
+  'women': 'woman',
+  'mice': 'mouse',
+  'feet': 'foot',
+  'teeth': 'tooth',
+};
+
+export function parseCountingPhrase(input) {
+  if (!input) return null;
+  const lower = input.toLowerCase().trim();
+  const words = lower.split(/\s+/);
+  if (words.length < 2) return null;
+  const count = parseCount(words[0]);
+  if (!count) return null;
+  const englishNoun = words.slice(1).join(' ');
+  const singular = IRREGULAR_PLURALS[englishNoun] || englishNoun.replace(/s$/, '');
+  return { count, englishNoun: singular, originalNoun: englishNoun };
+}
+```
+
+**Also note:** `compiled_dict["person"]` currently returns `"man-de"` (hyphen).
+Should likely be `mande` per raka rules — verify and fix if this is a typo,
+not an intentional hyphen.
+
+**Verify after fix:**
+```bash
+node --input-type=module << 'EOF'
+import { translate } from './src/translationEngine.js';
+const r = await translate('3 people');
+console.log(r.garo, r.method);
+// Expected: "sak-gitam mande" [classifier]
+EOF
+```
+
+---
+
+
 
 ```
 docs/GARO_GRAMMAR_REFERENCE.md    — Complete grammar, 456 lines
