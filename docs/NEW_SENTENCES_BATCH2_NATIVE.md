@@ -57,33 +57,43 @@ different standalone entry — not a conflict, just already covered).
 | let's eat | Hai, cha·na! |
 | let's eat food | Hai, mi cha·na! |
 
-## Important Discrepancy to Flag — "dog bit me" vs "dog bite me"
+## RESOLVED — "dog bit me" vs "dog bite me" — confirmed tense distinction
 
-We already have in corrections.json:
-```
-"dog bit me" -> "Achak anga·ko chikaha"     (from earlier native speaker session)
-```
+User confirmed (2026-06-17): the difference between these two IS a genuine
+tense distinction, not a word-order variant or error.
 
-This new batch gives:
 ```
-"dog bite me" -> "Angko a·chak chika"        (different word order AND different verb form)
+"dog bit me"  (past)            -> "Achak Angko chikaha"   (-aha = past suffix)
+"dog bite me" (present/habitual) -> "Angko a·chak chika"    (no tense suffix = present/habitual)
 ```
 
-**Two real differences, not just tense:**
-1. **Word order:** `Achak anga·ko` (Dog-me) vs `Angko a·chak` (me-Dog) — opposite order!
-2. **Verb form:** `chikaha` (clearly past, `-aha` suffix) vs `chika` (root/present, no tense suffix)
+This confirms the Burling GOLD rule: verb root + `-aha` = past, verb root alone
+(or + `-a`) = present/habitual. Good — the grammar engine's tense logic is
+validated by this real example.
 
-This suggests:
-- "dog bit me" (past) = `Achak anga·ko chikaha`
-- "dog bite/bites me" (present/habitual) = `Angko a·chak chika` — OR the word order
-  difference could indicate both orders are acceptable in spoken Garo (OSV vs SOV,
-  which Burling confirms is grammatically possible since case markers disambiguate
-  roles regardless of order)
+**Note:** word order also differs between the two (Achak-first vs Angko-first).
+Per Burling, Garo allows flexible OSV/SOV order since case markers (here, `-ko`
+folded into `Angko`) disambiguate roles regardless of position. Both orders
+are likely acceptable; the existing correction entries don't need to be
+changed for word order, only the tense distinction matters.
 
-**Recommend asking the native speaker directly:** is `Angko a·chak chika` understood
-as present tense ("the dog bites me" / habitual), or as another valid word order for
-the same past-tense meaning? This affects whether we need both as separate corrections
-or should treat the OSV variant as the same past-tense meaning with flexible order.
+## CLEANUP COMPLETED — anga·ko → Angko standardization
+
+User requested (2026-06-17): replace all instances of `anga·ko` with `Angko`
+across the repository, since `Angko` is the correct contracted form
+(Ang + ko = "me" accusative).
+
+**Claude B fixed (docs files):**
+- `docs/NEW_SENTENCES_BATCH2_NATIVE.md` ✅
+- `docs/INSTRUCTIONS_FOR_CLAUDE_A.md` ✅
+
+**Still pending — Claude A files (run script below):**
+- `src/data/corrections.json` — 3 occurrences:
+  - `"dog bit me": "Achak anga·ko chikaha"` → `"Achak Angko chikaha"`
+  - `"the dog bit me": "Achak anga·ko chikaha"` → `"Achak Angko chikaha"`
+  - `"a dog bit me": "Achak anga·ko chikaha"` → `"Achak Angko chikaha"`
+
+**Script:** `docs/fix_angako.cjs` — run with `node docs/fix_angako.cjs`
 
 ## New Vocabulary Captured (for master_dictionary.json — optional)
 These standalone words emerged from the sentences and could be useful dictionary

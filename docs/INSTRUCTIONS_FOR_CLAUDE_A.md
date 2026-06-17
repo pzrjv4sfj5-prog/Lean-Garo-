@@ -18,8 +18,8 @@ languagesgulper.com, native speaker input). Two validated reference docs are now
 All previously flagged issues are now fixed:
 - ✅ `3 people` → `sak-gitam mande`
 - ✅ `5 birds` → `mang-bonga do·o`
-- ✅ `dog bit me` → `Achak anga·ko chikaha`
-- ✅ `the dog bit me` → `Achak anga·ko chikaha`
+- ✅ `dog bit me` → `Achak Angko chikaha`
+- ✅ `the dog bit me` → `Achak Angko chikaha`
 - ✅ `lets go to market` → `Hai Bajal Anti Re·na`
 - ✅ `lets go to the market` → `Hai Bajal Anti Re·na`
 - ✅ `this is not good` → `Ia nama-gija`
