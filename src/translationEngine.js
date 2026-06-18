@@ -72,35 +72,35 @@ function applyTense(verbRoot, tense) {
 const IRREGULAR_VERBS = {
   'went':'re·anga','gone':'re·anga','going':'re·angenga',
   'ate':'cha·aha','eaten':'cha·man·aha','eating':'cha·oenga',
-  'saw':'nik·aha','seen':'nik-aha','seeing':'nikenga',
-  'told':'agan-aha','said':'aganaha','saying':'aganenga',
-  'came':'re·ba-aha','coming':'re·baenga','want':'sikenga','wants':'sikenga','need':'sikenga',
+  'saw':'nik·aha','seen':'nik·aha','seeing':'nikenga',
+  'told':'agan·aha','said':'aganaha','saying':'aganenga',
+  'came':'re·ba·aha','coming':'re·baenga','want':'sikenga','wants':'sikenga','need':'sikenga',
   'drank':'ring·aha','drinking':'ringenga',
   'gave':'on·aha','giving':'onenga',
   'ran':'kat·aha','running':'katenga',
-  'slept':'tus-aha','sleeping':'tusenga',
-  'worked':'dak-aha','working':'dakenga',
-  'laughed':'ka·ding-aha','laughing':'ka·dingeng',
+  'slept':'tus·aha','sleeping':'tusenga',
+  'worked':'dak·aha','working':'dakenga',
+  'laughed':'ka·ding·aha','laughing':'ka·dingeng',
   'washed':'su·gala','washing':'su·galenga',
-  'bought':'brea-aha','buying':'breaenga',
-  'sold':'pala-aha','selling':'palaenga',
-  'heard':'knachik-aha','hearing':'knachik-enga',
-  'thought':'gisik-aha','thinking':'gisik-o nanga',
+  'bought':'brea·aha','buying':'breaenga',
+  'sold':'pala·aha','selling':'palaenga',
+  'heard':'knachik·aha','hearing':'knachik·enga',
+  'thought':'gisik·aha','thinking':'gisik·o nanga',
   'forgot':'guala','forgetting':'gualenga',
-  'cried':'grap-aha','crying':'grapenga',
+  'cried':'grap·aha','crying':'grapenga',
   'walked':'re·aha','walking':'re·enga',
   'stood':'chadenga','standing':'chadenga',
-  'sat':'asong-aha','sitting':'asong-enga',
-  'searched':'am-e-nik-na',
-  'searching':'am-e-nik-na',
-  'gossiped':'a-gan-jo-jo-na',
-  'gossiping':'a-gan-jo-jo-na',
-  'conquered':'am-na',
-  'began':'a-ba-cheng-na',
-  'begun':'a-ba-cheng-na',
-  'spoke':'a-gan-na',
-  'answered':'a-gan-chak-na',
-  'discovered':'am-e-nik-na',
+  'sat':'asong·aha','sitting':'asong·enga',
+  'searched':'am·e·nik·na',
+  'searching':'am·e·nik·na',
+  'gossiped':'a·gan·jo·jo·na',
+  'gossiping':'a·gan·jo·jo·na',
+  'conquered':'am·na',
+  'began':'a·ba·cheng·na',
+  'begun':'a·ba·cheng·na',
+  'spoke':'a·gan·na',
+  'answered':'a·gan·chak·na',
+  'discovered':'am·e·nik·na',
 };
 
 const POSSESSIVES = {
@@ -109,7 +109,7 @@ const POSSESSIVES = {
 };
 
 const PURPOSE_VERBS = {
-  'see':'nik-a-na','eat':'cha·na','drink':'ring·na',
+  'see':'nik·a·na','eat':'cha·na','drink':'ring·na',
   'meet':'chap·na','buy':'brea·na','sell':'pala·na',
   'go':'re·ang·na','come':'re·ba·na','work':'dak·na',
   'study':'pora·na','pray':'bi·a·na','help':'betoi·na',
@@ -196,7 +196,7 @@ export function analyzeGrammar(input) {
       const objEng = objectWords.join(' ');
       const lastWord = objectWords[objectWords.length-1];
       const objGaro = lookupPhrase(objEng) || lookupGaro(objEng) || lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
-      object = { english: objEng, garo: objGaro, withMarker: objGaro + '-ko' };
+      object = { english: objEng, garo: objGaro, withMarker: objGaro + '·ko' };
     }
 
     return {
@@ -268,16 +268,16 @@ function fuzzyMatch(input) {
 
 // ── PURPOSE VERB MAP ─────────────────────────────────────────────────────────
 const PURPOSE_MAP = {
-  'see':'nina','meet':'chap-na','buy':'brea-na','sell':'pala-na',
-  'eat':'cha-na','drink':'ring-na','study':'pora-na','read':'pora-na',
-  'work':'dak-na','pray':'bi·a-na','go':'re·ang-na','come':'re·ba-na',
-  'help':'betoi-na','find':'mia-na','give':'on·a-na','take':'ra·a-na',
-  'speak':'a-gan-na','talk':'a-gan-na','learn':'skia-na','teach':'skia on-na',
-  'cook':'song·a·na','wash':'su·gala·na','sleep':'tusia·na','play':'kal·a-na',
+  'see':'nina','meet':'chap·na','buy':'brea·na','sell':'pala·na',
+  'eat':'cha·na','drink':'ring·na','study':'pora·na','read':'pora·na',
+  'work':'dak·na','pray':'bi·a·na','go':'re·ang·na','come':'re·ba·na',
+  'help':'betoi·na','find':'mia·na','give':'on·a·na','take':'ra·a·na',
+  'speak':'a·gan·na','talk':'a·gan·na','learn':'skia·na','teach':'skia on·na',
+  'cook':'song·a·na','wash':'su·gala·na','sleep':'tusia·na','play':'kal·a·na',
   'run':'kat·na','walk':'re·a·na','write':'sea·na','ask':'sing·a·na',
-  'answer':'a-gan-chak-na','begin':"a'ba-cheng-na",'start':"a'ba-cheng-na",
-  'search':'am-e-nik-na','look':'ni-na','listen':'knachik-na',
-  'visit':'nina re·ang-na','sing':'bit-na','dance':'ruru-na',
+  'answer':'a·gan·chak·na','begin':"a'ba·cheng·na",'start':"a'ba·cheng·na",
+  'search':'am·e·nik·na','look':'ni·na','listen':'knachik·na',
+  'visit':'nina re·ang·na','sing':'bit·na','dance':'ruru·na',
 };
 
 function assembleGrammar(grammar) {
@@ -287,15 +287,15 @@ function assembleGrammar(grammar) {
 
   // Possessive + Object + -ko marker
   if (grammar.possessive && grammar.object && grammar.object.garo !== '[UNKNOWN]') {
-    parts.push(grammar.possessive.garo + ' ' + grammar.object.garo.toLowerCase() + '-ko');
+    parts.push(grammar.possessive.garo + ' ' + grammar.object.garo.toLowerCase() + '·ko');
   } else if (grammar.object && grammar.object.garo !== '[UNKNOWN]') {
-    parts.push(grammar.object.garo.toLowerCase() + '-ko');
+    parts.push(grammar.object.garo.toLowerCase() + '·ko');
   }
 
   // Purpose clause
   if (grammar.purposeAction) {
     const eng = grammar.purposeAction.english.toLowerCase();
-    const purposeGaro = PURPOSE_MAP[eng] || grammar.purposeAction.garo || (eng + '-na');
+    const purposeGaro = PURPOSE_MAP[eng] || grammar.purposeAction.garo || (eng + '·na');
     parts.push(purposeGaro);
   }
 
@@ -342,7 +342,7 @@ const PROGRESSIVE_MAP = {
   'eating':'cha·enga','going':'re·angenga','running':'katenga',
   'sleeping':'tusienga','coming':'rebaenga','drinking':'ringenga',
   'working':'dakenga','studying':'poraenga','praying':'bi·aenga',
-  'speaking':'aganenga','listening':'knachik-enga','looking':'ni·enga',
+  'speaking':'aganenga','listening':'knachik·enga','looking':'ni·enga',
   'cooking':'song·enga','washing':'su·galaenga','buying':'breaenga',
   'selling':'palaenga','teaching':'skiaenga','learning':'skiaenga',
   'playing':'kal·enga','sitting':'asongenga','standing':'chadatenga',
