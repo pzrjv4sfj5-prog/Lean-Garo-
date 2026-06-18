@@ -351,16 +351,16 @@ export const PHRASE_MAPS = {
   'strong': 'Bilaka',
 
   // Language preservation phrases
-  'speak garo every day': 'An-ching Agana salanti.',
+  'speak garo every day': 'An·ching Agana salanti.',
   "don't forget your language": 'Nangni ba-sa-ko gualboja.',
-  'teach garo to your children': 'Aganako bi·sa-rangna skie on·bo.',
+  'teach garo to your children': 'Aganako bi·sa·rangna skie on·bo.',
   'let us keep our language alive': 'Hai an-chingni ba-sa-ko tangtang ong·atbo.',
   'our language is our identity': 'An-chingni ba-sa an-chingni chin.',
-  'use garo when speaking with elders': 'Dal·gipa-rang baksa Agana aganbo.',
+  'use garo when speaking with elders': 'Dal·gipa·rang baksa Agana aganbo.',
   'preserve our culture and language': 'An-ching culture aro ba-sa-ko nangchongmotgen.',
-  'we should speak garo more often': 'An-ching Agana bang·bate agangen.',
+  'we should speak garo more often': 'An·ching Agana bang·bate agangen.',
   'let us practice garo together': 'Hai sakprak Agana skiebo.',
-  'the future of garo is in our hands': 'Aganani mikkangchi an-chingni jak-o dong·a.',
+  'the future of garo is in our hands': 'Aganani mikkangchi an·chingni jak·o dong·a.',
   // Conversational responses
   'really?': 'Bebema?',
   'really': 'Bebema?',

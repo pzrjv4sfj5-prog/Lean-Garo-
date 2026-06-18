@@ -63,19 +63,19 @@ export function getClassifier(noun) {
 function getClassifierSuffix(count) {
   const n = parseInt(count);
   if (NUMBERS[n]) return NUMBERS[n];
-  if (n > 10 && n < 20) return `chiking-ma-${NUMBERS[n-10]||n-10}`;
+  if (n > 10 && n < 20) return `chiking·ma·${NUMBERS[n-10]||n-10}`;
   return String(n);
 }
 
 export function buildClassifierPhrase(classifier, count) {
-  return `${classifier}-${getClassifierSuffix(count)}`;
+  return `${classifier}·${getClassifierSuffix(count)}`;
 }
 
 export function toGaroNumber(n) {
   const num = parseInt(n);
   if (isNaN(num)) return null;
   if (NUMBERS[num]) return NUMBERS[num];
-  if (num > 10 && num < 20) return `chiking-ma-${NUMBERS[num-10]}`;
+  if (num > 10 && num < 20) return `chiking·ma·${NUMBERS[num-10]}`;
   return null;
 }
 

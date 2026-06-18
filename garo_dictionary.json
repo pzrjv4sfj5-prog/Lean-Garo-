@@ -1,47 +1,47 @@
 [
   {
     "english": "one dog",
-    "garo": "achak mang-sa"
+    "garo": "achak mang·sa"
   },
   {
     "english": "two birds",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "three fish",
-    "garo": "na·tok mang-gittam"
+    "garo": "na·tok mang·gittam"
   },
   {
     "english": "one person",
-    "garo": "mande sak-sa"
+    "garo": "mande sak·sa"
   },
   {
     "english": "two teachers",
-    "garo": "skigipa sak-gni"
+    "garo": "skigipa sak·gni"
   },
   {
     "english": "one coin",
-    "garo": "tangka gong-sa"
+    "garo": "tangka gong·sa"
   },
   {
     "english": "five rupees",
-    "garo": "tangka gong-bonga"
+    "garo": "tangka gong·bonga"
   },
   {
     "english": "one book",
-    "garo": "ki·tap king-sa"
+    "garo": "ki·tap king·sa"
   },
   {
     "english": "three leaves",
-    "garo": "bijak king-gittam"
+    "garo": "bijak king·gittam"
   },
   {
     "english": "one chair",
-    "garo": "chokki ge-sa"
+    "garo": "chokki ge·sa"
   },
   {
     "english": "two knives",
-    "garo": "kettal ge-gni"
+    "garo": "kettal ge·gni"
   },
   {
     "english": "den· (to carry)",
@@ -125,7 +125,7 @@
   },
   {
     "english": "pomelo",
-    "garo": "Narang-gira"
+    "garo": "Narang·gira"
   },
   {
     "english": "blackberry",
@@ -137,7 +137,7 @@
   },
   {
     "english": "wild berry",
-    "garo": "Bol-meseng"
+    "garo": "Bol·meseng"
   },
   {
     "english": "pumpkin",
@@ -169,7 +169,7 @@
   },
   {
     "english": "garlic",
-    "garo": "Rasin-gipok"
+    "garo": "Rasin·gipok"
   },
   {
     "english": "ginger",
@@ -193,7 +193,7 @@
   },
   {
     "english": "spinach",
-    "garo": "Palong-sam"
+    "garo": "Palong·sam"
   },
   {
     "english": "broad beans",
@@ -437,7 +437,7 @@
   },
   {
     "english": "run",
-    "garo": "Kat-a"
+    "garo": "Kat·a"
   },
   {
     "english": "speak",
@@ -445,7 +445,7 @@
   },
   {
     "english": "listen",
-    "garo": "Knachik-bo"
+    "garo": "Knachik·bo"
   },
   {
     "english": "see / look / watch",
@@ -461,7 +461,7 @@
   },
   {
     "english": "work",
-    "garo": "Dak-a"
+    "garo": "Dak·a"
   },
   {
     "english": "play",
@@ -469,7 +469,7 @@
   },
   {
     "english": "sit",
-    "garo": "Asong-a"
+    "garo": "Asong·a"
   },
   {
     "english": "stand",
@@ -477,11 +477,11 @@
   },
   {
     "english": "laugh",
-    "garo": "Ka·ding-a"
+    "garo": "Ka·ding·a"
   },
   {
     "english": "cry",
-    "garo": "Grap-a"
+    "garo": "Grap·a"
   },
   {
     "english": "buy",
@@ -493,11 +493,11 @@
   },
   {
     "english": "come",
-    "garo": "Re·ba-a"
+    "garo": "Re·ba·a"
   },
   {
     "english": "go",
-    "garo": "Re·ang-a"
+    "garo": "Re·ang·a"
   },
   {
     "english": "father",
@@ -517,7 +517,7 @@
   },
   {
     "english": "Grandfather",
-    "garo": "Abi-tang"
+    "garo": "Abi·tang"
   },
   {
     "english": "grandmother",
@@ -617,7 +617,7 @@
   },
   {
     "english": "blue",
-    "garo": "Tang-sim"
+    "garo": "Tang·sim"
   },
   {
     "english": "yellow",
@@ -705,7 +705,7 @@
   },
   {
     "english": "Twenty-one",
-    "garo": "Kolgrik-sa"
+    "garo": "Kolgrik·sa"
   },
   {
     "english": "Thirty",
@@ -749,11 +749,11 @@
   },
   {
     "english": "Second (ordinal)",
-    "garo": "Gni-prangni"
+    "garo": "Gni·prangni"
   },
   {
     "english": "Third (ordinal)",
-    "garo": "Gittam-prangni"
+    "garo": "Gittam·prangni"
   },
   {
     "english": "Last",
@@ -769,7 +769,7 @@
   },
   {
     "english": "Double",
-    "garo": "Gni-bita"
+    "garo": "Gni·bita"
   },
   {
     "english": "Zero / None",
@@ -881,7 +881,7 @@
   },
   {
     "english": "to fall (stumble/trip)",
-    "garo": "Nang·ting-a"
+    "garo": "Nang·ting·a"
   },
   {
     "english": "to fall (slip)",
@@ -917,7 +917,7 @@
   },
   {
     "english": "to feel (emotionally)",
-    "garo": "Gisik-o nanga"
+    "garo": "Gisik·o nanga"
   },
   {
     "english": "to hurt (pain)",
@@ -965,7 +965,7 @@
   },
   {
     "english": "close",
-    "garo": "Chip-a"
+    "garo": "Chip·a"
   },
   {
     "english": "push",
@@ -973,7 +973,7 @@
   },
   {
     "english": "pull / drive",
-    "garo": "Sal-a (⚠ same word)"
+    "garo": "Sal·a (⚠ same word)"
   },
   {
     "english": "break (glass/stick)",
@@ -981,11 +981,11 @@
   },
   {
     "english": "tear (paper/cloth)",
-    "garo": "Gritt-a"
+    "garo": "Gritt·a"
   },
   {
     "english": "throw",
-    "garo": "Goata / Gal-a"
+    "garo": "Goata / Gal·a"
   },
   {
     "english": "catch",
@@ -993,7 +993,7 @@
   },
   {
     "english": "wash",
-    "garo": "Su·srong-a"
+    "garo": "Su·srong·a"
   },
   {
     "english": "clean",
@@ -1033,7 +1033,7 @@
   },
   {
     "english": "lightning",
-    "garo": "Mikka-kimma"
+    "garo": "Mikka·kimma"
   },
   {
     "english": "fire",
@@ -1085,7 +1085,7 @@
   },
   {
     "english": "it is sunny",
-    "garo": "Sal-seng·a"
+    "garo": "Sal·seng·a"
   },
   {
     "english": "it is cold",
@@ -1097,7 +1097,7 @@
   },
   {
     "english": "flood",
-    "garo": "Mikka-brimba"
+    "garo": "Mikka·brimba"
   },
   {
     "english": "drought",
@@ -1105,7 +1105,7 @@
   },
   {
     "english": "earthquake",
-    "garo": "A·a-moa"
+    "garo": "A·a·moa"
   },
   {
     "english": "fog / mist",
@@ -1113,15 +1113,15 @@
   },
   {
     "english": "rainbow",
-    "garo": "Gitchak-rong jal·ang"
+    "garo": "Gitchak·rong jal·ang"
   },
   {
     "english": "sunrise",
-    "garo": "Sal-aram"
+    "garo": "Sal·aram"
   },
   {
     "english": "sunset",
-    "garo": "Sal-ikram"
+    "garo": "Sal·ikram"
   },
   {
     "english": "house",
@@ -1169,7 +1169,7 @@
   },
   {
     "english": "broom",
-    "garo": "Sal-re-at"
+    "garo": "Sal·re·at"
   },
   {
     "english": "clothes",
@@ -1221,7 +1221,7 @@
   },
   {
     "english": "noon",
-    "garo": "Sal-jatchi"
+    "garo": "Sal·jatchi"
   },
   {
     "english": "evening",
@@ -1273,7 +1273,7 @@
   },
   {
     "english": "day before yesterday",
-    "garo": "Me-si-ja"
+    "garo": "Me·si·ja"
   },
   {
     "english": "later",
@@ -1285,15 +1285,15 @@
   },
   {
     "english": "early",
-    "garo": "Bakkan / Pring-seng"
+    "garo": "Bakkan / Pring·seng"
   },
   {
     "english": "late",
-    "garo": "Ja·man-chak-a"
+    "garo": "Ja·man·chak·a"
   },
   {
     "english": "never",
-    "garo": "Pangnan-ba (ja)"
+    "garo": "Pangnan·ba (ja)"
   },
   {
     "english": "shirt",
@@ -1333,7 +1333,7 @@
   },
   {
     "english": "earring",
-    "garo": "Nachil-ganna"
+    "garo": "Nachil·ganna"
   },
   {
     "english": "big",
@@ -1349,7 +1349,7 @@
   },
   {
     "english": "short",
-    "garo": "Kan·dik-a"
+    "garo": "Kan·dik·a"
   },
   {
     "english": "tall",
@@ -1381,7 +1381,7 @@
   },
   {
     "english": "rich",
-    "garo": "Nokma / Man·e-cha·gipa"
+    "garo": "Nokma / Man·e·cha·gipa"
   },
   {
     "english": "poor",
@@ -1425,11 +1425,11 @@
   },
   {
     "english": "office",
-    "garo": "Kam-ka·chakani"
+    "garo": "Kam·ka·chakani"
   },
   {
     "english": "church",
-    "garo": "Gilja-nok"
+    "garo": "Gilja·nok"
   },
   {
     "english": "shop",
@@ -1437,7 +1437,7 @@
   },
   {
     "english": "hospital",
-    "garo": "Hospital / Sam-nok"
+    "garo": "Hospital / Sam·nok"
   },
   {
     "english": "up",
@@ -1449,11 +1449,11 @@
   },
   {
     "english": "left",
-    "garo": "Jak-asi"
+    "garo": "Jak·asi"
   },
   {
     "english": "right",
-    "garo": "Jak-ra"
+    "garo": "Jak·ra"
   },
   {
     "english": "front",
@@ -1505,7 +1505,7 @@
   },
   {
     "english": "farmer",
-    "garo": "Game-cha·gipa"
+    "garo": "Game·cha·gipa"
   },
   {
     "english": "teacher",
@@ -1513,11 +1513,11 @@
   },
   {
     "english": "student",
-    "garo": "Porai-gipa"
+    "garo": "Porai·gipa"
   },
   {
     "english": "doctor",
-    "garo": "Doctor / Sam-on·gipa"
+    "garo": "Doctor / Sam·on·gipa"
   },
   {
     "english": "nurse",
@@ -1525,27 +1525,27 @@
   },
   {
     "english": "driver",
-    "garo": "Gari-chalai-gipa"
+    "garo": "Gari·chalai·gipa"
   },
   {
     "english": "carpenter",
-    "garo": "Bal-sol-gipa"
+    "garo": "Bal·sol·gipa"
   },
   {
     "english": "blacksmith",
-    "garo": "Sil-dak-gipa"
+    "garo": "Sil·dak·gipa"
   },
   {
     "english": "shopkeeper",
-    "garo": "Dokan-dakgipa"
+    "garo": "Dokan·dakgipa"
   },
   {
     "english": "tailor",
-    "garo": "Ba·ra-sikgipa"
+    "garo": "Ba·ra·sikgipa"
   },
   {
     "english": "worker / laborer",
-    "garo": "Kam-ka·gipa"
+    "garo": "Kam·ka·gipa"
   },
   {
     "english": "king",
@@ -1565,7 +1565,7 @@
   },
   {
     "english": "postman",
-    "garo": "Chiti-ra·ba-gipa"
+    "garo": "Chiti·ra·ba·gipa"
   },
   {
     "english": "cook",
@@ -1625,7 +1625,7 @@
   },
   {
     "english": "sentence",
-    "garo": "Katta-ku·chik"
+    "garo": "Katta·ku·chik"
   },
   {
     "english": "question",
@@ -1673,7 +1673,7 @@
   },
   {
     "english": "fever",
-    "garo": "Sin·-ding·-a"
+    "garo": "Sin··ding··a"
   },
   {
     "english": "cough",
@@ -1681,11 +1681,11 @@
   },
   {
     "english": "headache",
-    "garo": "Sko-saa"
+    "garo": "Sko·saa"
   },
   {
     "english": "stomachache",
-    "garo": "Ok-saa"
+    "garo": "Ok·saa"
   },
   {
     "english": "wound / injury",
@@ -1717,7 +1717,7 @@
   },
   {
     "english": "deaf",
-    "garo": "Nachil-kala"
+    "garo": "Nachil·kala"
   },
   {
     "english": "mute",
@@ -1981,11 +1981,11 @@
   },
   {
     "english": "motorcycle",
-    "garo": "Motor-cycle"
+    "garo": "Motor·cycle"
   },
   {
     "english": "train",
-    "garo": "Rail-gari"
+    "garo": "Rail·gari"
   },
   {
     "english": "airplane",
@@ -2053,7 +2053,7 @@
   },
   {
     "english": "youth",
-    "garo": "Me·tra-pante"
+    "garo": "Me·tra·pante"
   },
   {
     "english": "enemy",
@@ -2117,7 +2117,7 @@
   },
   {
     "english": "hard",
-    "garo": "Rak-a"
+    "garo": "Rak·a"
   },
   {
     "english": "who",
@@ -2137,7 +2137,7 @@
   },
   {
     "english": "why",
-    "garo": "Maini-gimin"
+    "garo": "Maini·gimin"
   },
   {
     "english": "how",
@@ -2269,11 +2269,11 @@
   },
   {
     "english": "to lay eggs",
-    "garo": "Bitchi-chi·a"
+    "garo": "Bitchi·chi·a"
   },
   {
     "english": "to hunt",
-    "garo": "Sikar-ka·a"
+    "garo": "Sikar·ka·a"
   },
   {
     "english": "to catch",
@@ -2349,7 +2349,7 @@
   },
   {
     "english": "miracle",
-    "garo": "Aiao-inmangipa-kam"
+    "garo": "Aiao·inmangipa·kam"
   },
   {
     "english": "angel",
@@ -2365,7 +2365,7 @@
   },
   {
     "english": "prison",
-    "garo": "Patok-nok"
+    "garo": "Patok·nok"
   },
   {
     "english": "punishment",
@@ -2393,7 +2393,7 @@
   },
   {
     "english": "signature",
-    "garo": "Jak-soi"
+    "garo": "Jak·soi"
   },
   {
     "english": "witness",
@@ -2401,15 +2401,15 @@
   },
   {
     "english": "guilty",
-    "garo": "Dos-gnang"
+    "garo": "Dos·gnang"
   },
   {
     "english": "innocent",
-    "garo": "Dos-gri"
+    "garo": "Dos·gri"
   },
   {
     "english": "to judge",
-    "garo": "Bichal-ka·a"
+    "garo": "Bichal·ka·a"
   },
   {
     "english": "to clean",
@@ -2501,7 +2501,7 @@
   },
   {
     "english": "thirsty",
-    "garo": "Chi-ringna-ska"
+    "garo": "Chi·ringna·ska"
   },
   {
     "english": "tired",
@@ -2509,7 +2509,7 @@
   },
   {
     "english": "sleepy",
-    "garo": "Tusina-ska"
+    "garo": "Tusina·ska"
   },
   {
     "english": "sick",
@@ -2577,11 +2577,11 @@
   },
   {
     "english": "expensive",
-    "garo": "Dam-raka"
+    "garo": "Dam·raka"
   },
   {
     "english": "cheap",
-    "garo": "Dam-nom·a"
+    "garo": "Dam·nom·a"
   },
   {
     "english": "i",
@@ -2701,7 +2701,7 @@
   },
   {
     "english": "no one",
-    "garo": "Darangba-ong·ja"
+    "garo": "Darangba·ong·ja"
   },
   {
     "english": "everyone",
@@ -2733,7 +2733,7 @@
   },
   {
     "english": "coin",
-    "garo": "Tangka-bisil"
+    "garo": "Tangka·bisil"
   },
   {
     "english": "scale",
@@ -2749,7 +2749,7 @@
   },
   {
     "english": "discount",
-    "garo": "Dam-komiatani"
+    "garo": "Dam·komiatani"
   },
   {
     "english": "customer",
@@ -2761,7 +2761,7 @@
   },
   {
     "english": "reduce the price",
-    "garo": "Dam-ko on·tisa komiatbo."
+    "garo": "Dam·ko on·tisa komiatbo."
   },
   {
     "english": "i want to buy this",
@@ -2777,7 +2777,7 @@
   },
   {
     "english": "give me one kilo",
-    "garo": "Angna kilo-sa on·bo."
+    "garo": "Angna kilo·sa on·bo."
   },
   {
     "english": "hello",
@@ -2785,11 +2785,11 @@
   },
   {
     "english": "excuse me",
-    "garo": "Angko kema-watbo."
+    "garo": "Angko kema·watbo."
   },
   {
     "english": "sorry",
-    "garo": "Kema-bi·a."
+    "garo": "Kema·bi·a."
   },
   {
     "english": "good afternoon",
@@ -2801,11 +2801,11 @@
   },
   {
     "english": "goodbye",
-    "garo": "Re·ang-na / Nam-en-dongbo."
+    "garo": "Re·ang·na / Nam·en·dongbo."
   },
   {
     "english": "see you again",
-    "garo": "Pil·tai-grongna"
+    "garo": "Pil·tai·grongna"
   },
   {
     "english": "welcome",
@@ -2825,11 +2825,11 @@
   },
   {
     "english": "where are you from?",
-    "garo": "Na·a bano-ni?"
+    "garo": "Na·a bano·ni?"
   },
   {
     "english": "i am from...",
-    "garo": "Anga ...-ni."
+    "garo": "Anga ...·ni."
   },
   {
     "english": "clock / watch",
@@ -2841,11 +2841,11 @@
   },
   {
     "english": "afternoon",
-    "garo": "Sal-aksol"
+    "garo": "Sal·aksol"
   },
   {
     "english": "midnight",
-    "garo": "Wal-jatchi"
+    "garo": "Wal·jatchi"
   },
   {
     "english": "summer",
@@ -2861,7 +2861,7 @@
   },
   {
     "english": "if",
-    "garo": "Ode / -ode"
+    "garo": "Ode / ·ode"
   },
   {
     "english": "so / therefore",
@@ -2873,39 +2873,39 @@
   },
   {
     "english": "for",
-    "garo": "Gimin / -na"
+    "garo": "Gimin / ·na"
   },
   {
     "english": "from",
-    "garo": "-oni"
+    "garo": "·oni"
   },
   {
     "english": "to",
-    "garo": "-na"
+    "garo": "·na"
   },
   {
     "english": "in / at",
-    "garo": "-o"
+    "garo": "·o"
   },
   {
     "english": "on",
-    "garo": "Kosak-o"
+    "garo": "Kosak·o"
   },
   {
     "english": "under",
-    "garo": "Ka·ma-o"
+    "garo": "Ka·ma·o"
   },
   {
     "english": "between",
-    "garo": "Jatchi-o"
+    "garo": "Jatchi·o"
   },
   {
     "english": "only",
-    "garo": "-mangmang / -san"
+    "garo": "·mangmang / ·san"
   },
   {
     "english": "also",
-    "garo": "-ba"
+    "garo": "·ba"
   },
   {
     "english": "very",
@@ -2925,11 +2925,11 @@
   },
   {
     "english": "look",
-    "garo": "Ni-bo"
+    "garo": "Ni·bo"
   },
   {
     "english": "tell me",
-    "garo": "Angna agan-bo"
+    "garo": "Angna agan·bo"
   },
   {
     "english": "i know",
@@ -3045,11 +3045,11 @@
   },
   {
     "english": "i am busy",
-    "garo": "Anga kam-gnanga"
+    "garo": "Anga kam·gnanga"
   },
   {
     "english": "i am not busy",
-    "garo": "Anga kam-gnang·ja"
+    "garo": "Anga kam·gnang·ja"
   },
   {
     "english": "i am coming",
@@ -3097,7 +3097,7 @@
   },
   {
     "english": "i feel lonely",
-    "garo": "Anga saksan gisik-o nanga"
+    "garo": "Anga saksan gisik·o nanga"
   },
   {
     "english": "don't be sad",
@@ -3137,7 +3137,7 @@
   },
   {
     "english": "i am surprised",
-    "garo": "Anga jagok-a"
+    "garo": "Anga jagok·a"
   },
   {
     "english": "i am satisfied",
@@ -3273,7 +3273,7 @@
   },
   {
     "english": "think",
-    "garo": "Gisik-o nanga"
+    "garo": "Gisik·o nanga"
   },
   {
     "english": "know",
@@ -3297,7 +3297,7 @@
   },
   {
     "english": "disagree",
-    "garo": "Ka·rach-ong·ja"
+    "garo": "Ka·rach·ong·ja"
   },
   {
     "english": "promise",
@@ -3409,11 +3409,11 @@
   },
   {
     "english": "a good person is known by deeds",
-    "garo": "Nama mande-ra ua kam-o uia"
+    "garo": "Nama mande·ra ua kam·o uia"
   },
   {
     "english": "Don't waste food",
-    "garo": "Mi gual-ata·bo ong·ja"
+    "garo": "Mi gual·ata·bo ong·ja"
   },
   {
     "english": "The forest gives, the forest takes",
@@ -3421,11 +3421,11 @@
   },
   {
     "english": "truth always comes out",
-    "garo": "Bebe-ra inde·a piltai"
+    "garo": "Bebe·ra inde·a piltai"
   },
   {
     "english": "a little is better than nothing",
-    "garo": "On·titi nama, bangbang-bata"
+    "garo": "On·titi nama, bangbang·bata"
   },
   {
     "english": "Wow! / Amazing!",
@@ -3457,11 +3457,11 @@
   },
   {
     "english": "cool / awesome",
-    "garo": "Nito / Nita-gipa"
+    "garo": "Nito / Nita·gipa"
   },
   {
     "english": "Annoying",
-    "garo": "Jala-gipa"
+    "garo": "Jala·gipa"
   },
   {
     "english": "let's hang out",
@@ -3497,79 +3497,79 @@
   },
   {
     "english": "kind / gentle",
-    "garo": "Nama-gipa"
+    "garo": "Nama·gipa"
   },
   {
     "english": "brave",
-    "garo": "Ka·rakani-gipa"
+    "garo": "Ka·rakani·gipa"
   },
   {
     "english": "clever",
-    "garo": "Seng·a-gipa"
+    "garo": "Seng·a·gipa"
   },
   {
     "english": "foolish",
-    "garo": "Bangbang-gisik"
+    "garo": "Bangbang·gisik"
   },
   {
     "english": "honest",
-    "garo": "Bebe-agani-gipa"
+    "garo": "Bebe·agani·gipa"
   },
   {
     "english": "dishonest",
-    "garo": "Tol·a-agani-gipa"
+    "garo": "Tol·a·agani·gipa"
   },
   {
     "english": "hardworking",
-    "garo": "Dak-rakgipa"
+    "garo": "Dak·rakgipa"
   },
   {
     "english": "lazy",
-    "garo": "Bilgri-gipa"
+    "garo": "Bilgri·gipa"
   },
   {
     "english": "generous",
-    "garo": "On·a-nakgipa"
+    "garo": "On·a·nakgipa"
   },
   {
     "english": "greedy",
-    "garo": "Gisika-dakgipa"
+    "garo": "Gisika·dakgipa"
   },
   {
     "english": "proud / arrogant",
-    "garo": "Gaora-gipa"
+    "garo": "Gaora·gipa"
   },
   {
     "english": "humble",
-    "garo": "Chon·a-gisik"
+    "garo": "Chon·a·gisik"
   },
   {
     "english": "shy",
-    "garo": "Kracha-gipa"
+    "garo": "Kracha·gipa"
   },
   {
     "english": "confident",
-    "garo": "Ka·raka-gisik"
+    "garo": "Ka·raka·gisik"
   },
   {
     "english": "talkative",
-    "garo": "Bang·a agani-gipa"
+    "garo": "Bang·a agani·gipa"
   },
   {
     "english": "quiet",
-    "garo": "Agana·ja-gipa"
+    "garo": "Agana·ja·gipa"
   },
   {
     "english": "funny",
-    "garo": "Ka·ding-o on·a-gipa"
+    "garo": "Ka·ding·o on·a·gipa"
   },
   {
     "english": "stubborn",
-    "garo": "An·tang-ra·gipa"
+    "garo": "An·tang·ra·gipa"
   },
   {
     "english": "obedient",
-    "garo": "Knachika-gipa"
+    "garo": "Knachika·gipa"
   },
   {
     "english": "dog bark",
@@ -3577,7 +3577,7 @@
   },
   {
     "english": "cat meow",
-    "garo": "Miau-miau"
+    "garo": "Miau·miau"
   },
   {
     "english": "cow moo",
@@ -3585,11 +3585,11 @@
   },
   {
     "english": "rooster crow",
-    "garo": "Ko·ko-rika"
+    "garo": "Ko·ko·rika"
   },
   {
     "english": "frog croak",
-    "garo": "Beng-beng"
+    "garo": "Beng·beng"
   },
   {
     "english": "bird chirp",
@@ -3597,11 +3597,11 @@
   },
   {
     "english": "snake hiss",
-    "garo": "Chiss-chiss"
+    "garo": "Chiss·chiss"
   },
   {
     "english": "bee buzz",
-    "garo": "Guum-guum"
+    "garo": "Guum·guum"
   },
   {
     "english": "tiger roar",
@@ -3609,39 +3609,39 @@
   },
   {
     "english": "nod (yes)",
-    "garo": "Skola-o"
+    "garo": "Skola·o"
   },
   {
     "english": "shake head (no)",
-    "garo": "Sko-moa"
+    "garo": "Sko·moa"
   },
   {
     "english": "wave hand",
-    "garo": "Jak-bildoa"
+    "garo": "Jak·bildoa"
   },
   {
     "english": "point finger",
-    "garo": "Jak-chip·a"
+    "garo": "Jak·chip·a"
   },
   {
     "english": "clap",
-    "garo": "Jak-taka"
+    "garo": "Jak·taka"
   },
   {
     "english": "bow",
-    "garo": "Sko-ka·mama"
+    "garo": "Sko·ka·mama"
   },
   {
     "english": "hug",
-    "garo": "Jak-kadepa"
+    "garo": "Jak·kadepa"
   },
   {
     "english": "wink",
-    "garo": "Mik-chip-a"
+    "garo": "Mik·chip·a"
   },
   {
     "english": "smile",
-    "garo": "Ka·ding-mikseng·a"
+    "garo": "Ka·ding·mikseng·a"
   },
   {
     "english": "sneeze",
@@ -3657,23 +3657,23 @@
   },
   {
     "english": "open your book",
-    "garo": "Ki·tapko oa-bo"
+    "garo": "Ki·tapko oa·bo"
   },
   {
     "english": "close your book",
-    "garo": "Ki·tapko chip·a-bo"
+    "garo": "Ki·tapko chip·a·bo"
   },
   {
     "english": "listen carefully",
-    "garo": "Chakchik knachik-bo"
+    "garo": "Chakchik knachik·bo"
   },
   {
     "english": "raise your hand",
-    "garo": "Jakko bil-bo"
+    "garo": "Jakko bil·bo"
   },
   {
     "english": "answer the question",
-    "garo": "Sing·ani-ko aganchaka-bo"
+    "garo": "Sing·ani·ko aganchaka·bo"
   },
   {
     "english": "i have a question",
@@ -3685,11 +3685,11 @@
   },
   {
     "english": "homework",
-    "garo": "Nok-o dak-porani"
+    "garo": "Nok·o dak·porani"
   },
   {
     "english": "study hard",
-    "garo": "Chakchik pora-bo"
+    "garo": "Chakchik pora·bo"
   },
   {
     "english": "congratulations!",
@@ -3697,7 +3697,7 @@
   },
   {
     "english": "happy birthday!",
-    "garo": "Bilsi-gital kusi!"
+    "garo": "Bilsi·gital kusi!"
   },
   {
     "english": "get well soon",
@@ -3709,11 +3709,11 @@
   },
   {
     "english": "god bless you",
-    "garo": "Isol nang·na pattia-bo"
+    "garo": "Isol nang·na pattia·bo"
   },
   {
     "english": "rest in peace",
-    "garo": "Tom·toma-o tusibo"
+    "garo": "Tom·toma·o tusibo"
   },
   {
     "english": "you did well",
@@ -3721,7 +3721,7 @@
   },
   {
     "english": "don't give up",
-    "garo": "Kimia-bo ong·ja"
+    "garo": "Kimia·bo ong·ja"
   },
   {
     "english": "i believe in you",
@@ -3729,7 +3729,7 @@
   },
   {
     "english": "i miss my family",
-    "garo": "Angni nokdang-na simbraa"
+    "garo": "Angni nokdang·na simbraa"
   },
   {
     "english": "come (command)",
@@ -4241,23 +4241,23 @@
   },
   {
     "english": "two dogs",
-    "garo": "achak mang-gni"
+    "garo": "achak mang·gni"
   },
   {
     "english": "three books",
-    "garo": "ki·tap king-gittam"
+    "garo": "ki·tap king·gittam"
   },
   {
     "english": "four fruits",
-    "garo": "mewa ge-bri"
+    "garo": "mewa ge·bri"
   },
   {
     "english": "five coins",
-    "garo": "tangka gong-bonga"
+    "garo": "tangka gong·bonga"
   },
   {
     "english": "ten birds",
-    "garo": "do·a mang-chiking"
+    "garo": "do·a mang·chiking"
   },
   {
     "english": "Let's drink",
@@ -4349,7 +4349,7 @@
   },
   {
     "english": "Is he coming?",
-    "garo": "Ua re·baenga-ma?"
+    "garo": "Ua re·baenga·ma?"
   },
   {
     "english": "Go away",
@@ -4561,7 +4561,7 @@
   },
   {
     "english": "rule",
-    "garo": "NOUN + CLASSIFIER-NUMBER (not English order)"
+    "garo": "NOUN + CLASSIFIER·NUMBER (not English order)"
   },
   {
     "english": "You drank water",
@@ -4625,15 +4625,15 @@
   },
   {
     "english": "two books",
-    "garo": "ki·tap king-gni"
+    "garo": "ki·tap king·gni"
   },
   {
     "english": "three people",
-    "garo": "manderang sak-gittam"
+    "garo": "manderang sak·gittam"
   },
   {
     "english": "Sorry / Forgive me",
-    "garo": "Kema-bi·a"
+    "garo": "Kema·bi·a"
   },
   {
     "english": "All is well",
@@ -4669,47 +4669,47 @@
   },
   {
     "english": "one dog",
-    "garo": "achak mang-sa"
+    "garo": "achak mang·sa"
   },
   {
     "english": "two birds",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "three fish",
-    "garo": "na·tok mang-gittam"
+    "garo": "na·tok mang·gittam"
   },
   {
     "english": "one person",
-    "garo": "manderang sak-sa"
+    "garo": "manderang sak·sa"
   },
   {
     "english": "two teachers",
-    "garo": "skigipa sak-gni"
+    "garo": "skigipa sak·gni"
   },
   {
     "english": "one coin",
-    "garo": "tangka gong-sa"
+    "garo": "tangka gong·sa"
   },
   {
     "english": "five rupees",
-    "garo": "tangka gong-bonga"
+    "garo": "tangka gong·bonga"
   },
   {
     "english": "one book",
-    "garo": "ki·tap king-sa"
+    "garo": "ki·tap king·sa"
   },
   {
     "english": "three leaves",
-    "garo": "bijak king-gittam"
+    "garo": "bijak king·gittam"
   },
   {
     "english": "one chair",
-    "garo": "chokki ge-sa"
+    "garo": "chokki ge·sa"
   },
   {
     "english": "two knives",
-    "garo": "kettal ge-gni"
+    "garo": "kettal ge·gni"
   },
   {
     "english": "den· (to carry)",
@@ -4793,7 +4793,7 @@
   },
   {
     "english": "Pomelo",
-    "garo": "Narang-gira"
+    "garo": "Narang·gira"
   },
   {
     "english": "Blackberry",
@@ -4805,7 +4805,7 @@
   },
   {
     "english": "Wild Berry",
-    "garo": "Bol-meseng"
+    "garo": "Bol·meseng"
   },
   {
     "english": "Pumpkin",
@@ -4837,7 +4837,7 @@
   },
   {
     "english": "Garlic",
-    "garo": "Rasin-gipok"
+    "garo": "Rasin·gipok"
   },
   {
     "english": "Ginger",
@@ -4861,7 +4861,7 @@
   },
   {
     "english": "Spinach",
-    "garo": "Palong-sam"
+    "garo": "Palong·sam"
   },
   {
     "english": "Broad Beans",
@@ -5105,7 +5105,7 @@
   },
   {
     "english": "Run",
-    "garo": "Kat-a"
+    "garo": "Kat·a"
   },
   {
     "english": "Speak",
@@ -5129,7 +5129,7 @@
   },
   {
     "english": "Work",
-    "garo": "Dak-a"
+    "garo": "Dak·a"
   },
   {
     "english": "Play",
@@ -5137,7 +5137,7 @@
   },
   {
     "english": "Sit",
-    "garo": "Asong-a"
+    "garo": "Asong·a"
   },
   {
     "english": "Stand",
@@ -5145,11 +5145,11 @@
   },
   {
     "english": "Laugh",
-    "garo": "Ka·ding-a"
+    "garo": "Ka·ding·a"
   },
   {
     "english": "Cry",
-    "garo": "Grap-a"
+    "garo": "Grap·a"
   },
   {
     "english": "Buy",
@@ -5161,11 +5161,11 @@
   },
   {
     "english": "Come",
-    "garo": "Re·ba-a"
+    "garo": "Re·ba·a"
   },
   {
     "english": "Go",
-    "garo": "Re·ang-a"
+    "garo": "Re·ang·a"
   },
   {
     "english": "Father",
@@ -5177,15 +5177,15 @@
   },
   {
     "english": "Son",
-    "garo": "De-bi-pa"
+    "garo": "De·bi·pa"
   },
   {
     "english": "Daughter",
-    "garo": "De-me-chik"
+    "garo": "De·me·chik"
   },
   {
     "english": "Grandfather",
-    "garo": "Abi-tang"
+    "garo": "Abi·tang"
   },
   {
     "english": "Grandmother",
@@ -5285,7 +5285,7 @@
   },
   {
     "english": "Blue",
-    "garo": "Tang-sim"
+    "garo": "Tang·sim"
   },
   {
     "english": "Yellow",
@@ -5373,7 +5373,7 @@
   },
   {
     "english": "Twenty-one",
-    "garo": "Kolgrik-sa"
+    "garo": "Kolgrik·sa"
   },
   {
     "english": "Thirty",
@@ -5417,11 +5417,11 @@
   },
   {
     "english": "Second (ordinal)",
-    "garo": "Gni-prangni"
+    "garo": "Gni·prangni"
   },
   {
     "english": "Third (ordinal)",
-    "garo": "Gittam-prangni"
+    "garo": "Gittam·prangni"
   },
   {
     "english": "Last",
@@ -5437,7 +5437,7 @@
   },
   {
     "english": "Double",
-    "garo": "Gni-bita"
+    "garo": "Gni·bita"
   },
   {
     "english": "Zero / None",
@@ -5549,7 +5549,7 @@
   },
   {
     "english": "To Fall (stumble/trip)",
-    "garo": "Nang·ting-a"
+    "garo": "Nang·ting·a"
   },
   {
     "english": "To Fall (slip)",
@@ -5585,7 +5585,7 @@
   },
   {
     "english": "To Feel (Emotionally)",
-    "garo": "Gisik-o nanga"
+    "garo": "Gisik·o nanga"
   },
   {
     "english": "To Hurt (Pain)",
@@ -5633,15 +5633,15 @@
   },
   {
     "english": "Close",
-    "garo": "Chip-a"
+    "garo": "Chip·a"
   },
   {
     "english": "Push",
-    "garo": "Jit-pak-a"
+    "garo": "Jit·pak·a"
   },
   {
     "english": "Pull / Drive",
-    "garo": "Sal-a (⚠ same word)"
+    "garo": "Sal·a (⚠ same word)"
   },
   {
     "english": "Break (Glass/Stick)",
@@ -5649,11 +5649,11 @@
   },
   {
     "english": "Tear (Paper/Cloth)",
-    "garo": "Gritt-a"
+    "garo": "Gritt·a"
   },
   {
     "english": "Throw",
-    "garo": "Gal-a / Goata"
+    "garo": "Gal·a / Goata"
   },
   {
     "english": "Catch",
@@ -5661,11 +5661,11 @@
   },
   {
     "english": "Wash",
-    "garo": "Su·srong-a"
+    "garo": "Su·srong·a"
   },
   {
     "english": "Clean",
-    "garo": "Rongtal-ata"
+    "garo": "Rongtal·ata"
   },
   {
     "english": "Sun",
@@ -5701,7 +5701,7 @@
   },
   {
     "english": "Lightning",
-    "garo": "Mikka-kimma"
+    "garo": "Mikka·kimma"
   },
   {
     "english": "Fire",
@@ -5753,7 +5753,7 @@
   },
   {
     "english": "It is sunny",
-    "garo": "Sal-seng·a"
+    "garo": "Sal·seng·a"
   },
   {
     "english": "It is cold",
@@ -5765,7 +5765,7 @@
   },
   {
     "english": "Flood",
-    "garo": "Mikka-brimba"
+    "garo": "Mikka·brimba"
   },
   {
     "english": "Drought",
@@ -5773,7 +5773,7 @@
   },
   {
     "english": "Earthquake",
-    "garo": "A·a-moa"
+    "garo": "A·a·moa"
   },
   {
     "english": "Fog / Mist",
@@ -5781,15 +5781,15 @@
   },
   {
     "english": "Rainbow",
-    "garo": "Gitchak-rong jal·ang"
+    "garo": "Gitchak·rong jal·ang"
   },
   {
     "english": "Sunrise",
-    "garo": "Sal-aram"
+    "garo": "Sal·aram"
   },
   {
     "english": "Sunset",
-    "garo": "Sal-ikram"
+    "garo": "Sal·ikram"
   },
   {
     "english": "House",
@@ -5833,11 +5833,11 @@
   },
   {
     "english": "Pot",
-    "garo": "Dik-ke"
+    "garo": "Dik·ke"
   },
   {
     "english": "Broom",
-    "garo": "Sal-re-at"
+    "garo": "Sal·re·at"
   },
   {
     "english": "Clothes",
@@ -5941,7 +5941,7 @@
   },
   {
     "english": "Day before yesterday",
-    "garo": "Me-si-ja"
+    "garo": "Me·si·ja"
   },
   {
     "english": "Later",
@@ -5953,15 +5953,15 @@
   },
   {
     "english": "Early",
-    "garo": "Bakkan / Pring-seng"
+    "garo": "Bakkan / Pring·seng"
   },
   {
     "english": "Late",
-    "garo": "Ja·man-chak-a"
+    "garo": "Ja·man·chak·a"
   },
   {
     "english": "Never",
-    "garo": "Pangnan-ba (ja)"
+    "garo": "Pangnan·ba (ja)"
   },
   {
     "english": "Always",
@@ -6005,7 +6005,7 @@
   },
   {
     "english": "Earring",
-    "garo": "Nachil-ganna"
+    "garo": "Nachil·ganna"
   },
   {
     "english": "Big",
@@ -6021,7 +6021,7 @@
   },
   {
     "english": "Short",
-    "garo": "Kan·dik-a"
+    "garo": "Kan·dik·a"
   },
   {
     "english": "Tall",
@@ -6045,7 +6045,7 @@
   },
   {
     "english": "Fast",
-    "garo": "Ta·rak-a"
+    "garo": "Ta·rak·a"
   },
   {
     "english": "Slow",
@@ -6053,7 +6053,7 @@
   },
   {
     "english": "Rich",
-    "garo": "Nokma / Man·e-cha·gipa"
+    "garo": "Nokma / Man·e·cha·gipa"
   },
   {
     "english": "Poor",
@@ -6101,11 +6101,11 @@
   },
   {
     "english": "Office",
-    "garo": "Kam-ka·chakani"
+    "garo": "Kam·ka·chakani"
   },
   {
     "english": "Church",
-    "garo": "Gilja-nok"
+    "garo": "Gilja·nok"
   },
   {
     "english": "Shop",
@@ -6113,7 +6113,7 @@
   },
   {
     "english": "Hospital",
-    "garo": "Hospital / Sam-nok"
+    "garo": "Hospital / Sam·nok"
   },
   {
     "english": "Up",
@@ -6125,11 +6125,11 @@
   },
   {
     "english": "Left",
-    "garo": "Jak-asi"
+    "garo": "Jak·asi"
   },
   {
     "english": "Right",
-    "garo": "Jak-ra"
+    "garo": "Jak·ra"
   },
   {
     "english": "Front",
@@ -6181,7 +6181,7 @@
   },
   {
     "english": "Farmer",
-    "garo": "Game-cha·gipa"
+    "garo": "Game·cha·gipa"
   },
   {
     "english": "Teacher",
@@ -6189,11 +6189,11 @@
   },
   {
     "english": "Student",
-    "garo": "Porai-gipa"
+    "garo": "Porai·gipa"
   },
   {
     "english": "Doctor",
-    "garo": "Doctor / Sam-on·gipa"
+    "garo": "Doctor / Sam·on·gipa"
   },
   {
     "english": "Nurse",
@@ -6201,27 +6201,27 @@
   },
   {
     "english": "Driver",
-    "garo": "Gari-chalai-gipa"
+    "garo": "Gari·chalai·gipa"
   },
   {
     "english": "Carpenter",
-    "garo": "Bal-sol-gipa"
+    "garo": "Bal·sol·gipa"
   },
   {
     "english": "Blacksmith",
-    "garo": "Sil-dak-gipa"
+    "garo": "Sil·dak·gipa"
   },
   {
     "english": "Shopkeeper",
-    "garo": "Dokan-dakgipa"
+    "garo": "Dokan·dakgipa"
   },
   {
     "english": "Tailor",
-    "garo": "Ba·ra-sikgipa"
+    "garo": "Ba·ra·sikgipa"
   },
   {
     "english": "Worker / Laborer",
-    "garo": "Kam-ka·gipa"
+    "garo": "Kam·ka·gipa"
   },
   {
     "english": "King",
@@ -6241,7 +6241,7 @@
   },
   {
     "english": "Postman",
-    "garo": "Chiti-ra·ba-gipa"
+    "garo": "Chiti·ra·ba·gipa"
   },
   {
     "english": "Cook",
@@ -6309,7 +6309,7 @@
   },
   {
     "english": "Sentence",
-    "garo": "Katta-ku·chik"
+    "garo": "Katta·ku·chik"
   },
   {
     "english": "Question",
@@ -6357,7 +6357,7 @@
   },
   {
     "english": "Fever",
-    "garo": "Sin·-ding·-a"
+    "garo": "Sin··ding··a"
   },
   {
     "english": "Cough",
@@ -6365,11 +6365,11 @@
   },
   {
     "english": "Headache",
-    "garo": "Sko-saa"
+    "garo": "Sko·saa"
   },
   {
     "english": "Stomachache",
-    "garo": "Ok-saa"
+    "garo": "Ok·saa"
   },
   {
     "english": "Wound / Injury",
@@ -6401,7 +6401,7 @@
   },
   {
     "english": "Deaf",
-    "garo": "Nachil-kala"
+    "garo": "Nachil·kala"
   },
   {
     "english": "Mute",
@@ -6617,7 +6617,7 @@
   },
   {
     "english": "Garlic",
-    "garo": "Rasin-gipok"
+    "garo": "Rasin·gipok"
   },
   {
     "english": "Ginger",
@@ -6705,11 +6705,11 @@
   },
   {
     "english": "Motorcycle",
-    "garo": "Motor-cycle"
+    "garo": "Motor·cycle"
   },
   {
     "english": "Train",
-    "garo": "Rail-gari"
+    "garo": "Rail·gari"
   },
   {
     "english": "Airplane",
@@ -6801,7 +6801,7 @@
   },
   {
     "english": "Youth",
-    "garo": "Me·tra-pante"
+    "garo": "Me·tra·pante"
   },
   {
     "english": "Son",
@@ -6909,7 +6909,7 @@
   },
   {
     "english": "Why",
-    "garo": "Maini-gimin"
+    "garo": "Maini·gimin"
   },
   {
     "english": "How",
@@ -7049,11 +7049,11 @@
   },
   {
     "english": "To Lay Eggs",
-    "garo": "Bitchi-chi·a"
+    "garo": "Bitchi·chi·a"
   },
   {
     "english": "To Hunt",
-    "garo": "Sikar-ka·a"
+    "garo": "Sikar·ka·a"
   },
   {
     "english": "To Catch",
@@ -7101,7 +7101,7 @@
   },
   {
     "english": "Church",
-    "garo": "Gilja-nok"
+    "garo": "Gilja·nok"
   },
   {
     "english": "Sin",
@@ -7141,7 +7141,7 @@
   },
   {
     "english": "Miracle",
-    "garo": "Aiao-inmangipa-kam"
+    "garo": "Aiao·inmangipa·kam"
   },
   {
     "english": "Angel",
@@ -7161,7 +7161,7 @@
   },
   {
     "english": "Prison",
-    "garo": "Patok-nok"
+    "garo": "Patok·nok"
   },
   {
     "english": "Punishment",
@@ -7189,7 +7189,7 @@
   },
   {
     "english": "Signature",
-    "garo": "Jak-soi"
+    "garo": "Jak·soi"
   },
   {
     "english": "Truth",
@@ -7205,15 +7205,15 @@
   },
   {
     "english": "Guilty",
-    "garo": "Dos-gnang"
+    "garo": "Dos·gnang"
   },
   {
     "english": "Innocent",
-    "garo": "Dos-gri"
+    "garo": "Dos·gri"
   },
   {
     "english": "To Judge",
-    "garo": "Bichal-ka·a"
+    "garo": "Bichal·ka·a"
   },
   {
     "english": "To Clean",
@@ -7305,7 +7305,7 @@
   },
   {
     "english": "Thirsty",
-    "garo": "Chi-ringna-ska"
+    "garo": "Chi·ringna·ska"
   },
   {
     "english": "Tired",
@@ -7313,7 +7313,7 @@
   },
   {
     "english": "Sleepy",
-    "garo": "Tusina-ska"
+    "garo": "Tusina·ska"
   },
   {
     "english": "Sick",
@@ -7333,7 +7333,7 @@
   },
   {
     "english": "Hard",
-    "garo": "Rak-a"
+    "garo": "Rak·a"
   },
   {
     "english": "Soft",
@@ -7397,11 +7397,11 @@
   },
   {
     "english": "Expensive",
-    "garo": "Dam-raka"
+    "garo": "Dam·raka"
   },
   {
     "english": "Cheap",
-    "garo": "Dam-nom·a"
+    "garo": "Dam·nom·a"
   },
   {
     "english": "I",
@@ -7521,7 +7521,7 @@
   },
   {
     "english": "No one",
-    "garo": "Darangba-ong·ja"
+    "garo": "Darangba·ong·ja"
   },
   {
     "english": "Everyone",
@@ -7553,11 +7553,11 @@
   },
   {
     "english": "Expensive",
-    "garo": "Dam-raka"
+    "garo": "Dam·raka"
   },
   {
     "english": "Cheap",
-    "garo": "Dam-nom·a"
+    "garo": "Dam·nom·a"
   },
   {
     "english": "To Buy",
@@ -7569,7 +7569,7 @@
   },
   {
     "english": "Coin",
-    "garo": "Tangka-bisil"
+    "garo": "Tangka·bisil"
   },
   {
     "english": "Scale",
@@ -7585,7 +7585,7 @@
   },
   {
     "english": "Discount",
-    "garo": "Dam-komiatani"
+    "garo": "Dam·komiatani"
   },
   {
     "english": "Customer",
@@ -7593,7 +7593,7 @@
   },
   {
     "english": "Shopkeeper",
-    "garo": "Dokan-dakgipa"
+    "garo": "Dokan·dakgipa"
   },
   {
     "english": "Bag",
@@ -7605,7 +7605,7 @@
   },
   {
     "english": "Reduce the price",
-    "garo": "Dam-ko on·tisa komiatbo."
+    "garo": "Dam·ko on·tisa komiatbo."
   },
   {
     "english": "I want to buy this",
@@ -7621,7 +7621,7 @@
   },
   {
     "english": "Give me one kilo",
-    "garo": "Angna kilo-sa on·bo."
+    "garo": "Angna kilo·sa on·bo."
   },
   {
     "english": "Hello",
@@ -7653,11 +7653,11 @@
   },
   {
     "english": "Excuse me",
-    "garo": "Angko kema-watbo."
+    "garo": "Angko kema·watbo."
   },
   {
     "english": "Sorry",
-    "garo": "Kema-bi·a."
+    "garo": "Kema·bi·a."
   },
   {
     "english": "Good morning",
@@ -7677,11 +7677,11 @@
   },
   {
     "english": "Goodbye",
-    "garo": "Re·ang-na / Nam-en-dongbo."
+    "garo": "Re·ang·na / Nam·en·dongbo."
   },
   {
     "english": "See you again",
-    "garo": "Pil·tai-grongna"
+    "garo": "Pil·tai·grongna"
   },
   {
     "english": "Welcome",
@@ -7701,11 +7701,11 @@
   },
   {
     "english": "Where are you from?",
-    "garo": "Na·a bano-ni?"
+    "garo": "Na·a bano·ni?"
   },
   {
     "english": "I am from...",
-    "garo": "Anga ...-ni."
+    "garo": "Anga ...·ni."
   },
   {
     "english": "Time",
@@ -7725,11 +7725,11 @@
   },
   {
     "english": "Noon",
-    "garo": "Sal-jatchi"
+    "garo": "Sal·jatchi"
   },
   {
     "english": "Afternoon",
-    "garo": "Sal-aksol"
+    "garo": "Sal·aksol"
   },
   {
     "english": "Evening",
@@ -7741,7 +7741,7 @@
   },
   {
     "english": "Midnight",
-    "garo": "Wal-jatchi"
+    "garo": "Wal·jatchi"
   },
   {
     "english": "Today",
@@ -7761,7 +7761,7 @@
   },
   {
     "english": "Day before yesterday",
-    "garo": "Me-si-ja"
+    "garo": "Me·si·ja"
   },
   {
     "english": "Now",
@@ -7777,11 +7777,11 @@
   },
   {
     "english": "Early",
-    "garo": "Bakkan / Pring-seng"
+    "garo": "Bakkan / Pring·seng"
   },
   {
     "english": "Late",
-    "garo": "Ja·man-chak-a"
+    "garo": "Ja·man·chak·a"
   },
   {
     "english": "Summer",
@@ -7801,7 +7801,7 @@
   },
   {
     "english": "Never",
-    "garo": "Pangnan-ba (ja)"
+    "garo": "Pangnan·ba (ja)"
   },
   {
     "english": "And",
@@ -7817,7 +7817,7 @@
   },
   {
     "english": "If",
-    "garo": "Ode / -ode"
+    "garo": "Ode / ·ode"
   },
   {
     "english": "So / Therefore",
@@ -7833,39 +7833,39 @@
   },
   {
     "english": "For",
-    "garo": "Gimin / -na"
+    "garo": "Gimin / ·na"
   },
   {
     "english": "From",
-    "garo": "-oni"
+    "garo": "·oni"
   },
   {
     "english": "To",
-    "garo": "-na"
+    "garo": "·na"
   },
   {
     "english": "In / At",
-    "garo": "-o"
+    "garo": "·o"
   },
   {
     "english": "On",
-    "garo": "Kosak-o"
+    "garo": "Kosak·o"
   },
   {
     "english": "Under",
-    "garo": "Ka·ma-o"
+    "garo": "Ka·ma·o"
   },
   {
     "english": "Between",
-    "garo": "Jatchi-o"
+    "garo": "Jatchi·o"
   },
   {
     "english": "Only",
-    "garo": "-mangmang / -san"
+    "garo": "·mangmang / ·san"
   },
   {
     "english": "Also",
-    "garo": "-ba"
+    "garo": "·ba"
   },
   {
     "english": "Very",
@@ -7885,15 +7885,15 @@
   },
   {
     "english": "Listen",
-    "garo": "Knachik-bo"
+    "garo": "Knachik·bo"
   },
   {
     "english": "Look",
-    "garo": "Ni-bo"
+    "garo": "Ni·bo"
   },
   {
     "english": "Tell me",
-    "garo": "Angna agan-bo"
+    "garo": "Angna agan·bo"
   },
   {
     "english": "I know",
@@ -8017,11 +8017,11 @@
   },
   {
     "english": "I am busy",
-    "garo": "Anga kam-gnanga"
+    "garo": "Anga kam·gnanga"
   },
   {
     "english": "I am not busy",
-    "garo": "Anga kam-gnang·ja"
+    "garo": "Anga kam·gnang·ja"
   },
   {
     "english": "I am coming",
@@ -8069,7 +8069,7 @@
   },
   {
     "english": "I feel lonely",
-    "garo": "Anga saksan gisik-o nanga"
+    "garo": "Anga saksan gisik·o nanga"
   },
   {
     "english": "Don't be sad",
@@ -8109,7 +8109,7 @@
   },
   {
     "english": "I am surprised",
-    "garo": "Anga jagok-a"
+    "garo": "Anga jagok·a"
   },
   {
     "english": "I am satisfied",
@@ -8177,7 +8177,7 @@
   },
   {
     "english": "Throw",
-    "garo": "Goata / Gal-a"
+    "garo": "Goata / Gal·a"
   },
   {
     "english": "Catch",
@@ -8269,7 +8269,7 @@
   },
   {
     "english": "Think",
-    "garo": "Gisik-o nanga"
+    "garo": "Gisik·o nanga"
   },
   {
     "english": "Know",
@@ -8293,7 +8293,7 @@
   },
   {
     "english": "Disagree",
-    "garo": "Ka·rach-ong·ja"
+    "garo": "Ka·rach·ong·ja"
   },
   {
     "english": "Promise",
@@ -8413,11 +8413,11 @@
   },
   {
     "english": "A good person is known by deeds",
-    "garo": "Nama mande-ra ua kam-o uia"
+    "garo": "Nama mande·ra ua kam·o uia"
   },
   {
     "english": "Don't waste food",
-    "garo": "Mi gual-ata·bo ong·ja"
+    "garo": "Mi gual·ata·bo ong·ja"
   },
   {
     "english": "The forest gives, the forest takes",
@@ -8425,11 +8425,11 @@
   },
   {
     "english": "Truth always comes out",
-    "garo": "Bebe-ra inde·a piltai"
+    "garo": "Bebe·ra inde·a piltai"
   },
   {
     "english": "A little is better than nothing",
-    "garo": "On·titi nama, bangbang-bata"
+    "garo": "On·titi nama, bangbang·bata"
   },
   {
     "english": "Wow! / Amazing!",
@@ -8461,11 +8461,11 @@
   },
   {
     "english": "Cool / Awesome",
-    "garo": "Nito / Nita-gipa"
+    "garo": "Nito / Nita·gipa"
   },
   {
     "english": "Annoying",
-    "garo": "Jala-gipa"
+    "garo": "Jala·gipa"
   },
   {
     "english": "Let's hang out",
@@ -8501,79 +8501,79 @@
   },
   {
     "english": "Kind / Gentle",
-    "garo": "Nama-gipa"
+    "garo": "Nama·gipa"
   },
   {
     "english": "Brave",
-    "garo": "Ka·rakani-gipa"
+    "garo": "Ka·rakani·gipa"
   },
   {
     "english": "Clever",
-    "garo": "Seng·a-gipa"
+    "garo": "Seng·a·gipa"
   },
   {
     "english": "Foolish",
-    "garo": "Bangbang-gisik"
+    "garo": "Bangbang·gisik"
   },
   {
     "english": "Honest",
-    "garo": "Bebe-agani-gipa"
+    "garo": "Bebe·agani·gipa"
   },
   {
     "english": "Dishonest",
-    "garo": "Tol·a-agani-gipa"
+    "garo": "Tol·a·agani·gipa"
   },
   {
     "english": "Hardworking",
-    "garo": "Dak-rakgipa"
+    "garo": "Dak·rakgipa"
   },
   {
     "english": "Lazy",
-    "garo": "Bilgri-gipa"
+    "garo": "Bilgri·gipa"
   },
   {
     "english": "Generous",
-    "garo": "On·a-nakgipa"
+    "garo": "On·a·nakgipa"
   },
   {
     "english": "Greedy",
-    "garo": "Gisika-dakgipa"
+    "garo": "Gisika·dakgipa"
   },
   {
     "english": "Proud / Arrogant",
-    "garo": "Gaora-gipa"
+    "garo": "Gaora·gipa"
   },
   {
     "english": "Humble",
-    "garo": "Chon·a-gisik"
+    "garo": "Chon·a·gisik"
   },
   {
     "english": "Shy",
-    "garo": "Kracha-gipa"
+    "garo": "Kracha·gipa"
   },
   {
     "english": "Confident",
-    "garo": "Ka·raka-gisik"
+    "garo": "Ka·raka·gisik"
   },
   {
     "english": "Talkative",
-    "garo": "Bang·a agani-gipa"
+    "garo": "Bang·a agani·gipa"
   },
   {
     "english": "Quiet",
-    "garo": "Agana·ja-gipa"
+    "garo": "Agana·ja·gipa"
   },
   {
     "english": "Funny",
-    "garo": "Ka·ding-o on·a-gipa"
+    "garo": "Ka·ding·o on·a·gipa"
   },
   {
     "english": "Stubborn",
-    "garo": "An·tang-ra·gipa"
+    "garo": "An·tang·ra·gipa"
   },
   {
     "english": "Obedient",
-    "garo": "Knachika-gipa"
+    "garo": "Knachika·gipa"
   },
   {
     "english": "Dog bark",
@@ -8581,7 +8581,7 @@
   },
   {
     "english": "Cat meow",
-    "garo": "Miau-miau"
+    "garo": "Miau·miau"
   },
   {
     "english": "Cow moo",
@@ -8589,11 +8589,11 @@
   },
   {
     "english": "Rooster crow",
-    "garo": "Ko·ko-rika"
+    "garo": "Ko·ko·rika"
   },
   {
     "english": "Frog croak",
-    "garo": "Beng-beng"
+    "garo": "Beng·beng"
   },
   {
     "english": "Bird chirp",
@@ -8601,11 +8601,11 @@
   },
   {
     "english": "Snake hiss",
-    "garo": "Chiss-chiss"
+    "garo": "Chiss·chiss"
   },
   {
     "english": "Bee buzz",
-    "garo": "Guum-guum"
+    "garo": "Guum·guum"
   },
   {
     "english": "Tiger roar",
@@ -8613,39 +8613,39 @@
   },
   {
     "english": "Nod (yes)",
-    "garo": "Skola-o"
+    "garo": "Skola·o"
   },
   {
     "english": "Shake head (no)",
-    "garo": "Sko-moa"
+    "garo": "Sko·moa"
   },
   {
     "english": "Wave hand",
-    "garo": "Jak-bildoa"
+    "garo": "Jak·bildoa"
   },
   {
     "english": "Point finger",
-    "garo": "Jak-chip·a"
+    "garo": "Jak·chip·a"
   },
   {
     "english": "Clap",
-    "garo": "Jak-taka"
+    "garo": "Jak·taka"
   },
   {
     "english": "Bow",
-    "garo": "Sko-ka·mama"
+    "garo": "Sko·ka·mama"
   },
   {
     "english": "Hug",
-    "garo": "Jak-kadepa"
+    "garo": "Jak·kadepa"
   },
   {
     "english": "Wink",
-    "garo": "Mik-chip-a"
+    "garo": "Mik·chip·a"
   },
   {
     "english": "Smile",
-    "garo": "Ka·ding-mikseng·a"
+    "garo": "Ka·ding·mikseng·a"
   },
   {
     "english": "Sneeze",
@@ -8665,23 +8665,23 @@
   },
   {
     "english": "Open your book",
-    "garo": "Ki·tapko oa-bo"
+    "garo": "Ki·tapko oa·bo"
   },
   {
     "english": "Close your book",
-    "garo": "Ki·tapko chip·a-bo"
+    "garo": "Ki·tapko chip·a·bo"
   },
   {
     "english": "Listen carefully",
-    "garo": "Chakchik knachik-bo"
+    "garo": "Chakchik knachik·bo"
   },
   {
     "english": "Raise your hand",
-    "garo": "Jakko bil-bo"
+    "garo": "Jakko bil·bo"
   },
   {
     "english": "Answer the question",
-    "garo": "Sing·ani-ko aganchaka-bo"
+    "garo": "Sing·ani·ko aganchaka·bo"
   },
   {
     "english": "I have a question",
@@ -8697,11 +8697,11 @@
   },
   {
     "english": "Homework",
-    "garo": "Nok-o dak-porani"
+    "garo": "Nok·o dak·porani"
   },
   {
     "english": "Study hard",
-    "garo": "Chakchik pora-bo"
+    "garo": "Chakchik pora·bo"
   },
   {
     "english": "Congratulations!",
@@ -8709,7 +8709,7 @@
   },
   {
     "english": "Happy Birthday!",
-    "garo": "Bilsi-gital kusi!"
+    "garo": "Bilsi·gital kusi!"
   },
   {
     "english": "Get well soon",
@@ -8721,11 +8721,11 @@
   },
   {
     "english": "God bless you",
-    "garo": "Isol nang·na pattia-bo"
+    "garo": "Isol nang·na pattia·bo"
   },
   {
     "english": "Rest in peace",
-    "garo": "Tom·toma-o tusibo"
+    "garo": "Tom·toma·o tusibo"
   },
   {
     "english": "You did well",
@@ -8733,7 +8733,7 @@
   },
   {
     "english": "Don't give up",
-    "garo": "Kimia-bo ong·ja"
+    "garo": "Kimia·bo ong·ja"
   },
   {
     "english": "I believe in you",
@@ -8741,7 +8741,7 @@
   },
   {
     "english": "I miss my family",
-    "garo": "Angni nokdang-na simbraa"
+    "garo": "Angni nokdang·na simbraa"
   },
   {
     "english": "Come (command)",
@@ -9277,7 +9277,7 @@
   },
   {
     "english": "Negation",
-    "garo": "verb + ong·ja / -ja"
+    "garo": "verb + ong·ja / ·ja"
   },
   {
     "english": "Adverb 'well'",
@@ -9361,31 +9361,31 @@
   },
   {
     "english": "one dog",
-    "garo": "achak mang-sa"
+    "garo": "achak mang·sa"
   },
   {
     "english": "two dogs",
-    "garo": "achak mang-gni"
+    "garo": "achak mang·gni"
   },
   {
     "english": "three books",
-    "garo": "ki·tap king-gittam"
+    "garo": "ki·tap king·gittam"
   },
   {
     "english": "one person",
-    "garo": "mande sak-sa"
+    "garo": "mande sak·sa"
   },
   {
     "english": "four fruits",
-    "garo": "mewa ge-bri"
+    "garo": "mewa ge·bri"
   },
   {
     "english": "five coins",
-    "garo": "tangka gong-bonga"
+    "garo": "tangka gong·bonga"
   },
   {
     "english": "ten birds",
-    "garo": "do·a mang-chiking"
+    "garo": "do·a mang·chiking"
   },
   {
     "english": "Let's eat",
@@ -9501,7 +9501,7 @@
   },
   {
     "english": "Is he coming?",
-    "garo": "Ua re·baenga-ma?"
+    "garo": "Ua re·baenga·ma?"
   },
   {
     "english": "Come here!",
@@ -9673,7 +9673,7 @@
   },
   {
     "english": "example",
-    "garo": "bi·ko (him/it-object)"
+    "garo": "bi·ko (him/it·object)"
   },
   {
     "english": "example",
@@ -10029,7 +10029,7 @@
   },
   {
     "english": "garo",
-    "garo": "Maini-gimin"
+    "garo": "Maini·gimin"
   },
   {
     "english": "hindi",
@@ -11077,7 +11077,7 @@
   },
   {
     "english": "rule",
-    "garo": "Add -ja suffix to verb root"
+    "garo": "Add ·ja suffix to verb root"
   },
   {
     "english": "don't eat / not eating",
@@ -11113,7 +11113,7 @@
   },
   {
     "english": "rule",
-    "garo": "Add -chi suffix to place noun"
+    "garo": "Add ·chi suffix to place noun"
   },
   {
     "english": "at / to the market",
@@ -11129,7 +11129,7 @@
   },
   {
     "english": "rule",
-    "garo": "Add -na suffix to pronoun/noun for indirect object"
+    "garo": "Add ·na suffix to pronoun/noun for indirect object"
   },
   {
     "english": "to me / for me",
@@ -11157,19 +11157,19 @@
   },
   {
     "english": "rule",
-    "garo": "NOUN + CLASSIFIER-NUMBER (not English order)"
+    "garo": "NOUN + CLASSIFIER·NUMBER (not English order)"
   },
   {
     "english": "one dog",
-    "garo": "achak mang-sa"
+    "garo": "achak mang·sa"
   },
   {
     "english": "two books",
-    "garo": "ki·tap king-gni"
+    "garo": "ki·tap king·gni"
   },
   {
     "english": "three people",
-    "garo": "manderang sak-gittam"
+    "garo": "manderang sak·gittam"
   },
   {
     "english": "Hello / Greetings",
@@ -11193,11 +11193,11 @@
   },
   {
     "english": "Goodbye",
-    "garo": "Re·ang-na / Nam-en-dongbo"
+    "garo": "Re·ang·na / Nam·en·dongbo"
   },
   {
     "english": "See you again",
-    "garo": "Pil·tai-grongna"
+    "garo": "Pil·tai·grongna"
   },
   {
     "english": "Welcome",
@@ -11213,11 +11213,11 @@
   },
   {
     "english": "Sorry / Forgive me",
-    "garo": "Kema-bi·a"
+    "garo": "Kema·bi·a"
   },
   {
     "english": "Excuse me",
-    "garo": "Angko kema-watbo"
+    "garo": "Angko kema·watbo"
   },
   {
     "english": "How are you?",
@@ -11245,7 +11245,7 @@
   },
   {
     "english": "Where are you from?",
-    "garo": "Na·a bano-ni?"
+    "garo": "Na·a bano·ni?"
   },
   {
     "english": "I don't know",
@@ -11417,7 +11417,7 @@
   },
   {
     "english": "pomelo",
-    "garo": "Narang-gira"
+    "garo": "Narang·gira"
   },
   {
     "english": "blackberry",
@@ -11429,7 +11429,7 @@
   },
   {
     "english": "wild berry",
-    "garo": "Bol-meseng"
+    "garo": "Bol·meseng"
   },
   {
     "english": "pumpkin",
@@ -11461,7 +11461,7 @@
   },
   {
     "english": "garlic",
-    "garo": "Rasin-gipok"
+    "garo": "Rasin·gipok"
   },
   {
     "english": "ginger",
@@ -11485,7 +11485,7 @@
   },
   {
     "english": "spinach",
-    "garo": "Palong-sam"
+    "garo": "Palong·sam"
   },
   {
     "english": "broad beans",
@@ -11729,7 +11729,7 @@
   },
   {
     "english": "run",
-    "garo": "Kat-a"
+    "garo": "Kat·a"
   },
   {
     "english": "speak",
@@ -11753,7 +11753,7 @@
   },
   {
     "english": "work",
-    "garo": "Dak-a"
+    "garo": "Dak·a"
   },
   {
     "english": "play",
@@ -11761,7 +11761,7 @@
   },
   {
     "english": "sit",
-    "garo": "Asong-a"
+    "garo": "Asong·a"
   },
   {
     "english": "stand",
@@ -11769,11 +11769,11 @@
   },
   {
     "english": "laugh",
-    "garo": "Ka·ding-a"
+    "garo": "Ka·ding·a"
   },
   {
     "english": "cry",
-    "garo": "Grap-a"
+    "garo": "Grap·a"
   },
   {
     "english": "buy",
@@ -11785,11 +11785,11 @@
   },
   {
     "english": "come",
-    "garo": "Re·ba-a"
+    "garo": "Re·ba·a"
   },
   {
     "english": "go",
-    "garo": "Re·ang-a"
+    "garo": "Re·ang·a"
   },
   {
     "english": "father",
@@ -11801,11 +11801,11 @@
   },
   {
     "english": "son",
-    "garo": "De-bi-pa"
+    "garo": "De·bi·pa"
   },
   {
     "english": "daughter",
-    "garo": "De-me-chik"
+    "garo": "De·me·chik"
   },
   {
     "english": "grandmother",
@@ -11913,7 +11913,7 @@
   },
   {
     "english": "blue",
-    "garo": "Tang-sim"
+    "garo": "Tang·sim"
   },
   {
     "english": "yellow",
@@ -12025,7 +12025,7 @@
   },
   {
     "english": "to fall (stumble/trip)",
-    "garo": "Nang·ting-a"
+    "garo": "Nang·ting·a"
   },
   {
     "english": "to fall (slip)",
@@ -12061,7 +12061,7 @@
   },
   {
     "english": "to feel (emotionally)",
-    "garo": "Gisik-o nanga"
+    "garo": "Gisik·o nanga"
   },
   {
     "english": "to hurt (pain)",
@@ -12109,15 +12109,15 @@
   },
   {
     "english": "close",
-    "garo": "Chip-a"
+    "garo": "Chip·a"
   },
   {
     "english": "push",
-    "garo": "Jit-pak-a"
+    "garo": "Jit·pak·a"
   },
   {
     "english": "pull / drive",
-    "garo": "Sal-a (⚠ same word)"
+    "garo": "Sal·a (⚠ same word)"
   },
   {
     "english": "break (glass/stick)",
@@ -12125,11 +12125,11 @@
   },
   {
     "english": "tear (paper/cloth)",
-    "garo": "Gritt-a"
+    "garo": "Gritt·a"
   },
   {
     "english": "throw",
-    "garo": "Gal-a / Goata"
+    "garo": "Gal·a / Goata"
   },
   {
     "english": "catch",
@@ -12137,11 +12137,11 @@
   },
   {
     "english": "wash",
-    "garo": "Su·srong-a"
+    "garo": "Su·srong·a"
   },
   {
     "english": "clean",
-    "garo": "Rongtal-ata"
+    "garo": "Rongtal·ata"
   },
   {
     "english": "sun",
@@ -12177,7 +12177,7 @@
   },
   {
     "english": "lightning",
-    "garo": "Mikka-kimma"
+    "garo": "Mikka·kimma"
   },
   {
     "english": "fire",
@@ -12229,7 +12229,7 @@
   },
   {
     "english": "it is sunny",
-    "garo": "Sal-seng·a"
+    "garo": "Sal·seng·a"
   },
   {
     "english": "it is cold",
@@ -12241,7 +12241,7 @@
   },
   {
     "english": "flood",
-    "garo": "Mikka-brimba"
+    "garo": "Mikka·brimba"
   },
   {
     "english": "drought",
@@ -12249,7 +12249,7 @@
   },
   {
     "english": "earthquake",
-    "garo": "A·a-moa"
+    "garo": "A·a·moa"
   },
   {
     "english": "fog / mist",
@@ -12257,15 +12257,15 @@
   },
   {
     "english": "rainbow",
-    "garo": "Gitchak-rong jal·ang"
+    "garo": "Gitchak·rong jal·ang"
   },
   {
     "english": "sunrise",
-    "garo": "Sal-aram"
+    "garo": "Sal·aram"
   },
   {
     "english": "sunset",
-    "garo": "Sal-ikram"
+    "garo": "Sal·ikram"
   },
   {
     "english": "house",
@@ -12309,11 +12309,11 @@
   },
   {
     "english": "pot",
-    "garo": "Dik-ke"
+    "garo": "Dik·ke"
   },
   {
     "english": "broom",
-    "garo": "Sal-re-at"
+    "garo": "Sal·re·at"
   },
   {
     "english": "clothes",
@@ -12417,7 +12417,7 @@
   },
   {
     "english": "day before yesterday",
-    "garo": "Me-si-ja"
+    "garo": "Me·si·ja"
   },
   {
     "english": "later",
@@ -12429,15 +12429,15 @@
   },
   {
     "english": "early",
-    "garo": "Bakkan / Pring-seng"
+    "garo": "Bakkan / Pring·seng"
   },
   {
     "english": "late",
-    "garo": "Ja·man-chak-a"
+    "garo": "Ja·man·chak·a"
   },
   {
     "english": "never",
-    "garo": "Pangnan-ba (ja)"
+    "garo": "Pangnan·ba (ja)"
   },
   {
     "english": "shirt",
@@ -12477,7 +12477,7 @@
   },
   {
     "english": "earring",
-    "garo": "Nachil-ganna"
+    "garo": "Nachil·ganna"
   },
   {
     "english": "big",
@@ -12493,7 +12493,7 @@
   },
   {
     "english": "short",
-    "garo": "Kan·dik-a"
+    "garo": "Kan·dik·a"
   },
   {
     "english": "tall",
@@ -12517,7 +12517,7 @@
   },
   {
     "english": "fast",
-    "garo": "Ta·rak-a"
+    "garo": "Ta·rak·a"
   },
   {
     "english": "slow",
@@ -12525,7 +12525,7 @@
   },
   {
     "english": "rich",
-    "garo": "Nokma / Man·e-cha·gipa"
+    "garo": "Nokma / Man·e·cha·gipa"
   },
   {
     "english": "poor",
@@ -12573,11 +12573,11 @@
   },
   {
     "english": "office",
-    "garo": "Kam-ka·chakani"
+    "garo": "Kam·ka·chakani"
   },
   {
     "english": "church",
-    "garo": "Gilja-nok"
+    "garo": "Gilja·nok"
   },
   {
     "english": "shop",
@@ -12585,7 +12585,7 @@
   },
   {
     "english": "hospital",
-    "garo": "Hospital / Sam-nok"
+    "garo": "Hospital / Sam·nok"
   },
   {
     "english": "up",
@@ -12597,11 +12597,11 @@
   },
   {
     "english": "left",
-    "garo": "Jak-asi"
+    "garo": "Jak·asi"
   },
   {
     "english": "right",
-    "garo": "Jak-ra"
+    "garo": "Jak·ra"
   },
   {
     "english": "front",
@@ -12653,7 +12653,7 @@
   },
   {
     "english": "farmer",
-    "garo": "Game-cha·gipa"
+    "garo": "Game·cha·gipa"
   },
   {
     "english": "teacher",
@@ -12661,11 +12661,11 @@
   },
   {
     "english": "student",
-    "garo": "Porai-gipa"
+    "garo": "Porai·gipa"
   },
   {
     "english": "doctor",
-    "garo": "Doctor / Sam-on·gipa"
+    "garo": "Doctor / Sam·on·gipa"
   },
   {
     "english": "nurse",
@@ -12673,27 +12673,27 @@
   },
   {
     "english": "driver",
-    "garo": "Gari-chalai-gipa"
+    "garo": "Gari·chalai·gipa"
   },
   {
     "english": "carpenter",
-    "garo": "Bal-sol-gipa"
+    "garo": "Bal·sol·gipa"
   },
   {
     "english": "blacksmith",
-    "garo": "Sil-dak-gipa"
+    "garo": "Sil·dak·gipa"
   },
   {
     "english": "shopkeeper",
-    "garo": "Dokan-dakgipa"
+    "garo": "Dokan·dakgipa"
   },
   {
     "english": "tailor",
-    "garo": "Ba·ra-sikgipa"
+    "garo": "Ba·ra·sikgipa"
   },
   {
     "english": "worker / laborer",
-    "garo": "Kam-ka·gipa"
+    "garo": "Kam·ka·gipa"
   },
   {
     "english": "king",
@@ -12713,7 +12713,7 @@
   },
   {
     "english": "postman",
-    "garo": "Chiti-ra·ba-gipa"
+    "garo": "Chiti·ra·ba·gipa"
   },
   {
     "english": "cook",
@@ -12781,7 +12781,7 @@
   },
   {
     "english": "sentence",
-    "garo": "Katta-ku·chik"
+    "garo": "Katta·ku·chik"
   },
   {
     "english": "question",
@@ -12829,7 +12829,7 @@
   },
   {
     "english": "fever",
-    "garo": "Sin·-ding·-a"
+    "garo": "Sin··ding··a"
   },
   {
     "english": "cough",
@@ -12837,11 +12837,11 @@
   },
   {
     "english": "headache",
-    "garo": "Sko-saa"
+    "garo": "Sko·saa"
   },
   {
     "english": "stomachache",
-    "garo": "Ok-saa"
+    "garo": "Ok·saa"
   },
   {
     "english": "wound / injury",
@@ -12873,7 +12873,7 @@
   },
   {
     "english": "deaf",
-    "garo": "Nachil-kala"
+    "garo": "Nachil·kala"
   },
   {
     "english": "mute",
@@ -13089,7 +13089,7 @@
   },
   {
     "english": "garlic",
-    "garo": "Rasin-gipok"
+    "garo": "Rasin·gipok"
   },
   {
     "english": "ginger",
@@ -13177,11 +13177,11 @@
   },
   {
     "english": "motorcycle",
-    "garo": "Motor-cycle"
+    "garo": "Motor·cycle"
   },
   {
     "english": "train",
-    "garo": "Rail-gari"
+    "garo": "Rail·gari"
   },
   {
     "english": "airplane",
@@ -13273,7 +13273,7 @@
   },
   {
     "english": "youth",
-    "garo": "Me·tra-pante"
+    "garo": "Me·tra·pante"
   },
   {
     "english": "son",
@@ -13381,7 +13381,7 @@
   },
   {
     "english": "why",
-    "garo": "Maini-gimin"
+    "garo": "Maini·gimin"
   },
   {
     "english": "how",
@@ -13521,11 +13521,11 @@
   },
   {
     "english": "to lay eggs",
-    "garo": "Bitchi-chi·a"
+    "garo": "Bitchi·chi·a"
   },
   {
     "english": "to hunt",
-    "garo": "Sikar-ka·a"
+    "garo": "Sikar·ka·a"
   },
   {
     "english": "to catch",
@@ -13573,7 +13573,7 @@
   },
   {
     "english": "church",
-    "garo": "Gilja-nok"
+    "garo": "Gilja·nok"
   },
   {
     "english": "sin",
@@ -13613,7 +13613,7 @@
   },
   {
     "english": "miracle",
-    "garo": "Aiao-inmangipa-kam"
+    "garo": "Aiao·inmangipa·kam"
   },
   {
     "english": "angel",
@@ -13633,7 +13633,7 @@
   },
   {
     "english": "prison",
-    "garo": "Patok-nok"
+    "garo": "Patok·nok"
   },
   {
     "english": "punishment",
@@ -13661,7 +13661,7 @@
   },
   {
     "english": "signature",
-    "garo": "Jak-soi"
+    "garo": "Jak·soi"
   },
   {
     "english": "truth",
@@ -13677,15 +13677,15 @@
   },
   {
     "english": "guilty",
-    "garo": "Dos-gnang"
+    "garo": "Dos·gnang"
   },
   {
     "english": "innocent",
-    "garo": "Dos-gri"
+    "garo": "Dos·gri"
   },
   {
     "english": "to judge",
-    "garo": "Bichal-ka·a"
+    "garo": "Bichal·ka·a"
   },
   {
     "english": "to clean",
@@ -13777,7 +13777,7 @@
   },
   {
     "english": "thirsty",
-    "garo": "Chi-ringna-ska"
+    "garo": "Chi·ringna·ska"
   },
   {
     "english": "tired",
@@ -13785,7 +13785,7 @@
   },
   {
     "english": "sleepy",
-    "garo": "Tusina-ska"
+    "garo": "Tusina·ska"
   },
   {
     "english": "sick",
@@ -13805,7 +13805,7 @@
   },
   {
     "english": "hard",
-    "garo": "Rak-a"
+    "garo": "Rak·a"
   },
   {
     "english": "soft",
@@ -13869,11 +13869,11 @@
   },
   {
     "english": "expensive",
-    "garo": "Dam-raka"
+    "garo": "Dam·raka"
   },
   {
     "english": "cheap",
-    "garo": "Dam-nom·a"
+    "garo": "Dam·nom·a"
   },
   {
     "english": "i",
@@ -13985,7 +13985,7 @@
   },
   {
     "english": "no one",
-    "garo": "Darangba-ong·ja"
+    "garo": "Darangba·ong·ja"
   },
   {
     "english": "everyone",
@@ -14017,11 +14017,11 @@
   },
   {
     "english": "expensive",
-    "garo": "Dam-raka"
+    "garo": "Dam·raka"
   },
   {
     "english": "cheap",
-    "garo": "Dam-nom·a"
+    "garo": "Dam·nom·a"
   },
   {
     "english": "to buy",
@@ -14033,7 +14033,7 @@
   },
   {
     "english": "coin",
-    "garo": "Tangka-bisil"
+    "garo": "Tangka·bisil"
   },
   {
     "english": "scale",
@@ -14049,7 +14049,7 @@
   },
   {
     "english": "discount",
-    "garo": "Dam-komiatani"
+    "garo": "Dam·komiatani"
   },
   {
     "english": "customer",
@@ -14057,7 +14057,7 @@
   },
   {
     "english": "shopkeeper",
-    "garo": "Dokan-dakgipa"
+    "garo": "Dokan·dakgipa"
   },
   {
     "english": "bag",
@@ -14069,7 +14069,7 @@
   },
   {
     "english": "reduce the price",
-    "garo": "Dam-ko on·tisa komiatbo."
+    "garo": "Dam·ko on·tisa komiatbo."
   },
   {
     "english": "i want to buy this",
@@ -14085,7 +14085,7 @@
   },
   {
     "english": "give me one kilo",
-    "garo": "Angna kilo-sa on·bo."
+    "garo": "Angna kilo·sa on·bo."
   },
   {
     "english": "hello",
@@ -14117,11 +14117,11 @@
   },
   {
     "english": "excuse me",
-    "garo": "Angko kema-watbo."
+    "garo": "Angko kema·watbo."
   },
   {
     "english": "sorry",
-    "garo": "Kema-bi·a."
+    "garo": "Kema·bi·a."
   },
   {
     "english": "good morning",
@@ -14141,11 +14141,11 @@
   },
   {
     "english": "goodbye",
-    "garo": "Re·ang-na / Nam-en-dongbo."
+    "garo": "Re·ang·na / Nam·en·dongbo."
   },
   {
     "english": "see you again",
-    "garo": "Pil·tai-grongna"
+    "garo": "Pil·tai·grongna"
   },
   {
     "english": "welcome",
@@ -14165,11 +14165,11 @@
   },
   {
     "english": "where are you from?",
-    "garo": "Na·a bano-ni?"
+    "garo": "Na·a bano·ni?"
   },
   {
     "english": "i am from...",
-    "garo": "Anga ...-ni."
+    "garo": "Anga ...·ni."
   },
   {
     "english": "time",
@@ -14189,11 +14189,11 @@
   },
   {
     "english": "noon",
-    "garo": "Sal-jatchi"
+    "garo": "Sal·jatchi"
   },
   {
     "english": "afternoon",
-    "garo": "Sal-aksol"
+    "garo": "Sal·aksol"
   },
   {
     "english": "evening",
@@ -14205,7 +14205,7 @@
   },
   {
     "english": "midnight",
-    "garo": "Wal-jatchi"
+    "garo": "Wal·jatchi"
   },
   {
     "english": "today",
@@ -14225,7 +14225,7 @@
   },
   {
     "english": "day before yesterday",
-    "garo": "Me-si-ja"
+    "garo": "Me·si·ja"
   },
   {
     "english": "now",
@@ -14241,11 +14241,11 @@
   },
   {
     "english": "early",
-    "garo": "Bakkan / Pring-seng"
+    "garo": "Bakkan / Pring·seng"
   },
   {
     "english": "late",
-    "garo": "Ja·man-chak-a"
+    "garo": "Ja·man·chak·a"
   },
   {
     "english": "summer",
@@ -14265,7 +14265,7 @@
   },
   {
     "english": "never",
-    "garo": "Pangnan-ba (ja)"
+    "garo": "Pangnan·ba (ja)"
   },
   {
     "english": "and",
@@ -14281,7 +14281,7 @@
   },
   {
     "english": "if",
-    "garo": "Ode / -ode"
+    "garo": "Ode / ·ode"
   },
   {
     "english": "so / therefore",
@@ -14297,39 +14297,39 @@
   },
   {
     "english": "for",
-    "garo": "Gimin / -na"
+    "garo": "Gimin / ·na"
   },
   {
     "english": "from",
-    "garo": "-oni"
+    "garo": "·oni"
   },
   {
     "english": "to",
-    "garo": "-na"
+    "garo": "·na"
   },
   {
     "english": "in / at",
-    "garo": "-o"
+    "garo": "·o"
   },
   {
     "english": "on",
-    "garo": "Kosak-o"
+    "garo": "Kosak·o"
   },
   {
     "english": "under",
-    "garo": "Ka·ma-o"
+    "garo": "Ka·ma·o"
   },
   {
     "english": "between",
-    "garo": "Jatchi-o"
+    "garo": "Jatchi·o"
   },
   {
     "english": "only",
-    "garo": "-mangmang / -san"
+    "garo": "·mangmang / ·san"
   },
   {
     "english": "also",
-    "garo": "-ba"
+    "garo": "·ba"
   },
   {
     "english": "very",
@@ -14349,15 +14349,15 @@
   },
   {
     "english": "listen",
-    "garo": "Knachik-bo"
+    "garo": "Knachik·bo"
   },
   {
     "english": "look",
-    "garo": "Ni-bo"
+    "garo": "Ni·bo"
   },
   {
     "english": "tell me",
-    "garo": "Angna agan-bo"
+    "garo": "Angna agan·bo"
   },
   {
     "english": "i know",
@@ -14481,11 +14481,11 @@
   },
   {
     "english": "i am busy",
-    "garo": "Anga kam-gnanga"
+    "garo": "Anga kam·gnanga"
   },
   {
     "english": "i am not busy",
-    "garo": "Anga kam-gnang·ja"
+    "garo": "Anga kam·gnang·ja"
   },
   {
     "english": "i am coming",
@@ -14533,7 +14533,7 @@
   },
   {
     "english": "i feel lonely",
-    "garo": "Anga saksan gisik-o nanga"
+    "garo": "Anga saksan gisik·o nanga"
   },
   {
     "english": "don't be sad",
@@ -14573,7 +14573,7 @@
   },
   {
     "english": "i am surprised",
-    "garo": "Anga jagok-a"
+    "garo": "Anga jagok·a"
   },
   {
     "english": "i am satisfied",
@@ -14641,7 +14641,7 @@
   },
   {
     "english": "throw",
-    "garo": "Goata / Gal-a"
+    "garo": "Goata / Gal·a"
   },
   {
     "english": "catch",
@@ -14733,7 +14733,7 @@
   },
   {
     "english": "think",
-    "garo": "Gisik-o nanga"
+    "garo": "Gisik·o nanga"
   },
   {
     "english": "know",
@@ -14757,7 +14757,7 @@
   },
   {
     "english": "disagree",
-    "garo": "Ka·rach-ong·ja"
+    "garo": "Ka·rach·ong·ja"
   },
   {
     "english": "promise",
@@ -14877,11 +14877,11 @@
   },
   {
     "english": "a good person is known by deeds",
-    "garo": "Nama mande-ra ua kam-o uia"
+    "garo": "Nama mande·ra ua kam·o uia"
   },
   {
     "english": "garo",
-    "garo": "Mi gual-ata·bo ong·ja"
+    "garo": "Mi gual·ata·bo ong·ja"
   },
   {
     "english": "garo",
@@ -14889,11 +14889,11 @@
   },
   {
     "english": "truth always comes out",
-    "garo": "Bebe-ra inde·a piltai"
+    "garo": "Bebe·ra inde·a piltai"
   },
   {
     "english": "a little is better than nothing",
-    "garo": "On·titi nama, bangbang-bata"
+    "garo": "On·titi nama, bangbang·bata"
   },
   {
     "english": "garo",
@@ -14925,11 +14925,11 @@
   },
   {
     "english": "cool / awesome",
-    "garo": "Nito / Nita-gipa"
+    "garo": "Nito / Nita·gipa"
   },
   {
     "english": "garo",
-    "garo": "Jala-gipa"
+    "garo": "Jala·gipa"
   },
   {
     "english": "let's hang out",
@@ -14965,79 +14965,79 @@
   },
   {
     "english": "kind / gentle",
-    "garo": "Nama-gipa"
+    "garo": "Nama·gipa"
   },
   {
     "english": "brave",
-    "garo": "Ka·rakani-gipa"
+    "garo": "Ka·rakani·gipa"
   },
   {
     "english": "clever",
-    "garo": "Seng·a-gipa"
+    "garo": "Seng·a·gipa"
   },
   {
     "english": "foolish",
-    "garo": "Bangbang-gisik"
+    "garo": "Bangbang·gisik"
   },
   {
     "english": "honest",
-    "garo": "Bebe-agani-gipa"
+    "garo": "Bebe·agani·gipa"
   },
   {
     "english": "dishonest",
-    "garo": "Tol·a-agani-gipa"
+    "garo": "Tol·a·agani·gipa"
   },
   {
     "english": "hardworking",
-    "garo": "Dak-rakgipa"
+    "garo": "Dak·rakgipa"
   },
   {
     "english": "lazy",
-    "garo": "Bilgri-gipa"
+    "garo": "Bilgri·gipa"
   },
   {
     "english": "generous",
-    "garo": "On·a-nakgipa"
+    "garo": "On·a·nakgipa"
   },
   {
     "english": "greedy",
-    "garo": "Gisika-dakgipa"
+    "garo": "Gisika·dakgipa"
   },
   {
     "english": "proud / arrogant",
-    "garo": "Gaora-gipa"
+    "garo": "Gaora·gipa"
   },
   {
     "english": "humble",
-    "garo": "Chon·a-gisik"
+    "garo": "Chon·a·gisik"
   },
   {
     "english": "shy",
-    "garo": "Kracha-gipa"
+    "garo": "Kracha·gipa"
   },
   {
     "english": "confident",
-    "garo": "Ka·raka-gisik"
+    "garo": "Ka·raka·gisik"
   },
   {
     "english": "talkative",
-    "garo": "Bang·a agani-gipa"
+    "garo": "Bang·a agani·gipa"
   },
   {
     "english": "quiet",
-    "garo": "Agana·ja-gipa"
+    "garo": "Agana·ja·gipa"
   },
   {
     "english": "funny",
-    "garo": "Ka·ding-o on·a-gipa"
+    "garo": "Ka·ding·o on·a·gipa"
   },
   {
     "english": "stubborn",
-    "garo": "An·tang-ra·gipa"
+    "garo": "An·tang·ra·gipa"
   },
   {
     "english": "obedient",
-    "garo": "Knachika-gipa"
+    "garo": "Knachika·gipa"
   },
   {
     "english": "dog bark",
@@ -15045,7 +15045,7 @@
   },
   {
     "english": "cat meow",
-    "garo": "Miau-miau"
+    "garo": "Miau·miau"
   },
   {
     "english": "cow moo",
@@ -15053,11 +15053,11 @@
   },
   {
     "english": "rooster crow",
-    "garo": "Ko·ko-rika"
+    "garo": "Ko·ko·rika"
   },
   {
     "english": "frog croak",
-    "garo": "Beng-beng"
+    "garo": "Beng·beng"
   },
   {
     "english": "bird chirp",
@@ -15065,11 +15065,11 @@
   },
   {
     "english": "snake hiss",
-    "garo": "Chiss-chiss"
+    "garo": "Chiss·chiss"
   },
   {
     "english": "bee buzz",
-    "garo": "Guum-guum"
+    "garo": "Guum·guum"
   },
   {
     "english": "tiger roar",
@@ -15077,39 +15077,39 @@
   },
   {
     "english": "nod (yes)",
-    "garo": "Skola-o"
+    "garo": "Skola·o"
   },
   {
     "english": "shake head (no)",
-    "garo": "Sko-moa"
+    "garo": "Sko·moa"
   },
   {
     "english": "wave hand",
-    "garo": "Jak-bildoa"
+    "garo": "Jak·bildoa"
   },
   {
     "english": "point finger",
-    "garo": "Jak-chip·a"
+    "garo": "Jak·chip·a"
   },
   {
     "english": "clap",
-    "garo": "Jak-taka"
+    "garo": "Jak·taka"
   },
   {
     "english": "bow",
-    "garo": "Sko-ka·mama"
+    "garo": "Sko·ka·mama"
   },
   {
     "english": "hug",
-    "garo": "Jak-kadepa"
+    "garo": "Jak·kadepa"
   },
   {
     "english": "wink",
-    "garo": "Mik-chip-a"
+    "garo": "Mik·chip·a"
   },
   {
     "english": "smile",
-    "garo": "Ka·ding-mikseng·a"
+    "garo": "Ka·ding·mikseng·a"
   },
   {
     "english": "sneeze",
@@ -15129,23 +15129,23 @@
   },
   {
     "english": "open your book",
-    "garo": "Ki·tapko oa-bo"
+    "garo": "Ki·tapko oa·bo"
   },
   {
     "english": "close your book",
-    "garo": "Ki·tapko chip·a-bo"
+    "garo": "Ki·tapko chip·a·bo"
   },
   {
     "english": "listen carefully",
-    "garo": "Chakchik knachik-bo"
+    "garo": "Chakchik knachik·bo"
   },
   {
     "english": "raise your hand",
-    "garo": "Jakko bil-bo"
+    "garo": "Jakko bil·bo"
   },
   {
     "english": "answer the question",
-    "garo": "Sing·ani-ko aganchaka-bo"
+    "garo": "Sing·ani·ko aganchaka·bo"
   },
   {
     "english": "i have a question",
@@ -15161,11 +15161,11 @@
   },
   {
     "english": "homework",
-    "garo": "Nok-o dak-porani"
+    "garo": "Nok·o dak·porani"
   },
   {
     "english": "study hard",
-    "garo": "Chakchik pora-bo"
+    "garo": "Chakchik pora·bo"
   },
   {
     "english": "congratulations!",
@@ -15173,7 +15173,7 @@
   },
   {
     "english": "happy birthday!",
-    "garo": "Bilsi-gital kusi!"
+    "garo": "Bilsi·gital kusi!"
   },
   {
     "english": "get well soon",
@@ -15185,11 +15185,11 @@
   },
   {
     "english": "god bless you",
-    "garo": "Isol nang·na pattia-bo"
+    "garo": "Isol nang·na pattia·bo"
   },
   {
     "english": "rest in peace",
-    "garo": "Tom·toma-o tusibo"
+    "garo": "Tom·toma·o tusibo"
   },
   {
     "english": "you did well",
@@ -15197,7 +15197,7 @@
   },
   {
     "english": "don't give up",
-    "garo": "Kimia-bo ong·ja"
+    "garo": "Kimia·bo ong·ja"
   },
   {
     "english": "i believe in you",
@@ -15205,7 +15205,7 @@
   },
   {
     "english": "i miss my family",
-    "garo": "Angni nokdang-na simbraa"
+    "garo": "Angni nokdang·na simbraa"
   },
   {
     "english": "come (command)",
@@ -15685,403 +15685,403 @@
   },
   {
     "english": "one person",
-    "garo": "sa sak-sa"
+    "garo": "sa sak·sa"
   },
   {
     "english": "one dog",
-    "garo": "sa mang-sa"
+    "garo": "sa mang·sa"
   },
   {
     "english": "one bird",
-    "garo": "sa mang-sa"
+    "garo": "sa mang·sa"
   },
   {
     "english": "one fish",
-    "garo": "sa mang-sa"
+    "garo": "sa mang·sa"
   },
   {
     "english": "one teacher",
-    "garo": "sa sak-sa"
+    "garo": "sa sak·sa"
   },
   {
     "english": "one student",
-    "garo": "sa sak-sa"
+    "garo": "sa sak·sa"
   },
   {
     "english": "one house",
-    "garo": "sa rang-sa"
+    "garo": "sa rang·sa"
   },
   {
     "english": "one tree",
-    "garo": "sa rang-sa"
+    "garo": "sa rang·sa"
   },
   {
     "english": "one book",
-    "garo": "sa rang-sa"
+    "garo": "sa rang·sa"
   },
   {
     "english": "one car",
-    "garo": "sa rang-sa"
+    "garo": "sa rang·sa"
   },
   {
     "english": "two persons",
-    "garo": "do·o sak-gni"
+    "garo": "do·o sak·gni"
   },
   {
     "english": "two dogs",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "two birds",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "two fishs",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "two teachers",
-    "garo": "do·o sak-gni"
+    "garo": "do·o sak·gni"
   },
   {
     "english": "two students",
-    "garo": "do·o sak-gni"
+    "garo": "do·o sak·gni"
   },
   {
     "english": "two houses",
-    "garo": "do·o rang-gni"
+    "garo": "do·o rang·gni"
   },
   {
     "english": "two trees",
-    "garo": "do·o rang-gni"
+    "garo": "do·o rang·gni"
   },
   {
     "english": "two books",
-    "garo": "do·o rang-gni"
+    "garo": "do·o rang·gni"
   },
   {
     "english": "two cars",
-    "garo": "do·o rang-gni"
+    "garo": "do·o rang·gni"
   },
   {
     "english": "three persons",
-    "garo": "na·tok sak-gni"
+    "garo": "na·tok sak·gni"
   },
   {
     "english": "three dogs",
-    "garo": "na·tok mang-gni"
+    "garo": "na·tok mang·gni"
   },
   {
     "english": "three birds",
-    "garo": "na·tok mang-gni"
+    "garo": "na·tok mang·gni"
   },
   {
     "english": "three fishs",
-    "garo": "na·tok mang-gni"
+    "garo": "na·tok mang·gni"
   },
   {
     "english": "three teachers",
-    "garo": "na·tok sak-gni"
+    "garo": "na·tok sak·gni"
   },
   {
     "english": "three students",
-    "garo": "na·tok sak-gni"
+    "garo": "na·tok sak·gni"
   },
   {
     "english": "three houses",
-    "garo": "na·tok rang-gni"
+    "garo": "na·tok rang·gni"
   },
   {
     "english": "three trees",
-    "garo": "na·tok rang-gni"
+    "garo": "na·tok rang·gni"
   },
   {
     "english": "three books",
-    "garo": "na·tok rang-gni"
+    "garo": "na·tok rang·gni"
   },
   {
     "english": "three cars",
-    "garo": "na·tok rang-gni"
+    "garo": "na·tok rang·gni"
   },
   {
     "english": "four persons",
-    "garo": "brang sak-gni"
+    "garo": "brang sak·gni"
   },
   {
     "english": "four dogs",
-    "garo": "brang mang-gni"
+    "garo": "brang mang·gni"
   },
   {
     "english": "four birds",
-    "garo": "brang mang-gni"
+    "garo": "brang mang·gni"
   },
   {
     "english": "four fishs",
-    "garo": "brang mang-gni"
+    "garo": "brang mang·gni"
   },
   {
     "english": "four teachers",
-    "garo": "brang sak-gni"
+    "garo": "brang sak·gni"
   },
   {
     "english": "four students",
-    "garo": "brang sak-gni"
+    "garo": "brang sak·gni"
   },
   {
     "english": "four houses",
-    "garo": "brang rang-gni"
+    "garo": "brang rang·gni"
   },
   {
     "english": "four trees",
-    "garo": "brang rang-gni"
+    "garo": "brang rang·gni"
   },
   {
     "english": "four books",
-    "garo": "brang rang-gni"
+    "garo": "brang rang·gni"
   },
   {
     "english": "four cars",
-    "garo": "brang rang-gni"
+    "garo": "brang rang·gni"
   },
   {
     "english": "five persons",
-    "garo": "bonga sak-gni"
+    "garo": "bonga sak·gni"
   },
   {
     "english": "five dogs",
-    "garo": "bonga mang-gni"
+    "garo": "bonga mang·gni"
   },
   {
     "english": "five birds",
-    "garo": "bonga mang-gni"
+    "garo": "bonga mang·gni"
   },
   {
     "english": "five fishs",
-    "garo": "bonga mang-gni"
+    "garo": "bonga mang·gni"
   },
   {
     "english": "five teachers",
-    "garo": "bonga sak-gni"
+    "garo": "bonga sak·gni"
   },
   {
     "english": "five students",
-    "garo": "bonga sak-gni"
+    "garo": "bonga sak·gni"
   },
   {
     "english": "five houses",
-    "garo": "bonga rang-gni"
+    "garo": "bonga rang·gni"
   },
   {
     "english": "five trees",
-    "garo": "bonga rang-gni"
+    "garo": "bonga rang·gni"
   },
   {
     "english": "five books",
-    "garo": "bonga rang-gni"
+    "garo": "bonga rang·gni"
   },
   {
     "english": "five cars",
-    "garo": "bonga rang-gni"
+    "garo": "bonga rang·gni"
   },
   {
     "english": "six persons",
-    "garo": "dokka sak-gni"
+    "garo": "dokka sak·gni"
   },
   {
     "english": "six dogs",
-    "garo": "dokka mang-gni"
+    "garo": "dokka mang·gni"
   },
   {
     "english": "six birds",
-    "garo": "dokka mang-gni"
+    "garo": "dokka mang·gni"
   },
   {
     "english": "six fishs",
-    "garo": "dokka mang-gni"
+    "garo": "dokka mang·gni"
   },
   {
     "english": "six teachers",
-    "garo": "dokka sak-gni"
+    "garo": "dokka sak·gni"
   },
   {
     "english": "six students",
-    "garo": "dokka sak-gni"
+    "garo": "dokka sak·gni"
   },
   {
     "english": "six houses",
-    "garo": "dokka rang-gni"
+    "garo": "dokka rang·gni"
   },
   {
     "english": "six trees",
-    "garo": "dokka rang-gni"
+    "garo": "dokka rang·gni"
   },
   {
     "english": "six books",
-    "garo": "dokka rang-gni"
+    "garo": "dokka rang·gni"
   },
   {
     "english": "six cars",
-    "garo": "dokka rang-gni"
+    "garo": "dokka rang·gni"
   },
   {
     "english": "seven persons",
-    "garo": "sni sak-gni"
+    "garo": "sni sak·gni"
   },
   {
     "english": "seven dogs",
-    "garo": "sni mang-gni"
+    "garo": "sni mang·gni"
   },
   {
     "english": "seven birds",
-    "garo": "sni mang-gni"
+    "garo": "sni mang·gni"
   },
   {
     "english": "seven fishs",
-    "garo": "sni mang-gni"
+    "garo": "sni mang·gni"
   },
   {
     "english": "seven teachers",
-    "garo": "sni sak-gni"
+    "garo": "sni sak·gni"
   },
   {
     "english": "seven students",
-    "garo": "sni sak-gni"
+    "garo": "sni sak·gni"
   },
   {
     "english": "seven houses",
-    "garo": "sni rang-gni"
+    "garo": "sni rang·gni"
   },
   {
     "english": "seven trees",
-    "garo": "sni rang-gni"
+    "garo": "sni rang·gni"
   },
   {
     "english": "seven books",
-    "garo": "sni rang-gni"
+    "garo": "sni rang·gni"
   },
   {
     "english": "seven cars",
-    "garo": "sni rang-gni"
+    "garo": "sni rang·gni"
   },
   {
     "english": "eight persons",
-    "garo": "chet sak-gni"
+    "garo": "chet sak·gni"
   },
   {
     "english": "eight dogs",
-    "garo": "chet mang-gni"
+    "garo": "chet mang·gni"
   },
   {
     "english": "eight birds",
-    "garo": "chet mang-gni"
+    "garo": "chet mang·gni"
   },
   {
     "english": "eight fishs",
-    "garo": "chet mang-gni"
+    "garo": "chet mang·gni"
   },
   {
     "english": "eight teachers",
-    "garo": "chet sak-gni"
+    "garo": "chet sak·gni"
   },
   {
     "english": "eight students",
-    "garo": "chet sak-gni"
+    "garo": "chet sak·gni"
   },
   {
     "english": "eight houses",
-    "garo": "chet rang-gni"
+    "garo": "chet rang·gni"
   },
   {
     "english": "eight trees",
-    "garo": "chet rang-gni"
+    "garo": "chet rang·gni"
   },
   {
     "english": "eight books",
-    "garo": "chet rang-gni"
+    "garo": "chet rang·gni"
   },
   {
     "english": "eight cars",
-    "garo": "chet rang-gni"
+    "garo": "chet rang·gni"
   },
   {
     "english": "nine persons",
-    "garo": "sku sak-gni"
+    "garo": "sku sak·gni"
   },
   {
     "english": "nine dogs",
-    "garo": "sku mang-gni"
+    "garo": "sku mang·gni"
   },
   {
     "english": "nine birds",
-    "garo": "sku mang-gni"
+    "garo": "sku mang·gni"
   },
   {
     "english": "nine fishs",
-    "garo": "sku mang-gni"
+    "garo": "sku mang·gni"
   },
   {
     "english": "nine teachers",
-    "garo": "sku sak-gni"
+    "garo": "sku sak·gni"
   },
   {
     "english": "nine students",
-    "garo": "sku sak-gni"
+    "garo": "sku sak·gni"
   },
   {
     "english": "nine houses",
-    "garo": "sku rang-gni"
+    "garo": "sku rang·gni"
   },
   {
     "english": "nine trees",
-    "garo": "sku rang-gni"
+    "garo": "sku rang·gni"
   },
   {
     "english": "nine books",
-    "garo": "sku rang-gni"
+    "garo": "sku rang·gni"
   },
   {
     "english": "nine cars",
-    "garo": "sku rang-gni"
+    "garo": "sku rang·gni"
   },
   {
     "english": "ten persons",
-    "garo": "chi sak-gni"
+    "garo": "chi sak·gni"
   },
   {
     "english": "ten dogs",
-    "garo": "chi mang-gni"
+    "garo": "chi mang·gni"
   },
   {
     "english": "ten birds",
-    "garo": "chi mang-gni"
+    "garo": "chi mang·gni"
   },
   {
     "english": "ten fishs",
-    "garo": "chi mang-gni"
+    "garo": "chi mang·gni"
   },
   {
     "english": "ten teachers",
-    "garo": "chi sak-gni"
+    "garo": "chi sak·gni"
   },
   {
     "english": "ten students",
-    "garo": "chi sak-gni"
+    "garo": "chi sak·gni"
   },
   {
     "english": "ten houses",
-    "garo": "chi rang-gni"
+    "garo": "chi rang·gni"
   },
   {
     "english": "ten trees",
-    "garo": "chi rang-gni"
+    "garo": "chi rang·gni"
   },
   {
     "english": "ten books",
-    "garo": "chi rang-gni"
+    "garo": "chi rang·gni"
   },
   {
     "english": "ten cars",
-    "garo": "chi rang-gni"
+    "garo": "chi rang·gni"
   },
   {
     "english": "I go",
@@ -16409,2003 +16409,2003 @@
   },
   {
     "english": "one person",
-    "garo": "sa mande-sa"
+    "garo": "sa mande·sa"
   },
   {
     "english": "one persons",
-    "garo": "sa mande-gni"
+    "garo": "sa mande·gni"
   },
   {
     "english": "one dog",
-    "garo": "sa mang-sa"
+    "garo": "sa mang·sa"
   },
   {
     "english": "one cat",
-    "garo": "sa mang-sa"
+    "garo": "sa mang·sa"
   },
   {
     "english": "one bird",
-    "garo": "sa mang-sa"
+    "garo": "sa mang·sa"
   },
   {
     "english": "one fish",
-    "garo": "sa mang-sa"
+    "garo": "sa mang·sa"
   },
   {
     "english": "one teacher",
-    "garo": "sa skigipa-sa"
+    "garo": "sa skigipa·sa"
   },
   {
     "english": "one teachers",
-    "garo": "sa skigipa-gni"
+    "garo": "sa skigipa·gni"
   },
   {
     "english": "one student",
-    "garo": "sa chik-sa"
+    "garo": "sa chik·sa"
   },
   {
     "english": "one students",
-    "garo": "sa chik-gni"
+    "garo": "sa chik·gni"
   },
   {
     "english": "one house",
-    "garo": "sa rang-sa"
+    "garo": "sa rang·sa"
   },
   {
     "english": "one tree",
-    "garo": "sa rang-sa"
+    "garo": "sa rang·sa"
   },
   {
     "english": "one book",
-    "garo": "sa kitab-sa"
+    "garo": "sa kitab·sa"
   },
   {
     "english": "one car",
-    "garo": "sa mot-sa"
+    "garo": "sa mot·sa"
   },
   {
     "english": "one apple",
-    "garo": "sa se-sa"
+    "garo": "sa se·sa"
   },
   {
     "english": "one banana",
-    "garo": "sa sobo-sa"
+    "garo": "sa sobo·sa"
   },
   {
     "english": "one rice",
-    "garo": "sa chak-sa"
+    "garo": "sa chak·sa"
   },
   {
     "english": "one water",
-    "garo": "sa chik-sa"
+    "garo": "sa chik·sa"
   },
   {
     "english": "one waters",
-    "garo": "sa chik-gni"
+    "garo": "sa chik·gni"
   },
   {
     "english": "one food",
-    "garo": "sa chak-sa"
+    "garo": "sa chak·sa"
   },
   {
     "english": "one road",
-    "garo": "sa lam-sa"
+    "garo": "sa lam·sa"
   },
   {
     "english": "one river",
-    "garo": "sa chik-sa"
+    "garo": "sa chik·sa"
   },
   {
     "english": "one rivers",
-    "garo": "sa chik-gni"
+    "garo": "sa chik·gni"
   },
   {
     "english": "one mountain",
-    "garo": "sa nok-sa"
+    "garo": "sa nok·sa"
   },
   {
     "english": "one village",
-    "garo": "sa rim-sa"
+    "garo": "sa rim·sa"
   },
   {
     "english": "two person",
-    "garo": "do·o mande-gni"
+    "garo": "do·o mande·gni"
   },
   {
     "english": "two persons",
-    "garo": "do·o mande-gni"
+    "garo": "do·o mande·gni"
   },
   {
     "english": "two dog",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "two cat",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "two bird",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "two fish",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "two teacher",
-    "garo": "do·o skigipa-gni"
+    "garo": "do·o skigipa·gni"
   },
   {
     "english": "two teachers",
-    "garo": "do·o skigipa-gni"
+    "garo": "do·o skigipa·gni"
   },
   {
     "english": "two student",
-    "garo": "do·o chik-gni"
+    "garo": "do·o chik·gni"
   },
   {
     "english": "two students",
-    "garo": "do·o chik-gni"
+    "garo": "do·o chik·gni"
   },
   {
     "english": "two house",
-    "garo": "do·o rang-gni"
+    "garo": "do·o rang·gni"
   },
   {
     "english": "two tree",
-    "garo": "do·o rang-gni"
+    "garo": "do·o rang·gni"
   },
   {
     "english": "two book",
-    "garo": "do·o kitab-gni"
+    "garo": "do·o kitab·gni"
   },
   {
     "english": "two car",
-    "garo": "do·o mot-gni"
+    "garo": "do·o mot·gni"
   },
   {
     "english": "two apple",
-    "garo": "do·o se-gni"
+    "garo": "do·o se·gni"
   },
   {
     "english": "two banana",
-    "garo": "do·o sobo-gni"
+    "garo": "do·o sobo·gni"
   },
   {
     "english": "two rice",
-    "garo": "do·o chak-gni"
+    "garo": "do·o chak·gni"
   },
   {
     "english": "two water",
-    "garo": "do·o chik-gni"
+    "garo": "do·o chik·gni"
   },
   {
     "english": "two waters",
-    "garo": "do·o chik-gni"
+    "garo": "do·o chik·gni"
   },
   {
     "english": "two food",
-    "garo": "do·o chak-gni"
+    "garo": "do·o chak·gni"
   },
   {
     "english": "two road",
-    "garo": "do·o lam-gni"
+    "garo": "do·o lam·gni"
   },
   {
     "english": "two river",
-    "garo": "do·o chik-gni"
+    "garo": "do·o chik·gni"
   },
   {
     "english": "two rivers",
-    "garo": "do·o chik-gni"
+    "garo": "do·o chik·gni"
   },
   {
     "english": "two mountain",
-    "garo": "do·o nok-gni"
+    "garo": "do·o nok·gni"
   },
   {
     "english": "two village",
-    "garo": "do·o rim-gni"
+    "garo": "do·o rim·gni"
   },
   {
     "english": "three person",
-    "garo": "na·tok mande-gni"
+    "garo": "na·tok mande·gni"
   },
   {
     "english": "three persons",
-    "garo": "na·tok mande-gni"
+    "garo": "na·tok mande·gni"
   },
   {
     "english": "three dog",
-    "garo": "na·tok mang-gni"
+    "garo": "na·tok mang·gni"
   },
   {
     "english": "three cat",
-    "garo": "na·tok mang-gni"
+    "garo": "na·tok mang·gni"
   },
   {
     "english": "three bird",
-    "garo": "na·tok mang-gni"
+    "garo": "na·tok mang·gni"
   },
   {
     "english": "three fish",
-    "garo": "na·tok mang-gni"
+    "garo": "na·tok mang·gni"
   },
   {
     "english": "three teacher",
-    "garo": "na·tok skigipa-gni"
+    "garo": "na·tok skigipa·gni"
   },
   {
     "english": "three teachers",
-    "garo": "na·tok skigipa-gni"
+    "garo": "na·tok skigipa·gni"
   },
   {
     "english": "three student",
-    "garo": "na·tok chik-gni"
+    "garo": "na·tok chik·gni"
   },
   {
     "english": "three students",
-    "garo": "na·tok chik-gni"
+    "garo": "na·tok chik·gni"
   },
   {
     "english": "three house",
-    "garo": "na·tok rang-gni"
+    "garo": "na·tok rang·gni"
   },
   {
     "english": "three tree",
-    "garo": "na·tok rang-gni"
+    "garo": "na·tok rang·gni"
   },
   {
     "english": "three book",
-    "garo": "na·tok kitab-gni"
+    "garo": "na·tok kitab·gni"
   },
   {
     "english": "three car",
-    "garo": "na·tok mot-gni"
+    "garo": "na·tok mot·gni"
   },
   {
     "english": "three apple",
-    "garo": "na·tok se-gni"
+    "garo": "na·tok se·gni"
   },
   {
     "english": "three banana",
-    "garo": "na·tok sobo-gni"
+    "garo": "na·tok sobo·gni"
   },
   {
     "english": "three rice",
-    "garo": "na·tok chak-gni"
+    "garo": "na·tok chak·gni"
   },
   {
     "english": "three water",
-    "garo": "na·tok chik-gni"
+    "garo": "na·tok chik·gni"
   },
   {
     "english": "three waters",
-    "garo": "na·tok chik-gni"
+    "garo": "na·tok chik·gni"
   },
   {
     "english": "three food",
-    "garo": "na·tok chak-gni"
+    "garo": "na·tok chak·gni"
   },
   {
     "english": "three road",
-    "garo": "na·tok lam-gni"
+    "garo": "na·tok lam·gni"
   },
   {
     "english": "three river",
-    "garo": "na·tok chik-gni"
+    "garo": "na·tok chik·gni"
   },
   {
     "english": "three rivers",
-    "garo": "na·tok chik-gni"
+    "garo": "na·tok chik·gni"
   },
   {
     "english": "three mountain",
-    "garo": "na·tok nok-gni"
+    "garo": "na·tok nok·gni"
   },
   {
     "english": "three village",
-    "garo": "na·tok rim-gni"
+    "garo": "na·tok rim·gni"
   },
   {
     "english": "four person",
-    "garo": "brang mande-gni"
+    "garo": "brang mande·gni"
   },
   {
     "english": "four persons",
-    "garo": "brang mande-gni"
+    "garo": "brang mande·gni"
   },
   {
     "english": "four dog",
-    "garo": "brang mang-gni"
+    "garo": "brang mang·gni"
   },
   {
     "english": "four cat",
-    "garo": "brang mang-gni"
+    "garo": "brang mang·gni"
   },
   {
     "english": "four bird",
-    "garo": "brang mang-gni"
+    "garo": "brang mang·gni"
   },
   {
     "english": "four fish",
-    "garo": "brang mang-gni"
+    "garo": "brang mang·gni"
   },
   {
     "english": "four teacher",
-    "garo": "brang skigipa-gni"
+    "garo": "brang skigipa·gni"
   },
   {
     "english": "four teachers",
-    "garo": "brang skigipa-gni"
+    "garo": "brang skigipa·gni"
   },
   {
     "english": "four student",
-    "garo": "brang chik-gni"
+    "garo": "brang chik·gni"
   },
   {
     "english": "four students",
-    "garo": "brang chik-gni"
+    "garo": "brang chik·gni"
   },
   {
     "english": "four house",
-    "garo": "brang rang-gni"
+    "garo": "brang rang·gni"
   },
   {
     "english": "four tree",
-    "garo": "brang rang-gni"
+    "garo": "brang rang·gni"
   },
   {
     "english": "four book",
-    "garo": "brang kitab-gni"
+    "garo": "brang kitab·gni"
   },
   {
     "english": "four car",
-    "garo": "brang mot-gni"
+    "garo": "brang mot·gni"
   },
   {
     "english": "four apple",
-    "garo": "brang se-gni"
+    "garo": "brang se·gni"
   },
   {
     "english": "four banana",
-    "garo": "brang sobo-gni"
+    "garo": "brang sobo·gni"
   },
   {
     "english": "four rice",
-    "garo": "brang chak-gni"
+    "garo": "brang chak·gni"
   },
   {
     "english": "four water",
-    "garo": "brang chik-gni"
+    "garo": "brang chik·gni"
   },
   {
     "english": "four waters",
-    "garo": "brang chik-gni"
+    "garo": "brang chik·gni"
   },
   {
     "english": "four food",
-    "garo": "brang chak-gni"
+    "garo": "brang chak·gni"
   },
   {
     "english": "four road",
-    "garo": "brang lam-gni"
+    "garo": "brang lam·gni"
   },
   {
     "english": "four river",
-    "garo": "brang chik-gni"
+    "garo": "brang chik·gni"
   },
   {
     "english": "four rivers",
-    "garo": "brang chik-gni"
+    "garo": "brang chik·gni"
   },
   {
     "english": "four mountain",
-    "garo": "brang nok-gni"
+    "garo": "brang nok·gni"
   },
   {
     "english": "four village",
-    "garo": "brang rim-gni"
+    "garo": "brang rim·gni"
   },
   {
     "english": "five person",
-    "garo": "bonga mande-gni"
+    "garo": "bonga mande·gni"
   },
   {
     "english": "five persons",
-    "garo": "bonga mande-gni"
+    "garo": "bonga mande·gni"
   },
   {
     "english": "five dog",
-    "garo": "bonga mang-gni"
+    "garo": "bonga mang·gni"
   },
   {
     "english": "five cat",
-    "garo": "bonga mang-gni"
+    "garo": "bonga mang·gni"
   },
   {
     "english": "five bird",
-    "garo": "bonga mang-gni"
+    "garo": "bonga mang·gni"
   },
   {
     "english": "five fish",
-    "garo": "bonga mang-gni"
+    "garo": "bonga mang·gni"
   },
   {
     "english": "five teacher",
-    "garo": "bonga skigipa-gni"
+    "garo": "bonga skigipa·gni"
   },
   {
     "english": "five teachers",
-    "garo": "bonga skigipa-gni"
+    "garo": "bonga skigipa·gni"
   },
   {
     "english": "five student",
-    "garo": "bonga chik-gni"
+    "garo": "bonga chik·gni"
   },
   {
     "english": "five students",
-    "garo": "bonga chik-gni"
+    "garo": "bonga chik·gni"
   },
   {
     "english": "five house",
-    "garo": "bonga rang-gni"
+    "garo": "bonga rang·gni"
   },
   {
     "english": "five tree",
-    "garo": "bonga rang-gni"
+    "garo": "bonga rang·gni"
   },
   {
     "english": "five book",
-    "garo": "bonga kitab-gni"
+    "garo": "bonga kitab·gni"
   },
   {
     "english": "five car",
-    "garo": "bonga mot-gni"
+    "garo": "bonga mot·gni"
   },
   {
     "english": "five apple",
-    "garo": "bonga se-gni"
+    "garo": "bonga se·gni"
   },
   {
     "english": "five banana",
-    "garo": "bonga sobo-gni"
+    "garo": "bonga sobo·gni"
   },
   {
     "english": "five rice",
-    "garo": "bonga chak-gni"
+    "garo": "bonga chak·gni"
   },
   {
     "english": "five water",
-    "garo": "bonga chik-gni"
+    "garo": "bonga chik·gni"
   },
   {
     "english": "five waters",
-    "garo": "bonga chik-gni"
+    "garo": "bonga chik·gni"
   },
   {
     "english": "five food",
-    "garo": "bonga chak-gni"
+    "garo": "bonga chak·gni"
   },
   {
     "english": "five road",
-    "garo": "bonga lam-gni"
+    "garo": "bonga lam·gni"
   },
   {
     "english": "five river",
-    "garo": "bonga chik-gni"
+    "garo": "bonga chik·gni"
   },
   {
     "english": "five rivers",
-    "garo": "bonga chik-gni"
+    "garo": "bonga chik·gni"
   },
   {
     "english": "five mountain",
-    "garo": "bonga nok-gni"
+    "garo": "bonga nok·gni"
   },
   {
     "english": "five village",
-    "garo": "bonga rim-gni"
+    "garo": "bonga rim·gni"
   },
   {
     "english": "six person",
-    "garo": "dokka mande-gni"
+    "garo": "dokka mande·gni"
   },
   {
     "english": "six persons",
-    "garo": "dokka mande-gni"
+    "garo": "dokka mande·gni"
   },
   {
     "english": "six dog",
-    "garo": "dokka mang-gni"
+    "garo": "dokka mang·gni"
   },
   {
     "english": "six cat",
-    "garo": "dokka mang-gni"
+    "garo": "dokka mang·gni"
   },
   {
     "english": "six bird",
-    "garo": "dokka mang-gni"
+    "garo": "dokka mang·gni"
   },
   {
     "english": "six fish",
-    "garo": "dokka mang-gni"
+    "garo": "dokka mang·gni"
   },
   {
     "english": "six teacher",
-    "garo": "dokka skigipa-gni"
+    "garo": "dokka skigipa·gni"
   },
   {
     "english": "six teachers",
-    "garo": "dokka skigipa-gni"
+    "garo": "dokka skigipa·gni"
   },
   {
     "english": "six student",
-    "garo": "dokka chik-gni"
+    "garo": "dokka chik·gni"
   },
   {
     "english": "six students",
-    "garo": "dokka chik-gni"
+    "garo": "dokka chik·gni"
   },
   {
     "english": "six house",
-    "garo": "dokka rang-gni"
+    "garo": "dokka rang·gni"
   },
   {
     "english": "six tree",
-    "garo": "dokka rang-gni"
+    "garo": "dokka rang·gni"
   },
   {
     "english": "six book",
-    "garo": "dokka kitab-gni"
+    "garo": "dokka kitab·gni"
   },
   {
     "english": "six car",
-    "garo": "dokka mot-gni"
+    "garo": "dokka mot·gni"
   },
   {
     "english": "six apple",
-    "garo": "dokka se-gni"
+    "garo": "dokka se·gni"
   },
   {
     "english": "six banana",
-    "garo": "dokka sobo-gni"
+    "garo": "dokka sobo·gni"
   },
   {
     "english": "six rice",
-    "garo": "dokka chak-gni"
+    "garo": "dokka chak·gni"
   },
   {
     "english": "six water",
-    "garo": "dokka chik-gni"
+    "garo": "dokka chik·gni"
   },
   {
     "english": "six waters",
-    "garo": "dokka chik-gni"
+    "garo": "dokka chik·gni"
   },
   {
     "english": "six food",
-    "garo": "dokka chak-gni"
+    "garo": "dokka chak·gni"
   },
   {
     "english": "six road",
-    "garo": "dokka lam-gni"
+    "garo": "dokka lam·gni"
   },
   {
     "english": "six river",
-    "garo": "dokka chik-gni"
+    "garo": "dokka chik·gni"
   },
   {
     "english": "six rivers",
-    "garo": "dokka chik-gni"
+    "garo": "dokka chik·gni"
   },
   {
     "english": "six mountain",
-    "garo": "dokka nok-gni"
+    "garo": "dokka nok·gni"
   },
   {
     "english": "six village",
-    "garo": "dokka rim-gni"
+    "garo": "dokka rim·gni"
   },
   {
     "english": "seven person",
-    "garo": "sni mande-gni"
+    "garo": "sni mande·gni"
   },
   {
     "english": "seven persons",
-    "garo": "sni mande-gni"
+    "garo": "sni mande·gni"
   },
   {
     "english": "seven dog",
-    "garo": "sni mang-gni"
+    "garo": "sni mang·gni"
   },
   {
     "english": "seven cat",
-    "garo": "sni mang-gni"
+    "garo": "sni mang·gni"
   },
   {
     "english": "seven bird",
-    "garo": "sni mang-gni"
+    "garo": "sni mang·gni"
   },
   {
     "english": "seven fish",
-    "garo": "sni mang-gni"
+    "garo": "sni mang·gni"
   },
   {
     "english": "seven teacher",
-    "garo": "sni skigipa-gni"
+    "garo": "sni skigipa·gni"
   },
   {
     "english": "seven teachers",
-    "garo": "sni skigipa-gni"
+    "garo": "sni skigipa·gni"
   },
   {
     "english": "seven student",
-    "garo": "sni chik-gni"
+    "garo": "sni chik·gni"
   },
   {
     "english": "seven students",
-    "garo": "sni chik-gni"
+    "garo": "sni chik·gni"
   },
   {
     "english": "seven house",
-    "garo": "sni rang-gni"
+    "garo": "sni rang·gni"
   },
   {
     "english": "seven tree",
-    "garo": "sni rang-gni"
+    "garo": "sni rang·gni"
   },
   {
     "english": "seven book",
-    "garo": "sni kitab-gni"
+    "garo": "sni kitab·gni"
   },
   {
     "english": "seven car",
-    "garo": "sni mot-gni"
+    "garo": "sni mot·gni"
   },
   {
     "english": "seven apple",
-    "garo": "sni se-gni"
+    "garo": "sni se·gni"
   },
   {
     "english": "seven banana",
-    "garo": "sni sobo-gni"
+    "garo": "sni sobo·gni"
   },
   {
     "english": "seven rice",
-    "garo": "sni chak-gni"
+    "garo": "sni chak·gni"
   },
   {
     "english": "seven water",
-    "garo": "sni chik-gni"
+    "garo": "sni chik·gni"
   },
   {
     "english": "seven waters",
-    "garo": "sni chik-gni"
+    "garo": "sni chik·gni"
   },
   {
     "english": "seven food",
-    "garo": "sni chak-gni"
+    "garo": "sni chak·gni"
   },
   {
     "english": "seven road",
-    "garo": "sni lam-gni"
+    "garo": "sni lam·gni"
   },
   {
     "english": "seven river",
-    "garo": "sni chik-gni"
+    "garo": "sni chik·gni"
   },
   {
     "english": "seven rivers",
-    "garo": "sni chik-gni"
+    "garo": "sni chik·gni"
   },
   {
     "english": "seven mountain",
-    "garo": "sni nok-gni"
+    "garo": "sni nok·gni"
   },
   {
     "english": "seven village",
-    "garo": "sni rim-gni"
+    "garo": "sni rim·gni"
   },
   {
     "english": "eight person",
-    "garo": "chet mande-gni"
+    "garo": "chet mande·gni"
   },
   {
     "english": "eight persons",
-    "garo": "chet mande-gni"
+    "garo": "chet mande·gni"
   },
   {
     "english": "eight dog",
-    "garo": "chet mang-gni"
+    "garo": "chet mang·gni"
   },
   {
     "english": "eight cat",
-    "garo": "chet mang-gni"
+    "garo": "chet mang·gni"
   },
   {
     "english": "eight bird",
-    "garo": "chet mang-gni"
+    "garo": "chet mang·gni"
   },
   {
     "english": "eight fish",
-    "garo": "chet mang-gni"
+    "garo": "chet mang·gni"
   },
   {
     "english": "eight teacher",
-    "garo": "chet skigipa-gni"
+    "garo": "chet skigipa·gni"
   },
   {
     "english": "eight teachers",
-    "garo": "chet skigipa-gni"
+    "garo": "chet skigipa·gni"
   },
   {
     "english": "eight student",
-    "garo": "chet chik-gni"
+    "garo": "chet chik·gni"
   },
   {
     "english": "eight students",
-    "garo": "chet chik-gni"
+    "garo": "chet chik·gni"
   },
   {
     "english": "eight house",
-    "garo": "chet rang-gni"
+    "garo": "chet rang·gni"
   },
   {
     "english": "eight tree",
-    "garo": "chet rang-gni"
+    "garo": "chet rang·gni"
   },
   {
     "english": "eight book",
-    "garo": "chet kitab-gni"
+    "garo": "chet kitab·gni"
   },
   {
     "english": "eight car",
-    "garo": "chet mot-gni"
+    "garo": "chet mot·gni"
   },
   {
     "english": "eight apple",
-    "garo": "chet se-gni"
+    "garo": "chet se·gni"
   },
   {
     "english": "eight banana",
-    "garo": "chet sobo-gni"
+    "garo": "chet sobo·gni"
   },
   {
     "english": "eight rice",
-    "garo": "chet chak-gni"
+    "garo": "chet chak·gni"
   },
   {
     "english": "eight water",
-    "garo": "chet chik-gni"
+    "garo": "chet chik·gni"
   },
   {
     "english": "eight waters",
-    "garo": "chet chik-gni"
+    "garo": "chet chik·gni"
   },
   {
     "english": "eight food",
-    "garo": "chet chak-gni"
+    "garo": "chet chak·gni"
   },
   {
     "english": "eight road",
-    "garo": "chet lam-gni"
+    "garo": "chet lam·gni"
   },
   {
     "english": "eight river",
-    "garo": "chet chik-gni"
+    "garo": "chet chik·gni"
   },
   {
     "english": "eight rivers",
-    "garo": "chet chik-gni"
+    "garo": "chet chik·gni"
   },
   {
     "english": "eight mountain",
-    "garo": "chet nok-gni"
+    "garo": "chet nok·gni"
   },
   {
     "english": "eight village",
-    "garo": "chet rim-gni"
+    "garo": "chet rim·gni"
   },
   {
     "english": "nine person",
-    "garo": "sku mande-gni"
+    "garo": "sku mande·gni"
   },
   {
     "english": "nine persons",
-    "garo": "sku mande-gni"
+    "garo": "sku mande·gni"
   },
   {
     "english": "nine dog",
-    "garo": "sku mang-gni"
+    "garo": "sku mang·gni"
   },
   {
     "english": "nine cat",
-    "garo": "sku mang-gni"
+    "garo": "sku mang·gni"
   },
   {
     "english": "nine bird",
-    "garo": "sku mang-gni"
+    "garo": "sku mang·gni"
   },
   {
     "english": "nine fish",
-    "garo": "sku mang-gni"
+    "garo": "sku mang·gni"
   },
   {
     "english": "nine teacher",
-    "garo": "sku skigipa-gni"
+    "garo": "sku skigipa·gni"
   },
   {
     "english": "nine teachers",
-    "garo": "sku skigipa-gni"
+    "garo": "sku skigipa·gni"
   },
   {
     "english": "nine student",
-    "garo": "sku chik-gni"
+    "garo": "sku chik·gni"
   },
   {
     "english": "nine students",
-    "garo": "sku chik-gni"
+    "garo": "sku chik·gni"
   },
   {
     "english": "nine house",
-    "garo": "sku rang-gni"
+    "garo": "sku rang·gni"
   },
   {
     "english": "nine tree",
-    "garo": "sku rang-gni"
+    "garo": "sku rang·gni"
   },
   {
     "english": "nine book",
-    "garo": "sku kitab-gni"
+    "garo": "sku kitab·gni"
   },
   {
     "english": "nine car",
-    "garo": "sku mot-gni"
+    "garo": "sku mot·gni"
   },
   {
     "english": "nine apple",
-    "garo": "sku se-gni"
+    "garo": "sku se·gni"
   },
   {
     "english": "nine banana",
-    "garo": "sku sobo-gni"
+    "garo": "sku sobo·gni"
   },
   {
     "english": "nine rice",
-    "garo": "sku chak-gni"
+    "garo": "sku chak·gni"
   },
   {
     "english": "nine water",
-    "garo": "sku chik-gni"
+    "garo": "sku chik·gni"
   },
   {
     "english": "nine waters",
-    "garo": "sku chik-gni"
+    "garo": "sku chik·gni"
   },
   {
     "english": "nine food",
-    "garo": "sku chak-gni"
+    "garo": "sku chak·gni"
   },
   {
     "english": "nine road",
-    "garo": "sku lam-gni"
+    "garo": "sku lam·gni"
   },
   {
     "english": "nine river",
-    "garo": "sku chik-gni"
+    "garo": "sku chik·gni"
   },
   {
     "english": "nine rivers",
-    "garo": "sku chik-gni"
+    "garo": "sku chik·gni"
   },
   {
     "english": "nine mountain",
-    "garo": "sku nok-gni"
+    "garo": "sku nok·gni"
   },
   {
     "english": "nine village",
-    "garo": "sku rim-gni"
+    "garo": "sku rim·gni"
   },
   {
     "english": "ten person",
-    "garo": "chi mande-gni"
+    "garo": "chi mande·gni"
   },
   {
     "english": "ten persons",
-    "garo": "chi mande-gni"
+    "garo": "chi mande·gni"
   },
   {
     "english": "ten dog",
-    "garo": "chi mang-gni"
+    "garo": "chi mang·gni"
   },
   {
     "english": "ten cat",
-    "garo": "chi mang-gni"
+    "garo": "chi mang·gni"
   },
   {
     "english": "ten bird",
-    "garo": "chi mang-gni"
+    "garo": "chi mang·gni"
   },
   {
     "english": "ten fish",
-    "garo": "chi mang-gni"
+    "garo": "chi mang·gni"
   },
   {
     "english": "ten teacher",
-    "garo": "chi skigipa-gni"
+    "garo": "chi skigipa·gni"
   },
   {
     "english": "ten teachers",
-    "garo": "chi skigipa-gni"
+    "garo": "chi skigipa·gni"
   },
   {
     "english": "ten student",
-    "garo": "chi chik-gni"
+    "garo": "chi chik·gni"
   },
   {
     "english": "ten students",
-    "garo": "chi chik-gni"
+    "garo": "chi chik·gni"
   },
   {
     "english": "ten house",
-    "garo": "chi rang-gni"
+    "garo": "chi rang·gni"
   },
   {
     "english": "ten tree",
-    "garo": "chi rang-gni"
+    "garo": "chi rang·gni"
   },
   {
     "english": "ten book",
-    "garo": "chi kitab-gni"
+    "garo": "chi kitab·gni"
   },
   {
     "english": "ten car",
-    "garo": "chi mot-gni"
+    "garo": "chi mot·gni"
   },
   {
     "english": "ten apple",
-    "garo": "chi se-gni"
+    "garo": "chi se·gni"
   },
   {
     "english": "ten banana",
-    "garo": "chi sobo-gni"
+    "garo": "chi sobo·gni"
   },
   {
     "english": "ten rice",
-    "garo": "chi chak-gni"
+    "garo": "chi chak·gni"
   },
   {
     "english": "ten water",
-    "garo": "chi chik-gni"
+    "garo": "chi chik·gni"
   },
   {
     "english": "ten waters",
-    "garo": "chi chik-gni"
+    "garo": "chi chik·gni"
   },
   {
     "english": "ten food",
-    "garo": "chi chak-gni"
+    "garo": "chi chak·gni"
   },
   {
     "english": "ten road",
-    "garo": "chi lam-gni"
+    "garo": "chi lam·gni"
   },
   {
     "english": "ten river",
-    "garo": "chi chik-gni"
+    "garo": "chi chik·gni"
   },
   {
     "english": "ten rivers",
-    "garo": "chi chik-gni"
+    "garo": "chi chik·gni"
   },
   {
     "english": "ten mountain",
-    "garo": "chi nok-gni"
+    "garo": "chi nok·gni"
   },
   {
     "english": "ten village",
-    "garo": "chi rim-gni"
+    "garo": "chi rim·gni"
   },
   {
     "english": "eleven person",
-    "garo": "chi sa mande-gni"
+    "garo": "chi sa mande·gni"
   },
   {
     "english": "eleven persons",
-    "garo": "chi sa mande-gni"
+    "garo": "chi sa mande·gni"
   },
   {
     "english": "eleven dog",
-    "garo": "chi sa mang-gni"
+    "garo": "chi sa mang·gni"
   },
   {
     "english": "eleven cat",
-    "garo": "chi sa mang-gni"
+    "garo": "chi sa mang·gni"
   },
   {
     "english": "eleven bird",
-    "garo": "chi sa mang-gni"
+    "garo": "chi sa mang·gni"
   },
   {
     "english": "eleven fish",
-    "garo": "chi sa mang-gni"
+    "garo": "chi sa mang·gni"
   },
   {
     "english": "eleven teacher",
-    "garo": "chi sa skigipa-gni"
+    "garo": "chi sa skigipa·gni"
   },
   {
     "english": "eleven teachers",
-    "garo": "chi sa skigipa-gni"
+    "garo": "chi sa skigipa·gni"
   },
   {
     "english": "eleven student",
-    "garo": "chi sa chik-gni"
+    "garo": "chi sa chik·gni"
   },
   {
     "english": "eleven students",
-    "garo": "chi sa chik-gni"
+    "garo": "chi sa chik·gni"
   },
   {
     "english": "eleven house",
-    "garo": "chi sa rang-gni"
+    "garo": "chi sa rang·gni"
   },
   {
     "english": "eleven tree",
-    "garo": "chi sa rang-gni"
+    "garo": "chi sa rang·gni"
   },
   {
     "english": "eleven book",
-    "garo": "chi sa kitab-gni"
+    "garo": "chi sa kitab·gni"
   },
   {
     "english": "eleven car",
-    "garo": "chi sa mot-gni"
+    "garo": "chi sa mot·gni"
   },
   {
     "english": "eleven apple",
-    "garo": "chi sa se-gni"
+    "garo": "chi sa se·gni"
   },
   {
     "english": "eleven banana",
-    "garo": "chi sa sobo-gni"
+    "garo": "chi sa sobo·gni"
   },
   {
     "english": "eleven rice",
-    "garo": "chi sa chak-gni"
+    "garo": "chi sa chak·gni"
   },
   {
     "english": "eleven water",
-    "garo": "chi sa chik-gni"
+    "garo": "chi sa chik·gni"
   },
   {
     "english": "eleven waters",
-    "garo": "chi sa chik-gni"
+    "garo": "chi sa chik·gni"
   },
   {
     "english": "eleven food",
-    "garo": "chi sa chak-gni"
+    "garo": "chi sa chak·gni"
   },
   {
     "english": "eleven road",
-    "garo": "chi sa lam-gni"
+    "garo": "chi sa lam·gni"
   },
   {
     "english": "eleven river",
-    "garo": "chi sa chik-gni"
+    "garo": "chi sa chik·gni"
   },
   {
     "english": "eleven rivers",
-    "garo": "chi sa chik-gni"
+    "garo": "chi sa chik·gni"
   },
   {
     "english": "eleven mountain",
-    "garo": "chi sa nok-gni"
+    "garo": "chi sa nok·gni"
   },
   {
     "english": "eleven village",
-    "garo": "chi sa rim-gni"
+    "garo": "chi sa rim·gni"
   },
   {
     "english": "twelve person",
-    "garo": "chi do·o mande-gni"
+    "garo": "chi do·o mande·gni"
   },
   {
     "english": "twelve persons",
-    "garo": "chi do·o mande-gni"
+    "garo": "chi do·o mande·gni"
   },
   {
     "english": "twelve dog",
-    "garo": "chi do·o mang-gni"
+    "garo": "chi do·o mang·gni"
   },
   {
     "english": "twelve cat",
-    "garo": "chi do·o mang-gni"
+    "garo": "chi do·o mang·gni"
   },
   {
     "english": "twelve bird",
-    "garo": "chi do·o mang-gni"
+    "garo": "chi do·o mang·gni"
   },
   {
     "english": "twelve fish",
-    "garo": "chi do·o mang-gni"
+    "garo": "chi do·o mang·gni"
   },
   {
     "english": "twelve teacher",
-    "garo": "chi do·o skigipa-gni"
+    "garo": "chi do·o skigipa·gni"
   },
   {
     "english": "twelve teachers",
-    "garo": "chi do·o skigipa-gni"
+    "garo": "chi do·o skigipa·gni"
   },
   {
     "english": "twelve student",
-    "garo": "chi do·o chik-gni"
+    "garo": "chi do·o chik·gni"
   },
   {
     "english": "twelve students",
-    "garo": "chi do·o chik-gni"
+    "garo": "chi do·o chik·gni"
   },
   {
     "english": "twelve house",
-    "garo": "chi do·o rang-gni"
+    "garo": "chi do·o rang·gni"
   },
   {
     "english": "twelve tree",
-    "garo": "chi do·o rang-gni"
+    "garo": "chi do·o rang·gni"
   },
   {
     "english": "twelve book",
-    "garo": "chi do·o kitab-gni"
+    "garo": "chi do·o kitab·gni"
   },
   {
     "english": "twelve car",
-    "garo": "chi do·o mot-gni"
+    "garo": "chi do·o mot·gni"
   },
   {
     "english": "twelve apple",
-    "garo": "chi do·o se-gni"
+    "garo": "chi do·o se·gni"
   },
   {
     "english": "twelve banana",
-    "garo": "chi do·o sobo-gni"
+    "garo": "chi do·o sobo·gni"
   },
   {
     "english": "twelve rice",
-    "garo": "chi do·o chak-gni"
+    "garo": "chi do·o chak·gni"
   },
   {
     "english": "twelve water",
-    "garo": "chi do·o chik-gni"
+    "garo": "chi do·o chik·gni"
   },
   {
     "english": "twelve waters",
-    "garo": "chi do·o chik-gni"
+    "garo": "chi do·o chik·gni"
   },
   {
     "english": "twelve food",
-    "garo": "chi do·o chak-gni"
+    "garo": "chi do·o chak·gni"
   },
   {
     "english": "twelve road",
-    "garo": "chi do·o lam-gni"
+    "garo": "chi do·o lam·gni"
   },
   {
     "english": "twelve river",
-    "garo": "chi do·o chik-gni"
+    "garo": "chi do·o chik·gni"
   },
   {
     "english": "twelve rivers",
-    "garo": "chi do·o chik-gni"
+    "garo": "chi do·o chik·gni"
   },
   {
     "english": "twelve mountain",
-    "garo": "chi do·o nok-gni"
+    "garo": "chi do·o nok·gni"
   },
   {
     "english": "twelve village",
-    "garo": "chi do·o rim-gni"
+    "garo": "chi do·o rim·gni"
   },
   {
     "english": "thirteen person",
-    "garo": "chi na·tok mande-gni"
+    "garo": "chi na·tok mande·gni"
   },
   {
     "english": "thirteen persons",
-    "garo": "chi na·tok mande-gni"
+    "garo": "chi na·tok mande·gni"
   },
   {
     "english": "thirteen dog",
-    "garo": "chi na·tok mang-gni"
+    "garo": "chi na·tok mang·gni"
   },
   {
     "english": "thirteen cat",
-    "garo": "chi na·tok mang-gni"
+    "garo": "chi na·tok mang·gni"
   },
   {
     "english": "thirteen bird",
-    "garo": "chi na·tok mang-gni"
+    "garo": "chi na·tok mang·gni"
   },
   {
     "english": "thirteen fish",
-    "garo": "chi na·tok mang-gni"
+    "garo": "chi na·tok mang·gni"
   },
   {
     "english": "thirteen teacher",
-    "garo": "chi na·tok skigipa-gni"
+    "garo": "chi na·tok skigipa·gni"
   },
   {
     "english": "thirteen teachers",
-    "garo": "chi na·tok skigipa-gni"
+    "garo": "chi na·tok skigipa·gni"
   },
   {
     "english": "thirteen student",
-    "garo": "chi na·tok chik-gni"
+    "garo": "chi na·tok chik·gni"
   },
   {
     "english": "thirteen students",
-    "garo": "chi na·tok chik-gni"
+    "garo": "chi na·tok chik·gni"
   },
   {
     "english": "thirteen house",
-    "garo": "chi na·tok rang-gni"
+    "garo": "chi na·tok rang·gni"
   },
   {
     "english": "thirteen tree",
-    "garo": "chi na·tok rang-gni"
+    "garo": "chi na·tok rang·gni"
   },
   {
     "english": "thirteen book",
-    "garo": "chi na·tok kitab-gni"
+    "garo": "chi na·tok kitab·gni"
   },
   {
     "english": "thirteen car",
-    "garo": "chi na·tok mot-gni"
+    "garo": "chi na·tok mot·gni"
   },
   {
     "english": "thirteen apple",
-    "garo": "chi na·tok se-gni"
+    "garo": "chi na·tok se·gni"
   },
   {
     "english": "thirteen banana",
-    "garo": "chi na·tok sobo-gni"
+    "garo": "chi na·tok sobo·gni"
   },
   {
     "english": "thirteen rice",
-    "garo": "chi na·tok chak-gni"
+    "garo": "chi na·tok chak·gni"
   },
   {
     "english": "thirteen water",
-    "garo": "chi na·tok chik-gni"
+    "garo": "chi na·tok chik·gni"
   },
   {
     "english": "thirteen waters",
-    "garo": "chi na·tok chik-gni"
+    "garo": "chi na·tok chik·gni"
   },
   {
     "english": "thirteen food",
-    "garo": "chi na·tok chak-gni"
+    "garo": "chi na·tok chak·gni"
   },
   {
     "english": "thirteen road",
-    "garo": "chi na·tok lam-gni"
+    "garo": "chi na·tok lam·gni"
   },
   {
     "english": "thirteen river",
-    "garo": "chi na·tok chik-gni"
+    "garo": "chi na·tok chik·gni"
   },
   {
     "english": "thirteen rivers",
-    "garo": "chi na·tok chik-gni"
+    "garo": "chi na·tok chik·gni"
   },
   {
     "english": "thirteen mountain",
-    "garo": "chi na·tok nok-gni"
+    "garo": "chi na·tok nok·gni"
   },
   {
     "english": "thirteen village",
-    "garo": "chi na·tok rim-gni"
+    "garo": "chi na·tok rim·gni"
   },
   {
     "english": "fourteen person",
-    "garo": "chi brang mande-gni"
+    "garo": "chi brang mande·gni"
   },
   {
     "english": "fourteen persons",
-    "garo": "chi brang mande-gni"
+    "garo": "chi brang mande·gni"
   },
   {
     "english": "fourteen dog",
-    "garo": "chi brang mang-gni"
+    "garo": "chi brang mang·gni"
   },
   {
     "english": "fourteen cat",
-    "garo": "chi brang mang-gni"
+    "garo": "chi brang mang·gni"
   },
   {
     "english": "fourteen bird",
-    "garo": "chi brang mang-gni"
+    "garo": "chi brang mang·gni"
   },
   {
     "english": "fourteen fish",
-    "garo": "chi brang mang-gni"
+    "garo": "chi brang mang·gni"
   },
   {
     "english": "fourteen teacher",
-    "garo": "chi brang skigipa-gni"
+    "garo": "chi brang skigipa·gni"
   },
   {
     "english": "fourteen teachers",
-    "garo": "chi brang skigipa-gni"
+    "garo": "chi brang skigipa·gni"
   },
   {
     "english": "fourteen student",
-    "garo": "chi brang chik-gni"
+    "garo": "chi brang chik·gni"
   },
   {
     "english": "fourteen students",
-    "garo": "chi brang chik-gni"
+    "garo": "chi brang chik·gni"
   },
   {
     "english": "fourteen house",
-    "garo": "chi brang rang-gni"
+    "garo": "chi brang rang·gni"
   },
   {
     "english": "fourteen tree",
-    "garo": "chi brang rang-gni"
+    "garo": "chi brang rang·gni"
   },
   {
     "english": "fourteen book",
-    "garo": "chi brang kitab-gni"
+    "garo": "chi brang kitab·gni"
   },
   {
     "english": "fourteen car",
-    "garo": "chi brang mot-gni"
+    "garo": "chi brang mot·gni"
   },
   {
     "english": "fourteen apple",
-    "garo": "chi brang se-gni"
+    "garo": "chi brang se·gni"
   },
   {
     "english": "fourteen banana",
-    "garo": "chi brang sobo-gni"
+    "garo": "chi brang sobo·gni"
   },
   {
     "english": "fourteen rice",
-    "garo": "chi brang chak-gni"
+    "garo": "chi brang chak·gni"
   },
   {
     "english": "fourteen water",
-    "garo": "chi brang chik-gni"
+    "garo": "chi brang chik·gni"
   },
   {
     "english": "fourteen waters",
-    "garo": "chi brang chik-gni"
+    "garo": "chi brang chik·gni"
   },
   {
     "english": "fourteen food",
-    "garo": "chi brang chak-gni"
+    "garo": "chi brang chak·gni"
   },
   {
     "english": "fourteen road",
-    "garo": "chi brang lam-gni"
+    "garo": "chi brang lam·gni"
   },
   {
     "english": "fourteen river",
-    "garo": "chi brang chik-gni"
+    "garo": "chi brang chik·gni"
   },
   {
     "english": "fourteen rivers",
-    "garo": "chi brang chik-gni"
+    "garo": "chi brang chik·gni"
   },
   {
     "english": "fourteen mountain",
-    "garo": "chi brang nok-gni"
+    "garo": "chi brang nok·gni"
   },
   {
     "english": "fourteen village",
-    "garo": "chi brang rim-gni"
+    "garo": "chi brang rim·gni"
   },
   {
     "english": "fifteen person",
-    "garo": "chi bonga mande-gni"
+    "garo": "chi bonga mande·gni"
   },
   {
     "english": "fifteen persons",
-    "garo": "chi bonga mande-gni"
+    "garo": "chi bonga mande·gni"
   },
   {
     "english": "fifteen dog",
-    "garo": "chi bonga mang-gni"
+    "garo": "chi bonga mang·gni"
   },
   {
     "english": "fifteen cat",
-    "garo": "chi bonga mang-gni"
+    "garo": "chi bonga mang·gni"
   },
   {
     "english": "fifteen bird",
-    "garo": "chi bonga mang-gni"
+    "garo": "chi bonga mang·gni"
   },
   {
     "english": "fifteen fish",
-    "garo": "chi bonga mang-gni"
+    "garo": "chi bonga mang·gni"
   },
   {
     "english": "fifteen teacher",
-    "garo": "chi bonga skigipa-gni"
+    "garo": "chi bonga skigipa·gni"
   },
   {
     "english": "fifteen teachers",
-    "garo": "chi bonga skigipa-gni"
+    "garo": "chi bonga skigipa·gni"
   },
   {
     "english": "fifteen student",
-    "garo": "chi bonga chik-gni"
+    "garo": "chi bonga chik·gni"
   },
   {
     "english": "fifteen students",
-    "garo": "chi bonga chik-gni"
+    "garo": "chi bonga chik·gni"
   },
   {
     "english": "fifteen house",
-    "garo": "chi bonga rang-gni"
+    "garo": "chi bonga rang·gni"
   },
   {
     "english": "fifteen tree",
-    "garo": "chi bonga rang-gni"
+    "garo": "chi bonga rang·gni"
   },
   {
     "english": "fifteen book",
-    "garo": "chi bonga kitab-gni"
+    "garo": "chi bonga kitab·gni"
   },
   {
     "english": "fifteen car",
-    "garo": "chi bonga mot-gni"
+    "garo": "chi bonga mot·gni"
   },
   {
     "english": "fifteen apple",
-    "garo": "chi bonga se-gni"
+    "garo": "chi bonga se·gni"
   },
   {
     "english": "fifteen banana",
-    "garo": "chi bonga sobo-gni"
+    "garo": "chi bonga sobo·gni"
   },
   {
     "english": "fifteen rice",
-    "garo": "chi bonga chak-gni"
+    "garo": "chi bonga chak·gni"
   },
   {
     "english": "fifteen water",
-    "garo": "chi bonga chik-gni"
+    "garo": "chi bonga chik·gni"
   },
   {
     "english": "fifteen waters",
-    "garo": "chi bonga chik-gni"
+    "garo": "chi bonga chik·gni"
   },
   {
     "english": "fifteen food",
-    "garo": "chi bonga chak-gni"
+    "garo": "chi bonga chak·gni"
   },
   {
     "english": "fifteen road",
-    "garo": "chi bonga lam-gni"
+    "garo": "chi bonga lam·gni"
   },
   {
     "english": "fifteen river",
-    "garo": "chi bonga chik-gni"
+    "garo": "chi bonga chik·gni"
   },
   {
     "english": "fifteen rivers",
-    "garo": "chi bonga chik-gni"
+    "garo": "chi bonga chik·gni"
   },
   {
     "english": "fifteen mountain",
-    "garo": "chi bonga nok-gni"
+    "garo": "chi bonga nok·gni"
   },
   {
     "english": "fifteen village",
-    "garo": "chi bonga rim-gni"
+    "garo": "chi bonga rim·gni"
   },
   {
     "english": "sixteen person",
-    "garo": "chi dokka mande-gni"
+    "garo": "chi dokka mande·gni"
   },
   {
     "english": "sixteen persons",
-    "garo": "chi dokka mande-gni"
+    "garo": "chi dokka mande·gni"
   },
   {
     "english": "sixteen dog",
-    "garo": "chi dokka mang-gni"
+    "garo": "chi dokka mang·gni"
   },
   {
     "english": "sixteen cat",
-    "garo": "chi dokka mang-gni"
+    "garo": "chi dokka mang·gni"
   },
   {
     "english": "sixteen bird",
-    "garo": "chi dokka mang-gni"
+    "garo": "chi dokka mang·gni"
   },
   {
     "english": "sixteen fish",
-    "garo": "chi dokka mang-gni"
+    "garo": "chi dokka mang·gni"
   },
   {
     "english": "sixteen teacher",
-    "garo": "chi dokka skigipa-gni"
+    "garo": "chi dokka skigipa·gni"
   },
   {
     "english": "sixteen teachers",
-    "garo": "chi dokka skigipa-gni"
+    "garo": "chi dokka skigipa·gni"
   },
   {
     "english": "sixteen student",
-    "garo": "chi dokka chik-gni"
+    "garo": "chi dokka chik·gni"
   },
   {
     "english": "sixteen students",
-    "garo": "chi dokka chik-gni"
+    "garo": "chi dokka chik·gni"
   },
   {
     "english": "sixteen house",
-    "garo": "chi dokka rang-gni"
+    "garo": "chi dokka rang·gni"
   },
   {
     "english": "sixteen tree",
-    "garo": "chi dokka rang-gni"
+    "garo": "chi dokka rang·gni"
   },
   {
     "english": "sixteen book",
-    "garo": "chi dokka kitab-gni"
+    "garo": "chi dokka kitab·gni"
   },
   {
     "english": "sixteen car",
-    "garo": "chi dokka mot-gni"
+    "garo": "chi dokka mot·gni"
   },
   {
     "english": "sixteen apple",
-    "garo": "chi dokka se-gni"
+    "garo": "chi dokka se·gni"
   },
   {
     "english": "sixteen banana",
-    "garo": "chi dokka sobo-gni"
+    "garo": "chi dokka sobo·gni"
   },
   {
     "english": "sixteen rice",
-    "garo": "chi dokka chak-gni"
+    "garo": "chi dokka chak·gni"
   },
   {
     "english": "sixteen water",
-    "garo": "chi dokka chik-gni"
+    "garo": "chi dokka chik·gni"
   },
   {
     "english": "sixteen waters",
-    "garo": "chi dokka chik-gni"
+    "garo": "chi dokka chik·gni"
   },
   {
     "english": "sixteen food",
-    "garo": "chi dokka chak-gni"
+    "garo": "chi dokka chak·gni"
   },
   {
     "english": "sixteen road",
-    "garo": "chi dokka lam-gni"
+    "garo": "chi dokka lam·gni"
   },
   {
     "english": "sixteen river",
-    "garo": "chi dokka chik-gni"
+    "garo": "chi dokka chik·gni"
   },
   {
     "english": "sixteen rivers",
-    "garo": "chi dokka chik-gni"
+    "garo": "chi dokka chik·gni"
   },
   {
     "english": "sixteen mountain",
-    "garo": "chi dokka nok-gni"
+    "garo": "chi dokka nok·gni"
   },
   {
     "english": "sixteen village",
-    "garo": "chi dokka rim-gni"
+    "garo": "chi dokka rim·gni"
   },
   {
     "english": "seventeen person",
-    "garo": "chi sni mande-gni"
+    "garo": "chi sni mande·gni"
   },
   {
     "english": "seventeen persons",
-    "garo": "chi sni mande-gni"
+    "garo": "chi sni mande·gni"
   },
   {
     "english": "seventeen dog",
-    "garo": "chi sni mang-gni"
+    "garo": "chi sni mang·gni"
   },
   {
     "english": "seventeen cat",
-    "garo": "chi sni mang-gni"
+    "garo": "chi sni mang·gni"
   },
   {
     "english": "seventeen bird",
-    "garo": "chi sni mang-gni"
+    "garo": "chi sni mang·gni"
   },
   {
     "english": "seventeen fish",
-    "garo": "chi sni mang-gni"
+    "garo": "chi sni mang·gni"
   },
   {
     "english": "seventeen teacher",
-    "garo": "chi sni skigipa-gni"
+    "garo": "chi sni skigipa·gni"
   },
   {
     "english": "seventeen teachers",
-    "garo": "chi sni skigipa-gni"
+    "garo": "chi sni skigipa·gni"
   },
   {
     "english": "seventeen student",
-    "garo": "chi sni chik-gni"
+    "garo": "chi sni chik·gni"
   },
   {
     "english": "seventeen students",
-    "garo": "chi sni chik-gni"
+    "garo": "chi sni chik·gni"
   },
   {
     "english": "seventeen house",
-    "garo": "chi sni rang-gni"
+    "garo": "chi sni rang·gni"
   },
   {
     "english": "seventeen tree",
-    "garo": "chi sni rang-gni"
+    "garo": "chi sni rang·gni"
   },
   {
     "english": "seventeen book",
-    "garo": "chi sni kitab-gni"
+    "garo": "chi sni kitab·gni"
   },
   {
     "english": "seventeen car",
-    "garo": "chi sni mot-gni"
+    "garo": "chi sni mot·gni"
   },
   {
     "english": "seventeen apple",
-    "garo": "chi sni se-gni"
+    "garo": "chi sni se·gni"
   },
   {
     "english": "seventeen banana",
-    "garo": "chi sni sobo-gni"
+    "garo": "chi sni sobo·gni"
   },
   {
     "english": "seventeen rice",
-    "garo": "chi sni chak-gni"
+    "garo": "chi sni chak·gni"
   },
   {
     "english": "seventeen water",
-    "garo": "chi sni chik-gni"
+    "garo": "chi sni chik·gni"
   },
   {
     "english": "seventeen waters",
-    "garo": "chi sni chik-gni"
+    "garo": "chi sni chik·gni"
   },
   {
     "english": "seventeen food",
-    "garo": "chi sni chak-gni"
+    "garo": "chi sni chak·gni"
   },
   {
     "english": "seventeen road",
-    "garo": "chi sni lam-gni"
+    "garo": "chi sni lam·gni"
   },
   {
     "english": "seventeen river",
-    "garo": "chi sni chik-gni"
+    "garo": "chi sni chik·gni"
   },
   {
     "english": "seventeen rivers",
-    "garo": "chi sni chik-gni"
+    "garo": "chi sni chik·gni"
   },
   {
     "english": "seventeen mountain",
-    "garo": "chi sni nok-gni"
+    "garo": "chi sni nok·gni"
   },
   {
     "english": "seventeen village",
-    "garo": "chi sni rim-gni"
+    "garo": "chi sni rim·gni"
   },
   {
     "english": "eighteen person",
-    "garo": "chi chet mande-gni"
+    "garo": "chi chet mande·gni"
   },
   {
     "english": "eighteen persons",
-    "garo": "chi chet mande-gni"
+    "garo": "chi chet mande·gni"
   },
   {
     "english": "eighteen dog",
-    "garo": "chi chet mang-gni"
+    "garo": "chi chet mang·gni"
   },
   {
     "english": "eighteen cat",
-    "garo": "chi chet mang-gni"
+    "garo": "chi chet mang·gni"
   },
   {
     "english": "eighteen bird",
-    "garo": "chi chet mang-gni"
+    "garo": "chi chet mang·gni"
   },
   {
     "english": "eighteen fish",
-    "garo": "chi chet mang-gni"
+    "garo": "chi chet mang·gni"
   },
   {
     "english": "eighteen teacher",
-    "garo": "chi chet skigipa-gni"
+    "garo": "chi chet skigipa·gni"
   },
   {
     "english": "eighteen teachers",
-    "garo": "chi chet skigipa-gni"
+    "garo": "chi chet skigipa·gni"
   },
   {
     "english": "eighteen student",
-    "garo": "chi chet chik-gni"
+    "garo": "chi chet chik·gni"
   },
   {
     "english": "eighteen students",
-    "garo": "chi chet chik-gni"
+    "garo": "chi chet chik·gni"
   },
   {
     "english": "eighteen house",
-    "garo": "chi chet rang-gni"
+    "garo": "chi chet rang·gni"
   },
   {
     "english": "eighteen tree",
-    "garo": "chi chet rang-gni"
+    "garo": "chi chet rang·gni"
   },
   {
     "english": "eighteen book",
-    "garo": "chi chet kitab-gni"
+    "garo": "chi chet kitab·gni"
   },
   {
     "english": "eighteen car",
-    "garo": "chi chet mot-gni"
+    "garo": "chi chet mot·gni"
   },
   {
     "english": "eighteen apple",
-    "garo": "chi chet se-gni"
+    "garo": "chi chet se·gni"
   },
   {
     "english": "eighteen banana",
-    "garo": "chi chet sobo-gni"
+    "garo": "chi chet sobo·gni"
   },
   {
     "english": "eighteen rice",
-    "garo": "chi chet chak-gni"
+    "garo": "chi chet chak·gni"
   },
   {
     "english": "eighteen water",
-    "garo": "chi chet chik-gni"
+    "garo": "chi chet chik·gni"
   },
   {
     "english": "eighteen waters",
-    "garo": "chi chet chik-gni"
+    "garo": "chi chet chik·gni"
   },
   {
     "english": "eighteen food",
-    "garo": "chi chet chak-gni"
+    "garo": "chi chet chak·gni"
   },
   {
     "english": "eighteen road",
-    "garo": "chi chet lam-gni"
+    "garo": "chi chet lam·gni"
   },
   {
     "english": "eighteen river",
-    "garo": "chi chet chik-gni"
+    "garo": "chi chet chik·gni"
   },
   {
     "english": "eighteen rivers",
-    "garo": "chi chet chik-gni"
+    "garo": "chi chet chik·gni"
   },
   {
     "english": "eighteen mountain",
-    "garo": "chi chet nok-gni"
+    "garo": "chi chet nok·gni"
   },
   {
     "english": "eighteen village",
-    "garo": "chi chet rim-gni"
+    "garo": "chi chet rim·gni"
   },
   {
     "english": "nineteen person",
-    "garo": "chi sku mande-gni"
+    "garo": "chi sku mande·gni"
   },
   {
     "english": "nineteen persons",
-    "garo": "chi sku mande-gni"
+    "garo": "chi sku mande·gni"
   },
   {
     "english": "nineteen dog",
-    "garo": "chi sku mang-gni"
+    "garo": "chi sku mang·gni"
   },
   {
     "english": "nineteen cat",
-    "garo": "chi sku mang-gni"
+    "garo": "chi sku mang·gni"
   },
   {
     "english": "nineteen bird",
-    "garo": "chi sku mang-gni"
+    "garo": "chi sku mang·gni"
   },
   {
     "english": "nineteen fish",
-    "garo": "chi sku mang-gni"
+    "garo": "chi sku mang·gni"
   },
   {
     "english": "nineteen teacher",
-    "garo": "chi sku skigipa-gni"
+    "garo": "chi sku skigipa·gni"
   },
   {
     "english": "nineteen teachers",
-    "garo": "chi sku skigipa-gni"
+    "garo": "chi sku skigipa·gni"
   },
   {
     "english": "nineteen student",
-    "garo": "chi sku chik-gni"
+    "garo": "chi sku chik·gni"
   },
   {
     "english": "nineteen students",
-    "garo": "chi sku chik-gni"
+    "garo": "chi sku chik·gni"
   },
   {
     "english": "nineteen house",
-    "garo": "chi sku rang-gni"
+    "garo": "chi sku rang·gni"
   },
   {
     "english": "nineteen tree",
-    "garo": "chi sku rang-gni"
+    "garo": "chi sku rang·gni"
   },
   {
     "english": "nineteen book",
-    "garo": "chi sku kitab-gni"
+    "garo": "chi sku kitab·gni"
   },
   {
     "english": "nineteen car",
-    "garo": "chi sku mot-gni"
+    "garo": "chi sku mot·gni"
   },
   {
     "english": "nineteen apple",
-    "garo": "chi sku se-gni"
+    "garo": "chi sku se·gni"
   },
   {
     "english": "nineteen banana",
-    "garo": "chi sku sobo-gni"
+    "garo": "chi sku sobo·gni"
   },
   {
     "english": "nineteen rice",
-    "garo": "chi sku chak-gni"
+    "garo": "chi sku chak·gni"
   },
   {
     "english": "nineteen water",
-    "garo": "chi sku chik-gni"
+    "garo": "chi sku chik·gni"
   },
   {
     "english": "nineteen waters",
-    "garo": "chi sku chik-gni"
+    "garo": "chi sku chik·gni"
   },
   {
     "english": "nineteen food",
-    "garo": "chi sku chak-gni"
+    "garo": "chi sku chak·gni"
   },
   {
     "english": "nineteen road",
-    "garo": "chi sku lam-gni"
+    "garo": "chi sku lam·gni"
   },
   {
     "english": "nineteen river",
-    "garo": "chi sku chik-gni"
+    "garo": "chi sku chik·gni"
   },
   {
     "english": "nineteen rivers",
-    "garo": "chi sku chik-gni"
+    "garo": "chi sku chik·gni"
   },
   {
     "english": "nineteen mountain",
-    "garo": "chi sku nok-gni"
+    "garo": "chi sku nok·gni"
   },
   {
     "english": "nineteen village",
-    "garo": "chi sku rim-gni"
+    "garo": "chi sku rim·gni"
   },
   {
     "english": "twenty person",
-    "garo": "chi chi mande-gni"
+    "garo": "chi chi mande·gni"
   },
   {
     "english": "twenty persons",
-    "garo": "chi chi mande-gni"
+    "garo": "chi chi mande·gni"
   },
   {
     "english": "twenty dog",
-    "garo": "chi chi mang-gni"
+    "garo": "chi chi mang·gni"
   },
   {
     "english": "twenty cat",
-    "garo": "chi chi mang-gni"
+    "garo": "chi chi mang·gni"
   },
   {
     "english": "twenty bird",
-    "garo": "chi chi mang-gni"
+    "garo": "chi chi mang·gni"
   },
   {
     "english": "twenty fish",
-    "garo": "chi chi mang-gni"
+    "garo": "chi chi mang·gni"
   },
   {
     "english": "twenty teacher",
-    "garo": "chi chi skigipa-gni"
+    "garo": "chi chi skigipa·gni"
   },
   {
     "english": "twenty teachers",
-    "garo": "chi chi skigipa-gni"
+    "garo": "chi chi skigipa·gni"
   },
   {
     "english": "twenty student",
-    "garo": "chi chi chik-gni"
+    "garo": "chi chi chik·gni"
   },
   {
     "english": "twenty students",
-    "garo": "chi chi chik-gni"
+    "garo": "chi chi chik·gni"
   },
   {
     "english": "twenty house",
-    "garo": "chi chi rang-gni"
+    "garo": "chi chi rang·gni"
   },
   {
     "english": "twenty tree",
-    "garo": "chi chi rang-gni"
+    "garo": "chi chi rang·gni"
   },
   {
     "english": "twenty book",
-    "garo": "chi chi kitab-gni"
+    "garo": "chi chi kitab·gni"
   },
   {
     "english": "twenty car",
-    "garo": "chi chi mot-gni"
+    "garo": "chi chi mot·gni"
   },
   {
     "english": "twenty apple",
-    "garo": "chi chi se-gni"
+    "garo": "chi chi se·gni"
   },
   {
     "english": "twenty banana",
-    "garo": "chi chi sobo-gni"
+    "garo": "chi chi sobo·gni"
   },
   {
     "english": "twenty rice",
-    "garo": "chi chi chak-gni"
+    "garo": "chi chi chak·gni"
   },
   {
     "english": "twenty water",
-    "garo": "chi chi chik-gni"
+    "garo": "chi chi chik·gni"
   },
   {
     "english": "twenty waters",
-    "garo": "chi chi chik-gni"
+    "garo": "chi chi chik·gni"
   },
   {
     "english": "twenty food",
-    "garo": "chi chi chak-gni"
+    "garo": "chi chi chak·gni"
   },
   {
     "english": "twenty road",
-    "garo": "chi chi lam-gni"
+    "garo": "chi chi lam·gni"
   },
   {
     "english": "twenty river",
-    "garo": "chi chi chik-gni"
+    "garo": "chi chi chik·gni"
   },
   {
     "english": "twenty rivers",
-    "garo": "chi chi chik-gni"
+    "garo": "chi chi chik·gni"
   },
   {
     "english": "twenty mountain",
-    "garo": "chi chi nok-gni"
+    "garo": "chi chi nok·gni"
   },
   {
     "english": "twenty village",
-    "garo": "chi chi rim-gni"
+    "garo": "chi chi rim·gni"
   },
   {
     "english": "I go (present)",
@@ -22501,47 +22501,47 @@
   },
   {
     "english": "the one dog",
-    "garo": "achak mang-sa"
+    "garo": "achak mang·sa"
   },
   {
     "english": "the two birds",
-    "garo": "do·o mang-gni"
+    "garo": "do·o mang·gni"
   },
   {
     "english": "the three fish",
-    "garo": "na·tok mang-gittam"
+    "garo": "na·tok mang·gittam"
   },
   {
     "english": "the one person",
-    "garo": "mande sak-sa"
+    "garo": "mande sak·sa"
   },
   {
     "english": "the two teachers",
-    "garo": "skigipa sak-gni"
+    "garo": "skigipa sak·gni"
   },
   {
     "english": "the one coin",
-    "garo": "tangka gong-sa"
+    "garo": "tangka gong·sa"
   },
   {
     "english": "the five rupees",
-    "garo": "tangka gong-bonga"
+    "garo": "tangka gong·bonga"
   },
   {
     "english": "the one book",
-    "garo": "ki·tap king-sa"
+    "garo": "ki·tap king·sa"
   },
   {
     "english": "the three leaves",
-    "garo": "bijak king-gittam"
+    "garo": "bijak king·gittam"
   },
   {
     "english": "the one chair",
-    "garo": "chokki ge-sa"
+    "garo": "chokki ge·sa"
   },
   {
     "english": "the two knives",
-    "garo": "kettal ge-gni"
+    "garo": "kettal ge·gni"
   },
   {
     "english": "the den· (to carry)",
@@ -22625,7 +22625,7 @@
   },
   {
     "english": "the pomelo",
-    "garo": "Narang-gira"
+    "garo": "Narang·gira"
   },
   {
     "english": "the blackberry",
@@ -22637,7 +22637,7 @@
   },
   {
     "english": "the wild berry",
-    "garo": "Bol-meseng"
+    "garo": "Bol·meseng"
   },
   {
     "english": "the pumpkin",
@@ -22669,7 +22669,7 @@
   },
   {
     "english": "the garlic",
-    "garo": "Rasin-gipok"
+    "garo": "Rasin·gipok"
   },
   {
     "english": "the ginger",
@@ -22693,7 +22693,7 @@
   },
   {
     "english": "the spinach",
-    "garo": "Palong-sam"
+    "garo": "Palong·sam"
   },
   {
     "english": "the broad beans",
@@ -22937,7 +22937,7 @@
   },
   {
     "english": "the run",
-    "garo": "Kat-a"
+    "garo": "Kat·a"
   },
   {
     "english": "the speak",
@@ -22945,7 +22945,7 @@
   },
   {
     "english": "the listen",
-    "garo": "Knachik-bo"
+    "garo": "Knachik·bo"
   },
   {
     "english": "the see / look / watch",
@@ -22961,7 +22961,7 @@
   },
   {
     "english": "the work",
-    "garo": "Dak-a"
+    "garo": "Dak·a"
   },
   {
     "english": "the play",
@@ -22969,7 +22969,7 @@
   },
   {
     "english": "the sit",
-    "garo": "Asong-a"
+    "garo": "Asong·a"
   },
   {
     "english": "the stand",
@@ -22977,11 +22977,11 @@
   },
   {
     "english": "the laugh",
-    "garo": "Ka·ding-a"
+    "garo": "Ka·ding·a"
   },
   {
     "english": "the cry",
-    "garo": "Grap-a"
+    "garo": "Grap·a"
   },
   {
     "english": "the buy",
@@ -22993,11 +22993,11 @@
   },
   {
     "english": "the come",
-    "garo": "Re·ba-a"
+    "garo": "Re·ba·a"
   },
   {
     "english": "the go",
-    "garo": "Re·ang-a"
+    "garo": "Re·ang·a"
   },
   {
     "english": "the father",
@@ -23017,7 +23017,7 @@
   },
   {
     "english": "the Grandfather",
-    "garo": "Abi-tang"
+    "garo": "Abi·tang"
   },
   {
     "english": "the grandmother",
@@ -23117,7 +23117,7 @@
   },
   {
     "english": "the blue",
-    "garo": "Tang-sim"
+    "garo": "Tang·sim"
   },
   {
     "english": "the yellow",
@@ -23205,7 +23205,7 @@
   },
   {
     "english": "the Twenty-one",
-    "garo": "Kolgrik-sa"
+    "garo": "Kolgrik·sa"
   },
   {
     "english": "the Thirty",
@@ -23249,11 +23249,11 @@
   },
   {
     "english": "the Second (ordinal)",
-    "garo": "Gni-prangni"
+    "garo": "Gni·prangni"
   },
   {
     "english": "the Third (ordinal)",
-    "garo": "Gittam-prangni"
+    "garo": "Gittam·prangni"
   },
   {
     "english": "the Last",
@@ -23269,7 +23269,7 @@
   },
   {
     "english": "the Double",
-    "garo": "Gni-bita"
+    "garo": "Gni·bita"
   },
   {
     "english": "the Zero / None",
@@ -23381,7 +23381,7 @@
   },
   {
     "english": "the to fall (stumble/trip)",
-    "garo": "Nang·ting-a"
+    "garo": "Nang·ting·a"
   },
   {
     "english": "the to fall (slip)",
@@ -23417,7 +23417,7 @@
   },
   {
     "english": "the to feel (emotionally)",
-    "garo": "Gisik-o nanga"
+    "garo": "Gisik·o nanga"
   },
   {
     "english": "the to hurt (pain)",
@@ -23465,7 +23465,7 @@
   },
   {
     "english": "the close",
-    "garo": "Chip-a"
+    "garo": "Chip·a"
   },
   {
     "english": "the push",
@@ -23473,7 +23473,7 @@
   },
   {
     "english": "the pull / drive",
-    "garo": "Sal-a (⚠ same word)"
+    "garo": "Sal·a (⚠ same word)"
   },
   {
     "english": "the break (glass/stick)",
@@ -23481,11 +23481,11 @@
   },
   {
     "english": "the tear (paper/cloth)",
-    "garo": "Gritt-a"
+    "garo": "Gritt·a"
   },
   {
     "english": "the throw",
-    "garo": "Goata / Gal-a"
+    "garo": "Goata / Gal·a"
   },
   {
     "english": "the catch",
@@ -23493,7 +23493,7 @@
   },
   {
     "english": "the wash",
-    "garo": "Su·srong-a"
+    "garo": "Su·srong·a"
   },
   {
     "english": "the clean",
@@ -23533,7 +23533,7 @@
   },
   {
     "english": "the lightning",
-    "garo": "Mikka-kimma"
+    "garo": "Mikka·kimma"
   },
   {
     "english": "the fire",
@@ -23626,7 +23626,7 @@
   },
   {
     "english": "at",
-    "garo": "-o",
+    "garo": "·o",
     "pos": "suffix"
   },
   {
@@ -24154,7 +24154,7 @@
   },
   {
     "english": "In a broad daylight are you sleeping?",
-    "garo": "Salmatraktrak-o na·a tuengama?"
+    "garo": "Salmatraktrak·o na·a tuengama?"
   },
   {
     "english": "are you taken?",
