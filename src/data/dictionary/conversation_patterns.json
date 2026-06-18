@@ -207,53 +207,53 @@
     "animals_mang": [
       {
         "english": "one dog",
-        "garo": "achak mang-sa",
+        "garo": "achak mang·sa",
         "hindi": "एक कुत्ता"
       },
       {
         "english": "two birds",
-        "garo": "do·o mang-gni",
+        "garo": "do·o mang·gni",
         "hindi": "दो पक्षी"
       },
       {
         "english": "three fish",
-        "garo": "na·tok mang-gittam",
+        "garo": "na·tok mang·gittam",
         "hindi": "तीन मछलियाँ"
       }
     ],
     "people_sak": [
       {
         "english": "one person",
-        "garo": "manderang sak-sa",
+        "garo": "manderang sak·sa",
         "hindi": "एक व्यक्ति"
       },
       {
         "english": "two teachers",
-        "garo": "skigipa sak-gni",
+        "garo": "skigipa sak·gni",
         "hindi": "दो शिक्षक"
       }
     ],
     "flat_objects_king": [
       {
         "english": "one book",
-        "garo": "ki·tap king-sa",
+        "garo": "ki·tap king·sa",
         "hindi": "एक किताब"
       },
       {
         "english": "three leaves",
-        "garo": "bijak king-gittam",
+        "garo": "bijak king·gittam",
         "hindi": "तीन पत्ते"
       }
     ],
     "money_gong": [
       {
         "english": "one coin",
-        "garo": "tangka gong-sa",
+        "garo": "tangka gong·sa",
         "hindi": "एक सिक्का"
       },
       {
         "english": "five rupees",
-        "garo": "tangka gong-bonga",
+        "garo": "tangka gong·bonga",
         "hindi": "पाँच रुपये"
       }
     ],
