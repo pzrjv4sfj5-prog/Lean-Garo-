@@ -59,9 +59,12 @@ function normalizeFile(filePath) {
 
 function cleanRakka(str) {
   if (typeof str !== 'string') return str;
-  return str
-    .replace(/\s+·/g, '·')
-    .replace(/·(?=(a|enga|oenga|bo|ja|aha|gen|manjok|ama|engma)(?:\b|-))/g, '');
+  // Only fix spacing errors (space before raka).
+  // The previous regex that stripped raka before verb suffixes was REMOVED —
+  // it was corrupting 2,418 entries by deleting the glottal stop from verb
+  // roots like cha·a → chaa, nik·aha → nikaha, on·bo → onbo etc.
+  // (Audit Finding A, 2026-06-17)
+  return str.replace(/\s+·/g, '·');
 }
 
 function main() {
