@@ -71,7 +71,7 @@ function applyTense(verbRoot, tense) {
 
 const IRREGULAR_VERBS = {
   'went':'re·anga','gone':'re·anga','going':'re·angenga',
-  'ate':'cha·aha','eaten':'cha·man·aha','eating':'cha·oenga',
+  'ate':'cha·aha','eaten':'cha·man·aha','eating':'cha·enga',
   'saw':'nik·aha','seen':'nik·aha','seeing':'nikenga',
   'told':'agan·aha','said':'aganaha','saying':'aganenga',
   'came':'re·ba·aha','coming':'re·baenga','want':'sikenga','wants':'sikenga','need':'sikenga',
