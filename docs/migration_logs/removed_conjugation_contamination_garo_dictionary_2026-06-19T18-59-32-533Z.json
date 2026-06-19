@@ -1,0 +1,1618 @@
+{
+  "sourceFile": "garo_dictionary.json",
+  "removedCount": 230,
+  "originalTotalEntries": 6028,
+  "newTotalEntries": 5798,
+  "removedEntries": [
+    {
+      "originalIndex": 4021,
+      "entry": {
+        "english": "I go",
+        "garo": "ang goa"
+      }
+    },
+    {
+      "originalIndex": 4022,
+      "entry": {
+        "english": "you go",
+        "garo": "na· goa"
+      }
+    },
+    {
+      "originalIndex": 4023,
+      "entry": {
+        "english": "he/she go",
+        "garo": "u goa"
+      }
+    },
+    {
+      "originalIndex": 4024,
+      "entry": {
+        "english": "we go",
+        "garo": "i goa"
+      }
+    },
+    {
+      "originalIndex": 4025,
+      "entry": {
+        "english": "they go",
+        "garo": "bi goa"
+      }
+    },
+    {
+      "originalIndex": 4026,
+      "entry": {
+        "english": "I come",
+        "garo": "ang comea"
+      }
+    },
+    {
+      "originalIndex": 4027,
+      "entry": {
+        "english": "you come",
+        "garo": "na· comea"
+      }
+    },
+    {
+      "originalIndex": 4028,
+      "entry": {
+        "english": "he/she come",
+        "garo": "u comea"
+      }
+    },
+    {
+      "originalIndex": 4029,
+      "entry": {
+        "english": "we come",
+        "garo": "i comea"
+      }
+    },
+    {
+      "originalIndex": 4030,
+      "entry": {
+        "english": "they come",
+        "garo": "bi comea"
+      }
+    },
+    {
+      "originalIndex": 4031,
+      "entry": {
+        "english": "I eat",
+        "garo": "ang eata"
+      }
+    },
+    {
+      "originalIndex": 4032,
+      "entry": {
+        "english": "you eat",
+        "garo": "na· eata"
+      }
+    },
+    {
+      "originalIndex": 4033,
+      "entry": {
+        "english": "he/she eat",
+        "garo": "u eata"
+      }
+    },
+    {
+      "originalIndex": 4034,
+      "entry": {
+        "english": "we eat",
+        "garo": "i eata"
+      }
+    },
+    {
+      "originalIndex": 4035,
+      "entry": {
+        "english": "they eat",
+        "garo": "bi eata"
+      }
+    },
+    {
+      "originalIndex": 4036,
+      "entry": {
+        "english": "I drink",
+        "garo": "ang drinka"
+      }
+    },
+    {
+      "originalIndex": 4037,
+      "entry": {
+        "english": "you drink",
+        "garo": "na· drinka"
+      }
+    },
+    {
+      "originalIndex": 4038,
+      "entry": {
+        "english": "he/she drink",
+        "garo": "u drinka"
+      }
+    },
+    {
+      "originalIndex": 4039,
+      "entry": {
+        "english": "we drink",
+        "garo": "i drinka"
+      }
+    },
+    {
+      "originalIndex": 4040,
+      "entry": {
+        "english": "they drink",
+        "garo": "bi drinka"
+      }
+    },
+    {
+      "originalIndex": 4041,
+      "entry": {
+        "english": "I see",
+        "garo": "ang seea"
+      }
+    },
+    {
+      "originalIndex": 4042,
+      "entry": {
+        "english": "you see",
+        "garo": "na· seea"
+      }
+    },
+    {
+      "originalIndex": 4043,
+      "entry": {
+        "english": "he/she see",
+        "garo": "u seea"
+      }
+    },
+    {
+      "originalIndex": 4044,
+      "entry": {
+        "english": "we see",
+        "garo": "i seea"
+      }
+    },
+    {
+      "originalIndex": 4045,
+      "entry": {
+        "english": "they see",
+        "garo": "bi seea"
+      }
+    },
+    {
+      "originalIndex": 4046,
+      "entry": {
+        "english": "I hear",
+        "garo": "ang heara"
+      }
+    },
+    {
+      "originalIndex": 4047,
+      "entry": {
+        "english": "you hear",
+        "garo": "na· heara"
+      }
+    },
+    {
+      "originalIndex": 4048,
+      "entry": {
+        "english": "he/she hear",
+        "garo": "u heara"
+      }
+    },
+    {
+      "originalIndex": 4049,
+      "entry": {
+        "english": "we hear",
+        "garo": "i heara"
+      }
+    },
+    {
+      "originalIndex": 4050,
+      "entry": {
+        "english": "they hear",
+        "garo": "bi heara"
+      }
+    },
+    {
+      "originalIndex": 4051,
+      "entry": {
+        "english": "I speak",
+        "garo": "ang speaka"
+      }
+    },
+    {
+      "originalIndex": 4052,
+      "entry": {
+        "english": "you speak",
+        "garo": "na· speaka"
+      }
+    },
+    {
+      "originalIndex": 4053,
+      "entry": {
+        "english": "he/she speak",
+        "garo": "u speaka"
+      }
+    },
+    {
+      "originalIndex": 4054,
+      "entry": {
+        "english": "we speak",
+        "garo": "i speaka"
+      }
+    },
+    {
+      "originalIndex": 4055,
+      "entry": {
+        "english": "they speak",
+        "garo": "bi speaka"
+      }
+    },
+    {
+      "originalIndex": 4056,
+      "entry": {
+        "english": "I write",
+        "garo": "ang writea"
+      }
+    },
+    {
+      "originalIndex": 4057,
+      "entry": {
+        "english": "you write",
+        "garo": "na· writea"
+      }
+    },
+    {
+      "originalIndex": 4058,
+      "entry": {
+        "english": "he/she write",
+        "garo": "u writea"
+      }
+    },
+    {
+      "originalIndex": 4059,
+      "entry": {
+        "english": "we write",
+        "garo": "i writea"
+      }
+    },
+    {
+      "originalIndex": 4060,
+      "entry": {
+        "english": "they write",
+        "garo": "bi writea"
+      }
+    },
+    {
+      "originalIndex": 4061,
+      "entry": {
+        "english": "I read",
+        "garo": "ang reada"
+      }
+    },
+    {
+      "originalIndex": 4062,
+      "entry": {
+        "english": "you read",
+        "garo": "na· reada"
+      }
+    },
+    {
+      "originalIndex": 4063,
+      "entry": {
+        "english": "he/she read",
+        "garo": "u reada"
+      }
+    },
+    {
+      "originalIndex": 4064,
+      "entry": {
+        "english": "we read",
+        "garo": "i reada"
+      }
+    },
+    {
+      "originalIndex": 4065,
+      "entry": {
+        "english": "they read",
+        "garo": "bi reada"
+      }
+    },
+    {
+      "originalIndex": 4066,
+      "entry": {
+        "english": "I sleep",
+        "garo": "ang sleepa"
+      }
+    },
+    {
+      "originalIndex": 4067,
+      "entry": {
+        "english": "you sleep",
+        "garo": "na· sleepa"
+      }
+    },
+    {
+      "originalIndex": 4068,
+      "entry": {
+        "english": "he/she sleep",
+        "garo": "u sleepa"
+      }
+    },
+    {
+      "originalIndex": 4069,
+      "entry": {
+        "english": "we sleep",
+        "garo": "i sleepa"
+      }
+    },
+    {
+      "originalIndex": 4070,
+      "entry": {
+        "english": "they sleep",
+        "garo": "bi sleepa"
+      }
+    },
+    {
+      "originalIndex": 4602,
+      "entry": {
+        "english": "I go (present)",
+        "garo": "ang goa"
+      }
+    },
+    {
+      "originalIndex": 4603,
+      "entry": {
+        "english": "I go (past)",
+        "garo": "ang goaha"
+      }
+    },
+    {
+      "originalIndex": 4604,
+      "entry": {
+        "english": "I go (future)",
+        "garo": "ang gogen"
+      }
+    },
+    {
+      "originalIndex": 4605,
+      "entry": {
+        "english": "you (singular) go (present)",
+        "garo": "na· goa"
+      }
+    },
+    {
+      "originalIndex": 4606,
+      "entry": {
+        "english": "you (singular) go (past)",
+        "garo": "na· goaha"
+      }
+    },
+    {
+      "originalIndex": 4607,
+      "entry": {
+        "english": "you (singular) go (future)",
+        "garo": "na· gogen"
+      }
+    },
+    {
+      "originalIndex": 4608,
+      "entry": {
+        "english": "he/she go (present)",
+        "garo": "u goa"
+      }
+    },
+    {
+      "originalIndex": 4609,
+      "entry": {
+        "english": "he/she go (past)",
+        "garo": "u goaha"
+      }
+    },
+    {
+      "originalIndex": 4610,
+      "entry": {
+        "english": "he/she go (future)",
+        "garo": "u gogen"
+      }
+    },
+    {
+      "originalIndex": 4611,
+      "entry": {
+        "english": "we go (present)",
+        "garo": "i goa"
+      }
+    },
+    {
+      "originalIndex": 4612,
+      "entry": {
+        "english": "we go (past)",
+        "garo": "i goaha"
+      }
+    },
+    {
+      "originalIndex": 4613,
+      "entry": {
+        "english": "we go (future)",
+        "garo": "i gogen"
+      }
+    },
+    {
+      "originalIndex": 4614,
+      "entry": {
+        "english": "you (plural) go (present)",
+        "garo": "si goa"
+      }
+    },
+    {
+      "originalIndex": 4615,
+      "entry": {
+        "english": "you (plural) go (past)",
+        "garo": "si goaha"
+      }
+    },
+    {
+      "originalIndex": 4616,
+      "entry": {
+        "english": "you (plural) go (future)",
+        "garo": "si gogen"
+      }
+    },
+    {
+      "originalIndex": 4617,
+      "entry": {
+        "english": "they go (present)",
+        "garo": "bi goa"
+      }
+    },
+    {
+      "originalIndex": 4618,
+      "entry": {
+        "english": "they go (past)",
+        "garo": "bi goaha"
+      }
+    },
+    {
+      "originalIndex": 4619,
+      "entry": {
+        "english": "they go (future)",
+        "garo": "bi gogen"
+      }
+    },
+    {
+      "originalIndex": 4620,
+      "entry": {
+        "english": "I come (present)",
+        "garo": "ang comea"
+      }
+    },
+    {
+      "originalIndex": 4621,
+      "entry": {
+        "english": "I come (past)",
+        "garo": "ang comeaha"
+      }
+    },
+    {
+      "originalIndex": 4622,
+      "entry": {
+        "english": "I come (future)",
+        "garo": "ang comegen"
+      }
+    },
+    {
+      "originalIndex": 4623,
+      "entry": {
+        "english": "you (singular) come (present)",
+        "garo": "na· comea"
+      }
+    },
+    {
+      "originalIndex": 4624,
+      "entry": {
+        "english": "you (singular) come (past)",
+        "garo": "na· comeaha"
+      }
+    },
+    {
+      "originalIndex": 4625,
+      "entry": {
+        "english": "you (singular) come (future)",
+        "garo": "na· comegen"
+      }
+    },
+    {
+      "originalIndex": 4626,
+      "entry": {
+        "english": "he/she come (present)",
+        "garo": "u comea"
+      }
+    },
+    {
+      "originalIndex": 4627,
+      "entry": {
+        "english": "he/she come (past)",
+        "garo": "u comeaha"
+      }
+    },
+    {
+      "originalIndex": 4628,
+      "entry": {
+        "english": "he/she come (future)",
+        "garo": "u comegen"
+      }
+    },
+    {
+      "originalIndex": 4629,
+      "entry": {
+        "english": "we come (present)",
+        "garo": "i comea"
+      }
+    },
+    {
+      "originalIndex": 4630,
+      "entry": {
+        "english": "we come (past)",
+        "garo": "i comeaha"
+      }
+    },
+    {
+      "originalIndex": 4631,
+      "entry": {
+        "english": "we come (future)",
+        "garo": "i comegen"
+      }
+    },
+    {
+      "originalIndex": 4632,
+      "entry": {
+        "english": "you (plural) come (present)",
+        "garo": "si comea"
+      }
+    },
+    {
+      "originalIndex": 4633,
+      "entry": {
+        "english": "you (plural) come (past)",
+        "garo": "si comeaha"
+      }
+    },
+    {
+      "originalIndex": 4634,
+      "entry": {
+        "english": "you (plural) come (future)",
+        "garo": "si comegen"
+      }
+    },
+    {
+      "originalIndex": 4635,
+      "entry": {
+        "english": "they come (present)",
+        "garo": "bi comea"
+      }
+    },
+    {
+      "originalIndex": 4636,
+      "entry": {
+        "english": "they come (past)",
+        "garo": "bi comeaha"
+      }
+    },
+    {
+      "originalIndex": 4637,
+      "entry": {
+        "english": "they come (future)",
+        "garo": "bi comegen"
+      }
+    },
+    {
+      "originalIndex": 4638,
+      "entry": {
+        "english": "I eat (present)",
+        "garo": "ang eata"
+      }
+    },
+    {
+      "originalIndex": 4639,
+      "entry": {
+        "english": "I eat (past)",
+        "garo": "ang eataha"
+      }
+    },
+    {
+      "originalIndex": 4640,
+      "entry": {
+        "english": "I eat (future)",
+        "garo": "ang eatgen"
+      }
+    },
+    {
+      "originalIndex": 4641,
+      "entry": {
+        "english": "you (singular) eat (present)",
+        "garo": "na· eata"
+      }
+    },
+    {
+      "originalIndex": 4642,
+      "entry": {
+        "english": "you (singular) eat (past)",
+        "garo": "na· eataha"
+      }
+    },
+    {
+      "originalIndex": 4643,
+      "entry": {
+        "english": "you (singular) eat (future)",
+        "garo": "na· eatgen"
+      }
+    },
+    {
+      "originalIndex": 4644,
+      "entry": {
+        "english": "he/she eat (present)",
+        "garo": "u eata"
+      }
+    },
+    {
+      "originalIndex": 4645,
+      "entry": {
+        "english": "he/she eat (past)",
+        "garo": "u eataha"
+      }
+    },
+    {
+      "originalIndex": 4646,
+      "entry": {
+        "english": "he/she eat (future)",
+        "garo": "u eatgen"
+      }
+    },
+    {
+      "originalIndex": 4647,
+      "entry": {
+        "english": "we eat (present)",
+        "garo": "i eata"
+      }
+    },
+    {
+      "originalIndex": 4648,
+      "entry": {
+        "english": "we eat (past)",
+        "garo": "i eataha"
+      }
+    },
+    {
+      "originalIndex": 4649,
+      "entry": {
+        "english": "we eat (future)",
+        "garo": "i eatgen"
+      }
+    },
+    {
+      "originalIndex": 4650,
+      "entry": {
+        "english": "you (plural) eat (present)",
+        "garo": "si eata"
+      }
+    },
+    {
+      "originalIndex": 4651,
+      "entry": {
+        "english": "you (plural) eat (past)",
+        "garo": "si eataha"
+      }
+    },
+    {
+      "originalIndex": 4652,
+      "entry": {
+        "english": "you (plural) eat (future)",
+        "garo": "si eatgen"
+      }
+    },
+    {
+      "originalIndex": 4653,
+      "entry": {
+        "english": "they eat (present)",
+        "garo": "bi eata"
+      }
+    },
+    {
+      "originalIndex": 4654,
+      "entry": {
+        "english": "they eat (past)",
+        "garo": "bi eataha"
+      }
+    },
+    {
+      "originalIndex": 4655,
+      "entry": {
+        "english": "they eat (future)",
+        "garo": "bi eatgen"
+      }
+    },
+    {
+      "originalIndex": 4656,
+      "entry": {
+        "english": "I drink (present)",
+        "garo": "ang drinka"
+      }
+    },
+    {
+      "originalIndex": 4657,
+      "entry": {
+        "english": "I drink (past)",
+        "garo": "ang drinkaha"
+      }
+    },
+    {
+      "originalIndex": 4658,
+      "entry": {
+        "english": "I drink (future)",
+        "garo": "ang drinkgen"
+      }
+    },
+    {
+      "originalIndex": 4659,
+      "entry": {
+        "english": "you (singular) drink (present)",
+        "garo": "na· drinka"
+      }
+    },
+    {
+      "originalIndex": 4660,
+      "entry": {
+        "english": "you (singular) drink (past)",
+        "garo": "na· drinkaha"
+      }
+    },
+    {
+      "originalIndex": 4661,
+      "entry": {
+        "english": "you (singular) drink (future)",
+        "garo": "na· drinkgen"
+      }
+    },
+    {
+      "originalIndex": 4662,
+      "entry": {
+        "english": "he/she drink (present)",
+        "garo": "u drinka"
+      }
+    },
+    {
+      "originalIndex": 4663,
+      "entry": {
+        "english": "he/she drink (past)",
+        "garo": "u drinkaha"
+      }
+    },
+    {
+      "originalIndex": 4664,
+      "entry": {
+        "english": "he/she drink (future)",
+        "garo": "u drinkgen"
+      }
+    },
+    {
+      "originalIndex": 4665,
+      "entry": {
+        "english": "we drink (present)",
+        "garo": "i drinka"
+      }
+    },
+    {
+      "originalIndex": 4666,
+      "entry": {
+        "english": "we drink (past)",
+        "garo": "i drinkaha"
+      }
+    },
+    {
+      "originalIndex": 4667,
+      "entry": {
+        "english": "we drink (future)",
+        "garo": "i drinkgen"
+      }
+    },
+    {
+      "originalIndex": 4668,
+      "entry": {
+        "english": "you (plural) drink (present)",
+        "garo": "si drinka"
+      }
+    },
+    {
+      "originalIndex": 4669,
+      "entry": {
+        "english": "you (plural) drink (past)",
+        "garo": "si drinkaha"
+      }
+    },
+    {
+      "originalIndex": 4670,
+      "entry": {
+        "english": "you (plural) drink (future)",
+        "garo": "si drinkgen"
+      }
+    },
+    {
+      "originalIndex": 4671,
+      "entry": {
+        "english": "they drink (present)",
+        "garo": "bi drinka"
+      }
+    },
+    {
+      "originalIndex": 4672,
+      "entry": {
+        "english": "they drink (past)",
+        "garo": "bi drinkaha"
+      }
+    },
+    {
+      "originalIndex": 4673,
+      "entry": {
+        "english": "they drink (future)",
+        "garo": "bi drinkgen"
+      }
+    },
+    {
+      "originalIndex": 4674,
+      "entry": {
+        "english": "I see (present)",
+        "garo": "ang seea"
+      }
+    },
+    {
+      "originalIndex": 4675,
+      "entry": {
+        "english": "I see (past)",
+        "garo": "ang seeaha"
+      }
+    },
+    {
+      "originalIndex": 4676,
+      "entry": {
+        "english": "I see (future)",
+        "garo": "ang seegen"
+      }
+    },
+    {
+      "originalIndex": 4677,
+      "entry": {
+        "english": "you (singular) see (present)",
+        "garo": "na· seea"
+      }
+    },
+    {
+      "originalIndex": 4678,
+      "entry": {
+        "english": "you (singular) see (past)",
+        "garo": "na· seeaha"
+      }
+    },
+    {
+      "originalIndex": 4679,
+      "entry": {
+        "english": "you (singular) see (future)",
+        "garo": "na· seegen"
+      }
+    },
+    {
+      "originalIndex": 4680,
+      "entry": {
+        "english": "he/she see (present)",
+        "garo": "u seea"
+      }
+    },
+    {
+      "originalIndex": 4681,
+      "entry": {
+        "english": "he/she see (past)",
+        "garo": "u seeaha"
+      }
+    },
+    {
+      "originalIndex": 4682,
+      "entry": {
+        "english": "he/she see (future)",
+        "garo": "u seegen"
+      }
+    },
+    {
+      "originalIndex": 4683,
+      "entry": {
+        "english": "we see (present)",
+        "garo": "i seea"
+      }
+    },
+    {
+      "originalIndex": 4684,
+      "entry": {
+        "english": "we see (past)",
+        "garo": "i seeaha"
+      }
+    },
+    {
+      "originalIndex": 4685,
+      "entry": {
+        "english": "we see (future)",
+        "garo": "i seegen"
+      }
+    },
+    {
+      "originalIndex": 4686,
+      "entry": {
+        "english": "you (plural) see (present)",
+        "garo": "si seea"
+      }
+    },
+    {
+      "originalIndex": 4687,
+      "entry": {
+        "english": "you (plural) see (past)",
+        "garo": "si seeaha"
+      }
+    },
+    {
+      "originalIndex": 4688,
+      "entry": {
+        "english": "you (plural) see (future)",
+        "garo": "si seegen"
+      }
+    },
+    {
+      "originalIndex": 4689,
+      "entry": {
+        "english": "they see (present)",
+        "garo": "bi seea"
+      }
+    },
+    {
+      "originalIndex": 4690,
+      "entry": {
+        "english": "they see (past)",
+        "garo": "bi seeaha"
+      }
+    },
+    {
+      "originalIndex": 4691,
+      "entry": {
+        "english": "they see (future)",
+        "garo": "bi seegen"
+      }
+    },
+    {
+      "originalIndex": 4692,
+      "entry": {
+        "english": "I hear (present)",
+        "garo": "ang heara"
+      }
+    },
+    {
+      "originalIndex": 4693,
+      "entry": {
+        "english": "I hear (past)",
+        "garo": "ang hearaha"
+      }
+    },
+    {
+      "originalIndex": 4694,
+      "entry": {
+        "english": "I hear (future)",
+        "garo": "ang heargen"
+      }
+    },
+    {
+      "originalIndex": 4695,
+      "entry": {
+        "english": "you (singular) hear (present)",
+        "garo": "na· heara"
+      }
+    },
+    {
+      "originalIndex": 4696,
+      "entry": {
+        "english": "you (singular) hear (past)",
+        "garo": "na· hearaha"
+      }
+    },
+    {
+      "originalIndex": 4697,
+      "entry": {
+        "english": "you (singular) hear (future)",
+        "garo": "na· heargen"
+      }
+    },
+    {
+      "originalIndex": 4698,
+      "entry": {
+        "english": "he/she hear (present)",
+        "garo": "u heara"
+      }
+    },
+    {
+      "originalIndex": 4699,
+      "entry": {
+        "english": "he/she hear (past)",
+        "garo": "u hearaha"
+      }
+    },
+    {
+      "originalIndex": 4700,
+      "entry": {
+        "english": "he/she hear (future)",
+        "garo": "u heargen"
+      }
+    },
+    {
+      "originalIndex": 4701,
+      "entry": {
+        "english": "we hear (present)",
+        "garo": "i heara"
+      }
+    },
+    {
+      "originalIndex": 4702,
+      "entry": {
+        "english": "we hear (past)",
+        "garo": "i hearaha"
+      }
+    },
+    {
+      "originalIndex": 4703,
+      "entry": {
+        "english": "we hear (future)",
+        "garo": "i heargen"
+      }
+    },
+    {
+      "originalIndex": 4704,
+      "entry": {
+        "english": "you (plural) hear (present)",
+        "garo": "si heara"
+      }
+    },
+    {
+      "originalIndex": 4705,
+      "entry": {
+        "english": "you (plural) hear (past)",
+        "garo": "si hearaha"
+      }
+    },
+    {
+      "originalIndex": 4706,
+      "entry": {
+        "english": "you (plural) hear (future)",
+        "garo": "si heargen"
+      }
+    },
+    {
+      "originalIndex": 4707,
+      "entry": {
+        "english": "they hear (present)",
+        "garo": "bi heara"
+      }
+    },
+    {
+      "originalIndex": 4708,
+      "entry": {
+        "english": "they hear (past)",
+        "garo": "bi hearaha"
+      }
+    },
+    {
+      "originalIndex": 4709,
+      "entry": {
+        "english": "they hear (future)",
+        "garo": "bi heargen"
+      }
+    },
+    {
+      "originalIndex": 4710,
+      "entry": {
+        "english": "I speak (present)",
+        "garo": "ang speaka"
+      }
+    },
+    {
+      "originalIndex": 4711,
+      "entry": {
+        "english": "I speak (past)",
+        "garo": "ang speakaha"
+      }
+    },
+    {
+      "originalIndex": 4712,
+      "entry": {
+        "english": "I speak (future)",
+        "garo": "ang speakgen"
+      }
+    },
+    {
+      "originalIndex": 4713,
+      "entry": {
+        "english": "you (singular) speak (present)",
+        "garo": "na· speaka"
+      }
+    },
+    {
+      "originalIndex": 4714,
+      "entry": {
+        "english": "you (singular) speak (past)",
+        "garo": "na· speakaha"
+      }
+    },
+    {
+      "originalIndex": 4715,
+      "entry": {
+        "english": "you (singular) speak (future)",
+        "garo": "na· speakgen"
+      }
+    },
+    {
+      "originalIndex": 4716,
+      "entry": {
+        "english": "he/she speak (present)",
+        "garo": "u speaka"
+      }
+    },
+    {
+      "originalIndex": 4717,
+      "entry": {
+        "english": "he/she speak (past)",
+        "garo": "u speakaha"
+      }
+    },
+    {
+      "originalIndex": 4718,
+      "entry": {
+        "english": "he/she speak (future)",
+        "garo": "u speakgen"
+      }
+    },
+    {
+      "originalIndex": 4719,
+      "entry": {
+        "english": "we speak (present)",
+        "garo": "i speaka"
+      }
+    },
+    {
+      "originalIndex": 4720,
+      "entry": {
+        "english": "we speak (past)",
+        "garo": "i speakaha"
+      }
+    },
+    {
+      "originalIndex": 4721,
+      "entry": {
+        "english": "we speak (future)",
+        "garo": "i speakgen"
+      }
+    },
+    {
+      "originalIndex": 4722,
+      "entry": {
+        "english": "you (plural) speak (present)",
+        "garo": "si speaka"
+      }
+    },
+    {
+      "originalIndex": 4723,
+      "entry": {
+        "english": "you (plural) speak (past)",
+        "garo": "si speakaha"
+      }
+    },
+    {
+      "originalIndex": 4724,
+      "entry": {
+        "english": "you (plural) speak (future)",
+        "garo": "si speakgen"
+      }
+    },
+    {
+      "originalIndex": 4725,
+      "entry": {
+        "english": "they speak (present)",
+        "garo": "bi speaka"
+      }
+    },
+    {
+      "originalIndex": 4726,
+      "entry": {
+        "english": "they speak (past)",
+        "garo": "bi speakaha"
+      }
+    },
+    {
+      "originalIndex": 4727,
+      "entry": {
+        "english": "they speak (future)",
+        "garo": "bi speakgen"
+      }
+    },
+    {
+      "originalIndex": 4728,
+      "entry": {
+        "english": "I write (present)",
+        "garo": "ang writea"
+      }
+    },
+    {
+      "originalIndex": 4729,
+      "entry": {
+        "english": "I write (past)",
+        "garo": "ang writeaha"
+      }
+    },
+    {
+      "originalIndex": 4730,
+      "entry": {
+        "english": "I write (future)",
+        "garo": "ang writegen"
+      }
+    },
+    {
+      "originalIndex": 4731,
+      "entry": {
+        "english": "you (singular) write (present)",
+        "garo": "na· writea"
+      }
+    },
+    {
+      "originalIndex": 4732,
+      "entry": {
+        "english": "you (singular) write (past)",
+        "garo": "na· writeaha"
+      }
+    },
+    {
+      "originalIndex": 4733,
+      "entry": {
+        "english": "you (singular) write (future)",
+        "garo": "na· writegen"
+      }
+    },
+    {
+      "originalIndex": 4734,
+      "entry": {
+        "english": "he/she write (present)",
+        "garo": "u writea"
+      }
+    },
+    {
+      "originalIndex": 4735,
+      "entry": {
+        "english": "he/she write (past)",
+        "garo": "u writeaha"
+      }
+    },
+    {
+      "originalIndex": 4736,
+      "entry": {
+        "english": "he/she write (future)",
+        "garo": "u writegen"
+      }
+    },
+    {
+      "originalIndex": 4737,
+      "entry": {
+        "english": "we write (present)",
+        "garo": "i writea"
+      }
+    },
+    {
+      "originalIndex": 4738,
+      "entry": {
+        "english": "we write (past)",
+        "garo": "i writeaha"
+      }
+    },
+    {
+      "originalIndex": 4739,
+      "entry": {
+        "english": "we write (future)",
+        "garo": "i writegen"
+      }
+    },
+    {
+      "originalIndex": 4740,
+      "entry": {
+        "english": "you (plural) write (present)",
+        "garo": "si writea"
+      }
+    },
+    {
+      "originalIndex": 4741,
+      "entry": {
+        "english": "you (plural) write (past)",
+        "garo": "si writeaha"
+      }
+    },
+    {
+      "originalIndex": 4742,
+      "entry": {
+        "english": "you (plural) write (future)",
+        "garo": "si writegen"
+      }
+    },
+    {
+      "originalIndex": 4743,
+      "entry": {
+        "english": "they write (present)",
+        "garo": "bi writea"
+      }
+    },
+    {
+      "originalIndex": 4744,
+      "entry": {
+        "english": "they write (past)",
+        "garo": "bi writeaha"
+      }
+    },
+    {
+      "originalIndex": 4745,
+      "entry": {
+        "english": "they write (future)",
+        "garo": "bi writegen"
+      }
+    },
+    {
+      "originalIndex": 4746,
+      "entry": {
+        "english": "I read (present)",
+        "garo": "ang reada"
+      }
+    },
+    {
+      "originalIndex": 4747,
+      "entry": {
+        "english": "I read (past)",
+        "garo": "ang readaha"
+      }
+    },
+    {
+      "originalIndex": 4748,
+      "entry": {
+        "english": "I read (future)",
+        "garo": "ang readgen"
+      }
+    },
+    {
+      "originalIndex": 4749,
+      "entry": {
+        "english": "you (singular) read (present)",
+        "garo": "na· reada"
+      }
+    },
+    {
+      "originalIndex": 4750,
+      "entry": {
+        "english": "you (singular) read (past)",
+        "garo": "na· readaha"
+      }
+    },
+    {
+      "originalIndex": 4751,
+      "entry": {
+        "english": "you (singular) read (future)",
+        "garo": "na· readgen"
+      }
+    },
+    {
+      "originalIndex": 4752,
+      "entry": {
+        "english": "he/she read (present)",
+        "garo": "u reada"
+      }
+    },
+    {
+      "originalIndex": 4753,
+      "entry": {
+        "english": "he/she read (past)",
+        "garo": "u readaha"
+      }
+    },
+    {
+      "originalIndex": 4754,
+      "entry": {
+        "english": "he/she read (future)",
+        "garo": "u readgen"
+      }
+    },
+    {
+      "originalIndex": 4755,
+      "entry": {
+        "english": "we read (present)",
+        "garo": "i reada"
+      }
+    },
+    {
+      "originalIndex": 4756,
+      "entry": {
+        "english": "we read (past)",
+        "garo": "i readaha"
+      }
+    },
+    {
+      "originalIndex": 4757,
+      "entry": {
+        "english": "we read (future)",
+        "garo": "i readgen"
+      }
+    },
+    {
+      "originalIndex": 4758,
+      "entry": {
+        "english": "you (plural) read (present)",
+        "garo": "si reada"
+      }
+    },
+    {
+      "originalIndex": 4759,
+      "entry": {
+        "english": "you (plural) read (past)",
+        "garo": "si readaha"
+      }
+    },
+    {
+      "originalIndex": 4760,
+      "entry": {
+        "english": "you (plural) read (future)",
+        "garo": "si readgen"
+      }
+    },
+    {
+      "originalIndex": 4761,
+      "entry": {
+        "english": "they read (present)",
+        "garo": "bi reada"
+      }
+    },
+    {
+      "originalIndex": 4762,
+      "entry": {
+        "english": "they read (past)",
+        "garo": "bi readaha"
+      }
+    },
+    {
+      "originalIndex": 4763,
+      "entry": {
+        "english": "they read (future)",
+        "garo": "bi readgen"
+      }
+    },
+    {
+      "originalIndex": 4764,
+      "entry": {
+        "english": "I sleep (present)",
+        "garo": "ang sleepa"
+      }
+    },
+    {
+      "originalIndex": 4765,
+      "entry": {
+        "english": "I sleep (past)",
+        "garo": "ang sleepaha"
+      }
+    },
+    {
+      "originalIndex": 4766,
+      "entry": {
+        "english": "I sleep (future)",
+        "garo": "ang sleepgen"
+      }
+    },
+    {
+      "originalIndex": 4767,
+      "entry": {
+        "english": "you (singular) sleep (present)",
+        "garo": "na· sleepa"
+      }
+    },
+    {
+      "originalIndex": 4768,
+      "entry": {
+        "english": "you (singular) sleep (past)",
+        "garo": "na· sleepaha"
+      }
+    },
+    {
+      "originalIndex": 4769,
+      "entry": {
+        "english": "you (singular) sleep (future)",
+        "garo": "na· sleepgen"
+      }
+    },
+    {
+      "originalIndex": 4770,
+      "entry": {
+        "english": "he/she sleep (present)",
+        "garo": "u sleepa"
+      }
+    },
+    {
+      "originalIndex": 4771,
+      "entry": {
+        "english": "he/she sleep (past)",
+        "garo": "u sleepaha"
+      }
+    },
+    {
+      "originalIndex": 4772,
+      "entry": {
+        "english": "he/she sleep (future)",
+        "garo": "u sleepgen"
+      }
+    },
+    {
+      "originalIndex": 4773,
+      "entry": {
+        "english": "we sleep (present)",
+        "garo": "i sleepa"
+      }
+    },
+    {
+      "originalIndex": 4774,
+      "entry": {
+        "english": "we sleep (past)",
+        "garo": "i sleepaha"
+      }
+    },
+    {
+      "originalIndex": 4775,
+      "entry": {
+        "english": "we sleep (future)",
+        "garo": "i sleepgen"
+      }
+    },
+    {
+      "originalIndex": 4776,
+      "entry": {
+        "english": "you (plural) sleep (present)",
+        "garo": "si sleepa"
+      }
+    },
+    {
+      "originalIndex": 4777,
+      "entry": {
+        "english": "you (plural) sleep (past)",
+        "garo": "si sleepaha"
+      }
+    },
+    {
+      "originalIndex": 4778,
+      "entry": {
+        "english": "you (plural) sleep (future)",
+        "garo": "si sleepgen"
+      }
+    },
+    {
+      "originalIndex": 4779,
+      "entry": {
+        "english": "they sleep (present)",
+        "garo": "bi sleepa"
+      }
+    },
+    {
+      "originalIndex": 4780,
+      "entry": {
+        "english": "they sleep (past)",
+        "garo": "bi sleepaha"
+      }
+    },
+    {
+      "originalIndex": 4781,
+      "entry": {
+        "english": "they sleep (future)",
+        "garo": "bi sleepgen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+english,garo,category,confidence,reason_for_removal
+I go,ang goa,,high,English+fake-suffix placeholder
+you go,na· goa,,high,English+fake-suffix placeholder
+he/she go,u goa,,high,English+fake-suffix placeholder
+we go,i goa,,high,English+fake-suffix placeholder
+they go,bi goa,,high,English+fake-suffix placeholder
+I come,ang comea,,high,English+fake-suffix placeholder
+you come,na· comea,,high,English+fake-suffix placeholder
+he/she come,u comea,,high,English+fake-suffix placeholder
+we come,i comea,,high,English+fake-suffix placeholder
+they come,bi comea,,high,English+fake-suffix placeholder
+I eat,ang eata,,high,English+fake-suffix placeholder
+you eat,na· eata,,high,English+fake-suffix placeholder
+he/she eat,u eata,,high,English+fake-suffix placeholder
+we eat,i eata,,high,English+fake-suffix placeholder
+they eat,bi eata,,high,English+fake-suffix placeholder
+I drink,ang drinka,,high,English+fake-suffix placeholder
+you drink,na· drinka,,high,English+fake-suffix placeholder
+he/she drink,u drinka,,high,English+fake-suffix placeholder
+we drink,i drinka,,high,English+fake-suffix placeholder
+they drink,bi drinka,,high,English+fake-suffix placeholder
+I see,ang seea,,high,English+fake-suffix placeholder
+you see,na· seea,,high,English+fake-suffix placeholder
+he/she see,u seea,,high,English+fake-suffix placeholder
+we see,i seea,,high,English+fake-suffix placeholder
+they see,bi seea,,high,English+fake-suffix placeholder
+I hear,ang heara,,high,English+fake-suffix placeholder
+you hear,na· heara,,high,English+fake-suffix placeholder
+he/she hear,u heara,,high,English+fake-suffix placeholder
+we hear,i heara,,high,English+fake-suffix placeholder
+they hear,bi heara,,high,English+fake-suffix placeholder
+I speak,ang speaka,,high,English+fake-suffix placeholder
+you speak,na· speaka,,high,English+fake-suffix placeholder
+he/she speak,u speaka,,high,English+fake-suffix placeholder
+we speak,i speaka,,high,English+fake-suffix placeholder
+they speak,bi speaka,,high,English+fake-suffix placeholder
+I write,ang writea,,high,English+fake-suffix placeholder
+you write,na· writea,,high,English+fake-suffix placeholder
+he/she write,u writea,,high,English+fake-suffix placeholder
+we write,i writea,,high,English+fake-suffix placeholder
+they write,bi writea,,high,English+fake-suffix placeholder
+I read,ang reada,,high,English+fake-suffix placeholder
+you read,na· reada,,high,English+fake-suffix placeholder
+he/she read,u reada,,high,English+fake-suffix placeholder
+we read,i reada,,high,English+fake-suffix placeholder
+they read,bi reada,,high,English+fake-suffix placeholder
+I sleep,ang sleepa,,high,English+fake-suffix placeholder
+you sleep,na· sleepa,,high,English+fake-suffix placeholder
+he/she sleep,u sleepa,,high,English+fake-suffix placeholder
+we sleep,i sleepa,,high,English+fake-suffix placeholder
+they sleep,bi sleepa,,high,English+fake-suffix placeholder
+I go (present),ang goa,,high,English+fake-suffix placeholder
+I go (past),ang goaha,,high,English+fake-suffix placeholder
+I go (future),ang gogen,,high,English+fake-suffix placeholder
+you (singular) go (present),na· goa,,high,English+fake-suffix placeholder
+you (singular) go (past),na· goaha,,high,English+fake-suffix placeholder
+you (singular) go (future),na· gogen,,high,English+fake-suffix placeholder
+he/she go (present),u goa,,high,English+fake-suffix placeholder
+he/she go (past),u goaha,,high,English+fake-suffix placeholder
+he/she go (future),u gogen,,high,English+fake-suffix placeholder
+we go (present),i goa,,high,English+fake-suffix placeholder
+we go (past),i goaha,,high,English+fake-suffix placeholder
+we go (future),i gogen,,high,English+fake-suffix placeholder
+you (plural) go (present),si goa,,high,English+fake-suffix placeholder
+you (plural) go (past),si goaha,,high,English+fake-suffix placeholder
+you (plural) go (future),si gogen,,high,English+fake-suffix placeholder
+they go (present),bi goa,,high,English+fake-suffix placeholder
+they go (past),bi goaha,,high,English+fake-suffix placeholder
+they go (future),bi gogen,,high,English+fake-suffix placeholder
+I come (present),ang comea,,high,English+fake-suffix placeholder
+I come (past),ang comeaha,,high,English+fake-suffix placeholder
+I come (future),ang comegen,,high,English+fake-suffix placeholder
+you (singular) come (present),na· comea,,high,English+fake-suffix placeholder
+you (singular) come (past),na· comeaha,,high,English+fake-suffix placeholder
+you (singular) come (future),na· comegen,,high,English+fake-suffix placeholder
+he/she come (present),u comea,,high,English+fake-suffix placeholder
+he/she come (past),u comeaha,,high,English+fake-suffix placeholder
+he/she come (future),u comegen,,high,English+fake-suffix placeholder
+we come (present),i comea,,high,English+fake-suffix placeholder
+we come (past),i comeaha,,high,English+fake-suffix placeholder
+we come (future),i comegen,,high,English+fake-suffix placeholder
+you (plural) come (present),si comea,,high,English+fake-suffix placeholder
+you (plural) come (past),si comeaha,,high,English+fake-suffix placeholder
+you (plural) come (future),si comegen,,high,English+fake-suffix placeholder
+they come (present),bi comea,,high,English+fake-suffix placeholder
+they come (past),bi comeaha,,high,English+fake-suffix placeholder
+they come (future),bi comegen,,high,English+fake-suffix placeholder
+I eat (present),ang eata,,high,English+fake-suffix placeholder
+I eat (past),ang eataha,,high,English+fake-suffix placeholder
+I eat (future),ang eatgen,,high,English+fake-suffix placeholder
+you (singular) eat (present),na· eata,,high,English+fake-suffix placeholder
+you (singular) eat (past),na· eataha,,high,English+fake-suffix placeholder
+you (singular) eat (future),na· eatgen,,high,English+fake-suffix placeholder
+he/she eat (present),u eata,,high,English+fake-suffix placeholder
+he/she eat (past),u eataha,,high,English+fake-suffix placeholder
+he/she eat (future),u eatgen,,high,English+fake-suffix placeholder
+we eat (present),i eata,,high,English+fake-suffix placeholder
+we eat (past),i eataha,,high,English+fake-suffix placeholder
+we eat (future),i eatgen,,high,English+fake-suffix placeholder
+you (plural) eat (present),si eata,,high,English+fake-suffix placeholder
+you (plural) eat (past),si eataha,,high,English+fake-suffix placeholder
+you (plural) eat (future),si eatgen,,high,English+fake-suffix placeholder
+they eat (present),bi eata,,high,English+fake-suffix placeholder
+they eat (past),bi eataha,,high,English+fake-suffix placeholder
+they eat (future),bi eatgen,,high,English+fake-suffix placeholder
+I drink (present),ang drinka,,high,English+fake-suffix placeholder
+I drink (past),ang drinkaha,,high,English+fake-suffix placeholder
+I drink (future),ang drinkgen,,high,English+fake-suffix placeholder
+you (singular) drink (present),na· drinka,,high,English+fake-suffix placeholder
+you (singular) drink (past),na· drinkaha,,high,English+fake-suffix placeholder
+you (singular) drink (future),na· drinkgen,,high,English+fake-suffix placeholder
+he/she drink (present),u drinka,,high,English+fake-suffix placeholder
+he/she drink (past),u drinkaha,,high,English+fake-suffix placeholder
+he/she drink (future),u drinkgen,,high,English+fake-suffix placeholder
+we drink (present),i drinka,,high,English+fake-suffix placeholder
+we drink (past),i drinkaha,,high,English+fake-suffix placeholder
+we drink (future),i drinkgen,,high,English+fake-suffix placeholder
+you (plural) drink (present),si drinka,,high,English+fake-suffix placeholder
+you (plural) drink (past),si drinkaha,,high,English+fake-suffix placeholder
+you (plural) drink (future),si drinkgen,,high,English+fake-suffix placeholder
+they drink (present),bi drinka,,high,English+fake-suffix placeholder
+they drink (past),bi drinkaha,,high,English+fake-suffix placeholder
+they drink (future),bi drinkgen,,high,English+fake-suffix placeholder
+I see (present),ang seea,,high,English+fake-suffix placeholder
+I see (past),ang seeaha,,high,English+fake-suffix placeholder
+I see (future),ang seegen,,high,English+fake-suffix placeholder
+you (singular) see (present),na· seea,,high,English+fake-suffix placeholder
+you (singular) see (past),na· seeaha,,high,English+fake-suffix placeholder
+you (singular) see (future),na· seegen,,high,English+fake-suffix placeholder
+he/she see (present),u seea,,high,English+fake-suffix placeholder
+he/she see (past),u seeaha,,high,English+fake-suffix placeholder
+he/she see (future),u seegen,,high,English+fake-suffix placeholder
+we see (present),i seea,,high,English+fake-suffix placeholder
+we see (past),i seeaha,,high,English+fake-suffix placeholder
+we see (future),i seegen,,high,English+fake-suffix placeholder
+you (plural) see (present),si seea,,high,English+fake-suffix placeholder
+you (plural) see (past),si seeaha,,high,English+fake-suffix placeholder
+you (plural) see (future),si seegen,,high,English+fake-suffix placeholder
+they see (present),bi seea,,high,English+fake-suffix placeholder
+they see (past),bi seeaha,,high,English+fake-suffix placeholder
+they see (future),bi seegen,,high,English+fake-suffix placeholder
+I hear (present),ang heara,,high,English+fake-suffix placeholder
+I hear (past),ang hearaha,,high,English+fake-suffix placeholder
+I hear (future),ang heargen,,high,English+fake-suffix placeholder
+you (singular) hear (present),na· heara,,high,English+fake-suffix placeholder
+you (singular) hear (past),na· hearaha,,high,English+fake-suffix placeholder
+you (singular) hear (future),na· heargen,,high,English+fake-suffix placeholder
+he/she hear (present),u heara,,high,English+fake-suffix placeholder
+he/she hear (past),u hearaha,,high,English+fake-suffix placeholder
+he/she hear (future),u heargen,,high,English+fake-suffix placeholder
+we hear (present),i heara,,high,English+fake-suffix placeholder
+we hear (past),i hearaha,,high,English+fake-suffix placeholder
+we hear (future),i heargen,,high,English+fake-suffix placeholder
+you (plural) hear (present),si heara,,high,English+fake-suffix placeholder
+you (plural) hear (past),si hearaha,,high,English+fake-suffix placeholder
+you (plural) hear (future),si heargen,,high,English+fake-suffix placeholder
+they hear (present),bi heara,,high,English+fake-suffix placeholder
+they hear (past),bi hearaha,,high,English+fake-suffix placeholder
+they hear (future),bi heargen,,high,English+fake-suffix placeholder
+I speak (present),ang speaka,,high,English+fake-suffix placeholder
+I speak (past),ang speakaha,,high,English+fake-suffix placeholder
+I speak (future),ang speakgen,,high,English+fake-suffix placeholder
+you (singular) speak (present),na· speaka,,high,English+fake-suffix placeholder
+you (singular) speak (past),na· speakaha,,high,English+fake-suffix placeholder
+you (singular) speak (future),na· speakgen,,high,English+fake-suffix placeholder
+he/she speak (present),u speaka,,high,English+fake-suffix placeholder
+he/she speak (past),u speakaha,,high,English+fake-suffix placeholder
+he/she speak (future),u speakgen,,high,English+fake-suffix placeholder
+we speak (present),i speaka,,high,English+fake-suffix placeholder
+we speak (past),i speakaha,,high,English+fake-suffix placeholder
+we speak (future),i speakgen,,high,English+fake-suffix placeholder
+you (plural) speak (present),si speaka,,high,English+fake-suffix placeholder
+you (plural) speak (past),si speakaha,,high,English+fake-suffix placeholder
+you (plural) speak (future),si speakgen,,high,English+fake-suffix placeholder
+they speak (present),bi speaka,,high,English+fake-suffix placeholder
+they speak (past),bi speakaha,,high,English+fake-suffix placeholder
+they speak (future),bi speakgen,,high,English+fake-suffix placeholder
+I write (present),ang writea,,high,English+fake-suffix placeholder
+I write (past),ang writeaha,,high,English+fake-suffix placeholder
+I write (future),ang writegen,,high,English+fake-suffix placeholder
+you (singular) write (present),na· writea,,high,English+fake-suffix placeholder
+you (singular) write (past),na· writeaha,,high,English+fake-suffix placeholder
+you (singular) write (future),na· writegen,,high,English+fake-suffix placeholder
+he/she write (present),u writea,,high,English+fake-suffix placeholder
+he/she write (past),u writeaha,,high,English+fake-suffix placeholder
+he/she write (future),u writegen,,high,English+fake-suffix placeholder
+we write (present),i writea,,high,English+fake-suffix placeholder
+we write (past),i writeaha,,high,English+fake-suffix placeholder
+we write (future),i writegen,,high,English+fake-suffix placeholder
+you (plural) write (present),si writea,,high,English+fake-suffix placeholder
+you (plural) write (past),si writeaha,,high,English+fake-suffix placeholder
+you (plural) write (future),si writegen,,high,English+fake-suffix placeholder
+they write (present),bi writea,,high,English+fake-suffix placeholder
+they write (past),bi writeaha,,high,English+fake-suffix placeholder
+they write (future),bi writegen,,high,English+fake-suffix placeholder
+I read (present),ang reada,,high,English+fake-suffix placeholder
+I read (past),ang readaha,,high,English+fake-suffix placeholder
+I read (future),ang readgen,,high,English+fake-suffix placeholder
+you (singular) read (present),na· reada,,high,English+fake-suffix placeholder
+you (singular) read (past),na· readaha,,high,English+fake-suffix placeholder
+you (singular) read (future),na· readgen,,high,English+fake-suffix placeholder
+he/she read (present),u reada,,high,English+fake-suffix placeholder
+he/she read (past),u readaha,,high,English+fake-suffix placeholder
+he/she read (future),u readgen,,high,English+fake-suffix placeholder
+we read (present),i reada,,high,English+fake-suffix placeholder
+we read (past),i readaha,,high,English+fake-suffix placeholder
+we read (future),i readgen,,high,English+fake-suffix placeholder
+you (plural) read (present),si reada,,high,English+fake-suffix placeholder
+you (plural) read (past),si readaha,,high,English+fake-suffix placeholder
+you (plural) read (future),si readgen,,high,English+fake-suffix placeholder
+they read (present),bi reada,,high,English+fake-suffix placeholder
+they read (past),bi readaha,,high,English+fake-suffix placeholder
+they read (future),bi readgen,,high,English+fake-suffix placeholder
+I sleep (present),ang sleepa,,high,English+fake-suffix placeholder
+I sleep (past),ang sleepaha,,high,English+fake-suffix placeholder
+I sleep (future),ang sleepgen,,high,English+fake-suffix placeholder
+you (singular) sleep (present),na· sleepa,,high,English+fake-suffix placeholder
+you (singular) sleep (past),na· sleepaha,,high,English+fake-suffix placeholder
+you (singular) sleep (future),na· sleepgen,,high,English+fake-suffix placeholder
+he/she sleep (present),u sleepa,,high,English+fake-suffix placeholder
+he/she sleep (past),u sleepaha,,high,English+fake-suffix placeholder
+he/she sleep (future),u sleepgen,,high,English+fake-suffix placeholder
+we sleep (present),i sleepa,,high,English+fake-suffix placeholder
+we sleep (past),i sleepaha,,high,English+fake-suffix placeholder
+we sleep (future),i sleepgen,,high,English+fake-suffix placeholder
+you (plural) sleep (present),si sleepa,,high,English+fake-suffix placeholder
+you (plural) sleep (past),si sleepaha,,high,English+fake-suffix placeholder
+you (plural) sleep (future),si sleepgen,,high,English+fake-suffix placeholder
+they sleep (present),bi sleepa,,high,English+fake-suffix placeholder
+they sleep (past),bi sleepaha,,high,English+fake-suffix placeholder
+they sleep (future),bi sleepgen,,high,English+fake-suffix placeholder
+i go,ang goa,travel,high,English+fake-suffix placeholder
+you go,na· goa,travel,high,English+fake-suffix placeholder
+he/she go,u goa,travel,high,English+fake-suffix placeholder
+we go,i goa,travel,high,English+fake-suffix placeholder
+they go,bi goa,travel,high,English+fake-suffix placeholder
+i come,ang comea,travel,high,English+fake-suffix placeholder
+you come,na· comea,travel,high,English+fake-suffix placeholder
+he/she come,u comea,travel,high,English+fake-suffix placeholder
+we come,i comea,travel,high,English+fake-suffix placeholder
+they come,bi comea,travel,high,English+fake-suffix placeholder
+i eat,ang eata,food,high,English+fake-suffix placeholder
+you eat,na· eata,food,high,English+fake-suffix placeholder
+he/she eat,u eata,food,high,English+fake-suffix placeholder
+we eat,i eata,food,high,English+fake-suffix placeholder
+they eat,bi eata,food,high,English+fake-suffix placeholder
+i drink,ang drinka,food,high,English+fake-suffix placeholder
+you drink,na· drinka,food,high,English+fake-suffix placeholder
+he/she drink,u drinka,food,high,English+fake-suffix placeholder
+we drink,i drinka,food,high,English+fake-suffix placeholder
+they drink,bi drinka,food,high,English+fake-suffix placeholder
+i see,ang seea,general,high,English+fake-suffix placeholder
+you see,na· seea,general,high,English+fake-suffix placeholder
+he/she see,u seea,general,high,English+fake-suffix placeholder
+we see,i seea,general,high,English+fake-suffix placeholder
+they see,bi seea,general,high,English+fake-suffix placeholder
+i hear,ang heara,general,high,English+fake-suffix placeholder
+you hear,na· heara,general,high,English+fake-suffix placeholder
+he/she hear,u heara,general,high,English+fake-suffix placeholder
+we hear,i heara,general,high,English+fake-suffix placeholder
+they hear,bi heara,general,high,English+fake-suffix placeholder
+i speak,ang speaka,general,high,English+fake-suffix placeholder
+you speak,na· speaka,general,high,English+fake-suffix placeholder
+he/she speak,u speaka,general,high,English+fake-suffix placeholder
+we speak,i speaka,general,high,English+fake-suffix placeholder
+they speak,bi speaka,general,high,English+fake-suffix placeholder
+i write,ang writea,education,high,English+fake-suffix placeholder
+you write,na· writea,education,high,English+fake-suffix placeholder
+he/she write,u writea,education,high,English+fake-suffix placeholder
+we write,i writea,education,high,English+fake-suffix placeholder
+they write,bi writea,education,high,English+fake-suffix placeholder
+i read,ang reada,education,high,English+fake-suffix placeholder
+you read,na· reada,education,high,English+fake-suffix placeholder
+he/she read,u reada,education,high,English+fake-suffix placeholder
+we read,i reada,education,high,English+fake-suffix placeholder
+they read,bi reada,education,high,English+fake-suffix placeholder
+i sleep,ang sleepa,health,high,English+fake-suffix placeholder
+you sleep,na· sleepa,health,high,English+fake-suffix placeholder
+he/she sleep,u sleepa,health,high,English+fake-suffix placeholder
+we sleep,i sleepa,health,high,English+fake-suffix placeholder
+they sleep,bi sleepa,health,high,English+fake-suffix placeholder
+i go (present),ang goa,travel,high,English+fake-suffix placeholder
+i go (past),ang goaha,travel,high,English+fake-suffix placeholder
+i go (future),ang gogen,travel,high,English+fake-suffix placeholder
+you (singular) go (present),na· goa,travel,high,English+fake-suffix placeholder
+you (singular) go (past),na· goaha,travel,high,English+fake-suffix placeholder
+you (singular) go (future),na· gogen,travel,high,English+fake-suffix placeholder
+he/she go (present),u goa,travel,high,English+fake-suffix placeholder
+he/she go (past),u goaha,travel,high,English+fake-suffix placeholder
+he/she go (future),u gogen,travel,high,English+fake-suffix placeholder
+we go (present),i goa,travel,high,English+fake-suffix placeholder
+we go (past),i goaha,travel,high,English+fake-suffix placeholder
+we go (future),i gogen,travel,high,English+fake-suffix placeholder
+you (plural) go (present),si goa,travel,high,English+fake-suffix placeholder
+you (plural) go (past),si goaha,travel,high,English+fake-suffix placeholder
+you (plural) go (future),si gogen,travel,high,English+fake-suffix placeholder
+they go (present),bi goa,travel,high,English+fake-suffix placeholder
+they go (past),bi goaha,travel,high,English+fake-suffix placeholder
+they go (future),bi gogen,travel,high,English+fake-suffix placeholder
+i come (present),ang comea,travel,high,English+fake-suffix placeholder
+i come (past),ang comeaha,travel,high,English+fake-suffix placeholder
+i come (future),ang comegen,travel,high,English+fake-suffix placeholder
+you (singular) come (present),na· comea,travel,high,English+fake-suffix placeholder
+you (singular) come (past),na· comeaha,travel,high,English+fake-suffix placeholder
+you (singular) come (future),na· comegen,travel,high,English+fake-suffix placeholder
+he/she come (present),u comea,travel,high,English+fake-suffix placeholder
+he/she come (past),u comeaha,travel,high,English+fake-suffix placeholder
+he/she come (future),u comegen,travel,high,English+fake-suffix placeholder
+we come (present),i comea,travel,high,English+fake-suffix placeholder
+we come (past),i comeaha,travel,high,English+fake-suffix placeholder
+we come (future),i comegen,travel,high,English+fake-suffix placeholder
+you (plural) come (present),si comea,travel,high,English+fake-suffix placeholder
+you (plural) come (past),si comeaha,travel,high,English+fake-suffix placeholder
+you (plural) come (future),si comegen,travel,high,English+fake-suffix placeholder
+they come (present),bi comea,travel,high,English+fake-suffix placeholder
+they come (past),bi comeaha,travel,high,English+fake-suffix placeholder
+they come (future),bi comegen,travel,high,English+fake-suffix placeholder
+i eat (present),ang eata,food,high,English+fake-suffix placeholder
+i eat (past),ang eataha,food,high,English+fake-suffix placeholder
+i eat (future),ang eatgen,food,high,English+fake-suffix placeholder
+you (singular) eat (present),na· eata,food,high,English+fake-suffix placeholder
+you (singular) eat (past),na· eataha,food,high,English+fake-suffix placeholder
+you (singular) eat (future),na· eatgen,food,high,English+fake-suffix placeholder
+he/she eat (present),u eata,food,high,English+fake-suffix placeholder
+he/she eat (past),u eataha,food,high,English+fake-suffix placeholder
+he/she eat (future),u eatgen,food,high,English+fake-suffix placeholder
+we eat (present),i eata,food,high,English+fake-suffix placeholder
+we eat (past),i eataha,food,high,English+fake-suffix placeholder
+we eat (future),i eatgen,food,high,English+fake-suffix placeholder
+you (plural) eat (present),si eata,food,high,English+fake-suffix placeholder
+you (plural) eat (past),si eataha,food,high,English+fake-suffix placeholder
+you (plural) eat (future),si eatgen,food,high,English+fake-suffix placeholder
+they eat (present),bi eata,food,high,English+fake-suffix placeholder
+they eat (past),bi eataha,food,high,English+fake-suffix placeholder
+they eat (future),bi eatgen,food,high,English+fake-suffix placeholder
+i drink (present),ang drinka,food,high,English+fake-suffix placeholder
+i drink (past),ang drinkaha,food,high,English+fake-suffix placeholder
+i drink (future),ang drinkgen,food,high,English+fake-suffix placeholder
+you (singular) drink (present),na· drinka,food,high,English+fake-suffix placeholder
+you (singular) drink (past),na· drinkaha,food,high,English+fake-suffix placeholder
+you (singular) drink (future),na· drinkgen,food,high,English+fake-suffix placeholder
+he/she drink (present),u drinka,food,high,English+fake-suffix placeholder
+he/she drink (past),u drinkaha,food,high,English+fake-suffix placeholder
+he/she drink (future),u drinkgen,food,high,English+fake-suffix placeholder
+we drink (present),i drinka,food,high,English+fake-suffix placeholder
+we drink (past),i drinkaha,food,high,English+fake-suffix placeholder
+we drink (future),i drinkgen,food,high,English+fake-suffix placeholder
+you (plural) drink (present),si drinka,food,high,English+fake-suffix placeholder
+you (plural) drink (past),si drinkaha,food,high,English+fake-suffix placeholder
+you (plural) drink (future),si drinkgen,food,high,English+fake-suffix placeholder
+they drink (present),bi drinka,food,high,English+fake-suffix placeholder
+they drink (past),bi drinkaha,food,high,English+fake-suffix placeholder
+they drink (future),bi drinkgen,food,high,English+fake-suffix placeholder
+i see (present),ang seea,general,high,English+fake-suffix placeholder
+i see (past),ang seeaha,general,high,English+fake-suffix placeholder
+i see (future),ang seegen,general,high,English+fake-suffix placeholder
+you (singular) see (present),na· seea,general,high,English+fake-suffix placeholder
+you (singular) see (past),na· seeaha,general,high,English+fake-suffix placeholder
+you (singular) see (future),na· seegen,general,high,English+fake-suffix placeholder
+he/she see (present),u seea,general,high,English+fake-suffix placeholder
+he/she see (past),u seeaha,general,high,English+fake-suffix placeholder
+he/she see (future),u seegen,general,high,English+fake-suffix placeholder
+we see (present),i seea,general,high,English+fake-suffix placeholder
+we see (past),i seeaha,general,high,English+fake-suffix placeholder
+we see (future),i seegen,general,high,English+fake-suffix placeholder
+you (plural) see (present),si seea,general,high,English+fake-suffix placeholder
+you (plural) see (past),si seeaha,general,high,English+fake-suffix placeholder
+you (plural) see (future),si seegen,general,high,English+fake-suffix placeholder
+they see (present),bi seea,general,high,English+fake-suffix placeholder
+they see (past),bi seeaha,general,high,English+fake-suffix placeholder
+they see (future),bi seegen,general,high,English+fake-suffix placeholder
+i hear (present),ang heara,general,high,English+fake-suffix placeholder
+i hear (past),ang hearaha,general,high,English+fake-suffix placeholder
+i hear (future),ang heargen,general,high,English+fake-suffix placeholder
+you (singular) hear (present),na· heara,general,high,English+fake-suffix placeholder
+you (singular) hear (past),na· hearaha,general,high,English+fake-suffix placeholder
+you (singular) hear (future),na· heargen,general,high,English+fake-suffix placeholder
+he/she hear (present),u heara,general,high,English+fake-suffix placeholder
+he/she hear (past),u hearaha,general,high,English+fake-suffix placeholder
+he/she hear (future),u heargen,general,high,English+fake-suffix placeholder
+we hear (present),i heara,general,high,English+fake-suffix placeholder
+we hear (past),i hearaha,general,high,English+fake-suffix placeholder
+we hear (future),i heargen,general,high,English+fake-suffix placeholder
+you (plural) hear (present),si heara,general,high,English+fake-suffix placeholder
+you (plural) hear (past),si hearaha,general,high,English+fake-suffix placeholder
+you (plural) hear (future),si heargen,general,high,English+fake-suffix placeholder
+they hear (present),bi heara,general,high,English+fake-suffix placeholder
+they hear (past),bi hearaha,general,high,English+fake-suffix placeholder
+they hear (future),bi heargen,general,high,English+fake-suffix placeholder
+i speak (present),ang speaka,general,high,English+fake-suffix placeholder
+i speak (past),ang speakaha,general,high,English+fake-suffix placeholder
+i speak (future),ang speakgen,general,high,English+fake-suffix placeholder
+you (singular) speak (present),na· speaka,general,high,English+fake-suffix placeholder
+you (singular) speak (past),na· speakaha,general,high,English+fake-suffix placeholder
+you (singular) speak (future),na· speakgen,general,high,English+fake-suffix placeholder
+he/she speak (present),u speaka,general,high,English+fake-suffix placeholder
+he/she speak (past),u speakaha,general,high,English+fake-suffix placeholder
+he/she speak (future),u speakgen,general,high,English+fake-suffix placeholder
+we speak (present),i speaka,general,high,English+fake-suffix placeholder
+we speak (past),i speakaha,general,high,English+fake-suffix placeholder
+we speak (future),i speakgen,general,high,English+fake-suffix placeholder
+you (plural) speak (present),si speaka,general,high,English+fake-suffix placeholder
+you (plural) speak (past),si speakaha,general,high,English+fake-suffix placeholder
+you (plural) speak (future),si speakgen,general,high,English+fake-suffix placeholder
+they speak (present),bi speaka,general,high,English+fake-suffix placeholder
+they speak (past),bi speakaha,general,high,English+fake-suffix placeholder
+they speak (future),bi speakgen,general,high,English+fake-suffix placeholder
+i write (present),ang writea,education,high,English+fake-suffix placeholder
+i write (past),ang writeaha,education,high,English+fake-suffix placeholder
+i write (future),ang writegen,education,high,English+fake-suffix placeholder
+you (singular) write (present),na· writea,education,high,English+fake-suffix placeholder
+you (singular) write (past),na· writeaha,education,high,English+fake-suffix placeholder
+you (singular) write (future),na· writegen,education,high,English+fake-suffix placeholder
+he/she write (present),u writea,education,high,English+fake-suffix placeholder
+he/she write (past),u writeaha,education,high,English+fake-suffix placeholder
+he/she write (future),u writegen,education,high,English+fake-suffix placeholder
+we write (present),i writea,education,high,English+fake-suffix placeholder
+we write (past),i writeaha,education,high,English+fake-suffix placeholder
+we write (future),i writegen,education,high,English+fake-suffix placeholder
+you (plural) write (present),si writea,education,high,English+fake-suffix placeholder
+you (plural) write (past),si writeaha,education,high,English+fake-suffix placeholder
+you (plural) write (future),si writegen,education,high,English+fake-suffix placeholder
+they write (present),bi writea,education,high,English+fake-suffix placeholder
+they write (past),bi writeaha,education,high,English+fake-suffix placeholder
+they write (future),bi writegen,education,high,English+fake-suffix placeholder
+i read (present),ang reada,education,high,English+fake-suffix placeholder
+i read (past),ang readaha,education,high,English+fake-suffix placeholder
+i read (future),ang readgen,education,high,English+fake-suffix placeholder
+you (singular) read (present),na· reada,education,high,English+fake-suffix placeholder
+you (singular) read (past),na· readaha,education,high,English+fake-suffix placeholder
+you (singular) read (future),na· readgen,education,high,English+fake-suffix placeholder
+he/she read (present),u reada,education,high,English+fake-suffix placeholder
+he/she read (past),u readaha,education,high,English+fake-suffix placeholder
+he/she read (future),u readgen,education,high,English+fake-suffix placeholder
+we read (present),i reada,education,high,English+fake-suffix placeholder
+we read (past),i readaha,education,high,English+fake-suffix placeholder
+we read (future),i readgen,education,high,English+fake-suffix placeholder
+you (plural) read (present),si reada,education,high,English+fake-suffix placeholder
+you (plural) read (past),si readaha,education,high,English+fake-suffix placeholder
+you (plural) read (future),si readgen,education,high,English+fake-suffix placeholder
+they read (present),bi reada,education,high,English+fake-suffix placeholder
+they read (past),bi readaha,education,high,English+fake-suffix placeholder
+they read (future),bi readgen,education,high,English+fake-suffix placeholder
+i sleep (present),ang sleepa,health,high,English+fake-suffix placeholder
+i sleep (past),ang sleepaha,health,high,English+fake-suffix placeholder
+i sleep (future),ang sleepgen,health,high,English+fake-suffix placeholder
+you (singular) sleep (present),na· sleepa,health,high,English+fake-suffix placeholder
+you (singular) sleep (past),na· sleepaha,health,high,English+fake-suffix placeholder
+you (singular) sleep (future),na· sleepgen,health,high,English+fake-suffix placeholder
+he/she sleep (present),u sleepa,health,high,English+fake-suffix placeholder
+he/she sleep (past),u sleepaha,health,high,English+fake-suffix placeholder
+he/she sleep (future),u sleepgen,health,high,English+fake-suffix placeholder
+we sleep (present),i sleepa,health,high,English+fake-suffix placeholder
+we sleep (past),i sleepaha,health,high,English+fake-suffix placeholder
+we sleep (future),i sleepgen,health,high,English+fake-suffix placeholder
+you (plural) sleep (present),si sleepa,health,high,English+fake-suffix placeholder
+you (plural) sleep (past),si sleepaha,health,high,English+fake-suffix placeholder
+you (plural) sleep (future),si sleepgen,health,high,English+fake-suffix placeholder
+they sleep (present),bi sleepa,health,high,English+fake-suffix placeholder
+they sleep (past),bi sleepaha,health,high,English+fake-suffix placeholder
+they sleep (future),bi sleepgen,health,high,English+fake-suffix placeholder

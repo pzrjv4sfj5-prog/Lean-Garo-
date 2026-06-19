@@ -53,10 +53,11 @@ const STOP_WORDS = new Set([
   'have','has','had','do','does','did','will','would','could',
   'should','may','might','shall','can','to','of','in','on',
   'at','by','for','with','about','from',
-  'am','my','your','his','her','its','our','their',
+  'am','its',
   'this','that','these','those','it','and','but','or',
   'so','as','if','when','then',
 ]);
+// possessive pronouns (my/your/his/her/our/their) removed from STOP_WORDS
 
 const VERB_SUFFIXES = {
   present: 'enga', past: '·a', past_alt: 'aha',
@@ -64,9 +65,11 @@ const VERB_SUFFIXES = {
 };
 
 function applyTense(verbRoot, tense) {
-  const clean = verbRoot.replace(/[-·](enga|aha|gen|bo|·a)$/, '');
-  const suffix = VERB_SUFFIXES[tense] || VERB_SUFFIXES.present;
-  return clean + suffix;
+  const suffixes = { present: 'a', past: 'aha', future: 'gen', command: 'bo' };
+  const suffix = suffixes[tense] || suffixes.present;
+  if (/·a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix;
+  if (/(enga|aha|gen|bo)$/.test(verbRoot)) return verbRoot;
+  return verbRoot + '·' + suffix;
 }
 
 const IRREGULAR_VERBS = {
@@ -116,10 +119,23 @@ const PURPOSE_VERBS = {
   'find':'mia·na','give':'on·a·na','take':'ra·a·na',
 };
 
+function findVerbForm(w) {
+  if (IRREGULAR_VERBS[w]) return IRREGULAR_VERBS[w];
+  if (lookupGaro(w)) return lookupGaro(w);
+  const stripped = w.replace(/ing$|ed$|es$|s$/, '');
+  if (stripped !== w) {
+    if (IRREGULAR_VERBS[stripped]) return IRREGULAR_VERBS[stripped];
+    if (lookupGaro(stripped)) return lookupGaro(stripped);
+  }
+  return null;
+}
+
 export function analyzeGrammar(input) {
   if (!input || typeof input !== 'string') return null;
   const words = input.trim().split(/\s+/);
   const wordCount = words.length;
+
+  const isNegative = /\b(not|n't|never)\b/i.test(input);
 
   let detectedTense = 'present';
   let tenseEvidence = null;
@@ -156,11 +172,17 @@ export function analyzeGrammar(input) {
     for (let i = 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
       if (STOP_WORDS.has(w) || POSSESSIVES[w]) continue;
-      const irregGaro = IRREGULAR_VERBS[w];
-      const dictGaro = lookupGaro(w);
-      if (irregGaro || dictGaro) {
-        const garoVerb = irregGaro || dictGaro;
-        verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense: garoVerb, index: i };
+      const isIrregular = !!IRREGULAR_VERBS[w] || !!IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')];
+      const garoVerb = findVerbForm(w);
+      if (garoVerb) {
+        let garoWithTense = garoVerb;
+        if (!isIrregular && detectedTense === 'future') {
+          garoWithTense = applyTense(garoVerb, 'future');
+        }
+        if (isNegative) {
+          garoWithTense = garoWithTense + '·gija';
+        }
+        verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i };
         verbIndex = i;
         break;
       }
@@ -188,7 +210,7 @@ export function analyzeGrammar(input) {
       }
       if (POSSESSIVES[w] || STOP_WORDS.has(w) || w === words[0].toLowerCase()) continue;
       if (verb && words[i] === verb.english) continue;
-      if (IRREGULAR_VERBS[w]) continue;
+      if (IRREGULAR_VERBS[w] || IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')]) continue;
       objectWords.push(words[i]);
     }
 
@@ -200,7 +222,7 @@ export function analyzeGrammar(input) {
     }
 
     return {
-      wordCount, detectedTense, tenseEvidence,
+      wordCount, detectedTense, tenseEvidence, isNegative,
       garoTenseSuffix: VERB_SUFFIXES[detectedTense] || null,
       structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
       subject, verb, object, possessive, purposeAction, classifierHints,
@@ -212,7 +234,7 @@ export function analyzeGrammar(input) {
 
 
   return {
-    wordCount, detectedTense, tenseEvidence,
+    wordCount, detectedTense, tenseEvidence, isNegative,
     garoTenseSuffix: VERB_SUFFIXES[detectedTense] || null,
     structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
     subject, verb, object, classifierHints,
