@@ -248,7 +248,7 @@ export function analyzeGrammar(input) {
   };
 }
 
-function assembleSentenceSOV(words) {
+function assembleSentenceSOV(words, isNegative = false) {
   const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()));
   if (!content.length) return null;
   const corrections = EN_INDEX['__corrections__'] || {};
@@ -267,9 +267,22 @@ function assembleSentenceSOV(words) {
   const verbs = [], nonVerbs = [];
   pairs.forEach(({ eng, garo: t }) => {
     const e = lookup(eng.toLowerCase());
-    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$/.test(t)) verbs.push(t);
+    // Original regex only caught enga/aha/gen/bo/na endings and missed the
+    // common present-tense pattern (root+raka+a, e.g. "Cha·a", "Re·a") —
+    // meaning words like "eat"/"go" were classified as nonVerbs here and
+    // never received tense/negation suffixes at all. Added ·a as a verb
+    // signal (raka immediately before a trailing 'a').
+    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$|·a$/.test(t)) verbs.push(t);
     else nonVerbs.push(t);
   });
+  // Apply negation suffix to the verb, same convention as analyzeGrammar's
+  // main path (fixes the gap Claude B found: this fallback function had
+  // zero negation awareness, so "didn't eat" / "doesn't understand" lost
+  // their negation entirely once 8ead984 added the contractions to
+  // STOP_WORDS — they were stripped here with nothing left to signal them).
+  if (isNegative && verbs.length) {
+    verbs[verbs.length - 1] = verbs[verbs.length - 1] + '·gija';
+  }
   return [...nonVerbs, ...verbs].join(' ');
 }
 
@@ -441,7 +454,10 @@ export async function translate(input) {
   }
 
   // 6.5 Fallback SOV assembly
-  const sov = assembleSentenceSOV(words);
+  // Reuses grammar.isNegative (already computed above by analyzeGrammar)
+  // rather than re-detecting — fixes the gap where this fallback path had
+  // zero negation awareness even though the value was sitting unused in scope.
+  const sov = assembleSentenceSOV(words, grammar?.isNegative || false);
   if (sov) return { garo: sov, method: 'sov-assembly', confidence: 0.75 };
 
   // 7. Morphology
