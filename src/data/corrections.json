@@ -320,5 +320,7 @@
   "it is raining heavily today": "Da·alo Mikka jimenga",
   "there is current": "Karen dongama",
   "there is no current": "Karen dongja",
-  "the current is there": "Karen dongama"
+  "the current is there": "Karen dongama",
+  "current": "karen",
+  "no current": "Karen dongja"
 }
