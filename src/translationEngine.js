@@ -56,8 +56,13 @@ const STOP_WORDS = new Set([
   'am','its',
   'this','that','these','those','it','and','but','or',
   'so','as','if','when','then',
+  "don't","doesn't","didn't","won't","can't","isn't","aren't","wasn't","weren't",
 ]);
 // possessive pronouns (my/your/his/her/our/their) removed from STOP_WORDS
+// negation contractions added — negation is handled via isNegative/-gija
+// suffix, so these auxiliary+not words are meaningless once extracted and
+// were previously falling through into object detection as [UNKNOWN]
+// (e.g. "i didn't eat" -> object: "didn't" -> "[UNKNOWN]·ko").
 
 const VERB_SUFFIXES = {
   present: 'enga', past: '·a', past_alt: 'aha',
@@ -135,7 +140,7 @@ export function analyzeGrammar(input) {
   const words = input.trim().split(/\s+/);
   const wordCount = words.length;
 
-  const isNegative = /\b(not|n't|never)\b/i.test(input);
+  const isNegative = /n't|\b(not|never)\b/i.test(input);
 
   let detectedTense = 'present';
   let tenseEvidence = null;
