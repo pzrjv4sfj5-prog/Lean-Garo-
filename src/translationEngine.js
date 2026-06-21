@@ -441,7 +441,15 @@ export async function translate(input) {
   const countPhrase = parseCountingPhrase(cleaned);
   if (countPhrase) {
     const singular = countPhrase.englishNoun.replace(/s$/, '');
-    const garoNoun = lookupPhrase(countPhrase.englishNoun)
+    // Check corrections.json first — this branch previously skipped
+    // straight to phrase_maps/dictionary lookup, meaning a corrections.json
+    // fix to a countable noun (e.g. orange/monkey) was silently bypassed
+    // whenever the noun was counted rather than looked up bare
+    // ("two oranges" kept using the old wrong word even after "orange"
+    // alone was fixed).
+    const garoNoun = corrections?.[countPhrase.englishNoun]
+      || corrections?.[singular]
+      || lookupPhrase(countPhrase.englishNoun)
       || lookupGaro(countPhrase.englishNoun)
       || lookupPhrase(singular)
       || lookupGaro(singular);
