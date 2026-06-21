@@ -57,6 +57,14 @@ const STOP_WORDS = new Set([
   'this','that','these','those','it','and','but','or',
   'so','as','if','when','then',
   "don't","doesn't","didn't","won't","can't","isn't","aren't","wasn't","weren't",
+  // Apostrophe-free duplicates of the above — two of the four STOP_WORDS
+  // check sites (verb-finding loop, object-extraction loop) strip all
+  // non-letter characters via /[^a-z]/g before checking, which turns
+  // "didn't" into "didnt" — meaning the apostrophe forms above never
+  // actually matched at those sites. This is why "he didn't eat" was
+  // still picking up "didn't" as a stray object word ([UNKNOWN]·ko)
+  // even after the apostrophe forms were added.
+  "dont","doesnt","didnt","wont","cant","isnt","arent","wasnt","werent",
 ]);
 // possessive pronouns (my/your/his/her/our/their) removed from STOP_WORDS
 // negation contractions added — negation is handled via isNegative/-gija
@@ -456,10 +464,24 @@ export async function translate(input) {
   }
 
   // 4. Stop-word strip
+  // Negation-aware: this step previously had zero awareness of negation
+  // (same bug class as assembleSentenceSOV, fixed earlier this session) —
+  // "it isn't good" was stripping to "good" -> "nam·a" with the negation
+  // silently dropped. NOTE: can't use a literal n't/not regex here since
+  // `lower` has already had its apostrophe stripped by this point in the
+  // pipeline — "isn't" is already "isnt". Check against the negation
+  // contraction set directly instead.
+  const NEGATION_WORDS = new Set(['not','never','dont','doesnt','didnt','wont','cant','isnt','arent','wasnt','werent']);
+  const isNegativeShortcut = words.some(w => NEGATION_WORDS.has(w));
   const stripped = words.filter(w => !STOP_WORDS.has(w)).join(' ');
   if (stripped && stripped !== lower) {
-    const sm = lookupGaro(stripped);
-    if (sm) return { garo: sm, method: 'stopword-stripped', confidence: 0.88 };
+    let sm = lookupGaro(stripped);
+    if (sm) {
+      if (isNegativeShortcut) {
+        sm = /·a$/.test(sm) ? sm + '·gija' : sm;
+      }
+      return { garo: sm, method: 'stopword-stripped', confidence: 0.88 };
+    }
   }
 
   // 5. Number engine
