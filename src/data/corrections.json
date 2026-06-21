@@ -30,11 +30,11 @@
   "this is not good": "Ia nama·gija",
   "it is not good": "nama·gija",
   "not good": "nama·gija",
-  "i went to see my grandmother": "Anga ambiko nina re·anga",
+  "i went to see my grandmother": "Angni ambiko nina re·anga",
   "i went to see": "Anga nina re·anga",
   "grandmother": "ambi",
-  "to see": "nina",
-  "see": "nina",
+  "to see": "nik·a",
+  "see": "nik·a",
   "i want to sleep": "Anga tusina sikenga",
   "sleep": "tusina",
   "to sleep": "tusina",
@@ -330,5 +330,6 @@
   "home": "Nok",
   "good": "Nama",
   "it is good": "Nama ong·a",
-  "this is good": "Ia nama"
+  "this is good": "Ia nama",
+  "show me": "nina"
 }

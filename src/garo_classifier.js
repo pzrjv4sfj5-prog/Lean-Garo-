@@ -1,10 +1,22 @@
 /**
  * garo_classifier.js
  * Claude A — Complete Rebuild 2026-06-07
+ * Word order corrected 2026-06-21 per native speaker — see below.
  *
- * CORRECT GARO CLASSIFIER ORDER:
- * [classifier-number] + [noun]
- * Example: mang-sa achak = one dog (NOT achak mang-sa)
+ * CORRECT GARO CLASSIFIER ORDER: [noun] + [classifier-number]
+ * Example: achak mang·sa = one dog (NOT mang·sa achak)
+ *
+ * This reverses an earlier "confirmed by user" decision documented in
+ * the original project handoff (classifier-first: mang-sa achak). That
+ * decision is now superseded — native speaker provided 5 unambiguous
+ * examples spanning all 5 classifier categories, all noun-first:
+ *   one dog    -> achak mang·sa   (mang = animals)
+ *   two dogs   -> achak mang·gni
+ *   three books -> ki·tap king·gitam  (king = flat objects)
+ *   one person -> mande sak·sa    (sak = people)
+ *   four fruits -> mewa ge·bri    (ge = general fallback)
+ *   five coins -> tangka gong·bonga (gong = money/currency)
+ *   ten birds  -> do·a mang·chiking
  */
 
 import { toGaroNumber as toGaroNumberImported } from './number_engine.js';
@@ -101,16 +113,17 @@ export function parseCountingPhrase(input) {
 
 export function countNoun(garoNoun, count, englishNoun) {
   const classifier = getClassifier(englishNoun || garoNoun);
-  if (classifier === 'ge') {
-    const numGaro = toGaroNumber(count);
-    return numGaro ? `${garoNoun.toLowerCase()} ${numGaro}` : garoNoun.toLowerCase();
-  }
+  // 'ge' (general fallback classifier) was previously treated as "no
+  // classifier at all" — dropping it entirely from output. Native speaker
+  // confirmed it's a real classifier like the others: "four fruits" ->
+  // "mewa ge·bri", not "mewa bri". Fixed to use the same buildClassifierPhrase
+  // path as every other classifier category.
   const classifierPhrase = buildClassifierPhrase(classifier, count);
-  return `${classifierPhrase} ${garoNoun.toLowerCase()}`;
+  return `${garoNoun.toLowerCase()} ${classifierPhrase}`;
 }
 
 export function countNounWithClassifier(garoNoun, count, classifier) {
-  return `${buildClassifierPhrase(classifier, count)} ${garoNoun}`;
+  return `${garoNoun} ${buildClassifierPhrase(classifier, count)}`;
 }
 
 export function buildPhrase(dictionary, englishNoun, count) {
