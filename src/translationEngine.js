@@ -282,6 +282,16 @@ function assembleSentenceSOV(words, isNegative = false) {
   // STOP_WORDS — they were stripped here with nothing left to signal them).
   if (isNegative && verbs.length) {
     verbs[verbs.length - 1] = verbs[verbs.length - 1] + '·gija';
+  } else if (isNegative && !verbs.length && nonVerbs.length) {
+    // Bare-noun negation fallback: "not water"/"not rice" have no verb or
+    // ·a-suffixed adjective to attach ·gija to, and "not" itself has no
+    // dictionary entry, so it was being silently dropped entirely (unlike
+    // "no water", which works only because "no" happens to be a real
+    // dictionary word -> "Ong·ja"). Reuse that same already-verified word
+    // rather than inventing new grammar — "not" and "no" are functionally
+    // synonymous in this construction.
+    const ongja = lookupGaro('no');
+    if (ongja) nonVerbs.unshift(ongja);
   }
   return [...nonVerbs, ...verbs].join(' ');
 }
@@ -353,15 +363,25 @@ function assembleGrammar(grammar) {
 
 // Input normalization — apostrophe contraction expansion
 function normalizeInput(text) {
+  // Case-preserving contraction expansion (e.g. "didnt" -> "didn't").
+  // Previously this function forced lowercase, which meant it could never
+  // be safely called from translate() without breaking exact-case
+  // correction lookups and analyzeGrammar's capitalization-sensitive
+  // parsing — that's why it was left unwired as dead code. Using
+  // case-insensitive regex flags instead of .toLowerCase() keeps the
+  // original casing intact while still expanding contractions.
   return text
-    .toLowerCase()
-    .replace(/\blets\b/g, "let's")
-    .replace(/\bdont\b/g, "don't")
-    .replace(/\bdoesnt\b/g, "doesn't")
-    .replace(/\bdidnt\b/g, "didn't")
-    .replace(/\bcant\b/g, "can't")
-    .replace(/\bwont\b/g, "won't")
-    .replace(/\bim\b(?=\s)/g, "i'm")
+    .replace(/\blets\b/gi, "let's")
+    .replace(/\bdont\b/gi, "don't")
+    .replace(/\bdoesnt\b/gi, "doesn't")
+    .replace(/\bdidnt\b/gi, "didn't")
+    .replace(/\bcant\b/gi, "can't")
+    .replace(/\bwont\b/gi, "won't")
+    .replace(/\bisnt\b/gi, "isn't")
+    .replace(/\barent\b/gi, "aren't")
+    .replace(/\bwasnt\b/gi, "wasn't")
+    .replace(/\bwerent\b/gi, "weren't")
+    .replace(/\bim\b(?=\s)/gi, "i'm")
     .trim();
 }
 
@@ -394,7 +414,7 @@ const PROGRESSIVE_MAP = {
 export async function translate(input) {
   if (!input || typeof input !== 'string') return { garo: '', method: 'empty', confidence: 0 };
 
-  const cleaned = input.trim().replace(/’/g, "'");
+  const cleaned = normalizeInput(input.trim().replace(/’/g, "'"));
   // Normalize: strip apostrophes for lookup consistency
   const normalizedForLookup = cleaned.toLowerCase().replace(/['']/g, '');
   const lower = cleaned.toLowerCase().replace(/[''\u2019]/g, '');
