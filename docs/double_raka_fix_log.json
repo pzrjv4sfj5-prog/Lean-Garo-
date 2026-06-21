@@ -1,0 +1,4167 @@
+[
+  {
+    "english": "fever",
+    "before": "Sin··ding··a",
+    "after": "Sin·ding·a"
+  },
+  {
+    "english": "Afternoon",
+    "before": "an··tam",
+    "after": "an·tam"
+  },
+  {
+    "english": "Agree",
+    "before": "ku··chak·a",
+    "after": "ku·chak·a"
+  },
+  {
+    "english": "Agree",
+    "before": "ku··ra·chak·a",
+    "after": "ku·ra·chak·a"
+  },
+  {
+    "english": "Answer",
+    "before": "ku··chak·a",
+    "after": "ku·chak·a"
+  },
+  {
+    "english": "Apply",
+    "before": "pa··a",
+    "after": "pa·a"
+  },
+  {
+    "english": "Bamboo",
+    "before": "wa··",
+    "after": "wa·"
+  },
+  {
+    "english": "Banana",
+    "before": "te··rik",
+    "after": "te·rik"
+  },
+  {
+    "english": "Bear",
+    "before": "ba··a",
+    "after": "ba·a"
+  },
+  {
+    "english": "Big",
+    "before": "dal··a",
+    "after": "dal·a"
+  },
+  {
+    "english": "Bitter",
+    "before": "ka··a",
+    "after": "ka·a"
+  },
+  {
+    "english": "Blood",
+    "before": "han··chi",
+    "after": "han·chi"
+  },
+  {
+    "english": "Boil",
+    "before": "bi·rot·ma··mong",
+    "after": "bi·rot·ma·mong"
+  },
+  {
+    "english": "Brave",
+    "before": "pa··a",
+    "after": "pa·a"
+  },
+  {
+    "english": "Brave",
+    "before": "sang··chak·a",
+    "after": "sang·chak·a"
+  },
+  {
+    "english": "Broom",
+    "before": "sal··a",
+    "after": "sal·a"
+  },
+  {
+    "english": "Catch",
+    "before": "ra··chak·a",
+    "after": "ra·chak·a"
+  },
+  {
+    "english": "Catch",
+    "before": "rim··a",
+    "after": "rim·a"
+  },
+  {
+    "english": "Catch",
+    "before": "rim··chak·a",
+    "after": "rim·chak·a"
+  },
+  {
+    "english": "Chili",
+    "before": "jal··ik",
+    "after": "jal·ik"
+  },
+  {
+    "english": "Chop",
+    "before": "den··a",
+    "after": "den·a"
+  },
+  {
+    "english": "Claw",
+    "before": "ku··ak·a",
+    "after": "ku·ak·a"
+  },
+  {
+    "english": "Clever",
+    "before": "hai··man·a ku··man·a",
+    "after": "hai·man·a ku·man·a"
+  },
+  {
+    "english": "Cloth",
+    "before": "ba··ra",
+    "after": "ba·ra"
+  },
+  {
+    "english": "Clothes",
+    "before": "ba··ra",
+    "after": "ba·ra"
+  },
+  {
+    "english": "Cockroach",
+    "before": "ka··ra·o",
+    "after": "ka·ra·o"
+  },
+  {
+    "english": "Cockroach",
+    "before": "sel··uk",
+    "after": "sel·uk"
+  },
+  {
+    "english": "Comb",
+    "before": "ken··a",
+    "after": "ken·a"
+  },
+  {
+    "english": "Come",
+    "before": "i··a",
+    "after": "i·a"
+  },
+  {
+    "english": "Come",
+    "before": "re··a",
+    "after": "re·a"
+  },
+  {
+    "english": "Come",
+    "before": "re··ba·a",
+    "after": "re·ba·a"
+  },
+  {
+    "english": "Cook",
+    "before": "song··a",
+    "after": "song·a"
+  },
+  {
+    "english": "Cow",
+    "before": "ma··su",
+    "after": "ma·su"
+  },
+  {
+    "english": "Crab",
+    "before": "hang··ki",
+    "after": "hang·ki"
+  },
+  {
+    "english": "Deep",
+    "before": "ting··a",
+    "after": "ting·a"
+  },
+  {
+    "english": "Dirty",
+    "before": "ma··bak·a",
+    "after": "ma·bak·a"
+  },
+  {
+    "english": "Dry",
+    "before": "ran··a",
+    "after": "ran·a"
+  },
+  {
+    "english": "Eat",
+    "before": "cha··a",
+    "after": "cha·a"
+  },
+  {
+    "english": "Enough",
+    "before": "chu··ong·a",
+    "after": "chu·ong·a"
+  },
+  {
+    "english": "Evening",
+    "before": "an··tam",
+    "after": "an·tam"
+  },
+  {
+    "english": "Far",
+    "before": "chel··a",
+    "after": "chel·a"
+  },
+  {
+    "english": "Fast",
+    "before": "bing··si·bing··si",
+    "after": "bing·si·bing·si"
+  },
+  {
+    "english": "Fever",
+    "before": "ding··du·a",
+    "after": "ding·du·a"
+  },
+  {
+    "english": "Fever",
+    "before": "han··ding·a",
+    "after": "han·ding·a"
+  },
+  {
+    "english": "Fire",
+    "before": "wal··",
+    "after": "wal·"
+  },
+  {
+    "english": "Firewood",
+    "before": "ha··bol",
+    "after": "ha·bol"
+  },
+  {
+    "english": "Fish",
+    "before": "na··tok",
+    "after": "na·tok"
+  },
+  {
+    "english": "Fly",
+    "before": "til··a",
+    "after": "til·a"
+  },
+  {
+    "english": "Front",
+    "before": "ka··bak",
+    "after": "ka·bak"
+  },
+  {
+    "english": "Fry",
+    "before": "jo··a",
+    "after": "jo·a"
+  },
+  {
+    "english": "Ghost",
+    "before": "me··mang",
+    "after": "me·mang"
+  },
+  {
+    "english": "Ginger",
+    "before": "e··ching",
+    "after": "e·ching"
+  },
+  {
+    "english": "Give",
+    "before": "ron··a",
+    "after": "ron·a"
+  },
+  {
+    "english": "Go",
+    "before": "i··a",
+    "after": "i·a"
+  },
+  {
+    "english": "Go",
+    "before": "i··ang·a",
+    "after": "i·ang·a"
+  },
+  {
+    "english": "Go",
+    "before": "re··a",
+    "after": "re·a"
+  },
+  {
+    "english": "Grind",
+    "before": "pe··a",
+    "after": "pe·a"
+  },
+  {
+    "english": "Half",
+    "before": "bon··jang·chi·a",
+    "after": "bon·jang·chi·a"
+  },
+  {
+    "english": "Healthy",
+    "before": "han cheng··a",
+    "after": "han cheng·a"
+  },
+  {
+    "english": "Healthy",
+    "before": "han··sel·a",
+    "after": "han·sel·a"
+  },
+  {
+    "english": "Heart",
+    "before": "ka··rong·ti",
+    "after": "ka·rong·ti"
+  },
+  {
+    "english": "Heart",
+    "before": "ka··tong",
+    "after": "ka·tong"
+  },
+  {
+    "english": "Hope",
+    "before": "ka··dong·a",
+    "after": "ka·dong·a"
+  },
+  {
+    "english": "Itch",
+    "before": "ka··kit·a",
+    "after": "ka·kit·a"
+  },
+  {
+    "english": "Jackfruit",
+    "before": "te··brong",
+    "after": "te·brong"
+  },
+  {
+    "english": "Know",
+    "before": "hai··a",
+    "after": "hai·a"
+  },
+  {
+    "english": "Ladder",
+    "before": "jang··ki",
+    "after": "jang·ki"
+  },
+  {
+    "english": "Leg",
+    "before": "ja··chok",
+    "after": "ja·chok"
+  },
+  {
+    "english": "Leg",
+    "before": "ja··git·teng",
+    "after": "ja·git·teng"
+  },
+  {
+    "english": "Leg",
+    "before": "ja··teng",
+    "after": "ja·teng"
+  },
+  {
+    "english": "Lie",
+    "before": "bo··a ra··a",
+    "after": "bo·a ra·a"
+  },
+  {
+    "english": "Light (weight)",
+    "before": "cheng··a",
+    "after": "cheng·a"
+  },
+  {
+    "english": "Long",
+    "before": "ro··a",
+    "after": "ro·a"
+  },
+  {
+    "english": "Long",
+    "before": "ro··rek·a",
+    "after": "ro·rek·a"
+  },
+  {
+    "english": "Love",
+    "before": "ka··sa·a",
+    "after": "ka·sa·a"
+  },
+  {
+    "english": "Mango",
+    "before": "te··ga·chu",
+    "after": "te·ga·chu"
+  },
+  {
+    "english": "Market",
+    "before": "ha··ti",
+    "after": "ha·ti"
+  },
+  {
+    "english": "Meat",
+    "before": "be··en",
+    "after": "be·en"
+  },
+  {
+    "english": "Mother",
+    "before": "ma··gip·a",
+    "after": "ma·gip·a"
+  },
+  {
+    "english": "Mother",
+    "before": "na··gi·pa",
+    "after": "na·gi·pa"
+  },
+  {
+    "english": "Mountain",
+    "before": "ha··bri",
+    "after": "ha·bri"
+  },
+  {
+    "english": "Mountain",
+    "before": "ha··chik",
+    "after": "ha·chik"
+  },
+  {
+    "english": "Narrow",
+    "before": "jang··jot·a",
+    "after": "jang·jot·a"
+  },
+  {
+    "english": "Outside",
+    "before": "ha··gat·e",
+    "after": "ha·gat·e"
+  },
+  {
+    "english": "Play",
+    "before": "kal··a",
+    "after": "kal·a"
+  },
+  {
+    "english": "Promise",
+    "before": "ku··chak·a",
+    "after": "ku·chak·a"
+  },
+  {
+    "english": "Promise",
+    "before": "ku··mik·chet·a",
+    "after": "ku·mik·chet·a"
+  },
+  {
+    "english": "Promise",
+    "before": "ku··wat·a",
+    "after": "ku·wat·a"
+  },
+  {
+    "english": "Question",
+    "before": "sing··a",
+    "after": "sing·a"
+  },
+  {
+    "english": "Quiet",
+    "before": "ka··sin·a",
+    "after": "ka·sin·a"
+  },
+  {
+    "english": "Remember",
+    "before": "gi·sik ra··a",
+    "after": "gi·sik ra·a"
+  },
+  {
+    "english": "Roll",
+    "before": "bil··a",
+    "after": "bil·a"
+  },
+  {
+    "english": "Sand",
+    "before": "han··cheng",
+    "after": "han·cheng"
+  },
+  {
+    "english": "Sharp",
+    "before": "sim··pram·a",
+    "after": "sim·pram·a"
+  },
+  {
+    "english": "Skin",
+    "before": "sol··a",
+    "after": "sol·a"
+  },
+  {
+    "english": "Sleepy",
+    "before": "mik·gil jom··a",
+    "after": "mik·gil jom·a"
+  },
+  {
+    "english": "Slow",
+    "before": "ka··sin·a",
+    "after": "ka·sin·a"
+  },
+  {
+    "english": "Small",
+    "before": "chong··top·a",
+    "after": "chong·top·a"
+  },
+  {
+    "english": "Smile",
+    "before": "ka··ding·a",
+    "after": "ka·ding·a"
+  },
+  {
+    "english": "Smile",
+    "before": "ka··ding·sim·ik·a",
+    "after": "ka·ding·sim·ik·a"
+  },
+  {
+    "english": "Soft",
+    "before": "dil··dok·dil··dok",
+    "after": "dil·dok·dil·dok"
+  },
+  {
+    "english": "Sound",
+    "before": "gam··a",
+    "after": "gam·a"
+  },
+  {
+    "english": "Sound",
+    "before": "gam··pret·a",
+    "after": "gam·pret·a"
+  },
+  {
+    "english": "Stir",
+    "before": "gon··gon·a",
+    "after": "gon·gon·a"
+  },
+  {
+    "english": "Stone",
+    "before": "rong··te",
+    "after": "rong·te"
+  },
+  {
+    "english": "Sweet",
+    "before": "chi··a",
+    "after": "chi·a"
+  },
+  {
+    "english": "Sweet Potato",
+    "before": "ta··mil·ang",
+    "after": "ta·mil·ang"
+  },
+  {
+    "english": "Tail",
+    "before": "ki··me",
+    "after": "ki·me"
+  },
+  {
+    "english": "Take",
+    "before": "ra··a",
+    "after": "ra·a"
+  },
+  {
+    "english": "Take",
+    "before": "ra··ang·a",
+    "after": "ra·ang·a"
+  },
+  {
+    "english": "Taste",
+    "before": "cha··e ni·a",
+    "after": "cha·e ni·a"
+  },
+  {
+    "english": "Thin",
+    "before": "ba··a",
+    "after": "ba·a"
+  },
+  {
+    "english": "Thirsty",
+    "before": "ran··a",
+    "after": "ran·a"
+  },
+  {
+    "english": "Thunder",
+    "before": "gul··gul·a",
+    "after": "gul·gul·a"
+  },
+  {
+    "english": "Thunder",
+    "before": "hil··hil·a",
+    "after": "hil·hil·a"
+  },
+  {
+    "english": "Tired",
+    "before": "neng··a",
+    "after": "neng·a"
+  },
+  {
+    "english": "Voice",
+    "before": "ku··ra·ma",
+    "after": "ku·ra·ma"
+  },
+  {
+    "english": "Voice",
+    "before": "ku··rang",
+    "after": "ku·rang"
+  },
+  {
+    "english": "Walk",
+    "before": "re··am·a",
+    "after": "re·am·a"
+  },
+  {
+    "english": "Wet",
+    "before": "ma··jim·a",
+    "after": "ma·jim·a"
+  },
+  {
+    "english": "Whistle",
+    "before": "ku··sim·ok·a",
+    "after": "ku·sim·ok·a"
+  },
+  {
+    "english": "Whistle",
+    "before": "su·i ron··a",
+    "after": "su·i ron·a"
+  },
+  {
+    "english": "Win",
+    "before": "man··chak·a",
+    "after": "man·chak·a"
+  },
+  {
+    "english": "Woman",
+    "before": "me··chik",
+    "after": "me·chik"
+  },
+  {
+    "english": "Work",
+    "before": "ka··a",
+    "after": "ka·a"
+  },
+  {
+    "english": "abbreviated",
+    "before": "tong··kap·a",
+    "after": "tong·kap·a"
+  },
+  {
+    "english": "abbreviated",
+    "before": "tong··tang·ga·tang",
+    "after": "tong·tang·ga·tang"
+  },
+  {
+    "english": "able",
+    "before": "man··a",
+    "after": "man·a"
+  },
+  {
+    "english": "about to",
+    "before": "ham··a",
+    "after": "ham·a"
+  },
+  {
+    "english": "accept",
+    "before": "ra··chak·a",
+    "after": "ra·chak·a"
+  },
+  {
+    "english": "accompany",
+    "before": "i··ang·pa··a",
+    "after": "i·ang·pa·a"
+  },
+  {
+    "english": "accomplish",
+    "before": "chu··sok·a",
+    "after": "chu·sok·a"
+  },
+  {
+    "english": "ache",
+    "before": "sa··dik·a",
+    "after": "sa·dik·a"
+  },
+  {
+    "english": "actual",
+    "before": "chong··mot",
+    "after": "chong·mot"
+  },
+  {
+    "english": "adolescent",
+    "before": "dil·ding bal··jak",
+    "after": "dil·ding bal·jak"
+  },
+  {
+    "english": "adolescent",
+    "before": "me··tra",
+    "after": "me·tra"
+  },
+  {
+    "english": "adopt",
+    "before": "ra··gat·a",
+    "after": "ra·gat·a"
+  },
+  {
+    "english": "advice",
+    "before": "ku··chi kan·a",
+    "after": "ku·chi kan·a"
+  },
+  {
+    "english": "afraid",
+    "before": "han··srik·han··srik",
+    "after": "han·srik·han·srik"
+  },
+  {
+    "english": "again",
+    "before": "da··o·ba",
+    "after": "da·o·ba"
+  },
+  {
+    "english": "again",
+    "before": "pil··a",
+    "after": "pil·a"
+  },
+  {
+    "english": "almost",
+    "before": "ham··a",
+    "after": "ham·a"
+  },
+  {
+    "english": "angry",
+    "before": "hel··hel",
+    "after": "hel·hel"
+  },
+  {
+    "english": "angry",
+    "before": "ka··o·nang·a",
+    "after": "ka·o·nang·a"
+  },
+  {
+    "english": "ankle",
+    "before": "ja··git·ok",
+    "after": "ja·git·ok"
+  },
+  {
+    "english": "ankle bells",
+    "before": "ja··srang",
+    "after": "ja·srang"
+  },
+  {
+    "english": "annoyed",
+    "before": "man··dik·a",
+    "after": "man·dik·a"
+  },
+  {
+    "english": "anthill",
+    "before": "ha··pru",
+    "after": "ha·pru"
+  },
+  {
+    "english": "anticipate",
+    "before": "hai··chak·a",
+    "after": "hai·chak·a"
+  },
+  {
+    "english": "anus",
+    "before": "ki··sam·bu",
+    "after": "ki·sam·bu"
+  },
+  {
+    "english": "anxious",
+    "before": "ting··ting·a",
+    "after": "ting·ting·a"
+  },
+  {
+    "english": "appear",
+    "before": "ong··kat·a",
+    "after": "ong·kat·a"
+  },
+  {
+    "english": "apportion",
+    "before": "ma··at·a",
+    "after": "ma·at·a"
+  },
+  {
+    "english": "appropriate",
+    "before": "ke··a",
+    "after": "ke·a"
+  },
+  {
+    "english": "area",
+    "before": "ha··dok",
+    "after": "ha·dok"
+  },
+  {
+    "english": "arrow",
+    "before": "gol··chok",
+    "after": "gol·chok"
+  },
+  {
+    "english": "arum",
+    "before": "ta··ring",
+    "after": "ta·ring"
+  },
+  {
+    "english": "ashes",
+    "before": "ha··dip·u",
+    "after": "ha·dip·u"
+  },
+  {
+    "english": "ask question",
+    "before": "sing··a",
+    "after": "sing·a"
+  },
+  {
+    "english": "ask, request",
+    "before": "bi··a",
+    "after": "bi·a"
+  },
+  {
+    "english": "athlete's foot",
+    "before": "ja··si git·ok chot·a",
+    "after": "ja·si git·ok chot·a"
+  },
+  {
+    "english": "attach",
+    "before": "pa··a",
+    "after": "pa·a"
+  },
+  {
+    "english": "attention",
+    "before": "gi·sik ron··a",
+    "after": "gi·sik ron·a"
+  },
+  {
+    "english": "attract",
+    "before": "mong··a",
+    "after": "mong·a"
+  },
+  {
+    "english": "aunt (MoOlSi)",
+    "before": "ma··jong",
+    "after": "ma·jong"
+  },
+  {
+    "english": "aunt (MoYoSi)",
+    "before": "ma··de",
+    "after": "ma·de"
+  },
+  {
+    "english": "baby napkin",
+    "before": "ki··tap",
+    "after": "ki·tap"
+  },
+  {
+    "english": "backwards",
+    "before": "ki··sang·cha·na",
+    "after": "ki·sang·cha·na"
+  },
+  {
+    "english": "bait",
+    "before": "du··a",
+    "after": "du·a"
+  },
+  {
+    "english": "banana bud",
+    "before": "te··rik so·bak",
+    "after": "te·rik so·bak"
+  },
+  {
+    "english": "banana leaf",
+    "before": "he··sal",
+    "after": "he·sal"
+  },
+  {
+    "english": "base of mountain",
+    "before": "ja··pang",
+    "after": "ja·pang"
+  },
+  {
+    "english": "beans",
+    "before": "bil··ik",
+    "after": "bil·ik"
+  },
+  {
+    "english": "beans",
+    "before": "ka··rek",
+    "after": "ka·rek"
+  },
+  {
+    "english": "beard",
+    "before": "ku··sim·ang",
+    "after": "ku·sim·ang"
+  },
+  {
+    "english": "beetle",
+    "before": "ki··bit·bit",
+    "after": "ki·bit·bit"
+  },
+  {
+    "english": "beggars",
+    "before": "gil·i·geng·i cha··gip·a",
+    "after": "gil·i·geng·i cha·gip·a"
+  },
+  {
+    "english": "begin",
+    "before": "a··ba·cheng·a",
+    "after": "a·ba·cheng·a"
+  },
+  {
+    "english": "belch",
+    "before": "rang··ra·a",
+    "after": "rang·ra·a"
+  },
+  {
+    "english": "believe",
+    "before": "be·be ra··a",
+    "after": "be·be ra·a"
+  },
+  {
+    "english": "bend",
+    "before": "be··gop·a",
+    "after": "be·gop·a"
+  },
+  {
+    "english": "bent",
+    "before": "kong··krot·a",
+    "after": "kong·krot·a"
+  },
+  {
+    "english": "beseech",
+    "before": "mol··mol·a",
+    "after": "mol·mol·a"
+  },
+  {
+    "english": "birth",
+    "before": "ba··a",
+    "after": "ba·a"
+  },
+  {
+    "english": "bladder",
+    "before": "si··chu",
+    "after": "si·chu"
+  },
+  {
+    "english": "block",
+    "before": "beng··a",
+    "after": "beng·a"
+  },
+  {
+    "english": "block",
+    "before": "peng··a",
+    "after": "peng·a"
+  },
+  {
+    "english": "boastful",
+    "before": "dal··a·sot·sot",
+    "after": "dal·a·sot·sot"
+  },
+  {
+    "english": "body",
+    "before": "be··en",
+    "after": "be·en"
+  },
+  {
+    "english": "body",
+    "before": "han··",
+    "after": "han·"
+  },
+  {
+    "english": "bore hole",
+    "before": "re··el·a",
+    "after": "re·el·a"
+  },
+  {
+    "english": "borrow",
+    "before": "ra··a",
+    "after": "ra·a"
+  },
+  {
+    "english": "bothered",
+    "before": "man··dik·a",
+    "after": "man·dik·a"
+  },
+  {
+    "english": "brand",
+    "before": "wal··jem",
+    "after": "wal·jem"
+  },
+  {
+    "english": "break",
+    "before": "be··a",
+    "after": "be·a"
+  },
+  {
+    "english": "break",
+    "before": "be··tong·a",
+    "after": "be·tong·a"
+  },
+  {
+    "english": "break",
+    "before": "pe··a",
+    "after": "pe·a"
+  },
+  {
+    "english": "breathe",
+    "before": "rang··sip·it·a",
+    "after": "rang·sip·it·a"
+  },
+  {
+    "english": "breathe deeply",
+    "before": "rang··du·a",
+    "after": "rang·du·a"
+  },
+  {
+    "english": "brew",
+    "before": "song··a",
+    "after": "song·a"
+  },
+  {
+    "english": "brick",
+    "before": "ha··san",
+    "after": "ha·san"
+  },
+  {
+    "english": "briefly",
+    "before": "teng··kap teng··kap",
+    "after": "teng·kap teng·kap"
+  },
+  {
+    "english": "brilliant",
+    "before": "seng··a",
+    "after": "seng·a"
+  },
+  {
+    "english": "bring",
+    "before": "ra··a",
+    "after": "ra·a"
+  },
+  {
+    "english": "bring",
+    "before": "ra··ba·a",
+    "after": "ra·ba·a"
+  },
+  {
+    "english": "broken",
+    "before": "gong··gak·a",
+    "after": "gong·gak·a"
+  },
+  {
+    "english": "broken off",
+    "before": "be··tong·a",
+    "after": "be·tong·a"
+  },
+  {
+    "english": "brush",
+    "before": "ken··a",
+    "after": "ken·a"
+  },
+  {
+    "english": "bubbles",
+    "before": "ku··chi",
+    "after": "ku·chi"
+  },
+  {
+    "english": "bug",
+    "before": "jong··",
+    "after": "jong·"
+  },
+  {
+    "english": "build",
+    "before": "dim··a",
+    "after": "dim·a"
+  },
+  {
+    "english": "build nest",
+    "before": "sa··a",
+    "after": "sa·a"
+  },
+  {
+    "english": "burn",
+    "before": "so··a",
+    "after": "so·a"
+  },
+  {
+    "english": "burning",
+    "before": "ding··il·a ding··cha·a",
+    "after": "ding·il·a ding·cha·a"
+  },
+  {
+    "english": "bury",
+    "before": "ha··dap·a",
+    "after": "ha·dap·a"
+  },
+  {
+    "english": "buttocks",
+    "before": "ki··sang",
+    "after": "ki·sang"
+  },
+  {
+    "english": "cactus",
+    "before": "si··chu",
+    "after": "si·chu"
+  },
+  {
+    "english": "calf",
+    "before": "ma··su gen·da",
+    "after": "ma·su gen·da"
+  },
+  {
+    "english": "call",
+    "before": "pe··a",
+    "after": "pe·a"
+  },
+  {
+    "english": "calm",
+    "before": "ka··sin·a",
+    "after": "ka·sin·a"
+  },
+  {
+    "english": "calm",
+    "before": "tom··tom·a",
+    "after": "tom·tom·a"
+  },
+  {
+    "english": "can",
+    "before": "man··a",
+    "after": "man·a"
+  },
+  {
+    "english": "capture",
+    "before": "rim··a",
+    "after": "rim·a"
+  },
+  {
+    "english": "capture bridegroom",
+    "before": "rim··tat·a",
+    "after": "rim·tat·a"
+  },
+  {
+    "english": "care for",
+    "before": "ba··rik·a",
+    "after": "ba·rik·a"
+  },
+  {
+    "english": "carry",
+    "before": "de··tom·a",
+    "after": "de·tom·a"
+  },
+  {
+    "english": "carry",
+    "before": "de··tom·brot·a",
+    "after": "de·tom·brot·a"
+  },
+  {
+    "english": "carry baby",
+    "before": "ba··rik·a",
+    "after": "ba·rik·a"
+  },
+  {
+    "english": "carry child",
+    "before": "ba··tom·a",
+    "after": "ba·tom·a"
+  },
+  {
+    "english": "carve",
+    "before": "sol··a",
+    "after": "sol·a"
+  },
+  {
+    "english": "cassava",
+    "before": "ta··bol·chu",
+    "after": "ta·bol·chu"
+  },
+  {
+    "english": "caterpillar",
+    "before": "jong··sip·in",
+    "after": "jong·sip·in"
+  },
+  {
+    "english": "caterpillar",
+    "before": "jong··su",
+    "after": "jong·su"
+  },
+  {
+    "english": "cattle",
+    "before": "ma··su",
+    "after": "ma·su"
+  },
+  {
+    "english": "cattle",
+    "before": "ma··su mat·ti",
+    "after": "ma·su mat·ti"
+  },
+  {
+    "english": "celebrate",
+    "before": "han··seng·a",
+    "after": "han·seng·a"
+  },
+  {
+    "english": "chaff",
+    "before": "cha··che",
+    "after": "cha·che"
+  },
+  {
+    "english": "change ethnicity",
+    "before": "tang··nap·a",
+    "after": "tang·nap·a"
+  },
+  {
+    "english": "change mind",
+    "before": "gi·sik ra··pil·a",
+    "after": "gi·sik ra·pil·a"
+  },
+  {
+    "english": "change money",
+    "before": "pe··a",
+    "after": "pe·a"
+  },
+  {
+    "english": "chapped lips",
+    "before": "ku··chil bret·a",
+    "after": "ku·chil bret·a"
+  },
+  {
+    "english": "chase",
+    "before": "ha··rik·a",
+    "after": "ha·rik·a"
+  },
+  {
+    "english": "chin",
+    "before": "ku··dim·bok",
+    "after": "ku·dim·bok"
+  },
+  {
+    "english": "chipped",
+    "before": "be··king·ben·da",
+    "after": "be·king·ben·da"
+  },
+  {
+    "english": "chipped",
+    "before": "be··ku·weng·a",
+    "after": "be·ku·weng·a"
+  },
+  {
+    "english": "chipped",
+    "before": "be··rik·ken·a",
+    "after": "be·rik·ken·a"
+  },
+  {
+    "english": "chips",
+    "before": "gol··ding·ding",
+    "after": "gol·ding·ding"
+  },
+  {
+    "english": "chips",
+    "before": "gol··si·ri",
+    "after": "gol·si·ri"
+  },
+  {
+    "english": "claim",
+    "before": "a··kang·a",
+    "after": "a·kang·a"
+  },
+  {
+    "english": "clay",
+    "before": "ha··keng·krak",
+    "after": "ha·keng·krak"
+  },
+  {
+    "english": "clay",
+    "before": "ha··pek",
+    "after": "ha·pek"
+  },
+  {
+    "english": "coals",
+    "before": "wal··ki",
+    "after": "wal·ki"
+  },
+  {
+    "english": "coccyx",
+    "before": "ki··ting",
+    "after": "ki·ting"
+  },
+  {
+    "english": "coiled",
+    "before": "kon··a",
+    "after": "kon·a"
+  },
+  {
+    "english": "cold",
+    "before": "sin··a",
+    "after": "sin·a"
+  },
+  {
+    "english": "cold season",
+    "before": "sin··ka·ri",
+    "after": "sin·ka·ri"
+  },
+  {
+    "english": "cold sore",
+    "before": "ku··gi·sep ang··ki·sa dak·a",
+    "after": "ku·gi·sep ang·ki·sa dak·a"
+  },
+  {
+    "english": "collapse",
+    "before": "be··grop·a",
+    "after": "be·grop·a"
+  },
+  {
+    "english": "collapse",
+    "before": "be··wak·a",
+    "after": "be·wak·a"
+  },
+  {
+    "english": "collect",
+    "before": "tom··a",
+    "after": "tom·a"
+  },
+  {
+    "english": "come back",
+    "before": "pil··a",
+    "after": "pil·a"
+  },
+  {
+    "english": "come loose",
+    "before": "go··ok·a",
+    "after": "go·ok·a"
+  },
+  {
+    "english": "come out",
+    "before": "ong··kat·a",
+    "after": "ong·kat·a"
+  },
+  {
+    "english": "compensation",
+    "before": "gro cha··a",
+    "after": "gro cha·a"
+  },
+  {
+    "english": "conceal",
+    "before": "bo··srok·a",
+    "after": "bo·srok·a"
+  },
+  {
+    "english": "conceited",
+    "before": "dal··a·sot·sot",
+    "after": "dal·a·sot·sot"
+  },
+  {
+    "english": "constantly",
+    "before": "jem··jem·a",
+    "after": "jem·jem·a"
+  },
+  {
+    "english": "contribute",
+    "before": "ron··chak·a",
+    "after": "ron·chak·a"
+  },
+  {
+    "english": "cooking pots",
+    "before": "me··dik sam·dik",
+    "after": "me·dik sam·dik"
+  },
+  {
+    "english": "correctly speaking",
+    "before": "a·gan·chong··mot·a",
+    "after": "a·gan·chong·mot·a"
+  },
+  {
+    "english": "courageous",
+    "before": "sang··chak·a",
+    "after": "sang·chak·a"
+  },
+  {
+    "english": "courtyard",
+    "before": "ha··til·a",
+    "after": "ha·til·a"
+  },
+  {
+    "english": "cow dung",
+    "before": "ma··su·ke··em·a",
+    "after": "ma·su·ke·em·a"
+  },
+  {
+    "english": "cracked",
+    "before": "be··chil·ak·a",
+    "after": "be·chil·ak·a"
+  },
+  {
+    "english": "cracked",
+    "before": "be··dip·a",
+    "after": "be·dip·a"
+  },
+  {
+    "english": "cracked",
+    "before": "be··si·ri·a",
+    "after": "be·si·ri·a"
+  },
+  {
+    "english": "crave",
+    "before": "ku··chi·a",
+    "after": "ku·chi·a"
+  },
+  {
+    "english": "craving",
+    "before": "ma··ang",
+    "after": "ma·ang"
+  },
+  {
+    "english": "crazy",
+    "before": "na·wang·ku··wang",
+    "after": "na·wang·ku·wang"
+  },
+  {
+    "english": "creator",
+    "before": "Ba··gip·a Bi·rom·bi",
+    "after": "Ba·gip·a Bi·rom·bi"
+  },
+  {
+    "english": "cremate",
+    "before": "so··krep·a",
+    "after": "so·krep·a"
+  },
+  {
+    "english": "crescent moon",
+    "before": "ku··weng·a",
+    "after": "ku·weng·a"
+  },
+  {
+    "english": "cross",
+    "before": "ga··bat·a",
+    "after": "ga·bat·a"
+  },
+  {
+    "english": "crossed legs",
+    "before": "ja··git·ap·a",
+    "after": "ja·git·ap·a"
+  },
+  {
+    "english": "crumple",
+    "before": "kom··si·a",
+    "after": "kom·si·a"
+  },
+  {
+    "english": "crush",
+    "before": "rim··pin·ek·a",
+    "after": "rim·pin·ek·a"
+  },
+  {
+    "english": "cultivate",
+    "before": "ha··ba hu··a",
+    "after": "ha·ba hu·a"
+  },
+  {
+    "english": "cup, bamboo",
+    "before": "wa··sing",
+    "after": "wa·sing"
+  },
+  {
+    "english": "curled",
+    "before": "kon··a",
+    "after": "kon·a"
+  },
+  {
+    "english": "curly",
+    "before": "kong··krot·a",
+    "after": "kong·krot·a"
+  },
+  {
+    "english": "curly",
+    "before": "kong··krot·kong··krot",
+    "after": "kong·krot·kong·krot"
+  },
+  {
+    "english": "curved",
+    "before": "kong··krot·a",
+    "after": "kong·krot·a"
+  },
+  {
+    "english": "curved",
+    "before": "ku··weng·a",
+    "after": "ku·weng·a"
+  },
+  {
+    "english": "cut",
+    "before": "den··a",
+    "after": "den·a"
+  },
+  {
+    "english": "cutting",
+    "before": "ta··sko",
+    "after": "ta·sko"
+  },
+  {
+    "english": "damp",
+    "before": "chim··chim·a",
+    "after": "chim·chim·a"
+  },
+  {
+    "english": "damp",
+    "before": "dim··a",
+    "after": "dim·a"
+  },
+  {
+    "english": "dance",
+    "before": "han··seng·a",
+    "after": "han·seng·a"
+  },
+  {
+    "english": "dandruff",
+    "before": "ki··ka·rok",
+    "after": "ki·ka·rok"
+  },
+  {
+    "english": "dark complexion",
+    "before": "han··gi·sim",
+    "after": "han·gi·sim"
+  },
+  {
+    "english": "dead",
+    "before": "bi·ba bon··chot·a",
+    "after": "bi·ba bon·chot·a"
+  },
+  {
+    "english": "deceive",
+    "before": "bo··a",
+    "after": "bo·a"
+  },
+  {
+    "english": "defecate",
+    "before": "ke··em·a",
+    "after": "ke·em·a"
+  },
+  {
+    "english": "defecate",
+    "before": "ki··a",
+    "after": "ki·a"
+  },
+  {
+    "english": "defend",
+    "before": "peng··chak·a",
+    "after": "peng·chak·a"
+  },
+  {
+    "english": "deliver baby",
+    "before": "han··o ra··a",
+    "after": "han·o ra·a"
+  },
+  {
+    "english": "deliver baby",
+    "before": "jak·o ra··a",
+    "after": "jak·o ra·a"
+  },
+  {
+    "english": "demand",
+    "before": "ham··chrak·a",
+    "after": "ham·chrak·a"
+  },
+  {
+    "english": "dense",
+    "before": "gan··chat·a",
+    "after": "gan·chat·a"
+  },
+  {
+    "english": "dented",
+    "before": "be··rik·ken·a",
+    "after": "be·rik·ken·a"
+  },
+  {
+    "english": "desire",
+    "before": "ha··sik·a",
+    "after": "ha·sik·a"
+  },
+  {
+    "english": "desire",
+    "before": "ham··a",
+    "after": "ham·a"
+  },
+  {
+    "english": "destroy",
+    "before": "pe··wak·a",
+    "after": "pe·wak·a"
+  },
+  {
+    "english": "dialogue",
+    "before": "ra··chak·grik·e a·gan·a",
+    "after": "ra·chak·grik·e a·gan·a"
+  },
+  {
+    "english": "diaper",
+    "before": "ki··tap",
+    "after": "ki·tap"
+  },
+  {
+    "english": "diarrhea",
+    "before": "bik·ma re··a",
+    "after": "bik·ma re·a"
+  },
+  {
+    "english": "diarrhea",
+    "before": "ki··brek·a",
+    "after": "ki·brek·a"
+  },
+  {
+    "english": "dig",
+    "before": "cho··a",
+    "after": "cho·a"
+  },
+  {
+    "english": "direct",
+    "before": "tong··tang",
+    "after": "tong·tang"
+  },
+  {
+    "english": "direct",
+    "before": "·tong··tang·",
+    "after": "·tong·tang·"
+  },
+  {
+    "english": "discuss",
+    "before": "ku··chim·mong·a",
+    "after": "ku·chim·mong·a"
+  },
+  {
+    "english": "discuss",
+    "before": "ku··mong·a",
+    "after": "ku·mong·a"
+  },
+  {
+    "english": "dislike",
+    "before": "ni·na man··ja",
+    "after": "ni·na man·ja"
+  },
+  {
+    "english": "distant",
+    "before": "chel··a",
+    "after": "chel·a"
+  },
+  {
+    "english": "disturbed",
+    "before": "man··dik·a",
+    "after": "man·dik·a"
+  },
+  {
+    "english": "disturbed",
+    "before": "rim··dang·a",
+    "after": "rim·dang·a"
+  },
+  {
+    "english": "disturbing",
+    "before": "ka··so·a",
+    "after": "ka·so·a"
+  },
+  {
+    "english": "divide",
+    "before": "ma··at·a",
+    "after": "ma·at·a"
+  },
+  {
+    "english": "divorce",
+    "before": "ha··wal",
+    "after": "ha·wal"
+  },
+  {
+    "english": "do",
+    "before": "ka··a",
+    "after": "ka·a"
+  },
+  {
+    "english": "done",
+    "before": "bon··a",
+    "after": "bon·a"
+  },
+  {
+    "english": "doze",
+    "before": "mik·gil jom··a",
+    "after": "mik·gil jom·a"
+  },
+  {
+    "english": "draw water",
+    "before": "ko··a",
+    "after": "ko·a"
+  },
+  {
+    "english": "dried fish",
+    "before": "na··kam",
+    "after": "na·kam"
+  },
+  {
+    "english": "drizzle",
+    "before": "se··em·se··em",
+    "after": "se·em·se·em"
+  },
+  {
+    "english": "drunk",
+    "before": "han cheng··a",
+    "after": "han cheng·a"
+  },
+  {
+    "english": "dry season",
+    "before": "ha··ran",
+    "after": "ha·ran"
+  },
+  {
+    "english": "dull",
+    "before": "cham··a",
+    "after": "cham·a"
+  },
+  {
+    "english": "dung",
+    "before": "ke··em·a",
+    "after": "ke·em·a"
+  },
+  {
+    "english": "dung",
+    "before": "ma··su·ke··em·a",
+    "after": "ma·su·ke·em·a"
+  },
+  {
+    "english": "dung beetle",
+    "before": "ki··bit·bit",
+    "after": "ki·bit·bit"
+  },
+  {
+    "english": "dunk",
+    "before": "sim··a",
+    "after": "sim·a"
+  },
+  {
+    "english": "dusk",
+    "before": "an··tam·git·tu",
+    "after": "an·tam·git·tu"
+  },
+  {
+    "english": "dust",
+    "before": "ha··gin·dil·a",
+    "after": "ha·gin·dil·a"
+  },
+  {
+    "english": "earth",
+    "before": "ha··",
+    "after": "ha·"
+  },
+  {
+    "english": "earth",
+    "before": "ha··gil·sak",
+    "after": "ha·gil·sak"
+  },
+  {
+    "english": "earth",
+    "before": "ha··mang",
+    "after": "ha·mang"
+  },
+  {
+    "english": "earthen",
+    "before": "ha··ni",
+    "after": "ha·ni"
+  },
+  {
+    "english": "easy",
+    "before": "nom··a",
+    "after": "nom·a"
+  },
+  {
+    "english": "eat up",
+    "before": "cha··chot·a",
+    "after": "cha·chot·a"
+  },
+  {
+    "english": "edge",
+    "before": "a··sam",
+    "after": "a·sam"
+  },
+  {
+    "english": "emerge",
+    "before": "ong··kat·a",
+    "after": "ong·kat·a"
+  },
+  {
+    "english": "end",
+    "before": "ku··mang",
+    "after": "ku·mang"
+  },
+  {
+    "english": "endure",
+    "before": "han··chak·a",
+    "after": "han·chak·a"
+  },
+  {
+    "english": "equivalent",
+    "before": "ong··a",
+    "after": "ong·a"
+  },
+  {
+    "english": "exaggerate",
+    "before": "bo··dap·a",
+    "after": "bo·dap·a"
+  },
+  {
+    "english": "excrement",
+    "before": "ke··em·a",
+    "after": "ke·em·a"
+  },
+  {
+    "english": "exist",
+    "before": "ong··a",
+    "after": "ong·a"
+  },
+  {
+    "english": "expect",
+    "before": "hai··chak·a",
+    "after": "hai·chak·a"
+  },
+  {
+    "english": "explain",
+    "before": "pe··e a·gan·a",
+    "after": "pe·e a·gan·a"
+  },
+  {
+    "english": "explain",
+    "before": "pe··prak·e a·gan·a",
+    "after": "pe·prak·e a·gan·a"
+  },
+  {
+    "english": "eye of needle",
+    "before": "sil·eng·si a··kil·ok",
+    "after": "sil·eng·si a·kil·ok"
+  },
+  {
+    "english": "fall",
+    "before": "ga··ak·a",
+    "after": "ga·ak·a"
+  },
+  {
+    "english": "fall onto",
+    "before": "ga··ak·dap·a",
+    "after": "ga·ak·dap·a"
+  },
+  {
+    "english": "family",
+    "before": "ha··ma",
+    "after": "ha·ma"
+  },
+  {
+    "english": "fart",
+    "before": "ki··si·a",
+    "after": "ki·si·a"
+  },
+  {
+    "english": "fearless",
+    "before": "pa··a",
+    "after": "pa·a"
+  },
+  {
+    "english": "feed",
+    "before": "du··a",
+    "after": "du·a"
+  },
+  {
+    "english": "feed animals",
+    "before": "du··a",
+    "after": "du·a"
+  },
+  {
+    "english": "feel",
+    "before": "rim··e ni·a",
+    "after": "rim·e ni·a"
+  },
+  {
+    "english": "fields",
+    "before": "ha··ba",
+    "after": "ha·ba"
+  },
+  {
+    "english": "find",
+    "before": "man··a",
+    "after": "man·a"
+  },
+  {
+    "english": "fine",
+    "before": "se··em·a",
+    "after": "se·em·a"
+  },
+  {
+    "english": "finish",
+    "before": "bon··dil·a",
+    "after": "bon·dil·a"
+  },
+  {
+    "english": "finish",
+    "before": "chon··a",
+    "after": "chon·a"
+  },
+  {
+    "english": "finish",
+    "before": "man··a",
+    "after": "man·a"
+  },
+  {
+    "english": "finished",
+    "before": "bon··a",
+    "after": "bon·a"
+  },
+  {
+    "english": "finished",
+    "before": "bon··chot·a",
+    "after": "bon·chot·a"
+  },
+  {
+    "english": "firebrand",
+    "before": "wal··jem",
+    "after": "wal·jem"
+  },
+  {
+    "english": "firefly",
+    "before": "sang··et",
+    "after": "sang·et"
+  },
+  {
+    "english": "fit",
+    "before": "dang··a",
+    "after": "dang·a"
+  },
+  {
+    "english": "fit",
+    "before": "tang··rong·rang·a",
+    "after": "tang·rong·rang·a"
+  },
+  {
+    "english": "flair",
+    "before": "jil··au·a",
+    "after": "jil·au·a"
+  },
+  {
+    "english": "flake",
+    "before": "ga··au·a",
+    "after": "ga·au·a"
+  },
+  {
+    "english": "flames",
+    "before": "wal··si·ri",
+    "after": "wal·si·ri"
+  },
+  {
+    "english": "flash",
+    "before": "ri··rau·a",
+    "after": "ri·rau·a"
+  },
+  {
+    "english": "flatten",
+    "before": "ro··op·a",
+    "after": "ro·op·a"
+  },
+  {
+    "english": "flesh",
+    "before": "be··en",
+    "after": "be·en"
+  },
+  {
+    "english": "flicker",
+    "before": "jing··jet·jing··jet",
+    "after": "jing·jet·jing·jet"
+  },
+  {
+    "english": "flickering",
+    "before": "jil··jeng jil··jeng",
+    "after": "jil·jeng jil·jeng"
+  },
+  {
+    "english": "fluently",
+    "before": "ku··pret·a",
+    "after": "ku·pret·a"
+  },
+  {
+    "english": "fold",
+    "before": "dem··a",
+    "after": "dem·a"
+  },
+  {
+    "english": "folded",
+    "before": "be··dem·a",
+    "after": "be·dem·a"
+  },
+  {
+    "english": "follow",
+    "before": "i··rik·a",
+    "after": "i·rik·a"
+  },
+  {
+    "english": "follow",
+    "before": "ja··rik·a",
+    "after": "ja·rik·a"
+  },
+  {
+    "english": "follow",
+    "before": "ki··sang·chak·a",
+    "after": "ki·sang·chak·a"
+  },
+  {
+    "english": "follow orders",
+    "before": "ra··chak·a",
+    "after": "ra·chak·a"
+  },
+  {
+    "english": "fool around",
+    "before": "kal··ak·a",
+    "after": "kal·ak·a"
+  },
+  {
+    "english": "foolishly",
+    "before": "na·wang·ku··wang",
+    "after": "na·wang·ku·wang"
+  },
+  {
+    "english": "foot",
+    "before": "ja··",
+    "after": "ja·"
+  },
+  {
+    "english": "foot of mountains",
+    "before": "ja··rek",
+    "after": "ja·rek"
+  },
+  {
+    "english": "foot print",
+    "before": "ja··gam",
+    "after": "ja·gam"
+  },
+  {
+    "english": "foot print",
+    "before": "ja··kol",
+    "after": "ja·kol"
+  },
+  {
+    "english": "forgive",
+    "before": "ke·ma ron··a",
+    "after": "ke·ma ron·a"
+  },
+  {
+    "english": "front of body",
+    "before": "ka··bak",
+    "after": "ka·bak"
+  },
+  {
+    "english": "funeral",
+    "before": "me··mang gam",
+    "after": "me·mang gam"
+  },
+  {
+    "english": "genitals, female",
+    "before": "si··",
+    "after": "si·"
+  },
+  {
+    "english": "get",
+    "before": "man··a",
+    "after": "man·a"
+  },
+  {
+    "english": "get",
+    "before": "ra··a",
+    "after": "ra·a"
+  },
+  {
+    "english": "get back",
+    "before": "man··rik·a",
+    "after": "man·rik·a"
+  },
+  {
+    "english": "gin",
+    "before": "pe··a",
+    "after": "pe·a"
+  },
+  {
+    "english": "give help",
+    "before": "ron··chak·a",
+    "after": "ron·chak·a"
+  },
+  {
+    "english": "gloomy",
+    "before": "sin··dik·a",
+    "after": "sin·dik·a"
+  },
+  {
+    "english": "gnat",
+    "before": "su··sam",
+    "after": "su·sam"
+  },
+  {
+    "english": "go back",
+    "before": "i··ang·pil··a",
+    "after": "i·ang·pil·a"
+  },
+  {
+    "english": "go back",
+    "before": "pil··a",
+    "after": "pil·a"
+  },
+  {
+    "english": "go back and forth",
+    "before": "i··ru·ra··a",
+    "after": "i·ru·ra·a"
+  },
+  {
+    "english": "gossip",
+    "before": "ku··rit·chu·a",
+    "after": "ku·rit·chu·a"
+  },
+  {
+    "english": "grab",
+    "before": "rim··a",
+    "after": "rim·a"
+  },
+  {
+    "english": "groan",
+    "before": "ma··am·a",
+    "after": "ma·am·a"
+  },
+  {
+    "english": "ground",
+    "before": "ha··",
+    "after": "ha·"
+  },
+  {
+    "english": "grub",
+    "before": "jong··men",
+    "after": "jong·men"
+  },
+  {
+    "english": "handle",
+    "before": "ga··pong",
+    "after": "ga·pong"
+  },
+  {
+    "english": "handle",
+    "before": "rim··a",
+    "after": "rim·a"
+  },
+  {
+    "english": "handle",
+    "before": "rim··chak·ra",
+    "after": "rim·chak·ra"
+  },
+  {
+    "english": "happy",
+    "before": "han··seng·a",
+    "after": "han·seng·a"
+  },
+  {
+    "english": "hatch",
+    "before": "pe··a",
+    "after": "pe·a"
+  },
+  {
+    "english": "head ache",
+    "before": "sko sa··dik·a",
+    "after": "sko sa·dik·a"
+  },
+  {
+    "english": "headhunting sword",
+    "before": "mil··am",
+    "after": "mil·am"
+  },
+  {
+    "english": "heavily",
+    "before": "je··et·je··et dak·ing·a",
+    "after": "je·et·je·et dak·ing·a"
+  },
+  {
+    "english": "heavy",
+    "before": "je··et·je··et",
+    "after": "je·et·je·et"
+  },
+  {
+    "english": "heel",
+    "before": "ja··pa·ku··chok",
+    "after": "ja·pa·ku·chok"
+  },
+  {
+    "english": "hiccup",
+    "before": "ti··ik·a",
+    "after": "ti·ik·a"
+  },
+  {
+    "english": "high land",
+    "before": "ha··sak·a",
+    "after": "ha·sak·a"
+  },
+  {
+    "english": "hill",
+    "before": "ha··bri",
+    "after": "ha·bri"
+  },
+  {
+    "english": "hill",
+    "before": "ha··chik",
+    "after": "ha·chik"
+  },
+  {
+    "english": "hill",
+    "before": "ha··sak·a",
+    "after": "ha·sak·a"
+  },
+  {
+    "english": "hill tract",
+    "before": "ha··sak·a",
+    "after": "ha·sak·a"
+  },
+  {
+    "english": "hills",
+    "before": "ha··rong·ga",
+    "after": "ha·rong·ga"
+  },
+  {
+    "english": "hinder",
+    "before": "peng··a",
+    "after": "peng·a"
+  },
+  {
+    "english": "hoarse",
+    "before": "seo··seo·e bol·a",
+    "after": "seo·seo·e bol·a"
+  },
+  {
+    "english": "hold",
+    "before": "rim··a",
+    "after": "rim·a"
+  },
+  {
+    "english": "hole",
+    "before": "ha··gop",
+    "after": "ha·gop"
+  },
+  {
+    "english": "hole",
+    "before": "ha··kil·ok",
+    "after": "ha·kil·ok"
+  },
+  {
+    "english": "hole",
+    "before": "ha··kol",
+    "after": "ha·kol"
+  },
+  {
+    "english": "hot",
+    "before": "ding··a",
+    "after": "ding·a"
+  },
+  {
+    "english": "hot season",
+    "before": "ding··ka·ri",
+    "after": "ding·ka·ri"
+  },
+  {
+    "english": "hurt",
+    "before": "sa··dik·a",
+    "after": "sa·dik·a"
+  },
+  {
+    "english": "husks",
+    "before": "cha··che",
+    "after": "cha·che"
+  },
+  {
+    "english": "ignite",
+    "before": "so··a",
+    "after": "so·a"
+  },
+  {
+    "english": "immediately",
+    "before": "teng··kap teng··kap",
+    "after": "teng·kap teng·kap"
+  },
+  {
+    "english": "immerse",
+    "before": "sim··a",
+    "after": "sim·a"
+  },
+  {
+    "english": "improve in health",
+    "before": "sel··a",
+    "after": "sel·a"
+  },
+  {
+    "english": "incest",
+    "before": "ma··dong",
+    "after": "ma·dong"
+  },
+  {
+    "english": "inchworm",
+    "before": "jong··kang·ku",
+    "after": "jong·kang·ku"
+  },
+  {
+    "english": "inclined",
+    "before": "gong··a",
+    "after": "gong·a"
+  },
+  {
+    "english": "including",
+    "before": "ra··e",
+    "after": "ra·e"
+  },
+  {
+    "english": "incomplete",
+    "before": "tong··kan·di",
+    "after": "tong·kan·di"
+  },
+  {
+    "english": "increase",
+    "before": "bang··rik·rik·a",
+    "after": "bang·rik·rik·a"
+  },
+  {
+    "english": "individual's land",
+    "before": "ha··tot",
+    "after": "ha·tot"
+  },
+  {
+    "english": "inform",
+    "before": "a·gan·e ron··a",
+    "after": "a·gan·e ron·a"
+  },
+  {
+    "english": "inherit",
+    "before": "man··rik·a",
+    "after": "man·rik·a"
+  },
+  {
+    "english": "inject",
+    "before": "su··a",
+    "after": "su·a"
+  },
+  {
+    "english": "injure",
+    "before": "ja··sru·a",
+    "after": "ja·sru·a"
+  },
+  {
+    "english": "inquire",
+    "before": "sing··e ni·a",
+    "after": "sing·e ni·a"
+  },
+  {
+    "english": "insect",
+    "before": "jong··",
+    "after": "jong·"
+  },
+  {
+    "english": "insufficient",
+    "before": "bon··dik·a",
+    "after": "bon·dik·a"
+  },
+  {
+    "english": "interest, monetary",
+    "before": "pi··sa",
+    "after": "pi·sa"
+  },
+  {
+    "english": "interrupted",
+    "before": "rim··dang·a",
+    "after": "rim·dang·a"
+  },
+  {
+    "english": "jackal",
+    "before": "si··ol",
+    "after": "si·ol"
+  },
+  {
+    "english": "joke",
+    "before": "bo··bru·a",
+    "after": "bo·bru·a"
+  },
+  {
+    "english": "joke",
+    "before": "bu··rok·a",
+    "after": "bu·rok·a"
+  },
+  {
+    "english": "joyful",
+    "before": "han··seng·a",
+    "after": "han·seng·a"
+  },
+  {
+    "english": "keep",
+    "before": "ra··rik·a",
+    "after": "ra·rik·a"
+  },
+  {
+    "english": "kick",
+    "before": "ga··ting·dat·a",
+    "after": "ga·ting·dat·a"
+  },
+  {
+    "english": "kidney",
+    "before": "tin··sok",
+    "after": "tin·sok"
+  },
+  {
+    "english": "kill",
+    "before": "so··ot·a",
+    "after": "so·ot·a"
+  },
+  {
+    "english": "kiss",
+    "before": "ku··chot·a",
+    "after": "ku·chot·a"
+  },
+  {
+    "english": "kiss",
+    "before": "ku··dim·a",
+    "after": "ku·dim·a"
+  },
+  {
+    "english": "knee",
+    "before": "ja··sku",
+    "after": "ja·sku"
+  },
+  {
+    "english": "kneel",
+    "before": "ja··sku·ting·a",
+    "after": "ja·sku·ting·a"
+  },
+  {
+    "english": "land",
+    "before": "ha··",
+    "after": "ha·"
+  },
+  {
+    "english": "land",
+    "before": "ha··ga",
+    "after": "ha·ga"
+  },
+  {
+    "english": "land, of village",
+    "before": "ha··kin·te",
+    "after": "ha·kin·te"
+  },
+  {
+    "english": "large",
+    "before": "dal··a",
+    "after": "dal·a"
+  },
+  {
+    "english": "larva",
+    "before": "jong··men",
+    "after": "jong·men"
+  },
+  {
+    "english": "latrine",
+    "before": "ki··dik",
+    "after": "ki·dik"
+  },
+  {
+    "english": "lay eggs",
+    "before": "chi··a",
+    "after": "chi·a"
+  },
+  {
+    "english": "leak",
+    "before": "ga··ak·ro·rot·a",
+    "after": "ga·ak·ro·rot·a"
+  },
+  {
+    "english": "let go",
+    "before": "rim··sik·ok·a",
+    "after": "rim·sik·ok·a"
+  },
+  {
+    "english": "let property",
+    "before": "me·di ron··a",
+    "after": "me·di ron·a"
+  },
+  {
+    "english": "leukoderma",
+    "before": "ja··ka·bok",
+    "after": "ja·ka·bok"
+  },
+  {
+    "english": "lift",
+    "before": "de··a",
+    "after": "de·a"
+  },
+  {
+    "english": "lift",
+    "before": "de··gat·a",
+    "after": "de·gat·a"
+  },
+  {
+    "english": "lift",
+    "before": "de··tom·brot·a",
+    "after": "de·tom·brot·a"
+  },
+  {
+    "english": "light complexion",
+    "before": "han··git·chak",
+    "after": "han·git·chak"
+  },
+  {
+    "english": "light fire",
+    "before": "so··a",
+    "after": "so·a"
+  },
+  {
+    "english": "lime",
+    "before": "te··mat·chu",
+    "after": "te·mat·chu"
+  },
+  {
+    "english": "limp",
+    "before": "ja··ding·a",
+    "after": "ja·ding·a"
+  },
+  {
+    "english": "lineage",
+    "before": "ma··chong",
+    "after": "ma·chong"
+  },
+  {
+    "english": "lineage bond",
+    "before": "ha··kim",
+    "after": "ha·kim"
+  },
+  {
+    "english": "lip",
+    "before": "ku··chil",
+    "after": "ku·chil"
+  },
+  {
+    "english": "little finger",
+    "before": "jak·si·pi··sa",
+    "after": "jak·si·pi·sa"
+  },
+  {
+    "english": "load",
+    "before": "de··gat·a",
+    "after": "de·gat·a"
+  },
+  {
+    "english": "loan",
+    "before": "on··cheng·a",
+    "after": "on·cheng·a"
+  },
+  {
+    "english": "location",
+    "before": "ha··dam",
+    "after": "ha·dam"
+  },
+  {
+    "english": "location",
+    "before": "ha··dok",
+    "after": "ha·dok"
+  },
+  {
+    "english": "lonely",
+    "before": "ma··ring·a",
+    "after": "ma·ring·a"
+  },
+  {
+    "english": "long time",
+    "before": "ja··ro·a",
+    "after": "ja·ro·a"
+  },
+  {
+    "english": "long, of clothes",
+    "before": "ja··ro·a",
+    "after": "ja·ro·a"
+  },
+  {
+    "english": "look up to",
+    "before": "dal··nik·a",
+    "after": "dal·nik·a"
+  },
+  {
+    "english": "loose",
+    "before": "dil··dek·ga·dek",
+    "after": "dil·dek·ga·dek"
+  },
+  {
+    "english": "loose",
+    "before": "go··ok·a",
+    "after": "go·ok·a"
+  },
+  {
+    "english": "loosen",
+    "before": "go··ok·a",
+    "after": "go·ok·a"
+  },
+  {
+    "english": "loud",
+    "before": "ka··so·a",
+    "after": "ka·so·a"
+  },
+  {
+    "english": "low land",
+    "before": "ha··pal",
+    "after": "ha·pal"
+  },
+  {
+    "english": "lungs",
+    "before": "ka··sop",
+    "after": "ka·sop"
+  },
+  {
+    "english": "man (male)",
+    "before": "me··a",
+    "after": "me·a"
+  },
+  {
+    "english": "man (male)",
+    "before": "me··a·sa",
+    "after": "me·a·sa"
+  },
+  {
+    "english": "manage",
+    "before": "man··chak·a",
+    "after": "man·chak·a"
+  },
+  {
+    "english": "manioc",
+    "before": "ta··bol·chu",
+    "after": "ta·bol·chu"
+  },
+  {
+    "english": "many",
+    "before": "bang··a",
+    "after": "bang·a"
+  },
+  {
+    "english": "massage",
+    "before": "rim··rok·a",
+    "after": "rim·rok·a"
+  },
+  {
+    "english": "match",
+    "before": "wal··bi·ma",
+    "after": "wal·bi·ma"
+  },
+  {
+    "english": "match",
+    "before": "wal··tot",
+    "after": "wal·tot"
+  },
+  {
+    "english": "mature",
+    "before": "dil·ding bal··jak",
+    "after": "dil·ding bal·jak"
+  },
+  {
+    "english": "maturing",
+    "before": "bal··jak",
+    "after": "bal·jak"
+  },
+  {
+    "english": "menstruate",
+    "before": "ja re··a",
+    "after": "ja re·a"
+  },
+  {
+    "english": "messy hair",
+    "before": "bu··rang bu··jang",
+    "after": "bu·rang bu·jang"
+  },
+  {
+    "english": "messy hair",
+    "before": "bu··rin·eng bu··sin·eng",
+    "after": "bu·rin·eng bu·sin·eng"
+  },
+  {
+    "english": "miss",
+    "before": "ma··ring·a",
+    "after": "ma·ring·a"
+  },
+  {
+    "english": "mole",
+    "before": "si··son·ta",
+    "after": "si·son·ta"
+  },
+  {
+    "english": "more and more",
+    "before": "bang··rik·rik·a",
+    "after": "bang·rik·rik·a"
+  },
+  {
+    "english": "mortar",
+    "before": "cha··am",
+    "after": "cha·am"
+  },
+  {
+    "english": "mountain pass",
+    "before": "ha··sing·sep",
+    "after": "ha·sing·sep"
+  },
+  {
+    "english": "move",
+    "before": "de··jit·a",
+    "after": "de·jit·a"
+  },
+  {
+    "english": "much",
+    "before": "bang··a",
+    "after": "bang·a"
+  },
+  {
+    "english": "much",
+    "before": "bang··e",
+    "after": "bang·e"
+  },
+  {
+    "english": "mud",
+    "before": "ha··dip·ek",
+    "after": "ha·dip·ek"
+  },
+  {
+    "english": "mud",
+    "before": "ha··pek",
+    "after": "ha·pek"
+  },
+  {
+    "english": "mud",
+    "before": "ha··stap",
+    "after": "ha·stap"
+  },
+  {
+    "english": "nation",
+    "before": "ha··song",
+    "after": "ha·song"
+  },
+  {
+    "english": "native place",
+    "before": "ha··song",
+    "after": "ha·song"
+  },
+  {
+    "english": "nervous",
+    "before": "han··srik·han··srik",
+    "after": "han·srik·han·srik"
+  },
+  {
+    "english": "noise",
+    "before": "gam··a",
+    "after": "gam·a"
+  },
+  {
+    "english": "noise",
+    "before": "tim··tim·a",
+    "after": "tim·tim·a"
+  },
+  {
+    "english": "noisy",
+    "before": "gam··ru·ru·a",
+    "after": "gam·ru·ru·a"
+  },
+  {
+    "english": "noisy",
+    "before": "jang·a·tang··a",
+    "after": "jang·a·tang·a"
+  },
+  {
+    "english": "noisy",
+    "before": "ka··so·a",
+    "after": "ka·so·a"
+  },
+  {
+    "english": "not very good",
+    "before": "bang··e nam·ja",
+    "after": "bang·e nam·ja"
+  },
+  {
+    "english": "obey",
+    "before": "ra··chak·a",
+    "after": "ra·chak·a"
+  },
+  {
+    "english": "obstruct",
+    "before": "peng··a",
+    "after": "peng·a"
+  },
+  {
+    "english": "odor of body",
+    "before": "han··dil",
+    "after": "han·dil"
+  },
+  {
+    "english": "often",
+    "before": "da··an·da··an",
+    "after": "da·an·da·an"
+  },
+  {
+    "english": "often",
+    "before": "jem··jem·a",
+    "after": "jem·jem·a"
+  },
+  {
+    "english": "overcome",
+    "before": "man··chak·a",
+    "after": "man·chak·a"
+  },
+  {
+    "english": "overflow",
+    "before": "ga··ak·ro·rot·a",
+    "after": "ga·ak·ro·rot·a"
+  },
+  {
+    "english": "painful",
+    "before": "sa··dik·a",
+    "after": "sa·dik·a"
+  },
+  {
+    "english": "parents",
+    "before": "ma··a·pa·a",
+    "after": "ma·a·pa·a"
+  },
+  {
+    "english": "parents",
+    "before": "pa·gip·a·na··gip·a",
+    "after": "pa·gip·a·na·gip·a"
+  },
+  {
+    "english": "partial",
+    "before": "tong··kan·di",
+    "after": "tong·kan·di"
+  },
+  {
+    "english": "pass",
+    "before": "i··ang·chek·a",
+    "after": "i·ang·chek·a"
+  },
+  {
+    "english": "pass",
+    "before": "re··ping·grik·a",
+    "after": "re·ping·grik·a"
+  },
+  {
+    "english": "pass",
+    "before": "re··sek·a",
+    "after": "re·sek·a"
+  },
+  {
+    "english": "pass, mountain",
+    "before": "ha··sing·sep",
+    "after": "ha·sing·sep"
+  },
+  {
+    "english": "pay attention",
+    "before": "gi·sik ron··a",
+    "after": "gi·sik ron·a"
+  },
+  {
+    "english": "peaceful",
+    "before": "tom··tom·a",
+    "after": "tom·tom·a"
+  },
+  {
+    "english": "peak",
+    "before": "kim··bik",
+    "after": "kim·bik"
+  },
+  {
+    "english": "perch",
+    "before": "ba··a",
+    "after": "ba·a"
+  },
+  {
+    "english": "permitted to marry",
+    "before": "ke··a",
+    "after": "ke·a"
+  },
+  {
+    "english": "pet",
+    "before": "rim··rok·a",
+    "after": "rim·rok·a"
+  },
+  {
+    "english": "pieces",
+    "before": "tin··",
+    "after": "tin·"
+  },
+  {
+    "english": "pierce",
+    "before": "su··a",
+    "after": "su·a"
+  },
+  {
+    "english": "pile",
+    "before": "chong··a",
+    "after": "chong·a"
+  },
+  {
+    "english": "pile up",
+    "before": "tom··a",
+    "after": "tom·a"
+  },
+  {
+    "english": "pinch",
+    "before": "se··et·a",
+    "after": "se·et·a"
+  },
+  {
+    "english": "pity",
+    "before": "ka··sa·chak·a",
+    "after": "ka·sa·chak·a"
+  },
+  {
+    "english": "plant",
+    "before": "ge··a",
+    "after": "ge·a"
+  },
+  {
+    "english": "platform",
+    "before": "gan··sang",
+    "after": "gan·sang"
+  },
+  {
+    "english": "pledge",
+    "before": "ku··man·si·a",
+    "after": "ku·man·si·a"
+  },
+  {
+    "english": "pledge",
+    "before": "ku··mik·chet·a",
+    "after": "ku·mik·chet·a"
+  },
+  {
+    "english": "pledge",
+    "before": "ku··ra·chak·a",
+    "after": "ku·ra·chak·a"
+  },
+  {
+    "english": "plucked",
+    "before": "go··ok·a",
+    "after": "go·ok·a"
+  },
+  {
+    "english": "pointed",
+    "before": "chu··eng·a",
+    "after": "chu·eng·a"
+  },
+  {
+    "english": "pointed",
+    "before": "ku··chok·a",
+    "after": "ku·chok·a"
+  },
+  {
+    "english": "polish",
+    "before": "sol··srok·a",
+    "after": "sol·srok·a"
+  },
+  {
+    "english": "pots",
+    "before": "me··dik sam·dik",
+    "after": "me·dik sam·dik"
+  },
+  {
+    "english": "pots",
+    "before": "ti··",
+    "after": "ti·"
+  },
+  {
+    "english": "pound rice",
+    "before": "su··a",
+    "after": "su·a"
+  },
+  {
+    "english": "pray",
+    "before": "bi··am·a",
+    "after": "bi·am·a"
+  },
+  {
+    "english": "pray",
+    "before": "bi··ap·a",
+    "after": "bi·ap·a"
+  },
+  {
+    "english": "press",
+    "before": "pa··jret·a",
+    "after": "pa·jret·a"
+  },
+  {
+    "english": "prevent",
+    "before": "peng··a",
+    "after": "peng·a"
+  },
+  {
+    "english": "profit",
+    "before": "lap cha··a",
+    "after": "lap cha·a"
+  },
+  {
+    "english": "prohibit",
+    "before": "beng··a",
+    "after": "beng·a"
+  },
+  {
+    "english": "property",
+    "before": "ha··ba song·ba",
+    "after": "ha·ba song·ba"
+  },
+  {
+    "english": "property, individual",
+    "before": "a··tot",
+    "after": "a·tot"
+  },
+  {
+    "english": "protect",
+    "before": "peng··a",
+    "after": "peng·a"
+  },
+  {
+    "english": "protected",
+    "before": "bil··ting·a",
+    "after": "bil·ting·a"
+  },
+  {
+    "english": "pubic hair, female",
+    "before": "si··sim·ang",
+    "after": "si·sim·ang"
+  },
+  {
+    "english": "pull up",
+    "before": "tom··a",
+    "after": "tom·a"
+  },
+  {
+    "english": "put",
+    "before": "ron··a",
+    "after": "ron·a"
+  },
+  {
+    "english": "put on shoes",
+    "before": "ga··a",
+    "after": "ga·a"
+  },
+  {
+    "english": "put up with",
+    "before": "han··chak·a",
+    "after": "han·chak·a"
+  },
+  {
+    "english": "quick",
+    "before": "ta··rak·a",
+    "after": "ta·rak·a"
+  },
+  {
+    "english": "quickly",
+    "before": "bing··si·bing··si",
+    "after": "bing·si·bing·si"
+  },
+  {
+    "english": "quickly",
+    "before": "gong··rak·e",
+    "after": "gong·rak·e"
+  },
+  {
+    "english": "quietly",
+    "before": "ka··sin·chip·chip",
+    "after": "ka·sin·chip·chip"
+  },
+  {
+    "english": "raise",
+    "before": "de··a",
+    "after": "de·a"
+  },
+  {
+    "english": "rapidly",
+    "before": "gong··rak·a",
+    "after": "gong·rak·a"
+  },
+  {
+    "english": "real",
+    "before": "chong··mot",
+    "after": "chong·mot"
+  },
+  {
+    "english": "reborn",
+    "before": "at·chi·pil··a",
+    "after": "at·chi·pil·a"
+  },
+  {
+    "english": "receive",
+    "before": "ra··a",
+    "after": "ra·a"
+  },
+  {
+    "english": "receive",
+    "before": "ra··chak·a",
+    "after": "ra·chak·a"
+  },
+  {
+    "english": "receive",
+    "before": "rim··chak·a",
+    "after": "rim·chak·a"
+  },
+  {
+    "english": "recognize",
+    "before": "hai··rik·a",
+    "after": "hai·rik·a"
+  },
+  {
+    "english": "recover",
+    "before": "sel··a",
+    "after": "sel·a"
+  },
+  {
+    "english": "reform",
+    "before": "gi·sik·pil··a",
+    "after": "gi·sik·pil·a"
+  },
+  {
+    "english": "region",
+    "before": "ha··dok",
+    "after": "ha·dok"
+  },
+  {
+    "english": "regularly",
+    "before": "jem··jem·a",
+    "after": "jem·jem·a"
+  },
+  {
+    "english": "remove",
+    "before": "ro··on·a",
+    "after": "ro·on·a"
+  },
+  {
+    "english": "rent",
+    "before": "me·di ra··a",
+    "after": "me·di ra·a"
+  },
+  {
+    "english": "repeat",
+    "before": "pil··tai·a",
+    "after": "pil·tai·a"
+  },
+  {
+    "english": "repeatedly",
+    "before": "jem··jem·a",
+    "after": "jem·jem·a"
+  },
+  {
+    "english": "repeatedly go",
+    "before": "i··ang·jem··jem·a",
+    "after": "i·ang·jem·jem·a"
+  },
+  {
+    "english": "request",
+    "before": "bi··a",
+    "after": "bi·a"
+  },
+  {
+    "english": "request",
+    "before": "mol··mol·a",
+    "after": "mol·mol·a"
+  },
+  {
+    "english": "respect",
+    "before": "dal··nik·a",
+    "after": "dal·nik·a"
+  },
+  {
+    "english": "respond",
+    "before": "ku··chak·a",
+    "after": "ku·chak·a"
+  },
+  {
+    "english": "rest",
+    "before": "neng··tak·a",
+    "after": "neng·tak·a"
+  },
+  {
+    "english": "return",
+    "before": "i··ang·pil··a",
+    "after": "i·ang·pil·a"
+  },
+  {
+    "english": "return",
+    "before": "i··ba·pil··a",
+    "after": "i·ba·pil·a"
+  },
+  {
+    "english": "return",
+    "before": "pil··a",
+    "after": "pil·a"
+  },
+  {
+    "english": "reverse",
+    "before": "ham··pil·a",
+    "after": "ham·pil·a"
+  },
+  {
+    "english": "rice pot",
+    "before": "me··dik",
+    "after": "me·dik"
+  },
+  {
+    "english": "ridge",
+    "before": "kim··bik",
+    "after": "kim·bik"
+  },
+  {
+    "english": "right away",
+    "before": "teng··kap teng··kap",
+    "after": "teng·kap teng·kap"
+  },
+  {
+    "english": "roam",
+    "before": "re··am·a",
+    "after": "re·am·a"
+  },
+  {
+    "english": "rock",
+    "before": "rong··te",
+    "after": "rong·te"
+  },
+  {
+    "english": "roll up",
+    "before": "dol··a",
+    "after": "dol·a"
+  },
+  {
+    "english": "roll up",
+    "before": "tol··a",
+    "after": "tol·a"
+  },
+  {
+    "english": "root",
+    "before": "ja··dil",
+    "after": "ja·dil"
+  },
+  {
+    "english": "rotten",
+    "before": "bo··ol·a",
+    "after": "bo·ol·a"
+  },
+  {
+    "english": "round",
+    "before": "tam··bing·a",
+    "after": "tam·bing·a"
+  },
+  {
+    "english": "rub",
+    "before": "rim··rok·a",
+    "after": "rim·rok·a"
+  },
+  {
+    "english": "rumor",
+    "before": "ku··rit·chu·a",
+    "after": "ku·rit·chu·a"
+  },
+  {
+    "english": "run, nose",
+    "before": "ging·chi·mik·chi ong··kat·ing·a",
+    "after": "ging·chi·mik·chi ong·kat·ing·a"
+  },
+  {
+    "english": "saliva",
+    "before": "ku··chi",
+    "after": "ku·chi"
+  },
+  {
+    "english": "sandal",
+    "before": "ja··kop",
+    "after": "ja·kop"
+  },
+  {
+    "english": "scatter",
+    "before": "go·pri·pra··a",
+    "after": "go·pri·pra·a"
+  },
+  {
+    "english": "scold",
+    "before": "ka··cha·a",
+    "after": "ka·cha·a"
+  },
+  {
+    "english": "scorch",
+    "before": "so··sim·prak·a",
+    "after": "so·sim·prak·a"
+  },
+  {
+    "english": "scratch",
+    "before": "ku··ak·a",
+    "after": "ku·ak·a"
+  },
+  {
+    "english": "scrawny",
+    "before": "ran··chok·a",
+    "after": "ran·chok·a"
+  },
+  {
+    "english": "seep",
+    "before": "ong··mi·sep·a",
+    "after": "ong·mi·sep·a"
+  },
+  {
+    "english": "sexual relations",
+    "before": "ju··a",
+    "after": "ju·a"
+  },
+  {
+    "english": "shabby",
+    "before": "gol··ki",
+    "after": "gol·ki"
+  },
+  {
+    "english": "sharecrop",
+    "before": "ba·gi ron··a",
+    "after": "ba·gi ron·a"
+  },
+  {
+    "english": "sharpen",
+    "before": "hul··a",
+    "after": "hul·a"
+  },
+  {
+    "english": "sharpen",
+    "before": "wil··a",
+    "after": "wil·a"
+  },
+  {
+    "english": "shell",
+    "before": "a··kam·pi",
+    "after": "a·kam·pi"
+  },
+  {
+    "english": "shin",
+    "before": "ja··rik·ing",
+    "after": "ja·rik·ing"
+  },
+  {
+    "english": "shine",
+    "before": "ching··a",
+    "after": "ching·a"
+  },
+  {
+    "english": "shine",
+    "before": "jing··jang·a",
+    "after": "jing·jang·a"
+  },
+  {
+    "english": "shiny",
+    "before": "jil··jeng jil··jeng",
+    "after": "jil·jeng jil·jeng"
+  },
+  {
+    "english": "shiver",
+    "before": "han··sim·mo·a",
+    "after": "han·sim·mo·a"
+  },
+  {
+    "english": "shiver",
+    "before": "til··til··a",
+    "after": "til·til·a"
+  },
+  {
+    "english": "short cut",
+    "before": "i··tong·tang·a",
+    "after": "i·tong·tang·a"
+  },
+  {
+    "english": "short cut",
+    "before": "re··tong·tang·a",
+    "after": "re·tong·tang·a"
+  },
+  {
+    "english": "shorten",
+    "before": "on··dim·it·a",
+    "after": "on·dim·it·a"
+  },
+  {
+    "english": "shortened",
+    "before": "tong··kap·a",
+    "after": "tong·kap·a"
+  },
+  {
+    "english": "shout",
+    "before": "ku··rak·a",
+    "after": "ku·rak·a"
+  },
+  {
+    "english": "show off",
+    "before": "seng··nik·a",
+    "after": "seng·nik·a"
+  },
+  {
+    "english": "shrimp",
+    "before": "na··tik",
+    "after": "na·tik"
+  },
+  {
+    "english": "sieve",
+    "before": "gin··chi·ra",
+    "after": "gin·chi·ra"
+  },
+  {
+    "english": "sing",
+    "before": "ring··a",
+    "after": "ring·a"
+  },
+  {
+    "english": "singe",
+    "before": "so··a",
+    "after": "so·a"
+  },
+  {
+    "english": "sisters",
+    "before": "a·bi·sa ma··drang",
+    "after": "a·bi·sa ma·drang"
+  },
+  {
+    "english": "site",
+    "before": "ha··dam",
+    "after": "ha·dam"
+  },
+  {
+    "english": "skinny",
+    "before": "keng··krang·a",
+    "after": "keng·krang·a"
+  },
+  {
+    "english": "skirt",
+    "before": "re··king",
+    "after": "re·king"
+  },
+  {
+    "english": "slanting",
+    "before": "de··gang·git·a",
+    "after": "de·gang·git·a"
+  },
+  {
+    "english": "slash and burn",
+    "before": "ha··ba hu··a",
+    "after": "ha·ba hu·a"
+  },
+  {
+    "english": "slippery ground",
+    "before": "ha··rim·il·a",
+    "after": "ha·rim·il·a"
+  },
+  {
+    "english": "slope",
+    "before": "ha··chik",
+    "after": "ha·chik"
+  },
+  {
+    "english": "slope",
+    "before": "ra·ma a··sol·sol",
+    "after": "ra·ma a·sol·sol"
+  },
+  {
+    "english": "slope down",
+    "before": "ha··sol·sol",
+    "after": "ha·sol·sol"
+  },
+  {
+    "english": "slope up",
+    "before": "ha··ting·gak",
+    "after": "ha·ting·gak"
+  },
+  {
+    "english": "smacking",
+    "before": "ku··dim·a",
+    "after": "ku·dim·a"
+  },
+  {
+    "english": "smear on",
+    "before": "pa··a",
+    "after": "pa·a"
+  },
+  {
+    "english": "smoke",
+    "before": "wal··ku",
+    "after": "wal·ku"
+  },
+  {
+    "english": "smoke",
+    "before": "wal··ku·a",
+    "after": "wal·ku·a"
+  },
+  {
+    "english": "snare",
+    "before": "ja··gra",
+    "after": "ja·gra"
+  },
+  {
+    "english": "soak",
+    "before": "sim··a",
+    "after": "sim·a"
+  },
+  {
+    "english": "soil",
+    "before": "ha··",
+    "after": "ha·"
+  },
+  {
+    "english": "soil",
+    "before": "ha··mang",
+    "after": "ha·mang"
+  },
+  {
+    "english": "soiled",
+    "before": "ma··bak·a",
+    "after": "ma·bak·a"
+  },
+  {
+    "english": "sole of foot",
+    "before": "ja··pa",
+    "after": "ja·pa"
+  },
+  {
+    "english": "soot",
+    "before": "dim··ak",
+    "after": "dim·ak"
+  },
+  {
+    "english": "soothe",
+    "before": "rim··rok·a",
+    "after": "rim·rok·a"
+  },
+  {
+    "english": "sore",
+    "before": "hang··ki·sa·a",
+    "after": "hang·ki·sa·a"
+  },
+  {
+    "english": "spark",
+    "before": "wal··mi·si",
+    "after": "wal·mi·si"
+  },
+  {
+    "english": "speak incorrectly",
+    "before": "bo··a ra··a",
+    "after": "bo·a ra·a"
+  },
+  {
+    "english": "spear",
+    "before": "su··a",
+    "after": "su·a"
+  },
+  {
+    "english": "spit",
+    "before": "be··el·e gal·a",
+    "after": "be·el·e gal·a"
+  },
+  {
+    "english": "spit up",
+    "before": "el··bu·a",
+    "after": "el·bu·a"
+  },
+  {
+    "english": "split",
+    "before": "den··ku·rak·a",
+    "after": "den·ku·rak·a"
+  },
+  {
+    "english": "split bamboo",
+    "before": "wa··si",
+    "after": "wa·si"
+  },
+  {
+    "english": "split bamboo",
+    "before": "wa··si·ri",
+    "after": "wa·si·ri"
+  },
+  {
+    "english": "sprout",
+    "before": "chong··a",
+    "after": "chong·a"
+  },
+  {
+    "english": "squat",
+    "before": "dam··bak·a",
+    "after": "dam·bak·a"
+  },
+  {
+    "english": "squeeze",
+    "before": "rim··jret·a",
+    "after": "rim·jret·a"
+  },
+  {
+    "english": "squirm",
+    "before": "ga··git·ik·a",
+    "after": "ga·git·ik·a"
+  },
+  {
+    "english": "stab",
+    "before": "su··a",
+    "after": "su·a"
+  },
+  {
+    "english": "stairs",
+    "before": "jang··ki",
+    "after": "jang·ki"
+  },
+  {
+    "english": "stammer",
+    "before": "tu··ta·ban·ta",
+    "after": "tu·ta·ban·ta"
+  },
+  {
+    "english": "stamp",
+    "before": "ga··jep·a",
+    "after": "ga·jep·a"
+  },
+  {
+    "english": "steal",
+    "before": "chau··a",
+    "after": "chau·a"
+  },
+  {
+    "english": "stem",
+    "before": "ga··gong",
+    "after": "ga·gong"
+  },
+  {
+    "english": "step",
+    "before": "ga··a",
+    "after": "ga·a"
+  },
+  {
+    "english": "step",
+    "before": "ga··tim·ra",
+    "after": "ga·tim·ra"
+  },
+  {
+    "english": "step on",
+    "before": "ga··dap·a",
+    "after": "ga·dap·a"
+  },
+  {
+    "english": "steps",
+    "before": "ja··ti",
+    "after": "ja·ti"
+  },
+  {
+    "english": "steps",
+    "before": "teng··",
+    "after": "teng·"
+  },
+  {
+    "english": "stick",
+    "before": "gol··",
+    "after": "gol·"
+  },
+  {
+    "english": "sticky",
+    "before": "ma··skap·a",
+    "after": "ma·skap·a"
+  },
+  {
+    "english": "stirring stick",
+    "before": "me··gon",
+    "after": "me·gon"
+  },
+  {
+    "english": "stocky",
+    "before": "dam··bak·a",
+    "after": "dam·bak·a"
+  },
+  {
+    "english": "stool",
+    "before": "ham··pok",
+    "after": "ham·pok"
+  },
+  {
+    "english": "straight",
+    "before": "·tong··tang·",
+    "after": "·tong·tang·"
+  },
+  {
+    "english": "straight",
+    "before": "tong··tang",
+    "after": "tong·tang"
+  },
+  {
+    "english": "stretch",
+    "before": "han··sal·a",
+    "after": "han·sal·a"
+  },
+  {
+    "english": "stringy",
+    "before": "ro··ring·ro··ring",
+    "after": "ro·ring·ro·ring"
+  },
+  {
+    "english": "stroke",
+    "before": "rim··sret·a",
+    "after": "rim·sret·a"
+  },
+  {
+    "english": "stubble",
+    "before": "ga··git·tong",
+    "after": "ga·git·tong"
+  },
+  {
+    "english": "stumble",
+    "before": "ja··bing·bang·a",
+    "after": "ja·bing·bang·a"
+  },
+  {
+    "english": "stumble",
+    "before": "ja··gu·a",
+    "after": "ja·gu·a"
+  },
+  {
+    "english": "stutter",
+    "before": "ku··man·a",
+    "after": "ku·man·a"
+  },
+  {
+    "english": "stutter",
+    "before": "tu··ta·ban·ta",
+    "after": "tu·ta·ban·ta"
+  },
+  {
+    "english": "submerge",
+    "before": "sim··a",
+    "after": "sim·a"
+  },
+  {
+    "english": "succeed",
+    "before": "man··chak·a",
+    "after": "man·chak·a"
+  },
+  {
+    "english": "suckle",
+    "before": "cha··chot·chot·a",
+    "after": "cha·chot·chot·a"
+  },
+  {
+    "english": "sufficient",
+    "before": "chu··ong·a",
+    "after": "chu·ong·a"
+  },
+  {
+    "english": "sunlight",
+    "before": "sal ding··a",
+    "after": "sal ding·a"
+  },
+  {
+    "english": "support",
+    "before": "kang··a",
+    "after": "kang·a"
+  },
+  {
+    "english": "support",
+    "before": "sin··chak·a",
+    "after": "sin·chak·a"
+  },
+  {
+    "english": "swear",
+    "before": "ku··mik·chet·a",
+    "after": "ku·mik·chet·a"
+  },
+  {
+    "english": "sweep",
+    "before": "ham··pil·a",
+    "after": "ham·pil·a"
+  },
+  {
+    "english": "swell",
+    "before": "han··o chi du·a",
+    "after": "han·o chi du·a"
+  },
+  {
+    "english": "swell",
+    "before": "sa··al·a",
+    "after": "sa·al·a"
+  },
+  {
+    "english": "swirl",
+    "before": "ku··srip·a",
+    "after": "ku·srip·a"
+  },
+  {
+    "english": "sword",
+    "before": "mil··am",
+    "after": "mil·am"
+  },
+  {
+    "english": "sympathize",
+    "before": "gi·sik ong··chak·a",
+    "after": "gi·sik ong·chak·a"
+  },
+  {
+    "english": "sympathize",
+    "before": "ka··sa·chak·a",
+    "after": "ka·sa·chak·a"
+  },
+  {
+    "english": "take along",
+    "before": "ra··chap·a",
+    "after": "ra·chap·a"
+  },
+  {
+    "english": "take out",
+    "before": "rong··kat·a",
+    "after": "rong·kat·a"
+  },
+  {
+    "english": "taking account",
+    "before": "ra··e",
+    "after": "ra·e"
+  },
+  {
+    "english": "tassel",
+    "before": "ku··sim·ang",
+    "after": "ku·sim·ang"
+  },
+  {
+    "english": "taste bad",
+    "before": "cha··dik·a",
+    "after": "cha·dik·a"
+  },
+  {
+    "english": "tease",
+    "before": "bu··rok·a",
+    "after": "bu·rok·a"
+  },
+  {
+    "english": "tell",
+    "before": "a·gan·e ron··a",
+    "after": "a·gan·e ron·a"
+  },
+  {
+    "english": "tendons",
+    "before": "ja··dil",
+    "after": "ja·dil"
+  },
+  {
+    "english": "tendons",
+    "before": "ja··si·ja··dil",
+    "after": "ja·si·ja·dil"
+  },
+  {
+    "english": "thatch",
+    "before": "am··pang",
+    "after": "am·pang"
+  },
+  {
+    "english": "thatch",
+    "before": "ja··ku·a",
+    "after": "ja·ku·a"
+  },
+  {
+    "english": "thatching grass",
+    "before": "am··pang·man·di",
+    "after": "am·pang·man·di"
+  },
+  {
+    "english": "threaten",
+    "before": "ku··ching·a",
+    "after": "ku·ching·a"
+  },
+  {
+    "english": "tickled",
+    "before": "ka··kit·chu·a",
+    "after": "ka·kit·chu·a"
+  },
+  {
+    "english": "tie strips, bamboo",
+    "before": "du··a",
+    "after": "du·a"
+  },
+  {
+    "english": "tight",
+    "before": "je··et·je··et",
+    "after": "je·et·je·et"
+  },
+  {
+    "english": "tight",
+    "before": "je··et·je··et dak·ing·a",
+    "after": "je·et·je·et dak·ing·a"
+  },
+  {
+    "english": "tiny",
+    "before": "se··em·a",
+    "after": "se·em·a"
+  },
+  {
+    "english": "tiptoe",
+    "before": "ga··deng·si·a",
+    "after": "ga·deng·si·a"
+  },
+  {
+    "english": "tiptoe",
+    "before": "ja··chri·a",
+    "after": "ja·chri·a"
+  },
+  {
+    "english": "toe",
+    "before": "ja··si",
+    "after": "ja·si"
+  },
+  {
+    "english": "toenail",
+    "before": "ja··skil",
+    "after": "ja·skil"
+  },
+  {
+    "english": "together",
+    "before": "·pa··",
+    "after": "·pa·"
+  },
+  {
+    "english": "tongs",
+    "before": "dang··kep",
+    "after": "dang·kep"
+  },
+  {
+    "english": "toss",
+    "before": "de··bri·a",
+    "after": "de·bri·a"
+  },
+  {
+    "english": "touch",
+    "before": "rim··a",
+    "after": "rim·a"
+  },
+  {
+    "english": "touching",
+    "before": "cha··skap·a",
+    "after": "cha·skap·a"
+  },
+  {
+    "english": "tracks",
+    "before": "ja··gam",
+    "after": "ja·gam"
+  },
+  {
+    "english": "tramping",
+    "before": "ga··chep·chep·a",
+    "after": "ga·chep·chep·a"
+  },
+  {
+    "english": "transform",
+    "before": "pil··a",
+    "after": "pil·a"
+  },
+  {
+    "english": "transplant",
+    "before": "ja··rat·a",
+    "after": "ja·rat·a"
+  },
+  {
+    "english": "tremble",
+    "before": "dil··dil·a",
+    "after": "dil·dil·a"
+  },
+  {
+    "english": "try",
+    "before": "jo·ton ka··a",
+    "after": "jo·ton ka·a"
+  },
+  {
+    "english": "tube, bamboo",
+    "before": "wa··sing",
+    "after": "wa·sing"
+  },
+  {
+    "english": "tubers",
+    "before": "ta··a",
+    "after": "ta·a"
+  },
+  {
+    "english": "turn",
+    "before": "ham··pil·a",
+    "after": "ham·pil·a"
+  },
+  {
+    "english": "turn over",
+    "before": "pang·pil·tai··a",
+    "after": "pang·pil·tai·a"
+  },
+  {
+    "english": "ulcer",
+    "before": "hang··ki·sa·a",
+    "after": "hang·ki·sa·a"
+  },
+  {
+    "english": "uncombed",
+    "before": "bu··rin·eng bu··sin·eng",
+    "after": "bu·rin·eng bu·sin·eng"
+  },
+  {
+    "english": "understand",
+    "before": "hai··a",
+    "after": "hai·a"
+  },
+  {
+    "english": "unfinished",
+    "before": "tong··kan·di",
+    "after": "tong·kan·di"
+  },
+  {
+    "english": "unload",
+    "before": "ra··ron·a",
+    "after": "ra·ron·a"
+  },
+  {
+    "english": "unmarried woman",
+    "before": "me··tra",
+    "after": "me·tra"
+  },
+  {
+    "english": "uplands",
+    "before": "ha··rong·ga",
+    "after": "ha·rong·ga"
+  },
+  {
+    "english": "urge",
+    "before": "mong··a",
+    "after": "mong·a"
+  },
+  {
+    "english": "used up",
+    "before": "bon··a",
+    "after": "bon·a"
+  },
+  {
+    "english": "valley",
+    "before": "ha··kong",
+    "after": "ha·kong"
+  },
+  {
+    "english": "vein of leaf",
+    "before": "ga··gong",
+    "after": "ga·gong"
+  },
+  {
+    "english": "very",
+    "before": "bang··e",
+    "after": "bang·e"
+  },
+  {
+    "english": "voluntarily",
+    "before": "ha··sik·a·git·a",
+    "after": "ha·sik·a·git·a"
+  },
+  {
+    "english": "vomit",
+    "before": "el··bu·a",
+    "after": "el·bu·a"
+  },
+  {
+    "english": "wander",
+    "before": "re··am·a",
+    "after": "re·am·a"
+  },
+  {
+    "english": "want",
+    "before": "gong··a",
+    "after": "gong·a"
+  },
+  {
+    "english": "want",
+    "before": "ham··a",
+    "after": "ham·a"
+  },
+  {
+    "english": "warm",
+    "before": "ding··bru·ding··bru",
+    "after": "ding·bru·ding·bru"
+  },
+  {
+    "english": "warn",
+    "before": "ku··ron·a",
+    "after": "ku·ron·a"
+  },
+  {
+    "english": "wart",
+    "before": "si··son·ta",
+    "after": "si·son·ta"
+  },
+  {
+    "english": "wash feet",
+    "before": "ja··su·a",
+    "after": "ja·su·a"
+  },
+  {
+    "english": "wash things",
+    "before": "su··gal·a",
+    "after": "su·gal·a"
+  },
+  {
+    "english": "wear",
+    "before": "ga··a",
+    "after": "ga·a"
+  },
+  {
+    "english": "whisper",
+    "before": "ku··mi·si·a",
+    "after": "ku·mi·si·a"
+  },
+  {
+    "english": "white ants",
+    "before": "ha··kin",
+    "after": "ha·kin"
+  },
+  {
+    "english": "wish",
+    "before": "ha··sik·a",
+    "after": "ha·sik·a"
+  },
+  {
+    "english": "woman, unmarried",
+    "before": "me··tra",
+    "after": "me·tra"
+  },
+  {
+    "english": "woodshed",
+    "before": "ha··bol·nok",
+    "after": "ha·bol·nok"
+  },
+  {
+    "english": "world",
+    "before": "ha··gil·sak",
+    "after": "ha·gil·sak"
+  },
+  {
+    "english": "worm",
+    "before": "jong··",
+    "after": "jong·"
+  },
+  {
+    "english": "worm",
+    "before": "kan··chi·ri",
+    "after": "kan·chi·ri"
+  },
+  {
+    "english": "worn",
+    "before": "cham··a",
+    "after": "cham·a"
+  },
+  {
+    "english": "worried",
+    "before": "ting··ting·a",
+    "after": "ting·ting·a"
+  },
+  {
+    "english": "woven tightly",
+    "before": "bing··a",
+    "after": "bing·a"
+  },
+  {
+    "english": "wrap",
+    "before": "bil··a",
+    "after": "bil·a"
+  },
+  {
+    "english": "wrap",
+    "before": "cho··a",
+    "after": "cho·a"
+  },
+  {
+    "english": "wrapped",
+    "before": "bil··ting·a",
+    "after": "bil·ting·a"
+  },
+  {
+    "english": "young",
+    "before": "pi··sa",
+    "after": "pi·sa"
+  },
+  {
+    "english": "leg",
+    "before": "ja··",
+    "after": "ja·"
+  },
+  {
+    "english": "light weight",
+    "before": "cheng··a",
+    "after": "cheng·a"
+  },
+  {
+    "english": "push",
+    "before": "pa··jret·a",
+    "after": "pa·jret·a"
+  },
+  {
+    "english": "stir",
+    "before": "cho··bil·a",
+    "after": "cho·bil·a"
+  }
+]

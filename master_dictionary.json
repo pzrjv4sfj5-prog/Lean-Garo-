@@ -2091,7 +2091,7 @@
   },
   {
     "english": "fever",
-    "garo": "Sin··ding··a",
+    "garo": "Sin·ding·a",
     "category": "health"
   },
   {
@@ -15597,7 +15597,7 @@
   },
   {
     "english": "Afternoon",
-    "garo": "an··tam",
+    "garo": "an·tam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15613,7 +15613,7 @@
   },
   {
     "english": "Agree",
-    "garo": "ku··chak·a",
+    "garo": "ku·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15621,7 +15621,7 @@
   },
   {
     "english": "Agree",
-    "garo": "ku··ra·chak·a",
+    "garo": "ku·ra·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15685,7 +15685,7 @@
   },
   {
     "english": "Answer",
-    "garo": "ku··chak·a",
+    "garo": "ku·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15709,7 +15709,7 @@
   },
   {
     "english": "Apply",
-    "garo": "pa··a",
+    "garo": "pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15829,7 +15829,7 @@
   },
   {
     "english": "Bamboo",
-    "garo": "wa··",
+    "garo": "wa·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15837,7 +15837,7 @@
   },
   {
     "english": "Banana",
-    "garo": "te··rik",
+    "garo": "te·rik",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -15853,7 +15853,7 @@
   },
   {
     "english": "Bear",
-    "garo": "ba··a",
+    "garo": "ba·a",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -15925,7 +15925,7 @@
   },
   {
     "english": "Big",
-    "garo": "dal··a",
+    "garo": "dal·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15949,7 +15949,7 @@
   },
   {
     "english": "Bitter",
-    "garo": "ka··a",
+    "garo": "ka·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15981,7 +15981,7 @@
   },
   {
     "english": "Blood",
-    "garo": "han··chi",
+    "garo": "han·chi",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -16005,7 +16005,7 @@
   },
   {
     "english": "Boil",
-    "garo": "bi·rot·ma··mong",
+    "garo": "bi·rot·ma·mong",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16069,7 +16069,7 @@
   },
   {
     "english": "Brave",
-    "garo": "pa··a",
+    "garo": "pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16077,7 +16077,7 @@
   },
   {
     "english": "Brave",
-    "garo": "sang··chak·a",
+    "garo": "sang·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16125,7 +16125,7 @@
   },
   {
     "english": "Broom",
-    "garo": "sal··a",
+    "garo": "sal·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16229,7 +16229,7 @@
   },
   {
     "english": "Catch",
-    "garo": "ra··chak·a",
+    "garo": "ra·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16237,7 +16237,7 @@
   },
   {
     "english": "Catch",
-    "garo": "rim··a",
+    "garo": "rim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16245,7 +16245,7 @@
   },
   {
     "english": "Catch",
-    "garo": "rim··chak·a",
+    "garo": "rim·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16277,7 +16277,7 @@
   },
   {
     "english": "Chili",
-    "garo": "jal··ik",
+    "garo": "jal·ik",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -16285,7 +16285,7 @@
   },
   {
     "english": "Chop",
-    "garo": "den··a",
+    "garo": "den·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16333,7 +16333,7 @@
   },
   {
     "english": "Claw",
-    "garo": "ku··ak·a",
+    "garo": "ku·ak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16373,7 +16373,7 @@
   },
   {
     "english": "Clever",
-    "garo": "hai··man·a ku··man·a",
+    "garo": "hai·man·a ku·man·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16429,7 +16429,7 @@
   },
   {
     "english": "Cloth",
-    "garo": "ba··ra",
+    "garo": "ba·ra",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16445,7 +16445,7 @@
   },
   {
     "english": "Clothes",
-    "garo": "ba··ra",
+    "garo": "ba·ra",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16461,7 +16461,7 @@
   },
   {
     "english": "Cockroach",
-    "garo": "ka··ra·o",
+    "garo": "ka·ra·o",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16469,7 +16469,7 @@
   },
   {
     "english": "Cockroach",
-    "garo": "sel··uk",
+    "garo": "sel·uk",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16485,7 +16485,7 @@
   },
   {
     "english": "Comb",
-    "garo": "ken··a",
+    "garo": "ken·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16501,7 +16501,7 @@
   },
   {
     "english": "Come",
-    "garo": "i··a",
+    "garo": "i·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16509,7 +16509,7 @@
   },
   {
     "english": "Come",
-    "garo": "re··a",
+    "garo": "re·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16517,7 +16517,7 @@
   },
   {
     "english": "Come",
-    "garo": "re··ba·a",
+    "garo": "re·ba·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16549,7 +16549,7 @@
   },
   {
     "english": "Cook",
-    "garo": "song··a",
+    "garo": "song·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -16573,7 +16573,7 @@
   },
   {
     "english": "Cow",
-    "garo": "ma··su",
+    "garo": "ma·su",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -16581,7 +16581,7 @@
   },
   {
     "english": "Crab",
-    "garo": "hang··ki",
+    "garo": "hang·ki",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -16733,7 +16733,7 @@
   },
   {
     "english": "Deep",
-    "garo": "ting··a",
+    "garo": "ting·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16765,7 +16765,7 @@
   },
   {
     "english": "Dirty",
-    "garo": "ma··bak·a",
+    "garo": "ma·bak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16901,7 +16901,7 @@
   },
   {
     "english": "Dry",
-    "garo": "ran··a",
+    "garo": "ran·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -16981,7 +16981,7 @@
   },
   {
     "english": "Eat",
-    "garo": "cha··a",
+    "garo": "cha·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -17069,7 +17069,7 @@
   },
   {
     "english": "Enough",
-    "garo": "chu··ong·a",
+    "garo": "chu·ong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17093,7 +17093,7 @@
   },
   {
     "english": "Evening",
-    "garo": "an··tam",
+    "garo": "an·tam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17125,7 +17125,7 @@
   },
   {
     "english": "Far",
-    "garo": "chel··a",
+    "garo": "chel·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -17141,7 +17141,7 @@
   },
   {
     "english": "Fast",
-    "garo": "bing··si·bing··si",
+    "garo": "bing·si·bing·si",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17189,7 +17189,7 @@
   },
   {
     "english": "Fever",
-    "garo": "ding··du·a",
+    "garo": "ding·du·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -17197,7 +17197,7 @@
   },
   {
     "english": "Fever",
-    "garo": "han··ding·a",
+    "garo": "han·ding·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -17245,7 +17245,7 @@
   },
   {
     "english": "Fire",
-    "garo": "wal··",
+    "garo": "wal·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17253,7 +17253,7 @@
   },
   {
     "english": "Firewood",
-    "garo": "ha··bol",
+    "garo": "ha·bol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17261,7 +17261,7 @@
   },
   {
     "english": "Fish",
-    "garo": "na··tok",
+    "garo": "na·tok",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -17309,7 +17309,7 @@
   },
   {
     "english": "Fly",
-    "garo": "til··a",
+    "garo": "til·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17365,7 +17365,7 @@
   },
   {
     "english": "Front",
-    "garo": "ka··bak",
+    "garo": "ka·bak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17389,7 +17389,7 @@
   },
   {
     "english": "Fry",
-    "garo": "jo··a",
+    "garo": "jo·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17429,7 +17429,7 @@
   },
   {
     "english": "Ghost",
-    "garo": "me··mang",
+    "garo": "me·mang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17437,7 +17437,7 @@
   },
   {
     "english": "Ginger",
-    "garo": "e··ching",
+    "garo": "e·ching",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -17453,7 +17453,7 @@
   },
   {
     "english": "Give",
-    "garo": "ron··a",
+    "garo": "ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17469,7 +17469,7 @@
   },
   {
     "english": "Go",
-    "garo": "i··a",
+    "garo": "i·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17477,7 +17477,7 @@
   },
   {
     "english": "Go",
-    "garo": "i··ang·a",
+    "garo": "i·ang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17485,7 +17485,7 @@
   },
   {
     "english": "Go",
-    "garo": "re··a",
+    "garo": "re·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17629,7 +17629,7 @@
   },
   {
     "english": "Grind",
-    "garo": "pe··a",
+    "garo": "pe·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17645,7 +17645,7 @@
   },
   {
     "english": "Half",
-    "garo": "bon··jang·chi·a",
+    "garo": "bon·jang·chi·a",
     "pos": null,
     "category": "numbers",
     "classifier": null,
@@ -17701,7 +17701,7 @@
   },
   {
     "english": "Healthy",
-    "garo": "han cheng··a",
+    "garo": "han cheng·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -17709,7 +17709,7 @@
   },
   {
     "english": "Healthy",
-    "garo": "han··sel·a",
+    "garo": "han·sel·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -17725,7 +17725,7 @@
   },
   {
     "english": "Heart",
-    "garo": "ka··rong·ti",
+    "garo": "ka·rong·ti",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17733,7 +17733,7 @@
   },
   {
     "english": "Heart",
-    "garo": "ka··tong",
+    "garo": "ka·tong",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17789,7 +17789,7 @@
   },
   {
     "english": "Hope",
-    "garo": "ka··dong·a",
+    "garo": "ka·dong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17869,7 +17869,7 @@
   },
   {
     "english": "Itch",
-    "garo": "ka··kit·a",
+    "garo": "ka·kit·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17885,7 +17885,7 @@
   },
   {
     "english": "Jackfruit",
-    "garo": "te··brong",
+    "garo": "te·brong",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17981,7 +17981,7 @@
   },
   {
     "english": "Know",
-    "garo": "hai··a",
+    "garo": "hai·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17997,7 +17997,7 @@
   },
   {
     "english": "Ladder",
-    "garo": "jang··ki",
+    "garo": "jang·ki",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18125,7 +18125,7 @@
   },
   {
     "english": "Leg",
-    "garo": "ja··chok",
+    "garo": "ja·chok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18133,7 +18133,7 @@
   },
   {
     "english": "Leg",
-    "garo": "ja··git·teng",
+    "garo": "ja·git·teng",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18141,7 +18141,7 @@
   },
   {
     "english": "Leg",
-    "garo": "ja··teng",
+    "garo": "ja·teng",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18165,7 +18165,7 @@
   },
   {
     "english": "Lie",
-    "garo": "bo··a ra··a",
+    "garo": "bo·a ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18197,7 +18197,7 @@
   },
   {
     "english": "Light (weight)",
-    "garo": "cheng··a",
+    "garo": "cheng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18261,7 +18261,7 @@
   },
   {
     "english": "Long",
-    "garo": "ro··a",
+    "garo": "ro·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18269,7 +18269,7 @@
   },
   {
     "english": "Long",
-    "garo": "ro··rek·a",
+    "garo": "ro·rek·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18277,7 +18277,7 @@
   },
   {
     "english": "Love",
-    "garo": "ka··sa·a",
+    "garo": "ka·sa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18301,7 +18301,7 @@
   },
   {
     "english": "Mango",
-    "garo": "te··ga·chu",
+    "garo": "te·ga·chu",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -18309,7 +18309,7 @@
   },
   {
     "english": "Market",
-    "garo": "ha··ti",
+    "garo": "ha·ti",
     "pos": null,
     "category": "business",
     "classifier": null,
@@ -18317,7 +18317,7 @@
   },
   {
     "english": "Meat",
-    "garo": "be··en",
+    "garo": "be·en",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -18453,7 +18453,7 @@
   },
   {
     "english": "Mother",
-    "garo": "ma··gip·a",
+    "garo": "ma·gip·a",
     "pos": null,
     "category": "family",
     "classifier": null,
@@ -18461,7 +18461,7 @@
   },
   {
     "english": "Mother",
-    "garo": "na··gi·pa",
+    "garo": "na·gi·pa",
     "pos": null,
     "category": "family",
     "classifier": null,
@@ -18469,7 +18469,7 @@
   },
   {
     "english": "Mountain",
-    "garo": "ha··bri",
+    "garo": "ha·bri",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -18477,7 +18477,7 @@
   },
   {
     "english": "Mountain",
-    "garo": "ha··chik",
+    "garo": "ha·chik",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -18517,7 +18517,7 @@
   },
   {
     "english": "Narrow",
-    "garo": "jang··jot·a",
+    "garo": "jang·jot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18781,7 +18781,7 @@
   },
   {
     "english": "Outside",
-    "garo": "ha··gat·e",
+    "garo": "ha·gat·e",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -18965,7 +18965,7 @@
   },
   {
     "english": "Play",
-    "garo": "kal··a",
+    "garo": "kal·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19165,7 +19165,7 @@
   },
   {
     "english": "Promise",
-    "garo": "ku··chak·a",
+    "garo": "ku·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19173,7 +19173,7 @@
   },
   {
     "english": "Promise",
-    "garo": "ku··mik·chet·a",
+    "garo": "ku·mik·chet·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19181,7 +19181,7 @@
   },
   {
     "english": "Promise",
-    "garo": "ku··wat·a",
+    "garo": "ku·wat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19237,7 +19237,7 @@
   },
   {
     "english": "Question",
-    "garo": "sing··a",
+    "garo": "sing·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19253,7 +19253,7 @@
   },
   {
     "english": "Quiet",
-    "garo": "ka··sin·a",
+    "garo": "ka·sin·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19357,7 +19357,7 @@
   },
   {
     "english": "Remember",
-    "garo": "gi·sik ra··a",
+    "garo": "gi·sik ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19437,7 +19437,7 @@
   },
   {
     "english": "Roll",
-    "garo": "bil··a",
+    "garo": "bil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19525,7 +19525,7 @@
   },
   {
     "english": "Sand",
-    "garo": "han··cheng",
+    "garo": "han·cheng",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19621,7 +19621,7 @@
   },
   {
     "english": "Sharp",
-    "garo": "sim··pram·a",
+    "garo": "sim·pram·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19749,7 +19749,7 @@
   },
   {
     "english": "Skin",
-    "garo": "sol··a",
+    "garo": "sol·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -19781,7 +19781,7 @@
   },
   {
     "english": "Sleepy",
-    "garo": "mik·gil jom··a",
+    "garo": "mik·gil jom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19797,7 +19797,7 @@
   },
   {
     "english": "Slow",
-    "garo": "ka··sin·a",
+    "garo": "ka·sin·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19805,7 +19805,7 @@
   },
   {
     "english": "Small",
-    "garo": "chong··top·a",
+    "garo": "chong·top·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19845,7 +19845,7 @@
   },
   {
     "english": "Smile",
-    "garo": "ka··ding·a",
+    "garo": "ka·ding·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19853,7 +19853,7 @@
   },
   {
     "english": "Smile",
-    "garo": "ka··ding·sim·ik·a",
+    "garo": "ka·ding·sim·ik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19925,7 +19925,7 @@
   },
   {
     "english": "Soft",
-    "garo": "dil··dok·dil··dok",
+    "garo": "dil·dok·dil·dok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19973,7 +19973,7 @@
   },
   {
     "english": "Sound",
-    "garo": "gam··a",
+    "garo": "gam·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19981,7 +19981,7 @@
   },
   {
     "english": "Sound",
-    "garo": "gam··pret·a",
+    "garo": "gam·pret·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20117,7 +20117,7 @@
   },
   {
     "english": "Stir",
-    "garo": "gon··gon·a",
+    "garo": "gon·gon·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20141,7 +20141,7 @@
   },
   {
     "english": "Stone",
-    "garo": "rong··te",
+    "garo": "rong·te",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20229,7 +20229,7 @@
   },
   {
     "english": "Sweet",
-    "garo": "chi··a",
+    "garo": "chi·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20237,7 +20237,7 @@
   },
   {
     "english": "Sweet Potato",
-    "garo": "ta··mil·ang",
+    "garo": "ta·mil·ang",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -20277,7 +20277,7 @@
   },
   {
     "english": "Tail",
-    "garo": "ki··me",
+    "garo": "ki·me",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20285,7 +20285,7 @@
   },
   {
     "english": "Take",
-    "garo": "ra··a",
+    "garo": "ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20293,7 +20293,7 @@
   },
   {
     "english": "Take",
-    "garo": "ra··ang·a",
+    "garo": "ra·ang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20341,7 +20341,7 @@
   },
   {
     "english": "Taste",
-    "garo": "cha··e ni·a",
+    "garo": "cha·e ni·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -20437,7 +20437,7 @@
   },
   {
     "english": "Thin",
-    "garo": "ba··a",
+    "garo": "ba·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20461,7 +20461,7 @@
   },
   {
     "english": "Thirsty",
-    "garo": "ran··a",
+    "garo": "ran·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -20517,7 +20517,7 @@
   },
   {
     "english": "Thunder",
-    "garo": "gul··gul·a",
+    "garo": "gul·gul·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20525,7 +20525,7 @@
   },
   {
     "english": "Thunder",
-    "garo": "hil··hil·a",
+    "garo": "hil·hil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20581,7 +20581,7 @@
   },
   {
     "english": "Tired",
-    "garo": "neng··a",
+    "garo": "neng·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -20741,7 +20741,7 @@
   },
   {
     "english": "Voice",
-    "garo": "ku··ra·ma",
+    "garo": "ku·ra·ma",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20749,7 +20749,7 @@
   },
   {
     "english": "Voice",
-    "garo": "ku··rang",
+    "garo": "ku·rang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20757,7 +20757,7 @@
   },
   {
     "english": "Walk",
-    "garo": "re··am·a",
+    "garo": "re·am·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20797,7 +20797,7 @@
   },
   {
     "english": "Wet",
-    "garo": "ma··jim·a",
+    "garo": "ma·jim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20853,7 +20853,7 @@
   },
   {
     "english": "Whistle",
-    "garo": "ku··sim·ok·a",
+    "garo": "ku·sim·ok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20869,7 +20869,7 @@
   },
   {
     "english": "Whistle",
-    "garo": "su·i ron··a",
+    "garo": "su·i ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20941,7 +20941,7 @@
   },
   {
     "english": "Win",
-    "garo": "man··chak·a",
+    "garo": "man·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20997,7 +20997,7 @@
   },
   {
     "english": "Woman",
-    "garo": "me··chik",
+    "garo": "me·chik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21013,7 +21013,7 @@
   },
   {
     "english": "Work",
-    "garo": "ka··a",
+    "garo": "ka·a",
     "pos": null,
     "category": "business",
     "classifier": null,
@@ -21117,7 +21117,7 @@
   },
   {
     "english": "abbreviated",
-    "garo": "tong··kap·a",
+    "garo": "tong·kap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21133,7 +21133,7 @@
   },
   {
     "english": "abbreviated",
-    "garo": "tong··tang·ga·tang",
+    "garo": "tong·tang·ga·tang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21149,7 +21149,7 @@
   },
   {
     "english": "able",
-    "garo": "man··a",
+    "garo": "man·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21165,7 +21165,7 @@
   },
   {
     "english": "about to",
-    "garo": "ham··a",
+    "garo": "ham·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21173,7 +21173,7 @@
   },
   {
     "english": "accept",
-    "garo": "ra··chak·a",
+    "garo": "ra·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21181,7 +21181,7 @@
   },
   {
     "english": "accompany",
-    "garo": "i··ang·pa··a",
+    "garo": "i·ang·pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21189,7 +21189,7 @@
   },
   {
     "english": "accomplish",
-    "garo": "chu··sok·a",
+    "garo": "chu·sok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21213,7 +21213,7 @@
   },
   {
     "english": "ache",
-    "garo": "sa··dik·a",
+    "garo": "sa·dik·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -21237,7 +21237,7 @@
   },
   {
     "english": "actual",
-    "garo": "chong··mot",
+    "garo": "chong·mot",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21293,7 +21293,7 @@
   },
   {
     "english": "adolescent",
-    "garo": "dil·ding bal··jak",
+    "garo": "dil·ding bal·jak",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -21301,7 +21301,7 @@
   },
   {
     "english": "adolescent",
-    "garo": "me··tra",
+    "garo": "me·tra",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -21325,7 +21325,7 @@
   },
   {
     "english": "adopt",
-    "garo": "ra··gat·a",
+    "garo": "ra·gat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21341,7 +21341,7 @@
   },
   {
     "english": "advice",
-    "garo": "ku··chi kan·a",
+    "garo": "ku·chi kan·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21357,7 +21357,7 @@
   },
   {
     "english": "afraid",
-    "garo": "han··srik·han··srik",
+    "garo": "han·srik·han·srik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21389,7 +21389,7 @@
   },
   {
     "english": "again",
-    "garo": "da··o·ba",
+    "garo": "da·o·ba",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21397,7 +21397,7 @@
   },
   {
     "english": "again",
-    "garo": "pil··a",
+    "garo": "pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21509,7 +21509,7 @@
   },
   {
     "english": "almost",
-    "garo": "ham··a",
+    "garo": "ham·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21597,7 +21597,7 @@
   },
   {
     "english": "angry",
-    "garo": "hel··hel",
+    "garo": "hel·hel",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21605,7 +21605,7 @@
   },
   {
     "english": "angry",
-    "garo": "ka··o·nang·a",
+    "garo": "ka·o·nang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21645,7 +21645,7 @@
   },
   {
     "english": "ankle",
-    "garo": "ja··git·ok",
+    "garo": "ja·git·ok",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -21653,7 +21653,7 @@
   },
   {
     "english": "ankle bells",
-    "garo": "ja··srang",
+    "garo": "ja·srang",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -21693,7 +21693,7 @@
   },
   {
     "english": "annoyed",
-    "garo": "man··dik·a",
+    "garo": "man·dik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21725,7 +21725,7 @@
   },
   {
     "english": "anthill",
-    "garo": "ha··pru",
+    "garo": "ha·pru",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21733,7 +21733,7 @@
   },
   {
     "english": "anticipate",
-    "garo": "hai··chak·a",
+    "garo": "hai·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21741,7 +21741,7 @@
   },
   {
     "english": "anus",
-    "garo": "ki··sam·bu",
+    "garo": "ki·sam·bu",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21749,7 +21749,7 @@
   },
   {
     "english": "anxious",
-    "garo": "ting··ting·a",
+    "garo": "ting·ting·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21789,7 +21789,7 @@
   },
   {
     "english": "appear",
-    "garo": "ong··kat·a",
+    "garo": "ong·kat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21805,7 +21805,7 @@
   },
   {
     "english": "apportion",
-    "garo": "ma··at·a",
+    "garo": "ma·at·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21821,7 +21821,7 @@
   },
   {
     "english": "appropriate",
-    "garo": "ke··a",
+    "garo": "ke·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21845,7 +21845,7 @@
   },
   {
     "english": "area",
-    "garo": "ha··dok",
+    "garo": "ha·dok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21901,7 +21901,7 @@
   },
   {
     "english": "arrow",
-    "garo": "gol··chok",
+    "garo": "gol·chok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21909,7 +21909,7 @@
   },
   {
     "english": "arum",
-    "garo": "ta··ring",
+    "garo": "ta·ring",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21925,7 +21925,7 @@
   },
   {
     "english": "ashes",
-    "garo": "ha··dip·u",
+    "garo": "ha·dip·u",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21933,7 +21933,7 @@
   },
   {
     "english": "ask question",
-    "garo": "sing··a",
+    "garo": "sing·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21941,7 +21941,7 @@
   },
   {
     "english": "ask, request",
-    "garo": "bi··a",
+    "garo": "bi·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21957,7 +21957,7 @@
   },
   {
     "english": "athlete's foot",
-    "garo": "ja··si git·ok chot·a",
+    "garo": "ja·si git·ok chot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21973,7 +21973,7 @@
   },
   {
     "english": "attach",
-    "garo": "pa··a",
+    "garo": "pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22005,7 +22005,7 @@
   },
   {
     "english": "attention",
-    "garo": "gi·sik ron··a",
+    "garo": "gi·sik ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22021,7 +22021,7 @@
   },
   {
     "english": "attract",
-    "garo": "mong··a",
+    "garo": "mong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22045,7 +22045,7 @@
   },
   {
     "english": "aunt (MoOlSi)",
-    "garo": "ma··jong",
+    "garo": "ma·jong",
     "pos": null,
     "category": "family",
     "classifier": null,
@@ -22053,7 +22053,7 @@
   },
   {
     "english": "aunt (MoYoSi)",
-    "garo": "ma··de",
+    "garo": "ma·de",
     "pos": null,
     "category": "family",
     "classifier": null,
@@ -22125,7 +22125,7 @@
   },
   {
     "english": "baby napkin",
-    "garo": "ki··tap",
+    "garo": "ki·tap",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22173,7 +22173,7 @@
   },
   {
     "english": "backwards",
-    "garo": "ki··sang·cha·na",
+    "garo": "ki·sang·cha·na",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22189,7 +22189,7 @@
   },
   {
     "english": "bait",
-    "garo": "du··a",
+    "garo": "du·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22221,7 +22221,7 @@
   },
   {
     "english": "banana bud",
-    "garo": "te··rik so·bak",
+    "garo": "te·rik so·bak",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -22237,7 +22237,7 @@
   },
   {
     "english": "banana leaf",
-    "garo": "he··sal",
+    "garo": "he·sal",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -22349,7 +22349,7 @@
   },
   {
     "english": "base of mountain",
-    "garo": "ja··pang",
+    "garo": "ja·pang",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -22421,7 +22421,7 @@
   },
   {
     "english": "beans",
-    "garo": "bil··ik",
+    "garo": "bil·ik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22429,7 +22429,7 @@
   },
   {
     "english": "beans",
-    "garo": "ka··rek",
+    "garo": "ka·rek",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22445,7 +22445,7 @@
   },
   {
     "english": "beard",
-    "garo": "ku··sim·ang",
+    "garo": "ku·sim·ang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22517,7 +22517,7 @@
   },
   {
     "english": "beetle",
-    "garo": "ki··bit·bit",
+    "garo": "ki·bit·bit",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22541,7 +22541,7 @@
   },
   {
     "english": "beggars",
-    "garo": "gil·i·geng·i cha··gip·a",
+    "garo": "gil·i·geng·i cha·gip·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22549,7 +22549,7 @@
   },
   {
     "english": "begin",
-    "garo": "a··ba·cheng·a",
+    "garo": "a·ba·cheng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22573,7 +22573,7 @@
   },
   {
     "english": "belch",
-    "garo": "rang··ra·a",
+    "garo": "rang·ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22581,7 +22581,7 @@
   },
   {
     "english": "believe",
-    "garo": "be·be ra··a",
+    "garo": "be·be ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22653,7 +22653,7 @@
   },
   {
     "english": "bend",
-    "garo": "be··gop·a",
+    "garo": "be·gop·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22693,7 +22693,7 @@
   },
   {
     "english": "bent",
-    "garo": "kong··krot·a",
+    "garo": "kong·krot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22701,7 +22701,7 @@
   },
   {
     "english": "beseech",
-    "garo": "mol··mol·a",
+    "garo": "mol·mol·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22749,7 +22749,7 @@
   },
   {
     "english": "birth",
-    "garo": "ba··a",
+    "garo": "ba·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -22837,7 +22837,7 @@
   },
   {
     "english": "bladder",
-    "garo": "si··chu",
+    "garo": "si·chu",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22949,7 +22949,7 @@
   },
   {
     "english": "block",
-    "garo": "beng··a",
+    "garo": "beng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22957,7 +22957,7 @@
   },
   {
     "english": "block",
-    "garo": "peng··a",
+    "garo": "peng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23077,7 +23077,7 @@
   },
   {
     "english": "boastful",
-    "garo": "dal··a·sot·sot",
+    "garo": "dal·a·sot·sot",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23093,7 +23093,7 @@
   },
   {
     "english": "body",
-    "garo": "be··en",
+    "garo": "be·en",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -23109,7 +23109,7 @@
   },
   {
     "english": "body",
-    "garo": "han··",
+    "garo": "han·",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -23141,7 +23141,7 @@
   },
   {
     "english": "bore hole",
-    "garo": "re··el·a",
+    "garo": "re·el·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23173,7 +23173,7 @@
   },
   {
     "english": "borrow",
-    "garo": "ra··a",
+    "garo": "ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23197,7 +23197,7 @@
   },
   {
     "english": "bothered",
-    "garo": "man··dik·a",
+    "garo": "man·dik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23341,7 +23341,7 @@
   },
   {
     "english": "brand",
-    "garo": "wal··jem",
+    "garo": "wal·jem",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23357,7 +23357,7 @@
   },
   {
     "english": "break",
-    "garo": "be··a",
+    "garo": "be·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23365,7 +23365,7 @@
   },
   {
     "english": "break",
-    "garo": "be··tong·a",
+    "garo": "be·tong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23381,7 +23381,7 @@
   },
   {
     "english": "break",
-    "garo": "pe··a",
+    "garo": "pe·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23429,7 +23429,7 @@
   },
   {
     "english": "breathe",
-    "garo": "rang··sip·it·a",
+    "garo": "rang·sip·it·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -23437,7 +23437,7 @@
   },
   {
     "english": "breathe deeply",
-    "garo": "rang··du·a",
+    "garo": "rang·du·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -23461,7 +23461,7 @@
   },
   {
     "english": "brew",
-    "garo": "song··a",
+    "garo": "song·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23477,7 +23477,7 @@
   },
   {
     "english": "brick",
-    "garo": "ha··san",
+    "garo": "ha·san",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23501,7 +23501,7 @@
   },
   {
     "english": "briefly",
-    "garo": "teng··kap teng··kap",
+    "garo": "teng·kap teng·kap",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23517,7 +23517,7 @@
   },
   {
     "english": "brilliant",
-    "garo": "seng··a",
+    "garo": "seng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23525,7 +23525,7 @@
   },
   {
     "english": "bring",
-    "garo": "ra··a",
+    "garo": "ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23533,7 +23533,7 @@
   },
   {
     "english": "bring",
-    "garo": "ra··ba·a",
+    "garo": "ra·ba·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23581,7 +23581,7 @@
   },
   {
     "english": "broken",
-    "garo": "gong··gak·a",
+    "garo": "gong·gak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23589,7 +23589,7 @@
   },
   {
     "english": "broken off",
-    "garo": "be··tong·a",
+    "garo": "be·tong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23669,7 +23669,7 @@
   },
   {
     "english": "brush",
-    "garo": "ken··a",
+    "garo": "ken·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23685,7 +23685,7 @@
   },
   {
     "english": "bubbles",
-    "garo": "ku··chi",
+    "garo": "ku·chi",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23709,7 +23709,7 @@
   },
   {
     "english": "bug",
-    "garo": "jong··",
+    "garo": "jong·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23725,7 +23725,7 @@
   },
   {
     "english": "build",
-    "garo": "dim··a",
+    "garo": "dim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23757,7 +23757,7 @@
   },
   {
     "english": "build nest",
-    "garo": "sa··a",
+    "garo": "sa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23837,7 +23837,7 @@
   },
   {
     "english": "burn",
-    "garo": "so··a",
+    "garo": "so·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23853,7 +23853,7 @@
   },
   {
     "english": "burning",
-    "garo": "ding··il·a ding··cha·a",
+    "garo": "ding·il·a ding·cha·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23941,7 +23941,7 @@
   },
   {
     "english": "bury",
-    "garo": "ha··dap·a",
+    "garo": "ha·dap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23981,7 +23981,7 @@
   },
   {
     "english": "buttocks",
-    "garo": "ki··sang",
+    "garo": "ki·sang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24013,7 +24013,7 @@
   },
   {
     "english": "cactus",
-    "garo": "si··chu",
+    "garo": "si·chu",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24037,7 +24037,7 @@
   },
   {
     "english": "calf",
-    "garo": "ma··su gen·da",
+    "garo": "ma·su gen·da",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -24069,7 +24069,7 @@
   },
   {
     "english": "call",
-    "garo": "pe··a",
+    "garo": "pe·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24085,7 +24085,7 @@
   },
   {
     "english": "calm",
-    "garo": "ka··sin·a",
+    "garo": "ka·sin·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24093,7 +24093,7 @@
   },
   {
     "english": "calm",
-    "garo": "tom··tom·a",
+    "garo": "tom·tom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24101,7 +24101,7 @@
   },
   {
     "english": "can",
-    "garo": "man··a",
+    "garo": "man·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24181,7 +24181,7 @@
   },
   {
     "english": "capture",
-    "garo": "rim··a",
+    "garo": "rim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24197,7 +24197,7 @@
   },
   {
     "english": "capture bridegroom",
-    "garo": "rim··tat·a",
+    "garo": "rim·tat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24213,7 +24213,7 @@
   },
   {
     "english": "care for",
-    "garo": "ba··rik·a",
+    "garo": "ba·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24285,7 +24285,7 @@
   },
   {
     "english": "carry",
-    "garo": "de··tom·a",
+    "garo": "de·tom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24293,7 +24293,7 @@
   },
   {
     "english": "carry",
-    "garo": "de··tom·brot·a",
+    "garo": "de·tom·brot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24309,7 +24309,7 @@
   },
   {
     "english": "carry baby",
-    "garo": "ba··rik·a",
+    "garo": "ba·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24325,7 +24325,7 @@
   },
   {
     "english": "carry child",
-    "garo": "ba··tom·a",
+    "garo": "ba·tom·a",
     "pos": null,
     "category": "family",
     "classifier": null,
@@ -24397,7 +24397,7 @@
   },
   {
     "english": "carve",
-    "garo": "sol··a",
+    "garo": "sol·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24429,7 +24429,7 @@
   },
   {
     "english": "cassava",
-    "garo": "ta··bol·chu",
+    "garo": "ta·bol·chu",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24469,7 +24469,7 @@
   },
   {
     "english": "caterpillar",
-    "garo": "jong··sip·in",
+    "garo": "jong·sip·in",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24477,7 +24477,7 @@
   },
   {
     "english": "caterpillar",
-    "garo": "jong··su",
+    "garo": "jong·su",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24493,7 +24493,7 @@
   },
   {
     "english": "cattle",
-    "garo": "ma··su",
+    "garo": "ma·su",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24501,7 +24501,7 @@
   },
   {
     "english": "cattle",
-    "garo": "ma··su mat·ti",
+    "garo": "ma·su mat·ti",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24525,7 +24525,7 @@
   },
   {
     "english": "celebrate",
-    "garo": "han··seng·a",
+    "garo": "han·seng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24549,7 +24549,7 @@
   },
   {
     "english": "chaff",
-    "garo": "cha··che",
+    "garo": "cha·che",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24573,7 +24573,7 @@
   },
   {
     "english": "change ethnicity",
-    "garo": "tang··nap·a",
+    "garo": "tang·nap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24581,7 +24581,7 @@
   },
   {
     "english": "change mind",
-    "garo": "gi·sik ra··pil·a",
+    "garo": "gi·sik ra·pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24589,7 +24589,7 @@
   },
   {
     "english": "change money",
-    "garo": "pe··a",
+    "garo": "pe·a",
     "pos": null,
     "category": "business",
     "classifier": null,
@@ -24621,7 +24621,7 @@
   },
   {
     "english": "chapped lips",
-    "garo": "ku··chil bret·a",
+    "garo": "ku·chil bret·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24637,7 +24637,7 @@
   },
   {
     "english": "chase",
-    "garo": "ha··rik·a",
+    "garo": "ha·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24701,7 +24701,7 @@
   },
   {
     "english": "chin",
-    "garo": "ku··dim·bok",
+    "garo": "ku·dim·bok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24709,7 +24709,7 @@
   },
   {
     "english": "chipped",
-    "garo": "be··king·ben·da",
+    "garo": "be·king·ben·da",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24717,7 +24717,7 @@
   },
   {
     "english": "chipped",
-    "garo": "be··ku·weng·a",
+    "garo": "be·ku·weng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24725,7 +24725,7 @@
   },
   {
     "english": "chipped",
-    "garo": "be··rik·ken·a",
+    "garo": "be·rik·ken·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24741,7 +24741,7 @@
   },
   {
     "english": "chips",
-    "garo": "gol··ding·ding",
+    "garo": "gol·ding·ding",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24749,7 +24749,7 @@
   },
   {
     "english": "chips",
-    "garo": "gol··si·ri",
+    "garo": "gol·si·ri",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24861,7 +24861,7 @@
   },
   {
     "english": "claim",
-    "garo": "a··kang·a",
+    "garo": "a·kang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24893,7 +24893,7 @@
   },
   {
     "english": "clay",
-    "garo": "ha··keng·krak",
+    "garo": "ha·keng·krak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -24901,7 +24901,7 @@
   },
   {
     "english": "clay",
-    "garo": "ha··pek",
+    "garo": "ha·pek",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25117,7 +25117,7 @@
   },
   {
     "english": "coals",
-    "garo": "wal··ki",
+    "garo": "wal·ki",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25141,7 +25141,7 @@
   },
   {
     "english": "coccyx",
-    "garo": "ki··ting",
+    "garo": "ki·ting",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25173,7 +25173,7 @@
   },
   {
     "english": "coiled",
-    "garo": "kon··a",
+    "garo": "kon·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25213,7 +25213,7 @@
   },
   {
     "english": "cold",
-    "garo": "sin··a",
+    "garo": "sin·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -25229,7 +25229,7 @@
   },
   {
     "english": "cold season",
-    "garo": "sin··ka·ri",
+    "garo": "sin·ka·ri",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -25237,7 +25237,7 @@
   },
   {
     "english": "cold sore",
-    "garo": "ku··gi·sep ang··ki·sa dak·a",
+    "garo": "ku·gi·sep ang·ki·sa dak·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -25245,7 +25245,7 @@
   },
   {
     "english": "collapse",
-    "garo": "be··grop·a",
+    "garo": "be·grop·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25253,7 +25253,7 @@
   },
   {
     "english": "collapse",
-    "garo": "be··wak·a",
+    "garo": "be·wak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25309,7 +25309,7 @@
   },
   {
     "english": "collect",
-    "garo": "tom··a",
+    "garo": "tom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25349,7 +25349,7 @@
   },
   {
     "english": "come back",
-    "garo": "pil··a",
+    "garo": "pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25357,7 +25357,7 @@
   },
   {
     "english": "come loose",
-    "garo": "go··ok·a",
+    "garo": "go·ok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25365,7 +25365,7 @@
   },
   {
     "english": "come out",
-    "garo": "ong··kat·a",
+    "garo": "ong·kat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25445,7 +25445,7 @@
   },
   {
     "english": "compensation",
-    "garo": "gro cha··a",
+    "garo": "gro cha·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25477,7 +25477,7 @@
   },
   {
     "english": "conceal",
-    "garo": "bo··srok·a",
+    "garo": "bo·srok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25493,7 +25493,7 @@
   },
   {
     "english": "conceited",
-    "garo": "dal··a·sot·sot",
+    "garo": "dal·a·sot·sot",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25509,7 +25509,7 @@
   },
   {
     "english": "constantly",
-    "garo": "jem··jem·a",
+    "garo": "jem·jem·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25557,7 +25557,7 @@
   },
   {
     "english": "contribute",
-    "garo": "ron··chak·a",
+    "garo": "ron·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25621,7 +25621,7 @@
   },
   {
     "english": "cooking pots",
-    "garo": "me··dik sam·dik",
+    "garo": "me·dik sam·dik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25717,7 +25717,7 @@
   },
   {
     "english": "correctly speaking",
-    "garo": "a·gan·chong··mot·a",
+    "garo": "a·gan·chong·mot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25781,7 +25781,7 @@
   },
   {
     "english": "courageous",
-    "garo": "sang··chak·a",
+    "garo": "sang·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25797,7 +25797,7 @@
   },
   {
     "english": "courtyard",
-    "garo": "ha··til·a",
+    "garo": "ha·til·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25901,7 +25901,7 @@
   },
   {
     "english": "cow dung",
-    "garo": "ma··su·ke··em·a",
+    "garo": "ma·su·ke·em·a",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -25933,7 +25933,7 @@
   },
   {
     "english": "cracked",
-    "garo": "be··chil·ak·a",
+    "garo": "be·chil·ak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25941,7 +25941,7 @@
   },
   {
     "english": "cracked",
-    "garo": "be··dip·a",
+    "garo": "be·dip·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25949,7 +25949,7 @@
   },
   {
     "english": "cracked",
-    "garo": "be··si·ri·a",
+    "garo": "be·si·ri·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25965,7 +25965,7 @@
   },
   {
     "english": "crave",
-    "garo": "ku··chi·a",
+    "garo": "ku·chi·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25973,7 +25973,7 @@
   },
   {
     "english": "craving",
-    "garo": "ma··ang",
+    "garo": "ma·ang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25981,7 +25981,7 @@
   },
   {
     "english": "crazy",
-    "garo": "na·wang·ku··wang",
+    "garo": "na·wang·ku·wang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26005,7 +26005,7 @@
   },
   {
     "english": "creator",
-    "garo": "Ba··gip·a Bi·rom·bi",
+    "garo": "Ba·gip·a Bi·rom·bi",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26021,7 +26021,7 @@
   },
   {
     "english": "cremate",
-    "garo": "so··krep·a",
+    "garo": "so·krep·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26029,7 +26029,7 @@
   },
   {
     "english": "crescent moon",
-    "garo": "ku··weng·a",
+    "garo": "ku·weng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26061,7 +26061,7 @@
   },
   {
     "english": "cross",
-    "garo": "ga··bat·a",
+    "garo": "ga·bat·a",
     "pos": null,
     "category": "church",
     "classifier": null,
@@ -26077,7 +26077,7 @@
   },
   {
     "english": "crossed legs",
-    "garo": "ja··git·ap·a",
+    "garo": "ja·git·ap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26157,7 +26157,7 @@
   },
   {
     "english": "crumple",
-    "garo": "kom··si·a",
+    "garo": "kom·si·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26173,7 +26173,7 @@
   },
   {
     "english": "crush",
-    "garo": "rim··pin·ek·a",
+    "garo": "rim·pin·ek·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26221,7 +26221,7 @@
   },
   {
     "english": "cultivate",
-    "garo": "ha··ba hu··a",
+    "garo": "ha·ba hu·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26245,7 +26245,7 @@
   },
   {
     "english": "cup, bamboo",
-    "garo": "wa··sing",
+    "garo": "wa·sing",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26277,7 +26277,7 @@
   },
   {
     "english": "curled",
-    "garo": "kon··a",
+    "garo": "kon·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26285,7 +26285,7 @@
   },
   {
     "english": "curly",
-    "garo": "kong··krot·a",
+    "garo": "kong·krot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26293,7 +26293,7 @@
   },
   {
     "english": "curly",
-    "garo": "kong··krot·kong··krot",
+    "garo": "kong·krot·kong·krot",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26325,7 +26325,7 @@
   },
   {
     "english": "curved",
-    "garo": "kong··krot·a",
+    "garo": "kong·krot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26333,7 +26333,7 @@
   },
   {
     "english": "curved",
-    "garo": "ku··weng·a",
+    "garo": "ku·weng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26349,7 +26349,7 @@
   },
   {
     "english": "cut",
-    "garo": "den··a",
+    "garo": "den·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26389,7 +26389,7 @@
   },
   {
     "english": "cutting",
-    "garo": "ta··sko",
+    "garo": "ta·sko",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26453,7 +26453,7 @@
   },
   {
     "english": "damp",
-    "garo": "chim··chim·a",
+    "garo": "chim·chim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26461,7 +26461,7 @@
   },
   {
     "english": "damp",
-    "garo": "dim··a",
+    "garo": "dim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26477,7 +26477,7 @@
   },
   {
     "english": "dance",
-    "garo": "han··seng·a",
+    "garo": "han·seng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26501,7 +26501,7 @@
   },
   {
     "english": "dandruff",
-    "garo": "ki··ka·rok",
+    "garo": "ki·ka·rok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26541,7 +26541,7 @@
   },
   {
     "english": "dark complexion",
-    "garo": "han··gi·sim",
+    "garo": "han·gi·sim",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26605,7 +26605,7 @@
   },
   {
     "english": "dead",
-    "garo": "bi·ba bon··chot·a",
+    "garo": "bi·ba bon·chot·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -26629,7 +26629,7 @@
   },
   {
     "english": "deceive",
-    "garo": "bo··a",
+    "garo": "bo·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26653,7 +26653,7 @@
   },
   {
     "english": "defecate",
-    "garo": "ke··em·a",
+    "garo": "ke·em·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26661,7 +26661,7 @@
   },
   {
     "english": "defecate",
-    "garo": "ki··a",
+    "garo": "ki·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26677,7 +26677,7 @@
   },
   {
     "english": "defend",
-    "garo": "peng··chak·a",
+    "garo": "peng·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26717,7 +26717,7 @@
   },
   {
     "english": "deliver baby",
-    "garo": "han··o ra··a",
+    "garo": "han·o ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26725,7 +26725,7 @@
   },
   {
     "english": "deliver baby",
-    "garo": "jak·o ra··a",
+    "garo": "jak·o ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26741,7 +26741,7 @@
   },
   {
     "english": "demand",
-    "garo": "ham··chrak·a",
+    "garo": "ham·chrak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26773,7 +26773,7 @@
   },
   {
     "english": "dense",
-    "garo": "gan··chat·a",
+    "garo": "gan·chat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26789,7 +26789,7 @@
   },
   {
     "english": "dented",
-    "garo": "be··rik·ken·a",
+    "garo": "be·rik·ken·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26813,7 +26813,7 @@
   },
   {
     "english": "desire",
-    "garo": "ha··sik·a",
+    "garo": "ha·sik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26821,7 +26821,7 @@
   },
   {
     "english": "desire",
-    "garo": "ham··a",
+    "garo": "ham·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26837,7 +26837,7 @@
   },
   {
     "english": "destroy",
-    "garo": "pe··wak·a",
+    "garo": "pe·wak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26869,7 +26869,7 @@
   },
   {
     "english": "dialogue",
-    "garo": "ra··chak·grik·e a·gan·a",
+    "garo": "ra·chak·grik·e a·gan·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26877,7 +26877,7 @@
   },
   {
     "english": "diaper",
-    "garo": "ki··tap",
+    "garo": "ki·tap",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26885,7 +26885,7 @@
   },
   {
     "english": "diarrhea",
-    "garo": "bik·ma re··a",
+    "garo": "bik·ma re·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26893,7 +26893,7 @@
   },
   {
     "english": "diarrhea",
-    "garo": "ki··brek·a",
+    "garo": "ki·brek·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26965,7 +26965,7 @@
   },
   {
     "english": "dig",
-    "garo": "cho··a",
+    "garo": "cho·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27045,7 +27045,7 @@
   },
   {
     "english": "direct",
-    "garo": "tong··tang",
+    "garo": "tong·tang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27053,7 +27053,7 @@
   },
   {
     "english": "direct",
-    "garo": "·tong··tang·",
+    "garo": "·tong·tang·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27141,7 +27141,7 @@
   },
   {
     "english": "discuss",
-    "garo": "ku··chim·mong·a",
+    "garo": "ku·chim·mong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27149,7 +27149,7 @@
   },
   {
     "english": "discuss",
-    "garo": "ku··mong·a",
+    "garo": "ku·mong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27213,7 +27213,7 @@
   },
   {
     "english": "dislike",
-    "garo": "ni·na man··ja",
+    "garo": "ni·na man·ja",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27285,7 +27285,7 @@
   },
   {
     "english": "distant",
-    "garo": "chel··a",
+    "garo": "chel·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27301,7 +27301,7 @@
   },
   {
     "english": "disturbed",
-    "garo": "man··dik·a",
+    "garo": "man·dik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27309,7 +27309,7 @@
   },
   {
     "english": "disturbed",
-    "garo": "rim··dang·a",
+    "garo": "rim·dang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27317,7 +27317,7 @@
   },
   {
     "english": "disturbing",
-    "garo": "ka··so·a",
+    "garo": "ka·so·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27349,7 +27349,7 @@
   },
   {
     "english": "divide",
-    "garo": "ma··at·a",
+    "garo": "ma·at·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27381,7 +27381,7 @@
   },
   {
     "english": "divorce",
-    "garo": "ha··wal",
+    "garo": "ha·wal",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27405,7 +27405,7 @@
   },
   {
     "english": "do",
-    "garo": "ka··a",
+    "garo": "ka·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27421,7 +27421,7 @@
   },
   {
     "english": "done",
-    "garo": "bon··a",
+    "garo": "bon·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27501,7 +27501,7 @@
   },
   {
     "english": "doze",
-    "garo": "mik·gil jom··a",
+    "garo": "mik·gil jom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27525,7 +27525,7 @@
   },
   {
     "english": "draw water",
-    "garo": "ko··a",
+    "garo": "ko·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -27597,7 +27597,7 @@
   },
   {
     "english": "dried fish",
-    "garo": "na··kam",
+    "garo": "na·kam",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -27637,7 +27637,7 @@
   },
   {
     "english": "drizzle",
-    "garo": "se··em·se··em",
+    "garo": "se·em·se·em",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27677,7 +27677,7 @@
   },
   {
     "english": "drunk",
-    "garo": "han cheng··a",
+    "garo": "han cheng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27693,7 +27693,7 @@
   },
   {
     "english": "dry season",
-    "garo": "ha··ran",
+    "garo": "ha·ran",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -27709,7 +27709,7 @@
   },
   {
     "english": "dull",
-    "garo": "cham··a",
+    "garo": "cham·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27757,7 +27757,7 @@
   },
   {
     "english": "dung",
-    "garo": "ke··em·a",
+    "garo": "ke·em·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27765,7 +27765,7 @@
   },
   {
     "english": "dung",
-    "garo": "ma··su·ke··em·a",
+    "garo": "ma·su·ke·em·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27773,7 +27773,7 @@
   },
   {
     "english": "dung beetle",
-    "garo": "ki··bit·bit",
+    "garo": "ki·bit·bit",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27781,7 +27781,7 @@
   },
   {
     "english": "dunk",
-    "garo": "sim··a",
+    "garo": "sim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27789,7 +27789,7 @@
   },
   {
     "english": "dusk",
-    "garo": "an··tam·git·tu",
+    "garo": "an·tam·git·tu",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27805,7 +27805,7 @@
   },
   {
     "english": "dust",
-    "garo": "ha··gin·dil·a",
+    "garo": "ha·gin·dil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27877,7 +27877,7 @@
   },
   {
     "english": "earth",
-    "garo": "ha··",
+    "garo": "ha·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27885,7 +27885,7 @@
   },
   {
     "english": "earth",
-    "garo": "ha··gil·sak",
+    "garo": "ha·gil·sak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27893,7 +27893,7 @@
   },
   {
     "english": "earth",
-    "garo": "ha··mang",
+    "garo": "ha·mang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27901,7 +27901,7 @@
   },
   {
     "english": "earthen",
-    "garo": "ha··ni",
+    "garo": "ha·ni",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27917,7 +27917,7 @@
   },
   {
     "english": "easy",
-    "garo": "nom··a",
+    "garo": "nom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27925,7 +27925,7 @@
   },
   {
     "english": "eat up",
-    "garo": "cha··chot·a",
+    "garo": "cha·chot·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -27957,7 +27957,7 @@
   },
   {
     "english": "edge",
-    "garo": "a··sam",
+    "garo": "a·sam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28037,7 +28037,7 @@
   },
   {
     "english": "emerge",
-    "garo": "ong··kat·a",
+    "garo": "ong·kat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28085,7 +28085,7 @@
   },
   {
     "english": "end",
-    "garo": "ku··mang",
+    "garo": "ku·mang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28117,7 +28117,7 @@
   },
   {
     "english": "endure",
-    "garo": "han··chak·a",
+    "garo": "han·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28157,7 +28157,7 @@
   },
   {
     "english": "equivalent",
-    "garo": "ong··a",
+    "garo": "ong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28269,7 +28269,7 @@
   },
   {
     "english": "exaggerate",
-    "garo": "bo··dap·a",
+    "garo": "bo·dap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28349,7 +28349,7 @@
   },
   {
     "english": "excrement",
-    "garo": "ke··em·a",
+    "garo": "ke·em·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28365,7 +28365,7 @@
   },
   {
     "english": "exist",
-    "garo": "ong··a",
+    "garo": "ong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28373,7 +28373,7 @@
   },
   {
     "english": "expect",
-    "garo": "hai··chak·a",
+    "garo": "hai·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28413,7 +28413,7 @@
   },
   {
     "english": "explain",
-    "garo": "pe··e a·gan·a",
+    "garo": "pe·e a·gan·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28421,7 +28421,7 @@
   },
   {
     "english": "explain",
-    "garo": "pe··prak·e a·gan·a",
+    "garo": "pe·prak·e a·gan·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28453,7 +28453,7 @@
   },
   {
     "english": "eye of needle",
-    "garo": "sil·eng·si a··kil·ok",
+    "garo": "sil·eng·si a·kil·ok",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -28533,7 +28533,7 @@
   },
   {
     "english": "fall",
-    "garo": "ga··ak·a",
+    "garo": "ga·ak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28565,7 +28565,7 @@
   },
   {
     "english": "fall onto",
-    "garo": "ga··ak·dap·a",
+    "garo": "ga·ak·dap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28589,7 +28589,7 @@
   },
   {
     "english": "family",
-    "garo": "ha··ma",
+    "garo": "ha·ma",
     "pos": null,
     "category": "family",
     "classifier": null,
@@ -28637,7 +28637,7 @@
   },
   {
     "english": "fart",
-    "garo": "ki··si·a",
+    "garo": "ki·si·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28701,7 +28701,7 @@
   },
   {
     "english": "fearless",
-    "garo": "pa··a",
+    "garo": "pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28717,7 +28717,7 @@
   },
   {
     "english": "feed",
-    "garo": "du··a",
+    "garo": "du·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28733,7 +28733,7 @@
   },
   {
     "english": "feed animals",
-    "garo": "du··a",
+    "garo": "du·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28757,7 +28757,7 @@
   },
   {
     "english": "feel",
-    "garo": "rim··e ni·a",
+    "garo": "rim·e ni·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28805,7 +28805,7 @@
   },
   {
     "english": "fields",
-    "garo": "ha··ba",
+    "garo": "ha·ba",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28893,7 +28893,7 @@
   },
   {
     "english": "find",
-    "garo": "man··a",
+    "garo": "man·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28909,7 +28909,7 @@
   },
   {
     "english": "fine",
-    "garo": "se··em·a",
+    "garo": "se·em·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28941,7 +28941,7 @@
   },
   {
     "english": "finish",
-    "garo": "bon··dil·a",
+    "garo": "bon·dil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28949,7 +28949,7 @@
   },
   {
     "english": "finish",
-    "garo": "chon··a",
+    "garo": "chon·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28957,7 +28957,7 @@
   },
   {
     "english": "finish",
-    "garo": "man··a",
+    "garo": "man·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28965,7 +28965,7 @@
   },
   {
     "english": "finished",
-    "garo": "bon··a",
+    "garo": "bon·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28973,7 +28973,7 @@
   },
   {
     "english": "finished",
-    "garo": "bon··chot·a",
+    "garo": "bon·chot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29005,7 +29005,7 @@
   },
   {
     "english": "firebrand",
-    "garo": "wal··jem",
+    "garo": "wal·jem",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29013,7 +29013,7 @@
   },
   {
     "english": "firefly",
-    "garo": "sang··et",
+    "garo": "sang·et",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29101,7 +29101,7 @@
   },
   {
     "english": "fit",
-    "garo": "dang··a",
+    "garo": "dang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29117,7 +29117,7 @@
   },
   {
     "english": "fit",
-    "garo": "tang··rong·rang·a",
+    "garo": "tang·rong·rang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29141,7 +29141,7 @@
   },
   {
     "english": "flair",
-    "garo": "jil··au·a",
+    "garo": "jil·au·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29149,7 +29149,7 @@
   },
   {
     "english": "flake",
-    "garo": "ga··au·a",
+    "garo": "ga·au·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29157,7 +29157,7 @@
   },
   {
     "english": "flames",
-    "garo": "wal··si·ri",
+    "garo": "wal·si·ri",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29189,7 +29189,7 @@
   },
   {
     "english": "flash",
-    "garo": "ri··rau·a",
+    "garo": "ri·rau·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29253,7 +29253,7 @@
   },
   {
     "english": "flatten",
-    "garo": "ro··op·a",
+    "garo": "ro·op·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29261,7 +29261,7 @@
   },
   {
     "english": "flesh",
-    "garo": "be··en",
+    "garo": "be·en",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29269,7 +29269,7 @@
   },
   {
     "english": "flicker",
-    "garo": "jing··jet·jing··jet",
+    "garo": "jing·jet·jing·jet",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29285,7 +29285,7 @@
   },
   {
     "english": "flickering",
-    "garo": "jil··jeng jil··jeng",
+    "garo": "jil·jeng jil·jeng",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29341,7 +29341,7 @@
   },
   {
     "english": "fluently",
-    "garo": "ku··pret·a",
+    "garo": "ku·pret·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29381,7 +29381,7 @@
   },
   {
     "english": "fold",
-    "garo": "dem··a",
+    "garo": "dem·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29397,7 +29397,7 @@
   },
   {
     "english": "folded",
-    "garo": "be··dem·a",
+    "garo": "be·dem·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29413,7 +29413,7 @@
   },
   {
     "english": "follow",
-    "garo": "i··rik·a",
+    "garo": "i·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29421,7 +29421,7 @@
   },
   {
     "english": "follow",
-    "garo": "ja··rik·a",
+    "garo": "ja·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29429,7 +29429,7 @@
   },
   {
     "english": "follow",
-    "garo": "ki··sang·chak·a",
+    "garo": "ki·sang·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29445,7 +29445,7 @@
   },
   {
     "english": "follow orders",
-    "garo": "ra··chak·a",
+    "garo": "ra·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29477,7 +29477,7 @@
   },
   {
     "english": "fool around",
-    "garo": "kal··ak·a",
+    "garo": "kal·ak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29501,7 +29501,7 @@
   },
   {
     "english": "foolishly",
-    "garo": "na·wang·ku··wang",
+    "garo": "na·wang·ku·wang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29509,7 +29509,7 @@
   },
   {
     "english": "foot",
-    "garo": "ja··",
+    "garo": "ja·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29517,7 +29517,7 @@
   },
   {
     "english": "foot of mountains",
-    "garo": "ja··rek",
+    "garo": "ja·rek",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -29525,7 +29525,7 @@
   },
   {
     "english": "foot print",
-    "garo": "ja··gam",
+    "garo": "ja·gam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29533,7 +29533,7 @@
   },
   {
     "english": "foot print",
-    "garo": "ja··kol",
+    "garo": "ja·kol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29629,7 +29629,7 @@
   },
   {
     "english": "forgive",
-    "garo": "ke·ma ron··a",
+    "garo": "ke·ma ron·a",
     "pos": null,
     "category": "church",
     "classifier": null,
@@ -29717,7 +29717,7 @@
   },
   {
     "english": "front of body",
-    "garo": "ka··bak",
+    "garo": "ka·bak",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -29765,7 +29765,7 @@
   },
   {
     "english": "funeral",
-    "garo": "me··mang gam",
+    "garo": "me·mang gam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29901,7 +29901,7 @@
   },
   {
     "english": "genitals, female",
-    "garo": "si··",
+    "garo": "si·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29925,7 +29925,7 @@
   },
   {
     "english": "get",
-    "garo": "man··a",
+    "garo": "man·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29933,7 +29933,7 @@
   },
   {
     "english": "get",
-    "garo": "ra··a",
+    "garo": "ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29957,7 +29957,7 @@
   },
   {
     "english": "get back",
-    "garo": "man··rik·a",
+    "garo": "man·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29981,7 +29981,7 @@
   },
   {
     "english": "gin",
-    "garo": "pe··a",
+    "garo": "pe·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29997,7 +29997,7 @@
   },
   {
     "english": "give help",
-    "garo": "ron··chak·a",
+    "garo": "ron·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30021,7 +30021,7 @@
   },
   {
     "english": "gloomy",
-    "garo": "sin··dik·a",
+    "garo": "sin·dik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30053,7 +30053,7 @@
   },
   {
     "english": "gnat",
-    "garo": "su··sam",
+    "garo": "su·sam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30069,7 +30069,7 @@
   },
   {
     "english": "go back",
-    "garo": "i··ang·pil··a",
+    "garo": "i·ang·pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30077,7 +30077,7 @@
   },
   {
     "english": "go back",
-    "garo": "pil··a",
+    "garo": "pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30085,7 +30085,7 @@
   },
   {
     "english": "go back and forth",
-    "garo": "i··ru·ra··a",
+    "garo": "i·ru·ra·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -30141,7 +30141,7 @@
   },
   {
     "english": "gossip",
-    "garo": "ku··rit·chu·a",
+    "garo": "ku·rit·chu·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30165,7 +30165,7 @@
   },
   {
     "english": "grab",
-    "garo": "rim··a",
+    "garo": "rim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30309,7 +30309,7 @@
   },
   {
     "english": "groan",
-    "garo": "ma··am·a",
+    "garo": "ma·am·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30325,7 +30325,7 @@
   },
   {
     "english": "ground",
-    "garo": "ha··",
+    "garo": "ha·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30373,7 +30373,7 @@
   },
   {
     "english": "grub",
-    "garo": "jong··men",
+    "garo": "jong·men",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30549,7 +30549,7 @@
   },
   {
     "english": "handle",
-    "garo": "ga··pong",
+    "garo": "ga·pong",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30557,7 +30557,7 @@
   },
   {
     "english": "handle",
-    "garo": "rim··a",
+    "garo": "rim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30565,7 +30565,7 @@
   },
   {
     "english": "handle",
-    "garo": "rim··chak·ra",
+    "garo": "rim·chak·ra",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30637,7 +30637,7 @@
   },
   {
     "english": "happy",
-    "garo": "han··seng·a",
+    "garo": "han·seng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30653,7 +30653,7 @@
   },
   {
     "english": "hatch",
-    "garo": "pe··a",
+    "garo": "pe·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30685,7 +30685,7 @@
   },
   {
     "english": "head ache",
-    "garo": "sko sa··dik·a",
+    "garo": "sko sa·dik·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -30693,7 +30693,7 @@
   },
   {
     "english": "headhunting sword",
-    "garo": "mil··am",
+    "garo": "mil·am",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30741,7 +30741,7 @@
   },
   {
     "english": "heavily",
-    "garo": "je··et·je··et dak·ing·a",
+    "garo": "je·et·je·et dak·ing·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30757,7 +30757,7 @@
   },
   {
     "english": "heavy",
-    "garo": "je··et·je··et",
+    "garo": "je·et·je·et",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30765,7 +30765,7 @@
   },
   {
     "english": "heel",
-    "garo": "ja··pa·ku··chok",
+    "garo": "ja·pa·ku·chok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30821,7 +30821,7 @@
   },
   {
     "english": "hiccup",
-    "garo": "ti··ik·a",
+    "garo": "ti·ik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30869,7 +30869,7 @@
   },
   {
     "english": "high land",
-    "garo": "ha··sak·a",
+    "garo": "ha·sak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30885,7 +30885,7 @@
   },
   {
     "english": "hill",
-    "garo": "ha··bri",
+    "garo": "ha·bri",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -30893,7 +30893,7 @@
   },
   {
     "english": "hill",
-    "garo": "ha··chik",
+    "garo": "ha·chik",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -30901,7 +30901,7 @@
   },
   {
     "english": "hill",
-    "garo": "ha··sak·a",
+    "garo": "ha·sak·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -30909,7 +30909,7 @@
   },
   {
     "english": "hill tract",
-    "garo": "ha··sak·a",
+    "garo": "ha·sak·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -30917,7 +30917,7 @@
   },
   {
     "english": "hills",
-    "garo": "ha··rong·ga",
+    "garo": "ha·rong·ga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30933,7 +30933,7 @@
   },
   {
     "english": "hinder",
-    "garo": "peng··a",
+    "garo": "peng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30973,7 +30973,7 @@
   },
   {
     "english": "hoarse",
-    "garo": "seo··seo·e bol·a",
+    "garo": "seo·seo·e bol·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30997,7 +30997,7 @@
   },
   {
     "english": "hold",
-    "garo": "rim··a",
+    "garo": "rim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31029,7 +31029,7 @@
   },
   {
     "english": "hole",
-    "garo": "ha··gop",
+    "garo": "ha·gop",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31037,7 +31037,7 @@
   },
   {
     "english": "hole",
-    "garo": "ha··kil·ok",
+    "garo": "ha·kil·ok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31045,7 +31045,7 @@
   },
   {
     "english": "hole",
-    "garo": "ha··kol",
+    "garo": "ha·kol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31133,7 +31133,7 @@
   },
   {
     "english": "hot",
-    "garo": "ding··a",
+    "garo": "ding·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31157,7 +31157,7 @@
   },
   {
     "english": "hot season",
-    "garo": "ding··ka·ri",
+    "garo": "ding·ka·ri",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31245,7 +31245,7 @@
   },
   {
     "english": "hurt",
-    "garo": "sa··dik·a",
+    "garo": "sa·dik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31301,7 +31301,7 @@
   },
   {
     "english": "husks",
-    "garo": "cha··che",
+    "garo": "cha·che",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31317,7 +31317,7 @@
   },
   {
     "english": "ignite",
-    "garo": "so··a",
+    "garo": "so·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31325,7 +31325,7 @@
   },
   {
     "english": "immediately",
-    "garo": "teng··kap teng··kap",
+    "garo": "teng·kap teng·kap",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31333,7 +31333,7 @@
   },
   {
     "english": "immerse",
-    "garo": "sim··a",
+    "garo": "sim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31397,7 +31397,7 @@
   },
   {
     "english": "improve in health",
-    "garo": "sel··a",
+    "garo": "sel·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -31413,7 +31413,7 @@
   },
   {
     "english": "incest",
-    "garo": "ma··dong",
+    "garo": "ma·dong",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31421,7 +31421,7 @@
   },
   {
     "english": "inchworm",
-    "garo": "jong··kang·ku",
+    "garo": "jong·kang·ku",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31445,7 +31445,7 @@
   },
   {
     "english": "inclined",
-    "garo": "gong··a",
+    "garo": "gong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31453,7 +31453,7 @@
   },
   {
     "english": "including",
-    "garo": "ra··e",
+    "garo": "ra·e",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31461,7 +31461,7 @@
   },
   {
     "english": "incomplete",
-    "garo": "tong··kan·di",
+    "garo": "tong·kan·di",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31501,7 +31501,7 @@
   },
   {
     "english": "increase",
-    "garo": "bang··rik·rik·a",
+    "garo": "bang·rik·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31533,7 +31533,7 @@
   },
   {
     "english": "individual's land",
-    "garo": "ha··tot",
+    "garo": "ha·tot",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31573,7 +31573,7 @@
   },
   {
     "english": "inform",
-    "garo": "a·gan·e ron··a",
+    "garo": "a·gan·e ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31597,7 +31597,7 @@
   },
   {
     "english": "inherit",
-    "garo": "man··rik·a",
+    "garo": "man·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31605,7 +31605,7 @@
   },
   {
     "english": "inject",
-    "garo": "su··a",
+    "garo": "su·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31621,7 +31621,7 @@
   },
   {
     "english": "injure",
-    "garo": "ja··sru·a",
+    "garo": "ja·sru·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31629,7 +31629,7 @@
   },
   {
     "english": "inquire",
-    "garo": "sing··e ni·a",
+    "garo": "sing·e ni·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31645,7 +31645,7 @@
   },
   {
     "english": "insect",
-    "garo": "jong··",
+    "garo": "jong·",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -31701,7 +31701,7 @@
   },
   {
     "english": "insufficient",
-    "garo": "bon··dik·a",
+    "garo": "bon·dik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31773,7 +31773,7 @@
   },
   {
     "english": "interest, monetary",
-    "garo": "pi··sa",
+    "garo": "pi·sa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31789,7 +31789,7 @@
   },
   {
     "english": "interrupted",
-    "garo": "rim··dang·a",
+    "garo": "rim·dang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31861,7 +31861,7 @@
   },
   {
     "english": "jackal",
-    "garo": "si··ol",
+    "garo": "si·ol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31917,7 +31917,7 @@
   },
   {
     "english": "joke",
-    "garo": "bo··bru·a",
+    "garo": "bo·bru·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31925,7 +31925,7 @@
   },
   {
     "english": "joke",
-    "garo": "bu··rok·a",
+    "garo": "bu·rok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31949,7 +31949,7 @@
   },
   {
     "english": "joyful",
-    "garo": "han··seng·a",
+    "garo": "han·seng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31997,7 +31997,7 @@
   },
   {
     "english": "keep",
-    "garo": "ra··rik·a",
+    "garo": "ra·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32013,7 +32013,7 @@
   },
   {
     "english": "kick",
-    "garo": "ga··ting·dat·a",
+    "garo": "ga·ting·dat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32021,7 +32021,7 @@
   },
   {
     "english": "kidney",
-    "garo": "tin··sok",
+    "garo": "tin·sok",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -32045,7 +32045,7 @@
   },
   {
     "english": "kill",
-    "garo": "so··ot·a",
+    "garo": "so·ot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32101,7 +32101,7 @@
   },
   {
     "english": "kiss",
-    "garo": "ku··chot·a",
+    "garo": "ku·chot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32109,7 +32109,7 @@
   },
   {
     "english": "kiss",
-    "garo": "ku··dim·a",
+    "garo": "ku·dim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32133,7 +32133,7 @@
   },
   {
     "english": "knee",
-    "garo": "ja··sku",
+    "garo": "ja·sku",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32149,7 +32149,7 @@
   },
   {
     "english": "kneel",
-    "garo": "ja··sku·ting·a",
+    "garo": "ja·sku·ting·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32293,7 +32293,7 @@
   },
   {
     "english": "land",
-    "garo": "ha··",
+    "garo": "ha·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32301,7 +32301,7 @@
   },
   {
     "english": "land",
-    "garo": "ha··ga",
+    "garo": "ha·ga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32333,7 +32333,7 @@
   },
   {
     "english": "land, of village",
-    "garo": "ha··kin·te",
+    "garo": "ha·kin·te",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -32365,7 +32365,7 @@
   },
   {
     "english": "large",
-    "garo": "dal··a",
+    "garo": "dal·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32381,7 +32381,7 @@
   },
   {
     "english": "larva",
-    "garo": "jong··men",
+    "garo": "jong·men",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32397,7 +32397,7 @@
   },
   {
     "english": "latrine",
-    "garo": "ki··dik",
+    "garo": "ki·dik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32413,7 +32413,7 @@
   },
   {
     "english": "lay eggs",
-    "garo": "chi··a",
+    "garo": "chi·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32461,7 +32461,7 @@
   },
   {
     "english": "leak",
-    "garo": "ga··ak·ro·rot·a",
+    "garo": "ga·ak·ro·rot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32637,7 +32637,7 @@
   },
   {
     "english": "let go",
-    "garo": "rim··sik·ok·a",
+    "garo": "rim·sik·ok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32653,7 +32653,7 @@
   },
   {
     "english": "let property",
-    "garo": "me·di ron··a",
+    "garo": "me·di ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32669,7 +32669,7 @@
   },
   {
     "english": "leukoderma",
-    "garo": "ja··ka·bok",
+    "garo": "ja·ka·bok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32733,7 +32733,7 @@
   },
   {
     "english": "lift",
-    "garo": "de··a",
+    "garo": "de·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32741,7 +32741,7 @@
   },
   {
     "english": "lift",
-    "garo": "de··gat·a",
+    "garo": "de·gat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32749,7 +32749,7 @@
   },
   {
     "english": "lift",
-    "garo": "de··tom·brot·a",
+    "garo": "de·tom·brot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32757,7 +32757,7 @@
   },
   {
     "english": "light complexion",
-    "garo": "han··git·chak",
+    "garo": "han·git·chak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32765,7 +32765,7 @@
   },
   {
     "english": "light fire",
-    "garo": "so··a",
+    "garo": "so·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32853,7 +32853,7 @@
   },
   {
     "english": "lime",
-    "garo": "te··mat·chu",
+    "garo": "te·mat·chu",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32861,7 +32861,7 @@
   },
   {
     "english": "limp",
-    "garo": "ja··ding·a",
+    "garo": "ja·ding·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32885,7 +32885,7 @@
   },
   {
     "english": "lineage",
-    "garo": "ma··chong",
+    "garo": "ma·chong",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32901,7 +32901,7 @@
   },
   {
     "english": "lineage bond",
-    "garo": "ha··kim",
+    "garo": "ha·kim",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32909,7 +32909,7 @@
   },
   {
     "english": "lip",
-    "garo": "ku··chil",
+    "garo": "ku·chil",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32973,7 +32973,7 @@
   },
   {
     "english": "little finger",
-    "garo": "jak·si·pi··sa",
+    "garo": "jak·si·pi·sa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33053,7 +33053,7 @@
   },
   {
     "english": "load",
-    "garo": "de··gat·a",
+    "garo": "de·gat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33077,7 +33077,7 @@
   },
   {
     "english": "loan",
-    "garo": "on··cheng·a",
+    "garo": "on·cheng·a",
     "pos": null,
     "category": "business",
     "classifier": null,
@@ -33101,7 +33101,7 @@
   },
   {
     "english": "location",
-    "garo": "ha··dam",
+    "garo": "ha·dam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33109,7 +33109,7 @@
   },
   {
     "english": "location",
-    "garo": "ha··dok",
+    "garo": "ha·dok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33173,7 +33173,7 @@
   },
   {
     "english": "lonely",
-    "garo": "ma··ring·a",
+    "garo": "ma·ring·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33213,7 +33213,7 @@
   },
   {
     "english": "long time",
-    "garo": "ja··ro·a",
+    "garo": "ja·ro·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33221,7 +33221,7 @@
   },
   {
     "english": "long, of clothes",
-    "garo": "ja··ro·a",
+    "garo": "ja·ro·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -33309,7 +33309,7 @@
   },
   {
     "english": "look up to",
-    "garo": "dal··nik·a",
+    "garo": "dal·nik·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -33333,7 +33333,7 @@
   },
   {
     "english": "loose",
-    "garo": "dil··dek·ga·dek",
+    "garo": "dil·dek·ga·dek",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33341,7 +33341,7 @@
   },
   {
     "english": "loose",
-    "garo": "go··ok·a",
+    "garo": "go·ok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33365,7 +33365,7 @@
   },
   {
     "english": "loosen",
-    "garo": "go··ok·a",
+    "garo": "go·ok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33477,7 +33477,7 @@
   },
   {
     "english": "loud",
-    "garo": "ka··so·a",
+    "garo": "ka·so·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33517,7 +33517,7 @@
   },
   {
     "english": "low land",
-    "garo": "ha··pal",
+    "garo": "ha·pal",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33549,7 +33549,7 @@
   },
   {
     "english": "lungs",
-    "garo": "ka··sop",
+    "garo": "ka·sop",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33677,7 +33677,7 @@
   },
   {
     "english": "man (male)",
-    "garo": "me··a",
+    "garo": "me·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33685,7 +33685,7 @@
   },
   {
     "english": "man (male)",
-    "garo": "me··a·sa",
+    "garo": "me·a·sa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33709,7 +33709,7 @@
   },
   {
     "english": "manage",
-    "garo": "man··chak·a",
+    "garo": "man·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33733,7 +33733,7 @@
   },
   {
     "english": "manioc",
-    "garo": "ta··bol·chu",
+    "garo": "ta·bol·chu",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33741,7 +33741,7 @@
   },
   {
     "english": "many",
-    "garo": "bang··a",
+    "garo": "bang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33773,7 +33773,7 @@
   },
   {
     "english": "massage",
-    "garo": "rim··rok·a",
+    "garo": "rim·rok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33805,7 +33805,7 @@
   },
   {
     "english": "match",
-    "garo": "wal··bi·ma",
+    "garo": "wal·bi·ma",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33813,7 +33813,7 @@
   },
   {
     "english": "match",
-    "garo": "wal··tot",
+    "garo": "wal·tot",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33837,7 +33837,7 @@
   },
   {
     "english": "mature",
-    "garo": "dil·ding bal··jak",
+    "garo": "dil·ding bal·jak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33845,7 +33845,7 @@
   },
   {
     "english": "maturing",
-    "garo": "bal··jak",
+    "garo": "bal·jak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33925,7 +33925,7 @@
   },
   {
     "english": "menstruate",
-    "garo": "ja re··a",
+    "garo": "ja re·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33989,7 +33989,7 @@
   },
   {
     "english": "messy hair",
-    "garo": "bu··rang bu··jang",
+    "garo": "bu·rang bu·jang",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -33997,7 +33997,7 @@
   },
   {
     "english": "messy hair",
-    "garo": "bu··rin·eng bu··sin·eng",
+    "garo": "bu·rin·eng bu·sin·eng",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -34133,7 +34133,7 @@
   },
   {
     "english": "miss",
-    "garo": "ma··ring·a",
+    "garo": "ma·ring·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34189,7 +34189,7 @@
   },
   {
     "english": "mole",
-    "garo": "si··son·ta",
+    "garo": "si·son·ta",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34221,7 +34221,7 @@
   },
   {
     "english": "more and more",
-    "garo": "bang··rik·rik·a",
+    "garo": "bang·rik·rik·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -34237,7 +34237,7 @@
   },
   {
     "english": "mortar",
-    "garo": "cha··am",
+    "garo": "cha·am",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34293,7 +34293,7 @@
   },
   {
     "english": "mountain pass",
-    "garo": "ha··sing·sep",
+    "garo": "ha·sing·sep",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -34317,7 +34317,7 @@
   },
   {
     "english": "move",
-    "garo": "de··jit·a",
+    "garo": "de·jit·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34349,7 +34349,7 @@
   },
   {
     "english": "much",
-    "garo": "bang··a",
+    "garo": "bang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34365,7 +34365,7 @@
   },
   {
     "english": "much",
-    "garo": "bang··e",
+    "garo": "bang·e",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34397,7 +34397,7 @@
   },
   {
     "english": "mud",
-    "garo": "ha··dip·ek",
+    "garo": "ha·dip·ek",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34405,7 +34405,7 @@
   },
   {
     "english": "mud",
-    "garo": "ha··pek",
+    "garo": "ha·pek",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34413,7 +34413,7 @@
   },
   {
     "english": "mud",
-    "garo": "ha··stap",
+    "garo": "ha·stap",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34565,7 +34565,7 @@
   },
   {
     "english": "nation",
-    "garo": "ha··song",
+    "garo": "ha·song",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34581,7 +34581,7 @@
   },
   {
     "english": "native place",
-    "garo": "ha··song",
+    "garo": "ha·song",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34677,7 +34677,7 @@
   },
   {
     "english": "nervous",
-    "garo": "han··srik·han··srik",
+    "garo": "han·srik·han·srik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34773,7 +34773,7 @@
   },
   {
     "english": "noise",
-    "garo": "gam··a",
+    "garo": "gam·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34789,7 +34789,7 @@
   },
   {
     "english": "noise",
-    "garo": "tim··tim·a",
+    "garo": "tim·tim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34797,7 +34797,7 @@
   },
   {
     "english": "noisy",
-    "garo": "gam··ru·ru·a",
+    "garo": "gam·ru·ru·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34805,7 +34805,7 @@
   },
   {
     "english": "noisy",
-    "garo": "jang·a·tang··a",
+    "garo": "jang·a·tang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34821,7 +34821,7 @@
   },
   {
     "english": "noisy",
-    "garo": "ka··so·a",
+    "garo": "ka·so·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34861,7 +34861,7 @@
   },
   {
     "english": "not very good",
-    "garo": "bang··e nam·ja",
+    "garo": "bang·e nam·ja",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -34909,7 +34909,7 @@
   },
   {
     "english": "obey",
-    "garo": "ra··chak·a",
+    "garo": "ra·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34949,7 +34949,7 @@
   },
   {
     "english": "obstruct",
-    "garo": "peng··a",
+    "garo": "peng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34981,7 +34981,7 @@
   },
   {
     "english": "odor of body",
-    "garo": "han··dil",
+    "garo": "han·dil",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -35013,7 +35013,7 @@
   },
   {
     "english": "often",
-    "garo": "da··an·da··an",
+    "garo": "da·an·da·an",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35021,7 +35021,7 @@
   },
   {
     "english": "often",
-    "garo": "jem··jem·a",
+    "garo": "jem·jem·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35205,7 +35205,7 @@
   },
   {
     "english": "overcome",
-    "garo": "man··chak·a",
+    "garo": "man·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35213,7 +35213,7 @@
   },
   {
     "english": "overflow",
-    "garo": "ga··ak·ro·rot·a",
+    "garo": "ga·ak·ro·rot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35277,7 +35277,7 @@
   },
   {
     "english": "painful",
-    "garo": "sa··dik·a",
+    "garo": "sa·dik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35341,7 +35341,7 @@
   },
   {
     "english": "parents",
-    "garo": "ma··a·pa·a",
+    "garo": "ma·a·pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35349,7 +35349,7 @@
   },
   {
     "english": "parents",
-    "garo": "pa·gip·a·na··gip·a",
+    "garo": "pa·gip·a·na·gip·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35381,7 +35381,7 @@
   },
   {
     "english": "partial",
-    "garo": "tong··kan·di",
+    "garo": "tong·kan·di",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35413,7 +35413,7 @@
   },
   {
     "english": "pass",
-    "garo": "i··ang·chek·a",
+    "garo": "i·ang·chek·a",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -35421,7 +35421,7 @@
   },
   {
     "english": "pass",
-    "garo": "re··ping·grik·a",
+    "garo": "re·ping·grik·a",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -35429,7 +35429,7 @@
   },
   {
     "english": "pass",
-    "garo": "re··sek·a",
+    "garo": "re·sek·a",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -35437,7 +35437,7 @@
   },
   {
     "english": "pass, mountain",
-    "garo": "ha··sing·sep",
+    "garo": "ha·sing·sep",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -35501,7 +35501,7 @@
   },
   {
     "english": "pay attention",
-    "garo": "gi·sik ron··a",
+    "garo": "gi·sik ron·a",
     "pos": null,
     "category": "business",
     "classifier": null,
@@ -35549,7 +35549,7 @@
   },
   {
     "english": "peaceful",
-    "garo": "tom··tom·a",
+    "garo": "tom·tom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35557,7 +35557,7 @@
   },
   {
     "english": "peak",
-    "garo": "kim··bik",
+    "garo": "kim·bik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35669,7 +35669,7 @@
   },
   {
     "english": "perch",
-    "garo": "ba··a",
+    "garo": "ba·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35685,7 +35685,7 @@
   },
   {
     "english": "permitted to marry",
-    "garo": "ke··a",
+    "garo": "ke·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -35733,7 +35733,7 @@
   },
   {
     "english": "pet",
-    "garo": "rim··rok·a",
+    "garo": "rim·rok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35797,7 +35797,7 @@
   },
   {
     "english": "pieces",
-    "garo": "tin··",
+    "garo": "tin·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35829,7 +35829,7 @@
   },
   {
     "english": "pierce",
-    "garo": "su··a",
+    "garo": "su·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35845,7 +35845,7 @@
   },
   {
     "english": "pile",
-    "garo": "chong··a",
+    "garo": "chong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35869,7 +35869,7 @@
   },
   {
     "english": "pile up",
-    "garo": "tom··a",
+    "garo": "tom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35933,7 +35933,7 @@
   },
   {
     "english": "pinch",
-    "garo": "se··et·a",
+    "garo": "se·et·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35965,7 +35965,7 @@
   },
   {
     "english": "pity",
-    "garo": "ka··sa·chak·a",
+    "garo": "ka·sa·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36029,7 +36029,7 @@
   },
   {
     "english": "plant",
-    "garo": "ge··a",
+    "garo": "ge·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36053,7 +36053,7 @@
   },
   {
     "english": "platform",
-    "garo": "gan··sang",
+    "garo": "gan·sang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36093,7 +36093,7 @@
   },
   {
     "english": "pledge",
-    "garo": "ku··man·si·a",
+    "garo": "ku·man·si·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36101,7 +36101,7 @@
   },
   {
     "english": "pledge",
-    "garo": "ku··mik·chet·a",
+    "garo": "ku·mik·chet·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36109,7 +36109,7 @@
   },
   {
     "english": "pledge",
-    "garo": "ku··ra·chak·a",
+    "garo": "ku·ra·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36173,7 +36173,7 @@
   },
   {
     "english": "plucked",
-    "garo": "go··ok·a",
+    "garo": "go·ok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36277,7 +36277,7 @@
   },
   {
     "english": "pointed",
-    "garo": "chu··eng·a",
+    "garo": "chu·eng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36293,7 +36293,7 @@
   },
   {
     "english": "pointed",
-    "garo": "ku··chok·a",
+    "garo": "ku·chok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36341,7 +36341,7 @@
   },
   {
     "english": "polish",
-    "garo": "sol··srok·a",
+    "garo": "sol·srok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36461,7 +36461,7 @@
   },
   {
     "english": "pots",
-    "garo": "me··dik sam·dik",
+    "garo": "me·dik sam·dik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36469,7 +36469,7 @@
   },
   {
     "english": "pots",
-    "garo": "ti··",
+    "garo": "ti·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36485,7 +36485,7 @@
   },
   {
     "english": "pound rice",
-    "garo": "su··a",
+    "garo": "su·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -36565,7 +36565,7 @@
   },
   {
     "english": "pray",
-    "garo": "bi··am·a",
+    "garo": "bi·am·a",
     "pos": null,
     "category": "church",
     "classifier": null,
@@ -36573,7 +36573,7 @@
   },
   {
     "english": "pray",
-    "garo": "bi··ap·a",
+    "garo": "bi·ap·a",
     "pos": null,
     "category": "church",
     "classifier": null,
@@ -36613,7 +36613,7 @@
   },
   {
     "english": "press",
-    "garo": "pa··jret·a",
+    "garo": "pa·jret·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36645,7 +36645,7 @@
   },
   {
     "english": "prevent",
-    "garo": "peng··a",
+    "garo": "peng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36701,7 +36701,7 @@
   },
   {
     "english": "profit",
-    "garo": "lap cha··a",
+    "garo": "lap cha·a",
     "pos": null,
     "category": "business",
     "classifier": null,
@@ -36717,7 +36717,7 @@
   },
   {
     "english": "prohibit",
-    "garo": "beng··a",
+    "garo": "beng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36725,7 +36725,7 @@
   },
   {
     "english": "property",
-    "garo": "ha··ba song·ba",
+    "garo": "ha·ba song·ba",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36749,7 +36749,7 @@
   },
   {
     "english": "property, individual",
-    "garo": "a··tot",
+    "garo": "a·tot",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36781,7 +36781,7 @@
   },
   {
     "english": "protect",
-    "garo": "peng··a",
+    "garo": "peng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36789,7 +36789,7 @@
   },
   {
     "english": "protected",
-    "garo": "bil··ting·a",
+    "garo": "bil·ting·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36805,7 +36805,7 @@
   },
   {
     "english": "pubic hair, female",
-    "garo": "si··sim·ang",
+    "garo": "si·sim·ang",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -36909,7 +36909,7 @@
   },
   {
     "english": "pull up",
-    "garo": "tom··a",
+    "garo": "tom·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37005,7 +37005,7 @@
   },
   {
     "english": "put",
-    "garo": "ron··a",
+    "garo": "ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37013,7 +37013,7 @@
   },
   {
     "english": "put on shoes",
-    "garo": "ga··a",
+    "garo": "ga·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -37029,7 +37029,7 @@
   },
   {
     "english": "put up with",
-    "garo": "han··chak·a",
+    "garo": "han·chak·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -37077,7 +37077,7 @@
   },
   {
     "english": "quick",
-    "garo": "ta··rak·a",
+    "garo": "ta·rak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37101,7 +37101,7 @@
   },
   {
     "english": "quickly",
-    "garo": "bing··si·bing··si",
+    "garo": "bing·si·bing·si",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37109,7 +37109,7 @@
   },
   {
     "english": "quickly",
-    "garo": "gong··rak·e",
+    "garo": "gong·rak·e",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37117,7 +37117,7 @@
   },
   {
     "english": "quietly",
-    "garo": "ka··sin·chip·chip",
+    "garo": "ka·sin·chip·chip",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37197,7 +37197,7 @@
   },
   {
     "english": "raise",
-    "garo": "de··a",
+    "garo": "de·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37245,7 +37245,7 @@
   },
   {
     "english": "rapidly",
-    "garo": "gong··rak·a",
+    "garo": "gong·rak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37317,7 +37317,7 @@
   },
   {
     "english": "real",
-    "garo": "chong··mot",
+    "garo": "chong·mot",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37325,7 +37325,7 @@
   },
   {
     "english": "reborn",
-    "garo": "at·chi·pil··a",
+    "garo": "at·chi·pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37341,7 +37341,7 @@
   },
   {
     "english": "receive",
-    "garo": "ra··a",
+    "garo": "ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37349,7 +37349,7 @@
   },
   {
     "english": "receive",
-    "garo": "ra··chak·a",
+    "garo": "ra·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37357,7 +37357,7 @@
   },
   {
     "english": "receive",
-    "garo": "rim··chak·a",
+    "garo": "rim·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37365,7 +37365,7 @@
   },
   {
     "english": "recognize",
-    "garo": "hai··rik·a",
+    "garo": "hai·rik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37397,7 +37397,7 @@
   },
   {
     "english": "recover",
-    "garo": "sel··a",
+    "garo": "sel·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37461,7 +37461,7 @@
   },
   {
     "english": "reform",
-    "garo": "gi·sik·pil··a",
+    "garo": "gi·sik·pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37485,7 +37485,7 @@
   },
   {
     "english": "region",
-    "garo": "ha··dok",
+    "garo": "ha·dok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37493,7 +37493,7 @@
   },
   {
     "english": "regularly",
-    "garo": "jem··jem·a",
+    "garo": "jem·jem·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37517,7 +37517,7 @@
   },
   {
     "english": "remove",
-    "garo": "ro··on·a",
+    "garo": "ro·on·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37541,7 +37541,7 @@
   },
   {
     "english": "rent",
-    "garo": "me·di ra··a",
+    "garo": "me·di ra·a",
     "pos": null,
     "category": "business",
     "classifier": null,
@@ -37549,7 +37549,7 @@
   },
   {
     "english": "repeat",
-    "garo": "pil··tai·a",
+    "garo": "pil·tai·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37573,7 +37573,7 @@
   },
   {
     "english": "repeatedly",
-    "garo": "jem··jem·a",
+    "garo": "jem·jem·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37589,7 +37589,7 @@
   },
   {
     "english": "repeatedly go",
-    "garo": "i··ang·jem··jem·a",
+    "garo": "i·ang·jem·jem·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37621,7 +37621,7 @@
   },
   {
     "english": "request",
-    "garo": "bi··a",
+    "garo": "bi·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37629,7 +37629,7 @@
   },
   {
     "english": "request",
-    "garo": "mol··mol·a",
+    "garo": "mol·mol·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37677,7 +37677,7 @@
   },
   {
     "english": "respect",
-    "garo": "dal··nik·a",
+    "garo": "dal·nik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37685,7 +37685,7 @@
   },
   {
     "english": "respond",
-    "garo": "ku··chak·a",
+    "garo": "ku·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37693,7 +37693,7 @@
   },
   {
     "english": "rest",
-    "garo": "neng··tak·a",
+    "garo": "neng·tak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37741,7 +37741,7 @@
   },
   {
     "english": "return",
-    "garo": "i··ang·pil··a",
+    "garo": "i·ang·pil·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -37749,7 +37749,7 @@
   },
   {
     "english": "return",
-    "garo": "i··ba·pil··a",
+    "garo": "i·ba·pil·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -37757,7 +37757,7 @@
   },
   {
     "english": "return",
-    "garo": "pil··a",
+    "garo": "pil·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -37765,7 +37765,7 @@
   },
   {
     "english": "reverse",
-    "garo": "ham··pil·a",
+    "garo": "ham·pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37829,7 +37829,7 @@
   },
   {
     "english": "rice pot",
-    "garo": "me··dik",
+    "garo": "me·dik",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -37885,7 +37885,7 @@
   },
   {
     "english": "ridge",
-    "garo": "kim··bik",
+    "garo": "kim·bik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37893,7 +37893,7 @@
   },
   {
     "english": "right away",
-    "garo": "teng··kap teng··kap",
+    "garo": "teng·kap teng·kap",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37989,7 +37989,7 @@
   },
   {
     "english": "roam",
-    "garo": "re··am·a",
+    "garo": "re·am·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38029,7 +38029,7 @@
   },
   {
     "english": "rock",
-    "garo": "rong··te",
+    "garo": "rong·te",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38045,7 +38045,7 @@
   },
   {
     "english": "roll up",
-    "garo": "dol··a",
+    "garo": "dol·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38053,7 +38053,7 @@
   },
   {
     "english": "roll up",
-    "garo": "tol··a",
+    "garo": "tol·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38077,7 +38077,7 @@
   },
   {
     "english": "root",
-    "garo": "ja··dil",
+    "garo": "ja·dil",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38109,7 +38109,7 @@
   },
   {
     "english": "rotten",
-    "garo": "bo··ol·a",
+    "garo": "bo·ol·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38157,7 +38157,7 @@
   },
   {
     "english": "round",
-    "garo": "tam··bing·a",
+    "garo": "tam·bing·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38189,7 +38189,7 @@
   },
   {
     "english": "rub",
-    "garo": "rim··rok·a",
+    "garo": "rim·rok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38221,7 +38221,7 @@
   },
   {
     "english": "rumor",
-    "garo": "ku··rit·chu·a",
+    "garo": "ku·rit·chu·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38245,7 +38245,7 @@
   },
   {
     "english": "run, nose",
-    "garo": "ging·chi·mik·chi ong··kat·ing·a",
+    "garo": "ging·chi·mik·chi ong·kat·ing·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -38293,7 +38293,7 @@
   },
   {
     "english": "saliva",
-    "garo": "ku··chi",
+    "garo": "ku·chi",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38325,7 +38325,7 @@
   },
   {
     "english": "sandal",
-    "garo": "ja··kop",
+    "garo": "ja·kop",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38437,7 +38437,7 @@
   },
   {
     "english": "scatter",
-    "garo": "go·pri·pra··a",
+    "garo": "go·pri·pra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38477,7 +38477,7 @@
   },
   {
     "english": "scold",
-    "garo": "ka··cha·a",
+    "garo": "ka·cha·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38517,7 +38517,7 @@
   },
   {
     "english": "scorch",
-    "garo": "so··sim·prak·a",
+    "garo": "so·sim·prak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38581,7 +38581,7 @@
   },
   {
     "english": "scratch",
-    "garo": "ku··ak·a",
+    "garo": "ku·ak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38597,7 +38597,7 @@
   },
   {
     "english": "scrawny",
-    "garo": "ran··chok·a",
+    "garo": "ran·chok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38733,7 +38733,7 @@
   },
   {
     "english": "seep",
-    "garo": "ong··mi·sep·a",
+    "garo": "ong·mi·sep·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38941,7 +38941,7 @@
   },
   {
     "english": "sexual relations",
-    "garo": "ju··a",
+    "garo": "ju·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -38965,7 +38965,7 @@
   },
   {
     "english": "shabby",
-    "garo": "gol··ki",
+    "garo": "gol·ki",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39053,7 +39053,7 @@
   },
   {
     "english": "sharecrop",
-    "garo": "ba·gi ron··a",
+    "garo": "ba·gi ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39069,7 +39069,7 @@
   },
   {
     "english": "sharpen",
-    "garo": "hul··a",
+    "garo": "hul·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39077,7 +39077,7 @@
   },
   {
     "english": "sharpen",
-    "garo": "wil··a",
+    "garo": "wil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39125,7 +39125,7 @@
   },
   {
     "english": "shell",
-    "garo": "a··kam·pi",
+    "garo": "a·kam·pi",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39165,7 +39165,7 @@
   },
   {
     "english": "shin",
-    "garo": "ja··rik·ing",
+    "garo": "ja·rik·ing",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39173,7 +39173,7 @@
   },
   {
     "english": "shine",
-    "garo": "ching··a",
+    "garo": "ching·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39189,7 +39189,7 @@
   },
   {
     "english": "shine",
-    "garo": "jing··jang·a",
+    "garo": "jing·jang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39205,7 +39205,7 @@
   },
   {
     "english": "shiny",
-    "garo": "jil··jeng jil··jeng",
+    "garo": "jil·jeng jil·jeng",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39213,7 +39213,7 @@
   },
   {
     "english": "shiver",
-    "garo": "han··sim·mo·a",
+    "garo": "han·sim·mo·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39229,7 +39229,7 @@
   },
   {
     "english": "shiver",
-    "garo": "til··til··a",
+    "garo": "til·til·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39261,7 +39261,7 @@
   },
   {
     "english": "short cut",
-    "garo": "i··tong·tang·a",
+    "garo": "i·tong·tang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39269,7 +39269,7 @@
   },
   {
     "english": "short cut",
-    "garo": "re··tong·tang·a",
+    "garo": "re·tong·tang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39285,7 +39285,7 @@
   },
   {
     "english": "shorten",
-    "garo": "on··dim·it·a",
+    "garo": "on·dim·it·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39293,7 +39293,7 @@
   },
   {
     "english": "shortened",
-    "garo": "tong··kap·a",
+    "garo": "tong·kap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39325,7 +39325,7 @@
   },
   {
     "english": "shout",
-    "garo": "ku··rak·a",
+    "garo": "ku·rak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39381,7 +39381,7 @@
   },
   {
     "english": "show off",
-    "garo": "seng··nik·a",
+    "garo": "seng·nik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39413,7 +39413,7 @@
   },
   {
     "english": "shrimp",
-    "garo": "na··tik",
+    "garo": "na·tik",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -39461,7 +39461,7 @@
   },
   {
     "english": "sieve",
-    "garo": "gin··chi·ra",
+    "garo": "gin·chi·ra",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39501,7 +39501,7 @@
   },
   {
     "english": "sing",
-    "garo": "ring··a",
+    "garo": "ring·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39509,7 +39509,7 @@
   },
   {
     "english": "singe",
-    "garo": "so··a",
+    "garo": "so·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39581,7 +39581,7 @@
   },
   {
     "english": "sisters",
-    "garo": "a·bi·sa ma··drang",
+    "garo": "a·bi·sa ma·drang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39597,7 +39597,7 @@
   },
   {
     "english": "site",
-    "garo": "ha··dam",
+    "garo": "ha·dam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39621,7 +39621,7 @@
   },
   {
     "english": "skinny",
-    "garo": "keng··krang·a",
+    "garo": "keng·krang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39637,7 +39637,7 @@
   },
   {
     "english": "skirt",
-    "garo": "re··king",
+    "garo": "re·king",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39653,7 +39653,7 @@
   },
   {
     "english": "slanting",
-    "garo": "de··gang·git·a",
+    "garo": "de·gang·git·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39669,7 +39669,7 @@
   },
   {
     "english": "slash and burn",
-    "garo": "ha··ba hu··a",
+    "garo": "ha·ba hu·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -39733,7 +39733,7 @@
   },
   {
     "english": "slippery ground",
-    "garo": "ha··rim·il·a",
+    "garo": "ha·rim·il·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39741,7 +39741,7 @@
   },
   {
     "english": "slope",
-    "garo": "ha··chik",
+    "garo": "ha·chik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39749,7 +39749,7 @@
   },
   {
     "english": "slope",
-    "garo": "ra·ma a··sol·sol",
+    "garo": "ra·ma a·sol·sol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39757,7 +39757,7 @@
   },
   {
     "english": "slope down",
-    "garo": "ha··sol·sol",
+    "garo": "ha·sol·sol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39765,7 +39765,7 @@
   },
   {
     "english": "slope up",
-    "garo": "ha··ting·gak",
+    "garo": "ha·ting·gak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39797,7 +39797,7 @@
   },
   {
     "english": "smacking",
-    "garo": "ku··dim·a",
+    "garo": "ku·dim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39829,7 +39829,7 @@
   },
   {
     "english": "smear on",
-    "garo": "pa··a",
+    "garo": "pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39893,7 +39893,7 @@
   },
   {
     "english": "smoke",
-    "garo": "wal··ku",
+    "garo": "wal·ku",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39901,7 +39901,7 @@
   },
   {
     "english": "smoke",
-    "garo": "wal··ku·a",
+    "garo": "wal·ku·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -39957,7 +39957,7 @@
   },
   {
     "english": "snare",
-    "garo": "ja··gra",
+    "garo": "ja·gra",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40061,7 +40061,7 @@
   },
   {
     "english": "soak",
-    "garo": "sim··a",
+    "garo": "sim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40093,7 +40093,7 @@
   },
   {
     "english": "soil",
-    "garo": "ha··",
+    "garo": "ha·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40101,7 +40101,7 @@
   },
   {
     "english": "soil",
-    "garo": "ha··mang",
+    "garo": "ha·mang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40109,7 +40109,7 @@
   },
   {
     "english": "soiled",
-    "garo": "ma··bak·a",
+    "garo": "ma·bak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40125,7 +40125,7 @@
   },
   {
     "english": "sole of foot",
-    "garo": "ja··pa",
+    "garo": "ja·pa",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -40189,7 +40189,7 @@
   },
   {
     "english": "soot",
-    "garo": "dim··ak",
+    "garo": "dim·ak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40205,7 +40205,7 @@
   },
   {
     "english": "soothe",
-    "garo": "rim··rok·a",
+    "garo": "rim·rok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40213,7 +40213,7 @@
   },
   {
     "english": "sore",
-    "garo": "hang··ki·sa·a",
+    "garo": "hang·ki·sa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40269,7 +40269,7 @@
   },
   {
     "english": "spark",
-    "garo": "wal··mi·si",
+    "garo": "wal·mi·si",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40285,7 +40285,7 @@
   },
   {
     "english": "speak incorrectly",
-    "garo": "bo··a ra··a",
+    "garo": "bo·a ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40301,7 +40301,7 @@
   },
   {
     "english": "spear",
-    "garo": "su··a",
+    "garo": "su·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40373,7 +40373,7 @@
   },
   {
     "english": "spit",
-    "garo": "be··el·e gal·a",
+    "garo": "be·el·e gal·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40405,7 +40405,7 @@
   },
   {
     "english": "spit up",
-    "garo": "el··bu·a",
+    "garo": "el·bu·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40437,7 +40437,7 @@
   },
   {
     "english": "split",
-    "garo": "den··ku·rak·a",
+    "garo": "den·ku·rak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40445,7 +40445,7 @@
   },
   {
     "english": "split bamboo",
-    "garo": "wa··si",
+    "garo": "wa·si",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40453,7 +40453,7 @@
   },
   {
     "english": "split bamboo",
-    "garo": "wa··si·ri",
+    "garo": "wa·si·ri",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40549,7 +40549,7 @@
   },
   {
     "english": "sprout",
-    "garo": "chong··a",
+    "garo": "chong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40613,7 +40613,7 @@
   },
   {
     "english": "squat",
-    "garo": "dam··bak·a",
+    "garo": "dam·bak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40637,7 +40637,7 @@
   },
   {
     "english": "squeeze",
-    "garo": "rim··jret·a",
+    "garo": "rim·jret·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40653,7 +40653,7 @@
   },
   {
     "english": "squirm",
-    "garo": "ga··git·ik·a",
+    "garo": "ga·git·ik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40677,7 +40677,7 @@
   },
   {
     "english": "stab",
-    "garo": "su··a",
+    "garo": "su·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40701,7 +40701,7 @@
   },
   {
     "english": "stairs",
-    "garo": "jang··ki",
+    "garo": "jang·ki",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40725,7 +40725,7 @@
   },
   {
     "english": "stammer",
-    "garo": "tu··ta·ban·ta",
+    "garo": "tu·ta·ban·ta",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40733,7 +40733,7 @@
   },
   {
     "english": "stamp",
-    "garo": "ga··jep·a",
+    "garo": "ga·jep·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40781,7 +40781,7 @@
   },
   {
     "english": "steal",
-    "garo": "chau··a",
+    "garo": "chau·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40813,7 +40813,7 @@
   },
   {
     "english": "stem",
-    "garo": "ga··gong",
+    "garo": "ga·gong",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40821,7 +40821,7 @@
   },
   {
     "english": "step",
-    "garo": "ga··a",
+    "garo": "ga·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40829,7 +40829,7 @@
   },
   {
     "english": "step",
-    "garo": "ga··tim·ra",
+    "garo": "ga·tim·ra",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40837,7 +40837,7 @@
   },
   {
     "english": "step on",
-    "garo": "ga··dap·a",
+    "garo": "ga·dap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40845,7 +40845,7 @@
   },
   {
     "english": "steps",
-    "garo": "ja··ti",
+    "garo": "ja·ti",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40853,7 +40853,7 @@
   },
   {
     "english": "steps",
-    "garo": "teng··",
+    "garo": "teng·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40885,7 +40885,7 @@
   },
   {
     "english": "stick",
-    "garo": "gol··",
+    "garo": "gol·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40901,7 +40901,7 @@
   },
   {
     "english": "sticky",
-    "garo": "ma··skap·a",
+    "garo": "ma·skap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40981,7 +40981,7 @@
   },
   {
     "english": "stirring stick",
-    "garo": "me··gon",
+    "garo": "me·gon",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40989,7 +40989,7 @@
   },
   {
     "english": "stocky",
-    "garo": "dam··bak·a",
+    "garo": "dam·bak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41005,7 +41005,7 @@
   },
   {
     "english": "stool",
-    "garo": "ham··pok",
+    "garo": "ham·pok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41093,7 +41093,7 @@
   },
   {
     "english": "straight",
-    "garo": "·tong··tang·",
+    "garo": "·tong·tang·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41101,7 +41101,7 @@
   },
   {
     "english": "straight",
-    "garo": "tong··tang",
+    "garo": "tong·tang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41173,7 +41173,7 @@
   },
   {
     "english": "stretch",
-    "garo": "han··sal·a",
+    "garo": "han·sal·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41221,7 +41221,7 @@
   },
   {
     "english": "stringy",
-    "garo": "ro··ring·ro··ring",
+    "garo": "ro·ring·ro·ring",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41237,7 +41237,7 @@
   },
   {
     "english": "stroke",
-    "garo": "rim··sret·a",
+    "garo": "rim·sret·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41253,7 +41253,7 @@
   },
   {
     "english": "stubble",
-    "garo": "ga··git·tong",
+    "garo": "ga·git·tong",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41277,7 +41277,7 @@
   },
   {
     "english": "stumble",
-    "garo": "ja··bing·bang·a",
+    "garo": "ja·bing·bang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41285,7 +41285,7 @@
   },
   {
     "english": "stumble",
-    "garo": "ja··gu·a",
+    "garo": "ja·gu·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41309,7 +41309,7 @@
   },
   {
     "english": "stutter",
-    "garo": "ku··man·a",
+    "garo": "ku·man·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41317,7 +41317,7 @@
   },
   {
     "english": "stutter",
-    "garo": "tu··ta·ban·ta",
+    "garo": "tu·ta·ban·ta",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41333,7 +41333,7 @@
   },
   {
     "english": "submerge",
-    "garo": "sim··a",
+    "garo": "sim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41341,7 +41341,7 @@
   },
   {
     "english": "succeed",
-    "garo": "man··chak·a",
+    "garo": "man·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41365,7 +41365,7 @@
   },
   {
     "english": "suckle",
-    "garo": "cha··chot·chot·a",
+    "garo": "cha·chot·chot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41421,7 +41421,7 @@
   },
   {
     "english": "sufficient",
-    "garo": "chu··ong·a",
+    "garo": "chu·ong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41453,7 +41453,7 @@
   },
   {
     "english": "sunlight",
-    "garo": "sal ding··a",
+    "garo": "sal ding·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41501,7 +41501,7 @@
   },
   {
     "english": "support",
-    "garo": "kang··a",
+    "garo": "kang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41509,7 +41509,7 @@
   },
   {
     "english": "support",
-    "garo": "sin··chak·a",
+    "garo": "sin·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41621,7 +41621,7 @@
   },
   {
     "english": "swear",
-    "garo": "ku··mik·chet·a",
+    "garo": "ku·mik·chet·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41637,7 +41637,7 @@
   },
   {
     "english": "sweep",
-    "garo": "ham··pil·a",
+    "garo": "ham·pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41685,7 +41685,7 @@
   },
   {
     "english": "swell",
-    "garo": "han··o chi du·a",
+    "garo": "han·o chi du·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41693,7 +41693,7 @@
   },
   {
     "english": "swell",
-    "garo": "sa··al·a",
+    "garo": "sa·al·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41749,7 +41749,7 @@
   },
   {
     "english": "swirl",
-    "garo": "ku··srip·a",
+    "garo": "ku·srip·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41789,7 +41789,7 @@
   },
   {
     "english": "sword",
-    "garo": "mil··am",
+    "garo": "mil·am",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41797,7 +41797,7 @@
   },
   {
     "english": "sympathize",
-    "garo": "gi·sik ong··chak·a",
+    "garo": "gi·sik ong·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41805,7 +41805,7 @@
   },
   {
     "english": "sympathize",
-    "garo": "ka··sa·chak·a",
+    "garo": "ka·sa·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41829,7 +41829,7 @@
   },
   {
     "english": "take along",
-    "garo": "ra··chap·a",
+    "garo": "ra·chap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41837,7 +41837,7 @@
   },
   {
     "english": "take out",
-    "garo": "rong··kat·a",
+    "garo": "rong·kat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41845,7 +41845,7 @@
   },
   {
     "english": "taking account",
-    "garo": "ra··e",
+    "garo": "ra·e",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41973,7 +41973,7 @@
   },
   {
     "english": "tassel",
-    "garo": "ku··sim·ang",
+    "garo": "ku·sim·ang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41981,7 +41981,7 @@
   },
   {
     "english": "taste bad",
-    "garo": "cha··dik·a",
+    "garo": "cha·dik·a",
     "pos": null,
     "category": "food",
     "classifier": null,
@@ -42069,7 +42069,7 @@
   },
   {
     "english": "tease",
-    "garo": "bu··rok·a",
+    "garo": "bu·rok·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42117,7 +42117,7 @@
   },
   {
     "english": "tell",
-    "garo": "a·gan·e ron··a",
+    "garo": "a·gan·e ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42165,7 +42165,7 @@
   },
   {
     "english": "tendons",
-    "garo": "ja··dil",
+    "garo": "ja·dil",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42173,7 +42173,7 @@
   },
   {
     "english": "tendons",
-    "garo": "ja··si·ja··dil",
+    "garo": "ja·si·ja·dil",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42245,7 +42245,7 @@
   },
   {
     "english": "thatch",
-    "garo": "am··pang",
+    "garo": "am·pang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42253,7 +42253,7 @@
   },
   {
     "english": "thatch",
-    "garo": "ja··ku·a",
+    "garo": "ja·ku·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42261,7 +42261,7 @@
   },
   {
     "english": "thatching grass",
-    "garo": "am··pang·man·di",
+    "garo": "am·pang·man·di",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42349,7 +42349,7 @@
   },
   {
     "english": "threaten",
-    "garo": "ku··ching·a",
+    "garo": "ku·ching·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42437,7 +42437,7 @@
   },
   {
     "english": "tickled",
-    "garo": "ka··kit·chu·a",
+    "garo": "ka·kit·chu·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42461,7 +42461,7 @@
   },
   {
     "english": "tie strips, bamboo",
-    "garo": "du··a",
+    "garo": "du·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -42477,7 +42477,7 @@
   },
   {
     "english": "tight",
-    "garo": "je··et·je··et",
+    "garo": "je·et·je·et",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42485,7 +42485,7 @@
   },
   {
     "english": "tight",
-    "garo": "je··et·je··et dak·ing·a",
+    "garo": "je·et·je·et dak·ing·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42517,7 +42517,7 @@
   },
   {
     "english": "tiny",
-    "garo": "se··em·a",
+    "garo": "se·em·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42541,7 +42541,7 @@
   },
   {
     "english": "tiptoe",
-    "garo": "ga··deng·si·a",
+    "garo": "ga·deng·si·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42549,7 +42549,7 @@
   },
   {
     "english": "tiptoe",
-    "garo": "ja··chri·a",
+    "garo": "ja·chri·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42581,7 +42581,7 @@
   },
   {
     "english": "toe",
-    "garo": "ja··si",
+    "garo": "ja·si",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42589,7 +42589,7 @@
   },
   {
     "english": "toenail",
-    "garo": "ja··skil",
+    "garo": "ja·skil",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42613,7 +42613,7 @@
   },
   {
     "english": "together",
-    "garo": "·pa··",
+    "garo": "·pa·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42637,7 +42637,7 @@
   },
   {
     "english": "tongs",
-    "garo": "dang··kep",
+    "garo": "dang·kep",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42749,7 +42749,7 @@
   },
   {
     "english": "toss",
-    "garo": "de··bri·a",
+    "garo": "de·bri·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42765,7 +42765,7 @@
   },
   {
     "english": "touch",
-    "garo": "rim··a",
+    "garo": "rim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42773,7 +42773,7 @@
   },
   {
     "english": "touching",
-    "garo": "cha··skap·a",
+    "garo": "cha·skap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42821,7 +42821,7 @@
   },
   {
     "english": "tracks",
-    "garo": "ja··gam",
+    "garo": "ja·gam",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42845,7 +42845,7 @@
   },
   {
     "english": "tramping",
-    "garo": "ga··chep·chep·a",
+    "garo": "ga·chep·chep·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42853,7 +42853,7 @@
   },
   {
     "english": "transform",
-    "garo": "pil··a",
+    "garo": "pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42861,7 +42861,7 @@
   },
   {
     "english": "transplant",
-    "garo": "ja··rat·a",
+    "garo": "ja·rat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42885,7 +42885,7 @@
   },
   {
     "english": "tremble",
-    "garo": "dil··dil·a",
+    "garo": "dil·dil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -42997,7 +42997,7 @@
   },
   {
     "english": "try",
-    "garo": "jo·ton ka··a",
+    "garo": "jo·ton ka·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43013,7 +43013,7 @@
   },
   {
     "english": "tube, bamboo",
-    "garo": "wa··sing",
+    "garo": "wa·sing",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43021,7 +43021,7 @@
   },
   {
     "english": "tubers",
-    "garo": "ta··a",
+    "garo": "ta·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43053,7 +43053,7 @@
   },
   {
     "english": "turn",
-    "garo": "ham··pil·a",
+    "garo": "ham·pil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43101,7 +43101,7 @@
   },
   {
     "english": "turn over",
-    "garo": "pang·pil·tai··a",
+    "garo": "pang·pil·tai·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43221,7 +43221,7 @@
   },
   {
     "english": "ulcer",
-    "garo": "hang··ki·sa·a",
+    "garo": "hang·ki·sa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43277,7 +43277,7 @@
   },
   {
     "english": "uncombed",
-    "garo": "bu··rin·eng bu··sin·eng",
+    "garo": "bu·rin·eng bu·sin·eng",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43341,7 +43341,7 @@
   },
   {
     "english": "understand",
-    "garo": "hai··a",
+    "garo": "hai·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43389,7 +43389,7 @@
   },
   {
     "english": "unfinished",
-    "garo": "tong··kan·di",
+    "garo": "tong·kan·di",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43413,7 +43413,7 @@
   },
   {
     "english": "unload",
-    "garo": "ra··ron·a",
+    "garo": "ra·ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43421,7 +43421,7 @@
   },
   {
     "english": "unmarried woman",
-    "garo": "me··tra",
+    "garo": "me·tra",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43509,7 +43509,7 @@
   },
   {
     "english": "uplands",
-    "garo": "ha··rong·ga",
+    "garo": "ha·rong·ga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43589,7 +43589,7 @@
   },
   {
     "english": "urge",
-    "garo": "mong··a",
+    "garo": "mong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43605,7 +43605,7 @@
   },
   {
     "english": "used up",
-    "garo": "bon··a",
+    "garo": "bon·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43621,7 +43621,7 @@
   },
   {
     "english": "valley",
-    "garo": "ha··kong",
+    "garo": "ha·kong",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -43669,7 +43669,7 @@
   },
   {
     "english": "vein of leaf",
-    "garo": "ga··gong",
+    "garo": "ga·gong",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -43709,7 +43709,7 @@
   },
   {
     "english": "very",
-    "garo": "bang··e",
+    "garo": "bang·e",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43757,7 +43757,7 @@
   },
   {
     "english": "voluntarily",
-    "garo": "ha··sik·a·git·a",
+    "garo": "ha·sik·a·git·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43773,7 +43773,7 @@
   },
   {
     "english": "vomit",
-    "garo": "el··bu·a",
+    "garo": "el·bu·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -43925,7 +43925,7 @@
   },
   {
     "english": "wander",
-    "garo": "re··am·a",
+    "garo": "re·am·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43949,7 +43949,7 @@
   },
   {
     "english": "want",
-    "garo": "gong··a",
+    "garo": "gong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43957,7 +43957,7 @@
   },
   {
     "english": "want",
-    "garo": "ham··a",
+    "garo": "ham·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43981,7 +43981,7 @@
   },
   {
     "english": "warm",
-    "garo": "ding··bru·ding··bru",
+    "garo": "ding·bru·ding·bru",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43989,7 +43989,7 @@
   },
   {
     "english": "warn",
-    "garo": "ku··ron·a",
+    "garo": "ku·ron·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -43997,7 +43997,7 @@
   },
   {
     "english": "wart",
-    "garo": "si··son·ta",
+    "garo": "si·son·ta",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44013,7 +44013,7 @@
   },
   {
     "english": "wash feet",
-    "garo": "ja··su·a",
+    "garo": "ja·su·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44029,7 +44029,7 @@
   },
   {
     "english": "wash things",
-    "garo": "su··gal·a",
+    "garo": "su·gal·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44173,7 +44173,7 @@
   },
   {
     "english": "wear",
-    "garo": "ga··a",
+    "garo": "ga·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44309,7 +44309,7 @@
   },
   {
     "english": "whisper",
-    "garo": "ku··mi·si·a",
+    "garo": "ku·mi·si·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44317,7 +44317,7 @@
   },
   {
     "english": "white ants",
-    "garo": "ha··kin",
+    "garo": "ha·kin",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44493,7 +44493,7 @@
   },
   {
     "english": "wish",
-    "garo": "ha··sik·a",
+    "garo": "ha·sik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44541,7 +44541,7 @@
   },
   {
     "english": "woman, unmarried",
-    "garo": "me··tra",
+    "garo": "me·tra",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44557,7 +44557,7 @@
   },
   {
     "english": "woodshed",
-    "garo": "ha··bol·nok",
+    "garo": "ha·bol·nok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44597,7 +44597,7 @@
   },
   {
     "english": "world",
-    "garo": "ha··gil·sak",
+    "garo": "ha·gil·sak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44605,7 +44605,7 @@
   },
   {
     "english": "worm",
-    "garo": "jong··",
+    "garo": "jong·",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -44613,7 +44613,7 @@
   },
   {
     "english": "worm",
-    "garo": "kan··chi·ri",
+    "garo": "kan·chi·ri",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -44629,7 +44629,7 @@
   },
   {
     "english": "worn",
-    "garo": "cham··a",
+    "garo": "cham·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44669,7 +44669,7 @@
   },
   {
     "english": "worried",
-    "garo": "ting··ting·a",
+    "garo": "ting·ting·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44693,7 +44693,7 @@
   },
   {
     "english": "woven tightly",
-    "garo": "bing··a",
+    "garo": "bing·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44701,7 +44701,7 @@
   },
   {
     "english": "wrap",
-    "garo": "bil··a",
+    "garo": "bil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44709,7 +44709,7 @@
   },
   {
     "english": "wrap",
-    "garo": "cho··a",
+    "garo": "cho·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44733,7 +44733,7 @@
   },
   {
     "english": "wrapped",
-    "garo": "bil··ting·a",
+    "garo": "bil·ting·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44829,7 +44829,7 @@
   },
   {
     "english": "young",
-    "garo": "pi··sa",
+    "garo": "pi·sa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44885,7 +44885,7 @@
   },
   {
     "english": "leg",
-    "garo": "ja··",
+    "garo": "ja·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44893,7 +44893,7 @@
   },
   {
     "english": "light weight",
-    "garo": "cheng··a",
+    "garo": "cheng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44909,7 +44909,7 @@
   },
   {
     "english": "push",
-    "garo": "pa··jret·a",
+    "garo": "pa·jret·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -44965,7 +44965,7 @@
   },
   {
     "english": "stir",
-    "garo": "cho··bil·a",
+    "garo": "cho·bil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
