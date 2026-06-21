@@ -6,29 +6,42 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 function normalizeFile(filePath) {
+  // Returns { [key]: string[] } — ALL values seen for each key, in file
+  // order, not just the last one. Previously this silently overwrote
+  // earlier values on key collision, the root mechanism behind every
+  // duplicate-key bug found this session (eat/Eat, current/Current,
+  // good/Good, etc.).
   if (!fs.existsSync(filePath)) return {};
   try {
     const raw = fs.readFileSync(filePath, 'utf8');
     const parsed = JSON.parse(raw);
     const normalized = {};
 
+    function addValue(key, value) {
+      const k = key.trim().toLowerCase();
+      const v = String(value).trim();
+      if (!k || !v) return;
+      if (!normalized[k]) normalized[k] = [];
+      if (!normalized[k].includes(v)) normalized[k].push(v);
+    }
+
     if (Array.isArray(parsed)) {
       parsed.forEach(item => {
         const eng = item.english || item.English || '';
         const garo = item.garo || item.Garo || '';
-        if (eng) normalized[eng.trim().toLowerCase()] = garo.trim();
+        if (eng) addValue(eng, garo);
       });
     } else if (typeof parsed === 'object' && parsed !== null) {
       Object.entries(parsed).forEach(([key, value]) => {
         if (typeof value === 'string') {
-          normalized[key.trim().toLowerCase()] = value.trim();
+          addValue(key, value);
           return;
         }
 
         if (Array.isArray(value)) {
           value.forEach(item => {
             if (item?.english && item?.garo) {
-              normalized[item.english.trim().toLowerCase()] = item.garo.trim();
+              addValue(item.english, item.garo);
             }
           });
           return;
@@ -36,15 +49,15 @@ function normalizeFile(filePath) {
 
         if (typeof value === 'object' && value !== null) {
           if (value.garo || value.hindi) {
-            normalized[key.trim().toLowerCase()] = String(value.garo || value.hindi).trim();
+            addValue(key, value.garo || value.hindi);
             return;
           }
 
           Object.entries(value).forEach(([nestedKey, nestedValue]) => {
             if (typeof nestedValue === 'string') {
-              normalized[nestedKey.trim().toLowerCase()] = nestedValue.trim();
+              addValue(nestedKey, nestedValue);
             } else if (nestedValue?.english && nestedValue?.garo) {
-              normalized[nestedValue.english.trim().toLowerCase()] = nestedValue.garo.trim();
+              addValue(nestedValue.english, nestedValue.garo);
             }
           });
         }
@@ -67,6 +80,13 @@ function cleanRakka(str) {
   return str.replace(/\s+·/g, '·');
 }
 
+function pickPrimary(values) {
+  return [...values].sort((a, b) => {
+    if (a.length !== b.length) return a.length - b.length;
+    return a.localeCompare(b);
+  })[0];
+}
+
 function main() {
   console.log('Compiling and sanitizing Garo dictionary records...');
 
@@ -74,7 +94,15 @@ function main() {
   const dict2 = normalizeFile(path.join(__dirname, 'garo_dictionary (2).json'));
   const dict3 = normalizeFile(path.join(__dirname, 'master_dictionary.json'));
 
-  const merged = { ...dict1, ...dict2, ...dict3 };
+  const mergedValues = {};
+  [dict1, dict2, dict3].forEach(dict => {
+    Object.entries(dict).forEach(([key, values]) => {
+      if (!mergedValues[key]) mergedValues[key] = [];
+      values.forEach(v => {
+        if (!mergedValues[key].includes(v)) mergedValues[key].push(v);
+      });
+    });
+  });
 
   const grammarOverrides = {
     'tasty': 'Toa',
@@ -90,15 +118,21 @@ function main() {
   };
 
   const finalized = {};
+  const alternates = {};
 
-  Object.keys(merged).forEach(key => {
-    let value = merged[key];
-    value = cleanRakka(value);
-    finalized[key.trim().toLowerCase()] = value;
+  Object.keys(mergedValues).forEach(key => {
+    const cleanedValues = mergedValues[key].map(v => cleanRakka(v)).filter(Boolean);
+    if (!cleanedValues.length) return;
+    const primary = pickPrimary(cleanedValues);
+    finalized[key] = primary;
+    if (cleanedValues.length > 1) {
+      alternates[key] = mergedValues[key];
+    }
   });
 
   Object.keys(grammarOverrides).forEach(key => {
     finalized[key] = grammarOverrides[key];
+    delete alternates[key];
   });
 
   const srcDir = path.join(__dirname, 'src');
@@ -110,9 +144,15 @@ function main() {
     'utf8'
   );
 
-  console.log(`Success: Compiled ${Object.keys(finalized).length} unique entries into src/compiled_dict.json`);
+  fs.writeFileSync(
+    path.join(srcDir, 'compiled_dict_alternates.json'),
+    JSON.stringify(alternates),
+    'utf8'
+  );
 
-  // Write category index from master_dictionary.json
+  console.log(`Success: Compiled ${Object.keys(finalized).length} unique entries into src/compiled_dict.json`);
+  console.log(`Alternates: ${Object.keys(alternates).length} entries have 2+ known Garo variants -> src/compiled_dict_alternates.json`);
+
   const masterPath = path.join(__dirname, 'master_dictionary.json');
   if (fs.existsSync(masterPath)) {
     const masterRaw = JSON.parse(fs.readFileSync(masterPath, 'utf8'));

@@ -18,6 +18,7 @@
  */
 
 import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
+import ALTERNATES_RAW from './compiled_dict_alternates.json' with { type: 'json' };
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import corrections from './data/corrections.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
@@ -541,6 +542,14 @@ export function getAllVocabulary() {
 
 export function getByCategory(category) { return getAllVocabulary().filter(e => e.category === category); }
 export function getCategories() { return [...new Set(getAllVocabulary().map(e => e.category))].sort(); }
+
+export function getAlternates(englishWord) {
+  if (!englishWord || typeof englishWord !== 'string') return null;
+  const key = englishWord.trim().toLowerCase();
+  const variants = ALTERNATES_RAW[key];
+  if (!variants || variants.length < 2) return null;
+  return { primary: EN_INDEX[key] || variants[0], alternates: variants };
+}
 
 // ── DEFAULT EXPORT — platform adapter layer (Claude B) ────────────────────────
 const translationEngine = {

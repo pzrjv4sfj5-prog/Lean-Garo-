@@ -1,0 +1,4084 @@
+index,english,garo,category,notes,verification_tag,flags
+0,one dog,achak mang·sa,,,none,DUPLICATE_KEY
+1,two birds,do·o mang·gni,,,none,DUPLICATE_KEY
+2,three fish,na·tok mang·gittam,,,none,DUPLICATE_KEY
+3,one person,mande sak·sa,,,none,DUPLICATE_KEY
+4,two teachers,skigipa sak·gni,,,none,DUPLICATE_KEY
+5,one coin,tangka gong·sa,,,none,DUPLICATE_KEY
+6,five rupees,tangka gong·bonga,,,none,DUPLICATE_KEY
+7,one book,ki·tap king·sa,,,none,DUPLICATE_KEY
+8,three leaves,bijak king·gittam,,,none,DUPLICATE_KEY
+9,one chair,chokki ge·sa,,,none,DUPLICATE_KEY
+10,two knives,kettal ge·gni,,,none,DUPLICATE_KEY
+11,den· (to carry),"den·a (past), den·enga (continuous)",,,none,DUPLICATE_KEY
+12,cha· (to eat),"cha·a (past), cha·enga (continuous), cha·aha (past alt)",,,none,DUPLICATE_KEY
+13,re·ang (to go),"re·ang·a (past), re·angenga (continuous)",,,none,DUPLICATE_KEY
+14,on· (to give),"on·a (past), on·bo (command), on·enga (continuous)",,,none,DUPLICATE_KEY
+15,pineapple,Anaros,,,none,DUPLICATE_KEY
+16,banana,Te·rik,,,none,DUPLICATE_KEY
+17,orange,Narang,,,none,DUPLICATE_KEY
+18,guava,Goaba,,,none,DUPLICATE_KEY
+19,papaya,Modu,,,none,DUPLICATE_KEY
+20,jackfruit,Te·brong,,,none,DUPLICATE_KEY
+21,mango,Te·gachu,,,none,DUPLICATE_KEY
+22,lychee,Letchu,,,none,DUPLICATE_KEY
+23,coconut,Narikel,,,none,DUPLICATE_KEY
+24,watermelon,Te·e raja,,,none,DUPLICATE_KEY
+25,lemon,Kakji,,,none,DUPLICATE_KEY
+26,pomegranate,Dalim,,,none,DUPLICATE_KEY
+27,sugar cane,Ge·rit,,,none,DUPLICATE_KEY
+28,tamarind,Che·eng,,,none,DUPLICATE_KEY
+29,pear,Naspati,,,none,DUPLICATE_KEY
+30,custard apple,Atapol,,,none,DUPLICATE_KEY
+31,pomelo,Narang·gira,,,none,DUPLICATE_KEY
+32,blackberry,Jam,,,none,DUPLICATE_KEY
+33,grapes,Drakka,,,none,DUPLICATE_KEY
+34,wild berry,Bol·meseng,,,none,DUPLICATE_KEY
+35,pumpkin,Gominda,,,none,DUPLICATE_KEY
+36,potato,Alu,,,none,DUPLICATE_KEY
+37,tomato,Baring belati,,,none,DUPLICATE_KEY
+38,brinjal,Baring,,,none,DUPLICATE_KEY
+39,bottle gourd,Lau,,,none,DUPLICATE_KEY
+40,bitter gourd,Karela,,,none,DUPLICATE_KEY
+41,bamboo shoot,Me·a,,,none,DUPLICATE_KEY
+42,garlic,Rasin·gipok,,,none,DUPLICATE_KEY
+43,ginger,Re·ching,,,none,DUPLICATE_KEY
+44,chilli,Jal·ik,,,none,DUPLICATE_KEY
+45,okra,Dorai,,,none,DUPLICATE_KEY
+46,cucumber,Te·e,,,none,DUPLICATE_KEY
+47,mustard leaves,Besual,,,none,DUPLICATE_KEY
+48,spinach,Palong·sam,,,none,DUPLICATE_KEY
+49,broad beans,Nakap,,,none,DUPLICATE_KEY
+50,yam,Ta·a,,,none,DUPLICATE_KEY
+51,sweet potato,Ta·we,,,none,DUPLICATE_KEY
+52,colocasia,Thabisa,,,none,DUPLICATE_KEY
+53,onion,Rasin,,,none,DUPLICATE_KEY
+54,cabbage,Kobi,,,none,DUPLICATE_KEY
+55,cauliflower,Pul kobi,,,none,DUPLICATE_KEY
+56,carrot,Kajol,,,none,DUPLICATE_KEY
+57,radish,Mula,,,none,DUPLICATE_KEY
+58,drumstick,Sojona,,,none,DUPLICATE_KEY
+59,peas,Motor,,,none,DUPLICATE_KEY
+60,love,Ka·saa,,,none,DUPLICATE_KEY
+61,happiness,Kusi,,,none,DUPLICATE_KEY
+62,sadness,Duk,,,none,DUPLICATE_KEY
+63,anger,Ka·o nanga,,,none,DUPLICATE_KEY
+64,fear,Kenani,,,none,DUPLICATE_KEY
+65,hatred,Mittera,,,none,DUPLICATE_KEY
+66,hope,Ka·donga,,,none,DUPLICATE_KEY
+67,peace,Tom·tomani,,,none,DUPLICATE_KEY
+68,trust,Bebe ra·a,,,none,DUPLICATE_KEY
+69,jealousy,Mikboka,,,none,DUPLICATE_KEY
+70,shame,Kracha·a,,,none,DUPLICATE_KEY
+71,pride,Gaora,,,none,DUPLICATE_KEY
+72,surprise,Jagokani,,,none,DUPLICATE_KEY
+73,worry,Gisik ding·a,,,none,DUPLICATE_KEY
+74,patience,Chakchikani,,,none,DUPLICATE_KEY
+75,mercy,Ka·sachakani,,,none,DUPLICATE_KEY
+76,satisfaction,Chu·ongnika,,,none,DUPLICATE_KEY
+77,loneliness,Saksan,,,none,DUPLICATE_KEY
+78,grateful,Mitela,,,none,DUPLICATE_KEY
+79,courage,Ka·rakani,,,none,DUPLICATE_KEY
+80,dog,Achak,,,none,DUPLICATE_KEY
+81,cat,Menggo,,,none,DUPLICATE_KEY
+82,cow,Matchu,,,none,DUPLICATE_KEY
+83,elephant,Monga,,,none,DUPLICATE_KEY
+84,tiger,Matcha,,,none,DUPLICATE_KEY
+85,deer,Matchok,,,none,DUPLICATE_KEY
+86,pig,Wak,,,none,DUPLICATE_KEY
+87,goat,Do·bok,,,none,DUPLICATE_KEY
+88,horse,Gure,,,none,DUPLICATE_KEY
+89,monkey,Makre,,,none,DUPLICATE_KEY
+90,snake,Chipu,,,none,DUPLICATE_KEY
+91,rat,Mese,,,none,DUPLICATE_KEY
+92,buffalo,Matma,,,none,DUPLICATE_KEY
+93,bear,Matmak,,,none,DUPLICATE_KEY
+94,rabbit,Sapau,,,none,DUPLICATE_KEY
+95,crow,Do·ka,,,none,DUPLICATE_KEY
+96,hen,Do·bit,,,none,DUPLICATE_KEY
+97,rooster,Do·bi,,,none,DUPLICATE_KEY
+98,duck,Do·gep,,,none,DUPLICATE_KEY
+99,owl,Do·po,,,none,DUPLICATE_KEY
+100,eagle,Do·reng,,,none,DUPLICATE_KEY
+101,parrot,Do·sik,,,none,DUPLICATE_KEY
+102,pigeon,Do·bak,,,none,DUPLICATE_KEY
+103,peacock,Do·de,,,none,DUPLICATE_KEY
+104,sparrow,Do·matchi,,,none,DUPLICATE_KEY
+105,eat,Cha·a,,,none,DUPLICATE_KEY
+106,drink,Ringa,,,none,DUPLICATE_KEY
+107,sleep,Tusia,,,none,DUPLICATE_KEY
+108,walk,Re·a,,,none,DUPLICATE_KEY
+109,run,Kat·a,,,none,DUPLICATE_KEY
+110,speak,Agana,,,none,DUPLICATE_KEY
+111,listen,Knachik·bo,,,none,DUPLICATE_KEY
+112,see / look / watch,Nia,,,none,DUPLICATE_KEY
+113,give,On·a,,,none,DUPLICATE_KEY
+114,take,Ra·a,,,none,DUPLICATE_KEY
+115,work,Dak·a,,,none,DUPLICATE_KEY
+116,play,Kal·a,,,none,DUPLICATE_KEY
+117,sit,Asong·a,,,none,DUPLICATE_KEY
+118,stand,Chadenga,,,none,DUPLICATE_KEY
+119,laugh,Ka·ding·a,,,none,DUPLICATE_KEY
+120,cry,Grap·a,,,none,DUPLICATE_KEY
+121,buy,Brea,,,none,DUPLICATE_KEY
+122,sell,Pala,,,none,DUPLICATE_KEY
+123,come,Re·ba·a,,,none,DUPLICATE_KEY
+124,go,Re·ang·a,,,none,DUPLICATE_KEY
+125,father,Pa / Apa,,,none,DUPLICATE_KEY
+126,mother,Ma / Ama,,,none,DUPLICATE_KEY
+127,son,Depante,,,none,DUPLICATE_KEY
+128,daughter,Demechik,,,none,DUPLICATE_KEY
+129,Grandfather,Abi·tang,,,none,DUPLICATE_KEY
+130,grandmother,Ambichang,,,none,DUPLICATE_KEY
+131,elder brother,Ada,,,none,DUPLICATE_KEY
+132,elder sister,Abi,,,none,DUPLICATE_KEY
+133,younger sibling,Jong / No,,,none,DUPLICATE_KEY
+134,uncle,Mama / Pabok,,,none,DUPLICATE_KEY
+135,aunt,Mani,,,none,DUPLICATE_KEY
+136,friend,Ripeng,,,none,DUPLICATE_KEY
+137,head,Sko,,,none,DUPLICATE_KEY
+138,eye,Mikron,,,none,DUPLICATE_KEY
+139,ear,Nachil,,,none,DUPLICATE_KEY
+140,nose,Gingting,,,none,DUPLICATE_KEY
+141,mouth,Ku·sik,,,none,DUPLICATE_KEY
+142,hand,Jak,,,none,DUPLICATE_KEY
+143,leg,Ja·a,,,none,DUPLICATE_KEY
+144,hair,Kni,,,none,DUPLICATE_KEY
+145,stomach,Ok,,,none,DUPLICATE_KEY
+146,teeth,Wagam,,,none,DUPLICATE_KEY
+147,tongue,Sre,,,none,DUPLICATE_KEY
+148,skin,Bigil,,,none,DUPLICATE_KEY
+149,heart,Ka·tong,,,none,DUPLICATE_KEY
+150,red,Gitchak,,,none,DUPLICATE_KEY
+151,white,Gipok,,,none,DUPLICATE_KEY
+152,black,Gisim,,,none,DUPLICATE_KEY
+153,green,Tangsek,,,none,DUPLICATE_KEY
+154,blue,Tang·sim,,,none,DUPLICATE_KEY
+155,yellow,Rimit,,,none,DUPLICATE_KEY
+156,One,Sa,,,none,DUPLICATE_KEY
+157,Two,Gni,,,none,DUPLICATE_KEY
+158,Three,Gittam,,,none,DUPLICATE_KEY
+159,Four,Bri,,,none,DUPLICATE_KEY
+160,Five,Bonga,,,none,DUPLICATE_KEY
+161,Six,Dok,,,none,DUPLICATE_KEY
+162,Seven,Sni,,,none,DUPLICATE_KEY
+163,Eight,Chet,,,none,DUPLICATE_KEY
+164,Nine,Sku,,,none,DUPLICATE_KEY
+165,Ten,Chiking,,,none,DUPLICATE_KEY
+166,Eleven,Chi·sa,,,none,DUPLICATE_KEY
+167,Twelve,Chi·gni,,,none,DUPLICATE_KEY
+168,Thirteen,Chi·gittam,,,none,DUPLICATE_KEY
+169,Fourteen,Chi·bri,,,none,DUPLICATE_KEY
+170,Fifteen,Chi·bonga,,,none,DUPLICATE_KEY
+171,Sixteen,Chi·dok,,,none,DUPLICATE_KEY
+172,Seventeen,Chi·sni,,,none,DUPLICATE_KEY
+173,Eighteen,Chi·chet,,,none,DUPLICATE_KEY
+174,Nineteen,Chi·sku,,,none,DUPLICATE_KEY
+175,Twenty,Kolgrik,,,none,DUPLICATE_KEY
+176,Twenty-one,Kolgrik·sa,,,none,DUPLICATE_KEY
+177,Thirty,Kolatchi,,,none,DUPLICATE_KEY
+178,Forty,Sotbri,,,none,DUPLICATE_KEY
+179,Fifty,Sotbonga,,,none,DUPLICATE_KEY
+180,Sixty,Sotdok,,,none,DUPLICATE_KEY
+181,Seventy,Sotsni,,,none,DUPLICATE_KEY
+182,Eighty,Sotchet,,,none,DUPLICATE_KEY
+183,Ninety,Sotsku,,,none,DUPLICATE_KEY
+184,Hundred,Ritchasa,,,none,DUPLICATE_KEY
+185,One Thousand,Hajalsa,,,none,DUPLICATE_KEY
+186,First (ordinal),Chipprangni,,,none,DUPLICATE_KEY
+187,Second (ordinal),Gni·prangni,,,none,DUPLICATE_KEY
+188,Third (ordinal),Gittam·prangni,,,none,DUPLICATE_KEY
+189,Last,Baksangni,,,none,DUPLICATE_KEY
+190,Half,Jatchi,,,none,DUPLICATE_KEY
+191,Quarter,Daldal,,,none,DUPLICATE_KEY
+192,Double,Gni·bita,,,none,DUPLICATE_KEY
+193,Zero / None,Bangbang / Ong·ja,,,none,DUPLICATE_KEY
+194,hello / greetings,Salam / Namengama,,,none,DUPLICATE_KEY
+195,how are you?,Na·a namengama?,,,none,DUPLICATE_KEY
+196,i am fine,Anga namenga.,,,none,DUPLICATE_KEY
+197,thank you,Mittela.,,,none,DUPLICATE_KEY
+198,what is your name?,Nang bimung maia?,,,none,DUPLICATE_KEY
+199,my name is...,Angni bimungara...,,,none,DUPLICATE_KEY
+200,where are you going?,Na·a bano re·angenga?,,,none,DUPLICATE_KEY
+201,good morning,Pringnam.,,,none,DUPLICATE_KEY
+202,good night,Walnam.,,,none,DUPLICATE_KEY
+203,yes,Oe,,,none,DUPLICATE_KEY
+204,no,Ong·ja,,,none,DUPLICATE_KEY
+205,please,Ka·sapae.,,,none,DUPLICATE_KEY
+206,i don't know,Anga uija.,,,none,DUPLICATE_KEY
+207,come here,Ianona re·babo.,,,none,DUPLICATE_KEY
+208,Tasty / Delicious,Toa,,,none,DUPLICATE_KEY
+209,not tasty,Touja,,,none,DUPLICATE_KEY
+210,sweet,Chi·a,,,none,DUPLICATE_KEY
+211,sour,Mesenga,,,none,DUPLICATE_KEY
+212,bitter,Ka·a,,,none,DUPLICATE_KEY
+213,salty,Kari nanga,,,none,DUPLICATE_KEY
+214,salt (noun),Kari,,,none,DUPLICATE_KEY
+215,spicy,Jal·ik saa,,,none,DUPLICATE_KEY
+216,astringent,Ka·baka,,,none,DUPLICATE_KEY
+217,bland / tasteless,Chibroka,,,none,DUPLICATE_KEY
+218,smelly / stinky,Senga,,,none,DUPLICATE_KEY
+219,to fall (from height),Ga·aka,,,none,DUPLICATE_KEY
+220,to fall (stumble/trip),Nang·ting·a,,,none,DUPLICATE_KEY
+221,to fall (slip),Ga·soltap,,,none,DUPLICATE_KEY
+222,to fall (collapse),Be·a,,,none,DUPLICATE_KEY
+223,to drop (something),Ga·akata,,,none,DUPLICATE_KEY
+224,to roll,Romroma,,,none,DUPLICATE_KEY
+225,to jump,Bildoa,,,none,DUPLICATE_KEY
+226,to shake,Moa,,,none,DUPLICATE_KEY
+227,to move (something),De·jita,,,none,DUPLICATE_KEY
+228,to feel (general),Ui·a,,,none,DUPLICATE_KEY
+229,to feel (emotionally),Gisik·o nanga,,,none,DUPLICATE_KEY
+230,to hurt (pain),Sa·dika,,,none,DUPLICATE_KEY
+231,to hurt (injure),Mata,,,none,DUPLICATE_KEY
+232,to hurt (feelings),Saknaata,,,none,DUPLICATE_KEY
+233,to touch,Dangtapa,,,none,DUPLICATE_KEY
+234,to pinch,Se·eta,,,none,DUPLICATE_KEY
+235,to scratch (body),Brika,,,none,DUPLICATE_KEY
+236,to scratch (object),Siksika,,,none,DUPLICATE_KEY
+237,to itch,Ka·kita,,,none,DUPLICATE_KEY
+238,to burn (sting like chili),So·soa,,,none,DUPLICATE_KEY
+239,to heal,An·sengpila,,,none,DUPLICATE_KEY
+240,open,Oa,,,none,DUPLICATE_KEY
+241,close,Chip·a,,,none,DUPLICATE_KEY
+242,push,Jitpaka,,,none,DUPLICATE_KEY
+243,pull / drive,Sal·a (⚠ same word),,,none,DUPLICATE_KEY
+244,break (glass/stick),Be·ata,,,none,DUPLICATE_KEY
+245,tear (paper/cloth),Gritt·a,,,none,DUPLICATE_KEY
+246,throw,Goata / Gal·a,,,none,DUPLICATE_KEY
+247,catch,Rim·a,,,none,DUPLICATE_KEY
+248,wash,Su·srong·a,,,none,DUPLICATE_KEY
+249,clean,Rongtala,,,none,DUPLICATE_KEY
+250,sun,Sal,,,none,DUPLICATE_KEY
+251,moon,Jajong,,,none,DUPLICATE_KEY
+252,star,Aski,,,none,DUPLICATE_KEY
+253,sky,Salgi,,,none,DUPLICATE_KEY
+254,cloud,Aram,,,none,DUPLICATE_KEY
+255,rain,Mikka,,,none,DUPLICATE_KEY
+256,wind,Balwa,,,none,DUPLICATE_KEY
+257,thunder,Goera,,,none,DUPLICATE_KEY
+258,lightning,Mikka·kimma,,,none,DUPLICATE_KEY
+259,fire,Wa·al,,,none,DUPLICATE_KEY
+260,water,Chi,,,none,DUPLICATE_KEY
+261,earth / soil,A·a,,,none,DUPLICATE_KEY
+262,stone,Ro·ong,,,none,DUPLICATE_KEY
+263,sand,An·cheng,,,none,DUPLICATE_KEY
+264,river,Chibima,,,none,DUPLICATE_KEY
+265,mountain,A·bri,,,none,DUPLICATE_KEY
+266,forest,Buring,,,none,DUPLICATE_KEY
+267,tree,Bol,,,none,DUPLICATE_KEY
+268,flower,Bibal,,,none,DUPLICATE_KEY
+269,leaf,Bijak,,,none,DUPLICATE_KEY
+270,it is raining,Mikka ring·a,,,none,DUPLICATE_KEY
+271,it is sunny,Sal·seng·a,,,none,DUPLICATE_KEY
+272,it is cold,Sin·a,,,none,DUPLICATE_KEY
+273,it is hot,Ding·a,,,none,DUPLICATE_KEY
+274,flood,Mikka·brimba,,,none,DUPLICATE_KEY
+275,drought,Ran·kari,,,none,DUPLICATE_KEY
+276,earthquake,A·a·moa,,,none,DUPLICATE_KEY
+277,fog / mist,Ong·chel,,,none,DUPLICATE_KEY
+278,rainbow,Gitchak·rong jal·ang,,,none,DUPLICATE_KEY
+279,sunrise,Sal·aram,,,none,DUPLICATE_KEY
+280,sunset,Sal·ikram,,,none,DUPLICATE_KEY
+281,house,Nok,,,none,DUPLICATE_KEY
+282,door,Do·ga,,,none,DUPLICATE_KEY
+283,window,Kelki,,,none,DUPLICATE_KEY
+284,bed,Palang,,,none,DUPLICATE_KEY
+285,chair,Chokki,,,none,DUPLICATE_KEY
+286,table,Mez,,,none,DUPLICATE_KEY
+287,plate,Tala,,,none,DUPLICATE_KEY
+288,cup,Cup,,,none,DUPLICATE_KEY
+289,spoon,Chamus,,,none,DUPLICATE_KEY
+290,knife,Kettal,,,none,DUPLICATE_KEY
+291,pot,Me.dik,,,none,DUPLICATE_KEY
+292,broom,Sal·re·at,,,none,DUPLICATE_KEY
+293,clothes,Ba·ra,,,none,DUPLICATE_KEY
+294,soap,Sabon,,,none,DUPLICATE_KEY
+295,mirror,Janera,,,none,DUPLICATE_KEY
+296,comb,Ken·chong,,,none,DUPLICATE_KEY
+297,lamp,Chakki,,,none,DUPLICATE_KEY
+298,key,Chabi,,,none,DUPLICATE_KEY
+299,bag,Thola,,,none,DUPLICATE_KEY
+300,book,Ki·tap,,,none,DUPLICATE_KEY
+301,axe,Rua (⚠ verb: to pour),,,none,DUPLICATE_KEY
+302,day,Sal,,,none,DUPLICATE_KEY
+303,night,Wal,,,none,DUPLICATE_KEY
+304,morning,Pring,,,none,DUPLICATE_KEY
+305,noon,Sal·jatchi,,,none,DUPLICATE_KEY
+306,evening,Attam,,,none,DUPLICATE_KEY
+307,today,Da·alo,,,none,DUPLICATE_KEY
+308,yesterday,Meja,,,none,DUPLICATE_KEY
+309,tomorrow,Knalo,,,none,DUPLICATE_KEY
+310,now,Da·o,,,none,DUPLICATE_KEY
+311,always,Pangnan,,,none,DUPLICATE_KEY
+312,sometimes,Gisep gisep,,,none,DUPLICATE_KEY
+313,week,Anti,,,none,DUPLICATE_KEY
+314,month,Ja,,,none,DUPLICATE_KEY
+315,year,Bilsi,,,none,DUPLICATE_KEY
+316,time,Somoi,,,none,DUPLICATE_KEY
+317,day after tomorrow,Me·nnalo,,,none,DUPLICATE_KEY
+318,day before yesterday,Me·si·ja,,,none,DUPLICATE_KEY
+319,later,Ja·mano,,,none,DUPLICATE_KEY
+320,before,Skang,,,none,DUPLICATE_KEY
+321,early,Bakkan / Pring·seng,,,none,DUPLICATE_KEY
+322,late,Ja·man·chak·a,,,none,DUPLICATE_KEY
+323,never,Pangnan·ba (ja),,,none,DUPLICATE_KEY
+324,shirt,Chola,,,none,DUPLICATE_KEY
+325,traditional wrap (women),Dakmanda,,,none,DUPLICATE_KEY
+326,shawl,Rekkeng,,,none,DUPLICATE_KEY
+327,turban,Kotip,,,none,DUPLICATE_KEY
+328,shoes,Juta,,,none,DUPLICATE_KEY
+329,socks,Moja,,,none,DUPLICATE_KEY
+330,hat,Tupi,,,none,DUPLICATE_KEY
+331,ring,Jakstem,,,none,DUPLICATE_KEY
+332,necklace,Ripok,,,none,DUPLICATE_KEY
+333,earring,Nachil·ganna,,,none,DUPLICATE_KEY
+334,big,Dal·a,,,none,DUPLICATE_KEY
+335,small,Chon·a,,,none,DUPLICATE_KEY
+336,long,Ro·a,,,none,DUPLICATE_KEY
+337,short,Kan·dik·a,,,none,DUPLICATE_KEY
+338,tall,Chu·a,,,none,DUPLICATE_KEY
+339,new,Gital,,,none,DUPLICATE_KEY
+340,old,Gitcham,,,none,DUPLICATE_KEY
+341,good,Nama,,,none,DUPLICATE_KEY
+342,bad,Namja,,,none,DUPLICATE_KEY
+343,fast,Ta·raka,,,none,DUPLICATE_KEY
+344,slow,Ka·sina,,,none,DUPLICATE_KEY
+345,rich,Nokma / Man·e·cha·gipa,,,none,DUPLICATE_KEY
+346,poor,Kangal,,,none,DUPLICATE_KEY
+347,dry,Ran·a,,,none,DUPLICATE_KEY
+348,wet,Chon·a / Sosia,,,none,DUPLICATE_KEY
+349,tasty,Toa,,,none,DUPLICATE_KEY
+350,village,Song,,,none,DUPLICATE_KEY
+351,town,Songjinma,,,none,DUPLICATE_KEY
+352,school,Skul,,,none,DUPLICATE_KEY
+353,market,Bajal / Anti,,,none,DUPLICATE_KEY
+354,road,Rama,,,none,DUPLICATE_KEY
+355,field,A·ba,,,none,DUPLICATE_KEY
+356,office,Kam·ka·chakani,,,none,DUPLICATE_KEY
+357,church,Gilja·nok,,,none,DUPLICATE_KEY
+358,shop,Dokan,,,none,DUPLICATE_KEY
+359,hospital,Hospital / Sam·nok,,,none,DUPLICATE_KEY
+360,up,Kosak,,,none,DUPLICATE_KEY
+361,down,Ka·ma,,,none,DUPLICATE_KEY
+362,left,Jak·asi,,,none,DUPLICATE_KEY
+363,right,Jak·ra,,,none,DUPLICATE_KEY
+364,front,Mikkang,,,none,DUPLICATE_KEY
+365,back,Janggila,,,none,DUPLICATE_KEY
+366,inside,Ning·o,,,none,DUPLICATE_KEY
+367,outside,A·pal,,,none,DUPLICATE_KEY
+368,far,Chel·a,,,none,DUPLICATE_KEY
+369,near,Sepang,,,none,DUPLICATE_KEY
+370,north,Salgro,,,none,DUPLICATE_KEY
+371,south,Salgipeng,,,none,DUPLICATE_KEY
+372,east,Salaram,,,none,DUPLICATE_KEY
+373,west,Saliram,,,none,DUPLICATE_KEY
+374,center,Jatchi,,,none,DUPLICATE_KEY
+375,side,Rikam,,,none,DUPLICATE_KEY
+376,farmer,Game·cha·gipa,,,none,DUPLICATE_KEY
+377,teacher,Skigipa,,,none,DUPLICATE_KEY
+378,student,Porai·gipa,,,none,DUPLICATE_KEY
+379,doctor,Doctor / Sam·on·gipa,,,none,DUPLICATE_KEY
+380,nurse,Nurse,,,none,DUPLICATE_KEY
+381,driver,Gari·chalai·gipa,,,none,DUPLICATE_KEY
+382,carpenter,Bal·sol·gipa,,,none,DUPLICATE_KEY
+383,blacksmith,Sil·dak·gipa,,,none,DUPLICATE_KEY
+384,shopkeeper,Dokan·dakgipa,,,none,DUPLICATE_KEY
+385,tailor,Ba·ra·sikgipa,,,none,DUPLICATE_KEY
+386,worker / laborer,Kam·ka·gipa,,,none,DUPLICATE_KEY
+387,king,Raja,,,none,DUPLICATE_KEY
+388,chief,Nokma,,,none,DUPLICATE_KEY
+389,police,Pulis,,,none,DUPLICATE_KEY
+390,soldier,Sipai,,,none,DUPLICATE_KEY
+391,postman,Chiti·ra·ba·gipa,,,none,DUPLICATE_KEY
+392,cook,Song·a,,,none,DUPLICATE_KEY
+393,leader,Dilgipa,,,none,DUPLICATE_KEY
+394,preacher,Aganprakgipa,,,none,DUPLICATE_KEY
+395,thief,Cha·u,,,none,DUPLICATE_KEY
+396,guest,Sokgipa,,,none,DUPLICATE_KEY
+397,stranger,Agital,,,none,DUPLICATE_KEY
+398,class,Klas,,,none,DUPLICATE_KEY
+399,paper,Lekka,,,none,DUPLICATE_KEY
+400,pen,Pen,,,none,DUPLICATE_KEY
+401,pencil,Pencil,,,none,DUPLICATE_KEY
+402,ink,Kali,,,none,DUPLICATE_KEY
+403,lesson,Porani,,,none,DUPLICATE_KEY
+404,letter (alphabet),Oikor,,,none,DUPLICATE_KEY
+405,word,Katta,,,none,DUPLICATE_KEY
+406,sentence,Katta·ku·chik,,,none,DUPLICATE_KEY
+407,question,Sing·ani,,,none,DUPLICATE_KEY
+408,answer,Aganchaka,,,none,DUPLICATE_KEY
+409,test / exam,Porika,,,none,DUPLICATE_KEY
+410,knowledge,Gni / Ma·siani,,,none,DUPLICATE_KEY
+411,wisdom,Seng·ani,,,none,DUPLICATE_KEY
+412,story,Golpo,,,none,DUPLICATE_KEY
+413,map,Map,,,none,DUPLICATE_KEY
+414,picture,Noksa,,,none,DUPLICATE_KEY
+415,mistake,Gualani,,,none,DUPLICATE_KEY
+416,medicine,Sam,,,none,DUPLICATE_KEY
+417,pain,Sa·dika,,,none,DUPLICATE_KEY
+418,fever,Sin··ding··a,,,none,DOUBLE_RAKA|DUPLICATE_KEY
+419,cough,Gusua,,,none,DUPLICATE_KEY
+420,headache,Sko·saa,,,none,DUPLICATE_KEY
+421,stomachache,Ok·saa,,,none,DUPLICATE_KEY
+422,wound / injury,Mata,,,none,DUPLICATE_KEY
+423,blood,An·chi,,,none,DUPLICATE_KEY
+424,bone,Greng,,,none,DUPLICATE_KEY
+425,healthy,An·senga,,,none,DUPLICATE_KEY
+426,weak,Bilgri,,,none,DUPLICATE_KEY
+427,strong,Bilaka,,,none,DUPLICATE_KEY
+428,blind,Mikgri,,,none,DUPLICATE_KEY
+429,deaf,Nachil·kala,,,none,DUPLICATE_KEY
+430,mute,Ku·ma,,,none,DUPLICATE_KEY
+431,poison,Bisi,,,none,DUPLICATE_KEY
+432,swelling,Ripoma,,,none,DUPLICATE_KEY
+433,itch,Ka·kita,,,none,DUPLICATE_KEY
+434,pill,Sam,,,none,DUPLICATE_KEY
+435,knife (small),Kettal,,,none,DUPLICATE_KEY
+436,sword / machete,Mil·am,,,none,DUPLICATE_KEY
+437,hoe,Gitchima / kodal,,,none,DUPLICATE_KEY
+438,hammer,Martul,,,none,DUPLICATE_KEY
+439,nail (metal),Gajal / Gojal,,,none,DUPLICATE_KEY
+440,rope,Budu,,,none,DUPLICATE_KEY
+441,basket (backpack),Kokcheng,,,none,DUPLICATE_KEY
+442,umbrella,Satta,,,none,DUPLICATE_KEY
+443,ladder,Jang·ke,,,none,DUPLICATE_KEY
+444,bridge,Jal·ang,,,none,DUPLICATE_KEY
+445,boat,Ring,,,none,DUPLICATE_KEY
+446,life,Janggi,,,none,DUPLICATE_KEY
+447,death,Sia,,,none,DUPLICATE_KEY
+448,truth,Bebe,,,none,DUPLICATE_KEY
+449,lie,Tol·a,,,none,DUPLICATE_KEY
+450,war,Dakgrikani,,,none,DUPLICATE_KEY
+451,dream,Jumang,,,none,DUPLICATE_KEY
+452,sound,Gam·a,,,none,DUPLICATE_KEY
+453,voice,Ku·rang,,,none,DUPLICATE_KEY
+454,light,Seng·a,,,none,DUPLICATE_KEY
+455,darkness,Andala,,,none,DUPLICATE_KEY
+456,ghost,Me·mang,,,none,DUPLICATE_KEY
+457,tradition,Dakbewal,,,none,DUPLICATE_KEY
+458,language,Ku·sik,,,none,DUPLICATE_KEY
+459,shadow,Jagring,,,none,DUPLICATE_KEY
+460,all,Gimikan,,,none,DUPLICATE_KEY
+461,some,Mitam,,,none,DUPLICATE_KEY
+462,many / much,Bang·a,,,none,DUPLICATE_KEY
+463,few / little,On·titi,,,none,DUPLICATE_KEY
+464,more,Bang·bata,,,none,DUPLICATE_KEY
+465,less,Komia,,,none,DUPLICATE_KEY
+466,empty,Bangbang,,,none,DUPLICATE_KEY
+467,full,Gapa,,,none,DUPLICATE_KEY
+468,enough,Chu·onga,,,none,DUPLICATE_KEY
+469,rice (uncooked),Merong,,,none,DUPLICATE_KEY
+470,rice (cooked),Mi,,,none,DUPLICATE_KEY
+471,salt,Kari,,,none,DUPLICATE_KEY
+472,oil,To,,,none,DUPLICATE_KEY
+473,sugar,Chini,,,none,DUPLICATE_KEY
+474,milk,Dutt,,,none,DUPLICATE_KEY
+475,egg,Do·chi,,,none,DUPLICATE_KEY
+476,meat,Be·en,,,none,DUPLICATE_KEY
+477,fish,Na·tok,,,none,DUPLICATE_KEY
+478,dry fish,Na·kam,,,none,DUPLICATE_KEY
+479,turmeric,Holdi,,,none,DUPLICATE_KEY
+480,chili,Jal·ik,,,none,DUPLICATE_KEY
+481,lentils,Dalli,,,none,DUPLICATE_KEY
+482,bread,Ruti,,,none,DUPLICATE_KEY
+483,tea,Cha,,,none,DUPLICATE_KEY
+484,spices (general),Mosila,,,none,DUPLICATE_KEY
+485,to cook,Song·a,,,none,DUPLICATE_KEY
+486,to fry,Jo·a,,,none,DUPLICATE_KEY
+487,to boil,Rita,,,none,DUPLICATE_KEY
+488,to bake / roast,Ang·a,,,none,DUPLICATE_KEY
+489,to stir,Mo·ila,,,none,DUPLICATE_KEY
+490,pan,Sospen,,,none,DUPLICATE_KEY
+491,firewood,Am·bol,,,none,DUPLICATE_KEY
+492,road / path,Rama,,,none,DUPLICATE_KEY
+493,car,Gari,,,none,DUPLICATE_KEY
+494,bicycle,Rengrengsil,,,none,DUPLICATE_KEY
+495,motorcycle,Motor·cycle,,,none,DUPLICATE_KEY
+496,train,Rail·gari,,,none,DUPLICATE_KEY
+497,airplane,Sildo·reng,,,none,DUPLICATE_KEY
+498,distance,Chel·a,,,none,DUPLICATE_KEY
+499,journey,Songre,,,none,DUPLICATE_KEY
+500,ticket,Tikit,,,none,DUPLICATE_KEY
+501,bag / luggage,Bostu,,,none,DUPLICATE_KEY
+502,to arrive,Sokbaa,,,none,DUPLICATE_KEY
+503,to leave,Re·ongkata,,,none,DUPLICATE_KEY
+504,to wait,Damo / Sengbo,,,none,DUPLICATE_KEY
+505,station / stop,Nengtakani Biap,,,none,DUPLICATE_KEY
+506,man,Me·asa,,,none,DUPLICATE_KEY
+507,woman,Me·chik,,,none,DUPLICATE_KEY
+508,boy,Pante,,,none,DUPLICATE_KEY
+509,girl,Me·tra,,,none,DUPLICATE_KEY
+510,child,Bi·sa,,,none,DUPLICATE_KEY
+511,old man,Budepa,,,none,DUPLICATE_KEY
+512,old woman,Buchuma,,,none,DUPLICATE_KEY
+513,youth,Me·tra·pante,,,none,DUPLICATE_KEY
+514,enemy,Bobil,,,none,DUPLICATE_KEY
+515,neighbor,Noksul,,,none,DUPLICATE_KEY
+516,master / owner,Nokgipa,,,none,DUPLICATE_KEY
+517,servant,Nokkol,,,none,DUPLICATE_KEY
+518,village chief,Nokma,,,none,DUPLICATE_KEY
+519,wood,Bol,,,none,DUPLICATE_KEY
+520,iron / metal,Sil,,,none,DUPLICATE_KEY
+521,gold,Sona,,,none,DUPLICATE_KEY
+522,silver,Rupa,,,none,DUPLICATE_KEY
+523,cloth,Ba·ra,,,none,DUPLICATE_KEY
+524,plastic,Plastic,,,none,DUPLICATE_KEY
+525,glass,Glass,,,none,DUPLICATE_KEY
+526,bamboo,Wa·a,,,none,DUPLICATE_KEY
+527,thick,Ritchaa,,,none,DUPLICATE_KEY
+528,thin,Ba·renga,,,none,DUPLICATE_KEY
+529,hard,Rak·a,,,none,DUPLICATE_KEY
+530,who,Sawa,,,none,DUPLICATE_KEY
+531,what,Maia,,,none,DUPLICATE_KEY
+532,when,Basako,,,none,DUPLICATE_KEY
+533,where,Bano,,,none,DUPLICATE_KEY
+534,why,Maini·gimin,,,none,DUPLICATE_KEY
+535,how,Maikai,,,none,DUPLICATE_KEY
+536,and,Aro,,,none,DUPLICATE_KEY
+537,but,Indiba,,,none,DUPLICATE_KEY
+538,or,Ba,,,none,DUPLICATE_KEY
+539,because,Maina,,,none,DUPLICATE_KEY
+540,crab,Ang·ke,,,none,DUPLICATE_KEY
+541,frog,Beng·blok,,,none,DUPLICATE_KEY
+542,turtle,Ki·sing,,,none,DUPLICATE_KEY
+543,prawn / shrimp,Na·tik,,,none,DUPLICATE_KEY
+544,butterfly,Me·pilip,,,none,DUPLICATE_KEY
+545,bee,Bija,,,none,DUPLICATE_KEY
+546,ant,Chibrim,,,none,DUPLICATE_KEY
+547,mosquito,Ganggu,,,none,DUPLICATE_KEY
+548,fly,Bila,,,none,DUPLICATE_KEY
+549,spider,Guwang,,,none,DUPLICATE_KEY
+550,cockroach,Karo,,,none,DUPLICATE_KEY
+551,scorpion,Mangkram,,,none,DUPLICATE_KEY
+552,worm / caterpillar,Jo·ong,,,none,DUPLICATE_KEY
+553,tail,Ki·me,,,none,DUPLICATE_KEY
+554,horn,Grong,,,none,DUPLICATE_KEY
+555,wing,Grang,,,none,DUPLICATE_KEY
+556,feather,Kimil,,,none,DUPLICATE_KEY
+557,beak,Ku·chot,,,none,DUPLICATE_KEY
+558,nest,Do·bitip,,,none,DUPLICATE_KEY
+559,hoof,Ja·skil,,,none,DUPLICATE_KEY
+560,claw,Jakskil,,,none,DUPLICATE_KEY
+561,to fly,Bila,,,none,DUPLICATE_KEY
+562,to swim,Jroa (⚠ also: stinging sensation),,,none,DUPLICATE_KEY
+563,to bark,Sing·a,,,none,DUPLICATE_KEY
+564,to bite,Chika,,,none,DUPLICATE_KEY
+565,to crawl,Malama,,,none,DUPLICATE_KEY
+566,to growl,Randinga,,,none,DUPLICATE_KEY
+567,to lay eggs,Bitchi·chi·a,,,none,DUPLICATE_KEY
+568,to hunt,Sikar·ka·a,,,none,DUPLICATE_KEY
+569,to catch,Rim·a,,,none,DUPLICATE_KEY
+570,wild,Buringni,,,none,DUPLICATE_KEY
+571,tame,Nokni,,,none,DUPLICATE_KEY
+572,god,Isol,,,none,DUPLICATE_KEY
+573,spirit / soul,Janggi / Gisik,,,none,DUPLICATE_KEY
+574,heaven,Salgi,,,none,DUPLICATE_KEY
+575,hell,Norok,,,none,DUPLICATE_KEY
+576,prayer,Bi·ani,,,none,DUPLICATE_KEY
+577,to pray,Bi·a,,,none,DUPLICATE_KEY
+578,worship,Olakkiani,,,none,DUPLICATE_KEY
+579,sin,Pap,,,none,DUPLICATE_KEY
+580,blessing,Pattiani,,,none,DUPLICATE_KEY
+581,sacrifice,Boli,,,none,DUPLICATE_KEY
+582,holy,Rongtalgipa,,,none,DUPLICATE_KEY
+583,pastor,Pamong,,,none,DUPLICATE_KEY
+584,priest,Kamal,,,none,DUPLICATE_KEY
+585,bible,Sastro,,,none,DUPLICATE_KEY
+586,faith,Bebera·ani,,,none,DUPLICATE_KEY
+587,miracle,Aiao·inmangipa·kam,,,none,DUPLICATE_KEY
+588,angel,Sa·gre,,,none,DUPLICATE_KEY
+589,law,Niam,,,none,DUPLICATE_KEY
+590,court,Kachari,,,none,DUPLICATE_KEY
+591,prison,Patok·nok,,,none,DUPLICATE_KEY
+592,punishment,Sasti,,,none,DUPLICATE_KEY
+593,reward,Boksis,,,none,DUPLICATE_KEY
+594,country,A·song,,,none,DUPLICATE_KEY
+595,freedom,Jakgitelani,,,none,DUPLICATE_KEY
+596,fight,Dakgrikani,,,none,DUPLICATE_KEY
+597,tax,Kajina,,,none,DUPLICATE_KEY
+598,signature,Jak·soi,,,none,DUPLICATE_KEY
+599,witness,Sakki,,,none,DUPLICATE_KEY
+600,guilty,Dos·gnang,,,none,DUPLICATE_KEY
+601,innocent,Dos·gri,,,none,DUPLICATE_KEY
+602,to judge,Bichal·ka·a,,,none,DUPLICATE_KEY
+603,to clean,Rongtalata,,,none,DUPLICATE_KEY
+604,to sweep,Itroka,,,none,DUPLICATE_KEY
+605,to wash (clothes),Su·sranga,,,none,DUPLICATE_KEY
+606,to wash (hands),Jaksua,,,none,DUPLICATE_KEY
+607,to wash (face),Miksua,,,none,DUPLICATE_KEY
+608,to bathe,Aua,,,none,DUPLICATE_KEY
+609,to mend / fix,Namatpila,,,none,DUPLICATE_KEY
+610,to build,Rika,,,none,DUPLICATE_KEY
+611,to dig,Cho·a,,,none,DUPLICATE_KEY
+612,to plant,Ge·a,,,none,DUPLICATE_KEY
+613,to cut (wood),Den·a,,,none,DUPLICATE_KEY
+614,to break,Be·ata,,,none,DUPLICATE_KEY
+615,to burn,So·a,,,none,DUPLICATE_KEY
+616,to light (lamp),Ching·ata,,,none,DUPLICATE_KEY
+617,to put out (fire),Kimita,,,none,DUPLICATE_KEY
+618,to wrap,Kadepa,,,none,DUPLICATE_KEY
+619,to tie,Kaa,,,none,DUPLICATE_KEY
+620,to untie,Enga,,,none,DUPLICATE_KEY
+621,to carry (on head),Ritchila,,,none,DUPLICATE_KEY
+622,to carry (on back),Ripea,,,none,DUPLICATE_KEY
+623,to carry (in hand),De·a,,,none,DUPLICATE_KEY
+624,hungry,Okkria,,,none,DUPLICATE_KEY
+625,thirsty,Chi·ringna·ska,,,none,DUPLICATE_KEY
+626,tired,Neng·a,,,none,DUPLICATE_KEY
+627,sleepy,Tusina·ska,,,none,DUPLICATE_KEY
+628,sick,Sakama,,,none,DUPLICATE_KEY
+629,dizzy,Miksula,,,none,DUPLICATE_KEY
+630,sweat,Ding·ol,,,none,DUPLICATE_KEY
+631,light (weight),Seng·a,,,none,DUPLICATE_KEY
+632,soft,Nom·a,,,none,DUPLICATE_KEY
+633,sharp,Mata,,,none,DUPLICATE_KEY
+634,blunt,Bin·a,,,none,DUPLICATE_KEY
+635,smooth,Rinoka,,,none,DUPLICATE_KEY
+636,rough,Skaka,,,none,DUPLICATE_KEY
+637,deep,Tu·a,,,none,DUPLICATE_KEY
+638,shallow,Tu·ja,,,none,DUPLICATE_KEY
+639,high,Chua,,,none,DUPLICATE_KEY
+640,low,Ona,,,none,DUPLICATE_KEY
+641,wide,Apala,,,none,DUPLICATE_KEY
+642,narrow,Apchona,,,none,DUPLICATE_KEY
+643,dirty,Mitchia,,,none,DUPLICATE_KEY
+644,expensive,Dam·raka,,,none,DUPLICATE_KEY
+645,cheap,Dam·nom·a,,,none,DUPLICATE_KEY
+646,i,Anga,,,none,DUPLICATE_KEY
+647,me,Angko,,,none,DUPLICATE_KEY
+648,you (singular),Na·a,,,none,DUPLICATE_KEY
+649,you (object),Nang·na / Nang·ko,,,none,DUPLICATE_KEY
+650,he / she,Ua,,,none,DUPLICATE_KEY
+651,him / her,Una,,,none,DUPLICATE_KEY
+652,We (excl.),Chinga,,,none,DUPLICATE_KEY
+653,We (incl.),An·ching,,,none,DUPLICATE_KEY
+654,Us,Chingna,,,none,DUPLICATE_KEY
+655,they,Uamang,,,none,DUPLICATE_KEY
+656,them,Uamangna,,,none,DUPLICATE_KEY
+657,my / mine,Angni,,,none,DUPLICATE_KEY
+658,your / yours,Nang·ni,,,none,DUPLICATE_KEY
+659,his / her / hers,Uni,,,none,DUPLICATE_KEY
+660,our / ours,Chingni / An·chingni,,,none,DUPLICATE_KEY
+661,their / theirs,Uamangni,,,none,DUPLICATE_KEY
+662,whose?,Sani?,,,none,DUPLICATE_KEY
+663,someone's,Saniba,,,none,DUPLICATE_KEY
+664,everyone's,Pilakni,,,none,DUPLICATE_KEY
+665,this,Ia,,,none,DUPLICATE_KEY
+666,that,Ua,,,none,DUPLICATE_KEY
+667,these,Iamang,,,none,DUPLICATE_KEY
+668,those,Uamang,,,none,DUPLICATE_KEY
+669,here,Iano,,,none,DUPLICATE_KEY
+670,there,Uano,,,none,DUPLICATE_KEY
+671,myself,Anga an·tang,,,none,DUPLICATE_KEY
+672,yourself,Na·a an·tang,,,none,DUPLICATE_KEY
+673,himself / herself,Ua an·tang,,,none,DUPLICATE_KEY
+674,someone,Saksa,,,none,DUPLICATE_KEY
+675,no one,Darangba·ong·ja,,,none,DUPLICATE_KEY
+676,everyone,Sakanti,,,none,DUPLICATE_KEY
+677,each,Sakprak,,,none,DUPLICATE_KEY
+678,other,Gipin,,,none,DUPLICATE_KEY
+679,money,Tangka,,,none,DUPLICATE_KEY
+680,price,Dam,,,none,DUPLICATE_KEY
+681,to buy,Brea,,,none,DUPLICATE_KEY
+682,to sell,Pala,,,none,DUPLICATE_KEY
+683,coin,Tangka·bisil,,,none,DUPLICATE_KEY
+684,scale,Tochakani,,,none,DUPLICATE_KEY
+685,fresh,Gital,,,none,DUPLICATE_KEY
+686,stale,Gitcham,,,none,DUPLICATE_KEY
+687,discount,Dam·komiatani,,,none,DUPLICATE_KEY
+688,customer,Bregipa,,,none,DUPLICATE_KEY
+689,how much is this?,Baita?,,,none,DUPLICATE_KEY
+690,reduce the price,Dam·ko on·tisa komiatbo.,,,none,DUPLICATE_KEY
+691,i want to buy this,Anga iako brena ska.,,,none,DUPLICATE_KEY
+692,do you have...?,Nang·o ... dongama?,,,none,DUPLICATE_KEY
+693,it is too expensive,Ia dam rakduga.,,,none,DUPLICATE_KEY
+694,give me one kilo,Angna kilo·sa on·bo.,,,none,DUPLICATE_KEY
+695,hello,Salam / Namengama,,,none,DUPLICATE_KEY
+696,excuse me,Angko kema·watbo.,,,none,DUPLICATE_KEY
+697,sorry,Kema·bi·a.,,,none,DUPLICATE_KEY
+698,good afternoon,Salnam.,,,none,DUPLICATE_KEY
+699,good evening,Attamnam.,,,none,DUPLICATE_KEY
+700,goodbye,Re·ang·na / Nam·en·dongbo.,,,none,DUPLICATE_KEY
+701,see you again,Pil·tai·grongna,,,none,DUPLICATE_KEY
+702,welcome,Rimchaksoa,,,none,DUPLICATE_KEY
+703,come in,Ning·chi re·babo.,,,none,DUPLICATE_KEY
+704,sit down,Asongbo.,,,none,DUPLICATE_KEY
+705,eat well,Name cha·bo.,,,none,DUPLICATE_KEY
+706,where are you from?,Na·a bano·ni?,,,none,DUPLICATE_KEY
+707,i am from...,Anga ...·ni.,,,none,DUPLICATE_KEY
+708,clock / watch,Guri,,,none,DUPLICATE_KEY
+709,hour,Konta,,,none,DUPLICATE_KEY
+710,afternoon,Sal·aksol,,,none,DUPLICATE_KEY
+711,midnight,Wal·jatchi,,,none,DUPLICATE_KEY
+712,summer,Ding·kari,,,none,DUPLICATE_KEY
+713,winter,Sin·kari,,,none,DUPLICATE_KEY
+714,rainy season,Mikkari,,,none,DUPLICATE_KEY
+715,if,Ode / ·ode,,,none,DUPLICATE_KEY
+716,so / therefore,Uni gimin,,,none,DUPLICATE_KEY
+717,with,Baksa,,,none,DUPLICATE_KEY
+718,for,Gimin / ·na,,,none,DUPLICATE_KEY
+719,from,·oni,,,none,DUPLICATE_KEY
+720,to,·na,,,none,DUPLICATE_KEY
+721,in / at,·o,,,none,DUPLICATE_KEY
+722,on,Kosak·o,,,none,DUPLICATE_KEY
+723,under,Ka·ma·o,,,none,DUPLICATE_KEY
+724,between,Jatchi·o,,,none,DUPLICATE_KEY
+725,only,·mangmang / ·san,,,none,DUPLICATE_KEY
+726,also,·ba,,,none,DUPLICATE_KEY
+727,very,Be·en / Bakkan,,,none,DUPLICATE_KEY
+728,again,Pil·tai,,,none,DUPLICATE_KEY
+729,wait,Damo/Sengbo,,,none,DUPLICATE_KEY
+730,quick / hurry,Tarkbo,,,none,DUPLICATE_KEY
+731,look,Ni·bo,,,none,DUPLICATE_KEY
+732,tell me,Angna agan·bo,,,none,DUPLICATE_KEY
+733,i know,Anga uia.,,,none,DUPLICATE_KEY
+734,no more,Dongja,,,none,DUPLICATE_KEY
+735,it exists / it's there,Donga,,,none,DUPLICATE_KEY
+736,i don't care,Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+737,Wait a moment,Damo / Gisep sengbo,,,none,DUPLICATE_KEY
+738,no problem / never mind,Maming ba ong·ja,,,none,DUPLICATE_KEY
+739,i understand,Anga uia,,,none,DUPLICATE_KEY
+740,i don't understand,Anga uija,,,none,DUPLICATE_KEY
+741,say it again,Piltai aganbo,,,none,DUPLICATE_KEY
+742,speak slowly,Ka·sine aganbo,,,none,DUPLICATE_KEY
+743,what did you say?,Na·a maiko agana?,,,none,DUPLICATE_KEY
+744,Is that so?,Inde·a?,,,none,DUPLICATE_KEY
+745,really?,Bebema?,,,none,DUPLICATE_KEY
+746,of course!,"Oe, bebe!",,,none,DUPLICATE_KEY
+747,Let's eat,Hai cha·ha,,,none,DUPLICATE_KEY
+748,Let's go,Hai re·naha,,,none,DUPLICATE_KEY
+749,let's sleep,Hai tusina,,,none,DUPLICATE_KEY
+750,hurry up!,Tarkbo!,,,none,DUPLICATE_KEY
+751,Come quick!,Tarake re·babo!,,,none,DUPLICATE_KEY
+752,be careful!,Chimsakbo!,,,none,DUPLICATE_KEY
+753,come here!,Ianona re·babo!,,,none,DUPLICATE_KEY
+754,go away!,Re·angbo!,,,none,DUPLICATE_KEY
+755,enough!,Chu·onga!,,,none,DUPLICATE_KEY
+756,not now,Da·o ong·ja,,,none,DUPLICATE_KEY
+757,maybe,Ong·naba donga,,,none,DUPLICATE_KEY
+758,i forgot,Anga guala,,,none,DUPLICATE_KEY
+759,i remember,Anga gisik ra·a,,,none,DUPLICATE_KEY
+760,what time is it?,Baita baji?,,,none,DUPLICATE_KEY
+761,i am busy,Anga kam·gnanga,,,none,DUPLICATE_KEY
+762,i am not busy,Anga kam·gnang·ja,,,none,DUPLICATE_KEY
+763,i am coming,Anga re·baenga,,,none,DUPLICATE_KEY
+764,i am going,Anga re·angenga,,,none,DUPLICATE_KEY
+765,help me,Angko dakchakbo,,,none,DUPLICATE_KEY
+766,thank you very much,Mittela dakpile,,,none,DUPLICATE_KEY
+767,i am happy,Anga kusionga,,,none,DUPLICATE_KEY
+768,i am sad,Anga dukonga,,,none,DUPLICATE_KEY
+769,i am angry,Anga ka·o nanga,,,none,DUPLICATE_KEY
+770,i am scared,Anga kena,,,none,DUPLICATE_KEY
+771,i am tired,Anga neng·a,,,none,DUPLICATE_KEY
+772,i miss you,Anga nang·na simbraa,,,none,DUPLICATE_KEY
+773,i am worried,Anga jajrenja,,,none,DUPLICATE_KEY
+774,i feel lonely,Anga saksan gisik·o nanga,,,none,DUPLICATE_KEY
+775,don't be sad,Duk ong·ja,,,none,DUPLICATE_KEY
+776,don't be afraid,Kennabe,,,none,DUPLICATE_KEY
+777,be patient,Chakchikbo,,,none,DUPLICATE_KEY
+778,be brave,Ka·dongbo,,,none,DUPLICATE_KEY
+779,i am ashamed,Anga kracha·a,,,none,DUPLICATE_KEY
+780,i am jealous,Anga mikbua,,,none,DUPLICATE_KEY
+781,i forgive you,Anga nang·ko kema ka·ra,,,none,DUPLICATE_KEY
+782,i am grateful,Anga mittela nanga,,,none,DUPLICATE_KEY
+783,i trust you,Nang·ko bebe ra·a,,,none,DUPLICATE_KEY
+784,i am surprised,Anga jagok·a,,,none,DUPLICATE_KEY
+785,i am satisfied,Anga chu·ongnika,,,none,DUPLICATE_KEY
+786,Drive,Sala,,,none,DUPLICATE_KEY
+787,Pull,Sala,,,none,DUPLICATE_KEY
+788,Swim,Jroa,,,none,DUPLICATE_KEY
+789,Climb,Maldoa / Gadoa,,,none,DUPLICATE_KEY
+790,jump,Bildoa,,,none,DUPLICATE_KEY
+791,crawl,Malama,,,none,DUPLICATE_KEY
+792,roll,Romroma,,,none,DUPLICATE_KEY
+793,Roam / Wander,Rorama / Roama,,,none,DUPLICATE_KEY
+794,shake,Moa,,,none,DUPLICATE_KEY
+795,move (something),De·jita,,,none,DUPLICATE_KEY
+796,Lock,Teka,,,none,DUPLICATE_KEY
+797,Shoot,Goa,,,none,DUPLICATE_KEY
+798,Look / See / Watch,Nia,,,none,DUPLICATE_KEY
+799,Stare,Nitata,,,none,DUPLICATE_KEY
+800,show,Mesoka,,,none,DUPLICATE_KEY
+801,smell,Gingsika,,,none,DUPLICATE_KEY
+802,spread,Barama,,,none,DUPLICATE_KEY
+803,Pour,Rua,,,none,DUPLICATE_KEY
+804,Apply,Nonga,,,none,DUPLICATE_KEY
+805,Pluck,Aka,,,none,DUPLICATE_KEY
+806,turn (page/sheet),Badala,,,none,DUPLICATE_KEY
+807,fry,Jo·a,,,none,DUPLICATE_KEY
+808,boil,Rita,,,none,DUPLICATE_KEY
+809,bake / roast,Ang·a,,,none,DUPLICATE_KEY
+810,stir,Mo·ila,,,none,DUPLICATE_KEY
+811,taste,Nong·mia,,,none,DUPLICATE_KEY
+812,peel,Brika,,,none,DUPLICATE_KEY
+813,chop,Rata,,,none,DUPLICATE_KEY
+814,grind,Supneka,,,none,DUPLICATE_KEY
+815,add salt,Kari on·bo,,,none,DUPLICATE_KEY
+816,serve food,Mi Onbo,,,none,DUPLICATE_KEY
+817,eat together,Baksa cha·ha,,,none,DUPLICATE_KEY
+818,think,Gisik·o nanga,,,none,DUPLICATE_KEY
+819,know,Uia,,,none,DUPLICATE_KEY
+820,forget,Guala,,,none,DUPLICATE_KEY
+821,remember,Ku·rachaka,,,none,DUPLICATE_KEY
+822,decide,Tik ka·a,,,none,DUPLICATE_KEY
+823,agree,Ka·racha,,,none,DUPLICATE_KEY
+824,disagree,Ka·rach·ong·ja,,,none,DUPLICATE_KEY
+825,promise,Ka·ra chaka,,,none,DUPLICATE_KEY
+826,tell the truth,Bebeko aganbo,,,none,DUPLICATE_KEY
+827,ask,Sing·a,,,none,DUPLICATE_KEY
+828,read,Pora,,,none,DUPLICATE_KEY
+829,write,Sea,,,none,DUPLICATE_KEY
+830,count,Chanbo,,,none,DUPLICATE_KEY
+831,learn,Sikia,,,none,DUPLICATE_KEY
+832,teach,Sikie on·a,,,none,DUPLICATE_KEY
+833,Traditional festival,Wangala,,,none,DUPLICATE_KEY
+834,traditional dance,Do·krua,,,none,DUPLICATE_KEY
+835,traditional drum,Dama,,,none,DUPLICATE_KEY
+836,traditional flute,Rongsi,,,none,DUPLICATE_KEY
+837,Clan / Lineage,Mahari,,,none,DUPLICATE_KEY
+838,Ancestral property,A·chik daka,,,none,DUPLICATE_KEY
+839,Village headman,Nokma,,,none,DUPLICATE_KEY
+840,traditional house,A·chik nok,,,none,DUPLICATE_KEY
+841,Jhumming (slash & burn),A·ba daka,,,none,DUPLICATE_KEY
+842,sacred grove,Kosi,,,none,DUPLICATE_KEY
+843,traditional rice beer,Minil Bitchi,,,none,DUPLICATE_KEY
+844,weaving,Do·rua,,,none,DUPLICATE_KEY
+845,dakmanda (women's wrap),Dakmanda,,,none,DUPLICATE_KEY
+846,nokpante (bachelor house),Nokpante,,,none,DUPLICATE_KEY
+847,Ancestor worship,Songsarek,,,none,DUPLICATE_KEY
+848,Don't judge by appearance,Mikrangni bimung gri,,,none,DUPLICATE_KEY
+849,United we stand,"Baksa nangchim·a, saksan sia",,,none,DUPLICATE_KEY
+850,"work hard now, rest later","Skang daka, ja·mano nengbo",,,none,DUPLICATE_KEY
+851,"speak less, do more","Agana gri, daka bang·a",,,none,DUPLICATE_KEY
+852,a good person is known by deeds,Nama mande·ra ua kam·o uia,,,none,DUPLICATE_KEY
+853,Don't waste food,Mi gual·ata·bo ong·ja,,,none,DUPLICATE_KEY
+854,"The forest gives, the forest takes","Buring on·a, buring ra·a",,,none,DUPLICATE_KEY
+855,truth always comes out,Bebe·ra inde·a piltai,,,none,DUPLICATE_KEY
+856,a little is better than nothing,"On·titi nama, bangbang·bata",,,none,DUPLICATE_KEY
+857,Wow! / Amazing!,Aio!,,,none,DUPLICATE_KEY
+858,Yikes! / Oh no!,Himanga!,,,none,DUPLICATE_KEY
+859,Hey! (calling someone),Ei! / O!,,,none,DUPLICATE_KEY
+860,What's up?,Maiko nanga?,,,none,DUPLICATE_KEY
+861,no way! / impossible!,Ong·ja inde·ba!,,,none,DUPLICATE_KEY
+862,whatever / i don't care,Jeba Onj·china / Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+863,stop it,Dontonjbo,,,none,DUPLICATE_KEY
+864,cool / awesome,Nito / Nita·gipa,,,none,DUPLICATE_KEY
+865,Annoying,Jala·gipa,,,none,DUPLICATE_KEY
+866,let's hang out,Hai roromna,,,none,DUPLICATE_KEY
+867,i'm broke,Anga tangka donja,,,none,DUPLICATE_KEY
+868,he/she is lying,Ua tolenga,,,none,DUPLICATE_KEY
+869,mind your own business,Nangni kamko dakbo,,,none,DUPLICATE_KEY
+870,i'm hungry (casual),Anga okkrinenga,,,none,DUPLICATE_KEY
+871,just joking,Anga kalake roega,,,none,DUPLICATE_KEY
+872,chill out / relax,Nom·a bo,,,none,DUPLICATE_KEY
+873,Let's go already!,Re·naha ba!,,,none,DUPLICATE_KEY
+874,kind / gentle,Nama·gipa,,,none,DUPLICATE_KEY
+875,brave,Ka·rakani·gipa,,,none,DUPLICATE_KEY
+876,clever,Seng·a·gipa,,,none,DUPLICATE_KEY
+877,foolish,Bangbang·gisik,,,none,DUPLICATE_KEY
+878,honest,Bebe·agani·gipa,,,none,DUPLICATE_KEY
+879,dishonest,Tol·a·agani·gipa,,,none,DUPLICATE_KEY
+880,hardworking,Dak·rakgipa,,,none,DUPLICATE_KEY
+881,lazy,Bilgri·gipa,,,none,DUPLICATE_KEY
+882,generous,On·a·nakgipa,,,none,DUPLICATE_KEY
+883,greedy,Gisika·dakgipa,,,none,DUPLICATE_KEY
+884,proud / arrogant,Gaora·gipa,,,none,DUPLICATE_KEY
+885,humble,Chon·a·gisik,,,none,DUPLICATE_KEY
+886,shy,Kracha·gipa,,,none,DUPLICATE_KEY
+887,confident,Ka·raka·gisik,,,none,DUPLICATE_KEY
+888,talkative,Bang·a agani·gipa,,,none,DUPLICATE_KEY
+889,quiet,Agana·ja·gipa,,,none,DUPLICATE_KEY
+890,funny,Ka·ding·o on·a·gipa,,,none,DUPLICATE_KEY
+891,stubborn,An·tang·ra·gipa,,,none,DUPLICATE_KEY
+892,obedient,Knachika·gipa,,,none,DUPLICATE_KEY
+893,dog bark,Sing·a,,,none,DUPLICATE_KEY
+894,cat meow,Miau·miau,,,none,DUPLICATE_KEY
+895,cow moo,Ma·ma,,,none,DUPLICATE_KEY
+896,rooster crow,Ko·ko·rika,,,none,DUPLICATE_KEY
+897,frog croak,Beng·beng,,,none,DUPLICATE_KEY
+898,bird chirp,Chi·chi,,,none,DUPLICATE_KEY
+899,snake hiss,Chiss·chiss,,,none,DUPLICATE_KEY
+900,bee buzz,Guum·guum,,,none,DUPLICATE_KEY
+901,tiger roar,Randinga,,,none,DUPLICATE_KEY
+902,nod (yes),Skola·o,,,none,DUPLICATE_KEY
+903,shake head (no),Sko·moa,,,none,DUPLICATE_KEY
+904,wave hand,Jak·bildoa,,,none,DUPLICATE_KEY
+905,point finger,Jak·chip·a,,,none,DUPLICATE_KEY
+906,clap,Jak·taka,,,none,DUPLICATE_KEY
+907,bow,Sko·ka·mama,,,none,DUPLICATE_KEY
+908,hug,Jak·kadepa,,,none,DUPLICATE_KEY
+909,wink,Mik·chip·a,,,none,DUPLICATE_KEY
+910,smile,Ka·ding·mikseng·a,,,none,DUPLICATE_KEY
+911,sneeze,Hatchia,,,none,DUPLICATE_KEY
+912,yawn,Gu·ua,,,none,DUPLICATE_KEY
+913,whistle,Hu·a,,,none,DUPLICATE_KEY
+914,open your book,Ki·tapko oa·bo,,,none,DUPLICATE_KEY
+915,close your book,Ki·tapko chip·a·bo,,,none,DUPLICATE_KEY
+916,listen carefully,Chakchik knachik·bo,,,none,DUPLICATE_KEY
+917,raise your hand,Jakko bil·bo,,,none,DUPLICATE_KEY
+918,answer the question,Sing·ani·ko aganchaka·bo,,,none,DUPLICATE_KEY
+919,i have a question,Angna sing·ani dong·a,,,none,DUPLICATE_KEY
+920,class is over,Klas chu·a,,,none,DUPLICATE_KEY
+921,homework,Nok·o dak·porani,,,none,DUPLICATE_KEY
+922,study hard,Chakchik pora·bo,,,none,DUPLICATE_KEY
+923,congratulations!,Ka·soa!,,,none,DUPLICATE_KEY
+924,happy birthday!,Bilsi·gital kusi!,,,none,DUPLICATE_KEY
+925,get well soon,Mangmang an·sengpibo,,,none,DUPLICATE_KEY
+926,i will pray for you,Nang·na anga bi·engena,,,none,DUPLICATE_KEY
+927,god bless you,Isol nang·na pattia·bo,,,none,DUPLICATE_KEY
+928,rest in peace,Tom·toma·o tusibo,,,none,DUPLICATE_KEY
+929,you did well,Na·a nama dak·a,,,none,DUPLICATE_KEY
+930,don't give up,Kimia·bo ong·ja,,,none,DUPLICATE_KEY
+931,i believe in you,Anga nang·na bebe ra·a,,,none,DUPLICATE_KEY
+932,i miss my family,Angni nokdang·na simbraa,,,none,DUPLICATE_KEY
+933,come (command),Reba,,,none,DUPLICATE_KEY
+934,came (past),Reba·aha,,,none,DUPLICATE_KEY
+935,will come (future),Reangen,,,none,DUPLICATE_KEY
+936,he came by bus yesterday,Bia bus o raba·a mijalo,,,none,DUPLICATE_KEY
+937,why did you come?,Na·a maina reba·a?,,,none,DUPLICATE_KEY
+938,how did you come?,Na·a maidake reba·a?,,,none,DUPLICATE_KEY
+939,will you come with me?,Na·ara ang·ming rebagenma?,,,none,DUPLICATE_KEY
+940,i shall come with you.,Ang·a nangming reangen.,,,none,DUPLICATE_KEY
+941,he will come.,Bia rebagen.,,,none,DUPLICATE_KEY
+942,go (command),Reangbo,,,none,DUPLICATE_KEY
+943,he had gone.,Bia reang·aha.,,,none,DUPLICATE_KEY
+944,he will go.,Bia reangen.,,,none,DUPLICATE_KEY
+945,they went to the mosque.,Bisong olakiramchi re·anga.,,,none,DUPLICATE_KEY
+946,eat (command),Chabo,,,none,DUPLICATE_KEY
+947,he is eating an apple.,Bia apple cha·enga.,,,none,DUPLICATE_KEY
+948,he ate an apple.,Bia apple cha·aha.,,,none,DUPLICATE_KEY
+949,he has eaten.,Bia chamanjok.,,,none,DUPLICATE_KEY
+950,he had eaten.,Bia chaman·aha.,,,none,DUPLICATE_KEY
+951,he will eat.,Bia chagen.,,,none,DUPLICATE_KEY
+952,did you have lunch?,Na·a mi chajokma?,,,none,DUPLICATE_KEY
+953,open (command),Khulibo,,,none,DUPLICATE_KEY
+954,opened (past),Khulia·a,,,none,DUPLICATE_KEY
+955,will open (future),Khuligen,,,none,DUPLICATE_KEY
+956,sit (command),Asongbo,,,none,DUPLICATE_KEY
+957,walk (command),Roranbo / Rebo,,,none,DUPLICATE_KEY
+958,drink (command),Ringbo,,,none,DUPLICATE_KEY
+959,win,Am·a,,,none,DUPLICATE_KEY
+960,run (command),Katbo,,,none,DUPLICATE_KEY
+961,why did you sleep?,Na·a maina tusia?,,,none,DUPLICATE_KEY
+962,how did you sleep?,Na·a maidake tusia?,,,none,DUPLICATE_KEY
+963,he slept the whole night.,Bia walgimik tua.,,,none,DUPLICATE_KEY
+964,in which room did you sleep?,Na·a badia room o tusia?,,,none,DUPLICATE_KEY
+965,he wrote well in the exam.,Bia porikka namen se·ataha.,,,none,DUPLICATE_KEY
+966,how did you write?,Na·a maidake se·a?,,,none,DUPLICATE_KEY
+967,can you write the exam?,Na·a porikka sena mangenma?,,,none,DUPLICATE_KEY
+968,what is written in the letter?,Chitthio mai sea dongachim?,,,none,DUPLICATE_KEY
+969,how did you drive?,Na·a maidake sal·a?,,,none,DUPLICATE_KEY
+970,why do you drive the car?,Na·a maina gariko sal·a?,,,none,DUPLICATE_KEY
+971,why did she pay the money?,Bia maina tangka ko gama?,,,none,DUPLICATE_KEY
+972,why did he bring the bag?,Bia maina bag ko raba·a?,,,none,DUPLICATE_KEY
+973,i saw the film last week.,Ang·a ia film ko nia mija antio.,,,none,DUPLICATE_KEY
+974,how was the journey yesterday?,Mijal songre·ara nam·a ma?,,,none,DUPLICATE_KEY
+975,what?,Maia?,,,none,DUPLICATE_KEY
+976,what did you do?,Na·a maiko daka?,,,none,DUPLICATE_KEY
+977,what should i do?,Ang·a maiko dakgen?,,,none,DUPLICATE_KEY
+978,what can i do?,Ang·a maiko dakgen?,,,none,DUPLICATE_KEY
+979,what are the questions?,Mai·a sing·ani chim?,,,none,DUPLICATE_KEY
+980,what were the questions?,Mai·a sing·aniara?,,,none,DUPLICATE_KEY
+981,what you had been told?,Naa maiko aganata?,,,none,DUPLICATE_KEY
+982,what will be the answer?,Aganchakani·ara mai ong·en?,,,none,DUPLICATE_KEY
+983,why did you tell him to go?,Na·a maina biko re·angna aganata?,,,none,DUPLICATE_KEY
+984,why did they sit there?,Bisong maina uano a·songenga?,,,none,DUPLICATE_KEY
+985,why are they late for the meeting?,Bisong maina meeting ona ru·ute reba·a?,,,none,DUPLICATE_KEY
+986,how many apples are there in my hand?,Ang jako baitarong apple dong·a?,,,none,DUPLICATE_KEY
+987,how many did you take?,Na·a baitarong ra·a?,,,none,DUPLICATE_KEY
+988,how much did he pay you?,Nangna baita tangka gama?,,,none,DUPLICATE_KEY
+989,how much distance to go?,Baita chelkuenga?,,,none,DUPLICATE_KEY
+990,which way did you come?,Na·a bagita reba·a?,,,none,DUPLICATE_KEY
+991,which is your favourite colour?,Nang namnikgipa rong·ara mai·a?,,,none,DUPLICATE_KEY
+992,which story did you tell?,Badiya golpo ko agana?,,,none,DUPLICATE_KEY
+993,which is the sweetest fruit?,Badia bite chibata?,,,none,DUPLICATE_KEY
+994,which indian state has the largest population?,India ni badiya adoko mande bangbata?,,,none,DUPLICATE_KEY
+995,where did you come from?,Na·a banoni reba·a?,,,none,DUPLICATE_KEY
+996,where did you sleep?,Na·a bano tusia?,,,none,DUPLICATE_KEY
+997,where should i go?,Ang·ara batchi reangbo?,,,none,DUPLICATE_KEY
+998,whom should i contact?,Ang·ar sako contact khagen?,,,none,DUPLICATE_KEY
+999,Can you give me your pen?,Na·a nang pen ko on·a mangenma?,,,none,DUPLICATE_KEY
+1000,"Yes, of course.",Hoe mangenva.,,,none,DUPLICATE_KEY
+1001,Can you lift the box?,Na·a box ko dena mangenma?,,,none,DUPLICATE_KEY
+1002,May I sit down?,Anga asongna mangengma?,,,none,DUPLICATE_KEY
+1003,can you give me water?,Angna chi on·a mangengma?,,,none,DUPLICATE_KEY
+1004,Do you love me?,Na·a angna kasa·a ma?,,,none,DUPLICATE_KEY
+1005,"Yes, I love you.","Hoe, ang·a nangna kasa·a.",,,none,DUPLICATE_KEY
+1006,I am fine.,Ang·a namengava.,,,none,DUPLICATE_KEY
+1007,That (far/there),Haiwa,,,none,DUPLICATE_KEY
+1008,Which,badia / badiya,,,none,DUPLICATE_KEY
+1009,Which way,bagita,,,none,DUPLICATE_KEY
+1010,How many / How much,Baitarong / Baita,,,none,DUPLICATE_KEY
+1011,Whom,Sako,,,none,DUPLICATE_KEY
+1012,Whole night,Walgimik,,,none,DUPLICATE_KEY
+1013,Last week,Mija antio,,,none,DUPLICATE_KEY
+1014,With (me / you),Ming,,,none,DUPLICATE_KEY
+1015,Favourite,Namnikgipa,,,none,DUPLICATE_KEY
+1016,Sweetest,Chibata,,,none,DUPLICATE_KEY
+1017,Largest / Most,Bangbata,,,none,DUPLICATE_KEY
+1018,Well (adverb),Namen,,,none,DUPLICATE_KEY
+1019,Lift / Carry (ability),Dena,,,none,DUPLICATE_KEY
+1020,Pay,Gama,,,none,DUPLICATE_KEY
+1021,Mosque,Olakiram,,,none,DUPLICATE_KEY
+1022,Letter (written),Chitthio,,,none,DUPLICATE_KEY
+1023,Population,Adoko mande,,,none,DUPLICATE_KEY
+1024,newspaper,Songbat,,,none,DUPLICATE_KEY
+1025,Best (superlative),Bilongen nambata,,,none,DUPLICATE_KEY
+1026,Room,Room,,,none,DUPLICATE_KEY
+1027,Apple,Apple,,,none,DUPLICATE_KEY
+1028,Colour,Rong,,,none,DUPLICATE_KEY
+1029,Contact (verb),Contact khagen,,,none,DUPLICATE_KEY
+1030,Tense / Form,Suffix / Pattern,,,none,DUPLICATE_KEY
+1031,Past simple,verb + a,,,none,DUPLICATE_KEY
+1032,Past simple (alt),verb + aha,,,none,DUPLICATE_KEY
+1033,Past perfect,verb + man + aha,,,none,DUPLICATE_KEY
+1034,Present perfect,verb + manjok,,,none,DUPLICATE_KEY
+1035,Present continuous,verb + enga,,,none,DUPLICATE_KEY
+1036,future,on·gen,,,none,DUPLICATE_KEY
+1037,Imperative / Command,verb + bo,,,none,DUPLICATE_KEY
+1038,Let's [verb],Hai + verb + ha,,,none,DUPLICATE_KEY
+1039,Ability / Permission ?,verb + mangenma?,,,none,DUPLICATE_KEY
+1040,Ability / Permission ✓,mangenva,,,none,DUPLICATE_KEY
+1041,Past question,verb + ama?,,,none,DUPLICATE_KEY
+1042,Present question,verb + engma?,,,none,DUPLICATE_KEY
+1043,Permission request,verb + na + mangengma?,,,none,DUPLICATE_KEY
+1044,negation,dak·ja,,,none,DUPLICATE_KEY
+1045,Adverb 'well',namen,,,none,DUPLICATE_KEY
+1046,Quickly (adverb),tarake,,,none,DUPLICATE_KEY
+1047,How many,baitarong,,,none,DUPLICATE_KEY
+1048,How much,baita,,,none,DUPLICATE_KEY
+1049,Whole / Entire,gimik,,,none,DUPLICATE_KEY
+1050,Classifier,Used For,,,none,DUPLICATE_KEY
+1051,mang,"Animals, birds, fish, insects",,,none,DUPLICATE_KEY
+1052,sak,People and persons,,,none,DUPLICATE_KEY
+1053,gong,Money and currency,,,none,DUPLICATE_KEY
+1054,ge,"Objects, tools, things (general fallback)",,,none,DUPLICATE_KEY
+1055,1,sa,,,none,DUPLICATE_KEY
+1056,2,gni,,,none,DUPLICATE_KEY
+1057,3,gittam,,,none,DUPLICATE_KEY
+1058,4,bri,,,none,DUPLICATE_KEY
+1059,5,bonga,,,none,DUPLICATE_KEY
+1060,two dogs,achak mang·gni,,,none,DUPLICATE_KEY
+1061,three books,ki·tap king·gittam,,,none,DUPLICATE_KEY
+1062,four fruits,mewa ge·bri,,,none,DUPLICATE_KEY
+1063,five coins,tangka gong·bonga,,,none,DUPLICATE_KEY
+1064,ten birds,do·a mang·chiking,,,none,DUPLICATE_KEY
+1065,Let's drink,Hai ringaha,,,none,DUPLICATE_KEY
+1066,Let's sit,Hai asongha,,,none,DUPLICATE_KEY
+1067,Let's play,Hai kalaha,,,none,DUPLICATE_KEY
+1068,Let's work,Hai dakha,,,none,DUPLICATE_KEY
+1069,Give me water,Ang·na chi on·bo,,,none,DUPLICATE_KEY
+1070,Give him food,Una mi on·bo,,,none,DUPLICATE_KEY
+1071,I gave you water,Anga nang·na chi on·a,,,none,DUPLICATE_KEY
+1072,Please give me some,Angna mitam on·bo ka·sapae,,,none,DUPLICATE_KEY
+1073,I went,Anga re·ang·a,,,none,DUPLICATE_KEY
+1074,I ate,Anga cha·a,,,none,DUPLICATE_KEY
+1075,I drank,Anga ringa·a,,,none,DUPLICATE_KEY
+1076,I came,Anga re·ba·a,,,none,DUPLICATE_KEY
+1077,She slept,Ua tusi·a,,,none,DUPLICATE_KEY
+1078,They worked,Uamang dak·a,,,none,DUPLICATE_KEY
+1079,I am eating,Anga cha·oenga,,,none,DUPLICATE_KEY
+1080,She is going,Ua re·angenga,,,none,DUPLICATE_KEY
+1081,He is sleeping,Ua tusienga,,,none,DUPLICATE_KEY
+1082,They are working,Uamang dak·oenga,,,none,DUPLICATE_KEY
+1083,Did you eat?,Na·a cha·ama?,,,none,DUPLICATE_KEY
+1084,Did you go to market?,Na·a bajalchi re·angama?,,,none,DUPLICATE_KEY
+1085,Are you eating?,Na·a cha·enga ma?,,,none,DUPLICATE_KEY
+1086,May I sit?,Anga asongna mangengma?,,,none,DUPLICATE_KEY
+1087,Is he coming?,Ua re·baenga·ma?,,,none,DUPLICATE_KEY
+1088,Go away,Re·angbo,,,none,DUPLICATE_KEY
+1089,Quick! / Hurry!,Tarkbo!,,,none,DUPLICATE_KEY
+1090,Please sit down,Asongbo ka·sapae,,,none,DUPLICATE_KEY
+1091,Please give me water,Angna chi on·bo ka·sapae,,,none,DUPLICATE_KEY
+1092,At the market / To the market,Bajalchi,,,none,DUPLICATE_KEY
+1093,At school,Skulchi,,,none,DUPLICATE_KEY
+1094,At home,Nokchi,,,none,DUPLICATE_KEY
+1095,At the river,Chibimachi,,,none,DUPLICATE_KEY
+1096,In the forest,Buringchi,,,none,DUPLICATE_KEY
+1097,I don't want,Anga nang·ja,,,none,DUPLICATE_KEY
+1098,I don't have,Anga dong·ja / Dongja,,,none,DUPLICATE_KEY
+1099,Don't eat,Cha·ja,,,none,DUPLICATE_KEY
+1100,Don't go,Re·angbo ong·ja,,,none,DUPLICATE_KEY
+1101,It is there / It exists,Donga,,,none,DUPLICATE_KEY
+1102,example,pil·tai (again),,,none,DUPLICATE_KEY
+1103,description,"objects, tools, things (general fallback)",,,none,DUPLICATE_KEY
+1104,6,dok,,,none,DUPLICATE_KEY
+1105,7,sni,,,none,DUPLICATE_KEY
+1106,8,chet,,,none,DUPLICATE_KEY
+1107,9,sku,,,none,DUPLICATE_KEY
+1108,10,chiking,,,none,DUPLICATE_KEY
+1109,garo,Contact khagen,,,none,DUPLICATE_KEY
+1110,hindi,दादा / नाना,,,none,DUPLICATE_KEY
+1111,root,dong·,,,none,DUPLICATE_KEY
+1112,type,ambiguous,,,none,DUPLICATE_KEY
+1113,past,on·aha,,,none,DUPLICATE_KEY
+1114,continuous,on·enga,,,none,DUPLICATE_KEY
+1115,command,on·bo,,,none,DUPLICATE_KEY
+1116,past_question,on·ama?,,,none,DUPLICATE_KEY
+1117,negative,dong·ja,,,none,DUPLICATE_KEY
+1118,english,to have / to exist (possession),,,none,DUPLICATE_KEY
+1119,simple,cha·na,,,none,DUPLICATE_KEY
+1120,past_alt,cha·aha,,,none,DUPLICATE_KEY
+1121,present_question,cha·engma?,,,none,DUPLICATE_KEY
+1122,perfect,cha·manjok,,,none,DUPLICATE_KEY
+1123,I ate rice,Anga mi cha·a,,,none,DUPLICATE_KEY
+1124,He is eating,Ua cha·enga,,,none,DUPLICATE_KEY
+1125,Eat!,Cha·bo!,,,none,DUPLICATE_KEY
+1126,He went,Ua re·ang·a,,,none,DUPLICATE_KEY
+1127,Go!,Re·ang·bo,,,none,DUPLICATE_KEY
+1128,You came,Na·a re·ba·a,,,none,DUPLICATE_KEY
+1129,They are coming,Uamang re·ba·enga,,,none,DUPLICATE_KEY
+1130,Come!,Re·ba·bo!,,,none,DUPLICATE_KEY
+1131,I did it,Anga dak·a,,,none,DUPLICATE_KEY
+1132,Do it!,Dak·bo!,,,none,DUPLICATE_KEY
+1133,a worker,Kam dak·gipa,,,none,DUPLICATE_KEY
+1134,He gave me a book,Ua angna ki·tap on·a,,,none,DUPLICATE_KEY
+1135,positive,dong·a,,,none,DUPLICATE_KEY
+1136,It is good,Nama ong·a,,,none,DUPLICATE_KEY
+1137,It is not good,Nama ong·ja,,,none,DUPLICATE_KEY
+1138,I have a pen,Anga kolom dong·a,,,none,DUPLICATE_KEY
+1139,I don't have time,A·gimiko dong·ja,,,none,DUPLICATE_KEY
+1140,rule,NOUN + CLASSIFIER·NUMBER (not English order),,,none,DUPLICATE_KEY
+1141,You drank water,Na·a chi ring·a,,,none,DUPLICATE_KEY
+1142,don't eat / not eating,cha·ja,,,none,DUPLICATE_KEY
+1143,is not,ong·ja,,,none,DUPLICATE_KEY
+1144,don't have,dong·ja,,,none,DUPLICATE_KEY
+1145,don't know,u·ija,,,none,DUPLICATE_KEY
+1146,My house,Angni nok,,,none,DUPLICATE_KEY
+1147,Your father,Nang·ni apa,,,none,DUPLICATE_KEY
+1148,His / Her water,Uni chi,,,none,DUPLICATE_KEY
+1149,at / to the market,bajal·chi,,,none,DUPLICATE_KEY
+1150,at / to home,nok·chi,,,none,DUPLICATE_KEY
+1151,at / to school,skul·chi,,,none,DUPLICATE_KEY
+1152,to me / for me,ang·na,,,none,DUPLICATE_KEY
+1153,to you / for you,nang·na,,,none,DUPLICATE_KEY
+1154,to him / to her,una·na,,,none,DUPLICATE_KEY
+1155,Is there rice?,Mi dong·a ma?,,,none,DUPLICATE_KEY
+1156,two books,ki·tap king·gni,,,none,DUPLICATE_KEY
+1157,three people,manderang sak·gittam,,,none,DUPLICATE_KEY
+1158,Sorry / Forgive me,Kema·bi·a,,,none,DUPLICATE_KEY
+1159,All is well,Nama ong·a,,,none,DUPLICATE_KEY
+1160,Help!,Madengma!,,,none,DUPLICATE_KEY
+1161,Help me!,Dak·chak·bo!,,,none,DUPLICATE_KEY
+1162,Call a doctor!,Doktor jong·bo!,,,none,DUPLICATE_KEY
+1163,It hurts!,Mataha!,,,none,DUPLICATE_KEY
+1164,Call police,Police jong·bo,,,none,DUPLICATE_KEY
+1165,pos,verb,,,none,DUPLICATE_KEY
+1166,we /us (incl.),Chinga,,,none,DUPLICATE_KEY
+1167,one dog,achak mang·sa,,,none,DUPLICATE_KEY
+1168,two birds,do·o mang·gni,,,none,DUPLICATE_KEY
+1169,three fish,na·tok mang·gittam,,,none,DUPLICATE_KEY
+1170,one person,manderang sak·sa,,,none,DUPLICATE_KEY
+1171,two teachers,skigipa sak·gni,,,none,DUPLICATE_KEY
+1172,one coin,tangka gong·sa,,,none,DUPLICATE_KEY
+1173,five rupees,tangka gong·bonga,,,none,DUPLICATE_KEY
+1174,one book,ki·tap king·sa,,,none,DUPLICATE_KEY
+1175,three leaves,bijak king·gittam,,,none,DUPLICATE_KEY
+1176,one chair,chokki ge·sa,,,none,DUPLICATE_KEY
+1177,two knives,kettal ge·gni,,,none,DUPLICATE_KEY
+1178,den· (to carry),"den·a (past), den·enga (continuous)",,,none,DUPLICATE_KEY
+1179,cha· (to eat),"cha·a (past), cha·enga (continuous), cha·aha (past alt)",,,none,DUPLICATE_KEY
+1180,re·ang (to go),"re·ang·a (past), re·angenga (continuous)",,,none,DUPLICATE_KEY
+1181,on· (to give),"on·a (past), on·bo (command), on·enga (continuous)",,,none,DUPLICATE_KEY
+1182,Pineapple,Anaros,,,none,DUPLICATE_KEY
+1183,Banana,Te·rik,,,none,DUPLICATE_KEY
+1184,Orange,Narang,,,none,DUPLICATE_KEY
+1185,Guava,Goaba,,,none,DUPLICATE_KEY
+1186,Papaya,Modu,,,none,DUPLICATE_KEY
+1187,Jackfruit,Te·brong,,,none,DUPLICATE_KEY
+1188,Mango,Te·gachu,,,none,DUPLICATE_KEY
+1189,Lychee,Letchu,,,none,DUPLICATE_KEY
+1190,Coconut,Narikel,,,none,DUPLICATE_KEY
+1191,Watermelon,Te·e raja,,,none,DUPLICATE_KEY
+1192,Lemon,Kakji,,,none,DUPLICATE_KEY
+1193,Pomegranate,Dalim,,,none,DUPLICATE_KEY
+1194,Sugar Cane,Ge·rit,,,none,DUPLICATE_KEY
+1195,Tamarind,Che·eng,,,none,DUPLICATE_KEY
+1196,Pear,Naspati,,,none,DUPLICATE_KEY
+1197,Custard Apple,Atapol,,,none,DUPLICATE_KEY
+1198,Pomelo,Narang·gira,,,none,DUPLICATE_KEY
+1199,Blackberry,Jam,,,none,DUPLICATE_KEY
+1200,Grapes,Drakka,,,none,DUPLICATE_KEY
+1201,Wild Berry,Bol·meseng,,,none,DUPLICATE_KEY
+1202,Pumpkin,Gominda,,,none,DUPLICATE_KEY
+1203,Potato,Alu,,,none,DUPLICATE_KEY
+1204,Tomato,Baring belati,,,none,DUPLICATE_KEY
+1205,Brinjal,Baring,,,none,DUPLICATE_KEY
+1206,Bottle Gourd,Lau,,,none,DUPLICATE_KEY
+1207,Bitter Gourd,Karela,,,none,DUPLICATE_KEY
+1208,Bamboo Shoot,Me·a,,,none,DUPLICATE_KEY
+1209,Garlic,Rasin·gipok,,,none,DUPLICATE_KEY
+1210,Ginger,Re·ching,,,none,DUPLICATE_KEY
+1211,Chilli,Jal·ik,,,none,DUPLICATE_KEY
+1212,Okra,Dorai,,,none,DUPLICATE_KEY
+1213,Cucumber,Te·e,,,none,DUPLICATE_KEY
+1214,Mustard Leaves,Besual,,,none,DUPLICATE_KEY
+1215,Spinach,Palong·sam,,,none,DUPLICATE_KEY
+1216,Broad Beans,Nakap,,,none,DUPLICATE_KEY
+1217,Yam,Ta·a,,,none,DUPLICATE_KEY
+1218,Sweet Potato,Ta·we,,,none,DUPLICATE_KEY
+1219,Colocasia,Thabisa,,,none,DUPLICATE_KEY
+1220,Onion,Rasin,,,none,DUPLICATE_KEY
+1221,Cabbage,Kobi,,,none,DUPLICATE_KEY
+1222,Cauliflower,Pul kobi,,,none,DUPLICATE_KEY
+1223,Carrot,Kajol,,,none,DUPLICATE_KEY
+1224,Radish,Mula,,,none,DUPLICATE_KEY
+1225,Drumstick,Sojona,,,none,DUPLICATE_KEY
+1226,Peas,Motor,,,none,DUPLICATE_KEY
+1227,Love,Ka·saa,,,none,DUPLICATE_KEY
+1228,Happiness,Kusi,,,none,DUPLICATE_KEY
+1229,Sadness,Duk,,,none,DUPLICATE_KEY
+1230,Anger,Ka·o nanga,,,none,DUPLICATE_KEY
+1231,Fear,Kenani,,,none,DUPLICATE_KEY
+1232,Hatred,Mittera,,,none,DUPLICATE_KEY
+1233,Hope,Ka·donga,,,none,DUPLICATE_KEY
+1234,Peace,Tom·toma,,,none,DUPLICATE_KEY
+1235,Trust,Bebe ra·a,,,none,DUPLICATE_KEY
+1236,Jealousy,Mikboka,,,none,DUPLICATE_KEY
+1237,Shame,Kracha·a,,,none,DUPLICATE_KEY
+1238,Pride,Gaora,,,none,DUPLICATE_KEY
+1239,Surprise,Jagokani,,,none,DUPLICATE_KEY
+1240,Worry,Gisik ding·a,,,none,DUPLICATE_KEY
+1241,Patience,Chakchikani,,,none,DUPLICATE_KEY
+1242,Mercy,Kema,,,none,DUPLICATE_KEY
+1243,Satisfaction,Chu·ongnika,,,none,DUPLICATE_KEY
+1244,Loneliness,Saksan,,,none,DUPLICATE_KEY
+1245,Grateful,Mitela,,,none,DUPLICATE_KEY
+1246,Courage,Ka·rakani,,,none,DUPLICATE_KEY
+1247,Dog,Achak,,,none,DUPLICATE_KEY
+1248,Cat,Menggo,,,none,DUPLICATE_KEY
+1249,Cow,Matchu,,,none,DUPLICATE_KEY
+1250,Elephant,Monga,,,none,DUPLICATE_KEY
+1251,Tiger,Matcha,,,none,DUPLICATE_KEY
+1252,Deer,Matchok,,,none,DUPLICATE_KEY
+1253,Pig,Wak,,,none,DUPLICATE_KEY
+1254,Goat,Do·bok,,,none,DUPLICATE_KEY
+1255,Horse,Gure,,,none,DUPLICATE_KEY
+1256,Monkey,Makre,,,none,DUPLICATE_KEY
+1257,Snake,Chipu,,,none,DUPLICATE_KEY
+1258,Rat,Mese,,,none,DUPLICATE_KEY
+1259,Buffalo,Matma,,,none,DUPLICATE_KEY
+1260,Bear,Matmak,,,none,DUPLICATE_KEY
+1261,Rabbit,Sapau,,,none,DUPLICATE_KEY
+1262,Crow,Do·ka,,,none,DUPLICATE_KEY
+1263,Hen,Do·bit,,,none,DUPLICATE_KEY
+1264,Rooster,Do·bi,,,none,DUPLICATE_KEY
+1265,Duck,Do·gep,,,none,DUPLICATE_KEY
+1266,Owl,Do·po,,,none,DUPLICATE_KEY
+1267,Eagle,Do·reng,,,none,DUPLICATE_KEY
+1268,Parrot,Do·sik,,,none,DUPLICATE_KEY
+1269,Pigeon,Do·bak,,,none,DUPLICATE_KEY
+1270,Peacock,Do·de,,,none,DUPLICATE_KEY
+1271,Sparrow,Do·matchi,,,none,DUPLICATE_KEY
+1272,Eat,Cha·a,,,none,DUPLICATE_KEY
+1273,Drink,Ringa,,,none,DUPLICATE_KEY
+1274,Sleep,Tusia,,,none,DUPLICATE_KEY
+1275,Walk,Re·a,,,none,DUPLICATE_KEY
+1276,Run,Kat·a,,,none,DUPLICATE_KEY
+1277,Speak,Agana,,,none,DUPLICATE_KEY
+1278,Listen,Knachika,,,none,DUPLICATE_KEY
+1279,See / Look / Watch,Nia,,,none,DUPLICATE_KEY
+1280,Give,On·a,,,none,DUPLICATE_KEY
+1281,Take,Ra·a,,,none,DUPLICATE_KEY
+1282,Work,Dak·a,,,none,DUPLICATE_KEY
+1283,Play,Kal·a,,,none,DUPLICATE_KEY
+1284,Sit,Asong·a,,,none,DUPLICATE_KEY
+1285,Stand,Chadenga,,,none,DUPLICATE_KEY
+1286,Laugh,Ka·ding·a,,,none,DUPLICATE_KEY
+1287,Cry,Grap·a,,,none,DUPLICATE_KEY
+1288,Buy,Brea,,,none,DUPLICATE_KEY
+1289,Sell,Pala,,,none,DUPLICATE_KEY
+1290,Come,Re·ba·a,,,none,DUPLICATE_KEY
+1291,Go,Re·ang·a,,,none,DUPLICATE_KEY
+1292,Father,Pa / Apa,,,none,DUPLICATE_KEY
+1293,Mother,Ma / Ama,,,none,DUPLICATE_KEY
+1294,Son,De·bi·pa,,,none,DUPLICATE_KEY
+1295,Daughter,De·me·chik,,,none,DUPLICATE_KEY
+1296,Grandfather,Abi·tang,,,none,DUPLICATE_KEY
+1297,Grandmother,Ambichang,,,none,DUPLICATE_KEY
+1298,Elder Brother,Ada,,,none,DUPLICATE_KEY
+1299,Elder Sister,Abi,,,none,DUPLICATE_KEY
+1300,Younger Sibling,Jong / No,,,none,DUPLICATE_KEY
+1301,Uncle,Mama / Pabok,,,none,DUPLICATE_KEY
+1302,Aunt,Mani,,,none,DUPLICATE_KEY
+1303,Friend,Ripsak / Ripeng,,,none,DUPLICATE_KEY
+1304,Head,Sko,,,none,DUPLICATE_KEY
+1305,Eye,Mikron,,,none,DUPLICATE_KEY
+1306,Ear,Nachil,,,none,DUPLICATE_KEY
+1307,Nose,Gingting,,,none,DUPLICATE_KEY
+1308,Mouth,Ku·sik,,,none,DUPLICATE_KEY
+1309,Hand,Jak,,,none,DUPLICATE_KEY
+1310,Leg,Ja·a,,,none,DUPLICATE_KEY
+1311,Hair,Kni,,,none,DUPLICATE_KEY
+1312,Stomach,Ok,,,none,DUPLICATE_KEY
+1313,Teeth,Wagam,,,none,DUPLICATE_KEY
+1314,Tongue,Sre,,,none,DUPLICATE_KEY
+1315,Skin,Bigil,,,none,DUPLICATE_KEY
+1316,Heart,Ka·tong,,,none,DUPLICATE_KEY
+1317,Red,Gitchak,,,none,DUPLICATE_KEY
+1318,White,Gipok,,,none,DUPLICATE_KEY
+1319,Black,Gisim,,,none,DUPLICATE_KEY
+1320,Green,Tangsek,,,none,DUPLICATE_KEY
+1321,Blue,Tang·sim,,,none,DUPLICATE_KEY
+1322,Yellow,Rimit,,,none,DUPLICATE_KEY
+1323,One,Sa,,,none,DUPLICATE_KEY
+1324,Two,Gni,,,none,DUPLICATE_KEY
+1325,Three,Gittam,,,none,DUPLICATE_KEY
+1326,Four,Bri,,,none,DUPLICATE_KEY
+1327,Five,Bonga,,,none,DUPLICATE_KEY
+1328,Six,Dok,,,none,DUPLICATE_KEY
+1329,Seven,Sni,,,none,DUPLICATE_KEY
+1330,Eight,Chet,,,none,DUPLICATE_KEY
+1331,Nine,Sku,,,none,DUPLICATE_KEY
+1332,Ten,Chiking,,,none,DUPLICATE_KEY
+1333,Eleven,Chi·sa,,,none,DUPLICATE_KEY
+1334,Twelve,Chi·gni,,,none,DUPLICATE_KEY
+1335,Thirteen,Chi·gittam,,,none,DUPLICATE_KEY
+1336,Fourteen,Chi·bri,,,none,DUPLICATE_KEY
+1337,Fifteen,Chi·bonga,,,none,DUPLICATE_KEY
+1338,Sixteen,Chi·dok,,,none,DUPLICATE_KEY
+1339,Seventeen,Chi·sni,,,none,DUPLICATE_KEY
+1340,Eighteen,Chi·chet,,,none,DUPLICATE_KEY
+1341,Nineteen,Chi·sku,,,none,DUPLICATE_KEY
+1342,Twenty,Kolgrik,,,none,DUPLICATE_KEY
+1343,Twenty-one,Kolgrik·sa,,,none,DUPLICATE_KEY
+1344,Thirty,Kolatchi,,,none,DUPLICATE_KEY
+1345,Forty,Sotbri,,,none,DUPLICATE_KEY
+1346,Fifty,Sotbonga,,,none,DUPLICATE_KEY
+1347,Sixty,Sotdok,,,none,DUPLICATE_KEY
+1348,Seventy,Sotsni,,,none,DUPLICATE_KEY
+1349,Eighty,Sotchet,,,none,DUPLICATE_KEY
+1350,Ninety,Sotsku,,,none,DUPLICATE_KEY
+1351,Hundred,Ritchasa,,,none,DUPLICATE_KEY
+1352,One Thousand,Hajalsa,,,none,DUPLICATE_KEY
+1353,First (ordinal),Chipprangni,,,none,DUPLICATE_KEY
+1354,Second (ordinal),Gni·prangni,,,none,DUPLICATE_KEY
+1355,Third (ordinal),Gittam·prangni,,,none,DUPLICATE_KEY
+1356,Last,Baksangni,,,none,DUPLICATE_KEY
+1357,Half,Jatchi,,,none,DUPLICATE_KEY
+1358,Quarter,Daldal,,,none,DUPLICATE_KEY
+1359,Double,Gni·bita,,,none,DUPLICATE_KEY
+1360,Zero / None,Bangbang / Ong·ja,,,none,DUPLICATE_KEY
+1361,Hello / Greetings,Salam / Namengama,,,none,DUPLICATE_KEY
+1362,How are you?,Na·a namengama?,,,none,DUPLICATE_KEY
+1363,I am fine,Anga namenga.,,,none,DUPLICATE_KEY
+1364,Thank you,Mittela.,,,none,DUPLICATE_KEY
+1365,What is your name?,Na·a ni bimungara maia?,,,none,DUPLICATE_KEY
+1366,My name is...,Angni bimungara...,,,none,DUPLICATE_KEY
+1367,Where are you going?,Na·a bachi re·angenga?,,,none,DUPLICATE_KEY
+1368,Good morning,Pringnam.,,,none,DUPLICATE_KEY
+1369,Good night,Walnam.,,,none,DUPLICATE_KEY
+1370,Yes,Oe,,,none,DUPLICATE_KEY
+1371,No,Ong·ja,,,none,DUPLICATE_KEY
+1372,Please,Ka·sapae.,,,none,DUPLICATE_KEY
+1373,I don't know,Anga uija.,,,none,DUPLICATE_KEY
+1374,Come here,Ianona re·babo.,,,none,DUPLICATE_KEY
+1375,Tasty / Delicious,Toa,,,none,DUPLICATE_KEY
+1376,Not tasty,Touja,,,none,DUPLICATE_KEY
+1377,Sweet,Chi·a,,,none,DUPLICATE_KEY
+1378,Sour,Mesenga,,,none,DUPLICATE_KEY
+1379,Bitter,Ka·a,,,none,DUPLICATE_KEY
+1380,Salty,Kari nanga,,,none,DUPLICATE_KEY
+1381,Salt (noun),Kari,,,none,DUPLICATE_KEY
+1382,Spicy,Jal·ik saa,,,none,DUPLICATE_KEY
+1383,Astringent,Ka·baka,,,none,DUPLICATE_KEY
+1384,Bland / Tasteless,Chibroka,,,none,DUPLICATE_KEY
+1385,Smelly / Stinky,Senga,,,none,DUPLICATE_KEY
+1386,To Fall (from height),Ga·aka,,,none,DUPLICATE_KEY
+1387,To Fall (stumble/trip),Nang·ting·a,,,none,DUPLICATE_KEY
+1388,To Fall (slip),Ga·soltap,,,none,DUPLICATE_KEY
+1389,To Fall (collapse),Be·a,,,none,DUPLICATE_KEY
+1390,To Drop (something),Ga·akata,,,none,DUPLICATE_KEY
+1391,To Roll,Romroma,,,none,DUPLICATE_KEY
+1392,To Jump,Bildoa,,,none,DUPLICATE_KEY
+1393,To Shake,Moa,,,none,DUPLICATE_KEY
+1394,To Move (something),De·jita,,,none,DUPLICATE_KEY
+1395,To Feel (General),Ui·a,,,none,DUPLICATE_KEY
+1396,To Feel (Emotionally),Gisik·o nanga,,,none,DUPLICATE_KEY
+1397,To Hurt (Pain),Sa·dika,,,none,DUPLICATE_KEY
+1398,To Hurt (Injure),Mata,,,none,DUPLICATE_KEY
+1399,To Hurt (Feelings),Saknaata,,,none,DUPLICATE_KEY
+1400,To Touch,Dangtapa,,,none,DUPLICATE_KEY
+1401,To Pinch,Se·eta,,,none,DUPLICATE_KEY
+1402,To Scratch (body),Brika,,,none,DUPLICATE_KEY
+1403,To Scratch (object),Siksika,,,none,DUPLICATE_KEY
+1404,To Itch,Ka·kita,,,none,DUPLICATE_KEY
+1405,To Burn (sting like chili),So·soa,,,none,DUPLICATE_KEY
+1406,To Heal,An·sengpila,,,none,DUPLICATE_KEY
+1407,Open,Oa,,,none,DUPLICATE_KEY
+1408,Close,Chip·a,,,none,DUPLICATE_KEY
+1409,Push,Jit·pak·a,,,none,DUPLICATE_KEY
+1410,Pull / Drive,Sal·a (⚠ same word),,,none,DUPLICATE_KEY
+1411,Break (Glass/Stick),Be·ata,,,none,DUPLICATE_KEY
+1412,Tear (Paper/Cloth),Gritt·a,,,none,DUPLICATE_KEY
+1413,Throw,Gal·a / Goata,,,none,DUPLICATE_KEY
+1414,Catch,Rim·a,,,none,DUPLICATE_KEY
+1415,Wash,Su·srong·a,,,none,DUPLICATE_KEY
+1416,Clean,Rongtal·ata,,,none,DUPLICATE_KEY
+1417,Sun,Sal,,,none,DUPLICATE_KEY
+1418,Moon,Jajong,,,none,DUPLICATE_KEY
+1419,Star,Aski,,,none,DUPLICATE_KEY
+1420,Sky,Salgi,,,none,DUPLICATE_KEY
+1421,Cloud,Aram,,,none,DUPLICATE_KEY
+1422,Rain,Mikka,,,none,DUPLICATE_KEY
+1423,Wind,Balwa,,,none,DUPLICATE_KEY
+1424,Thunder,Goera,,,none,DUPLICATE_KEY
+1425,Lightning,Mikka·kimma,,,none,DUPLICATE_KEY
+1426,Fire,Wa·al,,,none,DUPLICATE_KEY
+1427,Water,Chi,,,none,DUPLICATE_KEY
+1428,Earth / Soil,A·a,,,none,DUPLICATE_KEY
+1429,Stone,Ro·ong,,,none,DUPLICATE_KEY
+1430,Sand,An·cheng,,,none,DUPLICATE_KEY
+1431,River,Chibima,,,none,DUPLICATE_KEY
+1432,Mountain,A·bri,,,none,DUPLICATE_KEY
+1433,Forest,Buring,,,none,DUPLICATE_KEY
+1434,Tree,Bol,,,none,DUPLICATE_KEY
+1435,Flower,Bibal,,,none,DUPLICATE_KEY
+1436,Leaf,Bijak,,,none,DUPLICATE_KEY
+1437,It is raining,Mikka ring·a,,,none,DUPLICATE_KEY
+1438,It is sunny,Sal·seng·a,,,none,DUPLICATE_KEY
+1439,It is cold,Sin·a,,,none,DUPLICATE_KEY
+1440,It is hot,Ding·a,,,none,DUPLICATE_KEY
+1441,Flood,Mikka·brimba,,,none,DUPLICATE_KEY
+1442,Drought,Ran·kari,,,none,DUPLICATE_KEY
+1443,Earthquake,A·a·moa,,,none,DUPLICATE_KEY
+1444,Fog / Mist,Ong·chel,,,none,DUPLICATE_KEY
+1445,Rainbow,Gitchak·rong jal·ang,,,none,DUPLICATE_KEY
+1446,Sunrise,Sal·aram,,,none,DUPLICATE_KEY
+1447,Sunset,Sal·ikram,,,none,DUPLICATE_KEY
+1448,House,Nok,,,none,DUPLICATE_KEY
+1449,Door,Do·ga,,,none,DUPLICATE_KEY
+1450,Window,Kelki,,,none,DUPLICATE_KEY
+1451,Bed,Palang,,,none,DUPLICATE_KEY
+1452,Chair,Chokki,,,none,DUPLICATE_KEY
+1453,Table,Mez,,,none,DUPLICATE_KEY
+1454,Plate,Tala,,,none,DUPLICATE_KEY
+1455,Cup,Piala,,,none,DUPLICATE_KEY
+1456,Spoon,Chamus,,,none,DUPLICATE_KEY
+1457,Knife,Kettal,,,none,DUPLICATE_KEY
+1458,Pot,Dik·ke,,,none,DUPLICATE_KEY
+1459,Broom,Sal·re·at,,,none,DUPLICATE_KEY
+1460,Clothes,Ba·ra,,,none,DUPLICATE_KEY
+1461,Soap,Sabon,,,none,DUPLICATE_KEY
+1462,Mirror,Janera,,,none,DUPLICATE_KEY
+1463,Comb,Ken·chong,,,none,DUPLICATE_KEY
+1464,Lamp,Chakki,,,none,DUPLICATE_KEY
+1465,Key,Chabi,,,none,DUPLICATE_KEY
+1466,Bag,Jol·a,,,none,DUPLICATE_KEY
+1467,Book,Ki·tap,,,none,DUPLICATE_KEY
+1468,Axe,Rua (⚠ also means 'to pour' as verb),,,none,DUPLICATE_KEY
+1469,Day,Sal,,,none,DUPLICATE_KEY
+1470,Night,Wal,,,none,DUPLICATE_KEY
+1471,Morning,Pring,,,none,DUPLICATE_KEY
+1472,Noon,Saljatchi,,,none,DUPLICATE_KEY
+1473,Evening,Attam,,,none,DUPLICATE_KEY
+1474,Today,Da·al,,,none,DUPLICATE_KEY
+1475,Yesterday,Mejal,,,none,DUPLICATE_KEY
+1476,Tomorrow,Knal,,,none,DUPLICATE_KEY
+1477,Now,Da·o,,,none,DUPLICATE_KEY
+1478,Always,Pangnan,,,none,DUPLICATE_KEY
+1479,Sometimes,Gisep gisep,,,none,DUPLICATE_KEY
+1480,Week,Anti,,,none,DUPLICATE_KEY
+1481,Month,Ja,,,none,DUPLICATE_KEY
+1482,Year,Bilsi,,,none,DUPLICATE_KEY
+1483,Time,Somai,,,none,DUPLICATE_KEY
+1484,Day after tomorrow,Me·nnalo,,,none,DUPLICATE_KEY
+1485,Day before yesterday,Me·si·ja,,,none,DUPLICATE_KEY
+1486,Later,Ja·mano,,,none,DUPLICATE_KEY
+1487,Before,Skang,,,none,DUPLICATE_KEY
+1488,Early,Bakkan / Pring·seng,,,none,DUPLICATE_KEY
+1489,Late,Ja·man·chak·a,,,none,DUPLICATE_KEY
+1490,Never,Pangnan·ba (ja),,,none,DUPLICATE_KEY
+1491,Always,Pangnan,,,none,DUPLICATE_KEY
+1492,Shirt,Chola,,,none,DUPLICATE_KEY
+1493,Traditional Wrap (Women),Dakmanda,,,none,DUPLICATE_KEY
+1494,Shawl,Rekkeng,,,none,DUPLICATE_KEY
+1495,Turban,Kotip,,,none,DUPLICATE_KEY
+1496,Shoes,Juta,,,none,DUPLICATE_KEY
+1497,Socks,Moja,,,none,DUPLICATE_KEY
+1498,Hat,Tupi,,,none,DUPLICATE_KEY
+1499,Ring,Jakstem,,,none,DUPLICATE_KEY
+1500,Necklace,Ripok,,,none,DUPLICATE_KEY
+1501,Earring,Nachil·ganna,,,none,DUPLICATE_KEY
+1502,Big,Dal·a,,,none,DUPLICATE_KEY
+1503,Small,Chon·a,,,none,DUPLICATE_KEY
+1504,Long,Ro·a,,,none,DUPLICATE_KEY
+1505,Short,Kan·dik·a,,,none,DUPLICATE_KEY
+1506,Tall,Chu·a,,,none,DUPLICATE_KEY
+1507,New,Gital,,,none,DUPLICATE_KEY
+1508,Old,Gitcham,,,none,DUPLICATE_KEY
+1509,Good,Nama,,,none,DUPLICATE_KEY
+1510,Bad,Namja,,,none,DUPLICATE_KEY
+1511,Fast,Ta·rak·a,,,none,DUPLICATE_KEY
+1512,Slow,Ka·sna,,,none,DUPLICATE_KEY
+1513,Rich,Nokma / Man·e·cha·gipa,,,none,DUPLICATE_KEY
+1514,Poor,Kangal,,,none,DUPLICATE_KEY
+1515,Dry,Ran·a,,,none,DUPLICATE_KEY
+1516,Wet,Chon·a / Sosia,,,none,DUPLICATE_KEY
+1517,Tasty,Toa,,,none,DUPLICATE_KEY
+1518,Not tasty,Touja,,,none,DUPLICATE_KEY
+1519,Village,Song,,,none,DUPLICATE_KEY
+1520,Town,Songjinma,,,none,DUPLICATE_KEY
+1521,School,Skul,,,none,DUPLICATE_KEY
+1522,Market,Bajal / Anti,,,none,DUPLICATE_KEY
+1523,Road,Rama,,,none,DUPLICATE_KEY
+1524,Field,A·ba,,,none,DUPLICATE_KEY
+1525,Office,Kam·ka·chakani,,,none,DUPLICATE_KEY
+1526,Church,Gilja·nok,,,none,DUPLICATE_KEY
+1527,Shop,Dokan,,,none,DUPLICATE_KEY
+1528,Hospital,Hospital / Sam·nok,,,none,DUPLICATE_KEY
+1529,Up,Kosak,,,none,DUPLICATE_KEY
+1530,Down,Ka·ma,,,none,DUPLICATE_KEY
+1531,Left,Jak·asi,,,none,DUPLICATE_KEY
+1532,Right,Jak·ra,,,none,DUPLICATE_KEY
+1533,Front,Mikkang,,,none,DUPLICATE_KEY
+1534,Back,Janggila,,,none,DUPLICATE_KEY
+1535,Inside,Ning·o,,,none,DUPLICATE_KEY
+1536,Outside,A·pal,,,none,DUPLICATE_KEY
+1537,Far,Chel·a,,,none,DUPLICATE_KEY
+1538,Near,Sepang,,,none,DUPLICATE_KEY
+1539,North,Salgro,,,none,DUPLICATE_KEY
+1540,South,Salgipeng,,,none,DUPLICATE_KEY
+1541,East,Salaram,,,none,DUPLICATE_KEY
+1542,West,Saliram,,,none,DUPLICATE_KEY
+1543,Center,Jatchi,,,none,DUPLICATE_KEY
+1544,Side,Rikam,,,none,DUPLICATE_KEY
+1545,Farmer,Game·cha·gipa,,,none,DUPLICATE_KEY
+1546,Teacher,Skigipa,,,none,DUPLICATE_KEY
+1547,Student,Porai·gipa,,,none,DUPLICATE_KEY
+1548,Doctor,Doctor / Sam·on·gipa,,,none,DUPLICATE_KEY
+1549,Nurse,Nurse,,,none,DUPLICATE_KEY
+1550,Driver,Gari·chalai·gipa,,,none,DUPLICATE_KEY
+1551,Carpenter,Bal·sol·gipa,,,none,DUPLICATE_KEY
+1552,Blacksmith,Sil·dak·gipa,,,none,DUPLICATE_KEY
+1553,Shopkeeper,Dokan·dakgipa,,,none,DUPLICATE_KEY
+1554,Tailor,Ba·ra·sikgipa,,,none,DUPLICATE_KEY
+1555,Worker / Laborer,Kam·ka·gipa,,,none,DUPLICATE_KEY
+1556,King,Raja,,,none,DUPLICATE_KEY
+1557,Chief,Nokma,,,none,DUPLICATE_KEY
+1558,Police,Pulis,,,none,DUPLICATE_KEY
+1559,Soldier,Sipai,,,none,DUPLICATE_KEY
+1560,Postman,Chiti·ra·ba·gipa,,,none,DUPLICATE_KEY
+1561,Cook,Song·timgipa,,,none,DUPLICATE_KEY
+1562,Leader,Dilgipa,,,none,DUPLICATE_KEY
+1563,Preacher,Aganprakgipa,,,none,DUPLICATE_KEY
+1564,Thief,Cha·u,,,none,DUPLICATE_KEY
+1565,Guest,Sokgipa,,,none,DUPLICATE_KEY
+1566,Stranger,Agital,,,none,DUPLICATE_KEY
+1567,School,Skul,,,none,DUPLICATE_KEY
+1568,Class,Klas,,,none,DUPLICATE_KEY
+1569,Book,Ki·tap,,,none,DUPLICATE_KEY
+1570,Paper,Lekka,,,none,DUPLICATE_KEY
+1571,Pen,Pen,,,none,DUPLICATE_KEY
+1572,Pencil,Pencil,,,none,DUPLICATE_KEY
+1573,Ink,Kali,,,none,DUPLICATE_KEY
+1574,Lesson,Porani,,,none,DUPLICATE_KEY
+1575,Letter (Alphabet),Oikor,,,none,DUPLICATE_KEY
+1576,Word,Katta,,,none,DUPLICATE_KEY
+1577,Sentence,Katta·ku·chik,,,none,DUPLICATE_KEY
+1578,Question,Sing·ani,,,none,DUPLICATE_KEY
+1579,Answer,Aganchakani,,,none,DUPLICATE_KEY
+1580,Test / Exam,Porika,,,none,DUPLICATE_KEY
+1581,Knowledge,Gni / Ma·siani,,,none,DUPLICATE_KEY
+1582,Wisdom,Seng·ani,,,none,DUPLICATE_KEY
+1583,Story,Golpo,,,none,DUPLICATE_KEY
+1584,Map,Map,,,none,DUPLICATE_KEY
+1585,Picture,Noksa,,,none,DUPLICATE_KEY
+1586,Mistake,Gualani,,,none,DUPLICATE_KEY
+1587,Medicine,Sam,,,none,DUPLICATE_KEY
+1588,Pain,Sa·dika,,,none,DUPLICATE_KEY
+1589,Fever,Sin··ding··a,,,none,DOUBLE_RAKA|DUPLICATE_KEY
+1590,Cough,Gusua,,,none,DUPLICATE_KEY
+1591,Headache,Sko·saa,,,none,DUPLICATE_KEY
+1592,Stomachache,Ok·saa,,,none,DUPLICATE_KEY
+1593,Wound / Injury,Mata,,,none,DUPLICATE_KEY
+1594,Blood,An·chi,,,none,DUPLICATE_KEY
+1595,Bone,Greng,,,none,DUPLICATE_KEY
+1596,Healthy,An·senga,,,none,DUPLICATE_KEY
+1597,Weak,Bilgri,,,none,DUPLICATE_KEY
+1598,Strong,Bilaka,,,none,DUPLICATE_KEY
+1599,Blind,Mikgri,,,none,DUPLICATE_KEY
+1600,Deaf,Nachil·kala,,,none,DUPLICATE_KEY
+1601,Mute,Ku·ma,,,none,DUPLICATE_KEY
+1602,Poison,Bisi,,,none,DUPLICATE_KEY
+1603,Swelling,Ripoma,,,none,DUPLICATE_KEY
+1604,Itch,Ka·kita,,,none,DUPLICATE_KEY
+1605,Pill,Sam,,,none,DUPLICATE_KEY
+1606,Axe,Rua (⚠ verb: to pour),,,none,DUPLICATE_KEY
+1607,Knife (Small),Kettal,,,none,DUPLICATE_KEY
+1608,Sword / Machete,Mil·am,,,none,DUPLICATE_KEY
+1609,Hoe,Gitchima / kodal,,,none,DUPLICATE_KEY
+1610,Hammer,Martul,,,none,DUPLICATE_KEY
+1611,Nail (Metal),Gajal / Gojal,,,none,DUPLICATE_KEY
+1612,Rope,Budu,,,none,DUPLICATE_KEY
+1613,Basket (Backpack),Kokcheng,,,none,DUPLICATE_KEY
+1614,Umbrella,Satta,,,none,DUPLICATE_KEY
+1615,Ladder,Jang·ke,,,none,DUPLICATE_KEY
+1616,Bridge,Jal·ang / dolong,,,none,DUPLICATE_KEY
+1617,Boat,Ring,,,none,DUPLICATE_KEY
+1618,Life,Janggi,,,none,DUPLICATE_KEY
+1619,Death,Sia,,,none,DUPLICATE_KEY
+1620,Truth,Bebe,,,none,DUPLICATE_KEY
+1621,Lie,Tol·a,,,none,DUPLICATE_KEY
+1622,War,Dakgrikani,,,none,DUPLICATE_KEY
+1623,Peace,Tom·tomani,,,none,DUPLICATE_KEY
+1624,Dream,Jumang,,,none,DUPLICATE_KEY
+1625,Sound,Gam·a,,,none,DUPLICATE_KEY
+1626,Voice,Ku·rang,,,none,DUPLICATE_KEY
+1627,Light,Seng·a,,,none,DUPLICATE_KEY
+1628,Darkness,Andala,,,none,DUPLICATE_KEY
+1629,Ghost,Me·mang,,,none,DUPLICATE_KEY
+1630,Tradition,Dakbewal,,,none,DUPLICATE_KEY
+1631,Language,Ku·sik,,,none,DUPLICATE_KEY
+1632,Shadow,Jagring,,,none,DUPLICATE_KEY
+1633,All,Gimikan,,,none,DUPLICATE_KEY
+1634,Some,Mitam,,,none,DUPLICATE_KEY
+1635,Many / Much,Bang·a,,,none,DUPLICATE_KEY
+1636,Few / Little,On·titi,,,none,DUPLICATE_KEY
+1637,More,Bang·bata,,,none,DUPLICATE_KEY
+1638,Less,Komia,,,none,DUPLICATE_KEY
+1639,Empty,Bangbang,,,none,DUPLICATE_KEY
+1640,Full,Gapa,,,none,DUPLICATE_KEY
+1641,Enough,Chu·onga,,,none,DUPLICATE_KEY
+1642,Rice (Uncooked),Merong,,,none,DUPLICATE_KEY
+1643,Rice (Cooked),Mi,,,none,DUPLICATE_KEY
+1644,Salt,Kari,,,none,DUPLICATE_KEY
+1645,Oil,To,,,none,DUPLICATE_KEY
+1646,Water,Chi,,,none,DUPLICATE_KEY
+1647,Sugar,Chini,,,none,DUPLICATE_KEY
+1648,Milk,Dutt,,,none,DUPLICATE_KEY
+1649,Egg,Do·chi,,,none,DUPLICATE_KEY
+1650,Meat,Be·en,,,none,DUPLICATE_KEY
+1651,Fish,Na·tok,,,none,DUPLICATE_KEY
+1652,Dry Fish,Na·kam,,,none,DUPLICATE_KEY
+1653,Turmeric,Holdi,,,none,DUPLICATE_KEY
+1654,Garlic,Rasin·gipok,,,none,DUPLICATE_KEY
+1655,Ginger,Re·ching,,,none,DUPLICATE_KEY
+1656,Onion,Rasin,,,none,DUPLICATE_KEY
+1657,Chili,Jal·ik,,,none,DUPLICATE_KEY
+1658,Lentils,Dalli,,,none,DUPLICATE_KEY
+1659,Bread,Ruti,,,none,DUPLICATE_KEY
+1660,Tea,Cha,,,none,DUPLICATE_KEY
+1661,Spices (General),Mosila,,,none,DUPLICATE_KEY
+1662,To Cook,Song·a,,,none,DUPLICATE_KEY
+1663,To Fry,Jo·a,,,none,DUPLICATE_KEY
+1664,To Boil,Rita,,,none,DUPLICATE_KEY
+1665,To Bake / Roast,Ang·a,,,none,DUPLICATE_KEY
+1666,To Stir,Mo·ila,,,none,DUPLICATE_KEY
+1667,Pot,Me.dik,,,none,DUPLICATE_KEY
+1668,Pan,Sospen,,,none,DUPLICATE_KEY
+1669,Plate,Tala,,,none,DUPLICATE_KEY
+1670,Cup,Cup,,,none,DUPLICATE_KEY
+1671,Knife,Kettal,,,none,DUPLICATE_KEY
+1672,Firewood,Am·bol,,,none,DUPLICATE_KEY
+1673,Road / Path,Rama,,,none,DUPLICATE_KEY
+1674,Car,Gari,,,none,DUPLICATE_KEY
+1675,Bicycle,Rengrengsil,,,none,DUPLICATE_KEY
+1676,Motorcycle,Motor·cycle,,,none,DUPLICATE_KEY
+1677,Train,Rail·gari,,,none,DUPLICATE_KEY
+1678,Airplane,Sildo·reng,,,none,DUPLICATE_KEY
+1679,Boat,Ring,,,none,DUPLICATE_KEY
+1680,Bridge,Jal·ang,,,none,DUPLICATE_KEY
+1681,Distance,Chel·a,,,none,DUPLICATE_KEY
+1682,Journey,Songreani,,,none,DUPLICATE_KEY
+1683,Ticket,Tikit,,,none,DUPLICATE_KEY
+1684,Bag / Luggage,Bostu,,,none,DUPLICATE_KEY
+1685,To Arrive,Sokbaa,,,none,DUPLICATE_KEY
+1686,To Leave,Re·ongkata,,,none,DUPLICATE_KEY
+1687,To Wait,Damo / Sengbo,,,none,DUPLICATE_KEY
+1688,Station / Stop,Nengtakani Biap,,,none,DUPLICATE_KEY
+1689,Fast,Ta·raka,,,none,DUPLICATE_KEY
+1690,Slow,Ka·sina,,,none,DUPLICATE_KEY
+1691,Near,Sepang,,,none,DUPLICATE_KEY
+1692,Far,Chel·a,,,none,DUPLICATE_KEY
+1693,Man,Me·asa,,,none,DUPLICATE_KEY
+1694,Woman,Me·chik,,,none,DUPLICATE_KEY
+1695,Boy,Pante,,,none,DUPLICATE_KEY
+1696,Girl,Me·tra,,,none,DUPLICATE_KEY
+1697,Child,Bi·sa,,,none,DUPLICATE_KEY
+1698,Old Man,Budepa,,,none,DUPLICATE_KEY
+1699,Old Woman,Buchuma,,,none,DUPLICATE_KEY
+1700,Youth,Me·tra·pante,,,none,DUPLICATE_KEY
+1701,Son,Depante,,,none,DUPLICATE_KEY
+1702,Daughter,Demechik,,,none,DUPLICATE_KEY
+1703,Friend,Ripeng,,,none,DUPLICATE_KEY
+1704,Enemy,Bobil,,,none,DUPLICATE_KEY
+1705,Neighbor,Noksul,,,none,DUPLICATE_KEY
+1706,Guest,Sokgipa,,,none,DUPLICATE_KEY
+1707,Master / Owner,Nokgipa,,,none,DUPLICATE_KEY
+1708,Servant,Nokkol,,,none,DUPLICATE_KEY
+1709,Village Chief,Nokma,,,none,DUPLICATE_KEY
+1710,Wood,Bol,,,none,DUPLICATE_KEY
+1711,Stone,Ro·ong,,,none,DUPLICATE_KEY
+1712,Iron / Metal,Sil,,,none,DUPLICATE_KEY
+1713,Gold,Sona,,,none,DUPLICATE_KEY
+1714,Silver,Rupa,,,none,DUPLICATE_KEY
+1715,Cloth,Ba·ra,,,none,DUPLICATE_KEY
+1716,Paper,Lekka,,,none,DUPLICATE_KEY
+1717,Plastic,Plastic,,,none,DUPLICATE_KEY
+1718,Glass,Glass,,,none,DUPLICATE_KEY
+1719,Bamboo,Wa·a,,,none,DUPLICATE_KEY
+1720,Thick,Ritchaa,,,none,DUPLICATE_KEY
+1721,Thin,Ba·renga,,,none,DUPLICATE_KEY
+1722,Hard,Raka,,,none,DUPLICATE_KEY
+1723,Who,Sawa,,,none,DUPLICATE_KEY
+1724,What,Maia,,,none,DUPLICATE_KEY
+1725,When,Basako,,,none,DUPLICATE_KEY
+1726,Where,Bano,,,none,DUPLICATE_KEY
+1727,Why,Maini·gimin,,,none,DUPLICATE_KEY
+1728,How,Maikai,,,none,DUPLICATE_KEY
+1729,And,Aro,,,none,DUPLICATE_KEY
+1730,But,Indiba,,,none,DUPLICATE_KEY
+1731,Or,Ba,,,none,DUPLICATE_KEY
+1732,Because,Maina,,,none,DUPLICATE_KEY
+1733,Fish,Na·tok,,,none,DUPLICATE_KEY
+1734,Crab,Ang·ke,,,none,DUPLICATE_KEY
+1735,Frog,Beng·blok,,,none,DUPLICATE_KEY
+1736,Turtle,Ki·sing,,,none,DUPLICATE_KEY
+1737,Prawn / Shrimp,Na·tik,,,none,DUPLICATE_KEY
+1738,Butterfly,Me·pilip,,,none,DUPLICATE_KEY
+1739,Bee,Bija,,,none,DUPLICATE_KEY
+1740,Ant,Chibrim,,,none,DUPLICATE_KEY
+1741,Mosquito,Ganggu,,,none,DUPLICATE_KEY
+1742,Fly,Tampi,,,none,DUPLICATE_KEY
+1743,Spider,Guwang,,,none,DUPLICATE_KEY
+1744,Cockroach,Karo,,,none,DUPLICATE_KEY
+1745,Scorpion,Mangkram,,,none,DUPLICATE_KEY
+1746,Worm / Caterpillar,Jo·ong,,,none,DUPLICATE_KEY
+1747,Tail,Ki·me,,,none,DUPLICATE_KEY
+1748,Horn,Grong,,,none,DUPLICATE_KEY
+1749,Wing,Grang,,,none,DUPLICATE_KEY
+1750,Feather,Kimil,,,none,DUPLICATE_KEY
+1751,Beak,Ku·chot,,,none,DUPLICATE_KEY
+1752,Egg,Do·chi,,,none,DUPLICATE_KEY
+1753,Nest,Do·bitip,,,none,DUPLICATE_KEY
+1754,Hoof,Ja·skil,,,none,DUPLICATE_KEY
+1755,Claw,Jakskil,,,none,DUPLICATE_KEY
+1756,To Fly,Bila,,,none,DUPLICATE_KEY
+1757,To Swim,Jroa (⚠ also: stinging sensation),,,none,DUPLICATE_KEY
+1758,To Bark,Sing·a,,,none,DUPLICATE_KEY
+1759,To Bite,Chika,,,none,DUPLICATE_KEY
+1760,To Crawl,Malama,,,none,DUPLICATE_KEY
+1761,To Growl,Randinga,,,none,DUPLICATE_KEY
+1762,To Lay Eggs,Bitchi·chi·a,,,none,DUPLICATE_KEY
+1763,To Hunt,Sikar·ka·a,,,none,DUPLICATE_KEY
+1764,To Catch,Rim·a,,,none,DUPLICATE_KEY
+1765,Wild,Buringni,,,none,DUPLICATE_KEY
+1766,Tame,Nokni,,,none,DUPLICATE_KEY
+1767,God,Isol,,,none,DUPLICATE_KEY
+1768,Spirit / Soul,Janggi / Gisik,,,none,DUPLICATE_KEY
+1769,Ghost,Me·mang,,,none,DUPLICATE_KEY
+1770,Heaven,Salgi,,,none,DUPLICATE_KEY
+1771,Hell,Norok,,,none,DUPLICATE_KEY
+1772,Prayer,Bi·ani,,,none,DUPLICATE_KEY
+1773,To Pray,Bi·a,,,none,DUPLICATE_KEY
+1774,Worship,Olakkiani,,,none,DUPLICATE_KEY
+1775,Church,Gilja·nok,,,none,DUPLICATE_KEY
+1776,Sin,Pap,,,none,DUPLICATE_KEY
+1777,Blessing,Pattiani,,,none,DUPLICATE_KEY
+1778,Sacrifice,Boli,,,none,DUPLICATE_KEY
+1779,Holy,Rongtalgipa,,,none,DUPLICATE_KEY
+1780,Pastor,Pamong,,,none,DUPLICATE_KEY
+1781,Priest,Kamal,,,none,DUPLICATE_KEY
+1782,Bible,Sastro,,,none,DUPLICATE_KEY
+1783,Faith,Bebera·ani,,,none,DUPLICATE_KEY
+1784,Mercy,Ka·sachakani,,,none,DUPLICATE_KEY
+1785,Miracle,Aiao·inmangipa·kam,,,none,DUPLICATE_KEY
+1786,Angel,Sa·gre,,,none,DUPLICATE_KEY
+1787,Tradition,Dakbewal,,,none,DUPLICATE_KEY
+1788,Law,Niam,,,none,DUPLICATE_KEY
+1789,Court,Kachari,,,none,DUPLICATE_KEY
+1790,Prison,Patok·nok,,,none,DUPLICATE_KEY
+1791,Punishment,Sasti,,,none,DUPLICATE_KEY
+1792,Reward,Boksis,,,none,DUPLICATE_KEY
+1793,Country,A·song,,,none,DUPLICATE_KEY
+1794,Freedom,Jakgitelani,,,none,DUPLICATE_KEY
+1795,Fight,Dakgrikani,,,none,DUPLICATE_KEY
+1796,Tax,Kajina,,,none,DUPLICATE_KEY
+1797,Signature,Jak·soi,,,none,DUPLICATE_KEY
+1798,Truth,Bebe,,,none,DUPLICATE_KEY
+1799,Lie,Tol·napani,,,none,DUPLICATE_KEY
+1800,Witness,Sakki,,,none,DUPLICATE_KEY
+1801,Guilty,Dos·gnang,,,none,DUPLICATE_KEY
+1802,Innocent,Dos·gri,,,none,DUPLICATE_KEY
+1803,To Judge,Bichal·ka·a,,,none,DUPLICATE_KEY
+1804,To Clean,Rongtalata,,,none,DUPLICATE_KEY
+1805,To Sweep,Itroka,,,none,DUPLICATE_KEY
+1806,To Wash (Clothes),Su·sranga,,,none,DUPLICATE_KEY
+1807,To Wash (Hands),Jaksua,,,none,DUPLICATE_KEY
+1808,To Wash (Face),Miksua,,,none,DUPLICATE_KEY
+1809,To Bathe,Aua,,,none,DUPLICATE_KEY
+1810,To Mend / Fix,Namatpila,,,none,DUPLICATE_KEY
+1811,To Build,Rika,,,none,DUPLICATE_KEY
+1812,To Dig,Cho·a,,,none,DUPLICATE_KEY
+1813,To Plant,Ge·a,,,none,DUPLICATE_KEY
+1814,To Cut (Wood),Den·a,,,none,DUPLICATE_KEY
+1815,To Break,Be·ata,,,none,DUPLICATE_KEY
+1816,To Burn,So·a,,,none,DUPLICATE_KEY
+1817,To Light (Lamp),Ching·ata,,,none,DUPLICATE_KEY
+1818,To Put Out (Fire),Kimita,,,none,DUPLICATE_KEY
+1819,To Wrap,Kadepa,,,none,DUPLICATE_KEY
+1820,To Tie,Kaa,,,none,DUPLICATE_KEY
+1821,To Untie,Enga,,,none,DUPLICATE_KEY
+1822,To Carry (on head),Ritchila,,,none,DUPLICATE_KEY
+1823,To Carry (on back),Ripea,,,none,DUPLICATE_KEY
+1824,To Carry (in hand),De·a,,,none,DUPLICATE_KEY
+1825,Hungry,Okkria,,,none,DUPLICATE_KEY
+1826,Thirsty,Chi·ringna·ska,,,none,DUPLICATE_KEY
+1827,Tired,Neng·a,,,none,DUPLICATE_KEY
+1828,Sleepy,Tusina·ska,,,none,DUPLICATE_KEY
+1829,Sick,Sakama,,,none,DUPLICATE_KEY
+1830,Dizzy,Miksula,,,none,DUPLICATE_KEY
+1831,Sweat,Ding·ol,,,none,DUPLICATE_KEY
+1832,Light (weight),Seng·a,,,none,DUPLICATE_KEY
+1833,Hard,Rak·a,,,none,DUPLICATE_KEY
+1834,Soft,Nom·a,,,none,DUPLICATE_KEY
+1835,Sharp,Mata,,,none,DUPLICATE_KEY
+1836,Blunt,Bin·a,,,none,DUPLICATE_KEY
+1837,Smooth,Rinoka,,,none,DUPLICATE_KEY
+1838,Rough,Skaka,,,none,DUPLICATE_KEY
+1839,Deep,Tu·a,,,none,DUPLICATE_KEY
+1840,Shallow,Tu·ja,,,none,DUPLICATE_KEY
+1841,High,Chua,,,none,DUPLICATE_KEY
+1842,Low,Ona,,,none,DUPLICATE_KEY
+1843,Wide,Apala,,,none,DUPLICATE_KEY
+1844,Narrow,Apchona,,,none,DUPLICATE_KEY
+1845,Clean,Rongtala,,,none,DUPLICATE_KEY
+1846,Dirty,Mitchia,,,none,DUPLICATE_KEY
+1847,Full,Gapa,,,none,DUPLICATE_KEY
+1848,Empty,Bangbang,,,none,DUPLICATE_KEY
+1849,Expensive,Dam·raka,,,none,DUPLICATE_KEY
+1850,Cheap,Dam·nom·a,,,none,DUPLICATE_KEY
+1851,I,Anga,,,none,DUPLICATE_KEY
+1852,Me,Angko,,,none,DUPLICATE_KEY
+1853,You (Singular),Na·a,,,none,DUPLICATE_KEY
+1854,You (Object),Nang·na / Nang·ko,,,none,DUPLICATE_KEY
+1855,He / She,Ua,,,none,DUPLICATE_KEY
+1856,Him / Her,Una,,,none,DUPLICATE_KEY
+1857,We (excl.),Chinga,,,none,DUPLICATE_KEY
+1858,We (incl.),An·ching,,,none,DUPLICATE_KEY
+1859,Us,Chingna,,,none,DUPLICATE_KEY
+1860,They,Uamang,,,none,DUPLICATE_KEY
+1861,Them,Uamangna,,,none,DUPLICATE_KEY
+1862,My / Mine,Angni,,,none,DUPLICATE_KEY
+1863,Your / Yours,Nang·ni,,,none,DUPLICATE_KEY
+1864,His / Her / Hers,Uni,,,none,DUPLICATE_KEY
+1865,Our / Ours,Chingni / An·chingni,,,none,DUPLICATE_KEY
+1866,Their / Theirs,Uamangni,,,none,DUPLICATE_KEY
+1867,Whose?,Sani?,,,none,DUPLICATE_KEY
+1868,Someone's,Saniba,,,none,DUPLICATE_KEY
+1869,Everyone's,Pilakni,,,none,DUPLICATE_KEY
+1870,This,Ia,,,none,DUPLICATE_KEY
+1871,That,Ua,,,none,DUPLICATE_KEY
+1872,These,Iamang,,,none,DUPLICATE_KEY
+1873,Those,Uamang,,,none,DUPLICATE_KEY
+1874,Here,Iano,,,none,DUPLICATE_KEY
+1875,There,Uano,,,none,DUPLICATE_KEY
+1876,Myself,Anga an·tang,,,none,DUPLICATE_KEY
+1877,Yourself,Na·a an·tang,,,none,DUPLICATE_KEY
+1878,Himself / Herself,Ua an·tang,,,none,DUPLICATE_KEY
+1879,Someone,Saksa,,,none,DUPLICATE_KEY
+1880,No one,Darangba·ong·ja,,,none,DUPLICATE_KEY
+1881,Everyone,Sakanti,,,none,DUPLICATE_KEY
+1882,Each,Sakprak,,,none,DUPLICATE_KEY
+1883,Other,Gipin,,,none,DUPLICATE_KEY
+1884,Market,Bajal / Anti,,,none,DUPLICATE_KEY
+1885,Shop,Dokan,,,none,DUPLICATE_KEY
+1886,Money,Tangka,,,none,DUPLICATE_KEY
+1887,Price,Dam,,,none,DUPLICATE_KEY
+1888,Expensive,Dam·raka,,,none,DUPLICATE_KEY
+1889,Cheap,Dam·nom·a,,,none,DUPLICATE_KEY
+1890,To Buy,Brea,,,none,DUPLICATE_KEY
+1891,To Sell,Pala,,,none,DUPLICATE_KEY
+1892,Coin,Tangka·bisil,,,none,DUPLICATE_KEY
+1893,Scale,Tochakani,,,none,DUPLICATE_KEY
+1894,Fresh,Gital,,,none,DUPLICATE_KEY
+1895,Stale,Gitcham,,,none,DUPLICATE_KEY
+1896,Discount,Dam·komiatani,,,none,DUPLICATE_KEY
+1897,Customer,Bregipa,,,none,DUPLICATE_KEY
+1898,Shopkeeper,Dokan·dakgipa,,,none,DUPLICATE_KEY
+1899,Bag,Thola,,,none,DUPLICATE_KEY
+1900,How much is this?,Baita?,,,none,DUPLICATE_KEY
+1901,Reduce the price,Dam·ko on·tisa komiatbo.,,,none,DUPLICATE_KEY
+1902,I want to buy this,Anga iako brena ska.,,,none,DUPLICATE_KEY
+1903,Do you have...?,Nang·o ... dongama?,,,none,DUPLICATE_KEY
+1904,It is too expensive,Ia dam rakduga.,,,none,DUPLICATE_KEY
+1905,Give me one kilo,Angna kilo·sa on·bo.,,,none,DUPLICATE_KEY
+1906,Hello,Salam / Namengama,,,none,DUPLICATE_KEY
+1907,How are you?,Na·a namengama?,,,none,DUPLICATE_KEY
+1908,I am fine,Anga namenga.,,,none,DUPLICATE_KEY
+1909,What is your name?,Nang·ni bimungara maia?,,,none,DUPLICATE_KEY
+1910,My name is...,Angni bimungara...,,,none,DUPLICATE_KEY
+1911,Thank you,Mittela.,,,none,DUPLICATE_KEY
+1912,Please,Ka·sapae.,,,none,DUPLICATE_KEY
+1913,Excuse me,Angko kema·watbo.,,,none,DUPLICATE_KEY
+1914,Sorry,Kema·bi·a.,,,none,DUPLICATE_KEY
+1915,Good morning,Pringnam.,,,none,DUPLICATE_KEY
+1916,Good afternoon,Salnam.,,,none,DUPLICATE_KEY
+1917,Good evening,Attamnam.,,,none,DUPLICATE_KEY
+1918,Good night,Walnam.,,,none,DUPLICATE_KEY
+1919,Goodbye,Re·ang·na / Nam·en·dongbo.,,,none,DUPLICATE_KEY
+1920,See you again,Pil·tai·grongna,,,none,DUPLICATE_KEY
+1921,Welcome,Rimchaksoa,,,none,DUPLICATE_KEY
+1922,Come in,Ning·chi re·babo.,,,none,DUPLICATE_KEY
+1923,Sit down,Asongbo.,,,none,DUPLICATE_KEY
+1924,Eat well,Name cha·bo.,,,none,DUPLICATE_KEY
+1925,Where are you from?,Na·a bano·ni?,,,none,DUPLICATE_KEY
+1926,I am from...,Anga ...·ni.,,,none,DUPLICATE_KEY
+1927,Time,Somoi,,,none,DUPLICATE_KEY
+1928,Clock / Watch,Guri,,,none,DUPLICATE_KEY
+1929,Hour,Konta,,,none,DUPLICATE_KEY
+1930,Morning,Pring,,,none,DUPLICATE_KEY
+1931,Noon,Sal·jatchi,,,none,DUPLICATE_KEY
+1932,Afternoon,Sal·aksol,,,none,DUPLICATE_KEY
+1933,Evening,Attam,,,none,DUPLICATE_KEY
+1934,Night,Wal,,,none,DUPLICATE_KEY
+1935,Midnight,Wal·jatchi,,,none,DUPLICATE_KEY
+1936,Today,Da·alo,,,none,DUPLICATE_KEY
+1937,Tomorrow,Knalo,,,none,DUPLICATE_KEY
+1938,Day after tomorrow,Me·nnalo,,,none,DUPLICATE_KEY
+1939,Yesterday,Meja,,,none,DUPLICATE_KEY
+1940,Day before yesterday,Me·si·ja,,,none,DUPLICATE_KEY
+1941,Now,Da·o,,,none,DUPLICATE_KEY
+1942,Later,Ja·mano,,,none,DUPLICATE_KEY
+1943,Before,Skang,,,none,DUPLICATE_KEY
+1944,Early,Bakkan / Pring·seng,,,none,DUPLICATE_KEY
+1945,Late,Ja·man·chak·a,,,none,DUPLICATE_KEY
+1946,Summer,Ding·kari,,,none,DUPLICATE_KEY
+1947,Winter,Sin·kari,,,none,DUPLICATE_KEY
+1948,Rainy Season,Mikkari,,,none,DUPLICATE_KEY
+1949,Always,Pangnan,,,none,DUPLICATE_KEY
+1950,Never,Pangnan·ba (ja),,,none,DUPLICATE_KEY
+1951,And,Aro,,,none,DUPLICATE_KEY
+1952,But,Indiba,,,none,DUPLICATE_KEY
+1953,Or,Ba,,,none,DUPLICATE_KEY
+1954,If,Ode / ·ode,,,none,DUPLICATE_KEY
+1955,So / Therefore,Uni gimin,,,none,DUPLICATE_KEY
+1956,Because,Maina,,,none,DUPLICATE_KEY
+1957,With,Baksa,,,none,DUPLICATE_KEY
+1958,For,Gimin / ·na,,,none,DUPLICATE_KEY
+1959,From,·oni,,,none,DUPLICATE_KEY
+1960,To,·na,,,none,DUPLICATE_KEY
+1961,In / At,·o,,,none,DUPLICATE_KEY
+1962,On,Kosak·o,,,none,DUPLICATE_KEY
+1963,Under,Ka·ma·o,,,none,DUPLICATE_KEY
+1964,Between,Jatchi·o,,,none,DUPLICATE_KEY
+1965,Only,·mangmang / ·san,,,none,DUPLICATE_KEY
+1966,Also,·ba,,,none,DUPLICATE_KEY
+1967,Very,Be·en / Bakkan,,,none,DUPLICATE_KEY
+1968,Again,Pil·tai,,,none,DUPLICATE_KEY
+1969,Wait,Damo/Sengbo,,,none,DUPLICATE_KEY
+1970,Quick / Hurry,Tarkbo,,,none,DUPLICATE_KEY
+1971,Listen,Knachik·bo,,,none,DUPLICATE_KEY
+1972,Look,Ni·bo,,,none,DUPLICATE_KEY
+1973,Tell me,Angna agan·bo,,,none,DUPLICATE_KEY
+1974,I know,Anga uia.,,,none,DUPLICATE_KEY
+1975,I don't know,Anga uija.,,,none,DUPLICATE_KEY
+1976,No more,Dongja,,,none,DUPLICATE_KEY
+1977,It exists / It's there,Donga,,,none,DUPLICATE_KEY
+1978,I don't care,Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+1979,Wait a moment,Damo / Gisep sengbo,,,none,DUPLICATE_KEY
+1980,No problem / Never mind,Maming ba ong·ja,,,none,DUPLICATE_KEY
+1981,I understand,Anga uia,,,none,DUPLICATE_KEY
+1982,I don't understand,Anga uija,,,none,DUPLICATE_KEY
+1983,Say it again,Piltai aganbo,,,none,DUPLICATE_KEY
+1984,Speak slowly,Ka·sine aganbo,,,none,DUPLICATE_KEY
+1985,What did you say?,Na·a maiko agana?,,,none,DUPLICATE_KEY
+1986,Is that so?,Inde·a?,,,none,DUPLICATE_KEY
+1987,Really?,Bebema?,,,none,DUPLICATE_KEY
+1988,Of course!,"Oe, bebe!",,,none,DUPLICATE_KEY
+1989,Let's eat,Hai cha·ha,,,none,DUPLICATE_KEY
+1990,Let's go,Hai re·naha,,,none,DUPLICATE_KEY
+1991,Let's sleep,Hai tusina,,,none,DUPLICATE_KEY
+1992,Hurry up!,Tarkbo!,,,none,DUPLICATE_KEY
+1993,Come quick!,Tarake re·babo!,,,none,DUPLICATE_KEY
+1994,Be careful!,Chimsakbo!,,,none,DUPLICATE_KEY
+1995,Come here!,Ianona re·babo!,,,none,DUPLICATE_KEY
+1996,Go away!,Re·angbo!,,,none,DUPLICATE_KEY
+1997,Enough!,Chu·onga!,,,none,DUPLICATE_KEY
+1998,Not now,Da·o ong·ja,,,none,DUPLICATE_KEY
+1999,Later,Ja·mano,,,none,DUPLICATE_KEY
+2000,Maybe,Ong·naba donga,,,none,DUPLICATE_KEY
+2001,I forgot,Anga guala,,,none,DUPLICATE_KEY
+2002,I remember,Anga gisik ra·a,,,none,DUPLICATE_KEY
+2003,What time is it?,Baita baji?,,,none,DUPLICATE_KEY
+2004,I am busy,Anga kam·gnanga,,,none,DUPLICATE_KEY
+2005,I am not busy,Anga kam·gnang·ja,,,none,DUPLICATE_KEY
+2006,I am coming,Anga re·baenga,,,none,DUPLICATE_KEY
+2007,I am going,Anga re·angenga,,,none,DUPLICATE_KEY
+2008,Help me,Angko dakchakbo,,,none,DUPLICATE_KEY
+2009,Thank you very much,Mittela dakpile,,,none,DUPLICATE_KEY
+2010,I am happy,Anga kusionga,,,none,DUPLICATE_KEY
+2011,I am sad,Anga dukonga,,,none,DUPLICATE_KEY
+2012,I am angry,Anga ka·o nanga,,,none,DUPLICATE_KEY
+2013,I am scared,Anga kena,,,none,DUPLICATE_KEY
+2014,I am tired,Anga neng·a,,,none,DUPLICATE_KEY
+2015,I miss you,Anga nang·na simbraa,,,none,DUPLICATE_KEY
+2016,I am worried,Anga jajrenja,,,none,DUPLICATE_KEY
+2017,I feel lonely,Anga saksan gisik·o nanga,,,none,DUPLICATE_KEY
+2018,Don't be sad,Duk ong·ja,,,none,DUPLICATE_KEY
+2019,Don't be afraid,Kennabe,,,none,DUPLICATE_KEY
+2020,Be patient,Chakchikbo,,,none,DUPLICATE_KEY
+2021,Be brave,Ka·dongbo,,,none,DUPLICATE_KEY
+2022,I am ashamed,Anga kracha·a,,,none,DUPLICATE_KEY
+2023,I am jealous,Anga mikbua,,,none,DUPLICATE_KEY
+2024,I forgive you,Anga nang·ko kema ka·ra,,,none,DUPLICATE_KEY
+2025,I am grateful,Anga mittela nanga,,,none,DUPLICATE_KEY
+2026,I trust you,Nang·ko bebe ra·a,,,none,DUPLICATE_KEY
+2027,I am surprised,Anga jagok·a,,,none,DUPLICATE_KEY
+2028,I am satisfied,Anga chu·ongnika,,,none,DUPLICATE_KEY
+2029,I don't care,Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+2030,Drive,Sala,,,none,DUPLICATE_KEY
+2031,Pull,Sala,,,none,DUPLICATE_KEY
+2032,Push,Jitpaka,,,none,DUPLICATE_KEY
+2033,Swim,Jroa,,,none,DUPLICATE_KEY
+2034,Climb,Maldoa / Gadoa,,,none,DUPLICATE_KEY
+2035,Jump,Bildoa,,,none,DUPLICATE_KEY
+2036,Crawl,Malama,,,none,DUPLICATE_KEY
+2037,Roll,Romroma,,,none,DUPLICATE_KEY
+2038,Roam / Wander,Rorama / Roama,,,none,DUPLICATE_KEY
+2039,Fly,Bila,,,none,DUPLICATE_KEY
+2040,Shake,Moa,,,none,DUPLICATE_KEY
+2041,Move (something),De·jita,,,none,DUPLICATE_KEY
+2042,Lock,Teka,,,none,DUPLICATE_KEY
+2043,Shoot,Goa,,,none,DUPLICATE_KEY
+2044,Throw,Goata / Gal·a,,,none,DUPLICATE_KEY
+2045,Catch,Rim·a,,,none,DUPLICATE_KEY
+2046,Look / See / Watch,Nia,,,none,DUPLICATE_KEY
+2047,Stare,Nitata,,,none,DUPLICATE_KEY
+2048,Show,Mesoka,,,none,DUPLICATE_KEY
+2049,Smell,Gingsika,,,none,DUPLICATE_KEY
+2050,Spread,Barama,,,none,DUPLICATE_KEY
+2051,Pour,Rua,,,none,DUPLICATE_KEY
+2052,Apply,Nonga,,,none,DUPLICATE_KEY
+2053,Pluck,Aka,,,none,DUPLICATE_KEY
+2054,Turn (page/sheet),Badala,,,none,DUPLICATE_KEY
+2055,Cook,Song·a,,,none,DUPLICATE_KEY
+2056,Fry,Jo·a,,,none,DUPLICATE_KEY
+2057,Boil,Rita,,,none,DUPLICATE_KEY
+2058,Bake / Roast,Ang·a,,,none,DUPLICATE_KEY
+2059,Stir,Mo·ila,,,none,DUPLICATE_KEY
+2060,Taste,Nong·mia,,,none,DUPLICATE_KEY
+2061,Peel,Brika,,,none,DUPLICATE_KEY
+2062,Chop,Rata,,,none,DUPLICATE_KEY
+2063,Grind,Supneka,,,none,DUPLICATE_KEY
+2064,Add salt,Kari on·bo,,,none,DUPLICATE_KEY
+2065,Serve food,Mi Onbo,,,none,DUPLICATE_KEY
+2066,Eat together,Baksa cha·ha,,,none,DUPLICATE_KEY
+2067,Think,Gisik·o nanga,,,none,DUPLICATE_KEY
+2068,Know,Uia,,,none,DUPLICATE_KEY
+2069,Forget,Guala,,,none,DUPLICATE_KEY
+2070,Remember,Ku·rachaka,,,none,DUPLICATE_KEY
+2071,Decide,Tik ka·a,,,none,DUPLICATE_KEY
+2072,Agree,Ka·racha,,,none,DUPLICATE_KEY
+2073,Disagree,Ka·rach·ong·ja,,,none,DUPLICATE_KEY
+2074,Promise,Ka·ra chaka,,,none,DUPLICATE_KEY
+2075,Lie,Tol·a,,,none,DUPLICATE_KEY
+2076,Tell the truth,Bebeko aganbo,,,none,DUPLICATE_KEY
+2077,Ask,Sing·a,,,none,DUPLICATE_KEY
+2078,Answer,Aganchaka,,,none,DUPLICATE_KEY
+2079,Read,Pora,,,none,DUPLICATE_KEY
+2080,Write,Sea,,,none,DUPLICATE_KEY
+2081,Count,Chanbo,,,none,DUPLICATE_KEY
+2082,Learn,Sikia,,,none,DUPLICATE_KEY
+2083,Teach,Sikie on·a,,,none,DUPLICATE_KEY
+2084,Traditional festival,Wangala,,,none,DUPLICATE_KEY
+2085,Traditional dance,Do·krua,,,none,DUPLICATE_KEY
+2086,Traditional drum,Dama,,,none,DUPLICATE_KEY
+2087,Traditional flute,Rongsi,,,none,DUPLICATE_KEY
+2088,Clan / Lineage,Mahari,,,none,DUPLICATE_KEY
+2089,Ancestral property,A·chik daka,,,none,DUPLICATE_KEY
+2090,Village headman,Nokma,,,none,DUPLICATE_KEY
+2091,Traditional house,A·chik nok,,,none,DUPLICATE_KEY
+2092,Jhumming (slash & burn),A·ba daka,,,none,DUPLICATE_KEY
+2093,Sacred grove,Kosi,,,none,DUPLICATE_KEY
+2094,Traditional rice beer,Minil Bitchi,,,none,DUPLICATE_KEY
+2095,Weaving,Do·rua,,,none,DUPLICATE_KEY
+2096,Dakmanda (women's wrap),Dakmanda,,,none,DUPLICATE_KEY
+2097,Nokpante (bachelor house),Nokpante,,,none,DUPLICATE_KEY
+2098,Ancestor worship,Songsarek,,,none,DUPLICATE_KEY
+2099,Don't judge by appearance,Mikrangni bimung gri,,,none,DUPLICATE_KEY
+2100,United we stand,"Baksa nangchim·a, saksan sia",,,none,DUPLICATE_KEY
+2101,"Work hard now, rest later","Skang daka, ja·mano nengbo",,,none,DUPLICATE_KEY
+2102,"Speak less, do more","Agana gri, daka bang·a",,,none,DUPLICATE_KEY
+2103,A good person is known by deeds,Nama mande·ra ua kam·o uia,,,none,DUPLICATE_KEY
+2104,Don't waste food,Mi gual·ata·bo ong·ja,,,none,DUPLICATE_KEY
+2105,"The forest gives, the forest takes","Buring on·a, buring ra·a",,,none,DUPLICATE_KEY
+2106,Truth always comes out,Bebe·ra inde·a piltai,,,none,DUPLICATE_KEY
+2107,A little is better than nothing,"On·titi nama, bangbang·bata",,,none,DUPLICATE_KEY
+2108,Wow! / Amazing!,Aio!,,,none,DUPLICATE_KEY
+2109,Yikes! / Oh no!,Himanga!,,,none,DUPLICATE_KEY
+2110,Hey! (calling someone),Ei! / O!,,,none,DUPLICATE_KEY
+2111,What's up?,Maiko nanga?,,,none,DUPLICATE_KEY
+2112,No way! / Impossible!,Ong·ja inde·ba!,,,none,DUPLICATE_KEY
+2113,Whatever / I don't care,Jeba Onj·china / Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+2114,Stop it,Dontonjbo,,,none,DUPLICATE_KEY
+2115,Cool / Awesome,Nito / Nita·gipa,,,none,DUPLICATE_KEY
+2116,Annoying,Jala·gipa,,,none,DUPLICATE_KEY
+2117,Let's hang out,Hai roromna,,,none,DUPLICATE_KEY
+2118,I'm broke,Anga tangka donja,,,none,DUPLICATE_KEY
+2119,He/She is lying,Ua tolenga,,,none,DUPLICATE_KEY
+2120,Mind your own business,Nangni kamko dakbo,,,none,DUPLICATE_KEY
+2121,I'm hungry (casual),Anga okkrinenga,,,none,DUPLICATE_KEY
+2122,Just joking,Anga kalake roega,,,none,DUPLICATE_KEY
+2123,Chill out / Relax,Nom·a bo,,,none,DUPLICATE_KEY
+2124,Let's go already!,Re·naha ba!,,,none,DUPLICATE_KEY
+2125,Kind / Gentle,Nama·gipa,,,none,DUPLICATE_KEY
+2126,Brave,Ka·rakani·gipa,,,none,DUPLICATE_KEY
+2127,Clever,Seng·a·gipa,,,none,DUPLICATE_KEY
+2128,Foolish,Bangbang·gisik,,,none,DUPLICATE_KEY
+2129,Honest,Bebe·agani·gipa,,,none,DUPLICATE_KEY
+2130,Dishonest,Tol·a·agani·gipa,,,none,DUPLICATE_KEY
+2131,Hardworking,Dak·rakgipa,,,none,DUPLICATE_KEY
+2132,Lazy,Bilgri·gipa,,,none,DUPLICATE_KEY
+2133,Generous,On·a·nakgipa,,,none,DUPLICATE_KEY
+2134,Greedy,Gisika·dakgipa,,,none,DUPLICATE_KEY
+2135,Proud / Arrogant,Gaora·gipa,,,none,DUPLICATE_KEY
+2136,Humble,Chon·a·gisik,,,none,DUPLICATE_KEY
+2137,Shy,Kracha·gipa,,,none,DUPLICATE_KEY
+2138,Confident,Ka·raka·gisik,,,none,DUPLICATE_KEY
+2139,Talkative,Bang·a agani·gipa,,,none,DUPLICATE_KEY
+2140,Quiet,Agana·ja·gipa,,,none,DUPLICATE_KEY
+2141,Funny,Ka·ding·o on·a·gipa,,,none,DUPLICATE_KEY
+2142,Stubborn,An·tang·ra·gipa,,,none,DUPLICATE_KEY
+2143,Obedient,Knachika·gipa,,,none,DUPLICATE_KEY
+2144,Dog bark,Sing·a,,,none,DUPLICATE_KEY
+2145,Cat meow,Miau·miau,,,none,DUPLICATE_KEY
+2146,Cow moo,Ma·ma,,,none,DUPLICATE_KEY
+2147,Rooster crow,Ko·ko·rika,,,none,DUPLICATE_KEY
+2148,Frog croak,Beng·beng,,,none,DUPLICATE_KEY
+2149,Bird chirp,Chi·chi,,,none,DUPLICATE_KEY
+2150,Snake hiss,Chiss·chiss,,,none,DUPLICATE_KEY
+2151,Bee buzz,Guum·guum,,,none,DUPLICATE_KEY
+2152,Tiger roar,Randinga,,,none,DUPLICATE_KEY
+2153,Nod (yes),Skola·o,,,none,DUPLICATE_KEY
+2154,Shake head (no),Sko·moa,,,none,DUPLICATE_KEY
+2155,Wave hand,Jak·bildoa,,,none,DUPLICATE_KEY
+2156,Point finger,Jak·chip·a,,,none,DUPLICATE_KEY
+2157,Clap,Jak·taka,,,none,DUPLICATE_KEY
+2158,Bow,Sko·ka·mama,,,none,DUPLICATE_KEY
+2159,Hug,Jak·kadepa,,,none,DUPLICATE_KEY
+2160,Wink,Mik·chip·a,,,none,DUPLICATE_KEY
+2161,Smile,Ka·ding·mikseng·a,,,none,DUPLICATE_KEY
+2162,Sneeze,Hatchia,,,none,DUPLICATE_KEY
+2163,Yawn,Gu·ua,,,none,DUPLICATE_KEY
+2164,Cough,Gusua,,,none,DUPLICATE_KEY
+2165,Whistle,Hu·a,,,none,DUPLICATE_KEY
+2166,Open your book,Ki·tapko oa·bo,,,none,DUPLICATE_KEY
+2167,Close your book,Ki·tapko chip·a·bo,,,none,DUPLICATE_KEY
+2168,Listen carefully,Chakchik knachik·bo,,,none,DUPLICATE_KEY
+2169,Raise your hand,Jakko bil·bo,,,none,DUPLICATE_KEY
+2170,Answer the question,Sing·ani·ko aganchaka·bo,,,none,DUPLICATE_KEY
+2171,I have a question,Angna sing·ani dong·a,,,none,DUPLICATE_KEY
+2172,I don't understand,Anga uija,,,none,DUPLICATE_KEY
+2173,Class is over,Klas chu·a,,,none,DUPLICATE_KEY
+2174,Homework,Nok·o dak·porani,,,none,DUPLICATE_KEY
+2175,Study hard,Chakchik pora·bo,,,none,DUPLICATE_KEY
+2176,Congratulations!,Ka·soa!,,,none,DUPLICATE_KEY
+2177,Happy Birthday!,Bilsi·gital kusi!,,,none,DUPLICATE_KEY
+2178,Get well soon,Mangmang an·sengpibo,,,none,DUPLICATE_KEY
+2179,I will pray for you,Nang·na anga bi·engena,,,none,DUPLICATE_KEY
+2180,God bless you,Isol nang·na pattia·bo,,,none,DUPLICATE_KEY
+2181,Rest in peace,Tom·toma·o tusibo,,,none,DUPLICATE_KEY
+2182,You did well,Na·a nama dak·a,,,none,DUPLICATE_KEY
+2183,Don't give up,Kimia·bo ong·ja,,,none,DUPLICATE_KEY
+2184,I believe in you,Anga nang·na bebe ra·a,,,none,DUPLICATE_KEY
+2185,I miss my family,Angni nokdang·na simbraa,,,none,DUPLICATE_KEY
+2186,Come (command),Reba,,,none,DUPLICATE_KEY
+2187,Came (past),Reba·aha,,,none,DUPLICATE_KEY
+2188,Will come (future),Reangen,,,none,DUPLICATE_KEY
+2189,He came by bus yesterday,Bia bus o raba·a mijalo,,,none,DUPLICATE_KEY
+2190,Why did you come?,Na·a maina reba·a?,,,none,DUPLICATE_KEY
+2191,How did you come?,Na·a maidake reba·a?,,,none,DUPLICATE_KEY
+2192,Will you come with me?,Na·ara ang·ming rebagenma?,,,none,DUPLICATE_KEY
+2193,I shall come with you.,Ang·a nangming reangen.,,,none,DUPLICATE_KEY
+2194,He will come.,Bia rebagen.,,,none,DUPLICATE_KEY
+2195,Go (command),Reangbo,,,none,DUPLICATE_KEY
+2196,He had gone.,Bia reang·aha.,,,none,DUPLICATE_KEY
+2197,He will go.,Bia reangen.,,,none,DUPLICATE_KEY
+2198,They went to the mosque.,Bisong olakiramchi re·anga.,,,none,DUPLICATE_KEY
+2199,Eat (command),Chabo,,,none,DUPLICATE_KEY
+2200,He is eating an apple.,Bia apple cha·enga.,,,none,DUPLICATE_KEY
+2201,He ate an apple.,Bia apple cha·aha.,,,none,DUPLICATE_KEY
+2202,He has eaten.,Bia chamanjok.,,,none,DUPLICATE_KEY
+2203,He had eaten.,Bia chaman·aha.,,,none,DUPLICATE_KEY
+2204,He will eat.,Bia chagen.,,,none,DUPLICATE_KEY
+2205,Did you have lunch?,Na·a mi chajokma?,,,none,DUPLICATE_KEY
+2206,Open (command),Khulibo,,,none,DUPLICATE_KEY
+2207,Opened (past),Khulia·a,,,none,DUPLICATE_KEY
+2208,Will open (future),Khuligen,,,none,DUPLICATE_KEY
+2209,Sit (command),Asongbo,,,none,DUPLICATE_KEY
+2210,Walk (command),Roranbo / Rebo,,,none,DUPLICATE_KEY
+2211,Drink (command),Ringbo,,,none,DUPLICATE_KEY
+2212,Win,Am·a,,,none,DUPLICATE_KEY
+2213,Run (command),Katbo,,,none,DUPLICATE_KEY
+2214,Why did you sleep?,Na·a maina tusia?,,,none,DUPLICATE_KEY
+2215,How did you sleep?,Na·a maidake tusia?,,,none,DUPLICATE_KEY
+2216,He slept the whole night.,Bia walgimik tua.,,,none,DUPLICATE_KEY
+2217,In which room did you sleep?,Na·a badia room o tusia?,,,none,DUPLICATE_KEY
+2218,He wrote well in the exam.,Bia porikka namen se·ataha.,,,none,DUPLICATE_KEY
+2219,How did you write?,Na·a maidake se·a?,,,none,DUPLICATE_KEY
+2220,Can you write the exam?,Na·a porikka sena mangenma?,,,none,DUPLICATE_KEY
+2221,What is written in the letter?,Chitthio mai sea dongachim?,,,none,DUPLICATE_KEY
+2222,How did you drive?,Na·a maidake sal·a?,,,none,DUPLICATE_KEY
+2223,Why do you drive the car?,Na·a maina gariko sal·a?,,,none,DUPLICATE_KEY
+2224,Why did she pay the money?,Bia maina tangka ko gama?,,,none,DUPLICATE_KEY
+2225,Why did he bring the bag?,Bia maina bag ko raba·a?,,,none,DUPLICATE_KEY
+2226,I saw the film last week.,Ang·a ia film ko nia mija antio.,,,none,DUPLICATE_KEY
+2227,How was the journey yesterday?,Mijal songre·ara nam·a ma?,,,none,DUPLICATE_KEY
+2228,What is your name?,Nang bimung maia?,,,none,DUPLICATE_KEY
+2229,What?,Maia?,,,none,DUPLICATE_KEY
+2230,What did you do?,Na·a maiko daka?,,,none,DUPLICATE_KEY
+2231,What should I do?,Ang·a maiko dakgen?,,,none,DUPLICATE_KEY
+2232,What can I do?,Ang·a maiko dakgen?,,,none,DUPLICATE_KEY
+2233,What are the questions?,Mai·a sing·ani chim?,,,none,DUPLICATE_KEY
+2234,What were the questions?,Mai·a sing·aniara?,,,none,DUPLICATE_KEY
+2235,What is written in the letter?,Chitthio mai sea dongachim?,,,none,DUPLICATE_KEY
+2236,What you had been told?,Naa maiko aganata?,,,none,DUPLICATE_KEY
+2237,What will be the answer?,Aganchakani·ara mai ong·en?,,,none,DUPLICATE_KEY
+2238,Why did you come?,Na·a maina reba·a?,,,none,DUPLICATE_KEY
+2239,Why did you sleep?,Na·a maina tusia?,,,none,DUPLICATE_KEY
+2240,Why did you tell him to go?,Na·a maina biko re·angna aganata?,,,none,DUPLICATE_KEY
+2241,Why did he bring the bag?,Bia maina bag ko raba·a?,,,none,DUPLICATE_KEY
+2242,Why did she pay the money?,Bia maina tangka ko gama?,,,none,DUPLICATE_KEY
+2243,Why did they sit there?,Bisong maina uano a·songenga?,,,none,DUPLICATE_KEY
+2244,Why do you drive the car?,Na·a maina gariko sal·a?,,,none,DUPLICATE_KEY
+2245,Why are they late for the meeting?,Bisong maina meeting ona ru·ute reba·a?,,,none,DUPLICATE_KEY
+2246,How did you come?,Na·a maidake reba·a?,,,none,DUPLICATE_KEY
+2247,How did you sleep?,Na·a maidake tusia?,,,none,DUPLICATE_KEY
+2248,How did you drive?,Na·a maidake sal·a?,,,none,DUPLICATE_KEY
+2249,How did you write?,Na·a maidake se·a?,,,none,DUPLICATE_KEY
+2250,How many apples are there in my hand?,Ang jako baitarong apple dong·a?,,,none,DUPLICATE_KEY
+2251,How many did you take?,Na·a baitarong ra·a?,,,none,DUPLICATE_KEY
+2252,How much did he pay you?,Nangna baita tangka gama?,,,none,DUPLICATE_KEY
+2253,How much distance to go?,Baita chelkuenga?,,,none,DUPLICATE_KEY
+2254,How was the journey yesterday?,Mijal songre·ara nam·a ma?,,,none,DUPLICATE_KEY
+2255,How are you?,Na·a namengama?,,,none,DUPLICATE_KEY
+2256,Which way did you come?,Na·a bagita reba·a?,,,none,DUPLICATE_KEY
+2257,Which is your favourite colour?,Nang namnikgipa rong·ara mai·a?,,,none,DUPLICATE_KEY
+2258,In which room did you sleep?,Na·a badia room o tusia?,,,none,DUPLICATE_KEY
+2259,Which story did you tell?,Badiya golpo ko agana?,,,none,DUPLICATE_KEY
+2260,Which is the sweetest fruit?,Badia bite chibata?,,,none,DUPLICATE_KEY
+2261,Which Indian state has the largest population?,India ni badiya adoko mande bangbata?,,,none,DUPLICATE_KEY
+2262,Where did you come from?,Na·a banoni reba·a?,,,none,DUPLICATE_KEY
+2263,Where did you sleep?,Na·a bano tusia?,,,none,DUPLICATE_KEY
+2264,Where should I go?,Ang·ara batchi reangbo?,,,none,DUPLICATE_KEY
+2265,Whom should I contact?,Ang·ar sako contact khagen?,,,none,DUPLICATE_KEY
+2266,Can you give me your pen?,Na·a nang pen ko on·a mangenma?,,,none,DUPLICATE_KEY
+2267,"Yes, of course.",Hoe mangenva.,,,none,DUPLICATE_KEY
+2268,Can you lift the box?,Na·a box ko dena mangenma?,,,none,DUPLICATE_KEY
+2269,Can you write the exam?,Na·a porikka sena mangenma?,,,none,DUPLICATE_KEY
+2270,Will you come with me?,Na·ara ang·ming rebagenma?,,,none,DUPLICATE_KEY
+2271,I shall come with you.,Ang·a nangming reangen.,,,none,DUPLICATE_KEY
+2272,May I sit down?,Anga asongna mangengma?,,,none,DUPLICATE_KEY
+2273,Can you give me water?,Angna chi on·a mangengma?,,,none,DUPLICATE_KEY
+2274,Do you love me?,Na·a angna kasa·a ma?,,,none,DUPLICATE_KEY
+2275,"Yes, I love you.","Hoe, ang·a nangna kasa·a.",,,none,DUPLICATE_KEY
+2276,I am fine.,Ang·a namengava.,,,none,DUPLICATE_KEY
+2277,"Yes, of course.",Hoe mangenva.,,,none,DUPLICATE_KEY
+2278,That (far/there),Haiwa,,,none,DUPLICATE_KEY
+2279,Which,Badia / Badiya,,,none,DUPLICATE_KEY
+2280,Which way,Bagita,,,none,DUPLICATE_KEY
+2281,How many / How much,Baitarong / Baita,,,none,DUPLICATE_KEY
+2282,Whom,Sako,,,none,DUPLICATE_KEY
+2283,Whole night,Walgimik,,,none,DUPLICATE_KEY
+2284,Last week,Mija antio,,,none,DUPLICATE_KEY
+2285,With (me / you),Ming,,,none,DUPLICATE_KEY
+2286,Late,Ru·ute,,,none,DUPLICATE_KEY
+2287,Favourite,Namnikgipa,,,none,DUPLICATE_KEY
+2288,Sweetest,Chibata,,,none,DUPLICATE_KEY
+2289,Largest / Most,Bangbata,,,none,DUPLICATE_KEY
+2290,Well (adverb),Namen,,,none,DUPLICATE_KEY
+2291,Win,Am·a,,,none,DUPLICATE_KEY
+2292,Lift / Carry (ability),Dena,,,none,DUPLICATE_KEY
+2293,Pay,Gama,,,none,DUPLICATE_KEY
+2294,Mosque,Olakiram,,,none,DUPLICATE_KEY
+2295,Letter (written),Chitthio,,,none,DUPLICATE_KEY
+2296,Population,Adoko mande,,,none,DUPLICATE_KEY
+2297,Newspaper,Songbat,,,none,DUPLICATE_KEY
+2298,Best (superlative),Bilongen nambata,,,none,DUPLICATE_KEY
+2299,Room,Room,,,none,DUPLICATE_KEY
+2300,Apple,Apple,,,none,DUPLICATE_KEY
+2301,Story,Golpo,,,none,DUPLICATE_KEY
+2302,Journey,Songre,,,none,DUPLICATE_KEY
+2303,Colour,Rong,,,none,DUPLICATE_KEY
+2304,Contact (verb),Contact khagen,,,none,DUPLICATE_KEY
+2305,Tense / Form,Suffix / Pattern,,,none,DUPLICATE_KEY
+2306,Past simple,verb + a,,,none,DUPLICATE_KEY
+2307,Past simple (alt),verb + aha,,,none,DUPLICATE_KEY
+2308,Past perfect,verb + man + aha,,,none,DUPLICATE_KEY
+2309,Present perfect,verb + manjok,,,none,DUPLICATE_KEY
+2310,Present continuous,verb + enga,,,none,DUPLICATE_KEY
+2311,Future,verb + en / gen,,,none,DUPLICATE_KEY
+2312,Imperative / Command,verb + bo,,,none,DUPLICATE_KEY
+2313,Let's [verb],Hai + verb + ha,,,none,DUPLICATE_KEY
+2314,Ability / Permission ?,verb + mangenma?,,,none,DUPLICATE_KEY
+2315,Ability / Permission ✓,mangenva,,,none,DUPLICATE_KEY
+2316,Past question,verb + ama?,,,none,DUPLICATE_KEY
+2317,Present question,verb + engma?,,,none,DUPLICATE_KEY
+2318,Permission request,verb + na + mangengma?,,,none,DUPLICATE_KEY
+2319,Negation,verb + ong·ja / ·ja,,,none,DUPLICATE_KEY
+2320,Adverb 'well',namen,,,none,DUPLICATE_KEY
+2321,Quickly (adverb),tarake,,,none,DUPLICATE_KEY
+2322,Why,maina,,,none,DUPLICATE_KEY
+2323,How,maidake,,,none,DUPLICATE_KEY
+2324,How many,baitarong,,,none,DUPLICATE_KEY
+2325,How much,baita,,,none,DUPLICATE_KEY
+2326,Which,badia / badiya,,,none,DUPLICATE_KEY
+2327,Which way,bagita,,,none,DUPLICATE_KEY
+2328,Whole / Entire,gimik,,,none,DUPLICATE_KEY
+2329,Classifier,Used For,,,none,DUPLICATE_KEY
+2330,mang,"Animals, birds, fish, insects",,,none,DUPLICATE_KEY
+2331,sak,People and persons,,,none,DUPLICATE_KEY
+2332,gong,Money and currency,,,none,DUPLICATE_KEY
+2333,king,"Books, paper, leaves, flat / thin objects",,,none,DUPLICATE_KEY
+2334,ge,"Objects, tools, things (general fallback)",,,none,DUPLICATE_KEY
+2335,1,sa,,,none,DUPLICATE_KEY
+2336,2,gni,,,none,DUPLICATE_KEY
+2337,3,gittam,,,none,DUPLICATE_KEY
+2338,4,bri,,,none,DUPLICATE_KEY
+2339,5,bonga,,,none,DUPLICATE_KEY
+2340,one dog,achak mang·sa,,,none,DUPLICATE_KEY
+2341,two dogs,achak mang·gni,,,none,DUPLICATE_KEY
+2342,three books,ki·tap king·gittam,,,none,DUPLICATE_KEY
+2343,one person,mande sak·sa,,,none,DUPLICATE_KEY
+2344,four fruits,mewa ge·bri,,,none,DUPLICATE_KEY
+2345,five coins,tangka gong·bonga,,,none,DUPLICATE_KEY
+2346,ten birds,do·a mang·chiking,,,none,DUPLICATE_KEY
+2347,Let's eat,Hai cha·ha,,,none,DUPLICATE_KEY
+2348,Let's go,Hai re·naha,,,none,DUPLICATE_KEY
+2349,Let's sleep,Hai tusina,,,none,DUPLICATE_KEY
+2350,Let's drink,Hai ringaha,,,none,DUPLICATE_KEY
+2351,Let's sit,Hai asongha,,,none,DUPLICATE_KEY
+2352,Let's play,Hai kalaha,,,none,DUPLICATE_KEY
+2353,Let's work,Hai dakha,,,none,DUPLICATE_KEY
+2354,Give me water,Angna chi on·bo,,,none,DUPLICATE_KEY
+2355,Give him food,Una mi on·bo,,,none,DUPLICATE_KEY
+2356,Can you give me water?,Angna chi on·a mangengma?,,,none,DUPLICATE_KEY
+2357,I gave you water,Anga nang·na chi on·a,,,none,DUPLICATE_KEY
+2358,Please give me some,Angna mitam on·bo ka·sapae,,,none,DUPLICATE_KEY
+2359,I went,Anga re·ang·a,,,none,DUPLICATE_KEY
+2360,I ate,Anga cha·a,,,none,DUPLICATE_KEY
+2361,I drank,Anga ringa·a,,,none,DUPLICATE_KEY
+2362,I came,Anga re·ba·a,,,none,DUPLICATE_KEY
+2363,She slept,Ua tusi·a,,,none,DUPLICATE_KEY
+2364,They worked,Uamang dak·a,,,none,DUPLICATE_KEY
+2365,I am eating,Anga cha·oenga,,,none,DUPLICATE_KEY
+2366,She is going,Ua re·angenga,,,none,DUPLICATE_KEY
+2367,He is sleeping,Ua tusienga,,,none,DUPLICATE_KEY
+2368,I am coming,Anga re·baenga,,,none,DUPLICATE_KEY
+2369,They are working,Uamang dak·oenga,,,none,DUPLICATE_KEY
+2370,Did you eat?,Na·a cha·ama?,,,none,DUPLICATE_KEY
+2371,Did you go to market?,Na·a bajalchi re·angama?,,,none,DUPLICATE_KEY
+2372,Are you eating?,Na·a cha·engma?,,,none,DUPLICATE_KEY
+2373,Can you give me water?,Angna chi on·a mangengma?,,,none,DUPLICATE_KEY
+2374,May I sit?,Anga asongna mangengma?,,,none,DUPLICATE_KEY
+2375,Is he coming?,Ua re·baenga·ma?,,,none,DUPLICATE_KEY
+2376,Come here!,Ianona re·babo!,,,none,DUPLICATE_KEY
+2377,Sit down,Asongbo,,,none,DUPLICATE_KEY
+2378,Go away,Re·angbo,,,none,DUPLICATE_KEY
+2379,Wait,Damo/Sengbo,,,none,DUPLICATE_KEY
+2380,Quick! / Hurry!,Tarkbo!,,,none,DUPLICATE_KEY
+2381,Come quick!,Tarake re·babo!,,,none,DUPLICATE_KEY
+2382,Please sit down,Asongbo ka·sapae,,,none,DUPLICATE_KEY
+2383,Please give me water,Angna chi on·bo ka·sapae,,,none,DUPLICATE_KEY
+2384,At the market / To the market,Bajalchi,,,none,DUPLICATE_KEY
+2385,At school,Skulchi,,,none,DUPLICATE_KEY
+2386,At home,Nokchi,,,none,DUPLICATE_KEY
+2387,At the river,Chibimachi,,,none,DUPLICATE_KEY
+2388,In the forest,Buringchi,,,none,DUPLICATE_KEY
+2389,I don't know,Anga uija,,,none,DUPLICATE_KEY
+2390,I don't want,Anga nang·ja,,,none,DUPLICATE_KEY
+2391,I don't have,Anga dong·ja / Dongja,,,none,DUPLICATE_KEY
+2392,Don't eat,Cha·bo ong·ja,,,none,DUPLICATE_KEY
+2393,Don't go,Re·angbo ong·ja,,,none,DUPLICATE_KEY
+2394,I don't care,Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+2395,No more,Dongja,,,none,DUPLICATE_KEY
+2396,It is there / It exists,Donga,,,none,DUPLICATE_KEY
+2397,example,"cha·a (ate), re·ang·a (went)",,,none,DUPLICATE_KEY
+2398,example,"reba·aha (came), cha·aha (ate)",,,none,DUPLICATE_KEY
+2399,example,"cha·enga (eating), re·angenga (going)",,,none,DUPLICATE_KEY
+2400,example,"cha·gen (will eat), reba·gen (will come)",,,none,DUPLICATE_KEY
+2401,example,cha·manjok (has eaten),,,none,DUPLICATE_KEY
+2402,example,cha·man·aha (had eaten),,,none,DUPLICATE_KEY
+2403,example,"cha·bo (eat!), on·bo (give!)",,,none,DUPLICATE_KEY
+2404,example,cha·ama? (did you eat?),,,none,DUPLICATE_KEY
+2405,example,cha·engma? (are you eating?),,,none,DUPLICATE_KEY
+2406,example,cha·genma? (will you eat?),,,none,DUPLICATE_KEY
+2407,example,cha·na mangenma? (can you eat?),,,none,DUPLICATE_KEY
+2408,example,Hoe mangenva (yes I can),,,none,DUPLICATE_KEY
+2409,example,asong·na mangengma? (may I sit?),,,none,DUPLICATE_KEY
+2410,example,cha·ong·ja (not eating),,,none,DUPLICATE_KEY
+2411,example,ui·ja (don't know),,,none,DUPLICATE_KEY
+2412,example,dak·gipa (worker),,,none,DUPLICATE_KEY
+2413,example,a·gan·ani (speech),,,none,DUPLICATE_KEY
+2414,example,nok·ni (of the house),,,none,DUPLICATE_KEY
+2415,example,bajal·chi (at/to market),,,none,DUPLICATE_KEY
+2416,example,ang·na (to me),,,none,DUPLICATE_KEY
+2417,example,ang·ming (with me),,,none,DUPLICATE_KEY
+2418,example,bi·ko (him/it·object),,,none,DUPLICATE_KEY
+2419,example,nam·bata (best),,,none,DUPLICATE_KEY
+2420,example,nam·bea (better),,,none,DUPLICATE_KEY
+2421,example,pil·tai (again),,,none,DUPLICATE_KEY
+2422,description,"animals, birds, fish, insects",,,none,DUPLICATE_KEY
+2423,description,people and persons,,,none,DUPLICATE_KEY
+2424,description,money and currency,,,none,DUPLICATE_KEY
+2425,description,"books, paper, leaves, flat thin objects",,,none,DUPLICATE_KEY
+2426,description,"objects, tools, things (general fallback)",,,none,DUPLICATE_KEY
+2427,1,sa,,,none,DUPLICATE_KEY
+2428,2,gni,,,none,DUPLICATE_KEY
+2429,3,gittam,,,none,DUPLICATE_KEY
+2430,4,bri,,,none,DUPLICATE_KEY
+2431,5,bonga,,,none,DUPLICATE_KEY
+2432,6,dok,,,none,DUPLICATE_KEY
+2433,7,sni,,,none,DUPLICATE_KEY
+2434,8,chet,,,none,DUPLICATE_KEY
+2435,9,sku,,,none,DUPLICATE_KEY
+2436,10,chiking,,,none,DUPLICATE_KEY
+2437,garo,Anga,,,none,DUPLICATE_KEY
+2438,hindi,मैं,,,none,DUPLICATE_KEY
+2439,garo,Angko,,,none,DUPLICATE_KEY
+2440,hindi,मुझे,,,none,DUPLICATE_KEY
+2441,garo,Na·a,,,none,DUPLICATE_KEY
+2442,hindi,तुम / आप,,,none,DUPLICATE_KEY
+2443,garo,Nang·na / Nang·ko,,,none,DUPLICATE_KEY
+2444,hindi,तुम्हें / आपको,,,none,DUPLICATE_KEY
+2445,garo,Ua,,,none,DUPLICATE_KEY
+2446,hindi,वह (पु.),,,none,DUPLICATE_KEY
+2447,garo,Ua,,,none,DUPLICATE_KEY
+2448,hindi,वह (स्त्री.),,,none,DUPLICATE_KEY
+2449,garo,Una,,,none,DUPLICATE_KEY
+2450,hindi,उसे (पु.),,,none,DUPLICATE_KEY
+2451,garo,Una,,,none,DUPLICATE_KEY
+2452,hindi,उसे (स्त्री.),,,none,DUPLICATE_KEY
+2453,garo,Chinga,,,none,DUPLICATE_KEY
+2454,hindi,हम (श्रोता को छोड़कर),,,none,DUPLICATE_KEY
+2455,garo,Chinga,,,none,DUPLICATE_KEY
+2456,hindi,हम (श्रोता सहित),,,none,DUPLICATE_KEY
+2457,garo,Chingna,,,none,DUPLICATE_KEY
+2458,hindi,हमें,,,none,DUPLICATE_KEY
+2459,garo,Uamang,,,none,DUPLICATE_KEY
+2460,hindi,वे,,,none,DUPLICATE_KEY
+2461,garo,Uamangna,,,none,DUPLICATE_KEY
+2462,hindi,उन्हें,,,none,DUPLICATE_KEY
+2463,garo,Ia,,,none,DUPLICATE_KEY
+2464,hindi,यह,,,none,DUPLICATE_KEY
+2465,garo,Ua,,,none,DUPLICATE_KEY
+2466,hindi,वह,,,none,DUPLICATE_KEY
+2467,garo,Iamang,,,none,DUPLICATE_KEY
+2468,hindi,ये,,,none,DUPLICATE_KEY
+2469,garo,Uamang,,,none,DUPLICATE_KEY
+2470,hindi,वे,,,none,DUPLICATE_KEY
+2471,garo,Iano,,,none,DUPLICATE_KEY
+2472,hindi,यहाँ,,,none,DUPLICATE_KEY
+2473,garo,Uano,,,none,DUPLICATE_KEY
+2474,hindi,वहाँ,,,none,DUPLICATE_KEY
+2475,garo,Angni,,,none,DUPLICATE_KEY
+2476,hindi,मेरा / मेरी,,,none,DUPLICATE_KEY
+2477,garo,Nang·ni,,,none,DUPLICATE_KEY
+2478,hindi,तुम्हारा / आपका,,,none,DUPLICATE_KEY
+2479,garo,Uni,,,none,DUPLICATE_KEY
+2480,hindi,उसका / उसकी,,,none,DUPLICATE_KEY
+2481,garo,Chingni / chingni,,,none,DUPLICATE_KEY
+2482,hindi,हमारा / हमारी,,,none,DUPLICATE_KEY
+2483,garo,Uamangni,,,none,DUPLICATE_KEY
+2484,hindi,उनका / उनकी,,,none,DUPLICATE_KEY
+2485,garo,Sani?,,,none,DUPLICATE_KEY
+2486,hindi,किसका?,,,none,DUPLICATE_KEY
+2487,garo,Saniba,,,none,DUPLICATE_KEY
+2488,hindi,किसी का,,,none,DUPLICATE_KEY
+2489,garo,Pilakni,,,none,DUPLICATE_KEY
+2490,hindi,सबका,,,none,DUPLICATE_KEY
+2491,garo,Anga an·tang,,,none,DUPLICATE_KEY
+2492,hindi,मैं खुद,,,none,DUPLICATE_KEY
+2493,garo,Na·a an·tang,,,none,DUPLICATE_KEY
+2494,hindi,तुम खुद,,,none,DUPLICATE_KEY
+2495,garo,Ua an·tang,,,none,DUPLICATE_KEY
+2496,hindi,वह खुद,,,none,DUPLICATE_KEY
+2497,garo,chinga an·tangtang,,,none,DUPLICATE_KEY
+2498,hindi,हम खुद,,,none,DUPLICATE_KEY
+2499,garo,Sawa,,,none,DUPLICATE_KEY
+2500,hindi,कौन,,,none,DUPLICATE_KEY
+2501,garo,Maia,,,none,DUPLICATE_KEY
+2502,hindi,क्या,,,none,DUPLICATE_KEY
+2503,garo,Basako,,,none,DUPLICATE_KEY
+2504,hindi,कब,,,none,DUPLICATE_KEY
+2505,garo,Bano,,,none,DUPLICATE_KEY
+2506,hindi,कहाँ,,,none,DUPLICATE_KEY
+2507,garo,Maini·gimin,,,none,DUPLICATE_KEY
+2508,hindi,क्यों,,,none,DUPLICATE_KEY
+2509,garo,Maikai,,,none,DUPLICATE_KEY
+2510,hindi,कैसे,,,none,DUPLICATE_KEY
+2511,garo,Baitarong,,,none,DUPLICATE_KEY
+2512,hindi,कितने,,,none,DUPLICATE_KEY
+2513,garo,Baita,,,none,DUPLICATE_KEY
+2514,hindi,कितना,,,none,DUPLICATE_KEY
+2515,garo,Kon,,,none,DUPLICATE_KEY
+2516,hindi,कौन सा,,,none,DUPLICATE_KEY
+2517,garo,Sani,,,none,DUPLICATE_KEY
+2518,hindi,किसका,,,none,DUPLICATE_KEY
+2519,garo,cha·na,,,none,DUPLICATE_KEY
+2520,root,cha·,,,none,DUPLICATE_KEY
+2521,type,verb,,,none,DUPLICATE_KEY
+2522,garo,ring·na,,,none,DUPLICATE_KEY
+2523,root,ring·,,,none,DUPLICATE_KEY
+2524,type,verb,,,none,DUPLICATE_KEY
+2525,garo,tus·na,,,none,DUPLICATE_KEY
+2526,root,tus·,,,none,DUPLICATE_KEY
+2527,type,verb,,,none,DUPLICATE_KEY
+2528,garo,re·ang·na,,,none,DUPLICATE_KEY
+2529,root,re·ang·,,,none,DUPLICATE_KEY
+2530,type,verb,,,none,DUPLICATE_KEY
+2531,past,re·ang·a,,,none,DUPLICATE_KEY
+2532,continuous,re·ang·enga,,,none,DUPLICATE_KEY
+2533,future,re·ang·gen,,,none,DUPLICATE_KEY
+2534,command,re·ang·bo,,,none,DUPLICATE_KEY
+2535,garo,re·ba·bo,,,none,DUPLICATE_KEY
+2536,root,re·ba·,,,none,DUPLICATE_KEY
+2537,type,verb,,,none,DUPLICATE_KEY
+2538,past,re·ba·a,,,none,DUPLICATE_KEY
+2539,continuous,re·ba·enga,,,none,DUPLICATE_KEY
+2540,future,re·ba·gen,,,none,DUPLICATE_KEY
+2541,command,re·ba·bo,,,none,DUPLICATE_KEY
+2542,garo,agan·na,,,none,DUPLICATE_KEY
+2543,root,agan·,,,none,DUPLICATE_KEY
+2544,type,verb,,,none,DUPLICATE_KEY
+2545,past,agan·a,,,none,DUPLICATE_KEY
+2546,continuous,agan·enga,,,none,DUPLICATE_KEY
+2547,future,agan·gen,,,none,DUPLICATE_KEY
+2548,garo,ni·na,,,none,DUPLICATE_KEY
+2549,root,ni·,,,none,DUPLICATE_KEY
+2550,type,verb,,,none,DUPLICATE_KEY
+2551,past,ni·a,,,none,DUPLICATE_KEY
+2552,future,ni·gen,,,none,DUPLICATE_KEY
+2553,command,ni·bo,,,none,DUPLICATE_KEY
+2554,garo,on·a,,,none,DUPLICATE_KEY
+2555,root,on·,,,none,DUPLICATE_KEY
+2556,type,verb,,,none,DUPLICATE_KEY
+2557,past,on·aha,,,none,DUPLICATE_KEY
+2558,continuous,on·enga,,,none,DUPLICATE_KEY
+2559,future,on·gen,,,none,DUPLICATE_KEY
+2560,command,on·bo,,,none,DUPLICATE_KEY
+2561,past_question,on·ama?,,,none,DUPLICATE_KEY
+2562,garo,ra·na,,,none,DUPLICATE_KEY
+2563,root,ra·,,,none,DUPLICATE_KEY
+2564,type,verb,,,none,DUPLICATE_KEY
+2565,garo,dak·na,,,none,DUPLICATE_KEY
+2566,root,dak·,,,none,DUPLICATE_KEY
+2567,type,verb,,,none,DUPLICATE_KEY
+2568,past,dak·a,,,none,DUPLICATE_KEY
+2569,continuous,dak·enga,,,none,DUPLICATE_KEY
+2570,future,dak·gen,,,none,DUPLICATE_KEY
+2571,command,dak·bo,,,none,DUPLICATE_KEY
+2572,garo,asong·na,,,none,DUPLICATE_KEY
+2573,root,asong·,,,none,DUPLICATE_KEY
+2574,type,verb,,,none,DUPLICATE_KEY
+2575,command,asong·bo,,,none,DUPLICATE_KEY
+2576,garo,kat·na,,,none,DUPLICATE_KEY
+2577,root,kat·,,,none,DUPLICATE_KEY
+2578,type,verb,,,none,DUPLICATE_KEY
+2579,past,kat·a,,,none,DUPLICATE_KEY
+2580,continuous,kat·enga,,,none,DUPLICATE_KEY
+2581,future,kat·gen,,,none,DUPLICATE_KEY
+2582,command,kat·bo,,,none,DUPLICATE_KEY
+2583,garo,re·na,,,none,DUPLICATE_KEY
+2584,root,re·,,,none,DUPLICATE_KEY
+2585,type,verb,,,none,DUPLICATE_KEY
+2586,garo,bre·na,,,none,DUPLICATE_KEY
+2587,root,bre·,,,none,DUPLICATE_KEY
+2588,type,verb,,,none,DUPLICATE_KEY
+2589,past,bre·a,,,none,DUPLICATE_KEY
+2590,continuous,bre·enga,,,none,DUPLICATE_KEY
+2591,future,bre·gen,,,none,DUPLICATE_KEY
+2592,command,bre·bo,,,none,DUPLICATE_KEY
+2593,garo,pal·na,,,none,DUPLICATE_KEY
+2594,root,pal·,,,none,DUPLICATE_KEY
+2595,type,verb,,,none,DUPLICATE_KEY
+2596,garo,se·na,,,none,DUPLICATE_KEY
+2597,root,se·,,,none,DUPLICATE_KEY
+2598,type,verb,,,none,DUPLICATE_KEY
+2599,garo,porai·na,,,none,DUPLICATE_KEY
+2600,root,porai·,,,none,DUPLICATE_KEY
+2601,type,verb,,,none,DUPLICATE_KEY
+2602,past,porai·a,,,none,DUPLICATE_KEY
+2603,continuous,porai·enga,,,none,DUPLICATE_KEY
+2604,future,porai·gen,,,none,DUPLICATE_KEY
+2605,command,porai·bo,,,none,DUPLICATE_KEY
+2606,garo,song·na,,,none,DUPLICATE_KEY
+2607,root,song·,,,none,DUPLICATE_KEY
+2608,type,verb,,,none,DUPLICATE_KEY
+2609,garo,su·srong·na,,,none,DUPLICATE_KEY
+2610,root,su·srong·,,,none,DUPLICATE_KEY
+2611,type,verb,,,none,DUPLICATE_KEY
+2612,garo,de·na,,,none,DUPLICATE_KEY
+2613,root,de·,,,none,DUPLICATE_KEY
+2614,type,verb,,,none,DUPLICATE_KEY
+2615,garo,den·na,,,none,DUPLICATE_KEY
+2616,root,den·,,,none,DUPLICATE_KEY
+2617,type,verb,,,none,DUPLICATE_KEY
+2618,past,den·a,,,none,DUPLICATE_KEY
+2619,continuous,den·enga,,,none,DUPLICATE_KEY
+2620,future,den·gen,,,none,DUPLICATE_KEY
+2621,command,den·bo,,,none,DUPLICATE_KEY
+2622,garo,cho·na,,,none,DUPLICATE_KEY
+2623,root,cho·,,,none,DUPLICATE_KEY
+2624,type,verb,,,none,DUPLICATE_KEY
+2625,past,cho·a,,,none,DUPLICATE_KEY
+2626,continuous,cho·enga,,,none,DUPLICATE_KEY
+2627,future,cho·gen,,,none,DUPLICATE_KEY
+2628,command,cho·bo,,,none,DUPLICATE_KEY
+2629,garo,bil·na,,,none,DUPLICATE_KEY
+2630,root,bil·,,,none,DUPLICATE_KEY
+2631,type,verb,,,none,DUPLICATE_KEY
+2632,past,bil·a,,,none,DUPLICATE_KEY
+2633,future,bil·gen,,,none,DUPLICATE_KEY
+2634,garo,jro·na,,,none,DUPLICATE_KEY
+2635,root,jro·,,,none,DUPLICATE_KEY
+2636,type,verb,,,none,DUPLICATE_KEY
+2637,garo,ga·ak·na,,,none,DUPLICATE_KEY
+2638,root,ga·ak·,,,none,DUPLICATE_KEY
+2639,type,verb,,,none,DUPLICATE_KEY
+2640,garo,dak·chak·na,,,none,DUPLICATE_KEY
+2641,root,dak·chak·,,,none,DUPLICATE_KEY
+2642,type,verb,,,none,DUPLICATE_KEY
+2643,past,dak·chak·a,,,none,DUPLICATE_KEY
+2644,future,dak·chak·gen,,,none,DUPLICATE_KEY
+2645,command,dak·chak·bo,,,none,DUPLICATE_KEY
+2646,garo,ong·a,,,none,DUPLICATE_KEY
+2647,root,ong·,,,none,DUPLICATE_KEY
+2648,type,verb,,,none,DUPLICATE_KEY
+2649,negative,ong·ja,,,none,DUPLICATE_KEY
+2650,garo,dong·a,,,none,DUPLICATE_KEY
+2651,root,dong·,,,none,DUPLICATE_KEY
+2652,type,verb,,,none,DUPLICATE_KEY
+2653,negative,dong·ja,,,none,DUPLICATE_KEY
+2654,garo,dong·dik·na,,,none,DUPLICATE_KEY
+2655,root,dong·dik·,,,none,DUPLICATE_KEY
+2656,type,verb,,,none,DUPLICATE_KEY
+2657,past,dong·dik·a,,,none,DUPLICATE_KEY
+2658,future,dong·dik·gen,,,none,DUPLICATE_KEY
+2659,command,dong·dik·bo,,,none,DUPLICATE_KEY
+2660,garo,ka·sa·na,,,none,DUPLICATE_KEY
+2661,root,ka·sa·,,,none,DUPLICATE_KEY
+2662,type,verb,,,none,DUPLICATE_KEY
+2663,past,ka·sa·aha,,,none,DUPLICATE_KEY
+2664,continuous,ka·sa·enga,,,none,DUPLICATE_KEY
+2665,future,ka·sa·gen,,,none,DUPLICATE_KEY
+2666,garo,bi·na,,,none,DUPLICATE_KEY
+2667,root,bi·,,,none,DUPLICATE_KEY
+2668,type,verb,,,none,DUPLICATE_KEY
+2669,garo,so·na,,,none,DUPLICATE_KEY
+2670,root,so·,,,none,DUPLICATE_KEY
+2671,type,verb,,,none,DUPLICATE_KEY
+2672,garo,rik·na,,,none,DUPLICATE_KEY
+2673,root,rik·,,,none,DUPLICATE_KEY
+2674,type,verb,,,none,DUPLICATE_KEY
+2675,garo,ge·na,,,none,DUPLICATE_KEY
+2676,root,ge·,,,none,DUPLICATE_KEY
+2677,type,verb,,,none,DUPLICATE_KEY
+2678,garo,gal·na,,,none,DUPLICATE_KEY
+2679,root,gal·,,,none,DUPLICATE_KEY
+2680,type,verb,,,none,DUPLICATE_KEY
+2681,garo,rim·na,,,none,DUPLICATE_KEY
+2682,root,rim·,,,none,DUPLICATE_KEY
+2683,type,verb,,,none,DUPLICATE_KEY
+2684,garo,dangtap·na,,,none,DUPLICATE_KEY
+2685,root,dangtap·,,,none,DUPLICATE_KEY
+2686,type,verb,,,none,DUPLICATE_KEY
+2687,garo,ka·ding·na,,,none,DUPLICATE_KEY
+2688,root,ka·ding·,,,none,DUPLICATE_KEY
+2689,type,verb,,,none,DUPLICATE_KEY
+2690,garo,grap·na,,,none,DUPLICATE_KEY
+2691,root,grap·,,,none,DUPLICATE_KEY
+2692,type,verb,,,none,DUPLICATE_KEY
+2693,garo,o·na,,,none,DUPLICATE_KEY
+2694,root,o·,,,none,DUPLICATE_KEY
+2695,type,verb,,,none,DUPLICATE_KEY
+2696,garo,chip·na,,,none,DUPLICATE_KEY
+2697,root,chip·,,,none,DUPLICATE_KEY
+2698,type,verb,,,none,DUPLICATE_KEY
+2699,english,to eat,,,none,DUPLICATE_KEY
+2700,root,cha·,,,none,DUPLICATE_KEY
+2701,simple,cha·na,,,none,DUPLICATE_KEY
+2702,continuous,cha·enga,,,none,DUPLICATE_KEY
+2703,past,cha·a,,,none,DUPLICATE_KEY
+2704,past_alt,cha·aha,,,none,DUPLICATE_KEY
+2705,future,cha·gen,,,none,DUPLICATE_KEY
+2706,command,cha·bo,,,none,DUPLICATE_KEY
+2707,past_question,cha·ama?,,,none,DUPLICATE_KEY
+2708,present_question,cha·engma?,,,none,DUPLICATE_KEY
+2709,negation,cha·ja,,,none,DUPLICATE_KEY
+2710,perfect,cha·manjok,,,none,DUPLICATE_KEY
+2711,I ate rice,Anga mi cha·a,,,none,DUPLICATE_KEY
+2712,He is eating,Ua cha·enga,,,none,DUPLICATE_KEY
+2713,Eat!,Cha·bo!,,,none,DUPLICATE_KEY
+2714,Don't eat,Cha·ja,,,none,DUPLICATE_KEY
+2715,english,to go,,,none,DUPLICATE_KEY
+2716,root,re·ang·,,,none,DUPLICATE_KEY
+2717,continuous,re·ang·enga,,,none,DUPLICATE_KEY
+2718,past,re·ang·a,,,none,DUPLICATE_KEY
+2719,future,re·ang·gen,,,none,DUPLICATE_KEY
+2720,command,re·ang·bo,,,none,DUPLICATE_KEY
+2721,negation,re·ang·ja,,,none,DUPLICATE_KEY
+2722,He went,Ua re·ang·a,,,none,DUPLICATE_KEY
+2723,Where are you going?,Na·a bano re·angenga?,,,none,DUPLICATE_KEY
+2724,Go!,Re·ang·bo,,,none,DUPLICATE_KEY
+2725,english,to come,,,none,DUPLICATE_KEY
+2726,root,re·ba·,,,none,DUPLICATE_KEY
+2727,continuous,re·ba·enga,,,none,DUPLICATE_KEY
+2728,past,re·ba·a,,,none,DUPLICATE_KEY
+2729,future,re·ba·gen,,,none,DUPLICATE_KEY
+2730,command,re·ba·bo,,,none,DUPLICATE_KEY
+2731,negation,re·ba·ja,,,none,DUPLICATE_KEY
+2732,You came,Na·a re·ba·a,,,none,DUPLICATE_KEY
+2733,They are coming,Uamang re·ba·enga,,,none,DUPLICATE_KEY
+2734,Come!,Re·ba·bo!,,,none,DUPLICATE_KEY
+2735,english,to do / to work / to make,,,none,DUPLICATE_KEY
+2736,root,dak·,,,none,DUPLICATE_KEY
+2737,continuous,dak·enga,,,none,DUPLICATE_KEY
+2738,past,dak·a,,,none,DUPLICATE_KEY
+2739,future,dak·gen,,,none,DUPLICATE_KEY
+2740,command,dak·bo,,,none,DUPLICATE_KEY
+2741,negation,dak·ja,,,none,DUPLICATE_KEY
+2742,I did it,Anga dak·a,,,none,DUPLICATE_KEY
+2743,Do it!,Dak·bo!,,,none,DUPLICATE_KEY
+2744,a worker,Kam dak·gipa,,,none,DUPLICATE_KEY
+2745,english,to give / to offer,,,none,DUPLICATE_KEY
+2746,root,on·,,,none,DUPLICATE_KEY
+2747,continuous,on·enga,,,none,DUPLICATE_KEY
+2748,past,on·aha,,,none,DUPLICATE_KEY
+2749,future,on·gen,,,none,DUPLICATE_KEY
+2750,command,on·bo,,,none,DUPLICATE_KEY
+2751,past_question,on·ama?,,,none,DUPLICATE_KEY
+2752,Give me water,Ang·na chi on·bo,,,none,DUPLICATE_KEY
+2753,He gave me a book,Ua angna ki·tap on·a,,,none,DUPLICATE_KEY
+2754,english,to be / to exist,,,none,DUPLICATE_KEY
+2755,root,ong·,,,none,DUPLICATE_KEY
+2756,positive,ong·a,,,none,DUPLICATE_KEY
+2757,negative,ong·ja,,,none,DUPLICATE_KEY
+2758,It is good,Nama ong·a,,,none,DUPLICATE_KEY
+2759,It is not good,Nama ong·ja,,,none,DUPLICATE_KEY
+2760,english,to have / to exist (possession),,,none,DUPLICATE_KEY
+2761,root,dong·,,,none,DUPLICATE_KEY
+2762,positive,dong·a,,,none,DUPLICATE_KEY
+2763,negative,dong·ja,,,none,DUPLICATE_KEY
+2764,I have a pen,Anga kolom dong·a,,,none,DUPLICATE_KEY
+2765,I don't have time,A·gimiko dong·ja,,,none,DUPLICATE_KEY
+2766,rule,SOV — Subject + Object + Verb,,,none,DUPLICATE_KEY
+2767,I ate rice,Anga mi cha·a,,,none,DUPLICATE_KEY
+2768,You drank water,Na·a chi ring·a,,,none,DUPLICATE_KEY
+2769,rule,Add ·ja suffix to verb root,,,none,DUPLICATE_KEY
+2770,don't eat / not eating,cha·ja,,,none,DUPLICATE_KEY
+2771,is not,ong·ja,,,none,DUPLICATE_KEY
+2772,don't have,dong·ja,,,none,DUPLICATE_KEY
+2773,don't know,u·ija,,,none,DUPLICATE_KEY
+2774,rule,[Possessive pronoun] + noun,,,none,DUPLICATE_KEY
+2775,My house,Angni nok,,,none,DUPLICATE_KEY
+2776,Your father,Nang·ni apa,,,none,DUPLICATE_KEY
+2777,His / Her water,Uni chi,,,none,DUPLICATE_KEY
+2778,rule,Add ·chi suffix to place noun,,,none,DUPLICATE_KEY
+2779,at / to the market,bajal·chi,,,none,DUPLICATE_KEY
+2780,at / to home,nok·chi,,,none,DUPLICATE_KEY
+2781,at / to school,skul·chi,,,none,DUPLICATE_KEY
+2782,rule,Add ·na suffix to pronoun/noun for indirect object,,,none,DUPLICATE_KEY
+2783,to me / for me,ang·na,,,none,DUPLICATE_KEY
+2784,to you / for you,nang·na,,,none,DUPLICATE_KEY
+2785,to him / to her,una·na,,,none,DUPLICATE_KEY
+2786,rule,Add 'ma?' at end of statement,,,none,DUPLICATE_KEY
+2787,Are you eating?,Na·a cha·enga ma?,,,none,DUPLICATE_KEY
+2788,Is there rice?,Mi dong·a ma?,,,none,DUPLICATE_KEY
+2789,rule,NOUN + CLASSIFIER·NUMBER (not English order),,,none,DUPLICATE_KEY
+2790,one dog,achak mang·sa,,,none,DUPLICATE_KEY
+2791,two books,ki·tap king·gni,,,none,DUPLICATE_KEY
+2792,three people,manderang sak·gittam,,,none,DUPLICATE_KEY
+2793,Hello / Greetings,Salam / Namengama,,,none,DUPLICATE_KEY
+2794,Good morning,Pringnam,,,none,DUPLICATE_KEY
+2795,Good afternoon,Salnam,,,none,DUPLICATE_KEY
+2796,Good evening,Attamnam,,,none,DUPLICATE_KEY
+2797,Good night,Walnam,,,none,DUPLICATE_KEY
+2798,Goodbye,Re·ang·na / Nam·en·dongbo,,,none,DUPLICATE_KEY
+2799,See you again,Pil·tai·grongna,,,none,DUPLICATE_KEY
+2800,Welcome,Rimchaksoa,,,none,DUPLICATE_KEY
+2801,Please,Ka·sapae,,,none,DUPLICATE_KEY
+2802,Thank you,Mitela,,,none,DUPLICATE_KEY
+2803,Sorry / Forgive me,Kema·bi·a,,,none,DUPLICATE_KEY
+2804,Excuse me,Angko kema·watbo,,,none,DUPLICATE_KEY
+2805,How are you?,Na·a namengama?,,,none,DUPLICATE_KEY
+2806,I am fine,Anga namenga,,,none,DUPLICATE_KEY
+2807,All is well,Nama ong·a,,,none,DUPLICATE_KEY
+2808,What is your name?,Na·ani bimungara maia?,,,none,DUPLICATE_KEY
+2809,My name is...,Angni bimungara...,,,none,DUPLICATE_KEY
+2810,Where are you going?,Na·a bano re·angenga?,,,none,DUPLICATE_KEY
+2811,Where are you from?,Na·a bano·ni?,,,none,DUPLICATE_KEY
+2812,I don't know,Anga u·ija,,,none,DUPLICATE_KEY
+2813,I know,Anga uia,,,none,DUPLICATE_KEY
+2814,Help!,Madengma!,,,none,DUPLICATE_KEY
+2815,Help me!,Dak·chak·bo!,,,none,DUPLICATE_KEY
+2816,Call a doctor!,Doktor jong·bo!,,,none,DUPLICATE_KEY
+2817,It hurts!,Mataha!,,,none,DUPLICATE_KEY
+2818,Call police,Police jong·bo,,,none,DUPLICATE_KEY
+2819,type,ambiguous,,,none,DUPLICATE_KEY
+2820,pos,verb,,,none,DUPLICATE_KEY
+2821,type,ambiguous,,,none,DUPLICATE_KEY
+2822,type,ambiguous,,,none,DUPLICATE_KEY
+2823,pos,verb,,,none,DUPLICATE_KEY
+2824,type,ambiguous,,,none,DUPLICATE_KEY
+2825,pos,verb,,,none,DUPLICATE_KEY
+2826,type,ambiguous,,,none,DUPLICATE_KEY
+2827,pos,pronoun,,,none,DUPLICATE_KEY
+2828,type,ambiguous,,,none,DUPLICATE_KEY
+2829,type,ambiguous,,,none,DUPLICATE_KEY
+2830,type,ambiguous,,,none,DUPLICATE_KEY
+2831,type,ambiguous,,,none,DUPLICATE_KEY
+2832,type,ambiguous,,,none,DUPLICATE_KEY
+2833,type,ambiguous,,,none,DUPLICATE_KEY
+2834,type,ambiguous,,,none,DUPLICATE_KEY
+2835,type,ambiguous,,,none,DUPLICATE_KEY
+2836,type,ambiguous,,,none,DUPLICATE_KEY
+2837,pos,verb,,,none,DUPLICATE_KEY
+2838,pineapple,Anaros,,,none,DUPLICATE_KEY
+2839,banana,Te·rik,,,none,DUPLICATE_KEY
+2840,orange,Narang,,,none,DUPLICATE_KEY
+2841,guava,Goaba,,,none,DUPLICATE_KEY
+2842,papaya,Modu,,,none,DUPLICATE_KEY
+2843,jackfruit,Te·brong,,,none,DUPLICATE_KEY
+2844,mango,Te·gachu,,,none,DUPLICATE_KEY
+2845,lychee,Letchu,,,none,DUPLICATE_KEY
+2846,coconut,Narikel,,,none,DUPLICATE_KEY
+2847,watermelon,Te·e raja,,,none,DUPLICATE_KEY
+2848,lemon,Kakji,,,none,DUPLICATE_KEY
+2849,pomegranate,Dalim,,,none,DUPLICATE_KEY
+2850,sugar cane,Ge·rit,,,none,DUPLICATE_KEY
+2851,tamarind,Che·eng,,,none,DUPLICATE_KEY
+2852,pear,Naspati,,,none,DUPLICATE_KEY
+2853,custard apple,Atapol,,,none,DUPLICATE_KEY
+2854,pomelo,Narang·gira,,,none,DUPLICATE_KEY
+2855,blackberry,Jam,,,none,DUPLICATE_KEY
+2856,grapes,Drakka,,,none,DUPLICATE_KEY
+2857,wild berry,Bol·meseng,,,none,DUPLICATE_KEY
+2858,pumpkin,Gominda,,,none,DUPLICATE_KEY
+2859,potato,Alu,,,none,DUPLICATE_KEY
+2860,tomato,Baring belati,,,none,DUPLICATE_KEY
+2861,brinjal,Baring,,,none,DUPLICATE_KEY
+2862,bottle gourd,Lau,,,none,DUPLICATE_KEY
+2863,bitter gourd,Karela,,,none,DUPLICATE_KEY
+2864,bamboo shoot,Me·a,,,none,DUPLICATE_KEY
+2865,garlic,Rasin·gipok,,,none,DUPLICATE_KEY
+2866,ginger,Re·ching,,,none,DUPLICATE_KEY
+2867,chilli,Jal·ik,,,none,DUPLICATE_KEY
+2868,okra,Dorai,,,none,DUPLICATE_KEY
+2869,cucumber,Te·e,,,none,DUPLICATE_KEY
+2870,mustard leaves,Besual,,,none,DUPLICATE_KEY
+2871,spinach,Palong·sam,,,none,DUPLICATE_KEY
+2872,broad beans,Nakap,,,none,DUPLICATE_KEY
+2873,yam,Ta·a,,,none,DUPLICATE_KEY
+2874,sweet potato,Ta·we,,,none,DUPLICATE_KEY
+2875,colocasia,Thabisa,,,none,DUPLICATE_KEY
+2876,onion,Rasin,,,none,DUPLICATE_KEY
+2877,cabbage,Kobi,,,none,DUPLICATE_KEY
+2878,cauliflower,Pul kobi,,,none,DUPLICATE_KEY
+2879,carrot,Kajol,,,none,DUPLICATE_KEY
+2880,radish,Mula,,,none,DUPLICATE_KEY
+2881,drumstick,Sojona,,,none,DUPLICATE_KEY
+2882,peas,Motor,,,none,DUPLICATE_KEY
+2883,love,Ka·saa,,,none,DUPLICATE_KEY
+2884,happiness,Kusi,,,none,DUPLICATE_KEY
+2885,sadness,Duk,,,none,DUPLICATE_KEY
+2886,anger,Ka·o nanga,,,none,DUPLICATE_KEY
+2887,fear,Kenani,,,none,DUPLICATE_KEY
+2888,hatred,Mittera,,,none,DUPLICATE_KEY
+2889,hope,Ka·donga,,,none,DUPLICATE_KEY
+2890,peace,Tom·toma,,,none,DUPLICATE_KEY
+2891,trust,Bebe ra·a,,,none,DUPLICATE_KEY
+2892,jealousy,Mikboka,,,none,DUPLICATE_KEY
+2893,shame,Kracha·a,,,none,DUPLICATE_KEY
+2894,pride,Gaora,,,none,DUPLICATE_KEY
+2895,surprise,Jagokani,,,none,DUPLICATE_KEY
+2896,worry,Gisik ding·a,,,none,DUPLICATE_KEY
+2897,patience,Chakchikani,,,none,DUPLICATE_KEY
+2898,mercy,Kema,,,none,DUPLICATE_KEY
+2899,satisfaction,Chu·ongnika,,,none,DUPLICATE_KEY
+2900,loneliness,Saksan,,,none,DUPLICATE_KEY
+2901,grateful,Mitela,,,none,DUPLICATE_KEY
+2902,courage,Ka·rakani,,,none,DUPLICATE_KEY
+2903,dog,Achak,,,none,DUPLICATE_KEY
+2904,cat,Menggo,,,none,DUPLICATE_KEY
+2905,cow,Matchu,,,none,DUPLICATE_KEY
+2906,elephant,Monga,,,none,DUPLICATE_KEY
+2907,tiger,Matcha,,,none,DUPLICATE_KEY
+2908,deer,Matchok,,,none,DUPLICATE_KEY
+2909,pig,Wak,,,none,DUPLICATE_KEY
+2910,goat,Do·bok,,,none,DUPLICATE_KEY
+2911,horse,Gure,,,none,DUPLICATE_KEY
+2912,monkey,Makre,,,none,DUPLICATE_KEY
+2913,snake,Chipu,,,none,DUPLICATE_KEY
+2914,rat,Mese,,,none,DUPLICATE_KEY
+2915,buffalo,Matma,,,none,DUPLICATE_KEY
+2916,bear,Matmak,,,none,DUPLICATE_KEY
+2917,rabbit,Sapau,,,none,DUPLICATE_KEY
+2918,crow,Do·ka,,,none,DUPLICATE_KEY
+2919,hen,Do·bit,,,none,DUPLICATE_KEY
+2920,rooster,Do·bi,,,none,DUPLICATE_KEY
+2921,duck,Do·gep,,,none,DUPLICATE_KEY
+2922,owl,Do·po,,,none,DUPLICATE_KEY
+2923,eagle,Do·reng,,,none,DUPLICATE_KEY
+2924,parrot,Do·sik,,,none,DUPLICATE_KEY
+2925,pigeon,Do·bak,,,none,DUPLICATE_KEY
+2926,peacock,Do·de,,,none,DUPLICATE_KEY
+2927,sparrow,Do·matchi,,,none,DUPLICATE_KEY
+2928,eat,Cha·a,,,none,DUPLICATE_KEY
+2929,drink,Ringa,,,none,DUPLICATE_KEY
+2930,sleep,Tusia,,,none,DUPLICATE_KEY
+2931,walk,Re·a,,,none,DUPLICATE_KEY
+2932,run,Kat·a,,,none,DUPLICATE_KEY
+2933,speak,Agana,,,none,DUPLICATE_KEY
+2934,listen,Knachika,,,none,DUPLICATE_KEY
+2935,see / look / watch,Nia,,,none,DUPLICATE_KEY
+2936,give,On·a,,,none,DUPLICATE_KEY
+2937,take,Ra·a,,,none,DUPLICATE_KEY
+2938,work,Dak·a,,,none,DUPLICATE_KEY
+2939,play,Kal·a,,,none,DUPLICATE_KEY
+2940,sit,Asong·a,,,none,DUPLICATE_KEY
+2941,stand,Chadenga,,,none,DUPLICATE_KEY
+2942,laugh,Ka·ding·a,,,none,DUPLICATE_KEY
+2943,cry,Grap·a,,,none,DUPLICATE_KEY
+2944,buy,Brea,,,none,DUPLICATE_KEY
+2945,sell,Pala,,,none,DUPLICATE_KEY
+2946,come,Re·ba·a,,,none,DUPLICATE_KEY
+2947,go,Re·ang·a,,,none,DUPLICATE_KEY
+2948,father,Pa / Apa,,,none,DUPLICATE_KEY
+2949,mother,Ma / Ama,,,none,DUPLICATE_KEY
+2950,son,De·bi·pa,,,none,DUPLICATE_KEY
+2951,daughter,De·me·chik,,,none,DUPLICATE_KEY
+2952,grandmother,Ambichang,,,none,DUPLICATE_KEY
+2953,elder brother,Ada,,,none,DUPLICATE_KEY
+2954,elder sister,Abi,,,none,DUPLICATE_KEY
+2955,younger sibling,Jong / No,,,none,DUPLICATE_KEY
+2956,uncle,Mama / Pabok,,,none,DUPLICATE_KEY
+2957,aunt,Mani,,,none,DUPLICATE_KEY
+2958,friend,Ripsak / Ripeng,,,none,DUPLICATE_KEY
+2959,garo,Atchu,,,none,DUPLICATE_KEY
+2960,hindi,दादा / नाना,,,none,DUPLICATE_KEY
+2961,head,Sko,,,none,DUPLICATE_KEY
+2962,eye,Mikron,,,none,DUPLICATE_KEY
+2963,ear,Nachil,,,none,DUPLICATE_KEY
+2964,nose,Gingting,,,none,DUPLICATE_KEY
+2965,mouth,Ku·sik,,,none,DUPLICATE_KEY
+2966,hand,Jak,,,none,DUPLICATE_KEY
+2967,leg,Ja·a,,,none,DUPLICATE_KEY
+2968,hair,Kni,,,none,DUPLICATE_KEY
+2969,stomach,Ok,,,none,DUPLICATE_KEY
+2970,teeth,Wagam,,,none,DUPLICATE_KEY
+2971,tongue,Sre,,,none,DUPLICATE_KEY
+2972,skin,Bigil,,,none,DUPLICATE_KEY
+2973,heart,Ka·tong,,,none,DUPLICATE_KEY
+2974,red,Gitchak,,,none,DUPLICATE_KEY
+2975,white,Gipok,,,none,DUPLICATE_KEY
+2976,black,Gisim,,,none,DUPLICATE_KEY
+2977,green,Tangsek,,,none,DUPLICATE_KEY
+2978,blue,Tang·sim,,,none,DUPLICATE_KEY
+2979,yellow,Rimit,,,none,DUPLICATE_KEY
+2980,hello / greetings,Salam / Namengama,,,none,DUPLICATE_KEY
+2981,how are you?,Na·a namengama?,,,none,DUPLICATE_KEY
+2982,i am fine,Anga namenga.,,,none,DUPLICATE_KEY
+2983,thank you,Mittela.,,,none,DUPLICATE_KEY
+2984,what is your name?,Na·a ni bimungara maia?,,,none,DUPLICATE_KEY
+2985,my name is...,Angni bimungara...,,,none,DUPLICATE_KEY
+2986,where are you going?,Na·a bano re·angenga?,,,none,DUPLICATE_KEY
+2987,good morning,Pringnam.,,,none,DUPLICATE_KEY
+2988,good night,Walnam.,,,none,DUPLICATE_KEY
+2989,yes,Oe,,,none,DUPLICATE_KEY
+2990,no,Ong·ja,,,none,DUPLICATE_KEY
+2991,please,Ka·sapae.,,,none,DUPLICATE_KEY
+2992,i don't know,Anga uija.,,,none,DUPLICATE_KEY
+2993,come here,Ianona re·babo.,,,none,DUPLICATE_KEY
+2994,garo,Toa,,,none,DUPLICATE_KEY
+2995,garo,Touja,,,none,DUPLICATE_KEY
+2996,sweet,Chi·a,,,none,DUPLICATE_KEY
+2997,sour,Mesenga,,,none,DUPLICATE_KEY
+2998,bitter,Ka·a,,,none,DUPLICATE_KEY
+2999,salty,Kari nanga,,,none,DUPLICATE_KEY
+3000,salt (noun),Kari,,,none,DUPLICATE_KEY
+3001,spicy,Jal·ik saa,,,none,DUPLICATE_KEY
+3002,astringent,Ka·baka,,,none,DUPLICATE_KEY
+3003,bland / tasteless,Chibroka,,,none,DUPLICATE_KEY
+3004,smelly / stinky,Senga,,,none,DUPLICATE_KEY
+3005,to fall (from height),Ga·aka,,,none,DUPLICATE_KEY
+3006,to fall (stumble/trip),Nang·ting·a,,,none,DUPLICATE_KEY
+3007,to fall (slip),Ga·soltap,,,none,DUPLICATE_KEY
+3008,to fall (collapse),Be·a,,,none,DUPLICATE_KEY
+3009,to drop (something),Ga·akata,,,none,DUPLICATE_KEY
+3010,to roll,Romroma,,,none,DUPLICATE_KEY
+3011,to jump,Bildoa,,,none,DUPLICATE_KEY
+3012,to shake,Moa,,,none,DUPLICATE_KEY
+3013,to move (something),De·jita,,,none,DUPLICATE_KEY
+3014,to feel (general),Ui·a,,,none,DUPLICATE_KEY
+3015,to feel (emotionally),Gisik·o nanga,,,none,DUPLICATE_KEY
+3016,to hurt (pain),Sa·dika,,,none,DUPLICATE_KEY
+3017,to hurt (injure),Mata,,,none,DUPLICATE_KEY
+3018,to hurt (feelings),Saknaata,,,none,DUPLICATE_KEY
+3019,to touch,Dangtapa,,,none,DUPLICATE_KEY
+3020,to pinch,Se·eta,,,none,DUPLICATE_KEY
+3021,to scratch (body),Brika,,,none,DUPLICATE_KEY
+3022,to scratch (object),Siksika,,,none,DUPLICATE_KEY
+3023,to itch,Ka·kita,,,none,DUPLICATE_KEY
+3024,to burn (sting like chili),So·soa,,,none,DUPLICATE_KEY
+3025,to heal,An·sengpila,,,none,DUPLICATE_KEY
+3026,open,Oa,,,none,DUPLICATE_KEY
+3027,close,Chip·a,,,none,DUPLICATE_KEY
+3028,push,Jit·pak·a,,,none,DUPLICATE_KEY
+3029,pull / drive,Sal·a (⚠ same word),,,none,DUPLICATE_KEY
+3030,break (glass/stick),Be·ata,,,none,DUPLICATE_KEY
+3031,tear (paper/cloth),Gritt·a,,,none,DUPLICATE_KEY
+3032,throw,Gal·a / Goata,,,none,DUPLICATE_KEY
+3033,catch,Rim·a,,,none,DUPLICATE_KEY
+3034,wash,Su·srong·a,,,none,DUPLICATE_KEY
+3035,clean,Rongtal·ata,,,none,DUPLICATE_KEY
+3036,sun,Sal,,,none,DUPLICATE_KEY
+3037,moon,Jajong,,,none,DUPLICATE_KEY
+3038,star,Aski,,,none,DUPLICATE_KEY
+3039,sky,Salgi,,,none,DUPLICATE_KEY
+3040,cloud,Aram,,,none,DUPLICATE_KEY
+3041,rain,Mikka,,,none,DUPLICATE_KEY
+3042,wind,Balwa,,,none,DUPLICATE_KEY
+3043,thunder,Goera,,,none,DUPLICATE_KEY
+3044,lightning,Mikka·kimma,,,none,DUPLICATE_KEY
+3045,fire,Wa·al,,,none,DUPLICATE_KEY
+3046,water,Chi,,,none,DUPLICATE_KEY
+3047,earth / soil,A·a,,,none,DUPLICATE_KEY
+3048,stone,Ro·ong,,,none,DUPLICATE_KEY
+3049,sand,An·cheng,,,none,DUPLICATE_KEY
+3050,river,Chibima,,,none,DUPLICATE_KEY
+3051,mountain,A·bri,,,none,DUPLICATE_KEY
+3052,forest,Buring,,,none,DUPLICATE_KEY
+3053,tree,Bol,,,none,DUPLICATE_KEY
+3054,flower,Bibal,,,none,DUPLICATE_KEY
+3055,leaf,Bijak,,,none,DUPLICATE_KEY
+3056,it is raining,Mikka ring·a,,,none,DUPLICATE_KEY
+3057,it is sunny,Sal·seng·a,,,none,DUPLICATE_KEY
+3058,it is cold,Sin·a,,,none,DUPLICATE_KEY
+3059,it is hot,Ding·a,,,none,DUPLICATE_KEY
+3060,flood,Mikka·brimba,,,none,DUPLICATE_KEY
+3061,drought,Ran·kari,,,none,DUPLICATE_KEY
+3062,earthquake,A·a·moa,,,none,DUPLICATE_KEY
+3063,fog / mist,Ong·chel,,,none,DUPLICATE_KEY
+3064,rainbow,Gitchak·rong jal·ang,,,none,DUPLICATE_KEY
+3065,sunrise,Sal·aram,,,none,DUPLICATE_KEY
+3066,sunset,Sal·ikram,,,none,DUPLICATE_KEY
+3067,house,Nok,,,none,DUPLICATE_KEY
+3068,door,Do·ga,,,none,DUPLICATE_KEY
+3069,window,Kelki,,,none,DUPLICATE_KEY
+3070,bed,Palang,,,none,DUPLICATE_KEY
+3071,chair,Chokki,,,none,DUPLICATE_KEY
+3072,table,Mez,,,none,DUPLICATE_KEY
+3073,plate,Tala,,,none,DUPLICATE_KEY
+3074,cup,Piala,,,none,DUPLICATE_KEY
+3075,spoon,Chamus,,,none,DUPLICATE_KEY
+3076,knife,Kettal,,,none,DUPLICATE_KEY
+3077,pot,Dik·ke,,,none,DUPLICATE_KEY
+3078,broom,Sal·re·at,,,none,DUPLICATE_KEY
+3079,clothes,Ba·ra,,,none,DUPLICATE_KEY
+3080,soap,Sabon,,,none,DUPLICATE_KEY
+3081,mirror,Janera,,,none,DUPLICATE_KEY
+3082,comb,Ken·chong,,,none,DUPLICATE_KEY
+3083,lamp,Chakki,,,none,DUPLICATE_KEY
+3084,key,Chabi,,,none,DUPLICATE_KEY
+3085,bag,Jol·a,,,none,DUPLICATE_KEY
+3086,book,Ki·tap,,,none,DUPLICATE_KEY
+3087,axe,Rua (⚠ also means 'to pour' as verb),,,none,DUPLICATE_KEY
+3088,day,Sal,,,none,DUPLICATE_KEY
+3089,night,Wal,,,none,DUPLICATE_KEY
+3090,morning,Pring,,,none,DUPLICATE_KEY
+3091,noon,Saljatchi,,,none,DUPLICATE_KEY
+3092,evening,Attam,,,none,DUPLICATE_KEY
+3093,today,Da·al,,,none,DUPLICATE_KEY
+3094,yesterday,Mejal,,,none,DUPLICATE_KEY
+3095,tomorrow,Knal,,,none,DUPLICATE_KEY
+3096,now,Da·o,,,none,DUPLICATE_KEY
+3097,always,Pangnan,,,none,DUPLICATE_KEY
+3098,sometimes,Gisep gisep,,,none,DUPLICATE_KEY
+3099,week,Anti,,,none,DUPLICATE_KEY
+3100,month,Ja,,,none,DUPLICATE_KEY
+3101,year,Bilsi,,,none,DUPLICATE_KEY
+3102,time,Somai,,,none,DUPLICATE_KEY
+3103,day after tomorrow,Me·nnalo,,,none,DUPLICATE_KEY
+3104,day before yesterday,Me·si·ja,,,none,DUPLICATE_KEY
+3105,later,Ja·mano,,,none,DUPLICATE_KEY
+3106,before,Skang,,,none,DUPLICATE_KEY
+3107,early,Bakkan / Pring·seng,,,none,DUPLICATE_KEY
+3108,late,Ja·man·chak·a,,,none,DUPLICATE_KEY
+3109,never,Pangnan·ba (ja),,,none,DUPLICATE_KEY
+3110,shirt,Chola,,,none,DUPLICATE_KEY
+3111,traditional wrap (women),Dakmanda,,,none,DUPLICATE_KEY
+3112,shawl,Rekkeng,,,none,DUPLICATE_KEY
+3113,turban,Kotip,,,none,DUPLICATE_KEY
+3114,shoes,Juta,,,none,DUPLICATE_KEY
+3115,socks,Moja,,,none,DUPLICATE_KEY
+3116,hat,Tupi,,,none,DUPLICATE_KEY
+3117,ring,Jakstem,,,none,DUPLICATE_KEY
+3118,necklace,Ripok,,,none,DUPLICATE_KEY
+3119,earring,Nachil·ganna,,,none,DUPLICATE_KEY
+3120,big,Dal·a,,,none,DUPLICATE_KEY
+3121,small,Chon·a,,,none,DUPLICATE_KEY
+3122,long,Ro·a,,,none,DUPLICATE_KEY
+3123,short,Kan·dik·a,,,none,DUPLICATE_KEY
+3124,tall,Chu·a,,,none,DUPLICATE_KEY
+3125,new,Gital,,,none,DUPLICATE_KEY
+3126,old,Gitcham,,,none,DUPLICATE_KEY
+3127,good,Nama,,,none,DUPLICATE_KEY
+3128,bad,Namja,,,none,DUPLICATE_KEY
+3129,fast,Ta·rak·a,,,none,DUPLICATE_KEY
+3130,slow,Ka·sna,,,none,DUPLICATE_KEY
+3131,rich,Nokma / Man·e·cha·gipa,,,none,DUPLICATE_KEY
+3132,poor,Kangal,,,none,DUPLICATE_KEY
+3133,dry,Ran·a,,,none,DUPLICATE_KEY
+3134,wet,Chon·a / Sosia,,,none,DUPLICATE_KEY
+3135,tasty,Toa,,,none,DUPLICATE_KEY
+3136,not tasty,Touja,,,none,DUPLICATE_KEY
+3137,village,Song,,,none,DUPLICATE_KEY
+3138,town,Songjinma,,,none,DUPLICATE_KEY
+3139,school,Skul,,,none,DUPLICATE_KEY
+3140,market,Bajal / Anti,,,none,DUPLICATE_KEY
+3141,road,Rama,,,none,DUPLICATE_KEY
+3142,field,A·ba,,,none,DUPLICATE_KEY
+3143,office,Kam·ka·chakani,,,none,DUPLICATE_KEY
+3144,church,Gilja·nok,,,none,DUPLICATE_KEY
+3145,shop,Dokan,,,none,DUPLICATE_KEY
+3146,hospital,Hospital / Sam·nok,,,none,DUPLICATE_KEY
+3147,up,Kosak,,,none,DUPLICATE_KEY
+3148,down,Ka·ma,,,none,DUPLICATE_KEY
+3149,left,Jak·asi,,,none,DUPLICATE_KEY
+3150,right,Jak·ra,,,none,DUPLICATE_KEY
+3151,front,Mikkang,,,none,DUPLICATE_KEY
+3152,back,Janggila,,,none,DUPLICATE_KEY
+3153,inside,Ning·o,,,none,DUPLICATE_KEY
+3154,outside,A·pal,,,none,DUPLICATE_KEY
+3155,far,Chel·a,,,none,DUPLICATE_KEY
+3156,near,Sepang,,,none,DUPLICATE_KEY
+3157,north,Salgro,,,none,DUPLICATE_KEY
+3158,south,Salgipeng,,,none,DUPLICATE_KEY
+3159,east,Salaram,,,none,DUPLICATE_KEY
+3160,west,Saliram,,,none,DUPLICATE_KEY
+3161,center,Jatchi,,,none,DUPLICATE_KEY
+3162,side,Rikam,,,none,DUPLICATE_KEY
+3163,farmer,Game·cha·gipa,,,none,DUPLICATE_KEY
+3164,teacher,Skigipa,,,none,DUPLICATE_KEY
+3165,student,Porai·gipa,,,none,DUPLICATE_KEY
+3166,doctor,Doctor / Sam·on·gipa,,,none,DUPLICATE_KEY
+3167,nurse,Nurse,,,none,DUPLICATE_KEY
+3168,driver,Gari·chalai·gipa,,,none,DUPLICATE_KEY
+3169,carpenter,Bal·sol·gipa,,,none,DUPLICATE_KEY
+3170,blacksmith,Sil·dak·gipa,,,none,DUPLICATE_KEY
+3171,shopkeeper,Dokan·dakgipa,,,none,DUPLICATE_KEY
+3172,tailor,Ba·ra·sikgipa,,,none,DUPLICATE_KEY
+3173,worker / laborer,Kam·ka·gipa,,,none,DUPLICATE_KEY
+3174,king,Raja,,,none,DUPLICATE_KEY
+3175,chief,Nokma,,,none,DUPLICATE_KEY
+3176,police,Pulis,,,none,DUPLICATE_KEY
+3177,soldier,Sipai,,,none,DUPLICATE_KEY
+3178,postman,Chiti·ra·ba·gipa,,,none,DUPLICATE_KEY
+3179,cook,Song·timgipa,,,none,DUPLICATE_KEY
+3180,leader,Dilgipa,,,none,DUPLICATE_KEY
+3181,preacher,Aganprakgipa,,,none,DUPLICATE_KEY
+3182,thief,Cha·u,,,none,DUPLICATE_KEY
+3183,guest,Sokgipa,,,none,DUPLICATE_KEY
+3184,stranger,Agital,,,none,DUPLICATE_KEY
+3185,school,Skul,,,none,DUPLICATE_KEY
+3186,class,Klas,,,none,DUPLICATE_KEY
+3187,book,Ki·tap,,,none,DUPLICATE_KEY
+3188,paper,Lekka,,,none,DUPLICATE_KEY
+3189,pen,Pen,,,none,DUPLICATE_KEY
+3190,pencil,Pencil,,,none,DUPLICATE_KEY
+3191,ink,Kali,,,none,DUPLICATE_KEY
+3192,lesson,Porani,,,none,DUPLICATE_KEY
+3193,letter (alphabet),Oikor,,,none,DUPLICATE_KEY
+3194,word,Katta,,,none,DUPLICATE_KEY
+3195,sentence,Katta·ku·chik,,,none,DUPLICATE_KEY
+3196,question,Sing·ani,,,none,DUPLICATE_KEY
+3197,answer,Aganchakani,,,none,DUPLICATE_KEY
+3198,test / exam,Porika,,,none,DUPLICATE_KEY
+3199,knowledge,Gni / Ma·siani,,,none,DUPLICATE_KEY
+3200,wisdom,Seng·ani,,,none,DUPLICATE_KEY
+3201,story,Golpo,,,none,DUPLICATE_KEY
+3202,map,Map,,,none,DUPLICATE_KEY
+3203,picture,Noksa,,,none,DUPLICATE_KEY
+3204,mistake,Gualani,,,none,DUPLICATE_KEY
+3205,medicine,Sam,,,none,DUPLICATE_KEY
+3206,pain,Sa·dika,,,none,DUPLICATE_KEY
+3207,fever,Sin··ding··a,,,none,DOUBLE_RAKA|DUPLICATE_KEY
+3208,cough,Gusua,,,none,DUPLICATE_KEY
+3209,headache,Sko·saa,,,none,DUPLICATE_KEY
+3210,stomachache,Ok·saa,,,none,DUPLICATE_KEY
+3211,wound / injury,Mata,,,none,DUPLICATE_KEY
+3212,blood,An·chi,,,none,DUPLICATE_KEY
+3213,bone,Greng,,,none,DUPLICATE_KEY
+3214,healthy,An·senga,,,none,DUPLICATE_KEY
+3215,weak,Bilgri,,,none,DUPLICATE_KEY
+3216,strong,Bilaka,,,none,DUPLICATE_KEY
+3217,blind,Mikgri,,,none,DUPLICATE_KEY
+3218,deaf,Nachil·kala,,,none,DUPLICATE_KEY
+3219,mute,Ku·ma,,,none,DUPLICATE_KEY
+3220,poison,Bisi,,,none,DUPLICATE_KEY
+3221,swelling,Ripoma,,,none,DUPLICATE_KEY
+3222,itch,Ka·kita,,,none,DUPLICATE_KEY
+3223,pill,Sam,,,none,DUPLICATE_KEY
+3224,axe,Rua (⚠ verb: to pour),,,none,DUPLICATE_KEY
+3225,knife (small),Kettal,,,none,DUPLICATE_KEY
+3226,sword / machete,Mil·am,,,none,DUPLICATE_KEY
+3227,hoe,Gitchima / kodal,,,none,DUPLICATE_KEY
+3228,hammer,Martul,,,none,DUPLICATE_KEY
+3229,nail (metal),Gajal / Gojal,,,none,DUPLICATE_KEY
+3230,rope,Budu,,,none,DUPLICATE_KEY
+3231,basket (backpack),Kokcheng,,,none,DUPLICATE_KEY
+3232,umbrella,Satta,,,none,DUPLICATE_KEY
+3233,ladder,Jang·ke,,,none,DUPLICATE_KEY
+3234,bridge,Jal·ang / dolong,,,none,DUPLICATE_KEY
+3235,boat,Ring,,,none,DUPLICATE_KEY
+3236,life,Janggi,,,none,DUPLICATE_KEY
+3237,death,Sia,,,none,DUPLICATE_KEY
+3238,truth,Bebe,,,none,DUPLICATE_KEY
+3239,lie,Tol·a,,,none,DUPLICATE_KEY
+3240,war,Dakgrikani,,,none,DUPLICATE_KEY
+3241,peace,Tom·tomani,,,none,DUPLICATE_KEY
+3242,dream,Jumang,,,none,DUPLICATE_KEY
+3243,sound,Gam·a,,,none,DUPLICATE_KEY
+3244,voice,Ku·rang,,,none,DUPLICATE_KEY
+3245,light,Seng·a,,,none,DUPLICATE_KEY
+3246,darkness,Andala,,,none,DUPLICATE_KEY
+3247,ghost,Me·mang,,,none,DUPLICATE_KEY
+3248,tradition,Dakbewal,,,none,DUPLICATE_KEY
+3249,language,Ku·sik,,,none,DUPLICATE_KEY
+3250,shadow,Jagring,,,none,DUPLICATE_KEY
+3251,all,Gimikan,,,none,DUPLICATE_KEY
+3252,some,Mitam,,,none,DUPLICATE_KEY
+3253,many / much,Bang·a,,,none,DUPLICATE_KEY
+3254,few / little,On·titi,,,none,DUPLICATE_KEY
+3255,more,Bang·bata,,,none,DUPLICATE_KEY
+3256,less,Komia,,,none,DUPLICATE_KEY
+3257,empty,Bangbang,,,none,DUPLICATE_KEY
+3258,full,Gapa,,,none,DUPLICATE_KEY
+3259,enough,Chu·onga,,,none,DUPLICATE_KEY
+3260,rice (uncooked),Merong,,,none,DUPLICATE_KEY
+3261,rice (cooked),Mi,,,none,DUPLICATE_KEY
+3262,salt,Kari,,,none,DUPLICATE_KEY
+3263,oil,To,,,none,DUPLICATE_KEY
+3264,water,Chi,,,none,DUPLICATE_KEY
+3265,sugar,Chini,,,none,DUPLICATE_KEY
+3266,milk,Dutt,,,none,DUPLICATE_KEY
+3267,egg,Do·chi,,,none,DUPLICATE_KEY
+3268,meat,Be·en,,,none,DUPLICATE_KEY
+3269,fish,Na·tok,,,none,DUPLICATE_KEY
+3270,dry fish,Na·kam,,,none,DUPLICATE_KEY
+3271,turmeric,Holdi,,,none,DUPLICATE_KEY
+3272,garlic,Rasin·gipok,,,none,DUPLICATE_KEY
+3273,ginger,Re·ching,,,none,DUPLICATE_KEY
+3274,onion,Rasin,,,none,DUPLICATE_KEY
+3275,chili,Jal·ik,,,none,DUPLICATE_KEY
+3276,lentils,Dalli,,,none,DUPLICATE_KEY
+3277,bread,Ruti,,,none,DUPLICATE_KEY
+3278,tea,Cha,,,none,DUPLICATE_KEY
+3279,spices (general),Mosila,,,none,DUPLICATE_KEY
+3280,to cook,Song·a,,,none,DUPLICATE_KEY
+3281,to fry,Jo·a,,,none,DUPLICATE_KEY
+3282,to boil,Rita,,,none,DUPLICATE_KEY
+3283,to bake / roast,Ang·a,,,none,DUPLICATE_KEY
+3284,to stir,Mo·ila,,,none,DUPLICATE_KEY
+3285,pot,Me.dik,,,none,DUPLICATE_KEY
+3286,pan,Sospen,,,none,DUPLICATE_KEY
+3287,plate,Tala,,,none,DUPLICATE_KEY
+3288,cup,Cup,,,none,DUPLICATE_KEY
+3289,knife,Kettal,,,none,DUPLICATE_KEY
+3290,firewood,Am·bol,,,none,DUPLICATE_KEY
+3291,road / path,Rama,,,none,DUPLICATE_KEY
+3292,car,Gari,,,none,DUPLICATE_KEY
+3293,bicycle,Rengrengsil,,,none,DUPLICATE_KEY
+3294,motorcycle,Motor·cycle,,,none,DUPLICATE_KEY
+3295,train,Rail·gari,,,none,DUPLICATE_KEY
+3296,airplane,Sildo·reng,,,none,DUPLICATE_KEY
+3297,boat,Ring,,,none,DUPLICATE_KEY
+3298,bridge,Jal·ang,,,none,DUPLICATE_KEY
+3299,distance,Chel·a,,,none,DUPLICATE_KEY
+3300,journey,Songreani,,,none,DUPLICATE_KEY
+3301,ticket,Tikit,,,none,DUPLICATE_KEY
+3302,bag / luggage,Bostu,,,none,DUPLICATE_KEY
+3303,to arrive,Sokbaa,,,none,DUPLICATE_KEY
+3304,to leave,Re·ongkata,,,none,DUPLICATE_KEY
+3305,to wait,Damo / Sengbo,,,none,DUPLICATE_KEY
+3306,station / stop,Nengtakani Biap,,,none,DUPLICATE_KEY
+3307,fast,Ta·raka,,,none,DUPLICATE_KEY
+3308,slow,Ka·sina,,,none,DUPLICATE_KEY
+3309,near,Sepang,,,none,DUPLICATE_KEY
+3310,far,Chel·a,,,none,DUPLICATE_KEY
+3311,man,Me·asa,,,none,DUPLICATE_KEY
+3312,woman,Me·chik,,,none,DUPLICATE_KEY
+3313,boy,Pante,,,none,DUPLICATE_KEY
+3314,girl,Me·tra,,,none,DUPLICATE_KEY
+3315,child,Bi·sa,,,none,DUPLICATE_KEY
+3316,old man,Budepa,,,none,DUPLICATE_KEY
+3317,old woman,Buchuma,,,none,DUPLICATE_KEY
+3318,youth,Me·tra·pante,,,none,DUPLICATE_KEY
+3319,son,Depante,,,none,DUPLICATE_KEY
+3320,daughter,Demechik,,,none,DUPLICATE_KEY
+3321,friend,Ripeng,,,none,DUPLICATE_KEY
+3322,enemy,Bobil,,,none,DUPLICATE_KEY
+3323,neighbor,Noksul,,,none,DUPLICATE_KEY
+3324,guest,Sokgipa,,,none,DUPLICATE_KEY
+3325,master / owner,Nokgipa,,,none,DUPLICATE_KEY
+3326,servant,Nokkol,,,none,DUPLICATE_KEY
+3327,village chief,Nokma,,,none,DUPLICATE_KEY
+3328,wood,Bol,,,none,DUPLICATE_KEY
+3329,stone,Ro·ong,,,none,DUPLICATE_KEY
+3330,iron / metal,Sil,,,none,DUPLICATE_KEY
+3331,gold,Sona,,,none,DUPLICATE_KEY
+3332,silver,Rupa,,,none,DUPLICATE_KEY
+3333,cloth,Ba·ra,,,none,DUPLICATE_KEY
+3334,paper,Lekka,,,none,DUPLICATE_KEY
+3335,plastic,Plastic,,,none,DUPLICATE_KEY
+3336,glass,Glass,,,none,DUPLICATE_KEY
+3337,bamboo,Wa·a,,,none,DUPLICATE_KEY
+3338,thick,Ritchaa,,,none,DUPLICATE_KEY
+3339,thin,Ba·renga,,,none,DUPLICATE_KEY
+3340,hard,Raka,,,none,DUPLICATE_KEY
+3341,who,Sawa,,,none,DUPLICATE_KEY
+3342,what,Maia,,,none,DUPLICATE_KEY
+3343,when,Basako,,,none,DUPLICATE_KEY
+3344,where,Bano,,,none,DUPLICATE_KEY
+3345,why,Maini·gimin,,,none,DUPLICATE_KEY
+3346,how,Maikai,,,none,DUPLICATE_KEY
+3347,and,Aro,,,none,DUPLICATE_KEY
+3348,but,Indiba,,,none,DUPLICATE_KEY
+3349,or,Ba,,,none,DUPLICATE_KEY
+3350,because,Maina,,,none,DUPLICATE_KEY
+3351,fish,Na·tok,,,none,DUPLICATE_KEY
+3352,crab,Ang·ke,,,none,DUPLICATE_KEY
+3353,frog,Beng·blok,,,none,DUPLICATE_KEY
+3354,turtle,Ki·sing,,,none,DUPLICATE_KEY
+3355,prawn / shrimp,Na·tik,,,none,DUPLICATE_KEY
+3356,butterfly,Me·pilip,,,none,DUPLICATE_KEY
+3357,bee,Bija,,,none,DUPLICATE_KEY
+3358,ant,Chibrim,,,none,DUPLICATE_KEY
+3359,mosquito,Ganggu,,,none,DUPLICATE_KEY
+3360,fly,Tampi,,,none,DUPLICATE_KEY
+3361,spider,Guwang,,,none,DUPLICATE_KEY
+3362,cockroach,Karo,,,none,DUPLICATE_KEY
+3363,scorpion,Mangkram,,,none,DUPLICATE_KEY
+3364,worm / caterpillar,Jo·ong,,,none,DUPLICATE_KEY
+3365,tail,Ki·me,,,none,DUPLICATE_KEY
+3366,horn,Grong,,,none,DUPLICATE_KEY
+3367,wing,Grang,,,none,DUPLICATE_KEY
+3368,feather,Kimil,,,none,DUPLICATE_KEY
+3369,beak,Ku·chot,,,none,DUPLICATE_KEY
+3370,egg,Do·chi,,,none,DUPLICATE_KEY
+3371,nest,Do·bitip,,,none,DUPLICATE_KEY
+3372,hoof,Ja·skil,,,none,DUPLICATE_KEY
+3373,claw,Jakskil,,,none,DUPLICATE_KEY
+3374,to fly,Bila,,,none,DUPLICATE_KEY
+3375,to swim,Jroa (⚠ also: stinging sensation),,,none,DUPLICATE_KEY
+3376,to bark,Sing·a,,,none,DUPLICATE_KEY
+3377,to bite,Chika,,,none,DUPLICATE_KEY
+3378,to crawl,Malama,,,none,DUPLICATE_KEY
+3379,to growl,Randinga,,,none,DUPLICATE_KEY
+3380,to lay eggs,Bitchi·chi·a,,,none,DUPLICATE_KEY
+3381,to hunt,Sikar·ka·a,,,none,DUPLICATE_KEY
+3382,to catch,Rim·a,,,none,DUPLICATE_KEY
+3383,wild,Buringni,,,none,DUPLICATE_KEY
+3384,tame,Nokni,,,none,DUPLICATE_KEY
+3385,god,Isol,,,none,DUPLICATE_KEY
+3386,spirit / soul,Janggi / Gisik,,,none,DUPLICATE_KEY
+3387,ghost,Me·mang,,,none,DUPLICATE_KEY
+3388,heaven,Salgi,,,none,DUPLICATE_KEY
+3389,hell,Norok,,,none,DUPLICATE_KEY
+3390,prayer,Bi·ani,,,none,DUPLICATE_KEY
+3391,to pray,Bi·a,,,none,DUPLICATE_KEY
+3392,worship,Olakkiani,,,none,DUPLICATE_KEY
+3393,church,Gilja·nok,,,none,DUPLICATE_KEY
+3394,sin,Pap,,,none,DUPLICATE_KEY
+3395,blessing,Pattiani,,,none,DUPLICATE_KEY
+3396,sacrifice,Boli,,,none,DUPLICATE_KEY
+3397,holy,Rongtalgipa,,,none,DUPLICATE_KEY
+3398,pastor,Pamong,,,none,DUPLICATE_KEY
+3399,priest,Kamal,,,none,DUPLICATE_KEY
+3400,bible,Sastro,,,none,DUPLICATE_KEY
+3401,faith,Bebera·ani,,,none,DUPLICATE_KEY
+3402,mercy,Ka·sachakani,,,none,DUPLICATE_KEY
+3403,miracle,Aiao·inmangipa·kam,,,none,DUPLICATE_KEY
+3404,angel,Sa·gre,,,none,DUPLICATE_KEY
+3405,tradition,Dakbewal,,,none,DUPLICATE_KEY
+3406,law,Niam,,,none,DUPLICATE_KEY
+3407,court,Kachari,,,none,DUPLICATE_KEY
+3408,prison,Patok·nok,,,none,DUPLICATE_KEY
+3409,punishment,Sasti,,,none,DUPLICATE_KEY
+3410,reward,Boksis,,,none,DUPLICATE_KEY
+3411,country,A·song,,,none,DUPLICATE_KEY
+3412,freedom,Jakgitelani,,,none,DUPLICATE_KEY
+3413,fight,Dakgrikani,,,none,DUPLICATE_KEY
+3414,tax,Kajina,,,none,DUPLICATE_KEY
+3415,signature,Jak·soi,,,none,DUPLICATE_KEY
+3416,truth,Bebe,,,none,DUPLICATE_KEY
+3417,lie,Tol·napani,,,none,DUPLICATE_KEY
+3418,witness,Sakki,,,none,DUPLICATE_KEY
+3419,guilty,Dos·gnang,,,none,DUPLICATE_KEY
+3420,innocent,Dos·gri,,,none,DUPLICATE_KEY
+3421,to judge,Bichal·ka·a,,,none,DUPLICATE_KEY
+3422,to clean,Rongtalata,,,none,DUPLICATE_KEY
+3423,to sweep,Itroka,,,none,DUPLICATE_KEY
+3424,to wash (clothes),Su·sranga,,,none,DUPLICATE_KEY
+3425,to wash (hands),Jaksua,,,none,DUPLICATE_KEY
+3426,to wash (face),Miksua,,,none,DUPLICATE_KEY
+3427,to bathe,Aua,,,none,DUPLICATE_KEY
+3428,to mend / fix,Namatpila,,,none,DUPLICATE_KEY
+3429,to build,Rika,,,none,DUPLICATE_KEY
+3430,to dig,Cho·a,,,none,DUPLICATE_KEY
+3431,to plant,Ge·a,,,none,DUPLICATE_KEY
+3432,to cut (wood),Den·a,,,none,DUPLICATE_KEY
+3433,to break,Be·ata,,,none,DUPLICATE_KEY
+3434,to burn,So·a,,,none,DUPLICATE_KEY
+3435,to light (lamp),Ching·ata,,,none,DUPLICATE_KEY
+3436,to put out (fire),Kimita,,,none,DUPLICATE_KEY
+3437,to wrap,Kadepa,,,none,DUPLICATE_KEY
+3438,to tie,Kaa,,,none,DUPLICATE_KEY
+3439,to untie,Enga,,,none,DUPLICATE_KEY
+3440,to carry (on head),Ritchila,,,none,DUPLICATE_KEY
+3441,to carry (on back),Ripea,,,none,DUPLICATE_KEY
+3442,to carry (in hand),De·a,,,none,DUPLICATE_KEY
+3443,hungry,Okkria,,,none,DUPLICATE_KEY
+3444,thirsty,Chi·ringna·ska,,,none,DUPLICATE_KEY
+3445,tired,Neng·a,,,none,DUPLICATE_KEY
+3446,sleepy,Tusina·ska,,,none,DUPLICATE_KEY
+3447,sick,Sakama,,,none,DUPLICATE_KEY
+3448,dizzy,Miksula,,,none,DUPLICATE_KEY
+3449,sweat,Ding·ol,,,none,DUPLICATE_KEY
+3450,light (weight),Seng·a,,,none,DUPLICATE_KEY
+3451,hard,Rak·a,,,none,DUPLICATE_KEY
+3452,soft,Nom·a,,,none,DUPLICATE_KEY
+3453,sharp,Mata,,,none,DUPLICATE_KEY
+3454,blunt,Bin·a,,,none,DUPLICATE_KEY
+3455,smooth,Rinoka,,,none,DUPLICATE_KEY
+3456,rough,Skaka,,,none,DUPLICATE_KEY
+3457,deep,Tu·a,,,none,DUPLICATE_KEY
+3458,shallow,Tu·ja,,,none,DUPLICATE_KEY
+3459,high,Chua,,,none,DUPLICATE_KEY
+3460,low,Ona,,,none,DUPLICATE_KEY
+3461,wide,Apala,,,none,DUPLICATE_KEY
+3462,narrow,Apchona,,,none,DUPLICATE_KEY
+3463,clean,Rongtala,,,none,DUPLICATE_KEY
+3464,dirty,Mitchia,,,none,DUPLICATE_KEY
+3465,full,Gapa,,,none,DUPLICATE_KEY
+3466,empty,Bangbang,,,none,DUPLICATE_KEY
+3467,expensive,Dam·raka,,,none,DUPLICATE_KEY
+3468,cheap,Dam·nom·a,,,none,DUPLICATE_KEY
+3469,i,Anga,,,none,DUPLICATE_KEY
+3470,me,Angko,,,none,DUPLICATE_KEY
+3471,you (singular),Na·a,,,none,DUPLICATE_KEY
+3472,you (object),Nang·na / Nang·ko,,,none,DUPLICATE_KEY
+3473,he / she,Ua,,,none,DUPLICATE_KEY
+3474,him / her,Una,,,none,DUPLICATE_KEY
+3475,we /us (incl.),Chinga,,,none,DUPLICATE_KEY
+3476,they,Uamang,,,none,DUPLICATE_KEY
+3477,them,Uamangna,,,none,DUPLICATE_KEY
+3478,my / mine,Angni,,,none,DUPLICATE_KEY
+3479,your / yours,Nang·ni,,,none,DUPLICATE_KEY
+3480,his / her / hers,Uni,,,none,DUPLICATE_KEY
+3481,our / ours,Chingni / An·chingni,,,none,DUPLICATE_KEY
+3482,their / theirs,Uamangni,,,none,DUPLICATE_KEY
+3483,whose?,Sani?,,,none,DUPLICATE_KEY
+3484,someone's,Saniba,,,none,DUPLICATE_KEY
+3485,everyone's,Pilakni,,,none,DUPLICATE_KEY
+3486,this,Ia,,,none,DUPLICATE_KEY
+3487,that,Ua,,,none,DUPLICATE_KEY
+3488,these,Iamang,,,none,DUPLICATE_KEY
+3489,those,Uamang,,,none,DUPLICATE_KEY
+3490,here,Iano,,,none,DUPLICATE_KEY
+3491,there,Uano,,,none,DUPLICATE_KEY
+3492,myself,Anga an·tang,,,none,DUPLICATE_KEY
+3493,yourself,Na·a an·tang,,,none,DUPLICATE_KEY
+3494,himself / herself,Ua an·tang,,,none,DUPLICATE_KEY
+3495,someone,Saksa,,,none,DUPLICATE_KEY
+3496,no one,Darangba·ong·ja,,,none,DUPLICATE_KEY
+3497,everyone,Sakanti,,,none,DUPLICATE_KEY
+3498,each,Sakprak,,,none,DUPLICATE_KEY
+3499,other,Gipin,,,none,DUPLICATE_KEY
+3500,market,Bajal / Anti,,,none,DUPLICATE_KEY
+3501,shop,Dokan,,,none,DUPLICATE_KEY
+3502,money,Tangka,,,none,DUPLICATE_KEY
+3503,price,Dam,,,none,DUPLICATE_KEY
+3504,expensive,Dam·raka,,,none,DUPLICATE_KEY
+3505,cheap,Dam·nom·a,,,none,DUPLICATE_KEY
+3506,to buy,Brea,,,none,DUPLICATE_KEY
+3507,to sell,Pala,,,none,DUPLICATE_KEY
+3508,coin,Tangka·bisil,,,none,DUPLICATE_KEY
+3509,scale,Tochakani,,,none,DUPLICATE_KEY
+3510,fresh,Gital,,,none,DUPLICATE_KEY
+3511,stale,Gitcham,,,none,DUPLICATE_KEY
+3512,discount,Dam·komiatani,,,none,DUPLICATE_KEY
+3513,customer,Bregipa,,,none,DUPLICATE_KEY
+3514,shopkeeper,Dokan·dakgipa,,,none,DUPLICATE_KEY
+3515,bag,Thola,,,none,DUPLICATE_KEY
+3516,how much is this?,Baita?,,,none,DUPLICATE_KEY
+3517,reduce the price,Dam·ko on·tisa komiatbo.,,,none,DUPLICATE_KEY
+3518,i want to buy this,Anga iako brena ska.,,,none,DUPLICATE_KEY
+3519,do you have...?,Nang·o ... dongama?,,,none,DUPLICATE_KEY
+3520,it is too expensive,Ia dam rakduga.,,,none,DUPLICATE_KEY
+3521,give me one kilo,Angna kilo·sa on·bo.,,,none,DUPLICATE_KEY
+3522,hello,Salam / Namengama,,,none,DUPLICATE_KEY
+3523,how are you?,Na·a namengama?,,,none,DUPLICATE_KEY
+3524,i am fine,Anga namenga.,,,none,DUPLICATE_KEY
+3525,what is your name?,Nang·ni bimungara maia?,,,none,DUPLICATE_KEY
+3526,my name is...,Angni bimungara...,,,none,DUPLICATE_KEY
+3527,thank you,Mittela.,,,none,DUPLICATE_KEY
+3528,please,Ka·sapae.,,,none,DUPLICATE_KEY
+3529,excuse me,Angko kema·watbo.,,,none,DUPLICATE_KEY
+3530,sorry,Kema·bi·a.,,,none,DUPLICATE_KEY
+3531,good morning,Pringnam.,,,none,DUPLICATE_KEY
+3532,good afternoon,Salnam.,,,none,DUPLICATE_KEY
+3533,good evening,Attamnam.,,,none,DUPLICATE_KEY
+3534,good night,Walnam.,,,none,DUPLICATE_KEY
+3535,goodbye,Re·ang·na / Nam·en·dongbo.,,,none,DUPLICATE_KEY
+3536,see you again,Pil·tai·grongna,,,none,DUPLICATE_KEY
+3537,welcome,Rimchaksoa,,,none,DUPLICATE_KEY
+3538,come in,Ning·chi re·babo.,,,none,DUPLICATE_KEY
+3539,sit down,Asongbo.,,,none,DUPLICATE_KEY
+3540,eat well,Name cha·bo.,,,none,DUPLICATE_KEY
+3541,where are you from?,Na·a bano·ni?,,,none,DUPLICATE_KEY
+3542,i am from...,Anga ...·ni.,,,none,DUPLICATE_KEY
+3543,time,Somoi,,,none,DUPLICATE_KEY
+3544,clock / watch,Guri,,,none,DUPLICATE_KEY
+3545,hour,Konta,,,none,DUPLICATE_KEY
+3546,morning,Pring,,,none,DUPLICATE_KEY
+3547,noon,Sal·jatchi,,,none,DUPLICATE_KEY
+3548,afternoon,Sal·aksol,,,none,DUPLICATE_KEY
+3549,evening,Attam,,,none,DUPLICATE_KEY
+3550,night,Wal,,,none,DUPLICATE_KEY
+3551,midnight,Wal·jatchi,,,none,DUPLICATE_KEY
+3552,today,Da·alo,,,none,DUPLICATE_KEY
+3553,tomorrow,Knalo,,,none,DUPLICATE_KEY
+3554,day after tomorrow,Me·nnalo,,,none,DUPLICATE_KEY
+3555,yesterday,Meja,,,none,DUPLICATE_KEY
+3556,day before yesterday,Me·si·ja,,,none,DUPLICATE_KEY
+3557,now,Da·o,,,none,DUPLICATE_KEY
+3558,later,Ja·mano,,,none,DUPLICATE_KEY
+3559,before,Skang,,,none,DUPLICATE_KEY
+3560,early,Bakkan / Pring·seng,,,none,DUPLICATE_KEY
+3561,late,Ja·man·chak·a,,,none,DUPLICATE_KEY
+3562,summer,Ding·kari,,,none,DUPLICATE_KEY
+3563,winter,Sin·kari,,,none,DUPLICATE_KEY
+3564,rainy season,Mikkari,,,none,DUPLICATE_KEY
+3565,always,Pangnan,,,none,DUPLICATE_KEY
+3566,never,Pangnan·ba (ja),,,none,DUPLICATE_KEY
+3567,and,Aro,,,none,DUPLICATE_KEY
+3568,but,Indiba,,,none,DUPLICATE_KEY
+3569,or,Ba,,,none,DUPLICATE_KEY
+3570,if,Ode / ·ode,,,none,DUPLICATE_KEY
+3571,so / therefore,Uni gimin,,,none,DUPLICATE_KEY
+3572,because,Maina,,,none,DUPLICATE_KEY
+3573,with,Baksa,,,none,DUPLICATE_KEY
+3574,for,Gimin / ·na,,,none,DUPLICATE_KEY
+3575,from,·oni,,,none,DUPLICATE_KEY
+3576,to,·na,,,none,DUPLICATE_KEY
+3577,in / at,·o,,,none,DUPLICATE_KEY
+3578,on,Kosak·o,,,none,DUPLICATE_KEY
+3579,under,Ka·ma·o,,,none,DUPLICATE_KEY
+3580,between,Jatchi·o,,,none,DUPLICATE_KEY
+3581,only,·mangmang / ·san,,,none,DUPLICATE_KEY
+3582,also,·ba,,,none,DUPLICATE_KEY
+3583,very,Be·en / Bakkan,,,none,DUPLICATE_KEY
+3584,again,Pil·tai,,,none,DUPLICATE_KEY
+3585,wait,Damo/Sengbo,,,none,DUPLICATE_KEY
+3586,quick / hurry,Tarkbo,,,none,DUPLICATE_KEY
+3587,listen,Knachik·bo,,,none,DUPLICATE_KEY
+3588,look,Ni·bo,,,none,DUPLICATE_KEY
+3589,tell me,Angna agan·bo,,,none,DUPLICATE_KEY
+3590,i know,Anga uia.,,,none,DUPLICATE_KEY
+3591,i don't know,Anga uija.,,,none,DUPLICATE_KEY
+3592,no more,Dongja,,,none,DUPLICATE_KEY
+3593,it exists / it's there,Donga,,,none,DUPLICATE_KEY
+3594,i don't care,Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+3595,garo,Damo / Gisep sengbo,,,none,DUPLICATE_KEY
+3596,no problem / never mind,Maming ba ong·ja,,,none,DUPLICATE_KEY
+3597,i understand,Anga uia,,,none,DUPLICATE_KEY
+3598,i don't understand,Anga uija,,,none,DUPLICATE_KEY
+3599,say it again,Piltai aganbo,,,none,DUPLICATE_KEY
+3600,speak slowly,Ka·sine aganbo,,,none,DUPLICATE_KEY
+3601,what did you say?,Na·a maiko agana?,,,none,DUPLICATE_KEY
+3602,garo,Inde·a?,,,none,DUPLICATE_KEY
+3603,really?,Bebema?,,,none,DUPLICATE_KEY
+3604,of course!,"Oe, bebe!",,,none,DUPLICATE_KEY
+3605,garo,Hai cha·ha,,,none,DUPLICATE_KEY
+3606,garo,Hai re·naha,,,none,DUPLICATE_KEY
+3607,let's sleep,Hai tusina,,,none,DUPLICATE_KEY
+3608,hurry up!,Tarkbo!,,,none,DUPLICATE_KEY
+3609,garo,Tarake re·babo!,,,none,DUPLICATE_KEY
+3610,be careful!,Chimsakbo!,,,none,DUPLICATE_KEY
+3611,come here!,Ianona re·babo!,,,none,DUPLICATE_KEY
+3612,go away!,Re·angbo!,,,none,DUPLICATE_KEY
+3613,enough!,Chu·onga!,,,none,DUPLICATE_KEY
+3614,not now,Da·o ong·ja,,,none,DUPLICATE_KEY
+3615,later,Ja·mano,,,none,DUPLICATE_KEY
+3616,maybe,Ong·naba donga,,,none,DUPLICATE_KEY
+3617,i forgot,Anga guala,,,none,DUPLICATE_KEY
+3618,i remember,Anga gisik ra·a,,,none,DUPLICATE_KEY
+3619,what time is it?,Baita baji?,,,none,DUPLICATE_KEY
+3620,i am busy,Anga kam·gnanga,,,none,DUPLICATE_KEY
+3621,i am not busy,Anga kam·gnang·ja,,,none,DUPLICATE_KEY
+3622,i am coming,Anga re·baenga,,,none,DUPLICATE_KEY
+3623,i am going,Anga re·angenga,,,none,DUPLICATE_KEY
+3624,help me,Angko dakchakbo,,,none,DUPLICATE_KEY
+3625,thank you very much,Mittela dakpile,,,none,DUPLICATE_KEY
+3626,i am happy,Anga kusionga,,,none,DUPLICATE_KEY
+3627,i am sad,Anga dukonga,,,none,DUPLICATE_KEY
+3628,i am angry,Anga ka·o nanga,,,none,DUPLICATE_KEY
+3629,i am scared,Anga kena,,,none,DUPLICATE_KEY
+3630,i am tired,Anga neng·a,,,none,DUPLICATE_KEY
+3631,i miss you,Anga nang·na simbraa,,,none,DUPLICATE_KEY
+3632,i am worried,Anga jajrenja,,,none,DUPLICATE_KEY
+3633,i feel lonely,Anga saksan gisik·o nanga,,,none,DUPLICATE_KEY
+3634,don't be sad,Duk ong·ja,,,none,DUPLICATE_KEY
+3635,don't be afraid,Kennabe,,,none,DUPLICATE_KEY
+3636,be patient,Chakchikbo,,,none,DUPLICATE_KEY
+3637,be brave,Ka·dongbo,,,none,DUPLICATE_KEY
+3638,i am ashamed,Anga kracha·a,,,none,DUPLICATE_KEY
+3639,i am jealous,Anga mikbua,,,none,DUPLICATE_KEY
+3640,i forgive you,Anga nang·ko kema ka·ra,,,none,DUPLICATE_KEY
+3641,i am grateful,Anga mittela nanga,,,none,DUPLICATE_KEY
+3642,i trust you,Nang·ko bebe ra·a,,,none,DUPLICATE_KEY
+3643,i am surprised,Anga jagok·a,,,none,DUPLICATE_KEY
+3644,i am satisfied,Anga chu·ongnika,,,none,DUPLICATE_KEY
+3645,i don't care,Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+3646,garo,Sala,,,none,DUPLICATE_KEY
+3647,garo,Sala,,,none,DUPLICATE_KEY
+3648,push,Jitpaka,,,none,DUPLICATE_KEY
+3649,garo,Jroa,,,none,DUPLICATE_KEY
+3650,garo,Maldoa / Gadoa,,,none,DUPLICATE_KEY
+3651,jump,Bildoa,,,none,DUPLICATE_KEY
+3652,crawl,Malama,,,none,DUPLICATE_KEY
+3653,roll,Romroma,,,none,DUPLICATE_KEY
+3654,garo,Rorama / Roama,,,none,DUPLICATE_KEY
+3655,fly,Bila,,,none,DUPLICATE_KEY
+3656,shake,Moa,,,none,DUPLICATE_KEY
+3657,move (something),De·jita,,,none,DUPLICATE_KEY
+3658,garo,Teka,,,none,DUPLICATE_KEY
+3659,garo,Goa,,,none,DUPLICATE_KEY
+3660,throw,Goata / Gal·a,,,none,DUPLICATE_KEY
+3661,catch,Rim·a,,,none,DUPLICATE_KEY
+3662,garo,Nia,,,none,DUPLICATE_KEY
+3663,garo,Nitata,,,none,DUPLICATE_KEY
+3664,show,Mesoka,,,none,DUPLICATE_KEY
+3665,smell,Gingsika,,,none,DUPLICATE_KEY
+3666,spread,Barama,,,none,DUPLICATE_KEY
+3667,garo,Rua,,,none,DUPLICATE_KEY
+3668,garo,Nonga,,,none,DUPLICATE_KEY
+3669,garo,Aka,,,none,DUPLICATE_KEY
+3670,turn (page/sheet),Badala,,,none,DUPLICATE_KEY
+3671,cook,Song·a,,,none,DUPLICATE_KEY
+3672,fry,Jo·a,,,none,DUPLICATE_KEY
+3673,boil,Rita,,,none,DUPLICATE_KEY
+3674,bake / roast,Ang·a,,,none,DUPLICATE_KEY
+3675,stir,Mo·ila,,,none,DUPLICATE_KEY
+3676,taste,Nong·mia,,,none,DUPLICATE_KEY
+3677,peel,Brika,,,none,DUPLICATE_KEY
+3678,chop,Rata,,,none,DUPLICATE_KEY
+3679,grind,Supneka,,,none,DUPLICATE_KEY
+3680,add salt,Kari on·bo,,,none,DUPLICATE_KEY
+3681,serve food,Mi Onbo,,,none,DUPLICATE_KEY
+3682,eat together,Baksa cha·ha,,,none,DUPLICATE_KEY
+3683,think,Gisik·o nanga,,,none,DUPLICATE_KEY
+3684,know,Uia,,,none,DUPLICATE_KEY
+3685,forget,Guala,,,none,DUPLICATE_KEY
+3686,remember,Ku·rachaka,,,none,DUPLICATE_KEY
+3687,decide,Tik ka·a,,,none,DUPLICATE_KEY
+3688,agree,Ka·racha,,,none,DUPLICATE_KEY
+3689,disagree,Ka·rach·ong·ja,,,none,DUPLICATE_KEY
+3690,promise,Ka·ra chaka,,,none,DUPLICATE_KEY
+3691,lie,Tol·a,,,none,DUPLICATE_KEY
+3692,tell the truth,Bebeko aganbo,,,none,DUPLICATE_KEY
+3693,ask,Sing·a,,,none,DUPLICATE_KEY
+3694,answer,Aganchaka,,,none,DUPLICATE_KEY
+3695,read,Pora,,,none,DUPLICATE_KEY
+3696,write,Sea,,,none,DUPLICATE_KEY
+3697,count,Chanbo,,,none,DUPLICATE_KEY
+3698,learn,Sikia,,,none,DUPLICATE_KEY
+3699,teach,Sikie on·a,,,none,DUPLICATE_KEY
+3700,garo,Wangala,,,none,DUPLICATE_KEY
+3701,traditional dance,Do·krua,,,none,DUPLICATE_KEY
+3702,traditional drum,Dama,,,none,DUPLICATE_KEY
+3703,traditional flute,Rongsi,,,none,DUPLICATE_KEY
+3704,garo,Mahari,,,none,DUPLICATE_KEY
+3705,garo,A·chik daka,,,none,DUPLICATE_KEY
+3706,garo,Nokma,,,none,DUPLICATE_KEY
+3707,traditional house,A·chik nok,,,none,DUPLICATE_KEY
+3708,garo,A·ba daka,,,none,DUPLICATE_KEY
+3709,sacred grove,Kosi,,,none,DUPLICATE_KEY
+3710,traditional rice beer,Minil Bitchi,,,none,DUPLICATE_KEY
+3711,weaving,Do·rua,,,none,DUPLICATE_KEY
+3712,dakmanda (women's wrap),Dakmanda,,,none,DUPLICATE_KEY
+3713,nokpante (bachelor house),Nokpante,,,none,DUPLICATE_KEY
+3714,garo,Songsarek,,,none,DUPLICATE_KEY
+3715,garo,Mikrangni bimung gri,,,none,DUPLICATE_KEY
+3716,garo,"Baksa nangchim·a, saksan sia",,,none,DUPLICATE_KEY
+3717,"work hard now, rest later","Skang daka, ja·mano nengbo",,,none,DUPLICATE_KEY
+3718,"speak less, do more","Agana gri, daka bang·a",,,none,DUPLICATE_KEY
+3719,a good person is known by deeds,Nama mande·ra ua kam·o uia,,,none,DUPLICATE_KEY
+3720,garo,Mi gual·ata·bo ong·ja,,,none,DUPLICATE_KEY
+3721,garo,"Buring on·a, buring ra·a",,,none,DUPLICATE_KEY
+3722,truth always comes out,Bebe·ra inde·a piltai,,,none,DUPLICATE_KEY
+3723,a little is better than nothing,"On·titi nama, bangbang·bata",,,none,DUPLICATE_KEY
+3724,garo,Aio!,,,none,DUPLICATE_KEY
+3725,garo,Himanga!,,,none,DUPLICATE_KEY
+3726,garo,Ei! / O!,,,none,DUPLICATE_KEY
+3727,garo,Maiko nanga?,,,none,DUPLICATE_KEY
+3728,no way! / impossible!,Ong·ja inde·ba!,,,none,DUPLICATE_KEY
+3729,whatever / i don't care,Jeba Onj·china / Anga Dal·e Ra·ja,,,none,DUPLICATE_KEY
+3730,stop it,Dontonjbo,,,none,DUPLICATE_KEY
+3731,cool / awesome,Nito / Nita·gipa,,,none,DUPLICATE_KEY
+3732,garo,Jala·gipa,,,none,DUPLICATE_KEY
+3733,let's hang out,Hai roromna,,,none,DUPLICATE_KEY
+3734,i'm broke,Anga tangka donja,,,none,DUPLICATE_KEY
+3735,he/she is lying,Ua tolenga,,,none,DUPLICATE_KEY
+3736,mind your own business,Nangni kamko dakbo,,,none,DUPLICATE_KEY
+3737,i'm hungry (casual),Anga okkrinenga,,,none,DUPLICATE_KEY
+3738,just joking,Anga kalake roega,,,none,DUPLICATE_KEY
+3739,chill out / relax,Nom·a bo,,,none,DUPLICATE_KEY
+3740,garo,Re·naha ba!,,,none,DUPLICATE_KEY
+3741,kind / gentle,Nama·gipa,,,none,DUPLICATE_KEY
+3742,brave,Ka·rakani·gipa,,,none,DUPLICATE_KEY
+3743,clever,Seng·a·gipa,,,none,DUPLICATE_KEY
+3744,foolish,Bangbang·gisik,,,none,DUPLICATE_KEY
+3745,honest,Bebe·agani·gipa,,,none,DUPLICATE_KEY
+3746,dishonest,Tol·a·agani·gipa,,,none,DUPLICATE_KEY
+3747,hardworking,Dak·rakgipa,,,none,DUPLICATE_KEY
+3748,lazy,Bilgri·gipa,,,none,DUPLICATE_KEY
+3749,generous,On·a·nakgipa,,,none,DUPLICATE_KEY
+3750,greedy,Gisika·dakgipa,,,none,DUPLICATE_KEY
+3751,proud / arrogant,Gaora·gipa,,,none,DUPLICATE_KEY
+3752,humble,Chon·a·gisik,,,none,DUPLICATE_KEY
+3753,shy,Kracha·gipa,,,none,DUPLICATE_KEY
+3754,confident,Ka·raka·gisik,,,none,DUPLICATE_KEY
+3755,talkative,Bang·a agani·gipa,,,none,DUPLICATE_KEY
+3756,quiet,Agana·ja·gipa,,,none,DUPLICATE_KEY
+3757,funny,Ka·ding·o on·a·gipa,,,none,DUPLICATE_KEY
+3758,stubborn,An·tang·ra·gipa,,,none,DUPLICATE_KEY
+3759,obedient,Knachika·gipa,,,none,DUPLICATE_KEY
+3760,dog bark,Sing·a,,,none,DUPLICATE_KEY
+3761,cat meow,Miau·miau,,,none,DUPLICATE_KEY
+3762,cow moo,Ma·ma,,,none,DUPLICATE_KEY
+3763,rooster crow,Ko·ko·rika,,,none,DUPLICATE_KEY
+3764,frog croak,Beng·beng,,,none,DUPLICATE_KEY
+3765,bird chirp,Chi·chi,,,none,DUPLICATE_KEY
+3766,snake hiss,Chiss·chiss,,,none,DUPLICATE_KEY
+3767,bee buzz,Guum·guum,,,none,DUPLICATE_KEY
+3768,tiger roar,Randinga,,,none,DUPLICATE_KEY
+3769,nod (yes),Skola·o,,,none,DUPLICATE_KEY
+3770,shake head (no),Sko·moa,,,none,DUPLICATE_KEY
+3771,wave hand,Jak·bildoa,,,none,DUPLICATE_KEY
+3772,point finger,Jak·chip·a,,,none,DUPLICATE_KEY
+3773,clap,Jak·taka,,,none,DUPLICATE_KEY
+3774,bow,Sko·ka·mama,,,none,DUPLICATE_KEY
+3775,hug,Jak·kadepa,,,none,DUPLICATE_KEY
+3776,wink,Mik·chip·a,,,none,DUPLICATE_KEY
+3777,smile,Ka·ding·mikseng·a,,,none,DUPLICATE_KEY
+3778,sneeze,Hatchia,,,none,DUPLICATE_KEY
+3779,yawn,Gu·ua,,,none,DUPLICATE_KEY
+3780,cough,Gusua,,,none,DUPLICATE_KEY
+3781,whistle,Hu·a,,,none,DUPLICATE_KEY
+3782,open your book,Ki·tapko oa·bo,,,none,DUPLICATE_KEY
+3783,close your book,Ki·tapko chip·a·bo,,,none,DUPLICATE_KEY
+3784,listen carefully,Chakchik knachik·bo,,,none,DUPLICATE_KEY
+3785,raise your hand,Jakko bil·bo,,,none,DUPLICATE_KEY
+3786,answer the question,Sing·ani·ko aganchaka·bo,,,none,DUPLICATE_KEY
+3787,i have a question,Angna sing·ani dong·a,,,none,DUPLICATE_KEY
+3788,i don't understand,Anga uija,,,none,DUPLICATE_KEY
+3789,class is over,Klas chu·a,,,none,DUPLICATE_KEY
+3790,homework,Nok·o dak·porani,,,none,DUPLICATE_KEY
+3791,study hard,Chakchik pora·bo,,,none,DUPLICATE_KEY
+3792,congratulations!,Ka·soa!,,,none,DUPLICATE_KEY
+3793,happy birthday!,Bilsi·gital kusi!,,,none,DUPLICATE_KEY
+3794,get well soon,Mangmang an·sengpibo,,,none,DUPLICATE_KEY
+3795,i will pray for you,Nang·na anga bi·engena,,,none,DUPLICATE_KEY
+3796,god bless you,Isol nang·na pattia·bo,,,none,DUPLICATE_KEY
+3797,rest in peace,Tom·toma·o tusibo,,,none,DUPLICATE_KEY
+3798,you did well,Na·a nama dak·a,,,none,DUPLICATE_KEY
+3799,don't give up,Kimia·bo ong·ja,,,none,DUPLICATE_KEY
+3800,i believe in you,Anga nang·na bebe ra·a,,,none,DUPLICATE_KEY
+3801,i miss my family,Angni nokdang·na simbraa,,,none,DUPLICATE_KEY
+3802,come (command),Reba,,,none,DUPLICATE_KEY
+3803,came (past),Reba·aha,,,none,DUPLICATE_KEY
+3804,will come (future),Reangen,,,none,DUPLICATE_KEY
+3805,he came by bus yesterday,Bia bus o raba·a mijalo,,,none,DUPLICATE_KEY
+3806,why did you come?,Na·a maina reba·a?,,,none,DUPLICATE_KEY
+3807,how did you come?,Na·a maidake reba·a?,,,none,DUPLICATE_KEY
+3808,will you come with me?,Na·ara ang·ming rebagenma?,,,none,DUPLICATE_KEY
+3809,i shall come with you.,Ang·a nangming reangen.,,,none,DUPLICATE_KEY
+3810,he will come.,Bia rebagen.,,,none,DUPLICATE_KEY
+3811,go (command),Reangbo,,,none,DUPLICATE_KEY
+3812,he had gone.,Bia reang·aha.,,,none,DUPLICATE_KEY
+3813,he will go.,Bia reangen.,,,none,DUPLICATE_KEY
+3814,they went to the mosque.,Bisong olakiramchi re·anga.,,,none,DUPLICATE_KEY
+3815,eat (command),Chabo,,,none,DUPLICATE_KEY
+3816,he is eating an apple.,Bia apple cha·enga.,,,none,DUPLICATE_KEY
+3817,he ate an apple.,Bia apple cha·aha.,,,none,DUPLICATE_KEY
+3818,he has eaten.,Bia chamanjok.,,,none,DUPLICATE_KEY
+3819,he had eaten.,Bia chaman·aha.,,,none,DUPLICATE_KEY
+3820,he will eat.,Bia chagen.,,,none,DUPLICATE_KEY
+3821,did you have lunch?,Na·a mi chajokma?,,,none,DUPLICATE_KEY
+3822,open (command),Khulibo,,,none,DUPLICATE_KEY
+3823,opened (past),Khulia·a,,,none,DUPLICATE_KEY
+3824,will open (future),Khuligen,,,none,DUPLICATE_KEY
+3825,sit (command),Asongbo,,,none,DUPLICATE_KEY
+3826,walk (command),Roranbo / Rebo,,,none,DUPLICATE_KEY
+3827,drink (command),Ringbo,,,none,DUPLICATE_KEY
+3828,win,Am·a,,,none,DUPLICATE_KEY
+3829,run (command),Katbo,,,none,DUPLICATE_KEY
+3830,why did you sleep?,Na·a maina tusia?,,,none,DUPLICATE_KEY
+3831,how did you sleep?,Na·a maidake tusia?,,,none,DUPLICATE_KEY
+3832,he slept the whole night.,Bia walgimik tua.,,,none,DUPLICATE_KEY
+3833,in which room did you sleep?,Na·a badia room o tusia?,,,none,DUPLICATE_KEY
+3834,he wrote well in the exam.,Bia porikka namen se·ataha.,,,none,DUPLICATE_KEY
+3835,how did you write?,Na·a maidake se·a?,,,none,DUPLICATE_KEY
+3836,can you write the exam?,Na·a porikka sena mangenma?,,,none,DUPLICATE_KEY
+3837,what is written in the letter?,Chitthio mai sea dongachim?,,,none,DUPLICATE_KEY
+3838,how did you drive?,Na·a maidake sal·a?,,,none,DUPLICATE_KEY
+3839,why do you drive the car?,Na·a maina gariko sal·a?,,,none,DUPLICATE_KEY
+3840,why did she pay the money?,Bia maina tangka ko gama?,,,none,DUPLICATE_KEY
+3841,why did he bring the bag?,Bia maina bag ko raba·a?,,,none,DUPLICATE_KEY
+3842,i saw the film last week.,Ang·a ia film ko nia mija antio.,,,none,DUPLICATE_KEY
+3843,how was the journey yesterday?,Mijal songre·ara nam·a ma?,,,none,DUPLICATE_KEY
+3844,what is your name?,Nang bimung maia?,,,none,DUPLICATE_KEY
+3845,what?,Maia?,,,none,DUPLICATE_KEY
+3846,what did you do?,Na·a maiko daka?,,,none,DUPLICATE_KEY
+3847,what should i do?,Ang·a maiko dakgen?,,,none,DUPLICATE_KEY
+3848,what can i do?,Ang·a maiko dakgen?,,,none,DUPLICATE_KEY
+3849,what are the questions?,Mai·a sing·ani chim?,,,none,DUPLICATE_KEY
+3850,what were the questions?,Mai·a sing·aniara?,,,none,DUPLICATE_KEY
+3851,what is written in the letter?,Chitthio mai sea dongachim?,,,none,DUPLICATE_KEY
+3852,what you had been told?,Naa maiko aganata?,,,none,DUPLICATE_KEY
+3853,what will be the answer?,Aganchakani·ara mai ong·en?,,,none,DUPLICATE_KEY
+3854,why did you come?,Na·a maina reba·a?,,,none,DUPLICATE_KEY
+3855,why did you sleep?,Na·a maina tusia?,,,none,DUPLICATE_KEY
+3856,why did you tell him to go?,Na·a maina biko re·angna aganata?,,,none,DUPLICATE_KEY
+3857,why did he bring the bag?,Bia maina bag ko raba·a?,,,none,DUPLICATE_KEY
+3858,why did she pay the money?,Bia maina tangka ko gama?,,,none,DUPLICATE_KEY
+3859,why did they sit there?,Bisong maina uano a·songenga?,,,none,DUPLICATE_KEY
+3860,why do you drive the car?,Na·a maina gariko sal·a?,,,none,DUPLICATE_KEY
+3861,why are they late for the meeting?,Bisong maina meeting ona ru·ute reba·a?,,,none,DUPLICATE_KEY
+3862,how did you come?,Na·a maidake reba·a?,,,none,DUPLICATE_KEY
+3863,how did you sleep?,Na·a maidake tusia?,,,none,DUPLICATE_KEY
+3864,how did you drive?,Na·a maidake sal·a?,,,none,DUPLICATE_KEY
+3865,how did you write?,Na·a maidake se·a?,,,none,DUPLICATE_KEY
+3866,how many apples are there in my hand?,Ang jako baitarong apple dong·a?,,,none,DUPLICATE_KEY
+3867,how many did you take?,Na·a baitarong ra·a?,,,none,DUPLICATE_KEY
+3868,how much did he pay you?,Nangna baita tangka gama?,,,none,DUPLICATE_KEY
+3869,how much distance to go?,Baita chelkuenga?,,,none,DUPLICATE_KEY
+3870,how was the journey yesterday?,Mijal songre·ara nam·a ma?,,,none,DUPLICATE_KEY
+3871,how are you?,Na·a namengama?,,,none,DUPLICATE_KEY
+3872,which way did you come?,Na·a bagita reba·a?,,,none,DUPLICATE_KEY
+3873,which is your favourite colour?,Nang namnikgipa rong·ara mai·a?,,,none,DUPLICATE_KEY
+3874,in which room did you sleep?,Na·a badia room o tusia?,,,none,DUPLICATE_KEY
+3875,which story did you tell?,Badiya golpo ko agana?,,,none,DUPLICATE_KEY
+3876,which is the sweetest fruit?,Badia bite chibata?,,,none,DUPLICATE_KEY
+3877,which indian state has the largest population?,India ni badiya adoko mande bangbata?,,,none,DUPLICATE_KEY
+3878,where did you come from?,Na·a banoni reba·a?,,,none,DUPLICATE_KEY
+3879,where did you sleep?,Na·a bano tusia?,,,none,DUPLICATE_KEY
+3880,where should i go?,Ang·ara batchi reangbo?,,,none,DUPLICATE_KEY
+3881,whom should i contact?,Ang·ar sako contact khagen?,,,none,DUPLICATE_KEY
+3882,garo,Na·a nang pen ko on·a mangenma?,,,none,DUPLICATE_KEY
+3883,garo,Hoe mangenva.,,,none,DUPLICATE_KEY
+3884,garo,Na·a box ko dena mangenma?,,,none,DUPLICATE_KEY
+3885,garo,Na·a porikka sena mangenma?,,,none,DUPLICATE_KEY
+3886,garo,Na·ara ang·ming rebagenma?,,,none,DUPLICATE_KEY
+3887,garo,Ang·a nangming reangen.,,,none,DUPLICATE_KEY
+3888,garo,Anga asongna mangengma?,,,none,DUPLICATE_KEY
+3889,can you give me water?,Angna chi on·a mangengma?,,,none,DUPLICATE_KEY
+3890,garo,Na·a angna kasa·a ma?,,,none,DUPLICATE_KEY
+3891,garo,"Hoe, ang·a nangna kasa·a.",,,none,DUPLICATE_KEY
+3892,garo,Ang·a namengava.,,,none,DUPLICATE_KEY
+3893,garo,Hoe mangenva.,,,none,DUPLICATE_KEY
+3894,garo,Haiwa,,,none,DUPLICATE_KEY
+3895,garo,Badia / Badiya,,,none,DUPLICATE_KEY
+3896,garo,Bagita,,,none,DUPLICATE_KEY
+3897,garo,Baitarong / Baita,,,none,DUPLICATE_KEY
+3898,garo,Sako,,,none,DUPLICATE_KEY
+3899,garo,Walgimik,,,none,DUPLICATE_KEY
+3900,garo,Mija antio,,,none,DUPLICATE_KEY
+3901,garo,Ming,,,none,DUPLICATE_KEY
+3902,garo,Ru·ute,,,none,DUPLICATE_KEY
+3903,garo,Namnikgipa,,,none,DUPLICATE_KEY
+3904,garo,Chibata,,,none,DUPLICATE_KEY
+3905,garo,Bangbata,,,none,DUPLICATE_KEY
+3906,garo,Namen,,,none,DUPLICATE_KEY
+3907,win,Am·a,,,none,DUPLICATE_KEY
+3908,garo,Dena,,,none,DUPLICATE_KEY
+3909,garo,Gama,,,none,DUPLICATE_KEY
+3910,garo,Olakiram,,,none,DUPLICATE_KEY
+3911,garo,Chitthio,,,none,DUPLICATE_KEY
+3912,garo,Adoko mande,,,none,DUPLICATE_KEY
+3913,newspaper,Songbat,,,none,DUPLICATE_KEY
+3914,garo,Bilongen nambata,,,none,DUPLICATE_KEY
+3915,garo,Room,,,none,DUPLICATE_KEY
+3916,garo,Apple,,,none,DUPLICATE_KEY
+3917,story,Golpo,,,none,DUPLICATE_KEY
+3918,journey,Songre,,,none,DUPLICATE_KEY
+3919,garo,Rong,,,none,DUPLICATE_KEY
+3920,garo,Contact khagen,,,none,DUPLICATE_KEY
+3921,one person,sa sak·sa,,,none,DUPLICATE_KEY
+3922,one dog,sa mang·sa,,,none,DUPLICATE_KEY
+3923,one bird,sa mang·sa,,,none,DUPLICATE_KEY
+3924,one fish,sa mang·sa,,,none,DUPLICATE_KEY
+3925,one teacher,sa sak·sa,,,none,DUPLICATE_KEY
+3926,one student,sa sak·sa,,,none,DUPLICATE_KEY
+3927,one house,sa rang·sa,,,none,DUPLICATE_KEY
+3928,one tree,sa rang·sa,,,none,DUPLICATE_KEY
+3929,one book,sa rang·sa,,,none,DUPLICATE_KEY
+3930,one car,sa rang·sa,,,none,DUPLICATE_KEY
+3931,two persons,do·o sak·gni,,,none,DUPLICATE_KEY
+3932,two dogs,do·o mang·gni,,,none,DUPLICATE_KEY
+3933,two birds,do·o mang·gni,,,none,DUPLICATE_KEY
+3935,two teachers,do·o sak·gni,,,none,DUPLICATE_KEY
+3936,two students,do·o sak·gni,,,none,DUPLICATE_KEY
+3939,two books,do·o rang·gni,,,none,DUPLICATE_KEY
+3941,three persons,na·tok sak·gni,,,none,DUPLICATE_KEY
+3945,three teachers,na·tok sak·gni,,,none,DUPLICATE_KEY
+3946,three students,na·tok sak·gni,,,none,DUPLICATE_KEY
+3949,three books,na·tok rang·gni,,,none,DUPLICATE_KEY
+3951,four persons,brang sak·gni,,,none,DUPLICATE_KEY
+3955,four teachers,brang sak·gni,,,none,DUPLICATE_KEY
+3956,four students,brang sak·gni,,,none,DUPLICATE_KEY
+3961,five persons,bonga sak·gni,,,none,DUPLICATE_KEY
+3965,five teachers,bonga sak·gni,,,none,DUPLICATE_KEY
+3966,five students,bonga sak·gni,,,none,DUPLICATE_KEY
+3971,six persons,dokka sak·gni,,,none,DUPLICATE_KEY
+3975,six teachers,dokka sak·gni,,,none,DUPLICATE_KEY
+3976,six students,dokka sak·gni,,,none,DUPLICATE_KEY
+3981,seven persons,sni sak·gni,,,none,DUPLICATE_KEY
+3985,seven teachers,sni sak·gni,,,none,DUPLICATE_KEY
+3986,seven students,sni sak·gni,,,none,DUPLICATE_KEY
+3991,eight persons,chet sak·gni,,,none,DUPLICATE_KEY
+3995,eight teachers,chet sak·gni,,,none,DUPLICATE_KEY
+3996,eight students,chet sak·gni,,,none,DUPLICATE_KEY
+4001,nine persons,sku sak·gni,,,none,DUPLICATE_KEY
+4005,nine teachers,sku sak·gni,,,none,DUPLICATE_KEY
+4006,nine students,sku sak·gni,,,none,DUPLICATE_KEY
+4011,ten persons,chi sak·gni,,,none,DUPLICATE_KEY
+4013,ten birds,chi mang·gni,,,none,DUPLICATE_KEY
+4015,ten teachers,chi sak·gni,,,none,DUPLICATE_KEY
+4016,ten students,chi sak·gni,,,none,DUPLICATE_KEY
+4021,my house,angni house,,,none,DUPLICATE_KEY
+4022,my book,angni book,,,none,DUPLICATE_KEY
+4023,my car,angni car,,,none,DUPLICATE_KEY
+4024,my food,angni food,,,none,DUPLICATE_KEY
+4025,my water,angni water,,,none,DUPLICATE_KEY
+4026,your house,nani house,,,none,DUPLICATE_KEY
+4027,your book,nani book,,,none,DUPLICATE_KEY
+4028,your car,nani car,,,none,DUPLICATE_KEY
+4029,your food,nani food,,,none,DUPLICATE_KEY
+4030,your water,nani water,,,none,DUPLICATE_KEY
+4031,his/her house,uni house,,,none,DUPLICATE_KEY
+4032,his/her book,uni book,,,none,DUPLICATE_KEY
+4033,his/her car,uni car,,,none,DUPLICATE_KEY
+4034,his/her food,uni food,,,none,DUPLICATE_KEY
+4035,his/her water,uni water,,,none,DUPLICATE_KEY
+4036,our house,ini house,,,none,DUPLICATE_KEY
+4037,our book,ini book,,,none,DUPLICATE_KEY
+4038,our car,ini car,,,none,DUPLICATE_KEY
+4039,our food,ini food,,,none,DUPLICATE_KEY
+4040,our water,ini water,,,none,DUPLICATE_KEY
+4041,their house,bini house,,,none,DUPLICATE_KEY
+4042,their book,bini book,,,none,DUPLICATE_KEY
+4043,their car,bini car,,,none,DUPLICATE_KEY
+4044,their food,bini food,,,none,DUPLICATE_KEY
+4045,their water,bini water,,,none,DUPLICATE_KEY
+4052,one person,sa mande·sa,,,none,DUPLICATE_KEY
+4054,one dog,sa mang·sa,,,none,DUPLICATE_KEY
+4056,one bird,sa mang·sa,,,none,DUPLICATE_KEY
+4057,one fish,sa mang·sa,,,none,DUPLICATE_KEY
+4058,one teacher,sa skigipa·sa,,,none,DUPLICATE_KEY
+4060,one student,sa chik·sa,,,none,DUPLICATE_KEY
+4062,one house,sa rang·sa,,,none,DUPLICATE_KEY
+4063,one tree,sa rang·sa,,,none,DUPLICATE_KEY
+4064,one book,sa kitab·sa,,,none,DUPLICATE_KEY
+4065,one car,sa mot·sa,,,none,DUPLICATE_KEY
+4078,two persons,do·o mande·gni,,,none,DUPLICATE_KEY
+4084,two teachers,do·o skigipa·gni,,,none,DUPLICATE_KEY
+4086,two students,do·o chik·gni,,,none,DUPLICATE_KEY
+4103,three persons,na·tok mande·gni,,,none,DUPLICATE_KEY
+4107,three fish,na·tok mang·gni,,,none,DUPLICATE_KEY
+4109,three teachers,na·tok skigipa·gni,,,none,DUPLICATE_KEY
+4111,three students,na·tok chik·gni,,,none,DUPLICATE_KEY
+4128,four persons,brang mande·gni,,,none,DUPLICATE_KEY
+4134,four teachers,brang skigipa·gni,,,none,DUPLICATE_KEY
+4136,four students,brang chik·gni,,,none,DUPLICATE_KEY
+4153,five persons,bonga mande·gni,,,none,DUPLICATE_KEY
+4159,five teachers,bonga skigipa·gni,,,none,DUPLICATE_KEY
+4161,five students,bonga chik·gni,,,none,DUPLICATE_KEY
+4178,six persons,dokka mande·gni,,,none,DUPLICATE_KEY
+4184,six teachers,dokka skigipa·gni,,,none,DUPLICATE_KEY
+4186,six students,dokka chik·gni,,,none,DUPLICATE_KEY
+4203,seven persons,sni mande·gni,,,none,DUPLICATE_KEY
+4209,seven teachers,sni skigipa·gni,,,none,DUPLICATE_KEY
+4211,seven students,sni chik·gni,,,none,DUPLICATE_KEY
+4228,eight persons,chet mande·gni,,,none,DUPLICATE_KEY
+4234,eight teachers,chet skigipa·gni,,,none,DUPLICATE_KEY
+4236,eight students,chet chik·gni,,,none,DUPLICATE_KEY
+4253,nine persons,sku mande·gni,,,none,DUPLICATE_KEY
+4259,nine teachers,sku skigipa·gni,,,none,DUPLICATE_KEY
+4261,nine students,sku chik·gni,,,none,DUPLICATE_KEY
+4278,ten persons,chi mande·gni,,,none,DUPLICATE_KEY
+4284,ten teachers,chi skigipa·gni,,,none,DUPLICATE_KEY
+4286,ten students,chi chik·gni,,,none,DUPLICATE_KEY
+4739,my house,angni rang,,,none,DUPLICATE_KEY
+4741,my book,angni kitab,,,none,DUPLICATE_KEY
+4742,my car,angni mot,,,none,DUPLICATE_KEY
+4746,my water,angni chik,,,none,DUPLICATE_KEY
+4747,my food,angni chak,,,none,DUPLICATE_KEY
+4759,your house,nani rang,,,none,DUPLICATE_KEY
+4761,your book,nani kitab,,,none,DUPLICATE_KEY
+4762,your car,nani mot,,,none,DUPLICATE_KEY
+4766,your water,nani chik,,,none,DUPLICATE_KEY
+4767,your food,nani chak,,,none,DUPLICATE_KEY
+4779,his/her house,uni rang,,,none,DUPLICATE_KEY
+4781,his/her book,uni kitab,,,none,DUPLICATE_KEY
+4782,his/her car,uni mot,,,none,DUPLICATE_KEY
+4786,his/her water,uni chik,,,none,DUPLICATE_KEY
+4787,his/her food,uni chak,,,none,DUPLICATE_KEY
+4799,our house,ini rang,,,none,DUPLICATE_KEY
+4801,our book,ini kitab,,,none,DUPLICATE_KEY
+4802,our car,ini mot,,,none,DUPLICATE_KEY
+4806,our water,ini chik,,,none,DUPLICATE_KEY
+4807,our food,ini chak,,,none,DUPLICATE_KEY
+4819,their house,bini rang,,,none,DUPLICATE_KEY
+4821,their book,bini kitab,,,none,DUPLICATE_KEY
+4822,their car,bini mot,,,none,DUPLICATE_KEY
+4826,their water,bini chik,,,none,DUPLICATE_KEY
+4827,their food,bini chak,,,none,DUPLICATE_KEY
+4940,at the river,chiko,,,none,DUPLICATE_KEY
+5380,it is sunny,seng ong·a,,,none,DUPLICATE_KEY
+5384,it is hot,mek ong·a,,,none,DUPLICATE_KEY
+5385,it is cold,jak ong·a,,,none,DUPLICATE_KEY
+5661,duck,do·gep,,,none,DUPLICATE_KEY
+5663,inside,ning·o,,,none,DUPLICATE_KEY
+5670,and,aro,,,none,DUPLICATE_KEY
+5671,ask,sing·a,,,none,DUPLICATE_KEY
+5687,child,de,,,none,DUPLICATE_KEY
+5688,cloud,aram,,,none,DUPLICATE_KEY
+5690,country,a·song,,,none,DUPLICATE_KEY
+5696,decide,tik ka·ani,,,none,DUPLICATE_KEY
+5699,dry fish,na·kam,,,none,DUPLICATE_KEY
+5700,early,seng·gnang,,,none,DUPLICATE_KEY
+5701,earthquake,banggria,,,none,DUPLICATE_KEY
+5712,flower,bibal,,,none,DUPLICATE_KEY
+5714,hair,kni,,,none,DUPLICATE_KEY
+5715,room,kuturi,,,none,DUPLICATE_KEY
+5723,now,da·o,,,none,DUPLICATE_KEY
+5726,pig,wak,,,none,DUPLICATE_KEY
+5735,tea,cha,,,none,DUPLICATE_KEY
+5737,stand,chakata,,,none,DUPLICATE_KEY
+5738,speak,agana,,,none,DUPLICATE_KEY
+5740,thief,cha·ugipa,,,none,DUPLICATE_KEY
+5745,late,ja·manchaka,,,none,DUPLICATE_KEY
+5746,laugh,ka·dinga,,,none,DUPLICATE_KEY
+5747,mosquito,ganggu,,,none,DUPLICATE_KEY
+5752,time,somoi,,,none,DUPLICATE_KEY
+5753,today,da·alo,,,none,DUPLICATE_KEY
+5754,town,songjinma,,,none,DUPLICATE_KEY
+5757,village,song,,,none,DUPLICATE_KEY
+5758,wash,su·gala,,,none,DUPLICATE_KEY

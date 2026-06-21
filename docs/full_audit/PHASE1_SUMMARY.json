@@ -1,0 +1,80 @@
+[
+  {
+    "file": "master_dictionary.json",
+    "totalEntries": 7100,
+    "emptyGaro": 0,
+    "contamination": 0,
+    "doubleRaka": 0,
+    "longGaro": 0,
+    "duplicateKeyMembers": 2732,
+    "duplicateKeyGroups": 1055,
+    "verificationTagCounts": {
+      "none": 3102,
+      "VERIFIED/HIGH": 3948,
+      "variant (other)": 41,
+      "UNVERIFIED": 9
+    }
+  },
+  {
+    "file": "garo_dictionary.json",
+    "totalEntries": 5798,
+    "emptyGaro": 0,
+    "contamination": 0,
+    "doubleRaka": 3,
+    "longGaro": 0,
+    "duplicateKeyMembers": 4083,
+    "duplicateKeyGroups": 1224,
+    "verificationTagCounts": {
+      "none": 5798
+    }
+  },
+  {
+    "file": "doc7_entries.json",
+    "totalEntries": 267,
+    "emptyGaro": 0,
+    "contamination": 0,
+    "doubleRaka": 0,
+    "longGaro": 0,
+    "duplicateKeyMembers": 0,
+    "duplicateKeyGroups": 0,
+    "verificationTagCounts": {
+      "VERIFIED/HIGH": 267
+    }
+  },
+  {
+    "file": "final_entries.json",
+    "totalEntries": 4710,
+    "emptyGaro": 0,
+    "contamination": 0,
+    "doubleRaka": 1,
+    "longGaro": 0,
+    "duplicateKeyMembers": 2605,
+    "duplicateKeyGroups": 1006,
+    "verificationTagCounts": {
+      "VERIFIED/HIGH": 4557,
+      "UNVERIFIED": 75,
+      "none": 33,
+      "variant (other)": 45
+    }
+  },
+  {
+    "file": "sentences200.json",
+    "totalEntries": 200,
+    "emptyGaro": 0,
+    "contamination": 0,
+    "doubleRaka": 0,
+    "longGaro": 0,
+    "duplicateKeyMembers": 0,
+    "duplicateKeyGroups": 0,
+    "verificationTagCounts": {
+      "VERIFIED/HIGH": 200
+    }
+  },
+  {
+    "file": "src/data/corrections.json",
+    "totalEntries": 333,
+    "doubleRaka": 0,
+    "longGaro": 0,
+    "flaggedCount": 0
+  }
+]
