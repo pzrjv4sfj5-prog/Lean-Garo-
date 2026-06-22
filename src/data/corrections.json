@@ -6,7 +6,7 @@
   "gossip": "a·gan·jo·jo·na",
   "conqueror": "am·gipa",
   "conquer": "am·na",
-  "speak": "a·gan·na",
+  "speak": "Agana",
   "answer": "a·gan·chak·na",
   "begin": "a'ba·cheng·na",
   "anatomy": "sep·ak·ni gimin",
@@ -63,9 +63,9 @@
   "wait": "Damo",
   "hurry": "Tarkbo",
   "hurry up": "Tarkbo",
-  "listen": "Knachik·bo",
+  "listen": "Knachika",
   "look": "Ni·bo",
-  "run": "Katbo",
+  "run": "Kat·a",
   "be careful": "Chimsakbo",
   "be quiet": "Jrip",
   "shut up": "Jrip!",
@@ -341,5 +341,6 @@
   "so": "Uni gimin",
   "and then": "Aro",
   "but then": "Indiba",
-  "or not": "ba ong·ja"
+  "or not": "ba ong·ja",
+  "the one at home": "Noko dongenggipa"
 }

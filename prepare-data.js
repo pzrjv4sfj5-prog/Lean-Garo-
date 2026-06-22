@@ -81,10 +81,17 @@ function cleanRakka(str) {
 }
 
 function pickPrimary(values) {
-  return [...values].sort((a, b) => {
-    if (a.length !== b.length) return a.length - b.length;
-    return a.localeCompare(b);
-  })[0];
+  // IMPORTANT: this must match the OLD behavior exactly (last value wins,
+  // by file/array processing order), not a "smart" heuristic. A previous
+  // version sorted by length-then-alphabetical, which picked "i·a" as the
+  // primary for BOTH "go" and "come" — a corrupted 3-character fragment
+  // that happened to be shortest, silently replacing the correct
+  // "Re·ang·a"/"Re·ba·a" that was live and working before. Shorter is not
+  // safer; it's just shorter. VERIFIED/HIGH is also not a reliable signal
+  // (this exact "i·a" entry was tagged VERIFIED/HIGH for both Go and Come).
+  // Defaulting to "no behavior change" is the only safe automatic rule;
+  // alternates are still preserved in full for human review separately.
+  return values[values.length - 1];
 }
 
 function main() {
