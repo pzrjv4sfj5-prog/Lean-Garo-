@@ -429,8 +429,11 @@ export async function translate(input) {
   const lower = cleaned.toLowerCase().replace(/[''\u2019]/g, '');
   const words = lower.split(/\s+/);
 
-  // 1. Corrections
-  const correction = corrections?.[lower] || corrections?.[cleaned];
+  // 1. Corrections — check cleaned (apostrophe-preserving) form FIRST.
+  // Previously checked lower (apostrophe-stripped) first, which meant a
+  // stale no-apostrophe duplicate key in corrections.json could silently
+  // shadow a correct apostrophe-form entry.
+  const correction = corrections?.[cleaned] || corrections?.[lower];
   if (correction) return { garo: correction, method: 'correction', confidence: 1.0 };
 
   // 1.5 Phrase map
@@ -487,7 +490,12 @@ export async function translate(input) {
     let sm = lookupGaro(stripped);
     if (sm) {
       if (isNegativeShortcut) {
-        sm = /·a$/.test(sm) ? sm + '·gija' : sm;
+        // Broadened from /·a$/ to /a$/ — many present-tense words don't
+        // have a raka immediately before the final 'a' (e.g. "good" ->
+        // "Nama", no raka at all, vs "eat" -> "cha·a"). The 'a' ending
+        // itself is the actual present-tense marker; raka is a separate,
+        // inconsistent stylistic feature of some words, not all.
+        sm = /a$/i.test(sm) ? sm + '·gija' : sm;
       }
       return { garo: sm, method: 'stopword-stripped', confidence: 0.88 };
     }
