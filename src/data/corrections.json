@@ -75,8 +75,8 @@
   "market": "bajal",
   "ant": "Smilchak",
   "ants": "Smilchak",
-  "let's go to market": "Hai bajal re·naha",
-  "lets go to market": "Hai bajal re·naha",
+  "let's go to market": "Hai Bajal Anti Re·na",
+  "lets go to market": "Hai Bajal Anti Re·na",
   "let us go to market": "Hai Bajal Anti Re·na",
   "let's go to the market": "Hai Bajal Anti Re·na",
   "lets go to the market": "Hai Bajal Anti Re·na",
@@ -354,5 +354,8 @@
   "let us sleep": "Hai tusina",
   "let us work": "Hai dakha",
   "did you go to the market": "Na·a bajalchi re·angama?",
-  "eaten": "cha·jok"
+  "eaten": "cha·jok",
+  "did you eat orange": "Na·a na·rang cha·ama?",
+  "did you eat apple": "Na·a apple cha·ama?",
+  "he didn't eat": "Ua cha·jaha"
 }
