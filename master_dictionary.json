@@ -47837,5 +47837,17 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/native-speaker"
+  },
+  {
+    "english": "see",
+    "garo": "nia",
+    "category": "verbs",
+    "notes": "variant/VERIFIED/HIGH — native speaker (Thangseng), WhatsApp 2026-05-10, confirms nia as valid alternate to Nika/nik·a"
+  },
+  {
+    "english": "to see",
+    "garo": "nia",
+    "category": "verbs",
+    "notes": "variant/VERIFIED/HIGH — native speaker (Thangseng), WhatsApp 2026-05-10, confirms nia as valid alternate to nik·a"
   }
 ]
