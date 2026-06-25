@@ -33,7 +33,7 @@ export function toGaroNumber(n) {
   }
 
   if (n >= 11 && n <= 19) {
-    return "chi" + BASE[n - 10];
+    return "chiking·ma·" + BASE[n - 10];
   }
 
   if (n >= 20 && n <= 99) {
