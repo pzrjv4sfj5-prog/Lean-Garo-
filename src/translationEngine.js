@@ -420,6 +420,67 @@ const PROGRESSIVE_MAP = {
   'singing':'bitenga','dancing':'ruruaenga','helping':'betoienga',
 };
 
+// Connective words this function knows how to split on, with their
+// Garo translations (sourced from corrections.json — these are the
+// same native-speaker-verified words already used as bare-word
+// translations: and=Aro, but=Indiba, or=ba, if=Ode, so=Uni gimin).
+//
+// Two structural patterns:
+//   - MID-JOINING (and/but/or/so): "[clause 1] CONNECTIVE [clause 2]"
+//   - LEADING (if): "if [clause 1] [clause 2]"
+//
+// Narrow, additive feature — only activates when a known connective
+// word is found, otherwise passes through to normal single-clause
+// translate() untouched. Does NOT modify analyzeGrammar or any shared
+// parsing logic. Each clause is translated independently via the
+// existing translate() pipeline then joined.
+const MID_JOIN_CONNECTIVES = {
+  'and': 'Aro',
+  'but': 'Indiba',
+  'or': 'ba',
+  'so': 'Uni gimin',
+};
+const LEADING_CONNECTIVES = {
+  'if': 'Ode',
+};
+
+async function translateMultiClause(input) {
+  const words = input.trim().split(/\s+/);
+  const lowerWords = words.map(w => w.toLowerCase().replace(/[^a-z']/g, ''));
+
+  for (const [word, garoWord] of Object.entries(LEADING_CONNECTIVES)) {
+    if (lowerWords[0] === word) {
+      const rest = words.slice(1).join(' ');
+      const pronouns = ['i', 'you', 'he', 'she', 'we', 'they', 'it'];
+      const restWords = rest.split(/\s+/);
+      let splitIdx = -1;
+      for (let i = 1; i < restWords.length; i++) {
+        const w = restWords[i].toLowerCase().replace(/[^a-z']/g, '');
+        if (pronouns.includes(w)) { splitIdx = i; break; }
+      }
+      if (splitIdx === -1) return null;
+      const clause1 = restWords.slice(0, splitIdx).join(' ');
+      const clause2 = restWords.slice(splitIdx).join(' ');
+      const [r1, r2] = await Promise.all([translate(clause1), translate(clause2)]);
+      if (r1.garo.includes('[UNKNOWN]') || r2.garo.includes('[UNKNOWN]')) return null;
+      return { garo: `${garoWord} ${r1.garo}, ${r2.garo}`, method: 'multi-clause-leading', confidence: 0.7 };
+    }
+  }
+
+  for (const [word, garoWord] of Object.entries(MID_JOIN_CONNECTIVES)) {
+    const idx = lowerWords.indexOf(word);
+    if (idx > 0 && idx < words.length - 1) {
+      const clause1 = words.slice(0, idx).join(' ');
+      const clause2 = words.slice(idx + 1).join(' ');
+      const [r1, r2] = await Promise.all([translate(clause1), translate(clause2)]);
+      if (r1.garo.includes('[UNKNOWN]') || r2.garo.includes('[UNKNOWN]')) return null;
+      return { garo: `${r1.garo} ${garoWord} ${r2.garo}`, method: 'multi-clause-join', confidence: 0.7 };
+    }
+  }
+
+  return null;
+}
+
 export async function translate(input) {
   if (!input || typeof input !== 'string') return { garo: '', method: 'empty', confidence: 0 };
 
@@ -474,6 +535,13 @@ export async function translate(input) {
     const w = lookupGaro(words[0]);
     if (w) return { garo: w, method: 'exact-word', confidence: 0.95 };
   }
+
+  // 3.5 Multi-clause connective splitting ("X and Y", "if X Y", etc.)
+  // Placed AFTER corrections/phrase-map/single-word checks so already-
+  // verified sentences containing connective words are never hijacked —
+  // they match as exact phrases above and never reach this step.
+  const multiClauseResult = await translateMultiClause(cleaned);
+  if (multiClauseResult) return multiClauseResult;
 
   // 4. Stop-word strip
   // Negation-aware: this step previously had zero awareness of negation
