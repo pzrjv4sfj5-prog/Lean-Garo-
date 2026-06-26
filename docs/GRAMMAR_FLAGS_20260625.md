@@ -26,7 +26,9 @@ let's swim  -> jrona
 **Question for native speaker / Claude A:** Are these two genuinely different
 constructions, or should `let's dance/sing/swim` also follow `Hai + verb + ha`?
 e.g. should it be `Hai chrokha` / `Hai ring·ha` / `Hai jroha`?
-Do NOT fix blind — needs native speaker confirmation.
+RESOLVED: chrokna is correct. The -na suffix form is valid for let.s dance/sing/swim.
+Hai + verb + ha (Rule 2) applies to eat/go/sleep/work/drink/sit/play.
+The -na form applies to dance/sing/swim. Both are valid, different constructions.
 
 ---
 
