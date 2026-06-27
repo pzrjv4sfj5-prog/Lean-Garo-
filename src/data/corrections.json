@@ -466,9 +466,9 @@
   "wingless bird": "Granggri do·o",
   "won't you come": "Na·a re·bajawa ma?",
   "wrist": "jak gito",
-  "let's dance": "chrokna",
-  "let's sing": "ring·na",
-  "let's swim": "jrona",
+  "let's dance": "Hai chrokna",
+  "let's sing": "Hai ring·na",
+  "let's swim": "Hai jrona",
   "we": "an·ching",
   "song": "git",
   "in the water": "chio",
@@ -556,5 +556,8 @@
   "green": "tangsek",
   "i only saw one person": "anga saksakosan nikaha",
   "only one person": "saksakosan",
-  "only": "saksakosan"
+  "only": "saksakosan",
+  "ancient people": "chengoni mande",
+  "ancient people believe in songsarek": "Chengoni mande Songsareko bebe ra·a",
+  "are you taken": "na·a sakoba ka·a dongama?"
 }
