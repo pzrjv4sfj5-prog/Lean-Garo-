@@ -1,95 +1,138 @@
 # GARO GRAMMAR REFERENCE
 _Compiled by Claude B from native-speaker sessions with Thangseng_
-_Last updated: 2026-06-28_
-_Status: All rules native-speaker confirmed unless marked TODO_
+_Last updated: 2026-06-28 — HEAD: 749c10f_
+_All rules native-speaker confirmed unless marked TODO_
 
 ---
 
 ## 1. WORD ORDER
 
-Garo is **SOV** — Subject + Object + Verb.
+Garo is **SOV** — Subject + Object + Verb. Questions add `-ma` at end; word order unchanged.
 
 | English | Garo |
 |---|---|
 | I eat food | Anga Mi cha·a |
 | Did you eat food? | Na·a Mi Cha·aha ma? |
 | He saw me | Ua angko Nikaha |
+| What are you saying? | Maiko aganenga? |
 
-Questions: add `-ma` at end. Word order unchanged.
+**Subjectless questions:** Subject pronoun is optional when inferable. Both forms correct:
+- `Maiko aganenga?` ✅ and `Na·a Maiko aganenga?` ✅ = What are you saying?
 
 ---
 
 ## 2. PRONOUN SYSTEM
 
-### Roots and case suffixes
+### Roots
+Every pronoun has a root. Case suffixes attach to the root.
 
-| Case | 1st sg (ang·) | 1st pl (An·ching) | 2nd (nang·) | 3rd formal (u) | 3rd informal (bi) |
-|---|---|---|---|---|---|
-| Subject | anga | An·ching | na·a | ua | bia |
-| Object | angko | An·ching·ko | nang·ko | uko | biko |
-| Possessive | ang·ni | An·ching·ni | nang·ni | uni | bini |
-| For/dative | angna | An·ching·na | nang·na | una | bina |
-| With/comitative | ango | An·ching·o | nang·o | uo | bio |
-| To (locative) | angchi | — | — | — | — |
+| Person | Root | Note |
+|---|---|---|
+| 1st singular | `ang·` | I / me |
+| 1st plural | `An·ching` | we / us (root = full word) |
+| 2nd singular | `nang·` | you |
+| 3rd formal | `u` | he / she / it |
+| 3rd informal | `bi` | he / she (casual speech) |
+
+### Case suffix table
+
+| Case | Suffix | 1st sg | 1st pl | 2nd | 3rd formal | 3rd informal |
+|---|---|---|---|---|---|---|
+| Subject | +a | anga | An·ching | na·a | ua | bia |
+| Object | +ko | angko | An·ching·ko | nang·ko | uko | biko |
+| Possessive | +ni | ang·ni | An·ching·ni | nang·ni | uni | bini |
+| For/dative | +na | angna | An·ching·na | nang·na | una | bina |
+| With/comitative | +o | ango | An·ching·o | nang·o | uo | bio |
+| To (locative) | +chi | angchi | — | — | — | — |
 
 ### Formality
-- `na·a` = you (formal/neutral) — use as default
-- `na·ara` = you (informal, `-ra` suffix) — both correct, context-dependent
-- `ua` = he/she (formal) — default
-- `bia` = he/she (informal)
+- `na·a` = you, formal/neutral — **engine default**
+- `na·ara` = you, informal (`-ra` suffix) — both correct, context-dependent
+- `ua` = he/she, formal — **engine default**
+- `bia` = he/she, informal
 
 ### Confirmed sentences
-- `Na·a angko Nikaha ma?` = Did you see me?
-- `Anga uko Nikaha` = I saw him/her
-- `Ua angko Nikaha` = He/she saw me
-- `Bia una aganaha` = He spoke to her (informal)
-- `nang·ni ming` = your name
-- `Angchi re·babo` = Come to me
+```
+Na·a angko Nikaha ma?   = Did you see me?
+Anga uko Nikaha         = I saw him/her
+Ua angko Nikaha         = He/she saw me
+Na·a uko Nikaha ma?     = Did you see him/her?
+Bia una aganaha         = He spoke to her (informal 3rd)
+nang·ni ming            = your name
+Angchi re·babo          = Come to me
+```
 
 ---
 
-## 3. VERB ROOTS AND TENSE SUFFIXES
+## 3. VERB MORPHOLOGY
 
-### Key principle
-> "The Garo language relies on suffixes a lot. In fact, the tense of a sentence is totally dependent on the suffixes added to the verb."
+### Core principle
+> "The Garo language relies on suffixes a lot. The tense of a sentence is totally dependent on the suffixes added to the verb. It's the morphology of words that is difficult."
+— Thangseng
 
-### Raka rule
-The raka (`·`) is part of the **root**, not the suffix. Suffixes never carry raka.
-If root has raka → ALL inflected forms have it. If not → none do.
+### Raka rule (CRITICAL)
+- Raka (`·`) is part of the **root only** — suffixes NEVER carry raka
+- If root has raka → every inflected form inherits it
+- If root has no raka → no form ever gets one
 
 | Root | Raka? | Meaning |
 |---|---|---|
-| `cha·` | ✅ yes | eat |
-| `kat` | ❌ no | run |
-| `ring` | ❌ no | drink |
-| `tusi` | ❌ no | sleep |
-| `agan`/`agana` | ❌ no | speak |
-| `nam` | ❌ no | good |
-| `re·` | ✅ yes | go/walk |
-| `on·` | ✅ yes | give |
-| `ra·` | ✅ yes | take |
+| `cha·` | ✅ | eat |
+| `re·` | ✅ | go/walk |
+| `on·` | ✅ | give |
+| `ra·` | ✅ | take |
+| `kat` | ❌ | run |
+| `ring` | ❌ | drink |
+| `tusi` | ❌ | sleep |
+| `agan` | ❌ | speak |
+| `nam` | ❌ | good |
+| `wa` | ❌ | rain (verb) |
+| `dong` | ❌ | stay |
+| `bilak` | ❌ | strong |
 
-### Tense suffix table
+### Tense / mood suffix table
 
-| Suffix | Function | cha· example | kat example |
+| Suffix | Function | cha· (raka root) | kat (no raka) |
 |---|---|---|---|
-| `+a` | present/root | cha·a | kata |
+| `+a` | present / root form | cha·a | kata |
 | `+aha` | past | cha·aha | kataha |
 | `+jok` | perfect (has done) | cha·jok | katjok |
 | `+enga` | progressive (doing) | cha·enga | katenga |
 | `+gen` | future (will do) | cha·gen | katgen |
 | `+bo` | imperative (do!) | cha·bo | katbo |
 | `+na` | infinitive / future let's | cha·na | katna |
-| `+naha` | imminent let's (about to) | cha·naha | katnaha |
+| `+naha` | imminent let's | cha·naha | katnaha |
 | `+ja` | negation predicative | cha·ja | katja |
+| `+ode` | if-clause (conditional) | cha·ode | katode |
 | `+chi+na` | subjunctive (let X do) | cha·china | — |
 
-### Hai + verb constructions
-- `Hai + verb·na` = let's [do] (future, not imminent): `Hai knalo momo cha·na` = let's eat momo tomorrow
-- `Hai + verb·naha` = let's [do] (imminent, about to start): `Hai cha·naha` = let's eat (food is ready)
-- These are NOT interchangeable — `naha` for imminent only
+### Hai + verb — let's constructions
+- `Hai + verb·na` = let's do (future, not imminent): `Hai knalo momo cha·na` = let's eat momo tomorrow
+- `Hai + verb·naha` = let's do (imminent, about to start): `Hai cha·naha` = let's eat (food is on the table)
+- **NOT interchangeable** — `naha` = imminent only. `Hai knalo momo cha·naha` = WRONG
 
-### Confirmed verb forms in corrections.json
+### If-clauses — `-ode`
+`-ode` attaches to verb stem. Raka carries through.
+
+```
+cha· + ode = cha·ode    (if eat)
+wa   + ode = waode      (if rains)
+Na·a cha·ode, bilakgen          = If you eat, you will be strong
+Mikode cha·ode, bilakgen        = If you eat rice, you will be strong
+Mikka waode noko donggen        = If it rains, we will stay at home
+```
+
+### Subjunctive — `chi` between root and suffix
+`chi` placed between root and suffix = "let [subject] do":
+```
+cha· + chi + na = cha·china
+Ua cha·china    = Let him/her eat
+```
+
+### Noun derived from verb root
+`cha·` (eat root) + `u` → `cha·u` = thief
+
+### Confirmed verb inventory
 ```
 eat=cha·a, ate=cha·aha, eating=cha·enga, has eaten=cha·jok
 drink=Ringa, drank=ring·aha, drinking=ringenga
@@ -98,33 +141,38 @@ see=Nika, saw=Nikaha, seeing=nikenga
 speak=Agana, spoke=aganaha
 go=re·ang·a, went=re·anga, going=re·angenga
 come=re·ba·a, came=re·ba·aha, coming=re·baenga
-give=on·a, gave=on·aha
-take=ra·a
+give=on·a, gave=on·aha | take=ra·a
 sleep=Tusia, slept=tus·aha, sleeping=tusenga
 work=Dak·a, worked=dak·aha, working=dakenga
-dance=Chroka, sing=ring·a, swim=jrona
-stand=Chakata, sit=Asong·a
-laugh=ka·ding·a, cry=Grap·a
+dance=Chroka | sing=ring·a | swim=jrona
+stand=Chakata | sit=Asong·a
+laugh=ka·ding·a | cry=Grap·a
+stay=donga | rain (v)=wa, waode=if rains
 ```
 
 ---
 
-## 4. NOUN MORPHOLOGY
+## 4. NOUN SUFFIXES
 
-### Noun from verb root
-`cha·` (eat) + `u` → `cha·u` = thief
+### Accusative `-ko` (object marker)
+`ko` marks noun as object of verb. No independent meaning.
+- `mi` (rice) + `ko` = `miko` (rice as object)
+- Same suffix as pronoun object: `ang+ko=angko`, `nang+ko=nang·ko`, `u+ko=uko`
 
-### Suffix `chi` on nouns — locative and agentive
+### Prepositional `-o` (locative: at/in/on)
+- `nok` (home) + `o` = `noko` = at home
+- Same suffix as pronoun comitative: `ang+o=ango`, `nang+o=nang·o`
 
-**Locative** ("to [place/person]"):
-- `ang + chi` = `angchi` = to me → `Angchi re·babo` = Come to me
-- `dokan + chi` = `dokanchi` = to the shop → `Dokanchi re·angbo` = Go to the shop
+### Directional `-chi` (to / with)
+**Locative** — "to [place/person]":
+- `angchi` = to me → `Angchi re·babo` = Come to me
+- `dokanchi` = to the shop → `Dokanchi re·angbo` = Go to the shop
 
-**Agentive** ("with [instrument]"):
-- `atte + chi` = `attechi` = with a dao → `Attechi den·a` = Cut with a dao
-- `gari + chi` = `garichi` = with a car → `Garichi salgaka` = Hit with a car
+**Agentive** — "with [instrument]":
+- `attechi` = with a dao → `Attechi den·a` = Cut with a dao
+- `garichi` = with a car → `Garichi salgaka` = Hit with a car
 
-### Classifier system (counting nouns)
+### Classifiers (counting nouns)
 Format: `[noun] [classifier·number]`
 
 | Classifier | Category | Example |
@@ -136,178 +184,111 @@ Format: `[noun] [classifier·number]`
 | `ge·` | general fallback | `mewa ge·bri` = four fruits |
 | `brong·` | long objects (sticks, pens) | — |
 
-Number suffixes: sa(1) gni(2) gittam(3) bri(4) bonga(5) dok(6) sni(7) chet(8) sku(9) chiking(10)
-Teens: Chi·sa(11) Chi·gni(12) ... Chi·sku(19)
-20+: Kolgrik·sa(21) Kolgrik·gni(22) etc — raka joins all parts
+Number suffixes: `sa`(1) `gni`(2) `gittam`(3) `bri`(4) `bonga`(5) `dok`(6) `sni`(7) `chet`(8) `sku`(9) `chiking`(10)
+Teens: `Chi·sa`(11) `Chi·gni`(12) ... `Chi·sku`(19)
+20+: `Kolgrik·sa`(21) `Kolgrik·gni`(22) — raka joins ALL parts including multi-word numbers
 
 ---
 
-## 5. ADJECTIVE PLACEMENT AND NEGATION
+## 5. ADJECTIVES
 
-### Predicative (after noun, no `-gipa`)
+### Predicative (after noun — no `-gipa`)
 `noun + adjective` → `Gari sila` = the car is beautiful
 
-### Attributive (before noun, with `-gipa`)
+### Attributive (before noun — with `-gipa`)
 `adjective+gipa + noun` → `Silgipa gari` = beautiful car
 
 ### Negation: `ja` vs `gija`
 
-| Form | Placement | Example |
+| Form | Position rule | Example |
 |---|---|---|
 | `namja` | after noun ONLY | `mande namja` ✅ = the person is bad |
-| `namgija` | before OR after noun | `namgija mande` ✅ OR `mande namgija` ✅ |
-| `namja mande` | ❌ WRONG | Never before noun |
+| `namgija` | before OR after noun | `namgija mande` ✅ `mande namgija` ✅ |
+| `namja mande` | ❌ NEVER before noun | WRONG |
 
 ---
 
-## 6. SUBJUNCTIVE — `chi` in verbs
+## 6. QUESTION WORDS (native-confirmed)
 
-`chi` placed between verb root and suffix = "let [subject] do":
-- `cha· + chi + na` = `cha·china` = let (someone) eat
-- `Ua cha·china` = Let him/her eat
+| English | Garo | Note |
+|---|---|---|
+| who | sawa | |
+| what | Mai / Maia / Maiko | Maiko = what (accusative) |
+| why | Maina | NOT Maini |
+| where | bano | |
+| when | Basaku | |
+| how | — | TODO |
+
+### `maini gimin` — confirmed valid construction
+NOT wrong categorically — correct in specific contexts:
+- `Na·a maini gimin bel·belenga` ✅ = What are you yapping about
+- But WRONG for lying/crying/saying — those use `maina` or `Maiko`
 
 ---
 
-## 7. KEY VOCABULARY (native-confirmed)
+## 7. KEY VOCABULARY
 
-### Core words
+### Core
 ```
-yes=Am, no=Ihing, good=Nama, bad=namja
-and=Aro, but=Indiba, or=ba, if=Ode, so=Uni gimin
-when=Basaku, why=maini, who=sawa, where=bano, what=Mai/Maia
-I/me=anga/angko, you=na·a/nang·ko, he/she=ua/uko, we=An·ching
-very=namen, only=saksakosan, long=ro·a
+yes=Am | no=Ihing | good=Nama | bad=namja
+and=Aro | but=Indiba | or=ba | if=Ode | so=Uni gimin
+very=namen | only=saksakosan | long=ro·a | strong=bilak
+thief=cha·u | rain (noun)=mikka | home=nok | at home=noko
 ```
 
 ### Animals
 ```
-dog=achak, cat=menggo, cow=matchu, goat=dobok, pig=wak
-bird=do·o, fish=na·tok, elephant=buring·o
+dog=achak | cat=menggo | cow=matchu | goat=dobok | pig=wak
+bird=do·o | fish=na·tok | elephant=buring·o
 ```
 
-### Places
+### Places & things
 ```
-forest=mongma, market=bajal, shop=dokan
+forest=mongma | market=bajal | shop=dokan | food=mi | rice=mi
 ```
 
-### Common phrases
+### Common sentences
 ```
-how are you=Na·a namenga ma?
-what are you doing=Na·a Mai Dakenga
-did you eat food=Na·a Mi Cha·aha ma?
-come to me=Angchi re·babo
-go to the shop=Dokanchi re·angbo
-let him eat=Ua cha·china
-thief=cha·u
-sounds good=knatoa
+how are you              = Na·a namenga ma?
+what are you doing       = Na·a Mai Dakenga
+what are you saying      = Maiko aganenga?
+did you eat food         = Na·a Mi Cha·aha ma?
+if you eat you will be strong  = Na·a cha·ode, bilakgen
+if it rains we stay home = Mikka waode noko donggen
+come to me               = Angchi re·babo
+go to the shop           = Dokanchi re·angbo
+let him eat              = Ua cha·china
+sounds good              = knatoa
 ```
 
 ---
 
-## 8. OPEN ITEMS FOR ENGINE (Claude A priority list)
+## 8. ENGINE PRIORITY LIST (Claude A)
 
-| Priority | Item | Notes |
+| # | Item | Detail |
 |---|---|---|
-| 1 | STOP_WORDS — remove question words | when/why/who/what/where stripped, breaking sentences |
-| 2 | STOP_WORDS — remove connectives | and/but/or/if/so stripped, biggest quality gap |
-| 3 | Future tense `-gen` | `cha·gen`, `katgen` — not yet in engine |
-| 4 | Subjunctive `chi` | `Ua cha·china` pattern not handled |
-| 5 | `ja` vs `gija` placement enforcement | Engine must block `ja` before noun |
-| 6 | Locative/agentive `chi` on nouns | `angchi`, `dokanchi` patterns |
-| 7 | Pronoun case switching | Object vs subject form in assembly |
-| 8 | Location-noun-dropped bug | `docs/BUG_location_noun_dropped.md` |
-| 9 | `getCategories()` returns 1 category | Stray numeric keys in compiled_dict.json |
-| 10 | `server.js` dead code | Delete or mark clearly |
+| 1 | **STOP_WORDS — question words** | Remove when/why/who/what/where/how — engine strips them, breaking sentences |
+| 2 | **STOP_WORDS — connectives** | Remove and/but/or/if/so — biggest quality gap in full sentences |
+| 3 | **Future tense `-gen`** | `cha·gen`=will eat, `katgen`=will run — not yet in engine |
+| 4 | **If-clause `-ode`** | `Na·a cha·ode, bilakgen` — new conditional mood, now fully documented |
+| 5 | **Subjunctive `chi`** | `Ua cha·china` = let him eat — needs new assembly rule |
+| 6 | **Accusative `-ko` on nouns** | `miko`=rice-as-object, distinct from base `mi` |
+| 7 | **Locative/agentive `-chi`** | `angchi`=to me, `garichi`=with car |
+| 8 | **Pronoun case in assembly** | Use `uko` not `ua` when 3rd person is object |
+| 9 | **`ja` vs `gija` enforcement** | Block `ja` before noun |
+| 10 | **Location-noun-dropped bug** | `docs/BUG_location_noun_dropped.md` |
+| 11 | **`getCategories()` broken** | Returns 1 category — stray numeric keys in compiled_dict.json |
+| 12 | **`server.js` dead code** | Confirmed dead by Claude C — delete or mark |
 
 ---
 
 ## 9. KNOWN DATA ISSUES
 
-- 1,055 duplicate-key groups in master_dictionary.json — needs human review
-- VERIFIED/HIGH tag unreliable — never auto-trust as tiebreaker
-- `seen` (past participle of see) — raka status unconfirmed, left as `nik·aha` pending
+- 1,055 duplicate-key groups in `master_dictionary.json` — needs human review, not automatable
+- VERIFIED/HIGH tag unreliable — confirmed wrong on "current" and "good" — never auto-trust
+- `seen` (past participle) — raka status unconfirmed, currently `nik·aha`, flagged pending
 
 ---
 
-_This document supersedes scattered grammar notes in individual GRAMMAR_*.md files._
-_Single source of truth for Garo grammar as understood by the engine team._
-_Update this file whenever Thangseng confirms new rules._
-
----
-
-## 10. SUBJECTLESS QUESTIONS
-
-Native-speaker confirmed: subject pronoun is optional in questions.
-Both forms are correct — shorter form is natural in everyday speech.
-
-| With subject | Without subject | Meaning |
-|---|---|---|
-| `Na·a Maiko aganenga?` | `Maiko aganenga?` | What are you saying? |
-| `Na·ara Maiko aganenga?` | `Maiko aganenga?` | What are you saying? (informal) |
-
-Engine default: use subjectless form when question word is present and subject is inferable.
-
----
-
-## 11. `maini gimin` — confirmed valid construction
-
-Native-speaker confirmed 2026-06-28:
-`maini gimin` is a genuine Garo construction — correct in "what are you yapping about":
-`Na·a maini gimin bel·belenga` ✅
-
-It was NOT correct in "lying/crying/saying" — those needed different structures:
-- `why are you lying` → `Na·a maina tol·enga?` (not maini gimin)
-- `why are you crying` → `Na·a maina grapenga?` (not maini gimin)
-- `what are you saying` → `Maiko aganenga?` (not maini gimin)
-
-**Conclusion:** `maini gimin` is valid — just context-specific. Not categorically wrong.
-
----
-
-## 12. IF-CLAUSES — `-ode` suffix
-
-Source: Thangseng (native speaker), 2026-06-28
-Status: CONFIRMED
-
-### Rule
-`-ode` attaches directly to the verb stem (root): `verb·root + ode`
-Raka in root carries through: `cha· + ode` = `cha·ode`
-
-### Pattern
-`[Subject] [verb·ode], [result clause]`
-
-| Example | Breakdown | Meaning |
-|---|---|---|
-| `cha·ode` | cha· + ode | if (someone) eats |
-| `Na·a cha·ode` | you + if-eat | if you eat |
-| `Anga cha·ode` | I + if-eat | if I eat |
-| `waode` | wa + ode | if it rains |
-
-### Full sentences
-- `Na·a cha·ode, bilakgen` = If you eat, you will be strong
-- `Mikode cha·ode, bilakgen` = If (you) eat rice, you will be strong
-- `Mikka waode noko donggen` = If it rains, we will stay at home
-
-### New vocab confirmed
-| English | Garo | Notes |
-|---|---|---|
-| rain (noun) | mikka | |
-| rain (verb root) | wa | derived from waa = to rain |
-| strong | bilak | + gen = bilakgen (will be strong) |
-| stay | dong | + gen = donggen (will stay) |
-| at home | noko | nok + o (prepositional suffix) |
-| rice (accusative) | miko | mi + ko (accusative suffix) |
-
-### Accusative suffix `-ko`
-`ko` = accusative marker (object of verb). No independent meaning.
-- `mi` (rice) + `ko` = `miko` (rice, as object)
-- Same `ko` as pronoun object suffix: `ang+ko=angko`, `nang+ko=nang·ko`, `u+ko=uko`
-
-### Prepositional suffix `-o`
-`o` = at/in/on (locative)
-- `nok` (home) + `o` = `noko` (at home)
-- Same pattern as pronoun comitative: `ang+o=ango`, `nang+o=nang·o`
-
-### Engine note (Claude A)
-`-ode` if-clause: new tense/mood suffix to add to engine.
-Pattern: strip English "if", find verb, apply `·ode` to root, place at start of sentence.
+_Single source of truth. Supersedes all individual GRAMMAR_*.md files._
+_Update here whenever Thangseng confirms new rules._
