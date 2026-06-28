@@ -106,7 +106,7 @@
   "her name": "ua·ni ming",
   "his name": "ua·ni ming",
   "our home": "nija·ni nok",
-  "at home": "nok·o",
+  "at home": "noko",
   "in the market": "bajal·o",
   "at market": "bajal·o",
   "at church": "gilja·nok·o",
@@ -597,5 +597,13 @@
   "go to the shop": "Dokanchi re·angbo",
   "let him eat": "Ua cha·china",
   "let her eat": "Ua cha·china",
-  "cut with a dao": "Attechi den·a"
+  "cut with a dao": "Attechi den·a",
+  "rain": "mikka",
+  "strong": "bilak",
+  "stay": "donga",
+  "if you eat": "Na·a cha·ode",
+  "if i eat": "Anga cha·ode",
+  "if you eat you will be strong": "Na·a cha·ode, bilakgen",
+  "if it rains we will stay at home": "Mikka waode noko donggen",
+  "if you eat rice you will be strong": "Mikode cha·ode, bilakgen"
 }

@@ -261,3 +261,53 @@ It was NOT correct in "lying/crying/saying" — those needed different structure
 - `what are you saying` → `Maiko aganenga?` (not maini gimin)
 
 **Conclusion:** `maini gimin` is valid — just context-specific. Not categorically wrong.
+
+---
+
+## 12. IF-CLAUSES — `-ode` suffix
+
+Source: Thangseng (native speaker), 2026-06-28
+Status: CONFIRMED
+
+### Rule
+`-ode` attaches directly to the verb stem (root): `verb·root + ode`
+Raka in root carries through: `cha· + ode` = `cha·ode`
+
+### Pattern
+`[Subject] [verb·ode], [result clause]`
+
+| Example | Breakdown | Meaning |
+|---|---|---|
+| `cha·ode` | cha· + ode | if (someone) eats |
+| `Na·a cha·ode` | you + if-eat | if you eat |
+| `Anga cha·ode` | I + if-eat | if I eat |
+| `waode` | wa + ode | if it rains |
+
+### Full sentences
+- `Na·a cha·ode, bilakgen` = If you eat, you will be strong
+- `Mikode cha·ode, bilakgen` = If (you) eat rice, you will be strong
+- `Mikka waode noko donggen` = If it rains, we will stay at home
+
+### New vocab confirmed
+| English | Garo | Notes |
+|---|---|---|
+| rain (noun) | mikka | |
+| rain (verb root) | wa | derived from waa = to rain |
+| strong | bilak | + gen = bilakgen (will be strong) |
+| stay | dong | + gen = donggen (will stay) |
+| at home | noko | nok + o (prepositional suffix) |
+| rice (accusative) | miko | mi + ko (accusative suffix) |
+
+### Accusative suffix `-ko`
+`ko` = accusative marker (object of verb). No independent meaning.
+- `mi` (rice) + `ko` = `miko` (rice, as object)
+- Same `ko` as pronoun object suffix: `ang+ko=angko`, `nang+ko=nang·ko`, `u+ko=uko`
+
+### Prepositional suffix `-o`
+`o` = at/in/on (locative)
+- `nok` (home) + `o` = `noko` (at home)
+- Same pattern as pronoun comitative: `ang+o=ango`, `nang+o=nang·o`
+
+### Engine note (Claude A)
+`-ode` if-clause: new tense/mood suffix to add to engine.
+Pattern: strip English "if", find verb, apply `·ode` to root, place at start of sentence.
