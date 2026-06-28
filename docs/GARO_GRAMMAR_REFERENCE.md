@@ -1,456 +1,234 @@
-# Garo Grammar — Complete Reference
-_Compiled by Claude B from academic and native sources_
-_Sources: Burling Vol.I & II (2003), Phillips (1904), languagesgulper.com, Wiktionary, dimasathairili.com_
-_Last updated: 2026-06-14_
+# GARO GRAMMAR REFERENCE
+_Compiled by Claude B from native-speaker sessions with Thangseng_
+_Last updated: 2026-06-28_
+_Status: All rules native-speaker confirmed unless marked TODO_
 
 ---
 
-## 1. LANGUAGE OVERVIEW
+## 1. WORD ORDER
 
-- **Family:** Sino-Tibetan → Tibeto-Burman → Bodo-Garo (closely related to Bodo, Dimasa)
-- **Word order:** SOV (Subject → Object → Verb). OSV also acceptable via case markers. **Verb ALWAYS final.**
-- **Tones:** None
-- **Script:** Roman (A'chik/A'we dialect); Bengali script in Bangladesh
-- **Key dialects:** A'we (standard, NE Garo Hills), A'beng/Mandi (W Garo Hills + Bangladesh), A'chik
-- **Type:** Suffixing language — grammar expressed through suffixes, rarely prefixes
-- **No articles** — demonstratives `i/ia` (this) and `u/ua` (that) used instead
-- **No gender distinction** in pronouns — `ua` = he/she/it
-- **Adjectives are verbs** — Garo has very few true adjectives; most are intransitive verbs
+Garo is **SOV** — Subject + Object + Verb.
 
----
-
-## 2. VERB SYSTEM — COMPLETE
-
-### 2.1 Verb Structure Formula
-```
-[verb base/stem] + [adverbial affixes (optional)] + [principal verb suffix] + [terminal suffixes (optional)]
-```
-
-### 2.2 All Tenses / Aspects
-
-| English Tense | Garo Suffix | Example (root: `kat` = run) | Translation |
-|---|---|---|---|
-| **Simple Present** | `-a` | `Kata` | [I] run / [I] am running |
-| **Simple Past** | `-aha` | `Kataha` | [I] ran |
-| **Perfect (change of state)** | `-jok` | `Katjok` | [I] have run / has run (result persists) |
-| **Past Perfect** | `-jok-ming` | `Katjok-ming` | [I] had run |
-| **Simple Future** | `-gen` (A'chik) / `-noa` (Mandi) | `Katgen` / `Katnoa` | [I] will run |
-| **Immediate / Intentional Future** | `-na-jok` / `-gin-ok` | `Kat-na-jok` | [I] am about to run / intend to run |
-| **Conditional / Past Perfect** | add `-chim` after tense | `Kataha-chim` | [I] would have run / had run |
-| **Progressive (ongoing action)** | `-ing-` (infix, Mandi) / `-eng-` (A'chik) | `Kat-ing-a` | [I] am running |
-| **Negative Future** | `-wa` | `Kat-wa` | [I] will not run |
-
-> **Dialect note:** `-ing-` (progressive) is Mandi/A'beng; `-eng-` is A'chik. Both mean the same thing.
-
-#### Full Tense Mapping: English → Garo
-
-| English Form | Maps To | Garo Suffix |
-|---|---|---|
-| I run / I do run | Simple present | `-a` |
-| I am running | Present progressive | `-ing-a` / `-eng-a` |
-| I ran / I did run | Simple past | `-aha` |
-| I was running | Past progressive | `-ing-aha` / `-eng-aha` |
-| I have run | Present perfect | `-jok` |
-| I have been running | Present perfect progressive | `-ing-jok` |
-| I had run | Past perfect | `-jok-ming` |
-| I had been running | Past perfect progressive | `-ing-jok-ming` |
-| I will run | Simple future | `-gen` / `-noa` |
-| I will be running | Future progressive | `-ing-gen` |
-| I am about to run | Immediate future | `-na-jok` / `-gin-ok` |
-| I would run | Conditional | `-chim` after tense |
-
-#### Real Examples (from Burling & native sources)
-```
-Bia cha.aha              → He ate (simple past, -aha)
-Bia chamanjok            → He has eaten (perfect, -jok)
-Anga mi cha enga         → I am eating food (progressive, -ing/-eng + -a)
-Nang.ko senggen ma?      → Will you wait for me? (future -gen + question -ma)
-Angko Whyting minga      → My name is Whyting (equational sentence, no verb needed)
-```
-
-### 2.3 Moods
-
-| Mood | Suffix | Example | Translation |
-|---|---|---|---|
-| **Imperative (positive)** | `-bo` | `Cha.bo` | Eat! |
-| **Imperative (polite)** | `-bo-ne` | `A-song-bo-ne` | Please sit down |
-| **Imperative (negative)** | `-na-be` | `Cha.na-be` | Don't eat! |
-| **3rd person imperative** | `-kan` / `-ka-na` | `Bia re.ang-kan` | Let her go |
-| **Yes/No Question** | `-ma` (terminal) | `Cha.ma?` | Have you eaten? |
-| **Question (less common)** | `-ni` (terminal) | — | Yes/no question variant |
-| **Question (A'chik)** | `-mo` | `Ga.ak-jok-mo?` | It has fallen, hasn't it? |
-| **Polite / Wishful** | `-ne` (terminal) | `Ang-a ni-na-ne` | May I see? / I'd like to see |
-| **Probability** | `-kon` (terminal) | `Nam-ku-ing-a-kon` | It is probably still good |
-| **Quotative** | `-na` (terminal) | `Sok-ba-no-a-na` | I heard that he will arrive |
-
-### 2.4 Negation — Complete
-
-| Context | Suffix/Form | Example | Translation |
-|---|---|---|---|
-| **Standard negation** | `-ja-` (infix before tense) | `Cha.-ja-a` | [I] do not eat |
-| **Negative past** | `-ja-aha` | `Cha.-ja-aha` | [I] did not eat |
-| **Negative progressive** | `-ja-ing-a` | `Cha.-ja-ing-a` | [I] am not eating |
-| **Negative perfect** | `-ja-jok` | `Kat-ja-jok` | does not run any more |
-| **Negative future** | `-jawa` | `Kat-jawa` | will not run |
-| **Negative imperative** | `-na-be` | `Cha.na-be` | Don't eat! |
-| **Negative intentional** | `-ja-na-jok` | `Kat-ja-na-jok` | will run no more / does not intend to run |
-
-> **Important:** When `-ja-` and `-a` (neutral tense) would combine, the result is just `-ja` (not `-ja-a`).
-> Example: `cha.-ja` = does not eat (present negative), NOT `cha.-ja-a`
-
-### 2.5 Adverbial Affixes (go BETWEEN verb base and tense suffix)
-
-#### Inflectional (universal — can attach to any verb):
-| Affix | Meaning | Example |
-|---|---|---|
-| `-ja-` | negative | `cha.-ja-a` = does not eat |
-| `-ing-` / `-eng-` | progressive | `kat-ing-a` = is running |
-| `-ku-` | still, yet | `nam-ku-ing-a` = is still good |
-| `-et-` / `-it-` (Mandi) / `-at-` (A'chik) | causative (makes intransitive → transitive) | `krip-et-jok` = I have closed (it) |
-| `-ang-` | away from speaker, in that direction | `kat-ang-a` = run away; `bil-ang-a` = fly away |
-| `-ba-` | toward speaker, in this direction | `kat-ba-a` = run here/toward me |
-| `-pil.-` | return, reversed, back | `wal-pil-a` = return |
-| `-a-ri-` | just, merely, right after | `kat-a-ri-jok` = just ran |
-
-#### General (more specific meanings, widely usable):
-| Affix | Meaning |
+| English | Garo |
 |---|---|
-| `-be-` / `-bi-` | very, a lot |
-| `-tok-` | all, everything |
-| `-grik-` | mutually, each other (reciprocal) |
-| `-srang-` | completely |
-| `-bru-` | falsely, pretending |
-| `-chak-` | toward another person, helping, reciprocal action |
+| I eat food | Anga Mi cha·a |
+| Did you eat food? | Na·a Mi Cha·aha ma? |
+| He saw me | Ua angko Nikaha |
 
-#### Combined adverbial affixes — fixed order:
-```
--ba-pil.-ku-ja-ing-   = "not yet (be)ing back here again"
-(toward-return-still-not-progressive)
-```
-
-### 2.6 Subordinating Suffixes (connect clauses)
-
-| Suffix | Meaning | Example |
-|---|---|---|
-| `-e` / `-i` | having, being; subordinates clause to next verb | `nok nap-e, a-song-jok` = having entered the house, I sat down |
-| `-e-ming` / `-i-ming` | subordinating (elaborate synonym of `-e`) | — |
-| `-e-min-a` | subordinating (elaborate synonym) | — |
-| `-na` | infinitive / purpose "in order to" | `brea-na re.anga` = went to buy |
-| `-na-jok-o` | "when about to / when intending to" | `cha.-na-jok-o ang-ko o-kam-bo` = when you intend to eat, call me |
-| `-o` / `-u` | nominalizing "when, at the time of" | `sing.-o a-gan-chak-na` = when asked, be able to answer |
-| `-kan` / `-ka-na` | ordering/telling someone to do something | `kat-kan-a bi-a hit-a` = he ordered him to run |
-| `-a-ri` | just, merely, right after (subordinating use) | — |
-
-### 2.7 Causative
-- Mandi: `-et-` or `-it-`
-- A'chik: `-at-`
-- Makes intransitive verb transitive (cause something to happen TO something)
-```
-krip-jok         = (umbrella) is closed (intransitive)
-krip-et-jok      = I have closed (the umbrella) (transitive, causative)
-a-bu-a           = to take a bath (intransitive)
-a-bu-it-a        = to give a bath (transitive, causative)
-```
-
-### 2.8 Infinitive
-- Suffix: `-na`
-- "to do X"
-- Examples: `cha.-na` = to eat, `re.na` = to go, `tusina` = to sleep, `brea-na` = to buy
+Questions: add `-ma` at end. Word order unchanged.
 
 ---
 
-## 3. NOUN MORPHOLOGY
+## 2. PRONOUN SYSTEM
 
-### 3.1 Case Markers
-All case markers go at the END of the noun phrase. **Subject nouns have NO case marker.**
+### Roots and case suffixes
 
-| Case | Suffix | Meaning | Example |
-|---|---|---|---|
-| **Nominative (subject)** | _(none)_ | Subject — unmarked | `pi.-sa cha.-a` = the child eats |
-| **Accusative (direct object)** | `-ko` | Object of verb | `mi-ko cha.-a` = eat (the) rice |
-| **Genitive (possessive)** | `-ni` | Of / 's | `ang-ni achak` = my dog |
-| **Dative (indirect object)** | `-na` | To / for | `ang-na ki·tap-ko ron.-ing-a` = giving me a book |
-| **Locative (time + space)** | `-o` | At / in / on | `nok-o` = at the house |
-| **Locative (spatial only)** | `-chi` | At / in (place) | — |
-| **Instrumental ("with/by means of")** | `-chi` / `-cha` | With, by means of | `hat-dur-cha dok-a` = hit with a hammer |
-| **Instrumental ("accompanying")** | `-ming` | With (company) | — |
+| Case | 1st sg (ang·) | 1st pl (An·ching) | 2nd (nang·) | 3rd formal (u) | 3rd informal (bi) |
+|---|---|---|---|---|---|
+| Subject | anga | An·ching | na·a | ua | bia |
+| Object | angko | An·ching·ko | nang·ko | uko | biko |
+| Possessive | ang·ni | An·ching·ni | nang·ni | uni | bini |
+| For/dative | angna | An·ching·na | nang·na | una | bina |
+| With/comitative | ango | An·ching·o | nang·o | uo | bio |
+| To (locative) | angchi | — | — | — | — |
 
-> **Key rule:** Object takes `-ko`. Indirect object takes `-na`. Possession takes `-ni`.
+### Formality
+- `na·a` = you (formal/neutral) — use as default
+- `na·ara` = you (informal, `-ra` suffix) — both correct, context-dependent
+- `ua` = he/she (formal) — default
+- `bia` = he/she (informal)
 
-### 3.2 Plural
-Plural is NOT obligatory. When used, suffix precedes the case marker.
+### Confirmed sentences
+- `Na·a angko Nikaha ma?` = Did you see me?
+- `Anga uko Nikaha` = I saw him/her
+- `Ua angko Nikaha` = He/she saw me
+- `Bia una aganaha` = He spoke to her (informal)
+- `nang·ni ming` = your name
+- `Angchi re·babo` = Come to me
 
-| Suffix | Notes |
-|---|---|
-| `-rang` | most common plural |
-| `-dang` | variant |
-| `-drang` | variant |
+---
 
-Examples:
-```
-mande-rang        = people (plural)
-mande-rang-ko     = people (accusative plural)
-achak-rang        = dogs (plural)
-```
+## 3. VERB ROOTS AND TENSE SUFFIXES
 
-### 3.3 Pronouns — Complete Table
+### Key principle
+> "The Garo language relies on suffixes a lot. In fact, the tense of a sentence is totally dependent on the suffixes added to the verb."
 
-| Person | Nominative | Accusative (-ko) | Genitive (-ni) | Dative (-na) |
-|---|---|---|---|---|
-| 1sg (I) | `Anga` / `Ang-a` | `Angko` / `Ang-ko` | `Ang-ni` (my) | `Ang-na` (to me) |
-| 2sg (you) | `Nang` / `Na.a` | `Nang-ko` | `Nang-ni` (your) | `Nang-na` (to you) |
-| 3sg (he/she/it) | `Ua` / `Bi-a` | `Ua-ko` / `Bi-ko` | `Ua-ni` (his/her) | — |
-| 1pl excl. (we, not you) | `Nija` | `Nija-ko` | `Nija-ni` | — |
-| 1pl incl. (we all) | `Nia` | `Nia-ko` | `Nia-ni` | — |
-| 2pl (you all) | `Nang-rang` | — | — | — |
-| 3pl (they) | `Ua-rang` / `Bi-song` | — | — | — |
+### Raka rule
+The raka (`·`) is part of the **root**, not the suffix. Suffixes never carry raka.
+If root has raka → ALL inflected forms have it. If not → none do.
 
-> **Note:** Garo makes NO distinction between he/she — `ua`/`bia` covers both.
-> Garo DOES distinguish inclusive vs exclusive "we".
-
-### 3.4 Demonstratives (used as articles/this/that)
-
-| Demonstrative | Meaning | With case marker |
+| Root | Raka? | Meaning |
 |---|---|---|
-| `i` / `ia` | this (near) | `i-ko` = this (accusative) |
-| `u` / `ua` | that (far) / the | `u-ko` = that/the (accusative) |
+| `cha·` | ✅ yes | eat |
+| `kat` | ❌ no | run |
+| `ring` | ❌ no | drink |
+| `tusi` | ❌ no | sleep |
+| `agan`/`agana` | ❌ no | speak |
+| `nam` | ❌ no | good |
+| `re·` | ✅ yes | go/walk |
+| `on·` | ✅ yes | give |
+| `ra·` | ✅ yes | take |
 
-> Final `-a` is dropped when a case marker is added: `ia` → `i-ko`
-> Since Garo has no articles, `ua achak` = "that dog" OR "the dog"
+### Tense suffix table
 
-### 3.5 Numeral Classifiers
-Always used with numbers. Come after the noun (sometimes before).
+| Suffix | Function | cha· example | kat example |
+|---|---|---|---|
+| `+a` | present/root | cha·a | kata |
+| `+aha` | past | cha·aha | kataha |
+| `+jok` | perfect (has done) | cha·jok | katjok |
+| `+enga` | progressive (doing) | cha·enga | katenga |
+| `+gen` | future (will do) | cha·gen | katgen |
+| `+bo` | imperative (do!) | cha·bo | katbo |
+| `+na` | infinitive / future let's | cha·na | katna |
+| `+naha` | imminent let's (about to) | cha·naha | katnaha |
+| `+ja` | negation predicative | cha·ja | katja |
+| `+chi+na` | subjunctive (let X do) | cha·china | — |
+
+### Hai + verb constructions
+- `Hai + verb·na` = let's [do] (future, not imminent): `Hai knalo momo cha·na` = let's eat momo tomorrow
+- `Hai + verb·naha` = let's [do] (imminent, about to start): `Hai cha·naha` = let's eat (food is ready)
+- These are NOT interchangeable — `naha` for imminent only
+
+### Confirmed verb forms in corrections.json
+```
+eat=cha·a, ate=cha·aha, eating=cha·enga, has eaten=cha·jok
+drink=Ringa, drank=ring·aha, drinking=ringenga
+run=Kata, ran=kataha, running=katenga
+see=Nika, saw=Nikaha, seeing=nikenga
+speak=Agana, spoke=aganaha
+go=re·ang·a, went=re·anga, going=re·angenga
+come=re·ba·a, came=re·ba·aha, coming=re·baenga
+give=on·a, gave=on·aha
+take=ra·a
+sleep=Tusia, slept=tus·aha, sleeping=tusenga
+work=Dak·a, worked=dak·aha, working=dakenga
+dance=Chroka, sing=ring·a, swim=jrona
+stand=Chakata, sit=Asong·a
+laugh=ka·ding·a, cry=Grap·a
+```
+
+---
+
+## 4. NOUN MORPHOLOGY
+
+### Noun from verb root
+`cha·` (eat) + `u` → `cha·u` = thief
+
+### Suffix `chi` on nouns — locative and agentive
+
+**Locative** ("to [place/person]"):
+- `ang + chi` = `angchi` = to me → `Angchi re·babo` = Come to me
+- `dokan + chi` = `dokanchi` = to the shop → `Dokanchi re·angbo` = Go to the shop
+
+**Agentive** ("with [instrument]"):
+- `atte + chi` = `attechi` = with a dao → `Attechi den·a` = Cut with a dao
+- `gari + chi` = `garichi` = with a car → `Garichi salgaka` = Hit with a car
+
+### Classifier system (counting nouns)
+Format: `[noun] [classifier·number]`
 
 | Classifier | Category | Example |
 |---|---|---|
-| `mang-` | animals | `mang-gni achak` = 2 dogs |
-| `sak-` | people / persons | `sak-gitam mande` = 3 people |
-| `king-` | flat objects (books, paper, leaves) | `king-gni ki.tap` = 2 books |
-| `gong-` | money / coins | — |
-| `do.-` / `do-` | birds (also prefix in bird names) | `mang-bonga do.o` = 5 birds |
-| `bi-` | plants (also prefix in plant names) | — |
-| `ding-` | long thin objects | — |
-| `rong-` | round things | — |
-| `-ge` | general fallback (when no specific classifier) | — |
+| `mang·` | animals, birds, fish | `achak mang·sa` = one dog |
+| `sak·` | people | `mande sak·sa` = one person |
+| `king·` | flat objects (books, paper) | `ki·tap king·gittam` = three books |
+| `gong·` | money/currency | `tangka gong·bonga` = five coins |
+| `ge·` | general fallback | `mewa ge·bri` = four fruits |
+| `brong·` | long objects (sticks, pens) | — |
 
-Number words:
-```
-sa / sak-sa = one       gni / king-gni = two      gitam / sak-gitam = three
-bri = four              bonga = five               dok = six
-sini = seven            chet = eight               sku = nine
-chikung = ten           ritchasa = hundred
-```
+Number suffixes: sa(1) gni(2) gittam(3) bri(4) bonga(5) dok(6) sni(7) chet(8) sku(9) chiking(10)
+Teens: Chi·sa(11) Chi·gni(12) ... Chi·sku(19)
+20+: Kolgrik·sa(21) Kolgrik·gni(22) etc — raka joins all parts
 
 ---
 
-## 4. SYNTAX
+## 5. ADJECTIVE PLACEMENT AND NEGATION
 
-### 4.1 Word Order
-- **SOV** — Subject (no marker) → Object (`-ko`) → Verb (always last)
-- Order of noun phrases before verb is relatively FREE (case markers clarify role)
-- Subordinate clauses ALWAYS precede the main clause
+### Predicative (after noun, no `-gipa`)
+`noun + adjective` → `Gari sila` = the car is beautiful
 
-### 4.2 Sentence Types
+### Attributive (before noun, with `-gipa`)
+`adjective+gipa + noun` → `Silgipa gari` = beautiful car
 
-**Equational sentences** (no verb needed — like "is/are" in English):
-```
-U-a Me.-chik Bang-la-des-ni   = That woman (is) a Bangladeshi
-Angko Whyting minga            = My name is Whyting
-```
+### Negation: `ja` vs `gija`
 
-**Simple transitive:**
-```
-Ang-a bi-ko nik-a   = I see her   (Subject + Object-ko + Verb)
-```
-
-**With indirect object:**
-```
-Bi-song ang-na ki·tap-ko ron.-ing-a   = They are giving me a book
-(Subject + IO-na + DO-ko + Verb-progressive)
-```
-
-**With purpose clause (infinitive):**
-```
-Ua mi-ko brea-na re.anga   = She went to buy rice
-(Subject + Object-ko + Verb-na(purpose) + Main-verb-past)
-```
-
-**With subordinate clause:**
-```
-Nok nap-e, a-song-jok   = Having entered the house, I sat down
-(Subordinate verb-e, Main verb)
-```
-
-### 4.3 Postpositions
-Garo uses postpositions (come AFTER noun + case marker). Many follow `-ni` (genitive).
-Example: `mik-kang-o` = "in front of" (lit. face-locative)
-
-### 4.4 Adjectives as Verbs
-Most meanings expressed by English adjectives are intransitive verbs in Garo:
-```
-dal.-a     = to be big / big
-nam-a      = to be good / good
-chon-a     = to be small / small
-sil-a      = to be beautiful / beautiful
-```
-These take the full range of verb suffixes:
-```
-dal.-no-a      = will be big
-dal.-no-a-ma?  = will it be big?
-dal.-tok-jok   = all have become big
-```
-
-Modifier form (like adjective before noun) — add `-gip-a`:
-```
-dal.-gip-a mande   = big person
-nam-gip-a sal      = a good day
-kat-gip-a mande    = the man who runs / the running man
-```
-
----
-
-## 5. REAL SENTENCE EXAMPLES (native + academic verified)
-
-### Daily Life Phrases
-| English | Garo |
-|---|---|
-| Hello / Hi | O.am / Salam / Namengama? |
-| How are you? | Namengama? |
-| I am fine | Namengaba |
-| Good morning | Pringnam |
-| Good night | Walnam |
-| Thank you | Mittela / Mitela |
-| What is your name? | Nangko mai minga? |
-| My name is [X] | Angko [X] minga |
-| I am hungry | Anga okkrienga |
-| I am happy | Anga katchaenga |
-| I am sorry | Angko kema ka.pabo |
-| Welcome | Rimchaksoa |
-| Don't worry | Jajrengnabe |
-| I love you | Anga nangna kasa |
-| Let's go together | Hai apsan re.na indide |
-
-### Tense Examples
-| English | Garo | Notes |
+| Form | Placement | Example |
 |---|---|---|
-| He ate an apple | Bia apple cha.aha | past `-aha` |
-| He has eaten | Bia chamanjok | perfect `-jok` |
-| I am eating food | Anga mi cha enga | progressive `-eng-a` |
-| I am going to market | Anga antichi re.angenga | progressive going |
-| Will you wait for me? | Na.a angko senggen ma? | future `-gen` + question `-ma` |
-| She went to buy rice | Ua mi-ko brea-na re.anga | purpose clause `-na` |
-| Let's go to market | Hai Bajal Anti Re.na | imperative/hortative |
-| Go to sleep | Tusibo | imperative `-bo` |
-| Don't eat! | Cha.na-be | negative imperative |
-| Eat! | Cha.bo | imperative |
+| `namja` | after noun ONLY | `mande namja` ✅ = the person is bad |
+| `namgija` | before OR after noun | `namgija mande` ✅ OR `mande namgija` ✅ |
+| `namja mande` | ❌ WRONG | Never before noun |
 
-### Grammar Patterns
-| English | Garo | Pattern |
+---
+
+## 6. SUBJUNCTIVE — `chi` in verbs
+
+`chi` placed between verb root and suffix = "let [subject] do":
+- `cha· + chi + na` = `cha·china` = let (someone) eat
+- `Ua cha·china` = Let him/her eat
+
+---
+
+## 7. KEY VOCABULARY (native-confirmed)
+
+### Core words
+```
+yes=Am, no=Ihing, good=Nama, bad=namja
+and=Aro, but=Indiba, or=ba, if=Ode, so=Uni gimin
+when=Basaku, why=maini, who=sawa, where=bano, what=Mai/Maia
+I/me=anga/angko, you=na·a/nang·ko, he/she=ua/uko, we=An·ching
+very=namen, only=saksakosan, long=ro·a
+```
+
+### Animals
+```
+dog=achak, cat=menggo, cow=matchu, goat=dobok, pig=wak
+bird=do·o, fish=na·tok, elephant=buring·o
+```
+
+### Places
+```
+forest=mongma, market=bajal, shop=dokan
+```
+
+### Common phrases
+```
+how are you=Na·a namenga ma?
+what are you doing=Na·a Mai Dakenga
+did you eat food=Na·a Mi Cha·aha ma?
+come to me=Angchi re·babo
+go to the shop=Dokanchi re·angbo
+let him eat=Ua cha·china
+thief=cha·u
+sounds good=knatoa
+```
+
+---
+
+## 8. OPEN ITEMS FOR ENGINE (Claude A priority list)
+
+| Priority | Item | Notes |
 |---|---|---|
-| My dog | Ang-ni achak | genitive `-ni` |
-| Your hand | Nang-ni jak | genitive `-ni` |
-| At the house | Nok-o | locative `-o` |
-| Giving me a book | Ang-na ki·tap-ko ron.-ing-a | dative `-na` + accusative `-ko` |
-| I see her | Ang-a bi-ko nik-a | subject (no marker) + object `-ko` |
-| 2 dogs | Mang-gni achak | classifier `mang-` |
-| 3 people | Sak-gitam mande | classifier `sak-` |
-| This is not good | Ia nama-gija | negation |
-| I do not understand | Anga uija | negation |
-| I don't know you | Anga nangko masija | negation `-ja` |
+| 1 | STOP_WORDS — remove question words | when/why/who/what/where stripped, breaking sentences |
+| 2 | STOP_WORDS — remove connectives | and/but/or/if/so stripped, biggest quality gap |
+| 3 | Future tense `-gen` | `cha·gen`, `katgen` — not yet in engine |
+| 4 | Subjunctive `chi` | `Ua cha·china` pattern not handled |
+| 5 | `ja` vs `gija` placement enforcement | Engine must block `ja` before noun |
+| 6 | Locative/agentive `chi` on nouns | `angchi`, `dokanchi` patterns |
+| 7 | Pronoun case switching | Object vs subject form in assembly |
+| 8 | Location-noun-dropped bug | `docs/BUG_location_noun_dropped.md` |
+| 9 | `getCategories()` returns 1 category | Stray numeric keys in compiled_dict.json |
+| 10 | `server.js` dead code | Delete or mark clearly |
 
 ---
 
-## 6. QUESTION WORDS
+## 9. KNOWN DATA ISSUES
 
-| English | Garo |
-|---|---|
-| What? | Mai? |
-| Where? | Bachi? |
-| Who? | Sawa? |
-| When? | Basako? |
-| How? | Mai.dake? |
-| Why? | Maina? |
-| Which? | Badia? |
-| What did you say? | Ma? (also: `ma?` as terminal suffix) |
+- 1,055 duplicate-key groups in master_dictionary.json — needs human review
+- VERIFIED/HIGH tag unreliable — never auto-trust as tiebreaker
+- `seen` (past participle of see) — raka status unconfirmed, left as `nik·aha` pending
 
 ---
 
-## 7. ENGINE ACTION ITEMS FOR CLAUDE A (Priority Order)
-
-### P1 — Past Tense Detection
-Detect past tense indicators in English (`ed`, `was`, `were`, irregular verbs) → look up root → apply `-aha`:
-```js
-// English past markers: "ate"→"eat", "went"→"go", "ran"→"run", "bit"→"bite"
-// Then: garoRoot + "aha"
-```
-
-### P2 — Progressive Detection
-Detect `-ing` in English → look up root → apply `-ing-a` / `-eng-a`:
-```
-"I am eating" → Anga cha.-eng-a
-"I am running" → Anga kat-ing-a
-```
-
-### P3 — Perfect Tense
-Detect "has/have + past participle" → apply `-jok`:
-```
-"He has eaten" → Bia cha-manjok
-"I have gone" → Anga re.ang-jok
-```
-
-### P4 — Negation as Infix
-Detect "not/don't/doesn't/didn't/never" → insert `-ja-` between root and tense suffix:
-```
-"I do not eat"   → cha.-ja (note: -ja, not -ja-a)
-"I did not eat"  → cha.-ja-aha
-"I am not eating" → cha.-ja-ing-a
-```
-
-### P5 — Case Markers Beyond `-ko`
-Add `-ni` (genitive), `-o` (locative), `-na` (dative) to assembly:
-```
-"my [noun]"  → ang-ni [noun]
-"at [place]" → [place]-o
-"to me"      → ang-na
-```
-
-### P6 — Adjective/Stative Verbs
-Recognize that adjectives are verbs: `good/nam-a`, `big/dal.-a`, `beautiful/sil-a`
-For "is [adj]" → just use the adjective-verb with tense suffix:
-```
-"It is good"     → Nama (present)
-"It was good"    → Namaha (past)
-"It is not good" → Nam-ja (negative present)
-```
-
-### P7 — Apostrophe Normalization
-Strip apostrophes at input normalization: `lets` → `let's` before any lookup.
-
-### P8 — Plural
-Recognize plural nouns → add `-rang` suffix before case marker:
-```
-"dogs" → achak-rang
-"people" → mande-rang
-```
-
----
-
-## 8. KEY SOURCES
-
-1. **Burling, R. (2003)** — *The Language of the Modhupur Mandi (Garo), Vol. I: Grammar*
-   Full text (free): https://quod.lib.umich.edu/s/spobooks/bbv9808.0001.001
-2. **Burling, R. (2003)** — *Vol. II: Lexicon*
-   https://quod.lib.umich.edu/s/spobooks/bbv9808.0002.001
-3. **Phillips, E.G. (1904)** — *Outline Grammar of the Garo Language* — Public domain
-4. **Sangma, S.K. (1991)** — *Achik Grammar* — UNT Digital Library:
-   https://digital.library.unt.edu/ark:/67531/metadc2124470/
-5. **Wiktionary** — Appendix: Garo Verbs:
-   https://en.wiktionary.org/wiki/Appendix:Garo_verbs
-6. **languagesgulper.com** — Garo overview:
-   http://www.languagesgulper.com/eng/Garo.html
-7. **dimasathairili.com** — Native Garo sentences:
-   https://www.dimasathairili.com/2022/07/garo-sentences.html
-
----
-
-_Claude B — Platform Side | docs/GARO_GRAMMAR_REFERENCE.md_
+_This document supersedes scattered grammar notes in individual GRAMMAR_*.md files._
+_Single source of truth for Garo grammar as understood by the engine team._
+_Update this file whenever Thangseng confirms new rules._
