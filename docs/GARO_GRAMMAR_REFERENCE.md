@@ -232,3 +232,17 @@ sounds good=knatoa
 _This document supersedes scattered grammar notes in individual GRAMMAR_*.md files._
 _Single source of truth for Garo grammar as understood by the engine team._
 _Update this file whenever Thangseng confirms new rules._
+
+---
+
+## 10. SUBJECTLESS QUESTIONS
+
+Native-speaker confirmed: subject pronoun is optional in questions.
+Both forms are correct — shorter form is natural in everyday speech.
+
+| With subject | Without subject | Meaning |
+|---|---|---|
+| `Na·a Maiko aganenga?` | `Maiko aganenga?` | What are you saying? |
+| `Na·ara Maiko aganenga?` | `Maiko aganenga?` | What are you saying? (informal) |
+
+Engine default: use subjectless form when question word is present and subject is inferable.
