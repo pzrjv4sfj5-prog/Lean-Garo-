@@ -33,3 +33,37 @@ Same root+suffix logic likely applies to all pronouns:
 - `an·ching` (we) — root and case forms unknown
 
 Ask Thangseng: "What is the object form of 'you' (nako?) and 'he/she' (uko?)?"
+
+---
+
+## Second-person singular — `nang·` root
+
+Source: Thangseng (native speaker), 2026-06-28
+Status: CONFIRMED
+
+| Form | Breakdown | Meaning | Usage |
+|---|---|---|---|
+| `na·a` | nang· + a | you (subject) | Subject of sentence |
+| `nang·ko` | nang· + ko | you (object) | Object of sentence |
+| `nang·na` | nang· + na | for you | Dative/benefactive |
+| `nang·ni` | nang· + ni | yours / of you | Genitive/possessive |
+| `nang·o` | nang· + o | with you | Comitative/locative |
+
+## Confirmed in live corrections.json
+- `nang·ni` (yours/of you) — used in: "your name", "your hand", "is it yours" ✅
+- `nang·ko` (you-object) — used in: "i want to see you", "i am waiting for you", "nice to meet you" ✅
+- `na·a` (you-subject) — used throughout all question sentences ✅
+
+## Parallel structure — ang· vs nang·
+
+| Case | 1st person (ang·) | 2nd person (nang·) |
+|---|---|---|
+| Subject | anga | na·a |
+| Object | angko | nang·ko |
+| Possessive | ang·ni | nang·ni |
+| With/for | angna | nang·na |
+| Comitative | ango | nang·o |
+
+## TODO — confirm 3rd person root
+- `ua` (he/she) — root unknown, object/possessive forms unconfirmed
+- Ask Thangseng: "What is the root for ua? And what are ua-object, ua-possessive forms?"
