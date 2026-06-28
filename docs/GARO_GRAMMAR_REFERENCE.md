@@ -246,3 +246,18 @@ Both forms are correct — shorter form is natural in everyday speech.
 | `Na·ara Maiko aganenga?` | `Maiko aganenga?` | What are you saying? (informal) |
 
 Engine default: use subjectless form when question word is present and subject is inferable.
+
+---
+
+## 11. `maini gimin` — confirmed valid construction
+
+Native-speaker confirmed 2026-06-28:
+`maini gimin` is a genuine Garo construction — correct in "what are you yapping about":
+`Na·a maini gimin bel·belenga` ✅
+
+It was NOT correct in "lying/crying/saying" — those needed different structures:
+- `why are you lying` → `Na·a maina tol·enga?` (not maini gimin)
+- `why are you crying` → `Na·a maina grapenga?` (not maini gimin)
+- `what are you saying` → `Maiko aganenga?` (not maini gimin)
+
+**Conclusion:** `maini gimin` is valid — just context-specific. Not categorically wrong.
