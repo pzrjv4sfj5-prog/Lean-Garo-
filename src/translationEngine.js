@@ -615,11 +615,21 @@ export async function translate(input) {
 
 export function getAllVocabulary() {
   const entries = [];
+  const seenEnglish = new Set();
   for (const [english, val] of Object.entries(EN_INDEX)) {
     const arr = Array.isArray(val) ? val : [normalizeEntry(val)];
     for (const e of arr) {
-      if (e?.garo) entries.push({ english, garo: e.garo, pos: e.pos||null, category: e.category||'uncategorized', classifier: e.classifier||null });
+      if (e?.garo) {
+        const correctedGaro = corrections[english] || e.garo;
+        entries.push({ english, garo: correctedGaro, pos: e.pos||null, category: e.category||'uncategorized', classifier: e.classifier||null });
+      }
     }
+    seenEnglish.add(english);
+  }
+  for (const [english, garo] of Object.entries(corrections)) {
+    if (seenEnglish.has(english)) continue;
+    if (english.includes(' ')) continue;
+    entries.push({ english, garo, pos: null, category: 'uncategorized', classifier: null });
   }
   return entries;
 }
