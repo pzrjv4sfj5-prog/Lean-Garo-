@@ -32,30 +32,22 @@ The -na form applies to dance/sing/swim. Both are valid, different constructions
 
 ---
 
-## FLAG 2 — `Na·ara` vs `Na·a` subject pronoun (interrogative form)
+## FLAG 2 — `Na·ara` vs `Na·a` subject pronoun — RESOLVED ✅
 
-All question sentences in the new batch use `Na·ara` (not `Na·a`):
-```
-who are you        -> Na·ara sawa?
-why are you lying  -> Na·ara maini gimin tol·enga?
-are you sick       -> Na·ara saengama?
-what job do you do -> Na·ara mai kamko ka·a?
-```
+**Native speaker confirmed (Thangseng, 2026-06-25):**
+> "Na•a(ra) maina re•bapila? Oh, ok... Both are used. ra- is an informal way of speaking or writing. Yes, both are technically correct. The difference is the context."
 
-But SOV question sentences use `Na·a`:
-```
-did you eat food   -> Na·a Mi Cha·aha ma?
-are you sleeping   -> Na·a Tusienga ma?
-are you going      -> Na·a Re·angenga ma?
-```
+**Rule:** Both `Na·a` and `Na·ara` are correct for ALL question types (yes/no and wh-questions).
+`-ra` marks **informal register only** — not a grammatical distinction.
 
-**Pattern hypothesis:** `Na·ara` = "you" in open questions (wh-questions: who/why/what/when),
-`Na·a` = "you" in yes/no questions (confirmed with `-ma` question particle).
-Needs native speaker confirmation before the engine handles this distinction.
+- `Na·a` = formal / neutral "you"
+- `Na·ara` = informal "you" (same meaning, relaxed register)
 
-If confirmed, the pronoun map in `translationEngine.js` needs a new slot:
-- `Na·a` = 2nd person, yes/no question or statement
-- `Na·ara` = 2nd person, wh-question (interrogative with question word)
+**Engine decision:** No change needed. Engine uses `Na·a` by default (formal/neutral).
+Both forms are acceptable in any question. Do NOT implement a yes/no vs wh-question
+split — the hypothesis was wrong. The distinction is purely formality.
+
+**Prior hypothesis (incorrect):** Was thought to be yes/no vs wh-question split. Superseded.
 
 ---
 
