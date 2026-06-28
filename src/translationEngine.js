@@ -518,11 +518,19 @@ export async function translate(input) {
       || lookupPhrase(singular)
       || lookupGaro(singular);
     if (garoNoun) {
-      return {
-        garo: countNoun(garoNoun, countPhrase.count, countPhrase.englishNoun),
-        method: 'classifier',
-        confidence: 0.96,
-      };
+      const classifierResult = countNoun(garoNoun, countPhrase.count, countPhrase.englishNoun);
+      // countNoun returns null for counts it can't confidently handle yet
+      // (currently: 20+, pending native-speaker confirmation of how
+      // classifiers compose with multi-word number forms — see
+      // QUESTION_THANGSENG_20PLUS_COUNTING.md). Falling through to the
+      // rest of the cascade instead of returning a fabricated/wrong answer.
+      if (classifierResult !== null) {
+        return {
+          garo: classifierResult,
+          method: 'classifier',
+          confidence: 0.96,
+        };
+      }
     }
   }
 

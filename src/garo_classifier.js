@@ -22,7 +22,7 @@
 import { toGaroNumber as toGaroNumberImported } from './number_engine.js';
 
 export const NUMBERS = {
-  1:'sa', 2:'gni', 3:'gitam', 4:'bri', 5:'bonga',
+  1:'sa', 2:'gni', 3:'gittam', 4:'bri', 5:'bonga',
   6:'dok', 7:'sni', 8:'chet', 9:'sku', 10:'chiking',
 };
 
@@ -75,20 +75,42 @@ export function getClassifier(noun) {
 function getClassifierSuffix(count) {
   const n = parseInt(count);
   if (NUMBERS[n]) return NUMBERS[n];
-  if (n > 10 && n < 20) return `chiking·ma·${NUMBERS[n-10]||n-10}`;
-  return String(n);
+  // 11-19: native speaker confirmed 2026-06-28 the correct form is
+  // "Chi·" + base digit (Chi·sa=11, Chi·gni=12, ... Chi·sku=19) — NOT
+  // "chiking·ma·" as previously implemented. This was a real error, not
+  // a register/formality variant — replaced entirely, not kept alongside.
+  const TEENS = {
+    11:'Chi·sa', 12:'Chi·gni', 13:'Chi·gittam', 14:'Chi·bri',
+    15:'Chi·bonga', 16:'Chi·dok', 17:'Chi·sni', 18:'Chi·chet', 19:'Chi·sku',
+  };
+  if (TEENS[n]) return TEENS[n];
+  // 20+: native speaker confirmed 2026-06-28 this follows the SAME
+  // pattern as number_engine.js's toGaroNumber() — tens word + units word
+  // (e.g. 21 = "Kolgrik sa", 25 = "Kolgrik bonga"). The hundreds/thousands
+  // logic in number_engine.js follows the same composition rule per the
+  // native speaker ("the logic will be same in hundreds or thousands"),
+  // so delegating to that function for ANY n > 19 rather than only 20-99.
+  if (n > 19) {
+    const result = toGaroNumberImported(n);
+    return result || null;
+  }
+  return null;
 }
 
 export function buildClassifierPhrase(classifier, count) {
-  return `${classifier}·${getClassifierSuffix(count)}`;
+  const suffix = getClassifierSuffix(count);
+  if (suffix === null) return null;
+  return `${classifier}·${suffix}`;
 }
 
 export function toGaroNumber(n) {
   const num = parseInt(n);
   if (isNaN(num)) return null;
-  if (NUMBERS[num]) return NUMBERS[num];
-  if (num > 10 && num < 20) return `chiking·ma·${NUMBERS[num-10]}`;
-  return null;
+  // Was a separate, independently-drifting copy of the same 1-19 logic as
+  // getClassifierSuffix() (and had the same now-fixed teens error +
+  // 20+ dead-end). Delegating to the single corrected implementation
+  // instead of maintaining a third copy.
+  return getClassifierSuffix(num);
 }
 
 
@@ -119,11 +141,14 @@ export function countNoun(garoNoun, count, englishNoun) {
   // "mewa ge·bri", not "mewa bri". Fixed to use the same buildClassifierPhrase
   // path as every other classifier category.
   const classifierPhrase = buildClassifierPhrase(classifier, count);
+  if (classifierPhrase === null) return null;
   return `${garoNoun.toLowerCase()} ${classifierPhrase}`;
 }
 
 export function countNounWithClassifier(garoNoun, count, classifier) {
-  return `${garoNoun} ${buildClassifierPhrase(classifier, count)}`;
+  const classifierPhrase = buildClassifierPhrase(classifier, count);
+  if (classifierPhrase === null) return null;
+  return `${garoNoun} ${classifierPhrase}`;
 }
 
 export function buildPhrase(dictionary, englishNoun, count) {
