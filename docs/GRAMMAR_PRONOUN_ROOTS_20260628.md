@@ -95,3 +95,38 @@ Status: CONFIRMED
 
 ## TODO — 3rd person (ua) still unconfirmed
 Ask Thangseng: "What is the root for ua (he/she)? Object=uko? Possessive=uani?"
+
+---
+
+## Third-person singular — `u` root
+
+Source: Thangseng (native speaker), 2026-06-28
+Status: CONFIRMED (with native-speaker caveat: "oversimplification, possibly wrong at edges")
+
+| Form | Breakdown | Meaning | Usage |
+|---|---|---|---|
+| `ua` | u + a | he / she / it (subject) | Subject of sentence |
+| `uko` | u + ko | him / her (object) | Object of sentence |
+| `uni` | u + ni | his / hers / of him/her | Genitive/possessive |
+| `una` | u + na | for him / for her | Dative/benefactive |
+| `uo` | u + o | with him / with her | Comitative/locative |
+
+## Confirmed in live corrections.json
+- `una` — "he spoke to her" → `Bia una aganaha` ✅
+
+## COMPLETE pronoun case table
+
+| Case | 1st sg (ang·) | 1st pl (An·ching) | 2nd sg (nang·) | 3rd sg (u) |
+|---|---|---|---|---|
+| Subject | anga | An·ching | na·a | ua |
+| Object | angko | An·ching·ko | nang·ko | uko |
+| Possessive | ang·ni | An·ching·ni | nang·ni | uni |
+| For/dative | angna | An·ching·na | nang·na | una |
+| With/comitative | ango | An·ching·o | nang·o | uo |
+
+**Table complete — all four persons confirmed by native speaker.**
+
+## Native speaker note
+The `u` root is an oversimplification for machine processing purposes.
+May not hold at every edge case in natural speech, but sufficient for
+engine implementation. Flag any exceptions found in real usage.
