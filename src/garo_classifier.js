@@ -92,7 +92,10 @@ function getClassifierSuffix(count) {
   // so delegating to that function for ANY n > 19 rather than only 20-99.
   if (n > 19) {
     const result = toGaroNumberImported(n);
-    return result || null;
+    // Native speaker confirmed 2026-06-28: tens+units join to classifier with raka,
+    // not space. "21 dogs" = achak mang·Kolgrik·sa (not mang·Kolgrik sa).
+    // number_engine returns "Kolgrik sa" (space-separated) — replace spaces with · here.
+    return result ? result.replace(/ /g, '·') : null;
   }
   return null;
 }
