@@ -603,8 +603,9 @@ export async function translate(input) {
   const compound = words.flatMap(w => w.split('-')).map(w => lookupGaro(w)).filter(Boolean);
   if (compound.length) return { garo: compound.join(' '), method: 'compound-split', confidence: 0.60 };
 
-  // 9. Fuzzy
-  const fuzzy = fuzzyMatch(lower);
+  // 9. Fuzzy — skip if input contains raka (·): that means user typed Garo, not English.
+  // ro·a typed as English was fuzzy-matching to "road" → so·rok (wrong). Fixed.
+  const fuzzy = input.includes('·') ? null : fuzzyMatch(lower);
   if (fuzzy) {
     const fg = lookupGaro(fuzzy.key);
     if (fg) return { garo: fg, method: `fuzzy(${fuzzy.key},d=${fuzzy.distance})`, confidence: Math.max(0.40, 0.75 - fuzzy.distance * 0.1) };
