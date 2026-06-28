@@ -130,3 +130,33 @@ Status: CONFIRMED (with native-speaker caveat: "oversimplification, possibly wro
 The `u` root is an oversimplification for machine processing purposes.
 May not hold at every edge case in natural speech, but sufficient for
 engine implementation. Flag any exceptions found in real usage.
+
+---
+
+## Third-person singular informal — `bi` root
+
+Source: Thangseng (native speaker), 2026-06-28
+Status: CONFIRMED
+
+| Form | Breakdown | Meaning | Usage |
+|---|---|---|---|
+| `bia` | bi + a | he / she (subject, informal) | Informal subject |
+| `biko` | bi + ko | him / her (object, informal) | Informal object |
+| `bini` | bi + ni | his / hers (informal) | Informal possessive |
+| `bina` | bi + na | for him / for her (informal) | Informal dative |
+| `bio` | bi + o | with him / with her (informal) | Informal comitative |
+
+## Confirmed in live corrections.json
+- `bia` already in use: "he spoke to her" → `Bia una aganaha` ✅
+
+## Formal vs informal 3rd person
+
+| Case | Formal (u) | Informal (bi) |
+|---|---|---|
+| Subject | ua | bia |
+| Object | uko | biko |
+| Possessive | uni | bini |
+| For/dative | una | bina |
+| With/comitative | uo | bio |
+
+Same formality distinction as `Na·a` (formal) vs `Na·ara` (informal) for 2nd person.
