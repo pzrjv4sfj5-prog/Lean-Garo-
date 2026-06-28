@@ -67,3 +67,31 @@ Status: CONFIRMED
 ## TODO — confirm 3rd person root
 - `ua` (he/she) — root unknown, object/possessive forms unconfirmed
 - Ask Thangseng: "What is the root for ua? And what are ua-object, ua-possessive forms?"
+
+---
+
+## First-person plural — `An·ching` root
+
+Source: Thangseng (native speaker), 2026-06-28
+Status: CONFIRMED
+
+| Form | Breakdown | Meaning | Usage |
+|---|---|---|---|
+| `An·ching` | root | we / us (subject) | Subject of sentence |
+| `An·ching·ko` | An·ching + ko | us (object) | Object of sentence |
+| `An·ching·na` | An·ching + na | for us | Dative/benefactive |
+| `An·ching·ni` | An·ching + ni | ours / of us | Genitive/possessive |
+| `An·ching·o` | An·ching + o | with us | Comitative/locative |
+
+## Full pronoun case table (confirmed to date)
+
+| Case | 1st sg (ang·) | 1st pl (An·ching) | 2nd sg (nang·) | 3rd sg (ua — TBC) |
+|---|---|---|---|---|
+| Subject | anga | An·ching | na·a | ua |
+| Object | angko | An·ching·ko | nang·ko | ? |
+| Possessive | ang·ni | An·ching·ni | nang·ni | ? |
+| For/dative | angna | An·ching·na | nang·na | ? |
+| With/comitative | ango | An·ching·o | nang·o | ? |
+
+## TODO — 3rd person (ua) still unconfirmed
+Ask Thangseng: "What is the root for ua (he/she)? Object=uko? Possessive=uani?"
