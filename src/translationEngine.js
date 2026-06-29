@@ -83,7 +83,14 @@ function applyTense(verbRoot, tense) {
   const suffix = suffixes[tense] || suffixes.present;
   if (/·a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix;
   if (/(enga|aha|gen|bo)$/.test(verbRoot)) return verbRoot;
-  return verbRoot + '·' + suffix;
+  // Previously inserted a raka unconditionally here (verbRoot + '·' + suffix),
+  // which was wrong for any verb root that doesn't actually have one — e.g.
+  // "Kat" (run) + present -> was producing "Kat·a", but native speaker
+  // confirmed 2026-06-29 the correct form is "Kata" (no raka), matching the
+  // already-confirmed Kata/Kataha/Katenga family. Raka is fixed to the root
+  // per docs/GRAMMAR_RAKA_RULE_CONFIRMED_20260626.md — this function must
+  // never add one that the root's own stored form doesn't already have.
+  return verbRoot + suffix;
 }
 
 const IRREGULAR_VERBS = {
@@ -423,49 +430,102 @@ const PROGRESSIVE_MAP = {
 // Connective words this function knows how to split on, with their
 // Garo translations (sourced from corrections.json — these are the
 // same native-speaker-verified words already used as bare-word
-// translations: and=Aro, but=Indiba, or=ba, if=Ode, so=Uni gimin).
+// translations: and=Aro, but=Indiba, or=ba, so=Uni gimin).
 //
-// Two structural patterns:
-//   - MID-JOINING (and/but/or/so): "[clause 1] CONNECTIVE [clause 2]"
-//   - LEADING (if): "if [clause 1] [clause 2]"
-//
-// Narrow, additive feature — only activates when a known connective
-// word is found, otherwise passes through to normal single-clause
-// translate() untouched. Does NOT modify analyzeGrammar or any shared
-// parsing logic. Each clause is translated independently via the
-// existing translate() pipeline then joined.
+// "if" is handled separately by translateIfClause() below — it is NOT
+// a leading connective word like the others. Native speaker confirmed
+// 2026-06-28/29: "-ode" is a SUFFIX attached to the condition clause's
+// verb stem (cha· + ode = cha·ode = "if eat"), not a standalone word
+// placed at the front of the sentence. It can also attach to an object
+// noun's existing accusative suffix (mi+ko+ode = mikode, "if [object]
+// rice"). This was previously modeled as LEADING_CONNECTIVES: {if:'Ode'}
+// — confirmed structurally wrong, not just buggy; removed entirely.
 const MID_JOIN_CONNECTIVES = {
   'and': 'Aro',
   'but': 'Indiba',
   'or': 'ba',
   'so': 'Uni gimin',
 };
-const LEADING_CONNECTIVES = {
-  'if': 'Ode',
-};
+
+// Strips a verb's bare root-form final "a" to get its stem for suffix
+// attachment, per the confirmed pattern: Cha·a (eat) -> stem Cha· ->
+// Cha·ode (if eat). Kata (run, no raka) -> stem Kat -> Katode. Only
+// strips a single trailing "a" — does not touch the raka mark itself,
+// consistent with "raka is part of the root, suffixes never carry it."
+function stripToStem(garoWord) {
+  if (!garoWord) return garoWord;
+  return garoWord.replace(/a$/i, '');
+}
+
+// Implements the confirmed -ode if-clause pattern. Only activates when
+// the input starts with "if" (English-side trigger), otherwise returns
+// null and the normal cascade continues. Translates the condition
+// clause's final word via the existing pipeline, strips it to its stem,
+// and appends "ode" — does NOT invent any new Garo vocabulary, only
+// reshapes an already-correctly-translated word per a confirmed suffix
+// rule. The consequence clause is translated entirely normally.
+async function translateIfClause(input) {
+  const words = input.trim().split(/\s+/);
+  const lowerWords = words.map(w => w.toLowerCase().replace(/[^a-z']/g, ''));
+  if (lowerWords[0] !== 'if') return null;
+
+  const rest = words.slice(1);
+  const pronouns = ['i', 'you', 'he', 'she', 'we', 'they', 'it'];
+  let splitIdx = -1;
+  for (let i = 1; i < rest.length; i++) {
+    if (pronouns.includes(rest[i].toLowerCase().replace(/[^a-z']/g, ''))) { splitIdx = i; break; }
+  }
+
+  // Native speaker confirmed 2026-06-28/29, full rule across 3 examples
+  // (Na·a cha·ode bilakgen / Mikode cha·ode bilakgen / Mikka waode noko
+  // donggen): -ode attaches to the VERB stem always (last word, per
+  // Garo's confirmed SOV order), AND additionally to an OBJECT noun if
+  // one is present (detected by its existing "·ko" accusative suffix —
+  // e.g. "mi·ko" -> "mikode"). The subject noun does NOT take -ode.
+  const trySplit = async (idx) => {
+    const conditionWords = rest.slice(0, idx);
+    const consequenceWords = rest.slice(idx);
+    if (!conditionWords.length || !consequenceWords.length) return null;
+    const condition = conditionWords.join(' ');
+    const consequence = consequenceWords.join(' ');
+    const [condResult, consResult] = await Promise.all([translate(condition), translate(consequence)]);
+    if (condResult.garo.includes('[UNKNOWN]') || consResult.garo.includes('[UNKNOWN]')) return null;
+
+    const condWords = condResult.garo.split(/\s+/);
+    // Verb is the last word (SOV) — always gets -ode.
+    const verbIdx = condWords.length - 1;
+    condWords[verbIdx] = stripToStem(condWords[verbIdx]) + 'ode';
+    // Object, if present, is marked with a trailing "·ko" — also gets
+    // -ode appended directly after its existing -ko suffix (mi·ko ->
+    // mikode — the raka before "ko" drops, matching the confirmed
+    // "Mikode" example exactly; this is the suffix-juncture, not the
+    // verb-stem rule, so stripToStem is NOT used here).
+    for (let i = 0; i < verbIdx; i++) {
+      if (/·ko$/i.test(condWords[i])) {
+        condWords[i] = condWords[i].replace(/·ko$/i, 'ko') + 'de';
+      }
+    }
+    const conditionWithOde = condWords.join(' ');
+    return { garo: `${conditionWithOde}, ${consResult.garo}`, confidence: (condResult.confidence + consResult.confidence) / 2 };
+  };
+
+  if (splitIdx !== -1) {
+    const result = await trySplit(splitIdx);
+    if (result) return { garo: result.garo, method: 'if-clause-ode', confidence: 0.7 };
+  }
+
+  let best = null;
+  for (let i = 1; i < rest.length; i++) {
+    const result = await trySplit(i);
+    if (result && (!best || result.confidence > best.confidence)) best = result;
+  }
+  if (!best) return null;
+  return { garo: best.garo, method: 'if-clause-ode-fallback', confidence: 0.65 };
+}
 
 async function translateMultiClause(input) {
   const words = input.trim().split(/\s+/);
   const lowerWords = words.map(w => w.toLowerCase().replace(/[^a-z']/g, ''));
-
-  for (const [word, garoWord] of Object.entries(LEADING_CONNECTIVES)) {
-    if (lowerWords[0] === word) {
-      const rest = words.slice(1).join(' ');
-      const pronouns = ['i', 'you', 'he', 'she', 'we', 'they', 'it'];
-      const restWords = rest.split(/\s+/);
-      let splitIdx = -1;
-      for (let i = 1; i < restWords.length; i++) {
-        const w = restWords[i].toLowerCase().replace(/[^a-z']/g, '');
-        if (pronouns.includes(w)) { splitIdx = i; break; }
-      }
-      if (splitIdx === -1) return null;
-      const clause1 = restWords.slice(0, splitIdx).join(' ');
-      const clause2 = restWords.slice(splitIdx).join(' ');
-      const [r1, r2] = await Promise.all([translate(clause1), translate(clause2)]);
-      if (r1.garo.includes('[UNKNOWN]') || r2.garo.includes('[UNKNOWN]')) return null;
-      return { garo: `${garoWord} ${r1.garo}, ${r2.garo}`, method: 'multi-clause-leading', confidence: 0.7 };
-    }
-  }
 
   for (const [word, garoWord] of Object.entries(MID_JOIN_CONNECTIVES)) {
     const idx = lowerWords.indexOf(word);
@@ -548,6 +608,9 @@ export async function translate(input) {
   // Placed AFTER corrections/phrase-map/single-word checks so already-
   // verified sentences containing connective words are never hijacked —
   // they match as exact phrases above and never reach this step.
+  const ifClauseResult = await translateIfClause(cleaned);
+  if (ifClauseResult) return ifClauseResult;
+
   const multiClauseResult = await translateMultiClause(cleaned);
   if (multiClauseResult) return multiClauseResult;
 
