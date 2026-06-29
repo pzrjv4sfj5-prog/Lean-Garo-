@@ -345,7 +345,7 @@
   "the one at home": "Noko dongenggipa",
   "let's go": "Hai re·naha",
   "let's sleep": "Hai tusina",
-  "let's drink": "Hai ringaha",
+  "let's drink": "Hai ringna",
   "let's sit": "Hai asongha",
   "let's play": "Hai kalaha",
   "let's work": "Hai dakha",
@@ -614,5 +614,11 @@
   "angry": "ka·o",
   "not angry": "nangja",
   "gentle": "rinok rinok",
-  "love is not angry but gentle": "Ka·sara ka·o nangja, indiba rinok rinok daka"
+  "love is not angry but gentle": "Ka·sara ka·o nangja, indiba rinok rinok daka",
+  "yes": "Am",
+  "i do not eat": "Anga cha·ja",
+  "i don't eat": "Anga cha·ja",
+  "therefore i love you": "Uni gimin anga nang·na ka·saa",
+  "i love you": "Anga nang·na ka·saa",
+  "love you": "nang·na ka·saa"
 }
