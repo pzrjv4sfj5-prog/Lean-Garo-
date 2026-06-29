@@ -292,3 +292,28 @@ sounds good              = knatoa
 
 _Single source of truth. Supersedes all individual GRAMMAR_*.md files._
 _Update here whenever Thangseng confirms new rules._
+
+---
+
+## 13. COPULA — `daka` (is/are)
+
+Source: Thangseng (native speaker), 2026-06-29
+Status: CONFIRMED
+
+`daka` functions as the copula verb "is/are" in Garo.
+
+Example:
+```
+Ka·sara ka·o nangja, indiba rinok rinok daka
+love    angry not     but    gentle(x2)  is
+= Love is not angry, but is gentle
+```
+
+### Reduplication for emphasis
+`rinok rinok` = doubling the adjective intensifies meaning ("very gentle").
+This is a productive Garo pattern — reduplication = emphasis/intensity.
+
+### Engine note (Claude A)
+`daka` as copula is not yet handled by grammar-assembly.
+Sentences like "X is Y" currently use adjective-only output (e.g. `Ua Nama`).
+`daka` may be needed explicitly in some constructions — needs more examples.
