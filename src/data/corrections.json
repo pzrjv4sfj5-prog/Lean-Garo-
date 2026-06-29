@@ -610,7 +610,7 @@
   "coin": "tangka bisil",
   "coins": "tangka bisil",
   "5 coins": "tangka bisil gong·bonga",
-  "love": "Ka·sara",
+  "love": "ka·saa",
   "angry": "ka·o",
   "not angry": "nangja",
   "gentle": "rinok rinok",
@@ -623,5 +623,11 @@
   "love you": "nang·na ka·saa",
   "is": "daka",
   "daka": "is",
-  "rinok": "gentle"
+  "rinok": "gentle",
+  "beloved": "Ka·sara",
+  "i am": "Anga daka",
+  "you are": "Na·a daka",
+  "he is": "Ua daka",
+  "she is": "Ua daka",
+  "we are": "An·ching daka"
 }

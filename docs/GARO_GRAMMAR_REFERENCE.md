@@ -317,3 +317,27 @@ This is a productive Garo pattern — reduplication = emphasis/intensity.
 `daka` as copula is not yet handled by grammar-assembly.
 Sentences like "X is Y" currently use adjective-only output (e.g. `Ua Nama`).
 `daka` may be needed explicitly in some constructions — needs more examples.
+
+---
+
+## 14. `ka·sara` vs `ka·saa` — noun vs verb
+
+Source: Thangseng, 2026-06-29. CONFIRMED.
+
+| Word | Type | Meaning |
+|---|---|---|
+| `Ka·sara` | noun | beloved |
+| `ka·saa` | verb | to love |
+
+Example: `Anga nang·na ka·saa` = I love you (verb form)
+
+## 15. `daka` — copula, all persons confirmed
+
+`daka` = is/am/are — works for ALL persons (native-speaker confirmed).
+
+| Garo | Meaning |
+|---|---|
+| `Anga daka` | I am |
+| `Na·a daka` | You are |
+| `Ua daka` | He/she is |
+| `An·ching daka` | We are |
