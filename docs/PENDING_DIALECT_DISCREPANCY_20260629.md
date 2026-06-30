@@ -11,11 +11,12 @@ Status: UNRESOLVED — needs clarification before locking in
 - Difference: `on'aha` (past, "gave") vs `on'a` (present/root, "gives/give")
 - Currently live: Alia's version (`on·a`)
 
-### 2. "why did you come?"
+### 2. "why did you come?" — RESOLVED ✅
 - **Thangseng:** `Na'a maini gimin re'baaha?`
 - **Alia:** `Na'a maini gimin re'baa?`
-- Difference: `re·baaha` (longer past form) vs `re·baa` (shorter past form)
-- Currently live: Alia's version (`re·baa`)
+- **Confirmed (Thangseng, 2026-06-29): "Both can work."**
+- Both `re·baaha` and `re·baa` are valid past forms — register/style variation, not an error.
+- Currently live: `re·baa` (Alia's shorter form) — acceptable, no change needed.
 
 ### 3. "i have two dogs" — MATCHES, no discrepancy
 - **Thangseng:** `Ango achak mang'gni donga`

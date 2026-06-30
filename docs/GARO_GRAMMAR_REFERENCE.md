@@ -341,3 +341,18 @@ Example: `Anga nang·na ka·saa` = I love you (verb form)
 | `Na·a daka` | You are |
 | `Ua daka` | He/she is |
 | `An·ching daka` | We are |
+
+---
+
+## 16. PAST TENSE VARIANTS — confirmed flexibility
+
+Source: Thangseng, 2026-06-29
+
+For some verbs, multiple past-tense suffix lengths are equally valid:
+`re·baaha` and `re·baa` (both = "came") — confirmed both correct.
+
+**Implication:** Not every suffix variation is an error. Some verbs allow
+shorter/longer past forms interchangeably (register or speaker preference,
+not grammatically distinct). Don't assume an unconfirmed form is wrong
+just because it differs in length from another confirmed form of the
+same verb — ask before correcting.
