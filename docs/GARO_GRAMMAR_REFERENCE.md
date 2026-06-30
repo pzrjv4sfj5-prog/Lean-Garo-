@@ -356,3 +356,25 @@ shorter/longer past forms interchangeably (register or speaker preference,
 not grammatically distinct). Don't assume an unconfirmed form is wrong
 just because it differs in length from another confirmed form of the
 same verb — ask before correcting.
+
+---
+
+## 17. SHORT vs LONG PAST FORMS — preference rule
+
+Source: Thangseng, 2026-06-29. CONFIRMED.
+
+> "Both works depending on how you use it. But it may be better to
+> remove 'ha'. Let's just say re'baa and on'a."
+
+**Rule:** When a verb has both a short (`-a`) and long (`-aha`) past form,
+**prefer the short form** as the default/standard. Both are grammatically
+valid, but short form is the recommended default for the engine.
+
+| Verb | Short (preferred) | Long (also valid) |
+|---|---|---|
+| come | re·baa | re·baaha |
+| give | on·a | on·aha |
+
+**Engine note:** When generating past tense, default to short form
+(`root+a` style) rather than `root+aha`, unless a specific confirmed
+sentence uses the long form.
