@@ -115,18 +115,30 @@ If root has raka → every inflected form inherits it. If not → none do.
 | `+ode` | if-clause (conditional) | cha·ode | katode |
 | `+chi+na` | subjunctive (let X do) | cha·china | — |
 
-### Short vs long past forms
-Some verbs allow BOTH a short (`-a`) and long (`-aha`) past form — both
-grammatically valid. **Prefer the short form as engine default** per
-explicit native-speaker guidance ("better to remove 'ha'"):
+### Short vs long past forms — RESOLVED: this is simple past vs perfect, not register
+What looked like "two valid forms of the same tense" is actually two
+DIFFERENT tenses with different meanings. Native-speaker confirmed
+2026-06-30:
 
-| Verb | Short (preferred) | Long (also valid) |
+| Form | Tense | Meaning |
 |---|---|---|
-| come | re·baa | re·baaha |
-| give | on·a | on·aha |
+| `-a` / `-aa` (short) | simple past | did X |
+| `-aha` (long) | perfect | have done X (implies relevance to now) |
 
-Don't assume a form is wrong just because it's shorter/longer than
-another confirmed form of the same verb — both may be correct.
+| Verb | Simple past | Perfect ("have...") |
+|---|---|---|
+| come | re·baa = came | re·baaha = have come |
+| give | on·a = gave | on·aha = have given |
+
+Examples:
+- `Na·a maini gimin re·baa?` = Why did you come? (simple past)
+- `Na·a maina re·baaha?` = What have you come for? (perfect)
+- `Sawa nang·na iako on·a?` = Who gave you this? (simple past)
+- `Sawa nang·na iako on·aha?` = Who has given you this? (perfect)
+
+**This means `-aha` is NOT just a "long form" — it's the perfect tense
+suffix, distinct in meaning from the simple past `-a`.** Engine should
+treat these as two separate tenses, not interchangeable variants.
 
 ### Hai + verb — "let's" constructions
 - `Hai + verb·na` = let's do (future, not imminent): `Hai knalo momo cha·na` = let's eat momo tomorrow
@@ -292,9 +304,21 @@ let him eat                     = Ua cha·china
 sounds good                     = knatoa
 i love you                      = Anga nang·na ka·saa
 i have two dogs                 = Ango achak mang·gni donga
-who gave you this               = Sawa nang·na iako on·a
-why did you come                = Na·a maini gimin re·baa
-love is not angry but gentle    = Ka·sara ka·o nangja, indiba rinok rinok daka
+who gave you this                = Sawa nang·na iako on·a
+who has given you this           = Sawa nang·na iako on·aha?
+why did you come                 = Na·a maini gimin re·baa
+what have you come for           = Na·a maina re·baaha?
+love is not angry but gentle     = Ka·sara ka·o nangja, indiba rinok rinok daka
+i work so i can eat (literal)    = Anga kam ka·a jedakode anga cha·na man·gen
+i work so that i can eat (alt)   = Anga cha·na man·na gita kam ka·a
+```
+
+### New vocab from "i work so i can eat"
+```
+kam = work (noun) | ka·a = do (verb, distinct from dak·a)
+jedakode = "since/because" conditional connector (verb+ode pattern extended)
+man·gen = will get/will be able (future of man = to get/obtain)
+gita = "in order to" / purposive connector (alternate construction)
 ```
 
 ---
@@ -306,7 +330,6 @@ Treat as best-guess only — do not cite as grammar fact until confirmed.
 
 - `i went to the market to buy rice` — blocked on engine bug (location-noun dropped), not yet asked
 - `i am tired but i will work` — verb form for "tired" unconfirmed
-- `i work so i can eat` — `Anga dak·a, Uni gimin anga cha·na` — unconfirmed
 - `she bought three books` — unconfirmed
 - `the boy is playing in the school` — unconfirmed
 - `my father is a teacher` — unconfirmed
