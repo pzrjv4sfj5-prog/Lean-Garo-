@@ -41,7 +41,7 @@ Before adding/changing any Garo word or sentence:
 | `tusi` | ❌ | Tusia, tusienga, tus·aha, tusibo |
 | `agan` | ❌ | Agana, aganaha, aganenga, aganbo |
 | `nam` | ❌ | Nama, namja, namgija — NEVER nam·a |
-| `dong` | ❌ | donga, dongja, donggen, dongenga — confirmed by Thangseng: "Ango pen donga" |
+| `dong` | ❌ | donga, dongja, donggen, dongenga, dongachim(past) — confirmed: "Ango pen donga", "Uo ki·tap dongachim" |
 | `wa` (rain) | ❌ | waode — no raka |
 | `bilak` | ❌ | bilakgen — no raka |
 
@@ -186,7 +186,7 @@ But WRONG for lying/crying/saying:
 | Item | Question |
 |---|---|
 | `brong·` classifier | Never tested in a real sentence |
-| Past negation | `i did not eat` — is it `Anga cha·ja` or something else? |
+| Past of have | ~~dongachim confirmed 2026-07-01~~ ✅ |
 | `how much` | Confirmed `Iako baita dam?` — but is `baita` "how much" or "price"? |
 | `angna`, `ango` comitative | Pattern-inferred, not explicitly tested |
 | `biko/bini/bina/bio` | Informal 3rd person case forms — pattern only |
