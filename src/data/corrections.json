@@ -275,8 +275,8 @@
   "younger sibling": "Jong / No",
   "i am sick": "Anga sakamenga",
   "i have a headache": "Ang·ni sko·saa",
-  "i am tired": "Anga neng·enga",
-  "i am happy": "Anga han·sengenga",
+  "i am tired": "Anga nenga",
+  "i am happy": "Anga kusi ong·a",
   "i am sad": "Anga duk ong·a",
   "i am scared": "Anga kena",
   "i don't care": "Anga Dal·e Ra·ja",
@@ -671,8 +671,11 @@
   "you run": "Katbo",
   "you sleep": "Tusibo",
   "damo": "wait/stop",
-  "tired": "neng·a",
-  "happy": "han·seng·a",
-  "i am tired but i will work": "Anga neng·enga indiba dak·agen",
-  "how": "maidake"
+  "tired": "nenga",
+  "happy": "kusi",
+  "i am tired but i will work": "Anga nenga indiba dak·agen",
+  "how": "maidake",
+  "be happy": "kusi ong·bo",
+  "i am so tired": "Anga indakple nengaha",
+  "how did i get it": "Anga maidake iako man·a"
 }
