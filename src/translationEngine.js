@@ -107,7 +107,7 @@ const IRREGULAR_VERBS = {
   'gave':'on·aha','giving':'onenga',
   'ran':'kataha','running':'katenga',
   'slept':'tus·aha','sleeping':'tusenga',
-  'worked':'dak·aha','working':'dak·enga',
+  'worked':'dakaha','working':'dakenga',
   'laughed':'ka·ding·aha','laughing':'ka·dingeng',
   'washed':'su·gala','washing':'su·galenga',
   'bought':'brea·aha','buying':'breaenga',
@@ -139,7 +139,7 @@ const POSSESSIVES = {
 const PURPOSE_VERBS = {
   'see':'nik·a·na','eat':'cha·na','drink':'ring·na',
   'meet':'chap·na','buy':'brea·na','sell':'pala·na',
-  'go':'re·ang·na','come':'re·ba·na','work':'dak·na',
+  'go':'re·ang·na','come':'re·ba·na','work':'dakna',
   'study':'pora·na','pray':'bi·a·na','help':'betoi·na',
   'find':'mia·na','give':'on·a·na','take':'ra·a·na',
 };
@@ -344,7 +344,7 @@ function fuzzyMatch(input) {
 const PURPOSE_MAP = {
   'see':'nina','meet':'chap·na','buy':'brea·na','sell':'pala·na',
   'eat':'cha·na','drink':'ring·na','study':'pora·na','read':'pora·na',
-  'work':'dak·na','pray':'bi·a·na','go':'re·ang·na','come':'re·ba·na',
+  'work':'dakna','pray':'bi·a·na','go':'re·ang·na','come':'re·ba·na',
   'help':'betoi·na','find':'mia·na','give':'on·a·na','take':'ra·a·na',
   'speak':'a·gan·na','talk':'a·gan·na','learn':'skia·na','teach':'skia on·na',
   'cook':'song·a·na','wash':'su·gala·na','sleep':'tusia·na','play':'kal·a·na',
@@ -425,7 +425,7 @@ const PAST_TO_ROOT = {
 const PROGRESSIVE_MAP = {
   'eating':'cha·enga','going':'re·angenga','running':'katenga',
   'sleeping':'tusienga','coming':'rebaenga','drinking':'ringenga',
-  'working':'dak·enga','studying':'poraenga','praying':'bi·aenga',
+  'working':'dakenga','studying':'poraenga','praying':'bi·aenga',
   'speaking':'aganenga','listening':'knachik·enga','looking':'ni·enga',
   'cooking':'song·enga','washing':'su·galaenga','buying':'breaenga',
   'selling':'palaenga','teaching':'skiaenga','learning':'skiaenga',

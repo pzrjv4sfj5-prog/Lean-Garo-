@@ -35,7 +35,7 @@ Before adding/changing any Garo word or sentence:
 | `ka·` (love) | ✅ | ka·saa, ka·saaha, ka·saenga, ka·saagen |
 | `nang·` | ✅ | nang·ni, nang·ko, nang·na, nang·o |
 | `ang·` | ✅ | ang·ni (possessive only — subject=anga, object=angko) |
-| `dak·` | ✅ | Dak·a, dak·aha, dak·enga |
+| `dak` | ❌ | Daka, dakaha, dakenga |
 | `kat` | ❌ | kata, kataha, katenga, katbo, katgen — NEVER kat·anything |
 | `ring` | ❌ | Ringa, ring·aha (NOTE: ring·aha has raka — this is the NOUN ring's possessive, not the verb suffix) |
 | `tusi` | ❌ | Tusia, tusienga, tus·aha, tusibo |

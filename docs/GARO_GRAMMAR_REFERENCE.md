@@ -179,7 +179,7 @@ go=re·ang·a, went=re·anga, going=re·angenga
 come=re·ba·a, came=re·baa (preferred) / re·baaha
 give=on·a (preferred) / on·aha, gave=on·aha | take=ra·a
 sleep=Tusia, slept=tus·aha, sleeping=tusenga
-work=Dak·a, worked=dak·aha, working=dakenga
+work=Daka, worked=dakaha, working=dakenga
 have=dong·a (donga without raka in "Ango...donga" construction)
 dance=Chroka | sing=ring·a | swim=jrona
 stand=Chakata | sit=Asong·a
@@ -276,7 +276,7 @@ and=Aro | but=Indiba | or=ba | if=Ode | so=Uni gimin
 very=namen | only=saksakosan | long=ro·a | strong=bilak
 thief=cha·u | rain (noun)=mikka | home=nok | at home=noko
 love (verb)=ka·saa | beloved (noun)=Ka·sara | angry=ka·o | gentle=rinok
-is/am/are=daka | family=po·ri·bar | work=Dak·a | have=dong·a
+is/am/are=daka | family=po·ri·bar | work=Daka | have=dong·a
 ```
 
 ### Animals
