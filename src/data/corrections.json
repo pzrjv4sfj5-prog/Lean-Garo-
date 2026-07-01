@@ -26,7 +26,7 @@
   "i do not understand": "Anga uija",
   "i do not know": "Anga uija",
   "i do not want": "Anga nang·ja",
-  "i do not have": "Anga dong·ja",
+  "i do not have": "Anga dongja",
   "this is not good": "Ia nama·gija",
   "it is not good": "nama·gija",
   "not good": "nama·gija",
@@ -639,7 +639,7 @@
   "work": "Dak·a",
   "family": "po·ri·bar",
   "my family": "ang·ni po·ri·bar",
-  "have": "dong·a",
+  "have": "donga",
   "i love my family": "Anga ang·ni po·ri·bar·ko ka·saa",
   "i have two dogs": "Ango achak mang·gni donga",
   "she bought three books": "Ua ki·tap king·gittam brea·aha",
@@ -653,5 +653,10 @@
   "the boy is playing in the school": "Bi·sa skul·o kal·enga",
   "what have you come for": "Na·a maina re·baaha?",
   "who has given you this": "Sawa nang·na iako on·aha?",
-  "i work so that i can eat": "Anga cha·na man·na gita kam ka·a"
+  "i work so that i can eat": "Anga cha·na man·na gita kam ka·a",
+  "live": "donga",
+  "living": "dongenga",
+  "will stay": "donggen",
+  "i have a pen": "Ango pen donga",
+  "i will stay at home": "Anga noko donggen"
 }
