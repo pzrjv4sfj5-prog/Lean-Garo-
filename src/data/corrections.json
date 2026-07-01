@@ -664,12 +664,12 @@
   "you stand": "Chakata",
   "you stand up": "Chadenga",
   "you sit": "Asong·a",
-  "you eat": "Cha·bo",
-  "you drink": "Ringbo",
+  "you eat": "Na·a Cha·a",
+  "you drink": "Na·a Ringa",
   "you go": "Re·angbo",
   "you come": "Re·babo",
   "you run": "Na·a Kata",
-  "you sleep": "Tusibo",
+  "you sleep": "Na·a Tusia",
   "damo": "wait/stop",
   "tired": "nenga",
   "happy": "kusi",
@@ -698,5 +698,6 @@
   "i had a pen": "Ango kolom dongachim",
   "i used to work": "Anga ka·achim",
   "i was studying": "Anga poraienga chim",
-  "used to": "chim"
+  "used to": "chim",
+  "you work": "Na·a Dak·a"
 }

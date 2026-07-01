@@ -58,7 +58,7 @@ function lookupGaro(key) {
 
 const STOP_WORDS = new Set([
   'a','an','the','is','are','was','were','be','been','being',
-  'do','does','did','will','would','could',
+  'do','does','did','would','could',
   'should','may','might','shall','can','to','of','in','on',
   'at','by','for','with','about','from',
   'am','its',
@@ -86,17 +86,14 @@ const VERB_SUFFIXES = {
 };
 
 function applyTense(verbRoot, tense) {
-  const suffixes = { present: 'a', past: 'aha', future: 'gen', command: 'bo' };
+  const suffixes = { present: 'a', past: 'aha', future: 'gen', command: 'bo', chim: 'chim', pastcont: 'engachim' };
   const suffix = suffixes[tense] || suffixes.present;
-  if (/·a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix;
-  if (/(enga|aha|gen|bo)$/.test(verbRoot)) return verbRoot;
-  // Previously inserted a raka unconditionally here (verbRoot + '·' + suffix),
-  // which was wrong for any verb root that doesn't actually have one — e.g.
-  // "Kat" (run) + present -> was producing "Kat·a", but native speaker
-  // confirmed 2026-06-29 the correct form is "Kata" (no raka), matching the
-  // already-confirmed Kata/Kataha/Katenga family. Raka is fixed to the root
-  // per docs/GRAMMAR_RAKA_RULE_CONFIRMED_20260626.md — this function must
-  // never add one that the root's own stored form doesn't already have.
+  // If already inflected, return as-is
+  if (/(enga|aha|gen|bo|chim)$/.test(verbRoot)) return verbRoot;
+  // Strip trailing vowel 'a' before adding suffix (Tusia -> Tusi + gen = Tusigen)
+  // But preserve raka: cha·a -> cha· + suffix (not cha + suffix)
+  if (/·a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix;  // raka root: cha·a -> cha·gen
+  if (/[^·]a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix; // plain root: Tusia -> Tusigen
   return verbRoot + suffix;
 }
 
@@ -110,7 +107,7 @@ const IRREGULAR_VERBS = {
   'gave':'on·aha','giving':'onenga',
   'ran':'kataha','running':'katenga',
   'slept':'tus·aha','sleeping':'tusenga',
-  'worked':'dak·aha','working':'dakenga',
+  'worked':'dak·aha','working':'dak·enga',
   'laughed':'ka·ding·aha','laughing':'ka·dingeng',
   'washed':'su·gala','washing':'su·galenga',
   'bought':'brea·aha','buying':'breaenga',
@@ -179,8 +176,8 @@ export function analyzeGrammar(input) {
   }
 
   const pronounMap = {
-    'i':'Anga','me':'Anga','you':'Na·a','he':'Ua','she':'Ua',
-    'it':'Ua','we':'An·ching','us':'An·ching','they':'Uamang','them':'Uamang',
+    'i':'Anga','me':'angko','you':'Na·a','he':'Ua','she':'Ua',
+    'it':'Ua','we':'An·ching','us':'An·ching·ko','they':'Uamang','them':'Uamang·ko',
   };
 
   let subject = null, verb = null, object = null;
@@ -195,11 +192,12 @@ export function analyzeGrammar(input) {
   if (pronounMap[firstWord]) {
     subject = { english: words[0], garo: pronounMap[firstWord] };
 
-    // Find verb — skip stop words and possessives, check irregular first
+    // Find verb — skip stop words, possessives, and auxiliary tense markers
+    const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','should','may','might','can','used','to']);
     let verbIndex = -1;
     for (let i = 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
-      if (STOP_WORDS.has(w) || POSSESSIVES[w]) continue;
+      if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) continue;
       const isIrregular = !!IRREGULAR_VERBS[w] || !!IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')];
       const garoVerb = findVerbForm(w);
       if (garoVerb) {
@@ -208,7 +206,10 @@ export function analyzeGrammar(input) {
           garoWithTense = applyTense(garoVerb, 'future');
         }
         if (isNegative) {
-          garoWithTense = garoWithTense + '·gija';
+          // Per raka rule: suffix never adds raka. If root ends with raka (·x),
+          // strip the vowel suffix and re-add +gija. Otherwise just append gija.
+          const base = garoWithTense.replace(/·a$/, '·').replace(/a$/, '');
+          garoWithTense = base.includes('·') ? base + 'gija' : garoWithTense.replace(/a$/, '') + 'gija';
         }
         verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i };
         verbIndex = i;
@@ -236,7 +237,7 @@ export function analyzeGrammar(input) {
           i++; continue;
         }
       }
-      if (POSSESSIVES[w] || STOP_WORDS.has(w) || w === words[0].toLowerCase()) continue;
+      if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || w === words[0].toLowerCase()) continue;
       if (verb && words[i] === verb.english) continue;
       if (IRREGULAR_VERBS[w] || IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')]) continue;
       objectWords.push(words[i]);
@@ -424,7 +425,7 @@ const PAST_TO_ROOT = {
 const PROGRESSIVE_MAP = {
   'eating':'cha·enga','going':'re·angenga','running':'katenga',
   'sleeping':'tusienga','coming':'rebaenga','drinking':'ringenga',
-  'working':'dakenga','studying':'poraenga','praying':'bi·aenga',
+  'working':'dak·enga','studying':'poraenga','praying':'bi·aenga',
   'speaking':'aganenga','listening':'knachik·enga','looking':'ni·enga',
   'cooking':'song·enga','washing':'su·galaenga','buying':'breaenga',
   'selling':'palaenga','teaching':'skiaenga','learning':'skiaenga',
