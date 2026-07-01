@@ -45,13 +45,20 @@ function lookup(key) {
 }
 
 function lookupGaro(key) {
-  const e = lookup(key);
+  // Check corrections.json first — single-word keys were previously
+  // bypassed here since EN_INDEX is built only from compiled_dict.json.
+  // This meant confirmed corrections only took effect in the top-level
+  // translate() fast-path, not in findVerbForm/grammar-assembly which
+  // call lookupGaro() directly.
+  const k = key.toLowerCase().trim();
+  if (corrections[k]) return corrections[k];
+  const e = lookup(k);
   return e ? e.garo : null;
 }
 
 const STOP_WORDS = new Set([
   'a','an','the','is','are','was','were','be','been','being',
-  'have','has','had','do','does','did','will','would','could',
+  'do','does','did','will','would','could',
   'should','may','might','shall','can','to','of','in','on',
   'at','by','for','with','about','from',
   'am','its',
