@@ -96,7 +96,7 @@ If root has raka → every inflected form inherits it. If not → none do.
 | `agan` | ❌ | speak |
 | `nam` | ❌ | good |
 | `wa` | ❌ | rain (verb) |
-| `dong` | ❌ | stay/have |
+| `dong` | ❌ | have/stay/live (same word, no raka — Thangseng confirmed: Ango pen donga, Guwahatio dongenga) |
 | `bilak` | ❌ | strong |
 
 ### Tense / mood suffix table
