@@ -192,3 +192,35 @@ But WRONG for lying/crying/saying:
 | `biko/bini/bina/bio` | Informal 3rd person case forms — pattern only |
 | `jedakode` | Confirmed in 1 sentence — is this productive (any verb+dak+ode)? |
 | `man·gen` | Confirmed in 1 sentence — is this "will get/obtain" generally? |
+
+---
+
+## RULE 13 — EMERGING PATTERN: `-achim` PAST SUFFIX (PENDING CONFIRMATION)
+
+Observed in confirmed sentences — NOT yet explicitly named by Thangseng.
+
+| Form | Source sentence | Root |
+|---|---|---|
+| `dongachim` | `Uo ki·tap dongachim` = she had a book | `dong` |
+| `chanchiachim` | `angade na·akon inesa chanchiachim` = i thought it was you | `chanchie`? |
+
+**Hypothesis:** `-achim` is a simple past suffix for a specific verb class,
+distinct from `-aha` (perfect) and `-aa` (short past).
+
+**Before applying to any new verb:** Ask Thangseng:
+"Is `-achim` a general past suffix like `-aha`? For example, would
+'I stayed' be `Anga dongachim` or `Anga dongaha`?"
+
+---
+
+## RULE 14 — `dongama` = EXISTENTIAL "THERE IS"
+
+Confirmed in multiple sentences:
+- `Karen dongama` = there is current (electricity)
+- `Nang·ni palang ning·o guang donga` = there's a spider under your bed
+
+`donga` = has/have/there is (present)
+`dongama` = there is (existential, affirmative — slight variant)
+`dongja` = there is not / does not have (negation)
+
+Both `donga` and `dongama` appear valid for "there is" — context dependent.
