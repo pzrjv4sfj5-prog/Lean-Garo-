@@ -113,6 +113,8 @@ If root has raka → every inflected form inherits it. If not → none do.
 | `+naha` | imminent let's | cha·naha | katnaha |
 | `+ja` | negation, predicative | cha·ja | katja |
 | `+ode` | if-clause (conditional) | cha·ode | katode |
+| `+chim` | discontinuous past ("used to") | cha·chim | katchim |
+| `+engachim` | past continuous ("was doing") | cha·engachim | katengachim |
 | `+chi+na` | subjunctive (let X do) | cha·china | — |
 
 ### Short vs long past forms — RESOLVED: this is simple past vs perfect, not register

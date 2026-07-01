@@ -195,22 +195,38 @@ But WRONG for lying/crying/saying:
 
 ---
 
-## RULE 13 — EMERGING PATTERN: `-achim` PAST SUFFIX (PENDING CONFIRMATION)
+## RULE 13 — `chim` SUFFIX — DISCONTINUOUS PAST / "USED TO" ✅ CONFIRMED
 
-Observed in confirmed sentences — NOT yet explicitly named by Thangseng.
+Source: Thangseng, 2026-07-01
 
-| Form | Source sentence | Root |
+> "chim has a sense of discontinuity. Not just something that happened in the past
+> but it is discontinued. 'anga ka·achim' = I used to work — in the past, not working anymore."
+
+### Suffix breakdown
+| Suffix | Meaning | Example |
 |---|---|---|
-| `dongachim` | `Uo ki·tap dongachim` = she had a book | `dong` |
-| `chanchiachim` | `angade na·akon inesa chanchiachim` = i thought it was you | `chanchie`? |
+| root+`chim` | discontinuous past / used to / had | `dongachim`, `ka·achim` |
+| root+`engachim` | past continuous (was doing, no longer) | `poraienga chim` |
 
-**Hypothesis:** `-achim` is a simple past suffix for a specific verb class,
-distinct from `-aha` (perfect) and `-aa` (short past).
+- `enga` = continuous + `chim` = discontinuous past → `engachim` = was doing (stopped)
 
-**Before applying to any new verb:** Ask Thangseng:
-"Is `-achim` a general past suffix like `-aha`? For example, would
-'I stayed' be `Anga dongachim` or `Anga dongaha`?"
+### Confirmed examples
+```
+Ango dongachim        = I had it
+Ango ki·tap dongachim = I had a book
+Ango kolom dongachim  = I had a pen
+Anga ka·achim         = I used to work
+Anga poraienga chim   = I was studying
+```
 
+### Key distinction from -aha
+- `-aha` = perfect, have done X (relevant to present)
+- `-chim` = discontinued past, used to do X (no longer the case)
+
+### Engine note (Claude A)
+Add `chim` to tense suffix table. Two patterns:
+- root+`chim` = discontinuous simple past
+- root+`enga`+`chim` = past continuous (written `engachim`)
 ---
 
 ## RULE 14 — `dongama` = EXISTENTIAL "THERE IS"

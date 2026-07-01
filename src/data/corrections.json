@@ -692,5 +692,11 @@
   "had": "dongachim",
   "she has a book": "Uo ki·tap donga",
   "he has a book": "Uo ki·tap donga",
-  "uo": "she/he"
+  "uo": "she/he",
+  "i had it": "Ango dongachim",
+  "i had a book": "Ango ki·tap dongachim",
+  "i had a pen": "Ango kolom dongachim",
+  "i used to work": "Anga ka·achim",
+  "i was studying": "Anga poraienga chim",
+  "used to": "chim"
 }
