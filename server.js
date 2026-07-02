@@ -189,11 +189,9 @@ app.post('/api/translate', async (req, res) => {
     const structuralOutput = buildSentence(clean)
     if (structuralOutput && structuralOutput !== clean) return res.json({ translation: structuralOutput, method: "structural_lookup" })
 
-    try {
-      const aiResponse = await analyzeSentence(text)
-      if (aiResponse) return res.json({ translation: aiResponse, method: "gemini_fallback" })
-    } catch (aiErr) { /** Fall through **/ }
-
+    // Gemini fallback removed — analyzeSentence() returns corrected English,
+    // not Garo, so always-truthy check was returning raw English as translation.
+    // Consistent with translationEngine.js step-10 removal.
     res.json({ translation: text, method: "identity_fallback" })
   } catch (e) {
     res.status(500).json({ error: e.message })
