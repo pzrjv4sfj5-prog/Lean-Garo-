@@ -86,7 +86,7 @@ const VERB_SUFFIXES = {
 };
 
 function applyTense(verbRoot, tense) {
-  const suffixes = { present: 'a', past: 'aha', future: 'gen', command: 'bo', chim: 'chim', pastcont: 'engachim' };
+  const suffixes = { present: 'a', past: 'aha', future: 'gen', command: 'bo', negative_future: 'jawa', negative_command: 'nabe', chim: 'chim', pastcont: 'engachim' };
   const suffix = suffixes[tense] || suffixes.present;
   // If already inflected, return as-is
   if (/(enga|aha|gen|bo|chim)$/.test(verbRoot)) return verbRoot;

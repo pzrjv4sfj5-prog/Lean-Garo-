@@ -109,6 +109,8 @@ If root has raka → every inflected form inherits it. If not → none do.
 | `+enga` | progressive (doing) | cha·enga | katenga |
 | `+gen` | future (will do) | cha·gen | katgen |
 | `+bo` | imperative (do!) | cha·bo | katbo |
+| `+nabe` | negative imperative (don't!) | cha·nabe | katnabe |
+| `+jawa` | negative future (will not) | cha·jawa | katjawa |
 | `+na` | infinitive / future let's | cha·na | katna |
 | `+naha` | imminent let's | cha·naha | katnaha |
 | `+ja` | negation, predicative | cha·ja | katja |

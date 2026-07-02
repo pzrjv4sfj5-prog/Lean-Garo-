@@ -240,3 +240,61 @@ Confirmed in multiple sentences:
 `dongja` = there is not / does not have (negation)
 
 Both `donga` and `dongama` appear valid for "there is" — context dependent.
+
+---
+
+## RULE 15 — STEM FORMATION (from official suffix doc, 2026-07-01)
+
+> "We get the stem of a word by removing a letter from the principal word."
+> "If a word has a raka, the letter(s) after the raka is removed, the raka is retained."
+
+| Root word | Stem | Rule |
+|---|---|---|
+| `daka` | `dak` | remove trailing `a` |
+| `cha·a` | `cha·` | remove `a` after raka, retain raka |
+| `ka·a` | `ka·` | remove `a` after raka, retain raka |
+| `nama` | `nam` | remove trailing `a` |
+
+For compound verbs: changes apply to SECOND word only.
+`a·jak soka` → stem = `a·jak sok` → `a·jak sokgen`, `a·jak sokbo`
+
+---
+
+## RULE 16 — COMPLETE SUFFIX TABLE (official, 2026-07-01)
+
+### Verb suffixes (applied to stem)
+| Suffix | Meaning | daka example | cha·a example |
+|---|---|---|---|
+| `+gen` | will (future) | dakgen | cha·gen |
+| `+bo` | do! (imperative) | dakbo | cha·bo |
+| `+nabe` | don't (neg imperative) | daknabe | cha·nabe |
+| `+jawa` | will not (neg future) | dakjawa | cha·jawa |
+| `+gipa` | good/positive adj | namgipa | — |
+| `+ja` | not/bad (predicative) | namja | — |
+| `+gijagipa` | bad (attributive) | namgijagipa | — |
+
+### Noun/pronoun suffixes (applied to stem)
+| Suffix | Meaning | anga example |
+|---|---|---|
+| `+ni` | genitive (my/mine) | angni = my |
+| `+na` | dative (for/to me) | angna = for me |
+| `+o` | locative (at/in/on/with) | — (added to noun directly, no letter removed) |
+| `+chi` | directional (to — motion) | antichi = to the market |
+
+**Note on `+o`:** added WITHOUT removing letter. `tableo` = on the table, `antio` = at the market.
+**Note on `+chi`:** implies motion toward. `re·angbo` = go. `Antichi re·angbo` = go to the market.
+
+### Key vocab from doc
+```
+daka = to do | ka·a = to do (alternate)
+te·rik = banana | anti = market
+ra·baa = to bring | ra·babo = bring (imperative)
+gnang = have (possessive) — Ango ki·tap gnang = I have a book
+ong·a = is/am/are (alongside daka)
+a·jak soka = to take revenge
+```
+
+### PENDING — gnang vs donga for "have"
+PDF says: `Ango ki·tap gnang` = I have a book (possessive have)
+Thangseng earlier confirmed: `Ango pen donga` = I have a pen
+These may be synonyms or context-dependent. Ask Thangseng before changing any donga entries.
