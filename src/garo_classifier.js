@@ -61,8 +61,9 @@ export const CLASSIFIER_MAP = {
   'letter':'king','card':'king','cloth':'king','mat':'king',
   'board':'king','page':'king','notebook':'king',
   'money':'gong','tangka':'gong','rupee':'gong','coin':'gong',
-  'stick':'ge','pole':'ge','rod':'ge','tree':'ge',
+  'stick':'ge','pole':'jol','rod':'jol','staff':'jol',
   'bamboo':'jol','wa·a':'jol',
+  'tree':'pang','log':'dot','wooden post':'dot',
   'pen':'ge','kolom':'ge','pencil':'ge',
 };
 
@@ -101,10 +102,17 @@ function getClassifierSuffix(count) {
   return null;
 }
 
+// Classifiers that carry raka (·) — confirmed by Thangseng raka rule
+const RAKA_CLASSIFIERS = new Set(['mang', 'sak', 'ge', 'gong']);
+// No-raka classifiers: king, jol, pang, dot (suffixes attach directly)
+
 export function buildClassifierPhrase(classifier, count) {
   const suffix = getClassifierSuffix(count);
   if (suffix === null) return null;
-  return `${classifier}·${suffix}`;
+  // Only add raka if this classifier has one (Rule 1 — raka in root only)
+  return RAKA_CLASSIFIERS.has(classifier)
+    ? `${classifier}·${suffix}`
+    : `${classifier}${suffix}`;
 }
 
 export function toGaroNumber(n) {

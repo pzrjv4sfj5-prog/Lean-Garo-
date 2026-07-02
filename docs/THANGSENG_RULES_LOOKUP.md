@@ -402,3 +402,18 @@ Interrogative: `Song·ahama?` / `Song·engama?` / `Song·ama?` (add `-ma` to any
 - `song·` root + `gen` = `Song·gen` (raka from root)
 
 This confirms the general raka rule applies universally to ALL suffixes including `-gen`.
+
+---
+
+## RULE 19 — CLASSIFIERS UPDATE (confirmed 2026-07-03)
+
+Supersedes earlier brong·/ge entries for long objects:
+
+| Classifier | Category | Raka | Example |
+|---|---|---|---|
+| `jol` | bamboo, pole, rod | ❌ | `jolsa`=one, `jolgni`=two, `jolgittam`=three |
+| `pang` | tree | ❌ | `pangsa`=one tree, `panggni`=two trees |
+| `dot` | log, wooden post | ❌ | `dotsa`=one log, `dotgni`=two logs |
+| `ge·` | pen, pencil, general | ✅ | `ge·sa`=one, `ge·gni`=two |
+| `king` | flat objects (books) | ❌ | `kingsa`=one, `kinggittam`=three |
+| `jol` above 10 | separate word | — | `ge chi·sa`=11 pieces (to verify) |
