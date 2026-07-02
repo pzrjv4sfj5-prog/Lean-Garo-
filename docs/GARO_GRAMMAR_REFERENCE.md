@@ -260,7 +260,7 @@ Productive pattern — applies broadly, not just to this one word.
 | why | Maina | NOT Maini (was a standardization fix) |
 | where | bano | |
 | when | Basaku | |
-| how | — | TODO |
+| how | maidake | ✅ Thangseng confirmed |
 
 ### `maini gimin` — valid construction, context-specific
 NOT categorically wrong. Correct for "yapping about":
@@ -333,12 +333,10 @@ These were assembled via SOV pattern-logic, NOT yet native-confirmed.
 Treat as best-guess only — do not cite as grammar fact until confirmed.
 
 - `i went to the market to buy rice` — blocked on engine bug (location-noun dropped), not yet asked
-- `i am tired but i will work` — verb form for "tired" unconfirmed
 - `she bought three books` — unconfirmed
 - `the boy is playing in the school` — unconfirmed
 - `my father is a teacher` — unconfirmed
 - `what did you buy` / `where did you go` — unconfirmed, best-guess SOV only
-- `how` (question word) — no confirmed translation yet
 
 ---
 

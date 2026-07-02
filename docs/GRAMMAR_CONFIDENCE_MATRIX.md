@@ -145,12 +145,12 @@ Legend: ✅ CONFIRMED (native speaker explicit) | ⚠️ INFERRED (internally co
 | `angna`, `ango`, `An·ching·ko` case forms | ⚠️ Pattern-inferred, not explicitly tested |
 | `biko`, `bini`, `bina`, `bio` informal 3rd person | ⚠️ Pattern-inferred |
 | `brong·` classifier in real sentences | 🔲 Never tested |
-| `how` question word | 🔲 No confirmed translation |
+| `how` question word | ✅ maidake — Thangseng confirmed |
 | Future tense in complex sentences | ⚠️ `bilakgen` confirmed, others pattern-inferred |
 | Negation in past tense | 🔲 `i did not eat` — never confirmed |
 | Plural nouns without classifier | 🔲 No data |
-| `tired` / `happy` adjective forms | 🔲 No confirmed translation |
-| `i am tired but i will work` | 🔲 Unconfirmed sentence |
+| `tired`=nenga, `happy`=kusi | ✅ Thangseng confirmed |
+| `i am tired but i will work` | ✅ Anga nenga indiba dakgen |
 
 ---
 
