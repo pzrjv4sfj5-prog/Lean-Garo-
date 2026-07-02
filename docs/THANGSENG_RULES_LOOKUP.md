@@ -358,3 +358,47 @@ Example: `Ua an·tangni kamko dakgija dongaha` = She stayed without doing her wo
 - ✅ `seen` — `nikaha` (no raka, nika root confirmed raka-free)
 - ✅ `brong·` classifier — replaced by `jol` (bamboo), `ge·` (pen/general)
 - ✅ `she bought three books` — `Ua ki·tap kinggittamko breaha`
+
+---
+
+## RULE 21 — `song·` vs `songna` — RAKA CHANGES MEANING (confirmed 2026-07-03)
+
+> "Song·na = to cook. Songna = to plant or erect. The raka is the difference and it changes the meaning." — Thangseng
+
+| Word | Raka | Meaning |
+|---|---|---|
+| `song·a` | ✅ | to cook |
+| `songna` | ❌ | to plant / to erect |
+
+`song·` root confirmed — all cook forms carry raka:
+`Song·a, Song·aha, Song·enga, Song·gen, Song·bo, Song·nabe, Song·jawa`
+
+Interrogative: `Song·ahama?` / `Song·engama?` / `Song·ama?` (add `-ma` to any tense)
+
+---
+
+## RULE 22 — HAI `-na` vs `-naha` NUANCE (confirmed 2026-07-03)
+
+> "Both suffixes are used in hortative sentences but with slight difference in meaning." — Thangseng
+
+| Suffix | Meaning | Example |
+|---|---|---|
+| `-na` | general urge (anytime) | `Hai antichi re·na` = let's go to the market (sometime) |
+| `-naha` | right away OR finally getting done | `Hai nokchi re·naha` = let's go home (now) |
+
+**Extra nuance of `-naha`:** also used for something long-planned finally happening:
+`Hai knalde antichi re·naha` = let's finally go to the market tomorrow
+
+**Engine default:** `-na` for unqualified "let's". Use `-naha` when "now"/"finally" is implied.
+
+---
+
+## RULE 23 — `-gen` FUTURE SUFFIX NEVER ADDS RAKA (confirmed 2026-07-03)
+
+> "The suffixes do not have the raka. The raka comes from the root. This applies to gen as well." — Thangseng
+
+- `cha·` root + `gen` = `cha·gen` (raka from root)
+- `kat` root + `gen` = `katgen` (no raka)
+- `song·` root + `gen` = `Song·gen` (raka from root)
+
+This confirms the general raka rule applies universally to ALL suffixes including `-gen`.

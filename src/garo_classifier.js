@@ -61,9 +61,9 @@ export const CLASSIFIER_MAP = {
   'letter':'king','card':'king','cloth':'king','mat':'king',
   'board':'king','page':'king','notebook':'king',
   'money':'gong','tangka':'gong','rupee':'gong','coin':'gong',
-  'stick':'ge','pole':'ge','rod':'ge',
+  'stick':'ge','pole':'ge','rod':'ge','tree':'ge',
   'bamboo':'jol','wa·a':'jol',
-  'pen':'ge','kolom':'ge','pencil':'ge','tree':'brong',
+  'pen':'ge','kolom':'ge','pencil':'ge',
 };
 
 export const CLASSIFIERS = CLASSIFIER_MAP;
