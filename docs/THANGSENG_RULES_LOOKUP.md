@@ -298,3 +298,63 @@ a·jak soka = to take revenge
 PDF says: `Ango ki·tap gnang` = I have a book (possessive have)
 Thangseng earlier confirmed: `Ango pen donga` = I have a pen
 These may be synonyms or context-dependent. Ask Thangseng before changing any donga entries.
+
+---
+
+## RULE 17 — PAST NEGATION: `jaha` suffix (confirmed 2026-07-01)
+
+> "Cha·ja is present tense. The past will add the suffix 'ha'. So anga cha·jaha = i did not eat." — Thangseng
+
+| Form | Meaning | cha· example | dak example |
+|---|---|---|---|
+| stem+`ja` | does not (present negation) | cha·ja | dakja |
+| stem+`jaha` | did not (past negation) | cha·jaha | dakjaha |
+
+---
+
+## RULE 18 — `gija` IS ADJECTIVAL, NOT VERBAL NEGATION (confirmed 2026-07-01)
+
+> "The 'gija' suffix is adjectival in nature. Therefore, when we use this ending with a verb, we get a verbal adjective." — Thangseng
+
+| Form | Type | Meaning |
+|---|---|---|
+| `dakja` | verbal negation | does not do |
+| `dakjaha` | verbal past negation | did not do |
+| `dakgija` | verbal adjective | without doing / not doing (adjectival) |
+
+Example: `Ua an·tangni kamko dakgija dongaha` = She stayed without doing her work
+- `dakgija` = without doing (verbal adjective modifying the subject's state)
+- `dongaha` = stayed/remained (the MAIN verb)
+- `an·tangni` = his/her (from `an·tang` = self, `+ni` = possessive)
+
+**Engine note:** `gija` never replaces the main verb — it modifies it adjectivally. Always needs a main verb alongside it.
+
+---
+
+## RULE 19 — CLASSIFIERS CONFIRMED (2026-07-01)
+
+| Classifier | Category | Example |
+|---|---|---|
+| `jol` | bamboo and similar long objects | `Wa·a jolsa` = a stalk of bamboo |
+| `ge·` | pen (kolom), general fallback | `kolom ge·sa` = a pen |
+| `king` | flat objects (books, paper) — NO raka | `ki·tap kinggittam` = three books |
+
+**Note on `jol` after 10:** numbers written as separate word — `ge chi·sa` = eleven pieces (to be verified).
+**Note on `king`:** Thangseng confirmed no raka — `kinggittam` not `king·gittam`.
+
+---
+
+## RULE 20 — `an·tang` = SELF / REFLEXIVE POSSESSIVE (confirmed 2026-07-01)
+
+`an·tang` = self → `an·tangni` = his/her own (reflexive possessive)
+`an·tangni kamko` = his/her own work/job
+
+---
+
+## RESOLVED PENDING ITEMS (2026-07-01)
+- ✅ `gnang` vs `donga` — synonyms; gnang=older/written, donga=spoken/common
+- ✅ Past negation — `jaha` suffix confirmed
+- ✅ `gija` raka — NO raka before gija when root has no raka (`dakgija` not `dak·gija`)
+- ✅ `seen` — `nikaha` (no raka, nika root confirmed raka-free)
+- ✅ `brong·` classifier — replaced by `jol` (bamboo), `ge·` (pen/general)
+- ✅ `she bought three books` — `Ua ki·tap kinggittamko breaha`
