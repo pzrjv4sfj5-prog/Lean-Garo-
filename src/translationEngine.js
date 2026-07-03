@@ -344,7 +344,8 @@ function fuzzyMatch(input) {
   let best = null, bestDist = Infinity;
   for (const key of Object.keys(EN_INDEX)) {
     const dist = levenshtein(lower, key);
-    const threshold = Math.max(2, Math.floor(key.length * 0.25));
+    // Short words need tighter threshold to avoid false matches (rnu->rat not run)
+    const threshold = key.length <= 4 ? 1 : Math.max(2, Math.floor(key.length * 0.25));
     if (dist < bestDist && dist <= threshold) { bestDist = dist; best = key; }
   }
   return best ? { key: best, distance: bestDist } : null;
