@@ -20,7 +20,13 @@
 import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
 import ALTERNATES_RAW from './compiled_dict_alternates.json' with { type: 'json' };
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
-import corrections from './data/corrections.json' with { type: 'json' };
+import correctionsRaw from './data/corrections.json' with { type: 'json' };
+// Shadow index: apostrophe-stripped keys for typo tolerance (lets go -> let's go)
+const corrections = { ...correctionsRaw };
+for (const [k, v] of Object.entries(correctionsRaw)) {
+  const stripped = k.toLowerCase().replace(/['’]/g, '');
+  if (stripped !== k.toLowerCase() && !corrections[stripped]) corrections[stripped] = v;
+}
 import { lookupPhrase } from './data/phrase_maps.js';
 import { getClassifier, countNoun, parseCountingPhrase } from './garo_classifier.js';
 import { toGaroNumber } from './number_engine.js';
@@ -563,9 +569,11 @@ export async function translate(input) {
   const lower = cleaned.toLowerCase().replace(/[''\u2019]/g, '');
   const words = lower.split(/\s+/);
 
-  // 1. Corrections — case-insensitive, apostrophe-preserving lookup.
-  // "Let's go" / "LET'S GO" must hit the same entry as "let's go".
-  // Strategy: try lowercase-with-apostrophes first, then lowercase-without.
+  // 1. Corrections — case-insensitive, apostrophe-tolerant lookup.
+  // Tries 3 forms in order:
+  // (a) lowercase with apostrophes preserved ("let's go") — exact canonical match
+  // (b) original cleaned form (handles mixed case)
+  // (c) apostrophe-stripped lowercase ("lets go", "dont eat") — typo tolerance
   const lowerWithApos = cleaned.toLowerCase();
   const correction = corrections?.[lowerWithApos] || corrections?.[cleaned] || corrections?.[lower];
   if (correction) return { garo: correction, method: 'correction', confidence: 1.0 };
