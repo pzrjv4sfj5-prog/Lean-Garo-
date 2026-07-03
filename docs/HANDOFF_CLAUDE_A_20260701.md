@@ -8,8 +8,8 @@ Claude B owns: `src/pages/`, `src/components/`, `src/App.jsx`, `vite.config.js`,
 ## REPO
 - URL: https://github.com/pzrjv4sfj5-prog/Lean-Garo-
 - Live: https://lean-garo.onrender.com
-- HEAD: `ede2b1e`
-- corrections.json: **775 entries**
+- HEAD: `5d25476`
+- corrections.json: **791 entries**
 - master_dictionary.json: 7097 entries
 
 ## CRITICAL — DO FIRST EVERY SESSION
@@ -46,7 +46,7 @@ Claude B owns: `src/pages/`, `src/components/`, `src/App.jsx`, `vite.config.js`,
 | Suffix | Meaning | cha· | dak |
 |---|---|---|---|
 | +a | present | cha·a | Daka |
-| +aha | past/perfect | cha·aha | dakaha |
+| +ha | past (EXCEPTION: appends to FULL root, no stem stripping) | cha·a+ha=cha·aha | Daka+ha=dakaha |
 | +jok | perfect state | cha·jok | dakjok |
 | +enga | progressive | cha·enga | dakenga |
 | +gen | future | cha·gen | dakgen |
