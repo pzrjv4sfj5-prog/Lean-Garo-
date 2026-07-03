@@ -563,11 +563,11 @@ export async function translate(input) {
   const lower = cleaned.toLowerCase().replace(/[''\u2019]/g, '');
   const words = lower.split(/\s+/);
 
-  // 1. Corrections — check cleaned (apostrophe-preserving) form FIRST.
-  // Previously checked lower (apostrophe-stripped) first, which meant a
-  // stale no-apostrophe duplicate key in corrections.json could silently
-  // shadow a correct apostrophe-form entry.
-  const correction = corrections?.[cleaned] || corrections?.[lower];
+  // 1. Corrections — case-insensitive, apostrophe-preserving lookup.
+  // "Let's go" / "LET'S GO" must hit the same entry as "let's go".
+  // Strategy: try lowercase-with-apostrophes first, then lowercase-without.
+  const lowerWithApos = cleaned.toLowerCase();
+  const correction = corrections?.[lowerWithApos] || corrections?.[cleaned] || corrections?.[lower];
   if (correction) return { garo: correction, method: 'correction', confidence: 1.0 };
 
   // 1.5 Phrase map
