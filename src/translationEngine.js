@@ -86,14 +86,19 @@ const VERB_SUFFIXES = {
 };
 
 function applyTense(verbRoot, tense) {
-  const suffixes = { present: 'a', past: 'aha', future: 'gen', command: 'bo', negative_future: 'jawa', negative_command: 'nabe', negative_past: 'jaha', chim: 'chim', pastcont: 'engachim' };
+  const suffixes = { present: 'a', past: 'ha', future: 'gen', command: 'bo', negative_future: 'jawa', negative_command: 'nabe', negative_past: 'jaha', chim: 'chim', pastcont: 'engachim' };
   const suffix = suffixes[tense] || suffixes.present;
   // If already inflected, return as-is
-  if (/(enga|aha|gen|bo|chim)$/.test(verbRoot)) return verbRoot;
-  // Strip trailing vowel 'a' before adding suffix (Tusia -> Tusi + gen = Tusigen)
-  // But preserve raka: cha·a -> cha· + suffix (not cha + suffix)
-  if (/·a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix;  // raka root: cha·a -> cha·gen
-  if (/[^·]a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix; // plain root: Tusia -> Tusigen
+  if (/(enga|aha|gen|bo|chim|jaha|jawa|nabe)$/.test(verbRoot)) return verbRoot;
+  // THANGSENG EXCEPTION (2026-07-03): 'ha' is added WITHOUT stripping the root letter.
+  // ringa + ha = ringaha (NOT ring + aha)
+  // cha·a + ha = cha·aha (NOT cha· + aha)
+  // This is an exception to the stem rule — ha appends to the FULL root form.
+  // All other suffixes (gen/bo/na/ja/jawa/nabe) still strip the trailing 'a' first.
+  if (tense === 'past') return verbRoot + 'ha';
+  // For all other suffixes: strip trailing 'a' first (stem rule)
+  if (/·a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix;  // raka: cha·a -> cha·gen
+  if (/[^·]a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix; // plain: Tusia -> Tusigen
   return verbRoot + suffix;
 }
 
