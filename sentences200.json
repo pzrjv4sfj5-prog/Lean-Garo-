@@ -361,7 +361,7 @@
   },
   {
     "english": "How was the journey yesterday?",
-    "garo": "Mijal songre·ara nam·a ma?",
+    "garo": "Mijal songre·ara nama ma?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -1153,7 +1153,7 @@
   },
   {
     "english": "How many apples are there in my hand?",
-    "garo": "Ang jako baitarong apple dong·a?",
+    "garo": "Ang jako baitarong apple donga?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -1297,7 +1297,7 @@
   },
   {
     "english": "Do you have children?",
-    "garo": "Nang·o de dong·a ma?",
+    "garo": "Nang·o de donga ma?",
     "pos": null,
     "category": "family",
     "classifier": null,
@@ -1305,7 +1305,7 @@
   },
   {
     "english": "I have two children",
-    "garo": "Ang·o gini de dong·a",
+    "garo": "Ang·o gini de donga",
     "pos": null,
     "category": "family",
     "classifier": null,

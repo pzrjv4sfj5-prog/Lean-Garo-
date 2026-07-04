@@ -1017,7 +1017,7 @@
   },
   {
     "english": "Blacksmith",
-    "garo": "Sil·dak·gipa",
+    "garo": "Sil·dakgipa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -1921,7 +1921,7 @@
   },
   {
     "english": "Climb",
-    "garo": "ga·kat·a",
+    "garo": "ga·kata",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -3841,7 +3841,7 @@
   },
   {
     "english": "Fight",
-    "garo": "dak·grik·a",
+    "garo": "dakgrik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -4297,7 +4297,7 @@
   },
   {
     "english": "Generous",
-    "garo": "al·nam·a",
+    "garo": "al·nama",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -4569,7 +4569,7 @@
   },
   {
     "english": "Good",
-    "garo": "nam·a",
+    "garo": "nama",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -5129,7 +5129,7 @@
   },
   {
     "english": "Homework",
-    "garo": "Nok·o dak·porani",
+    "garo": "Nok·o dakporani",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -5169,7 +5169,7 @@
   },
   {
     "english": "Hope",
-    "garo": "ka˙·dong·a",
+    "garo": "ka˙·donga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -5529,7 +5529,7 @@
   },
   {
     "english": "I have a question",
-    "garo": "Angna sing·ani dong·a",
+    "garo": "Angna sing·ani donga",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -8185,7 +8185,7 @@
   },
   {
     "english": "Pencil",
-    "garo": "kat·pen·sil",
+    "garo": "katpen·sil",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -12689,7 +12689,7 @@
   },
   {
     "english": "Turtle",
-    "garo": "kat·tu·a",
+    "garo": "kattu·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -13713,7 +13713,7 @@
   },
   {
     "english": "You did well",
-    "garo": "Na·a nama dak·a",
+    "garo": "Na·a nama daka",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -13921,7 +13921,7 @@
   },
   {
     "english": "act",
-    "garo": "dak·a",
+    "garo": "daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -14193,7 +14193,7 @@
   },
   {
     "english": "almost",
-    "garo": "dak·ri",
+    "garo": "dakri",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -14481,7 +14481,7 @@
   },
   {
     "english": "appear",
-    "garo": "ong˙·kat·a",
+    "garo": "ong˙·kata",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -14689,7 +14689,7 @@
   },
   {
     "english": "attempt",
-    "garo": "ches·ta dak·a",
+    "garo": "ches·ta daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15249,7 +15249,7 @@
   },
   {
     "english": "behave",
-    "garo": "dak·a",
+    "garo": "daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15321,7 +15321,7 @@
   },
   {
     "english": "belong",
-    "garo": "dong·a",
+    "garo": "donga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -15665,7 +15665,7 @@
   },
   {
     "english": "block the way",
-    "garo": "dong·peng·a",
+    "garo": "dongpeng·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -15777,7 +15777,7 @@
   },
   {
     "english": "boastful",
-    "garo": "ra·song·si·si dak·a",
+    "garo": "ra·song·si·si daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16913,7 +16913,7 @@
   },
   {
     "english": "care for",
-    "garo": "dong·dil·a",
+    "garo": "dongdil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17145,7 +17145,7 @@
   },
   {
     "english": "catch up",
-    "garo": "kat·srap·a",
+    "garo": "katsrap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17929,7 +17929,7 @@
   },
   {
     "english": "cold sore",
-    "garo": "ku˙·gi·sep ang˙·ki·sa dak·a",
+    "garo": "ku˙·gi·sep ang˙·ki·sa daka",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -18057,7 +18057,7 @@
   },
   {
     "english": "come out",
-    "garo": "ong˙·kat·a",
+    "garo": "ong˙·kata",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -18793,7 +18793,7 @@
   },
   {
     "english": "crouch",
-    "garo": "bam·e dong·a",
+    "garo": "bam·e donga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19393,7 +19393,7 @@
   },
   {
     "english": "defender",
-    "garo": "dong·tim·gip·a",
+    "garo": "dongtim·gip·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -19753,7 +19753,7 @@
   },
   {
     "english": "directly",
-    "garo": "kat·tong·tang·a",
+    "garo": "kattong·tang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20089,7 +20089,7 @@
   },
   {
     "english": "do",
-    "garo": "dak·a",
+    "garo": "daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20513,7 +20513,7 @@
   },
   {
     "english": "dwell",
-    "garo": "dong·a",
+    "garo": "donga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20521,7 +20521,7 @@
   },
   {
     "english": "dwell",
-    "garo": "dong·chak·a",
+    "garo": "dongchak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20529,7 +20529,7 @@
   },
   {
     "english": "dwell",
-    "garo": "dong·dam·a",
+    "garo": "dongdam·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20729,7 +20729,7 @@
   },
   {
     "english": "emerge",
-    "garo": "ong˙·kat·a",
+    "garo": "ong˙·kata",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22537,7 +22537,7 @@
   },
   {
     "english": "gasp",
-    "garo": "el·du·el·du dak·a",
+    "garo": "el·du·el·du daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22657,7 +22657,7 @@
   },
   {
     "english": "get on bus",
-    "garo": "ga·kat·a",
+    "garo": "ga·kata",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -23073,7 +23073,7 @@
   },
   {
     "english": "guard",
-    "garo": "dong·tim·a",
+    "garo": "dongtim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23097,7 +23097,7 @@
   },
   {
     "english": "guardian",
-    "garo": "dong·tim·gip·a",
+    "garo": "dongtim·gip·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23353,7 +23353,7 @@
   },
   {
     "english": "have",
-    "garo": "dong·a",
+    "garo": "donga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23433,7 +23433,7 @@
   },
   {
     "english": "heavily",
-    "garo": "je˙·et·je˙·et dak·ing·a",
+    "garo": "je˙·et·je˙·et daking·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23537,7 +23537,7 @@
   },
   {
     "english": "hide",
-    "garo": "kat·nap·a",
+    "garo": "katnap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23921,7 +23921,7 @@
   },
   {
     "english": "hunt",
-    "garo": "si·kal dak·a",
+    "garo": "si·kal daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25305,7 +25305,7 @@
   },
   {
     "english": "lengthwise",
-    "garo": "gro dak·e",
+    "garo": "gro dake",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25921,7 +25921,7 @@
   },
   {
     "english": "look after",
-    "garo": "dong·tim·a",
+    "garo": "dongtim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -26345,7 +26345,7 @@
   },
   {
     "english": "make",
-    "garo": "dak·a",
+    "garo": "daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27241,7 +27241,7 @@
   },
   {
     "english": "name, familiar, personal",
-    "garo": "dak·nam",
+    "garo": "daknam",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -27641,7 +27641,7 @@
   },
   {
     "english": "obstruct",
-    "garo": "dong·peng·a",
+    "garo": "dongpeng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27865,7 +27865,7 @@
   },
   {
     "english": "Orion's belt",
-    "garo": "dong·gip·eng dong·gru",
+    "garo": "donggip·eng donggru",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28193,7 +28193,7 @@
   },
   {
     "english": "pause",
-    "garo": "dong·dip·a",
+    "garo": "dongdip·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28233,7 +28233,7 @@
   },
   {
     "english": "peaceful",
-    "garo": "dong·rim·a",
+    "garo": "dongrim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29329,7 +29329,7 @@
   },
   {
     "english": "pretend",
-    "garo": "dak·bru·a",
+    "garo": "dakbru·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29849,7 +29849,7 @@
   },
   {
     "english": "race",
-    "garo": "kat·sek·a",
+    "garo": "katsek·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30345,7 +30345,7 @@
   },
   {
     "english": "reside",
-    "garo": "dong·a",
+    "garo": "donga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30353,7 +30353,7 @@
   },
   {
     "english": "reside",
-    "garo": "dong·chak·a",
+    "garo": "dongchak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30361,7 +30361,7 @@
   },
   {
     "english": "reside",
-    "garo": "dong·kam·a",
+    "garo": "dongkam·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30409,7 +30409,7 @@
   },
   {
     "english": "restless",
-    "garo": "dong·ru·rak·a",
+    "garo": "dongru·rak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30577,7 +30577,7 @@
   },
   {
     "english": "ride",
-    "garo": "ga·kat·a",
+    "garo": "ga·kata",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30929,7 +30929,7 @@
   },
   {
     "english": "run away",
-    "garo": "kat·a",
+    "garo": "kata",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30937,7 +30937,7 @@
   },
   {
     "english": "run away",
-    "garo": "kat·sit·tap·a",
+    "garo": "katsit·tap·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -30945,7 +30945,7 @@
   },
   {
     "english": "run, nose",
-    "garo": "ging·chi·mik·chi ong˙·kat·ing·a",
+    "garo": "ging·chi·mik·chi ong˙·kating·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -31369,7 +31369,7 @@
   },
   {
     "english": "second wife, give",
-    "garo": "dong·chap·a",
+    "garo": "dongchap·a",
     "pos": null,
     "category": "numbers",
     "classifier": null,
@@ -31585,7 +31585,7 @@
   },
   {
     "english": "settle",
-    "garo": "song·dong·a",
+    "garo": "song·donga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31881,7 +31881,7 @@
   },
   {
     "english": "shine",
-    "garo": "chret dak·a",
+    "garo": "chret daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32049,7 +32049,7 @@
   },
   {
     "english": "show how",
-    "garo": "dak·dil·a",
+    "garo": "dakdil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32065,7 +32065,7 @@
   },
   {
     "english": "show off",
-    "garo": "ra·si·ra·wak dak·a",
+    "garo": "ra·si·ra·wak daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32145,7 +32145,7 @@
   },
   {
     "english": "sickle",
-    "garo": "kat·chi",
+    "garo": "katchi",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -33457,7 +33457,7 @@
   },
   {
     "english": "stay",
-    "garo": "dong·chak·a",
+    "garo": "dongchak·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -33465,7 +33465,7 @@
   },
   {
     "english": "stay",
-    "garo": "dong·dang·a",
+    "garo": "dongdang·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -33473,7 +33473,7 @@
   },
   {
     "english": "stay behind",
-    "garo": "dong·rik·a",
+    "garo": "dongrik·a",
     "pos": null,
     "category": "travel",
     "classifier": null,
@@ -34273,7 +34273,7 @@
   },
   {
     "english": "surround",
-    "garo": "dong·wil·wil·a",
+    "garo": "dongwil·wil·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34537,7 +34537,7 @@
   },
   {
     "english": "take out",
-    "garo": "rong˙·kat·a",
+    "garo": "rong˙·kata",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34969,7 +34969,7 @@
   },
   {
     "english": "there are",
-    "garo": "dong·ba·a",
+    "garo": "dongba·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -34977,7 +34977,7 @@
   },
   {
     "english": "there is",
-    "garo": "dong·ba·a",
+    "garo": "dongba·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35185,7 +35185,7 @@
   },
   {
     "english": "tight",
-    "garo": "je˙·et·je˙·et dak·ing·a",
+    "garo": "je˙·et·je˙·et daking·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -35689,7 +35689,7 @@
   },
   {
     "english": "try",
-    "garo": "ches·ta dak·a",
+    "garo": "ches·ta daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36553,7 +36553,7 @@
   },
   {
     "english": "wait",
-    "garo": "dong·tim·a",
+    "garo": "dongtim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -37505,7 +37505,7 @@
   },
   {
     "english": "yellowish",
-    "garo": "rim·it·rim·it dak·a",
+    "garo": "rim·it·rim·it daka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
