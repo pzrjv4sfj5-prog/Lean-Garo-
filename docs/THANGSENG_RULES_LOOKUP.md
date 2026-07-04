@@ -464,3 +464,47 @@ Supersedes earlier brong·/ge entries for long objects:
 | `ge·` | pen, pencil, general | ✅ | `ge·sa`=one, `ge·gni`=two |
 | `king` | flat objects (books) | ❌ | `kingsa`=one, `kinggittam`=three |
 | `jol` above 10 | separate word | — | `ge chi·sa`=11 pieces (to verify) |
+
+---
+
+## RULE 26 — ENGINE VERIFICATION FIXES (2026-07-04)
+
+Cross-check of `applyTense`/`translationEngine.js` against Rules 17/18/24/25
+turned up 4 implementation bugs, now fixed:
+
+1. **`chim` full-root-append exception.** `chim` behaves like `ha` (Rule 24)
+   — it appends to the FULL root, not the stripped stem. Was producing
+   `Cha·chim` (wrong, stripped like a normal suffix); now correctly
+   produces `Cha·achim`.
+2. **`pastcont` is a two-word form, not a fused suffix.** Native-confirmed
+   pattern is `[progressive-form] + ' chim'` (e.g. `Anga poraienga chim`),
+   not a fused `engachim` ending. The fused form also had a silent-drop bug:
+   pre-inflected progressive irregulars (e.g. `sitting`->`asongenga`) matched
+   the "already inflected, return as-is" guard and skipped tense application
+   entirely — `' chim'` never got appended. Both fixed.
+3. **`IRREGULAR_VERBS['eaten']` raka inconsistency.** Was `cha·man·aha`
+   (extra raka before `aha`), doesn't match the confirmed `manaha` form
+   (Rule 25) or Rule 1 (raka belongs to the root only, never mid-suffix).
+   Fixed to `cha·manaha`.
+4. **Rule 18 positive construction was unimplemented.** The a38749b fix
+   only addressed the negation-misuse half of `gija` (stopped `gija` from
+   being used as a general negation marker). The actual positive
+   construction Rule 18 describes — `without VERB-ing` → `stem+gija` paired
+   with the sentence's main verb — had no grammar-assembly path at all
+   (only the one confirmed corrections.json sentence worked). Added
+   `tryWithoutGijaConstruction()`, wired into `translate()` before general
+   grammar-assembly.
+
+### Scope note: Garo is paratactic, not complex-subordination
+
+`tryWithoutGijaConstruction` is intentionally narrow (single `without
+VERB-ing (his/her/... NOUN)?` clause + one main verb). Garo grammar as
+documented so far shows no evidence of nested/complex subordinate clause
+structures — constructions are paratactic (simple clauses juxtaposed or
+suffix-marked, e.g. `-ode` if-clauses, `-na` purpose clauses, `gija`
+verbal-adjective clauses) rather than embedding one full clause inside
+another via subordinating conjunctions. Do not generalize the without-gija
+function toward arbitrary clause nesting without native-speaker
+confirmation that such structures exist — it's more likely additional
+patterns should be added as their own flat detectors, matching how
+if-clauses and purpose-clauses are already handled elsewhere in this file.

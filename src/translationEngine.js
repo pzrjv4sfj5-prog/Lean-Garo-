@@ -91,6 +91,11 @@ const VERB_SUFFIXES = {
   future: 'gen', command: 'bo',
 };
 
+const PRONOUN_MAP = {
+  'i':'Anga','me':'angko','you':'Na·a','he':'Ua','she':'Ua',
+  'it':'Ua','we':'An·ching','us':'An·ching·ko','they':'Uamang','them':'Uamang·ko',
+};
+
 function applyTense(verbRoot, tense) {
   // NOTE: 'jaha' is NOT past negation — it's discontinuation ("stopped X-ing").
   // See docs/THANGSENG_RULES_LOOKUP.md Rule 17 (corrected 2026-07-04).
@@ -98,15 +103,29 @@ function applyTense(verbRoot, tense) {
   // without native-speaker confirmation.
   const suffixes = { present: 'a', past: 'ha', future: 'gen', command: 'bo', negative_future: 'jawa', negative_command: 'nabe', discontinued: 'jaha', completed: 'manaha', chim: 'chim', pastcont: 'engachim' };
   const suffix = suffixes[tense] || suffixes.present;
-  // If already inflected, return as-is
-  if (/(enga|aha|gen|bo|chim|jaha|jawa|nabe|manaha)$/.test(verbRoot)) return verbRoot;
   // THANGSENG EXCEPTION (2026-07-03): 'ha' is added WITHOUT stripping the root letter.
   // ringa + ha = ringaha (NOT ring + aha)
   // cha·a + ha = cha·aha (NOT cha· + aha)
   // This is an exception to the stem rule — ha appends to the FULL root form.
   // All other suffixes (gen/bo/na/ja/jawa/nabe) still strip the trailing 'a' first.
   if (tense === 'past') return verbRoot + 'ha';
-  // For all other suffixes: strip trailing 'a' first (stem rule)
+  // 'chim' exception (2026-07-04 fix): same family as 'ha' — appends to the
+  // FULL root, not stripped. Was 'cha·a'->'cha·chim' (wrong), now
+  // 'cha·a'->'cha·achim' (correct).
+  if (tense === 'chim') return verbRoot + 'chim';
+  // pastcont: NOT a fused suffix. Native-confirmed form is
+  // [progressive-form] + ' chim' (two words) — e.g. 'Anga poraienga chim'.
+  // Must run BEFORE the "already inflected" guard below: a pre-inflected
+  // progressive irregular (e.g. 'asongenga') would otherwise match that
+  // guard and return unchanged, silently dropping ' chim' (2026-07-04 fix).
+  if (tense === 'pastcont') {
+    if (/enga$|enge$/.test(verbRoot)) return verbRoot + ' chim';
+    const prog = /·a$/.test(verbRoot) ? verbRoot.slice(0, -1) + 'enga'
+      : /[^·]a$/.test(verbRoot) ? verbRoot.slice(0, -1) + 'enga'
+      : verbRoot + 'enga';
+    return prog + ' chim';
+  }
+  // If already inflected, return as-is
   if (/·a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix;  // raka: cha·a -> cha·gen
   if (/[^·]a$/.test(verbRoot)) return verbRoot.slice(0, -1) + suffix; // plain: Tusia -> Tusigen
   return verbRoot + suffix;
@@ -114,7 +133,7 @@ function applyTense(verbRoot, tense) {
 
 const IRREGULAR_VERBS = {
   'went':'re·anga','gone':'re·anga','going':'re·angenga',
-  'ate':'cha·aha','eaten':'cha·man·aha','eating':'cha·enga',
+  'ate':'cha·aha','eaten':'cha·manaha','eating':'cha·enga',
   'saw':'nikaha','seen':'nikaha','seeing':'nikenga',
   'told':'agan·aha','said':'aganaha','saying':'aganenga',
   'came':'re·ba·aha','coming':'re·baenga','want':'sikenga','wants':'sikenga','need':'sikenga',
@@ -207,11 +226,6 @@ export function analyzeGrammar(input) {
     detectedTense = 'command';
   }
 
-  const pronounMap = {
-    'i':'Anga','me':'angko','you':'Na·a','he':'Ua','she':'Ua',
-    'it':'Ua','we':'An·ching','us':'An·ching·ko','they':'Uamang','them':'Uamang·ko',
-  };
-
   let subject = null, verb = null, object = null;
   const classifierHints = [];
   const li = input.toLowerCase();
@@ -221,8 +235,8 @@ export function analyzeGrammar(input) {
   if (/\b(book|paper|leaf)\b/.test(li)) classifierHints.push({ classifier: 'king', reason: 'flat object' });
 
   const firstWord = words[0]?.toLowerCase().replace(/[^a-z]/g,'');
-  if (pronounMap[firstWord]) {
-    subject = { english: words[0], garo: pronounMap[firstWord] };
+  if (PRONOUN_MAP[firstWord]) {
+    subject = { english: words[0], garo: PRONOUN_MAP[firstWord] };
 
     // Find verb — skip stop words, possessives, and auxiliary tense markers
     const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','should','may','might','can','used','to','stopped','quit','finished','completed','longer']);
@@ -320,6 +334,46 @@ export function analyzeGrammar(input) {
     garoWordOrder: 'SOV (Subject → Object → Verb)',
     notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
   };
+}
+
+// Rule 18 positive construction: "without VERB-ing" -> stem+gija (verbal
+// adjective), paired with the sentence's main finite verb. a38749b only
+// fixed the negation-misuse half of gija (stopped mistranslating "not X" as
+// gija); this is the actual positive construction gija exists for.
+// Confirmed pattern: "Ua an·tangni kamko dakgija dongaha" =
+// "She stayed without doing her work" (dakgija = without doing, dongaha =
+// stayed/the main verb).
+function tryWithoutGijaConstruction(input) {
+  const m = input.match(/\bwithout\s+([a-z]+)ing\b(?:\s+(?:his|her|their|its|my|your)\s+([a-z]+))?/i);
+  if (!m) return null;
+  const clauseVerbWord = m[1].toLowerCase();
+  const clauseObjectWord = m[2] ? m[2].toLowerCase() : null;
+
+  const clauseVerbGaro = lookupGaro(clauseVerbWord) || lookupGaro(clauseVerbWord + 'e');
+  if (!clauseVerbGaro) return null;
+  const stem = clauseVerbGaro.replace(/·a$/, '·').replace(/a$/, '');
+  const gijaForm = stem + 'gija';
+
+  const words = input.replace(/[.,!?]/g, '').split(/\s+/);
+  const firstWord = words[0]?.toLowerCase().replace(/[^a-z]/g, '');
+  const subjectGaro = PRONOUN_MAP[firstWord] || null;
+
+  const remainder = input.replace(m[0], '').trim();
+  const remWords = remainder.split(/\s+/).filter(Boolean);
+  let mainVerbGaro = null;
+  for (let i = remWords.length - 1; i >= 0; i--) {
+    const w = remWords[i].toLowerCase().replace(/[^a-z]/g, '');
+    if (!w || STOP_WORDS.has(w) || w === firstWord) continue;
+    const g = findVerbForm(w);
+    if (g) { mainVerbGaro = applyTense(g, 'past'); break; }
+  }
+  if (!mainVerbGaro) return null;
+
+  const objGaro = clauseObjectWord && lookupGaro(clauseObjectWord)
+    ? lookupGaro(clauseObjectWord) + 'ko' : null;
+
+  const parts = [subjectGaro, objGaro, gijaForm, mainVerbGaro].filter(Boolean);
+  return parts.length >= 2 ? parts.join(' ') : null;
 }
 
 function assembleSentenceSOV(words, isNegative = false) {
@@ -715,6 +769,10 @@ export async function translate(input) {
   // 5. Number engine
   const numResult = null; // number_engine handles via classifier
   if (numResult) return { garo: numResult, method: 'number-engine', confidence: 0.96 };
+
+  // 5.5 Rule 18 positive gija construction ("without VERB-ing")
+  const gijaConstruction = tryWithoutGijaConstruction(cleaned);
+  if (gijaConstruction) return { garo: gijaConstruction, method: 'gija-construction', confidence: 0.85 };
 
   // 6. Grammar assembly — SOV with -ko object marker and -na purpose clause
   const grammar = analyzeGrammar(cleaned);
