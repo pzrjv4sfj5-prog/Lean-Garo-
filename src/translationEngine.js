@@ -180,7 +180,24 @@ export function analyzeGrammar(input) {
   let detectedTense = 'present';
   let tenseEvidence = null;
 
-  if (/\b(will|shall|going to)\b/i.test(input)) {
+  // Task 3 (chim/engachim assembly-path detection): checked BEFORE the
+  // generic future/past checks below since "used to" and "was/were VERBing"
+  // would otherwise be swallowed by the broader will/was/were matches.
+  if (/\bused to\b/i.test(input)) {
+    detectedTense = 'chim';
+    tenseEvidence = 'used to';
+  } else if (/\b(was|were)\b\s+\w+ing\b/i.test(input)) {
+    detectedTense = 'pastcont';
+    tenseEvidence = input.match(/\b(was|were)\b\s+\w+ing\b/i)?.[0];
+  } else if (/\b(stopped|quit)\b|\bno longer\b/i.test(input)) {
+    // Task 0: discontinuation ("stopped X-ing") -> jaha, per corrected Rule 17.
+    detectedTense = 'discontinued';
+    tenseEvidence = input.match(/\b(stopped|quit|no longer)\b/i)?.[0];
+  } else if (/\b(finished|completed)\b/i.test(input)) {
+    // Task 0: completed action ("finished/completed X-ing") -> manaha, Rule 25.
+    detectedTense = 'completed';
+    tenseEvidence = input.match(/\b(finished|completed)\b/i)?.[0];
+  } else if (/\b(will|shall|going to)\b/i.test(input)) {
     detectedTense = 'future';
     tenseEvidence = input.match(/\b(will|shall|going to)\b/i)?.[0];
   } else if (/\b(was|were|had|did|went|came|ate|drank)\b/i.test(input)) {
@@ -208,23 +225,40 @@ export function analyzeGrammar(input) {
     subject = { english: words[0], garo: pronounMap[firstWord] };
 
     // Find verb — skip stop words, possessives, and auxiliary tense markers
-    const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','should','may','might','can','used','to']);
+    const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','should','may','might','can','used','to','stopped','quit','finished','completed','longer']);
     let verbIndex = -1;
+    const SPECIAL_TENSES = ['discontinued','completed','chim','pastcont'];
     for (let i = 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
       if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) continue;
-      const isIrregular = !!IRREGULAR_VERBS[w] || !!IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')];
-      const garoVerb = findVerbForm(w);
+      let isIrregular = !!IRREGULAR_VERBS[w] || !!IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')];
+      let garoVerb;
+      if (SPECIAL_TENSES.includes(detectedTense)) {
+        // Pre-inflected IRREGULAR_VERBS forms (e.g. "eating"->"cha·enga")
+        // can't be safely re-suffixed with jaha/manaha/chim/engachim — go
+        // straight to the dictionary root (present-tense) form instead.
+        const rootWord = w.replace(/ing$|ed$|es$|s$/, '');
+        garoVerb = lookupGaro(rootWord) || lookupGaro(w);
+        if (garoVerb) isIrregular = false;
+        else garoVerb = findVerbForm(w);
+      } else {
+        garoVerb = findVerbForm(w);
+      }
       if (garoVerb) {
         let garoWithTense = garoVerb;
-        if (!isIrregular && detectedTense === 'future') {
-          garoWithTense = applyTense(garoVerb, 'future');
+        if (!isIrregular && ['future', ...SPECIAL_TENSES].includes(detectedTense)) {
+          garoWithTense = applyTense(garoVerb, detectedTense);
         }
         if (isNegative) {
-          // Per raka rule: suffix never adds raka. If root ends with raka (·x),
-          // strip the vowel suffix and re-add +gija. Otherwise just append gija.
+          // Rule 18 (corrected 2026-07-04): gija is a verbal adjective, not a
+          // negation marker — it needs a governing main verb ("dakgija
+          // dongaha" = stayed without doing), which general negated input
+          // doesn't supply. No confirmed suffix exists for true simple past
+          // negation (Rule 25 outstanding item), so 'ja' (Rule 1, confirmed
+          // present negation) is used as the safe fallback instead of the
+          // previously-misused 'gija'.
           const base = garoWithTense.replace(/·a$/, '·').replace(/a$/, '');
-          garoWithTense = base.includes('·') ? base + 'gija' : garoWithTense.replace(/a$/, '') + 'gija';
+          garoWithTense = base.includes('·') ? base + 'ja' : garoWithTense.replace(/a$/, '') + 'ja';
         }
         verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i };
         verbIndex = i;
@@ -245,7 +279,8 @@ export function analyzeGrammar(input) {
 
     for (let i = 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
-      if (w === 'to' && i + 1 < words.length) {
+      const prevW = i > 0 ? words[i-1].toLowerCase().replace(/[^a-z]/g,'') : '';
+      if (w === 'to' && i + 1 < words.length && prevW !== 'used') {
         const nextW = words[i+1].toLowerCase().replace(/[^a-z]/g,'');
         if (PURPOSE_VERBS[nextW]) {
           purposeAction = { english: words[i+1], garo: PURPOSE_VERBS[nextW] };
@@ -319,8 +354,16 @@ function assembleSentenceSOV(words, isNegative = false) {
   // zero negation awareness, so "didn't eat" / "doesn't understand" lost
   // their negation entirely once 8ead984 added the contractions to
   // STOP_WORDS — they were stripped here with nothing left to signal them).
+  // Rule 18 (corrected 2026-07-04): 'ja' replaces 'gija' here for the same
+  // reason as the main analyzeGrammar path — gija is a verbal adjective
+  // needing a governing main verb, not a general negation marker. Also
+  // fixes a latent stripping bug: this fallback previously appended
+  // '·gija' without first stripping the trailing vowel (Rule 15 stem
+  // rule), producing malformed double-raka forms like "Cha·a·gija".
   if (isNegative && verbs.length) {
-    verbs[verbs.length - 1] = verbs[verbs.length - 1] + '·gija';
+    const v = verbs[verbs.length - 1];
+    const base = v.replace(/·a$/, '·').replace(/a$/, '');
+    verbs[verbs.length - 1] = base.includes('·') ? base + 'ja' : v.replace(/a$/, '') + 'ja';
   } else if (isNegative && !verbs.length && nonVerbs.length) {
     // Bare-noun negation fallback: "not water"/"not rice" have no verb or
     // ·a-suffixed adjective to attach ·gija to, and "not" itself has no
@@ -655,12 +698,15 @@ export async function translate(input) {
     let sm = lookupGaro(stripped);
     if (sm) {
       if (isNegativeShortcut) {
-        // Broadened from /·a$/ to /a$/ — many present-tense words don't
-        // have a raka immediately before the final 'a' (e.g. "good" ->
-        // "Nama", no raka at all, vs "eat" -> "cha·a"). The 'a' ending
-        // itself is the actual present-tense marker; raka is a separate,
-        // inconsistent stylistic feature of some words, not all.
-        sm = /a$/i.test(sm) ? sm + '·gija' : sm;
+        // Rule 18 (corrected 2026-07-04): 'ja' (Rule 1, confirmed present
+        // negation) replaces 'gija' — gija is a verbal adjective requiring a
+        // governing main verb, not a general negation marker. Also fixes a
+        // latent bug: trailing vowel/raka wasn't stripped before appending,
+        // producing malformed forms like "Nama·gija" instead of "Namja".
+        if (/a$/i.test(sm)) {
+          const base = sm.replace(/·a$/, '·').replace(/a$/, '');
+          sm = base.includes('·') ? base + 'ja' : base + 'ja';
+        }
       }
       return { garo: sm, method: 'stopword-stripped', confidence: 0.88 };
     }
