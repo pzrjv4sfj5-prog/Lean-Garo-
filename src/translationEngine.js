@@ -92,10 +92,14 @@ const VERB_SUFFIXES = {
 };
 
 function applyTense(verbRoot, tense) {
-  const suffixes = { present: 'a', past: 'ha', future: 'gen', command: 'bo', negative_future: 'jawa', negative_command: 'nabe', negative_past: 'jaha', chim: 'chim', pastcont: 'engachim' };
+  // NOTE: 'jaha' is NOT past negation — it's discontinuation ("stopped X-ing").
+  // See docs/THANGSENG_RULES_LOOKUP.md Rule 17 (corrected 2026-07-04).
+  // True simple past negation has no confirmed suffix yet — do not add one here
+  // without native-speaker confirmation.
+  const suffixes = { present: 'a', past: 'ha', future: 'gen', command: 'bo', negative_future: 'jawa', negative_command: 'nabe', discontinued: 'jaha', completed: 'manaha', chim: 'chim', pastcont: 'engachim' };
   const suffix = suffixes[tense] || suffixes.present;
   // If already inflected, return as-is
-  if (/(enga|aha|gen|bo|chim|jaha|jawa|nabe)$/.test(verbRoot)) return verbRoot;
+  if (/(enga|aha|gen|bo|chim|jaha|jawa|nabe|manaha)$/.test(verbRoot)) return verbRoot;
   // THANGSENG EXCEPTION (2026-07-03): 'ha' is added WITHOUT stripping the root letter.
   // ringa + ha = ringaha (NOT ring + aha)
   // cha·a + ha = cha·aha (NOT cha· + aha)

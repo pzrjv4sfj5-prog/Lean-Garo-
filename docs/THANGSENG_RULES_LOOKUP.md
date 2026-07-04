@@ -301,14 +301,61 @@ These may be synonyms or context-dependent. Ask Thangseng before changing any do
 
 ---
 
-## RULE 17 — PAST NEGATION: `jaha` suffix (confirmed 2026-07-01)
+## RULE 17 — `jaha` = DISCONTINUATION, NOT PAST NEGATION (CORRECTED 2026-07-04)
 
-> "Cha·ja is present tense. The past will add the suffix 'ha'. So anga cha·jaha = i did not eat." — Thangseng
+> **SUPERSEDES the 2026-07-01 version of this rule below.** Thangseng revisited
+> and corrected this on 2026-07-03 — full source in
+> `docs/GRAMMAR_NOTES_JAHA_MANAHA_20260703.md`.
+
+> "The 'ha' ending when used with 'ja' may be understood as termination or
+> discontinuation of an action." — Thangseng (2026-07-03)
+
+`jaha` does **NOT** mean "did not X." It means the subject **was** doing the
+action but **has stopped**. Never translate `jaha` as "did not" or "never did."
 
 | Form | Meaning | cha· example | dak example |
 |---|---|---|---|
 | stem+`ja` | does not (present negation) | cha·ja | dakja |
-| stem+`jaha` | did not (past negation) | cha·jaha | dakjaha |
+| stem+`jaha` | has stopped X-ing / no longer X-ing (discontinuation) | cha·jaha | dakjaha |
+
+**True simple past negation ("did not eat") has NO confirmed suffix as of
+2026-07-04.** `corrections.json` entries that previously mapped "did not eat"
+etc. to `jaha` forms were WRONG and have been relabeled to their correct
+"stopped X-ing" meaning (see `docs/fix_jaha_semantic_correction.cjs`). Do not
+reintroduce "did not X" → `jaha` mappings. Flag to Thangseng as open (see
+Rule 25 outstanding items).
+
+### ~~Original 2026-07-01 rule (WRONG, kept for history only)~~
+~~"Cha·ja is present tense. The past will add the suffix 'ha'. So anga
+cha·jaha = i did not eat." — this reading is incorrect, see above.~~
+
+---
+
+## RULE 25 — `manaha` = COMPLETED ACTION (confirmed 2026-07-03)
+
+> "'manaha' has the meaning of completion of something." — Thangseng
+
+| Form | Meaning |
+|---|---|
+| stem+`manaha` | completed / has done / finished |
+
+Examples: `Cha·manaha` = ate / has eaten / has done eating. `Ringmanaha` =
+drank / has done drinking.
+
+**vs `jaha`:** `cha·jaha` = termination of an ongoing action (stopped eating).
+`cha·manaha` = completion of an action (ate, finished eating). Never
+interchangeable.
+
+**Relationship to Rule 2 (`-aha`) — UNRESOLVED:** Rule 2 already uses `-aha`
+for both simple past and perfect (e.g. `cha·aha` = ate/have eaten). Whether
+`-manaha` replaces, supplements, or is a stylistic alternate to `-aha` in
+these contexts is an **open question** — do not assume one replaces the
+other. Existing `-aha` corrections entries are left untouched pending
+clarification.
+
+**Tentative, unconfirmed:** `Angade cha·manaha` = "I have already eaten" —
+Thangseng flagged this himself as "not so sure about this one." Do not add
+as a confirmed correction until re-verified.
 
 ---
 
@@ -353,7 +400,7 @@ Example: `Ua an·tangni kamko dakgija dongaha` = She stayed without doing her wo
 
 ## RESOLVED PENDING ITEMS (2026-07-01)
 - ✅ `gnang` vs `donga` — synonyms; gnang=older/written, donga=spoken/common
-- ✅ Past negation — `jaha` suffix confirmed
+- ❌ SUPERSEDED 2026-07-04: `jaha` is NOT past negation — it's discontinuation. See Rule 17 (corrected) and Rule 25 (`manaha`).
 - ✅ `gija` raka — NO raka before gija when root has no raka (`dakgija` not `dak·gija`)
 - ✅ `seen` — `nikaha` (no raka, nika root confirmed raka-free)
 - ✅ `brong·` classifier — replaced by `jol` (bamboo), `ge·` (pen/general)
