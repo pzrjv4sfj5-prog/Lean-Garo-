@@ -366,7 +366,7 @@ as a confirmed correction until re-verified.
 | Form | Type | Meaning |
 |---|---|---|
 | `dakja` | verbal negation | does not do |
-| `dakjaha` | verbal past negation | did not do |
+| `dakjaha` | discontinuation (CORRECTED 2026-07-04, was wrongly "past negation") | has stopped doing / no longer doing |
 | `dakgija` | verbal adjective | without doing / not doing (adjectival) |
 
 Example: `Ua an·tangni kamko dakgija dongaha` = She stayed without doing her work

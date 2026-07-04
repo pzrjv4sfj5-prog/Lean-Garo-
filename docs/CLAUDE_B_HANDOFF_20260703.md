@@ -2,6 +2,11 @@
 _Session transfer — paste this at the start of a new chat to resume instantly_
 _Prepared: 2026-07-03_
 
+> **⚠️ SUPERSEDED 2026-07-04:** Rule 17 (`jaha` = "past negation") below is
+> WRONG. Thangseng corrected it: `jaha` = discontinuation ("stopped X-ing").
+> See `docs/THANGSENG_RULES_LOOKUP.md` Rule 17/25 and
+> `docs/GRAMMAR_NOTES_JAHA_MANAHA_20260703.md`. Kept here for history only.
+
 ---
 
 ## IDENTITY

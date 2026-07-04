@@ -1,5 +1,10 @@
 # HANDOFF — Claude A Session — 2026-07-03
 
+> **⚠️ SUPERSEDED 2026-07-04:** This document's `jaha` = "past negation" claim
+> (Rule 17) is WRONG. Thangseng corrected it: `jaha` = discontinuation
+> ("stopped X-ing"). See `docs/THANGSENG_RULES_LOOKUP.md` Rule 17/25 and
+> `docs/GRAMMAR_NOTES_JAHA_MANAHA_20260703.md`. Kept here for history only.
+
 ## IDENTITY
 Claude A — Language & Engine Side.
 Own: `src/translationEngine.js`, `src/garo_classifier.js`, `src/number_engine.js`, `src/gemini.js`, `server.js`, `src/data/phrase_maps.js`, `src/data/corrections.json`, `master_dictionary.json`, `src/compiled_dict.json`, `garo_dictionary.json`
