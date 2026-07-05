@@ -608,3 +608,33 @@ unrelated predicative corrections, or something else. Do not consolidate
 one direction without asking Thangseng: "Is 'ong·a' required after
 predicative adjectives, optional, or specific to certain persons/contexts?
 How does it relate to 'daka'?"
+
+---
+
+## RULE 32 — `search` = `Sandia` (confirmed 2026-07-05)
+
+> Confirmed by Thangseng: `search` = `Sandia`. `search for him` = `Biko sandibo`.
+
+This replaces a previous corrections.json contamination where `search` was
+mapped to `am·e·nik·na` (a purpose-clause form, "in order to search" —
+still valid in `PURPOSE_MAP` for actual purpose clauses, just wrong as the
+general dictionary root). That contamination caused suffix generation to
+produce malformed forms like `Ua am·e·nik·naha` (past-tense suffix stacked
+onto an already-inflected purpose form).
+
+With the correct root `Sandia` in place, general suffix generation now
+works naturally without needing sentence-specific corrections:
+
+| Form | Garo | Method |
+|---|---|---|
+| search (imperative/bare) | `Sandia` | correction |
+| search for him | `Biko sandibo` | correction |
+| he searched | `Sandiaha` | grammar-assembly (Rule 2, `-aha`) |
+| he was searching | `Sandienga chim` | grammar-assembly (Rule 26, pastcont) |
+| she used to search | `Sandiachim` | grammar-assembly (Rule 13, `chim`) |
+
+Also removed a permanently-unreachable duplicate corrections.json key,
+`lets go to the market` — `normalizeInput()` already converts `lets` to
+`let's`, so the apostrophe-free key could never be reached; the apostrophe
+version (`let's go to the market` → `Hai antichi re·na`) is the only live
+entry and is unaffected.

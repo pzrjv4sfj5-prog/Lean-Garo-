@@ -2,7 +2,6 @@
   "beautiful": "Sila",
   "fertile": "a'be·en",
   "land": "a'a",
-  "search": "am·e·nik·na",
   "gossip": "a·gan·jo·jo·na",
   "conqueror": "am·gipa",
   "conquer": "am·na",
@@ -79,7 +78,6 @@
   "lets go to market": "Hai Bajal Anti Re·na",
   "let us go to market": "Hai Bajal Anti Re·na",
   "let's go to the market": "Hai antichi re·na",
-  "lets go to the market": "Hai Bajal Anti Re·na",
   "dog bit me": "Achak Angko chikaha",
   "the dog bit me": "Achak Angko chikaha",
   "a dog bit me": "Achak Angko chikaha",
@@ -785,5 +783,7 @@
   "stopped eating": "cha·jaha",
   "hai cha·bo": "Hai cha·bo",
   "i will not eat": "Anga cha·jawa",
-  "i will not drink": "Anga ringjawa"
+  "i will not drink": "Anga ringjawa",
+  "search": "Sandia",
+  "search for him": "Biko sandibo"
 }

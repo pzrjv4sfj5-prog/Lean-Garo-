@@ -79,6 +79,12 @@ const REGRESSION_CASES = [
   { in: 'he cooked', expectGaro: 'Ua Song·aha', expectMethod: ['grammar-assembly'] },
   { in: 'he walked', expectGaro: 'Ua re·aha', expectMethod: ['grammar-assembly'] },
   { in: 'he answered', expectGaro: 'Ua Aganchakaha', expectMethod: ['grammar-assembly'] },
+
+  // --- Rule 32 (2026-07-05): search=Sandia, replaces am·e·nik·na contamination ---
+  { in: 'search', expectGaro: 'Sandia', expectMethod: ['correction'] },
+  { in: 'search for him', expectGaro: 'Biko sandibo', expectMethod: ['correction'] },
+  { in: 'he searched', expectGaro: 'Ua Sandiaha', expectMethod: ['grammar-assembly'] },
+  { in: 'he was searching', expectGaro: 'Ua Sandienga chim', expectMethod: ['grammar-assembly'] },
 ];
 
 for (const c of REGRESSION_CASES) {
