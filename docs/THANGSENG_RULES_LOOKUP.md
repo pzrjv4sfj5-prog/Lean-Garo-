@@ -558,3 +558,27 @@ Primary function: imperative (command). Secondary: hortative ("let us...").
 | `Hai cha·bo` | Let us eat | acceptable alternative |
 
 Do not restrict "let us..." constructions to only the `-na` form.
+
+---
+
+## RULE 30 — OPEN QUESTION: `re·` vs `re·ang` for "go" (flagged 2026-07-05)
+
+User reconfirmed the original Rule 5 example directly: `Re·jawa` = "I will
+not go" (bare, no destination) — matching `Hai re·naha` = "let's go" (also
+bare, original confirmed sentences). This conflicts with the bulk of
+dictionary/corrections data, which uses `re·ang` as the general "go" root
+(`Re·anga`=go, `re·anga`=went, `re·angenga`=going, `re·angja`=did not go,
+`Dokanchi re·angbo`=go to the shop).
+
+**Fixed for now (corrections.json, exact-match, safe):** `will not go` /
+`i will not go` → `re·jawa` (bare), matching the direct reconfirmation.
+**NOT changed:** the general `go`/`went`/`going` dictionary forms, or
+`did not go` — these still use `re·ang`, since `did not go`'s only
+native-confirmed example (`Re·angja`) was itself in a destination-bearing
+context ("did you go to the **market**").
+
+**Open question for Thangseng:** is `re·` vs `re·ang` a real distinction
+(e.g. bare/intransitive "go" vs directional "go to X"), or are they free
+variants where either is acceptable? Until confirmed, don't propagate
+`re·jawa` broadly to `went`/`going`/`did not go` forms — they may
+legitimately need `re·ang` when a destination is present or implied.

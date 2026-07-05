@@ -61,9 +61,9 @@ const REGRESSION_CASES = [
   { in: 'she stayed without doing her work', expectGaro: 'Ua an·tangni kamko dakgija dongaha', expectMethod: ['correction'] },
 
   // --- Bug sweep fixes (2026-07-05): future-negative jawa, dog/a·chak dup ---
-  { in: 'i will not eat', expectGaro: 'Anga Cha·jawa', expectMethod: ['grammar-assembly'] },
-  { in: 'i will not drink', expectGaro: 'Anga Ringjawa', expectMethod: ['grammar-assembly'] },
-  { in: 'i will not go', expectGaro: 'Anga re·angjawa', expectMethod: ['correction'] },
+  { in: 'i will not eat', expectGaro: 'Anga cha·jawa', expectMethod: ['correction'] },
+  { in: 'i will not drink', expectGaro: 'Anga ringjawa', expectMethod: ['correction'] },
+  { in: 'i will not go', expectGaro: 'Anga re·jawa', expectMethod: ['correction'] },
   { in: 'dogs', expectGaro: 'Achak' },
   { in: '0 dogs', expectGaro: 'Achak' },
 

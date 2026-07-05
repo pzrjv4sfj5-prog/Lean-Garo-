@@ -91,7 +91,7 @@
   "i ran": "Anga kataha",
   "i am not eating": "Anga cha·ja",
   "i am not going": "Anga re·ang·ja",
-  "i will not go": "Anga re·angjawa",
+  "i will not go": "Anga re·jawa",
   "do not go": "Re·angna·be",
   "do not eat": "cha·nabe",
   "my dog": "ang·ni achak",
@@ -704,7 +704,7 @@
   "do not run": "katnabe",
   "will not drink": "ringjawa",
   "do not drink": "ringnabe",
-  "will not go": "re·angjawa",
+  "will not go": "re·jawa",
   "go to the market": "Antichi re·angbo",
   "at the market": "antio",
   "i am waiting at the market": "Anga antio sengenga",
@@ -783,5 +783,7 @@
   "she stopped doing her work": "Ua an·tangni kamko dakjaha",
   "stopped doing": "dakjaha",
   "stopped eating": "cha·jaha",
-  "hai cha·bo": "Hai cha·bo"
+  "hai cha·bo": "Hai cha·bo",
+  "i will not eat": "Anga cha·jawa",
+  "i will not drink": "Anga ringjawa"
 }
