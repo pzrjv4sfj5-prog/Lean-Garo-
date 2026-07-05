@@ -30,7 +30,7 @@ for (const [k, v] of Object.entries(correctionsRaw)) {
 import { lookupPhrase } from './data/phrase_maps.js';
 import { getClassifier, countNoun, parseCountingPhrase } from './garo_classifier.js';
 import { toGaroNumber } from './number_engine.js';
-import { analyzeSentence } from './gemini.js';
+// Gemini import removed 2026-07-05 (dead fallback, see step 10 below)
 
 // Index build — support both string and array format
 function normalizeEntry(val) {
@@ -260,6 +260,16 @@ export function analyzeGrammar(input) {
       }
       if (garoVerb) {
         let garoWithTense = garoVerb;
+        // Rule 5 (confirmed): future negative is stem+jawa directly, e.g.
+        // 'cha·jawa' = will not eat, 'ringjawa' = will not drink — NOT
+        // future(gen) with negative(ja) stacked on top, which produced
+        // malformed forms like 'Cha·genja' (bug found 2026-07-05).
+        if (isNegative && detectedTense === 'future' && !isIrregular) {
+          garoWithTense = applyTense(garoVerb, 'negative_future');
+          verb = { english: words[i], garo: garoVerb, tense: 'negative_future', garoWithTense, isNegative, index: i };
+          verbIndex = i;
+          break;
+        }
         if (!isIrregular && ['future', ...SPECIAL_TENSES].includes(detectedTense)) {
           garoWithTense = applyTense(garoVerb, detectedTense);
         }
@@ -804,12 +814,10 @@ export async function translate(input) {
     if (fg) return { garo: fg, method: `fuzzy(${fuzzy.key},d=${fuzzy.distance})`, confidence: Math.max(0.40, 0.75 - fuzzy.distance * 0.1) };
   }
 
-  // 10. Gemini
-  try {
-    const geminiResult = await analyzeSentence(cleaned);
-    const g = geminiResult?.correctedInput !== cleaned ? geminiResult?.correctedInput : null;
-    if (g) return { garo: g, method: 'gemini', confidence: 0.60 };
-  } catch (_) {}
+  // 10. Gemini fallback — REMOVED (2026-07-05). Docs already documented this
+  // as removed; code was left half-wired, still importing analyzeSentence
+  // and calling an unconfigured API on every untranslated input (403
+  // Forbidden every time, silently swallowed, just wasted latency/noise).
 
   // 11. Passthrough
   return { garo: `${cleaned} [UNKNOWN]`, method: 'passthrough', confidence: 0 };
