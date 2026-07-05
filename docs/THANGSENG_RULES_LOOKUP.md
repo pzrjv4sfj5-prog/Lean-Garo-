@@ -452,7 +452,7 @@ This confirms the general raka rule applies universally to ALL suffixes includin
 
 ---
 
-## RULE 19 — CLASSIFIERS UPDATE (confirmed 2026-07-03)
+## RULE 19b — CLASSIFIERS UPDATE (confirmed 2026-07-03)
 
 Supersedes earlier brong·/ge entries for long objects:
 
@@ -582,3 +582,29 @@ context ("did you go to the **market**").
 variants where either is acceptable? Until confirmed, don't propagate
 `re·jawa` broadly to `went`/`going`/`did not go` forms — they may
 legitimately need `re·ang` when a destination is present or implied.
+
+---
+
+## RULE 31 — OPEN QUESTION: copula inconsistency in predicative adjectives (flagged 2026-07-05)
+
+Rule 6 confirms bare predicative adjective, no copula: `Gari sila` = "the
+car is beautiful" (noun+adjective, nothing else). This matches engine
+output for `he is happy`→`Ua kusi`, `she is tired`→`Ua nenga` (both via
+grammar-assembly, no copula).
+
+But existing corrections.json has `i am happy`→`Anga kusi ong·a` and
+`it is good`→`Nama ong·a` — same predicative-adjective construction, but
+WITH an `ong·a` suffix word appended. `ong·a` also appears in Rule 8's
+locative example (`Achak tebil kokkimao ong·a` = "the dog is under the
+table", `ong·a`="is [located]"). Three possible copula strategies are live
+in the data simultaneously: (1) zero-copula bare adjective (Rule 6), (2)
+`daka` (Rule 5, confirmed but no worked complement example), (3) `ong·a`
+(seen in locative + a couple of predicative-adjective corrections).
+
+**Not fixed this pass** — insufficient confirmed examples to know whether
+`ong·a` is: a first-person-specific requirement, a general acceptable
+alternate to bare-adjective, a locative-only copula that leaked into
+unrelated predicative corrections, or something else. Do not consolidate
+one direction without asking Thangseng: "Is 'ong·a' required after
+predicative adjectives, optional, or specific to certain persons/contexts?
+How does it relate to 'daka'?"
