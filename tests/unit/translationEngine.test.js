@@ -66,6 +66,12 @@ const REGRESSION_CASES = [
   { in: 'i will not go', expectGaro: 'Anga re·angjawa', expectMethod: ['correction'] },
   { in: 'dogs', expectGaro: 'Achak' },
   { in: '0 dogs', expectGaro: 'Achak' },
+
+  // --- Rules 27/28/29 (2026-07-05): no true simple past, aha/manaha overlap, -bo hortative ---
+  { in: 'he did not go', expectGaro: 'Ua Re·angja', expectMethod: ['grammar-assembly'] },
+  { in: 'i did not go', expectGaro: 'Anga Re·angja', expectMethod: ['grammar-assembly'] },
+  { in: 'go', expectGaro: 'Re·anga' },
+  { in: 'hai cha·bo', expectGaro: 'Hai cha·bo', expectMethod: ['correction'] },
 ];
 
 for (const c of REGRESSION_CASES) {

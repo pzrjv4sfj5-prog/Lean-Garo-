@@ -306,7 +306,7 @@ export const PHRASE_MAPS = {
   'buy': 'Brea',
   'sell': 'Pala',
   'come': 'Re·ba·a',
-  'go': 'Re·ang·a',
+  'go': 'Re·anga',
   'open': 'Oa',
   'close': 'Chip·a',
   'push': 'Jit·pak·a',

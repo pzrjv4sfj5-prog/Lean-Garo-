@@ -508,3 +508,53 @@ function toward arbitrary clause nesting without native-speaker
 confirmation that such structures exist — it's more likely additional
 patterns should be added as their own flat detectors, matching how
 if-clauses and purpose-clauses are already handled elsewhere in this file.
+
+---
+
+## RULE 27 — NO TRUE SIMPLE PAST SUFFIX (confirmed 2026-07-05)
+
+> "I don't think that we have something that may be called a true simple
+> past suffix. As far as I can tell, 'ja' is also used to talk about past
+> events." — Thangseng
+
+`Re·angja` = "did not go" (reply to `Na·a mijalo anti re·angama?` = "Did you
+go to the market yesterday?"). `-ja` is primarily a negative marker and
+naturally covers past-referring negatives — do not assume a dedicated
+simple-past suffix distinct from this. This RETROACTIVELY CONFIRMS the
+a38749b fix (gija->ja for negation) was correct, and explains why
+`i did not eat` -> `Anga Cha·ja` (present-negative form used for
+past-referring negation) is the right answer, not a workaround.
+
+**Side finding while verifying this rule:** `go` root had a raka
+inconsistency — `Re·ang·a` (extra raka before the tense-suffix `a`) in
+master_dictionary.json/garo_dictionary.json/final_entries.json, directly
+contradicting this rule's own confirmed example `Re·angja` (no second
+raka) and the already-correct `re·angbo`/`re·angjawa`/`re·angjaha` forms
+already used elsewhere. Fixed to `Re·anga` at source (2026-07-05).
+
+---
+
+## RULE 28 — `-aha` / `-manaha` OVERLAP IN SPOKEN GARO (confirmed 2026-07-05)
+
+> "'aha' and 'manaha' do overlap in meaning as far as spoken Garo is
+> concerned." — Thangseng
+> "How it is used in literature cannot be verified due to lack of source."
+> — Thangseng
+
+This resolves the "UNRESOLVED" note under Rule 25: both forms are valid in
+spoken Garo, don't enforce a rigid distinction between them going forward.
+Literary/written usage remains unverified — flag if it ever matters for a
+specific deliverable (e.g. formal writing).
+
+---
+
+## RULE 29 — `-bo` IS ALSO HORTATIVE, NOT ONLY IMPERATIVE (confirmed 2026-07-05)
+
+Primary function: imperative (command). Secondary: hortative ("let us...").
+
+| Form | Meaning | Register |
+|---|---|---|
+| `Hai cha·na` | Let us eat | preferred |
+| `Hai cha·bo` | Let us eat | acceptable alternative |
+
+Do not restrict "let us..." constructions to only the `-na` form.
