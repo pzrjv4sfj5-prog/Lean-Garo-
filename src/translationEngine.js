@@ -86,15 +86,33 @@ const STOP_WORDS = new Set([
 // were previously falling through into object detection as [UNKNOWN]
 // (e.g. "i didn't eat" -> object: "didn't" -> "[UNKNOWN]·ko").
 
-const VERB_SUFFIXES = {
-  present: 'enga', past: '·a', past_alt: 'aha',
-  future: 'gen', command: 'bo',
-};
+// VERB_SUFFIXES removed 2026-07-05 — dead table, contradicted applyTense's
+// real suffix map (claimed past='·a' vs applyTense's actual 'ha'; claimed
+// present='enga' which is actually the progressive suffix). Only consumer
+// was the informational garoTenseSuffix field below, confirmed unused by
+// any UI component — removed rather than fixed-in-place to avoid keeping
+// two suffix tables that could drift apart again.
 
 const PRONOUN_MAP = {
   'i':'Anga','me':'angko','you':'Na·a','he':'Ua','she':'Ua',
   'it':'Ua','we':'An·ching','us':'An·ching·ko','they':'Uamang','them':'Uamang·ko',
 };
+
+// Shared negation suffix logic (was duplicated 3x — main verb loop,
+// assembleSentenceSOV fallback, stopword-stripped step — with drift risk
+// each time one copy got fixed and the others didn't, as happened with the
+// gija->ja migration on 2026-07-04).
+// Rule 18 (corrected 2026-07-04): 'ja' (Rule 1, present negation) is used
+// for negation generally — 'gija' is a verbal adjective requiring a
+// governing main verb, not a negation marker.
+// Rule 27 (confirmed 2026-07-05): '-ja' naturally covers past-referring
+// negation too ('Re·angja' = "did not go", confirmed native reply to a
+// past-tense question) — Garo has no dedicated simple-past suffix, so this
+// same form is correct regardless of the input's English tense.
+function applyNegation(garoForm) {
+  const base = garoForm.replace(/·a$/, '·').replace(/a$/, '');
+  return base.includes('·') ? base + 'ja' : garoForm.replace(/a$/, '') + 'ja';
+}
 
 function applyTense(verbRoot, tense) {
   // NOTE: 'jaha' is NOT past negation — it's discontinuation ("stopped X-ing").
@@ -135,12 +153,12 @@ const IRREGULAR_VERBS = {
   'went':'re·anga','gone':'re·anga','going':'re·angenga',
   'ate':'cha·aha','eaten':'cha·manaha','eating':'cha·enga',
   'saw':'nikaha','seen':'nikaha','seeing':'nikenga',
-  'told':'agan·aha','said':'aganaha','saying':'aganenga',
+  'told':'aganaha','said':'aganaha','saying':'aganenga',
   'came':'re·ba·aha','coming':'re·baenga','want':'sikenga','wants':'sikenga','need':'sikenga',
-  'drank':'ring·aha','drinking':'ringenga',
+  'drank':'ringaha','drinking':'ringenga',
   'gave':'on·aha','giving':'onenga',
   'ran':'kataha','running':'katenga',
-  'slept':'tus·aha','sleeping':'tusenga',
+  'slept':'tusaha','sleeping':'tusenga',
   'worked':'dakaha','working':'dakenga',
   'laughed':'ka·ding·aha','laughing':'ka·dingeng',
   'washed':'su·gala','washing':'su·galenga',
@@ -153,16 +171,13 @@ const IRREGULAR_VERBS = {
   'walked':'re·aha','walking':'re·enga',
   'stood':'chadenga','standing':'chadenga',
   'sat':'asong·aha','sitting':'asong·enga',
-  'searched':'am·e·nik·na',
-  'searching':'am·e·nik·na',
-  'gossiped':'a·gan·jo·jo·na',
-  'gossiping':'a·gan·jo·jo·na',
-  'conquered':'am·na',
-  'began':'a·ba·cheng·na',
-  'begun':'a·ba·cheng·na',
-  'spoke':'a·gan·na',
-  'answered':'a·gan·chak·na',
-  'discovered':'am·e·nik·na',
+  // Removed 2026-07-05: searched/searching/gossiped/gossiping/conquered/
+  // began/begun/spoke/answered/discovered all used purpose-clause -na
+  // endings (infinitive/purpose marker, e.g. 'a·gan·chak·na') instead of
+  // actual past-tense forms - searched and searching even shared the exact
+  // same (wrong) value. Letting these fall through to the general
+  // dictionary-lookup + applyTense('past') pipeline instead of hardcoding
+  // unverified forms.
 };
 
 const POSSESSIVES = {
@@ -170,13 +185,12 @@ const POSSESSIVES = {
   'our':'An·chingni','their':'Uamangni','its':'Uni',
 };
 
-const PURPOSE_VERBS = {
-  'see':'nik·a·na','eat':'cha·na','drink':'ring·na',
-  'meet':'chap·na','buy':'brea·na','sell':'pala·na',
-  'go':'re·ang·na','come':'re·ba·na','work':'dakna',
-  'study':'pora·na','pray':'bi·a·na','help':'betoi·na',
-  'find':'mia·na','give':'on·a·na','take':'ra·a·na',
-};
+// PURPOSE_VERBS removed 2026-07-05 — was a duplicate of PURPOSE_MAP (below)
+// with only 15 of its 37 entries and one real conflict ('see': 'nik·a·na'
+// vs PURPOSE_MAP's 'nina' — 'nina' kept, matches the dictionary's present-
+// tense root 'ni' in 'nia', see PURPOSE_MAP for details). Two maps for the
+// same grammatical concept is exactly the kind of duplicated/contradictory
+// logic flagged in the 2026-07-05 audit — consolidated into one.
 
 function findVerbForm(w) {
   if (IRREGULAR_VERBS[w]) return IRREGULAR_VERBS[w];
@@ -185,6 +199,13 @@ function findVerbForm(w) {
   if (stripped !== w) {
     if (IRREGULAR_VERBS[stripped]) return IRREGULAR_VERBS[stripped];
     if (lookupGaro(stripped)) return lookupGaro(stripped);
+    // English y->ied spelling change: 'studied' strips to 'studi', not
+    // 'study' (found 2026-07-05) - try restoring the 'y'.
+    if (/i$/.test(stripped)) {
+      const yForm = stripped.slice(0, -1) + 'y';
+      if (IRREGULAR_VERBS[yForm]) return IRREGULAR_VERBS[yForm];
+      if (lookupGaro(yForm)) return lookupGaro(yForm);
+    }
   }
   return null;
 }
@@ -272,17 +293,20 @@ export function analyzeGrammar(input) {
         }
         if (!isIrregular && ['future', ...SPECIAL_TENSES].includes(detectedTense)) {
           garoWithTense = applyTense(garoVerb, detectedTense);
+        } else if (!isNegative && !isIrregular && (detectedTense === 'past' || /ed$/.test(w))
+                   && !/(enga|aha|gen|bo|chim|jaha|jawa|nabe|manaha)$/.test(garoVerb)) {
+          // Rule 2 (confirmed): -aha = simple past AND perfect. Applied here
+          // for affirmative statements regardless of whether tense evidence
+          // came from a sentence-level auxiliary (was/did/...) or from the
+          // verb's own -ed morphology ('studied' has neither an auxiliary
+          // nor an IRREGULAR_VERBS entry, so without this it silently
+          // resolved to no verb at all — found 2026-07-05 grammar audit).
+          // Rule 27: negation is handled separately below and never
+          // composes with this — 'did not X' uses present+ja regardless.
+          garoWithTense = applyTense(garoVerb, 'past');
         }
         if (isNegative) {
-          // Rule 18 (corrected 2026-07-04): gija is a verbal adjective, not a
-          // negation marker — it needs a governing main verb ("dakgija
-          // dongaha" = stayed without doing), which general negated input
-          // doesn't supply. No confirmed suffix exists for true simple past
-          // negation (Rule 25 outstanding item), so 'ja' (Rule 1, confirmed
-          // present negation) is used as the safe fallback instead of the
-          // previously-misused 'gija'.
-          const base = garoWithTense.replace(/·a$/, '·').replace(/a$/, '');
-          garoWithTense = base.includes('·') ? base + 'ja' : garoWithTense.replace(/a$/, '') + 'ja';
+          garoWithTense = applyNegation(garoWithTense);
         }
         verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i };
         verbIndex = i;
@@ -306,8 +330,8 @@ export function analyzeGrammar(input) {
       const prevW = i > 0 ? words[i-1].toLowerCase().replace(/[^a-z]/g,'') : '';
       if (w === 'to' && i + 1 < words.length && prevW !== 'used') {
         const nextW = words[i+1].toLowerCase().replace(/[^a-z]/g,'');
-        if (PURPOSE_VERBS[nextW]) {
-          purposeAction = { english: words[i+1], garo: PURPOSE_VERBS[nextW] };
+        if (PURPOSE_MAP[nextW]) {
+          purposeAction = { english: words[i+1], garo: PURPOSE_MAP[nextW] };
           i++; continue;
         }
       }
@@ -326,7 +350,7 @@ export function analyzeGrammar(input) {
 
     return {
       wordCount, detectedTense, tenseEvidence, isNegative,
-      garoTenseSuffix: VERB_SUFFIXES[detectedTense] || null,
+      garoTenseSuffix: null, // removed 2026-07-05, see comment above
       structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
       subject, verb, object, possessive, purposeAction, classifierHints,
       garoWordOrder: 'SOV (Subject → Object → Verb)',
@@ -338,7 +362,7 @@ export function analyzeGrammar(input) {
 
   return {
     wordCount, detectedTense, tenseEvidence, isNegative,
-    garoTenseSuffix: VERB_SUFFIXES[detectedTense] || null,
+    garoTenseSuffix: null, // removed 2026-07-05, see comment above
     structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
     subject, verb, object, classifierHints,
     garoWordOrder: 'SOV (Subject → Object → Verb)',
@@ -418,16 +442,9 @@ function assembleSentenceSOV(words, isNegative = false) {
   // zero negation awareness, so "didn't eat" / "doesn't understand" lost
   // their negation entirely once 8ead984 added the contractions to
   // STOP_WORDS — they were stripped here with nothing left to signal them).
-  // Rule 18 (corrected 2026-07-04): 'ja' replaces 'gija' here for the same
-  // reason as the main analyzeGrammar path — gija is a verbal adjective
-  // needing a governing main verb, not a general negation marker. Also
-  // fixes a latent stripping bug: this fallback previously appended
-  // '·gija' without first stripping the trailing vowel (Rule 15 stem
-  // rule), producing malformed double-raka forms like "Cha·a·gija".
+  // Rule 18/27: see applyNegation() definition for rationale.
   if (isNegative && verbs.length) {
-    const v = verbs[verbs.length - 1];
-    const base = v.replace(/·a$/, '·').replace(/a$/, '');
-    verbs[verbs.length - 1] = base.includes('·') ? base + 'ja' : v.replace(/a$/, '') + 'ja';
+    verbs[verbs.length - 1] = applyNegation(verbs[verbs.length - 1]);
   } else if (isNegative && !verbs.length && nonVerbs.length) {
     // Bare-noun negation fallback: "not water"/"not rice" have no verb or
     // ·a-suffixed adjective to attach ·gija to, and "not" itself has no
@@ -466,12 +483,12 @@ function fuzzyMatch(input) {
 // ── PURPOSE VERB MAP ─────────────────────────────────────────────────────────
 const PURPOSE_MAP = {
   'see':'nina','meet':'chap·na','buy':'brea·na','sell':'pala·na',
-  'eat':'cha·na','drink':'ring·na','study':'pora·na','read':'pora·na',
+  'eat':'cha·na','drink':'ringna','study':'pora·na','read':'pora·na',
   'work':'dakna','pray':'bi·a·na','go':'re·ang·na','come':'re·ba·na',
   'help':'betoi·na','find':'mia·na','give':'on·a·na','take':'ra·a·na',
-  'speak':'a·gan·na','talk':'a·gan·na','learn':'skia·na','teach':'skia on·na',
-  'cook':'song·a·na','wash':'su·gala·na','sleep':'tusia·na','play':'kal·a·na',
-  'run':'kat·na','walk':'re·a·na','write':'sea·na','ask':'sing·a·na',
+  'speak':'aganna','talk':'aganna','learn':'skia·na','teach':'skia on·na',
+  'cook':'song·a·na','wash':'su·gala·na','sleep':'tusina','play':'kal·a·na',
+  'run':'katna','walk':'re·a·na','write':'sea·na','ask':'sing·a·na',
   'answer':'a·gan·chak·na','begin':"a'ba·cheng·na",'start':"a'ba·cheng·na",
   'search':'am·e·nik·na','look':'ni·na','listen':'knachik·na',
   'visit':'nina re·ang·na','sing':'bit·na','dance':'ruru·na',
@@ -761,25 +778,16 @@ export async function translate(input) {
   if (stripped && stripped !== lower) {
     let sm = lookupGaro(stripped);
     if (sm) {
-      if (isNegativeShortcut) {
-        // Rule 18 (corrected 2026-07-04): 'ja' (Rule 1, confirmed present
-        // negation) replaces 'gija' — gija is a verbal adjective requiring a
-        // governing main verb, not a general negation marker. Also fixes a
-        // latent bug: trailing vowel/raka wasn't stripped before appending,
-        // producing malformed forms like "Nama·gija" instead of "Namja".
-        if (/a$/i.test(sm)) {
-          const base = sm.replace(/·a$/, '·').replace(/a$/, '');
-          sm = base.includes('·') ? base + 'ja' : base + 'ja';
-        }
+      if (isNegativeShortcut && /a$/i.test(sm)) {
+        sm = applyNegation(sm);
       }
       return { garo: sm, method: 'stopword-stripped', confidence: 0.88 };
     }
   }
 
-  // 5. Number engine
-  const numResult = null; // number_engine handles via classifier
-  if (numResult) return { garo: numResult, method: 'number-engine', confidence: 0.96 };
-
+  // Step 5 (number engine) removed 2026-07-05 — was `const numResult = null`
+  // followed by `if (numResult)`, permanently dead code. Number/classifier
+  // handling happens earlier in the pipeline (step 1).
   // 5.5 Rule 18 positive gija construction ("without VERB-ing")
   const gijaConstruction = tryWithoutGijaConstruction(cleaned);
   if (gijaConstruction) return { garo: gijaConstruction, method: 'gija-construction', confidence: 0.85 };

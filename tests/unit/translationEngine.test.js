@@ -72,6 +72,13 @@ const REGRESSION_CASES = [
   { in: 'i did not go', expectGaro: 'Anga Re·angja', expectMethod: ['grammar-assembly'] },
   { in: 'go', expectGaro: 'Re·anga' },
   { in: 'hai cha·bo', expectGaro: 'Hai cha·bo', expectMethod: ['correction'] },
+
+  // --- Grammar-modeling audit (2026-07-05): affirmative past tense via
+  // real Rule 2 (-aha) suffix logic instead of per-word memorized corrections ---
+  { in: 'he studied', expectGaro: 'Ua po·ri·aha', expectMethod: ['grammar-assembly'] },
+  { in: 'he cooked', expectGaro: 'Ua Song·aha', expectMethod: ['grammar-assembly'] },
+  { in: 'he walked', expectGaro: 'Ua re·aha', expectMethod: ['grammar-assembly'] },
+  { in: 'he answered', expectGaro: 'Ua Aganchakaha', expectMethod: ['grammar-assembly'] },
 ];
 
 for (const c of REGRESSION_CASES) {
