@@ -13,8 +13,9 @@
  *  7. Morphology
  *  8. Compound split
  *  9. Fuzzy match
- * 10. Gemini fallback
- * 11. Passthrough
+ * 10. Passthrough
+ *
+ * (Gemini fallback formerly step 10, removed 2026-07-05 — see docs/ARCHITECTURE.md §9)
  */
 
 import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
