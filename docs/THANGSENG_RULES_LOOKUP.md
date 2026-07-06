@@ -638,3 +638,15 @@ Also removed a permanently-unreachable duplicate corrections.json key,
 `let's`, so the apostrophe-free key could never be reached; the apostrophe
 version (`let's go to the market` → `Hai antichi re·na`) is the only live
 entry and is unaffected.
+
+---
+
+## RULE 33 — `down` = `Ka·ma` (confirmed 2026-07-05)
+
+`Ka·ma` = down. `Aiwa ka·machi maia donga?` = "What's down there?"
+(`ka·ma`+`chi` = directional suffix, Rule 9).
+
+Found while adding: master_dictionary.json and final_entries.json both had
+a duplicate `Down`→`kim·il` entry (notes: "variant/VERIFIED/HIGH")
+alongside the correct `Ka·ma` — same class of duplicate-contamination bug
+as the earlier `dog`/`a·chak` and `go`/`Re·ang·a` fixes. Removed.

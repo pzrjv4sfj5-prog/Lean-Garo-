@@ -85,6 +85,10 @@ const REGRESSION_CASES = [
   { in: 'search for him', expectGaro: 'Biko sandibo', expectMethod: ['correction'] },
   { in: 'he searched', expectGaro: 'Ua Sandiaha', expectMethod: ['grammar-assembly'] },
   { in: 'he was searching', expectGaro: 'Ua Sandienga chim', expectMethod: ['grammar-assembly'] },
+
+  // --- Rule 33 (2026-07-05): down = Ka·ma ---
+  { in: 'down', expectGaro: 'Ka·ma', expectMethod: ['correction'] },
+  { in: "what's down there", expectGaro: 'Aiwa ka·machi maia donga?', expectMethod: ['correction'] },
 ];
 
 for (const c of REGRESSION_CASES) {

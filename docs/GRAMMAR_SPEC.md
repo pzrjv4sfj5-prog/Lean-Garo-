@@ -45,6 +45,7 @@ example) · `tentative` (native speaker expressed uncertainty) · `derived`
 | 30 | `re·` vs `re·ang` for "go" — real distinction or free variation? | **open** | corrections.json hardcodes bare form for future-negative only | `i will not go` |
 | 31 | Copula inconsistency: bare-adjective (Rule 6) vs `daka` (Rule 5) vs `ong·a` (seen in Rule 8 locative + some predicative corrections) | **open** | none unified — 3 strategies coexist in live data | `he is happy` (bare), `i am happy` (ong·a) — inconsistent |
 | 32 | `search` = `Sandia` (replaces contaminated `am·e·nik·na` root) | confirmed | corrections.json + natural `applyTense` generation | `search`, `search for him`, `he searched`, `he was searching`, `she used to search` |
+| 33 | `down` = `Ka·ma` | confirmed | corrections.json (removed duplicate `kim·il` contamination) | `down`, `what's down there` |
 
 ## Known architectural gaps (not yet rule violations, just unimplemented)
 - **Copula `daka`** (Rule 5) and **adjective placement** (Rule 6) have no
