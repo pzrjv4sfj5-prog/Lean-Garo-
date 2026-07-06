@@ -47,6 +47,24 @@ A comprehensive, production-ready semantic translation and learning platform for
 - Fuzzy normalization and error tolerance
 - Translation priority system (exact > compound > classified > normalized > morphology-aware > grammar-aware > semantic > fuzzy)
 
+## 📚 Documentation
+
+| Doc | Purpose |
+|---|---|
+| `docs/ARCHITECTURE.md` | Complete engineering reference — pipeline stages, dictionary resolution priority, suffix generation logic, worked examples, module map, repo audit, future roadmap |
+| `docs/THANGSENG_RULES_LOOKUP.md` | Full native-speaker-confirmed grammar rule catalogue (33 rules), with examples and confirmation dates |
+| `docs/GRAMMAR_SPEC.md` | At-a-glance rule status index (confidence level, implementation location, test coverage) |
+| `docs/PENDING_reverse_translation.md` | Status of Garo→English reverse translation (currently blocked, no reverse dictionary source) |
+
+## 🧪 Testing
+
+```bash
+npm test          # Unit + regression suite (tests/unit/translationEngine.test.js)
+npm run build     # Full pipeline: dictionary validation → regression suite → production bundle
+```
+
+The regression suite (49+ cases and growing) covers every confirmed grammar rule and is wired into `npm run build` — a grammar or dictionary regression fails the build automatically. CI (`.github/workflows/ci.yml`) runs this on every push/PR to `main`.
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -124,14 +142,14 @@ The translation engine is not a simple dictionary lookup. It includes:
 - Semantic matching as last resort
 
 ### `lets` / `let's` Phrase Handling
-- Normalizes `let's` and `lets` to the same matching form
+- Normalizes `let's` and `lets` to the same matching form (both a case-preserving
+  contraction expander and an apostrophe-stripped shadow index handle this)
 - Supports Hai expression translations for collective commands
 - Verified translations:
   - `lets go` → `Hai re·naha`
-  - `lets eat` → `Hai cha·ha`
-  - `lets eat food` → `Hai, mi cha·na`
-  - `lets go eat` → `Hai, mi cha·na re·na`
-  - `lets run` → `Hai katha`
+  - `lets eat` → `Hai cha·na`
+  - `lets eat food` → `Hai mi cha·na`
+  - Hortative alternate: `-bo` also works (`Hai cha·bo` = let us eat), not just `-na`
 
 ## 📚 Garo Language Structure
 
@@ -145,13 +163,22 @@ The translation engine is not a simple dictionary lookup. It includes:
 | **King** | Books, paper, leaves, flat objects | ki·tap gni·king (two books) |
 | **Ge** | Objects, things, items, tools | chokki sa·ge (one chair) |
 
-### Verb Tenses
+### Verb Tenses & Aspect
 
-| Tense | Suffix | Example | English |
+| Tense/Aspect | Suffix | Example | English |
 |-------|--------|---------|---------|
-| Present | -enga | cha·enga | eating |
-| Past | -aha | cha·aha | ate |
+| Present | -a | cha·a | eats/eating (habitual) |
+| Progressive | -enga | cha·enga | is eating |
+| Past/Perfect | -aha | cha·aha | ate / has eaten |
 | Future | -gen | cha·gen | will eat |
+| Present negative | -ja | cha·ja | does not eat (also covers past-referring negation — Garo has no dedicated simple-past-negative suffix) |
+| Future negative | -jawa | cha·jawa | will not eat |
+| Discontinued | -jaha | cha·jaha | stopped eating / no longer eating |
+| Completed | -manaha | cha·manaha | has finished eating (overlaps with -aha in spoken use) |
+| "Used to" | -chim (full-root) | cha·achim | used to eat |
+| Past progressive | [progressive] chim | cha·enga chim | was eating |
+
+Full rule catalogue with native-speaker confirmation status: `docs/THANGSENG_RULES_LOOKUP.md`.
 
 ### Number System
 
@@ -162,6 +189,12 @@ Tens: Kolgrik(20), Kolatchi(30), Sotbri(40), Sotbonga(50), Sotdok(60), Sotsni(70
 Compound numbers add suffixes: Kolgrik-sa(21), Kolatchi-gni(32), Sotbri-bonga(45)
 
 ## 🌐 Deployment
+
+**Live:** https://lean-garo.onrender.com (Render, auto-deploys from `main` on push)
+
+### Render (current production deployment)
+- Connect the GitHub repo, set build command `npm run build`, publish directory `dist`
+- `public/_redirects` handles SPA client-side routing fallback
 
 ### GitHub Pages
 ```bash
@@ -174,10 +207,6 @@ npm run build
 npm install -g vercel
 vercel
 ```
-
-Live deployment: https://lean-garo-translator.vercel.app
-
-> If you use a Gemini AI fallback, add `VITE_GEMINI_API_KEY` in your Vercel project settings or via the dashboard.
 
 ### Netlify
 ```bash
@@ -196,7 +225,7 @@ EXPOSE 3001
 CMD ["npm", "start"]
 ```
 
-### Railway, Render, Replit
+### Railway, Netlify, Replit
 - All support Node.js applications
 - Set `npm start` as start command
 - Environment: Set NODE_ENV=production

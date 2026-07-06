@@ -192,8 +192,6 @@ most accumulated technical debt (see §9).
 | **phrase_maps** | `src/data/phrase_maps.js` | `{phrase: garo}`, multi-word only | `lookupPhrase()` — object extraction, step 1.5, SOV fallback |
 | **PURPOSE_MAP** | inline in `translationEngine.js` (~37 entries) | `{verb: purposeForm}` | purpose-clause detection (`"to eat"` → `cha·na`) |
 | **IRREGULAR_VERBS** | inline in `translationEngine.js` (~28 entries) | `{inflectedForm: garo}` | `findVerbForm()` first check, before dictionary lookup |
-| **PROGRESSIVE_MAP** | inline, ~26 entries | `{ingForm: garo}` | **currently unreferenced by any call site** — dead data, see §9 |
-| **PAST_TO_ROOT** | inline, ~26 entries | `{pastForm: root}` | **currently unreferenced by any call site** — dead data, see §9 |
 
 **`lookupGaro()`'s own priority** (line 53): `corrections.json` → `compiled_dict`
 (via `EN_INDEX`). This function is the single most-called lookup primitive in the
@@ -449,14 +447,11 @@ passthrough.
   now fall through to general dictionary+`applyTense` pipeline.
 - Duplicate corrections.json key `lets go to the market` (permanently
   unreachable — `normalizeInput` already converts `lets`→`let's`).
+- **`PROGRESSIVE_MAP`** (26 entries) and **`PAST_TO_ROOT`** (26 entries) —
+  confirmed zero call sites anywhere in the codebase, removed 2026-07-06
+  (V1.0 launch sprint, P2 low-risk cleanup).
 
 ### Dead code NOT yet removed (found, not fixed)
-- **`PROGRESSIVE_MAP`** (line ~565, 26 entries) and **`PAST_TO_ROOT`**
-  (line ~554, 26 entries) — grepped, zero call sites reference either. Likely
-  superseded by `IRREGULAR_VERBS` + `applyTense`'s generic suffix logic, but
-  not verified safe to delete without checking git history for why they were
-  added. **Recommend:** confirm dead, then delete — or wire them in if they
-  cover cases `IRREGULAR_VERBS` doesn't.
 - **Duplicate typo-tolerance mechanisms**: the apostrophe-stripped shadow
   index (module load, line 24) and `normalizeInput()`'s explicit contraction
   expansion (line 529) both solve "lets"→"let's"-class problems, from two
