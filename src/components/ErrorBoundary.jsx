@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types -- project doesn't depend on prop-types;
+   both props here (label: string, children: node) are optional/informal */
 import React from 'react'
 
 /**

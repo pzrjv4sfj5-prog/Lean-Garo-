@@ -868,7 +868,12 @@ const translationEngine = {
   async translateSentence(text, inputLang = 'en', outputLang = 'garo') {
     if (!text || !text.trim()) return null;
     const r = await translate(text);
-    return { translated: r.garo, original: text, breakdown: [], direction: inputLang === 'garo' ? 'garo_to_en' : 'en_to_garo', method: r.method };
+    const g = analyzeGrammar(text);
+    const breakdown = [];
+    if (g?.subject) breakdown.push({ english: g.subject.english, garo: g.subject.garo, category: 'subject' });
+    if (g?.verb) breakdown.push({ english: g.verb.english, garo: g.verb.garoWithTense || g.verb.garo, category: 'verb' });
+    if (g?.object) breakdown.push({ english: g.object.english, garo: g.object.garo, category: 'object' });
+    return { translated: r.garo, original: text, breakdown, direction: inputLang === 'garo' ? 'garo_to_en' : 'en_to_garo', method: r.method };
   },
   translate(text) {
     return translate(text).then(r => r.garo);

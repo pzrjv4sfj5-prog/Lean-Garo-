@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import translationEngine from '../translationEngine'
 
 export default function Translator() {
@@ -10,6 +10,12 @@ export default function Translator() {
   const [grammar, setGrammar] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+  const textareaRef = useRef(null)
+  const outputRef = useRef(null)
+
+  useEffect(() => {
+    textareaRef.current?.focus()
+  }, [])
 
   // Manual translation function
   const handleTranslate = async () => {
@@ -58,6 +64,9 @@ export default function Translator() {
       setBreakdown([])
     } finally {
       setLoading(false)
+      // Move focus to the output region so screen reader users land on the
+      // result (or error) immediately without hunting for it.
+      outputRef.current?.focus()
     }
   }
 
@@ -65,6 +74,19 @@ export default function Translator() {
   const handleSubmit = (e) => {
     e.preventDefault()
     handleTranslate()
+  }
+
+  // Ctrl/Cmd+Enter submits without leaving the textarea (plain Enter still
+  // inserts a newline, since multi-sentence input is a reasonable use case).
+  // Escape clears the input for a fast retry.
+  const handleKeyDown = (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+      e.preventDefault()
+      handleTranslate()
+    } else if (e.key === 'Escape') {
+      setInputText('')
+      setError(null)
+    }
   }
 
   const examples = [
@@ -81,6 +103,7 @@ export default function Translator() {
   const handleExample = (example) => {
     if (inputLang === 'en') {
       setInputText(example.en)
+      textareaRef.current?.focus()
     }
   }
 
@@ -122,14 +145,21 @@ export default function Translator() {
             </label>
 
             <textarea
+              ref={textareaRef}
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
+              onKeyDown={handleKeyDown}
               placeholder="Type something to translate..."
               disabled={loading}
+              aria-label="Text to translate"
               className="w-full h-48 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none disabled:opacity-50"
             />
 
-            <div className="mt-3 flex justify-between items-center">
+            <div className="mt-1 text-xs text-gray-400 dark:text-gray-500">
+              Ctrl+Enter to translate · Esc to clear
+            </div>
+
+            <div className="mt-3 flex flex-wrap gap-2 justify-between items-center">
               <span className="text-sm text-gray-500 dark:text-gray-400">
                 {inputText.length} characters
               </span>
@@ -177,9 +207,15 @@ export default function Translator() {
             </select>
           </label>
 
-          <div className="w-full h-48 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white overflow-y-auto font-mono select-all">
+          <div
+            ref={outputRef}
+            tabIndex={-1}
+            role="status"
+            aria-live="polite"
+            className="w-full h-48 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white overflow-y-auto font-mono select-all focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
             {error ? (
-              <div className="text-red-600 dark:text-red-400 font-semibold">
+              <div role="alert" className="text-red-600 dark:text-red-400 font-semibold">
                 ⚠️ {error}
               </div>
             ) : loading ? (
@@ -216,24 +252,21 @@ export default function Translator() {
       {/* Word Breakdown */}
       {breakdown.length > 0 && (
         <div className="card dark:bg-gray-800 dark:border-gray-700">
-          <h2 className="text-lg font-bold mb-4">📊 Word Breakdown</h2>
+          <h2 className="text-lg font-bold mb-4">📊 Sentence Breakdown</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {breakdown.map((item, idx) => (
               <div
                 key={idx}
                 className="p-3 rounded-lg bg-blue-50 dark:bg-blue-900 border border-blue-200 dark:border-blue-700"
               >
-                <div className="text-sm text-gray-500 dark:text-gray-400">
-                  {inputLang === 'en' ? 'English' : 'Garo'}
-                </div>
-                <div className="font-bold text-gray-900 dark:text-white">
-                  {inputLang === 'en' ? item.english : item.garo}
-                </div>
-                <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-                  → {item.garo || item.english}
-                </div>
-                <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
+                <div className="text-xs uppercase tracking-wide text-blue-600 dark:text-blue-400 font-semibold">
                   {item.category}
+                </div>
+                <div className="font-bold text-gray-900 dark:text-white mt-1">
+                  {item.english}
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  → {item.garo}
                 </div>
               </div>
             ))}
@@ -242,54 +275,25 @@ export default function Translator() {
       )}
 
       {/* Grammar Analysis */}
-      {grammar && ((grammar.morphology?.length || 0) > 0 || (grammar.numbers?.length || 0) > 0) && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {(grammar.morphology?.length || 0) > 0 && (
-            <div className="card dark:bg-gray-800 dark:border-gray-700">
-              <h3 className="font-bold text-lg mb-4">📝 Morphology Analysis</h3>
-              <div className="space-y-3">
-                {grammar.morphology.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="p-3 rounded-lg bg-purple-50 dark:bg-purple-900 border border-purple-200 dark:border-purple-700"
-                  >
-                    <div className="font-mono font-bold text-gray-900 dark:text-white">
-                      {item.word}
-                    </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Root: <span className="font-mono">{item.root}</span>
-                    </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
-                      Suffix: <span className="font-mono">{item.suffix}</span>
-                    </div>
-                    <div className="text-sm text-purple-600 dark:text-purple-400 font-semibold mt-1">
-                      {item.tense}
-                    </div>
-                  </div>
-                ))}
-              </div>
+      {grammar && grammar.subject && (
+        <div className="card dark:bg-gray-800 dark:border-gray-700">
+          <h3 className="font-bold text-lg mb-4">📝 Grammar Analysis</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
+            <div>
+              <div className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Tense</div>
+              <div className="font-semibold text-gray-900 dark:text-white">{grammar.detectedTense}</div>
             </div>
-          )}
-
-          {(grammar.numbers?.length || 0) > 0 && (
-            <div className="card dark:bg-gray-800 dark:border-gray-700">
-              <h3 className="font-bold text-lg mb-4">🔢 Numbers & Classifiers</h3>
-              <div className="space-y-3">
-                {grammar.numbers.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="p-3 rounded-lg bg-green-50 dark:bg-green-900 border border-green-200 dark:border-green-700"
-                  >
-                    <div className="font-mono font-bold text-gray-900 dark:text-white">
-                      {item.word}
-                    </div>
-                    <div className="text-sm text-green-600 dark:text-green-400 font-semibold">
-                      Value: {item.number}
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div>
+              <div className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Negative</div>
+              <div className="font-semibold text-gray-900 dark:text-white">{grammar.isNegative ? 'Yes' : 'No'}</div>
             </div>
+            <div className="col-span-2 sm:col-span-2">
+              <div className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Word Order</div>
+              <div className="font-semibold text-gray-900 dark:text-white">{grammar.garoWordOrder}</div>
+            </div>
+          </div>
+          {grammar.notes && (
+            <div className="text-sm text-gray-500 dark:text-gray-400">{grammar.notes}</div>
           )}
         </div>
       )}

@@ -17,7 +17,7 @@ function normalizeFile(filePath) {
     const parsed = JSON.parse(raw);
     const normalized = {};
 
-    function addValue(key, value) {
+    const addValue = function(key, value) {
       const k = key.trim().toLowerCase();
       const v = String(value).trim();
       if (!k || !v) return;
