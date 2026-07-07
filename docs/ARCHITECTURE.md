@@ -574,6 +574,59 @@ session (grammar regressions now fail the build automatically).
 
 ## 12. Future Architecture Roadmap (NOT implemented — planning only)
 
+**Status: post-V1.0 backlog, reviewed and accepted 2026-07-07.** A Chief
+Product Architect proposal (external review) identified the same coupling
+this section already flagged — `translationEngine.js` combines
+orchestration, canonical linguistic knowledge, morphology, and irregular-
+verb data in one file — and proposed a staged target architecture:
+
+```
+Grammar Specifications → Grammar Rule Catalogue → Morphology Data
+    → Lexical Resources → Validation Corpus → Translation Engine (orchestration only)
+```
+
+**Assessment: accepted, no disagreement.** This matches items 1–4 below
+almost exactly and is *better organized* — it names the target end-state
+as a pipeline of increasingly-concrete artifacts rather than a grab-bag of
+independent improvements. Adopting this framing.
+
+**Important repository-state note:** the first three stages of this
+target pipeline already exist as of `937f5d3`/`edc94b7` —
+`docs/GRAMMAR_SPECIFICATION.md`, `docs/GRAMMAR_RULE_CATALOGUE.md`,
+`docs/MORPHOLOGY_SPECIFICATION.md`, and `docs/VALIDATION_CORPUS.md` are
+already written (Claude A, V1.0 sprint). **What's missing is not the
+documents — it's the engine actually *consuming* them as data instead of
+merely being *described by* them in parallel prose.** Today these docs are
+read-only reference material; `translationEngine.js`'s `IRREGULAR_VERBS`/
+`PURPOSE_MAP`/`PRONOUN_MAP`/etc. remain hand-maintained JS objects that
+happen to agree with the docs (when they don't drift — see the `under`/
+`Ka·ma·o` case in `edc94b7`, where the docs described a fix the code
+didn't yet have). This is the concrete gap between current state and the
+proposed target.
+
+**Recommended priority: Medium** — not launch-blocking (correctly scoped
+as post-V1.0 by the proposal itself), but higher-value than a generic
+"someday" item precisely because the documentation half of the migration
+is already done. The remaining work is mechanical (data extraction +
+loader), not open-ended design.
+
+**Migration principles (from the proposal, endorsed as-is):** preserve
+existing behavior, remain backward compatible, migrate incrementally, no
+large-scale rewrite, protect every step with the regression suite (already
+at 51 cases and growing), improve maintainability without delaying feature
+delivery.
+
+**Concrete first increment recommended (smallest safe step):** extract
+`IRREGULAR_VERBS` alone (the smallest, most self-contained inline table)
+into a JSON file matching `corrections.json`'s existing pattern, with a
+loader function replacing the direct object reference. This alone would
+have caught the `under`/`Ka·ma·o` drift automatically if the JSON were
+validated against `docs/VALIDATION_CORPUS.md` at build time — proving the
+approach on one table before migrating `PURPOSE_MAP`/`PRONOUN_MAP`/
+`POSSESSIVES` in subsequent, equally small increments.
+
+Original roadmap items (still valid, now sequenced under the above):
+
 1. **Grammar Rule Database.** Move `IRREGULAR_VERBS`, `PURPOSE_MAP`,
    `PROGRESSIVE_MAP`, `PAST_TO_ROOT`, `POSSESSIVES`, `PRONOUN_MAP` out of
    inline JS objects into structured JSON with metadata (confidence, source,

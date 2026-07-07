@@ -97,7 +97,11 @@
 - ChatGPT: populate §1, §12, §13 with executive review.
 
 ## 15. Parking Lot (Post-Launch)
-- V1.1 roadmap items from `docs/ARCHITECTURE.md` §12: grammar rule database, rule compiler, morphology engine, parser/AST, dictionary optimization, plugin architecture.
+- V1.1 roadmap items from `docs/ARCHITECTURE.md` §12: staged migration
+  (Grammar Specs → Rule Catalogue → Morphology Data → Lexical Resources →
+  Validation Corpus → Engine-as-orchestration-only), reviewed and accepted
+  2026-07-07, priority Medium. First increment recommended: extract
+  `IRREGULAR_VERBS` to JSON as a proof of concept.
 - Reverse translation (Garo→English) — blocked, no reverse dictionary source (`docs/PENDING_reverse_translation.md`).
 
 ## 16. Recent Decisions
