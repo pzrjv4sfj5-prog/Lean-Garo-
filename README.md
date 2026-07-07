@@ -51,6 +51,8 @@ A comprehensive, production-ready semantic translation and learning platform for
 
 | Doc | Purpose |
 |---|---|
+| `PROJECT_STATUS.md` | Human operational dashboard — where the project stands right now, who owns what, current blockers |
+| `.ai/WORKSTATE.yaml` | AI execution memory — current-state-only machine-readable handoff between AI sessions |
 | `docs/ARCHITECTURE.md` | Complete engineering reference — pipeline stages, dictionary resolution priority, suffix generation logic, worked examples, module map, repo audit, future roadmap |
 | `docs/THANGSENG_RULES_LOOKUP.md` | Full native-speaker-confirmed grammar rule catalogue (33 rules), with examples and confirmation dates |
 | `docs/GRAMMAR_SPEC.md` | At-a-glance rule status index (confidence level, implementation location, test coverage) |

@@ -1,0 +1,40 @@
+repository:
+  head: dcf6293
+  last_updated: "2026-07-06"
+
+claude_a:
+  status: unknown
+  current_task: unknown
+  progress: unknown
+  completed: []
+  next_action: unknown
+  do_not_repeat: []
+  waiting_for: unknown
+  expected_output: unknown
+
+claude_b:
+  status: active
+  current_task: "Operational continuity system (.ai/WORKSTATE.yaml, PROJECT_STATUS.md)"
+  progress: "V1.0 launch sprint doc/cleanup pass complete (dcf6293); build clean, 49/49 tests passing"
+  completed:
+    - "Grammar-modeling audit: real past-tense suffix logic, dedup, dead code removal (aeec036)"
+    - "docs/GRAMMAR_SPEC.md living rule index created (84bf88a)"
+    - "Rules 32-33 (search=Sandia, down=Ka·ma) integrated + duplicate-contamination fixes (5f0d02e, a65e936)"
+    - "Repository Architect pass: SEO, CI workflow, a11y/UX, dead-code cleanup (0cab1b5)"
+    - "docs/ARCHITECTURE.md complete technical reference (d416f07)"
+    - "V1.0 launch sprint: README consistency fixes, P2 dead-code removal (dcf6293)"
+  next_action: "Create PROJECT_STATUS.md + README section per current task"
+  do_not_repeat:
+    - "Do not re-derive raka (Rule 1) violations from scratch - check docs/ARCHITECTURE.md §9 audit history first"
+    - "Do not re-add PROGRESSIVE_MAP/PAST_TO_ROOT - confirmed dead, removed dcf6293"
+    - "Do not re-implement jaha as past-negation - superseded, see Rule 17/27"
+  waiting_for: "Claude A grammar/linguistic work; Thangseng native validation on open questions (Rules 30/31)"
+  expected_output: "Committed .ai/ + PROJECT_STATUS.md + README update"
+
+chatgpt:
+  status: unknown
+  current_task: unknown
+  progress: unknown
+  completed: []
+  next_action: unknown
+  do_not_repeat: []
