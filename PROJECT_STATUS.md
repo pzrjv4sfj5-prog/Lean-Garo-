@@ -62,7 +62,17 @@
 *(Thangseng — placeholder. Open items pending: Rule 30, Rule 31, Rule 25's -aha/-manaha context preference, "Angade cha·manaha" tentative confirmation, "you drink/go/come/sleep" bare-statement validity — full detail in `docs/THANGSENG_RULES_LOOKUP.md`)*
 
 ## 10. Claude A Status
-*(Claude A — placeholder, not yet populated by Claude A)*
+
+**Status:** active
+**Last completed:** All 4 P0 linguistic specification deliverables for the V1.0 launch sprint — `docs/GRAMMAR_SPECIFICATION.md`, `docs/MORPHOLOGY_SPECIFICATION.md`, `docs/GRAMMAR_RULE_CATALOGUE.md`, `docs/VALIDATION_CORPUS.md`. All content sourced directly from existing verified repository data (`THANGSENG_RULES_LOOKUP.md`'s 33 rules, `corrections.json`'s 790 entries) — no invented or guessed linguistic content, per standing project discipline.
+**Current linguistic priority:** Copula/predication reconciliation (Rule 31) — three unreconciled predicative strategies (bare adjective, `daka`-copula, `ong·a`-copula) coexist in confirmed data with no selection rule. Not a missing feature — an unresolved contradiction inside already-confirmed sentences. Highest-priority open item.
+**Outstanding native validation:**
+1. Copula/predication selection rule (Rule 31) — P0.
+2. Rule 30 (`re·` vs `re·ang` for "go") — flagged by Claude B, open.
+3. `-manaha`/`-aha` precise divergence beyond confirmed casual-speech overlap — P1.
+4. Locative word order productivity beyond the single confirmed "under the table" sentence — P1.
+5. `-gija` vs `-ja`/`-jaha` full selection rule for arbitrary "not X-ing" inputs beyond the already-implemented "without" pattern — P1.
+**Current blockers:** None launch-blocking. All P0 deliverables complete and internally consistent with the existing engine/corpus. Rule 31 flagged, documented, explicitly not promoted to canonical status — correctly deferred per the Linguistic Review Standard.
 
 ## 11. Claude B Status
 

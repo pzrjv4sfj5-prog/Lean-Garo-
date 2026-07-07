@@ -3,14 +3,22 @@ repository:
   last_updated: "2026-07-06"
 
 claude_a:
-  status: unknown
-  current_task: unknown
-  progress: unknown
-  completed: []
-  next_action: unknown
-  do_not_repeat: []
-  waiting_for: unknown
-  expected_output: unknown
+  status: active
+  current_task: >-
+    V1.0 launch sprint P0 linguistic specification deliverables
+  progress: "4/4 P0 deliverables complete, sourced entirely from existing verified repository data"
+  completed:
+    - "docs/GRAMMAR_SPECIFICATION.md - word order, pronouns, negation, copula (open issue flagged), noun case, classifiers, possession, register"
+    - "docs/MORPHOLOGY_SPECIFICATION.md - root/stem/suffix definitions, full paradigm table, aspect-vs-tense disambiguation, lexical-split caution, productivity boundary"
+    - "docs/GRAMMAR_RULE_CATALOGUE.md - 15 rules in required schema (ID/description/examples/counterexamples/dependencies/native notes/status/confidence/priority)"
+    - "docs/VALIDATION_CORPUS.md - 31-row sample mapped 1:1 to REGRESSION_CASES test suite, explicit coverage-gap notes"
+  next_action: "None pending unless native validation resolves Rule 31 (copula) or Rule 30 (re·/re·ang for go)"
+  do_not_repeat:
+    - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
+    - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"
+    - "Do not re-litigate Gemini-fallback-removal - settled, architectural, not open"
+  waiting_for: "Native-speaker answer on copula/predication selection rule (Rule 31) - highest-priority open linguistic question"
+  expected_output: "4 markdown files committed to docs/, zero code/JS changes, per Sprint Work Package constraints"
 
 claude_b:
   status: active
