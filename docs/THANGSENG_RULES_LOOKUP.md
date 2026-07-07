@@ -650,3 +650,20 @@ Found while adding: master_dictionary.json and final_entries.json both had
 a duplicate `Down`→`kim·il` entry (notes: "variant/VERIFIED/HIGH")
 alongside the correct `Ka·ma` — same class of duplicate-contamination bug
 as the earlier `dog`/`a·chak` and `go`/`Re·ang·a` fixes. Removed.
+
+**Addendum 2026-07-07 (Claude B):** `docs/GRAMMAR_RULE_CATALOGUE.md`,
+`docs/VALIDATION_CORPUS.md`, and `docs/GRAMMAR_SPECIFICATION.md` (Claude A,
+patch `937f5d3`) document a companion fix — `under` = `nokkima`/`kokkima` +
+`-o`, correcting a separate `under`→`Ka·ma·o` lexical confusion (reusing
+"down" for "under"). That fix was documented as already implemented but
+was NOT actually present in the repository at the time the patch landed —
+implemented here to match. **Spelling note:** the original Thangseng
+source (Rule 8, `docs/THANGSENG_RULES_LOOKUP.md`) uses `kokkimao`
+(k-initial); the new patch's docs use `nokkimao` (n-initial) throughout,
+without flagging it as a distinct confirmed register variant (contrast
+with how Bia/Ua and gnang/donga register pairs ARE explicitly flagged as
+such in `GRAMMAR_SPECIFICATION.md` §9). Implemented using `kokkimao` to
+match the original confirmed source exactly; the `nokkima` spelling in
+Claude A's docs may be a transcription slip rather than a genuine variant
+— flagging for Claude A/Thangseng confirmation rather than silently
+picking one or the other.

@@ -89,6 +89,10 @@ const REGRESSION_CASES = [
   // --- Rule 33 (2026-07-05): down = Ka·ma ---
   { in: 'down', expectGaro: 'Ka·ma', expectMethod: ['correction'] },
   { in: "what's down there", expectGaro: 'Aiwa ka·machi maia donga?', expectMethod: ['correction'] },
+
+  // --- under = Kokkimao, fixing under/Ka·ma·o lexical confusion (2026-07-07) ---
+  { in: 'under', expectGaro: 'Kokkimao', expectMethod: ['correction'] },
+  { in: 'the dog is under the table', expectGaro: 'Achak tebil kokkimao ong·a', expectMethod: ['correction'] },
 ];
 
 for (const c of REGRESSION_CASES) {
