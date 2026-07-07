@@ -51,7 +51,7 @@
 
 | Item | Severity | Recommendation |
 |---|---|---|
-| No syntax tree — sequential regex/set-membership parsing | Architectural, not urgent | V1.1+, see ARCHITECTURE.md §12 roadmap |
+| No syntax tree — sequential regex/set-membership parsing | Architectural, not urgent | V1.1+, see ARCHITECTURE.md §12 BACKLOG-005 |
 | Duplicate typo-tolerance mechanisms (shadow index + normalizeInput) | Low | Consolidate when touching that area next |
 | Confidence scores are hand-tuned constants, not derived | Low | Document as known limitation, not a bug |
 | `compiled_dict.json` is a generated artifact with no edit guard-rail | Low-medium | Consider a build-time warning if hand-edited |
@@ -97,11 +97,12 @@
 - ChatGPT: populate §1, §12, §13 with executive review.
 
 ## 15. Parking Lot (Post-Launch)
-- V1.1 roadmap items from `docs/ARCHITECTURE.md` §12: staged migration
-  (Grammar Specs → Rule Catalogue → Morphology Data → Lexical Resources →
-  Validation Corpus → Engine-as-orchestration-only), reviewed and accepted
-  2026-07-07, priority Medium. First increment recommended: extract
-  `IRREGULAR_VERBS` to JSON as a proof of concept.
+- V1.1 roadmap items from `docs/ARCHITECTURE.md` §12 (Architectural
+  Backlog): BACKLOG-001 through BACKLOG-007, staged migration (Grammar
+  Specs → Rule Catalogue → Morphology Data → Lexical Resources →
+  Validation Corpus → Engine-as-orchestration-only), reviewed and
+  accepted 2026-07-07. First increment: BACKLOG-002 (extract
+  `IRREGULAR_VERBS` to JSON), estimated V1.1.
 - Reverse translation (Garo→English) — blocked, no reverse dictionary source (`docs/PENDING_reverse_translation.md`).
 
 ## 16. Recent Decisions

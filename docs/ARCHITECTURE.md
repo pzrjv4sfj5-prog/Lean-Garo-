@@ -572,93 +572,231 @@ session (grammar regressions now fail the build automatically).
 
 ---
 
-## 12. Future Architecture Roadmap (NOT implemented — planning only)
+## 12. Architectural Backlog (post-V1.0, NOT implemented — planning only)
 
-**Status: post-V1.0 backlog, reviewed and accepted 2026-07-07.** A Chief
-Product Architect proposal (external review) identified the same coupling
-this section already flagged — `translationEngine.js` combines
-orchestration, canonical linguistic knowledge, morphology, and irregular-
-verb data in one file — and proposed a staged target architecture:
+Approved future architectural directions, maintained here rather than
+affecting launch planning. Each item: Objective, Current State, Desired
+State, Migration Strategy, Priority, Dependencies, Estimated Version.
 
+---
+
+### BACKLOG-001 — Staged Linguistic-Knowledge Extraction (umbrella item)
+
+**Objective:** Reduce coupling in `translationEngine.js` by moving stable
+linguistic knowledge into dedicated, version-controlled resources, so the
+engine becomes orchestration/parsing/pipeline-coordination only.
+
+**Current State:** `translationEngine.js` combines orchestration logic,
+canonical linguistic knowledge (`IRREGULAR_VERBS`, `PURPOSE_MAP`,
+`PRONOUN_MAP`, `POSSESSIVES`), morphology (`applyTense`/`applyNegation`),
+and irregular-verb handling in one file. The first three stages of the
+target pipeline already exist as standalone docs (`docs/
+GRAMMAR_SPECIFICATION.md`, `docs/GRAMMAR_RULE_CATALOGUE.md`, `docs/
+MORPHOLOGY_SPECIFICATION.md`, `docs/VALIDATION_CORPUS.md`, added `937f5d3`)
+but the engine doesn't consume them as data — it's hand-maintained JS that
+merely happens to agree with the docs, and can drift (see `under`/`Ka·ma·o`,
+`edc94b7` — docs described a fix the code didn't yet have).
+
+**Desired State:**
 ```
 Grammar Specifications → Grammar Rule Catalogue → Morphology Data
     → Lexical Resources → Validation Corpus → Translation Engine (orchestration only)
 ```
+Linguistic knowledge lives in reusable structured resources; the engine
+executes rules against them rather than embedding them.
 
-**Assessment: accepted, no disagreement.** This matches items 1–4 below
-almost exactly and is *better organized* — it names the target end-state
-as a pipeline of increasingly-concrete artifacts rather than a grab-bag of
-independent improvements. Adopting this framing.
+**Migration Strategy:** incremental, backward-compatible, no large-scale
+rewrite, every step protected by the regression suite (51 cases and
+growing). Proven one table at a time, smallest first (see BACKLOG-002).
 
-**Important repository-state note:** the first three stages of this
-target pipeline already exist as of `937f5d3`/`edc94b7` —
-`docs/GRAMMAR_SPECIFICATION.md`, `docs/GRAMMAR_RULE_CATALOGUE.md`,
-`docs/MORPHOLOGY_SPECIFICATION.md`, and `docs/VALIDATION_CORPUS.md` are
-already written (Claude A, V1.0 sprint). **What's missing is not the
-documents — it's the engine actually *consuming* them as data instead of
-merely being *described by* them in parallel prose.** Today these docs are
-read-only reference material; `translationEngine.js`'s `IRREGULAR_VERBS`/
-`PURPOSE_MAP`/`PRONOUN_MAP`/etc. remain hand-maintained JS objects that
-happen to agree with the docs (when they don't drift — see the `under`/
-`Ka·ma·o` case in `edc94b7`, where the docs described a fix the code
-didn't yet have). This is the concrete gap between current state and the
-proposed target.
+**Priority:** Medium — not launch-blocking; higher than "someday" because
+the documentation half of the migration is already done, remaining work
+is mechanical (extraction + loader), not open-ended design.
 
-**Recommended priority: Medium** — not launch-blocking (correctly scoped
-as post-V1.0 by the proposal itself), but higher-value than a generic
-"someday" item precisely because the documentation half of the migration
-is already done. The remaining work is mechanical (data extraction +
-loader), not open-ended design.
+**Dependencies:** none blocking; benefits from BACKLOG-005 (dictionary
+validation) once any table is externalized.
 
-**Migration principles (from the proposal, endorsed as-is):** preserve
-existing behavior, remain backward compatible, migrate incrementally, no
-large-scale rewrite, protect every step with the regression suite (already
-at 51 cases and growing), improve maintainability without delaying feature
-delivery.
+**Estimated Version:** V1.1–V1.2 (BACKLOG-002 first increment), full
+pipeline V2.0+.
 
-**Concrete first increment recommended (smallest safe step):** extract
-`IRREGULAR_VERBS` alone (the smallest, most self-contained inline table)
-into a JSON file matching `corrections.json`'s existing pattern, with a
-loader function replacing the direct object reference. This alone would
-have caught the `under`/`Ka·ma·o` drift automatically if the JSON were
-validated against `docs/VALIDATION_CORPUS.md` at build time — proving the
-approach on one table before migrating `PURPOSE_MAP`/`PRONOUN_MAP`/
-`POSSESSIVES` in subsequent, equally small increments.
+---
 
-Original roadmap items (still valid, now sequenced under the above):
+### BACKLOG-002 — Extract `IRREGULAR_VERBS` to JSON (first increment)
 
-1. **Grammar Rule Database.** Move `IRREGULAR_VERBS`, `PURPOSE_MAP`,
-   `PROGRESSIVE_MAP`, `PAST_TO_ROOT`, `POSSESSIVES`, `PRONOUN_MAP` out of
-   inline JS objects into structured JSON with metadata (confidence, source,
-   date confirmed) — matching how `corrections.json` already works. Would
-   have caught the Rule-1 raka violations found 3 separate times this session
-   in a single consistency-check pass instead of three.
-2. **Rule Compiler.** Once rules are data (#1), a small compiler could
-   generate `applyTense`'s suffix-application logic from a declarative rule
-   table (`{tense: 'past', suffix: 'ha', stemStrip: false}` etc.) instead of
-   hand-written if/else exceptions. Would make the `ha`/`chim` full-root
-   exceptions (Rule 24) self-documenting instead of comment-documented.
-3. **Morphology Engine.** Real morphological analysis (stem + suffix
-   decomposition in both directions) would replace the current one-way
-   generation and enable actual Garo→English reverse translation (currently
-   blocked entirely — no reverse dictionary exists, see
-   `docs/PENDING_reverse_translation.md`).
-4. **Parser / Syntax Tree.** Replace the sequential regex/set-membership scans
-   in `analyzeGrammar` with an actual tokenizer→parser→AST pipeline. Would
-   directly unblock: multi-verb sentences, locative constructions, embedded
-   clauses, and the copula inconsistency (Rule 31) — all of which currently
-   fail because there's no structure to attach the right rule to the right
-   sub-phrase.
-5. **Dictionary Optimization.** Single canonical dictionary format with a
-   validation pass that runs Rule 1 (raka) consistency checks automatically
-   across every storage location (JSON files AND inline JS objects) as part
-   of `npm run build`, rather than relying on manual audits.
-6. **Plugin Architecture.** If the grammar engine (Claude A's domain) and the
-   platform/UI layer (Claude B's domain) need to keep evolving somewhat
-   independently, a formal plugin interface (register a new tense/suffix
-   handler without editing `translationEngine.js`'s core cascade) would
-   reduce merge friction between the two ownership areas established in
-   `docs/HANDOFF_CLAUDE_A_20260701.md`/`docs/CLAUDE_B_HANDOFF_20260703.md`.
+**Objective:** Prove the extraction pattern on the smallest, most
+self-contained inline table before migrating larger ones.
 
-None of the above is scheduled — this section exists so the roadmap survives
-independently of any one working session's context.
+**Current State:** `IRREGULAR_VERBS` (~28 entries) is a hardcoded JS
+object in `translationEngine.js`, checked first by `findVerbForm()`.
+
+**Desired State:** JSON file matching `corrections.json`'s existing
+pattern, loaded via a small accessor function replacing the direct object
+reference. Validated against `docs/VALIDATION_CORPUS.md` at build time.
+
+**Migration Strategy:** (1) export current table to JSON unchanged, (2)
+replace direct references with a loader, (3) add a build-time check that
+every `docs/VALIDATION_CORPUS.md` row referencing an irregular verb
+resolves to the documented Garo form, (4) run full regression suite,
+(5) only then consider it done.
+
+**Priority:** Medium-High (concrete, low-risk, proves the approach).
+
+**Dependencies:** none. This unblocks BACKLOG-001's remaining tables
+(`PURPOSE_MAP`, `PRONOUN_MAP`, `POSSESSIVES`) as repeatable follow-ups.
+
+**Estimated Version:** V1.1.
+
+---
+
+### BACKLOG-003 — Rule Compiler
+
+**Objective:** Generate `applyTense`'s suffix-application logic from a
+declarative rule table instead of hand-written if/else exceptions.
+
+**Current State:** Suffix rules (stem-strip vs. full-root-append
+exceptions like Rule 24's `ha`/`chim`) are comment-documented, hand-coded
+branches in `applyTense()`.
+
+**Desired State:** A small compiler reads a declarative table (e.g.
+`{tense: 'past', suffix: 'ha', stemStrip: false}`) and generates the
+application logic, making exceptions self-documenting data instead of
+prose comments next to code.
+
+**Migration Strategy:** depends on BACKLOG-001 (rules must be data
+first). Build the compiler against the existing hand-coded behavior as
+its own regression baseline before switching `applyTense` over.
+
+**Priority:** Low-Medium — quality-of-life for maintainability, not
+correctness-critical while `applyTense` is well-tested.
+
+**Dependencies:** BACKLOG-001 (rules as data).
+
+**Estimated Version:** V2.0+.
+
+---
+
+### BACKLOG-004 — Morphology Engine (bidirectional)
+
+**Objective:** Real morphological analysis (stem+suffix decomposition in
+both directions), enabling Garo→English reverse translation.
+
+**Current State:** One-way generation only (English meaning → Garo
+surface form). Reverse translation is fully blocked — no reverse
+dictionary exists (`docs/PENDING_reverse_translation.md`).
+
+**Desired State:** A morphology engine that can both generate and parse
+Garo surface forms against the root/suffix paradigm in `docs/
+MORPHOLOGY_SPECIFICATION.md` §2–3.
+
+**Migration Strategy:** depends on BACKLOG-001 (suffix paradigm as
+structured data) and a reverse-dictionary data source (currently
+unavailable — separate blocker, not an engineering task).
+
+**Priority:** Low until the reverse-dictionary data blocker is resolved;
+re-evaluate priority once unblocked.
+
+**Dependencies:** BACKLOG-001; external reverse-dictionary data source.
+
+**Estimated Version:** V2.0+ (contingent on data availability).
+
+---
+
+### BACKLOG-005 — Parser / Syntax Tree
+
+**Objective:** Replace sequential regex/set-membership scans in
+`analyzeGrammar` with a tokenizer→parser→AST pipeline.
+
+**Current State:** No syntax tree — every "parse" is a flat token-array
+scan. Works for current simple-SVO sentence patterns; fails for
+multi-verb sentences, locative constructions, embedded clauses, and is
+the root cause of the copula inconsistency (Rule 31) having no home to
+attach a selection rule to.
+
+**Desired State:** Real AST with enough structure that each sub-phrase
+(locative, purpose clause, copula complement) can be independently
+resolved against the grammar rule catalogue.
+
+**Migration Strategy:** highest-risk item in this backlog — genuinely
+architectural, not incremental-safe in the same way as BACKLOG-002.
+Recommend prototyping alongside (not replacing) the current pipeline,
+gated behind a feature flag, validated against the full regression suite
+before any cutover.
+
+**Priority:** Low for V1.x; re-evaluate for V2.0 once BACKLOG-001–003 are
+done and the data layer is stable enough to parse against.
+
+**Dependencies:** BACKLOG-001 (rules as data), ideally BACKLOG-003 (rule
+compiler) so the parser has a rule-execution target to emit into.
+
+**Estimated Version:** V2.0+.
+
+---
+
+### BACKLOG-006 — Dictionary Optimization / Automated Raka Validation
+
+**Objective:** Single canonical dictionary format with automatic Rule 1
+(raka) consistency checks across every storage location, replacing manual
+audits.
+
+**Current State:** Raka violations have been found independently 3
+separate times this project (data JSON files, then `IRREGULAR_VERBS`,
+then `PURPOSE_MAP`) because no single source of truth enforces "no-raka
+roots never carry raka" — each new bug required a fresh manual audit.
+
+**Desired State:** A build-time validation pass (part of `npm run build`,
+alongside `test-dictionary.js`) that checks every root against the
+confirmed no-raka-root list, across all storage locations (JSON files AND
+any remaining inline JS objects), and fails the build on violation.
+
+**Migration Strategy:** can be implemented independently of BACKLOG-001
+(doesn't require the tables to be externalized first, though it becomes
+easier once they are — one validator instead of one-per-format).
+Incremental: start with the JSON data files (`test-dictionary.js` already
+validates other properties), add inline-JS-object checking once
+BACKLOG-002 externalizes the first table.
+
+**Priority:** Medium — directly prevents a recurring, already-3x-seen bug
+class; relatively cheap to implement against existing JSON files today.
+
+**Dependencies:** none blocking for the JSON-file portion; benefits from
+BACKLOG-002 for full coverage.
+
+**Estimated Version:** V1.1 (JSON-file portion), V1.2+ (full coverage
+after BACKLOG-002).
+
+---
+
+### BACKLOG-007 — Plugin Architecture
+
+**Objective:** Formal plugin interface so the grammar engine (Claude A's
+domain) and platform/UI layer (Claude B's domain) can evolve somewhat
+independently — register a new tense/suffix handler without editing
+`translationEngine.js`'s core cascade.
+
+**Current State:** Single-file cascade; any new tense/suffix/construction
+requires editing the core `translate()`/`analyzeGrammar()` logic directly,
+per the ownership split in `docs/HANDOFF_CLAUDE_A_20260701.md`/`docs/
+CLAUDE_B_HANDOFF_20260703.md`.
+
+**Desired State:** A registration interface (e.g. `registerTenseHandler
+({name, detect, apply})`) that lets new grammar features be added as
+self-contained modules.
+
+**Migration Strategy:** lowest priority, most speculative — only pursue
+if BACKLOG-001–005 reveal genuine ownership-boundary friction in
+practice, not preemptively.
+
+**Priority:** Low — speculative, no observed pain point yet beyond the
+general coupling BACKLOG-001 already addresses.
+
+**Dependencies:** BACKLOG-001, BACKLOG-005 (a plugin interface is much
+more natural once rules are data and parsing is structured).
+
+**Estimated Version:** V2.0+, opportunistic.
+
+---
+
+None of the above is scheduled — this section exists so the roadmap
+survives independently of any one working session's context. Update
+status/priority/estimated-version fields as items progress; do not
+delete completed items, mark them done in place for institutional memory.
