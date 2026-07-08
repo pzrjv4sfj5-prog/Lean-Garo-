@@ -72,6 +72,16 @@ from `edc94b7`. See `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`.
 Not yet repository state — awaiting Claude A review per standing
 integration rule.
 
+**Native Sentence Validation Audit (new P0, 2026-07-08):** Evidence-gathering
+exercise measuring engine performance against real conversational Garo
+(not synthetic test sentences). Case 1 logged — confirmed the engine has no
+Garo→English capability (architecture-level, already known) and that
+forward-direction candidates for a real code-switched sentence
+(`TV`/`status` loanwords, "instead of X, Y" construction) lose significant
+content despite high reported confidence. Gloss unconfirmed, native
+validation required before conclusions are trusted. Full detail:
+`docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`. No engine changes made.
+
 ## 10. Claude A Status
 
 **Status:** migrating to new chat session (as of 2026-07-08)

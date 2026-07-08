@@ -49,9 +49,12 @@ claude_b:
     - "Production verification audit: no hidden regressions from recent fixes (this session)"
     - ".ai/SESSION_BOOTSTRAP.md created; docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md logged"
   next_action: >-
-    None blocking. Standing by for Claude A's next linguistic commit
-    (specifically the locative/directional proposal). No engineering
-    changes to make until that lands per the chat-proposal integration rule.
+    P0: Native Sentence Validation Audit in progress
+    (docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md) - Case 1 logged (evidence-
+    gathering only, no engine changes), awaiting more native sentences +
+    Thangseng gloss confirmation. Otherwise none blocking; standing by for
+    Claude A's next linguistic commit. No engineering changes to make
+    until that lands per the chat-proposal integration rule.
   do_not_repeat:
     - "Do not re-derive raka (Rule 1) violations from scratch - check docs/ARCHITECTURE.md §9 audit history first"
     - "Do not re-add PROGRESSIVE_MAP/PAST_TO_ROOT - confirmed dead, removed dcf6293"
