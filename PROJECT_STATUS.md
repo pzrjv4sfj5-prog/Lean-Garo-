@@ -6,7 +6,8 @@
 
 **Repository:** https://github.com/pzrjv4sfj5-prog/Lean-Garo-
 **Live:** https://lean-garo.onrender.com
-**HEAD (as of last Claude B update):** `dcf6293`
+**HEAD (as of last Claude B update):** `5d29299`
+**Bootstrap entry point:** `.ai/SESSION_BOOTSTRAP.md` (read first, new sessions)
 
 ---
 
@@ -38,10 +39,11 @@
 | Check | Status |
 |---|---|
 | Build (`npm run build`) | ✅ passing |
-| Unit/regression tests (`npm test`) | ✅ 49/49 passing |
+| Unit/regression tests (`npm test`) | ✅ 51/51 passing |
 | CI (`.github/workflows/ci.yml`) | ✅ configured, runs build+lint on push/PR to main |
 | Dictionary validation (`test-dictionary.js`) | ✅ passing (part of build) |
-| Known dead code | ✅ none flagged as of `dcf6293` (`PROGRESSIVE_MAP`/`PAST_TO_ROOT` removed) |
+| Known dead code | ✅ none flagged as of `5d29299` (`PROGRESSIVE_MAP`/`PAST_TO_ROOT` removed) |
+| Production verification audit (lexical/grammar/morphology/dictionary integrity) | ✅ passed 2026-07-08, no hidden regressions from `edc94b7`/`1b64b0c` |
 
 ## 7. Launch Blockers
 *(populate as identified — none formally recorded here yet by Claude B; see §8 for known gaps that are NOT necessarily launch blockers)*
@@ -61,10 +63,20 @@
 ## 9. Native Validation Status
 *(Thangseng — placeholder. Open items pending: Rule 30, Rule 31, Rule 25's -aha/-manaha context preference, "Angade cha·manaha" tentative confirmation, "you drink/go/come/sleep" bare-statement validity — full detail in `docs/THANGSENG_RULES_LOOKUP.md`)*
 
+**New pending item (2026-07-08):** Locative/directional word set (below,
+inside, outside, above, behind, beside, up, beneath, over, across) relayed
+via chat, not yet reviewed by Claude A or committed. Includes a
+sense-disambiguation note for "under"/"beneath" (`kokkimao`/`nokkimao` vs
+`mitapo` for sheet/slab sense) that also resolves the earlier spelling flag
+from `edc94b7`. See `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`.
+Not yet repository state — awaiting Claude A review per standing
+integration rule.
+
 ## 10. Claude A Status
 
-**Status:** active
+**Status:** migrating to new chat session (as of 2026-07-08)
 **Last completed:** All 4 P0 linguistic specification deliverables for the V1.0 launch sprint — `docs/GRAMMAR_SPECIFICATION.md`, `docs/MORPHOLOGY_SPECIFICATION.md`, `docs/GRAMMAR_RULE_CATALOGUE.md`, `docs/VALIDATION_CORPUS.md`. All content sourced directly from existing verified repository data (`THANGSENG_RULES_LOOKUP.md`'s 33 rules, `corrections.json`'s 790 entries) — no invented or guessed linguistic content, per standing project discipline.
+**On resume:** review `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md` first (see §9).
 **Current linguistic priority:** Copula/predication reconciliation (Rule 31) — three unreconciled predicative strategies (bare adjective, `daka`-copula, `ong·a`-copula) coexist in confirmed data with no selection rule. Not a missing feature — an unresolved contradiction inside already-confirmed sentences. Highest-priority open item.
 **Outstanding native validation:**
 1. Copula/predication selection rule (Rule 31) — P0.
@@ -77,12 +89,12 @@
 ## 11. Claude B Status
 
 **Status:** active
-**Last completed:** V1.0 launch sprint doc/cleanup pass (`dcf6293`) — README consistency fixes (wrong deployment URL, wrong verb-tense table, wrong "lets X" examples, stale Gemini instructions), P2 dead-code removal (`PROGRESSIVE_MAP`/`PAST_TO_ROOT`, 52 lines, zero call sites confirmed).
-**Testing:** 49/49 regression tests passing, wired into `npm run build`, enforced in CI.
-**Documentation:** `docs/ARCHITECTURE.md` (complete technical reference), `docs/GRAMMAR_SPEC.md` (rule status index), `README.md` (now synchronized with actual behavior) all current as of `dcf6293`.
+**Last completed:** Production verification audit (2026-07-08) covering lexical consistency of directional words, grammar-tense interaction, morphology/suffix interaction, dictionary integrity, and expanded runtime spot-checks — no hidden regressions found from the `edc94b7`/`1b64b0c`/`5d29299` fixes. Also fixed `under`/`Ka·ma·o` lexical confusion (`edc94b7`) and confirmed `down`=`Ka·ma` consistency (`1b64b0c`) in the prior session. Created `.ai/SESSION_BOOTSTRAP.md` and logged the pending Thangseng locative proposal for Claude A.
+**Testing:** 51/51 regression tests passing, wired into `npm run build`, enforced in CI.
+**Documentation:** `docs/ARCHITECTURE.md`, `docs/GRAMMAR_SPEC.md`, `README.md`, `.ai/SESSION_BOOTSTRAP.md` (new) all current as of `5d29299` + this sync commit.
 **Deployment readiness:** build/tests green; live Render deployment auto-deploys from `main` on push (unverified from this sandbox — no Render API access here).
 **Technical debt:** see §8 above.
-**Next action:** per current task — operational continuity system (`.ai/WORKSTATE.yaml` + this file + README pointer).
+**Next action:** none blocking. Standing by for Claude A's next linguistic commit (locative/directional proposal). No engineering changes pending per the chat-proposal integration rule — repository is bootstrap-ready for a fresh session.
 
 ## 12. ChatGPT Reviews
 *(ChatGPT — placeholder, not yet populated)*
@@ -91,9 +103,9 @@
 *(ChatGPT / Project Owner — placeholder)*
 
 ## 14. Next Actions
-- Claude B: none blocking; awaiting Claude A/Thangseng input on Rules 30/31 open questions.
-- Claude A: populate §10 with current grammar/morphology work status.
-- Thangseng: resolve open validation items (§9).
+- Claude B: none blocking; repository is bootstrap-ready. Awaiting Claude A's review of the pending locative proposal and Rules 30/31.
+- Claude A (on resume, new chat): read `.ai/SESSION_BOOTSTRAP.md`, then review `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`, assign rule ID(s), commit to `docs/`.
+- Thangseng: resolve open validation items (§9), including the "under"/"beneath"/`mitapo` sense-disambiguation question.
 - ChatGPT: populate §1, §12, §13 with executive review.
 
 ## 15. Parking Lot (Post-Launch)
@@ -106,6 +118,8 @@
 - Reverse translation (Garo→English) — blocked, no reverse dictionary source (`docs/PENDING_reverse_translation.md`).
 
 ## 16. Recent Decisions
+- 2026-07-08 (Claude B): Established standing integration rule — chat-sourced linguistic proposals are logged under `docs/PENDING_*` and never implemented directly; must be reviewed and committed by Claude A first. First application: locative/directional word set, see §9.
+- 2026-07-08 (Claude B): Production verification audit performed on recent lexical fixes (under/down); no regressions found; declared production-ready for V1.0 with no further changes needed in that area.
 - 2026-07-06 (Claude B): Removed `PROGRESSIVE_MAP`/`PAST_TO_ROOT` as confirmed-dead code (P2, low-risk per launch-sprint stop conditions).
 - 2026-07-05: `-jaha` semantics corrected from "past negation" to "discontinuation" (Rule 17) per direct Thangseng clarification — this was a breaking correction to earlier engine behavior, fully migrated and regression-tested.
 - 2026-07-05: Established that Garo has no true simple-past suffix (Rule 27) — `-ja` covers past-referring negation uniformly; engine confirmed already correct by construction.
