@@ -1,8 +1,16 @@
 repository:
-  head: 5d29299
+  head: e0cea23
   last_updated: "2026-07-08"
   test_status: "51/51 regression tests passing, build clean"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
+  note: >-
+    CLAUDE_A_FINAL_HANDOUT.md (repo root) added e0cea23 - closing note
+    from the original Claude A instance, applied via git format-patch
+    relay per the access model now documented in SESSION_BOOTSTRAP.md.
+    A "Current joint work package" section was added to SESSION_
+    BOOTSTRAP.md the same session - both roles should check it first for
+    active priorities rather than relying solely on the per-role sections
+    below, which may lag it slightly.
 
 claude_a:
   status: active
@@ -31,13 +39,15 @@ claude_a:
     - "2026-07-08: RULE-034/035 locative review; docs/THANGSENG_NATIVE_VALIDATION.md created (NV-001..009); Native Sentence Validation Audit Case 1 reviewed, RULE-004 and Grammar Spec §6 strengthened"
     - "2026-07-08: Native validation cycle maturity pass - minimal question set, Coverage Audit, Confidence Review, RULE-030 catalogue gap fixed"
   next_action: >-
-    P2 (per Project Owner sequencing): Verb Family Project, starting
-    with cha· ("eat") specifically - NOT re·/re·ang, which stays second
-    until NV-001 resolves. Optionally first: close the 3 documentation
-    gaps identified in VALIDATION_CORPUS_COVERAGE_AUDIT.md (RULE-007/
-    G2/G7 formal catalogue entries, RULE-026 corpus row, -ode corpus
-    sync) - pure formalization, no new native evidence needed, could be
-    done before or interleaved with the Verb Family Project.
+    See SESSION_BOOTSTRAP.md "Current joint work package" for the
+    authoritative live list (added 2026-07-08 alongside the final
+    handout). Summary: review NV-005..009 + cross-check against Claude
+    B's PENDING_VOCABULARY.md/PENDING_REGRESSION_CASES.md for
+    duplication; confirm the locative proposal is fully closed; reconcile
+    GRAMMAR_SPEC.md into GRAMMAR_RULE_CATALOGUE.md (RULE-015/RULE-032
+    promotion - confirmed gap); NV-001/NV-002 (Rule 30/31) still need
+    direct Thangseng answers; then P2 Verb Family Project (cha· first)
+    per Project Owner sequencing once the above is clear.
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
     - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"
@@ -70,16 +80,13 @@ claude_b:
     - "Production verification audit: no hidden regressions from recent fixes (this session)"
     - ".ai/SESSION_BOOTSTRAP.md created; docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md logged"
   next_action: >-
-    Evidence Collection Mode (Claude A out of tokens, temporarily
-    unavailable). Case 1 fully glossed and closed out. Created
-    docs/PENDING_VOCABULARY.md (8 candidate words/morphemes: TV, status,
-    nina, nangja, palango/Palang, tue, nisona, man·ienga - all state-
-    tagged Confirmed/Needs Claude A Review/Needs Thangseng Validation, none
-    implemented) and docs/PENDING_REGRESSION_CASES.md (5 candidate
-    regression cases RC-CANDIDATE-001..005, exact input/output pairs
-    captured, none added to live suite). No engine changes. Standing by
-    for more native sentences and for Claude A's eventual review of both
-    queues plus the earlier locative proposal.
+    Applied Claude A's final handout (CLAUDE_A_FINAL_HANDOUT.md, e0cea23)
+    via git format-patch relay. Added "Repository access model" (was
+    referenced by the handout but didn't exist yet) and "Current joint
+    work package" sections to SESSION_BOOTSTRAP.md - see that file for
+    the live, authoritative task list for both roles going forward;
+    don't duplicate it here. Standing by for more native sentences and
+    for the next Claude A session to work through the joint list.
   do_not_repeat:
     - "Do not re-derive raka (Rule 1) violations from scratch - check docs/ARCHITECTURE.md §9 audit history first"
     - "Do not re-add PROGRESSIVE_MAP/PAST_TO_ROOT - confirmed dead, removed dcf6293"

@@ -6,8 +6,8 @@
 
 **Repository:** https://github.com/pzrjv4sfj5-prog/Lean-Garo-
 **Live:** https://lean-garo.onrender.com
-**HEAD (as of last Claude B update):** `5d29299`
-**Bootstrap entry point:** `.ai/SESSION_BOOTSTRAP.md` (read first, new sessions)
+**HEAD (as of last Claude B update):** `e0cea23`
+**Bootstrap entry point:** `.ai/SESSION_BOOTSTRAP.md` (read first, new sessions) — see its "Current joint work package" section for the live shared task list, added 2026-07-08 alongside `CLAUDE_A_FINAL_HANDOUT.md`.
 
 ---
 
