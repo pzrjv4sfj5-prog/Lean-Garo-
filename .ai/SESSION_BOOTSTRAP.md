@@ -2,8 +2,7 @@
 _Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-07-08 by Claude B._
 
 ## What this repo is
-Lean-Garo: an English → Garo (Mandi language, Meghalaya, India) translation
-engine. Node/JS, dictionary + correction-table + grammar-assembly hybrid
+Lean-Garo: an English → A'chik Garo translation engine (Meghalaya, India). Node/JS, dictionary + correction-table + grammar-assembly hybrid
 (no ML model). Deployed at https://lean-garo.onrender.com.
 
 ## Roles (do not cross these lines)
