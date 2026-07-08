@@ -54,6 +54,7 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Counterexamples:** `bio` (informal locative "at him/her") has no attested form in either register — not a counterexample, an unfilled cell.
 **Dependencies:** none.
 **Native Notes:** Source Rule 4.
+**Strengthened by (2026-07-08):** `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md` Case 1 confirms subject pro-drop occurs outside the imperative context RULE-003b already covers — a full declarative sentence ("(I) don't need to watch TV...") with "I" fully implied, not spoken, native-confirmed by Thangseng. This is existing knowledge getting *stronger* (pro-drop is broader than the imperative-only case previously documented), not a new rule — RULE-003b's scope note should be read as "imperatives always drop the subject" rather than "only imperatives drop the subject." No catalogue change needed beyond this note; flagging so a future implementer doesn't assume subject-drop is imperative-exclusive.
 **Validation Status:** Verified (core table); Unknown (informal locative cell).
 **Confidence:** High (core); N/A (unfilled cell — do not guess).
 **Launch Priority:** P0 (core); deferred (unfilled cell, low practical impact).

@@ -7,37 +7,44 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    P0-P4 priority framework adopted (2026-07-08, Project Owner). Completed
-    review of pending locative proposal; now moving to Rule 31 (copula),
-    then Rule 30 (re·/re·ang).
+    Created docs/THANGSENG_NATIVE_VALIDATION.md (canonical, permanent
+    native-validation question repository, 9 questions: NV-001..NV-009).
+    Reviewed Native Sentence Validation Audit Case 1 fully - strengthened
+    RULE-004 (pro-drop) and Grammar Specification §6 (-o locative, now
+    2 confirmed examples) rather than defaulting to new rules; promoted
+    5 genuine open items to NV-005..NV-009. Next: verb family
+    documentation project (P1), continue building toward Rule 30/31
+    answers once native validation arrives.
   progress: >-
-    Locative/directional proposal reviewed and closed out. Assigned
-    RULE-034 (9-word locative/directional set, Medium confidence, Low for
-    "over") and RULE-035 (under vs. beneath/mitapo sense split, Needs
-    Native Validation). Resolved kokkima/nokkima spelling-variant question
-    as an update to RULE-033. Nothing promoted to corrections.json/
-    Validation Corpus - correctly staged pending direct Thangseng
-    confirmation, since source was a relayed WhatsApp exchange, not a
-    direct confirmation session.
+    Locative proposal reviewed and closed (RULE-034/035). Native
+    Sentence Validation Audit Case 1 reviewed - existing knowledge
+    strengthened where evidence supported it (RULE-004, Grammar Spec §6),
+    5 new open questions logged to THANGSENG_NATIVE_VALIDATION.md rather
+    than promoted to Rule Catalogue status (single-sentence evidence,
+    same evidentiary discipline as RULE-034).
   completed:
     - "docs/GRAMMAR_SPECIFICATION.md - word order, pronouns, negation, copula (open issue flagged), noun case, classifiers, possession, register"
     - "docs/MORPHOLOGY_SPECIFICATION.md - root/stem/suffix definitions, full paradigm table, aspect-vs-tense disambiguation, lexical-split caution, productivity boundary"
-    - "docs/GRAMMAR_RULE_CATALOGUE.md - 15 rules in required schema (ID/description/examples/counterexamples/dependencies/native notes/status/confidence/priority)"
+    - "docs/GRAMMAR_RULE_CATALOGUE.md - 15+ rules (RULE-001..RULE-035) in required schema"
     - "docs/VALIDATION_CORPUS.md - 31-row sample mapped 1:1 to REGRESSION_CASES test suite, explicit coverage-gap notes"
-    - "2026-07-08: Reviewed PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md, assigned RULE-034/035, updated RULE-033, updated Validation Corpus coverage notes, marked proposal REVIEWED"
+    - "2026-07-08: Reviewed PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md, assigned RULE-034/035, updated RULE-033"
+    - "2026-07-08: Created docs/THANGSENG_NATIVE_VALIDATION.md (NV-001..NV-009), reviewed Native Sentence Validation Audit Case 1, strengthened RULE-004 and Grammar Spec §6"
   next_action: >-
-    Rule 31 (copula/predication selection - bare adjective vs daka vs
-    ong·a) - highest-priority open linguistic question, needs Thangseng.
-    Then Rule 30 (re·/re·ang for "go"). Then review
-    docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md Case 1 findings (necessity-
-    modal nangja, ·ko/·o case selection, posture verb tue, ability-modal
-    man·ienga) for rule-catalogue implications.
+    P1: begin Verb Family documentation project (root, derived forms,
+    progressive/future/past/negative/imperative/ability/obligation,
+    productive suffixes, native examples, related verbs, known
+    exceptions) per Project Owner's priority framework. Start with a
+    well-attested verb (e.g. cha· "eat" or re·/re·ang "go", noting NV-001
+    is still open for the latter). Continue monitoring for Thangseng
+    answers to NV-001/002 (Rule 30/31) - highest priority once available.
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
     - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"
     - "Do not re-litigate Gemini-fallback-removal - settled, architectural, not open"
     - "Do not re-review the locative proposal - closed 2026-07-08, see RULE-034/035"
-  waiting_for: "Native-speaker answer on copula/predication selection rule (Rule 31) - highest-priority open linguistic question"
+    - "Do not create new PENDING_NATIVE_QUESTIONS_* files - use docs/THANGSENG_NATIVE_VALIDATION.md, update questions in place"
+    - "Do not attempt to resolve Rule 30/31 from assumptions - both explicitly need direct Thangseng validation, see NV-001/NV-002"
+  waiting_for: "Direct Thangseng answers to NV-001 (Rule 30) and NV-002 (Rule 31) - highest-priority open linguistic questions"
   expected_output: "Markdown files committed to docs/, zero code/JS changes, per Sprint Work Package constraints"
 
 claude_b:

@@ -72,26 +72,23 @@ from `edc94b7`. See `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`.
 Not yet repository state — awaiting Claude A review per standing
 integration rule.
 
-**Native Sentence Validation Audit (new P0, 2026-07-08):** Evidence-gathering
-exercise measuring engine performance against real conversational Garo
-(not synthetic test sentences). Case 1 now fully glossed and native-confirmed
-(Thangseng): "(I) don't need to watch TV, (I) can just watch on status
-lying in bed" with full morpheme breakdown. Confirmed findings: (a) engine
-has no Garo→English capability (architecture-level, known), (b) `TV`/`status`
-loanwords entirely absent from dictionaries, (c) necessity-modal negation
-(`nangja`) collapses into plain desire-negation, (d) engine selects object
-marker `·ko` where native uses locative `·o` for "in bed", (e) posture verb
-"lying" (`tue`) produces a malformed output (`Anga Palangha`) rather than a
-graceful gap, (f) ability-modal "can" (`man·ienga`) is dropped entirely,
-(g) the `Palang`+`·o` locative pattern is structurally correct where it
-does fire — a genuine partial success. Full detail:
-`docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`. Ready for Claude A review. No
-engine changes made.
+**Native Sentence Validation Audit (P0, 2026-07-08):** Case 1 fully
+glossed, native-confirmed, and **reviewed by Claude A** (2026-07-08).
+Two findings strengthened existing rules directly (RULE-004 pro-drop
+scope, Grammar Specification §6 locative `-o` productivity — now 2
+confirmed examples). Five findings promoted to canonical open questions
+in `docs/THANGSENG_NATIVE_VALIDATION.md` (NV-005 through NV-009):
+necessity-modal `nangja`, `·ko`/`·o` case selection, posture verb `tue`
+(malformed output — standalone bug for Claude B), ability-modal
+`man·ienga`, `TV`/`status` loanwords. None promoted to Rule Catalogue
+status yet — single-sentence evidence, same discipline applied to
+RULE-034. Full detail: `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`.
 
 ## 10. Claude A Status
 
 **Status:** active (2026-07-08)
-**Last completed:** Reviewed `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md` in full. Assigned RULE-034 (9-word locative/directional set — below/inside/outside/above/behind/beside/up/over/across — Medium confidence, Low for `over`) and RULE-035 (under vs. beneath/`mitapo` sense split, Needs Native Validation). Resolved the `kokkima`/`nokkima` spelling-variant question as an update to RULE-033 (both confirmed legitimate). Deliberately did not promote any of this to `corrections.json`/Validation Corpus — source was a relayed exchange, not a direct confirmation session, so it's staged at Medium/Low confidence pending direct Thangseng validation. Proposal doc marked REVIEWED with full disposition. Also formalized the Project Owner's P0–P4 priority framework into `.ai/SESSION_BOOTSTRAP.md` as tracked repository state.
+**Last completed:** Created `docs/THANGSENG_NATIVE_VALIDATION.md` — the permanent, canonical repository for outstanding native-validation questions (9 questions, NV-001 through NV-009), replacing ad-hoc `PENDING_NATIVE_QUESTIONS_*` files per Project Owner direction. Reviewed `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md` Case 1 in full: strengthened two existing rules directly (RULE-004 pro-drop scope, Grammar Specification §6 locative `-o` productivity) rather than defaulting to new rules, and staged five genuine gaps as open questions (NV-005–NV-009) rather than promoting single-sentence evidence to Rule Catalogue status. Also completed the locative proposal review (RULE-034/035) earlier this session.
+**Next up:** P1 Verb Family documentation project (root, derived forms, tense/aspect/mood, productive suffixes, native examples, related verbs, exceptions) per the Project Owner's priority framework — cumulative work, will build incrementally rather than all at once.
 **Current linguistic priority:** Copula/predication reconciliation (Rule 31) — three unreconciled predicative strategies (bare adjective, `daka`-copula, `ong·a`-copula) coexist in confirmed data with no selection rule. Not a missing feature — an unresolved contradiction inside already-confirmed sentences. Highest-priority open item.
 **Outstanding native validation:**
 1. Copula/predication selection rule (Rule 31) — P0.
