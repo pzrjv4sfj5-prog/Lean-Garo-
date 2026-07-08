@@ -137,6 +137,17 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Launch Priority:** P0.
 
 ---
+### RULE-030 — `re·` vs. `re·ang` for "Go" [OPEN]
+**Description:** Two forms of "go" coexist in confirmed data with no settled selection rule: bare `re·` (used in destinationless contexts) vs. `re·ang` (used in the general dictionary and in destination-bearing contexts).
+**Examples:** `Re·jawa` = "I will not go" (bare, no destination); `Hai re·naha` = "let's go" (bare, no destination). Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop (all `re·ang`, general/destination-bearing).
+**Counterexamples:** N/A — like RULE-031, this documents an unresolved question, not a settled pattern with exceptions.
+**Dependencies:** none identified yet; would inform future Verb Family documentation for "go."
+**Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Not yet put to Thangseng as a direct paired-contrast question. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001 for the full evidence review and proposed minimal test sentences.
+**Validation Status:** Needs Native Validation.
+**Confidence:** Low (as a unified selection rule); High (each individual confirmed form).
+**Launch Priority:** P0 — high-frequency verb, currently only narrowly patched in `corrections.json` (`will not go`/`i will not go` → `re·jawa`) specifically to avoid over-generalizing an unconfirmed pattern.
+
+---
 ### RULE-031 — Copula Inconsistency [OPEN]
 **Description:** Three unreconciled predicative strategies (bare adjective, `daka`-copula, `ong·a`-copula) coexist in confirmed data.
 **Examples:** attested for each strategy individually; no rule determines which applies when.

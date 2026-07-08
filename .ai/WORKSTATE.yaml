@@ -7,36 +7,37 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Created docs/THANGSENG_NATIVE_VALIDATION.md (canonical, permanent
-    native-validation question repository, 9 questions: NV-001..NV-009).
-    Reviewed Native Sentence Validation Audit Case 1 fully - strengthened
-    RULE-004 (pro-drop) and Grammar Specification §6 (-o locative, now
-    2 confirmed examples) rather than defaulting to new rules; promoted
-    5 genuine open items to NV-005..NV-009. Next: verb family
-    documentation project (P1), continue building toward Rule 30/31
-    answers once native validation arrives.
+    Completed the native validation cycle maturity pass (Project Owner
+    directive 2026-07-08): trimmed NV question set to a minimal
+    high-value list, ran a Native Sentence Coverage Audit against
+    Validation Corpus, and produced a Grammar + Morphology Confidence
+    Review classifying every rule/morpheme. Added missing RULE-030
+    catalogue entry (documentation gap - existed in WORKSTATE/
+    THANGSENG_RULES_LOOKUP narrative but never got a formal catalogue
+    entry, unlike RULE-031). Verb Family Project intentionally NOT
+    started yet per Project Owner sequencing.
   progress: >-
-    Locative proposal reviewed and closed (RULE-034/035). Native
-    Sentence Validation Audit Case 1 reviewed - existing knowledge
-    strengthened where evidence supported it (RULE-004, Grammar Spec §6),
-    5 new open questions logged to THANGSENG_NATIVE_VALIDATION.md rather
-    than promoted to Rule Catalogue status (single-sentence evidence,
-    same evidentiary discipline as RULE-034).
+    docs/THANGSENG_NATIVE_VALIDATION.md: added "Minimal question set"
+    section, NV-001/NV-002 identified as the two highest-value,
+    self-contained asks. docs/VALIDATION_CORPUS_COVERAGE_AUDIT.md (new):
+    exact per-rule corpus example counts, flags RULE-026 (0 examples
+    despite Medium-High confidence claim) and RULE-007/G2/G7/G-classifier
+    (evidence exists, no formal catalogue entry) as documentation gaps,
+    not evidence gaps. docs/GRAMMAR_MORPHOLOGY_CONFIDENCE_REVIEW.md
+    (new): every catalogue rule and every morphology item classified
+    High/Medium/Low/Native Validation Required with reasoning.
   completed:
-    - "docs/GRAMMAR_SPECIFICATION.md - word order, pronouns, negation, copula (open issue flagged), noun case, classifiers, possession, register"
-    - "docs/MORPHOLOGY_SPECIFICATION.md - root/stem/suffix definitions, full paradigm table, aspect-vs-tense disambiguation, lexical-split caution, productivity boundary"
-    - "docs/GRAMMAR_RULE_CATALOGUE.md - 15+ rules (RULE-001..RULE-035) in required schema"
-    - "docs/VALIDATION_CORPUS.md - 31-row sample mapped 1:1 to REGRESSION_CASES test suite, explicit coverage-gap notes"
-    - "2026-07-08: Reviewed PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md, assigned RULE-034/035, updated RULE-033"
-    - "2026-07-08: Created docs/THANGSENG_NATIVE_VALIDATION.md (NV-001..NV-009), reviewed Native Sentence Validation Audit Case 1, strengthened RULE-004 and Grammar Spec §6"
+    - "docs/GRAMMAR_SPECIFICATION.md, MORPHOLOGY_SPECIFICATION.md, GRAMMAR_RULE_CATALOGUE.md (RULE-001..RULE-035, now including RULE-030), VALIDATION_CORPUS.md - core V1.0 linguistic deliverables"
+    - "2026-07-08: RULE-034/035 locative review; docs/THANGSENG_NATIVE_VALIDATION.md created (NV-001..009); Native Sentence Validation Audit Case 1 reviewed, RULE-004 and Grammar Spec §6 strengthened"
+    - "2026-07-08: Native validation cycle maturity pass - minimal question set, Coverage Audit, Confidence Review, RULE-030 catalogue gap fixed"
   next_action: >-
-    P1: begin Verb Family documentation project (root, derived forms,
-    progressive/future/past/negative/imperative/ability/obligation,
-    productive suffixes, native examples, related verbs, known
-    exceptions) per Project Owner's priority framework. Start with a
-    well-attested verb (e.g. cha· "eat" or re·/re·ang "go", noting NV-001
-    is still open for the latter). Continue monitoring for Thangseng
-    answers to NV-001/002 (Rule 30/31) - highest priority once available.
+    P2 (per Project Owner sequencing): Verb Family Project, starting
+    with cha· ("eat") specifically - NOT re·/re·ang, which stays second
+    until NV-001 resolves. Optionally first: close the 3 documentation
+    gaps identified in VALIDATION_CORPUS_COVERAGE_AUDIT.md (RULE-007/
+    G2/G7 formal catalogue entries, RULE-026 corpus row, -ode corpus
+    sync) - pure formalization, no new native evidence needed, could be
+    done before or interleaved with the Verb Family Project.
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
     - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"
@@ -44,6 +45,8 @@ claude_a:
     - "Do not re-review the locative proposal - closed 2026-07-08, see RULE-034/035"
     - "Do not create new PENDING_NATIVE_QUESTIONS_* files - use docs/THANGSENG_NATIVE_VALIDATION.md, update questions in place"
     - "Do not attempt to resolve Rule 30/31 from assumptions - both explicitly need direct Thangseng validation, see NV-001/NV-002"
+    - "Do not begin Verb Family Project with re·/re·ang - start with cha· per Project Owner sequencing, re·/re·ang is second, after NV-001"
+    - "Do not re-run the coverage audit or confidence review from scratch - both are dated 2026-07-08, re-run only after new corpus rows are added or new native validation lands"
   waiting_for: "Direct Thangseng answers to NV-001 (Rule 30) and NV-002 (Rule 31) - highest-priority open linguistic questions"
   expected_output: "Markdown files committed to docs/, zero code/JS changes, per Sprint Work Package constraints"
 

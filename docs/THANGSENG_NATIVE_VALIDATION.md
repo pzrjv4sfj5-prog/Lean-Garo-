@@ -3,6 +3,26 @@ _Created 2026-07-08 by Claude A. Permanent document — do not create
 per-question `PENDING_NATIVE_QUESTIONS_*` files; add new questions here
 and update in place as answers arrive._
 
+## Minimal question set (for relay — smallest possible set)
+If only a short list can be relayed to Thangseng at once, these two are
+the highest-value, most self-contained asks. Everything else in this
+document either depends on these two, is lower priority, or (NV-006) may
+not need Thangseng at all.
+
+1. **(NV-001, Rule 30)** Does "go" change form depending on whether a
+   destination is mentioned? Test pairs: "I am not going" vs. "I am not
+   going to the market"; "he did not go" vs. "he did not go to the
+   market."
+2. **(NV-002, Rule 31)** After "happy"/"good"/"tired" as a predicate, is
+   `ong·a` required, optional, or specific to certain persons (I/you/
+   he-she)? How does it relate to `daka`?
+
+NV-003/004 (locative set) and NV-005/007/008 (necessity-modal, posture
+verb, ability-modal) are real but lower-priority — bundle them into a
+second relay only after NV-001/002 land, to avoid overloading a single
+native-validation session. NV-006 and NV-009 do not need to be asked at
+all yet (see their entries below).
+
 ## How to use this document
 Each question has a stable ID (`NV-###`). When a native answer arrives —
 direct from Thangseng, or relayed — update the question's **Status** and
