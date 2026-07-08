@@ -143,6 +143,11 @@ Expected as of `5d29299`: build clean, 51/51 regression tests passing.
 - `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`, `docs/PENDING_VOCABULARY.md`,
   `docs/PENDING_REGRESSION_CASES.md` — Claude B's evidence-collection
   queues, feed into the above once Claude A reviews.
+- `docs/PHASE2_TRANSLATION_INTELLIGENCE.md` — documentation-only future-
+  architecture readiness assessment (decision-intelligence taxonomy,
+  pipeline-stage mapping, reverse-translation readiness, semantic-
+  integrity debt list). Not a redesign plan — read before proposing any
+  future pipeline/multilingual work so it isn't re-derived from scratch.
 
 ## Do not repeat (see `.ai/WORKSTATE.yaml` for full per-role lists)
 - Do not re-derive the suffix paradigm table — final in

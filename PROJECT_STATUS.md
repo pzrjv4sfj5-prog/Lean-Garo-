@@ -84,6 +84,15 @@ necessity-modal `nangja`, `·ko`/`·o` case selection, posture verb `tue`
 status yet — single-sentence evidence, same discipline applied to
 RULE-034. Full detail: `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`.
 
+**Phase 2 — Translation Intelligence & Future Vision (2026-07-08, Claude
+B, documentation only):** `docs/PHASE2_TRANSLATION_INTELLIGENCE.md` —
+reclassified the 5 pending regression candidates (only 1 of 5 is actually
+a vocabulary gap; the rest are Grammar/Parser/Selection Logic/Rendering),
+mapped the current 11-strategy `translate()` cascade against the future
+8-stage semantic pipeline, reassessed reverse-translation readiness
+per-component, and documented `corrections.json`'s exact-match design as
+explicit semantic-integrity technical debt. No engine or data changes.
+
 **Evidence Collection Mode (2026-07-08, Claude B, while Claude A was
 temporarily out of tokens):** Two additional queue documents created in
 parallel — **not yet reviewed by Claude A**, since they postdate the Case 1
