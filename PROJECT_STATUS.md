@@ -72,48 +72,48 @@ from `edc94b7`. See `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`.
 Not yet repository state — awaiting Claude A review per standing
 integration rule.
 
-**Evidence Collection Mode (2026-07-08, Claude A temporarily unavailable):**
-Two new living queue documents created to hold evidence without
-implementing:
+**Native Sentence Validation Audit (P0, 2026-07-08):** Case 1 fully
+glossed, native-confirmed, and **reviewed by Claude A** (2026-07-08).
+Two findings strengthened existing rules directly (RULE-004 pro-drop
+scope, Grammar Specification §6 locative `-o` productivity — now 2
+confirmed examples). Five findings promoted to canonical open questions
+in `docs/THANGSENG_NATIVE_VALIDATION.md` (NV-005 through NV-009):
+necessity-modal `nangja`, `·ko`/`·o` case selection, posture verb `tue`
+(malformed output — standalone bug for Claude B), ability-modal
+`man·ienga`, `TV`/`status` loanwords. None promoted to Rule Catalogue
+status yet — single-sentence evidence, same discipline applied to
+RULE-034. Full detail: `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`.
+
+**Evidence Collection Mode (2026-07-08, Claude B, while Claude A was
+temporarily out of tokens):** Two additional queue documents created in
+parallel — **not yet reviewed by Claude A**, since they postdate the Case 1
+review above:
 - `docs/PENDING_VOCABULARY.md` — 8 candidate words/morphemes from Case 1
   (`TV`, `status`, `nina`, `nangja`, `palango`/`Palang`, `tue`, `nisona`,
-  `man·ienga`), each tagged Confirmed / Needs Claude A Review / Needs
-  Thangseng Validation. Nothing added to `corrections.json` or
-  `master_dictionary.json`.
+  `man·ienga`), state-tagged per the standard pipeline. Nothing added to
+  `corrections.json` or `master_dictionary.json`.
 - `docs/PENDING_REGRESSION_CASES.md` — 5 candidate regression cases
-  (RC-CANDIDATE-001 through 005) covering necessity-modal negation,
-  `·ko`/`·o` locative selection, a confirmed malformed-output bug for
-  posture verb "lying", ability-modal "can" being dropped entirely, and
-  silent loanword loss. Exact input/output pairs captured; nothing added to
-  the live 51/51 `REGRESSION_CASES` suite.
-exercise measuring engine performance against real conversational Garo
-(not synthetic test sentences). Case 1 now fully glossed and native-confirmed
-(Thangseng): "(I) don't need to watch TV, (I) can just watch on status
-lying in bed" with full morpheme breakdown. Confirmed findings: (a) engine
-has no Garo→English capability (architecture-level, known), (b) `TV`/`status`
-loanwords entirely absent from dictionaries, (c) necessity-modal negation
-(`nangja`) collapses into plain desire-negation, (d) engine selects object
-marker `·ko` where native uses locative `·o` for "in bed", (e) posture verb
-"lying" (`tue`) produces a malformed output (`Anga Palangha`) rather than a
-graceful gap, (f) ability-modal "can" (`man·ienga`) is dropped entirely,
-(g) the `Palang`+`·o` locative pattern is structurally correct where it
-does fire — a genuine partial success. Full detail:
-`docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`. Ready for Claude A review. No
-engine changes made.
+  (RC-CANDIDATE-001 through 005) with exact input/output pairs from
+  follow-up isolated engine tests, largely overlapping with NV-005..009
+  above but engineering-framed (severity, affected components). Nothing
+  added to the live 51/51 `REGRESSION_CASES` suite. Claude A should
+  cross-check these against NV-005..009 for duplication before treating
+  both as independent queues.
 
 ## 10. Claude A Status
 
-**Status:** migrating to new chat session (as of 2026-07-08)
-**Last completed:** All 4 P0 linguistic specification deliverables for the V1.0 launch sprint — `docs/GRAMMAR_SPECIFICATION.md`, `docs/MORPHOLOGY_SPECIFICATION.md`, `docs/GRAMMAR_RULE_CATALOGUE.md`, `docs/VALIDATION_CORPUS.md`. All content sourced directly from existing verified repository data (`THANGSENG_RULES_LOOKUP.md`'s 33 rules, `corrections.json`'s 790 entries) — no invented or guessed linguistic content, per standing project discipline.
-**On resume:** review `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md` first (see §9).
+**Status:** active (2026-07-08)
+**Last completed:** Native validation cycle maturity pass (Project Owner directive): trimmed `docs/THANGSENG_NATIVE_VALIDATION.md` to a minimal 2-question high-value relay set (NV-001, NV-002); created `docs/VALIDATION_CORPUS_COVERAGE_AUDIT.md` (exact per-rule example counts — flags RULE-026 at 0 corpus examples despite a Medium-High confidence claim, and 4 rules cited in the corpus but missing formal catalogue entries); created `docs/GRAMMAR_MORPHOLOGY_CONFIDENCE_REVIEW.md` (every rule and morpheme classified High/Medium/Low/Native Validation Required); fixed a real documentation gap by adding the missing RULE-030 catalogue entry. Verb Family Project deliberately not started yet, per explicit Project Owner sequencing.
+**Next up:** P2 Verb Family Project, starting with `cha·` ("eat") — not `re·`/`re·ang`, which is held for second per Project Owner instruction, pending NV-001. Optionally interleave the 3 pure-documentation gaps identified in the Coverage Audit first (no new native evidence required for those).
 **Current linguistic priority:** Copula/predication reconciliation (Rule 31) — three unreconciled predicative strategies (bare adjective, `daka`-copula, `ong·a`-copula) coexist in confirmed data with no selection rule. Not a missing feature — an unresolved contradiction inside already-confirmed sentences. Highest-priority open item.
 **Outstanding native validation:**
 1. Copula/predication selection rule (Rule 31) — P0.
 2. Rule 30 (`re·` vs `re·ang` for "go") — flagged by Claude B, open.
-3. `-manaha`/`-aha` precise divergence beyond confirmed casual-speech overlap — P1.
-4. Locative word order productivity beyond the single confirmed "under the table" sentence — P1.
+3. RULE-034/035 locative/directional set — needs direct confirmation pass, ideally one example sentence per word, before promotion beyond the Rule Catalogue.
+4. `-manaha`/`-aha` precise divergence beyond confirmed casual-speech overlap — P1.
 5. `-gija` vs `-ja`/`-jaha` full selection rule for arbitrary "not X-ing" inputs beyond the already-implemented "without" pattern — P1.
-**Current blockers:** None launch-blocking. All P0 deliverables complete and internally consistent with the existing engine/corpus. Rule 31 flagged, documented, explicitly not promoted to canonical status — correctly deferred per the Linguistic Review Standard.
+6. Native Sentence Validation Audit Case 1 findings (necessity-modal `nangja`, `·ko`/`·o` case selection on locative adjuncts, posture verb `tue`, ability-modal `man·ienga`, `TV`/`status` loanword gap) — reviewed, not yet assigned rule IDs; next after Rule 31/30.
+**Current blockers:** None launch-blocking. Rule 31 and Rule 30 both remain open, correctly deferred per the Linguistic Review Standard, both need Thangseng directly rather than relay.
 
 ## 11. Claude B Status
 

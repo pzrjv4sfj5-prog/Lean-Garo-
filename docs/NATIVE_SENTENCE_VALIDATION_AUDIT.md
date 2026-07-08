@@ -158,7 +158,50 @@ genuine partial success worth preserving as a future regression case.
 - No linguistic content added to `GRAMMAR_RULE_CATALOGUE.md` — this
   document is evidence for Claude A, not a substitute for Claude A's review.
 
-## Next steps
+## Claude A Review (2026-07-08)
+
+Reviewed in full. Findings sorted into two categories per the priority
+framework's "strengthen before creating" guidance:
+
+**Strengthened existing knowledge (no new rule needed):**
+- Finding (g): subject pro-drop confirmed outside the imperative context —
+  strengthens RULE-004's notes (see `GRAMMAR_RULE_CATALOGUE.md`), doesn't
+  need a new rule since RULE-003b's imperative case was never claimed to
+  be the *only* pro-drop context.
+- Finding (g)/positive finding: the `Palang`+`·o` locative pattern
+  firing correctly is a second confirmed example of `-o` locative
+  productivity — strengthens `GRAMMAR_SPECIFICATION.md` §6's noun-case
+  table, moving it from "one full-sentence example" to "two confirmed
+  examples."
+
+**Promoted to canonical open questions (see `docs/THANGSENG_NATIVE_VALIDATION.md`):**
+- Finding (b): necessity-modal negation (`nangja`) collapsing into
+  desire-negation → NV-005.
+- Finding (c): `·ko`/`·o` case-selection divergence on locative adjuncts
+  → NV-006 (flagged as likely engineering-first, not necessarily a new
+  linguistic rule — see NV-006 for reasoning).
+- Finding (d): posture verb `tue` malformed output → NV-007 (the
+  malformed-output part is a standalone bug Claude B can fix without
+  waiting on full paradigm validation).
+- Finding (e): ability-modal `man·ienga` dropped entirely → NV-008.
+- Finding (a)/loanword gap (`TV`/`status`) → NV-009 (vocabulary, P2/P4
+  priority, not P0).
+
+None of these five are promoted to Rule Catalogue status yet — each is a
+single natural sentence, which per the project's own standard (compare
+how RULE-033 required a direct confirmed example, and how RULE-034 was
+deliberately held at Medium confidence from a relayed source) is
+suggestive evidence, not sufficient grounds for a new rule on its own.
+NV-005 and NV-008 are both modality gaps — noted in NV-008 as a possible
+signal that modality generally deserves a dedicated grammar sweep once
+both get native validation.
+
+No engine changes made. No new rules added to `GRAMMAR_RULE_CATALOGUE.md`
+from this case alone — existing rules strengthened where the evidence
+supported it, everything else staged as an open question pending direct
+native validation.
+
+
 - Case 1 is now fully glossed and analyzed — ready for Claude A to assess
   whether any findings above warrant new/revised rules, and for Claude B to
   eventually turn confirmed fixes (loanword entries, `·ko`/`·o` selection,

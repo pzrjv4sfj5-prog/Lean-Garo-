@@ -80,7 +80,7 @@ states and inherent qualities?"*
 | Suffix | Function | Status |
 |---|---|---|
 | `-ko` | Accusative/object marker | Verified |
-| `-o` | Locative | Verified (one full-sentence example; general productivity not yet validated) |
+| `-o` | Locative | Verified (two confirmed examples as of 2026-07-08: `nokkimao`/RULE-033 "under the table", and `palango`/`Palang`+`-o` "in bed" per `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md` Case 1 — general productivity across arbitrary nouns still not fully validated, but no longer resting on a single sentence) |
 | `-chi` | Directional ("to/toward") | Verified |
 | `-ni` | Possessive/genitive | Verified |
 | `-na` | Dative ("for/to") | Verified |

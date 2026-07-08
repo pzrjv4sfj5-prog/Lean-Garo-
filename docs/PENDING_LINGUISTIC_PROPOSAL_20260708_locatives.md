@@ -1,6 +1,26 @@
 # Pending Linguistic Proposal — Locative/Directional Word Set
 _Logged: 2026-07-08 by Claude B_
-_Status: PENDING — chat-only, NOT repository state, NOT implemented_
+_Status: REVIEWED 2026-07-08 by Claude A — see disposition below._
+
+## Disposition (Claude A review, 2026-07-08)
+- `down` = `Ka·ma` — **no action needed**, already confirmed repository
+  state (RULE-033/`corrections.json`).
+- `kokkima`/`nokkima` spelling variance — **resolved**, both confirmed
+  legitimate; folded into RULE-033 as an update, no new rule needed.
+- `under` (general) vs. `mitapo` (sheet/slab/covering sense) — **assigned
+  RULE-035**. Needs a direct confirmed example sentence before promotion
+  to Validation Corpus / `corrections.json`.
+- Remaining 9 words (below, inside, outside, above, behind, beside, up,
+  over, across) — **assigned RULE-034**, Medium confidence (Low for
+  `over`/`badeao`, source-flagged uncertain). Not promoted to
+  `corrections.json` or Validation Corpus yet — recommend a direct
+  Thangseng confirmation pass, ideally with one example sentence per word,
+  matching the evidentiary bar RULE-033 was held to.
+- **Not implemented in engine/`corrections.json`** — per the standing
+  integration rule, that step is Claude B's, and only after these items
+  reach "Verified" status via direct native confirmation, not relay.
+
+See `docs/GRAMMAR_RULE_CATALOGUE.md` RULE-033/034/035 for full detail.
 
 ## Source
 Raw WhatsApp exchange between Thangseng (native speaker) and Tridip, relayed

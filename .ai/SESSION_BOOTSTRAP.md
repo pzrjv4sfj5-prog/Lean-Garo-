@@ -16,6 +16,35 @@ Lean-Garo: an English → A'chik Garo translation engine (Meghalaya, India). Nod
 - **Project Owner / ChatGPT** — priorities, executive review, cross-team
   coordination. Advisory, not in every session.
 
+## Claude A priority framework (adopted 2026-07-08, Project Owner)
+Standing priority order for Claude A's linguistic work, P0 highest:
+- **P0** - Native validation & critical linguistic corrections (anything
+  affecting translation correctness: wrong grammar/morphology/suffix/word
+  order/meaning/tense-aspect, rule conflicts, Native Sentence Validation
+  Audit review). Every P0 item ends with Rule Catalogue + Validation
+  Corpus + docs synchronized.
+- **P1** - Grammar & morphology expansion (discovery, morphology
+  families, productive suffixes, verb families, case markers,
+  tense/aspect/mood, sentence formation). New rules need multiple native
+  examples where possible.
+- **P2** - Vocabulary & knowledge expansion (classify new words: new
+  concept / existing concept / synonym / regional variant / spelling
+  variant / loan word / idiomatic expression). Depth over dictionary size.
+- **P3** - Language knowledge architecture (concept relationships,
+  meaning-first translation, semantic organization, future multilingual
+  compatibility). Document future opportunities only - do not redesign
+  the translator, do not implement additional languages.
+- **P4** - Linguistic research & preservation (dialect variation, regional
+  vocabulary, idioms, proverbs, storytelling patterns, conversational
+  Garo). Long-term; does not affect V1.0 implementation.
+
+Role split for this framework: Claude B collects evidence (native
+sentence collection, pending vocabulary, pending regression cases,
+engineering, repo stewardship). Claude A validates, classifies, and
+promotes verified knowledge into canonical docs. V1.0 remains the
+immediate objective; language preservation is the long-term mission -
+the two are not in tension as long as P0 stays P0.
+
 ## Integration rule (V1.0 launch sprint, standing as of 2026-07-08)
 Do not implement linguistic changes sourced directly from chat. Any new
 lexical/grammar item proposed in conversation (e.g. relayed from Thangseng)

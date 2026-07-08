@@ -54,6 +54,7 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Counterexamples:** `bio` (informal locative "at him/her") has no attested form in either register — not a counterexample, an unfilled cell.
 **Dependencies:** none.
 **Native Notes:** Source Rule 4.
+**Strengthened by (2026-07-08):** `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md` Case 1 confirms subject pro-drop occurs outside the imperative context RULE-003b already covers — a full declarative sentence ("(I) don't need to watch TV...") with "I" fully implied, not spoken, native-confirmed by Thangseng. This is existing knowledge getting *stronger* (pro-drop is broader than the imperative-only case previously documented), not a new rule — RULE-003b's scope note should be read as "imperatives always drop the subject" rather than "only imperatives drop the subject." No catalogue change needed beyond this note; flagging so a future implementer doesn't assume subject-drop is imperative-exclusive.
 **Validation Status:** Verified (core table); Unknown (informal locative cell).
 **Confidence:** High (core); N/A (unfilled cell — do not guess).
 **Launch Priority:** P0 (core); deferred (unfilled cell, low practical impact).
@@ -136,6 +137,17 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Launch Priority:** P0.
 
 ---
+### RULE-030 — `re·` vs. `re·ang` for "Go" [OPEN]
+**Description:** Two forms of "go" coexist in confirmed data with no settled selection rule: bare `re·` (used in destinationless contexts) vs. `re·ang` (used in the general dictionary and in destination-bearing contexts).
+**Examples:** `Re·jawa` = "I will not go" (bare, no destination); `Hai re·naha` = "let's go" (bare, no destination). Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop (all `re·ang`, general/destination-bearing).
+**Counterexamples:** N/A — like RULE-031, this documents an unresolved question, not a settled pattern with exceptions.
+**Dependencies:** none identified yet; would inform future Verb Family documentation for "go."
+**Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Not yet put to Thangseng as a direct paired-contrast question. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001 for the full evidence review and proposed minimal test sentences.
+**Validation Status:** Needs Native Validation.
+**Confidence:** Low (as a unified selection rule); High (each individual confirmed form).
+**Launch Priority:** P0 — high-frequency verb, currently only narrowly patched in `corrections.json` (`will not go`/`i will not go` → `re·jawa`) specifically to avoid over-generalizing an unconfirmed pattern.
+
+---
 ### RULE-031 — Copula Inconsistency [OPEN]
 **Description:** Three unreconciled predicative strategies (bare adjective, `daka`-copula, `ong·a`-copula) coexist in confirmed data.
 **Examples:** attested for each strategy individually; no rule determines which applies when.
@@ -148,11 +160,34 @@ Structured per Sprint Work Package schema. Rule IDs map to
 
 ---
 ### RULE-033 — Locative "Under," Retiring a Lexical Confusion
-**Description:** "Under" = `nokkima`/`kokkima` (confirmed equivalent register variants) + locative `-o`. A prior implementation entry (`Ka·ma·o`) incorrectly reused the unrelated word "down" (`Ka·ma`) + `-o`.
+**Description:** "Under" = `nokkima`/`kokkima` (confirmed equivalent register/spelling variants, not one correct and one erroneous form — see update below) + locative `-o`. A prior implementation entry (`Ka·ma·o`) incorrectly reused the unrelated word "down" (`Ka·ma`) + `-o`.
 **Examples:** `Achak tebil nokkimao ong·a` = "the dog is under the table."
 **Counterexamples:** `Ka·ma·o` — confirmed wrong, retained as a documented counterexample.
-**Dependencies:** RULE-001 (raka), Grammar Specification §6 (locative suffix), Morphology Specification §5 (lexical-split caution).
+**Dependencies:** RULE-001 (raka), Grammar Specification §6 (locative suffix), Morphology Specification §5 (lexical-split caution). See also RULE-034 (wider locative/directional set) and RULE-035 (under/beneath sense split).
 **Native Notes:** Source Rule 33; root cause traced to a same-suffix confusion between two unrelated roots (`down` vs. `under`), not a random error — instructive for future implementers per Morphology Specification §5.
-**Validation Status:** Verified.
-**Confidence:** High.
+**Update (2026-07-08):** The `kokkima`/`nokkima` spelling discrepancy flagged in `edc94b7`/`THANGSENG_RULES_LOOKUP.md` is now resolved — both are confirmed legitimate variants, not a typo needing correction. Source: relayed native guidance (Thangseng via Tridip, 2026-07-08), logged in `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`. See RULE-035 for the related but distinct "under" vs. "beneath" (`mitapo`) sense split, which this rule's general "under" mapping does not cover.
+**Validation Status:** Verified (core "under the table" sentence, direct Thangseng confirmation, unchanged); Verified at Medium confidence (spelling-variant resolution — relayed, not a direct real-time confirmation session; see RULE-035 note on evidentiary standard).
+**Confidence:** High (core rule); Medium (spelling-variant resolution, pending direct confirmation opportunity).
 **Launch Priority:** P0 (correction already implemented); P1 (generalizing locative word order beyond this single confirmed sentence — see Grammar Specification §2, RULE-G2 productivity boundary).
+
+---
+### RULE-034 — Locative/Directional Word Set (Vocabulary Expansion)
+**Description:** Nine additional single-word locative/directional lexical items, proposed for the productive `-o` locative-suffix pattern established by RULE-033: `inside` (`ning'ao` / `nokningo`, lit. "inside the room"), `outside` (`a'palo`), `above` (`kosako`), `behind` (`janggilo` / `janggilchipak`, lit. "on the back"), `beside` (`sambao`), `up` (`kosak`), `over` (`badeao`, lit. "beyond" — flagged uncertain by the source itself), `across` (`nalsao`), `below` (`ka'mao`).
+**Examples:** None yet at full-sentence level — these are single-word lexical proposals only, unlike RULE-033's "under the table" which has a complete native-confirmed sentence. No corpus entry added (see Validation Corpus coverage notes).
+**Counterexamples:** None — nothing yet contradicts these; equally, nothing yet confirms them beyond the single relayed source.
+**Dependencies:** RULE-033 (established locative `-o` pattern this set extends), Grammar Specification §6, §2 RULE-G2 (productivity boundary — this rule does not resolve that boundary, it adds candidate vocabulary within it).
+**Native Notes:** Source: raw WhatsApp exchange between Thangseng and Tridip, relayed via Claude B chat session 2026-07-08 (`docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`). This is native-sourced but **evidentially weaker** than the project's usual bar for "Verified" (compare RULE-033's `nokkimao`, which came from a direct native-confirmation session with a full example sentence). `over`/`badeao` is explicitly flagged uncertain by the source and should be treated as lower-confidence than the other eight.
+**Validation Status:** Needs Native Validation (direct) — eight items at Medium confidence pending a direct Thangseng confirmation pass (ideally with a full example sentence each, matching RULE-033's standard); `over`/`badeao` at Low confidence, explicitly source-flagged as uncertain.
+**Confidence:** Medium (8 items); Low (`over`).
+**Launch Priority:** P1 — vocabulary expansion, not a correctness bug; does not block V1.0. Recommend direct native confirmation before promotion to `corrections.json` or Validation Corpus status.
+
+---
+### RULE-035 — "Under" vs. "Beneath" Sense Split (`mitapo`)
+**Description:** English "under" and "beneath" are not a single Garo mapping. `kokkimao`/`nokkimao` (RULE-033) covers general "under." `mitapo` is used specifically for "underneath" in the sense of something under a sheet, slab, or covering — a distinct sense, not a free variant of RULE-033's form.
+**Examples:** None yet at full-sentence level for the `mitapo` sense (e.g. no confirmed sentence like "the book is under the blanket"). RULE-033's `nokkimao` example ("dog under the table") is confirmed to be the *general* sense, not the covering sense.
+**Counterexamples:** Treating `mitapo` and `kokkimao`/`nokkimao` as interchangeable would be a misuse of this rule — the whole point of RULE-035 is that they are not.
+**Dependencies:** RULE-033 (the sense this rule splits off from).
+**Native Notes:** Source: same relayed 2026-07-08 exchange as RULE-034. Not yet confirmed with a worked example distinguishing the two senses in context.
+**Validation Status:** Needs Native Validation (direct) — the sense distinction itself is plausible and specific enough to record, but has no confirmed example sentence yet, and RULE-033's existing "under the table" example should NOT be reused as evidence for `mitapo`, since it is a general-sense example.
+**Confidence:** Medium (distinction exists); Low (no worked example).
+**Launch Priority:** P1 — refines an existing P0 rule's scope but does not change RULE-033's already-implemented behavior; not launch-blocking.
