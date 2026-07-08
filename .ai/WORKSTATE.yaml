@@ -49,15 +49,16 @@ claude_b:
     - "Production verification audit: no hidden regressions from recent fixes (this session)"
     - ".ai/SESSION_BOOTSTRAP.md created; docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md logged"
   next_action: >-
-    P0: Native Sentence Validation Audit
-    (docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md) - Case 1 fully glossed and
-    native-confirmed (Thangseng), ready for Claude A review. Bugs/gaps
-    found: TV/status loanword gap, nangja necessity-modal collapses into
-    desire-negation, ·ko vs ·o case-selection error on locative adjuncts,
-    malformed output for posture verb "lying", ability-modal "can" dropped.
-    No fixes applied - evidence only. Otherwise none blocking; standing by
-    for Claude A's next linguistic commit. No engineering changes to make
-    until that lands per the chat-proposal integration rule.
+    Evidence Collection Mode (Claude A out of tokens, temporarily
+    unavailable). Case 1 fully glossed and closed out. Created
+    docs/PENDING_VOCABULARY.md (8 candidate words/morphemes: TV, status,
+    nina, nangja, palango/Palang, tue, nisona, man·ienga - all state-
+    tagged Confirmed/Needs Claude A Review/Needs Thangseng Validation, none
+    implemented) and docs/PENDING_REGRESSION_CASES.md (5 candidate
+    regression cases RC-CANDIDATE-001..005, exact input/output pairs
+    captured, none added to live suite). No engine changes. Standing by
+    for more native sentences and for Claude A's eventual review of both
+    queues plus the earlier locative proposal.
   do_not_repeat:
     - "Do not re-derive raka (Rule 1) violations from scratch - check docs/ARCHITECTURE.md §9 audit history first"
     - "Do not re-add PROGRESSIVE_MAP/PAST_TO_ROOT - confirmed dead, removed dcf6293"

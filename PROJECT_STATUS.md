@@ -72,7 +72,20 @@ from `edc94b7`. See `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`.
 Not yet repository state — awaiting Claude A review per standing
 integration rule.
 
-**Native Sentence Validation Audit (new P0, 2026-07-08):** Evidence-gathering
+**Evidence Collection Mode (2026-07-08, Claude A temporarily unavailable):**
+Two new living queue documents created to hold evidence without
+implementing:
+- `docs/PENDING_VOCABULARY.md` — 8 candidate words/morphemes from Case 1
+  (`TV`, `status`, `nina`, `nangja`, `palango`/`Palang`, `tue`, `nisona`,
+  `man·ienga`), each tagged Confirmed / Needs Claude A Review / Needs
+  Thangseng Validation. Nothing added to `corrections.json` or
+  `master_dictionary.json`.
+- `docs/PENDING_REGRESSION_CASES.md` — 5 candidate regression cases
+  (RC-CANDIDATE-001 through 005) covering necessity-modal negation,
+  `·ko`/`·o` locative selection, a confirmed malformed-output bug for
+  posture verb "lying", ability-modal "can" being dropped entirely, and
+  silent loanword loss. Exact input/output pairs captured; nothing added to
+  the live 51/51 `REGRESSION_CASES` suite.
 exercise measuring engine performance against real conversational Garo
 (not synthetic test sentences). Case 1 now fully glossed and native-confirmed
 (Thangseng): "(I) don't need to watch TV, (I) can just watch on status
