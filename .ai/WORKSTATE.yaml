@@ -5,29 +5,40 @@ repository:
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
 
 claude_a:
-  status: migrating_to_new_chat
+  status: active
   current_task: >-
-    V1.0 launch sprint P0 linguistic specification deliverables (complete);
-    next session should pick up pending locative/directional proposal below
-  progress: "4/4 P0 deliverables complete, sourced entirely from existing verified repository data"
+    P0-P4 priority framework adopted (2026-07-08, Project Owner). Completed
+    review of pending locative proposal; now moving to Rule 31 (copula),
+    then Rule 30 (re·/re·ang).
+  progress: >-
+    Locative/directional proposal reviewed and closed out. Assigned
+    RULE-034 (9-word locative/directional set, Medium confidence, Low for
+    "over") and RULE-035 (under vs. beneath/mitapo sense split, Needs
+    Native Validation). Resolved kokkima/nokkima spelling-variant question
+    as an update to RULE-033. Nothing promoted to corrections.json/
+    Validation Corpus - correctly staged pending direct Thangseng
+    confirmation, since source was a relayed WhatsApp exchange, not a
+    direct confirmation session.
   completed:
     - "docs/GRAMMAR_SPECIFICATION.md - word order, pronouns, negation, copula (open issue flagged), noun case, classifiers, possession, register"
     - "docs/MORPHOLOGY_SPECIFICATION.md - root/stem/suffix definitions, full paradigm table, aspect-vs-tense disambiguation, lexical-split caution, productivity boundary"
     - "docs/GRAMMAR_RULE_CATALOGUE.md - 15 rules in required schema (ID/description/examples/counterexamples/dependencies/native notes/status/confidence/priority)"
     - "docs/VALIDATION_CORPUS.md - 31-row sample mapped 1:1 to REGRESSION_CASES test suite, explicit coverage-gap notes"
+    - "2026-07-08: Reviewed PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md, assigned RULE-034/035, updated RULE-033, updated Validation Corpus coverage notes, marked proposal REVIEWED"
   next_action: >-
-    On resume: review docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md
-    (below/inside/outside/above/behind/beside/up/beneath/over/across, plus
-    kokkimao-vs-nokkimao and mitapo sense-disambiguation for "under"/
-    "beneath") against GRAMMAR_RULE_CATALOGUE.md and VALIDATION_CORPUS.md,
-    assign rule ID(s), commit to docs/. Also still open: native validation
-    resolving Rule 31 (copula) or Rule 30 (re·/re·ang for go).
+    Rule 31 (copula/predication selection - bare adjective vs daka vs
+    ong·a) - highest-priority open linguistic question, needs Thangseng.
+    Then Rule 30 (re·/re·ang for "go"). Then review
+    docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md Case 1 findings (necessity-
+    modal nangja, ·ko/·o case selection, posture verb tue, ability-modal
+    man·ienga) for rule-catalogue implications.
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
     - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"
     - "Do not re-litigate Gemini-fallback-removal - settled, architectural, not open"
+    - "Do not re-review the locative proposal - closed 2026-07-08, see RULE-034/035"
   waiting_for: "Native-speaker answer on copula/predication selection rule (Rule 31) - highest-priority open linguistic question"
-  expected_output: "4 markdown files committed to docs/, zero code/JS changes, per Sprint Work Package constraints"
+  expected_output: "Markdown files committed to docs/, zero code/JS changes, per Sprint Work Package constraints"
 
 claude_b:
   status: active

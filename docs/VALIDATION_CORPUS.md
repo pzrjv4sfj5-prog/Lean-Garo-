@@ -67,3 +67,15 @@ sourced directly from `src/data/corrections.json` (790 entries) or
   sentence (RULE-033) is Derived, not Verified, for any other
   locative/noun combination. No additional locative corpus entries added
   to avoid implying broader confirmed coverage than exists.
+- **2026-07-08 review (Claude A):** the pending locative/directional word
+  set (`docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`) was
+  reviewed and assigned RULE-034 (9 new words) and RULE-035 (under/beneath
+  `mitapo` sense split) in the Grammar Rule Catalogue. Deliberately **not**
+  added to this corpus table — the source is a relayed WhatsApp exchange,
+  not a direct confirmation session, and none of the 9 words have a
+  confirmed full example sentence (unlike RULE-033's "under the table").
+  This is Medium/Low-confidence candidate vocabulary, correctly staged in
+  the Rule Catalogue as "Needs Native Validation," not promoted here. The
+  `kokkima`/`nokkima` spelling-variant question is the one item from this
+  proposal resolved with reasonable confidence (both forms legitimate),
+  and is reflected as an update to RULE-033 rather than a new corpus row.
