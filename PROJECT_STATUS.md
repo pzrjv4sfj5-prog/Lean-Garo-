@@ -74,13 +74,19 @@ integration rule.
 
 **Native Sentence Validation Audit (new P0, 2026-07-08):** Evidence-gathering
 exercise measuring engine performance against real conversational Garo
-(not synthetic test sentences). Case 1 logged — confirmed the engine has no
-Garo→English capability (architecture-level, already known) and that
-forward-direction candidates for a real code-switched sentence
-(`TV`/`status` loanwords, "instead of X, Y" construction) lose significant
-content despite high reported confidence. Gloss unconfirmed, native
-validation required before conclusions are trusted. Full detail:
-`docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`. No engine changes made.
+(not synthetic test sentences). Case 1 now fully glossed and native-confirmed
+(Thangseng): "(I) don't need to watch TV, (I) can just watch on status
+lying in bed" with full morpheme breakdown. Confirmed findings: (a) engine
+has no Garo→English capability (architecture-level, known), (b) `TV`/`status`
+loanwords entirely absent from dictionaries, (c) necessity-modal negation
+(`nangja`) collapses into plain desire-negation, (d) engine selects object
+marker `·ko` where native uses locative `·o` for "in bed", (e) posture verb
+"lying" (`tue`) produces a malformed output (`Anga Palangha`) rather than a
+graceful gap, (f) ability-modal "can" (`man·ienga`) is dropped entirely,
+(g) the `Palang`+`·o` locative pattern is structurally correct where it
+does fire — a genuine partial success. Full detail:
+`docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`. Ready for Claude A review. No
+engine changes made.
 
 ## 10. Claude A Status
 

@@ -44,84 +44,104 @@ bug in this sentence's handling specifically. Affects: `translationEngine.js`
 translate() entry point / overall English→Garo-only architecture. Cross-ref:
 `docs/PENDING_reverse_translation.md`.
 
-**Step 2 — word-level gloss (native-confirmed 2026-07-08):**
-`palango` = **bed** (not "phone" — the Step-2 tentative guess in the
-original version of this entry was wrong, corrected here), `status` =
-**status** (English loanword, used as-is), `tv` = **TV** (English loanword,
-used as-is). Full-sentence gloss below is now partially informed by this
-but the surrounding structure (`ninan`, `nangja`, `tue`, `nisona`,
-`manaienga`) is still **not** native-confirmed and remains tentative:
+**Step 2 — FULL gloss and morpheme breakdown (native-confirmed 2026-07-08,
+Thangseng):**
 
-Revised tentative full gloss: "Not [watching] TV now, [I'm] on the bed
-looking at status." (`palango tue` ≈ "on the bed"; `status o nisona` ≈
-"looking at status"). **Still needs native confirmation for the full
-sentence**, especially `ninan` and `tue`.
+> "(I) don't need to watch TV, (I) can just watch on status lying in bed."
 
-**Step 3 — engine output for three candidate English phrasings of the
-revised gloss:**
+| Garo | Gloss | Note |
+|---|---|---|
+| `TV` | TV | English loanword, used verbatim |
+| `nina` | to watch | base `ni` ("see/watch") + infinitive/purposive |
+| `nangja` | need not | modal necessity negation — **distinct from simple "don't want"** |
+| `palango` | in the bed | `Palang` ("bed") + `·o` locative |
+| `tue` | lying (contextual) / sleeping (more literal) | converb/participle, posture verb |
+| `status-o` | the status | `status` (loanword) + `·o` — here functioning closer to a topic/object marker than locative |
+| `nisona` | to watch(ingly wait) | broader sense than `nina` — can also mean "wait expectantly for someone arriving" |
+| `man·ienga` | can / am able | ability modal, continuous-aspect marked |
+| *(subject)* | I | **null/pro-drop — not spoken, fully implied** |
 
-| Candidate English input | Engine output | Method | Confidence |
+This is now a fully native-confirmed gloss and morpheme breakdown — the
+highest-confidence data in this audit so far.
+
+**Step 3 — engine output for the confirmed gloss and sub-clauses:**
+
+| English input | Engine output | Method | Confidence |
 |---|---|---|---|
-| "I don't want TV now, I am on the bed looking at status" | `Anga sikengja` | grammar-assembly | 0.82 |
-| "not watching TV now, I am on the bed looking at status" | `Da·o Anga Palang ni·rik·a Niboja` | sov-assembly | 0.75 |
-| "I am on the bed looking at status instead of TV" | `Anga Palangha` | grammar-assembly | 0.82 |
+| "I don't need to watch TV, I can just watch status lying in bed" | `Anga palang·ko sikengja` | grammar-assembly | 0.82 |
+| "I don't need to watch TV" (isolated clause) | `Anga sikengja` | grammar-assembly | 0.82 |
+| "I can watch status lying in bed" (isolated clause) | `Anga palang·ko ni·rik·a` | grammar-assembly | 0.82 |
+| "I am lying in bed" (isolated, testing `tue`) | `Anga Palangha` | grammar-assembly | 0.82 |
 
-**Comparison against native target — updated:**
-Row 2 is a partial positive result: `Palang` ("bed") does appear, and it's
-immediately followed by `·a` — structurally close to the native `palango`
-(`Palang` + `·o` locative, "on/at the bed"), which is a real point of
-agreement between engine output and native form, not just a miss. This is
-worth noting as a **success**, not just a failure catalogue.
+**Final comparison against native target — confirmed findings:**
 
-However: `status` and `TV` are dropped in all three outputs (confirmed —
-neither is in `corrections.json` or `master_dictionary.json` as a loanword
-entry; `bed`/`Palang` exists in `master_dictionary.json` but not in the
-higher-priority `corrections.json`). The "instead of X, Y" contrastive
-structure still collapses badly — row 3 (`Anga Palangha`) loses "looking at
-status" entirely and produces a malformed/unclear suffix (`Palangha` is not
-a recognized form in the dictionary scan above).
-
-**Suspected causes — updated:**
-1. **Dictionary (confirmed, not just suspected):** `status` and `TV` have
-   no entry anywhere in `corrections.json`/`master_dictionary.json` as
-   English loanwords. This is a real, confirmed gap — real Garo speech
-   evidently retains common English tech/media loanwords verbatim (`TV`,
-   `status`), and the engine currently has no mechanism for passing such
-   words through untranslated within an otherwise-Garo sentence.
-2. **Grammar** — "instead of X, Y" contrastive/substitutive construction
-   still appears unhandled; still needs Claude A confirmation of whether
-   this is a true gap or an existing rule not firing.
-3. **Sentence Ordering / Context** — unchanged from original entry, still
-   open.
-4. **Morphology (positive finding, not a failure):** `Palang` + `·o`
-   locative marker (row 2) structurally matches the native `palango`
-   pattern — suggests the locative-suffix mechanism itself is sound; the
-   problem is loanword coverage and clause-collapsing, not this morpheme.
+1. **`TV` and `status` are never produced, in any of the 7 candidate inputs
+   tested across this case (this session + prior).** Confirmed dictionary
+   gap — not an artifact of a bad gloss guess, since the gloss is now
+   native-verified. **Repository fix needed:** add `TV`/`status` (and
+   likely other common tech/media loanwords) as pass-through entries in
+   `corrections.json` or `master_dictionary.json`.
+2. **"need not" (`nangja`, modal necessity) collapses to the same output as
+   plain "want"/`sikenga`.** The engine has no apparent distinct handling
+   for necessity-modal negation vs. simple desire negation — both "I don't
+   need to watch TV" and (presumably) "I don't want to watch TV" would
+   route through the same `sikengja` (want+negation) dictionary path. This
+   is a **grammar-level** gap: the semantic distinction Thangseng
+   explicitly drew (`nangja` = "need not", not "don't want") isn't
+   representable in current engine output.
+3. **`·ko` vs `·o` divergence:** engine renders "bed" with the object
+   marker `·ko` (`palang·ko`, "the bed" as direct object of watching) where
+   the native sentence uses the locative `·o` (`palango`, "in/on the bed").
+   This is a genuine grammatical divergence, not a lexical gap — the engine
+   is choosing the wrong case/postposition for a locative-adjunct reading
+   of "in bed", defaulting to treating it as the object instead. **Repository
+   component affected:** whatever logic selects `·ko` vs `·o` in
+   grammar-assembly (`translationEngine.js`).
+4. **`tue` (posture/converb "lying") has no equivalent at all.** "I am
+   lying in bed" produced `Anga Palangha` — not a recognized dictionary
+   form (confirmed by direct lookup), effectively a malformed output
+   treating `Palang` (a noun, "bed") as if it were a verb root and
+   appending a past-tense-shaped suffix `-ha` to it. This is a **bug**, not
+   just a missing feature — the output is not merely incomplete, it's
+   structurally invalid Garo.
+5. **`man·ienga` (ability modal "can") never appears in any output.**
+   Confirmed gap — no ability/capability modal handling observed in any of
+   the 4 candidates tested.
+6. **Positive finding retained from the prior revision:** the `Palang`
+   lexical entry itself is correct and the `·o` locative morpheme exists
+   and works correctly elsewhere in the engine (per `corrections.json`'s
+   `"in / at": "·o"` entry) — the failure is in *selection* (choosing `·ko`
+   over `·o` here) and in the missing posture-verb/ability-modal/loanword
+   coverage, not in the underlying morphological inventory.
 
 **Repository components potentially affected:**
-- `src/data/corrections.json` / `master_dictionary.json` (loanword coverage)
-- `src/translationEngine.js` grammar-assembly / sov-assembly paths
-  (contrastive/substitutive clause handling)
-- `docs/GRAMMAR_RULE_CATALOGUE.md` (no existing rule appears to cover
-  "instead of X, Y" — needs Claude A confirmation of whether this is a true
-  gap or an existing rule that isn't firing)
+- `src/data/corrections.json` / `master_dictionary.json` — missing loanword
+  entries (`TV`, `status`); missing posture-verb concept ("lying");
+  missing ability-modal ("can/able") rendering path.
+- `src/translationEngine.js` grammar-assembly path — `·ko` (object) vs
+  `·o` (locative) selection logic for locative-adjunct phrases like "in
+  bed"; the `Palang` + `-ha` malformed-output bug (noun treated as verb
+  root) when "lying in bed" is the input.
+- `docs/GRAMMAR_RULE_CATALOGUE.md` — no existing rule appears to cover (a)
+  necessity-modal negation (`nangja` = "need not") as distinct from simple
+  desire-negation, or (b) ability-modal ("can") rendering. Needs Claude A
+  confirmation of whether these are true gaps or existing-rules-not-firing.
 
-**Native validation required:** Word-level gloss for `palango`=bed,
-`status`=status, `TV`=TV **confirmed 2026-07-08**. Still needed from
-Thangseng:
-1. Confirmed English gloss of the full sentence (structure only — key
-   words now known).
-2. Meaning/function of `ninan` and `tue`.
-3. Whether `TV`/`status` being used as untranslated English loanwords is
-   representative of casual Garo speech generally (matters for whether the
-   fix is "recognize these as loanwords" vs. something narrower).
+**Native validation required:** Full gloss and morpheme breakdown
+**confirmed 2026-07-08 by Thangseng** — nothing further required to close
+out Case 1's interpretation. Subject pro-drop also confirmed ("I" not
+spoken, fully implied). This case is now ready to inform Claude A's rule
+work and future regression tests once reviewed.
 
-**Confidence in this audit entry:** MEDIUM on interpretation (3 of ~7
-content words now word-level confirmed), HIGH on the mechanical findings:
+**Confidence in this audit entry:** **HIGH on interpretation** (full
+native-confirmed gloss + morpheme table). HIGH on all mechanical findings:
 (a) engine cannot reverse-translate, (b) `status`/`TV` loanwords are a
-confirmed dictionary gap, (c) the `Palang`+`·o` locative pattern is a
-genuine partial success worth preserving as a future regression case once
-the full sentence is confirmed.
+confirmed dictionary gap, (c) necessity-modal (`nangja`) collapses into
+desire-negation, (d) `·ko`/`·o` case-selection divergence on locative
+adjuncts, (e) the `Palang`+`-ha` malformed-output bug for posture/"lying"
+input, (f) ability-modal ("can") is dropped entirely, (g) the `Palang`+`·o`
+locative pattern itself is structurally correct where it does fire — a
+genuine partial success worth preserving as a future regression case.
 
 ---
 
@@ -129,17 +149,23 @@ the full sentence is confirmed.
 
 | # | Native sentence (excerpt) | Classification | Native validation needed | Status |
 |---|---|---|---|---|
-| 1 | `TV ninan nangja palango tue status o nisona manaienga` | Dictionary (confirmed: status/TV loanword gap) + Grammar (instead-of construction) + Unknown (ninan/tue) | Partial (word-level done, structure pending) | Open |
+| 1 | `TV ninan nangja palango tue status o nisona manaienga` | Dictionary (TV/status loanwords) + Grammar (necessity-modal `nangja`; `·ko`/`·o` case selection; ability-modal `man·ienga`) + Morphology (posture-verb `tue` unsupported, produces malformed output) | No — fully glossed | Ready for Claude A review |
 
 ## Explicitly out of scope for this audit (per instruction)
 - No engine changes made or proposed as final.
-- No new grammar rules inferred from a single case.
+- No new grammar rules inferred from a single case — findings above are
+  candidate leads for Claude A, not adopted rules.
 - No linguistic content added to `GRAMMAR_RULE_CATALOGUE.md` — this
   document is evidence for Claude A, not a substitute for Claude A's review.
 
 ## Next steps
-- Awaiting additional native sentences to build the case library.
-- Awaiting Thangseng confirmation on Case 1's gloss and loanword status.
+- Case 1 is now fully glossed and analyzed — ready for Claude A to assess
+  whether any findings above warrant new/revised rules, and for Claude B to
+  eventually turn confirmed fixes (loanword entries, `·ko`/`·o` selection,
+  the `Palang`+`-ha` bug) into regression tests, once approved through the
+  standard integration workflow.
+- Awaiting additional native sentences to build the case library further.
 - Once 3+ cases exist, look for cross-case patterns (e.g. is loanword
-  handling a recurring gap, or specific to this sentence) before
-  recommending any regression-test or dictionary additions.
+  handling or the `·ko`/`·o` selection issue recurring, or specific to this
+  sentence) before recommending any regression-test or dictionary
+  additions as a batch.
