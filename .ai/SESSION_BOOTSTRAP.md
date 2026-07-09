@@ -97,15 +97,19 @@ cleared or superseded here._
    authority? if yes, stop, it's Claude A's; (2) does it preserve
    behavior while improving architecture? if yes, proceed; (3) is it
    fully protected by the regression suite? if yes, proceed. Applied
-   successfully to BACKLOG-002 (`IRREGULAR_VERBS` → `src/data/
-   irregular_verbs.json`, done 2026-07-08, 52/52 tests). `RC-003`
-   (posture-verb malformed output, `docs/PENDING_REGRESSION_CASES.md`)
-   is the deliberate counter-example: the symptom is clearly wrong but
-   fixing it requires Claude A's linguistic classification first — do
-   not touch it until that lands, no matter how mechanical the fix
-   might look. Next candidates under this framework: BACKLOG-001's
-   remaining tables (`PURPOSE_MAP`, `PRONOUN_MAP`, `POSSESSIVES`) via the
-   same proven extraction pattern.
+   successfully to BACKLOG-002 (`IRREGULAR_VERBS`) and the rest of
+   BACKLOG-001 (`PURPOSE_MAP`, `PRONOUN_MAP`, `POSSESSIVES` — all 4
+   planned lexical tables now externalized to `src/data/*.json`, done
+   2026-07-08/09, 55/55 tests). `RC-003` and the newly-found
+   `RC-CANDIDATE-006` (stale `search` value in `purpose_map.json`,
+   found while verifying reachability during extraction — preserved,
+   not fixed) are the deliberate counter-examples: symptoms clearly
+   wrong, fixes need Claude A's linguistic classification first — do not
+   touch either no matter how mechanical the fix might look. Next
+   candidate under this framework would be morphology-data
+   externalization (`applyTense`/`applyNegation`), but that's a
+   function, not a flat table, so it needs its own design/scoping first
+   rather than a same-pattern repeat.
 
 ## Integration rule (V1.0 launch sprint, standing as of 2026-07-08)
 Do not implement linguistic changes sourced directly from chat. Any new
@@ -149,6 +153,11 @@ Expected as of `5d29299`: build clean, 51/51 regression tests passing.
   extracted from `translationEngine.js` (BACKLOG-002, 2026-07-08). First
   proof of the extraction pattern for the remaining inline tables
   (`PURPOSE_MAP`, `PRONOUN_MAP`, `POSSESSIVES`).
+- `src/data/purpose_map.json`, `src/data/pronoun_map.json`, `src/data/
+  possessives.json` — extracted 2026-07-09, BACKLOG-001 complete (all 4
+  planned lexical tables now external). Note: `purpose_map.json`'s
+  `search` entry is a known-stale pre-Rule-32 value, preserved as-is —
+  see `RC-CANDIDATE-006` in `PENDING_REGRESSION_CASES.md`.
 - `master_dictionary.json` / `garo_dictionary.json` — bulk lexicon.
 - `src/compiled_dict.json` — generated artifact, do not hand-edit (see
   ARCHITECTURE.md §9 tech debt note).

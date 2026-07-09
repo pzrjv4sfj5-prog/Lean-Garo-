@@ -121,3 +121,46 @@ test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
     assert.ok(v.length > 0, `value for "${k}" should not be empty`);
   }
 });
+
+// --- BACKLOG-001 remaining tables (2026-07-09): PURPOSE_MAP, PRONOUN_MAP,
+// POSSESSIVES extracted from translationEngine.js to src/data/*.json,
+// same pattern as irregular_verbs.json above. ---
+test('purpose_map.json data integrity (BACKLOG-001)', async () => {
+  const { default: purposeMap } = await import('../../src/data/purpose_map.json', { with: { type: 'json' } });
+  assert.equal(Object.keys(purposeMap).length, 37);
+  assert.equal(purposeMap['eat'], 'cha·na');
+  assert.equal(purposeMap['go'], 're·ang·na');
+  assert.equal(purposeMap['begin'], "a'ba·cheng·na");
+  // Deliberately NOT asserting this is "correct" - it's a known-stale
+  // pre-Rule-32 value, preserved as-is per behavior-preservation. See the
+  // extraction-site comment in translationEngine.js and
+  // docs/PENDING_REGRESSION_CASES.md RC-CANDIDATE-006.
+  assert.equal(purposeMap['search'], 'am·e·nik·na');
+  for (const [k, v] of Object.entries(purposeMap)) {
+    assert.equal(typeof v, 'string', `value for "${k}" should be a string`);
+    assert.ok(v.length > 0, `value for "${k}" should not be empty`);
+  }
+});
+
+test('pronoun_map.json data integrity (BACKLOG-001)', async () => {
+  const { default: pronounMap } = await import('../../src/data/pronoun_map.json', { with: { type: 'json' } });
+  assert.equal(Object.keys(pronounMap).length, 10);
+  assert.equal(pronounMap['i'], 'Anga');
+  assert.equal(pronounMap['you'], 'Na·a');
+  assert.equal(pronounMap['they'], 'Uamang');
+  for (const [k, v] of Object.entries(pronounMap)) {
+    assert.equal(typeof v, 'string', `value for "${k}" should be a string`);
+    assert.ok(v.length > 0, `value for "${k}" should not be empty`);
+  }
+});
+
+test('possessives.json data integrity (BACKLOG-001)', async () => {
+  const { default: possessives } = await import('../../src/data/possessives.json', { with: { type: 'json' } });
+  assert.equal(Object.keys(possessives).length, 7);
+  assert.equal(possessives['my'], 'Angni');
+  assert.equal(possessives['their'], 'Uamangni');
+  for (const [k, v] of Object.entries(possessives)) {
+    assert.equal(typeof v, 'string', `value for "${k}" should be a string`);
+    assert.ok(v.length > 0, `value for "${k}" should not be empty`);
+  }
+});

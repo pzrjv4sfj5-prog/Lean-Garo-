@@ -23,6 +23,9 @@ import ALTERNATES_RAW from './compiled_dict_alternates.json' with { type: 'json'
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import correctionsRaw from './data/corrections.json' with { type: 'json' };
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
+import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
+import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
+import POSSESSIVES from './data/possessives.json' with { type: 'json' };
 // Shadow index: apostrophe-stripped keys for typo tolerance (lets go -> let's go)
 const corrections = { ...correctionsRaw };
 for (const [k, v] of Object.entries(correctionsRaw)) {
@@ -95,10 +98,9 @@ const STOP_WORDS = new Set([
 // any UI component — removed rather than fixed-in-place to avoid keeping
 // two suffix tables that could drift apart again.
 
-const PRONOUN_MAP = {
-  'i':'Anga','me':'angko','you':'Na·a','he':'Ua','she':'Ua',
-  'it':'Ua','we':'An·ching','us':'An·ching·ko','they':'Uamang','them':'Uamang·ko',
-};
+// PRONOUN_MAP extracted to src/data/pronoun_map.json (2026-07-09,
+// BACKLOG-001, same pattern as BACKLOG-002/irregular_verbs.json). Data
+// verified byte-for-byte identical before the swap.
 
 // Shared negation suffix logic (was duplicated 3x — main verb loop,
 // assembleSentenceSOV fallback, stopword-stripped step — with drift risk
@@ -162,10 +164,8 @@ function applyTense(verbRoot, tense) {
 // the general dictionary-lookup + applyTense('past') pipeline instead of
 // hardcoding unverified forms.
 
-const POSSESSIVES = {
-  'my':'Angni','your':'Nang·ni','his':'Uni','her':'Uni',
-  'our':'An·chingni','their':'Uamangni','its':'Uni',
-};
+// POSSESSIVES extracted to src/data/possessives.json (2026-07-09,
+// BACKLOG-001). Data verified byte-for-byte identical before the swap.
 
 // PURPOSE_VERBS removed 2026-07-05 — was a duplicate of PURPOSE_MAP (below)
 // with only 15 of its 37 entries and one real conflict ('see': 'nik·a·na'
@@ -463,18 +463,23 @@ function fuzzyMatch(input) {
 
 
 // ── PURPOSE VERB MAP ─────────────────────────────────────────────────────────
-const PURPOSE_MAP = {
-  'see':'nina','meet':'chap·na','buy':'brea·na','sell':'pala·na',
-  'eat':'cha·na','drink':'ringna','study':'pora·na','read':'pora·na',
-  'work':'dakna','pray':'bi·a·na','go':'re·ang·na','come':'re·ba·na',
-  'help':'betoi·na','find':'mia·na','give':'on·a·na','take':'ra·a·na',
-  'speak':'aganna','talk':'aganna','learn':'skia·na','teach':'skia on·na',
-  'cook':'song·a·na','wash':'su·gala·na','sleep':'tusina','play':'kal·a·na',
-  'run':'katna','walk':'re·a·na','write':'sea·na','ask':'sing·a·na',
-  'answer':'a·gan·chak·na','begin':"a'ba·cheng·na",'start':"a'ba·cheng·na",
-  'search':'am·e·nik·na','look':'ni·na','listen':'knachik·na',
-  'visit':'nina re·ang·na','sing':'bit·na','dance':'ruru·na',
-};
+// PURPOSE_MAP extracted to src/data/purpose_map.json (2026-07-09,
+// BACKLOG-001). Data verified byte-for-byte identical before the swap.
+//
+// NOTE (found during extraction, not fixed — linguistic decision, not
+// engineering): 'search':'am·e·nik·na' is the pre-Rule-32 form, which
+// RULE-032/VALIDATION_CORPUS.md's `search`=`Sandia` was supposed to
+// replace. It's still LIVE and reachable here: "i want to search"
+// currently produces "Anga am·e·nik·na sikenga" (verified via translate()
+// before this extraction), even though standalone "search" correctly
+// produces "Sandia" via corrections.json (which this map never reaches
+// for that input, since corrections is checked first in the cascade).
+// This map is only consulted for purpose-clause constructions ("want to
+// X", "go to X", etc.), which is a different code path than the one
+// Rule 32 fixed — so the fix didn't propagate here. Logged as a new
+// candidate regression case (docs/PENDING_REGRESSION_CASES.md) rather
+// than corrected in this commit, since choosing the right purpose-form
+// of "search" is Claude A's call, not mine.
 
 function assembleGrammar(grammar) {
   if (!grammar || !grammar.subject) return null;

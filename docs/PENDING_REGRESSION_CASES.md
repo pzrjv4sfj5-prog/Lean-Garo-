@@ -135,6 +135,46 @@ Each candidate includes: input, current (actual) output, expected output
 
 ---
 
+## RC-CANDIDATE-006 — Purpose-clause form of "search" still uses pre-Rule-32 stale value
+
+- **Input:** `"i want to search"` (also `"i want to X"` for any verb going
+  through the purpose-clause grammar path)
+- **Current output:** `Anga am·e·nik·na sikenga` (grammar-assembly)
+- **Expected output:** Unknown exactly, but almost certainly should use
+  the `Sandia`/`sandi`-root family that RULE-032 established, not
+  `am·e·nik·na` — that value is on record (RULE-033's commit history,
+  `docs/VALIDATION_CORPUS.md`) as the specific contamination Rule 32 was
+  written to retire.
+- **Suspected root cause:** Selection Logic / architectural gap, not a
+  new linguistic question. RULE-032 fixed `search`'s standalone
+  correction-table entry (`corrections.json`: `search` → `Sandia`,
+  confirmed working, `corrections` strategy runs first in the cascade).
+  But `translationEngine.js`'s separate `PURPOSE_MAP` (now `src/data/
+  purpose_map.json` as of the 2026-07-09 BACKLOG-001 extraction) — used
+  only for purpose-clause constructions ("want to X", "go to X") — still
+  has `'search': 'am·e·nik·na'`, the old value. The two tables were never
+  meant to duplicate each other's fix; Rule 32's fix simply didn't
+  propagate to this second table because nothing connects them.
+- **Repository components:** `src/data/purpose_map.json` (the value
+  itself); more importantly, the underlying pattern — any future fix to
+  a `corrections.json` entry should prompt a check of whether the same
+  word also appears in `purpose_map.json` (or other extracted tables)
+  with a stale value, since there's currently no single source of truth
+  connecting them.
+- **Severity:** Medium — produces a specific wrong/contaminated word in a
+  real, reachable construction (not a rare edge case; any "want to
+  search" / "went to search" style sentence hits this).
+- **Status:** Needs Claude A Review (confirm the correct purpose-clause
+  form — likely `sandi·na` or similar, following the existing `-na`
+  purposive pattern used by every other `PURPOSE_MAP` entry, but that's
+  a linguistic call, not an engineering guess)
+- **Discovered:** 2026-07-09, as a side effect of the BACKLOG-001
+  `PURPOSE_MAP` extraction (Claude B verified reachability before
+  extracting, per the "preserve exact behavior" requirement — found this
+  in the process, did not go looking for it separately)
+
+---
+
 ## Summary table
 
 | ID | Weakness | Severity | Status |
@@ -144,6 +184,7 @@ Each candidate includes: input, current (actual) output, expected output
 | RC-CANDIDATE-003 | Posture verb "lying" → malformed/invalid Garo | **High** | Needs Claude A Review |
 | RC-CANDIDATE-004 | Ability modal "can" dropped entirely, systematic | Medium-High | Needs Claude A Review |
 | RC-CANDIDATE-005 | Loanwords (`TV`) silently dropped, no error marker | Medium | Needs Claude A Review |
+| RC-CANDIDATE-006 | Purpose-clause "search" uses pre-Rule-32 stale value (`am·e·nik·na`) | Medium | Needs Claude A Review |
 
 ## Explicitly out of scope
 - No fixes implemented.

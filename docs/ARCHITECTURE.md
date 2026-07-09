@@ -582,20 +582,36 @@ State, Migration Strategy, Priority, Dependencies, Estimated Version.
 
 ### BACKLOG-001 — Staged Linguistic-Knowledge Extraction (umbrella item)
 
+**Status: All four planned table extractions DONE (2026-07-08/09).**
+`IRREGULAR_VERBS` (BACKLOG-002, 49 entries), `PURPOSE_MAP` (37 entries),
+`PRONOUN_MAP` (10 entries), `POSSESSIVES` (7 entries) are all now in
+`src/data/*.json`, loaded via `import ... with { type: 'json' }`, byte-
+for-byte verified against their original inline objects before each
+swap. 55/55 tests passing (52 original + 3 new data-integrity tests).
+
 **Objective:** Reduce coupling in `translationEngine.js` by moving stable
 linguistic knowledge into dedicated, version-controlled resources, so the
 engine becomes orchestration/parsing/pipeline-coordination only.
 
-**Current State:** `translationEngine.js` combines orchestration logic,
-canonical linguistic knowledge (`IRREGULAR_VERBS`, `PURPOSE_MAP`,
-`PRONOUN_MAP`, `POSSESSIVES`), morphology (`applyTense`/`applyNegation`),
-and irregular-verb handling in one file. The first three stages of the
-target pipeline already exist as standalone docs (`docs/
-GRAMMAR_SPECIFICATION.md`, `docs/GRAMMAR_RULE_CATALOGUE.md`, `docs/
-MORPHOLOGY_SPECIFICATION.md`, `docs/VALIDATION_CORPUS.md`, added `937f5d3`)
-but the engine doesn't consume them as data — it's hand-maintained JS that
-merely happens to agree with the docs, and can drift (see `under`/`Ka·ma·o`,
-`edc94b7` — docs described a fix the code didn't yet have).
+**What remains open (not part of this extraction, tracked separately):**
+morphology logic (`applyTense`/`applyNegation`) is still inline JS — it's
+a function, not a lookup table, so it doesn't fit this same mechanical
+pattern and needs its own design (likely a rule-description format the
+function interprets, rather than a flat key-value JSON). Not started.
+
+**Unexpected finding from this work:** extracting `PURPOSE_MAP` required
+verifying every entry was still reachable-and-correct before treating the
+swap as "behavior preserving." That check surfaced a live bug:
+`PURPOSE_MAP['search']` still held the pre-Rule-32 value (`am·e·nik·na`)
+that `corrections.json`'s `search` entry was fixed away from — the fix
+never propagated to this second table, because nothing connects them.
+Preserved as-is per the extraction's behavior-preservation requirement
+(fixing it is a linguistic decision); logged as `RC-CANDIDATE-006` in
+`docs/PENDING_REGRESSION_CASES.md` for Claude A. This is now a standing
+argument for `BACKLOG-006` (dictionary validation / consistency
+checking) — a single source of truth would have caught this
+automatically instead of requiring a human/Claude to notice it while
+doing unrelated refactoring work.
 
 **Desired State:**
 ```
@@ -603,21 +619,19 @@ Grammar Specifications → Grammar Rule Catalogue → Morphology Data
     → Lexical Resources → Validation Corpus → Translation Engine (orchestration only)
 ```
 Linguistic knowledge lives in reusable structured resources; the engine
-executes rules against them rather than embedding them.
+executes rules against them rather than embedding them. The lexical-
+resources layer of this diagram is now materially closer to reality —
+4 of 4 planned lookup tables are external data. Morphology data (the
+next stage up) is not yet externalized.
 
-**Migration Strategy:** incremental, backward-compatible, no large-scale
-rewrite, every step protected by the regression suite (51 cases and
-growing). Proven one table at a time, smallest first (see BACKLOG-002).
-
-**Priority:** Medium — not launch-blocking; higher than "someday" because
-the documentation half of the migration is already done, remaining work
-is mechanical (extraction + loader), not open-ended design.
+**Priority:** Medium — not launch-blocking.
 
 **Dependencies:** none blocking; benefits from BACKLOG-005 (dictionary
-validation) once any table is externalized.
+validation) and now also motivates BACKLOG-006 more directly (see the
+`search` finding above).
 
-**Estimated Version:** V1.1–V1.2 (BACKLOG-002 first increment), full
-pipeline V2.0+.
+**Estimated Version:** V1.1 (lexical resources layer, this work) → V1.2+
+for morphology-data externalization → full pipeline V2.0+.
 
 ---
 

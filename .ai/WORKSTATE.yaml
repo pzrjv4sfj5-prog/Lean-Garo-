@@ -64,15 +64,17 @@ claude_b:
   status: active
   current_task: "Operational sync while Claude A migrates to new chat: repo health, docs sync, bootstrap readiness"
   progress: >-
-    BACKLOG-002 complete (2026-07-08, approved by Project Owner):
-    IRREGULAR_VERBS extracted from a hardcoded JS object in
-    translationEngine.js to src/data/irregular_verbs.json (49 entries,
-    byte-for-byte verified identical before the swap). Added a permanent
-    data-integrity test rather than the originally-planned corpus
-    cross-check, since VALIDATION_CORPUS.md has no standalone single-word
-    rows to check against. 52/52 tests passing (51 original + 1 new),
-    build clean. RC-003 explicitly NOT touched per Project Owner
-    instruction - remains pending Claude A's linguistic classification.
+    BACKLOG-001 fully complete (2026-07-09, same approved decision
+    framework): the 3 remaining tables (PURPOSE_MAP 37 entries,
+    PRONOUN_MAP 10, POSSESSIVES 7) extracted to src/data/*.json, same
+    proven pattern as BACKLOG-002. All byte-for-byte verified before the
+    swap. Found and preserved (not fixed) a live bug while verifying
+    PURPOSE_MAP reachability: 'search' still resolves to the pre-Rule-32
+    stale value 'am·e·nik·na' in purpose-clause constructions ("i want to
+    search") even though corrections.json's standalone 'search' entry is
+    correctly 'Sandia' - the two tables were never connected, so Rule
+    32's fix never propagated. Logged as RC-CANDIDATE-006. 55/55 tests
+    passing (52 + 3 new integrity tests), build clean.
   completed:
     - "Grammar-modeling audit: real past-tense suffix logic, dedup, dead code removal (aeec036)"
     - "docs/GRAMMAR_SPEC.md living rule index created (84bf88a)"
@@ -87,15 +89,17 @@ claude_b:
     - "Applied CLAUDE_A_FINAL_HANDOUT.md via format-patch relay; added Repository access model + Current joint work package to SESSION_BOOTSTRAP.md"
     - "Phase 2: docs/PHASE2_TRANSLATION_INTELLIGENCE.md - decision intelligence, pipeline mapping, reverse-translation readiness, semantic integrity debt"
     - "BACKLOG-002: IRREGULAR_VERBS extracted to src/data/irregular_verbs.json, data-integrity test added, 52/52 passing"
+    - "BACKLOG-001 complete: PURPOSE_MAP/PRONOUN_MAP/POSSESSIVES extracted; RC-CANDIDATE-006 (stale search purpose-form) discovered and logged, not fixed, 55/55 passing"
   next_action: >-
-    BACKLOG-002 done. Per Project Owner's decision framework (linguistic
-    authority? -> stop; behaviour-preserving architecture improvement? ->
-    proceed; regression-suite-protected? -> proceed): next mechanical,
-    non-linguistic candidates from ARCHITECTURE.md §12 are BACKLOG-001's
-    remaining tables (PURPOSE_MAP, PRONOUN_MAP, POSSESSIVES - same proven
-    extraction pattern) - not started, awaiting explicit approval per
-    this session's pattern of one-backlog-item-at-a-time. RC-003 remains
-    pending, not touched, kept as evidence for Claude A. Standing by.
+    BACKLOG-001 and BACKLOG-002 both done - all 4 planned lexical-
+    resource tables externalized. Per the decision framework: next
+    mechanical candidate would be morphology-data externalization
+    (applyTense/applyNegation), but that's a function, not a flat table,
+    and needs its own design first - not a same-pattern repeat, so not
+    starting without explicit scoping/approval. RC-003 and RC-CANDIDATE-
+    006 both remain pending Claude A's linguistic classification, not
+    touched. Standing by for more native sentences or the next approved
+    engineering item.
   do_not_repeat:
     - "Do not re-derive raka (Rule 1) violations from scratch - check docs/ARCHITECTURE.md §9 audit history first"
     - "Do not re-add PROGRESSIVE_MAP/PAST_TO_ROOT - confirmed dead, removed dcf6293"
