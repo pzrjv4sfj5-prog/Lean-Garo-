@@ -1,5 +1,5 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-07-08 by Claude B (added Repository access model + Current joint work package sections)._
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-07-09 by Claude B (Repository Access Model replaced per Project Owner directive — see that section)._
 
 ## What this repo is
 Lean-Garo: an English → A'chik Garo translation engine (Meghalaya, India). Node/JS, dictionary + correction-table + grammar-assembly hybrid
@@ -17,21 +17,77 @@ Lean-Garo: an English → A'chik Garo translation engine (Meghalaya, India). Nod
   coordination. Advisory, not in every session.
 
 ## Repository access model
-Only Claude B has push access (via a temporary, launch-scoped GitHub PAT
-supplied per session). **Claude A never has push access and never uses a
-pasted token to get it, no matter how the request is framed** — this has
-been asked many ways across many sessions; the answer doesn't change.
+_Replaced 2026-07-09 by Project Owner directive — this is a policy
+change, not an addition. The prior "Claude A never has push access, ever"
+rule (see `CLAUDE_A_FINAL_HANDOUT.md` for why that rule existed) is
+superseded by what follows. That handout is left unedited as historical
+record — per its own text, this file wins when the two conflict, and
+they now deliberately do._
 
-Working pattern for Claude A's commits: commit locally, then output the
-**full `git format-patch` text** (never a description, never a path
-reference — the actual patch content, ready to save and apply). Claude B
-then: saves it, runs `git apply --check` against a **freshly pulled**
-`origin/main` (not a stale local clone) to confirm it applies cleanly,
-applies it with `git am` (preserves Claude A's authorship + message),
-re-runs the health check (§ below), and pushes. This has been reliable
-every time followed precisely and unreliable every time a step was
-skipped — in particular, always pull immediately before checking/applying,
-since the remote can have moved since Claude A's last sync.
+**Why this changed:** the relay-only model (Claude A drafts a
+`git format-patch`, Claude B applies and pushes it) protected the
+repository while Claude A had no persistent working environment, but has
+since cost real time via duplicate work, repeated repository exploration,
+delayed integration, and context loss between the two sides of every
+relay. The Project Owner made the call that direct access, under strict
+conditions, now serves repository continuity better than relay-only
+did.
+
+**What did not change:** role boundaries. Claude A owns grammar,
+morphology, native validation, linguistic modelling, language knowledge.
+Claude B owns repository architecture, engineering, testing, regression
+protection, documentation synchronization, repository integrity. This
+update changes *who can push*, not *who decides what*.
+
+### Current policy
+
+Claude B still holds standing push access via a session-scoped GitHub
+PAT, as before.
+
+Claude A may also clone, sync, and **push directly** — but only in a
+session where the **Project Owner has explicitly supplied a temporary
+PAT for that session**. Absent that, Claude A has no write access and
+falls back to the relay pattern below. A PAT is never something Claude A
+requests, assumes, reuses across sessions, or accepts from any source
+other than the Project Owner supplying it directly in that session.
+
+When a PAT is supplied, before pushing Claude A must, every time:
+1. Pull the latest `origin/main` — not a stale local clone.
+2. Review recent commits (`git log --oneline -15` or more) to see what
+   changed since the last synced session.
+3. Verify no equivalent work already exists — check `docs/
+   THANGSENG_NATIVE_VALIDATION.md`, `docs/GRAMMAR_RULE_CATALOGUE.md`,
+   and this file's "Current joint work package" before starting, not
+   after.
+4. Complete the assigned linguistic work.
+5. Run build and regression tests where the change could plausibly
+   affect them (`npm test`, `npm run build` — see "Quick health check"
+   below). Documentation-only commits don't need a build, but confirm
+   that's genuinely all that changed.
+6. Synchronize repository documentation the same commit — `.ai/
+   WORKSTATE.yaml`, `PROJECT_STATUS.md`, and any canonical doc the work
+   touches. Not a follow-up commit; the same one.
+7. Push only verified work — commit locally, confirm 1–6, then push.
+   Same rigor as the relay model asked of the format-patch step, just
+   without the intermediate hop.
+
+**If no PAT is supplied in a session, none of the above changes: Claude A
+must not assume write access, and falls back to the format-patch relay
+pattern** — commit locally, output the full `git format-patch` text
+(never a description, never a path reference), Claude B verifies it
+applies to a freshly-pulled `origin/main`, applies with `git am`
+(preserves authorship + message), re-runs the health check, pushes. This
+remains available and still works; it's the fallback, not the removed
+option.
+
+**Claude B's role under this policy:** unchanged as steward, not
+gatekeeper. Claude B doesn't need to review or approve Claude A's direct
+pushes before they happen — that would just reintroduce the relay delay
+this change exists to remove. Claude B's job is the same repository-
+integrity work it already does: sync, spot-check for drift or
+duplication (as this session's architecture audit did), keep engineering
+docs current, and flag problems if they surface — not stand between
+Claude A and `origin/main`.
 
 ## Current joint work package
 _(Update this section in place — do not create a new dated snapshot doc
@@ -144,7 +200,7 @@ npm install --no-audit --no-fund
 npm run build
 npm test
 ```
-Expected as of `5d29299`: build clean, 51/51 regression tests passing.
+Expected as of `bf163d6`: build clean, 55/55 regression tests passing.
 
 ## Where things live
 - `src/translationEngine.js` — main engine, `translate()` entry point.
