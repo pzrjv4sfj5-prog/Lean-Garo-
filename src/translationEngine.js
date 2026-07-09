@@ -22,6 +22,7 @@ import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
 import ALTERNATES_RAW from './compiled_dict_alternates.json' with { type: 'json' };
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import correctionsRaw from './data/corrections.json' with { type: 'json' };
+import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 // Shadow index: apostrophe-stripped keys for typo tolerance (lets go -> let's go)
 const corrections = { ...correctionsRaw };
 for (const [k, v] of Object.entries(correctionsRaw)) {
@@ -150,36 +151,16 @@ function applyTense(verbRoot, tense) {
   return verbRoot + suffix;
 }
 
-const IRREGULAR_VERBS = {
-  'went':'re·anga','gone':'re·anga','going':'re·angenga',
-  'ate':'cha·aha','eaten':'cha·manaha','eating':'cha·enga',
-  'saw':'nikaha','seen':'nikaha','seeing':'nikenga',
-  'told':'aganaha','said':'aganaha','saying':'aganenga',
-  'came':'re·ba·aha','coming':'re·baenga','want':'sikenga','wants':'sikenga','need':'sikenga',
-  'drank':'ringaha','drinking':'ringenga',
-  'gave':'on·aha','giving':'onenga',
-  'ran':'kataha','running':'katenga',
-  'slept':'tusaha','sleeping':'tusenga',
-  'worked':'dakaha','working':'dakenga',
-  'laughed':'ka·ding·aha','laughing':'ka·dingeng',
-  'washed':'su·gala','washing':'su·galenga',
-  'bought':'brea·aha','buying':'breaenga',
-  'sold':'pala·aha','selling':'palaenga',
-  'heard':'knachik·aha','hearing':'knachik·enga',
-  'thought':'gisik·aha','thinking':'gisik·o nanga',
-  'forgot':'guala','forgetting':'gualenga',
-  'cried':'grap·aha','crying':'grapenga',
-  'walked':'re·aha','walking':'re·enga',
-  'stood':'chadenga','standing':'chadenga',
-  'sat':'asong·aha','sitting':'asong·enga',
-  // Removed 2026-07-05: searched/searching/gossiped/gossiping/conquered/
-  // began/begun/spoke/answered/discovered all used purpose-clause -na
-  // endings (infinitive/purpose marker, e.g. 'a·gan·chak·na') instead of
-  // actual past-tense forms - searched and searching even shared the exact
-  // same (wrong) value. Letting these fall through to the general
-  // dictionary-lookup + applyTense('past') pipeline instead of hardcoding
-  // unverified forms.
-};
+// IRREGULAR_VERBS extracted to src/data/irregular_verbs.json (2026-07-08,
+// BACKLOG-002 first increment — see docs/ARCHITECTURE.md §12). Data is
+// byte-for-byte identical to the previous inline object (verified via
+// diff before the swap); only the storage location changed. Historical
+// note preserved: searched/searching/gossiped/gossiping/conquered/began/
+// begun/spoke/answered/discovered were deliberately excluded on
+// 2026-07-05 — those used purpose-clause -na endings (infinitive/purpose
+// marker) instead of actual past-tense forms, so they fall through to
+// the general dictionary-lookup + applyTense('past') pipeline instead of
+// hardcoding unverified forms.
 
 const POSSESSIVES = {
   'my':'Angni','your':'Nang·ni','his':'Uni','her':'Uni',

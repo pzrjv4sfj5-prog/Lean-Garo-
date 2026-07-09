@@ -92,6 +92,20 @@ cleared or superseded here._
 4. When close to native evidence directly (an active Thangseng relay),
    prefer committing rule + repository artifact in the same pass over
    splitting discovery from documentation across a lossy relay.
+5. **Decision framework for engineering work (Project Owner, 2026-07-08):**
+   before any change, ask in order — (1) does this require linguistic
+   authority? if yes, stop, it's Claude A's; (2) does it preserve
+   behavior while improving architecture? if yes, proceed; (3) is it
+   fully protected by the regression suite? if yes, proceed. Applied
+   successfully to BACKLOG-002 (`IRREGULAR_VERBS` → `src/data/
+   irregular_verbs.json`, done 2026-07-08, 52/52 tests). `RC-003`
+   (posture-verb malformed output, `docs/PENDING_REGRESSION_CASES.md`)
+   is the deliberate counter-example: the symptom is clearly wrong but
+   fixing it requires Claude A's linguistic classification first — do
+   not touch it until that lands, no matter how mechanical the fix
+   might look. Next candidates under this framework: BACKLOG-001's
+   remaining tables (`PURPOSE_MAP`, `PRONOUN_MAP`, `POSSESSIVES`) via the
+   same proven extraction pattern.
 
 ## Integration rule (V1.0 launch sprint, standing as of 2026-07-08)
 Do not implement linguistic changes sourced directly from chat. Any new
@@ -131,6 +145,10 @@ Expected as of `5d29299`: build clean, 51/51 regression tests passing.
 ## Where things live
 - `src/translationEngine.js` — main engine, `translate()` entry point.
 - `src/data/corrections.json` — highest-priority exact-match overrides.
+- `src/data/irregular_verbs.json` — irregular verb forms (49 entries),
+  extracted from `translationEngine.js` (BACKLOG-002, 2026-07-08). First
+  proof of the extraction pattern for the remaining inline tables
+  (`PURPOSE_MAP`, `PRONOUN_MAP`, `POSSESSIVES`).
 - `master_dictionary.json` / `garo_dictionary.json` — bulk lexicon.
 - `src/compiled_dict.json` — generated artifact, do not hand-edit (see
   ARCHITECTURE.md §9 tech debt note).

@@ -623,28 +623,34 @@ pipeline V2.0+.
 
 ### BACKLOG-002 — Extract `IRREGULAR_VERBS` to JSON (first increment)
 
+**Status: DONE (2026-07-08).**
+
 **Objective:** Prove the extraction pattern on the smallest, most
 self-contained inline table before migrating larger ones.
 
-**Current State:** `IRREGULAR_VERBS` (~28 entries) is a hardcoded JS
-object in `translationEngine.js`, checked first by `findVerbForm()`.
+**What was done:** `IRREGULAR_VERBS` (49 entries, not ~28 as originally
+estimated) moved to `src/data/irregular_verbs.json`, loaded via the same
+`import ... with { type: 'json' }` pattern already used for
+`corrections.json`. Data verified byte-for-byte identical against the
+original inline object before the swap (scripted diff, zero mismatches).
+All usage sites were read-only property access, so no call-site changes
+were needed beyond the import itself.
 
-**Desired State:** JSON file matching `corrections.json`'s existing
-pattern, loaded via a small accessor function replacing the direct object
-reference. Validated against `docs/VALIDATION_CORPUS.md` at build time.
+**Deviation from the original migration strategy's step 3:** a dedicated
+build-time check against `VALIDATION_CORPUS.md` rows was planned, but
+the corpus turned out to have zero standalone single-word rows matching
+any irregular-verb key (it's phrase-level, e.g. "he studied" not "went")
+— so a row-by-row cross-check would have added no real protection beyond
+what the full regression suite already confirms end-to-end. Added a
+permanent data-integrity test instead
+(`tests/unit/translationEngine.test.js`, "irregular_verbs.json data
+integrity (BACKLOG-002)") that guards the JSON file's shape and known
+values directly, independent of engine wiring. Full regression suite
+(51 original + 1 new = 52/52) and build both verified before and after.
 
-**Migration Strategy:** (1) export current table to JSON unchanged, (2)
-replace direct references with a loader, (3) add a build-time check that
-every `docs/VALIDATION_CORPUS.md` row referencing an irregular verb
-resolves to the documented Garo form, (4) run full regression suite,
-(5) only then consider it done.
-
-**Priority:** Medium-High (concrete, low-risk, proves the approach).
-
-**Dependencies:** none. This unblocks BACKLOG-001's remaining tables
-(`PURPOSE_MAP`, `PRONOUN_MAP`, `POSSESSIVES`) as repeatable follow-ups.
-
-**Estimated Version:** V1.1.
+**This unblocks BACKLOG-001's remaining tables** (`PURPOSE_MAP`,
+`PRONOUN_MAP`, `POSSESSIVES`) as repeatable follow-ups using the same
+proven pattern — not started, no timeline set.
 
 ---
 

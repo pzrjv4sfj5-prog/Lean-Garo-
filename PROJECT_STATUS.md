@@ -6,7 +6,7 @@
 
 **Repository:** https://github.com/pzrjv4sfj5-prog/Lean-Garo-
 **Live:** https://lean-garo.onrender.com
-**HEAD (as of last Claude B update):** `e0cea23`
+**HEAD (as of last Claude B update):** `3051fe1` (this update lands one commit after)
 **Bootstrap entry point:** `.ai/SESSION_BOOTSTRAP.md` (read first, new sessions) — see its "Current joint work package" section for the live shared task list, added 2026-07-08 alongside `CLAUDE_A_FINAL_HANDOUT.md`.
 
 ---
@@ -127,12 +127,13 @@ review above:
 ## 11. Claude B Status
 
 **Status:** active
-**Last completed:** Production verification audit (2026-07-08) covering lexical consistency of directional words, grammar-tense interaction, morphology/suffix interaction, dictionary integrity, and expanded runtime spot-checks — no hidden regressions found from the `edc94b7`/`1b64b0c`/`5d29299` fixes. Also fixed `under`/`Ka·ma·o` lexical confusion (`edc94b7`) and confirmed `down`=`Ka·ma` consistency (`1b64b0c`) in the prior session. Created `.ai/SESSION_BOOTSTRAP.md` and logged the pending Thangseng locative proposal for Claude A.
-**Testing:** 51/51 regression tests passing, wired into `npm run build`, enforced in CI.
-**Documentation:** `docs/ARCHITECTURE.md`, `docs/GRAMMAR_SPEC.md`, `README.md`, `.ai/SESSION_BOOTSTRAP.md` (new) all current as of `5d29299` + this sync commit.
+**Last completed:** BACKLOG-002 (2026-07-08, approved by Project Owner) — `IRREGULAR_VERBS` extracted from a hardcoded object in `translationEngine.js` to `src/data/irregular_verbs.json` (49 entries, verified byte-for-byte identical before the swap). Added a permanent data-integrity test rather than the originally-planned `VALIDATION_CORPUS.md` cross-check (corpus has no standalone single-word rows to check against — full regression suite already covers this end-to-end). Before that: Phase 2 (`docs/PHASE2_TRANSLATION_INTELLIGENCE.md`, documentation only — decision-intelligence reclassification, future-pipeline mapping, reverse-translation readiness, semantic-integrity debt list); applied `CLAUDE_A_FINAL_HANDOUT.md` via `git format-patch` relay and added "Repository access model" + "Current joint work package" to `SESSION_BOOTSTRAP.md`; Native Sentence Validation Audit Case 1 (native-confirmed gloss + morpheme breakdown) plus `PENDING_VOCABULARY.md`/`PENDING_REGRESSION_CASES.md`.
+**Decision framework in active use (Project Owner, 2026-07-08):** for any candidate change — (1) does it require linguistic authority? if yes, stop; (2) does it preserve behavior while improving architecture? if yes, proceed; (3) is it fully protected by the regression suite? if yes, proceed. `RC-003` (posture-verb malformed-output bug) is explicitly parked under (1) — the *symptom* is clearly wrong, but the *fix* requires Claude A's linguistic classification first, so it stays as evidence, not an engineering task.
+**Testing:** 52/52 regression tests passing (51 original + 1 new data-integrity test), wired into `npm run build`, enforced in CI.
+**Documentation:** `docs/ARCHITECTURE.md` (BACKLOG-002 marked done), `docs/PHASE2_TRANSLATION_INTELLIGENCE.md`, `.ai/SESSION_BOOTSTRAP.md` all current as of this session.
 **Deployment readiness:** build/tests green; live Render deployment auto-deploys from `main` on push (unverified from this sandbox — no Render API access here).
-**Technical debt:** see §8 above.
-**Next action:** none blocking. Standing by for Claude A's next linguistic commit (locative/directional proposal). No engineering changes pending per the chat-proposal integration rule — repository is bootstrap-ready for a fresh session.
+**Technical debt:** see §8 above; `corrections.json`'s exact-match design newly documented as semantic-integrity debt in `docs/PHASE2_TRANSLATION_INTELLIGENCE.md` §P3.
+**Next action:** BACKLOG-002 done. Next mechanical, non-linguistic candidates: BACKLOG-001's remaining tables (`PURPOSE_MAP`, `PRONOUN_MAP`, `POSSESSIVES`) via the same proven extraction pattern — not started, awaiting explicit approval per this session's one-item-at-a-time cadence. `RC-003` remains pending, untouched, kept as evidence for Claude A.
 
 ## 12. ChatGPT Reviews
 *(ChatGPT — placeholder, not yet populated)*

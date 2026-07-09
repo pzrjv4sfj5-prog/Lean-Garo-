@@ -102,3 +102,22 @@ for (const c of REGRESSION_CASES) {
     if (c.expectGaro) assert.equal(r.garo, c.expectGaro);
   });
 }
+
+// --- BACKLOG-002 (2026-07-08): IRREGULAR_VERBS extracted from a hardcoded
+// JS object to src/data/irregular_verbs.json. This test guards the data
+// itself (count + a spot-check of known values) independent of engine
+// wiring, which the REGRESSION_CASES above already exercise end-to-end.
+// Protects against accidental corruption of the JSON file specifically. ---
+test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
+  const { default: irregularVerbs } = await import('../../src/data/irregular_verbs.json', { with: { type: 'json' } });
+  assert.equal(Object.keys(irregularVerbs).length, 49, 'entry count should match the extraction (49, verified byte-for-byte against the pre-extraction inline object)');
+  assert.equal(irregularVerbs['went'], 're·anga');
+  assert.equal(irregularVerbs['ate'], 'cha·aha');
+  assert.equal(irregularVerbs['eaten'], 'cha·manaha');
+  assert.equal(irregularVerbs['want'], 'sikenga');
+  assert.equal(irregularVerbs['sitting'], 'asong·enga');
+  for (const [k, v] of Object.entries(irregularVerbs)) {
+    assert.equal(typeof v, 'string', `value for "${k}" should be a string`);
+    assert.ok(v.length > 0, `value for "${k}" should not be empty`);
+  }
+});

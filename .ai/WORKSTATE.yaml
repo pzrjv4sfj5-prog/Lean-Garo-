@@ -64,16 +64,15 @@ claude_b:
   status: active
   current_task: "Operational sync while Claude A migrates to new chat: repo health, docs sync, bootstrap readiness"
   progress: >-
-    Phase 2 (Translation Intelligence & Future Vision, Project Owner
-    directive 2026-07-08) complete: docs/PHASE2_TRANSLATION_
-    INTELLIGENCE.md - reclassified the 5 pending regression candidates
-    against a Vocabulary/Grammar/Morphology/Context/Parser/Selection
-    Logic/Rendering taxonomy (found only 1 of 5 is actually a vocabulary
-    gap), mapped translate()'s 11-strategy cascade against the future
-    8-stage semantic pipeline, reassessed reverse-translation readiness
-    per-component, and documented corrections.json's exact-match design
-    as explicit semantic-integrity technical debt. Documentation only -
-    zero engine/data changes.
+    BACKLOG-002 complete (2026-07-08, approved by Project Owner):
+    IRREGULAR_VERBS extracted from a hardcoded JS object in
+    translationEngine.js to src/data/irregular_verbs.json (49 entries,
+    byte-for-byte verified identical before the swap). Added a permanent
+    data-integrity test rather than the originally-planned corpus
+    cross-check, since VALIDATION_CORPUS.md has no standalone single-word
+    rows to check against. 52/52 tests passing (51 original + 1 new),
+    build clean. RC-003 explicitly NOT touched per Project Owner
+    instruction - remains pending Claude A's linguistic classification.
   completed:
     - "Grammar-modeling audit: real past-tense suffix logic, dedup, dead code removal (aeec036)"
     - "docs/GRAMMAR_SPEC.md living rule index created (84bf88a)"
@@ -87,10 +86,16 @@ claude_b:
     - "Native Sentence Validation Audit Case 1 (native-confirmed gloss + morpheme breakdown), PENDING_VOCABULARY.md, PENDING_REGRESSION_CASES.md"
     - "Applied CLAUDE_A_FINAL_HANDOUT.md via format-patch relay; added Repository access model + Current joint work package to SESSION_BOOTSTRAP.md"
     - "Phase 2: docs/PHASE2_TRANSLATION_INTELLIGENCE.md - decision intelligence, pipeline mapping, reverse-translation readiness, semantic integrity debt"
+    - "BACKLOG-002: IRREGULAR_VERBS extracted to src/data/irregular_verbs.json, data-integrity test added, 52/52 passing"
   next_action: >-
-    Phase 2 complete, documentation only. See SESSION_BOOTSTRAP.md
-    "Current joint work package" for standing priorities. Standing by for
-    more native sentences and for Claude A's review cycle.
+    BACKLOG-002 done. Per Project Owner's decision framework (linguistic
+    authority? -> stop; behaviour-preserving architecture improvement? ->
+    proceed; regression-suite-protected? -> proceed): next mechanical,
+    non-linguistic candidates from ARCHITECTURE.md §12 are BACKLOG-001's
+    remaining tables (PURPOSE_MAP, PRONOUN_MAP, POSSESSIVES - same proven
+    extraction pattern) - not started, awaiting explicit approval per
+    this session's pattern of one-backlog-item-at-a-time. RC-003 remains
+    pending, not touched, kept as evidence for Claude A. Standing by.
   do_not_repeat:
     - "Do not re-derive raka (Rule 1) violations from scratch - check docs/ARCHITECTURE.md §9 audit history first"
     - "Do not re-add PROGRESSIVE_MAP/PAST_TO_ROOT - confirmed dead, removed dcf6293"
