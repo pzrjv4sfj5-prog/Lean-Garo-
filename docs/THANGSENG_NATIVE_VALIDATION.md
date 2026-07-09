@@ -4,10 +4,10 @@ per-question `PENDING_NATIVE_QUESTIONS_*` files; add new questions here
 and update in place as answers arrive._
 
 ## Minimal question set (for relay — smallest possible set)
-If only a short list can be relayed to Thangseng at once, these two are
+If only a short list can be relayed to Thangseng at once, these three are
 the highest-value, most self-contained asks. Everything else in this
-document either depends on these two, is lower priority, or (NV-006) may
-not need Thangseng at all.
+document either depends on these, is lower priority, or (NV-006) may not
+need Thangseng at all.
 
 1. **(NV-001, Rule 30)** Does "go" change form depending on whether a
    destination is mentioned? Test pairs: "I am not going" vs. "I am not
@@ -16,12 +16,17 @@ not need Thangseng at all.
 2. **(NV-002, Rule 31)** After "happy"/"good"/"tired" as a predicate, is
    `ong·a` required, optional, or specific to certain persons (I/you/
    he-she)? How does it relate to `daka`?
+3. **(NV-010, added 2026-07-08)** When you say "want to drink"/"want to
+   speak"/"want to study," is there a `·` in the verb, even though there
+   isn't one in "I drank"/"I spoke"/"I was studying"? One yes/no-style
+   answer resolves 3-4 data points at once — cheap to bundle with the
+   above two.
 
 NV-003/004 (locative set) and NV-005/007/008 (necessity-modal, posture
 verb, ability-modal) are real but lower-priority — bundle them into a
-second relay only after NV-001/002 land, to avoid overloading a single
-native-validation session. NV-006 and NV-009 do not need to be asked at
-all yet (see their entries below).
+second relay only after this first batch lands, to avoid overloading a
+single native-validation session. NV-006 and NV-009 do not need to be
+asked at all yet (see their entries below).
 
 ## How to use this document
 Each question has a stable ID (`NV-###`). When a native answer arrives —
@@ -320,6 +325,17 @@ sentence is suggestive, not sufficient for a new rule (see the "Native
 Sentence Validation Audit" review below — this is flagged as a candidate
 lead, not yet promoted).
 
+**Reconciled 2026-07-08 with `docs/PENDING_REGRESSION_CASES.md`
+RC-CANDIDATE-001** (Claude B's independently-collected evidence, same
+underlying finding — cross-checked to avoid duplication per the joint
+work package): isolated engine test confirms "I don't need to watch TV"
+→ `Anga sikengja` (confidence 0.82), same output path as plain desire-
+negation, confirming the collapse is systematic and not an artifact of
+the compound sentence. Severity: Medium (produces a plausible but
+imprecise output, not a crash). Still needs the same native validation
+described above — RC-CANDIDATE-001 doesn't resolve NV-005, it sharpens
+the evidence for it.
+
 ---
 
 ## NV-006 — `·ko` (object) vs. `·o` (locative) selection on locative adjuncts
@@ -378,6 +394,23 @@ genuine linguistic rule turns out to be needed, not just a bug fix).
 native-validation-first; Claude B should investigate before this
 escalates to a Thangseng question).
 
+**Reconciled 2026-07-08 with `docs/PENDING_REGRESSION_CASES.md`
+RC-CANDIDATE-002** — this correction supersedes my original hypotheses
+above, which were based on less complete evidence. Claude B's isolated
+testing found **two different wrong paths**, not one: in the full
+compound sentence, "in bed" gets the `·ko` object marker (matches my
+original finding); but tested in isolation, "in bed" alone produces bare
+`Palang` via a `stopword-stripped` method (confidence 0.88) — "in" is
+being discarded as a stopword rather than triggering the `·o` locative
+at all. So Hypothesis 1 (an engineering routing bug in the
+preposition-to-suffix mapping) is now much better supported than
+Hypothesis 2 (an English-side parse ambiguity) — two independent wrong
+outputs for the same construction points to a systematic routing issue,
+not a one-off misparse. Confirmed as Claude B's assessment too: "this is
+a routing/selection bug, not a missing morpheme." Status unchanged
+(engineering-first), but confidence in that classification is now
+higher.
+
 ---
 
 ## NV-007 — Posture verb `tue` ("lying") — malformed output, missing coverage
@@ -431,6 +464,19 @@ rule), future Verb Family entry.
 the malformed-output bug itself does not need to wait for that — flagged
 to Claude B as a standalone engineering fix.
 
+**Reconciled 2026-07-08 with `docs/PENDING_REGRESSION_CASES.md`
+RC-CANDIDATE-003** — additional confirmed detail: "I am lying down"
+(without "in bed") produces a *different* malformed output, `Anga
+Ka·ma` — misparsed as directional "down," incorrectly reusing the
+unrelated `down = Ka·ma` mapping from RULE-033. So `tue` currently fails
+in two distinct ways depending on context: bare "lying down" collides
+with an unrelated existing correction (RULE-033's `down`), while "lying
+in bed" produces the noun-treated-as-verb-root error already documented.
+Claude B flags this as the single highest-severity item in the current
+evidence queue since it's the only one producing structurally invalid
+Garo rather than an incomplete-but-valid output. Confirms my original
+priority assessment.
+
 ---
 
 ## NV-008 — Ability modal `man·ienga` ("can/able") — entirely dropped
@@ -482,6 +528,27 @@ continuous-aspect productivity confirmed).
 
 **Status:** OPEN — Needs Native Validation (direct).
 
+**Reconciled 2026-07-08 with `docs/PENDING_REGRESSION_CASES.md`
+RC-CANDIDATE-004** — important refinement: `master_dictionary.json`
+**already contains** `"can": "man·a"`. This changes the diagnosis from
+"the engine has no ability-modal vocabulary" to "the vocabulary exists
+but the grammar-assembly path never invokes it for English 'can + verb'
+constructions" — a wiring gap, not a missing-word gap. Confirmed
+systematic across 3 independent isolated tests ("I can watch," "I can
+eat," "I can watch status lying in bed" — all identical to their
+non-modal counterparts). This changes NV-008's own "Repository
+Components Impacted" note: `src/translationEngine.js`'s grammar-assembly
+modal-detection logic is now the more likely fix location than adding
+new dictionary content, though the underlying morphological question
+(does `man·` + continuous-aspect productively combine with arbitrary
+verbs, per my original hypothesis 1) is still open and still needs
+Thangseng. **Additional caveat found during this reconciliation:**
+`master_dictionary.json`'s own entry for `man·a`/"can" carries a
+`notes: "UNVERIFIED/HIGH"` flag internally — even this dictionary entry
+hasn't cleared the project's normal confirmation bar. The fix isn't
+simply "wire up an already-confirmed entry" — the entry itself should
+get direct Thangseng confirmation alongside the ability-modal question.
+
 ---
 
 ## NV-009 — `TV` / `status` loanword coverage
@@ -518,6 +585,180 @@ is confirmed.
 **Status:** OPEN — Needs Additional Evidence (low priority, P2/P4
 territory per the priority framework — vocabulary expansion, not a
 grammar correctness issue).
+
+**Reconciled 2026-07-08 with `docs/PENDING_REGRESSION_CASES.md`
+RC-CANDIDATE-005** — one upgrade to this item's severity assessment:
+Claude B's isolated testing found the loanword isn't just missing, it's
+**silently dropped with no error marker** ("I watch TV" → `Anga
+ni·rik·a`, `TV` vanishes with no `[UNKNOWN]` flag the way full-sentence
+passthrough gets). Silent data loss is a worse failure mode than a
+visible gap. Doesn't change the P2/P4 priority classification (still
+vocabulary, not grammar), but the fix should include a passthrough/flag
+mechanism for unrecognized loanwords generally, not just a `TV`/`status`
+dictionary entry — Claude B frames this as a policy decision (individual
+entries vs. systematic pass-through), which is the right level for me to
+weigh in on once this priority comes up.
+
+---
+
+## NV-010 — Raka-Inconsistency Cluster in `-na` Infinitive Forms
+
+**Topic:** Whether the `-na` infinitive suffix (used in the `[verb]-na
+sikenga` = "want to [verb]" construction) genuinely triggers raka on
+certain roots that are raka-free everywhere else, or whether this is a
+transcription-error cluster in `corrections.json`.
+
+**Background:** Surfaced during the Canonical Verb Inventory pass
+(2026-07-08, see `docs/VERB_INVENTORY.md`). RULE-001 states raka lives in
+the root only, never the suffix, and is either always present or always
+absent for a given root. Four roots violate this as currently recorded:
+`ring` (drink), `agan` (speak), `porai`/`pora` (study), and `tusi`
+(sleep, one form) are all raka-free in `THANGSENG_RULES_LOOKUP.md`'s
+audited table and in most `corrections.json` entries, but show raka in
+their `-na` infinitive form specifically (`ring·na`, `a·gan·na`,
+`pora·na`, `tus·aha`).
+
+**Current Repository Evidence:** `ringa`/`ring·aha`(noun context, not
+verb) vs. `ring·na` in `'i want to drink' -> 'Anga ring·na sikenga'`;
+`agana`/`aganaha` vs. `a·gan·na` in `'i want to speak' -> 'Anga a·gan·na
+sikenga'`; `poraienga`/`poraienga chim` vs. `pora·na` in `'i want to
+study' -> 'Anga pora·na sikenga'`; `tusia`/`tusienga` vs. `tus·aha`
+(this last one isn't even in the `-na` construction, so it may be a
+narrower, separate transcription issue).
+
+**Existing Grammar Rules:** RULE-001 (Raka Locality) — this cluster is
+either a genuine, previously-undocumented exception to RULE-001, or four
+separate data-entry errors that happen to share a pattern.
+
+**Existing Morphology:** No account yet of `-na` (infinitive) triggering
+phonological changes; every other confirmed suffix in
+`MORPHOLOGY_SPECIFICATION.md` §3 is raka-neutral.
+
+**Candidate Hypotheses:**
+1. `-na` genuinely triggers raka insertion on certain root shapes (a real
+   phonological rule, would be a genuine RULE-001 refinement/exception,
+   not a violation).
+2. These four entries in `corrections.json` are transcription errors
+   from a different, less rigorously-audited data-entry pass than the
+   one that produced `THANGSENG_RULES_LOOKUP.md`'s raka table.
+3. Mixed — some of the four are real, some are errors, and they only
+   look like one pattern because they were found together in this pass.
+
+**Required Native Validation:** Ask Thangseng directly: "When you say
+'want to drink' / 'want to speak' / 'want to study,' is there a `·` in
+the verb, even though there isn't one when you just say 'I drank' /
+'I spoke' / 'I was studying'?" A single confirmatory or disconfirmatory
+answer here would resolve all three cases at once, since they share the
+same construction — an efficient question relative to its impact.
+
+**Why the Answer Matters:** If hypothesis 1 is correct, this is a real
+gap in RULE-001 affecting an unknown number of other roots beyond the
+three found here — worth knowing before more infinitive-based
+constructions get built. If hypothesis 2 is correct, `corrections.json`
+has at least 3-4 wrong entries currently in production.
+
+**Repository Components Impacted:** `src/data/corrections.json` (3-4
+entries, possibly wrong), `docs/GRAMMAR_RULE_CATALOGUE.md` RULE-001
+(would need a documented exception if hypothesis 1 confirmed),
+`docs/MORPHOLOGY_SPECIFICATION.md` (infinitive suffix behavior).
+
+**Status:** OPEN — Needs Native Validation (direct). Newly added
+2026-07-08. Efficient to bundle with NV-001/NV-002 in a future relay
+since it's a single yes/no-style question with high leverage (resolves
+3-4 data points at once).
+
+---
+
+## NV-011 — `nina` vs. `Nia`/`nika`: same root or different form?
+
+**Topic:** Whether `nina` (from the Case 1 audit, "to watch") is a
+conjugated/infinitive form of the already-confirmed `Nia`/`nika` root
+("see/look/watch"), or a distinct item.
+
+**Background:** Surfaced in `docs/PENDING_VOCABULARY.md` (Claude B).
+`master_dictionary.json` has `Nia` = "see/look/watch" (3 entries,
+general category). `THANGSENG_RULES_LOOKUP.md` separately confirms
+`nika` (lowercase, with raka) = "see," raka-free, via `nikaha` ("seen").
+`docs/VERB_INVENTORY.md` Part 2 already treats these as one root
+(`nika`/`ni`). The Case 1 audit's `nina` could be a third spelling of
+the same thing, or a genuinely different infinitive form.
+
+**Current Repository Evidence:** `Nia` (master_dictionary.json, no
+raka shown), `nika`/`nikaha` (THANGSENG_RULES_LOOKUP.md, explicitly
+raka-free), `nina` (Case 1 sentence, segmentation itself unconfirmed —
+could be `ni`+`na` infinitive, or a fixed form). No sentence directly
+contrasts two of these forms to test whether they're interchangeable.
+
+**Existing Grammar Rules:** None specifically; would connect to the
+`-na` infinitive suffix already used productively elsewhere (`cha·na`,
+`dakna`, etc. — see `docs/verbs/CHA_EAT.md`).
+
+**Candidate Hypotheses:**
+1. One root, multiple attested spellings across different documentation
+   passes (`Nia`/`nika`/`ni`) with `nina` = `ni` + `-na` infinitive,
+   entirely regular.
+2. `nina` and `Nia`/`nika` are related but distinct (e.g. `nina` might
+   carry a narrower "watch [media]" sense vs. general "see/look").
+
+**Required Native Validation:** Confirm whether "I see it" / "I want to
+watch it" / "I am watching" all use the same root with regular suffixes,
+or whether "watch" (especially media-watching, as in the TV context)
+is lexically distinct from general "see/look."
+
+**Why the Answer Matters:** Affects whether this needs one clean verb
+page or two separate ones, and whether the engine's existing `Nia`-based
+"watch TV" handling is using the right root at all.
+
+**Repository Components Impacted:** `docs/VERB_INVENTORY.md`,
+`docs/GRAMMAR_MORPHOLOGY_CONFIDENCE_REVIEW.md` (currently lists
+`nika`/`ni` as Medium confidence partly because of this open question).
+
+**Status:** OPEN — Needs Native Validation (direct), Low priority
+(doesn't block any P0 item, mainly a documentation-cleanliness question).
+
+---
+
+## NV-012 — `nisona` vs. `nina`: selection rule between two "watch"-adjacent verbs
+
+**Topic:** When does a speaker choose `nisona` ("to watch(ingly wait),"
+per Claude B's gloss — can also mean "wait expectantly for someone
+arriving") over `nina`/`Nia` (general "watch/see/look")?
+
+**Background:** Surfaced in `docs/PENDING_VOCABULARY.md` (Claude B),
+same Case 1 sentence. Both appear in the same sentence in different
+clauses (`TV ninan nangja ... status o nisona manaienga`), suggesting
+they're not free variants of each other within at least this one
+speaker's usage — but the semantic boundary isn't mapped.
+
+**Current Repository Evidence:** One confirmed instance of `nisona`
+used specifically for "watching a status/social-media post" rather than
+"watching TV" (`ninan`) in the same sentence — a real, if thin, contrast.
+Possible morphological link to the `-na`/purposive-suffix family already
+in `MORPHOLOGY_SPECIFICATION.md` §3 (Claude B's own note, worth
+checking rather than treating `nisona` as an unrelated new root).
+
+**Candidate Hypotheses:**
+1. `nisona` is reserved for lower-engagement/ongoing "watching for/
+   awaiting" senses (checking a status, waiting for someone) while
+   `nina` is for direct, engaged watching (TV) — the one contrast
+   available is consistent with this but doesn't prove it.
+2. Free variation with no strict rule; the speaker's choice in this one
+   sentence was stylistic, not governed by a selection rule.
+
+**Required Native Validation:** Minimal pairs needed — e.g. "I am
+watching TV" with `nisona` substituted for `nina`, to see if it sounds
+wrong, and vice versa with the status-watching clause.
+
+**Why the Answer Matters:** Lower priority than NV-005/007/008 (this is
+vocabulary/lexical-selection, not a grammar correctness bug), but worth
+capturing while the single data point exists rather than losing the
+observation.
+
+**Repository Components Impacted:** `docs/VERB_INVENTORY.md` (would add
+`nisona` as a new entry once resolved), `docs/PENDING_VOCABULARY.md`
+(Claude B's source entry).
+
+**Status:** OPEN — Needs Native Validation (direct), Low priority.
 
 ---
 

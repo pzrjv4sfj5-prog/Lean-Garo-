@@ -1,7 +1,7 @@
 repository:
-  head: bf163d6
+  head: bf163d6 (this commit lands one commit after, on top of the governance update 724533c)
   last_updated: "2026-07-09"
-  test_status: "55/55 regression tests passing, build clean"
+  test_status: "55/55 regression tests passing, build clean (docs-only commit, unaffected)"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -32,29 +32,34 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Completed the native validation cycle maturity pass (Project Owner
-    directive 2026-07-08): trimmed NV question set to a minimal
-    high-value list, ran a Native Sentence Coverage Audit against
-    Validation Corpus, and produced a Grammar + Morphology Confidence
-    Review classifying every rule/morpheme. Added missing RULE-030
-    catalogue entry (documentation gap - existed in WORKSTATE/
-    THANGSENG_RULES_LOOKUP narrative but never got a formal catalogue
-    entry, unlike RULE-031). Verb Family Project intentionally NOT
-    started yet per Project Owner sequencing.
+    Adopted the repository access model change confirmed via
+    CLAUDE_A_FINAL_HANDOUT.md and SESSION_BOOTSTRAP.md: Claude A never
+    pushes, commits locally and outputs git format-patch for Claude B to
+    apply. Completed Canonical Verb Inventory (docs/VERB_INVENTORY.md) +
+    first canonical verb page (docs/verbs/CHA_EAT.md, template
+    exemplar). Reconciled NV-005..009 with Claude B's independently-
+    collected PENDING_VOCABULARY.md/PENDING_REGRESSION_CASES.md
+    (RC-CANDIDATE-001..005) in place, no duplication. Added NV-011
+    (nina vs Nia/nika) and NV-012 (nisona selection) from Claude B's
+    queue, plus NV-010 (raka-inconsistency cluster in -na infinitives,
+    found independently during the verb inventory pass).
   progress: >-
-    docs/THANGSENG_NATIVE_VALIDATION.md: added "Minimal question set"
-    section, NV-001/NV-002 identified as the two highest-value,
-    self-contained asks. docs/VALIDATION_CORPUS_COVERAGE_AUDIT.md (new):
-    exact per-rule corpus example counts, flags RULE-026 (0 examples
-    despite Medium-High confidence claim) and RULE-007/G2/G7/G-classifier
-    (evidence exists, no formal catalogue entry) as documentation gaps,
-    not evidence gaps. docs/GRAMMAR_MORPHOLOGY_CONFIDENCE_REVIEW.md
-    (new): every catalogue rule and every morphology item classified
-    High/Medium/Low/Native Validation Required with reasoning.
+    Verb inventory surfaced a real, previously-undetected finding: a
+    raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
+    show unexpected raka in the sikenga "want to X" construction despite
+    being raka-free everywhere else) - logged as NV-010, bundled into
+    the minimal relay set alongside NV-001/002. cha· (eat) documented as
+    the template canonical verb page - clean paradigm, 24
+    corrections.json entries, surfaces 2 pure documentation gaps (-jok
+    and -china missing from morphology suffix table). Cross-checked
+    Claude B's RC-CANDIDATE-001..005 against my existing NV-005..009 -
+    each NV updated in place with the richer isolated-test evidence
+    rather than duplicated as a separate item.
   completed:
     - "docs/GRAMMAR_SPECIFICATION.md, MORPHOLOGY_SPECIFICATION.md, GRAMMAR_RULE_CATALOGUE.md (RULE-001..RULE-035, now including RULE-030), VALIDATION_CORPUS.md - core V1.0 linguistic deliverables"
     - "2026-07-08: RULE-034/035 locative review; docs/THANGSENG_NATIVE_VALIDATION.md created (NV-001..009); Native Sentence Validation Audit Case 1 reviewed, RULE-004 and Grammar Spec §6 strengthened"
     - "2026-07-08: Native validation cycle maturity pass - minimal question set, Coverage Audit, Confidence Review, RULE-030 catalogue gap fixed"
+    - "2026-07-08: docs/VERB_INVENTORY.md (P0 verb inventory) + docs/verbs/CHA_EAT.md (P1 template canonical page) + NV-005..009 reconciled with Claude B's parallel evidence (RC-CANDIDATE-001..005) + NV-010/011/012 added"
   next_action: >-
     See SESSION_BOOTSTRAP.md "Current joint work package" for the
     authoritative live list (added 2026-07-08 alongside the final
