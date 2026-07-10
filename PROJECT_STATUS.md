@@ -6,7 +6,7 @@
 
 **Repository:** https://github.com/pzrjv4sfj5-prog/Lean-Garo-
 **Live:** https://lean-garo.onrender.com
-**HEAD (as of last Claude B update):** `bf163d6`
+**HEAD (as of last Claude B update):** `6cf63d0` (Claude A's first direct push under the new governance model; this update lands one commit after)
 **Bootstrap entry point:** `.ai/SESSION_BOOTSTRAP.md` (read first, new sessions) — see its "Current joint work package" section for the live shared task list. **Governance note:** the Repository Access Model changed 2026-07-09 (Project Owner directive) — full policy lives in `SESSION_BOOTSTRAP.md`, not here, per this file's own scope above.
 
 ---
@@ -127,13 +127,13 @@ review above:
 ## 11. Claude B Status
 
 **Status:** active
-**Last completed:** BACKLOG-001 fully complete (2026-07-09) — the 3 remaining lexical tables (`PURPOSE_MAP` 37 entries, `PRONOUN_MAP` 10, `POSSESSIVES` 7) extracted to `src/data/*.json`, same pattern as BACKLOG-002, byte-for-byte verified before each swap. While verifying `PURPOSE_MAP` reachability, found a live bug: `search` in purpose-clause constructions ("i want to search") still resolves to the pre-Rule-32 stale value `am·e·nik·na`, even though the standalone `corrections.json` entry is correctly `Sandia` — the two tables were never connected, so the earlier fix never propagated. Preserved as-is (fixing it is Claude A's call) and logged as `RC-CANDIDATE-006`. Before that: BACKLOG-002 (`IRREGULAR_VERBS` extraction, 49 entries) and Phase 2 documentation (`docs/PHASE2_TRANSLATION_INTELLIGENCE.md`).
-**Decision framework in active use (Project Owner, 2026-07-08):** for any candidate change — (1) does it require linguistic authority? if yes, stop; (2) does it preserve behavior while improving architecture? if yes, proceed; (3) is it fully protected by the regression suite? if yes, proceed. Both `RC-003` and the newly-found `RC-CANDIDATE-006` are parked under (1) — clearly wrong output, but the correct fix is Claude A's linguistic call, not mine.
-**Testing:** 55/55 regression tests passing (52 prior + 3 new data-integrity tests for the newly extracted tables), wired into `npm run build`, enforced in CI.
-**Documentation:** `docs/ARCHITECTURE.md` (BACKLOG-001 fully marked done), `docs/PENDING_REGRESSION_CASES.md` (RC-CANDIDATE-006 added), `.ai/SESSION_BOOTSTRAP.md` all current as of this session.
+**Last completed:** BACKLOG-006 first increment (2026-07-09) — `repository-intelligence.js` built as reusable Repository Intelligence infrastructure (design rationale: `docs/REPOSITORY_INTELLIGENCE.md`), wired into `npm run build` plus a dedicated regression test. Check A (raka locality) is deliberately **report-only** after its first run showed most of 18 hits were the lexical-split false-positive trap, not real violations — routed to Claude A as `RC-CANDIDATE-009` rather than asserted. Check B (cross-table consistency) **does** gate the build and found 11 new findings on its first real run beyond the already-known `search` issue, all properly logged (`RC-CANDIDATE-007`, `008`) before being allowlisted. Before that: BACKLOG-001 (`PURPOSE_MAP`/`PRONOUN_MAP`/`POSSESSIVES` extraction) and BACKLOG-002 (`IRREGULAR_VERBS`).
+**Decision framework in active use (Project Owner, 2026-07-08):** for any candidate change — (1) linguistic authority required? stop; (2) preserves behavior while improving architecture? proceed; (3) fully protected by the regression suite? proceed. Applied to the validator's own design too: Check A's report-only framing exists *because* asserting those findings as bugs would itself have required linguistic authority (word-sense disambiguation) Claude B doesn't have.
+**Testing:** 56/56 regression tests passing (55 prior + 1 new smoke test for the validator itself), wired into `npm run build`, enforced in CI.
+**Documentation:** `docs/ARCHITECTURE.md` (BACKLOG-006 marked done), `docs/REPOSITORY_INTELLIGENCE.md` (new — design rationale), `docs/PENDING_REGRESSION_CASES.md` (RC-CANDIDATE-007/008/009 added) all current as of this session.
 **Deployment readiness:** build/tests green; live Render deployment auto-deploys from `main` on push (unverified from this sandbox — no Render API access here).
-**Technical debt:** see §8 above; the `search` propagation gap (RC-CANDIDATE-006) is now cited in `ARCHITECTURE.md`'s BACKLOG-001 as a concrete argument for BACKLOG-006 (dictionary validation/consistency checking) — a single source of truth would have caught this automatically.
-**Next action:** all 4 planned lexical-resource tables now externalized (BACKLOG-001 + BACKLOG-002 done). Morphology-data externalization (`applyTense`/`applyNegation`) is the next item in that direction but is a function, not a flat table — needs its own design before it fits this same mechanical pattern, so not starting without explicit scoping. `RC-003` and `RC-CANDIDATE-006` both remain pending Claude A.
+**Technical debt:** see §8 above; `docs/REPOSITORY_INTELLIGENCE.md` documents its own gaps explicitly (large-dictionary coverage, reverse raka direction) rather than leaving them silent.
+**Next action:** `RC-003` and `RC-CANDIDATE-006` through `009` all remain pending Claude A's linguistic classification — none touched. Extending `repository-intelligence.js` to `master_dictionary.json`/`garo_dictionary.json` is a documented future opportunity, not started (needs its own design pass, per the tool's own stated limitations).
 
 ## 12. ChatGPT Reviews
 *(ChatGPT — placeholder, not yet populated)*

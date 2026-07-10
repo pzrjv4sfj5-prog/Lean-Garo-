@@ -173,6 +173,108 @@ Each candidate includes: input, current (actual) output, expected output
   extracting, per the "preserve exact behavior" requirement — found this
   in the process, did not go looking for it separately)
 
+## RC-CANDIDATE-007 — `sing`/`dance` purpose-clause forms use unrelated roots
+
+- **Input pattern:** `"i want to sing"` / `"i want to dance"` (purpose-clause construction, same code path as RC-CANDIDATE-006)
+- **Current output:** `purpose_map.json`: `sing` → `bit·na`, `dance` → `ruru·na`
+- **Compare:** `corrections.json`: `sing` → `ring·a`, `dance` → `Chroka`
+- **Suspected root cause:** Selection Logic / possible genuine synonym pair,
+  **not yet distinguishable by Claude B**. Unlike RC-CANDIDATE-006
+  (`search`), where `am·e·nik·na` is on record as a specifically-retired
+  contamination, there's no equivalent record for `sing`/`dance` — these
+  could be (a) the same RC-006 bug class (stale purpose-form left behind
+  by an earlier fix), (b) two legitimate synonyms where Garo genuinely
+  has separate words for the bare/imperative sense vs. the purposive
+  sense, or (c) one of the two is simply wrong and was never caught.
+  Surfaced by `repository-intelligence.js` (BACKLOG-006) Check B2 — a
+  "root-prefix" heuristic that flags purpose-clause forms sharing zero
+  characters with their corrections.json counterpart.
+- **Repository components:** `src/data/purpose_map.json`,
+  `src/data/corrections.json`
+- **Severity:** Medium — same class as RC-006, reachable via ordinary
+  "want to X" phrasing
+- **Status:** Needs Claude A Review (which of a/b/c above is correct)
+
+## RC-CANDIDATE-008 — 9 irregular-verb forms differ between `corrections.json` and `irregular_verbs.json`
+
+Surfaced by `repository-intelligence.js` Check B1 (strict cross-table
+comparison). All 9 are genuine value differences (case-only differences
+were excluded automatically). Not yet classified — could be typos,
+could be legitimate dialectal/register variants (the project has
+precedent for both, e.g. Bia/Ua, gnang/donga registers), could be one
+right and one wrong per key:
+
+| Key | `corrections.json` | `irregular_verbs.json` |
+|---|---|---|
+| `eaten` | `cha·jok` | `cha·manaha` |
+| `coming` | `rebaenga` | `re·baenga` |
+| `slept` | `tusiaha` | `tusaha` |
+| `sleeping` | `tusienga` | `tusenga` |
+| `laughing` | `ka·dingenga` | `ka·dingeng` |
+| `bought` | `breaha` | `brea·aha` |
+| `heard` | `rangsan chanchiaha` | `knachik·aha` |
+| `standing` | `chadatenga` | `chadenga` |
+| `sitting` | `asongenga` | `asong·enga` |
+
+- **Suspected root cause:** Selection Logic / data drift. Several of
+  these (`coming`, `bought`, `sitting`) also look raka-adjacent — the
+  `irregular_verbs.json` value carries a raka mark the `corrections.json`
+  value lacks, which may connect to RULE-001 rather than being unrelated.
+  Claude B is not asserting which value (if either) is correct.
+- **Repository components:** `src/data/corrections.json`,
+  `src/data/irregular_verbs.json`
+- **Severity:** Medium — 9 distinct reachable forms, some possibly
+  producing wrong output depending which table's strategy wins in a given
+  input (`irregular_verbs.json` is checked inside grammar-assembly;
+  `corrections.json` is checked first in the overall cascade, so for
+  most single-word inputs `corrections.json` wins — but not for every
+  code path that reaches `findVerbForm()`)
+- **Status:** Needs Claude A Review
+
+## RC-CANDIDATE-009 — 18 raka-adjacency candidates (report-only, likely mostly false positives)
+
+Surfaced by `repository-intelligence.js` Check A, which is deliberately
+**report-only** (see the file's header comment) because sense-
+disambiguation is required before any of these can be called a bug —
+several look like the exact "lexical split" trap
+`CLAUDE_A_FINAL_HANDOUT.md` warns about, not RULE-001 violations:
+
+- `ring·` appears 8 times against the confirmed no-raka root `ring`
+  ("drink") — but the source table's own note says `ring·aha` legitimately
+  carries raka when it's the **noun** "ring/bell"'s possessive, a
+  different word. Some of the 8 hits (`"elephant"` → `buring·o`,
+  `"i sing a song"` → `ring·a`) look like they might not even be the verb
+  "drink" at all — `buring` could be an unrelated word containing "ring"
+  as a substring only, and `ring·a`/`ring·enga`/`ring·gen` for "sing" look
+  like they could be the same `bit·na`/`Chroka`-adjacent question as
+  RC-CANDIDATE-007 (is "sing" using the "drink" root by mistake, or is
+  this a real second sense of `ring`?).
+- `agan·` appears 3 times (`"did you speak"`, `"have you spoken"`,
+  `"are you speaking"`) against confirmed no-raka `agan` ("speak") — these
+  look more likely to be genuine RULE-001 candidates than the `ring`
+  cases, since there's no obvious alternate-word explanation on record.
+- `nam·` appears 2 times (`"loved the picture"` / `"i loved the picture"`,
+  both the same underlying entry) — `nam·e` may be an idiom ("try"/
+  "smell," per casual knowledge, **unconfirmed**) rather than the no-raka
+  verb `nam` ("love"/like sense) at all.
+- `tusi·` appears once (`"i will sleep"` → `Anga tusi·gen`) against
+  confirmed no-raka `tusi` ("sleep") — plausible genuine RULE-001
+  candidate, no obvious alternate-word explanation.
+- `wa·` appears 4 times, all in bamboo-related entries (`"bamboo"`,
+  `"a/two/three piece(s) of bamboo"`) against confirmed no-raka `wa`
+  ("rain" sense per the source table) — likely a **different word
+  entirely** (bamboo ≠ rain), i.e. probably not a RULE-001 violation at
+  all, just two unrelated words that happen to share the letters "wa."
+
+- **Repository components:** `src/data/corrections.json` (all 18 hits)
+- **Severity:** Unknown pending Claude A — ranges from "likely a real
+  RULE-001 bug" (`agan·`, `tusi·`) to "likely not a bug at all, just
+  string-matching noise" (`wa·`)
+- **Status:** Needs Claude A Review. Not converted to individual regression
+  cases pending that review, since several of these 18 may not be issues
+  once sense is disambiguated — see `repository-intelligence.js` output
+  for the exact list.
+
 ---
 
 ## Summary table
@@ -185,6 +287,9 @@ Each candidate includes: input, current (actual) output, expected output
 | RC-CANDIDATE-004 | Ability modal "can" dropped entirely, systematic | Medium-High | Needs Claude A Review |
 | RC-CANDIDATE-005 | Loanwords (`TV`) silently dropped, no error marker | Medium | Needs Claude A Review |
 | RC-CANDIDATE-006 | Purpose-clause "search" uses pre-Rule-32 stale value (`am·e·nik·na`) | Medium | Needs Claude A Review |
+| RC-CANDIDATE-007 | `sing`/`dance` purpose-clause forms use unrelated roots vs. corrections.json | Medium | Needs Claude A Review |
+| RC-CANDIDATE-008 | 9 irregular-verb forms differ between corrections.json and irregular_verbs.json | Medium | Needs Claude A Review |
+| RC-CANDIDATE-009 | 18 raka-adjacency candidates (report-only, likely mostly false positives) | Unknown | Needs Claude A Review |
 
 ## Explicitly out of scope
 - No fixes implemented.

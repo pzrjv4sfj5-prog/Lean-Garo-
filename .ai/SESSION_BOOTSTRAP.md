@@ -214,6 +214,16 @@ Expected as of `bf163d6`: build clean, 55/55 regression tests passing.
   planned lexical tables now external). Note: `purpose_map.json`'s
   `search` entry is a known-stale pre-Rule-32 value, preserved as-is —
   see `RC-CANDIDATE-006` in `PENDING_REGRESSION_CASES.md`.
+- `repository-intelligence.js` (repo root) — BACKLOG-006, wired into
+  `npm run build`. Checks cross-table lexical consistency (build-gating)
+  and raka-locality candidates (report-only). Design rationale in
+  `docs/REPOSITORY_INTELLIGENCE.md` — read that before extending this
+  file or adding to its allowlist.
+- `src/data/raka_roots.json` — Claude A's confirmed no-raka root table
+  (from `THANGSENG_RULES_LOOKUP.md`), digitized for
+  `repository-intelligence.js` to consume. Verbatim transcription, not
+  new linguistic content — flag any discrepancy to Claude A rather than
+  editing directly.
 - `master_dictionary.json` / `garo_dictionary.json` — bulk lexicon.
 - `src/compiled_dict.json` — generated artifact, do not hand-edit (see
   ARCHITECTURE.md §9 tech debt note).

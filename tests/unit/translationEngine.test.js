@@ -164,3 +164,21 @@ test('possessives.json data integrity (BACKLOG-001)', async () => {
     assert.ok(v.length > 0, `value for "${k}" should not be empty`);
   }
 });
+
+// --- BACKLOG-006 (2026-07-09): repository-intelligence.js smoke test.
+// This is deliberately an integration-style check (run the real script
+// against the real data, assert it exits 0) rather than unit-testing
+// internal functions, since the script isn't structured as an importable
+// module. It guards against two failure modes: (1) the script itself
+// breaking (syntax error, missing file, etc.), and (2) a NEW, un-
+// allowlisted cross-table inconsistency being introduced without anyone
+// noticing - if this test starts failing, check the console output for
+// which key is newly inconsistent, then follow the process documented in
+// docs/REPOSITORY_INTELLIGENCE.md ("How to extend this safely") rather
+// than just adding it to the allowlist to make the test pass again. ---
+test('repository-intelligence.js exits 0 against current lexical data (BACKLOG-006)', async () => {
+  const { execFileSync } = await import('node:child_process');
+  assert.doesNotThrow(() => {
+    execFileSync('node', ['repository-intelligence.js'], { cwd: process.cwd(), stdio: 'pipe' });
+  }, 'repository-intelligence.js should exit 0 - a non-zero exit means either a script error or a NEW un-allowlisted cross-table finding (see docs/REPOSITORY_INTELLIGENCE.md)');
+});

@@ -1,7 +1,7 @@
 repository:
-  head: bf163d6 (this commit lands one commit after, on top of the governance update 724533c)
+  head: 6cf63d0
   last_updated: "2026-07-09"
-  test_status: "55/55 regression tests passing, build clean (docs-only commit, unaffected)"
+  test_status: "56/56 regression tests passing, build clean"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -86,17 +86,18 @@ claude_b:
   status: active
   current_task: "Operational sync while Claude A migrates to new chat: repo health, docs sync, bootstrap readiness"
   progress: >-
-    BACKLOG-001 fully complete (2026-07-09, same approved decision
-    framework): the 3 remaining tables (PURPOSE_MAP 37 entries,
-    PRONOUN_MAP 10, POSSESSIVES 7) extracted to src/data/*.json, same
-    proven pattern as BACKLOG-002. All byte-for-byte verified before the
-    swap. Found and preserved (not fixed) a live bug while verifying
-    PURPOSE_MAP reachability: 'search' still resolves to the pre-Rule-32
-    stale value 'am·e·nik·na' in purpose-clause constructions ("i want to
-    search") even though corrections.json's standalone 'search' entry is
-    correctly 'Sandia' - the two tables were never connected, so Rule
-    32's fix never propagated. Logged as RC-CANDIDATE-006. 55/55 tests
-    passing (52 + 3 new integrity tests), build clean.
+    BACKLOG-006 first increment done (2026-07-09): repository-
+    intelligence.js built as reusable Repository Intelligence
+    infrastructure (not just a script - see docs/REPOSITORY_
+    INTELLIGENCE.md), wired into npm run build + a dedicated regression
+    test. Check A (raka locality) is deliberately report-only after
+    discovering most of its 18 first-run hits were the lexical-split
+    false-positive trap, not real violations. Check B (cross-table
+    consistency) DOES gate the build and found 11 new findings beyond
+    the already-known 'search' issue on its first real run - all
+    properly logged as RC-CANDIDATE-007/008/009 in PENDING_
+    REGRESSION_CASES.md before being allowlisted, per the discipline the
+    tool itself documents. 56/56 tests passing, build clean.
   completed:
     - "Grammar-modeling audit: real past-tense suffix logic, dedup, dead code removal (aeec036)"
     - "docs/GRAMMAR_SPEC.md living rule index created (84bf88a)"
@@ -112,16 +113,16 @@ claude_b:
     - "Phase 2: docs/PHASE2_TRANSLATION_INTELLIGENCE.md - decision intelligence, pipeline mapping, reverse-translation readiness, semantic integrity debt"
     - "BACKLOG-002: IRREGULAR_VERBS extracted to src/data/irregular_verbs.json, data-integrity test added, 52/52 passing"
     - "BACKLOG-001 complete: PURPOSE_MAP/PRONOUN_MAP/POSSESSIVES extracted; RC-CANDIDATE-006 (stale search purpose-form) discovered and logged, not fixed, 55/55 passing"
+    - "Governance update: replaced Repository Access Model per Project Owner directive (Claude A may push directly with a session-scoped PAT)"
+    - "BACKLOG-006 first increment: repository-intelligence.js (raka report + cross-table consistency gate), RC-CANDIDATE-007/008/009 logged, 56/56 passing"
   next_action: >-
-    BACKLOG-001 and BACKLOG-002 both done - all 4 planned lexical-
-    resource tables externalized. Per the decision framework: next
-    mechanical candidate would be morphology-data externalization
-    (applyTense/applyNegation), but that's a function, not a flat table,
-    and needs its own design first - not a same-pattern repeat, so not
-    starting without explicit scoping/approval. RC-003 and RC-CANDIDATE-
-    006 both remain pending Claude A's linguistic classification, not
-    touched. Standing by for more native sentences or the next approved
-    engineering item.
+    BACKLOG-006 first increment done. Per docs/REPOSITORY_
+    INTELLIGENCE.md's own documented gaps: extending to master_
+    dictionary.json/garo_dictionary.json needs its own design pass (not
+    started); reverse raka direction not attempted (false-positive risk).
+    RC-003, RC-CANDIDATE-006 through 009 all remain pending Claude A -
+    not touched. Standing by for more native sentences, Claude A's
+    review cycle, or the next approved engineering item.
   do_not_repeat:
     - "Do not re-derive raka (Rule 1) violations from scratch - check docs/ARCHITECTURE.md §9 audit history first"
     - "Do not re-add PROGRESSIVE_MAP/PAST_TO_ROOT - confirmed dead, removed dcf6293"

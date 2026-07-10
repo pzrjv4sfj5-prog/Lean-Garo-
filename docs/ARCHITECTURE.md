@@ -754,35 +754,53 @@ compiler) so the parser has a rule-execution target to emit into.
 
 ### BACKLOG-006 — Dictionary Optimization / Automated Raka Validation
 
-**Objective:** Single canonical dictionary format with automatic Rule 1
-(raka) consistency checks across every storage location, replacing manual
-audits.
+**Status: First increment DONE (2026-07-09).** See
+`docs/REPOSITORY_INTELLIGENCE.md` for full design rationale.
 
-**Current State:** Raka violations have been found independently 3
-separate times this project (data JSON files, then `IRREGULAR_VERBS`,
-then `PURPOSE_MAP`) because no single source of truth enforces "no-raka
-roots never carry raka" — each new bug required a fresh manual audit.
+**What was built:** `repository-intelligence.js`, wired into
+`npm run build` (after `test-dictionary.js`) and covered by a dedicated
+regression test. Two checks, deliberately asymmetric in authority:
 
-**Desired State:** A build-time validation pass (part of `npm run build`,
-alongside `test-dictionary.js`) that checks every root against the
-confirmed no-raka-root list, across all storage locations (JSON files AND
-any remaining inline JS objects), and fails the build on violation.
+- **Check A (raka locality, report-only):** flags any confirmed no-raka
+  root (`src/data/raka_roots.json`, digitized verbatim from `THANGSENG_
+  RULES_LOOKUP.md`'s confirmed root table) appearing with a raka mark
+  directly appended, across all 5 lexical JSON tables. Does **not** fail
+  the build — the first real run surfaced 18 candidates, several of which
+  turned out to likely be the "lexical split" false-positive trap
+  (`CLAUDE_A_FINAL_HANDOUT.md`'s named top risk) rather than real RULE-001
+  violations, since word-sense disambiguation is required and this tool
+  doesn't have it. Logged as `RC-CANDIDATE-009` for Claude A.
+- **Check B (cross-table lexical consistency, build-gating):** flags
+  same-English-key value mismatches across tables — the exact bug class
+  that produced RC-CANDIDATE-006. Two sub-strategies (strict
+  case-insensitive equality for tables meant to hold identical forms;
+  a root-prefix heuristic for `purpose_map.json`, which intentionally
+  holds a different inflected form on purpose). First run found 11 new
+  findings beyond the already-known `search` issue — logged as
+  `RC-CANDIDATE-007` (2 findings) and `RC-CANDIDATE-008` (9 findings),
+  then allowlisted so the build passes cleanly with everything properly
+  documented rather than silently ignored.
 
-**Migration Strategy:** can be implemented independently of BACKLOG-001
-(doesn't require the tables to be externalized first, though it becomes
-easier once they are — one validator instead of one-per-format).
-Incremental: start with the JSON data files (`test-dictionary.js` already
-validates other properties), add inline-JS-object checking once
-BACKLOG-002 externalizes the first table.
+**Explicitly not covered yet (documented, not silent):**
+`master_dictionary.json`/`garo_dictionary.json` (too large/differently-
+shaped for this tool's current comparison logic without its own design
+pass); the reverse raka direction (raka-root losing its mark — needs
+root-stripping heuristics this version avoids for false-positive risk).
 
-**Priority:** Medium — directly prevents a recurring, already-3x-seen bug
-class; relatively cheap to implement against existing JSON files today.
+**Migration Strategy, updated:** original plan assumed the JSON-file
+portion could be done independently of BACKLOG-001; in practice doing it
+*after* BACKLOG-001/002 (all 5 tables already externalized) meant the
+tool could check all of them from day one instead of incrementally.
 
-**Dependencies:** none blocking for the JSON-file portion; benefits from
-BACKLOG-002 for full coverage.
+**Priority:** Medium — original priority achieved; extending to the two
+large dictionaries and the reverse raka direction remain open, lower
+urgency.
 
-**Estimated Version:** V1.1 (JSON-file portion), V1.2+ (full coverage
-after BACKLOG-002).
+**Dependencies:** benefited from BACKLOG-001/002 (done) providing 5
+already-externalized tables to check.
+
+**Estimated Version:** V1.1 (this increment, done). Large-dictionary
+coverage and reverse raka direction: V1.2+, not scheduled.
 
 ---
 
