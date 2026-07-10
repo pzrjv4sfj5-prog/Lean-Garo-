@@ -147,6 +147,17 @@ converts two confirmed-invalid outputs into a graceful gap
   engineering-only fix or needs a formal rule first), then Needs Thangseng
   Validation for exact expected forms
 
+**Claude A Review (2026-07-10):** Do not wire this up yet. Checked
+`master_dictionary.json` directly — the `"can": "man·a"` entry itself
+carries `notes: "UNVERIFIED/HIGH"`, meaning even the dictionary source
+hasn't cleared this project's normal confirmation bar. Wiring an
+unconfirmed word into live grammar-assembly would produce confident-
+looking but unvalidated output — worse than the current silent drop,
+which is at least honest about the gap. Already tracked as NV-008; no
+separate action needed here. **Do not close this candidate** until
+NV-008 resolves — leave it Needs Claude A Review / blocked-on-NV-008
+rather than marking done.
+
 ## RC-CANDIDATE-005 — English loanwords (`TV`, `status`) silently dropped
 
 - **Input:** `"I watch TV"` / `"I am watching TV"` / (status untested in
@@ -170,6 +181,19 @@ converts two confirmed-invalid outputs into a graceful gap
 - **Status:** Needs Claude A Review (decide on general loanword policy —
   individual entries vs. a systematic pass-through mechanism — since this
   will likely recur for other English loanwords beyond `TV`/`status`)
+
+**Claude A Review (2026-07-10):** Systematic mechanism, not per-word
+entries. Case 1 (native-confirmed) uses `TV` and `status` verbatim,
+untranslated, mid-sentence — this is confirmed native usage, not a
+translation gap to fill with a Garo word. Recommend: unrecognized
+capitalized tokens with no dictionary match pass through unchanged
+(matching native usage) rather than silently dropping. This differs
+from `[UNKNOWN]` full-sentence fallback — a passthrough token inside an
+otherwise-successful translation, not a failure marker. Distinguish from
+lowercase unrecognized words, which should keep failing normally (a
+loanword heuristic isn't a general unknown-word fallback). Likely
+recurs for other tech/media loanwords (phone, internet) per NV-009 — one
+mechanism fixes a class, not one word.
 
 ---
 
@@ -295,6 +319,23 @@ right and one wrong per key:
   most single-word inputs `corrections.json` wins — but not for every
   code path that reaches `findVerbForm()`)
 - **Status:** Needs Claude A Review
+
+**Claude A Review (2026-07-10):** Checked each pair against existing
+primary/repo evidence rather than guessing:
+
+| Key | Verdict | Basis |
+|---|---|---|
+| `eaten` | **Not a bug** | `cha·jok` (perfect) and `cha·manaha` (completive) are both independently confirmed, distinct-but-overlapping aspectual forms (RULE-026, Thangseng's direct "aha/manaha overlap in meaning" confirmation). No fix needed. |
+| `coming` | **`re·baenga` correct, `rebaenga` is the bug** | `re·` confirmed raka-bearing (`THANGSENG_RULES_LOOKUP.md` raka table). `corrections.json` itself has 9+ other `re·ba-` entries all correctly raka'd (`re·babo`, `re·baa`, `re·bagen`, `re·bajawa`, etc.) — `rebaenga` is an isolated internal outlier, not a genuine second value. Fix `corrections.json`. |
+| `slept`/`sleeping` | **`tusiaha`/`tusienga` correct** | `tusi` confirmed raka-free root (`THANGSENG_RULES_LOOKUP.md` L41). `irregular_verbs.json`'s `tusaha`/`tusenga` drop the root vowel — a truncation typo, not a raka question. |
+| `laughing` | **`ka·dingenga` correct** | `irregular_verbs.json`'s `ka·dingeng` is missing the final `-a`, inconsistent with every other `-enga` form in the repo. Truncation typo. |
+| `bought` | **Likely `breaha` (no raka), but flag a separate internal conflict** | Primary-source transcript (notes.pdf): `"she bought three books"`→`"...breaha"`, no raka. But `corrections.json` *itself* also has `"what did you buy"`→`"...brea·aha?"`, **with** raka — a 3-way inconsistency, not just corrections.json-vs-irregular_verbs.json. Recommend `breaha` (matches primary source) and fix both the `irregular_verbs.json` value and the internal `corrections.json` outlier. |
+| `heard` | **Cannot resolve — escalate** | `rangsan chanchiaha` vs `knachik·aha` are different words, not a spelling/raka variant. No repo evidence favors either. Needs Thangseng. |
+| `standing`/`sitting` | **Cannot resolve — escalate** | No primary-source confirmation of `asong`/`chadat`/`chad` roots' raka status found anywhere. Note: a *third* spelling (`Chakata`, different consonant) also exists elsewhere in `corrections.json` for "stand" — this may be a 3-way vocabulary question, not a 2-way raka question. Needs Thangseng.
+
+**Net:** 4 of 9 resolved from existing evidence (no native validation
+needed), 1 partially resolved with a bonus internal-conflict flag, 2
+need direct native input (bundle into next relay), 1 needs no action.
 
 ## RC-CANDIDATE-009 — 18 raka-adjacency candidates (report-only, likely mostly false positives)
 

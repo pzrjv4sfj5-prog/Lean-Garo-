@@ -816,7 +816,26 @@ reachable "want to X" construction class).
 
 ---
 
-## Provisional recommendation: RULE-031 default (not a resolution)
+## NV-014 — `stand`/`sit`/`heard` root confirmation (RC-CANDIDATE-008 remainder)
+
+**Topic:** Three unresolved forms flagged by `repository-intelligence.js`
+table-drift check, no existing evidence to adjudicate.
+
+**Required Native Validation:** "How do you say 'standing'? Is it
+`chadatenga`, `chadenga`, or related to `Chakata` ('stand,' already in
+the dictionary)?" / "'sitting' — `asongenga` or `asong·enga`?" / "'heard'
+— is it `rangsan chanchiaha` or `knachik·aha`, or are these two
+different things (e.g. 'heard [a sound]' vs. 'heard [news/that X]')?"
+
+**Why the Answer Matters:** `standing` may be a 3-way vocabulary
+question (`Chakata` vs. `chadat`/`chad`), not just a 2-way raka
+question — worth surfacing to Thangseng as such rather than a simple
+either/or.
+
+**Status:** OPEN — Needs Native Validation (direct), low priority (verb
+paradigm cleanup, not launch-blocking).
+
+---
 
 Copula selection (RULE-031) stays genuinely open — no native validation
 exists to resolve it. But `translationEngine.js` currently has **zero**

@@ -32,14 +32,13 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Translation-first pass: reviewed RC-CANDIDATE-002/003/006/007 in
-    PENDING_REGRESSION_CASES.md with concrete implementation directives
-    for Claude B (locative ·o mapping fixes a whole sentence class, not
-    just "in bed"; tue malformed-output guards; Sandi·na for search
-    purpose-clause; ring·na candidate for sing). Added NV-013 (sing/
-    dance purposive forms). Logged a provisional bare-adjective default
-    recommendation for RULE-031 predicate assembly under genuine
-    uncertainty - explicitly not a resolution.
+    Reviewed remaining RC-CANDIDATEs (004/005/008). RC-004: blocked on
+    NV-008, do not wire man·a (source entry itself UNVERIFIED). RC-005:
+    recommended systematic loanword passthrough over per-word entries.
+    RC-008: resolved 4/9 irregular-verb table conflicts from existing
+    evidence (coming/slept/sleeping/laughing/eaten), flagged a bonus
+    internal corrections.json conflict on "bought", escalated
+    standing/sitting/heard as NV-014.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
