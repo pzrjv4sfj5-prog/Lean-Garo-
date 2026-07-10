@@ -4,6 +4,28 @@ Structured per Sprint Work Package schema. Rule IDs map to
 `THANGSENG_RULES_LOOKUP.md` source rules where applicable (cited).
 
 ---
+### RULE-015 — Stem Formation
+**Description:** Stem = root minus trailing letter. If the root carries raka, letters after the raka are stripped but raka is retained; suffixes attach to the stem, not the citation form.
+**Examples:** `daka`→`dak`+suffix (`dakgen`, `dakbo`, `daknabe`, `dakjawa`); `cha·a`→`cha·`+suffix (`cha·gen`, `cha·bo`); `ka·a`→`ka·`+suffix. Compound verbs: only the second word changes (`a·jak soka`→`a·jak sok`+suffix).
+**Counterexamples:** Adding suffix without stripping (`ka·a`+`jawa`) is confirmed incorrect. Dropping raka (`ka`+`jawa`) is confirmed incorrect — raka must be retained even after stripping.
+**Dependencies:** RULE-001 (Raka Locality); underlies every tense/aspect/mood suffix rule in this catalogue.
+**Native Notes:** Source Rule 15, `GRAMMAR_SPEC.md`. Primary source: suffixes.pdf transcript, gives the rule explicitly with worked examples for both raka and non-raka roots, plus explicit incorrect forms.
+**Validation Status:** Verified.
+**Confidence:** High — this is the generative mechanism every other verb/adjective suffix rule in this catalogue depends on.
+**Launch Priority:** P0 (implicit throughout `applyTense`'s generic branch, no dedicated catalogue entry until now — documentation gap, not an evidence gap).
+
+---
+### RULE-020 — `an·tang` Reflexive/Self
+**Description:** `an·tang` = "self"; `an·tangni` = genitive form ("of himself/herself," "his/her" when reflexive).
+**Examples:** `Ua an·tangni kamko dakjaha` = "she/he did not do her/his [own] work" (breakdown: `ua`=he/she, `an·tangni`=of himself/herself, `kamko`=work, `dakjaha`=did not do).
+**Counterexamples:** none recorded.
+**Dependencies:** RULE-004 (Pronoun Paradigm), RULE-018 (Verbal-Adjective `-gija`, co-occurs in the fuller version of the same example: `Ua an·tangni kamko dakgija dongaha` = "she remained without doing her own work").
+**Native Notes:** Primary source: notes.pdf transcript, point 3.
+**Validation Status:** Verified (one worked sentence, no counterexample).
+**Confidence:** Medium — single example, no test of reflexive vs. non-reflexive possessive contrast (e.g. "she did her [someone else's] work" to confirm `an·tangni` is specifically reflexive and not just general 3rd-person genitive).
+**Launch Priority:** P1 — not currently wired into `translationEngine.js` at all (`GRAMMAR_SPEC.md`'s own note: "corrections.json only... gap"). Engine implementation is Claude B's call.
+
+---
 ### RULE-001 — Raka Locality
 **Description:** Raka (·) exists only in verb/noun roots, never introduced by a suffix.
 **Examples:** `cha·a→cha·aha` (retained); `dak→dakja` (never introduced).

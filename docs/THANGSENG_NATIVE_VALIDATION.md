@@ -762,5 +762,21 @@ observation.
 
 ---
 
+## Linguistic Model: Formal/Casual Register Doublets
+
+Recurring pattern, three independent instances found this session:
+`An·ching`/`chinga` ("we"), `gnang`/`donga` (existential "have/is," `gnang`
+older+written, `donga` spoken), `hai cha·na`/`hai cha·bo` ("let's eat,"
+`cha·na` standard, `cha·bo` "not so strict"). All three: one form is
+citation/formal, the other is a spoken/casual variant, both native-
+confirmed, neither wrong. Consistent with Thangseng's own methodology
+answer (July 7 transcript): natural-usage register choice isn't rule-
+governed, it's habit-governed. **Implication for open questions:**
+NV-002 (copula) and NV-001 (go) should each get a "is this register
+variation rather than a grammatical rule" branch before assuming a
+strict selection rule exists.
+
+---
+
 ## Closed Questions
 _(none yet — this document was created 2026-07-08)_
