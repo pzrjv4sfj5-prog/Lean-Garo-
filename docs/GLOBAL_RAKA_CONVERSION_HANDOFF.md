@@ -3,6 +3,24 @@ _Prepared by Claude B — 2026-06-17_
 _Native speaker instruction, explicit and unambiguous: "Change ALL hyphens
 everywhere to raka, no exceptions."_
 
+## STATUS UPDATE (2026-07-09, Claude A): PART 1 confirmed APPLIED to live `corrections.json`
+Verified directly against the live file rather than assumed: `father`→`baba`,
+`mother`→`aai`, `wife`→`jikgipa`, `husband`→`sejipa`, `i have two children`→
+`Ang·o Bi·sa sak gni donga` (matches this doc's corrected form, modulo minor
+spelling), `i am sad`→`Anga duk ong·a` (progressive suffix dropped, as
+specified) are all live in production as of this check. This document's
+"has not yet been run against the live repo" note below is **stale** — the
+fixes landed in a session after this doc was written, but the doc itself was
+never updated to say so, which caused a downstream problem: a later session
+(this one) read `docs/NEW_SENTENCES_BATCH3_CONVERSATION.md` (which still
+shows the pre-correction forms, e.g. `apa`/`ama`/`ang-se`, `duk ong·enga`)
+without realizing those forms had already been superseded, and built
+analysis on the stale version. See `docs/NEW_SENTENCES_BATCH3_CONVERSATION.md`'s
+new correction note for the fix. PART 2 (global hyphen→raka across the 5
+dictionary source files) and PART 3 (code fixes) below are **not yet
+verified** as applied — worth a follow-up check before assuming those landed
+too.
+
 ## IMPORTANT — This reverses earlier guidance
 
 Earlier sessions (see `docs/INSTRUCTIONS_FOR_CLAUDE_A.md`, orthography section)

@@ -32,17 +32,22 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Adopted the repository access model change confirmed via
-    CLAUDE_A_FINAL_HANDOUT.md and SESSION_BOOTSTRAP.md: Claude A never
-    pushes, commits locally and outputs git format-patch for Claude B to
-    apply. Completed Canonical Verb Inventory (docs/VERB_INVENTORY.md) +
-    first canonical verb page (docs/verbs/CHA_EAT.md, template
-    exemplar). Reconciled NV-005..009 with Claude B's independently-
-    collected PENDING_VOCABULARY.md/PENDING_REGRESSION_CASES.md
-    (RC-CANDIDATE-001..005) in place, no duplication. Added NV-011
-    (nina vs Nia/nika) and NV-012 (nisona selection) from Claude B's
-    queue, plus NV-010 (raka-inconsistency cluster in -na infinitives,
-    found independently during the verb inventory pass).
+    Repository access model updated again (governance directive 724533c):
+    Claude A may push directly when the Project Owner explicitly supplies
+    a session PAT, following the 7-step discipline (sync, review, dedupe
+    check, work, test, sync docs same commit, push). Corrected RULE-031
+    (copula) using current live corrections.json data - retracted a
+    stale speculation from earlier this session that was built on a
+    pre-correction batch log (NEW_SENTENCES_BATCH3_CONVERSATION.md)
+    without checking whether it had been superseded by
+    GLOBAL_RAKA_CONVERSION_HANDOFF.md's fixes. Marked both docs with
+    superseded-forms notices so this doesn't recur. RULE-030 updated
+    with 2 more re·ang+·chi destination examples from primary-source
+    chat transcripts. Also resolved: "downstairs" is not a missing
+    RULE-034 item, it collapses into "below"/ka·mao (same word);
+    NV-010's likely explanation revised from a phonological rule to a
+    lexical-split confusion (ring·a="to sing" vs ringa="to drink",
+    raka distinguishes two different roots, not a -na-suffix effect).
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

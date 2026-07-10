@@ -139,7 +139,7 @@ Structured per Sprint Work Package schema. Rule IDs map to
 ---
 ### RULE-030 — `re·` vs. `re·ang` for "Go" [OPEN]
 **Description:** Two forms of "go" coexist in confirmed data with no settled selection rule: bare `re·` (used in destinationless contexts) vs. `re·ang` (used in the general dictionary and in destination-bearing contexts).
-**Examples:** `Re·jawa` = "I will not go" (bare, no destination); `Hai re·naha` = "let's go" (bare, no destination). Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop (all `re·ang`, general/destination-bearing).
+**Examples:** `Re·jawa` = "I will not go" (bare, no destination); `Hai re·naha` = "let's go" (bare, no destination). Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop, `nokchi re·anggen`="will go home now" (`BUG_home_missing_and_go_double_raka.md`), `Antichi re·angbo`="go to the market" (suffixes.pdf, imperative) — **four** independent examples now, all `re·ang` + a `·chi`-marked destination, strengthening (not proving) the destination-conditioned hypothesis. Complication: the same primary source (`BUG_home_missing_and_go_double_raka.md`) also confirms bare `re·` variants (`da·o re·gen`) are accepted even when "home" is semantically present but omitted from the surface sentence — so the split may track surface NP presence rather than pure semantic destination, or there may be genuine free variation in casual speech (see Thangseng's own methodology answers on register variation, `THANGSENG_NATIVE_VALIDATION.md` NV-001 update).
 **Counterexamples:** N/A — like RULE-031, this documents an unresolved question, not a settled pattern with exceptions.
 **Dependencies:** none identified yet; would inform future Verb Family documentation for "go."
 **Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Not yet put to Thangseng as a direct paired-contrast question. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001 for the full evidence review and proposed minimal test sentences.
@@ -149,13 +149,14 @@ Structured per Sprint Work Package schema. Rule IDs map to
 
 ---
 ### RULE-031 — Copula Inconsistency [OPEN]
-**Description:** Three unreconciled predicative strategies (bare adjective, `daka`-copula, `ong·a`-copula) coexist in confirmed data.
-**Examples:** attested for each strategy individually; no rule determines which applies when.
+**Description:** Three unreconciled predicative strategies coexist in confirmed data — not four; see the Correction note below, which retracts an earlier session's speculation about a fourth pattern: (a) an `ong·a`-copula strategy, always in bare/uninflected form, attaching after an adjective or stative noun (`Anga kusi ong·a`="I am happy", `Anga duk ong·a`="I am sad"); (b) self-inflecting stative roots that take normal verb morphology directly with no copula element at all (`Anga sakamenga`="I am sick", using `-enga` progressive on the root itself); (c) a zero-copula bare-adjective strategy with no `ong·a` or inflection at all (`Gari sila`="the car is beautiful", `Me·chik sila`/`Me·asa sila`, `Anga am`="I am okay"). `daka`-copula (Rule 5) is confirmed to exist but has no worked predicative-adjective example — its behavior here is unattested, not just unconfirmed, so it isn't counted as a fourth confirmed strategy above.
+**Examples:** `ong·a`-copula (bare): `Anga kusi ong·a`, `Anga duk ong·a`, `Achak tebil kokkimao ong·a` (locative/existential use). Self-inflecting: `Anga sakamenga`. Zero-copula bare-adjective: `Gari sila`, `Me·chik sila`, `Me·asa sila`, `Ua me·asa namen changroa`, `Anga am`, `Sepanga`/`Chel·a` (near/far).
+**Correction (2026-07-09):** An earlier working note in this session speculated that `Anga duk ong·enga` (sad, with progressive suffix) suggested a *fourth* copula-adjacent pattern (`ong·` as an inflectable verb root, distinct from the three strategies above). That form is **stale** — `docs/GLOBAL_RAKA_CONVERSION_HANDOFF.md` (2026-06-17) shows it was corrected to `Anga duk ong·a` (bare, no progressive) before this session started, confirmed live in `corrections.json`. The speculation was built on a historical batch log (`NEW_SENTENCES_BATCH3_CONVERSATION.md`) without checking whether it had been superseded — retracted here rather than left standing. The corrected data is simpler and cleaner: `duk ong·a` is just another instance of the already-known bare `ong·a` pattern, not a new one.
 **Counterexamples:** N/A — this rule documents an unresolved contradiction, not a settled pattern.
-**Dependencies:** affects RULE-004 (predication generally), Grammar Specification §5.
+**Dependencies:** affects RULE-004 (predication generally), Grammar Specification §5. Connects to the register-variation pattern noted across several other rules this session (see `THANGSENG_NATIVE_VALIDATION.md`'s discussion of formal/spoken doublets) — worth checking whether any of these three strategies track register rather than a strictly grammatical trigger.
 **Native Notes:** Source Rule 31, flagged by repository audit, not yet put to Thangseng.
 **Validation Status:** Needs Native Validation.
-**Confidence:** Low (as a unified rule); High (each strategy individually attested).
+**Confidence:** Low (as a unified rule); High (each of the three strategies individually attested, now on verified-current data).
 **Launch Priority:** P0 — highest-priority open linguistic question for the launch sprint, given predication's frequency.
 
 ---
