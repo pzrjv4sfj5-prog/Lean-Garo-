@@ -178,6 +178,14 @@ Each candidate includes: input, current (actual) output, expected output
 - **Input pattern:** `"i want to sing"` / `"i want to dance"` (purpose-clause construction, same code path as RC-CANDIDATE-006)
 - **Current output:** `purpose_map.json`: `sing` → `bit·na`, `dance` → `ruru·na`
 - **Compare:** `corrections.json`: `sing` → `ring·a`, `dance` → `Chroka`
+- **Update 2026-07-10:** Claude A independently confirmed `ring·a` = "to
+  sing" is a correct, distinct root from `ringa` = "to drink" (see
+  `RC-CANDIDATE-009`'s update). This means `corrections.json`'s
+  `"sing"` → `ring·a` is very likely correct, which sharpens the
+  question: it's now `purpose_map.json`'s `"sing"` → `bit·na` that most
+  needs Claude A's review — is `bit·na` a genuine synonym/purposive-form
+  choice, or a wrong entry? `"dance"` (`Chroka` vs `ruru·na`) remains
+  fully open, no new information.
 - **Suspected root cause:** Selection Logic / possible genuine synonym pair,
   **not yet distinguishable by Claude B**. Unlike RC-CANDIDATE-006
   (`search`), where `am·e·nik·na` is on record as a specifically-retired
@@ -240,15 +248,24 @@ several look like the exact "lexical split" trap
 `CLAUDE_A_FINAL_HANDOUT.md` warns about, not RULE-001 violations:
 
 - `ring·` appears 8 times against the confirmed no-raka root `ring`
-  ("drink") — but the source table's own note says `ring·aha` legitimately
-  carries raka when it's the **noun** "ring/bell"'s possessive, a
-  different word. Some of the 8 hits (`"elephant"` → `buring·o`,
-  `"i sing a song"` → `ring·a`) look like they might not even be the verb
-  "drink" at all — `buring` could be an unrelated word containing "ring"
-  as a substring only, and `ring·a`/`ring·enga`/`ring·gen` for "sing" look
-  like they could be the same `bit·na`/`Chroka`-adjacent question as
-  RC-CANDIDATE-007 (is "sing" using the "drink" root by mistake, or is
-  this a real second sense of `ring`?).
+  ("drink") — **partially resolved 2026-07-10 by Claude A** (see
+  `.ai/WORKSTATE.yaml`/`PROJECT_STATUS.md`, primary-source chat
+  transcripts): `ring·a` = "to sing" and `ringa` = "to drink" are
+  **confirmed two different roots**, not a raka inconsistency on one
+  root. This directly validates the concern this entry raised (word-sense
+  disambiguation was needed before calling these a RULE-001 violation)
+  and confirms this script's decision to keep Check A report-only rather
+  than build-gating. The `"sing"`-related hits in this list (`"let's
+  sing"`, `"i sing a song"`, `"i am singing a song"`, `"sing"` itself) are
+  therefore **not bugs** — they're the confirmed `ring·` (sing) root
+  correctly carrying raka. Remaining unresolved from the original 8:
+  `"i want to drink"` → `ring·na`, `"i will drink"` → `ring·gen` (these
+  ARE the drink-sense root and still need Claude A/Thangseng
+  confirmation of whether `-na`/`-gen` genuinely trigger raka on this
+  no-raka root — tracked as `NV-010`, not yet resolved), and
+  `"elephant"`/`"an elephant"` → `buring·o` (likely an unrelated word
+  containing "ring" as a substring only, not the drink or sing root at
+  all — lowest-priority of the remaining unresolved items).
 - `agan·` appears 3 times (`"did you speak"`, `"have you spoken"`,
   `"are you speaking"`) against confirmed no-raka `agan` ("speak") — these
   look more likely to be genuine RULE-001 candidates than the `ring`
