@@ -2,6 +2,24 @@
 _Prepared by Claude B — 2026-06-17_
 _Topics: greetings, directions, market/shopping, family, health & feelings_
 
+## SUPERSEDED FORMS NOTICE (added 2026-07-09, Claude A)
+Several entries below were later corrected by native-speaker feedback (see
+`docs/GLOBAL_RAKA_CONVERSION_HANDOFF.md`, confirmed live in `corrections.json`
+2026-07-09) but this batch log was never updated to reflect that — treat the
+table below as a historical record of what was *first proposed*, not current
+live state, for these specific items:
+- `father`/`this is my father`: `apa` → now `baba`
+- `mother`/`this is my mother`: `ama` → now `aai`
+- `wife`/`this is my wife`: `jik` → now `jikgipa`
+- `husband`/`this is my husband`: `ang-se` → now `sejipa`
+- `i have two children`: `Ang·o gini de dong·a` → now `Ang·o Bi·sa sak gni donga` (uses the `sak`+number classifier pattern, matches Thangseng's separately-confirmed "she has three children" construction — not a contradiction, this batch's original form was simply superseded before that later confirmation, which agrees with the fix already made here)
+- `i am sad`: `Anga duk ong·enga` → now `Anga duk ong·a` (progressive suffix dropped)
+- `i am tired`: `Anga neng·enga` → now `Anga nenga` (also dropped progressive, spelling changed)
+
+`brother` (`dada`) was **not** corrected — still live and current. Always
+check `corrections.json` directly for current state before citing any batch
+log as ground truth; batch logs are a proposal record, not a live view.
+
 ## Trust Level: ✅ HIGH — almost entirely dictionary-sourced
 
 **Important process note:** My first draft of this batch (40 entries) included
