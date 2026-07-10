@@ -16,11 +16,12 @@ need Thangseng at all.
 2. **(NV-002, Rule 31)** After "happy"/"good"/"tired" as a predicate, is
    `ong·a` required, optional, or specific to certain persons (I/you/
    he-she)? How does it relate to `daka`?
-3. **(NV-010, added 2026-07-08)** When you say "want to drink"/"want to
+3. **(NV-010, narrowed 2026-07-10)** When you say "want to
    speak"/"want to study," is there a `·` in the verb, even though there
-   isn't one in "I drank"/"I spoke"/"I was studying"? One yes/no-style
-   answer resolves 3-4 data points at once — cheap to bundle with the
-   above two.
+   isn't one in "I spoke"/"I was studying"? Also: is there a different
+   word sounding like `agan·`/`tus·` (distinct from `agan`/`tusi`) —
+   `ring` turned out to be exactly this case (sing vs. drink). Two
+   data points, not four — `ring` resolved independently.
 
 NV-003/004 (locative set) and NV-005/007/008 (necessity-modal, posture
 verb, ability-modal) are real but lower-priority — bundle them into a
@@ -603,6 +604,18 @@ weigh in on once this priority comes up.
 
 ## NV-010 — Raka-Inconsistency Cluster in `-na` Infinitive Forms
 
+**Update (2026-07-10):** `ring` is **resolved and removed from this
+cluster** — primary-source chat transcripts confirm `ring·a` = "to sing"
+and `ringa` = "to drink" are two distinct roots, not one root with
+inconsistent raka. `ring·na` ("want to drink") is now suspect as a
+possible mix-up between the two roots rather than evidence for a
+`-na`-triggered phonological rule — cross-referenced into
+`docs/PENDING_REGRESSION_CASES.md` RC-CANDIDATE-009 by Claude B. The
+remaining cluster — `agan` (speak), `porai`/`pora` (study), `tusi`
+(sleep) — has **no equivalent alternate-word explanation found yet** and
+stays open exactly as below. Do not assume the same resolution applies;
+each needs its own check.
+
 **Topic:** Whether the `-na` infinitive suffix (used in the `[verb]-na
 sikenga` = "want to [verb]" construction) genuinely triggers raka on
 certain roots that are raka-free everywhere else, or whether this is a
@@ -611,24 +624,26 @@ transcription-error cluster in `corrections.json`.
 **Background:** Surfaced during the Canonical Verb Inventory pass
 (2026-07-08, see `docs/VERB_INVENTORY.md`). RULE-001 states raka lives in
 the root only, never the suffix, and is either always present or always
-absent for a given root. Four roots violate this as currently recorded:
-`ring` (drink), `agan` (speak), `porai`/`pora` (study), and `tusi`
-(sleep, one form) are all raka-free in `THANGSENG_RULES_LOOKUP.md`'s
+absent for a given root. Three roots remain in this cluster after the
+`ring` resolution above: `agan` (speak), `porai`/`pora` (study), and
+`tusi` (sleep, one form) are all raka-free in `THANGSENG_RULES_LOOKUP.md`'s
 audited table and in most `corrections.json` entries, but show raka in
-their `-na` infinitive form specifically (`ring·na`, `a·gan·na`,
-`pora·na`, `tus·aha`).
+their `-na` infinitive form specifically (`a·gan·na`, `pora·na`,
+`tus·aha`).
 
-**Current Repository Evidence:** `ringa`/`ring·aha`(noun context, not
-verb) vs. `ring·na` in `'i want to drink' -> 'Anga ring·na sikenga'`;
+**Current Repository Evidence:**
 `agana`/`aganaha` vs. `a·gan·na` in `'i want to speak' -> 'Anga a·gan·na
 sikenga'`; `poraienga`/`poraienga chim` vs. `pora·na` in `'i want to
 study' -> 'Anga pora·na sikenga'`; `tusia`/`tusienga` vs. `tus·aha`
 (this last one isn't even in the `-na` construction, so it may be a
-narrower, separate transcription issue).
+narrower, separate transcription issue). No alternate-word explanation
+(the kind that resolved `ring`) has been found for any of these three —
+unlike `ring·`/`sing`, there's no independently-confirmed second Garo
+word that looks like `agan·`/`pora·`/`tus·` with a different meaning.
 
 **Existing Grammar Rules:** RULE-001 (Raka Locality) — this cluster is
-either a genuine, previously-undocumented exception to RULE-001, or four
-separate data-entry errors that happen to share a pattern.
+either a genuine, previously-undocumented exception to RULE-001, or
+three separate data-entry errors that happen to share a pattern.
 
 **Existing Morphology:** No account yet of `-na` (infinitive) triggering
 phonological changes; every other confirmed suffix in
@@ -638,26 +653,29 @@ phonological changes; every other confirmed suffix in
 1. `-na` genuinely triggers raka insertion on certain root shapes (a real
    phonological rule, would be a genuine RULE-001 refinement/exception,
    not a violation).
-2. These four entries in `corrections.json` are transcription errors
+2. These three entries in `corrections.json` are transcription errors
    from a different, less rigorously-audited data-entry pass than the
-   one that produced `THANGSENG_RULES_LOOKUP.md`'s raka table.
-3. Mixed — some of the four are real, some are errors, and they only
-   look like one pattern because they were found together in this pass.
+   one that produced `THANGSENG_RULES_LOOKUP.md`'s raka table — the
+   `ring` case's resolution as a lexical split (not this) makes a
+   similar per-word explanation worth checking for each of these three
+   individually before assuming hypothesis 1.
+3. Mixed — some of the three are real, some are errors.
 
 **Required Native Validation:** Ask Thangseng directly: "When you say
-'want to drink' / 'want to speak' / 'want to study,' is there a `·` in
-the verb, even though there isn't one when you just say 'I drank' /
-'I spoke' / 'I was studying'?" A single confirmatory or disconfirmatory
-answer here would resolve all three cases at once, since they share the
-same construction — an efficient question relative to its impact.
+'want to speak' / 'want to study,' is there a `·` in the verb, even
+though there isn't one when you just say 'I spoke' / 'I was studying'?"
+Also worth asking, per the `ring` precedent: "Is there a different Garo
+word that sounds like `agan·`/`tus·` with a `·`, distinct from
+`agan`/`tusi`?" — since that's exactly what resolved the `ring` case and
+wasn't the first thing asked there either.
 
 **Why the Answer Matters:** If hypothesis 1 is correct, this is a real
 gap in RULE-001 affecting an unknown number of other roots beyond the
-three found here — worth knowing before more infinitive-based
+two found here — worth knowing before more infinitive-based
 constructions get built. If hypothesis 2 is correct, `corrections.json`
-has at least 3-4 wrong entries currently in production.
+has at least 2-3 wrong entries currently in production.
 
-**Repository Components Impacted:** `src/data/corrections.json` (3-4
+**Repository Components Impacted:** `src/data/corrections.json` (2-3
 entries, possibly wrong), `docs/GRAMMAR_RULE_CATALOGUE.md` RULE-001
 (would need a documented exception if hypothesis 1 confirmed),
 `docs/MORPHOLOGY_SPECIFICATION.md` (infinitive suffix behavior).
