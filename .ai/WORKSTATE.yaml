@@ -32,12 +32,14 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Closed backlog items: RULE-015 (stem formation) and RULE-020
-    (an·tang reflexive) promoted from GRAMMAR_SPEC.md to full catalogue
-    entries. Register-variation pattern documented as a named model in
-    THANGSENG_NATIVE_VALIDATION.md (An·ching/chinga, gnang/donga,
-    cha·na/cha·bo). jol/ge· classifier gap flagged to Claude B via
-    PROJECT_STATUS.md.
+    Translation-first pass: reviewed RC-CANDIDATE-002/003/006/007 in
+    PENDING_REGRESSION_CASES.md with concrete implementation directives
+    for Claude B (locative ·o mapping fixes a whole sentence class, not
+    just "in bed"; tue malformed-output guards; Sandi·na for search
+    purpose-clause; ring·na candidate for sing). Added NV-013 (sing/
+    dance purposive forms). Logged a provisional bare-adjective default
+    recommendation for RULE-031 predicate assembly under genuine
+    uncertainty - explicitly not a resolution.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

@@ -23,7 +23,8 @@ need Thangseng at all.
    `ring` turned out to be exactly this case (sing vs. drink). Two
    data points, not four — `ring` resolved independently.
 
-NV-003/004 (locative set) and NV-005/007/008 (necessity-modal, posture
+4. **(NV-013, added 2026-07-10)** "I want to sing" / "I want to dance"
+   — two words, resolves a live `purpose_map.json` bug either way.
 verb, ability-modal) are real but lower-priority — bundle them into a
 second relay only after this first batch lands, to avoid overloading a
 single native-validation session. NV-006 and NV-009 do not need to be
@@ -793,6 +794,43 @@ governed, it's habit-governed. **Implication for open questions:**
 NV-002 (copula) and NV-001 (go) should each get a "is this register
 variation rather than a grammatical rule" branch before assuming a
 strict selection rule exists.
+
+---
+
+## NV-013 — Purposive form of `ring·a` ("sing") and `Chroka` ("dance")
+
+**Topic:** Confirm `ring·na`/`Chroka·na`(or equivalent) as the "want to
+sing"/"want to dance" forms, replacing `purpose_map.json`'s unconfirmed
+`bit·na`/`ruru·na`.
+
+**Background:** `docs/PENDING_REGRESSION_CASES.md` RC-CANDIDATE-007.
+`bit·na`/`ruru·na` have no confirmation trail at all; `ring·na` is a
+plausible regular `-na` formation by analogy (RULE-015) on the
+independently-confirmed `ring·a` root, not itself confirmed.
+
+**Required Native Validation:** "How do you say 'I want to sing'? 'I
+want to dance'?" — cheap, two words, high translation-impact (fixes a
+reachable "want to X" construction class).
+
+**Status:** OPEN — Needs Native Validation (direct), low effort to ask.
+
+---
+
+## Provisional recommendation: RULE-031 default (not a resolution)
+
+Copula selection (RULE-031) stays genuinely open — no native validation
+exists to resolve it. But `translationEngine.js` currently has **zero**
+copula-insertion logic at all for predicate adjectives (confirmed via
+full engine read, 2026-07-09), so *something* runs today, unguided. Given
+the evidence: the zero-copula bare-adjective strategy (`Gari sila`,
+`Me·chik sila`, `Anga am`) is the most-attested pattern (5+ independent
+examples, 3 different sentence types) and requires no suffix machinery
+to implement. **Recommendation to Claude B, if a default is wanted before
+NV-002 resolves:** default new predicate-adjective grammar-assembly to
+bare adjective, no copula insertion — matches the safest, most-attested
+existing pattern, doesn't foreclose the `ong·a`/`daka` question, and is
+easy to override once NV-002 lands. Not a claim that this is "correct"
+in general — a conservative default under genuine uncertainty.
 
 ---
 

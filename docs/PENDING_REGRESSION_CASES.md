@@ -60,6 +60,28 @@ Each candidate includes: input, current (actual) output, expected output
   engineering-only fix once diagnosed) — flagging here rather than fixing
   directly per the evidence-first instruction
 
+**Claude A Review (2026-07-10):** In scope, confirmed by evidence, not
+just this one sentence. `·o` = general locative ("in"/"on"/"at"/"with"),
+`·chi` = motion-to ("to") — two suffixes, already distinct and both
+independently confirmed (primary-source suffixes.pdf: `Tableo te·rik
+donga`="there is banana on the table", `Anga antio sengenga`="I am
+waiting at the market", `Anga = ang + na = angna`="to me" dative;
+`Antichi re·angbo`="go to the market"). **Recommended fix:** map English
+`in`/`on`/`at` (stative-location sense, not `to`) to `·o` in
+grammar-assembly, same tier as the existing `·chi` handling for `to` —
+not a one-off "in bed" patch. **Translation impact — this fixes a whole
+class, not one sentence:** every English `[verb] [prep] [location]`
+adjunct currently either gets silently stopword-stripped or wrongly
+`·ko`-marked. Suggested regression additions beyond "in bed": `"the
+banana is on the table"`→`Te·rik tableo donga`-shape, `"I am waiting at
+the market"`→`Anga antio sengenga` (already native-confirmed, good
+regression case), `"I live in Meghalaya"`→`...Meghalaya-o...` (Batch 3,
+constructed not native-verified — lower priority regression case).
+**Do not** map `in` to `·o` when it's part of a fixed
+`corrections.json`/idiom entry that already resolves correctly —
+this should only fire in the SOV grammar-assembly fallback path, same
+scope as the existing `·chi` logic, not override working exact matches.
+
 ## RC-CANDIDATE-003 — Posture verb "lying" produces malformed/invalid output
 
 - **Input:** `"I am lying down"` / `"I am lying in bed"`
@@ -84,6 +106,22 @@ Each candidate includes: input, current (actual) output, expected output
   launch-blocking (posture verbs aren't in the current V1.0 scope
   otherwise).
 - **Status:** Needs Claude A Review, then Needs Thangseng Validation for the correct target form(s)
+
+**Claude A Review (2026-07-10):** Full paradigm still needs native
+validation (tracked NV-007) — do not implement a complete conjugation
+guess. But the two malformed outputs are each independently, cheaply
+preventable now, without waiting on that: (1) `"lying down"` matching
+the unrelated `down`/`Ka·ma` correction is a string-collision, not a
+grammar gap — same lexical-split class as `ring`/`ring·` (NV-010) and
+exactly what `CLAUDE_A_FINAL_HANDOUT.md` flags as the costliest
+recurring bug here; scope the `down`/`Ka·ma` match so it doesn't fire on
+"lying down." (2) `"lying in bed"` → `Anga Palangha` is the noun-as-verb-
+root fallback firing on `Palang` — guard that fallback so it doesn't
+apply to words already present in the dictionary as nouns. **Translation
+impact:** doesn't yet produce a *correct* posture-verb sentence, but
+converts two confirmed-invalid outputs into a graceful gap
+(`[UNKNOWN]`-style) — a real quality improvement even without the full
+`tue` paradigm, since invalid Garo is worse than an honest gap.
 
 ## RC-CANDIDATE-004 — Ability modal ("can") dropped entirely
 
@@ -173,6 +211,17 @@ Each candidate includes: input, current (actual) output, expected output
   extracting, per the "preserve exact behavior" requirement — found this
   in the process, did not go looking for it separately)
 
+**Claude A Review (2026-07-10):** Confirmed — `am·e·nik·na` is a retired
+contamination, not a valid synonym. `Sandia` (RULE-032) is correct.
+Recommended `purpose_map.json` value: `Sandi·na` (regular `-na` infinitive
+formation on the confirmed `Sandia` stem, matching RULE-015's stem-
+formation pattern used elsewhere in the same table). Note: primary-source
+transcripts also confirm `Am·a` as a second valid word for "search" — a
+likely synonym, not a competing value for this specific slot, no reason
+to prefer it over `Sandi·na` here without further evidence. **Translation
+impact:** fixes every "want to search"/"went to search"-style sentence,
+a real reachable construction, not an edge case.
+
 ## RC-CANDIDATE-007 — `sing`/`dance` purpose-clause forms use unrelated roots
 
 - **Input pattern:** `"i want to sing"` / `"i want to dance"` (purpose-clause construction, same code path as RC-CANDIDATE-006)
@@ -202,6 +251,14 @@ Each candidate includes: input, current (actual) output, expected output
 - **Severity:** Medium — same class as RC-006, reachable via ordinary
   "want to X" phrasing
 - **Status:** Needs Claude A Review (which of a/b/c above is correct)
+
+**Claude A Review (2026-07-10):** `sing`: no direct "want to sing"
+evidence exists, but `ring·na` is the regular `-na` formation on the
+confirmed `ring·a` root (RULE-015 stem formation) — same pattern as
+`cha·na`, `dakna`. Medium-confidence candidate replacement for `bit·na`,
+not a confirmed fix; flag for Thangseng rather than swap silently.
+`dance`: still fully open, no new evidence, no recommendation — leave
+`Chroka`/`ruru·na` both as-is pending native input.
 
 ## RC-CANDIDATE-008 — 9 irregular-verb forms differ between `corrections.json` and `irregular_verbs.json`
 
