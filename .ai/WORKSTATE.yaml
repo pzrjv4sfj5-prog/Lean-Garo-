@@ -32,18 +32,22 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Codex audit consolidation pass: promoted RULE-007/G2/G7/G-classifier
-    to formal catalogue entries (evidence already existed, no native
-    validation needed), added RULE-026 corpus row. Corrected a wrong
-    RC-008 verdict on "bought" after finding a conflicting already-
-    audited VALIDATION_CORPUS.md row - retracted, added to NV-014.
-    Fixed stale 51/51 test count in PROJECT_STATUS.md. Found and
-    flagged 5 concrete grammar errors in user-facing VerbsGrammar.jsx
-    (wrong raka on agan/nika, hyphens instead of raka, reversed
-    classifier-number order, copy-paste imperative error) - none
-    needed native validation, all checkable against existing confirmed
-    data. Flagged stale-but-dead phrase_maps.js hortative entries
-    (shadowed by corrections.json, not live).
+    Class-level cleanup, not isolated fixes. Closed the entire
+    GRAMMAR_SPEC.md-to-catalogue promotion gap (10 more rules: 005,
+    006, 009, 014, 021, 023, 024, 027, 028, 032 - was citing RULE-032
+    in RC-006 review without it ever existing in the catalogue, fixed).
+    Marked GRAMMAR_SPEC.md superseded to prevent recurrence. Found
+    GARO_GRAMMAR_REFERENCE.md has a genuinely valuable daka-copula
+    insight (verified against live corrections.json) AND a confirmed
+    error (ring·aha mislabeled "drank", same lexical-split class as
+    NV-010) in the same document - established per-claim verification
+    as the standing discipline for legacy docs, not per-document trust.
+    This narrows RULE-031 from a 3-way to effectively a 2-way open
+    question (ong·a vs bare-adjective for predicate adjectives; daka's
+    role is now reasonably well understood separately). Fixed 2
+    instances of a missing-header pattern in my own prior edits
+    (RULE-015, "Provisional recommendation" section) - same str_replace
+    failure mode recurring, now fully swept and verified clean.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

@@ -47,6 +47,7 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Launch Priority:** P0 (3 of 5 classifiers implemented); P1 (`jol`/`ge·` implementation gap).
 
 ---
+### RULE-015 — Stem Formation
 **Description:** Stem = root minus trailing letter. If the root carries raka, letters after the raka are stripped but raka is retained; suffixes attach to the stem, not the citation form.
 **Examples:** `daka`→`dak`+suffix (`dakgen`, `dakbo`, `daknabe`, `dakjawa`); `cha·a`→`cha·`+suffix (`cha·gen`, `cha·bo`); `ka·a`→`ka·`+suffix. Compound verbs: only the second word changes (`a·jak soka`→`a·jak sok`+suffix).
 **Counterexamples:** Adding suffix without stripping (`ka·a`+`jawa`) is confirmed incorrect. Dropping raka (`ka`+`jawa`) is confirmed incorrect — raka must be retained even after stripping.
@@ -66,6 +67,116 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Validation Status:** Verified (one worked sentence, no counterexample).
 **Confidence:** Medium — single example, no test of reflexive vs. non-reflexive possessive contrast (e.g. "she did her [someone else's] work" to confirm `an·tangni` is specifically reflexive and not just general 3rd-person genitive).
 **Launch Priority:** P1 — not currently wired into `translationEngine.js` at all (`GRAMMAR_SPEC.md`'s own note: "corrections.json only... gap"). Engine implementation is Claude B's call.
+
+---
+### RULE-005 — Copula `daka`
+**Description:** `daka` functions as a copula in at least two confirmed contexts: (a) bare existential "to be" with no complement (`Anga daka`="I am"); (b) predicate nominal ("X is a Y": `Ang·ni pa·a skigipa daka`="my father is a teacher"). A third possible use — predicate adjective — has one ambiguous data point (`rinok rinok daka`="is gentle," from `love is not angry but gentle`) that could be adjectival or could be a manner/state-noun construction closer to (b); not confidently classified either way.
+**Examples:** `Anga daka`/`Na·a daka`/`Ua daka`/`An·ching daka` (bare, all persons, verified live in `corrections.json`); `Ang·ni pa·a skigipa daka` (predicate nominal); `rinok rinok daka` (ambiguous).
+**Counterexamples:** `Anga kusi ong·a`="I am happy" and `Nama ong·a`="it is good" — clear predicate-adjective constructions that do **not** use `daka` — confirms `daka` is not simply interchangeable with the `ong·a` strategy, at minimum for these two adjectives.
+**Dependencies:** RULE-031 (Copula Inconsistency) — this finding narrows but does not resolve RULE-031: the open question is specifically predicate-adjective selection (`ong·a` vs. bare-adjective), not whether `daka` is a real, broadly-used copula (it clearly is, for at least contexts (a) and (b) above).
+**Native Notes:** Source Rule 5, `GRAMMAR_SPEC.md`. `GARO_GRAMMAR_REFERENCE.md` (2026-07-10 review) claims `daka` "works for ALL persons" as a general copula, confirmed correct for contexts (a)/(b) against live `corrections.json` data — but the same document also contains a confirmed error elsewhere (`ring·aha` mislabeled "drank," actually the `ring·`="sing" root — the exact lexical split NV-010 already resolved), so its claims were verified individually here, not trusted wholesale. General lesson: legacy doc trust is per-claim, not per-document.
+**Validation Status:** Verified (contexts a/b); Needs Native Validation (predicate-adjective use — the `rinok rinok daka` ambiguous case).
+**Confidence:** High (bare copula, predicate nominal); Low (predicate adjective).
+**Launch Priority:** P0 — not wired into `translationEngine.js` grammar-assembly at all (confirmed via full engine read, 2026-07-09) despite being clearly live and correct in `corrections.json`'s exact-match layer. The engine gap is real even though the linguistic rule is now better-evidenced than before.
+
+---
+### RULE-006 — Adjective Placement
+**Description:** Adjectives follow the noun they modify (confirmed pattern across attested examples), not preceding it as in English.
+**Examples:** `Gari sila`="the car is beautiful" (predicative use); attributive use not separately attested with its own example.
+**Counterexamples:** none recorded.
+**Dependencies:** RULE-031 (shares evidence with the bare-adjective predicative strategy).
+**Native Notes:** Source Rule 6, `GRAMMAR_SPEC.md`.
+**Validation Status:** Verified (predicative); Needs Native Validation (attributive, noun+adjective within a noun phrase rather than as a predicate — no clean example distinguishing the two uses found yet).
+**Confidence:** Medium.
+**Launch Priority:** P1 — not modeled in the engine at all (`GRAMMAR_SPEC.md`'s own note).
+
+---
+### RULE-009 — Noun Suffix System
+**Description:** Umbrella rule for the noun-case suffix set: `-ko` (accusative/object), `-o` (locative), `-chi` (allative/motion-to), `-ni` (genitive), `-na` (dative/infinitive-purposive). Each suffix independently confirmed (see RULE-033/034/035 for `-o` specifically); this entry exists to track the *system* rather than duplicate each suffix's own rule.
+**Examples:** see RULE-033 (`-o`), RULE-030 (`-chi`), `Angni ki·tap`="my book" (`-ni`), `Angna ki·tap ra·babo`="bring me a book" (`-na` dative).
+**Counterexamples:** none recorded.
+**Dependencies:** RULE-033, RULE-034, RULE-035 (`-o`); RULE-030 (`-chi`).
+**Native Notes:** Source Rule 9, `GRAMMAR_SPEC.md`; primary source suffixes.pdf for the full system overview.
+**Validation Status:** Verified (`-ko`, `-chi`, `-ni`, `-na`); Verified with productivity caveats (`-o`, per RULE-033/G2).
+**Confidence:** High (individual suffixes); Medium (system-level generalization across arbitrary nouns).
+**Launch Priority:** P0 (`-ko` implemented); P1 (`-o`/`-chi`/`-ni`/`-na` general grammar-assembly routing — `-ko` is the only one currently wired, per `GRAMMAR_SPEC.md`'s own gap note, confirmed by engine read).
+
+---
+### RULE-014 — `dongama` Existential "There Is"
+**Description:** `dongama` marks existential "there is" constructions, distinct from possessive/locative uses of `dong`/`donga` documented elsewhere (see `VERB_INVENTORY.md`'s `dong` entry).
+**Examples:** none with a full worked sentence in this repository yet — flagged as existing but unattested with a concrete example.
+**Counterexamples:** none recorded.
+**Dependencies:** `VERB_INVENTORY.md`'s `dong` entry (RULE-G7 existential possession is a related but distinct sense — worth checking whether `dongama` and plain `donga` differ systematically or are register/emphasis variants).
+**Native Notes:** Source Rule 14, `GRAMMAR_SPEC.md`.
+**Validation Status:** Needs Native Validation — no worked example found in any document read so far.
+**Confidence:** Low — asserted but unattested.
+**Launch Priority:** P2 — not modeled in the engine.
+
+---
+### RULE-021 — `song·` vs. `songna` — Raka Distinguishes Meaning
+**Description:** `song·` (with raka) and `songna`/`song` (without) are different words — raka distinguishes "cook" from "plant," not a free variant of one root. Same class of lexical split as `ring·`("sing")/`ring`("drink"), NV-010's resolved case.
+**Examples:** dictionary entries for "cook" vs. "plant" (see `master_dictionary.json`/`corrections.json`).
+**Counterexamples:** treating these as one root with inconsistent raka would be the exact mistake this rule exists to prevent.
+**Dependencies:** RULE-001 (Raka Locality — this is the sharpest confirmed example of raka being lexically contrastive, not just phonologically present/absent).
+**Native Notes:** Source Rule 21, `GRAMMAR_SPEC.md`.
+**Validation Status:** Verified.
+**Confidence:** High.
+**Launch Priority:** P0 — implemented, dictionary-level distinction already in place.
+
+---
+### RULE-023 — `-gen` (Future) Never Carries Raka
+**Description:** The future suffix `-gen` never triggers or carries raka, regardless of the root it attaches to — a specific, testable claim distinct from RULE-001's general locality principle.
+**Examples:** `bilakgen`="will be strong" (root `bilak`, no raka on the suffix); general pattern across future-tense forms.
+**Counterexamples:** none recorded.
+**Dependencies:** RULE-001 (Raka Locality), RULE-015 (Stem Formation).
+**Native Notes:** Source Rule 23, `GRAMMAR_SPEC.md`.
+**Validation Status:** Verified, though `GRAMMAR_MORPHOLOGY_CONFIDENCE_REVIEW.md` already flagged this exact claim as resting on a single example (`bilakgen`) and recommended a raka-bearing-root test case to confirm raka-suppression generally, not just absence-on-an-already-raka-free-root.
+**Confidence:** Medium — the claim itself is clean, but the one example available doesn't distinguish "never had raka to begin with" from "raka actively suppressed."
+**Launch Priority:** P1.
+
+---
+### RULE-024 — `-aha` Full-Root-Append Exception
+**Description:** A specific subset of verbs append `-aha` to the full root rather than the stripped stem (RULE-015's normal stem-formation rule), confirmed via internal QA rather than native elicitation.
+**Examples:** `he cooked` (per `GRAMMAR_SPEC.md`'s citation — root not independently re-verified against confirmed dictionary data in this pass).
+**Counterexamples:** RULE-015's normal pattern, which this rule is an exception to.
+**Dependencies:** RULE-015 (Stem Formation), RULE-002 (Past/Perfect Unification).
+**Native Notes:** Source Rule 24, `GRAMMAR_SPEC.md` — internal QA discovery (2026-07-04), not a direct Thangseng statement. Flagged here as lower-provenance than most other rules in this catalogue.
+**Validation Status:** Needs Native Validation — internal-QA-confirmed only, never independently checked against a native source in any document read so far.
+**Confidence:** Low-Medium — real (caught a live bug at the time) but provenance is engineering-internal, not native.
+**Launch Priority:** P1.
+
+---
+### RULE-027 — No True Simple-Past Suffix; `-ja` Covers Past-Referring Negation
+**Description:** Garo has no dedicated simple-past negation suffix distinct from present negation — `-ja` covers both, disambiguated by context, not morphology.
+**Examples:** `na·a mijalo anti re·angama?`="did you go to the market yesterday?", native reply confirmed as `re·angja`="did not go" (past-referring, same `-ja` used for present negation).
+**Counterexamples:** none — this rule documents an *absence* (no dedicated past-negative morpheme), confirmed by Thangseng directly answering "is there a confirmed suffix for true simple past negation?" with no.
+**Dependencies:** RULE-017 (Simple Negation `-ja`) — RULE-027 is the specific "does -ja also cover past?" confirmation for that rule.
+**Native Notes:** Primary source, July 5 chat transcript: *"I don't think that we have something that may be called a true simple past suffix. As far as I can tell, 'ja' is also used to talk about past events."* Direct, unambiguous answer to a consolidated native-validation question.
+**Validation Status:** Verified.
+**Confidence:** High — direct, explicit native answer to a specifically-posed question, not inferred.
+**Launch Priority:** P0 — implemented (`applyNegation` is tense-independent per `GRAMMAR_SPEC.md`).
+
+---
+### RULE-028 — `-aha`/`-manaha` Overlap in Spoken Garo
+**Description:** `-aha` (simple past/perfect, RULE-002) and `-manaha` (completive, RULE-026) overlap in meaning in spoken Garo — not fully distinct categories in practice, though RULE-026 treats them as formally separate.
+**Examples:** `cha·aha`="ate" vs. `cha·manaha`="ate/has done eating" — both acceptable, per Thangseng.
+**Counterexamples:** none — this rule documents overlap, not a contrast.
+**Dependencies:** RULE-002, RULE-026 — this rule is the explicit native confirmation that those two rules' domains overlap rather than being cleanly complementary.
+**Native Notes:** Primary source, July 5 transcript, direct answer to "does -manaha ever overlap with or replace -aha?": *"'aha' and 'manaha' do overlap in meaning as far as spoken Garo is concerned. How it is used in literature cannot be verified due to lack of source."*
+**Validation Status:** Verified (spoken register); explicitly unconfirmed for written/literary register — Thangseng flagged this distinction himself.
+**Confidence:** High.
+**Launch Priority:** P0 — by design, no code enforces artificial separation (`GRAMMAR_SPEC.md`'s own note).
+
+---
+### RULE-032 — `search` = `Sandia`
+**Description:** `Sandia` is the confirmed, correct word for "search," replacing a contaminated `am·e·nik·na` compound that persisted incorrectly in some code paths.
+**Examples:** `search`, `search for him`, `he searched`, `he was searching`, `she used to search` — full paradigm confirmed via natural `applyTense` generation from the `Sandia` root.
+**Counterexamples:** `am·e·nik·na` — confirmed wrong, retained as documented counterexample. Also see `Am·a` — a second, independently-confirmed word for "search" (primary source, July 3 transcript: *"Sandia = search / Am·a (note the raka) = search"*) — likely a synonym, not a competing "correct" answer; not yet resolved which the translator should prefer by default beyond `Sandia`, already the more repeatedly-attested one.
+**Dependencies:** RC-CANDIDATE-006 (`docs/PENDING_REGRESSION_CASES.md`) — the still-live purpose-clause bug where `am·e·nik·na` persists despite this rule.
+**Native Notes:** Source Rule 32, `GRAMMAR_SPEC.md`; `Am·a` synonym from July 3 primary-source transcript.
+**Validation Status:** Verified (`Sandia`); Verified (`Am·a` exists, unresolved how it relates — synonym, register variant, or narrower sense not yet distinguished).
+**Confidence:** High (`Sandia` as the primary form); Medium (relationship between `Sandia` and `Am·a`).
+**Launch Priority:** P0 (`Sandia`, implemented in `corrections.json`); P1 (`purpose_map.json`'s stale `am·e·nik·na`, RC-CANDIDATE-006 — already reviewed with `Sandi·na` recommended).
 
 ---
 ### RULE-001 — Raka Locality
@@ -216,6 +327,8 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Description:** Three unreconciled predicative strategies coexist in confirmed data — not four; see the Correction note below, which retracts an earlier session's speculation about a fourth pattern: (a) an `ong·a`-copula strategy, always in bare/uninflected form, attaching after an adjective or stative noun (`Anga kusi ong·a`="I am happy", `Anga duk ong·a`="I am sad"); (b) self-inflecting stative roots that take normal verb morphology directly with no copula element at all (`Anga sakamenga`="I am sick", using `-enga` progressive on the root itself); (c) a zero-copula bare-adjective strategy with no `ong·a` or inflection at all (`Gari sila`="the car is beautiful", `Me·chik sila`/`Me·asa sila`, `Anga am`="I am okay"). `daka`-copula (Rule 5) is confirmed to exist but has no worked predicative-adjective example — its behavior here is unattested, not just unconfirmed, so it isn't counted as a fourth confirmed strategy above.
 **Examples:** `ong·a`-copula (bare): `Anga kusi ong·a`, `Anga duk ong·a`, `Achak tebil kokkimao ong·a` (locative/existential use). Self-inflecting: `Anga sakamenga`. Zero-copula bare-adjective: `Gari sila`, `Me·chik sila`, `Me·asa sila`, `Ua me·asa namen changroa`, `Anga am`, `Sepanga`/`Chel·a` (near/far).
 **Correction (2026-07-09):** An earlier working note in this session speculated that `Anga duk ong·enga` (sad, with progressive suffix) suggested a *fourth* copula-adjacent pattern (`ong·` as an inflectable verb root, distinct from the three strategies above). That form is **stale** — `docs/GLOBAL_RAKA_CONVERSION_HANDOFF.md` (2026-06-17) shows it was corrected to `Anga duk ong·a` (bare, no progressive) before this session started, confirmed live in `corrections.json`. The speculation was built on a historical batch log (`NEW_SENTENCES_BATCH3_CONVERSATION.md`) without checking whether it had been superseded — retracted here rather than left standing. The corrected data is simpler and cleaner: `duk ong·a` is just another instance of the already-known bare `ong·a` pattern, not a new one.
+
+**Correction (2026-07-10):** Cross-checking `GARO_GRAMMAR_REFERENCE.md` against live `corrections.json` (see RULE-005) confirms `daka` is a real, broadly-used copula for bare existential and predicate-nominal constructions — not merely "unattested" as this rule previously said. This **narrows** the open question rather than resolving it: `daka` is confirmed to *not* compete with `ong·a`/bare-adjective for predicate-adjective sentences specifically (no confirmed case of `daka` following a clear adjective, only one ambiguous case) — so the real unresolved selection is `ong·a` vs. bare-adjective for predicate adjectives, a 2-way question, with `daka`'s role now reasonably well understood as a separate, mostly-settled construction.
 **Counterexamples:** N/A — this rule documents an unresolved contradiction, not a settled pattern.
 **Dependencies:** affects RULE-004 (predication generally), Grammar Specification §5. Connects to the register-variation pattern noted across several other rules this session (see `THANGSENG_NATIVE_VALIDATION.md`'s discussion of formal/spoken doublets) — worth checking whether any of these three strategies track register rather than a strictly grammatical trigger.
 **Native Notes:** Source Rule 31, flagged by repository audit, not yet put to Thangseng.

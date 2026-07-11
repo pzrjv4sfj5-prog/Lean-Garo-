@@ -841,6 +841,8 @@ paradigm cleanup, not launch-blocking).
 
 ---
 
+## Provisional recommendation: RULE-031 default (not a resolution)
+
 Copula selection (RULE-031) stays genuinely open — no native validation
 exists to resolve it. But `translationEngine.js` currently has **zero**
 copula-insertion logic at all for predicate adjectives (confirmed via
@@ -854,6 +856,24 @@ bare adjective, no copula insertion — matches the safest, most-attested
 existing pattern, doesn't foreclose the `ong·a`/`daka` question, and is
 easy to override once NV-002 lands. Not a claim that this is "correct"
 in general — a conservative default under genuine uncertainty.
+
+---
+
+## Observation: `dong·a`/`donga` raka context-dependence (connects to NV-010)
+
+`docs/GARO_GRAMMAR_REFERENCE.md` (verified-per-claim, see RULE-005 note)
+states `dong` shows raka in some contexts and not others: `dong·a`
+(general) vs. `donga` "without raka in the 'Ango...donga' construction"
+specifically — i.e. the same root varies by grammatical context, not
+just by lexical identity. This is a live example of NV-010's hypothesis
+1 (a real, context-conditioned raka rule), which lost ground when `ring`
+turned out to be a lexical split rather than a phonological pattern.
+Not itself confirmed (this document's `daka` claims were individually
+verified; this specific claim about `dong` was not separately checked
+against corrections.json for the "Ango...donga" context specifically).
+Worth a native question if NV-010 gets revisited: "does `dong` ever
+change with raka?" — separate from the `agan`/`porai`/`tusi` cluster,
+since `dong` isn't part of that group.
 
 ---
 
