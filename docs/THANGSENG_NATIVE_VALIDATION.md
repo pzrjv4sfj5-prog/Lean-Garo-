@@ -21,7 +21,10 @@ need Thangseng at all.
    isn't one in "I spoke"/"I was studying"? Also: is there a different
    word sounding like `agan·`/`tus·` (distinct from `agan`/`tusi`) —
    `ring` turned out to be exactly this case (sing vs. drink). Two
-   data points, not four — `ring` resolved independently.
+   data points, not four — `ring` resolved independently. (`tusi`'s
+   `tus·aha` form is tracked in the full NV-010 entry too, but isn't a
+   `-na`-construction case like the other two, so it's not bundled in
+   this specific ask — a separate, smaller question if it comes up.)
 
 4. **(NV-013, added 2026-07-10)** "I want to sing" / "I want to dance"
    — two words, resolves a live `purpose_map.json` bug either way.
@@ -816,16 +819,17 @@ reachable "want to X" construction class).
 
 ---
 
-## NV-014 — `stand`/`sit`/`heard` root confirmation (RC-CANDIDATE-008 remainder)
+## NV-014 — `stand`/`sit`/`heard`/`bought` root confirmation (RC-CANDIDATE-008 remainder)
 
-**Topic:** Three unresolved forms flagged by `repository-intelligence.js`
-table-drift check, no existing evidence to adjudicate.
+**Topic:** Four unresolved forms, no existing evidence sufficient to adjudicate.
 
 **Required Native Validation:** "How do you say 'standing'? Is it
 `chadatenga`, `chadenga`, or related to `Chakata` ('stand,' already in
 the dictionary)?" / "'sitting' — `asongenga` or `asong·enga`?" / "'heard'
 — is it `rangsan chanchiaha` or `knachik·aha`, or are these two
-different things (e.g. 'heard [a sound]' vs. 'heard [news/that X]')?"
+different things (e.g. 'heard [a sound]' vs. 'heard [news/that X]')?" /
+"'bought' — is there a `·` in it? We have two conflicting records:
+`breaha` (no raka) and `Bre·ajok`/`brea·aha` (with raka)."
 
 **Why the Answer Matters:** `standing` may be a 3-way vocabulary
 question (`Chakata` vs. `chadat`/`chad`), not just a 2-way raka

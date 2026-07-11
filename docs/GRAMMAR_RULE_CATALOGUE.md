@@ -3,8 +3,50 @@
 Structured per Sprint Work Package schema. Rule IDs map to
 `THANGSENG_RULES_LOOKUP.md` source rules where applicable (cited).
 
+### RULE-007 — `Hai` Construction (Hortative)
+**Description:** `Hai` = "let's," precedes a verb in `-na` (infinitive, standard) or `-bo` (imperative-extended, "not so strict" register) form to form a hortative.
+**Examples:** `Hai cha·na`="let's eat" (standard), `Hai cha·bo`="let's eat" (casual register — Thangseng's own words), `Hai re·naha`="let's go".
+**Counterexamples:** none recorded.
+**Dependencies:** RULE-015 (Stem Formation), RULE-029 (Hortative/Imperative `-bo`, shares the casual-register form).
+**Native Notes:** Primary source: July 3-5 chat transcript — Thangseng explicitly: *"'bo' is essentially imperative. But it may also be used in a hortative sense also... 'let us eat' is expressed by saying 'hai cha·na'. But in a not so strict manner it may also be done by saying 'hai cha·bo'."*
+**Validation Status:** Verified.
+**Confidence:** High.
+**Launch Priority:** P0 — implemented, 2 corpus examples.
+
 ---
-### RULE-015 — Stem Formation
+### RULE-G2 — Pre-verbal Clustering (Locative Phrases)
+**Description:** Locative phrases, classifier+number phrases, and other adjunct material cluster before the verb in SOV order, consistent with RULE-003.
+**Examples:** `Achak tebil nokkimao ong·a` = "the dog is under the table" (locative phrase `tebil nokkimao` clusters before `ong·a`).
+**Counterexamples:** none recorded.
+**Dependencies:** RULE-003 (SOV Word Order), RULE-033 (Locative "Under").
+**Native Notes:** Same source as RULE-033 — direct Thangseng confirmation, 2026-07-05.
+**Validation Status:** Verified (one full-sentence example; general productivity across arbitrary locative+verb combinations not yet stress-tested — see Grammar Specification §2).
+**Confidence:** High (this example); Medium (general productivity).
+**Launch Priority:** P1.
+
+---
+### RULE-G7 — Existential Possession
+**Description:** Possession is expressed existentially ("at me, X exists") rather than with a dedicated "have" verb in some constructions; `donga`/`dong·a` (exist/stay/have) does double duty.
+**Examples:** `Uo bi·sa sakgittam donga` = "she has three children" (lit. "she child-classifier-three exists").
+**Counterexamples:** none recorded — but see `VERB_INVENTORY.md`'s `dong` entry, which separately confirms `donga` also covers plain existential ("there is") and locative-stay senses, not exclusively possession.
+**Dependencies:** none.
+**Native Notes:** Primary source: July 3 chat transcript, direct Thangseng confirmation, superseding an earlier constructed (non-native) form — see `docs/NEW_SENTENCES_BATCH3_CONVERSATION.md`'s superseded-forms notice.
+**Validation Status:** Verified.
+**Confidence:** High — single example, but the underlying `donga` polysemy is independently cross-confirmed by multiple unrelated sentences (`VERB_INVENTORY.md`), so this isn't resting alone the way a truly isolated single example would be.
+**Launch Priority:** P0 — the corrected form is already live in `corrections.json`.
+
+---
+### RULE-G-classifier — Numeral Classifiers
+**Description:** Counted nouns take a classifier attaching to the number, not the noun; classifier choice depends on the noun's semantic class (books, animals, long objects, trees, pens/sticks each take a different classifier).
+**Examples:** `ki·tap kinggittam`="three books" (`king`, no raka), `achak mang·gni`="two dogs" (`mang·`, raka), `wa·a jolsa`="one stalk of bamboo" (`jol`, no raka), `a'bil panggni`="two trees" (`pang`, no raka), `kolom ge·sa`="a pen" (`ge·`, raka).
+**Counterexamples:** none recorded. Note: `translationEngine.js`'s `classifierHints` only implements `mang`/`sak`/`gong`/`king` — `jol` and `ge·` are confirmed but unimplemented (flagged to Claude B, `PROJECT_STATUS.md`).
+**Dependencies:** RULE-001 (Raka Locality — classifier raka is lexical per-classifier, same locality principle).
+**Native Notes:** THANGSENG classifier confirmation, primary source suffixes.pdf transcript (bamboo/pen examples with explicit raka notes), Rule 21.
+**Validation Status:** Verified.
+**Confidence:** High — 5 independent examples across distinct classifier classes, the best-evidenced morphological category in the repository alongside RULE-001.
+**Launch Priority:** P0 (3 of 5 classifiers implemented); P1 (`jol`/`ge·` implementation gap).
+
+---
 **Description:** Stem = root minus trailing letter. If the root carries raka, letters after the raka are stripped but raka is retained; suffixes attach to the stem, not the citation form.
 **Examples:** `daka`→`dak`+suffix (`dakgen`, `dakbo`, `daknabe`, `dakjawa`); `cha·a`→`cha·`+suffix (`cha·gen`, `cha·bo`); `ka·a`→`ka·`+suffix. Compound verbs: only the second word changes (`a·jak soka`→`a·jak sok`+suffix).
 **Counterexamples:** Adding suffix without stripping (`ka·a`+`jawa`) is confirmed incorrect. Dropping raka (`ka`+`jawa`) is confirmed incorrect — raka must be retained even after stripping.

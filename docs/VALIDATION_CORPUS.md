@@ -16,6 +16,7 @@ sourced directly from `src/data/corrections.json` (790 entries) or
 | have you seen | Na·a Nikjok ma? | RULE-001 | `nika` (no raka)+`-jok` | Verified | High | corrections.json, raka-audit corrected |
 | have you spoken | Na·a Aganjok ma? | RULE-001 | `agan` (no raka)+`-jok` | Verified | High | corrections.json, raka-audit corrected |
 | have you bought | Na·a Bre·ajok ma? | RULE-001 | `bre·a` (with raka)+`-jok` | Verified | High | corrections.json, raka-audit corrected |
+| i have already eaten | Anga cha·manaha | RULE-026 | `cha·`+`-manaha` | Verified | Medium | THANGSENG_RULES_LOOKUP, primary source (Thangseng: "not so sure about this one") |
 | did you come | Na·a Re·baaha ma? | RULE-001, RULE-002 | `re·ba` (with raka)+`-aha` | Verified | High | corrections.json, raka-audit corrected |
 | i used to work | Anga ka·achim | RULE-013 | `ka·a`+`chim` (full-root) | Verified | High | THANGSENG_RULES_LOOKUP Rule 13 |
 | i was studying | Anga poraienga chim | RULE-013 | `porai`+`-enga` + separate `chim` | Verified | High | THANGSENG_RULES_LOOKUP Rule 13 |

@@ -32,13 +32,18 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Reviewed remaining RC-CANDIDATEs (004/005/008). RC-004: blocked on
-    NV-008, do not wire man·a (source entry itself UNVERIFIED). RC-005:
-    recommended systematic loanword passthrough over per-word entries.
-    RC-008: resolved 4/9 irregular-verb table conflicts from existing
-    evidence (coming/slept/sleeping/laughing/eaten), flagged a bonus
-    internal corrections.json conflict on "bought", escalated
-    standing/sitting/heard as NV-014.
+    Codex audit consolidation pass: promoted RULE-007/G2/G7/G-classifier
+    to formal catalogue entries (evidence already existed, no native
+    validation needed), added RULE-026 corpus row. Corrected a wrong
+    RC-008 verdict on "bought" after finding a conflicting already-
+    audited VALIDATION_CORPUS.md row - retracted, added to NV-014.
+    Fixed stale 51/51 test count in PROJECT_STATUS.md. Found and
+    flagged 5 concrete grammar errors in user-facing VerbsGrammar.jsx
+    (wrong raka on agan/nika, hyphens instead of raka, reversed
+    classifier-number order, copy-paste imperative error) - none
+    needed native validation, all checkable against existing confirmed
+    data. Flagged stale-but-dead phrase_maps.js hortative entries
+    (shadowed by corrections.json, not live).
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
