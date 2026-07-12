@@ -214,3 +214,30 @@ test('classifierHints includes jol (long objects) and ge (pen/stick), matching g
   const pencil = analyzeGrammar('give me a pencil');
   assert.ok(pencil.classifierHints.some(h => h.classifier === 'ge'), 'pencil should hint ge');
 });
+
+// --- RC-CANDIDATE-010 fix (2026-07-12): NP subjects (article + noun +
+// copula) now reach grammar-assembly instead of only pronoun subjects.
+// Scoped to a coherence check (see translationEngine.js's "Parser-
+// boundary review" comment) - covers Claude A's exact reported class,
+// NOT multi-word/adjective-modified subjects (documented boundary,
+// tested explicitly below to lock in the safe-fallback behavior). ---
+test('RC-CANDIDATE-010: NP subject (article+noun+copula) reaches grammar-assembly', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r1 = await translate('the book is on the table');
+  assert.equal(r1.method, 'grammar-assembly');
+  assert.equal(r1.garo, 'boi te·bil·o');
+  const r2 = await translate('the market is far');
+  assert.equal(r2.method, 'grammar-assembly');
+  assert.equal(r2.garo, 'bajal chel·a');
+});
+
+test('RC-CANDIDATE-010 boundary: adjective-modified NP subject safely falls back, does not mislabel', async () => {
+  const { analyzeGrammar, translate } = await import('../../src/translationEngine.js');
+  // "big" must NOT be picked as the subject in place of "dog" - this is
+  // the parser-boundary coherence check working as designed (rejects
+  // rather than guesses when no POS data can disambiguate).
+  const g = analyzeGrammar('a big dog is running');
+  assert.notEqual(g.subject?.english, 'big');
+  const r = await translate('a big dog is running');
+  assert.equal(r.method, 'sov-assembly', 'should safely fall back, not confidently mislabel via grammar-assembly');
+});

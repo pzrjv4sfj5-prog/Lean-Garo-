@@ -166,33 +166,57 @@ input ("eated," "buyed") still translates sensibly — real robustness.
 Classifier system mostly solid for direct "number noun" phrasing.
 
 ### RC-CANDIDATE-010 — NP-subject sentences never reach grammar-assembly
-**Severity: Highest — most systemic finding of this pass.**
-`"the book is on the table"` → `"Ki·tap te·bil"` (two bare nouns, no
-verb, no locative marker at all) — same failure across all 6 locations
-tested. **Root cause:** confirmed via prior full engine read —
-`analyzeGrammar` only fires when the sentence starts with a recognized
-pronoun (`PRONOUN_MAP` lookup). `"the book"`/`"the dog"` etc. never
-reach grammar-assembly at all, regardless of how well-formed the rest of
-the sentence is — they fall straight to the much weaker `sov-assembly`
-fallback. This isn't a locative-specific bug — it's a subject-detection
-gate affecting *any* sentence with a non-pronoun subject. Likely the
-single highest-value engineering fix available: extending subject
-detection to recognized common nouns (not just pronouns) would fix an
-entire sentence class, not one construction.
-**Not asking for implementation** — flagging severity and root cause per
-the handoff protocol.
+**Implemented:** commit series 2026-07-12. Root cause confirmed exactly
+as diagnosed — `analyzeGrammar`'s entire grammar-assembly block was
+gated on `PRONOUN_MAP[firstWord]`. Fix: added NP-subject detection
+scoped to `[article] + [noun] + [copula/end-of-sentence/stopword]`
+(a coherence check, not a per-word patch — see `translationEngine.js`'s
+"Parser-boundary review" comment for the full reasoning, including why a
+`findVerbForm`-based coherence check was tried and rejected — it proved
+unreliable since `findVerbForm` isn't actually verb-specific without POS
+data).
+
+**Confirmed working:** all 5 of the originally reported patterns (`"the
+book is on the table"`, `"the teacher is in the market"`, `"the market
+is far"`, `"the table is big"`, and `"the dog is under the table"` via
+the pre-existing `corrections.json` exact match) now reach
+`grammar-assembly` with correct subject + verb/locative structure.
+
+**Explicitly and intentionally out of scope (documented boundary, not a
+silent gap):** demonstrative-led (`"this dog..."`), quantifier-led
+(`"two teachers..."`), possessive-headed (`"my dog..."` as sentence
+subject), coordinated (`"the dog and the cat..."`), and any
+adjective/multi-word-modified subject (`"a big dog..."`) — these fail
+the coherence check and safely fall back to the pre-existing
+`sov-assembly` path rather than risk mislabeling. Real architectural
+limitation: no POS data exists anywhere in this repository to
+distinguish a modifier from a head noun (verified directly —
+`master_dictionary.json`'s `pos` field is null on every entry). Building
+real NP-boundary detection needs that data first; not attempted here.
+
+Regression tests: `tests/unit/translationEngine.test.js` — one
+confirming the fix, one confirming the boundary (adjective case safely
+falls back rather than mislabeling).
 
 ### RC-CANDIDATE-011 — Locative `·o` marking is per-noun, not generative
-**Severity: High.** `"i am lying in the bed"` → correct `·o`. `"i am
-lying in the market/school/house/table/room"` → **no** `·o` at all, bare
-noun, for every other location tested. Same pattern for `"waiting at the
-X"` (bed/table correct, others inconsistent). **Root cause:** the
-`RC-CANDIDATE-002` locative fix appears to apply only to nouns with a
-pre-existing stored locative form, not generatively to arbitrary nouns +
-`in`/`at`/`on`. Worse than the original bug in one sense — it's now
-*inconsistent* rather than *uniformly* wrong, which is harder to detect
-downstream. Related to RC-010 above — likely the same subject-detection
-gate, or a second, narrower gap in the `·o`-routing fix itself.
+**Resolved — confirmed disappeared, benchmark rerun 2026-07-12.** Per
+Priority 2 of the RC-010 handoff ("do not implement immediately, rerun
+the benchmark after RC-010, only implement if it's a separate issue"):
+reran all originally-reported sentences (`"i am lying in the
+bed/market/school/house/table/room"`, `"i am waiting at the
+bed/table/market/school/house"`). All now produce correct `·o` marking.
+**Not a separate issue — same root cause as RC-010.** Specifically: the
+RC-010 fix included a generalized guard in the verb-search loop (a word
+immediately after `in`/`on`/`at`, even across an intervening article, is
+never the main verb — see `translationEngine.js`). That guard applies
+inside the shared pronoun/NP-subject block, so it fixed locative marking
+for *both* subject types simultaneously, even though RC-011 was
+originally reported only for pronoun subjects. No separate
+implementation needed. One new minor observation surfaced during the
+rerun, unrelated to this fix: `"market"` resolves to two dictionary
+alternates joined by `"/"` (`"bajal / anti·o"`) rather than one clean
+value — a pre-existing dictionary-data quirk, not a grammar bug, noted
+below rather than fixed.
 
 ### RC-CANDIDATE-012 — Raka rendered as apostrophe (`'`) instead of `·` in live adjective output
 **Severity: Medium, but a new and concrete finding.** `"you are
