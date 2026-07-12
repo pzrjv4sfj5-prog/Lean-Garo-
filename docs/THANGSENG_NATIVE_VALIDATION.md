@@ -12,7 +12,9 @@ need Thangseng at all.
 1. **(NV-001, Rule 30)** Does "go" change form depending on whether a
    destination is mentioned? Test pairs: "I am not going" vs. "I am not
    going to the market"; "he did not go" vs. "he did not go to the
-   market."
+   market." Also worth asking directly: "is `-ang` a general 'away from
+   me' marker and `-ba` a general 'toward me' marker, usable beyond just
+   go/come?" — an academic source suggests this general system exists.
 2. **(NV-002, Rule 31)** After "happy"/"good"/"tired" as a predicate, is
    `ong·a` required, optional, or specific to certain persons (I/you/
    he-she)? How does it relate to `daka`?
@@ -71,13 +73,20 @@ settled selection rule between them.
   against the bare/directional split hypothesis, it's just not evidence
   *for* it either, since no bare-context "did not go" has been tested.
 
-**Existing Grammar Rules:** No numbered rule yet — tracked as an open
-item referenced by RULE-033's dependency list and `WORKSTATE.yaml`. Not
-yet formally in `GRAMMAR_RULE_CATALOGUE.md` as its own entry.
+**Existing Grammar Rules:** RULE-030 (`GRAMMAR_RULE_CATALOGUE.md`, added
+2026-07-09, status OPEN). *(Correction 2026-07-10: this note previously
+said "no numbered rule yet" — stale, fixed.)*
 
 **Existing Morphology:** `re·` treated as the bare root; `re·ang` as an
-extended/directional form of the same root (not yet confirmed whether
-`-ang` is a productive suffix elsewhere or specific to this verb).
+extended/directional form of the same root. **Update (2026-07-10):**
+`docs/GARO_GRAMMAR_VALIDATED.md` (Burling academic grammar, GOLD-tier
+external source) confirms `-ang-`("away from speaker") and `-ba-`("toward
+speaker") as a **general, productive directional suffix pair**, not
+verb-specific — this would mean `-ang` in `re·ang` isn't a "go"-specific
+irregularity at all, and directly explains the already-confirmed
+`re·ba`("come") as the same system's toward-speaker counterpart. Not
+native-direct, so doesn't resolve this on its own, but is a much
+better-grounded starting hypothesis than treating the split as arbitrary.
 
 **Candidate Hypotheses:**
 1. Bare `re·` = intransitive/destinationless "go"; `re·ang` = directional
@@ -88,6 +97,14 @@ extended/directional form of the same root (not yet confirmed whether
 3. Register or aspectual distinction unrelated to destination-presence
    (e.g. formality, immediacy) that happens to correlate with the
    destination pattern seen so far.
+4. **(Added 2026-07-10, highest-supported)** `-ang`/`-ba` are a general
+   away-from-/toward-speaker directional suffix pair (per Burling),
+   independent of destination presence — `re·` is simply "move/go" and
+   the directional suffix marks orientation relative to the speaker, not
+   whether a destination is stated. This would explain `re·ba`("come")
+   for free and doesn't require positing destination-presence as the
+   trigger at all. Needs the same native confirmation as hypothesis 1,
+   but is a better first thing to ask about given external corroboration.
 
 **Required Native Validation:** Present Thangseng with paired minimal
 contrasts, both with and without a destination, across at least

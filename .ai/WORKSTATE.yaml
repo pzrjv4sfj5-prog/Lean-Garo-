@@ -32,22 +32,21 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Class-level cleanup, not isolated fixes. Closed the entire
-    GRAMMAR_SPEC.md-to-catalogue promotion gap (10 more rules: 005,
-    006, 009, 014, 021, 023, 024, 027, 028, 032 - was citing RULE-032
-    in RC-006 review without it ever existing in the catalogue, fixed).
-    Marked GRAMMAR_SPEC.md superseded to prevent recurrence. Found
-    GARO_GRAMMAR_REFERENCE.md has a genuinely valuable daka-copula
-    insight (verified against live corrections.json) AND a confirmed
-    error (ring·aha mislabeled "drank", same lexical-split class as
-    NV-010) in the same document - established per-claim verification
-    as the standing discipline for legacy docs, not per-document trust.
-    This narrows RULE-031 from a 3-way to effectively a 2-way open
-    question (ong·a vs bare-adjective for predicate adjectives; daka's
-    role is now reasonably well understood separately). Fixed 2
-    instances of a missing-header pattern in my own prior edits
-    (RULE-015, "Provisional recommendation" section) - same str_replace
-    failure mode recurring, now fully swept and verified clean.
+    Duplicate-doc resolution, not deletion. Classified GARO_GRAMMAR_
+    REFERENCE.md (superseded - corrected its own false "only reference
+    file" self-declaration from June 29, which predated and was
+    silently overtaken by the July catalogue) vs GARO_GRAMMAR_
+    VALIDATED.md (evidence-facing, preserved - genuinely unique
+    academic cross-source triangulation, never duplicated elsewhere).
+    Extracted 2 high-value unmined findings from VALIDATED.md: Burling
+    (GOLD source) confirms -ang-/-ba- as a general directional suffix
+    pair, not go-specific - substantially reframes NV-001 (hypothesis
+    4 added). Flagged a chim/"conditional" vs RULE-013's chim
+    /"discontinued past" possible terminology collision, unresolved.
+    Softened RULE-005's predicate-nominal confidence after REFERENCE.md
+    revealed its citation example was itself once flagged unconfirmed.
+    Fixed a stale NV-001 cross-reference ("no numbered rule yet" -
+    RULE-030 has existed for several cycles).
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

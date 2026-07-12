@@ -1,7 +1,31 @@
 # GARO GRAMMAR REFERENCE
-_Single source of truth — compiled by Claude B from native-speaker sessions_
-_Last consolidated: 2026-06-29_
-_All rules native-speaker confirmed unless marked TODO/PENDING_
+
+**SUPERSEDED (2026-07-10):** This file's closing line ("This is the only
+grammar reference file... do not create new ones") is now false — it
+predates and has been superseded by `docs/GRAMMAR_RULE_CATALOGUE.md`,
+`GRAMMAR_SPECIFICATION.md`, `MORPHOLOGY_SPECIFICATION.md`, and
+`VALIDATION_CORPUS.md` (all built July 2026), which are canonical from
+here on. Kept for historical content, not as a live reference — **do not
+cite this file's claims directly; verify per-claim against the catalogue
+or primary sources first.** Two concrete reasons this matters, found
+during review:
+- §8 lists `"my father is a teacher"` and `"she bought three books"` as
+  **unconfirmed** (June 29 — "assembled via SOV pattern-logic... do not
+  cite as grammar fact until confirmed"). Both are now live in
+  `corrections.json`, but this file's own note means their original
+  confirmation provenance is genuinely uncertain — treat with the same
+  caution as any `corrections.json` entry, per §10's own warning that
+  the VERIFIED/HIGH tag "is unreliable — never auto-trust as tiebreaker."
+  (This affects `GRAMMAR_RULE_CATALOGUE.md` RULE-005's predicate-nominal
+  example — flagged there now too.)
+- §10 flags `nik·aha`("seen") raka status as unconfirmed — this is now
+  **resolved**: primary-source notes.pdf directly confirms `nika` is
+  raka-free ("there is no raka in nikaha because the root word 'nika'
+  does not have any raka"). This file was accurate for its time; newer
+  evidence superseded it without this file ever being updated — same
+  pattern as the rest of this document.
+
+_Original content follows, historical:_
 
 ---
 

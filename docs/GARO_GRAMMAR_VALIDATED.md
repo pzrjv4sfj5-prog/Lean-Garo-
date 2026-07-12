@@ -2,6 +2,37 @@
 _Compiled & verified by Claude B — Cross-source comparison analysis_
 _Last updated: 2026-06-14_
 
+**Classification (2026-07-10):** Evidence-facing, not rule-facing — this
+is a source-triangulation document (academic grammars, dictionaries,
+community sources, each trust-rated), not a competing grammar catalogue.
+**Not superseded** — unlike `GARO_GRAMMAR_REFERENCE.md`, this file never
+claimed canonical-rule status, so there's no false self-declaration to
+correct, and its content (external-source cross-referencing) isn't
+duplicated anywhere else in the repository. Its own trust hierarchy
+correctly ranks direct native confirmation (S13) above even GOLD academic
+sources — consistent with this project's standing evidentiary discipline.
+Two genuinely valuable, previously-unmined findings extracted from this
+file into the live queue as of this review:
+- **`-ang-`("away from speaker")/`-ba-`("toward speaker")** as a
+  *general, productive* directional suffix pair (Burling, GOLD source) —
+  not verb-specific to "go." This reframes `THANGSENG_NATIVE_VALIDATION.md`
+  NV-001 (`re·`/`re·ang`): the split may not be destination-presence at
+  all, but `re·` (bare "move") combining with a general directional
+  system that also explains the already-confirmed `re·ba`("come"). See
+  NV-001's update. Academic-source strength, not native-direct — doesn't
+  resolve NV-001, but substantially sharpens the next question.
+- **`-chim` glossed here as "conditional"** ("would have") — this may
+  collide with `GRAMMAR_RULE_CATALOGUE.md` RULE-013's `chim` ("discontinued
+  past," native-confirmed, different meaning). Not yet resolved whether
+  these are two homophonous suffixes or one entry is wrong — flagged, not
+  assumed either way.
+- The "genuine conflicts" table's `-ja-` vs. `-gija` item is **already
+  resolved** by this project's own later work — `RULE-017`(`-ja`) and
+  `RULE-018`(`-gija`) correctly distinguish these as different
+  constructions (simple negation vs. verbal-adjective), not a conflict
+  needing resolution. This file's 2026-06-14 "keep both" recommendation
+  turned out right, just via a cleaner mechanism than it anticipated.
+
 ---
 
 ## SOURCE REGISTRY & TRUST LEVELS
