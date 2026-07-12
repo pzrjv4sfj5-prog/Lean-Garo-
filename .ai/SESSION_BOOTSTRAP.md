@@ -167,6 +167,34 @@ cleared or superseded here._
    function, not a flat table, so it needs its own design/scoping first
    rather than a same-pattern repeat.
 
+## Convergence protocol (Project Owner, 2026-07-11)
+Standing discipline for both roles, not a one-time instruction. The
+objective per task is no longer "better docs" or "better code" alone —
+it's **shortening the distance between linguistic truth and
+implementation**. When one side discovers something, the other side
+should become more accurate as a direct result, not eventually.
+
+**Claude A, concluding a linguistic investigation:** before closing it
+out, identify — every engineering implication; every RC candidate
+affected; every engine component affected; every regression that should
+exist; what Claude B should implement. Leave a precise engineering
+handoff. Do not implement it yourself.
+
+**Claude B, implementing or auditing:** identify every linguistic
+assumption the implementation makes; check whether Claude A has already
+documented/confirmed it (don't assume "it worked in my test cases" means
+"it's linguistically general"). **If implementation reveals
+contradictory or under-confirmed behavior, do not silently patch it —
+create a linguistic feedback item for Claude A** (see `docs/
+PENDING_REGRESSION_CASES.md`'s Pending section for the format; example:
+`RC-CANDIDATE-010`, where an engineering fix was scoped more broadly
+than the underlying grammar rule's own stated confidence supported).
+
+**Both:** every commit should strengthen this loop, not just close a
+task. A fix that works but silently outruns its linguistic evidence is
+exactly the kind of thing this protocol exists to surface before it
+calcifies into "how the engine has always worked."
+
 ## Integration rule (V1.0 launch sprint, standing as of 2026-07-08)
 Do not implement linguistic changes sourced directly from chat. Any new
 lexical/grammar item proposed in conversation (e.g. relayed from Thangseng)

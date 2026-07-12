@@ -1,5 +1,5 @@
 repository:
-  head: cd60e4d
+  head: d558e1b
   last_updated: "2026-07-11"
   test_status: "61/61 regression tests passing, build clean"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -88,7 +88,16 @@ claude_a:
 
 claude_b:
   status: active
-  current_task: "Codex repository audit triage (2026-07-11): verified every high-priority claim, implemented VERIFIED items, classified the rest"
+  current_task: >-
+    Convergence protocol adopted (2026-07-11, Project Owner): applying
+    it retroactively found RC-CANDIDATE-010 - RC-002's ·o locative fix
+    was implemented more generally (any noun after in/on/at) than
+    RULE-G2's own stated confidence supports (High for one confirmed
+    example, Medium/not-stress-tested for general productivity). Not
+    reverted (strict improvement over the prior definitely-wrong ·ko),
+    flagged as a linguistic feedback item for Claude A instead of
+    silently left as if fully validated. See docs/
+    PENDING_REGRESSION_CASES.md Pending section.
   progress: >-
     Codex audit: 5 items VERIFIED and fixed (VerbsGrammar.jsx x5,
     dead phrase_maps.js entries, classifierHints jol/ge gap), several

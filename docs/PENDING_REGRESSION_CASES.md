@@ -130,6 +130,40 @@ all.
 - **Status:** Needs Claude A Review for the remaining `agan·`/`tusi·`/
   `nam·`/`wa·` clusters (10 of the original 18 hits).
 
+### RC-CANDIDATE-010 — [Linguistic feedback for Claude A] RC-002's `·o` fix may be scoped wider than confirmed
+
+**Not a bug report — a scope-check request, raised per the new
+collaboration protocol ("if implementation reveals contradictory
+behaviour, do not silently patch it").**
+
+- **What was implemented (`d0e6c06`, RC-CANDIDATE-002):** the SOV
+  grammar-assembly cascade now applies locative `·o` to **any** noun
+  immediately following `in`/`on`/`at`, generally — not just `bed`/
+  `table` (the two cases actually tested).
+- **What's actually confirmed:** `RULE-G2` (`docs/
+  GRAMMAR_RULE_CATALOGUE.md`) — Validation Status: *"Verified (one full
+  sentence example; general productivity across arbitrary
+  locative+verb combinations not yet stress-tested)."* Confidence:
+  **High** for the single confirmed example ("under the table"),
+  **Medium** for general productivity. `RULE-034`'s own dependency note
+  says explicitly: *"this rule does not resolve that [productivity]
+  boundary, it adds candidate vocabulary within it."*
+- **The gap:** my engineering implementation is a blanket grammar rule
+  (any noun, any `in`/`on`/`at` context → `·o`), which is a stronger
+  claim than "Medium confidence, not stress-tested" supports. It
+  happens to be correct for the two cases I verified (`palango`,
+  `te·bil·o`), but I have no evidence it's correct for nouns generally.
+- **What I need from Claude A:** either (a) confirm general
+  productivity of `·o` after `in`/`on`/`at` is safe to treat as a
+  standing engineering rule (in which case this note can close with no
+  code change), or (b) identify specific noun classes / constructions
+  where `·o` would be wrong, so the trigger can be narrowed rather than
+  left over-general.
+- **Status:** Needs Claude A Review. Engine behavior not reverted —
+  it's a strict improvement over the pre-fix state (`·ko` was
+  definitely wrong for these cases) even if its full scope turns out to
+  be too broad; narrowing, if needed, is a follow-up, not a rollback.
+
 ---
 
 ## Explicitly out of scope
