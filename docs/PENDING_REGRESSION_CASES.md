@@ -130,225 +130,115 @@ all.
 - **Status:** Needs Claude A Review for the remaining `agan·`/`tusi·`/
   `nam·`/`wa·` clusters (10 of the original 18 hits).
 
-### [Superseded by RC-CANDIDATE-011 below] Linguistic feedback: RC-002's `·o` fix may be scoped wider than confirmed
+### [Superseded by RC-CANDIDATE-011] `·o` fix scope question
+Originally a separate `RC-CANDIDATE-010` created independently by
+Claude B the same day as Claude A's stress-test `RC-CANDIDATE-010`
+(naming collision, concurrent sessions). Retired in favor of
+`RC-CANDIDATE-011`, which found the same underlying gap via broader
+evidence (12 sentences vs. 2).
 
-Originally logged here as `RC-CANDIDATE-010`, in parallel with Claude
-A's independently-created `RC-CANDIDATE-010` below (both sides used the
-same next-available number in concurrent sessions — the Stress Test
-section was pushed while this was being written). Retiring this entry
-in favor of Claude A's **`RC-CANDIDATE-011`**, which found the identical
-underlying gap via direct 237-sentence stress-testing (far stronger
-evidence than the two cases — `bed`, `table` — this note was based on)
-and traced it as likely sharing a root cause with `RC-CANDIDATE-010`'s
-NP-subject gate below. **This is the collaboration protocol working as
-intended**: raised as a scope-check question from the engineering side;
-independently confirmed and sharpened from the stress-testing side, same
-day, before either side saw the other's note. See `RC-CANDIDATE-011` for
-the live entry.
-
-## Stress Test — 2026-07-12, Claude A (237 generated sentences, live engine)
-
-Per Project Owner directive: stop reading documents, stress-test the
-translator directly, cluster failures to root causes. Method: generated
-237 English sentences programmatically across grammar categories
-(tense/aspect/negation paradigm × 10 verbs, predicate adjectives × 6
-persons, locatives, possession, modals, imperatives, questions,
-classifiers, if-clauses, loanwords, posture verbs), ran each through the
-live `translate()` engine, clustered by method/confidence/pattern. Test
-script not retained (avoid one-off-script clutter, per the repo audit's
-own finding) — regenerable from the category list above if needed.
-
-**What's strong (no action needed):** the tense/aspect/negation paradigm
-for pronoun-subject sentences is the best-performing category by a wide
-margin — present/past/future/negative/continuous/future-negative across
-10 verbs almost all correct, matching confirmed roots. Malformed English
-input ("eated," "buyed") still translates sensibly — real robustness.
-Classifier system mostly solid for direct "number noun" phrasing.
+## Stress Test — 2026-07-12, Claude A
+237 generated sentences, live-tested against `translate()`, now the
+persistent benchmark: `tests/benchmarks/stress_237.mjs`. Full method
+distribution and category breakdown: `docs/BENCHMARK_VALIDATION_REPORT.md`.
+Strong-performing baseline (no action needed): pronoun-subject tense/
+aspect/negation paradigm, malformed-input robustness, direct-count
+classifiers.
 
 ### RC-CANDIDATE-010 — NP-subject sentences never reach grammar-assembly
-**Severity: Highest — most systemic finding of this pass.**
-`"the book is on the table"` → `"Ki·tap te·bil"` (two bare nouns, no
-verb, no locative marker at all) — same failure across all 6 locations
-tested. **Root cause:** confirmed via prior full engine read —
-`analyzeGrammar` only fires when the sentence starts with a recognized
-pronoun (`PRONOUN_MAP` lookup). `"the book"`/`"the dog"` etc. never
-reach grammar-assembly at all, regardless of how well-formed the rest of
-the sentence is — they fall straight to the much weaker `sov-assembly`
-fallback. This isn't a locative-specific bug — it's a subject-detection
-gate affecting *any* sentence with a non-pronoun subject. Likely the
-single highest-value engineering fix available: extending subject
-detection to recognized common nouns (not just pronouns) would fix an
-entire sentence class, not one construction.
-**Not asking for implementation** — flagging severity and root cause per
-the handoff protocol.
+**Conclusion:** `analyzeGrammar` gates on a recognized pronoun subject.
+Non-pronoun subjects (`"the book"`, `"the dog"`) never reach it,
+regardless of well-formedness — they fall to weak `sov-assembly`. Not
+locative-specific; affects any sentence with a non-pronoun subject.
+**Status:** Fix reportedly implemented by Claude B (session ended before
+push — not yet on `origin/main` as of 2026-07-12, unverified).
+**Benchmark:** the 6 `"the book is on the [location]"` sentences —
+confirmed 6/6 `sov-assembly`, zero exceptions.
+**Implementation implication:** extending subject detection beyond
+pronouns should fix this as a sentence class. Negative test cases: all
+231 pronoun-subject sentences (especially already-correct ones),
+imperatives (no subject), inverted questions (`"can i eat"`).
+**Remaining uncertainty:** none on diagnosis. Verification pending an
+actual benchmark rerun against real code.
 
-**Validated (2026-07-12, Claude A, Priority 1 per Project Owner
-directive):** Isolated the 6 true NP-subject sentences — **all 6, no
-exceptions, `method: "sov-assembly"`**, never `grammar-assembly`. Clean
-categorical split: 231/237 pronoun-subject sentences reach
-`grammar-assembly`+; all 6/237 NP-subject sentences don't. Estimated
-impact: 6/237 in this fixed corpus, but the split is by subject-type,
-not lexical, so real-world impact is larger than this sample suggests.
-**Negative test cases for Claude B (should NOT change after a fix):**
-all 231 pronoun-subject sentences, especially already-correct ones
-(`"i eat rice"`, `"i am waiting at the market"`); imperatives
-(`"eat!"`, `"go!"` — no subject at all, confirm no misfire);
-inverted-order questions (`"can i eat"`, `"did you go to the market"`
-— confirm not misdetected as NP-subject).
+### RC-CANDIDATE-011 — "In" vs. "at" locative marking (retracted original hypothesis)
+**Conclusion:** Not per-noun as originally claimed (retracted). `"at"`
+generalizes `·o` correctly across all nouns tested; `"in"` does not.
+Same `grammar-assembly` method, same noun list — the variable is the
+preposition. Two independent compounding causes: (a) `NV-007`'s `tue`
+gap (verb-slot lost, uniform across all "lying in X" cases), (b) a
+separate `"in"`-specific locative-marking gap (noun-slot, `"bed"` is the
+only exception and is not a stored phrase).
+**Status:** Reportedly resolved as a side effect of the RC-010 fix
+(Claude B's transcript — the fix's locative-verb-guard applied broadly,
+not just to NP-subjects). **Not yet confirmed via benchmark rerun.**
+**Benchmark:** the 12 `"waiting at X"`/`"lying in X"` sentences —
+before-state: 6/6 correct for `"at"`, 1/6 for `"in"`.
+**Implementation implication:** none needed if genuinely resolved. If
+not, next diagnostic step is confirming whether `"at"`/`"in"` share a
+code path.
+**Remaining uncertainty:** whether the reported disappearance is real —
+must be confirmed by rerunning the identical benchmark, not assumed from
+a transcript.
 
-### RC-CANDIDATE-011 — Retracted and replaced (2026-07-12, Claude A)
-**My original hypothesis below is wrong — retracted, not just
-refined.** Re-examined with method-level precision: `"waiting at the
-[location]"` — 6/6 correct, `·o` present every time, all 6 nouns.
-`"lying in the [location]"` — same `grammar-assembly` method for all 6,
-but only `"bed"` gets `·o`. Identical method, identical noun list —
-**the variable is the preposition, not the noun.** `"at"` generalized
-correctly; `"in"` did not. Checked whether `"bed"`'s success is a
-stored phrase (would explain a one-off exception) — confirmed not: no
-`corrections.json`/`phrase_maps.js`/`master_dictionary.json` entry
-matches this sentence or "lying"(reclining). `master_dictionary.json`
-does have `"lying"` entries (`Ua tolenga`) but they're the **wrong
-sense** — lying=untruth, not lying=reclining — a real homonym trap,
-separate from this bug. No verb renders in any of the 6 `"lying in X"`
-outputs (matches `NV-007`'s already-known `tue` gap) — but that only
-explains the missing *verb* uniformly; it doesn't explain why 1 of 6
-nouns still gets `·o`. **Two independent issues compound here, not
-one:** (a) `tue` absent entirely (unchanged, `NV-007`), (b) a genuine
-`"in"`-specific locative-marking gap, independent of both RC-010 (same
-method throughout) and (a) (affects noun-marking, not the verb-slot).
-**Evidence-only ask:** are `"at"` and `"in"` handled by the same code
-path or two separate ones? If separate, that likely explains the split
-directly — no fix suggested, this is a diagnostic question.
+### RC-CANDIDATE-012 — Raka rendered as apostrophe instead of `·`
+**Conclusion:** Non-first-person `"sad"` (you/he/she/we/they) renders
+`"Duk ong'a"` — apostrophe, not raka. First-person is correct
+(`"Anga duk ong·a"`). Same character-substitution error class as the
+hyphen-instead-of-raka bugs already fixed in `VerbsGrammar.jsx`/
+`phrase_maps.js`, this time live in engine output.
+**Status:** Open, unimplemented.
+**Benchmark:** 5 of the 36 predicate-adjective sentences (`"[you/he/
+she/we/they] [is/are] sad"`).
+**Implementation implication:** locate and fix the apostrophe in
+whatever table non-first-person grammar-assembly reads adjective forms
+from — low-ambiguity, no linguistic judgment required.
+**Remaining uncertainty:** none.
 
-_Original hypothesis, retained for record, now superseded by the above:_
-**Severity: High.** `"i am lying in the bed"` → correct `·o`. `"i am
-lying in the market/school/house/table/room"` → **no** `·o` at all, bare
-noun, for every other location tested. Same pattern for `"waiting at the
-X"` (bed/table correct, others inconsistent). **Root cause:** the
-`RC-CANDIDATE-002` locative fix appears to apply only to nouns with a
-pre-existing stored locative form, not generatively to arbitrary nouns +
-`in`/`at`/`on`. Worse than the original bug in one sense — it's now
-*inconsistent* rather than *uniformly* wrong, which is harder to detect
-downstream. Related to RC-010 above — likely the same subject-detection
-gate, or a second, narrower gap in the `·o`-routing fix itself.
+### RC-CANDIDATE-013 — Predicate-adjective copula insertion is inconsistent (RULE-031 in practice)
+**Conclusion:** Live, concrete evidence that `RULE-031`/`NV-002` being
+unresolved has real output consequences, not just documentation debt.
+`"happy"` drops `ong·a` for non-first-person only; `"sad"` keeps it;
+`"tired"` self-inflects with no copula; `"beautiful"/"good"/"bad"` take
+no suffix at all. Word *selection*, not just copula-presence, also
+varies by person for `"sick"`/`"clever"` (evidence outside the fixed
+benchmark).
+**Status:** Open — correctly not fixable without native validation.
+**Benchmark:** the 36-sentence predicate-adjective set (6 persons × 6
+adjectives) within `stress_237.mjs`; `sick`/`clever`/`strong`/`tall`
+tested ad-hoc, not part of the fixed corpus.
+**Implementation implication:** none until `NV-002` resolves. A
+provisional bare-adjective default is already recommended (see
+`THANGSENG_NATIVE_VALIDATION.md`, "Provisional recommendation" section).
+**Remaining uncertainty:** whether "I am happy" vs. "you are happy"
+reflects a real grammatical distinction or an engine gap — needs
+Thangseng.
 
-### RC-CANDIDATE-012 — Raka rendered as apostrophe (`'`) instead of `·` in live adjective output
-**Severity: Medium, but a new and concrete finding.** `"you are
-sad"`/`"he is sad"`/`"we are sad"`/`"they are sad"` all produce `"Duk
-ong'a"` — apostrophe, not raka. Confirmed correct elsewhere (`"i am
-sad"` → `Anga duk ong·a`, verified earlier this session). **Root cause:**
-almost certainly a source-string typo in the adjective/predicate mapping
-table used for non-first-person grammar-assembly — same character-
-substitution error class as the hyphen-instead-of-raka bug already fixed
-in `VerbsGrammar.jsx`/`phrase_maps.js`, but this instance is live in the
-engine's own output, not just a static UI page. Straightforward fix once
-located (find `ong'a`, replace with `ong·a` in whatever table
-non-first-person grammar-assembly reads from).
+### RC-CANDIDATE-014 — Imperatives, negative imperatives, and possession: memorized-only
+**Conclusion:** All three constructions have zero general grammar-
+assembly rule — only present when a specific string is memorized in
+`corrections.json`. `"do not V"` additionally selects the wrong existing
+rule (`RULE-017` statement-negation instead of `RULE-029`'s `-nabe`).
+`"let us drink"/"speak"` are missing from `corrections.json` entirely —
+broader than the `eat`/`work` value-mismatch found in an earlier cycle.
+Category classification: imperatives/possession = missing
+generalization (rules exist, aren't applied); `"do not V"` = wrong-rule
+selection (both rules exist, engine picks the wrong one).
+**Status:** Open, unimplemented.
+**Benchmark:** ~24 imperative/hortative/possession sentences within
+`stress_237.mjs`.
+**Implementation implication:** three related but separate
+generalization gaps for Claude B — imperative `-bo`, negative-imperative
+`-nabe` selection, possession/existential `donga`.
+**Remaining uncertainty:** none on diagnosis — this is an engineering
+generalization question, not a linguistic one.
 
-### RC-CANDIDATE-013 — Predicate-adjective copula insertion is inconsistent per-adjective
-**Severity: Medium — direct evidence for why RULE-031 matters in
-practice.** `"happy"`: non-first-person forms drop `ong·a` entirely
-(`"Na·a kusi"`, not `"Na·a kusi ong·a"`) while first-person keeps it
-(`"Anga kusi ong·a"`, previously verified). `"sad"`: keeps it (raka bug
-aside, RC-012). `"tired"`: self-inflects, no copula at all (`nenga`),
-consistent with the confirmed pattern. **Root cause:** the engine
-appears to have ad-hoc, per-adjective, per-person copula behavior with
-no single governing rule — a direct, concrete illustration of why
-`RULE-031`/`NV-002` being unresolved has real output consequences, not
-just a documentation gap. Not asking for a fix (that needs native
-validation first) — flagging so the *inconsistency itself* is visible
-rather than each instance looking like an unrelated one-off.
-
-**Evidence expansion (2026-07-12, Claude A, Priority 4):** confirmed
-systematic, not lexical-per-instance, across the full 36-sentence
-predicate-adjective set (6 persons × 6 adjectives). Four distinct
-behaviors, each consistent across all persons it applies to: (1) drops
-`ong·a` for non-first-person only — `happy` uniquely; (2) keeps `ong·a`
-regardless of person — `sad`; (3) self-inflects, no copula, regardless
-of person — `tired`; (4) bare adjective, no suffix at all, regardless of
-person — `beautiful`/`good`/`bad`. **Person is the variable for `happy`
-specifically, not adjective identity generally** — this wasn't visible
-from 1st-person-only data. New native question worth adding: "is 'I am
-happy' different from 'you are happy'?" — not previously framed this
-way.
-
-**Supporting evidence (2026-07-12, Claude A, Priority 5 — outside the
-fixed benchmark, ad-hoc check only, benchmark itself not modified):**
-tested 4 more adjectives not in the original 237-sentence set. Found a
-*different shape* of the same underlying problem — not just
-copula-presence varying by person, but full **word selection** varying:
-`"sick"` — `"i am sick"` → `"Anga sakamenga"` (`correction`); `"you/he
-is sick"` → `"Na·a/Ua sa·a"` (`grammar-assembly`) — these are different
-words, not the same root with different copula treatment. `"clever"` —
-`"he is clever"` → `"Ua man·de seng·a"` (`correction`, matches the
-already-confirmed dictionary entry in full); `"i am/you are clever"` →
-`"Anga/Na·a seng·a"` (`grammar-assembly`, missing `man·de` entirely).
-Both cases: only one person-form has full exact-match coverage; the
-others fall to `grammar-assembly` and lose either the correct root or
-part of a compound expression. Same root class as RC-013 (predicate-
-adjective handling is unreliable/incomplete outside exact matches), not
-a new architectural cause — recorded here, not as a new RC.
-
-### RC-CANDIDATE-014 — Imperatives and possession constructions: memorized-only, no general rule
-**Severity: Medium, two related sub-findings.**
-- **Imperatives:** `"eat!"`/`"go!"` → correct (`-bo` suffix), both
-  hardcoded `exact-phrase` entries. `"drink!"`/`"sleep!"`/`"speak!"`/
-  `"work!"` → bare root, **no** `-bo` at all, via `sov-assembly`.
-  `"do not sleep"` → `"Ihing Tusia"` (garbled — `"Ihing"` isn't a
-  recognized negative-imperative marker). `"do not speak"` → `"Aganja"`
-  (present negation `-ja`, not imperative negation `-nabe`, per RULE-029).
-  **Root cause:** `-bo`/`-nabe` (RULE-029) aren't implemented as general
-  grammar-assembly rules — only present when a specific "V!"/"do not V"
-  string is memorized in `corrections.json`.
-- **Possession:** three different broken outputs from three different
-  fallback paths for structurally similar sentences — `"i have a book"`
-  → `"ang ong·a kitab"` (`stopword-stripped`, wrong word order, not SOV,
-  lowercase pronoun); `"he has two dogs"` → `"Ua Gni"` (the noun "dogs"
-  dropped entirely); `"she has three children"` → `"Ua bi·sa·ko Gittam"`
-  (missing the verb `donga` — already flagged in the previous handoff
-  cycle, RC-CANDIDATE-006/007 area). No single reliable "have"
-  construction currently exists.
-- **`"let us X"` gap is broader than previously found:** the prior
-  handoff flagged `eat`/`work` as *mismatched* values between `"let us
-  X"` and `"let's X"`. Stress-testing found `"let us drink"`/`"let us
-  speak"` are **missing from `corrections.json` entirely** (not just
-  mismatched), producing badly broken `sov-assembly` output (`"Ringa
-  Chingna"`, `"Chingna Agana"` — wrong word order, garbled pronoun).
-  `"let's speak"` (contracted) is *also* missing, not just the
-  non-contracted form. Coverage gap, not just a drift bug.
-
-**Confirmed still-live, already-tracked (no new finding):** `"i can
-eat"`/`"can i eat"` still drop "can" entirely (RC-CANDIDATE-004, blocked
-on NV-008 as before). `"i watch tv"` still silently drops "TV"
-(RC-CANDIDATE-005). `"i am lying down"` (no location) no longer produces
-invalid Garo (RC-CANDIDATE-003's fix confirmed working for that specific
-case) but now produces `"Anga ka·ma·ko"` — valid Garo, wrong meaning
-(still resolves to the unrelated "down" root with an object marker,
-rather than anything posture-related). Improved from broken to wrong,
-not fully fixed — worth noting precisely rather than either overclaiming
-the fix or missing that something changed.
-
-**Category classification (2026-07-12, Claude A, Priority 5):**
-imperatives = missing generalization, not missing grammar (RULE-029 is
-correctly documented; `sov-assembly` just never applies it — likely
-shared infrastructure with RC-010's weak-fallback problem). `"do not V"`
-= missing generalization + wrong-rule selection (`"do not speak"`
-produces valid Garo, but `RULE-017`'s statement-negation, not
-`RULE-029`'s imperative-negation `-nabe` — both rules exist correctly,
-the engine picks the wrong one for imperative input). Possession =
-missing correction, not missing grammar (`RULE-G7` is confirmed and
-documented; coverage is just one exact-match entry deep).
-
-### RC-CANDIDATE-012 — Evidence (2026-07-12, Claude A, Priority 6)
-Every live occurrence found in this corpus: `"you/he/she/we/they are
-sad"` → `"Duk ong'a"` (apostrophe) — 5 occurrences, 1 per non-first-
-person subject, `sad` only (not found on any other adjective in the
-36-sentence predicate-adjective set). First-person `"i am sad"` is
-correctly `"Anga duk ong·a"` (raka), verified working in a prior
-session cycle — so the bug is specific to non-first-person `sad`.
-Same person-conditioning shape as RC-013's `happy` finding — different
-symptom, but both point at something less reliable in the
-non-first-person predicate-adjective path generally.
+**Already tracked elsewhere, reconfirmed live, no new finding:**
+`RC-CANDIDATE-004` (ability modal "can," still dropped, blocked on
+`NV-008`), `RC-CANDIDATE-005` (loanword "TV," still dropped),
+`RC-CANDIDATE-003` (posture-verb fix confirmed working for `"lying
+down"` alone — no longer invalid Garo, now valid-but-wrong-meaning,
+still resolves to the unrelated "down" root).
 
 ---
 - Nothing in the Pending section above has been fixed — only logged.

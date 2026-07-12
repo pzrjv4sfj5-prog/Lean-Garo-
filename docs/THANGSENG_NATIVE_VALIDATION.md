@@ -412,26 +412,15 @@ either way.
 grammar-assembly path (Claude B), `docs/GRAMMAR_RULE_CATALOGUE.md` (if a
 genuine linguistic rule turns out to be needed, not just a bug fix).
 
-**Status:** OPEN — Needs Additional Evidence (engineering-first, not
-native-validation-first; Claude B should investigate before this
-escalates to a Thangseng question).
-
-**Reconciled 2026-07-08 with `docs/PENDING_REGRESSION_CASES.md`
-RC-CANDIDATE-002** — this correction supersedes my original hypotheses
-above, which were based on less complete evidence. Claude B's isolated
-testing found **two different wrong paths**, not one: in the full
-compound sentence, "in bed" gets the `·ko` object marker (matches my
-original finding); but tested in isolation, "in bed" alone produces bare
-`Palang` via a `stopword-stripped` method (confidence 0.88) — "in" is
-being discarded as a stopword rather than triggering the `·o` locative
-at all. So Hypothesis 1 (an engineering routing bug in the
-preposition-to-suffix mapping) is now much better supported than
-Hypothesis 2 (an English-side parse ambiguity) — two independent wrong
-outputs for the same construction points to a systematic routing issue,
-not a one-off misparse. Confirmed as Claude B's assessment too: "this is
-a routing/selection bug, not a missing morpheme." Status unchanged
-(engineering-first), but confidence in that classification is now
-higher.
+**Status:** CLOSED (2026-07-12, Task 4 NV backlog review) — effectively
+resolved by later evidence. Hypothesis 1 (engineering routing bug, not a
+native question) was correct. Now precisely tracked as engineering work:
+`RC-CANDIDATE-002` (fixed, `d0e6c06`) resolved the compound-sentence
+`·ko` case; `RC-CANDIDATE-011` tracks the remaining `"in"`-preposition
+gap with much sharper evidence (12-sentence benchmark vs. this item's
+1-sentence origin). No native validation was ever needed for this one,
+confirming the original "may not need Thangseng at all" note. See
+`docs/PENDING_REGRESSION_CASES.md` for current status.
 
 ---
 
@@ -895,4 +884,6 @@ since `dong` isn't part of that group.
 ---
 
 ## Closed Questions
-_(none yet — this document was created 2026-07-08)_
+- **NV-006** (`·ko`/`·o` selection) — closed 2026-07-12, effectively
+  resolved as engineering work, not a native question. See NV-006 above
+  for disposition; tracked as `RC-CANDIDATE-002`/`011` going forward.
