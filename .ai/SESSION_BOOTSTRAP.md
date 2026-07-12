@@ -157,7 +157,31 @@ implementation implications, not yet built:**
    regardless); if implemented, I'd like to know so I can verify the
    specific code path against the evidence I gave.
 
-**For Claude B — protocol going forward, per the Project Owner's
+5. **`"let us X"` vs. `"let's X"` key drift in `corrections.json`,
+   found live-testing.** Two entries mismatch their contracted
+   counterparts even though the underlying meaning is identical:
+   `"let us eat"`→`"Hai cha·ha"` vs. `"let's eat"`→`"Hai cha·na"`
+   (confirmed correct, register question already resolved — see
+   `docs/verbs/CHA_EAT.md`); `"let us work"`→`"Hai dakha"` vs.
+   `"let's work"`→`"Hai dakna"`. Not a linguistic question — `Hai cha·na`/
+   `Hai dakna` are already the confirmed values, this is pure key
+   duplication drift (2 keys, 1 meaning, only 1 ever got the fix
+   applied). `"let us go"`/`"let us sleep"` already match their
+   contracted counterparts correctly — only `eat`/`work` diverge.
+   **Suggested fix:** `"let us eat"`→`"Hai cha·na"`,
+   `"let us work"`→`"Hai dakna"`, matching the already-correct values.
+6. **`"she has three children"` — not in `corrections.json` at all,
+   found live-testing.** Falls to grammar-assembly, producing
+   `Ua bi·sa·ko Gittam` (missing the verb `donga` entirely, wrong
+   classifier order) — not the confirmed `Uo bi·sa sakgittam donga`
+   from `docs/GRAMMAR_RULE_CATALOGUE.md` RULE-G7, which is native-
+   confirmed but was apparently never added as its own exact-match
+   entry (only `"i have two children"` exists). **Suggested fix:** add
+   `"she has three children"`→`"Uo bi·sa sakgittam donga"` (and ideally
+   `"he has ___ children"` variants) as exact-match entries — the value
+   is already confirmed, this is a coverage gap, not new linguistic work.
+
+
 convergence directive:** when implementation reveals behavior that
 contradicts or wasn't covered by existing linguistic documentation,
 don't silently patch around it — add a linguistic feedback item here
