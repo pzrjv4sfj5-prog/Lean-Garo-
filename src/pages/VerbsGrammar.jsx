@@ -6,12 +6,12 @@ export default function VerbsGrammar() {
 
   const verbRoots = {
     'cha·a': { en: 'eat', examples: ['cha·enga: (I am) eating', 'cha·aha: ate', 'cha·gen: will eat', 'cha·bo: Eat! (imperative)', 'cha·ja: does not eat'] },
-    're·anga': { en: 'go', examples: ['re·angenga: (I am) going', 're·anga: went', 're·anggen: will go', 'Tusibo: Go to sleep! (imperative)', 're·ang-ja: does not go'] },
-    'nik·a': { en: 'see', examples: ['nik·enga: (I am) seeing', 'nik·aha: saw', 'nik·gen: will see'] },
-    'agan·a': { en: 'speak / say', examples: ['agan·enga: speaking', 'agan·aha: spoke', 'agan·gen: will speak'] },
+    're·anga': { en: 'go', examples: ['re·angenga: (I am) going', 're·anga: went', 're·anggen: will go', 're·angbo: Go! (imperative)', 're·ang-ja: does not go'] },
+    'nika': { en: 'see', examples: ['nikenga: (I am) seeing', 'nikaha: saw', 'nikgen: will see'] },
+    'agana': { en: 'speak / say', examples: ['aganenga: speaking', 'aganaha: spoke', 'agangen: will speak'] },
     'on·a': { en: 'give', examples: ['on·enga: giving', 'on·aha: gave', 'on·gen: will give'] },
-    'tusina': { en: 'sleep', examples: ['tusienga: (I am) sleeping', 'tusieaha: slept', 'tusibo: Sleep! (imperative)'] },
-    'brea-na': { en: 'buy', examples: ['brea-enga: buying', 'brea-aha: bought', 'brea-gen: will buy'] },
+    'tusina': { en: 'sleep', examples: ['tusienga: (I am) sleeping', 'tusiaha: slept', 'tusibo: Sleep! (imperative)'] },
+    'brea·na': { en: 'buy', examples: ['brea·enga: buying', 'brea·aha: bought', 'brea·gen: will buy'] },
   }
 
   const classifierRules = [
@@ -55,9 +55,9 @@ export default function VerbsGrammar() {
       classifier: 'Ge',
       use_for: 'Objects, Things, Items, Tools, General Nouns',
       examples: [
-        'Chokki sa·ge (one chair)',
-        'Kettal gni·ge (two knives)',
-        'Mez gittam·ge (three tables)'
+        'ge·sa Chokki (one chair)',
+        'ge·gni Kettal (two knives)',
+        'ge·gittam Mez (three tables)'
       ]
     },
   ]
