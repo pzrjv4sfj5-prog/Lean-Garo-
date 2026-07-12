@@ -272,6 +272,23 @@ from 1st-person-only data. New native question worth adding: "is 'I am
 happy' different from 'you are happy'?" — not previously framed this
 way.
 
+**Supporting evidence (2026-07-12, Claude A, Priority 5 — outside the
+fixed benchmark, ad-hoc check only, benchmark itself not modified):**
+tested 4 more adjectives not in the original 237-sentence set. Found a
+*different shape* of the same underlying problem — not just
+copula-presence varying by person, but full **word selection** varying:
+`"sick"` — `"i am sick"` → `"Anga sakamenga"` (`correction`); `"you/he
+is sick"` → `"Na·a/Ua sa·a"` (`grammar-assembly`) — these are different
+words, not the same root with different copula treatment. `"clever"` —
+`"he is clever"` → `"Ua man·de seng·a"` (`correction`, matches the
+already-confirmed dictionary entry in full); `"i am/you are clever"` →
+`"Anga/Na·a seng·a"` (`grammar-assembly`, missing `man·de` entirely).
+Both cases: only one person-form has full exact-match coverage; the
+others fall to `grammar-assembly` and lose either the correct root or
+part of a compound expression. Same root class as RC-013 (predicate-
+adjective handling is unreliable/incomplete outside exact matches), not
+a new architectural cause — recorded here, not as a new RC.
+
 ### RC-CANDIDATE-014 — Imperatives and possession constructions: memorized-only, no general rule
 **Severity: Medium, two related sub-findings.**
 - **Imperatives:** `"eat!"`/`"go!"` → correct (`-bo` suffix), both

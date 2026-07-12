@@ -32,21 +32,18 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Priority 1-6 per Project Owner's RC-010 validation directive.
-    Committed persistent benchmark (tests/benchmarks/stress_237.mjs,
-    fixed 237-sentence corpus for measurable before/after). RC-010
-    validated: clean categorical split, 6/6 true NP-subject sentences
-    all sov-assembly, zero exceptions, negative test cases identified.
-    RC-011 RETRACTED - my "per-noun" hypothesis was wrong; re-examined
-    at method level and found the real variable is the preposition
-    ("at" generalized correctly, "in" did not), with 2 independent
-    compounding causes (NV-007's tue gap explains missing verb
-    uniformly; a separate "in"-specific ·o gap explains why only "bed"
-    keeps its locative marker). RC-013/014/012 evidence expanded with
-    person-conditioning and category-classification findings not
-    previously visible from narrower data. Priority 2 (before/after
-    benchmark) and Priority 3 (final RC-011 disposition) explicitly
-    deferred until Claude B implements RC-010 - not done prematurely.
+    Validation Mode (Project Owner directive - hold discovery, Claude B
+    implementing RC-010). Prepared docs/BENCHMARK_VALIDATION_REPORT.md
+    (living template, before-snapshot captured precisely at commit
+    039ae17: method distribution, per-RC baseline numbers for
+    RC-010/011/012/013/014, pre-registered RC-011 hypothesis so the
+    after-comparison isn't motivated reasoning). AFTER section is
+    placeholders only - correctly not filled in, RC-010 hasn't landed
+    yet (checked, no new commits). Added supporting evidence to RC-013
+    (not a new RC, per Priority 5) from 4 additional adjectives tested
+    outside the fixed benchmark - found predicate-adjective coverage
+    gaps sometimes cause full word-selection differences, not just
+    copula-presence differences.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
@@ -83,7 +80,14 @@ claude_a:
     - "Do not attempt to resolve Rule 30/31 from assumptions - both explicitly need direct Thangseng validation, see NV-001/NV-002"
     - "Do not begin Verb Family Project with re·/re·ang - start with cha· per Project Owner sequencing, re·/re·ang is second, after NV-001"
     - "Do not re-run the coverage audit or confidence review from scratch - both are dated 2026-07-08, re-run only after new corpus rows are added or new native validation lands"
-  waiting_for: "Direct Thangseng answers to NV-001 (Rule 30) and NV-002 (Rule 31) - highest-priority open linguistic questions"
+  waiting_for: >-
+    Claude B to push RC-010 implementation. Once landed: re-run
+    tests/benchmarks/stress_237.mjs unmodified, fill in
+    BENCHMARK_VALIDATION_REPORT.md's AFTER section, validate against
+    the pre-registered RC-011 hypothesis rather than assuming it. Also
+    still waiting on direct Thangseng answers to NV-001 (Rule 30) and
+    NV-002 (Rule 31) - highest-priority open linguistic questions,
+    unrelated to RC-010 but still open.
   expected_output: "Markdown files committed to docs/, zero code/JS changes, per Sprint Work Package constraints"
 
 claude_b:
