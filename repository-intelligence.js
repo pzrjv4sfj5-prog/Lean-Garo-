@@ -107,8 +107,15 @@ const KNOWN_CROSS_TABLE_EXCEPTIONS = new Set([
                 // asong/chadat/chad roots' raka status; possible 3-way
                 // vocabulary question (a third form 'Chakata' also exists
                 // for "stand" elsewhere in corrections.json).
+  'bought',     // Escalated 2026-07-10 — Claude A's original "breaha, no
+                // raka" verdict was RETRACTED: VALIDATION_CORPUS.md
+                // already has "have you bought"->"Na·a Bre·ajok ma?" (WITH
+                // raka), marked Verified/High from a prior deliberate
+                // raka-audit pass. Two credible sources conflict, not one
+                // clear answer vs. one outlier — needs Thangseng, not a
+                // repository-evidence call. NOT fixed in the data.
   // Resolved and removed from this list 2026-07-10 (fixed in the data
-  // instead): search, coming, slept, sleeping, laughing, bought.
+  // instead): search, coming, slept, sleeping, laughing.
 ]);
 
 function normalize(v) {

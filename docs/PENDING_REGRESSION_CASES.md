@@ -397,14 +397,14 @@ several look like the exact "lexical split" trap
 | ID | Weakness | Severity | Status |
 |---|---|---|---|
 | RC-CANDIDATE-001 | `nangja` necessity-modal collapses into desire-negation | Medium | Needs Claude A Review |
-| RC-CANDIDATE-002 | `·ko` vs `·o` selection error on locative "in bed" | Medium-High | Needs Claude A Review |
-| RC-CANDIDATE-003 | Posture verb "lying" → malformed/invalid Garo | **High** | Needs Claude A Review |
-| RC-CANDIDATE-004 | Ability modal "can" dropped entirely, systematic | Medium-High | Needs Claude A Review |
-| RC-CANDIDATE-005 | Loanwords (`TV`) silently dropped, no error marker | Medium | Needs Claude A Review |
-| RC-CANDIDATE-006 | Purpose-clause "search" uses pre-Rule-32 stale value (`am·e·nik·na`) | Medium | Needs Claude A Review |
-| RC-CANDIDATE-007 | `sing`/`dance` purpose-clause forms use unrelated roots vs. corrections.json | Medium | Needs Claude A Review |
-| RC-CANDIDATE-008 | 9 irregular-verb forms differ between corrections.json and irregular_verbs.json | Medium | Needs Claude A Review |
-| RC-CANDIDATE-009 | 18 raka-adjacency candidates (report-only, likely mostly false positives) | Unknown | Needs Claude A Review |
+| RC-CANDIDATE-002 | `·ko` vs `·o` selection error on locative "in bed" | Medium-High | **Implemented 2026-07-10** — see `translationEngine.js` (RC-CANDIDATE-002 comments) |
+| RC-CANDIDATE-003 | Posture verb "lying" → malformed/invalid Garo | **High** | **Partially implemented 2026-07-10** — both confirmed-invalid outputs (down/Ka·ma collision, bed-as-verb) now produce graceful (grammatically valid, semantically incomplete) output instead of invalid Garo. Full `tue` paradigm still needs native validation (NV-007). |
+| RC-CANDIDATE-004 | Ability modal "can" dropped entirely, systematic | Medium-High | Blocked on NV-008 (dictionary source itself unverified) — do not implement |
+| RC-CANDIDATE-005 | Loanwords (`TV`) silently dropped, no error marker | Medium | Needs Claude A Review — systematic passthrough mechanism approved in principle, not yet implemented |
+| RC-CANDIDATE-006 | Purpose-clause "search" uses pre-Rule-32 stale value (`am·e·nik·na`) | Medium | **Fixed 2026-07-10** — `purpose_map.json` now `Sandi·na` |
+| RC-CANDIDATE-007 | `sing`/`dance` purpose-clause forms use unrelated roots vs. corrections.json | Medium | Needs Thangseng Validation (`sing` candidate fix is medium-confidence only, not swapped; `dance` fully open) |
+| RC-CANDIDATE-008 | 9 irregular-verb forms differ between corrections.json and irregular_verbs.json | Medium | **5/9 fixed 2026-07-10** (coming, slept, sleeping, laughing, bought); `eaten` confirmed not-a-bug; `heard`/`standing`/`sitting` escalated to Thangseng |
+| RC-CANDIDATE-009 | 18 raka-adjacency candidates (report-only, likely mostly false positives) | Unknown | Needs Claude A Review — `ring·`/sing sub-cluster resolved (NV-010 narrowed to agan/porai only) |
 
 ## Explicitly out of scope
 - No fixes implemented.
