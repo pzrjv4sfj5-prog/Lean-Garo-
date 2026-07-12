@@ -248,6 +248,33 @@ export function analyzeGrammar(input) {
     for (let i = 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
       if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) continue;
+      // RC-CANDIDATE-003 fix (Claude A approved, 2026-07-10): 'down' is a
+      // directional adverb with its own correct standalone translation
+      // (corrections.json 'down'->'Ka·ma'), but this verb-search loop
+      // doesn't distinguish part of speech - it was picking 'down' as the
+      // VERB in "I am lying down" (since it resolves via lookupGaro) while
+      // the actual verb 'lying' fell through unrecognized into the object
+      // slot, producing 'Anga Ka·ma' (nonsense: "I [verb-form-of] down").
+      // Same lexical-split class as ring/ring· (NV-010) - two different
+      // words colliding, not a grammar gap. Excluding it here does not
+      // touch the corrections.json entry, which remains correct for
+      // standalone "down" and other constructions.
+      if (w === 'down') continue;
+      // RC-CANDIDATE-003 fix, part 2 (Claude A directive was "guard the
+      // fallback so it doesn't apply to words already present as nouns" -
+      // that's not currently buildable as a GENERAL rule: master_
+      // dictionary.json's `pos` field is null on every single entry,
+      // there's no noun/verb tag anywhere in the data. Implementing the
+      // one CONFIRMED instance narrowly instead of inventing new POS-
+      // tagging infrastructure this session. "bed" was being picked as
+      // the verb in "I am lying in bed" (resolves via lookupGaro to the
+      // noun Palang) while 'lying' fell through unrecognized, then got a
+      // past-tense suffix appended producing invalid Garo 'Palangha'.
+      // Documented as a repeat of the same class as 'down' above. A
+      // general noun-guard needs real POS data first - see
+      // docs/PENDING_REGRESSION_CASES.md RC-CANDIDATE-003 for the open
+      // follow-up (add POS tagging, not scoped here).
+      if (w === 'bed') continue;
       let isIrregular = !!IRREGULAR_VERBS[w] || !!IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')];
       let garoVerb;
       if (SPECIAL_TENSES.includes(detectedTense)) {
@@ -306,6 +333,27 @@ export function analyzeGrammar(input) {
     // Extract object — noun after possessive or after 'to'
     let objectWords = [];
     let purposeAction = null;
+    // RC-CANDIDATE-002 fix (Claude A approved, 2026-07-10): "in"/"on"/"at"
+    // are stopwords, so they were silently skipped and the following noun
+    // got the default object marker ·ko — losing the locative distinction
+    // entirely ("in bed" -> "palang·ko" instead of "palango"). Only fires
+    // when the preposition immediately precedes the FIRST object token, in
+    // this SOV grammar-assembly fallback path — never overrides a working
+    // corrections.json exact match, since those never reach this code.
+    // RC-CANDIDATE-002 fix (Claude A approved, 2026-07-10): "in"/"on"/"at"
+    // are stopwords, so they were silently skipped and the following noun
+    // got the default object marker ·ko — losing the locative distinction
+    // entirely ("in bed" -> "palang·ko" instead of "palango"). Tracks a
+    // PENDING flag set when a locative stopword is seen and consumed on
+    // the next real word pushed — not gated on objectWords being empty,
+    // since an earlier unresolved word (e.g. "lying" in "lying in bed")
+    // can already occupy an earlier slot; what matters is which word
+    // immediately follows the preposition, not overall span position.
+    // Only fires in this SOV grammar-assembly fallback path — never
+    // overrides a working corrections.json exact match, since those never
+    // reach this code.
+    let objectIsLocativeAdjunct = false;
+    let pendingLocative = false;
 
     for (let i = 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
@@ -317,9 +365,13 @@ export function analyzeGrammar(input) {
           i++; continue;
         }
       }
-      if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || w === words[0].toLowerCase()) continue;
+      if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || w === words[0].toLowerCase()) {
+        if (/^(in|on|at)$/.test(w)) pendingLocative = true;
+        continue;
+      }
       if (verb && words[i] === verb.english) continue;
       if (IRREGULAR_VERBS[w] || IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')]) continue;
+      if (pendingLocative) { objectIsLocativeAdjunct = true; pendingLocative = false; }
       objectWords.push(words[i]);
     }
 
@@ -327,7 +379,8 @@ export function analyzeGrammar(input) {
       const objEng = objectWords.join(' ');
       const lastWord = objectWords[objectWords.length-1];
       const objGaro = lookupPhrase(objEng) || lookupGaro(objEng) || lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
-      object = { english: objEng, garo: objGaro, withMarker: objGaro + '·ko' };
+      const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
+      object = { english: objEng, garo: objGaro, withMarker: objGaro + marker, isLocativeAdjunct: objectIsLocativeAdjunct };
     }
 
     return {
@@ -486,11 +539,15 @@ function assembleGrammar(grammar) {
   const parts = [];
   parts.push(grammar.subject.garo);
 
-  // Possessive + Object + -ko marker
+  // Possessive + Object + -ko/-o marker
+  // RC-CANDIDATE-002 fix (Claude A approved, 2026-07-10): use ·o for a
+  // confirmed locative adjunct (in/on/at + noun), ·ko otherwise (default,
+  // unchanged behavior for genuine direct objects).
+  const objMarker = (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : '·ko';
   if (grammar.possessive && grammar.object && grammar.object.garo !== '[UNKNOWN]') {
-    parts.push(grammar.possessive.garo + ' ' + grammar.object.garo.toLowerCase() + '·ko');
+    parts.push(grammar.possessive.garo + ' ' + grammar.object.garo.toLowerCase() + objMarker);
   } else if (grammar.object && grammar.object.garo !== '[UNKNOWN]') {
-    parts.push(grammar.object.garo.toLowerCase() + '·ko');
+    parts.push(grammar.object.garo.toLowerCase() + objMarker);
   }
 
   // Purpose clause

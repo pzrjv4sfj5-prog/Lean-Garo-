@@ -93,10 +93,22 @@ function checkRakaLocality() {
 // Add an entry here ONLY after logging the finding in
 // docs/PENDING_REGRESSION_CASES.md. Never add just to make the build pass.
 const KNOWN_CROSS_TABLE_EXCEPTIONS = new Set([
-  'search',                    // RC-CANDIDATE-006
-  'dance', 'sing',             // RC-CANDIDATE-007 (B2, purpose_map root mismatch)
-  'sleeping', 'coming', 'sitting', 'standing', 'laughing',
-  'eaten', 'heard', 'bought', 'slept',   // RC-CANDIDATE-008 (B1, irregular_verbs vs corrections)
+  // RC-CANDIDATE-007 — Claude A reviewed 2026-07-10: 'sing' candidate fix
+  // (ring·na) is medium-confidence only, not confirmed — flagged for
+  // Thangseng, not swapped silently. 'dance' fully open, no evidence yet.
+  'dance', 'sing',
+  // RC-CANDIDATE-008 — Claude A reviewed 2026-07-10, per-key verdicts:
+  'eaten',      // NOT A BUG — cha·jok (perfect) vs cha·manaha (completive)
+                // are both independently confirmed distinct aspectual
+                // forms (RULE-026). Permanently allowlisted, not pending.
+  'heard',      // Escalated — rangsan chanchiaha vs knachik·aha are
+                // different words, no repo evidence favors either.
+  'standing', 'sitting', // Escalated — no primary-source confirmation of
+                // asong/chadat/chad roots' raka status; possible 3-way
+                // vocabulary question (a third form 'Chakata' also exists
+                // for "stand" elsewhere in corrections.json).
+  // Resolved and removed from this list 2026-07-10 (fixed in the data
+  // instead): search, coming, slept, sleeping, laughing, bought.
 ]);
 
 function normalize(v) {

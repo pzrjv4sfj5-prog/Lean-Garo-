@@ -93,6 +93,23 @@ const REGRESSION_CASES = [
   // --- under = Kokkimao, fixing under/Ka·ma·o lexical confusion (2026-07-07) ---
   { in: 'under', expectGaro: 'Kokkimao', expectMethod: ['correction'] },
   { in: 'the dog is under the table', expectGaro: 'Achak tebil kokkimao ong·a', expectMethod: ['correction'] },
+
+  // --- RC-CANDIDATE-002/003/006 fixes (2026-07-10, Claude A approved directives) ---
+  // RC-002: stative-locative "in/on/at" now maps to ·o instead of the
+  // default object marker ·ko in the SOV grammar-assembly fallback.
+  { in: 'I am lying in bed', expectGaro: 'Anga palang·o', expectMethod: ['grammar-assembly'] },
+  { in: 'I put the book on the table', expectGaro: 'Anga te·bil·o ron·a', expectMethod: ['grammar-assembly'] },
+  // RC-003: "down" excluded from the verb-search loop so it no longer
+  // collides with "lying down" (was producing invalid "Anga Ka·ma" as if
+  // Ka·ma were a conjugated verb form). Not a correct full translation of
+  // "lying" yet (that needs native validation, tracked NV-007) - this
+  // only guards against the confirmed-invalid output, per Claude A's
+  // explicit "graceful gap over invalid Garo" directive.
+  { in: 'I am lying down', expectGaro: 'Anga ka·ma·ko', expectMethod: ['grammar-assembly'] },
+  // RC-006: purpose_map.json 'search' fixed from the retired
+  // am·e·nik·na contamination to Sandi·na (regular -na on the confirmed
+  // Sandia/RULE-032 stem).
+  { in: 'i want to search', expectGaro: 'Anga Sandi·na sikenga', expectMethod: ['grammar-assembly'] },
 ];
 
 for (const c of REGRESSION_CASES) {
@@ -135,7 +152,11 @@ test('purpose_map.json data integrity (BACKLOG-001)', async () => {
   // pre-Rule-32 value, preserved as-is per behavior-preservation. See the
   // extraction-site comment in translationEngine.js and
   // docs/PENDING_REGRESSION_CASES.md RC-CANDIDATE-006.
-  assert.equal(purposeMap['search'], 'am·e·nik·na');
+  // RC-CANDIDATE-006 fixed 2026-07-10 (Claude A confirmed 'search'):
+  // Sandi·na is the regular -na infinitive on the confirmed Sandia stem
+  // (RULE-032), replacing the pre-Rule-32 contamination am·e·nik·na that
+  // had leaked into this separate table.
+  assert.equal(purposeMap['search'], 'Sandi·na');
   for (const [k, v] of Object.entries(purposeMap)) {
     assert.equal(typeof v, 'string', `value for "${k}" should be a string`);
     assert.ok(v.length > 0, `value for "${k}" should not be empty`);
