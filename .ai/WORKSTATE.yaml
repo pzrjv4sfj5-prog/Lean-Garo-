@@ -32,21 +32,19 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Duplicate-doc resolution, not deletion. Classified GARO_GRAMMAR_
-    REFERENCE.md (superseded - corrected its own false "only reference
-    file" self-declaration from June 29, which predated and was
-    silently overtaken by the July catalogue) vs GARO_GRAMMAR_
-    VALIDATED.md (evidence-facing, preserved - genuinely unique
-    academic cross-source triangulation, never duplicated elsewhere).
-    Extracted 2 high-value unmined findings from VALIDATED.md: Burling
-    (GOLD source) confirms -ang-/-ba- as a general directional suffix
-    pair, not go-specific - substantially reframes NV-001 (hypothesis
-    4 added). Flagged a chim/"conditional" vs RULE-013's chim
-    /"discontinued past" possible terminology collision, unresolved.
-    Softened RULE-005's predicate-nominal confidence after REFERENCE.md
-    revealed its citation example was itself once flagged unconfirmed.
-    Fixed a stale NV-001 cross-reference ("no numbered rule yet" -
-    RULE-030 has existed for several cycles).
+    Convergence protocol adopted (Project Owner directive): every
+    linguistic conclusion now gets an explicit engineering handoff
+    rather than staying in docs alone. Rewrote .ai/SESSION_BOOTSTRAP.md's
+    "Current joint work package" (was fully stale - all 6 old items
+    done, one was factually wrong re: VALIDATED.md's actual disposition)
+    with 4 real handoff items: daka-unwired implementation gap (RULE-005,
+    not yet an RC candidate), Burling -ang-/-ba- watch-for pattern
+    (NV-001, no action pending native validation), chim/"conditional"
+    terminology-collision question for Claude B's implementation
+    knowledge, RULE-031 provisional-default status check. Verified no
+    real disagreement in Claude B's Codex-audit REJECTED classification
+    of the 51/51 claim - sequential (I fixed it, they correctly found
+    nothing further), not contradictory.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
