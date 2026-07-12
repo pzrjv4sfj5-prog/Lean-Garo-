@@ -32,20 +32,21 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Stress test (Project Owner directive - translator as primary source,
-    not documents): 237 generated sentences, live-tested against the
-    engine, clustered to 5 root causes (RC-CANDIDATE-010..014) rather
-    than reported per-sentence. Highest-value finding: NP-subject
-    sentences ("the book is...") never reach grammar-assembly at all -
-    a pronoun-only subject-detection gate affects an entire sentence
-    class, not one construction. Also found: locative ·o fix is
-    per-noun not generative (works for bed/table, not market/school/
-    house/room); a live apostrophe-vs-raka bug in non-first-person
-    adjective output (ong'a vs ong·a); per-adjective inconsistent
-    copula insertion (concrete evidence RULE-031 matters in practice,
-    not just documentation); imperatives/possession are memorized-only,
-    no general rule; "let us drink/speak" missing from corrections.json
-    entirely (broader than the eat/work mismatch found last cycle).
+    Priority 1-6 per Project Owner's RC-010 validation directive.
+    Committed persistent benchmark (tests/benchmarks/stress_237.mjs,
+    fixed 237-sentence corpus for measurable before/after). RC-010
+    validated: clean categorical split, 6/6 true NP-subject sentences
+    all sov-assembly, zero exceptions, negative test cases identified.
+    RC-011 RETRACTED - my "per-noun" hypothesis was wrong; re-examined
+    at method level and found the real variable is the preposition
+    ("at" generalized correctly, "in" did not), with 2 independent
+    compounding causes (NV-007's tue gap explains missing verb
+    uniformly; a separate "in"-specific ·o gap explains why only "bed"
+    keeps its locative marker). RC-013/014/012 evidence expanded with
+    person-conditioning and category-classification findings not
+    previously visible from narrower data. Priority 2 (before/after
+    benchmark) and Priority 3 (final RC-011 disposition) explicitly
+    deferred until Claude B implements RC-010 - not done prematurely.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

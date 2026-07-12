@@ -182,7 +182,45 @@ entire sentence class, not one construction.
 **Not asking for implementation** — flagging severity and root cause per
 the handoff protocol.
 
-### RC-CANDIDATE-011 — Locative `·o` marking is per-noun, not generative
+**Validated (2026-07-12, Claude A, Priority 1 per Project Owner
+directive):** Isolated the 6 true NP-subject sentences — **all 6, no
+exceptions, `method: "sov-assembly"`**, never `grammar-assembly`. Clean
+categorical split: 231/237 pronoun-subject sentences reach
+`grammar-assembly`+; all 6/237 NP-subject sentences don't. Estimated
+impact: 6/237 in this fixed corpus, but the split is by subject-type,
+not lexical, so real-world impact is larger than this sample suggests.
+**Negative test cases for Claude B (should NOT change after a fix):**
+all 231 pronoun-subject sentences, especially already-correct ones
+(`"i eat rice"`, `"i am waiting at the market"`); imperatives
+(`"eat!"`, `"go!"` — no subject at all, confirm no misfire);
+inverted-order questions (`"can i eat"`, `"did you go to the market"`
+— confirm not misdetected as NP-subject).
+
+### RC-CANDIDATE-011 — Retracted and replaced (2026-07-12, Claude A)
+**My original hypothesis below is wrong — retracted, not just
+refined.** Re-examined with method-level precision: `"waiting at the
+[location]"` — 6/6 correct, `·o` present every time, all 6 nouns.
+`"lying in the [location]"` — same `grammar-assembly` method for all 6,
+but only `"bed"` gets `·o`. Identical method, identical noun list —
+**the variable is the preposition, not the noun.** `"at"` generalized
+correctly; `"in"` did not. Checked whether `"bed"`'s success is a
+stored phrase (would explain a one-off exception) — confirmed not: no
+`corrections.json`/`phrase_maps.js`/`master_dictionary.json` entry
+matches this sentence or "lying"(reclining). `master_dictionary.json`
+does have `"lying"` entries (`Ua tolenga`) but they're the **wrong
+sense** — lying=untruth, not lying=reclining — a real homonym trap,
+separate from this bug. No verb renders in any of the 6 `"lying in X"`
+outputs (matches `NV-007`'s already-known `tue` gap) — but that only
+explains the missing *verb* uniformly; it doesn't explain why 1 of 6
+nouns still gets `·o`. **Two independent issues compound here, not
+one:** (a) `tue` absent entirely (unchanged, `NV-007`), (b) a genuine
+`"in"`-specific locative-marking gap, independent of both RC-010 (same
+method throughout) and (a) (affects noun-marking, not the verb-slot).
+**Evidence-only ask:** are `"at"` and `"in"` handled by the same code
+path or two separate ones? If separate, that likely explains the split
+directly — no fix suggested, this is a diagnostic question.
+
+_Original hypothesis, retained for record, now superseded by the above:_
 **Severity: High.** `"i am lying in the bed"` → correct `·o`. `"i am
 lying in the market/school/house/table/room"` → **no** `·o` at all, bare
 noun, for every other location tested. Same pattern for `"waiting at the
@@ -220,6 +258,19 @@ no single governing rule — a direct, concrete illustration of why
 just a documentation gap. Not asking for a fix (that needs native
 validation first) — flagging so the *inconsistency itself* is visible
 rather than each instance looking like an unrelated one-off.
+
+**Evidence expansion (2026-07-12, Claude A, Priority 4):** confirmed
+systematic, not lexical-per-instance, across the full 36-sentence
+predicate-adjective set (6 persons × 6 adjectives). Four distinct
+behaviors, each consistent across all persons it applies to: (1) drops
+`ong·a` for non-first-person only — `happy` uniquely; (2) keeps `ong·a`
+regardless of person — `sad`; (3) self-inflects, no copula, regardless
+of person — `tired`; (4) bare adjective, no suffix at all, regardless of
+person — `beautiful`/`good`/`bad`. **Person is the variable for `happy`
+specifically, not adjective identity generally** — this wasn't visible
+from 1st-person-only data. New native question worth adding: "is 'I am
+happy' different from 'you are happy'?" — not previously framed this
+way.
 
 ### RC-CANDIDATE-014 — Imperatives and possession constructions: memorized-only, no general rule
 **Severity: Medium, two related sub-findings.**
@@ -259,6 +310,28 @@ case) but now produces `"Anga ka·ma·ko"` — valid Garo, wrong meaning
 rather than anything posture-related). Improved from broken to wrong,
 not fully fixed — worth noting precisely rather than either overclaiming
 the fix or missing that something changed.
+
+**Category classification (2026-07-12, Claude A, Priority 5):**
+imperatives = missing generalization, not missing grammar (RULE-029 is
+correctly documented; `sov-assembly` just never applies it — likely
+shared infrastructure with RC-010's weak-fallback problem). `"do not V"`
+= missing generalization + wrong-rule selection (`"do not speak"`
+produces valid Garo, but `RULE-017`'s statement-negation, not
+`RULE-029`'s imperative-negation `-nabe` — both rules exist correctly,
+the engine picks the wrong one for imperative input). Possession =
+missing correction, not missing grammar (`RULE-G7` is confirmed and
+documented; coverage is just one exact-match entry deep).
+
+### RC-CANDIDATE-012 — Evidence (2026-07-12, Claude A, Priority 6)
+Every live occurrence found in this corpus: `"you/he/she/we/they are
+sad"` → `"Duk ong'a"` (apostrophe) — 5 occurrences, 1 per non-first-
+person subject, `sad` only (not found on any other adjective in the
+36-sentence predicate-adjective set). First-person `"i am sad"` is
+correctly `"Anga duk ong·a"` (raka), verified working in a prior
+session cycle — so the bug is specific to non-first-person `sad`.
+Same person-conditioning shape as RC-013's `happy` finding — different
+symptom, but both point at something less reliable in the
+non-first-person predicate-adjective path generally.
 
 ---
 - Nothing in the Pending section above has been fixed — only logged.
