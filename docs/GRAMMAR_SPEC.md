@@ -1,5 +1,14 @@
 # Grammar Specification — Living Knowledge Base
 
+**SUPERSEDED (2026-07-10):** Every rule below is now promoted into
+`docs/GRAMMAR_RULE_CATALOGUE.md` (RULE-001 through RULE-035, plus
+RULE-G2/G7/G-classifier), which is the canonical reference from here on.
+This file is kept for historical implementation/test-coverage columns
+the catalogue doesn't track, not as a live duplicate — **do not add new
+rules here**; add them directly to `GRAMMAR_RULE_CATALOGUE.md` using its
+full schema. If this file and the catalogue ever disagree, the catalogue
+wins.
+
 Structured index of every grammar rule, cross-referencing description,
 implementation location, test coverage, and confidence. Full prose/examples
 for each rule live in `docs/THANGSENG_RULES_LOOKUP.md` — this file is the

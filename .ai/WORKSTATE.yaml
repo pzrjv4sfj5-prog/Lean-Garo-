@@ -32,13 +32,22 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Reviewed remaining RC-CANDIDATEs (004/005/008). RC-004: blocked on
-    NV-008, do not wire man·a (source entry itself UNVERIFIED). RC-005:
-    recommended systematic loanword passthrough over per-word entries.
-    RC-008: resolved 4/9 irregular-verb table conflicts from existing
-    evidence (coming/slept/sleeping/laughing/eaten), flagged a bonus
-    internal corrections.json conflict on "bought", escalated
-    standing/sitting/heard as NV-014.
+    Class-level cleanup, not isolated fixes. Closed the entire
+    GRAMMAR_SPEC.md-to-catalogue promotion gap (10 more rules: 005,
+    006, 009, 014, 021, 023, 024, 027, 028, 032 - was citing RULE-032
+    in RC-006 review without it ever existing in the catalogue, fixed).
+    Marked GRAMMAR_SPEC.md superseded to prevent recurrence. Found
+    GARO_GRAMMAR_REFERENCE.md has a genuinely valuable daka-copula
+    insight (verified against live corrections.json) AND a confirmed
+    error (ring·aha mislabeled "drank", same lexical-split class as
+    NV-010) in the same document - established per-claim verification
+    as the standing discipline for legacy docs, not per-document trust.
+    This narrows RULE-031 from a 3-way to effectively a 2-way open
+    question (ong·a vs bare-adjective for predicate adjectives; daka's
+    role is now reasonably well understood separately). Fixed 2
+    instances of a missing-header pattern in my own prior edits
+    (RULE-015, "Provisional recommendation" section) - same str_replace
+    failure mode recurring, now fully swept and verified clean.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

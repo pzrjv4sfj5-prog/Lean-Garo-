@@ -39,7 +39,7 @@
 | Check | Status |
 |---|---|
 | Build (`npm run build`) | ✅ passing |
-| Unit/regression tests (`npm test`) | ✅ 51/51 passing |
+| Unit/regression tests (`npm test`) | ✅ 56/56 passing |
 | CI (`.github/workflows/ci.yml`) | ✅ configured, runs build+lint on push/PR to main |
 | Dictionary validation (`test-dictionary.js`) | ✅ passing (part of build) |
 | Known dead code | ✅ none flagged as of `5d29299` (`PROGRESSIVE_MAP`/`PAST_TO_ROOT` removed) |
@@ -114,7 +114,18 @@ review above:
 **Status:** active (2026-07-08)
 **Last completed:** Corrected `RULE-031` (copula) using verified current `corrections.json` data — retracted an earlier stale speculation in this session (built on `docs/NEW_SENTENCES_BATCH3_CONVERSATION.md`, a pre-correction batch log, without checking whether `docs/GLOBAL_RAKA_CONVERSION_HANDOFF.md`'s fixes had already superseded it) and replaced it with a cleaner, verified 3-strategy picture. Added superseded-forms notices to both docs so a future read doesn't repeat the mistake. Updated `RULE-030` with 2 more native-sourced `re·ang`+`·chi`-destination examples from primary-source chat transcripts. Corrected an earlier claim that "downstairs" was a missing `RULE-034` item — it collapses into "below" (`ka·mao`), same word. Revised `NV-010`'s likely explanation from a phonological rule to a specific lexical-split confusion (`ring·a`="to sing" vs. `ringa`="to drink" — two different roots, not a `-na`-suffix effect). Noted `RC-CANDIDATE-006` (search/purpose-clause bug, logged by Claude B) connects to a related primary-source finding: Thangseng also gave `Am·a` as a valid word for "search," distinct from both `Sandia` and the stale `am·e·nik·na` — worth resolving together rather than separately.
 **Next up:** Consolidate remaining primary-source findings from this session (register-variation pattern as a named linguistic model — `gnang`/`donga`, `hai cha·na`/`hai cha·bo`, `An·ching`/`chinga` all fit the same formal/casual doublet shape; `an·tang` reflexive documentation; `jol`/`ge·` classifier gaps flagged to Claude B; RULE-015 stem-formation promotion from `GRAMMAR_SPEC.md` using the suffixes.pdf transcript as primary citation).
-**Flagged to Claude B (not mine to fix):** `classifierHints` in `translationEngine.js` only covers `mang`/`sak`/`gong`/`king` — native-confirmed `jol` (long objects, e.g. bamboo) and `ge·` (pens/sticks, raka is part of stem) are missing. Source: notes.pdf transcript.
+**Flagged to Claude B — `classifierHints` gap (2026-07-09, still open):** `translationEngine.js` only covers `mang`/`sak`/`gong`/`king` — native-confirmed `jol` (long objects, e.g. bamboo) and `ge·` (pens/sticks, raka is part of stem) are missing. Source: notes.pdf transcript.
+
+**Flagged to Claude B — `src/pages/VerbsGrammar.jsx` teaches wrong grammar (user-facing, 2026-07-10):**
+1. `agan·a`("speak") shown with raka throughout — contradicts confirmed raka-free `agan` (`THANGSENG_RULES_LOOKUP.md` L42, `corrections.json`'s `agana`/`aganaha`).
+2. `nik·a`("see") shown with raka — contradicts confirmed raka-free `nika` (L405, explicit: "no raka, nika root confirmed raka-free").
+3. `brea-na`/`brea-enga`/`brea-aha`/`brea-gen` — uses hyphens, not raka, predating `GLOBAL_RAKA_CONVERSION_HANDOFF.md`'s explicit native instruction ("change ALL hyphens everywhere to raka, no exceptions"). `tusieaha` also looks like a typo for `tusiaha`.
+4. Classifier "Ge" block uses **number-before-classifier** order (`sa·ge`, `gni·ge`) — reversed from all 4 other classifier examples on the same page (`mang-sa`, `sak-sa`, `gong-sa`, `king-sa`, all classifier-first) and from the established CLASSIFIER-NUMBER convention. Raka on `ge·` is otherwise correctly confirmed (notes.pdf) — only the word order is wrong.
+5. The `re·anga`("go") entry's imperative example is `'Tusibo: Go to sleep!'` — that's the *sleep* verb's imperative, not go's. Copy-paste error.
+None of these need native validation — all checkable against existing confirmed data. Linguistic disposition only; JSX edit is Claude B's.
+
+**Flagged to Claude B — stale phrase_maps.js hortatives (dead code, not urgent):** `"let's eat"`, `"let's drink"`, `"let's sit"`, `"let's work"` all have older/unconfirmed forms in `src/data/phrase_maps.js` (e.g. `Hai cha·ha`, a third variant never confirmed) that are currently unreachable — `corrections.json` (checked first in the cascade) already has the correct native-confirmed forms (`Hai cha·na`, etc.) for the same keys. Not a live bug; worth cleaning up so it can't silently reactivate if cascade order or `corrections.json` ever changes.
+
 **Next up:** Per `SESSION_BOOTSTRAP.md`'s joint work package: confirmed the locative proposal is fully closed (no action needed — already resolved via RULE-034/035); `GRAMMAR_SPEC.md`→`GRAMMAR_RULE_CATALOGUE.md` reconciliation (RULE-015/RULE-032 promotion) and stale-doc superseded-notice headers are the remaining pure-documentation items before continuing the Verb Family Project with a second verb.
 **Current linguistic priority:** Copula/predication reconciliation (Rule 31) — three unreconciled predicative strategies (bare adjective, `daka`-copula, `ong·a`-copula) coexist in confirmed data with no selection rule. Not a missing feature — an unresolved contradiction inside already-confirmed sentences. Highest-priority open item.
 **Outstanding native validation:**

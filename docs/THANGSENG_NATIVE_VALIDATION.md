@@ -21,7 +21,10 @@ need Thangseng at all.
    isn't one in "I spoke"/"I was studying"? Also: is there a different
    word sounding like `agan·`/`tus·` (distinct from `agan`/`tusi`) —
    `ring` turned out to be exactly this case (sing vs. drink). Two
-   data points, not four — `ring` resolved independently.
+   data points, not four — `ring` resolved independently. (`tusi`'s
+   `tus·aha` form is tracked in the full NV-010 entry too, but isn't a
+   `-na`-construction case like the other two, so it's not bundled in
+   this specific ask — a separate, smaller question if it comes up.)
 
 4. **(NV-013, added 2026-07-10)** "I want to sing" / "I want to dance"
    — two words, resolves a live `purpose_map.json` bug either way.
@@ -816,16 +819,17 @@ reachable "want to X" construction class).
 
 ---
 
-## NV-014 — `stand`/`sit`/`heard` root confirmation (RC-CANDIDATE-008 remainder)
+## NV-014 — `stand`/`sit`/`heard`/`bought` root confirmation (RC-CANDIDATE-008 remainder)
 
-**Topic:** Three unresolved forms flagged by `repository-intelligence.js`
-table-drift check, no existing evidence to adjudicate.
+**Topic:** Four unresolved forms, no existing evidence sufficient to adjudicate.
 
 **Required Native Validation:** "How do you say 'standing'? Is it
 `chadatenga`, `chadenga`, or related to `Chakata` ('stand,' already in
 the dictionary)?" / "'sitting' — `asongenga` or `asong·enga`?" / "'heard'
 — is it `rangsan chanchiaha` or `knachik·aha`, or are these two
-different things (e.g. 'heard [a sound]' vs. 'heard [news/that X]')?"
+different things (e.g. 'heard [a sound]' vs. 'heard [news/that X]')?" /
+"'bought' — is there a `·` in it? We have two conflicting records:
+`breaha` (no raka) and `Bre·ajok`/`brea·aha` (with raka)."
 
 **Why the Answer Matters:** `standing` may be a 3-way vocabulary
 question (`Chakata` vs. `chadat`/`chad`), not just a 2-way raka
@@ -836,6 +840,8 @@ either/or.
 paradigm cleanup, not launch-blocking).
 
 ---
+
+## Provisional recommendation: RULE-031 default (not a resolution)
 
 Copula selection (RULE-031) stays genuinely open — no native validation
 exists to resolve it. But `translationEngine.js` currently has **zero**
@@ -850,6 +856,24 @@ bare adjective, no copula insertion — matches the safest, most-attested
 existing pattern, doesn't foreclose the `ong·a`/`daka` question, and is
 easy to override once NV-002 lands. Not a claim that this is "correct"
 in general — a conservative default under genuine uncertainty.
+
+---
+
+## Observation: `dong·a`/`donga` raka context-dependence (connects to NV-010)
+
+`docs/GARO_GRAMMAR_REFERENCE.md` (verified-per-claim, see RULE-005 note)
+states `dong` shows raka in some contexts and not others: `dong·a`
+(general) vs. `donga` "without raka in the 'Ango...donga' construction"
+specifically — i.e. the same root varies by grammatical context, not
+just by lexical identity. This is a live example of NV-010's hypothesis
+1 (a real, context-conditioned raka rule), which lost ground when `ring`
+turned out to be a lexical split rather than a phonological pattern.
+Not itself confirmed (this document's `daka` claims were individually
+verified; this specific claim about `dong` was not separately checked
+against corrections.json for the "Ango...donga" context specifically).
+Worth a native question if NV-010 gets revisited: "does `dong` ever
+change with raka?" — separate from the `agan`/`porai`/`tusi` cluster,
+since `dong` isn't part of that group.
 
 ---
 
