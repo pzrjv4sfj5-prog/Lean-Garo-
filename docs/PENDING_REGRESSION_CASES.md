@@ -166,7 +166,121 @@ behaviour, do not silently patch it").**
 
 ---
 
-## Explicitly out of scope
+## Stress Test — 2026-07-12, Claude A (237 generated sentences, live engine)
+
+Per Project Owner directive: stop reading documents, stress-test the
+translator directly, cluster failures to root causes. Method: generated
+237 English sentences programmatically across grammar categories
+(tense/aspect/negation paradigm × 10 verbs, predicate adjectives × 6
+persons, locatives, possession, modals, imperatives, questions,
+classifiers, if-clauses, loanwords, posture verbs), ran each through the
+live `translate()` engine, clustered by method/confidence/pattern. Test
+script not retained (avoid one-off-script clutter, per the repo audit's
+own finding) — regenerable from the category list above if needed.
+
+**What's strong (no action needed):** the tense/aspect/negation paradigm
+for pronoun-subject sentences is the best-performing category by a wide
+margin — present/past/future/negative/continuous/future-negative across
+10 verbs almost all correct, matching confirmed roots. Malformed English
+input ("eated," "buyed") still translates sensibly — real robustness.
+Classifier system mostly solid for direct "number noun" phrasing.
+
+### RC-CANDIDATE-010 — NP-subject sentences never reach grammar-assembly
+**Severity: Highest — most systemic finding of this pass.**
+`"the book is on the table"` → `"Ki·tap te·bil"` (two bare nouns, no
+verb, no locative marker at all) — same failure across all 6 locations
+tested. **Root cause:** confirmed via prior full engine read —
+`analyzeGrammar` only fires when the sentence starts with a recognized
+pronoun (`PRONOUN_MAP` lookup). `"the book"`/`"the dog"` etc. never
+reach grammar-assembly at all, regardless of how well-formed the rest of
+the sentence is — they fall straight to the much weaker `sov-assembly`
+fallback. This isn't a locative-specific bug — it's a subject-detection
+gate affecting *any* sentence with a non-pronoun subject. Likely the
+single highest-value engineering fix available: extending subject
+detection to recognized common nouns (not just pronouns) would fix an
+entire sentence class, not one construction.
+**Not asking for implementation** — flagging severity and root cause per
+the handoff protocol.
+
+### RC-CANDIDATE-011 — Locative `·o` marking is per-noun, not generative
+**Severity: High.** `"i am lying in the bed"` → correct `·o`. `"i am
+lying in the market/school/house/table/room"` → **no** `·o` at all, bare
+noun, for every other location tested. Same pattern for `"waiting at the
+X"` (bed/table correct, others inconsistent). **Root cause:** the
+`RC-CANDIDATE-002` locative fix appears to apply only to nouns with a
+pre-existing stored locative form, not generatively to arbitrary nouns +
+`in`/`at`/`on`. Worse than the original bug in one sense — it's now
+*inconsistent* rather than *uniformly* wrong, which is harder to detect
+downstream. Related to RC-010 above — likely the same subject-detection
+gate, or a second, narrower gap in the `·o`-routing fix itself.
+
+### RC-CANDIDATE-012 — Raka rendered as apostrophe (`'`) instead of `·` in live adjective output
+**Severity: Medium, but a new and concrete finding.** `"you are
+sad"`/`"he is sad"`/`"we are sad"`/`"they are sad"` all produce `"Duk
+ong'a"` — apostrophe, not raka. Confirmed correct elsewhere (`"i am
+sad"` → `Anga duk ong·a`, verified earlier this session). **Root cause:**
+almost certainly a source-string typo in the adjective/predicate mapping
+table used for non-first-person grammar-assembly — same character-
+substitution error class as the hyphen-instead-of-raka bug already fixed
+in `VerbsGrammar.jsx`/`phrase_maps.js`, but this instance is live in the
+engine's own output, not just a static UI page. Straightforward fix once
+located (find `ong'a`, replace with `ong·a` in whatever table
+non-first-person grammar-assembly reads from).
+
+### RC-CANDIDATE-013 — Predicate-adjective copula insertion is inconsistent per-adjective
+**Severity: Medium — direct evidence for why RULE-031 matters in
+practice.** `"happy"`: non-first-person forms drop `ong·a` entirely
+(`"Na·a kusi"`, not `"Na·a kusi ong·a"`) while first-person keeps it
+(`"Anga kusi ong·a"`, previously verified). `"sad"`: keeps it (raka bug
+aside, RC-012). `"tired"`: self-inflects, no copula at all (`nenga`),
+consistent with the confirmed pattern. **Root cause:** the engine
+appears to have ad-hoc, per-adjective, per-person copula behavior with
+no single governing rule — a direct, concrete illustration of why
+`RULE-031`/`NV-002` being unresolved has real output consequences, not
+just a documentation gap. Not asking for a fix (that needs native
+validation first) — flagging so the *inconsistency itself* is visible
+rather than each instance looking like an unrelated one-off.
+
+### RC-CANDIDATE-014 — Imperatives and possession constructions: memorized-only, no general rule
+**Severity: Medium, two related sub-findings.**
+- **Imperatives:** `"eat!"`/`"go!"` → correct (`-bo` suffix), both
+  hardcoded `exact-phrase` entries. `"drink!"`/`"sleep!"`/`"speak!"`/
+  `"work!"` → bare root, **no** `-bo` at all, via `sov-assembly`.
+  `"do not sleep"` → `"Ihing Tusia"` (garbled — `"Ihing"` isn't a
+  recognized negative-imperative marker). `"do not speak"` → `"Aganja"`
+  (present negation `-ja`, not imperative negation `-nabe`, per RULE-029).
+  **Root cause:** `-bo`/`-nabe` (RULE-029) aren't implemented as general
+  grammar-assembly rules — only present when a specific "V!"/"do not V"
+  string is memorized in `corrections.json`.
+- **Possession:** three different broken outputs from three different
+  fallback paths for structurally similar sentences — `"i have a book"`
+  → `"ang ong·a kitab"` (`stopword-stripped`, wrong word order, not SOV,
+  lowercase pronoun); `"he has two dogs"` → `"Ua Gni"` (the noun "dogs"
+  dropped entirely); `"she has three children"` → `"Ua bi·sa·ko Gittam"`
+  (missing the verb `donga` — already flagged in the previous handoff
+  cycle, RC-CANDIDATE-006/007 area). No single reliable "have"
+  construction currently exists.
+- **`"let us X"` gap is broader than previously found:** the prior
+  handoff flagged `eat`/`work` as *mismatched* values between `"let us
+  X"` and `"let's X"`. Stress-testing found `"let us drink"`/`"let us
+  speak"` are **missing from `corrections.json` entirely** (not just
+  mismatched), producing badly broken `sov-assembly` output (`"Ringa
+  Chingna"`, `"Chingna Agana"` — wrong word order, garbled pronoun).
+  `"let's speak"` (contracted) is *also* missing, not just the
+  non-contracted form. Coverage gap, not just a drift bug.
+
+**Confirmed still-live, already-tracked (no new finding):** `"i can
+eat"`/`"can i eat"` still drop "can" entirely (RC-CANDIDATE-004, blocked
+on NV-008 as before). `"i watch tv"` still silently drops "TV"
+(RC-CANDIDATE-005). `"i am lying down"` (no location) no longer produces
+invalid Garo (RC-CANDIDATE-003's fix confirmed working for that specific
+case) but now produces `"Anga ka·ma·ko"` — valid Garo, wrong meaning
+(still resolves to the unrelated "down" root with an object marker,
+rather than anything posture-related). Improved from broken to wrong,
+not fully fixed — worth noting precisely rather than either overclaiming
+the fix or missing that something changed.
+
+---
 - Nothing in the Pending section above has been fixed — only logged.
 - Severity/priority labels are Claude B's engineering assessment only —
   not a substitute for Claude A's linguistic triage or Thangseng's

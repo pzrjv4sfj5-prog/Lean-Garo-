@@ -92,45 +92,102 @@ Claude A and `origin/main`.
 ## Current joint work package
 _(Update this section in place — do not create a new dated snapshot doc
 for it; see "Do not repeat" below.)_
-_Last set: 2026-07-08, after Claude A's final handout
-(`CLAUDE_A_FINAL_HANDOUT.md`) and Claude B's repository architecture
-audit. Both should treat this as the active shared task list until it's
-cleared or superseded here._
+_Last set: 2026-07-12, Claude A. Previous version (2026-07-08) is fully
+cleared — NV-005..009 reviewed, locative proposal confirmed closed,
+GRAMMAR_SPEC.md fully promoted (not just Rule 15/32 — 12 rules total,
+see `GRAMMAR_RULE_CATALOGUE.md`), superseded headers added. One
+correction to the old version: item 5 said both `GARO_GRAMMAR_
+REFERENCE.md` and `GARO_GRAMMAR_VALIDATED.md` would be marked
+superseded — only REFERENCE.md was; VALIDATED.md was reclassified as
+evidence-facing and preserved instead (it has unique academic
+cross-source content, not duplicated elsewhere — see its own header)._
 
-**For Claude A, roughly in priority order:**
-1. Review NV-005 through NV-009 in `docs/THANGSENG_NATIVE_VALIDATION.md`
-   (necessity-modal `nangja`, `·ko`/`·o` case selection on locative
-   adjuncts, posture verb `tue` — flagged as a standalone Claude B bug,
-   not just a gap, ability-modal `man·ienga`, `TV`/`status` loanwords).
-   Cross-check against `docs/PENDING_VOCABULARY.md` and `docs/
-   PENDING_REGRESSION_CASES.md` (Claude B's parallel evidence queues,
-   created before this session's merge) for duplication before treating
-   both as independent.
-2. Review `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md` if not
-   already closed by RULE-034/035 (check — it may already be resolved,
-   confirm rather than assume).
-3. Reconcile `docs/GRAMMAR_SPEC.md` (Claude B's older 33-item tracker)
-   into `docs/GRAMMAR_RULE_CATALOGUE.md`. Concrete drift already found:
-   `GRAMMAR_SPEC.md`'s Rule 15 (stem formation) and Rule 32 (`search`)
-   were never promoted to formal `RULE-015`/`RULE-032` entries —
-   `RULE-015` is currently cited as a dependency 5 times in the catalogue
-   with no definition anywhere. Either promote both and keep `GRAMMAR_
-   SPEC.md` as a strictly derived index, or fold its unique columns
-   (implementation location, test coverage) into the catalogue directly.
-4. Native validation still open: Rule 30 (`re·` vs `re·ang` for "go"),
-   Rule 31 (copula: bare-adjective / `daka` / `ong·a`). Minimal relay
-   question set already drafted in `THANGSENG_NATIVE_VALIDATION.md`.
-5. Mark stale grammar docs with superseded-notice headers (the pattern
-   already used correctly on `HANDOFF_CLAUDE_A_20260701.md`/`CLAUDE_B_
-   HANDOFF_20260703.md`): `docs/GARO_GRAMMAR_REFERENCE.md`, `docs/
-   GARO_GRAMMAR_VALIDATED.md` (both superseded by `GRAMMAR_
-   SPECIFICATION.md`), and `docs/CLAUDE_A_BRIEF_NOW.md`/`docs/
-   CLAUDE_A_TASK_NOW.md`/`docs/INSTRUCTIONS_FOR_CLAUDE_A.md` (all 2-4
-   weeks stale despite "NOW"/"CURRENT" naming — genuinely misleading to a
-   fresh read).
-6. Longer-term, per the handout: noun morphology (currently a flat lookup
-   table) vs. the verb-suffix system (a real generative paradigm) is
-   likely the highest-leverage linguistic work once the above is clear.
+**Engineering handoff from Claude A — linguistic conclusions with
+implementation implications, not yet built:**
+
+1. **`daka` copula, confirmed but unwired (RULE-005).** Bare existential
+   ("I am"/"you are"/"he is"/"we are") and predicate-nominal ("X is a
+   Y") uses are both confirmed live in `corrections.json`'s exact-match
+   layer, but `daka`-insertion has zero presence in grammar-assembly —
+   confirmed via full engine read. **Engineering implication:** any
+   *novel* bare-existential or predicate-nominal sentence not already an
+   exact `corrections.json` match currently falls through to SOV
+   fallback/passthrough instead of correctly inserting `daka`.
+   **RC candidate:** none filed yet — worth one (`"I am [pronoun-only,
+   no complement]"` and `"[noun] is a [noun]"` patterns).
+   **Engine component:** `analyzeGrammar`/`assembleGrammar` in
+   `translationEngine.js` — same code path as the RULE-031 predicate-
+   adjective gap already discussed, but this is the *predicate-nominal*
+   sibling, not predicate-adjective.
+   **Regression to add once implemented:** `"my mother is a doctor"`,
+   `"you are my friend"` (novel predicate-nominal, not already in
+   `corrections.json`).
+   **Not asking for implementation now** — flagging so it's visible
+   before someone else independently rediscovers the same gap.
+
+2. **Burling's `-ang-`/`-ba-` general directional hypothesis (NV-001).**
+   If Thangseng confirms this system generalizes beyond `re·`/`re·ba`,
+   it would mean any future motion verb (e.g. if `porai`("study") or
+   similar ever needs a "come study"/"go study" distinction) should use
+   the same `-ang`/`-ba` pattern rather than being hand-entered per verb.
+   **No action now** — native validation required first (see NV-001).
+   Flagging as a *watch-for* pattern: if a future `corrections.json`
+   entry needs a similar away-from/toward-speaker distinction on a
+   different verb, check this hypothesis before treating it as a new,
+   unrelated phenomenon.
+
+3. **`chim` possible terminology collision.** `GARO_GRAMMAR_VALIDATED.md`
+   (Burling) glosses `-chim` as "conditional" ("would have");
+   `GRAMMAR_RULE_CATALOGUE.md` RULE-013's `chim` is native-confirmed as
+   "discontinued past" — a different meaning. Not yet resolved whether
+   these are homophonous suffixes or one gloss is wrong.
+   **Engineering ask, not a fix request:** does `translationEngine.js`'s
+   `chim`-handling (`RULE-013`'s implementation) ever get invoked for
+   an English input that actually means conditional ("would have")
+   rather than discontinued-past ("used to, no longer")? If Claude B's
+   implementation has an opinion either way from having built it, that's
+   linguistic feedback I need — see "Claude B" protocol below.
+
+4. **RULE-031 provisional default, status check requested.** I gave a
+   conservative bare-adjective default recommendation for predicate-
+   adjective grammar-assembly (`THANGSENG_NATIVE_VALIDATION.md`,
+   "Provisional recommendation" section) several cycles ago. Unclear
+   whether this was implemented — not visible in recent commits. If not
+   implemented, low priority (P0 linguistic question stays open
+   regardless); if implemented, I'd like to know so I can verify the
+   specific code path against the evidence I gave.
+
+5. **`"let us X"` vs. `"let's X"` key drift in `corrections.json`,
+   found live-testing.** Two entries mismatch their contracted
+   counterparts even though the underlying meaning is identical:
+   `"let us eat"`→`"Hai cha·ha"` vs. `"let's eat"`→`"Hai cha·na"`
+   (confirmed correct, register question already resolved — see
+   `docs/verbs/CHA_EAT.md`); `"let us work"`→`"Hai dakha"` vs.
+   `"let's work"`→`"Hai dakna"`. Not a linguistic question — `Hai cha·na`/
+   `Hai dakna` are already the confirmed values, this is pure key
+   duplication drift (2 keys, 1 meaning, only 1 ever got the fix
+   applied). `"let us go"`/`"let us sleep"` already match their
+   contracted counterparts correctly — only `eat`/`work` diverge.
+   **Suggested fix:** `"let us eat"`→`"Hai cha·na"`,
+   `"let us work"`→`"Hai dakna"`, matching the already-correct values.
+6. **`"she has three children"` — not in `corrections.json` at all,
+   found live-testing.** Falls to grammar-assembly, producing
+   `Ua bi·sa·ko Gittam` (missing the verb `donga` entirely, wrong
+   classifier order) — not the confirmed `Uo bi·sa sakgittam donga`
+   from `docs/GRAMMAR_RULE_CATALOGUE.md` RULE-G7, which is native-
+   confirmed but was apparently never added as its own exact-match
+   entry (only `"i have two children"` exists). **Suggested fix:** add
+   `"she has three children"`→`"Uo bi·sa sakgittam donga"` (and ideally
+   `"he has ___ children"` variants) as exact-match entries — the value
+   is already confirmed, this is a coverage gap, not new linguistic work.
+
+
+convergence directive:** when implementation reveals behavior that
+contradicts or wasn't covered by existing linguistic documentation,
+don't silently patch around it — add a linguistic feedback item here
+(or a new NV in `THANGSENG_NATIVE_VALIDATION.md` if it needs native
+input) so the gap gets closed at the source, not just papered over in
+code.
 
 **For Claude B, ongoing:**
 1. Keep collecting native sentences for the Native Sentence Validation
