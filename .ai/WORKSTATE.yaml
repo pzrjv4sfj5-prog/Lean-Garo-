@@ -1,7 +1,7 @@
 repository:
-  head: 6cf63d0
-  last_updated: "2026-07-09"
-  test_status: "56/56 regression tests passing, build clean"
+  head: cd60e4d
+  last_updated: "2026-07-11"
+  test_status: "61/61 regression tests passing, build clean"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -88,20 +88,23 @@ claude_a:
 
 claude_b:
   status: active
-  current_task: "Operational sync while Claude A migrates to new chat: repo health, docs sync, bootstrap readiness"
+  current_task: "Codex repository audit triage (2026-07-11): verified every high-priority claim, implemented VERIFIED items, classified the rest"
   progress: >-
-    BACKLOG-006 first increment done (2026-07-09): repository-
-    intelligence.js built as reusable Repository Intelligence
-    infrastructure (not just a script - see docs/REPOSITORY_
-    INTELLIGENCE.md), wired into npm run build + a dedicated regression
-    test. Check A (raka locality) is deliberately report-only after
-    discovering most of its 18 first-run hits were the lexical-split
-    false-positive trap, not real violations. Check B (cross-table
-    consistency) DOES gate the build and found 11 new findings beyond
-    the already-known 'search' issue on its first real run - all
-    properly logged as RC-CANDIDATE-007/008/009 in PENDING_
-    REGRESSION_CASES.md before being allowlisted, per the discipline the
-    tool itself documents. 56/56 tests passing, build clean.
+    Codex audit: 5 items VERIFIED and fixed (VerbsGrammar.jsx x5,
+    dead phrase_maps.js entries, classifierHints jol/ge gap), several
+    more VERIFIED-but-real items catalogued (dist/ tracked, lint
+    continue-on-error, root/docs ARCHITECTURE.md duplication,
+    master_dictionary.json uncovered by repository-intelligence.js), 4
+    REJECTED claims documented with exact reasoning (stale 51/51 claim
+    not found, 3 of 6 "obsolete" files don't exist, server.js
+    verified active not legacy), rest correctly FUTURE-scoped. Full
+    classification in PROJECT_STATUS.md §8. Also implemented Claude
+    A's approved RC-CANDIDATE-002/003/006/008(5-of-9) fix directives
+    (d0e6c06), then correctly REVERTED the 'bought' fix when Claude A's
+    own verdict was retracted upstream (df71a83) - verification
+    discipline applied reflexively, not just to Codex. Restructured
+    PENDING_REGRESSION_CASES.md into Implemented/Pending sections per
+    explicit instruction (cd60e4d). 61/61 tests passing, build clean.
   completed:
     - "Grammar-modeling audit: real past-tense suffix logic, dedup, dead code removal (aeec036)"
     - "docs/GRAMMAR_SPEC.md living rule index created (84bf88a)"

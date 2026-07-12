@@ -203,3 +203,14 @@ test('repository-intelligence.js exits 0 against current lexical data (BACKLOG-0
     execFileSync('node', ['repository-intelligence.js'], { cwd: process.cwd(), stdio: 'pipe' });
   }, 'repository-intelligence.js should exit 0 - a non-zero exit means either a script error or a NEW un-allowlisted cross-table finding (see docs/REPOSITORY_INTELLIGENCE.md)');
 });
+
+// --- classifierHints gap fix (2026-07-11), flagged by Claude A: this
+// inline array only covered mang/sak/gong/king, missing jol/ge which
+// already exist confirmed in garo_classifier.js's CLASSIFIER_MAP ---
+test('classifierHints includes jol (long objects) and ge (pen/stick), matching garo_classifier.js CLASSIFIER_MAP', async () => {
+  const { analyzeGrammar } = await import('../../src/translationEngine.js');
+  const bamboo = analyzeGrammar('the bamboo pole');
+  assert.ok(bamboo.classifierHints.some(h => h.classifier === 'jol'), 'bamboo/pole should hint jol');
+  const pencil = analyzeGrammar('give me a pencil');
+  assert.ok(pencil.classifierHints.some(h => h.classifier === 'ge'), 'pencil should hint ge');
+});

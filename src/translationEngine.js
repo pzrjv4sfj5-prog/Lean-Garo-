@@ -236,6 +236,15 @@ export function analyzeGrammar(input) {
   if (/\b(person|man|woman|teacher|student)\b/.test(li)) classifierHints.push({ classifier: 'sak', reason: 'person noun' });
   if (/\b(money|rupee|coin)\b/.test(li)) classifierHints.push({ classifier: 'gong', reason: 'money noun' });
   if (/\b(book|paper|leaf)\b/.test(li)) classifierHints.push({ classifier: 'king', reason: 'flat object' });
+  // jol/ge added 2026-07-11 - flagged by Claude A (PROJECT_STATUS.md,
+  // notes.pdf transcript): this array only covered mang/sak/gong/king,
+  // missing jol (long objects) and ge (pens/sticks). Both classifiers
+  // already exist, confirmed, in garo_classifier.js's CLASSIFIER_MAP
+  // (see 'pole'/'rod'/'staff'/'bamboo'->jol, 'pen'/'pencil'/'stick'->ge)
+  // - this was a reconciliation gap between two separate classifier
+  // tables, not a missing linguistic fact.
+  if (/\b(pole|rod|staff|bamboo)\b/.test(li)) classifierHints.push({ classifier: 'jol', reason: 'long object' });
+  if (/\b(pen|pencil|stick)\b/.test(li)) classifierHints.push({ classifier: 'ge', reason: 'pen/stick-like object' });
 
   const firstWord = words[0]?.toLowerCase().replace(/[^a-z]/g,'');
   if (PRONOUN_MAP[firstWord]) {

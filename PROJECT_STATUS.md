@@ -60,6 +60,39 @@
 | Rule 30 (`re·` vs `re·ang` for "go") | Open linguistic question | Needs Thangseng — not an engineering blocker |
 | Rule 31 (copula inconsistency: bare-adj / `daka` / `ong·a`) | Open linguistic question | Needs Thangseng — not an engineering blocker |
 
+**Codex Repository Audit (2026-07-11) — classification and disposition.**
+An external audit (Codex) produced a 22-section report with 25 ranked
+"highest value improvements." Every high-priority engineering claim was
+independently verified against the actual repository before any action,
+per explicit instruction not to assume the audit was correct.
+
+*VERIFIED and fixed this session:*
+- `src/pages/VerbsGrammar.jsx` taught 5 confirmed-wrong grammar forms — fixed (`48aee52`)
+- Dead `phrase_maps.js` hortative entries shadowed by `corrections.json` — removed (`48aee52`)
+- RC-CANDIDATE-002/003/006 and 5/9 of RC-CANDIDATE-008 (translation-engine heuristic gaps already documented via RC candidates) — implemented (`d0e6c06`, see `docs/PENDING_REGRESSION_CASES.md`)
+- Duplicate `GARO_GRAMMAR_REFERENCE.md`/`GARO_GRAMMAR_VALIDATED.md` — resolved by Claude A (`b869a48`)
+- `GRAMMAR_SPEC.md`→`GRAMMAR_RULE_CATALOGUE.md` promotion gaps (RULE-015/032 class) — closed by Claude A (`b97e082`)
+
+*VERIFIED, not yet fixed (real, still open):*
+- `dist/` is git-tracked (only `dist/index.html`, not the JS/CSS bundle — smaller issue than the audit implied, but still shouldn't be committed given it's also gitignored)
+- CI lint (`.github/workflows/`) runs with `continue-on-error: true` — informational only, doesn't gate merges
+- Root `ARCHITECTURE.md` (16KB) duplicates `docs/ARCHITECTURE.md` (46KB, canonical) — not yet reconciled
+- `master_dictionary.json`/`garo_dictionary.json` not covered by `repository-intelligence.js` — documented gap, needs its own design (see `docs/REPOSITORY_INTELLIGENCE.md`)
+- classifierHints (`translationEngine.js` line ~235: `mang`/`sak`/`gong`/`king` only) — **verified accurate**, `jol`/`ge` exist in `garo_classifier.js`'s separate `CLASSIFIER_MAP` but not in this specific inline hints array; not yet reconciled
+
+*REJECTED (audit was inaccurate) — recorded so the same conclusion isn't reached again:*
+- *"PROJECT_STATUS.md still reports 51/51 in one health table."* No such table entry found — the only "51/51" string in the file is inside historical prose accurately describing a past session's state, not a stale current-count claim. The actual health table (§6) has been kept current throughout this session.
+- *"README claims English⇄Garo⇄Hindi as a real capability."* Partially fair as a UI-copy concern, but the audit's framing implies this is undocumented/hidden — `docs/PENDING_reverse_translation.md` and `docs/PHASE2_TRANSLATION_INTELLIGENCE.md` already document the English-only engine and blocked reverse-translation status extensively; this is known, tracked debt, not an undiscovered gap.
+- *Several root-level "probably obsolete" files listed* (`CLAUDE_CONTRIBUTIONS.md`, `GEMINI_CONTRIBUTIONS.md`, `ARCHITECTURE_REVIEW.md`, `DICTIONARY_AUDIT.md`, `REPOSITORY_AUDIT.md`, `PROJECT_STATUS_REPORT.md`) **do not exist in the repository** — checked directly. Only `IMPLEMENTATION_SUMMARY.md` and `FIXES_APPLIED.md` from that list are real.
+- *"Decide whether server.js is active product code or legacy."* Verified in one line: `package.json`'s `start` script is `node server.js` — it's the active production entry point, not legacy. No decision needed.
+
+*FUTURE (valid, not V1.0/consolidation scope):* splitting
+`translationEngine.js` into modules, a semantic intermediate
+representation, a UI test layer, morphology-data externalization for
+reverse translation — all correctly identified as Phase 2+ by the audit
+itself; no action taken, consistent with "this is not a new architecture
+sprint."
+
 ## 9. Native Validation Status
 *(Thangseng — placeholder. Open items pending: Rule 30, Rule 31, Rule 25's -aha/-manaha context preference, "Angade cha·manaha" tentative confirmation, "you drink/go/come/sleep" bare-statement validity — full detail in `docs/THANGSENG_RULES_LOOKUP.md`)*
 
