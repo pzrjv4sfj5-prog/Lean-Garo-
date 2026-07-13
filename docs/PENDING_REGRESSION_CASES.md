@@ -146,40 +146,64 @@ aspect/negation paradigm, malformed-input robustness, direct-count
 classifiers.
 
 ### RC-CANDIDATE-010 — NP-subject sentences never reach grammar-assembly
-**Conclusion:** `analyzeGrammar` gates on a recognized pronoun subject.
-Non-pronoun subjects (`"the book"`, `"the dog"`) never reach it,
-regardless of well-formedness — they fall to weak `sov-assembly`. Not
-locative-specific; affects any sentence with a non-pronoun subject.
-**Status:** Fix reportedly implemented by Claude B (session ended before
-push — not yet on `origin/main` as of 2026-07-12, unverified).
-**Benchmark:** the 6 `"the book is on the [location]"` sentences —
-confirmed 6/6 `sov-assembly`, zero exceptions.
-**Implementation implication:** extending subject detection beyond
-pronouns should fix this as a sentence class. Negative test cases: all
-231 pronoun-subject sentences (especially already-correct ones),
-imperatives (no subject), inverted questions (`"can i eat"`).
-**Remaining uncertainty:** none on diagnosis. Verification pending an
-actual benchmark rerun against real code.
+**Conclusion:** `analyzeGrammar` gated on a recognized pronoun subject.
+Non-pronoun subjects (`"the book"`, `"the dog"`) never reached it,
+regardless of well-formedness — fell to weak `sov-assembly`. Not
+locative-specific; affected any sentence with a non-pronoun subject.
+**Status:** **Fixed and confirmed**, commit `01b159a` (2026-07-12).
+NP-subject detection added, scoped to `[article]+[noun]+[coherent
+continuation]` (copula/stopword/end-of-sentence) — a structural
+coherence check, not a per-word patch (see `translationEngine.js`'s
+"Parser-boundary review" comment). A naive version misfired on
+adjective-modified subjects (`"a big dog"` → wrongly picked `"big"`);
+narrowed after review to only genuinely verifiable signals.
+**Benchmark:** all 6 of the isolated `"the [noun] is on/in/at the
+[location]"` sentences confirmed post-fix — `grammar-assembly`, correct
+subject + structure, zero exceptions. Negative test cases (231
+pronoun-subject sentences, imperatives, inverted questions) verified
+unaffected.
+**Explicitly out of scope, not silent:** demonstrative-led
+(`"this dog"`), quantifier-led (`"two teachers"`), possessive-headed
+(`"my dog"` as subject), coordinated, and adjective/multi-word-modified
+subjects — these fail the coherence check and safely fall back to
+`sov-assembly` rather than risk mislabeling. Real limitation: no POS
+data exists anywhere in this repository (`master_dictionary.json`'s
+`pos` field is null on every entry, verified directly) to distinguish a
+modifier from a head noun. Real NP-boundary detection needs that data
+first — not attempted.
+**Remaining uncertainty:** none on the confirmed scope.
 
-### RC-CANDIDATE-011 — "In" vs. "at" locative marking (retracted original hypothesis)
-**Conclusion:** Not per-noun as originally claimed (retracted). `"at"`
-generalizes `·o` correctly across all nouns tested; `"in"` does not.
-Same `grammar-assembly` method, same noun list — the variable is the
-preposition. Two independent compounding causes: (a) `NV-007`'s `tue`
-gap (verb-slot lost, uniform across all "lying in X" cases), (b) a
-separate `"in"`-specific locative-marking gap (noun-slot, `"bed"` is the
-only exception and is not a stored phrase).
-**Status:** Reportedly resolved as a side effect of the RC-010 fix
-(Claude B's transcript — the fix's locative-verb-guard applied broadly,
-not just to NP-subjects). **Not yet confirmed via benchmark rerun.**
-**Benchmark:** the 12 `"waiting at X"`/`"lying in X"` sentences —
-before-state: 6/6 correct for `"at"`, 1/6 for `"in"`.
-**Implementation implication:** none needed if genuinely resolved. If
-not, next diagnostic step is confirming whether `"at"`/`"in"` share a
-code path.
-**Remaining uncertainty:** whether the reported disappearance is real —
-must be confirmed by rerunning the identical benchmark, not assumed from
-a transcript.
+### RC-CANDIDATE-011 — "In" vs. "at" locative marking
+**Conclusion:** Not per-noun as originally hypothesized (retracted by
+Claude A pre-fix). `"at"` generalized `·o` correctly across all nouns;
+`"in"` didn't. Two independent compounding causes: (a) `NV-007`'s `tue`
+gap (verb-slot lost, uniform across all "lying in X" cases) plus a
+`"lying"`=untruth homonym trap in `master_dictionary.json` (`Ua
+tolenga`, wrong sense), (b) a separate `"in"`-specific locative-marking
+gap (noun-slot).
+**Status:** (b) **fixed and confirmed** as a side effect of the
+RC-010 fix — same commit. Root mechanism, answering Claude A's
+evidence-only question: `"at"`/`"in"` were always the same object-loop
+code path; the actual differentiator was the verb-search loop's
+hardcoded exclusion list (only `"down"`/`"bed"` excluded pre-fix,
+`RC-CANDIDATE-003`), which let every *other* location noun get wrongly
+consumed as the verb before reaching the object loop. RC-010's general
+rule (any word right after `in`/`on`/`at`, even across an intervening
+article, is never the verb) fixed all locations uniformly. (a) remains
+**open**, unaffected — confirmed post-fix that none of the 6 "lying in
+X" outputs contain a verb.
+**Benchmark:** all 6 `"lying in the X"` and all 5 remaining `"waiting
+at the X"` sentences confirmed producing correct `·o` post-fix.
+**Implementation implication:** none needed for (b). (a) needs `NV-007`
+resolution before `"lying"` can be wired up correctly (and must target
+the reclining sense, not the untruth sense already occupying that
+English word in the dictionary).
+**Remaining uncertainty:** none on (b), confirmed via direct rerun.
+
+Minor unrelated observation from the rerun: `"market"` resolves to two
+dictionary alternates joined by `"/"` (`"bajal / anti·o"`) rather than
+one clean value — pre-existing dictionary-data quality issue, not a
+grammar bug, not fixed here.
 
 ### RC-CANDIDATE-012 — Raka rendered as apostrophe instead of `·`
 **Conclusion:** Non-first-person `"sad"` (you/he/she/we/they) renders

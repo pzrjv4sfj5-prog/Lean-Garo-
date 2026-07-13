@@ -247,16 +247,92 @@ export function analyzeGrammar(input) {
   if (/\b(pen|pencil|stick)\b/.test(li)) classifierHints.push({ classifier: 'ge', reason: 'pen/stick-like object' });
 
   const firstWord = words[0]?.toLowerCase().replace(/[^a-z]/g,'');
-  if (PRONOUN_MAP[firstWord]) {
-    subject = { english: words[0], garo: PRONOUN_MAP[firstWord] };
+  // Parser-boundary review (2026-07-12, before adding more special
+  // cases): this positional "article + next word" heuristic has no way
+  // to know whether that next word is the head noun ("the dog") or a
+  // modifier ("the big dog" -> would wrongly grab "big"). No POS data
+  // exists anywhere in this repo to disambiguate (master_dictionary.json
+  // `pos` is null on every entry, confirmed during RC-CANDIDATE-003;
+  // garo_classifier.js's CLASSIFIER_MAP is Garo counting classifiers, not
+  // English POS; category_index.json is topical, not grammatical) - this
+  // is a real architectural boundary, not a gap to guess around. Rather
+  // than add a growing pile of per-word exclusions as each new adjective
+  // surfaces (the same failure mode as RC-CANDIDATE-003's "down"/"bed"
+  // list), this uses ONE general coherence check: only accept the
+  // candidate if what follows it is nothing, a copula, or something that
+  // resolves as a verb (reusing findVerbForm, not new heuristics). This
+  // correctly rejects "big" in "a big dog" (fails the check, "dog" isn't
+  // a verb) without ever needing to know "big" is an adjective, and
+  // generalizes to any future adjective the same way. When rejected, the
+  // sentence safely falls through to the existing sov-assembly fallback
+  // instead of confidently mislabeling the subject.
+  //
+  // Explicitly and intentionally NOT covered by this fix (documented
+  // boundary, not a silent gap): demonstrative-led subjects ("this dog"),
+  // quantifier-led subjects ("two teachers"), possessive-headed subjects
+  // as the sentence subject ("my dog" - POSSESSIVES already work
+  // elsewhere but not as a subject-NP head here), coordinated subjects
+  // ("the dog and the cat"), and any multi-word modifier before the head
+  // noun beyond what the coherence check happens to reject safely. These
+  // would need real NP-boundary detection, which needs real POS/parser
+  // data this repository does not have - out of scope for this fix, not
+  // silently promised as solved.
+  let npSubjectGaro = null, npSubjectEnglish = null, subjectEndIndex = 0;
+  if (!PRONOUN_MAP[firstWord] && /^(a|an|the)$/.test(firstWord) && words.length > 1) {
+    const nounWord = words[1].toLowerCase().replace(/[^a-z]/g,'');
+    if (!STOP_WORDS.has(nounWord) && !POSSESSIVES[nounWord]) {
+      const g = lookupGaro(nounWord);
+      const nextTok = words[2] ? words[2].toLowerCase().replace(/[^a-z]/g,'') : null;
+      // Note: deliberately NOT using findVerbForm(nextTok) here, even
+      // though it looks like a natural "is this a verb" check - it isn't
+      // one. findVerbForm falls back to a plain lookupGaro, so it
+      // succeeds on ANY dictionary word, not just verbs (proven directly:
+      // findVerbForm('dog') succeeds because 'dog' is a valid noun entry,
+      // which would have wrongly marked "a big dog" as coherent since
+      // "dog" "resolves"). Restricting to copula/stopword/absent is
+      // strictly less coverage but is the only signal actually
+      // verifiable without real POS data - see the parser-boundary review
+      // above.
+      const coherent = !nextTok || /^(is|are|was|were)$/.test(nextTok) || STOP_WORDS.has(nextTok);
+      if (g && coherent) { npSubjectGaro = g; npSubjectEnglish = words[1]; subjectEndIndex = 1; }
+    }
+  }
+
+  if (PRONOUN_MAP[firstWord] || npSubjectGaro) {
+
+    subject = PRONOUN_MAP[firstWord]
+      ? { english: words[0], garo: PRONOUN_MAP[firstWord] }
+      : { english: npSubjectEnglish, garo: npSubjectGaro };
+    const subjectWords = new Set(words.slice(0, subjectEndIndex + 1).map(w => w.toLowerCase().replace(/[^a-z]/g,'')));
 
     // Find verb — skip stop words, possessives, and auxiliary tense markers
     const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','should','may','might','can','used','to','stopped','quit','finished','completed','longer']);
     let verbIndex = -1;
     const SPECIAL_TENSES = ['discontinued','completed','chim','pastcont'];
-    for (let i = 1; i < words.length; i++) {
+    let pendingLocativeVerbGuard = false;
+    for (let i = subjectEndIndex + 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
-      if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) continue;
+      if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) {
+        if (/^(in|on|at)$/.test(w)) pendingLocativeVerbGuard = true;
+        continue;
+      }
+      // RC-CANDIDATE-010 fix (2026-07-12): a word immediately following a
+      // locative preposition (in/on/at), possibly with an intervening
+      // article ("on the table"), is a locative-adjunct object, never the
+      // main verb - generalizes the RC-CANDIDATE-003 pattern ("down"/
+      // "bed" hardcoded below) instead of hardcoding every new noun this
+      // collides with. Root cause: enabling NP subjects to reach
+      // grammar-assembly (this same fix) exposed this far more often than
+      // before, since "NP is in/on/at NOUN" sentences never reached this
+      // loop previously. Without this guard, "the book is on the table"
+      // -> "table" gets picked as the verb (resolves via lookupGaro)
+      // instead of being left for the object/locative loop below,
+      // producing "boi te·bil" with no verb-slot content and no ·o marker.
+      // Uses the same pending-flag pattern as the object loop's locative
+      // tracking (consumed on the next real word, not gated on adjacency)
+      // for the same reason: articles/other stopwords can sit between the
+      // preposition and the noun.
+      if (pendingLocativeVerbGuard) { pendingLocativeVerbGuard = false; continue; }
       // RC-CANDIDATE-003 fix (Claude A approved, 2026-07-10): 'down' is a
       // directional adverb with its own correct standalone translation
       // (corrections.json 'down'->'Ka·ma'), but this verb-search loop
@@ -345,13 +421,6 @@ export function analyzeGrammar(input) {
     // RC-CANDIDATE-002 fix (Claude A approved, 2026-07-10): "in"/"on"/"at"
     // are stopwords, so they were silently skipped and the following noun
     // got the default object marker ·ko — losing the locative distinction
-    // entirely ("in bed" -> "palang·ko" instead of "palango"). Only fires
-    // when the preposition immediately precedes the FIRST object token, in
-    // this SOV grammar-assembly fallback path — never overrides a working
-    // corrections.json exact match, since those never reach this code.
-    // RC-CANDIDATE-002 fix (Claude A approved, 2026-07-10): "in"/"on"/"at"
-    // are stopwords, so they were silently skipped and the following noun
-    // got the default object marker ·ko — losing the locative distinction
     // entirely ("in bed" -> "palang·ko" instead of "palango"). Tracks a
     // PENDING flag set when a locative stopword is seen and consumed on
     // the next real word pushed — not gated on objectWords being empty,
@@ -364,7 +433,7 @@ export function analyzeGrammar(input) {
     let objectIsLocativeAdjunct = false;
     let pendingLocative = false;
 
-    for (let i = 1; i < words.length; i++) {
+    for (let i = subjectEndIndex + 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
       const prevW = i > 0 ? words[i-1].toLowerCase().replace(/[^a-z]/g,'') : '';
       if (w === 'to' && i + 1 < words.length && prevW !== 'used') {
@@ -374,7 +443,7 @@ export function analyzeGrammar(input) {
           i++; continue;
         }
       }
-      if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || w === words[0].toLowerCase()) {
+      if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || subjectWords.has(w)) {
         if (/^(in|on|at)$/.test(w)) pendingLocative = true;
         continue;
       }
