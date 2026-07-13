@@ -290,6 +290,30 @@ changing themselves.
 **Remaining uncertainty:** none — this is fully native-confirmed, no
 linguistic ambiguity, purely an engineering routing fix.
 
+### RC-CANDIDATE-016 — `master_dictionary.json` case-key duplication (`"book"`/`"Book"`), newly exposed by RC-010's fix
+**Conclusion:** `master_dictionary.json` has two entries — `"book"`→
+`"Ki·tap"` and `"Book"` (capitalized key)→`"boi"` (`notes:
+"variant/VERIFIED/HIGH"`). Pre-existing, not caused by RC-010 — newly
+*surfaced* because the new NP-subject detection path queries the
+dictionary differently than the classifier-counting path, so they now
+visibly disagree (`"the book is on the bed"`→`"boi..."` vs. `"one
+book"`→`"Ki·tap"`, both live in the same corpus). `"boi"` may be a
+legitimate regional-loanword variant, not necessarily wrong — the real
+bug is non-deterministic selection based on incidental key-casing, not
+the word choice itself.
+**Status:** Open, unimplemented. Found during Priority 2 benchmark
+validation of `RC-010`, 2026-07-12.
+**Benchmark:** the 6 `"the book is on the [location]"` sentences.
+**Implementation implication:** `repository-intelligence.js` doesn't
+currently audit `master_dictionary.json`/`garo_dictionary.json` for
+case-key duplicates (matches the Codex audit's general finding —
+concrete instance materializing here). Either merge the two entries or
+make key lookup case-insensitive with an explicit tie-break rule.
+**Remaining uncertainty:** whether `"boi"` is a deliberate register/
+loanword choice worth preserving under a different key, or simply a
+duplicate that should be removed — a data-quality question for whoever
+originally added it, not a linguistic ambiguity.
+
 ---
 - Nothing in the Pending section above has been fixed — only logged.
 - Severity/priority labels are Claude B's engineering assessment only —

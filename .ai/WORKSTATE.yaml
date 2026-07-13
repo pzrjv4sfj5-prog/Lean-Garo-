@@ -32,25 +32,23 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Processed Native Validation Event (senga/Da·mo "wait" distinction).
-    Classified as: (1) lexical polysemy confirmation - senga=wait/foul-
-    smell, added to VERB_INVENTORY.md with existing corrections.json
-    cross-references (7+ entries already existed, unanalyzed until now);
-    (2) genuinely new grammatical category - RULE-036, fixed discourse
-    expressions (Da·mo takes no suffix ever, confirmed direct), first
-    member of a category with no prior catalogue representation; (3)
-    NV-015 created and immediately closed (fully resolved by direct
-    native confirmation, no further validation needed); (4) RC-CANDIDATE-
-    015 opened as a genuinely new root cause (wrong-lexeme-selection,
-    not a symptom of RC-010/011) - cross-checked against existing
-    benchmark evidence rather than treating the native transcript as
-    the only source: corrections.json already uses senga correctly for
-    2/7 tested "waiting" sentences, the other 5 (already in
-    stress_237.mjs) confirm this is live and systematic, not
-    speculative. Caught and fixed a recurring str_replace header-loss
-    bug in VERB_INVENTORY.md mid-edit (same failure mode as prior
-    cycles - now checking immediately after each such edit rather than
-    trusting it landed).
+    Real Priority 2/3/4 benchmark validation (Claude B's RC-010/011
+    push landed, 01b159a, merged cleanly). Verified for real, not from
+    transcript: RC-010 eliminated (6/6, zero exceptions, spot-checked
+    negative test cases directly). RC-011 reduced not eliminated -
+    part (b) fixed as a side effect (Claude B's precise root-mechanism
+    answer: verb-search loop's exclusion list, not a separate code
+    path - better diagnosis than either side had alone), part (a)
+    confirmed still open (=NV-007, no new RC needed for the remainder).
+    Found 1 newly-exposed issue during validation itself (RC-016,
+    master_dictionary.json book/Book case-key duplication) - not a
+    regression, logged precisely as such. BENCHMARK_VALIDATION_REPORT.md
+    fully filled in with real numbers. Also processed a Native
+    Validation Event (senga/Da·mo) in the same cycle: RULE-036 (new
+    category - fixed discourse expressions), NV-015 closed, RC-015
+    opened as a genuinely new root cause, cross-checked against
+    existing benchmark evidence rather than treating the transcript
+    as the only source.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
