@@ -32,20 +32,18 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Stress test (Project Owner directive - translator as primary source,
-    not documents): 237 generated sentences, live-tested against the
-    engine, clustered to 5 root causes (RC-CANDIDATE-010..014) rather
-    than reported per-sentence. Highest-value finding: NP-subject
-    sentences ("the book is...") never reach grammar-assembly at all -
-    a pronoun-only subject-detection gate affects an entire sentence
-    class, not one construction. Also found: locative ·o fix is
-    per-noun not generative (works for bed/table, not market/school/
-    house/room); a live apostrophe-vs-raka bug in non-first-person
-    adjective output (ong'a vs ong·a); per-adjective inconsistent
-    copula insertion (concrete evidence RULE-031 matters in practice,
-    not just documentation); imperatives/possession are memorized-only,
-    no general rule; "let us drink/speak" missing from corrections.json
-    entirely (broader than the eat/work mismatch found last cycle).
+    Validation Mode (Project Owner directive - hold discovery, Claude B
+    implementing RC-010). Prepared docs/BENCHMARK_VALIDATION_REPORT.md
+    (living template, before-snapshot captured precisely at commit
+    039ae17: method distribution, per-RC baseline numbers for
+    RC-010/011/012/013/014, pre-registered RC-011 hypothesis so the
+    after-comparison isn't motivated reasoning). AFTER section is
+    placeholders only - correctly not filled in, RC-010 hasn't landed
+    yet (checked, no new commits). Added supporting evidence to RC-013
+    (not a new RC, per Priority 5) from 4 additional adjectives tested
+    outside the fixed benchmark - found predicate-adjective coverage
+    gaps sometimes cause full word-selection differences, not just
+    copula-presence differences.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
@@ -82,7 +80,14 @@ claude_a:
     - "Do not attempt to resolve Rule 30/31 from assumptions - both explicitly need direct Thangseng validation, see NV-001/NV-002"
     - "Do not begin Verb Family Project with re·/re·ang - start with cha· per Project Owner sequencing, re·/re·ang is second, after NV-001"
     - "Do not re-run the coverage audit or confidence review from scratch - both are dated 2026-07-08, re-run only after new corpus rows are added or new native validation lands"
-  waiting_for: "Direct Thangseng answers to NV-001 (Rule 30) and NV-002 (Rule 31) - highest-priority open linguistic questions"
+  waiting_for: >-
+    Claude B to push RC-010 implementation. Once landed: re-run
+    tests/benchmarks/stress_237.mjs unmodified, fill in
+    BENCHMARK_VALIDATION_REPORT.md's AFTER section, validate against
+    the pre-registered RC-011 hypothesis rather than assuming it. Also
+    still waiting on direct Thangseng answers to NV-001 (Rule 30) and
+    NV-002 (Rule 31) - highest-priority open linguistic questions,
+    unrelated to RC-010 but still open.
   expected_output: "Markdown files committed to docs/, zero code/JS changes, per Sprint Work Package constraints"
 
 claude_b:
