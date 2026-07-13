@@ -32,18 +32,24 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Validation Mode (Project Owner directive - hold discovery, Claude B
-    implementing RC-010). Prepared docs/BENCHMARK_VALIDATION_REPORT.md
-    (living template, before-snapshot captured precisely at commit
-    039ae17: method distribution, per-RC baseline numbers for
-    RC-010/011/012/013/014, pre-registered RC-011 hypothesis so the
-    after-comparison isn't motivated reasoning). AFTER section is
-    placeholders only - correctly not filled in, RC-010 hasn't landed
-    yet (checked, no new commits). Added supporting evidence to RC-013
-    (not a new RC, per Priority 5) from 4 additional adjectives tested
-    outside the fixed benchmark - found predicate-adjective coverage
-    gaps sometimes cause full word-selection differences, not just
-    copula-presence differences.
+    Knowledge Consolidation (Claude B offline, Project Owner directive
+    - zero engine/benchmark/parser changes). Task 1: trimmed
+    PENDING_REGRESSION_CASES.md's RC-010..014 narration to final-
+    conclusion format (357->247 lines, ~30% reduction, no content
+    lost - conclusion/status/benchmark-ref/implication/uncertainty
+    per RC). Task 2: audited all 33 catalogue rules for superseded-doc
+    refs, duplicates, missing examples via targeted checks - none
+    needed changes, existing honesty (RULE-014's Low-confidence/
+    no-example status) already correct. Task 3: created
+    docs/BENCHMARK_INVENTORY.md (category-level, references the
+    benchmark rather than duplicating sentences, surfaces 2
+    uncaptured categories - question-word placement, sikeng/tue
+    lacking own RULE entries - as future observations only). Task 4:
+    NV backlog reviewed, closed NV-006 (effectively resolved by later
+    engineering evidence - RC-002 fixed it, RC-011 tracks the
+    remainder precisely, no native validation was ever needed, exactly
+    as its own original hypothesis said). Rest of NV-001..014 confirmed
+    still genuinely open, no other duplicates found.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
