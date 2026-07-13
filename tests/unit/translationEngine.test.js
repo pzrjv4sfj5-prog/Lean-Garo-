@@ -241,3 +241,33 @@ test('RC-CANDIDATE-010 boundary: adjective-modified NP subject safely falls back
   const r = await translate('a big dog is running');
   assert.equal(r.method, 'sov-assembly', 'should safely fall back, not confidently mislabel via grammar-assembly');
 });
+
+// --- RC-CANDIDATE-012 fix (2026-07-12): non-first-person "sad"/"bright"
+// were resolving to a duplicate master_dictionary.json entry with a
+// literal apostrophe typo instead of raka ("Duk ong'a" instead of
+// "Duk ong·a"). NOT a rendering/Unicode bug - root cause was source-data
+// duplication (two "sad" entries, prepare-data.js's pickPrimary()
+// deliberately takes the last value, which was the wrong one). Fixed at
+// the source (master_dictionary.json), not by changing pickPrimary's
+// established last-wins behavior (that policy has its own considered
+// history - see prepare-data.js's comment on the "i·a" corruption
+// incident). A broader search found 95 entries using "a'"/"an'"/"am'" as
+// a prefix pattern (earth/land/blood/search-related words) - this looks
+// like a genuine morpheme, not the same typo class, and was
+// EXPLICITLY NOT TOUCHED. Regression test locks in that boundary. ---
+test('RC-CANDIDATE-012: non-first-person predicate adjectives use raka, not apostrophe', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  for (const subj of ['you are sad', 'he is sad', 'she is sad', 'we are sad', 'they are sad']) {
+    const r = await translate(subj);
+    assert.ok(r.garo.includes('ong·a'), `"${subj}" should use raka (ong·a), got: ${r.garo}`);
+    assert.ok(!r.garo.includes("'"), `"${subj}" should not contain an apostrophe, got: ${r.garo}`);
+  }
+  const bright = await translate('the sky is bright');
+  assert.ok(bright.garo.includes('Ching·a'), `bright should use raka, got: ${bright.garo}`);
+});
+
+test('RC-CANDIDATE-012 boundary: legitimate a\'/an\'/am\' prefix words are untouched', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('earthquake');
+  assert.equal(r.garo, "a'a banggri·a", 'genuine prefix morpheme must not be altered by the raka-typo fix');
+});

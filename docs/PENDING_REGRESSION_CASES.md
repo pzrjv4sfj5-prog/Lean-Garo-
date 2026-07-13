@@ -206,18 +206,36 @@ one clean value — pre-existing dictionary-data quality issue, not a
 grammar bug, not fixed here.
 
 ### RC-CANDIDATE-012 — Raka rendered as apostrophe instead of `·`
-**Conclusion:** Non-first-person `"sad"` (you/he/she/we/they) renders
-`"Duk ong'a"` — apostrophe, not raka. First-person is correct
-(`"Anga duk ong·a"`). Same character-substitution error class as the
-hyphen-instead-of-raka bugs already fixed in `VerbsGrammar.jsx`/
-`phrase_maps.js`, this time live in engine output.
-**Status:** Open, unimplemented.
-**Benchmark:** 5 of the 36 predicate-adjective sentences (`"[you/he/
-she/we/they] [is/are] sad"`).
-**Implementation implication:** locate and fix the apostrophe in
-whatever table non-first-person grammar-assembly reads adjective forms
-from — low-ambiguity, no linguistic judgment required.
-**Remaining uncertainty:** none.
+**Conclusion:** Not a rendering/Unicode/serialization bug (the
+originally-suspected cause). Root cause: duplicate `master_dictionary.json`
+entries for `"sad"` and `"bright"` — one correct (`"duk ong·a"`,
+categorized), one with a literal apostrophe typo (`"Duk ong'a"`,
+`category: "uncategorized"`, `pos`/`notes`: null — an import-artifact
+signature). `prepare-data.js`'s `pickPrimary()` deliberately takes the
+last value seen (a considered policy — see its own comment on a prior
+"smart picking" incident that corrupted data worse), which happened to
+be the bad duplicate for both words.
+**Status:** Fixed, commit pending. Corrected both source entries
+directly; did not change `pickPrimary`'s established last-wins
+behavior.
+**Benchmark:** all 5 non-first-person `"sad"` sentences + `"bright"`
+confirmed producing `·` post-fix.
+**Critical scope boundary found and respected:** a broader search
+turned up 95 `master_dictionary.json` entries using `a'`/`an'`/`am'` as
+a *prefix* (earth/land/blood/search-related compound words, e.g.
+`"earthquake"`→`"a'a banggri·a"`). This is very likely a genuine
+morpheme or orthographic convention, structurally different from the
+isolated `sad`/`bright` duplicates (no duplicate correct-form
+counterpart exists, and these are semantically clustered, not random
+typos). **Explicitly not touched** — would have been an unauthorized
+linguistic decision affecting 95 entries. Regression test locks in that
+`"earthquake"` stays unchanged.
+**Remaining uncertainty:** none on the 2 fixed entries. The 95-entry
+`a'`/`an'`/`am'` pattern needs Claude A's confirmation before anyone
+concludes either way whether it's a real morpheme (leave alone,
+permanently) or itself a large-scale historical import artifact (would
+need native validation before any correction) — flagging as a new open
+question, not assuming either answer.
 
 ### RC-CANDIDATE-013 — Predicate-adjective copula insertion is inconsistent (RULE-031 in practice)
 **Conclusion:** Live, concrete evidence that `RULE-031`/`NV-002` being
