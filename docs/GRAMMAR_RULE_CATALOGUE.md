@@ -369,3 +369,14 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Validation Status:** Needs Native Validation (direct) — the sense distinction itself is plausible and specific enough to record, but has no confirmed example sentence yet, and RULE-033's existing "under the table" example should NOT be reused as evidence for `mitapo`, since it is a general-sense example.
 **Confidence:** Medium (distinction exists); Low (no worked example).
 **Launch Priority:** P1 — refines an existing P0 rule's scope but does not change RULE-033's already-implemented behavior; not launch-blocking.
+
+---
+### RULE-036 — Fixed Discourse Expressions (New Category)
+**Description:** A distinct grammatical class from ordinary verbs: words that function as complete, invariant utterances and take no suffix, no tense/aspect marking, no conjugation of any kind — explicitly confirmed as a closed class, not an incompletely-documented verb. First instance: `Da·mo` ("wait!" — said to someone you want to wait for you). Not previously represented anywhere in this catalogue; every other rule assumes some degree of inflectability (even RULE-006's bare-adjective predicates still take number/person agreement via the subject). This category may have other members not yet identified — worth watching for in future native sessions rather than assuming `Da·mo` is unique.
+**Examples:** `Da·mo, anga mi cha·kuna` = "Wait, let me eat." `Da·mo` used standalone as "Wait!"
+**Counterexamples:** `Anga Damogen` ("I will wait," engine-generated, treating `Da·mo` as if it took the future suffix `-gen`) — explicitly confirmed **wrong** by direct native correction: *"No suffix. It's just an expression... It cannot be changed into any other form."* Retained here as the counterexample precisely because it shows what happens when this category is missed.
+**Dependencies:** RULE-001 (Raka Locality — `Da·mo` does carry raka, consistent) but explicitly independent of RULE-015 (Stem Formation) — stem-formation doesn't apply here since there's no stem to form.
+**Native Notes:** Primary source, 2026-07-12 chat transcript (Thangseng, direct): *"Da·mo is used when you want someone to wait for you. It cannot be changed into any other form."* Confirmed in response to a direct question about the engine's actual (wrong) output.
+**Validation Status:** Verified.
+**Confidence:** High for `Da·mo` specifically; Low/Unknown for the category's full membership (only one confirmed member so far — "class exists" is High confidence, "class is fully enumerated" is not).
+**Launch Priority:** P0 — directly explains a live, confirmed-wrong translator output (see engineering handoff, `docs/PENDING_REGRESSION_CASES.md`).

@@ -240,6 +240,32 @@ generalization question, not a linguistic one.
 down"` alone — no longer invalid Garo, now valid-but-wrong-meaning,
 still resolves to the unrelated "down" root).
 
+### RC-CANDIDATE-015 — `Da·mo`("wait" expression) used for declarative "wait," should be `senga`
+**Conclusion:** Native-confirmed (`NV-015`, direct transcript, 2026-07-12).
+`"I will wait"` should be `"Anga senggen"` (`senga` root, inflectable).
+The engine currently produces `"Anga Damogen"` — `Da·mo` is a fixed
+discourse expression, confirmed to take no suffix at all, so this is a
+confirmed error, not a vocabulary preference. Cross-checked against
+existing repository evidence: `corrections.json` already uses `senga`
+correctly for 2 of 7 tested "waiting" sentences (`"i am waiting for
+you"`, `"i am waiting at the market"`); the 237-sentence benchmark shows
+the other 5 (`"waiting at the [bed/school/house/table/room]"`) all
+generating `Damo`-based output via `grammar-assembly`. New root cause,
+not a symptom of `RC-010`/`RC-011` — a wrong-lexeme-selection bug, not a
+subject-detection or locative-marking one.
+**Status:** Open, unimplemented.
+**Benchmark:** not yet in `stress_237.mjs` (benchmark not modified per
+Validation Mode — add in a future benchmark revision); currently
+observable via the 5 affected `"waiting at X"` sentences already in the
+corpus, plus `"i will wait"` (not currently in the corpus at all).
+**Implementation implication:** route the `grammar-assembly` "waiting"
+fallback through `senga`, not `Da·mo`, for declarative input. Reserve
+`Da·mo` for genuine imperative "Wait!" — its existing `corrections.json`
+entries (`'wait'`, `'you wait'`) are plausibly fine as-is and don't need
+changing themselves.
+**Remaining uncertainty:** none — this is fully native-confirmed, no
+linguistic ambiguity, purely an engineering routing fix.
+
 ---
 - Nothing in the Pending section above has been fixed — only logged.
 - Severity/priority labels are Claude B's engineering assessment only —

@@ -32,24 +32,25 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Knowledge Consolidation (Claude B offline, Project Owner directive
-    - zero engine/benchmark/parser changes). Task 1: trimmed
-    PENDING_REGRESSION_CASES.md's RC-010..014 narration to final-
-    conclusion format (357->247 lines, ~30% reduction, no content
-    lost - conclusion/status/benchmark-ref/implication/uncertainty
-    per RC). Task 2: audited all 33 catalogue rules for superseded-doc
-    refs, duplicates, missing examples via targeted checks - none
-    needed changes, existing honesty (RULE-014's Low-confidence/
-    no-example status) already correct. Task 3: created
-    docs/BENCHMARK_INVENTORY.md (category-level, references the
-    benchmark rather than duplicating sentences, surfaces 2
-    uncaptured categories - question-word placement, sikeng/tue
-    lacking own RULE entries - as future observations only). Task 4:
-    NV backlog reviewed, closed NV-006 (effectively resolved by later
-    engineering evidence - RC-002 fixed it, RC-011 tracks the
-    remainder precisely, no native validation was ever needed, exactly
-    as its own original hypothesis said). Rest of NV-001..014 confirmed
-    still genuinely open, no other duplicates found.
+    Processed Native Validation Event (senga/Da·mo "wait" distinction).
+    Classified as: (1) lexical polysemy confirmation - senga=wait/foul-
+    smell, added to VERB_INVENTORY.md with existing corrections.json
+    cross-references (7+ entries already existed, unanalyzed until now);
+    (2) genuinely new grammatical category - RULE-036, fixed discourse
+    expressions (Da·mo takes no suffix ever, confirmed direct), first
+    member of a category with no prior catalogue representation; (3)
+    NV-015 created and immediately closed (fully resolved by direct
+    native confirmation, no further validation needed); (4) RC-CANDIDATE-
+    015 opened as a genuinely new root cause (wrong-lexeme-selection,
+    not a symptom of RC-010/011) - cross-checked against existing
+    benchmark evidence rather than treating the native transcript as
+    the only source: corrections.json already uses senga correctly for
+    2/7 tested "waiting" sentences, the other 5 (already in
+    stress_237.mjs) confirm this is live and systematic, not
+    speculative. Caught and fixed a recurring str_replace header-loss
+    bug in VERB_INVENTORY.md mid-edit (same failure mode as prior
+    cycles - now checking immediately after each such edit rather than
+    trusting it landed).
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

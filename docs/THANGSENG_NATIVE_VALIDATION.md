@@ -883,7 +883,68 @@ since `dong` isn't part of that group.
 
 ---
 
+## NV-015 — `senga`("wait") vs. `Da·mo`("wait," fixed expression) — CLOSED, native-confirmed
+
+**Topic:** Two candidate translations for English "wait" — which is
+correct for declarative/inflected use vs. imperative/discourse use.
+
+**Status:** CLOSED (2026-07-12) — fully resolved by direct native
+confirmation, no further validation needed.
+
+**Native evidence (direct transcript):**
+> User: I will wait. Thangseng: `Anga senggen.`
+> User: Damo is also waiting na? Thangseng: Senggen is from the word
+> senga. Senga can mean to wait and it can also mean foul smell,
+> depending on context.
+> User: Translator currently produces: `Anga Damogen` Thangseng: Yes,
+> Da·mo can also be understood to mean wait. But I'd call it an
+> expression. It does not take any suffix... Da·mo is used when you want
+> someone to wait for you. It cannot be changed into any other form.
+
+**Resolution:** `senga`/`senggen` is the correct, inflectable verb for
+declarative "wait" ("I will wait" = `Anga senggen`). `Da·mo` is a fixed
+discourse expression (see new `RULE-036`) — imperative-only, invariant,
+never takes a suffix. The engine's `"Anga Damogen"` output for "I will
+wait" is a **confirmed error**, not a valid alternate — `Da·mo` was
+never a candidate for inflection at all.
+
+**Cross-checked against existing repository evidence (not just the new
+transcript):** `corrections.json` already has `"i am waiting for
+you"`→`"Anga nangko sengenga"` and `"i am waiting at the market"`→
+`"Anga antio sengenga"` — both correctly using the `senga` root. But the
+237-sentence stress-test benchmark (`docs/PENDING_REGRESSION_CASES.md`
+RC-CANDIDATE-011 evidence) shows `"i am waiting at the [bed/school/
+house/table/room]"` all falling to `grammar-assembly` and generating
+`"...Damo"` — confirming this is a **live, systematic error**, not a
+one-off. The engine has the right root already, correctly used in 2 of
+7 tested "waiting" sentences; the other 5 use the wrong one.
+
+**Repository components impacted:** `src/translationEngine.js`
+(whatever table/logic generates `Damo` for declarative "waiting" —
+should generate `senga`-based forms instead), `src/data/corrections.json`
+(no direct edit needed — `Damo`'s existing entries, `'wait'→'Damo'`,
+`'you wait'→'Damo'`, are plausibly fine as-is for imperative/bare
+citation use, not necessarily wrong themselves).
+
+**Engineering handoff (linguistic classification complete — this is a
+build request for Claude B, not for me):** the `grammar-assembly`
+fallback for "waiting at/for X" should route through the `senga` root
+(pattern: `Anga [X]·o sengenga` / `Anga [X]ko sengenga` depending on the
+locative/object marking already established) instead of `Da·mo`, for
+any declarative (non-imperative) "wait" sentence. `Da·mo` should be
+reserved for genuine imperative "Wait!" input, consistent with
+`RULE-036`. Suggested regression cases: `"i will wait"`→`"Anga
+senggen"`, `"i am waiting at the school"`→`senga`-based (not `Damo`),
+`"wait!"`→`Da·mo` (imperative should still correctly use `Da·mo`, not
+regress to `senga`).
+
+---
+
 ## Closed Questions
 - **NV-006** (`·ko`/`·o` selection) — closed 2026-07-12, effectively
   resolved as engineering work, not a native question. See NV-006 above
   for disposition; tracked as `RC-CANDIDATE-002`/`011` going forward.
+- **NV-015** (`senga` vs. `Da·mo` for "wait") — closed 2026-07-12,
+  fully resolved by direct native confirmation. See full entry above.
+  Live engine bug now tracked separately as engineering work (see
+  `docs/PENDING_REGRESSION_CASES.md`).
