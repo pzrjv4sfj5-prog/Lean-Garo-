@@ -28,8 +28,10 @@ need Thangseng at all.
    `-na`-construction case like the other two, so it's not bundled in
    this specific ask — a separate, smaller question if it comes up.)
 
-4. **(NV-013, added 2026-07-10)** "I want to sing" / "I want to dance"
-   — two words, resolves a live `purpose_map.json` bug either way.
+4. **(NV-013, updated 2026-07-14)** "I want to sing" — and now that
+   `Chroka`("dance") is confirmed, just: "how do you say 'I want to
+   dance'? Is it `Chroka·na`?" — resolves a live `purpose_map.json` bug
+   either way.
 5. **(NV-016, added 2026-07-13)** "Is `nanga`('need') related to
    `nangja`('need not')?" / "Is `ska`('want') a casual form of
    `sikenga`?" — two cheap yes/no-shaped questions, high leverage.
