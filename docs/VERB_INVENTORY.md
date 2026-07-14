@@ -102,3 +102,17 @@ blocked on the semantic-range question).
 See NV-010 below for the raka-inconsistency cluster — the single most
 valuable finding from this inventory pass, since it's a genuine,
 previously-undetected pattern rather than a restatement of known gaps.
+
+## Cultural Vocabulary Note (P4, added 2026-07-14)
+`Chroka` = "dance" (general). `Grika` — **not** a general synonym,
+despite an academic dictionary source glossing it simply as "to
+dance." Native-confirmed: names a specific ceremonial dance performed
+by the male lead dancer during Wangala (the Garo harvest festival),
+danced with sword and shield. Preserved here as cultural/ceremonial
+vocabulary (P4 — language preservation, per the standing priority
+framework) rather than folded into general "dance" coverage, since
+collapsing it would lose real cultural specificity the native speaker
+took care to distinguish. Source: direct Thangseng confirmation,
+2026-07-14, with a supporting video reference provided in the same
+exchange (not independently reviewed here — video content not
+verifiable by this process, cited as supplied).

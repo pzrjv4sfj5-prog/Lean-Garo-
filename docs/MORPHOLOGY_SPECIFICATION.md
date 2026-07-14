@@ -148,14 +148,18 @@ class-labeled by the source itself:
   root, directly extends `docs/verbs/CHA_EAT.md`'s attested paradigm
   with a new compound form not currently documented there).
 
-**New vocabulary candidate, high-priority cross-reference:** `Grika`,
-v. "to dance" — a **third** candidate word for "dance," alongside the
-already-conflicting `Chroka`/`ruru·na` pair (`RC-CANDIDATE-007`,
-`NV-013`). Not resolving the conflict — adding a data point to it. See
-`THANGSENG_NATIVE_VALIDATION.md` NV-013 update.
+**Vocabulary note, resolved 2026-07-14 (native-confirmed):** `Grika`,
+v. "to dance" — **not** a competing general-purpose synonym for
+`Chroka` as initially flagged. Native-confirmed: `Chroka` is the common
+word for "dance"; `Grika` names a specific ceremonial dance performed
+by the male lead dancer in Wangala (sword-and-shield dance), not
+"dance" in general. The dictionary's gloss was accurate but under-
+specified — a real lesson about this source's granularity for future
+entries from it, not an error. See `THANGSENG_NATIVE_VALIDATION.md`
+NV-013 and `VERB_INVENTORY.md` for the cultural-vocabulary note.
 
-**Status:** Needs Native Validation (direct) for all items — academic
-source only, zero native-session confirmation yet. **Priority:** P2 —
+**Status:** Needs Native Validation (direct) for all remaining items —
+academic source only, zero native-session confirmation yet. **Priority:** P2 —
 none of these are launch-blocking; `-breja`'s possible overlap with
 `RULE-018` is the one item worth prioritizing if a native session opens
 on this topic, since it could affect an already-implemented rule's

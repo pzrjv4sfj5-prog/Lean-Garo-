@@ -32,20 +32,18 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Processed new primary source: printed Garo-English dictionary
-    (4 page photos, title/edition unidentified - flagged for
-    verification). Classified at academic-source tier (same as Burling
-    in GARO_GRAMMAR_VALIDATED.md - citable, not native-session-
-    equivalent). Added MORPHOLOGY_SPECIFICATION.md §7 (new): 7
-    derivational/compound-forming suffixes, none previously documented
-    anywhere in the repo (-gri, -grima, -grika, -gronga, -gopa, -breja,
-    -brina). Flagged -breja's possible overlap with RULE-018 as worth
-    checking together. Found "Grika"="dance", a third unreconciled
-    candidate alongside Chroka/ruru·na (RC-CANDIDATE-007/NV-013) -
-    added to NV-013, explicitly distinguished from the unrelated
-    -grika reciprocal suffix (same string, different lexical items).
-    Added cha·brina ("eat together") as a candidate compound extension
-    to CHA_EAT.md, marked not-yet-confirmed.
+    Native confirmation resolved the "dance" word question (NV-013,
+    half-closed): Chroka confirmed as general "dance"; Grika withdrawn
+    as a competing synonym, reclassified as a specific Wangala
+    ceremonial dance term (male lead dancer, sword-and-shield) -
+    preserved as P4 cultural vocabulary in VERB_INVENTORY.md, not
+    folded into general coverage (would lose real specificity).
+    Corrected the earlier same-day MORPHOLOGY_SPECIFICATION.md §7 entry
+    accordingly - noted as a lesson about that dictionary source's
+    granularity, not an error in it. Thangseng's own hedge ("I
+    think😁") preserved rather than smoothed into false certainty.
+    Remaining open: purposive form of Chroka ("want to dance"), and
+    the "sing" half of NV-013.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

@@ -847,7 +847,26 @@ is a distinct dictionary entry from the suffix `-grika` (reciprocal,
 see `MORPHOLOGY_SPECIFICATION.md` §7) — same string, unrelated items,
 flagging so a future reader doesn't conflate them.
 
-**Status:** OPEN — Needs Native Validation (direct), low effort to ask.
+**Update 2026-07-14 (native-confirmed):** The "dance" half of this
+question is now resolved. Direct Thangseng confirmation: *"The common
+word for dance is chroka. Grika does not mean to dance in general. It
+is used for a specific dance performed by the male lead dancer in
+Wangala. I think😁"* — hedge preserved deliberately, not smoothed over.
+`Chroka` confirmed as the general-purpose "dance" word — the `Grika`
+candidate from the printed-dictionary source (added earlier today) is
+**withdrawn** as a competing synonym and reclassified as a specific
+cultural/ceremonial term (see `VERB_INVENTORY.md` note below). This
+also retroactively confirms the printed dictionary's gloss ("Grika, v.
+To dance") was accurate but overly general — a real, useful lesson about
+that source's granularity, not an error in the source itself.
+**Remaining open:** the purposive form (`"want to dance"` — is it
+`Chroka·na`, following the regular `-na` pattern, or `ruru·na` as
+`purpose_map.json` currently has it?) is still unconfirmed. The "sing"
+half of this NV item is also still fully open.
+
+**Status:** OPEN (narrowed) — Needs Native Validation for the purposive
+form of `Chroka` and for `ring·na`("sing"). The word-identity question
+for "dance" is closed.
 
 ---
 
