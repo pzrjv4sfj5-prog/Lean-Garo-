@@ -50,10 +50,57 @@ been made from it.
   `Ua` for "he", both appear to be minor transcription/register
   variants rather than substantive disagreements).
 
-## Required before implementation
-Per the integration rule, Claude A must review this against
-`GRAMMAR_RULE_CATALOGUE.md`/`THANGSENG_NATIVE_VALIDATION.md`, resolve
-the `ama`/`man·a` and `ska`/`sikenga` ambiguities, assign rule ID(s) or
-close relevant NV items, and commit to `docs/`. Only then does this
-become implementable for Claude B (dictionary entries + regression
-tests + doc sync), per the standard workflow.
+## Claude A Review (2026-07-13) — Disposition
+
+- **`donga`="has":** confirmed, no action needed — matches the already-
+  landed engineering fix (`RC-CANDIDATE-014`) and `RULE-G7`. `manggni`
+  (this proposal) vs. `mang·gni` (already-live `corrections.json`,
+  `"i have two dogs"`) is a minor spelling/raka-omission difference in
+  the relay, not a substantive disagreement — treat `mang·gni` (with
+  raka) as authoritative, already implemented. `uo` vs. `Ua` for "he" is
+  the same kind of casual-transcription variance already seen elsewhere
+  this session, not a new question.
+
+- **`"need to eat"` → `cha·na nanga`:** strong hypothesis, not yet
+  confirmed as a formal rule. Very likely the positive counterpart of
+  the already-confirmed `nangja`("need not," Native Sentence Validation
+  Audit Case 1) — `nanga`+`RULE-017`'s regular `-ja` negation would
+  cover both with one rule instead of two unrelated ones. **Not
+  promoting to a RULE yet** — this is a single relayed data point,
+  same evidentiary bar issue as `RULE-034` was originally held to.
+  Added as `NV-016` for direct confirmation (cheap: one question
+  confirms or denies the `nanga`/`nangja` relationship).
+
+- **`"can eat"` → `ama` / `man·a`:** **do not treat as two equally-
+  weighted candidates.** Checked `"ama"` against repository history —
+  `GLOBAL_RAKA_CONVERSION_HANDOFF.md` explicitly documents `mother =
+  ama` as a **confirmed wrong** form, corrected to `aai`. That's not
+  proof `ama` is wrong here too (Garo has genuine homonyms elsewhere in
+  this repository — `nika` alone has 3+ senses), but a string with a
+  documented error history recurring in an unrelated relay is worth
+  real caution, not default acceptance. `man·a` remains the safer
+  primary candidate (already the pre-existing, if unverified,
+  dictionary entry) — this proposal doesn't resolve `NV-008`, it adds a
+  new candidate that itself needs scrutiny before either can be trusted.
+  `NV-008` stays open, updated with this caution rather than closed.
+
+- **`"want to eat"` → `cha·na ska`:** does not supersede `sikenga` —
+  most likely a casual-register contraction, matching the exact shape
+  of three already-confirmed formal/casual doublets this session
+  (`An·ching`/`chinga`, `gnang`/`donga`, `hai cha·na`/`hai cha·bo`).
+  `sikeng` (longer, citation form) / `ska` (short, casual) fits the
+  same pattern. **Not implemented as a replacement** — added as a
+  register note pending confirmation, not a correction to the existing
+  value. Added as part of `NV-016`.
+
+**Rule/NV assignments:** `NV-016` created (`nanga`/`nangja` relationship,
+`ska`/`sikeng` register question — bundled, cheap to ask together).
+`NV-008` updated with the `ama` caution, not closed. No new
+`GRAMMAR_RULE_CATALOGUE.md` entries yet — everything here is single-
+relay evidence, held to the same bar as prior proposals before
+promotion. **Status: reviewed, not implementable yet** — per the
+proposal's own "required before implementation" note, the `ama`/`man·a`
+and `ska`/`sikeng` ambiguities are flagged for native confirmation, not
+resolved, so this stays a proposal pending `NV-016`, not a green light
+for Claude B.
+

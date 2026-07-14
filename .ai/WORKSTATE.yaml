@@ -32,23 +32,24 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Real Priority 2/3/4 benchmark validation (Claude B's RC-010/011
-    push landed, 01b159a, merged cleanly). Verified for real, not from
-    transcript: RC-010 eliminated (6/6, zero exceptions, spot-checked
-    negative test cases directly). RC-011 reduced not eliminated -
-    part (b) fixed as a side effect (Claude B's precise root-mechanism
-    answer: verb-search loop's exclusion list, not a separate code
-    path - better diagnosis than either side had alone), part (a)
-    confirmed still open (=NV-007, no new RC needed for the remainder).
-    Found 1 newly-exposed issue during validation itself (RC-016,
-    master_dictionary.json book/Book case-key duplication) - not a
-    regression, logged precisely as such. BENCHMARK_VALIDATION_REPORT.md
-    fully filled in with real numbers. Also processed a Native
-    Validation Event (senga/Da·mo) in the same cycle: RULE-036 (new
-    category - fixed discourse expressions), NV-015 closed, RC-015
-    opened as a genuinely new root cause, cross-checked against
-    existing benchmark evidence rather than treating the transcript
-    as the only source.
+    Reviewed 2 items Claude B flagged in Pending. (1) RC-012's
+    boundary question (91 master_dictionary.json entries with a'/an'/
+    am' prefix) - investigated directly, confirmed genuine distinct
+    morphology (semantic clustering: land/earth for a', blood/body for
+    an'/am'; independently corroborated by a'jak soka="revenge" from
+    suffixes.pdf read earlier this session) - added RULE-037, resolved
+    RC-012's scope boundary definitively (leave all 91 alone, matches
+    Claude B's caution). (2) New native-evidence proposal (modals/
+    possession) - reviewed critically, not accepted wholesale: "ama"
+    (proposed for "can") has a documented error history in this repo
+    (mother=ama was already confirmed wrong, corrected to aai) - flagged
+    as a real caution in NV-008 rather than treated as an equal
+    candidate to man·a. "nanga"/nangja and "ska"/sikeng bundled as
+    NV-016 (strong hypotheses, not yet promoted to RULEs - single-relay
+    evidence held to the same bar as always). donga="has" and
+    manggni/mang·gni spelling confirmed as non-issues. Proposal marked
+    reviewed-not-implementable, explicitly not a green light for
+    Claude B until NV-016 resolves.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

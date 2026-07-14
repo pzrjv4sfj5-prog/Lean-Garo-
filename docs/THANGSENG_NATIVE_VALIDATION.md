@@ -30,6 +30,9 @@ need Thangseng at all.
 
 4. **(NV-013, added 2026-07-10)** "I want to sing" / "I want to dance"
    — two words, resolves a live `purpose_map.json` bug either way.
+5. **(NV-016, added 2026-07-13)** "Is `nanga`('need') related to
+   `nangja`('need not')?" / "Is `ska`('want') a casual form of
+   `sikenga`?" — two cheap yes/no-shaped questions, high leverage.
 verb, ability-modal) are real but lower-priority — bundle them into a
 second relay only after this first batch lands, to avoid overloading a
 single native-validation session. NV-006 and NV-009 do not need to be
@@ -560,6 +563,18 @@ hasn't cleared the project's normal confirmation bar. The fix isn't
 simply "wire up an already-confirmed entry" — the entry itself should
 get direct Thangseng confirmation alongside the ability-modal question.
 
+**Update 2026-07-13:** A new relayed proposal
+(`docs/PENDING_LINGUISTIC_PROPOSAL_20260713_modals_possession.md`)
+offers `ama` as an alternate form for "can eat" alongside `man·a`. **Not
+treating these as equally-weighted candidates** — `ama` has a documented
+error history in this repository (`GLOBAL_RAKA_CONVERSION_HANDOFF.md`:
+`mother = ama` confirmed wrong, corrected to `aai`). Not proof `ama` is
+wrong here too, but a red flag worth carrying into the eventual native
+question rather than silently picking one. Suggested addition to the
+eventual relay: confirm both `man·a` and `ama` directly, and ask whether
+`ama` might be a mishearing/mistranscription of `aai`(mother) bleeding
+into an unrelated context, or a genuine distinct word.
+
 ---
 
 ## NV-009 — `TV` / `status` loanword coverage
@@ -937,6 +952,59 @@ reserved for genuine imperative "Wait!" input, consistent with
 senggen"`, `"i am waiting at the school"`→`senga`-based (not `Damo`),
 `"wait!"`→`Da·mo` (imperative should still correctly use `Da·mo`, not
 regress to `senga`).
+
+---
+
+## NV-016 — `nanga`("need") vs. `nangja`("need not"); `ska` vs. `sikeng` ("want")
+
+**Topic:** Two bundled, cheap questions from a single relayed proposal
+(`docs/PENDING_LINGUISTIC_PROPOSAL_20260713_modals_possession.md`).
+
+**Background:** `"need to eat"` was relayed as `cha·na nanga`. The
+already-confirmed `nangja`("need not," Native Sentence Validation Audit
+Case 1) looks like its negative counterpart — `nanga` + `RULE-017`'s
+regular `-ja` would unify two currently-separate-looking forms under one
+rule. Separately, `"want to eat"` was relayed as `cha·na ska`, differing
+from the currently-implemented `sikenga` (`"i want to eat"` →
+`"Anga cha·na sikenga"`, live and working). Shape matches the
+formal/casual register-doublet pattern already confirmed three times
+this session (`An·ching`/`chinga`, `gnang`/`donga`, `hai cha·na`/`hai
+cha·bo`).
+
+**Current Repository Evidence:** `nangja` native-confirmed via direct
+gloss ("need not," Case 1). `nanga` only via this single relay, no
+worked sentence beyond the one proposal line. `sikenga` extensively
+attested (13+ `corrections.json` entries). `ska` only via this single
+relay.
+
+**Candidate Hypotheses:**
+1. `nanga`/`nangja` are the same root, positive/negative pair via
+   `RULE-017`'s regular `-ja` — one rule would cover both.
+2. `ska` is a casual-register contraction of `sikeng`, not a competing
+   or superseding form — matches the established doublet pattern.
+3. (Lower probability, worth ruling out rather than ignoring) either
+   pair could be unrelated near-homophones — same caution class as the
+   `ama`/`aai` concern in `NV-008`.
+
+**Required Native Validation:** "Is `nanga`('need') related to
+`nangja`('need not') — same word, just negated?" / "Is `ska`('want') a
+shorter, more casual way of saying `sikenga`, or a different word?" —
+both answerable in one short exchange.
+
+**Why the Answer Matters:** If hypothesis 1 confirms, it's a real
+grammar simplification (one modal-negation rule instead of tracking two
+forms as unrelated). If hypothesis 2 confirms, it adds a genuine, useful
+register note without disturbing the working `sikenga` implementation.
+
+**Repository Components Impacted:** `docs/GRAMMAR_RULE_CATALOGUE.md`
+(candidate rule if hypothesis 1 confirms — would formalize the
+`nangja`/`RULE-005`(necessity-modal) connection first raised in
+`NV-005`), `docs/VERB_INVENTORY.md` (`sikeng` entry, register note if
+hypothesis 2 confirms). No `corrections.json` changes implied either
+way — `sikenga` stays the implemented form regardless.
+
+**Status:** OPEN — Needs Native Validation (direct), low effort,
+bundles naturally with other open questions in the next relay.
 
 ---
 

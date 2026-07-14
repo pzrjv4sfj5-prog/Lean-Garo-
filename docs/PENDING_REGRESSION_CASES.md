@@ -231,11 +231,10 @@ typos). **Explicitly not touched** — would have been an unauthorized
 linguistic decision affecting 95 entries. Regression test locks in that
 `"earthquake"` stays unchanged.
 **Remaining uncertainty:** none on the 2 fixed entries. The 95-entry
-`a'`/`an'`/`am'` pattern needs Claude A's confirmation before anyone
-concludes either way whether it's a real morpheme (leave alone,
-permanently) or itself a large-scale historical import artifact (would
-need native validation before any correction) — flagging as a new open
-question, not assuming either answer.
+`a'`/`an'`/`am'` pattern — **resolved (2026-07-13, Claude A review):**
+confirmed a genuine, distinct morphological prefix, not a duplicate-typo
+pattern. See `GRAMMAR_RULE_CATALOGUE.md` `RULE-037`. Leave all 91
+entries untouched, as Claude B's caution correctly anticipated.
 
 ### RC-CANDIDATE-013 — Predicate-adjective copula insertion is inconsistent (RULE-031 in practice)
 **Conclusion:** Live, concrete evidence that `RULE-031`/`NV-002` being
