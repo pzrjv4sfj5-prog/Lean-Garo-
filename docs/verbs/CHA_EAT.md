@@ -83,6 +83,12 @@ confirmed raka status), which is itself useful evidence: it suggests
 `cha·`'s raka-bearing status is not the source of the `ring`/`agan`/
 `porai` conflict, since `cha·` also bears raka and shows no inconsistency.
 
+**New compound form, academic source only (2026-07-14):** `cha·brina`
+= "to eat together," from `cha·` + `-brina` (a "to mix" derivational
+suffix — see `MORPHOLOGY_SPECIFICATION.md` §7). Not native-confirmed,
+not yet added to the attested paradigm table above — a candidate
+extension, not a confirmed form.
+
 ## Open Questions From This Page
 1. Three distinct "let's eat" forms (`Hai cha·bo`, `Hai cha·na`,
    `Hai cha·ha`) are unreconciled — is this free variation, register

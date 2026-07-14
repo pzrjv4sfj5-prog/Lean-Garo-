@@ -32,24 +32,20 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    Reviewed 2 items Claude B flagged in Pending. (1) RC-012's
-    boundary question (91 master_dictionary.json entries with a'/an'/
-    am' prefix) - investigated directly, confirmed genuine distinct
-    morphology (semantic clustering: land/earth for a', blood/body for
-    an'/am'; independently corroborated by a'jak soka="revenge" from
-    suffixes.pdf read earlier this session) - added RULE-037, resolved
-    RC-012's scope boundary definitively (leave all 91 alone, matches
-    Claude B's caution). (2) New native-evidence proposal (modals/
-    possession) - reviewed critically, not accepted wholesale: "ama"
-    (proposed for "can") has a documented error history in this repo
-    (mother=ama was already confirmed wrong, corrected to aai) - flagged
-    as a real caution in NV-008 rather than treated as an equal
-    candidate to man·a. "nanga"/nangja and "ska"/sikeng bundled as
-    NV-016 (strong hypotheses, not yet promoted to RULEs - single-relay
-    evidence held to the same bar as always). donga="has" and
-    manggni/mang·gni spelling confirmed as non-issues. Proposal marked
-    reviewed-not-implementable, explicitly not a green light for
-    Claude B until NV-016 resolves.
+    Processed new primary source: printed Garo-English dictionary
+    (4 page photos, title/edition unidentified - flagged for
+    verification). Classified at academic-source tier (same as Burling
+    in GARO_GRAMMAR_VALIDATED.md - citable, not native-session-
+    equivalent). Added MORPHOLOGY_SPECIFICATION.md §7 (new): 7
+    derivational/compound-forming suffixes, none previously documented
+    anywhere in the repo (-gri, -grima, -grika, -gronga, -gopa, -breja,
+    -brina). Flagged -breja's possible overlap with RULE-018 as worth
+    checking together. Found "Grika"="dance", a third unreconciled
+    candidate alongside Chroka/ruru·na (RC-CANDIDATE-007/NV-013) -
+    added to NV-013, explicitly distinguished from the unrelated
+    -grika reciprocal suffix (same string, different lexical items).
+    Added cha·brina ("eat together") as a candidate compound extension
+    to CHA_EAT.md, marked not-yet-confirmed.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

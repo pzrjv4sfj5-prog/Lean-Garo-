@@ -836,6 +836,17 @@ independently-confirmed `ring·a` root, not itself confirmed.
 want to dance'?" — cheap, two words, high translation-impact (fixes a
 reachable "want to X" construction class).
 
+**Update 2026-07-14:** A third candidate for "dance" — `Grika` — found
+in a printed Garo-English dictionary source (page-photographed,
+title/edition unidentified). Now three unreconciled candidates for
+"dance" total: `Chroka` (existing `corrections.json`), `ruru·na`
+(existing `purpose_map.json`), `Grika` (this new source). Academic-
+source tier only, not native-confirmed — doesn't resolve the question,
+adds a third option needing the same direct confirmation. Note: `Grika`
+is a distinct dictionary entry from the suffix `-grika` (reciprocal,
+see `MORPHOLOGY_SPECIFICATION.md` §7) — same string, unrelated items,
+flagging so a future reader doesn't conflate them.
+
 **Status:** OPEN — Needs Native Validation (direct), low effort to ask.
 
 ---

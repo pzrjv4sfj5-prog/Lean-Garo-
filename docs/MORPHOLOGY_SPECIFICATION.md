@@ -103,3 +103,60 @@ a new root's raka status and any lexical-split risk (§5) should be
 confirmed before assuming the suffix table applies mechanically.
 
 **Status:** Derived (for unattested roots). **Priority:** P1.
+
+## 7. Derivational/Compound-Forming Suffixes (Academic Source, Distinct from §3)
+
+**Source classification:** an unidentified printed Garo-English
+dictionary, page-photographed 2026-07-14 (title/author/edition not yet
+established — ask before citing externally). Treated at the same
+evidentiary tier as `GARO_GRAMMAR_VALIDATED.md`'s academic sources:
+citable, valuable, **not** equivalent to direct native-session
+confirmation. Every item below is Needs Native Validation unless stated
+otherwise, regardless of how confidently the source states it.
+
+These are a different category from §3's tense/aspect/mood suffixes —
+derivational, forming compound verbs/adjectives from a root, several
+class-labeled by the source itself:
+- **`-gri`** — appended to nouns, meaning non-existence/absence
+  (`segri`="having no husband, a widow," `chigri`="waterless,"
+  `rasonggri`="no luck, unlucky").
+- **`-grima`** — appended to verbs, meaning "together in a whole crowd"
+  (`kam ka·grima`="to work together in a crowd").
+- **`-grika`** — appended to verbs, reciprocal (`dokgrika`="to beat each
+  other," `on·grika`="to give and take," `sepanggrika`="near to each
+  other, as two places"). Distinct dictionary entry from standalone
+  `Grika`, v. "to dance" — same string, different lexical items,
+  flagged so they aren't conflated (see NV-013 update below).
+- **`-gronga`** — appended to verbs, "to meet" (`re-grong`="to meet by
+  chance").
+- **`-gopa`** — "indicating something entire or complete, whole,"
+  appended to verbs (`ra·gopa`="take the entire quantity,"
+  `rimgopa`="capture whole lot," `cha·gopa`="to eat all, by himself
+  alone," `bamgopa`="to bow; to include all," `man·gopa`="to include
+  all, to comprise" — note `man·gopa`'s `man·` root plausibly connects
+  to the already-tracked polysemous `man·` root, `NV-008`/`VERB_
+  INVENTORY.md`, worth checking together, not assumed the same without
+  confirmation).
+- **`-breja`** — appended to verbs/adjectives, "to be not to the
+  standard (used only before the negative particle)" (`nambreja`="not
+  very good, not to one's satisfaction" — `nam`="good," already
+  confirmed root, RULE-001 raka-free). Possibly relevant to `RULE-018`
+  (`-gija` verbal-adjective) territory — a second "approximates but
+  falls short of X" derivational pattern, not yet reconciled with it.
+- **`-brina`** — verb suffix, "to mix" (`donbrina`="to put together
+  things of different kinds," `cha·brina`="to eat together" — `cha·`
+  root, directly extends `docs/verbs/CHA_EAT.md`'s attested paradigm
+  with a new compound form not currently documented there).
+
+**New vocabulary candidate, high-priority cross-reference:** `Grika`,
+v. "to dance" — a **third** candidate word for "dance," alongside the
+already-conflicting `Chroka`/`ruru·na` pair (`RC-CANDIDATE-007`,
+`NV-013`). Not resolving the conflict — adding a data point to it. See
+`THANGSENG_NATIVE_VALIDATION.md` NV-013 update.
+
+**Status:** Needs Native Validation (direct) for all items — academic
+source only, zero native-session confirmation yet. **Priority:** P2 —
+none of these are launch-blocking; `-breja`'s possible overlap with
+`RULE-018` is the one item worth prioritizing if a native session opens
+on this topic, since it could affect an already-implemented rule's
+scope.
