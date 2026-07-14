@@ -33,7 +33,7 @@ for (const [k, v] of Object.entries(correctionsRaw)) {
   if (stripped !== k.toLowerCase() && !corrections[stripped]) corrections[stripped] = v;
 }
 import { lookupPhrase } from './data/phrase_maps.js';
-import { getClassifier, countNoun, parseCountingPhrase } from './garo_classifier.js';
+import { getClassifier, countNoun, parseCountingPhrase, NUMBER_WORDS } from './garo_classifier.js';
 import { toGaroNumber } from './number_engine.js';
 // Gemini import removed 2026-07-05 (dead fallback, see step 10 below)
 
@@ -316,6 +316,15 @@ export function analyzeGrammar(input) {
         if (/^(in|on|at)$/.test(w)) pendingLocativeVerbGuard = true;
         continue;
       }
+      // Number-word guard (2026-07-13): reuses the existing NUMBER_WORDS
+      // table (garo_classifier.js) rather than a new heuristic - same
+      // "no POS data" collision class the parser-boundary review
+      // predicted (quantifiers named explicitly as a future breakage of
+      // the same root assumption). Without this, "he has two dogs" wrongly
+      // picked "two" as the verb (resolves via lookupGaro to the number
+      // word "Gni"), leaving "has dogs" unresolved as the object
+      // ("[UNKNOWN]"). A number word is never the main verb.
+      if (NUMBER_WORDS[w] !== undefined) continue;
       // RC-CANDIDATE-010 fix (2026-07-12): a word immediately following a
       // locative preposition (in/on/at), possibly with an intervening
       // article ("on the table"), is a locative-adjunct object, never the

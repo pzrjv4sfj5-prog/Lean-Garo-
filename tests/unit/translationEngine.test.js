@@ -127,7 +127,7 @@ for (const c of REGRESSION_CASES) {
 // Protects against accidental corruption of the JSON file specifically. ---
 test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
   const { default: irregularVerbs } = await import('../../src/data/irregular_verbs.json', { with: { type: 'json' } });
-  assert.equal(Object.keys(irregularVerbs).length, 49, 'entry count should match the extraction (49, verified byte-for-byte against the pre-extraction inline object)');
+  assert.equal(Object.keys(irregularVerbs).length, 50, 'entry count: 49 from the original extraction + "has" added 2026-07-13 (suppletive form of "have", same confirmed value "donga")');
   assert.equal(irregularVerbs['went'], 're·anga');
   assert.equal(irregularVerbs['ate'], 'cha·aha');
   assert.equal(irregularVerbs['eaten'], 'cha·manaha');
@@ -270,4 +270,24 @@ test('RC-CANDIDATE-012 boundary: legitimate a\'/an\'/am\' prefix words are untou
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('earthquake');
   assert.equal(r.garo, "a'a banggri·a", 'genuine prefix morpheme must not be altered by the raka-typo fix');
+});
+
+// --- Number-word-as-verb + 'has' inflection fix (2026-07-13), same "no
+// POS data" collision class as RC-CANDIDATE-010/003. "he has two dogs"
+// was wrongly picking "two" (a number, resolves via lookupGaro to "Gni")
+// as the verb, then "dogs" as a second wrong candidate once "two" was
+// excluded, because "has" itself never resolved (only base "have" was in
+// the dictionary; naive suffix-stripping turns "has" into "ha", not
+// "have" - a suppletive irregular form, same class as BACKLOG-002's
+// table). Fixed with two small, reusable pieces: (1) guard the
+// verb-search loop against NUMBER_WORDS (existing table, not a new
+// heuristic), (2) add "has"->"donga" to irregular_verbs.json (same
+// confirmed value already used for "have", not a new linguistic claim). ---
+test('number word is never picked as the verb; "has" resolves as an irregular form of "have"', async () => {
+  const { translate, analyzeGrammar } = await import('../../src/translationEngine.js');
+  const g = analyzeGrammar('he has two dogs');
+  assert.equal(g.verb?.english, 'has');
+  assert.equal(g.verb?.garo, 'donga');
+  const r = await translate('he has two dogs');
+  assert.equal(r.garo, 'Ua do·o mang·gni·ko donga');
 });

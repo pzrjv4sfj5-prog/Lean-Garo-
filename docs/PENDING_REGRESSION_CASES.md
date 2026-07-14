@@ -275,6 +275,36 @@ generalization gaps for Claude B — imperative `-bo`, negative-imperative
 **Remaining uncertainty:** none on diagnosis — this is an engineering
 generalization question, not a linguistic one.
 
+**Partial fix, 2026-07-13 (possession sub-piece only — imperatives/
+hortatives still fully open):** `"has"` (suppletive inflection of
+`"have"`) had no dictionary entry at all, and generic suffix-stripping
+turned it into `"ha"`, not `"have"` — so it never resolved, letting the
+verb-search loop fall through to wrongly grab a NUMBER WORD as the verb
+instead (`"he has two dogs"` → `"two"` picked as verb; same "no POS
+data" collision class as `RC-CANDIDATE-010`/`003`, this time with
+quantifiers — exactly the failure class the RC-010 parser-boundary
+review predicted). Fixed with two small, reusable pieces, not a
+per-sentence patch: (1) a `NUMBER_WORDS`-based guard in the verb-search
+loop (reused the existing table from `garo_classifier.js`, not a new
+heuristic), (2) added `"has"`→`"donga"` to `irregular_verbs.json` (same
+confirmed value already used for `"have"`, not a new linguistic claim).
+Benchmark-verified: exactly 2 of 237 sentences changed
+(`"he has two dogs"`, `"she has three children"`), both now show the
+correct verb; zero unintended changes elsewhere.
+
+**New follow-up finding, not fixed this cycle (separate root cause,
+"one architectural change per cycle"):** object-phrase construction has
+no general number+noun→classified-count routing — it only works when a
+literal full pre-stored phrase happens to exist (`"two dogs"` →
+`do·o mang·gni`, a lucky pre-existing entry) and silently drops the
+number otherwise (`"three children"` → `"Ua bi·sa·ko donga"`, `"three"`
+vanishes — no such phrase entry exists for it). The existing
+classifier/counting engine (`parseCountingPhrase`/`countNoun`/
+`getClassifier` in `garo_classifier.js`) already handles this correctly
+for standalone counting phrases; object-phrase construction in
+grammar-assembly doesn't route through it. Real fix, not scoped or
+attempted this cycle.
+
 **Already tracked elsewhere, reconfirmed live, no new finding:**
 `RC-CANDIDATE-004` (ability modal "can," still dropped, blocked on
 `NV-008`), `RC-CANDIDATE-005` (loanword "TV," still dropped),
