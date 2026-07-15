@@ -866,9 +866,52 @@ that source's granularity, not an error in the source itself.
 `purpose_map.json` currently has it?) is still unconfirmed. The "sing"
 half of this NV item is also still fully open.
 
-**Status:** OPEN (narrowed) — Needs Native Validation for the purposive
-form of `Chroka` and for `ring·na`("sing"). The word-identity question
-for "dance" is closed.
+**Update 2026-07-14 (native-confirmed, direct):** Primary source, June
+25 chat (relayed today): *"let's dance, let's sing, let's swim?"* →
+*"Hai (an·ching) chrokna, hai (git) ring·na, hai (chio) jrona."*
+Resolves both remaining questions:
+- **"sing"** = `ring·na` — **with raka**, exactly matching the
+  already-confirmed `ring·`("sing") vs. `ring`("drink") lexical split.
+  Regular `-na` stem formation on the `ring·` root (RULE-015).
+- **"dance"** = `chrokna` — regular stem formation on the now-confirmed
+  `Chroka` root (`Chroka`→`Chrok`+`na`, RULE-015 applies cleanly).
+- **Bonus, unprompted:** "swim" = `jroa`/`jrona` — independently
+  corroborates the printed-dictionary source read earlier today
+  ("Some verbs without raka: jroa = to swim," suffixes.pdf) with a
+  live native-chat confirmation. Two independent sources now agree.
+- **Not confirmed, flagged rather than assumed:** the parenthetical
+  subjects — `(an·ching)`="we" matches the known pronoun cleanly, but
+  `(git)` and `(chio)` don't match any pronoun in the current paradigm.
+  `chio` plausibly parses as `chi`("water")+`·o`(locative) — "in the
+  water," a location for swimming, not a subject — but this is a
+  hypothesis, not confirmed. `git` remains genuinely unclear; not
+  guessing at it.
+
+**Update 2026-07-14 (native-confirmed, direct follow-up):** `chio`
+confirmed exactly as hypothesized — Thangseng, asked directly "what is
+chio": *"In the water."* Confirms the `chi`("water")+`·o`(locative)
+parse. `git` remains unconfirmed — not asked directly in this exchange,
+still open if it comes up again. **Second, more general finding:**
+Thangseng also stated *"The normal use is with the words in the bracket
+omitted"* — i.e., dropping the parenthetical (subject or location) is
+the **default**, unmarked case, not an optional stylistic choice. This
+strengthens `RULE-004`'s existing pro-drop note (already documented as
+broader than imperative-only) with a direct statement that omission is
+the normal register, not the marked one — worth folding into RULE-004.
+
+**Precision note:** this confirms the **hortative** ("let's X",
+`RULE-007`) form specifically, not the `sikenga`("want to X")
+construction directly. Given `-na`'s demonstrated regularity across
+multiple constructions this session (hortative, want-to, purpose
+clauses), it's a well-supported inference — not a separate
+confirmation — that `"i want to sing"` = `"Anga ring·na sikenga"` and
+`"i want to dance"` = `"Anga Chrokna sikenga"` would follow the same
+pattern. High confidence, not identical to direct confirmation.
+
+**Status:** Effectively CLOSED — both original questions resolved with
+native evidence. The `sikenga`-construction extension is a strong
+inference, not itself re-confirmed; low-priority to re-ask given the
+regularity already demonstrated.
 
 ---
 
@@ -1048,3 +1091,6 @@ bundles naturally with other open questions in the next relay.
   fully resolved by direct native confirmation. See full entry above.
   Live engine bug now tracked separately as engineering work (see
   `docs/PENDING_REGRESSION_CASES.md`).
+- **NV-013** (sing/dance purposive forms) — closed 2026-07-14, both
+  confirmed by direct native evidence (`ring·na`, `chrokna`). See full
+  entry above. `RC-CANDIDATE-007` updated with the confirmed values.

@@ -5,13 +5,13 @@ Structured per Sprint Work Package schema. Rule IDs map to
 
 ### RULE-007 — `Hai` Construction (Hortative)
 **Description:** `Hai` = "let's," precedes a verb in `-na` (infinitive, standard) or `-bo` (imperative-extended, "not so strict" register) form to form a hortative.
-**Examples:** `Hai cha·na`="let's eat" (standard), `Hai cha·bo`="let's eat" (casual register — Thangseng's own words), `Hai re·naha`="let's go".
+**Examples:** `Hai cha·na`="let's eat" (standard), `Hai cha·bo`="let's eat" (casual register — Thangseng's own words), `Hai re·naha`="let's go", `Hai ring·na`="let's sing" (2026-07-14, raka confirmed, matches `ring·`="sing"), `Hai chrokna`="let's dance" (2026-07-14, regular `-na` on `Chroka`), `Hai jrona`="let's swim" (2026-07-14, root `jroa`, corroborated independently by a printed-dictionary source the same day).
 **Counterexamples:** none recorded.
 **Dependencies:** RULE-015 (Stem Formation), RULE-029 (Hortative/Imperative `-bo`, shares the casual-register form).
-**Native Notes:** Primary source: July 3-5 chat transcript — Thangseng explicitly: *"'bo' is essentially imperative. But it may also be used in a hortative sense also... 'let us eat' is expressed by saying 'hai cha·na'. But in a not so strict manner it may also be done by saying 'hai cha·bo'."*
+**Native Notes:** Primary source: July 3-5 chat transcript — Thangseng explicitly: *"'bo' is essentially imperative. But it may also be used in a hortative sense also... 'let us eat' is expressed by saying 'hai cha·na'. But in a not so strict manner it may also be done by saying 'hai cha·bo'."* Additional examples confirmed 2026-07-14 (June 25 chat, relayed later): `"Hai (an·ching) chrokna, hai (git) ring·na, hai (chio) jrona"` — the parenthetical subjects don't all match known pronouns (`an·ching`="we" does; `git`/`chio` don't), flagged in `NV-013` rather than assumed.
 **Validation Status:** Verified.
-**Confidence:** High.
-**Launch Priority:** P0 — implemented, 2 corpus examples.
+**Confidence:** High — now 6 corpus examples across distinct verb roots, one of the better-evidenced rules in the catalogue.
+**Launch Priority:** P0 — implemented, 6 corpus examples (was 2).
 
 ---
 ### RULE-G2 — Pre-verbal Clustering (Locative Phrases)
@@ -230,6 +230,7 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Dependencies:** none.
 **Native Notes:** Source Rule 4.
 **Strengthened by (2026-07-08):** `docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md` Case 1 confirms subject pro-drop occurs outside the imperative context RULE-003b already covers — a full declarative sentence ("(I) don't need to watch TV...") with "I" fully implied, not spoken, native-confirmed by Thangseng. This is existing knowledge getting *stronger* (pro-drop is broader than the imperative-only case previously documented), not a new rule — RULE-003b's scope note should be read as "imperatives always drop the subject" rather than "only imperatives drop the subject." No catalogue change needed beyond this note; flagging so a future implementer doesn't assume subject-drop is imperative-exclusive.
+**Strengthened by (2026-07-14):** Direct native statement, not just observed pattern — asked about `"Hai (an·ching) chrokna"`-style examples with optional parentheticals, Thangseng: *"The normal use is with the words in the bracket omitted."* Confirms omission is the **default, unmarked** register, not an optional stylistic variant — a stronger claim than "pro-drop is possible," which is what the evidence supported before this explicit statement.
 **Validation Status:** Verified (core table); Unknown (informal locative cell).
 **Confidence:** High (core); N/A (unfilled cell — do not guess).
 **Launch Priority:** P0 (core); deferred (unfilled cell, low practical impact).

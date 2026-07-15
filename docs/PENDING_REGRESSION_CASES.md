@@ -96,13 +96,20 @@ verified unreachable before removal).
   principle); not yet designed or implemented
 
 ### RC-CANDIDATE-007 — `sing`/`dance` purpose-clause forms use unrelated roots
-- **Input:** `"i want to sing"` → `purpose_map.json`'s `bit·na`, vs.
-  `corrections.json`'s `ring·a` (now confirmed correct — see NV-010,
-  `ring·a`="sing" and `ringa`="drink" are genuinely different roots).
-  `"i want to dance"` → `ruru·na` vs. `Chroka`, fully open.
-- **Status:** Needs Thangseng Validation. The `sing` candidate fix
-  (`bit·na`→`ring·na`) is medium-confidence only per Claude A — not
-  swapped silently. `dance` has no evidence either way yet.
+**Resolved 2026-07-14 — native-confirmed, ready for implementation.**
+Direct evidence (June 25 chat, relayed today): `"let's sing"`→`"Hai
+ring·na"`, `"let's dance"`→`"Hai chrokna"`. Confirms `ring·na`(with
+raka, matches the already-established `ring·`="sing" root) and
+`chrokna`(regular stem formation on `Chroka`) as the correct forms.
+This directly confirms the hortative (`Hai X-na`) construction; the
+`sikenga`("want to X") extension is a well-supported inference from
+`-na`'s demonstrated regularity, not independently re-confirmed — see
+`THANGSENG_NATIVE_VALIDATION.md` NV-013 for full precision notes.
+**Recommended `purpose_map.json` values:** `sing`→`ring·na` (replacing
+`bit·na`), `dance`→`chrokna` (replacing `ruru·na`). High confidence for
+both — this is no longer a medium-confidence candidate.
+**Status:** Confirmed, ready for Claude B to implement. No longer
+needs Thangseng validation.
 
 ### RC-CANDIDATE-008 (remainder) — 4 unresolved irregular-verb/corrections conflicts
 | Key | `corrections.json` | `irregular_verbs.json` | Status |
