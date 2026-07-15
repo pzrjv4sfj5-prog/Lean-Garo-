@@ -32,18 +32,18 @@ repository:
 claude_a:
   status: active
   current_task: >-
-    NV-013 fully closed with native confirmation: sing=ring·na (raka
-    confirmed, matches ring·/ring split), dance=chrokna (regular stem
-    formation on now-confirmed Chroka), bonus swim=jroa/jrona
-    (independently corroborated by both the printed dictionary and
-    live native chat same day). RC-CANDIDATE-007 updated to
-    Confirmed/ready-for-implementation, no longer needs Thangseng.
-    RULE-007 (Hai construction) strengthened from 2 to 6 corpus
-    examples. Follow-up exchange confirmed chio=chi+·o("in the water")
-    exactly as hypothesized; git remains genuinely unconfirmed, not
-    guessed at. Direct native statement ("normal use is with the words
-    in the bracket omitted") strengthens RULE-004's pro-drop note from
-    "possible" to "default register" - folded in.
+    Corrected a real gap the Project Owner caught: original dictionary-
+    image extraction (2026-07-14) missed that several entries carry two
+    glosses across word classes on one headword. Fixed the most
+    consequential miss - Grika also means "clear/transparent/limpid"
+    (adj.), completely unrelated to the native-confirmed Wangala dance
+    sense - real linguistic infrastructure had already been built
+    around the dance sense without registering this. Distinguished
+    homonymy (Grika - unrelated meanings, coincidental) from polysemy-
+    via-category-flexibility (Gong-raka adj/v, Guala v/n - related
+    meanings, same root across classes) as a general methodological
+    note for future extraction from this source, plus logged the two
+    new candidates properly.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai

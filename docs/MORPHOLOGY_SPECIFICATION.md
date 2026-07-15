@@ -164,3 +164,24 @@ none of these are launch-blocking; `-breja`'s possible overlap with
 `RULE-018` is the one item worth prioritizing if a native session opens
 on this topic, since it could affect an already-implemented rule's
 scope.
+
+**Methodological note, added 2026-07-15 (a gap in the original
+extraction pass):** this source's entries frequently carry two glosses
+across word classes on one headword — worth checking systematically
+for future entries mined from it, not just the ones below. Two kinds,
+worth distinguishing rather than treating uniformly:
+- **Homonymy** (unrelated meanings, coincidental shared form):
+  `Grika` — v. "to dance" (see `VERB_INVENTORY.md`'s cultural-
+  vocabulary note; native-confirmed as the Wangala ceremonial-dance
+  term) **and, separately, unrelated** — adj. "clear; transparent;
+  limpid." Missed in the original pass; corrected now specifically
+  because real linguistic work was already built around the dance
+  sense without registering the other exists.
+- **Polysemy via category-flexibility** (related meanings, same root
+  functioning across word classes — a real, structured pattern, not
+  noise): `Gong-raka` — adj. "swift, fast, strong, fleet" / v. "to
+  make haste, to hasten, to hurry up" (stative ↔ inchoative sense of
+  one root). `Guala` — v. "to forget, to make a mistake" / n.
+  "mistake, error, fault" (verb ↔ its nominalization). Neither
+  native-confirmed; logged as vocabulary candidates only, not
+  promoted to any rule.

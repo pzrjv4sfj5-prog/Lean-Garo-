@@ -116,3 +116,15 @@ took care to distinguish. Source: direct Thangseng confirmation,
 2026-07-14, with a supporting video reference provided in the same
 exchange (not independently reviewed here — video content not
 verifiable by this process, cited as supplied).
+
+**Correction (2026-07-15) — a missed finding from the same source:**
+the printed-dictionary entry for `Grika` also gives a completely
+unrelated adjectival sense: "Clear; transparent; limpid." Not noted
+when this word was first processed. This is homonymy, not polysemy —
+the dance sense and the "clear/transparent" sense share no semantic
+connection, unlike genuine multi-sense roots already tracked elsewhere
+in this repo (`man·`, `nika`, `senga`), where the senses are related.
+Not native-confirmed for this second sense — flagged as a real gap
+(if "clear/transparent" `Grika` is ever needed for translation, don't
+assume it shares any grammatical behavior with the dance-term `Grika`
+just because the strings match), not resolved.
