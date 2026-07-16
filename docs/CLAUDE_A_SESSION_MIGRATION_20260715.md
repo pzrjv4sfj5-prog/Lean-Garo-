@@ -186,3 +186,65 @@ before acting on them — this is orientation, not a substitute for
 verification. Not permission to skip the bootstrap order above. Not
 itself evidence for anything — if it disagrees with the live repo,
 the repo wins, same as every other document in this project.
+
+## 7. Addendum — Verified alignment check (added same day, real observed data)
+
+The outgoing instance reviewed a real response from the incoming
+instance (processing a new Thangseng relay: predicate-nominal copula
+conflict, `ama` homonymy, father/mother register table, loanword
+passthrough evidence). Recording this because it's real calibration
+data, not hypothetical advice — treat it as more reliable than the
+abstract lessons in §3 above.
+
+**What transferred correctly, confirmed by direct review:** explicit
+evidentiary tiering stated up front ("Tier 2, Medium confidence");
+treating two independently-sourced answers to one construction as an
+*unresolved contradiction* requiring a relay question, not picking one;
+correctly naming and applying the homonymy-vs-error pattern
+(`RULE-021`/`RULE-037`/the `ring·`/`ring` precedent) to the new `ama`
+case without being told to; proactively flagging a duplicate-key risk
+before adding data and tying it to the existing `RC-016`; asking before
+drafting/staging rather than acting unprompted. This is genuine
+transfer of method, not surface mimicry of format — the specific
+patterns applied weren't all named in this document, meaning they were
+reconstructed from the general principle, which is the actual goal.
+
+**What didn't transfer, one concrete miss:** a new register table gave
+`a·ai`("mother," colloquial) **with raka**. Checked directly against
+live `corrections.json`: the current value is `aai`, **no raka** — not
+an oversight, the *result of a documented correction*
+(`GLOBAL_RAKA_CONVERSION_HANDOFF.md`: `mother = ama` → corrected to
+`aai`). The new instance processed the new relay on its own terms
+without cross-checking this specific string against what's already
+committed. This is exactly the gap between "verify against the repo"
+as an abstract principle (which clearly landed, per the finding above)
+and "verify against the repo" as a **mechanical step applied to every
+individual lexical item in new evidence**, not just the evidence as a
+whole.
+
+**Turn this into an operational habit, not just a remembered lesson:**
+before writing any new vocabulary/form into a doc, `grep` or otherwise
+check whether that exact string (or its headword) already has a
+committed value somewhere (`corrections.json`, `master_dictionary.json`,
+the Rule Catalogue, `GLOBAL_RAKA_CONVERSION_HANDOFF.md`'s correction
+table). If it does and the new evidence disagrees, that's not
+automatically an update — say explicitly whether it's (a) a genuine
+revision, (b) a transcription artifact (raka is dropped/added in casual
+typing constantly in this project — not itself meaningful), or (c)
+real homonymy (different word, same string). Pick one and say why,
+every time, not just when the discrepancy is large enough to notice by
+eye.
+
+**One more honest data point, from writing this very addendum:** the
+`str_replace` header-loss bug described in §3 dropped section 6 of
+*this document* while this addendum was being added — caught by the
+structural check §3 also recommends, not by care while writing.
+Confirms the lesson isn't "be more careful," it's "run the mechanical
+check every time," since carefulness alone didn't prevent it even while
+actively writing about it.
+
+**Standing item at handoff:** commit `6339230` (Claude B,
+`RC-CANDIDATE-017/018/019` — locative negation loss, floating `·gen`
+token, teacher-dictionary conflict) landed after the original snapshot
+above and has not yet been reviewed by Claude A. First real task for
+whichever instance reads this next.

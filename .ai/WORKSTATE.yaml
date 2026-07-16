@@ -33,9 +33,17 @@ claude_a:
   status: active
   migration_doc: >-
     docs/CLAUDE_A_SESSION_MIGRATION_20260715.md - point-in-time handoff
-    snapshot at commit e54a67f, created 2026-07-15 for session
-    continuity. Read once on a fresh chat, then trust this file over it
-    for anything current.
+    snapshot, created 2026-07-15, extended same day with a verified
+    real-world alignment check (§7) after direct review of the new
+    instance's actual output. Confirmed: evidentiary tiering, contradiction-
+    vs-confirmation framing, homonymy-vs-error pattern application, and
+    proactive RC cross-referencing all transferred correctly and were
+    reconstructed from principle, not memorized. One concrete gap found
+    and logged as an operational fix, not just a note: cross-check every
+    individual new lexical item against already-committed values, not
+    just the evidence as a whole. Outgoing instance retiring after this
+    commit - next real task for whoever reads this is reviewing commit
+    6339230 (RC-CANDIDATE-017/018/019), not yet reviewed.
   current_task: >-
     Corrected a real gap the Project Owner caught: original dictionary-
     image extraction (2026-07-14) missed that several entries carry two
