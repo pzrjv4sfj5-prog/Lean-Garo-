@@ -133,6 +133,13 @@ test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
   assert.equal(irregularVerbs['eaten'], 'cha·manaha');
   assert.equal(irregularVerbs['want'], 'sikenga');
   assert.equal(irregularVerbs['sitting'], 'asong·enga');
+  // RC-CANDIDATE-008 (partial, d0e6c06): the 4 specific values actually
+  // fixed (truncation typos / missing raka marks) were never individually
+  // spot-checked before - only the aggregate count/shape was covered.
+  assert.equal(irregularVerbs['coming'], 're·baenga');
+  assert.equal(irregularVerbs['slept'], 'tusiaha');
+  assert.equal(irregularVerbs['sleeping'], 'tusienga');
+  assert.equal(irregularVerbs['laughing'], 'ka·dingenga');
   for (const [k, v] of Object.entries(irregularVerbs)) {
     assert.equal(typeof v, 'string', `value for "${k}" should be a string`);
     assert.ok(v.length > 0, `value for "${k}" should not be empty`);
@@ -215,6 +222,51 @@ test('classifierHints includes jol (long objects) and ge (pen/stick), matching g
   assert.ok(pencil.classifierHints.some(h => h.classifier === 'ge'), 'pencil should hint ge');
 });
 
+// --- RC-CANDIDATE-011(b) fix (2026-07-12, same commit as RC-010): "in"
+// vs "at" locative marking generalized to ALL location nouns, not just
+// "bed" (already covered by the pre-existing RC-002 test above). Root
+// cause was the verb-search loop's hardcoded exclusion list only
+// covering "down"/"bed" pre-fix (RC-003), letting every other location
+// noun get wrongly consumed as the verb before reaching the object
+// loop. This test locks in the generalization across other locations,
+// since only "bed" was previously guarded against regression. Part (a)
+// of RC-011 (the "lying in X" verb-slot loss, NV-007) remains open and
+// is deliberately NOT asserted as correct here - only that the ·o
+// locative marker itself is present and no verb-collision occurs. ---
+test('RC-CANDIDATE-011(b): "at"/"in" locative ·o marking generalizes beyond "bed"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const school = await translate('i am waiting at the school');
+  assert.ok(school.garo.includes('·o'), `"at the school" should produce ·o locative marker, got: ${school.garo}`);
+  const house = await translate('i am waiting at the house');
+  assert.ok(house.garo.includes('·o'), `"at the house" should produce ·o locative marker, got: ${house.garo}`);
+});
+
+// --- RC-CANDIDATE-008/VerbsGrammar.jsx fix (48aee52, 2026-07-11): source
+// -text-level lock on the 6 corrected strings in the user-facing grammar
+// page (no JSX/component test infra exists in this repo - node:test has
+// no jsdom/testing-library wiring - so this checks the raw file text
+// directly rather than rendering the component). Also locks in that the
+// 6 removed dead phrase_maps.js hortative duplicates stay removed. ---
+test('VerbsGrammar.jsx: 6 confirmed corrections (48aee52) remain applied', async () => {
+  const fs = await import('node:fs');
+  const src = fs.readFileSync(new URL('../../src/pages/VerbsGrammar.jsx', import.meta.url), 'utf8');
+  assert.ok(src.includes('agana'), 'agan·a should be corrected to raka-free agana');
+  assert.ok(!src.includes("agan·a'"), 'old agan·a form should not reappear');
+  assert.ok(src.includes('nika'), 'nik·a should be corrected to raka-free nika');
+  assert.ok(src.includes('brea·na') && src.includes('brea·enga') && src.includes('brea·aha') && src.includes('brea·gen'), 'brea-X hyphens should be corrected to raka');
+  assert.ok(src.includes('tusiaha'), 'tusieaha typo should be corrected to tusiaha');
+  assert.ok(src.includes('re·angbo: Go!'), 'go imperative example should not be the copy-pasted sleep example');
+  assert.ok(src.includes('ge·sa Chokki') && src.includes('ge·gni Kettal') && src.includes('ge·gittam Mez'), 'ge classifier examples should use classifier-then-number order');
+});
+
+test('phrase_maps.js: 6 dead hortative duplicates remain removed (shadowed by corrections.json)', async () => {
+  const fs = await import('node:fs');
+  const src = fs.readFileSync(new URL('../../src/data/phrase_maps.js', import.meta.url), 'utf8');
+  for (const dead of ["let's eat", "let's drink", "let's sit", "let's play", "let's work"]) {
+    assert.ok(!src.includes(`"${dead}"`) && !src.includes(`'${dead}'`), `dead entry "${dead}" should stay removed from phrase_maps.js`);
+  }
+});
+
 // --- RC-CANDIDATE-010 fix (2026-07-12): NP subjects (article + noun +
 // copula) now reach grammar-assembly instead of only pronoun subjects.
 // Scoped to a coherence check (see translationEngine.js's "Parser-
@@ -290,4 +342,20 @@ test('number word is never picked as the verb; "has" resolves as an irregular fo
   assert.equal(g.verb?.garo, 'donga');
   const r = await translate('he has two dogs');
   assert.equal(r.garo, 'Ua do·o mang·gni·ko donga');
+});
+
+// --- Second half of the same 2026-07-13 fix's benchmark claim ("exactly
+// 2 of 237 sentences changed... both now show the correct verb") - only
+// "he has two dogs" was locked in above; "she has three children" was
+// never given its own regression test. Deliberately only asserting verb
+// correctness, NOT full translate() output: the object-phrase
+// number+noun routing gap (no "three" in the output, see
+// RC-CANDIDATE-014's "New follow-up finding") is a separate, still-open
+// root cause - asserting a full garo string here would either falsely
+// lock in that unrelated bug or require fixing it, both out of scope. ---
+test('RC-CANDIDATE-014 (partial): "has" resolves correctly for "she has three children" too (quantifier ≠ verb)', async () => {
+  const { analyzeGrammar } = await import('../../src/translationEngine.js');
+  const g = analyzeGrammar('she has three children');
+  assert.equal(g.verb?.english, 'has');
+  assert.equal(g.verb?.garo, 'donga');
 });
