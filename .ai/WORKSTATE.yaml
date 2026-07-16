@@ -31,6 +31,11 @@ repository:
 
 claude_a:
   status: active
+  migration_doc: >-
+    docs/CLAUDE_A_SESSION_MIGRATION_20260715.md - point-in-time handoff
+    snapshot at commit e54a67f, created 2026-07-15 for session
+    continuity. Read once on a fresh chat, then trust this file over it
+    for anything current.
   current_task: >-
     Corrected a real gap the Project Owner caught: original dictionary-
     image extraction (2026-07-14) missed that several entries carry two

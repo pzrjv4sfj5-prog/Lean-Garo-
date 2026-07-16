@@ -1,6 +1,13 @@
 # SESSION_BOOTSTRAP.md
 _Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-07-09 by Claude B (Repository Access Model replaced per Project Owner directive — see that section)._
 
+**If you are a new Claude A instance (fresh chat, session migration):**
+read `docs/CLAUDE_A_SESSION_MIGRATION_20260715.md` first — a
+point-in-time handoff snapshot from the outgoing instance covering
+hard-won behavioral discipline this file doesn't capture. It's a
+supplement, not a replacement — this file and `.ai/WORKSTATE.yaml`
+still win if anything's stale by the time you read it.
+
 ## What this repo is
 Lean-Garo: an English → A'chik Garo translation engine (Meghalaya, India). Node/JS, dictionary + correction-table + grammar-assembly hybrid
 (no ML model). Deployed at https://lean-garo.onrender.com.
