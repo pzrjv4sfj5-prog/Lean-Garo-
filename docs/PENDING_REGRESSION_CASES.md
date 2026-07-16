@@ -368,6 +368,44 @@ loanword choice worth preserving under a different key, or simply a
 duplicate that should be removed — a data-quality question for whoever
 originally added it, not a linguistic ambiguity.
 
+### RC-CANDIDATE-017 — Negation lost entirely with locative predicates
+**Conclusion:** `"the book is not on the table"` → `"boi te·bil·o"` —
+the negation vanishes, no negation marker anywhere in the output.
+Compare working cases: `"the dog is not under the table"` (correct,
+`...Kokkimaoja`) and `"the teacher does not eat rice"` (correct,
+`...Cha·ja`) — both carry their negation morpheme through fine.
+**Status:** Open, unimplemented, root cause not yet traced. Found live-
+testing 2026-07-13.
+**Hypothesis (engineering, unconfirmed):** locative-adjunct object
+construction (no verb found → object gets `·o`) likely doesn't carry
+the negation flag through that path the way the verb-bearing paths do.
+**Remaining uncertainty:** none linguistic — negation is independently
+confirmed correct elsewhere; this reads as a pure pipeline-plumbing gap
+in the locative-object path, not a word-choice or grammar question.
+
+### RC-CANDIDATE-018 — `·gen` (future suffix) renders as a floating orphan token
+**Conclusion:** `"the dog will eat rice"` → `"Achak Mi ·gen Cha·a"` —
+`·gen` should attach to the verb (`Cha·a`) but instead sits as its own
+space-separated token. Sov-assembly rendering path.
+**Status:** Open, unimplemented, root cause not yet traced. Found live-
+testing 2026-07-13.
+**Remaining uncertainty:** none linguistic — this is a rendering/
+concatenation defect (suffix attachment), not a question of which
+suffix or where it belongs semantically.
+
+### RC-CANDIDATE-019 — `"teacher"` dictionary conflict: `Skigipa` vs. `ti·char`
+**Conclusion:** `phrase_maps.js` has `'teacher': 'Skigipa'`;
+`compiled_dict.json` (generated from `master_dictionary.json`) has
+`teacher: ti·char`. Different sentences hit different paths and
+surface different words. **Not a clear typo like RC-CANDIDATE-012** —
+a real, native-confirmed `corrections.json` sentence (`"my father is a
+teacher"`) already uses `skigipa`, so `ti·char` can't be assumed wrong
+without review.
+**Status:** Open, unimplemented. Found live-testing 2026-07-13.
+**Remaining uncertainty:** genuine word-choice question for Claude A —
+loanword vs. native term, register, or regional variant. Not an
+engineering fix; flagging only.
+
 ---
 - Nothing in the Pending section above has been fixed — only logged.
 - Severity/priority labels are Claude B's engineering assessment only —
