@@ -136,7 +136,10 @@ function main() {
   }
 
   // --- Global string-survival sanity check (belt and suspenders) ---
-  const srcStrings = new Set(collectAllStrings(src, []).filter(s => s.length > 1));
+  // Excludes "garo_to_english" itself — that's the source page's own
+  // `direction` value, which is SUPPOSED to change to "english_to_garo"
+  // per the spec (the one field whose value intentionally differs).
+  const srcStrings = new Set(collectAllStrings(src, []).filter(s => s.length > 1 && s !== 'garo_to_english'));
   const flipStrings = new Set(collectAllStrings(flip, []).filter(s => s.length > 1));
   let missingCount = 0;
   for (const s of srcStrings) {

@@ -1,10 +1,20 @@
 # Claude D Transformation Spec — Garo→English → English→Garo
 
-Status: draft, first version. Written 2026-07-17 by Claude A after finding
+Status: implemented. Written 2026-07-17 by Claude A after finding
 concrete data loss in the first sample flip (page 89) and a schema
 collision with `scripts/import-dictionary.js` (built independently by
-Claude B the same day). Supersedes any informal understanding of what
-"Claude D" does until revised.
+Claude B the same day).
+
+**Decision (2026-07-17, Project Owner + Claude A): there is no Claude
+D.** Everything this spec describes is a fully-specified mechanical
+rule with no judgment calls — that's precisely the wrong kind of task
+to hand an LLM (zero benefit from model reasoning, full exposure to
+model drift, and the one real sample flip proved the drift risk is not
+hypothetical). Stage 1 is implemented as a plain deterministic script,
+`scripts/flip-garo-to-english.js`, not a model call. The spec below
+still describes the *rules* precisely because the script implements
+them literally — read it as the script's specification, not as
+instructions for a person or model to follow by hand.
 
 ## Why two stages, not one
 
@@ -124,12 +134,16 @@ sentence, unqueryable and one rewording away from silently breaking.
 
 ### Verification requirement
 
-Stage 1 output must pass `scripts/verify-claude-d-flip.js` (below)
-before it's considered committed. Not a suggestion — a gate. The
-script does not evaluate translation quality or linguistic content; it
-only asserts nothing was dropped, renamed silently, or invented outside
-the enum. Claude A does linguistic review separately, after this gate
-passes.
+Stage 1 output must pass `scripts/verify-claude-d-flip.js` before it's
+considered committed. With Stage 1 now deterministic code rather than
+a model call, this gate is mainly a regression test for the flip
+script itself (catches a future edit to the script breaking the
+contract) rather than a defense against per-run model drift — but it
+stays mandatory, since a code bug can silently drop a field just as
+effectively as a hallucinating model can. The script does not evaluate
+translation quality or linguistic content; it only asserts nothing was
+dropped, renamed silently, or invented outside the enum. Claude A does
+linguistic review separately, after this gate passes.
 
 ## Stage 2 — mechanical reduction to the flat importer shape
 
