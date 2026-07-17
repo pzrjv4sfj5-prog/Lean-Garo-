@@ -122,6 +122,25 @@ different, more valuable check than anything possible while morphology
 logic is still inline JS. Not started; noting the direction per the
 Phase 2 instruction to identify opportunities without redesigning now.
 
+**2026-07-17 update — Check C + bulk import tool.** Built ahead of an
+expected bulk absorption of hundreds of published dictionary entries:
+- **Check C** (`checkDictionarySelfConsistency`) audits
+  `master_dictionary.json` against itself — same english key, 2+
+  distinct garo values, gated against a baseline allowlist
+  (`src/data/known_dictionary_conflicts.json`, 1053 pre-existing keys).
+  Same asymmetric posture as Check A/B: not asserting the 1053 are bugs,
+  but any conflict introduced *after* the baseline snapshot fails the
+  build immediately instead of waiting for someone to notice by accident
+  (how RC-CANDIDATE-012 and RC-CANDIDATE-019 were both found).
+- **`scripts/import-dictionary.js`** — dry-run-by-default bulk importer.
+  Validates schema, quarantines within-batch conflicts and
+  conflicts-with-existing-data into `docs/PENDING_DICTIONARY_IMPORT_CONFLICTS.md`
+  for Claude A's review, and only ever auto-appends entries that are
+  new, well-formed, and non-conflicting. Never overwrites, never picks a
+  winner between conflicting sources — mirrors the standing integration
+  rule (linguistic content from an external source is Claude A's
+  decision, not something this tool resolves on its own).
+
 ## How to extend this safely
 
 1. New lexical JSON table added → add its path to `lexicalFiles` (Check A)

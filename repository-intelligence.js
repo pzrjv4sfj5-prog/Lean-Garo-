@@ -40,9 +40,22 @@
  *   at all (case-insensitive) — a coarse but low-false-positive signal
  *   that two genuinely different lexical roots were chosen, which is
  *   exactly the RC-CANDIDATE-006 ("search") bug class.
- * Known, already-logged findings are allowlisted so the build doesn't
- * fail on issues already pending Claude A's review — anything NEW fails
- * immediately.
+ * CHECK C — Internal dictionary self-consistency, DOES fail the build on
+ * new findings. Unlike Check B (which compares small curated tables
+ * against corrections.json), Check C audits master_dictionary.json
+ * against ITSELF: does any english key resolve to 2+ distinct garo
+ * values within the 7000+-entry source file alone? Found by manual audit
+ * 2026-07-16 (1053 such keys existed already, unaudited by anything).
+ * Most are legitimate (dialectal/register variants, "the X" vs "X"
+ * collection artifacts) — this is NOT asserting they're all bugs, same
+ * posture as Check A. The baseline (src/data/known_dictionary_conflicts.json,
+ * 1053 keys) is allowlisted so the build doesn't fail on pre-existing
+ * conflicts. Anything NEW — critically, any conflict introduced by a
+ * bulk dictionary import (scripts/import-dictionary.js) — fails the
+ * build immediately, because a growing pile of unreviewed silent
+ * conflicts is exactly how RC-CANDIDATE-012 and RC-CANDIDATE-019 were
+ * born (a normal, expected cost until now; the whole point of this
+ * check is that it should no longer be free to introduce another one).
  *
  * Exit code 0 = clean, or only Check A hits (report-only) plus allowlisted
  * Check B issues. Exit code 1 = new Check B violation. Wired into
@@ -185,23 +198,61 @@ function checkCrossTableConsistency() {
   return newViolations;
 }
 
+// --- CHECK C: master_dictionary.json internal self-consistency ---
+function checkDictionarySelfConsistency() {
+  console.log('\n=== CHECK C: Dictionary self-consistency (master_dictionary.json) ===');
+  const dict = loadJSON('master_dictionary.json');
+  const baseline = new Set(loadJSON('src/data/known_dictionary_conflicts.json'));
+
+  const seen = new Map(); // normalized english -> Set of garo values
+  for (const entry of dict) {
+    const k = (entry.english || '').toLowerCase().trim();
+    const v = (entry.garo || '').trim();
+    if (!k || !v) continue;
+    if (!seen.has(k)) seen.set(k, new Set());
+    seen.get(k).add(v);
+  }
+
+  let known = 0;
+  let fresh = 0;
+  const freshFindings = [];
+  for (const [k, values] of seen) {
+    if (values.size <= 1) continue;
+    if (baseline.has(k)) {
+      known++;
+      continue;
+    }
+    fresh++;
+    freshFindings.push(`  NEW: "${k}" — ${[...values].map(v => `"${v}"`).join(', ')}`);
+  }
+
+  freshFindings.slice(0, 20).forEach(l => console.log(l));
+  if (freshFindings.length > 20) console.log(`  ... and ${freshFindings.length - 20} more`);
+  console.log(`  ${known} known/allowlisted conflicting key(s), ${fresh} NEW conflicting key(s).`);
+  if (fresh > 0) hasNewViolation = true;
+  return fresh;
+}
+
+
 console.log('Repository Intelligence validation (BACKLOG-006) starting...');
 const rakaCandidates = checkRakaLocality();
 const crossTableViolations = checkCrossTableConsistency();
+const dictSelfConflicts = checkDictionarySelfConsistency();
 
 console.log('\n=== Summary ===');
 console.log(`Raka locality candidates (report-only): ${rakaCandidates}`);
 console.log(`New cross-table violations: ${crossTableViolations}`);
+console.log(`New dictionary self-consistency conflicts: ${dictSelfConflicts}`);
 
 if (hasNewViolation) {
-  console.log('\nFAILED — new cross-table inconsistency detected. Fix the data or, if');
-  console.log('this is a genuine intentional divergence, get Claude A to confirm and');
-  console.log('log it in docs/PENDING_REGRESSION_CASES.md, then add the key to');
-  console.log('KNOWN_CROSS_TABLE_EXCEPTIONS in repository-intelligence.js with that citation.');
+  console.log('\nFAILED — new inconsistency detected. Fix the data or, if this is a');
+  console.log('genuine intentional divergence, get Claude A to confirm and log it, then');
+  console.log('add the key to KNOWN_CROSS_TABLE_EXCEPTIONS (Check B) or');
+  console.log('src/data/known_dictionary_conflicts.json (Check C) with that citation.');
   process.exit(1);
 } else {
-  console.log('\nPASSED — no new cross-table violations. Raka candidates above are');
-  console.log('report-only; see docs/REPOSITORY_INTELLIGENCE.md.');
+  console.log('\nPASSED — no new violations. Raka candidates above are report-only;');
+  console.log('see docs/REPOSITORY_INTELLIGENCE.md.');
   process.exit(0);
 }
 
