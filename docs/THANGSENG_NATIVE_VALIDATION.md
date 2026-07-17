@@ -28,13 +28,24 @@ need Thangseng at all.
    `-na`-construction case like the other two, so it's not bundled in
    this specific ask — a separate, smaller question if it comes up.)
 
-4. **(NV-013, updated 2026-07-14)** "I want to sing" — and now that
-   `Chroka`("dance") is confirmed, just: "how do you say 'I want to
-   dance'? Is it `Chroka·na`?" — resolves a live `purpose_map.json` bug
-   either way.
+4. **(NV-013, updated 2026-07-16)** `Chroka` ("dance") itself is
+   settled — only the purposive form is open: "how do you say 'I want
+   to dance'? Is it `Chroka·na`?" — resolves a live `purpose_map.json`
+   bug either way.
 5. **(NV-016, added 2026-07-13)** "Is `nanga`('need') related to
    `nangja`('need not')?" / "Is `ska`('want') a casual form of
    `sikenga`?" — two cheap yes/no-shaped questions, high leverage.
+6. **(NV-017, added 2026-07-16)** For "my father is a teacher": is it
+   `pagipa/pa·a skigipa daka` or `...ong·a`? Both acceptable, or does
+   it depend on register (formal `pagipa` vs. address `apa`)? Touches
+   both RULE-005 and RULE-031 at once — see
+   `PENDING_LINGUISTIC_PROPOSAL_20260716_family_terms.md`.
+7. **(NV-018, added 2026-07-16)** Is `ama` ("mother," address form,
+   relayed 2026-07-16) the same word in any way as a modal/possession
+   `ama` candidate ("can eat," flagged in the 2026-07-13 modals
+   proposal), or are these unrelated homophones? Also: are `apa`/`ama`
+   address-only, or usable as the subject of a full descriptive
+   sentence the way `pagipa`/`ma·gipa` are?
 verb, ability-modal) are real but lower-priority — bundle them into a
 second relay only after this first batch lands, to avoid overloading a
 single native-validation session. NV-006 and NV-009 do not need to be

@@ -383,6 +383,29 @@ the negation flag through that path the way the verb-bearing paths do.
 confirmed correct elsewhere; this reads as a pure pipeline-plumbing gap
 in the locative-object path, not a word-choice or grammar question.
 
+**Claude A review (2026-07-16):** Reopening — the two "compare" cases
+aren't structurally parallel, and the "working" one may itself be
+wrong. Live re-run:
+- `"the dog is not under the table"` → `Achak te·bil·ko Kokkimaoja`
+  (table takes accusative `·ko`; negation `-ja` fuses directly onto
+  `Kokkimao`, with no separate copula).
+- `"the book is not on the table"` → `boi te·bil·o` (table takes
+  locative `·o`; no predicate at all, hence nothing to negate).
+This means "under" is being treated as if it were a stative verb that
+takes negation and an object, while "on" is a bare noun+`-o` adjunct
+with no verb slot. But the project's own confirmed grammar
+(RULE-G2/RULE-033) documents locative predicates as `X Y-o ong·a`
+(separate copula, e.g. `Achak tebil nokkimao ong·a`) — not a fused
+`Y-o-ja` pseudo-verb. So the "working" under-case doesn't actually
+match the documented rule either; it's a second, undocumented
+construction. This is a real (if narrow) linguistic question:
+**does Garo have a distinct stative "to-be-under" verb separate from
+the general locative-copula pattern, or is `Kokkimaoja` itself a bug
+that happens to look plausible?** Recommend a relay question to
+Thangseng with both forms (`...kokkimao ong·ja` vs. `...kokkimaoja`)
+before Claude B patches the "on" path to mimic "under" — copying the
+wrong pattern would just make both cases consistently wrong.
+
 ### RC-CANDIDATE-018 — `·gen` (future suffix) renders as a floating orphan token
 **Conclusion:** `"the dog will eat rice"` → `"Achak Mi ·gen Cha·a"` —
 `·gen` should attach to the verb (`Cha·a`) but instead sits as its own
@@ -392,6 +415,12 @@ testing 2026-07-13.
 **Remaining uncertainty:** none linguistic — this is a rendering/
 concatenation defect (suffix attachment), not a question of which
 suffix or where it belongs semantically.
+
+**Claude A review (2026-07-16):** Confirmed engineering-only. Live
+re-run: `"the dog will eat rice"` → `Achak Mi ·gen Cha·a` — reproduces
+exactly as described, `·gen` floating unattached before the verb
+instead of suffixing it. No linguistic ambiguity here; clear to
+Claude B as-is.
 
 ### RC-CANDIDATE-019 — `"teacher"` dictionary conflict: `Skigipa` vs. `ti·char`
 **Conclusion:** `phrase_maps.js` has `'teacher': 'Skigipa'`;
@@ -405,6 +434,36 @@ without review.
 **Remaining uncertainty:** genuine word-choice question for Claude A —
 loanword vs. native term, register, or regional variant. Not an
 engineering fix; flagging only.
+
+**Claude A review (2026-07-16) — RESOLVED, not a word-choice question.**
+This is `RC-CANDIDATE-016`'s duplicate-key shape, not a genuine
+register ambiguity. `master_dictionary.json` already contains four
+`teacher` entries: index 377 `english: "teacher"` → `Skigipa` (no
+register note — the neutral/default term), and three later entries
+(3646–3648, all `notes: "variant/VERIFIED/HIGH"`) → `di·di`, `ma·star`,
+`ti·char`. All four are legitimate — a native term plus three
+already-verified loanword/honorific register variants — this was never
+in dispute. The bug is that the compiler's case-insensitive key
+handling does last-write-wins, so `ti·char` (the final entry, index
+3648) silently clobbers `Skigipa` and the other two variants for every
+plain dictionary-path lookup. Confirmed live: `"the teacher does not
+eat rice"` → `ti·char mi·ko Cha·ja` (dictionary path, gets the
+clobbered value), while `"my father is a teacher"` → `Ang·ni pa·a
+skigipa daka` (hits the `corrections.json` exact-match layer instead,
+bypassing the corrupted dictionary entirely — confidence 1.0, method
+`correction`). So the two "conflicting" values were never actually
+in tension; they're on different lookup paths, and one of those paths
+is broken.
+**Handoff to Claude B:** engineering fix, same shape as RC-016 — the
+compiler needs to preserve register-variant clusters (e.g. keep
+`Skigipa` as the default/neutral output for bare `teacher`, and retain
+`di·di`/`ma·star`/`ti·char` as documented alternates) instead of
+overwriting on case-insensitive key collision. No native confirmation
+needed for this fix — the register classification is already verified
+in the source data.
+**Separately open:** the `daka` vs. `ong·a` copula question raised by
+`skigipa`'s corrections.json sentence is unrelated to this dictionary
+bug — tracked in `docs/PENDING_LINGUISTIC_PROPOSAL_20260716_family_terms.md`.
 
 ---
 - Nothing in the Pending section above has been fixed — only logged.

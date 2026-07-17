@@ -1,7 +1,7 @@
 repository:
-  head: d558e1b
-  last_updated: "2026-07-11"
-  test_status: "61/61 regression tests passing, build clean"
+  head: 6a6747c
+  last_updated: "2026-07-16"
+  test_status: "66/66 regression tests passing, build clean"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -45,18 +45,26 @@ claude_a:
     commit - next real task for whoever reads this is reviewing commit
     6339230 (RC-CANDIDATE-017/018/019), not yet reviewed.
   current_task: >-
-    Corrected a real gap the Project Owner caught: original dictionary-
-    image extraction (2026-07-14) missed that several entries carry two
-    glosses across word classes on one headword. Fixed the most
-    consequential miss - Grika also means "clear/transparent/limpid"
-    (adj.), completely unrelated to the native-confirmed Wangala dance
-    sense - real linguistic infrastructure had already been built
-    around the dance sense without registering this. Distinguished
-    homonymy (Grika - unrelated meanings, coincidental) from polysemy-
-    via-category-flexibility (Gong-raka adj/v, Guala v/n - related
-    meanings, same root across classes) as a general methodological
-    note for future extraction from this source, plus logged the two
-    new candidates properly.
+    2026-07-16: Reviewed RC-CANDIDATE-017/018/019 (commit 6339230).
+    RC-018 confirmed engineering-only (live-reproduced the floating
+    ·gen token). RC-017 reopened - Claude B's "under" vs "on" comparison
+    wasn't structurally parallel (accusative ·ko + fused pseudo-verb vs.
+    bare locative with no predicate at all), and the "working" under-case
+    output contradicts the project's own confirmed RULE-G2/033 copula
+    pattern - flagged as a real linguistic question, not pure plumbing;
+    relay question drafted. RC-019 resolved (not a word-choice
+    question) - master_dictionary.json already has 4 verified teacher
+    entries (Skigipa neutral + 3 register-tagged loanword variants);
+    compiler's case-insensitive last-write-wins silently clobbers all
+    but the last one for dictionary-path lookups (corrections.json
+    bypasses it) - same shape as RC-016, handed to Claude B as a
+    data-integrity fix, no native input needed. Also reviewed a new
+    Tridip/Thangseng relay (family-vocab register set, a live
+    daka-vs-ong·a copula conflict on the existing RULE-005 example
+    sentence, and a confirmed ama homonymy risk against the modals
+    proposal) - logged in
+    docs/PENDING_LINGUISTIC_PROPOSAL_20260716_family_terms.md, added
+    NV-017/018 to the relay queue, corrected stale NV-013 wording.
   progress: >-
     Verb inventory surfaced a real, previously-undetected finding: a
     raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
@@ -75,15 +83,15 @@ claude_a:
     - "2026-07-08: Native validation cycle maturity pass - minimal question set, Coverage Audit, Confidence Review, RULE-030 catalogue gap fixed"
     - "2026-07-08: docs/VERB_INVENTORY.md (P0 verb inventory) + docs/verbs/CHA_EAT.md (P1 template canonical page) + NV-005..009 reconciled with Claude B's parallel evidence (RC-CANDIDATE-001..005) + NV-010/011/012 added"
   next_action: >-
-    See SESSION_BOOTSTRAP.md "Current joint work package" for the
-    authoritative live list (added 2026-07-08 alongside the final
-    handout). Summary: review NV-005..009 + cross-check against Claude
-    B's PENDING_VOCABULARY.md/PENDING_REGRESSION_CASES.md for
-    duplication; confirm the locative proposal is fully closed; reconcile
-    GRAMMAR_SPEC.md into GRAMMAR_RULE_CATALOGUE.md (RULE-015/RULE-032
-    promotion - confirmed gap); NV-001/NV-002 (Rule 30/31) still need
-    direct Thangseng answers; then P2 Verb Family Project (cha· first)
-    per Project Owner sequencing once the above is clear.
+    Relay NV-001/002/010/016/017/018 to Thangseng (minimal question set
+    in THANGSENG_NATIVE_VALIDATION.md, now 6 items) - NV-017/018 are new
+    2026-07-16, touch RULE-005/031 and the ama homonymy risk, treat as
+    high-priority since they block promoting the new family-vocab set.
+    RC-CANDIDATE-017's re-opened locative-copula question also needs a
+    relay ask (see PENDING_REGRESSION_CASES.md). Otherwise: see
+    SESSION_BOOTSTRAP.md "Current joint work package" for the rest of
+    the live list; P2 Verb Family Project (cha· first) once native
+    answers land.
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
     - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"
