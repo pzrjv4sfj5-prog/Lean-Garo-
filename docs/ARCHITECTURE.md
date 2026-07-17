@@ -466,6 +466,56 @@ passthrough.
   step 10 — now historical/inaccurate since removal. Low-risk, easy fix,
   just hasn't been touched.
 
+### Repository engineering audit (2026-07-16, Claude B hygiene cycle —
+findings only, no fixes/edits made)
+- **`master_dictionary.json` has 849 English keys with 2+ conflicting Garo
+  values** within the raw dictionary itself (not cross-table — this is
+  internal to the single 5000+-entry source file). Examples: `"stand"` →
+  `Chadenga`/`Chakata`; `"earthquake"` → `A·a·moa`/`Banggria`/`a'a
+  banggri·a` (3-way conflict, not 2); `"orange"` → `Narang`/`a·mnk`;
+  `"potato"` → `Alu`/`al·u` (case-only, likely a genuine dup);
+  `"monkey"` → 3-way conflict. Many of these are legitimate — "the X"
+  variants translated slightly differently from bare "X" in the source
+  data collection, dialectal/register variants, etc. — but the point is
+  **none of this is audited anywhere**. `prepare-data.js` builds
+  `compiled_dict.json` by iterating the array and letting later entries
+  silently overwrite earlier ones in the resulting object — whichever
+  variant happens to sit later in `master_dictionary.json` wins, with
+  zero warning, zero allowlist, and no record of what got shadowed.
+  RC-CANDIDATE-012 (raka-as-apostrophe) and RC-CANDIDATE-019 (teacher)
+  were each found by accident, one word at a time, via live acceptance
+  testing — this 849-key number suggests there are more of the same
+  class sitting undiscovered. `repository-intelligence.js` Check B only
+  compares the small curated tables (`pronoun_map`, `possessives`,
+  `irregular_verbs`, `purpose_map`) against `corrections.json` — it does
+  **not** check `master_dictionary.json` for internal self-consistency
+  at all. This is a real gap in the self-auditing tool, not just in the
+  data. Flagging for Claude A triage (word-choice) and a possible
+  BACKLOG item for `repository-intelligence.js` (engineering) — not
+  fixing either here, per scope.
+- **Two orphaned handoff docs, unlike the other 12 historical docs, carry
+  no `SUPERSEDED` marker**: `docs/CLAUDE_A_HANDOFF_20260628.md` and
+  `docs/CLAUDE_A_HANDOFF_NEXT.md` (2026-06-14). Both predate the current
+  `.ai/SESSION_BOOTSTRAP.md`-based collaboration model entirely and are
+  fully stale, but a future reader has no signal of that the way they do
+  for the other 12 (`docs/GRAMMAR_SPEC.md`, `docs/THANGSENG_RULES_LOOKUP.md`,
+  etc. — all correctly labeled). No content risk (nothing currently reads
+  these), just a documentation-hygiene gap. Low-priority, quick fix
+  whenever someone's next in this area: add the same `SUPERSEDED` header
+  the other 12 already use.
+- **No new duplicate-typo bugs found in the RC-012 pattern** (raka mark
+  rendered as a stray apostrophe) beyond the previously-confirmed 95
+  legitimate `a'`/`an'`/`am'` prefix-morpheme entries — spot-checked
+  against the same detection method RC-012 used; nothing new surfaced.
+- **`test-dictionary.js` (root-level, run in the build pipeline) and
+  `tests/unit/translationEngine.test.js` are not the same suite** — worth
+  noting only because a future reader might assume "the tests" means one
+  file. `test-dictionary.js` validates dictionary structural integrity
+  (not grammar/translation behavior); the 70 `node --test` cases audited
+  in Task 1 above are the only ones covering RC-* regressions. No
+  overlap or redundancy found between them — just flagging the split for
+  anyone unfamiliar with the build pipeline.
+
 ### Architectural debt (works correctly today, but fragile)
 - **No syntax tree.** Every "parse" is a sequential regex/set-membership scan
   over a flat token array. Works for the current sentence patterns (simple
@@ -491,6 +541,55 @@ passthrough.
   (e.g. why is `exact-phrase` 0.98 and `phrase-map` 0.99? Historical, not
   principled). Fine for the current use (higher number = tried earlier), but
   not meaningful as an actual probability.
+
+### Parser-boundary audit (2026-07-16, Claude B hygiene cycle — analysis
+only, no code changed)
+Following the same review method that caught RC-CANDIDATE-010 (positional
+heuristic + no POS data = predictable future breakage), a pass over the
+rest of `analyzeGrammar`/`assembleSentenceSOV` for the same failure class.
+Not new RCs (nothing broken has surfaced from these yet) — flagged as
+where the next one is likely to come from:
+- **Possessive extraction is sentence-global, not clause-local**
+  (translationEngine.js ~L421-425): `for (const w of words)` scans the
+  *entire* sentence for the first `POSSESSIVES` match, with no bound to
+  where the subject/object actually is. A sentence where a possessive word
+  appears somewhere other than as the object's determiner (e.g. embedded
+  in a clause the current grammar doesn't otherwise parse) would silently
+  misattach it. No confirmed failing input yet — flagging the mechanism.
+- **`pendingLocativeVerbGuard`/`pendingLocative` flags assume at most one
+  locative phrase per sentence.** Both are single booleans, set-then-
+  consumed once. A sentence with two locative adjuncts (e.g. "the book is
+  on the table in the kitchen") would have the second flag-set silently
+  overwrite/misfire against the first's consumption — same class as
+  RC-010/011's discovery that "enabling NP subjects exposed a pattern that
+  never used to reach this code." Two-locative sentences aren't in the 237
+  benchmark corpus, so this hasn't surfaced yet.
+- **`MID_JOIN_CONNECTIVES`'s clause split uses `indexOf`, i.e. first
+  occurrence only** (translationEngine.js ~L791): a sentence where "and"/
+  "but"/"or"/"so" appears more than once, or appears as part of a longer
+  already-resolved phrase rather than a true clause boundary, would split
+  at the wrong point. No confirmed failure — same "positional, not
+  structural" pattern.
+- **`assembleSentenceSOV`'s verb/non-verb classification is a suffix
+  regex on the *translated Garo output*, not the English input**
+  (`/enga$|aha$|gen$|bo$|na$|·a$/`) — this is the same mechanism that
+  caused RC-CANDIDATE-018's `·gen` orphan-token bug (the regex doesn't
+  match `·gen` because of the leading raka mark, a second latent bug
+  independent of the NP-subject-coherence root cause already logged
+  under RC-018). Any other dictionary entry whose value happens not to
+  match this regex — a standalone-word tense marker, an irregular
+  suffix pattern — would silently misclassify the same way. Worth a
+  full audit of `IRREGULAR_VERBS`/dictionary values against this regex
+  before the next sov-assembly-path RC surfaces from it.
+- **General pattern underlying all of the above:** every "is this word
+  the X" check in this file is answered by set-membership or regex
+  against the word's *surface form*, never by structural position
+  relative to clause boundaries — because no clause/phrase boundary
+  data exists (confirmed constraint, see RC-CANDIDATE-003). This is the
+  same boundary RC-010's fix intentionally stopped short of solving
+  (BACKLOG-005, Parser/Syntax Tree, is the actual fix). Each of the
+  four items above is a different symptom of that same root limitation,
+  not a new independent problem to solve piecemeal.
 
 ### Obsolete grammar (superseded, kept for history)
 `docs/THANGSENG_RULES_LOOKUP.md` Rule 17's original 2026-07-01 text (jaha =

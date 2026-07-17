@@ -21,6 +21,19 @@ doc maps categories to what they test — not a sentence list._
 
 **Total: 237.** Counts sum to 237 (30+70+36+6+12+6+24+24+8+9+4+4+4=237).
 
+## Pending acceptance cases — not in the fixed 237 corpus
+`stress_237.mjs` is fixed and not modified for this. These are gaps
+found comparing RC-CANDIDATE-017/018/019 against the existing 237
+categories — logged as representative sentences to test once each RC
+is implemented, not as new expected-output claims (none of these are
+linguistically confirmed).
+
+| RC | Representative sentence(s) | Nearest existing category | Gap |
+|---|---|---|---|
+| RC-017 | `"the book is not on the table"`, `"i am not waiting at the market"` | NP-subject locatives (6) / Pronoun-subject locatives (12) | Corpus has affirmative locative-predicate sentences only — no negated-locative variant exists at all, for either subject type. |
+| RC-018 | `"the dog will eat rice"`, `"she will go to the market"` | Person×verb SVO (30) / Tense-aspect-negation paradigm (70) | Future-tense coverage exists only for pronoun subjects (`"i will eat"`); no NP-subject + future combination exists, which is what surfaced the floating `·gen` token. |
+| RC-019 | `"the teacher is here"`, `"my father is a teacher"` | Not covered by any category | The word `"teacher"` does not appear anywhere in the 237-sentence corpus. `"my father is a teacher"` already has a native-confirmed `skigipa` answer in `corrections.json` — worth using as the anchor case once Claude A resolves the word-choice question. |
+
 **Coverage gaps this inventory surfaces (not new RCs — noted per Task 5):**
 - No category isolates question-word placement specifically, though 8
   question sentences exist — the SOV-violation observed in some question

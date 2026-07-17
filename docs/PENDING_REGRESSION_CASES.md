@@ -374,14 +374,36 @@ the negation vanishes, no negation marker anywhere in the output.
 Compare working cases: `"the dog is not under the table"` (correct,
 `...Kokkimaoja`) and `"the teacher does not eat rice"` (correct,
 `...Cha·ja`) — both carry their negation morpheme through fine.
-**Status:** Open, unimplemented, root cause not yet traced. Found live-
-testing 2026-07-13.
-**Hypothesis (engineering, unconfirmed):** locative-adjunct object
-construction (no verb found → object gets `·o`) likely doesn't carry
-the negation flag through that path the way the verb-bearing paths do.
-**Remaining uncertainty:** none linguistic — negation is independently
-confirmed correct elsewhere; this reads as a pure pipeline-plumbing gap
-in the locative-object path, not a word-choice or grammar question.
+**Status:** Open, unimplemented. Found live-testing 2026-07-13.
+**Root cause — confirmed high confidence, 2026-07-16 hygiene audit
+(engineering-only, not implemented per Task 5 scope):** `analyzeGrammar`'s
+verb-search loop (translationEngine.js ~L313-418) never finds a verb for
+copula-only locative-predicate sentences — `"is"` is a stopword, the
+locative-adjunct guard consumes `"table"` as an object candidate, and
+nothing else in the remainder resolves via `findVerbForm`. `grammar.verb`
+stays `null`. `applyNegation()` is only ever invoked inside the
+verb-found branch (L411-413) — there is no fallback path in either
+`analyzeGrammar` or `assembleGrammar` that attaches negation to a bare
+copula or to the object/locative slot when no verb exists. Live-verified:
+`analyzeGrammar('the book is not on the table').verb === null`,
+`.isNegative === true` — the flag is correctly detected, it simply has
+no attachment point downstream. Same root mechanism likely explains any
+negated NP-subject sentence with no independent lexical verb (e.g.
+predicate adjectives with dropped copula would NOT hit this, since
+`applyNegation` there routes through the adjective's own resolution —
+this is specific to constructions where the *only* semantic content is
+a locative/existential relation with no lexical verb at all).
+**Implementation implication (not scoped/attempted):** `assembleGrammar`
+needs a negation-attachment fallback for the `grammar.verb === null`
+case — likely attaching `ong·ja` (the existing "is not" dictionary
+value already used elsewhere) when `isNegative` is true and no verb was
+found, rather than silently dropping it. This is a linguistic
+decision (which negated existential form is correct) as much as an
+engineering one — Claude A should confirm the right target form before
+implementation.
+**Remaining uncertainty:** the correct negated-copula surface form
+itself needs native/Claude A confirmation; the engineering diagnosis
+(where the flag gets dropped) has none.
 
 **Claude A review (2026-07-16):** Reopening — the two "compare" cases
 aren't structurally parallel, and the "working" one may itself be
@@ -410,11 +432,37 @@ wrong pattern would just make both cases consistently wrong.
 **Conclusion:** `"the dog will eat rice"` → `"Achak Mi ·gen Cha·a"` —
 `·gen` should attach to the verb (`Cha·a`) but instead sits as its own
 space-separated token. Sov-assembly rendering path.
-**Status:** Open, unimplemented, root cause not yet traced. Found live-
-testing 2026-07-13.
-**Remaining uncertainty:** none linguistic — this is a rendering/
-concatenation defect (suffix attachment), not a question of which
-suffix or where it belongs semantically.
+**Status:** Open, unimplemented. Found live-testing 2026-07-13.
+**Root cause — confirmed high confidence, 2026-07-16 hygiene audit
+(engineering-only, not implemented per Task 5 scope):** two compounding
+causes, confirmed via direct `analyzeGrammar`/`translate` reruns.
+(a) NP-subject detection's coherence check (`/^(is|are|was|were)$/` or
+`STOP_WORDS`) does not recognize `"will"` as a coherent continuation —
+`"will"` is in neither set — so `"the dog will eat rice"` never reaches
+`analyzeGrammar`'s NP-subject branch at all (`subject: null` confirmed
+live) and falls straight to the much weaker `assembleSentenceSOV`
+fallback, bypassing every fix RC-010/011/014 made to the grammar-assembly
+path. (b) `assembleSentenceSOV` (translationEngine.js ~L535-582) is a
+flat word-by-word translator with zero tense-suffix-attachment logic —
+it classifies each translated word as verb/non-verb by a regex on the
+Garo output, translates `"will"` via a standalone `master_dictionary.json`
+entry (`"will":"·gen"`) as an ordinary word, and since `·gen` doesn't
+match the verb-signal regex (`/enga$|aha$|gen$|bo$|na$|·a$/` — note
+`"·gen"` does NOT match `/gen$/` because of the leading `·`, a second,
+smaller bug worth flagging separately) it lands in `nonVerbs` and gets
+joined in word order rather than suffixed onto the adjacent verb.
+**Implementation implication (not scoped/attempted):** two independent
+fixes, likely both needed: (a) widen the NP-subject coherence check to
+recognize modal/auxiliary continuations like `"will"` (same class as
+`AUXILIARY_SKIP` used elsewhere in the verb-search loop — reuse, don't
+duplicate) so more future-tense NP-subject sentences reach the stronger
+grammar-assembly path; (b) `assembleSentenceSOV` needs real tense-suffix
+handling for the sov-assembly fallback specifically, since NP-subject
+future sentences that still don't qualify for grammar-assembly (out of
+RC-010's documented scope, e.g. adjective-modified subjects) will keep
+hitting this fallback regardless of (a).
+**Remaining uncertainty:** none — pure engineering/architecture gap, no
+linguistic ambiguity in the diagnosis.
 
 **Claude A review (2026-07-16):** Confirmed engineering-only. Live
 re-run: `"the dog will eat rice"` → `Achak Mi ·gen Cha·a` — reproduces
