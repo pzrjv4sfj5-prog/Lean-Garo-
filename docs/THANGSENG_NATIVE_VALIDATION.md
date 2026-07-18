@@ -46,14 +46,17 @@ need Thangseng at all.
    proposal), or are these unrelated homophones? Also: are `apa`/`ama`
    address-only, or usable as the subject of a full descriptive
    sentence the way `pagipa`/`ma·gipa` are?
-8. **(NV-019, added 2026-07-18)** Is `Bal` ever used alone to mean
-   "wind," or only in the established `Balwa` form? Source dictionary
-   lists `Bal` with a disparate sense cluster (flower, wind, air,
-   bundle, load, big basket) alongside the already-established,
-   triple-corroborated `Balwa`/`bal·wa`/`wen·a wen·wen·a`. Held out of
-   `master_dictionary.json` pending this — see
-   `src/data/pending_lexicon.json` (review_status: needs-discussion,
-   `english: "wind"`, `garo: "Bal"`).
+8. **(NV-019, added 2026-07-18) — ANSWERED 2026-07-18.** "Is `Bal`
+   ever used alone to mean 'wind,' or only in the established `Balwa`
+   form?" Thangseng: *"Wind is 'balwa'. The bal has a totally different
+   meaning. It means load or burden."* Confirmed: `Bal` ≠ "wind."
+9. **(NV-020, added 2026-07-18)** Does `Bal` on its own ever mean "a
+   flower," "air," or "a big basket" — or is `load`/`burden` really its
+   only meaning, like NV-019 confirmed for the wind sense? The source
+   dictionary lumped all six senses under one `Bal` headword; three
+   (bundle/load/burden) are now confirmed, the other three are
+   unconfirmed and already live in `master_dictionary.json` — see
+   `PENDING_LINGUISTIC_PROPOSAL_20260718_bal_homonymy.md`.
 verb, ability-modal) are real but lower-priority — bundle them into a
 second relay only after this first batch lands, to avoid overloading a
 single native-validation session. NV-006 and NV-009 do not need to be

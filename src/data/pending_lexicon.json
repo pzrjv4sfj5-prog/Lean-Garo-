@@ -900,8 +900,8 @@
       "import_date": "2026-07-18T06:59:23.747Z",
       "ocr_version": "gemini-2026-07-16"
     },
-    "review_status": "needs-discussion",
-    "review_notes": "Reviewed by Claude A, 2026-07-18. 'Bal' as 'wind' conflicts with the already-established, triple-corroborated Balwa/bal·wa/wen·a wen·wen·a. Bal's other senses (flower, bundle, load, big basket) form a disparate cluster that reads like a short root covering several derived/compound senses, not a direct synonym for wind on its own. Held pending native confirmation - do not promote yet.",
+    "review_status": "rejected",
+    "review_notes": "Reviewed by Claude A, 2026-07-18; native-confirmed rejected 2026-07-18 (Thangseng, via Tridip relay, in response to NV-019). Direct quote: \"Wind is 'balwa'. The bal has a totally different meaning. It means load or burden.\" Confirms Bal != wind; Balwa is the correct and only word for wind. This also raises a new question about the other senses this dictionary source listed under the same 'Bal' headword (flower, air, big basket) - Thangseng's framing ('a totally different meaning', singular) suggests the printed source may have compressed multiple unrelated homonyms under one headword, same pattern as the Grika precedent. See NV-020.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-18",
     "conflict": {
@@ -912,7 +912,7 @@
         "wen·a wen·wen·a"
       ]
     },
-    "promotion_status": "pending",
+    "promotion_status": "rejected",
     "promoted_date": null
   },
   {
