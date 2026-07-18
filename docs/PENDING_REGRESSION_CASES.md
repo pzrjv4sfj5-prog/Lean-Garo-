@@ -614,3 +614,68 @@ No native relay needed for items 1–2 (pure engineering/data-cleanup,
 already fully diagnosed). Items 3–4 should be spot-checked against a
 second native example before generalizing broadly, since this is only
 one data point.
+
+**Verification of Claude B's fix (`ad9bd71`, 2026-07-18) — partial,
+items 3–4 correctly left undone, but the remaining gap is now more
+dangerous than before.** Item 1 (the literal floating-`·gen` symptom)
+is fixed — confirmed live: `"the dog will eat rice"` now gives
+`Achak mi·ko Cha·gen` (suffix attached, no orphan token). But
+`will`-initial sentences that aren't NP-subject still fall through to
+`sov-assembly`, and that path has two uncorrected problems:
+- **Word order:** `"will you eat rice"` → `Mi Na·a Cha·gen`
+  (object-subject-verb) — wrong; should be subject-object-verb per the
+  engine's own SOV design (`Na·a Mi Cha·gen`).
+- **No interrogative marking at all:** none of `"will you eat rice"`,
+  `"will you eat mango"`, `"will she eat"` produce a question mark or
+  the `ma` suffix — they come out as bare declaratives despite being
+  clearly questions in the English input. Per item 3, this was always
+  going to need a second native data point before generalizing, so
+  leaving it undone is correct — flagging only because **the output no
+  longer looks broken**. The old floating-token symptom
+  (`·gen Na·a Cha·a`) was obviously wrong to anyone reading it; the new
+  symptom (`Mi Na·a Cha·gen`, no `?`) reads as a fluent, confident,
+  plausible-looking Garo sentence that happens to be an unmarked
+  declarative instead of the question that was asked — exactly the
+  silent-wrong-output failure mode this project treats as
+  highest-risk. Recommend: don't let this quietly ship as "RC-018
+  fixed, closed" — the fix is real and worth keeping, but the
+  interrogative gap needs its own tracked item (not reopening this one,
+  since the diagnosis is unchanged from above) so it doesn't get lost
+  now that the more visible symptom is gone.
+
+### RC-CANDIDATE-021 — No interrogative-marking support anywhere in the engine (silent-declarative regression risk)
+
+**Status:** Open, newly tracked 2026-07-18 (Claude A), split out from
+RC-CANDIDATE-020 so it doesn't get lost now that RC-018's more visible
+symptom (floating `·gen`) is fixed.
+
+**Problem:** the engine has zero question-formation logic. Any English
+question that isn't an exact `corrections.json` match comes out as a
+grammatically-plausible declarative with no `?` and no interrogative
+marker — e.g. `"will you eat rice"` → `Mi Na·a Cha·gen` (also wrong
+word order, object-subject-verb instead of subject-object-verb).
+
+**Why this is higher-risk now than before RC-018's fix:** the old
+floating-token output was obviously broken to any reader. The new
+output is fluent-looking and confident — a native speaker skimming it
+might not immediately notice it's answering a different sentence
+(a statement) than the one asked (a question).
+
+**What's known so far (one data point only, from the Thangseng relay,
+2026-07-15):** `cha` (root) + `·gen` (future) + `ma` (interrogative)
+fuse into one verb-final word — `cha·genma`. Subject-object-verb order
+holds for questions too (`Na·a [object] cha·genma?`). This is not
+enough to generalize a `ma`-suffix rule to all tenses/persons — needs
+a second native confirmation before any broad implementation.
+
+**Recommended scope for a first fix:** rather than attempting general
+question-formation now, (1) fix the word-order bug in `sov-assembly`
+for future-tense objects (subject-object-verb, matching the rest of
+the engine's SOV design) since that's independently wrong regardless
+of the interrogative question, and (2) consider having the engine
+flag/lower confidence on any output where the English input ends in
+`?` but no `corrections.json` match and no interrogative marker was
+applied — surfacing the gap to the user rather than silently answering
+the wrong sentence type. Full general `ma`-suffix support should wait
+for a second native data point per RC-CANDIDATE-020's original
+handoff.
