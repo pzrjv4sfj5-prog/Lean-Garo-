@@ -359,3 +359,86 @@ test('RC-CANDIDATE-014 (partial): "has" resolves correctly for "she has three ch
   assert.equal(g.verb?.english, 'has');
   assert.equal(g.verb?.garo, 'donga');
 });
+
+// --- RC-CANDIDATE-018 fix (2026-07-18, Claude A confirmed engineering-
+// only 2026-07-16; NOT RC-CANDIDATE-017, which Claude A reopened as a
+// genuine unresolved linguistic question and is deliberately untouched
+// here). Two root causes fixed: (a) analyzeGrammar's NP-subject
+// coherence check didn't recognize "will" as a coherent continuation,
+// so NP-subject future sentences never reached grammar-assembly at all;
+// (b) assembleSentenceSOV (the fallback still legitimately used for
+// RC-010-excluded constructions like adjective-modified subjects) had
+// no future-tense handling and no auxiliary exclusion, so "will"
+// resolved via its own dictionary entry ("·gen") and printed as a
+// floating orphan token instead of suffixing onto the verb. ---
+test('RC-CANDIDATE-018(a): NP-subject future reaches grammar-assembly, ·gen suffixes onto the verb', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('the dog will eat rice');
+  assert.equal(r.method, 'grammar-assembly');
+  assert.equal(r.garo, 'Achak mi·ko Cha·gen');
+  // object ("mi·ko") between subject ("Achak") and verb ("Cha·gen") —
+  // Project Owner directive root cause 5, SOV order preserved.
+  assert.ok(r.garo.indexOf('mi·ko') > r.garo.indexOf('Achak'));
+  assert.ok(r.garo.indexOf('Cha·gen') > r.garo.indexOf('mi·ko'));
+});
+
+test('RC-CANDIDATE-018(a) regression guard: pronoun-subject future unaffected by the coherence-check widening', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('she will go');
+  assert.equal(r.garo, 'Ua Re·anggen');
+});
+
+test('RC-CANDIDATE-018(a) regression guard: adjective-modified subjects still correctly fall to sov-assembly (RC-010 documented exclusion, unaffected by this fix)', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('a big dog is sleeping');
+  assert.equal(r.method, 'sov-assembly');
+});
+
+test('RC-CANDIDATE-018(b): sov-assembly fallback attaches ·gen to the verb instead of leaving it as a floating token', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('a big dog will eat rice');
+  assert.equal(r.method, 'sov-assembly');
+  assert.ok(!/\s·gen(\s|$)/.test(r.garo), `·gen must not appear as its own space-separated token, got: ${r.garo}`);
+  assert.ok(r.garo.includes('Cha·gen'), `·gen must be suffixed onto the verb, got: ${r.garo}`);
+});
+
+test('RC-CANDIDATE-018: "will" is never treated as lexical content in either assembly path', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r1 = await translate('the dog will eat rice');
+  const r2 = await translate('a big dog will eat rice');
+  for (const r of [r1, r2]) {
+    assert.ok(!/\bgen\b/i.test(r.garo.replace('·gen', '')), `no standalone "gen" token outside the ·gen suffix, got: ${r.garo}`);
+  }
+});
+
+test('RC-CANDIDATE-018: negative future uses stem+jawa directly (Rule 5), not gen+ja stacked, in the sov-assembly path', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('a big dog will not eat rice');
+  assert.equal(r.method, 'sov-assembly');
+  assert.ok(!r.garo.includes('genja'), `must not stack gen+ja (confirmed bug shape, Rule 5), got: ${r.garo}`);
+  assert.ok(r.garo.includes('Cha·jawa') || r.garo.includes('jawa'), `expected negative-future jawa suffix, got: ${r.garo}`);
+});
+
+test('RC-CANDIDATE-018 regression guard: irregular verbs are not double-inflected by the new future-tense path', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  // "sitting" is a pre-inflected IRREGULAR_VERBS form; future tense
+  // wouldn't grammatically compose with it here, but the guard under
+  // test is purely mechanical: the fix must not blindly suffix ·gen onto
+  // an already-inflected irregular form and produce a malformed double
+  // suffix. Asserting no malformed 'engagen'/'ahagen' shape appears.
+  const r = await translate('a big dog is sitting');
+  assert.ok(!/engagen|ahagen/.test(r.garo), `must not double-inflect an irregular verb form, got: ${r.garo}`);
+});
+
+// --- Interrogative formation (Project Owner directive root cause 3) is
+// deliberately NOT implemented or tested here. No confirmed Claude A
+// linguistic guidance exists yet for Garo question formation - only one
+// unconfirmed WhatsApp data point (see
+// docs/PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md,
+// "na'a cha'genma?"), which is exactly the kind of chat-sourced content
+// the standing integration rule prohibits implementing directly.
+// Encoding a specific interrogative rule into the regression suite
+// before Claude A confirms it would lock in unconfirmed linguistic
+// content the same way implementing it in the engine would. Revisit
+// once that proposal (or a dedicated interrogative-formation rule) is
+// reviewed and committed to the grammar docs.

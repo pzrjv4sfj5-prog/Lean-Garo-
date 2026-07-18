@@ -463,6 +463,28 @@ RC-010's documented scope, e.g. adjective-modified subjects) will keep
 hitting this fallback regardless of (a).
 **Remaining uncertainty:** none — pure engineering/architecture gap, no
 linguistic ambiguity in the diagnosis.
+**FIXED (2026-07-18, Claude B, Project Owner sprint directive, Claude A
+confirmed engineering-only 2026-07-16):** both parts implemented exactly
+as diagnosed. (a) `AUXILIARY_SKIP` hoisted to module level, NP-subject
+coherence check now accepts it — `"the dog will eat rice"` reaches
+grammar-assembly, `Achak mi·ko Cha·gen`. (b) `assembleSentenceSOV` now
+excludes `AUXILIARY_SKIP` from lexical translation and applies
+`applyTense(verb, 'future'|'negative_future')` to the resolved verb,
+guarded against double-inflecting pre-suffixed `IRREGULAR_VERBS` forms —
+`"a big dog will eat rice"` (still legitimately sov-assembly per RC-010's
+documented scope) now produces `Achak Mi Dal·a Cha·gen`, no floating
+token. 7 new regression tests added (`RC-CANDIDATE-018*` in
+`tests/unit/translationEngine.test.js`, 70→77). Full 237-sentence stress
+benchmark diffed byte-for-byte before/after: zero changes outside the
+future-tense/auxiliary cases touched. `npm test`/`npm run build` clean.
+Interrogative formation (a separate, related ask) was explicitly NOT
+implemented — no confirmed Claude A linguistic guidance exists yet, only
+one unconfirmed WhatsApp data point
+(`docs/PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md`).
+RC-CANDIDATE-017 (negation-locative) was deliberately left untouched —
+Claude A reopened it 2026-07-16 as a genuine unresolved linguistic
+question pending a Thangseng relay, not pure plumbing; not in scope of
+this fix.
 
 **Claude A review (2026-07-16):** Confirmed engineering-only. Live
 re-run: `"the dog will eat rice"` → `Achak Mi ·gen Cha·a` — reproduces

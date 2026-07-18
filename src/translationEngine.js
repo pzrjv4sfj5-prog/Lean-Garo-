@@ -91,6 +91,21 @@ const STOP_WORDS = new Set([
 // were previously falling through into object detection as [UNKNOWN]
 // (e.g. "i didn't eat" -> object: "didn't" -> "[UNKNOWN]·ko").
 
+// RC-CANDIDATE-018 fix (2026-07-18, Claude A confirmed engineering-only):
+// hoisted from a local declaration inside analyzeGrammar's NP-subject
+// block to module level so it's one shared table instead of two that
+// could drift apart, and so assembleSentenceSOV (the sov-assembly
+// fallback) can also use it. Note most modals (would/could/should/may/
+// might/shall/can) are ALSO already in STOP_WORDS above and were
+// already correctly excluded from lexical translation everywhere -
+// "will" specifically was the gap: not in STOP_WORDS, so it has its own
+// master_dictionary.json entry ("will":"·gen") and was being treated as
+// an ordinary lexical word instead of a tense auxiliary (root cause 1).
+// "shall"/"going"/"used"/"stopped"/"quit"/"finished"/"completed"/
+// "longer" have the same shape (auxiliary/discontinuation markers with
+// their own standalone dictionary entries) and get the same treatment.
+const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','should','may','might','can','used','to','stopped','quit','finished','completed','longer']);
+
 // VERB_SUFFIXES removed 2026-07-05 — dead table, contradicted applyTense's
 // real suffix map (claimed past='·a' vs applyTense's actual 'ha'; claimed
 // present='enga' which is actually the progressive suffix). Only consumer
@@ -277,6 +292,20 @@ export function analyzeGrammar(input) {
   // would need real NP-boundary detection, which needs real POS/parser
   // data this repository does not have - out of scope for this fix, not
   // silently promised as solved.
+  // RC-CANDIDATE-018 fix, part (a) (2026-07-18, Claude A confirmed
+  // engineering-only, root cause traced 2026-07-16): the NP-subject
+  // coherence check below now recognizes AUXILIARY_SKIP (module-level,
+  // shared with the verb-search loop and assembleSentenceSOV) the same
+  // way it already recognized copulas/STOP_WORDS. Before this fix,
+  // "the dog will eat rice" had nextTok="will", which matched neither
+  // /^(is|are|was|were)$/ nor STOP_WORDS, so coherent=false and the
+  // ENTIRE sentence fell through to the much weaker assembleSentenceSOV
+  // fallback (bypassing every grammar-assembly fix, including the
+  // future-tense suffix attachment at line ~397 below, which already
+  // correctly handles detectedTense==='future' for pronoun subjects -
+  // confirmed live: "she will go" -> "Ua Re·anggen"). Only the
+  // entry-to-grammar-assembly gate was broken, not the tense-attachment
+  // logic itself.
   let npSubjectGaro = null, npSubjectEnglish = null, subjectEndIndex = 0;
   if (!PRONOUN_MAP[firstWord] && /^(a|an|the)$/.test(firstWord) && words.length > 1) {
     const nounWord = words[1].toLowerCase().replace(/[^a-z]/g,'');
@@ -289,11 +318,13 @@ export function analyzeGrammar(input) {
       // succeeds on ANY dictionary word, not just verbs (proven directly:
       // findVerbForm('dog') succeeds because 'dog' is a valid noun entry,
       // which would have wrongly marked "a big dog" as coherent since
-      // "dog" "resolves"). Restricting to copula/stopword/absent is
-      // strictly less coverage but is the only signal actually
+      // "dog" "resolves"). Restricting to copula/stopword/auxiliary/absent
+      // is strictly less coverage but is the only signal actually
       // verifiable without real POS data - see the parser-boundary review
-      // above.
-      const coherent = !nextTok || /^(is|are|was|were)$/.test(nextTok) || STOP_WORDS.has(nextTok);
+      // above. AUXILIARY_SKIP added here (RC-CANDIDATE-018) for the same
+      // reason STOP_WORDS already was: these are closed-class words this
+      // file already treats as structural elsewhere, not new guessing.
+      const coherent = !nextTok || /^(is|are|was|were)$/.test(nextTok) || STOP_WORDS.has(nextTok) || AUXILIARY_SKIP.has(nextTok);
       if (g && coherent) { npSubjectGaro = g; npSubjectEnglish = words[1]; subjectEndIndex = 1; }
     }
   }
@@ -306,7 +337,6 @@ export function analyzeGrammar(input) {
     const subjectWords = new Set(words.slice(0, subjectEndIndex + 1).map(w => w.toLowerCase().replace(/[^a-z]/g,'')));
 
     // Find verb — skip stop words, possessives, and auxiliary tense markers
-    const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','should','may','might','can','used','to','stopped','quit','finished','completed','longer']);
     let verbIndex = -1;
     const SPECIAL_TENSES = ['discontinued','completed','chim','pastcont'];
     let pendingLocativeVerbGuard = false;
@@ -532,8 +562,22 @@ function tryWithoutGijaConstruction(input) {
   return parts.length >= 2 ? parts.join(' ') : null;
 }
 
-function assembleSentenceSOV(words, isNegative = false) {
-  const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()));
+function assembleSentenceSOV(words, isNegative = false, detectedTense = 'present') {
+  // RC-CANDIDATE-018 fix, part (b) (2026-07-18, Claude A confirmed
+  // engineering-only): AUXILIARY_SKIP excluded here too, not just
+  // STOP_WORDS — "will" specifically has its own master_dictionary.json
+  // entry ("·gen") and was being translated as an ordinary content word,
+  // landing in nonVerbs and printed as a floating orphan token ("Achak Mi
+  // ·gen Cha·a") instead of ever reaching the verb. Root cause 1/2 from
+  // the Project Owner's directive: auxiliary detection must happen
+  // before dictionary lookup, and the tense marker belongs suffixed onto
+  // the verb, not treated as independent lexical content. This is the
+  // fallback path's fix; part (a) (analyzeGrammar's NP-subject coherence
+  // check) routes more sentences away from needing this fallback at all,
+  // but adjective-modified subjects and other RC-010-documented
+  // exclusions still legitimately reach this function and need working
+  // tense attachment regardless.
+  const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()) && !AUXILIARY_SKIP.has(w.toLowerCase()));
   if (!content.length) return null;
   const corrections = EN_INDEX['__corrections__'] || {};
   const translated = content.map(w => {
@@ -549,23 +593,44 @@ function assembleSentenceSOV(words, isNegative = false) {
   const pairs = content.map((w, i) => ({ eng: w, garo: translated[i] })).filter(p => p.garo);
   if (pairs.every(p => p.garo === p.eng)) return null;
   const verbs = [], nonVerbs = [];
+  // isIrregularVerb tracked per verb (RC-CANDIDATE-018 part b): a
+  // pre-inflected IRREGULAR_VERBS form (e.g. "eating"->"cha·enga") can't
+  // be safely re-suffixed with gen/jawa, same guard analyzeGrammar
+  // already applies to its own verb resolution — without it, future
+  // tense on an irregular verb here would double-inflect.
+  let lastVerbIsIrregular = false;
   pairs.forEach(({ eng, garo: t }) => {
+    const lw = eng.toLowerCase().replace(/[^a-z]/g,'');
     const e = lookup(eng.toLowerCase());
     // Original regex only caught enga/aha/gen/bo/na endings and missed the
     // common present-tense pattern (root+raka+a, e.g. "Cha·a", "Re·a") —
     // meaning words like "eat"/"go" were classified as nonVerbs here and
     // never received tense/negation suffixes at all. Added ·a as a verb
     // signal (raka immediately before a trailing 'a').
-    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$|·a$/.test(t)) verbs.push(t);
-    else nonVerbs.push(t);
+    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$|·a$/.test(t)) {
+      verbs.push(t);
+      lastVerbIsIrregular = !!(IRREGULAR_VERBS[lw] || IRREGULAR_VERBS[lw.replace(/ing$|ed$|es$|s$/, '')]);
+    } else {
+      nonVerbs.push(t);
+    }
   });
-  // Apply negation suffix to the verb, same convention as analyzeGrammar's
-  // main path (fixes the gap Claude B found: this fallback function had
-  // zero negation awareness, so "didn't eat" / "doesn't understand" lost
-  // their negation entirely once 8ead984 added the contractions to
-  // STOP_WORDS — they were stripped here with nothing left to signal them).
-  // Rule 18/27: see applyNegation() definition for rationale.
-  if (isNegative && verbs.length) {
+  // Future-tense suffix attachment (RC-CANDIDATE-018 part b) — same
+  // convention and same Rule 5 exception as analyzeGrammar's verb
+  // resolution (line ~397): negative future is stem+jawa directly, never
+  // gen+ja stacked (confirmed bug shape 2026-07-05, 'Cha·genja').
+  if (detectedTense === 'future' && verbs.length && !lastVerbIsIrregular) {
+    if (isNegative) {
+      verbs[verbs.length - 1] = applyTense(verbs[verbs.length - 1], 'negative_future');
+    } else {
+      verbs[verbs.length - 1] = applyTense(verbs[verbs.length - 1], 'future');
+    }
+  } else if (isNegative && verbs.length) {
+    // Apply negation suffix to the verb, same convention as analyzeGrammar's
+    // main path (fixes the gap Claude B found: this fallback function had
+    // zero negation awareness, so "didn't eat" / "doesn't understand" lost
+    // their negation entirely once 8ead984 added the contractions to
+    // STOP_WORDS — they were stripped here with nothing left to signal them).
+    // Rule 18/27: see applyNegation() definition for rationale.
     verbs[verbs.length - 1] = applyNegation(verbs[verbs.length - 1]);
   } else if (isNegative && !verbs.length && nonVerbs.length) {
     // Bare-noun negation fallback: "not water"/"not rice" have no verb or
@@ -912,10 +977,11 @@ export async function translate(input) {
   }
 
   // 6.5 Fallback SOV assembly
-  // Reuses grammar.isNegative (already computed above by analyzeGrammar)
-  // rather than re-detecting — fixes the gap where this fallback path had
-  // zero negation awareness even though the value was sitting unused in scope.
-  const sov = assembleSentenceSOV(words, grammar?.isNegative || false);
+  // Reuses grammar.isNegative and grammar.detectedTense (already computed
+  // above by analyzeGrammar) rather than re-detecting — fixes the gap
+  // where this fallback path had zero negation awareness (fixed earlier)
+  // and, as of RC-CANDIDATE-018, zero future-tense awareness either.
+  const sov = assembleSentenceSOV(words, grammar?.isNegative || false, grammar?.detectedTense || 'present');
   if (sov) return { garo: sov, method: 'sov-assembly', confidence: 0.75 };
 
   // 7. Morphology
