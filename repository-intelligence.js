@@ -57,6 +57,22 @@
  * born (a normal, expected cost until now; the whole point of this
  * check is that it should no longer be free to introduce another one).
  *
+ * CHECK D — Pending Lexicon structural integrity (src/data/pending_lexicon.json),
+ * DOES fail the build, but ONLY on structural problems — never on
+ * unresolved linguistic content. An entry sitting at review_status
+ * "unreviewed" or flagged with a "conflict" is expected, normal, healthy
+ * pending state and never fails this check. What DOES fail: missing
+ * required fields (id/english/garo/provenance), duplicate IDs, an
+ * invalid review_status/promotion_status enum value, a promotion_status
+ * of "promoted" whose review_status isn't "approved" (promotion must
+ * always follow approval, never bypass it) or whose (english,garo) pair
+ * isn't actually present in master_dictionary.json (a promoted record
+ * that didn't really land in production), and — checked once, not
+ * per-entry — prepare-data.js referencing pending_lexicon.json at all
+ * (production must never read pending data; promotion copies fields
+ * into master_dictionary.json, it never makes the pending file itself a
+ * build input).
+ *
  * Exit code 0 = clean, or only Check A hits (report-only) plus allowlisted
  * Check B issues. Exit code 1 = new Check B violation. Wired into
  * `npm run build` after test-dictionary.js.
@@ -234,15 +250,84 @@ function checkDictionarySelfConsistency() {
 }
 
 
+// --- CHECK D: Pending Lexicon structural integrity ---
+const REVIEW_STATUSES = new Set(['unreviewed', 'approved', 'rejected', 'needs-discussion']);
+const PROMOTION_STATUSES = new Set(['pending', 'promoted', 'rejected', 'duplicate-skip']);
+
+function checkPendingLexiconIntegrity() {
+  console.log('\n=== CHECK D: Pending Lexicon structural integrity ===');
+  if (!fs.existsSync('src/data/pending_lexicon.json')) {
+    console.log('  src/data/pending_lexicon.json not found — treated as empty, not a failure.');
+    return 0;
+  }
+  const pending = loadJSON('src/data/pending_lexicon.json');
+  const master = loadJSON('master_dictionary.json');
+  const masterPairs = new Set(master.map(e => `${(e.english||'').toLowerCase().trim()}\u0000${(e.garo||'').trim()}`));
+
+  const problems = [];
+  const seenIds = new Set();
+
+  if (!Array.isArray(pending)) {
+    console.log('  FAIL: pending_lexicon.json is not an array.');
+    hasNewViolation = true;
+    return 1;
+  }
+
+  pending.forEach((e, idx) => {
+    const where = e && e.id ? e.id : `entry index ${idx}`;
+    if (!e || typeof e !== 'object') { problems.push(`${where}: not an object`); return; }
+    if (typeof e.id !== 'string' || !/^PL-\d+$/.test(e.id)) problems.push(`${where}: missing/invalid id`);
+    else if (seenIds.has(e.id)) problems.push(`${where}: duplicate id`);
+    else seenIds.add(e.id);
+
+    if (typeof e.english !== 'string' || e.english.trim() === '') problems.push(`${where}: missing english`);
+    if (typeof e.garo !== 'string' || e.garo.trim() === '') problems.push(`${where}: missing garo`);
+    if (!e.provenance || typeof e.provenance !== 'object') problems.push(`${where}: missing provenance object`);
+    else {
+      if (!e.provenance.import_batch) problems.push(`${where}: provenance missing import_batch`);
+      if (!e.provenance.import_date) problems.push(`${where}: provenance missing import_date`);
+      // source/source_page/ocr_version intentionally NOT required — "if
+      // applicable" per spec; not every source has a page number.
+    }
+    if (!REVIEW_STATUSES.has(e.review_status)) problems.push(`${where}: invalid review_status "${e.review_status}"`);
+    if (!PROMOTION_STATUSES.has(e.promotion_status)) problems.push(`${where}: invalid promotion_status "${e.promotion_status}"`);
+
+    if (e.promotion_status === 'promoted') {
+      if (e.review_status !== 'approved') {
+        problems.push(`${where}: promotion_status is "promoted" but review_status is "${e.review_status}", not "approved" — promotion consistency violation`);
+      }
+      const pairKey = `${(e.english||'').toLowerCase().trim()}\u0000${(e.garo||'').trim()}`;
+      if (!masterPairs.has(pairKey)) {
+        problems.push(`${where}: promotion_status is "promoted" but ("${e.english}","${e.garo}") not found in master_dictionary.json`);
+      }
+    }
+  });
+
+  // Production must never read the pending store.
+  const prepareDataSrc = fs.existsSync('prepare-data.js') ? fs.readFileSync('prepare-data.js', 'utf8') : '';
+  if (prepareDataSrc.includes('pending_lexicon')) {
+    problems.push('prepare-data.js references pending_lexicon.json — production build must never read pending data');
+  }
+
+  problems.slice(0, 30).forEach(p => console.log(`  FAIL: ${p}`));
+  if (problems.length > 30) console.log(`  ... and ${problems.length - 30} more`);
+  console.log(`  ${pending.length} pending entries checked, ${problems.length} structural problem(s).`);
+  if (problems.length > 0) hasNewViolation = true;
+  return problems.length;
+}
+
+
 console.log('Repository Intelligence validation (BACKLOG-006) starting...');
 const rakaCandidates = checkRakaLocality();
 const crossTableViolations = checkCrossTableConsistency();
 const dictSelfConflicts = checkDictionarySelfConsistency();
+const pendingLexiconProblems = checkPendingLexiconIntegrity();
 
 console.log('\n=== Summary ===');
 console.log(`Raka locality candidates (report-only): ${rakaCandidates}`);
 console.log(`New cross-table violations: ${crossTableViolations}`);
 console.log(`New dictionary self-consistency conflicts: ${dictSelfConflicts}`);
+console.log(`Pending Lexicon structural problems: ${pendingLexiconProblems}`);
 
 if (hasNewViolation) {
   console.log('\nFAILED — new inconsistency detected. Fix the data or, if this is a');

@@ -173,13 +173,28 @@ None of these need native validation — all checkable against existing confirme
 ## 11. Claude B Status
 
 **Status:** active
-**Last completed:** BACKLOG-006 first increment (2026-07-09) — `repository-intelligence.js` built as reusable Repository Intelligence infrastructure (design rationale: `docs/REPOSITORY_INTELLIGENCE.md`), wired into `npm run build` plus a dedicated regression test. Check A (raka locality) is deliberately **report-only** after its first run showed most of 18 hits were the lexical-split false-positive trap, not real violations — routed to Claude A as `RC-CANDIDATE-009` rather than asserted. Check B (cross-table consistency) **does** gate the build and found 11 new findings on its first real run beyond the already-known `search` issue, all properly logged (`RC-CANDIDATE-007`, `008`) before being allowlisted. Before that: BACKLOG-001 (`PURPOSE_MAP`/`PRONOUN_MAP`/`POSSESSIVES` extraction) and BACKLOG-002 (`IRREGULAR_VERBS`).
-**Decision framework in active use (Project Owner, 2026-07-08):** for any candidate change — (1) linguistic authority required? stop; (2) preserves behavior while improving architecture? proceed; (3) fully protected by the regression suite? proceed. Applied to the validator's own design too: Check A's report-only framing exists *because* asserting those findings as bugs would itself have required linguistic authority (word-sense disambiguation) Claude B doesn't have.
-**Testing:** 56/56 regression tests passing (55 prior + 1 new smoke test for the validator itself), wired into `npm run build`, enforced in CI.
-**Documentation:** `docs/ARCHITECTURE.md` (BACKLOG-006 marked done), `docs/REPOSITORY_INTELLIGENCE.md` (new — design rationale), `docs/PENDING_REGRESSION_CASES.md` (RC-CANDIDATE-007/008/009 added) all current as of this session.
-**Deployment readiness:** build/tests green; live Render deployment auto-deploys from `main` on push (unverified from this sandbox — no Render API access here).
-**Technical debt:** see §8 above; `docs/REPOSITORY_INTELLIGENCE.md` documents its own gaps explicitly (large-dictionary coverage, reverse raka direction) rather than leaving them silent.
-**Next action:** `RC-003` and `RC-CANDIDATE-006` through `009` all remain pending Claude A's linguistic classification — none touched. Extending `repository-intelligence.js` to `master_dictionary.json`/`garo_dictionary.json` is a documented future opportunity, not started (needs its own design pass, per the tool's own stated limitations).
+**Last completed (2026-07-17/18):** Pending Lexicon infrastructure —
+full `Published Dictionary → Import → Pending Lexicon → Claude A Review
+→ Promotion → master_dictionary.json` pipeline built and tested
+end-to-end. `scripts/import-dictionary.js` (rewritten — no longer
+auto-applies anything, everything stages to
+`src/data/pending_lexicon.json` as `unreviewed`), `scripts/promote-lexicon.js`
+(new — only promotes `review_status: "approved"` entries, preserves
+pending records/provenance permanently), `repository-intelligence.js`
+Check D (pending-lexicon structural integrity, fails only on structural
+problems, never on unresolved linguistic content) and Check C
+(dictionary internal self-consistency, 1053-key baseline in
+`src/data/known_dictionary_conflicts.json`). Full lifecycle documented
+in `docs/PENDING_LEXICON_WORKFLOW.md`. Zero linguistic decisions made by
+any of this tooling — see that doc's "Role boundaries" section.
+**Testing:** 70/70 regression tests passing, build green, all 4
+repository-intelligence checks (A/B/C/D) passing.
+**Next action:** repository is ready to absorb a real published
+dictionary batch whenever one is provided; RC-CANDIDATE-017/018 remain
+on Project Owner hold (root cause traced, not implemented); RC-019
+(teacher) and the new future-interrogative evidence
+(`docs/PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md`)
+await Claude A.
 
 ## 12. ChatGPT Reviews
 *(ChatGPT — placeholder, not yet populated)*
@@ -203,6 +218,15 @@ None of these need native validation — all checkable against existing confirme
 - Reverse translation (Garo→English) — blocked, no reverse dictionary source (`docs/PENDING_reverse_translation.md`).
 
 ## 16. Recent Decisions
+- 2026-07-17/18 (Claude B): Built Pending Lexicon infrastructure per
+  Project Owner sprint directive — full import→pending→review→promotion
+  pipeline (`scripts/import-dictionary.js`, `scripts/promote-lexicon.js`,
+  Check C/D in `repository-intelligence.js`, `docs/PENDING_LEXICON_WORKFLOW.md`).
+  Supersedes the 2026-07-17 version of the import tool, which auto-applied
+  clean entries directly to `master_dictionary.json` — corrected per
+  explicit directive that no imported entry is ever promoted
+  automatically. 70/70 tests, all 4 checks passing, no translation
+  behavior touched.
 - 2026-07-08 (Claude B): Established standing integration rule — chat-sourced linguistic proposals are logged under `docs/PENDING_*` and never implemented directly; must be reviewed and committed by Claude A first. First application: locative/directional word set, see §9.
 - 2026-07-08 (Claude B): Production verification audit performed on recent lexical fixes (under/down); no regressions found; declared production-ready for V1.0 with no further changes needed in that area.
 - 2026-07-06 (Claude B): Removed `PROGRESSIVE_MAP`/`PAST_TO_ROOT` as confirmed-dead code (P2, low-risk per launch-sprint stop conditions).

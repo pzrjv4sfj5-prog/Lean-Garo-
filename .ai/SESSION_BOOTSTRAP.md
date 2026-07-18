@@ -196,6 +196,14 @@ don't silently patch around it — add a linguistic feedback item here
 input) so the gap gets closed at the source, not just papered over in
 code.
 
+**Claude B infra note (2026-07-18, non-invasive addendum — Claude A's
+handoff list above is unedited):** Pending Lexicon pipeline built for
+bulk dictionary absorption — `docs/PENDING_LEXICON_WORKFLOW.md` has the
+full lifecycle. Review happens by editing `src/data/pending_lexicon.json`
+directly (`review_status`: `approved`/`rejected`/`needs-discussion`),
+no new tool needed to review, only `scripts/promote-lexicon.js` to
+commit an approval to production. Currently empty — nothing staged yet.
+
 **For Claude B, ongoing:**
 1. Keep collecting native sentences for the Native Sentence Validation
    Audit (`docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`) — evidence only,
