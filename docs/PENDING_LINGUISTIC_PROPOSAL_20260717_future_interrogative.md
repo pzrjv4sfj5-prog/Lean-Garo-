@@ -43,3 +43,20 @@ mid-sentence position confirmed. General engine fix (removing the
 building general question-formation support) is diagnosed and handed
 to Claude B in `docs/PENDING_REGRESSION_CASES.md` RC-CANDIDATE-020 —
 not yet implemented.
+
+**Correction, 2026-07-18, Claude A:** the "will you eat an apple" entry
+was committed as `Na·a apal cha·genma?`, silently substituting the
+dictionary's Garo-ified `apal` for "apple" instead of the bare English
+loanword Thangseng actually used (`"na'a apple cha'genma?"`). Caught on
+re-checking against the verbatim source rather than my own earlier
+summary of it. Fixed to `Na·a apple cha·genma?`, matching the source
+exactly. This isn't a minor spelling fix — it's the same class of error
+this project's integration rule exists to prevent (never silently
+"improve" native evidence toward something that looks more correct),
+and it directly undermines the original point this sentence was logged
+for: the bare-loanword insertion (`apple`, untranslated) is itself the
+evidence, cited elsewhere as support for RC-CANDIDATE-005 (English
+loanword passthrough). Substituting `apal` erased the exact data point
+being preserved. Worth double-checking any other corrections.json
+entries added from paraphrased/summarized notes rather than re-checked
+against the original relay text.

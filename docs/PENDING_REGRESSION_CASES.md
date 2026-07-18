@@ -570,7 +570,11 @@ fix went in:
 confirmed now hit the `corrections.json` exact-match layer instead
 (confidence 1.0): `"will you eat"` → `Na·a cha·genma?`, `"will you eat
 a banana"` → `Na·a te·rik cha·genma?`, `"will you eat an apple"` →
-`Na·a apal cha·genma?`. This is a narrow, safe patch — it does not fix
+`Na·a apple cha·genma?` (corrected 2026-07-18 — originally committed
+as `apal`, the dictionary's Garo-ified form, instead of matching the
+bare English loanword Thangseng actually used; see
+`PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md` for why
+that distinction matters here specifically). This is a narrow, safe patch — it does not fix
 the general case (any other future-tense question still hits the same
 broken fallback path).
 
