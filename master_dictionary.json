@@ -47843,293 +47843,355 @@
   {
     "english": "Same as Bakaka.",
     "garo": "Bakgaka",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "Balance",
     "garo": "Bakki",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "surplus",
     "garo": "Bakki",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "remainder",
     "garo": "Bakki",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "rest",
+    "garo": "Bakki",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "credit.",
     "garo": "Bakki",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "A meadow",
     "garo": "Bakra",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "a piece of grassland.",
     "garo": "Bakra",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "To take part",
     "garo": "Bakrima",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to be in unison",
     "garo": "Bakrima",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to join hands with.",
     "garo": "Bakrima",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "To make longer",
     "garo": "Bakroata",
+    "category": null,
     "pos": "vi."
   },
   {
     "english": "to lengthen.",
     "garo": "Bakroata",
+    "category": null,
     "pos": "vi."
   },
   {
     "english": "To remove the weeds or grass by cutting or hoeing.",
     "garo": "Bakroka",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "With.",
     "garo": "Baksa",
+    "category": null,
     "pos": "pr."
   },
   {
     "english": "Not only but also",
     "garo": "Baksaba",
+    "category": null,
     "pos": "adv."
   },
   {
     "english": "moreover",
     "garo": "Baksaba",
+    "category": null,
     "pos": "adv."
   },
   {
     "english": "in addition to.",
     "garo": "Baksaba",
+    "category": null,
     "pos": "adv."
   },
   {
     "english": "A box",
     "garo": "Bakso",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "a trunk",
     "garo": "Bakso",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "a case.",
     "garo": "Bakso",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "To drop off as over-ripe fruit.",
     "garo": "Baksrota",
+    "category": null,
     "pos": "v.",
     "notes": "Hyphenation across lines preserved."
   },
   {
     "english": "To seize the first opportunity",
     "garo": "Bakskanga",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to be prompt",
     "garo": "Bakskanga",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to act early.",
     "garo": "Bakskanga",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "In weeding the jhum, the line between the weeded and unweeded portions of land",
     "garo": "Ba·ku",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "the amount of work done.",
     "garo": "Ba·ku",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "To complete the weeding of part of the land in front.",
     "garo": "Ba·ku chota",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "To make progress in weeding the jhum-land.",
     "garo": "Ba·ku nika",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "(Willoughbeia edulis). An immense woody climber ex-uding milky juice",
     "garo": "Bakwe",
+    "category": null,
     "pos": "n.",
     "notes": "Hyphenation 'ex-uding' across lines preserved exactly."
   },
   {
     "english": "fruits are edible.",
     "garo": "Bakwe",
+    "category": null,
     "pos": "n.",
     "notes": "Hyphenation 'ex-uding' across lines preserved exactly."
   },
   {
     "english": "To twist",
     "garo": "Bakwena",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to twine.",
     "garo": "Bakwena",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "A flower",
     "garo": "Bal",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "air",
     "garo": "Bal",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "a bundle",
     "garo": "Bal",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "a load",
     "garo": "Bal",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "a big basket.",
     "garo": "Bal",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "To place a burden on (one) or on an animal.",
     "garo": "Bal gata",
+    "category": null,
     "pos": "vt. & vi."
   },
   {
     "english": "A bundle of thatching grass.",
     "garo": "Bal (am·pang)",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "To bloom",
     "garo": "Bala",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to blow",
     "garo": "Bala",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to carry in the mouth",
     "garo": "Bala",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to blossom",
+    "garo": "Bala",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To blossom",
+    "garo": "Balgaoa",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to pay excessive attention to dress and beautifying oneself in order to attract the opposite sex",
     "garo": "Bala",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to spread (of an odour).",
     "garo": "Bala",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "A high place which is exposed to high wind.",
     "garo": "Balading",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "To seize with claws and teeth (as a tiger or other beasts or birds of prey).",
     "garo": "Balanga",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "A granary",
     "garo": "Balal",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "a barn.",
     "garo": "Balal",
+    "category": null,
     "pos": "n."
   },
   {
     "english": "To float in the air or in water",
     "garo": "Balboa",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to rest on the surface of a liquid or water.",
     "garo": "Balboa",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "The north-westerly wind which comes with storm during April and May",
     "garo": "Balbilsi",
+    "category": null,
     "pos": "n.",
     "notes": "Hyphenation 'vio-lent' preserved."
   },
   {
     "english": "a vio-lent south-west wind raging in May.",
     "garo": "Balbilsi",
+    "category": null,
     "pos": "n.",
     "notes": "Hyphenation 'vio-lent' preserved."
   },
   {
     "english": "To rain heavily with high wind especially du-ring the later part of monsoon.",
     "garo": "Balchigata",
+    "category": null,
     "pos": "v.",
     "notes": "Hyphenation 'du-ring' preserved."
   },
   {
     "english": "to flower",
     "garo": "Balgaoa",
+    "category": null,
     "pos": "v."
   },
   {
     "english": "to bloom.",
     "garo": "Balgaoa",
+    "category": null,
     "pos": "v."
-  },
-  {
-    "english": "to blossom",
-    "garo": "Bala",
-    "pos": "v."
-  },
-  {
-    "english": "rest",
-    "garo": "Bakki",
-    "pos": "n.",
-    "notes": "remainder/surplus sense, distinct from neng·tak·a (to repose) - see PENDING_DICTIONARY_IMPORT_CONFLICTS.md 2026-07-18 resolution"
   }
 ]

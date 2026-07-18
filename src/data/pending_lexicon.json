@@ -1,1 +1,1548 @@
-[]
+[
+  {
+    "id": "PL-0000001",
+    "english": "Same as Bakaka.",
+    "garo": "Bakgaka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000002",
+    "english": "Balance",
+    "garo": "Bakki",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000003",
+    "english": "surplus",
+    "garo": "Bakki",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000004",
+    "english": "remainder",
+    "garo": "Bakki",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000005",
+    "english": "rest",
+    "garo": "Bakki",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Flagged as existing-conflict against neng·tak·a (='to rest', repose). Not a real conflict - English homonymy: this entry's 'rest' sense is remainder/balance/surplus/credit, unrelated to resting. Both correct for different senses of the English word.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "neng·tak·a"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000006",
+    "english": "credit.",
+    "garo": "Bakki",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000007",
+    "english": "A meadow",
+    "garo": "Bakra",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000008",
+    "english": "a piece of grassland.",
+    "garo": "Bakra",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000009",
+    "english": "To take part",
+    "garo": "Bakrima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000010",
+    "english": "to be in unison",
+    "garo": "Bakrima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000011",
+    "english": "to join hands with.",
+    "garo": "Bakrima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000012",
+    "english": "To make longer",
+    "garo": "Bakroata",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000013",
+    "english": "to lengthen.",
+    "garo": "Bakroata",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000014",
+    "english": "To remove the weeds or grass by cutting or hoeing.",
+    "garo": "Bakroka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000015",
+    "english": "With.",
+    "garo": "Baksa",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000016",
+    "english": "Not only but also",
+    "garo": "Baksaba",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000017",
+    "english": "moreover",
+    "garo": "Baksaba",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000018",
+    "english": "in addition to.",
+    "garo": "Baksaba",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000019",
+    "english": "A box",
+    "garo": "Bakso",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000020",
+    "english": "a trunk",
+    "garo": "Bakso",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000021",
+    "english": "a case.",
+    "garo": "Bakso",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000022",
+    "english": "To drop off as over-ripe fruit.",
+    "garo": "Baksrota",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Hyphenation across lines preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000023",
+    "english": "To seize the first opportunity",
+    "garo": "Bakskanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000024",
+    "english": "to be prompt",
+    "garo": "Bakskanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000025",
+    "english": "to act early.",
+    "garo": "Bakskanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000026",
+    "english": "In weeding the jhum, the line between the weeded and unweeded portions of land",
+    "garo": "Ba·ku",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000027",
+    "english": "the amount of work done.",
+    "garo": "Ba·ku",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000028",
+    "english": "To complete the weeding of part of the land in front.",
+    "garo": "Ba·ku chota",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000029",
+    "english": "To make progress in weeding the jhum-land.",
+    "garo": "Ba·ku nika",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000030",
+    "english": "(Willoughbeia edulis). An immense woody climber ex-uding milky juice",
+    "garo": "Bakwe",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'ex-uding' across lines preserved exactly.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000031",
+    "english": "fruits are edible.",
+    "garo": "Bakwe",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'ex-uding' across lines preserved exactly.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000032",
+    "english": "To twist",
+    "garo": "Bakwena",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000033",
+    "english": "to twine.",
+    "garo": "Bakwena",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000034",
+    "english": "A flower",
+    "garo": "Bal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000035",
+    "english": "wind",
+    "garo": "Bal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "needs-discussion",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. 'Bal' as 'wind' conflicts with the already-established, triple-corroborated Balwa/bal·wa/wen·a wen·wen·a. Bal's other senses (flower, bundle, load, big basket) form a disparate cluster that reads like a short root covering several derived/compound senses, not a direct synonym for wind on its own. Held pending native confirmation - do not promote yet.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Balwa",
+        "bal·wa",
+        "wen·a wen·wen·a"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0000036",
+    "english": "air",
+    "garo": "Bal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000037",
+    "english": "a bundle",
+    "garo": "Bal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000038",
+    "english": "a load",
+    "garo": "Bal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000039",
+    "english": "a big basket.",
+    "garo": "Bal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000040",
+    "english": "To place a burden on (one) or on an animal.",
+    "garo": "Bal gata",
+    "category": null,
+    "pos": "vt. & vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000041",
+    "english": "A bundle of thatching grass.",
+    "garo": "Bal (am·pang)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000042",
+    "english": "To bloom",
+    "garo": "Bala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000043",
+    "english": "to blow",
+    "garo": "Bala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000044",
+    "english": "to carry in the mouth",
+    "garo": "Bala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000045",
+    "english": "to blossom",
+    "garo": "Bala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Flagged as within-batch conflict against Balgaoa. Not a real conflict - Bala is a broadly polysemous general verb (bloom/blow/carry in mouth/dress up/spread odour) where 'blossom' is one of many extended senses; Balgaoa is a dedicated flowering verb. Near-synonym pair, both legitimate.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bala",
+        "Balgaoa"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000046",
+    "english": "To blossom",
+    "garo": "Balgaoa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Flagged as within-batch conflict against Balgaoa. Not a real conflict - Bala is a broadly polysemous general verb (bloom/blow/carry in mouth/dress up/spread odour) where 'blossom' is one of many extended senses; Balgaoa is a dedicated flowering verb. Near-synonym pair, both legitimate.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bala",
+        "Balgaoa"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000047",
+    "english": "to pay excessive attention to dress and beautifying oneself in order to attract the opposite sex",
+    "garo": "Bala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000048",
+    "english": "to spread (of an odour).",
+    "garo": "Bala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000049",
+    "english": "A high place which is exposed to high wind.",
+    "garo": "Balading",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000050",
+    "english": "To seize with claws and teeth (as a tiger or other beasts or birds of prey).",
+    "garo": "Balanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000051",
+    "english": "A granary",
+    "garo": "Balal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000052",
+    "english": "a barn.",
+    "garo": "Balal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000053",
+    "english": "To float in the air or in water",
+    "garo": "Balboa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000054",
+    "english": "to rest on the surface of a liquid or water.",
+    "garo": "Balboa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000055",
+    "english": "The north-westerly wind which comes with storm during April and May",
+    "garo": "Balbilsi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'vio-lent' preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000056",
+    "english": "a vio-lent south-west wind raging in May.",
+    "garo": "Balbilsi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'vio-lent' preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000057",
+    "english": "To rain heavily with high wind especially du-ring the later part of monsoon.",
+    "garo": "Balchigata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Hyphenation 'du-ring' preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000058",
+    "english": "to flower",
+    "garo": "Balgaoa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000059",
+    "english": "to bloom.",
+    "garo": "Balgaoa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18",
+      "import_batch": "IMPORT-2026-07-18T06-59-23-747Z",
+      "import_date": "2026-07-18T06:59:23.747Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18. Part of page 18 batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-18T06:59:47.957Z"
+  }
+]
