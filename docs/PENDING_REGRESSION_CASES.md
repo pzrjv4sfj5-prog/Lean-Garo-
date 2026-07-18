@@ -540,3 +540,77 @@ bug — tracked in `docs/PENDING_LINGUISTIC_PROPOSAL_20260716_family_terms.md`.
 - Severity/priority labels are Claude B's engineering assessment only —
   not a substitute for Claude A's linguistic triage or Thangseng's
   validation of expected outputs.
+
+### RC-CANDIDATE-020 — Root cause of RC-018 confirmed: spurious `"will": "·gen"` dictionary entry bypasses `applyTense`
+
+**Status:** Root cause found and confirmed live, 2026-07-17, Claude A.
+Directly resolves the open question in RC-018 and the earlier
+`PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md`.
+
+**Diagnosis:** `master_dictionary.json` (index 6727) and
+`src/compiled_dict.json` both contain a standalone entry `"will": "·gen"`.
+`applyTense()` already correctly suffixes `·gen` onto a verb root when
+it runs (confirmed by reading the function — raka-aware, handles
+irregulars, no bug there). The problem is upstream: for sentences like
+`"will you eat"`/`"will you eat a banana"`, `analyzeGrammar`'s
+structured path fails to parse (likely the `will`-initial word order,
+not subject-first), so the sentence falls through to the dumber
+`sov-assembly` fallback. That fallback does per-word dictionary lookup
+with no tense-merging logic at all — it finds `"will"` as its own
+dictionary word (`·gen`), finds `"eat"` separately as `Cha·a` (already
+in its default present-tense form), and reorders both into SOV word
+order as independent tokens. Live-confirmed before the corrections.json
+fix went in:
+- `"will you eat"` → `·gen Na·a Cha·a` (`·gen` floating at the front,
+  `Cha·a` untouched)
+- `"will you eat a banana"` → `te·rik ·gen Na·a Cha·a` (object also
+  misplaced, sentence-initial instead of mid-sentence)
+
+**What's already fixed:** the three sentences Thangseng directly
+confirmed now hit the `corrections.json` exact-match layer instead
+(confidence 1.0): `"will you eat"` → `Na·a cha·genma?`, `"will you eat
+a banana"` → `Na·a te·rik cha·genma?`, `"will you eat an apple"` →
+`Na·a apal cha·genma?`. This is a narrow, safe patch — it does not fix
+the general case (any other future-tense question still hits the same
+broken fallback path).
+
+**Linguistic determination (Claude A, resolves the two open questions
+from `PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md`):**
+1. **Raka-locality:** the WhatsApp apostrophes in `na'a`/`cha'genma`/
+   `te'rik` are casual typing for raka (·), not a distinct orthographic
+   choice — cross-checked against already-established canonical
+   spellings elsewhere in the repo (`pronoun_map.json`: `"you": "Na·a"`;
+   `corrections.json`: `"banana": "te·rik"`). Canonical: `Na·a`,
+   `cha·genma`, `te·rik`.
+2. **Object-insertion position:** Thangseng's own gloss ("you can add
+   the food item in the middle") confirms the food item sits between
+   subject and the fused verb-complex — `Na·a [object] cha·genma?` —
+   not sentence-initial, which is what the broken `sov-assembly`
+   fallback currently produces.
+3. **Morpheme structure:** `cha` (root) + `·gen` (future) + `ma`
+   (interrogative) fuse into one verb-final word, `cha·genma` — this is
+   the first confirmed data point for a general interrogative suffix
+   `ma` in this codebase (previously entirely unmodeled; searched
+   `GRAMMAR_RULE_CATALOGUE.md`, nothing exists yet).
+
+**Handoff to Claude B — general engineering fix, not yet done:**
+1. Remove or heavily guard the standalone `"will": "·gen"` dictionary
+   entry — it should never be looked up as an independent word; `will`
+   is a tense marker, not vocabulary.
+2. Route `will`-initial (and other non-subject-first) future-tense
+   sentences through the same tense-merging path `analyzeGrammar`
+   already uses for subject-first sentences, instead of falling back to
+   token-reordering `sov-assembly`.
+3. Add general interrogative-suffix (`ma`) support — currently zero
+   question-formation logic exists anywhere in the engine. Only one
+   confirmed data point so far (future + `ma`); do not generalize to
+   other tenses without further native confirmation.
+4. Object-insertion position (subject, object, verb-complex) should
+   generalize to the existing SOV assembler once `will`-initial parsing
+   is fixed — same word order the declarative engine already uses
+   elsewhere, just currently short-circuited by the fallback path.
+
+No native relay needed for items 1–2 (pure engineering/data-cleanup,
+already fully diagnosed). Items 3–4 should be spot-checked against a
+second native example before generalizing broadly, since this is only
+one data point.

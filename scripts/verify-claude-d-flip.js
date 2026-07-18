@@ -97,18 +97,19 @@ function main() {
       }
     }
 
-    // carry-field preservation (spot-checked against the FIRST flipped row —
-    // all rows sharing a garo_form_raw should carry identical entry-level metadata)
-    const rep = flipRows[0];
-    for (const f of CARRY_FIELDS) {
-      const srcVal = f === 'notes' ? srcEntry.notes : srcEntry[f];
-      const flipVal = f === 'notes' ? rep.source_notes : rep[f];
-      if (JSON.stringify(srcVal) !== JSON.stringify(flipVal)) {
-        violations.push(`field "${f}" not preserved for "${garoKey}": source=${JSON.stringify(srcVal)}, flip=${JSON.stringify(flipVal)}`);
-      }
-    }
-    if (srcEntry.notes !== undefined && rep.source_notes === undefined) {
-      violations.push(`"${garoKey}": source "notes" field has no counterpart at all in flipped row (expected "source_notes")`);
+    // carry-field preservation. NOTE: headwords can legitimately repeat
+    // in this dictionary (e.g. two separate "Bal" entries on page 18 -
+    // one a noun cluster, one a numeral-prefix note). So we can't just
+    // check flipRows[0] against this source entry - a matching flipped
+    // row (by identical carry-field signature) must exist SOMEWHERE
+    // among the rows sharing this garo_form_raw, not necessarily first.
+    const srcSignature = JSON.stringify(CARRY_FIELDS.map(f => srcEntry[f] ?? null));
+    const matchFound = flipRows.some(row => {
+      const flipSignature = JSON.stringify(CARRY_FIELDS.map(f => row[f] ?? null));
+      return flipSignature === srcSignature;
+    });
+    if (!matchFound) {
+      violations.push(`no flipped row for "${garoKey}" matches source entry's carry-field signature (entry_type/raka_note/ocr_confidence/cross_references/flagged_for_review) - dropped or altered. Source: ${srcSignature}`);
     }
 
     // sense fan-out check: every sense string in source must appear as
@@ -124,14 +125,25 @@ function main() {
       }
     }
 
-    // examples must survive as structured data, not a prose backlink
+    // examples must survive as structured data, not a prose backlink.
+    // Checked against any row matching this entry's carry signature
+    // (repeated headwords again make "the" single representative row
+    // ambiguous - check across the matching set instead).
     const srcExamples = JSON.stringify(srcEntry.examples || []);
-    const flipExamples = JSON.stringify(rep.examples || []);
-    if (srcEntry.entry_type === 'affix' && srcExamples !== flipExamples) {
-      violations.push(`affix "${garoKey}" examples not preserved verbatim as a nested array: source=${srcExamples}, flip=${flipExamples}`);
+    const matchingRows = flipRows.filter(row => {
+      const flipSignature = JSON.stringify(CARRY_FIELDS.map(f => row[f] ?? null));
+      return flipSignature === srcSignature;
+    });
+    if (srcEntry.entry_type === 'affix') {
+      const anyExamplesMatch = matchingRows.some(row => JSON.stringify(row.examples || []) === srcExamples);
+      if (!anyExamplesMatch) {
+        violations.push(`affix "${garoKey}" examples not preserved verbatim as a nested array in any matching flipped row (source: ${srcExamples})`);
+      }
     }
-    if (rep.source_notes && /example illustrating/i.test(rep.source_notes)) {
-      violations.push(`"${garoKey}": affix-example relationship encoded as a prose note ("${rep.source_notes}") instead of a nested examples[] array — forbidden per spec`);
+    for (const row of matchingRows) {
+      if (row.source_notes && /example illustrating/i.test(row.source_notes)) {
+        violations.push(`"${garoKey}": affix-example relationship encoded as a prose note ("${row.source_notes}") instead of a nested examples[] array — forbidden per spec`);
+      }
     }
   }
 

@@ -47839,5 +47839,297 @@
     "garo": "te·spu",
     "category": "food",
     "notes": "variant/VERIFIED/HIGH — Grammar_Notes_(1).odt, 2026-06-24: the real Garo word for apple, rarely used (most speakers use the English loanword \"Apple\", kept as live default per user). Recorded as alternate."
+  },
+  {
+    "english": "Same as Bakaka.",
+    "garo": "Bakgaka",
+    "pos": "v."
+  },
+  {
+    "english": "Balance",
+    "garo": "Bakki",
+    "pos": "n."
+  },
+  {
+    "english": "surplus",
+    "garo": "Bakki",
+    "pos": "n."
+  },
+  {
+    "english": "remainder",
+    "garo": "Bakki",
+    "pos": "n."
+  },
+  {
+    "english": "credit.",
+    "garo": "Bakki",
+    "pos": "n."
+  },
+  {
+    "english": "A meadow",
+    "garo": "Bakra",
+    "pos": "n."
+  },
+  {
+    "english": "a piece of grassland.",
+    "garo": "Bakra",
+    "pos": "n."
+  },
+  {
+    "english": "To take part",
+    "garo": "Bakrima",
+    "pos": "v."
+  },
+  {
+    "english": "to be in unison",
+    "garo": "Bakrima",
+    "pos": "v."
+  },
+  {
+    "english": "to join hands with.",
+    "garo": "Bakrima",
+    "pos": "v."
+  },
+  {
+    "english": "To make longer",
+    "garo": "Bakroata",
+    "pos": "vi."
+  },
+  {
+    "english": "to lengthen.",
+    "garo": "Bakroata",
+    "pos": "vi."
+  },
+  {
+    "english": "To remove the weeds or grass by cutting or hoeing.",
+    "garo": "Bakroka",
+    "pos": "v."
+  },
+  {
+    "english": "With.",
+    "garo": "Baksa",
+    "pos": "pr."
+  },
+  {
+    "english": "Not only but also",
+    "garo": "Baksaba",
+    "pos": "adv."
+  },
+  {
+    "english": "moreover",
+    "garo": "Baksaba",
+    "pos": "adv."
+  },
+  {
+    "english": "in addition to.",
+    "garo": "Baksaba",
+    "pos": "adv."
+  },
+  {
+    "english": "A box",
+    "garo": "Bakso",
+    "pos": "n."
+  },
+  {
+    "english": "a trunk",
+    "garo": "Bakso",
+    "pos": "n."
+  },
+  {
+    "english": "a case.",
+    "garo": "Bakso",
+    "pos": "n."
+  },
+  {
+    "english": "To drop off as over-ripe fruit.",
+    "garo": "Baksrota",
+    "pos": "v.",
+    "notes": "Hyphenation across lines preserved."
+  },
+  {
+    "english": "To seize the first opportunity",
+    "garo": "Bakskanga",
+    "pos": "v."
+  },
+  {
+    "english": "to be prompt",
+    "garo": "Bakskanga",
+    "pos": "v."
+  },
+  {
+    "english": "to act early.",
+    "garo": "Bakskanga",
+    "pos": "v."
+  },
+  {
+    "english": "In weeding the jhum, the line between the weeded and unweeded portions of land",
+    "garo": "Ba·ku",
+    "pos": "n."
+  },
+  {
+    "english": "the amount of work done.",
+    "garo": "Ba·ku",
+    "pos": "n."
+  },
+  {
+    "english": "To complete the weeding of part of the land in front.",
+    "garo": "Ba·ku chota",
+    "pos": "v."
+  },
+  {
+    "english": "To make progress in weeding the jhum-land.",
+    "garo": "Ba·ku nika",
+    "pos": "v."
+  },
+  {
+    "english": "(Willoughbeia edulis). An immense woody climber ex-uding milky juice",
+    "garo": "Bakwe",
+    "pos": "n.",
+    "notes": "Hyphenation 'ex-uding' across lines preserved exactly."
+  },
+  {
+    "english": "fruits are edible.",
+    "garo": "Bakwe",
+    "pos": "n.",
+    "notes": "Hyphenation 'ex-uding' across lines preserved exactly."
+  },
+  {
+    "english": "To twist",
+    "garo": "Bakwena",
+    "pos": "v."
+  },
+  {
+    "english": "to twine.",
+    "garo": "Bakwena",
+    "pos": "v."
+  },
+  {
+    "english": "A flower",
+    "garo": "Bal",
+    "pos": "n."
+  },
+  {
+    "english": "air",
+    "garo": "Bal",
+    "pos": "n."
+  },
+  {
+    "english": "a bundle",
+    "garo": "Bal",
+    "pos": "n."
+  },
+  {
+    "english": "a load",
+    "garo": "Bal",
+    "pos": "n."
+  },
+  {
+    "english": "a big basket.",
+    "garo": "Bal",
+    "pos": "n."
+  },
+  {
+    "english": "To place a burden on (one) or on an animal.",
+    "garo": "Bal gata",
+    "pos": "vt. & vi."
+  },
+  {
+    "english": "A bundle of thatching grass.",
+    "garo": "Bal (am·pang)",
+    "pos": "n."
+  },
+  {
+    "english": "To bloom",
+    "garo": "Bala",
+    "pos": "v."
+  },
+  {
+    "english": "to blow",
+    "garo": "Bala",
+    "pos": "v."
+  },
+  {
+    "english": "to carry in the mouth",
+    "garo": "Bala",
+    "pos": "v."
+  },
+  {
+    "english": "to pay excessive attention to dress and beautifying oneself in order to attract the opposite sex",
+    "garo": "Bala",
+    "pos": "v."
+  },
+  {
+    "english": "to spread (of an odour).",
+    "garo": "Bala",
+    "pos": "v."
+  },
+  {
+    "english": "A high place which is exposed to high wind.",
+    "garo": "Balading",
+    "pos": "n."
+  },
+  {
+    "english": "To seize with claws and teeth (as a tiger or other beasts or birds of prey).",
+    "garo": "Balanga",
+    "pos": "v."
+  },
+  {
+    "english": "A granary",
+    "garo": "Balal",
+    "pos": "n."
+  },
+  {
+    "english": "a barn.",
+    "garo": "Balal",
+    "pos": "n."
+  },
+  {
+    "english": "To float in the air or in water",
+    "garo": "Balboa",
+    "pos": "v."
+  },
+  {
+    "english": "to rest on the surface of a liquid or water.",
+    "garo": "Balboa",
+    "pos": "v."
+  },
+  {
+    "english": "The north-westerly wind which comes with storm during April and May",
+    "garo": "Balbilsi",
+    "pos": "n.",
+    "notes": "Hyphenation 'vio-lent' preserved."
+  },
+  {
+    "english": "a vio-lent south-west wind raging in May.",
+    "garo": "Balbilsi",
+    "pos": "n.",
+    "notes": "Hyphenation 'vio-lent' preserved."
+  },
+  {
+    "english": "To rain heavily with high wind especially du-ring the later part of monsoon.",
+    "garo": "Balchigata",
+    "pos": "v.",
+    "notes": "Hyphenation 'du-ring' preserved."
+  },
+  {
+    "english": "to flower",
+    "garo": "Balgaoa",
+    "pos": "v."
+  },
+  {
+    "english": "to bloom.",
+    "garo": "Balgaoa",
+    "pos": "v."
+  },
+  {
+    "english": "to blossom",
+    "garo": "Bala",
+    "pos": "v."
+  },
+  {
+    "english": "rest",
+    "garo": "Bakki",
+    "pos": "n.",
+    "notes": "remainder/surplus sense, distinct from neng·tak·a (to repose) - see PENDING_DICTIONARY_IMPORT_CONFLICTS.md 2026-07-18 resolution"
   }
 ]

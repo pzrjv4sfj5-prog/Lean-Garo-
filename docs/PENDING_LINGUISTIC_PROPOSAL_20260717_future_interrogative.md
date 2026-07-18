@@ -33,7 +33,13 @@ output. This is supporting evidence for *how* to fix RC-018 (attach
   question formation in this codebase at all
 
 ## Status
-Not implemented. Not committed to any canonical table. Holding per
-integration rule until Claude A reviews and confirms into
-`corrections.json`/grammar docs. Flagging as strong supporting evidence
-for the RC-018 fix design once implementation resumes.
+**Narrow case resolved, 2026-07-17, Claude A.** The three exact
+sentences above are now committed to `corrections.json` (confidence
+1.0): raka-locality decided (apostrophe = casual typing for raka,
+canonical `Na·a cha·genma?` etc. — cross-checked against
+`pronoun_map.json` and existing `corrections.json` entries), object
+mid-sentence position confirmed. General engine fix (removing the
+`"will": "·gen"` dictionary entry causing RC-018's floating token, and
+building general question-formation support) is diagnosed and handed
+to Claude B in `docs/PENDING_REGRESSION_CASES.md` RC-CANDIDATE-020 —
+not yet implemented.
