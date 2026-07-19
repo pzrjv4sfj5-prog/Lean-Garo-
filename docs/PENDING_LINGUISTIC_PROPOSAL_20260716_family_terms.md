@@ -33,7 +33,14 @@ register), `a·ai` (colloquial, raka-confirmed) as new entries once
 into the wrong sense during compilation.
 
 ## 2. Predicate-nominal copula conflict — `daka` vs. `ong·a` (relates to RULE-005, RULE-031)
-Two independently-sourced live answers to the same sentence type
+**RESOLVED 2026-07-18.** Thangseng, asked directly (NV-017): *"It is
+pagipa. daka is to do in terms of working. Ong'a is to be. So it is
+ong'a. Angni pagipa skigipa ong'a."* Corrected in `corrections.json`
+from `Ang·ni pa·a skigipa daka` to `Angni pagipa skigipa ong·a` — see
+`GRAMMAR_RULE_CATALOGUE.md` RULE-005 (predicate-nominal `daka`
+disconfirmed) and RULE-031 for the full downstream update.
+
+Original open-question framing kept below for the record:
 ("my father is a teacher"):
 - `corrections.json:645` (existing, provenance-uncertain per RULE-005):
   `Ang·ni pa·a skigipa daka`

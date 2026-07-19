@@ -9,43 +9,73 @@ the highest-value, most self-contained asks. Everything else in this
 document either depends on these, is lower priority, or (NV-006) may not
 need Thangseng at all.
 
-1. **(NV-001, Rule 30)** Does "go" change form depending on whether a
-   destination is mentioned? Test pairs: "I am not going" vs. "I am not
-   going to the market"; "he did not go" vs. "he did not go to the
-   market." Also worth asking directly: "is `-ang` a general 'away from
-   me' marker and `-ba` a general 'toward me' marker, usable beyond just
-   go/come?" — an academic source suggests this general system exists.
-2. **(NV-002, Rule 31)** After "happy"/"good"/"tired" as a predicate, is
-   `ong·a` required, optional, or specific to certain persons (I/you/
-   he-she)? How does it relate to `daka`?
-3. **(NV-010, narrowed 2026-07-10)** When you say "want to
-   speak"/"want to study," is there a `·` in the verb, even though there
-   isn't one in "I spoke"/"I was studying"? Also: is there a different
-   word sounding like `agan·`/`tus·` (distinct from `agan`/`tusi`) —
-   `ring` turned out to be exactly this case (sing vs. drink). Two
-   data points, not four — `ring` resolved independently. (`tusi`'s
-   `tus·aha` form is tracked in the full NV-010 entry too, but isn't a
-   `-na`-construction case like the other two, so it's not bundled in
-   this specific ask — a separate, smaller question if it comes up.)
+1. **(NV-001, Rule 30) — ANSWERED 2026-07-18.** Does "go" change form
+   depending on whether a destination is mentioned? Thangseng: *"No,
+   the form depends primarily on the mood and the tense. Apart from
+   those the negative suffix also affects the form."* On `-ang`/`-ba`
+   as general directional markers: *"'ang' can be looked at as an
+   indicator for movement 'away from' but only when used with the
+   with word re'a (to walk or to go). Ang is used with other words as
+   well and there it doesn't carry the same sense."* So `-ang` is real
+   but narrowly scoped to `re·a`, not a general prefix — see
+   `GRAMMAR_RULE_CATALOGUE.md` RULE-030 for the full update and the
+   still-unreconciled destination-presence surface pattern.
+2. **(NV-002, Rule 31) — ANSWERED 2026-07-18.** After "happy"/"good"/
+   "tired" as a predicate, is `ong·a` required, optional, or specific
+   to certain persons? Thangseng: *"Yes. Ong'a in such a use functions
+   as the 'to be' verb. I am happy. = Anga kusi ong'a. If the ong'a is
+   omitted, the be verb is missing. Example: anga kusi = I happy."*
+   Confirmed required, not optional. Also volunteered: `ong·a` has a
+   second, unrelated sense, "correct/right" (`Ong'ama ong'ja?` = "is
+   it correct or not?"), and a general account of `daka`'s "to do" +
+   phrase-forming behavior (`Seng·a daka`="to be rude", `Jara
+   daka`="to be foolish") — see `GRAMMAR_RULE_CATALOGUE.md` RULE-031
+   for the full update. Doesn't fully close NV-017 (noun-predicate
+   case), but is the first real structural account of `daka`.
+3. **(NV-010, narrowed 2026-07-10) — PARTIALLY ANSWERED 2026-07-18.**
+   When you say "want to speak"/"want to study," is there a `·` in the
+   verb, even though there isn't one in "I spoke"/"I was studying"?
+   Thangseng, unprompted while answering a different question: *"There
+   is no raka in speak and study. Speak = agana; to study = poraia."*
+   Resolves the raka-locality question for these two specific verbs —
+   no raka in either. The `agan·`/`tus·` distinct-word question is
+   still open (`ring` resolved independently; `tusi`'s `tus·aha` form
+   tracked in the full NV-010 entry below, separate smaller question).
 
-4. **(NV-013, updated 2026-07-16)** `Chroka` ("dance") itself is
-   settled — only the purposive form is open: "how do you say 'I want
-   to dance'? Is it `Chroka·na`?" — resolves a live `purpose_map.json`
-   bug either way.
-5. **(NV-016, added 2026-07-13)** "Is `nanga`('need') related to
-   `nangja`('need not')?" / "Is `ska`('want') a casual form of
-   `sikenga`?" — two cheap yes/no-shaped questions, high leverage.
-6. **(NV-017, added 2026-07-16)** For "my father is a teacher": is it
-   `pagipa/pa·a skigipa daka` or `...ong·a`? Both acceptable, or does
-   it depend on register (formal `pagipa` vs. address `apa`)? Touches
-   both RULE-005 and RULE-031 at once — see
-   `PENDING_LINGUISTIC_PROPOSAL_20260716_family_terms.md`.
-7. **(NV-018, added 2026-07-16)** Is `ama` ("mother," address form,
-   relayed 2026-07-16) the same word in any way as a modal/possession
-   `ama` candidate ("can eat," flagged in the 2026-07-13 modals
-   proposal), or are these unrelated homophones? Also: are `apa`/`ama`
-   address-only, or usable as the subject of a full descriptive
-   sentence the way `pagipa`/`ma·gipa` are?
+4. **(NV-013, updated 2026-07-16) — ANSWERED 2026-07-18.** `Chroka`
+   ("dance") itself was settled; only the purposive form was open.
+   Thangseng: *"I want to dance. = Anga chrokna ska."* Confirmed:
+   `chrokna` (no raka), not `Chroka·na`. Committed to `corrections.json`.
+5. **(NV-016, added 2026-07-13) — PARTIALLY ANSWERED 2026-07-18.**
+   "Is `nanga`('need') related to `nangja`('need not')?" Thangseng:
+   *"Yes, nanga is related to nangja. We can say that nangja is a form
+   of nanga with the negative suffix."* Confirmed. The `ska`/`sikenga`
+   half of this question turned out to be much bigger than expected —
+   split out to its own high-priority item, NV-021 below, since it now
+   touches 13 live production sentences.
+6. **(NV-017, added 2026-07-16) — ANSWERED and CLOSED, 2026-07-18.**
+   For "my father is a teacher": is it `pagipa/pa·a skigipa daka` or
+   `...ong·a`? Thangseng, definitively: *"It is pagipa. daka is to do
+   in terms of working. Ong'a is to be. So it is ong'a. Angni pagipa
+   skigipa ong'a."* Corrected the live `corrections.json` entry (was
+   `Ang·ni pa·a skigipa daka`, provenance-uncertain per the old
+   RULE-005 note — now `Angni pagipa skigipa ong·a`, three corrections
+   at once: word choice, copula, and raka). Confirms `ong·a` is used
+   for noun predicates too, not just adjective predicates — see
+   `GRAMMAR_RULE_CATALOGUE.md` RULE-005 and RULE-031 for the
+   downstream update this requires.
+7. **(NV-018, added 2026-07-16) — SUBSTANTIALLY ANSWERED 2026-07-18.**
+   Is `ama` ("mother," address form, relayed 2026-07-16) the same word
+   in any way as a modal/possession `ama` candidate ("can eat,"
+   flagged in the 2026-07-13 modals proposal), or are these unrelated
+   homophones? Thangseng: *"Yes, ama has the same spelling in both the
+   meanings. No difference."* Also, unprompted correction: *"ama is
+   not 'can eat'. It only means can"* — the modal gloss is the bare
+   ability modal "can," not "can eat" (the "eat" came from the specific
+   example sentence `cha·na ama`, not from `ama` itself). **Still
+   open:** whether `apa`/`ama` are address-only or usable as the
+   subject of a full descriptive sentence — Thangseng said he'd reply
+   later, still in a meeting.
 8. **(NV-019, added 2026-07-18) — ANSWERED 2026-07-18.** "Is `Bal`
    ever used alone to mean 'wind,' or only in the established `Balwa`
    form?" Thangseng: *"Wind is 'balwa'. The bal has a totally different
@@ -57,6 +87,21 @@ need Thangseng at all.
    (bundle/load/burden) are now confirmed, the other three are
    unconfirmed and already live in `master_dictionary.json` — see
    `PENDING_LINGUISTIC_PROPOSAL_20260718_bal_homonymy.md`.
+10. **(NV-021, added 2026-07-18) — SUBSTANTIALLY RESOLVED 2026-07-18.**
+    Thangseng, now declarative rather than uncertain: *"Sikenga is not
+    derived from ska. It is derived from sika meaning to push, to
+    insert. Sikenga is continuous of sika."* And: *"Ska is want in
+    terms of desire."* Corrected 10 production `corrections.json`
+    entries plus `master_dictionary.json` and `irregular_verbs.json`
+    (`want`/`wants`, both tables) from `sikenga` to `ska` — see
+    `PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md` for the
+    full list. **Still open:** the object-only cases (`"i want
+    water"`/`"i want food"`/`"i want to see you"` — no verb+`na` to
+    attach `ska` to, pattern unconfirmed for bare nouns); whether
+    `"need"` should map to `ska` or `nanga` (Thangseng draws a clear
+    conceptual line between desire and necessity, but "need" is
+    currently still on the old, uncorrected `sikenga`); and the
+    `bag-o` raka-locality question.
 verb, ability-modal) are real but lower-priority — bundle them into a
 second relay only after this first batch lands, to avoid overloading a
 single native-validation session. NV-006 and NV-009 do not need to be
@@ -81,6 +126,8 @@ consistent with how RULE-034/035 were handled.
 ---
 
 ## NV-001 — `re·` vs `re·ang` for "go" (Rule 30)
+_**Answered 2026-07-18** — see the minimal question set above and `GRAMMAR_RULE_CATALOGUE.md` RULE-030 for the current answer. Detail below is the pre-answer evidence review, kept for the record._
+
 
 **Topic:** Verb root selection for "go" — bare `re·` vs extended `re·ang`.
 
@@ -157,6 +204,8 @@ extension patterns), future Verb Family entry for "go".
 ---
 
 ## NV-002 — Copula/predication selection rule (Rule 31)
+_**Answered 2026-07-18** — see the minimal question set above and `GRAMMAR_RULE_CATALOGUE.md` RULE-031 for the current answer. Detail below is the pre-answer evidence review, kept for the record._
+
 
 **Topic:** Which of three attested predicative strategies applies when.
 
@@ -552,6 +601,27 @@ continuous forms already confirmed elsewhere, e.g. `poraienga`
 different main verbs ("I can eat," "I can go," "I can work") to test
 whether `man·` + continuous-aspect is productive.
 
+**Update, 2026-07-18 (Claude A):** a separate relay (2026-07-13 modals
+proposal) gave `ama` as a second candidate for "can" (`cha·na ama` =
+"can eat"), alongside this entry's `man·ienga`. That proposal
+originally flagged `ama` as risky specifically because
+`GLOBAL_RAKA_CONVERSION_HANDOFF.md` records `mother = ama` as
+confirmed wrong (corrected to `aai`) — a documented error history
+recurring in an unrelated context. That caution is now substantially
+resolved: Thangseng directly confirmed (2026-07-18, answering NV-018)
+that `ama` genuinely means both "mother" (address form) and "can"
+(bare ability modal, not "can eat" specifically) — "same spelling in
+both meanings, no difference." Combined with the 2026-07-16 relay
+(`apa`/`ama` as a legitimate address register, distinct from
+colloquial `baba`/`a·ai`), this suggests the June 17 "ama is wrong for
+mother" note was most likely a register mixup, not a real error — see
+the correction added directly to
+`GLOBAL_RAKA_CONVERSION_HANDOFF.md`. Net effect: `ama` is now a
+better-evidenced "can" candidate than it was, but this still doesn't
+resolve the `ama`-vs-`man·ienga` relationship (free variants? register
+difference? different persons/tenses?) — that's a distinct open
+question, not yet asked directly.
+
 **Why the Answer Matters:** Modality (ability, necessity — see NV-005)
 is a systematically underrepresented category in the current grammar
 catalogue relative to tense/aspect/negation. Two of the four candidate
@@ -652,6 +722,8 @@ weigh in on once this priority comes up.
 ---
 
 ## NV-010 — Raka-Inconsistency Cluster in `-na` Infinitive Forms
+_**Partially answered 2026-07-18** (agana/poraia specifically — no raka) — see the minimal question set above. Detail below is the pre-answer evidence review, kept for the record._
+
 
 **Update (2026-07-10):** `ring` is **resolved and removed from this
 cluster** — primary-source chat transcripts confirm `ring·a` = "to sing"
@@ -846,6 +918,8 @@ strict selection rule exists.
 ---
 
 ## NV-013 — Purposive form of `ring·a` ("sing") and `Chroka` ("dance")
+_**Answered 2026-07-18** — see the minimal question set above. Detail below is the pre-answer evidence review, kept for the record._
+
 
 **Topic:** Confirm `ring·na`/`Chroka·na`(or equivalent) as the "want to
 sing"/"want to dance" forms, replacing `purpose_map.json`'s unconfirmed
@@ -1053,6 +1127,8 @@ regress to `senga`).
 ---
 
 ## NV-016 — `nanga`("need") vs. `nangja`("need not"); `ska` vs. `sikeng` ("want")
+_**`nanga`/`nangja` answered 2026-07-18** (confirmed related). **`ska`/`sikeng` escalated to NV-021** — see the minimal question set above and `PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md`. Detail below is the pre-answer evidence review, kept for the record._
+
 
 **Topic:** Two bundled, cheap questions from a single relayed proposal
 (`docs/PENDING_LINGUISTIC_PROPOSAL_20260713_modals_possession.md`).

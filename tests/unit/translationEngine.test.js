@@ -109,7 +109,7 @@ const REGRESSION_CASES = [
   // RC-006: purpose_map.json 'search' fixed from the retired
   // am·e·nik·na contamination to Sandi·na (regular -na on the confirmed
   // Sandia/RULE-032 stem).
-  { in: 'i want to search', expectGaro: 'Anga Sandi·na sikenga', expectMethod: ['grammar-assembly'] },
+  { in: 'i want to search', expectGaro: 'Anga Sandi·na ska', expectMethod: ['grammar-assembly'] },
 ];
 
 for (const c of REGRESSION_CASES) {
@@ -131,7 +131,7 @@ test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
   assert.equal(irregularVerbs['went'], 're·anga');
   assert.equal(irregularVerbs['ate'], 'cha·aha');
   assert.equal(irregularVerbs['eaten'], 'cha·manaha');
-  assert.equal(irregularVerbs['want'], 'sikenga');
+  assert.equal(irregularVerbs['want'], 'ska', 'corrected 2026-07-18 from sikenga - see docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md');
   assert.equal(irregularVerbs['sitting'], 'asong·enga');
   // RC-CANDIDATE-008 (partial, d0e6c06): the 4 specific values actually
   // fixed (truncation typos / missing raka marks) were never individually

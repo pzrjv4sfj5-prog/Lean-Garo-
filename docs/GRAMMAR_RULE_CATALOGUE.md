@@ -70,14 +70,15 @@ Structured per Sprint Work Package schema. Rule IDs map to
 
 ---
 ### RULE-005 — Copula `daka`
-**Description:** `daka` functions as a copula in at least two confirmed contexts: (a) bare existential "to be" with no complement (`Anga daka`="I am", strongly attested — all 4 persons independently live in `corrections.json`); (b) predicate nominal ("X is a Y": `Ang·ni pa·a skigipa daka`="my father is a teacher") — **provenance caution added 2026-07-10**: `GARO_GRAMMAR_REFERENCE.md` (superseded doc, but internally dated) lists this exact sentence as "unconfirmed... SOV pattern-logic" as of 2026-06-29, so while it's live in `corrections.json`, its original confirmation source is genuinely uncertain, not necessarily native-direct. Treat (b) as Medium, not High, until re-confirmed. A third possible use — predicate adjective — has one ambiguous data point (`rinok rinok daka`="is gentle," from `love is not angry but gentle`) that could be adjectival or could be a manner/state-noun construction closer to (b); not confidently classified either way.
-**Examples:** `Anga daka`/`Na·a daka`/`Ua daka`/`An·ching daka` (bare, all persons, verified live in `corrections.json`); `Ang·ni pa·a skigipa daka` (predicate nominal); `rinok rinok daka` (ambiguous).
-**Counterexamples:** `Anga kusi ong·a`="I am happy" and `Nama ong·a`="it is good" — clear predicate-adjective constructions that do **not** use `daka` — confirms `daka` is not simply interchangeable with the `ong·a` strategy, at minimum for these two adjectives.
-**Dependencies:** RULE-031 (Copula Inconsistency) — this finding narrows but does not resolve RULE-031: the open question is specifically predicate-adjective selection (`ong·a` vs. bare-adjective), not whether `daka` is a real, broadly-used copula (it clearly is, for at least contexts (a) and (b) above).
-**Native Notes:** Source Rule 5, `GRAMMAR_SPEC.md`. `GARO_GRAMMAR_REFERENCE.md` (2026-07-10 review) claims `daka` "works for ALL persons" as a general copula, confirmed correct for contexts (a)/(b) against live `corrections.json` data — but the same document also contains a confirmed error elsewhere (`ring·aha` mislabeled "drank," actually the `ring·`="sing" root — the exact lexical split NV-010 already resolved), so its claims were verified individually here, not trusted wholesale. General lesson: legacy doc trust is per-claim, not per-document.
-**Validation Status:** Verified (bare copula, all 4 persons); Needs Additional Evidence (predicate nominal — live but provenance-uncertain); Needs Native Validation (predicate-adjective use — the `rinok rinok daka` ambiguous case).
-**Confidence:** High (bare copula); Medium (predicate nominal, per provenance caution above); Low (predicate adjective).
-**Launch Priority:** P0 — not wired into `translationEngine.js` grammar-assembly at all (confirmed via full engine read, 2026-07-09) despite being clearly live and correct in `corrections.json`'s exact-match layer. The engine gap is real even though the linguistic rule is now better-evidenced than before.
+**Description:** `daka` functions as a copula in at least one confirmed context: bare existential "to be" with no complement (`Anga daka`="I am", strongly attested — all 4 persons independently live in `corrections.json`). A second proposed context, predicate nominal ("X is a Y"), is now **disconfirmed** — see the 2026-07-18 update below. `daka` does have a separate, real, and newly-documented role: forming idiomatic "to be [quality]" phrases when preceded by a quality/adjective-like word (`Seng·a daka`="to be rude", `Jara daka`="to be foolish") — this is a distinct construction from (a)/(b), see RULE-031.
+**Update, 2026-07-18 (Claude A) — context (b) disconfirmed by direct native answer.** This rule's own predicate-nominal example — `Ang·ni pa·a skigipa daka`="my father is a teacher" — was exactly the sentence flagged as provenance-uncertain on 2026-07-10 ("its original confirmation source is genuinely uncertain, not necessarily native-direct"). That caution turned out to be justified: asked directly (NV-017), Thangseng gave *"It is pagipa. daka is to do in terms of working. Ong'a is to be. So it is ong'a. Angni pagipa skigipa ong'a."* — the `daka` version was wrong, corrected in `corrections.json` to `Angni pagipa skigipa ong·a`. `daka`'s gloss as "to do, in terms of working" is consistent with the phrase-forming role above, not a general predicate-nominal copula. Context (b) below is retained struck-through for the historical record, not deleted, per this project's citation discipline.
+**Examples:** `Anga daka`/`Na·a daka`/`Ua daka`/`An·ching daka` (bare, all persons, verified live in `corrections.json`). ~~`Ang·ni pa·a skigipa daka` (predicate nominal) — disconfirmed 2026-07-18, see update above.~~ `rinok rinok daka` (ambiguous, unresolved — see original note below).
+**Counterexamples:** `Anga kusi ong·a`="I am happy", `Nama ong·a`="it is good", and now `Angni pagipa skigipa ong·a`="my father is a teacher" — `ong·a` confirmed for both predicate-adjective and predicate-nominal constructions. `daka` is not a general predicate copula competing with `ong·a`; its confirmed roles are narrower (bare existential, and the quality+daka idiom).
+**Dependencies:** RULE-031 (Copula Inconsistency) — this finding **resolves** rather than merely narrows the predicate-nominal question: `ong·a` is confirmed for noun predicates, `daka` is not a competing candidate there.
+**Native Notes:** Source Rule 5, `GRAMMAR_SPEC.md`. `GARO_GRAMMAR_REFERENCE.md` (2026-07-10 review) claims `daka` "works for ALL persons" as a general copula — confirmed correct for context (a) only; context (b)'s claim from the same document is now known wrong, consistent with that document's other confirmed error elsewhere (`ring·aha` mislabeled "drank"). General lesson holds: legacy doc trust is per-claim, not per-document — this time the caution was warranted and the claim didn't survive contact with a direct native answer.
+**Validation Status:** Verified (bare copula, all 4 persons); Disconfirmed (predicate nominal — see update); Needs Native Validation (predicate-adjective use — the `rinok rinok daka` ambiguous case, unaffected by this update).
+**Confidence:** High (bare copula); N/A (predicate nominal, disconfirmed, not merely uncertain); Low (predicate adjective, `rinok rinok daka`).
+**Launch Priority:** P0 — bare-copula use not wired into `translationEngine.js` grammar-assembly at all (confirmed via full engine read, 2026-07-09) despite being clearly live and correct in `corrections.json`'s exact-match layer. The engine gap is real even though the linguistic rule is now better-evidenced than before.
 
 ---
 ### RULE-006 — Adjective Placement
@@ -313,28 +314,80 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Launch Priority:** P0.
 
 ---
-### RULE-030 — `re·` vs. `re·ang` for "Go" [OPEN]
-**Description:** Two forms of "go" coexist in confirmed data with no settled selection rule: bare `re·` (used in destinationless contexts) vs. `re·ang` (used in the general dictionary and in destination-bearing contexts).
+### RULE-030 — `re·` vs. `re·ang` for "Go" [PARTIALLY RESOLVED]
+**Description:** Two forms of "go" coexist in confirmed data. **Update
+2026-07-18 (direct Thangseng answer to NV-001):** the destination-
+presence hypothesis this rule was built around is confirmed **wrong**
+as the primary conditioning factor. Thangseng: *"No, the form depends
+primarily on the mood and the tense. Apart from those the negative
+suffix also affects the form."* Separately confirmed: `-ang` genuinely
+functions as an "away from me" directional marker — but **only** in
+composition with `re·a` ("to walk"/"to go") specifically, not as a
+general directional affix: *"'ang' can be looked at as an indicator
+for movement 'away from' but only when used with the word re'a [...].
+Ang is used with other words as well and there it doesn't carry the
+same sense."* Treat `-ang` as carrying a real but narrow, lexically-
+scoped sense tied to this one verb family — not a productive general
+prefix. (Same homonymy-adjacent caution pattern as `ama` — a string
+recurring across unrelated words with unrelated meanings; don't
+generalize a suffix's meaning from one word to another without
+checking.)
 **Examples:** `Re·jawa` = "I will not go" (bare, no destination); `Hai re·naha` = "let's go" (bare, no destination). Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop, `nokchi re·anggen`="will go home now" (`BUG_home_missing_and_go_double_raka.md`), `Antichi re·angbo`="go to the market" (suffixes.pdf, imperative) — **four** independent examples now, all `re·ang` + a `·chi`-marked destination, strengthening (not proving) the destination-conditioned hypothesis. Complication: the same primary source (`BUG_home_missing_and_go_double_raka.md`) also confirms bare `re·` variants (`da·o re·gen`) are accepted even when "home" is semantically present but omitted from the surface sentence — so the split may track surface NP presence rather than pure semantic destination, or there may be genuine free variation in casual speech (see Thangseng's own methodology answers on register variation, `THANGSENG_NATIVE_VALIDATION.md` NV-001 update).
 **Counterexamples:** N/A — like RULE-031, this documents an unresolved question, not a settled pattern with exceptions.
 **Dependencies:** none identified yet; would inform future Verb Family documentation for "go."
-**Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Not yet put to Thangseng as a direct paired-contrast question. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001 for the full evidence review and proposed minimal test sentences.
-**Validation Status:** Needs Native Validation.
-**Confidence:** Low (as a unified selection rule); High (each individual confirmed form).
+**Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Direct NV-001 answer received 2026-07-18 (mood/tense/negation as primary conditioners; `-ang` scope narrowed to `re·a` specifically) — the destination-presence surface pattern documented in Examples above still needs reconciling against this answer; it's not yet clear whether both are true simultaneously (destination-presence *and* mood/tense/negation each contribute) or whether the examples need re-reading in light of the new answer. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001.
+**Validation Status:** Partially validated — primary conditioning factor now confirmed (mood/tense/negation), destination-presence surface pattern not yet reconciled with it.
+**Confidence:** Medium (up from Low) — the "why" is now confirmed even though the full "when" isn't fully reconciled.
 **Launch Priority:** P0 — high-frequency verb, currently only narrowly patched in `corrections.json` (`will not go`/`i will not go` → `re·jawa`) specifically to avoid over-generalizing an unconfirmed pattern.
 
 ---
-### RULE-031 — Copula Inconsistency [OPEN]
+### RULE-031 — Copula Inconsistency [PARTIALLY RESOLVED]
 **Description:** Three unreconciled predicative strategies coexist in confirmed data — not four; see the Correction note below, which retracts an earlier session's speculation about a fourth pattern: (a) an `ong·a`-copula strategy, always in bare/uninflected form, attaching after an adjective or stative noun (`Anga kusi ong·a`="I am happy", `Anga duk ong·a`="I am sad"); (b) self-inflecting stative roots that take normal verb morphology directly with no copula element at all (`Anga sakamenga`="I am sick", using `-enga` progressive on the root itself); (c) a zero-copula bare-adjective strategy with no `ong·a` or inflection at all (`Gari sila`="the car is beautiful", `Me·chik sila`/`Me·asa sila`, `Anga am`="I am okay"). `daka`-copula (Rule 5) is confirmed to exist but has no worked predicative-adjective example — its behavior here is unattested, not just unconfirmed, so it isn't counted as a fourth confirmed strategy above.
-**Examples:** `ong·a`-copula (bare): `Anga kusi ong·a`, `Anga duk ong·a`, `Achak tebil kokkimao ong·a` (locative/existential use). Self-inflecting: `Anga sakamenga`. Zero-copula bare-adjective: `Gari sila`, `Me·chik sila`, `Me·asa sila`, `Ua me·asa namen changroa`, `Anga am`, `Sepanga`/`Chel·a` (near/far).
+**Update 2026-07-18 (direct Thangseng answer to NV-002):** the open
+question for strategy (a) — is `ong·a` required, optional, or
+person-specific? — is now answered: **required, not a free variant of
+bare-adjective strategy (c).** Thangseng, asked directly about `Anga
+kusi ong·a`: *"Yes. Ong'a in such a use functions as the 'to be' verb.
+[...] If the ong'a is omitted, the be verb is missing. Example: anga
+kusi = I happy."* — explicitly confirms the bare form is ungrammatical/
+incomplete for this word. This means the three strategies are not free
+variation on the same predicates; which strategy applies is determined
+lexically (by which word/class fills the predicate slot), not by
+speaker choice. The **remaining open question narrows** to: what
+determines which of the three a given predicate word belongs to (is it
+a closed lexical list, a semantic class, a morphological property of
+the root)? Not yet known.
+
+**Also newly relevant — `ong·a`'s second sense:** Thangseng volunteered
+that `ong·a` can also mean "correct"/"right" independent of its copula
+use: *"It can also be mean right or correct (Example: Ong'ama ong'ja? =
+(Is it) correct or not?)"* — worth tracking as a distinct sense, not
+conflating with the copula use.
+
+**Also newly relevant — `daka`'s phrase-forming pattern (informs but
+does not resolve NV-017):** Thangseng, unprompted, gave a general
+account of `daka`: *"Daka generally means to do. But (this is
+important), it used to form phrases, where it is preceded by another
+word. Example: Seng'a daka = to be rude; jara daka = to be foolish."*
+This is new — `daka` forms an idiomatic "to be [quality]" construction
+when preceded by a quality/adjective-like word, distinct from its
+plain "to do" sense. This is evidence about `daka`'s behavior with
+**adjective-like** predicates specifically; it does not directly
+address whether the same pattern extends to **noun** predicates (the
+original "my father is a teacher," `skigipa daka` vs. `skigipa ong·a`
+question, NV-017) — `skigipa` ("teacher") is a noun, not a quality
+word like `seng·a`/`jara`, so this doesn't close NV-017, but it's the
+first real grammatical account of what `daka` is doing structurally
+rather than just an attested form.
+**Examples:** `ong·a`-copula (bare): `Anga kusi ong·a`, `Anga duk ong·a`, `Achak tebil kokkimao ong·a` (locative/existential use). Self-inflecting: `Anga sakamenga`. Zero-copula bare-adjective: `Gari sila`, `Me·chik sila`, `Me·asa sila`, `Ua me·asa namen changroa`, `Anga am`, `Sepanga`/`Chel·a` (near/far). `daka`-phrase (new, 2026-07-18): `Seng·a daka`="to be rude", `Jara daka`="to be foolish".
 **Correction (2026-07-09):** An earlier working note in this session speculated that `Anga duk ong·enga` (sad, with progressive suffix) suggested a *fourth* copula-adjacent pattern (`ong·` as an inflectable verb root, distinct from the three strategies above). That form is **stale** — `docs/GLOBAL_RAKA_CONVERSION_HANDOFF.md` (2026-06-17) shows it was corrected to `Anga duk ong·a` (bare, no progressive) before this session started, confirmed live in `corrections.json`. The speculation was built on a historical batch log (`NEW_SENTENCES_BATCH3_CONVERSATION.md`) without checking whether it had been superseded — retracted here rather than left standing. The corrected data is simpler and cleaner: `duk ong·a` is just another instance of the already-known bare `ong·a` pattern, not a new one.
 
 **Correction (2026-07-10):** Cross-checking `GARO_GRAMMAR_REFERENCE.md` against live `corrections.json` (see RULE-005) confirms `daka` is a real, broadly-used copula for bare existential and predicate-nominal constructions — not merely "unattested" as this rule previously said. This **narrows** the open question rather than resolving it: `daka` is confirmed to *not* compete with `ong·a`/bare-adjective for predicate-adjective sentences specifically (no confirmed case of `daka` following a clear adjective, only one ambiguous case) — so the real unresolved selection is `ong·a` vs. bare-adjective for predicate adjectives, a 2-way question, with `daka`'s role now reasonably well understood as a separate, mostly-settled construction.
 **Counterexamples:** N/A — this rule documents an unresolved contradiction, not a settled pattern.
 **Dependencies:** affects RULE-004 (predication generally), Grammar Specification §5. Connects to the register-variation pattern noted across several other rules this session (see `THANGSENG_NATIVE_VALIDATION.md`'s discussion of formal/spoken doublets) — worth checking whether any of these three strategies track register rather than a strictly grammatical trigger.
-**Native Notes:** Source Rule 31, flagged by repository audit, not yet put to Thangseng.
-**Validation Status:** Needs Native Validation.
-**Confidence:** Low (as a unified rule); High (each of the three strategies individually attested, now on verified-current data).
+**Native Notes:** Source Rule 31, flagged by repository audit. Direct NV-002 answer received 2026-07-18, confirming `ong·a` is required (not optional) for strategy (a). See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-002 (answered), NV-017 (still open — noun-predicate case).
+**Validation Status:** Partially validated — strategy (a)'s obligatoriness confirmed; the lexical-conditioning question (which words take which strategy) and the noun-predicate case (NV-017) remain open.
+**Confidence:** Medium (up from Low) — each of the three strategies individually attested on verified-current data, and strategy (a) now confirmed non-optional.
 **Launch Priority:** P0 — highest-priority open linguistic question for the launch sprint, given predication's frequency.
 
 ---

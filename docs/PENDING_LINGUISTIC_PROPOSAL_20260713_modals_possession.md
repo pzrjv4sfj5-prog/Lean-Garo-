@@ -71,20 +71,40 @@ been made from it.
   Added as `NV-016` for direct confirmation (cheap: one question
   confirms or denies the `nanga`/`nangja` relationship).
 
-- **`"can eat"` → `ama` / `man·a`:** **do not treat as two equally-
-  weighted candidates.** Checked `"ama"` against repository history —
+- **`"can eat"` → `ama` / `man·a`:** **UPDATED 2026-07-18 — `ama`
+  confirmed correct, caution resolved in its favor.** Thangseng
+  directly confirmed `ama` is a real, correctly-spelled word meaning
+  general "can" (not "can eat" specifically — the eat-sense came from
+  the compound phrase `cha·na ama`, not the word itself), and that it
+  is genuinely homonymous with (same spelling as, not a corruption of)
+  the address-term `ama` ("mother") — "ama has the same spelling in
+  both the meanings. No difference." This is a real, confirmed
+  homonym, not the documented-wrong `mother = ama` error resurfacing.
+  See `PENDING_LINGUISTIC_PROPOSAL_20260718_bal_homonymy.md` for the
+  parallel pattern (same caution methodology, different word). `man·a`
+  status unaffected — still a separate, unconfirmed candidate.
+  Original (superseded) caution kept below for the record:
+
+  Checked `"ama"` against repository history —
   `GLOBAL_RAKA_CONVERSION_HANDOFF.md` explicitly documents `mother =
   ama` as a **confirmed wrong** form, corrected to `aai`. That's not
   proof `ama` is wrong here too (Garo has genuine homonyms elsewhere in
   this repository — `nika` alone has 3+ senses), but a string with a
-  documented error history recurring in an unrelated relay is worth
-  real caution, not default acceptance. `man·a` remains the safer
-  primary candidate (already the pre-existing, if unverified,
-  dictionary entry) — this proposal doesn't resolve `NV-008`, it adds a
-  new candidate that itself needs scrutiny before either can be trusted.
-  `NV-008` stays open, updated with this caution rather than closed.
+  documented error history recurring in an unrelated relay was worth
+  real caution at the time.
 
-- **`"want to eat"` → `cha·na ska`:** does not supersede `sikenga` —
+- **`"want to eat"` → `cha·na ska`:** **UPDATED 2026-07-18 — this
+  disposition was too optimistic.** The register-doublet hypothesis
+  below does not hold up against fresh evidence: Thangseng's
+  2026-07-18 answer describes `ska`/`sikenga` as a specific collision
+  with an unrelated verb `sika` ("to push/sew/insert"), not a formal/
+  casual pair, and flags it as unresolved even in his own judgment
+  ("this will require cross-checking with a dictionary"). See
+  `PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md` for the
+  full escalation — this now affects 13 live production sentences and
+  needs a dedicated follow-up question before any further correction.
+  Original (superseded) reasoning kept below for the record: does not
+  supersede `sikenga` —
   most likely a casual-register contraction, matching the exact shape
   of three already-confirmed formal/casual doublets this session
   (`An·ching`/`chinga`, `gnang`/`donga`, `hai cha·na`/`hai cha·bo`).

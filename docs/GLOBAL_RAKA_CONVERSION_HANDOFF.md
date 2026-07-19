@@ -40,6 +40,28 @@ Native speaker corrected these (2026-06-17):
 |---|---|---|
 | father | apa | **baba** |
 | mother | ama | **aai** |
+
+**Correction, 2026-07-18 (Claude A):** this row pair is most likely a
+register mixup, not a genuine error-correction. Two independent later
+relays directly contradict "apa/ama are wrong": 2026-07-16 (Thangseng,
+via Tridip) gave `apa`/`ama` as the legitimate **address-form**
+register for father/mother, distinct from `baba`/`a·ai` (the
+**colloquial loanword** register, borrowed from Bengali/Assamese) and
+`pagipa`/`ma·gipa` (the **formal/descriptive** register) — three
+genuine registers, not one right answer and two wrong ones. See
+`docs/PENDING_LINGUISTIC_PROPOSAL_20260716_family_terms.md`.
+2026-07-18 (Thangseng, same session as NV-019) independently confirmed
+`ama` as a real, current word with no orthographic irregularity,
+answering an unrelated homonymy question about the ability modal
+"can" — see `THANGSENG_NATIVE_VALIDATION.md` NV-018/NV-008. Given two
+separate confirmations across different sessions and different
+questions, `apa`/`ama` should be treated as legitimate (address
+register) going forward, not as historically-corrected errors — the
+2026-06-17 note most likely reflects a question that was actually
+about casual/preferred register rather than correctness, recorded as
+if it were a right/wrong correction. Not editing the table above
+directly (preserving the original record), but do not treat this pair
+as settled "OLD (wrong)" going forward.
 | wife | jik | **jikgipa** |
 | husband | ang-se | **sejipa** |
 | children (counting) | — | Bi'sa (counted as: sak + number, e.g. `sak gini` = 2) |

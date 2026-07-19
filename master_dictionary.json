@@ -47648,19 +47648,19 @@
   },
   {
     "english": "want",
-    "garo": "sikenga",
+    "garo": "ska",
     "category": "verbs",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "corrected 2026-07-18 from sikenga (was VERIFIED/native-speaker in error - sikenga is the continuous form of the unrelated verb sika, 'to push/insert', not 'want'; see docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md)"
   },
   {
     "english": "wants",
-    "garo": "sikenga",
+    "garo": "ska",
     "category": "verbs",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "corrected 2026-07-18 from sikenga (was VERIFIED/native-speaker in error - sikenga is the continuous form of the unrelated verb sika, 'to push/insert', not 'want'; see docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md)"
   },
   {
     "english": "need",
