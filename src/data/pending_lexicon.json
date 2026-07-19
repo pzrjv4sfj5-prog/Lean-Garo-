@@ -1544,5 +1544,400 @@
     },
     "promotion_status": "promoted",
     "promoted_date": "2026-07-18T06:59:47.957Z"
+  },
+  {
+    "id": "PL-0000060",
+    "english": "Long",
+    "garo": "Bakroa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "Superseded 2026-07-19: native speakers (Thangseng/Tridip) directly discussed this and explicitly chose 'lengthy' (see PL-0000061) rather than duplicating 'long', which stays exclusively Ro·a. Thangseng confirmed 'Bakroa also means long. Or lengthy' then Tridip: 'Ok we will put as Lengthy', Thangseng: 'Yeah... Better.'",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Ro·a",
+        "chong·dang·dang",
+        "ro·a",
+        "ro·rek·a"
+      ]
+    },
+    "promotion_status": "rejected",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0000061",
+    "english": "lengthy",
+    "garo": "Bakroa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). Same headword as PL-0000060, consistent sense. Native-confirmed 2026-07-19, explicit word choice by Thangseng/Tridip.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000062",
+    "english": "of great distance.",
+    "garo": "Bakroa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). Same headword, consistent sense.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000063",
+    "english": "The length (of time or space).",
+    "garo": "Bakroa",
+    "category": null,
+    "pos": "-n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). Secondary (-n.) POS sense, consistent.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000064",
+    "english": "A pole placed across the shoulder with robes fastened to either end for supporting articles tied to them and balanced across the shoulder for be[?] carried.",
+    "garo": "Bakua",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=Low] Typo 'robes' instead of 'ropes' transcribed verbatim. POS tag 'v.' conflicts with the noun phrase definition. Word between 'be' and 'carried' obscured by a finger in the source photo - likely 'being' but unconfirmed, do not assume.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). Core meaning (carrying pole/yoke) is clear despite the finger-obscured word gap in the gloss text (see OCR note carried in the notes field) - approving the lexical mapping, gap is cosmetic to the definition text, not the headword-meaning link.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000065",
+    "english": "It is used as numeral pre-fix for flower and bundle.",
+    "garo": "Bal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Separate entry for 'Bal'. POS tag is noun but the definition is a full explanatory sentence.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). Not a translatable sense - this is a grammatical/usage note (Bal functioning as a numeral classifier/prefix for flower and bundle), not something anyone would search as English text to translate. Doesn't belong in the flat english->garo dictionary. Worth documenting as a classifier note elsewhere, not rejecting the underlying observation, just this import shape.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "rejected",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0000066",
+    "english": "Uncovered",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). adj. sense, consistent pair with -070.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000067",
+    "english": "out-side.",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). adj. sense, consistent pair.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000068",
+    "english": "Ajar",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "-adv.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). -adv. sense, consistent pair.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000069",
+    "english": "out",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "-adv.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). -adv. sense, consistent pair.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000070",
+    "english": "uncovered.",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "-adv.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). -adv. sense, consistent pair.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:49:24.569Z"
+  },
+  {
+    "id": "PL-0000071",
+    "english": "A flower akin to for-get-me-not",
+    "garo": "Balgito",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry cut off at the bottom of the page. Typo 'para itic' preserved exactly.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). Entry is cut off at the bottom of the source page - 'a para itic plant that grows upon' is an incomplete sentence (grows upon what?). Holding rather than promoting an incomplete definition as if it were complete. Re-photograph this page's bottom margin to get the rest.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "rejected",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0000072",
+    "english": "the air creeper",
+    "garo": "Balgito",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry cut off at the bottom of the page. Typo 'para itic' preserved exactly.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). Same cut-off entry as PL-0000071/073 - the full Balgito definition is unfinished, holding all three senses together pending a re-scan.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "rejected",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0000073",
+    "english": "a para itic plant that grows upon",
+    "garo": "Balgito",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry cut off at the bottom of the page. Typo 'para itic' preserved exactly.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "18-backfill",
+      "import_batch": "IMPORT-2026-07-19T06-08-00-988Z",
+      "import_date": "2026-07-19T06:08:00.988Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "Reviewed by Claude A, 2026-07-18 (page 18 backfill). Same cut-off entry - this is literally the sentence fragment where the source page ends mid-definition.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-18",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "rejected",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0000074",
+    "english": "Orchid",
+    "garo": "Balgito",
+    "category": null,
+    "pos": null,
+    "classifier": null,
+    "notes": "Native-confirmed 2026-07-19 (Thangseng, direct relay), replaces the cut-off/incomplete senses rejected as PL-0000071/072/073 (page ended mid-definition).",
+    "provenance": {
+      "source": "Native relay (Thangseng via Tridip, WhatsApp, 2026-07-19)",
+      "source_page": null,
+      "import_batch": "MANUAL-2026-07-19-native-relay",
+      "import_date": "2026-07-19T00:00:00.000Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. Direct, clean, single-sense native answer.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-19T11:50:01.700Z"
   }
 ]

@@ -48193,5 +48193,74 @@
     "garo": "Balgaoa",
     "category": null,
     "pos": "v."
+  },
+  {
+    "english": "lengthy",
+    "garo": "Bakroa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-n.' for secondary POS."
+  },
+  {
+    "english": "of great distance.",
+    "garo": "Bakroa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-n.' for secondary POS."
+  },
+  {
+    "english": "The length (of time or space).",
+    "garo": "Bakroa",
+    "category": null,
+    "pos": "-n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-n.' for secondary POS."
+  },
+  {
+    "english": "A pole placed across the shoulder with robes fastened to either end for supporting articles tied to them and balanced across the shoulder for be[?] carried.",
+    "garo": "Bakua",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=Low] Typo 'robes' instead of 'ropes' transcribed verbatim. POS tag 'v.' conflicts with the noun phrase definition. Word between 'be' and 'carried' obscured by a finger in the source photo - likely 'being' but unconfirmed, do not assume."
+  },
+  {
+    "english": "Uncovered",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS."
+  },
+  {
+    "english": "out-side.",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS."
+  },
+  {
+    "english": "Ajar",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "-adv.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS."
+  },
+  {
+    "english": "out",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "-adv.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS."
+  },
+  {
+    "english": "uncovered.",
+    "garo": "Balangga",
+    "category": null,
+    "pos": "-adv.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-adv.' for secondary POS."
+  },
+  {
+    "english": "Orchid",
+    "garo": "Balgito",
+    "category": null,
+    "notes": "Native-confirmed 2026-07-19 (Thangseng, direct relay), replaces the cut-off/incomplete senses rejected as PL-0000071/072/073 (page ended mid-definition)."
   }
 ]
