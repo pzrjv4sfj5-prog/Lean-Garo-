@@ -9,9 +9,20 @@
  * Per docs/CLAUDE_D_TRANSFORMATION_SPEC.md Stage 2 rules:
  *   - affix entries are EXCLUDED (they belong in morphology docs, not
  *     the flat single-word dictionary)
- *   - flagged_for_review entries are EXCLUDED (route to human/Claude A
- *     review first, never straight into the clean-batch import path)
  *   - category/classifier are not derivable from this source; omitted
+ *
+ * CHANGED 2026-07-18: flagged_for_review entries are NO LONGER
+ * excluded. That exclusion was written when import-dictionary.js
+ * auto-promoted clean batches and dropping flagged rows was the only
+ * way to keep them out of production. Since then, import-dictionary.js
+ * was rewritten (Claude B) so that EVERYTHING stages to
+ * src/data/pending_lexicon.json for review regardless of clean/
+ * flagged status — nothing auto-promotes anymore. Under that
+ * architecture, silently dropping flagged rows here means they never
+ * reach review at all, which is the opposite of the intent ("route to
+ * Claude A review first"). Flagged rows are now included, with the
+ * OCR concern folded into `notes` so it's visible in
+ * pending_lexicon.json during review.
  *
  * USAGE:
  *   node scripts/reduce-to-flat.js <flipped1.json> [flipped2.json ...] <output.json>
@@ -26,11 +37,10 @@ function loadJSON(p) {
 function reducePage(flipped) {
   const kept = [];
   let excludedAffix = 0;
-  let excludedFlagged = 0;
+  let flaggedIncluded = 0;
 
   for (const row of flipped.entries || []) {
     if (row.entry_type === 'affix') { excludedAffix++; continue; }
-    if (row.flagged_for_review) { excludedFlagged++; continue; }
     if (!row.english_gloss_raw || !row.garo_form_raw) continue;
 
     const flat = {
@@ -38,10 +48,17 @@ function reducePage(flipped) {
       garo: row.garo_form_raw,
     };
     if (row.pos) flat.pos = row.pos;
-    if (row.source_notes) flat.notes = row.source_notes;
+
+    let notes = row.source_notes || null;
+    if (row.flagged_for_review) {
+      flaggedIncluded++;
+      const flagNote = `[OCR-flagged for review: ocr_confidence=${row.ocr_confidence || 'unknown'}]`;
+      notes = notes ? `${flagNote} ${notes}` : flagNote;
+    }
+    if (notes) flat.notes = notes;
     kept.push(flat);
   }
-  return { kept, excludedAffix, excludedFlagged, total: (flipped.entries || []).length };
+  return { kept, excludedAffix, flaggedIncluded, total: (flipped.entries || []).length };
 }
 
 function main() {
@@ -54,20 +71,20 @@ function main() {
   const inputPaths = args.slice(0, -1);
 
   let allKept = [];
-  let totalAffix = 0, totalFlagged = 0, totalRows = 0;
+  let totalAffix = 0, totalFlaggedIncluded = 0, totalRows = 0;
 
   for (const p of inputPaths) {
     const flipped = loadJSON(p);
-    const { kept, excludedAffix, excludedFlagged, total } = reducePage(flipped);
+    const { kept, excludedAffix, flaggedIncluded, total } = reducePage(flipped);
     allKept = allKept.concat(kept);
     totalAffix += excludedAffix;
-    totalFlagged += excludedFlagged;
+    totalFlaggedIncluded += flaggedIncluded;
     totalRows += total;
-    console.log(`${p}: ${total} rows -> ${kept.length} kept, ${excludedAffix} affix excluded, ${excludedFlagged} flagged excluded`);
+    console.log(`${p}: ${total} rows -> ${kept.length} kept (${flaggedIncluded} flagged, notes-tagged for review), ${excludedAffix} affix excluded`);
   }
 
   fs.writeFileSync(outputPath, JSON.stringify(allKept, null, 2));
-  console.log(`\nWrote ${allKept.length} flat entries to ${outputPath} (from ${totalRows} total rows across ${inputPaths.length} page(s); ${totalAffix} affix + ${totalFlagged} flagged excluded, held for separate review)`);
+  console.log(`\nWrote ${allKept.length} flat entries to ${outputPath} (from ${totalRows} total rows across ${inputPaths.length} page(s); ${totalAffix} affix excluded to morphology docs, ${totalFlaggedIncluded} flagged and included for review, notes-tagged)`);
 }
 
 main();
