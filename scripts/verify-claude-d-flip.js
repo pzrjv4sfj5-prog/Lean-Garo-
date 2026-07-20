@@ -52,9 +52,13 @@ function main() {
   const violations = [];
 
   // --- Page-level fields ---
+  // (src[f] ?? null) normalizes "key absent" and "key present but null"
+  // to the same value - a source file that omits leading_continuation_text
+  // entirely (no continuation on that page) is not a violation, it's
+  // equivalent to explicitly writing null.
   for (const f of ['page', 'source_image', 'leading_continuation_text']) {
-    if (JSON.stringify(src[f]) !== JSON.stringify(flip[f])) {
-      violations.push(`page-level field "${f}" changed: ${JSON.stringify(src[f])} -> ${JSON.stringify(flip[f])}`);
+    if (JSON.stringify(src[f] ?? null) !== JSON.stringify(flip[f] ?? null)) {
+      violations.push(`page-level field "${f}" changed: ${JSON.stringify(src[f] ?? null)} -> ${JSON.stringify(flip[f] ?? null)}`);
     }
   }
   if (src.direction !== 'garo_to_english') {
