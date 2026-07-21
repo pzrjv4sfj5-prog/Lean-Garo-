@@ -1181,6 +1181,189 @@ bundles naturally with other open questions in the next relay.
 
 ---
 
+## NV-022 — `chi` as general destination-locative marker ("to the market")
+
+**Status:** CLOSED — native-confirmed, 2026-07-20, Tier 2 (relayed via
+Tridip). Raised by Claude B from live acceptance testing
+(`docs/PENDING_LINGUISTIC_PROPOSAL_20260719_market_pronoun_case_negation_order.md`).
+
+**Question raised:** engine output for "she will go to the market" was
+`Ua bajal / anti·ko Re·anggen` — a malformed dual dictionary value
+(`"Bajal / Anti"`) plus the object marker `·ko`, where dozens of other
+already-verified entries (`bajalchi`, `Anga bajalchi re·angenga.`,
+etc.) use a `chi`-suffixed locative form instead.
+
+**Native response (verbatim):** "Ua antichi re·anggen. Remember
+chi=locative 'to'"
+
+**Determination:** `chi` is confirmed as a general destination-locative
+suffix ("to X"), attached directly to the place noun — not limited to
+this one sentence. This matches the pre-existing `bajalchi`/`skulchi`/
+`nokchi` pattern already present throughout `master_dictionary.json`.
+
+**Separately, Project Owner decision (not a native-validation
+question):** the malformed `"market": "Bajal / Anti"` dictionary entry
+is resolved to `"Bajal"` as the single canonical value (2026-07-20).
+`anti` remains valid as a distinct attested form used in the
+locative-destination construction; both coexist in the dictionary, not
+in conflict.
+
+**Repository components impacted:** `master_dictionary.json` (index
+353, patched). Engine fix (`·ko`→`chi` for destination-locative
+sentences) tracked as `RC-CANDIDATE-023` in
+`docs/PENDING_REGRESSION_CASES.md` — engineering-only, no further
+native input needed for the general `chi` rule.
+
+---
+
+## NV-023 — `Chinga` (subject "we") vs. `An·ching` (object "us")
+
+**Status:** CLOSED — native-confirmed, 2026-07-20, Tier 2 (relayed via
+Tridip). Raised by Claude B from live acceptance testing (same
+proposal doc as NV-022).
+
+**Question raised:** engine output for "we are drinking water" was
+`An·ching chi·ko ringenga`, using `An·ching` in subject position.
+`pronoun_map.json` currently maps English "we" to a single Garo form.
+
+**Native response (verbatim):** "Chinga chi(ko) ringenga." — then, on
+follow-up ("why not An·ching? It is also we" / "so which is
+correct"): "Use depends on the case .. I think we can use chinga for
+'we' and an·ching for 'us'."
+
+**Determination:** confirmed case-based split for this pronoun pair —
+`Chinga` = subject ("we"), `An·ching` = object ("us"). This is
+currently only confirmed for this one pair, not generalized to other
+pronouns (I/me, he/him, etc.) — do not assume a systematic
+subject/object distinction applies elsewhere in `pronoun_map.json`
+without separate native confirmation for each pair.
+
+**Repository components impacted:** `pronoun_map.json` — needs a
+case-aware entry for "we" (subject) vs. "us" (object) instead of one
+shared form. Tracked as part of `RC-CANDIDATE-023` (engineering,
+narrow scope: this pair only).
+
+---
+
+## NV-024 — Negative-continuous suffix order (`ja` before `enga`)
+
+**Status:** CLOSED — native-confirmed, 2026-07-20, Tier 2 (relayed via
+Tridip). Raised by Claude B from live acceptance testing (same
+proposal doc as NV-022/023).
+
+**Native response (verbatim, confirming the corrected form):** "nga
+mi·ko cha·jaenga." — followed by "Nice" (native approval).
+
+**Determination:** for negative-continuous constructions, the negation
+morpheme `ja` sits before the continuous suffix `enga` (`cha·ja·enga`,
+not `cha·enga·ja` or other orderings). Confirmed for this one verb
+(`cha`, "eat") in this one tense combination — not yet generalized to
+other tense+negation combinations. `applyNegation`/`applyTense`
+composition order should not be changed for other combinations without
+a second confirmed data point.
+
+**Repository components impacted:** tracked as part of
+`RC-CANDIDATE-023` — narrow, verb-specific fix, not a blanket
+composition-order change.
+
+---
+
+## NV-025 — Noun+Classifier-Number counting construction; `do·o` = "chicken," not "bird"/"two"/"dog" — resolves Claude B's `RC-CANDIDATE-022`
+
+**Status:** CLOSED for the specific items confirmed below —
+Project-Owner-relayed native data, 2026-07-20. This entry resolves the
+open questions in `RC-CANDIDATE-022` (logged by Claude B, 2026-07-19,
+across three investigation commits) — see that entry in
+`docs/PENDING_REGRESSION_CASES.md` for the full prior diagnosis
+(`pickPrimary()` order-driven collapse, the 41-key list of
+similarly-shaped conflicts, the separate `analyzeGrammar` routing
+split, and the 67-entry numbers-category risk audit). Not repeated
+here. This entry adds native evidence on top of that engineering work
+— it does not redo it.
+
+**Confirmed data (Project Owner relay, 2026-07-20):**
+```
+achak mang-sa       → one dog
+do·o mang-gni        → two chicken        (do·o = chicken, not "bird" or "two")
+na·tok mang-gittam   → three fish
+manderang sak-sa     → one person
+skigipa sak-gni       → two teachers
+ki·tap king-sa        → one book
+kettal ge-gni         → two knives
+```
+
+**Determination:** the counting construction is **Noun +
+Classifier-Number** — confirms Claude B's `RC-CANDIDATE-022` diagnosis
+exactly (17-entry `do·o`-as-generic-"two"-prefix corruption; `do·o`'s
+real meaning was unconfirmed at "bird" pending native check — now
+confirmed as **"chicken,"** superseding that provisional "bird" gloss)
+and independently confirms `na·tok`("three") = fish,
+`Gittam`(standalone) = three — matching
+`docs/PENDING_LINGUISTIC_PROPOSAL_20260719_number_system_table.md`'s
+native table exactly. Four classifier roots now have at least one
+directly-confirmed Noun+Classifier-Number example: `mang`
+(animals/birds/fish), `sak` (people), `king` (books/flat objects),
+`ge` (tools/general objects) — matching the `classifier` section
+already present in `src/compiled_dict.json`.
+
+**New discrepancy surfaced, not resolved — flagging rather than
+guessing:** the confirmed example uses `manderang sak-sa` for "one
+person," but `master_dictionary.json` (index 3433, tagged
+`VERIFIED/HIGH` from an earlier session) has `mande sak·sa` instead —
+`manderang` vs. `mande`. Both roots are independently attested
+elsewhere in the dictionary (`manderang` appears in `"people say it's
+good, is it good?": "Manderang aganna nama ine, namama?"`; `mande`
+appears standalone as `"person": "man·de"`), so this isn't a
+nonsense-vs-real-word case — could be singular/generic distinction,
+could be one of them simply wrong in this construction. Needs a direct
+native check before touching either the `mande sak·sa` `VERIFIED/HIGH`
+entry or the older `sa mande·sa` duplicate. Neither was changed this
+session.
+
+**Action taken (2026-07-20, Claude A) — narrow, evidence-backed only.**
+Per Project-Owner governance instruction this session (native
+confirmation resolves conflicts; engineering evidence alone does not),
+and per Claude B's own explicit caution in `RC-CANDIDATE-022` against
+blanket-preferring `VERIFIED/HIGH` tags without individual review, only
+5 of the 13 duplicate-key pairs initially reviewed were patched — the
+ones with direct corroboration beyond the tag alone:
+- `one dog` → `achak mang·sa`, `two dogs` → `achak mang·gni` — directly
+  confirmed by the Project Owner data above, and independently flagged
+  by Claude B's own 41-key `pickPrimary` audit.
+- `three books` → `ki·tap king·gittam`, `ten birds` → `do·a
+  mang·chiking` — not directly given by the Project Owner, but built
+  entirely from separately-confirmed morphemes (`ki·tap`=book,
+  `king`=book classifier, `gittam`=three, `chiking`=ten all confirmed
+  elsewhere) rather than trusting the tag alone; both also appear in
+  Claude B's 41-key list of similarly-mis-resolved conflicts.
+- `"3"` → `gittam` (was `"soul"`, an unambiguous build artifact, also
+  in Claude B's 41-key list).
+Reverted 8 other entries (including `one person`, given the
+`mande`/`manderang` discrepancy above) that were initially touched on
+tag-preference alone with no corroborating evidence — consistent with
+not blanket-applying the `VERIFIED/HIGH`-preference heuristic Claude B
+already declined to script. `npm test` (77/77) and `node
+repository-intelligence.js` (PASSED) both green after the narrowed
+patch.
+
+**Still open — do not extend without further native confirmation:**
+Claude B's 41-key `pickPrimary` list and 67-entry numbers-category risk
+audit (both in `RC-CANDIDATE-022`) cover ground well beyond this
+entry's 5 patches — most of it still needs either a direct native
+example or the same compositional-corroboration standard applied here,
+not a blanket tag-preference sweep. The `mande`/`manderang` conflict
+above is a new addition to that queue.
+
+**Repository components impacted:** `master_dictionary.json` (5
+entries patched this session, 8 reverted). `docs/GRAMMAR_RULE_CATALOGUE.md`
+(candidate new rule for the Noun+Classifier-Number construction, not
+yet added — pending Claude B sign-off since it touches sentence
+assembly, not just vocabulary — also relevant to the `analyzeGrammar`
+routing split Claude B found, where a working classifier engine exists
+but full-sentence object extraction bypasses it).
+
+---
+
 ## Closed Questions
 - **NV-006** (`·ko`/`·o` selection) — closed 2026-07-12, effectively
   resolved as engineering work, not a native question. See NV-006 above

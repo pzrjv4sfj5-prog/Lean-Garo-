@@ -1,7 +1,7 @@
 [
   {
     "english": "one dog",
-    "garo": "sa mang·sa",
+    "garo": "achak mang·sa",
     "category": "animals"
   },
   {
@@ -1766,7 +1766,7 @@
   },
   {
     "english": "market",
-    "garo": "Bajal / Anti",
+    "garo": "Bajal",
     "category": "travel"
   },
   {
@@ -5276,7 +5276,7 @@
   },
   {
     "english": "3",
-    "garo": "soul",
+    "garo": "gittam",
     "category": "general"
   },
   {
@@ -5291,12 +5291,12 @@
   },
   {
     "english": "two dogs",
-    "garo": "do·o mang·gni",
+    "garo": "achak mang·gni",
     "category": "numbers"
   },
   {
     "english": "three books",
-    "garo": "na·tok rang·gni",
+    "garo": "ki·tap king·gittam",
     "category": "numbers"
   },
   {
@@ -5311,7 +5311,7 @@
   },
   {
     "english": "ten birds",
-    "garo": "chi mang·gni",
+    "garo": "do·a mang·chiking",
     "category": "numbers"
   },
   {

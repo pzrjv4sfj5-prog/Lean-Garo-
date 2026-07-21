@@ -817,3 +817,54 @@ co-occurring dictionary strings.
 here** — flagging scope and evidence only, per role boundaries. Full
 17-entry list and the `do`-family bird vocabulary logged for Claude A's
 classifier-engine review.
+
+**RESOLVED (partial), 2026-07-20, Claude A — see
+`docs/THANGSENG_NATIVE_VALIDATION.md` NV-025 for the full writeup, not
+repeated here.** Project Owner relayed direct native confirmation:
+`do·o` = "chicken" (not "bird" — supersedes this entry's provisional
+"bird" gloss), plus a confirmed Noun+Classifier-Number example set
+covering the `mang` (animals), `sak` (people), `king` (books), and
+`ge` (tools) classifier roots. Of the entries reviewed here, `one dog`
+→ `achak mang·sa` and `two dogs` → `achak mang·gni` are now
+directly confirmed; `three books` → `ki·tap king·gittam` and `ten
+birds` → `do·a mang·chiking` are corroborated by compositional
+evidence from confirmed morphemes. All four patched in
+`master_dictionary.json`. **Not resolved:** the other ~13 entries in
+the 17-entry `do·o` list above, the 41-key `pickPrimary` list, and the
+67-entry numbers-category risk audit (Section 3 of
+`docs/DICTIONARY_ERROR_AUDIT_20260719.md`) — those still need either a
+direct native example or the same compositional-corroboration standard
+applied here, not a blanket tag-preference sweep, per this entry's own
+caution above. A new discrepancy surfaced during this pass (`mande`
+vs. `manderang` for "person") is logged in NV-025, also unresolved.
+
+### RC-CANDIDATE-023 — Three native corrections from 2026-07-19 live acceptance testing, not yet implemented
+
+**Status:** Native-confirmed 2026-07-20 (see
+`docs/THANGSENG_NATIVE_VALIDATION.md` NV-022, NV-023, NV-024 for full
+linguistic detail and verbatim relay text). Not yet implemented in the
+engine — handoff to Claude B.
+
+**Three items, each independently scoped:**
+1. **Destination-locative marker.** "she will go to the market" should
+   use the `chi`-suffix locative construction (e.g. `Ua antichi
+   re·anggen`), not the object marker `·ko`. `chi` is confirmed general
+   for destination-locative sentences (NV-022). Separately, the
+   malformed `"market": "Bajal / Anti"` dictionary entry has been
+   resolved to `"Bajal"` (data fix already applied, unrelated to the
+   engine change needed here).
+2. **Subject/object case for "we"/"us."** `Chinga` = subject ("we"),
+   `An·ching` = object ("us") — currently `pronoun_map.json` likely
+   maps both to one form. Confirmed for this pair only (NV-023) — do
+   not generalize a subject/object split to other pronouns without
+   separate confirmation for each.
+3. **Negative-continuous suffix order.** `ja` (negation) precedes
+   `enga` (continuous): `cha·ja·enga`, confirmed for `cha` ("eat")
+   only (NV-024). Do not change `applyNegation`/`applyTense`
+   composition order for other tense combinations without a second
+   confirmed data point — this function is shared across every
+   negated sentence in the engine.
+
+No further native relay needed for any of the three as scoped above;
+each generalization beyond what's stated here would need its own
+confirmation.
