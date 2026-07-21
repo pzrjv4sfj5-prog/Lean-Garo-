@@ -19,6 +19,11 @@ Lean-Garo: an English → A'chik Garo translation engine (Meghalaya, India). Nod
   engine, parser, testing, docs, deployment, repo maintenance, bug fixes.
   Does **not** invent or approve linguistic content — implements only what
   Claude A has committed to `docs/`.
+- **Claude D** — repository ingestion/output layer for Stage 1's
+  deterministic OCR transformation only. Owns `data/claude_d/` alone.
+  No linguistic reasoning, does not replace or reimplement the
+  deterministic script. See "Claude D — repository ingestion layer"
+  section below for full scope and history.
 - **Thangseng** — native speaker, sole source of ground-truth validation.
 - **Project Owner / ChatGPT** — priorities, executive review, cross-team
   coordination. Advisory, not in every session.
@@ -382,3 +387,88 @@ engineering, repo stewardship). Claude A validates, classifies, and
 promotes verified knowledge into canonical docs. V1.0 remains the
 immediate objective; language preservation is the long-term mission -
 the two are not in tension as long as P0 stays P0.
+
+## Claude D — repository ingestion layer (Project Owner directive, 2026-07-20)
+
+**This section supersedes the 2026-07-17 "No Claude D" decision
+(`docs/CLAUDE_D_TRANSFORMATION_SPEC.md`, commit `1047970`) by explicit
+Project Owner directive. That decision is NOT deleted or rewritten —
+it remains in `docs/CLAUDE_D_TRANSFORMATION_SPEC.md` and git history
+as the historical record of why an LLM-driven Stage 1 was rejected.
+This section documents what changed and why, per the Project Owner's
+explicit instruction that the historical context stay intact.**
+
+**What the 2026-07-17 decision got right, and still applies:** Stage 1
+(OCR page → structured transformation) is fully-specified mechanical
+work with no linguistic judgment calls, and handing that to an LLM
+produced concrete, measurable defects (4, on the page-89 sample) versus
+zero drift risk from deterministic code. **Nothing about that finding
+has changed.** `scripts/flip-garo-to-english.js` remains the sole
+implementation of Stage 1 transformation logic. Claude D does not
+reimplement it, does not replace it, and does not perform any
+linguistic reasoning of its own.
+
+**What's new:** Claude D is a narrower role than the one originally
+proposed and rejected — it is the **repository ingestion/output layer**
+around that existing deterministic script's output, not a new
+reasoning stage. Concretely:
+
+- **Claude D SHALL:** run/wrap the existing deterministic Stage 1
+  script's output, validate it structurally, and write one JSON file
+  per processed page into `data/claude_d/` plus a `data/claude_d/manifest.json`
+  tracking processing status. Schema per entry:
+  ```json
+  {
+    "english": "...", "garo": "...",
+    "category": null, "pos": null, "classifier": null,
+    "notes": { "source": "Claude D", "page": 0, "status": "pending_linguistic_review", "ocr_confidence": null }
+  }
+  ```
+  Unknown linguistic fields stay `null` — Claude D never invents
+  metadata to fill them in.
+- **Claude D SHALL NOT:** perform linguistic review, infer meanings,
+  assign category/pos/classifier, resolve dictionary conflicts, modify
+  `pending_lexicon`, modify `master_dictionary.json`, modify repository
+  source code, modify compiler logic, or modify translation logic.
+- **Claude D owns only `data/claude_d/`.** No commit access outside
+  that directory (`data/claude_d/*.json` and
+  `data/claude_d/manifest.json` only), under the same session-scoped
+  PAT model already used elsewhere in this repo (Project Owner provides
+  the PAT directly to the Claude D session, the same way it's provided
+  to Claude A/Claude B sessions — no credential is ever written into a
+  repository file or commit by any role).
+
+**Updated pipeline:**
+```
+Gemini OCR
+   ↓
+Deterministic Stage 1 script (scripts/flip-garo-to-english.js — unchanged, still the source of truth)
+   ↓
+Claude D (repository ingestion/output layer only)
+   ↓
+data/claude_d/*.json
+   ↓
+Claude A (linguistic review: category/pos/classifier/grammar/morphology/duplicate resolution/native confirmations)
+   ↓
+Pending Lexicon (src/data/pending_lexicon.json — see docs/PENDING_LEXICON_WORKFLOW.md)
+   ↓
+Claude B (repository validation: schema, JSON integrity, compiler compatibility, repository-intelligence.js checks, build, tests)
+   ↓
+master_dictionary.json
+```
+
+Note this still funnels through the existing Pending Lexicon pipeline
+(`docs/PENDING_LEXICON_WORKFLOW.md`) rather than writing to
+`master_dictionary.json` directly — Claude D's output lands in
+`data/claude_d/`, Claude A's review promotes reviewed entries into the
+existing pending-lexicon flow, same promotion discipline as any other
+source (nothing is ever auto-promoted).
+
+**Claude B's role re: Claude D (unchanged from Claude B's existing
+scope, just extended to a new input source):** schema validation, JSON
+integrity, compiler compatibility, repository-intelligence.js checks,
+manifest consistency, build, and tests for anything flowing out of
+`data/claude_d/` — same engineering-only posture as everywhere else in
+this file. Claude B performs no linguistic review of Claude D's output,
+same as it performs none of Claude A's.
+
