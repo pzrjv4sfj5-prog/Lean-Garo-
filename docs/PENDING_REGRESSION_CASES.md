@@ -683,3 +683,78 @@ applied — surfacing the gap to the user rather than silently answering
 the wrong sentence type. Full general `ma`-suffix support should wait
 for a second native data point per RC-CANDIDATE-020's original
 handoff.
+
+### RC-CANDIDATE-022 — "two dogs"/"one dog" duplicate dictionary entries, live-confirmed producing an incoherent result
+
+**Found:** 2026-07-19, investigating a confused chat report claiming
+`"do·o"` means "chicken" (it doesn't — see below). `master_dictionary.json`
+has two conflicting entries each for `"one dog"` and `"two dogs"`
+(same shape as RC-CANDIDATE-016/019, `pickPrimary`'s documented
+last-value-wins behavior — see `prepare-data.js` line ~94):
+
+| Key | Older value (currently wins) | Newer value | Notes on newer |
+|---|---|---|---|
+| `"one dog"` | `sa mang·sa` | `achak mang·sa` | `VERIFIED/HIGH`, category `numbers` |
+| `"two dogs"` | `do·o mang·gni` | `achak mang·gni` | `VERIFIED/HIGH`, category `numbers` |
+
+**Live-confirmed production impact:** `"he has two dogs"` →
+`"Ua do·o mang·gni·ko donga"` (old value winning), same for `"he has one
+dog"` → `"Ua sa mang·sa·ko donga"`.
+
+**Independently confirmed dictionary facts** (each from an unrelated
+entry elsewhere, not the pair under dispute):
+- `"do·o"` = `"bird"` (confirmed exact-match entry, though itself
+  tagged `UNVERIFIED/HIGH`) — **not** "chicken" (that claim, from the
+  original chat report, doesn't match anything in the dictionary; the
+  closest chicken-related entries are `"chicken coop": "do·ochi·dik"`
+  and two longer descriptive phrases, none of which support "do·o" =
+  "chicken" as a standalone gloss).
+- `"achak"` = `"dog"` (confirmed exact-match entry, plain/uncontested).
+- `"gni"` = `"two"`... except **`"two"` itself is confirmed as
+  `"Gni"`** (capital G, standalone number entry) — consistent, not a
+  conflict.
+- `"sa"` = `"one"` (confirmed). `"mang"` = `"Animals, birds, fish,
+  insects"` (a general gloss, reads like a broad animal-classifier
+  root, not a specific species).
+
+**Two different confidence levels, deliberately not conflated into one
+fix:**
+- **`"two dogs"` (`do·o mang·gni`): high-confidence data-entry error,
+  not a register/word-choice question.** `do·o` is confirmed elsewhere
+  as the specific word for a *different* animal (bird). Its appearance
+  in a dog-count phrase reads as a copy-paste/transcription error from
+  an adjacent row during original data entry, not a plausible
+  alternate construction — unlike RC-CANDIDATE-019 (teacher), there's
+  no register-variant story that makes "bird" a coherent way to count
+  dogs.
+- **`"one dog"` (`sa mang·sa`): lower confidence, likely NOT the same
+  bug class.** `sa` is confirmed as the number "one" (not a wrong
+  species word), and `mang` glosses as a general animal-classifier
+  root — so `sa mang·sa` plausibly reads as a genuine alternate
+  numeral-classifier construction (number+classifier+number), not an
+  error. Needs Claude A to confirm whether this is a real construction
+  or itself a lower-grade version of the same mistake.
+
+**Why not just auto-fix by preferring the `VERIFIED/HIGH` tag:**
+considered and rejected. `prepare-data.js`'s `pickPrimary()` already
+documents (2026-06-17-ish) that this exact heuristic was tried and
+reverted after a real failure case — a corrupted 3-character fragment
+(`"i·a"`) was tagged `VERIFIED/HIGH` for **both** `"go"` and `"come"`
+and would have silently won over the correct values. A repo-wide check
+run for this finding (`git log` era 2026-07-19) shows 80 of the 1118
+known conflicting keys currently have exactly one distinct
+`VERIFIED`-tagged value with no competing verified value under the
+same key — a narrower, safer scope than the `go`/`come` failure mode —
+but Claude B is not applying that as a blanket rule unilaterally given
+Claude A already burned this exact heuristic once. Flagging the 80-key
+list as a candidate batch for Claude A's review is a reasonable next
+step, not something to script into `prepare-data.js` without sign-off.
+
+**Status:** Open, unimplemented, no dictionary/compiler change made.
+Both entries confirmed live-broken (or at minimum indeterminate) as
+described above.
+**Remaining uncertainty:** "two dogs" needs a yes/no confirmation
+(genuinely looks like a data error). "one dog" needs an actual
+linguistic call (real construction vs. lesser version of the same
+error) — do not resolve identically without checking both
+independently.
