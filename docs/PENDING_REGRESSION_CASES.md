@@ -758,3 +758,62 @@ described above.
 linguistic call (real construction vs. lesser version of the same
 error) — do not resolve identically without checking both
 independently.
+
+**MAJOR UPDATE (2026-07-19, same day, native correction + follow-up
+investigation) — scope is much larger than one duplicate pair:**
+
+1. **Vocabulary correction (native-confirmed, Project Owner relay):**
+   `"do·o"` = **"chicken"**, not generic "bird" as the dictionary's
+   `"bird": "do·o"` entry currently (and only ever, `UNVERIFIED/HIGH`)
+   claims. `"do"` (without `·o`) is the bird-family root/classifier
+   prefix generally: `crow=Do·ka, hen=Do·bit, rooster=Do·bi,
+   duck=Do·gep, owl=Do·po` (all independently already present in
+   `master_dictionary.json`, confirming the root pattern). **Internal
+   consistency check that supports this correction:** `"chicken coop":
+   "do·ochi·dik"` already existed in the dictionary before this
+   correction — `do·o` (chicken) + `chi·dik` (house/enclosure) =
+   "chicken-house," which only makes sense if `do·o` = chicken, not a
+   generic "bird."
+
+2. **Much bigger finding, from checking how far `"do·o"` actually
+   spreads:** it is not confined to the "two dogs"/"one dog" pair.
+   **17 entries in the `category: "numbers"` block all use `"do·o "`
+   as a leading prefix for "two X," across completely unrelated noun
+   classes** — not just animals:
+   `two birds, two teachers, two dogs, two books, two persons, two
+   fishs, two students, two houses, two trees, two cars, two person,
+   two apple, two banana, two waters, two rivers, two village, the two
+   birds` — all → `"do·o [something]·gni"`.
+   This reads as template/generation corruption in how the "numbers"
+   category was originally built — `"do·o"` appears to have been used
+   as if it were a generic "two" prefix token applied uniformly to
+   every noun class, rather than being the chicken/bird-specific
+   classifier it actually is. This is a different and much larger
+   problem than a simple duplicate-key conflict (RC-CANDIDATE-016
+   shape) — most of these 17 have no competing "correct" entry to fall
+   back on the way "two dogs" happens to (`achak mang·gni`, VERIFIED).
+
+**This is exactly the systemic classifier-engine gap the Project Owner
+flagged** — the numeral-classifier system (different classifier roots
+per noun class: animals, people, objects, places, fruit, etc.) isn't
+understood/documented anywhere in the repo, and this 17-entry pattern
+is a direct symptom. Recommend Claude A treat this as its own
+investigation — design/confirm the correct classifier for each noun
+class in this list — rather than Claude B guessing per-entry, since
+getting even one of the 16 non-bird cases wrong by pattern-matching
+would just be a different flavor of the same error.
+
+**Caution — don't over-generalize the `do·` root either:** `"goat":
+"Do·bok"`, `"door": "Do·ga"`, and `"egg": "Do·chi"` also share the `do·`
+prefix and are clearly not all birds (goat isn't a bird; door/egg are
+unrelated concepts entirely). So `do·` is not a reliable
+"this is a bird" signal on its own — likely a common root/syllable
+with multiple unrelated senses, not a productive classifier Claude B
+can pattern-match against. Another reason this needs Claude A's actual
+linguistic analysis rather than Claude B inferring rules from
+co-occurring dictionary strings.
+
+**Still not implemented, still Claude B making zero linguistic calls
+here** — flagging scope and evidence only, per role boundaries. Full
+17-entry list and the `do`-family bird vocabulary logged for Claude A's
+classifier-engine review.
