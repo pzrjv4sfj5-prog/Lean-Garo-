@@ -54544,5 +54544,551 @@
     "garo": "Guare",
     "category": null,
     "pos": "n."
+  },
+  {
+    "english": "To make to work",
+    "garo": "Ka-ata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to employ",
+    "garo": "Ka-ata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to cause to work",
+    "garo": "Ka-ata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Heart broken",
+    "garo": "Ka-a-be-a",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Angry",
+    "garo": "Ka-a soa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Typo 'infurate' (for infuriate) preserved."
+  },
+  {
+    "english": "rage",
+    "garo": "Ka-a soa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Typo 'infurate' (for infuriate) preserved."
+  },
+  {
+    "english": "infurate",
+    "garo": "Ka-a soa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Typo 'infurate' (for infuriate) preserved."
+  },
+  {
+    "english": "furious",
+    "garo": "Ka-a soa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Typo 'infurate' (for infuriate) preserved."
+  },
+  {
+    "english": "To suffer from dyspepsia",
+    "garo": "Ka-a saa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to have pain in the heart",
+    "garo": "Ka-a saa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To be greatly displeased",
+    "garo": "Ka-a amja",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to get very much angry",
+    "garo": "Ka-a amja",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To be so much vexatious that one is hardly able to hold in or restrain one'self from avenging but it is beyond one's power to do so",
+    "garo": "Ka-a amja-bil-sokja, (daka)",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To fly into a passion",
+    "garo": "Ka-a bikbo-bikbo daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To get angry",
+    "garo": "Ka-a nanga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be cross",
+    "garo": "Ka-a nanga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be cross",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be displeased",
+    "garo": "Ka-a nanga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To be in the state of emotion",
+    "garo": "Ka-asuangsuang daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to throb",
+    "garo": "Ka-asuangsuang daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Breast",
+    "garo": "Ka-bak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "bosom",
+    "garo": "Ka-bak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Heart-rending",
+    "garo": "Ka-be-a",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "heart-break",
+    "garo": "Ka-be-a",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "heart failure",
+    "garo": "Ka-be-a",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To bind or tie hands behind",
+    "garo": "Kabikpila",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "To tie to",
+    "garo": "Kabinga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To support by a rope (as a rope tied to a tree to prevent it from falling something)",
+    "garo": "Kabinga",
+    "category": null,
+    "pos": "v.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "Excitedly",
+    "garo": "Ka-bo-rang-bo",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "To be angry",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to get angry with",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be annoyed or vexed",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Not to be able to restrain anger",
+    "garo": "Ka-a chakna amja",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Angry",
+    "garo": "Ka-a chakna amja",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "To bind",
+    "garo": "Kachapa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To bind",
+    "garo": "Kadima",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "to fasten together",
+    "garo": "Kachapa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to fasten together",
+    "garo": "Kadima",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "to join",
+    "garo": "Kachapa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To be too much vexed",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "to be tied of",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "to become tried",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "to be disgusted or satiated",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "to be fed up",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "to be bore",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "to feel disgust",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "troublesome",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "vaxatious",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
+  },
+  {
+    "english": "To tie up the mouth of a thing having holes",
+    "garo": "Kachipa",
+    "category": null,
+    "pos": "v.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "To tie the knot of the end of the thread in cloth",
+    "garo": "Kachottenga (ba-ra ku-teni killing-dingko)",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Beautiful",
+    "garo": "Ka-danga",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "pleasant to the eye",
+    "garo": "Ka-danga",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "pleasant",
+    "garo": "Ka-danga",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To suspend",
+    "garo": "Kadea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to suspend",
+    "garo": "Kadingde-a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to hang",
+    "garo": "Kadea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To hang",
+    "garo": "Kadingde-a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To laugh",
+    "garo": "Ka-dinga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to gaggle",
+    "garo": "Ka-dinga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Laughter",
+    "garo": "Ka-dinga",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "To fell like laughing",
+    "garo": "Ka-dingna sika",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'fell' (for feel) preserved."
+  },
+  {
+    "english": "to feel inclined to laugh",
+    "garo": "Ka-dingna sika",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'fell' (for feel) preserved."
+  },
+  {
+    "english": "To make people laugh",
+    "garo": "Ka-dingata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to make fun",
+    "garo": "Ka-dingata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Laughing-stock",
+    "garo": "Ka-dingani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "fun",
+    "garo": "Ka-dingani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "It is no laughing matter",
+    "garo": "Ka-dingani ong-ja",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "no laughing stock",
+    "garo": "Ka-dingani ong-ja",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A humorous person found of telling funny stories and playing jokes",
+    "garo": "Ka-dingatna changgipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'found' (fond) preserved."
+  },
+  {
+    "english": "a wag",
+    "garo": "Ka-dingatna changgipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'found' (fond) preserved."
+  },
+  {
+    "english": "to hang by the string or rope",
+    "garo": "Kadingde-a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To smile",
+    "garo": "Ka-dingsmita",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To laugh at",
+    "garo": "Ka-dingsteka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to ridicule",
+    "garo": "Ka-dingsteka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Laughing stock",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj."
+  },
+  {
+    "english": "derision",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj."
+  },
+  {
+    "english": "ridicule",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj."
+  },
+  {
+    "english": "making fun of",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj."
+  },
+  {
+    "english": "ridiculous",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj."
+  },
+  {
+    "english": "To work together",
+    "garo": "Ka-dima",
+    "category": null,
+    "pos": "v.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "to co-operate",
+    "garo": "Ka-dima",
+    "category": null,
+    "pos": "v.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "to join together",
+    "garo": "Ka-dima",
+    "category": null,
+    "pos": "v.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "to be free from fear",
+    "garo": "Ka-dima",
+    "category": null,
+    "pos": "v.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "To console",
+    "garo": "Ka-dimea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to solace",
+    "garo": "Ka-dimea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be comforted",
+    "garo": "Ka-dimea",
+    "category": null,
+    "pos": "v."
   }
 ]

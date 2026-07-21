@@ -29155,5 +29155,2283 @@
     },
     "promotion_status": "promoted",
     "promoted_date": "2026-07-20T06:02:09.182Z"
+  },
+  {
+    "id": "PL-0001107",
+    "english": "To make to work",
+    "garo": "Ka-ata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001108",
+    "english": "to employ",
+    "garo": "Ka-ata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001109",
+    "english": "to cause to work",
+    "garo": "Ka-ata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001110",
+    "english": "Heart broken",
+    "garo": "Ka-a-be-a",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001111",
+    "english": "Angry",
+    "garo": "Ka-a soa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Typo 'infurate' (for infuriate) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bi·ka so·a",
+        "hel·hel",
+        "ka·o·nang·a"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001112",
+    "english": "rage",
+    "garo": "Ka-a soa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Typo 'infurate' (for infuriate) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001113",
+    "english": "infurate",
+    "garo": "Ka-a soa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Typo 'infurate' (for infuriate) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001114",
+    "english": "furious",
+    "garo": "Ka-a soa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Typo 'infurate' (for infuriate) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001115",
+    "english": "To suffer from dyspepsia",
+    "garo": "Ka-a saa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001116",
+    "english": "to have pain in the heart",
+    "garo": "Ka-a saa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001117",
+    "english": "To be greatly displeased",
+    "garo": "Ka-a amja",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001118",
+    "english": "to get very much angry",
+    "garo": "Ka-a amja",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001119",
+    "english": "To be so much vexatious that one is hardly able to hold in or restrain one'self from avenging but it is beyond one's power to do so",
+    "garo": "Ka-a amja-bil-sokja, (daka)",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001120",
+    "english": "To fly into a passion",
+    "garo": "Ka-a bikbo-bikbo daka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001121",
+    "english": "To get angry",
+    "garo": "Ka-a nanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001122",
+    "english": "to be cross",
+    "garo": "Ka-a nanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Ka-a nanga",
+        "Ka-chaa"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001123",
+    "english": "to be cross",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Ka-a nanga",
+        "Ka-chaa"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001124",
+    "english": "to be displeased",
+    "garo": "Ka-a nanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001125",
+    "english": "To be in the state of emotion",
+    "garo": "Ka-asuangsuang daka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001126",
+    "english": "to throb",
+    "garo": "Ka-asuangsuang daka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001127",
+    "english": "Breast",
+    "garo": "Ka-bak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "sok",
+        "sok·me"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001128",
+    "english": "bosom",
+    "garo": "Ka-bak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001129",
+    "english": "Heart-rending",
+    "garo": "Ka-be-a",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001130",
+    "english": "heart-break",
+    "garo": "Ka-be-a",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001131",
+    "english": "heart failure",
+    "garo": "Ka-be-a",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001132",
+    "english": "To bind or tie hands behind",
+    "garo": "Kabikpila",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001133",
+    "english": "To tie to",
+    "garo": "Kabinga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001134",
+    "english": "To support by a rope (as a rope tied to a tree to prevent it from falling something)",
+    "garo": "Kabinga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001135",
+    "english": "Excitedly",
+    "garo": "Ka-bo-rang-bo",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001136",
+    "english": "To be angry",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "an'chi ding·na"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001137",
+    "english": "to get angry with",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001138",
+    "english": "to be annoyed or vexed",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001139",
+    "english": "Not to be able to restrain anger",
+    "garo": "Ka-a chakna amja",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High]",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001140",
+    "english": "Angry",
+    "garo": "Ka-a chakna amja",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High]",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Dash-prefix convention (source dictionary): '-adj.' marks a derived adjectival sense of the same headword, POS tag corrected from carried-over 'v.'/'n.' to 'adj.', prefix stripped from gloss.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001141",
+    "english": "To bind",
+    "garo": "Kachapa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Kachapa",
+        "Kadima"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001142",
+    "english": "To bind",
+    "garo": "Kadima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Source POS tag 'n.' is a scanning/typesetting error, not a linguistic claim - 'to bind; to fasten together' is an infinitive verb phrase and cannot be a noun. Corrected to 'v.', consistent with the immediately-following repeated-headword entry (also tagged 'v.').",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Kachapa",
+        "Kadima"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001143",
+    "english": "to fasten together",
+    "garo": "Kachapa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Kachapa",
+        "Kadima"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001144",
+    "english": "to fasten together",
+    "garo": "Kadima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Source POS tag 'n.' is a scanning/typesetting error, not a linguistic claim - 'to bind; to fasten together' is an infinitive verb phrase and cannot be a noun. Corrected to 'v.', consistent with the immediately-following repeated-headword entry (also tagged 'v.').",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Kachapa",
+        "Kadima"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001145",
+    "english": "to join",
+    "garo": "Kachapa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001146",
+    "english": "To be too much vexed",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001147",
+    "english": "to be tied of",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001148",
+    "english": "to become tried",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001149",
+    "english": "to be disgusted or satiated",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001150",
+    "english": "to be fed up",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001151",
+    "english": "to be bore",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001152",
+    "english": "to feel disgust",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001153",
+    "english": "troublesome",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Dash-prefix convention (source dictionary): '-adj.' marks a derived adjectival sense of the same headword, POS tag corrected from carried-over 'v.'/'n.' to 'adj.', prefix stripped from gloss.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001154",
+    "english": "vaxatious",
+    "garo": "Ka-chipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Continues the preceding '-adj. troublesome; vaxatious' adjectival pair in the source (both glosses under one '-adj.' marker) - POS corrected from carried-over 'v.' to 'adj.'",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001155",
+    "english": "To tie up the mouth of a thing having holes",
+    "garo": "Kachipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001156",
+    "english": "To tie the knot of the end of the thread in cloth",
+    "garo": "Kachottenga (ba-ra ku-teni killing-dingko)",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001157",
+    "english": "Beautiful",
+    "garo": "Ka-danga",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "nitoa",
+        "Sila"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001158",
+    "english": "pleasant to the eye",
+    "garo": "Ka-danga",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001159",
+    "english": "pleasant",
+    "garo": "Ka-danga",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001160",
+    "english": "To suspend",
+    "garo": "Kadea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Kadea",
+        "Kadingde-a"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001161",
+    "english": "to suspend",
+    "garo": "Kadingde-a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Kadea",
+        "Kadingde-a"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001162",
+    "english": "to hang",
+    "garo": "Kadea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Kadea",
+        "Kadingde-a"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001163",
+    "english": "To hang",
+    "garo": "Kadingde-a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Kadea",
+        "Kadingde-a"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001164",
+    "english": "To laugh",
+    "garo": "Ka-dinga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High]",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001165",
+    "english": "to gaggle",
+    "garo": "Ka-dinga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High]",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001166",
+    "english": "Laughter",
+    "garo": "Ka-dinga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High]",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Dash-prefix convention (source dictionary): '-n.' marks a derived nominal sense of the same headword, POS tag corrected from carried-over 'v.' to 'n.', prefix stripped from gloss.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001167",
+    "english": "To fell like laughing",
+    "garo": "Ka-dingna sika",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'fell' (for feel) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001168",
+    "english": "to feel inclined to laugh",
+    "garo": "Ka-dingna sika",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'fell' (for feel) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001169",
+    "english": "To make people laugh",
+    "garo": "Ka-dingata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001170",
+    "english": "to make fun",
+    "garo": "Ka-dingata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001171",
+    "english": "Laughing-stock",
+    "garo": "Ka-dingani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001172",
+    "english": "fun",
+    "garo": "Ka-dingani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001173",
+    "english": "It is no laughing matter",
+    "garo": "Ka-dingani ong-ja",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001174",
+    "english": "no laughing stock",
+    "garo": "Ka-dingani ong-ja",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001175",
+    "english": "A humorous person found of telling funny stories and playing jokes",
+    "garo": "Ka-dingatna changgipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'found' (fond) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001176",
+    "english": "a wag",
+    "garo": "Ka-dingatna changgipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'found' (fond) preserved.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001177",
+    "english": "to hang by the string or rope",
+    "garo": "Kadingde-a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001178",
+    "english": "To smile",
+    "garo": "Ka-dingsmita",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001179",
+    "english": "To laugh at",
+    "garo": "Ka-dingsteka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001180",
+    "english": "to ridicule",
+    "garo": "Ka-dingsteka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001181",
+    "english": "Laughing stock",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001182",
+    "english": "derision",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001183",
+    "english": "ridicule",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001184",
+    "english": "making fun of",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001185",
+    "english": "ridiculous",
+    "garo": "Ka-dingstekani",
+    "category": null,
+    "pos": "n. & adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001186",
+    "english": "To work together",
+    "garo": "Ka-dima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001187",
+    "english": "to co-operate",
+    "garo": "Ka-dima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001188",
+    "english": "to join together",
+    "garo": "Ka-dima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001189",
+    "english": "to be free from fear",
+    "garo": "Ka-dima",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001190",
+    "english": "To console",
+    "garo": "Ka-dimea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001191",
+    "english": "to solace",
+    "garo": "Ka-dimea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
+  },
+  {
+    "id": "PL-0001192",
+    "english": "to be comforted",
+    "garo": "Ka-dimea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "112",
+      "import_batch": "IMPORT-2026-07-21T18-34-23-257Z",
+      "import_date": "2026-07-21T18:34:23.386Z",
+      "ocr_version": "gemini-flat-legacy-v1"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-21T18:35:17.676Z"
   }
 ]

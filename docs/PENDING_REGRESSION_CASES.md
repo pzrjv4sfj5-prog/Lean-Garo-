@@ -868,3 +868,44 @@ engine — handoff to Claude B.
 No further native relay needed for any of the three as scoped above;
 each generalization beyond what's stated here would need its own
 confirmation.
+
+### RC-CANDIDATE-024 — Third incoming-OCR schema variant; recommend Claude D standardize on the canonical `garo_to_english` shape
+
+**Status:** Handled for page 112 (86 entries promoted, see commit).
+Flagging for Claude B / whoever is scoping Claude D's exact output
+format, since this is now the third schema shape this pipeline has
+had to reconcile in two days.
+
+**What happened:** Project Owner fed a page-112 OCR batch in a flat
+legacy schema (`garo_headword_raw`, single flat `english_headword`
+string with semicolon-joined synonym clusters, flat `pos`,
+`source_page`, `source_notes`) — not the canonical `garo_to_english`
+schema `scripts/flip-garo-to-english.js` expects (`headword_raw`,
+`pos_groups: [{pos, senses: [...]}]`, `notes`, top-level `page`), and
+not `data/claude_d/`'s schema from `05d1751` either (`english`/`garo`/
+`category`/`pos`/`classifier`/`notes{}` — itself a fourth shape, and
+one that assumes English-headword-first structure even though this
+printed dictionary naturally OCRs Garo-headword-first).
+
+**Handled, not blocked on this:** wrote
+`scripts/normalize-flat-ocr-schema.js` — deterministic, mechanical,
+same posture as `flip-garo-to-english.js`/`reduce-to-flat.js` (no
+linguistic judgment, splits `english_headword` on `;` into
+`senses[]`). Ran normalize → flip → reduce → import → review →
+promote for page 112 the same as any other batch. One thing this
+normalizer deliberately does NOT do: auto-detect the source
+dictionary's `"-adj. X"`/`"-n. X"` dash-prefix convention (marking a
+derived POS on a repeated headword) — those stay `flagged_for_review`
+and get Claude A's individual POS correction during pending_lexicon
+review, same discipline as any other flagged entry.
+
+**Recommendation, not a decision I'm making unilaterally:** three (now
+four, counting Claude D's) incompatible incoming shapes is worth
+consolidating before more pages arrive. If Claude D is going to be the
+standing ingestion layer, simplest path is for it to emit the
+`flip-garo-to-english.js`-canonical schema directly (`headword_raw`/
+`pos_groups`/`senses`) rather than its current `data/claude_d/` schema
+— that would let `normalize-flat-ocr-schema.js` and any future
+one-off converters retire once older-format pages are worked through,
+instead of accumulating more converters per format. Not blocking
+anything today; flagging for whoever owns Claude D's spec next.
