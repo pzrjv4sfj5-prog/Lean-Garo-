@@ -170,7 +170,62 @@ table (ones, teens, tens, ordinals, half/quarter/double/zero) against
   conflicting values — consistent, but the conflicts themselves are
   pre-existing and untouched by this table.
 
-## 4. What this audit does NOT do
+## 6. Construction pattern (2026-07-19, native examples relayed by Project Owner) — reveals two more issues beyond word-choice
+
+Native examples given directly:
+```
+mang-sa A·chak   = 1 dog       (classifier-number + noun)
+mang-gittam A·chak = 3 dogs
+king-sa Ki·tap   = 1 book
+king-gni Ki·tap  = 2 books
+sak-sa Mande     = 1 person
+sak-gni Mande    = 2 people
+```
+
+**Finding 1 — word order: RETRACTED, see amendment below.** ~~The
+native pattern is [classifier]-[number] [Noun]...~~ **Correction
+(2026-07-19, same day, Project Owner amendment): the classifier
+examples in the original relay were inadvertently reversed. The
+canonical construction is actually [Noun] [classifier]-[number]** —
+`Achak mang-sa`, `Ki·tap king-sa`, `Manderang sak-sa` — **which matches
+the dictionary's own `VERIFIED/HIGH` entries exactly** (`"achak
+mang·sa"`, noun-first). No word-order discrepancy exists. The
+dictionary's existing construction order for the entries that do use
+the right root word is correct. Retracting this finding entirely —
+logged here rather than deleted so the correction has a visible paper
+trail.
+
+**Finding 2 — an entire classifier category is missing, not just
+wrong.** Native (corrected order): books use classifier root **`king`**
+(`Ki·tap king-sa` = 1 book). `master_dictionary.json` has **zero
+entries using `king` anywhere** — the current `"one book"`/`"two
+books"` entries use completely unrelated fragments (`"sa kitab·sa"`,
+`"do·o rang·gni"`, the latter still carrying the already-confirmed-wrong
+`do·o` prefix plus an unrelated `rang` root). This isn't a wrong-root
+problem like `do·o`/`na·tok`/`chi` — the correct classifier concept for
+this noun class doesn't exist in the dictionary at all yet. This
+finding is unaffected by the Finding 1 correction above — it's about a
+root word being entirely absent, not about word order.
+
+**Finding 3 — weaker, not concluding.** Native gives `sak` as the
+person-classifier (`sak-sa Mande` = 1 person), matching the existing
+`VERIFIED/HIGH` `"mande sak·sa"` entry's root (word order aside). Cross-
+checked `sak` the same way as `do·o`/`na·tok`/`chi`: it does
+independently match `"greens"`/`"vegetable leaves"` in the dictionary,
+but both tagged only `UNVERIFIED/HIGH` (weaker than `do·o`'s bird
+tag). Also found `"someone": "Saksa"` and `"everyone": "Sakanti"` —
+plausibly showing `sak` as a genuine person/individual-related root,
+which would *support* the existing entry rather than contradict it.
+Genuinely ambiguous, not flagged as an error — noting the check was
+done, not concluding either way.
+
+**Not implemented.** With Finding 1 retracted, the remaining scope is:
+the confirmed wrong root words (`do·o`/`na·tok`/`chi`, Sections 2-5
+above) and one wholly-missing classifier category (`king` for books,
+Finding 2). Word order itself is not in question — the dictionary's
+existing correctly-rooted entries are structurally fine.
+
+
 
 - Does not fix `pickPrimary()`, `master_dictionary.json`, or any
   compiled artifact.
