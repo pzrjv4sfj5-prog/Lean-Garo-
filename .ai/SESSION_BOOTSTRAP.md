@@ -472,3 +472,75 @@ manifest consistency, build, and tests for anything flowing out of
 this file. Claude B performs no linguistic review of Claude D's output,
 same as it performs none of Claude A's.
 
+---
+### Claude A directive to Claude D — output schema and scope (2026-07-21)
+
+**Per explicit Project Owner instruction: Claude A decides what Claude
+D produces and how it reaches review. This section is binding and
+updates the schema in the section above.**
+
+**Why Claude D exists at all:** converting raw Gemini OCR output into
+something reviewable is fully mechanical — no linguistic judgment, no
+conflict resolution, just structural transformation. Running it in a
+separate Claude D session means Claude A never has to spend context
+re-deriving or hand-converting Gemini's raw JSON turn after turn. That
+is Claude D's entire value: **do the mechanical conversion, push it to
+the repo, and stop.** Everything downstream (linguistic review,
+duplicate/conflict resolution, promotion) stays with Claude A, exactly
+as it always has for any other batch source.
+
+**Schema change — supersedes the `english`/`garo`/`category`/`pos`/
+`classifier`/`notes{}` schema in the section above.** That schema does
+not match what `scripts/import-dictionary.js` and the rest of the
+pending-lexicon pipeline actually consume, which meant Claude A had to
+reconcile a mismatch by hand (see `RC-CANDIDATE-024`,
+`docs/PENDING_REGRESSION_CASES.md`). Going forward:
+
+- **If the Gemini page Claude D receives is already in the canonical
+  `garo_to_english` schema** (`headword_raw`, `pos_groups: [{pos,
+  senses: [...]}]`, `notes`, top-level `page`/`direction`) —
+  Claude D SHALL run the existing deterministic
+  `scripts/flip-garo-to-english.js` followed by
+  `scripts/reduce-to-flat.js` on it, exactly as documented in each
+  script's header, and write the resulting **flat array**
+  (`{english, garo, pos?, notes?}`, the same shape
+  `scripts/import-dictionary.js` already expects from any manually-
+  supplied batch) to `data/claude_d/processed/<page>.flat.json`.
+- **If the page does NOT match that schema** (e.g. the flat legacy
+  format Claude A hit on page 112 — flat `english_headword`/
+  `garo_headword_raw`/`pos`/`source_page`, or any other shape) —
+  Claude D SHALL NOT guess at a conversion. Recognizing whether a
+  schema variant is safe to convert (e.g. confirming semicolon-joined
+  clusters are genuine synonyms, not disguised homonymy) is a
+  judgment call, not a mechanical one — that stays with Claude A.
+  Claude D pushes the **raw, untouched** file to
+  `data/claude_d/incoming_unrecognized/<page>.raw.json` with a one-line
+  note in the manifest (`"status": "schema_not_recognized"`) and stops.
+- **Either way, `data/claude_d/manifest.json` gets one entry per page**
+  tracking `page`, `status` (`processed` | `schema_not_recognized`),
+  and `output_path`. No other repository-wide indexing.
+
+**Claude D SHALL NOT (unchanged, restated for emphasis):** perform any
+linguistic review, infer meanings, assign category/pos/classifier
+beyond what the deterministic scripts already carry through
+mechanically, split or merge senses beyond what those scripts already
+do, resolve dictionary conflicts, decide which schema-conversion rule
+applies to an unrecognized format, modify `pending_lexicon.json`,
+modify `master_dictionary.json`, modify any repository source code
+outside `data/claude_d/`, modify compiler or translation logic, or do
+any work not described above. If a page needs judgment before it can
+be converted, Claude D's job is to push it unconverted and flag it —
+never to make the call itself.
+
+**Handoff point:** Claude D's commit to `data/claude_d/` is where its
+involvement ends. Claude A pulls from `data/claude_d/`, applies the
+same discipline as any other incoming batch — for `processed/` files,
+straight into `import-dictionary.js --apply` then the standard
+review/promote workflow; for `incoming_unrecognized/` files, Claude A
+writes or applies the appropriate normalizer (see
+`scripts/normalize-flat-ocr-schema.js` for the page-112 precedent)
+before the same import/review/promote workflow. Claude D does not
+wait for or act on the outcome of that review — its role is
+complete once the file is pushed.
+
+
