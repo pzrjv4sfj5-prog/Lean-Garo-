@@ -114,6 +114,62 @@ no such conflict — either they match the dictionary's own confirmed
 standalone number word, or have no competing meaning at all. No
 evidence of a problem there.
 
+### CONFIRMED (2026-07-19, native table relayed by Project Owner)
+
+Both flagged risks are now resolved to CONFIRMED ERROR, with the
+correct standalone word identified — but the exact compound
+*construction* is still not implemented (see caveat below):
+
+- **`na·tok` (used as "three" in 16 entries) is confirmed WRONG.**
+  Native table: `"na·tok" = fish` (explicitly restated), and
+  **`"three" = "Gittam"`** — which already exists correctly as the
+  dictionary's own standalone `"three": "Gittam"` entry. The 16
+  `na·tok`-prefixed numbers-category entries don't match the
+  dictionary's own already-correct word.
+- **`chi` (used as "ten" in 34 entries) is confirmed WRONG, but with
+  an important nuance.** Native table: **`"ten" = "Chiking"`**
+  (matches the dictionary's own existing standalone `"ten": "Chiking"`
+  entry exactly). Separately, `"chi"` **is** a legitimate prefix — for
+  **eleven through nineteen** (`chi·sa`=11, `chi·gni`=12, ...,
+  `chi·sku`=19, all independently confirmed in the native table and
+  already present correctly in the dictionary as standalone entries).
+  The Project Owner's relay explicitly notes this `chi`-as-teen-prefix
+  vs `chi`-as-"water" homonymy was "resolved earlier" and is not the
+  error. **The error is specifically that the "ten X" numbers-category
+  entries use bare `chi` (which means either "water" or is the teen-
+  series prefix, never "ten" alone) instead of `"Chiking"`.**
+
+**Still not implemented:** knowing the correct root word (`Gittam`,
+`Chiking`) doesn't by itself tell us the correct *compound* form for
+"three dogs"/"ten dogs" — e.g. whether it's `Gittam mang·gittam` (echoing
+the `do·o mang·gni`/`achak mang·gni` pattern where the classifier
+suffix itself changes per number, not just gets appended raw) or some
+other construction. That's still Claude A's call, consistent with
+RC-CANDIDATE-018/022's established position that word-identity and
+construction-correctness are separate questions.
+
+### Bonus findings from cross-checking the native table against the dictionary
+
+While verifying `Gittam`/`Chiking`, checked the rest of the relayed
+table (ones, teens, tens, ordinals, half/quarter/double/zero) against
+`master_dictionary.json`:
+- **Already correct and consistent**, no action needed: one-two-five-
+  seven-eight-nine, all teens (eleven-nineteen), twenty through
+  ninety, hundred, one thousand, quarter (`Daldal`), double
+  (`Gni·bita`/`Gni-bita`, cosmetic hyphen-vs-raka difference only).
+- **Genuinely missing from the dictionary** (new vocabulary, not yet
+  logged anywhere): `"second"`, `"third"` (ordinals), `"zero"`/`"none"`.
+- **New conflict found:** `"first"` already has `"skang"` in
+  `master_dictionary.json`, but the native table gives
+  `"Chipprangni"` — a third candidate, not previously tracked. Needs
+  Claude A same as any word-choice conflict, not assumed resolved by
+  this table alone.
+- `"last"` (3-way conflict: `Baksangni`/`bai·a`/`ses`) and `"half"`
+  (4-way conflict: `Jatchi`/`a·dra`/`bon·jang·chi·a`/`pak·sa`) both
+  already contain the native table's answer among their existing
+  conflicting values — consistent, but the conflicts themselves are
+  pre-existing and untouched by this table.
+
 ## 4. What this audit does NOT do
 
 - Does not fix `pickPrimary()`, `master_dictionary.json`, or any
