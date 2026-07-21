@@ -18,12 +18,14 @@ see the audit doc for full detail. Not repeated here.
 | Third (ordinal) | Gittam-prangni |
 | Zero / None | Bangbang / Ong·ja |
 
-## New conflict — not previously tracked
+## New conflict — RESOLVED, see NV-026
 
 `"first"`: `master_dictionary.json` already has `"skang"`. Native table
-gives `"Chipprangni"`. Two candidates now, needs Claude A same as any
-other word-choice conflict (RC-012/016/019 shape) — not assumed
-resolved just because this table supplied one of them.
+gave `"Chipprangni"` as a second candidate. **Resolved 2026-07-21** —
+direct Tridip→Thangseng relay confirms `"first"` = `Skang`. No change
+to `master_dictionary.json` needed; `Chipprangni` is not "first" (it
+remains valid for ordinal "second"/"third" compounds). Full detail:
+`docs/THANGSENG_NATIVE_VALIDATION.md` NV-026.
 
 ## Already consistent, no action needed
 
@@ -34,5 +36,8 @@ native table's answer among their existing multi-way conflicts (pre-
 existing conflicts, untouched by this table).
 
 ## Status
-Not implemented. Awaiting Claude A review before any of the above is
-added to `master_dictionary.json` or resolved into a canonical value.
+`"first"` conflict resolved 2026-07-21 (NV-026). New vocabulary
+(second/third ordinals, zero/none) confirmed already present in
+`master_dictionary.json`, no action needed. Everything else in this
+table remains as originally logged — already consistent, no action
+needed.

@@ -445,3 +445,55 @@ rather than just an attested form.
 **Validation Status:** Verified (the prefix is real and distinct from raka — very high confidence given 91 non-random, semantically-clustered instances plus independent corroboration); Needs Native Validation (the precise grammatical function and exact semantic scope of `a'` vs. `an'`/`am'`).
 **Confidence:** High (existence, distinctness from raka); Medium (semantic characterization).
 **Launch Priority:** P1 — not launch-blocking (these are mostly low-frequency nature/culture vocabulary), but resolves `RC-CANDIDATE-012`'s scope-boundary question definitively: **leave all 91 entries untouched**, they are not part of that bug.
+
+---
+### RULE-038 — Counting Construction: Noun + Classifier-Number
+
+**Description:** Garo counting phrases follow **Noun + Classifier-Number**,
+not a bare number word. The specific noun is always stated, followed
+by a classifier root selected by the noun's semantic class, fused with
+a number suffix (`sa`=1, `gni`=2, `gittam`=3...). Four classifier
+roots confirmed so far: `mang` (animals/birds/fish), `sak` (people),
+`king` (books/flat objects), `ge` (tools/general objects). Project
+Owner has explicitly instructed this be treated as a standing rule,
+not a one-off observation ("always remember it's noun + classifier ...
+in counting"). Full category-by-category classifier list requested
+from Thangseng 2026-07-21, not yet answered — do not assume the four
+roots above are the complete set.
+**Examples:** `achak mang·sa`="one dog", `achak mang·gni`="two dogs",
+`do·o mang·gni`="two chicken" (`do·o`="chicken", NOT a number or
+generic animal word — see `RC-CANDIDATE-022`/NV-025 for the
+corruption this caused when the noun was dropped), `na·tok
+mang·gittam`="three fish", `manderang sak·sa`="one person", `skigipa
+sak·gni`="two teachers", `ki·tap king·sa`="one book", `ki·tap
+king·gittam`="three books", `kettal ge·gni`="two knives", `do·a
+mang·chiking`="ten birds" (`do·a`="bird", distinct from `do·o`
+="chicken" — a real minimal pair).
+**Counterexamples:** the pre-existing `master_dictionary.json`
+`numbers`-category entries that drop the noun entirely and reuse a
+single classifier-number phrase across unrelated nouns (e.g. the
+now-fixed `do·o mang·gni` wrongly standing for "two dogs"/"two birds"/
+"two fish" simultaneously) are the corrupted, **not** the correct
+form — see `docs/DICTIONARY_ERROR_AUDIT_20260719.md` and
+`RC-CANDIDATE-022` for the ~30 collision groups still uncorrected
+under this same bug shape.
+**Dependencies:** none identified yet; may interact with RULE-015
+(Stem Formation) for classifier-suffix behavior, unconfirmed.
+**Native Notes:** Project Owner relay, 2026-07-20 (the 7-example set
+above) and cross-referenced against `master_dictionary.json` entries
+independently tagged `VERIFIED/HIGH` from an earlier session, which
+agree. `mande`/`manderang` discrepancy for "person" flagged in NV-025,
+unresolved — do not treat `sak`'s exact noun-form pairing with
+"person" as fully settled.
+**Validation Status:** Verified for the 4 classifier roots and 10
+examples listed above. Needs Native Validation for the remaining
+classifier categories (materials, objects generally, etc. — Thangseng
+was asked for the full list 2026-07-21, awaiting reply) and for
+whether classifier choice ever varies by dialect/register.
+**Confidence:** High (the general Noun+Classifier-Number pattern,
+given 4 independently-corroborated classifier roots); Low (completeness
+of the classifier-root inventory).
+**Launch Priority:** P0 — this is the root cause of a live, confirmed-
+wrong translator output (`RC-CANDIDATE-022`, "he has two dogs") and
+affects the entire `numbers` category (239 entries).
+

@@ -1364,6 +1364,71 @@ but full-sentence object extraction bypasses it).
 
 ---
 
+## NV-026 — Direct relay confirmations: "ten," "first," "everyone," "someone" — resolves `skang`/`Chipprangni` conflict
+
+**Status:** CLOSED — native-confirmed, 2026-07-21, Tier 2 (Tridip
+asking Thangseng directly, WhatsApp, relayed verbatim by Project
+Owner). Resolves the `"first"` conflict logged in
+`docs/PENDING_LINGUISTIC_PROPOSAL_20260719_number_system_table.md`.
+
+**Verbatim exchange:**
+```
+Tridip: what is Ten?
+Thangseng: Chikking
+Thangseng: The old spelling is chikkung
+Tridip: first?
+Thangseng: Skang
+Thangseng: One is 'sa'
+Tridip: everyone"="Sakanti
+Tridip: someone"="Saksa
+```
+
+**Determination:**
+- `"ten"` = `Chiking`/`Chikking` (spelling variant only — `chikkung`
+  noted as an old/superseded spelling) — matches the existing
+  `master_dictionary.json` entry (`"ten": "Chiking"`) exactly. No
+  change needed. Also reconfirms `docs/DICTIONARY_ERROR_AUDIT_20260719.md`
+  Audit B and `RC-CANDIDATE-022`: standalone "ten" is the `Chiking`
+  family, not `chi` — the numbers-category entries using bare `chi` as
+  a "ten"-prefix remain confirmed wrong (already tracked, not
+  re-opening here).
+- `"first"` = `Skang` — **resolves** the two-candidate conflict from
+  the number-system-table proposal in favor of the value already in
+  `master_dictionary.json` (`"first": "skang"`). `Chipprangni` is
+  rejected as the answer for "first" (it remains valid for "second"/
+  "third" ordinals — see new vocabulary below). No dictionary change
+  needed; conflict closed.
+- `"one"` = `Sa` — reconfirms existing entry, no change.
+- `"everyone"` = `Sakanti`, `"someone"` = `Saksa` — both reconfirm
+  existing `master_dictionary.json` entries exactly, no change.
+
+**New vocabulary (from the same number-system-table proposal, now
+that "first" is no longer an open conflict blocking it):** already
+present in `master_dictionary.json` — `"second (ordinal)":
+"Gni·prangni"`, `"third (ordinal)": "Gittam·prangni"`, `"zero / none":
+"Bangbang / Ong·ja"` (dual value retained as-is, both attested, no
+basis yet to pick one canonical form). No addition needed this
+session; confirming they match the relayed values.
+
+**Not yet resolved — flagging, not guessing:** the same relay includes
+"someone"="Saksa" followed by a bare "Saoba" with no attached English
+gloss in the transcript as relayed — unclear if this is a typo, a
+continuation of the "someone" answer (e.g. an alternate/related form),
+or the start of an unrelated answer. Not added to the dictionary.
+Tridip's request ("give me the classifier definitions once again for
+all categories") — directly relevant to `RULE-038` — is still
+unanswered in this transcript; the full classifier-root inventory
+remains incomplete pending that reply.
+
+**Repository components impacted:** `master_dictionary.json` — no
+changes needed (all reconfirmed values already correct).
+`docs/PENDING_LINGUISTIC_PROPOSAL_20260719_number_system_table.md`
+conflict resolved, can be marked implemented.
+`docs/GRAMMAR_RULE_CATALOGUE.md` RULE-038 updated to note the pending
+classifier-definitions request.
+
+---
+
 ## Closed Questions
 - **NV-006** (`·ko`/`·o` selection) — closed 2026-07-12, effectively
   resolved as engineering work, not a native question. See NV-006 above
