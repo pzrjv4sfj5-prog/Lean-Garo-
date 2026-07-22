@@ -142,6 +142,30 @@ function main() {
     delete alternates[key];
   });
 
+  // Alias bare-infinitive form for "to X" headwords. Some dictionary
+  // sources (e.g. the page-112 OCR import: "To bind", "To console") only
+  // ever store the "to X" headword. Sentence assembly looks up verbs by
+  // bare form, so those entries were unreachable in real sentences and,
+  // worse, fell through to unrelated fuzzy matches (bare "bind" matched
+  // "wind", edit distance 1). This only fills gaps — it never overwrites
+  // an existing bare-form entry, so keys that already have their own
+  // independently-chosen bare-form value (e.g. "hang") are untouched,
+  // and pickPrimary's chosen value for the "to X" key itself doesn't
+  // change either.
+  let bareAliasCount = 0;
+  Object.keys(finalized).forEach(key => {
+    if (key.startsWith('to ')) {
+      const bare = key.slice(3).trim();
+      if (bare && !finalized[bare]) {
+        finalized[bare] = finalized[key];
+        bareAliasCount++;
+      }
+    }
+  });
+  if (bareAliasCount) {
+    console.log(`Bare-infinitive aliases added: ${bareAliasCount} ("to X" -> "X" where "X" had no entry)`);
+  }
+
   const srcDir = path.join(__dirname, 'src');
   if (!fs.existsSync(srcDir)) fs.mkdirSync(srcDir);
 

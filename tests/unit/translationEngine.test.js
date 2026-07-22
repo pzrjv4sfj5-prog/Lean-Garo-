@@ -430,6 +430,69 @@ test('RC-CANDIDATE-018 regression guard: irregular verbs are not double-inflecte
   assert.ok(!/engagen|ahagen/.test(r.garo), `must not double-inflect an irregular verb form, got: ${r.garo}`);
 });
 
+// --- RC-CANDIDATE-025: "to X"-only headwords were unreachable as bare
+// verbs in sentence assembly, and worse, fell through to unrelated fuzzy
+// matches instead of failing cleanly. Surfaced by the page-112 import
+// (bind/console stored only as "To bind"/"To console"), fixed generically
+// in prepare-data.js (bare-infinitive aliasing, gap-filling only — never
+// overwrites an existing bare-form entry). 237-sentence benchmark diffed
+// byte-for-byte before/after: zero unintended changes.
+
+test('RC-CANDIDATE-025: bare "bind" is reachable and does not fuzzy-match "wind"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('bind');
+  assert.notEqual(r.method, 'fuzzy(wind,d=1)');
+  assert.equal(r.garo, 'Kadima');
+});
+
+test('RC-CANDIDATE-025: bare "console" is reachable, not [UNKNOWN] passthrough', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('console');
+  assert.notEqual(r.method, 'passthrough');
+  assert.equal(r.garo, 'Ka-dimea');
+});
+
+test('RC-CANDIDATE-025: verb present in sentence assembly for a "to X"-only headword ("bind")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('they bind the rope');
+  assert.ok(r.garo.includes('Kadima'), `verb must not be silently dropped, got: ${r.garo}`);
+});
+
+test('RC-CANDIDATE-025: verb present in sentence assembly for a "to X"-only headword ("console")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('you console the child');
+  assert.ok(r.garo.includes('Ka-dimea'), `verb must not be silently dropped, got: ${r.garo}`);
+});
+
+test('RC-CANDIDATE-025 regression guard: bare-infinitive aliasing never overwrites an existing independently-chosen bare-form entry ("hang")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('hang');
+  assert.equal(r.garo, 'sring·a');
+});
+
+// --- corrections.json had two stale entries discovered the same session:
+// "angry" was a truncated fragment (ka·o, not a complete word) instead of
+// the VERIFIED/HIGH master_dictionary.json entry (ka·o·nang·a); "smile"
+// was silently overridden to laugh's word (Ka·dinga) instead of its own
+// VERIFIED entry (ka·ding·sim·ik·a). Both fixes restore the existing
+// VERIFIED dictionary value already established elsewhere in the repo —
+// no new linguistic content chosen here. The separate open question of
+// whether the newly-imported "Ka-a chakna amja" is a legitimate
+// distinct-register synonym for angry is NOT resolved by this fix and is
+// left for Claude A.
+
+test('corrections.json: "angry" resolves to the VERIFIED entry, not the truncated fragment', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he is angry');
+  assert.ok(r.garo.includes('ka·o·nang·a'), `must use full VERIFIED word, got: ${r.garo}`);
+});
+
+test('corrections.json: "smile" resolves to its own word, not to laugh', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('she smiles');
+  assert.ok(r.garo.includes('ka·ding·sim·ik·a'), `must use smile's own word, got: ${r.garo}`);
+});
+
 // --- Interrogative formation (Project Owner directive root cause 3) is
 // deliberately NOT implemented or tested here. No confirmed Claude A
 // linguistic guidance exists yet for Garo question formation - only one
