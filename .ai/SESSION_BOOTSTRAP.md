@@ -102,8 +102,29 @@ docs current, and flag problems if they surface — not stand between
 Claude A and `origin/main`.
 
 ## Current joint work package
-_(Update this section in place — do not create a new dated snapshot doc
-for it; see "Do not repeat" below.)_
+
+**NEW, 2026-07-22, Claude B — read first:** Thangseng answered 7 open
+items in one batch (angry/right/quarrel/work/tie-bind/duty/negation-
+locative, plus new interrogative data). Logged verbatim, unimplemented,
+in `docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md` —
+read that file before touching any of these words. Two items need real
+headword/grammar restructuring, not a single substitution: "right"
+splits into 3 distinct senses (direction/matching/correct — all
+currently collapsed onto one compiled key), and "tied"/"bound" turned
+out to be a periphrastic converb+auxiliary construction with no
+single-word form at all, not a missing lexicon entry. "duty" is
+confirmed as an active wrong-word bug (`Kajana`/`Kajina` are unrelated
+words that collided, not spelling variants) — needs correcting, not
+just deduplicating.
+
+**Standing directive, Project Owner, 2026-07-22 (relayed via Claude
+B):** do not overwrite these newly-confirmed words, and do not enter
+duplicate words that already exist in the dictionary — the Master dict
+is filling up with new vocab and needs this discipline going forward on
+every import, not just this batch.
+
+_(Rest of this section: update in place — do not create a new dated
+snapshot doc for it; see "Do not repeat" below.)_
 _Last set: 2026-07-12, Claude A. Previous version (2026-07-08) is fully
 cleared — NV-005..009 reviewed, locative proposal confirmed closed,
 GRAMMAR_SPEC.md fully promoted (not just Rule 15/32 — 12 rules total,
