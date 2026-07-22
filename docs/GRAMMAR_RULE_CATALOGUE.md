@@ -497,3 +497,107 @@ of the classifier-root inventory).
 wrong translator output (`RC-CANDIDATE-022`, "he has two dogs") and
 affects the entire `numbers` category (239 entries).
 
+---
+### RULE-039 — Stative/Passive via Converb + Auxiliary (PROVISIONAL)
+
+**Description:** Garo has no single-word stative/passive participle
+corresponding to English "is X-ed" (tied, hung, hidden, etc.). The
+meaning is built periphrastically: verb-root + converb marker `·e`
+("having [verb]-ed") followed by an auxiliary (`don·enga` "is placed/
+set" or `man·enga` "has come to be/succeeded"). Confirmed for exactly
+one verb so far (`ka·a`, "to tie"): `Achakko ka·e don·enga` ("the dog
+is tied," lit. "dog-OBJ tie-having placed-CONT") and the alternate
+`Achak ka·e don·ako man·enga`.
+**Examples:** "The dog is tied" → `Achakko ka·e don·enga`.
+**Counterexamples:** none yet identified.
+**Dependencies:** none identified yet. Interacts with whatever rule
+governs object-marking `·ko` — not yet cross-checked against that
+rule's stated conditions.
+**Native Notes:** direct Thangseng relay, 2026-07-22, via Project
+Owner (`docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md`
+item 5): "To tie is ka·a. There is no raka. The reason some things seem
+missing is probably because it is missing. The Garo grammar simply
+does not have them. Instead Garo grammar takes the help of additional
+words to make sense of it."
+**Validation Status:** Needs Native Validation — confirmed for one
+verb only (see NV-029). **Do not implement as a general engine rule
+for arbitrary "is X-ed" inputs until 2–3 more verbs are confirmed.**
+Implementing from this single data point risks the exact failure mode
+this project's convergence protocol exists to prevent (a fix that
+outruns its evidence).
+**Confidence:** High (the construction type exists, "tie" has no
+single-word passive); Low (whether the specific converb/auxiliary
+choice generalizes to other verbs, or varies by verb class).
+**Launch Priority:** P1 — real grammar gap, but narrow-scoped
+implementation (this one verb, if needed) can proceed without waiting
+for full generalization; do not build a general passive-formation rule
+from this alone.
+
+---
+### RULE-040 — "Right" Three-Way Sense Split (Direction / Matching / Correct)
+
+**Description:** English "right" collapses three distinct Garo
+headwords, currently merged into one compiled dictionary key via
+`pickPrimary`'s last-write-wins behavior. Confirmed distinct:
+- `Jak·ra` — right (direction / right-hand side)
+- `kra·a` — suiting/matching (**not** "correct" — a distinct sense
+  from what the `Kakket`-cluster entries assume)
+- `Kakket` — truth / correct
+
+**Examples:** "turn right" → `Jak·ra` sense; "this fits/suits" →
+`kra·a` sense; "that's right/true" → `Kakket` sense.
+**Counterexamples:** none — this is a homonymy split, not a rule with
+exceptions.
+**Dependencies:** interacts with the existing `Kakket`-cluster entries
+(true/correct/genuine/just/actual/rightly) — those remain internally
+consistent under `Kakket`, this rule doesn't change them, it only
+separates `kra·a` and `Jak·ra` out from the collapsed "right" key.
+**Native Notes:** direct Thangseng relay, 2026-07-22, via Project
+Owner: "Jak·ra directional right or right hand. Kra·a means suiting or
+matching. Kakket is truth and right in the sense of being correct."
+**Validation Status:** Verified — direct native confirmation, all
+three senses distinguished explicitly.
+**Confidence:** High.
+**Launch Priority:** P0 — current compiled "right" value is wrong for
+at least two of the three senses depending on which entry
+`pickPrimary` happened to select last. **Engineering handoff to Claude
+B:** split the single compiled `"right"` key into three distinct
+headwords (e.g. `"right (direction)"`, `"right (matching)"`,
+`"right (correct)"` or equivalent sense-tagged keys) rather than
+picking one winner — this is headword restructuring, not a value
+substitution.
+
+---
+### RULE-041 — "Work" Part-of-Speech Split (Noun vs. Verb vs. General "To Do")
+
+**Description:** English "work"/"to work" collapses what are actually
+three distinct Garo items across two parts of speech, currently in a
+4-way conflict in the compiled dictionary:
+- `Daka` — "to do" (verb) — general-purpose action verb, **not**
+  work-specific
+- `Kam` — "work" (noun) — activity or job
+- `Kam ka·a` — "to work" (verb) — compound: `Kam` (noun) + `ka·a`
+  ("to do/act")
+- `ga·a` — unconfirmed, Thangseng was not asked about this candidate;
+  status remains open
+
+**Examples:** "I have work to do" → `Kam` sense; "I work every day" →
+`Kam ka·a` sense; "I did it" → `Daka` sense (not work-specific at all).
+**Counterexamples:** none — this is a part-of-speech/sense split, not
+a rule with exceptions.
+**Dependencies:** none identified.
+**Native Notes:** direct Thangseng relay, 2026-07-22, via Project
+Owner: "Daka means 'to do'. Kam can mean work as an activity or it can
+simply mean a job. Daka is a verb. Kam is a noun. Kam ka·a is a verb."
+**Validation Status:** Verified for `Daka`/`Kam`/`Kam ka·a`. `ga·a`
+remains Needs Native Validation — do not resolve the 4-way conflict by
+simply dropping it; ask Thangseng directly before removing it from
+`known_dictionary_conflicts.json`.
+**Confidence:** High (the three confirmed items); Unknown (`ga·a`).
+**Launch Priority:** P0 — this was previously treated as a straight
+4-way synonym conflict needing a single winner; it is not. **Engineering
+handoff to Claude B:** split into `"work"` (noun, → `Kam`) and
+`"to work"` (verb, → `Kam ka·a`) as distinct headwords; leave `Daka`
+under its existing "to do" entries, untouched; leave `ga·a` flagged
+pending the native follow-up rather than silently dropped.
+

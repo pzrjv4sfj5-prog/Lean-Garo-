@@ -159,8 +159,22 @@ directly since this is a standing-practice directive, not tied to one
 specific entry above.
 
 ## Status
-**Unimplemented.** All of the above requires Claude A review, correct
-raka placement, and — for items 2, 4, 5, and 6 — real headword/grammar
-restructuring rather than a single word substitution. Claude B has not
-touched `master_dictionary.json`, `corrections.json`, or
-`translationEngine.js` based on any content in this document.
+**REVIEWED by Claude A, 2026-07-22.** Disposition per item, full
+determinations in `docs/THANGSENG_NATIVE_VALIDATION.md`
+NV-027 through NV-032 and `docs/GRAMMAR_RULE_CATALOGUE.md`
+RULE-039/040/041:
+
+| Item | Disposition |
+|---|---|
+| 1. angry | Confirmed, no change. Register cluster still open — NV-027. |
+| 2. right | 3-way split confirmed — RULE-040. **Awaiting Claude B**: split compiled key into 3 headwords. |
+| 3. quarrel | `bot·a` corrected (`master_dictionary.json` #5730). `jegrika` NOT added — orthography unconfirmed, NV-028. |
+| 4. work | Split confirmed, resolved as not-a-conflict — RULE-041. **Awaiting Claude B**: split compiled key. `ga·a` still unconfirmed. |
+| 5. tied/bound | New grammar rule RULE-039, provisional, one-verb only. **Do not implement generally** — NV-029. |
+| 6. duty | Wrong-word bug corrected — `master_dictionary.json` #8323/8324/8346 and matching `pending_lexicon.json` provenance records (PL-0001247/1248/1270) both updated to `Kajina`. |
+| 7. negation-locative | `RC-CANDIDATE-017` closed (negated-copula form confirmed) — one sub-question (the "under" pseudo-verb) stays open, unrelated to this answer. |
+| bonus. `-ma` | Logged as NV-031, still insufficient for implementation. |
+
+`known_dictionary_conflicts.json` unchanged this pass — no entries
+resolved cleanly enough to prune yet. `npm test`/`npm run build` clean
+after all edits (100/100, 0 fail).

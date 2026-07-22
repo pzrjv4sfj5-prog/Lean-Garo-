@@ -1429,6 +1429,165 @@ classifier-definitions request.
 
 ---
 
+## NV-027 — "angry" register cluster: which of 6 candidates are real distinct-register synonyms vs. OCR noise
+
+**Status:** OPEN. Raised in Claude A review of
+`docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md` item 1.
+
+**Native response (verbatim):** "Yes, ka·o·nang·a is a general purpose
+word for angry."
+
+**Determination:** `ka·o·nang·a` confirmed as the general-purpose
+production value — no change needed there. Thangseng was not asked
+about, and did not individually confirm or reject, the other five
+"angry" candidates already in `known_dictionary_conflicts.json`
+(`Ka-a chakna amja`, `Ka-a soa`, `bi·ka so·a`, `hel·hel`, `Ka-chaa`).
+**Open:** are these legitimate distinct-register synonyms (mild vs.
+intense anger, formal vs. colloquial) or OCR/transcription noise that
+should be pruned from the allowlist? Needs a follow-up native question
+listing all six explicitly.
+
+**Repository components impacted:** none yet — `known_dictionary_conflicts.json`
+allowlist entries unchanged pending this follow-up.
+
+---
+
+## NV-028 — "quarrel": new candidate `jegrika` needs orthography confirmation; existing `Kajia` entries unexplained; `bot·a` corrected
+
+**Status:** PARTIALLY RESOLVED. Raised in
+`docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md` item 3.
+
+**Native response (verbatim):** "Quarrel is jegrika. Bota does not
+necessarily mean quarrel. It carries the meaning of to incite or
+provoke. I'm coming across the word niria for the first time. I don't
+know about that one."
+
+**Determination:**
+- `bot·a` = "to incite/provoke," **not** quarrel — confirmed wrong as a
+  quarrel-gloss. Corrected in `master_dictionary.json` (see below).
+- `ni·ri·a` — unrecognized by Thangseng. Left as-is
+  (`UNVERIFIED/HIGH`), not deleted — absence of recognition isn't
+  the same as rejection; could be regional/dialectal. Do not promote
+  or generalize from this entry until independently confirmed.
+- `jegrika` — new primary candidate for "quarrel," but Thangseng's
+  answer came with no raka marks or syllable-boundary indication.
+  Per this project's own raka discipline (never guess placement), this
+  is **not** being added to `master_dictionary.json` yet. Needs a
+  direct follow-up asking for the exact written form.
+- **New discrepancy surfaced, not resolved:** `master_dictionary.json`
+  already contains `"Quarrel"`/`"dispute"` → `Kajia` (indices 8335–8337,
+  from the same Bakwe/Kaj- dictionary source as the `Kajina`/`Kajana`
+  duty confusion in NV item 6 below) — Thangseng's answer didn't
+  mention `Kajia` at all. Unclear whether `Kajia` is wrong, a synonym,
+  or a different register. Given `Kajina`/`Kajana`/`Ka·jana` already
+  turned out to be three unrelated words colliding by orthographic
+  coincidence, `Kajia` sitting in the same word-family cluster is worth
+  specific follow-up rather than assuming it's fine by default.
+
+**Repository components impacted:** `master_dictionary.json` index 5730
+(`english: "quarrel"`, `garo: "bot·a"`) corrected to `english: "incite"`
+— see commit. Index 5731 (`ni·ri·a`) and the `Kajia` cluster (8335–8337)
+left untouched pending follow-up.
+
+---
+
+## NV-029 — "tied"/"bound": converb+auxiliary construction confirmed; generalization beyond "tie" untested
+
+**Status:** OPEN (grammar rule provisionally added as RULE-039, marked
+Needs Native Validation for generalization).
+
+**Native response (verbatim):** "To tie is ka·a. There is no raka. The
+reason some things seem missing is probably because it is missing. The
+Garo grammar simply does not have them. Instead Garo grammar takes the
+help of additional words to make sense of it. The dog is tied. =
+Achakko kae donenga. Or Achak kae donako man·enga."
+
+**Determination:** Garo has no single-word stative/passive participle
+for "tied" — the meaning is built periphrastically via a converb
+(`ka·e`, "having tied") + auxiliary (`don·enga`/`man·enga`). This is a
+genuine grammar gap, not a missing lexicon entry — see RULE-039 below
+for the formalized pattern. **Not yet confirmed to generalize** beyond
+"tie": needs 2–3 more examples with different verbs (e.g. "is hung,"
+"is hidden," "is broken") before Claude B implements a general
+converb+auxiliary rule rather than a one-off `"tied"` translation.
+
+**Repository components impacted:** `docs/GRAMMAR_RULE_CATALOGUE.md`
+RULE-039 (new, provisional). No engine changes yet — Claude B should
+not implement general passive/stative construction from this single
+verb alone.
+
+---
+
+## NV-030 — `ong·ja` vs. `dongja` negative-existential: free variation or contextual?
+
+**Status:** OPEN. Surfaced as a loose end in the same answer that
+resolved RC-CANDIDATE-017 (see NV-032 below) — Thangseng gave both
+forms for the same sentence ("The book is not on the table") without
+marking either as preferred.
+
+**Native response (verbatim, full sentence):** "Ki·tap tableo ong·ja/
+dongja."
+
+**Determination:** not resolved by this data point alone. Could be
+free variation (either acceptable, no meaning difference), a
+register/dialect difference, or a syntactic conditioning environment
+neither form's usage has been tested against yet. Do not treat as
+interchangeable in engine logic until confirmed either way.
+
+**Repository components impacted:** none yet — flagging only.
+
+---
+
+## NV-031 — Interrogative `-ma`: second data point, still future-tense only
+
+**Status:** OPEN, feeds `RC-CANDIDATE-020`/`RC-CANDIDATE-021`.
+
+**Native response (verbatim):** "The interrogative ma is always with
+the the verb. It is placed at the very last. Example: cha·genma? =
+Will (you) eat?; Cha·jawama? = Will (you) not eat?"
+
+**Determination:** confirms `-ma` is always verb-final (consistent
+with the single prior data point in
+`docs/PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md`),
+and gives the first confirmed **negative**-future-interrogative form,
+stacking `jawa` (negative future) + `ma` (interrogative):
+`cha·jawama?`. Present-tense, past-tense, and object-present
+interrogative forms remain entirely unconfirmed — `RC-CANDIDATE-021`
+stays open; do not generalize `-ma` placement to non-future tenses from
+this data.
+
+**Repository components impacted:** none yet — insufficient data to
+implement.
+
+---
+
+## NV-032 — Negation + locative predicates do not conflict — resolves `RC-CANDIDATE-017`
+
+**Status:** CLOSED — native-confirmed, 2026-07-22 (relayed via Project
+Owner → Thangseng).
+
+**Native response (verbatim):** "Yes, negation does survive with a
+locative predicate because the locative suffix is used with the noun,
+whereas the negative is used with the verb. Example. The book is not
+on the table. = Ki·tap tableo ong·ja/ dongja. Note the the locative o
+is with the noun table (tableo). The negative ja is with the verb
+(ong·ja/dongja)."
+
+**Determination:** locative marker `·o` and negative marker `ja`
+attach to different hosts (noun vs. verb respectively) and never
+compete for the same slot. `RC-CANDIDATE-017`'s suspected negation-loss
+bug is not a grammar-rule gap — if the engine loses negation on
+locative-predicate sentences, it's an implementation bug in how the two
+suffixes compose, not a missing linguistic rule. See NV-030 above for
+the still-open `ong·ja`/`dongja` variant question this same answer
+raised.
+
+**Repository components impacted:** `RC-CANDIDATE-017` in
+`docs/PENDING_REGRESSION_CASES.md` — closed with this determination,
+handed to Claude B to verify against actual engine output.
+
+---
+
 ## Closed Questions
 - **NV-006** (`·ko`/`·o` selection) — closed 2026-07-12, effectively
   resolved as engineering work, not a native question. See NV-006 above

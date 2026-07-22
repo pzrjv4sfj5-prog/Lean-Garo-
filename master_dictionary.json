@@ -36972,12 +36972,12 @@
     "notes": "variant/UNVERIFIED/HIGH"
   },
   {
-    "english": "quarrel",
+    "english": "incite",
     "garo": "bot·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ni-ri-a"
+    "notes": "Native-confirmed 2026-07-22 (Thangseng, via PO): bot·a means to incite/provoke, NOT quarrel. Re-glossed from erroneous \"quarrel\" entry; cross-ref v:ni-ri-a preserved as-is (ni·ri·a unconfirmed, see NV-028)."
   },
   {
     "english": "quarrel",
@@ -55438,16 +55438,17 @@
   },
   {
     "english": "Tax",
-    "garo": "Kajana, Kajina",
+    "garo": "Kajina",
     "category": null,
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry. Native-confirmed 2026-07-22 (Thangseng, via PO): Kajina=tax/duty; Kajana=negative of \"to tie\"; Ka·jana=negative of \"to do\" — three unrelated words, not spelling variants. Corrected from erroneous comma-joined value."
   },
   {
     "english": "Tax",
-    "garo": "Kajina, Kajana",
+    "garo": "Kajina",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "Native-confirmed 2026-07-22 (Thangseng, via PO): Kajina=tax/duty; Kajana=negative of \"to tie\"; Ka·jana=negative of \"to do\" — three unrelated words, not spelling variants. Corrected from erroneous comma-joined value."
   },
   {
     "english": "rent",
@@ -55593,9 +55594,10 @@
   },
   {
     "english": "duty",
-    "garo": "Kajina, Kajana",
+    "garo": "Kajina",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "Native-confirmed 2026-07-22 (Thangseng, via PO): Kajina=tax/duty; Kajana=negative of \"to tie\"; Ka·jana=negative of \"to do\" — three unrelated words, not spelling variants. Corrected from erroneous comma-joined value."
   },
   {
     "english": "A kind of fish",

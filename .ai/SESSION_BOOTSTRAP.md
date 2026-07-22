@@ -103,19 +103,38 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**NEW, 2026-07-22, Claude B — read first:** Thangseng answered 7 open
-items in one batch (angry/right/quarrel/work/tie-bind/duty/negation-
-locative, plus new interrogative data). Logged verbatim, unimplemented,
-in `docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md` —
-read that file before touching any of these words. Two items need real
-headword/grammar restructuring, not a single substitution: "right"
-splits into 3 distinct senses (direction/matching/correct — all
-currently collapsed onto one compiled key), and "tied"/"bound" turned
-out to be a periphrastic converb+auxiliary construction with no
-single-word form at all, not a missing lexicon entry. "duty" is
-confirmed as an active wrong-word bug (`Kajana`/`Kajina` are unrelated
-words that collided, not spelling variants) — needs correcting, not
-just deduplicating.
+**UPDATED, 2026-07-22, Claude A — Thangseng batch reviewed, disposition
+table in `docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md`
+Status section. Summary for Claude B:**
+- **"duty" fixed** — `master_dictionary.json` #8323/8324/8346 and
+  `pending_lexicon.json` PL-0001247/1248/1270 corrected to `Kajina`
+  alone. `repository-intelligence.js` clean, 100/100 tests, build OK.
+- **"quarrel"=`bot·a` corrected** to `english: "incite"` (#5730,
+  `master_dictionary.json`). New candidate `jegrika` **not** added —
+  orthography unconfirmed, see NV-028.
+- **Two items need real headword restructuring, not touched in this
+  pass, engineering handoff pending:** "right" splits into 3 headwords
+  (RULE-040) and "work" splits into noun/verb forms (RULE-041). Both
+  need Claude B to design the actual key-split in the compiled
+  dictionary — not a value substitution.
+- **"tied"/"bound" — RULE-039, provisional, one verb only.** Do not
+  implement a general passive/stative rule from this; needs 2–3 more
+  verbs confirmed first (NV-029).
+- **RC-CANDIDATE-017 closed** — negated-copula form confirmed
+  (`ong·ja`/`dongja`), implementation blocker removed, Claude B has a
+  target form now. Separate "under" pseudo-verb sub-question stays
+  open.
+- 6 new open questions logged (NV-027 through NV-032) for future
+  Thangseng relay — not blocking current work.
+
+Claude D's ingestion contract also shipped this session —
+`scripts/claude-d-preflight.js`, notes in
+`docs/CLAUDE_D_INGESTION_CONTRACT_20260722.md`. Two implementation
+deviations from Claude A's draft, both reviewed and accepted as
+correct engineering calls (production's real trim-only duplicate
+check, not the draft's undefined raka-stripping one; provenance
+checked via `pending_lexicon.json` only, matching how
+`promote-lexicon.js` actually works). No override needed.
 
 **Standing directive, Project Owner, 2026-07-22 (relayed via Claude
 B):** do not overwrite these newly-confirmed words, and do not enter

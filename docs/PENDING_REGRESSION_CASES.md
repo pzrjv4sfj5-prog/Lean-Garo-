@@ -428,6 +428,25 @@ Thangseng with both forms (`...kokkimao ong·ja` vs. `...kokkimaoja`)
 before Claude B patches the "on" path to mimic "under" — copying the
 wrong pattern would just make both cases consistently wrong.
 
+**Claude A update (2026-07-22) — negated-copula surface form now
+confirmed, closing that specific blocker:** direct Thangseng relay
+resolves the "remaining uncertainty" noted above. `"The book is not
+on the table"` = `Ki·tap tableo ong·ja` (or `dongja` — both given,
+free-variation status unresolved, see NV-030). Confirms locative `·o`
+attaches to the noun and negative `ja` attaches to the verb
+independently — they never compete for one slot. **This means the
+"on" case should use a separate negated copula (`ong·ja`/`dongja`)
+attached where `assembleGrammar` currently finds no verb slot at all**,
+consistent with RULE-G2/033's separate-copula pattern, not a fused
+pseudo-verb like `Kokkimaoja`. **Implementation blocker removed** —
+Claude B has a confirmed target form to implement the
+`grammar.verb === null` negation-attachment fallback against.
+**Still open, not resolved by this answer:** the separate "under"
+question above (whether `Kokkimaoja` is a real distinct stative verb
+or an existing bug) — do not assume today's answer validates or
+invalidates that pattern; it wasn't asked about. Full record in
+`docs/THANGSENG_NATIVE_VALIDATION.md` NV-032.
+
 ### RC-CANDIDATE-018 — `·gen` (future suffix) renders as a floating orphan token
 **Conclusion:** `"the dog will eat rice"` → `"Achak Mi ·gen Cha·a"` —
 `·gen` should attach to the verb (`Cha·a`) but instead sits as its own

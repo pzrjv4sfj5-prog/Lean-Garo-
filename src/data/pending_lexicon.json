@@ -32886,11 +32886,11 @@
   {
     "id": "PL-0001247",
     "english": "Tax",
-    "garo": "Kajana, Kajina",
+    "garo": "Kajina",
     "category": null,
     "pos": "n.",
     "classifier": null,
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry. Corrected 2026-07-22 by Claude A: native-confirmed (Thangseng, via PO) that Kajina=tax/duty and Kajana=unrelated negated verb (\"not tie\"), not spelling variants. garo field updated to match the corrected master_dictionary.json value.",
     "provenance": {
       "source": "Print dictionary",
       "source_page": "113",
@@ -32915,11 +32915,11 @@
   {
     "id": "PL-0001248",
     "english": "Tax",
-    "garo": "Kajina, Kajana",
+    "garo": "Kajina",
     "category": null,
     "pos": "n.",
     "classifier": null,
-    "notes": null,
+    "notes": "Corrected 2026-07-22 by Claude A: native-confirmed (Thangseng, via PO) that Kajina=tax/duty and Kajana=unrelated negated verb (\"not tie\"), not spelling variants. garo field updated to match the corrected master_dictionary.json value.",
     "provenance": {
       "source": "Print dictionary",
       "source_page": "113",
@@ -33510,11 +33510,11 @@
   {
     "id": "PL-0001270",
     "english": "duty",
-    "garo": "Kajina, Kajana",
+    "garo": "Kajina",
     "category": null,
     "pos": "n.",
     "classifier": null,
-    "notes": null,
+    "notes": "Corrected 2026-07-22 by Claude A: native-confirmed (Thangseng, via PO) that Kajina=tax/duty and Kajana=unrelated negated verb (\"not tie\"), not spelling variants. garo field updated to match the corrected master_dictionary.json value.",
     "provenance": {
       "source": "Print dictionary",
       "source_page": "113",
