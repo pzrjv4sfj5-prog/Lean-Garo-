@@ -38543,5 +38543,2019 @@
     },
     "promotion_status": "promoted",
     "promoted_date": "2026-07-22T05:27:04.859Z"
+  },
+  {
+    "id": "PL-0001460",
+    "english": "juicy",
+    "garo": "Bitchi gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Typo 'suculent' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001461",
+    "english": "suculent",
+    "garo": "Bitchi gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Typo 'suculent' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001462",
+    "english": "having egg.",
+    "garo": "Bitchi gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Typo 'suculent' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001463",
+    "english": "scab",
+    "garo": "Bisingkap",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001464",
+    "english": "scale",
+    "garo": "Bisingkap",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Tochakani"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001465",
+    "english": "shell.",
+    "garo": "Bisingkap",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001466",
+    "english": "seed",
+    "garo": "Bitchil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bit·chi·ri"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001467",
+    "english": "grain for use as seed.",
+    "garo": "Bitchil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001468",
+    "english": "to sow seeds",
+    "garo": "Bitchil sata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'broarcast' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001469",
+    "english": "to scatter seeds by hand",
+    "garo": "Bitchil sata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'broarcast' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001470",
+    "english": "to broarcast seeds.",
+    "garo": "Bitchil sata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'broarcast' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001471",
+    "english": "to burrow",
+    "garo": "Bita",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'penerate' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001472",
+    "english": "to force through thickets",
+    "garo": "Bita",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'penerate' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001473",
+    "english": "to pierce or penetrate (with an arrow, spear, bullet or any pointed thing).",
+    "garo": "Bita",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'penerate' preserved.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001474",
+    "english": "the fleshy part of the plant",
+    "garo": "Bita (Bi-ta)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001475",
+    "english": "bulb.",
+    "garo": "Bita (Bi-ta)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001476",
+    "english": "fruit",
+    "garo": "Bite",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bi·te"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001477",
+    "english": "crops",
+    "garo": "Bite",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001478",
+    "english": "result",
+    "garo": "Bite",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001479",
+    "english": "benefit.",
+    "garo": "Bite",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001480",
+    "english": "the ear of the paddy.",
+    "garo": "Bitenggak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001481",
+    "english": "a piece of meat",
+    "garo": "Bitin",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001482",
+    "english": "lump or cold of anything.",
+    "garo": "Bitin",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001483",
+    "english": "to move backward without turning the body.",
+    "garo": "Bitina (Bit-dina)",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001484",
+    "english": "persistently",
+    "garo": "Biting-biting",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001485",
+    "english": "obstinately.",
+    "garo": "Biting-biting",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001486",
+    "english": "to make a nest.",
+    "garo": "Bitip ra·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001487",
+    "english": "nest.",
+    "garo": "Bitip (Bi-tip)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001488",
+    "english": "nidus.",
+    "garo": "Bitip (jo·ongrangni)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001489",
+    "english": "trunk",
+    "garo": "Bitong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bi·am·bong"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001490",
+    "english": "girth",
+    "garo": "Bitong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001491",
+    "english": "shaft",
+    "garo": "Bitong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bi·sok"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001492",
+    "english": "stalk (of a herb).",
+    "garo": "Bitong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001493",
+    "english": "to burrow and thrown up the earth (stopping the hole as worms or mole).",
+    "garo": "Bitpinga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001494",
+    "english": "a dark night.",
+    "garo": "Bitsim, Jabitsim",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001495",
+    "english": "blade",
+    "garo": "Biwa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001496",
+    "english": "cutting edge",
+    "garo": "Biwa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001497",
+    "english": "an edge (of a knife, chopper, etc.).",
+    "garo": "Biwa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001498",
+    "english": "the inturning spikes which permit entrance into a basket trap for fish but prevent ingress.",
+    "garo": "Biwa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Separate entry for repeated headword.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001499",
+    "english": "the part of the bamboo between nodes",
+    "garo": "Biweng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001500",
+    "english": "interlace",
+    "garo": "Biweng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001501",
+    "english": "a single division from node to node of a bamboo.",
+    "garo": "Biweng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001502",
+    "english": "to float",
+    "garo": "Boa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001503",
+    "english": "to carry the load.",
+    "garo": "Boa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001504",
+    "english": "swelling of the body.",
+    "garo": "Boa (Be·en)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001505",
+    "english": "to tell a lie",
+    "garo": "Bo·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Double period at the end of the entry.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001506",
+    "english": "to lie",
+    "garo": "Bo·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Double period at the end of the entry.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001507",
+    "english": "to speak falsely..",
+    "garo": "Bo·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Double period at the end of the entry.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001508",
+    "english": "to pack up (cloths) and go.",
+    "garo": "(Ba·ra) Boe kata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001509",
+    "english": "dumb.",
+    "garo": "Bo·ba",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001510",
+    "english": "an enemy",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001511",
+    "english": "a rival",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001512",
+    "english": "an antagonist",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001513",
+    "english": "a foe",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001514",
+    "english": "an adversary.",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001515",
+    "english": "enmity",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001516",
+    "english": "rivalry",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001517",
+    "english": "hatred",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Mittera"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001518",
+    "english": "strife",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001519",
+    "english": ".spite.",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'.",
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001520",
+    "english": "a sister-in-law",
+    "garo": "Bochi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001521",
+    "english": "an elder brother's wife.",
+    "garo": "Bochi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001522",
+    "english": "knave",
+    "garo": "Bodmas",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001523",
+    "english": "rouge.",
+    "garo": "Bodmas",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001524",
+    "english": "to exchange",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001525",
+    "english": "to change",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001526",
+    "english": "to replace",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001527",
+    "english": "to replenish",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001528",
+    "english": "to change one thing for another.",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001529",
+    "english": "a book",
+    "garo": "Bohi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001530",
+    "english": "a note-book.",
+    "garo": "Bohi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001531",
+    "english": "a heron",
+    "garo": "Boga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001532",
+    "english": "a crane",
+    "garo": "Boga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001533",
+    "english": "a stork.",
+    "garo": "Boga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001534",
+    "english": "a ditch.",
+    "garo": "Boi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001535",
+    "english": "an oar.",
+    "garo": "Boita",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001536",
+    "english": "a numerical prefix used for large bundles of bamboos, fire wood, etc.",
+    "garo": "Boja",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A'chik-English Dictionary",
+      "source_page": "30",
+      "import_batch": "IMPORT-2026-07-22T16-40-13-123Z",
+      "import_date": "2026-07-22T16:40:13.144Z",
+      "ocr_version": "gemini-v1"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
   }
 ]
