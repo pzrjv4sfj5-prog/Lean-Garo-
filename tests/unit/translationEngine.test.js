@@ -493,6 +493,70 @@ test('corrections.json: "smile" resolves to its own word, not to laugh', async (
   assert.ok(r.garo.includes('ka·ding·sim·ik·a'), `must use smile's own word, got: ${r.garo}`);
 });
 
+// --- RC-CANDIDATE-026: silent-e "+s" verb stemming bug. Found testing
+// the page-113-115 import (tickle/hope/etc), but not specific to that
+// vocabulary - any verb whose base already ends in a silent 'e' hits
+// this. The es$ suffix-stripping branch in findVerbForm assumed every
+// "-es" ending is a genuine sibilant -es form (watches->watch), but
+// tickle->tickles, like->likes, hope->hopes, close->closes strip to a
+// non-word ("tickl") and silently fail, causing analyzeGrammar's verb
+// search to skip the real verb and mis-pick a later noun instead. Fixed
+// with an e-restoration fallback that only fires when the existing
+// es$-stripped form doesn't resolve - genuine sibilant -es verbs are
+// unaffected (confirmed: "watches" still resolves via the earlier
+// branch and never reaches the new fallback). 237-sentence benchmark
+// diffed byte-for-byte before/after (combined with the headword fixes
+// below): zero unintended changes.
+
+test('RC-CANDIDATE-026: verb present for a silent-e base with an object present ("tickle")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('she tickles the baby');
+  assert.ok(r.garo.includes('lek·gu·a'), `verb must not be silently dropped, got: ${r.garo}`);
+  assert.ok(r.garo.includes('gen·da·ko'), `object must carry its ·ko marker, got: ${r.garo}`);
+});
+
+test('RC-CANDIDATE-026: verb present for a silent-e base with an object present ("like")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('she likes rice');
+  assert.notEqual(r.garo, 'Ua mi', 'verb must not be silently dropped');
+});
+
+test('RC-CANDIDATE-026: verb present for a silent-e base with an object present ("close")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he closes the door');
+  assert.notEqual(r.garo, 'Ua do·oga', 'verb must not be silently dropped');
+});
+
+test('RC-CANDIDATE-026 regression guard: genuine sibilant -es verbs are unaffected ("watch")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he watches the dog');
+  assert.equal(r.garo, 'Ua achak·ko ni·rik·a');
+});
+
+// --- Two page-113 dictionary entries had a corrupted English headword
+// (embedded worked-example text leaked in from the source dictionary's
+// "-adj./-n." OCR pattern, e.g. "wrangling. Kajia ka·a, v. To quarrel"
+// instead of just "wrangling"). Cleaned in master_dictionary.json and
+// pending_lexicon.json (audit-trail consistency); the Garo value was
+// never touched, no new linguistic content chosen. A third entry
+// ("duty") had the same corruption but was deliberately left as-is: 
+// cleaning it collides with a separate pre-existing "duty" entry
+// (reordered Garo variant), a genuine duplicate that repository-
+// intelligence.js correctly flags as needing Claude A's review before
+// either can be resolved - not resolved here.
+
+test('dictionary hygiene: "wrangling" resolves to its own clean headword', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('wrangling');
+  assert.equal(r.garo, 'Kajia');
+});
+
+test('dictionary hygiene: "creek" resolves to its own clean headword', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('creek');
+  assert.equal(r.garo, 'Kal');
+});
+
 // --- Interrogative formation (Project Owner directive root cause 3) is
 // deliberately NOT implemented or tested here. No confirmed Claude A
 // linguistic guidance exists yet for Garo question formation - only one

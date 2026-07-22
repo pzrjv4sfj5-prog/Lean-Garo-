@@ -203,6 +203,23 @@ function findVerbForm(w) {
       if (IRREGULAR_VERBS[yForm]) return IRREGULAR_VERBS[yForm];
       if (lookupGaro(yForm)) return lookupGaro(yForm);
     }
+    // Silent-e "+s" fallback (found 2026-07-22, page-113-115 vocab
+    // testing): "tickles" strips to "tickl" via the es$ branch above,
+    // which isn't a real word, so the verb search loop in
+    // analyzeGrammar silently rejected it and mis-picked a later noun
+    // as the verb instead ("she tickles the baby" -> "Ua gen·da",
+    // dropping the verb; also confirmed on "likes"/"hopes"/"closes").
+    // Root cause: verbs whose base already ends in a silent 'e'
+    // (tickle, like, hope, close) just add a bare 's' for 3rd-person,
+    // but that superficially looks identical to a genuine sibilant -es
+    // form (watches, fixes). Restoring the 'e' as a fallback here only
+    // fires when the es$-stripped form didn't resolve, so genuine -es
+    // verbs (which resolve one line up) are completely unaffected.
+    if (/es$/.test(w) && !/e$/.test(stripped)) {
+      const eForm = stripped + 'e';
+      if (IRREGULAR_VERBS[eForm]) return IRREGULAR_VERBS[eForm];
+      if (lookupGaro(eForm)) return lookupGaro(eForm);
+    }
   }
   return null;
 }
