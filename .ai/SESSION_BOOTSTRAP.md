@@ -434,10 +434,12 @@ proposed and rejected — it is the **repository ingestion/output layer**
 around that existing deterministic script's output, not a new
 reasoning stage. Concretely:
 
-- **Claude D SHALL:** run/wrap the existing deterministic Stage 1
-  script's output, validate it structurally, and write one JSON file
-  per processed page into `data/claude_d/` plus a `data/claude_d/manifest.json`
-  tracking processing status. Schema per entry:
+- **SUPERSEDED 2026-07-22 — see below, this bullet kept for history
+  only, do not follow it:** ~~Claude D SHALL run/wrap the existing
+  deterministic Stage 1 script's output, validate it structurally, and
+  write one JSON file per processed page into `data/claude_d/` plus a
+  `data/claude_d/manifest.json` tracking processing status. Schema per
+  entry:~~
   ```json
   {
     "english": "...", "garo": "...",
@@ -445,8 +447,39 @@ reasoning stage. Concretely:
     "notes": { "source": "Claude D", "page": 0, "status": "pending_linguistic_review", "ocr_confidence": null }
   }
   ```
-  Unknown linguistic fields stay `null` — Claude D never invents
-  metadata to fill them in.
+  ~~Unknown linguistic fields stay null — Claude D never invents
+  metadata to fill them in.~~ **Why superseded:** this bespoke
+  `data/claude_d/` schema was one of three incompatible schemas
+  reaching Claude A this project's life (the others: canonical
+  `garo_to_english`, flat legacy) — logged as `RC-CANDIDATE-024`. Fixed
+  by `docs/CLAUDE_D_INGESTION_CONTRACT_SPEC.md` (Claude A, design) +
+  `docs/CLAUDE_D_INGESTION_CONTRACT_20260722.md` (Claude B,
+  implementation notes + 2 documented deviations) +
+  `scripts/claude-d-preflight.js` (Claude B, the actual tool).
+- **Current, as of 2026-07-22 — Claude D SHALL:** after transcribing a
+  page, emit the canonical `garo_to_english` schema (`english`, `garo`,
+  `category?`, `pos?`, `classifier?`, `notes?`, `source`,
+  `source_page`, `ocr_version` — required fields last four, see the
+  contract spec Section 1 for full detail including how to split
+  `.—POS.` compound rows and pull out `entry_type: "example"` rows),
+  never the old `data/claude_d/` shape above and never the flat legacy
+  shape either. Then run:
+  ```
+  node scripts/claude-d-preflight.js <page.json> --source-page "N" \
+    --source "Dictionary Name" [--ocr-version "v1"]
+  ```
+  before touching `import-dictionary.js` at all. Exit code 2 means the
+  page was already processed — stop, don't re-transcribe silently, and
+  say so rather than working around it. Otherwise it writes
+  `<page>.clean.json` (feed this to `import-dictionary.js` unchanged)
+  and `<page>.manifest.json` (read this before deciding whether to
+  proceed — it flags likely duplicates/conflicts Claude D found on its
+  own, deterministically, same charter as `import-dictionary.js`: it
+  classifies, it never picks a winner). Read
+  `docs/CLAUDE_D_INGESTION_CONTRACT_20260722.md` in full before your
+  first page of this session — it documents two places the shipped
+  tool deliberately does something more conservative than the original
+  design brief said, and why.
 - **Claude D SHALL NOT:** perform linguistic review, infer meanings,
   assign category/pos/classifier, resolve dictionary conflicts, modify
   `pending_lexicon`, modify `master_dictionary.json`, modify repository
