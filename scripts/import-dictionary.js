@@ -49,11 +49,11 @@ const OPTIONAL_LEXICAL_FIELDS = ['category', 'pos', 'classifier', 'notes'];
 const OPTIONAL_PROVENANCE_FIELDS = ['source', 'source_page', 'ocr_version'];
 const ALL_INPUT_FIELDS = [...ENTRY_FIELDS, ...OPTIONAL_LEXICAL_FIELDS, ...OPTIONAL_PROVENANCE_FIELDS];
 
-function normalize(s) {
+export function normalize(s) {
   return (s || '').toString().toLowerCase().trim();
 }
 
-function loadJSON(p, fallback = null) {
+export function loadJSON(p, fallback = null) {
   if (!fs.existsSync(p)) {
     if (fallback !== null) return fallback;
     throw new Error(`File not found: ${p}`);
@@ -61,7 +61,7 @@ function loadJSON(p, fallback = null) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
 }
 
-function validateEntry(entry, idx) {
+export function validateEntry(entry, idx) {
   const errors = [];
   if (typeof entry !== 'object' || entry === null || Array.isArray(entry)) {
     return { valid: false, errors: [`entry ${idx}: not an object`] };
@@ -77,6 +77,34 @@ function validateEntry(entry, idx) {
     }
   }
   return { valid: errors.length === 0, errors };
+}
+
+// Builds the same {normalized-english -> Set<trimmed-garo>} index this
+// file uses internally for exact-duplicate/conflict detection against
+// production. Exported so Claude D's preflight tooling classifies
+// against literally the same data structure and equality rule this file
+// uses when it runs its own independent pass later — zero drift by
+// construction, not by convention. Equality here is intentionally
+// EXACT trim-only, matching this file's own isExactDup check below; it
+// does not strip raka marks, dashes, or spacing. See
+// docs/CLAUDE_D_INGESTION_CONTRACT_20260722.md for why that specific
+// point in the original draft spec doesn't match this file and was
+// deliberately not changed to match the draft instead.
+export function buildExistingIndex(masterDictionaryPath = 'master_dictionary.json') {
+  const existing = loadJSON(masterDictionaryPath);
+  const byKey = new Map();
+  for (const e of existing) {
+    const k = normalize(e.english);
+    if (!k) continue;
+    if (!byKey.has(k)) byKey.set(k, new Set());
+    byKey.get(k).add((e.garo || '').trim());
+  }
+  return byKey;
+}
+
+export function buildPendingKeys(pendingLexiconPath = 'src/data/pending_lexicon.json') {
+  const pendingLexicon = loadJSON(pendingLexiconPath, []);
+  return new Set(pendingLexicon.map(e => normalize(e.english)));
 }
 
 function nextPendingId(pendingLexicon) {
@@ -110,17 +138,9 @@ function main() {
     process.exit(1);
   }
 
-  const existing = loadJSON('master_dictionary.json');
-  const existingByKey = new Map();
-  for (const e of existing) {
-    const k = normalize(e.english);
-    if (!k) continue;
-    if (!existingByKey.has(k)) existingByKey.set(k, new Set());
-    existingByKey.get(k).add((e.garo || '').trim());
-  }
-
+  const existingByKey = buildExistingIndex('master_dictionary.json');
   const pendingLexicon = loadJSON('src/data/pending_lexicon.json', []);
-  const pendingKeys = new Set(pendingLexicon.map(e => normalize(e.english)));
+  const pendingKeys = buildPendingKeys('src/data/pending_lexicon.json');
 
   const malformed = [];
   const batchByKey = new Map();
@@ -246,4 +266,6 @@ function main() {
   }
 }
 
-main();
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main();
+}
