@@ -543,4 +543,31 @@ before the same import/review/promote workflow. Claude D does not
 wait for or act on the outcome of that review — its role is
 complete once the file is pushed.
 
+**PAT usage — mandatory, not optional (2026-07-21).** A push-capable
+session is worthless if the push never happens. When the Project
+Owner supplies a PAT to a Claude D session, that PAT must actually be
+used to authenticate the clone/push — pushing is the entire point of
+Claude D existing as a separate session; a Claude D session that
+converts files but never commits them provides zero value over Claude
+A doing the conversion itself. Concretely, in the Claude D session's
+sandbox, every time:
+```bash
+git clone https://<github-username>:<PAT>@github.com/<org>/<repo>.git
+# ...work happens in data/claude_d/ only...
+cd <repo>
+git add data/claude_d/
+git commit -m "Claude D: <page(s)> — processed / schema_not_recognized"
+git fetch origin main && git rebase origin/main   # in case Claude A/B pushed meanwhile
+git push origin main
+```
+If the PAT is embedded in the remote URL as above, `git push` needs no
+further prompt or credential step — if a session finds itself stuck
+asking for a username/password or silently not pushing, the PAT was
+not actually wired into the remote URL and that's the first thing to
+fix, not something to route around by reporting the conversion as
+"done" without a push. A converted-but-unpushed file does not exist as
+far as Claude A or the repository are concerned — `data/claude_d/` is
+the only handoff mechanism; there is no other channel.
+
+
 
