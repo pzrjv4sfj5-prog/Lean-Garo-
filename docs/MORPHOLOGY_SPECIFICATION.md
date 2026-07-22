@@ -185,3 +185,56 @@ worth distinguishing rather than treating uniformly:
   "mistake, error, fault" (verb ↔ its nominalization). Neither
   native-confirmed; logged as vocabulary candidates only, not
   promoted to any rule.
+
+## 8. Pending Affix Candidates — Not Native-Validated, Not Rules
+
+Source dictionary pages 114–115 (imported 2026-07-22) each carried a
+handful of entries the OCR extraction correctly tagged `entry_type:
+"example"` rather than `"lexical"` — worked example pairs illustrating
+an affix's usage rather than standalone dictionary headwords. These
+were pulled out of the normal vocabulary-import pipeline (they don't
+fit a single-headword/single-gloss row, and `flip-garo-to-english.js`
+deliberately refuses to guess how to handle a type it doesn't
+recognize — see its error message). They are **not** in
+`master_dictionary.json` or `pending_lexicon.json`. Logged here as
+raw evidence only. Tentative hypotheses below are Claude A's first
+pass, not confirmed — do not cite these as settled grammar, do not
+build engine logic on them, and do not let them anchor later
+interpretation the way the `RC-CANDIDATE-022` "bird" mislabel almost
+did.
+
+**`-kal` / `-kal-a` — possible comparative marker ("than"):**
+```
+"go"                      -> "re·angkal-let (one)"
+"stay"                    -> "rokal-let (him)"
+"this is better than that" -> "Una batede ian namkala"
+"He reads more than I (do)" -> "Angna batede uan poraibatkala"
+```
+Tentative: `-kal`/`-kal-a` may mark the standard-of-comparison in a
+comparative construction, with `-let` marking the compared referent
+("one"/"him"). Not confirmed — needs a native check on at least one
+minimal pair before any rule number is assigned.
+
+**`-kama` — possible durative/sufficiency marker:**
+```
+"to remain in the house for some length of time" -> "noko dongkama"
+"to reach the destination; to be long enough for the purpose" -> "sokkama"
+```
+Tentative: `-kama` may mark "for a sufficient duration" or "to a
+sufficient degree," attached to a verb root (`dong`="stay"?,
+`sok`="reach"?). Not confirmed.
+
+**`-kamkama` — possible intensified/exclusive form of `-kama`:**
+```
+"his only son died" -> "Uni saksakamkam depanteba siangkamkama"
+```
+Only one data point, and it's a full sentence rather than an isolated
+morpheme — too little to hypothesize a specific meaning beyond "some
+reduplicated/intensified relative of `-kama`." Needs several more
+examples before even a tentative gloss is worth writing down.
+
+**Status:** all three logged for the next native relay batch, phrased
+as open questions, not sent yet. Not blocking anything — pages
+114–115's actual vocabulary entries (81 + 82 flat entries respectively)
+were processed normally and are already in production.
+

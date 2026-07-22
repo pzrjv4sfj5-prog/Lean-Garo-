@@ -55090,5 +55090,1677 @@
     "garo": "Ka-dimea",
     "category": null,
     "pos": "v."
+  },
+  {
+    "english": "Consolation",
+    "garo": "Ka-dimeani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A head ornament",
+    "garo": "Kadisil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a circle of cloth covered with brass studs and worn round the head on a level with the brow",
+    "garo": "Kadisil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To beat or punish one instead of another with whom one is angry or displeased",
+    "garo": "Ka-dona",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To hope",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to hope",
+    "garo": "Ka-dongsoa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to have faith",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to rely on",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to have courage",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to expect",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "To expect",
+    "garo": "Ka-dongsoa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be brave, bold",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to trust",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "faith",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "confidence",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "reliance",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "trust",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "With hope",
+    "garo": "Ka-donga gnang",
+    "category": null,
+    "pos": "adv.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "with confidence",
+    "garo": "Ka-donga gnang",
+    "category": null,
+    "pos": "adv.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Want of confidence",
+    "garo": "Ka-dongna man-gijani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "distrust",
+    "garo": "Ka-dongna man-gijani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "diffidence",
+    "garo": "Ka-dongna man-gijani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Hopeful",
+    "garo": "Ka-dongani gnang",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "having confidence",
+    "garo": "Ka-dongani gnang",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Hopeless",
+    "garo": "Ka-donga gri",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Hopeless",
+    "garo": "Ka-donga man-gijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "no hope",
+    "garo": "Ka-donga gri",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "having no trust on (one)",
+    "garo": "Ka-donga gri",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "unreliable",
+    "garo": "Ka-donga man-gijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "who can not be trusted",
+    "garo": "Ka-donga man-gijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "untrustworthy",
+    "garo": "Ka-donga man-gijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To encourage",
+    "garo": "Ka-dongata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to embolden",
+    "garo": "Ka-dongata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to animate",
+    "garo": "Ka-dongata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Hero",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "a brave man",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "fearless",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "brave",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "brave",
+    "garo": "Ka-grak",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "gallant",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "courageous",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "courageous",
+    "garo": "Ka-grak",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "daring",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "intrepid",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to anticipate",
+    "garo": "Ka-dongsoa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Reliable",
+    "garo": "Ka-dongna man-gipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "trustworthy",
+    "garo": "Ka-dongna man-gipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Fiery-tempered",
+    "garo": "Ka-dot",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "quick-tempered",
+    "garo": "Ka-dot",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "quick-tempered",
+    "garo": "Ka-grak",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To efface from memory",
+    "garo": "Ka-guala",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to forget",
+    "garo": "Ka-guala",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To bandage",
+    "garo": "Kagopa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Bold",
+    "garo": "Ka-grak",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Tax",
+    "garo": "Kajana, Kajina",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "Tax",
+    "garo": "Kajina, Kajana",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "rent",
+    "garo": "Kajana, Kajina",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "revenue",
+    "garo": "Kajana, Kajina",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "royalty",
+    "garo": "Kajana, Kajina",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "royalty",
+    "garo": "Kajina, Kajana",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "duty. Kajina gila, v. To realise royalty",
+    "garo": "Kajana, Kajina",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "to tax",
+    "garo": "Kajana, Kajina",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "to collect revenue",
+    "garo": "Kajana, Kajina",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "to impose tax",
+    "garo": "Kajana, Kajina",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "To tie tightly on the waist or stomach",
+    "garo": "Kajangjota",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "The meat or entraila cooked and eaten with or without drink or wine",
+    "garo": "Kaji",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'entraila' (entrails) preserved."
+  },
+  {
+    "english": "To pick a quarrel",
+    "garo": "Kajia bota",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "Quarrel",
+    "garo": "Kajia",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "dispute",
+    "garo": "Kajia",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "wrangling. Kajia ka·a, v. To quarrel",
+    "garo": "Kajia",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "to dispute",
+    "garo": "Kajia",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "To stir up excitement",
+    "garo": "Kajia ong·katata",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'forment' (foment) preserved."
+  },
+  {
+    "english": "to forment quarrel",
+    "garo": "Kajia ong·katata",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'forment' (foment) preserved."
+  },
+  {
+    "english": "To have the tickling sensation",
+    "garo": "Ka-jika",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to tickle",
+    "garo": "Ka-jika",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To tickle",
+    "garo": "Ka-jikata",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'tiltilate' (titillate) preserved."
+  },
+  {
+    "english": "to tiltilate",
+    "garo": "Ka-jikata",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'tiltilate' (titillate) preserved."
+  },
+  {
+    "english": "duty",
+    "garo": "Kajina, Kajana",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A kind of fish",
+    "garo": "Kajong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To be tired of",
+    "garo": "Ka-jroa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be disgusted",
+    "garo": "Ka-jroa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be fed up",
+    "garo": "Ka-jroa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to irri-tate",
+    "garo": "Ka-jroa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be annoyed",
+    "garo": "Ka-jroa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to have pain in the stomach",
+    "garo": "Ka-jroa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To strike with the back of the finger",
+    "garo": "Kaka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to strike with a knuckle",
+    "garo": "Kaka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To take offence or feels offended and wreak venge-ance",
+    "garo": "Ka-kama",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To one's satisfaction in avenging",
+    "garo": "Ka-kam-ka-kam",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "To tie to",
+    "garo": "Kakama",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be tied to",
+    "garo": "Kakama",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Just enough",
+    "garo": "Kakdokaia",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To do justice",
+    "garo": "Kakket daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to do fairly to one",
+    "garo": "Kakket daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to do honestly or faithfully",
+    "garo": "Kakket daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Honestly",
+    "garo": "Kakket ong·ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "truthfulness",
+    "garo": "Kakket ong·ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "fidelity",
+    "garo": "Kakket ong·ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "fealty",
+    "garo": "Kakket ong·ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Bile",
+    "garo": "Ka-kit",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to feel itch",
+    "garo": "Ka-kita",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Right",
+    "garo": "Kakket",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "true",
+    "garo": "Kakket",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "true",
+    "garo": "Kakketgipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "genuine",
+    "garo": "Kakket",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "just",
+    "garo": "Kakket",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Just",
+    "garo": "Kakket makket",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "actual",
+    "garo": "Kakket",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "rightly",
+    "garo": "Kakket",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "rightly",
+    "garo": "Kakket makket",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "exactly",
+    "garo": "Kakket makket",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "Unfaithful",
+    "garo": "Kaketgijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "dishonest",
+    "garo": "Kaketgijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "false",
+    "garo": "Kaketgijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "untrustworthy",
+    "garo": "Kaketgijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "unreliable",
+    "garo": "Kaketgijagipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Honest",
+    "garo": "Kakketgipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "truthful",
+    "garo": "Kakketgipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "trustworthy",
+    "garo": "Kakketgipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "reliable",
+    "garo": "Kakketgipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "The back of the neck",
+    "garo": "Ka-klok",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "scruff",
+    "garo": "Ka-klok",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the nape",
+    "garo": "Ka-klok",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "The lower part of the chest just below the breastbone which is a bit depressed",
+    "garo": "Ka-kol",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the pit of one's stomach",
+    "garo": "Ka-kol",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To tie or bind the arms or limbs of an animal or man",
+    "garo": "Kakomprota",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To make a sound with the throat as a warning",
+    "garo": "Ka-krema",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to feign cough",
+    "garo": "Ka-krema",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to clear the throat",
+    "garo": "Ka-krema",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "(Melastoma malabuthreem",
+    "garo": "Kakku",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Thunbergia grandiflora). A large climber",
+    "garo": "Kakku",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A cymbal",
+    "garo": "Kakwa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A line of hair extending from the breast to the navel",
+    "garo": "Ka-kol",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Just enough",
+    "garo": "Kakrakaia",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "having nothing more to spare",
+    "garo": "Kakrakaia",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "barely sufficient",
+    "garo": "Kakrakaia",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To have nothing",
+    "garo": "Kakkrangkrang daka",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "not to have anything",
+    "garo": "Kakkrangkrang daka",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Ash used as soda",
+    "garo": "Kal",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "thorn",
+    "garo": "Kal",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "prickle",
+    "garo": "Kal",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "inlet",
+    "garo": "Kal",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "creek. Kal sola, v. To leach",
+    "garo": "Kal",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+  },
+  {
+    "english": "Deaf",
+    "garo": "Kala",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "hard of hearing",
+    "garo": "Kala",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To play",
+    "garo": "Kal-a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To play",
+    "garo": "Kal-grika",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to play a prank",
+    "garo": "Kal-a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to play a prank",
+    "garo": "Kal-ake",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To tease",
+    "garo": "Kal-ake",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to jeer at",
+    "garo": "Kal-ake",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to cajole",
+    "garo": "Kal-ake",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A sailor",
+    "garo": "Kalasi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a seaman",
+    "garo": "Kalasi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(Vernonia anthelmintica). A robust annual",
+    "garo": "Kala jira",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "seeds are used as medicine",
+    "garo": "Kala jira",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To play in (some place)",
+    "garo": "Kal-chaka",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "to play for another",
+    "garo": "Kal-chaka",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "Game",
+    "garo": "Kal-ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a play",
+    "garo": "Kal-ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a play thing",
+    "garo": "Kal-ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a toy",
+    "garo": "Kal-ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Business",
+    "garo": "Kalbal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "affairs",
+    "garo": "Kalbal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A room for passing urine",
+    "garo": "Kalbong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a privy",
+    "garo": "Kalbong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Ashes used as soda",
+    "garo": "Kalchi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To strain ash-water",
+    "garo": "Kalchi or Katchi sola",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to leach",
+    "garo": "Kalchi or Katchi sola",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A basket used to leach",
+    "garo": "Kalchokini",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A kind of fish",
+    "garo": "Kaldap",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A room in a house for discharging urine",
+    "garo": "Kaldik",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "an urinal",
+    "garo": "Kaldik",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Bad-odour",
+    "garo": "Kalek-kalchek",
+    "category": null,
+    "pos": "adj. & n."
+  },
+  {
+    "english": "unpleasant scent",
+    "garo": "Kalek-kalchek",
+    "category": null,
+    "pos": "adj. & n."
+  },
+  {
+    "english": "To lament",
+    "garo": "Kalima",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to wail",
+    "garo": "Kalima",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to mourn",
+    "garo": "Kalima",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "The god of life",
+    "garo": "Kalkambe",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Goera's brother",
+    "garo": "Kalkambe",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "tutelary god",
+    "garo": "Kalkambe",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A small species of the honey bee",
+    "garo": "Kal-mik",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A bamboo basket to spread the leaven on to dry",
+    "garo": "Kalpa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To speak irreverently of God",
+    "garo": "Kal-stapa",
+    "category": null,
+    "pos": "v. & n."
+  },
+  {
+    "english": "to blaspheme",
+    "garo": "Kal-stapa",
+    "category": null,
+    "pos": "v. & n."
+  },
+  {
+    "english": "to mock or scoff at",
+    "garo": "Kal-stapa",
+    "category": null,
+    "pos": "v. & n."
+  },
+  {
+    "english": "to deride",
+    "garo": "Kal-stapa",
+    "category": null,
+    "pos": "v. & n."
+  },
+  {
+    "english": "To deride",
+    "garo": "Kal-steka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "blasphemy",
+    "garo": "Kal-stapa",
+    "category": null,
+    "pos": "v. & n."
+  },
+  {
+    "english": "mockery",
+    "garo": "Kal-stapa",
+    "category": null,
+    "pos": "v. & n."
+  },
+  {
+    "english": "to mock at",
+    "garo": "Kal-steka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to scoff at",
+    "garo": "Kal-steka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Too narrow or short said of a garment",
+    "garo": "Kal-tangan",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Grey",
+    "garo": "Kaltapru",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Having iron taste as mineral spring water",
+    "garo": "Kaltinga",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Work",
+    "garo": "Kam",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "business",
+    "garo": "Kam",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "business",
+    "garo": "Kam",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "affairs",
+    "garo": "Kam",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "calling",
+    "garo": "Kam",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "a post",
+    "garo": "Kam",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "office",
+    "garo": "Kam",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "profession",
+    "garo": "Kam",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "To work",
+    "garo": "Kam",
+    "category": null,
+    "pos": "Kam ka·a, v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to do",
+    "garo": "Kam",
+    "category": null,
+    "pos": "Kam ka·a, v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to discharge one's duty",
+    "garo": "Kam",
+    "category": null,
+    "pos": "Kam ka·a, v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "To resign",
+    "garo": "Kam wata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to leave the work",
+    "garo": "Kam wata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Leisure",
+    "garo": "Kam jokani somoi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "leisure hour",
+    "garo": "Kam jokani somoi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "spare time",
+    "garo": "Kam jokani somoi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To burn",
+    "garo": "Kama",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to scorch",
+    "garo": "Kama",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to scorch",
+    "garo": "Kampraka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to catch fire",
+    "garo": "Kama",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "hot",
+    "garo": "Kama",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "burning",
+    "garo": "Kama",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Lower bank of the river",
+    "garo": "Ka·ma",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "lower reaches",
+    "garo": "Ka·ma",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "lower stream",
+    "garo": "Ka·ma",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "To put one thing above another for cutting",
+    "garo": "Kam·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Immediately",
+    "garo": "Kamaka",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Typo 'rushly' (for rushingly/hastily) preserved."
+  },
+  {
+    "english": "then and there",
+    "garo": "Kamaka",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Typo 'rushly' (for rushingly/hastily) preserved."
+  },
+  {
+    "english": "rushly",
+    "garo": "Kamaka",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Typo 'rushly' (for rushingly/hastily) preserved."
+  },
+  {
+    "english": "To mediate revenge",
+    "garo": "Ka·kama",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A priest",
+    "garo": "Kamal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a blacksmith",
+    "garo": "Kamal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "author",
+    "garo": "Kamal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a mid-wife",
+    "garo": "Kamal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A little below",
+    "garo": "Ka·mama",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "little down",
+    "garo": "Ka·mama",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "To hope",
+    "garo": "Ka·mana",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to expect",
+    "garo": "Ka·mana",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Nearest (in relation or space)",
+    "garo": "Kam·dak",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Top (as the head of man or top of the tree)",
+    "garo": "Kambe",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To fall in or to be taken ill (said of a person who is taken ill at the attainment of maturity and who has not been sick before)",
+    "garo": "Kambe pe·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To cut the top of the tree",
+    "garo": "Kambe ritama",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "to lop",
+    "garo": "Kambe ritama",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "To grow new leaves on the top",
+    "garo": "Kambe ritima",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "To burn slowly without flame",
+    "garo": "Kamchipila",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to smoulder",
+    "garo": "Kamchipila",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To burn out",
+    "garo": "Kamchona",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to reduce to ashes",
+    "garo": "Kamchona",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To threaten",
+    "garo": "Ka-mikkenata",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "to intimidate",
+    "garo": "Ka-mikkenata",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Only",
+    "garo": "Kam·kam",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "nearest",
+    "garo": "Kam·kam",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "A day-labourer",
+    "garo": "Kamila",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a worker",
+    "garo": "Kamila",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a coolie",
+    "garo": "Kamila",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a labour",
+    "garo": "Kamila",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To engage or hire a workman or labourer",
+    "garo": "Kamila ra·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A shirt",
+    "garo": "Kamis",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To move towards the feet when lying",
+    "garo": "Ka·monga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to lower",
+    "garo": "Ka·monga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To burn through",
+    "garo": "Kamponga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To burn slightly",
+    "garo": "Kampraka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to singe",
+    "garo": "Kampraka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "The smell of burning",
+    "garo": "Kamsenga (Kama seenga)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Hope",
+    "garo": "Ka-donga",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "To have some hope",
+    "garo": "Ka-donga gnang",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Bold",
+    "garo": "Ka-donggipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "In vain",
+    "garo": "Kakkrangkrang daka",
+    "category": null,
+    "pos": "adv.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Warm",
+    "garo": "Kama",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Below",
+    "garo": "Ka·ma",
+    "category": null,
+    "pos": "adv.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "Threat",
+    "garo": "Ka-mikkenata",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]"
   }
 ]
