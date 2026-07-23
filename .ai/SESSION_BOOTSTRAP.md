@@ -103,9 +103,36 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**UPDATED, 2026-07-22, Claude A — Thangseng batch reviewed, disposition
-table in `docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md`
-Status section. Summary for Claude B:**
+**NEW, 2026-07-23, Claude A — page 31 processed, one real preflight gap found:**
+No live Claude D session — Project Owner pasted raw page 31 OCR output
+directly. Claude A ran it through the actual pipeline by hand
+(`flip-garo-to-english.js` → `reduce-to-flat.js` →
+`claude-d-preflight.js` → `import-dictionary.js`), not just a
+conversational read. **Did not commit anything to `data/claude_d/`** —
+that directory is Claude D's exclusively per its own README; scratch
+files were run outside the repo and discarded after use.
+36 headwords, 48 flat entries, 41 promoted, 4 rejected (2 real
+duplicate pairs), 3 held `needs-discussion` (see
+`pending_lexicon.json` review notes for `Boka`, `Bol-i-bo`).
+**Note:** first run collided with a concurrently-pushed page 30 import
+(same base `PL-xxxx` numbering) — aborted the rebase rather than
+hand-merge JSON, reset to the post-page-30 state, and reran the whole
+pipeline fresh. Final IDs are `PL-0001537`–`PL-0001584`; identical
+disposition either way, only the numbers shifted.
+**Real gap found, documented in
+`docs/CLAUDE_D_INGESTION_CONTRACT_20260722.md`:** both this script's
+and `import-dictionary.js`'s duplicate detection key on `english`-text
+equality only. Two pairs on this page (`Bolasari`/`Bol-asa-ri`,
+`Bolasin`/`Bol-a-sin`) are the same headword with/without hyphens, but
+the source dictionary OCR'd their scientific-name glosses two
+different ways, so neither exact-duplicate nor within-batch conflict
+fired — caught only because Claude A manually compared the raw page.
+**Recommended fix, not yet built:** add a `garo`-keyed (not
+`english`-keyed) within-batch normalization pass to
+`claude-d-preflight.js` — strip `-`/`·`/spaces, lowercase, compare
+against other rows on the same page regardless of whether their
+`english` text matches. Full detail and exact recommendation in the
+contract doc's new "Gap found in production use" section.
 - **"duty" fixed** — `master_dictionary.json` #8323/8324/8346 and
   `pending_lexicon.json` PL-0001247/1248/1270 corrected to `Kajina`
   alone. `repository-intelligence.js` clean, 100/100 tests, build OK.

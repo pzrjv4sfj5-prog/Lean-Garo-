@@ -56764,5 +56764,257 @@
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
+  },
+  {
+    "english": "a bundle",
+    "garo": "Boja",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a load.",
+    "garo": "Boja",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to whiten.",
+    "garo": "Bokata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be boiling.",
+    "garo": "Bokbaka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "pale",
+    "garo": "Bokdelgapa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "white",
+    "garo": "Bokdelgapa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "bloodless.",
+    "garo": "Bokdelgapa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "etiolate.",
+    "garo": "Bokdalgepa (sal nangjae),",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "a small bundle of cloths.",
+    "garo": "Boksa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a present",
+    "garo": "Boksis",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a gratuity.",
+    "garo": "Boksis",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to present.",
+    "garo": "Boksis on·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "all white (said of many things collectively).",
+    "garo": "Boksogimgim",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "all white (said of many things collectively)",
+    "garo": "Boksoriri",
+    "category": null,
+    "pos": "adv. & adj."
+  },
+  {
+    "english": "a tree.",
+    "garo": "Bol",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a cultivated tree.",
+    "garo": "Bol (mandeni ge·a)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to sting (as hairy worms nettle)",
+    "garo": "Bola",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'seating' (instead of stinging) preserved."
+  },
+  {
+    "english": "to feel the smart or seating by a nettle or hairy worm.",
+    "garo": "Bola",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'seating' (instead of stinging) preserved."
+  },
+  {
+    "english": "(meliosma pinnata). a small tree",
+    "garo": "Bolandime",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the young leaves are eaten.",
+    "garo": "Bolandime",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(lagerstoemia flos reginae). a middle-sized deciduous tree.",
+    "garo": "Bolasari",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(disoxylyum hamiltonil). a fairly large evergreen tree.",
+    "garo": "Bolasin",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a leaf of the tree.",
+    "garo": "Bolbijak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a small tree",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the young tree",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "sapling",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "under wood",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "bushes",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "bramble.",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(teremeles nudiflora). a very large and tall deciduous tree.",
+    "garo": "Bol-bok",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(dysoxylum procerum). a large deciduous tree.",
+    "garo": "Bol-cha·chat",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a branch of the tree",
+    "garo": "Bolcheksi",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'twing' (for twig) preserved."
+  },
+  {
+    "english": "a twing.",
+    "garo": "Bolcheksi",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'twing' (for twig) preserved."
+  },
+  {
+    "english": "(duabanga sonneratioides). a large tree.",
+    "garo": "Bol-chim",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(hyptianthera stricta). an aromatic evergreen tree.",
+    "garo": "Bol-dik-i",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(hymenodictyon excelsum). a large deciduous tree.",
+    "garo": "Bol-dik-im",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(cordia grandis). a middle-sized tree with a spreading crown.",
+    "garo": "Bol-do-bak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(wendlaudia tluclorla). a shrub or small tree with straggling branches",
+    "garo": "Bol-gan-chi, Bol-nabat",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'mortant' (for mordant) preserved."
+  },
+  {
+    "english": "the bark is used as a mortant in dyeing.",
+    "garo": "Bol-gan-chi, Bol-nabat",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'mortant' (for mordant) preserved."
+  },
+  {
+    "english": "a piece of wood.",
+    "garo": "Bolgantong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(diospyros toposia). a large evergreen tree.",
+    "garo": "Bolgisim, Bol-gi-sim",
+    "category": null,
+    "pos": "n."
   }
 ]

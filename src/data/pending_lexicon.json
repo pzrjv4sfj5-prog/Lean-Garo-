@@ -40557,5 +40557,1271 @@
     },
     "promotion_status": "pending",
     "promoted_date": null
+  },
+  {
+    "id": "PL-0001537",
+    "english": "a bundle",
+    "garo": "Boja",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Bal"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001538",
+    "english": "a load.",
+    "garo": "Boja",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001539",
+    "english": "white.",
+    "garo": "Boka",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-v.' for secondary POS.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "needs-discussion",
+    "review_notes": "Boka: \"white\" (adj.) and \"to demand unduly\" (v.) share one headword. Could be genuine polysemy or two unrelated homonyms merged by the print dictionary — same failure mode as the Kajina/Kajana collision (NV-032 handoff). Needs native check before promotion.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001540",
+    "english": "to demand unduly.",
+    "garo": "Boka",
+    "category": null,
+    "pos": "-v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-v.' for secondary POS.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "needs-discussion",
+    "review_notes": "Boka: \"white\" (adj.) and \"to demand unduly\" (v.) share one headword. Could be genuine polysemy or two unrelated homonyms merged by the print dictionary — same failure mode as the Kajina/Kajana collision (NV-032 handoff). Needs native check before promotion.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001541",
+    "english": "to whiten.",
+    "garo": "Bokata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001542",
+    "english": "to be boiling.",
+    "garo": "Bokbaka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001543",
+    "english": "pale",
+    "garo": "Bokdelgapa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001544",
+    "english": "white",
+    "garo": "Bokdelgapa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Gipok",
+        "bok·a",
+        "gip·bok"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001545",
+    "english": "bloodless.",
+    "garo": "Bokdelgapa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001546",
+    "english": "etiolate.",
+    "garo": "Bokdalgepa (sal nangjae),",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001547",
+    "english": "a small bundle of cloths.",
+    "garo": "Boksa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001548",
+    "english": "a present",
+    "garo": "Boksis",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001549",
+    "english": "a gratuity.",
+    "garo": "Boksis",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001550",
+    "english": "to present.",
+    "garo": "Boksis on·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001551",
+    "english": "all white (said of many things collectively).",
+    "garo": "Boksogimgim",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001552",
+    "english": "all white (said of many things collectively)",
+    "garo": "Boksoriri",
+    "category": null,
+    "pos": "adv. & adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": "Cross-reference entry — source gloss was \"same as Boksogimgim,\" not usable as an English lookup key. Rewritten to Boksogimgim's actual sense per its own cross-reference. Not a translation judgment call, just resolving the dictionary's own pointer.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001553",
+    "english": "a tree.",
+    "garo": "Bol",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001554",
+    "english": "a cultivated tree.",
+    "garo": "Bol (mandeni ge·a)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001555",
+    "english": "to sting (as hairy worms nettle)",
+    "garo": "Bola",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'seating' (instead of stinging) preserved.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001556",
+    "english": "to feel the smart or seating by a nettle or hairy worm.",
+    "garo": "Bola",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'seating' (instead of stinging) preserved.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001557",
+    "english": "(meliosma pinnata). a small tree",
+    "garo": "Bolandime",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bolandime",
+        "Bol-an-dime"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001558",
+    "english": "(meliosma pinnata). a small tree",
+    "garo": "Bol-an-dime",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "rejected",
+    "review_notes": "Duplicate of PL-0001557 (Bolandime) — same headword, hyphenated OCR variant. Keeping compact form.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bolandime",
+        "Bol-an-dime"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001559",
+    "english": "the young leaves are eaten.",
+    "garo": "Bolandime",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bolandime",
+        "Bol-an-dime"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001560",
+    "english": "the young leaves are eaten.",
+    "garo": "Bol-an-dime",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "rejected",
+    "review_notes": "Duplicate of PL-0001559 (Bolandime) — same headword, hyphenated OCR variant. Keeping compact form.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bolandime",
+        "Bol-an-dime"
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001561",
+    "english": "(lagerstoemia flos reginae). a middle-sized deciduous tree.",
+    "garo": "Bolasari",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001562",
+    "english": "(disoxylyum hamiltonil). a fairly large evergreen tree.",
+    "garo": "Bolasin",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001563",
+    "english": "a leaf of the tree.",
+    "garo": "Bolbijak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001564",
+    "english": "a small tree",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001565",
+    "english": "the young tree",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001566",
+    "english": "sapling",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001567",
+    "english": "under wood",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001568",
+    "english": "bushes",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001569",
+    "english": "bramble.",
+    "garo": "Bolbi·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001570",
+    "english": "(lagerstroenia flos regnae). a middle-sized deciduous tree.",
+    "garo": "Bol-asa-ri",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "rejected",
+    "review_notes": "Duplicate of PL-0001561 (Bolasari) — same tree entry double-transcribed, scientific name OCR differs (\"flos Reginae\" vs \"flos Regnae\") so not auto-flagged. Keeping compact form. Flags a gap in claude-d-preflight.js duplicate detection (english-text-only comparison) — see docs note.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001571",
+    "english": "(disexylum hamiltonil). a fairly large evergreen tree.",
+    "garo": "Bol-a-sin",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "rejected",
+    "review_notes": "Duplicate of PL-0001562 (Bolasin) — same tree entry double-transcribed, scientific name OCR differs (\"Hamiltonil\" spelling / \"Disoxylyum\" vs \"Disexylum\") so not auto-flagged. Keeping compact form. Same preflight gap as PL-0001570.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001572",
+    "english": "(teremeles nudiflora). a very large and tall deciduous tree.",
+    "garo": "Bol-bok",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001573",
+    "english": "(dysoxylum procerum). a large deciduous tree.",
+    "garo": "Bol-cha·chat",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001574",
+    "english": "a branch of the tree",
+    "garo": "Bolcheksi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'twing' (for twig) preserved.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001575",
+    "english": "a twing.",
+    "garo": "Bolcheksi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'twing' (for twig) preserved.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001576",
+    "english": "(duabanga sonneratioides). a large tree.",
+    "garo": "Bol-chim",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001577",
+    "english": "(hyptianthera stricta). an aromatic evergreen tree.",
+    "garo": "Bol-dik-i",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001578",
+    "english": "(hymenodictyon excelsum). a large deciduous tree.",
+    "garo": "Bol-dik-im",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001579",
+    "english": "(cordia grandis). a middle-sized tree with a spreading crown.",
+    "garo": "Bol-do-bak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001580",
+    "english": "(wendlaudia tluclorla). a shrub or small tree with straggling branches",
+    "garo": "Bol-gan-chi, Bol-nabat",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'mortant' (for mordant) preserved.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001581",
+    "english": "the bark is used as a mortant in dyeing.",
+    "garo": "Bol-gan-chi, Bol-nabat",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'mortant' (for mordant) preserved.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001582",
+    "english": "a piece of wood.",
+    "garo": "Bolgantong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001583",
+    "english": "(diospyros toposia). a large evergreen tree.",
+    "garo": "Bolgisim, Bol-gi-sim",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "approved",
+    "review_notes": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T05:37:15.483Z"
+  },
+  {
+    "id": "PL-0001584",
+    "english": "(gynocardia odorata; hydrocurpus kursii). a fruit-",
+    "garo": "Bol-i-bo",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry cut off at the bottom of the page.",
+    "provenance": {
+      "source": "Handbook of the Garo Language",
+      "source_page": "31",
+      "import_batch": "IMPORT-2026-07-23T05-36-52-656Z",
+      "import_date": "2026-07-23T05:36:52.673Z",
+      "ocr_version": "whatsapp-2026-07-19"
+    },
+    "review_status": "needs-discussion",
+    "review_notes": "Entry cut off mid-gloss in source scan (\"A fruit-\"). Hold for the continuation page rather than promoting an incomplete sense.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
   }
 ]

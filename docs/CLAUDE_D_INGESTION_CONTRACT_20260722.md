@@ -89,6 +89,60 @@ existed — but Claude A should expect most `possible_conflict` rows
 against older vocabulary to show this placeholder, not a real page
 number.
 
+## Gap found in production use — page 31, 2026-07-22/23 (Claude A)
+
+Ran page 31 through the actual pipeline end to end
+(`flip-garo-to-english.js` → `reduce-to-flat.js` →
+`claude-d-preflight.js` → `import-dictionary.js`). Two real duplicate
+pairs slipped through undetected, because both this script's and
+`import-dictionary.js`'s duplicate/conflict logic key on **normalized
+`english` text equality** — and the source dictionary itself OCR'd the
+same headword's gloss slightly differently across its two listings:
+
+- `Bolasari` (`"(Lagerstoemia flos Reginae). A middle-sized deciduous
+  tree."`) vs. `Bol-asa-ri` (`"(Lagerstroenia flos Regnae). A
+  middle-sized deciduous tree."`) — same tree, same headword modulo
+  hyphenation, but the scientific name got OCR'd two different ways,
+  so the english strings don't match and neither exact-duplicate nor
+  within-batch conflict fired.
+- `Bolasin` (`"(Disoxylyum Hamiltonil)..."`) vs. `Bol-a-sin`
+  (`"(Disexylum Hamiltonil)..."`) — same pattern.
+
+Contrast with `Bolandime`/`Bol-an-dime` on the same page, which *did*
+get caught as `within-batch`, because that pair's gloss text happened
+to OCR identically both times.
+
+**This means the current duplicate check only catches same-spelling
+duplicates by accident of clean OCR, not by design.** The actual
+signal that should have caught all three pairs is the **`garo` field**,
+not `english`: `Bolasari`/`Bol-asa-ri` and `Bolasin`/`Bol-a-sin` are
+the same headword with/without hyphens — exactly the raka/dash/space-
+stripped normalization the draft contract originally called for (see
+Deviation 1 above) and that the batch-review workflow's Step 3 already
+does *by hand* for `existing`/`within-batch` conflicts. It was never
+applied as an automated **pre-check keyed on `garo`, independent of
+`english`**.
+
+**Recommended fix for Claude B:** add a second within-batch pass in
+`claude-d-preflight.js` that normalizes every incoming `garo` value
+(strip `-`, `·`, spaces, lowercase — the function Deviation 1 already
+declined to build for `english`-based exact-duplicate matching, but
+this is a different, narrower use: same-page, `garo`-keyed only) and
+flags any two rows in the same page whose normalized `garo` matches,
+regardless of whether their `english` text matches. This is still
+advisory, not a trust boundary — Claude A still makes the keep/drop
+call — but right now these near-misses are invisible unless Claude A
+happens to eyeball the raw page (which is how this pair was actually
+caught, not via the tool).
+
+For this page specifically: `Bol-asa-ri` and `Bol-a-sin` were manually
+rejected as duplicates of `Bolasari`/`Bolasin` during Claude A's review
+pass — see `src/data/pending_lexicon.json` `review_notes` on those two
+records. (Note: this page was processed twice due to a concurrent-push
+ID collision with page 30's import — the second, final run is the one
+whose IDs are live in the repo; the analysis and disposition are
+identical between runs, only the `PL-xxxx` numbers shifted.)
+
 ## What Claude B did not implement from the draft
 
 Nothing was dropped — Sections 1, 2, 3, 4, 5, 6, 7 are all implemented
