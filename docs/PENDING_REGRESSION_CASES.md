@@ -404,6 +404,31 @@ loanword choice worth preserving under a different key, or simply a
 duplicate that should be removed — a data-quality question for whoever
 originally added it, not a linguistic ambiguity.
 
+**Claude A review (2026-07-23) — RESOLVED, not a word-choice question.
+Same shape as `RC-CANDIDATE-019` ("teacher"), resolved the same way.**
+`master_dictionary.json` has exactly two `book` entries: index 300,
+`english: "book"` → `Ki·tap` (no register note — neutral/default), and
+index 3112, `english: "Book"` (capitalized key) → `boi`, already
+tagged `"variant/VERIFIED/HIGH"`. Both legitimate — `Ki·tap` is the
+neutral term, `boi` an already-verified loanword/register variant
+(consistent with `di·di`/`ma·star`/`ti·char` for "teacher" being real,
+verified alternates rather than typos or errors). Not in genuine
+dispute. The bug is exactly `RC-CANDIDATE-019`'s: case-insensitive
+key collision lets the later entry (`boi`) silently clobber the
+neutral default (`Ki·tap`) for whichever lookup path hits the plain
+dictionary, while a `corrections.json` exact-match sentence using
+`Ki·tap` would bypass the bug entirely on its own path — same
+inconsistency pattern already confirmed live for "teacher."
+**Handoff to Claude B:** same fix as `RC-CANDIDATE-019` — the compiler
+needs to preserve register-variant clusters instead of overwriting on
+case-insensitive key collision; `Ki·tap` should stay the default
+output for bare "book," with `boi` retained as a documented alternate.
+No native confirmation needed — the register classification is already
+verified in the source data. Given both `RC-016` and `RC-019` have the
+identical root cause, worth Claude B checking whether other
+case-differing key pairs in `master_dictionary.json` have the same
+silent-clobber problem before fixing these two in isolation.
+
 ### RC-CANDIDATE-017 — Negation lost entirely with locative predicates
 **Conclusion:** `"the book is not on the table"` → `"boi te·bil·o"` —
 the negation vanishes, no negation marker anywhere in the output.
@@ -953,6 +978,62 @@ dictionary's `"-adj. X"`/`"-n. X"` dash-prefix convention (marking a
 derived POS on a repeated headword) — those stay `flagged_for_review`
 and get Claude A's individual POS correction during pending_lexicon
 review, same discipline as any other flagged entry.
+
+### RC-CANDIDATE-027 — Case-key silent-clobber is systemic, not isolated: 465 affected pairs found
+
+**Status:** Scoping only — needs Claude B collaboration before any
+fix, per the "spans both linguistics and engineering, discuss together"
+standing instruction. Not implemented, not linguistically triaged
+word-by-word (that would not be a good use of either role's time at
+this scale — see below).
+
+**Context:** `RC-CANDIDATE-016` ("book"/"Book") and `RC-CANDIDATE-019`
+("teacher") were each individually diagnosed and resolved as the same
+root cause: `master_dictionary.json` has two entries differing only in
+`english` key casing, and the compiler's case-insensitive lookup lets
+whichever entry sorts last silently clobber the other for the plain
+dictionary-path lookup, even though both entries are legitimate
+(neutral term vs. verified register/loanword variant).
+
+**Scope, checked 2026-07-23:** a full scan of `master_dictionary.json`
+for `english` keys that collide only in casing found **466 such key
+groups**. Of those, only 1 has an identical `garo` value in both
+entries (harmless — order doesn't matter). **465 have genuinely
+different `garo` values under the same case-insensitive key** — the
+same silent-clobber shape as `book` and `teacher`, at a scale neither
+of those individual write-ups implied. Full list exported for Claude B
+reference: `/tmp/case_collisions.json` (not committed — regenerable
+any time from `master_dictionary.json` with a lowercase-key groupby;
+recreate rather than trust a stale copy).
+
+**Why this isn't being triaged entry-by-entry:** `book` and `teacher`
+were each confirmed legitimate variants (loanword/register, not error)
+through individual review. Doing that same close read 465 times would
+burn a large amount of session time for what is fundamentally one
+engineering fix, not 465 linguistic disputes — and most of these look
+like the same pattern at a glance (fruit/vegetable/common-noun pairs
+like `pineapple`/`Pineapple`, `mango`/`Mango`), not obviously
+contentious. But **"most look the same pattern" is not the same as
+confirmed** — some fraction could be genuine transcription errors
+rather than register variants, and that fraction isn't known without
+review.
+
+**Recommended path, for discussion with Claude B rather than unilateral
+action:**
+1. Claude B implements the general compiler fix first — preserve
+   case-variant clusters instead of last-write-wins, same shape as the
+   `RC-016`/`RC-019` fix, applied once at the compiler level rather than
+   per-word. This unblocks the engine regardless of whether every pair
+   is eventually confirmed a legitimate variant.
+2. Separately, Claude A reviews the 465-pair list in batches (like the
+   raka-cluster and pending-lexicon audits) to catch the subset that
+   are actual errors, not variants — flagging those specifically rather
+   than assuming the whole list is fine by the `book`/`teacher`
+   precedent.
+- **Do not treat this list as pre-approved** by `RC-016`/`RC-019`'s
+  resolution — those two were individually checked; this scope wasn't.
+
+### RC-CANDIDATE-024 — Third incoming-OCR schema variant; recommend Claude D standardize on the canonical `garo_to_english` shape
 
 **Recommendation, not a decision I'm making unilaterally:** three (now
 four, counting Claude D's) incompatible incoming shapes is worth
