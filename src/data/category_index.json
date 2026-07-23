@@ -3145,7 +3145,6 @@
   "fork of tree": "phrases",
   "four anna coin": "numbers",
   "front of body": "health",
-  "fruit": "food",
   "get along well": "phrases",
   "get on bus": "travel",
   "give birth": "health",
@@ -3605,5 +3604,6 @@
   "see": "verbs",
   "to see": "verbs",
   "lunch": "food",
-  "goodness": "general"
+  "goodness": "general",
+  "demand": "general"
 }

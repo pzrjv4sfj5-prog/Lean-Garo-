@@ -29661,14 +29661,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "fruit",
-    "garo": "bi·te",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "fulcrum",
     "garo": "na·tong",
     "pos": null,
@@ -57502,5 +57494,32 @@
     "garo": "Boja",
     "category": null,
     "pos": "n."
+  },
+  {
+    "english": "demand",
+    "garo": "Dabia",
+    "pos": "v.",
+    "category": "general",
+    "notes": "VERIFIED/HIGH, Thangseng 2026-07-23 direct: \"Dabiani as a noun, and dabia as a verb\""
+  },
+  {
+    "english": "demand",
+    "garo": "Dabiani",
+    "pos": "n.",
+    "category": "general",
+    "notes": "VERIFIED/HIGH, Thangseng 2026-07-23 direct: \"Dabiani as a noun, and dabia as a verb\""
+  },
+  {
+    "english": "very",
+    "garo": "indakpile",
+    "category": "general",
+    "notes": "Project Owner confirmation 2026-07-23 (originally surfaced NV-036, 2026-07-23 Thangseng WhatsApp relay, gloss given in context). Not a verbatim Thangseng quote confirming the word itself - logged per PO instruction."
+  },
+  {
+    "english": "white (of skin complexion; broadly, of white things)",
+    "garo": "Boka",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-v.' for secondary POS."
   }
 ]

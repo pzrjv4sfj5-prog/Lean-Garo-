@@ -606,3 +606,27 @@ handoff to Claude B:** split into `"work"` (noun, → `Kam`) and
 under its existing "to do" entries, untouched; leave `ga·a` flagged
 pending the native follow-up rather than silently dropped.
 
+---
+### RULE-042 — `-de` Temporal Suffix ("at that time")
+
+**Description:** `-de` attaches to day/time words and means roughly
+"at that time" — usable across past, present, and future. Confirmed
+example: `Da·al` ("today") + `-de` → `Da·alde` ("today," with this
+temporal-focus sense). `Da·al` itself is the word; `-de` is a separate
+suffix, not part of the root.
+**Examples:** `Da·alde` = "today" (temporal-focus form).
+**Counterexamples:** none identified yet.
+**Dependencies:** none identified yet — not yet tested against other
+day/time words to confirm full generality.
+**Native Notes:** direct Thangseng relay, 2026-07-23, via Project
+Owner: "But de is a suffix. Da·al is the word... The 'de' suffix when
+used with days and times carries the idea which means something like
+'at that time'. It can be used with past, present and future."
+**Validation Status:** Verified for `Da·al`+`-de`. Needs Native
+Validation for whether it generalizes to other day/time words
+(e.g. "tomorrow," "yesterday," specific times of day).
+**Confidence:** High (this one example, direct confirmation);
+Medium (generality across other time words, untested).
+**Launch Priority:** P2 — resolves the standing NV-036 mystery about
+`Da·alde`, not currently blocking any live translation output.
+

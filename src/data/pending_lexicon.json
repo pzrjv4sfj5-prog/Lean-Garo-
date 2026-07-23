@@ -38980,7 +38980,7 @@
       "ocr_version": "gemini-v1"
     },
     "review_status": "approved",
-    "review_notes": "Raka collision flagged, not resolved: existing master_dictionary.json #4816 has \"fruit\"->bi·te (raka, UNVERIFIED/HIGH), this entry is \"fruit\"->Bite (no raka). Same word, same english gloss, conflicting raka placement between two independently-sourced print-dictionary entries. No repo evidence to resolve either way - approved for promotion (both forms staged), needs native check before either is treated as sole-correct.",
+    "review_notes": "Raka collision flagged, not resolved: existing master_dictionary.json #4816 has \"fruit\"->bi·te (raka, UNVERIFIED/HIGH), this entry is \"fruit\"->Bite (no raka). Same word, same english gloss, conflicting raka placement between two independently-sourced print-dictionary entries. No repo evidence to resolve either way - approved for promotion (both forms staged), needs native check before either is treated as sole-correct. RESOLVED 2026-07-23 (Project Owner): fruit = Bite (no raka). master_dictionary.json #4816 (bi·te, raka) removed as the wrong-raka duplicate.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-23",
     "conflict": {
@@ -40614,7 +40614,7 @@
   },
   {
     "id": "PL-0001539",
-    "english": "white.",
+    "english": "white (of skin complexion; broadly, of white things)",
     "garo": "Boka",
     "category": null,
     "pos": "adj.",
@@ -40627,16 +40627,16 @@
       "import_date": "2026-07-23T05:36:52.673Z",
       "ocr_version": "whatsapp-2026-07-19"
     },
-    "review_status": "needs-discussion",
-    "review_notes": "Boka: \"white\" (adj.) and \"to demand unduly\" (v.) share one headword. Could be genuine polysemy or two unrelated homonyms merged by the print dictionary — same failure mode as the Kajina/Kajana collision (NV-032 handoff). Needs native check before promotion.",
+    "review_status": "approved",
+    "review_notes": "Thangseng direct, 2026-07-23: \"White is Boka right? No... Gipok is white. Boka has a broader meaning. It can mean white skin complexion, it can also be used of white things etc.\" Gloss corrected from plain \"white\" (which would wrongly duplicate Gipok) to reflect the confirmed narrower/broader sense. Verb sense (PL-0001540, \"to demand unduly\") NOT addressed by this answer - stays needs-discussion, homonymy question unresolved.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:31:05.562Z"
   },
   {
     "id": "PL-0001540",

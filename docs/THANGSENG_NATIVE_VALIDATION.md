@@ -1718,39 +1718,29 @@ inference from `ding·a`'s confirmation.
 
 ---
 
-## NV-035 — `Kama` (no raka) glossed "Warm" — still unresolved
+## NV-035 — `Kama` (no raka) glossed "Warm" — CLOSED
 
-**Status:** OPEN. Spun out of NV-033.
-
-`master_dictionary.json` #8532 (`"Warm"`, adj., `Kama`, page-115
-batch) is the one entry from that batch not addressed by the
-`kama = to burn` confirmation. Could be a legitimate extended sense
-of "to burn" (English has the same move: "it's a scorcher"), or the
-same over-broad-gloss problem that the removed "hot" entry turned out
-to be. Left untouched in production pending a direct question:
-does `Kama` ever mean "warm," or only "to burn"?
+**Status:** CLOSED, 2026-07-23 (Project Owner). `Kama`="Warm" confirmed
+as a genuine related sense of `Kama`="to burn" — the same semantic
+extension English makes ("it's a scorcher," "warming/burning"), not
+the over-broad-gloss error the removed "hot" entry turned out to be.
+No dictionary change needed — the entry was already correct as-is.
 
 ---
 
-## NV-036 — `Da·alde` = `Da·al` + unlogged `-de` particle; `indakpile` ("very") unconfirmed
+## NV-036 — `Da·alde` = `Da·al` + `-de` suffix; `indakpile` ("very") — CLOSED
 
-**Status:** OPEN. Spun out of NV-033.
-
-Both surfaced in the original "it's very hot today" sentence
-(`Da·alde indakpile (very) ding·enga`) and neither was addressed by
-the later `Da·al`/`Kama` follow-up:
-- `Da·alde` is almost certainly `Da·al` ("today," confirmed
-  `VERIFIED/HIGH`) + a `-de` particle, plausibly topic/contrastive
-  ("as for today..."). The particle itself isn't documented anywhere
-  in `docs/GRAMMAR_RULE_CATALOGUE.md`. One data point only — needs a
-  dedicated question before formalizing as a rule, not silent
-  inference from this single sentence.
-- `indakpile`, glossed "(very)," doesn't resemble any of the 5
-  existing "very" candidates already in `master_dictionary.json`
-  (`Be·en`, `Bakkan`, `bang·e`, `·be·`, `·mi·si·`, `be·si`). Unclear
-  whether it's a general-purpose intensifier or specific to
-  weather/heat idiom ("scorching"). Not added to the dictionary
-  pending confirmation either way.
+**Status:** CLOSED, 2026-07-23.
+- `Da·alde` = `Da·al` ("today") + `-de`, a temporal suffix meaning
+  roughly "at that time," usable across past/present/future — direct
+  Thangseng confirmation, now formalized as `RULE-042`. Not a
+  topic/contrastive particle as originally guessed.
+- `indakpile` ("very") confirmed by Project Owner and added to
+  `master_dictionary.json` as a 6th "very" candidate alongside `Be·en`/
+  `Bakkan`/`bang·e`/`·be·`/`·mi·si·`/`be·si`. Not a verbatim Thangseng
+  re-confirmation of the word itself in this exchange — logged with
+  that provenance noted honestly in the entry, not overstated as a
+  fresh direct quote.
 
 ---
 
