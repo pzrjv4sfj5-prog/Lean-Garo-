@@ -610,23 +610,45 @@ pending the native follow-up rather than silently dropped.
 ### RULE-042 — `-de` Temporal Suffix ("at that time")
 
 **Description:** `-de` attaches to day/time words and means roughly
-"at that time" — usable across past, present, and future. Confirmed
-example: `Da·al` ("today") + `-de` → `Da·alde` ("today," with this
-temporal-focus sense). `Da·al` itself is the word; `-de` is a separate
-suffix, not part of the root.
-**Examples:** `Da·alde` = "today" (temporal-focus form).
-**Counterexamples:** none identified yet.
-**Dependencies:** none identified yet — not yet tested against other
-day/time words to confirm full generality.
-**Native Notes:** direct Thangseng relay, 2026-07-23, via Project
-Owner: "But de is a suffix. Da·al is the word... The 'de' suffix when
-used with days and times carries the idea which means something like
-'at that time'. It can be used with past, present and future."
-**Validation Status:** Verified for `Da·al`+`-de`. Needs Native
-Validation for whether it generalizes to other day/time words
-(e.g. "tomorrow," "yesterday," specific times of day).
-**Confidence:** High (this one example, direct confirmation);
-Medium (generality across other time words, untested).
-**Launch Priority:** P2 — resolves the standing NV-036 mystery about
-`Da·alde`, not currently blocking any live translation output.
+"at that time." Confirmed across all three tenses via three
+minimally-contrastive sentences with the same frame ("[time]-de,
+[will/did] go to the market"):
+- `Knal` ("tomorrow") + `-de` → `Knalde bajalchi re·anggen` = "Tomorrow
+  (I) will go to the market."
+- `Da·al` ("today") + `-de` → `Da·alde bajalchi re·anggen` = "Today (I)
+  will go to the market."
+- `Mijal`/`Mejal` ("yesterday") + `-de` → `Mijalde bajalchi re·anga` =
+  "Yesterday (I) went to the market."
+- Also confirmed with a clock time, not just relative day words:
+  `10:00 am bajiode bajalchi re·anggen` = "At 10:00 am (I) will go to
+  the market" (`bajio` = "o'clock"/time-of-day + `-de`).
 
+Semantic nuance beyond "at that time," per Thangseng: it carries the
+sense that **of all the things happening, this particular thing will
+be/was done at the specified time** — can imply something else was
+planned but couldn't happen, so *this* will happen at the stated time
+instead. Not a neutral time-stamp; closer to a contrastive/emphatic
+temporal focus.
+**Examples:** see above — `Knalde`, `Da·alde`, `Mijalde`, and a clock
+time (`bajiode`), all confirmed.
+**Counterexamples:** none identified.
+**Dependencies:** interacts with the `chi` destination-locative
+(confirmed NV-022) in `bajalchi` = `Bajal` ("market") + `chi` — the
+`-de` suffix and `-chi` locative co-occur without conflict in the same
+sentence, consistent with how other suffix stacking has worked
+elsewhere in this grammar.
+**Native Notes:** direct Thangseng relay, 2026-07-23, via Project
+Owner: "Knalde bajalchi re·anggen. = Tomorrow (I) will go to the
+market. Da·alde bajalchi re·anggen. = Today (I) will go to the market.
+Mijalde bajalchi re·anga. = Yesterday (I) went to the market. The de
+suffix essentially conveys the idea that of all the things this
+particular thing will be done at the specified time. It can also imply
+that maybe something had been planned but could not be done... It can
+also be used with time. Example: 10:00 am bajiode bajalchi re·anggen."
+**Validation Status:** Verified — generalizes across all three tenses
+and to clock times, not just `Da·al`. Confirmed with multiple distinct
+day/time words (`Knal`, `Da·al`, `Mijal`, `bajio`), not a one-off.
+**Confidence:** High.
+**Launch Priority:** P1 — general enough now to be worth wiring into
+the engine for time-word constructions, not just documented as a
+lexicography note.

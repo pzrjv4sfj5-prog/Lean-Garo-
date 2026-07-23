@@ -247,6 +247,25 @@ does not resolve either one.
 ### New entry
 No deterministic match exists. Produce normally.
 
+## Pages already processed — check this before transcribing a new page
+
+This list is the page-level duplicate check the current tooling
+doesn't do automatically — `claude-d-preflight.js` only catches
+entry-level duplicates within what's already staged, not "have we seen
+this whole page before." **Before transcribing any page, check its
+number against this list.** If it's already here, don't re-transcribe
+it — flag the collision to Claude A instead of doing the work over.
+
+**Processed (fully reviewed, entries promoted or held with a documented
+reason):** 3, 4, 5, 16, 17, 18, 19, 30, 31, 35, 37, 38, 39, 87, 88, 89,
+112, 113, 114, 115.
+
+Whenever a new page is processed end-to-end, add its number to this
+line in the same commit as the import — this list only stays accurate
+if it's updated every time, not periodically reconciled. If you're
+Claude A or Claude B closing out a page and this list wasn't updated,
+update it as part of that commit rather than leaving it for later.
+
 ## Authority
 
 - Claude D does not overrule Claude A.
