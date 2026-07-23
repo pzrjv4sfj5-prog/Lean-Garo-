@@ -122,20 +122,56 @@ needs Thangseng validation.
 All 4 permanently allowlisted in `repository-intelligence.js` pending
 Thangseng.
 
-### RC-CANDIDATE-009 — 18 raka-adjacency candidates (report-only)
+### RC-CANDIDATE-009 — 18 raka-adjacency candidates (report-only) — mostly resolved 2026-07-23
+
 Surfaced by `repository-intelligence.js` Check A (deliberately
-report-only — see `docs/REPOSITORY_INTELLIGENCE.md`). **Partially
-resolved:** the `ring·`-related hits (8 of 18) are confirmed **not
-bugs** — `ring·a`="sing" is a genuinely different root from the
-no-raka verb `ringa`="drink" (NV-010, narrowed 2026-07-10). **Still
-open:** `agan·` (3 hits, "did/have/are you speak(ing)") and `tusi·` (1
-hit, "I will sleep") look like plausible genuine RULE-001 candidates —
-no alternate-word explanation found. `nam·` (2 hits, "loved the
-picture") may be an idiom, unconfirmed. `wa·` (4 hits, bamboo) is
-likely an unrelated word (bamboo ≠ rain), probably not a violation at
-all.
-- **Status:** Needs Claude A Review for the remaining `agan·`/`tusi·`/
-  `nam·`/`wa·` clusters (10 of the original 18 hits).
+report-only — see `docs/REPOSITORY_INTELLIGENCE.md`). **Resolved,
+2026-07-10:** the 6 genuine `ring·a`="sing" hits ("let's sing", "i sing
+a song", "i am singing a song", "sing", "elephant", "an elephant") are
+confirmed **not bugs** — `ring·a`="sing" is a genuinely different root
+from the no-raka verb `ringa`="drink" (NV-010).
+
+**Resolved, 2026-07-23 (Claude A, corpus-internal evidence, no native
+check needed):**
+- **`ring·` × 2** ("i want to drink", "i will drink") — were using
+  the raka'd "sing" homophone for the meaning "drink." Not a stray
+  mark, the wrong word: `ring·na`/`ring·gen` literally mean "want to
+  sing"/"will sing." Fixed to `ringna`/`ringgen`.
+- **`agan·` × 3** ("did you speak", "have you spoken", "are you
+  speaking") — directly contradicted within the same file:
+  "Bia aganaha" ("he spoke"), "Maiko aganenga?" ("what are you
+  saying" — itself a question, same tense/aspect, no raka) prove
+  `agan` is raka-free even in interrogative use. The three "Na·a
+  Agan·... ma?" forms were transcription errors, not a real
+  `-ma`/question-triggered exception. Fixed to `Aganaha`/`Aganjok`/
+  `Aganenga`.
+- **`tusi·` × 1** ("i will sleep") — same error pattern as `ring·gen`:
+  raka appeared only in the `-gen` future form, nowhere else in `tusi`'s
+  paradigm (`Tusieaha`/`Tusijok`/`Tusienga`, all raka-free). Directly
+  contradicted by `RULE-023` (`-gen` never carries or triggers raka,
+  **Verified** status) — this alone is sufficient to close it without
+  a native check. Fixed to `tusigen`.
+- **`wa·` × 4** ("bamboo" and compounds) — **confirmed correct, not a
+  bug.** `master_dictionary.json` independently has "Bamboo" →
+  `wa·` as `VERIFIED/HIGH` (#3087) and "bamboo" → `Wa·a` elsewhere —
+  bamboo is a genuinely different, raka-having root from `wa`=rain
+  (`waode`, no raka). Same lexical-split pattern as the `ring`/`ring·`
+  case. No fix needed, cluster closed.
+
+**Still open — needs native check, not repo-evidence-resolvable:**
+`nam·` × 2 ("loved the picture" → "Nang photo ko nam·e nikaha").
+The `nam`="good" root is robustly raka-free in most forms (`Nama`,
+`Namja`, `Namen`, `Nama ong·a`, `Namnikgipa`) — but
+`master_dictionary.json` #874 ("kind/gentle" → `Nama·gipa`) shows
+raka appearing with the same root before a different derivational
+suffix (`-gipa`), so this isn't as clean a case as `agan`/`tusi` were.
+Two independently-attested raka'd derivations (`nam·e`, `nam·gipa`)
+against several raka-free base forms could mean genuine
+suffix-conditioned raka insertion for at least some derivational
+contexts, not pure transcription error — **do not auto-fix, needs a
+direct Thangseng question**, logged as NV-037.
+
+- **Status:** CLOSED except `nam·`, tracked separately as NV-037.
 
 ### [Superseded by RC-CANDIDATE-011] `·o` fix scope question
 Originally a separate `RC-CANDIDATE-010` created independently by

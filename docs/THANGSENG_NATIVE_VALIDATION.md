@@ -1754,6 +1754,47 @@ the later `Da·al`/`Kama` follow-up:
 
 ---
 
+## NV-037 — `nam` ("good"): does raka appear before some derivational suffixes?
+
+**Status:** OPEN. Surfaced auditing `RC-CANDIDATE-009` (raka-adjacency
+candidates), Claude A, 2026-07-23 — repo-evidence only, no native data
+yet.
+
+**Evidence:** `nam` is robustly raka-free in its base and most derived
+forms — `Nama` ("good"), `Namja` ("bad"), `Namen`/`namen` ("well,"
+adverb), `Nama ong·a` ("it is good"), `Namnikgipa` ("favourite," a
+`nik`+`gipa` compound). But two independent forms show raka appearing
+with this same root: `corrections.json`'s `"Nang photo ko nam·e
+nikaha"` ("[you] looked at/loved the picture [nicely]" — literal
+meaning unclear, possibly not "love" as a verb at all, see below) and
+`master_dictionary.json` #874, `"kind/gentle"` → `Nama·gipa`.
+
+**Determination:** not resolvable from repo evidence alone, unlike the
+`agan`/`tusi`/`ring·gen` cases closed under `RC-CANDIDATE-009` today —
+those had direct same-file contradictions or an already-Verified rule
+(`RULE-023`) to settle them. Here there's no contradiction to appeal
+to: two derivational contexts with raka, several non-derivational
+contexts without. Two live possibilities, not distinguishable without
+native input:
+1. Genuine suffix-conditioned raka insertion — some derivational
+   suffixes (`-gipa`, whatever `-e` is here) trigger raka on `nam`
+   specifically, a real (if narrow) `RULE-001` refinement.
+2. Both are independent transcription errors that happen to coincide
+   in having a derivational suffix nearby — coincidence, not a pattern.
+- Separately worth asking: is `"Nang photo ko nam·e nikaha"` actually
+  a translation of "loved" at all, or does it more literally mean
+  "looked at the photo nicely/admiringly" (`nam` "good" + adverbial
+  `-e` + `nikaha` "saw") — i.e. an idiom the English gloss overstated,
+  not a verb "to love" in its own right? `master_dictionary.json`
+  separately has `"did you love"` → `Ka·saaha` (a completely different
+  root), suggesting Garo may not use `nam` for "love" as a primary verb
+  at all.
+
+**Repository components impacted:** none — flagging only, no dictionary
+or `corrections.json` edit made pending native input.
+
+---
+
 ## Closed Questions
 - **NV-006** (`·ko`/`·o` selection) — closed 2026-07-12, effectively
   resolved as engineering work, not a native question. See NV-006 above

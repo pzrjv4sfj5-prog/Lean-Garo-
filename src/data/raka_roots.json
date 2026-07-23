@@ -2,21 +2,85 @@
   "_source": "docs/THANGSENG_RULES_LOOKUP.md, 'Confirmed root raka table' (Rule 1 section). Verbatim transcription by Claude B, 2026-07-09, for build-time validation tooling (BACKLOG-006). Not new linguistic content - Claude A should confirm this transcription is accurate before it's treated as fully authoritative; flag any discrepancy rather than editing this file directly.",
   "_schema": "root: the confirmed root string as it appears in Garo forms (including its trailing raka mark if raka=true). has_raka: whether this root carries raka (·). notes: verbatim from the source table where present.",
   "roots": [
-    { "root": "cha·", "has_raka": true, "notes": "cha·a, cha·aha, cha·enga, cha·jok, cha·bo, cha·ja, cha·gen, cha·ode, cha·china" },
-    { "root": "re·", "has_raka": true, "notes": "re·anga, re·baa, re·babo, re·angbo, re·enga" },
-    { "root": "on·", "has_raka": true, "notes": "on·a, on·aha" },
-    { "root": "ra·", "has_raka": true, "notes": "ra·a" },
-    { "root": "ka·", "has_raka": true, "notes": "love sense: ka·saa, ka·saaha, ka·saenga, ka·saagen" },
-    { "root": "nang·", "has_raka": true, "notes": "nang·ni, nang·ko, nang·na, nang·o" },
-    { "root": "ang·", "has_raka": true, "notes": "possessive only - subject=anga, object=angko" },
-    { "root": "dak", "has_raka": false, "notes": "Daka, dakaha, dakenga" },
-    { "root": "kat", "has_raka": false, "notes": "kata, kataha, katenga, katbo, katgen - NEVER kat·anything" },
-    { "root": "ring", "has_raka": false, "notes": "Ringa, ring·aha has raka but that's the NOUN ring's possessive, not this verb suffix - excluded from this table's scope" },
-    { "root": "tusi", "has_raka": false, "notes": "Tusia, tusienga, tus·aha, tusibo" },
-    { "root": "agan", "has_raka": false, "notes": "Agana, aganaha, aganenga, aganbo" },
-    { "root": "nam", "has_raka": false, "notes": "Nama, namja, namgija - NEVER nam·a" },
-    { "root": "dong", "has_raka": false, "notes": "donga, dongja, donggen, dongenga, dongachim" },
-    { "root": "wa", "has_raka": false, "notes": "rain sense: waode - no raka" },
-    { "root": "bilak", "has_raka": false, "notes": "bilakgen - no raka" }
+    {
+      "root": "cha·",
+      "has_raka": true,
+      "notes": "cha·a, cha·aha, cha·enga, cha·jok, cha·bo, cha·ja, cha·gen, cha·ode, cha·china"
+    },
+    {
+      "root": "re·",
+      "has_raka": true,
+      "notes": "re·anga, re·baa, re·babo, re·angbo, re·enga"
+    },
+    {
+      "root": "on·",
+      "has_raka": true,
+      "notes": "on·a, on·aha"
+    },
+    {
+      "root": "ra·",
+      "has_raka": true,
+      "notes": "ra·a"
+    },
+    {
+      "root": "ka·",
+      "has_raka": true,
+      "notes": "love sense: ka·saa, ka·saaha, ka·saenga, ka·saagen"
+    },
+    {
+      "root": "nang·",
+      "has_raka": true,
+      "notes": "nang·ni, nang·ko, nang·na, nang·o"
+    },
+    {
+      "root": "ang·",
+      "has_raka": true,
+      "notes": "possessive only - subject=anga, object=angko"
+    },
+    {
+      "root": "dak",
+      "has_raka": false,
+      "notes": "Daka, dakaha, dakenga"
+    },
+    {
+      "root": "kat",
+      "has_raka": false,
+      "notes": "kata, kataha, katenga, katbo, katgen - NEVER kat·anything"
+    },
+    {
+      "root": "ring",
+      "has_raka": false,
+      "notes": "Ringa, ring·aha has raka but that's the NOUN ring's possessive, not this verb suffix - excluded from this table's scope. RC-CANDIDATE-009 (2026-07-23): corrections.json had \"ring·na\"/\"ring·gen\" wrongly using the raka'd ring·a=\"sing\" homophone for \"drink\" - fixed to ringna/ringgen."
+    },
+    {
+      "root": "tusi",
+      "has_raka": false,
+      "notes": "Tusia, tusienga, tus·aha, tusibo. RC-CANDIDATE-009 (2026-07-23): corrections.json \"tusi·gen\" (i will sleep) was a transcription error contradicted by RULE-023 (-gen never carries raka) - fixed to tusigen."
+    },
+    {
+      "root": "agan",
+      "has_raka": false,
+      "notes": "Agana, aganaha, aganenga, aganbo. RC-CANDIDATE-009 (2026-07-23): corrections.json had 3 question-form entries (\"Agan·aha/jok/enga ma?\") wrongly raka'd, contradicted by \"Bia aganaha\"/\"Maiko aganenga?\" in the same file - fixed to Aganaha/Aganjok/Aganenga."
+    },
+    {
+      "root": "nam",
+      "has_raka": false,
+      "notes": "Nama, namja, namgija - NEVER nam·a. STILL OPEN (NV-037, 2026-07-23): nam·e (corrections.json) and Nama·gipa (master_dictionary.json #874, kind/gentle) both show raka with derivational suffixes - not resolved by repo evidence, needs native check."
+    },
+    {
+      "root": "dong",
+      "has_raka": false,
+      "notes": "donga, dongja, donggen, dongenga, dongachim"
+    },
+    {
+      "root": "wa",
+      "has_raka": false,
+      "notes": "rain sense: waode - no raka"
+    },
+    {
+      "root": "bilak",
+      "has_raka": false,
+      "notes": "bilakgen - no raka"
+    }
   ]
 }
