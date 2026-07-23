@@ -1588,6 +1588,62 @@ handed to Claude B to verify against actual engine output.
 
 ---
 
+## NV-033 — "hot" = `ding·a` confirmed via natural sentence; `Kama` now suspect; two new unconfirmed candidates surfaced
+
+**Status:** PARTIALLY RESOLVED. Native response direct Thangseng
+confirmation, relayed via Project Owner, 2026-07-23.
+
+**Native response (verbatim, WhatsApp relay):**
+Tridip: "it's very hot today?"
+Thangseng: "Da·alde indakpile (very) ding·enga."
+
+**Determination:**
+- `ding·a` (existing `UNVERIFIED/HIGH` entry, `master_dictionary.json`
+  #4992) is **confirmed** — the inflected present/continuous form
+  `ding·enga` appears in unprompted natural discourse for "is hot,"
+  matching the `-enga` continuous-suffix pattern already seen
+  elsewhere (`ka·o·nang·a`-type stative verbs, `RULE-039`'s
+  `don·enga`). Citation form `ding·a` stays as-is, per Project Owner
+  instruction — no dictionary edit needed, it was already the entry.
+- `gek·gek` and `jro·a` (the other two `UNVERIFIED/HIGH` "hot"
+  candidates, #4993/#4994) — **not confirmed, not rejected.** This
+  answer didn't address them. Leave as-is pending direct follow-up;
+  do not assume they're wrong just because `ding·a` got independent
+  confirmation first.
+- **`Kama` (v., "hot," promoted from page 115 via `PL-0001409`,
+  never native-validated, only OCR-flagged) is now suspect.** Natural
+  usage reached for `ding·enga`, not any `Kama`-based form, for the
+  exact same meaning. `Kama` also resembles the Sanskrit/Hindi loanword
+  "kāma" (desire), which raises a real possibility this promoted entry
+  is either a mistranscription, a different-but-similarly-spelled
+  headword, or an OCR/homonym collision — the same failure pattern as
+  `Kajina`/`Kajana` (NV-032 handoff) and `Kajia` (NV-028). **Not
+  removed from `master_dictionary.json` on this evidence alone** — the
+  absence of a form in one natural sentence isn't the same as a direct
+  rejection — but flagging for a dedicated follow-up: ask Thangseng
+  directly whether `Kama` means "hot" at all.
+- **New, unconfirmed:** `Da·alde` — likely `Da·al`/`Da·alo` ("today,"
+  existing `VERIFIED/HIGH` entries #3674/#3675) + a `-de` particle not
+  yet documented anywhere in `GRAMMAR_RULE_CATALOGUE.md`. Plausibly a
+  topic/contrastive marker ("as for today...") rather than a separate
+  word. **Not added as a new headword or rule** — one data point,
+  could just as easily be conditioning specific to this sentence.
+  Needs a dedicated question, not silent inference.
+- **New, unconfirmed:** `indakpile`, glossed "(very)" — completely
+  unrelated in form to all 5 existing "very" candidates already in
+  `master_dictionary.json` (`Be·en`, `Bakkan`, `bang·e`, `·be·`,
+  `·mi·si·`, `be·si`). **Not added** — unclear whether this is a
+  general-purpose intensifier or an idiom specific to weather/heat
+  expressions ("scorching," effectively). Needs a direct question
+  before it's treated as a 6th synonym for "very."
+
+**Repository components impacted:** none yet beyond this record.
+`ding·a` unchanged (correctly — it needed no change).
+`known_dictionary_conflicts.json`'s existing `"hot"` allowlist entry
+unchanged; `Kama` not removed from production, just flagged.
+
+---
+
 ## Closed Questions
 - **NV-006** (`·ko`/`·o` selection) — closed 2026-07-12, effectively
   resolved as engineering work, not a native question. See NV-006 above
