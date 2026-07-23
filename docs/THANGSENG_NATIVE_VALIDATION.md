@@ -1754,11 +1754,20 @@ the later `Da·al`/`Kama` follow-up:
 
 ---
 
-## NV-037 — `nam` ("good"): does raka appear before some derivational suffixes?
+## NV-037 — `nam` ("good"): no raka in any derivation — CLOSED
 
-**Status:** OPEN. Surfaced auditing `RC-CANDIDATE-009` (raka-adjacency
-candidates), Claude A, 2026-07-23 — repo-evidence only, no native data
-yet.
+**Status:** CLOSED — direct Thangseng confirmation, 2026-07-23:
+"No raka in nama. Nama, namja, namgipa, namgijagipa, name." Both
+suspect forms were wrong: `master_dictionary.json` #874 corrected
+`Nama·gipa`→`Namgipa`. `corrections.json`'s "loved the picture" entry
+replaced entirely — Thangseng: Garo doesn't use "love" for objects;
+correct translation is `Noksako sile nikaha` (lit. "thought the
+picture was beautiful," `Noksa`="picture," `sile`="beautiful"). Also
+closes the parallel `porai`/`pora` raka outlier from NV-010: "i want
+to study" (`pora·na`, raka) was contradicted by "poraina" appearing
+raka-free in two other confirmed sentences (incl. today's "this is a
+good book to read") — fixed to `porana`, same pattern as
+`agan`/`tusi`/`ring` in `RC-CANDIDATE-009`.
 
 **Evidence:** `nam` is robustly raka-free in its base and most derived
 forms — `Nama` ("good"), `Namja` ("bad"), `Namen`/`namen` ("well,"

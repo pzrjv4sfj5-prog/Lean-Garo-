@@ -4371,8 +4371,9 @@
   },
   {
     "english": "kind / gentle",
-    "garo": "Nama·gipa",
-    "category": "general"
+    "garo": "Namgipa",
+    "category": "general",
+    "notes": "Raka corrected 2026-07-23 (Thangseng direct: \"No raka in nama. Nama, namja, namgipa, namgijagipa, name.\") — was Nama·gipa."
   },
   {
     "english": "brave",
@@ -23337,7 +23338,7 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "UNVERIFIED/HIGH FLAGGED 2026-07-23: Thangseng states there is no Garo word for breakfast — na·sta may be an unused/loanword entry, not confirmed in use."
   },
   {
     "english": "breast",
@@ -57009,5 +57010,17 @@
     "garo": "Bolgisim, Bol-gi-sim",
     "category": null,
     "pos": "n."
+  },
+  {
+    "english": "lunch",
+    "garo": "Mipring",
+    "category": "food",
+    "notes": "VERIFIED/HIGH, Thangseng 2026-07-23. Note: \"Mipring is lunch. There is no Garo word for breakfast.\""
+  },
+  {
+    "english": "goodness",
+    "garo": "Namgipa ong·ani",
+    "category": "general",
+    "notes": "VERIFIED/HIGH, Thangseng 2026-07-23"
   }
 ]

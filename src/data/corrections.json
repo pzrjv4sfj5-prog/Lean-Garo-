@@ -45,7 +45,7 @@
   "i want to go": "Anga re·ang·na ska",
   "i want to come": "Anga re·ba·na ska",
   "i want to work": "Anga dakna ska",
-  "i want to study": "Anga pora·na ska",
+  "i want to study": "Anga porana ska",
   "i want to pray": "Anga bi·a·na ska",
   "i want to speak": "Anga aganna ska",
   "i want to dance": "Anga chrokna ska",
@@ -539,8 +539,8 @@
   "she spoke": "Bia aganaha",
   "spoke": "aganaha",
   "curry": "bi·jak",
-  "loved the picture": "Nang photo ko nam·e nikaha",
-  "i loved the picture": "Nang photo ko nam·e nikaha",
+  "loved the picture": "Noksako sile nikaha",
+  "i loved the picture": "Noksako sile nikaha",
   "please upload your dance video": "Nang·ni chrokani video ko upload ka·atbora",
   "upload your dance video": "Nang·ni chrokani video ko upload ka·atbora",
   "dance video": "chrokani video",
@@ -799,5 +799,10 @@
   "the dog is under the table": "Achak tebil kokkimao ong·a",
   "will you eat": "Na·a cha·genma?",
   "will you eat a banana": "Na·a te·rik cha·genma?",
-  "will you eat an apple": "Na·a apple cha·genma?"
+  "will you eat an apple": "Na·a apple cha·genma?",
+  "have you eaten lunch": "Mipringde cha·ahama?",
+  "such a long day have you eaten lunch": "Sal bakroa, mipringde cha·ahama?",
+  "heart pain": "Ka·tong sa·dika",
+  "say some good words": "Nama kattarangko bang·gija aganbo",
+  "this is a good book to read": "Ia ki·tap poraina nama"
 }
