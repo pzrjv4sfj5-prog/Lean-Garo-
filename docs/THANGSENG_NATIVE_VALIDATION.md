@@ -1588,11 +1588,11 @@ handed to Claude B to verify against actual engine output.
 
 ---
 
-## NV-033 — "hot" = `ding·a` confirmed via natural sentence; `Kama` confirmed wrong; `Da·al` orthography reconfirmed; two candidates remain open
+## NV-033 — "hot" = `ding·a`; `Kama` = "to burn," NOT "hot"; `Ka·ma` = "below" — CLOSED
 
-**Status:** MOSTLY RESOLVED, updated 2026-07-23 with a direct
-follow-up. Native response direct Thangseng confirmation, relayed via
-Project Owner.
+**Status:** CLOSED — native-confirmed, 2026-07-23. (Remaining loose
+threads from this exchange spun out to NV-034, NV-035, NV-036 below,
+so this record can close cleanly rather than staying open-ended.)
 
 **Native response (verbatim, WhatsApp relay):**
 Tridip: "it's very hot today?"
@@ -1705,6 +1705,55 @@ after the correction (104/104 tests, Check D 0 problems).
 
 ---
 
+## NV-034 — "hot": `gek·gek` and `jro·a` still unconfirmed
+
+**Status:** OPEN. Spun out of NV-033 so that record could close
+cleanly — `ding·a` is settled, these two are not.
+
+The other two `UNVERIFIED/HIGH` "hot" candidates in
+`master_dictionary.json` (#4993 `gek·gek`, #4994 `jro·a`) were never
+addressed by either the original "hot" answer or the `Kama` follow-up.
+Not confirmed, not rejected — needs a direct question rather than
+inference from `ding·a`'s confirmation.
+
+---
+
+## NV-035 — `Kama` (no raka) glossed "Warm" — still unresolved
+
+**Status:** OPEN. Spun out of NV-033.
+
+`master_dictionary.json` #8532 (`"Warm"`, adj., `Kama`, page-115
+batch) is the one entry from that batch not addressed by the
+`kama = to burn` confirmation. Could be a legitimate extended sense
+of "to burn" (English has the same move: "it's a scorcher"), or the
+same over-broad-gloss problem that the removed "hot" entry turned out
+to be. Left untouched in production pending a direct question:
+does `Kama` ever mean "warm," or only "to burn"?
+
+---
+
+## NV-036 — `Da·alde` = `Da·al` + unlogged `-de` particle; `indakpile` ("very") unconfirmed
+
+**Status:** OPEN. Spun out of NV-033.
+
+Both surfaced in the original "it's very hot today" sentence
+(`Da·alde indakpile (very) ding·enga`) and neither was addressed by
+the later `Da·al`/`Kama` follow-up:
+- `Da·alde` is almost certainly `Da·al` ("today," confirmed
+  `VERIFIED/HIGH`) + a `-de` particle, plausibly topic/contrastive
+  ("as for today..."). The particle itself isn't documented anywhere
+  in `docs/GRAMMAR_RULE_CATALOGUE.md`. One data point only — needs a
+  dedicated question before formalizing as a rule, not silent
+  inference from this single sentence.
+- `indakpile`, glossed "(very)," doesn't resemble any of the 5
+  existing "very" candidates already in `master_dictionary.json`
+  (`Be·en`, `Bakkan`, `bang·e`, `·be·`, `·mi·si·`, `be·si`). Unclear
+  whether it's a general-purpose intensifier or specific to
+  weather/heat idiom ("scorching"). Not added to the dictionary
+  pending confirmation either way.
+
+---
+
 ## Closed Questions
 - **NV-006** (`·ko`/`·o` selection) — closed 2026-07-12, effectively
   resolved as engineering work, not a native question. See NV-006 above
@@ -1716,3 +1765,7 @@ after the correction (104/104 tests, Check D 0 problems).
 - **NV-013** (sing/dance purposive forms) — closed 2026-07-14, both
   confirmed by direct native evidence (`ring·na`, `chrokna`). See full
   entry above. `RC-CANDIDATE-007` updated with the confirmed values.
+- **NV-033** (`Kama` = "to burn," not "hot"; `Ka·ma` = "below") —
+  closed 2026-07-23, direct native confirmation. Wrong `"hot"→Kama`
+  production entry removed. Remaining loose ends from the same
+  exchange tracked separately as NV-034, NV-035, NV-036 (still open).
