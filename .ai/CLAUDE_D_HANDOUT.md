@@ -22,6 +22,41 @@ linguistic judgment, engineering judgment, or repository-maintenance
 judgment, it is not Claude D's task — hand it to Claude A or Claude B
 and move on.
 
+**Terminology note — read this before anything else below.** The
+phrase "canonical `garo_to_english` shape" is used with two genuinely
+different meanings across this repo's own docs, and it matters which
+one you produce:
+
+- `scripts/flip-garo-to-english.js` and
+  `scripts/normalize-flat-ocr-schema.js` both use it to mean the
+  **rich, nested shape Gemini actually produces** —
+  `{page, source_image, direction: "garo_to_english", entries: [{
+  headword_raw, entry_type, pos_groups: [{pos, senses: [...]}],
+  examples, cross_references, notes, ocr_confidence,
+  flagged_for_review }]}`. This is validated, working, real output —
+  page 30 was delivered and processed in exactly this shape,
+  2026-07-22/23.
+- `docs/CLAUDE_D_INGESTION_CONTRACT_SPEC.md` Section 1 (Claude A) also
+  calls it "the canonical `garo_to_english` shape," but describes the
+  **flat** `{english, garo, category?, pos?, classifier?, notes?,
+  source, source_page, ocr_version}` shape instead — the one
+  `scripts/import-dictionary.js` actually consumes. That flat shape is
+  real and correct too, but it is not what `import-dictionary.js`'s
+  own header calls "canonical `garo_to_english`" — it's the *output* of
+  `reduce-to-flat.js`, produced downstream of two mechanical
+  transformation steps, not something Claude D emits directly.
+
+**Claude D always emits the first one — the rich nested Gemini-OCR
+shape.** That's the one this document's workflow diagram means by
+"the project's canonical English → Garo dictionary format" (loosely
+worded in the original directive; the concrete field-level shape is
+whatever `scripts/flip-garo-to-english.js`'s header currently
+documents as its input — check there if this document and that file
+ever disagree, the code is the tie-breaker). Producing the flat shape
+directly, by reasoning rather than running
+`flip-garo-to-english.js`/`reduce-to-flat.js`, is **not** Claude D's
+job even when it can't execute those scripts — see below.
+
 ## Permanent workflow
 
 ```
@@ -84,15 +119,35 @@ directive.
 push/execution access this session, or declining to run
 unreviewed/unverified code against a live repository is the right call
 — see `.ai/SESSION_BOOTSTRAP.md`'s access-model section for what's
-current) — the workflow does not stop. Claude D performs the Garo →
-English reverse-engineering and repository-review classification by
-reasoning directly over the OCR output and the repository's actual
-current contents (read-only), and delivers the same clean/manifest
-output as plain text for someone else to run the pipeline against. The
-deliverable is the same either way: repository-ready data plus a
-classification manifest. How it gets produced — script execution or
-direct reasoning — is a trust/tooling decision for that session, not a
-change to what Claude D owes Claude A and Claude B.
+current) — **the deliverable does not change shape.** Claude D still
+transcribes and delivers the raw nested Gemini-OCR page JSON described
+above, as plain text in chat, exactly as it would if it were about to
+run `flip-garo-to-english.js` itself. This is validated: page 30
+(2026-07-22/23) was delivered this way — Claude D declined to execute
+`scripts/claude-d-preflight.js` after reading its source, for sound
+reasons (couldn't verify what else in the live repo it would be
+trusting by running anything), and pasted the raw OCR page as plain
+text instead. Claude B then ran the full
+`flip-garo-to-english.js` → `reduce-to-flat.js` →
+`claude-d-preflight.js` → `import-dictionary.js` pipeline from a
+verified clone, and it worked correctly on the first attempt.
+
+**Claude D should not attempt to manually flatten, fan out senses, or
+classify duplicates by reasoning instead of running the scripts**, even
+when scripts can't be run. Those three steps (`flip-garo-to-english.js`
+and `reduce-to-flat.js`'s field renaming/sense fan-out/affix exclusion,
+and `claude-d-preflight.js`'s classification against the live
+`master_dictionary.json`/`pending_lexicon.json`) are exactly the
+"intentionally dumb," fully-deterministic, zero-drift mechanical steps
+that were built as code specifically so no one has to eyeball or
+reason through them per page — see `flip-garo-to-english.js`'s own file
+header. Reasoning through them by hand reintroduces the drift risk the
+scripts exist to eliminate, and duplicate-classification specifically
+needs to check against the repository's actual current state at the
+moment of transcription, which reasoning-over-a-snapshot can't
+guarantee the way a live `git pull` + script run can. If Claude D
+can't run the scripts, the deliverable is the raw page — nothing
+further — and whoever can run the pipeline runs it from there.
 
 ## Repository review
 
@@ -105,6 +160,21 @@ spending effort transcribing it again.
 - Repository review is **not** repository maintenance.
 - **Claude D shall never modify existing repository data.** Review is
   read-only, always.
+
+**When scripts can be run**, `scripts/claude-d-preflight.js` performs
+the full review: a page-level check (has this `source_page` already
+been recorded anywhere) plus entry-level classification of every
+candidate against the current `master_dictionary.json` and
+`pending_lexicon.json`.
+
+**When scripts cannot be run**, Claude D should still do the
+page-level check by simply reading the relevant files as plain text
+(e.g. searching `pending_lexicon.json` for the page number in question)
+— that's a read, not code execution, and costs nothing to skip if
+there's any doubt. What Claude D should **not** attempt by hand in
+that case is entry-level duplicate/conflict classification across the
+full dictionary — see "Permanent workflow" above for why that stays a
+script's job even when transcription itself can't be automated.
 
 ## Duplicate handling
 
