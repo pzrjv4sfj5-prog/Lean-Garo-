@@ -37217,7 +37217,7 @@
       "ocr_version": "gemini-flat-legacy-v1"
     },
     "review_status": "approved",
-    "review_notes": null,
+    "review_notes": "CORRECTION 2026-07-23 (Claude A, post-promotion): direct Thangseng confirmation states \"kama = to burn,\" not \"hot.\" \"Hot\" independently confirmed as ding·a via natural sentence (NV-033). This entry's promoted master_dictionary.json record was removed as a duplicate-wrong-sense — the correct \"to burn\" sense for Kama already exists in production independently (see \"To burn\"/Kama entry). promotion_status changed from \"promoted\" to \"rejected\" to reflect current reality (it genuinely WAS promoted 2026-07-22, then retracted 2026-07-23) — repository-intelligence.js Check D has no \"retracted\" state, and review_status is intentionally left \"approved\" since the original review call was reasonable given the evidence available at promotion time.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-22T05:26:57.949337+00:00",
     "conflict": {
@@ -37228,7 +37228,7 @@
         "jro·a"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "rejected",
     "promoted_date": "2026-07-22T05:27:04.859Z"
   },
   {

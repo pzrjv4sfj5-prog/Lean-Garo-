@@ -583,6 +583,11 @@ three distinct Garo items across two parts of speech, currently in a
 
 **Examples:** "I have work to do" → `Kam` sense; "I work every day" →
 `Kam ka·a` sense; "I did it" → `Daka` sense (not work-specific at all).
+Corroborating natural sentence, 2026-07-23 (not elicited — Thangseng
+used it spontaneously testing a translation): "We will work today" =
+`Chinga da·alo kam ka·gen` — `Kam ka·a` inflected with the future
+suffix `-gen`, matching the general future-tense pattern already
+confirmed elsewhere (e.g. `cha·gen` "will eat"). See NV-033 follow-up.
 **Counterexamples:** none — this is a part-of-speech/sense split, not
 a rule with exceptions.
 **Dependencies:** none identified.

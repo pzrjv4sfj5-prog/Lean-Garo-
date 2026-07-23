@@ -1588,10 +1588,11 @@ handed to Claude B to verify against actual engine output.
 
 ---
 
-## NV-033 — "hot" = `ding·a` confirmed via natural sentence; `Kama` now suspect; two new unconfirmed candidates surfaced
+## NV-033 — "hot" = `ding·a` confirmed via natural sentence; `Kama` confirmed wrong; `Da·al` orthography reconfirmed; two candidates remain open
 
-**Status:** PARTIALLY RESOLVED. Native response direct Thangseng
-confirmation, relayed via Project Owner, 2026-07-23.
+**Status:** MOSTLY RESOLVED, updated 2026-07-23 with a direct
+follow-up. Native response direct Thangseng confirmation, relayed via
+Project Owner.
 
 **Native response (verbatim, WhatsApp relay):**
 Tridip: "it's very hot today?"
@@ -1641,6 +1642,66 @@ Thangseng: "Da·alde indakpile (very) ding·enga."
 `ding·a` unchanged (correctly — it needed no change).
 `known_dictionary_conflicts.json`'s existing `"hot"` allowlist entry
 unchanged; `Kama` not removed from production, just flagged.
+
+---
+
+### Follow-up, 2026-07-23 — Kama confirmed wrong for "hot"; Da·al orthography reconfirmed; new corroborating sentence for RULE-041
+
+**Native response (verbatim, WhatsApp relay):**
+Tridip (testing a translation): "Chinga da·alo kam ka·gen" [= "we
+will work today"]
+Thangseng: "and today is da.l right?"
+[Claude A, via Project Owner]: confirmed — Da·al, raka in the middle.
+Thangseng: "and also Kama?"
+Thangseng: "kama = to burn; ka'ma = below"
+
+**Determination:**
+- **`Kama` (no raka) = "to burn." Confirmed NOT "hot."** This closes
+  the suspicion raised above — the production `master_dictionary.json`
+  entry `{"english": "hot", "garo": "Kama"}` (#8484, originally
+  promoted via `PL-0001409`, page 115) has been **removed** as a
+  duplicate-wrong-sense: the correct "to burn" sense for `Kama` was
+  already independently present in production (`"To burn"` → `Kama`).
+  "Hot" stays exclusively `ding·a`, per the top of this entry.
+  `PL-0001409`'s `promotion_status` changed from `promoted` to
+  `rejected` to reflect this — `repository-intelligence.js` Check D
+  has no "retracted" state, `rejected` is the closest accurate fit;
+  full explanation in its `review_notes`.
+- **`Ka·ma` (raka present) = "below."** This independently confirms
+  the *existing* `"down"` → `Ka·ma` entry already in production
+  (unrelated to today's correction) — same word, adjacent sense
+  (below/down), correctly distinguished from raka-less `Kama` by the
+  print dictionary already. No change needed there.
+- **Not yet resolved:** `master_dictionary.json` still has `Kama`
+  (no raka) glossed as `"Warm"` (adj., #8532, same page-115 batch as
+  the removed "hot" entry). This wasn't directly addressed by either
+  answer — could be a legitimate extended sense of "to burn" (cf.
+  English "it's a scorcher"), or the same over-broad-gloss problem.
+  Left untouched pending a direct question.
+- **`Da·al` orthography reconfirmed**: raka in the middle, matching
+  the existing `VERIFIED/HIGH` entries (#3674/#3675). No change
+  needed. This also resolves the standing question from this NV's
+  first entry about `Da·alde` (from the "hot" sentence) — almost
+  certainly `Da·al` + an unlogged `-de` particle, not a separate root.
+  The particle itself is still not documented in
+  `docs/GRAMMAR_RULE_CATALOGUE.md` — needs its own question before
+  formalizing as a rule.
+- **New corroborating sentence for `RULE-039`/`RULE-041`:**
+  `Chinga da·alo kam ka·gen` = "we will work today." `kam ka·gen`
+  ("work" noun + future-tense verb) is a live, natural confirmation of
+  `RULE-041`'s `Kam ka·a` compound verb, here inflected with the
+  future suffix `-gen` (same pattern already confirmed elsewhere,
+  e.g. `cha·gen` "will eat"). Strengthens `RULE-041`'s confidence —
+  not just an elicited example, but spontaneous natural usage.
+  `da·alo` (locative-marked "today," "on today"/"today, [we will]")
+  also matches the existing `VERIFIED/HIGH` `Da·alo` entry exactly.
+
+**Repository components impacted:** `master_dictionary.json` — #8484
+removed. `src/data/pending_lexicon.json` `PL-0001409` — `promotion_status`
+→ `rejected`, `review_notes` updated. `RULE-041` in
+`docs/GRAMMAR_RULE_CATALOGUE.md` gains a corroborating natural-sentence
+example (see that file). `tests`/`repository-intelligence.js` clean
+after the correction (104/104 tests, Check D 0 problems).
 
 ---
 
