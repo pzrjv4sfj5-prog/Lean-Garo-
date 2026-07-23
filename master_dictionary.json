@@ -57022,5 +57022,485 @@
     "garo": "Namgipa ong·ani",
     "category": "general",
     "notes": "VERIFIED/HIGH, Thangseng 2026-07-23"
+  },
+  {
+    "english": "juicy",
+    "garo": "Bitchi gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Typo 'suculent' preserved."
+  },
+  {
+    "english": "suculent",
+    "garo": "Bitchi gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Typo 'suculent' preserved."
+  },
+  {
+    "english": "having egg.",
+    "garo": "Bitchi gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Typo 'suculent' preserved."
+  },
+  {
+    "english": "scab",
+    "garo": "Bisingkap",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "scale",
+    "garo": "Bisingkap",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "shell.",
+    "garo": "Bisingkap",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "seed",
+    "garo": "Bitchil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "grain for use as seed.",
+    "garo": "Bitchil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to sow seeds",
+    "garo": "Bitchil sata",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'broarcast' preserved."
+  },
+  {
+    "english": "to scatter seeds by hand",
+    "garo": "Bitchil sata",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'broarcast' preserved."
+  },
+  {
+    "english": "to broarcast seeds.",
+    "garo": "Bitchil sata",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'broarcast' preserved."
+  },
+  {
+    "english": "to burrow",
+    "garo": "Bita",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'penerate' preserved."
+  },
+  {
+    "english": "to force through thickets",
+    "garo": "Bita",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'penerate' preserved."
+  },
+  {
+    "english": "to pierce or penetrate (with an arrow, spear, bullet or any pointed thing).",
+    "garo": "Bita",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'penerate' preserved."
+  },
+  {
+    "english": "the fleshy part of the plant",
+    "garo": "Bita (Bi-ta)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "bulb.",
+    "garo": "Bita (Bi-ta)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "fruit",
+    "garo": "Bite",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "crops",
+    "garo": "Bite",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "result",
+    "garo": "Bite",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "benefit.",
+    "garo": "Bite",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the ear of the paddy.",
+    "garo": "Bitenggak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a piece of meat",
+    "garo": "Bitin",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "lump or cold of anything.",
+    "garo": "Bitin",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to move backward without turning the body.",
+    "garo": "Bitina (Bit-dina)",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "persistently",
+    "garo": "Biting-biting",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "obstinately.",
+    "garo": "Biting-biting",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "to make a nest.",
+    "garo": "Bitip ra·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "nest.",
+    "garo": "Bitip (Bi-tip)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "nidus.",
+    "garo": "Bitip (jo·ongrangni)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "trunk",
+    "garo": "Bitong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "girth",
+    "garo": "Bitong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "shaft",
+    "garo": "Bitong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "stalk (of a herb).",
+    "garo": "Bitong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to burrow and thrown up the earth (stopping the hole as worms or mole).",
+    "garo": "Bitpinga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "a dark night.",
+    "garo": "Bitsim, Jabitsim",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "blade",
+    "garo": "Biwa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "cutting edge",
+    "garo": "Biwa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "an edge (of a knife, chopper, etc.).",
+    "garo": "Biwa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the inturning spikes which permit entrance into a basket trap for fish but prevent ingress.",
+    "garo": "Biwa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Separate entry for repeated headword."
+  },
+  {
+    "english": "the part of the bamboo between nodes",
+    "garo": "Biweng",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "interlace",
+    "garo": "Biweng",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a single division from node to node of a bamboo.",
+    "garo": "Biweng",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to float",
+    "garo": "Boa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to carry the load.",
+    "garo": "Boa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "swelling of the body.",
+    "garo": "Boa (Be·en)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to tell a lie",
+    "garo": "Bo·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Double period at the end of the entry."
+  },
+  {
+    "english": "to lie",
+    "garo": "Bo·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Double period at the end of the entry."
+  },
+  {
+    "english": "to speak falsely..",
+    "garo": "Bo·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Double period at the end of the entry."
+  },
+  {
+    "english": "to pack up (cloths) and go.",
+    "garo": "(Ba·ra) Boe kata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "dumb.",
+    "garo": "Bo·ba",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "an enemy",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a rival",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "an antagonist",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a foe",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "an adversary.",
+    "garo": "Bobil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "enmity",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'."
+  },
+  {
+    "english": "rivalry",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'."
+  },
+  {
+    "english": "hatred",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'."
+  },
+  {
+    "english": "strife",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'."
+  },
+  {
+    "english": ".spite.",
+    "garo": "Bobil daka",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Extraneous period before 'spite'."
+  },
+  {
+    "english": "a sister-in-law",
+    "garo": "Bochi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "an elder brother's wife.",
+    "garo": "Bochi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "knave",
+    "garo": "Bodmas",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "rouge.",
+    "garo": "Bodmas",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "to exchange",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to change",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to replace",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to replenish",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to change one thing for another.",
+    "garo": "Bodolea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "a book",
+    "garo": "Bohi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a note-book.",
+    "garo": "Bohi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a heron",
+    "garo": "Boga",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a crane",
+    "garo": "Boga",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a stork.",
+    "garo": "Boga",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a ditch.",
+    "garo": "Boi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "an oar.",
+    "garo": "Boita",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a numerical prefix used for large bundles of bamboos, fire wood, etc.",
+    "garo": "Boja",
+    "category": null,
+    "pos": "n."
   }
 ]

@@ -38559,16 +38559,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001461",
@@ -38585,16 +38585,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001462",
@@ -38611,16 +38611,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001463",
@@ -38637,16 +38637,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001464",
@@ -38663,18 +38663,18 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": "existing-conflict",
       "details": [
         "Tochakani"
       ]
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001465",
@@ -38691,16 +38691,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001466",
@@ -38717,18 +38717,18 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": "existing-conflict",
       "details": [
         "bit·chi·ri"
       ]
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001467",
@@ -38745,16 +38745,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001468",
@@ -38771,16 +38771,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001469",
@@ -38797,16 +38797,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001470",
@@ -38823,16 +38823,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001471",
@@ -38849,16 +38849,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001472",
@@ -38875,16 +38875,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001473",
@@ -38901,16 +38901,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001474",
@@ -38927,16 +38927,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001475",
@@ -38953,16 +38953,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001476",
@@ -38979,18 +38979,18 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
-    "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "review_status": "approved",
+    "review_notes": "Raka collision flagged, not resolved: existing master_dictionary.json #4816 has \"fruit\"->bi·te (raka, UNVERIFIED/HIGH), this entry is \"fruit\"->Bite (no raka). Same word, same english gloss, conflicting raka placement between two independently-sourced print-dictionary entries. No repo evidence to resolve either way - approved for promotion (both forms staged), needs native check before either is treated as sole-correct.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": "existing-conflict",
       "details": [
         "bi·te"
       ]
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001477",
@@ -39007,16 +39007,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001478",
@@ -39033,16 +39033,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001479",
@@ -39059,16 +39059,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001480",
@@ -39085,16 +39085,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001481",
@@ -39111,16 +39111,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001482",
@@ -39137,16 +39137,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001483",
@@ -39163,16 +39163,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001484",
@@ -39189,16 +39189,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001485",
@@ -39215,16 +39215,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001486",
@@ -39241,16 +39241,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001487",
@@ -39267,16 +39267,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001488",
@@ -39293,16 +39293,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001489",
@@ -39319,18 +39319,18 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": "existing-conflict",
       "details": [
         "bi·am·bong"
       ]
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001490",
@@ -39347,16 +39347,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001491",
@@ -39373,18 +39373,18 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": "existing-conflict",
       "details": [
         "bi·sok"
       ]
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001492",
@@ -39401,16 +39401,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001493",
@@ -39427,16 +39427,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001494",
@@ -39453,16 +39453,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001495",
@@ -39479,16 +39479,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001496",
@@ -39505,16 +39505,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001497",
@@ -39531,16 +39531,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001498",
@@ -39557,16 +39557,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001499",
@@ -39583,16 +39583,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001500",
@@ -39609,16 +39609,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001501",
@@ -39635,16 +39635,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001502",
@@ -39661,16 +39661,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001503",
@@ -39687,16 +39687,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001504",
@@ -39713,16 +39713,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001505",
@@ -39739,16 +39739,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001506",
@@ -39765,16 +39765,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001507",
@@ -39791,16 +39791,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001508",
@@ -39817,16 +39817,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001509",
@@ -39843,16 +39843,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001510",
@@ -39869,16 +39869,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001511",
@@ -39895,16 +39895,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001512",
@@ -39921,16 +39921,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001513",
@@ -39947,16 +39947,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001514",
@@ -39973,16 +39973,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001515",
@@ -39999,16 +39999,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001516",
@@ -40025,16 +40025,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001517",
@@ -40051,18 +40051,18 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": "existing-conflict",
       "details": [
         "Mittera"
       ]
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001518",
@@ -40079,16 +40079,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001519",
@@ -40105,16 +40105,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001520",
@@ -40131,16 +40131,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001521",
@@ -40157,16 +40157,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001522",
@@ -40183,16 +40183,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001523",
@@ -40209,16 +40209,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001524",
@@ -40235,16 +40235,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001525",
@@ -40261,16 +40261,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001526",
@@ -40287,16 +40287,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001527",
@@ -40313,16 +40313,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001528",
@@ -40339,16 +40339,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001529",
@@ -40365,16 +40365,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001530",
@@ -40391,16 +40391,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001531",
@@ -40417,16 +40417,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001532",
@@ -40443,16 +40443,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001533",
@@ -40469,16 +40469,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001534",
@@ -40495,16 +40495,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001535",
@@ -40521,16 +40521,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001536",
@@ -40547,16 +40547,16 @@
       "import_date": "2026-07-22T16:40:13.144Z",
       "ocr_version": "gemini-v1"
     },
-    "review_status": "unreviewed",
+    "review_status": "approved",
     "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {
     "id": "PL-0001537",
