@@ -457,6 +457,13 @@ the two are not in tension as long as P0 stays P0.
 
 ## Claude D — repository ingestion layer (Project Owner directive, 2026-07-20)
 
+**Read `.ai/CLAUDE_D_HANDOUT.md` first — that is now the permanent,
+authoritative operational guide for Claude D (Project Owner directive,
+2026-07-23), separate from this session-bootstrap doc. Everything
+below this point is session-specific state (what changed, what's
+in-flight this session) — the handout is what Claude D *is* and
+doesn't change session to session.**
+
 **This section supersedes the 2026-07-17 "No Claude D" decision
 (`docs/CLAUDE_D_TRANSFORMATION_SPEC.md`, commit `1047970`) by explicit
 Project Owner directive. That decision is NOT deleted or rewritten —
