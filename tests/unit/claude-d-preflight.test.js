@@ -8,6 +8,7 @@ import {
   splitPosMarker,
   checkPageAlreadyProcessed,
   classifyEntry,
+  normalizeGaroLoose,
 } from '../../scripts/claude-d-preflight.js';
 import { buildExistingIndex, buildPendingKeys, normalize } from '../../scripts/import-dictionary.js';
 
@@ -79,6 +80,83 @@ test('classifyEntry uses exact trim-only garo equality, matching import-dictiona
   assert.notEqual(rakaStripped, sample.garo, 'fixture must actually contain a raka mark for this test to be meaningful');
   const r = classifyEntry({ english: sample.english, garo: rakaStripped }, existingByKey, pendingKeys);
   assert.equal(r.classification, 'possible_conflict', 'raka-stripped garo must not be treated as an exact duplicate');
+});
+
+test('normalizeGaroLoose strips raka, dashes, spaces, and case for the advisory (not authoritative) variant-detection signal', () => {
+  assert.equal(normalizeGaroLoose('bi·te'), 'bite');
+  assert.equal(normalizeGaroLoose('Bite'), 'bite');
+  assert.equal(normalizeGaroLoose('ra-a bi te'), 'raabite');
+});
+
+test('findGaroKeyedNearDuplicates: catches same-headword-different-english near-duplicates (the actual page 31 failure mode)', async () => {
+  const { findGaroKeyedNearDuplicates } = await import('../../scripts/claude-d-preflight.js');
+  const entries = [
+    { english: 'a middle-sized deciduous tree (lagerstroemia)', garo: 'Bolasari' },
+    { english: 'a middle-sized deciduous tree (lagerstroenia, typo variant)', garo: 'Bol-asa-ri' },
+  ];
+  const flagged = findGaroKeyedNearDuplicates(entries);
+  assert.equal(flagged.length, 1);
+  assert.equal(flagged[0].variants.length, 2);
+});
+
+test('findGaroKeyedNearDuplicates regression guard: does NOT flag legitimate multi-sense fan-out from one headword (same literal garo repeated)', async () => {
+  const { findGaroKeyedNearDuplicates } = await import('../../scripts/claude-d-preflight.js');
+  const entries = [
+    { english: 'trunk', garo: 'Bitong' },
+    { english: 'girth', garo: 'Bitong' },
+    { english: 'shaft', garo: 'Bitong' },
+    { english: 'stalk (of a herb)', garo: 'Bitong' },
+  ];
+  const flagged = findGaroKeyedNearDuplicates(entries);
+  assert.equal(flagged.length, 0, 'same literal garo repeated for multiple senses of one headword must not be flagged as a near-duplicate');
+});
+
+test('end-to-end: garo_keyed_near_duplicates appears in the manifest for a page with an OCR-variant headword pair', async () => {
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'claude-d-test-'));
+  const inputPath = path.join(tmpDir, 'page.json');
+  fs.writeFileSync(inputPath, JSON.stringify([
+    { english: 'brandnewword_garodup_a', garo: 'Bolasari' },
+    { english: 'brandnewword_garodup_b_different_gloss', garo: 'Bol-asa-ri' },
+    { english: 'brandnewword_fananout_trunk', garo: 'SomeSharedHeadword' },
+    { english: 'brandnewword_fananout_girth', garo: 'SomeSharedHeadword' },
+  ]));
+
+  const { execFileSync } = await import('child_process');
+  execFileSync('node', ['scripts/claude-d-preflight.js', inputPath, '--source-page', 'garo-dup-test-page'], { encoding: 'utf8' });
+
+  const manifest = JSON.parse(fs.readFileSync(inputPath.replace(/\.json$/, '.manifest.json'), 'utf8'));
+  assert.equal(manifest.garo_keyed_near_duplicates.length, 1);
+  assert.equal(manifest.garo_keyed_near_duplicates[0].variants.length, 2);
+
+  fs.rmSync(tmpDir, { recursive: true, force: true });
+});
+
+test('end-to-end: a raka/case-only variant is flagged likely_raka_variant in the manifest, but still classified as possible_conflict (advisory, not merged/dropped)', async () => {
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'claude-d-test-'));
+  const inputPath = path.join(tmpDir, 'page.json');
+  const master = JSON.parse(fs.readFileSync('master_dictionary.json', 'utf8'));
+  const sample = master.find(e => e.english && e.garo && e.garo.includes('·') && !e.english.includes('.'));
+  assert.ok(sample);
+
+  fs.writeFileSync(inputPath, JSON.stringify([
+    { english: sample.english, garo: sample.garo.replace(/·/g, '').toUpperCase() },
+  ]));
+
+  const { execFileSync } = await import('child_process');
+  execFileSync('node', ['scripts/claude-d-preflight.js', inputPath, '--source-page', 'raka-variant-test-page'], { encoding: 'utf8' });
+
+  const manifest = JSON.parse(fs.readFileSync(inputPath.replace(/\.json$/, '.manifest.json'), 'utf8'));
+  assert.equal(manifest.possible_conflict_count, 1);
+  assert.equal(manifest.likely_raka_variant_count, 1);
+  assert.equal(manifest.possible_conflicts[0].likely_raka_variant, true);
+  assert.equal(manifest.possible_conflicts[0].raka_variant_of, sample.garo);
+
+  // Advisory only — the entry must still be present in the clean array,
+  // not silently dropped or auto-resolved.
+  const clean = JSON.parse(fs.readFileSync(inputPath.replace(/\.json$/, '.clean.json'), 'utf8'));
+  assert.equal(clean.length, 1);
+
+  fs.rmSync(tmpDir, { recursive: true, force: true });
 });
 
 test('end-to-end: CLI run on a synthetic page produces clean array + manifest with correct classification counts', async () => {

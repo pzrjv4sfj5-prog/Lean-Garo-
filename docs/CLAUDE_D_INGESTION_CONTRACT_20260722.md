@@ -135,13 +135,28 @@ call — but right now these near-misses are invisible unless Claude A
 happens to eyeball the raw page (which is how this pair was actually
 caught, not via the tool).
 
-For this page specifically: `Bol-asa-ri` and `Bol-a-sin` were manually
-rejected as duplicates of `Bolasari`/`Bolasin` during Claude A's review
-pass — see `src/data/pending_lexicon.json` `review_notes` on those two
-records. (Note: this page was processed twice due to a concurrent-push
-ID collision with page 30's import — the second, final run is the one
-whose IDs are live in the repo; the analysis and disposition are
-identical between runs, only the `PL-xxxx` numbers shifted.)
+**Fixed, same day (Claude B, 2026-07-23):** `claude-d-preflight.js` now
+does exactly this. Two additions, both advisory-only (never merge, never
+drop, never auto-decide — same charter as everything else in this
+tool):
+- `likely_raka_variant` flag on `possible_conflict` manifest entries —
+  english already matched, garo differs; flags when the difference is
+  purely raka/dash/space/case. On page 30 this correctly identified 1
+  of 6 conflicts as a true formatting variant and correctly left the
+  other 5 unflagged (3 of which an earlier commit message on this repo
+  had guessed, incorrectly, were also raka variants — the tool is more
+  precise than eyeballing it).
+- `garo_keyed_near_duplicates` in the manifest — a separate,
+  independent-of-english pass, exactly as recommended above: groups
+  same-batch entries by normalized garo, flags any group containing 2+
+  *distinct* raw spellings (would have caught Bolasari/Bol-asa-ri
+  directly). Deliberately does NOT flag a group where every row shares
+  one identical raw garo string — that's normal multi-sense fan-out
+  from a single headword (e.g. "Bitong" -> trunk/girth/shaft/stalk),
+  and flagging it would bury the real signal in noise on every
+  multi-sense page.
+
+
 
 ## What Claude B did not implement from the draft
 

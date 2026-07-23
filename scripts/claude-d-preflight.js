@@ -156,6 +156,75 @@ export function classifyEntry(entry, existingByKey, pendingKeys) {
   return { classification: 'new', existing_garo: null };
 }
 
+/**
+ * Advisory-only signal (does NOT affect classification): does the
+ * incoming garo match an existing value after stripping raka marks,
+ * dashes, spaces, and case? This is exactly the looser comparison the
+ * original draft contract described for "exact duplicate" — kept out
+ * of that classification deliberately (see file header, Deviation 1)
+ * but genuinely useful as a triage hint: on page 30, 4 of 6
+ * possible_conflict entries turned out to be raka/case variants of an
+ * already-production word ("Bite" vs "bi·te" for fruit, "Bitong" vs
+ * "bi·am·bong" for trunk) rather than new synonyms. Flagging this lets
+ * Claude A separate "probably just formatting, confirm and skip" from
+ * "genuinely new word" without this script silently deciding either
+ * way — it only ever suggests, never merges or drops an entry.
+ */
+export function normalizeGaroLoose(s) {
+  return (s || '').toString().toLowerCase().replace(/[·\-\s]/g, '');
+}
+
+function findRakaVariantMatch(incomingGaro, existingValues) {
+  if (!existingValues) return null;
+  const loose = normalizeGaroLoose(incomingGaro);
+  for (const v of existingValues) {
+    if (v !== incomingGaro && normalizeGaroLoose(v) === loose) return v;
+  }
+  return null;
+}
+
+/**
+ * Within-batch, garo-keyed near-duplicate detection (contract notes
+ * doc, "Gap found in production use — page 31", Claude A 2026-07-23).
+ * Complementary to classifyEntry's possible_conflict check, not a
+ * replacement: that check only fires once english already matches
+ * something. This one is independent of english entirely, because the
+ * actual failure mode was the SAME garo headword OCR'd two different
+ * ways across two listings on one page (Bolasari / Bol-asa-ri), with
+ * the gloss also OCR'd slightly differently each time — so neither
+ * english-keyed exact-duplicate nor within-batch conflict detection
+ * ever saw them as related.
+ *
+ * Groups same-batch entries by normalizeGaroLoose(garo). A group only
+ * gets flagged if it contains 2+ DISTINCT raw garo strings — a group
+ * where every row shares one identical raw garo string is normal
+ * multi-sense fan-out from a single headword (e.g. "Bitong" ->
+ * trunk/girth/shaft/stalk, four rows, same literal garo each time) and
+ * must NOT be flagged; only near-misses where the raw spelling itself
+ * differs are the actual signal.
+ */
+export function findGaroKeyedNearDuplicates(entries) {
+  const groups = new Map(); // normalized garo -> Map(raw garo -> [english,...])
+  for (const e of entries) {
+    const loose = normalizeGaroLoose(e.garo);
+    if (!loose) continue;
+    if (!groups.has(loose)) groups.set(loose, new Map());
+    const rawMap = groups.get(loose);
+    if (!rawMap.has(e.garo)) rawMap.set(e.garo, []);
+    rawMap.get(e.garo).push(e.english);
+  }
+
+  const flagged = [];
+  for (const [loose, rawMap] of groups) {
+    if (rawMap.size < 2) continue; // one raw spelling only -> normal fan-out, not a near-duplicate
+    flagged.push({
+      normalized_garo: loose,
+      variants: [...rawMap.entries()].map(([garo, englishList]) => ({ garo, english: englishList })),
+    });
+  }
+  return flagged;
+}
+
 function findExistingSource(entry, existingByKey, masterDictionaryPath) {
   // Best-effort only — see file header re: provenance coverage gap.
   const master = loadJSON(masterDictionaryPath);
@@ -262,11 +331,14 @@ function main() {
     else if (classification === 'exact_duplicate') exactDupCount++;
     else {
       conflictCount++;
+      const rakaMatch = findRakaVariantMatch(entry.garo, existing_garo);
       possibleConflicts.push({
         english: entry.english,
         incoming_garo: entry.garo,
         existing_garo: existing_garo || null,
         existing_source: existing_garo ? findExistingSource(entry, existingByKey, MASTER_DICT_PATH) : null,
+        likely_raka_variant: rakaMatch !== null,
+        raka_variant_of: rakaMatch,
       });
     }
   }
@@ -284,7 +356,9 @@ function main() {
     new_count: newCount,
     exact_duplicate_count: exactDupCount,
     possible_conflict_count: possibleConflicts.length,
+    likely_raka_variant_count: possibleConflicts.filter(c => c.likely_raka_variant).length,
     manual_review_count: manualReview.length,
+    garo_keyed_near_duplicates: findGaroKeyedNearDuplicates(clean),
     possible_conflicts: possibleConflicts,
     manual_review_items: manualReview,
   };
@@ -294,7 +368,10 @@ function main() {
     fs.writeFileSync(examplesPath, JSON.stringify(examples, null, 2) + '\n');
   }
 
-  console.log(`Page ${sourcePage}: ${clean.length} candidate entries (${newCount} new, ${exactDupCount} exact duplicate, ${possibleConflicts.length} possible conflict, ${manualReview.length} manual review).`);
+  console.log(`Page ${sourcePage}: ${clean.length} candidate entries (${newCount} new, ${exactDupCount} exact duplicate, ${possibleConflicts.length} possible conflict [${manifest.likely_raka_variant_count} likely raka/spelling variant], ${manualReview.length} manual review).`);
+  if (manifest.garo_keyed_near_duplicates.length) {
+    console.log(`  ${manifest.garo_keyed_near_duplicates.length} within-batch garo-keyed near-duplicate group(s) found — same headword OCR'd more than one way on this page. See manifest.`);
+  }
   console.log(`Clean entry array: ${cleanPath}`);
   console.log(`Manifest: ${manifestPath}`);
   if (examples.length) console.log(`Examples pulled out: ${examplesPath} (${examples.length})`);
