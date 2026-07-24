@@ -117,6 +117,26 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-07-24, Claude B — "correct duty/quarrel dictionary bugs"
+(commit `ae9db1f`) did not actually apply Thangseng's confirmed
+work/quarrel sense-splits.** Verified directly against current `HEAD`:
+- `"he works"` still compiles to `Ua Daka` — Thangseng confirmed `Daka`
+  = "to do" (general), not "to work" specifically; the correct verb is
+  the compound `Kam ka·a`. Neither `"Kam ka·a"` nor a standalone
+  `"jegrika"` (see below) appears anywhere in git history — `git log
+  --all --oneline | grep -i "jegrika\|Kam ka"` returns nothing.
+- `"they quarrel"` still compiles to `Uamang Kajia` — `Kajia` is the
+  noun/dispute sense Thangseng did **not** confirm as the quarrel-verb;
+  the confirmed word is `jegrika`, never added.
+- Full detail on both, including the "work" 3-way sense split
+  (Daka/Kam/Kam ka·a) and the quarrel finding (bot·a ≠ quarrel, it
+  means incite/provoke; ni·ri·a unconfirmed), is already written up in
+  `docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md` items
+  3 and 4 — that doc was never fully acted on for these two items even
+  though ae9db1f's title suggested it was. Not resolved by Claude B —
+  needs the actual headword additions/splits, which is linguistic
+  content, not plumbing.
+
 **NEW, 2026-07-23, Claude A — page 31 processed, one real preflight gap found:**
 No live Claude D session — Project Owner pasted raw page 31 OCR output
 directly. Claude A ran it through the actual pipeline by hand
