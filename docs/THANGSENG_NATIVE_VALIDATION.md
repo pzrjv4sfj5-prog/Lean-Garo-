@@ -1866,3 +1866,22 @@ recognizes and would actually use for "breakfast," even if borrowed?
 Is there any other Garo expression for the morning meal (even a
 descriptive phrase, e.g. "morning food")? Add to the next Thangseng
 relay batch alongside other open NV items.
+
+## NV-040 — `Bite` ("fruit"), no raka — CLOSED
+
+**Status:** CLOSED. First direct native confirmation.
+
+**Correction to the record:** commit `564295d`'s message ("fruit dedup
+to Bite") reads as a native-confirmed decision but was not — it was a
+mechanical hygiene dedup of a duplicate `"fruit":"bi·te"` entry down to
+the existing `"fruit":"Bite"` entry, based on corpus-internal reasoning
+only. No NV entry was ever written for it, which this closes.
+
+**Native confirmation (Tridip → Thangseng, 2026-07-23):**
+> Tridip: fruit?
+> Thangseng: Bite
+
+Confirms `Bite` (no raka mark) is correct for "fruit." No dictionary
+change needed — the earlier mechanical dedup happened to land on the
+right form. Logged here so the decision has an actual evidentiary
+basis on record, not just an unverified commit message.
