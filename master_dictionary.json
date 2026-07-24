@@ -22654,11 +22654,19 @@
   },
   {
     "english": "bird",
+    "garo": "Do·",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "CONFIRMED — Project Owner relay 2026-07-24: Do· alone is the bird-family root/generic word; supersedes prior do·o merge (do·o itself now separately confirmed = chicken, see chicken entry / NV-025)"
+  },
+  {
+    "english": "chicken",
     "garo": "do·o",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "CONFIRMED native (Thangseng, NV-025, 2026-07-20) + Project Owner relay 2026-07-24 resolving prior bird/chicken do·o collision"
   },
   {
     "english": "bird basket",

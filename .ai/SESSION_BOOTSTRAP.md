@@ -117,6 +117,40 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-07-24 (later same day), Claude B — bird/chicken fixed;
+"they quarrel" sentence-level fix only, quarrel headword still NOT
+added. Exception to normal process — Claude A was out of tokens,
+Project Owner relayed native data directly and asked Claude B to
+implement. Please review both when back.**
+- **bird/chicken (item 7 of the pending proposal doc):** Project Owner
+  relayed "Do· alone is the bird family [word]" directly. Applied:
+  `master_dictionary.json`'s stale `"bird": "do·o"` entry corrected to
+  `"bird": "Do·"`; new `"chicken": "do·o"` entry added (this part was
+  already NV-025-confirmed, just hadn't been wired in). Also had to fix
+  a matching stale override in `src/data/corrections.json` — the
+  exact-match layer was still forcing `"bird"` → `do·o` even after the
+  master dictionary fix, both are now consistent. Verified via engine:
+  `bird` → `Do·`, `chicken` → `do·o`, `chicken coop` → `do·ochi·dik`
+  still correct, `two birds` classifier phrase unaffected.
+- **"they quarrel":** Project Owner relayed a fresh Thangseng exchange
+  (2026-07-24, via Tridip) — "they quarrel" → "Uamang jegrika". This is
+  the same `jegrika` NV-028 already flagged: Thangseng confirmed the
+  *word* but gave no raka marks, and this project's raka discipline
+  says don't guess placement. The new exchange doesn't add raka marks
+  either, so NV-028's orthography gap is still open — **did not** add
+  `jegrika` to `master_dictionary.json`'s `quarrel` headword. What
+  *was* added: an exact-match sentence override in
+  `src/data/corrections.json` (`"they quarrel": "Uamang jegrika"`) —
+  this is just storing the literal confirmed surface form for this one
+  sentence, not generalizing an unconfirmed spelling into the lexicon.
+  Verified via engine: `they quarrel` → `Uamang jegrika`, confidence 1,
+  method `correction`. **`"he works"` still unresolved** — no new data
+  given this session; still needs `Kam ka·a` wired in per RULE-041
+  (see below), which is an engineering headword-split task, not
+  blocked on native data.
+- Ran full `npm test` (106/106) and `npm run build` after both fixes —
+  clean.
+
 **NEW, 2026-07-24, Claude B — "correct duty/quarrel dictionary bugs"
 (commit `ae9db1f`) did not actually apply Thangseng's confirmed
 work/quarrel sense-splits.** Verified directly against current `HEAD`:
