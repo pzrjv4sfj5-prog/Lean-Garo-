@@ -56367,10 +56367,10 @@
   },
   {
     "english": "To work",
-    "garo": "Kam",
+    "garo": "Kam ka·a",
     "category": null,
-    "pos": "Kam ka·a, v.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+    "pos": "v.",
+    "notes": "CONFIRMED — RULE-041, Thangseng relay 2026-07-22: 'Kam ka·a' is the verb 'to work' (Kam=noun work/job + ka·a=to do/act). OCR had misplaced this value in the pos field, causing 'he works' to fall back to the generic 'Daka' (to do) entry instead. Corrected 2026-07-25."
   },
   {
     "english": "to do",

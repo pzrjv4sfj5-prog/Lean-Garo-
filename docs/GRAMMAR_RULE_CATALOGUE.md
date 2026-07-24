@@ -600,11 +600,22 @@ simply dropping it; ask Thangseng directly before removing it from
 `known_dictionary_conflicts.json`.
 **Confidence:** High (the three confirmed items); Unknown (`ga·a`).
 **Launch Priority:** P0 — this was previously treated as a straight
-4-way synonym conflict needing a single winner; it is not. **Engineering
-handoff to Claude B:** split into `"work"` (noun, → `Kam`) and
-`"to work"` (verb, → `Kam ka·a`) as distinct headwords; leave `Daka`
-under its existing "to do" entries, untouched; leave `ga·a` flagged
-pending the native follow-up rather than silently dropped.
+4-way synonym conflict needing a single winner; it is not.
+**Update, 2026-07-25 (Claude A):** the `"work"`/`"to work"` headword
+split already existed in `master_dictionary.json` — the two English
+keys were distinct — but the `"To work"` entry had its `garo` and
+`pos` fields swapped by the original OCR import (`garo: "Kam"`,
+`pos: "Kam ka·a, v."` instead of the reverse), so the engine was
+silently compiling "to work" from the wrong field and falling back to
+the generic `Daka` ("to do") sense — this is the root cause of the
+"he works" bug Claude B flagged. Corrected both `master_dictionary.json`
+and the matching `pending_lexicon.json` provenance record
+(`PL-0001397`); `Daka` untouched; `ga·a` still flagged pending native
+follow-up, not dropped. 106/106 tests pass. **Still open, engineering:**
+literal pre-existing sentence-level entries (e.g. `"they worked":
+"Uamang daka"`) bypass the headword lookup entirely and were not
+touched by this fix — those are hardcoded phrase translations, not
+derived from the "work" headword, and need a separate audit.
 
 ---
 ### RULE-042 — `-de` Temporal Suffix ("at that time")
