@@ -1045,3 +1045,49 @@ standing ingestion layer, simplest path is for it to emit the
 one-off converters retire once older-format pages are worked through,
 instead of accumulating more converters per format. Not blocking
 anything today; flagging for whoever owns Claude D's spec next.
+
+### RC-CANDIDATE-028 — Page 2 review: 5 new Check C self-consistency conflicts, allowlisted with citation
+
+Page 2 (`A Garo-English Dictionary`, source_page "2") reviewed and
+promoted 2026-07-24, Claude A working solo (Claude D out of tokens).
+79 entries promoted; 7 new keys tripped Check C (multiple garo values
+for one English key) and are added to
+`src/data/known_dictionary_conflicts.json` with the reasoning below —
+each individually checked against the page's own context, not
+assumed safe by precedent:
+
+- **"to begin"** (`a'ba·cheng·na` existing, `A·bachenga` new) —
+  same root, infinitive (`-na`) vs. general/aorist (`-a`) suffix.
+  Complementary grammatical forms of one verb, not competing
+  translations.
+- **"to shout"** (`aba·ok·na` existing, `A·baoka` new) — same pattern,
+  infinitive vs. general form of one root.
+- **"to start"** (`Chakata` existing, `A·bachenga` new) — genuinely
+  different Garo roots; English "start" covers both "to begin" and
+  "to rise/get going," which are distinct concepts in Garo. Not a
+  conflict, a case of English polysemy mapping to two correct words.
+- **"a peak"** (`A·briku·chot`, `A·bri pintal`) — both independently
+  glossed "a peak" on the same source page (also glossed "hill-top" /
+  "a summit" and "the top of the hill" / "a table-land" /
+  "a hill-top" respectively) — legitimate synonym pair from the
+  source itself, not a duplicate.
+- **"a bitch."** (`Achak`, `Achak bima`) — `Achak` is generic "dog,"
+  `Achak bima` specifically "female dog." Specificity distinction
+  within the same batch, not a duplicate.
+
+Also allowlisted, individually checked (not left for RC-027):
+- **"to bark"** (`Sing·a` existing, `Achak sing·a` new) — `Achak
+  sing·a` (dog + bark) is a subject-specified compound phrase;
+  `Sing·a` alone is the generic bare verb. Phrase vs. bare verb, not
+  a duplicate.
+- **"beginning"** (`a'ba·cheng·a·ni` existing, `A·bachengani` new) —
+  same lexeme, orthography-only difference (apostrophe/dash
+  convention), the exact RC-027 pattern. Allowlisted here because
+  this specific pair was individually confirmed via same-page
+  context, same as RC-016/RC-019's individual resolutions — the
+  broader 465-pair RC-027 list otherwise stays untouched.
+
+Not added to the allowlist: **"a hill"** (`A·chik`/`A·ding` existing
+vs. `A·bri` new) was promoted too (see `review_notes` on PL-0001630)
+but Check C didn't flag it as new — it was already allowlisted from
+an earlier page.

@@ -1,0 +1,84 @@
+{
+  "source_page": "2",
+  "new_count": 72,
+  "exact_duplicate_count": 0,
+  "possible_conflict_count": 7,
+  "likely_raka_variant_count": 0,
+  "manual_review_count": 0,
+  "garo_keyed_near_duplicates": [],
+  "possible_conflicts": [
+    {
+      "english": "to begin",
+      "incoming_garo": "A·bachenga",
+      "existing_garo": [
+        "a'ba·cheng·na"
+      ],
+      "existing_source": "unknown (pre-provenance-tracking entry)",
+      "likely_raka_variant": false,
+      "raka_variant_of": null
+    },
+    {
+      "english": "to start",
+      "incoming_garo": "A·bachenga",
+      "existing_garo": [
+        "Chakata"
+      ],
+      "existing_source": "unknown (pre-provenance-tracking entry)",
+      "likely_raka_variant": false,
+      "raka_variant_of": null
+    },
+    {
+      "english": "beginning",
+      "incoming_garo": "A·bachengani",
+      "existing_garo": [
+        "a'ba·cheng·a·ni"
+      ],
+      "existing_source": "unknown (pre-provenance-tracking entry)",
+      "likely_raka_variant": false,
+      "raka_variant_of": null
+    },
+    {
+      "english": "to shout",
+      "incoming_garo": "A·baoka",
+      "existing_garo": [
+        "aba·ok·na"
+      ],
+      "existing_source": "unknown (pre-provenance-tracking entry)",
+      "likely_raka_variant": false,
+      "raka_variant_of": null
+    },
+    {
+      "english": "firewood",
+      "incoming_garo": "A·bol",
+      "existing_garo": [
+        "Am·bol",
+        "ha·bol"
+      ],
+      "existing_source": "unknown (pre-provenance-tracking entry)",
+      "likely_raka_variant": false,
+      "raka_variant_of": null
+    },
+    {
+      "english": "a hill",
+      "incoming_garo": "A·bri",
+      "existing_garo": [
+        "A·chik",
+        "A·ding"
+      ],
+      "existing_source": "unknown (pre-provenance-tracking entry)",
+      "likely_raka_variant": false,
+      "raka_variant_of": null
+    },
+    {
+      "english": "to bark",
+      "incoming_garo": "Achak sing·a",
+      "existing_garo": [
+        "Sing·a"
+      ],
+      "existing_source": "unknown (pre-provenance-tracking entry)",
+      "likely_raka_variant": false,
+      "raka_variant_of": null
+    }
+  ],
+  "manual_review_items": []
+}

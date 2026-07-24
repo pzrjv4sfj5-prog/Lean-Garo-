@@ -1,0 +1,421 @@
+[
+  {
+    "english": "To cut the jungle wood for jhuming.",
+    "garo": "A·ba o·a",
+    "pos": "v."
+  },
+  {
+    "english": "To go to the jhum-land for weeding.",
+    "garo": "A·ba re·a",
+    "pos": "vi."
+  },
+  {
+    "english": "To burn the dried trees, shrubs and bamboos in the jhum-land for sowing seeds.",
+    "garo": "A·ba so·a",
+    "pos": "v."
+  },
+  {
+    "english": "To watch the jhum-land at night.",
+    "garo": "A·ba tua",
+    "pos": "vi."
+  },
+  {
+    "english": "To begin",
+    "garo": "A·bachenga",
+    "pos": "v."
+  },
+  {
+    "english": "to commence",
+    "garo": "A·bachenga",
+    "pos": "v."
+  },
+  {
+    "english": "to start",
+    "garo": "A·bachenga",
+    "pos": "v."
+  },
+  {
+    "english": "to set about",
+    "garo": "A·bachenga",
+    "pos": "v."
+  },
+  {
+    "english": "to initiate.",
+    "garo": "A·bachenga",
+    "pos": "v."
+  },
+  {
+    "english": "Commencement start",
+    "garo": "A·bachengani",
+    "pos": "n."
+  },
+  {
+    "english": "beginning",
+    "garo": "A·bachengani",
+    "pos": "n."
+  },
+  {
+    "english": "initiation.",
+    "garo": "A·bachengani",
+    "pos": "n."
+  },
+  {
+    "english": "A beginner",
+    "garo": "A·bachenggipa",
+    "pos": "n.",
+    "notes": "Typo 'notice' (likely meant novice) preserved exactly."
+  },
+  {
+    "english": "a notice beginning.",
+    "garo": "A·bachenggipa",
+    "pos": "n.",
+    "notes": "Typo 'notice' (likely meant novice) preserved exactly."
+  },
+  {
+    "english": "To shout",
+    "garo": "A·baoka",
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS."
+  },
+  {
+    "english": "to call loudly.",
+    "garo": "A·baoka",
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS."
+  },
+  {
+    "english": "A loud call.",
+    "garo": "A·baoka",
+    "pos": "-n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS."
+  },
+  {
+    "english": "Blighted",
+    "garo": "A·badia",
+    "pos": "adj."
+  },
+  {
+    "english": "withered",
+    "garo": "A·badia",
+    "pos": "adj."
+  },
+  {
+    "english": "good-for-nothing.",
+    "garo": "A·badia",
+    "pos": "adj."
+  },
+  {
+    "english": "The posi-tion in a jhum-land up to which weeding is done.",
+    "garo": "A·baku (a-ba-ku)",
+    "pos": "n.",
+    "notes": "Hyphenation 'posi-tion' across lines preserved."
+  },
+  {
+    "english": "A landslide",
+    "garo": "A·bea",
+    "pos": "n."
+  },
+  {
+    "english": "landslip.",
+    "garo": "A·bea",
+    "pos": "n."
+  },
+  {
+    "english": "Deep mud.",
+    "garo": "A·bel",
+    "pos": "n."
+  },
+  {
+    "english": "Stone free soil or earth",
+    "garo": "A·ben",
+    "pos": "n.",
+    "notes": "Typographical errors 'whchich', 'ani-mals', and 'fig,' preserved exactly as printed."
+  },
+  {
+    "english": "a muddy place in whchich ani-mals (as fig, buffaloes, etc.) roll about",
+    "garo": "A·ben",
+    "pos": "n.",
+    "notes": "Typographical errors 'whchich', 'ani-mals', and 'fig,' preserved exactly as printed."
+  },
+  {
+    "english": "a mud-pool",
+    "garo": "A·ben",
+    "pos": "n.",
+    "notes": "Typographical errors 'whchich', 'ani-mals', and 'fig,' preserved exactly as printed."
+  },
+  {
+    "english": "a wallow.",
+    "garo": "A·ben",
+    "pos": "n.",
+    "notes": "Typographical errors 'whchich', 'ani-mals', and 'fig,' preserved exactly as printed."
+  },
+  {
+    "english": "The name of the legen-dary fool.",
+    "garo": "A·bet",
+    "pos": "n.",
+    "notes": "Hyphenation 'legen-dary' across lines preserved."
+  },
+  {
+    "english": "My elder sister.",
+    "garo": "Abi (A-bi)",
+    "pos": "n."
+  },
+  {
+    "english": "A range",
+    "garo": "A·biding",
+    "pos": "n."
+  },
+  {
+    "english": "a ridge of hills.",
+    "garo": "A·biding",
+    "pos": "n."
+  },
+  {
+    "english": "One who is the elder sister of or to some one.",
+    "garo": "Abitang",
+    "pos": "n."
+  },
+  {
+    "english": "A wilderness",
+    "garo": "A·bimandu",
+    "pos": "n.",
+    "notes": "Hyphenation 'un-inhabited' across lines preserved."
+  },
+  {
+    "english": "an out-of-the-way place",
+    "garo": "A·bimandu",
+    "pos": "n.",
+    "notes": "Hyphenation 'un-inhabited' across lines preserved."
+  },
+  {
+    "english": "a wild un-inhabited place.",
+    "garo": "A·bimandu",
+    "pos": "n.",
+    "notes": "Hyphenation 'un-inhabited' across lines preserved."
+  },
+  {
+    "english": "A maternal grandmother.",
+    "garo": "Abo",
+    "pos": "n."
+  },
+  {
+    "english": "Firewood",
+    "garo": "A·bol",
+    "pos": "n."
+  },
+  {
+    "english": "fuel",
+    "garo": "A·bol",
+    "pos": "n."
+  },
+  {
+    "english": "same as Am·bol.",
+    "garo": "A·bol",
+    "pos": "n."
+  },
+  {
+    "english": "To collect fire-wood.",
+    "garo": "A·bol sota",
+    "pos": "v.",
+    "notes": "Hyphenation 'fire-wood' across lines preserved."
+  },
+  {
+    "english": "To pass water",
+    "garo": "A·branga",
+    "pos": "vi."
+  },
+  {
+    "english": "to urinate.",
+    "garo": "A·branga",
+    "pos": "vi."
+  },
+  {
+    "english": "A jhum cultivated continually for the second year.",
+    "garo": "A·breng",
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'v.' conflicts with the noun phrase definition."
+  },
+  {
+    "english": "A jhum-land that has been in use for the third year.",
+    "garo": "A·breng bitchuma",
+    "pos": "n."
+  },
+  {
+    "english": "A hill",
+    "garo": "A·bri",
+    "pos": "n."
+  },
+  {
+    "english": "a highland",
+    "garo": "A·bri",
+    "pos": "n."
+  },
+  {
+    "english": "a mountain.",
+    "garo": "A·bri",
+    "pos": "n."
+  },
+  {
+    "english": "Mountainous",
+    "garo": "A·brirara",
+    "pos": "adj."
+  },
+  {
+    "english": "hilly.",
+    "garo": "A·brirara",
+    "pos": "adj."
+  },
+  {
+    "english": "A foothill",
+    "garo": "A·bri ja·pa",
+    "pos": "n."
+  },
+  {
+    "english": "a foot of the hill",
+    "garo": "A·bri ja·pa",
+    "pos": "n."
+  },
+  {
+    "english": "down.",
+    "garo": "A·bri ja·pa",
+    "pos": "n."
+  },
+  {
+    "english": "A peak",
+    "garo": "A·briku·chot",
+    "pos": "n."
+  },
+  {
+    "english": "hill-top",
+    "garo": "A·briku·chot",
+    "pos": "n."
+  },
+  {
+    "english": "a summit.",
+    "garo": "A·briku·chot",
+    "pos": "n."
+  },
+  {
+    "english": "The other side of the hill.",
+    "garo": "A·bri pil·sa",
+    "pos": "n."
+  },
+  {
+    "english": "The top of the hill",
+    "garo": "A·bri pintal",
+    "pos": "n."
+  },
+  {
+    "english": "a peak",
+    "garo": "A·bri pintal",
+    "pos": "n."
+  },
+  {
+    "english": "a table-land",
+    "garo": "A·bri pintal",
+    "pos": "n."
+  },
+  {
+    "english": "a hill-top.",
+    "garo": "A·bri pintal",
+    "pos": "n."
+  },
+  {
+    "english": "To weep or cry aloud and pitiously.",
+    "garo": "A·bru a·bru grapa",
+    "pos": "v.",
+    "notes": "Typographical error 'pitiously' preserved."
+  },
+  {
+    "english": "To open jhum culti-vation",
+    "garo": "A·chaa",
+    "pos": "v.",
+    "notes": "Typographical errors 'culti-vation' and 'con-vered' across line breaks preserved."
+  },
+  {
+    "english": "to settle",
+    "garo": "A·chaa",
+    "pos": "v.",
+    "notes": "Typographical errors 'culti-vation' and 'con-vered' across line breaks preserved."
+  },
+  {
+    "english": "to be con-vered with thick wood fit to open dry cultivation, said of the hill portion of the land.",
+    "garo": "A·chaa",
+    "pos": "v.",
+    "notes": "Typographical errors 'culti-vation' and 'con-vered' across line breaks preserved."
+  },
+  {
+    "english": "A dog",
+    "garo": "Achak",
+    "pos": "n."
+  },
+  {
+    "english": "a cur",
+    "garo": "Achak",
+    "pos": "n."
+  },
+  {
+    "english": "a bitch.",
+    "garo": "Achak",
+    "pos": "n."
+  },
+  {
+    "english": "A bitch.",
+    "garo": "Achak bima",
+    "pos": "n."
+  },
+  {
+    "english": "A puppy.",
+    "garo": "Achak bi·sa",
+    "pos": "n."
+  },
+  {
+    "english": "A dog affected with an infection and often total disease which causes madness",
+    "garo": "Achak kore",
+    "pos": "n.",
+    "notes": "Possible typo 'total' (instead of fatal) transcribed exactly as printed."
+  },
+  {
+    "english": "a rabid dog.",
+    "garo": "Achak kore",
+    "pos": "n.",
+    "notes": "Possible typo 'total' (instead of fatal) transcribed exactly as printed."
+  },
+  {
+    "english": "To be bitten by a rabid dog.",
+    "garo": "A·chak kore chika",
+    "pos": "vt."
+  },
+  {
+    "english": "To bark",
+    "garo": "Achak sing·a",
+    "pos": "v."
+  },
+  {
+    "english": "to bay",
+    "garo": "Achak sing·a",
+    "pos": "v."
+  },
+  {
+    "english": "to howl",
+    "garo": "Achak sing·a",
+    "pos": "v."
+  },
+  {
+    "english": "to bow-wow.",
+    "garo": "Achak sing·a",
+    "pos": "v."
+  },
+  {
+    "english": "A forest-betwten open places.",
+    "garo": "A·chang",
+    "pos": "n.",
+    "notes": "Typographical error 'betwten' preserved exactly."
+  },
+  {
+    "english": "A hunt for deer by the villager with spears and guns.",
+    "garo": "A·chang changa",
+    "pos": "vi. & vt.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Grouped POS tags with continuous sense."
+  }
+]

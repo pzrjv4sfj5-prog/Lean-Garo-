@@ -41823,5 +41823,2087 @@
     },
     "promotion_status": "pending",
     "promoted_date": null
+  },
+  {
+    "id": "PL-0001585",
+    "english": "to cut the jungle wood for jhuming.",
+    "garo": "A·ba o·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001586",
+    "english": "to go to the jhum-land for weeding.",
+    "garo": "A·ba re·a",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001587",
+    "english": "to burn the dried trees, shrubs and bamboos in the jhum-land for sowing seeds.",
+    "garo": "A·ba so·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001588",
+    "english": "to watch the jhum-land at night.",
+    "garo": "A·ba tua",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001589",
+    "english": "to begin",
+    "garo": "A·bachenga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Verb general/aorist form (-a) vs existing infinitive form (-na) of the same root a'ba·cheng- ('to begin'). Complementary grammatical forms, not a conflict.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "a'ba·cheng·na"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001590",
+    "english": "to commence",
+    "garo": "A·bachenga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001591",
+    "english": "to start",
+    "garo": "A·bachenga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Distinct root from existing 'Chakata' (also glosses to 'to start/rise'); English 'start' is polysemous across two genuinely different Garo verbs. Both valid.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Chakata"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001592",
+    "english": "to set about",
+    "garo": "A·bachenga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001593",
+    "english": "to initiate.",
+    "garo": "A·bachenga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001594",
+    "english": "commencement start",
+    "garo": "A·bachengani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001595",
+    "english": "beginning",
+    "garo": "A·bachengani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Same lexeme as existing 'a'ba·cheng·a·ni' (nominalized -ani form of a'ba·cheng-), only orthographic difference (apostrophe/dash convention). Same pattern as RC-CANDIDATE-027 (465 known case/spelling-variant pairs, scoped for a future systematic Claude B pass, not resolved word-by-word). Promoting as attested spelling variant, consistent with how other multi-spelling words are already handled in this dictionary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "a'ba·cheng·a·ni"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001596",
+    "english": "initiation.",
+    "garo": "A·bachengani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001597",
+    "english": "a beginner",
+    "garo": "A·bachenggipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'notice' (likely meant novice) preserved exactly.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001598",
+    "english": "a notice beginning.",
+    "garo": "A·bachenggipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'notice' (likely meant novice) preserved exactly.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001599",
+    "english": "to shout",
+    "garo": "A·baoka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Verb general form (-a) vs existing infinitive (-na) of the same root aba·ok-/A·bao-, same pattern as PL-0001589. Complementary forms, not a conflict.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "aba·ok·na"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001600",
+    "english": "to call loudly.",
+    "garo": "A·baoka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001601",
+    "english": "a loud call.",
+    "garo": "A·baoka",
+    "category": null,
+    "pos": "-n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001602",
+    "english": "blighted",
+    "garo": "A·badia",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001603",
+    "english": "withered",
+    "garo": "A·badia",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001604",
+    "english": "good-for-nothing.",
+    "garo": "A·badia",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001605",
+    "english": "the posi-tion in a jhum-land up to which weeding is done.",
+    "garo": "A·baku (a-ba-ku)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'posi-tion' across lines preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001606",
+    "english": "a landslide",
+    "garo": "A·bea",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001607",
+    "english": "landslip.",
+    "garo": "A·bea",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001608",
+    "english": "deep mud.",
+    "garo": "A·bel",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001609",
+    "english": "stone free soil or earth",
+    "garo": "A·ben",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typographical errors 'whchich', 'ani-mals', and 'fig,' preserved exactly as printed.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001610",
+    "english": "a muddy place in whchich ani-mals (as fig, buffaloes, etc.) roll about",
+    "garo": "A·ben",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typographical errors 'whchich', 'ani-mals', and 'fig,' preserved exactly as printed.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001611",
+    "english": "a mud-pool",
+    "garo": "A·ben",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typographical errors 'whchich', 'ani-mals', and 'fig,' preserved exactly as printed.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001612",
+    "english": "a wallow.",
+    "garo": "A·ben",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typographical errors 'whchich', 'ani-mals', and 'fig,' preserved exactly as printed.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001613",
+    "english": "the name of the legen-dary fool.",
+    "garo": "A·bet",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'legen-dary' across lines preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001614",
+    "english": "my elder sister.",
+    "garo": "Abi (A-bi)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001615",
+    "english": "a range",
+    "garo": "A·biding",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001616",
+    "english": "a ridge of hills.",
+    "garo": "A·biding",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001617",
+    "english": "one who is the elder sister of or to some one.",
+    "garo": "Abitang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001618",
+    "english": "a wilderness",
+    "garo": "A·bimandu",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'un-inhabited' across lines preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001619",
+    "english": "an out-of-the-way place",
+    "garo": "A·bimandu",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'un-inhabited' across lines preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001620",
+    "english": "a wild un-inhabited place.",
+    "garo": "A·bimandu",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hyphenation 'un-inhabited' across lines preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001621",
+    "english": "a maternal grandmother.",
+    "garo": "Abo",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001622",
+    "english": "firewood",
+    "garo": "A·bol",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Page 2 itself glosses A·bol 'same as am·bol' (PL-0001624) — source dictionary explicitly treats these as synonyms. Consistent with existing multi-variant firewood entries (Am·bol, ha·bol).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Am·bol",
+        "ha·bol"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001623",
+    "english": "fuel",
+    "garo": "A·bol",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001624",
+    "english": "same as am·bol.",
+    "garo": "A·bol",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001625",
+    "english": "to collect fire-wood.",
+    "garo": "A·bol sota",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Hyphenation 'fire-wood' across lines preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001626",
+    "english": "to pass water",
+    "garo": "A·branga",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001627",
+    "english": "to urinate.",
+    "garo": "A·branga",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001628",
+    "english": "a jhum cultivated continually for the second year.",
+    "garo": "A·breng",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'v.' conflicts with the noun phrase definition.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001629",
+    "english": "a jhum-land that has been in use for the third year.",
+    "garo": "A·breng bitchuma",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001630",
+    "english": "a hill",
+    "garo": "A·bri",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Page 2 itself independently glosses A·bri as 'a hill / a highland / a mountain' (PL-0001630-1632). Corpus-internal confirmation, consistent with the known Garo hill/mountain synonym cluster already in the dictionary (A·chik, A·ding, ha·bri, ha·chik, ha·sak·a all attested for hill/mountain elsewhere). Promoting as an attested additional synonym, not a contradiction.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "A·chik",
+        "A·ding"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001631",
+    "english": "a highland",
+    "garo": "A·bri",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001632",
+    "english": "a mountain.",
+    "garo": "A·bri",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001633",
+    "english": "mountainous",
+    "garo": "A·brirara",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001634",
+    "english": "hilly.",
+    "garo": "A·brirara",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001635",
+    "english": "a foothill",
+    "garo": "A·bri ja·pa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001636",
+    "english": "a foot of the hill",
+    "garo": "A·bri ja·pa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001637",
+    "english": "down.",
+    "garo": "A·bri ja·pa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001638",
+    "english": "a peak",
+    "garo": "A·briku·chot",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Within-batch synonym pair with A·bri pintal, both independently glossed 'a peak' on the same page. Legitimate synonyms, not a duplicate to reject.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "A·briku·chot",
+        "A·bri pintal"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001639",
+    "english": "a peak",
+    "garo": "A·bri pintal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Within-batch synonym pair with A·briku·chot, both independently glossed 'a peak' on the same page. Legitimate synonyms, not a duplicate to reject.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "A·briku·chot",
+        "A·bri pintal"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001640",
+    "english": "hill-top",
+    "garo": "A·briku·chot",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001641",
+    "english": "a summit.",
+    "garo": "A·briku·chot",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001642",
+    "english": "the other side of the hill.",
+    "garo": "A·bri pil·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001643",
+    "english": "the top of the hill",
+    "garo": "A·bri pintal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001644",
+    "english": "a table-land",
+    "garo": "A·bri pintal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001645",
+    "english": "a hill-top.",
+    "garo": "A·bri pintal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001646",
+    "english": "to weep or cry aloud and pitiously.",
+    "garo": "A·bru a·bru grapa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typographical error 'pitiously' preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001647",
+    "english": "to open jhum culti-vation",
+    "garo": "A·chaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typographical errors 'culti-vation' and 'con-vered' across line breaks preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001648",
+    "english": "to settle",
+    "garo": "A·chaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typographical errors 'culti-vation' and 'con-vered' across line breaks preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001649",
+    "english": "to be con-vered with thick wood fit to open dry cultivation, said of the hill portion of the land.",
+    "garo": "A·chaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typographical errors 'culti-vation' and 'con-vered' across line breaks preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001650",
+    "english": "a dog",
+    "garo": "Achak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001651",
+    "english": "a cur",
+    "garo": "Achak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001652",
+    "english": "a bitch.",
+    "garo": "Achak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Within-batch: 'Achak' (generic dog) vs 'Achak bima' (specifically female dog/bitch). Legitimate specificity distinction, not a duplicate.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Achak",
+        "Achak bima"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001653",
+    "english": "a bitch.",
+    "garo": "Achak bima",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Within-batch: 'Achak bima' (bitch, specific) alongside 'Achak' (dog, generic). Legitimate specificity distinction, not a duplicate.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Achak",
+        "Achak bima"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001654",
+    "english": "a puppy.",
+    "garo": "Achak bi·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001655",
+    "english": "a dog affected with an infection and often total disease which causes madness",
+    "garo": "Achak kore",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Possible typo 'total' (instead of fatal) transcribed exactly as printed.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001656",
+    "english": "a rabid dog.",
+    "garo": "Achak kore",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Possible typo 'total' (instead of fatal) transcribed exactly as printed.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001657",
+    "english": "to be bitten by a rabid dog.",
+    "garo": "A·chak kore chika",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001658",
+    "english": "to bark",
+    "garo": "Achak sing·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "'Achak sing·a' (dog + bark) is a subject-specified compound phrase; existing 'Sing·a' alone is the generic bare verb 'to bark'. Not a duplicate — phrase vs bare verb.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Sing·a"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001659",
+    "english": "to bay",
+    "garo": "Achak sing·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001660",
+    "english": "to howl",
+    "garo": "Achak sing·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001661",
+    "english": "to bow-wow.",
+    "garo": "Achak sing·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001662",
+    "english": "a forest-betwten open places.",
+    "garo": "A·chang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typographical error 'betwten' preserved exactly.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001663",
+    "english": "a hunt for deer by the villager with spears and guns.",
+    "garo": "A·chang changa",
+    "category": null,
+    "pos": "vi. & vt.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Grouped POS tags with continuous sense.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "2",
+      "import_batch": "IMPORT-2026-07-24T05-43-06-616Z",
+      "import_date": "2026-07-24T05:43:06.629Z",
+      "ocr_version": "gemini-2026-07-14"
+    },
+    "review_status": "approved",
+    "review_notes": "Clean entry, no conflict flagged by preflight. Reviewed against page-2 context, no issues found.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-07-24",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-24T05:44:04.582Z"
   }
 ]

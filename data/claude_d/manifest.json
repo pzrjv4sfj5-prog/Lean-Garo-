@@ -3,9 +3,10 @@
   "pages": [
     {
       "page": 2,
-      "status": "schema_not_recognized",
-      "output_path": "data/claude_d/incoming_unrecognized/page_0002.raw.json",
-      "entry_count": 40
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0002.flat.json",
+      "entry_count": 79,
+      "note": "Claude D correctly routed to incoming_unrecognized/ per the 2026-07-21 directive (schema recognition is Claude A's call, not an error). Claude A recognized it as canonical garo_to_english, ran flip-garo-to-english.js + reduce-to-flat.js + claude-d-preflight.js, imported and reviewed all 79 entries, promoted to production 2026-07-24 (see RC-CANDIDATE-028)."
     }
   ]
 }

@@ -362,8 +362,8 @@ number against this list.** If it's already here, don't re-transcribe
 it — flag the collision to Claude A instead of doing the work over.
 
 **Processed (fully reviewed, entries promoted or held with a documented
-reason):** 3, 4, 5, 16, 17, 18, 19, 30, 31, 35, 37, 38, 39, 87, 88, 89,
-112, 113, 114, 115.
+reason):** 2, 3, 4, 5, 16, 17, 18, 19, 30, 31, 35, 37, 38, 39, 87, 88,
+89, 112, 113, 114, 115.
 
 Whenever a new page is processed end-to-end, add its number to this
 line in the same commit as the import — this list only stays accurate
