@@ -277,6 +277,13 @@ shape, follow the `incoming_unrecognized/` path from the 2026-07-21
 directive instead — still push, still don't paste raw content into
 chat as the deliverable.
 
+**Note, 2026-07-24:** page 2 was run through flip→reduce→preflight
+by Claude A, not Claude D, as a one-off stopgap because Claude D was
+out of tokens mid-session and page 2 was already blocked waiting.
+This is not a precedent — running that pipeline is still Claude D's
+job. Resume normal division of labor for page 34 onward once Claude D
+has tokens again.
+
 ## Project Owner directive, 2026-07-24 — remaining pages: tally first, send one by one
 
 For any pages still outstanding (including the 10 flagged as
