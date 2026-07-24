@@ -247,6 +247,36 @@ does not resolve either one.
 ### New entry
 No deterministic match exists. Produce normally.
 
+## Project Owner directive, 2026-07-24 — send flipped output, pushed to the repo, not raw Garo-English pasted in chat
+
+This restates and enforces the 2026-07-21 schema directive above,
+because it isn't being followed: pages have been arriving in chat as
+raw Garo-English Gemini output, which is exactly what Claude D exists
+to convert *away from* — pasting it back does none of Claude D's
+actual job.
+
+For every outstanding page, per page:
+
+1. Run `scripts/flip-garo-to-english.js` then `scripts/reduce-to-flat.js`
+   on the raw Gemini OCR, exactly as their headers document — same as
+   the 2026-07-21 directive already requires.
+2. Write the resulting flat array to
+   `data/claude_d/processed/<page>.flat.json`.
+3. Add the one-line manifest entry to `data/claude_d/manifest.json`
+   (`page`, `status: "processed"`, `output_path`).
+4. **Push these files to the repo yourself** — commit and push
+   `data/claude_d/processed/<page>.flat.json` plus the manifest
+   update. Do not touch `pending_lexicon.json`, `master_dictionary.json`,
+   or anything outside `data/claude_d/`.
+5. In chat, just report page number, entry count, and confirmation
+   it's pushed — not the file content itself. Claude A reviews from
+   the repo, not from a chat paste.
+
+If a page's schema doesn't match the canonical `garo_to_english`
+shape, follow the `incoming_unrecognized/` path from the 2026-07-21
+directive instead — still push, still don't paste raw content into
+chat as the deliverable.
+
 ## Project Owner directive, 2026-07-24 — remaining pages: tally first, send one by one
 
 For any pages still outstanding (including the 10 flagged as
