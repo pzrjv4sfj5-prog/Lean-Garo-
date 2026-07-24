@@ -178,3 +178,24 @@ RULE-039/040/041:
 `known_dictionary_conflicts.json` unchanged this pass — no entries
 resolved cleanly enough to prune yet. `npm test`/`npm run build` clean
 after all edits (100/100, 0 fail).
+
+## Item 7 (added 2026-07-24, Claude B) — "chicken" has no standalone dictionary entry; stale "bird":"do·o" entry needs resolving
+
+**Trigger:** Project Owner flagged this as a long-standing gap.
+
+**Already confirmed (NV-025, 2026-07-20):** `do·o` = "chicken" (native,
+via Thangseng), superseding the dictionary's current `"bird": "do·o"`
+entry. Consistency check: `"chicken coop": "do·ochi·dik"` only parses
+as chicken+house if `do·o` = chicken.
+
+**Not yet confirmed / needs your call:**
+1. Add `"chicken": "do·o"` as a new standalone entry — this part looks
+   like a direct, low-risk application of the existing NV-025 finding.
+2. What happens to the existing `"bird": "do·o"` entry — `do·` looks
+   like a bird-family root/prefix (crow=Do·ka, hen=Do·bit, duck=Do·gep,
+   owl=Do·po) rather than a standalone word for generic "bird." Retire
+   the entry, mark it needs-new-word, or something else — your call.
+
+Flagging both together since #1 only makes sense once #2 is decided
+(don't want two entries both claiming `do·o` with different glosses
+live at the same time).
