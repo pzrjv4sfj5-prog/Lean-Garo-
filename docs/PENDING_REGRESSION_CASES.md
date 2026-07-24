@@ -1003,6 +1003,13 @@ different `garo` values under the same case-insensitive key** — the
 same silent-clobber shape as `book` and `teacher`, at a scale neither
 of those individual write-ups implied. Full list exported for Claude B
 reference: `/tmp/case_collisions.json` (not committed — regenerable
+
+**Addendum, 2026-07-24:** page 2's promotion added 5 more instances of
+this exact pattern (`to begin`/`To begin`, `beginning`/`Beginning`,
+`to shout`/`To shout`, `firewood`/`Firewood`, `a hill`/`A hill`).
+Not individually triaged, per the scoping decision above — count
+noted so the eventual Claude B fix scans post-page-2 state, not the
+stale 2026-07-23 snapshot.
 any time from `master_dictionary.json` with a lowercase-key groupby;
 recreate rather than trust a stale copy).
 
