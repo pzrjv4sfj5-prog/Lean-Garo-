@@ -12,6 +12,20 @@ still win if anything's stale by the time you read it.
 Lean-Garo: an English → A'chik Garo translation engine (Meghalaya, India). Node/JS, dictionary + correction-table + grammar-assembly hybrid
 (no ML model). Deployed at https://lean-garo.onrender.com.
 
+## Token discipline (Project Owner directive, relayed via Tridip/Thangseng, 2026-07-24)
+
+This project runs on free tokens. Every Claude instance (A, B, D, and
+any future role) must use tokens smartly:
+
+- No filler, no restating the request, no re-explaining settled
+  project background or prior decisions already established.
+- Before re-verifying something, check whether it was already
+  confirmed working earlier with no changes since — if so, say that
+  instead of re-testing. Only re-test what actually changed.
+- Don't re-litigate settled decisions (see each role's "do not repeat"
+  list in `.ai/WORKSTATE.yaml`).
+- Lead with the result; keep commentary proportional to the task.
+
 ## Roles (do not cross these lines)
 - **Claude A** — grammar, morphology, validation corpus, rule catalogue.
   Linguistic authority. Does not touch engine code.

@@ -1810,6 +1810,22 @@ or `corrections.json` edit made pending native input.
   production entry removed. Remaining loose ends from the same
   exchange tracked separately as NV-034, NV-035, NV-036 (still open).
 
+## NV-039 — `tampi` confirmed for "housefly" (partial; three-way `fly` conflict not fully closed)
+
+**Status:** Partially confirmed, 2026-07-24 WhatsApp relay (Tridip
+asked "is that a housefly? aiwaa tampi ma?", Thangseng answered
+"Tampi").
+
+**What this confirms:** `tampi` is a real, native-recognized word for
+housefly/fly. `known_dictionary_conflicts.json` currently flags `fly`
+as a three-way conflict (`Bila`/`Tampi`/`til·a`, plus `bil·a` also
+means "to fly" as a verb). This exchange confirms `tampi` is correct
+for the noun; it does not confirm or rule out `bila`/`til·a` as
+regional or contextual alternates (e.g. `bila` may be verb "to fly"
+being conflated with the noun in some entries). Full three-way
+resolution stays open — do not extend this single confirmation to
+close the whole conflict.
+
 ## NV-038 — `na·sta` ("breakfast"/"snack"): loanword status, not yet asked
 
 **Status:** OPEN. Investigation only — dictionary entry NOT touched.
