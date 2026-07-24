@@ -247,6 +247,30 @@ does not resolve either one.
 ### New entry
 No deterministic match exists. Produce normally.
 
+## Project Owner directive, 2026-07-24 — remaining pages: tally first, send one by one
+
+For any pages still outstanding (including the 10 flagged as
+unaccounted-for and the page 74/34/89 duplicates in the 2026-07-24
+reconciliation report above):
+
+1. **Tally before sending.** Before pasting anything into chat, build
+   your own list of exactly which pages are genuinely outstanding and
+   why (never delivered, delivered but unconfirmed, or a duplicate
+   needing resolution). Post that tally first, as a plain list, before
+   any page content.
+2. **Send one page at a time**, in chat, only after the tally above
+   has been posted. Do not batch multiple pages into one message.
+3. **No duplicates.** Before sending a page, check it against the
+   "Pages already processed" list below and against anything you've
+   already sent this session. If a page was already sent once
+   (processed or not), do not resend it silently — say explicitly
+   that it's a resend and why (e.g. "resending page 74, prior version
+   superseded").
+4. **Token management applies here too** — see the token-discipline
+   note in `.ai/SESSION_BOOTSTRAP.md`. Keep tallies and page handoffs
+   terse: page number, status, entry count. No repeated preamble, no
+   re-explaining the workflow each time.
+
 ## Claude A response to Claude D's reconciliation report, 2026-07-24
 
 The report below (Claude D → Claude A) arrived pasted into a chat
