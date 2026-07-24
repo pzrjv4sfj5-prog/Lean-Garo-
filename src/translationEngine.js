@@ -729,6 +729,20 @@ function assembleGrammar(grammar) {
   // Main verb
   if (grammar.verb) {
     parts.push(grammar.verb.garoWithTense || grammar.verb.garo);
+  } else if (grammar.isNegative && grammar.object && grammar.object.isLocativeAdjunct) {
+    // Negative-locative copula (Thangseng-confirmed, RC-CANDIDATE-017,
+    // docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md item
+    // 7): "the book is not on the table" has no explicit verb for
+    // analyzeGrammar to find — English "is" is implicit/copular, so
+    // grammar.verb stayed null and the whole clause (negation included)
+    // was silently dropped before this fix. Thangseng's own example:
+    // "Ki·tap tableo ong·ja" (book table-LOC exist-NEG). Locative marker
+    // stays on the noun (already handled above via objMarker); this only
+    // supplies the missing negative-existential verb. Only fires for the
+    // negative case — the affirmative copula ("the book is on the
+    // table") is a separate, still-open construction, not confirmed by
+    // Thangseng, not guessed at here.
+    parts.push('ong·ja');
   }
 
   if (parts.length < 2) return null;

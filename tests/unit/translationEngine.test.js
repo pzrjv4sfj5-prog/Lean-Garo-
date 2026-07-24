@@ -558,7 +558,24 @@ test('dictionary hygiene: "creek" resolves to its own clean headword', async () 
 });
 
 // --- Interrogative formation (Project Owner directive root cause 3) is
-// deliberately NOT implemented or tested here. No confirmed Claude A
+// deliberately NOT implemented or tested here.
+
+// --- RC-CANDIDATE-017 fix: negative-locative copula (Thangseng-
+// confirmed, item 7 of the 2026-07-22 batch). "the book is not on the
+// table" has no explicit English verb (implicit copula "is"), so
+// analyzeGrammar's verb search found nothing and the whole clause -
+// negation included - was silently dropped. Thangseng's own example:
+// "Ki·tap tableo ong·ja". Only fires for the negative case.
+
+test('RC-CANDIDATE-017: negation is not lost with a locative predicate', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('the book is not on the table');
+  assert.ok(r.garo.includes('ong·ja'), `negative-existential copula must not be dropped, got: ${r.garo}`);
+  assert.ok(r.garo.includes('·o'), `locative marker must stay on the noun, got: ${r.garo}`);
+});
+
+// --- Interrogative formation (Project Owner directive root cause 3) is
+// deliberately NOT implemented or tested here. No confirmed
 // linguistic guidance exists yet for Garo question formation - only one
 // unconfirmed WhatsApp data point (see
 // docs/PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md,
