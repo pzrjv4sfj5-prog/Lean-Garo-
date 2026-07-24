@@ -17277,6 +17277,14 @@
     "notes": "variant/VERIFIED/HIGH"
   },
   {
+    "english": "housefly",
+    "garo": "Tampi",
+    "pos": "n.",
+    "category": "animals",
+    "classifier": null,
+    "notes": "CONFIRMED — NV-039, direct native confirmation (Tridip -> Thangseng, 2026-07-24: \"aiwaa tampi ma?\" -> \"Tampi\"). Closed 2026-07-25. Does not resolve the broader 'fly' noun conflict (Bila/Tampi/til·a) — Bila under 'fly' likely bleeds in from the separate 'to fly' verb entry (also Bila); til·a remains an unconfirmed alternate."
+  },
+  {
     "english": "Forest",
     "garo": "bring",
     "pos": null,

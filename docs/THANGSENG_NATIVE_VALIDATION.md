@@ -1810,9 +1810,10 @@ or `corrections.json` edit made pending native input.
   production entry removed. Remaining loose ends from the same
   exchange tracked separately as NV-034, NV-035, NV-036 (still open).
 
-## NV-039 — `tampi` confirmed for "housefly" (partial; three-way `fly` conflict not fully closed)
+## NV-039 — `tampi` confirmed for "housefly" — CLOSED (housefly only; broader `fly` noun conflict stays open)
 
-**Status:** Partially confirmed, 2026-07-24 WhatsApp relay (Tridip
+**Status:** `housefly` CLOSED, 2026-07-25 — added as its own confirmed
+headword (`"housefly": "Tampi"`). 2026-07-24 WhatsApp relay (Tridip
 asked "is that a housefly? aiwaa tampi ma?", Thangseng answered
 "Tampi").
 
