@@ -1809,3 +1809,44 @@ or `corrections.json` edit made pending native input.
   closed 2026-07-23, direct native confirmation. Wrong `"hot"→Kama`
   production entry removed. Remaining loose ends from the same
   exchange tracked separately as NV-034, NV-035, NV-036 (still open).
+
+## NV-038 — `na·sta` ("breakfast"/"snack"): loanword status, not yet asked
+
+**Status:** OPEN. Investigation only — dictionary entry NOT touched.
+
+**Background:** Thangseng stated flatly there is no Garo word for
+breakfast. The Project Owner asked this to be investigated (loanword?
+regional? outdated? error?) before any dictionary action, per the
+2026-07-23 migration doc's explicit instruction to leave the entry
+exactly as flagged.
+
+**Corpus-internal observation (not native-confirmed):**
+`master_dictionary.json` currently has `na·sta` under two separate
+headwords — `"breakfast": "na·sta"` and `"snack": "na·sta"` — and a
+sentence entry spells it `"nastha"`: `"have you eaten breakfast?":
+"Naa nastha chaa ha ma?"`. The `-h-` spelling and the double gloss
+(breakfast/snack) both point toward the same word rather than two
+coincidentally similar ones.
+
+**External research (background only, not a linguistic ruling):**
+Standard etymological sources trace this word to Classical Persian
+*nāštā*, borrowed into Hindi/Urdu as नाश्ता/ناشتا and from there into
+Bengali (নাস্তা), Marathi, Gujarati, Kannada, Marwari, and other South
+Asian languages, generally as a term for a light morning meal.
+Multiple Hindi sources also note it isn't originally a Hindi word
+either — it's a Persian loan that spread regionally. This is
+consistent with — but does not prove — `na·sta` being a similar late
+loan into Garo rather than an inherited term, which would explain why
+Thangseng doesn't recognize a native Garo word for the concept.
+
+**What this does NOT settle:** whether Garo speakers today actually
+use `na·sta`/`nastha` in practice, whether it's regional, and whether
+"breakfast" should simply be marked as a loanword in the dictionary
+rather than removed or replaced. That needs a direct native answer,
+not corpus inference or outside etymology.
+
+**Relay question drafted:** Is `na·sta` (or `nastha`) a word Thangseng
+recognizes and would actually use for "breakfast," even if borrowed?
+Is there any other Garo expression for the morning meal (even a
+descriptive phrase, e.g. "morning food")? Add to the next Thangseng
+relay batch alongside other open NV items.
