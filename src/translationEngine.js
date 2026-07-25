@@ -195,6 +195,19 @@ function findVerbForm(w) {
   const stripped = w.replace(/ing$|ed$|es$|s$/, '');
   if (stripped !== w) {
     if (IRREGULAR_VERBS[stripped]) return IRREGULAR_VERBS[stripped];
+    // RULE-041 follow-up (2026-07-25, Claude B): prefer the confirmed
+    // infinitive entry ("to " + stripped) over the bare stripped form
+    // when both exist, since corrections.json's bare-word keys (e.g.
+    // "work" -> "Daka") are shared with other tables (purpose_map.json)
+    // for a different construction and are NOT safe to repoint here -
+    // doing so broke Check B's cross-table root-consistency check
+    // (corrections "work" vs purpose_map "work" are intentionally
+    // different senses). The infinitive key is unambiguous and isn't
+    // shared with any other table, so this is a pure lookup-order fix,
+    // no data changes. Fixes "he works" -> "Ua Kam ka·a" without
+    // touching the bare "work" key's existing (correct, for its own
+    // callers) value.
+    if (lookupGaro('to ' + stripped)) return lookupGaro('to ' + stripped);
     if (lookupGaro(stripped)) return lookupGaro(stripped);
     // English y->ied spelling change: 'studied' strips to 'studi', not
     // 'study' (found 2026-07-05) - try restoring the 'y'.
