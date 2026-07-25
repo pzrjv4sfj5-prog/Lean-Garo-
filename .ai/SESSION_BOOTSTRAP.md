@@ -472,7 +472,7 @@ npm install --no-audit --no-fund
 npm run build
 npm test
 ```
-Expected as of `bf163d6`: build clean, 55/55 regression tests passing.
+Expected as of `afe6a74`: build clean, 106/106 regression tests passing.
 
 ## Where things live
 - `src/translationEngine.js` — main engine, `translate()` entry point.

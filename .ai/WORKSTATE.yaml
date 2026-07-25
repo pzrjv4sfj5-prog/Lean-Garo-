@@ -1,5 +1,5 @@
 repository:
-  head: 115b859
+  head: afe6a74
   last_updated: "2026-07-25"
   test_status: "106/106 regression tests passing, build clean, lint has 8 known errors (flagged to Claude B, see SESSION_BOOTSTRAP.md)"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
