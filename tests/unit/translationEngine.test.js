@@ -110,6 +110,48 @@ const REGRESSION_CASES = [
   // am·e·nik·na contamination to Sandi·na (regular -na on the confirmed
   // Sandia/RULE-032 stem).
   { in: 'i want to search', expectGaro: 'Anga Sandi·na ska', expectMethod: ['grammar-assembly'] },
+
+  // Coverage review, 2026-07-25 (Claude B) — genuinely confirmed
+  // constructions found untested while auditing rule-catalogue
+  // coverage against the stress benchmark + unit suite, ahead of
+  // Phase 5. See docs/GRAMMAR_RULE_CATALOGUE.md for each rule.
+
+  // RULE-042: -de temporal suffix, confirmed across all 3 tenses.
+  { in: 'tomorrow i will go to the market', expectGaro: 'Knalde bajalchi re·anggen', expectMethod: ['correction'] },
+  { in: 'today i will go to the market', expectGaro: 'Da·alde bajalchi re·anggen', expectMethod: ['correction'] },
+  { in: 'yesterday i went to the market', expectGaro: 'Mijalde bajalchi re·anga', expectMethod: ['correction'] },
+
+  // RULE-033: locative "under" (distinct from the more commonly
+  // tested "on") — confirmed, was untested.
+  { in: 'the dog is under the table', expectGaro: 'Achak tebil kokkimao ong·a', expectMethod: ['correction'] },
+
+  // RULE-036: fixed discourse expression Da·mo ("wait!") never
+  // inflects. Bare imperative form, confirmed correct and already
+  // covered indirectly; adding directly since it's the base case for
+  // the RC-CANDIDATE-015 fix immediately below.
+  { in: 'wait', expectGaro: 'Damo', expectMethod: ['correction'] },
+
+  // RC-CANDIDATE-015 fix (2026-07-25, Claude B): master_dictionary.json's
+  // "wait"/"to wait" headwords were a literal unresolved "Damo / Sengbo"
+  // placeholder (never a real value) — corrected to the native-confirmed
+  // declarative root "senga" (Da·mo is reserved for genuine imperative
+  // "Wait!", untouched). Fixes the 5 "waiting at X" sentences already
+  // in the 237-sentence stress corpus (previously all emitted the
+  // literal placeholder string). Guard against the placeholder recurring:
+  { in: 'he waits', expectGaro: 'Ua senga', expectMethod: ['grammar-assembly'] },
+  { in: 'i am waiting at the bed', expectGaro: 'Anga palang·o senga', expectMethod: ['grammar-assembly'] },
+  // Known residual gap, NOT fixed here (same class as the "he works" /
+  // "i work" inconsistency from the previous session): declarative
+  // sentences where the verb is already bare base-form with no suffix
+  // to strip ("i will wait", "they wait") still resolve via
+  // corrections.json's bare "wait"->"Damo" entry before findVerbForm's
+  // infinitive-preference check ever runs. Extending that check to the
+  // base-form case was tried and reverted last session (broke "he
+  // doesn't work" - "he doesn't wait" would hit the same negation-
+  // polarity conflict). Documenting current (wrong) behavior as a
+  // regression guard so a future fix attempt has a clear before-state,
+  // not silently making it worse in the meantime:
+  { in: 'i will wait', expectGaro: 'Anga Damogen', expectMethod: ['grammar-assembly'] },
 ];
 
 for (const c of REGRESSION_CASES) {

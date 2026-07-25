@@ -2521,8 +2521,9 @@
   },
   {
     "english": "to wait",
-    "garo": "Damo / Sengbo",
-    "category": "general"
+    "garo": "senga",
+    "category": "general",
+    "notes": "CONFIRMED (RC-CANDIDATE-015, NV-015) - same fix as the \"wait\" headword, was the same unresolved placeholder."
   },
   {
     "english": "station / stop",
@@ -3646,8 +3647,9 @@
   },
   {
     "english": "wait",
-    "garo": "Damo / Sengbo",
-    "category": "general"
+    "garo": "senga",
+    "category": "general",
+    "notes": "CONFIRMED (RC-CANDIDATE-015, NV-015) - was a literal unresolved \"Damo / Sengbo\" placeholder, never a real value. senga is the declarative/inflectable root (Anga senggen = \"I will wait\", native-confirmed); Da·mo is reserved for genuine imperative \"Wait!\" via corrections.json, unchanged."
   },
   {
     "english": "quick / hurry",

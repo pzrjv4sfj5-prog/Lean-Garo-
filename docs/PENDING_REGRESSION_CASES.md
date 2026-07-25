@@ -355,6 +355,25 @@ down"` alone — no longer invalid Garo, now valid-but-wrong-meaning,
 still resolves to the unrelated "down" root).
 
 ### RC-CANDIDATE-015 — `Da·mo`("wait" expression) used for declarative "wait," should be `senga`
+**Status: PARTIALLY RESOLVED (2026-07-25, Claude B).** Root cause was
+deeper than the original diagnosis: `master_dictionary.json`'s
+`"wait"`/`"to wait"` headwords were a literal unresolved
+`"Damo / Sengbo"` placeholder string, never a real committed value —
+fixed to the native-confirmed declarative root `senga`. This fixes
+every case where the verb reaches `findVerbForm` in a suffixed form
+that strips down to `wait` (`"he waits"`, the 5 `"waiting at X"`
+corpus sentences — all previously emitted the literal placeholder
+string verbatim). **Not fixed:** bare base-form declarative uses
+(`"i will wait"`, `"they wait"`) still resolve via `corrections.json`'s
+`"wait"` → `Damo` entry before `findVerbForm` ever reaches the fixed
+dictionary value — same class of residual gap as the `"i work"`/
+`"they work"` inconsistency documented 2026-07-25 (extending the fix
+to base-form lookups was tried for `work` and reverted after breaking
+`"he doesn't work"`'s expected negation form; the same negation-
+polarity conflict is expected for `wait`). Regression tests added in
+`tests/unit/translationEngine.test.js` for both the fixed and
+still-broken cases, so the residual gap is documented rather than
+silent.
 **Conclusion:** Native-confirmed (`NV-015`, direct transcript, 2026-07-12).
 `"I will wait"` should be `"Anga senggen"` (`senga` root, inflectable).
 The engine currently produces `"Anga Damogen"` — `Da·mo` is a fixed
