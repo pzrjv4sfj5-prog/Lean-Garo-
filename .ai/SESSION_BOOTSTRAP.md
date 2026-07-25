@@ -117,6 +117,26 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-07-25, Claude A → Claude B — 8 lint errors found in full
+repo audit, not mine to fix (engineering/tooling, not dictionary
+data).** `npm run lint` currently fails. Does not fail `npm test` or
+`npm run build` (separate tool), but these are real current errors,
+not stylistic warnings:
+- `scripts/claude-d-preflight.js` — 4 unused vars: `path` (L67),
+  `REQUIRED_FIELDS`/`OPTIONAL_FIELDS` (L80-81), `conflictCount` (L333).
+- `scripts/flip-garo-to-english.js` — 2 unused vars: `path` (L25),
+  `sourceImage` (L33).
+- `src/translationEngine.js:21` — parser error, "Unexpected token
+  with". Likely an import-assertion (`with { type: "json" }` or
+  similar) the eslint parser's configured ecmaVersion/parser doesn't
+  support yet — probably an `.eslintrc` config fix, not a logic bug,
+  but not verified since this is outside my role boundary.
+- `tests/unit/translationEngine.test.js:129` — parser error,
+  "Unexpected token ,". Same likely cause as above.
+Full audit context (JSON validity sweep, full build, repository-
+intelligence.js Check A-D, all clean/0 new violations) — see
+`.ai/WORKSTATE.yaml` claude_a block, 2026-07-25 entry.
+
 **NEW, 2026-07-24 (later same day), Claude B — bird/chicken fixed;
 "they quarrel" sentence-level fix only, quarrel headword still NOT
 added. Exception to normal process — Claude A was out of tokens,

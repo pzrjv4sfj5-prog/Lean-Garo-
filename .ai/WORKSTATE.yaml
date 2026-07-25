@@ -1,7 +1,7 @@
 repository:
-  head: a181b90
+  head: 115b859
   last_updated: "2026-07-25"
-  test_status: "106/106 regression tests passing, build clean"
+  test_status: "106/106 regression tests passing, build clean, lint has 8 known errors (flagged to Claude B, see SESSION_BOOTSTRAP.md)"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -56,6 +56,22 @@ claude_a:
     corrected in that file. Verified Claude D's page 2/30 "redundant
     commit" flag was a false alarm (both are the legitimate promoted-
     work audit trail, not duplicate pushes) - no repo action needed.
+    Same session, continued: imported pages 75 (21/22 promoted, 1 held
+    - Gandaska, incoherent OCR-truncated gloss), 76 (40/39 promoted -
+    Gu-sre/Ki-pil split from a bundled two-headword OCR entry, Gangpong
+    POS corrected v.->n.), 77 (43/42 promoted - Ga·oa/Gapsuaka adj.
+    sub-defs split from v. entries, Ga·pripa POS corrected n.->v.,
+    Ga·paka/Gapaka kept as distinct raka-differentiated entries not an
+    OCR duplicate). Fixed RC-CANDIDATE-017's stale status line in
+    PENDING_REGRESSION_CASES.md (66cac87 fixed it, doc never updated).
+    Committed the 42-question batch to docs/. Ran a full repo audit
+    (JSON validity sweep - clean; npm run build - clean, 106/106 +
+    vite build; repository-intelligence.js Check A-D - clean, 0 new
+    violations; npm run lint - 8 real errors found, all in
+    engineering/scripts code, NOT my domain to fix). Flagged the 8
+    lint errors to Claude B in SESSION_BOOTSTRAP.md's joint work
+    package (was initially only mentioned in chat, corrected same
+    session when asked to confirm it was actually committed).
   progress: >-
     This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
     actual repo state before this update - HEAD, test count, and this
