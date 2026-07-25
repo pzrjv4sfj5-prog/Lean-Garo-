@@ -58421,5 +58421,273 @@
     "category": null,
     "pos": "n.",
     "notes": "Split from bundled OCR entry (was combined with Gu-sre under one headword)."
+  },
+  {
+    "english": "to ruffle; to spread wings.",
+    "garo": "Gangsela",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "fine; the breast fin of a fish; dorsal.",
+    "garo": "Gangte",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "an intoxicating drug obtained from hemp.",
+    "garo": "Ganja",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to change one's clothes; to dress.",
+    "garo": "Gansrea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be easily peeled off; to be easily split.",
+    "garo": "Ga·oa",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original contains '-adj. Peelable' appended to definition."
+  },
+  {
+    "english": "Peelable.",
+    "garo": "Ga·oa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original contains '-adj. Peelable' appended to definition. POS corrected v.->adj.; english cleaned from OCR sub-def prefix."
+  },
+  {
+    "english": "pride; arrogance; haughtiness.",
+    "garo": "Gaora",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to boast; to brag; to be proud.",
+    "garo": "Gaora de·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "proud; boastful; arrogant.",
+    "garo": "Gaora de·gipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "a sheliless snail that lives on plants; slug.",
+    "garo": "Gap",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'sheliless' preserved."
+  },
+  {
+    "english": "(diospyos embry opleris, d. peregrina). a middle-sized evergreen tree with short trunk and speading crown; the infusion of the pulp is used for dye-ing fishing nets.",
+    "garo": "Gap",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'speading' preserved. Hyphenation 'dye-ing' preserved."
+  },
+  {
+    "english": "full.",
+    "garo": "Gapa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "to kick off; to kick; to knock over; to upset.",
+    "garo": "Ga·paka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to pass through; to be flooded; to be inundated.",
+    "garo": "Gapaka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to fill with.",
+    "garo": "Gapata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "a snail; on oyster; a small snail with whittish-shell.",
+    "garo": "Gapchilek",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'whittish' preserved."
+  },
+  {
+    "english": "to stamp down (of cattle, buffalo, etc. on rice field).",
+    "garo": "Ga·pineka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to overflow.",
+    "garo": "Gappolpola",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to trample under foot.",
+    "garo": "Ga·preta",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to drown (a sound); to overpower.",
+    "garo": "Ga·pripa (ku·rang)",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition. POS corrected n.->v. (definition is verbal); trailing OCR comma stripped from garo field."
+  },
+  {
+    "english": "to prick on the sole.",
+    "garo": "Ga·prota",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to be full to the brim; to overflow.",
+    "garo": "Gapsuaka",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag conflict: includes adjective definition under verbal entry."
+  },
+  {
+    "english": "Brimful; overflowing.",
+    "garo": "Gapsuaka",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag conflict: includes adjective definition under verbal entry. POS corrected v.->adj.; english cleaned from OCR sub-def prefix."
+  },
+  {
+    "english": "a snail.",
+    "garo": "Gaptek",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a chamelon.",
+    "garo": "Gara",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'chamelon' preserved."
+  },
+  {
+    "english": "a cart; a car; a bus; a carriage.",
+    "garo": "Gari",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a wheel.",
+    "garo": "Gari chakka",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a shaft.",
+    "garo": "Gari dola",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the wheel track; furrow; deep tract made in a road by a wheel; the cart rut.",
+    "garo": "Gari lik",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a carriage for carrying dead bodies in a funeral to the grave; a hearse.",
+    "garo": "Gari (gopramchina manggisiko salani)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a man wno drives a cart; a cart-driver.",
+    "garo": "Gariman",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'wno' (who) preserved."
+  },
+  {
+    "english": "a cartman; a coachman.",
+    "garo": "Gari salgipa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "fit; friendly; amiable.",
+    "garo": "Ga·rima",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "to kick and roll with feet.",
+    "garo": "Ga·rimrima",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to pay visit sparingly.",
+    "garo": "Ga·roka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "a piece of candle stick.",
+    "garo": "Gasa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to ram; to cram.",
+    "garo": "Ga·sika",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to soak the legs.",
+    "garo": "Ga·sima",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to scrape or to remove dirt from the sole by hard rubbing with something rough.",
+    "garo": "Ga·sipaka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to slip; to slip on; to take a false step; to slide.",
+    "garo": "Ga·soltapa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to stand erect on the water; to seat the thing erect.",
+    "garo": "Ga·songa",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "to scrape one's feet on the ground.",
+    "garo": "Ga·soseta",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to over flow; to pass over the brim; to be full to overflowing.",
+    "garo": "Gasuaka",
+    "category": null,
+    "pos": "v."
   }
 ]

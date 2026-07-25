@@ -1,0 +1,29 @@
+{
+  "source_page": "77",
+  "new_count": 43,
+  "exact_duplicate_count": 0,
+  "possible_conflict_count": 0,
+  "likely_raka_variant_count": 0,
+  "manual_review_count": 0,
+  "garo_keyed_near_duplicates": [
+    {
+      "normalized_garo": "gapaka",
+      "variants": [
+        {
+          "garo": "Ga·paka",
+          "english": [
+            "to kick off; to kick; to knock over; to upset."
+          ]
+        },
+        {
+          "garo": "Gapaka",
+          "english": [
+            "to pass through; to be flooded; to be inundated."
+          ]
+        }
+      ]
+    }
+  ],
+  "possible_conflicts": [],
+  "manual_review_items": []
+}
