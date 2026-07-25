@@ -652,6 +652,7 @@ for their individual write-ups.
 |---|---|---|---|---|
 | `translationEngine.js` | Orchestration: normalization, tokenization, grammar analysis, suffix generation, sentence assembly (lexical lookup now delegated, see `lookupEngine.js` below) | `lookupEngine.js`, `utils.js`, `compiled_dict_alternates.json`, `category_index.json`, `phrase_maps.js`, `garo_classifier.js`, `number_engine.js` | raw string | `{garo, method, confidence}` (named export `translate`); platform-adapter shape from default export |
 | `lookupEngine.js` | Lexical lookup + corrections precedence — `lookup`, `lookupGaro`, `EN_INDEX`, `corrections` (2026-07-25, Phase 2 of BACKLOG-003, extracted verbatim, zero logic change) | `compiled_dict.json`, `data/corrections.json` | word/phrase string | Garo string or `null` |
+| `morphologyEngine.js` | Verb/tense/negation morphology — `applyTense`, `applyNegation`, `findVerbForm`, `stripToStem` (2026-07-25, Phase 3 of BACKLOG-003, extracted verbatim) | `lookupEngine.js`, `data/irregular_verbs.json` | verb/word string | inflected Garo string or `null` |
 | `utils.js` | Pure, dependency-free helpers — `levenshtein` (2026-07-25, Phase 1 of BACKLOG-003) | none | — | — |
 | `garo_classifier.js` | Numeral classifier system (mang·/sak·/king/jol/pang/dot/ge·), number-word parsing | `number_engine.js` (implied for number words) | noun + count | classifier-suffixed phrase or `null` |
 | `number_engine.js` | English number word / digit → Garo number word | none | number | Garo numeral string |
@@ -704,13 +705,15 @@ function interprets, rather than a flat key-value JSON). Not started.
 
 ### BACKLOG-003 — translationEngine.js Modularization (engineering audit, 2026-07-25)
 
-**Status: Phase 1 + Phase 2 of 8 DONE (2026-07-25).** `utils.js`
-(`levenshtein`) and `lookupEngine.js` (`lookup`, `lookupGaro`,
-`EN_INDEX`, `corrections`) extracted verbatim, zero logic change.
-Verified via byte-identical diff of the full 237-sentence stress
-benchmark before/after (`git stash` A/B comparison), plus 106/106
-unit tests, `npm run lint` clean, repository-intelligence Check A–D
-clean. `translationEngine.js`: 1130 → 1093 lines.
+**Status: Phase 1-3 of 8 DONE (2026-07-25).** `utils.js`
+(`levenshtein`), `lookupEngine.js` (`lookup`, `lookupGaro`,
+`EN_INDEX`, `corrections`), and `morphologyEngine.js`
+(`applyNegation`, `applyTense`, `findVerbForm`, `stripToStem`)
+extracted verbatim, zero logic change. Verified via byte-identical
+diff of the full 237-sentence stress benchmark before/after (`git
+stash` A/B comparison) at every phase, plus 106/106 unit tests,
+`npm run lint` clean, repository-intelligence Check A–D clean.
+`translationEngine.js`: 1130 → ~1000 lines.
 
 **Objective:** `translationEngine.js` had grown to 1130 lines handling
 lexical lookup, correction precedence, grammar rules, morphology,
@@ -726,7 +729,7 @@ behavior anywhere.
 per-phase dependency/risk detail):
 1. ✅ `utils.js` — pure helpers, no dependents to break.
 2. ✅ `lookupEngine.js` — lexical lookup + corrections precedence.
-3. `morphologyEngine.js` — `applyTense`, `applyNegation`,
+3. ✅ `morphologyEngine.js` — `applyTense`, `applyNegation`,
    `findVerbForm`, `stripToStem`. Medium risk: this is exactly where
    the "he works" hidden-coupling incident happened, so migration
    should be followed by a full stress-benchmark diff, not just
