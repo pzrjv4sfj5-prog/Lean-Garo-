@@ -2521,9 +2521,9 @@
   },
   {
     "english": "to wait",
-    "garo": "senga",
+    "garo": "Sengbo",
     "category": "general",
-    "notes": "CONFIRMED (RC-CANDIDATE-015, NV-015) - same fix as the \"wait\" headword, was the same unresolved placeholder."
+    "notes": "CORRECTED 2026-07-25 (Claude A, direct native correction via Project Owner). RETRACTS the 2026-07-25 RC-CANDIDATE-015/NV-015 fix that set this to \"senga\" - that was wrong. Direct correction: \"senga is not wait, it's Sengbo or Damo\" and \"senga is the translation of smelly into Garo\" (senga only, not a wait/smelly homonym as the 2026-07-12 transcript's phrasing was read to imply). See NV-015 update and RC-CANDIDATE-015 status for full history - not deleted, corrected in place."
   },
   {
     "english": "station / stop",
@@ -3647,9 +3647,9 @@
   },
   {
     "english": "wait",
-    "garo": "senga",
+    "garo": "Sengbo",
     "category": "general",
-    "notes": "CONFIRMED (RC-CANDIDATE-015, NV-015) - was a literal unresolved \"Damo / Sengbo\" placeholder, never a real value. senga is the declarative/inflectable root (Anga senggen = \"I will wait\", native-confirmed); Da·mo is reserved for genuine imperative \"Wait!\" via corrections.json, unchanged."
+    "notes": "CORRECTED 2026-07-25 (Claude A, direct native correction via Project Owner). RETRACTS the 2026-07-25 RC-CANDIDATE-015/NV-015 fix that set this to \"senga\" - that was wrong. Direct correction: \"senga is not wait, it's Sengbo or Damo\"; \"senga is the translation of smelly into Garo\" (only, not also wait). Sengbo = senga root + -bo imperative/hortative suffix (RULE-029) - already independently attested in the existing \"wait a moment\": \"Damo / Gisep sengbo\" entry, unchanged, which corroborates this correction rather than conflicting with it. Da·mo remains valid (unchanged, corrections.json). Unresolved: the original NV-015 transcript's \"Anga senggen\" = \"I will wait\" claim is now uncertain - not deleted, but should not be trusted as-is; needs re-verification, not silently carried forward or silently guessed at a replacement."
   },
   {
     "english": "quick / hurry",

@@ -354,7 +354,40 @@ attempted this cycle.
 down"` alone — no longer invalid Garo, now valid-but-wrong-meaning,
 still resolves to the unrelated "down" root).
 
-### RC-CANDIDATE-015 — `Da·mo`("wait" expression) used for declarative "wait," should be `senga`
+### RC-CANDIDATE-015 — `Da·mo`("wait" expression) used for declarative "wait," should be `Sengbo`
+**RETRACTED AND RE-FIXED, 2026-07-25 (Claude A, direct native
+correction).** Claude B's fix earlier today set `"wait"`/`"to wait"` to
+`senga` based on NV-015's 2026-07-12 transcript. That transcript was
+misread — direct correction received: `senga` only means "smelly," not
+"wait." Corrected `master_dictionary.json` back to `Sengbo`
+(`senga`+`-bo` imperative suffix, RULE-029) — see NV-015 for full
+retraction detail. **Action needed from Claude B:** the two regression
+tests added for this fix (`tests/unit/translationEngine.test.js`,
+`'he waits'` and `'i am waiting at the bed'`) currently assert
+`expectGaro` values containing `senga` — these are now wrong and will
+fail once this dictionary correction is picked up; they need updating
+to the `Sengbo`-based forms, not reverted to the original placeholder
+bug. I haven't edited the test file myself (engine/test code, not my
+domain) — flagging precisely rather than leaving it to be discovered
+as a mystery failure. Exact new values, verified directly: `"he
+waits"` -> `"Ua Sengbo"`; `"i am waiting at the bed"` -> `"Anga
+palang·o Sengbo"`.
+
+**Real open concern, not fully resolved:** if `Sengbo` is genuinely
+`senga` + `-bo` (imperative/hortative suffix, RULE-029) the same way
+`Da·mo` was confirmed imperative-only and invariant, then using it in
+a *declarative* sentence ("he waits," "I am waiting") is linguistically
+questionable — it would read closer to "he, wait!" than a statement.
+`senga` = smelly is solid (direct, unambiguous correction, not in
+doubt). But the correct **declarative, inflectable** root for "wait" —
+the thing this RC was originally trying to find — is genuinely still
+unconfirmed. `Sengbo`/`Damo` were given as the answer to "what is
+wait," not necessarily as the citation-form headword value for
+inflected/declarative use. Needs one more direct question: "how do
+you say 'he waits' or 'I will wait' as a statement, not a command?" —
+added to the next relay batch, not guessed at here.
+
+**Original status text below, retained for history:**
 **Status: PARTIALLY RESOLVED (2026-07-25, Claude B).** Root cause was
 deeper than the original diagnosis: `master_dictionary.json`'s
 `"wait"`/`"to wait"` headwords were a literal unresolved

@@ -1,5 +1,5 @@
 repository:
-  head: 7eb59f1
+  head: 3d7f818
   last_updated: "2026-07-25"
   test_status: "114/114 regression tests passing, build clean, lint clean. translationEngine.js modularization (BACKLOG-003) Phase 1-3 of 8 done, verified zero behavior change via stress-benchmark diff each phase. Phase 5 (grammarEngine.js) deliberately deferred to a fresh session - highest-risk phase, extract-method + diff-per-substep discipline. Phase 7 not started (no de-risking value for Phase 5, done independently later)."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -107,7 +107,19 @@ claude_a:
     docs/PROPOSAL_GRAMMAR_RULE_SCHEMA_20260725.md to it as the first
     real example. Noted Claude B's Phase 5 sequencing suggestion
     (VALIDATION_CORPUS linkage before grammarEngine.js extraction) -
-    not actioned this session, flagged for next pickup.
+    not actioned this session, flagged for next pickup. URGENT
+    correction: RC-CANDIDATE-015/NV-015 RETRACTED - Claude B's
+    same-day "senga = wait" fix was wrong, direct native correction
+    received via Project Owner ("senga is not wait, it's Sengbo or
+    Damo"; "senga is the translation of smelly"). Corrected
+    master_dictionary.json "wait"/"to wait" back to Sengbo. Flagged 2
+    of Claude B's regression tests that now assert the wrong value
+    (exact correct outputs verified and given in
+    PENDING_REGRESSION_CASES.md). Also flagged a genuine remaining
+    linguistic gap: Sengbo may be imperative-only (senga+-bo, same
+    pattern as Da·mo) - using it for declarative "he waits" is
+    questionable, not confirmed correct. New relay question added
+    (batch now 41 questions, section R).
   progress: >-
     This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
     actual repo state before this update - HEAD, test count, and this
@@ -143,7 +155,7 @@ claude_a:
     - "Do not re-triage RC-CANDIDATE-027 case-key instances individually as they're found - log the count, batch-handle with Claude B"
     - "Do not let this WORKSTATE.yaml go stale again - update at session close, every session"
   waiting_for: >-
-    Thangseng answers to the 39-question consolidated batch (narrowed
+    Thangseng answers to the 41-question consolidated batch (narrowed
     from 42 on 2026-07-25 - see NV-027). Claude B on RULE-040 ("right" 3-way engine-side
     split), RC-CANDIDATE-027 (case-key clobber, ~470 pairs,
     scoping-only so far), and the 2 remaining lint parser-errors. Claude D on pages 34/74 (duplicate

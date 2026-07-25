@@ -1075,7 +1075,27 @@ since `dong` isn't part of that group.
 
 ---
 
-## NV-015 — `senga`("wait") vs. `Da·mo`("wait," fixed expression) — CLOSED, native-confirmed
+## NV-015 — `senga`("wait") vs. `Da·mo`("wait," fixed expression) — RETRACTED 2026-07-25, see correction below
+
+**RETRACTION, 2026-07-25 (Claude A, direct native correction via
+Project Owner):** the 2026-07-12 transcript below was misread. Direct,
+unambiguous new correction received: **"senga is not wait, it's
+Sengbo or Damo"**; **"senga is the translation of smelly into Garo"**
+— `senga` only means smelly, it is not a wait/smelly homonym. The
+original transcript's phrasing ("Senga can mean to wait and it can
+also mean foul smell") is now understood to have been transcribed or
+read incorrectly — the intended root for "wait" was `sengbo`/`Sengbo`
+(`senga` + `-bo` imperative suffix, RULE-029), not bare `senga`.
+`master_dictionary.json`'s `"wait"`/`"to wait"` headwords corrected
+back from `senga` to `Sengbo` (2026-07-25). **Not resolved:** the
+transcript's `"Anga senggen"` = "I will wait" claim is now uncertain —
+kept on record below for history, not deleted, but should not be
+trusted or acted on until re-verified directly with Thangseng. Add to
+next relay batch: confirm whether `senggen` is a valid inflected form
+of `sengbo`/a shared `seng-` stem, or was itself part of the original
+misreading.
+
+**Original entry, retained for history — do not treat as current:**
 
 **Topic:** Two candidate translations for English "wait" — which is
 correct for declarative/inflected use vs. imperative/discourse use.

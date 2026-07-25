@@ -121,9 +121,21 @@ words?
 39. Is there any other Garo way to say "breakfast" — even a
     descriptive phrase, like "morning food"?
 
+## R. "Wait" as a statement, not a command (reopened 2026-07-25, see NV-015 retraction)
+We confirmed `senga` only means "smelly," not "wait" — that part is
+settled. But we're not sure yet how to correctly say "wait" as a plain
+statement (not telling someone to do it).
+40. How do you say "He waits" or "He is waiting"?
+41. How do you say "I will wait"?
+(We have `Sengbo` and `Damo` as words used when telling someone
+"Wait!" — we just need to confirm whether either of those, or a
+different word, is right for describing waiting as a fact, not a
+command.)
+
 ---
 **Not included here (already fully closed, no need to re-ask):**
 copula for locative existence, "chicken"/"bird," "housefly," "fruit,"
 negation+locative interaction, "hot"=`ding·a`, "warm"=`Kama`, the `-de`
 suffix, "very"=`indakpile`, "good"=`nam`, counting/classifiers,
-"we"/"us," negative-continuous order, "ten/first/everyone/someone."
+"we"/"us," negative-continuous order, "ten/first/everyone/someone,"
+"smelly"=`senga`.
