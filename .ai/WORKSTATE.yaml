@@ -1,5 +1,5 @@
 repository:
-  head: fcfa89e
+  head: 142ce0e
   last_updated: "2026-07-25"
   test_status: "106/106 regression tests passing, build clean, lint clean (0 errors - the 8 flagged errors were resolved this session, see commit 4c95238)"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -90,6 +90,15 @@ claude_a:
     adj./n. entries split, 1 raka-minimal-pair mislabeled as duplicate
     corrected, 1 legitimate English-synonym conflict logged in
     known_dictionary_conflicts.json, 1 incoherent cut-off entry held).
+    Drafted docs/PROPOSAL_GRAMMAR_RULE_SCHEMA_20260725.md (content +
+    migration plan for Claude B to implement, not implemented myself)
+    after surveying all 40 rules directly: zero field-label drift
+    across the catalogue, but 12/40 rules pack multiple independently-
+    verified sub-claims into one status/confidence field - schema
+    needs claims[] not a flat status. Also verified a stale-looking
+    "lint still broken" state on my end was just my own outdated
+    node_modules (Claude B's espree upgrade fix was actually complete
+    and correct) - re-ran npm install before concluding anything.
   progress: >-
     This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
     actual repo state before this update - HEAD, test count, and this
