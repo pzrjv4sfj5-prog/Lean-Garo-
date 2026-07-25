@@ -17,6 +17,16 @@
       "flat_entries": 77,
       "affix_excluded": 5,
       "flagged_for_review": 5
+    },
+    {
+      "page": 75,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0075.flat.json",
+      "source_entries": 18,
+      "flipped_rows": 22,
+      "flat_entries": 22,
+      "affix_excluded": 0,
+      "flagged_for_review": 9
     }
   ]
 }
