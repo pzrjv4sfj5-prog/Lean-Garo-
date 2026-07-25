@@ -1,7 +1,7 @@
 repository:
-  head: 6a6747c
-  last_updated: "2026-07-16"
-  test_status: "66/66 regression tests passing, build clean"
+  head: de6918f
+  last_updated: "2026-07-25"
+  test_status: "106/106 regression tests passing, build clean"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -32,66 +32,52 @@ repository:
 claude_a:
   status: active
   migration_doc: >-
-    docs/CLAUDE_A_SESSION_MIGRATION_20260715.md - point-in-time handoff
-    snapshot, created 2026-07-15, extended same day with a verified
-    real-world alignment check (§7) after direct review of the new
-    instance's actual output. Confirmed: evidentiary tiering, contradiction-
-    vs-confirmation framing, homonymy-vs-error pattern application, and
-    proactive RC cross-referencing all transferred correctly and were
-    reconstructed from principle, not memorized. One concrete gap found
-    and logged as an operational fix, not just a note: cross-check every
-    individual new lexical item against already-committed values, not
-    just the evidence as a whole. Outgoing instance retiring after this
-    commit - next real task for whoever reads this is reviewing commit
-    6339230 (RC-CANDIDATE-017/018/019), not yet reviewed.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260715.md - superseded by the
+    2026-07-24 migration doc pasted directly into the current session
+    (not yet its own committed file). See current_task below for
+    everything since.
   current_task: >-
-    2026-07-16: Reviewed RC-CANDIDATE-017/018/019 (commit 6339230).
-    RC-018 confirmed engineering-only (live-reproduced the floating
-    ·gen token). RC-017 reopened - Claude B's "under" vs "on" comparison
-    wasn't structurally parallel (accusative ·ko + fused pseudo-verb vs.
-    bare locative with no predicate at all), and the "working" under-case
-    output contradicts the project's own confirmed RULE-G2/033 copula
-    pattern - flagged as a real linguistic question, not pure plumbing;
-    relay question drafted. RC-019 resolved (not a word-choice
-    question) - master_dictionary.json already has 4 verified teacher
-    entries (Skigipa neutral + 3 register-tagged loanword variants);
-    compiler's case-insensitive last-write-wins silently clobbers all
-    but the last one for dictionary-path lookups (corrections.json
-    bypasses it) - same shape as RC-016, handed to Claude B as a
-    data-integrity fix, no native input needed. Also reviewed a new
-    Tridip/Thangseng relay (family-vocab register set, a live
-    daka-vs-ong·a copula conflict on the existing RULE-005 example
-    sentence, and a confirmed ama homonymy risk against the modals
-    proposal) - logged in
-    docs/PENDING_LINGUISTIC_PROPOSAL_20260716_family_terms.md, added
-    NV-017/018 to the relay queue, corrected stale NV-013 wording.
+    2026-07-25: RULE-041 fix - "To work" master_dictionary.json entry
+    had garo/pos fields swapped by OCR import (Kam ka·a was stuck in
+    pos, not garo), root cause of the "he works" bug Claude B flagged;
+    corrected + synced pending_lexicon.json PL-0001397 (12da508).
+    NV-040 opened+closed same session - direct Thangseng confirmation
+    of fruit=Bite, correcting 564295d's commit message which implied
+    native confirmation but was actually a mechanical dedup (d95d731).
+    NV-039 fully closed for housefly=Tampi as its own headword; broader
+    fly noun 3-way conflict (Bila/Tampi/til·a) intentionally left open
+    (de6918f). Compiled a 42-question, 17-topic consolidated pending
+    batch for the next full Thangseng relay round (not yet committed
+    to repo - currently only in
+    /mnt/user-data/outputs/THANGSENG_QUESTION_BATCH_20260725.md,
+    see next_action). Audited own prior work: found
+    PENDING_REGRESSION_CASES.md stale on RC-CANDIDATE-017 (says "Open,
+    unimplemented", actually fixed+tested in 66cac87) - not yet
+    corrected in that file. Verified Claude D's page 2/30 "redundant
+    commit" flag was a false alarm (both are the legitimate promoted-
+    work audit trail, not duplicate pushes) - no repo action needed.
   progress: >-
-    Verb inventory surfaced a real, previously-undetected finding: a
-    raka-inconsistency cluster in -na infinitive forms (ring/agan/porai
-    show unexpected raka in the sikenga "want to X" construction despite
-    being raka-free everywhere else) - logged as NV-010, bundled into
-    the minimal relay set alongside NV-001/002. cha· (eat) documented as
-    the template canonical verb page - clean paradigm, 24
-    corrections.json entries, surfaces 2 pure documentation gaps (-jok
-    and -china missing from morphology suffix table). Cross-checked
-    Claude B's RC-CANDIDATE-001..005 against my existing NV-005..009 -
-    each NV updated in place with the richer isolated-test evidence
-    rather than duplicated as a separate item.
+    This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
+    actual repo state before this update - HEAD, test count, and this
+    entire claude_a block were still showing 2026-07-16. Root cause:
+    no session closed out by updating this file, even when other repo
+    docs (GRAMMAR_RULE_CATALOGUE.md, THANGSENG_NATIVE_VALIDATION.md)
+    were kept current. Treat this as a standing checklist item going
+    forward, not a one-off catch-up.
   completed:
-    - "docs/GRAMMAR_SPECIFICATION.md, MORPHOLOGY_SPECIFICATION.md, GRAMMAR_RULE_CATALOGUE.md (RULE-001..RULE-035, now including RULE-030), VALIDATION_CORPUS.md - core V1.0 linguistic deliverables"
-    - "2026-07-08: RULE-034/035 locative review; docs/THANGSENG_NATIVE_VALIDATION.md created (NV-001..009); Native Sentence Validation Audit Case 1 reviewed, RULE-004 and Grammar Spec §6 strengthened"
-    - "2026-07-08: Native validation cycle maturity pass - minimal question set, Coverage Audit, Confidence Review, RULE-030 catalogue gap fixed"
-    - "2026-07-08: docs/VERB_INVENTORY.md (P0 verb inventory) + docs/verbs/CHA_EAT.md (P1 template canonical page) + NV-005..009 reconciled with Claude B's parallel evidence (RC-CANDIDATE-001..005) + NV-010/011/012 added"
+    - "docs/GRAMMAR_SPECIFICATION.md, MORPHOLOGY_SPECIFICATION.md, GRAMMAR_RULE_CATALOGUE.md (RULE-001..RULE-041), VALIDATION_CORPUS.md - core V1.0 linguistic deliverables"
+    - "2026-07-08: RULE-034/035 locative review; docs/THANGSENG_NATIVE_VALIDATION.md created (NV-001..009)"
+    - "2026-07-16: RC-CANDIDATE-017/018/019 reviewed and reconciled (see PENDING_REGRESSION_CASES.md history)"
+    - "2026-07-20..24: NV-013/025/028/035/036/037 closed; page 2 processed solo (Claude D token-exhaustion stopgap) and promoted, RC-CANDIDATE-028 logged"
+    - "2026-07-25: RULE-041 root-cause fix; NV-039 (housefly) and NV-040 (fruit) closed; 42-question consolidated Thangseng batch compiled"
   next_action: >-
-    Relay NV-001/002/010/016/017/018 to Thangseng (minimal question set
-    in THANGSENG_NATIVE_VALIDATION.md, now 6 items) - NV-017/018 are new
-    2026-07-16, touch RULE-005/031 and the ama homonymy risk, treat as
-    high-priority since they block promoting the new family-vocab set.
-    RC-CANDIDATE-017's re-opened locative-copula question also needs a
-    relay ask (see PENDING_REGRESSION_CASES.md). Otherwise: see
-    SESSION_BOOTSTRAP.md "Current joint work package" for the rest of
-    the live list; P2 Verb Family Project (cha· first) once native
-    answers land.
+    1) Commit the 42-question batch into docs/ as the canonical
+    pending-questions file (currently only sitting in chat output, per
+    Project Owner - not yet done, should not be left un-committed
+    indefinitely). 2) Correct RC-CANDIDATE-017's stale "Open,
+    unimplemented" status line in PENDING_REGRESSION_CASES.md to match
+    reality (fixed in 66cac87). 3) Update this file at the end of every
+    session going forward, not just when directly asked.
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
     - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"
@@ -101,15 +87,16 @@ claude_a:
     - "Do not attempt to resolve Rule 30/31 from assumptions - both explicitly need direct Thangseng validation, see NV-001/NV-002"
     - "Do not begin Verb Family Project with re·/re·ang - start with cha· per Project Owner sequencing, re·/re·ang is second, after NV-001"
     - "Do not re-run the coverage audit or confidence review from scratch - both are dated 2026-07-08, re-run only after new corpus rows are added or new native validation lands"
+    - "Do not re-triage RC-CANDIDATE-027 case-key instances individually as they're found - log the count, batch-handle with Claude B"
+    - "Do not let this WORKSTATE.yaml go stale again - update at session close, every session"
   waiting_for: >-
-    Claude B to push RC-010 implementation. Once landed: re-run
-    tests/benchmarks/stress_237.mjs unmodified, fill in
-    BENCHMARK_VALIDATION_REPORT.md's AFTER section, validate against
-    the pre-registered RC-011 hypothesis rather than assuming it. Also
-    still waiting on direct Thangseng answers to NV-001 (Rule 30) and
-    NV-002 (Rule 31) - highest-priority open linguistic questions,
-    unrelated to RC-010 but still open.
-  expected_output: "Markdown files committed to docs/, zero code/JS changes, per Sprint Work Package constraints"
+    Thangseng answers to the 42-question consolidated batch (see
+    next_action #1). Claude B on RULE-040 ("right" 3-way engine-side
+    split) and RC-CANDIDATE-027 (case-key clobber, ~470 pairs,
+    scoping-only so far). Claude D on pages 34/74 (duplicate
+    resolution, blocked until actual files are pushed) and 75-77/94/
+    95/100/101 (not yet started).
+  expected_output: "Markdown/JSON files committed to docs/ and dictionary data, per role boundary - Claude A never touches engine code (Claude B) or does OCR ingestion (Claude D)"
 
 claude_b:
   status: active
