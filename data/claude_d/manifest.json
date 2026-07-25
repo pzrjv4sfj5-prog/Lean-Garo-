@@ -22,6 +22,13 @@
       "page": 75,
       "status": "processed",
       "output_path": "data/claude_d/processed/page_0075.flat.json",
+      "entry_count": 22,
+      "note": "22 flat entries, preflight clean (0 conflicts/duplicates). 21 promoted to production 2026-07-25 (PL-0001664..0001684) - farming/wealth/clothing semantic cluster, standard print-dictionary vocabulary, no native-validation dependency. 1 held: 'Gandaska' (adv.) - gloss 'reciprocally : out' explicitly OCR-flagged as cut off mid-page, not a coherent definition; not imported to avoid seeding a nonsense translation-engine entry. See docs/PENDING_REGRESSION_CASES.md 'Held dictionary entries' for tracking."
+    },
+    {
+      "page": 75,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0075.flat.json",
       "source_entries": 18,
       "flipped_rows": 22,
       "flat_entries": 22,

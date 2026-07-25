@@ -43905,5 +43905,551 @@
     },
     "promotion_status": "promoted",
     "promoted_date": "2026-07-24T05:44:04.582Z"
+  },
+  {
+    "id": "PL-0001664",
+    "english": "a famer; a cultivator; a peasant.",
+    "garo": "Game cha·gipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'famer' (for farmer) preserved.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001665",
+    "english": "farming; cultivation; agriculture.",
+    "garo": "Game cha·ani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001666",
+    "english": "a wealthy man; a well-to-do man; a man of substance.",
+    "garo": "Gam gnanggipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'n.' followed by '-adj.' for secondary POS.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001667",
+    "english": "rich; affluent; wealthy.",
+    "garo": "Gam gnanggipa",
+    "category": null,
+    "pos": "-adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'n.' followed by '-adj.' for secondary POS.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001668",
+    "english": "very loudly; at the top of one's voice.",
+    "garo": "Gam·prete",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001669",
+    "english": "to weed out.",
+    "garo": "Gamroka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001670",
+    "english": "wealth; riches.",
+    "garo": "Gam-jin, Gamseng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001671",
+    "english": "to wear; to put on; to dress.",
+    "garo": "Gana",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001672",
+    "english": "a wearing apparel.",
+    "garo": "Gana",
+    "category": null,
+    "pos": "-n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001673",
+    "english": "a ceremony at which a nokma (i.e. rich man) assumes the elbow rings.",
+    "garo": "Gana",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Separate entry for repeated headword.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001674",
+    "english": "clothing; clothes; dress.",
+    "garo": "Gana china",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'n.' followed by '-v.' for secondary POS.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001675",
+    "english": "to dress; to put on clothes.",
+    "garo": "Gana china",
+    "category": null,
+    "pos": "-v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'n.' followed by '-v.' for secondary POS.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001676",
+    "english": "to strip (a woman) naked; to denudate; to denude.",
+    "garo": "Gana enga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001677",
+    "english": "to strip or pull up a woman's clothing.",
+    "garo": "Gana kika",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001678",
+    "english": "a woman's home-woven wearing apparel.",
+    "garo": "Gana-re·king",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001679",
+    "english": "uneven ground; unagreeable (person); rugged.",
+    "garo": "Ga·nanggijagipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001680",
+    "english": "deep or high above the knee and below the waist.",
+    "garo": "Ganapang",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001681",
+    "english": "a funeral pyre; a bonfire; an altar.",
+    "garo": "Ganchi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001682",
+    "english": "an anna; four in number.",
+    "garo": "Ganda",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'n.' followed by '-adv.' for secondary POS.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001683",
+    "english": "then; if it is the case; because of; the same.",
+    "garo": "Ganda",
+    "category": null,
+    "pos": "-adv.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'n.' followed by '-adv.' for secondary POS.",
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001684",
+    "english": "to wear over another garment.",
+    "garo": "Gandapa",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "75",
+      "import_batch": "IMPORT-2026-07-25T05-40-40-435Z",
+      "import_date": "2026-07-25T05:40:40.438Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 75 print-dictionary import, standard vocabulary (farming/wealth/clothing semantic cluster). Polysemous headwords (Gana x3, Gam gnanggipa, Gana china, Ganda) correctly split into separate senses per print dictionary structure. No native-validation dependency - straight lexicographic entries, not sentence-level grammar. Gandaska held separately (OCR page-cutoff, incoherent gloss).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:40:55.158Z"
   }
 ]

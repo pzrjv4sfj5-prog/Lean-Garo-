@@ -435,7 +435,12 @@ the negation vanishes, no negation marker anywhere in the output.
 Compare working cases: `"the dog is not under the table"` (correct,
 `...Kokkimaoja`) and `"the teacher does not eat rice"` (correct,
 `...Cha·ja`) — both carry their negation morpheme through fine.
-**Status:** Open, unimplemented. Found live-testing 2026-07-13.
+**Status:** CLOSED, implemented — `66cac87` ("implement the
+negative-locative copula"). Corrected 2026-07-25 (Claude A); this line
+had stayed "Open, unimplemented" after the fix landed, found during a
+routine audit — see `.ai/WORKSTATE.yaml` for the correction note. Test
+`RC-CANDIDATE-017: negation is not lost with a locative predicate`
+passes.
 **Root cause — confirmed high confidence, 2026-07-16 hygiene audit
 (engineering-only, not implemented per Task 5 scope):** `analyzeGrammar`'s
 verb-search loop (translationEngine.js ~L313-418) never finds a verb for
@@ -1098,3 +1103,21 @@ Not added to the allowlist: **"a hill"** (`A·chik`/`A·ding` existing
 vs. `A·bri` new) was promoted too (see `review_notes` on PL-0001630)
 but Check C didn't flag it as new — it was already allowlisted from
 an earlier page.
+
+## Held dictionary entries — not promoted, tracked here so they aren't lost
+
+Entries a Claude D page produced that were deliberately NOT imported
+to production, with the reason. These stay in `data/claude_d/
+processed/<page>.flat.json` (the full staged output) but were excluded
+from the `.clean.json` file actually run through import-dictionary.js,
+so they won't surface again on a future preflight run of the same
+page. If the source dictionary page is ever re-scanned at higher
+quality, re-check these against the new capture.
+
+- **Page 75, `Gandaska` (adv.), gloss "reciprocally : out"** — held
+  2026-07-25 (Claude A). OCR note on the entry itself says "Entry cut
+  off at the bottom of the page"; the gloss as captured isn't a
+  coherent definition and risks seeding a nonsense translation-engine
+  entry if imported as-is. Not promoted. No native-validation
+  dependency — this is a data-completeness issue, not a linguistic
+  question, so it doesn't belong in THANGSENG_NATIVE_VALIDATION.md.
