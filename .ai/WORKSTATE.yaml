@@ -1,5 +1,5 @@
 repository:
-  head: de6918f
+  head: a181b90
   last_updated: "2026-07-25"
   test_status: "106/106 regression tests passing, build clean"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
