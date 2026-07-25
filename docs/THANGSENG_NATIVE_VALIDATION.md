@@ -3,6 +3,12 @@ _Created 2026-07-08 by Claude A. Permanent document — do not create
 per-question `PENDING_NATIVE_QUESTIONS_*` files; add new questions here
 and update in place as answers arrive._
 
+**For relaying to Thangseng:** see
+`docs/THANGSENG_QUESTION_BATCH_20260725.md` — the current
+consolidated, ready-to-send question set covering every open item
+below. Update that file (don't create a new one) each time it's
+re-sent or a round of answers comes back.
+
 ## Minimal question set (for relay — smallest possible set)
 If only a short list can be relayed to Thangseng at once, these three are
 the highest-value, most self-contained asks. Everything else in this
