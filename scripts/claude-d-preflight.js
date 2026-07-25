@@ -64,7 +64,6 @@
  * actually broke."
  */
 import fs from 'fs';
-import path from 'path';
 import {
   normalize,
   loadJSON,
@@ -76,8 +75,12 @@ const MASTER_DICT_PATH = 'master_dictionary.json';
 const PENDING_LEXICON_PATH = 'src/data/pending_lexicon.json';
 
 // Same required/optional field contract as import-dictionary.js input,
-// per the ingestion contract's Section 1 canonical schema.
+// per the ingestion contract's Section 1 canonical schema. Documents
+// the schema; not yet wired into a runtime check here (import-dictionary.js
+// is still the authoritative validator per the header comment above).
+// eslint-disable-next-line no-unused-vars
 const REQUIRED_FIELDS = ['english', 'garo', 'source', 'source_page', 'ocr_version'];
+// eslint-disable-next-line no-unused-vars -- see REQUIRED_FIELDS above.
 const OPTIONAL_FIELDS = ['category', 'pos', 'classifier', 'notes'];
 
 // Splits a mid-string ".—POS. gloss" marker into two logical entries,
@@ -323,14 +326,13 @@ function main() {
   const existingByKey = buildExistingIndex(MASTER_DICT_PATH);
   const pendingKeys = buildPendingKeys(PENDING_LEXICON_PATH);
 
-  let newCount = 0, exactDupCount = 0, conflictCount = 0;
+  let newCount = 0, exactDupCount = 0;
   const possibleConflicts = [];
   for (const entry of clean) {
     const { classification, existing_garo } = classifyEntry(entry, existingByKey, pendingKeys);
     if (classification === 'new') newCount++;
     else if (classification === 'exact_duplicate') exactDupCount++;
     else {
-      conflictCount++;
       const rakaMatch = findRakaVariantMatch(entry.garo, existing_garo);
       possibleConflicts.push({
         english: entry.english,

@@ -22,7 +22,6 @@
  *   node scripts/flip-garo-to-english.js <source.json> [output.json]
  */
 import fs from 'fs';
-import path from 'path';
 
 const ALLOWED_ENTRY_TYPES = new Set(['lexical', 'affix']);
 
@@ -30,6 +29,9 @@ function loadJSON(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
 }
 
+// Caller (line 81) passes src.source_image explicitly; body doesn't
+// consume it yet but the call-site contract is deliberate, not dead code.
+// eslint-disable-next-line no-unused-vars
 function flipEntry(srcEntry, page, sourceImage) {
   const entryType = srcEntry.entry_type;
   if (entryType && !ALLOWED_ENTRY_TYPES.has(entryType)) {

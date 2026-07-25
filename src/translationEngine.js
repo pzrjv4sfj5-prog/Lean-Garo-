@@ -33,8 +33,7 @@ for (const [k, v] of Object.entries(correctionsRaw)) {
   if (stripped !== k.toLowerCase() && !corrections[stripped]) corrections[stripped] = v;
 }
 import { lookupPhrase } from './data/phrase_maps.js';
-import { getClassifier, countNoun, parseCountingPhrase, NUMBER_WORDS } from './garo_classifier.js';
-import { toGaroNumber } from './number_engine.js';
+import { countNoun, parseCountingPhrase, NUMBER_WORDS } from './garo_classifier.js';
 // Gemini import removed 2026-07-05 (dead fallback, see step 10 below)
 
 // Index build — support both string and array format
@@ -367,7 +366,6 @@ export function analyzeGrammar(input) {
     const subjectWords = new Set(words.slice(0, subjectEndIndex + 1).map(w => w.toLowerCase().replace(/[^a-z]/g,'')));
 
     // Find verb — skip stop words, possessives, and auxiliary tense markers
-    let verbIndex = -1;
     const SPECIAL_TENSES = ['discontinued','completed','chim','pastcont'];
     let pendingLocativeVerbGuard = false;
     for (let i = subjectEndIndex + 1; i < words.length; i++) {
@@ -451,7 +449,6 @@ export function analyzeGrammar(input) {
         if (isNegative && detectedTense === 'future' && !isIrregular) {
           garoWithTense = applyTense(garoVerb, 'negative_future');
           verb = { english: words[i], garo: garoVerb, tense: 'negative_future', garoWithTense, isNegative, index: i };
-          verbIndex = i;
           break;
         }
         if (!isIrregular && ['future', ...SPECIAL_TENSES].includes(detectedTense)) {
@@ -472,7 +469,6 @@ export function analyzeGrammar(input) {
           garoWithTense = applyNegation(garoWithTense);
         }
         verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i };
-        verbIndex = i;
         break;
       }
     }
@@ -609,7 +605,6 @@ function assembleSentenceSOV(words, isNegative = false, detectedTense = 'present
   // tense attachment regardless.
   const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()) && !AUXILIARY_SKIP.has(w.toLowerCase()));
   if (!content.length) return null;
-  const corrections = EN_INDEX['__corrections__'] || {};
   const translated = content.map(w => {
     const lw = w.toLowerCase().replace(/[^a-z'·]/g,'');
     return lookupPhrase(lw) || lookupGaro(lw)
@@ -915,7 +910,6 @@ export async function translate(input) {
 
   const cleaned = normalizeInput(input.trim().replace(/’/g, "'"));
   // Normalize: strip apostrophes for lookup consistency
-  const normalizedForLookup = cleaned.toLowerCase().replace(/['']/g, '');
   const lower = cleaned.toLowerCase().replace(/[''\u2019]/g, '');
   const words = lower.split(/\s+/);
 
@@ -1087,6 +1081,10 @@ export function getAlternates(englishWord) {
 
 // ── DEFAULT EXPORT — platform adapter layer (Claude B) ────────────────────────
 const translationEngine = {
+  // outputLang is part of the real call contract (Translator.jsx passes
+  // it); body doesn't consume it yet, but removing the parameter would
+  // change the public interface.
+  // eslint-disable-next-line no-unused-vars
   async translateSentence(text, inputLang = 'en', outputLang = 'garo') {
     if (!text || !text.trim()) return null;
     const r = await translate(text);
