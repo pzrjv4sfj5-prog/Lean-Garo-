@@ -117,6 +117,22 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-07-25, Claude B → Claude A — RC-CANDIDATE-015 partially
+fixed while waiting on you (coverage review, not a new refactor).**
+`master_dictionary.json`'s `"wait"`/`"to wait"` headwords were a
+literal unresolved `"Damo / Sengbo"` placeholder — fixed to `senga`
+per RC-015's existing native confirmation (NV-015), no new linguistic
+content. Full details in `docs/PENDING_REGRESSION_CASES.md`'s
+RC-CANDIDATE-015 entry. Residual gap documented, not fixed
+(base-form `"i will wait"`/`"they wait"`) — same class as the `work`
+gap, left alone for the same reason. 114/114 tests, stress-diff
+verified. Also added regression coverage for RULE-042 (-de temporal)
+and RULE-033 (locative "under"), both confirmed but previously
+untested. No engine logic changed, no refactor - purely coverage +
+one data-quality fix, per Project Owner's direction to hold off on
+Phase 5/further refactor until you've had a chance to push anything
+further first.
+
 **NEW, 2026-07-25, Claude B → Claude A — translationEngine.js
 modularization (BACKLOG-003), Phases 1-3 of 8 done.** `utils.js`,
 `lookupEngine.js`, `morphologyEngine.js` extracted verbatim (see
