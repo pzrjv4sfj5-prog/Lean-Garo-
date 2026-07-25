@@ -44451,5 +44451,1045 @@
     },
     "promotion_status": "promoted",
     "promoted_date": "2026-07-25T05:40:55.158Z"
+  },
+  {
+    "id": "PL-0001685",
+    "english": "to avenge; to revenge; to retribute.",
+    "garo": "Gandaska daka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001686",
+    "english": "navel; the umbilical cord.",
+    "garo": "Gandil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001687",
+    "english": "to cut and tie up the umbilical cord.",
+    "garo": "Gandil rasota",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001688",
+    "english": "a navel string.",
+    "garo": "Gandilni bibak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001689",
+    "english": "clothes; wearing apparel.",
+    "garo": "Ganding chinding",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001690",
+    "english": "a strip of cotton cloth interwoven with lines of red and black, worn by man on the loin; a cloth worn between the legs and round the waist; a loin-cloth.",
+    "garo": "Gando",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001691",
+    "english": "to insult exposing the private part.",
+    "garo": "Gana ba gando oke mesoke saia",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001692",
+    "english": "a home-woven narrow strip male wearing apparel.",
+    "garo": "Gando makkal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001693",
+    "english": "the end of the 'gando makkal' when put on.",
+    "garo": "Gando ku-sre",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001694",
+    "english": "to challenge for wrestling by holding up the 'gando makkal' above one's head; he who accepts the challenge comes up, snatch the 'gando makkal' and tears lengthwise and wrestling begins.",
+    "garo": "Gando makkal pala",
+    "category": null,
+    "pos": "vi. & vt.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001695",
+    "english": "same as gana-pang.",
+    "garo": "Gandopang",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001696",
+    "english": "The end of gando tucked into the waist band at the front.",
+    "garo": "Gu-sre",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Split from bundled OCR entry (Ki-pil separated out as its own headword, same source line).",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001697",
+    "english": "a kind of small frog, usually found in cascade or cataract.",
+    "garo": "Gan-drak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001698",
+    "english": "navel.",
+    "garo": "Gandru, Ganduri",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001699",
+    "english": "to be in the sensual appetite; lust; to erect (of penis).",
+    "garo": "Gang-a",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "Typo 'sualappetite' (sensual appetite) preserved.",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001700",
+    "english": "to make most of oneself; to boast; to brag.",
+    "garo": "Gangbinga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001701",
+    "english": "lying on the back motion-less.",
+    "garo": "Gangborangrang, Gangbotaktak",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Hyphenation 'motion-less' preserved.",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001702",
+    "english": "a clevtr man in garo folk tales.",
+    "garo": "Gangbo Nokma",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'clevtr' (clever) preserved.",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001703",
+    "english": "to swel; to become inflated; to swel up; to distend.",
+    "garo": "Gangbua",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'swel' (swell) preserved twice.",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001704",
+    "english": "to flutter; to flap.",
+    "garo": "Ganchichia",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001705",
+    "english": "fin.",
+    "garo": "Gangching",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001706",
+    "english": "narrow (said of a leaf).",
+    "garo": "Gangchona",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001707",
+    "english": "wide; broad (said of a leaf).",
+    "garo": "Gangdala",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001708",
+    "english": "a bantis.",
+    "garo": "Gang-gi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001709",
+    "english": "to fall backward.",
+    "garo": "Ganggila",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001710",
+    "english": "to protect under the wing; to spread the wing.",
+    "garo": "Ganggopa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001711",
+    "english": "to bend over backward.",
+    "garo": "Gang-great",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001712",
+    "english": "without clothes even to wear.",
+    "garo": "Gan-gri chin-gri",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001713",
+    "english": "a gnat; a mosquito.",
+    "garo": "Ganggua",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001714",
+    "english": "majectically.",
+    "garo": "Gangjang",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Typo 'Majectically' (Majestically) preserved.",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001715",
+    "english": "to flap; to flutter.",
+    "garo": "Gangjipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001716",
+    "english": "pomple.",
+    "garo": "Gangma",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001717",
+    "english": "(turpinia pomifera). a handsome middle-sized tree.",
+    "garo": "Gangma ja·ching",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001718",
+    "english": "full of pimples.",
+    "garo": "Gangma-ripu",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001719",
+    "english": "to sprawl.",
+    "garo": "Gangpaka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001720",
+    "english": "to become rotten; to swel on account of decomposition.",
+    "garo": "Gangpinga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'swel' preserved.",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001721",
+    "english": "arm; elbow.",
+    "garo": "Gangpong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'v.' conflicts with noun definitions. POS corrected v.->n.: definition (arm; elbow) is unambiguously nominal, tag was a data-entry error.",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001722",
+    "english": "to lie on one's back; to fall on one's back.",
+    "garo": "Gangranga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001723",
+    "english": "to fall on one's back.",
+    "garo": "Gangrange ga·aka",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry cut off at the bottom of the page.",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
+  },
+  {
+    "id": "PL-0001724",
+    "english": "The end of gando tucked into the waist band at the back.",
+    "garo": "Ki-pil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Split from bundled OCR entry (was combined with Gu-sre under one headword).",
+    "provenance": {
+      "source": null,
+      "source_page": "76",
+      "import_batch": "IMPORT-2026-07-25T05-51-33-798Z",
+      "import_date": "2026-07-25T05:51:33.822Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Page 76 print-dictionary import. Gu-sre/Ki-pil split from a bundled OCR entry into two separate headwords (same source line, distinct waistband-tuck senses). Gangpong POS corrected v.->n. (arm/elbow definition unambiguously nominal). No native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-07-25T05:51:39.353Z"
   }
 ]

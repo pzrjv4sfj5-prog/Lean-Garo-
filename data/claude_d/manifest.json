@@ -37,7 +37,8 @@
       "flipped_rows": 39,
       "flat_entries": 39,
       "affix_excluded": 0,
-      "flagged_for_review": 3
+      "flagged_for_review": 3,
+      "note": "40 promoted 2026-07-25 (PL-0001685..0001724; 39 source entries + 1 split). 'Gu-sre' entry split into 'Gu-sre' + 'Ki-pil' (bundled two headwords under one OCR line). 'Gangpong' POS corrected v.->n. No holds."
     },
     {
       "page": 77,

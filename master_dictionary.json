@@ -58171,5 +58171,255 @@
     "garo": "Gandapa",
     "category": null,
     "pos": "vi."
+  },
+  {
+    "english": "to avenge; to revenge; to retribute.",
+    "garo": "Gandaska daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "navel; the umbilical cord.",
+    "garo": "Gandil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to cut and tie up the umbilical cord.",
+    "garo": "Gandil rasota",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "a navel string.",
+    "garo": "Gandilni bibak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "clothes; wearing apparel.",
+    "garo": "Ganding chinding",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a strip of cotton cloth interwoven with lines of red and black, worn by man on the loin; a cloth worn between the legs and round the waist; a loin-cloth.",
+    "garo": "Gando",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to insult exposing the private part.",
+    "garo": "Gana ba gando oke mesoke saia",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "a home-woven narrow strip male wearing apparel.",
+    "garo": "Gando makkal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the end of the 'gando makkal' when put on.",
+    "garo": "Gando ku-sre",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to challenge for wrestling by holding up the 'gando makkal' above one's head; he who accepts the challenge comes up, snatch the 'gando makkal' and tears lengthwise and wrestling begins.",
+    "garo": "Gando makkal pala",
+    "category": null,
+    "pos": "vi. & vt."
+  },
+  {
+    "english": "same as gana-pang.",
+    "garo": "Gandopang",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "The end of gando tucked into the waist band at the front.",
+    "garo": "Gu-sre",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (Ki-pil separated out as its own headword, same source line)."
+  },
+  {
+    "english": "a kind of small frog, usually found in cascade or cataract.",
+    "garo": "Gan-drak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "navel.",
+    "garo": "Gandru, Ganduri",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to be in the sensual appetite; lust; to erect (of penis).",
+    "garo": "Gang-a",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Typo 'sualappetite' (sensual appetite) preserved."
+  },
+  {
+    "english": "to make most of oneself; to boast; to brag.",
+    "garo": "Gangbinga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "lying on the back motion-less.",
+    "garo": "Gangborangrang, Gangbotaktak",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Hyphenation 'motion-less' preserved."
+  },
+  {
+    "english": "a clevtr man in garo folk tales.",
+    "garo": "Gangbo Nokma",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'clevtr' (clever) preserved."
+  },
+  {
+    "english": "to swel; to become inflated; to swel up; to distend.",
+    "garo": "Gangbua",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'swel' (swell) preserved twice."
+  },
+  {
+    "english": "to flutter; to flap.",
+    "garo": "Ganchichia",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "fin.",
+    "garo": "Gangching",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "narrow (said of a leaf).",
+    "garo": "Gangchona",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "wide; broad (said of a leaf).",
+    "garo": "Gangdala",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "a bantis.",
+    "garo": "Gang-gi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to fall backward.",
+    "garo": "Ganggila",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to protect under the wing; to spread the wing.",
+    "garo": "Ganggopa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to bend over backward.",
+    "garo": "Gang-great",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "without clothes even to wear.",
+    "garo": "Gan-gri chin-gri",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "a gnat; a mosquito.",
+    "garo": "Ganggua",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "majectically.",
+    "garo": "Gangjang",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Typo 'Majectically' (Majestically) preserved."
+  },
+  {
+    "english": "to flap; to flutter.",
+    "garo": "Gangjipa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "pomple.",
+    "garo": "Gangma",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "(turpinia pomifera). a handsome middle-sized tree.",
+    "garo": "Gangma ja·ching",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "full of pimples.",
+    "garo": "Gangma-ripu",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "to sprawl.",
+    "garo": "Gangpaka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to become rotten; to swel on account of decomposition.",
+    "garo": "Gangpinga",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'swel' preserved."
+  },
+  {
+    "english": "arm; elbow.",
+    "garo": "Gangpong",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'v.' conflicts with noun definitions. POS corrected v.->n.: definition (arm; elbow) is unambiguously nominal, tag was a data-entry error."
+  },
+  {
+    "english": "to lie on one's back; to fall on one's back.",
+    "garo": "Gangranga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to fall on one's back.",
+    "garo": "Gangrange ga·aka",
+    "category": null,
+    "pos": "vi.",
+    "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry cut off at the bottom of the page."
+  },
+  {
+    "english": "The end of gando tucked into the waist band at the back.",
+    "garo": "Ki-pil",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (was combined with Gu-sre under one headword)."
   }
 ]
