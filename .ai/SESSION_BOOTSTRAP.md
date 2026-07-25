@@ -454,6 +454,18 @@ The repository is always the source of truth over conversation history.
 8. Check `docs/PENDING_*` and `docs/pending_corrections.md` for anything
    awaiting action.
 
+## Session close — WORKSTATE.yaml update is mandatory (Project Owner directive, 2026-07-25)
+
+Both roles: before ending a session, update your section of
+`.ai/WORKSTATE.yaml` — `head`, `last_updated`, `test_status`, and
+`current_task`/`progress` reflecting what actually happened. This is
+not optional and not "if there's time." Found 2026-07-25: this file
+had drifted 9 days / 2 sessions stale (wrong HEAD, wrong test count,
+`claude_a` block frozen at an old date) because no session had closed
+out by updating it, even though other docs stayed current. A stale
+`WORKSTATE.yaml` defeats its own purpose — the next session bootstraps
+from wrong information. Update it every session, not periodically.
+
 ## Quick health check
 ```
 npm install --no-audit --no-fund
