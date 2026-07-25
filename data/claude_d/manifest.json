@@ -59,7 +59,8 @@
       "flipped_rows": 31,
       "flat_entries": 31,
       "affix_excluded": 0,
-      "flagged_for_review": 5
+      "flagged_for_review": 5,
+      "note": "29 promoted 2026-07-25 (PL-0001768..0001796). Dropped 2 within-page duplicate headwords (fuller version kept). Split 2 bundled multi-sense entries. Ja·binela POS corrected vi.->n. Ja·cholchep English gloss corrected (garbled OCR word -> 'curved', context-clear). No holds."
     },
     {
       "page": 95,
@@ -69,7 +70,8 @@
       "flipped_rows": 40,
       "flat_entries": 40,
       "affix_excluded": 0,
-      "flagged_for_review": 6
+      "flagged_for_review": 6,
+      "note": "43 promoted 2026-07-25 (PL-0001797..0001839, incl. 3 splits). Split 2 bundled two-headword entries (Ja·dii/Ja·dil su·a, Ja·ga/Ja·ga saa) and 2 bundled adj./n. entries. Fixed Ja·ga saa English gloss (garbled OCR words corrected). Confirmed Jagoka/Ja·goka as genuine raka-minimal-pair, not duplicate. Ja·gimbri vs. existing Ja·birang logged as legitimate English-synonym conflict in known_dictionary_conflicts.json. 1 held: 'Jagring' (n.) - gloss cut off mid-word ('Reflection (of some-'), incoherent, not imported."
     }
   ]
 }

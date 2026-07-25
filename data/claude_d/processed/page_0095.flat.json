@@ -1,9 +1,15 @@
 [
   {
-    "english": "Grown up; old.—n. A grown up person.",
+    "english": "Grown up; old.",
     "garo": "Ja·dala",
     "pos": "adj.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+    "notes": "Split from bundled OCR entry."
+  },
+  {
+    "english": "A grown up person.",
+    "garo": "Ja·dala",
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense, same source line)."
   },
   {
     "english": "To grow up; to wax (used for persons only).",
@@ -21,16 +27,28 @@
     "pos": "adj."
   },
   {
-    "english": "Having slender legs.—n. A person with long thin legs; spindle shanks.",
+    "english": "Having slender legs.",
     "garo": "Ja·dengsi",
     "pos": "adj.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+    "notes": "Split from bundled OCR entry."
   },
   {
-    "english": "Root; ray. Ja·dil su·a, v. To root.",
+    "english": "A person with long thin legs; spindle shanks.",
+    "garo": "Ja·dengsi",
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense, same source line)."
+  },
+  {
+    "english": "Root; ray.",
     "garo": "Ja·dii",
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes secondary verbal entry in definition block."
+    "notes": "Split from bundled OCR entry (was combined with a separate headword, Ja·dil su·a)."
+  },
+  {
+    "english": "To root.",
+    "garo": "Ja·dil su·a",
+    "pos": "v.",
+    "notes": "Split from bundled OCR entry (separate headword from Ja·dii, same source line)."
   },
   {
     "english": "To bewilder; stun; to be stupefied.",
@@ -53,10 +71,16 @@
     "pos": "n."
   },
   {
-    "english": "A snare; a springe; a noose; a trap. Ja·ga saa, v. To easnare; to lay a snare; to step up a trap; to set springes; to entrap.",
+    "english": "A snare; a springe; a noose; a trap.",
     "garo": "Ja·ga",
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+    "notes": "Split from bundled OCR entry (was combined with a separate headword, Ja·ga saa)."
+  },
+  {
+    "english": "To ensnare; to lay a snare; to set up a trap; to set springes; to entrap.",
+    "garo": "Ja·ga saa",
+    "pos": "v.",
+    "notes": "Split from bundled OCR entry (separate headword from Ja·ga, same source line). English gloss corrected: 'easnare'->'ensnare', 'step up a trap'->'set up a trap' (garbled OCR of ordinary English words, not Garo content)."
   },
   {
     "english": "The dust stuck on the foot and fallen on the floor. etc.",
@@ -134,7 +158,7 @@
   },
   {
     "english": "To make someone start with sur-prise or fear; to startle.",
-    "garo": "Jagipua (Ja-gipa-bua),",
+    "garo": "Jagipua (Ja-gipa-bua)",
     "pos": "v."
   },
   {
@@ -170,13 +194,14 @@
   {
     "english": "To startle; to alarm; to surprise.",
     "garo": "Jagoka",
-    "pos": "vt."
+    "pos": "vt.",
+    "notes": "Raka-distinguished from Ja·goka ('to die/decay as plants') below - different meaning confirms genuine minimal pair, not a duplicate headword despite the flip tool's note on the other entry."
   },
   {
     "english": "To die or decay as plants and trees.",
     "garo": "Ja·goka",
     "pos": "v.",
-    "notes": "Repeated headword."
+    "notes": "Raka-distinguished from Jagoka ('to startle/alarm/surprise') above - different meaning confirms genuine minimal pair, not a duplicate headword."
   },
   {
     "english": "To cause to startle.",
@@ -203,11 +228,5 @@
     "garo": "Ja·gongge",
     "pos": "adj.",
     "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry ends abruptly with 'bow-legged' at the bottom of the page."
-  },
-  {
-    "english": "Reflection (of some-",
-    "garo": "Jagring",
-    "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=Low] Entry cut off at the bottom of the page."
   }
 ]

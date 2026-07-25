@@ -1,0 +1,40 @@
+{
+  "source_page": "95",
+  "new_count": 42,
+  "exact_duplicate_count": 0,
+  "possible_conflict_count": 1,
+  "likely_raka_variant_count": 0,
+  "manual_review_count": 0,
+  "garo_keyed_near_duplicates": [
+    {
+      "normalized_garo": "jagoka",
+      "variants": [
+        {
+          "garo": "Jagoka",
+          "english": [
+            "to startle; to alarm; to surprise."
+          ]
+        },
+        {
+          "garo": "Ja·goka",
+          "english": [
+            "to die or decay as plants and trees."
+          ]
+        }
+      ]
+    }
+  ],
+  "possible_conflicts": [
+    {
+      "english": "foot-step; the sound of the foot-step.",
+      "incoming_garo": "Ja·gimbri",
+      "existing_garo": [
+        "Ja·birang"
+      ],
+      "existing_source": "unknown (pre-provenance-tracking entry)",
+      "likely_raka_variant": false,
+      "raka_variant_of": null
+    }
+  ],
+  "manual_review_items": []
+}

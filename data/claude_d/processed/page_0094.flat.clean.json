@@ -1,0 +1,187 @@
+[
+  {
+    "english": "leg; foot.",
+    "garo": "Ja·chok",
+    "pos": "n.",
+    "source_page": "94"
+  },
+  {
+    "english": "having the legs so much curved or bent inwards that they touch together in walking; knock-kneed.",
+    "garo": "Ja·cholchep",
+    "pos": "adj.",
+    "notes": "Editorial correction: source OCR gave two garbled variants of the same word ('carved'/'surved') across duplicate entries; 'curved' is the coherent reading given context (knock-kneed = bent legs). English-gloss correction only, no Garo data changed. Duplicate entry (same garo, near-identical gloss) merged.",
+    "source_page": "94"
+  },
+  {
+    "english": "to have yaws on the sole.",
+    "garo": "Ja·bik naa (soa ja·bik)",
+    "pos": "vi.",
+    "source_page": "94"
+  },
+  {
+    "english": "to sprain one's ankle.",
+    "garo": "Ja·binela",
+    "pos": "vi.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Multiple POS included in single entry group.",
+    "source_page": "94"
+  },
+  {
+    "english": "a sprain in the ankle caused by a false step.",
+    "garo": "Ja·binela",
+    "pos": "n.",
+    "notes": "POS corrected vi.->n. (this is the noun sense of the same headword); '-n.' OCR sub-def prefix stripped from english field.",
+    "source_page": "94"
+  },
+  {
+    "english": "foot-step; the sound of the foot-step.",
+    "garo": "Ja·birang",
+    "pos": "n.",
+    "source_page": "94"
+  },
+  {
+    "english": "the dark night after the full moon; complete darkness before new moon.",
+    "garo": "Jabitsim",
+    "pos": "n.",
+    "source_page": "94"
+  },
+  {
+    "english": "rubbish; refuse; old broken articles.",
+    "garo": "Jabol",
+    "pos": "n.",
+    "source_page": "94"
+  },
+  {
+    "english": "fool; foolish; silly.",
+    "garo": "Jabra (ja·bra)",
+    "pos": "adj.",
+    "source_page": "94"
+  },
+  {
+    "english": "to make difficult for a person to understand; to muddle and confuse; to bewilder.",
+    "garo": "Jabra-chaa",
+    "pos": "vi.",
+    "source_page": "94"
+  },
+  {
+    "english": "to get frighten; to be terrified.",
+    "garo": "Jabranga",
+    "pos": "vi.",
+    "notes": "Typo 'frighten' (frightened) preserved.",
+    "source_page": "94"
+  },
+  {
+    "english": "to expree one's dissatisfaction with what one is given or treatment one receives from another.",
+    "garo": "Jachaa",
+    "pos": "vi.",
+    "notes": "Typo 'expree' preserved.",
+    "source_page": "94"
+  },
+  {
+    "english": "to place oneself in unfavourable position which one cannot leave; to be left alone and destitute; to be stranded; to fail to attend; to fail to act; to miss.",
+    "garo": "Jachanga",
+    "pos": "vi.",
+    "source_page": "94"
+  },
+  {
+    "english": "the spur; the talon (of a bird of prey) cock's spur.",
+    "garo": "Ja·ching",
+    "pos": "n.",
+    "notes": "Text wraps from left to right column.",
+    "source_page": "94"
+  },
+  {
+    "english": "to lie down on one's back with legs bent.",
+    "garo": "Ja·chik-bo·rang gata",
+    "pos": "vi.",
+    "source_page": "94"
+  },
+  {
+    "english": "to kneel.",
+    "garo": "Ja·chik dipana, Ja·chik dem·a",
+    "pos": "vi.",
+    "source_page": "94"
+  },
+  {
+    "english": "to go dead and get stiff of the legs with sitting so long as to make legs useless for a moment; asleep of legs; numbed legs.",
+    "garo": "Ja·chimita",
+    "pos": "vi.",
+    "notes": "Split from bundled OCR entry (was combined with a noun sub-def under one headword).",
+    "source_page": "94"
+  },
+  {
+    "english": "numbness of legs or feet; sleeping of the feet.",
+    "garo": "Ja·chimita",
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense of Ja·chimita, same source line).",
+    "source_page": "94"
+  },
+  {
+    "english": "(moon) to grow smaller as the moon wance as it changes from full to its last quarter.",
+    "garo": "Ja chona",
+    "pos": "vi.",
+    "notes": "Typo 'wance' (wanes) preserved.",
+    "source_page": "94"
+  },
+  {
+    "english": "to gain to increase as the moon waxes.",
+    "garo": "Ja dala",
+    "pos": "vi.",
+    "source_page": "94"
+  },
+  {
+    "english": "to succeed; to take the place of; to come into by inheritance.",
+    "garo": "Ja·chong dongrika, Ja·chongrika",
+    "pos": "vi.",
+    "source_page": "94"
+  },
+  {
+    "english": "to walk closely behind another; to follow closely.",
+    "garo": "Ja·chrap ja·chrap re·rika",
+    "pos": "vi.",
+    "source_page": "94"
+  },
+  {
+    "english": "successor; substitute.",
+    "garo": "Ja·chong",
+    "pos": "n.",
+    "source_page": "94"
+  },
+  {
+    "english": "said of the under ground portion of a post that has been completely eaten by the white ants.",
+    "garo": "Ja·chota",
+    "pos": "v.",
+    "source_page": "94"
+  },
+  {
+    "english": "to stand on one's toes.",
+    "garo": "Ja·chroa",
+    "pos": "v.",
+    "source_page": "94"
+  },
+  {
+    "english": "mad; fool; idiot; stupid; silly.",
+    "garo": "Jada",
+    "pos": "adj.",
+    "notes": "Split from bundled OCR entry (was combined with a noun sub-def under one headword).",
+    "source_page": "94"
+  },
+  {
+    "english": "an idiot; a fool; a dolt; a blockhead.",
+    "garo": "Jada",
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense of Jada, same source line).",
+    "source_page": "94"
+  },
+  {
+    "english": "to make stupid or dull; to be deprived of sensi-bility; to stupefy; to bewilder.",
+    "garo": "Jada-changa",
+    "pos": "v.",
+    "source_page": "94"
+  },
+  {
+    "english": "foolishness; idiocy; madness.",
+    "garo": "Jada ong·ani",
+    "pos": "n.",
+    "source_page": "94"
+  }
+]

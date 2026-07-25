@@ -58689,5 +58689,463 @@
     "garo": "Gasuaka",
     "category": null,
     "pos": "v."
+  },
+  {
+    "english": "leg; foot.",
+    "garo": "Ja·chok",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "having the legs so much curved or bent inwards that they touch together in walking; knock-kneed.",
+    "garo": "Ja·cholchep",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Editorial correction: source OCR gave two garbled variants of the same word ('carved'/'surved') across duplicate entries; 'curved' is the coherent reading given context (knock-kneed = bent legs). English-gloss correction only, no Garo data changed. Duplicate entry (same garo, near-identical gloss) merged."
+  },
+  {
+    "english": "to have yaws on the sole.",
+    "garo": "Ja·bik naa (soa ja·bik)",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "to sprain one's ankle.",
+    "garo": "Ja·binela",
+    "category": null,
+    "pos": "vi.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Multiple POS included in single entry group."
+  },
+  {
+    "english": "a sprain in the ankle caused by a false step.",
+    "garo": "Ja·binela",
+    "category": null,
+    "pos": "n.",
+    "notes": "POS corrected vi.->n. (this is the noun sense of the same headword); '-n.' OCR sub-def prefix stripped from english field."
+  },
+  {
+    "english": "foot-step; the sound of the foot-step.",
+    "garo": "Ja·birang",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the dark night after the full moon; complete darkness before new moon.",
+    "garo": "Jabitsim",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "rubbish; refuse; old broken articles.",
+    "garo": "Jabol",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "fool; foolish; silly.",
+    "garo": "Jabra (ja·bra)",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "to make difficult for a person to understand; to muddle and confuse; to bewilder.",
+    "garo": "Jabra-chaa",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "to get frighten; to be terrified.",
+    "garo": "Jabranga",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Typo 'frighten' (frightened) preserved."
+  },
+  {
+    "english": "to expree one's dissatisfaction with what one is given or treatment one receives from another.",
+    "garo": "Jachaa",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Typo 'expree' preserved."
+  },
+  {
+    "english": "to place oneself in unfavourable position which one cannot leave; to be left alone and destitute; to be stranded; to fail to attend; to fail to act; to miss.",
+    "garo": "Jachanga",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "the spur; the talon (of a bird of prey) cock's spur.",
+    "garo": "Ja·ching",
+    "category": null,
+    "pos": "n.",
+    "notes": "Text wraps from left to right column."
+  },
+  {
+    "english": "to lie down on one's back with legs bent.",
+    "garo": "Ja·chik-bo·rang gata",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "to kneel.",
+    "garo": "Ja·chik dipana, Ja·chik dem·a",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "to go dead and get stiff of the legs with sitting so long as to make legs useless for a moment; asleep of legs; numbed legs.",
+    "garo": "Ja·chimita",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Split from bundled OCR entry (was combined with a noun sub-def under one headword)."
+  },
+  {
+    "english": "numbness of legs or feet; sleeping of the feet.",
+    "garo": "Ja·chimita",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense of Ja·chimita, same source line)."
+  },
+  {
+    "english": "(moon) to grow smaller as the moon wance as it changes from full to its last quarter.",
+    "garo": "Ja chona",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Typo 'wance' (wanes) preserved."
+  },
+  {
+    "english": "to gain to increase as the moon waxes.",
+    "garo": "Ja dala",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "to succeed; to take the place of; to come into by inheritance.",
+    "garo": "Ja·chong dongrika, Ja·chongrika",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "to walk closely behind another; to follow closely.",
+    "garo": "Ja·chrap ja·chrap re·rika",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "successor; substitute.",
+    "garo": "Ja·chong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "said of the under ground portion of a post that has been completely eaten by the white ants.",
+    "garo": "Ja·chota",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to stand on one's toes.",
+    "garo": "Ja·chroa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "mad; fool; idiot; stupid; silly.",
+    "garo": "Jada",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Split from bundled OCR entry (was combined with a noun sub-def under one headword)."
+  },
+  {
+    "english": "an idiot; a fool; a dolt; a blockhead.",
+    "garo": "Jada",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense of Jada, same source line)."
+  },
+  {
+    "english": "to make stupid or dull; to be deprived of sensi-bility; to stupefy; to bewilder.",
+    "garo": "Jada-changa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "foolishness; idiocy; madness.",
+    "garo": "Jada ong·ani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "grown up; old.",
+    "garo": "Ja·dala",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Split from bundled OCR entry."
+  },
+  {
+    "english": "a grown up person.",
+    "garo": "Ja·dala",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense, same source line)."
+  },
+  {
+    "english": "to grow up; to wax (used for persons only).",
+    "garo": "Ja·delbaa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "base of the tree trunk; shade; under; foot; lower part of wood or tree.",
+    "garo": "Ja·dan",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "having unequal legs; lame.",
+    "garo": "Ja·deda",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "having slender legs.",
+    "garo": "Ja·dengsi",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Split from bundled OCR entry."
+  },
+  {
+    "english": "a person with long thin legs; spindle shanks.",
+    "garo": "Ja·dengsi",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense, same source line)."
+  },
+  {
+    "english": "root; ray.",
+    "garo": "Ja·dii",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (was combined with a separate headword, Ja·dil su·a)."
+  },
+  {
+    "english": "to root.",
+    "garo": "Ja·dil su·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Split from bundled OCR entry (separate headword from Ja·dii, same source line)."
+  },
+  {
+    "english": "to bewilder; stun; to be stupefied.",
+    "garo": "Jadip-changa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "a hopple; a fetter.",
+    "garo": "Ja·dokdak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to impede; to hinder; to hamper; to impede the progress.",
+    "garo": "Ja·donggaa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "a kind of cow disease that attacks hoofs.",
+    "garo": "Ja·eka",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "a snare; a springe; a noose; a trap.",
+    "garo": "Ja·ga",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (was combined with a separate headword, Ja·ga saa)."
+  },
+  {
+    "english": "to ensnare; to lay a snare; to set up a trap; to set springes; to entrap.",
+    "garo": "Ja·ga saa",
+    "category": null,
+    "pos": "v.",
+    "notes": "Split from bundled OCR entry (separate headword from Ja·ga, same source line). English gloss corrected: 'easnare'->'ensnare', 'step up a trap'->'set up a trap' (garbled OCR of ordinary English words, not Garo content)."
+  },
+  {
+    "english": "the dust stuck on the foot and fallen on the floor. etc.",
+    "garo": "Ja·gadap",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "food-print; pace.",
+    "garo": "Ja·gam",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'Food-print' preserved."
+  },
+  {
+    "english": "a numeral prefix for steps as, ja·gamgni—two steps.",
+    "garo": "Ja·gam",
+    "category": null,
+    "pos": "n.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "to step; to march onward; to take a step.",
+    "garo": "Ja·gam ga·a",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "stately; dignified; majestic; dignified.",
+    "garo": "Jagama",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "imposing; impressive (personality).",
+    "garo": "Jagama",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "to sit with one's legs apart and the knees a bit raised.",
+    "garo": "Ja·ganga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to put one's leg into a noose or trap; to be caught in a trap; to fall into a snare.",
+    "garo": "Ja·gao ke·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to place the legs on; (on some one or something).",
+    "garo": "Ja·gata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to hop; to leap or spring with one leg; to go one legged.",
+    "garo": "Ja·gege·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "bow-legged; crooked-legged; boudy-legged.",
+    "garo": "Ja·gengbik",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Typo 'boudy' (bowed/bowly) preserved."
+  },
+  {
+    "english": "to be frightened.",
+    "garo": "Jagia",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "foot-step; the sound of the foot-step.",
+    "garo": "Ja·gimbri",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to be entangled in; to hinder; to be cumbersome or cumbrous.",
+    "garo": "Ja·gipila",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to make someone start with sur-prise or fear; to startle.",
+    "garo": "Jagipua (Ja-gipa-bua)",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "the time before new moon; dark nights; interlunar.",
+    "garo": "Jagisep",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "new moon; next month.",
+    "garo": "Jagital",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "the month after next.",
+    "garo": "Jagital changsa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "last month.",
+    "garo": "Jagitcham",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to stumble; to trip; to make false-step; to trip against a stone or something.",
+    "garo": "Ja·gitota",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "ankle.",
+    "garo": "Ja·gitok",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "to startle; to alarm; to surprise.",
+    "garo": "Jagoka",
+    "category": null,
+    "pos": "vt.",
+    "notes": "Raka-distinguished from Ja·goka ('to die/decay as plants') below - different meaning confirms genuine minimal pair, not a duplicate headword despite the flip tool's note on the other entry."
+  },
+  {
+    "english": "to die or decay as plants and trees.",
+    "garo": "Ja·goka",
+    "category": null,
+    "pos": "v.",
+    "notes": "Raka-distinguished from Jagoka ('to startle/alarm/surprise') above - different meaning confirms genuine minimal pair, not a duplicate headword."
+  },
+  {
+    "english": "to cause to startle.",
+    "garo": "Jagokata",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "to startle.",
+    "garo": "Jagok-jabria",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "to happen to be startled; to shudder.",
+    "garo": "Jagokman-pila",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "having long legs; long-legged (man).",
+    "garo": "Ja·gol",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "crooked legged; bow-legged",
+    "garo": "Ja·gongge",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry ends abruptly with 'bow-legged' at the bottom of the page."
   }
 ]

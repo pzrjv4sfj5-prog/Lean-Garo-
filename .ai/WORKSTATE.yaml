@@ -1,5 +1,5 @@
 repository:
-  head: 4c95238
+  head: fcfa89e
   last_updated: "2026-07-25"
   test_status: "106/106 regression tests passing, build clean, lint clean (0 errors - the 8 flagged errors were resolved this session, see commit 4c95238)"
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -71,22 +71,25 @@ claude_a:
     engineering/scripts code, NOT my domain to fix). Flagged the 8
     lint errors to Claude B in SESSION_BOOTSTRAP.md's joint work
     package (was initially only mentioned in chat, corrected same
-    session when asked to confirm it was actually committed). Also
-    reviewed a Gemini OCR format proposal (batch wrapper +
-    repository_findings block) - kept the good parts (batching,
-    pos_groups senses splitting), flagged repository_findings as
-    unverifiable ("repository_head":"HEAD" is a placeholder, not a
-    real commit ref) and sent correction instructions via Project
-    Owner, not yet applied. Confirmed lint fix from Claude B was
-    partial - 6/8 fixed, 2 parser errors on import-attribute syntax
-    (`with { type: 'json' }`) remain, engineering/tooling, not mine.
+    session when asked to confirm it was actually committed). Confirmed
+    lint fix from Claude B was partial - 6/8 fixed, 2 parser errors on
+    import-attribute syntax (`with { type: 'json' }`) remain,
+    engineering/tooling, not mine.
     Ran evidence-first corpus-internal triage on NV-027 ("angry" 6
     candidates): narrowed to 2 genuinely open (bi·ka so·a, hel·hel) by
     checking UNVERIFIED tags + multi-sense richness in
     master_dictionary.json - 3 candidates (Ka-a soa, Ka-chaa, Ka-a
     chakna amja) confirmed real/attested without needing Thangseng.
     Renumbered docs/THANGSENG_QUESTION_BATCH_20260725.md accordingly
-    (42 -> 39 questions).
+    (42 -> 39 questions). Processed pages 94 and 95 in full (manifest
+    had marked them "processed" from Claude D's staging step only -
+    actually reviewed, cleaned, and promoted them this session): page
+    94, 29/31 promoted (2 within-page duplicate drafts dropped, 2
+    bundled entries split, 1 English-gloss OCR typo corrected); page
+    95, 43/40 promoted (2 bundled two-headword entries split, 2 bundled
+    adj./n. entries split, 1 raka-minimal-pair mislabeled as duplicate
+    corrected, 1 legitimate English-synonym conflict logged in
+    known_dictionary_conflicts.json, 1 incoherent cut-off entry held).
   progress: >-
     This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
     actual repo state before this update - HEAD, test count, and this
@@ -124,10 +127,9 @@ claude_a:
   waiting_for: >-
     Thangseng answers to the 39-question consolidated batch (narrowed
     from 42 on 2026-07-25 - see NV-027). Claude B on RULE-040 ("right" 3-way engine-side
-    split) and RC-CANDIDATE-027 (case-key clobber, ~470 pairs,
-    scoping-only so far). Claude D on pages 34/74 (duplicate
-    resolution, blocked until actual files are pushed) and 75-77/94/
-    95/100/101 (not yet started).
+    split), RC-CANDIDATE-027 (case-key clobber, ~470 pairs,
+    scoping-only so far), and the 2 remaining lint parser-errors. Claude D on pages 34/74 (duplicate
+    resolution, blocked until actual files are pushed) and 100/101 (not yet started). Pages 75-77 and 94-95 done.
   expected_output: "Markdown/JSON files committed to docs/ and dictionary data, per role boundary - Claude A never touches engine code (Claude B) or does OCR ingestion (Claude D)"
 
 claude_b:

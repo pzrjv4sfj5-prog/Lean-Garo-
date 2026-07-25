@@ -1121,3 +1121,8 @@ quality, re-check these against the new capture.
   entry if imported as-is. Not promoted. No native-validation
   dependency — this is a data-completeness issue, not a linguistic
   question, so it doesn't belong in THANGSENG_NATIVE_VALIDATION.md.
+
+- **Page 95, `Jagring` (n.), gloss "Reflection (of some-"** — held
+  2026-07-25 (Claude A). OCR note: "Entry cut off at the bottom of the
+  page." Literally trails off mid-word, no coherent definition
+  captured. Same reasoning as the page 75 hold above.
