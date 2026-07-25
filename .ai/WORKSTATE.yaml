@@ -1,5 +1,5 @@
 repository:
-  head: 30b2dd2
+  head: 7eb59f1
   last_updated: "2026-07-25"
   test_status: "114/114 regression tests passing, build clean, lint clean. translationEngine.js modularization (BACKLOG-003) Phase 1-3 of 8 done, verified zero behavior change via stress-benchmark diff each phase. Phase 5 (grammarEngine.js) deliberately deferred to a fresh session - highest-risk phase, extract-method + diff-per-substep discipline. Phase 7 not started (no de-risking value for Phase 5, done independently later)."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -99,6 +99,15 @@ claude_a:
     "lint still broken" state on my end was just my own outdated
     node_modules (Claude B's espree upgrade fix was actually complete
     and correct) - re-ran npm install before concluding anything.
+    Adopted docs/templates/MIGRATION_PROPOSAL_TEMPLATE.md (Project
+    Owner directive - Why/Current State/Target State/Migration
+    Strategy/Ownership/Backward Compatibility/Completion Criteria/
+    Verification/Rollback Plan) as the standing structure for
+    significant proposals; retrofitted
+    docs/PROPOSAL_GRAMMAR_RULE_SCHEMA_20260725.md to it as the first
+    real example. Noted Claude B's Phase 5 sequencing suggestion
+    (VALIDATION_CORPUS linkage before grammarEngine.js extraction) -
+    not actioned this session, flagged for next pickup.
   progress: >-
     This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
     actual repo state before this update - HEAD, test count, and this

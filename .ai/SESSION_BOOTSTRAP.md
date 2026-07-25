@@ -517,6 +517,16 @@ The repository is always the source of truth over conversation history.
 8. Check `docs/PENDING_*` and `docs/pending_corrections.md` for anything
    awaiting action.
 
+## Significant proposals must use the migration template (Project Owner directive, 2026-07-25)
+
+Any significant architectural, workflow, schema, or documentation
+change — from either role — follows
+`docs/templates/MIGRATION_PROPOSAL_TEMPLATE.md`: Why, Current State,
+Target State, Migration Strategy, Ownership, Backward Compatibility,
+Completion Criteria, Verification, Rollback Plan. Not for routine
+dictionary/grammar content edits, which have their own flow already.
+First applied example: `docs/PROPOSAL_GRAMMAR_RULE_SCHEMA_20260725.md`.
+
 ## Session close — WORKSTATE.yaml update is mandatory (Project Owner directive, 2026-07-25)
 
 Both roles: before ending a session, update your section of
