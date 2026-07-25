@@ -650,14 +650,16 @@ for their individual write-ups.
 
 | Module | Responsibility | Depends on | Inputs | Outputs |
 |---|---|---|---|---|
-| `translationEngine.js` | Everything: normalization, tokenization, grammar analysis, dictionary resolution, suffix generation, sentence assembly | `compiled_dict.json`, `compiled_dict_alternates.json`, `category_index.json`, `corrections.json`, `phrase_maps.js`, `garo_classifier.js`, `number_engine.js` | raw string | `{garo, method, confidence}` (named export `translate`); platform-adapter shape from default export |
+| `translationEngine.js` | Orchestration: normalization, tokenization, grammar analysis, suffix generation, sentence assembly (lexical lookup now delegated, see `lookupEngine.js` below) | `lookupEngine.js`, `utils.js`, `compiled_dict_alternates.json`, `category_index.json`, `phrase_maps.js`, `garo_classifier.js`, `number_engine.js` | raw string | `{garo, method, confidence}` (named export `translate`); platform-adapter shape from default export |
+| `lookupEngine.js` | Lexical lookup + corrections precedence — `lookup`, `lookupGaro`, `EN_INDEX`, `corrections` (2026-07-25, Phase 2 of BACKLOG-003, extracted verbatim, zero logic change) | `compiled_dict.json`, `data/corrections.json` | word/phrase string | Garo string or `null` |
+| `utils.js` | Pure, dependency-free helpers — `levenshtein` (2026-07-25, Phase 1 of BACKLOG-003) | none | — | — |
 | `garo_classifier.js` | Numeral classifier system (mang·/sak·/king/jol/pang/dot/ge·), number-word parsing | `number_engine.js` (implied for number words) | noun + count | classifier-suffixed phrase or `null` |
 | `number_engine.js` | English number word / digit → Garo number word | none | number | Garo numeral string |
 | `data/phrase_maps.js` | Multi-word idiomatic phrase lookup, separate from single-word dictionary | none | phrase string | Garo string or `null` |
 | `data/corrections.json` | Native-speaker-confirmed exact overrides — highest priority everywhere | none | — | flat `{english: garo}` map |
 | `prepare-data.js` (build-time) | Merges `master_dictionary.json` + `garo_dictionary.json` + `final_entries.json` + others → `compiled_dict.json` + `compiled_dict_alternates.json` + `category_index.json` | all source dictionary JSON files | — | 3 generated JSON files (checked into git, but overwritten every build) |
 | `test-dictionary.js` (build-time) | Validates compiled dictionary integrity + 9 blocking grammatical-correction checks | `compiled_dict.json` | — | pass/fail, part of `npm run build` |
-| `tests/unit/translationEngine.test.js` | 49-case regression suite (grows with every confirmed rule) | `translationEngine.js` (named exports) | — | pass/fail, wired into `npm run build` and CI |
+| `tests/unit/translationEngine.test.js` | 106-case regression suite (grows with every confirmed rule) | `translationEngine.js` (named exports) | — | pass/fail, wired into `npm run build` and CI |
 | `src/pages/Translator.jsx` | UI: input/output, keyboard shortcuts, a11y, breakdown display | default export of `translationEngine.js` | user keystrokes | rendered translation + grammar panel |
 | `src/pages/Dictionary.jsx`, `Phrases.jsx`, `VerbsGrammar.jsx` | Browsable dictionary/phrase/grammar reference UIs | `getAllCategories`/`searchVocabulary`/`getCategoryVocabulary` | — | rendered lists |
 | `server.js` | Express static file server for production deploy | none (Gemini import removed 2026-07-05) | — | serves `dist/` |
@@ -697,6 +699,68 @@ morphology logic (`applyTense`/`applyNegation`) is still inline JS — it's
 a function, not a lookup table, so it doesn't fit this same mechanical
 pattern and needs its own design (likely a rule-description format the
 function interprets, rather than a flat key-value JSON). Not started.
+
+---
+
+### BACKLOG-003 — translationEngine.js Modularization (engineering audit, 2026-07-25)
+
+**Status: Phase 1 + Phase 2 of 8 DONE (2026-07-25).** `utils.js`
+(`levenshtein`) and `lookupEngine.js` (`lookup`, `lookupGaro`,
+`EN_INDEX`, `corrections`) extracted verbatim, zero logic change.
+Verified via byte-identical diff of the full 237-sentence stress
+benchmark before/after (`git stash` A/B comparison), plus 106/106
+unit tests, `npm run lint` clean, repository-intelligence Check A–D
+clean. `translationEngine.js`: 1130 → 1093 lines.
+
+**Objective:** `translationEngine.js` had grown to 1130 lines handling
+lexical lookup, correction precedence, grammar rules, morphology,
+classifier logic, sentence assembly, normalization, and fallbacks all
+in one file — no internal module boundaries, and (per the 2026-07-25
+"he works" incident logged in `SESSION_BOOTSTRAP.md`) coupling between
+functions that wasn't visible from reading any one function in
+isolation. Goal is to reduce that risk without changing runtime
+behavior anywhere.
+
+**Full planned phase order** (each phase depends only on prior phases
++ existing data files, never a later phase — see the full audit for
+per-phase dependency/risk detail):
+1. ✅ `utils.js` — pure helpers, no dependents to break.
+2. ✅ `lookupEngine.js` — lexical lookup + corrections precedence.
+3. `morphologyEngine.js` — `applyTense`, `applyNegation`,
+   `findVerbForm`, `stripToStem`. Medium risk: this is exactly where
+   the "he works" hidden-coupling incident happened, so migration
+   should be followed by a full stress-benchmark diff, not just
+   `npm test`.
+4. *(already done, prior sessions)* `garo_classifier.js` /
+   `number_engine.js` — cited as existing precedent that this pattern
+   works in this codebase.
+5. `grammarEngine.js` — `analyzeGrammar` (currently ~310 lines, the
+   single largest function in the file) + `tryWithoutGijaConstruction`.
+   Highest risk in the roadmap — recommend pure extract-method only
+   (named sub-steps in the same order), full stress-benchmark diff
+   before/after every extracted sub-step, done in its own session.
+6. `sentenceBuilder.js` — `assembleSentenceSOV`, `assembleGrammar`,
+   `translateIfClause`, `translateMultiClause`. Should also resolve
+   (or document) the current overlap between `assembleSentenceSOV` and
+   `assembleGrammar` — unclear from the code alone why both exist.
+7. `normalizationEngine.js` — `normalizeInput`, `STOP_WORDS`,
+   `AUXILIARY_SKIP`, `MID_JOIN_CONNECTIVES`, `fuzzyMatch`. Low risk.
+8. `translationEngine.js` becomes orchestrator-only — just `translate()`
+   (the priority cascade) + the public query API, importing from all
+   of the above. Public interface (`translate`, `analyzeGrammar`,
+   `getAllVocabulary`, etc.) unchanged throughout every phase.
+
+**Explicitly not planned:** a separate "Correction Engine" or "Rule
+Engine" module — corrections precedence is intrinsic to
+`lookupEngine.js` (one function, not a subsystem), and grammar rules
+live entirely inside `analyzeGrammar` with no separable rule-table;
+inventing that boundary would be restructuring for its own sake.
+
+**Verification standard for every phase:** `npm test` (106/106),
+`npm run lint` (0 errors), `npm run build` (repository-intelligence
+Check A–D clean), and a byte-identical `git stash` A/B diff of
+`tests/benchmarks/stress_237.mjs` — not just the unit suite, since the
+unit suite doesn't cover every sentence shape the engine handles.
 
 **Unexpected finding from this work:** extracting `PURPOSE_MAP` required
 verifying every entry was still reachable-and-correct before treating the

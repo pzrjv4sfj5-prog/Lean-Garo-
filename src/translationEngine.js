@@ -18,53 +18,17 @@
  * (Gemini fallback formerly step 10, removed 2026-07-05 — see docs/ARCHITECTURE.md §9)
  */
 
-import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
 import ALTERNATES_RAW from './compiled_dict_alternates.json' with { type: 'json' };
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
-import correctionsRaw from './data/corrections.json' with { type: 'json' };
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import POSSESSIVES from './data/possessives.json' with { type: 'json' };
-// Shadow index: apostrophe-stripped keys for typo tolerance (lets go -> let's go)
-const corrections = { ...correctionsRaw };
-for (const [k, v] of Object.entries(correctionsRaw)) {
-  const stripped = k.toLowerCase().replace(/['’]/g, '');
-  if (stripped !== k.toLowerCase() && !corrections[stripped]) corrections[stripped] = v;
-}
 import { lookupPhrase } from './data/phrase_maps.js';
 import { countNoun, parseCountingPhrase, NUMBER_WORDS } from './garo_classifier.js';
+import { levenshtein } from './utils.js';
+import { corrections, normalizeEntry, EN_INDEX, lookup, lookupGaro } from './lookupEngine.js';
 // Gemini import removed 2026-07-05 (dead fallback, see step 10 below)
-
-// Index build — support both string and array format
-function normalizeEntry(val) {
-  if (!val) return null;
-  if (typeof val === 'string') return { garo: val, pos: null, category: null };
-  if (Array.isArray(val)) return val[0];
-  return val;
-}
-
-const EN_INDEX = {};
-for (const [key, val] of Object.entries(compiledDictRaw)) {
-  EN_INDEX[key.toLowerCase().trim()] = val;
-}
-
-function lookup(key) {
-  const entry = EN_INDEX[key.toLowerCase().trim()];
-  return entry ? normalizeEntry(entry) : null;
-}
-
-function lookupGaro(key) {
-  // Check corrections.json first — single-word keys were previously
-  // bypassed here since EN_INDEX is built only from compiled_dict.json.
-  // This meant confirmed corrections only took effect in the top-level
-  // translate() fast-path, not in findVerbForm/grammar-assembly which
-  // call lookupGaro() directly.
-  const k = key.toLowerCase().trim();
-  if (corrections[k]) return corrections[k];
-  const e = lookup(k);
-  return e ? e.garo : null;
-}
 
 const STOP_WORDS = new Set([
   'a','an','the','is','are','was','were','be','been','being',
@@ -669,14 +633,6 @@ function assembleSentenceSOV(words, isNegative = false, detectedTense = 'present
     if (ongja) nonVerbs.unshift(ongja);
   }
   return [...nonVerbs, ...verbs].join(' ');
-}
-
-function levenshtein(a, b) {
-  const m = a.length, n = b.length;
-  const dp = Array.from({length: m+1}, (_,i) => Array.from({length: n+1}, (_,j) => i===0?j:j===0?i:0));
-  for (let i=1;i<=m;i++) for (let j=1;j<=n;j++)
-    dp[i][j] = a[i-1]===b[j-1] ? dp[i-1][j-1] : 1+Math.min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1]);
-  return dp[m][n];
 }
 
 function fuzzyMatch(input) {
