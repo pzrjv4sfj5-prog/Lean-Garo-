@@ -72,6 +72,16 @@
       "affix_excluded": 0,
       "flagged_for_review": 6,
       "note": "43 promoted 2026-07-25 (PL-0001797..0001839, incl. 3 splits). Split 2 bundled two-headword entries (Ja·dii/Ja·dil su·a, Ja·ga/Ja·ga saa) and 2 bundled adj./n. entries. Fixed Ja·ga saa English gloss (garbled OCR words corrected). Confirmed Jagoka/Ja·goka as genuine raka-minimal-pair, not duplicate. Ja·gimbri vs. existing Ja·birang logged as legitimate English-synonym conflict in known_dictionary_conflicts.json. 1 held: 'Jagring' (n.) - gloss cut off mid-word ('Reflection (of some-'), incoherent, not imported."
+    },
+    {
+      "page": 100,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0100.flat.json",
+      "source_entries": 42,
+      "flipped_rows": 44,
+      "flat_entries": 44,
+      "affix_excluded": 0,
+      "flagged_for_review": 6
     }
   ]
 }
