@@ -71,7 +71,22 @@ claude_a:
     engineering/scripts code, NOT my domain to fix). Flagged the 8
     lint errors to Claude B in SESSION_BOOTSTRAP.md's joint work
     package (was initially only mentioned in chat, corrected same
-    session when asked to confirm it was actually committed).
+    session when asked to confirm it was actually committed). Also
+    reviewed a Gemini OCR format proposal (batch wrapper +
+    repository_findings block) - kept the good parts (batching,
+    pos_groups senses splitting), flagged repository_findings as
+    unverifiable ("repository_head":"HEAD" is a placeholder, not a
+    real commit ref) and sent correction instructions via Project
+    Owner, not yet applied. Confirmed lint fix from Claude B was
+    partial - 6/8 fixed, 2 parser errors on import-attribute syntax
+    (`with { type: 'json' }`) remain, engineering/tooling, not mine.
+    Ran evidence-first corpus-internal triage on NV-027 ("angry" 6
+    candidates): narrowed to 2 genuinely open (bi·ka so·a, hel·hel) by
+    checking UNVERIFIED tags + multi-sense richness in
+    master_dictionary.json - 3 candidates (Ka-a soa, Ka-chaa, Ka-a
+    chakna amja) confirmed real/attested without needing Thangseng.
+    Renumbered docs/THANGSENG_QUESTION_BATCH_20260725.md accordingly
+    (42 -> 39 questions).
   progress: >-
     This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
     actual repo state before this update - HEAD, test count, and this
@@ -87,13 +102,14 @@ claude_a:
     - "2026-07-20..24: NV-013/025/028/035/036/037 closed; page 2 processed solo (Claude D token-exhaustion stopgap) and promoted, RC-CANDIDATE-028 logged"
     - "2026-07-25: RULE-041 root-cause fix; NV-039 (housefly) and NV-040 (fruit) closed; 42-question consolidated Thangseng batch compiled"
   next_action: >-
-    1) Commit the 42-question batch into docs/ as the canonical
-    pending-questions file (currently only sitting in chat output, per
-    Project Owner - not yet done, should not be left un-committed
-    indefinitely). 2) Correct RC-CANDIDATE-017's stale "Open,
-    unimplemented" status line in PENDING_REGRESSION_CASES.md to match
-    reality (fixed in 66cac87). 3) Update this file at the end of every
-    session going forward, not just when directly asked.
+    Batch committed and RC-017 fixed (both done 2026-07-25, see
+    current_task). Remaining: pages 34/74 duplicate resolution (blocked
+    on files being pushed) and pages 94/95/100/101 (not yet staged) -
+    both on hold, not actionable. Otherwise: continue evidence-first
+    corpus-internal triage of open NV items where possible (see NV-027
+    for the pattern - narrowed 5 candidates to 2 without needing
+    Thangseng, by checking which already carry UNVERIFIED tags vs.
+    which are richly multi-sense-attested in master_dictionary.json).
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
     - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"
@@ -106,8 +122,8 @@ claude_a:
     - "Do not re-triage RC-CANDIDATE-027 case-key instances individually as they're found - log the count, batch-handle with Claude B"
     - "Do not let this WORKSTATE.yaml go stale again - update at session close, every session"
   waiting_for: >-
-    Thangseng answers to the 42-question consolidated batch (see
-    next_action #1). Claude B on RULE-040 ("right" 3-way engine-side
+    Thangseng answers to the 39-question consolidated batch (narrowed
+    from 42 on 2026-07-25 - see NV-027). Claude B on RULE-040 ("right" 3-way engine-side
     split) and RC-CANDIDATE-027 (case-key clobber, ~470 pairs,
     scoping-only so far). Claude D on pages 34/74 (duplicate
     resolution, blocked until actual files are pushed) and 75-77/94/

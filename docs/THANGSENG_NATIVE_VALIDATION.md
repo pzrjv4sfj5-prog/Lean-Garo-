@@ -1437,7 +1437,8 @@ classifier-definitions request.
 
 ## NV-027 — "angry" register cluster: which of 6 candidates are real distinct-register synonyms vs. OCR noise
 
-**Status:** OPEN. Raised in Claude A review of
+**Status:** OPEN, narrowed 2026-07-25 (Claude A, corpus-internal
+review — see below). Raised in Claude A review of
 `docs/PENDING_LINGUISTIC_PROPOSAL_20260722_thangseng_batch.md` item 1.
 
 **Native response (verbatim):** "Yes, ka·o·nang·a is a general purpose
@@ -1446,15 +1447,46 @@ word for angry."
 **Determination:** `ka·o·nang·a` confirmed as the general-purpose
 production value — no change needed there. Thangseng was not asked
 about, and did not individually confirm or reject, the other five
-"angry" candidates already in `known_dictionary_conflicts.json`
-(`Ka-a chakna amja`, `Ka-a soa`, `bi·ka so·a`, `hel·hel`, `Ka-chaa`).
-**Open:** are these legitimate distinct-register synonyms (mild vs.
-intense anger, formal vs. colloquial) or OCR/transcription noise that
-should be pruned from the allowlist? Needs a follow-up native question
-listing all six explicitly.
+"angry" candidates already in `known_dictionary_conflicts.json`.
 
-**Repository components impacted:** none yet — `known_dictionary_conflicts.json`
-allowlist entries unchanged pending this follow-up.
+**Corpus-internal triage, 2026-07-25:** re-examined all five directly
+in `master_dictionary.json`. Three are richly attested and NOT marked
+`UNVERIFIED` in the data itself — real print-dictionary headwords, not
+OCR noise:
+- `Ka-a soa` — 4 coherent senses (Angry/rage/infurate[sic,
+  preserved typo for infuriate]/furious), all `adj.`, single source
+  entry with a faithfully-preserved OCR typo — a strong signal of a
+  real, clean scan, not garbled noise.
+- `Ka-chaa` — 4 coherent verbal senses (to be cross/to be angry/to get
+  angry with/to be annoyed or vexed), all `v.`, no OCR flags at all.
+- `Ka-a chakna amja` — 2 senses ("not to be able to restrain anger"
+  v., "Angry" adj.), OCR-confidence High. Morphologically plausible as
+  a compositional phrase (shares the `Ka-a` root with the two entries
+  above; the adjectival sense is a natural extension of "unable to
+  restrain anger").
+
+Two remain genuinely thin, still marked `UNVERIFIED/HIGH` in the data,
+and are the only two that still need a native answer on whether they're
+real:
+- `bi·ka so·a` — single entry, cross-references `hel·hel` and
+  `ka·o·nang·a` in its own notes.
+- `hel·hel` — single entry, reduplicated form. Plausible as a real
+  ideophone/intensifier (reduplication for intensity is a common
+  pattern), but no corroborating internal evidence either way.
+
+**What this does and doesn't resolve:** corpus evidence establishes
+the first three are real, attested words, not transcription noise —
+that half of the original question is settled without needing
+Thangseng. It does NOT establish register (which is more
+intense/formal/colloquial than `ka·o·nang·a`) — that nuance genuinely
+needs a native speaker regardless. The follow-up ask (see
+`docs/THANGSENG_QUESTION_BATCH_20260725.md` §L) is narrowed to just
+`bi·ka so·a` and `hel·hel` for the existence question, plus register
+framing for all five if/when Thangseng has time.
+
+**Repository components impacted:** `known_dictionary_conflicts.json`
+allowlist unchanged — no entries pruned, since corpus evidence
+supports keeping all five pending register confirmation.
 
 ---
 

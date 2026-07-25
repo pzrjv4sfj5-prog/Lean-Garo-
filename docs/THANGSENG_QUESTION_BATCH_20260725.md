@@ -77,46 +77,48 @@ notes which project item it closes.
 26. Is `ska` ("want") just a shorter/casual way of saying `sikenga`, or
     a genuinely different word?
 
-## L. "Angry" — six candidate words (NV-027)
+## L. "Angry" — two real candidate words (narrowed 2026-07-25, see NV-027)
 We already confirmed `ka·o·nang·a` is the everyday word for angry.
-These six other words came up in older data — for each, is it a real
-word for a different shade/intensity of angry, or not a real word at
-all (a mistake/mis-hearing)?
-27. `Ka-a chakna amja`
-28. `Ka-a soa`
-29. `bi·ka so·a`
-30. `hel·hel`
-31. `Ka-chaa`
+Corpus review found strong internal evidence that `Ka-a soa`,
+`Ka-chaa`, and `Ka-a chakna amja` are genuine words (well-attested,
+multi-sense, not OCR noise) — no need to re-ask if they're real,
+though their exact register (mild vs. intense, formal vs. casual) is
+still worth asking about if there's time. Only these two genuinely
+need the existence question:
+27. `bi·ka so·a` — is this a real word for angry?
+28. `hel·hel` — is this a real word too? (This one repeats a syllable
+    — `hel-hel` — is that a real way to say "very angry" in Garo, like
+    saying a word twice for emphasis?)
 
 ## M. "Tied/bound" pattern — does it generalize? (NV-029)
 We know "the dog is tied" = `Achakko kae donenga` (literally
 "dog-having-tied placed"). Does the same pattern work for other
 words?
-32. "The picture is hung [on the wall]" — how do you say that?
-33. "The key is hidden" — how do you say that?
-34. "The cup is broken" — how do you say that?
+29. "The picture is hung [on the wall]" — how do you say that?
+30. "The key is hidden" — how do you say that?
+31. "The cup is broken" — how do you say that?
 
 ## N. `ong·ja` vs `dongja` — free choice or not? (NV-030)
-35. You gave us both `ong·ja` and `dongja` for "is not" (as in "the
+32. You gave us both `ong·ja` and `dongja` for "is not" (as in "the
     book is not on the table"). Can you use either one any time, or
     does it depend on the sentence — like formality, or who you're
     talking to?
 
 ## O. Question marker `-ma` beyond future tense (NV-031)
-36. "Did you eat?" (past) — how do you ask that?
-37. "Are you eating?" (present) — and that?
-38. "Do you want the book?" (present, with an object) — and that?
+33. "Did you eat?" (past) — how do you ask that?
+34. "Are you eating?" (present) — and that?
+35. "Do you want the book?" (present, with an object) — and that?
 
 ## P. "Hot" — two more candidate words (NV-034)
-39. Is `gek·gek` a real word for "hot"? If so, when would you use it
+36. Is `gek·gek` a real word for "hot"? If so, when would you use it
     instead of `ding·a`?
-40. Is `jro·a` a real word for "hot"? Same question — when would you
+37. Is `jro·a` a real word for "hot"? Same question — when would you
     use it?
 
 ## Q. "Breakfast" loanword (NV-038)
-41. Is `na·sta` (sometimes written `nastha`) a word you'd actually use
+38. Is `na·sta` (sometimes written `nastha`) a word you'd actually use
     for "breakfast," even if it's borrowed from another language?
-42. Is there any other Garo way to say "breakfast" — even a
+39. Is there any other Garo way to say "breakfast" — even a
     descriptive phrase, like "morning food"?
 
 ---
