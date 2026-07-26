@@ -1,0 +1,31 @@
+id: RULE-003b
+title: "Imperative Subject-Drop"
+description: >-
+  Commands have no overt subject.
+dependencies:
+  - id: RULE-003
+    name: null
+    note: null
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - "Sengbo (stop!)"
+  # FLAGGED, not resolved (Claude A migration pass, 2026-07-26):
+  # this rule glosses Sengbo as "stop!" while other rules/NV-015 gloss
+  # it as an imperative "wait!" - not reconciled here per the
+  # instruction not to reinterpret rules during migration; noted as
+  # an observed inconsistency for separate follow-up.
+counterexamples:
+  note: "none"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+native_notes: "Source Rule 3."
+last_updated: "2026-07-25"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-003b"
+migration_flags:
+  - "Sengbo glossed here as 'stop!' vs. imperative 'wait!' elsewhere (NV-015, RULE-029) - not reconciled, flagged only, per migration scope."

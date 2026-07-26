@@ -1,0 +1,45 @@
+id: RULE-007
+title: "`Hai` Construction (Hortative)"
+description: >-
+  `Hai` = "let's," precedes a verb in `-na` (infinitive, standard) or
+  `-bo` (imperative-extended, "not so strict" register) form to form
+  a hortative.
+dependencies:
+  - id: RULE-015
+    name: "Stem Formation"
+    note: null
+  - id: RULE-029
+    name: "Hortative/Imperative -bo"
+    note: "shares the casual-register form"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+    confidence_note: "now 6 corpus examples across distinct verb roots, one of the better-evidenced rules in the catalogue"
+examples:
+  - 'Hai cha·na="let''s eat" (standard)'
+  - 'Hai cha·bo="let''s eat" (casual register — Thangseng''s own words)'
+  - 'Hai re·naha="let''s go"'
+  - 'Hai ring·na="let''s sing" (2026-07-14, raka confirmed, matches ring·="sing")'
+  - 'Hai chrokna="let''s dance" (2026-07-14, regular -na on Chroka)'
+  - 'Hai jrona="let''s swim" (2026-07-14, root jroa, corroborated independently by a printed-dictionary source the same day)'
+counterexamples:
+  note: "none recorded"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "implemented, 6 corpus examples (was 2)"
+native_notes: >-
+  Primary source: July 3-5 chat transcript — Thangseng explicitly:
+  "'bo' is essentially imperative. But it may also be used in a
+  hortative sense also... 'let us eat' is expressed by saying 'hai
+  cha·na'. But in a not so strict manner it may also be done by
+  saying 'hai cha·bo'." Additional examples confirmed 2026-07-14
+  (June 25 chat, relayed later): "Hai (an·ching) chrokna, hai (git)
+  ring·na, hai (chio) jrona" — the parenthetical subjects don't all
+  match known pronouns (an·ching="we" does; git/chio don't), flagged
+  in NV-013 rather than assumed.
+last_updated: "2026-07-25"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-007"

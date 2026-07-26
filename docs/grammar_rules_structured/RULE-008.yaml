@@ -1,0 +1,27 @@
+id: RULE-008
+title: "If-Clause Suffix `-ode`"
+description: >-
+  Subordinating suffix attached directly to verb stem for conditional
+  clauses.
+dependencies:
+  - id: RULE-015
+    name: null
+    note: null
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - 'cha·ode = "if eat"'
+  - 'Na·a cha·ode, bilakgen = "if you eat, you will be strong."'
+counterexamples:
+  note: "none confirmed"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+    note: "subordination is lower-frequency than core tense/negation"
+native_notes: "Source Rule 8."
+last_updated: "2026-07-25"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-008"

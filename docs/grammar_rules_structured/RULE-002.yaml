@@ -1,0 +1,25 @@
+id: RULE-002
+title: "Past/Perfect Unification"
+description: >-
+  `-aha` marks both simple past and perfect aspect; Garo does not
+  obligatorily split these.
+dependencies:
+  - id: RULE-015
+    name: null
+    note: "full-root-append exception"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - 'cha·aha = "ate" / "has eaten" (both, context-disambiguated)'
+counterexamples:
+  note: "none confirmed"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+native_notes: "Source Rule 2."
+last_updated: "2026-07-25"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-002"

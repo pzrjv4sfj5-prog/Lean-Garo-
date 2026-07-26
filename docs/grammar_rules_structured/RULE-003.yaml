@@ -1,0 +1,23 @@
+id: RULE-003
+title: "SOV Word Order"
+description: >-
+  Base sentence order is Subject-Object-Verb.
+dependencies: []
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - "Achak Angko chikaha (dog me bit)"
+counterexamples:
+  note: "Imperatives drop subject (RULE-003b)"
+  items:
+    - id: RULE-003b
+      description: "Imperative Subject-Drop"
+launch_priority:
+  - scope: null
+    tier: P0
+native_notes: "Source Rule 3."
+last_updated: "2026-07-25"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-003"
