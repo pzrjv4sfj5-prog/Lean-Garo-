@@ -130,6 +130,16 @@
         }
       ],
       "diff_summary": "Identical entries/glosses/POS; only notes-field wording on a handful of entries differs between A and B (OCR commentary variance, not content variance)."
+    },
+    {
+      "page": 7,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0007.flat.json",
+      "source_entries": 41,
+      "flipped_rows": 41,
+      "flat_entries": 41,
+      "affix_excluded": 0,
+      "flagged_for_review": 2
     }
   ]
 }
