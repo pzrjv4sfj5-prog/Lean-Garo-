@@ -317,17 +317,64 @@ function checkPendingLexiconIntegrity() {
 }
 
 
+// --- CHECK E: Unresolved placeholder values in master_dictionary.json ---
+// Found 2026-07-25 (Claude B, consistency audit) — 'wait': 'Damo / Sengbo'
+// was a literal uncommitted placeholder (two candidate translations
+// joined with ' / ', never a real value) that leaked verbatim into live
+// translation output (RC-CANDIDATE-015). Auditing found this is not an
+// isolated case: 51 more master_dictionary.json entries have the same
+// shape. Some are masked by an override elsewhere (corrections.json/
+// phrase_maps.js) and never surface; others leak the raw placeholder
+// text to users exactly like 'wait' did, verified directly (e.g.
+// 'father' -> 'Pa / Apa'). This check can prove the PATTERN is a defect
+// (Garo never uses literal ' / '/' or ' as output) without needing
+// linguistic authority to pick which candidate is correct — that part
+// is tracked separately for Claude A. Existing 51 are allowlisted here
+// (baseline, same pattern as Check C) so the build isn't broken by
+// pre-existing entries pending Claude A's per-word resolution; any NEW
+// placeholder-shaped entry fails the build immediately.
+function checkPlaceholderEntries() {
+  console.log('\n=== CHECK E: Unresolved placeholder values (master_dictionary.json) ===');
+  const dict = loadJSON('master_dictionary.json');
+  const baseline = new Set(loadJSON('src/data/known_placeholder_entries.json'));
+  const placeholderPattern = /\s\/\s|\s\bor\b\s/i;
+
+  let known = 0;
+  let fresh = 0;
+  const freshFindings = [];
+  const seenKeys = new Set();
+  for (const entry of dict) {
+    const k = (entry.english || '').toLowerCase().trim();
+    const v = (entry.garo || '').trim();
+    if (!k || !v || !placeholderPattern.test(v)) continue;
+    if (seenKeys.has(k)) continue; // one report per key, not per duplicate row
+    seenKeys.add(k);
+    if (baseline.has(k)) { known++; continue; }
+    fresh++;
+    freshFindings.push(`  NEW: "${k}" — "${v}"`);
+  }
+
+  freshFindings.slice(0, 20).forEach(l => console.log(l));
+  if (freshFindings.length > 20) console.log(`  ... and ${freshFindings.length - 20} more`);
+  console.log(`  ${known} known/allowlisted placeholder entr${known === 1 ? 'y' : 'ies'} (pending Claude A), ${fresh} NEW placeholder entr${fresh === 1 ? 'y' : 'ies'}.`);
+  if (fresh > 0) hasNewViolation = true;
+  return fresh;
+}
+
+
 console.log('Repository Intelligence validation (BACKLOG-006) starting...');
 const rakaCandidates = checkRakaLocality();
 const crossTableViolations = checkCrossTableConsistency();
 const dictSelfConflicts = checkDictionarySelfConsistency();
 const pendingLexiconProblems = checkPendingLexiconIntegrity();
+const placeholderEntries = checkPlaceholderEntries();
 
 console.log('\n=== Summary ===');
 console.log(`Raka locality candidates (report-only): ${rakaCandidates}`);
 console.log(`New cross-table violations: ${crossTableViolations}`);
 console.log(`New dictionary self-consistency conflicts: ${dictSelfConflicts}`);
 console.log(`Pending Lexicon structural problems: ${pendingLexiconProblems}`);
+console.log(`New unresolved-placeholder entries: ${placeholderEntries}`);
 
 if (hasNewViolation) {
   console.log('\nFAILED — new inconsistency detected. Fix the data or, if this is a');
