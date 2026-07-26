@@ -91,22 +91,71 @@ interpretation, and immediately visible to anyone using the
 translator for these very common, high-frequency words (family
 terms, greetings, pronouns).
 
-## Second item — `watch`/`see` cluster not yet reconciled with NV-011/012
+## Second item — `watch`/`see` cluster — full native data received (2026-07-26), NOT yet implemented
 
-Separate from the placeholder issue above: `master_dictionary.json`
-still has 4 unreconciled entries for `watch` (`go·ri`, `ni·a`,
-`ni·chak·a`, `ni·rik·a`, all tagged `UNVERIFIED/HIGH`) and one for
-`see` (`nik·a`, also `UNVERIFIED/HIGH`) — none show any correction
-annotation, unlike the `hot`/`jroa` entry from the same batch which
-was properly annotated. Your own commit summary for the recent batch
-states *"NV-011/012 (watch vs see) - genuinely different roots (Nia
-vs Nika); nisona relates to waiting-with-expectation, not
-substitutable for nina"* — but I can't tell from that summary alone
-which of the 4 `watch` candidates maps to which confirmed sense, so
-not touching these. Flagging so the same reconciliation that happened
-for `hot` can happen here too, whenever convenient — not urgent,
-these aren't confirmed to be leaking into live output the way the
-placeholder entries above are.
+**Update, 2026-07-26:** direct Thangseng transcript received (via
+Tridip, relayed by Project Owner), superseding the brief note this
+section originally had. Full paradigm:
+
+```
+Watch = nia
+Nienga = watching (continuous)
+Nibo = watch (imperative)
+Ninabe = don't watch (imperative)
+Niaha = watched (past)
+Nigen = will watch (future)
+Nijawa = will not watch (negative)
+```
+
+For "see" — Thangseng flagged this as genuinely harder, not a simple
+lookup:
+
+> Because nia can also mean see. But there's another word — nika —
+> that can also mean to see. But nika can also mean 'to find'... If I
+> give the meaning of nika as 'to see', the system will later ask for
+> clarification again when it finds that nika can also mean to find.
+
+Final answer given, explicitly marked context-dependent:
+
+```
+Nika = to see, to find
+Nikbo = find, see
+Niknabe = don't find
+Nikjawa = will not find, see
+Nikgen = will find, see
+Nikaha = found, saw
+```
+
+**Engineering due diligence done (2026-07-26, Claude B) — not a
+linguistic call, just checking consistency:** every single confirmed
+form above matches the engine's existing generic `applyTense` suffix
+system exactly, verified directly (`nia`→`nigen`/`nibo`/`ninabe`/
+`nijawa`/`niaha`/`nienga chim`, `nika`→ the same 5 forms) — zero
+special-case exceptions needed, unlike the `go` (RULE-030) and `wait`
+(RC-CANDIDATE-015) fixes, both of which needed a verb-specific
+exception. This means implementation itself will be low-risk *once*
+the headword questions below are settled — flagging as encouraging
+signal, not asking for less scrutiny on the parts that do need it.
+
+**What's still needed from you before I implement anything:**
+1. **Raka placement** — `master_dictionary.json` currently has `ni·a`
+   and `nik·a` (with raka marks) as existing `UNVERIFIED/HIGH`
+   entries for `watch`, close to but not identical to the unmarked
+   `nia`/`nika` in this transcript. Per this project's raka
+   discipline, I'm not guessing whether the transcript just omitted
+   marks casually or whether the confirmed spelling is genuinely
+   unmarked.
+2. **`watch` headword replacement** — 4 existing `master_dictionary.json`
+   entries for `watch` (`go·ri`, `ni·a`, `ni·chak·a`, `ni·rik·a`, all
+   `UNVERIFIED/HIGH`) need a decision on which (if any) get retired
+   vs. annotated as rejected, same treatment as `gek·gek`/hot.
+3. **`nika`'s dual sense** — whether `"see": "nika"` and `"find":
+   "nika"` should simply coexist as two ordinary dictionary entries
+   (engineering-trivial, both would resolve correctly independently)
+   or whether the "depends on context" caveat implies something more
+   — e.g. a disambiguation the engine can't currently make from a
+   single word alone. Your call on whether that's a real modeling
+   gap or a non-issue for this dictionary's purposes.
 
 ## Third item — corrections.json has 2 more, one of them structurally different
 

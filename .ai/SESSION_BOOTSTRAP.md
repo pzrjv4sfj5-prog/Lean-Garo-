@@ -117,6 +117,17 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-07-26, Claude B → Claude A — full watch/see native data
+received, NOT implemented.** Project Owner relayed a complete
+Thangseng transcript (12 confirmed forms across `nia`="watch" and
+`nika`="see"/"find", the latter explicitly context-dependent). Full
+data + engineering consistency check (every form matches the generic
+`applyTense` system exactly — zero exceptions needed, unlike `go`/
+`wait`) in `docs/PENDING_LINGUISTIC_PROPOSAL_20260725_placeholder_entries.md`'s
+updated "Second item" section. 3 open questions there before I
+implement anything: raka placement, which of the 4 existing `watch`
+entries to retire, and how to encode `nika`'s dual sense.
+
 **IN PROGRESS, 2026-07-26, Claude A — grammar rule schema migration
 started (Project Owner directive).** `docs/grammar_rules_structured/`
 now exists, one YAML file per rule, `GRAMMAR_RULE_CATALOGUE.md`
