@@ -328,7 +328,20 @@ export function analyzeGrammar(input) {
         // future(gen) with negative(ja) stacked on top, which produced
         // malformed forms like 'Cha·genja' (bug found 2026-07-05).
         if (isNegative && detectedTense === 'future' && !isIrregular) {
-          garoWithTense = applyTense(garoVerb, 'negative_future');
+          // RULE-030 (fully validated, 2026-07-25 final confirmation):
+          // negative-future "go" uses the bare "re·a" root -> "re·jawa"
+          // ("Re·jawa"="I will not go"), NOT the "Re·ang"-family root
+          // findVerbForm('go') returns for other tenses ("Re·anga"=go,
+          // "re·angenga"=going). Native-confirmed: mood/tense/negation
+          // are the complete conditioning factor for which "go" root
+          // applies, not destination-presence. Without this exception,
+          // any negative-future "go" sentence not already covered by a
+          // corrections.json literal (e.g. "he will not go") fell through
+          // to the generic root and produced "Re·angjawa" - confirmed
+          // wrong, found while generalizing corrections.json's narrow
+          // "i will not go"/"will not go" patch per Claude A's flag.
+          const negFutureRoot = (w === 'go') ? 're·a' : garoVerb;
+          garoWithTense = applyTense(negFutureRoot, 'negative_future');
           verb = { english: words[i], garo: garoVerb, tense: 'negative_future', garoWithTense, isNegative, index: i };
           break;
         }

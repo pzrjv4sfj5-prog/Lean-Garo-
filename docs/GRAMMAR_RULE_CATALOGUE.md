@@ -346,7 +346,7 @@ destination-conditioning to reconcile.
 **Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Direct NV-001 answer received 2026-07-18 (mood/tense/negation as primary conditioners; `-ang` scope narrowed to `re·a` specifically). Final confirmation 2026-07-25: destination presence/absence has virtually no effect on verb form in either direction, direct minimal-pair test. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001.
 **Validation Status:** Fully validated — mood/tense/negation confirmed as the complete conditioning factor; destination-presence surface pattern confirmed coincidental, not causal.
 **Confidence:** High.
-**Launch Priority:** P0 — high-frequency verb. `corrections.json`'s narrow patch (`will not go`/`i will not go` → `re·jawa`) can now be safely generalized if useful, since the pattern is confirmed, not just partially understood.
+**Launch Priority:** P0 — high-frequency verb. `corrections.json`'s narrow patch (`will not go`/`i will not go` → `re·jawa`) generalized 2026-07-25 (Claude B) — findVerbForm('go') was returning the wrong root ("Re·anga"-family) for negative-future tense on any subject not already covered by the literal correction; fixed with a scoped exception at the negative-future call site in `analyzeGrammar`. Verified across all subject pronouns.
 
 ---
 ### RULE-031 — Copula Inconsistency [PARTIALLY RESOLVED]

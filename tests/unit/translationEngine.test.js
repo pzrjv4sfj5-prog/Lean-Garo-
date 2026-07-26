@@ -152,6 +152,18 @@ const REGRESSION_CASES = [
   // regression guard so a future fix attempt has a clear before-state,
   // not silently making it worse in the meantime:
   { in: 'i will wait', expectGaro: 'Anga Damogen', expectMethod: ['grammar-assembly'] },
+
+  // RULE-030 generalization (2026-07-25, Claude B, per Claude A's
+  // flag that this was now safe to generalize): findVerbForm('go')
+  // returns the "Re·anga"-family root for all tenses, but native-
+  // confirmed negative-future "go" uses the bare "re·a" root instead
+  // ("Re·jawa"). Without an exception, any negative-future "go"
+  // sentence not already hardcoded in corrections.json (e.g. subjects
+  // other than "i") fell through to the generic root and produced
+  // "Re·angjawa" - confirmed wrong. Fixed with a narrow, verb-specific
+  // exception at the negative-future call site.
+  { in: 'he will not go', expectGaro: 'Ua re·jawa', expectMethod: ['grammar-assembly'] },
+  { in: 'they will not go', expectGaro: 'Uamang re·jawa', expectMethod: ['grammar-assembly'] },
 ];
 
 for (const c of REGRESSION_CASES) {
