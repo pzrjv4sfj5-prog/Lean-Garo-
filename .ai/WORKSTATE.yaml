@@ -1,5 +1,5 @@
 repository:
-  head: ebc4720
+  head: 12f0d89
   last_updated: "2026-07-25"
   test_status: "116/116 regression tests passing, build clean, lint clean. translationEngine.js modularization (BACKLOG-003) Phase 1-3 of 8 done, verified zero behavior change via stress-benchmark diff each phase. Phase 5 (grammarEngine.js) deliberately deferred to a fresh session - highest-risk phase, extract-method + diff-per-substep discipline. Phase 7 not started (no de-risking value for Phase 5, done independently later)."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -230,6 +230,30 @@ claude_a:
     scoping-only so far), and the 2 remaining lint parser-errors. Claude D on pages 34/74 (duplicate
     resolution, blocked until actual files are pushed) and 100/101 (not yet started). Pages 75-77 and 94-95 done.
   expected_output: "Markdown/JSON files committed to docs/ and dictionary data, per role boundary - Claude A never touches engine code (Claude B) or does OCR ingestion (Claude D)"
+  grammar_schema_migration:
+    status: in_progress
+    started: "2026-07-26"
+    location: "docs/grammar_rules_structured/RULE-XXX.yaml, one file per rule"
+    plan_doc: "docs/PROPOSAL_GRAMMAR_RULE_SCHEMA_20260725.md"
+    design_decision_made: >-
+      Examples/counterexamples fields kept as raw preserved text this
+      pass (Option C of 3 presented) - not reshaped into structured
+      {english,garo} pairs or split into sentence/morphology buckets.
+      That reshaping is deferred to the same later judgment pass
+      already planned for the 12 compound-claim rules. Project Owner
+      confirmed Option C, 2026-07-26.
+    migrated: ["RULE-001"]
+    total_rules: 40
+    verification_method: >-
+      Manual field-by-field comparison against
+      docs/GRAMMAR_RULE_CATALOGUE.md after each rule - not automated
+      tooling (that's Claude B's territory per the original proposal's
+      ownership split). RULE-001 caught one real fidelity issue during
+      this check: counterexamples was initially collapsed to an empty
+      array, silently losing the distinction between "none confirmed"
+      (a specific claim) vs. "N/A" vs. "documents an absence" (seen on
+      other rules) - fixed before considering the rule verified.
+    next_up: "RULE-002 (simple, single-claim - continue in catalogue order)"
 
 claude_b:
   status: active

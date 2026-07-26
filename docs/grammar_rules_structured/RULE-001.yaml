@@ -1,0 +1,36 @@
+id: RULE-001
+title: "Raka Locality"
+description: >-
+  Raka (·) exists only in verb/noun roots, never introduced by a suffix.
+dependencies:
+  - id: RULE-015
+    name: "Stem Formation Rule"
+    note: null
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  # Option C: preserved exactly as written in the source, no reshaping
+  # into {english, garo} pairs — these are morphological transformation
+  # notations, not translated sentences. See
+  # docs/PROPOSAL_GRAMMAR_RULE_SCHEMA_20260725.md for why.
+  - "cha·a→cha·aha (retained)"
+  - "dak→dakja (never introduced)"
+counterexamples:
+  # Option C treatment, same as examples: preserve the exact claim,
+  # don't collapse to an empty list. "none confirmed" is a specific
+  # evidentiary claim, distinct from "N/A" (seen on other rules) or
+  # "none — this rule documents an absence" (seen on others) — these
+  # mean different things and an empty array would lose that.
+  note: "none confirmed"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+native_notes: >-
+  Source Rule 1, foundational, re-confirmed via majority-vote audits
+  across 8+ separate root-consistency bugs found and fixed.
+last_updated: "2026-07-25"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-001"
