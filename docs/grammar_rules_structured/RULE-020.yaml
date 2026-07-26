@@ -1,0 +1,31 @@
+id: RULE-020
+title: "`an·tang` Reflexive/Self"
+description: >-
+  `an·tang` = "self"; `an·tangni` = genitive form ("of himself/herself,"
+  "his/her" when reflexive).
+dependencies:
+  - id: RULE-004
+    name: "Pronoun Paradigm"
+    note: null
+  - id: RULE-018
+    name: "Verbal-Adjective -gija"
+    note: "co-occurs in the fuller version of the same example: Ua an·tangni kamko dakgija dongaha = \"she remained without doing her own work\""
+claims:
+  - scope: null
+    status: verified
+    status_note: "one worked sentence, no counterexample"
+    confidence: medium
+    confidence_note: "single example, no test of reflexive vs. non-reflexive possessive contrast (e.g. \"she did her [someone else's] work\" to confirm an·tangni is specifically reflexive and not just general 3rd-person genitive)"
+examples:
+  - 'Ua an·tangni kamko dakjaha = "she/he did not do her/his [own] work" (breakdown: ua=he/she, an·tangni=of himself/herself, kamko=work, dakjaha=did not do)'
+counterexamples:
+  note: "none recorded"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+    note: "not currently wired into translationEngine.js at all (GRAMMAR_SPEC.md's own note: \"corrections.json only... gap\"). Engine implementation is Claude B's call."
+native_notes: "Primary source: notes.pdf transcript, point 3."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-020"

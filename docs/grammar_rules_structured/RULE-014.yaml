@@ -1,0 +1,28 @@
+id: RULE-014
+title: "`dongama` Existential \"There Is\""
+description: >-
+  `dongama` marks existential "there is" constructions, distinct from
+  possessive/locative uses of `dong`/`donga` documented elsewhere (see
+  `VERB_INVENTORY.md`'s `dong` entry).
+dependencies:
+  - id: null
+    name: "VERB_INVENTORY.md's dong entry"
+    note: "RULE-G7 existential possession is a related but distinct sense — worth checking whether dongama and plain donga differ systematically or are register/emphasis variants"
+claims:
+  - scope: null
+    status: needs_native_validation
+    confidence: low
+    confidence_note: "asserted but unattested"
+examples: []
+examples_note: "none with a full worked sentence in this repository yet - flagged as existing but unattested with a concrete example"
+counterexamples:
+  note: "none recorded"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P2
+    note: "not modeled in the engine"
+native_notes: "Source Rule 14, GRAMMAR_SPEC.md."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-014"

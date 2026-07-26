@@ -1,0 +1,34 @@
+id: RULE-015
+title: "Stem Formation"
+description: >-
+  Stem = root minus trailing letter. If the root carries raka, letters
+  after the raka are stripped but raka is retained; suffixes attach to
+  the stem, not the citation form.
+dependencies:
+  - id: RULE-001
+    name: "Raka Locality"
+    note: "underlies every tense/aspect/mood suffix rule in this catalogue"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+    confidence_note: "this is the generative mechanism every other verb/adjective suffix rule in this catalogue depends on"
+examples:
+  - "daka→dak+suffix (dakgen, dakbo, daknabe, dakjawa)"
+  - "cha·a→cha·+suffix (cha·gen, cha·bo)"
+  - "ka·a→ka·+suffix"
+  - "Compound verbs: only the second word changes (a·jak soka→a·jak sok+suffix)"
+counterexamples:
+  note: "Adding suffix without stripping (ka·a+jawa) is confirmed incorrect. Dropping raka (ka+jawa) is confirmed incorrect - raka must be retained even after stripping."
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "implicit throughout applyTense's generic branch, no dedicated catalogue entry until now - documentation gap, not an evidence gap"
+native_notes: >-
+  Source Rule 15, GRAMMAR_SPEC.md. Primary source: suffixes.pdf
+  transcript, gives the rule explicitly with worked examples for both
+  raka and non-raka roots, plus explicit incorrect forms.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-015"

@@ -1,0 +1,29 @@
+id: RULE-017
+title: "Simple Negation (`-ja`)"
+description: >-
+  `-ja` marks negation for both present and past reference; there is
+  no separate confirmed simple-past-negative suffix.
+dependencies:
+  - id: RULE-015
+    name: null
+    note: null
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - 'cha·ja = "does not / did not eat."'
+counterexamples:
+  note: "-jaha does NOT mean past negation (see RULE-025)."
+  items:
+    - id: RULE-025
+      description: "cross-reference, -jaha is cessative, not past negation"
+launch_priority:
+  - scope: null
+    tier: P0
+native_notes: >-
+  Source Rule 17, corrected 2026-07-05 from an earlier (wrong)
+  assumption that `-jaha` was past negation.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-017"

@@ -1,0 +1,36 @@
+id: RULE-013
+title: "Chim (Discontinued Past)"
+description: >-
+  `chim` is a free-standing post-verbal word (not a fused suffix)
+  marking "used to X" (with plain root) or "was X-ing, no longer"
+  (with continuous form).
+dependencies:
+  - id: RULE-001
+    name: null
+    note: null
+  - id: RULE-011
+    name: "continuous"
+    note: null
+  - id: RULE-015
+    name: null
+    note: "exception"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - 'ka·achim = "used to work"'
+  - 'poraienga chim = "was studying" (note: space)'
+counterexamples:
+  note: "Do not fuse as poraiengachim - confirmed wrong; the pastcont+chim construction is always two words."
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+native_notes: >-
+  Source Rule 13. This was a real, fixed implementation bug (fused
+  form produced incorrect output) — retained here as a explicit
+  counterexample for future implementers.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-013"
