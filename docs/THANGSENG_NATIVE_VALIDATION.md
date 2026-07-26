@@ -1075,9 +1075,29 @@ since `dong` isn't part of that group.
 
 ---
 
-## NV-015 — `senga`("wait") vs. `Da·mo`("wait," fixed expression) — RETRACTED 2026-07-25, see correction below
+## NV-015 — `senga`("wait") vs. `Da·mo`("wait," fixed expression) — CLOSED 2026-07-25 (third and final correction, full detail below)
 
-**RETRACTION, 2026-07-25 (Claude A, direct native correction via
+**FINAL CORRECTION, 2026-07-25 (Claude A, full native-validation
+document response — supersedes the same-day terse retraction below).**
+Direct, detailed, reasoned answer received: **`senga` = "to wait" and
+`senga` = "smell" are two different words, same spelling, same
+pronunciation — true homonyms** (not exclusively "smelly" as the
+terse mid-day correction stated). Explicit, unambiguous: *"Ua sengbo
+is an incorrect translation of 'he waits'."* Declarative "he waits" =
+**`Ua senga`** or **`Ua sengaia`** (the latter offered with "I think,"
+so treated as a possible variant, not promoted to the primary
+dictionary value). `Sengbo`/`Da·mo` confirmed imperative-only, with a
+clean general rule given directly: *"'bo' suffix is always imperative,
+unless there is another suffix after it"* — cross-confirmed
+independently via the `ska`/`sika` paradigm in the same response
+(`sikbo` = imperative "want," `sikgen`/`sikja` = non-imperative forms
+built on the same root without a bare `-bo`).
+`master_dictionary.json`'s `"wait"`/`"to wait"` corrected back to
+`senga` (from `Sengbo`, which was itself a correction of the original
+`senga` — three stages, all documented below, nothing deleted).
+
+**Second stage, 2026-07-25 (retracted above) — retained for history:**
+**RETRACTION (Claude A, direct native correction via
 Project Owner):** the 2026-07-12 transcript below was misread. Direct,
 unambiguous new correction received: **"senga is not wait, it's
 Sengbo or Damo"**; **"senga is the translation of smelly into Garo"**

@@ -2521,9 +2521,9 @@
   },
   {
     "english": "to wait",
-    "garo": "Sengbo",
+    "garo": "senga",
     "category": "general",
-    "notes": "CORRECTED 2026-07-25 (Claude A, direct native correction via Project Owner). RETRACTS the 2026-07-25 RC-CANDIDATE-015/NV-015 fix that set this to \"senga\" - that was wrong. Direct correction: \"senga is not wait, it's Sengbo or Damo\" and \"senga is the translation of smelly into Garo\" (senga only, not a wait/smelly homonym as the 2026-07-12 transcript's phrasing was read to imply). See NV-015 update and RC-CANDIDATE-015 status for full history - not deleted, corrected in place."
+    "notes": "CORRECTED 2026-07-25 (Claude A, third pass on this entry - full native-validation document response, direct and detailed). senga = 'to wait' and senga = 'smell' are two DIFFERENT WORDS, same spelling, same pronunciation - true homonyms (not one polysemous word, and not exclusively 'smelly' as an earlier same-day terse correction stated - that terse correction is now itself superseded by this fuller, reasoned response). Da·mo/Sengbo confirmed imperative-only ('Ua sengbo' explicitly rejected as wrong for declarative 'he waits'; rule stated directly: '-bo suffix is always imperative, unless there is another suffix after it', with cross-confirming example 'cha·boma? = Should (I) eat?'). See NV-015 for full three-stage correction history - not deleted at any stage, each correction documented in place."
   },
   {
     "english": "station / stop",
@@ -3647,9 +3647,9 @@
   },
   {
     "english": "wait",
-    "garo": "Sengbo",
+    "garo": "senga",
     "category": "general",
-    "notes": "CORRECTED 2026-07-25 (Claude A, direct native correction via Project Owner). RETRACTS the 2026-07-25 RC-CANDIDATE-015/NV-015 fix that set this to \"senga\" - that was wrong. Direct correction: \"senga is not wait, it's Sengbo or Damo\"; \"senga is the translation of smelly into Garo\" (only, not also wait). Sengbo = senga root + -bo imperative/hortative suffix (RULE-029) - already independently attested in the existing \"wait a moment\": \"Damo / Gisep sengbo\" entry, unchanged, which corroborates this correction rather than conflicting with it. Da·mo remains valid (unchanged, corrections.json). Unresolved: the original NV-015 transcript's \"Anga senggen\" = \"I will wait\" claim is now uncertain - not deleted, but should not be trusted as-is; needs re-verification, not silently carried forward or silently guessed at a replacement."
+    "notes": "CORRECTED 2026-07-25 (Claude A, third pass on this entry - full native-validation document response, direct and detailed, supersedes the same-day terse correction). senga = 'to wait' and senga = 'smell' are two DIFFERENT WORDS, same spelling and pronunciation - true homonyms. Explicit confirmation: 'Ua sengbo is an incorrect translation of he waits'; declarative 'he waits' = 'Ua senga' or 'Ua sengaia'. Da·mo/Sengbo confirmed imperative-only (RULE-029, '-bo suffix is always imperative unless another suffix follows it', cross-confirmed via ska/sika paradigm: sikbo='want'(imperative) vs. sikgen/sikja etc. for non-imperative forms). Da·mo remains valid, unchanged, for genuine imperative 'Wait!' via corrections.json. See NV-015 for the full three-stage correction history - nothing deleted, each stage documented in place, not just the final answer."
   },
   {
     "english": "quick / hurry",

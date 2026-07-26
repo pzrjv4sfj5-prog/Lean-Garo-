@@ -354,7 +354,26 @@ attempted this cycle.
 down"` alone — no longer invalid Garo, now valid-but-wrong-meaning,
 still resolves to the unrelated "down" root).
 
-### RC-CANDIDATE-015 — `Da·mo`("wait" expression) used for declarative "wait," should be `Sengbo`
+### RC-CANDIDATE-015 — `Da·mo`("wait" expression) used for declarative "wait," correct value is `senga` (CLOSED, three-stage correction, see below)
+**FINAL CORRECTION, 2026-07-25 (Claude A, full native-validation
+document response).** `master_dictionary.json` `"wait"`/`"to wait"`
+corrected back to `senga` (from `Sengbo` — my own same-day retraction
+of Claude B's original `senga` fix, which was itself correct, just
+under-documented at the time). Confirmed: `senga`("wait") and
+`senga`("smell") are true homonyms, same spelling/pronunciation,
+different words. `Sengbo`/`Da·mo` confirmed imperative-only —
+`"Ua sengbo"` explicitly rejected as an incorrect translation of "he
+waits." Full reasoning and the general `-bo`-is-imperative rule in
+NV-015. **Verified directly, good news:** Claude B's 2 regression
+tests were never updated to my mid-day `Sengbo` retraction (both that
+retraction and this final correction happened before their next
+session) — they still assert `senga`-based values, which is exactly
+right again. Re-ran `npm test` after this fix: 114/114 passing, no
+action needed on the test file. Apologies for the churn on this entry
+— three corrections in one day — but this is the actual final answer,
+with full reasoning behind it this time.
+
+**Second stage, 2026-07-25 (retracted above) — retained for history:**
 **RETRACTED AND RE-FIXED, 2026-07-25 (Claude A, direct native
 correction).** Claude B's fix earlier today set `"wait"`/`"to wait"` to
 `senga` based on NV-015's 2026-07-12 transcript. That transcript was
