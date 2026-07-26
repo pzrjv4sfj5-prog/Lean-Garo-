@@ -1,0 +1,363 @@
+[
+  {
+    "english": "To use up so that nothing is left",
+    "garo": "Bon·ata",
+    "pos": "vi. & vt."
+  },
+  {
+    "english": "to spend.",
+    "garo": "Bon·ata",
+    "pos": "vi. & vt."
+  },
+  {
+    "english": "To stop",
+    "garo": "Bon ka·a",
+    "pos": "vi."
+  },
+  {
+    "english": "to close",
+    "garo": "Bon ka·a",
+    "pos": "vi."
+  },
+  {
+    "english": "to stuff up.",
+    "garo": "Bon ka·a",
+    "pos": "vi."
+  },
+  {
+    "english": "To come to an end",
+    "garo": "Bon·chota",
+    "pos": "vi."
+  },
+  {
+    "english": "to be the last.",
+    "garo": "Bon·chota",
+    "pos": "vi."
+  },
+  {
+    "english": "Five.",
+    "garo": "Bonga",
+    "pos": "adj."
+  },
+  {
+    "english": "Fifth.",
+    "garo": "Bongagipa",
+    "pos": "adj."
+  },
+  {
+    "english": "To fill in the hole with earth.",
+    "garo": "Bong·a",
+    "pos": "vi."
+  },
+  {
+    "english": "The last",
+    "garo": "Bon-kamgipa",
+    "pos": "adj."
+  },
+  {
+    "english": "end",
+    "garo": "Bon-kamgipa",
+    "pos": "adj."
+  },
+  {
+    "english": "extreme.",
+    "garo": "Bon-kamgipa",
+    "pos": "adj."
+  },
+  {
+    "english": "At last",
+    "garo": "Bon-kamao",
+    "pos": "adv."
+  },
+  {
+    "english": "on the long run",
+    "garo": "Bon-kamao",
+    "pos": "adv."
+  },
+  {
+    "english": "ultimately",
+    "garo": "Bon-kamao",
+    "pos": "adv."
+  },
+  {
+    "english": "at the end.",
+    "garo": "Bon-kamao",
+    "pos": "adv."
+  },
+  {
+    "english": "To be easily exhaust",
+    "garo": "Bon·ninga",
+    "pos": "vi.",
+    "notes": "Typos 'exhaust' and 'consume' preserved."
+  },
+  {
+    "english": "to be easily consume",
+    "garo": "Bon·ninga",
+    "pos": "vi.",
+    "notes": "Typos 'exhaust' and 'consume' preserved."
+  },
+  {
+    "english": "to be quickly spent out.",
+    "garo": "Bon·ninga",
+    "pos": "vi.",
+    "notes": "Typos 'exhaust' and 'consume' preserved."
+  },
+  {
+    "english": "The relation of two persons, one of whom the husband of the other's sister",
+    "garo": "Boning",
+    "pos": "n."
+  },
+  {
+    "english": "a brother-in-law.",
+    "garo": "Boning",
+    "pos": "n."
+  },
+  {
+    "english": "A tree-top watching house.",
+    "garo": "Bo·rang",
+    "pos": "n."
+  },
+  {
+    "english": "Round.",
+    "garo": "Borem",
+    "pos": "adj."
+  },
+  {
+    "english": "To give something to make up for a loss",
+    "garo": "Boria",
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "to give an equivalent for",
+    "garo": "Boria",
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "to pay for",
+    "garo": "Boria",
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "to give compensation to",
+    "garo": "Boria",
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "to recompense",
+    "garo": "Boria",
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "to requite.",
+    "garo": "Boria",
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "Round.",
+    "garo": "Boroma",
+    "pos": "adj."
+  },
+  {
+    "english": "A kind of bamboo having close nodes.",
+    "garo": "Borua",
+    "pos": "n."
+  },
+  {
+    "english": "A thing",
+    "garo": "Bostu",
+    "pos": "n."
+  },
+  {
+    "english": "an object",
+    "garo": "Bostu",
+    "pos": "n."
+  },
+  {
+    "english": "goods",
+    "garo": "Bostu",
+    "pos": "n."
+  },
+  {
+    "english": "article.",
+    "garo": "Bostu",
+    "pos": "n."
+  },
+  {
+    "english": "To lend money for interest",
+    "garo": "Bota",
+    "pos": "v."
+  },
+  {
+    "english": "to challenge",
+    "garo": "Bota",
+    "pos": "v."
+  },
+  {
+    "english": "to try to win the favour of a girl by giving her presents.",
+    "garo": "Bota",
+    "pos": "v."
+  },
+  {
+    "english": "A bottle",
+    "garo": "Botol",
+    "pos": "n."
+  },
+  {
+    "english": "a phial.",
+    "garo": "Botol",
+    "pos": "n."
+  },
+  {
+    "english": "An arrow.",
+    "garo": "Bra",
+    "pos": "n."
+  },
+  {
+    "english": "To put inside",
+    "garo": "Braa",
+    "pos": "v."
+  },
+  {
+    "english": "to pour into",
+    "garo": "Braa",
+    "pos": "v."
+  },
+  {
+    "english": "to fill",
+    "garo": "Braa",
+    "pos": "v."
+  },
+  {
+    "english": "to fall into.",
+    "garo": "Braa",
+    "pos": "v."
+  },
+  {
+    "english": "In myriads",
+    "garo": "Brabra",
+    "pos": "adj."
+  },
+  {
+    "english": "in swarms (as creeping ants or insects).",
+    "garo": "Brabra",
+    "pos": "adj."
+  },
+  {
+    "english": "To flow or fall into (as a river)",
+    "garo": "Braea",
+    "pos": "v."
+  },
+  {
+    "english": "to enter (as river stream).",
+    "garo": "Braea",
+    "pos": "v."
+  },
+  {
+    "english": "A ladle.",
+    "garo": "Brak",
+    "pos": "n."
+  },
+  {
+    "english": "To keep understroyed as plants",
+    "garo": "Brana",
+    "pos": "v.",
+    "notes": "Typo 'understroyed' preserved."
+  },
+  {
+    "english": "to spare.",
+    "garo": "Brana",
+    "pos": "v.",
+    "notes": "Typo 'understroyed' preserved."
+  },
+  {
+    "english": "To lose one's way",
+    "garo": "Branga",
+    "pos": "v."
+  },
+  {
+    "english": "to go astray",
+    "garo": "Branga",
+    "pos": "v."
+  },
+  {
+    "english": "to wander.",
+    "garo": "Branga",
+    "pos": "v."
+  },
+  {
+    "english": "One who loses one's way",
+    "garo": "Branggipa",
+    "pos": "adj. & n."
+  },
+  {
+    "english": "a wander",
+    "garo": "Branggipa",
+    "pos": "adj. & n."
+  },
+  {
+    "english": "a destitute",
+    "garo": "Branggipa",
+    "pos": "adj. & n."
+  },
+  {
+    "english": "a widow.",
+    "garo": "Branggipa",
+    "pos": "adj. & n."
+  },
+  {
+    "english": "A taste of rice beer kept for over a day.",
+    "garo": "Braoa",
+    "pos": "adj."
+  },
+  {
+    "english": "Mouth of a river",
+    "garo": "Braram",
+    "pos": "n."
+  },
+  {
+    "english": "confluence",
+    "garo": "Braram",
+    "pos": "n."
+  },
+  {
+    "english": "estuary.",
+    "garo": "Braram",
+    "pos": "n."
+  },
+  {
+    "english": "To buy",
+    "garo": "Brea",
+    "pos": "v."
+  },
+  {
+    "english": "to purchase.",
+    "garo": "Brea",
+    "pos": "v."
+  },
+  {
+    "english": "Not so",
+    "garo": "Breja",
+    "pos": "adv."
+  },
+  {
+    "english": "unlikely",
+    "garo": "Breja",
+    "pos": "adv."
+  },
+  {
+    "english": "not likely.",
+    "garo": "Breja",
+    "pos": "adv."
+  },
+  {
+    "english": "In a confused mass.",
+    "garo": "Brek-mitchek",
+    "pos": "adv."
+  }
+]

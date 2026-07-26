@@ -92,6 +92,44 @@
       "flat_entries": 37,
       "affix_excluded": 0,
       "flagged_for_review": 4
+    },
+    {
+      "page": 34,
+      "status": "duplicate_pair_needs_claude_a_pick",
+      "alternates": [
+        {
+          "label": "A",
+          "source_image": "WhatsApp Image 2026-07-19 at 5.39.47 PM.jpeg",
+          "output_path": "data/claude_d/duplicate_alternates/page_0034.alt_A.flat.json",
+          "flat_entries": 70
+        },
+        {
+          "label": "B",
+          "source_image": "WhatsApp Image 2026-07-19 at 5.39.10 PM.jpeg",
+          "output_path": "data/claude_d/duplicate_alternates/page_0034.alt_B.flat.json",
+          "flat_entries": 70
+        }
+      ],
+      "diff_summary": "Identical entries/glosses/POS; only notes-field wording on a handful of entries differs between A and B (OCR commentary variance, not content variance)."
+    },
+    {
+      "page": 74,
+      "status": "duplicate_pair_needs_claude_a_pick",
+      "alternates": [
+        {
+          "label": "A",
+          "source_image": "WhatsApp Image 2026-07-19 at 5.40.32 PM (1).jpeg",
+          "output_path": "data/claude_d/duplicate_alternates/page_0074.alt_A.flat.json",
+          "flat_entries": 72
+        },
+        {
+          "label": "B",
+          "source_image": "WhatsApp Image 2026-07-19 at 5.40.40 PM.jpeg",
+          "output_path": "data/claude_d/duplicate_alternates/page_0074.alt_B.flat.json",
+          "flat_entries": 72
+        }
+      ],
+      "diff_summary": "Identical entries/glosses/POS; only notes-field wording on a handful of entries differs between A and B (OCR commentary variance, not content variance)."
     }
   ]
 }
