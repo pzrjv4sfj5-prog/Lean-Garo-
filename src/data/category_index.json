@@ -377,7 +377,7 @@
   "front": "general",
   "back": "general",
   "inside": "general",
-  "outside": "travel",
+  "outside": "general",
   "far": "travel",
   "near": "general",
   "north": "travel",
@@ -3607,5 +3607,9 @@
   "to see": "verbs",
   "lunch": "food",
   "goodness": "general",
-  "demand": "general"
+  "demand": "general",
+  "behind": "general",
+  "behind (other side, preferred for doors)": "general",
+  "beside": "general",
+  "have you had breakfast? (idiom, lit. \"have you had tea?\")": "phrases"
 }

@@ -278,7 +278,23 @@ GRAMMAR_SPECIFICATION.md` §5, future Verb Family / copula documentation.
 
 ---
 
-## NV-003 — RULE-034 locative/directional set: direct confirmation
+## NV-003 — RULE-034 locative/directional set: direct confirmation — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** All 9 remaining locative sentences confirmed
+directly: below=`ka'mao`, inside=`ning'ao`, outside=`a'palo`,
+above=`kosako`, behind=`janggilo` (alt. `paksao`, "other side" -
+preferred, better captures "behind a door" specifically),
+beside=`sambao`, up on the roof=`kosako` (same word as "above" - roof
+uses the general "above" locative, not a distinct word), "let's go
+over the bridge"=`Hai dollongni nalsachi re'na`, "the boat is going
+across the river"=`Ring chibimani nalsachi re'angenga`. Full sentences:
+`Ki'tap tableni ka'mao ong'a` ("the book is below the table"), `Ki'tap
+bakosni ning'ao ong'a` (inside the box), `Ki'tap nokni a'palo ong'a`
+(outside the house), `Ki'tap shelfni kosako ong'a` (above the shelf),
+`Ki'tap cholgugani janggilo ong'a` (behind the door), `Ki'tap kelkini
+sambao ong'a` (beside the window), `Ki'tap nokkingni kosako ong'a` (up
+on the roof).
+
 
 **Topic:** Nine locative/directional words (below, inside, outside,
 above, behind, beside, up, over, across) currently at Medium/Low
@@ -327,7 +343,22 @@ items from the Rule Catalogue into `corrections.json`/Validation Corpus.
 
 ---
 
-## NV-004 — RULE-035 "under" vs. "beneath" (`mitapo`) sense split
+## NV-004 — RULE-035 "under" vs. "beneath" (`mitapo`) sense split — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** Three distinct "under" words confirmed, not
+two: `ning'ao` (literally "inside" - the general-purpose, most accurate
+choice), `mitapo` (accepted alternate specifically for "under a
+blanket/covering"), `nokkimao` (the word already used for "under the
+table" - captures "covered under something" more precisely than
+`ning'ao` in that specific context, per direct explanation). "The book
+is under the blanket" = `Ki'tap kombolni ning'ao ong'a` (or `mitapo`).
+"The dog is under the table" = `Achak tableni nokkimao ong'a`
+(unchanged, already correct). "The rock is under the water" = `Ro'ong
+chini ning'ao ong'a` — `nokkimao` explicitly NOT preferred here;
+`ning'ao` given as the more accurate general-purpose word, with
+`nokkimao` reserved for the more specific "covered under" sense (like
+the table case).
+
 
 **Topic:** Whether `mitapo` is genuinely a distinct sense from
 `kokkimao`/`nokkimao`, and what its productivity boundary is.
@@ -374,7 +405,13 @@ confirmed.
 
 ---
 
-## NV-005 — Necessity-modal negation (`nangja`) vs. simple desire-negation
+## NV-005 — Necessity-modal negation (`nangja`) vs. simple desire-negation — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** Confirmed directly: `ska` = want, `sikja` =
+don't want; `nanga` = need, `nangja` = don't need — cleanly distinct
+pairs, no overlap. "I don't want to watch TV" = `Anga(de) TV nina
+sikja`. "I don't need to watch TV" = `Angade TV nina nangja`.
+
 
 **Topic:** Whether Garo grammatically distinguishes "need not X" from
 "don't want to X", and if so, how.
@@ -506,7 +543,13 @@ confirming the original "may not need Thangseng at all" note. See
 
 ---
 
-## NV-007 — Posture verb `tue` ("lying") — malformed output, missing coverage
+## NV-007 — Posture verb `tue` ("lying") — malformed output, missing coverage — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** Full paradigm confirmed: "I am lying down" =
+`Anga tue dongenga`. "I am lying in bed" = `Anga palango tue dongenga`.
+"I was lying down" (past) = `Anga tue dongengachim`. "I am not lying
+down" (negative) = `Anga tue dongjaenga`.
+
 
 **Topic:** "I am lying in bed" produces a structurally invalid output
 (`Anga Palangha`), not a graceful gap.
@@ -572,7 +615,16 @@ priority assessment.
 
 ---
 
-## NV-008 — Ability modal `man·ienga` ("can/able") — entirely dropped
+## NV-008 — Ability modal `man·ienga` ("can/able") — entirely dropped — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** `ama` confirmed as "can/able": "I can eat" =
+`Anga cha'na ama`. "I can go" = `Anga re'angna ama`. "I can work" =
+`Anga kam ka'na ama`. Homonymy risk directly confirmed and resolved:
+"Yes, `ama` also means can. `ama`=mother and `ama`=can are two
+different words with the same spelling, but they are pronounced
+differently" — same pattern as `senga`(wait)/`senga`(smell), a true
+homonym pair, not a single polysemous word.
+
 
 **Topic:** No engine output tested in the audit ever produces an
 ability-modal rendering.
@@ -677,7 +729,15 @@ into an unrelated context, or a genuine distinct word.
 
 ---
 
-## NV-009 — `TV` / `status` loanword coverage
+## NV-009 — `TV` / `status` loanword coverage — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** Nuanced answer, not simple loanword adoption:
+TV has a native Garo word, `bairong`, but "its use has been forgotten
+today" (functionally obsolete, English "TV" used in practice). No
+Garo word exists for "status" at all. Phone has a native word,
+`ku'bilbat`, also not in current use. No Garo word exists for
+"internet."
+
 
 **Topic:** Common tech/media loanwords entirely absent from the
 dictionaries.
@@ -727,7 +787,16 @@ weigh in on once this priority comes up.
 
 ---
 
-## NV-010 — Raka-Inconsistency Cluster in `-na` Infinitive Forms
+## NV-010 — Raka-Inconsistency Cluster in `-na` Infinitive Forms — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** Confirmed no raka inconsistency: "want to
+speak" = `Aganna ska`, "want to study" = `poraina ska` — "There is no
+raka because the verbs in their original form do not have raka."
+Directly asked whether a separate raka-marked pair exists (e.g.
+`agan·`/`tus·` vs. `agan`/`tusi`): "Not that I can recall" — the
+originally-observed raka inconsistency in the corpus is very likely a
+transcription/OCR artifact, not a real grammatical pattern.
+
 _**Partially answered 2026-07-18** (agana/poraia specifically — no raka) — see the minimal question set above. Detail below is the pre-answer evidence review, kept for the record._
 
 
@@ -814,7 +883,14 @@ since it's a single yes/no-style question with high leverage (resolves
 
 ---
 
-## NV-011 — `nina` vs. `Nia`/`nika`: same root or different form?
+## NV-011 — `nina` vs. `Nia`/`nika`: same root or different form? — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** "Watch" and "see" confirmed as genuinely
+different words, not the same root with different endings: `Nia`
+("watch" root, e.g. `nina`=infinitive, `nienga`="I am watching") vs.
+`Nika` ("see" root, e.g. `Anga uko nika`="I see it"). Not the same
+root.
+
 
 **Topic:** Whether `nina` (from the Case 1 audit, "to watch") is a
 conjugated/infinitive form of the already-confirmed `Nia`/`nika` root
@@ -863,7 +939,16 @@ page or two separate ones, and whether the engine's existing `Nia`-based
 
 ---
 
-## NV-012 — `nisona` vs. `nina`: selection rule between two "watch"-adjacent verbs
+## NV-012 — `nisona` vs. `nina`: selection rule between two "watch"-adjacent verbs — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** Confirmed NOT substitutable: "No, `nisona`
+cannot be substituted for `nina`. `Nisona` can also be used to mean to
+wait. It carries the idea of looking or waiting with expectation." —
+a third "wait"-adjacent word, distinct register/nuance from
+`senga`/`Sengbo`/`Da·mo`, worth noting but not conflating. "I am
+watching TV" = `Anga TV nienga` (uses the `Nia`/watch root, not
+`nisona`).
+
 
 **Topic:** When does a speaker choose `nisona` ("to watch(ingly wait),"
 per Claude B's gloss — can also mean "wait expectantly for someone
@@ -1172,7 +1257,22 @@ regress to `senga`).
 
 ---
 
-## NV-016 — `nanga`("need") vs. `nangja`("need not"); `ska` vs. `sikeng` ("want")
+## NV-016 — `nanga`("need") vs. `nangja`("need not"); `ska` vs. `sikeng` ("want") — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** Confirmed: "`Nangja` comes from `nanga`. It's
+the same word with negative suffix" — not a separate lexeme. Full
+`ska`("want")/`sika`("push, insert") paradigm given, confirming they
+are different words with `ska` following an irregular pattern modeled
+on `sika`'s regular one: `ska`=want, `sikja`=doesn't want,
+`sikbo`=want(imperative), `siknabe`=do not want(imperative,
+negative), `sikgen`=will want, `sikjawa`=will not want. Parallel:
+`sika`=push/insert, `sikja`=does not push, `sikbo`=push(imperative),
+`sikjawa`=will not push, `sikgen`=will push. Also confirms the general
+rule (stated directly in the same response, re: `senga`/`Sengbo`):
+`-bo` is always imperative unless another suffix follows it
+(`sikbo`=imperative "want," contrasted with `sikgen`/`sikja` built on
+the same root without a bare `-bo`).
+
 _**`nanga`/`nangja` answered 2026-07-18** (confirmed related). **`ska`/`sikeng` escalated to NV-021** — see the minimal question set above and `PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md`. Detail below is the pre-answer evidence review, kept for the record._
 
 
@@ -1475,7 +1575,26 @@ classifier-definitions request.
 
 ---
 
-## NV-027 — "angry" register cluster: which of 6 candidates are real distinct-register synonyms vs. OCR noise
+## NV-027 — "angry" register cluster: which of 6 candidates are real distinct-register synonyms vs. OCR noise — PARTIALLY CLOSED 2026-07-25
+
+**UPDATE 2026-07-25:** direct native glosses received for all 5
+non-`ka·o·nang·a` candidates. Three refine (not contradict) the
+existing dictionary entries: `ka'a chakna amja` = "cannot bear or
+tolerate" (existing gloss "not to be able to restrain anger" —
+consistent, confirmed). `ka'a soa` = "irritated" (given with an
+explicit "I think" hedge — milder register than the existing
+angry/rage/furious gloss suggests; existing entry not contradicted,
+but treat "irritated" as the more precise register note). `ka'chaa` —
+**meaningful correction**, not just refinement: native gloss is "to
+berate, to scold" (an action verb, transitive), notably different in
+character from the existing dictionary gloss's primary framing ("to be
+cross/to be angry/to get angry with/to be annoyed or vexed," which
+centers a state/feeling sense) — worth updating the dictionary entry's
+primary sense to lead with "to berate/to scold." The other two
+remain **genuinely unconfirmed**, explicitly: `bika so'a` — "cannot be
+confirmed right now." `hel'hel` — "cannot be confirmed right now."
+Not resolved by omission or inference; still open, needs another ask
+when possible.
 
 **Status:** OPEN, narrowed 2026-07-25 (Claude A, corpus-internal
 review — see below). Raised in Claude A review of
@@ -1569,7 +1688,19 @@ left untouched pending follow-up.
 
 ---
 
-## NV-029 — "tied"/"bound": converb+auxiliary construction confirmed; generalization beyond "tie" untested
+## NV-029 — "tied"/"bound": converb+auxiliary construction confirmed; generalization beyond "tie" untested — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25 — pattern does NOT generalize.** Tested against 3
+other past-participle-adjective English constructions; each uses its
+own distinct construction, not the tie-pattern (`X kae dongenga`):
+"the picture is hung [on the wall]" = `Noksako pakmao sitea`. "the key
+is hidden" = `Chabiko donnuaha` (an alternate literal form,
+`Chabi donnugimin ong'a`, was also given but explicitly NOT
+recommended: "don't go with this one"). "the cup is broken" =
+`Cup be'aha` (note: "Cup" used as an English loanword as-is). Clear,
+definitive negative answer — the converb+auxiliary pattern is specific
+to "tied," not a general past-participle-adjective strategy.
+
 
 **Status:** OPEN (grammar rule provisionally added as RULE-039, marked
 Needs Native Validation for generalization).
@@ -1596,7 +1727,18 @@ verb alone.
 
 ---
 
-## NV-030 — `ong·ja` vs. `dongja` negative-existential: free variation or contextual?
+## NV-030 — `ong·ja` vs. `dongja` negative-existential: free variation or contextual? — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25 — NOT free variation, real grammatical
+distinction.** Confirmed: "`Ong'ja` = is not; `Dongja` = is not
+(present). `Ong'ja` speaks about being. `Dongja` speaks about
+presence." This is a genuine identity-negation vs.
+existence/presence-negation split, not stylistic/contextual free
+choice as originally hypothesized — a real structural finding, not
+just a lexical confirmation. Worth a grammar-rule-catalogue entry if
+one doesn't already cover this distinction; flagged for Claude A
+follow-up, not created in this pass.
+
 
 **Status:** OPEN. Surfaced as a loose end in the same answer that
 resolved RC-CANDIDATE-017 (see NV-032 below) — Thangseng gave both
@@ -1616,7 +1758,19 @@ interchangeable in engine logic until confirmed either way.
 
 ---
 
-## NV-031 — Interrogative `-ma`: second data point, still future-tense only
+## NV-031 — Interrogative `-ma`: second data point, still future-tense only — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** `-ma` confirmed productive across tenses, not
+future-only, with a real nuance on past tense specifically. "Did you
+eat?" = `Na'a cha'ama?` OR `Na'a cha'ahama?` — both valid, context-
+dependent: simple past ("did you eat yesterday") uses plain `-ma`;
+recent-relevant/perfect sense ("did you eat the cake I was saving," or
+"have you eaten?") uses `-ha` + `-ma` = `-hama`. "Are you eating?" =
+`Na'a cha'engama?` (`-ma` after continuous `-enga`). "Do you want the
+book?" = `Na'a ki'tapko nangnikama?` (introduces another "want" word,
+`nangnika`, alongside already-confirmed `ska`/`sikeng` — register or
+distribution not yet investigated, not urgent).
+
 
 **Status:** OPEN, feeds `RC-CANDIDATE-020`/`RC-CANDIDATE-021`.
 
@@ -1783,7 +1937,18 @@ after the correction (104/104 tests, Check D 0 problems).
 
 ---
 
-## NV-034 — "hot": `gek·gek` and `jro·a` still unconfirmed
+## NV-034 — "hot": `gek·gek` and `jro·a` still unconfirmed — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** `gek·gek` rejected outright: "Nope" — not a
+real word for hot, should not be added. `jro·a` confirmed real but
+with a corrected meaning and a raka correction: written **without**
+raka (`jroa`, not `jro·a`), and refers to "the sensation, not the heat
+itself" — e.g. `Ku'sik jroenga` = "the mouth is burning" (from chili).
+Also: `jroa` is a homonym with a completely unrelated word meaning "to
+swim." Dictionary action needed: remove raka mark if `jro·a` exists as
+a headword, correct gloss to "burning sensation" (not "hot" itself),
+note the swim-homonym.
+
 
 **Status:** OPEN. Spun out of NV-033 so that record could close
 cleanly — `ding·a` is settled, these two are not.
@@ -1905,7 +2070,19 @@ being conflated with the noun in some entries). Full three-way
 resolution stays open — do not extend this single confirmation to
 close the whole conflict.
 
-## NV-038 — `na·sta` ("breakfast"/"snack"): loanword status, not yet asked
+## NV-038 — `na·sta` ("breakfast"/"snack"): loanword status, not yet asked — CLOSED 2026-07-25
+
+**CLOSED 2026-07-25.** `na·sta` confirmed real but restricted: "Rarely
+used by the younger generation. But it may be used occasionally by old
+people from some regions" — genuinely regional/generational, not a
+core production value. Separately, a genuine, common native
+expression for breakfast exists, found via direct question: **`cha`**
+(literally "tea") is used metonymically — "`cha ringjokma?`" (literally
+"have you had tea?") "usually" means "have you taken breakfast." This
+is the better production value for "breakfast" in casual/common usage
+— `na·sta` should be kept as a marked regional/dated variant, not the
+primary translation.
+
 
 **Status:** OPEN. Investigation only — dictionary entry NOT touched.
 

@@ -19968,11 +19968,11 @@
   },
   {
     "english": "Spicy",
-    "garo": "jro·a",
+    "garo": "jroa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "variant/VERIFIED/HIGH CORRECTED 2026-07-25 (direct native answer): no raka (was jro·a, now jroa). Confirmed accurate: refers to the burning/spicy sensation specifically (e.g. 'Ku'sik jroenga' = the mouth is burning, from chili) - this is exactly the right sense for this headword. Homonym with jroa='to swim' (unrelated word, same spelling)."
   },
   {
     "english": "Spider",
@@ -20208,11 +20208,11 @@
   },
   {
     "english": "Swim",
-    "garo": "jro·a",
+    "garo": "jroa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "variant/VERIFIED/HIGH CORRECTED 2026-07-25 (direct native answer): no raka (was jro·a, now jroa). Homonym with jroa='burning/spicy sensation' (unrelated word, same spelling)."
   },
   {
     "english": "Table",
@@ -24648,11 +24648,11 @@
   },
   {
     "english": "chili hot",
-    "garo": "jro·a",
+    "garo": "jroa",
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "UNVERIFIED/HIGH CORRECTED 2026-07-25 (direct native answer): no raka (was jro·a, now jroa). Confirmed accurate: refers to the burning/spicy sensation specifically (e.g. 'Ku'sik jroenga' = the mouth is burning, from chili) - this is exactly the right sense for this headword. Homonym with jroa='to swim' (unrelated word, same spelling)."
   },
   {
     "english": "chin",
@@ -31096,11 +31096,11 @@
   },
   {
     "english": "hot",
-    "garo": "jro·a",
+    "garo": "jroa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "variant/UNVERIFIED/HIGH CORRECTED 2026-07-25 (direct native answer): no raka (was jro·a, now jroa). Also corrected: refers to the burning/spicy SENSATION, not heat itself (ding·a is the confirmed word for actual heat/temperature, NV-033) - kept as a lower-confidence entry, not the primary 'hot' translation. Also a homonym with jroa='to swim' (unrelated word, same spelling)."
   },
   {
     "english": "hot season",
@@ -54660,7 +54660,8 @@
     "english": "to be cross",
     "garo": "Ka-chaa",
     "category": null,
-    "pos": "v."
+    "pos": "v.",
+    "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster."
   },
   {
     "english": "to be displeased",
@@ -54739,19 +54740,22 @@
     "english": "To be angry",
     "garo": "Ka-chaa",
     "category": null,
-    "pos": "v."
+    "pos": "v.",
+    "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster."
   },
   {
     "english": "to get angry with",
     "garo": "Ka-chaa",
     "category": null,
-    "pos": "v."
+    "pos": "v.",
+    "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster."
   },
   {
     "english": "to be annoyed or vexed",
     "garo": "Ka-chaa",
     "category": null,
-    "pos": "v."
+    "pos": "v.",
+    "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster."
   },
   {
     "english": "Not to be able to restrain anger",
@@ -59149,5 +59153,47 @@
     "category": null,
     "pos": "adj.",
     "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry ends abruptly with 'bow-legged' at the bottom of the page."
+  },
+  {
+    "english": "to berate; to scold",
+    "garo": "Ka-chaa",
+    "category": null,
+    "pos": "v.",
+    "notes": "CONFIRMED 2026-07-25, direct native answer - primary sense of Ka-chaa (the existing be-angry/be-cross/be-annoyed senses are real but secondary to this)."
+  },
+  {
+    "english": "behind",
+    "garo": "janggilo",
+    "category": "general",
+    "pos": null,
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is behind the door' = 'Ki'tap cholgugani janggilo ong'a'. Alternate 'paksao' ('other side') also given and explicitly preferred for capturing 'behind a door' specifically: 'paksao...captures the idea of behind the door better'."
+  },
+  {
+    "english": "behind (other side, preferred for doors)",
+    "garo": "paksao",
+    "category": "general",
+    "pos": null,
+    "notes": "CONFIRMED 2026-07-25, direct native answer - preferred alternate to janggilo for 'behind the door' specifically, literally 'other side'."
+  },
+  {
+    "english": "beside",
+    "garo": "sambao",
+    "category": "general",
+    "pos": null,
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is beside the window' = 'Ki'tap kelkini sambao ong'a'."
+  },
+  {
+    "english": "outside",
+    "garo": "a'palo",
+    "category": "general",
+    "pos": null,
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'."
+  },
+  {
+    "english": "have you had breakfast? (idiom, lit. \"have you had tea?\")",
+    "garo": "cha ringjokma?",
+    "category": "phrases",
+    "pos": null,
+    "notes": "CONFIRMED 2026-07-25, direct native answer, NV-038 - genuine common metonymic expression for asking about breakfast, using 'cha' (tea). Preferred over na·sta (regional/dated) for this meaning in common usage."
   }
 ]

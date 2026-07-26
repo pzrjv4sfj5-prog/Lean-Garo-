@@ -314,7 +314,7 @@ Structured per Sprint Work Package schema. Rule IDs map to
 **Launch Priority:** P0.
 
 ---
-### RULE-030 — `re·` vs. `re·ang` for "Go" [PARTIALLY RESOLVED]
+### RULE-030 — `re·` vs. `re·ang` for "Go" [RESOLVED]
 **Description:** Two forms of "go" coexist in confirmed data. **Update
 2026-07-18 (direct Thangseng answer to NV-001):** the destination-
 presence hypothesis this rule was built around is confirmed **wrong**
@@ -331,14 +331,22 @@ scoped sense tied to this one verb family — not a productive general
 prefix. (Same homonymy-adjacent caution pattern as `ama` — a string
 recurring across unrelated words with unrelated meanings; don't
 generalize a suffix's meaning from one word to another without
-checking.)
-**Examples:** `Re·jawa` = "I will not go" (bare, no destination); `Hai re·naha` = "let's go" (bare, no destination). Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop, `nokchi re·anggen`="will go home now" (`BUG_home_missing_and_go_double_raka.md`), `Antichi re·angbo`="go to the market" (suffixes.pdf, imperative) — **four** independent examples now, all `re·ang` + a `·chi`-marked destination, strengthening (not proving) the destination-conditioned hypothesis. Complication: the same primary source (`BUG_home_missing_and_go_double_raka.md`) also confirms bare `re·` variants (`da·o re·gen`) are accepted even when "home" is semantically present but omitted from the surface sentence — so the split may track surface NP presence rather than pure semantic destination, or there may be genuine free variation in casual speech (see Thangseng's own methodology answers on register variation, `THANGSENG_NATIVE_VALIDATION.md` NV-001 update).
-**Counterexamples:** N/A — like RULE-031, this documents an unresolved question, not a settled pattern with exceptions.
+checking.) **Final confirmation, 2026-07-25:** the destination-presence
+surface pattern in Examples below is fully reconciled now, not just
+narrowed — direct answer to three matched pairs (bare vs.
+destination-bearing "not going," "did not go"): "The verb form has
+virtually nothing to do with the destination. Verb form is concerned
+with the mood and the tense." The examples below that appeared to
+correlate with destination presence were coincidental, not causal —
+mood/tense/negation are confirmed as the complete answer, no residual
+destination-conditioning to reconcile.
+**Examples:** `Re·jawa` = "I will not go" (bare, no destination); `Hai re·naha` = "let's go" (bare, no destination); `Anga re'angjaenga` = "I am not going" (no destination); `Anga antichi re'angjaenga` = "I am not going to the market" (destination present, same continuous-negative form either way); `Ua re'angjaha` = "he did not go"; `Ua antichi re'angjaha` = "he did not go to the market" (destination present, same past-negative form either way) — direct minimal-pair confirmation, 2026-07-25. Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop, `nokchi re·anggen`="will go home now" (`BUG_home_missing_and_go_double_raka.md`), `Antichi re·angbo`="go to the market" (suffixes.pdf, imperative).
+**Counterexamples:** N/A.
 **Dependencies:** none identified yet; would inform future Verb Family documentation for "go."
-**Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Direct NV-001 answer received 2026-07-18 (mood/tense/negation as primary conditioners; `-ang` scope narrowed to `re·a` specifically) — the destination-presence surface pattern documented in Examples above still needs reconciling against this answer; it's not yet clear whether both are true simultaneously (destination-presence *and* mood/tense/negation each contribute) or whether the examples need re-reading in light of the new answer. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001.
-**Validation Status:** Partially validated — primary conditioning factor now confirmed (mood/tense/negation), destination-presence surface pattern not yet reconciled with it.
-**Confidence:** Medium (up from Low) — the "why" is now confirmed even though the full "when" isn't fully reconciled.
-**Launch Priority:** P0 — high-frequency verb, currently only narrowly patched in `corrections.json` (`will not go`/`i will not go` → `re·jawa`) specifically to avoid over-generalizing an unconfirmed pattern.
+**Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Direct NV-001 answer received 2026-07-18 (mood/tense/negation as primary conditioners; `-ang` scope narrowed to `re·a` specifically). Final confirmation 2026-07-25: destination presence/absence has virtually no effect on verb form in either direction, direct minimal-pair test. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001.
+**Validation Status:** Fully validated — mood/tense/negation confirmed as the complete conditioning factor; destination-presence surface pattern confirmed coincidental, not causal.
+**Confidence:** High.
+**Launch Priority:** P0 — high-frequency verb. `corrections.json`'s narrow patch (`will not go`/`i will not go` → `re·jawa`) can now be safely generalized if useful, since the pattern is confirmed, not just partially understood.
 
 ---
 ### RULE-031 — Copula Inconsistency [PARTIALLY RESOLVED]
@@ -385,6 +393,17 @@ rather than just an attested form.
 **Correction (2026-07-10):** Cross-checking `GARO_GRAMMAR_REFERENCE.md` against live `corrections.json` (see RULE-005) confirms `daka` is a real, broadly-used copula for bare existential and predicate-nominal constructions — not merely "unattested" as this rule previously said. This **narrows** the open question rather than resolving it: `daka` is confirmed to *not* compete with `ong·a`/bare-adjective for predicate-adjective sentences specifically (no confirmed case of `daka` following a clear adjective, only one ambiguous case) — so the real unresolved selection is `ong·a` vs. bare-adjective for predicate adjectives, a 2-way question, with `daka`'s role now reasonably well understood as a separate, mostly-settled construction.
 **Counterexamples:** N/A — this rule documents an unresolved contradiction, not a settled pattern.
 **Dependencies:** affects RULE-004 (predication generally), Grammar Specification §5. Connects to the register-variation pattern noted across several other rules this session (see `THANGSENG_NATIVE_VALIDATION.md`'s discussion of formal/spoken doublets) — worth checking whether any of these three strategies track register rather than a strictly grammatical trigger.
+**Update 2026-07-25 (further direct Thangseng answer to NV-002):**
+`ong·a` is confirmed invariant across all three grammatical persons —
+no person-agreement inflection on the copula itself: `Anga kusi ong·a`
+("I am happy"), `Na'a kusi ong·a` ("you are happy"), `Ua kusi ong·a`
+("he is happy") — identical copula form in all three. Full paradigm
+also given: past `ong·aha`, future `ong·gen`, negative future
+`ong·jawa`, interrogative `ong·genma`, imperative `ong·bo`. This
+closes the person-agreement question specifically; the broader
+lexical-conditioning question (which predicate words take strategy a
+vs. b vs. c) remains open, unaffected by this update.
+
 **Native Notes:** Source Rule 31, flagged by repository audit. Direct NV-002 answer received 2026-07-18, confirming `ong·a` is required (not optional) for strategy (a). See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-002 (answered), NV-017 (still open — noun-predicate case).
 **Validation Status:** Partially validated — strategy (a)'s obligatoriness confirmed; the lexical-conditioning question (which words take which strategy) and the noun-predicate case (NV-017) remain open.
 **Confidence:** Medium (up from Low) — each of the three strategies individually attested on verified-current data, and strategy (a) now confirmed non-optional.

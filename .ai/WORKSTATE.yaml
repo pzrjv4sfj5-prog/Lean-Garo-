@@ -1,5 +1,5 @@
 repository:
-  head: 3d7f818
+  head: a2bc028
   last_updated: "2026-07-25"
   test_status: "114/114 regression tests passing, build clean, lint clean. translationEngine.js modularization (BACKLOG-003) Phase 1-3 of 8 done, verified zero behavior change via stress-benchmark diff each phase. Phase 5 (grammarEngine.js) deliberately deferred to a fresh session - highest-risk phase, extract-method + diff-per-substep discipline. Phase 7 not started (no de-risking value for Phase 5, done independently later)."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -119,7 +119,51 @@ claude_a:
     linguistic gap: Sengbo may be imperative-only (senga+-bo, same
     pattern as Da·mo) - using it for declarative "he waits" is
     questionable, not confirmed correct. New relay question added
-    (batch now 41 questions, section R).
+    (batch now 41 questions, section R). FINAL correction, same day:
+    a full detailed native-validation document arrived and settled
+    this properly - senga IS wait after all, homonym with senga=smell
+    (not exclusively smell as the terse mid-day correction claimed).
+    Reverted "wait"/"to wait" back to senga a third time; verified
+    Claude B's 2 regression tests were untouched in the interim and
+    already correct, 114/114 passing, no action needed from them.
+    Then processed the rest of that same document - it closed 16 of
+    18 remaining pending-batch topics outright and refined a 17th:
+    NV-001/RULE-030 (go - fully resolved, destination has no effect,
+    only mood/tense/negation), NV-002/RULE-031 (copula ong'a invariant
+    across all 3 persons, full paradigm added), NV-003 (all 9
+    locatives), NV-004 (under - 3 distinct words: ning'ao/mitapo/
+    nokkimao), NV-005 (want/need), NV-007 (lying-down paradigm),
+    NV-008 (ama=can, homonym with mother), NV-009 (TV=bairong/obsolete,
+    no word for status, phone=ku'bilbat/obsolete, no word for
+    internet), NV-010 (no raka inconsistency, was likely an artifact),
+    NV-011/012 (watch=Nia root vs. see=Nika root, genuinely different;
+    nisona relates to waiting-with-expectation, not substitutable),
+    NV-016 (nangja=nanga+neg suffix; full ska/sika paradigm, confirms
+    -bo=imperative-only rule independently), NV-027 (partially -
+    ka'chaa's primary sense corrected to "berate/scold" not just
+    "angry"; bika so'a and hel'hel explicitly still unconfirmed, not
+    resolved), NV-029 (tied/bound pattern does NOT generalize -
+    hung/hidden/broken each use distinct constructions), NV-030
+    (ong'ja vs dongja is a REAL identity-vs-existence negation
+    distinction, not free variation as previously assumed - flagged
+    for its own RULE-XXX entry, not created this session), NV-031
+    (-ma productive across tenses, with a real perfect-vs-simple-past
+    nuance via -ha-ma), NV-034 (gek·gek rejected; jro·a corrected to
+    jroa, no raka, means "sensation" not heat itself, homonym with
+    "swim"), NV-038 (na·sta real but regional/dated; "cha ringjokma?"
+    - literally "have you had tea?" - is the actual common breakfast
+    idiom). Dictionary changes: jro·a->jroa raka+sense correction,
+    ka'chaa primary-sense addition, 5 new locative/idiom entries
+    (janggilo/paksao=behind, sambao=beside, a'palo=outside, cha
+    ringjokma=breakfast idiom). docs/THANGSENG_QUESTION_BATCH_20260725.md
+    rewritten down to the 2 genuinely still-open items (bika so'a,
+    hel'hel) plus one low-priority follow-up (nangnika want-word
+    register, unexplored). Rebuilt, 114/114 tests, repository-
+    intelligence.js clean (0 new violations). Flagged in
+    SESSION_BOOTSTRAP.md: ong'ja/dongja needs its own grammar rule
+    entry (not built this session, scope), RULE-030 now fully
+    resolved so the narrow corrections.json patch can be generalized
+    if Claude B finds it useful.
   progress: >-
     This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
     actual repo state before this update - HEAD, test count, and this
