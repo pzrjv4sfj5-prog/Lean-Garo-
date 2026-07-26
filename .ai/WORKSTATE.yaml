@@ -1,5 +1,5 @@
 repository:
-  head: 156ae8a
+  head: ebc4720
   last_updated: "2026-07-25"
   test_status: "116/116 regression tests passing, build clean, lint clean. translationEngine.js modularization (BACKLOG-003) Phase 1-3 of 8 done, verified zero behavior change via stress-benchmark diff each phase. Phase 5 (grammarEngine.js) deliberately deferred to a fresh session - highest-risk phase, extract-method + diff-per-substep discipline. Phase 7 not started (no de-risking value for Phase 5, done independently later)."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -163,7 +163,32 @@ claude_a:
     SESSION_BOOTSTRAP.md: ong'ja/dongja needs its own grammar rule
     entry (not built this session, scope), RULE-030 now fully
     resolved so the narrow corrections.json patch can be generalized
-    if Claude B finds it useful.
+    if Claude B finds it useful. Session interrupted mid-migration-
+    planning (grammar rule schema, per Project Owner's proposal
+    follow-up): found a real structural fork on the first pilot rule
+    (RULE-001) - Examples fields come in 3 incompatible shapes
+    (translated sentence pairs, bare morphology transformations, mixed
+    annotation) that don't fit the proposed {english,garo} schema
+    uniformly. Presented 3 options (A: raw strings now, B: split into
+    sentence/morphology fields now via judgment call, C: raw strings
+    now + defer the split to the same later judgment pass already
+    planned for the 12 compound-claim rules), recommended C, STOPPED
+    and awaited an answer per the Project Owner's explicit instruction
+    to stop for structural decisions - not yet answered, migration
+    has not actually started (no docs/grammar_rules_structured/ files
+    created yet). While waiting, processed 2 new pieces of native data
+    that arrived: confirmed re·jawa derivation (re·a->re·->re·+jawa,
+    added to RULE-030/RULE-015-adjacent notes) and reconciled a real
+    RULE-030/RULE-025/RULE-027 gloss discrepancy Claude B flagged -
+    "Ua re'angjaha" was mis-glossed in RULE-030 as "he did not go"; per
+    RULE-025's own already-verified cessative meaning it almost
+    certainly means "he stopped going," and "Ua re'angja" (RULE-027,
+    engine-verified) is the real "did not go." Checked corrections.json
+    for a matching production bug - none found, "i stopped going"
+    already correctly uses re·angjaha, so this was a documentation-
+    only error, now fixed, not a live translation bug. One direct
+    native confirmation added to the (now very small) pending batch to
+    fully close it rather than resting on inference alone.
   progress: >-
     This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind
     actual repo state before this update - HEAD, test count, and this

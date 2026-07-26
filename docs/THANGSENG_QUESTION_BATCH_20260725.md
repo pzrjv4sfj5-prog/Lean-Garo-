@@ -23,3 +23,14 @@ asking someday whether `nangnika` is interchangeable with `ska`, or
 has its own register/context (e.g. wanting an object vs. wanting to do
 something) — not urgent, translation works fine with the existing
 words either way.
+
+## 3. Quick confirmation: does `re'angjaha` mean "stopped going"? (2026-07-26)
+We already have solid evidence for this (an established rule about
+`-jaha` marking "started then stopped," plus it's already used
+correctly elsewhere in our data) — just want one direct check to be
+fully sure, since a different document called `Ua re'angjaha` "he did
+not go," which would conflict.
+3. Does `Ua re'angjaha` mean "he stopped going" (as in, he used to go
+   somewhere regularly and doesn't anymore)? We believe `Ua re'angja`
+   (no `-ha`) is the right way to say plain "he did not go" — is that
+   right too?

@@ -340,12 +340,27 @@ with the mood and the tense." The examples below that appeared to
 correlate with destination presence were coincidental, not causal —
 mood/tense/negation are confirmed as the complete answer, no residual
 destination-conditioning to reconcile.
-**Examples:** `Re·jawa` = "I will not go" (bare, no destination); `Hai re·naha` = "let's go" (bare, no destination); `Anga re'angjaenga` = "I am not going" (no destination); `Anga antichi re'angjaenga` = "I am not going to the market" (destination present, same continuous-negative form either way); `Ua re'angjaha` = "he did not go"; `Ua antichi re'angjaha` = "he did not go to the market" (destination present, same past-negative form either way) — direct minimal-pair confirmation, 2026-07-25. Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop, `nokchi re·anggen`="will go home now" (`BUG_home_missing_and_go_double_raka.md`), `Antichi re·angbo`="go to the market" (suffixes.pdf, imperative).
-**FLAG for Claude A, not resolved here (2026-07-25, Claude B):** Project Owner relay states directly: "the usual reply, at least in spoken Garo, is 're·angja' (did not go)" — i.e. `RULE-027`'s plain past-negation form, not this rule's `-jaha` gloss above for the same English sentence "he did not go." The engine already produces `Ua Re·angja` for "he did not go" (matches `RULE-027`, verified working, no code change needed). This is a documentation-only discrepancy between this rule's example list and `RULE-027` — needs your reconciliation of whether the `-jaha` examples above are better glossed as "he stopped going" (cessative, per `RULE-025`) rather than "he did not go," not an engineering call.
+**Examples:** `Re·jawa` = "I will not go" (bare, no destination) — derivation confirmed directly, 2026-07-26: `re·a`("to go") → `re·`(bare root, per RULE-015 stem formation) → `re·`+`jawa` = `re·jawa`; `Hai re·naha` = "let's go" (bare, no destination); `Anga re'angjaenga` = "I am not going" (no destination); `Anga antichi re'angjaenga` = "I am not going to the market" (destination present, same continuous-negative form either way). Contrast: `Re·anga`=go, `re·angenga`=going, `Dokanchi re·angbo`=go to the shop, `nokchi re·anggen`="will go home now" (`BUG_home_missing_and_go_double_raka.md`), `Antichi re·angbo`="go to the market" (suffixes.pdf, imperative). **`Ua re'angja` (not `re'angjaha`) = "he did not go"** — corrected 2026-07-26, see reconciliation note below; `re'angjaha` examples relocated.
+**RECONCILED, 2026-07-26 (Claude A):** the two `re'angjaha` examples
+previously here ("he did not go" / "he did not go to the market") are
+corrected, not just reworded — `RULE-025` (cessative `-jaha`, Verified,
+High confidence) already documents *exactly this error pattern* as
+institutional memory: `-jaha` means "was doing, has now stopped," and
+a 2026-07-01 assumption that it meant past-negation is retained there
+specifically as a corrected mistake. So `Ua re'angjaha` almost
+certainly means **"he stopped going"** (cessative), not "he did not
+go" — and `Ua re'angja` (RULE-027, no `-ha`, engine-verified,
+Project-Owner-confirmed as "the usual reply... in spoken Garo") is the
+real simple-past-negation form. This reconciliation rests on existing
+verified rules, not new native data — flagging that distinction: I'm
+confident in the reasoning, but a direct native check on `Ua
+re'angjaha` specifically (does it in fact read as "he stopped going"?)
+would make this fully certain rather than strongly inferred. Added to
+next relay as a quick confirmation, not treated as fully closed.
 **Counterexamples:** N/A.
 **Dependencies:** none identified yet; would inform future Verb Family documentation for "go."
-**Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Direct NV-001 answer received 2026-07-18 (mood/tense/negation as primary conditioners; `-ang` scope narrowed to `re·a` specifically). Final confirmation 2026-07-25: destination presence/absence has virtually no effect on verb form in either direction, direct minimal-pair test. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001.
-**Validation Status:** Fully validated — mood/tense/negation confirmed as the complete conditioning factor; destination-presence surface pattern confirmed coincidental, not causal.
+**Native Notes:** Source Rule 30 (`THANGSENG_RULES_LOOKUP.md`), flagged 2026-07-05. Direct NV-001 answer received 2026-07-18 (mood/tense/negation as primary conditioners; `-ang` scope narrowed to `re·a` specifically). Final confirmation 2026-07-25: destination presence/absence has virtually no effect on verb form in either direction, direct minimal-pair test. `re·jawa` derivation confirmed 2026-07-26. See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001.
+**Validation Status:** Fully validated — mood/tense/negation confirmed as the complete conditioning factor; destination-presence surface pattern confirmed coincidental, not causal. The `-jaha`/`-ja` gloss confusion is reconciled via existing verified rules (High confidence), pending one direct confirmation to close fully.
 **Confidence:** High.
 **Launch Priority:** P0 — high-frequency verb. `corrections.json`'s narrow patch (`will not go`/`i will not go` → `re·jawa`) generalized 2026-07-25 (Claude B) — findVerbForm('go') was returning the wrong root ("Re·anga"-family) for negative-future tense on any subject not already covered by the literal correction; fixed with a scoped exception at the negative-future call site in `analyzeGrammar`. Verified across all subject pronouns.
 
