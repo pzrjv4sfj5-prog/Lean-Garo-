@@ -108,6 +108,32 @@ for `hot` can happen here too, whenever convenient — not urgent,
 these aren't confirmed to be leaking into live output the way the
 placeholder entries above are.
 
+## Third item — corrections.json has 2 more, one of them structurally different
+
+Continued the audit into `corrections.json` (the exact-match override
+layer, checked before the dictionary): found 2 more entries with the
+same shape.
+
+- **`"younger sibling": "Jong / No"`** — same issue as the
+  `master_dictionary.json` entry of the same key (both leak). Fixing
+  `master_dictionary.json` alone won't be enough for this one — 
+  `corrections.json` is checked first and would keep leaking
+  regardless. Both need the same resolved value.
+- **`"songna": "to plant / to erect"`** — different, and possibly
+  worse: `songna` isn't English (it's what looks like a Garo verb),
+  and `"to plant / to erect"` isn't Garo — the key/value direction is
+  backwards from every other entry in the file, on top of having the
+  same unresolved-placeholder shape. Live test: typing the Garo word
+  `songna` into the English input returns `"to plant / to erect"`
+  verbatim, which is nonsensical either as a translation or as a
+  glossary note. This looks like a stray working note that got
+  committed into the corrections layer by mistake rather than a
+  translation entry — flagging rather than guessing at removal, since
+  I can't rule out it was intentional shorthand for something. Your
+  call whether to remove it, or split it into proper `"to plant"`/
+  `"to erect"` entries if `songna` is confirmed to mean one of those.
+
+
 ## Suggested process
 
 Same as `RC-CANDIDATE-015`: once you confirm a value (or already have

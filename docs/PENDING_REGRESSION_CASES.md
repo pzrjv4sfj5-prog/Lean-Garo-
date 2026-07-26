@@ -859,12 +859,17 @@ dog"` → `"Ua sa mang·sa·ko donga"`.
 
 **Independently confirmed dictionary facts** (each from an unrelated
 entry elsewhere, not the pair under dispute):
-- `"do·o"` = `"bird"` (confirmed exact-match entry, though itself
-  tagged `UNVERIFIED/HIGH`) — **not** "chicken" (that claim, from the
-  original chat report, doesn't match anything in the dictionary; the
-  closest chicken-related entries are `"chicken coop": "do·ochi·dik"`
-  and two longer descriptive phrases, none of which support "do·o" =
-  "chicken" as a standalone gloss).
+- **[SUPERSEDED 2026-07-25, Claude B]** `"do·o"` = `"bird"` was
+  believed true as of this entry's original date (2026-07-19). Later
+  native validation (NV-025, closed; see also lines ~922/980 below in
+  this same document) established the opposite: `do·o` = "chicken",
+  and generic "bird" is `Do·` (no `o`) — fixed in
+  `master_dictionary.json` this session. Doesn't change this entry's
+  actual conclusion: `do·o` (whichever species) still doesn't belong
+  in a dog-count phrase either way, so the "two dogs" analysis below
+  is unaffected — flagging only because the specific "not chicken"
+  claim here is now factually wrong and would mislead anyone reading
+  this entry without also finding the later correction.
 - `"achak"` = `"dog"` (confirmed exact-match entry, plain/uncontested).
 - `"gni"` = `"two"`... except **`"two"` itself is confirmed as
   `"Gni"`** (capital G, standalone number entry) — consistent, not a

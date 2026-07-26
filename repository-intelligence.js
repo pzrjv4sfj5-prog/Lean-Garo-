@@ -334,14 +334,16 @@ function checkPendingLexiconIntegrity() {
 // pre-existing entries pending Claude A's per-word resolution; any NEW
 // placeholder-shaped entry fails the build immediately.
 function checkPlaceholderEntries() {
-  console.log('\n=== CHECK E: Unresolved placeholder values (master_dictionary.json) ===');
-  const dict = loadJSON('master_dictionary.json');
+  console.log('\n=== CHECK E: Unresolved placeholder values (master_dictionary.json + corrections.json) ===');
   const baseline = new Set(loadJSON('src/data/known_placeholder_entries.json'));
   const placeholderPattern = /\s\/\s|\s\bor\b\s/i;
 
   let known = 0;
   let fresh = 0;
   const freshFindings = [];
+
+  // master_dictionary.json — keyed by english
+  const dict = loadJSON('master_dictionary.json');
   const seenKeys = new Set();
   for (const entry of dict) {
     const k = (entry.english || '').toLowerCase().trim();
@@ -351,7 +353,19 @@ function checkPlaceholderEntries() {
     seenKeys.add(k);
     if (baseline.has(k)) { known++; continue; }
     fresh++;
-    freshFindings.push(`  NEW: "${k}" — "${v}"`);
+    freshFindings.push(`  NEW (master_dictionary): "${k}" — "${v}"`);
+  }
+
+  // corrections.json — flat {key: value}, namespaced in the baseline as
+  // "corrections:key" so it can't collide with a master_dictionary key
+  // of the same english word.
+  const corrections = loadJSON('src/data/corrections.json');
+  for (const [k, v] of Object.entries(corrections)) {
+    if (typeof v !== 'string' || !placeholderPattern.test(v)) continue;
+    const baselineKey = 'corrections:' + k.toLowerCase().trim();
+    if (baseline.has(baselineKey)) { known++; continue; }
+    fresh++;
+    freshFindings.push(`  NEW (corrections.json): "${k}" — "${v}"`);
   }
 
   freshFindings.slice(0, 20).forEach(l => console.log(l));

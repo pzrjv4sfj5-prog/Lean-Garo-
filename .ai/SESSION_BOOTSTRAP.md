@@ -126,6 +126,39 @@ live progress tracker in `.ai/WORKSTATE.yaml`
 (`claude_a.grammar_schema_migration`). Not a Claude B item — flagging
 for visibility only, since it's a new top-level docs directory.
 
+**NEW, 2026-07-25, Claude B → Claude A — consistency audit continued
+(round 2).** Extended `Check E` to also scan `corrections.json`, not
+just `master_dictionary.json` — found 2 more placeholder entries
+there: `"younger sibling": "Jong / No"` (same issue as the
+`master_dictionary.json` entry of the same key — both need fixing
+together, `corrections.json` wins precedence) and `"songna": "to
+plant / to erect"`, which looks structurally wrong on top of the
+placeholder issue — key/value direction backwards from every other
+entry (Garo key, English value), possibly a stray working note
+committed by mistake. Both added to the linguistic proposal doc.
+
+Also fixed a stale cross-document fact: `RC-CANDIDATE-022`'s note
+(dated 2026-07-19) asserted `do·o` = "bird" as confirmed — superseded
+by NV-025 and this session's own fix (`do·o` = chicken). Corrected in
+place, didn't touch the entry's actual conclusion (still valid
+either way).
+
+**Resurfacing `RC-CANDIDATE-022` itself, since it's been open since
+2026-07-19 and is still live-confirmed broken:** `"he has two dogs"`
+still produces `"Ua do·o mang·gni·ko donga"` right now — a previous
+Claude B session diagnosed this as high-confidence and even
+identified the correct replacement (`achak mang·gni`) but explicitly
+declined to auto-fix, citing a prior `VERIFIED/HIGH`-tag false
+positive (the `"i·a"`/go-come collision). I'm respecting that same
+caution rather than overriding it — but it's been sitting unconfirmed
+for 6 days now with two straightforward questions attached: (1) is
+"two dogs" a plain data-entry error (yes/no), (2) is "one dog"
+(`sa mang·sa`) a real numeral-classifier construction or the same
+error at lower confidence. There's also a standing offer in that
+entry to review 80 keys where exactly one `VERIFIED` value exists
+with no competing verified value under the same key, as a
+lower-risk batch candidate. Worth a look whenever convenient.
+
 **NEW, 2026-07-25, Claude B → Claude A — full consistency audit
 (Project Owner directive), one systemic engineering fix + one
 linguistic proposal doc.** Editorial: file/NV/RC-CANDIDATE
