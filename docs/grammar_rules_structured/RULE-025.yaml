@@ -1,0 +1,25 @@
+id: RULE-025
+title: "Cessative `-jaha`"
+description: >-
+  `-jaha` marks cessation ("was doing, has now stopped"), an aspectual
+  category distinct from both negation and simple past.
+dependencies:
+  - id: RULE-017
+    name: null
+    note: "contrast"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - 'cha·jaha = "has stopped eating" (NOT "did not eat")'
+counterexamples:
+  note: "The 2026-07-01 assumption that this meant past-negation is a documented, corrected error - retained as counterexample for institutional memory."
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+native_notes: "Source GRAMMAR_NOTES_JAHA_MANAHA_20260703.md, direct native correction."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-025"

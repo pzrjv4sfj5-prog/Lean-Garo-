@@ -242,7 +242,7 @@ claude_a:
       That reshaping is deferred to the same later judgment pass
       already planned for the 12 compound-claim rules. Project Owner
       confirmed Option C, 2026-07-26.
-    migrated: ["RULE-001", "RULE-002", "RULE-003", "RULE-003b", "RULE-007", "RULE-008", "RULE-013", "RULE-014", "RULE-015", "RULE-017", "RULE-020"]
+    migrated: ["RULE-001", "RULE-002", "RULE-003", "RULE-003b", "RULE-007", "RULE-008", "RULE-013", "RULE-014", "RULE-015", "RULE-017", "RULE-020", "RULE-021", "RULE-023", "RULE-024", "RULE-025", "RULE-027", "RULE-029"]
     total_rules: 40
     verification_method: >-
       Manual field-by-field comparison against
@@ -261,9 +261,10 @@ claude_a:
       field, same pattern.
     schema_consistency_notes_for_later_pass:
       - "RULE-014 (zero examples) used an ad-hoc examples_note field instead of the note+items pattern counterexamples already has - minor inconsistency in my own schema, logged not fixed, same discipline as source-content inconsistencies."
+      - "RULE-024's confidence 'Low-Medium' didn't fit the proposed enum (high|medium|low|n/a) cleanly - used low_medium as an extension rather than rounding to one and losing precision. Worth deciding formally whether to add this to the enum in the later pass."
     observations_flagged_not_resolved:
-      - "RULE-003b glosses Sengbo as \"stop!\"; NV-015/RULE-029 gloss it as imperative \"wait!\" - not reconciled during migration per the no-reinterpretation instruction, logged in RULE-003b.yaml's migration_flags."
-    next_up: "RULE-021, 023, 024, 025, 027, 029 (continuing single-claim rules)"
+      - "RULE-003b glosses Sengbo as \"stop!\"; NV-015/RULE-029 gloss it as imperative \"wait!\" - not reconciled during migration per the no-reinterpretation instruction, logged in RULE-003b.yaml's migration_flags. RULE-029 independently uses the same 'stop!' gloss, worth noting for reconciliation - may mean 'stop!' is a legitimate secondary sense, not simply wrong."
+    next_up: "RULE-030 (already has update content from this session, single-claim), RULE-035, 036, 038, 039, 040, 041, 042, G7, G-classifier (continuing single-claim rules); RULE-031 needs the compound-claims treatment when reached"
 
 claude_b:
   status: active

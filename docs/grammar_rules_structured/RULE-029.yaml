@@ -1,0 +1,28 @@
+id: RULE-029
+title: "Hortative/Imperative `-bo`"
+description: >-
+  Single suffix form serves both imperative (command) and hortative
+  ("let's") functions.
+dependencies:
+  - id: RULE-003b
+    name: null
+    note: null
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - 'Sengbo = "stop!" (imperative)'
+  - 'Biko sandibo = "search for him!" (imperative); hortative use disambiguated by subject/context'
+counterexamples:
+  note: "none confirmed"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+native_notes: "Source Rule 29, corrects an earlier imperative-only assumption."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-029"
+migration_flags:
+  - "Sengbo glossed here (and in RULE-003b) as 'stop!', while NV-015 glosses it as imperative 'wait!' - two independent rule entries agree with each other on 'stop!', which is worth noting for the reconciliation pass (may mean 'stop!' is also a legitimate sense, not simply wrong) - not resolved here, logged only."

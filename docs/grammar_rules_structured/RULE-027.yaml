@@ -1,0 +1,32 @@
+id: RULE-027
+title: "No True Simple-Past Suffix; `-ja` Covers Past-Referring Negation"
+description: >-
+  Garo has no dedicated simple-past negation suffix distinct from
+  present negation — `-ja` covers both, disambiguated by context, not
+  morphology.
+dependencies:
+  - id: RULE-017
+    name: "Simple Negation -ja"
+    note: "RULE-027 is the specific \"does -ja also cover past?\" confirmation for that rule"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+    confidence_note: "direct, explicit native answer to a specifically-posed question, not inferred"
+examples:
+  - 'na·a mijalo anti re·angama?="did you go to the market yesterday?", native reply confirmed as re·angja="did not go" (past-referring, same -ja used for present negation)'
+counterexamples:
+  note: "none - this rule documents an absence (no dedicated past-negative morpheme), confirmed by Thangseng directly answering \"is there a confirmed suffix for true simple past negation?\" with no."
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "implemented (applyNegation is tense-independent per GRAMMAR_SPEC.md)"
+native_notes: >-
+  Primary source, July 5 chat transcript: "I don't think that we have
+  something that may be called a true simple past suffix. As far as I
+  can tell, 'ja' is also used to talk about past events." Direct,
+  unambiguous answer to a consolidated native-validation question.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-027"

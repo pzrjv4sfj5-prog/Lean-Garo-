@@ -1,0 +1,36 @@
+id: RULE-024
+title: "`-aha` Full-Root-Append Exception"
+description: >-
+  A specific subset of verbs append `-aha` to the full root rather
+  than the stripped stem (RULE-015's normal stem-formation rule),
+  confirmed via internal QA rather than native elicitation.
+dependencies:
+  - id: RULE-015
+    name: "Stem Formation"
+    note: null
+  - id: RULE-002
+    name: "Past/Perfect Unification"
+    note: null
+claims:
+  - scope: null
+    status: needs_native_validation
+    status_note: "internal-QA-confirmed only, never independently checked against a native source in any document read so far"
+    confidence: low_medium
+    confidence_note: "real (caught a live bug at the time) but provenance is engineering-internal, not native"
+examples:
+  - "he cooked (per GRAMMAR_SPEC.md's citation - root not independently re-verified against confirmed dictionary data in this pass)"
+counterexamples:
+  note: "RULE-015's normal pattern, which this rule is an exception to"
+  items:
+    - id: RULE-015
+      description: "the normal stem-formation pattern this rule is an exception to"
+launch_priority:
+  - scope: null
+    tier: P1
+native_notes: >-
+  Source Rule 24, GRAMMAR_SPEC.md — internal QA discovery (2026-07-04),
+  not a direct Thangseng statement. Flagged here as lower-provenance
+  than most other rules in this catalogue.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-024"

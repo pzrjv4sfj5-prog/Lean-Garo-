@@ -1,0 +1,28 @@
+id: RULE-021
+title: "`song·` vs. `songna` — Raka Distinguishes Meaning"
+description: >-
+  `song·` (with raka) and `songna`/`song` (without) are different
+  words — raka distinguishes "cook" from "plant," not a free variant
+  of one root. Same class of lexical split as `ring·`("sing")/`ring`
+  ("drink"), NV-010's resolved case.
+dependencies:
+  - id: RULE-001
+    name: "Raka Locality"
+    note: "this is the sharpest confirmed example of raka being lexically contrastive, not just phonologically present/absent"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - 'dictionary entries for "cook" vs. "plant" (see master_dictionary.json/corrections.json)'
+counterexamples:
+  note: "treating these as one root with inconsistent raka would be the exact mistake this rule exists to prevent"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "implemented, dictionary-level distinction already in place"
+native_notes: "Source Rule 21, GRAMMAR_SPEC.md."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-021"

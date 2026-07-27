@@ -1,0 +1,31 @@
+id: RULE-023
+title: "`-gen` (Future) Never Carries Raka"
+description: >-
+  The future suffix `-gen` never triggers or carries raka, regardless
+  of the root it attaches to — a specific, testable claim distinct
+  from RULE-001's general locality principle.
+dependencies:
+  - id: RULE-001
+    name: "Raka Locality"
+    note: null
+  - id: RULE-015
+    name: "Stem Formation"
+    note: null
+claims:
+  - scope: null
+    status: verified
+    status_note: "GRAMMAR_MORPHOLOGY_CONFIDENCE_REVIEW.md already flagged this exact claim as resting on a single example (bilakgen) and recommended a raka-bearing-root test case to confirm raka-suppression generally, not just absence-on-an-already-raka-free-root"
+    confidence: medium
+    confidence_note: "the claim itself is clean, but the one example available doesn't distinguish \"never had raka to begin with\" from \"raka actively suppressed\""
+examples:
+  - 'bilakgen="will be strong" (root bilak, no raka on the suffix); general pattern across future-tense forms'
+counterexamples:
+  note: "none recorded"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+native_notes: "Source Rule 23, GRAMMAR_SPEC.md."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-023"
