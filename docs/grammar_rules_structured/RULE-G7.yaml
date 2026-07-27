@@ -1,0 +1,29 @@
+id: RULE-G7
+title: "Existential Possession"
+description: >-
+  Possession is expressed existentially ("at me, X exists") rather
+  than with a dedicated "have" verb in some constructions; `donga`/
+  `dong·a` (exist/stay/have) does double duty.
+dependencies: []
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+    confidence_note: "single example, but the underlying donga polysemy is independently cross-confirmed by multiple unrelated sentences (VERB_INVENTORY.md), so this isn't resting alone the way a truly isolated single example would be"
+examples:
+  - 'Uo bi·sa sakgittam donga = "she has three children" (lit. "she child-classifier-three exists")'
+counterexamples:
+  note: "none recorded - but see VERB_INVENTORY.md's dong entry, which separately confirms donga also covers plain existential (\"there is\") and locative-stay senses, not exclusively possession"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "the corrected form is already live in corrections.json"
+native_notes: >-
+  Primary source: July 3 chat transcript, direct Thangseng
+  confirmation, superseding an earlier constructed (non-native) form —
+  see docs/NEW_SENTENCES_BATCH3_CONVERSATION.md's superseded-forms
+  notice.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-G7"

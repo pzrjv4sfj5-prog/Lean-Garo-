@@ -1,0 +1,43 @@
+id: RULE-040
+title: "\"Right\" Three-Way Sense Split (Direction / Matching / Correct)"
+description: >-
+  English "right" collapses three distinct Garo headwords, currently
+  merged into one compiled dictionary key via pickPrimary's
+  last-write-wins behavior. Confirmed distinct:
+  - Jak·ra — right (direction / right-hand side)
+  - kra·a — suiting/matching (not "correct" - a distinct sense from
+    what the Kakket-cluster entries assume)
+  - Kakket — truth / correct
+dependencies:
+  - id: null
+    name: "the existing Kakket-cluster entries (true/correct/genuine/just/actual/rightly)"
+    note: "those remain internally consistent under Kakket, this rule doesn't change them, it only separates kra·a and Jak·ra out from the collapsed \"right\" key"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - '"turn right" → Jak·ra sense'
+  - '"this fits/suits" → kra·a sense'
+  - '"that''s right/true" → Kakket sense'
+counterexamples:
+  note: "none - this is a homonymy split, not a rule with exceptions"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: >-
+      current compiled "right" value is wrong for at least two of the
+      three senses depending on which entry pickPrimary happened to
+      select last. Engineering handoff to Claude B: split the single
+      compiled "right" key into three distinct headwords (e.g. "right
+      (direction)", "right (matching)", "right (correct)" or
+      equivalent sense-tagged keys) rather than picking one winner -
+      this is headword restructuring, not a value substitution.
+native_notes: >-
+  direct Thangseng relay, 2026-07-22, via Project Owner: "Jak·ra
+  directional right or right hand. Kra·a means suiting or matching.
+  Kakket is truth and right in the sense of being correct."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-040"

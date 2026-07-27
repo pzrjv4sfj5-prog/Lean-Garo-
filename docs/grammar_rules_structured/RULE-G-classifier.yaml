@@ -1,0 +1,36 @@
+id: RULE-G-classifier
+title: "Numeral Classifiers"
+description: >-
+  Counted nouns take a classifier attaching to the number, not the
+  noun; classifier choice depends on the noun's semantic class (books,
+  animals, long objects, trees, pens/sticks each take a different
+  classifier).
+dependencies:
+  - id: RULE-001
+    name: "Raka Locality"
+    note: "classifier raka is lexical per-classifier, same locality principle"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+    confidence_note: "5 independent examples across distinct classifier classes, the best-evidenced morphological category in the repository alongside RULE-001"
+examples:
+  - 'ki·tap kinggittam="three books" (king, no raka)'
+  - 'achak mang·gni="two dogs" (mang·, raka)'
+  - 'wa·a jolsa="one stalk of bamboo" (jol, no raka)'
+  - "a'bil panggni=\"two trees\" (pang, no raka)"
+  - 'kolom ge·sa="a pen" (ge·, raka)'
+counterexamples:
+  note: "none recorded. Note: translationEngine.js's classifierHints only implements mang/sak/gong/king - jol and ge· are confirmed but unimplemented (flagged to Claude B, PROJECT_STATUS.md)."
+  items: []
+launch_priority:
+  - scope: "3 of 5 classifiers (mang/sak/gong/king)"
+    tier: P0
+  - scope: "jol/ge· implementation gap"
+    tier: P1
+native_notes: >-
+  THANGSENG classifier confirmation, primary source suffixes.pdf
+  transcript (bamboo/pen examples with explicit raka notes), Rule 21.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-G-classifier"
