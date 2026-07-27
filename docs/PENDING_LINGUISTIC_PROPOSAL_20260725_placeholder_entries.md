@@ -183,6 +183,48 @@ same shape.
   `"to erect"` entries if `songna` is confirmed to mean one of those.
 
 
+## Fourth item — two more source files found, one entry fixed (2026-07-26)
+
+While tracing a live bug (`"she will go to the market"` was producing
+`"Ua bajal / anti·ko Re·anggen"` — literal `/` in the output), found
+the actual leak wasn't coming from any file already covered by
+`Check E` — it was `src/data/phrase_maps.js`'s own separate `'market':
+'Bajal / Anti'` entry, a completely independent third data source.
+
+**Fixed this one specifically** — not a guess: `corrections.json` and
+`master_dictionary.json` both already have `"let's go to market"` →
+`"Hai Bajal Anti Re·na"` (`Bajal Anti`, space, not slash), tagged
+`VERIFIED/native-speaker`, in two places. Changed `phrase_maps.js`'s
+`'market'` entry from `'Bajal / Anti'` to `'Bajal Anti'` to match
+already-confirmed same-repo evidence — not new linguistic content.
+Verified: `"she will go to the market"` no longer leaks (still uses
+the wrong `·ko`/`·o` marker instead of the confirmed `chi`-locative,
+but that's `RC-CANDIDATE-023`'s already-tracked item 1, unrelated to
+this fix). Stress-benchmark diff confirms exactly 2 sentences changed
+(both containing "market"), both in the correct direction.
+
+**Extended `Check E` to scan both new files.** `phrase_maps.js` had
+10 more entries with the same shape (all duplicates of words already
+in this report — `hello`, `goodbye`, `wait`, `zero`, `father`,
+`mother`, `uncle`, `friend`, `throw`, `climb`). `garo_dictionary.json`
+— a legacy build-input source file (23k lines, feeds
+`prepare-data.js` alongside `master_dictionary.json`, never
+previously audited) — had 51 more, again almost entirely duplicates
+of the same underlying words across the two source files (a few
+genuinely new: `early`, `rich`, `wet`, `bridge` — these overlap with
+the "masked, not leaking" list from earlier since something else
+currently shadows them). All 61 added to
+`src/data/known_placeholder_entries.json`'s baseline (now 115 total
+tracked entries across 4 files). None of these need separate
+per-word resolution beyond what's already asked for above — fixing a
+word once, in whichever file has the authoritative confirmed value,
+should be applied consistently across all files that carry that same
+key. I'd handle the actual multi-file propagation once you confirm
+each word — flagging the file-count here so the scale is visible, not
+asking you to review 61 more individually.
+
+
+
 ## Suggested process
 
 Same as `RC-CANDIDATE-015`: once you confirm a value (or already have

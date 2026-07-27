@@ -86,7 +86,7 @@ export const PHRASE_MAPS = {
   'bland': 'Chibroka',
   'tasteless': 'Chibroka',
   'smelly': 'Senga',
-  'market': 'Bajal / Anti',
+  'market': 'Bajal Anti', // 2026-07-26, Claude B: was 'Bajal / Anti' (unresolved placeholder, leaked into live "go to market" sentences). Fixed per existing native-confirmed evidence in this same repo (corrections.json's "let's go to market" -> "Hai Bajal Anti Re·na", master_dictionary.json duplicate, both VERIFIED/native-speaker) - "Bajal Anti" is a confirmed two-word unit, not a choice between two alternatives.
   'how much': 'Baita?',
   'how much is this': 'Baita?',
   'it is too expensive': 'Ia dam rakduga.',

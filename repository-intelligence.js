@@ -78,6 +78,7 @@
  * `npm run build` after test-dictionary.js.
  */
 import fs from 'fs';
+import { PHRASE_MAPS } from './src/data/phrase_maps.js';
 
 let hasNewViolation = false;
 
@@ -334,7 +335,7 @@ function checkPendingLexiconIntegrity() {
 // pre-existing entries pending Claude A's per-word resolution; any NEW
 // placeholder-shaped entry fails the build immediately.
 function checkPlaceholderEntries() {
-  console.log('\n=== CHECK E: Unresolved placeholder values (master_dictionary.json + corrections.json) ===');
+  console.log('\n=== CHECK E: Unresolved placeholder values (master_dictionary.json + corrections.json + phrase_maps.js + garo_dictionary.json) ===');
   const baseline = new Set(loadJSON('src/data/known_placeholder_entries.json'));
   const placeholderPattern = /\s\/\s|\s\bor\b\s/i;
 
@@ -356,9 +357,7 @@ function checkPlaceholderEntries() {
     freshFindings.push(`  NEW (master_dictionary): "${k}" — "${v}"`);
   }
 
-  // corrections.json — flat {key: value}, namespaced in the baseline as
-  // "corrections:key" so it can't collide with a master_dictionary key
-  // of the same english word.
+  // corrections.json — flat {key: value}, namespaced "corrections:key"
   const corrections = loadJSON('src/data/corrections.json');
   for (const [k, v] of Object.entries(corrections)) {
     if (typeof v !== 'string' || !placeholderPattern.test(v)) continue;
@@ -366,6 +365,37 @@ function checkPlaceholderEntries() {
     if (baseline.has(baselineKey)) { known++; continue; }
     fresh++;
     freshFindings.push(`  NEW (corrections.json): "${k}" — "${v}"`);
+  }
+
+  // phrase_maps.js — flat {key: value}, namespaced "phrase_maps:key".
+  // Found 2026-07-26 tracing the "she will go to the market" leak - a
+  // THIRD independent source of this exact bug shape, not caught by
+  // the master_dictionary/corrections checks above.
+  for (const [k, v] of Object.entries(PHRASE_MAPS)) {
+    if (typeof v !== 'string' || !placeholderPattern.test(v)) continue;
+    const baselineKey = 'phrase_maps:' + k.toLowerCase().trim();
+    if (baseline.has(baselineKey)) { known++; continue; }
+    fresh++;
+    freshFindings.push(`  NEW (phrase_maps.js): "${k}" — "${v}"`);
+  }
+
+  // garo_dictionary.json — a legacy build-input source (feeds
+  // prepare-data.js alongside master_dictionary.json), same shape as
+  // master_dictionary.json. Namespaced "garo_dictionary:key".
+  const garoDict = loadJSON('garo_dictionary.json');
+  const garoEntries = Array.isArray(garoDict) ? garoDict : Object.values(garoDict);
+  const seenGaroKeys = new Set();
+  for (const entry of garoEntries) {
+    if (!entry || typeof entry !== 'object') continue;
+    const k = (entry.english || '').toLowerCase().trim();
+    const v = (entry.garo || '').trim();
+    if (!k || !v || !placeholderPattern.test(v)) continue;
+    if (seenGaroKeys.has(k)) continue;
+    seenGaroKeys.add(k);
+    const baselineKey = 'garo_dictionary:' + k;
+    if (baseline.has(baselineKey)) { known++; continue; }
+    fresh++;
+    freshFindings.push(`  NEW (garo_dictionary.json): "${k}" — "${v}"`);
   }
 
   freshFindings.slice(0, 20).forEach(l => console.log(l));
