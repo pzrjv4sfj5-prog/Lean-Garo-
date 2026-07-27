@@ -1,5 +1,5 @@
 repository:
-  head: bc70dee
+  head: fe48fbe
   last_updated: "2026-07-25"
   test_status: "116/116 regression tests passing, build clean, lint clean. Consistency audit (round 1+2) complete: Check E added and extended to master_dictionary.json + corrections.json for unresolved-placeholder detection, 53 pre-existing entries allowlisted pending Claude A. translationEngine.js modularization (BACKLOG-003) Phase 1-3 of 8 done. Phase 5 (grammarEngine.js) deliberately deferred to a fresh session."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -244,6 +244,14 @@ claude_a:
       confirmed Option C, 2026-07-26.
     migrated: ["RULE-001", "RULE-002", "RULE-003", "RULE-003b", "RULE-007", "RULE-008", "RULE-013", "RULE-014", "RULE-015", "RULE-017", "RULE-020", "RULE-021", "RULE-023", "RULE-024", "RULE-025", "RULE-027", "RULE-029", "RULE-040", "RULE-042", "RULE-G7", "RULE-G-classifier"]
     total_rules: 40
+    mechanical_pass_status: >-
+      COMPLETE, 2026-07-26. Every rule in GRAMMAR_RULE_CATALOGUE.md has
+      now been read in full at least once and classified as either
+      single-claim (migrated, 21 rules) or compound/multi-claim
+      (deferred to the judgment pass, 19 rules) - cross-checked by
+      diffing the full rule-ID list against migrated files, exact
+      accounting confirmed (21+19=40, no rule missed or double-counted).
+    deferred_rules_final: ["RULE-G2", "RULE-004", "RULE-005", "RULE-006", "RULE-009", "RULE-018", "RULE-026", "RULE-028", "RULE-030", "RULE-031", "RULE-032", "RULE-033", "RULE-034", "RULE-035", "RULE-036", "RULE-037", "RULE-038", "RULE-039", "RULE-041"]
     verification_method: >-
       Manual field-by-field comparison against
       docs/GRAMMAR_RULE_CATALOGUE.md after each rule - not automated
@@ -261,29 +269,29 @@ claude_a:
       field, same pattern.
     compound_rule_detection_methodology_finding: >-
       Important correction, 2026-07-26: the original survey (used to
-      produce the "12 compound rules" list in the proposal doc) only
-      regex-matched Validation Status and Confidence for semicolons on
-      a SINGLE LINE - it missed compound fields whose semicolon lands
-      on a wrapped continuation line (RULE-038, RULE-039 both caught
-      this way during manual full-text reading). The original 12-rule
-      deferred list is very likely an undercount. Going forward: every
-      remaining rule gets a full manual read before being classified
-      as simple, not just the automated single-line regex check - this
-      already caught RULE-035, 038, 039 as compound where the
-      automated check said "simple." RULE-030 also reclassified as
-      compound this session, but for a different reason - it gained a
-      second, still-pending claim through this session's own
-      reconciliation edits, not a pre-existing wrapped semicolon.
-      Deferred-to-judgment-pass list so far (not yet exhaustive, will
-      be finalized once all 40 are read): RULE-G2, 004, 005, 006, 009,
-      018, 026, 028, 030, 031, 032, 033, 034, 035, 036, 037, 038, 039.
+      produce the "12 compound rules" estimate in the proposal doc)
+      only regex-matched Validation Status and Confidence for
+      semicolons on a SINGLE LINE - it missed compound fields whose
+      semicolon lands on a wrapped continuation line (RULE-035, 038,
+      039 all caught this way during manual reading, where the
+      automated check said "simple"). Actual final count: 19 deferred,
+      not 12 - a real undercount, corrected by reading every rule in
+      full rather than trusting the single-line regex.
     schema_consistency_notes_for_later_pass:
       - "RULE-014 (zero examples) used an ad-hoc examples_note field instead of the note+items pattern counterexamples already has - minor inconsistency in my own schema, logged not fixed, same discipline as source-content inconsistencies."
       - "RULE-024's confidence 'Low-Medium' didn't fit the proposed enum (high|medium|low|n/a) cleanly - used low_medium as an extension rather than rounding to one and losing precision. Worth deciding formally whether to add this to the enum in the later pass."
     observations_flagged_not_resolved:
       - "RULE-003b glosses Sengbo as \"stop!\"; NV-015/RULE-029 gloss it as imperative \"wait!\" - not reconciled during migration per the no-reinterpretation instruction, logged in RULE-003b.yaml's migration_flags. RULE-029 independently uses the same 'stop!' gloss, worth noting for reconciliation - may mean 'stop!' is a legitimate secondary sense, not simply wrong."
-      - "RULE-039's converb+auxiliary pattern (confirmed for exactly one verb, 'tie') directly relates to NV-029, closed this session: hung/hidden/broken each use DIFFERENT constructions, the pattern does not generalize. RULE-039's own text already cautions against generalizing from one verb - NV-029 now answers that caution with a concrete negative result. Not updated in RULE-039 itself during migration (scope), flagged for the reconciliation pass."
-    next_up: "Continue reading remaining rules in full (not by automated regex alone) to finalize which are genuinely single-claim vs. compound; likely candidates still to check: RULE-041, RULE-G2 needs a first read, RULE-004/005/006/009/018/026/028/030/031/032/033/034/035/036/037/038/039 all provisionally deferred pending the later judgment pass"
+      - "RULE-039's converb+auxiliary pattern (confirmed for exactly one verb, 'tie') directly relates to NV-029, closed this session: hung/hidden/broken each use DIFFERENT constructions, the pattern does not generalize. RULE-039's own text already cautions against generalizing from one verb - NV-029 now answers that caution with a concrete negative result."
+      - "RULE-034's 9-item locative/directional vocabulary proposal (Needs Native Validation status, Medium/Low confidence) is very likely resolved by NV-003, closed this session with all 9 locative sentences directly confirmed. Not updated in RULE-034 itself during migration (scope), flagged for the reconciliation pass."
+    next_up: >-
+      Mechanical pass (Phase 1) is done. Next phase per the original
+      proposal: the manual judgment pass on the 19 deferred rules,
+      splitting each into a proper claims[] array reflecting their
+      actual multiple independently-verified sub-claims - genuinely
+      needs Claude A linguistic judgment per rule, not mechanical
+      extraction. Awaiting Project Owner direction on whether to start
+      that phase now or pause here.
 
 claude_b:
   status: active

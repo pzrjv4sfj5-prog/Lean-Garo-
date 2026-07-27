@@ -117,6 +117,18 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**MILESTONE, 2026-07-26, Claude A — grammar rule schema migration
+mechanical pass COMPLETE.** All 40 rules in `GRAMMAR_RULE_CATALOGUE.md`
+read in full and classified: 21 single-claim rules migrated to
+`docs/grammar_rules_structured/`, 19 compound/multi-claim rules
+identified and deferred to the planned judgment pass (larger than the
+original 12-rule estimate — the original detection missed compound
+fields wrapping onto a second line). Full accounting cross-checked,
+no rule missed. Next phase (splitting the 19 deferred rules into
+proper `claims[]` arrays) awaits Project Owner direction on whether to
+proceed now. Full detail in `.ai/WORKSTATE.yaml`
+`claude_a.grammar_schema_migration`.
+
 **NEW, 2026-07-26, Claude B → Claude A — full watch/see native data
 received, NOT implemented.** Project Owner relayed a complete
 Thangseng transcript (12 confirmed forms across `nia`="watch" and
