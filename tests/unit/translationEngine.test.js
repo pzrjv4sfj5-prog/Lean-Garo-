@@ -628,6 +628,36 @@ test('RC-CANDIDATE-017: negation is not lost with a locative predicate', async (
   assert.ok(r.garo.includes('·o'), `locative marker must stay on the noun, got: ${r.garo}`);
 });
 
+// --- RULE-040 fix: "right" was a 3-way homonymy collapse (direction /
+// matching / correct) via pickPrimary's last-write-wins, native-confirmed
+// distinct 2026-07-22. Bare "right" is deliberately removed rather than
+// defaulting to one sense — see prepare-data.js's grammarOverrides comment.
+test('RULE-040: "right" sense split — bare key removed, no silent wrong default', async () => {
+  const { lookup } = await import('../../src/lookupEngine.js');
+  assert.equal(lookup('right'), null, 'ambiguous bare "right" must not resolve to any single sense');
+});
+
+test('RULE-040: "right (direction)" resolves to Jak·ra', async () => {
+  const { lookup } = await import('../../src/lookupEngine.js');
+  assert.equal(lookup('right (direction)').garo, 'Jak·ra');
+});
+
+test('RULE-040: "right (matching)" resolves to kra·a', async () => {
+  const { lookup } = await import('../../src/lookupEngine.js');
+  assert.equal(lookup('right (matching)').garo, 'kra·a');
+});
+
+test('RULE-040: "right (correct)" resolves to Kakket', async () => {
+  const { lookup } = await import('../../src/lookupEngine.js');
+  assert.equal(lookup('right (correct)').garo, 'Kakket');
+});
+
+test('RULE-040: "turn right" phrase correction is unaffected by the sense split', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('turn right');
+  assert.equal(r.garo, 'Rikka chepbo');
+});
+
 // --- Interrogative formation (Project Owner directive root cause 3) is
 // deliberately NOT implemented or tested here. No confirmed
 // linguistic guidance exists yet for Garo question formation - only one

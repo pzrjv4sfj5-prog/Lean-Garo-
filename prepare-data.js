@@ -121,7 +121,16 @@ function main() {
     'it exists': 'Donga',
     'quick': 'Tarkbo',
     'hurry': 'Tarkbo',
-    "i don't care": 'Anga Dal·e Ra·ja'
+    "i don't care": 'Anga Dal·e Ra·ja',
+    // RULE-040 (docs/GRAMMAR_RULE_CATALOGUE.md): "right" collapses three
+    // distinct, native-confirmed Garo headwords via pickPrimary's
+    // last-write-wins. Bare "right" is deliberately NOT set here — see
+    // the explicit deletion below — because there is no correct single
+    // default; every prior compiled value was wrong for at least two of
+    // the three senses.
+    'right (direction)': 'Jak·ra',
+    'right (matching)': 'kra·a',
+    'right (correct)': 'Kakket'
   };
 
   const finalized = {};
@@ -141,6 +150,15 @@ function main() {
     finalized[key] = grammarOverrides[key];
     delete alternates[key];
   });
+
+  // RULE-040: bare "right" is a genuine 3-way homonymy split (direction /
+  // matching / correct), not a single headword with a best default — every
+  // pickPrimary-selected value was wrong for two of the three senses. Drop
+  // it rather than keep guessing; callers should use the sense-tagged keys
+  // above ("right (direction)" / "right (matching)" / "right (correct)").
+  // "rightly" is a separate, unrelated entry and is untouched.
+  delete finalized['right'];
+  delete alternates['right'];
 
   // Alias bare-infinitive form for "to X" headwords. Some dictionary
   // sources (e.g. the page-112 OCR import: "To bind", "To console") only
