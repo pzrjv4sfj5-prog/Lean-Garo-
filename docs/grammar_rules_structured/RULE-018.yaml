@@ -1,0 +1,34 @@
+id: RULE-018
+title: "Verbal-Adjective `-gija`"
+description: >-
+  `-gija` forms a verbal adjective ("without doing X"), always paired
+  with a following main verb; it is not a general negation strategy.
+dependencies:
+  - id: RULE-017
+    name: null
+    note: "contrast"
+claims:
+  - scope: "structural distinction (paired with a main verb, not standalone)"
+    status: verified
+    confidence: high
+  - scope: "exact English-pattern-to-form selection rule (when an arbitrary \"not X-ing\" input should trigger -gija vs. -ja, beyond the \"without\" pattern already implemented)"
+    status: needs_native_validation
+    confidence: medium
+examples:
+  - 'Ua an·tangni kamko dakgija dongaha = "she stayed without doing her work."'
+counterexamples:
+  note: "-gija used alone as a sentence's only verb is a misuse (a historical implementation bug, since fixed)."
+  items: []
+launch_priority:
+  - scope: "structure"
+    tier: P0
+    note: "already implemented"
+  - scope: "selection-rule refinement"
+    tier: P1
+native_notes: >-
+  Source Rule 18, corroborated by independent adjective-placement
+  evidence (namja vs. namgija positional flexibility) in
+  GARO_GRAMMAR_REFERENCE.md.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-018"

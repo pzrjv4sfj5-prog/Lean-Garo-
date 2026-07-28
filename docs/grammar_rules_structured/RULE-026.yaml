@@ -1,0 +1,31 @@
+id: RULE-026
+title: "Completive `-manaha`"
+description: >-
+  Marks completive aspect ("has finished X"); overlaps with `-aha` in
+  casual spoken usage per direct native confirmation, but is not
+  identical in careful usage.
+dependencies:
+  - id: RULE-002
+    name: null
+    note: "contrast/overlap"
+claims:
+  - scope: "existence and overlap with -aha"
+    status: verified
+    confidence: medium_high
+    confidence_note: "source gives a single hyphenated rating, Medium-High, not clearly split between the two claims - preserved as its own value rather than rounded to one or the other"
+  - scope: "precise contexts where -manaha and -aha diverge, if any"
+    status: needs_native_validation
+    confidence: medium_high
+    confidence_note: "same source rating as above, not separately specified per claim"
+examples:
+  - 'cha·manaha = "has eaten" / "ate" (completive framing)'
+counterexamples:
+  note: "none confirmed; the aha/manaha overlap itself is confirmed, not a counterexample"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+native_notes: "Source Rule 28."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-026"

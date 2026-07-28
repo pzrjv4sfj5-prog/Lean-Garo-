@@ -1,0 +1,119 @@
+id: RULE-031
+title: "Copula Inconsistency [PARTIALLY RESOLVED]"
+description: >-
+  Three unreconciled predicative strategies coexist in confirmed data
+  - not four, see corrections below: (a) an ong·a-copula strategy,
+  always bare/uninflected, attaching after an adjective or stative
+  noun (Anga kusi ong·a="I am happy"); (b) self-inflecting stative
+  roots taking normal verb morphology directly, no copula element
+  (Anga sakamenga="I am sick", -enga progressive on the root itself);
+  (c) a zero-copula bare-adjective strategy, no ong·a or inflection at
+  all (Gari sila="the car is beautiful"). daka-copula (RULE-005) is
+  confirmed to exist but has no worked predicative-adjective example -
+  unattested, not just unconfirmed, so not counted as a fourth
+  strategy.
+dependencies:
+  - id: RULE-004
+    name: null
+    note: "predication generally, Grammar Specification §5"
+  - id: RULE-005
+    name: null
+    note: "daka-copula, confirmed to exist but unattested for predicate-adjective use"
+claims:
+  # Judgment-pass split, 2026-07-26 (Claude A). This rule has the
+  # longest update history in the catalogue; 4 distinct claims
+  # identified across the 2026-07-18 and 2026-07-25 updates plus the
+  # rule's own final Validation Status/Confidence lines.
+  - scope: "strategy (a) obligatoriness - is ong·a required, optional, or person-specific?"
+    status: verified
+    confidence: high
+    status_note: >-
+      2026-07-18 direct answer: required, not a free variant of
+      bare-adjective strategy (c). Thangseng: "Yes. Ong'a in such a
+      use functions as the 'to be' verb. [...] If the ong'a is
+      omitted, the be verb is missing." The three strategies are not
+      free variation on the same predicates - which strategy applies
+      is determined lexically, not by speaker choice.
+  - scope: "person-agreement on ong·a"
+    status: verified
+    confidence: high
+    status_note: >-
+      2026-07-25 direct answer: ong·a confirmed invariant across all
+      3 persons - no person-agreement inflection. Full paradigm also
+      given: past ong·aha, future ong·gen, negative future ong·jawa,
+      interrogative ong·genma, imperative ong·bo.
+  - scope: "lexical-conditioning question - what determines which of the three strategies a given predicate word belongs to (closed lexical list, semantic class, or morphological property of the root)?"
+    status: needs_native_validation
+    confidence: medium
+    status_note: "narrowed but not answered by either 2026-07-18 or 2026-07-25 update - explicitly still open"
+  - scope: "noun-predicate case (NV-017, e.g. \"my father is a teacher\")"
+    status: needs_native_validation
+    confidence: low
+    status_note: "daka's phrase-forming pattern (2026-07-18) informs but does not resolve this - that finding is about adjective-like predicates specifically, skigipa (\"teacher\") is a noun, not a quality word, so NV-017 stays open"
+examples:
+  - 'ong·a-copula (bare): Anga kusi ong·a, Anga duk ong·a, Achak tebil kokkimao ong·a (locative/existential use)'
+  - 'Self-inflecting: Anga sakamenga'
+  - 'Zero-copula bare-adjective: Gari sila, Me·chik sila, Me·asa sila, Ua me·asa namen changroa, Anga am, Sepanga/Chel·a (near/far)'
+  - 'daka-phrase (new, 2026-07-18): Seng·a daka="to be rude", Jara daka="to be foolish"'
+counterexamples:
+  note: "N/A - this rule documents an unresolved contradiction, not a settled pattern"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "highest-priority open linguistic question for the launch sprint, given predication's frequency"
+native_notes: >-
+  Source Rule 31, flagged by repository audit. Direct NV-002 answer
+  received 2026-07-18, confirming ong·a is required (not optional) for
+  strategy (a). See docs/THANGSENG_NATIVE_VALIDATION.md NV-002
+  (answered), NV-017 (still open - noun-predicate case).
+corrections:
+  # Preserved distinctly from strengthened_by (RULE-004) - these are
+  # retractions/narrowings of the rule's own earlier content, not
+  # external confirmations strengthening it.
+  - date: "2026-07-09"
+    note: >-
+      An earlier working note in this session speculated that "Anga
+      duk ong·enga" (sad, with progressive suffix) suggested a fourth
+      copula-adjacent pattern. That form is stale -
+      docs/GLOBAL_RAKA_CONVERSION_HANDOFF.md (2026-06-17) shows it was
+      corrected to "Anga duk ong·a" (bare, no progressive) before this
+      session started, confirmed live in corrections.json. The
+      speculation was built on a historical batch log without checking
+      whether it had been superseded - retracted here rather than left
+      standing. duk ong·a is just another instance of the already-known
+      bare ong·a pattern, not a new one.
+  - date: "2026-07-10"
+    note: >-
+      Cross-checking GARO_GRAMMAR_REFERENCE.md against live
+      corrections.json (see RULE-005) confirms daka is a real,
+      broadly-used copula for bare existential and predicate-nominal
+      constructions - not merely "unattested" as this rule previously
+      said. This narrows the open question rather than resolving it:
+      daka is confirmed to NOT compete with ong·a/bare-adjective for
+      predicate-adjective sentences specifically (no confirmed case of
+      daka following a clear adjective, only one ambiguous case) - so
+      the real unresolved selection is ong·a vs. bare-adjective for
+      predicate adjectives, a 2-way question.
+related_findings:
+  # New volunteered information not directly resolving this rule's own
+  # open questions, but recorded here since it surfaced in the same
+  # exchange and is directly relevant.
+  - note: >-
+      ong·a's second sense: Thangseng volunteered that ong·a can also
+      mean "correct"/"right" independent of its copula use: "It can
+      also be mean right or correct (Example: Ong'ama ong'ja? = (Is
+      it) correct or not?)" - worth tracking as a distinct sense, not
+      conflating with the copula use.
+  - note: >-
+      daka's phrase-forming pattern: "Daka generally means to do. But
+      (this is important), it used to form phrases, where it is
+      preceded by another word. Example: Seng'a daka = to be rude;
+      jara daka = to be foolish." daka forms an idiomatic "to be
+      [quality]" construction when preceded by a quality/adjective-like
+      word, distinct from its plain "to do" sense - evidence about
+      adjective-like predicates specifically, doesn't directly address
+      noun predicates (see claim 4 above, NV-017).
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-031"

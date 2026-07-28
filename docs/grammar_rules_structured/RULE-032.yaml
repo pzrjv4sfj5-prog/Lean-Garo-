@@ -1,0 +1,41 @@
+id: RULE-032
+title: "`search` = `Sandia`"
+description: >-
+  `Sandia` is the confirmed, correct word for "search," replacing a
+  contaminated `am·e·nik·na` compound that persisted incorrectly in
+  some code paths.
+dependencies:
+  - id: null
+    name: "RC-CANDIDATE-006 (docs/PENDING_REGRESSION_CASES.md)"
+    note: "the still-live purpose-clause bug where am·e·nik·na persists despite this rule"
+claims:
+  - scope: "Sandia as the primary form"
+    status: verified
+    confidence: high
+  - scope: "relationship between Sandia and Am·a (second independently-confirmed word for \"search\")"
+    status: verified
+    status_note: "Am·a's existence is verified; HOW it relates to Sandia (synonym, register variant, or narrower sense) is not yet distinguished"
+    confidence: medium
+examples:
+  - 'search, search for him, he searched, he was searching, she used to search — full paradigm confirmed via natural applyTense generation from the Sandia root'
+counterexamples:
+  note: >-
+    am·e·nik·na — confirmed wrong, retained as documented
+    counterexample. Also see Am·a (note the raka) — a second,
+    independently-confirmed word for "search" (primary source, July 3
+    transcript: "Sandia = search / Am·a (note the raka) = search") —
+    likely a synonym, not a competing "correct" answer; not yet
+    resolved which the translator should prefer by default beyond
+    Sandia, already the more repeatedly-attested one.
+  items: []
+launch_priority:
+  - scope: "Sandia"
+    tier: P0
+    note: "implemented in corrections.json"
+  - scope: "purpose_map.json's stale am·e·nik·na, RC-CANDIDATE-006"
+    tier: P1
+    note: "already reviewed with Sandi·na recommended"
+native_notes: "Source Rule 32, GRAMMAR_SPEC.md; Am·a synonym from July 3 primary-source transcript."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-032"

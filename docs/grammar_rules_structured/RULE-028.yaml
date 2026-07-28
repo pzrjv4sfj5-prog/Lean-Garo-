@@ -1,0 +1,39 @@
+id: RULE-028
+title: "`-aha`/`-manaha` Overlap in Spoken Garo"
+description: >-
+  `-aha` (simple past/perfect, RULE-002) and `-manaha` (completive,
+  RULE-026) overlap in meaning in spoken Garo — not fully distinct
+  categories in practice, though RULE-026 treats them as formally
+  separate.
+dependencies:
+  - id: RULE-002
+    name: null
+    note: "this rule is the explicit native confirmation that RULE-002 and RULE-026's domains overlap rather than being cleanly complementary"
+  - id: RULE-026
+    name: null
+    note: null
+claims:
+  - scope: "spoken register"
+    status: verified
+    confidence: high
+  - scope: "written/literary register"
+    status: unknown
+    confidence: n/a
+    status_note: "explicitly unconfirmed - Thangseng flagged this distinction himself: \"How it is used in literature cannot be verified due to lack of source.\""
+examples:
+  - 'cha·aha="ate" vs. cha·manaha="ate/has done eating" — both acceptable, per Thangseng'
+counterexamples:
+  note: "none - this rule documents overlap, not a contrast"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "by design, no code enforces artificial separation (GRAMMAR_SPEC.md's own note)"
+native_notes: >-
+  Primary source, July 5 transcript, direct answer to "does -manaha
+  ever overlap with or replace -aha?": "'aha' and 'manaha' do overlap
+  in meaning as far as spoken Garo is concerned. How it is used in
+  literature cannot be verified due to lack of source."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-028"

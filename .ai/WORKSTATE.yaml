@@ -1,5 +1,5 @@
 repository:
-  head: 04f1cdb
+  head: ebf0e48
   last_updated: "2026-07-26"
   test_status: "116/116 regression tests passing, build clean, lint clean. translationEngine.js modularization (BACKLOG-003) Phase 1-3 and 7 of 8 done (939 lines, down from 1130). Placeholder-entry consistency audit (Check E) covers 4 source files, 115 entries allowlisted pending Claude A. Phase 5 (grammarEngine.js) deliberately deferred to a fresh session - highest-risk phase."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -243,19 +243,15 @@ claude_a:
       already planned for the 12 compound-claim rules. Project Owner
       confirmed Option C, 2026-07-26.
     judgment_pass_status: >-
-      STARTED, 2026-07-26. 5 of 19 deferred rules done: RULE-G2 (2
-      claims), RULE-005 (3 claims), RULE-006 (2 claims), RULE-009 (3
-      claims, hardest so far - source compounds two dimensions, WHICH
-      suffix and individual-vs-system-level evidence, not perfectly
-      orthogonal but every distinct source statement preserved),
-      RULE-004 (2 claims, plus a new strengthened_by field for dated
-      post-hoc confirmations that don't fit native_notes cleanly).
-      New enum values needed beyond the original proposal: status
-      "unknown" (RULE-004's unfilled cell) and confidence "unspecified"
-      (RULE-006, where the source's single confidence rating wasn't
-      clearly attributable to one claim). Remaining: RULE-018, 026,
-      028, 030, 031, 032, 033, 034, 035, 036, 037, 038, 039, 041.
-    migrated: ["RULE-001", "RULE-002", "RULE-003", "RULE-003b", "RULE-007", "RULE-008", "RULE-013", "RULE-014", "RULE-015", "RULE-017", "RULE-020", "RULE-021", "RULE-023", "RULE-024", "RULE-025", "RULE-027", "RULE-029", "RULE-040", "RULE-042", "RULE-G7", "RULE-G-classifier", "RULE-G2", "RULE-005", "RULE-006", "RULE-009", "RULE-004"]
+      10 of 19 deferred rules done: RULE-G2, 005, 006, 009, 004, 018,
+      026, 028, 032, 031 (the last one, RULE-031, is the largest/most
+      complex rule in the catalogue - 4 claims plus new corrections
+      and related_findings fields to preserve retractions/narrowings
+      and volunteered-but-tangential findings distinctly). New
+      confidence value needed: medium_high (RULE-026, RULE-032 uses
+      existing medium). Remaining: RULE-030, 033, 034, 035, 036, 037,
+      038, 039, 041.
+    migrated: ["RULE-001", "RULE-002", "RULE-003", "RULE-003b", "RULE-007", "RULE-008", "RULE-013", "RULE-014", "RULE-015", "RULE-017", "RULE-020", "RULE-021", "RULE-023", "RULE-024", "RULE-025", "RULE-027", "RULE-029", "RULE-040", "RULE-042", "RULE-G7", "RULE-G-classifier", "RULE-G2", "RULE-005", "RULE-006", "RULE-009", "RULE-004", "RULE-018", "RULE-026", "RULE-028", "RULE-032", "RULE-031"]
     total_rules: 40
     mechanical_pass_status: >-
       COMPLETE, 2026-07-26. Every rule in GRAMMAR_RULE_CATALOGUE.md has
