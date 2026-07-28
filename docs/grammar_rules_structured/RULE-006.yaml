@@ -1,0 +1,37 @@
+id: RULE-006
+title: "Adjective Placement"
+description: >-
+  Adjectives follow the noun they modify (confirmed pattern across
+  attested examples), not preceding it as in English.
+dependencies:
+  - id: RULE-031
+    name: null
+    note: "shares evidence with the bare-adjective predicative strategy"
+claims:
+  - scope: "predicative use"
+    status: verified
+    confidence: medium
+    confidence_note: >-
+      source gives one overall "Confidence: Medium" not split by
+      claim - assigned here to the predicative claim since it's the
+      one marked Verified; the attributive claim's confidence is left
+      unspecified below rather than guessed, since the source doesn't
+      clearly attribute the Medium rating to one claim or the other.
+  - scope: "attributive use (noun+adjective within a noun phrase, rather than as a predicate)"
+    status: needs_native_validation
+    status_note: "no clean example distinguishing this from predicative use found yet"
+    confidence: unspecified
+    confidence_note: "see the predicative claim's confidence_note - source's single Medium rating not clearly attributable to this claim specifically"
+examples:
+  - 'Gari sila = "the car is beautiful" (predicative use); attributive use not separately attested with its own example'
+counterexamples:
+  note: "none recorded"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+    note: "not modeled in the engine at all (GRAMMAR_SPEC.md's own note)"
+native_notes: "Source Rule 6, GRAMMAR_SPEC.md."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-006"

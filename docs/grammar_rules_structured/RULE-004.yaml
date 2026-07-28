@@ -1,0 +1,58 @@
+id: RULE-004
+title: "Pronoun Paradigm"
+description: >-
+  Full subject/object/possessive pronoun table, plus formal/informal
+  register pair (Ua/Bia).
+dependencies: []
+claims:
+  - scope: "core table"
+    status: verified
+    confidence: high
+  - scope: "informal locative cell (bio, \"at him/her\")"
+    status: unknown
+    confidence: n/a
+    status_note: "unfilled cell, not a counterexample - no attested form in either register. Do not guess a value."
+examples:
+  - "See Grammar Specification §3."
+counterexamples:
+  note: >-
+    bio (informal locative "at him/her") has no attested form in
+    either register — not a counterexample, an unfilled cell.
+  items: []
+launch_priority:
+  - scope: "core table"
+    tier: P0
+  - scope: "unfilled cell (bio)"
+    tier: "deferred"
+    note: "low practical impact"
+native_notes: "Source Rule 4."
+strengthened_by:
+  # New field, not in the original 8. Distinct from native_notes:
+  # these are dated, specific post-hoc confirmations that strengthen
+  # an existing claim, not general sourcing notes - preserved as their
+  # own field rather than merged in and losing that distinction.
+  - date: "2026-07-08"
+    note: >-
+      docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md Case 1 confirms subject
+      pro-drop occurs outside the imperative context RULE-003b already
+      covers — a full declarative sentence ("(I) don't need to watch
+      TV...") with "I" fully implied, not spoken, native-confirmed by
+      Thangseng. This is existing knowledge getting stronger (pro-drop
+      is broader than the imperative-only case previously documented),
+      not a new rule — RULE-003b's scope note should be read as
+      "imperatives always drop the subject" rather than "only
+      imperatives drop the subject." No catalogue change needed beyond
+      this note; flagging so a future implementer doesn't assume
+      subject-drop is imperative-exclusive.
+  - date: "2026-07-14"
+    note: >-
+      Direct native statement, not just observed pattern — asked about
+      "Hai (an·ching) chrokna"-style examples with optional
+      parentheticals, Thangseng: "The normal use is with the words in
+      the bracket omitted." Confirms omission is the default, unmarked
+      register, not an optional stylistic variant — a stronger claim
+      than "pro-drop is possible," which is what the evidence
+      supported before this explicit statement.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-004"

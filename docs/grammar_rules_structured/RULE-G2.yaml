@@ -1,0 +1,38 @@
+id: RULE-G2
+title: "Pre-verbal Clustering (Locative Phrases)"
+description: >-
+  Locative phrases, classifier+number phrases, and other adjunct
+  material cluster before the verb in SOV order, consistent with
+  RULE-003.
+dependencies:
+  - id: RULE-003
+    name: "SOV Word Order"
+    note: null
+  - id: RULE-033
+    name: "Locative \"Under\""
+    note: null
+claims:
+  # Judgment-pass split, 2026-07-26 (Claude A). Source Validation
+  # Status was one sentence covering two distinct claims: the specific
+  # confirmed example, and the general productivity question left
+  # open by that single example. Splitting preserves both as separate,
+  # separately-confidence-rated claims rather than one blended status.
+  - scope: "the confirmed example itself (locative phrase clustering before the verb, this specific sentence)"
+    status: verified
+    confidence: high
+  - scope: "general productivity across arbitrary locative+verb combinations"
+    status: needs_native_validation
+    status_note: "not yet stress-tested - see Grammar Specification §2. Source phrasing implies untested/unconfirmed, not actively disconfirmed - treat as open, not as a known problem."
+    confidence: medium
+examples:
+  - 'Achak tebil nokkimao ong·a = "the dog is under the table" (locative phrase tebil nokkimao clusters before ong·a)'
+counterexamples:
+  note: "none recorded"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+native_notes: "Same source as RULE-033 — direct Thangseng confirmation, 2026-07-05."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-G2"

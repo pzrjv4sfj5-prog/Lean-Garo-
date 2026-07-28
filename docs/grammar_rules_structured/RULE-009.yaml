@@ -1,0 +1,55 @@
+id: RULE-009
+title: "Noun Suffix System"
+description: >-
+  Umbrella rule for the noun-case suffix set: `-ko` (accusative/object),
+  `-o` (locative), `-chi` (allative/motion-to), `-ni` (genitive), `-na`
+  (dative/infinitive-purposive). Each suffix independently confirmed
+  (see RULE-033/034/035 for `-o` specifically); this entry exists to
+  track the system rather than duplicate each suffix's own rule.
+dependencies:
+  - id: RULE-033
+    name: null
+    note: "-o"
+  - id: RULE-034
+    name: null
+    note: "-o"
+  - id: RULE-035
+    name: null
+    note: "-o"
+  - id: RULE-030
+    name: null
+    note: "-chi"
+claims:
+  # Judgment-pass split, 2026-07-26 (Claude A). Source compounds two
+  # distinct dimensions in one rule: WHICH suffix, and individual
+  # confirmation vs. system-level generalization. Not perfectly
+  # orthogonal as split below, but preserves every distinct statement
+  # made in the source rather than forcing a clean 2D structure that
+  # isn't actually there.
+  - scope: "-ko, -chi, -ni, -na individually"
+    status: verified
+    confidence: high
+  - scope: "-o individually"
+    status: verified
+    status_note: "with productivity caveats, per RULE-033/RULE-G2"
+    confidence: high
+  - scope: "system-level generalization across arbitrary nouns"
+    status: needs_native_validation
+    confidence: medium
+examples:
+  - "see RULE-033 (-o), RULE-030 (-chi)"
+  - 'Angni ki·tap = "my book" (-ni)'
+  - 'Angna ki·tap ra·babo = "bring me a book" (-na dative)'
+counterexamples:
+  note: "none recorded"
+  items: []
+launch_priority:
+  - scope: "-ko"
+    tier: P0
+    note: "implemented - the only one currently wired, per GRAMMAR_SPEC.md's own gap note, confirmed by engine read"
+  - scope: "-o / -chi / -ni / -na general grammar-assembly routing"
+    tier: P1
+native_notes: "Source Rule 9, GRAMMAR_SPEC.md; primary source suffixes.pdf for the full system overview."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-009"

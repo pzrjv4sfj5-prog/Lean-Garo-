@@ -1,0 +1,66 @@
+id: RULE-005
+title: "Copula `daka`"
+description: >-
+  `daka` functions as a copula in at least one confirmed context: bare
+  existential "to be" with no complement. A second proposed context
+  (predicate nominal) is disconfirmed. `daka` also has a separate, real
+  role forming idiomatic "to be [quality]" phrases when preceded by a
+  quality/adjective-like word - a distinct construction from the other
+  two, see RULE-031.
+dependencies:
+  - id: RULE-031
+    name: "Copula Inconsistency"
+    note: "this finding resolves rather than merely narrows the predicate-nominal question: ong·a is confirmed for noun predicates, daka is not a competing candidate there"
+claims:
+  - scope: "bare existential \"to be\", no complement"
+    status: verified
+    confidence: high
+  - scope: "predicate nominal (\"X is a Y\")"
+    status: disconfirmed
+    confidence: n/a
+    status_note: >-
+      2026-07-18 update: this rule's own example ("my father is a
+      teacher") was flagged provenance-uncertain 2026-07-10, and that
+      caution was justified. Direct native answer (NV-017): "It is
+      pagipa. daka is to do in terms of working. Ong'a is to be. So it
+      is ong'a." Corrected in corrections.json. daka's gloss as "to
+      do, in terms of working" is consistent with the quality+daka
+      idiom, not a general predicate-nominal copula.
+  - scope: "predicate-adjective use (the \"rinok rinok daka\" ambiguous case)"
+    status: needs_native_validation
+    confidence: low
+    status_note: "unaffected by the 2026-07-18 predicate-nominal update - a separate, still-open question"
+examples:
+  - 'Anga daka / Na·a daka / Ua daka / An·ching daka (bare, all persons, verified live in corrections.json)'
+  - '~~Ang·ni pa·a skigipa daka~~ (predicate nominal) — disconfirmed 2026-07-18, struck through per this project''s citation discipline, not deleted'
+  - 'rinok rinok daka (ambiguous, unresolved)'
+  - 'Seng·a daka="to be rude", Jara daka="to be foolish" (quality+daka idiom)'
+counterexamples:
+  note: >-
+    Anga kusi ong·a="I am happy", Nama ong·a="it is good", and now
+    Angni pagipa skigipa ong·a="my father is a teacher" — ong·a
+    confirmed for both predicate-adjective and predicate-nominal
+    constructions. daka is not a general predicate copula competing
+    with ong·a; its confirmed roles are narrower.
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: >-
+      bare-copula use not wired into translationEngine.js
+      grammar-assembly at all (confirmed via full engine read,
+      2026-07-09) despite being clearly live and correct in
+      corrections.json's exact-match layer. The engine gap is real
+      even though the linguistic rule is now better-evidenced than
+      before.
+native_notes: >-
+  Source Rule 5, GRAMMAR_SPEC.md. GARO_GRAMMAR_REFERENCE.md
+  (2026-07-10 review) claims daka "works for ALL persons" as a general
+  copula — confirmed correct for the bare-existential claim only; the
+  predicate-nominal claim from the same document is now known wrong,
+  consistent with that document's other confirmed error elsewhere
+  (ring·aha mislabeled "drank"). General lesson: legacy doc trust is
+  per-claim, not per-document.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-005"
