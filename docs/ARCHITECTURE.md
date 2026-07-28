@@ -653,6 +653,7 @@ for their individual write-ups.
 | `translationEngine.js` | Orchestration: normalization, tokenization, grammar analysis, suffix generation, sentence assembly (lexical lookup now delegated, see `lookupEngine.js` below) | `lookupEngine.js`, `utils.js`, `compiled_dict_alternates.json`, `category_index.json`, `phrase_maps.js`, `garo_classifier.js`, `number_engine.js` | raw string | `{garo, method, confidence}` (named export `translate`); platform-adapter shape from default export |
 | `lookupEngine.js` | Lexical lookup + corrections precedence — `lookup`, `lookupGaro`, `EN_INDEX`, `corrections` (2026-07-25, Phase 2 of BACKLOG-003, extracted verbatim, zero logic change) | `compiled_dict.json`, `data/corrections.json` | word/phrase string | Garo string or `null` |
 | `morphologyEngine.js` | Verb/tense/negation morphology — `applyTense`, `applyNegation`, `findVerbForm`, `stripToStem` (2026-07-25, Phase 3 of BACKLOG-003, extracted verbatim) | `lookupEngine.js`, `data/irregular_verbs.json` | verb/word string | inflected Garo string or `null` |
+| `normalizationEngine.js` | Input normalization, stop-word/auxiliary tables, connective splitting, fuzzy-match fallback (2026-07-26, Phase 7 of BACKLOG-003, extracted verbatim) | `lookupEngine.js`, `utils.js` | raw string / word | normalized string or match object |
 | `utils.js` | Pure, dependency-free helpers — `levenshtein` (2026-07-25, Phase 1 of BACKLOG-003) | none | — | — |
 | `garo_classifier.js` | Numeral classifier system (mang·/sak·/king/jol/pang/dot/ge·), number-word parsing | `number_engine.js` (implied for number words) | noun + count | classifier-suffixed phrase or `null` |
 | `number_engine.js` | English number word / digit → Garo number word | none | number | Garo numeral string |
@@ -705,15 +706,19 @@ function interprets, rather than a flat key-value JSON). Not started.
 
 ### BACKLOG-003 — translationEngine.js Modularization (engineering audit, 2026-07-25)
 
-**Status: Phase 1-3 of 8 DONE (2026-07-25).** `utils.js`
+**Status: Phase 1-3 and 7 of 8 DONE (2026-07-26).** `utils.js`
 (`levenshtein`), `lookupEngine.js` (`lookup`, `lookupGaro`,
-`EN_INDEX`, `corrections`), and `morphologyEngine.js`
-(`applyNegation`, `applyTense`, `findVerbForm`, `stripToStem`)
-extracted verbatim, zero logic change. Verified via byte-identical
-diff of the full 237-sentence stress benchmark before/after (`git
-stash` A/B comparison) at every phase, plus 106/106 unit tests,
-`npm run lint` clean, repository-intelligence Check A–D clean.
-`translationEngine.js`: 1130 → ~1000 lines.
+`EN_INDEX`, `corrections`), `morphologyEngine.js` (`applyNegation`,
+`applyTense`, `findVerbForm`, `stripToStem`), and
+`normalizationEngine.js` (`STOP_WORDS`, `AUXILIARY_SKIP`,
+`fuzzyMatch`, `normalizeInput`, `MID_JOIN_CONNECTIVES`) extracted
+verbatim, zero logic change. Verified via byte-identical diff of the
+full 237-sentence stress benchmark before/after (`git stash` A/B
+comparison) at every phase. `translationEngine.js`: 1130 → 939 lines.
+Phase 5 (`grammarEngine.js`, extracting `analyzeGrammar`) remains
+deliberately deferred — highest-risk phase, its own dedicated session,
+extract-method + diff-per-substep discipline. Phase 6
+(`sentenceBuilder.js`) not started, depends on Phase 5.
 
 **Objective:** `translationEngine.js` had grown to 1130 lines handling
 lexical lookup, correction precedence, grammar rules, morphology,
@@ -746,7 +751,7 @@ per-phase dependency/risk detail):
    `translateIfClause`, `translateMultiClause`. Should also resolve
    (or document) the current overlap between `assembleSentenceSOV` and
    `assembleGrammar` — unclear from the code alone why both exist.
-7. `normalizationEngine.js` — `normalizeInput`, `STOP_WORDS`,
+7. ✅ `normalizationEngine.js` — `normalizeInput`, `STOP_WORDS`,
    `AUXILIARY_SKIP`, `MID_JOIN_CONNECTIVES`, `fuzzyMatch`. Low risk.
 8. `translationEngine.js` becomes orchestrator-only — just `translate()`
    (the priority cascade) + the public query API, importing from all
