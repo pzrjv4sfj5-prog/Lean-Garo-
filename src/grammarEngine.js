@@ -308,6 +308,19 @@ export function analyzeGrammar(input) {
         if (/^(in|on|at)$/.test(w)) pendingLocative = true;
         continue;
       }
+      // Negation-word guard (2026-07-29, found via live quality check,
+      // Claude B): "not"/"never" are neither STOP_WORDS nor
+      // AUXILIARY_SKIP, so they were falling through and being captured
+      // as the OBJECT in negative intransitive sentences ("i did not
+      // eat" -> object.english="not" -> lookupGaro fails -> '[UNKNOWN]').
+      // Same category of fix as the NUMBER_WORDS guard on the verb loop
+      // above ("a number word is never the main verb") - a bare negation
+      // particle is never the object, in any reading of English grammar,
+      // not a contested linguistic call. isNegative (detected earlier via
+      // the same /n't|\b(not|never)\b/i pattern) already carries this
+      // sentence's negation status independently, so dropping these two
+      // words here loses no information.
+      if (/^(not|never)$/.test(w)) continue;
       if (verb && words[i] === verb.english) continue;
       if (IRREGULAR_VERBS[w] || IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')]) continue;
       if (pendingLocative) { objectIsLocativeAdjunct = true; pendingLocative = false; }

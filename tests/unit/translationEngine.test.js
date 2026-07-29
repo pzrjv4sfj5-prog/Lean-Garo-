@@ -697,3 +697,40 @@ test('RC-CANDIDATE-027: same-case duplicates ("watch") are unaffected, old behav
 // content the same way implementing it in the engine would. Revisit
 // once that proposal (or a dedicated interrogative-formation rule) is
 // reviewed and committed to the grammar docs.
+
+// --- Found via live end-to-end quality check (2026-07-29, Claude B),
+// not from a regression report: an unresolved object (word not in the
+// dictionary) was being silently OMITTED from assembleGrammar's output
+// instead of surfacing as '[UNKNOWN]', which defeated that function's
+// own '[UNKNOWN]'-rejection safety check. Confirmed live: "she is using
+// her smartphone" -> "Ua Chingna" (entire object AND possessive silently
+// vanished), returned as method='grammar-assembly' confidence=0.82 -
+// indistinguishable from a correct translation. Fixing this exposed a
+// second, deeper bug: analyzeGrammar's object-extraction loop had no
+// negation guard, so bare "not"/"never" were being captured as the
+// OBJECT in negative intransitive sentences ("i did not eat"), which
+// also produces '[UNKNOWN]' - the two bugs had been silently
+// cancelling out. Both fixed together; see grammarEngine.js and
+// sentenceBuilder.js for the two fix-site comments.
+test('unresolved object no longer silently vanishes from grammar-assembly output', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('she is using her smartphone');
+  // Must NOT be a confident grammar-assembly result missing its object -
+  // either it correctly falls through to a lower-confidence method, or
+  // it surfaces [UNKNOWN] - anything but silently dropping content while
+  // claiming grammar-assembly's normal confidence.
+  assert.ok(
+    r.method !== 'grammar-assembly' || r.garo.includes('[UNKNOWN]') || r.garo.includes('[unknown]'),
+    `object must not silently vanish while claiming full grammar-assembly confidence, got: ${JSON.stringify(r)}`
+  );
+});
+
+test('negation guard: bare "not"/"never" are never captured as the object', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r1 = await translate('i did not eat');
+  assert.equal(r1.method, 'grammar-assembly');
+  assert.ok(!r1.garo.includes('[UNKNOWN]') && !r1.garo.includes('[unknown]'), `got: ${r1.garo}`);
+  const r2 = await translate('he did not go');
+  assert.equal(r2.method, 'grammar-assembly');
+  assert.ok(!r2.garo.includes('[UNKNOWN]') && !r2.garo.includes('[unknown]'), `got: ${r2.garo}`);
+});

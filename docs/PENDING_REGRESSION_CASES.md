@@ -1236,3 +1236,53 @@ quality, re-check these against the new capture.
   2026-07-25 (Claude A). OCR note: "Entry cut off at the bottom of the
   page." Literally trails off mid-word, no coherent definition
   captured. Same reasoning as the page 75 hold above.
+
+### RC-CANDIDATE-029 — Unresolved objects silently vanished from grammar-assembly; negation words spuriously captured as objects
+
+**Status: RESOLVED (Claude B, 2026-07-29).** Found via a live
+end-to-end quality check after BACKLOG-003's modularization work,
+not from a regression report - not previously documented.
+
+Two bugs, found together because the first was masking the second:
+
+1. `assembleGrammar` (`sentenceBuilder.js`) skipped pushing the object
+   (and possessive) when `object.garo === '[UNKNOWN]'`, instead of
+   including it. This defeated the function's own
+   `result.includes('[UNKNOWN]')` safety check further down, which can
+   only catch `'[UNKNOWN]'` if it actually appears in the joined
+   string. Confirmed live: `"she is using her smartphone"` ->
+   `"Ua Chingna"` (subject+verb only; the entire object AND its
+   possessive silently vanished), returned as
+   `method='grammar-assembly', confidence=0.82` - indistinguishable
+   from a fully correct translation.
+
+2. Fixing (1) exposed a second bug: `analyzeGrammar`'s object-
+   extraction loop (`grammarEngine.js`) had no negation guard, so bare
+   `"not"`/`"never"` were being captured as the OBJECT in negative
+   intransitive sentences (`"i did not eat"` -> object.english=`"not"`
+   -> unresolvable -> `[UNKNOWN]`). Before fix (1), this silently
+   dropped harmlessly (the same masking bug also discarded this
+   spurious object) and correctly fell back to just subject+verb -
+   by coincidence, not by design. After fix (1) alone, these
+   sentences would have incorrectly fallen through to `sov-assembly`
+   instead of `grammar-assembly`, breaking existing tests - which is
+   what surfaced this second bug.
+
+Both are pure engineering fixes, not linguistic calls - a negation
+particle is never a candidate direct object in any reading of English
+grammar, same category as the existing `NUMBER_WORDS` guard on the
+verb loop ("a number word is never the main verb"). No new Garo
+vocabulary or grammar invented.
+
+Also found and fixed in the same pass: the object text was being
+lowercased before the `[UNKNOWN]` check, turning it into
+`'[unknown]'` and defeating the (now case-sensitive-safe) check a
+second way.
+
+127/127 tests (2 new), build clean, lint clean. Stress benchmark: 1
+line changed (`"i watch tv"` - same Garo output text, since
+`sov-assembly` independently also drops the unresolvable `"tv"`, but
+now correctly labeled `method='sov-assembly', confidence=0.75`
+instead of falsely claiming `grammar-assembly`'s 0.82 - "tv" isn't in
+the dictionary either, same root-cause pattern caught a second time
+by the corpus itself).

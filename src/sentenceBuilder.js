@@ -152,11 +152,33 @@ export function assembleGrammar(grammar) {
   // RC-CANDIDATE-002 fix (Claude A approved, 2026-07-10): use ·o for a
   // confirmed locative adjunct (in/on/at + noun), ·ko otherwise (default,
   // unchanged behavior for genuine direct objects).
+  //
+  // Engineering fix (2026-07-29, Claude B, found via live quality check,
+  // not a regression case report): the `garo !== '[UNKNOWN]'` guard here
+  // meant an unresolved object (e.g. "smartphone" — not in the
+  // dictionary) was silently OMITTED from `parts` entirely, along with
+  // its possessive, rather than included as '[UNKNOWN]' — which defeated
+  // the `result.includes('[UNKNOWN]')` safety check below (line ~192):
+  // that check can only catch '[UNKNOWN]' if it's actually present in the
+  // joined string. Confirmed live: "she is using her smartphone" ->
+  // "Ua Chingna" (subject+verb only, entire object AND possessive
+  // silently vanished), returned as method='grammar-assembly',
+  // confidence=0.82 — indistinguishable from a fully correct
+  // translation, no signal anything was dropped. Now always pushes
+  // possessive+object (or object) when an object exists, so an unknown
+  // object correctly makes it into `result`, correctly trips the
+  // existing '[UNKNOWN]' check, and correctly falls through to the next
+  // cascade step (sov-assembly / morphology / passthrough) instead of
+  // confidently returning an incomplete sentence. Pure engineering fix —
+  // restores the behavior the existing check was already written to
+  // provide, no new Garo vocabulary or grammar invented.
   const objMarker = (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : '·ko';
-  if (grammar.possessive && grammar.object && grammar.object.garo !== '[UNKNOWN]') {
-    parts.push(grammar.possessive.garo + ' ' + grammar.object.garo.toLowerCase() + objMarker);
-  } else if (grammar.object && grammar.object.garo !== '[UNKNOWN]') {
-    parts.push(grammar.object.garo.toLowerCase() + objMarker);
+  if (grammar.possessive && grammar.object) {
+    const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
+    parts.push(grammar.possessive.garo + ' ' + objText + objMarker);
+  } else if (grammar.object) {
+    const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
+    parts.push(objText + objMarker);
   }
 
   // Purpose clause
