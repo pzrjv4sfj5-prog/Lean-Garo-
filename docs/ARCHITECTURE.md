@@ -706,7 +706,7 @@ function interprets, rather than a flat key-value JSON). Not started.
 
 ### BACKLOG-003 — translationEngine.js Modularization (engineering audit, 2026-07-25)
 
-**Status: Phase 1-3, 5-7 of 8 DONE (2026-07-29).** `utils.js`
+**Status: ALL 8 PHASES DONE (2026-07-29).** `utils.js`
 (`levenshtein`), `lookupEngine.js` (`lookup`, `lookupGaro`,
 `EN_INDEX`, `corrections`), `morphologyEngine.js` (`applyNegation`,
 `applyTense`, `findVerbForm`, `stripToStem`),
@@ -715,16 +715,25 @@ function interprets, rather than a flat key-value JSON). Not started.
 `grammarEngine.js` (`analyzeGrammar`, `tryWithoutGijaConstruction`),
 and `sentenceBuilder.js` (`assembleSentenceSOV`, `assembleGrammar`,
 `translateIfClause`, `translateMultiClause`) extracted verbatim, zero
-logic change. Verified via byte-identical diff of the full
-237-sentence stress benchmark before/after (`git stash` A/B
-comparison) at every phase. `translationEngine.js`: 1130 → 313 lines,
-now close to orchestrator-only (Phase 8 target). `sentenceBuilder.js`
-has a deliberate circular import back to `translate()` in
-`translationEngine.js` (documented in its header comment) — safe
-because the call only happens inside async function bodies, never at
-module-evaluation time; verified both via the stress benchmark and by
-directly exercising the if-clause/multi-clause code paths that use it.
-Phase 4 and Phase 8 not started.
+logic change, verified via byte-identical diff of the full
+237-sentence stress benchmark before/after at every phase. Phase 4
+(`garo_classifier.js`/`number_engine.js`) was already done in prior
+sessions before this modularization effort started — listed in the
+roadmap as precedent, not pending work. Phase 8 (orchestrator-only
+`translationEngine.js`) required no separate work: it was a natural
+byproduct of Phases 5 and 6 — confirmed 2026-07-29 by checking for any
+remaining grammar/verb/classifier logic outside the `translate()`
+cascade itself (none found; the one `STOP_WORDS` reference left is
+step 4 of the cascade, "stop-word strip + retry", listed in the
+file's own header as one of `translate()`'s 10 steps, not misplaced
+logic). `translationEngine.js`: 1130 → 313 lines — `translate()` (the
+priority cascade) + the public query API + the platform adapter
+object, importing from every extracted module. `sentenceBuilder.js`
+has a deliberate circular import back to `translate()` (documented in
+its header) — safe because the call only happens inside async
+function bodies, never at module-evaluation time; verified both via
+the stress benchmark and by directly exercising the if-clause/
+multi-clause paths that use it.
 
 **Objective:** `translationEngine.js` had grown to 1130 lines handling
 lexical lookup, correction precedence, grammar rules, morphology,
