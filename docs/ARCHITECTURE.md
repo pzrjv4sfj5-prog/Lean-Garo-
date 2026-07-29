@@ -706,19 +706,21 @@ function interprets, rather than a flat key-value JSON). Not started.
 
 ### BACKLOG-003 — translationEngine.js Modularization (engineering audit, 2026-07-25)
 
-**Status: Phase 1-3 and 7 of 8 DONE (2026-07-26).** `utils.js`
+**Status: Phase 1-3, 5, and 7 of 8 DONE (2026-07-29).** `utils.js`
 (`levenshtein`), `lookupEngine.js` (`lookup`, `lookupGaro`,
 `EN_INDEX`, `corrections`), `morphologyEngine.js` (`applyNegation`,
-`applyTense`, `findVerbForm`, `stripToStem`), and
+`applyTense`, `findVerbForm`, `stripToStem`),
 `normalizationEngine.js` (`STOP_WORDS`, `AUXILIARY_SKIP`,
-`fuzzyMatch`, `normalizeInput`, `MID_JOIN_CONNECTIVES`) extracted
-verbatim, zero logic change. Verified via byte-identical diff of the
-full 237-sentence stress benchmark before/after (`git stash` A/B
-comparison) at every phase. `translationEngine.js`: 1130 → 939 lines.
-Phase 5 (`grammarEngine.js`, extracting `analyzeGrammar`) remains
-deliberately deferred — highest-risk phase, its own dedicated session,
-extract-method + diff-per-substep discipline. Phase 6
-(`sentenceBuilder.js`) not started, depends on Phase 5.
+`fuzzyMatch`, `normalizeInput`, `MID_JOIN_CONNECTIVES`), and
+`grammarEngine.js` (`analyzeGrammar`, `tryWithoutGijaConstruction`)
+extracted verbatim, zero logic change. Verified via byte-identical
+diff of the full 237-sentence stress benchmark before/after (`git
+stash` A/B comparison) at every phase, including Phase 5.
+`translationEngine.js`: 1130 → 577 lines. `analyzeGrammar` re-exported
+from `translationEngine.js` for backward compatibility (existing
+callers, including tests, still import it from there). Phase 6
+(`sentenceBuilder.js`) unblocked, not started. Phase 4 and Phase 8
+also not started.
 
 **Objective:** `translationEngine.js` had grown to 1130 lines handling
 lexical lookup, correction precedence, grammar rules, morphology,
