@@ -706,21 +706,25 @@ function interprets, rather than a flat key-value JSON). Not started.
 
 ### BACKLOG-003 — translationEngine.js Modularization (engineering audit, 2026-07-25)
 
-**Status: Phase 1-3, 5, and 7 of 8 DONE (2026-07-29).** `utils.js`
+**Status: Phase 1-3, 5-7 of 8 DONE (2026-07-29).** `utils.js`
 (`levenshtein`), `lookupEngine.js` (`lookup`, `lookupGaro`,
 `EN_INDEX`, `corrections`), `morphologyEngine.js` (`applyNegation`,
 `applyTense`, `findVerbForm`, `stripToStem`),
 `normalizationEngine.js` (`STOP_WORDS`, `AUXILIARY_SKIP`,
-`fuzzyMatch`, `normalizeInput`, `MID_JOIN_CONNECTIVES`), and
-`grammarEngine.js` (`analyzeGrammar`, `tryWithoutGijaConstruction`)
-extracted verbatim, zero logic change. Verified via byte-identical
-diff of the full 237-sentence stress benchmark before/after (`git
-stash` A/B comparison) at every phase, including Phase 5.
-`translationEngine.js`: 1130 → 577 lines. `analyzeGrammar` re-exported
-from `translationEngine.js` for backward compatibility (existing
-callers, including tests, still import it from there). Phase 6
-(`sentenceBuilder.js`) unblocked, not started. Phase 4 and Phase 8
-also not started.
+`fuzzyMatch`, `normalizeInput`, `MID_JOIN_CONNECTIVES`),
+`grammarEngine.js` (`analyzeGrammar`, `tryWithoutGijaConstruction`),
+and `sentenceBuilder.js` (`assembleSentenceSOV`, `assembleGrammar`,
+`translateIfClause`, `translateMultiClause`) extracted verbatim, zero
+logic change. Verified via byte-identical diff of the full
+237-sentence stress benchmark before/after (`git stash` A/B
+comparison) at every phase. `translationEngine.js`: 1130 → 313 lines,
+now close to orchestrator-only (Phase 8 target). `sentenceBuilder.js`
+has a deliberate circular import back to `translate()` in
+`translationEngine.js` (documented in its header comment) — safe
+because the call only happens inside async function bodies, never at
+module-evaluation time; verified both via the stress benchmark and by
+directly exercising the if-clause/multi-clause code paths that use it.
+Phase 4 and Phase 8 not started.
 
 **Objective:** `translationEngine.js` had grown to 1130 lines handling
 lexical lookup, correction precedence, grammar rules, morphology,
