@@ -1,0 +1,82 @@
+id: RULE-030
+title: "`re·` vs. `re·ang` for \"Go\" [RESOLVED]"
+description: >-
+  Two forms of "go" coexist in confirmed data. Update 2026-07-18
+  (direct Thangseng answer to NV-001): the destination-presence
+  hypothesis this rule was built around is confirmed wrong as the
+  primary conditioning factor. Thangseng: "No, the form depends
+  primarily on the mood and the tense. Apart from those the negative
+  suffix also affects the form." Separately confirmed: -ang genuinely
+  functions as an "away from me" directional marker - but only in
+  composition with re·a ("to walk"/"to go") specifically, not as a
+  general directional affix. Treat -ang as carrying a real but narrow,
+  lexically-scoped sense tied to this one verb family - not a
+  productive general prefix (same homonymy-adjacent caution pattern as
+  ama).
+dependencies: []
+claims:
+  - scope: "destination presence/absence's effect on verb form (mood/tense/negation as the complete conditioning factor)"
+    status: verified
+    confidence: high
+    status_note: >-
+      Final confirmation, 2026-07-25: direct answer to three matched
+      pairs (bare vs. destination-bearing "not going," "did not go"):
+      "The verb form has virtually nothing to do with the destination.
+      Verb form is concerned with the mood and the tense." The
+      examples that appeared to correlate with destination presence
+      were coincidental, not causal.
+  - scope: "the -jaha/-ja gloss confusion (whether \"Ua re'angjaha\" means \"he did not go\" or \"he stopped going\")"
+    status: needs_native_validation
+    confidence: high
+    status_note: >-
+      RECONCILED 2026-07-26 via existing verified rules, not new
+      native data: RULE-025 (cessative -jaha, Verified/High) already
+      documents exactly this error pattern - -jaha means "was doing,
+      has now stopped," not "did not." So "Ua re'angjaha" almost
+      certainly means "he stopped going," and "Ua re'angja" (RULE-027,
+      no -ha, engine-verified) is the real "did not go." Confident in
+      the reasoning, but a direct native check on "Ua re'angjaha"
+      specifically would make this fully certain rather than strongly
+      inferred - added to next relay as a quick confirmation, not
+      treated as fully closed.
+examples:
+  - >-
+    Re·jawa = "I will not go" (bare, no destination) — derivation
+    confirmed directly, 2026-07-26: re·a ("to go") → re· (bare root,
+    per RULE-015 stem formation) → re· + jawa = re·jawa.
+  - 'Hai re·naha = "let''s go" (bare, no destination)'
+  - 'Anga re''angjaenga = "I am not going" (no destination)'
+  - 'Anga antichi re''angjaenga = "I am not going to the market" (destination present, same continuous-negative form either way)'
+  - 'Ua re''angja (not re''angjaha) = "he did not go" — corrected 2026-07-26'
+  - 'Contrast: Re·anga=go, re·angenga=going, Dokanchi re·angbo=go to the shop, nokchi re·anggen="will go home now", Antichi re·angbo="go to the market" (imperative)'
+counterexamples:
+  note: "N/A"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: >-
+      high-frequency verb. corrections.json's narrow patch
+      generalized 2026-07-25 (Claude B) — findVerbForm('go') was
+      returning the wrong root for negative-future tense on any
+      subject not already covered by the literal correction; fixed
+      with a scoped exception at the negative-future call site in
+      analyzeGrammar. Verified across all subject pronouns.
+native_notes: >-
+  Source Rule 30 (THANGSENG_RULES_LOOKUP.md), flagged 2026-07-05.
+  Direct NV-001 answer received 2026-07-18 (mood/tense/negation as
+  primary conditioners; -ang scope narrowed to re·a specifically).
+  Final confirmation 2026-07-25: destination presence/absence has
+  virtually no effect on verb form in either direction, direct
+  minimal-pair test. re·jawa derivation confirmed 2026-07-26. See
+  docs/THANGSENG_NATIVE_VALIDATION.md NV-001.
+corrections:
+  - date: "2026-07-26"
+    note: >-
+      The two re'angjaha examples previously glossed "he did not go" /
+      "he did not go to the market" are corrected, not just reworded -
+      see claim 2 above. re'angjaha examples relocated/reinterpreted
+      as the cessative sense per RULE-025, not deleted.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-030"

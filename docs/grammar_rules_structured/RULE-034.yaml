@@ -1,0 +1,45 @@
+id: RULE-034
+title: "Locative/Directional Word Set (Vocabulary Expansion)"
+description: >-
+  Nine additional single-word locative/directional lexical items,
+  proposed for the productive -o locative-suffix pattern established
+  by RULE-033: inside (ning'ao / nokningo), outside (a'palo), above
+  (kosako), behind (janggilo / janggilchipak), beside (sambao), up
+  (kosak), over (badeao, flagged uncertain by the source itself),
+  across (nalsao), below (ka'mao).
+dependencies:
+  - id: RULE-033
+    name: null
+    note: "established locative -o pattern this set extends"
+  - id: RULE-G2
+    name: null
+    note: "productivity boundary - this rule does not resolve that boundary, it adds candidate vocabulary within it"
+claims:
+  - scope: "eight items (all except \"over\")"
+    status: needs_native_validation
+    confidence: medium
+    status_note: "pending a direct Thangseng confirmation pass (ideally with a full example sentence each, matching RULE-033's standard)"
+  - scope: "\"over\"/badeao"
+    status: needs_native_validation
+    confidence: low
+    status_note: "explicitly flagged uncertain by the source itself"
+examples:
+  - "None yet at full-sentence level - these are single-word lexical proposals only, unlike RULE-033's \"under the table\" which has a complete native-confirmed sentence."
+counterexamples:
+  note: "None - nothing yet contradicts these; equally, nothing yet confirms them beyond the single relayed source."
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+    note: "vocabulary expansion, not a correctness bug; does not block V1.0. Recommend direct native confirmation before promotion to corrections.json or Validation Corpus status."
+native_notes: >-
+  Source: raw WhatsApp exchange between Thangseng and Tridip, relayed
+  2026-07-08. Native-sourced but evidentially weaker than the
+  project's usual bar for "Verified" (compare RULE-033's nokkimao,
+  which came from a direct native-confirmation session with a full
+  example sentence).
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-034"
+migration_flags:
+  - "This rule's 8-of-9 items (all except possibly \"over\") are very likely fully resolved by NV-003, closed 2026-07-25 this session: all 9 locative sentences directly confirmed by Thangseng, matching this rule's list closely (inside=ning'ao, outside=a'palo, above=kosako, behind=janggilo, beside=sambao, below=ka'mao, plus bridge/river sentences). Not updated in this rule during migration (scope), flagged for the reconciliation pass - this rule's status line should very likely change from Needs Native Validation to Verified once cross-checked against NV-003."

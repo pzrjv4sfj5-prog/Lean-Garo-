@@ -1,0 +1,52 @@
+id: RULE-039
+title: "Stative/Passive via Converb + Auxiliary (PROVISIONAL)"
+description: >-
+  Garo has no single-word stative/passive participle corresponding to
+  English "is X-ed" (tied, hung, hidden, etc.). The meaning is built
+  periphrastically: verb-root + converb marker ·e ("having [verb]-ed")
+  followed by an auxiliary (don·enga "is placed/set" or man·enga "has
+  come to be/succeeded"). Confirmed for exactly one verb so far (ka·a,
+  "to tie"): Achakko ka·e don·enga ("the dog is tied") and the
+  alternate Achak ka·e don·ako man·enga.
+dependencies: []
+claims:
+  - scope: "the construction type exists; \"tie\" has no single-word passive"
+    status: verified
+    confidence: high
+  - scope: "whether the specific converb/auxiliary choice generalizes to other verbs, or varies by verb class"
+    status: needs_native_validation
+    confidence: low
+    status_note: >-
+      confirmed for one verb only (see NV-029... note: this cross-
+      reference in the source appears to actually mean NV-039, the
+      tie/housefly numbering is close in this catalogue's history -
+      preserved as written in source rather than silently corrected,
+      flagged for the reconciliation pass). Do not implement as a
+      general engine rule for arbitrary "is X-ed" inputs until 2-3
+      more verbs are confirmed. Implementing from this single data
+      point risks the exact failure mode this project's convergence
+      protocol exists to prevent (a fix that outruns its evidence).
+examples:
+  - '"The dog is tied" → Achakko ka·e don·enga.'
+counterexamples:
+  note: "none yet identified"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+    note: >-
+      real grammar gap, but narrow-scoped implementation (this one
+      verb, if needed) can proceed without waiting for full
+      generalization; do not build a general passive-formation rule
+      from this alone.
+native_notes: >-
+  direct Thangseng relay, 2026-07-22, via Project Owner: "To tie is
+  ka·a. There is no raka. The reason some things seem missing is
+  probably because it is missing. The Garo grammar simply does not
+  have them. Instead Garo grammar takes the help of additional words
+  to make sense of it."
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-039"
+migration_flags:
+  - "This rule's own caution against generalizing from one verb is now directly answered by NV-029, closed 2026-07-25 this session: tested against 3 other past-participle-adjective constructions (hung, hidden, broken), each uses its OWN distinct construction, not this converb+auxiliary pattern. This is a concrete, definitive negative result for the generalization question - not proof the pattern is wrong for \"tie\" itself, but strong evidence the pattern does NOT extend as a general passive-formation strategy. Not updated in this rule during migration (scope), flagged for the reconciliation pass."

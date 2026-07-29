@@ -1,0 +1,63 @@
+id: RULE-041
+title: "\"Work\" Part-of-Speech Split (Noun vs. Verb vs. General \"To Do\")"
+description: >-
+  English "work"/"to work" collapses what are actually three distinct
+  Garo items across two parts of speech, currently in a 4-way conflict
+  in the compiled dictionary: Daka — "to do" (verb), general-purpose,
+  not work-specific; Kam — "work" (noun), activity or job; Kam ka·a —
+  "to work" (verb), compound: Kam (noun) + ka·a ("to do/act"); ga·a —
+  unconfirmed, Thangseng was not asked about this candidate, status
+  remains open.
+dependencies: []
+claims:
+  - scope: "Daka / Kam / Kam ka·a"
+    status: verified
+    confidence: high
+  - scope: "ga·a"
+    status: needs_native_validation
+    confidence: unknown
+    status_note: >-
+      do not resolve the 4-way conflict by simply dropping it; ask
+      Thangseng directly before removing it from
+      known_dictionary_conflicts.json.
+examples:
+  - '"I have work to do" → Kam sense; "I work every day" → Kam ka·a sense; "I did it" → Daka sense (not work-specific at all).'
+  - >-
+    Corroborating natural sentence, 2026-07-23 (not elicited -
+    Thangseng used it spontaneously testing a translation): "We will
+    work today" = Chinga da·alo kam ka·gen — Kam ka·a inflected with
+    the future suffix -gen, matching the general future-tense pattern
+    already confirmed elsewhere (e.g. cha·gen "will eat"). See NV-033
+    follow-up.
+counterexamples:
+  note: "none - this is a part-of-speech/sense split, not a rule with exceptions"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "this was previously treated as a straight 4-way synonym conflict needing a single winner; it is not"
+native_notes: >-
+  direct Thangseng relay, 2026-07-22, via Project Owner: "Daka means
+  'to do'. Kam can mean work as an activity or it can simply mean a
+  job. Daka is a verb. Kam is a noun. Kam ka·a is a verb."
+strengthened_by:
+  - date: "2026-07-25"
+    note: >-
+      the "work"/"to work" headword split already existed in
+      master_dictionary.json — the two English keys were distinct —
+      but the "To work" entry had its garo and pos fields swapped by
+      the original OCR import (garo: "Kam", pos: "Kam ka·a, v." instead
+      of the reverse), so the engine was silently compiling "to work"
+      from the wrong field and falling back to the generic Daka ("to
+      do") sense — this is the root cause of the "he works" bug Claude
+      B flagged. Corrected both master_dictionary.json and the
+      matching pending_lexicon.json provenance record (PL-0001397);
+      Daka untouched; ga·a still flagged pending native follow-up, not
+      dropped. 106/106 tests pass. Still open, engineering: literal
+      pre-existing sentence-level entries (e.g. "they worked": "Uamang
+      daka") bypass the headword lookup entirely and were not touched
+      by this fix - those are hardcoded phrase translations, not
+      derived from the "work" headword, and need a separate audit.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-041"

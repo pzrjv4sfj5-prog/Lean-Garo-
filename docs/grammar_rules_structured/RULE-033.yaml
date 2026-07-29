@@ -1,0 +1,47 @@
+id: RULE-033
+title: "Locative \"Under,\" Retiring a Lexical Confusion"
+description: >-
+  "Under" = nokkima/kokkima (confirmed equivalent register/spelling
+  variants, not one correct and one erroneous form) + locative -o. A
+  prior implementation entry (Ka·ma·o) incorrectly reused the
+  unrelated word "down" (Ka·ma) + -o.
+dependencies:
+  - id: RULE-001
+    name: "Raka Locality"
+    note: null
+  - id: RULE-034
+    name: null
+    note: "wider locative/directional set"
+  - id: RULE-035
+    name: null
+    note: "under/beneath sense split"
+claims:
+  - scope: "core \"under the table\" sentence"
+    status: verified
+    confidence: high
+  - scope: "kokkima/nokkima spelling-variant resolution"
+    status: verified
+    confidence: medium
+    status_note: >-
+      2026-07-08 update: both confirmed legitimate variants, not a
+      typo needing correction - relayed native guidance (Thangseng via
+      Tridip), not a direct real-time confirmation session, hence
+      Medium rather than High.
+examples:
+  - 'Achak tebil nokkimao ong·a = "the dog is under the table."'
+counterexamples:
+  note: "Ka·ma·o — confirmed wrong, retained as a documented counterexample."
+  items: []
+launch_priority:
+  - scope: "correction"
+    tier: P0
+    note: "already implemented"
+  - scope: "generalizing locative word order beyond this single confirmed sentence"
+    tier: P1
+    note: "see Grammar Specification §2, RULE-G2 productivity boundary"
+native_notes: >-
+  Source Rule 33; root cause traced to a same-suffix confusion between
+  two unrelated roots (down vs. under), not a random error.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-033"

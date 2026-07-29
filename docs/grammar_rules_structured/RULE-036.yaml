@@ -1,0 +1,48 @@
+id: RULE-036
+title: "Fixed Discourse Expressions (New Category)"
+description: >-
+  A distinct grammatical class from ordinary verbs: words that
+  function as complete, invariant utterances and take no suffix, no
+  tense/aspect marking, no conjugation of any kind - explicitly
+  confirmed as a closed class, not an incompletely-documented verb.
+  First instance: Da·mo ("wait!" - said to someone you want to wait
+  for you). Not previously represented anywhere in this catalogue;
+  every other rule assumes some degree of inflectability. This
+  category may have other members not yet identified.
+dependencies:
+  - id: RULE-001
+    name: "Raka Locality"
+    note: "Da·mo does carry raka, consistent"
+  - id: RULE-015
+    name: "Stem Formation"
+    note: "explicitly independent of this - stem-formation doesn't apply since there's no stem to form"
+claims:
+  - scope: "Da·mo specifically"
+    status: verified
+    confidence: high
+  - scope: "the category's full membership"
+    status: needs_native_validation
+    confidence: low
+    status_note: "only one confirmed member so far - \"class exists\" is High confidence, \"class is fully enumerated\" is not"
+examples:
+  - 'Da·mo, anga mi cha·kuna = "Wait, let me eat." Da·mo used standalone as "Wait!"'
+counterexamples:
+  note: >-
+    Anga Damogen ("I will wait," engine-generated, treating Da·mo as
+    if it took the future suffix -gen) — explicitly confirmed wrong by
+    direct native correction: "No suffix. It's just an expression...
+    It cannot be changed into any other form." Retained here precisely
+    because it shows what happens when this category is missed.
+  items: []
+launch_priority:
+  - scope: null
+    tier: P0
+    note: "directly explains a live, confirmed-wrong translator output (see engineering handoff, docs/PENDING_REGRESSION_CASES.md)"
+native_notes: >-
+  Primary source, 2026-07-12 chat transcript (Thangseng, direct):
+  "Da·mo is used when you want someone to wait for you. It cannot be
+  changed into any other form." Confirmed in response to a direct
+  question about the engine's actual (wrong) output.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-036"

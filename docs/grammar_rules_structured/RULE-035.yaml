@@ -1,0 +1,43 @@
+id: RULE-035
+title: "\"Under\" vs. \"Beneath\" Sense Split (`mitapo`)"
+description: >-
+  English "under" and "beneath" are not a single Garo mapping.
+  kokkimao/nokkimao (RULE-033) covers general "under." mitapo is used
+  specifically for "underneath" in the sense of something under a
+  sheet, slab, or covering - a distinct sense, not a free variant of
+  RULE-033's form.
+dependencies:
+  - id: RULE-033
+    name: null
+    note: "the sense this rule splits off from"
+claims:
+  - scope: "the sense distinction itself (that mitapo and kokkimao/nokkimao are distinct, not interchangeable)"
+    status: needs_native_validation
+    confidence: medium
+    status_note: >-
+      plausible and specific enough to record, but has no confirmed
+      example sentence yet. RULE-033's existing "under the table"
+      example should NOT be reused as evidence for mitapo, since it is
+      a general-sense example, not a covering-sense one.
+  - scope: "a worked example sentence for the mitapo sense specifically"
+    status: needs_native_validation
+    confidence: low
+    status_note: "none exists yet (e.g. no confirmed sentence like \"the book is under the blanket\")"
+examples:
+  - "None yet at full-sentence level for the mitapo sense. RULE-033's nokkimao example (\"dog under the table\") is confirmed to be the general sense, not the covering sense."
+counterexamples:
+  note: "Treating mitapo and kokkimao/nokkimao as interchangeable would be a misuse of this rule - the whole point of RULE-035 is that they are not."
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+    note: "refines an existing P0 rule's scope but does not change RULE-033's already-implemented behavior; not launch-blocking"
+native_notes: >-
+  Source: same relayed 2026-07-08 exchange as RULE-034. Not yet
+  confirmed with a worked example distinguishing the two senses in
+  context.
+last_updated: "2026-07-26"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-035"
+migration_flags:
+  - "This rule's exact open question is answered by NV-004, closed 2026-07-25 this session: mitapo confirmed as an accepted alternate specifically for \"under a blanket/covering\" (worked example: \"the book is under the blanket\" = Ki'tap kombolni ning'ao ong'a, or mitapo), distinct from nokkimao/ning'ao's general use. Not updated in this rule during migration (scope), flagged for the reconciliation pass - both claims above should very likely change to Verified once cross-checked against NV-004."
