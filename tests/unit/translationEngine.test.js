@@ -98,7 +98,7 @@ const REGRESSION_CASES = [
   // RC-002: stative-locative "in/on/at" now maps to ·o instead of the
   // default object marker ·ko in the SOV grammar-assembly fallback.
   { in: 'I am lying in bed', expectGaro: 'Anga palang·o', expectMethod: ['grammar-assembly'] },
-  { in: 'I put the book on the table', expectGaro: 'Anga te·bil·o ron·a', expectMethod: ['grammar-assembly'] },
+  { in: 'I put the book on the table', expectGaro: 'Anga mez·o ron·a', expectMethod: ['grammar-assembly'] },
   // RC-003: "down" excluded from the verb-search loop so it no longer
   // collides with "lying down" (was producing invalid "Anga Ka·ma" as if
   // Ka·ma were a conjugated verb form). Not a correct full translation of
@@ -331,10 +331,10 @@ test('RC-CANDIDATE-010: NP subject (article+noun+copula) reaches grammar-assembl
   const { translate } = await import('../../src/translationEngine.js');
   const r1 = await translate('the book is on the table');
   assert.equal(r1.method, 'grammar-assembly');
-  assert.equal(r1.garo, 'boi te·bil·o');
+  assert.equal(r1.garo, 'Ki·tap mez·o');
   const r2 = await translate('the market is far');
   assert.equal(r2.method, 'grammar-assembly');
-  assert.equal(r2.garo, 'bajal chel·a');
+  assert.equal(r2.garo, 'bajal Chel·a');
 });
 
 test('RC-CANDIDATE-010 boundary: adjective-modified NP subject safely falls back, does not mislabel', async () => {
@@ -656,6 +656,33 @@ test('RULE-040: "turn right" phrase correction is unaffected by the sense split'
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('turn right');
   assert.equal(r.garo, 'Rikka chepbo');
+});
+
+// --- RC-CANDIDATE-027 fix: case-key silent-clobber, same shape as
+// RC-016/RC-019 ("book"/"teacher"), applied uniformly wherever a genuine
+// case-collision (e.g. "table"/"Table") has exactly one non-variant-
+// tagged entry vs one-or-more "variant/..."-tagged entries. Same-case
+// duplicate rows (e.g. "watch", "call" — no case variation, and the
+// "neutral" row's own data doesn't match its own notes) are deliberately
+// excluded and keep the old last-write-wins behavior; see prepare-data.js.
+test('RC-CANDIDATE-027: "table" resolves to neutral default Mez, not the variant te·bil', async () => {
+  const { lookup } = await import('../../src/lookupEngine.js');
+  assert.equal(lookup('table').garo, 'Mez');
+});
+
+test('RC-CANDIDATE-027: "buy" resolves to neutral default Brea, not the variant bre·a', async () => {
+  const { lookup } = await import('../../src/lookupEngine.js');
+  assert.equal(lookup('buy').garo, 'Brea');
+});
+
+test('RC-CANDIDATE-027: "door" resolves to neutral default Do·ga, not the variant do·oga', async () => {
+  const { lookup } = await import('../../src/lookupEngine.js');
+  assert.equal(lookup('door').garo, 'Do·ga');
+});
+
+test('RC-CANDIDATE-027: same-case duplicates ("watch") are unaffected, old behavior preserved', async () => {
+  const { lookup } = await import('../../src/lookupEngine.js');
+  assert.equal(lookup('watch').garo, 'ni·rik·a');
 });
 
 // --- Interrogative formation (Project Owner directive root cause 3) is

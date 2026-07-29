@@ -1,7 +1,7 @@
 repository:
-  head: PENDING_COMMIT
+  head: 8d334aa
   last_updated: "2026-07-28"
-  test_status: "121/121 regression tests passing (116 + 5 new for RULE-040), build clean, lint clean, 237/237 stress benchmark byte-identical before/after. RULE-040 (\"right\" 3-way sense split) implemented: bare \"right\" removed from compiled dict, replaced with \"right (direction)\"/\"right (matching)\"/\"right (correct)\" sense-tagged headwords. translationEngine.js modularization (BACKLOG-003) Phase 1-3 and 7 of 8 done (939 lines, down from 1130). Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4 - Phase 5 (grammarEngine.js) unblocked, not yet started."
+  test_status: "125/125 regression tests passing (121 + 4 new for RC-027), build clean, lint clean, 237/237 stress benchmark diffed - 12 lines changed, all confirmed intended (RC-027's book/table/buy/door fix). RULE-040 and RC-CANDIDATE-027 both done this session. translationEngine.js modularization (BACKLOG-003) Phase 1-3 and 7 of 8 done (939 lines, down from 1130). Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4 - Phase 5 (grammarEngine.js) unblocked, not yet started."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -228,10 +228,17 @@ claude_a:
     from 42 on 2026-07-25 - see NV-027). RULE-040 ("right" 3-way engine-side
     split) done by Claude B 2026-07-28 - bare "right" removed, three
     sense-tagged headwords added ("right (direction)"/"(matching)"/"(correct)"),
-    121/121 tests, 237/237 stress benchmark byte-identical. Claude B still on
-    RC-CANDIDATE-027 (case-key clobber, ~470 pairs,
-    scoping-only so far), and the 2 remaining lint parser-errors (superseded -
-    lint is 0 errors as of this HEAD, verify before re-flagging). Claude D on pages 34/74 (duplicate
+    121/121 tests, 237/237 stress benchmark byte-identical. RC-CANDIDATE-027
+    (case-key clobber) done by Claude B 2026-07-28 - general compiler fix,
+    292 keys corrected (book/table/buy/door/far/etc. now resolve to neutral
+    default, not the variant-tagged clobber). Found and deliberately
+    excluded: "watch" and "call" have 4 same-case (no case variation)
+    entries each where the "neutral" row's own garo value doesn't match its
+    own notes' listed alternates - a data anomaly, not the case-collision
+    pattern, needs Claude A review, not auto-fixed. See
+    docs/PENDING_REGRESSION_CASES.md RC-CANDIDATE-027 for full detail.
+    The 2 remaining lint parser-errors note is superseded - lint is 0
+    errors as of this HEAD, verify before re-flagging. Claude D on pages 34/74 (duplicate
     resolution, blocked until actual files are pushed) and 100/101 (not yet started). Pages 75-77 and 94-95 done.
   expected_output: "Markdown/JSON files committed to docs/ and dictionary data, per role boundary - Claude A never touches engine code (Claude B) or does OCR ingestion (Claude D)"
   grammar_schema_migration:

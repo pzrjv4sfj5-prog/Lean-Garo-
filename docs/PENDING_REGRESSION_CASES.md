@@ -1062,6 +1062,30 @@ review, same discipline as any other flagged entry.
 
 ### RC-CANDIDATE-027 — Case-key silent-clobber is systemic, not isolated: 465 affected pairs found
 
+**Status: RESOLVED (Claude B, 2026-07-28).** General compiler fix
+implemented in `prepare-data.js`: when a key has exactly one
+non-"variant"-tagged entry and one-or-more "variant"-tagged entries,
+AND the non-variant entry's original key casing genuinely differs from
+the variant entries' (a real "book"/"Book"-style collision, not a
+same-case duplicate row), the neutral entry is now preferred as the
+compiled primary — same conclusion as `RC-016`/`RC-019`, applied
+uniformly. 292 keys changed as a result (rescanned fresh at
+implementation time, not the stale 2026-07-23/07-24 counts above).
+Deliberately excluded: same-case duplicate rows with no case variation
+at all (found "watch" and "call" fit this — 4 entries each, all
+identically-cased, where the non-variant row's own `garo` value doesn't
+even match the alternates listed in its own `notes` field — a data
+anomaly, not this pattern; both fall through unchanged to the old
+last-write-wins default and are flagged here for Claude A review
+separately, not auto-fixed).
+125/125 tests (4 new + 2 stale hardcoded-buggy-value tests corrected:
+`RC-CANDIDATE-010`'s "book"/"table"/"far" assertions, and the `"I put
+the book on the table"` regression case), build clean, lint clean,
+237-sentence stress benchmark diffed — 12 lines changed, all confirmed
+intended (buy/book/table/door), nothing else moved.
+
+**Original scoping notes below, retained for context:**
+
 **Status:** Scoping only — needs Claude B collaboration before any
 fix, per the "spans both linguistics and engineering, discuss together"
 standing instruction. Not implemented, not linguistically triaged
