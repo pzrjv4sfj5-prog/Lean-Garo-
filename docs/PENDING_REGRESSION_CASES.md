@@ -1078,6 +1078,16 @@ even match the alternates listed in its own `notes` field — a data
 anomaly, not this pattern; both fall through unchanged to the old
 last-write-wins default and are flagged here for Claude A review
 separately, not auto-fixed).
+
+**Claude A review, 2026-07-29 — RESOLVED, see NV-041
+(`THANGSENG_NATIVE_VALIDATION.md`):** not a compiler-side anomaly —
+"watch" was already correct (`ni·a`, native-confirmed, other 3 variants
+left unconfirmed/untouched), "call" was genuinely wrong on all 4
+existing entries. Native confirmation gives `Okama`/`Okamani`; the 4
+old "call" entries and the OCR "calling"=`Kam` entry are now marked
+SUPERSEDED/UNVERIFIED in `master_dictionary.json`, not deleted. Open
+gap: no confirmed word for "phone call" specifically — needs its own
+Thangseng relay question, not guessed.
 125/125 tests (4 new + 2 stale hardcoded-buggy-value tests corrected:
 `RC-CANDIDATE-010`'s "book"/"table"/"far" assertions, and the `"I put
 the book on the table"` regression case), build clean, lint clean,

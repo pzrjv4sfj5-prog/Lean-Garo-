@@ -24004,7 +24004,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ming-a / ok-gam-a / pe·-a"
+    "notes": "SUPERSEDED/UNVERIFIED — NV-041 (2026-07-29): Thangseng confirmed 'call'=Okama, not this form. Not deleted (may still be valid for a distinct sense), but no longer the neutral/primary candidate."
   },
   {
     "english": "call",
@@ -24012,7 +24012,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED/UNVERIFIED — NV-041 (2026-07-29): Thangseng confirmed 'call'=Okama, not this form. Not deleted (may still be valid for a distinct sense), but no longer the neutral/primary candidate."
   },
   {
     "english": "call",
@@ -24020,7 +24020,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED/UNVERIFIED — NV-041 (2026-07-29): Thangseng confirmed 'call'=Okama, not this form. Not deleted (may still be valid for a distinct sense), but no longer the neutral/primary candidate."
   },
   {
     "english": "call",
@@ -24028,7 +24028,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED/UNVERIFIED — NV-041 (2026-07-29): Thangseng confirmed 'call'=Okama, not this form. Not deleted (may still be valid for a distinct sense), but no longer the neutral/primary candidate."
   },
   {
     "english": "call out",
@@ -56356,7 +56356,7 @@
     "garo": "Kam",
     "category": null,
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+    "notes": "SUPERSEDED/UNVERIFIED — NV-041 (2026-07-29): Thangseng confirmed 'calling'=Okamani, not this form. This entry was also OCR-flagged separately. Not deleted, no longer primary candidate."
   },
   {
     "english": "a post",
@@ -59195,5 +59195,21 @@
     "category": "phrases",
     "pos": null,
     "notes": "CONFIRMED 2026-07-25, direct native answer, NV-038 - genuine common metonymic expression for asking about breakfast, using 'cha' (tea). Preferred over na·sta (regional/dated) for this meaning in common usage."
+  },
+  {
+    "english": "call",
+    "garo": "Okama",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-041, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-29. Cannot be used to mean 'phone call' — that sense is unconfirmed, do not assume this covers it."
+  },
+  {
+    "english": "calling",
+    "garo": "Okamani",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-041, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-29. Same phone-call exclusion as 'call'/Okama."
   }
 ]

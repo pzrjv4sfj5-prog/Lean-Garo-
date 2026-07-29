@@ -1,7 +1,7 @@
 repository:
-  head: fcb1e84
+  head: PENDING_COMMIT
   last_updated: "2026-07-29"
-  test_status: "125/125 regression tests passing, build clean, lint clean, 237/237 stress benchmark byte-identical before/after. BACKLOG-003 (translationEngine.js modularization) is now FULLY COMPLETE, all 8 phases - Phase 4 was already done pre-session (garo_classifier.js/number_engine.js, listed as precedent not pending), Phase 8 (orchestrator-only translationEngine.js) required no separate work, confirmed a byproduct of Phases 5/6. translationEngine.js: 1130 -> 313 lines final. RULE-040 and RC-CANDIDATE-027 done 2026-07-28. Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4."
+  test_status: "125/125 regression tests passing, build clean, lint clean, 237/237 stress benchmark byte-identical before/after, repository-intelligence.js clean ('calling' conflict allowlisted, citation NV-041). BACKLOG-003 (translationEngine.js modularization) is now FULLY COMPLETE, all 8 phases: 1130 -> 313 lines final. NV-041 (Claude A, 2026-07-29) closed the watch/call anomaly RC-CANDIDATE-027 flagged: watch=nia confirmed correct, no change; call/calling were genuinely wrong on all prior candidates, superseded and replaced with Okama/Okamani (open gap: no confirmed word for 'phone call'). RULE-040 and RC-CANDIDATE-027 done 2026-07-28. Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -37,6 +37,35 @@ claude_a:
     (not yet its own committed file). See current_task below for
     everything since.
   current_task: >-
+    2026-07-29: Reviewed the watch/call data anomaly Claude B flagged
+    in RC-CANDIDATE-027 (docs/PENDING_REGRESSION_CASES.md). New native
+    data arrived from Thangseng (via Tridip, WhatsApp) covering
+    watch/see/call full paradigms. watch=nia already correct in the
+    dictionary (ni·a variant) - full tense/imperative paradigm now on
+    record (nienga/nibo/ninabe/niaha/nigen/nijawa), other 3 watch
+    variants (go·ri/ni·chak·a/ni·rik·a) still unconfirmed, untouched.
+    see=nika confirmed with a genuine dual meaning (see/find) per
+    Thangseng's own explicit flag, matches existing nik·a entry,
+    reconfirms NV-011/012 (watch/see are distinct roots). call was the
+    real finding: none of the 4 existing entries
+    (don·a/ming·a/ok·gam·a/pe·a) matched - native form is Okama
+    (calling=Okamani), explicitly cannot mean "phone call" (unconfirmed,
+    flagged for next relay batch, not guessed). Superseded the 4 old
+    call entries + 1 OCR calling=Kam entry in master_dictionary.json
+    (marked SUPERSEDED/UNVERIFIED, not deleted), added Okama/Okamani as
+    VERIFIED/HIGH. Logged NV-041 in THANGSENG_NATIVE_VALIDATION.md,
+    closed the anomaly note in PENDING_REGRESSION_CASES.md, allowlisted
+    the resulting "calling" self-consistency conflict in
+    known_dictionary_conflicts.json citing NV-041. Ran full
+    verification before committing: prepare-data.js, dictionary test,
+    repository-intelligence.js (clean after allowlisting), 125/125 unit
+    tests, vite build - all clean.
+    Separately flagged: the PAT used to push this session appeared
+    embedded in a pasted WhatsApp relay transcript before also being
+    pasted live in-chat by the Project Owner - noted as a possible
+    exposure/injection pattern, not used from the transcript itself,
+    only used once live-pasted per standing PAT policy. Recommended
+    rotation regardless since it's now been visible in two places.
     2026-07-25: RULE-041 fix - "To work" master_dictionary.json entry
     had garo/pos fields swapped by OCR import (Kam ka·a was stuck in
     pos, not garo), root cause of the "he works" bug Claude B flagged;
@@ -204,14 +233,22 @@ claude_a:
     - "2026-07-20..24: NV-013/025/028/035/036/037 closed; page 2 processed solo (Claude D token-exhaustion stopgap) and promoted, RC-CANDIDATE-028 logged"
     - "2026-07-25: RULE-041 root-cause fix; NV-039 (housefly) and NV-040 (fruit) closed; 42-question consolidated Thangseng batch compiled"
   next_action: >-
-    Batch committed and RC-017 fixed (both done 2026-07-25, see
-    current_task). Remaining: pages 34/74 duplicate resolution (blocked
-    on files being pushed) and pages 94/95/100/101 (not yet staged) -
-    both on hold, not actionable. Otherwise: continue evidence-first
-    corpus-internal triage of open NV items where possible (see NV-027
-    for the pattern - narrowed 5 candidates to 2 without needing
-    Thangseng, by checking which already carry UNVERIFIED tags vs.
-    which are richly multi-sense-attested in master_dictionary.json).
+    NV-041 closed the watch/call anomaly (2026-07-29, see current_task).
+    Watch/see paradigms are on record in NV-041 but not yet migrated
+    into a grammar rule - worth its own RULE-XXX for the
+    imperative/tense suffix pattern (nibo/ninabe/niaha/nigen/nijawa)
+    since it looks productive, not verb-specific; not scoped or done
+    this session. "Phone call" gap needs a relay question added to the
+    next Thangseng batch. Pages 34/74 duplicate resolution (blocked on
+    files being pushed) and pages 94/95/100/101 (not yet staged) still
+    on hold, not actionable. The 4 reconciliation-pass flags from the
+    grammar schema migration (Sengbo gloss, NV-029/RULE-039,
+    NV-003/RULE-034, NV-004/RULE-035) remain open. Otherwise: continue
+    evidence-first corpus-internal triage of open NV items where
+    possible (see NV-027 for the pattern - narrowed 5 candidates to 2
+    without needing Thangseng, by checking which already carry
+    UNVERIFIED tags vs. which are richly multi-sense-attested in
+    master_dictionary.json).
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
     - "Do not re-audit raka consistency across corrections.json - exhaustively done already, majority-vote method established"

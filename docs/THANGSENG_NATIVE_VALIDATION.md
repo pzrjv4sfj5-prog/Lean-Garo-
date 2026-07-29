@@ -2141,3 +2141,77 @@ Confirms `Bite` (no raka mark) is correct for "fruit." No dictionary
 change needed — the earlier mechanical dedup happened to land on the
 right form. Logged here so the decision has an actual evidentiary
 basis on record, not just an unverified commit message.
+
+## NV-041 — `watch`/`see`/`call` cluster — CLOSED
+
+**Status:** CLOSED. Direct native confirmation. Closes the "watch"/"call"
+data anomaly Claude B flagged during RC-CANDIDATE-027 (see
+`PENDING_REGRESSION_CASES.md`), where the neutral row's `garo` value for
+each didn't match the alternates listed in its own `notes` field.
+
+**Native confirmation (Tridip → Thangseng, WhatsApp, 2026-07-26 and
+2026-07-29):**
+> Thangseng: Watch = nia
+> Nienga = watching (continuous)
+> Nibo = watch (imperative)
+> Ninabe = don't watch (imperative)
+> Niaha = watched (past)
+> Nigen = will watch (future)
+> Nijawa = will not watch (negative)
+>
+> Thangseng: Nika = to see, to find
+> Nikbo = find, see
+> Niknabe = don't find
+> Nikjawa = will not find, see
+> Nikgen = will find, see
+> Nikaha = found, saw
+> The meaning depends on the context
+>
+> Thangseng: Okama [call]
+> Cannot be used to mean phone call!!
+> Calling is okamani
+
+**Findings:**
+1. **watch = nia** — confirmed, full tense/imperative paradigm given.
+   Matches the existing `ni·a` variant already under "watch" in
+   `master_dictionary.json`. The other three "watch" entries (`go·ri`,
+   `ni·chak·a`, `ni·rik·a`) are **not** addressed by this data — remain
+   unconfirmed, untouched.
+2. **see = nika** — confirmed, with an explicit dual meaning
+   (see/find) that Thangseng flagged proactively as context-dependent
+   rather than a fixed single gloss. Matches the existing `nik·a`
+   entry under "see." This is consistent with NV-011/012 (watch=nia
+   root vs. see=nika root are genuinely distinct, not free variants).
+3. **call = Okama, calling = Okamani** — this is the real resolution
+   of the anomaly: none of the four existing "call" entries (`don·a`,
+   `ming·a`, `ok·gam·a`, `pe·a`) is the confirmed word. All four are
+   now superseded pending replacement with `Okama`/`Okamani`.
+4. **Open gap, not resolved by this exchange:** Thangseng explicitly
+   said `Okama`/`Okamani` cannot mean "phone call." No word for that
+   sense has been confirmed. Needs its own relay question — do not
+   guess a term for it.
+
+**Dictionary action taken:** see commit for `master_dictionary.json`
+changes (call/calling entries superseded and replaced). Watch/see
+entries left as-is — already correct, no change needed.
+
+**Addendum (Thangseng, WhatsApp, 2026-07-29, same day follow-up):**
+full `okama` paradigm, same pattern as `nia`:
+> okama = to call (verb)
+> okambo = call (imperative)
+> okamnabe = do not call (imperative)
+> okamgen = will call
+> okamjawa = will not call
+> okamaha = called
+> okamani = calling (noun; technically a verbal noun)
+> okamenga = calling (present continuous)
+
+Confirms `okama`/`okamani` follow the same imperative/tense suffix
+pattern already seen on `nia` (-bo/-nabe/-gen/-jawa/-aha) plus the
+continuous marker (-enga, matches `nienga`). Thangseng distinguished
+`okamani` (verbal noun) from `okamenga` (present continuous) — two
+different forms, not variants of each other. Not added as individual
+dictionary entries (consistent with how the `nia` paradigm was
+handled) — logged here as the evidentiary record; worth its own
+RULE-XXX for the productive suffix pattern (see WORKSTATE.yaml
+next_action).
