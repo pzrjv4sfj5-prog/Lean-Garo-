@@ -1345,3 +1345,122 @@ trailing `?` (and other terminal punctuation) in the corrections
 lookup path, or standardize on always storing `?` in question-form
 correction keys. Either resolves it; the inconsistency itself is the
 bug.
+
+### RC-CANDIDATE-031 — `parseCountingPhrase` doesn't handle multi-word compound numbers (twenty-one, etc.)
+
+**Status: RESOLVED (Claude B, 2026-07-30).**
+
+**Correction to the original reproduction below:** the original write-up
+used `translate("i have twenty one apples")` as the live repro. That
+was wrong — `parseCountingPhrase` is only ever called on the *whole*
+trimmed input, which must itself start with the number word
+(`translationEngine.js` step 1.6: `parseCountingPhrase(cleaned)`).
+`"i have twenty one apples"` starts with `"i"`, so that code path was
+never reached at all, before or after the fix — the sentence goes
+through `sov-assembly` instead, unaffected either way. The actual
+reachable, real repro is a **bare counting phrase as input** (e.g.
+someone typing `"twenty one apples"` directly, the same way `"three
+books"` already works):
+```
+BEFORE: translate("twenty one apples")
+  -> { garo: "sa se·sa ge·Kolgrik", method: "classifier", confidence: 0.96 }
+AFTER:  translate("twenty one apples")
+  -> { garo: "apal ge·Kolgrik·sa", method: "classifier", confidence: 0.96 }
+```
+
+**Fix:** `parseCountingPhrase` (`garo_classifier.js`) now greedily
+consumes a second leading number-word as a tens+units compound
+(`count >= 20 && count % 10 === 0`, next word is a 1-9 units word,
+words remain for the noun) before treating it as the start of the
+noun phrase. No new number vocabulary added — purely a parsing-order
+fix for words already individually recognized in `NUMBER_WORDS`.
+
+135/135 tests (5 new), build clean, lint clean, 237-sentence stress
+benchmark byte-identical before/after (no corpus sentence uses
+compound-number phrasing, confirming the fix's narrow scope).
+
+**Original diagnosis below, retained for context (reproduction was
+corrected above):**
+
+**Found:** 2026-07-30, Claude B, structured engineering quality audit
+(Project Owner directive - engineering defects only, classified by
+origin, no new architectural work).
+
+**Origin:** Parser (`garo_classifier.js`'s `parseCountingPhrase`,
+consumed by `translationEngine.js` step 1.6).
+
+**Symptom, live-reproduced:**
+```
+parseCountingPhrase("twenty one apples")
+  -> { count: 20, englishNoun: "one apple", originalNoun: "one apples" }
+translate("i have twenty one apples")
+  -> "Anga donga Kolgrik Sa apal"  (sov-assembly, 0.75)
+```
+`"one"` gets swallowed into the noun phrase instead of combining with
+`"twenty"` to form 21. The classifier system itself already handles
+compound numbers correctly when given a single integer (`n=21`
+produces `"Kolgrik sa"` via `toGaroNumber`/`getClassifierSuffix`'s
+delegation, confirmed working) — the defect is purely in
+`parseCountingPhrase`'s word-splitting, which only reads `words[0]` as
+the count and treats everything else as the noun, with no handling for
+a second leading number-word.
+
+**Root cause:** `parseCountingPhrase` (`garo_classifier.js`):
+```js
+const count = parseCount(words[0]);
+const englishNoun = words.slice(1).join(' ');
+```
+No check for whether `words[1]` is also a number word before treating
+it as the start of the noun phrase.
+
+**Not a linguistic question** — this is pure input parsing; the
+correct Garo output for 21 is already confirmed and implemented
+elsewhere in the same file. Purely an engineering fix: greedily
+consume leading number-words (word ∈ `NUMBER_WORDS`) before falling
+back to noun-phrase parsing, summing simple compounds (`"twenty" +
+"one"` = 21). Scope: only affects compound numbers 21-99 phrased as
+two words ("twenty one") — the classifier's own teens/hundreds/
+thousands logic is unaffected either way.
+
+**Status: OPEN, not fixed.**
+
+---
+
+### RC-CANDIDATE-032 — `number_engine.js`'s `toGaroNumber` still has the confirmed-wrong teens formula, contradicting `garo_classifier.js`'s own fix
+
+**Found:** 2026-07-30, Claude B, same audit as RC-CANDIDATE-031.
+
+**Origin:** Dictionary/data module (`number_engine.js`) — dead code
+with stale, already-disproven content.
+
+**Symptom, live-reproduced:**
+```
+number_engine.js's toGaroNumber(11) -> "chiking·ma·sa"
+```
+`garo_classifier.js`'s own file header states explicitly: *"native
+speaker confirmed 2026-06-28 the correct form is 'Chi·' + base digit
+(Chi·sa=11, Chi·gni=12, ... Chi·sku=19) — NOT 'chiking·ma·' as
+previously implemented. This was a real error... replaced entirely."*
+`garo_classifier.js`'s own `getClassifierSuffix` was updated
+accordingly (`TEENS` table, `Chi·sa` etc.) — but `number_engine.js`'s
+standalone `toGaroNumber` function, which contains the exact same
+11-19 logic, was never updated and still returns the disproven form.
+
+**Currently unreachable / not a live bug:** confirmed via grep —
+nothing imports `number_engine.js` except `garo_classifier.js`, and
+`garo_classifier.js` only delegates to it for `n > 19` (its own
+`TEENS` table intercepts 11-19 first). So no current user-facing
+translation can hit this branch. Logged anyway because: (a) it's
+misleading dead code — reading `number_engine.js` in isolation gives
+the wrong answer for 11-19, contradicting a documented, native-
+confirmed correction sitting in the same repo; (b) it's a latent trap
+for any future refactor that imports `toGaroNumber` from
+`number_engine.js` directly instead of going through
+`garo_classifier.js`.
+
+**Not a linguistic question** — the correct answer is already
+confirmed and implemented elsewhere in this exact repo; this is a
+sync/dead-code hygiene issue, zero risk to fix (nothing currently
+calls the affected branch, so no test could regress).
+
+**Status: OPEN, not fixed.**

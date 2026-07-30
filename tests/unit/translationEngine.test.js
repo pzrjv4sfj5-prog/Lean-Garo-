@@ -770,3 +770,43 @@ test('RC-CANDIDATE-030: a corrections.json key that deliberately includes "?" is
   const r = await translate('did you eat?');
   assert.equal(r.method, 'correction');
 });
+
+// --- RC-CANDIDATE-031 fix (2026-07-30, Claude B, engineering quality
+// audit): parseCountingPhrase only ever read words[0] as the count,
+// so a two-word compound number ("twenty one") silently swallowed the
+// units word into the noun instead of combining to 21. The classifier
+// system itself already renders 21 correctly given a single integer -
+// this was purely a parsing-order bug, not a linguistic gap.
+test('RC-CANDIDATE-031: "twenty one apples" parses as count 21, not 20 + "one apple"', async () => {
+  const { parseCountingPhrase } = await import('../../src/garo_classifier.js');
+  const r = parseCountingPhrase('twenty one apples');
+  assert.equal(r.count, 21);
+  assert.equal(r.englishNoun, 'apple');
+});
+
+test('RC-CANDIDATE-031: "twenty one apples" translates using the correct compiled 21, not 20', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('twenty one apples');
+  assert.equal(r.method, 'classifier');
+  assert.ok(r.garo.includes('Kolgrik·sa'), `expected 21 (Kolgrik·sa) in output, got: ${r.garo}`);
+});
+
+test('RC-CANDIDATE-031: a plain single-number phrase ("twenty apples") is unaffected', async () => {
+  const { parseCountingPhrase } = await import('../../src/garo_classifier.js');
+  const r = parseCountingPhrase('twenty apples');
+  assert.equal(r.count, 20);
+  assert.equal(r.englishNoun, 'apple');
+});
+
+test('RC-CANDIDATE-031: an ordinary non-compound count ("three books") is unaffected', async () => {
+  const { parseCountingPhrase } = await import('../../src/garo_classifier.js');
+  const r = parseCountingPhrase('three books');
+  assert.equal(r.count, 3);
+  assert.equal(r.englishNoun, 'book');
+});
+
+test('RC-CANDIDATE-031: an invalid compound ("twenty ten apples") does not falsely combine', async () => {
+  const { parseCountingPhrase } = await import('../../src/garo_classifier.js');
+  const r = parseCountingPhrase('twenty ten apples');
+  assert.equal(r.count, 20, '"ten" is not a 1-9 units word, must not combine with "twenty"');
+});

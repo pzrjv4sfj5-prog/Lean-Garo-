@@ -1,7 +1,7 @@
 repository:
-  head: 5766bbe
-  last_updated: "2026-07-29"
-  test_status: "130/130 regression tests passing, build clean, lint clean, 237/237 stress benchmark byte-identical before/after. RC-CANDIDATE-030 fixed (Claude B): corrections lookup now falls back to a trailing-\"?\"-stripped key, so punctuated interrogatives with a confirmed correction (\"will you eat?\") no longer silently miss it and fall to sov-assembly word-salad. Scoped to \"?\" only after an earlier draft (also stripping \"!\"/\".\") broke \"eat!\"'s dedicated exclamatory entry - restored via test. BACKLOG-003 FULLY COMPLETE, all 8 phases. RC-CANDIDATE-029 and NV-041 done 2026-07-29 (see history). Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4."
+  head: 779daf8
+  last_updated: "2026-07-30"
+  test_status: "135/135 regression tests passing, build clean, lint clean, 237/237 stress benchmark byte-identical before/after. RC-CANDIDATE-031 fixed (Claude B, structured engineering quality audit): parseCountingPhrase now handles two-word compound numbers (\"twenty one\" -> 21, not 20+\"one apple\"). Live repro: translate(\"twenty one apples\") was \"sa se·sa ge·Kolgrik\" (garbled), now \"apal ge·Kolgrik·sa\" (correct). RC-CANDIDATE-032 (number_engine.js dead-code stale teens formula) logged, deliberately NOT fixed this session - unreachable, kept separate from live-bug fixes per Project Owner directive. RC-CANDIDATE-030 fixed 2026-07-29 (see history). BACKLOG-003 FULLY COMPLETE, all 8 phases."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in

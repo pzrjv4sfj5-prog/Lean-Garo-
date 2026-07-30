@@ -138,9 +138,35 @@ export function parseCountingPhrase(input) {
   const lower = input.toLowerCase().trim();
   const words = lower.split(/\s+/);
   if (words.length < 2) return null;
-  const count = parseCount(words[0]);
+  let count = parseCount(words[0]);
   if (!count) return null;
-  const englishNoun = words.slice(1).join(' ');
+  // RC-CANDIDATE-031 fix (2026-07-30, Claude B, engineering quality
+  // audit): greedily consume a second leading number-word as a
+  // tens+units compound ("twenty" + "one" = 21) before treating it as
+  // the start of the noun phrase. Previously only words[0] was ever
+  // read as the count, so "twenty one apples" silently produced
+  // {count:20, englishNoun:"one apple"} - "one" swallowed into the
+  // noun instead of combining to 21 - even though the classifier
+  // system itself already renders 21 correctly
+  // (getClassifierSuffix/toGaroNumber both confirmed working for a
+  // single integer input). Scoped to exactly the reproduced shape:
+  // count is a multiple of 10 that's >=20 (i.e. an actual tens word -
+  // currently only "twenty" exists in NUMBER_WORDS, but this doesn't
+  // hardcode that so it keeps working if 30/40/etc are added later),
+  // the next word is a 1-9 units word, and there's still at least one
+  // word left over for the noun. Not scope creep: no new number
+  // vocabulary added, purely a parsing-order fix for words that were
+  // already recognized individually.
+  let consumed = 1;
+  if (count >= 20 && count % 10 === 0 && words.length > 2) {
+    const units = parseCount(words[1]);
+    if (units !== null && units >= 1 && units <= 9) {
+      count += units;
+      consumed = 2;
+    }
+  }
+  const englishNoun = words.slice(consumed).join(' ');
+  if (!englishNoun) return null;
   const singular = IRREGULAR_PLURALS[englishNoun] || englishNoun.replace(/s$/, '');
   return { count, englishNoun: singular, originalNoun: englishNoun };
 }
