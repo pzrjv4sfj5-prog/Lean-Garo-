@@ -99,12 +99,32 @@ export async function translate(input) {
   const words = lower.split(/\s+/);
 
   // 1. Corrections — case-insensitive, apostrophe-tolerant lookup.
-  // Tries 3 forms in order:
+  // Tries 4 forms in order:
   // (a) lowercase with apostrophes preserved ("let's go") — exact canonical match
   // (b) original cleaned form (handles mixed case)
   // (c) apostrophe-stripped lowercase ("lets go", "dont eat") — typo tolerance
+  // (d) RC-CANDIDATE-030 fix (2026-07-29, Claude B, diagnosed by Claude A
+  // in AUDIT_NATIVE_VALIDATION_PROPAGATION_20260729.md): trailing
+  // "?"-stripped lowercase. corrections.json stores question keys
+  // WITHOUT "?" ("will you eat"), while some compiled_dict.json phrase
+  // keys store it WITH "?" ("did you eat?") — two conventions for the
+  // same kind of fact, and normalizeInput() never stripped it, so
+  // "will you eat?" (with the punctuation a real user actually types)
+  // silently missed the confirmed correction and fell all the way
+  // through to sov-assembly's word-salad output. Tried LAST, after the
+  // three exact-match forms above, so a corrections.json key that
+  // deliberately includes "?" is still matched first and this fallback
+  // never shadows it. Scoped to "?" only, matching the diagnosis exactly
+  // — an earlier draft also stripped "!"/"." and broke "eat!" (which has
+  // its own deliberate exclamatory-imperative entry, "Cha·bo!", distinct
+  // from plain "eat"'s "Cha·a") by shadowing it with the wrong form.
+  // "?" doesn't have this risk: Garo questions use a dedicated "ma"
+  // interrogative suffix, so no corrections.json entry would ever
+  // deliberately differ between a "?" and non-"?" key the way an
+  // imperative "!" legitimately can.
   const lowerWithApos = cleaned.toLowerCase();
-  const correction = corrections?.[lowerWithApos] || corrections?.[cleaned] || corrections?.[lower];
+  const lowerNoPunct = lower.replace(/\?+$/, '');
+  const correction = corrections?.[lowerWithApos] || corrections?.[cleaned] || corrections?.[lower] || corrections?.[lowerNoPunct];
   if (correction) return { garo: correction, method: 'correction', confidence: 1.0 };
 
   // 1.5 Phrase map

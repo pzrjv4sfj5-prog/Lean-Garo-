@@ -1289,6 +1289,29 @@ by the corpus itself).
 
 ### RC-CANDIDATE-030 — `corrections.json` question-mark keys inconsistent with dictionary phrase keys, breaks punctuated interrogatives that otherwise have a confirmed fix
 
+**Status: RESOLVED (Claude B, 2026-07-29).** Added a 4th fallback to
+the corrections lookup chain in `translationEngine.js`: trailing `"?"`
+stripped, tried last so a key that deliberately includes `"?"`
+("did you eat?") is still matched first. Scoped to `"?"` only — an
+earlier draft also stripped `"!"`/`"."` and broke `"eat!"` (which has
+its own deliberate exclamatory-imperative entry, `"Cha·bo!"`, distinct
+from plain `"eat"`'s `"Cha·a"`) by shadowing it with the wrong form.
+`"?"` doesn't carry this risk: Garo questions use a dedicated `"ma"`
+interrogative suffix, so no corrections.json entry would ever
+deliberately differ between a `"?"` and non-`"?"` key the way an
+imperative `"!"` legitimately can.
+
+130/130 tests (3 new), build clean, lint clean, 237-sentence stress
+benchmark byte-identical before/after (this is a pure lookup-path
+addition — it only changes behavior for inputs that previously missed
+every existing key, so nothing in the corpus moved). Also updated the
+stale "interrogative formation not implemented" test comment (queued
+by Claude A) — this fix and NV-031 changed the picture but don't close
+the general generative-rule gap; see the updated comment in
+`tests/unit/translationEngine.test.js`.
+
+**Original diagnosis below, retained for context:**
+
 **Found:** 2026-07-29, Claude A, during
 `docs/AUDIT_NATIVE_VALIDATION_PROPAGATION_20260729.md` (full audit
 report there; see also `THANGSENG_NATIVE_VALIDATION.md` NV-031 and

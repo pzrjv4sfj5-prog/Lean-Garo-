@@ -685,18 +685,29 @@ test('RC-CANDIDATE-027: same-case duplicates ("watch") are unaffected, old behav
   assert.equal(lookup('watch').garo, 'ni·rik·a');
 });
 
-// --- Interrogative formation (Project Owner directive root cause 3) is
-// deliberately NOT implemented or tested here. No confirmed
-// linguistic guidance exists yet for Garo question formation - only one
-// unconfirmed WhatsApp data point (see
-// docs/PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md,
-// "na'a cha'genma?"), which is exactly the kind of chat-sourced content
-// the standing integration rule prohibits implementing directly.
-// Encoding a specific interrogative rule into the regression suite
-// before Claude A confirms it would lock in unconfirmed linguistic
-// content the same way implementing it in the engine would. Revisit
-// once that proposal (or a dedicated interrogative-formation rule) is
-// reviewed and committed to the grammar docs.
+// --- General, generative interrogative formation (Project Owner
+// directive root cause 3) is still deliberately NOT implemented or
+// tested here. Two things changed since this was first written, neither
+// of which closes the gap:
+// (a) RC-CANDIDATE-030 (2026-07-29): punctuated interrogatives that
+// already have a confirmed corrections.json entry ("will you eat?" etc)
+// now correctly reach it instead of silently falling through to
+// sov-assembly - see the RC-CANDIDATE-030 tests below. This is an
+// engineering fix for a lookup bug, not new linguistic content.
+// (b) NV-031 (docs/THANGSENG_NATIVE_VALIDATION.md, closed 2026-07-25)
+// confirmed "-ma" is verb-final and productive across tenses (not
+// future-only as the single earlier WhatsApp data point suggested), with
+// specific present/continuous/negative-future forms now attested.
+// Despite this, NV-031's own status line still reads "OPEN, feeds
+// RC-CANDIDATE-020/021" - present-tense, past-tense, and object-present
+// interrogative forms remain unconfirmed for general use, and no
+// generative rule exists in analyzeGrammar for producing "-ma" forms
+// from arbitrary input the way applyTense does for tense suffixes.
+// Encoding one into the regression suite before that rule is reviewed
+// and committed to the grammar docs would still lock in content the
+// standing integration rule prohibits implementing directly. Revisit
+// once RC-CANDIDATE-020/021 close or a dedicated interrogative-formation
+// rule is committed.
 
 // --- Found via live end-to-end quality check (2026-07-29, Claude B),
 // not from a regression report: an unresolved object (word not in the
@@ -733,4 +744,29 @@ test('negation guard: bare "not"/"never" are never captured as the object', asyn
   const r2 = await translate('he did not go');
   assert.equal(r2.method, 'grammar-assembly');
   assert.ok(!r2.garo.includes('[UNKNOWN]') && !r2.garo.includes('[unknown]'), `got: ${r2.garo}`);
+});
+
+// --- RC-CANDIDATE-030 fix (diagnosed by Claude A, fixed by Claude B,
+// 2026-07-29): corrections.json stores question keys without "?"
+// ("will you eat"), so a real user typing the punctuation they'd
+// naturally type ("will you eat?") missed the confirmed correction
+// entirely and fell through to sov-assembly's word-salad output.
+test('RC-CANDIDATE-030: "will you eat?" (with punctuation) hits the confirmed correction', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const withPunct = await translate('will you eat?');
+  const withoutPunct = await translate('will you eat');
+  assert.equal(withPunct.method, 'correction');
+  assert.equal(withPunct.garo, withoutPunct.garo);
+});
+
+test('RC-CANDIDATE-030: "?"-stripping does not shadow a deliberately different "!"-keyed entry', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('eat!');
+  assert.equal(r.garo, 'Cha·bo!', 'exclamatory-imperative "eat!" must keep its own entry, not fall back to plain "eat"');
+});
+
+test('RC-CANDIDATE-030: a corrections.json key that deliberately includes "?" is still matched directly, not shadowed', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('did you eat?');
+  assert.equal(r.method, 'correction');
 });
