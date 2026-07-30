@@ -1286,3 +1286,39 @@ now correctly labeled `method='sov-assembly', confidence=0.75`
 instead of falsely claiming `grammar-assembly`'s 0.82 - "tv" isn't in
 the dictionary either, same root-cause pattern caught a second time
 by the corpus itself).
+
+### RC-CANDIDATE-030 — `corrections.json` question-mark keys inconsistent with dictionary phrase keys, breaks punctuated interrogatives that otherwise have a confirmed fix
+
+**Found:** 2026-07-29, Claude A, during
+`docs/AUDIT_NATIVE_VALIDATION_PROPAGATION_20260729.md` (full audit
+report there; see also `THANGSENG_NATIVE_VALIDATION.md` NV-031 and
+`PENDING_LINGUISTIC_PROPOSAL_20260717_future_interrogative.md`).
+
+**Symptom, live-reproduced:** `translate("will you eat")` →
+`Na·a cha·genma?` (`method: correction`, confidence 1.0, correct).
+`translate("will you eat?")` → `Na·a Cha·gen` (`method: sov-assembly`,
+confidence 0.75) — no `?`, no `ma` suffix, silent-declarative output
+for a punctuated question. This is distinct from `RC-CANDIDATE-020`/
+`-021` (which cover sentences with no `corrections.json` entry at
+all) — this is a sentence that **does** have a confirmed, committed
+fix, defeated purely by input punctuation.
+
+**Root cause:** `master_dictionary.json`/`compiled_dict.json` store
+some phrase keys with the literal `?` included (e.g.
+`"did you eat?": "Na·a cha·ama?"`), which is why
+`translate("did you eat?")` succeeds via the `exact-phrase` lookup
+(`lookupGaro`, confidence 0.98). `src/data/corrections.json` stores
+its keys **without** `?` (`"will you eat"`), and `normalizeInput()`
+never strips trailing `?`. Two files, two conventions for the same
+kind of fact, no normalization step reconciling them.
+
+**Not scoped this session:** how many of the ~810 `corrections.json`
+entries are questions missing the `?`-inclusive form. No fix applied
+— per the audit's own instructions, this is diagnosis only, handed to
+Claude B.
+
+**Recommended fix (engineering, no relay needed):** either strip
+trailing `?` (and other terminal punctuation) in the corrections
+lookup path, or standardize on always storing `?` in question-form
+correction keys. Either resolves it; the inconsistency itself is the
+bug.

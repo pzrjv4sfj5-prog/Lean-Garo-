@@ -1,7 +1,7 @@
 repository:
   head: 4b4fb25
   last_updated: "2026-07-29"
-  test_status: "127/127 regression tests passing, build clean, lint clean. BACKLOG-003 (translationEngine.js modularization) FULLY COMPLETE, all 8 phases, 1130 -> 313 lines final. NV-041 (Claude A) closed the watch/call anomaly RC-CANDIDATE-027 flagged: watch=nia confirmed correct; call/calling replaced with Okama/Okamani (open gap: no confirmed word for phone call). RC-CANDIDATE-029 (Claude B, found via live quality check post-BACKLOG-003): unresolved objects were silently vanishing from grammar-assembly output instead of triggering fallback, and analyzeGrammar's object loop had no negation guard. Stress benchmark: 1 line changed (i watch tv - same text, correctly relabeled sov-assembly/0.75). Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4."
+  test_status: "127/127 regression tests passing, build clean, lint clean, repository-intelligence.js clean ('calling' conflict allowlisted, citation NV-041). BACKLOG-003 (translationEngine.js modularization) FULLY COMPLETE, all 8 phases, 1130 -> 313 lines final. NV-041 (Claude A) closed the watch/call anomaly RC-CANDIDATE-027 flagged: watch=nia confirmed correct; call/calling replaced with Okama/Okamani (open gap: no confirmed word for phone call). RC-CANDIDATE-029 (Claude B, found via live quality check post-BACKLOG-003): unresolved objects were silently vanishing from grammar-assembly output instead of triggering fallback, and analyzeGrammar's object loop had no negation guard; stress benchmark 1 line changed (i watch tv - same text, correctly relabeled sov-assembly/0.75). Full native-validation propagation audit (Claude A, same day, see docs/AUDIT_NATIVE_VALIDATION_PROPAGATION_20260729.md): root-caused the 'Will you eat?' production bug to RC-CANDIDATE-030 (corrections.json question-mark key inconsistency, engineering fix, not yet applied), found a stale no-test comment in tests/unit/translationEngine.test.js:688-699, found header/body status-label inconsistency on NV-031/NV-038. Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -37,6 +37,35 @@ claude_a:
     (not yet its own committed file). See current_task below for
     everything since.
   current_task: >-
+    2026-07-29 (later same day): Ran full native-validation
+    propagation audit per Project Owner directive (not a bug fix
+    session - audit first). Full report:
+    docs/AUDIT_NATIVE_VALIDATION_PROPAGATION_20260729.md. Root-caused
+    the "Will you eat?" production bug live: translate("will you eat")
+    correctly hits corrections.json (confidence 1.0, method:
+    correction) but translate("will you eat?") falls through to
+    sov-assembly (confidence 0.75, no ma/no ?) because
+    corrections.json keys omit trailing "?" while some
+    master_dictionary.json/compiled_dict.json phrase keys include it -
+    two conventions, no normalization reconciling them. This is
+    distinct from RC-CANDIDATE-020/-021 (already-tracked general gap
+    for sentences with no corrections.json entry at all) - this is a
+    sentence with a confirmed, committed fix, defeated by input
+    punctuation alone. Logged as RC-CANDIDATE-030
+    (PENDING_REGRESSION_CASES.md), diagnosis only, handed to Claude B,
+    no fix applied per audit-not-patch instruction. Also found: a
+    stale no-test comment in
+    tests/unit/translationEngine.test.js:688-699 that predates both
+    the corrections.json fix and NV-031's second native data point and
+    was never revisited despite its own "revisit once reviewed" note;
+    header-vs-body Status label inconsistency on NV-031 and NV-038 in
+    THANGSENG_NATIVE_VALIDATION.md (header says CLOSED, body's own
+    Status line says OPEN - confirmed genuine on these two by full
+    read, most other apparent mismatches found by naive grep turned
+    out to be superseded-by-later-text, not real). Audit was NOT
+    exhaustive across all 41 NV entries - explicitly scoped and stated
+    as such in the report; a full per-entry re-verification against
+    the engine would be a separate, larger task.
     2026-07-29: Reviewed the watch/call data anomaly Claude B flagged
     in RC-CANDIDATE-027 (docs/PENDING_REGRESSION_CASES.md). New native
     data arrived from Thangseng (via Tridip, WhatsApp) covering
@@ -233,21 +262,29 @@ claude_a:
     - "2026-07-20..24: NV-013/025/028/035/036/037 closed; page 2 processed solo (Claude D token-exhaustion stopgap) and promoted, RC-CANDIDATE-028 logged"
     - "2026-07-25: RULE-041 root-cause fix; NV-039 (housefly) and NV-040 (fruit) closed; 42-question consolidated Thangseng batch compiled"
   next_action: >-
-    NV-041 closed the watch/call anomaly (2026-07-29, see current_task).
-    Watch/see paradigms are on record in NV-041 but not yet migrated
-    into a grammar rule - worth its own RULE-XXX for the
-    imperative/tense suffix pattern (nibo/ninabe/niaha/nigen/nijawa)
-    since it looks productive, not verb-specific; not scoped or done
-    this session. "Phone call" gap needs a relay question added to the
-    next Thangseng batch. Pages 34/74 duplicate resolution (blocked on
-    files being pushed) and pages 94/95/100/101 (not yet staged) still
-    on hold, not actionable. The 4 reconciliation-pass flags from the
-    grammar schema migration (Sengbo gloss, NV-029/RULE-039,
-    NV-003/RULE-034, NV-004/RULE-035) remain open. Otherwise: continue
-    evidence-first corpus-internal triage of open NV items where
-    possible (see NV-027 for the pattern - narrowed 5 candidates to 2
-    without needing Thangseng, by checking which already carry
-    UNVERIFIED tags vs. which are richly multi-sense-attested in
+    RC-CANDIDATE-030 (corrections.json "?"-key inconsistency, root
+    cause of the "Will you eat?" bug) is diagnosed, not fixed - handed
+    to Claude B, no relay needed. Stale test comment at
+    tests/unit/translationEngine.test.js:688-699 needs removing/
+    updating now that both the corrections fix and NV-031 exist -
+    Claude B. THANGSENG_NATIVE_VALIDATION.md header-vs-body "CLOSED"
+    convention needs stating explicitly or fixing on NV-031/NV-038 -
+    Claude A, not done this session. NV-041 closed the watch/call
+    anomaly (2026-07-29, see current_task). Watch/see paradigms are on
+    record in NV-041 but not yet migrated into a grammar rule - worth
+    its own RULE-XXX for the imperative/tense suffix pattern
+    (nibo/ninabe/niaha/nigen/nijawa) since it looks productive, not
+    verb-specific; not scoped or done this session. "Phone call" gap
+    needs a relay question added to the next Thangseng batch. Pages
+    34/74 duplicate resolution (blocked on files being pushed) and
+    pages 94/95/100/101 (not yet staged) still on hold, not
+    actionable. The 4 reconciliation-pass flags from the grammar
+    schema migration (Sengbo gloss, NV-029/RULE-039, NV-003/RULE-034,
+    NV-004/RULE-035) remain open. Otherwise: continue evidence-first
+    corpus-internal triage of open NV items where possible (see
+    NV-027 for the pattern - narrowed 5 candidates to 2 without
+    needing Thangseng, by checking which already carry UNVERIFIED
+    tags vs. which are richly multi-sense-attested in
     master_dictionary.json).
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
