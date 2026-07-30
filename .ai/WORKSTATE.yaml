@@ -327,16 +327,13 @@ claude_a:
     - "Do not re-triage RC-CANDIDATE-027 case-key instances individually as they're found - log the count, batch-handle with Claude B"
     - "Do not let this WORKSTATE.yaml go stale again - update at session close, every session"
   waiting_for: >-
-    NV-042 (2026-07-29/30, logged not integrated) - raw native data for
-    "can you help me?" and "how many apples do you have?", relayed via
-    Project Owner while Claude A was low on tokens. Needs Claude A's
-    determination: the "angna vs angko depending on context" case-
-    marking question Thangseng raised, whether to promote as
-    corrections.json phrases vs a general grammar rule, and whether
-    "badita" generalizes beyond this exact question. See
-    THANGSENG_NATIVE_VALIDATION.md NV-042 for full detail - do not
-    integrate from that log entry alone, it's evidence not a
-    determination.
+    NV-042 determination CONFIRMED already complete (verified
+    2026-07-31, was stale in this file): resolved via NV-043 -
+    angna committed as default (angko valid alternate, general
+    case-marking question still open), badita generalization left
+    unresolved (no claim made), scoped to corrections.json phrase
+    entries only (not a grammar rule). Both sentences verified live
+    in src/data/corrections.json. No action taken this session.
     Thangseng answers to the 41-question consolidated batch (narrowed
     from 42 on 2026-07-25 - see NV-027). RULE-040 ("right" 3-way engine-side
     split) done by Claude B 2026-07-28 - bare "right" removed, three
