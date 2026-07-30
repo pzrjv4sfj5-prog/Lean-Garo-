@@ -1,5 +1,5 @@
 repository:
-  head: 2a89017
+  head: 5766bbe
   last_updated: "2026-07-29"
   test_status: "130/130 regression tests passing, build clean, lint clean, 237/237 stress benchmark byte-identical before/after. RC-CANDIDATE-030 fixed (Claude B): corrections lookup now falls back to a trailing-\"?\"-stripped key, so punctuated interrogatives with a confirmed correction (\"will you eat?\") no longer silently miss it and fall to sov-assembly word-salad. Scoped to \"?\" only after an earlier draft (also stripping \"!\"/\".\") broke \"eat!\"'s dedicated exclamatory entry - restored via test. BACKLOG-003 FULLY COMPLETE, all 8 phases. RC-CANDIDATE-029 and NV-041 done 2026-07-29 (see history). Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -298,6 +298,16 @@ claude_a:
     - "Do not re-triage RC-CANDIDATE-027 case-key instances individually as they're found - log the count, batch-handle with Claude B"
     - "Do not let this WORKSTATE.yaml go stale again - update at session close, every session"
   waiting_for: >-
+    NV-042 (2026-07-29/30, logged not integrated) - raw native data for
+    "can you help me?" and "how many apples do you have?", relayed via
+    Project Owner while Claude A was low on tokens. Needs Claude A's
+    determination: the "angna vs angko depending on context" case-
+    marking question Thangseng raised, whether to promote as
+    corrections.json phrases vs a general grammar rule, and whether
+    "badita" generalizes beyond this exact question. See
+    THANGSENG_NATIVE_VALIDATION.md NV-042 for full detail - do not
+    integrate from that log entry alone, it's evidence not a
+    determination.
     Thangseng answers to the 41-question consolidated batch (narrowed
     from 42 on 2026-07-25 - see NV-027). RULE-040 ("right" 3-way engine-side
     split) done by Claude B 2026-07-28 - bare "right" removed, three

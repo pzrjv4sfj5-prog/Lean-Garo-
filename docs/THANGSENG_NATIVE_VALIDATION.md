@@ -2215,3 +2215,45 @@ dictionary entries (consistent with how the `nia` paradigm was
 handled) — logged here as the evidentiary record; worth its own
 RULE-XXX for the productive suffix pattern (see WORKSTATE.yaml
 next_action).
+
+## NV-042 — "can you help me?" and "how many apples do you have?" — LOGGED, not integrated
+
+**Status:** OPEN. Raw native data logged by Claude B (2026-07-29/30) at
+the Project Owner's relay; NOT integrated into `corrections.json` or
+any grammar rule. Per standing rule, linguistic content sourced
+directly from chat/native speakers is Claude A's determination to
+make, not implemented directly regardless of her token availability —
+this entry exists so it's ready for her review, not as a substitute
+for it.
+
+**Context:** these two sentences were flagged live (2026-07-29, this
+session's quality check) as producing `sov-assembly` word-salad —
+`"can you help me"` → `"Betoi Angko Na·a"`, `"how many apples do you
+have"` → `"Maidake apal donga Bang·a Na·a"` — both grammatically
+uncovered constructions (modal "can", quantity-question "how many").
+
+**Native response (Thangseng → Project Owner, WhatsApp, 2026-07-30):**
+> Thangseng: can you help me=?
+> Na·a angna (or angko depending on the context) dakchakna man·genma?
+>
+> Thangseng: "how many apples do you have?
+> Nang·o badita rong apple donga?
+
+**Not determined here (needs Claude A):**
+1. The "can you help me" gloss itself flags an open case-marking
+   question — `angna` vs `angko` for "me," "depending on the
+   context" — Thangseng raised this proactively, not resolved by this
+   data point alone. Needs follow-up on what governs the choice before
+   this could inform a general rule (this is exactly the kind of
+   under-specified case-marking distinction the standing rules warn
+   against generalizing from a single data point).
+2. Whether `badita` ("how many") and this quantity-question structure
+   generalizes to other countable nouns, or is specific to `apple`/
+   this exact question form.
+3. Whether either of these should become a `corrections.json` phrase
+   entry (fixed phrase, like the existing "did you eat?" pattern) or
+   feed a general grammar rule (modal "can" / quantity-question
+   formation) — a real architectural choice with different scope and
+   risk, not a mechanical add.
+
+**Repository components impacted:** none yet — logged only.
