@@ -1531,3 +1531,39 @@ pattern already confirmed to matter (RC-029), reproducible, and cheap
 to fix the same way (surface the drop instead of hiding it).
 
 **Status: OPEN, not fixed.**
+### RC-CANDIDATE-035 — Adding `phone`/`smartphone` to the dictionary invalidated RC-CANDIDATE-029's own regression test premise, exposing a stray-token bug in grammar-assembly output
+
+**Found:** 2026-07-30, Claude A, while adding NV-042 (`phone`/`smartphone`
+dictionary entries, per a Tridip note that no separate Garo word for
+"smartphone" exists).
+
+**What happened:** RC-CANDIDATE-029's regression test
+(`tests/unit/translationEngine.test.js:715`) uses `"she is using her
+smartphone"` specifically because "smartphone" was, at the time,
+unresolvable — the test asserts the sentence must NOT return a
+confident `grammar-assembly` result with the object silently missing.
+Now that `phone`/`smartphone` → `Phone` is in the dictionary,
+"smartphone" resolves, and the test fails — not because RC-029's fix
+regressed, but because a new, different bug surfaced once the object
+actually resolves:
+
+`translate("she is using her phone")` → `"Ua Uni phone·ko Chingna"`
+(`method: grammar-assembly`, `confidence: 0.82`). `"Chingna"` is a
+stray extra token that doesn't correspond to anything in the source
+sentence (`"using"` isn't in the dictionary at all —
+`lookupGaro('using')` returns null, only `lookupGaro('use')` resolves,
+to `jak·kal·a`). Root cause not diagnosed further — this is
+engineering territory (word assembly / verb resolution in
+`grammarEngine.js`/`sentenceBuilder.js`), not scoped or fixed here.
+
+**Not a request to revert the dictionary entries** — `Phone` is
+correct per NV-042 (pending full confirmation) and the entries stay.
+This is a heads-up that RC-029's test needs its example sentence
+swapped for something that stays genuinely unresolvable (or the test
+re-scoped to directly test the `[UNKNOWN]`-vs-silent-drop behavior
+without depending on a specific word staying out of the dictionary
+forever), and a new, separate bug (the stray `"Chingna"` / missing
+`"using"` handling) to diagnose.
+
+**Test status this session:** 126/127 passing — the 1 failure is this
+exact, now-explained case, not an unexplained regression.

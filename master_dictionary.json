@@ -59211,5 +59211,29 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-041, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-29. Same phone-call exclusion as 'call'/Okama."
+  },
+  {
+    "english": "phone",
+    "garo": "Phone",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "PENDING/MEDIUM — Tridip note, 2026-07-29 (Project Owner assertion, not a direct Thangseng quote): no distinct Garo word for 'smartphone' - covered by the same loanword as 'phone'. Orthography 'Phone' assumed by loanword convention (cf. Apple, Cup, Room), not independently confirmed. Add to next Thangseng relay batch to confirm spelling/raka and promote to VERIFIED."
+  },
+  {
+    "english": "smartphone",
+    "garo": "Phone",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "PENDING/MEDIUM — Tridip note, 2026-07-29 (Project Owner assertion, not a direct Thangseng quote): no distinct Garo word for 'smartphone' - covered by the same loanword as 'phone'. Orthography 'Phone' assumed by loanword convention (cf. Apple, Cup, Room), not independently confirmed. Add to next Thangseng relay batch to confirm spelling/raka and promote to VERIFIED."
+  },
+  {
+    "english": "mobile",
+    "garo": "Phone",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "PENDING/MEDIUM — Tridip note, 2026-07-29 (Project Owner assertion, not a direct Thangseng quote): no distinct Garo word for 'smartphone' - covered by the same loanword as 'phone'. Orthography 'Phone' assumed by loanword convention (cf. Apple, Cup, Room), not independently confirmed. Add to next Thangseng relay batch to confirm spelling/raka and promote to VERIFIED."
   }
 ]

@@ -3,6 +3,16 @@ _Created 2026-07-08 by Claude A. Permanent document — do not create
 per-question `PENDING_NATIVE_QUESTIONS_*` files; add new questions here
 and update in place as answers arrive._
 
+**Convention note (added 2026-07-29, per
+`docs/AUDIT_NATIVE_VALIDATION_PROPAGATION_20260729.md`):** a `CLOSED`
+tag in a section **header** means the investigation/relay round for
+that item is closed — not necessarily that the linguistic content is
+fully confirmed or propagated to production. The authoritative status
+is always the **`Status:` line inside the record**, not the header.
+Where a record's own `Status:` line still says `OPEN`, treat it as
+open regardless of the header (see NV-031, NV-038 for examples this
+applies to).
+
 **For relaying to Thangseng:** see
 `docs/THANGSENG_QUESTION_BATCH_20260725.md` — the current
 consolidated, ready-to-send question set covering every open item
@@ -1758,7 +1768,7 @@ interchangeable in engine logic until confirmed either way.
 
 ---
 
-## NV-031 — Interrogative `-ma`: second data point, still future-tense only — CLOSED 2026-07-25
+## NV-031 — Interrogative `-ma`: second data point, still future-tense only — investigation round CLOSED 2026-07-25, linguistic item OPEN
 
 **CLOSED 2026-07-25.** `-ma` confirmed productive across tenses, not
 future-only, with a real nuance on past tense specifically. "Did you
@@ -2070,7 +2080,7 @@ being conflated with the noun in some entries). Full three-way
 resolution stays open — do not extend this single confirmation to
 close the whole conflict.
 
-## NV-038 — `na·sta` ("breakfast"/"snack"): loanword status, not yet asked — CLOSED 2026-07-25
+## NV-038 — `na·sta` ("breakfast"/"snack"): loanword status, not yet asked — investigation round CLOSED 2026-07-25, linguistic item OPEN
 
 **CLOSED 2026-07-25.** `na·sta` confirmed real but restricted: "Rarely
 used by the younger generation. But it may be used occasionally by old
@@ -2216,15 +2226,12 @@ handled) — logged here as the evidentiary record; worth its own
 RULE-XXX for the productive suffix pattern (see WORKSTATE.yaml
 next_action).
 
-## NV-042 — "can you help me?" and "how many apples do you have?" — LOGGED, not integrated
+## NV-042 — "can you help me?" and "how many apples do you have?" — RESOLVED, see NV-043
 
-**Status:** OPEN. Raw native data logged by Claude B (2026-07-29/30) at
-the Project Owner's relay; NOT integrated into `corrections.json` or
-any grammar rule. Per standing rule, linguistic content sourced
-directly from chat/native speakers is Claude A's determination to
-make, not implemented directly regardless of her token availability —
-this entry exists so it's ready for her review, not as a substitute
-for it.
+**Status:** CLOSED. Raw native data logged by Claude B (2026-07-29/30)
+at the Project Owner's relay. Claude A's determination (originally
+left open here) is now recorded in NV-043 below — see there for the
+resolution of all three open items listed originally in this entry.
 
 **Context:** these two sentences were flagged live (2026-07-29, this
 session's quality check) as producing `sov-assembly` word-salad —
@@ -2239,21 +2246,63 @@ uncovered constructions (modal "can", quantity-question "how many").
 > Thangseng: "how many apples do you have?
 > Nang·o badita rong apple donga?
 
-**Not determined here (needs Claude A):**
-1. The "can you help me" gloss itself flags an open case-marking
-   question — `angna` vs `angko` for "me," "depending on the
-   context" — Thangseng raised this proactively, not resolved by this
-   data point alone. Needs follow-up on what governs the choice before
-   this could inform a general rule (this is exactly the kind of
-   under-specified case-marking distinction the standing rules warn
-   against generalizing from a single data point).
-2. Whether `badita` ("how many") and this quantity-question structure
-   generalizes to other countable nouns, or is specific to `apple`/
-   this exact question form.
-3. Whether either of these should become a `corrections.json` phrase
-   entry (fixed phrase, like the existing "did you eat?" pattern) or
-   feed a general grammar rule (modal "can" / quantity-question
-   formation) — a real architectural choice with different scope and
-   risk, not a mechanical add.
+**Repository components impacted:** see NV-043 — added to
+`src/data/corrections.json`.
 
-**Repository components impacted:** none yet — logged only.
+## NV-044 — `phone`/`smartphone`/`mobile` — PENDING, not native-confirmed
+
+**Status:** PENDING/MEDIUM confidence, not CLOSED. Source is a Project
+Owner note (Tridip, 2026-07-29), not a direct Thangseng quote — flagged
+here per the same standard applied throughout this doc: Tridip's own
+commentary is logged as lower-confidence than a verbatim relayed
+answer, until confirmed.
+
+**Note (Tridip, 2026-07-29):** no distinct Garo word for "smartphone" —
+covered by the same loanword as "phone."
+
+**Action taken:** added `phone`/`smartphone`/`mobile` → `Phone` to
+`master_dictionary.json`, all three marked `PENDING/MEDIUM`, not
+`VERIFIED/HIGH`. Orthography (`Phone` vs. a raka'd form) assumed by
+loanword convention (cf. `Apple`, `Cup`, `Room` already in the
+dictionary as bare English loanwords), not independently confirmed.
+
+**Open:** add to the next Thangseng relay batch to confirm spelling
+and promote to VERIFIED. Do not treat as settled until then.
+
+## NV-043 — RESOLVED: "can you help me?" / "how many apples do you have?"
+
+**Status:** CLOSED for the two exact sentences given. This resolves
+NV-042 above (logged by Claude B from the same relay round) — the raw
+quote lives there; this entry records the Claude A determination
+NV-042 explicitly left open, so it isn't duplicated here.
+
+**Determinations made:**
+1. **`angna` vs. `angko`** (Thangseng flagged this as context-dependent,
+   unresolved by the one data point) — committed `angna` as the
+   default for this sentence. `angko` is a known valid alternate, not
+   wrong, just not disambiguated. This closes the sentence, not the
+   general case-marking question — do not treat `angna`/`angko` choice
+   as settled for other sentences.
+2. **Does `badita` generalize beyond this exact question?** — Not
+   resolved, left open. No claim made either way.
+3. **`corrections.json` phrase entry vs. general grammar rule?** —
+   Chose `corrections.json`, scoped to these 2 exact sentences only,
+   same precedent as the "will you eat" fix (`RC-CANDIDATE-020`). Not
+   a generative rule — no claim that other "can you X" or "how many Y"
+   sentences are covered.
+
+**Action taken:** added both sentences to `src/data/corrections.json`
+(no `?` in the key — as of `RC-CANDIDATE-030`'s fix, the corrections
+lookup now falls back to a `?`-stripped key, so this no longer carries
+the punctuation-exposure risk earlier entries had before that fix
+landed). These are the exact two sentences flagged as garbled
+`sov-assembly` output in this session's capability rating check
+(`"can you help me"` → `Betoi Angko Na·a`; `"how many apples do you
+have"` → `Maidake apal donga Bang·a Na·a`, both confidence 0.75,
+incoherent).
+
+**Not resolved:** why `sov-assembly` produces incoherent output for
+sentences like these generally — that's the underlying engine gap
+(word order / verb resolution for "can," "have," "how many"), only
+patched for these 2 exact sentences via `corrections.json`. General
+case remains open, Claude B's domain.

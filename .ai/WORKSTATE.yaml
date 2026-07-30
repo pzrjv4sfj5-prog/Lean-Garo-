@@ -1,7 +1,7 @@
 repository:
-  head: d907c30
+  head: PENDING_COMMIT
   last_updated: "2026-07-30"
-  test_status: "135/135 regression tests passing, build clean, lint clean, 237/237 stress benchmark byte-identical before/after. Continued engineering quality audit (Claude B, same day, second pass) - 2 more findings logged, not fixed: RC-CANDIDATE-033 (analyzeGrammar's classifierHints computed every call, never consumed - dead computation, not incorrect output) and RC-CANDIDATE-034 (translate() step 7 'morphology' silently drops unresolved words with no signal, same pattern as RC-029; confirmed reachable and live-reproduced via all-stopword-shaped input - translate('is on xyzzy at') produces identical output to translate('is on at'), the gibberish word vanishes silently). RC-CANDIDATE-031 fixed same day (parseCountingPhrase compound numbers). RC-CANDIDATE-032 logged, deliberately not fixed (unreachable dead code, kept separate from live fixes). BACKLOG-003 FULLY COMPLETE, all 8 phases."
+  test_status: "134/135 regression tests passing, build clean, lint clean, repository-intelligence.js clean. The 1 failure is EXPLAINED, not a regression: RC-CANDIDATE-035 (Claude A adding phone/smartphone to the dictionary invalidated RC-CANDIDATE-029's test premise, which specifically relied on 'smartphone' staying unresolvable; exposed a real but separate stray-token bug in grammar-assembly, not yet diagnosed). Continued engineering quality audit (Claude B, second pass, 2026-07-30): RC-CANDIDATE-033 (analyzeGrammar's classifierHints computed every call, never consumed - dead computation) and RC-CANDIDATE-034 (translate() step 7 'morphology' silently drops unresolved words with no signal, same pattern as RC-029; live-reproduced: translate('is on xyzzy at') identical to translate('is on at')) logged, not fixed. RC-CANDIDATE-031 (parseCountingPhrase compound numbers, e.g. twenty-one) fixed same day. RC-CANDIDATE-032 logged, deliberately not fixed (unreachable dead code). RC-CANDIDATE-030 (corrections.json question-mark key inconsistency, root cause of the 'Will you eat?' bug) fixed same day (Claude B): 4th fallback in the corrections lookup chain strips trailing '?', scoped to '?' only. NV-044 (Claude A, 2026-07-30): added phone/smartphone/mobile -> Phone to master_dictionary.json, PENDING/MEDIUM confidence (Tridip note, not direct Thangseng quote) - awaiting relay confirmation. NV-042/NV-043 (Claude B logged, Claude A resolved, 2026-07-30): Thangseng confirmed 'can you help me?' and 'how many apples do you have?' - both added to corrections.json, closing the two garbled sov-assembly examples flagged in this session's capability rating check. BACKLOG-003 (translationEngine.js modularization) FULLY COMPLETE, all 8 phases, 1130 -> 313 lines final. NV-041 (Claude A) closed the watch/call anomaly: watch=nia confirmed correct; call/calling replaced with Okama/Okamani (open gap: no confirmed word for phone call). RC-CANDIDATE-029 (Claude B, 2026-07-29): unresolved objects were silently vanishing from grammar-assembly output instead of triggering fallback, and analyzeGrammar's object loop had no negation guard. Full native-validation propagation audit (Claude A, 2026-07-29, see docs/AUDIT_NATIVE_VALIDATION_PROPAGATION_20260729.md): root-caused the 'Will you eat?' production bug. Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -37,6 +37,26 @@ claude_a:
     (not yet its own committed file). See current_task below for
     everything since.
   current_task: >-
+    2026-07-30: Capability/quality rating check requested by Project
+    Owner surfaced two live glitches (garbled sov-assembly output for
+    "can you help me" and "how many apples do you have") plus a
+    dictionary gap (no "phone"/"smartphone" entry at all). Tridip
+    confirmed no separate Garo word for smartphone - covered by the
+    same loanword as phone; logged as NV-042, PENDING/MEDIUM (his own
+    note, not a direct Thangseng quote, awaiting relay confirmation),
+    added phone/smartphone/mobile -> Phone to master_dictionary.json.
+    Thangseng then directly confirmed "can you help me?" (Na·a angna
+    (or angko, context-dependent) dakchakna man·genma?) and "how many
+    apples do you have?" (Nang·o badita rong apple donga?) - logged as
+    NV-043, added both to corrections.json, closing both glitches
+    (now method=correction, confidence 1.0). Side effect: adding
+    phone/smartphone to the dictionary resolved what RC-CANDIDATE-029's
+    own regression test relied on staying unresolvable, surfacing a
+    real but different bug (stray "Chingna" token in grammar-assembly
+    output for "she is using her phone", "using" not in dictionary at
+    all) - logged as RC-CANDIDATE-031, not fixed (engineering, Claude
+    B's domain), test failure is explained not silent. 126/127 tests,
+    build/lint/repository-intelligence clean throughout.
     2026-07-29 (later same day): Ran full native-validation
     propagation audit per Project Owner directive (not a bug fix
     session - audit first). Full report:
@@ -262,29 +282,38 @@ claude_a:
     - "2026-07-20..24: NV-013/025/028/035/036/037 closed; page 2 processed solo (Claude D token-exhaustion stopgap) and promoted, RC-CANDIDATE-028 logged"
     - "2026-07-25: RULE-041 root-cause fix; NV-039 (housefly) and NV-040 (fruit) closed; 42-question consolidated Thangseng batch compiled"
   next_action: >-
-    RC-CANDIDATE-030 fixed by Claude B, 2026-07-29 (corrections lookup
-    now strips trailing "?" as a last-resort fallback, scoped to "?"
-    only after an earlier "!"/"." draft broke "eat!"'s dedicated
-    exclamatory entry). Stale test comment at
-    tests/unit/translationEngine.test.js (interrogative-formation note,
-    was line 688-699, moved since) updated by Claude B same session.
-    THANGSENG_NATIVE_VALIDATION.md header-vs-body "CLOSED" convention
-    still needs stating explicitly or fixing on NV-031/NV-038 - Claude
-    A, not done yet. NV-041 closed the watch/call anomaly (2026-07-29).
-    Watch/see paradigms are on record in NV-041 but not yet migrated
-    into a grammar rule - worth its own RULE-XXX for the
-    imperative/tense suffix pattern (nibo/ninabe/niaha/nigen/nijawa)
-    since it looks productive, not verb-specific; not scoped or done
-    yet. "Phone call" gap needs a relay question added to the next
-    Thangseng batch. Pages 34/74 duplicate resolution (blocked on
-    files being pushed) and pages 94/95/100/101 (not yet staged) still
-    on hold, not actionable. The 4 reconciliation-pass flags from the
-    grammar schema migration (Sengbo gloss, NV-029/RULE-039,
-    NV-003/RULE-034, NV-004/RULE-035) remain open. Otherwise: continue
-    evidence-first corpus-internal triage of open NV items where
-    possible (see NV-027 for the pattern - narrowed 5 candidates to 2
-    without needing Thangseng, by checking which already carry
-    UNVERIFIED tags vs. which are richly multi-sense-attested in
+    RC-CANDIDATE-030 fixed by Claude B, 2026-07-29/30 (corrections
+    lookup now strips trailing "?" as a last-resort fallback, scoped
+    to "?" only after an earlier "!"/"." draft broke "eat!"'s
+    dedicated exclamatory entry). Stale test comment at
+    tests/unit/translationEngine.test.js (interrogative-formation
+    note) updated by Claude B same session. RC-CANDIDATE-035 (stray
+    "Chingna" token / missing "using" handling in grammar-assembly,
+    surfaced by adding phone/smartphone to the dictionary) needs
+    diagnosis and fix - Claude B. RC-CANDIDATE-029's test at
+    translationEngine.test.js:715 needs its example sentence swapped
+    for something that stays genuinely unresolvable, since
+    "smartphone" no longer qualifies - Claude B. NV-044
+    (phone/smartphone/mobile) is still only PENDING/MEDIUM confidence
+    - needs a real Thangseng relay question to confirm orthography,
+    not just Tridip's note. THANGSENG_NATIVE_VALIDATION.md
+    header-vs-body "CLOSED" convention still needs stating explicitly
+    or fixing on NV-031/NV-038 - Claude A, not done yet. NV-041 closed
+    the watch/call anomaly (2026-07-29). Watch/see paradigms are on
+    record in NV-041 but not yet migrated into a grammar rule - worth
+    its own RULE-XXX for the imperative/tense suffix pattern
+    (nibo/ninabe/niaha/nigen/nijawa) since it looks productive, not
+    verb-specific; not scoped or done yet. "Phone call" gap needs a
+    relay question added to the next Thangseng batch. Pages 34/74
+    duplicate resolution (blocked on files being pushed) and pages
+    94/95/100/101 (not yet staged) still on hold, not actionable. The
+    4 reconciliation-pass flags from the grammar schema migration
+    (Sengbo gloss, NV-029/RULE-039, NV-003/RULE-034, NV-004/RULE-035)
+    remain open. Otherwise: continue evidence-first corpus-internal
+    triage of open NV items where possible (see NV-027 for the
+    pattern - narrowed 5 candidates to 2 without needing Thangseng, by
+    checking which already carry UNVERIFIED tags vs. which are richly
+    multi-sense-attested in
     master_dictionary.json).
   do_not_repeat:
     - "Do not re-derive the suffix paradigm table from scratch - final in MORPHOLOGY_SPECIFICATION.md §3 unless native validation changes it"
