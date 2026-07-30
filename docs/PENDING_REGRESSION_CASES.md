@@ -1464,3 +1464,70 @@ sync/dead-code hygiene issue, zero risk to fix (nothing currently
 calls the affected branch, so no test could regress).
 
 **Status: OPEN, not fixed.**
+
+### RC-CANDIDATE-033 — `analyzeGrammar`'s `classifierHints` computed every call, never consumed
+
+**Found:** 2026-07-30, Claude B, continued engineering quality audit
+(second pass).
+
+**Origin:** Parser (`grammarEngine.js`'s `analyzeGrammar`) — dead
+computation, not incorrect output.
+
+**Finding:** `analyzeGrammar` computes `classifierHints` (a handful of
+regex tests against the input) and includes it in every returned
+grammar object, but grepped the full repo — nothing downstream
+(`assembleGrammar`, `assembleSentenceSOV`, `translate()`, or any other
+consumer) ever reads `grammar.classifierHints`. It's wasted work on
+every single `analyzeGrammar` call (which itself runs on most
+`translate()` calls, step 6) and dead surface area for anyone
+maintaining this function — a future reader could reasonably assume
+it affects output somewhere.
+
+**Not a correctness bug** — output is unaffected either way, purely a
+maintainability/dead-code finding. Low priority; safe, narrow fix
+either way (remove the computation, or wire it up if a real
+consumer was intended and got lost in a prior refactor — needs a
+decision on which, not just a mechanical fix).
+
+**Status: OPEN, not fixed.**
+
+---
+
+### RC-CANDIDATE-034 — `translate()` step 7 ("morphology") silently drops unresolved words with no signal, same pattern RC-029 fixed elsewhere
+
+**Found:** 2026-07-30, Claude B, continued engineering quality audit
+(second pass). **Reachability confirmed** after initial investigation
+(see corrected write-up below — an earlier draft of this entry
+incorrectly suspected this step might be dead code; it is not).
+
+**Origin:** Sentence builder / orchestration (`translationEngine.js`
+step 7).
+
+**How it's reached:** step 7 only runs after `assembleSentenceSOV`
+(step 6.5) returns `null`, which happens when every word is a
+stopword/auxiliary (`!content.length`). Several stopwords/auxiliaries
+(`is`, `be`, `do`, `can`, `on`, `at`, `will`, etc.) also happen to have
+real dictionary entries, so an all-function-word input reaches step 7
+even though it has no "content" by `assembleSentenceSOV`'s definition.
+
+**Live repro — confirmed silent content-loss:**
+```
+translate("is on at")        -> "daka Kosak·o O"  (method: morphology, 0.65)
+translate("is on xyzzy at")  -> "daka Kosak·o O"  (method: morphology, 0.65)
+```
+Identical output whether or not the unresolvable `"xyzzy"` was even in
+the input — step 7 joins only the words that resolved
+(`.filter(Boolean)`) with no `[UNKNOWN]` marker or other signal that
+anything was dropped. Same defect class as RC-CANDIDATE-029 (silent
+drop instead of surfacing/falling through), though the confidence
+(0.65) is already the lowest of any non-passthrough method, so it's
+less likely to be mistaken for a confident, complete translation than
+RC-029's `grammar-assembly`/0.82 case was.
+
+**Real-world impact:** low — requires an input that's ~entirely
+stopwords/auxiliaries mixed with unresolvable content, an unusual
+shape for a real sentence. Logged because it's the same defect
+pattern already confirmed to matter (RC-029), reproducible, and cheap
+to fix the same way (surface the drop instead of hiding it).
+
+**Status: OPEN, not fixed.**
