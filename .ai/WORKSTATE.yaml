@@ -30,6 +30,15 @@ repository:
     boundaries (Claude A = linguistic authority, Claude B = engineering/
     repository architecture) are unchanged - this is an access-workflow
     change only.
+  governance_note_2: >-
+    2026-07-31, Project Owner directive: the same session-supplied PAT
+    may now be reused across multiple pushes within a session, and
+    across subsequent sessions, until the Project Owner supplies a new
+    one - overriding the earlier "rotate after use" wording above.
+    Rotation timing is the Project Owner's call, not Claude A's to
+    enforce. Still never embed the PAT in any file or log it in commit
+    content; still only ever typed live by the Project Owner, never
+    inferred or reused from training data or another source.
   note: >-
     CLAUDE_A_FINAL_HANDOUT.md (repo root) added e0cea23 - closing note
     from the original Claude A instance, applied via git format-patch
