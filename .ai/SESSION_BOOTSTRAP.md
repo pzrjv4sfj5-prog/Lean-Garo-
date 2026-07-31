@@ -41,17 +41,20 @@ history, before any actual work occurs.
    file) at a clean checkpoint — proactively, before token exhaustion
    forces it mid-edit.
 2. **Nothing stays local at session close, ever.** Before producing a
-   Migration Document or otherwise ending a session: commit AND push
-   everything. `git status`/`git log` vs `origin/<branch>` must show
-   zero divergence — no uncommitted changes, no unpushed commits. If
-   push access isn't available that session (no PAT), use the
-   `git format-patch` relay and say so explicitly in the migration
-   doc — do not silently leave work sitting only in a local commit or
-   only in chat/tool output.
+   Migration Document: commit, rebase onto `origin/main` if required,
+   push successfully, then verify `git status` reports a clean
+   working tree AND zero divergence from `origin/main` — only then
+   produce the Migration Document. If push access isn't available
+   that session (no PAT) or a push cannot be completed for any other
+   reason, output the full `git diff` or `git format-patch` instead,
+   and say so explicitly in the migration doc — never silently leave
+   work sitting only in a local commit or only in chat/tool output.
 3. **The repository, not the chat thread, is the source of truth.**
    A new session should resync from `.ai/WORKSTATE.yaml` + repo state
    (`git fetch`, `git log`, `git diff` against the migration doc's
-   checkpoint), not from re-reading prior chat messages.
+   checkpoint), not from re-reading prior chat messages. Migration
+   documents accelerate resumption; they never override committed
+   repository state.
 4. Keep tool output narrow (`grep`/`sed` targeted ranges, not full
    file dumps) — every character read in-session adds to that
    session's own token cost too, independent of thread-length issues.
