@@ -325,6 +325,20 @@ claude_a:
     - "2026-07-31 (later session, checkpoint b181e86): phone ka·a citation-form headword added, closing the base/citation-form keying question from NV-046 (81545be, 14eb835). mipring/-de remains the sole open item in that lineage."
     - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
+    2026-07-31 (later session): responded to external (Copilot) audit
+    handoff. Verified every cited item against current HEAD before
+    acting, per standing discipline - audit itself not otherwise
+    trustworthy. Confirmed real: RC-036 (RC-027 clobber pattern still
+    live for one-dog/one-person, flagged to Claude B). Confirmed real
+    but bigger/different than characterized: RC-037 (systemic numeral-
+    substitution bug in bulk-generated classifier tables - scoped, not
+    fixed, needs dedicated session). Already-resolved/non-issues:
+    Nama/good, Tusia/sleep (audit was stale on these). "bird"/"birds"
+    flag folded into RC-037's writeup (same root entanglement, not a
+    separate fix). Both new items logged in
+    docs/PENDING_REGRESSION_CASES.md Pending section with full
+    evidence. Not started: any actual fix to the numeral table -
+    explicit Project Owner instruction to scope only this session.
     2026-07-31 (later session): phone ka·a base/citation-form keying
     question CLOSED - "phone ka·a" added as its own headword (81545be/
     14eb835), no longer an open dictionary-structure question. Still
@@ -504,6 +518,16 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
+    FLAG from Claude A, 2026-07-31: RC-CANDIDATE-036 logged in
+    docs/PENDING_REGRESSION_CASES.md Pending section - RC-027's
+    compiler fix isn't holding for "one dog"/"one person";
+    compiled_dict.json is still serving non-VERIFIED duplicate-row
+    values instead of the VERIFIED/HIGH canonical forms
+    (achak mang·sa, mande sak·sa). Confirmed live at HEAD ddf8576,
+    not stale. See RC-036 for exact input/expected/actual and
+    suspected cause (may be RC-027's excluded same-case-duplicate
+    shape, not a true case-collision - same pattern as "watch"/"call"
+    were excluded).
     2026-07-31: RC-CANDIDATE-033 resolved as a documentation
     correction, not a code change - re-verification found the original
     "dead code" diagnosis incomplete: classifierHints IS consumed by a

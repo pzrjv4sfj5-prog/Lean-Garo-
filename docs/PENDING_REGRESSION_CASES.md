@@ -1643,3 +1643,92 @@ exact, now-explained case, not an unexplained regression. **Status:
 OPEN, not fixed — Claude B's domain, not touched by the RC-034 fix
 above (different code path: RC-034 is step 7 morphology, this is
 step 6 grammar-assembly).**
+
+### RC-CANDIDATE-036 — RC-027's compiler fix isn't holding for "one dog"/"one person": still serving non-canonical forms
+
+**Status:** Pending — Claude B.
+**Found:** Claude A, 2026-07-31, verifying an external (Copilot) audit
+against current HEAD before acting on it.
+
+**Evidence, checked at current HEAD:**
+- `"one dog"`: `master_dictionary.json` has the VERIFIED/HIGH entry
+  (`achak mang·sa`) alongside an older unannotated duplicate
+  (`sa mang·sa`). `src/compiled_dict.json` currently serves
+  `sa mang·sa` — the non-verified one.
+- `"one person"`: same shape. VERIFIED/HIGH entry is `mande sak·sa`;
+  `garo_dictionary.json` additionally carries `manderang sak·sa` and
+  `sa sak·sa` as further duplicates. `compiled_dict.json` serves
+  `sa mande·sa` — again not the verified form.
+
+This is the same case-key/duplicate-row clobber shape RC-027's
+compiler fix (292 keys) was meant to close. Either these two pairs
+fell outside that fix's matching condition, or a later change
+reintroduced last-write-wins for them. Not re-diagnosing the compiler
+logic myself — flagging with confirmed input/expected/actual so it
+doesn't need re-deriving.
+
+**Expected:** `"one dog"` → `achak mang·sa`; `"one person"` →
+`mande sak·sa` — both already VERIFIED/HIGH, no further linguistic
+review needed on the canonical choice itself; this is purely a
+compiled-output-doesn't-match-source bug.
+
+**Severity:** Same tier as RC-027 — user-facing wrong output despite
+a correct, already-approved canonical form existing in source.
+
+**Suspected cause:** Either (a) these rows don't fit RC-027's specific
+matching condition (RC-027's writeup explicitly excluded same-case
+duplicate rows like "watch"/"call" and flagged those separately —
+these two may be the same excluded shape, not a true case-collision),
+or (b) a regression since the 07-28 fix. Claude B best positioned to
+tell which from the compiler logic directly.
+
+### RC-CANDIDATE-037 — Numeral-substitution bug in bulk-generated classifier-noun tables (two=`do·o`, three=`na·tok` instead of `Gni`/`Gittam`)
+
+**Status:** Pending — Claude A, scoping only, deliberately not started
+this session (large, systemic — needs its own dedicated pass, not
+entry-by-entry alongside other work).
+
+**Found:** Claude A, 2026-07-31, investigating the Copilot audit's
+"three fish" flag (`na·tok mang·gittam` vs `na·tok mang·gni`
+disagreement between `garo_dictionary.json` and
+`master_dictionary.json`/`compiled_dict.json`).
+
+**Root cause, corpus-internally confirmed — no relay needed:** the
+dictionary's own verified number table gives two=`Gni`, three=
+`Gittam`. But the bulk-generated `"<number> <noun>"` entries
+(`"two X"`, `"three X"`, and compound teens `"twelve X"` = ten+two,
+`"thirteen X"` = ten+three) substitute `do·o` for "two" and `na·tok`
+for "three" instead — e.g. `"twelve dog"` → `chi do·o mang·gni`
+(ten + do·o + mang·gni — "do·o" and "mang·gni" both present, neither
+correctly meaning "two" here). `do·o`/`na·tok` are real words
+(chicken, fish — see NV-025/NV-041), not the numerals — reads as a
+systematic mix-up in however this table block was originally
+generated, not a one-off typo. `garo_dictionary.json`'s
+`na·tok mang·gittam` for "three fish" is coincidentally *right* only
+because `na·tok` also happens to be the correct word for "fish"
+itself, colliding with its incorrect use as a numeral elsewhere in
+the same table — this isn't a source disagreement to arbitrate, it's
+a confirmable error in one source (master/compiled), with the other
+source (garo_dictionary.json) accidentally correct for the wrong
+reason on this one word.
+
+**Scope, not yet fully counted:** at minimum every generated `"two
+<noun>"`, `"three <noun>"`, `"twelve <noun>"`, `"thirteen <noun>"`
+entry (spot-checked: person, dog, cat, bird all confirmed affected
+for twelve/thirteen). Likely 100+ entries — needs a full scan, not
+spot-checking, before any fix. Not scanned yet.
+
+**Also entangled:** the `"two birds"` → `do·o mang·gni` entry
+(separately flagged by the same audit) is doubly stale — wrong on
+this numeral-substitution bug, *and* pre-dates NV-025/NV-041's
+redefinition of `do·o` from generic-bird to specifically-chicken.
+
+**Not started this session, deliberately:** a proper fix needs (1) a
+full scan for every affected entry, not just spot-checks, (2)
+confirming `Gni`/`Gittam` are correctly used as classifier-count
+suffixes vs. bare numeral prefixes in this construction (the "one X"
+entries use `sa` correctly as a prefix — need to confirm the two/
+three fix mirrors that shape exactly), (3) likely touching
+`master_dictionary.json`, `garo_dictionary.json`, and compiled
+outputs together. Scoping as its own work item, not fixing ad hoc.
+
