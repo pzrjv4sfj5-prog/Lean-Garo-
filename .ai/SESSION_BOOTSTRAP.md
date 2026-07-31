@@ -26,6 +26,39 @@ any future role) must use tokens smartly:
   list in `.ai/WORKSTATE.yaml`).
 - Lead with the result; keep commentary proportional to the task.
 
+## Thread hygiene & zero-local-state ground rule (Project Owner directive, 2026-07-31)
+
+Free/limited tokens make this critical: **every message in a chat
+thread resends the ENTIRE prior conversation** (all messages, all
+tool output — every `git log`, `cat`, `diff`) as input tokens before
+any new work happens. On a long-running thread, simply saying
+"resume" burns a large chunk of the token budget just re-transmitting
+history, before any actual work occurs.
+
+**Rules for every Claude instance (A, B, D, future roles):**
+1. **Do not let one chat thread run indefinitely.** Close out with a
+   Migration Document (see the existing template/protocol in this
+   file) at a clean checkpoint — proactively, before token exhaustion
+   forces it mid-edit.
+2. **Nothing stays local at session close, ever.** Before producing a
+   Migration Document or otherwise ending a session: commit AND push
+   everything. `git status`/`git log` vs `origin/<branch>` must show
+   zero divergence — no uncommitted changes, no unpushed commits. If
+   push access isn't available that session (no PAT), use the
+   `git format-patch` relay and say so explicitly in the migration
+   doc — do not silently leave work sitting only in a local commit or
+   only in chat/tool output.
+3. **The repository, not the chat thread, is the source of truth.**
+   A new session should resync from `.ai/WORKSTATE.yaml` + repo state
+   (`git fetch`, `git log`, `git diff` against the migration doc's
+   checkpoint), not from re-reading prior chat messages.
+4. Keep tool output narrow (`grep`/`sed` targeted ranges, not full
+   file dumps) — every character read in-session adds to that
+   session's own token cost too, independent of thread-length issues.
+
+This is a standing rule, not a one-off — applies identically whether
+the next session is Claude A, Claude B, or Claude D.
+
 ## Roles (do not cross these lines)
 - **Claude A** — grammar, morphology, validation corpus, rule catalogue.
   Linguistic authority. Does not touch engine code.

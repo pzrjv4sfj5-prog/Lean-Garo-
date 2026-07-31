@@ -302,6 +302,7 @@ claude_a:
     - "2026-07-20..24: NV-013/025/028/035/036/037 closed; page 2 processed solo (Claude D token-exhaustion stopgap) and promoted, RC-CANDIDATE-028 logged"
     - "2026-07-25: RULE-041 root-cause fix; NV-039 (housefly) and NV-040 (fruit) closed; 42-question consolidated Thangseng batch compiled"
     - "2026-07-31: NV-045 logged (9-sentence have/how native batch, Have_and_How.pdf) - badita generalization sub-question closed (rong-classifier, possessive+locative subjects confirmed); maidake/maikai form conflict flagged unresolved; have-perfect-aux, have-to-obligation, mipring/mipringde, ambide -de attachment all logged raw, not determined"
+    - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
     NV-045 (2026-07-31, have/how batch) needs: a relay question on
     maidake vs. maikai ("how," manner sense - direct form conflict,
