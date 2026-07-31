@@ -2261,7 +2261,50 @@ uncovered constructions (modal "can", quantity-question "how many").
 **Repository components impacted:** see NV-043 — added to
 `src/data/corrections.json`.
 
-## NV-044 — `phone`/`smartphone`/`mobile` — PENDING, not native-confirmed
+## NV-046 — RESOLVED: `maidake` vs. `maikai` ("how"), and "phone call" is a verb phrase, not a noun
+
+**Status:** Resolved by direct Thangseng relay (via Project Owner,
+2026-07-31). Two separate items in one relay message.
+
+**Item 1 — `maidake` vs. `maikai`:** not free variation, not a form
+conflict — `maikai` and `maidake` are both "how," but `maikai` is
+broader: it also covers "in order that" / "so that" (purpose/result
+clause), a sense `maidake` does not carry. Thangseng's own framing:
+*"Maikai is a bit versatile than Maidake."*
+**Determination:** `maidake` = "how" only (narrower). `maikai` = "how"
++ "in order that"/"so that" (wider). Not interchangeable in the
+purpose/result sense — only `maikai` covers that. Promote to a RULE
+entry once a purpose/result-clause example sentence exists to anchor
+the second sense (currently glossed, not yet exemplified).
+
+**Item 2 — "phone call":** resolves and *supersedes* NV-044's PENDING
+loanword entry for the calling sense specifically (NV-044's
+phone/smartphone/mobile *noun* entries stand — this is about the verb
+"to call," not the device noun). There is no direct noun for "phone
+call" itself, and the earlier device word `ku'bilbat` is confirmed
+obsolete/out of use. The productive construction is the verb phrase
+`phone ka'a`, inflecting like any other verb:
+- `Phone ka'enga` — "(I am) calling," e.g. `Tridipna phone ka'enga.`
+  = "(I am) calling Tridip."
+- `Phone ka'atenga` — "(someone) is calling," e.g. `Tridip
+  ka'atenga.` = "Tridip is calling."
+- `Phone ka'atbo` — imperative "call!"
+- `Phone ka'atnabe` — negative imperative "do not call"
+- `Phone ka'atjawa` — future negative "will not call"
+
+**Cross-reference:** this is the verb-side counterpart to the earlier
+`call` RC-CANDIDATE-027 finding (NV-041) that resolved the 4 old noun/
+verb "call" entries to `Okama`/`Okamani` and left "phone call"
+specifically as an open gap. This closes that gap: "phone call" isn't
+a single noun to translate — it's this `phone ka'a` verb paradigm.
+
+**Action taken:** logging only this pass. Not yet written into
+`corrections.json` or `master_dictionary.json` — five inflected forms
+need their own entries plus a decision on how to key the base/citation
+form, which is dictionary-structure work, not just an NV log. Flagging
+for the next pass rather than rushing five ad hoc entries in.
+
+
 
 **Status:** PENDING/MEDIUM confidence, not CLOSED. Source is a Project
 Owner note (Tridip, 2026-07-29), not a direct Thangseng quote — flagged
