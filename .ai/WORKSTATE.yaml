@@ -1,5 +1,5 @@
 repository:
-  head: c96ab86
+  head: b181e86
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -57,6 +57,26 @@ claude_a:
     (not yet its own committed file). See current_task below for
     everything since.
   current_task: >-
+    2026-07-31 (new session, checkpoint b181e86): Resolved the
+    phone ka·a base/citation-form keying question left open from
+    NV-046. Added "to call (someone) on the phone" -> "phone ka·a" as
+    its own headword in master_dictionary.json, per house convention
+    of a bare root/citation entry alongside inflected paradigm members
+    (cf. "Nia" for see/look/watch, "Kam ka·a" for "to work") - not a
+    newly-elicited form, derived from the 4 already-VERIFIED inflected
+    entries sharing this stem. 141/141 tests, prepare-data.js,
+    test-dictionary.js, repository-intelligence.js all clean;
+    compiled_dict.json/category_index.json regenerated and committed
+    same push (81545be, then follow-up 14eb835 for the regenerated
+    files missed in the first commit - caught and fixed same session).
+    vite build step itself fails in this sandbox only because
+    node_modules/vite isn't installed - pre-existing environment gap,
+    unrelated to this change, not re-flagged as a real issue.
+    mipring vs. mipringde remains open, not corpus-resolvable (needs a
+    disambiguating native example - subject-less non--de form, or
+    explicit-subject -de form). Claude D: no push landed this session
+    either; pages 34/74 duplicate and 94/95/100/101 status unchanged
+    from last checkpoint.
     2026-07-30: Capability/quality rating check requested by Project
     Owner surfaced two live glitches (garbled sov-assembly output for
     "can you help me" and "how many apples do you have") plus a
@@ -302,20 +322,23 @@ claude_a:
     - "2026-07-20..24: NV-013/025/028/035/036/037 closed; page 2 processed solo (Claude D token-exhaustion stopgap) and promoted, RC-CANDIDATE-028 logged"
     - "2026-07-25: RULE-041 root-cause fix; NV-039 (housefly) and NV-040 (fruit) closed; 42-question consolidated Thangseng batch compiled"
     - "2026-07-31: NV-045 logged (9-sentence have/how native batch, Have_and_How.pdf) - badita generalization sub-question closed (rong-classifier, possessive+locative subjects confirmed); maidake/maikai form conflict flagged unresolved; have-perfect-aux, have-to-obligation, mipring/mipringde, ambide -de attachment all logged raw, not determined"
+    - "2026-07-31 (later session, checkpoint b181e86): phone ka·a citation-form headword added, closing the base/citation-form keying question from NV-046 (81545be, 14eb835). mipring/-de remains the sole open item in that lineage."
     - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
+    2026-07-31 (later session): phone ka·a base/citation-form keying
+    question CLOSED - "phone ka·a" added as its own headword (81545be/
+    14eb835), no longer an open dictionary-structure question. Still
+    open, NOT resolvable corpus-internally: mipring vs mipringde (only
+    2 data points, 2 confounded dimensions - subject presence and -de
+    suffix - can't isolate cause without a disambiguating example).
+    That is now the only genuinely open item in the NV-045/046 lineage.
     2026-07-31: NV-046 resolved both remaining relay-dependent items
     from NV-045 via direct Thangseng answer (not corpus-internal) -
     maidake ("how" only) vs maikai ("how" + "in order that"/"so that",
     wider) are NOT interchangeable in the purpose sense; "phone call"
     has no direct noun, resolves to the phone ka'a verb paradigm (5
-    inflected forms logged, not yet written into corrections.json/
-    master_dictionary.json - needs a base/citation-form keying decision
-    first, not ad hoc entry). Still open, NOT resolvable corpus-
-    internally: mipring vs mipringde (only 2 data points, 2 confounded
-    dimensions - subject presence and -de suffix - can't isolate cause
-    without a disambiguating example). Nothing else promoted to code
-    yet.
+    inflected forms logged, base form now also added). Nothing else
+    promoted to code yet.
     RC-CANDIDATE-030 fixed by Claude B, 2026-07-29/30 (corrections
     lookup now strips trailing "?" as a last-resort fallback, scoped
     to "?" only after an earlier "!"/"." draft broke "eat!"'s
