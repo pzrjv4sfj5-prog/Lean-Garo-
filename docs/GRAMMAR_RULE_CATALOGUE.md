@@ -215,10 +215,21 @@ Structured per Sprint Work Package schema. Rule IDs map to
 ---
 ### RULE-003b — Imperative Subject-Drop
 **Description:** Commands have no overt subject.
-**Examples:** `Sengbo` (stop!).
+**Examples:** `Sengbo` (stop!/wait! — see gloss note below).
 **Counterexamples:** none.
 **Dependencies:** RULE-003.
-**Native Notes:** Source Rule 3.
+**Native Notes:** Source Rule 3. **Gloss reconciliation (2026-07-31):**
+this rule and RULE-029 both glossed `Sengbo` as "stop!"; NV-015 (the
+authoritative, most-corrected entry on this word, three revision
+stages) establishes the citation/declarative root as `senga`="wait,"
+with `Sengbo` as its imperative form — i.e. "wait!," not "stop!" on
+its face. Resolved via existing corpus-internal evidence rather than
+treated as a live contradiction: `docs/GRAMMAR_CONFIDENCE_MATRIX.md`
+already records `Damo`="wait/stop (synonym)... confirmed synonym of
+Sengbo" — meaning `Sengbo`/`Damo` are already independently confirmed
+to cover both senses as a dual gloss, not a single-sense error. Both
+"stop!" and "wait!" are valid glosses for `Sengbo`; this was a
+labeling gap in this rule's example, not a factual conflict.
 **Validation Status:** Verified.
 **Confidence:** High.
 **Launch Priority:** P0.
@@ -444,8 +455,23 @@ vs. b vs. c) remains open, unaffected by this update.
 **Counterexamples:** None — nothing yet contradicts these; equally, nothing yet confirms them beyond the single relayed source.
 **Dependencies:** RULE-033 (established locative `-o` pattern this set extends), Grammar Specification §6, §2 RULE-G2 (productivity boundary — this rule does not resolve that boundary, it adds candidate vocabulary within it).
 **Native Notes:** Source: raw WhatsApp exchange between Thangseng and Tridip, relayed via Claude B chat session 2026-07-08 (`docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`). This is native-sourced but **evidentially weaker** than the project's usual bar for "Verified" (compare RULE-033's `nokkimao`, which came from a direct native-confirmation session with a full example sentence). `over`/`badeao` is explicitly flagged uncertain by the source and should be treated as lower-confidence than the other eight.
-**Validation Status:** Needs Native Validation (direct) — eight items at Medium confidence pending a direct Thangseng confirmation pass (ideally with a full example sentence each, matching RULE-033's standard); `over`/`badeao` at Low confidence, explicitly source-flagged as uncertain.
-**Confidence:** Medium (8 items); Low (`over`).
+**Validation Status:** Verified (7 of 9 items) — confirmed 2026-07-25
+via NV-003 with full example sentences (matching RULE-033's standard):
+`below`(`ka'mao`), `inside`(`ning'ao`), `outside`(`a'palo`),
+`above`/`up`(`kosako` — same word for both senses, not two distinct
+items), `behind`(`janggilo`), `beside`(`sambao`). Two items diverge
+from this rule's original proposal, not simply confirmed as-listed:
+`over`/`badeao` was **not** confirmed — the actual native answer for
+the "over" concept ("let's go over the bridge") used `nalsachi`, the
+same word given for `across`, not `badeao`; `badeao` remains
+unconfirmed/superseded, needs its own follow-up if a sense distinct
+from "across" is still wanted. `behind`: a preferred alternate
+`paksao` ("other side") was given as explicitly better for "behind a
+door" specifically — `janggilo` is not wrong, but `paksao` is the
+Thangseng-preferred form for that context.
+**Confidence:** High (7 items, NV-003 full-sentence confirmation);
+`badeao`/"over" downgraded to unconfirmed (was Low, proposal itself
+now superseded, not merely unvalidated).
 **Launch Priority:** P1 — vocabulary expansion, not a correctness bug; does not block V1.0. Recommend direct native confirmation before promotion to `corrections.json` or Validation Corpus status.
 
 ---
@@ -455,8 +481,24 @@ vs. b vs. c) remains open, unaffected by this update.
 **Counterexamples:** Treating `mitapo` and `kokkimao`/`nokkimao` as interchangeable would be a misuse of this rule — the whole point of RULE-035 is that they are not.
 **Dependencies:** RULE-033 (the sense this rule splits off from).
 **Native Notes:** Source: same relayed 2026-07-08 exchange as RULE-034. Not yet confirmed with a worked example distinguishing the two senses in context.
-**Validation Status:** Needs Native Validation (direct) — the sense distinction itself is plausible and specific enough to record, but has no confirmed example sentence yet, and RULE-033's existing "under the table" example should NOT be reused as evidence for `mitapo`, since it is a general-sense example.
-**Confidence:** Medium (distinction exists); Low (no worked example).
+**Validation Status:** Verified — confirmed 2026-07-25 via NV-004,
+with the worked example this rule originally lacked: "the book is
+under the blanket" = `Ki'tap kombolni ning'ao ong'a` (or `mitapo`).
+**Correction to this rule's original framing:** the split is
+three-way, not two-way as originally proposed. `ning'ao` (lit.
+"inside") is the general-purpose, most accurate default; `mitapo` is
+a confirmed accepted *alternate* specifically for the
+blanket/covering sense (not obligatory); `nokkimao` (RULE-033's
+"under the table" word) is reserved for the more specific
+"covered-under" sense in contexts like the table case — explicitly
+**not** preferred for e.g. "the rock is under the water," where
+`ning'ao` is the accurate choice instead. `mitapo`/`kokkimao`/
+`nokkimao` interchangeability is still correctly ruled out (this
+rule's core claim holds), but "which of the three applies" is more
+context-dependent than the original two-way framing implied.
+**Confidence:** High (worked example now exists, confirms the
+distinction and gives production values for at least 3 concrete
+cases).
 **Launch Priority:** P1 — refines an existing P0 rule's scope but does not change RULE-033's already-implemented behavior; not launch-blocking.
 
 ---
@@ -555,11 +597,18 @@ missing is probably because it is missing. The Garo grammar simply
 does not have them. Instead Garo grammar takes the help of additional
 words to make sense of it."
 **Validation Status:** Needs Native Validation — confirmed for one
-verb only (see NV-029). **Do not implement as a general engine rule
-for arbitrary "is X-ed" inputs until 2–3 more verbs are confirmed.**
-Implementing from this single data point risks the exact failure mode
-this project's convergence protocol exists to prevent (a fix that
-outruns its evidence).
+verb only (see NV-029, "tied"/"bound" — this citation is correct; a
+migration-pass note had doubted it, suspecting NV-039, but NV-039 is
+unrelated (`tampi`/"housefly"). Confirmed 2026-07-31, doubt resolved).
+NV-029 (closed 2026-07-25) also tested generalization directly: 3
+other past-participle-adjective constructions (hung, hidden, broken)
+each use their OWN distinct construction, not this converb+auxiliary
+pattern — a concrete negative result. This does not invalidate the
+pattern for "tie" itself, but confirms it does **not** generalize as
+a productive passive strategy. **Do not implement as a general engine
+rule for arbitrary "is X-ed" inputs** — this is now a stronger
+prohibition than before, backed by a tested negative, not just
+caution pending more data.
 **Confidence:** High (the construction type exists, "tie" has no
 single-word passive); Low (whether the specific converb/auxiliary
 choice generalizes to other verbs, or varies by verb class).

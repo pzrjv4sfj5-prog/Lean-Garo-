@@ -28,4 +28,4 @@ last_updated: "2026-07-25"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-003b"
 migration_flags:
-  - "Sengbo glossed here as 'stop!' vs. imperative 'wait!' elsewhere (NV-015, RULE-029) - not reconciled, flagged only, per migration scope."
+  - "RESOLVED 2026-07-31 (Claude A reconciliation pass): not a real conflict - GRAMMAR_CONFIDENCE_MATRIX.md already had corpus-internal evidence that Sengbo/Damo are confirmed synonyms covering both wait/stop senses. Both glosses valid; GRAMMAR_RULE_CATALOGUE.md's RULE-003b entry updated to note this."

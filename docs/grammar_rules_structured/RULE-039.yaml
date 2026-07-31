@@ -49,4 +49,4 @@ last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-039"
 migration_flags:
-  - "This rule's own caution against generalizing from one verb is now directly answered by NV-029, closed 2026-07-25 this session: tested against 3 other past-participle-adjective constructions (hung, hidden, broken), each uses its OWN distinct construction, not this converb+auxiliary pattern. This is a concrete, definitive negative result for the generalization question - not proof the pattern is wrong for \"tie\" itself, but strong evidence the pattern does NOT extend as a general passive-formation strategy. Not updated in this rule during migration (scope), flagged for the reconciliation pass."
+  - "RESOLVED 2026-07-31 (Claude A reconciliation pass): NV-029's negative generalization result now folded into GRAMMAR_RULE_CATALOGUE.md's RULE-039 entry (Validation Status). Also corrected: the migration flag doubted whether the source's \"see NV-029\" citation should have been NV-039 - confirmed NV-029 (\"tied/bound\") is correct, NV-039 is unrelated (housefly). No further action needed on this flag."

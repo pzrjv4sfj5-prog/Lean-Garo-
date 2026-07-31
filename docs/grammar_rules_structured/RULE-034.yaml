@@ -42,4 +42,4 @@ last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-034"
 migration_flags:
-  - "This rule's 8-of-9 items (all except possibly \"over\") are very likely fully resolved by NV-003, closed 2026-07-25 this session: all 9 locative sentences directly confirmed by Thangseng, matching this rule's list closely (inside=ning'ao, outside=a'palo, above=kosako, behind=janggilo, beside=sambao, below=ka'mao, plus bridge/river sentences). Not updated in this rule during migration (scope), flagged for the reconciliation pass - this rule's status line should very likely change from Needs Native Validation to Verified once cross-checked against NV-003."
+  - "RESOLVED 2026-07-31 (Claude A reconciliation pass): GRAMMAR_RULE_CATALOGUE.md's RULE-034 entry now Verified for 7/9 items. Cross-check found two real divergences, not just confirmation: \"over\"/badeao was NOT confirmed (actual answer used nalsachi, same as \"across\" - badeao is superseded, needs its own follow-up); \"behind\" has a Thangseng-preferred alternate (paksao) not in the original proposal. See catalogue entry for full detail."

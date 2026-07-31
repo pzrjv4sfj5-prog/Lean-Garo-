@@ -336,7 +336,14 @@ claude_a:
     94/95/100/101 (not yet staged) still on hold, not actionable. The
     4 reconciliation-pass flags from the grammar schema migration
     (Sengbo gloss, NV-029/RULE-039, NV-003/RULE-034, NV-004/RULE-035)
-    remain open. Otherwise: continue evidence-first corpus-internal
+    were all resolved 2026-07-31 - see GRAMMAR_RULE_CATALOGUE.md and
+    docs/grammar_rules_structured/ for each. RULE-034/RULE-035 now
+    Verified (RULE-034 with 2 real corrections found during
+    cross-check, not just confirmation - see catalogue). 3 relay
+    questions sent to Thangseng 2026-07-31 (maidake/maikai, phone
+    call gap, phone/smartphone/mobile spelling) - awaiting answers,
+    do not resolve these from corpus-internal guessing. Otherwise:
+    continue evidence-first corpus-internal
     triage of open NV items where possible (see NV-027 for the
     pattern - narrowed 5 candidates to 2 without needing Thangseng, by
     checking which already carry UNVERIFIED tags vs. which are richly

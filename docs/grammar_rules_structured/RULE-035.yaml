@@ -40,4 +40,4 @@ last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-035"
 migration_flags:
-  - "This rule's exact open question is answered by NV-004, closed 2026-07-25 this session: mitapo confirmed as an accepted alternate specifically for \"under a blanket/covering\" (worked example: \"the book is under the blanket\" = Ki'tap kombolni ning'ao ong'a, or mitapo), distinct from nokkimao/ning'ao's general use. Not updated in this rule during migration (scope), flagged for the reconciliation pass - both claims above should very likely change to Verified once cross-checked against NV-004."
+  - "RESOLVED 2026-07-31 (Claude A reconciliation pass): GRAMMAR_RULE_CATALOGUE.md's RULE-035 entry now Verified. Cross-check found the split is three-way (ning'ao general default, mitapo confirmed alternate for covering sense, nokkimao for the more specific covered-under sense), not the two-way split this rule originally proposed - see catalogue entry for full detail and the water/table/blanket worked examples."
