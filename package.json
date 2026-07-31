@@ -13,7 +13,7 @@
     "server": "node server.js",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "test": "node --test tests/unit/translationEngine.test.js tests/unit/claude-d-preflight.test.js"
+    "test": "node --test tests/unit/*.test.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

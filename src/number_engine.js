@@ -33,7 +33,13 @@ export function toGaroNumber(n) {
   }
 
   if (n >= 11 && n <= 19) {
-    return "chiking·ma·" + BASE[n - 10];
+    // Native speaker confirmed 2026-06-28 the correct form is "Chi·" +
+    // base digit (Chi·sa=11, Chi·gni=12, ... Chi·sku=19) — NOT
+    // "chiking·ma·" as previously implemented here. See
+    // garo_classifier.js's TEENS table, which already carries this fix;
+    // this was RC-CANDIDATE-032 (this standalone function had drifted
+    // out of sync with that correction).
+    return "Chi·" + BASE[n - 10];
   }
 
   if (n >= 20 && n <= 99) {
