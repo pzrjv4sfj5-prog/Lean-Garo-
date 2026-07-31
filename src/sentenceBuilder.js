@@ -32,6 +32,7 @@
 
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
+import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
 import { lookup, lookupGaro } from './lookupEngine.js';
 import { applyNegation, applyTense, stripToStem } from './morphologyEngine.js';
@@ -57,9 +58,22 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
   if (!content.length) return null;
   const translated = content.map(w => {
     const lw = w.toLowerCase().replace(/[^a-z'·]/g,'');
+    // RC-CANDIDATE-035 fix (2026-07-31, Claude B): same collision class
+    // as the findVerbForm fix in morphologyEngine.js, independently
+    // present here since this function does its own ing$/ed$/s$
+    // stripping rather than delegating to findVerbForm. "using" strips
+    // to "us", which is a dictionary/pronoun entry ("Chingna"), not a
+    // verb root — without this guard "she is using her phone" picked up
+    // a stray "Chingna" token with no connection to "using". Guarding
+    // only the ing$ stripped form (the one implicated in the confirmed
+    // live repro) rather than all three stripped forms, since ed$/s$
+    // haven't been shown to collide and broadening the guard past the
+    // confirmed root cause risks masking genuine ed$/s$-stripped verbs.
+    const ingStripped = lw.replace(/ing$/,'');
+    const ingLookup = (ingStripped !== lw && !(ingStripped in PRONOUN_MAP)) ? lookupGaro(ingStripped) : null;
     return lookupPhrase(lw) || lookupGaro(lw)
       || IRREGULAR_VERBS[lw]
-      || lookupGaro(lw.replace(/ing$/,'')) || lookupGaro(lw.replace(/ed$/,''))
+      || ingLookup || lookupGaro(lw.replace(/ed$/,''))
       || lookupGaro(lw.replace(/s$/,'')) || null;
   });
   const validTranslations = translated.filter(Boolean);

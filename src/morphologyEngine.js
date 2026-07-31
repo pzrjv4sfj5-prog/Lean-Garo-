@@ -15,6 +15,7 @@
  */
 
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
+import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupGaro } from './lookupEngine.js';
 
 export function applyNegation(garoForm) {
@@ -87,7 +88,27 @@ export function findVerbForm(w) {
     // touching the bare "work" key's existing (correct, for its own
     // callers) value.
     if (lookupGaro('to ' + stripped)) return lookupGaro('to ' + stripped);
-    if (lookupGaro(stripped)) return lookupGaro(stripped);
+    // RC-CANDIDATE-035 fix (2026-07-31, Claude B): the bare stripped-form
+    // lookup below has no way to tell a verb stem from a same-spelled
+    // English pronoun, since master_dictionary.json's `pos` field is
+    // null on every entry (same documented gap as the "bed"/"down"
+    // noun-guards above and analyzeGrammar's subject-coherence check).
+    // Root-caused live: "using" strips (ing$ rule) to "us", which is
+    // not a verb root but IS a key in pronoun_map.json ("us" ->
+    // "An·ching·ko"/"Chingna" depending on lookup path) - so this
+    // fallback returned the pronoun's Garo form as if it were "using"'s
+    // verb translation. Confirmed: translate("she is using her phone")
+    // -> "Ua Uni phone·ko Chingna", a stray token with no connection to
+    // "using" (which correctly has no dictionary verb entry).
+    // PRONOUN_MAP is authoritative, closed, and already used elsewhere
+    // in the grammar pipeline for exactly this purpose (identifying
+    // pronouns) - reusing it here is a general, principled guard against
+    // this whole collision class, not a single-word patch. "using" itself
+    // remains correctly unresolved (returns null, sentence falls through
+    // to sov-assembly/morphology per the normal cascade) - no new Garo
+    // vocabulary invented for "use/using", which is still genuinely
+    // absent from the dictionary in its -ing form.
+    if (lookupGaro(stripped) && !(stripped in PRONOUN_MAP)) return lookupGaro(stripped);
     // English y->ied spelling change: 'studied' strips to 'studi', not
     // 'study' (found 2026-07-05) - try restoring the 'y'.
     if (/i$/.test(stripped)) {

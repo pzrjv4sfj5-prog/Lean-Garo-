@@ -1552,6 +1552,27 @@ note at the top of this entry for the fix actually applied,
 
 ### RC-CANDIDATE-035 — Adding `phone`/`smartphone` to the dictionary invalidated RC-CANDIDATE-029's own regression test premise, exposing a stray-token bug in grammar-assembly output
 
+**Status: RESOLVED (Claude B, 2026-07-31).** Root cause: `"using"`
+strips (the `ing$` rule) to `"us"`, which collides with the pronoun
+dictionary entry for `"us"` — so wherever `"using"` appeared, its
+stripped form silently resolved as the pronoun `"us"` instead of
+staying unresolved. This happened independently in two code paths
+that each do their own `ing$`-stripping fallback:
+`findVerbForm` (`morphologyEngine.js`) and `assembleSentenceSOV`
+(`sentenceBuilder.js`) — both now guard the `ing$`-stripped lookup
+against `pronoun_map.json` before accepting it, using the existing
+pronoun table as the source of truth rather than a one-off `"using"`
+patch. `"using"` itself correctly remains unresolved (it is genuinely
+absent from the dictionary in its `-ing` form) — no new Garo
+vocabulary was invented. Live-reverified: `translate("she is using
+her phone")` → `"Ua Uni Phone"` (previously `"Ua Uni phone·ko
+Chingna"`, with the stray, unrelated `"Chingna"` token). 141/141 tests
+(4 new for RC-035, on top of RC-034's 4), build clean, lint clean,
+237-sentence stress benchmark byte-identical before/after (no
+existing corpus sentence exercises this collision).
+
+**Original diagnosis below retained for context.**
+
 **Found:** 2026-07-30, Claude A, while adding NV-042 (`phone`/`smartphone`
 dictionary entries, per a Tridip note that no separate Garo word for
 "smartphone" exists).

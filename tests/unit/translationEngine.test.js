@@ -837,3 +837,28 @@ test('RC-CANDIDATE-034: before/after outputs for the gap-vs-no-gap pair are now 
   const withGap = await translate('is on xyzzy at');
   assert.notEqual(clean.garo, withGap.garo, 'previously both produced identical output, masking the dropped word');
 });
+
+// --- RC-CANDIDATE-035 fix (2026-07-31, Claude B): "using" strips
+// (ing$ rule, in both findVerbForm and assembleSentenceSOV) to "us",
+// which collides with the pronoun dictionary entry for "us", producing
+// a stray "Chingna" token wherever "using" appeared, with no connection
+// to the word "using" itself. Guarded via pronoun_map.json in both
+// independent code paths that do this stripping.
+test('RC-CANDIDATE-035: "using" no longer resolves to the stray pronoun "us"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('she is using her phone');
+  assert.ok(!result.garo.includes('Chingna'), 'must not leak the "us" pronoun translation via ing$-stripping of "using"');
+});
+
+test('RC-CANDIDATE-035: the dictionary addition of "phone" (NV-044) no longer surfaces the stray token either', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('she is using her smartphone');
+  assert.ok(!result.garo.includes('Chingna'), 'must not leak the "us" pronoun translation for the smartphone variant either');
+});
+
+test('RC-CANDIDATE-035: genuine "us" pronoun resolution is unaffected', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('help us');
+  // "us" as an actual word (not stripped from "using") must still resolve normally.
+  assert.ok(result && result.garo && result.garo.length > 0, 'genuine "us" usage must still translate');
+});
