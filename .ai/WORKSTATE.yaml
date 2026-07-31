@@ -1,5 +1,5 @@
 repository:
-  head: 0ab90bf
+  head: 3a5c53b
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -304,12 +304,18 @@ claude_a:
     - "2026-07-31: NV-045 logged (9-sentence have/how native batch, Have_and_How.pdf) - badita generalization sub-question closed (rong-classifier, possessive+locative subjects confirmed); maidake/maikai form conflict flagged unresolved; have-perfect-aux, have-to-obligation, mipring/mipringde, ambide -de attachment all logged raw, not determined"
     - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
-    NV-045 (2026-07-31, have/how batch) needs: a relay question on
-    maidake vs. maikai ("how," manner sense - direct form conflict,
-    do not guess), determinations on have-perfect-aux vs. have-to-
-    obligation vs. have-possession as separate constructions, and on
-    mipring/mipringde and ambide -de-attachment variation - see NV-045
-    for full detail, nothing promoted to code yet.
+    2026-07-31: resolved corpus-internally (see NV-045 2nd/3rd
+    determinations) - have-perfect-aux vs. have-to-obligation vs.
+    have-possession confirmed as three distinct constructions,
+    promoted to RULE-043 (docs/grammar_rules_structured/RULE-043.yaml);
+    ambide ruled OUT of RULE-042's scope (day/time words only - ambi
+    is kinship, negative determination not a merge). Still open, NOT
+    resolvable corpus-internally: a relay question on maidake vs.
+    maikai ("how," manner sense - direct form conflict, do not guess),
+    and mipring vs. mipringde (only 2 data points, 2 confounded
+    dimensions - subject presence and -de suffix - can't isolate
+    cause without a disambiguating example). Nothing else promoted to
+    code yet.
     RC-CANDIDATE-030 fixed by Claude B, 2026-07-29/30 (corrections
     lookup now strips trailing "?" as a last-resort fallback, scoped
     to "?" only after an earlier "!"/"." draft broke "eat!"'s

@@ -2397,14 +2397,42 @@ edits this entry except the scope note above (badita finding is
 recorded here, not yet promoted to code — promotion is a separate
 step).
 
-**Next Recommended Tasks (not done this session):**
-- Resolve `maidake` vs. `maikai` — likely needs a direct relay
-  question to Thangseng, not corpus-internal guessing.
-- Determine "have" (perfect aux) vs. "have to" (obligation) vs. "have"
-  (possession) as three distinct constructions — scope as RULE
-  candidates.
-- Determine `mipring` vs. `mipringde` variation.
-- Determine `ambide` `-de` attachment — same morpheme as RULE-038–042
-  or homonymous.
+**Second determination (2026-07-31) — "have" (perfect aux) vs. "have
+to" (obligation) vs. "have" (possession) are three distinct
+constructions:** resolved corpus-internally, promoted to RULE-043.
+`donga` (possession), `re'baaaha` (perfect aux), and `nangengama`
+(obligation) are three formally non-overlapping surface forms within
+this same native-confirmed batch — no shared root, no ambiguity to
+guess through. This confirms distinctness only; the internal
+morphology of `re'baaaha` and `nangengama` remains undetermined, and
+each still rests on a single example sentence. See
+`docs/grammar_rules_structured/RULE-043.yaml`.
+
+**Third determination (2026-07-31) — `ambide` is out of RULE-042's
+confirmed scope, not assumed to be the same suffix:** RULE-042 is
+explicitly scoped to `-de` attaching to *day/time words*
+(`Knal`/`Da·al`/`Mijal`/clock-time `bajio`). `ambi` ("grandmother") is
+a kinship noun, not a day/time word, so sentence 7's `ambide` falls
+outside that rule's stated scope by the rule's own terms — this does
+not require guessing, only reading RULE-042's boundary as written.
+**Determination: `ambide` is NOT confirmed to be an instance of
+RULE-042's `-de`.** Treat as a distinct, unanalyzed `-de`-shaped
+morpheme (possibly homonymous, possibly a different suffix entirely)
+until it has its own evidence. No rule promotion — this is a negative
+determination (ruling out a merge), not a positive one.
+
+**Still open, NOT resolved this pass (needs Thangseng or more
+examples, not corpus-internal reasoning):**
+- `maidake` vs. `maikai` — direct form conflict for manner "how,"
+  needs a targeted relay question. Do not guess.
+- `mipring` (sentence 3: explicit `Na'a` subject, no `-de`) vs.
+  `mipringde` (existing entry: no explicit subject, `-de` suffixed).
+  Only two data points, differing in two dimensions at once (subject
+  presence AND suffix) — can't isolate which difference (if either)
+  is causal from this evidence alone. Free variation, register
+  difference, and subject-drop-triggers-de are all still consistent
+  with the data; not resolvable without a disambiguating example
+  (e.g. a subject-less non-`-de` form, or an explicit-subject `-de`
+  form).
 - Promote the badita-generalization finding into code/tests once the
   above are far enough along to avoid fragmenting the work.

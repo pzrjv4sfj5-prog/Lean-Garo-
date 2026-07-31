@@ -747,3 +747,42 @@ day/time words (`Knal`, `Da·al`, `Mijal`, `bajio`), not a one-off.
 **Launch Priority:** P1 — general enough now to be worth wiring into
 the engine for time-word constructions, not just documented as a
 lexicography note.
+
+---
+### RULE-043 — English "Have" Splits Into Three Distinct Garo Constructions
+
+**Description:** English "have" collapses three unrelated Garo forms,
+each tied to a different sense, with no shared morpheme:
+- **Possession** — `donga`. `"Do you have my book?"` → `Nang'o angni
+  ki'tap dongama?`; `"I have a dog."` → `Ango achak mangsa donga.`
+- **Perfect auxiliary** — `re'baaaha` (in this example, "have come").
+  `"I have come to you."` → `Anga nang'ona re'baaaha.` No shared root
+  with `donga` — this is a separate morphological slot, not a sense
+  extension of possession.
+- **Obligation ("have to")** — `nangengama`. `"Do you have to go to
+  the market?"` → `Na'a antichi re'angna nangengama?` Again no shared
+  root with either of the above.
+
+**Examples:** the three NV-045 sentences above (source sentences 1–2,
+4, 5).
+**Counterexamples:** none identified.
+**Dependencies:** none identified yet — `re'baaaha`'s internal
+morphology (perfect-aux marking) and `nangengama`'s (obligation
+marking) are not yet decomposed; this rule only establishes that the
+three sentence-forms are distinct, not how each is built internally.
+**Native Notes:** Thangseng relay via Project Owner, `Have_and_How.pdf`,
+2026-07-31 (see NV-045).
+**Validation Status:** Verified that the three are distinct
+constructions (three formally non-overlapping surface forms for three
+different English senses, within the same native-confirmed batch — a
+direct corpus-internal contradiction-free split, not an inference).
+**Not yet verified:** the internal structure of `re'baaaha` and
+`nangengama` (e.g. whether either decomposes into a recognizable
+root+suffix), and whether either form generalizes beyond this one
+example sentence each.
+**Confidence:** Medium — the three-way distinctness is solid (multiple
+non-overlapping forms, single relay batch), but each individual
+construction still rests on exactly one example sentence.
+**Launch Priority:** P2 — worth flagging so the engine doesn't
+conflate the three "have" senses, but not yet generalizable enough to
+wire in beyond literal-match handling of these three sentences.

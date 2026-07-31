@@ -1,0 +1,51 @@
+id: RULE-043
+title: "English \"Have\" Splits Into Three Distinct Garo Constructions"
+description: >-
+  English "have" collapses three unrelated Garo forms, each tied to a
+  different sense, with no shared morpheme: Possession — donga
+  ("Do you have my book?" → Nang'o angni ki'tap dongama?; "I have a
+  dog." → Ango achak mangsa donga.); Perfect auxiliary — re'baaaha
+  ("I have come to you." → Anga nang'ona re'baaaha.), no shared root
+  with donga; Obligation ("have to") — nangengama ("Do you have to go
+  to the market?" → Na'a antichi re'angna nangengama?), no shared root
+  with either of the above.
+dependencies:
+  - id: null
+    name: null
+    note: >-
+      none identified yet - re'baaaha's internal morphology (perfect-aux
+      marking) and nangengama's (obligation marking) are not yet
+      decomposed; this rule only establishes that the three
+      sentence-forms are distinct, not how each is built internally.
+claims:
+  - scope: "the three-way distinctness of possession/perfect-aux/obligation have"
+    status: verified
+    confidence: medium
+    confidence_note: >-
+      three formally non-overlapping surface forms for three different
+      English senses within the same native-confirmed batch - direct
+      corpus-internal contradiction-free split, not an inference.
+  - scope: "internal morphology of re'baaaha and nangengama, and generalization beyond one example sentence each"
+    status: needs_native_validation
+    confidence: low
+    status_note: "each construction currently rests on exactly one example sentence"
+examples:
+  - "donga (possession): Nang'o angni ki'tap dongama? / Ango achak mangsa donga."
+  - "re'baaaha (perfect aux): Anga nang'ona re'baaaha."
+  - "nangengama (obligation): Na'a antichi re'angna nangengama?"
+counterexamples:
+  note: "none identified"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P2
+    note: >-
+      worth flagging so the engine doesn't conflate the three "have"
+      senses, but not yet generalizable enough to wire in beyond
+      literal-match handling of these three sentences.
+native_notes: >-
+  Thangseng relay via Project Owner, Have_and_How.pdf, 2026-07-31 (see
+  NV-045 in docs/THANGSENG_NATIVE_VALIDATION.md).
+last_updated: "2026-07-31"
+updated_by: "Claude A"
+source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-043"
