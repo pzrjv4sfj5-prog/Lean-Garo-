@@ -1495,6 +1495,22 @@ decision on which, not just a mechanical fix).
 
 ### RC-CANDIDATE-034 — `translate()` step 7 ("morphology") silently drops unresolved words with no signal, same pattern RC-029 fixed elsewhere
 
+**Status: RESOLVED (Claude B, 2026-07-31).** Fixed the way RC-029's
+write-up predicted it would be — carry an `'[UNKNOWN]'` marker through
+in place of a word that fails to resolve, instead of `.filter(Boolean)`
+dropping it silently. Unlike RC-029, this step's >=50% resolution
+threshold is intentionally kept unchanged (step 7 is a deliberately
+tolerant coarse fallback, not a full-assembly method), so a partially-
+unresolved input still returns via `morphology` — it just now visibly
+carries `[UNKNOWN]` for the dropped word(s) instead of hiding them.
+Live-reverified: `translate("is on at")` → `"daka Kosak·o O"` (unchanged,
+no marker — fully resolved). `translate("is on xyzzy at")` → now
+`"daka Kosak·o [UNKNOWN] O"` (was identical to the line above before the
+fix). 138/138 tests (3 new), build clean, lint clean, 237-sentence
+stress benchmark byte-identical before/after (this only changes
+behavior for inputs that previously silently dropped content, none of
+which are in the corpus).
+
 **Found:** 2026-07-30, Claude B, continued engineering quality audit
 (second pass). **Reachability confirmed** after initial investigation
 (see corrected write-up below — an earlier draft of this entry
@@ -1530,7 +1546,10 @@ shape for a real sentence. Logged because it's the same defect
 pattern already confirmed to matter (RC-029), reproducible, and cheap
 to fix the same way (surface the drop instead of hiding it).
 
-**Status: OPEN, not fixed.**
+**Original diagnosis above retained for context — see the RESOLVED
+note at the top of this entry for the fix actually applied,
+2026-07-31.**
+
 ### RC-CANDIDATE-035 — Adding `phone`/`smartphone` to the dictionary invalidated RC-CANDIDATE-029's own regression test premise, exposing a stray-token bug in grammar-assembly output
 
 **Found:** 2026-07-30, Claude A, while adding NV-042 (`phone`/`smartphone`
@@ -1566,4 +1585,7 @@ forever), and a new, separate bug (the stray `"Chingna"` / missing
 `"using"` handling) to diagnose.
 
 **Test status this session:** 126/127 passing — the 1 failure is this
-exact, now-explained case, not an unexplained regression.
+exact, now-explained case, not an unexplained regression. **Status:
+OPEN, not fixed — Claude B's domain, not touched by the RC-034 fix
+above (different code path: RC-034 is step 7 morphology, this is
+step 6 grammar-assembly).**

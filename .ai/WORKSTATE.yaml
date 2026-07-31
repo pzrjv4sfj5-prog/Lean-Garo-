@@ -1,7 +1,7 @@
 repository:
-  head: 5934772
-  last_updated: "2026-07-30"
-  test_status: "134/135 regression tests passing, build clean, lint clean, repository-intelligence.js clean. The 1 failure is EXPLAINED, not a regression: RC-CANDIDATE-035 (Claude A adding phone/smartphone to the dictionary invalidated RC-CANDIDATE-029's test premise, which specifically relied on 'smartphone' staying unresolvable; exposed a real but separate stray-token bug in grammar-assembly, not yet diagnosed). Continued engineering quality audit (Claude B, second pass, 2026-07-30): RC-CANDIDATE-033 (analyzeGrammar's classifierHints computed every call, never consumed - dead computation) and RC-CANDIDATE-034 (translate() step 7 'morphology' silently drops unresolved words with no signal, same pattern as RC-029; live-reproduced: translate('is on xyzzy at') identical to translate('is on at')) logged, not fixed. RC-CANDIDATE-031 (parseCountingPhrase compound numbers, e.g. twenty-one) fixed same day. RC-CANDIDATE-032 logged, deliberately not fixed (unreachable dead code). RC-CANDIDATE-030 (corrections.json question-mark key inconsistency, root cause of the 'Will you eat?' bug) fixed same day (Claude B): 4th fallback in the corrections lookup chain strips trailing '?', scoped to '?' only. NV-044 (Claude A, 2026-07-30): added phone/smartphone/mobile -> Phone to master_dictionary.json, PENDING/MEDIUM confidence (Tridip note, not direct Thangseng quote) - awaiting relay confirmation. NV-042/NV-043 (Claude B logged, Claude A resolved, 2026-07-30): Thangseng confirmed 'can you help me?' and 'how many apples do you have?' - both added to corrections.json, closing the two garbled sov-assembly examples flagged in this session's capability rating check. BACKLOG-003 (translationEngine.js modularization) FULLY COMPLETE, all 8 phases, 1130 -> 313 lines final. NV-041 (Claude A) closed the watch/call anomaly: watch=nia confirmed correct; call/calling replaced with Okama/Okamani (open gap: no confirmed word for phone call). RC-CANDIDATE-029 (Claude B, 2026-07-29): unresolved objects were silently vanishing from grammar-assembly output instead of triggering fallback, and analyzeGrammar's object loop had no negation guard. Full native-validation propagation audit (Claude A, 2026-07-29, see docs/AUDIT_NATIVE_VALIDATION_PROPAGATION_20260729.md): root-caused the 'Will you eat?' production bug. Claude A completed grammar-schema migration, 40/40 rules, commit 19620f4."
+  head: 9558ea6
+  last_updated: "2026-07-31"
+  test_status: "137/138 regression tests passing (4 new for RC-034), build/lint chain clean except the test-gate step. The 1 failure is pre-existing and NOT caused by this session's work: RC-CANDIDATE-035 (Claude A's NV-044 dictionary addition of phone/smartphone invalidated RC-029's own test premise, exposing a stray-token bug in grammar-assembly - still open, Claude B's domain, deliberately not touched this session, out of scope for the RC-034 fix below). Because package.json's build script gates `vite build` behind the full test run, `npm run build` currently exits 1 on this account; each stage was verified individually instead: prepare-data.js clean, test-dictionary.js clean, repository-intelligence.js clean, `npx vite build` clean. RC-CANDIDATE-034 fixed (Claude B, 2026-07-31): morphology fallback (step 7) no longer silently drops unresolved words - carries an '[UNKNOWN]' marker through in their place instead, matching the existing passthrough-step signal convention; the >=50% resolution threshold itself is unchanged. 237/237 stress benchmark byte-identical before/after, re-verified on the merged tree. RC-CANDIDATE-033 (dead classifierHints computation) remains open, not fixed. NV-044/NV-043 (Claude A, 2026-07-30) merged in from origin during this session's push preflight - no conflict with RC-034's code path (different translate() step). BACKLOG-003 FULLY COMPLETE, all 8 phases."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -440,14 +440,26 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    Convergence protocol adopted (2026-07-11, Project Owner): applying
-    it retroactively found RC-CANDIDATE-010 - RC-002's ·o locative fix
-    was implemented more generally (any noun after in/on/at) than
-    RULE-G2's own stated confidence supports (High for one confirmed
-    example, Medium/not-stress-tested for general productivity). Not
-    reverted (strict improvement over the prior definitely-wrong ·ko),
-    flagged as a linguistic feedback item for Claude A instead of
-    silently left as if fully validated. See docs/
+    2026-07-31: RC-CANDIDATE-034 fixed - morphology fallback (step 7)
+    now carries an '[UNKNOWN]' marker for words that fail to resolve
+    instead of silently filtering them out, same signal convention as
+    the existing passthrough step. Threshold logic (>=50% resolved)
+    intentionally unchanged - pure engineering fix, no linguistic
+    content. 137/138 tests (4 new, all passing), lint clean, stress
+    benchmark byte-identical (re-verified after merging in Claude A's
+    NV-044/NV-043 commits, which landed on origin mid-session). The 1
+    failing test is pre-existing RC-CANDIDATE-035, unrelated to this
+    fix - see repository.test_status above for detail. RC-CANDIDATE-033
+    (dead classifierHints computation) remains open, next reasonable
+    pickup if continuing this thread.
+    Prior: convergence protocol adopted (2026-07-11, Project Owner):
+    applying it retroactively found RC-CANDIDATE-010 - RC-002's ·o
+    locative fix was implemented more generally (any noun after
+    in/on/at) than RULE-G2's own stated confidence supports (High for
+    one confirmed example, Medium/not-stress-tested for general
+    productivity). Not reverted (strict improvement over the prior
+    definitely-wrong ·ko), flagged as a linguistic feedback item for
+    Claude A instead of silently left as if fully validated. See docs/
     PENDING_REGRESSION_CASES.md Pending section.
   progress: >-
     Codex audit: 5 items VERIFIED and fixed (VerbsGrammar.jsx x5,

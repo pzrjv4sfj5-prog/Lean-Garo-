@@ -810,3 +810,30 @@ test('RC-CANDIDATE-031: an invalid compound ("twenty ten apples") does not false
   const r = parseCountingPhrase('twenty ten apples');
   assert.equal(r.count, 20, '"ten" is not a 1-9 units word, must not combine with "twenty"');
 });
+
+// --- RC-CANDIDATE-034 fix (2026-07-31, Claude B): step 7 (morphology)
+// was silently dropping unresolvable words from its joined output with no
+// signal, so an all-stopword-shaped input produced identical text whether
+// or not it contained an unresolvable word. Fix carries an '[UNKNOWN]'
+// marker through in place of a dropped word instead of filtering it out
+// silently — the >=50% resolution threshold itself is unchanged.
+test('RC-CANDIDATE-034: an unresolvable word inside an all-function-word sentence is surfaced, not silently dropped', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const withGap = await translate('is on xyzzy at');
+  assert.equal(withGap.method, 'morphology');
+  assert.ok(withGap.garo.includes('[UNKNOWN]'), 'unresolved word must be visibly signalled in the output');
+});
+
+test('RC-CANDIDATE-034: the same sentence without the unresolvable word is unaffected (no false marker, no regression)', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const clean = await translate('is on at');
+  assert.equal(clean.method, 'morphology');
+  assert.ok(!clean.garo.includes('[UNKNOWN]'), 'a fully-resolved input must not gain a spurious marker');
+});
+
+test('RC-CANDIDATE-034: before/after outputs for the gap-vs-no-gap pair are now distinguishable', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const clean = await translate('is on at');
+  const withGap = await translate('is on xyzzy at');
+  assert.notEqual(clean.garo, withGap.garo, 'previously both produced identical output, masking the dropped word');
+});

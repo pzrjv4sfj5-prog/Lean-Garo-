@@ -228,8 +228,21 @@ export async function translate(input) {
   if (sov) return { garo: sov, method: 'sov-assembly', confidence: 0.75 };
 
   // 7. Morphology
-  const morph = words.map(w => lookupGaro(w) || lookupGaro(w.replace(/ing$|ed$|s$|ly$/,'')) || null).filter(Boolean);
-  if (morph.length >= Math.ceil(words.length * 0.5)) return { garo: morph.join(' '), method: 'morphology', confidence: 0.65 };
+  // RC-CANDIDATE-034 fix (2026-07-31): resolved/unresolved words were both
+  // reduced to the same `.filter(Boolean)` step, so an unresolvable word
+  // (e.g. "xyzzy") silently vanished from the joined output with no signal —
+  // translate("is on at") and translate("is on xyzzy at") produced identical
+  // text. The >=50% threshold below is unchanged (this step is deliberately
+  // tolerant of partial resolution, unlike grammar-assembly in RC-029) —
+  // only the silent drop is fixed, by carrying an '[UNKNOWN]' marker through
+  // in place of a dropped word, same signal convention already used by the
+  // step 10 passthrough fallback below.
+  const morphWords = words.map(w => lookupGaro(w) || lookupGaro(w.replace(/ing$|ed$|s$|ly$/,'')) || '[UNKNOWN]');
+  const morph = morphWords.filter(w => w !== '[UNKNOWN]');
+  if (morph.length >= Math.ceil(words.length * 0.5)) {
+    const garo = morphWords.includes('[UNKNOWN]') ? morphWords.join(' ') : morph.join(' ');
+    return { garo, method: 'morphology', confidence: 0.65 };
+  }
 
   // 8. Compound split
   const compound = words.flatMap(w => w.split('-')).map(w => lookupGaro(w)).filter(Boolean);
