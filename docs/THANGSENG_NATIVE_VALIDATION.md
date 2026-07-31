@@ -1770,8 +1770,10 @@ interchangeable in engine logic until confirmed either way.
 
 ## NV-031 — Interrogative `-ma`: second data point, still future-tense only — investigation round CLOSED 2026-07-25, linguistic item OPEN
 
-**CLOSED 2026-07-25.** `-ma` confirmed productive across tenses, not
-future-only, with a real nuance on past tense specifically. "Did you
+**Investigation round CLOSED 2026-07-25** (this data point resolved,
+matching the header — see doc-top convention note). `-ma` confirmed
+productive across tenses, not future-only, with a real nuance on past
+tense specifically. "Did you
 eat?" = `Na'a cha'ama?` OR `Na'a cha'ahama?` — both valid, context-
 dependent: simple past ("did you eat yesterday") uses plain `-ma`;
 recent-relevant/perfect sense ("did you eat the cake I was saving," or
@@ -2082,7 +2084,9 @@ close the whole conflict.
 
 ## NV-038 — `na·sta` ("breakfast"/"snack"): loanword status, not yet asked — investigation round CLOSED 2026-07-25, linguistic item OPEN
 
-**CLOSED 2026-07-25.** `na·sta` confirmed real but restricted: "Rarely
+**Investigation round CLOSED 2026-07-25** (this data point resolved,
+matching the header — see doc-top convention note). `na·sta` confirmed
+real but restricted: "Rarely
 used by the younger generation. But it may be used occasionally by old
 people from some regions" — genuinely regional/generational, not a
 core production value. Separately, a genuine, common native
