@@ -3611,5 +3611,11 @@
   "behind": "general",
   "behind (other side, preferred for doors)": "general",
   "beside": "general",
-  "have you had breakfast? (idiom, lit. \"have you had tea?\")": "phrases"
+  "have you had breakfast? (idiom, lit. \"have you had tea?\")": "phrases",
+  "to call (someone) on the phone": "phrases",
+  "calling (someone) on the phone": "phrases",
+  "(someone) is calling": "phrases",
+  "call (imperative, on the phone)": "phrases",
+  "do not call (imperative, on the phone)": "phrases",
+  "will not call (on the phone)": "phrases"
 }
