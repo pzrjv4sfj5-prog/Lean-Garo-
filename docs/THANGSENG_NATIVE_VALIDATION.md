@@ -2226,9 +2226,17 @@ continuous marker (-enga, matches `nienga`). Thangseng distinguished
 `okamani` (verbal noun) from `okamenga` (present continuous) — two
 different forms, not variants of each other. Not added as individual
 dictionary entries (consistent with how the `nia` paradigm was
-handled) — logged here as the evidentiary record; worth its own
-RULE-XXX for the productive suffix pattern (see WORKSTATE.yaml
-next_action).
+handled) — logged here as the evidentiary record.
+
+**Correction (2026-07-31, Claude A):** WORKSTATE.yaml previously
+flagged this paradigm as needing "its own RULE-XXX." On review, it
+does not — every suffix here (`-bo`, `-nabe`, `-gen`, `-jawa`, `-aha`,
+`-enga`) is already independently Verified in
+`MORPHOLOGY_SPECIFICATION.md` (§ mood/tense/aspect table) as a
+generic stem+suffix mechanism per RULE-015, not tied to specific
+verbs. `nia`/`nika`/`okama` are three more confirmed roots following
+the existing general pattern, not a new grammatical category. No new
+rule created — would have been a duplicate. This item is closed.
 
 ## NV-042 — "can you help me?" and "how many apples do you have?" — RESOLVED, see NV-043
 
