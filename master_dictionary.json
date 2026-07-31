@@ -59213,6 +59213,14 @@
     "notes": "VERIFIED/HIGH — NV-041, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-29. Same phone-call exclusion as 'call'/Okama. UPDATE (NV-046, 2026-07-31): see 'phone ka·a' entries below for the phone-call sense."
   },
   {
+    "english": "to call (someone) on the phone",
+    "garo": "phone ka·a",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-046, 2026-07-31. Citation/base form for the phone ka·a paradigm, added per house convention (bare root headword alongside inflected members, cf. 'Nia' / see-look-watch, 'Kam ka·a' / to work). Not itself a directly-elicited Thangseng form — derived from the 4 confirmed inflected forms below, which share this stem. If a future relay answer contradicts this citation form specifically, this entry (not the inflected ones) is what needs revisiting."
+  },
+  {
     "english": "calling (someone) on the phone",
     "garo": "phone ka·enga",
     "pos": "v.",
