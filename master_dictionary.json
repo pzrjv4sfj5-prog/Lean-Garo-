@@ -59202,7 +59202,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-041, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-29. Cannot be used to mean 'phone call' — that sense is unconfirmed, do not assume this covers it."
+    "notes": "VERIFIED/HIGH — NV-041, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-29. Cannot be used to mean 'phone call' — that sense is unconfirmed, do not assume this covers it. UPDATE (NV-046, 2026-07-31): the phone-call gap is now closed — see 'phone ka·a' entries below. This entry (Okama) remains the non-phone 'call' sense only."
   },
   {
     "english": "calling",
@@ -59210,7 +59210,47 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-041, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-29. Same phone-call exclusion as 'call'/Okama."
+    "notes": "VERIFIED/HIGH — NV-041, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-29. Same phone-call exclusion as 'call'/Okama. UPDATE (NV-046, 2026-07-31): see 'phone ka·a' entries below for the phone-call sense."
+  },
+  {
+    "english": "calling (someone) on the phone",
+    "garo": "phone ka·enga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-046, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-31. 1st person / speaker-oriented calling form. Example: 'Tridipna phone ka·enga.' = '(I am) calling Tridip.' No direct noun exists for 'phone call' — ku·bilbat (older device word) confirmed obsolete/out of use; this is the productive construction. Object marked with -na."
+  },
+  {
+    "english": "(someone) is calling",
+    "garo": "phone ka·atenga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-046, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-31. Subject-oriented 'is calling' form. Example: 'Tridip ka·atenga.' = 'Tridip is calling.' See 'calling (someone) on the phone' entry for the paradigm this belongs to."
+  },
+  {
+    "english": "call (imperative, on the phone)",
+    "garo": "phone ka·atbo",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-046, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-31. Imperative form of the phone ka·a paradigm."
+  },
+  {
+    "english": "do not call (imperative, on the phone)",
+    "garo": "phone ka·atnabe",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-046, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-31. Negative imperative form of the phone ka·a paradigm."
+  },
+  {
+    "english": "will not call (on the phone)",
+    "garo": "phone ka·atjawa",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-046, native speaker (Thangseng) via Tridip, WhatsApp 2026-07-31. Future negative form of the phone ka·a paradigm."
   },
   {
     "english": "phone",

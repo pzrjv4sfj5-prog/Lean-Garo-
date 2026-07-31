@@ -2298,11 +2298,18 @@ verb "call" entries to `Okama`/`Okamani` and left "phone call"
 specifically as an open gap. This closes that gap: "phone call" isn't
 a single noun to translate — it's this `phone ka'a` verb paradigm.
 
-**Action taken:** logging only this pass. Not yet written into
-`corrections.json` or `master_dictionary.json` — five inflected forms
-need their own entries plus a decision on how to key the base/citation
-form, which is dictionary-structure work, not just an NV log. Flagging
-for the next pass rather than rushing five ad hoc entries in.
+**Action taken (2026-07-31, completed):** all 5 inflected forms plus
+updated `Okama`/`Okamani` cross-references written to
+`master_dictionary.json`. Orthography normalized from the relayed
+apostrophe (`ka'a`) to the dictionary's established middle-dot
+convention (`ka·a`), matching existing glottal-stop spellings
+(`Da·al`, `Mipringde cha·ahama`) — normalization only, not an
+independent confirmation of this word's orthography specifically.
+Base/citation-form question (how to key the paradigm's root, if a
+single root entry is wanted beyond the 5 inflected phrase entries) is
+still open — logged as phrase entries only this pass, matching the
+dictionary's existing phrase-based convention rather than inventing a
+lemma structure the rest of the dictionary doesn't use.
 
 
 
