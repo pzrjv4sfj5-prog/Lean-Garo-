@@ -2306,3 +2306,93 @@ sentences like these generally — that's the underlying engine gap
 (word order / verb resolution for "can," "have," "how many"), only
 patched for these 2 exact sentences via `corrections.json`. General
 case remains open, Claude B's domain.
+
+## NV-045 — "have"/"how" sentence batch (Thangseng, relayed via Project
+Owner, source: `Have_and_How.pdf`, 2026-07-31)
+
+**Status:** RAW DATA logged. One narrow determination made below
+(badita generalization); everything else left OPEN pending further
+review — do not treat unlisted items as resolved.
+
+**Raw sentences (verbatim as relayed):**
+1. "Do you have my book?" — `Nang'o angni ki'tap dongama?`
+2. "I have a dog." — `Ango achak mangsa donga.`
+3. "Have you eaten your lunch?" — `Na'a mipring cha'ahama?`
+4. "I have come to you." — `Anga nang'ona re'baaaha.`
+5. "Do you have to go to the market?" — `Na'a antichi re'angna
+   nangengama?`
+6. "How many apples are on the table?" — `Tableo badita rong apple
+   donga?`
+7. "How is your grandmother?" — `Nang'ni ambide mai rokom?`
+8. "How are you going to do it?" — `Na'a uako maikai dakna am'enga?`
+9. "How can I be a better person?" — `Anga maikai nambatgipa mande
+   ong'na amgen?`
+
+**Determination made — badita generalizes beyond the NV-043 sentence:**
+NV-043 (above) explicitly left open whether `badita` ("how many")
+generalizes past the one confirmed sentence ("how many apples do you
+have?" → `Nang·o badita rong apple donga?`, already in
+`corrections.json`). Sentence 6 here is a *different* English question
+("how many apples are ON THE TABLE") with a different subject
+(`Tableo`, not `Nang·o`) but the same `badita rong apple donga`
+core — two independently native-confirmed sentences sharing that
+exact substring is direct confirmation, not inference. **Closing
+this specific sub-question:** `badita rong [noun] donga` is
+confirmed productive for "how many [noun] are/do [X] have" across at
+least a possessive and a locative subject. Not yet confirmed
+productive for classifiers other than `rong`, or nouns other than
+`apple`.
+
+**Flagged, NOT resolved — "how" appears to split by sense, with an
+unexplained form conflict:**
+- Existing `corrections.json`: `"how"` → `maidake` (line 676); `"how
+  did i get it"` → `maidake` (line 679).
+- Existing: `"how are you"` → idiomatic `Na·a namenga ma?` (not
+  compositional).
+- New sentence 7 (condition/state sense — "how is X"): `mai rokom`.
+- New sentences 8–9 (manner/method sense — "how do/can I X"):
+  `maikai`.
+- This suggests "how" may not be a single lexical item in Garo but
+  splits by sense (manner vs. state vs. idiomatic greeting) — but
+  `maikai` (sentences 8–9) directly conflicts with the already-stored
+  `maidake` (manner sense, "how did I get it"). Could be a dialectal
+  or transcription variant, or a genuine distinct word — **not
+  determined, do not merge or pick one over the other.** Needs a
+  targeted relay question.
+
+**Flagged, NOT resolved — vocabulary/construction items, no action
+taken:**
+- `donga` (possession "have") reconfirmed consistent with existing
+  dictionary entry (sentences 1–2).
+- `mipring` (sentence 3, no `-de` suffix, explicit `Na'a` subject) vs.
+  existing `mipringde` (`corrections.json` line 803, `-de` suffixed,
+  no explicit subject) — same word for "lunch," different
+  suffixing/word-order pattern. Possibly free variation, possibly
+  register-dependent. Not analyzed.
+- `re'baaaha` ("have come," perfect aux, sentence 4) — new, no
+  existing rule covers perfect-tense "have" as an auxiliary. Distinct
+  from possessive `donga`.
+- `nangengama` ("have to," obligation, sentence 5) — new, confirms
+  obligation "have to" is a distinct construction from possessive
+  "have," not yet ruled on.
+- `ambide` (sentence 7, "your grandmother") vs. existing `ambi`/
+  `ambiko` (`corrections.json` lines 32/34) — possible `-de` suffix
+  attachment (cf. RULE-038–042 `-de` work) on a kinship noun rather
+  than a verb; not analyzed, not assumed to be the same `-de`.
+
+**Action taken:** logging only. No `corrections.json` or dictionary
+edits this entry except the scope note above (badita finding is
+recorded here, not yet promoted to code — promotion is a separate
+step).
+
+**Next Recommended Tasks (not done this session):**
+- Resolve `maidake` vs. `maikai` — likely needs a direct relay
+  question to Thangseng, not corpus-internal guessing.
+- Determine "have" (perfect aux) vs. "have to" (obligation) vs. "have"
+  (possession) as three distinct constructions — scope as RULE
+  candidates.
+- Determine `mipring` vs. `mipringde` variation.
+- Determine `ambide` `-de` attachment — same morpheme as RULE-038–042
+  or homonymous.
+- Promote the badita-generalization finding into code/tests once the
+  above are far enough along to avoid fragmenting the work.
