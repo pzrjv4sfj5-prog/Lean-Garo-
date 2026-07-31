@@ -1,5 +1,5 @@
 repository:
-  head: 948db14
+  head: 433bf8b
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -12,7 +12,7 @@ repository:
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
   last_updated: "2026-07-31"
-  test_status: "141/141 regression tests passing (4 new for RC-035, on top of RC-034's 4), build clean, lint clean, 237/237 stress benchmark byte-identical before/after. RC-CANDIDATE-035 fixed (Claude B, 2026-07-31): root-caused to \"using\" stripping to \"us\" and colliding with the pronoun dictionary entry, in two independent ing$-stripping code paths (findVerbForm in morphologyEngine.js, assembleSentenceSOV in sentenceBuilder.js) - both now guard against pronoun_map.json collisions before accepting a stripped-form lookup. \"using\" itself correctly remains unresolved (genuinely absent from the dictionary in -ing form), no new vocabulary invented. npm run build's test-gate now passes cleanly again (it only failed because of RC-035's own failing test - no longer an issue). RC-CANDIDATE-034 fixed earlier same day (see commit 0ab90bf): morphology fallback (step 7) no longer silently drops unresolved words - carries an '[UNKNOWN]' marker through instead. RC-CANDIDATE-033 (dead classifierHints computation) remains open, not fixed. NV-044/NV-043 (Claude A, 2026-07-30) merged in from origin during RC-034's push preflight - no code conflict, different files/domains. BACKLOG-003 FULLY COMPLETE, all 8 phases."
+  test_status: "141/141 regression tests passing, build clean, lint clean, 237/237 stress benchmark unaffected (no code path touched by the latest fix). RC-CANDIDATE-033 resolved (Claude B, 2026-07-31) as a documentation correction, not a code change: re-verification found classifierHints IS consumed, by a dedicated test verifying the classifier-detection regex logic independently of sentence assembly (docs/grammar_rules_structured/RULE-G-classifier.yaml already documents jol/ge as \"confirmed but unimplemented\" - deliberately staged, not orphaned) - so deleting it would've broken a passing test for no gain, and wiring it into live output would be an unscoped behavior change. Clarifying comment added at the computation site instead; see docs/PENDING_REGRESSION_CASES.md for the full writeup. RC-CANDIDATE-035 fixed earlier same day (commit 433bf8b): \"using\" was stripping to \"us\" and colliding with the pronoun dictionary entry in two independent ing$-stripping code paths (findVerbForm, assembleSentenceSOV) - both now guard against pronoun_map.json collisions. RC-CANDIDATE-034 fixed same day (commit 0ab90bf): morphology fallback (step 7) no longer silently drops unresolved words. All three RC-CANDIDATE items opened by Claude B's 2026-07-30 engineering audit (032/033/034, plus 035 found separately by Claude A's NV-044) are now closed except RC-CANDIDATE-032 (unreachable dead code, deliberately left unfixed - zero risk either way, no urgency). BACKLOG-003 FULLY COMPLETE, all 8 phases."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
     2026-07-09, Project Owner directive: Repository Access Model in
@@ -481,18 +481,20 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-07-31: RC-CANDIDATE-035 fixed - "using" was stripping to "us"
-    and colliding with the pronoun dictionary entry in two independent
-    ing$-stripping code paths (findVerbForm, assembleSentenceSOV); both
-    now guard against pronoun_map.json before accepting a stripped-form
-    lookup. "using" itself correctly stays unresolved. 141/141 tests (4
-    new), build clean, lint clean, stress benchmark byte-identical.
-    npm run build's test-gate passes again as a result (it only failed
-    on RC-035's own now-fixed test). Earlier same day: RC-CANDIDATE-034
-    fixed - morphology fallback (step 7) now carries an '[UNKNOWN]'
-    marker for words that fail to resolve instead of silently filtering
-    them out. RC-CANDIDATE-033 (dead classifierHints computation)
-    remains open, next reasonable pickup if continuing this thread.
+    2026-07-31: RC-CANDIDATE-033 resolved as a documentation
+    correction, not a code change - re-verification found the original
+    "dead code" diagnosis incomplete: classifierHints IS consumed by a
+    dedicated test (verifying regex classifier-detection independently
+    of sentence assembly), so deleting it would've broken a passing
+    test, and wiring it into output would be an unscoped behavior
+    change. Clarifying comment added at the computation site in
+    grammarEngine.js instead. 141/141 tests unchanged, lint clean, no
+    stress-benchmark diff needed (no code path touched).
+    All three of Claude B's 2026-07-30 audit findings now closed:
+    RC-CANDIDATE-034 (commit 0ab90bf, morphology [UNKNOWN] marker) and
+    RC-CANDIDATE-035 (commit 433bf8b, "using"/"us" pronoun collision)
+    fixed same day. RC-CANDIDATE-032 (unreachable dead code) remains
+    deliberately unfixed - zero risk, no urgency either way.
     Prior: convergence protocol adopted (2026-07-11, Project Owner):
     applying it retroactively found RC-CANDIDATE-010 - RC-002's ·o
     locative fix was implemented more generally (any noun after

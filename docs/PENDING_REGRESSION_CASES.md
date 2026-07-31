@@ -1467,6 +1467,38 @@ calls the affected branch, so no test could regress).
 
 ### RC-CANDIDATE-033 — `analyzeGrammar`'s `classifierHints` computed every call, never consumed
 
+**Status: RESOLVED (Claude B, 2026-07-31) — as a documentation
+correction, not a code change.** Re-verification found the original
+diagnosis half right: `classifierHints` is genuinely never read by the
+translation-assembly pipeline (`assembleGrammar`,
+`assembleSentenceSOV`), so it has zero effect on any translated
+output — that part holds. But "never consumed" was too broad: a
+dedicated regression test
+(`tests/unit/translationEngine.test.js`, "classifierHints includes
+jol...ge", added 2026-07-11) calls `analyzeGrammar` directly and
+asserts on `.classifierHints`, specifically to verify the
+regex-based classifier-detection logic on its own, independent of
+full sentence assembly. `docs/grammar_rules_structured/
+RULE-G-classifier.yaml` documents this the same way — `jol`/`ge` are
+"confirmed but unimplemented," i.e. deliberately staged ahead of
+integration, not orphaned dead code.
+
+Given that, neither of the two options this entry originally proposed
+was actually safe as a narrow fix: deleting the computation would
+break the existing passing test and discard already-confirmed
+classifier data for no correctness gain; wiring it into live output
+would be a real behavior change (which Garo classifier gets attached
+to which noun in assembled sentences) requiring its own
+stress-benchmark verification and likely a classifier-selection
+design call outside pure engineering scope — not a "smallest safe
+fix." Per the standing engineering rule "if verification disproves
+the original diagnosis, correct the documentation before shipping,"
+resolved by adding a clarifying comment in `grammarEngine.js` at the
+computation site (explaining the split between test-verified logic
+and not-yet-wired output) rather than changing behavior. No test
+count change (still 141/141), no stress-benchmark diff needed (no
+code path touched).
+
 **Found:** 2026-07-30, Claude B, continued engineering quality audit
 (second pass).
 
@@ -1484,12 +1516,13 @@ maintaining this function — a future reader could reasonably assume
 it affects output somewhere.
 
 **Not a correctness bug** — output is unaffected either way, purely a
-maintainability/dead-code finding. Low priority; safe, narrow fix
-either way (remove the computation, or wire it up if a real
-consumer was intended and got lost in a prior refactor — needs a
-decision on which, not just a mechanical fix).
+maintainability/dead-code finding. Original framing ("safe, narrow
+fix either way — remove or wire up") turned out to be wrong on
+inspection; see the RESOLVED note at the top of this entry for what
+was actually safe.
 
-**Status: OPEN, not fixed.**
+**Original diagnosis above retained for context — see the RESOLVED
+note at the top of this entry, 2026-07-31.**
 
 ---
 

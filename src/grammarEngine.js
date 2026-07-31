@@ -57,6 +57,27 @@ export function analyzeGrammar(input) {
   }
 
   let subject = null, verb = null, object = null;
+  // RC-CANDIDATE-033 resolution (2026-07-31, Claude B): this array was
+  // flagged as "computed every call, never consumed" - true for the
+  // translation-assembly pipeline (assembleGrammar/assembleSentenceSOV
+  // never read grammar.classifierHints to select a Garo classifier),
+  // but re-verification found that diagnosis incomplete: it IS a real,
+  // deliberate consumer surface - see the dedicated
+  // "classifierHints includes jol...ge" test in
+  // tests/unit/translationEngine.test.js, added 2026-07-11 specifically
+  // to verify this regex-based classifier-detection logic independently
+  // of full sentence assembly (per docs/grammar_rules_structured/
+  // RULE-G-classifier.yaml's own note that jol/ge are "confirmed but
+  // unimplemented" - i.e. deliberately staged ahead of integration, not
+  // orphaned). Deleting this computation would silently break that
+  // passing test and discard already-confirmed classifier data with no
+  // correctness benefit; wiring it into live sentence output would be a
+  // real behavior change requiring its own stress-benchmark
+  // verification and arguably a classifier-selection design decision
+  // outside pure engineering scope. Per "if verification disproves the
+  // original diagnosis, correct the documentation before shipping":
+  // resolving RC-033 as a documentation correction, not a code change -
+  // see docs/PENDING_REGRESSION_CASES.md for the full writeup.
   const classifierHints = [];
   const li = input.toLowerCase();
   if (/\b(dog|cat|cow|bird|fish|animal|insect)\b/.test(li)) classifierHints.push({ classifier: 'mang', reason: 'animal noun' });
