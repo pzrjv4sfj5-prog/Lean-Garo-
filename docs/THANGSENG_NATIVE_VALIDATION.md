@@ -2471,18 +2471,25 @@ morpheme (possibly homonymous, possibly a different suffix entirely)
 until it has its own evidence. No rule promotion — this is a negative
 determination (ruling out a merge), not a positive one.
 
+**Partial resolution (2026-07-31) — `mipring` = "lunch" (bare noun),
+direct Thangseng relay:** confirms `mipring` is the root noun itself,
+not a separate/alternate word from `mipringde` — rules out the
+"two unrelated synonyms" reading. This narrows, but doesn't close,
+the original question: it confirms `-de` in `mipringde` is a suffix
+attaching to this same root, but not *what* the suffix is doing there
+(topic marking correlated with subject-drop, free variation, register,
+etc. all remain consistent with a root+optional-suffix picture).
+
 **Still open, NOT resolved this pass (needs Thangseng or more
 examples, not corpus-internal reasoning):**
 - `maidake` vs. `maikai` — direct form conflict for manner "how,"
   needs a targeted relay question. Do not guess.
-- `mipring` (sentence 3: explicit `Na'a` subject, no `-de`) vs.
-  `mipringde` (existing entry: no explicit subject, `-de` suffixed).
-  Only two data points, differing in two dimensions at once (subject
-  presence AND suffix) — can't isolate which difference (if either)
-  is causal from this evidence alone. Free variation, register
-  difference, and subject-drop-triggers-de are all still consistent
-  with the data; not resolvable without a disambiguating example
-  (e.g. a subject-less non-`-de` form, or an explicit-subject `-de`
-  form).
+- What `-de` is doing when it attaches to `mipring` (topic/focus
+  marking correlated with subject-drop vs. free variation vs.
+  register) — the noun/suffix relationship itself is now settled,
+  the function of the suffix is not. Still only two data points
+  differing in two dimensions at once (subject presence AND suffix);
+  needs a disambiguating example (e.g. a subject-less non-`-de` form,
+  or an explicit-subject `-de` form) to isolate cause.
 - Promote the badita-generalization finding into code/tests once the
   above are far enough along to avoid fragmenting the work.

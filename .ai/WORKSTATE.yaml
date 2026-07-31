@@ -1,5 +1,5 @@
 repository:
-  head: 0568e20
+  head: c96ab86
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
