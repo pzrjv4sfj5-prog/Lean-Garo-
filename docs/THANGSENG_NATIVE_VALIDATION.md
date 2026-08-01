@@ -2493,3 +2493,74 @@ examples, not corpus-internal reasoning):**
   or an explicit-subject `-de` form) to isolate cause.
 - Promote the badita-generalization finding into code/tests once the
   above are far enough along to avoid fragmenting the work.
+
+## NV-047 — PARTIAL: `Bao` = "where?"; `-chi`/`-o` movement-locative
+contrast confirmed; `Na·ara bano?` mapping left OPEN
+
+**Status:** Partially resolved. Source: WhatsApp, Tridip ↔ Thangseng,
+2026-07-31, 6:41–6:44 PM IST — relayed to Claude A in two passes: a
+raw/unlabeled paste first, then a labeled synthesis (compiled by a
+different Claude instance, "not yet reviewed" per its own framing).
+
+**Important process note on this entry:** the two passes disagreed on
+one point. The raw paste, read on its own, suggested `Na·ara bano?`
+was confirmed as the answer for "where are you going?" with "where
+are you?" left unaddressed. The labeled synthesis instead presents
+`Bano na·a` = "where are you?" as separately confirmed ("Yep"), and
+flags `Na·ara bano?`'s mapping as genuinely ambiguous in the source
+chat (its own ⚠ marker). Both readings were produced by inferring
+turn-attribution onto the same underlying ambiguous chat text — the
+synthesis's ⚠ flag is not resolved by having more labels, since the
+labels themselves are an interpretation, not a transcript feature.
+**Treating the ⚠ point as still genuinely open, per both sources'
+own uncertainty, not resolving it by picking a reading.**
+
+**Confirmed clean — no ambiguity in either pass:**
+- `Bao` = "Where?" — bare/short interrogative, given as a direct
+  definition when Tridip asked about it specifically. **VERIFIED/
+  HIGH.** Promoted to `master_dictionary.json` this session.
+- `Na·a bano re·angenga?` and `Na·a bachi re·angenga?` are both
+  confirmed/accepted forms for "where are you going?" — Thangseng
+  restated the first as correct and offered the second as an
+  alternate. **VERIFIED/HIGH for both as accepted forms of "where are
+  you going?".** Not promoted as competing `master_dictionary.json`
+  entries this session — `Na·a bano re·angenga?` is already present;
+  adding `bachi` as a second same-key entry would recreate the exact
+  duplicate-key clobber shape flagged in RC-036 this session. Needs
+  the proper alternates mechanism (`compiled_dict_alternates.json`,
+  per the Copilot audit response) rather than a raw duplicate key —
+  flagging for Claude B, not doing myself (build-pipeline territory).
+- **Grammar point, direct native statement of the general rule (not
+  just one more example):** `-chi` suffix = movement *to* a locative;
+  `-o` suffix = locative *without* movement. Thangseng gave this as
+  an explicit rule in response to Tridip's own clarifying question
+  ("difference between Bano and bachi? and also Bao"), not as a
+  one-off sentence correction. This is qualitatively stronger evidence
+  than another single example would be, because it's the native
+  speaker stating the pattern itself. See RULE-044 below.
+
+**Still OPEN, not resolved this pass — needs one targeted follow-up
+question, not corpus-internal reasoning:**
+- Does `Na·ara bano?` mean "where are you?" (stative, no movement) on
+  its own, or is it a shortened form of "where are you going?" that
+  happens to drop the movement particle `re·angenga`? The two passes
+  disagree, and the disagreement traces to ambiguous reply-quoting in
+  the original chat, not to a resolved fact either source is sure of.
+- Correspondingly: is `Bano na·a` (confirmed "Yep" in the synthesis
+  pass) actually a separate, independently-confirmed form for "where
+  are you?" — or was the synthesis's own turn-labeling here also an
+  inference rather than a literal transcript reading? The raw pass
+  didn't clearly separate this as its own confirmed turn.
+- **Recommended follow-up question for the next relay, precise enough
+  to close this cleanly:** *"Does 'Na·ara bano?' by itself mean 'where
+  are you' (staying still), or is it short for 'where are you going'?
+  And is 'Bano na·a' also correct for 'where are you', separately?"*
+  Not added to the standing 42-question batch — flagging here so it
+  isn't lost, but not bundling into that already-large, already-
+  awaiting-response batch.
+
+**Action taken:** `Bao` = "where?" added to `master_dictionary.json`
+(VERIFIED/HIGH). RULE-044 added for the `-chi`/`-o` contrast. Nothing
+else promoted to code this pass — the open item above is a genuine
+gap, not something to guess through.
+

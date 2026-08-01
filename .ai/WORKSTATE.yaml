@@ -325,6 +325,24 @@ claude_a:
     - "2026-07-31 (later session, checkpoint b181e86): phone ka·a citation-form headword added, closing the base/citation-form keying question from NV-046 (81545be, 14eb835). mipring/-de remains the sole open item in that lineage."
     - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
+    2026-07-31 (later session): NV-047 - "where" cluster (bano/bachi/
+    bao) from a WhatsApp relay, received in two passes that disagreed
+    on one point. Confirmed clean: Bao = "where?" (promoted to
+    master_dictionary.json, VERIFIED/HIGH, keyed separately from
+    existing "where"/Bano to avoid a duplicate-key clobber - see
+    RC-036 same session); -chi = movement-to locative vs -o = no-
+    movement locative, direct Thangseng statement of the general rule
+    (RULE-044, Medium confidence - general productivity beyond where-
+    words still open, same direction as RULE-G2's existing open
+    productivity question); Na·a bano re·angenga? and Na·a bachi
+    re·angenga? both confirmed forms for "where are you going?" (not
+    promoted as competing dictionary entries - flagged for Claude B's
+    alternates mechanism instead). Left explicitly OPEN, not guessed:
+    whether Na·ara bano? means "where are you" or is short for "where
+    are you going" - the two relay passes disagreed and neither
+    resolves it; a precise single follow-up question is drafted in
+    NV-047 for the next relay round, not bundled into the standing
+    batch.
     2026-07-31 (later session): responded to external (Copilot) audit
     handoff. Verified every cited item against current HEAD before
     acting, per standing discipline - audit itself not otherwise

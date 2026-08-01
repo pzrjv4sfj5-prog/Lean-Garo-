@@ -2671,6 +2671,13 @@
     "category": "general"
   },
   {
+    "english": "where?",
+    "garo": "Bao",
+    "category": "general",
+    "pos": "adv.",
+    "notes": "VERIFIED/HIGH — NV-047, Thangseng relay via Tridip, 2026-07-31. Bare/short interrogative 'where?', given as a direct definition, distinct from 'Bano' above (which carries the -o no-movement locative suffix per RULE-044 - not yet confirmed whether these are simply free variants or have a usage distinction; keyed separately as 'where?' rather than reusing the 'where' key to avoid a duplicate-key clobber risk, cf. RC-CANDIDATE-036 this session)."
+  },
+  {
     "english": "why",
     "garo": "Maini·gimin",
     "category": "general"

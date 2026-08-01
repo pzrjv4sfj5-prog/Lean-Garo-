@@ -1,0 +1,62 @@
+id: RULE-044
+title: "Movement vs. Stationary Locative Suffix Contrast (-chi vs. -o)"
+description: >-
+  Two locative suffixes contrast on movement: "-chi" marks a locative
+  as the goal of movement ("to X"), while "-o" marks a locative with
+  no movement implied ("at X"). Given directly by Thangseng as a
+  general rule (not inferred from a single example) when asked to
+  explain why "bano" and "bachi" both surfaced as candidate forms
+  for where-questions. Complements RULE-033/RULE-G2, which establish
+  "-o" as a confirmed locative suffix but do not document a movement
+  contrast or the "-chi" counterpart.
+dependencies:
+  - id: RULE-033
+    name: "Locative \"Under,\" Retiring a Lexical Confusion"
+    note: "establishes -o as a confirmed locative suffix; this rule adds the movement/no-movement contrast RULE-033 doesn't cover"
+  - id: RULE-G2
+    name: "Pre-verbal Clustering (Locative Phrases)"
+    note: "general locative-phrase productivity question this rule offers new corroborating evidence for, without itself resolving it"
+claims:
+  - scope: "the suffix contrast itself (-chi = movement-to, -o = no-movement locative), as directly stated by Thangseng"
+    status: verified
+    confidence: medium
+    status_note: >-
+      Direct native statement of the general rule, not just one more
+      example sentence - stronger than a single-sentence confirmation
+      in kind, but still relayed via a WhatsApp chat log (Tridip to
+      Claude, not a live disambiguation session), and the surrounding
+      exchange (NV-047) has an unresolved ambiguity on adjacent forms
+      (Na·ara bano?). Medium rather than High until a live/unambiguous
+      confirmation session or a second independent example is
+      available.
+  - scope: "productivity beyond where-question forms (bano/bachi/bao) - does this -chi/-o contrast hold for locatives generally, e.g. beyond interrogatives"
+    status: needs_native_validation
+    status_note: >-
+      Thangseng's statement was general in wording but the triggering
+      context was entirely where-question forms. Not yet tested
+      against non-interrogative locatives (e.g. "to the market" vs
+      "at the market"). This is the same open productivity question
+      RULE-G2 already tracks for locative phrases generally - this
+      rule doesn't resolve it, it adds one more data point in the
+      same open direction.
+examples:
+  - 'Na·a bachi re·angenga? = "where are you going?" (bachi = movement-to locative, matches the movement verb re·angenga)'
+  - 'Na·ara bano? / Bano na·a = forms using bano (-o, no-movement locative) - exact English mapping still open, see NV-047'
+counterexamples:
+  note: "none recorded"
+  items: []
+launch_priority:
+  - scope: "the confirmed suffix contrast"
+    tier: P1
+  - scope: "general productivity beyond where-question forms"
+    tier: P2
+    note: "not yet stress-tested, no urgency without a concrete failing case"
+native_notes: >-
+  Direct Thangseng quote (paraphrased, relayed via Tridip WhatsApp,
+  2026-07-31): "'chi' suffix is movement to locative. 'o' is also
+  locative but no movement." Given in response to Tridip's own
+  clarifying question about the difference between bano/bachi/bao -
+  not a correction of system output, a direct grammar explanation.
+last_updated: "2026-07-31"
+updated_by: "Claude A"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047"
