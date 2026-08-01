@@ -11,8 +11,9 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
-  last_updated: "2026-08-01 (NV-048 + NV-049, session handing off to Claude B)"
+  last_updated: "2026-08-01 (Claude B session — RC-036 follow-up, VERIFIED-preference fix for master's internal duplicate-key conflicts)"
   test_status: >-
+    "155/155 unit tests passing (153 prior + 2 new: 'one person' VERIFIED-preference regression, 'he answered' to-X-exclusion regression). 0 lint errors. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass; vite build now succeeds in-sandbox with a fresh npm install, resolving the previously-flagged environment gap). repository-intelligence.js Checks B/C/D/E: 0 new violations. Stress benchmark 237/237 byte-identical before/after this session's fix (none of the 31 changed compiled_dict.json keys fall in that corpus). RC-CANDIDATE-036 follow-up fixed this session (prepare-data.js pickPrimary): master_dictionary.json's own INTERNAL duplicate-key conflicts (multiple master rows for one key) were not resolved by the original RC-036 master-preference fix, which still fell back to last-write-wins by array order among master's own candidates. Added a scoped rule: when exactly one non-variant candidate is tagged VERIFIED/HIGH (excluding UNVERIFIED via substring guard), it wins. Live regression caught mid-implementation (not shipped blind): applying this to 'to answer' picked a VERIFIED citation form whose '-na' ending is the Garo infinitive suffix already baked in, which morphologyEngine.js's tense-suffixing pipeline treats as a bare stem, producing malformed 'a·gan·chak·naha' — caught via the existing 'he answered' regression test. Fixed by excluding 'to '-prefixed keys from the rule (pickPrimary now takes the key as a 2nd argument); VERIFIED confidence attests translation correctness, not bare-stem safety for suffixing. Net: 31 compiled_dict.json keys changed (0 added/removed), same systemic-conflict shape as RC-036/RC-037, all individually spot-checked against their master_dictionary.json source rows before accepting (not just trusted from the tag) — includes 'one person'->'mande sak·sa' and 'answer'->'Aganchakani' (the two originally-traced keys) plus 29 others sharing the identical conflict shape. 7 of the changed bare-verb-root keys spot-verified live for conjugation safety (push/throw/clean/listen/cook/lie/fly) — all either route through a separate, unaffected 'to X' key first, or produce well-formed output consistent with the engine's established suffix pattern. Prior 153/153 history preserved below.
     "153/153 unit tests passing (147 prior + new tests/unit/rong_classifier.test.js, 6 tests: rong resolution for fruit/alcohol, no-raka behavior, ge/mang/sak/king/gong regression coverage). npm run build clean through prepare-data.js (compiled_dict.json/compiled_dict_alternates.json/category_index.json regenerated) and test-dictionary.js/repository-intelligence.js; vite build step still fails in this sandbox only because node_modules/vite is not installed — pre-existing environment gap, not a real issue, not re-flagged. Prior 147/147 history preserved below.\n147/147 regression tests passing (144 + 3 new RC-037 tests), 0 lint errors, build exits 0, stress benchmark 237/237 (isolated 1-line diff from RC-036, exactly the expected 'he has two dogs' correction; RC-037's changes not exercised by the stress corpus, confirmed instead via direct compiled-value spot checks). RC-CANDIDATE-032 fixed this session (commit f1ea1bf): number_engine.js's standalone toGaroNumber() teens formula corrected from the disproven 'chiking·ma·' form to the confirmed 'Chi·'+digit form, matching garo_classifier.js's own TEENS table (was unreachable dead code for 11-19, fixed anyway - misleading and a latent refactor trap). RC-CANDIDATE-036 fixed this session (commit afac50d, prepare-data.js): master_dictionary.json is the declared canonical compile source and WAS included in the merge, but plain last-write-wins by raw file order meant it only won if textually distinct from anything already deduped in from the legacy source files - if master's value coincidentally matched an earlier duplicate in a legacy file, a LATER wrong duplicate within that same legacy file won instead, invisible to the resolver. Fixed by tagging merge candidates with source file and preferring any master-sourced candidate. 51 keys corrected (e.g. 'one dog': 'sa mang·sa'->'achak mang·sa'). NOTE: a stricter VERIFIED-preference refinement (for keys where master itself holds multiple non-variant candidates, e.g. 'one person': unannotated 'sa mande·sa' vs VERIFIED/HIGH 'mande sak·sa') was attempted, correctly picked 'one person' but broke 'answer' (5-way case-entangled master entries - notes shape more complex than tracing budget allowed this session) - reverted, NOT shipped, logged as follow-up below. RC-CANDIDATE-037 fixed this session (commit afac50d, garo_dictionary.json + master_dictionary.json direct edits): bulk-generated 'two X'/'three X'/'twelve X'/'thirteen X' entries wrongly used 'do·o' (chicken/bird) or 'na·tok' (fish) as filler for nouns unrelated to birds/fish (e.g. 'two teachers'->'do·o skigipa·gni'). Two distinct sub-patterns, confirmed by inspection not guessed: 105 entries where the real noun was already present after the stray prefix (strip only); 11 dog/cat entries where the noun was entirely absent and do·o/na·tok was standing in for it (substituted the correct noun - achak/menggo, both independently confirmed via their own standalone dictionary entries - not just stripped). Genuine bird/chicken/fish entries excluded and confirmed unaffected. Source: external Copilot audit, synthesized and handed off by Project Owner; every cited finding re-verified against current HEAD before acting per standing discipline (audit's compiled_dict.json framing was imprecise - master WAS included in the merge, root cause was subtler than 'master ignored'; 2 of 8 secondary findings were already fixed, 1 was superseded/no-longer-live, 5 were confirmed-but-backlog). BACKLOG-003 FULLY COMPLETE, all 8 phases (unchanged, carried over)."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
   governance_note: >-
@@ -623,8 +624,71 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-07-31 (new session): responded to external Copilot audit
-    handoff (see repository.test_status above for full detail) plus
+    2026-08-01 (new session, checkpoint d4a0a72, resumed via migration
+    doc): traced "answer"'s verb-conjugation path per the prior
+    session's explicit next-priority flag, before reattempting the
+    VERIFIED-preference rule. Root cause confirmed: RC-036's master-
+    preference fix only beats non-master sources — it doesn't resolve
+    master_dictionary.json's OWN internal duplicate-key conflicts
+    (multiple master rows for one key), which still fell back to plain
+    last-write-wins by array order regardless of confidence tags. Added
+    a scoped rule to pickPrimary (prepare-data.js): when exactly one
+    non-variant candidate is explicitly tagged VERIFIED/HIGH in its
+    notes (excluding UNVERIFIED via substring guard), it wins over
+    untagged/unverified siblings sharing its key. Fixed "one person"
+    (now "mande sak·sa", was "sa mande·sa") and "answer" (now
+    "Aganchakani", was "a·gan·chak·a"/UNVERIFIED).
+    Live regression caught mid-fix, NOT shipped blind: applying the same
+    rule to "to answer" picked master's VERIFIED/HIGH "a·gan·chak·na" —
+    but that candidate's "-na" ending IS the Garo infinitive/purpose
+    suffix already baked into the citation form, not a bare stem.
+    morphologyEngine.js's tense pipeline (findVerbForm -> applyTense)
+    treats whatever "to X" resolves to as a bare root and suffixes tense
+    directly onto it, producing malformed "a·gan·chak·naha" instead of
+    correct "Aganchakaha" — caught by the existing "he answered"
+    regression test failing, not by inspection. This is exactly the
+    failure mode irregular_verbs.json's 2026-07-05 comment already
+    flagged for this class of verb. Fix: excluded "to "-prefixed keys
+    from the VERIFIED-preference rule entirely (pickPrimary now takes
+    the key as a second argument) — VERIFIED confidence attests
+    translation correctness, not that the stored shape is a safe bare
+    stem for suffixing. Re-verified "he answered" -> "Ua Aganchakaha"
+    (correct again) after the exclusion.
+    Net effect on compiled_dict.json: 31 keys changed (0 added/removed) —
+    broader than the two originally-traced keys because the underlying
+    conflict shape (master's own untagged/UNVERIFIED duplicate rows
+    beating a lone VERIFIED/HIGH row via array-order last-write-wins) is
+    systemic, same category as RC-036 (51 keys) and RC-037 (116
+    entries), not unique to "answer"/"one person". Spot-checked every
+    changed key's master_dictionary.json source rows individually before
+    accepting (not just trusting the tag) — all 31 are genuine
+    VERIFIED/HIGH primary values replacing anonymous/lower-confidence
+    duplicates, several with the variant-tagged siblings already
+    correctly demoted (e.g. "elephant": Mong now primary over variant-
+    tagged ha·ti/mong·ma, previously mong·ma won only by accidental
+    array position despite its own "variant" tag saying it shouldn't).
+    Spot-verified conjugation safety on 7 of the non-"to X" changed verbs
+    (push/throw/clean/listen/cook/lie/fly) via live translate() calls —
+    all either route through an unaffected separate "to X" key first
+    (e.g. "cook" bare-key changed but "he cooked" still correctly uses
+    "to cook"="Song·a", untouched) or produce well-formed suffixed output
+    consistent with the engine's established raka+a+ha pattern (no other
+    changed key ends in the "-na" infinitive suffix that caused the "to
+    answer" regression, confirmed by inspection of the full changed-key
+    list). Added 2 new regression tests (tests/unit/translationEngine.test.js):
+    "one person" (the rule's target case) and "he answered" (the case it
+    must NOT touch) — both guard this exact scoping decision going
+    forward, not just the values.
+    Verification: 155/155 unit tests, 0 lint errors, npm run build clean
+    (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite
+    all pass, 0 new violations in repository-intelligence.js Checks
+    B/C/D/E), 237/237 stress benchmark byte-identical before/after (none
+    of the 31 changed keys appear in that corpus, so this doesn't
+    positively confirm them, only confirms zero blast radius on the
+    existing tested surface — the 7 ad-hoc verb spot-checks above cover
+    that gap instead).
+    2026-07-31 (prior session, prior history preserved): responded to
+    external Copilot audit
     Claude A's independent RC-036 flag from the same day. RC-032,
     RC-036, RC-037 all fixed and pushed (f1ea1bf, afac50d). Follow-up
     NOT done this session, explicitly flagged rather than forced:
@@ -711,17 +775,33 @@ claude_b:
     - "Governance update: replaced Repository Access Model per Project Owner directive (Claude A may push directly with a session-scoped PAT)"
     - "BACKLOG-006 first increment: repository-intelligence.js (raka report + cross-table consistency gate), RC-CANDIDATE-007/008/009 logged, 56/56 passing"
   next_action: >-
-    2026-07-31 (new session): highest-priority open item is the
-    "answer" trace described in current_task above - needed before
-    the VERIFIED-preference refinement can be safely reattempted for
-    "one person" and any other master-internal-conflict keys like it.
-    A Render deploy was requested but NOT executed this session -
-    api.render.com is outside this environment's network egress
-    allowlist and no Render MCP tool was connected in-session; the
-    key was not used or persisted. Check whether Render auto-deploys
-    on push to main (no render.yaml found in repo to confirm either
-    way) - if so this session's push may have already triggered it
-    independent of the unused key.
+    2026-08-01 (new session): "answer" trace complete, VERIFIED-
+    preference rule shipped and scoped (see current_task above). No
+    other master-internal-conflict keys of this shape are known to be
+    outstanding right now, but the underlying pattern (159+ keys in
+    garo_dictionary.json alone per the original audit) wasn't
+    exhaustively re-swept for this specific shape beyond the 31 that
+    the shipped rule actually touched — a full sweep would need to
+    check whether any OTHER key has a similar "-na"/other-suffix-baked-
+    in trap the "to X" exclusion doesn't cover (e.g. if a bare-form
+    key's VERIFIED value itself carries some other unexpected suffix),
+    not attempted this session, no evidence of it in the 7 spot-checked
+    verbs but not proven absent either.
+    Render deploy still not executed — api.render.com remains outside
+    this sandbox's network egress allowlist; a Render MCP connector
+    IS available in the registry this session (not previously checked)
+    and was surfaced to the Project Owner for connection instead of
+    using the raw API key. Check with Project Owner whether they
+    connected it and whether a deploy/auto-deploy check was completed.
+    Prior (2026-07-31, still relevant): check whether Render auto-
+    deploys on push to main (no render.yaml found in repo to confirm
+    either way).
+    Prior (BACKLOG-006 first increment done, unchanged): per docs/
+    REPOSITORY_INTELLIGENCE.md's own documented gaps, extending to
+    master_dictionary.json/garo_dictionary.json needs its own design
+    pass (not started); reverse raka direction not attempted
+    (false-positive risk). RC-003, RC-CANDIDATE-006 through 009 all
+    remain pending Claude A - not touched.
     Prior (BACKLOG-006 first increment done, unchanged): per docs/
     REPOSITORY_INTELLIGENCE.md's own documented gaps, extending to
     master_dictionary.json/garo_dictionary.json needs its own design

@@ -164,6 +164,20 @@ const REGRESSION_CASES = [
   // exception at the negative-future call site.
   { in: 'he will not go', expectGaro: 'Ua re·jawa', expectMethod: ['grammar-assembly'] },
   { in: 'they will not go', expectGaro: 'Uamang re·jawa', expectMethod: ['grammar-assembly'] },
+
+  // RC-CANDIDATE-036 follow-up (2026-08-01): pickPrimary's master-
+  // preference fix (RC-036) didn't resolve master_dictionary.json's OWN
+  // internal duplicate-key conflicts, which still fell back to plain
+  // last-write-wins by array order regardless of confidence tags. Added a
+  // scoped VERIFIED-preference rule (exactly one non-variant VERIFIED/HIGH
+  // candidate wins) — but NOT for "to X" infinitive keys, where a
+  // VERIFIED citation form can still carry the Garo infinitive/purpose
+  // -na suffix baked in, which the tense-suffixing pipeline (findVerbForm
+  // -> applyTense) treats as a bare stem, producing a malformed
+  // double-suffixed form. "one person" is the clean case the new rule is
+  // FOR; "he answered" is the case it must NOT touch.
+  { in: 'one person', expectGaro: 'mande sak·sa', expectMethod: ['classifier'] },
+  { in: 'he answered', expectGaro: 'Ua Aganchakaha', expectMethod: ['grammar-assembly'] },
 ];
 
 for (const c of REGRESSION_CASES) {

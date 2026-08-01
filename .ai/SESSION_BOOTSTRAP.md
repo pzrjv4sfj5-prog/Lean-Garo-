@@ -153,6 +153,24 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-01, Claude B — RC-CANDIDATE-036 follow-up shipped: "one
+person" and "answer" fixed, "to answer" deliberately excluded.** Traced
+why RC-036's master-preference fix didn't fully resolve master's own
+internal duplicate-key conflicts (still last-write-wins by array order
+among master's own candidates). Added a scoped VERIFIED-preference rule
+to `pickPrimary` (prepare-data.js) — fixes 31 keys total sharing this
+conflict shape, including the two originally flagged ("one person"->
+"mande sak·sa", "answer"->"Aganchakani"). Caught and fixed a real trap
+mid-implementation: "to answer"'s VERIFIED candidate carries the Garo
+infinitive `-na` suffix baked into the citation form, which the tense-
+suffixing pipeline treats as a bare stem — so `"to "`-prefixed keys are
+deliberately excluded from this rule. 155/155 tests (2 new), 0 lint
+errors, build clean, 237/237 stress-benchmark byte-identical. Commit
+TBD (pushing now). Full detail in `.ai/WORKSTATE.yaml`
+`claude_b.current_task`. Not a Claude A item. Render deploy still not
+executed — a Render MCP connector was found this session and surfaced
+to the Project Owner; awaiting connection.
+
 **NEW, 2026-08-01, Claude A — NV-049 CLOSED, handing off to Claude B.**
 Same-session follow-up to NV-048 below: Thangseng batch resolved the
 mipring/mipringde disambiguation (NV-045, `-de` confirmed predicate-

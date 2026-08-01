@@ -20,13 +20,13 @@ function normalizeFile(filePath) {
     const parsed = JSON.parse(raw);
     const normalized = {};
 
-    const addValue = function(key, value, isVariant = false) {
+    const addValue = function(key, value, isVariant = false, isVerified = false) {
       const k = key.trim().toLowerCase();
       const v = String(value).trim();
       const rawKey = key.trim();
       if (!k || !v) return;
       if (!normalized[k]) normalized[k] = [];
-      if (!normalized[k].some(entry => entry.v === v)) normalized[k].push({ v, isVariant, rawKey });
+      if (!normalized[k].some(entry => entry.v === v)) normalized[k].push({ v, isVariant, isVerified, rawKey });
     }
 
     if (Array.isArray(parsed)) {
@@ -41,7 +41,19 @@ function normalizeFile(filePath) {
         // notes, OCR flags, no notes at all, etc.) is left untagged, so
         // this only fires for the exact confirmed pattern.
         const isVariant = /^variant\b/i.test(item.notes || '');
-        if (eng) addValue(eng, garo, isVariant);
+        // RC-CANDIDATE-036 follow-up (2026-08-01): master's own internal
+        // duplicate-key conflicts (e.g. "answer"/"to answer"/"one person"
+        // each holding several master_dictionary.json rows) aren't solved
+        // by preferring master over non-master — pickPrimary still had to
+        // fall back to last-write-wins AMONG master's own candidates,
+        // which is array order, not confidence. Tag any non-variant entry
+        // whose notes explicitly say "VERIFIED/HIGH" (and NOT
+        // "UNVERIFIED/HIGH" — substring match would otherwise misfire) so
+        // pickPrimary can prefer a single unambiguous VERIFIED candidate
+        // over untagged or explicitly-UNVERIFIED siblings sharing its key.
+        const notes = item.notes || '';
+        const isVerified = /verified\/high/i.test(notes) && !/unverified/i.test(notes);
+        if (eng) addValue(eng, garo, isVariant, isVerified);
       });
     } else if (typeof parsed === 'object' && parsed !== null) {
       Object.entries(parsed).forEach(([key, value]) => {
@@ -92,7 +104,7 @@ function cleanRakka(str) {
   return str.replace(/\s+·/g, '·');
 }
 
-function pickPrimary(entries) {
+function pickPrimary(entries, key) {
   // IMPORTANT: base case must match the OLD behavior exactly (last value
   // wins, by file/array processing order), not a "smart" heuristic. A
   // previous version sorted by length-then-alphabetical, which picked
@@ -139,6 +151,41 @@ function pickPrimary(entries) {
     variants.some(v => v.rawKey !== neutral[0].rawKey);
   if (isRealCaseCollision) {
     return neutral[0].v;
+  }
+
+  // RC-CANDIDATE-036 follow-up (2026-08-01, traced from the "answer"/
+  // "to answer"/"one person" investigation): master's own internal
+  // duplicate-key conflicts survive the master-preference fix below intact,
+  // because among master's own candidates it's still plain last-write-wins
+  // by array order — which is how "to answer" shipped the untagged
+  // "Aganchaka" over the VERIFIED/HIGH/doc7 "a·gan·chak·na" one row above
+  // it, and "one person" shipped the untagged "sa mande·sa" over the
+  // VERIFIED/HIGH "mande sak·sa". Deliberately narrow signal only: when
+  // exactly one non-variant candidate is explicitly tagged VERIFIED/HIGH
+  // (and no other non-variant candidate also is — a genuine tie is left to
+  // the existing fallback rather than guessed at), that candidate wins
+  // regardless of array position. Untagged and explicitly-UNVERIFIED
+  // siblings don't get a vote either way, matching how "answer" (3
+  // non-variant candidates, exactly 1 VERIFIED/HIGH) should resolve too.
+  // EXCLUDED: "to X" keys. Confirmed live via "he answered": master's
+  // VERIFIED/HIGH candidate for "to answer" is "a·gan·chak·na" — but that
+  // -na ending IS the Garo infinitive/purpose suffix already baked into
+  // the citation form, not a bare stem. morphologyEngine.js's tense
+  // pipeline treats whatever "to X" resolves to as a bare root and
+  // suffixes tense directly onto it (findVerbForm -> applyTense), so this
+  // produced a malformed double-suffixed "a·gan·chak·naha" instead of the
+  // correct "Aganchakaha". This is exactly the failure mode
+  // irregular_verbs.json's 2026-07-05 comment already warned about
+  // (verbs using "purpose-clause -na endings...instead of actual
+  // past-tense forms" were deliberately left to this same pipeline).
+  // VERIFIED confidence attests the word is a correct translation, not
+  // that its stored shape is a bare stem safe for suffixing — so for "to
+  // X" keys specifically, this rule doesn't apply; last-write-wins /
+  // master-preference below (unchanged prior behavior) still governs.
+  const isInfinitiveKey = typeof key === 'string' && key.startsWith('to ');
+  const verifiedNeutral = neutral.filter(e => e.isVerified);
+  if (!isInfinitiveKey && verifiedNeutral.length === 1) {
+    return verifiedNeutral[0].v;
   }
 
   // RC-CANDIDATE-036 (external audit, 2026-07-31; confirmed live via
@@ -196,6 +243,7 @@ function main() {
           // upgrade its source tag rather than dropping the master-tagged
           // duplicate, so pickPrimary can still see "master confirms this".
           existing.source = 2;
+          if (entry.isVerified) existing.isVerified = true;
         }
       });
     });
@@ -228,10 +276,10 @@ function main() {
 
   Object.keys(mergedValues).forEach(key => {
     const cleanedEntries = mergedValues[key]
-      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, rawKey: e.rawKey, source: e.source }))
+      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, isVerified: e.isVerified, rawKey: e.rawKey, source: e.source }))
       .filter(e => Boolean(e.v));
     if (!cleanedEntries.length) return;
-    const primary = pickPrimary(cleanedEntries);
+    const primary = pickPrimary(cleanedEntries, key);
     finalized[key] = primary;
     if (cleanedEntries.length > 1) {
       alternates[key] = mergedValues[key].map(e => e.v);
