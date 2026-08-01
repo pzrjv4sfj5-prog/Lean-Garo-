@@ -96,7 +96,8 @@ Legend: ✅ CONFIRMED (native speaker explicit) | ⚠️ INFERRED (internally co
 | sak· | people | ✅ | `mande sak·sa` confirmed |
 | king· | flat objects | ✅ | `ki·tap king·gittam` confirmed |
 | gong· | money | ✅ | `tangka bisil gong·bonga` confirmed |
-| ge· | general | ✅ | `mewa ge·bri` confirmed |
+| ge· | general (tools etc.) | ✅ | `kolom ge·gni` confirmed |
+| rong | roundish (fruit, alcohol), no raka | ✅ | `mewa rongbri`, `chu rongsa` confirmed 2026-08-01, see NV-048 |
 | brong· | long objects | ⚠️ | Listed in classifier map, not explicitly tested |
 | 21+ raka join | mang·Kolgrik·sa | ✅ | Confirmed by Thangseng |
 

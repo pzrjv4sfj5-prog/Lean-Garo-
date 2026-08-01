@@ -5318,7 +5318,7 @@
   },
   {
     "english": "four fruits",
-    "garo": "mewa ge·bri",
+    "garo": "mewa rongbri",
     "category": "numbers"
   },
   {
@@ -22467,7 +22467,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH — chu (general term for alcohol) confirmed direct Thangseng relay 2026-08-01; \"beer\" as narrower specific sense not independently confirmed, see NV-048"
   },
   {
     "english": "beetle",
@@ -59298,5 +59298,13 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "PENDING/MEDIUM — Tridip note, 2026-07-29 (Project Owner assertion, not a direct Thangseng quote): no distinct Garo word for 'smartphone' - covered by the same loanword as 'phone'. Orthography 'Phone' assumed by loanword convention (cf. Apple, Cup, Room), not independently confirmed. Add to next Thangseng relay batch to confirm spelling/raka and promote to VERIFIED."
+  },
+  {
+    "english": "alcohol",
+    "garo": "chu",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay 2026-08-01, new word, see NV-048"
   }
 ]

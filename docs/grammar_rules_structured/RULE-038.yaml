@@ -4,26 +4,28 @@ description: >-
   Garo counting phrases follow Noun + Classifier-Number, not a bare
   number word. The specific noun is always stated, followed by a
   classifier root selected by the noun's semantic class, fused with a
-  number suffix (sa=1, gni=2, gittam=3...). Four classifier roots
+  number suffix (sa=1, gni=2, gittam=3...). Five classifier roots
   confirmed so far: mang (animals/birds/fish), sak (people), king
-  (books/flat objects), ge (tools/general objects). Project Owner has
-  explicitly instructed this be treated as a standing rule, not a
-  one-off observation. Full category-by-category classifier list
-  requested from Thangseng 2026-07-21, not yet answered - do not
-  assume the four roots above are the complete set.
+  (books/flat objects), gong (money/currency), rong (roundish objects -
+  fruits, alcohol), and ge (genuinely general/tools fallback only - NOT
+  fruit, corrected 2026-08-01). Project Owner has explicitly instructed
+  this be treated as a standing rule, not a one-off observation. Full
+  category-by-category classifier list requested from Thangseng
+  2026-07-21, not yet fully answered - do not assume the roots above are
+  the complete set.
 dependencies:
   - id: RULE-015
     name: "Stem Formation"
     note: "may interact for classifier-suffix behavior, unconfirmed"
 claims:
-  - scope: "the 4 classifier roots and 10 examples listed"
+  - scope: "the 5 classifier roots and examples listed"
     status: verified
     confidence: high
-    confidence_note: "given 4 independently-corroborated classifier roots"
+    confidence_note: "given 5 independently-corroborated classifier roots; rong corroborated by 2 examples only (medium evidence within a high-confidence rule), see native_notes"
   - scope: "completeness of the classifier-root inventory (remaining classifier categories - materials, objects generally, etc.; and whether classifier choice ever varies by dialect/register)"
     status: needs_native_validation
     confidence: low
-    status_note: "Thangseng was asked for the full list 2026-07-21, awaiting reply"
+    status_note: "Thangseng was asked for the full list 2026-07-21; 2026-08-01 relay answered rong (roundish objects, incl. alcohol) but did not confirm the list is now complete - still awaiting full confirmation"
 examples:
   - "achak mang·sa=\"one dog\", achak mang·gni=\"two dogs\""
   - "do·o mang·gni=\"two chicken\" (do·o=\"chicken\", NOT a number or generic animal word — see RC-CANDIDATE-022/NV-025 for the corruption this caused when the noun was dropped)"
@@ -32,6 +34,8 @@ examples:
   - "ki·tap king·sa=\"one book\", ki·tap king·gittam=\"three books\""
   - "kettal ge·gni=\"two knives\""
   - "do·a mang·chiking=\"ten birds\" (do·a=\"bird\", distinct from do·o=\"chicken\" — a real minimal pair)"
+  - "mewa rongbri=\"four fruits\" (rong, no raka — corrected 2026-08-01, was wrongly ge)"
+  - "chu rongsa=\"one alcohol\", chu rongbonga=\"five alcohol\" (rong extends to alcohol; chu=\"alcohol\", new word)"
 counterexamples:
   note: >-
     the pre-existing master_dictionary.json numbers-category entries
@@ -41,7 +45,11 @@ counterexamples:
     simultaneously) are the corrupted, NOT the correct form — see
     docs/DICTIONARY_ERROR_AUDIT_20260719.md and RC-CANDIDATE-022 for
     the ~30 collision groups still uncorrected under this same bug
-    shape.
+    shape. Also: "mewa ge·bri" for "four fruits" (present in the
+    dictionary and this rule's own example list until 2026-08-01) was
+    itself an uncorrected error — an unquestioned default-fallback
+    guess, not a native-confirmed form. Fixed to "mewa rongbri", see
+    NV-048.
   items: []
 launch_priority:
   - scope: null
@@ -56,7 +64,11 @@ native_notes: >-
   tagged VERIFIED/HIGH from an earlier session, which agree.
   mande/manderang discrepancy for "person" flagged in NV-025, unresolved
   - do not treat sak's exact noun-form pairing with "person" as fully
-  settled.
+  settled. rong classifier: direct Thangseng relay via Project Owner,
+  2026-08-01 - "with fruits, rong is the preferred prefix because they
+  are roundish in shape, e.g., apple rongsa; te·gatchu rongbonga... and
+  for alcohol is rong and in Garo alcohol is chu (new word)". See
+  NV-048.
 last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-038"

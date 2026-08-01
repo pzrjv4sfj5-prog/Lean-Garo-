@@ -20,8 +20,17 @@ examples:
   - 'wa·a jolsa="one stalk of bamboo" (jol, no raka)'
   - "a'bil panggni=\"two trees\" (pang, no raka)"
   - 'kolom ge·sa="a pen" (ge·, raka)'
+  - 'mewa rongbri="four fruits" (rong, no raka — added 2026-08-01)'
+  - 'chu rongsa="one alcohol" (rong extends to alcohol; chu="alcohol", new word)'
 counterexamples:
-  note: "none recorded. Note: translationEngine.js's classifierHints only implements mang/sak/gong/king - jol and ge· are confirmed but unimplemented (flagged to Claude B, PROJECT_STATUS.md)."
+  note: >-
+    none recorded. Note: translationEngine.js's classifierHints only
+    implements mang/sak/gong/king - jol, ge·, and rong are confirmed
+    but unimplemented in that file specifically (flagged to Claude B,
+    PROJECT_STATUS.md); garo_classifier.js (the actual engine path used
+    by countNoun) implements all of them including rong as of
+    2026-08-01. Also: "four fruits" was previously (incorrectly)
+    treated as a ge· example — see RULE-038 counterexamples and NV-048.
   items: []
 launch_priority:
   - scope: "3 of 5 classifiers (mang/sak/gong/king)"
@@ -31,6 +40,8 @@ launch_priority:
 native_notes: >-
   THANGSENG classifier confirmation, primary source suffixes.pdf
   transcript (bamboo/pen examples with explicit raka notes), Rule 21.
-last_updated: "2026-07-26"
+  rong classifier: direct Thangseng relay via Project Owner, 2026-08-01
+  (fruit + alcohol, roundish-shape class, no raka). See NV-048.
+last_updated: "2026-08-01"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-G-classifier"

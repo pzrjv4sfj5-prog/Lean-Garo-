@@ -14,9 +14,21 @@
  *   two dogs   -> achak mang·gni
  *   three books -> ki·tap king·gitam  (king = flat objects)
  *   one person -> mande sak·sa    (sak = people)
- *   four fruits -> mewa ge·bri    (ge = general fallback)
+ *   four fruits -> mewa rongbri   (rong = roundish objects; corrected
+ *                                  2026-08-01 — see below, was wrongly
+ *                                  "ge" fallback)
  *   five coins -> tangka gong·bonga (gong = money/currency)
  *   ten birds  -> do·a mang·chiking
+ *
+ * rong classifier added 2026-08-01, direct Thangseng relay: "with fruits,
+ * rong is the preferred prefix because they are roundish in shape, e.g.,
+ * apple rongsa; te·gatchu rongbonga... and for alcohol is rong and in
+ * Garo alcohol is chu (new word)". Two independently-typed examples from
+ * Thangseng himself (rongsa, rongbonga) both show no raka mark, so rong
+ * is implemented as a no-raka classifier (like king/jol), not a raka
+ * classifier (like mang/sak/ge/gong). "ge" is now confirmed genuinely
+ * general/tools-only — fruit was never a real ge case, it was an
+ * unconfirmed default guess that happened to go unquestioned until now.
  */
 
 import { toGaroNumber as toGaroNumberImported } from './number_engine.js';
@@ -65,6 +77,9 @@ export const CLASSIFIER_MAP = {
   'bamboo':'jol','wa·a':'jol',
   'tree':'pang','log':'dot','wooden post':'dot',
   'pen':'ge','kolom':'ge','pencil':'ge',
+  'fruit':'rong','fruits':'rong','mewa':'rong','bite':'rong','bi·te':'rong',
+  'apple':'rong',
+  'alcohol':'rong','chu':'rong','beer':'rong',
 };
 
 export const CLASSIFIERS = CLASSIFIER_MAP;
@@ -104,7 +119,9 @@ function getClassifierSuffix(count) {
 
 // Classifiers that carry raka (·) — confirmed by Thangseng raka rule
 const RAKA_CLASSIFIERS = new Set(['mang', 'sak', 'ge', 'gong']);
-// No-raka classifiers: king, jol, pang, dot (suffixes attach directly)
+// No-raka classifiers: king, jol, pang, dot, rong (suffixes attach directly)
+// rong confirmed no-raka 2026-08-01 from Thangseng's own typed examples
+// ("rongsa", "rongbonga" — no dot in either), see file header note.
 
 export function buildClassifierPhrase(classifier, count) {
   const suffix = getClassifierSuffix(count);
@@ -175,9 +192,12 @@ export function countNoun(garoNoun, count, englishNoun) {
   const classifier = getClassifier(englishNoun || garoNoun);
   // 'ge' (general fallback classifier) was previously treated as "no
   // classifier at all" — dropping it entirely from output. Native speaker
-  // confirmed it's a real classifier like the others: "four fruits" ->
-  // "mewa ge·bri", not "mewa bri". Fixed to use the same buildClassifierPhrase
-  // path as every other classifier category.
+  // confirmed it's a real classifier like the others, applied the same
+  // buildClassifierPhrase path as every other classifier category.
+  // NOTE: "four fruits" is no longer a 'ge' example — fruit nouns now
+  // correctly resolve to the 'rong' classifier (see CLASSIFIER_MAP),
+  // e.g. "mewa rongbri", not "mewa ge·bri". 'ge' remains the fallback
+  // for genuinely uncategorized nouns (tools etc.).
   const classifierPhrase = buildClassifierPhrase(classifier, count);
   if (classifierPhrase === null) return null;
   return `${garoNoun.toLowerCase()} ${classifierPhrase}`;

@@ -244,7 +244,8 @@ Format: `[noun] [classifier·number]`
 | `sak·` | people | `mande sak·sa` = one person |
 | `king·` | flat objects | `ki·tap king·gittam` = three books |
 | `gong·` | money/currency | `tangka gong·bonga` = five coins |
-| `ge·` | general fallback | `mewa ge·bri` = four fruits |
+| `ge·` | general fallback (tools etc.) | `kolom ge·gni` = two pens |
+| `rong` | roundish objects (fruits, alcohol) — no raka | `mewa rongbri` = four fruits |
 | `brong·` | long objects | — |
 
 Numbers: `sa`(1) `gni`(2) `gittam`(3) `bri`(4) `bonga`(5) `dok`(6) `sni`(7) `chet`(8) `sku`(9) `chiking`(10)

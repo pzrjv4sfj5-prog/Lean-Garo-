@@ -2601,3 +2601,65 @@ open:**
 else promoted to code this pass — the open item above is a genuine
 gap, not something to guess through.
 
+## NV-048 — CLOSED: numeral-classifier counting batch re-confirmed; `rong` (roundish objects, incl. alcohol) added; `chu` = "alcohol" (new word)
+
+**Status:** CLOSED. Direct native confirmation via Project Owner relay,
+2026-08-01.
+
+**Confirmed unchanged (re-validation of the RULE-038 seven-example
+set):**
+- `achak mang·sa` = "one dog", `achak mang·gni` = "two dogs"
+- `ki·tap kinggittam` = "three books"
+- `mande sak·sa` = "one person" — Thangseng explicitly re-confirmed
+  ("mande sak-sa? correct. Yes")
+- `tangka gong·bonga` = "five coins"
+- `do·a mang·chiking` = "ten birds" (Thangseng's own typed form dropped
+  the final vowel to `do·`; treated as a typing slip, not a new form —
+  the noun-first `do·a mang·chiking` example under RULE-038 already has
+  stronger, repeated corroboration)
+
+**Correction — fruit classifier:**
+> Thangseng: "But with fruits, rong is the preferred prefix because
+> they are roundish in shape, e.g., apple rongsa; te·gatchu rongbonga,
+> etc."
+
+The dictionary's pre-existing `"four fruits": "mewa ge·bri"` was wrong
+— it was never a native-confirmed form, just an unquestioned default
+fallback (`ge`) that went unchallenged until this relay. Corrected to
+`mewa rongbri`. Both of Thangseng's own typed examples (`rongsa`,
+`rongbonga`) show no raka mark, so `rong` is implemented as a no-raka
+classifier (like `king`/`jol`), unlike `mang`/`sak`/`ge`/`gong`.
+Confidence: medium (2 direct examples, consistent, from the native
+speaker's own typed forms — narrower evidence base than the original
+5-classifier set, but not corpus-internal guessing).
+
+**New word — alcohol:**
+> Thangseng: "...and for alcohol is rong and in Garo alcohol is chu
+> (new word)"
+
+`chu` = "alcohol" added to `master_dictionary.json` (VERIFIED/HIGH).
+Cross-reference: a pre-existing `"beer": "chu"` entry (UNVERIFIED/HIGH,
+origin untraced) is the same Garo word — this relay confirms `chu` as
+the general term for alcohol, not specifically "beer" as a narrower
+sense. Left as a separate entry rather than merged/deleted; its notes
+now point here. `rong` also applies to alcohol as a classifier: `chu
+rongsa` = "one alcohol", `chu rongbonga` = "five alcohol".
+
+**Not added to the dictionary (insufficient evidence for a full
+gloss):** "apple" and `te·gatchu` from Thangseng's own examples above —
+these support the classifier rule but no English gloss for `te·gatchu`
+was given, and "apple" as literally the Garo word (vs. shorthand for
+"one apple") is ambiguous. Flagged for a future relay if a full
+sentence-level confirmation is wanted.
+
+**Action taken:** `RULE-038` and `RULE-G-classifier` updated (5th
+classifier root `rong`, no-raka, roundish objects). `garo_classifier.js`
+CLASSIFIER_MAP updated (`fruit`/`fruits`/`mewa`/`bite`/`bi·te`/`apple`
+→ `rong`; `alcohol`/`chu`/`beer` → `rong`). `master_dictionary.json`:
+`"four fruits"` corrected to `mewa rongbri`; new entry `"alcohol": "chu"`
+added; `"beer": "chu"` notes updated to cross-reference this entry.
+`compiled_dict.json`/`compiled_dict_alternates.json`/`category_index.json`
+regenerated via `npm run build`. New test file
+`tests/unit/rong_classifier.test.js` added (rong resolution, no-raka
+behavior, ge/mang/sak/king/gong regression coverage). Full suite:
+153/153 passing.
