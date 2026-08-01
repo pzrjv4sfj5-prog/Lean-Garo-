@@ -166,12 +166,37 @@ infinitive `-na` suffix baked into the citation form, which the tense-
 suffixing pipeline treats as a bare stem — so `"to "`-prefixed keys are
 deliberately excluded from this rule. 155/155 tests (2 new), 0 lint
 errors, build clean, 237/237 stress-benchmark byte-identical. Commit
-TBD (pushing now). Full detail in `.ai/WORKSTATE.yaml`
-`claude_b.current_task`. Not a Claude A item. Render deploy still not
-executed — a Render MCP connector was found this session and surfaced
-to the Project Owner; awaiting connection.
+`d43caff`. Full detail in `.ai/WORKSTATE.yaml` `claude_b.current_task`.
+Not a Claude A item. Render deploy still not executed — a Render MCP
+connector was found this session and surfaced to the Project Owner;
+awaiting connection. **This independently fixes the exact
+confidence-precedence gap Claude A's same-session audit (below) flagged
+as an engineering handoff — resolves it for 31 of the 365 keys Claude A
+found compiling to a non-VERIFIED value; the remaining ~334 keys are
+multi-candidate conflict shapes this scoped rule deliberately doesn't
+cover (see Claude A entry) and are still open.**
 
-**NEW, 2026-08-01, Claude A — NV-049 CLOSED, handing off to Claude B.**
+**NEW, 2026-08-01, Claude A — corpus-internal audit complete, engineering
+handoff for Claude B (partially resolved by Claude B's fix above,
+landed same session — see that entry).** No native validation needed,
+no NV items opened. 476 legacy duplicate-key entries in
+master_dictionary.json annotated SUPERSEDED (nothing deleted, citation
+discipline) where an unannotated import-era entry was silently
+coexisting alongside a VERIFIED/HIGH sibling under the same english
+key. Rebuilding compiled_dict.json (before Claude B's fix) confirmed
+this was a live bug, not just stale data: 365 keys were compiling to
+the wrong (non-VERIFIED) value because prepare-data.js's duplicate-key
+merge had no confidence-precedence logic at all. Claude B's
+VERIFIED-preference rule above fixes 31 of those 365; the rest involve
+multiple VERIFIED candidates or `"to "`-prefixed keys the scoped rule
+deliberately excludes, still open. Also aligned `where`/`Bano` and
+`Where`/`Bachi` dictionary tags to RULE-044's existing VERIFIED/HIGH
+status (tag-only, no new claim). known_dictionary_conflicts.json still
+shows 'apple'/'mango' as unresolved conflicts (both closed in NV-049) -
+needs regen next Claude B build pass, not urgent. Tests 153/153,
+repository-intelligence clean. Claude A has no active task.
+
+**PRIOR, 2026-08-01, Claude A — NV-049 CLOSED, handing off to Claude B.**
 Same-session follow-up to NV-048 below: Thangseng batch resolved the
 mipring/mipringde disambiguation (NV-045, `-de` confirmed predicate-
 independent), phone/smartphone/mobile (promoted to VERIFIED/HIGH,

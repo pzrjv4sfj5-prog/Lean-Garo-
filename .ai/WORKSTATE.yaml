@@ -11,7 +11,7 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
-  last_updated: "2026-08-01 (Claude B session — RC-036 follow-up, VERIFIED-preference fix for master's internal duplicate-key conflicts)"
+  last_updated: "2026-08-01 (NV-048 + NV-049, then Claude A corpus-internal audit + SUPERSEDED annotations, then Claude B RC-036 follow-up VERIFIED-preference fix)"
   test_status: >-
     "155/155 unit tests passing (153 prior + 2 new: 'one person' VERIFIED-preference regression, 'he answered' to-X-exclusion regression). 0 lint errors. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass; vite build now succeeds in-sandbox with a fresh npm install, resolving the previously-flagged environment gap). repository-intelligence.js Checks B/C/D/E: 0 new violations. Stress benchmark 237/237 byte-identical before/after this session's fix (none of the 31 changed compiled_dict.json keys fall in that corpus). RC-CANDIDATE-036 follow-up fixed this session (prepare-data.js pickPrimary): master_dictionary.json's own INTERNAL duplicate-key conflicts (multiple master rows for one key) were not resolved by the original RC-036 master-preference fix, which still fell back to last-write-wins by array order among master's own candidates. Added a scoped rule: when exactly one non-variant candidate is tagged VERIFIED/HIGH (excluding UNVERIFIED via substring guard), it wins. Live regression caught mid-implementation (not shipped blind): applying this to 'to answer' picked a VERIFIED citation form whose '-na' ending is the Garo infinitive suffix already baked in, which morphologyEngine.js's tense-suffixing pipeline treats as a bare stem, producing malformed 'a·gan·chak·naha' — caught via the existing 'he answered' regression test. Fixed by excluding 'to '-prefixed keys from the rule (pickPrimary now takes the key as a 2nd argument); VERIFIED confidence attests translation correctness, not bare-stem safety for suffixing. Net: 31 compiled_dict.json keys changed (0 added/removed), same systemic-conflict shape as RC-036/RC-037, all individually spot-checked against their master_dictionary.json source rows before accepting (not just trusted from the tag) — includes 'one person'->'mande sak·sa' and 'answer'->'Aganchakani' (the two originally-traced keys) plus 29 others sharing the identical conflict shape. 7 of the changed bare-verb-root keys spot-verified live for conjugation safety (push/throw/clean/listen/cook/lie/fly) — all either route through a separate, unaffected 'to X' key first, or produce well-formed output consistent with the engine's established suffix pattern. Prior 153/153 history preserved below.
     "153/153 unit tests passing (147 prior + new tests/unit/rong_classifier.test.js, 6 tests: rong resolution for fruit/alcohol, no-raka behavior, ge/mang/sak/king/gong regression coverage). npm run build clean through prepare-data.js (compiled_dict.json/compiled_dict_alternates.json/category_index.json regenerated) and test-dictionary.js/repository-intelligence.js; vite build step still fails in this sandbox only because node_modules/vite is not installed — pre-existing environment gap, not a real issue, not re-flagged. Prior 147/147 history preserved below.\n147/147 regression tests passing (144 + 3 new RC-037 tests), 0 lint errors, build exits 0, stress benchmark 237/237 (isolated 1-line diff from RC-036, exactly the expected 'he has two dogs' correction; RC-037's changes not exercised by the stress corpus, confirmed instead via direct compiled-value spot checks). RC-CANDIDATE-032 fixed this session (commit f1ea1bf): number_engine.js's standalone toGaroNumber() teens formula corrected from the disproven 'chiking·ma·' form to the confirmed 'Chi·'+digit form, matching garo_classifier.js's own TEENS table (was unreachable dead code for 11-19, fixed anyway - misleading and a latent refactor trap). RC-CANDIDATE-036 fixed this session (commit afac50d, prepare-data.js): master_dictionary.json is the declared canonical compile source and WAS included in the merge, but plain last-write-wins by raw file order meant it only won if textually distinct from anything already deduped in from the legacy source files - if master's value coincidentally matched an earlier duplicate in a legacy file, a LATER wrong duplicate within that same legacy file won instead, invisible to the resolver. Fixed by tagging merge candidates with source file and preferring any master-sourced candidate. 51 keys corrected (e.g. 'one dog': 'sa mang·sa'->'achak mang·sa'). NOTE: a stricter VERIFIED-preference refinement (for keys where master itself holds multiple non-variant candidates, e.g. 'one person': unannotated 'sa mande·sa' vs VERIFIED/HIGH 'mande sak·sa') was attempted, correctly picked 'one person' but broke 'answer' (5-way case-entangled master entries - notes shape more complex than tracing budget allowed this session) - reverted, NOT shipped, logged as follow-up below. RC-CANDIDATE-037 fixed this session (commit afac50d, garo_dictionary.json + master_dictionary.json direct edits): bulk-generated 'two X'/'three X'/'twelve X'/'thirteen X' entries wrongly used 'do·o' (chicken/bird) or 'na·tok' (fish) as filler for nouns unrelated to birds/fish (e.g. 'two teachers'->'do·o skigipa·gni'). Two distinct sub-patterns, confirmed by inspection not guessed: 105 entries where the real noun was already present after the stray prefix (strip only); 11 dog/cat entries where the noun was entirely absent and do·o/na·tok was standing in for it (substituted the correct noun - achak/menggo, both independently confirmed via their own standalone dictionary entries - not just stripped). Genuine bird/chicken/fish entries excluded and confirmed unaffected. Source: external Copilot audit, synthesized and handed off by Project Owner; every cited finding re-verified against current HEAD before acting per standing discipline (audit's compiled_dict.json framing was imprecise - master WAS included in the merge, root cause was subtler than 'master ignored'; 2 of 8 secondary findings were already fixed, 1 was superseded/no-longer-live, 5 were confirmed-but-backlog). BACKLOG-003 FULLY COMPLETE, all 8 phases (unchanged, carried over)."
@@ -59,7 +59,37 @@ claude_a:
     (not yet its own committed file). See current_task below for
     everything since.
   current_task: >-
-    2026-08-01 (later same session, checkpoint 03e981d/fa55cce):
+    2026-08-01 (corpus-internal linguistic audit, no native validation
+    required, no NV items opened). Scope: duplicate-key audit across
+    master_dictionary.json (8934 entries), grammar-rule <-> dictionary
+    consistency check, doc staleness check post-NV-048/049. Findings:
+    (1) 476 legacy unannotated entries silently shadowed a VERIFIED/
+    HIGH sibling under the same english key (pure formatting duplicates
+    e.g. 'Anaros' vs VERIFIED 'a·na·ros', and real-value duplicates
+    e.g. 'one person'->'sa mande·sa' vs VERIFIED 'mande sak·sa') -
+    annotated in place with a SUPERSEDED note per citation discipline,
+    nothing deleted. (2) Confirmed via compiled_dict.json rebuild that
+    365 of these keys currently compile to the WRONG (non-VERIFIED)
+    value in production output - prepare-data.js's duplicate-key merge
+    has no confidence-precedence logic at all, this is a live
+    engineering bug, not something Claude A can fix - handed to Claude
+    B, see waiting_for. (3) 'where'/'Bano' and 'Where'/'Bachi' entries
+    were unannotated despite RULE-044 (VERIFIED/HIGH) directly citing
+    both forms as confirmed - tags aligned, no new linguistic claim.
+    (4) Remaining ~700 duplicate-key clusters are either legitimate
+    dialectal variants (2+ VERIFIED forms, correct as-is) or genuinely
+    unresolved (no VERIFIED anchor at all, multiple unconfirmed/OCR-
+    flagged candidates) - catalogued, left untouched, not native-
+    validation-blocking, no NV item warranted since none are corpus-
+    resolvable and none are urgent. (5) known_dictionary_conflicts.json
+    still lists 'apple'/'mango' as conflicts though both were resolved
+    in NV-049 - it's a generated artifact, Claude B's regen territory,
+    not hand-edited. Docs (RULE-038.yaml, RULE-G-classifier.yaml,
+    GARO_GRAMMAR_REFERENCE.md, SESSION_BOOTSTRAP.md) already current
+    post-NV-048/049, no staleness found. Test suite: 153/153 unchanged.
+    mina/minaha still the only open non-urgent item, unchanged.
+  current_task_prior: >-
+    2026-08-01 (earlier same session, checkpoint 03e981d/fa55cce):
     NV-049 CLOSED. Thangseng batch resolved all remaining open
     items from the NV-045/046/048 lineage in one relay: (1)
     mipring/mipringde (NV-045) - "Mipringde minaha. = Lunch is
@@ -499,6 +529,30 @@ claude_a:
     - "Do not re-triage RC-CANDIDATE-027 case-key instances individually as they're found - log the count, batch-handle with Claude B"
     - "Do not let this WORKSTATE.yaml go stale again - update at session close, every session"
   waiting_for: >-
+    2026-08-01 (corpus-internal audit, partially resolved same session):
+    RESOLVED FOR 31 KEYS — Claude B's RC-CANDIDATE-036 follow-up
+    (commit d43caff, pushed after this audit) independently shipped a
+    scoped VERIFIED-preference rule in prepare-data.js's pickPrimary
+    that fixes 31 of the 365 keys this audit found compiling to a
+    non-VERIFIED value, including the two flagged examples ('one
+    person', 'answer'). STILL OPEN for the remaining ~334: those are
+    multi-VERIFIED-candidate conflict shapes (2+ VERIFIED siblings
+    disagreeing, not one VERIFIED vs untagged) or `"to "`-prefixed
+    keys Claude B's rule deliberately excludes (infinitive-suffix
+    safety, see d43caff commit message) - neither shape is safely
+    auto-resolvable by "prefer any VERIFIED tag," they need either a
+    multi-candidate precedence rule (e.g. prefer the alphabetically-
+    latest/most-recently-dated VERIFIED note, or leave genuinely
+    ambiguous ones as first-write-wins) or per-key judgment. Not
+    re-scoped or attempted this session - Claude B's call whether it's
+    worth a second scoped pass. The 476-entry SUPERSEDED-tagged list
+    in master_dictionary.json (see current_task) is still the readiest
+    source list for whichever keys get tackled next. Separately,
+    known_dictionary_conflicts.json still lists 'apple'/'mango' as
+    conflicts though NV-049 resolved both - regenerate whenever that
+    artifact is next rebuilt, not urgent, not hand-editable by Claude
+    A. Neither item blocks Claude A's next session.
+    ---
     2026-08-01 update: phone/smartphone/mobile spelling and the
     mipring/-de disambiguating example (both listed as outstanding
     below) are CLOSED via NV-049. Claude A is not waiting on
