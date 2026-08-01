@@ -1,5 +1,5 @@
 repository:
-  head: 03e981d
+  head: d4a0a72
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -11,7 +11,7 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
-  last_updated: "2026-08-01 (rong classifier / NV-048 session)"
+  last_updated: "2026-08-01 (NV-048 + NV-049, session handing off to Claude B)"
   test_status: >-
     "153/153 unit tests passing (147 prior + new tests/unit/rong_classifier.test.js, 6 tests: rong resolution for fruit/alcohol, no-raka behavior, ge/mang/sak/king/gong regression coverage). npm run build clean through prepare-data.js (compiled_dict.json/compiled_dict_alternates.json/category_index.json regenerated) and test-dictionary.js/repository-intelligence.js; vite build step still fails in this sandbox only because node_modules/vite is not installed — pre-existing environment gap, not a real issue, not re-flagged. Prior 147/147 history preserved below.\n147/147 regression tests passing (144 + 3 new RC-037 tests), 0 lint errors, build exits 0, stress benchmark 237/237 (isolated 1-line diff from RC-036, exactly the expected 'he has two dogs' correction; RC-037's changes not exercised by the stress corpus, confirmed instead via direct compiled-value spot checks). RC-CANDIDATE-032 fixed this session (commit f1ea1bf): number_engine.js's standalone toGaroNumber() teens formula corrected from the disproven 'chiking·ma·' form to the confirmed 'Chi·'+digit form, matching garo_classifier.js's own TEENS table (was unreachable dead code for 11-19, fixed anyway - misleading and a latent refactor trap). RC-CANDIDATE-036 fixed this session (commit afac50d, prepare-data.js): master_dictionary.json is the declared canonical compile source and WAS included in the merge, but plain last-write-wins by raw file order meant it only won if textually distinct from anything already deduped in from the legacy source files - if master's value coincidentally matched an earlier duplicate in a legacy file, a LATER wrong duplicate within that same legacy file won instead, invisible to the resolver. Fixed by tagging merge candidates with source file and preferring any master-sourced candidate. 51 keys corrected (e.g. 'one dog': 'sa mang·sa'->'achak mang·sa'). NOTE: a stricter VERIFIED-preference refinement (for keys where master itself holds multiple non-variant candidates, e.g. 'one person': unannotated 'sa mande·sa' vs VERIFIED/HIGH 'mande sak·sa') was attempted, correctly picked 'one person' but broke 'answer' (5-way case-entangled master entries - notes shape more complex than tracing budget allowed this session) - reverted, NOT shipped, logged as follow-up below. RC-CANDIDATE-037 fixed this session (commit afac50d, garo_dictionary.json + master_dictionary.json direct edits): bulk-generated 'two X'/'three X'/'twelve X'/'thirteen X' entries wrongly used 'do·o' (chicken/bird) or 'na·tok' (fish) as filler for nouns unrelated to birds/fish (e.g. 'two teachers'->'do·o skigipa·gni'). Two distinct sub-patterns, confirmed by inspection not guessed: 105 entries where the real noun was already present after the stray prefix (strip only); 11 dog/cat entries where the noun was entirely absent and do·o/na·tok was standing in for it (substituted the correct noun - achak/menggo, both independently confirmed via their own standalone dictionary entries - not just stripped). Genuine bird/chicken/fish entries excluded and confirmed unaffected. Source: external Copilot audit, synthesized and handed off by Project Owner; every cited finding re-verified against current HEAD before acting per standing discipline (audit's compiled_dict.json framing was imprecise - master WAS included in the merge, root cause was subtler than 'master ignored'; 2 of 8 secondary findings were already fixed, 1 was superseded/no-longer-live, 5 were confirmed-but-backlog). BACKLOG-003 FULLY COMPLETE, all 8 phases (unchanged, carried over)."
   bootstrap_entry_point: ".ai/SESSION_BOOTSTRAP.md"
@@ -58,6 +58,30 @@ claude_a:
     (not yet its own committed file). See current_task below for
     everything since.
   current_task: >-
+    2026-08-01 (later same session, checkpoint 03e981d/fa55cce):
+    NV-049 CLOSED. Thangseng batch resolved all remaining open
+    items from the NV-045/046/048 lineage in one relay: (1)
+    mipring/mipringde (NV-045) - "Mipringde minaha. = Lunch is
+    ready" gives a second independent mipringde sentence with a
+    different predicate than the existing one, confirming -de
+    attaches regardless of verb, not tied to one construction;
+    added corrections.json "lunch is ready"->"Mipringde
+    minaha". (2) phone/smartphone/mobile - direct confirmation
+    "=phone", single loanword, no distinct forms; 3 entries
+    promoted PENDING/MEDIUM -> VERIFIED/HIGH. (3) apple -
+    confirmed the loanword "Apple" is literal, not shorthand.
+    (4) mango = te·gatchu - closes the NV-048 gloss gap (the
+    fruit in Thangseng's own rong-classifier example); already
+    matched a pre-existing VERIFIED/HIGH dictionary entry, no
+    value change, cross-referenced. mango added to
+    garo_classifier.js CLASSIFIER_MAP -> rong. Not added: a
+    standalone mina/minaha "ready" headword - only one form on
+    record, insufficient for a paradigm, flagged non-urgent.
+    Pushed d4a0a72. 153/153 passing throughout. Project Owner
+    then said: waiting on native response, Claude B needs to
+    resume work now - this WORKSTATE.yaml update IS that
+    handoff. No linguistic blockers on Claude B as of this
+    HEAD.
     2026-08-01 (new session, checkpoint cb5bf36): NV-048 CLOSED.
     Thangseng WhatsApp batch re-confirmed the original RULE-038
     7-example counting set unchanged (one/two dogs, three books,
@@ -360,6 +384,16 @@ claude_a:
     - "2026-07-31 (later session, checkpoint b181e86): phone ka·a citation-form headword added, closing the base/citation-form keying question from NV-046 (81545be, 14eb835). mipring/-de remains the sole open item in that lineage."
     - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
+    2026-08-01 (later): NV-049 CLOSED (see current_task) -
+    mipring/-de and phone/smartphone/mobile, the two items
+    listed as "genuinely still open" a few entries below, are
+    now resolved. "apple"/te·gatchu standalone-gloss gap from
+    NV-048 also closed. Claude A has no open linguistic task
+    right now and is standing down for Claude B to resume
+    engine-side work - nothing on Claude A's side is blocking.
+    Only remaining non-urgent item: mina/minaha "ready" verb
+    paradigm has just 1 form on record, not worth a dedicated
+    relay question yet.
     2026-08-01: NV-048 CLOSED (see current_task) - no follow-up
     action needed in this lineage. Genuinely still open,
     unchanged: mipring vs mipringde (needs a disambiguating
@@ -464,6 +498,11 @@ claude_a:
     - "Do not re-triage RC-CANDIDATE-027 case-key instances individually as they're found - log the count, batch-handle with Claude B"
     - "Do not let this WORKSTATE.yaml go stale again - update at session close, every session"
   waiting_for: >-
+    2026-08-01 update: phone/smartphone/mobile spelling and the
+    mipring/-de disambiguating example (both listed as outstanding
+    below) are CLOSED via NV-049. Claude A is not waiting on
+    anything right now - no open relay questions pending native
+    response on the linguistic side as of this HEAD.
     NV-042 determination CONFIRMED already complete (verified
     2026-07-31, was stale in this file): resolved via NV-043 -
     angna committed as default (angko valid alternate, general

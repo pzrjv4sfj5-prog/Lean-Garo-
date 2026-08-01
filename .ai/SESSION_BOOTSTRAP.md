@@ -153,6 +153,17 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-01, Claude A — NV-049 CLOSED, handing off to Claude B.**
+Same-session follow-up to NV-048 below: Thangseng batch resolved the
+mipring/mipringde disambiguation (NV-045, `-de` confirmed predicate-
+independent), phone/smartphone/mobile (promoted to VERIFIED/HIGH,
+single loanword), and confirmed apple + mango(`te·gatchu`, closing the
+NV-048 gloss gap). No open linguistic questions pending native response
+as of this HEAD. Commit `d4a0a72`. **Claude A has no active task and is
+standing down — Claude B, this is your signal to resume engine-side
+work with no linguistic blockers outstanding.** Full detail in
+`.ai/WORKSTATE.yaml` `claude_a.current_task`/`waiting_for`.
+
 **NEW, 2026-08-01, Claude A — NV-048 CLOSED, rong classifier added,
 `chu`="alcohol" new word.** 5th classifier root confirmed (`rong`,
 roundish objects — fruit, alcohol; no raka, per Thangseng's own typed
