@@ -140,6 +140,26 @@ function pickPrimary(entries) {
   if (isRealCaseCollision) {
     return neutral[0].v;
   }
+
+  // RC-CANDIDATE-036 (external audit, 2026-07-31; confirmed live via
+  // "one dog" -> shipped "sa mang·sa" vs master's "achak mang·sa"):
+  // master_dictionary.json is the project's declared canonical source and
+  // WAS included in the merge above, but plain last-write-wins by raw
+  // array order meant its value only "won" if it happened to be textually
+  // distinct from anything already deduped in. If master's value
+  // coincidentally matched an earlier duplicate in a legacy file, master's
+  // re-confirmation was invisible to the resolver, and a LATER, wrong
+  // duplicate within that same legacy file (garo_dictionary.json had 159
+  // such internally-conflicting keys) won instead. Fix: when any candidate
+  // is master-sourced, prefer master — using the same last-write-wins rule
+  // among ONLY the master candidates, so a tie between multiple master
+  // entries for one key still resolves exactly as it did before (no new
+  // behavior introduced beyond "master beats non-master").
+  const masterEntries = entries.filter(e => e.source === 2);
+  if (masterEntries.length) {
+    return masterEntries[masterEntries.length - 1].v;
+  }
+
   return entries[entries.length - 1].v;
 }
 
@@ -150,12 +170,33 @@ function main() {
   const dict2 = normalizeFile(path.join(__dirname, 'garo_dictionary (2).json'));
   const dict3 = normalizeFile(path.join(__dirname, 'master_dictionary.json'));
 
+  // RC-CANDIDATE-036: tag each entry with its source dict index (2 =
+  // master_dictionary.json) so pickPrimary can give master's declared
+  // canonical authority actual effect. See pickPrimary for why this was
+  // needed — master being *included* in the merge was not the same as
+  // master's value actually winning.
+  function tagSource(dict, source) {
+    const tagged = {};
+    Object.entries(dict).forEach(([key, entries]) => {
+      tagged[key] = entries.map(e => ({ ...e, source }));
+    });
+    return tagged;
+  }
+
   const mergedValues = {};
-  [dict1, dict2, dict3].forEach(dict => {
+  [tagSource(dict1, 0), tagSource(dict2, 1), tagSource(dict3, 2)].forEach(dict => {
     Object.entries(dict).forEach(([key, entries]) => {
       if (!mergedValues[key]) mergedValues[key] = [];
       entries.forEach(entry => {
-        if (!mergedValues[key].some(e => e.v === entry.v)) mergedValues[key].push(entry);
+        const existing = mergedValues[key].find(e => e.v === entry.v);
+        if (!existing) {
+          mergedValues[key].push(entry);
+        } else if (entry.source === 2) {
+          // Same text already present from an earlier (non-master) source —
+          // upgrade its source tag rather than dropping the master-tagged
+          // duplicate, so pickPrimary can still see "master confirms this".
+          existing.source = 2;
+        }
       });
     });
   });
@@ -187,7 +228,7 @@ function main() {
 
   Object.keys(mergedValues).forEach(key => {
     const cleanedEntries = mergedValues[key]
-      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, rawKey: e.rawKey }))
+      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, rawKey: e.rawKey, source: e.source }))
       .filter(e => Boolean(e.v));
     if (!cleanedEntries.length) return;
     const primary = pickPrimary(cleanedEntries);

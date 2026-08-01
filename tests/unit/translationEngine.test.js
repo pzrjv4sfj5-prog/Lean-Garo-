@@ -395,7 +395,14 @@ test('number word is never picked as the verb; "has" resolves as an irregular fo
   assert.equal(g.verb?.english, 'has');
   assert.equal(g.verb?.garo, 'donga');
   const r = await translate('he has two dogs');
-  assert.equal(r.garo, 'Ua do·o mang·gni·ko donga');
+  // RC-CANDIDATE-036: was 'Ua do·o mang·gni·ko donga' - 'do·o mang·gni'
+  // literally means "two birds" (do·o = chicken/bird; confirmed via
+  // "two birds" itself compiling to the identical string). That was the
+  // pre-fix compiler bug's output, not the correct translation. Master
+  // agrees unambiguously (2 entries, one VERIFIED/HIGH) that "two dogs"
+  // is 'achak mang·gni' (achak = dog). This assertion was locking in the
+  // bug; the verb-guard behavior under test here is unaffected.
+  assert.equal(r.garo, 'Ua achak mang·gni·ko donga');
 });
 
 // --- Second half of the same 2026-07-13 fix's benchmark claim ("exactly

@@ -21,7 +21,7 @@
   },
   {
     "english": "two teachers",
-    "garo": "do·o skigipa·gni",
+    "garo": "skigipa·gni",
     "category": "numbers"
   },
   {
@@ -5774,7 +5774,7 @@
   },
   {
     "english": "two books",
-    "garo": "do·o rang·gni",
+    "garo": "rang·gni",
     "category": "numbers"
   },
   {
@@ -5859,7 +5859,7 @@
   },
   {
     "english": "two persons",
-    "garo": "do·o mande·gni",
+    "garo": "mande·gni",
     "category": "numbers"
   },
   {
@@ -5869,32 +5869,32 @@
   },
   {
     "english": "two students",
-    "garo": "do·o chik·gni",
+    "garo": "chik·gni",
     "category": "numbers"
   },
   {
     "english": "two houses",
-    "garo": "do·o rang·gni",
+    "garo": "rang·gni",
     "category": "numbers"
   },
   {
     "english": "two trees",
-    "garo": "do·o rang·gni",
+    "garo": "rang·gni",
     "category": "numbers"
   },
   {
     "english": "two cars",
-    "garo": "do·o rang·gni",
+    "garo": "rang·gni",
     "category": "numbers"
   },
   {
     "english": "three persons",
-    "garo": "na·tok mande·gni",
+    "garo": "mande·gni",
     "category": "numbers"
   },
   {
     "english": "three dogs",
-    "garo": "na·tok mang·gni",
+    "garo": "achak mang·gni",
     "category": "numbers"
   },
   {
@@ -5909,27 +5909,27 @@
   },
   {
     "english": "three teachers",
-    "garo": "na·tok skigipa·gni",
+    "garo": "skigipa·gni",
     "category": "numbers"
   },
   {
     "english": "three students",
-    "garo": "na·tok chik·gni",
+    "garo": "chik·gni",
     "category": "numbers"
   },
   {
     "english": "three houses",
-    "garo": "na·tok rang·gni",
+    "garo": "rang·gni",
     "category": "numbers"
   },
   {
     "english": "three trees",
-    "garo": "na·tok rang·gni",
+    "garo": "rang·gni",
     "category": "numbers"
   },
   {
     "english": "three cars",
-    "garo": "na·tok rang·gni",
+    "garo": "rang·gni",
     "category": "numbers"
   },
   {
@@ -6504,17 +6504,17 @@
   },
   {
     "english": "two person",
-    "garo": "do·o mande·gni",
+    "garo": "mande·gni",
     "category": "numbers"
   },
   {
     "english": "two dog",
-    "garo": "do·o mang·gni",
+    "garo": "achak mang·gni",
     "category": "animals"
   },
   {
     "english": "two cat",
-    "garo": "do·o mang·gni",
+    "garo": "menggo mang·gni",
     "category": "animals"
   },
   {
@@ -6529,102 +6529,102 @@
   },
   {
     "english": "two teacher",
-    "garo": "do·o skigipa·gni",
+    "garo": "skigipa·gni",
     "category": "education"
   },
   {
     "english": "two student",
-    "garo": "do·o chik·gni",
+    "garo": "chik·gni",
     "category": "education"
   },
   {
     "english": "two house",
-    "garo": "do·o rang·gni",
+    "garo": "rang·gni",
     "category": "home"
   },
   {
     "english": "two tree",
-    "garo": "do·o rang·gni",
+    "garo": "rang·gni",
     "category": "nature"
   },
   {
     "english": "two book",
-    "garo": "do·o kitab·gni",
+    "garo": "kitab·gni",
     "category": "education"
   },
   {
     "english": "two car",
-    "garo": "do·o mot·gni",
+    "garo": "mot·gni",
     "category": "travel"
   },
   {
     "english": "two apple",
-    "garo": "do·o se·gni",
+    "garo": "se·gni",
     "category": "numbers"
   },
   {
     "english": "two banana",
-    "garo": "do·o sobo·gni",
+    "garo": "sobo·gni",
     "category": "numbers"
   },
   {
     "english": "two rice",
-    "garo": "do·o chak·gni",
+    "garo": "chak·gni",
     "category": "food"
   },
   {
     "english": "two water",
-    "garo": "do·o chik·gni",
+    "garo": "chik·gni",
     "category": "food"
   },
   {
     "english": "two waters",
-    "garo": "do·o chik·gni",
+    "garo": "chik·gni",
     "category": "numbers"
   },
   {
     "english": "two food",
-    "garo": "do·o chak·gni",
+    "garo": "chak·gni",
     "category": "food"
   },
   {
     "english": "two road",
-    "garo": "do·o lam·gni",
+    "garo": "lam·gni",
     "category": "travel"
   },
   {
     "english": "two river",
-    "garo": "do·o chik·gni",
+    "garo": "chik·gni",
     "category": "nature"
   },
   {
     "english": "two rivers",
-    "garo": "do·o chik·gni",
+    "garo": "chik·gni",
     "category": "numbers"
   },
   {
     "english": "two mountain",
-    "garo": "do·o nok·gni",
+    "garo": "nok·gni",
     "category": "nature"
   },
   {
     "english": "two village",
-    "garo": "do·o rim·gni",
+    "garo": "rim·gni",
     "category": "numbers"
   },
   {
     "english": "three person",
-    "garo": "na·tok mande·gni",
+    "garo": "mande·gni",
     "category": "numbers"
   },
   {
     "english": "three dog",
-    "garo": "na·tok mang·gni",
+    "garo": "achak mang·gni",
     "category": "animals"
   },
   {
     "english": "three cat",
-    "garo": "na·tok mang·gni",
+    "garo": "menggo mang·gni",
     "category": "animals"
   },
   {
@@ -6634,87 +6634,87 @@
   },
   {
     "english": "three teacher",
-    "garo": "na·tok skigipa·gni",
+    "garo": "skigipa·gni",
     "category": "education"
   },
   {
     "english": "three student",
-    "garo": "na·tok chik·gni",
+    "garo": "chik·gni",
     "category": "education"
   },
   {
     "english": "three house",
-    "garo": "na·tok rang·gni",
+    "garo": "rang·gni",
     "category": "home"
   },
   {
     "english": "three tree",
-    "garo": "na·tok rang·gni",
+    "garo": "rang·gni",
     "category": "nature"
   },
   {
     "english": "three book",
-    "garo": "na·tok kitab·gni",
+    "garo": "kitab·gni",
     "category": "education"
   },
   {
     "english": "three car",
-    "garo": "na·tok mot·gni",
+    "garo": "mot·gni",
     "category": "travel"
   },
   {
     "english": "three apple",
-    "garo": "na·tok se·gni",
+    "garo": "se·gni",
     "category": "numbers"
   },
   {
     "english": "three banana",
-    "garo": "na·tok sobo·gni",
+    "garo": "sobo·gni",
     "category": "numbers"
   },
   {
     "english": "three rice",
-    "garo": "na·tok chak·gni",
+    "garo": "chak·gni",
     "category": "food"
   },
   {
     "english": "three water",
-    "garo": "na·tok chik·gni",
+    "garo": "chik·gni",
     "category": "food"
   },
   {
     "english": "three waters",
-    "garo": "na·tok chik·gni",
+    "garo": "chik·gni",
     "category": "numbers"
   },
   {
     "english": "three food",
-    "garo": "na·tok chak·gni",
+    "garo": "chak·gni",
     "category": "food"
   },
   {
     "english": "three road",
-    "garo": "na·tok lam·gni",
+    "garo": "lam·gni",
     "category": "travel"
   },
   {
     "english": "three river",
-    "garo": "na·tok chik·gni",
+    "garo": "chik·gni",
     "category": "nature"
   },
   {
     "english": "three rivers",
-    "garo": "na·tok chik·gni",
+    "garo": "chik·gni",
     "category": "numbers"
   },
   {
     "english": "three mountain",
-    "garo": "na·tok nok·gni",
+    "garo": "nok·gni",
     "category": "nature"
   },
   {
     "english": "three village",
-    "garo": "na·tok rim·gni",
+    "garo": "rim·gni",
     "category": "numbers"
   },
   {

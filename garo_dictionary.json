@@ -15725,11 +15725,11 @@
   },
   {
     "english": "two persons",
-    "garo": "do·o sak·gni"
+    "garo": "sak·gni"
   },
   {
     "english": "two dogs",
-    "garo": "do·o mang·gni"
+    "garo": "achak mang·gni"
   },
   {
     "english": "two birds",
@@ -15741,35 +15741,35 @@
   },
   {
     "english": "two teachers",
-    "garo": "do·o sak·gni"
+    "garo": "sak·gni"
   },
   {
     "english": "two students",
-    "garo": "do·o sak·gni"
+    "garo": "sak·gni"
   },
   {
     "english": "two houses",
-    "garo": "do·o rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "two trees",
-    "garo": "do·o rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "two books",
-    "garo": "do·o rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "two cars",
-    "garo": "do·o rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "three persons",
-    "garo": "na·tok sak·gni"
+    "garo": "sak·gni"
   },
   {
     "english": "three dogs",
-    "garo": "na·tok mang·gni"
+    "garo": "achak mang·gni"
   },
   {
     "english": "three birds",
@@ -15781,27 +15781,27 @@
   },
   {
     "english": "three teachers",
-    "garo": "na·tok sak·gni"
+    "garo": "sak·gni"
   },
   {
     "english": "three students",
-    "garo": "na·tok sak·gni"
+    "garo": "sak·gni"
   },
   {
     "english": "three houses",
-    "garo": "na·tok rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "three trees",
-    "garo": "na·tok rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "three books",
-    "garo": "na·tok rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "three cars",
-    "garo": "na·tok rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "four persons",
@@ -16309,19 +16309,19 @@
   },
   {
     "english": "two person",
-    "garo": "do·o mande·gni"
+    "garo": "mande·gni"
   },
   {
     "english": "two persons",
-    "garo": "do·o mande·gni"
+    "garo": "mande·gni"
   },
   {
     "english": "two dog",
-    "garo": "do·o mang·gni"
+    "garo": "achak mang·gni"
   },
   {
     "english": "two cat",
-    "garo": "do·o mang·gni"
+    "garo": "menggo mang·gni"
   },
   {
     "english": "two bird",
@@ -16333,95 +16333,95 @@
   },
   {
     "english": "two teacher",
-    "garo": "do·o skigipa·gni"
+    "garo": "skigipa·gni"
   },
   {
     "english": "two teachers",
-    "garo": "do·o skigipa·gni"
+    "garo": "skigipa·gni"
   },
   {
     "english": "two student",
-    "garo": "do·o chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "two students",
-    "garo": "do·o chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "two house",
-    "garo": "do·o rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "two tree",
-    "garo": "do·o rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "two book",
-    "garo": "do·o kitab·gni"
+    "garo": "kitab·gni"
   },
   {
     "english": "two car",
-    "garo": "do·o mot·gni"
+    "garo": "mot·gni"
   },
   {
     "english": "two apple",
-    "garo": "do·o se·gni"
+    "garo": "se·gni"
   },
   {
     "english": "two banana",
-    "garo": "do·o sobo·gni"
+    "garo": "sobo·gni"
   },
   {
     "english": "two rice",
-    "garo": "do·o chak·gni"
+    "garo": "chak·gni"
   },
   {
     "english": "two water",
-    "garo": "do·o chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "two waters",
-    "garo": "do·o chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "two food",
-    "garo": "do·o chak·gni"
+    "garo": "chak·gni"
   },
   {
     "english": "two road",
-    "garo": "do·o lam·gni"
+    "garo": "lam·gni"
   },
   {
     "english": "two river",
-    "garo": "do·o chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "two rivers",
-    "garo": "do·o chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "two mountain",
-    "garo": "do·o nok·gni"
+    "garo": "nok·gni"
   },
   {
     "english": "two village",
-    "garo": "do·o rim·gni"
+    "garo": "rim·gni"
   },
   {
     "english": "three person",
-    "garo": "na·tok mande·gni"
+    "garo": "mande·gni"
   },
   {
     "english": "three persons",
-    "garo": "na·tok mande·gni"
+    "garo": "mande·gni"
   },
   {
     "english": "three dog",
-    "garo": "na·tok mang·gni"
+    "garo": "achak mang·gni"
   },
   {
     "english": "three cat",
-    "garo": "na·tok mang·gni"
+    "garo": "menggo mang·gni"
   },
   {
     "english": "three bird",
@@ -16433,79 +16433,79 @@
   },
   {
     "english": "three teacher",
-    "garo": "na·tok skigipa·gni"
+    "garo": "skigipa·gni"
   },
   {
     "english": "three teachers",
-    "garo": "na·tok skigipa·gni"
+    "garo": "skigipa·gni"
   },
   {
     "english": "three student",
-    "garo": "na·tok chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "three students",
-    "garo": "na·tok chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "three house",
-    "garo": "na·tok rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "three tree",
-    "garo": "na·tok rang·gni"
+    "garo": "rang·gni"
   },
   {
     "english": "three book",
-    "garo": "na·tok kitab·gni"
+    "garo": "kitab·gni"
   },
   {
     "english": "three car",
-    "garo": "na·tok mot·gni"
+    "garo": "mot·gni"
   },
   {
     "english": "three apple",
-    "garo": "na·tok se·gni"
+    "garo": "se·gni"
   },
   {
     "english": "three banana",
-    "garo": "na·tok sobo·gni"
+    "garo": "sobo·gni"
   },
   {
     "english": "three rice",
-    "garo": "na·tok chak·gni"
+    "garo": "chak·gni"
   },
   {
     "english": "three water",
-    "garo": "na·tok chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "three waters",
-    "garo": "na·tok chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "three food",
-    "garo": "na·tok chak·gni"
+    "garo": "chak·gni"
   },
   {
     "english": "three road",
-    "garo": "na·tok lam·gni"
+    "garo": "lam·gni"
   },
   {
     "english": "three river",
-    "garo": "na·tok chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "three rivers",
-    "garo": "na·tok chik·gni"
+    "garo": "chik·gni"
   },
   {
     "english": "three mountain",
-    "garo": "na·tok nok·gni"
+    "garo": "nok·gni"
   },
   {
     "english": "three village",
-    "garo": "na·tok rim·gni"
+    "garo": "rim·gni"
   },
   {
     "english": "four person",
