@@ -211,6 +211,7 @@
   "what is your name?": "phrases",
   "my name is...": "general",
   "where are you going?": "general",
+  "where are you?": "general",
   "good morning": "greetings",
   "good night": "time",
   "yes": "general",

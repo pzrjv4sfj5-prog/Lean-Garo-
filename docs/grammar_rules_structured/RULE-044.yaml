@@ -19,16 +19,17 @@ dependencies:
 claims:
   - scope: "the suffix contrast itself (-chi = movement-to, -o = no-movement locative), as directly stated by Thangseng"
     status: verified
-    confidence: medium
+    confidence: high
     status_note: >-
-      Direct native statement of the general rule, not just one more
-      example sentence - stronger than a single-sentence confirmation
-      in kind, but still relayed via a WhatsApp chat log (Tridip to
-      Claude, not a live disambiguation session), and the surrounding
-      exchange (NV-047) has an unresolved ambiguity on adjacent forms
-      (Na·ara bano?). Medium rather than High until a live/unambiguous
-      confirmation session or a second independent example is
-      available.
+      Upgraded from Medium, 2026-07-31: Project Owner closure
+      confirmed all three related forms consistently (Na·a bachi
+      re·angenga? = "where are you going?", movement; Na·ara bano? =
+      "where are you?", no-movement; Bao = bare "where?"). The
+      adjacent NV-047 ambiguity (Na·ara bano? mapping) that had kept
+      this at Medium is now resolved, and resolved in the direction
+      this rule predicted (bano paired with the stationary question,
+      not the movement one) - the closure is corroborating evidence
+      for the rule, not just a removal of doubt.
   - scope: "productivity beyond where-question forms (bano/bachi/bao) - does this -chi/-o contrast hold for locatives generally, e.g. beyond interrogatives"
     status: needs_native_validation
     status_note: >-
@@ -40,14 +41,16 @@ claims:
       rule doesn't resolve it, it adds one more data point in the
       same open direction.
 examples:
-  - 'Na·a bachi re·angenga? = "where are you going?" (bachi = movement-to locative, matches the movement verb re·angenga)'
-  - 'Na·ara bano? / Bano na·a = forms using bano (-o, no-movement locative) - exact English mapping still open, see NV-047'
+  - 'Na·a bachi re·angenga? = "where are you going?" (bachi = movement-to locative, matches the movement verb re·angenga) — CLOSED'
+  - 'Na·ara bano? = "where are you?" (bano = -o no-movement locative, stationary question) — CLOSED'
+  - 'Bao = "where?" (bare interrogative, no locative suffix) — CLOSED'
 counterexamples:
   note: "none recorded"
   items: []
 launch_priority:
   - scope: "the confirmed suffix contrast"
-    tier: P1
+    tier: P0
+    note: "closed 2026-07-31, dictionary entries corrected same pass"
   - scope: "general productivity beyond where-question forms"
     tier: P2
     note: "not yet stress-tested, no urgency without a concrete failing case"
@@ -59,4 +62,4 @@ native_notes: >-
   not a correction of system output, a direct grammar explanation.
 last_updated: "2026-07-31"
 updated_by: "Claude A"
-source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED)"

@@ -1001,8 +1001,15 @@
   },
   {
     "english": "where are you going?",
-    "garo": "Na·a bano re·angenga?",
-    "category": "general"
+    "garo": "Na·a bachi re·angenga?",
+    "category": "general",
+    "notes": "CORRECTED — NV-047, Project Owner closure 2026-07-31: was 'Na·a bano re·angenga?', grammatically inconsistent with RULE-044 (bano carries the -o no-movement locative suffix, but re·angenga is a movement verb). Confirmed closed with bachi (movement-to locative), matching the verb. VERIFIED/HIGH."
+  },
+  {
+    "english": "where are you?",
+    "garo": "Na·ara bano?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-047, Project Owner closure 2026-07-31. bano carries the -o no-movement locative suffix (RULE-044), consistent with this being the stationary/no-movement question."
   },
   {
     "english": "good morning",
@@ -13816,8 +13823,9 @@
   },
   {
     "english": "the where are you going?",
-    "garo": "Na·a bano re·angenga?",
-    "category": "general"
+    "garo": "Na·a bachi re·angenga?",
+    "category": "general",
+    "notes": "CORRECTED — NV-047, same fix as 'where are you going?' above (see that entry's note). Malformed English key ('the' prefix) predates this fix, not addressed here — out of scope for this pass."
   },
   {
     "english": "the good morning",

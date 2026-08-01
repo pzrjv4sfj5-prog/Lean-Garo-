@@ -2494,8 +2494,45 @@ examples, not corpus-internal reasoning):**
 - Promote the badita-generalization finding into code/tests once the
   above are far enough along to avoid fragmenting the work.
 
-## NV-047 — PARTIAL: `Bao` = "where?"; `-chi`/`-o` movement-locative
-contrast confirmed; `Na·ara bano?` mapping left OPEN
+## NV-047 — CLOSED: `Na·a bachi re·angenga?` = "where are you going?";
+`Na·ara bano?` = "where are you?"; `Bao` = "where?"; `-chi`/`-o`
+movement-locative contrast confirmed
+
+**Status:** CLOSED — Project Owner closure, 2026-07-31, resolving the
+ambiguity below in the direction RULE-044 predicted.
+
+**Final determinations:**
+- **"where are you going?"** = `Na·a bachi re·angenga?` — `bachi`
+  (movement-to locative) pairs correctly with the movement verb
+  `re·angenga`. **VERIFIED/HIGH.** This corrects the pre-existing
+  `master_dictionary.json` entry, which had used `bano` instead
+  (grammatically inconsistent with RULE-044 — `bano` is the
+  no-movement locative, wrong pairing for a movement verb). Both
+  occurrences of this entry (`"where are you going?"` and the
+  malformed-key duplicate `"the where are you going?"`) corrected
+  same pass.
+- **"where are you?"** = `Na·ara bano?` — `bano` (no-movement
+  locative), consistent with this being the stationary question.
+  **VERIFIED/HIGH.** New entry, didn't previously exist in
+  `master_dictionary.json`.
+- **`Bao`** = "where?" (bare interrogative) — **VERIFIED/HIGH**,
+  already added prior pass, unchanged.
+- **RULE-044** (`-chi` = movement-to locative, `-o` = no-movement
+  locative) — confidence upgraded Medium → High. The closure above
+  isn't just a removal of the earlier ambiguity, it's corroborating
+  evidence for the rule: all three forms landed exactly where
+  RULE-044 predicted (movement verb + movement suffix; stationary
+  question + no-movement suffix; bare form + no suffix).
+
+**Superseded from this entry's earlier partial-resolution pass:** the
+open follow-up question drafted below is no longer needed — answered
+directly by this closure. Left in place only as a record of what was
+asked and how it was resolved, not as an active item.
+
+---
+
+**[Earlier partial-resolution text, retained for record — see
+CLOSED determination above for the actual outcome]**
 
 **Status:** Partially resolved. Source: WhatsApp, Tridip ↔ Thangseng,
 2026-07-31, 6:41–6:44 PM IST — relayed to Claude A in two passes: a
@@ -2539,8 +2576,8 @@ own uncertainty, not resolving it by picking a reading.**
   than another single example would be, because it's the native
   speaker stating the pattern itself. See RULE-044 below.
 
-**Still OPEN, not resolved this pass — needs one targeted follow-up
-question, not corpus-internal reasoning:**
+**RESOLVED by the closure above — retained for record only, no longer
+open:**
 - Does `Na·ara bano?` mean "where are you?" (stative, no movement) on
   its own, or is it a shortened form of "where are you going?" that
   happens to drop the movement particle `re·angenga`? The two passes
