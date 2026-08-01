@@ -153,6 +153,22 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-01, Claude A — NV-048 CLOSED, rong classifier added,
+`chu`="alcohol" new word.** 5th classifier root confirmed (`rong`,
+roundish objects — fruit, alcohol; no raka, per Thangseng's own typed
+forms). `"four fruits"` corrected from `mewa ge·bri` (an uncorrected
+default-fallback guess, never native-confirmed) to `mewa rongbri`.
+New dictionary entry `alcohol`=`chu`; pre-existing `beer`=`chu`
+(UNVERIFIED) cross-referenced rather than merged/deleted. Full
+re-confirmation of the original RULE-038 7-example counting set — no
+regressions, `mande sak-sa` explicitly re-confirmed by Thangseng.
+`garo_classifier.js`, `RULE-038.yaml`, `RULE-G-classifier.yaml`,
+`GARO_GRAMMAR_REFERENCE.md`, `GRAMMAR_CONFIDENCE_MATRIX.md` all
+updated; new test `tests/unit/rong_classifier.test.js`. 153/153
+passing. Commit `03e981d`. Not a Claude B item — flagged for
+visibility only. Full detail in `.ai/WORKSTATE.yaml`
+`claude_a.current_task`.
+
 **MILESTONE, 2026-07-26, Claude A — grammar rule schema migration
 FULLY COMPLETE, Claude B unblocked for Phase 5.** All 40 rules in
 `GRAMMAR_RULE_CATALOGUE.md` migrated to
