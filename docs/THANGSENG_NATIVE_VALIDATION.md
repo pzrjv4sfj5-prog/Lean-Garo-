@@ -2663,3 +2663,76 @@ regenerated via `npm run build`. New test file
 `tests/unit/rong_classifier.test.js` added (rong resolution, no-raka
 behavior, ge/mang/sak/king/gong regression coverage). Full suite:
 153/153 passing.
+
+## NV-049 — CLOSED: mipring/mipringde resolved; phone/smartphone/mobile confirmed; apple + mango (te·gatchu) confirmed
+
+**Status:** CLOSED. Direct native confirmation via Project Owner relay,
+2026-08-01, closing all remaining items from the NV-045/046 lineage and
+the "apple"/`te·gatchu` gloss gap flagged in NV-048.
+
+**mipring vs mipringde (NV-045, previously open — only resolvable via a
+disambiguating example, now received):**
+> "Mipringde minaha. = Lunch is ready. mipring = lunch"
+
+`mipring` = "lunch" (bare noun) was already VERIFIED/HIGH in the
+dictionary (Thangseng, 2026-07-23). This relay adds a second,
+independent sentence using `mipringde` (`mipring` + `-de`) before a
+*different* predicate than the first data point (`minaha` = "is
+ready", vs. the existing `cha·ahama` = "have you eaten" sentences).
+Two confounded variables from NV-045 (subject-presence, `-de`
+attachment) are now separated: `-de` attaches to `mipring` regardless
+of which predicate follows, so it is not tied to one specific verb —
+consistent with `-de` functioning as a general topic/subject marker,
+not a construction-specific fossilized form. Added `"lunch is ready":
+"Mipringde minaha"` to `corrections.json` (VERIFIED/HIGH, direct
+quote). Not added: a standalone `mina`/`minaha` "ready/finished" root
+headword — only one form of this verb is on record, insufficient to
+paradigm-build from a single sentence. Flagged as a small, genuinely
+open item if the fuller paradigm is ever wanted (not urgent, not
+blocking anything).
+
+**Phone/smartphone/mobile (was PENDING/MEDIUM, Tridip's own note not a
+direct quote):**
+> "Phone/smartphone/mobile=phone"
+
+Direct confirmation: single loanword `Phone` covers all three, no
+distinct forms. All three `master_dictionary.json` entries promoted
+PENDING/MEDIUM → VERIFIED/HIGH.
+
+**Apple (was ambiguous — unclear if "apple" in Thangseng's own
+NV-048 example was the real Garo word or shorthand):**
+> "Apple = apple"
+
+Confirmed literal: the loanword `Apple` is the real, current word
+(the rarely-used native `te·spu` variant, already on record, stands as
+an alternate, not the default). No dictionary change needed — the
+existing `"apple": "Apple"` entry was already correct; notes updated
+to record direct confirmation.
+
+**Mango = te·gatchu (closes the NV-048 gloss gap):**
+> "Mango= te·gatchu"
+
+`te·gatchu` — the fruit used in Thangseng's own `rong`-classifier
+example in NV-048 (`te·gatchu rongbonga` = "five [mangoes]") — is now
+identified as "mango". The dictionary already independently held
+`"mango": "Te·gachu"` / `"Mango": "te·ga·chu"` (VERIFIED/HIGH,
+pre-existing), so this closes the gap by cross-referencing rather than
+adding a new entry: the NV-048 example sentence and the pre-existing
+dictionary word are confirmed to be the same word, closing the loop
+Thangseng's own example had left open.
+
+**Reconfirming evidence (no change needed):** the pre-existing
+`"how many apples do you have": "Nang·o badita rong apple donga?"`
+(NV-043, 2026-07-30) already demonstrates `rong` + `apple`, consistent
+with `apple` → `rong` in `CLASSIFIER_MAP` (NV-048). Sent back
+unprompted by the Project Owner as supporting evidence for this batch;
+no dictionary action required, noted here for the record.
+
+**Action taken:** `master_dictionary.json` — 3 phone/smartphone/mobile
+entries promoted to VERIFIED/HIGH; `Mango`/`apple` entries' notes
+updated with direct-confirmation cross-references. `corrections.json`
+— new entry `"lunch is ready": "Mipringde minaha"`.
+`garo_classifier.js` — `mango` added to `CLASSIFIER_MAP` → `rong`
+(consistent with `apple`, already `rong`). No `compiled_dict.json`
+regeneration needed beyond the standard `npm run build` pass (run
+before commit). Full suite re-run before commit.

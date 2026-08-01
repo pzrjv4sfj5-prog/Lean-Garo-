@@ -5154,7 +5154,8 @@
   {
     "english": "apple",
     "garo": "Apple",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-01, direct Thangseng confirmation via Project Owner relay: \"Apple = apple\" (loanword, not shorthand). See NV-049."
   },
   {
     "english": "colour",
@@ -18267,7 +18268,7 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "variant/VERIFIED/HIGH Cross-ref 2026-08-01: this is the te·gatchu from Thangseng's rong-classifier example (NV-048/RULE-038) — now identified as \"mango\", not a gloss-unknown fruit. See NV-049."
   },
   {
     "english": "Market",
@@ -59281,7 +59282,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "PENDING/MEDIUM — Tridip note, 2026-07-29 (Project Owner assertion, not a direct Thangseng quote): no distinct Garo word for 'smartphone' - covered by the same loanword as 'phone'. Orthography 'Phone' assumed by loanword convention (cf. Apple, Cup, Room), not independently confirmed. Add to next Thangseng relay batch to confirm spelling/raka and promote to VERIFIED."
+    "notes": "VERIFIED/HIGH — direct Thangseng confirmation via Project Owner relay, 2026-08-01: \"Phone/smartphone/mobile=phone\" — single loanword covers all three, no distinct forms. Promoted from PENDING/MEDIUM (was Tridip's own note, not a direct quote). See NV-049."
   },
   {
     "english": "smartphone",
@@ -59289,7 +59290,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "PENDING/MEDIUM — Tridip note, 2026-07-29 (Project Owner assertion, not a direct Thangseng quote): no distinct Garo word for 'smartphone' - covered by the same loanword as 'phone'. Orthography 'Phone' assumed by loanword convention (cf. Apple, Cup, Room), not independently confirmed. Add to next Thangseng relay batch to confirm spelling/raka and promote to VERIFIED."
+    "notes": "VERIFIED/HIGH — direct Thangseng confirmation via Project Owner relay, 2026-08-01: \"Phone/smartphone/mobile=phone\" — single loanword covers all three, no distinct forms. Promoted from PENDING/MEDIUM (was Tridip's own note, not a direct quote). See NV-049."
   },
   {
     "english": "mobile",
@@ -59297,7 +59298,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "PENDING/MEDIUM — Tridip note, 2026-07-29 (Project Owner assertion, not a direct Thangseng quote): no distinct Garo word for 'smartphone' - covered by the same loanword as 'phone'. Orthography 'Phone' assumed by loanword convention (cf. Apple, Cup, Room), not independently confirmed. Add to next Thangseng relay batch to confirm spelling/raka and promote to VERIFIED."
+    "notes": "VERIFIED/HIGH — direct Thangseng confirmation via Project Owner relay, 2026-08-01: \"Phone/smartphone/mobile=phone\" — single loanword covers all three, no distinct forms. Promoted from PENDING/MEDIUM (was Tridip's own note, not a direct quote). See NV-049."
   },
   {
     "english": "alcohol",

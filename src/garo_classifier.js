@@ -78,7 +78,7 @@ export const CLASSIFIER_MAP = {
   'tree':'pang','log':'dot','wooden post':'dot',
   'pen':'ge','kolom':'ge','pencil':'ge',
   'fruit':'rong','fruits':'rong','mewa':'rong','bite':'rong','bi·te':'rong',
-  'apple':'rong',
+  'apple':'rong','mango':'rong',
   'alcohol':'rong','chu':'rong','beer':'rong',
 };
 
