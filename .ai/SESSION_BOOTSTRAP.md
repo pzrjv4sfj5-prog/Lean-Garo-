@@ -181,7 +181,24 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**NEW, 2026-08-02, Claude A — NV-051 CLOSED: -chi/-o locative contrast
+**NEW, 2026-08-02, Claude A — NV-052 CLOSED: market spelling and
+bajaro/bajalo closed, -chi present-continuous usage clarified.**
+Project Owner direct decision (not a Thangseng relay this time):
+"it's Bajalo close it, market is Bajal and Bajalchi, Skulchi, Nokchi,
+Buringchi are present continuous tense, like i am going to the
+market." Closed the NV-051 bajaro/bajalo discrepancy in favor of
+bajalo. Confirmed 'market' = 'Bajal', not 'Bajar' - 5 legacy
+'Bajar'-spelled import entries annotated superseded, the correctly-
+spelled 'market'->'Bajal' entry promoted to VERIFIED/HIGH (coexists
+with variant 'ha·ti', not a conflict). Clarified that -chi forms
+canonically appear inside present-continuous "going to X" sentences
+(cf. pre-existing VERIFIED "I am going to the market."->"Anga
+bajalchi re·angenga.") - usage notes added, RULE-044's core claim
+unchanged. No new keys added, no engine code touched. Tests 155/155,
+repository-intelligence.js 0 new violations. Claude A has no active
+task and no open linguistic items outstanding.
+
+**PRIOR, 2026-08-02, Claude A — NV-051 CLOSED: -chi/-o locative contrast
 confirmed general.** Closes the productivity question RULE-044 had
 explicitly left open. Thangseng: "chi cannot mean 'at'. chi carries a
 sense of 'motion to'. At is locative 'o'." Confirmed with 5 noun pairs

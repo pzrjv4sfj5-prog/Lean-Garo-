@@ -2830,3 +2830,55 @@ pairs. `docs/grammar_rules_structured/RULE-044.yaml` — productivity
 claim upgraded from `needs_native_validation` to `verified`, launch
 priority raised P2→P0, new examples and native_notes appended. No
 engine code touched. Full suite re-run before commit.
+
+---
+
+**NV-052, 2026-08-02 — market spelling closed (Bajal, not Bajar);
+`bajaro`/`bajalo` discrepancy closed; -chi forms clarified as
+present-continuous-sentence components (Project Owner direct
+decision):**
+> "it's Bajalo close it, market is Bajal and Bajalchi, Skulchi,
+> Nokchi, Buringchi are present continuous tense, like i am going to
+> the market."
+
+Two closures:
+
+1. **`bajaro` vs `bajalo`** — the open discrepancy flagged in NV-051
+   (`"at the market": "bajaro"` pre-existing vs `"at the market":
+   "bajalo"` newly confirmed) is closed in favor of `bajalo`. `bajaro`
+   annotated INCORRECT/superseded.
+
+2. **Market = `Bajal`, not `Bajar`** — legacy dictionary-import entries
+   (`Market`→`Bajar`, `mart`→`Bajar`, `hat.`→`Bajar`, `Market
+   price`/`prevailing price.`→`Bajar dol`) all carry a spelling error;
+   corrected form is `Bajal`/`Bajal dol`. Each annotated SPELLING
+   CORRECTED/superseded, nothing deleted. The pre-existing correctly-
+   spelled `"market": "Bajal"` entry (previously SUPERSEDED only
+   because a variant `"market": "ha·ti"` was VERIFIED) is now
+   independently confirmed and promoted to VERIFIED/HIGH — coexists
+   with `ha·ti` as a legitimate variant (loanword vs. likely-native
+   term), not a conflict.
+
+3. **-chi forms as present-continuous-sentence components** —
+   clarifies that `Bajalchi`/`Skulchi`/`Nokchi`/`Buringchi` (and the
+   NV-051 `to the market`/`to school`/`to home`/`to the forest`
+   entries) canonically occur inside a present-continuous "going to X"
+   sentence, e.g. the pre-existing VERIFIED `"I am going to the
+   market." → "Anga bajalchi re·angenga."`. This is a pragmatic/usage
+   clarification, not a revision of RULE-044's core morphological
+   claim: `-chi` remains the movement-to locative suffix on the noun;
+   the continuous sense comes from the paired verb (`re·angenga`), not
+   from `-chi` itself. Usage notes appended to all 8 affected
+   dictionary entries (4 legacy superseded + 4 NV-051 new) and to
+   RULE-044's `native_notes`.
+
+**Action taken:** `master_dictionary.json` — 1 entry (`bajaro`)
+annotated INCORRECT/superseded; 1 entry (`bajalo`) confirmed
+VERIFIED/HIGH closing the discrepancy; 5 legacy `Bajar` entries
+annotated SPELLING CORRECTED/superseded; 1 entry (`market`→`Bajal`)
+promoted to VERIFIED/HIGH; usage-note clarification appended to 8
+`-chi` entries. `docs/grammar_rules_structured/RULE-044.yaml` —
+native_notes appended documenting both closures. No engine code
+touched, no new dictionary keys added (unlike NV-050/051, this is a
+closure/annotation pass on existing entries). Full suite re-run before
+commit.

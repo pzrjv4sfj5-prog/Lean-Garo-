@@ -1949,7 +1949,7 @@
     "english": "market",
     "garo": "Bajal",
     "category": "travel",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'market' has VERIFIED/HIGH form(s) ['ha·ti']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH — NV-052 (Project Owner direct decision, 2026-08-02): 'market' = 'Bajal' (loanword, correct spelling, confirmed). Coexists as a legitimate variant alongside the pre-existing 'ha·ti' (variant/VERIFIED/HIGH, likely the native Garo term) - not a conflict, two valid forms."
   },
   {
     "english": "road",
@@ -5850,19 +5850,19 @@
     "english": "at the market / to the market",
     "garo": "Bajalchi",
     "category": "travel",
-    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the market', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the market', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries. Usage note — NV-052 (Project Owner, 2026-08-02): this -chi locative form is canonically used within a present-continuous 'going to X' sentence, not as a standalone gloss — cf. the pre-existing VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.' The -chi form itself remains the movement-to locative noun phrase (RULE-044); it is the paired verb (re·angenga) that carries the continuous tense."
   },
   {
     "english": "at school",
     "garo": "Skulchi",
     "category": "education",
-    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to school', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to school', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries. Usage note — NV-052 (Project Owner, 2026-08-02): this -chi locative form is canonically used within a present-continuous 'going to X' sentence, not as a standalone gloss — cf. the pre-existing VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.' The -chi form itself remains the movement-to locative noun phrase (RULE-044); it is the paired verb (re·angenga) that carries the continuous tense."
   },
   {
     "english": "at home",
     "garo": "Nokchi",
     "category": "home",
-    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to home', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to home', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries. Usage note — NV-052 (Project Owner, 2026-08-02): this -chi locative form is canonically used within a present-continuous 'going to X' sentence, not as a standalone gloss — cf. the pre-existing VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.' The -chi form itself remains the movement-to locative noun phrase (RULE-044); it is the paired verb (re·angenga) that carries the continuous tense."
   },
   {
     "english": "at the river",
@@ -5874,7 +5874,7 @@
     "english": "in the forest",
     "garo": "Buringchi",
     "category": "nature",
-    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the forest', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the forest', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries. Usage note — NV-052 (Project Owner, 2026-08-02): this -chi locative form is canonically used within a present-continuous 'going to X' sentence, not as a standalone gloss — cf. the pre-existing VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.' The -chi form itself remains the movement-to locative noun phrase (RULE-044); it is the paired verb (re·angenga) that carries the continuous tense."
   },
   {
     "english": "i don't want",
@@ -6143,19 +6143,19 @@
     "english": "at / to the market",
     "garo": "bajal·chi",
     "category": "travel",
-    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the market', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the market', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries. Usage note — NV-052 (Project Owner, 2026-08-02): this -chi locative form is canonically used within a present-continuous 'going to X' sentence, not as a standalone gloss — cf. the pre-existing VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.' The -chi form itself remains the movement-to locative noun phrase (RULE-044); it is the paired verb (re·angenga) that carries the continuous tense."
   },
   {
     "english": "at / to home",
     "garo": "nok·chi",
     "category": "home",
-    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to home', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to home', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries. Usage note — NV-052 (Project Owner, 2026-08-02): this -chi locative form is canonically used within a present-continuous 'going to X' sentence, not as a standalone gloss — cf. the pre-existing VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.' The -chi form itself remains the movement-to locative noun phrase (RULE-044); it is the paired verb (re·angenga) that carries the continuous tense."
   },
   {
     "english": "at / to school",
     "garo": "skul·chi",
     "category": "education",
-    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to school', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to school', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries. Usage note — NV-052 (Project Owner, 2026-08-02): this -chi locative form is canonically used within a present-continuous 'going to X' sentence, not as a standalone gloss — cf. the pre-existing VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.' The -chi form itself remains the movement-to locative noun phrase (RULE-044); it is the paired verb (re·angenga) that carries the continuous tense."
   },
   {
     "english": "to me / for me",
@@ -10932,7 +10932,7 @@
     "english": "at the market",
     "garo": "bajaro",
     "category": "travel",
-    "notes": "FLAGGED - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): new direct evidence gives 'at the market' = 'bajalo', one letter off from this entry's 'bajaro' (r/l). Not declared wrong outright - could be a typo of the same word or a distinct form; insufficient evidence to say which. Retained per citation discipline; see the new 'at the market'->'bajalo' entry as the directly-confirmed form."
+    "notes": "INCORRECT, superseded — NV-052 (Project Owner direct decision, 2026-08-02, closing the NV-051 open discrepancy): confirmed 'at the market' = 'bajalo', not 'bajaro'. Retained per citation discipline, not deleted."
   },
   {
     "english": "at the church",
@@ -49337,31 +49337,35 @@
     "garo": "Bajar",
     "category": null,
     "pos": "n.",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'market' has VERIFIED/HIGH form(s) ['ha·ti']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "SPELLING CORRECTED, superseded — NV-052 (Project Owner direct decision, 2026-08-02): 'market' is spelled 'Bajal', not 'Bajar' - this legacy import entry's value should read 'Bajal'. Retained as-is per citation discipline, not deleted; see corrected standalone entry."
   },
   {
     "english": "mart",
     "garo": "Bajar",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "SPELLING CORRECTED, superseded — NV-052 (Project Owner direct decision, 2026-08-02): 'market' is spelled 'Bajal', not 'Bajar' - this legacy import entry's value should read 'Bajal'. Retained as-is per citation discipline, not deleted; see corrected standalone entry."
   },
   {
     "english": "hat.",
     "garo": "Bajar",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "SPELLING CORRECTED, superseded — NV-052 (Project Owner direct decision, 2026-08-02): 'market' is spelled 'Bajal', not 'Bajar' - this legacy import entry's value should read 'Bajal'. Retained as-is per citation discipline, not deleted; see corrected standalone entry."
   },
   {
     "english": "Market price",
     "garo": "Bajar dol",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "SPELLING CORRECTED, superseded — NV-052 (Project Owner direct decision, 2026-08-02): 'market' is spelled 'Bajal', not 'Bajar' - this legacy import entry's value should read 'Bajal dol'. Retained as-is per citation discipline, not deleted; see corrected standalone entry."
   },
   {
     "english": "prevailing price.",
     "garo": "Bajar dol",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "SPELLING CORRECTED, superseded — NV-052 (Project Owner direct decision, 2026-08-02): 'market' is spelled 'Bajal', not 'Bajar' - this legacy import entry's value should read 'Bajal dol'. Retained as-is per citation discipline, not deleted; see corrected standalone entry."
   },
   {
     "english": "To get entangled",
@@ -59817,19 +59821,19 @@
     "english": "to the market",
     "garo": "bajalchi",
     "category": "travel",
-    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative. Usage note — NV-052 (Project Owner, 2026-08-02): canonically appears within a present-continuous 'going to X' sentence, e.g. VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.'"
   },
   {
     "english": "at the market",
     "garo": "bajalo",
     "category": "travel",
-    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative, no movement."
+    "notes": "VERIFIED/HIGH — NV-052 (Project Owner direct decision, 2026-08-02): closes the NV-051 bajaro/bajalo discrepancy in favor of 'bajalo'. '-o' = stationary locative."
   },
   {
     "english": "to school",
     "garo": "skulchi",
     "category": "education",
-    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative. Usage note — NV-052 (Project Owner, 2026-08-02): canonically appears within a present-continuous 'going to X' sentence, e.g. VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.'"
   },
   {
     "english": "at school",
@@ -59847,7 +59851,7 @@
     "english": "to home",
     "garo": "nokchi",
     "category": "home",
-    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative. Usage note — NV-052 (Project Owner, 2026-08-02): canonically appears within a present-continuous 'going to X' sentence, e.g. VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.'"
   },
   {
     "english": "at the river",
@@ -59865,7 +59869,7 @@
     "english": "to the forest",
     "garo": "buringchi",
     "category": "nature",
-    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative. Usage note — NV-052 (Project Owner, 2026-08-02): canonically appears within a present-continuous 'going to X' sentence, e.g. VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.'"
   },
   {
     "english": "in the forest",
