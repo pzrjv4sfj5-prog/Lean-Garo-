@@ -211,7 +211,29 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**NEW, 2026-08-02, Claude A — NV-052 CLOSED: market spelling and
+**NEW, 2026-08-02, Claude B — bano/bachi bug report fixed; "ripe"
+Runtime Handoff resolved, uncovered a wider isVerified anchoring bug
+(78 keys corpus-wide).** Two independent fixes, both pushed (HEAD
+ea77de5): (1) "where is X going?" was regressing to the stationary
+locative "bano" via two stale artifacts (corrections.json phrase entry
++ phrase_maps.js's flat WH-word map) that predated NV-047's VERIFIED
+"bachi" fix — both synced/patched with a narrowly-scoped movement-verb-
+signal check, not a new disambiguation rule. (2) The mandatory Runtime
+Handoff check flagged "ripe" compiling to the wrong value; traced to
+prepare-data.js's isVerified check using an unanchored substring match
+that both wrongly disqualified genuinely-VERIFIED entries whose own
+promotion-history notes mention "unverified" (22 keys) AND wrongly
+validated SUPERSEDED/"not authoritative for compile" legacy entries
+whose notes mention what supersedes them (56 keys) — several of which
+explicitly said "see handoff to Claude B" in their notes. Anchored the
+regex to the notes field's actual start. Full detail in
+`.ai/WORKSTATE.yaml` `claude_b.current_task`. Not a Claude A item —
+no linguistic content invented; every resolved value already carried
+Claude A's own VERIFIED/HIGH or SUPERSEDED tag correctly, just wasn't
+being read correctly by the compiler. 163/163 tests, 0 lint errors,
+build clean.
+
+**PRIOR, 2026-08-02, Claude A — NV-052 CLOSED: market spelling and
 bajaro/bajalo closed, -chi present-continuous usage clarified.**
 Project Owner direct decision (not a Thangseng relay this time):
 "it's Bajalo close it, market is Bajal and Bajalchi, Skulchi, Nokchi,

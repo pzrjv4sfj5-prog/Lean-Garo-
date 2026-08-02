@@ -778,7 +778,56 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-08-01 (new session, checkpoint d4a0a72, resumed via migration
+    2026-08-02 (new session, checkpoint da3f82c, resumed via migration
+    doc): two fixes shipped, pushed, HEAD now ea77de5.
+    (1) Bug report: "where is X going?" constructions regressed to the
+    stationary locative "bano" instead of RULE-044/NV-047's VERIFIED
+    movement-to locative "bachi". Two independent stale artifacts, both
+    fixed: corrections.json's "where are you going" phrase entry
+    predated NV-047 and was never synced; phrase_maps.js's flat
+    single-word 'where':'Bano' entry (consulted by assembleSentenceSOV's
+    per-word fallback, the path "where is he/they going?" take since
+    neither has a corrections.json phrase entry) had no context
+    awareness of the bano/bachi distinction. Added a narrowly-scoped
+    movement-verb-signal override in assembleSentenceSOV (fires only
+    when the literal word "going" is present) rather than a general WH-
+    word disambiguation rule. Sibling stationary "where" questions
+    (live/market/stay/are-you) verified unaffected; "where did you go"
+    (past tense, same movement verb) deliberately left untouched -
+    out of scope, would require Claude A confirming RULE-044 extends to
+    past tense, not assumed. Commit 03bd2dc, 6 new regression tests.
+    (2) WORKSTATE Runtime Handoff flagged one gap: compiled_dict.json
+    ["ripe"] resolved to "nang·chek·chek·a" instead of the sole
+    VERIFIED/HIGH candidate "min·a" (NV-050), contradicting the
+    RC-036-follow-up rule's own stated logic. Traced to prepare-data.js
+    pickPrimary's isVerified check being an UNANCHORED substring match
+    (/verified\/high/i.test(notes) && !/unverified/i.test(notes)) across
+    an entry's entire notes field. Two distinct failure modes found,
+    both confirmed corpus-wide via full compiled_dict.json diff (78
+    keys total, zero unexplained): false negatives (22 keys, "ripe"
+    among them) where a genuinely VERIFIED entry's own promotion-history
+    prose ("...promoted from prior variant/UNVERIFIED/HIGH") tripped the
+    unanchored !/unverified/i guard; false positives (56 keys) where a
+    SUPERSEDED/"not authoritative for compile" legacy entry's notes
+    describing what supersedes it ("...has VERIFIED/HIGH form(s)...")
+    got itself wrongly marked verified, silently overriding Claude A's
+    explicit non-authoritative annotation - several of these entries
+    literally say "see handoff to Claude B", this resolves that handoff.
+    Fixed by anchoring to /^verified\/high\b/i, matching the isVariant
+    convention two lines below. This was also the exact fragility this
+    session's own prior-session self already flagged as a latent risk
+    (see the 2026-08-01 entry below, "post-hoc coverage audit" section)
+    - it stopped self-cancelling and produced a real defect.
+    Commit ea77de5, 2 new regression tests.
+    Both commits pushed via a session-scoped PAT supplied directly in
+    chat by the Project Owner; PAT used only to set the remote URL
+    immediately before push, stripped from `git remote -v` immediately
+    after, never logged or persisted. Verification: 163/163 tests, 0
+    lint errors, build clean, git status clean, zero divergence from
+    origin/main at close.
+    2026-08-01 (prior session, prior history preserved): checkpoint
+    d4a0a72, resumed via migration
+    doc): traced "answer"'s verb-conjugation path per the prior
     doc): traced "answer"'s verb-conjugation path per the prior
     session's explicit next-priority flag, before reattempting the
     VERIFIED-preference rule. Root cause confirmed: RC-036's master-
@@ -896,7 +945,16 @@ claude_b:
     Claude A instead of silently left as if fully validated. See docs/
     PENDING_REGRESSION_CASES.md Pending section.
   progress: >-
-    Codex audit: 5 items VERIFIED and fixed (VerbsGrammar.jsx x5,
+    2026-08-02: bano/bachi WH-word bug report fixed (corrections.json
+    sync + assembleSentenceSOV movement-verb-signal override, commit
+    03bd2dc). WORKSTATE "ripe" Runtime Handoff resolved: pickPrimary's
+    isVerified regex was unanchored, causing both false-negative
+    (VERIFIED entries disqualified by their own promotion-history text)
+    and false-positive (SUPERSEDED legacy entries wrongly selected)
+    failures across 78 keys corpus-wide; anchored to notes-field start
+    (commit ea77de5). 163/163 tests, 0 lint errors, build clean, pushed,
+    HEAD ea77de5, zero divergence from origin/main.
+    Prior (2026-08-01): Codex audit: 5 items VERIFIED and fixed (VerbsGrammar.jsx x5,
     dead phrase_maps.js entries, classifierHints jol/ge gap), several
     more VERIFIED-but-real items catalogued (dist/ tracked, lint
     continue-on-error, root/docs ARCHITECTURE.md duplication,
