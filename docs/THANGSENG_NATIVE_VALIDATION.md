@@ -2736,3 +2736,47 @@ updated with direct-confirmation cross-references. `corrections.json`
 (consistent with `apple`, already `rong`). No `compiled_dict.json`
 regeneration needed beyond the standard `npm run build` pass (run
 before commit). Full suite re-run before commit.
+
+---
+
+**NV-050, 2026-08-02 — mina/minaha root correction (closes the small
+open item flagged at the end of NV-045/049 above):**
+> "mina = ripe, cooked. 'ready/finished' are incorrect. Minaha = ripe.
+> e.g. Te'gatchu minaha. = The Mango/es (can be plural; but not always
+> plural) are ripe. Minengaha = ripe (kinda continuous). e.g. Tegatchu
+> minengha. = The mangoes have started ripening. Minkuja = not
+> ripe/have not ripened. e.g. Tegatchu minkuja. = The mangoes are not
+> ripe./ The mangoes have not started ripened. Minenga = ripening
+> (should be continuous, but can used in a simple present sense too).
+> e.g. Tegatchu minenga. = The mango is ripening. Or, The mango is
+> ripe. Or even, Ua te'gatchu minenga. = That mango is ripe."
+
+Corrects the root gloss that had been sitting as a flagged-but-not-
+paradigm-built open item: `mina`/`minaha` is not a "ready/finished"
+root, it is "ripe" (of fruit) / "cooked" (of food). This directly
+corroborates two pre-existing UNVERIFIED/HIGH corpus entries that had
+been sitting unconnected — `"cooked": "min·a"` and `"ripe": "min·a"`
+(variant) — both promoted to VERIFIED/HIGH by this relay. Four
+inflected forms added as new entries: `minaha` (stative), `minengaha`
+(has started ripening), `minkuja` (not ripe, negative), `minenga`
+(ripening / is ripe, continuous-usable-as-simple-present). Full
+paradigm and citation written up as RULE-045.
+
+The earlier NV-045 gloss `"lunch is ready": "Mipringde minaha"` in
+`corrections.json` is **not wrong as an idiomatic translation** — food
+being cooked/ripe maps naturally to "ready to eat" in both languages —
+but the standalone root gloss "ready/finished" that had been
+tentatively attached to `mina`/`minaha` (and explicitly *not* added to
+the dictionary at the time, per the NV-045 note above, for lack of a
+full paradigm) is superseded by this correction. `corrections.json` is
+a flat key→string map with no field for notes, so the idiomatic entry
+is left as-is; this log entry is the record of the correction.
+
+**Action taken:** `master_dictionary.json` — 2 pre-existing entries
+(`cooked`→`min·a`, `ripe`→`min·a`) promoted UNVERIFIED/HIGH →
+VERIFIED/HIGH; 4 new entries added (`minaha`, `minengaha`, `minkuja`,
+`minenga`). `docs/grammar_rules_structured/RULE-045.yaml` — new rule
+documenting the paradigm. `corrections.json` — unchanged (idiomatic
+translation still valid, see note above). Full suite re-run before
+commit.
+

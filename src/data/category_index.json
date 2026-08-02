@@ -3620,5 +3620,9 @@
   "call (imperative, on the phone)": "phrases",
   "do not call (imperative, on the phone)": "phrases",
   "will not call (on the phone)": "phrases",
-  "alcohol": "food"
+  "alcohol": "food",
+  "ripe (stative)": "food",
+  "has started ripening": "food",
+  "not ripe / has not ripened": "food",
+  "ripening / is ripe": "food"
 }

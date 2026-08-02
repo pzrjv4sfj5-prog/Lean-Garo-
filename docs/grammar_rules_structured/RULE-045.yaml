@@ -1,0 +1,68 @@
+id: RULE-045
+title: "mina root: \"ripe/cooked\" (not \"ready/finished\") - 4-form paradigm"
+description: >-
+  `mina` is a verb root meaning "ripe" (of fruit) / "cooked" (of food),
+  not "ready/finished" as the single prior data point (NV-045,
+  "Mipringde minaha" = "Lunch is ready") had suggested when there was
+  only one example on record. Direct correction from Thangseng
+  supplies four inflected forms:
+  - Minaha = ripe/cooked (stative/simple). "Te·gatchu minaha." = "The
+    mango(es) are ripe." (can be plural or singular; number is not
+    marked on the noun here)
+  - Minengaha = has started ripening (perfective-continuous). "Tegatchu
+    minengha." = "The mangoes have started ripening."
+  - Minkuja = not ripe / has not ripened (negative). "Tegatchu
+    minkuja." = "The mangoes are not ripe." / "The mangoes have not
+    started ripening."
+  - Minenga = ripening / is ripe (continuous, but usable in a simple-
+    present sense too). "Tegatchu minenga." = "The mango is ripening."
+    or "The mango is ripe." Also confirmed with a demonstrative
+    subject: "Ua te·gatchu minenga." = "That mango is ripe."
+
+  This directly corroborates two pre-existing UNVERIFIED/HIGH corpus
+  entries that had been sitting unconnected: dictionary "cooked" →
+  "min·a" and "ripe" → "min·a" (variant). Those are promoted to
+  VERIFIED/HIGH by this rule.
+
+  The earlier "Mipringde minaha" = "Lunch is ready" gloss (NV-045,
+  corrections.json) is not wrong as an idiomatic translation - food
+  being "cooked/ripe" maps naturally to "ready to eat" - but the
+  underlying root gloss of mina/minaha itself was previously
+  mis-recorded as "ready/finished." That has been corrected here to
+  "ripe/cooked"; the idiomatic corrections.json entry is left as-is
+  with a clarifying note, not deleted.
+dependencies:
+  - id: null
+    name: "corpus entries 'cooked'→min·a and 'ripe'→min·a (pre-existing, UNVERIFIED/HIGH)"
+    note: "this rule is the direct native confirmation that promotes both to VERIFIED/HIGH"
+claims:
+  - scope: null
+    status: verified
+    confidence: high
+examples:
+  - "Te·gatchu minaha. = The mango(es) are ripe."
+  - "Tegatchu minengha. = The mangoes have started ripening."
+  - "Tegatchu minkuja. = The mangoes are not ripe / have not started ripening."
+  - "Tegatchu minenga. = The mango is ripening. / The mango is ripe."
+  - "Ua te·gatchu minenga. = That mango is ripe."
+counterexamples:
+  note: "none identified"
+  items: []
+launch_priority:
+  - scope: null
+    tier: P2
+    note: "small closed 4-form paradigm on a single root; useful but not as broadly generative as tense-suffix rules like RULE-042"
+native_notes: >-
+  Direct Thangseng relay via Project Owner, 2026-08-02: "mina = ripe,
+  cooked. 'ready/finished' are incorrect. Minaha = ripe. e.g.
+  Te'gatchu minaha. = The Mango/es (can be plural; but not always
+  plural) are ripe. Minengaha = ripe (kinda continuous). e.g. Tegatchu
+  minengha. = The mangoes have started ripening. Minkuja = not
+  ripe/have not ripened. e.g. Tegatchu minkuja. = The mangoes are not
+  ripe./ The mangoes have not started ripened. Minenga = ripening
+  (should be continuous, but can used in a simple present sense too).
+  e.g. Tegatchu minenga. = The mango is ripening. Or, The mango is
+  ripe. Or even, Ua te'gatchu minenga. = That mango is ripe."
+last_updated: "2026-08-02"
+updated_by: "Claude A"
+source_ref: "NV-050"

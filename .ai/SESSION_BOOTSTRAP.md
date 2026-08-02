@@ -153,7 +153,22 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**NEW, 2026-08-01, Claude B — RC-CANDIDATE-036 follow-up shipped: "one
+**NEW, 2026-08-02, Claude A — NV-050 CLOSED: mina/minaha corrected,
+last open linguistic item resolved.** The single non-urgent open item
+flagged at the end of the NV-045/049 lineage is closed. Thangseng
+direct relay: `mina` = "ripe" (fruit) / "cooked" (food), not
+"ready/finished" as the one prior data point had suggested. Full
+4-form paradigm confirmed and added (`minaha`, `minengaha`, `minkuja`,
+`minenga`) - see `docs/grammar_rules_structured/RULE-045.yaml`. Two
+pre-existing UNVERIFIED/HIGH corpus entries (`cooked`->`min·a`,
+`ripe`->`min·a`) promoted to VERIFIED/HIGH. The earlier `corrections.
+json` entry `"lunch is ready": "Mipringde minaha"` is unchanged and
+still correct as an idiom; only the standalone root gloss was wrong,
+documented in `docs/THANGSENG_NATIVE_VALIDATION.md`. No engine code
+touched. Tests 155/155, repository-intelligence.js 0 new violations.
+Claude A has no active task and no open linguistic items outstanding.
+
+**PRIOR, 2026-08-01, Claude B — RC-CANDIDATE-036 follow-up shipped: "one
 person" and "answer" fixed, "to answer" deliberately excluded.** Traced
 why RC-036's master-preference fix didn't fully resolve master's own
 internal duplicate-key conflicts (still last-write-wins by array order

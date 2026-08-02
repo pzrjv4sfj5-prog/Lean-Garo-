@@ -25981,7 +25981,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH - NV-050 (Thangseng direct relay, 2026-08-02, see RULE-045): confirms min-a root = ripe/cooked. Promoted from prior UNVERIFIED/HIGH."
   },
   {
     "english": "cooking pot",
@@ -38317,7 +38317,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH - NV-050 (Thangseng direct relay, 2026-08-02, see RULE-045): min-a root = ripe/cooked, four inflected forms confirmed (minaha/minengaha/minkuja/minenga). Promoted from prior variant/UNVERIFIED/HIGH."
   },
   {
     "english": "ripe",
@@ -59778,5 +59778,29 @@
     "category": "food",
     "classifier": "rong",
     "notes": "VERIFIED/HIGH — direct Thangseng relay 2026-08-01, new word, see NV-048"
+  },
+  {
+    "english": "ripe (stative)",
+    "garo": "minaha",
+    "category": "food",
+    "notes": "VERIFIED/HIGH - NV-050 (Thangseng, 2026-08-02, RULE-045). \"Te·gatchu minaha.\" = \"The mango(es) are ripe.\" Number not marked on noun; can be singular or plural."
+  },
+  {
+    "english": "has started ripening",
+    "garo": "minengaha",
+    "category": "food",
+    "notes": "VERIFIED/HIGH - NV-050 (Thangseng, 2026-08-02, RULE-045). \"Tegatchu minengha.\" = \"The mangoes have started ripening.\" Perfective-continuous form of mina."
+  },
+  {
+    "english": "not ripe / has not ripened",
+    "garo": "minkuja",
+    "category": "food",
+    "notes": "VERIFIED/HIGH - NV-050 (Thangseng, 2026-08-02, RULE-045). \"Tegatchu minkuja.\" = \"The mangoes are not ripe.\" Negative form of mina."
+  },
+  {
+    "english": "ripening / is ripe",
+    "garo": "minenga",
+    "category": "food",
+    "notes": "VERIFIED/HIGH - NV-050 (Thangseng, 2026-08-02, RULE-045). \"Tegatchu minenga.\" = \"The mango is ripening\" or \"is ripe\" (continuous form usable in simple-present sense). Also confirmed with demonstrative subject: \"Ua te·gatchu minenga.\" = \"That mango is ripe.\""
   }
 ]
