@@ -172,6 +172,17 @@
       "flagged_for_review": 1
     },
     {
+      "page": 9,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0009.flat.json",
+      "source_entries": 50,
+      "flipped_rows": 50,
+      "flat_entries": 49,
+      "affix_excluded": 1,
+      "flagged_for_review": 0,
+      "note": "Mechanical exact-string check of flat 'garo' field against master_dictionary.json (case/whitespace-normalized, no semantic judgment): 7 of 49 entries share a headword string already present in master_dictionary.json. Notably 'Am·pok'='A stool; a seat; a low stool.' matches an existing VERIFIED/HIGH entry with the same sense ('small stool') — likely true duplicate, unlike most collisions seen on prior pages. 'An'='Body; person.' matches an existing VERIFIED/HIGH 'human body' entry, same sense. 'An·ba'='Temperature...' matches an existing VERIFIED/HIGH 'temperature of the body' entry, same sense. 'An·a'='To grow well of tuber or arum.' collides with an existing 'Spread' entry tagged variant/VERIFIED/HIGH — senses look unrelated, possible homonymy not duplication. 'An·cheng'='Sand.' and 'An·chi'='Blood.' each collide with existing SUPERSEDED legacy entries Claude A's 2026-08-01 audit already superseded in favor of other VERIFIED forms ('han·cheng', 'han·chi'/'ma·rang'). 'Andala'='Dark; gloomy...' collides with an existing unannotated 'darkness' entry, same general sense. None dropped or resolved here; flagging only, per Claude D scope."
+    },
+    {
       "page": 10,
       "status": "processed",
       "output_path": "data/claude_d/processed/page_0010.flat.json",
