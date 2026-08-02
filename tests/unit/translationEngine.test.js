@@ -946,6 +946,21 @@ test('BUG-REPORT-WHERE-GOING: sibling stationary location questions are unaffect
   assert.equal(result.garo, 'Na·ara bano?');
 });
 
+// Data-level regression guard (Claude C forensic audit, 2026-08-02):
+// the translate()-level tests above only prove the cascade currently
+// resolves correctly because corrections.json's fixed entry is checked
+// (and returns) before phrase_maps.js's exact-phrase entry is ever
+// reached. They do NOT prove phrase_maps.js's own data is correct, so a
+// future edit or removal of the corrections.json entry (e.g. as part of
+// the cleanup this bug report itself recommends, since compiled_dict.json
+// already has the right exact-phrase match) would silently re-expose
+// phrase_maps.js's stale value with no test catching it. Asserting
+// directly against PHRASE_MAPS closes that gap.
+test('BUG-REPORT-WHERE-GOING: phrase_maps.js\'s own "where are you going" entry is synced to "bachi", independent of corrections.json shadowing it', async () => {
+  const { PHRASE_MAPS } = await import('../../src/data/phrase_maps.js');
+  assert.equal(PHRASE_MAPS['where are you going'], 'Na·a bachi re·angenga?');
+});
+
 // --- isVerified anchoring fix (2026-08-02, Claude B, prepare-data.js
 // pickPrimary): the RC-036-follow-up VERIFIED-preference check used an
 // unanchored substring match (/verified\/high/i.test(notes) &&

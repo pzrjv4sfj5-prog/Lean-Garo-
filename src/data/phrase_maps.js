@@ -114,7 +114,7 @@ export const PHRASE_MAPS = {
   'how many': 'Baitarong',
   'which': 'Badia',
   'which way': 'Bagita',
-  'where are you going': 'Na·a bano re·angenga?',
+  'where are you going': 'Na·a bachi re·angenga?',
   'is that so': 'Inde·a?',
   'maybe': 'Ong·naba donga',
   'no problem': 'Maming ba ong·ja',
