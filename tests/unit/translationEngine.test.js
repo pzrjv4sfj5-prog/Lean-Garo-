@@ -945,3 +945,37 @@ test('BUG-REPORT-WHERE-GOING: sibling stationary location questions are unaffect
   const result = await translate('Where are you?');
   assert.equal(result.garo, 'Na·ara bano?');
 });
+
+// --- isVerified anchoring fix (2026-08-02, Claude B, prepare-data.js
+// pickPrimary): the RC-036-follow-up VERIFIED-preference check used an
+// unanchored substring match (/verified\/high/i.test(notes) &&
+// !/unverified/i.test(notes)) across an entry's ENTIRE notes field, not
+// just its tag prefix. This produced two distinct failure modes:
+//  - False negative: a genuinely VERIFIED/HIGH entry whose notes
+//    describe what it was promoted FROM ("...promoted from prior
+//    variant/UNVERIFIED/HIGH") got disqualified by its own promotion
+//    history. Flagged retroactively via the mandatory Runtime Handoff
+//    governance rule (WORKSTATE.yaml, 2026-08-02) on the "ripe" key.
+//  - False positive: a SUPERSEDED/"not authoritative for compile"
+//    legacy entry whose notes describe what supersedes it ("...has
+//    VERIFIED/HIGH form(s) [...]") got wrongly treated as itself
+//    VERIFIED, silently overriding Claude A's explicit non-authoritative
+//    annotation on at least 56 keys corpus-wide.
+// Fixed by anchoring the check to the notes field's actual start
+// (/^verified\/high\b/i), matching the same anchoring convention
+// isVariant already uses. Full corpus diff before/after confirmed all
+// 78 affected keys fall cleanly into one of the two categories above,
+// zero unexplained changes.
+test('isVerified anchoring: "ripe" resolves to the sole VERIFIED/HIGH candidate "min·a", not the untagged last-write-wins fallback', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('ripe');
+  assert.equal(result.garo, 'min·a');
+});
+
+test('isVerified anchoring: a SUPERSEDED legacy entry ("type") is no longer force-selected over its non-authoritative status', async () => {
+  const { lookupGaro } = await import('../../src/lookupEngine.js');
+  // Claude A's notes explicitly mark the legacy "ambiguous" value
+  // "Not authoritative for compile" — it must never be the compiled
+  // primary regardless of which fallback ultimately wins.
+  assert.notEqual(lookupGaro('type'), 'ambiguous');
+});

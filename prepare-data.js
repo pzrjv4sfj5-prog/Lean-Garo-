@@ -52,7 +52,7 @@ function normalizeFile(filePath) {
         // pickPrimary can prefer a single unambiguous VERIFIED candidate
         // over untagged or explicitly-UNVERIFIED siblings sharing its key.
         const notes = item.notes || '';
-        const isVerified = /verified\/high/i.test(notes) && !/unverified/i.test(notes);
+        const isVerified = /^verified\/high\b/i.test(notes);
         if (eng) addValue(eng, garo, isVariant, isVerified);
       });
     } else if (typeof parsed === 'object' && parsed !== null) {
