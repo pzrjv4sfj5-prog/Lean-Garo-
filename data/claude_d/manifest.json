@@ -94,6 +94,17 @@
       "flagged_for_review": 4
     },
     {
+      "page": 8,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0008.flat.json",
+      "source_entries": 36,
+      "flipped_rows": 36,
+      "flat_entries": 36,
+      "affix_excluded": 0,
+      "flagged_for_review": 0,
+      "note": "Mechanical exact-string check of flat 'garo' field against master_dictionary.json (case/whitespace-normalized, no semantic judgment): 3 of 36 entries share a headword string already present in master_dictionary.json — 'Am\u00b7bol', 'A\u00b7meng', 'Am\u00b7pang'. No dedup/resolution performed here; flagged for Claude A review only."
+    },
+    {
       "page": 34,
       "status": "duplicate_pair_needs_claude_a_pick",
       "alternates": [
