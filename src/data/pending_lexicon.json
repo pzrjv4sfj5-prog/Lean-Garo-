@@ -48483,5 +48483,4485 @@
     },
     "promotion_status": "promoted",
     "promoted_date": "2026-07-25T12:30:02.507Z"
+  },
+  {
+    "id": "PL-0001840",
+    "english": "With great difficulty; strenuously; to one's fill.",
+    "garo": "Amapet-amjapet",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001841",
+    "english": "To defeat or be defeated; to conquer; to subdue; to overcome; to beat.",
+    "garo": "Am·ata",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001842",
+    "english": "A no-man's land between two nokmas' a·kinglands.",
+    "garo": "A-mate",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001843",
+    "english": "The second stomach in a bird; a gizzard.",
+    "garo": "Amate, Ammate",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001844",
+    "english": "Later on; on later date : In time to come ! sometime in future.",
+    "garo": "Ambin (ammin)",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001845",
+    "english": "Never (do or risk).",
+    "garo": "Ambin-knapba",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001846",
+    "english": "Same as Ama-pet-amjapet.",
+    "garo": "Amae-amjae",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001847",
+    "english": "Aaternal grand-mother; a paternal grandmother.",
+    "garo": "Ambi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'Aaternal' (maternal) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001848",
+    "english": "A great grand-mother.",
+    "garo": "Ambi a·breng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001849",
+    "english": "Ancestors; forefathers.",
+    "garo": "Ambi-atchu",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001850",
+    "english": "A name of a species of beetle which shams death when caught and if body is pressed it clic's; a death-watch.",
+    "garo": "Ambi-tiksu",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001851",
+    "english": "Fuel; firewood.",
+    "garo": "Am·bol",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'firewood'->'Am·bol' (already SUPERSEDED, VERIFIED form is 'ha·bol'). Same headword, same sense. No new content; not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001852",
+    "english": "To carry a bale of firewood between two arms.",
+    "garo": "Am·bol gipaka",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001853",
+    "english": "A kont in a wood.",
+    "garo": "Am·bol kota",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001854",
+    "english": "To put firewood in the fire.",
+    "garo": "Am·bol so·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001855",
+    "english": "To collect or gather firewood; to cut firewood.",
+    "garo": "Am·bol sota",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001856",
+    "english": "To be able; to endure; to bear pain, expense, etc.; to be in one's power or ability; to be equal to the occasion.",
+    "garo": "Amchaka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001857",
+    "english": "To look for trouble.",
+    "garo": "Am·e ra·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001858",
+    "english": "So be it; amen.",
+    "garo": "Amen",
+    "category": null,
+    "pos": "interj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001859",
+    "english": "A wasp.",
+    "garo": "A·meng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Approved — new English key 'wasp' (general) for the already-VERIFIED/HIGH headword 'a·meng' (existing entry's specific sense is 'mud wasp'). Same word, broader gloss; not new linguistic content, just a coverage addition citing existing confidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001860",
+    "english": "In vain; to no purpose; fruitless; aimless.",
+    "garo": "A·mikbrang, A·mikbrang-chimikbrang",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001861",
+    "english": "So and so; a certain man.",
+    "garo": "Amika (A-mik-a)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001862",
+    "english": "An unsettled land between the a·kinglands of two nokmas; a no-man's land.",
+    "garo": "A·milam",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001863",
+    "english": "In time to come; some time in future.",
+    "garo": "Amin",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001864",
+    "english": "(Kydia calycina). A small-sized tree.",
+    "garo": "Amisep",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001865",
+    "english": "To accuse one of adultery; to be jealous.",
+    "garo": "Amita",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001866",
+    "english": "To grudge; to accuse of unfaithfullness.",
+    "garo": "Amit-jachaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'unfaithfullness' preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001867",
+    "english": "Marl.",
+    "garo": "A·mitim",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001868",
+    "english": "To gather from a few things.",
+    "garo": "Am·kolama",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001869",
+    "english": "A milipede that rolls itself up into a ball when touched; pill-bug; pill-beetle.",
+    "garo": "Amkot",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'milipede' (millipede) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001870",
+    "english": "(Averrhoa carambela). A small edible fruit-bearing tree.",
+    "garo": "Amlengga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'carambela' (carambola) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001871",
+    "english": "As much as one can; as quickly as one can.",
+    "garo": "Amna amna",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001872",
+    "english": "To try to find out; to drive out.",
+    "garo": "Am·na joton ka·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001873",
+    "english": "The thatching grass.",
+    "garo": "Am·pang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'thatch'->'am·pang' (variant/UNVERIFIED/HIGH). Same headword, same sense. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001874",
+    "english": "To thatch; to roof with thatching grass.",
+    "garo": "Am·pang pina",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001875",
+    "english": "The place where thatching grass grow abundantly.",
+    "garo": "Am·pangdam",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'grow' (grows) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "8",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-519Z",
+      "import_date": "2026-08-02T10:57:12.519Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001876",
+    "english": "A mat; an osier.",
+    "garo": "Ampatchi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001877",
+    "english": "A stool; a seat; a low stool.",
+    "garo": "Am·pok",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'small stool'->'am·pok' (VERIFIED/HIGH). Same headword, same sense. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001878",
+    "english": "To search for; to search out; to search through; to go in quest of; to pursue; to hunt.",
+    "garo": "Am·rama",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001879",
+    "english": "To look closely; to fry into.",
+    "garo": "Am·rikita",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001880",
+    "english": "An osier; the reed of which mats are made.",
+    "garo": "Amreru",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001881",
+    "english": "To search here and there.",
+    "garo": "Am·roroa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001882",
+    "english": "To be able to cope with; to be within one's ability.",
+    "garo": "Amsoka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001883",
+    "english": "A roll of bamboo mat.",
+    "garo": "Amtol",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001884",
+    "english": "Body; person.",
+    "garo": "An",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'human body'->'an' (VERIFIED/HIGH). Same headword, same core sense (body). Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001885",
+    "english": "To grow well of tuber or arum.",
+    "garo": "An·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Approved as a distinct sense/possible homonym — 'An·a' ('to grow well of tuber or arum') is a different sense from the existing 'Spread'->'an·a' (variant/VERIFIED/HIGH). Same headword spelling, no raka mark on either side to differentiate — plausible homonymy, common in this lexicon (cf. senga=wait/smell). Imported at standard print-dictionary confidence (UNVERIFIED), not native-confirmed. Not merged with 'Spread'.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001886",
+    "english": "To spread a cloth; to spread out; to lay open; to spread over as a cloth.",
+    "garo": "Ana",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001887",
+    "english": "A pineapple.",
+    "garo": "Anaras",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001888",
+    "english": "Temperature; the heat of the body.",
+    "garo": "An·ba",
+    "category": null,
+    "pos": "a.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'temperature of the body'->'an·ba' (VERIFIED/HIGH). Same headword, same sense. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001889",
+    "english": "To stretch one's limbs.",
+    "garo": "An·badala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001890",
+    "english": "To tremble through fear or emotion.",
+    "garo": "An·banggri moa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001891",
+    "english": "To have sexual intercourse.",
+    "garo": "An·chaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Approved — synonym pair with PL-0001892 for 'to have sexual intercourse', both attested on the same page. Standard print-dictionary import.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "An·chaa",
+        "An·chi-jakchi nanga"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001892",
+    "english": "To have sexual intercourse.",
+    "garo": "An·chi-jakchi nanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Approved — synonym pair with PL-0001891 for 'to have sexual intercourse', both attested on the same page. Standard print-dictionary import.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "An·chaa",
+        "An·chi-jakchi nanga"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001893",
+    "english": "To yield; to surrender.",
+    "garo": "An·chaka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001894",
+    "english": "Sand.",
+    "garo": "An·cheng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'sand'->'An·cheng' (already SUPERSEDED, VERIFIED form is 'han·cheng'). Same headword, same sense. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001895",
+    "english": "See A·gata.",
+    "garo": "An·cheng gata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001896",
+    "english": "Blood.",
+    "garo": "An·chi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'blood'->'An·chi' (already SUPERSEDED, VERIFIED forms 'han·chi'/'ma·rang'). Same headword, same sense. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001897",
+    "english": "Covered with blood.",
+    "garo": "An·chichipchrip",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001898",
+    "english": "To bleed.",
+    "garo": "An·chi ong·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001899",
+    "english": "To shed blood; to bloodshed.",
+    "garo": "An·chi ong·ata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001900",
+    "english": "To faint at the sight of blood.",
+    "garo": "An·chi peka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001901",
+    "english": "The clotted blood; blood that has partly solidified; to quagulate.",
+    "garo": "An·chi tin·kaa",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "Typo 'quagulate' (coagulate) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001902",
+    "english": "To cease bleeding.",
+    "garo": "An·chi tipa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001903",
+    "english": "To stop bleeding.",
+    "garo": "An·chi tipata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001904",
+    "english": "Bloody; sanguinary.",
+    "garo": "An·chirara",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001905",
+    "english": "Dirt in the body.",
+    "garo": "An·chinek",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001906",
+    "english": "A blood thirsty (man).",
+    "garo": "An·chi ringna sikgipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001907",
+    "english": "We, including the one to whom addressed.",
+    "garo": "An-ching",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001908",
+    "english": "Us. (in the accusative case).",
+    "garo": "An-chingko",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001909",
+    "english": "Us; to us.",
+    "garo": "An-chingna",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001910",
+    "english": "Our.",
+    "garo": "An-chingni",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001911",
+    "english": "Ours.",
+    "garo": "An-chingnin",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001912",
+    "english": "To shudder; to cause blood to run cold.",
+    "garo": "Anchisrengsreng daka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001913",
+    "english": "Dark; gloomy.—n. Darkness, gloomy, dusk.",
+    "garo": "Andala",
+    "category": null,
+    "pos": "adj. & n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'darkness'/'dark'->'Andala'/'an·dal·a'. Same core sense (dark/gloomy/darkness). Raka-notation variance (Andala vs an·dal·a) noted but not resolved — flagged non-urgent, same class as other unresolved spelling-variance items in this project. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001914",
+    "english": "To become dark; to grow dark.",
+    "garo": "Andalbaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001915",
+    "english": "In the dark.",
+    "garo": "Andal-min·dik",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001916",
+    "english": "Pitch dark.",
+    "garo": "Andalmitmit",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001917",
+    "english": "Dark; dusk; gloaming.",
+    "garo": "Andalsimsim",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001918",
+    "english": "To spread bedsheets.",
+    "garo": "Andapa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001919",
+    "english": "Bedsheets; beddings.",
+    "garo": "Andapani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001920",
+    "english": "Guess; inference; conjecture; supposition.",
+    "garo": "Andas",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001921",
+    "english": "To guess; to estimate; to appraise; to calculate foughly.",
+    "garo": "Andas ka·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'foughly' (roughly) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001922",
+    "english": "Fence; an enclosure.",
+    "garo": "Andela",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001923",
+    "english": "To tremble; to quiver.",
+    "garo": "An·dil moa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001924",
+    "english": "To be tremulous; to shake oneself (as a wet dog); to shake out; to tremble.",
+    "garo": "An·dildila",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "9",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-641Z",
+      "import_date": "2026-08-02T10:57:12.641Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001925",
+    "english": "A sharp and pointed bamboo splinter; a bamboo knife.",
+    "garo": "An-dileng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001926",
+    "english": "A female disease after delivery.",
+    "garo": "An-dime",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001927",
+    "english": "A timber which support the floor of a platform; a joist.",
+    "garo": "An-ding",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001928",
+    "english": "Not easily consumable; lasting for a longer period.",
+    "garo": "An-donga",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001929",
+    "english": "To use economically; to spend frugally.",
+    "garo": "An-dongata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001930",
+    "english": "I.",
+    "garo": "Anga",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — exact duplicate of existing 'i'->'Anga'. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001931",
+    "english": "To warm up in the fire (as food gone cold or wet things); to heat over the fire.",
+    "garo": "Anga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "needs-discussion",
+    "review_notes": "NEEDS-DISCUSSION — ambiguous. Page 10 gives 'Anga' (no raka) = 'to warm up in the fire (as food gone cold...)'. This is semantically adjacent to the already-VERIFIED-adjacent existing entry 'to bake / roast'->'Ang·a' (WITH a raka mark). Two live possibilities, not resolvable corpus-internally: (a) this is a genuine third homonym of 'Anga' alongside the pronoun 'I', distinct from 'Ang·a'; or (b) this is the SAME word as 'Ang·a' with the raka mark simply dropped by OCR/flip on this page — exactly the 'song/song·' raka-transcription failure mode this project has hit before (see SESSION_BOOTSTRAP.md 'recurring failure modes'). Not adding as a new headword and not merging with 'Ang·a' — holding for either a native check or a raw-page re-check of the original scan. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001932",
+    "english": "It is I who (is or does).",
+    "garo": "Anganba",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001933",
+    "english": "Charcoal.",
+    "garo": "Anggal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001934",
+    "english": "Red hot.",
+    "garo": "Anggia",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001935",
+    "english": "To be red hot.",
+    "garo": "Anggia",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001936",
+    "english": "Complexion; skin.",
+    "garo": "An·gil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001937",
+    "english": "A sore.",
+    "garo": "An·gisa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001938",
+    "english": "A lizard.",
+    "garo": "Angkantek",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001939",
+    "english": "Crab.",
+    "garo": "Ang·ke",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate of existing 'crab'->'Ang·ke' (already SUPERSEDED, VERIFIED form is 'hang·ki'). Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001940",
+    "english": "Nipper of a crab; pincers.",
+    "garo": "Ang·ke grong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001941",
+    "english": "Plum.",
+    "garo": "Angkil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001942",
+    "english": "Me.",
+    "garo": "Angko",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — exact duplicate of existing 'me'->'Angko'. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001943",
+    "english": "Wife's sister's husband.",
+    "garo": "Angkoti",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001944",
+    "english": "Me; to me.",
+    "garo": "Angna",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001945",
+    "english": "A woman with child; a fragnant woman.",
+    "garo": "An·gnang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Typo 'fragnant' (pregnant/fragrant) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001946",
+    "english": "It is all the same to me.",
+    "garo": "Angnade apsanaia",
+    "category": null,
+    "pos": null,
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001947",
+    "english": "My; of mine.",
+    "garo": "Angni",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — exact duplicate of existing 'my / mine'->'Angni'. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001948",
+    "english": "Mine.",
+    "garo": "Angnin",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001949",
+    "english": "To stretch the body or limb.",
+    "garo": "An-misala",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001950",
+    "english": "Underground.",
+    "garo": "A·ning",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001951",
+    "english": "Underground; subterranean.",
+    "garo": "A·ningni",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001952",
+    "english": "To shudder; to feel repulsive.",
+    "garo": "An-misila",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001953",
+    "english": "To attend the delivery case; to attend the child-birth; to assist woman in childbirth.",
+    "garo": "An-nia",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001954",
+    "english": "With child; pregnant (more polite than okgnanga).",
+    "garo": "An-gnang",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001955",
+    "english": "Palsy; paralysis.",
+    "garo": "An-ma goka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001956",
+    "english": "Backbone; the spine.",
+    "garo": "An-mrong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001957",
+    "english": "To be pregnant; to be with child; to conceive.",
+    "garo": "An-o gnang",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001958",
+    "english": "To wear the clothe next the skin.",
+    "garo": "An-paa",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": "Typo 'clothe' (clothes) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001959",
+    "english": "Outer portion; the bedcloth which is nearest the body.",
+    "garo": "An-pagipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001960",
+    "english": "Delivery; child birth.",
+    "garo": "An-paka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001961",
+    "english": "To deliver; to give birth to; to bear.",
+    "garo": "An-paka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001962",
+    "english": "To stretch one's limbs when yawning; to twist or stretch the limb or body for relaxation.",
+    "garo": "An-pea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001963",
+    "english": "To turn backwards; to turn a new leaf; to turn away the head; to draw back in fear; to flench.",
+    "garo": "An-pila",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'flench' (flinch) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001964",
+    "english": "To turn from side to side in bed when lying down.",
+    "garo": "An-pile ketchie tua",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001965",
+    "english": "To turn back or",
+    "garo": "An-pildata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Entry cut off at the bottom of the page; continuation flows to page 11.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "10",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-751Z",
+      "import_date": "2026-08-02T10:57:12.751Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001966",
+    "english": "To turn aside; to keep away; to ward off.",
+    "garo": "An-pile kata",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001967",
+    "english": "To be not without child but pregnant.",
+    "garo": "An-rara-jakrara ong·ja",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001968",
+    "english": "To stretch one's limps.",
+    "garo": "An-sala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Typo 'limps' (limbs) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001969",
+    "english": "To get well; to get all right; to be pleasant; to be happy; to be in good health; to feel well.",
+    "garo": "An-senga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001970",
+    "english": "Health; happiness; gladness; joy.",
+    "garo": "An-sengani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001971",
+    "english": "To heal; to cure; to remedy.",
+    "garo": "An-sengata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001972",
+    "english": "Healthy; happy; pleasant; cheerful.",
+    "garo": "An-senggipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001973",
+    "english": "To feel unwell; to be sickly.",
+    "garo": "An-sengja",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001974",
+    "english": "To shake or tremble with fear, horror; to shudder.",
+    "garo": "An-skita",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001975",
+    "english": "A contagious skin disease; yaws.",
+    "garo": "An-soa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001976",
+    "english": "A wearing apparel.",
+    "garo": "An-sre",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Approved with flag — 'An-sre' = 'a wearing apparel' shares its exact English gloss with existing 'Gana' (n.) = 'a wearing apparel'. Treated as a plausible synonym/near-synonym (different specific garment vs. general apparel is common), not a duplication error — imported, conflict logged rather than blocked, consistent with existing known_dictionary_conflicts.json practice. Not native-confirmed as a true synonym.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Gana"
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001977",
+    "english": "To change dress.",
+    "garo": "An-srea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001978",
+    "english": "To shiver; to quiver; to tremble.",
+    "garo": "An-sri moa",
+    "category": null,
+    "pos": null,
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001979",
+    "english": "To be effective; to have given effect to.",
+    "garo": "An-sua",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001980",
+    "english": "Effective; powerful.",
+    "garo": "An-sua",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001981",
+    "english": "Evening.",
+    "garo": "An-tam, Attam",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001982",
+    "english": "In the evening; in the afternoon.",
+    "garo": "An-tamo",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001983",
+    "english": "Towards the evening.",
+    "garo": "An-tamchibara",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001984",
+    "english": "In the evening just before darkness; time before dusk.",
+    "garo": "An-tampang",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001985",
+    "english": "Self.",
+    "garo": "An-tang",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001986",
+    "english": "The self; ego.",
+    "garo": "An-tang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001987",
+    "english": "Plural of self; themselves; ourselves.",
+    "garo": "An-tangtang",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001988",
+    "english": "As for myself; as for oneself; in its place.",
+    "garo": "An-tangnade",
+    "category": null,
+    "pos": null,
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001989",
+    "english": "To himself, herself, itself, one's self.",
+    "garo": "An-tangna",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001990",
+    "english": "Belonging to one-self; one's own; individual; personal.",
+    "garo": "An-tangni",
+    "category": null,
+    "pos": "pr.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001991",
+    "english": "A kind of ear ornament.",
+    "garo": "Anteka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001992",
+    "english": "Week; a market; a bazar; a hat.",
+    "garo": "Anti",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "needs-discussion",
+    "review_notes": "NEEDS-DISCUSSION — page 11 gives 'Anti' = 'Week; a market; a bazar; a hat.' (bundled senses). The 'week' sense is a known duplicate of an already-SUPERSEDED entry (VERIFIED form 'sop·ta'). The 'market/bazar/hat' sense is NOT added — this session (NV-052, same session prior to this task) just closed 'market' = 'Bajal' via direct Project Owner decision. 'hat' most plausibly reflects the Assamese/Bengali-area loanword for 'market day' specifically (a periodic bazaar day), which would NOT necessarily conflict with 'Bajal' (market as a place) — but this is inference, not confirmed. Given how recently NV-052 was settled, not resolving this unilaterally. Flagged for the next Thangseng relay: does 'Anti' have any market/bazaar-day sense distinct from 'Bajal'? Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0001993",
+    "english": "A fortnight; two weeks.",
+    "garo": "Antigni",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001994",
+    "english": "Every two weeks; fortnightly.",
+    "garo": "Antigniprak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001995",
+    "english": "Week day; market day.",
+    "garo": "Antini sal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001996",
+    "english": "Every week; weekly.",
+    "garo": "Anti anti",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001997",
+    "english": "A market place.",
+    "garo": "Antidam",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001998",
+    "english": "A crawfish; a shrimp; prawn; lobster.",
+    "garo": "An-tik, (Na-tik)",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0001999",
+    "english": "Odour; smell.",
+    "garo": "An-ting",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002000",
+    "english": "Circumference; girth; limb; trunk.",
+    "garo": "An-tong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002001",
+    "english": "Not worth anything; of no use; valueless.",
+    "garo": "A-ograng-chiograng",
+    "category": null,
+    "pos": null,
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002002",
+    "english": "A room; a place.",
+    "garo": "Ap",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002003",
+    "english": "My father; father.",
+    "garo": "Apa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002004",
+    "english": "Region; side; clime.",
+    "garo": "A-pak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002005",
+    "english": "Plain; a flat land; out-side; stool; dung; excrement.",
+    "garo": "A-pal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002006",
+    "english": "A plough land; wet cultivation; a paddy field.",
+    "garo": "A-pal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002007",
+    "english": "To pass motion; to move bowels.",
+    "garo": "A-pala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002008",
+    "english": "Width; breadth; a span of a bridge.",
+    "garo": "Apala",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Approved — 'Apala' ('width; breadth; a span of a bridge', noun) fills a real gap: no existing headword covers 'width'/'breadth' as a noun (the existing 'Apala' production entries are all the adjective 'wide', already SUPERSEDED). Different part of speech from the rejected adjective sense (PL-0002009); standard print-dictionary import.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002009",
+    "english": "Broad; wide; spacious; extensive.",
+    "garo": "Apala",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Repeated headword.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "rejected",
+    "review_notes": "REJECTED — true duplicate (adjective sense) of existing 'wide'->'Apala' (already SUPERSEDED, VERIFIED forms 'ap·dal·a'/'pel·dal·a'/'tim·bong'). Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002010",
+    "english": "To make wider; to braden.",
+    "garo": "Apalata, Apbalata",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": "Typo 'braden' (broaden) preserved.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002011",
+    "english": "Wide;",
+    "garo": "Apalgipa, Apbalgipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Entry cut off at the bottom of the page; continuation flows to page 12.",
+    "provenance": {
+      "source": "A Garo-English Dictionary (scanned print source)",
+      "source_page": "11",
+      "import_batch": "IMPORT-2026-08-02T10-57-12-848Z",
+      "import_date": "2026-08-02T10:57:12.848Z",
+      "ocr_version": "gemini-2026-07-16"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-08-02. Part of pages 8-11 batch (standard print-dictionary vocabulary import, no dictionary-headword collision, no native-validation dependency).",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-02",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02T10:59:11.303Z"
   }
 ]

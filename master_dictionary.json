@@ -59876,5 +59876,959 @@
     "garo": "buringo",
     "category": "nature",
     "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative, no movement."
+  },
+  {
+    "english": "With great difficulty; strenuously; to one's fill.",
+    "garo": "Amapet-amjapet",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "To defeat or be defeated; to conquer; to subdue; to overcome; to beat.",
+    "garo": "Am·ata",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "A no-man's land between two nokmas' a·kinglands.",
+    "garo": "A-mate",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "The second stomach in a bird; a gizzard.",
+    "garo": "Amate, Ammate",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Later on; on later date : In time to come ! sometime in future.",
+    "garo": "Ambin (ammin)",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "Never (do or risk).",
+    "garo": "Ambin-knapba",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "Same as Ama-pet-amjapet.",
+    "garo": "Amae-amjae",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Aaternal grand-mother; a paternal grandmother.",
+    "garo": "Ambi",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'Aaternal' (maternal) preserved."
+  },
+  {
+    "english": "A great grand-mother.",
+    "garo": "Ambi a·breng",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Ancestors; forefathers.",
+    "garo": "Ambi-atchu",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A name of a species of beetle which shams death when caught and if body is pressed it clic's; a death-watch.",
+    "garo": "Ambi-tiksu",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To carry a bale of firewood between two arms.",
+    "garo": "Am·bol gipaka",
+    "category": null,
+    "pos": "vt."
+  },
+  {
+    "english": "A kont in a wood.",
+    "garo": "Am·bol kota",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To put firewood in the fire.",
+    "garo": "Am·bol so·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To collect or gather firewood; to cut firewood.",
+    "garo": "Am·bol sota",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To be able; to endure; to bear pain, expense, etc.; to be in one's power or ability; to be equal to the occasion.",
+    "garo": "Amchaka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To look for trouble.",
+    "garo": "Am·e ra·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "So be it; amen.",
+    "garo": "Amen",
+    "category": null,
+    "pos": "interj."
+  },
+  {
+    "english": "A wasp.",
+    "garo": "A·meng",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "In vain; to no purpose; fruitless; aimless.",
+    "garo": "A·mikbrang, A·mikbrang-chimikbrang",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "So and so; a certain man.",
+    "garo": "Amika (A-mik-a)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "An unsettled land between the a·kinglands of two nokmas; a no-man's land.",
+    "garo": "A·milam",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "In time to come; some time in future.",
+    "garo": "Amin",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "(Kydia calycina). A small-sized tree.",
+    "garo": "Amisep",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To accuse one of adultery; to be jealous.",
+    "garo": "Amita",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To grudge; to accuse of unfaithfullness.",
+    "garo": "Amit-jachaa",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'unfaithfullness' preserved."
+  },
+  {
+    "english": "Marl.",
+    "garo": "A·mitim",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To gather from a few things.",
+    "garo": "Am·kolama",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A milipede that rolls itself up into a ball when touched; pill-bug; pill-beetle.",
+    "garo": "Amkot",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'milipede' (millipede) preserved."
+  },
+  {
+    "english": "(Averrhoa carambela). A small edible fruit-bearing tree.",
+    "garo": "Amlengga",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'carambela' (carambola) preserved."
+  },
+  {
+    "english": "As much as one can; as quickly as one can.",
+    "garo": "Amna amna",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "To try to find out; to drive out.",
+    "garo": "Am·na joton ka·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To thatch; to roof with thatching grass.",
+    "garo": "Am·pang pina",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "The place where thatching grass grow abundantly.",
+    "garo": "Am·pangdam",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'grow' (grows) preserved."
+  },
+  {
+    "english": "A mat; an osier.",
+    "garo": "Ampatchi",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To search for; to search out; to search through; to go in quest of; to pursue; to hunt.",
+    "garo": "Am·rama",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To look closely; to fry into.",
+    "garo": "Am·rikita",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "An osier; the reed of which mats are made.",
+    "garo": "Amreru",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To search here and there.",
+    "garo": "Am·roroa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To be able to cope with; to be within one's ability.",
+    "garo": "Amsoka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A roll of bamboo mat.",
+    "garo": "Amtol",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To grow well of tuber or arum.",
+    "garo": "An·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To spread a cloth; to spread out; to lay open; to spread over as a cloth.",
+    "garo": "Ana",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A pineapple.",
+    "garo": "Anaras",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To stretch one's limbs.",
+    "garo": "An·badala",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To tremble through fear or emotion.",
+    "garo": "An·banggri moa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To have sexual intercourse.",
+    "garo": "An·chaa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To have sexual intercourse.",
+    "garo": "An·chi-jakchi nanga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To yield; to surrender.",
+    "garo": "An·chaka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "See A·gata.",
+    "garo": "An·cheng gata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Covered with blood.",
+    "garo": "An·chichipchrip",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To bleed.",
+    "garo": "An·chi ong·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To shed blood; to bloodshed.",
+    "garo": "An·chi ong·ata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To faint at the sight of blood.",
+    "garo": "An·chi peka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "The clotted blood; blood that has partly solidified; to quagulate.",
+    "garo": "An·chi tin·kaa",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Typo 'quagulate' (coagulate) preserved."
+  },
+  {
+    "english": "To cease bleeding.",
+    "garo": "An·chi tipa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To stop bleeding.",
+    "garo": "An·chi tipata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Bloody; sanguinary.",
+    "garo": "An·chirara",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Dirt in the body.",
+    "garo": "An·chinek",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A blood thirsty (man).",
+    "garo": "An·chi ringna sikgipa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "We, including the one to whom addressed.",
+    "garo": "An-ching",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "Us. (in the accusative case).",
+    "garo": "An-chingko",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "Us; to us.",
+    "garo": "An-chingna",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "Our.",
+    "garo": "An-chingni",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "Ours.",
+    "garo": "An-chingnin",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "To shudder; to cause blood to run cold.",
+    "garo": "Anchisrengsreng daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To become dark; to grow dark.",
+    "garo": "Andalbaa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "In the dark.",
+    "garo": "Andal-min·dik",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "Pitch dark.",
+    "garo": "Andalmitmit",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Dark; dusk; gloaming.",
+    "garo": "Andalsimsim",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To spread bedsheets.",
+    "garo": "Andapa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Bedsheets; beddings.",
+    "garo": "Andapani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Guess; inference; conjecture; supposition.",
+    "garo": "Andas",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To guess; to estimate; to appraise; to calculate foughly.",
+    "garo": "Andas ka·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'foughly' (roughly) preserved."
+  },
+  {
+    "english": "Fence; an enclosure.",
+    "garo": "Andela",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To tremble; to quiver.",
+    "garo": "An·dil moa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To be tremulous; to shake oneself (as a wet dog); to shake out; to tremble.",
+    "garo": "An·dildila",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A sharp and pointed bamboo splinter; a bamboo knife.",
+    "garo": "An-dileng",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A female disease after delivery.",
+    "garo": "An-dime",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A timber which support the floor of a platform; a joist.",
+    "garo": "An-ding",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Not easily consumable; lasting for a longer period.",
+    "garo": "An-donga",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To use economically; to spend frugally.",
+    "garo": "An-dongata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "It is I who (is or does).",
+    "garo": "Anganba",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "Charcoal.",
+    "garo": "Anggal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Red hot.",
+    "garo": "Anggia",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To be red hot.",
+    "garo": "Anggia",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Complexion; skin.",
+    "garo": "An·gil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A sore.",
+    "garo": "An·gisa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A lizard.",
+    "garo": "Angkantek",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Nipper of a crab; pincers.",
+    "garo": "Ang·ke grong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Plum.",
+    "garo": "Angkil",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Wife's sister's husband.",
+    "garo": "Angkoti",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Me; to me.",
+    "garo": "Angna",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "A woman with child; a fragnant woman.",
+    "garo": "An·gnang",
+    "category": null,
+    "pos": "n.",
+    "notes": "Typo 'fragnant' (pregnant/fragrant) preserved."
+  },
+  {
+    "english": "It is all the same to me.",
+    "garo": "Angnade apsanaia",
+    "category": null
+  },
+  {
+    "english": "Mine.",
+    "garo": "Angnin",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "To stretch the body or limb.",
+    "garo": "An-misala",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "Underground.",
+    "garo": "A·ning",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Underground; subterranean.",
+    "garo": "A·ningni",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To shudder; to feel repulsive.",
+    "garo": "An-misila",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To attend the delivery case; to attend the child-birth; to assist woman in childbirth.",
+    "garo": "An-nia",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "With child; pregnant (more polite than okgnanga).",
+    "garo": "An-gnang",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Palsy; paralysis.",
+    "garo": "An-ma goka",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Backbone; the spine.",
+    "garo": "An-mrong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To be pregnant; to be with child; to conceive.",
+    "garo": "An-o gnang",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To wear the clothe next the skin.",
+    "garo": "An-paa",
+    "category": null,
+    "pos": "vt.",
+    "notes": "Typo 'clothe' (clothes) preserved."
+  },
+  {
+    "english": "Outer portion; the bedcloth which is nearest the body.",
+    "garo": "An-pagipa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Delivery; child birth.",
+    "garo": "An-paka",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To deliver; to give birth to; to bear.",
+    "garo": "An-paka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To stretch one's limbs when yawning; to twist or stretch the limb or body for relaxation.",
+    "garo": "An-pea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To turn backwards; to turn a new leaf; to turn away the head; to draw back in fear; to flench.",
+    "garo": "An-pila",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'flench' (flinch) preserved."
+  },
+  {
+    "english": "To turn from side to side in bed when lying down.",
+    "garo": "An-pile ketchie tua",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To turn back or",
+    "garo": "An-pildata",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Entry cut off at the bottom of the page; continuation flows to page 11."
+  },
+  {
+    "english": "To turn aside; to keep away; to ward off.",
+    "garo": "An-pile kata",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "To be not without child but pregnant.",
+    "garo": "An-rara-jakrara ong·ja",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To stretch one's limps.",
+    "garo": "An-sala",
+    "category": null,
+    "pos": "v.",
+    "notes": "Typo 'limps' (limbs) preserved."
+  },
+  {
+    "english": "To get well; to get all right; to be pleasant; to be happy; to be in good health; to feel well.",
+    "garo": "An-senga",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Health; happiness; gladness; joy.",
+    "garo": "An-sengani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To heal; to cure; to remedy.",
+    "garo": "An-sengata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Healthy; happy; pleasant; cheerful.",
+    "garo": "An-senggipa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To feel unwell; to be sickly.",
+    "garo": "An-sengja",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To shake or tremble with fear, horror; to shudder.",
+    "garo": "An-skita",
+    "category": null,
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "A contagious skin disease; yaws.",
+    "garo": "An-soa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A wearing apparel.",
+    "garo": "An-sre",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To change dress.",
+    "garo": "An-srea",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To shiver; to quiver; to tremble.",
+    "garo": "An-sri moa",
+    "category": null
+  },
+  {
+    "english": "To be effective; to have given effect to.",
+    "garo": "An-sua",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Effective; powerful.",
+    "garo": "An-sua",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "Evening.",
+    "garo": "An-tam, Attam",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "In the evening; in the afternoon.",
+    "garo": "An-tamo",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "Towards the evening.",
+    "garo": "An-tamchibara",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "In the evening just before darkness; time before dusk.",
+    "garo": "An-tampang",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "Self.",
+    "garo": "An-tang",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "The self; ego.",
+    "garo": "An-tang",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Plural of self; themselves; ourselves.",
+    "garo": "An-tangtang",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "As for myself; as for oneself; in its place.",
+    "garo": "An-tangnade",
+    "category": null
+  },
+  {
+    "english": "To himself, herself, itself, one's self.",
+    "garo": "An-tangna",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "Belonging to one-self; one's own; individual; personal.",
+    "garo": "An-tangni",
+    "category": null,
+    "pos": "pr."
+  },
+  {
+    "english": "A kind of ear ornament.",
+    "garo": "Anteka",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A fortnight; two weeks.",
+    "garo": "Antigni",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Every two weeks; fortnightly.",
+    "garo": "Antigniprak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Week day; market day.",
+    "garo": "Antini sal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Every week; weekly.",
+    "garo": "Anti anti",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A market place.",
+    "garo": "Antidam",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A crawfish; a shrimp; prawn; lobster.",
+    "garo": "An-tik, (Na-tik)",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Odour; smell.",
+    "garo": "An-ting",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Circumference; girth; limb; trunk.",
+    "garo": "An-tong",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Not worth anything; of no use; valueless.",
+    "garo": "A-ograng-chiograng",
+    "category": null
+  },
+  {
+    "english": "A room; a place.",
+    "garo": "Ap",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "My father; father.",
+    "garo": "Apa",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Region; side; clime.",
+    "garo": "A-pak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Plain; a flat land; out-side; stool; dung; excrement.",
+    "garo": "A-pal",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A plough land; wet cultivation; a paddy field.",
+    "garo": "A-pal",
+    "category": null,
+    "pos": "n.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "To pass motion; to move bowels.",
+    "garo": "A-pala",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Width; breadth; a span of a bridge.",
+    "garo": "Apala",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To make wider; to braden.",
+    "garo": "Apalata, Apbalata",
+    "category": null,
+    "pos": "vt.",
+    "notes": "Typo 'braden' (broaden) preserved."
+  },
+  {
+    "english": "Wide;",
+    "garo": "Apalgipa, Apbalgipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Entry cut off at the bottom of the page; continuation flows to page 12."
   }
 ]

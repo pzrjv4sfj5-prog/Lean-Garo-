@@ -233,6 +233,43 @@ Claude A's own VERIFIED/HIGH or SUPERSEDED tag correctly, just wasn't
 being read correctly by the compiler. 163/163 tests, 0 lint errors,
 build clean.
 
+**NEW, 2026-08-02, Claude A — Claude D's page 8-11 headword collisions
+reviewed and closed (resumed from checkpoint `0ab04bf` migration doc).**
+None of pages 8-11 (172 entries) had ever been imported - only Claude
+D's mechanical flip+reduce ingestion and collision flagging had run.
+Full pending-lexicon pipeline run on all 4 pages, every entry reviewed
+individually (not just the 18 manifest-flagged headwords). 13 rejected
+as true duplicates of already-known entries (cited per-entry in
+`pending_lexicon.json` review_notes - e.g. `Am·bol`/`Angko`/`Angni`
+etc., several duplicating already-SUPERSEDED legacy rows). 2 held
+needs-discussion, not promoted: `Anga`="to warm up in the fire"
+(ambiguous - possible third homonym of pronoun `Anga`, or an
+OCR-dropped-raka duplicate of existing `Ang·a`="to bake/roast" - same
+failure-mode class as this project's known raka-transcription bugs,
+not guessed either way); `Anti`="week; market; bazar; hat" (market
+sense withheld given NV-052, closed earlier this session, just settled
+`market`=`Bajal` by direct Project Owner decision - "hat" plausibly
+means "market day" specifically, corroborated by a separate staged
+entry `Antini sal`="week day; market day", but not resolved here -
+flagged for next Thangseng relay). 6 approved with linguistic notes,
+including 2 intentional new synonym conflicts (`An-sre`/`Gana` both
+"a wearing apparel"; `An·chaa`/`An·chi-jakchi nanga` both "to have
+sexual intercourse") allowlisted in `known_dictionary_conflicts.json`
+with citation. 151 approved as standard clean vocabulary. 157 total
+promoted to `master_dictionary.json`. All 6 noted-approval keys
+spot-verified to compile to their intended values - no runtime gap on
+any addition this session. Rebased on top of Claude B's ea77de5/03bd2dc
+fixes above (not developed concurrently blind — pulled after their
+push, resolved the resulting generated-file conflict by rebuilding
+from source, reverified all 6 noted keys still compile correctly
+post-rebuild, including confirming "ripe" now correctly resolves to
+"min·a"). No engine code touched. Tests 163/163 (155 pre-existing +
+8 from Claude B's two fixes above, all still passing), repository-
+intelligence.js 0 new violations (after allowlisting the 2 intentional
+conflicts). Claude A has no active task outstanding beyond the two
+needs-discussion flags above (both non-urgent, awaiting native/relay
+input, not corpus-resolvable).
+
 **PRIOR, 2026-08-02, Claude A — NV-052 CLOSED: market spelling and
 bajaro/bajalo closed, -chi present-continuous usage clarified.**
 Project Owner direct decision (not a Thangseng relay this time):
