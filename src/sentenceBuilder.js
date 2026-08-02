@@ -56,8 +56,17 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
   // tense attachment regardless.
   const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()) && !AUXILIARY_SKIP.has(w.toLowerCase()));
   if (!content.length) return null;
+  // RULE-044/NV-047 movement-locative override — see fix comment above
+  // this function's diff for full rationale. "going" is checked against
+  // the raw (punctuation-stripped) word list rather than `content`,
+  // since AUXILIARY_SKIP already strips a bare "going" token from
+  // `content` in some constructions — the movement signal itself must
+  // still be detected even when "going" doesn't survive as its own
+  // content word.
+  const hasMovementVerbSignal = words.some(w => w.toLowerCase().replace(/[^a-z]/g,'') === 'going');
   const translated = content.map(w => {
     const lw = w.toLowerCase().replace(/[^a-z'·]/g,'');
+    if (lw === 'where' && hasMovementVerbSignal) return 'Bachi';
     // RC-CANDIDATE-035 fix (2026-07-31, Claude B): same collision class
     // as the findVerbForm fix in morphologyEngine.js, independently
     // present here since this function does its own ing$/ed$/s$

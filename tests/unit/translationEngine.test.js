@@ -883,3 +883,65 @@ test('RC-CANDIDATE-035: genuine "us" pronoun resolution is unaffected', async ()
   // "us" as an actual word (not stripped from "using") must still resolve normally.
   assert.ok(result && result.garo && result.garo.length > 0, 'genuine "us" usage must still translate');
 });
+
+// --- BUG-REPORT-WHERE-GOING fix (2026-08-02, Claude B, engineering-only,
+// per Project Owner bug report): two independent stale artifacts both
+// caused "where ... going?" constructions to surface the stationary/
+// no-movement locative "bano" instead of the VERIFIED movement-to
+// locative "bachi" (RULE-044, NV-047, Claude A, Project Owner closure
+// 2026-07-31):
+//  (1) corrections.json's "where are you going" phrase entry predated
+//      NV-047's dictionary fix and was never synced with it.
+//  (2) phrase_maps.js's flat single-word 'where':'Bano' entry, consulted
+//      by assembleSentenceSOV's per-word fallback (the path taken by
+//      "where is he going?"/"where are they going?", which have no
+//      corrections.json phrase entry), had no way to reflect RULE-044's
+//      bano/bachi distinction — it always returned the stationary form
+//      regardless of sentence context.
+// Fixed (1) by syncing corrections.json's value with the already-
+// VERIFIED compiled_dict.json/master_dictionary.json value, and (2) by
+// adding a narrowly-scoped movement-verb-signal override inside
+// assembleSentenceSOV — not a new linguistic rule, just making the
+// fallback path respect the distinction Claude A already established.
+test('BUG-REPORT-WHERE-GOING: "where are you going?" uses the VERIFIED movement-locative "bachi", not "bano"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('Where are you going?');
+  assert.equal(result.garo, 'Na·a bachi re·angenga?');
+  assert.equal(result.method, 'correction');
+});
+
+test('BUG-REPORT-WHERE-GOING: "where is he going?" selects "bachi", not "bano"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('Where is he going?');
+  assert.ok(result.garo.includes('Bachi'), `expected the movement-locative "Bachi", got: ${result.garo}`);
+  assert.ok(!result.garo.includes('Bano'), `must not regress to the stationary-locative "Bano": ${result.garo}`);
+});
+
+test('BUG-REPORT-WHERE-GOING: "where are they going?" selects "bachi", not "bano"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('Where are they going?');
+  assert.ok(result.garo.includes('Bachi'), `expected the movement-locative "Bachi", got: ${result.garo}`);
+  assert.ok(!result.garo.includes('Bano'), `must not regress to the stationary-locative "Bano": ${result.garo}`);
+});
+
+// Regression guard: unrelated stationary "where" questions (no movement
+// verb present) must continue using the correct no-movement locative
+// "bano" and must not be swept up by the movement-verb-signal override,
+// which is scoped strictly to the literal word "going".
+test('BUG-REPORT-WHERE-GOING: sibling stationary location questions are unaffected ("where do you live?")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('Where do you live?');
+  assert.equal(result.garo, 'Na·a bano tanga?');
+});
+
+test('BUG-REPORT-WHERE-GOING: sibling stationary location questions are unaffected ("where is the market?")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('Where is the market?');
+  assert.equal(result.garo, 'Bajal bano?');
+});
+
+test('BUG-REPORT-WHERE-GOING: sibling stationary location questions are unaffected ("where are you?")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('Where are you?');
+  assert.equal(result.garo, 'Na·ara bano?');
+});
