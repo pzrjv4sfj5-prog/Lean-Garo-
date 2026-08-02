@@ -86,6 +86,36 @@ history, before any actual work occurs.
      linguistic authority, Claude B = engineering authority, Claude D =
      OCR ingestion only) — a migration document is a report of what
      you did, not a summary of the whole project.
+6. **Every migration document has a mandatory "Runtime Handoff"
+   section** (Project Owner directive, 2026-08-02, closing a gap left
+   by rule 5: "NV CLOSED" in a migration doc means the linguistic
+   correction is confirmed, not that a downstream runtime - compiled
+   dict, phrase maps, corrections.json lookup, whatever the engine
+   actually serves - has been confirmed to reflect it. A future
+   session reading "NV CLOSED" without that distinction can wrongly
+   assume the work is fully deployed.). Concretely:
+   - For every NV closed this session, list only the sentences/forms
+     whose runtime implementation status is NOT confirmed VERIFIED.
+     Confirmed-VERIFIED-at-runtime items are omitted, not listed as
+     "VERIFIED" - the section exists to surface gaps, not to restate
+     successes.
+   - Format:
+     ```
+     ## Runtime Handoff (<role responsible for the runtime, usually Claude B>)
+     - "<english>"
+       VERIFIED: <garo>
+       Runtime status: NOT VERIFIED
+       Action: <what the responsible role needs to check - e.g.
+       corrections.json, phrase_maps.js, compiled_dict.json, runtime
+       lookup path>
+     ```
+   - If every NV closed this session has confirmed runtime status,
+     write exactly `Runtime Handoff: None.` - do not omit the section.
+   - This applies to whichever role authors the migration document;
+     Claude A checks compiled output against its own dictionary
+     corrections, Claude B checks its own fixes against the linguistic
+     source they're meant to serve, Claude D N/A (no runtime, ingestion
+     only) unless stated otherwise.
 
 This is a standing rule, not a one-off — applies identically whether
 the next session is Claude A, Claude B, or Claude D.
