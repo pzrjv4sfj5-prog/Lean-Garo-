@@ -1,0 +1,235 @@
+[
+  {
+    "english": "To turn aside; to keep away; to ward off.",
+    "garo": "An-pile kata",
+    "pos": "vi."
+  },
+  {
+    "english": "To be not without child but pregnant.",
+    "garo": "An-rara-jakrara ong·ja",
+    "pos": "adj."
+  },
+  {
+    "english": "To stretch one's limps.",
+    "garo": "An-sala",
+    "pos": "v.",
+    "notes": "Typo 'limps' (limbs) preserved."
+  },
+  {
+    "english": "To get well; to get all right; to be pleasant; to be happy; to be in good health; to feel well.",
+    "garo": "An-senga",
+    "pos": "v."
+  },
+  {
+    "english": "Health; happiness; gladness; joy.",
+    "garo": "An-sengani",
+    "pos": "n."
+  },
+  {
+    "english": "To heal; to cure; to remedy.",
+    "garo": "An-sengata",
+    "pos": "v."
+  },
+  {
+    "english": "Healthy; happy; pleasant; cheerful.",
+    "garo": "An-senggipa",
+    "pos": "adj."
+  },
+  {
+    "english": "To feel unwell; to be sickly.",
+    "garo": "An-sengja",
+    "pos": "adj."
+  },
+  {
+    "english": "To shake or tremble with fear, horror; to shudder.",
+    "garo": "An-skita",
+    "pos": "n.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
+  },
+  {
+    "english": "A contagious skin disease; yaws.",
+    "garo": "An-soa",
+    "pos": "n."
+  },
+  {
+    "english": "A wearing apparel.",
+    "garo": "An-sre",
+    "pos": "n."
+  },
+  {
+    "english": "To change dress.",
+    "garo": "An-srea",
+    "pos": "v."
+  },
+  {
+    "english": "To shiver; to quiver; to tremble.",
+    "garo": "An-sri moa"
+  },
+  {
+    "english": "To be effective; to have given effect to.",
+    "garo": "An-sua",
+    "pos": "v."
+  },
+  {
+    "english": "Effective; powerful.",
+    "garo": "An-sua",
+    "pos": "adj."
+  },
+  {
+    "english": "Evening.",
+    "garo": "An-tam, Attam",
+    "pos": "n."
+  },
+  {
+    "english": "In the evening; in the afternoon.",
+    "garo": "An-tamo",
+    "pos": "adv."
+  },
+  {
+    "english": "Towards the evening.",
+    "garo": "An-tamchibara",
+    "pos": "adv."
+  },
+  {
+    "english": "In the evening just before darkness; time before dusk.",
+    "garo": "An-tampang",
+    "pos": "adv."
+  },
+  {
+    "english": "Self.",
+    "garo": "An-tang",
+    "pos": "pr."
+  },
+  {
+    "english": "The self; ego.",
+    "garo": "An-tang",
+    "pos": "n."
+  },
+  {
+    "english": "Plural of self; themselves; ourselves.",
+    "garo": "An-tangtang",
+    "pos": "pr."
+  },
+  {
+    "english": "As for myself; as for oneself; in its place.",
+    "garo": "An-tangnade"
+  },
+  {
+    "english": "To himself, herself, itself, one's self.",
+    "garo": "An-tangna",
+    "pos": "pr."
+  },
+  {
+    "english": "Belonging to one-self; one's own; individual; personal.",
+    "garo": "An-tangni",
+    "pos": "pr."
+  },
+  {
+    "english": "A kind of ear ornament.",
+    "garo": "Anteka",
+    "pos": "n."
+  },
+  {
+    "english": "Week; a market; a bazar; a hat.",
+    "garo": "Anti",
+    "pos": "n."
+  },
+  {
+    "english": "A fortnight; two weeks.",
+    "garo": "Antigni",
+    "pos": "n."
+  },
+  {
+    "english": "Every two weeks; fortnightly.",
+    "garo": "Antigniprak",
+    "pos": "n."
+  },
+  {
+    "english": "Week day; market day.",
+    "garo": "Antini sal",
+    "pos": "n."
+  },
+  {
+    "english": "Every week; weekly.",
+    "garo": "Anti anti",
+    "pos": "n."
+  },
+  {
+    "english": "A market place.",
+    "garo": "Antidam",
+    "pos": "n."
+  },
+  {
+    "english": "A crawfish; a shrimp; prawn; lobster.",
+    "garo": "An-tik, (Na-tik)",
+    "pos": "n."
+  },
+  {
+    "english": "Odour; smell.",
+    "garo": "An-ting",
+    "pos": "n."
+  },
+  {
+    "english": "Circumference; girth; limb; trunk.",
+    "garo": "An-tong",
+    "pos": "n."
+  },
+  {
+    "english": "Not worth anything; of no use; valueless.",
+    "garo": "A-ograng-chiograng"
+  },
+  {
+    "english": "A room; a place.",
+    "garo": "Ap",
+    "pos": "n."
+  },
+  {
+    "english": "My father; father.",
+    "garo": "Apa",
+    "pos": "n."
+  },
+  {
+    "english": "Region; side; clime.",
+    "garo": "A-pak",
+    "pos": "n."
+  },
+  {
+    "english": "Plain; a flat land; out-side; stool; dung; excrement.",
+    "garo": "A-pal",
+    "pos": "n."
+  },
+  {
+    "english": "A plough land; wet cultivation; a paddy field.",
+    "garo": "A-pal",
+    "pos": "n.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "To pass motion; to move bowels.",
+    "garo": "A-pala",
+    "pos": "v."
+  },
+  {
+    "english": "Width; breadth; a span of a bridge.",
+    "garo": "Apala",
+    "pos": "n."
+  },
+  {
+    "english": "Broad; wide; spacious; extensive.",
+    "garo": "Apala",
+    "pos": "adj.",
+    "notes": "Repeated headword."
+  },
+  {
+    "english": "To make wider; to braden.",
+    "garo": "Apalata, Apbalata",
+    "pos": "vt.",
+    "notes": "Typo 'braden' (broaden) preserved."
+  },
+  {
+    "english": "Wide;",
+    "garo": "Apalgipa, Apbalgipa",
+    "pos": "adj.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Entry cut off at the bottom of the page; continuation flows to page 12."
+  }
+]

@@ -172,6 +172,17 @@
       "flagged_for_review": 1
     },
     {
+      "page": 11,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0011.flat.json",
+      "source_entries": 46,
+      "flipped_rows": 48,
+      "flat_entries": 46,
+      "affix_excluded": 2,
+      "flagged_for_review": 2,
+      "note": "Mechanical exact-string check of flat 'garo' field against master_dictionary.json (case/whitespace-normalized, no semantic judgment): 3 of 46 entries share a headword string already present in master_dictionary.json — 'Anti' (this page: 'week; market; bazar; hat', vt.pos n. — matches an existing SUPERSEDED legacy 'week' entry AND a separate VERIFIED/native-speaker 'anti'='travel' entry, category mismatch suggests possible homonymy not duplication) and 'Apala' (both senses here: 'width/breadth/span' and 'broad/wide/spacious' — matches an existing SUPERSEDED legacy 'wide' entry that Claude A's 2026-08-01 audit already superseded in favor of VERIFIED forms ['ap·dal·a','pel·dal·a','tim·bong']). None dropped or resolved here; flagging only, per Claude D scope (duplicate/homonymy resolution is Claude A's call, not run through claude-d-preflight.js per current 2026-07-21 directive)."
+    },
+    {
       "page": 12,
       "status": "processed",
       "output_path": "data/claude_d/processed/page_0012.flat.json",
