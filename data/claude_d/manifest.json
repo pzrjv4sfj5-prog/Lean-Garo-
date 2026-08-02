@@ -172,6 +172,17 @@
       "flagged_for_review": 1
     },
     {
+      "page": 10,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0010.flat.json",
+      "source_entries": 41,
+      "flipped_rows": 43,
+      "flat_entries": 41,
+      "affix_excluded": 2,
+      "flagged_for_review": 1,
+      "note": "Mechanical exact-string check of flat 'garo' field against master_dictionary.json (case/whitespace-normalized, no semantic judgment): 5 of 41 entries share a headword string already present in master_dictionary.json. 'Anga'='I.' exactly matches existing 'i'/'Anga' (same word, same sense, likely true duplicate). 'Anga'='To warm up in the fire...' (this page's second, unrelated sense of the same headword string) also collides with the same existing 'i' entry — master currently has no separate 'Anga'=warm-up entry. 'Angko'='Me.' exactly matches existing 'me'/'Angko'. 'Angni'='My; of mine.' exactly matches existing 'my / mine'/'Angni'. 'Ang·ke'='Crab.' matches an existing SUPERSEDED legacy 'crab' entry Claude A's 2026-08-01 audit already superseded in favor of VERIFIED form 'hang·ki' (raka-differentiated, not the same word). None dropped or resolved here; flagging only, per Claude D scope."
+    },
+    {
       "page": 11,
       "status": "processed",
       "output_path": "data/claude_d/processed/page_0011.flat.json",
