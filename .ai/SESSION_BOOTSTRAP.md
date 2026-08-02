@@ -58,6 +58,34 @@ history, before any actual work occurs.
 4. Keep tool output narrow (`grep`/`sed` targeted ranges, not full
    file dumps) — every character read in-session adds to that
    session's own token cost too, independent of thread-length issues.
+5. **Migration documents report only work personally performed by the
+   authoring role** (Project Owner directive, 2026-08-02, following a
+   Claude B migration-discipline defect where a Claude B session wrote
+   a migration document in Claude A's voice, listing NV closures, RULE
+   completions, and dictionary VERIFIED/HIGH promotions as its own
+   completed work). Concretely:
+   - A Claude B migration document's "Completed work" section may only
+     contain engineering work: RC-CANDIDATE fixes, compiler/parser/
+     engine changes, `prepare-data.js` changes, tests, regression
+     protection, CI/build/deployment, repository maintenance,
+     performance, and engineering documentation.
+   - A Claude A migration document's "Completed work" section may only
+     contain linguistic work: NV closures, RULE completions,
+     dictionary/corrections.json decisions, VERIFIED/HIGH promotions,
+     grammar and corpus reconciliation.
+   - A Claude D migration document's "Completed work" section may only
+     contain deterministic OCR ingestion work under `data/claude_d/`.
+   - If another role's work affected yours (e.g. a dictionary change
+     Claude A made altered what Claude B's engine compiles, or vice
+     versa), report that under a separate **"Cross-role updates
+     (already merged)"** section — commits pulled, rebase/build/
+     runtime compatibility, whether your own code changed as a result.
+     Do not restate the other role's findings or reasoning; point to
+     their own migration document or `WORKSTATE.yaml` section instead.
+   - This mirrors the permanent ownership boundaries above (Claude A =
+     linguistic authority, Claude B = engineering authority, Claude D =
+     OCR ingestion only) — a migration document is a report of what
+     you did, not a summary of the whole project.
 
 This is a standing rule, not a one-off — applies identically whether
 the next session is Claude A, Claude B, or Claude D.
