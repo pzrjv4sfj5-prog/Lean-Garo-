@@ -31,35 +31,57 @@ claims:
       not the movement one) - the closure is corroborating evidence
       for the rule, not just a removal of doubt.
   - scope: "productivity beyond where-question forms (bano/bachi/bao) - does this -chi/-o contrast hold for locatives generally, e.g. beyond interrogatives"
-    status: needs_native_validation
+    status: verified
+    confidence: high
     status_note: >-
-      Thangseng's statement was general in wording but the triggering
-      context was entirely where-question forms. Not yet tested
-      against non-interrogative locatives (e.g. "to the market" vs
-      "at the market"). This is the same open productivity question
-      RULE-G2 already tracks for locative phrases generally - this
-      rule doesn't resolve it, it adds one more data point in the
-      same open direction.
+      Upgraded from needs_native_validation, 2026-08-02: direct
+      Thangseng relay confirms the contrast holds for ordinary noun
+      locatives, not just interrogatives, across five noun pairs
+      (market, school, home, river, forest). "chi cannot mean 'at'. chi
+      carries a sense of 'motion to'. At is locative 'o'." This closes
+      the productivity question this rule and RULE-G2 had left open.
+      One residual, non-blocking wrinkle: a pre-existing unannotated
+      dictionary entry "at the river"->"chiko" doesn't match the newly
+      confirmed "at the river"->"chibimao" - not resolved as an error,
+      since "chiko" (chi="water"+-o) may denote a distinct "at the
+      water" sense rather than being wrong; flagged in the dictionary
+      for future clarification, not blocking this rule's closure.
 examples:
   - 'Na·a bachi re·angenga? = "where are you going?" (bachi = movement-to locative, matches the movement verb re·angenga) — CLOSED'
   - 'Na·ara bano? = "where are you?" (bano = -o no-movement locative, stationary question) — CLOSED'
   - 'Bao = "where?" (bare interrogative, no locative suffix) — CLOSED'
+  - 'to the market = bajalchi / at the market = bajalo — CLOSED, NV-051'
+  - 'to school = skulchi / at school = skulo — CLOSED, NV-051'
+  - 'to home = nokchi / at home = noko — CLOSED, NV-051'
+  - 'to the river = chibimachi / at the river = chibimao — CLOSED, NV-051'
+  - 'to the forest = buringchi / in the forest = buringo — CLOSED, NV-051'
 counterexamples:
-  note: "none recorded"
+  note: "none identified"
   items: []
 launch_priority:
   - scope: "the confirmed suffix contrast"
     tier: P0
     note: "closed 2026-07-31, dictionary entries corrected same pass"
   - scope: "general productivity beyond where-question forms"
-    tier: P2
-    note: "not yet stress-tested, no urgency without a concrete failing case"
+    tier: P0
+    note: >-
+      closed 2026-08-02 (NV-051) - confirmed general across five noun
+      locatives, worth wiring into the engine as a general -chi/-o
+      contrast for any noun locative, not just where-question forms
 native_notes: >-
   Direct Thangseng quote (paraphrased, relayed via Tridip WhatsApp,
   2026-07-31): "'chi' suffix is movement to locative. 'o' is also
   locative but no movement." Given in response to Tridip's own
   clarifying question about the difference between bano/bachi/bao -
   not a correction of system output, a direct grammar explanation.
-last_updated: "2026-07-31"
+
+  Follow-up, 2026-08-02 (NV-051): "'chi' suffix cannot mean 'at'. chi
+  carries a sense of 'motion to'. At is locative 'o'. to the market =
+  bajalchi / at the market = bajalo / to the school = skulchi / at the
+  school = skulo / at home = noko / to home = nokchi / at the river =
+  chibimao / to the river = chibimachi / to the forest = buringchi /
+  in the forest = buringo." This is the concrete noun-locative
+  evidence that closes the second claim above.
+last_updated: "2026-08-02"
 updated_by: "Claude A"
-source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED)"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED) and NV-051 (CLOSED)"

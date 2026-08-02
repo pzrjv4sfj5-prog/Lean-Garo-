@@ -3624,5 +3624,10 @@
   "ripe (stative)": "food",
   "has started ripening": "food",
   "not ripe / has not ripened": "food",
-  "ripening / is ripe": "food"
+  "ripening / is ripe": "food",
+  "to the market": "travel",
+  "to school": "education",
+  "to home": "home",
+  "to the river": "nature",
+  "to the forest": "nature"
 }

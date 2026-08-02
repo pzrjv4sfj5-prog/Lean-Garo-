@@ -5849,27 +5849,32 @@
   {
     "english": "at the market / to the market",
     "garo": "Bajalchi",
-    "category": "travel"
+    "category": "travel",
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the market', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
   },
   {
     "english": "at school",
     "garo": "Skulchi",
-    "category": "education"
+    "category": "education",
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to school', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
   },
   {
     "english": "at home",
     "garo": "Nokchi",
-    "category": "home"
+    "category": "home",
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to home', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
   },
   {
     "english": "at the river",
     "garo": "chiko",
-    "category": "nature"
+    "category": "nature",
+    "notes": "FLAGGED - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): new direct evidence gives 'at the river' = 'chibimao' (chibima + -o locative), conflicting with this entry's 'chiko'. Not declared wrong outright since 'chiko' (chi='water'+-o) may be a distinct valid form ('at the water' vs 'at the river' specifically) rather than an error - insufficient evidence to say which. Retained per citation discipline; see new 'at the river'->'chibimao' entry as the directly-confirmed form."
   },
   {
     "english": "in the forest",
     "garo": "Buringchi",
-    "category": "nature"
+    "category": "nature",
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the forest', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
   },
   {
     "english": "i don't want",
@@ -6137,17 +6142,20 @@
   {
     "english": "at / to the market",
     "garo": "bajal·chi",
-    "category": "travel"
+    "category": "travel",
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to the market', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
   },
   {
     "english": "at / to home",
     "garo": "nok·chi",
-    "category": "home"
+    "category": "home",
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to home', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
   },
   {
     "english": "at / to school",
     "garo": "skul·chi",
-    "category": "education"
+    "category": "education",
+    "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to school', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries."
   },
   {
     "english": "to me / for me",
@@ -10917,12 +10925,14 @@
   {
     "english": "at the school",
     "garo": "skulo",
-    "category": "education"
+    "category": "education",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng direct relay, 2026-08-02, RULE-044): directly corroborated - '-o' is the stationary locative, 'skulo' = 'at school'. Was previously unannotated."
   },
   {
     "english": "at the market",
     "garo": "bajaro",
-    "category": "travel"
+    "category": "travel",
+    "notes": "FLAGGED - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): new direct evidence gives 'at the market' = 'bajalo', one letter off from this entry's 'bajaro' (r/l). Not declared wrong outright - could be a typo of the same word or a distinct form; insufficient evidence to say which. Retained per citation discipline; see the new 'at the market'->'bajalo' entry as the directly-confirmed form."
   },
   {
     "english": "at the church",
@@ -59802,5 +59812,65 @@
     "garo": "minenga",
     "category": "food",
     "notes": "VERIFIED/HIGH - NV-050 (Thangseng, 2026-08-02, RULE-045). \"Tegatchu minenga.\" = \"The mango is ripening\" or \"is ripe\" (continuous form usable in simple-present sense). Also confirmed with demonstrative subject: \"Ua te·gatchu minenga.\" = \"That mango is ripe.\""
+  },
+  {
+    "english": "to the market",
+    "garo": "bajalchi",
+    "category": "travel",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+  },
+  {
+    "english": "at the market",
+    "garo": "bajalo",
+    "category": "travel",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative, no movement."
+  },
+  {
+    "english": "to school",
+    "garo": "skulchi",
+    "category": "education",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+  },
+  {
+    "english": "at school",
+    "garo": "skulo",
+    "category": "education",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative; cross-references pre-existing 'at the school'->'skulo'."
+  },
+  {
+    "english": "at home",
+    "garo": "noko",
+    "category": "home",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative, no movement."
+  },
+  {
+    "english": "to home",
+    "garo": "nokchi",
+    "category": "home",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+  },
+  {
+    "english": "at the river",
+    "garo": "chibimao",
+    "category": "nature",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative. Note: coexists with an older, unresolved 'at the river'->'chiko' entry (chi+-o, possibly 'at the water' as a distinct form) - not declared a conflict, flagged for clarification, see that entry's notes."
+  },
+  {
+    "english": "to the river",
+    "garo": "chibimachi",
+    "category": "nature",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+  },
+  {
+    "english": "to the forest",
+    "garo": "buringchi",
+    "category": "nature",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative."
+  },
+  {
+    "english": "in the forest",
+    "garo": "buringo",
+    "category": "nature",
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative, no movement."
   }
 ]

@@ -2780,3 +2780,53 @@ documenting the paradigm. `corrections.json` — unchanged (idiomatic
 translation still valid, see note above). Full suite re-run before
 commit.
 
+---
+
+**NV-051, 2026-08-02 — `-chi`/`-o` locative contrast confirmed general
+(closes the open productivity question RULE-044 had flagged):**
+> "'chi' suffix cannot mean 'at'. chi carries a sense of 'motion to'.
+> At is locative 'o'. to the market = bajalchi / at the market =
+> bajalo / to the school = skulchi / at the school = skulo / at home =
+> noko / to home = nokchi / at the river = chibimao / to the river =
+> chibimachi / to the forest = buringchi / in the forest = buringo."
+
+RULE-044 (closed 2026-07-31) had confirmed the movement-to (`-chi`) vs.
+stationary (`-o`) contrast for where-question forms (`bano`/`bachi`/
+`bao`) but explicitly left open whether the same contrast holds for
+ordinary noun locatives generally — flagged `needs_native_validation`.
+This relay closes that gap with five noun-locative pairs, all
+consistent with the rule as stated: `-chi` = movement-to, `-o` =
+stationary.
+
+This also surfaces that several pre-existing dictionary entries had
+conflated the two senses under a single `-chi` form glossed "at X" (or
+"at/to X"), which is now known to be wrong for the "at" half:
+`"at the market / to the market": "Bajalchi"`, `"at school":
+"Skulchi"`, `"at home": "Nokchi"`, `"in the forest": "Buringchi"`, and
+their dotted-spelling duplicates (`bajal·chi`, `nok·chi`, `skul·chi`).
+Each is annotated INCORRECT GLOSS / superseded (not deleted, per
+citation discipline) with a note pointing to the corrected standalone
+entry — e.g. `"Bajalchi"` is retained as the correct value for "to the
+market", not "at the market".
+
+One entry is a genuine open question rather than a clear error:
+`"at the river": "chiko"` (pre-existing, unannotated) conflicts with
+the newly-confirmed `"at the river": "chibimao"`. Not resolved either
+way — `chiko` (`chi` = "water" + `-o`) may denote a distinct "at the
+water" sense rather than being wrong. Both entries are kept, `chiko`'s
+notes flag the discrepancy for a future clarifying question if useful;
+not urgent, not blocking.
+
+A pre-existing correct entry, `"at the school": "skulo"`, was already
+in the corpus unannotated — promoted to VERIFIED/HIGH as directly
+corroborated by this relay.
+
+**Action taken:** `master_dictionary.json` — 7 pre-existing entries
+annotated INCORRECT GLOSS/superseded (nothing deleted); 1 pre-existing
+entry (`at the river`→`chiko`) flagged as an open discrepancy, not an
+error; 1 pre-existing entry (`at the school`→`skulo`) promoted to
+VERIFIED/HIGH; 10 new entries added for the confirmed `-chi`/`-o`
+pairs. `docs/grammar_rules_structured/RULE-044.yaml` — productivity
+claim upgraded from `needs_native_validation` to `verified`, launch
+priority raised P2→P0, new examples and native_notes appended. No
+engine code touched. Full suite re-run before commit.

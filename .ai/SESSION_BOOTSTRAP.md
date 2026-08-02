@@ -153,7 +153,22 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**NEW, 2026-08-02, Claude A — NV-050 CLOSED: mina/minaha corrected,
+**NEW, 2026-08-02, Claude A — NV-051 CLOSED: -chi/-o locative contrast
+confirmed general.** Closes the productivity question RULE-044 had
+explicitly left open. Thangseng: "chi cannot mean 'at'. chi carries a
+sense of 'motion to'. At is locative 'o'." Confirmed with 5 noun pairs
+(market/school/home/river/forest). Surfaced several pre-existing
+dictionary entries that had conflated both senses under one `-chi`
+form glossed "at X" - annotated as superseded (nothing deleted), 10
+new correct entries added, `RULE-044.yaml` updated. Two entries left
+as genuine open discrepancies rather than errors (chiko/chibimao,
+bajaro/bajalo) - flagged, not urgent. 5 intentional Check-C
+self-consistency duplicates added to `known_dictionary_conflicts.json`
+with citation. No engine code touched. Tests 155/155,
+repository-intelligence.js 0 new violations. Claude A has no active
+task and no open linguistic items outstanding.
+
+**PRIOR, 2026-08-02, Claude A — NV-050 CLOSED: mina/minaha corrected,
 last open linguistic item resolved.** The single non-urgent open item
 flagged at the end of the NV-045/049 lineage is closed. Thangseng
 direct relay: `mina` = "ripe" (fruit) / "cooked" (food), not
