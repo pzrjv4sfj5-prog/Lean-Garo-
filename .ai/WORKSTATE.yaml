@@ -105,6 +105,17 @@ claude_a:
     No engine code touched. Claude A has no active linguistic task
     outstanding beyond the two NEEDS-DISCUSSION flags above (both
     non-urgent, awaiting native/relay input, not corpus-resolvable).
+    UPDATE (2026-08-02, later same day, new session, resumed clean at
+    checkpoint 13b4cbd): Project Owner directly confirmed 'Anti' is
+    indeed another word for market, but decided the project
+    standardizes on 'Bajal' (NV-052) rather than adding 'Anti' as a
+    second market entry. PL-0001992 ('Anti') review_status changed
+    needs-discussion -> rejected; review_notes updated to record the
+    Project Owner decision. Market/bazar/hat sense not promoted. Not a
+    promotion - no master_dictionary.json/compiled_dict.json change,
+    163/163 tests unaffected, repository-intelligence.js 0 new
+    violations. Remaining open item: 'Anga' raka ambiguity (still
+    NEEDS-DISCUSSION, unrelated to this decision).
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified
