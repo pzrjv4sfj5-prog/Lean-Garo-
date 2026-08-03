@@ -35001,7 +35001,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH — promoted from UNVERIFIED/HIGH, 2026-08-03 (Claude A), corpus-internal: matches NV-005/NV-016 (closed 2026-07-25), Thangseng direct: 'nanga = need, nangja = don't need', worked example 'need to eat' -> 'cha·na nanga'. No new native input required, evidence was already on record."
   },
   {
     "english": "needle",
@@ -48110,7 +48110,7 @@
     "category": "verbs",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — corpus-internal fix, 2026-08-03 (Claude A): contradicts already-VERIFIED evidence, NV-005/NV-016 (closed 2026-07-25), that 'nanga' = need, directly evidenced by 'need to eat' -> 'cha·na nanga'. 'sikenga' is a stale holdover from before that closure never propagated to this entry (it did propagate to the 10 'i want to X' sentences via NV-021 -> 'ska', but 'need' was left on the old form pending a separate decision that was, in fact, already settled by NV-005/016). Not deleted, retained per citation discipline. corrections.json 'need' key corrected 'sikenga'->'nanga' in the same pass."
   },
   {
     "english": "i want to eat",

@@ -211,6 +211,19 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-03, Claude A — "need" stale-sikenga bug fixed
+(corpus-internal, no new native input needed; same session as NV-054
+below).** The backlog item "8 stale want-to-X re-tags" was itself
+stale: all 10 verb+na "i want to X" sentences were already fixed to
+`ska` via NV-021 (2026-07-18). Real bug found instead: `corrections.json`
+`'need'->'sikenga'` directly contradicted already-VERIFIED NV-005/
+NV-016 (closed 2026-07-25: `nanga`=need, `nangja`=don't need). Fixed:
+`corrections.json` `'need'->'nanga'`; `master_dictionary.json` `nang·a`
+entry promoted VERIFIED/HIGH, `sikenga` entry marked SUPERSEDED
+(cited, not deleted). Still genuinely open, needs native input:
+"i want water"/"i want food"/"i want to see you" (object+ko+sikenga
+pattern, unconfirmed for `ska`).
+
 **NEW, 2026-08-03, Claude A — NV-054 closed (Thangseng direct native
 validation transcript, resumed from migration checkpoint `152d014`,
 re-verified clean via `git fetch` before acting).** Retroactively

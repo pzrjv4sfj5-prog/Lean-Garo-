@@ -206,6 +206,26 @@ claude_a:
     confirmation before handing back to Claude B; chiko vs chibimao
     (NV-051, carried, non-urgent); PL-0002012/0002013 pending
     native-speaker input.
+    UPDATE (2026-08-03, same session): item-1 audit. Re-checked the
+    "8 stale want to X" claim against actual corrections.json state -
+    it was itself stale: all 10 "i want to X [verb]" sentences (sleep,
+    eat, drink, go, come, work, study, pray, speak, dance) were already
+    corrected to 'ska' via NV-021 (2026-07-18); nothing left to re-tag
+    there. Found one genuine stale bug instead, resolvable
+    corpus-internally with no new native input: corrections.json
+    'need'->'sikenga' directly contradicted already-VERIFIED NV-005/
+    NV-016 (closed 2026-07-25: "nanga = need, nangja = don't need",
+    worked example "need to eat"->"cha·na nanga") - that closure
+    propagated to the 10 want-sentences but was never applied to
+    'need' itself. Fixed: corrections.json 'need'->'nanga';
+    master_dictionary.json 'need'/'nang·a' entry (idx 5431) promoted
+    UNVERIFIED/HIGH->VERIFIED/HIGH; 'need'/'sikenga' entry (idx 7075,
+    was VERIFIED/native-speaker) marked SUPERSEDED with citation, not
+    deleted. Genuinely still open (needs native input, NOT guessed at):
+    'i want water'/'i want food'/'i want to see you' - object+ko+
+    sikenga pattern, unconfirmed whether 'ska' works the same way
+    after a bare object (no verb+na to attach it to). 3 open items,
+    not 8.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified
