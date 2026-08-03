@@ -22,17 +22,31 @@ of sika."* Corrected:
   correctly demonstrate `sikenga`'s real sense (continuous of `sika`).
 
 **Still open, not touched:**
-- `"need"` (still `sikenga`) — Thangseng draws a clear conceptual line
-  between desire (`ska`) and necessity, and the 2026-07-13 proposal
-  independently suggested `nanga` for "need." Whether `"need"` should
-  become `ska` or `nanga` is a distinct question, not resolved by
-  today's answer, and not guessed at here.
-- `"i want water"` / `"i want food"` / `"i want to see you"` — these
-  use an object+`·ko`+`sikenga` pattern with no verb to attach `ska`
-  to via the confirmed `verb+na+ska` template. Held pending
-  confirmation that `ska` works the same way after a bare object.
-- `Kolomko bag-o sikatbo` ("put the pen inside the bag") — still not
-  added anywhere; the `bag-o` raka-locality question is unresolved.
+- `"need"` — RESOLVED 2026-08-03, corpus-internally (Claude A, no new native
+  input needed): the already-VERIFIED NV-005/NV-016 closure (2026-07-25,
+  "nanga = need") had never propagated to the `'need'` key itself, which
+  was stuck on stale `sikenga`. Fixed: `corrections.json`, `master_dictionary.json`.
+  Independently re-confirmed the same day by a direct Thangseng quote via
+  Tridip: "Need = nanga. Want = ska." See NV-016/NV-021-followup in
+  `THANGSENG_NATIVE_VALIDATION.md`.
+- `"i want water"` / `"i want food"` / `"i want to see you"` — RESOLVED
+  2026-08-03 (NV-021 follow-up, direct Thangseng answer, 2026-07-19,
+  relayed 2026-08-03): wanting water/food is expressed as wanting to
+  drink/eat, with the object's `ko` suffix DROPPED — `"(Anga) Chi ringna
+  skenga."` = "I want to drink water"; `"apple cha'na skenga"` = "I want
+  to eat apple." Root is `skenga` (continuous of `ska`, want), not
+  `sikenga` (continuous of `sika`, push/insert) — corrected throughout.
+  "I want to see you" already has its own verb (`nina`) so keeps `ko`;
+  root corrected to `skenga` only. **New open question surfaced by this
+  fix, not resolved:** today's examples use `skenga`, but the 10
+  already-implemented "i want to X" sentences (NV-021, 2026-07-18) use
+  bare `ska` for the identical verb+na+X frame — left untouched pending
+  clarification of whether this is free variation or a real
+  register/aspect distinction.
+- `Kolomko bag-o sikatbo` ("put the pen inside the bag") — RESOLVED
+  2026-08-03 (same relay): the hyphen in `bag-o` is purely orthographic
+  (marks the English-loanword/Garo-suffix boundary), not raka. Added to
+  `master_dictionary.json`, VERIFIED/HIGH.
 
 Original proposal (pre-resolution) kept below for the record.
 

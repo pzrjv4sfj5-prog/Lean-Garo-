@@ -226,6 +226,29 @@ claude_a:
     sikenga pattern, unconfirmed whether 'ska' works the same way
     after a bare object (no verb+na to attach it to). 3 open items,
     not 8.
+    UPDATE (2026-08-03, same session): NV-021 follow-up arrived
+    (Thangseng direct, 2026-07-19 transcript, relayed by Tridip) -
+    closes all 3 remaining open items above. (1) "want water/food" is
+    reframed as "want to drink/eat" with 'ko' dropped: 'chi ringna
+    skenga'/'apple cha'na skenga' pattern. Fixed corrections.json +
+    master_dictionary.json for 'i want water'->'Anga chi ringna
+    skenga', 'i want food'->'Anga mi cha·na skenga' (by direct analogy
+    to the apple example, 'mi' itself not independently confirmed -
+    flagged), 'i want to see you'->'Anga nang·ko nina skenga' (ko kept,
+    has its own verb; root sikenga->skenga). (2) need=nanga/want=ska
+    directly re-confirmed - already matched this session's earlier
+    corpus-internal fix, no further action. (3) bag-o hyphen resolved:
+    purely orthographic (loanword/suffix boundary), not raka. Added
+    'Kolomko bag-o sikatbo' (put the pen inside the bag) to
+    master_dictionary.json, first time added anywhere. NEW discrepancy
+    surfaced, NOT resolved: today's answer uses 'skenga' throughout,
+    but the 10 already-implemented want-to-X sentences (NV-021,
+    2026-07-18) use bare 'ska' for the same verb+na+X frame - left
+    untouched pending clarification. Claude A backlog now: the 4
+    flagged 'to X' substitutions (already sent to native by Project
+    Owner); chiko vs chibimao (NV-051, non-urgent); ska-vs-skenga
+    tension (new, non-urgent). No open pending_lexicon items remain
+    (PL-0002012/0002013 closed in NV-054).
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified

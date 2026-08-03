@@ -211,6 +211,22 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-03, Claude A — NV-021 follow-up closed (Thangseng
+direct, 2026-07-19 transcript, relayed by Tridip); resolves the 3
+open items from the "need" fix above, same session.** (1) "Want
+water/food" reframed as "want to drink/eat", `ko` dropped: `chi
+ringna skenga` / `apple cha'na skenga`. Fixed `corrections.json` +
+`master_dictionary.json`: "i want water"→`Anga chi ringna skenga`,
+"i want food"→`Anga mi cha·na skenga` (by analogy, `mi` flagged as
+unconfirmed word-for-word), "i want to see you"→`Anga nang·ko nina
+skenga` (keeps `ko`, has own verb; root corrected). (2) need=nanga/
+want=ska directly re-confirmed, already matched this session's prior
+fix. (3) `bag-o` hyphen resolved as purely orthographic, not raka —
+`Kolomko bag-o sikatbo` added to `master_dictionary.json` for the
+first time. **New tension flagged, not resolved:** today's examples
+use `skenga` where the 10 already-implemented "want to X" sentences
+(2026-07-18) use bare `ska` for the same frame — left untouched.
+
 **NEW, 2026-08-03, Claude A — "need" stale-sikenga bug fixed
 (corpus-internal, no new native input needed; same session as NV-054
 below).** The backlog item "8 stale want-to-X re-tags" was itself

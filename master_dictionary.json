@@ -48150,7 +48150,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Native: wanting water/food is expressed as wanting to drink/eat, with the object's usual 'ko' suffix DROPPED: '(Anga) Chi ringna skenga.' = 'I want to drink water.' Also corrects the root: 'sikenga' (continuous of 'sika', push/insert) was wrong here; the intended form is 'skenga' (continuous of 'ska', want) - a minimal pair easy to mistype/mishear. Not deleted, retained per citation discipline. corrections.json corrected in the same pass."
   },
   {
     "english": "i want food",
@@ -48158,7 +48158,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Native gave the parallel case explicitly: \"'apple cha'na skenga' translates into 'i want to eat apple'\" (ko dropped, same eat/drink reframing as water). 'mi'(food/rice) + cha·na(to eat) applied by direct analogy to the stated apple example - not independently confirmed word-for-word for 'mi' specifically, flagged as such. Also corrects the root: 'sikenga'->'skenga' (see 'i want water' entry note). Not deleted, retained per citation discipline. corrections.json corrected in the same pass."
   },
   {
     "english": "i want to come",
@@ -60938,5 +60938,37 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
+  },
+  {
+    "english": "i want water",
+    "garo": "Anga chi ringna skenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Literally 'water wants to drink' per the rules established so far, per native's own framing of the peculiarity; 'ko' dropped in this eat/drink-desire construction. See superseded 'Anga chi·ko sikenga' entry for full citation."
+  },
+  {
+    "english": "i want food",
+    "garo": "Anga mi cha·na skenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH (by direct analogy) — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Applies the native-confirmed eat/drink-desire pattern ('apple cha'na skenga' = 'I want to eat apple', ko dropped) to 'mi'(food). The pattern itself is VERIFIED; 'mi' as the specific noun was not independently native-confirmed word-for-word - flagged, not claimed as a direct quote."
+  },
+  {
+    "english": "i want to see you",
+    "garo": "Anga nang·ko nina skenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Unlike water/food, this already has its own verb ('nina', to see) — the native's eat/drink ko-drop peculiarity was stated specifically for wanting-to-eat/drink, not generalized to other verbs here, so 'ko' is retained on the object. Root corrected 'sikenga'->'skenga' (continuous of 'ska'/want, not 'sika'/push-insert) to match today's directly-evidenced form. NOTE: this creates an unresolved tension with the already-implemented, already-VERIFIED 10 'i want to X' sentences (NV-021, 2026-07-18), which use bare 'ska' rather than 'skenga' for the identical verb+na+X frame (e.g. 'Anga cha·na ska' = 'i want to eat', vs. today's 'apple cha'na skenga' = 'i want to eat apple') - flagged as a genuine open question (register/tense-aspect distinction vs. free variation), NOT resolved here, the 10 prior entries left untouched pending clarification."
+  },
+  {
+    "english": "put the pen inside the bag",
+    "garo": "Kolomko bag-o sikatbo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Was flagged in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md as 'not added anywhere yet' pending the bag-o hyphen question, now resolved (same relay): the hyphen in 'bag-o' is purely orthographic, marking the English-loanword/Garo-suffix boundary for readability - it has no grammatical function and is NOT raka. -o here is the stationary locative (RULE-044). Newly added, first entry."
   }
 ]

@@ -2992,3 +2992,51 @@ documenting the Bao refinement and banona/banoni suffixes; core -chi/-o
 movement claim unaffected. No engine code touched. Full linguistic
 review only — runtime propagation handed off to Claude B (see Runtime
 Handoff).
+
+---
+
+**NV-021 follow-up, 2026-07-19 (relayed 2026-08-03) — object-case
+"want" construction, need/want re-confirmed, bag-o hyphen resolved
+(Thangseng, direct, via Tridip WhatsApp):**
+> "Usually, wanting water and food is talked in terms of wanting to
+> eat and drink. (Anga) Chi ringna skenga. = I want to drink water...
+> the usual 'ko' suffix is dropped... Likewise, 'apple cha'na skenga'
+> translates into 'i want to eat apple'... Need = nanga. Want = ska...
+> the hyph[en] has no function here except distinguishing between the
+> English word and the Garo suffix."
+
+Three items closed:
+
+1. **Object-case "want" construction resolved.** "I want water"/"I
+   want food" are not object+`ko`+`ska` directly — they're reframed as
+   "want to drink/eat", with `ko` dropped: `chi ringna skenga` (not
+   `chi·ko ringna skenga`). Corrected `corrections.json` and
+   `master_dictionary.json` for "i want water" (`Anga chi ringna
+   skenga`) and "i want food" (`Anga mi cha·na skenga`, by direct
+   analogy to the stated apple/eat example - "mi" itself not
+   independently confirmed word-for-word, flagged). "I want to see
+   you" already has its own verb (`nina`) so `ko` is retained; only
+   the root corrected `sikenga`→`skenga`.
+2. **`need`=`nanga`, `want`=`ska` re-confirmed directly** — matches
+   the corpus-internal fix already applied this session (before this
+   message arrived) from already-VERIFIED NV-005/NV-016 evidence.
+   No further action; both sources now agree.
+3. **`bag-o` hyphen resolved** — purely orthographic (loanword/suffix
+   boundary marker), not raka. `Kolomko bag-o sikatbo` ("put the pen
+   inside the bag") added to `master_dictionary.json`, VERIFIED/HIGH -
+   first time this sentence has been added anywhere.
+
+**New discrepancy surfaced, NOT resolved:** today's examples use
+`skenga` (continuous of `ska`) throughout, but the 10 already-
+implemented "i want to X" sentences (NV-021, 2026-07-18) use bare
+`ska` for the identical verb+na+X frame (e.g. `Anga cha·na ska` = "i
+want to eat", vs. today's `apple cha'na skenga` = "i want to eat
+apple"). Left untouched pending clarification — free variation,
+register difference, or real tense/aspect distinction is unclear from
+current evidence.
+
+**Action taken:** `master_dictionary.json` — 4 entries added, 2
+superseded/cited. `src/data/corrections.json` — 3 entries corrected.
+`docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md` — all
+three "still open" items marked resolved with citations. No engine
+code touched.
