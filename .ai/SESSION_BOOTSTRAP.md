@@ -211,6 +211,18 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude A — NV-055 closed: "salt"=kari confirmed
+directly, resolving the 2026-08-01 supersession dispute flagged as an
+open Claude-A handoff in `docs/RUNTIME_ENGINEERING_AUDIT_20260803.md`.**
+`master_dictionary.json` idx 215/472 (`salt`→`Kari`) promoted/resolved
+to VERIFIED/HIGH; idx 3543 (`Salt`→`kai·sim`, previously
+`variant/VERIFIED/HIGH` with no clear citation trail) annotated
+CONTRADICTED, not deleted. No new entries added — existing `Kari`
+entries reused, no duplicates. Audit doc updated with a resolution
+note. The underlying `pickPrimary`/`grammarOverrides` precedence bug
+is unchanged, still Claude B's task — now unblocked by a single,
+uncontested VERIFIED candidate to point the fix at.
+
 **NEW, 2026-08-03, Claude A — NV-021 follow-up closed (Thangseng
 direct, 2026-07-19 transcript, relayed by Tridip); resolves the 3
 open items from the "need" fix above, same session.** (1) "Want

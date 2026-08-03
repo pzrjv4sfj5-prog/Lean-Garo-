@@ -118,6 +118,15 @@ before), shipping a fix here without full verification would violate
 "smallest safe fix" + "regression tests mandatory." Flagged in detail so
 it's directly actionable next session.
 
+**UPDATE, 2026-08-04 (Claude A, NV-055):** the linguistic side of this is
+now resolved — direct native confirmation: salt is `kari`, not `kai·sim`.
+`master_dictionary.json` idx 215/472 promoted/un-superseded to
+VERIFIED/HIGH; idx 3543 (`kai·sim`) annotated CONTRADICTED, not deleted.
+See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-055. The `pickPrimary`/
+`grammarOverrides` precedence bug itself is unchanged and still open —
+Claude B's task, now unblocked by a clear, single, uncontested VERIFIED
+candidate (`kari`) to point the fix at.
+
 ## Repository locations still requiring engineering work
 
 - `prepare-data.js`: `grammarOverrides` vs. VERIFIED-candidate precedence

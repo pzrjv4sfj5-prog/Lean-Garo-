@@ -3040,3 +3040,26 @@ superseded/cited. `src/data/corrections.json` — 3 entries corrected.
 `docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md` — all
 three "still open" items marked resolved with citations. No engine
 code touched.
+
+---
+
+**NV-055, 2026-08-04 — "salt" = kari confirmed, resolves 2026-08-01
+supersession dispute (Tridip relay):**
+> Translation of "salt" into Garo: kari
+
+Resolves the open Claude-A handoff flagged in
+`docs/RUNTIME_ENGINEERING_AUDIT_20260803.md` ('salt' section): a
+2026-08-01 corpus-internal audit had marked `master_dictionary.json`'s
+`salt`→`Kari` entries SUPERSEDED in favor of `Salt`→`kai·sim` (tagged
+`variant/VERIFIED/HIGH` with no clear citation trail). Direct native
+confirmation now settles it: `kari` is correct.
+
+**Action taken:** `master_dictionary.json` — idx 215 (`salt (noun)`→
+`Kari`) promoted VERIFIED/HIGH; idx 472 (`salt`→`Kari`) un-superseded,
+resolved; idx 3543 (`Salt`→`kai·sim`) annotated CONTRADICTED, not
+deleted per citation discipline. No new entries added — existing
+`Kari` entries reused, no duplicates created.
+`docs/RUNTIME_ENGINEERING_AUDIT_20260803.md` — resolution note appended
+to the 'salt' section. The underlying `pickPrimary`/`grammarOverrides`
+precedence bug remains Claude B's task, now unblocked by having a
+single, uncontested VERIFIED candidate to point the fix at.

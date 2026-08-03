@@ -249,6 +249,16 @@ claude_a:
     Owner); chiko vs chibimao (NV-051, non-urgent); ska-vs-skenga
     tension (new, non-urgent). No open pending_lexicon items remain
     (PL-0002012/0002013 closed in NV-054).
+    UPDATE (2026-08-04, NV-055): "salt"=kari confirmed directly,
+    resolving the 2026-08-01 supersession dispute flagged as an open
+    Claude-A handoff in docs/RUNTIME_ENGINEERING_AUDIT_20260803.md.
+    master_dictionary.json idx 215/472 (salt->Kari) promoted/resolved
+    to VERIFIED/HIGH; idx 3543 (Salt->kai·sim, previously
+    variant/VERIFIED/HIGH with no clear citation) annotated
+    CONTRADICTED, not deleted. No new entries added, no duplicates.
+    Audit doc updated with resolution note. Underlying pickPrimary/
+    grammarOverrides precedence bug still open for Claude B, now
+    unblocked with a single uncontested VERIFIED candidate to target.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified
