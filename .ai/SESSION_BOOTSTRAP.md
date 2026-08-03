@@ -211,6 +211,18 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude A — NV-056 closed: jean="which" confirmed
+distinct from jeon/jeo="where" (NV-054); 4 new banona/banoni examples;
+adult/mature confirmed.** `jean` resolves the leftover "which"/"where"
+ambiguity from NV-053/NV-054 - it's a genuine separate word. 4 new
+banona/banoni example sentences added (2 coexist with older unverified
+legacy entries using different word order, not reconciled). `dal·gimin`/
+`brigimin` = mature, `dal·gimin mande` = adult, all new. 7 entries
+added total, nothing overwritten or duplicated. **Not answered in this
+transcript:** the 3 flagged "to X" substitutions and the 3-way "angry"
+cluster were asked in the same conversation but not covered by
+Thangseng's replies here - still open.
+
 **NEW, 2026-08-04, Claude A — NV-055 closed: "salt"=kari confirmed
 directly, resolving the 2026-08-01 supersession dispute flagged as an
 open Claude-A handoff in `docs/RUNTIME_ENGINEERING_AUDIT_20260803.md`.**

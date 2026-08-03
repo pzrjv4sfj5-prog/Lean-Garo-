@@ -259,6 +259,18 @@ claude_a:
     Audit doc updated with resolution note. Underlying pickPrimary/
     grammarOverrides precedence bug still open for Claude B, now
     unblocked with a single uncontested VERIFIED candidate to target.
+    UPDATE (2026-08-04, NV-056): jean="which" confirmed distinct from
+    jeon/jeo="where" (NV-054) - resolves the "which"/"where" ambiguity
+    left open there. 4 new banona/banoni example sentences added (2
+    coexist with older unverified legacy entries using different word
+    order - not reconciled, flagged). adult/mature confirmed:
+    dal·gimin, brigimin = mature (new, coexist with pre-existing
+    unverified dil·ding bal·jak); dal·gimin mande = adult (first add).
+    7 new master_dictionary.json entries, nothing overwritten, no
+    duplicates. RULE-044.yaml native_notes appended. NOT answered in
+    this transcript: the 3 flagged "to X" substitutions and the
+    3-way "angry" cluster were asked in the same conversation but
+    Thangseng's replies here don't cover them - still open.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified

@@ -60971,5 +60971,69 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Was flagged in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md as 'not added anywhere yet' pending the bag-o hyphen question, now resolved (same relay): the hyphen in 'bag-o' is purely orthographic, marking the English-loanword/Garo-suffix boundary for readability - it has no grammatical function and is NOT raka. -o here is the stationary locative (RULE-044). Newly added, first entry."
+  },
+  {
+    "english": "which (relative pronoun)",
+    "garo": "jean",
+    "category": "grammar",
+    "pos": "pr.",
+    "classifier": null,
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). Native, distinguishing from the NV-054 'where' cluster: \"jeon/jeo is relative 'where'. jean is relative 'which'.\" A genuine separate word — confirms 'which' and 'where' are NOT the same lexeme in this relative-pronoun cluster, resolving the ambiguity left open by NV-053/NV-054."
+  },
+  {
+    "english": "where did you come from?",
+    "garo": "Banoni re'baa na'ara?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence. Coexists with pre-existing unverified entry idx 997 ('Na·a banoni reba·a?') — different word order/particle placement for the same gloss, not overwritten. Flagged, not reconciled."
+  },
+  {
+    "english": "where is this man from?",
+    "garo": "Banoni mandesa iara?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence."
+  },
+  {
+    "english": "where should i take this book to?",
+    "garo": "Ia ki'tapko banona ra'angbo?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence."
+  },
+  {
+    "english": "where should i go to?",
+    "garo": "Banona re'angbo angara?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence. Coexists with pre-existing unverified entry idx 999 ('Ang·ara batchi reangbo?', using bachi/batchi rather than banona) — same gloss, different construction, not overwritten. Flagged, not reconciled."
+  },
+  {
+    "english": "mature",
+    "garo": "dal·gimin",
+    "category": "adjectives",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH entry, separate from the pre-existing UNVERIFIED 'dil·ding bal·jak' (idx 5333) — not reconciled, both retained."
+  },
+  {
+    "english": "mature",
+    "garo": "brigimin",
+    "category": "adjectives",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). Variant/synonym of 'dal·gimin'. New VERIFIED/HIGH entry."
+  },
+  {
+    "english": "adult",
+    "garo": "dal·gimin mande",
+    "category": "people",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). Literally 'mature person' — dal·gimin (mature) + mande (person). New VERIFIED/HIGH entry, first time 'adult' added."
   }
 ]

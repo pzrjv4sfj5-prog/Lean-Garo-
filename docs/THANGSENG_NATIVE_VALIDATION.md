@@ -3063,3 +3063,46 @@ deleted per citation discipline. No new entries added — existing
 to the 'salt' section. The underlying `pickPrimary`/`grammarOverrides`
 precedence bug remains Claude B's task, now unblocked by having a
 single, uncontested VERIFIED candidate to point the fix at.
+
+---
+
+**NV-056, 2026-08-03/04 — jean="which" (distinct from jeon/jeo="where"),
+4 new banona/banoni examples, adult/mature confirmed (Thangseng, via
+Tridip WhatsApp):**
+> Bano can take 'na,' 'ni'. Example: Banona = where to?; Banoni = Where
+> from? Banoni re'baa na'ara? = where did you come from? Banoni
+> mandesa iara? = where is this man from? Ia ki'tapko banona ra'angbo?
+> = Where should I take this book to? Banona re'angbo angara? = Where
+> should I go to? [...] jeon/jeo is relative 'where'. jean is relative
+> 'which'. [...] dal'gimin = mature; brigimin = mature; dal'gimin
+> mande = adult.
+
+Three items closed:
+
+1. **`jean` = relative "which"**, genuinely distinct from `jeon`/`jeo`
+   ("where", NV-054). This resolves the ambiguity NV-053/NV-054 left
+   open about whether a separate "which" word exists — it does.
+   New VERIFIED/HIGH entry.
+2. **4 new banona/banoni example sentences** added — see RULE-044 for
+   the grammar-side note. Two of the four glosses ("where did you come
+   from?", "where should I go to?") already had older, unverified
+   legacy entries with different word order/construction; not
+   overwritten, both retained, flagged as unreconciled.
+3. **adult/mature**: `dal·gimin` and `brigimin` both confirmed as
+   "mature" (new entries, coexisting with the pre-existing unverified
+   `dil·ding bal·jak`, not reconciled); `dal·gimin mande` ("mature
+   person") confirmed as "adult" - first time this word is added.
+
+**Not answered in this transcript, still open:** the 3 flagged "to X"
+substitutions (to commit adultery→Gro daka, to hang→al·a·i·na, to
+support→Chaka) and the three-way "angry" cluster were relayed as
+questions by the Project Owner in this same conversation but Thangseng's
+replies here only cover the bano-suffix and jean/adult topics — those
+two items remain genuinely unanswered, not resolved by this transcript.
+
+**Action taken:** `master_dictionary.json` — 7 entries added (jean,
+4 example sentences, mature×2, adult). No entries overwritten;
+existing unverified legacy entries with overlapping English glosses
+retained and cross-referenced, not deleted. `docs/grammar_rules_
+structured/RULE-044.yaml` — native_notes appended. No engine code
+touched.
