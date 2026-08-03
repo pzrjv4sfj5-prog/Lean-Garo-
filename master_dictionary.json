@@ -22425,7 +22425,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH — native correction 2026-08-03 (Project Owner direct relay): ma·jong is the correct form for mother's-elder-sister/aunt; a·jong (previously VERIFIED/HIGH/doc7 under \"Mother's elder sister\") is superseded by this decision. NV-053."
   },
   {
     "english": "aunt (MoYoSi)",
@@ -46079,7 +46079,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/doc7"
+    "notes": "SUPERSEDED — native correction 2026-08-03 (Project Owner direct relay): ma·jong confirmed as the correct form; a·jong superseded, not deleted. NV-053."
   },
   {
     "english": "mound of earth",
@@ -58595,14 +58595,14 @@
     "garo": "Gana",
     "category": null,
     "pos": "v.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS."
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS. Native-corroborated 2026-08-03 (Project Owner direct relay): Gana (verb) = \"to put on, clothe\" — consistent with this existing gloss. NV-053."
   },
   {
     "english": "a wearing apparel.",
     "garo": "Gana",
     "category": null,
     "pos": "-n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS."
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS. Refined 2026-08-03 (Project Owner direct relay): Gana (noun) specifically = dress/cloth worn by Garo women to cover the lower body, not a generic \"wearing apparel\" gloss. Original OCR gloss retained in english field pending a full re-gloss pass. NV-053."
   },
   {
     "english": "a ceremony at which a nokma (i.e. rich man) assumes the elbow rings.",
@@ -60164,13 +60164,15 @@
     "english": "To have sexual intercourse.",
     "garo": "An·chaa",
     "category": null,
-    "pos": "v."
+    "pos": "v.",
+    "notes": "OPEN — Project Owner flagged 2026-08-03: no reference available to confirm either form. Left unresolved, not promoted, not superseded. NV-053."
   },
   {
     "english": "To have sexual intercourse.",
     "garo": "An·chi-jakchi nanga",
     "category": null,
-    "pos": "v."
+    "pos": "v.",
+    "notes": "OPEN — Project Owner flagged 2026-08-03: no reference available to confirm either form. Left unresolved, not promoted, not superseded. NV-053."
   },
   {
     "english": "To yield; to surrender.",
@@ -60633,7 +60635,8 @@
     "english": "A wearing apparel.",
     "garo": "An-sre",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "Refined per Holbrook's dictionary (relayed by Project Owner, 2026-08-03): specifically the front end of a non-Christian Garo man's loincloth, not a generic \"wearing apparel\" gloss. Original OCR gloss retained in english field pending a full re-gloss pass; source-cited refinement logged here per evidence-first discipline. NV-053."
   },
   {
     "english": "To change dress.",

@@ -211,7 +211,49 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**NEW, 2026-08-02, Claude B — bano/bachi bug report fixed; "ripe"
+**NEW, 2026-08-03, Claude A — Runtime Acceptance Audit spot-check +
+raw-scan done (read-only); NV-053 closed several native-relay items
+(resumed from checkpoint `7c490ad`, re-verified clean before acting).**
+Two parts. (1) Spot-checked the 12 (11 found in current repo state,
+not a concern — data has moved on) infinitive-exclusion "to X" runtime
+substitutions flagged by the audit: 6 confirmed acceptable spelling-
+variant alternates, 1 (`to speak`) has a stray-formatting runtime
+value worth a data-hygiene pass, 1 (`to whisper`) the VERIFIED master
+form itself looks like an OCR corruption (`nnt`→likely `mit`), and 4
+(`to be angry`→`Ka-chaa`, `to commit adultery`→`Gro daka`, `to hang`→
+`al·a·i·na`, `to support`→`Chaka`) flagged as likely-wrong or uncertain
+pending native-speaker confirmation before handing back to Claude B.
+Note: the `Ka-chaa`/"to be angry" flag was withdrawn on cross-check —
+a pre-existing 2026-07-25 native-correction note on that entry already
+documents anger as a real secondary sense (primary = to berate/scold).
+Raw-scanned the 3 structurally-mismatched entries (`a·jong`, `a'kim`,
+`a·gan·chu·na`) — none showed an OCR/import column-shift; all trace to
+coherent known roots. Surfaced one unflagged question instead:
+`a·jong`/`ma·jong` duplicate-concept overlap. (2) Project Owner relay
+closed that question and three others as NV-053: `ma·jong` confirmed
+correct, promoted VERIFIED/HIGH; `a·jong` ("Mother's elder sister")
+superseded. `An-sre` gloss refined per Holbrook's dictionary citation
+(front end of a non-Christian Garo man's loincloth). `Gana`(verb)
+corroborated ("to put on, clothe"); `Gana`(noun) gloss refined
+("dress/cloth worn by Garo women to cover the lower body") — both
+already an allowlisted Check-C synonym pair from 2026-08-02, this only
+refines English gloss text. `An·chaa`/`An·chi-jakchi nanga` (also an
+allowlisted synonym pair) flagged OPEN/no-reference per Project Owner
+— explicitly couldn't confirm either form. Two new candidates logged
+`needs-discussion` in `pending_lexicon.json`, NOT promoted: `PL-0002012`
+"which" (relative pronoun) = `jeon`/`jeo`; `PL-0002013` "which"
+(interrogative pronoun) = `bachina?`/`bao?`/`bano?` — Project Owner
+explicitly unsure, and it collides with the existing `Bachina`="to
+which place" (locative) sense, needs disambiguation not just
+confirmation. `master_dictionary.json`: 7 entries annotated.
+`compiled_dict.json`/`category_index.json` rebuilt via
+`prepare-data.js`. 164/164 tests, `repository-intelligence.js` 0 new
+violations (Check D initially caught a missing `import_batch` on both
+new PL entries, fixed). No engine code touched. Runtime Acceptance
+Report itself (Part 1 of this session) was scoped read-only and is not
+committed to the repo.
+
+**PRIOR, 2026-08-02, Claude B — bano/bachi bug report fixed; "ripe"
 Runtime Handoff resolved, uncovered a wider isVerified anchoring bug
 (78 keys corpus-wide).** Two independent fixes, both pushed (HEAD
 ea77de5): (1) "where is X going?" was regressing to the stationary

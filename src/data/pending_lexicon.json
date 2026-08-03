@@ -52963,5 +52963,57 @@
     },
     "promotion_status": "promoted",
     "promoted_date": "2026-08-02T10:59:11.303Z"
+  },
+  {
+    "id": "PL-0002012",
+    "english": "which (relative pronoun)",
+    "garo": "jeon / jeo",
+    "category": "grammar",
+    "pos": "pr.",
+    "classifier": null,
+    "notes": "NEW CANDIDATE — Project Owner direct relay 2026-08-03, stated without hedging: distinct from the existing interrogative/general \"which\" (badia/badiya, Bachina=\"to which place\"). No corpus support yet. Logged per evidence-first discipline pending formal NV closure — not promoted to master_dictionary.json.",
+    "provenance": {
+      "source": "Project Owner direct relay (WhatsApp/session)",
+      "source_page": null,
+      "import_batch": "MANUAL-2026-08-03T-native-relay-NV053",
+      "import_date": "2026-08-03T10:11:29.508Z",
+      "ocr_version": null
+    },
+    "review_status": "needs-discussion",
+    "review_notes": "Awaiting NV-item formal closure before promotion; distinguish from interrogative \"which\" entry PL-0002013.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-03",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002013",
+    "english": "which (interrogative pronoun)",
+    "garo": "bachina? / bao? / bano?",
+    "category": "grammar",
+    "pos": "pr.",
+    "classifier": null,
+    "notes": "NEW CANDIDATE — Project Owner direct relay 2026-08-03, explicitly flagged as unsure (\"this I'm not sure of\"). CONFLICT: \"Bachina\" already exists in master_dictionary.json as \"to which place.\" (adv.) — a locative sense, not plain interrogative \"which.\" Do not promote without native-speaker disambiguation of these two senses.",
+    "provenance": {
+      "source": "Project Owner direct relay (WhatsApp/session), self-flagged uncertain",
+      "source_page": null,
+      "import_batch": "MANUAL-2026-08-03T-native-relay-NV053",
+      "import_date": "2026-08-03T10:11:29.508Z",
+      "ocr_version": null
+    },
+    "review_status": "needs-discussion",
+    "review_notes": "Uncertain per source; also collides with existing Bachina=\"to which place\" sense. Needs native-speaker confirmation before any action.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-03",
+    "conflict": {
+      "type": "possible-sense-collision",
+      "details": "Bachina already VERIFIED-adjacent as \"to which place\" (locative); candidate here is plain interrogative \"which\" — same string, different proposed sense."
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
   }
 ]

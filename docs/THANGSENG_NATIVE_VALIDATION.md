@@ -2882,3 +2882,51 @@ native_notes appended documenting both closures. No engine code
 touched, no new dictionary keys added (unlike NV-050/051, this is a
 closure/annotation pass on existing entries). Full suite re-run before
 commit.
+
+---
+
+**NV-053, 2026-08-03 — ma·jong confirmed over a·jong; An-sre and Gana
+glosses refined; two new pronoun candidates logged unconfirmed;
+an·chaa/an·chi-jakchi nanga left open (Project Owner direct relay):**
+> "ma·jong is the correct one also where as a relative pronoun = jeon,
+> or jeo where as an interrogative pronoun = bachina?/bao?/bano? this
+> I'm not sure of, but according to the meaning given in Holbrook's
+> dictionary an'sre = the front end of a non-Christian Garo man's
+> loincloth. Gana (verb) = to put on, clothe. Gana (noun) = dress (or
+> cloth) worn by Garo women to cover the lower body. an'chaa/an'chi-
+> jakchi nanga = (no reference to check this)."
+
+Five items, three closed, two logged unconfirmed:
+
+1. **`a·jong` vs `ma·jong`** (open item from this session's audit) —
+   closed. `ma·jong` confirmed correct; promoted VERIFIED/HIGH.
+   `a·jong` (previously VERIFIED/HIGH/doc7 under "Mother's elder
+   sister") superseded, not deleted.
+2. **`An-sre`** — generic "a wearing apparel." gloss refined per
+   Holbrook's dictionary (documented-source citation, not a native-
+   speaker confirmation): front end of a non-Christian Garo man's
+   loincloth.
+3. **`Gana` (verb)** — existing gloss "to wear; to put on; to dress."
+   corroborated directly.
+   **`Gana` (noun)** — generic "a wearing apparel." gloss refined:
+   dress/cloth worn by Garo women to cover the lower body.
+4. **Two new pronoun candidates logged, NOT promoted** (net-new
+   vocabulary, no corpus support, no formal confirmation ritual):
+   - relative pronoun "which" = `jeon`/`jeo` (PL-0002012) — stated
+     without hedging, but still logged pending vs. promoted per
+     evidence-first discipline.
+   - interrogative pronoun "which" = `bachina?`/`bao?`/`bano?`
+     (PL-0002013) — Project Owner explicitly unsure. Also collides
+     with the existing `Bachina` = "to which place." (locative) sense;
+     needs disambiguation, not just confirmation.
+5. **`An·chaa`/`An·chi-jakchi nanga`** ("to have sexual intercourse.")
+   — Project Owner confirmed no reference available to check either
+   form. Left open, both entries annotated, neither promoted nor
+   superseded.
+
+**Action taken:** `master_dictionary.json` — 7 entries annotated
+(1 promoted VERIFIED/HIGH, 1 superseded, 2 refined with source
+citation, 1 corroborated, 2 flagged open/no-reference).
+`src/data/pending_lexicon.json` — 2 new candidate entries added,
+`needs-discussion`, not promoted. No engine code touched. Full suite
+re-run before commit.

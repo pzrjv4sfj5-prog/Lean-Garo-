@@ -127,6 +127,55 @@ claude_a:
     a punctuation mismatch on first pass, fixed). Both open items from
     checkpoint 13b4cbd (Anti, Anga) are now closed. No active Claude A
     task outstanding.
+    UPDATE (2026-08-03, same session, checkpoint 7c490ad, re-verified
+    clean before acting): Runtime Acceptance Audit spot-check + raw-
+    scan completed (read-only, see RUNTIME_ACCEPTANCE_REPORT_20260803.
+    md addenda in chat, not committed) - 4 of 11 'to X' infinitive-
+    exclusion substitutions flagged as likely-wrong/uncertain (to be
+    angry->Ka-chaa, to commit adultery->Gro daka, to hang->al·a·i·na,
+    to support->Chaka), 1 flagged as probable OCR corruption in the
+    VERIFIED form itself (to whisper), 6 confirmed acceptable
+    alternates; note the 'to be angry'/Ka-chaa flag was itself
+    withdrawn on cross-check - a 2026-07-25 native-correction note
+    already on that entry documents anger as a real secondary sense of
+    Ka-chaa (primary = to berate/scold), so it is NOT a wrong match.
+    Raw-scan of the 3 structurally-mismatched entries found no
+    OCR/import column-shift on any of them - all trace to coherent
+    known roots (a·jong/ma·jong family, a'kim levirate-custom family,
+    a·gan- speak/tell root) - but surfaced an unflagged a·jong/ma·jong
+    duplicate-concept question. NV-053 (same session, Project Owner
+    direct relay) closed that question: ma·jong confirmed correct,
+    promoted VERIFIED/HIGH; a·jong (Mother's elder sister) superseded.
+    Same relay also: refined An-sre gloss citing Holbrook's dictionary
+    (front end of a non-Christian Garo man's loincloth, not generic
+    'wearing apparel'); corroborated Gana(verb)='to put on, clothe';
+    refined Gana(noun) gloss to 'dress/cloth worn by Garo women to
+    cover the lower body' (both already-allowlisted as a Check-C
+    synonym pair per 2026-08-02 note above - this only refines the
+    English gloss text, does not touch the synonym-pair determination);
+    flagged An·chaa/An·chi-jakchi nanga (already-allowlisted synonym
+    pair) as OPEN/no-reference per Project Owner - explicitly could not
+    confirm either form, left as-is. Two NEW candidates logged
+    needs-discussion, NOT promoted (net-new vocabulary, no corpus
+    support, no formal confirmation ritual): PL-0002012 'which'
+    (relative pronoun) = jeon/jeo; PL-0002013 'which' (interrogative
+    pronoun) = bachina?/bao?/bano? - Project Owner explicitly unsure on
+    this one, and it collides with the existing VERIFIED-adjacent
+    'Bachina'='to which place' (locative) sense - needs disambiguation,
+    not just confirmation. master_dictionary.json: 7 entries annotated.
+    src/data/pending_lexicon.json: 2 new entries added (needed an
+    import_batch fix to pass Check D, then clean). compiled_dict.json/
+    category_index.json rebuilt via prepare-data.js. 164/164 tests,
+    repository-intelligence.js 0 new violations after the Check-D fix.
+    No engine code touched. Runtime engineering backlog (market
+    word-choice cleanup, elephant/forest value-swap, classifier
+    raka-drop, phrase_maps.js dead-code cleanup) remains hand-off to
+    Claude B, unchanged this session. Remaining Claude A backlog:
+    8 stale 'want to X' sentence re-tags (§4 item 1, untouched); the 4
+    flagged 'to X' substitutions above now need native-speaker
+    confirmation before handing back to Claude B; chiko vs chibimao
+    (NV-051, carried, non-urgent); PL-0002012/0002013 pending
+    native-speaker input.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified
