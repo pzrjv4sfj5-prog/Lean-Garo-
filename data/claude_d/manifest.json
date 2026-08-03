@@ -150,7 +150,8 @@
       "flipped_rows": 41,
       "flat_entries": 41,
       "affix_excluded": 0,
-      "flagged_for_review": 2
+      "flagged_for_review": 2,
+      "note": "Retroactive addendum 2026-08-02: page was already correctly processed 2026-07-26 (flat file re-verified byte-identical, not reprocessed). Adding mechanical exact-string check vs master_dictionary.json, enriched with colliding master entry's English gloss(es) to speed Claude A review (no resolution performed): 3 of 41 collide — 'Alu' (incoming: 'A potato.' vs master: 'potato' [SUPERSEDED legacy] and 'the potato'); 'Am' (incoming: 'A mat.' vs master: 'mat' [SUPERSEDED legacy, real form da\u00b7ri/pa\u00b7ti], 'carpet', 'okay' — likely false-positive, different senses); 'Am\u00b7a' (incoming: 'To search...' vs master: 'win' [SUPERSEDED legacy] and 'roar' [UNVERIFIED] — likely false-positive, different senses). Separately: the original 2 upstream OCR flags include 'Amak cheraa gita-do\u00b7po debaa gita', a phrase entry cut off mid-sentence with continuation noted as flowing to page 8 — page 8 (already processed) does not contain that continuation text, so this entry remains incomplete as transcribed."
     },
     {
       "page": 15,

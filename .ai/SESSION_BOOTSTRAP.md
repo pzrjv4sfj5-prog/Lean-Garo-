@@ -233,7 +233,19 @@ Claude A's own VERIFIED/HIGH or SUPERSEDED tag correctly, just wasn't
 being read correctly by the compiler. 163/163 tests, 0 lint errors,
 build clean.
 
-**NEW, 2026-08-02, Claude A — Claude D's page 8-11 headword collisions
+**NEW, 2026-08-02, Claude A — `Anti` needs-discussion flag closed
+(resumed from checkpoint `13b4cbd` migration doc).** Project Owner
+directly confirmed `Anti` is indeed another word for market, but
+decided the project standardizes on `Bajal` (NV-052) rather than
+adding `Anti` as a second market entry. `PL-0001992` (`Anti`)
+`review_status` changed `needs-discussion` -> `rejected`;
+`review_notes` updated to record the decision. Market/bazar/hat sense
+not promoted. Not a promotion - no `master_dictionary.json`/
+`compiled_dict.json` change, 163/163 tests unaffected, repository-
+intelligence.js 0 new violations. Remaining open item: `Anga` raka
+ambiguity (still needs-discussion, unrelated to this decision).
+
+**PRIOR, 2026-08-02, Claude A — Claude D's page 8-11 headword collisions
 reviewed and closed (resumed from checkpoint `0ab04bf` migration doc).**
 None of pages 8-11 (172 entries) had ever been imported - only Claude
 D's mechanical flip+reduce ingestion and collision flagging had run.

@@ -52459,8 +52459,8 @@
       "import_date": "2026-08-02T10:57:12.848Z",
       "ocr_version": "gemini-2026-07-16"
     },
-    "review_status": "needs-discussion",
-    "review_notes": "NEEDS-DISCUSSION — page 11 gives 'Anti' = 'Week; a market; a bazar; a hat.' (bundled senses). The 'week' sense is a known duplicate of an already-SUPERSEDED entry (VERIFIED form 'sop·ta'). The 'market/bazar/hat' sense is NOT added — this session (NV-052, same session prior to this task) just closed 'market' = 'Bajal' via direct Project Owner decision. 'hat' most plausibly reflects the Assamese/Bengali-area loanword for 'market day' specifically (a periodic bazaar day), which would NOT necessarily conflict with 'Bajal' (market as a place) — but this is inference, not confirmed. Given how recently NV-052 was settled, not resolving this unilaterally. Flagged for the next Thangseng relay: does 'Anti' have any market/bazaar-day sense distinct from 'Bajal'? Not promoted.",
+    "review_status": "rejected",
+    "review_notes": "REJECTED — page 11 gives 'Anti' = 'Week; a market; a bazar; a hat.' (bundled senses). Originally held NEEDS-DISCUSSION pending Project Owner input on whether 'Anti' carries a market/bazaar-day sense distinct from 'Bajal' (NV-052). Project Owner has now confirmed directly (2026-08-02, this session) that 'Anti' is indeed another word for market, but the project standardizes on 'Bajal' per NV-052. Market/bazar/hat sense not added. The 'week' sense remains a known duplicate of the already-SUPERSEDED entry (VERIFIED form 'sop·ta'). Not promoted.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-08-02",
     "conflict": {
