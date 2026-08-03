@@ -116,6 +116,17 @@ claude_a:
     163/163 tests unaffected, repository-intelligence.js 0 new
     violations. Remaining open item: 'Anga' raka ambiguity (still
     NEEDS-DISCUSSION, unrelated to this decision).
+    UPDATE (2026-08-02, later same session): Project Owner directly
+    confirmed 'Anga' (no raka) is the spelling in use; 'Ang·a' (with
+    raka) is a regional-pronunciation-based spelling of the same word,
+    not a separate homonym. PL-0001931 promoted VERIFIED/HIGH to
+    master_dictionary.json; legacy 'Ang·a' (bake/roast) entries marked
+    SUPERSEDED regional-spelling-variant, not deleted. compiled_dict.
+    json + category_index.json rebuilt via prepare-data.js. 164/164
+    tests, repository-intelligence.js 0 new violations (Check D caught
+    a punctuation mismatch on first pass, fixed). Both open items from
+    checkpoint 13b4cbd (Anti, Anga) are now closed. No active Claude A
+    task outstanding.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified

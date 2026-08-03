@@ -233,7 +233,24 @@ Claude A's own VERIFIED/HIGH or SUPERSEDED tag correctly, just wasn't
 being read correctly by the compiler. 163/163 tests, 0 lint errors,
 build clean.
 
-**NEW, 2026-08-02, Claude A — `Anti` needs-discussion flag closed
+**NEW, 2026-08-02, Claude A — `Anga` raka-ambiguity flag closed
+(resumed from checkpoint `0f31dd8`).** Project Owner directly confirmed
+`Anga` (no raka) is the spelling in use; `Ang·a` (with raka) is a
+regional-pronunciation-based spelling of the same word, not a separate
+homonym/lexeme. `PL-0001931` (`Anga` = "to warm up in the fire...")
+promoted VERIFIED/HIGH to `master_dictionary.json`. Existing legacy
+`Ang·a` ("bake / roast") entries marked SUPERSEDED,
+regional-spelling-variant, citing this decision — not deleted, per
+citation discipline. `compiled_dict.json`/`category_index.json`
+rebuilt from source via `prepare-data.js`. 164/164 tests,
+repository-intelligence.js 0 new violations (Check D structural
+integrity caught and required a punctuation-exactness fix on first
+pass — `english` key in `master_dictionary.json` must match the
+pending-lexicon source string byte-for-byte, including trailing
+punctuation). No other open items from `Anti` remain closed this
+session; both flags from checkpoint `13b4cbd` are now resolved.
+
+**PRIOR, 2026-08-02, Claude A — `Anti` needs-discussion flag closed
 (resumed from checkpoint `13b4cbd` migration doc).** Project Owner
 directly confirmed `Anti` is indeed another word for market, but
 decided the project standardizes on `Bajal` (NV-052) rather than
