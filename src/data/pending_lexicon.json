@@ -52979,16 +52979,16 @@
       "import_date": "2026-08-03T10:11:29.508Z",
       "ocr_version": null
     },
-    "review_status": "needs-discussion",
-    "review_notes": "Awaiting NV-item formal closure before promotion; distinguish from interrogative \"which\" entry PL-0002013.",
+    "review_status": "resolved-promoted",
+    "review_notes": "RESOLVED 2026-08-03 (NV-054, direct Thangseng native validation transcript, not a Project Owner relay): the earlier logging of this candidate as \"which (relative pronoun)\" was itself based on an uncertain relay; the native transcript is unambiguous that jeon/jeo mean 'where' (relative), not 'which'. Promoted to master_dictionary.json as two entries: 'where (relative pronoun)' -> 'jeon' and -> 'jeo'.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-08-03",
     "conflict": {
       "type": null,
-      "details": null
+      "details": "Original 'which' label was a mislabeling, corrected on direct native confirmation — not a true conflict with any existing entry."
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-03"
   },
   {
     "id": "PL-0002013",
@@ -53005,15 +53005,15 @@
       "import_date": "2026-08-03T10:11:29.508Z",
       "ocr_version": null
     },
-    "review_status": "needs-discussion",
-    "review_notes": "Uncertain per source; also collides with existing Bachina=\"to which place\" sense. Needs native-speaker confirmation before any action.",
+    "review_status": "resolved-not-promoted-duplicate",
+    "review_notes": "RESOLVED 2026-08-03 (NV-054, direct Thangseng native validation transcript): the earlier logging as \"which (interrogative pronoun)\" was a mislabeling of an uncertain relay. The native transcript directly answers this as the interrogative 'where' cluster (bachina/bachi/bao/bano), which is already covered by existing VERIFIED/HIGH dictionary entries and RULE-044. Not promoted as a new sense — no new distinct 'which' concept exists here. Bao's usage was separately refined (object location, not general place) per the same transcript; see master_dictionary.json 'where?'->'Bao' entry and RULE-044 update.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-08-03",
     "conflict": {
-      "type": "possible-sense-collision",
-      "details": "Bachina already VERIFIED-adjacent as \"to which place\" (locative); candidate here is plain interrogative \"which\" — same string, different proposed sense."
+      "type": null,
+      "details": "Resolved: was never a true 'which'/Bachina collision — the candidate itself was mislabeled as 'which'."
     },
-    "promotion_status": "pending",
+    "promotion_status": "not-promoted",
     "promoted_date": null
   }
 ]

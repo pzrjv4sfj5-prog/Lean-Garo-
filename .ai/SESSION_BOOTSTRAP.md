@@ -211,7 +211,32 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**NEW, 2026-08-03, Claude A — Runtime Acceptance Audit spot-check +
+**NEW, 2026-08-03, Claude A — NV-054 closed (Thangseng direct native
+validation transcript, resumed from migration checkpoint `152d014`,
+re-verified clean via `git fetch` before acting).** Retroactively
+resolves NV-053's two pending candidates: PL-0002012/PL-0002013 were
+logged as "which" but the native transcript is unambiguous these are
+"where" — `jeon`/`jeo` (relative "where") promoted VERIFIED/HIGH;
+`bachina`/`bachi`/`bao`/`bano` (interrogative "where") resolved as
+already covered by existing entries, not a new sense. `Bao` refined:
+native states it is NOT used for places, is probably a shortened
+`bano`, used for object location (e.g. "Angni ki·tap bao?" = "Where
+is my book?") — narrows RULE-044's prior characterization; core
+-chi/-o movement contrast unaffected. New standalone entries:
+`banona` ("where to?"), `banoni` ("where from?"). 6 new VERIFIED/HIGH
+example sentences added. Separately: `angry` = `ka'o nanga` directly
+confirmed, promoting the existing `ka·o·nang·a` variant to
+VERIFIED/HIGH (3 new example sentences); left unreconciled against
+two other pre-existing "angry" clusters (`bi·ka so·a`/`hel·hel`;
+`an'chi ding·na`/`Ka-chaa` secondary sense) — flagged, not resolved.
+`master_dictionary.json` (12 added, 2 refined), `pending_lexicon.json`
+(2 closed), `RULE-044.yaml` (native_notes appended),
+`THANGSENG_NATIVE_VALIDATION.md` (NV-054 entry appended). No engine
+code touched — runtime propagation (compiled_dict.json,
+phrase_maps.js, regression tests, npm test/lint/build) handed off to
+Claude B per this session's Runtime Handoff.
+
+**PRIOR, 2026-08-03, Claude A — Runtime Acceptance Audit spot-check +
 raw-scan done (read-only); NV-053 closed several native-relay items
 (resumed from checkpoint `7c490ad`, re-verified clean before acting).**
 Two parts. (1) Spot-checked the 12 (11 found in current repo state,

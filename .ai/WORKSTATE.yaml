@@ -170,8 +170,38 @@ claude_a:
     No engine code touched. Runtime engineering backlog (market
     word-choice cleanup, elephant/forest value-swap, classifier
     raka-drop, phrase_maps.js dead-code cleanup) remains hand-off to
-    Claude B, unchanged this session. Remaining Claude A backlog:
-    8 stale 'want to X' sentence re-tags (§4 item 1, untouched); the 4
+    Claude B, unchanged this session.
+    UPDATE (2026-08-03, new session, resumed from migration doc
+    checkpoint 152d014, re-verified clean via git fetch before
+    acting): NV-054 CLOSED. Thangseng direct native validation
+    transcript (not a Project Owner relay this time) retroactively
+    resolves PL-0002012/PL-0002013 from NV-053 above: those were
+    logged as "which" candidates, but the actual native answer was
+    about "where" - jeon/jeo = relative "where" (PL-0002012 promoted
+    VERIFIED/HIGH, 2 entries); bachina/bachi/bao/bano interrogative
+    cluster (PL-0002013) resolved not-promoted-duplicate, already
+    covered by existing entries + RULE-044. Also refined: Bao is NOT
+    used for places (native: "probably a shortened version of bano...
+    usually used for the placement of objects", e.g. "Angni ki·tap
+    bao?"="Where is my book?") - narrows RULE-044's prior "bare
+    interrogative" characterization of Bao, core -chi/-o movement
+    contrast unaffected. New: banona="where to?", banoni="where
+    from?" (bano + -na/-ni suffixes) added as standalone entries. 6
+    new VERIFIED/HIGH example sentences added. Separately: angry=
+    ka'o nanga directly confirmed (3 new example sentences); promoted
+    the existing ka·o·nang·a UNVERIFIED/HIGH variant to VERIFIED/HIGH
+    - not reconciled against the two other unrelated "angry" clusters
+    already in the dictionary (bi·ka so·a/hel·hel; an'chi ding·na/
+    Ka-chaa secondary sense), flagged as a three-way unreconciled
+    synonym cluster. master_dictionary.json: 12 entries added, 2
+    annotated/refined. src/data/pending_lexicon.json: PL-0002012/
+    PL-0002013 closed. docs/grammar_rules_structured/RULE-044.yaml:
+    native_notes appended. docs/THANGSENG_NATIVE_VALIDATION.md: NV-054
+    entry appended. No engine code touched, no compile/test run this
+    session (linguistic-layer edits only - runtime propagation handed
+    off to Claude B per the Runtime Handoff in this session's chat).
+    Remaining Claude A backlog: 8 stale 'want to X' sentence re-tags
+    (§4 item 1, untouched); the 4
     flagged 'to X' substitutions above now need native-speaker
     confirmation before handing back to Claude B; chiko vs chibimao
     (NV-051, carried, non-urgent); PL-0002012/0002013 pending

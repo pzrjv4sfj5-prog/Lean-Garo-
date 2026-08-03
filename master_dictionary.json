@@ -2947,7 +2947,7 @@
     "garo": "Bao",
     "category": "general",
     "pos": "adv.",
-    "notes": "VERIFIED/HIGH — NV-047, Thangseng relay via Tridip, 2026-07-31. Bare/short interrogative 'where?', given as a direct definition, distinct from 'Bano' above (which carries the -o no-movement locative suffix per RULE-044 - not yet confirmed whether these are simply free variants or have a usage distinction; keyed separately as 'where?' rather than reusing the 'where' key to avoid a duplicate-key clobber risk, cf. RC-CANDIDATE-036 this session)."
+    "notes": "VERIFIED/HIGH — NV-047, Thangseng relay via Tridip, 2026-07-31. Bare/short interrogative 'where?', given as a direct definition, distinct from 'Bano' above (which carries the -o no-movement locative suffix per RULE-044 - not yet confirmed whether these are simply free variants or have a usage distinction; keyed separately as 'where?' rather than reusing the 'where' key to avoid a duplicate-key clobber risk, cf. RC-CANDIDATE-036 this session). UPDATED — NV-054, 2026-08-03: native directly clarifies Bao is NOT normally used for places at all (contra the prior open question about free-variant status); it is used for the location of objects (e.g. \"Angni ki·tap bao?\" = \"Where is my book?\"), and is probably a shortened form of Bano. RULE-044 updated in parallel to reflect this."
   },
   {
     "english": "why",
@@ -21985,7 +21985,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Native gave 'Angry = ka'o nanga' directly, with three confirming example sentences (Ka'o nangnabe / Bia ka'o nangengama? / Bi'sarangko ka'o nangatnabe.). Promoted from UNVERIFIED/HIGH. Not a judgment on the other 'angry' variants in this cluster (bi·ka so·a, hel·hel) or on the separate an'chi ding·na (doc7) / Ka-chaa (secondary sense, NV-025-adjacent) forms elsewhere in the dictionary — three distinct 'angry' clusters now coexist unreconciled; flagged for awareness, not resolved here per evidence-first discipline."
   },
   {
     "english": "animals",
@@ -60842,5 +60842,101 @@
     "category": "general",
     "pos": "v.",
     "notes": "VERIFIED/HIGH — promoted from PL-0001931, Project Owner direct decision 2026-08-02: 'Anga' (no raka) is the spelling in use; 'Ang·a' (with raka, see 'to bake / roast') is a regional-pronunciation-based spelling of the same word, not a separate lexeme."
+  },
+  {
+    "english": "where (relative pronoun)",
+    "garo": "jeon",
+    "category": "grammar",
+    "pos": "pr.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Relative pronoun 'where'. Free variant of 'jeo'. Promoted from pending_lexicon.json PL-0002012, which had logged this candidate mislabeled as \"which (relative pronoun)\" per an earlier unconfirmed Project Owner relay (NV-053) — this direct native transcript clarifies it is 'where', not 'which'."
+  },
+  {
+    "english": "where (relative pronoun)",
+    "garo": "jeo",
+    "category": "grammar",
+    "pos": "pr.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Relative pronoun 'where'. Free variant of 'jeon'. Promoted from pending_lexicon.json PL-0002012 (see 'jeon' entry note for full context)."
+  },
+  {
+    "english": "where to?",
+    "garo": "banona",
+    "category": "grammar",
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Bano + -na suffix. Native: \"Bano can also take suffix. Banona = Where to?\" Distinct from 'bachi' (movement-to locative on verbs of motion, RULE-044); not yet established whether banona/bachi are interchangeable or have a usage distinction — not claimed here, flagged for future clarification."
+  },
+  {
+    "english": "where from?",
+    "garo": "banoni",
+    "category": "grammar",
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Bano + -ni suffix. Native: \"Bano can also take suffix. Banoni = Where from?\" Corroborates the -ni 'from' sense already embedded in the pre-existing VERIFIED/HIGH sentence \"Where are you from?\" -> \"Na·a banoni?\" (200sentences corpus) — this is the first standalone dictionary entry for the form."
+  },
+  {
+    "english": "where is my book?",
+    "garo": "Angni ki·tap bao?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
+  },
+  {
+    "english": "where did you put my book?",
+    "garo": "Angni lekkako bano donata?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
+  },
+  {
+    "english": "where does he live?",
+    "garo": "Biara bano donga?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
+  },
+  {
+    "english": "where should i put the book?",
+    "garo": "Ia lekkako bano donatbo?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
+  },
+  {
+    "english": "from where did you buy this dress?",
+    "garo": "Ia cholako banoniko ra'aha?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
+  },
+  {
+    "english": "do not be angry.",
+    "garo": "Ka'o nangnabe.",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
+  },
+  {
+    "english": "is he angry?",
+    "garo": "Bia ka'o nangengama?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
+  },
+  {
+    "english": "do not make the children angry.",
+    "garo": "Bi'sarangko ka'o nangatnabe.",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript."
   }
 ]

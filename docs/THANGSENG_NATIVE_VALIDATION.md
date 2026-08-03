@@ -2930,3 +2930,65 @@ citation, 1 corroborated, 2 flagged open/no-reference).
 `src/data/pending_lexicon.json` — 2 new candidate entries added,
 `needs-discussion`, not promoted. No engine code touched. Full suite
 re-run before commit.
+
+---
+
+**NV-054, 2026-08-03 — where-cluster (jeon/jeo, bachi/bao/bano/banona/
+banoni) and angry (ka'o nanga) confirmed; PL-0002012/PL-0002013
+resolved as mislabeled "which" (Thangseng direct native validation,
+via Tridip WhatsApp relay):**
+> "where as a relative pronoun = jeon, or jeo / where as an
+> interrogative pronoun = bachina?/bao?/bano? ... Bachi implies no
+> particular destination. It simply means 'where to?' ... Bao is not
+> used for places. It is probably a shortened version of bano. It is
+> usually used for the placement of objects ... Bano can also take
+> suffix. Banona = Where to? Banoni = Where from? ... Angry = ka'o
+> nanga."
+
+Key finding: this is a **direct native transcript**, not a Project
+Owner relay — it retroactively clarifies that NV-053's pending
+candidates PL-0002012/PL-0002013 (logged as "which") were mislabeled;
+Thangseng's actual answer was about "where", not "which".
+
+Six items closed:
+
+1. **`jeon`/`jeo`** — relative pronoun "where" (not "which").
+   Promoted PL-0002012 to master_dictionary.json, VERIFIED/HIGH, two
+   entries (free variants).
+2. **`bachina?`/`bao?`/`bano?`** — interrogative "where" (not
+   "which"). PL-0002013 resolved as not-promoted-duplicate: already
+   covered by existing Bachina/Bachi/Bao/Bano entries and RULE-044.
+   No new sense.
+3. **`Bao` refined** — native states Bao is NOT used for places, is
+   probably a shortened `bano`, and is normally used for the location
+   of objects (e.g. "Angni ki·tap bao?" = "Where is my book?").
+   Narrows RULE-044's prior "bare interrogative, no locative suffix"
+   characterization. Dictionary entry and RULE-044 both updated.
+4. **`banona`** ("where to?") and **`banoni`** ("where from?") — new
+   standalone VERIFIED/HIGH entries; bano + -na/-ni suffixes,
+   corroborating the -ni sense already embedded in the pre-existing
+   "Na·a banoni?" = "Where are you from?" sentence.
+5. **6 new VERIFIED/HIGH example sentences** added to
+   `master_dictionary.json`: "Where is my book?", "Where did you put
+   my book?", "Where does he live?", "Where should I put the book?",
+   "From where did you buy this dress?", plus the pre-existing "Where
+   are you going?" reconfirmed as exact match (no change needed).
+6. **`angry` = `ka'o nanga`** — direct confirmation. Promoted the
+   existing `ka·o·nang·a` UNVERIFIED/HIGH variant to VERIFIED/HIGH.
+   3 new VERIFIED/HIGH sentences added: "Do not be angry.", "Is he
+   angry?", "Do not make the children angry." Not reconciled against
+   the two other unrelated "angry" clusters already in the dictionary
+   (`bi·ka so·a`/`hel·hel`, and `an'chi ding·na`/`Ka-chaa`
+   secondary-sense) — flagged as a three-way unreconciled synonym
+   cluster, not resolved here.
+
+**Action taken:** `master_dictionary.json` — 12 entries added
+(6 vocabulary/suffix entries, 6 example sentences), 2 entries
+annotated/refined (`ka·o·nang·a` promoted, `Bao` note updated).
+`src/data/pending_lexicon.json` — PL-0002012 marked
+resolved-promoted, PL-0002013 marked resolved-not-promoted-duplicate.
+`docs/grammar_rules_structured/RULE-044.yaml` — native_notes appended
+documenting the Bao refinement and banona/banoni suffixes; core -chi/-o
+movement claim unaffected. No engine code touched. Full linguistic
+review only — runtime propagation handed off to Claude B (see Runtime
+Handoff).

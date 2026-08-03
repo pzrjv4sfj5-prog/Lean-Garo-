@@ -98,6 +98,23 @@ native_notes: >-
   core morphological claim above: -chi remains the movement-to
   locative suffix on the noun; the present-continuous sense comes from
   the paired verb (re·angenga), not from -chi itself.
-last_updated: "2026-08-02"
+
+  Follow-up, 2026-08-03 (NV-054, direct Thangseng native validation
+  transcript via Tridip WhatsApp relay): revises this rule's earlier
+  characterization of "Bao" as simply a "bare interrogative, no
+  locative suffix" synonym of Bano. Direct quote: "Bao is not used for
+  places. It is probably a shortened version of bano. It is usually
+  used for the placement of objects." Example: "Angni ki·tap bao?" =
+  "Where is my book?" This does not touch the -chi/-o movement
+  contrast (still verified/high, unaffected), but narrows Bao's actual
+  domain: object-location, not general place-interrogative. Separately
+  confirms Bano takes directional suffixes not previously documented
+  here: -na ("banona" = "where to?") and -ni ("banoni" = "where
+  from?", corroborating the -ni sense already embedded in the
+  pre-existing sentence "Na·a banoni?" = "Where are you from?"). Not
+  yet established whether banona relates to the -chi movement-to
+  contrast above or is an independent suffix pattern on bano
+  specifically - flagged, not claimed.
+last_updated: "2026-08-03"
 updated_by: "Claude A"
 source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED), NV-051 (CLOSED), and NV-052 (CLOSED)"
