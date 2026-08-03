@@ -2695,7 +2695,8 @@
   {
     "english": "to bake / roast",
     "garo": "Ang·a",
-    "category": "general"
+    "category": "general",
+    "notes": "SUPERSEDED — regional-spelling-variant, Project Owner direct decision 2026-08-02: 'Ang·a' (with raka) is a regional pronunciation-based spelling of the same word as the VERIFIED/HIGH entry 'Anga' (no raka). Not deleted, per citation discipline; not authoritative for compile."
   },
   {
     "english": "to stir",
@@ -4402,7 +4403,8 @@
   {
     "english": "bake / roast",
     "garo": "Ang·a",
-    "category": "general"
+    "category": "general",
+    "notes": "SUPERSEDED — regional-spelling-variant, Project Owner direct decision 2026-08-02: 'Ang·a' (with raka) is a regional pronunciation-based spelling of the same word as the VERIFIED/HIGH entry 'Anga' (no raka). Not deleted, per citation discipline; not authoritative for compile."
   },
   {
     "english": "stir",
@@ -60830,5 +60832,12 @@
     "category": null,
     "pos": "adj.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Entry cut off at the bottom of the page; continuation flows to page 12."
+  },
+  {
+    "english": "To warm up in the fire (as food gone cold or wet things); to heat over the fire.",
+    "garo": "Anga",
+    "category": "general",
+    "pos": "v.",
+    "notes": "VERIFIED/HIGH — promoted from PL-0001931, Project Owner direct decision 2026-08-02: 'Anga' (no raka) is the spelling in use; 'Ang·a' (with raka, see 'to bake / roast') is a regional-pronunciation-based spelling of the same word, not a separate lexeme."
   }
 ]

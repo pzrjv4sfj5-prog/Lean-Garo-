@@ -50871,16 +50871,16 @@
       "import_date": "2026-08-02T10:57:12.751Z",
       "ocr_version": "gemini-2026-07-16"
     },
-    "review_status": "needs-discussion",
-    "review_notes": "NEEDS-DISCUSSION — ambiguous. Page 10 gives 'Anga' (no raka) = 'to warm up in the fire (as food gone cold...)'. This is semantically adjacent to the already-VERIFIED-adjacent existing entry 'to bake / roast'->'Ang·a' (WITH a raka mark). Two live possibilities, not resolvable corpus-internally: (a) this is a genuine third homonym of 'Anga' alongside the pronoun 'I', distinct from 'Ang·a'; or (b) this is the SAME word as 'Ang·a' with the raka mark simply dropped by OCR/flip on this page — exactly the 'song/song·' raka-transcription failure mode this project has hit before (see SESSION_BOOTSTRAP.md 'recurring failure modes'). Not adding as a new headword and not merging with 'Ang·a' — holding for either a native check or a raw-page re-check of the original scan. Not promoted.",
+    "review_status": "approved",
+    "review_notes": "APPROVED — was NEEDS-DISCUSSION (raka ambiguity: genuine third homonym of 'Anga' vs. OCR-dropped-raka duplicate of 'Ang·a'/\"bake/roast\"). Project Owner directly confirmed (2026-08-02): 'Anga' (no raka) is the spelling in use; 'Ang·a' (with raka) is a regional-pronunciation-based spelling of the same word, not a separate lexeme. Promoted as 'Anga', VERIFIED/HIGH. Existing legacy 'Ang·a' entries in master_dictionary.json marked SUPERSEDED, regional-spelling-variant, pointing to this entry — not deleted, per citation discipline.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-08-02",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-02"
   },
   {
     "id": "PL-0001932",
