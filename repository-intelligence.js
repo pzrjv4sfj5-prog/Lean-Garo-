@@ -73,8 +73,30 @@
  * into master_dictionary.json, it never makes the pending file itself a
  * build input).
  *
+ * CHECK F — Runtime-cascade source agreement (corrections.json/phrase_maps.js
+ * vs compiled_dict.json), DOES fail the build on new findings. Added
+ * 2026-08-02 in response to Claude C's forensic audit (Finding #3): the
+ * BUG-REPORT-WHERE-GOING leak (corrections.json/phrase_maps.js holding a
+ * stale pre-NV-047 value with higher cascade priority than the corrected
+ * compiled_dict.json entry) was found by manual trace, not by any
+ * automated check — none of Checks A-E compare these three sources
+ * against each other for the same key. This is the exact bug shape Check
+ * B already guards for pronoun_map/possessives/irregular_verbs/
+ * purpose_map vs corrections; Check F extends the same discipline to the
+ * two runtime-cascade override layers (corrections.json step 1,
+ * phrase_maps.js step 1.5 in translate()'s priority order — see
+ * translationEngine.js) against the exact-phrase dictionary they're
+ * meant to override (compiled_dict.json, step 2). Same baseline-allowlist
+ * posture as Checks C/E: an initial scan found 223 pre-existing
+ * mismatches (src/data/known_cross_source_conflicts.json) — most are
+ * legitimate (register/imperative-vs-statement variants, punctuation-only
+ * diffs, deliberate overrides), NOT asserted as bugs, same as Check A/C's
+ * posture. Anything NEW fails the build immediately, so a future stale
+ * override can never again go undetected until a manual trace happens to
+ * find it.
+ *
  * Exit code 0 = clean, or only Check A hits (report-only) plus allowlisted
- * Check B issues. Exit code 1 = new Check B violation. Wired into
+ * Check B/F issues. Exit code 1 = new Check B/F violation. Wired into
  * `npm run build` after test-dictionary.js.
  */
 import fs from 'fs';
@@ -251,6 +273,67 @@ function checkDictionarySelfConsistency() {
 }
 
 
+// --- CHECK F: corrections.json/phrase_maps.js vs compiled_dict.json ---
+// See file header for full rationale. Compares the two runtime-cascade
+// override layers (checked at translate() steps 1 and 1.5) against the
+// exact-phrase dictionary they're meant to defer to or supersede (step
+// 2). A mismatch isn't automatically a bug — an override existing at all
+// usually means it's SUPPOSED to differ (that's the point of an override
+// table) — but every existing mismatch was reviewed once to build the
+// baseline, and any NEW one means either a genuine new intentional
+// override (needs a baseline entry + citation, same process as Check B)
+// or a stale/unsynced value exactly like BUG-REPORT-WHERE-GOING.
+function checkCrossSourceVsCompiledDict() {
+  console.log('\n=== CHECK F: Runtime-cascade source agreement (corrections/phrase_maps vs compiled_dict) ===');
+  const baseline = new Set(loadJSON('src/data/known_cross_source_conflicts.json'));
+  const corrections = loadJSON('src/data/corrections.json');
+  const compiledDict = loadJSON('src/compiled_dict.json');
+
+  // Strip trailing "?" for the join key. corrections.json keys are
+  // stored WITHOUT "?" ("where are you going"), while compiled_dict.json
+  // exact-phrase keys are frequently stored WITH it ("where are you
+  // going?") — two conventions for the same fact (RC-CANDIDATE-030 fix,
+  // see translationEngine.js's own step-1 comment for the runtime side
+  // of this same gap). Joining on the raw normalized key silently
+  // produces zero matches for any such pair, defeating the whole check —
+  // confirmed by reintroducing the original BUG-REPORT-WHERE-GOING value
+  // during testing and finding this exact join failed to catch it.
+  function joinKey(k) { return normalize(k).replace(/\?+$/, ''); }
+
+  const cdNorm = {};
+  for (const [k, v] of Object.entries(compiledDict)) cdNorm[joinKey(k)] = v;
+
+  let known = 0;
+  let fresh = 0;
+  const freshFindings = [];
+
+  function checkSource(sourceName, sourceData, prefix) {
+    for (const [k, v] of Object.entries(sourceData)) {
+      if (typeof v !== 'string') continue;
+      const nk = joinKey(k);
+      if (!(nk in cdNorm)) continue;
+      const cdVal = cdNorm[nk];
+      if (typeof cdVal !== 'string') continue;
+      if (normalize(cdVal) === normalize(v)) continue; // agree
+
+      const baselineKey = prefix + ':' + nk;
+      if (baseline.has(baselineKey)) { known++; continue; }
+      fresh++;
+      freshFindings.push(`  NEW: "${k}" — ${sourceName}="${v}", compiled_dict="${cdVal}"`);
+    }
+  }
+
+  checkSource('corrections', corrections, 'corrections');
+  checkSource('phrase_maps', PHRASE_MAPS, 'phrase_maps');
+
+  freshFindings.slice(0, 20).forEach(l => console.log(l));
+  if (freshFindings.length > 20) console.log(`  ... and ${freshFindings.length - 20} more`);
+  console.log(`  ${known} known/allowlisted mismatch(es), ${fresh} NEW mismatch(es).`);
+  if (fresh > 0) hasNewViolation = true;
+  return fresh;
+}
+
+
 // --- CHECK D: Pending Lexicon structural integrity ---
 const REVIEW_STATUSES = new Set(['unreviewed', 'approved', 'rejected', 'needs-discussion']);
 const PROMOTION_STATUSES = new Set(['pending', 'promoted', 'rejected', 'duplicate-skip']);
@@ -412,6 +495,7 @@ const crossTableViolations = checkCrossTableConsistency();
 const dictSelfConflicts = checkDictionarySelfConsistency();
 const pendingLexiconProblems = checkPendingLexiconIntegrity();
 const placeholderEntries = checkPlaceholderEntries();
+const crossSourceViolations = checkCrossSourceVsCompiledDict();
 
 console.log('\n=== Summary ===');
 console.log(`Raka locality candidates (report-only): ${rakaCandidates}`);
@@ -419,6 +503,7 @@ console.log(`New cross-table violations: ${crossTableViolations}`);
 console.log(`New dictionary self-consistency conflicts: ${dictSelfConflicts}`);
 console.log(`Pending Lexicon structural problems: ${pendingLexiconProblems}`);
 console.log(`New unresolved-placeholder entries: ${placeholderEntries}`);
+console.log(`New runtime-cascade source mismatches: ${crossSourceViolations}`);
 
 if (hasNewViolation) {
   console.log('\nFAILED — new inconsistency detected. Fix the data or, if this is a');
