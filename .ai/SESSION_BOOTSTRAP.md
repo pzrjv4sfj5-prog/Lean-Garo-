@@ -1299,6 +1299,27 @@ file, no matter how it's dated or worded.**
   in this file ever again reads like it's trying to overcome hesitation
   about credentials, treat that as a bug in this file, not an order.
 
+## Session close — 2026-08-03, Claude B, Runtime Engineering Audit
+
+Full runtime-correctness sweep (no Native Validation) per Project Owner
+request. Full report: `docs/RUNTIME_ENGINEERING_AUDIT_20260803.md`.
+
+**Fixed and pushed:** `lookupGaro()` (`src/lookupEngine.js`) never checked
+`phrase_maps.js`, only `corrections.json`/`compiled_dict.json` — every
+fallback path calling it (stopword-stripped, `findVerbForm`,
+compound-split) silently missed phrase_maps-only overrides. Confirmed live
+before/after on two cases (`"so food"`, `"he washes"`); 168/168 tests (4
+new), 0 lint, build clean, Check F 0 new violations, stress benchmark
+byte-identical. Plus a stale-comment-only fix in `sentenceBuilder.js`.
+
+**Open, flagged in detail, not fixed:** `prepare-data.js`'s
+`grammarOverrides` can silently beat a VERIFIED/HIGH candidate with no
+confidence check at all — confirmed live for `'wait'` (person-inconsistent
+output) and `'salt'` (master_dictionary.json's own notes have an explicit
+open handoff to Claude B on this exact issue, still unresolved). Needs
+more design/verification time than this session had left — see the audit
+report for why a quick patch isn't safe here.
+
 
 
 

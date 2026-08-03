@@ -994,3 +994,40 @@ test('isVerified anchoring: a SUPERSEDED legacy entry ("type") is no longer forc
   // primary regardless of which fallback ultimately wins.
   assert.notEqual(lookupGaro('type'), 'ambiguous');
 });
+
+// Runtime Engineering Audit (2026-08-03, Claude B): lookupGaro() checked
+// corrections.json and compiled_dict.json but never phrase_maps.js, so
+// any word whose ONLY override lived in phrase_maps.js was invisible to
+// every fallback path that calls lookupGaro() instead of the top-level
+// translate() cascade's own step-1.5 exact-match — stopword-stripping,
+// morphology's findVerbForm, compound-split. Confirmed live before the
+// fix: "so food" returned compiled_dict.json's stale "al·a" instead of
+// phrase_maps.js's "Mi" (what bare "food" correctly returns); "he
+// washes" returned compiled_dict.json's "Su·gala" instead of
+// phrase_maps.js's "Su·srong·a" (what bare "wash" correctly returns) via
+// findVerbForm on the main grammar-assembly path, not just the fallback.
+test('lookupGaro() consults phrase_maps.js: direct call', async () => {
+  const { lookupGaro } = await import('../../src/lookupEngine.js');
+  assert.equal(lookupGaro('food'), 'Mi');
+});
+
+test('RUNTIME-AUDIT: stopword-stripped fallback path reaches phrase_maps.js ("so food")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('so food');
+  assert.equal(result.garo, 'Mi');
+});
+
+test('RUNTIME-AUDIT: findVerbForm/grammar-assembly path reaches phrase_maps.js ("he washes")', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const result = await translate('he washes');
+  assert.equal(result.garo, 'Ua Su·srong·a');
+});
+
+test('RUNTIME-AUDIT: corrections.json still takes precedence over phrase_maps.js through lookupGaro()', async () => {
+  // "no" exists in both corrections.json ("Ihing") and phrase_maps.js
+  // ("Ong·ja") with different values — corrections must still win,
+  // matching translate()'s own documented step 1 > step 1.5 order.
+  const { lookupGaro } = await import('../../src/lookupEngine.js');
+  assert.equal(lookupGaro('no'), 'Ihing');
+});
+

@@ -151,20 +151,14 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
 // PURPOSE_MAP extracted to src/data/purpose_map.json (2026-07-09,
 // BACKLOG-001). Data verified byte-for-byte identical before the swap.
 //
-// NOTE (found during extraction, not fixed — linguistic decision, not
-// engineering): 'search':'am·e·nik·na' is the pre-Rule-32 form, which
-// RULE-032/VALIDATION_CORPUS.md's `search`=`Sandia` was supposed to
-// replace. It's still LIVE and reachable here: "i want to search"
-// currently produces "Anga am·e·nik·na sikenga" (verified via translate()
-// before this extraction), even though standalone "search" correctly
-// produces "Sandia" via corrections.json (which this map never reaches
-// for that input, since corrections is checked first in the cascade).
-// This map is only consulted for purpose-clause constructions ("want to
-// X", "go to X", etc.), which is a different code path than the one
-// Rule 32 fixed — so the fix didn't propagate here. Logged as a new
-// candidate regression case (docs/PENDING_REGRESSION_CASES.md) rather
-// than corrected in this commit, since choosing the right purpose-form
-// of "search" is Claude A's call, not mine.
+// HISTORICAL NOTE (stale as of 2026-08-03, left for context): this
+// comment originally flagged 'search':'am·e·nik·na' as a stale pre-
+// Rule-32 form still live in purpose-clause constructions. That was
+// fixed 2026-07-10 (RC-CANDIDATE-006, commit d0e6c06) — purpose_map.json
+// now holds 'Sandi·na' — before this comment was copied verbatim during
+// the 2026-07-29 extraction, so it described already-fixed behavior for
+// over three weeks. Runtime Engineering Audit (2026-08-03) re-verified
+// current purpose_map.json value directly; no live defect here.
 
 export function assembleGrammar(grammar) {
   if (!grammar || !grammar.subject) return null;

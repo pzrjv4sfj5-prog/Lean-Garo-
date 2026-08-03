@@ -1,5 +1,5 @@
 repository:
-  head: 8f2ff05
+  head: 7c490ad
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -847,7 +847,77 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-08-02 (new session, checkpoint da3f82c, resumed via migration
+    2026-08-03: Runtime Engineering Audit (full sweep, no Native
+    Validation performed) per Project Owner request. Resumed from
+    repository only, HEAD 7c490ad -> re-verified against origin fresh.
+    Scope: translationEngine.js, sentenceBuilder.js, lookupEngine.js,
+    morphologyEngine.js, grammarEngine.js, prepare-data.js, compiled_dict.json,
+    compiled_dict_alternates.json, corrections.json, phrase_maps.js.
+    FIXED (commit pending push this session): lookupGaro() (src/lookupEngine.js)
+    checked corrections.json -> compiled_dict.json only, never phrase_maps.js.
+    Every fallback path that calls lookupGaro() instead of translate()'s own
+    top-level step-1.5 exact-match — stopword-stripped, findVerbForm
+    (morphologyEngine.js, hit by grammarEngine.js's main verb-resolution
+    path), compound-split — silently missed any word whose ONLY override
+    lived in phrase_maps.js. Confirmed live before fix: "so food" ->
+    compiled_dict's stale "al·a" instead of phrase_maps.js's "Mi" (what bare
+    "food" correctly returns); "he washes" -> compiled_dict's "Su·gala"
+    instead of phrase_maps.js's "Su·srong·a" (what bare "wash" correctly
+    returns) via findVerbForm on the MAIN grammar-assembly path, not just a
+    fallback edge case. Fix: added phrase_maps.js check to lookupGaro() at
+    correct cascade precedence (corrections > phrase-map > compiled_dict,
+    matching translate()'s own documented order). One shared low-level fix,
+    so it corrected all its callers uniformly with no per-call-site changes.
+    4 new regression tests. 168/168 pass, 0 lint, build clean, Check F still
+    0 new violations, 237-sentence stress benchmark byte-identical
+    before/after (confirms zero regression on existing tested surface).
+    Also: comment-only fix in sentenceBuilder.js (stale note describing a
+    purpose_map.json "search" bug that was actually already fixed 2026-07-10,
+    d0e6c06 — comment was copied verbatim during 2026-07-29 extraction and
+    described already-fixed behavior for 3+ weeks; re-verified current
+    purpose_map.json value directly, no live defect).
+    NOT FIXED, flagged as backlog (see Runtime Engineering Audit report,
+    docs/RUNTIME_ENGINEERING_AUDIT_20260803.md, for full detail — this is
+    NOT a linguistic call, Claude A's own master_dictionary.json notes
+    already state the verdict, this is pickPrimary/grammarOverrides
+    precedence, deliberately not shipped without more verification budget
+    than this session had left): prepare-data.js's hardcoded
+    `grammarOverrides` map applies AFTER pickPrimary, unconditionally,
+    with NO isVerified check — for 'wait' and 'salt' specifically this
+    silently overrides an explicit, heavily-documented VERIFIED/HIGH
+    correction already recorded in master_dictionary.json's own notes.
+    'wait': master's notes (2026-07-25, Claude A, 3-pass native validation)
+    explicitly state "Da·mo/Sengbo confirmed imperative-only... Ua sengbo is
+    an incorrect translation of he waits", declarative = "senga"/"sengaia" —
+    but grammarOverrides['wait'] = 'Damo/Sengbo' unconditionally, and
+    corrections.json also independently has bare "wait":"Damo". Live-confirmed
+    INCONSISTENT behavior across person: "he waits"/"he is waiting" ->
+    correctly "Ua senga" (some other path already avoids the stale value —
+    not fully traced why this one path is fine), but "i wait" -> "Anga Damo"
+    (wrong, hits the stale value). 'salt': master's own notes literally say
+    "SUPERSEDED — ... same english key 'salt' has VERIFIED/HIGH form(s)
+    ['kai·sim']. Not authoritative for compile... Compile pipeline does not
+    yet apply confidence precedence — see handoff to Claude B" — an explicit
+    open handoff addressed to this role, still unresolved. Complication:
+    the VERIFIED "kai·sim" entry is ITSELF tagged "variant/VERIFIED/HIGH",
+    so pickPrimary's existing verifiedNeutral rule (which explicitly
+    excludes variant-tagged candidates) would not rescue it even if the
+    grammarOverrides entry were simply deleted — likely still resolves to
+    the SUPERSEDED "Kari" via master-preference/last-write-wins. This needs
+    either a scoped grammarOverrides-vs-verified-precedence check (mirroring
+    Check F's cross-source-agreement pattern, extended to catch
+    grammarOverrides silently beating a VERIFIED/HIGH candidate) or a
+    pickPrimary rule change for the "sole VERIFIED candidate happens to
+    carry a variant tag" case — genuinely needs more design/verification
+    time than a single session's remaining budget, not a quick patch.
+    Confirmed NOT defects during this audit (ruled out, no action needed):
+    11 "to X"-key mismatches between master's VERIFIED/HIGH entries and
+    compiled_dict.json are the already-documented, deliberate infinitive-
+    suffix exclusion working as intended; no duplicate keys within
+    corrections.json or phrase_maps.js themselves; compiled_dict_alternates.json
+    / getAlternates() is dead code with zero callers, not a live override path.
+    ---
+    PRIOR SESSION (2026-08-02, checkpoint da3f82c, resumed via migration
     doc): two fixes shipped, pushed, HEAD now ea77de5.
     (1) Bug report: "where is X going?" constructions regressed to the
     stationary locative "bano" instead of RULE-044/NV-047's VERIFIED
