@@ -3649,5 +3649,8 @@
   "where should i take this book to?": "phrases",
   "where should i go to?": "phrases",
   "mature": "adjectives",
-  "adult": "people"
+  "adult": "people",
+  "who gave you this?": "phrases",
+  "can": "grammar",
+  "mother (address form)": "family"
 }
