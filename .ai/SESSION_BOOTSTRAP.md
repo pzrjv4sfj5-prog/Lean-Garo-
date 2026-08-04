@@ -211,6 +211,16 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude A — NV-018 follow-up closed: mother's
+address-register word moved to `a·ai`, retiring bare `ama` from that
+sense.** Transcript was mostly a duplicate relay of already-logged
+NV-018/NV-019 (no new action on the "Bal=wind" question). New:
+`master_dictionary.json` — added `can`→`ama` (VERIFIED/HIGH) and
+`mother (address form)`→`a·ai` (VERIFIED/HIGH, new); annotated legacy
+`Ma / Ama` entry. `family_terms` doc §3 closed. Open-list item #1
+resolved for `ama` specifically — `apa` (father) address-only question
+and `man·a` remain open, unrelated/unanswered here.
+
 **NEW, 2026-08-04, Claude A — NV-057 closed:
 `PENDING_DIALECT_DISCREPANCY_20260629.md` fully resolved.** Thangseng
 directly confirmed `on'aha`/`on'a` and `re'baaha`/`re'baa` are both

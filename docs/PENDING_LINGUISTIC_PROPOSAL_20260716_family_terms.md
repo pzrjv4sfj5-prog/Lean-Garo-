@@ -71,6 +71,22 @@ distinguishing it from the modal/possession candidate. Recommend a
 follow-up relay question to Thangseng confirming these are indeed
 separate words and not the same word doing multiple duty.
 
+**RESOLVED, 2026-08-04 (NV-018 follow-up, direct native confirmation,
+2026-07-18, relayed today):** the follow-up question was asked and
+answered directly — these are NOT separate words doing multiple duty.
+Thangseng: *"Yes, ama has the same spelling in both the meanings. No
+difference."* And: *"ama is not 'can eat'. It only means can and for
+mother we have replaced with A.ai (Remember the raka in a.ai)."*
+Resolution in practice: `ama` = the general ability modal "can" only
+(entry #2 above, now promoted VERIFIED/HIGH). The mother-address sense
+(#1/#3) is retired in favor of `a·ai` — not disambiguated by context,
+simply replaced. `master_dictionary.json`: added `can`→`ama` and
+`mother (address form)`→`a·ai`; annotated the legacy `Ma / Ama` entry.
+**Still open, unrelated to this resolution:** whether `apa`/`ama` are
+address-only or usable as a full sentence subject (Thangseng said he'd
+answer later, still pending) — moot for `ama` specifically now that
+it's retired from the mother sense, but still open for `apa` (father).
+
 ## Proposed relay questions (for the next Tridip/Thangseng exchange)
 1. For "my father is a teacher": `daka` or `ong·a` — both okay, or
    register-dependent?

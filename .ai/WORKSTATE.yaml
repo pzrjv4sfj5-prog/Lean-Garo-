@@ -304,6 +304,19 @@ claude_a:
     added "who gave you this?"->on·a (new), updated "why did you
     come?" (idx 939) with citation. Consolidated open-list item #6
     (dialect discrepancy) removed - now closed.
+    UPDATE (2026-08-04, NV-018 follow-up): "ama"/"Bal=wind" transcript
+    turned out mostly duplicate relay of already-logged NV-018/NV-019
+    - no new action for the wind question. Genuinely new: mother's
+    address-register word moved to "a·ai", retiring bare "ama" from
+    that sense (collision with the "can" modal resolved by retirement,
+    not disambiguation). master_dictionary.json: added can->ama
+    (VERIFIED/HIGH), mother (address form)->a·ai (VERIFIED/HIGH, new),
+    annotated legacy Ma/Ama entry. family_terms doc §3 closed.
+    Consolidated open-list item #1 (ama/man·a register distinction)
+    now resolved for "ama" specifically; still open: apa (father)
+    address-only-vs-subject question (unrelated, Thangseng still to
+    answer); man·a itself not directly addressed by this transcript,
+    stays open too.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified

@@ -3127,3 +3127,29 @@ this?"→`Sawa nang·na iako on·a?` (new), updated "why did you come?"
 (idx 939) with citation. `docs/PENDING_DIALECT_DISCREPANCY_20260629.md`
 closed in full (all 3 items resolved). No `corrections.json` changes
 needed — already on the confirmed forms.
+
+---
+
+**NV-018 follow-up, 2026-07-18 (relayed 2026-08-04) — closes the `ama`
+homonymy resolution flagged in
+`PENDING_LINGUISTIC_PROPOSAL_20260716_family_terms.md` §3 (Thangseng,
+via Tridip WhatsApp):**
+> Yes, ama has the same spelling in both the meanings. No difference.
+> ... ama is not 'can eat'. It only means can and for mother we have
+> replaced with A.ai (Remember the raka in a.ai).
+
+Two messages received this round were duplicate relays of
+already-logged NV-018/NV-019 (`ama`="can" not "can eat"; `Bal`≠"wind")
+— no new action for those. The genuinely new piece: **mother's
+address-register word has moved to `a·ai`**, retiring the collision-
+prone bare `ama` from that sense entirely rather than disambiguating
+it by context.
+
+**Action taken:** `master_dictionary.json` — added `can`→`ama`
+(VERIFIED/HIGH, general ability modal) and `mother (address form)`→
+`a·ai` (VERIFIED/HIGH, new); annotated the legacy `mother`→`Ma / Ama`
+entry noting `Ama` is retired from this sense. §3 of the family_terms
+doc closed. **Still open:** whether `apa`/`ama` (as concepts) are
+address-only or usable as a full sentence subject — Thangseng said
+he'd answer later; moot for `ama` now that it's retired from the
+mother sense, but still open for `apa` (father).

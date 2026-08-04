@@ -699,7 +699,7 @@
     "english": "mother",
     "garo": "Ma / Ama",
     "category": "family",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'mother' has VERIFIED/HIGH form(s) ['a·ma', 'ma·gip·a', 'na·gi·pa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'mother' has VERIFIED/HIGH form(s) ['a·ma', 'ma·gip·a', 'na·gi·pa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. UPDATE, 2026-08-04 (NV-018 follow-up): the 'Ama' candidate specifically is now confirmed to be the ability-modal 'ama'/\"can\" homonym - it has been retired from the mother sense in favor of 'a·ai' (address form) or the pre-existing 'a·ma'/'ma·gip·a'/'na·gi·pa' variants. Not a candidate for mother going forward."
   },
   {
     "english": "son",
@@ -61044,5 +61044,21 @@
     "pos": null,
     "classifier": null,
     "notes": "NV-057, Thangseng direct native validation via Tridip WhatsApp, 2026-06-30 (relayed 2026-08-04). Resolves docs/PENDING_DIALECT_DISCREPANCY_20260629.md. Native: \"both works depending on how you use it. But it may be better to remove 'ha'. Let's just say re'baa and on'a.\" Confirms on'aha and on'a are both grammatically valid (register/usage variation, not an error), with on'a recommended as the simpler form - matching the form already live in corrections.json."
+  },
+  {
+    "english": "can",
+    "garo": "ama",
+    "category": "grammar",
+    "pos": "aux.",
+    "classifier": null,
+    "notes": "NV-018 follow-up, Thangseng direct native validation via Tridip WhatsApp, 2026-07-18 (relayed 2026-08-04). Native: \"ama is not 'can eat'. It only means can.\" Bare ability modal, general-purpose - the 'eat' sense in earlier citations came from the specific example sentence 'cha·na ama', not from 'ama' itself. Same spelling as the (now-retired) mother-address form 'ama' - \"ama has the same spelling in both the meanings. No difference\" - but no longer a live collision since mother's address form has moved to 'a·ai' (see that entry)."
+  },
+  {
+    "english": "mother (address form)",
+    "garo": "a·ai",
+    "category": "family",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-018 follow-up, Thangseng direct native validation via Tridip WhatsApp, 2026-07-18 (relayed 2026-08-04). Native: \"for mother we have replaced with A.ai (Remember the raka in a.ai).\" Replaces the bare 'ama' address form for mother, which shares its exact spelling with the ability modal 'ama'/\"can\" (see that entry) - the collision is resolved by retiring 'ama' from the mother sense rather than disambiguating it. Distinct from the pre-existing 'a·ma'/'ma·gip·a'/'na·gi·pa' VERIFIED/HIGH variants for 'mother' (different spelling/register, not implicated in this specific collision) - not reconciled against those here."
   }
 ]
