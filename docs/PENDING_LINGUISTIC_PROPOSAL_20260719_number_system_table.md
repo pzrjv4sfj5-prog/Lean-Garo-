@@ -41,3 +41,12 @@ existing conflicts, untouched by this table).
 `master_dictionary.json`, no action needed. Everything else in this
 table remains as originally logged — already consistent, no action
 needed.
+
+---
+
+## CLOSED, 2026-08-04 (Claude A, repo-sweep)
+
+Formalizing closure — the doc's own Status section already established
+no action was needed beyond the 2026-07-21 "first" conflict fix
+(NV-026). Re-verified against current `master_dictionary.json`: no
+drift since. Closing formally.

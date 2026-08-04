@@ -271,6 +271,30 @@ claude_a:
     this transcript: the 3 flagged "to X" substitutions and the
     3-way "angry" cluster were asked in the same conversation but
     Thangseng's replies here don't cover them - still open.
+    UPDATE (2026-08-04, repo-sweep): closed backlog docs that were
+    stale/already-superseded, none needed new native input.
+    docs/pending_corrections.md (2026-06-14) - all 5 items already
+    matched or superseded in live repo, closed. 20260719_number_
+    system_table - already said no action needed, formalized closed.
+    20260717_future_interrogative - narrow case already resolved
+    2026-07-17/18, general engine work stays with Claude B (RC-
+    CANDIDATE-020), formalized closed. 20260719_market_pronoun_case_
+    negation_order item 1 ("market") - resolved (NV-052 fixed the
+    malformed "Bajal / Anti" value; chi-destination generalization
+    resolved via RULE-044); items 2 ("we"/"us" case) and 3 (negation+
+    continuous ordering) left open, genuinely need input. 20260722_
+    thangseng_batch confirmed already closed 2026-07-22, no action.
+    Genuinely still open across the repo, consolidated for the next
+    native-input batch (NOT closed, not guessed at): ama/man·a "can
+    eat" register distinction (20260713, 20260716§3); Bal=flower/air/
+    big-basket senses (NV-020, 20260718); locatives set not fully
+    Verified - mitapo vs kokkimao/nokkimao under-sense (20260708);
+    "we" vs "us" object-case pronoun; negative+continuous morpheme-
+    ordering generalization; two-speaker dialect discrepancy
+    (20260629); 51 placeholder entries needing Project-Owner-supplied
+    values (20260725, not necessarily a native-speaker question); plus
+    already-flagged: 3 "to X" substitutions, 3-way angry cluster,
+    ska-vs-skenga tension, chiko vs chibimao.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified
