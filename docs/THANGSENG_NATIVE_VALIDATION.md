@@ -3106,3 +3106,24 @@ existing unverified legacy entries with overlapping English glosses
 retained and cross-referenced, not deleted. `docs/grammar_rules_
 structured/RULE-044.yaml` — native_notes appended. No engine code
 touched.
+
+---
+
+**NV-057, 2026-06-30 (relayed 2026-08-04) — closes
+PENDING_DIALECT_DISCREPANCY_20260629.md (Thangseng, via Tridip
+WhatsApp):**
+> both works depending on how you use it. But it may be better to
+> remove 'ha'. Let's just say re'baa and on'a.
+
+Resolves the last open item from the 2026-06-29 two-speaker
+discrepancy: "who gave you this?" (`on'aha` vs `on'a`) and "why did
+you come?" (`re'baaha` vs `re'baa`, already flagged resolved same-day
+by an earlier answer) are both register/style variants, not errors,
+with the shorter form recommended — matching what was already live in
+`corrections.json`.
+
+**Action taken:** `master_dictionary.json` — added "who gave you
+this?"→`Sawa nang·na iako on·a?` (new), updated "why did you come?"
+(idx 939) with citation. `docs/PENDING_DIALECT_DISCREPANCY_20260629.md`
+closed in full (all 3 items resolved). No `corrections.json` changes
+needed — already on the confirmed forms.

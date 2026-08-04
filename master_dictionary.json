@@ -5077,7 +5077,8 @@
   {
     "english": "why did you come?",
     "garo": "Na·a maina reba·a?",
-    "category": "travel"
+    "category": "travel",
+    "notes": "NV-057, Thangseng direct native validation via Tridip WhatsApp, 2026-06-30 (relayed 2026-08-04). Resolves docs/PENDING_DIALECT_DISCREPANCY_20260629.md. Native reconfirms (having already answered this same question the day before, 2026-06-29): \"both works... let's just say re'baa.\" re'baaha and re'baa both valid, re'baa preferred/simpler, matching the form already live."
   },
   {
     "english": "how did you come?",
@@ -61035,5 +61036,13 @@
     "pos": null,
     "classifier": null,
     "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). Literally 'mature person' — dal·gimin (mature) + mande (person). New VERIFIED/HIGH entry, first time 'adult' added."
+  },
+  {
+    "english": "who gave you this?",
+    "garo": "Sawa nang·na iako on·a?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "NV-057, Thangseng direct native validation via Tridip WhatsApp, 2026-06-30 (relayed 2026-08-04). Resolves docs/PENDING_DIALECT_DISCREPANCY_20260629.md. Native: \"both works depending on how you use it. But it may be better to remove 'ha'. Let's just say re'baa and on'a.\" Confirms on'aha and on'a are both grammatically valid (register/usage variation, not an error), with on'a recommended as the simpler form - matching the form already live in corrections.json."
   }
 ]

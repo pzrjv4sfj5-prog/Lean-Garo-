@@ -211,6 +211,14 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude A — NV-057 closed:
+`PENDING_DIALECT_DISCREPANCY_20260629.md` fully resolved.** Thangseng
+directly confirmed `on'aha`/`on'a` and `re'baaha`/`re'baa` are both
+valid register variants, shorter form preferred — matches what's
+already live in `corrections.json`. `master_dictionary.json`: added
+"who gave you this?"→`on·a` (new), updated "why did you come?" with
+citation. No engine change needed.
+
 **NEW, 2026-08-04, Claude A — backlog repo-sweep: closed 4 stale/
 already-superseded docs, no new native input needed for any of
 them.** `pending_corrections.md` (all 5 items already live/superseded);

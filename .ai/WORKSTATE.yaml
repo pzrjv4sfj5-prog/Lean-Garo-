@@ -295,6 +295,15 @@ claude_a:
     values (20260725, not necessarily a native-speaker question); plus
     already-flagged: 3 "to X" substitutions, 3-way angry cluster,
     ska-vs-skenga tension, chiko vs chibimao.
+    UPDATE (2026-08-04, NV-057): closed
+    docs/PENDING_DIALECT_DISCREPANCY_20260629.md in full. Thangseng
+    directly confirmed (2026-06-30, relayed today): on'aha/on'a and
+    re'baaha/re'baa are both valid register variants, shorter form
+    (on'a, re'baa) preferred - matches what's already live in
+    corrections.json, no engine change needed. master_dictionary.json:
+    added "who gave you this?"->on·a (new), updated "why did you
+    come?" (idx 939) with citation. Consolidated open-list item #6
+    (dialect discrepancy) removed - now closed.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified
