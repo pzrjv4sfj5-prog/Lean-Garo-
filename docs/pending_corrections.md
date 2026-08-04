@@ -54,3 +54,18 @@ And in `translationEngine.js` IRREGULAR_VERBS, fix: `'sleep': 'tusina'` (was `'t
 | `the dog bit me` | `Achak ak-ki Angko` | `Achak anga ko chikaha` |
 | `i want to sleep` | — | `Anga tusina sikenga` |
 | `sleep` / `to sleep` | — | `tusina` |
+
+---
+
+## CLOSED, 2026-08-04 (Claude A, repo-sweep)
+
+All five corrections in the table above are already live and correct
+in the current repository, superseded by later fixes (NV-021 and
+others): `corrections.json` — "let's go to the market" → `Hai antichi
+re·na` (idx exists, matches NV-052/RULE-044 chi-locative resolution,
+supersedes this doc's now-outdated suggestion); "dog bit me"/"the dog
+bit me" → `Achak Angko chikaha` (matches); "i want to sleep" → `Anga
+tusina ska` (matches NV-021, not the `sikenga` this doc proposed —
+that root was itself later found wrong and corrected to `ska`);
+"sleep"/"to sleep" → `Tusia`/`tusina` (present). Nothing left to do.
+Closing this doc, no further action.

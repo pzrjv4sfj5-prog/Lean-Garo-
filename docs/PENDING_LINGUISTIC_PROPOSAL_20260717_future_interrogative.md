@@ -60,3 +60,13 @@ loanword passthrough). Substituting `apal` erased the exact data point
 being preserved. Worth double-checking any other corrections.json
 entries added from paraphrased/summarized notes rather than re-checked
 against the original relay text.
+
+---
+
+## CLOSED, 2026-08-04 (Claude A, repo-sweep)
+
+Formalizing closure — narrow case (the 3 sentences) was resolved and
+corrected 2026-07-17/18, including the `apal`→`apple` loanword-fidelity
+fix. The remaining general engine work (question-formation, RC-
+CANDIDATE-020) was already handed to Claude B and stays open on their
+side — nothing further for Claude A here. Closing formally.

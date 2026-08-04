@@ -80,3 +80,15 @@ Not implemented. All three are logged as separate findings since they
 have independent scope/risk (one dictionary-data bug + one construction
 question, one pronoun-case question, one morpheme-ordering question).
 Awaiting Claude A review.
+
+## CLOSED (item 1 only), 2026-08-04 (Claude A, repo-sweep)
+
+Item 1 ("market") is resolved: the malformed `"market": "Bajal / Anti"`
+joined value no longer exists — `master_dictionary.json` now has a
+clean single-value `market`→`Bajal` entry (NV-052, 2026-08-02). The
+open construction question — whether `chi` is the general destination-
+locative marker for "go to X" sentences — is also resolved, generally,
+via `RULE-044`'s extensive movement-to/`chi` vs. stationary/`o`
+documentation across NV-047/051/052/054/056. Items 2 ("we" vs "us"
+case) and 3 (negative+continuous morpheme ordering) remain open,
+genuinely need native/decision input, not guessed at here.

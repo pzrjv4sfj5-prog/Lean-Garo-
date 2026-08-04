@@ -115,6 +115,20 @@ native_notes: >-
   yet established whether banona relates to the -chi movement-to
   contrast above or is an independent suffix pattern on bano
   specifically - flagged, not claimed.
-last_updated: "2026-08-03"
+
+  Follow-up, 2026-08-04 (NV-056, direct Thangseng native validation
+  transcript via Tridip WhatsApp relay): four new worked examples of
+  the banona/banoni suffixes: "Banoni re'baa na'ara?" = "Where did you
+  come from?"; "Banoni mandesa iara?" = "Where is this man from?";
+  "Ia ki'tapko banona ra'angbo?" = "Where should I take this book to?";
+  "Banona re'angbo angara?" = "Where should I go to?" These coexist
+  with older unverified legacy sentences for the same English glosses
+  that use a different word order and, for "where should I go?", the
+  bachi/batchi form instead of banona - not reconciled here, flagged
+  for awareness. Separately (not a RULE-044 matter but logged here for
+  context): the same relay distinguishes jeon/jeo ("where", relative
+  pronoun, NV-054) from a genuinely separate word jean ("which",
+  relative pronoun) - see master_dictionary.json new entry.
+last_updated: "2026-08-04"
 updated_by: "Claude A"
-source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED), NV-051 (CLOSED), and NV-052 (CLOSED)"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED), NV-051 (CLOSED), NV-052 (CLOSED), NV-054 (CLOSED), and NV-056 (CLOSED)"

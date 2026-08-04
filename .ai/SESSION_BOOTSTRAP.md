@@ -211,6 +211,33 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude A — backlog repo-sweep: closed 4 stale/
+already-superseded docs, no new native input needed for any of
+them.** `pending_corrections.md` (all 5 items already live/superseded);
+`20260719_number_system_table` (already said no action needed);
+`20260717_future_interrogative` (narrow case long resolved, general
+engine work stays with Claude B); `20260719_market_pronoun_case_
+negation_order` item 1 only (market fix + chi-destination rule both
+resolved via NV-052/RULE-044 — items 2/3 in that doc stay open).
+Consolidated everything genuinely still open across the whole repo
+into one list (not closed, not guessed at): ama/man·a register
+distinction, Bal homonymy (NV-020), locatives under-sense
+disambiguation, "we"/"us" case, negative+continuous ordering, dialect
+discrepancy, 51 placeholder entries, plus this session's earlier
+flags (to-X substitutions, angry cluster, ska/skenga, chiko/chibimao).
+
+**NEW, 2026-08-04, Claude A — NV-056 closed: jean="which" confirmed
+distinct from jeon/jeo="where" (NV-054); 4 new banona/banoni examples;
+adult/mature confirmed.** `jean` resolves the leftover "which"/"where"
+ambiguity from NV-053/NV-054 - it's a genuine separate word. 4 new
+banona/banoni example sentences added (2 coexist with older unverified
+legacy entries using different word order, not reconciled). `dal·gimin`/
+`brigimin` = mature, `dal·gimin mande` = adult, all new. 7 entries
+added total, nothing overwritten or duplicated. **Not answered in this
+transcript:** the 3 flagged "to X" substitutions and the 3-way "angry"
+cluster were asked in the same conversation but not covered by
+Thangseng's replies here - still open.
+
 **NEW, 2026-08-04, Claude A — NV-055 closed: "salt"=kari confirmed
 directly, resolving the 2026-08-01 supersession dispute flagged as an
 open Claude-A handoff in `docs/RUNTIME_ENGINEERING_AUDIT_20260803.md`.**
