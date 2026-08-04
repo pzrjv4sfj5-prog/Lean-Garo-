@@ -1007,7 +1007,7 @@
   "which story did you tell?": "general",
   "which is the sweetest fruit?": "food",
   "which indian state has the largest population?": "general",
-  "where did you come from?": "travel",
+  "where did you come from?": "phrases",
   "where did you sleep?": "health",
   "where should i go?": "travel",
   "whom should i contact?": "general",
@@ -3643,5 +3643,11 @@
   "is he angry?": "phrases",
   "do not make the children angry.": "phrases",
   "i want to see you": "phrases",
-  "put the pen inside the bag": "phrases"
+  "put the pen inside the bag": "phrases",
+  "which (relative pronoun)": "grammar",
+  "where is this man from?": "phrases",
+  "where should i take this book to?": "phrases",
+  "where should i go to?": "phrases",
+  "mature": "adjectives",
+  "adult": "people"
 }
