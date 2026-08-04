@@ -1,5 +1,5 @@
 repository:
-  head: 7c490ad
+  head: b4890a6
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -11,7 +11,7 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
-  last_updated: "2026-08-02 (Claude A: pages 8-11 Claude D collision review closed, 157 entries promoted, 2 held needs-discussion)"
+  last_updated: "2026-08-04 (Claude B: findVerbForm corrections.json precedence fix + Translator.jsx UI fix + Claude C audit findings 1-3 resolved — see claude_b.current_task for full detail; 176/177 tests, same 1 pre-existing repository-intelligence.js gate failure, 0 lint)"
   test_status: >-
     "163/163 unit tests passing (155 pre-existing + 8 from Claude B two same-session fixes ea77de5/03bd2dc, picked up via rebase - none touched by pages 8-11 review, which was dictionary-data-only). 0 lint errors implied by clean build. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass). repository-intelligence.js Checks A-E: 0 new violations after allowlisting 2 intentional new Check-C conflicts ('a wearing apparel.', 'to have sexual intercourse.') in known_dictionary_conflicts.json with citation in this session's claude_a.current_task. 8025 unique compiled entries (up from prior), 157 net new master_dictionary.json entries this session (pages 8-11 review, 151 clean + 6 noted-approval; 13 rejected as duplicates and 2 held needs-discussion were NOT promoted). Prior 155/155 history preserved below.\\n\"155/155 unit tests passing (153 prior + 2 new: 'one person' VERIFIED-preference regression, 'he answered' to-X-exclusion regression). 0 lint errors. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass; vite build now succeeds in-sandbox with a fresh npm install, resolving the previously-flagged environment gap). repository-intelligence.js Checks B/C/D/E: 0 new violations. Stress benchmark 237/237 byte-identical before/after this session's fix (none of the 31 changed compiled_dict.json keys fall in that corpus). RC-CANDIDATE-036 follow-up fixed this session (prepare-data.js pickPrimary): master_dictionary.json's own INTERNAL duplicate-key conflicts (multiple master rows for one key) were not resolved by the original RC-036 master-preference fix, which still fell back to last-write-wins by array order among master's own candidates. Added a scoped rule: when exactly one non-variant candidate is tagged VERIFIED/HIGH (excluding UNVERIFIED via substring guard), it wins. Live regression caught mid-implementation (not shipped blind): applying this to 'to answer' picked a VERIFIED citation form whose '-na' ending is the Garo infinitive suffix already baked in, which morphologyEngine.js's tense-suffixing pipeline treats as a bare stem, producing malformed 'a·gan·chak·naha' — caught via the existing 'he answered' regression test. Fixed by excluding 'to '-prefixed keys from the rule (pickPrimary now takes the key as a 2nd argument); VERIFIED confidence attests translation correctness, not bare-stem safety for suffixing. Net: 31 compiled_dict.json keys changed (0 added/removed), same systemic-conflict shape as RC-036/RC-037, all individually spot-checked against their master_dictionary.json source rows before accepting (not just trusted from the tag) — includes 'one person'->'mande sak·sa' and 'answer'->'Aganchakani' (the two originally-traced keys) plus 29 others sharing the identical conflict shape. 7 of the changed bare-verb-root keys spot-verified live for conjugation safety (push/throw/clean/listen/cook/lie/fly) — all either route through a separate, unaffected 'to X' key first, or produce well-formed output consistent with the engine's established suffix pattern. Prior 153/153 history preserved below.
     "153/153 unit tests passing (147 prior + new tests/unit/rong_classifier.test.js, 6 tests: rong resolution for fruit/alcohol, no-raka behavior, ge/mang/sak/king/gong regression coverage). npm run build clean through prepare-data.js (compiled_dict.json/compiled_dict_alternates.json/category_index.json regenerated) and test-dictionary.js/repository-intelligence.js; vite build step still fails in this sandbox only because node_modules/vite is not installed — pre-existing environment gap, not a real issue, not re-flagged. Prior 147/147 history preserved below.\n147/147 regression tests passing (144 + 3 new RC-037 tests), 0 lint errors, build exits 0, stress benchmark 237/237 (isolated 1-line diff from RC-036, exactly the expected 'he has two dogs' correction; RC-037's changes not exercised by the stress corpus, confirmed instead via direct compiled-value spot checks). RC-CANDIDATE-032 fixed this session (commit f1ea1bf): number_engine.js's standalone toGaroNumber() teens formula corrected from the disproven 'chiking·ma·' form to the confirmed 'Chi·'+digit form, matching garo_classifier.js's own TEENS table (was unreachable dead code for 11-19, fixed anyway - misleading and a latent refactor trap). RC-CANDIDATE-036 fixed this session (commit afac50d, prepare-data.js): master_dictionary.json is the declared canonical compile source and WAS included in the merge, but plain last-write-wins by raw file order meant it only won if textually distinct from anything already deduped in from the legacy source files - if master's value coincidentally matched an earlier duplicate in a legacy file, a LATER wrong duplicate within that same legacy file won instead, invisible to the resolver. Fixed by tagging merge candidates with source file and preferring any master-sourced candidate. 51 keys corrected (e.g. 'one dog': 'sa mang·sa'->'achak mang·sa'). NOTE: a stricter VERIFIED-preference refinement (for keys where master itself holds multiple non-variant candidates, e.g. 'one person': unannotated 'sa mande·sa' vs VERIFIED/HIGH 'mande sak·sa') was attempted, correctly picked 'one person' but broke 'answer' (5-way case-entangled master entries - notes shape more complex than tracing budget allowed this session) - reverted, NOT shipped, logged as follow-up below. RC-CANDIDATE-037 fixed this session (commit afac50d, garo_dictionary.json + master_dictionary.json direct edits): bulk-generated 'two X'/'three X'/'twelve X'/'thirteen X' entries wrongly used 'do·o' (chicken/bird) or 'na·tok' (fish) as filler for nouns unrelated to birds/fish (e.g. 'two teachers'->'do·o skigipa·gni'). Two distinct sub-patterns, confirmed by inspection not guessed: 105 entries where the real noun was already present after the stray prefix (strip only); 11 dog/cat entries where the noun was entirely absent and do·o/na·tok was standing in for it (substituted the correct noun - achak/menggo, both independently confirmed via their own standalone dictionary entries - not just stripped). Genuine bird/chicken/fish entries excluded and confirmed unaffected. Source: external Copilot audit, synthesized and handed off by Project Owner; every cited finding re-verified against current HEAD before acting per standing discipline (audit's compiled_dict.json framing was imprecise - master WAS included in the merge, root cause was subtler than 'master ignored'; 2 of 8 secondary findings were already fixed, 1 was superseded/no-longer-live, 5 were confirmed-but-backlog). BACKLOG-003 FULLY COMPLETE, all 8 phases (unchanged, carried over)."
@@ -1052,6 +1052,71 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
+    2026-08-04 (this session, resumed via migration doc from checkpoint
+    619ce16, re-synced fresh via git fetch before acting each time —
+    caught the remote advancing three separate times mid-session,
+    including once between commit and push): two pieces of work, both
+    pushed. (1) Runtime Engineering Audit (Project Owner-directed,
+    "identify and eliminate remaining runtime leaks preventing Claude
+    A's Native Validations from being faithfully reflected in the
+    application"): root-caused findVerbForm() (morphologyEngine.js)
+    checking the static IRREGULAR_VERBS table BEFORE corrections.json,
+    at both the unstripped-word and suffix-stripped stages — any of its
+    50 entries permanently shadowed a VERIFIED corrections.json fix
+    sharing the same key, with no sync mechanism between the two files.
+    Confirmed live: 'need' had regressed the exact sikenga->nanga
+    closure from NV-005/NV-016/NV-021. Full-table cross-check found 6
+    real divergences (eaten/need/bought/heard/standing/sitting). Fixed
+    narrowly — corrections.json checked before IRREGULAR_VERBS at both
+    stages, with the existing RULE-041 infinitive-preference check
+    (lookupGaro('to '+stripped)) deliberately kept ahead of the
+    stripped-form correction lookup, since bare corrections.json words
+    aren't universally safe to prefer for verb conjugation (same
+    ambiguity RULE-041 already flagged for 'work'/'Daka' — caught live
+    here too: an initial broader ordering attempt regressed "he waits"
+    by preferring corrections['wait']='Damo' over the correct 'to
+    wait'='senga' infinitive entry; caught by the regression suite
+    itself before shipping, reordered to fix). compiled_dict.json-
+    sourced IRREGULAR_VERBS divergences (going/thought/thinking)
+    deliberately left untouched — not confirmed VERIFIED either way,
+    separate open item. Also fixed a pure frontend bug in the same
+    audit: Translator.jsx's output panel was unconditionally rendering
+    result.original (raw English input) beneath the translation — not
+    an engine/payload issue, removed. 3 new regression tests. (2)
+    Resolved Claude C's independent audit (read-only QA pass, HEAD
+    619ce16) findings 1-3: Finding 1 (CRITICAL) — 'Anti' (week)
+    contamination in market-going phrases, root cause same "settled
+    decision, stale artifact" class as the bano/bachi P0 — fixed 7 of 9
+    flagged corrections.json rows + phrase_maps.js's 'market' fallback
+    ('Bajal Anti' -> 'Bajal'), left the 2 "let's go to market" rows
+    untouched per Claude A's own NV-059 (still open, targeted native-
+    check pending). Finding 2 — inverted yes/no questions ("is he going
+    to school?") never reached grammar-assembly (analyzeGrammar only
+    recognized declarative subject-initial word order via
+    PRONOUN_MAP[firstWord]), dropping the verb entirely and falling to
+    assembleSentenceSOV (no verb-tense assembly). Fixed by normalizing
+    aux-inversion (is/are/was/were + pronoun) to canonical SVO before
+    the existing subject/verb search, threading isQuestion through to
+    assembleGrammar which appends the already-VERIFIED ' ma?' marker
+    (confirmed via existing corrections.json entries — 'are you
+    going'->'...enga ma?', 'will you eat'->'...genma?' — no new
+    linguistic content invented). Scoped to pronoun-subject inversion
+    only. Finding 3 — irregular_verbs.json 'need' updated sikenga->nanga
+    to match corrections.json (data-sync only, not linguistic);
+    confirmed via git-stash re-run that this resolved Check B's cross-
+    table mismatch (1->0 new violations) while Check C/D/F findings were
+    unchanged before/after (pre-existing, Claude A's territory). 3 more
+    regression tests. All commits (dbaa6d7, 75c274c rebuild, b4890a6)
+    pushed; rebased cleanly onto 2 separate concurrent Claude A pushes
+    mid-session (NV-058, NV-059) each time, rebuilding compiled_dict.json
+    against the new tip before re-verifying and pushing, per standing
+    protocol. 176/177 tests (same 1 pre-existing repository-
+    intelligence.js gate failure — Check C/D/F, data-content, confirmed
+    unrelated via git-stash re-run both times this session), 0 lint
+    errors throughout. 237-sentence stress benchmark run twice this
+    session (once per work item): every changed line traced to an
+    intended fix, zero unexplained blast radius either time.
+    ---
     2026-08-04: grammarOverrides-vs-VERIFIED precedence fix shipped
     (backlog item from 2026-08-03 audit below), using 'wait'/'salt' as
     regression examples per Project Owner instruction — NOT special-
@@ -1393,8 +1458,32 @@ claude_b:
     - "BACKLOG-006 first increment: repository-intelligence.js (raka report + cross-table consistency gate), RC-CANDIDATE-007/008/009 logged, 56/56 passing"
     - "grammarOverrides-vs-VERIFIED precedence fix: pickPrimary reports verifiedSelection, finalizeDictionary extracted+tested, grammarOverrides skips verified keys; 'wait'/'salt' used as regression examples only, not special-cased; no compiled-value change (neither currently satisfies verifiedNeutral); metadata-model schema proposal reported, not applied"
   next_action: >-
-    2026-08-04 (this session, MOST URGENT — main's build gate is
-    ALREADY broken, independent of anything this session shipped):
+    2026-08-04 (later session, checkpoint b4890a6): repository-
+    intelligence.js gate STILL failing, but narrower than before — the
+    "need" cross-table mismatch this file previously listed under Check
+    F is now DIFFERENTLY SHAPED, not resolved: corrections.json['need']
+    is correctly 'nanga' (was already fixed 2026-08-03) and
+    irregular_verbs.json['need'] is now also 'nanga' (fixed this
+    session, Claude C audit Finding 3, resolves Check B fully — 1->0 new
+    violations, confirmed via git-stash re-run), but Check F still flags
+    corrections.json 'need'='nanga' vs compiled_dict.json
+    'need'='nang·a' — a raka-spelling mismatch in the COMPILED value
+    itself (master_dictionary.json-sourced), not an engineering
+    precedence bug (that class was separately fixed this session too —
+    see current_task, findVerbForm no longer even reaches
+    IRREGULAR_VERBS's stale value for 'need' at runtime). Still needs
+    Claude A: is 'nanga' or 'nang·a' the correct citation-form spelling
+    for the compiled/master entry. Remaining gate failures unchanged
+    from before (PL-0002012/PL-0002013 invalid enums, "where (relative
+    pronoun)" conflict) — still linguistic/data-content territory, still
+    needs Claude A, confirmed via two separate git-stash re-runs this
+    session (once per work item) that neither Claude B fix worsened or
+    caused any of these three.
+    ---
+    2026-08-04 (earlier session, superseded by above where it discusses
+    "need" specifically — PL-0002012/2013/"where (relative pronoun)"
+    portion still accurate): main's build gate is ALREADY broken,
+    independent of anything this session shipped):
     npm run build's repository-intelligence.js gate fails against data
     from Claude A's own pulled commits (6c2fe37/90bade8/ff79daf) —
     PL-0002012/PL-0002013 invalid review_status/promotion_status enum
@@ -1454,12 +1543,18 @@ claude_b:
     - "Do not re-implement jaha as past-negation - superseded, see Rule 17/27"
     - "Do not implement chat-sourced linguistic proposals directly - must go through Claude A -> docs/ commit first (standing integration rule as of 2026-07-08)"
   waiting_for: >-
-    Claude A to fix repository-intelligence.js build-gate failures
-    (PL-0002012/2013 invalid enums, "where (relative pronoun)"
-    conflict, "need" cross-table mismatch — see next_action, 2026-08-04);
-    Project Owner decision on proposed confidence/confidence_source
-    metadata-model schema migration (current_task, 2026-08-04). Prior,
-    still open: Claude A to review docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md
+    Claude A to fix repository-intelligence.js build-gate failures —
+    PL-0002012/2013 invalid enums, "where (relative pronoun)" conflict
+    (both unchanged, pre-existing), and now specifically whether
+    'need'='nanga' or 'nang·a' is the correct compiled/master spelling
+    (Check F, narrowed this session — see next_action, 2026-08-04).
+    Claude A's NV-059 (Bajal Anti market-imperative question, "let's go
+    to market" family, 3 corrections.json rows deliberately left
+    untouched by Claude C audit Finding 1's fix) — still open, targeted
+    native-check pending. Project Owner decision on proposed confidence/
+    confidence_source metadata-model schema migration (still
+    unimplemented, no update this session). Prior, still open: Claude A
+    to review docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md
     and commit canonical rule(s); Thangseng native validation on Rules 30/31.
   expected_output: "Repository fully bootstrap-able from .ai/ + PROJECT_STATUS.md with zero conversational context required"
 

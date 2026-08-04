@@ -211,6 +211,64 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude B — Runtime Engineering Audit (Project Owner
+directed) + Claude C independent audit, both resolved and pushed
+(`dbaa6d7`, `75c274c`, `b4890a6`).** Full detail in `.ai/WORKSTATE.yaml`
+`claude_b.current_task`. Summary: (1) `findVerbForm()` was checking the
+static `irregular_verbs.json` table *before* `corrections.json`, at both
+the unstripped and suffix-stripped stages — silently shadowed any
+VERIFIED correction sharing a key with a hardcoded irregular-verb form.
+6 real divergences found and fixed (`eaten`/`need`/`bought`/`heard`/
+`standing`/`sitting`); `need` was a live regression of NV-005/016/021.
+Fix deliberately preserves the existing RULE-041 infinitive-preference
+ordering (`lookupGaro('to '+stripped)` still checked first) — an initial
+broader attempt regressed `"he waits"`, caught by the regression suite
+before shipping. `compiled_dict.json`-sourced divergences (`going`/
+`thought`/`thinking`) deliberately left open, not confirmed VERIFIED
+either way. (2) `Translator.jsx` was unconditionally rendering the raw
+English input beneath the translation in the output panel — pure
+frontend bug, removed. (3) Claude C's independent read-only audit
+(HEAD `619ce16`) flagged 3 findings, all resolved: Finding 1 (CRITICAL)
+— `'Anti'` (week) contamination in 7 market-phrase rows + the
+`phrase_maps.js` `'market'` fallback, fixed (`Bajal Anti` → `Bajal`);
+the 2 `"let's go to market"` rows deliberately left untouched, same as
+Claude A's own NV-059 resolution below (still open). Finding 2 —
+inverted yes/no questions (`"is he going to school?"`) never reached
+grammar-assembly (subject/verb search only recognized declarative word
+order), dropping the verb entirely; fixed by normalizing aux-inversion
+to canonical SVO before the existing logic runs, appending the
+already-VERIFIED `' ma?'` marker (no new linguistic content — reuses a
+pattern already confirmed via existing `corrections.json` entries).
+Finding 3 — `irregular_verbs.json['need']` synced to `corrections.json`'s
+already-VERIFIED value (pure data-sync, not linguistic); confirmed via
+git-stash re-run this resolved `repository-intelligence.js` Check B
+(1→0 new violations) while Check C/D/F findings were unchanged
+before/after (pre-existing, Claude A's territory — see Runtime Handoff
+below). Rebased cleanly onto 2 separate concurrent Claude A pushes
+mid-session (NV-058, and the NV-059 entry immediately below),
+rebuilding `compiled_dict.json` against each new tip before
+re-verifying and pushing. 6 new regression tests total. 176/177 tests
+(same 1 pre-existing gate failure both times, confirmed unrelated via
+git-stash), 0 lint errors, 237-sentence stress benchmark run twice —
+every changed line traced to an intended fix, zero unexplained blast
+radius either time.
+
+## Runtime Handoff (Claude A)
+- `repository-intelligence.js` build gate still fails on: `PL-0002012`/
+  `PL-0002013` invalid `review_status`/`promotion_status` enum values in
+  `src/data/pending_lexicon.json`; a `"where (relative pronoun)"`
+  self-consistency conflict (Check C). Both unchanged/pre-existing,
+  confirmed via two separate git-stash re-runs this session.
+- Check F now narrower but not resolved: `corrections.json['need']` =
+  `'nanga'` (correct) vs `compiled_dict.json['need']` = `'nang·a'` — a
+  raka-spelling question in the compiled/master value itself, not an
+  engineering precedence bug (that class is separately fixed — see
+  above). Needs a linguistic call: is `nanga` or `nang·a` the correct
+  citation-form spelling.
+- NV-059 (`"let's go to market"` / `Bajal Anti`, 3 `corrections.json`
+  rows) — still open, per Claude A's own note in the entry directly
+  below.
+
 **NEW, 2026-08-04, Claude A — response to Claude C audit Finding 1
 (`Bajal Anti` market imperative), NV-059 logged OPEN.** Claude C
 flagged `master_dictionary.json`'s `"let's go to market"` →
