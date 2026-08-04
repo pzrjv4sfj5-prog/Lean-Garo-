@@ -150,7 +150,7 @@ function pickPrimary(entries, key) {
   const isRealCaseCollision = neutral.length === 1 && variants.length > 0 &&
     variants.some(v => v.rawKey !== neutral[0].rawKey);
   if (isRealCaseCollision) {
-    return neutral[0].v;
+    return { value: neutral[0].v, verifiedSelection: false };
   }
 
   // RC-CANDIDATE-036 follow-up (2026-08-01, traced from the "answer"/
@@ -185,7 +185,17 @@ function pickPrimary(entries, key) {
   const isInfinitiveKey = typeof key === 'string' && key.startsWith('to ');
   const verifiedNeutral = neutral.filter(e => e.isVerified);
   if (!isInfinitiveKey && verifiedNeutral.length === 1) {
-    return verifiedNeutral[0].v;
+    // This is the ONLY branch backed by an explicit, unambiguous
+    // VERIFIED/HIGH signal (isVerified, computed once in normalizeFile —
+    // not re-parsed or re-interpreted here). Every other branch below is
+    // a fallback heuristic (case-collision, master-preference, plain
+    // last-write-wins), not a verified confirmation, so only this branch
+    // reports verifiedSelection: true. Callers (see grammarOverrides
+    // application below) use this to avoid silently discarding an
+    // explicit native-validation result — see
+    // docs/RUNTIME_ENGINEERING_AUDIT_20260803.md, "grammarOverrides can
+    // silently beat a VERIFIED candidate".
+    return { value: verifiedNeutral[0].v, verifiedSelection: true };
   }
 
   // RC-CANDIDATE-036 (external audit, 2026-07-31; confirmed live via
@@ -204,10 +214,56 @@ function pickPrimary(entries, key) {
   // behavior introduced beyond "master beats non-master").
   const masterEntries = entries.filter(e => e.source === 2);
   if (masterEntries.length) {
-    return masterEntries[masterEntries.length - 1].v;
+    return { value: masterEntries[masterEntries.length - 1].v, verifiedSelection: false };
   }
 
-  return entries[entries.length - 1].v;
+  return { value: entries[entries.length - 1].v, verifiedSelection: false };
+}
+
+// Merge -> pickPrimary -> grammarOverrides, isolated as a pure function so
+// it can be unit-tested with synthetic entries, independent of any real
+// dictionary file. Behavior is identical to what main() ran inline before
+// this refactor — no logic changed here beyond what's documented at the
+// grammarOverrides-skip site below.
+function finalizeDictionary(mergedValues, grammarOverrides) {
+  const finalized = {};
+  const alternates = {};
+  const verifiedKeys = new Set();
+
+  Object.keys(mergedValues).forEach(key => {
+    const cleanedEntries = mergedValues[key]
+      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, isVerified: e.isVerified, rawKey: e.rawKey, source: e.source }))
+      .filter(e => Boolean(e.v));
+    if (!cleanedEntries.length) return;
+    const { value: primary, verifiedSelection } = pickPrimary(cleanedEntries, key);
+    finalized[key] = primary;
+    if (verifiedSelection) verifiedKeys.add(key);
+    if (cleanedEntries.length > 1) {
+      alternates[key] = mergedValues[key].map(e => e.v);
+    }
+  });
+
+  Object.keys(grammarOverrides).forEach(key => {
+    // ENGINEERING DESIGN DEFECT (docs/RUNTIME_ENGINEERING_AUDIT_20260803.md):
+    // grammarOverrides previously applied unconditionally, with no check
+    // against pickPrimary's own result — so it could silently beat an
+    // explicit VERIFIED/HIGH native-validation confirmation. This is the
+    // narrowest fix available without touching note-parsing: skip the
+    // override only when pickPrimary's verifiedNeutral branch (the sole
+    // branch backed by an unambiguous, already-computed signal) produced
+    // this key's value. All other keys/branches are unaffected — this
+    // does not change behavior for any key that doesn't hit that exact
+    // branch, and does not attempt to guess verification status from any
+    // other signal.
+    if (verifiedKeys.has(key)) {
+      console.log(`grammarOverrides: skipped '${key}' — pickPrimary already selected a VERIFIED/HIGH candidate ('${finalized[key]}')`);
+      return;
+    }
+    finalized[key] = grammarOverrides[key];
+    delete alternates[key];
+  });
+
+  return { finalized, alternates };
 }
 
 function main() {
@@ -271,25 +327,7 @@ function main() {
     'right (correct)': 'Kakket'
   };
 
-  const finalized = {};
-  const alternates = {};
-
-  Object.keys(mergedValues).forEach(key => {
-    const cleanedEntries = mergedValues[key]
-      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, isVerified: e.isVerified, rawKey: e.rawKey, source: e.source }))
-      .filter(e => Boolean(e.v));
-    if (!cleanedEntries.length) return;
-    const primary = pickPrimary(cleanedEntries, key);
-    finalized[key] = primary;
-    if (cleanedEntries.length > 1) {
-      alternates[key] = mergedValues[key].map(e => e.v);
-    }
-  });
-
-  Object.keys(grammarOverrides).forEach(key => {
-    finalized[key] = grammarOverrides[key];
-    delete alternates[key];
-  });
+  const { finalized, alternates } = finalizeDictionary(mergedValues, grammarOverrides);
 
   // RULE-040: bare "right" is a genuine 3-way homonymy split (direction /
   // matching / correct), not a single headword with a best default — every
@@ -358,4 +396,13 @@ function main() {
   }
 }
 
-main();
+// Guard so this module can be imported (e.g. by tests, to unit-test
+// pickPrimary/finalizeDictionary directly with synthetic data) without
+// triggering the file-writing build side effect. `node prepare-data.js`
+// (the real build) still runs main() exactly as before.
+const isRunDirectly = process.argv[1] && import.meta.url === `file://${process.argv[1]}`;
+if (isRunDirectly) {
+  main();
+}
+
+export { pickPrimary, finalizeDictionary };

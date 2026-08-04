@@ -1031,3 +1031,109 @@ test('RUNTIME-AUDIT: corrections.json still takes precedence over phrase_maps.js
   assert.equal(lookupGaro('no'), 'Ihing');
 });
 
+// --- grammarOverrides vs. VERIFIED precedence (2026-08-04, Claude B,
+// prepare-data.js pickPrimary/finalizeDictionary) ---
+//
+// ENGINEERING DESIGN DEFECT (docs/RUNTIME_ENGINEERING_AUDIT_20260803.md):
+// grammarOverrides previously applied unconditionally, after pickPrimary,
+// with no check at all against pickPrimary's own result — so it could
+// silently discard an explicit VERIFIED/HIGH native-validation
+// confirmation. Investigated for two regression examples ('wait',
+// 'salt') per Project Owner instruction — NOT special-cased in the fix
+// itself. Traced independently:
+//   - 'wait': master_dictionary.json's 'senga' entry is the linguistically
+//     correct declarative form (Claude A, 2026-07-25 native validation),
+//     but its notes ("CORRECTED 2026-07-25...") don't match the narrow,
+//     unbroadened isVerified signal (notes must start literally with
+//     "verified/high") — so pickPrimary's verifiedNeutral branch never
+//     selects it; it falls to master-last-write-wins.
+//   - 'salt' (post NV-055, master_dictionary.json 'Kari' now the
+//     native-confirmed correct form): same shape — neither 'Kari' nor
+//     'kai·sim' carries the literal isVerified signal, so pickPrimary
+//     again falls to master-last-write-wins rather than a genuine
+//     verified selection.
+// Both traces converge on the SAME root cause: pickPrimary only ever
+// treats a selection as "verified" for the narrow verifiedNeutral
+// branch, and grammarOverrides did not respect even that existing,
+// already-computed signal. Per explicit instruction: do NOT broaden the
+// isVerified regex or add new note-parsing heuristics — that would
+// perpetuate the existing architectural weakness (fragile prose-parsing
+// as the source of truth for confidence). No machine-readable
+// confidence field exists anywhere in master_dictionary.json's schema
+// (english/garo/category/notes/pos/classifier only) to prefer instead,
+// per the audit above — so this fix does NOT resolve 'wait' or 'salt'
+// to a "corrected" value; it only closes the precedence gap using the
+// signal that already exists. See docs/RUNTIME_ENGINEERING_AUDIT_20260803.md
+// "UPDATE, 2026-08-04" and the proposed metadata model reported
+// alongside this change for the schema-level fix, deferred pending
+// Project Owner decision.
+test('grammarOverrides precedence: "wait" and "salt" compile values are unchanged by this fix (regression examples, not linguistic endorsement)', async () => {
+  const dict = JSON.parse(
+    (await import('node:fs')).readFileSync(
+      new URL('../../src/compiled_dict.json', import.meta.url),
+      'utf8'
+    )
+  );
+  // Both keys still resolve via grammarOverrides (as before this fix),
+  // since neither currently carries the literal isVerified signal —
+  // this fix must not have silently changed either value.
+  assert.equal(dict['wait'], 'Damo/Sengbo');
+  assert.equal(dict['salt'], 'Kari');
+});
+
+test('grammarOverrides precedence: pickPrimary reports verifiedSelection only for its verifiedNeutral branch (mechanism, synthetic data)', async () => {
+  const { pickPrimary } = await import('../../prepare-data.js');
+
+  // Genuine single VERIFIED/HIGH candidate among untagged siblings —
+  // must report verifiedSelection: true.
+  const verified = pickPrimary(
+    [
+      { v: 'wrong-value', isVariant: false, isVerified: false, rawKey: 'testword', source: 0 },
+      { v: 'right-value', isVariant: false, isVerified: true, rawKey: 'testword', source: 2 }
+    ],
+    'testword'
+  );
+  assert.equal(verified.value, 'right-value');
+  assert.equal(verified.verifiedSelection, true);
+
+  // Same shape as 'wait'/'salt': no candidate carries the isVerified
+  // signal, so pickPrimary falls to master-last-write-wins — this must
+  // NOT be reported as a verified selection.
+  const unverified = pickPrimary(
+    [
+      { v: 'legacy-value', isVariant: false, isVerified: false, rawKey: 'testword2', source: 0 },
+      { v: 'master-value', isVariant: false, isVerified: false, rawKey: 'testword2', source: 2 }
+    ],
+    'testword2'
+  );
+  assert.equal(unverified.verifiedSelection, false);
+});
+
+test('grammarOverrides precedence: finalizeDictionary skips a grammarOverrides entry when pickPrimary already selected a VERIFIED/HIGH candidate', async () => {
+  const { finalizeDictionary } = await import('../../prepare-data.js');
+
+  const mergedValues = {
+    // A key present in grammarOverrides AND with a genuine single
+    // VERIFIED/HIGH candidate — grammarOverrides must NOT clobber it.
+    'testverb': [
+      { v: 'stale-legacy-value', isVariant: false, isVerified: false, rawKey: 'testverb', source: 0 },
+      { v: 'native-confirmed-value', isVariant: false, isVerified: true, rawKey: 'testverb', source: 2 }
+    ],
+    // A key present in grammarOverrides with NO verified candidate
+    // (same shape as current 'wait'/'salt') — grammarOverrides must
+    // still apply exactly as before.
+    'testadj': [
+      { v: 'legacy-a', isVariant: false, isVerified: false, rawKey: 'testadj', source: 0 },
+      { v: 'legacy-b', isVariant: false, isVerified: false, rawKey: 'testadj', source: 2 }
+    ]
+  };
+  const grammarOverrides = {
+    'testverb': 'hardcoded-override-value',
+    'testadj': 'hardcoded-override-value-2'
+  };
+
+  const { finalized } = finalizeDictionary(mergedValues, grammarOverrides);
+  assert.equal(finalized['testverb'], 'native-confirmed-value');
+  assert.equal(finalized['testadj'], 'hardcoded-override-value-2');
+});
+

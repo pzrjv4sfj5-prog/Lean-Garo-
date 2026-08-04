@@ -1428,6 +1428,58 @@ open handoff to Claude B on this exact issue, still unresolved). Needs
 more design/verification time than this session had left — see the audit
 report for why a quick patch isn't safe here.
 
+## Session close — 2026-08-04, Claude B, grammarOverrides-vs-VERIFIED precedence fix
+
+Fixed the backlog item above. Full detail: `docs/WORKSTATE.yaml` claude_b
+current_task (2026-08-04 entry), `docs/RUNTIME_ENGINEERING_AUDIT_20260803.md`
+"UPDATE 2026-08-04" section.
+
+**Investigated (per Project Owner instruction) before fixing:** traced
+`'wait'` and `'salt'` independently. Original framing assumed
+`grammarOverrides` was overriding an otherwise-correct `pickPrimary`
+selection — turned out both fail *earlier*: `pickPrimary`'s
+`verifiedNeutral` rule never fires for either, because the narrow
+`isVerified` signal (`notes` must literally start with `"verified/high"`)
+doesn't recognize either entry's differently-worded native-validation
+citation (`senga`: `"CORRECTED 2026-07-25..."`; `Kari` post-NV-055:
+`"RESOLVED, no longer superseded — NV-055..."`). Both converge on the
+*same* root cause (the narrow signal itself), so proceeded to fix per
+Project Owner approval.
+
+**Fixed and pushed:** `pickPrimary` now returns `{value, verifiedSelection}`
+(true only for its existing `verifiedNeutral` branch — no regex broadened,
+no new note-parsing added); `finalizeDictionary()` extracted as a pure,
+unit-testable function; `grammarOverrides` now skips any key where
+`verifiedSelection` was true, generically — no `'wait'`/`'salt'`
+special-casing. Compiled values for both are **unchanged** by this fix
+(neither currently satisfies `verifiedNeutral`) — confirmed via direct
+before/after read of `compiled_dict.json`. 171/171 tests (3 new), 0 lint.
+
+**Proposed, not implemented — needs Project Owner + Claude A decision:**
+explicit `confidence`/`confidence_source` metadata fields for
+`master_dictionary.json`, so future precedence checks read a
+machine-readable field instead of parsing prose `notes`. Schema
+migration, deliberately not applied without sign-off.
+
+**Separate, pre-existing, NOT caused by this session:** `npm run build`'s
+`repository-intelligence.js` gate currently fails against data landed by
+Claude A's own recent commits (`6c2fe37`/`90bade8`/`ff79daf`) —
+`PL-0002012`/`PL-0002013` invalid enum values in
+`src/data/pending_lexicon.json`, a `"where (relative pronoun)"`
+self-consistency conflict, and a `"need"` cross-table mismatch. Confirmed
+pre-existing via `git stash` + re-run (fails identically with this
+session's code fully reverted). Needs Claude A — linguistic/data-content
+territory, not fixed here. This session's own fix was still committed and
+pushed since it doesn't relate to or worsen this gap.
+
+Also reviewed a pasted native-validation document (Thangseng Q&A,
+sections A–Q) — confirmed everything in it is already integrated,
+matching `docs/THANGSENG_NATIVE_VALIDATION.md` NV-001 through NV-038,
+all logged CLOSED 2026-07-25 (including the two still-genuinely-open
+items, `bika so'a`/`hel'hel`, already tracked in WORKSTATE.yaml). No new
+action from it.
+
+
 
 
 

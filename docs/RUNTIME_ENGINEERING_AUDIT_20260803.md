@@ -127,6 +127,53 @@ See `docs/THANGSENG_NATIVE_VALIDATION.md` NV-055. The `pickPrimary`/
 Claude B's task, now unblocked by a clear, single, uncontested VERIFIED
 candidate (`kari`) to point the fix at.
 
+**UPDATE, 2026-08-04 (Claude B):** fix shipped. Traced `'wait'` and
+`'salt'` independently before touching anything, per Project Owner
+instruction. Finding: the framing above ("grammarOverrides silently
+beats a VERIFIED candidate") assumed `pickPrimary` would otherwise
+select correctly — it doesn't, for either word, even post-NV-055.
+Neither `senga`'s notes ("CORRECTED 2026-07-25...") nor `kari`'s
+post-NV-055 notes ("RESOLVED, no longer superseded — NV-055...") match
+the narrow `isVerified` signal (`/^verified\/high\b/i` on `notes`), so
+`pickPrimary`'s `verifiedNeutral` branch never fires for either — both
+fall to the array-order `master-last-write-wins` fallback instead, and
+`grammarOverrides` was never actually the *first* point of loss for
+either word. Both traces converge on this one root cause (the narrow
+isVerified signal itself, not `grammarOverrides`), so proceeded to fix,
+per explicit instruction NOT to broaden that regex or add new
+note-parsing heuristics.
+
+Fix: `pickPrimary` now returns `{value, verifiedSelection}` — true only
+for its existing `verifiedNeutral` branch, using the already-computed
+signal, unchanged. `finalizeDictionary()` extracted as a pure function
+(merge → pickPrimary → grammarOverrides) for direct unit testing.
+`grammarOverrides` now skips any key where `verifiedSelection` was
+true — closes the actual architectural gap this backlog item names,
+generically, for every current and future `grammarOverrides` key, with
+no `'wait'`/`'salt'` special-casing. Since neither word currently
+satisfies `verifiedNeutral`, **this fix does not change either compiled
+value** (`wait` stays `Damo/Sengbo`, `salt` stays `Kari` — the latter
+happens to already be correct per NV-055, but by `grammarOverrides`
+coincidence, not by design). 171/171 tests (3 new), 0 lint, prepare-
+data.js build step clean.
+
+Proposed but NOT implemented (Project Owner + Claude A decision needed):
+explicit `confidence`/`confidence_source` fields on
+`master_dictionary.json` entries, replacing prose-`notes` parsing
+entirely for future precedence checks. This is the schema-level fix
+that would let `pickPrimary` correctly select `senga`/`kari` without
+any heuristic — deliberately not applied without sign-off, since it
+touches all 9122 entries and Claude A's data model.
+
+Also found, separately, while running the required build verification:
+`npm run build`'s `repository-intelligence.js` gate currently fails —
+confirmed pre-existing (via `git stash`, fails identically with this
+session's engineering changes fully reverted) and unrelated to this fix.
+`PL-0002012`/`PL-0002013` in `src/data/pending_lexicon.json` have
+invalid `review_status`/`promotion_status` values; a `"where (relative
+pronoun)"` self-consistency conflict; a `"need"` cross-table mismatch.
+Needs Claude A — linguistic/data-content territory.
+
 ## Repository locations still requiring engineering work
 
 - `prepare-data.js`: `grammarOverrides` vs. VERIFIED-candidate precedence

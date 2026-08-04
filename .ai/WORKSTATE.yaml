@@ -979,7 +979,68 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-08-03: Runtime Engineering Audit (full sweep, no Native
+    2026-08-04: grammarOverrides-vs-VERIFIED precedence fix shipped
+    (backlog item from 2026-08-03 audit below), using 'wait'/'salt' as
+    regression examples per Project Owner instruction — NOT special-
+    cased. Investigation (traced both independently, per instruction,
+    before any fix): found the ORIGINAL framing ("grammarOverrides
+    overrides a correctly-resolved VERIFIED value") was itself slightly
+    wrong for both words as currently tagged — pickPrimary's own
+    verifiedNeutral rule never fires for either 'senga' (wait) or
+    'Kari' (salt, post Claude A's NV-055 which resolved the linguistic
+    question — see docs/THANGSENG native validation, master_dictionary
+    'salt' notes) because neither entry's notes literally start with
+    "verified/high" (senga: "CORRECTED 2026-07-25..."; Kari (post-NV-055):
+    "RESOLVED, no longer superseded — NV-055..."). Both fall through to
+    the array-order master-last-write-wins fallback instead. Root cause
+    for both converges at this ONE point: pickPrimary only ever treats a
+    selection as "verified" via the narrow notes-prefix regex, and
+    grammarOverrides didn't even respect that already-computed signal.
+    Per explicit instruction, did NOT broaden the isVerified regex or
+    add new note-parsing heuristics (would perpetuate the existing
+    fragile-prose-parsing architecture); did NOT add a schema field
+    (none exists in master_dictionary.json — fields are english/garo/
+    category/notes/pos/classifier only — decision to migrate deferred
+    to Project Owner, proposal below). Fix implemented is the smallest
+    safe thing available: pickPrimary now returns {value,
+    verifiedSelection}, true ONLY for its existing verifiedNeutral
+    branch; extracted merge->pickPrimary->grammarOverrides into a pure,
+    unit-testable finalizeDictionary(mergedValues, grammarOverrides);
+    grammarOverrides now skips any key where verifiedSelection was true
+    (generic — no per-word special case, applies to every current/future
+    grammarOverrides key). main() guarded (import.meta.url check) so
+    prepare-data.js can be imported by tests with zero file-write side
+    effects; `node prepare-data.js` build behavior unchanged. VERIFIED
+    NO REGRESSION: neither 'wait' nor 'salt' currently satisfies
+    verifiedNeutral, so compiled values are UNCHANGED by this fix
+    (wait=Damo/Sengbo, salt=Kari, both exactly as before) — confirmed
+    via direct compiled_dict.json read pre/post. 3 new tests (2 mechanism/
+    synthetic-data tests on pickPrimary/finalizeDictionary directly, 1
+    regression-value test), 171/171 total pass, 0 lint errors, prepare-
+    data.js build step itself clean.
+    PROPOSED (not implemented, Project Owner + Claude A joint decision
+    needed): explicit metadata model — add `confidence` (closed enum:
+    VERIFIED/UNVERIFIED/SUPERSEDED/CONTRADICTED/...) and
+    `confidence_source` (citation ID, e.g. "NV-055") fields to
+    master_dictionary.json entries, so pickPrimary can key off a
+    machine-read field instead of parsing prose notes at all. This is a
+    schema migration touching all 9122 entries — explicitly NOT applied,
+    per instruction not to silently change Claude A's data model.
+    SEPARATE ISSUE FOUND DURING BUILD VERIFICATION, PRE-EXISTING, NOT
+    CAUSED BY THIS FIX (confirmed via git stash + re-run: fails
+    identically with all this session's changes reverted): `npm run
+    build`'s repository-intelligence.js gate now fails against data from
+    Claude A's own pulled commits (6c2fe37/90bade8/ff79daf, this
+    session's git pull) — PL-0002012/PL-0002013 in
+    src/data/pending_lexicon.json have invalid review_status/
+    promotion_status enum values; a "where (relative pronoun)" self-
+    consistency conflict; a "need" cross-table mismatch (corrections.json
+    "nanga" vs compiled_dict.json "nang·a"). Not fixed this session -
+    linguistic/data-content territory, flagged for Claude A, NOT
+    committed/pushed yet (see next_action) since it would leave the
+    repository in a broken-build state on main.
+    ---
+    PRIOR SESSION (2026-08-03: Runtime Engineering Audit (full sweep, no Native
     Validation performed) per Project Owner request. Resumed from
     repository only, HEAD 7c490ad -> re-verified against origin fresh.
     Scope: translationEngine.js, sentenceBuilder.js, lookupEngine.js,
@@ -1257,8 +1318,31 @@ claude_b:
     - "BACKLOG-001 complete: PURPOSE_MAP/PRONOUN_MAP/POSSESSIVES extracted; RC-CANDIDATE-006 (stale search purpose-form) discovered and logged, not fixed, 55/55 passing"
     - "Governance update: replaced Repository Access Model per Project Owner directive (Claude A may push directly with a session-scoped PAT)"
     - "BACKLOG-006 first increment: repository-intelligence.js (raka report + cross-table consistency gate), RC-CANDIDATE-007/008/009 logged, 56/56 passing"
+    - "grammarOverrides-vs-VERIFIED precedence fix: pickPrimary reports verifiedSelection, finalizeDictionary extracted+tested, grammarOverrides skips verified keys; 'wait'/'salt' used as regression examples only, not special-cased; no compiled-value change (neither currently satisfies verifiedNeutral); metadata-model schema proposal reported, not applied"
   next_action: >-
-    2026-08-01 (new session): "answer" trace complete, VERIFIED-
+    2026-08-04 (this session, MOST URGENT — main's build gate is
+    ALREADY broken, independent of anything this session shipped):
+    npm run build's repository-intelligence.js gate fails against data
+    from Claude A's own pulled commits (6c2fe37/90bade8/ff79daf) —
+    PL-0002012/PL-0002013 invalid review_status/promotion_status enum
+    values in src/data/pending_lexicon.json, a "where (relative
+    pronoun)" self-consistency conflict, a "need" cross-table mismatch
+    (corrections.json "nanga" vs compiled_dict.json "nang·a"). Confirmed
+    pre-existing to THIS session (fails identically with this session's
+    engineering changes fully stashed, on origin/main's own HEAD) and
+    NOT engineering/grammarOverrides-related — linguistic/data-content
+    territory, needs Claude A. The grammarOverrides fix itself is
+    committed/pushed this session (171/171 tests, 0 lint,
+    grammarOverrides-precedence build step itself clean) since it does
+    not worsen or relate to this gap — main was already broken at this
+    exact spot before this session started. Needs Claude A to resolve
+    PL-0002012/2013/"where (relative pronoun)"/"need" before the next
+    full green build.
+    Also pending: Project Owner decision on the proposed
+    confidence/confidence_source metadata-model schema migration (see
+    current_task above) — NOT applied, joint Claude A/Claude B/Project
+    Owner call.
+    Prior (2026-08-01, still true): "answer" trace complete, VERIFIED-
     preference rule shipped and scoped (see current_task above). No
     other master-internal-conflict keys of this shape are known to be
     outstanding right now, but the underlying pattern (159+ keys in
@@ -1296,7 +1380,14 @@ claude_b:
     - "Do not re-add PROGRESSIVE_MAP/PAST_TO_ROOT - confirmed dead, removed dcf6293"
     - "Do not re-implement jaha as past-negation - superseded, see Rule 17/27"
     - "Do not implement chat-sourced linguistic proposals directly - must go through Claude A -> docs/ commit first (standing integration rule as of 2026-07-08)"
-  waiting_for: "Claude A to review docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md and commit canonical rule(s); Thangseng native validation on Rules 30/31"
+  waiting_for: >-
+    Claude A to fix repository-intelligence.js build-gate failures
+    (PL-0002012/2013 invalid enums, "where (relative pronoun)"
+    conflict, "need" cross-table mismatch — see next_action, 2026-08-04);
+    Project Owner decision on proposed confidence/confidence_source
+    metadata-model schema migration (current_task, 2026-08-04). Prior,
+    still open: Claude A to review docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md
+    and commit canonical rule(s); Thangseng native validation on Rules 30/31.
   expected_output: "Repository fully bootstrap-able from .ai/ + PROJECT_STATUS.md with zero conversational context required"
 
 chatgpt:
