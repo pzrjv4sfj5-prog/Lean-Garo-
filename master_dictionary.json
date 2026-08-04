@@ -3949,7 +3949,15 @@
   {
     "english": "under",
     "garo": "Kokkimao",
-    "category": "general"
+    "category": "general",
+    "notes": "General/default 'under' sense. Canonical spelling — 'nokkimao' is the same word, deprecated spelling variant, do not use. Distinct from 'mitapo' (under a sheet/slab/covering) — see that entry. Confirmed 2026-08-04 (Project Owner, native-sourced)."
+  },
+  {
+    "english": "under (sheet/slab/covering)",
+    "garo": "Mitapo",
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "Used specifically for 'underneath' something covering, e.g. under a sheet or slab. General 'under' elsewhere uses 'kokkimao' (see that entry) — the two are not interchangeable. Closes NV-058. Confirmed 2026-08-04 (Project Owner, native-sourced)."
   },
   {
     "english": "between",

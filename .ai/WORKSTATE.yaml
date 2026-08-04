@@ -317,6 +317,21 @@ claude_a:
     address-only-vs-subject question (unrelated, Thangseng still to
     answer); man·a itself not directly addressed by this transcript,
     stays open too.
+    UPDATE (2026-08-04, NV-058): closed the mitapo vs kokkimao/
+    nokkimao question. Project Owner direct confirmation: mitapo used
+    specifically for "underneath" = under a sheet/slab; kokkimao/
+    nokkimao used for all other "under" cases and are the same word.
+    Resolves the long-open spelling-canonicalization gap: kokkimao is
+    canonical (already master_dictionary.json's form), nokkimao is the
+    deprecated variant. master_dictionary.json: added
+    "under (sheet/slab/covering)"->Mitapo (VERIFIED/HIGH, new),
+    annotated existing under->Kokkimao entry as canonical.
+    RULE-035.yaml claims updated needs_native_validation->verified
+    (sense-distinction claim); worked full-sentence example for mitapo
+    specifically still open, non-urgent. GRAMMAR_RULE_CATALOGUE.md
+    RULE-033/RULE-035 updated. Consolidated open-list item #3
+    (mitapo vs kokkimao/nokkimao under-sense) now closed. test-
+    dictionary.js: 8047/8047 valid, 9/9 corrections verified, passed.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified

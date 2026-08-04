@@ -444,6 +444,7 @@ vs. b vs. c) remains open, unaffected by this update.
 **Dependencies:** RULE-001 (raka), Grammar Specification §6 (locative suffix), Morphology Specification §5 (lexical-split caution). See also RULE-034 (wider locative/directional set) and RULE-035 (under/beneath sense split).
 **Native Notes:** Source Rule 33; root cause traced to a same-suffix confusion between two unrelated roots (`down` vs. `under`), not a random error — instructive for future implementers per Morphology Specification §5.
 **Update (2026-07-08):** The `kokkima`/`nokkima` spelling discrepancy flagged in `edc94b7`/`THANGSENG_RULES_LOOKUP.md` is now resolved — both are confirmed legitimate variants, not a typo needing correction. Source: relayed native guidance (Thangseng via Tridip, 2026-07-08), logged in `docs/PENDING_LINGUISTIC_PROPOSAL_20260708_locatives.md`. See RULE-035 for the related but distinct "under" vs. "beneath" (`mitapo`) sense split, which this rule's general "under" mapping does not cover.
+**Update (2026-08-04, NV-058):** Project Owner direct confirmation now settles which spelling to standardize on: `kokkimao` is canonical (already the form used in `master_dictionary.json`); `nokkimao` is the same word, deprecated spelling variant — do not introduce new `nokkimao` entries going forward. Existing doc examples using `nokkimao` are historical and not being bulk-edited this session.
 **Validation Status:** Verified (core "under the table" sentence, direct Thangseng confirmation, unchanged); Verified at Medium confidence (spelling-variant resolution — relayed, not a direct real-time confirmation session; see RULE-035 note on evidentiary standard).
 **Confidence:** High (core rule); Medium (spelling-variant resolution, pending direct confirmation opportunity).
 **Launch Priority:** P0 (correction already implemented); P1 (generalizing locative word order beyond this single confirmed sentence — see Grammar Specification §2, RULE-G2 productivity boundary).
@@ -496,6 +497,7 @@ blanket/covering sense (not obligatory); `nokkimao` (RULE-033's
 `nokkimao` interchangeability is still correctly ruled out (this
 rule's core claim holds), but "which of the three applies" is more
 context-dependent than the original two-way framing implied.
+**Update (2026-08-04, NV-058):** Project Owner direct confirmation reconfirms the operative split as `mitapo` (sheet/slab/covering sense) vs. `kokkimao`/`nokkimao` (all other "under" cases, same word — `kokkimao` canonical, see RULE-033 update). This confirmation does not mention `ning'ao`; the 2026-07-25 three-way finding for `ning'ao`'s status is unchanged and not contradicted, just not addressed by today's input. `master_dictionary.json` now carries a `mitapo` entry (english key `"under (sheet/slab/covering)"`) at VERIFIED/HIGH.
 **Confidence:** High (worked example now exists, confirms the
 distinction and gives production values for at least 3 concrete
 cases).

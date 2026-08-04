@@ -3153,3 +3153,39 @@ doc closed. **Still open:** whether `apa`/`ama` (as concepts) are
 address-only or usable as a full sentence subject — Thangseng said
 he'd answer later; moot for `ama` now that it's retired from the
 mother sense, but still open for `apa` (father).
+
+---
+
+## NV-058 — RULE-035 `mitapo` vs. `kokkimao`/`nokkimao` reconfirmed, spelling canonicalized — CLOSED 2026-08-04
+
+**Direct Project Owner confirmation (2026-08-04):**
+> mitapo will be used when the word 'underneath' is used to talk about
+> something that is under a sheet or a slab. In other cases kokkimao
+> or nokkimao is also used (we shall use only one) these are same
+> words.
+
+Reconfirms the sense split RULE-035/NV-004 already established:
+`mitapo` exclusively for the sheet/slab/covering sense; `kokkimao`/
+`nokkimao` for all other "under" cases. New piece resolved today: the
+long-standing "both are legitimate variants" note (RULE-033, logged
+2026-07-08) is now settled to a single canonical spelling —
+`kokkimao` and `nokkimao` are the same word, `kokkimao` is canonical
+(already the form `master_dictionary.json` used). `nokkimao` is a
+deprecated spelling variant going forward, not a separate sense.
+
+This confirmation does not mention `ning'ao`; NV-004's 2026-07-25
+three-way finding (`ning'ao` as general-purpose default, `mitapo` as
+covering-sense alternate, `nokkimao`/`kokkimao` for the more specific
+"covered-under" sense) stands unchanged — today's input isn't in
+tension with it, just narrower in scope.
+
+**Action taken:** `master_dictionary.json` — added
+`"under (sheet/slab/covering)"`→`Mitapo` (VERIFIED/HIGH, new); the
+existing `under`→`Kokkimao` entry annotated as canonical spelling with
+`nokkimao` noted as the deprecated variant. `RULE-035.yaml` claims
+updated from `needs_native_validation`/medium to `verified`/high for
+the sense-distinction claim (worked full-sentence example for the
+`mitapo` side specifically remains open, non-urgent). `RULE-033` and
+`RULE-035` entries in `GRAMMAR_RULE_CATALOGUE.md` updated with
+2026-08-04 notes. Existing doc examples elsewhere using `nokkimao`
+spelling are historical and not bulk-edited this session.

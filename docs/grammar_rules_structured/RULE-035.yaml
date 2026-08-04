@@ -12,19 +12,22 @@ dependencies:
     note: "the sense this rule splits off from"
 claims:
   - scope: "the sense distinction itself (that mitapo and kokkimao/nokkimao are distinct, not interchangeable)"
-    status: needs_native_validation
-    confidence: medium
+    status: verified
+    confidence: high
     status_note: >-
-      plausible and specific enough to record, but has no confirmed
-      example sentence yet. RULE-033's existing "under the table"
-      example should NOT be reused as evidence for mitapo, since it is
-      a general-sense example, not a covering-sense one.
+      Confirmed 2026-08-04 (Project Owner, native-sourced): mitapo is
+      used specifically when "underneath" refers to something under a
+      sheet or slab (covering sense). kokkimao/nokkimao is used in all
+      other cases and the two spellings are the same word — kokkimao
+      is the canonical spelling (already the form used in
+      master_dictionary.json); nokkimao is a deprecated variant
+      spelling, not a separate sense. Closes NV-058.
   - scope: "a worked example sentence for the mitapo sense specifically"
     status: needs_native_validation
     confidence: low
-    status_note: "none exists yet (e.g. no confirmed sentence like \"the book is under the blanket\")"
+    status_note: "still none at full-sentence level (e.g. no confirmed sentence like \"the book is under the blanket\") — the sense assignment itself is confirmed, but a worked sentence remains open, non-urgent"
 examples:
-  - "None yet at full-sentence level for the mitapo sense. RULE-033's nokkimao example (\"dog under the table\") is confirmed to be the general sense, not the covering sense."
+  - "None yet at full-sentence level for the mitapo sense. RULE-033's kokkimao example (\"dog under the table\") is confirmed to be the general sense, not the covering sense."
 counterexamples:
   note: "Treating mitapo and kokkimao/nokkimao as interchangeable would be a misuse of this rule - the whole point of RULE-035 is that they are not."
   items: []
@@ -41,3 +44,4 @@ updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-035"
 migration_flags:
   - "RESOLVED 2026-07-31 (Claude A reconciliation pass): GRAMMAR_RULE_CATALOGUE.md's RULE-035 entry now Verified. Cross-check found the split is three-way (ning'ao general default, mitapo confirmed alternate for covering sense, nokkimao for the more specific covered-under sense), not the two-way split this rule originally proposed - see catalogue entry for full detail and the water/table/blanket worked examples."
+  - "RESOLVED 2026-08-04 (NV-058, Project Owner direct confirmation): reconfirms the mitapo (sheet/slab covering) vs. kokkimao/nokkimao (all other 'under' cases) split as the operative two-way distinction, and additionally resolves the kokkimao/nokkimao spelling question - same word, kokkimao is canonical. Does not mention ning'ao; that word's status per the 2026-07-25 three-way finding (NV-004) is unchanged and not contradicted, just not addressed by this confirmation."

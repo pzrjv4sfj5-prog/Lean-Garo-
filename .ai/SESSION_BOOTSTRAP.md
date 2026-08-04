@@ -211,6 +211,23 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude A — NV-058 closed: `mitapo` vs.
+`kokkimao`/`nokkimao` reconfirmed, spelling canonicalized.** Project
+Owner direct confirmation: `mitapo` used specifically when
+"underneath" means under a sheet/slab; `kokkimao`/`nokkimao` used for
+all other "under" cases and are the same word. Resolves the
+long-standing spelling ambiguity — `kokkimao` is canonical (already
+`master_dictionary.json`'s form), `nokkimao` is the deprecated
+variant. `master_dictionary.json` — added
+`"under (sheet/slab/covering)"`→`Mitapo` (VERIFIED/HIGH, new);
+annotated existing `under`→`Kokkimao` entry. `RULE-035.yaml` claims
+updated `needs_native_validation`→`verified` (sense-distinction claim
+only — worked full-sentence example for `mitapo` still open,
+non-urgent). `GRAMMAR_RULE_CATALOGUE.md` RULE-033/RULE-035 updated.
+`test-dictionary.js`: 8047/8047 valid, 9/9 corrections verified,
+passed. **Not yet compiled** — needs a `prepare-data.js` run to reach
+runtime artifacts (Claude B).
+
 **NEW, 2026-08-04, Claude A — NV-018 follow-up closed: mother's
 address-register word moved to `a·ai`, retiring bare `ama` from that
 sense.** Transcript was mostly a duplicate relay of already-logged
