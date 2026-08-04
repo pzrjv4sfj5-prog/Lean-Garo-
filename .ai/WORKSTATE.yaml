@@ -803,6 +803,23 @@ claude_a:
     - "2026-07-31 (later session, checkpoint b181e86): phone ka·a citation-form headword added, closing the base/citation-form keying question from NV-046 (81545be, 14eb835). mipring/-de remains the sole open item in that lineage."
     - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
+    2026-08-04 (mid-session collision note): while pushing the fix
+    below, found Claude B had pushed b4890a6 (Claude C audit findings
+    1-3) in the interim. Fetched, diffed (no textual overlap with my
+    changes), merged clean via git merge. That commit synced
+    irregular_verbs.json's "need" to "nanga" (to match
+    corrections.json's pre-fix value) - now stale against my raka
+    correction below, so also updated irregular_verbs.json
+    "need"->"nang·a" to keep all three tables (corrections.json,
+    irregular_verbs.json, master_dictionary.json) consistent on the
+    VERIFIED/HIGH spelling. Re-ran repository-intelligence.js post-
+    merge: Check B "need" now 0 new violations (was already 0 for my
+    original 3 targets pre-merge; merge did not reintroduce anything).
+    Full post-merge state matches what was already documented below -
+    my 3 targeted items stay fixed, the 3 pre-existing/unrelated items
+    (Check C x4, Check F "who gave you this") are untouched by the
+    merge, still open, still Next Recommended Tasks. test-dictionary.js
+    re-run post-merge: 8048/8048 valid, 9/9 corrections verified.
     2026-08-04 (this session): the 3 build-gate items handed off to
     Claude A are fixed (see current_task's 2026-08-04 update) -
     PL-0002012/PL-0002013 enum+field corrections, "need"

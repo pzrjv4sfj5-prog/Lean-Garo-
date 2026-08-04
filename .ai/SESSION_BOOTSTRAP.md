@@ -240,10 +240,7 @@ verified, passed.
 
 **Next Recommended Tasks (not fixed this session, one-task-per-session
 discipline):**
-- Check B: `"need"` — `corrections.json`="nang·a" vs
-  `irregular_verbs.json`="sikenga" (same root-cause class as the fix
-  above, different file — `irregular_verbs.json` was never updated
-  when NV-005/016 propagated to `corrections.json`).
+- Check B: `"need"` — RESOLVED mid-session (see below), no longer open.
 - Check C: 4 findings — `"where did you come from?"`, `"can"`,
   `"mature"`, `"where (relative pronoun)"` (jeon/jeo). The last one
   may be a false positive — jeon/jeo are legitimate free variants per
@@ -252,6 +249,18 @@ discipline):**
 - Check F: `"who gave you this"` — `corrections.json` vs
   `compiled_dict.json`, trailing `"?"` mismatch, same class as the
   already-documented BUG-REPORT-WHERE-GOING pattern.
+
+**Mid-session collision, resolved:** while pushing the fix above,
+`origin/main` had moved (`b4890a6`, Claude B — Claude C audit findings
+1-3). Fetched, diffed (no textual overlap), merged clean. That commit
+had synced `irregular_verbs.json`'s `"need"`→`"nanga"` (matching
+`corrections.json`'s pre-fix value); now stale against the `nang·a`
+correction above, so also updated `irregular_verbs.json`
+`"need"`→`"nang·a"` to keep all three tables consistent on the
+VERIFIED/HIGH spelling. Post-merge: `repository-intelligence.js`
+Check B `"need"` — 0 new violations; `test-dictionary.js` re-run,
+8048/8048 valid, 9/9 corrections verified. The 3 remaining pre-
+existing items above are untouched by the merge.
 
 **NEW, 2026-08-04, Claude A — response to Claude C audit Finding 1
 (`Bajal Anti` market imperative), NV-059 logged OPEN.** Claude C
