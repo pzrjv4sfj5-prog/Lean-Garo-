@@ -86,7 +86,16 @@ export const PHRASE_MAPS = {
   'bland': 'Chibroka',
   'tasteless': 'Chibroka',
   'smelly': 'Senga',
-  'market': 'Bajal Anti', // 2026-07-26, Claude B: was 'Bajal / Anti' (unresolved placeholder, leaked into live "go to market" sentences). Fixed per existing native-confirmed evidence in this same repo (corrections.json's "let's go to market" -> "Hai Bajal Anti Re·na", master_dictionary.json duplicate, both VERIFIED/native-speaker) - "Bajal Anti" is a confirmed two-word unit, not a choice between two alternatives.
+  // 2026-08-04, Claude B (Claude C audit Finding 1): reverted 2026-07-26's
+  // 'Bajal Anti' fix — that fix's own justification (borrowing "let's go to
+  // market"'s "Hai Bajal Anti Re·na" as evidence) doesn't transfer to this
+  // bare-word fallback key. NV-051/NV-052 (VERIFIED/HIGH) directly confirm
+  // the standalone headword 'market' = 'Bajal' alone; 'Anti' = 'week'
+  // (compiled_dict.json), explicitly rejected as a market synonym by NV-052
+  // (PL-0001992 -> rejected). The "let's go to market" idiom itself is a
+  // separate, still-open question (NV-059, Claude A) — this bare-word
+  // fallback isn't that idiom and shouldn't borrow its unresolved evidence.
+  'market': 'Bajal',
   'how much': 'Baita?',
   'how much is this': 'Baita?',
   'it is too expensive': 'Ia dam rakduga.',
