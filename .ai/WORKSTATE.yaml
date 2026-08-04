@@ -332,6 +332,43 @@ claude_a:
     RULE-033/RULE-035 updated. Consolidated open-list item #3
     (mitapo vs kokkimao/nokkimao under-sense) now closed. test-
     dictionary.js: 8047/8047 valid, 9/9 corrections verified, passed.
+    UPDATE (2026-08-04, build-gate data-integrity fix, resumed clean at
+    HEAD 6753782 via migration doc, re-verified via git fetch before
+    acting): fixed the 4 repository-intelligence.js build-gate
+    irregularities Claude B flagged as pre-existing on origin/main and
+    needing Claude A (see next_action, prior entry). (1) PL-0002012
+    ("which (relative pronoun)"/"jeon / jeo", review_status
+    "resolved-promoted") - src/data/pending_lexicon.json's own
+    english/garo fields were stale from before NV-054 corrected the
+    candidate to "where"/split it into two master_dictionary.json
+    entries; corrected this PL record's english to "where (relative
+    pronoun)" and garo to "jeon" (the "jeo" companion was promoted as
+    its own master_dictionary.json entry, not separately PL-tracked);
+    review_status normalized to schema value "approved". No
+    linguistic content changed - purely aligning the pending-lexicon
+    record with what was already promoted. (2) PL-0002013 ("which
+    (interrogative pronoun)", review_status "resolved-not-promoted-
+    duplicate", promotion_status "not-promoted") - both non-schema
+    values normalized: review_status->"approved" (review is complete),
+    promotion_status->"duplicate-skip" (per its own review_notes:
+    already covered by existing VERIFIED entries + RULE-044, no new
+    sense). (3) "need": corrections.json's "nanga" (no raka) diverged
+    from master_dictionary.json's VERIFIED/HIGH "nang·a" (with raka) -
+    same word, spelling had drifted out of sync when NV-005/016
+    propagated to corrections.json on 2026-08-03; corrected
+    corrections.json "need"->"nang·a" to match the VERIFIED master
+    spelling exactly. Verified via full repository-intelligence.js
+    re-run before/after (git stash compare) that this resolved exactly
+    the 3 targeted findings (PL-0002012, PL-0002013 structural issues;
+    "need" in Check F) with zero new violations introduced. Build gate
+    still FAILS overall on separate pre-existing issues unrelated to
+    this task, not touched this session (see next_action for the
+    itemized list) - flagged as Next Recommended Tasks, not fixed here
+    per one-task-per-session discipline. test-dictionary.js: 8048/8048
+    valid, 9/9 corrections verified, passed (entry count differs from
+    prior 8047 baseline only because that number was itself stale in
+    this doc, not because of this session's changes - not
+    re-investigated, out of scope). No engine code touched.
   current_task_prior5: >-
     2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo
     discrepancy closed, -chi present-continuous usage clarified
@@ -766,6 +803,24 @@ claude_a:
     - "2026-07-31 (later session, checkpoint b181e86): phone ka·a citation-form headword added, closing the base/citation-form keying question from NV-046 (81545be, 14eb835). mipring/-de remains the sole open item in that lineage."
     - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
+    2026-08-04 (this session): the 3 build-gate items handed off to
+    Claude A are fixed (see current_task's 2026-08-04 update) -
+    PL-0002012/PL-0002013 enum+field corrections, "need"
+    corrections.json/master spelling sync. Claude B's build gate still
+    fails on unrelated pre-existing issues, none touched this session:
+    Check B "need" corrections.json="nang·a" vs
+    irregular_verbs.json="sikenga" (stale, same root cause class as
+    the fix above but a different file - irregular_verbs.json was
+    never updated when NV-005/016 propagated); Check C 4 findings
+    ("where did you come from?", "can", "mature",
+    "where (relative pronoun)" jeon/jeo - this last one may be a
+    false positive, since jeon/jeo are legitimate free variants per
+    NV-054, not a real conflict - worth a second look before
+    allowlisting); Check F "who gave you this" corrections.json vs
+    compiled_dict.json (trailing "?" mismatch, same class as the
+    already-documented BUG-REPORT-WHERE-GOING pattern). None
+    guessed at or fixed this session - flagged as Next Recommended
+    Tasks per one-task-per-session discipline.
     2026-08-01 (later): NV-049 CLOSED (see current_task) -
     mipring/-de and phone/smartphone/mobile, the two items
     listed as "genuinely still open" a few entries below, are

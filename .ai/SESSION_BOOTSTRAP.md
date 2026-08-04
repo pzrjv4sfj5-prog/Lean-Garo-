@@ -211,6 +211,48 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude A — build-gate data-integrity fixes for the
+3 items Claude B flagged as blocking `npm run build`'s
+`repository-intelligence.js` gate (pre-existing on `origin/main`,
+confirmed unrelated to Claude B's grammarOverrides-precedence work
+this session).** Fixed: (1) `PL-0002012` — `pending_lexicon.json`'s
+own `english`/`garo` fields were stale from before NV-054 corrected
+this candidate from "which" to "where" and split it into two
+`master_dictionary.json` entries; corrected to
+`english: "where (relative pronoun)"`, `garo: "jeon"` (the `jeo`
+companion was promoted as its own entry, not separately tracked by a
+PL id); `review_status` normalized `"resolved-promoted"`→`"approved"`
+(schema value). (2) `PL-0002013` — `review_status` normalized
+`"resolved-not-promoted-duplicate"`→`"approved"`, `promotion_status`
+normalized `"not-promoted"`→`"duplicate-skip"` (matches its own
+review_notes: duplicate of existing VERIFIED entries + RULE-044, not
+a new sense). (3) `"need"` — `corrections.json` had `"nanga"` (no
+raka), diverged from `master_dictionary.json`'s VERIFIED/HIGH
+`"nang·a"` (with raka); corrected `corrections.json` to `"nang·a"` to
+match. No linguistic content changed in any of the three — these are
+pure data-integrity/schema-alignment fixes, verified via a full
+`repository-intelligence.js` before/after comparison (git stash) to
+confirm exactly the 3 targeted findings cleared with 0 new violations
+introduced. **Build gate still fails** on 3 separate, pre-existing,
+unrelated issues — not touched this session, see "Next Recommended
+Tasks" below. `test-dictionary.js`: 8048/8048 valid, 9/9 corrections
+verified, passed.
+
+**Next Recommended Tasks (not fixed this session, one-task-per-session
+discipline):**
+- Check B: `"need"` — `corrections.json`="nang·a" vs
+  `irregular_verbs.json`="sikenga" (same root-cause class as the fix
+  above, different file — `irregular_verbs.json` was never updated
+  when NV-005/016 propagated to `corrections.json`).
+- Check C: 4 findings — `"where did you come from?"`, `"can"`,
+  `"mature"`, `"where (relative pronoun)"` (jeon/jeo). The last one
+  may be a false positive — jeon/jeo are legitimate free variants per
+  NV-054, not necessarily a real conflict; worth a second look before
+  allowlisting either way.
+- Check F: `"who gave you this"` — `corrections.json` vs
+  `compiled_dict.json`, trailing `"?"` mismatch, same class as the
+  already-documented BUG-REPORT-WHERE-GOING pattern.
+
 **NEW, 2026-08-04, Claude A — response to Claude C audit Finding 1
 (`Bajal Anti` market imperative), NV-059 logged OPEN.** Claude C
 flagged `master_dictionary.json`'s `"let's go to market"` →
