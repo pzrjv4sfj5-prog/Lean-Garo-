@@ -736,6 +736,7 @@
   "in / at": "general",
   "on": "general",
   "under": "general",
+  "under (sheet/slab/covering)": "general",
   "between": "general",
   "only": "general",
   "also": "general",
