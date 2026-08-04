@@ -226,13 +226,16 @@ export default function Translator() {
                 </div>
               </div>
             ) : result ? (
-              <div>
-                <div className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">
-                  {result.translated}
-                </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">
-                  {result.original}
-                </div>
+              // RUNTIME-AUDIT fix (2026-08-04, Claude B): this panel was
+              // unconditionally rendering result.original (the raw English
+              // input, per translateSentence()'s return shape) beneath the
+              // translation — a frontend rendering bug, not an engine/payload
+              // issue (translate()/translateSentence() never included English
+              // in the Garo string itself; the component was just displaying
+              // an extra field it had no reason to show). Output box now
+              // contains only the translation.
+              <div className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                {result.translated}
               </div>
             ) : (
               <span className="text-gray-400 dark:text-gray-500">Translation will appear here...</span>

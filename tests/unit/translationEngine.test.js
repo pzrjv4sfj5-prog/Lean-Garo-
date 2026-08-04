@@ -1137,3 +1137,35 @@ test('grammarOverrides precedence: finalizeDictionary skips a grammarOverrides e
   assert.equal(finalized['testadj'], 'hardcoded-override-value-2');
 });
 
+
+// --- RUNTIME-AUDIT (2026-08-04, Claude B): findVerbForm corrections.json
+// precedence fix. Root cause: IRREGULAR_VERBS (static table) was checked
+// BEFORE corrections.json in findVerbForm, silently shadowing any
+// native-validated correction sharing a key with an irregular-verb entry.
+// 'need' was a live, confirmed regression of NV-005/NV-016/NV-021's
+// sikenga->nanga fix — findVerbForm('need') still returned the superseded
+// 'sikenga' with corrections.json correctly holding 'nanga'. Fix scoped to
+// corrections.json only (the pipeline's own documented top-priority
+// override layer), not the full lookupGaro cascade — see morphologyEngine.js
+// comment for why compiled_dict precedence is deliberately left untouched.
+test('findVerbForm: corrections.json overrides IRREGULAR_VERBS (regression: need must not regress to superseded sikenga)', async () => {
+  const { findVerbForm } = await import('../../src/morphologyEngine.js');
+  assert.equal(findVerbForm('need'), 'nanga');
+  assert.equal(findVerbForm('needs'), 'nanga');
+});
+
+test('findVerbForm: corrections.json precedence holds for all confirmed-stale IRREGULAR_VERBS keys (eaten/bought/heard/standing/sitting)', async () => {
+  const { findVerbForm } = await import('../../src/morphologyEngine.js');
+  const corrections = (await import('../../src/data/corrections.json', { with: { type: 'json' } })).default;
+  for (const key of ['eaten', 'bought', 'heard', 'standing', 'sitting']) {
+    assert.equal(findVerbForm(key), corrections[key], `findVerbForm('${key}') should match corrections.json, not the stale IRREGULAR_VERBS value`);
+  }
+});
+
+test('findVerbForm: IRREGULAR_VERBS still used as fallback when no corrections.json entry exists (went/gone/came — genuinely irregular, no other source)', async () => {
+  const { findVerbForm } = await import('../../src/morphologyEngine.js');
+  const IRREGULAR_VERBS = (await import('../../src/data/irregular_verbs.json', { with: { type: 'json' } })).default;
+  for (const key of ['went', 'gone', 'came']) {
+    assert.equal(findVerbForm(key), IRREGULAR_VERBS[key]);
+  }
+});
