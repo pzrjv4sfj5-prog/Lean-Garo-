@@ -1169,3 +1169,45 @@ test('findVerbForm: IRREGULAR_VERBS still used as fallback when no corrections.j
     assert.equal(findVerbForm(key), IRREGULAR_VERBS[key]);
   }
 });
+
+// --- Claude C audit (2026-08-04), Finding 1: 'Anti' (week) contamination
+// in market-going phrases. Root cause: phrase-level corrections/phrase-maps
+// written against 'market' before NV-051/NV-052 settled market=Bajal (Anti
+// explicitly rejected as a market synonym, PL-0001992), never swept
+// afterward. Fixed 7 of 9 flagged rows (2 — "let's go to market" family —
+// remain open pending Claude A's targeted native-check, NV-059).
+test('market phrases do not contain the stale "Anti" (week) contamination', async () => {
+  const cases = [
+    ['at the market', 'bajalo'],
+    ['go to the market', 'Bajalchi re·angbo'],
+    ["let's go to the market", 'Hai bajalchi re·na'],
+    ['i am waiting at the market', 'Anga bajalo sengenga'],
+  ];
+  for (const [input, expected] of cases) {
+    const result = await translate(input);
+    assert.equal(result.garo, expected);
+    assert.ok(!result.garo.toLowerCase().includes('anti'), `"${input}" should not contain the stale Anti (week) token`);
+  }
+});
+
+test('phrase_maps market fallback resolves to Bajal, not the stale Bajal Anti compound', async () => {
+  const { lookupPhrase } = await import('../../src/data/phrase_maps.js');
+  assert.equal(lookupPhrase('market'), 'Bajal');
+});
+
+// --- Claude C audit (2026-08-04), Finding 2: inverted yes/no questions
+// ("is he going to X?") never reached grammar-assembly — dropped the verb
+// entirely (fell to assembleSentenceSOV, which has no verb-tense assembly).
+// Fixed by normalizing aux-inversion word order before the existing
+// subject/verb search, and appending the already-VERIFIED ' ma?' yes/no
+// marker (confirmed via "are you going"->"...enga ma?" etc.).
+test('inverted yes/no questions ("is he/she going to X?") retain the verb, matching the declarative form + ma marker', async () => {
+  const declarative = await translate('he is going to school');
+  const question = await translate('is he going to school?');
+  assert.equal(question.method, 'grammar-assembly');
+  assert.equal(question.garo, declarative.garo + ' ma?');
+
+  const sheQuestion = await translate('is she going to school?');
+  assert.equal(sheQuestion.method, 'grammar-assembly');
+  assert.ok(sheQuestion.garo.includes('ma?'));
+});

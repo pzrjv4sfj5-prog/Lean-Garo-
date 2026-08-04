@@ -227,7 +227,13 @@ export function assembleGrammar(grammar) {
   if (parts.length < 2) return null;
   const result = parts.join(' ');
   if (result.includes('[UNKNOWN]')) return null;
-  return result;
+  // Claude C audit Finding 2 fix (2026-08-04, Claude B): grammar.isQuestion
+  // (set by analyzeGrammar for inverted-aux yes/no questions, e.g. "is he
+  // going to school?") appends the general yes/no-question marker ' ma?' —
+  // already confirmed as the correct general pattern via multiple existing
+  // VERIFIED corrections.json entries ("are you going"->"...enga ma?",
+  // "will you eat"->"...genma?"), not new linguistic content.
+  return grammar.isQuestion ? result + ' ma?' : result;
 }
 
 

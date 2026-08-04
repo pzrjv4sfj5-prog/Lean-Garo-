@@ -22,6 +22,33 @@ import { STOP_WORDS, AUXILIARY_SKIP } from './normalizationEngine.js';
 export function analyzeGrammar(input) {
   if (!input || typeof input !== 'string') return null;
   const words = input.trim().split(/\s+/);
+
+  // Claude C audit Finding 2 fix (2026-08-04, Claude B): inverted yes/no
+  // questions ("is he going to school?") never reached grammar-assembly at
+  // all — the subject/verb search below only recognizes subject-initial
+  // (declarative) word order via PRONOUN_MAP[firstWord]; aux-inversion
+  // ("is"/"are"/"was"/"were" + pronoun) fell through entirely, leaving
+  // grammar.verb null, so assembleGrammar (requires grammar.subject)
+  // returned null and the whole sentence dropped to assembleSentenceSOV,
+  // which has no verb-tense assembly at all (confirmed live: "is he going
+  // to school?" -> "Ua Skul", no verb at all, vs. declarative "he is going
+  // to school" -> "Ua Skulgen", correct). Fix: recognize this one
+  // closed-class inversion pattern (aux + pronoun) and normalize word order
+  // to canonical SVO before the existing, working subject/verb logic runs —
+  // same "closed-class word, not new guessing" discipline as
+  // AUXILIARY_SKIP/STOP_WORDS elsewhere in this file. isQuestion is
+  // threaded through to assembleGrammar, which appends ' ma?' — the general
+  // yes/no-question marker already confirmed in multiple existing VERIFIED
+  // corrections.json entries ("are you going"->"...enga ma?", "will you
+  // eat"->"...genma?"), not new linguistic content invented here. Scoped
+  // narrowly to pronoun subjects only (NP-subject inversion, e.g. "is the
+  // teacher going...", is a separate, unconfirmed case — left untouched).
+  let isQuestion = false;
+  if (/^(is|are|was|were)$/i.test(words[0] || '') && PRONOUN_MAP[(words[1] || '').toLowerCase().replace(/[^a-z]/g,'')]) {
+    isQuestion = true;
+    words.splice(0, 1);
+  }
+
   const wordCount = words.length;
 
   const isNegative = /n't|\b(not|never)\b/i.test(input);
@@ -357,7 +384,7 @@ export function analyzeGrammar(input) {
     }
 
     return {
-      wordCount, detectedTense, tenseEvidence, isNegative,
+      wordCount, detectedTense, tenseEvidence, isNegative, isQuestion,
       garoTenseSuffix: null, // removed 2026-07-05, see comment above
       structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
       subject, verb, object, possessive, purposeAction, classifierHints,
@@ -369,7 +396,7 @@ export function analyzeGrammar(input) {
 
 
   return {
-    wordCount, detectedTense, tenseEvidence, isNegative,
+    wordCount, detectedTense, tenseEvidence, isNegative, isQuestion,
     garoTenseSuffix: null, // removed 2026-07-05, see comment above
     structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
     subject, verb, object, classifierHints,
