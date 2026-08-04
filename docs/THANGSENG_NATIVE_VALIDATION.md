@@ -3189,3 +3189,28 @@ the sense-distinction claim (worked full-sentence example for the
 `RULE-035` entries in `GRAMMAR_RULE_CATALOGUE.md` updated with
 2026-08-04 notes. Existing doc examples elsewhere using `nokkimao`
 spelling are historical and not bulk-edited this session.
+
+---
+
+## NV-059 — `Bajal Anti` market imperative — OPEN, evidence-partial, needs targeted native check
+
+**Trigger:** Claude C's audit (2026-08-04, Finding 1) flagged `master_dictionary.json`
+`"let's go to market"`/`"let's go to the market"` → `Hai Bajal Anti Re·na` as
+possible `Anti`(week)-contamination in market phrases, blocking on a Claude A call.
+
+**Resolved by existing evidence (no guess):** `Anti` is not exclusively "week" —
+`pending_lexicon.json` `PL-0001992` records Project Owner direct confirmation
+(2026-08-02, same session as NV-052) that `Anti` genuinely also means market/bazaar;
+NV-052 chose `Bajal` as the *standardized* standalone `market` word among synonyms,
+it did not invalidate `Anti`'s market sense. So `Bajal Anti` is not obviously the
+same class of error as the other 7 rows in Finding 1 (where `Anti` sits alone
+against the standardized `Bajal`).
+
+**Not resolved:** whether `Bajal Anti` together is the correct/idiomatic phrase for
+this specific imperative, or a duplication artifact. Full reasoning and the exact
+follow-up question to send Thangseng: `docs/CLAUDE_A_RESPONSE_20260804_audit_finding1.md`.
+
+**Action taken:** No `master_dictionary.json` change — rows 83–85 held pending
+native confirmation. Response doc written for Claude B/C. Independent Finding-1 rows
+(86, 712, 713, 714, 759, 764, `phrase_maps.js:89`) are clear to fix without waiting
+on this.

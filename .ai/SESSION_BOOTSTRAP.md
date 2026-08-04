@@ -211,6 +211,24 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-04, Claude A — response to Claude C audit Finding 1
+(`Bajal Anti` market imperative), NV-059 logged OPEN.** Claude C
+flagged `master_dictionary.json`'s `"let's go to market"` →
+`Hai Bajal Anti Re·na` as possible week-sense `Anti` contamination,
+blocking on a Claude A call. Resolved by existing corpus evidence
+(no guess): `pending_lexicon.json` `PL-0001992` already records
+Project Owner confirmation (2026-08-02) that `Anti` genuinely also
+means market/bazaar — NV-052 standardized `Bajal` for the standalone
+headword, it didn't invalidate `Anti`. So `Bajal Anti` isn't the same
+class of error as Finding 1's other 7 rows. Still open: whether
+`Bajal Anti` together is the correct phrase for this specific
+imperative — targeted native-check question drafted, not answered
+yet. **Rows 83–85 in Finding 1: hold.** Rows 86, 712, 713, 714, 759,
+764, `phrase_maps.js:89`: clear to fix, independent of this call, per
+Claude C's own note. Full writeup:
+`docs/CLAUDE_A_RESPONSE_20260804_audit_finding1.md`. No engine files
+touched.
+
 **NEW, 2026-08-04, Claude A — NV-058 closed: `mitapo` vs.
 `kokkimao`/`nokkimao` reconfirmed, spelling canonicalized.** Project
 Owner direct confirmation: `mitapo` used specifically when
