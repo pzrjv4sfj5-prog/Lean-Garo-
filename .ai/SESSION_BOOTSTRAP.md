@@ -211,6 +211,32 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-05, Claude B — priority handoff to Claude A: full resolution needed on 5 build-gate blockers (repository-intelligence.js Checks C/F).**
+Render deploy is blocked on these; Claude B does not make linguistic
+calls and cannot resolve any of them. Priority order:
+
+1. **Check F — `"who gave you this"` punctuation (1-word decision).**
+   `corrections.json`: `"Sawa nang·na iako on·a"` (no `?`).
+   `compiled_dict.json`: `"Sawa nang·na iako on·a?"` (has `?`).
+   Ruling needed: which is correct — fix the wrong source, or confirm
+   both are valid and allowlist in `KNOWN_CROSS_TABLE_EXCEPTIONS`.
+2. **Check C — 4 new self-consistency conflicts in `master_dictionary.json`:**
+   - `"where did you come from?"` — `"Na·a banoni reba·a?"` vs `"Banoni re'baa na'ara?"`
+   - `"can"` — `"man·a"` vs `"ama"`
+   - `"mature"` — `"dil·ding bal·jak"` vs `"dal·gimin"` vs `"brigimin"` (3-way)
+   - `"where (relative pronoun)"` — `"jeon"` vs `"jeo"`
+   For each: which form is correct (fix the wrong one), or are these
+   legitimate dialectal/register variants (log to
+   `src/data/known_dictionary_conflicts.json` with citation)?
+
+Render stays blocked until all 5 are resolved one way or the other —
+either fixed at source or allowlisted with citation. Verified via a
+fresh local `npm run build` (repository-intelligence.js) this session:
+Check D is now 0 (PL-0002012/PL-0002013 already fixed), Check F narrowed
+to 1 new mismatch (need already resolved), Check C still at 4 new. This
+is the handoff of record per the thread-hygiene rule — repo, not chat,
+is the source of truth for Claude A to resume from.
+
 **NEW, 2026-08-04, Claude A — "need" spelling closed as `nanga` (no
 raka), reversing this session's earlier `nang·a` call, per Project
 Owner direct confirmation.** The VERIFIED/HIGH `master_dictionary.json`
