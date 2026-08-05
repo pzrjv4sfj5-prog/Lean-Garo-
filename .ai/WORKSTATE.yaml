@@ -803,6 +803,21 @@ claude_a:
     - "2026-07-31 (later session, checkpoint b181e86): phone ka·a citation-form headword added, closing the base/citation-form keying question from NV-046 (81545be, 14eb835). mipring/-de remains the sole open item in that lineage."
     - "2026-07-31: NV-031/NV-038 header-vs-body CLOSED-label ambiguity fixed; NV-041 corrected (no new RULE-XXX needed, already covered by RULE-015 - false lead retracted); all 4 reconciliation-pass flags resolved (Sengbo dual-gloss, RULE-039/NV-029 citation confirmed correct, RULE-034/RULE-035 promoted to Verified with 2 real corrections found on cross-check); head-before-commit WORKSTATE convention adopted; PAT-reuse and thread-hygiene/zero-local-state ground rules documented (SESSION_BOOTSTRAP.md); 3 relay questions sent to Thangseng (maidake/maikai, phone call, phone/smartphone spelling) - session closed via Migration Document per new thread-hygiene rule, nothing left local"
   next_action: >-
+    2026-08-04 (Project Owner correction, closes the need question):
+    Project Owner directly confirmed "need" = "nanga" (no raka), not
+    "nang·a" as this session's earlier linguistic call had it. This
+    reverses the "nang·a" correction two entries below. Corrected
+    across all of: master_dictionary.json (the VERIFIED/HIGH "need"
+    entry's own garo field and notes — the note already quoted
+    Thangseng as "nanga = need", so the raka in the garo field itself
+    was the actual mistranscription, not the note), corrections.json,
+    irregular_verbs.json, and src/compiled_dict.json (patched directly
+    rather than via a full build-master-dictionary.js rebuild, to
+    avoid touching unrelated merge-derived content in that script's
+    other inputs). Verified via repository-intelligence.js: Check B
+    "need" — 0 new violations; Check F "need" — 0 new violations (only
+    the pre-existing, unrelated "who gave you this" mismatch remains).
+    test-dictionary.js: 8048/8048 valid, 9/9 corrections verified.
     2026-08-04 (mid-session collision note): while pushing the fix
     below, found Claude B had pushed b4890a6 (Claude C audit findings
     1-3) in the interim. Fetched, diffed (no textual overlap with my

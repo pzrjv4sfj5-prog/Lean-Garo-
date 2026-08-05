@@ -211,7 +211,20 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-## Current joint work package
+**NEW, 2026-08-04, Claude A — "need" spelling closed as `nanga` (no
+raka), reversing this session's earlier `nang·a` call, per Project
+Owner direct confirmation.** The VERIFIED/HIGH `master_dictionary.json`
+entry's own citation already quoted Thangseng as `"nanga = need,
+nangja = don't need"` — the raka in that entry's `garo` field was
+itself the mistranscription, not the note. Corrected across all four
+places the value lives: `master_dictionary.json` (garo field + notes),
+`corrections.json`, `irregular_verbs.json`, and `src/compiled_dict.json`
+(patched directly rather than a full `build-master-dictionary.js`
+rebuild, to avoid pulling in unrelated content from that script's other
+merge sources). Verified via `repository-intelligence.js`: Check B
+"need" — 0 new violations; Check F "need" — 0 new violations (only the
+pre-existing "who gave you this" mismatch remains, untouched).
+`test-dictionary.js`: 8048/8048 valid, 9/9 corrections verified.
 
 **NEW, 2026-08-04, Claude A — build-gate data-integrity fixes for the
 3 items Claude B flagged as blocking `npm run build`'s

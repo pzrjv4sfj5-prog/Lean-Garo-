@@ -35007,11 +35007,11 @@
   },
   {
     "english": "need",
-    "garo": "nang·a",
+    "garo": "nanga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — promoted from UNVERIFIED/HIGH, 2026-08-03 (Claude A), corpus-internal: matches NV-005/NV-016 (closed 2026-07-25), Thangseng direct: 'nanga = need, nangja = don't need', worked example 'need to eat' -> 'cha·na nanga'. No new native input required, evidence was already on record."
+    "notes": "VERIFIED/HIGH — promoted from UNVERIFIED/HIGH, 2026-08-03 (Claude A), corpus-internal: matches NV-005/NV-016 (closed 2026-07-25), Thangseng direct: 'nanga = need, nangja = don't need', worked example 'need to eat' -> 'cha·na nanga'. No new native input required, evidence was already on record. CORRECTED 2026-08-04 (Project Owner direct): garo field had been mistranscribed 'nang·a' (with raka) against this entry's own cited evidence, which quotes Thangseng as 'nanga' (no raka); corrected to match the citation. corrections.json and irregular_verbs.json synced to 'nanga' in the same pass."
   },
   {
     "english": "needle",
