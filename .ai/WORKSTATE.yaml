@@ -1168,6 +1168,26 @@ claude_a:
     repository-intelligence.js: Check C 0 new (was 2), Check F 0 new.
     test-dictionary.js 8055/8055. Render deploy no longer blocked.
     Handed off to Claude B in SESSION_BOOTSTRAP.md.
+  latest_2: >-
+    2026-08-06 (same session, historical-resolution audit + NV-064): audit
+    found 2 of 3 prior Check C recurrences (adultery, mature) were correct
+    evidence-first behavior (native gave the word but never repeated back
+    or rejected the losing variant) - not bugs. 1 of 3 (jeon/jeo) was a
+    genuine missing-propagation gap: VERIFIED/HIGH since NV-054
+    (2026-08-03), never allowlisted across 3 sessions - now fixed. Project
+    Owner then relayed a final closure batch (NV-064), treated as
+    authoritative: chiko reclassified 'at the river'->'the water' (distinct
+    word from chibimao, not a conflict - resolves NV-051 flag); jeo
+    clarified as short form of jeon; Gro daka = 'to owe something',
+    promoted 'to be in debt.' entry to VERIFIED/HIGH (adultery sense
+    untouched, stays superseded); al·a·i·na REJECTED (native doesn't
+    recognize it, probable mis-transcription, superseded by sitea/kadea);
+    dil·ding bal·jak REJECTED for both 'mature' and 'adolescent' (native
+    doesn't recognize it / likely obsolete). All entries retained, not
+    deleted, per citation discipline. known_dictionary_conflicts.json: +1
+    key ('the water'). repository-intelligence.js: 0 new violations, all
+    checks. test-dictionary.js: 8055/8055 (count unchanged - no new
+    entries, only notes/english-key/status edits).
 
 claude_b:
   status: active

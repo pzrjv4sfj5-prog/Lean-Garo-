@@ -5878,10 +5878,10 @@
     "notes": "INCORRECT GLOSS, superseded - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): '-chi' is the movement-to locative, not stationary 'at'. This entry's garo value is actually 'to home', not the stationary sense implied by its english key. Retained per citation discipline, not deleted; see corrected standalone entries. Usage note — NV-052 (Project Owner, 2026-08-02): this -chi locative form is canonically used within a present-continuous 'going to X' sentence, not as a standalone gloss — cf. the pre-existing VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.' The -chi form itself remains the movement-to locative noun phrase (RULE-044); it is the paired verb (re·angenga) that carries the continuous tense."
   },
   {
-    "english": "at the river",
+    "english": "the water",
     "garo": "chiko",
     "category": "nature",
-    "notes": "FLAGGED - NV-051 (Thangseng direct relay, 2026-08-02, see RULE-044): new direct evidence gives 'at the river' = 'chibimao' (chibima + -o locative), conflicting with this entry's 'chiko'. Not declared wrong outright since 'chiko' (chi='water'+-o) may be a distinct valid form ('at the water' vs 'at the river' specifically) rather than an error - insufficient evidence to say which. Retained per citation discipline; see new 'at the river'->'chibimao' entry as the directly-confirmed form."
+    "notes": "VERIFIED/HIGH — 2026-08-06, Project Owner-relayed native final word (Thangseng): 'chiko' = 'the water', not 'at the river'. Resolves the NV-051 ambiguity flag against 'chibimao'/'at the river' — these are different words, not competing forms of the same gloss. Likely 'chi' (water) + '-ko' topic/emphatic marker, distinct from bare 'Chi' ('water'/'the water'); retained as a separate correctly-glossed entry, not a duplicate to be merged."
   },
   {
     "english": "in the forest",
@@ -21684,7 +21684,7 @@
     "pos": null,
     "category": "education",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:me·-tra / no-mil"
+    "notes": "REJECTED — 2026-08-06, Project Owner-relayed native final word (Thangseng): native does not recognize 'dil·ding bal·jak'; even if a real word historically, assessed as likely out of current usage. Not deleted, per citation discipline. 'adolescent' has no other candidate on record; entry stays REJECTED, key remains open pending a fresh candidate."
   },
   {
     "english": "adolescent",
@@ -34228,7 +34228,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — 2026-08-06, Claude A, Project Owner-relayed native reconfirmation: Thangseng gave only 'dal·gimin'/'brigimin' for mature (see VERIFIED/HIGH entries, NV-056). 'dil·ding bal·jak' not repeated back on reconfirmation; not confirmed. Retained per citation discipline, not deleted."
+    "notes": "REJECTED — 2026-08-06, Project Owner-relayed native final word (Thangseng): native does not recognize 'dil·ding bal·jak'; even if a real word historically, assessed as likely out of current usage. Not deleted, per citation discipline. Superseded for 'mature' by VERIFIED/HIGH 'dal·gimin'/'brigimin', NV-056."
   },
   {
     "english": "maturing",
@@ -46970,7 +46970,7 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/doc7 | NV-061 follow-up, 2026-08-05: native was asked to reconfirm this specific form directly; instead volunteered two different words ('sitea', 'kadea') distinguished by manner. Not confirmed, not rejected — status unchanged, flagged for a future targeted check."
+    "notes": "REJECTED — 2026-08-06, Project Owner-relayed native final word (Thangseng): native does not recognize 'al·a·i·na'; assessed as a probable mis-transcription/butchered spelling of some other word, not a real current word. Not deleted, per citation discipline. Superseded for 'to hang' by the confirmed 'sitea' (dangle) / 'kadea' (tie) distinction, NV-061, 2026-08-05."
   },
   {
     "english": "To have insufficient food",
@@ -54740,7 +54740,8 @@
     "english": "to be in debt.",
     "garo": "Gro daka",
     "category": null,
-    "pos": "v."
+    "pos": "v.",
+    "notes": "VERIFIED/HIGH — 2026-08-06, Project Owner-relayed native final word (Thangseng): 'Gro daka' = 'to owe something' (synonymous gloss to this entry's existing 'to be in debt.'). Distinct sense from this word's other master_dictionary.json entries ('to commit an offence', 'to break the law') — polysemous root, not a conflict; each sense verified independently, no merge performed."
   },
   {
     "english": "To be in debt",
@@ -59870,7 +59871,7 @@
     "english": "at the river",
     "garo": "chibimao",
     "category": "nature",
-    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative. Note: coexists with an older, unresolved 'at the river'->'chiko' entry (chi+-o, possibly 'at the water' as a distinct form) - not declared a conflict, flagged for clarification, see that entry's notes."
+    "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-o' = stationary locative. 'at/in the river' final, per Project Owner-relayed native confirmation 2026-08-06. Previously flagged as coexisting with 'chiko'; resolved 2026-08-06 — 'chiko' reclassified to 'the water', not a competing form of 'at the river'."
   },
   {
     "english": "to the river",
@@ -60860,7 +60861,7 @@
     "category": "grammar",
     "pos": "pr.",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Relative pronoun 'where'. Free variant of 'jeo'. Promoted from pending_lexicon.json PL-0002012, which had logged this candidate mislabeled as \"which (relative pronoun)\" per an earlier unconfirmed Project Owner relay (NV-053) — this direct native transcript clarifies it is 'where', not 'which'."
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Relative pronoun 'where'. Free variant of 'jeo'. Reconfirmed as native's final word 2026-08-06 (Project Owner relay)."
   },
   {
     "english": "where (relative pronoun)",
@@ -60868,7 +60869,7 @@
     "category": "grammar",
     "pos": "pr.",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Relative pronoun 'where'. Free variant of 'jeon'. Promoted from pending_lexicon.json PL-0002012 (see 'jeon' entry note for full context)."
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Relative pronoun 'where'; short form of 'jeon' (Project Owner clarification, 2026-08-06). Reconfirmed as native's final word 2026-08-06."
   },
   {
     "english": "where to?",
