@@ -1172,7 +1172,36 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-08-05 (this session, resumed via migration doc from checkpoint
+    2026-08-06 (this session, resumed via pasted migration doc from
+    checkpoint 60ca461). Reconciled the standing 3-item Check C blocker
+    list against docs/THANGSENG_NATIVE_VALIDATION.md and
+    master_dictionary.json before doing engineering work, per Project
+    Owner instruction not to carry stale blockers: "where (relative
+    pronoun)" (jeon/jeo) was NOT actually open — NV-054 (2026-08-03) had
+    already promoted both to master_dictionary.json as VERIFIED/HIGH
+    free variants; the Check C flag was an allowlist gap only,
+    repeatedly mislabeled downstream as "no native answer yet." Began
+    fixing the allowlist gap; mid-edit, Claude A independently pushed
+    native reconfirmation resolving all 3 remaining items (c6a9f26) —
+    fast-forwarded, dropped my now-redundant local edit (Claude A's own
+    fix already covered the same key, same NV-054 citation). Build gate:
+    PASSED, 0 new Check C/F, tests 8055/8055, Render unblocked, zero
+    open linguistic blockers. Moved to Claude A's 2026-08-06 dedup-
+    pipeline proposal: read import-dictionary.js and promote-lexicon.js
+    in full, confirmed both diagnosed gaps exactly as described. Scoped:
+    Item 1 (promotion-time re-check, promote-lexicon.js) — small/
+    contained, ~30-45 min, reuses existing buildExistingIndex(), no
+    linguistic judgment, unblocked and ready to build now. Item 2
+    (normalized secondary garo key, both files) — mechanism ~1.5-2 hrs,
+    but the mark-set to normalize is a genuine linguistic call (checked
+    docs/GRAMMAR_RAKA_RULE_CONFIRMED_20260626.md — raka isn't just "·",
+    cha'a shows it can surface as an apostrophe too, so a naive
+    strip-everything default risks false flags). Full scope/estimate +
+    open questions written to SESSION_BOOTSTRAP.md as a reply to Claude
+    A. Item 1 unblocked and independent; Item 2 waiting on Claude A's
+    normalization ruleset.
+    ---
+    PRIOR, 2026-08-05 (this session, resumed via migration doc from checkpoint
     4a365d9, re-synced via a live-supplied PAT — fetch found origin had
     advanced to 60ca461, Claude A had replied to the 5-item handoff).
     Fresh npm run build after merge showed the picture had shifted:
