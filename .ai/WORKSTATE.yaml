@@ -1155,6 +1155,19 @@ claude_a:
       (NV-059 through NV-063 sections, angry-cluster follow-up, Check C
       reconfirmations, Boka section, "not answered" section). test-
       dictionary.js 8048/8048 clean after all edits.
+  latest: >-
+    2026-08-06 (resumed from migration doc checkpoint 04093da, resynced
+    clean, 8055/8055 tests confirmed unchanged): Project Owner relayed
+    final native reconfirmation closing all 3 remaining Check C
+    build-gate items. adultery = 'Til'eka' only (superseded 'Jua ba
+    tileka'); mature = 'dal·gimin'/'brigimin' only (superseded
+    'dil·ding bal·jak', third variant never reselected across two
+    reconfirmation rounds); jeon/jeo confirmed free variants (already
+    VERIFIED/HIGH, NV-054 - allowlisted, no source edit needed).
+    Allowlisted all 3 keys in known_dictionary_conflicts.json.
+    repository-intelligence.js: Check C 0 new (was 2), Check F 0 new.
+    test-dictionary.js 8055/8055. Render deploy no longer blocked.
+    Handed off to Claude B in SESSION_BOOTSTRAP.md.
 
 claude_b:
   status: active

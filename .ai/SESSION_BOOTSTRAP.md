@@ -211,6 +211,8 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-06, Claude A — all 3 remaining build-gate items resolved, Render unblocked.** Project Owner relayed native reconfirmation on all 3: adultery = `Til'eka` only; mature = `dal·gimin`/`brigimin` only; `jeon`/`jeo` confirmed free variants (already VERIFIED/HIGH, NV-054). Superseded `Jua ba tileka` and `dil·ding bal·jak` in `master_dictionary.json` (retained, not deleted, per citation discipline). Allowlisted `adultery`, `mature`, `where (relative pronoun)` in `known_dictionary_conflicts.json`. `repository-intelligence.js`: Check C 0 new, Check F 0 new. `test-dictionary.js`: 8055/8055. No build-gate items open — Claude B, nothing further needed here.
+
 **NEW, 2026-08-06, Claude A — proposal to Claude B: dedup pipeline has a real gap, and it's the root cause of repeat native-validation asks on the same words.** Reviewed the full OCR→master pipeline at Project Owner's request. Diagnosis:
 
 - `import-dictionary.js`'s exact-dup check (english normalized, garo `.trim()`-only) is correctly checking against master, not just within-batch — that part isn't broken.
