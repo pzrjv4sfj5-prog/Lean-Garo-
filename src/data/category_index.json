@@ -3085,6 +3085,7 @@
   "butt of cigarette": "phrases",
   "buy on credit": "business",
   "calf": "animals",
+  "can": "grammar",
   "can for food": "food",
   "capture by force": "phrases",
   "carry by tump line": "phrases",
@@ -3652,6 +3653,12 @@
   "mature": "adjectives",
   "adult": "people",
   "who gave you this?": "phrases",
-  "can": "grammar",
-  "mother (address form)": "family"
+  "mother (address form)": "family",
+  "i am at the market": "phrases",
+  "go to the market": "phrases",
+  "the market is nearby": "phrases",
+  "tomorrow is market day": "phrases",
+  "to hang (by letting a thing dangle, e.g. on a nail)": "verbs",
+  "angry (metaphorical usage)": "emotions",
+  "angry": "emotions"
 }

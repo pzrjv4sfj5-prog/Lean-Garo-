@@ -220,6 +220,34 @@ Claude A and `origin/main`.
 - Proposal (engineering scope, yours to implement/reject, not mine to touch): add a **normalized secondary key** for garo (strip raka, dashes, whitespace, lowercase) used only as a `possible_conflict`/`near-duplicate` flag at both import-time and promotion-time — never an auto-skip, since some raka differences may be linguistically real and still need my review. This turns "duplicate slips through, we re-ask the same question later" into "flagged before it reaches native validation."
 - Ask: can you scope/estimate the promotion-time re-check (item 1, small/contained) and the normalized-key near-dup flag (item 2, touches both `import-dictionary.js` and `promote-lexicon.js`)? I'll own writing the actual normalization ruleset (which marks/variants count as "same word" vs. genuinely distinct) since that's a linguistic call, not an engineering one — happy to draft that spec next session if you take the implementation side. Full analysis in reply to Project Owner this session, not yet written to a standalone doc — say so if you want it as one instead of living only here.
 
+**NEW, 2026-08-05, Claude B — engineering side of the handoff reply
+resolved; build gate narrowed to 3 items, all Claude A's call.**
+Resumed from checkpoint `4a365d9` via a live-supplied PAT; fetch found
+Claude A's reply already pushed (`60ca461`). A fresh build showed the
+picture had moved: 3 of the original 5 items were resolved, but 2 new
+Check C conflicts (`adultery`, `the market is nearby`) and 3 new Check F
+mismatches appeared from NV-060 propagating to `master_dictionary.json`/
+`compiled_dict.json` without `corrections.json` being synced. Fixed all
+3 Check F items (2 stale-corrections sync bugs, plus the punctuation
+call Claude A explicitly handed to Claude B — resolved by surveying
+`corrections.json`'s own convention and matching `compiled_dict.json`).
+Allowlisted 3 of the 6 Check C conflicts (`can`, `the market is
+nearby`, `where did you come from?`) in `known_dictionary_conflicts.json`,
+each citing Claude A's own explicit "confirmed as free variants" note —
+nothing inferred. **Left open, not Claude B's call:**
+1. **`adultery`** — `Til'eka` (VERIFIED/HIGH, NV-062) vs `Jua ba tileka`
+   (UNVERIFIED/MEDIUM) — native neither confirmed nor rejected the older
+   entry against the new one. Supersede, or genuine variant?
+2. **`mature`** — `dal·gimin`/`brigimin` reconfirmed VERIFIED/HIGH, but
+   `dil·ding bal·jak` (UNVERIFIED/HIGH) was neither reselected nor
+   rejected this round. Still live, or supersede?
+3. **`where (relative pronoun)`** — `jeon`/`jeo`, no native answer yet.
+
+Render stays blocked until these 3 are resolved (fixed/superseded at
+source, or allowlisted with citation). Check F is fully clean. Full
+detail: `.ai/WORKSTATE.yaml` `claude_b.current_task`/`waiting_for`,
+2026-08-05 entries. Pushed `f2aa166`.
+
 **NEW, 2026-08-05, Claude B — priority handoff to Claude A: full resolution needed on 5 build-gate blockers (repository-intelligence.js Checks C/F).**
 Render deploy is blocked on these; Claude B does not make linguistic
 calls and cannot resolve any of them. Priority order:

@@ -1,5 +1,5 @@
 repository:
-  head: b4890a6
+  head: f2aa166
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -11,7 +11,7 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
-  last_updated: "2026-08-04 (Claude B: findVerbForm corrections.json precedence fix + Translator.jsx UI fix + Claude C audit findings 1-3 resolved — see claude_b.current_task for full detail; 176/177 tests, same 1 pre-existing repository-intelligence.js gate failure, 0 lint)"
+  last_updated: "2026-08-05 (Claude B: synced corrections.json to Claude A's NV-060 market spellings, resolved the Check F 'who gave you this' punctuation call, allowlisted 3 confirmed Check C variants (can, the market is nearby, where did you come from?) — see claude_b.current_task for full detail; 176/177 tests, same 1 pre-existing gate-status self-test failure, 0 lint. Build gate now down to exactly 3 open Check C conflicts, all Claude A's call: adultery, mature, where (relative pronoun))"
   test_status: >-
     "163/163 unit tests passing (155 pre-existing + 8 from Claude B two same-session fixes ea77de5/03bd2dc, picked up via rebase - none touched by pages 8-11 review, which was dictionary-data-only). 0 lint errors implied by clean build. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass). repository-intelligence.js Checks A-E: 0 new violations after allowlisting 2 intentional new Check-C conflicts ('a wearing apparel.', 'to have sexual intercourse.') in known_dictionary_conflicts.json with citation in this session's claude_a.current_task. 8025 unique compiled entries (up from prior), 157 net new master_dictionary.json entries this session (pages 8-11 review, 151 clean + 6 noted-approval; 13 rejected as duplicates and 2 held needs-discussion were NOT promoted). Prior 155/155 history preserved below.\\n\"155/155 unit tests passing (153 prior + 2 new: 'one person' VERIFIED-preference regression, 'he answered' to-X-exclusion regression). 0 lint errors. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass; vite build now succeeds in-sandbox with a fresh npm install, resolving the previously-flagged environment gap). repository-intelligence.js Checks B/C/D/E: 0 new violations. Stress benchmark 237/237 byte-identical before/after this session's fix (none of the 31 changed compiled_dict.json keys fall in that corpus). RC-CANDIDATE-036 follow-up fixed this session (prepare-data.js pickPrimary): master_dictionary.json's own INTERNAL duplicate-key conflicts (multiple master rows for one key) were not resolved by the original RC-036 master-preference fix, which still fell back to last-write-wins by array order among master's own candidates. Added a scoped rule: when exactly one non-variant candidate is tagged VERIFIED/HIGH (excluding UNVERIFIED via substring guard), it wins. Live regression caught mid-implementation (not shipped blind): applying this to 'to answer' picked a VERIFIED citation form whose '-na' ending is the Garo infinitive suffix already baked in, which morphologyEngine.js's tense-suffixing pipeline treats as a bare stem, producing malformed 'a·gan·chak·naha' — caught via the existing 'he answered' regression test. Fixed by excluding 'to '-prefixed keys from the rule (pickPrimary now takes the key as a 2nd argument); VERIFIED confidence attests translation correctness, not bare-stem safety for suffixing. Net: 31 compiled_dict.json keys changed (0 added/removed), same systemic-conflict shape as RC-036/RC-037, all individually spot-checked against their master_dictionary.json source rows before accepting (not just trusted from the tag) — includes 'one person'->'mande sak·sa' and 'answer'->'Aganchakani' (the two originally-traced keys) plus 29 others sharing the identical conflict shape. 7 of the changed bare-verb-root keys spot-verified live for conjugation safety (push/throw/clean/listen/cook/lie/fly) — all either route through a separate, unaffected 'to X' key first, or produce well-formed output consistent with the engine's established suffix pattern. Prior 153/153 history preserved below.
     "153/153 unit tests passing (147 prior + new tests/unit/rong_classifier.test.js, 6 tests: rong resolution for fruit/alcohol, no-raka behavior, ge/mang/sak/king/gong regression coverage). npm run build clean through prepare-data.js (compiled_dict.json/compiled_dict_alternates.json/category_index.json regenerated) and test-dictionary.js/repository-intelligence.js; vite build step still fails in this sandbox only because node_modules/vite is not installed — pre-existing environment gap, not a real issue, not re-flagged. Prior 147/147 history preserved below.\n147/147 regression tests passing (144 + 3 new RC-037 tests), 0 lint errors, build exits 0, stress benchmark 237/237 (isolated 1-line diff from RC-036, exactly the expected 'he has two dogs' correction; RC-037's changes not exercised by the stress corpus, confirmed instead via direct compiled-value spot checks). RC-CANDIDATE-032 fixed this session (commit f1ea1bf): number_engine.js's standalone toGaroNumber() teens formula corrected from the disproven 'chiking·ma·' form to the confirmed 'Chi·'+digit form, matching garo_classifier.js's own TEENS table (was unreachable dead code for 11-19, fixed anyway - misleading and a latent refactor trap). RC-CANDIDATE-036 fixed this session (commit afac50d, prepare-data.js): master_dictionary.json is the declared canonical compile source and WAS included in the merge, but plain last-write-wins by raw file order meant it only won if textually distinct from anything already deduped in from the legacy source files - if master's value coincidentally matched an earlier duplicate in a legacy file, a LATER wrong duplicate within that same legacy file won instead, invisible to the resolver. Fixed by tagging merge candidates with source file and preferring any master-sourced candidate. 51 keys corrected (e.g. 'one dog': 'sa mang·sa'->'achak mang·sa'). NOTE: a stricter VERIFIED-preference refinement (for keys where master itself holds multiple non-variant candidates, e.g. 'one person': unannotated 'sa mande·sa' vs VERIFIED/HIGH 'mande sak·sa') was attempted, correctly picked 'one person' but broke 'answer' (5-way case-entangled master entries - notes shape more complex than tracing budget allowed this session) - reverted, NOT shipped, logged as follow-up below. RC-CANDIDATE-037 fixed this session (commit afac50d, garo_dictionary.json + master_dictionary.json direct edits): bulk-generated 'two X'/'three X'/'twelve X'/'thirteen X' entries wrongly used 'do·o' (chicken/bird) or 'na·tok' (fish) as filler for nouns unrelated to birds/fish (e.g. 'two teachers'->'do·o skigipa·gni'). Two distinct sub-patterns, confirmed by inspection not guessed: 105 entries where the real noun was already present after the stray prefix (strip only); 11 dog/cat entries where the noun was entirely absent and do·o/na·tok was standing in for it (substituted the correct noun - achak/menggo, both independently confirmed via their own standalone dictionary entries - not just stripped). Genuine bird/chicken/fish entries excluded and confirmed unaffected. Source: external Copilot audit, synthesized and handed off by Project Owner; every cited finding re-verified against current HEAD before acting per standing discipline (audit's compiled_dict.json framing was imprecise - master WAS included in the merge, root cause was subtler than 'master ignored'; 2 of 8 secondary findings were already fixed, 1 was superseded/no-longer-live, 5 were confirmed-but-backlog). BACKLOG-003 FULLY COMPLETE, all 8 phases (unchanged, carried over)."
@@ -1159,7 +1159,43 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-08-04 (this session, resumed via migration doc from checkpoint
+    2026-08-05 (this session, resumed via migration doc from checkpoint
+    4a365d9, re-synced via a live-supplied PAT — fetch found origin had
+    advanced to 60ca461, Claude A had replied to the 5-item handoff).
+    Fresh npm run build after merge showed the picture had shifted:
+    Claude A's NV-060/061/062/063 pass resolved 3 of the original 5
+    Check C items (can, where-did-you-come-from, mature-partially) but
+    also introduced 2 brand-new Check C conflicts (adultery, the market
+    is nearby) and 3 new Check F runtime-cascade mismatches (corrections.
+    json hadn't been synced to the new NV-060 master_dictionary.json
+    market spellings) that weren't in the original handoff. Triaged all
+    6 Check C + 3 Check F findings individually against Claude A's own
+    notes before touching anything (Claude B doesn't make linguistic
+    calls — every allowlist decision below cites an explicit Claude A
+    confirmation, nothing inferred). Fixed: corrections.json 'let's go
+    to market'/'lets go to market'/'go to the market' synced to NV-060's
+    VERIFIED/HIGH spellings (were still holding the pre-NV-060 'Bajal
+    Anti'/raka-dot values); 'who gave you this' trailing '?' added,
+    resolving the Check F item Claude A explicitly punted to Claude B as
+    a source-of-truth format call (surveyed corrections.json's own
+    convention — English keys drop '?', Garo values keep it for
+    questions — and matched compiled_dict.json). Allowlisted 3 Check C
+    keys in known_dictionary_conflicts.json (can, the market is nearby,
+    where did you come from?) citing Claude A's explicit 'confirmed as
+    free variants' notes. Left 3 Check C keys open, NOT allowlisted —
+    genuinely unresolved per Claude A's own notes, not Claude B's to
+    decide: adultery (Til'eka VERIFIED/HIGH vs Jua ba tileka UNVERIFIED/
+    MEDIUM, neither confirmed nor rejected against the other), mature
+    (dil·ding bal·jak neither reselected nor rejected this round), where
+    (relative pronoun) (jeon/jeo, no native answer yet). Fixed 1 stale
+    regression test hardcoding the old 'go to the market' raka spelling.
+    Verified via full rebuild: Check F 0 new (was 3), Check C 3 new (was
+    6, all 3 genuinely open). 176/177 tests (same 1 pre-existing gate-
+    status self-test, expected while those 3 stay open), 0 lint. Stress
+    benchmark checked directly for the 3 touched keys — none present in
+    that corpus, no blast radius. Pushed f2aa166.
+    ---
+    PRIOR SESSION, 2026-08-04 (resumed via migration doc from checkpoint
     619ce16, re-synced fresh via git fetch before acting each time —
     caught the remote advancing three separate times mid-session,
     including once between commit and push): two pieces of work, both
@@ -1650,7 +1686,23 @@ claude_b:
     - "Do not re-implement jaha as past-negation - superseded, see Rule 17/27"
     - "Do not implement chat-sourced linguistic proposals directly - must go through Claude A -> docs/ commit first (standing integration rule as of 2026-07-08)"
   waiting_for: >-
-    2026-08-05: Claude A to rule on the 5 remaining build-gate blockers
+    2026-08-05 (this session, narrowed further): build gate is down to
+    exactly 3 open Check C self-consistency conflicts, all Claude A's
+    call, none guessed at or allowlisted by Claude B — see
+    current_task for full detail: (1) adultery — Til'eka (VERIFIED/
+    HIGH) vs Jua ba tileka (UNVERIFIED/MEDIUM) — is Jua ba tileka wrong,
+    a legitimate register variant, or should it be superseded now that
+    Til'eka is confirmed? (2) mature — dil·ding bal·jak (UNVERIFIED/
+    HIGH, not reselected by native this round but not rejected either)
+    vs the two reconfirmed dal·gimin/brigimin — is dil·ding bal·jak
+    still live or should it be marked superseded? (3) where (relative
+    pronoun) — jeon vs jeo, still no native answer this round. Check F
+    is fully clean (0 new mismatches). Render stays blocked until these
+    3 are resolved one way or the other (fixed/superseded at source, or
+    confirmed-variant + allowlisted with citation).
+    ---
+    PRIOR (superseded, kept for history): Claude A to rule on the 5
+    original build-gate blockers
     — see .ai/SESSION_BOOTSTRAP.md "Current joint work package" for the
     full itemized handoff (Check F "who gave you this" punctuation;
     Check C 4 conflicts — "where did you come from?", "can", "mature",

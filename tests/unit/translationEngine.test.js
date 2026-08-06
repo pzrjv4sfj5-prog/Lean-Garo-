@@ -1179,7 +1179,7 @@ test('findVerbForm: IRREGULAR_VERBS still used as fallback when no corrections.j
 test('market phrases do not contain the stale "Anti" (week) contamination', async () => {
   const cases = [
     ['at the market', 'bajalo'],
-    ['go to the market', 'Bajalchi re·angbo'],
+    ['go to the market', "Bajalchi re'angbo"],
     ["let's go to the market", 'Hai bajalchi re·na'],
     ['i am waiting at the market', 'Anga bajalo sengenga'],
   ];
