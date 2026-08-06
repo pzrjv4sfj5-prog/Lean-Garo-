@@ -211,6 +211,34 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
+**NEW, 2026-08-05, Claude B — engineering side of the handoff reply
+resolved; build gate narrowed to 3 items, all Claude A's call.**
+Resumed from checkpoint `4a365d9` via a live-supplied PAT; fetch found
+Claude A's reply already pushed (`60ca461`). A fresh build showed the
+picture had moved: 3 of the original 5 items were resolved, but 2 new
+Check C conflicts (`adultery`, `the market is nearby`) and 3 new Check F
+mismatches appeared from NV-060 propagating to `master_dictionary.json`/
+`compiled_dict.json` without `corrections.json` being synced. Fixed all
+3 Check F items (2 stale-corrections sync bugs, plus the punctuation
+call Claude A explicitly handed to Claude B — resolved by surveying
+`corrections.json`'s own convention and matching `compiled_dict.json`).
+Allowlisted 3 of the 6 Check C conflicts (`can`, `the market is
+nearby`, `where did you come from?`) in `known_dictionary_conflicts.json`,
+each citing Claude A's own explicit "confirmed as free variants" note —
+nothing inferred. **Left open, not Claude B's call:**
+1. **`adultery`** — `Til'eka` (VERIFIED/HIGH, NV-062) vs `Jua ba tileka`
+   (UNVERIFIED/MEDIUM) — native neither confirmed nor rejected the older
+   entry against the new one. Supersede, or genuine variant?
+2. **`mature`** — `dal·gimin`/`brigimin` reconfirmed VERIFIED/HIGH, but
+   `dil·ding bal·jak` (UNVERIFIED/HIGH) was neither reselected nor
+   rejected this round. Still live, or supersede?
+3. **`where (relative pronoun)`** — `jeon`/`jeo`, no native answer yet.
+
+Render stays blocked until these 3 are resolved (fixed/superseded at
+source, or allowlisted with citation). Check F is fully clean. Full
+detail: `.ai/WORKSTATE.yaml` `claude_b.current_task`/`waiting_for`,
+2026-08-05 entries. Pushed `f2aa166`.
+
 **NEW, 2026-08-05, Claude B — priority handoff to Claude A: full resolution needed on 5 build-gate blockers (repository-intelligence.js Checks C/F).**
 Render deploy is blocked on these; Claude B does not make linguistic
 calls and cannot resolve any of them. Priority order:
