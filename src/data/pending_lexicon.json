@@ -40654,15 +40654,16 @@
       "ocr_version": "whatsapp-2026-07-19"
     },
     "review_status": "needs-discussion",
-    "review_notes": "Boka: \"white\" (adj.) and \"to demand unduly\" (v.) share one headword. Could be genuine polysemy or two unrelated homonyms merged by the print dictionary — same failure mode as the Kajina/Kajana collision (NV-032 handoff). Needs native check before promotion.",
+    "review_notes": "Boka: \"white\" (adj.) and \"to demand unduly\" (v.) share one headword. Could be genuine polysemy or two unrelated homonyms merged by the print dictionary — same failure mode as the Kajina/Kajana collision (NV-032 handoff). Needs native check before promotion. | 2026-08-05 update: native (Thangseng, via Tridip WhatsApp) confirmed \"Boka\" = white, no mention of \"demand unduly\" sense — polysemy question still NOT resolved (open). When separately asked what \"to demand unduly\" is, native tentatively offered \"dabia\" (\"I think we can use 'dabia' for this one as well...\") — hedged, not a firm confirmation, not promoted to master_dictionary. Logged here as a candidate only.",
     "reviewed_by": "Claude A",
-    "reviewed_date": "2026-07-23",
+    "reviewed_date": "2026-08-05",
     "conflict": {
       "type": null,
       "details": null
     },
     "promotion_status": "pending",
-    "promoted_date": null
+    "promoted_date": null,
+    "tentative_candidate": "dabia"
   },
   {
     "id": "PL-0001541",

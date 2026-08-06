@@ -1135,6 +1135,26 @@ claude_a:
       needs Claude A linguistic judgment per rule, not mechanical
       extraction. Awaiting Project Owner direction on whether to start
       that phase now or pause here.
+    session_20260805_full_native_validation_pass: >-
+      Full native-validation pass on a Thangseng WhatsApp transcript relayed
+      2026-08-05 (Project Owner high-priority framing, read-then-act
+      discipline). Resolved NV-059 (Bajal Anti market imperative — dropped,
+      not part of the idiom) via new NV-060 (market locative paradigm, 5 new
+      VERIFIED/HIGH entries, 2 corrected). Partially resolved NV-061 (to
+      hang: sitea/kadea by-manner distinction, un-superseded 'Kadea';
+      al·a·i·na left unconfirmed) and NV-062 (adultery: 'Til'eka' added;
+      'Gro daka' flag left unconfirmed). Fully resolved NV-063 (to support =
+      chaka, promoted from SUPERSEDED). Extended NV-054 (angry cluster: 2
+      new forms, ka'chaa=scold reconfirmed). Reconfirmed 3 Check C
+      build-gate items (can, where-did-you-come-from, mature — one of
+      mature's three variants NOT reselected, left open). PL-0001540
+      (Boka/demand-unduly polysemy) still open — native didn't address it;
+      logged a hedged 'dabia' candidate, not promoted. 'chiko'/'chibimao'
+      and jeon/jeo (Check C #4) not addressed this round, still open. Full
+      per-item evidence and citations: docs/THANGSENG_NATIVE_VALIDATION.md
+      (NV-059 through NV-063 sections, angry-cluster follow-up, Check C
+      reconfirmations, Boka section, "not answered" section). test-
+      dictionary.js 8048/8048 clean after all edits.
 
 claude_b:
   status: active

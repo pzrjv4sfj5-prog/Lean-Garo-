@@ -5377,7 +5377,8 @@
   {
     "english": "where did you come from?",
     "garo": "Na·a banoni reba·a?",
-    "category": "travel"
+    "category": "travel",
+    "notes": "VERIFIED/HIGH — Check C reconfirmation, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Native confirmed both this and 'Banoni re'baa na'ara?' (NV-056 entry) as correct — free variants, not reconciled/ranked. Promoted from unannotated."
   },
   {
     "english": "where did you sleep?",
@@ -16035,7 +16036,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM"
+    "notes": "UNVERIFIED/MEDIUM. NV-062 follow-up, 2026-08-05: native independently gave bare 'Til'eka' for 'adultery' (noun), consistent with the 'tileka' component here; see new VERIFIED/HIGH entry 'Til'eka'. Native did not confirm or reject the 'Jua ba' portion of this entry."
   },
   {
     "english": "Afternoon",
@@ -24496,10 +24497,10 @@
   {
     "english": "can",
     "garo": "man·a",
-    "pos": null,
-    "category": "uncategorized",
+    "pos": "aux.",
+    "category": "grammar",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH — Check C reconfirmation, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Native: 'Man·a, ama' — both forms confirmed correct/valid for 'can'. Promoted from UNVERIFIED/HIGH."
   },
   {
     "english": "can for food",
@@ -46969,7 +46970,7 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/doc7"
+    "notes": "VERIFIED/HIGH/doc7 | NV-061 follow-up, 2026-08-05: native was asked to reconfirm this specific form directly; instead volunteered two different words ('sitea', 'kadea') distinguished by manner. Not confirmed, not rejected — status unchanged, flagged for a future targeted check."
   },
   {
     "english": "To have insufficient food",
@@ -48244,19 +48245,19 @@
   },
   {
     "english": "let's go to market",
-    "garo": "Hai Bajal Anti Re·na",
+    "garo": "Hai bajalchi re'na",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. SUPERSEDES prior 'Hai Bajal Anti Re·na' (NV-059, held open pending this check). Native gave bare 'Hai bajalchi re'na' for both 'let's go to market' and 'let's go to the market' (Garo has no article; 'the' is simply assumed) — 'Anti' is not part of this idiom. Resolves NV-059."
   },
   {
     "english": "let's go to the market",
-    "garo": "Hai Bajal Anti Re·na",
+    "garo": "Hai bajalchi re'na",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. SUPERSEDES prior 'Hai Bajal Anti Re·na' (NV-059, held open pending this check). Native gave bare 'Hai bajalchi re'na' for both 'let's go to market' and 'let's go to the market' (Garo has no article; 'the' is simply assumed) — 'Anti' is not part of this idiom. Resolves NV-059."
   },
   {
     "english": "bajal",
@@ -52658,7 +52659,7 @@
     "garo": "Chaka",
     "category": null,
     "pos": "v.",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'to support' has VERIFIED/HIGH form(s) ['al·du·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH — NV-063, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Native confirmed 'chaka' = to support exactly as flagged. Closes the pending flag. Coexists with 'al·du·na' (VERIFIED/HIGH/doc7) — both accepted, not reconciled as synonyms vs. distinct senses."
   },
   {
     "english": "to assist",
@@ -55236,14 +55237,14 @@
     "garo": "Ka-chaa",
     "category": null,
     "pos": "v.",
-    "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster."
+    "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster. | Reconfirmed 2026-08-05 (NV-054 follow-up): native again gave 'ka'chaa' = to reprimand/to scold as its direct sense."
   },
   {
     "english": "to get angry with",
     "garo": "Ka-chaa",
     "category": null,
     "pos": "v.",
-    "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster."
+    "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster. | Reconfirmed 2026-08-05 (NV-054 follow-up): native again gave 'ka'chaa' = to reprimand/to scold as its direct sense."
   },
   {
     "english": "to be annoyed or vexed",
@@ -55409,7 +55410,7 @@
     "garo": "Kadea",
     "category": null,
     "pos": "v.",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'to hang' has VERIFIED/HIGH form(s) ['al·a·i·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH — NV-061, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Native: 'kadea' = to hang BY TYING a thing onto something. UN-SUPERSEDES the 2026-08-01 corpus-audit demotion (which had deprioritized this in favor of 'al·a·i·na' on citation-count grounds alone, without native input). Native did not confirm or reject 'al·a·i·na' when asked directly this session — its VERIFIED/HIGH/doc7 status is unchanged but flagged for a future targeted check."
   },
   {
     "english": "To hang",
@@ -58052,7 +58053,7 @@
     "garo": "Boka",
     "category": null,
     "pos": "adj.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-v.' for secondary POS."
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'adj.' followed by '-v.' for secondary POS. | Reconfirmed 2026-08-05 (Thangseng, via Tridip WhatsApp): 'Boka - white', direct native confirmation."
   },
   {
     "english": "to cut the jungle wood for jhuming.",
@@ -61027,7 +61028,7 @@
     "category": "adjectives",
     "pos": null,
     "classifier": null,
-    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH entry, separate from the pre-existing UNVERIFIED 'dil·ding bal·jak' (idx 5333) — not reconciled, both retained."
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH entry, separate from the pre-existing UNVERIFIED 'dil·ding bal·jak' (idx 5333) — not reconciled, both retained. | Reconfirmed 2026-08-05 (Check C reconfirmation): both forms again given by native; 'dil·ding bal·jak' (separate unverified entry) was NOT repeated back this time — still unconfirmed, not selected."
   },
   {
     "english": "mature",
@@ -61035,7 +61036,7 @@
     "category": "adjectives",
     "pos": null,
     "classifier": null,
-    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). Variant/synonym of 'dal·gimin'. New VERIFIED/HIGH entry."
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). Variant/synonym of 'dal·gimin'. New VERIFIED/HIGH entry. | Reconfirmed 2026-08-05 (Check C reconfirmation): both forms again given by native; 'dil·ding bal·jak' (separate unverified entry) was NOT repeated back this time — still unconfirmed, not selected."
   },
   {
     "english": "adult",
@@ -61068,5 +61069,77 @@
     "pos": null,
     "classifier": null,
     "notes": "NV-018 follow-up, Thangseng direct native validation via Tridip WhatsApp, 2026-07-18 (relayed 2026-08-04). Native: \"for mother we have replaced with A.ai (Remember the raka in a.ai).\" Replaces the bare 'ama' address form for mother, which shares its exact spelling with the ability modal 'ama'/\"can\" (see that entry) - the collision is resolved by retiring 'ama' from the mother sense rather than disambiguating it. Distinct from the pre-existing 'a·ma'/'ma·gip·a'/'na·gi·pa' VERIFIED/HIGH variants for 'mother' (different spelling/register, not implicated in this specific collision) - not reconciled against those here."
+  },
+  {
+    "english": "i am at the market",
+    "garo": "Anga bajalo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Uses -o (no-movement locative, RULE-044), consistent with static location."
+  },
+  {
+    "english": "go to the market",
+    "garo": "Bajalchi re'angbo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Uses -chi (movement-to locative, RULE-044), imperative."
+  },
+  {
+    "english": "the market is nearby",
+    "garo": "Bajalde sambaon",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Primary form, topic marker -de. Alternate: 'Bajalara sambaon' (see separate entry, -ara marker)."
+  },
+  {
+    "english": "the market is nearby",
+    "garo": "Bajalara sambaon",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Alternate form of 'Bajalde sambaon', -ara marker instead of -de. Both given directly by native as free variants; distinction not yet characterized (open)."
+  },
+  {
+    "english": "tomorrow is market day",
+    "garo": "Knalde bajal sal",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. 'Knal' = tomorrow (consistent with existing entry); 'bajal sal' = market day (compound)."
+  },
+  {
+    "english": "to hang (by letting a thing dangle, e.g. on a nail)",
+    "garo": "sitea",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-061, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Contrasts with 'kadea' (to hang by tying)."
+  },
+  {
+    "english": "adultery",
+    "garo": "Til'eka",
+    "category": "uncategorized",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-062, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Given directly, bare form, when asked to confirm the flagged 'Gro daka' (to commit adultery) candidate. Native did not repeat back or endorse 'Gro daka'; that flagged item remains open, un-confirmed and un-rejected."
+  },
+  {
+    "english": "angry (metaphorical usage)",
+    "garo": "bika chaa",
+    "category": "emotions",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054 follow-up, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Native: metaphorical-usage form of 'angry'. Distinct spelling from the pre-existing unreconciled 'bi·ka so·a'/'hel·hel' cluster (not merged, no guess). Native separately clarified standalone 'ka'chaa' = to reprimand/scold (see that entry) — same root, different sense depending on context."
+  },
+  {
+    "english": "angry",
+    "garo": "bika ding'a",
+    "category": "emotions",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-054 follow-up, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Given alongside 'ka'o nanga' (most common) and 'bika chaa' (metaphorical). Distinct spelling from pre-existing unreconciled 'bi·ka so·a' (not merged, no guess)."
   }
 ]

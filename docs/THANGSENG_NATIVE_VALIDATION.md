@@ -3192,7 +3192,7 @@ spelling are historical and not bulk-edited this session.
 
 ---
 
-## NV-059 — `Bajal Anti` market imperative — OPEN, evidence-partial, needs targeted native check
+## NV-059 — `Bajal Anti` market imperative — RESOLVED 2026-08-05, see NV-060
 
 **Trigger:** Claude C's audit (2026-08-04, Finding 1) flagged `master_dictionary.json`
 `"let's go to market"`/`"let's go to the market"` → `Hai Bajal Anti Re·na` as
@@ -3214,3 +3214,130 @@ follow-up question to send Thangseng: `docs/CLAUDE_A_RESPONSE_20260804_audit_fin
 native confirmation. Response doc written for Claude B/C. Independent Finding-1 rows
 (86, 712, 713, 714, 759, 764, `phrase_maps.js:89`) are clear to fix without waiting
 on this.
+
+## NV-060 — Market locative paradigm — RESOLVED 2026-08-05
+
+**Trigger:** NV-059 (above), targeted native check.
+
+**Native evidence (Thangseng, via Tridip WhatsApp, 2026-08-05), unprompted, full set:**
+- Let's go to market. = Hai bajalchi re'na. (Garo has no article "the")
+- Let's go to the market. = Hai bajalchi re'na. (the "the" is simply assumed)
+- I am at the market. = Anga bajalo.
+- Go to the market. = Bajalchi re'angbo.
+- The market is nearby. = Bajalde sambaon. / Bajalara sambaon.
+- Tomorrow is market day. = Knalde bajal sal.
+
+**Resolution:** `Anti` is not part of the "let's go to market" idiom — native gave
+the bare form with no "Anti" for both English variants (article-less, as expected).
+`master_dictionary.json` "let's go to market" / "let's go to the market" corrected
+from `Hai Bajal Anti Re·na` → `Hai bajalchi re'na`. This confirms Claude B's 2026-08-04
+revert in `phrase_maps.js` (bare `'market': 'Bajal'`) was the right call — no engine
+change needed.
+
+**Paradigm value:** confirms RULE-044 (`-chi` = movement-to, `-o` = no-movement
+locative) cleanly across "at the market" (`bajalo`) vs. "go to the market"
+(`bajalchi`). Also introduces `-de`/`-ara` as free-variant topic/subject markers on
+`bajal` ("nearby" sentence) — distinction between the two not yet characterized,
+flagged for a future question if it matters for the engine.
+
+**5 new VERIFIED/HIGH entries added**, 2 existing entries corrected.
+
+## NV-061 — "to hang": sitea vs. kadea — PARTIALLY RESOLVED 2026-08-05
+
+**Trigger:** flagged item "to hang → al·a·i·na", awaiting native-speaker confirmation.
+
+**Native evidence:** "To hang = sitea (to hang by letting a thing hang on something,
+may be a nail, or anything); kadea (to hang by tying on something)."
+
+**Resolution:** two distinct verbs by manner, both new/reconfirmed VERIFIED/HIGH:
+`sitea` (dangle-hang, new entry) and `kadea` (tie-hang — this un-supersedes the
+2026-08-01 corpus-audit demotion of the existing `Kadea` entry, which had been
+deprioritized on citation-count grounds alone, without native input).
+
+**Not resolved:** `al·a·i·na` (the specific flagged candidate) was not repeated back
+or endorsed by native when asked directly — its existing VERIFIED/HIGH/doc7 status is
+left unchanged, but flagged for a future targeted check, since native volunteered
+different vocabulary instead. Do not treat as confirmed.
+
+## NV-062 — Adultery: Til'eka — PARTIALLY RESOLVED 2026-08-05
+
+**Trigger:** flagged item "to commit adultery → Gro daka", awaiting native-speaker
+confirmation.
+
+**Native evidence:** "Adultery = Til'eka."
+
+**Resolution:** `Til'eka` added as new VERIFIED/HIGH noun entry for "adultery" — matches
+the `tileka` component of the existing UNVERIFIED/MEDIUM `Jua ba tileka` entry.
+
+**Not resolved:** native did not repeat back or endorse `Gro daka` (the specific
+flagged verb candidate for "to commit adultery"); it remains open, neither confirmed
+nor rejected. The existing VERIFIED/HIGH/doc7 `an·chak·na` ("to commit adultery")
+entry is unaffected either way.
+
+## NV-063 — "to support" = chaka — RESOLVED 2026-08-05
+
+**Trigger:** flagged item "to support → Chaka", awaiting native-speaker confirmation.
+
+**Native evidence:** "to support = chaka" — exact match to the flagged candidate.
+
+**Resolution:** `Chaka` promoted from SUPERSEDED to VERIFIED/HIGH. Coexists with
+`al·du·na` (VERIFIED/HIGH/doc7) — both accepted; not reconciled as synonyms vs.
+distinct senses, no further action without new evidence.
+
+## NV-054 follow-up — angry cluster, additional confirmed forms — 2026-08-05
+
+**Native evidence:** "angry = ka'o nanga (most common usage), bika ding'a, bika chaa
+(metaphorical usage). ka'chaa = to reprimand, to scold."
+
+Two new VERIFIED/HIGH entries added (`bika ding'a`, `bika chaa`), spelled distinctly
+from the pre-existing unreconciled `bi·ka so·a`/`hel·hel` cluster from NV-054 — not
+merged, no guess made about whether they're the same words differently transcribed.
+The `ka'chaa` = "to reprimand/scold" primary-sense reading reconfirms the existing
+2026-07-25 native correction on the `Ka-chaa` entries verbatim.
+
+## Check C build-gate reconfirmations — 2026-08-05
+
+Native reconfirmed, via Tridip WhatsApp:
+- **can**: both `man·a` and `ama` correct ("Man·a, ama"). `man·a` promoted
+  UNVERIFIED/HIGH → VERIFIED/HIGH.
+- **where did you come from?**: both `Na·a banoni reba·a?` and `Banoni re'baa na'ara?`
+  (NV-056) confirmed correct, free variants, not ranked. Former promoted to
+  VERIFIED/HIGH.
+- **mature**: `dal·gimin` and `brigimin` (NV-056) reconfirmed. The third variant
+  `dil·ding bal·jak` was NOT repeated back this time — still unconfirmed, not
+  selected, left as-is (no guess).
+
+Check C's fourth item, `jeon`/`jeo` ("where," relative pronoun), was not asked this
+round — still open.
+
+## Boka / "to demand unduly" (PL-0001540) — PARTIALLY ADDRESSED 2026-08-05
+
+Native confirmed `Boka` = white cleanly (already correctly reflected in
+`master_dictionary.json`; citation added). The polysemy question — whether `Boka Boka`
+also legitimately means "to demand unduly" — was NOT addressed; native gave no
+comment on that sense at all. **Still open per evidence-first discipline** (silence is
+not resolution). Separately, native tentatively offered `dabia` ("I think we can use
+'dabia' for this one as well...") as a possible independent word for "to demand
+unduly" — hedged, not a firm confirmation. Logged as a `tentative_candidate` on
+`PL-0001540` in `pending_lexicon.json`, not promoted to `master_dictionary.json`.
+
+## Not answered this session (remain open, no guess made)
+
+- **`chiko` vs. `chibimao`** — asked directly, not addressed in native's reply at all.
+- **`Boka Boka` polysemy** ("white" vs. "to demand unduly") — see above.
+- **`al·a·i·na`** for "to hang" — see NV-061.
+- **`Gro daka`** for "to commit adultery" — see NV-062.
+- **`dil·ding bal·jak`** for "mature" — not reselected, still unconfirmed.
+- **`jeon`/`jeo`** ("where," relative pronoun, Check C) — not asked this round.
+- **"who gave you this" — keep or drop trailing `?`** — this is a JSON key-naming /
+  schema question (source-of-truth: `corrections.json` vs. `compiled_dict.json`), not
+  a linguistic question; native did not and would not be expected to address it.
+  Remains Claude B's / Project Owner's call.
+
+## Working-note: informant methodology, 2026-08-05
+
+Thangseng, unprompted, on why fewer alternate translations are volunteered per entry:
+"We've been refraining from giving too many possible translations because it might
+confuse the system." Worth keeping in mind when native answers seem terser than the
+question asked — it may be a deliberate simplification choice on the informant's side,
+not incomplete knowledge.

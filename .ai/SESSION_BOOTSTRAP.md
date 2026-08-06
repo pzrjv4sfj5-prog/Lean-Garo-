@@ -211,7 +211,32 @@ Claude A and `origin/main`.
 
 ## Current joint work package
 
-**NEW, 2026-08-04, Claude A — "need" spelling closed as `nanga` (no
+**NEW, 2026-08-05, Claude A — full native-validation pass on a fresh
+Thangseng WhatsApp transcript (Project Owner high-priority framing).**
+Resolved NV-059 (`Bajal Anti` dropped from the market imperative — not
+part of the idiom) via new NV-060 (market locative paradigm, 5 new
+VERIFIED/HIGH entries incl. static/movement `-o`/`-chi` locative pair,
+2 existing entries corrected `Hai Bajal Anti Re·na` → `Hai bajalchi
+re'na`). Partially resolved NV-061 ("to hang": `sitea` vs. `kadea`
+by-manner distinction, un-superseded `Kadea`; the previously-flagged
+`al·a·i·na` was NOT reconfirmed, left as-is) and NV-062 (adultery:
+`Til'eka` added as new noun entry; the previously-flagged `Gro daka`
+verb candidate was NOT reconfirmed, left open). Fully resolved NV-063
+("to support" = `chaka`, promoted from SUPERSEDED to VERIFIED/HIGH).
+Extended NV-054 (angry cluster: 2 new forms `bika ding'a`/`bika chaa`,
+`ka'chaa`=scold reconfirmed). Reconfirmed 3 Check C build-gate items —
+`can` (`man·a` promoted to VERIFIED/HIGH, joins `ama`), "where did you
+come from?" (both forms confirmed, one promoted), `mature` (both
+existing forms reconfirmed; third variant `dil·ding bal·jak` was NOT
+reselected by native, left unconfirmed — not promoted). `PL-0001540`
+(Boka/"demand unduly" polysemy) still open — native addressed only the
+"white" side; a hedged `dabia` candidate logged, not promoted.
+`chiko`/`chibimao` and Check C's 4th item (`jeon`/`jeo`) were not
+addressed this round, still open. Full citations:
+`docs/THANGSENG_NATIVE_VALIDATION.md`. `test-dictionary.js`: 8048/8048,
+9/9 corrections — clean after all edits.
+
+**2026-08-04, Claude A — "need" spelling closed as `nanga` (no
 raka), reversing this session's earlier `nang·a` call, per Project
 Owner direct confirmation.** The VERIFIED/HIGH `master_dictionary.json`
 entry's own citation already quoted Thangseng as `"nanga = need,
