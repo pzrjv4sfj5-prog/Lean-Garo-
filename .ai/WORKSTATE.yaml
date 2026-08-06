@@ -1246,6 +1246,37 @@ claude_a:
     Thangseng relay-question batch next, if wanted. Repo confirmed fully
     synced before and after (git fetch, HEAD == origin/main, clean tree)
     per Project Owner's explicit "nothing local" instruction.
+  latest_5: >-
+    2026-08-06 (same session, Project Owner relayed 4 fresh native
+    answers via WhatsApp, closing several items from the gap audit
+    above): (1) Boka Boka polysemy CLOSED - Boka=white only, dabia=
+    "to demand unduly"/"to demand" (was hedged tentative_candidate,
+    now firm). pending_lexicon.json PL-0001540 marked review_status/
+    promotion_status "rejected" (correct enum values - first attempt
+    used "resolved"/"rejected-redirected", failed Check D, fixed).
+    master_dictionary.json +2 entries (dabia). (2) Kajia=fight
+    confirmed - real distinct word, corroborates existing quarrel/
+    dispute/wrangling entries, citation added to all 4. (3) jegrika=
+    quarrel reconfirmed (2nd independent confirmation) but raka
+    placement still never given by native either time - added as
+    UNVERIFIED/HIGH-meaning/unconfirmed-orthography entry, NV-028
+    orthography half stays open. (4) Bal flower sense REJECTED -
+    native gave bibal/pul instead of confirming Bal=flower; Bal/"A
+    flower" entry marked rejected, Bibal/flower reconfirmed, new
+    entry flower plant->pul added. NV-020 only PARTIALLY closed -
+    air/bundle/load/basket senses still unaddressed, flagged in both
+    THANGSENG_NATIVE_VALIDATION.md and the gap audit doc. (5) bika
+    so'a/hel'hel CLOSED as dead end - native said "I have no idea",
+    neither term was ever live in the dictionary so nothing to
+    correct, just closing the investigation thread. All 4 closures
+    written up as new NV entries (NV-066 + NV-028/NV-020/NV-027
+    followups), gap audit doc updated to move closed items out of
+    the open table. Rebuilt: 8060 entries (was 8055), test-dictionary
+    8060/8060, repository-intelligence 0 new violations all checks
+    (Check D briefly failed on the enum typo, fixed and re-verified
+    clean), unit tests 177/177. Manually verified "to demand unduly",
+    "to demand", "flower plant" all resolve correctly via translate().
+    Committed and pushed, HEAD==origin/main confirmed clean.
 
 claude_b:
   status: active

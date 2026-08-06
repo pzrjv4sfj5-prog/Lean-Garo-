@@ -40653,15 +40653,15 @@
       "import_date": "2026-07-23T05:36:52.673Z",
       "ocr_version": "whatsapp-2026-07-19"
     },
-    "review_status": "needs-discussion",
-    "review_notes": "Boka: \"white\" (adj.) and \"to demand unduly\" (v.) share one headword. Could be genuine polysemy or two unrelated homonyms merged by the print dictionary — same failure mode as the Kajina/Kajana collision (NV-032 handoff). Needs native check before promotion. | 2026-08-05 update: native (Thangseng, via Tridip WhatsApp) confirmed \"Boka\" = white, no mention of \"demand unduly\" sense — polysemy question still NOT resolved (open). When separately asked what \"to demand unduly\" is, native tentatively offered \"dabia\" (\"I think we can use 'dabia' for this one as well...\") — hedged, not a firm confirmation, not promoted to master_dictionary. Logged here as a candidate only.",
+    "review_status": "rejected",
+    "review_notes": "Boka: \"white\" (adj.) and \"to demand unduly\" (v.) share one headword. Could be genuine polysemy or two unrelated homonyms merged by the print dictionary — same failure mode as the Kajina/Kajana collision (NV-032 handoff). Needs native check before promotion. | 2026-08-05 update: native (Thangseng, via Tridip WhatsApp) confirmed \"Boka\" = white, no mention of \"demand unduly\" sense — polysemy question still NOT resolved (open). When separately asked what \"to demand unduly\" is, native tentatively offered \"dabia\" (\"I think we can use 'dabia' for this one as well...\") — hedged, not a firm confirmation, not promoted to master_dictionary. Logged here as a candidate only. | RESOLVED 2026-08-06 (Project Owner relay): \"it's only Boka meaning white and dabia = demand unduly / demand\" — confirms homonym-collision error, not genuine polysemy. Promoted under corrected headword \"dabia\" as \"to demand unduly\" and \"to demand\" in master_dictionary.json. This record (headword \"Boka\") stays rejected — the sense belongs under \"dabia\", not \"Boka\".",
     "reviewed_by": "Claude A",
-    "reviewed_date": "2026-08-05",
+    "reviewed_date": "2026-08-06",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
+    "promotion_status": "rejected",
     "promoted_date": null,
     "tentative_candidate": "dabia"
   },
