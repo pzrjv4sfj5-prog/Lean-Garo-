@@ -3321,18 +3321,52 @@ not resolution). Separately, native tentatively offered `dabia` ("I think we can
 unduly" — hedged, not a firm confirmation. Logged as a `tentative_candidate` on
 `PL-0001540` in `pending_lexicon.json`, not promoted to `master_dictionary.json`.
 
-## Not answered this session (remain open, no guess made)
+## NV-064 — Final closure batch: chiko/chibimao, jeon/jeo, Gro daka, al·a·i·na, dil·ding bal·jak — RESOLVED 2026-08-06
 
-- **`chiko` vs. `chibimao`** — asked directly, not addressed in native's reply at all.
+Project Owner-relayed native final words (Thangseng), treated per Project Owner
+direction as authoritative/closing (not requiring further reconfirmation round):
+
+- **`chibimao` = "at/in the river"** — reconfirms NV-051, VERIFIED/HIGH, unchanged garo.
+- **`chiko` = "the water"** — NOT a competing form of `chibimao`/"at the river" as
+  NV-051 had flagged. Reclassified: `chiko` english key changed from "at the river"
+  to "the water". Distinct from bare `Chi` ("water"/"the water") — assessed as `chi` +
+  `-ko` topic/emphatic marker, both entries correct and kept separate (allowlisted in
+  `known_dictionary_conflicts.json`, not merged). Resolves the "not answered" item
+  from 2026-08-05.
+- **`jeon` = "where" (relative pronoun)**, **`jeo` = "where" (relative pronoun), short
+  form of `jeon`** — reconfirms NV-054, VERIFIED/HIGH, free variants. Relationship
+  (jeo = short form of jeon) newly clarified.
+- **`Gro daka` = "to owe something"** — resolves the NV-062 "not answered" item, but
+  in a *different* sense than the one asked about there. Native did not confirm or
+  reject the "commit adultery" sense; instead gave "to owe something," matching the
+  pre-existing unverified `Gro daka` -> "to be in debt." entry, now promoted to
+  VERIFIED/HIGH. The "commit adultery" sense of `Gro daka` remains untouched —
+  already SUPERSEDED since 2026-08-01 in favor of `an·chak·na (2)`, not reopened.
+  `Gro daka`'s other senses ("to commit an offence", "to break the law") also
+  untouched — polysemous root, each sense stands on its own evidence.
+- **`al·a·i·na` for "to hang"** — REJECTED. Native does not recognize the word;
+  assessed as a probable mis-transcription of something else. Superseded by the
+  existing confirmed `sitea`/`kadea` distinction, NV-061.
+- **`dil·ding bal·jak`** (for both "mature" and "adolescent") — REJECTED. Native does
+  not recognize the word; assessed as possibly real but out of current usage. "mature"
+  stays resolved via `dal·gimin`/`brigimin` (NV-056). "adolescent" has no replacement
+  candidate on record — key stays open, entry marked REJECTED rather than deleted.
+
+All entries retained (not deleted) per citation discipline. `known_dictionary_conflicts.json`:
++1 key (`the water`). `repository-intelligence.js`: 0 new violations across all checks.
+`test-dictionary.js`: 8055/8055.
+
+## Not answered / still open (remain open, no guess made)
+
 - **`Boka Boka` polysemy** ("white" vs. "to demand unduly") — see above.
-- **`al·a·i·na`** for "to hang" — see NV-061.
-- **`Gro daka`** for "to commit adultery" — see NV-062.
-- **`dil·ding bal·jak`** for "mature" — not reselected, still unconfirmed.
-- **`jeon`/`jeo`** ("where," relative pronoun, Check C) — not asked this round.
+- **"adolescent"** — `dil·ding bal·jak` REJECTED 2026-08-06 (NV-064); no replacement
+  candidate on record.
 - **"who gave you this" — keep or drop trailing `?`** — this is a JSON key-naming /
   schema question (source-of-truth: `corrections.json` vs. `compiled_dict.json`), not
   a linguistic question; native did not and would not be expected to address it.
   Remains Claude B's / Project Owner's call.
+
+
 
 ## Working-note: informant methodology, 2026-08-05
 
