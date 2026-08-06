@@ -1188,6 +1188,39 @@ claude_a:
     key ('the water'). repository-intelligence.js: 0 new violations, all
     checks. test-dictionary.js: 8055/8055 (count unchanged - no new
     entries, only notes/english-key/status edits).
+  latest_3: >-
+    2026-08-06 (new session, resumed from migration doc checkpoint
+    961e51c via fe78e93, resynced clean at e11cb04 - one commit ahead,
+    just the migration-doc merge itself, no code drift): (1) Answered
+    Claude B's raka-normalization ruleset question (3 sub-questions,
+    held open since prior session) via evidence-first corpus review, no
+    new native ask needed - full answer in SESSION_BOOTSTRAP.md. Net
+    spec: strip `·` and `-` (except inside parenthetical OCR glosses),
+    lowercase, strip whitespace; do NOT strip `'` (confirmed distinct
+    a'/an'/am' prefix per GRAMMAR_RULE_CATALOGUE.md, co-occurs with
+    raka in 72 entries). Surfaced a new data-hygiene finding in the
+    process: 328 master_dictionary.json entries still carry a literal
+    `-` in garo despite the 2026-06-18 global hyphen-to-raka conversion
+    - these are post-conversion imports the one-time script never
+    touched. Flagged for Claude B/D, not fixed (out of scope, Claude A
+    doesn't touch ingestion). (2) Runtime-error check requested by
+    Project Owner: prepare-data.js, test-dictionary.js (8055/8055),
+    repository-intelligence.js (0 new violations, all checks C-F), and
+    both unit test files (165/165) all clean. Manual smoke-test of
+    translationEngine.js's exported translate()/getAllVocabulary()/
+    getCategories()/getAlternates() against 10 sample sentences plus
+    direct calls - no thrown errors, no unhandled rejections. Found one
+    silent (non-throwing) bug: getCategories()/getByCategory() always
+    return 'uncategorized' for all 8118 entries - they read EN_INDEX
+    (compiled_dict.json, english->garo string only) and never join
+    against src/data/category_index.json, which holds the real 3662-
+    entry category data. Currently dormant (grep confirms no UI/test
+    consumer calls these two functions), so not build-breaking, but a
+    real functional bug if anything starts relying on them. Claude B's
+    engine-code territory - flagged, not fixed. Also noted (not fixed):
+    "i have not eaten" resolves to unrelated "Anga dongja" instead of a
+    cha·-based negative-perfect form - wrong-verb match, not a crash.
+    No commits this session (both findings are report-only handoffs).
 
 claude_b:
   status: active
