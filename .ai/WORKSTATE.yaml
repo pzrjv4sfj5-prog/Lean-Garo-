@@ -1221,6 +1221,31 @@ claude_a:
     "i have not eaten" resolves to unrelated "Anga dongja" instead of a
     cha·-based negative-perfect form - wrong-verb match, not a crash.
     No commits this session (both findings are report-only handoffs).
+  latest_4: >-
+    2026-08-06 (same session, Project Owner-directed full repo audit,
+    "close all gaps"): full sweep of THANGSENG_NATIVE_VALIDATION.md open
+    items, every PENDING_* doc, and repository-intelligence.js
+    allowlisted counts. Closed 2 stale-doc gaps needing no native input:
+    (1) mina/minaha "ready/finished" - a carried-forward flag was itself
+    stale, actually resolved 2026-08-02 (NV-050), no action needed. (2)
+    PENDING_VOCABULARY.md still listed nina/nisona as unresolved -
+    NV-011/012 (2026-07-25) already closed both, added audit note
+    pointing to closure. Full consolidated audit written to
+    docs/CLAUDE_A_GAP_AUDIT_20260806.md: 9 items genuinely open on
+    native-speaker input (NV-020 Bal, NV-027 remainder bika so'a/hel'hel,
+    NV-028 jegrika+Kajia, adolescent, Boka Boka/dabia, under-pseudo-verb,
+    NV-031 present/past -ma forms) - none guessable per evidence-first
+    discipline, listed with exact refs. 5 items open on
+    engineering/Project Owner scope (right/work headword split still
+    unclaimed by Claude B, 115 placeholder entries backlog, reverse-
+    translation blocked on dictionary source, 328 unconverted hyphens,
+    "who gave you this" schema question) - none Claude A's to implement.
+    Confirmed repository-intelligence.js allowlisted counts (1187/115/
+    232/7) are by-design accepted backlog, not silent breakage - re-ran
+    clean, 0 new violations all checks. Offered to draft a consolidated
+    Thangseng relay-question batch next, if wanted. Repo confirmed fully
+    synced before and after (git fetch, HEAD == origin/main, clean tree)
+    per Project Owner's explicit "nothing local" instruction.
 
 claude_b:
   status: active
