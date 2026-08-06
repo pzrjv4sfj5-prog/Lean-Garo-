@@ -4,6 +4,16 @@ _Status: LIVING DOCUMENT — candidate entries only. Nothing here is in
 `corrections.json` or `master_dictionary.json`. Do not implement until
 Claude A reviews and a status below reads "Claude A approved."_
 
+**AUDIT NOTE, 2026-08-06 (Claude A):** this document predates NV-011 and
+NV-012 (both CLOSED 2026-07-25, see `docs/THANGSENG_NATIVE_VALIDATION.md`),
+which resolved every `nina`/`nisona` open item still listed below as
+"Needs Thangseng Validation." Left the original entries unedited for
+historical accuracy of what was known when they were written; readers
+should treat every `nina`/`nisona` "unresolved"/"Needs Thangseng
+Validation" note below as **superseded** — go to NV-011/NV-012 for the
+current, closed answer. No other open items found in this document on
+re-review.
+
 ## Purpose
 Every new word/morpheme encountered during the Native Sentence Validation
 Audit (`docs/NATIVE_SENTENCE_VALIDATION_AUDIT.md`) is recorded here so
