@@ -31,6 +31,7 @@
  * will now audit the newly-promoted entries too).
  */
 import fs from 'fs';
+import { buildExistingIndex, normalize } from './import-dictionary.js';
 
 function loadJSON(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -94,9 +95,36 @@ function main() {
     return;
   }
 
+  // Re-check against master's CURRENT state immediately before writing —
+  // not the copy loaded at the top of main(). A pending entry can sit
+  // approved for days; master may gain the same (english, garo) pair in
+  // the meantime via a different path (another promotion run, or Claude
+  // A editing master_dictionary.json directly). Re-loading fresh here
+  // closes that window. Exact-match only, same equality rule used
+  // throughout import-dictionary.js — no linguistic judgment, just
+  // re-checking a fact that may have changed since main() started.
+  const currentExistingByKey = buildExistingIndex('master_dictionary.json');
   const now = new Date().toISOString();
-  const promotedIds = new Set(toPromote.map(e => e.id));
-  const newMasterEntries = toPromote.map(e => {
+
+  const actuallyPromote = [];
+  const alreadyInMaster = [];
+  for (const e of toPromote) {
+    const k = normalize(e.english);
+    const existingValues = currentExistingByKey.get(k);
+    if (existingValues && existingValues.has(e.garo.trim())) {
+      alreadyInMaster.push(e);
+    } else {
+      actuallyPromote.push(e);
+    }
+  }
+
+  if (alreadyInMaster.length) {
+    console.log(`\n${alreadyInMaster.length} candidate(s) already exist in current master_dictionary.json (added since this pending entry was staged/approved) — not re-promoted, pending record still marked promoted (nothing left to do for it):`);
+    for (const e of alreadyInMaster) console.log(`  SKIP ${e.id}: "${e.english}" -> "${e.garo}" already in master`);
+  }
+
+  const promotedIds = new Set(toPromote.map(e => e.id)); // pending records for ALL candidates are closed out, including already-in-master ones — nothing left pending for them either way
+  const newMasterEntries = actuallyPromote.map(e => {
     const entry = { english: e.english, garo: e.garo, category: e.category };
     if (e.pos) entry.pos = e.pos;
     if (e.classifier) entry.classifier = e.classifier;
@@ -111,7 +139,7 @@ function main() {
   fs.writeFileSync('master_dictionary.json', JSON.stringify(updatedMaster, null, 2) + '\n');
   fs.writeFileSync('src/data/pending_lexicon.json', JSON.stringify(updatedPending, null, 2) + '\n');
 
-  console.log(`\n${toPromote.length} entries promoted to master_dictionary.json.`);
+  console.log(`\n${actuallyPromote.length} entries promoted to master_dictionary.json${alreadyInMaster.length ? ` (${alreadyInMaster.length} skipped as already-present)` : ''}.`);
   console.log('Pending Lexicon records preserved (promotion_status updated, not deleted).');
   console.log('Run `npm run build` next to regenerate compiled_dict.json and re-run Check C.');
 }
