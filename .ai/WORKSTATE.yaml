@@ -1192,7 +1192,30 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-08-06 (this session, resumed via pasted migration doc from
+    2026-08-06 (this session, continued, post-merge with Claude A's
+    NV-064 closure batch — d307603/961e51c). Built and verified Item 1
+    (promotion-time re-check) in scripts/promote-lexicon.js: reuses
+    buildExistingIndex()/normalize() from import-dictionary.js, reloads
+    master_dictionary.json fresh immediately before the write, skips
+    (and reports) any candidate already present in master's current
+    state instead of duplicating it, closes out its pending record
+    regardless. Verified via a sandboxed synthetic test (isolated tmp
+    dir, not real repo data) — confirmed a duplicate candidate was
+    skipped and a genuinely new one promoted, no duplicate written to
+    master. Merge: origin advanced with Claude A's historical audit +
+    NV-064 batch while I was working; merged clean (git merge, no
+    conflicts) rather than force-pushing over it. Fixed one duplicated
+    "## Current joint work package" header left by the earlier
+    auto-merge (961e51c) — cosmetic, no content loss. Post-merge: real
+    repo test-dictionary.js 8055/8055, repository-intelligence.js
+    PASSED, 0 new violations. eslint not installed in this sandbox
+    environment, could not run repo lint script directly — flagged, not
+    a code defect (logic independently verified by direct test). Item 1
+    done, no linguistic judgment involved. Item 2 (normalized near-dup
+    key) still waiting on Claude A's normalization ruleset — see
+    SESSION_BOOTSTRAP.md scope doc. Ready to commit/push.
+    ---
+    PRIOR, 2026-08-06 (this session, resumed via pasted migration doc from
     checkpoint 60ca461). Reconciled the standing 3-item Check C blocker
     list against docs/THANGSENG_NATIVE_VALIDATION.md and
     master_dictionary.json before doing engineering work, per Project
