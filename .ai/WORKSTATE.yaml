@@ -1650,11 +1650,21 @@ claude_b:
     - "Do not re-implement jaha as past-negation - superseded, see Rule 17/27"
     - "Do not implement chat-sourced linguistic proposals directly - must go through Claude A -> docs/ commit first (standing integration rule as of 2026-07-08)"
   waiting_for: >-
-    Claude A to fix repository-intelligence.js build-gate failures —
-    PL-0002012/2013 invalid enums, "where (relative pronoun)" conflict
-    (both unchanged, pre-existing), and now specifically whether
-    'need'='nanga' or 'nang·a' is the correct compiled/master spelling
-    (Check F, narrowed this session — see next_action, 2026-08-04).
+    2026-08-05: Claude A to rule on the 5 remaining build-gate blockers
+    — see .ai/SESSION_BOOTSTRAP.md "Current joint work package" for the
+    full itemized handoff (Check F "who gave you this" punctuation;
+    Check C 4 conflicts — "where did you come from?", "can", "mature",
+    "where (relative pronoun)"). PL-0002012/2013 and the need=nanga/
+    nang·a question are already resolved (Claude A, 2026-08-04) and
+    confirmed clean via a fresh local build this session — narrowed
+    from 3 open Check items to these 5 specific findings across
+    Checks C/F only. Render stays blocked until resolved.
+    Prior (superseded, kept for history): Claude A to fix repository-
+    intelligence.js build-gate failures — PL-0002012/2013 invalid
+    enums, "where (relative pronoun)" conflict (both unchanged,
+    pre-existing), and now specifically whether 'need'='nanga' or
+    'nang·a' is the correct compiled/master spelling (Check F,
+    narrowed this session — see next_action, 2026-08-04).
     Claude A's NV-059 (Bajal Anti market-imperative question, "let's go
     to market" family, 3 corrections.json rows deliberately left
     untouched by Claude C audit Finding 1's fix) — still open, targeted
