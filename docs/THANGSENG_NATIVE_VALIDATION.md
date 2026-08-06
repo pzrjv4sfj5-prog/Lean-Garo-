@@ -3375,3 +3375,29 @@ Thangseng, unprompted, on why fewer alternate translations are volunteered per e
 confuse the system." Worth keeping in mind when native answers seem terser than the
 question asked — it may be a deliberate simplification choice on the informant's side,
 not incomplete knowledge.
+
+## NV-065 — "i have not eaten", closed 2026-08-06
+
+Project Owner-relayed WhatsApp exchange, 2026-08-06:
+> Tridip: i have not eaten?
+> Thangseng: Anga cha.kuja.
+
+Canonicalized `.` → `·` (root `cha·` "eat" is a confirmed-raka root per
+`docs/GRAMMAR_RAKA_RULE_CONFIRMED_20260626.md` — raka is total across all
+inflected forms of a root, so this isn't a guess, it's the standing rule
+applied). `-kuja` is an already-established productive negative suffix,
+independently confirmed on two other roots: `minkuja` (NV-050, "not
+ripe", negative of `mina`) and `re·bakuja` (`NEW_SENTENCES_BATCH2_NATIVE.md`,
+"not coming", negative of `re·ba`). `cha·kuja` fits the same pattern
+exactly — negative perfect of `cha·` (eat).
+
+**Resolves a real bug, not just a gap fill:** prior to this, `translate()`
+resolved "i have not eaten" via grammar-assembly fallback to `Anga dongja`
+("i don't have" — wrong lexical match, unrelated to eating), flagged
+during this session's runtime-error check. Root cause was absence of a
+`corrections.json` entry for this exact phrase, so it fell through to a
+mismatched pattern.
+
+**Fix applied:** added `"i have not eaten": "Anga cha·kuja"` to
+`src/data/corrections.json` (`corrections`-precedence beats
+grammar-assembly, so this closes the mismatch directly).
