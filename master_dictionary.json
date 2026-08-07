@@ -15692,7 +15692,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: 'bi·sa' confirmed as the universal word for child, same english key 'child' has VERIFIED form 'Bi·sa'. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "coming",
@@ -47761,7 +47761,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/200sentences"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: 'de' as child superseded by 'bi·sa' (universal rule, native-confirmed). Runtime-authoritative form now 'Nang·o bi·sarang dongama?' in corrections.json. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "I have two children",
@@ -47769,7 +47769,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/200sentences"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: 'de' as child superseded by 'bi·sa' (universal rule, native-confirmed); word order also revised to noun+classifier+count. Runtime-authoritative form now 'Ang·o bi·sa sak·gni donga' in corrections.json. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "I am married",
