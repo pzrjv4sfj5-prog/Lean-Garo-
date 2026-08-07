@@ -3362,6 +3362,16 @@ All entries retained (not deleted) per citation discipline. `known_dictionary_co
   candidate on record.
 - **`Bal` = "air" / "a bundle" / "a load" / "a big basket"** — NV-020 flower sense
   closed 2026-08-06 (see below); these four senses still unaddressed.
+- **~9 same-english-key raka/orthography pairs with no confidence tag on either
+  side** (duplicate audit, 2026-08-06 — see
+  `docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md` for full context):
+  `laugh` (`Ka·ding·a` vs `Ka·dinga`), `mouth` (`Ku·sik` vs `Kusik`), `joking`
+  (`kal·akenga` vs `Ka·lakenga`), `at` (`·o` vs `O`), `bright` (`ching·a` vs
+  `Ching·a`), `sad` (`duk ong·a` vs `Duk ong·a`), `"praise the lord"`
+  (`Gitelna rasong` vs `Gitel na rasong`), `direct`/`straight` (shared
+  `tong·tang`/`·tong·tang·` pair, unclear which headword it belongs under).
+  Neither side of any pair is marked correct — no evidence-first basis to
+  pick one without asking.
 - **"who gave you this" — keep or drop trailing `?`** — this is a JSON key-naming /
   schema question (source-of-truth: `corrections.json` vs. `compiled_dict.json`), not
   a linguistic question; native did not and would not be expected to address it.

@@ -1277,6 +1277,48 @@ claude_a:
     clean), unit tests 177/177. Manually verified "to demand unduly",
     "to demand", "flower plant" all resolve correctly via translate().
     Committed and pushed, HEAD==origin/main confirmed clean.
+  latest_6: >-
+    2026-08-06 (same session, Project Owner: "no runtime errors, no open
+    items, find and eliminate all duplicates, need a clean pipeline").
+    Re-ran full runtime/build verification clean (8060/8060, 0 new
+    violations, 177/177 tests, manual translate()/getAllVocabulary()/
+    getCategories()/getAlternates()/analyzeGrammar() smoke test - 0
+    thrown errors). Full duplicate sweep of master_dictionary.json:
+    *** CRITICAL FINDING, HIGHEST PRIORITY, NOT FIXED (engine code,
+    Claude B's territory) ***: pickPrimary()'s isRealCaseCollision
+    heuristic in prepare-data.js (designed correctly for the book/
+    teacher register-variant pattern) misfires on SUPERSEDED-vs-
+    VERIFIED pairs whenever they happen to differ in original-import
+    casing (systematic, not rare - legacy imports were lowercase,
+    corrections capitalized). Result: 334 of 454 SUPERSEDED-tagged
+    english keys are CURRENTLY SHIPPING THE WRONG VALUE in
+    compiled_dict.json right now (confirmed live, e.g. translate/
+    getAllVocabulary "pineapple"->"Anaros" instead of "a·na·ros").
+    No existing repository-intelligence.js check catches this - Check
+    C only flags multi-value keys as known/allowlisted without knowing
+    which value shipped; Check F is a different layer (corrections/
+    phrase_maps vs compiled_dict) entirely. This is a blind spot in
+    the verification pipeline itself, not just an unlucky miss. Full
+    diagnosis, exact fix recommendation (exclude SUPERSEDED-tagged
+    entries from pickPrimary candidacy at the addValue() stage, pair
+    with a new Check G asserting compiled_dict never ships a
+    SUPERSEDED value), and the full 337-key affected list written to
+    docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md and
+    docs/CLAUDE_B_HANDOFF_337_KEYS_20260806.json. Claude A did NOT
+    touch prepare-data.js - out of territory, flagged for Claude B.
+    Also from the sweep: removed 2 genuine literal-duplicate rows
+    (Tax/Kajina, business/Kam - identical content repeated verbatim,
+    kept the richer-cited copy each time), 9147->9145 entries. Found
+    ~9 same-english-key raka/orthography pairs with no confidence tag
+    on either side (laugh, mouth, joking, at, bright, sad, "praise the
+    lord", direct/straight) - no evidence-first basis to pick one,
+    added to THANGSENG_NATIVE_VALIDATION.md open-items list rather
+    than guessed. Confirmed ~452 remaining SUPERSEDED/VERIFIED pairs
+    and ~15 variant/VERIFIED/HIGH-tagged groups are correctly-designed
+    citation-discipline retention, not duplicates to remove. Rebuilt
+    and reverified after the 2 removals: 8060 entries, test-dictionary
+    8060/8060, repository-intelligence 0 new violations all checks,
+    unit tests 177/177.
 
 claude_b:
   status: active
