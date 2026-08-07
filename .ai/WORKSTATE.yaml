@@ -1319,6 +1319,38 @@ claude_a:
     and reverified after the 2 removals: 8060 entries, test-dictionary
     8060/8060, repository-intelligence 0 new violations all checks,
     unit tests 177/177.
+  latest_7: >-
+    2026-08-06 (same session, Project Owner relayed native example
+    resolving the "laugh" duplicate: "Why do you laugh? na.a maina
+    ka.dinga?"). Confirms Ka·dinga (not Ka·ding·a) - closed the
+    unlabeled-duplicate pair from the audit above. Ka·ding·a marked
+    SUPERSEDED, Ka·dinga marked VERIFIED/HIGH in master_dictionary.json.
+    Added new variant/VERIFIED/HIGH entry for the alternate subject-
+    first word order "Na·a maina ka·dinga?" alongside the existing
+    question-word-first "Maina na·a ka·dinga?". *** Follow-on finding:
+    discovered phrase_maps.js (a separate override table, checked
+    BEFORE compiled_dict.json in translate()'s cascade) independently
+    had the same wrong 'Ka·ding·a' value for laugh - master_dictionary's
+    SUPERSEDED marker never touches this file, confirming the
+    prepare-data.js fix alone won't fully resolve these words even
+    once Claude B applies it. Cross-referenced all 78 phrase_maps
+    entries already baselined in known_cross_source_conflicts.json
+    (Check F) against the 337-key wrong-list from latest_6 - found 5
+    more hits (forest, some, all, god, white). Fixed all 6 directly in
+    phrase_maps.js (Claude A's own data file, no engine-code issue).
+    forest/some had exactly one VERIFIED replacement each, fixed with
+    full confidence. all/god/white each had 2-3 VERIFIED synonym
+    candidates with no native tie-breaker - picked the orthographically
+    closest match to the legacy spelling as a provisional single value,
+    inline-commented as provisional not firm. Flagged in the handoff
+    doc: Claude B should audit for more override layers beyond
+    phrase_maps.js/compiled_dict.json once the core fix lands. Rebuilt
+    and reverified: 8060 entries (was 8060, laugh entries were value
+    edits not new keys, +1 new sentence variant did not change unique
+    compiled count), test-dictionary 8060/8060, repository-intelligence
+    0 new violations all checks (Check F known-mismatches actually
+    dropped 232->231, laugh no longer mismatches), unit tests 177/177.
+    Manually verified all 6 words resolve correctly via translate().
 
 claude_b:
   status: active

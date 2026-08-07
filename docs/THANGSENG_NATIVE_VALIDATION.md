@@ -3479,3 +3479,36 @@ native ask needed, and there is nothing live in the dictionary to
 correct or roll back. Leaving as a documented dead end (possible OCR
 noise, a different Garo register/dialect, or a print-dictionary error)
 rather than guessing a resolution.
+
+## "laugh" orthography — CLOSED 2026-08-06
+
+Project Owner relay, Thangseng direct: "ka·dinga example - Why do you laugh?
+na.a maina ka.dinga?"
+
+Canonicalized `.` → `·`. Confirms `Ka·dinga` (single raka, before "dinga"
+only) over `Ka·ding·a` (double raka) — resolves the unlabeled-duplicate
+pair flagged in the 2026-08-06 duplicate audit. **Applied:** `Ka·ding·a`
+marked SUPERSEDED in `master_dictionary.json`; `Ka·dinga` marked
+VERIFIED/HIGH. Also fixed the same wrong value in `src/data/phrase_maps.js`
+(a separate, higher-precedence override table `translate()` checks before
+`compiled_dict.json` — it had `'laugh': 'Ka·ding·a'` independently of
+`master_dictionary.json`, so master's SUPERSEDED marker alone wouldn't have
+fixed live translation output even after Claude B's precedence-bug fix
+lands).
+
+The example sentence also gave a second confirmed word order for "why do
+you laugh?": `Na·a maina ka·dinga?` (subject-first), alongside the
+existing `Maina na·a ka·dinga?`/`Maina (na·a) ka·dinga?` (question-word-
+first). Added as a new `variant/VERIFIED/HIGH` entry.
+
+**Follow-on finding:** checking `phrase_maps.js` for the same
+SUPERSEDED-vs-shipped-value bug pattern found 5 more affected entries —
+`forest`, `some`, `all`, `god`, `white` — all independently confirmed via
+`docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md`'s cross-
+reference. Fixed `forest` and `some` with full confidence (exactly one
+VERIFIED/HIGH replacement each). `all`, `god`, `white` each have 2-3
+VERIFIED/HIGH synonym candidates in `master_dictionary.json` with no
+native confirmation of which is primary — picked the orthographically
+closest match to the legacy spelling as a provisional single value
+(phrase_maps.js can only hold one), flagged inline as provisional, not
+guessed at as a firm linguistic conclusion.

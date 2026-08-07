@@ -660,7 +660,8 @@
   {
     "english": "laugh",
     "garo": "Ka·ding·a",
-    "category": "emotions"
+    "category": "emotions",
+    "notes": "SUPERSEDED — 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): asked to confirm 'laugh', native gave example sentence \"na.a maina ka.dinga?\" (\"Why do you laugh?\") -- confirms single raka before 'dinga' only ('Ka·dinga'), not this double-raka form. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "cry",
@@ -15773,7 +15774,7 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": null
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"Why do you laugh? na.a maina ka.dinga?\" -- closes the raka-placement ambiguity flagged in the 2026-08-06 duplicate audit (was Ka·ding·a vs Ka·dinga, unresolved)."
   },
   {
     "english": "mouth",
@@ -61158,5 +61159,13 @@
     "category": null,
     "pos": "v.",
     "notes": "UNVERIFIED/HIGH — meaning confirmed twice independently (NV-028, 2026-07-22: \"Quarrel is jegrika\"; reconfirmed 2026-08-06 via Thangseng: \"jegrika? Quarrel\"), but native has given the word plain both times -- exact raka (·) placement is still unconfirmed. Spelled here without raka pending that confirmation; do not treat this spelling as authoritative for raka-locality tooling. See NV-028."
+  },
+  {
+    "english": "Why do you laugh?",
+    "garo": "Na·a maina ka·dinga?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"na.a maina ka.dinga?\" -- alternate subject-first word order for the same question, alongside the existing question-word-first \"Maina na·a ka·dinga?\"/\"Maina (na·a) ka·dinga?\"."
   }
 ]

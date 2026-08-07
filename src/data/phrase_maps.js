@@ -161,13 +161,13 @@ export const PHRASE_MAPS = {
   'house': 'Nok',
   'road': 'Rama',
   'river': 'Chibima',
-  'forest': 'Buring',
+  'forest': 'bring', // corrected 2026-08-06: 'Buring' was flagged SUPERSEDED in master_dictionary.json (legacy import), single VERIFIED/HIGH replacement is 'bring'
   'village': 'Song',
   'school': 'Skul',
   'money': 'Tangka',
   'price': 'Dam',
   'book': 'Ki·tap',
-  'god': 'Isol',
+  'god': 'i·sol', // corrected 2026-08-06: 'Isol' was flagged SUPERSEDED; 2 VERIFIED/HIGH candidates exist (dok·gip·a / i·sol), picked i·sol as closest orthographic match to the legacy spelling -- provisional, see docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md
   'church': 'Gilja·nok',
   'love': 'Ka·saa',
   'peace': 'Tom·toma',
@@ -235,12 +235,12 @@ export const PHRASE_MAPS = {
   'empty': 'Bangbang',
   'expensive': 'Dam·raka',
   'cheap': 'Dam·nom·a',
-  'all': 'Gimikan',
-  'some': 'Mitam',
+  'all': 'gim·ik', // corrected 2026-08-06: 'Gimikan' was flagged SUPERSEDED; 3 VERIFIED/HIGH candidates exist (be·bak / gim·ik / ·tok·), picked gim·ik as closest orthographic match to the legacy spelling -- provisional, not a native-confirmed choice among the three, see docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md
+  'some': 'mit·am', // corrected 2026-08-06: 'Mitam' was flagged SUPERSEDED, single VERIFIED/HIGH replacement is 'mit·am'
   'many': 'Bang·a',
   'few': 'On·titi',
   'red': 'Gitchak',
-  'white': 'Gipok',
+  'white': 'gip·bok', // corrected 2026-08-06: 'Gipok' was flagged SUPERSEDED; 2 VERIFIED/HIGH candidates exist (bok·a / gip·bok) -- provisional pick, see docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md
   'black': 'Gisim',
   'green': 'Tangsek',
   'blue': 'Tang·sim',
@@ -298,7 +298,7 @@ export const PHRASE_MAPS = {
   'play': 'Kal·a',
   'sit': 'Asong·a',
   'stand': 'Chadenga',
-  'laugh': 'Ka·ding·a',
+  'laugh': 'Ka·dinga',
   'cry': 'Grap·a',
   'buy': 'Brea',
   'sell': 'Pala',

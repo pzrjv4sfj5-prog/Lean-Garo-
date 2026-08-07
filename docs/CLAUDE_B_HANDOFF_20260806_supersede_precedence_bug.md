@@ -113,3 +113,35 @@ Owner wants them closed too.
 177/177 unit tests. The 334-key precedence bug is **not** fixed by this
 commit — it requires a `prepare-data.js` change, which is Claude B's engine
 code, outside Claude A's territory. Flagging as the top-priority open item.
+
+## Update, same day — the identical bug class exists in `phrase_maps.js` too
+
+`phrase_maps.js` is a separate, hand-maintained data file (`translate()`
+checks it *before* `compiled_dict.json` in the resolution cascade) — its
+values were never re-synced when Claude A superseded the corresponding
+`master_dictionary.json` entries on 2026-08-01. Confirmed via a live native
+example (`Ka·dinga` vs `Ka·ding·a` for "laugh"): `phrase_maps.js` had the
+wrong, already-flagged-SUPERSEDED value independently of
+`master_dictionary.json`, meaning **fixing the `prepare-data.js` precedence
+bug alone will not fix `phrase_maps.js`-covered words** — they're a fully
+separate override layer with its own stale data.
+
+Cross-referenced all 78 `phrase_maps:*` entries already baselined in
+`src/data/known_cross_source_conflicts.json` (Check F) against the 337-key
+SUPERSEDED-wrong list above: 5 more hits — `forest`, `some`, `all`, `god`,
+`white`. Fixed all 6 (including `laugh`) directly in `phrase_maps.js`
+(Claude A's own data file, own header attribution — no engine-code
+territory issue). `forest`/`some` had exactly one VERIFIED/HIGH
+replacement each, fixed with full confidence. `all`/`god`/`white` each had
+2-3 VERIFIED synonym candidates with no native tie-breaker on record —
+picked the orthographically-closest match to the legacy spelling as a
+provisional single value (inline-commented as provisional, not asserted as
+a firm linguistic conclusion). No `known_cross_source_conflicts.json`
+change needed — baseline entries are key-presence-only, not value-pinned,
+so they continue to (harmlessly) cover these keys either way.
+
+**This raises the obvious question for Claude B: are there more
+override/cascade layers beyond `phrase_maps.js` and `compiled_dict.json`
+that could be holding stale copies of pre-2026-08-01 SUPERSEDED data?**
+Worth a full audit of every runtime-cascade source once the core
+`prepare-data.js` fix lands, not just these two.
