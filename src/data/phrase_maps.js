@@ -166,7 +166,10 @@ export const PHRASE_MAPS = {
   'school': 'Skul',
   'money': 'Tangka',
   'price': 'Dam',
-  'book': 'Ki·tap',
+  'book': 'boi', // corrected 2026-08-07: 'Ki·tap' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'boi', unambiguous
+  'table': 'te·bil', // corrected 2026-08-07: 'Mez' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'te·bil', unambiguous
+  'buy': 'bre·a', // corrected 2026-08-07: 'Brea' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'bre·a', unambiguous
+  'door': 'do·oga', // corrected 2026-08-07: 'Do·ga' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'do·oga', unambiguous
   'god': 'i·sol', // corrected 2026-08-06: 'Isol' was flagged SUPERSEDED; 2 VERIFIED/HIGH candidates exist (dok·gip·a / i·sol), picked i·sol as closest orthographic match to the legacy spelling -- provisional, see docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md
   'church': 'Gilja·nok',
   'love': 'Ka·saa',
@@ -300,7 +303,7 @@ export const PHRASE_MAPS = {
   'stand': 'Chadenga',
   'laugh': 'Ka·dinga',
   'cry': 'Grap·a',
-  'buy': 'Brea',
+  'buy': 'bre·a', // corrected 2026-08-07 (duplicate key, see 'buy' entry above for citation)
   'sell': 'Pala',
   'come': 'Re·ba·a',
   'go': 'Re·anga',

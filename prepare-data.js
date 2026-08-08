@@ -53,6 +53,22 @@ function normalizeFile(filePath) {
         // over untagged or explicitly-UNVERIFIED siblings sharing its key.
         const notes = item.notes || '';
         const isVerified = /^verified\/high\b/i.test(notes);
+        // CRITICAL FIX (2026-08-07, Claude B, per Claude A's handoff
+        // docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md):
+        // a `SUPERSEDED —` notes entry means Claude A already determined
+        // this value is wrong and is retained only for citation history —
+        // it must never enter pickPrimary's candidate pool at all. Without
+        // this, isRealCaseCollision (a real, narrow, correct heuristic for
+        // the book/teacher register-variant pattern) can't tell "this is
+        // the neutral default" from "this was explicitly flagged wrong",
+        // and 334 confirmed-wrong values were shipping to compiled_dict.json
+        // as a result. Filtering here — the same place isVariant/isVerified
+        // are already parsed from notes — means every downstream branch
+        // (isRealCaseCollision, VERIFIED-neutral, last-write-wins) simply
+        // never sees a SUPERSEDED candidate, with no new special-case
+        // logic needed in pickPrimary itself.
+        const isSuperseded = /^superseded\b/i.test(notes);
+        if (isSuperseded) return;
         if (eng) addValue(eng, garo, isVariant, isVerified);
       });
     } else if (typeof parsed === 'object' && parsed !== null) {
@@ -149,9 +165,6 @@ function pickPrimary(entries, key) {
   const variants = entries.filter(e => e.isVariant);
   const isRealCaseCollision = neutral.length === 1 && variants.length > 0 &&
     variants.some(v => v.rawKey !== neutral[0].rawKey);
-  if (isRealCaseCollision) {
-    return { value: neutral[0].v, verifiedSelection: false };
-  }
 
   // RC-CANDIDATE-036 follow-up (2026-08-01, traced from the "answer"/
   // "to answer"/"one person" investigation): master's own internal
@@ -212,9 +225,34 @@ function pickPrimary(entries, key) {
   // among ONLY the master candidates, so a tie between multiple master
   // entries for one key still resolves exactly as it did before (no new
   // behavior introduced beyond "master beats non-master").
+  //
+  // PROMOTED ABOVE isRealCaseCollision (2026-08-07, Claude B — found while
+  // verifying the SUPERSEDED-filter fix against the full 337-key handoff
+  // list in docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md:
+  // only 43/337 kesy actually resolved by the SUPERSEDED filter alone).
+  // Root cause: garo_dictionary.json (source 0) independently duplicates
+  // many of the same wrong values master's SUPERSEDED rows flag — that
+  // source has no notes field at all, so it can never be tagged
+  // SUPERSEDED, and its untagged duplicate kept triggering
+  // isRealCaseCollision and winning even after master's own SUPERSEDED
+  // candidate was correctly filtered out (confirmed live: "pineapple",
+  // "book", "banana", "teacher", ~290 others). Master-preference now runs
+  // before isRealCaseCollision gets a turn, so any post-SUPERSEDED-filter
+  // master answer wins outright — matching this exact comment's own
+  // stated premise that master is canonical. This does not change
+  // behavior for keys where master has no entry at all (masterEntries
+  // stays empty, falls through to isRealCaseCollision/last-write-wins
+  // exactly as before) — including the original book/teacher pattern,
+  // which is itself now master-sourced post-SUPERSEDED-filter and so
+  // resolves via this same branch, not via isRealCaseCollision, but to
+  // the identical value as before (verified live).
   const masterEntries = entries.filter(e => e.source === 2);
   if (masterEntries.length) {
     return { value: masterEntries[masterEntries.length - 1].v, verifiedSelection: false };
+  }
+
+  if (isRealCaseCollision) {
+    return { value: neutral[0].v, verifiedSelection: false };
   }
 
   return { value: entries[entries.length - 1].v, verifiedSelection: false };

@@ -3571,3 +3571,22 @@ Project Owner relay, Thangseng direct:
 Remaining no-confidence-tag orthography pairs from the same 2026-08-06
 sweep, still open: joking, at, bright, sad, "praise the lord",
 direct/straight.
+
+## Runtime bug found during NV-067 verification (2026-08-08, Claude A -> Claude B handoff)
+
+`compiled_dict.json['smile']` ships **`ka·ding·sim·ik·a`** — the
+never-native-confirmed candidate — instead of the VERIFIED/HIGH
+`Ka·dingsmita`. Root cause is `prepare-data.js`'s `masterEntries`
+(master-preference) branch in `pickPrimary()`: it ignores `isVariant`
+entirely, so a lone `variant/VERIFIED/HIGH`-tagged master entry under
+key "smile" (from `english: "Smile"`) wins outright, and the bare-
+infinitive alias step (`"to smile"` -> `"smile"`) never fires because
+it only fills a *missing* key, not an existing variant-shadowed one.
+This is the same failure shape as the SUPERSEDED-precedence bug
+(`9b5d61b`) but for `isVariant`, not `isSuperseded` — master-preference
+should likely also skip variant-tagged-only candidate sets, or the
+alias step should run before master-preference resolves a variant-only
+key. Not fixed here — engine logic, Claude B's territory. The
+underlying data is correct and unambiguous (`Ka·dingsmita` VERIFIED/HIGH,
+`ka·ding·sim·ik·a` explicitly flagged unconfirmed) — this is purely a
+compile-precedence bug, not a linguistic question.

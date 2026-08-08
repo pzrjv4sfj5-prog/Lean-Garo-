@@ -475,7 +475,7 @@
     "english": "goat",
     "garo": "Do·bok",
     "category": "animals",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'goat' has VERIFIED/HIGH form(s) ['do·omok']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "RECONFIRMED — direct native correction, 2026-08-07: overrides prior corpus-internal-audit SUPERSEDED flag (2026-08-01). Native confirms 'Do·bok'/'dobok' as final/correct for goat."
   },
   {
     "english": "horse",
@@ -14826,7 +14826,7 @@
   },
   {
     "english": "puppy",
-    "garo": "achak bisa",
+    "garo": "achak bi·sa",
     "category": "general"
   },
   {
@@ -14866,7 +14866,7 @@
   },
   {
     "english": "kid",
-    "garo": "dobok bisa",
+    "garo": "dobok bi·sa",
     "category": "general"
   },
   {
@@ -15576,7 +15576,7 @@
   },
   {
     "english": "this goat kid is ours",
-    "garo": "Ia dobok bisa chingni ong.a",
+    "garo": "Ia dobok bi·sa chingni ong.a",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -15684,7 +15684,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: 'bi·sa' confirmed as the universal word for child, same english key 'child' has VERIFIED form 'Bi·sa'. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "coming",
@@ -16708,7 +16708,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": "AMBIGUOUS/HIGH v:Bi·sa / Degipa"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: was AMBIGUOUS/HIGH v:Bi·sa / Degipa; resolved — 'bi·sa' confirmed as the universal word for child, same english key 'child' has VERIFIED form 'Bi·sa'. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "Chili",
@@ -17876,7 +17876,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: native gave final confirmation 'goat'='Do·bok'/'dobok', overriding this entry's prior variant/VERIFIED/HIGH tag. Not authoritative for compile; retained per citation discipline, not deleted. May still be a valid register/dialect variant rather than an outright error — flagging for Claude A review, not asserting this form is definitively wrong."
   },
   {
     "english": "God",
@@ -18320,7 +18320,7 @@
   },
   {
     "english": "Kid (young goat)",
-    "garo": "Dobok bisa",
+    "garo": "Dobok bi·sa",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -47745,7 +47745,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/200sentences"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: 'de' as child superseded by 'bi·sa' (universal rule, native-confirmed). Runtime-authoritative form now 'Nang·o bi·sarang dongama?' in corrections.json. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "I have two children",
@@ -47753,7 +47753,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/200sentences"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: 'de' as child superseded by 'bi·sa' (universal rule, native-confirmed); word order also revised to noun+classifier+count. Runtime-authoritative form now 'Ang·o bi·sa sak·gni donga' in corrections.json. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "I am married",

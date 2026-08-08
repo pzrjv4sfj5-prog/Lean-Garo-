@@ -53016,5 +53016,31 @@
     },
     "promotion_status": "duplicate-skip",
     "promoted_date": null
+  },
+  {
+    "id": "PL-0002014",
+    "english": "young offspring",
+    "garo": "dambe bi·sa",
+    "category": "animals",
+    "pos": null,
+    "classifier": null,
+    "notes": "Native clarification, this session (2026-08-07): general/generic term for young one/newborn of any species, distinct from the species-specific bi·sa compounds (dobok bi·sa=kid/goat, menggo bi·sa=kitten, matchu bi·sa=calf, achak bi·sa=puppy).",
+    "provenance": {
+      "source": "Direct native chat clarification, 2026-08-07 session",
+      "source_page": null,
+      "import_batch": "IMPORT-2026-08-07T16-05-18-374Z",
+      "import_date": "2026-08-07T16:05:18.395Z",
+      "ocr_version": null
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
   }
 ]

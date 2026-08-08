@@ -98,7 +98,7 @@ const REGRESSION_CASES = [
   // RC-002: stative-locative "in/on/at" now maps to ·o instead of the
   // default object marker ·ko in the SOV grammar-assembly fallback.
   { in: 'I am lying in bed', expectGaro: 'Anga palang·o', expectMethod: ['grammar-assembly'] },
-  { in: 'I put the book on the table', expectGaro: 'Anga mez·o ron·a', expectMethod: ['grammar-assembly'] },
+  { in: 'I put the book on the table', expectGaro: 'Anga te·bil·o ron·a', expectMethod: ['grammar-assembly'] },
   // RC-003: "down" excluded from the verb-search loop so it no longer
   // collides with "lying down" (was producing invalid "Anga Ka·ma" as if
   // Ka·ma were a conjugated verb form). Not a correct full translation of
@@ -345,7 +345,7 @@ test('RC-CANDIDATE-010: NP subject (article+noun+copula) reaches grammar-assembl
   const { translate } = await import('../../src/translationEngine.js');
   const r1 = await translate('the book is on the table');
   assert.equal(r1.method, 'grammar-assembly');
-  assert.equal(r1.garo, 'Ki·tap mez·o');
+  assert.equal(r1.garo, 'boi te·bil·o');
   const r2 = await translate('the market is far');
   assert.equal(r2.method, 'grammar-assembly');
   assert.equal(r2.garo, 'bajal Chel·a');
@@ -689,19 +689,19 @@ test('RULE-040: "turn right" phrase correction is unaffected by the sense split'
 // duplicate rows (e.g. "watch", "call" — no case variation, and the
 // "neutral" row's own data doesn't match its own notes) are deliberately
 // excluded and keep the old last-write-wins behavior; see prepare-data.js.
-test('RC-CANDIDATE-027: "table" resolves to neutral default Mez, not the variant te·bil', async () => {
+test('RC-CANDIDATE-027 -> SUPERSEDED-audit update (2026-08-07): "table" resolves to VERIFIED te·bil, not the now-superseded Mez', async () => {
   const { lookup } = await import('../../src/lookupEngine.js');
-  assert.equal(lookup('table').garo, 'Mez');
+  assert.equal(lookup('table').garo, 'te·bil');
 });
 
-test('RC-CANDIDATE-027: "buy" resolves to neutral default Brea, not the variant bre·a', async () => {
+test('RC-CANDIDATE-027 -> SUPERSEDED-audit update (2026-08-07): "buy" resolves to VERIFIED bre·a, not the now-superseded Brea', async () => {
   const { lookup } = await import('../../src/lookupEngine.js');
-  assert.equal(lookup('buy').garo, 'Brea');
+  assert.equal(lookup('buy').garo, 'bre·a');
 });
 
-test('RC-CANDIDATE-027: "door" resolves to neutral default Do·ga, not the variant do·oga', async () => {
+test('RC-CANDIDATE-027 -> SUPERSEDED-audit update (2026-08-07): "door" resolves to VERIFIED do·oga, not the now-superseded Do·ga', async () => {
   const { lookup } = await import('../../src/lookupEngine.js');
-  assert.equal(lookup('door').garo, 'Do·ga');
+  assert.equal(lookup('door').garo, 'do·oga');
 });
 
 test('RC-CANDIDATE-027: same-case duplicates ("watch") are unaffected, old behavior preserved', async () => {
