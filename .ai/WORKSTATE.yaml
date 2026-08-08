@@ -1394,6 +1394,55 @@ claude_a:
     test-dictionary 8061/8061, repository-intelligence 0 new violations
     all checks, unit tests 177/177. Manually verified laugh/laughter/
     smile/smiled/"why do you laugh?" all resolve to correct values.
+  latest_9: >-
+    2026-08-08 (new session, resumed clean, then two Project Owner
+    correction rounds, NV-067/068/069 — see
+    docs/THANGSENG_NATIVE_VALIDATION.md for full detail). NV-067: mouth=
+    Ku·sik VERIFIED/HIGH (Kusik superseded), smiled reconfirmed
+    unchanged. NV-068: corrected a wrong dambe/bi·sa framing that had
+    already been relayed to Claude B (2026-08-07 raka-fix commit) — the
+    framing implied bi·sa itself meant "young one"; corrected to two
+    distinct morphemes (dambe=young, bi·sa=offspring). Added "young
+    goat"=Do·bok dambe (this later turned out to be my own error, see
+    NV-069). NV-069 (Project Owner correction, same-session): deleted
+    "young goat" entirely (native: no such concept) and deleted
+    "young"=pi·sa (confirmed wrong, not a variant) — both removed
+    outright per explicit PO instruction, not just SUPERSEDED-tagged.
+    Final closures: young=dambe (universal) VERIFIED/HIGH;
+    children=Bi·sarang (plural, new) VERIFIED/HIGH, old bare
+    children=Bi·sa superseded; calf=matchu bi·sa (new) VERIFIED/HIGH,
+    ba·sur/ma·su gen·da superseded; puppy=achak bi·sa tagged
+    VERIFIED/HIGH final; book=Ki·tap RECONFIRMED (reverses the
+    2026-08-01 corpus-audit call that had promoted "boi" instead), boi
+    now superseded, phrase_maps.js synced; table=te·bil unchanged
+    (already correct); new sentence "the book is on the table"=Ki·tap
+    tebilo ong·a; "Kid (young goat)" gloss corrected to "Kid (goat
+    child)", value unchanged. final_entries.json (orphaned, non-pipeline)
+    synced in parallel for full-repo consistency per explicit
+    instruction. known_dictionary_conflicts.json +children (genuine new
+    multi-value key). PL-0002014 approved+promoted (no longer pending).
+    Fixed 1 stale test (RC-CANDIDATE-010) that hardcoded the old
+    boi/te·bil·o grammar-assembly output — "the book is on the table"
+    now correctly resolves via exact-phrase with the native-confirmed
+    value instead, a genuine improvement not a regression. Full sweep
+    of all 23+ bi·sa/dambe/young/calf/book/table rows across every
+    source file (master_dictionary.json, pending_lexicon.json,
+    corrections.json, phrase_maps.js, garo_dictionary.json,
+    final_entries.json, compiled_dict.json) confirmed zero exact-key
+    duplicates remain — all multi-value keys are legitimate
+    VERIFIED-vs-SUPERSEDED citation pairs. Two concurrent Claude B
+    pushes merged cleanly mid-session (9b5d61b/critical SUPERSEDED-
+    precedence fix, then Item 2 normalizeGaro() ship) — compiled_dict.
+    json/compiled_dict_alternates.json regenerated from merged source
+    each time, everything else auto-merged clean. Confirmed live via
+    Claude B's SUPERSEDED-precedence fix: "pineapple" now correctly
+    compiles to "a·na·ros". 8061/8061 dictionary entries, 196/196 unit
+    tests, repository-intelligence.js 0 new violations all checks.
+    Still open, unrelated to this session's scope, handed to Claude B
+    (NV-067): compiled_dict.json["smile"] still ships the unconfirmed
+    variant ka·ding·sim·ik·a instead of VERIFIED/HIGH Ka·dingsmita —
+    master-preference in pickPrimary() ignores isVariant; not touched
+    by Claude B's Item 2 work this session, still needs a fix.
 
 claude_b:
   status: active

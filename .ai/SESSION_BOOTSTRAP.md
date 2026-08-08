@@ -1464,6 +1464,17 @@ Expected as of `afe6a74`: build clean, 106/106 regression tests passing.
   style snapshot file for current priorities — that pattern already
   produced 3 stale, misleadingly-named docs (see joint work package item
   A5 above). Update "Current joint work package" in this file instead.
+- Do not trust a Project Owner-relayed generalized example list at face
+  value without cross-checking already-VERIFIED corpus entries first —
+  2026-08-08 NV-068/069: a relayed "ANIMAL COMPOUND PATTERN" example
+  ("a·chak bi·sa = calf") conflicted with already-VERIFIED achak=dog and
+  was correctly not acted on; but Claude A's own prior-turn extrapolation
+  from a goat-specific transcript to a general "young goat" headword
+  (added in NV-068) turned out equally ungrounded and had to be deleted
+  in NV-069. Only the verbatim quoted transcript is ground truth; PO/
+  relay-authored summaries and pattern generalizations, and Claude A's
+  own extrapolations from them, both need corpus cross-checking before
+  writing to master_dictionary.json — see NV-069 for the full case study.
 
 ## Claude A priority framework (adopted 2026-07-08, Project Owner)
 Standing priority order for Claude A's linguistic work, P0 highest:
