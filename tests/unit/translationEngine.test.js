@@ -195,7 +195,7 @@ for (const c of REGRESSION_CASES) {
 // Protects against accidental corruption of the JSON file specifically. ---
 test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
   const { default: irregularVerbs } = await import('../../src/data/irregular_verbs.json', { with: { type: 'json' } });
-  assert.equal(Object.keys(irregularVerbs).length, 50, 'entry count: 49 from the original extraction + "has" added 2026-07-13 (suppletive form of "have", same confirmed value "donga")');
+  assert.equal(Object.keys(irregularVerbs).length, 51, 'entry count: 49 from the original extraction + "has" added 2026-07-13 (suppletive form of "have", same confirmed value "donga") + "smiled" added 2026-08-06 (Ka·dingsmitaha, confirmed same date as the Ka·dingsmita "smile" root)');
   assert.equal(irregularVerbs['went'], 're·anga');
   assert.equal(irregularVerbs['ate'], 'cha·aha');
   assert.equal(irregularVerbs['eaten'], 'cha·manaha');
@@ -524,7 +524,7 @@ test('RC-CANDIDATE-025: bare "console" is reachable, not [UNKNOWN] passthrough',
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('console');
   assert.notEqual(r.method, 'passthrough');
-  assert.equal(r.garo, 'Ka-dimea');
+  assert.equal(r.garo, 'Ka·dimea');
 });
 
 test('RC-CANDIDATE-025: verb present in sentence assembly for a "to X"-only headword ("bind")', async () => {
@@ -536,7 +536,7 @@ test('RC-CANDIDATE-025: verb present in sentence assembly for a "to X"-only head
 test('RC-CANDIDATE-025: verb present in sentence assembly for a "to X"-only headword ("console")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('you console the child');
-  assert.ok(r.garo.includes('Ka-dimea'), `verb must not be silently dropped, got: ${r.garo}`);
+  assert.ok(r.garo.includes('Ka·dimea'), `verb must not be silently dropped, got: ${r.garo}`);
 });
 
 test('RC-CANDIDATE-025 regression guard: bare-infinitive aliasing never overwrites an existing independently-chosen bare-form entry ("hang")', async () => {
@@ -549,12 +549,15 @@ test('RC-CANDIDATE-025 regression guard: bare-infinitive aliasing never overwrit
 // "angry" was a truncated fragment (ka·o, not a complete word) instead of
 // the VERIFIED/HIGH master_dictionary.json entry (ka·o·nang·a); "smile"
 // was silently overridden to laugh's word (Ka·dinga) instead of its own
-// VERIFIED entry (ka·ding·sim·ik·a). Both fixes restore the existing
-// VERIFIED dictionary value already established elsewhere in the repo —
-// no new linguistic content chosen here. The separate open question of
-// whether the newly-imported "Ka-a chakna amja" is a legitimate
-// distinct-register synonym for angry is NOT resolved by this fix and is
-// left for Claude A.
+// VERIFIED entry. That VERIFIED entry was itself provisional
+// (ka·ding·sim·ik·a) until 2026-08-06, when the Project Owner relayed a
+// direct native answer confirming "smile" = Ka·dingsmita and that
+// Ka·ding·a (used for both the old "laugh" and "smile" candidates before
+// this session) was wrong for both. Both fixes below restore the
+// current VERIFIED dictionary value — no new linguistic content chosen
+// here. The separate open question of whether the newly-imported
+// "Ka·a chakna amja" is a legitimate distinct-register synonym for angry
+// is NOT resolved by this fix and is left for Claude A.
 
 test('corrections.json: "angry" resolves to the VERIFIED entry, not the truncated fragment', async () => {
   const { translate } = await import('../../src/translationEngine.js');
@@ -565,7 +568,7 @@ test('corrections.json: "angry" resolves to the VERIFIED entry, not the truncate
 test('corrections.json: "smile" resolves to its own word, not to laugh', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('she smiles');
-  assert.ok(r.garo.includes('ka·ding·sim·ik·a'), `must use smile's own word, got: ${r.garo}`);
+  assert.ok(r.garo.includes('ka·dingsmita'), `must use smile's own word, got: ${r.garo}`);
 });
 
 // --- RC-CANDIDATE-026: silent-e "+s" verb stemming bug. Found testing

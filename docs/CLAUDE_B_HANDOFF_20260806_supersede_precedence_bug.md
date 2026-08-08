@@ -145,3 +145,30 @@ override/cascade layers beyond `phrase_maps.js` and `compiled_dict.json`
 that could be holding stale copies of pre-2026-08-01 SUPERSEDED data?**
 Worth a full audit of every runtime-cascade source once the core
 `prepare-data.js` fix lands, not just these two.
+
+## Update, same day — source-level cleanup for the "laugh"/"smile" cluster specifically, plus a repo-wide hyphen→raka pass
+
+The Project Owner directed Claude A to eliminate the wrong `Ka·ding·a`
+entry entirely (not just SUPERSEDED-mark it) once native confirmation
+made clear it was wrong for *both* "laugh" and "smile" candidates it had
+been used for. Traced it to source: `garo_dictionary.json` — a live
+compile-pipeline input (`dict1` in `prepare-data.js`) — had 4 raw
+`Ka·ding·a` entries, almost certainly the original entry point for this
+bug into the corpus. Removed/corrected all 4, plus 3 related `smile`
+entries in the same file, plus 1 in the orphaned (non-pipeline)
+`final_entries.json`. Combined with the `master_dictionary.json` and
+`phrase_maps.js`/`corrections.json` fixes from earlier, `Ka·ding·a` is
+now at zero occurrences anywhere in the repo's live data.
+
+Separately, the Project Owner also authorized the full hyphen→raka
+conversion flagged earlier as a known-but-unauthorized gap (328
+entries never received the one-time 2026-06-18 global conversion).
+Executed repo-wide: 327 `master_dictionary.json` entries + 332
+`pending_lexicon.json` promotion records converted and kept in sync.
+This doesn't change the precedence-bug diagnosis above (that's still
+`prepare-data.js`'s `pickPrimary()` logic, still Claude B's fix to make)
+but does substantially shrink its blast radius — a large share of the
+337 affected keys were legacy-vs-corrected pairs that differed by
+exactly this hyphen/raka distinction, so several of the underlying
+SUPERSEDED entries themselves are now cleaner even before the
+precedence fix lands.
