@@ -1,5 +1,5 @@
 repository:
-  head: 27df4fd
+  head: a6adbde
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -1456,7 +1456,23 @@ claude_b:
     confirmed via clean `git diff --stat` after a fresh prepare-data.js
     run. vite build still fails in this sandbox (vite not installed) —
     same pre-existing environment gap as every prior session, not
-    re-flagged as new. Pushed via session-supplied PAT, inline in the
+    re-flagged as new. Mid-session (after this entry was first drafted),
+    origin advanced 3 commits (Claude A: NV-067 smiled/mouth
+    reconfirmation, a merge of this session's own prior
+    SUPERSEDED-precedence fix, NV-068 dambe/bi·sa semantic correction) —
+    merged cleanly (a6adbde), zero conflicts outside the two generated
+    compiled_dict.json/compiled_dict_alternates.json files, both
+    regenerated from the merged source via prepare-data.js and confirmed
+    byte-identical to git's own auto-merge via a clean `git diff
+    --stat`. Full re-verification post-merge: 196/196 unit tests,
+    test-dictionary.js 8060/8060, repository-intelligence.js 0 new
+    violations all checks. **New item surfaced by Claude A's own
+    a6fda30, NOT fixed this session — out of Item 2's scope, flagged not
+    silently carried:** compiled_dict.json['smile'] ships the
+    unconfirmed variant instead of VERIFIED/HIGH Ka·dingsmita because
+    master-preference in prepare-data.js's pickPrimary ignores
+    isVariant — Claude A's own handoff, addressed to Claude B, still
+    open. Pushed via session-supplied PAT, inline in the
     push URL only, never persisted to git config — confirmed clean via
     grep after push.
 
