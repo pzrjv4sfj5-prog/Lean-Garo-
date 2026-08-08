@@ -303,7 +303,6 @@ export const PHRASE_MAPS = {
   'stand': 'Chadenga',
   'laugh': 'Ka·dinga',
   'cry': 'Grap·a',
-  'buy': 'bre·a', // corrected 2026-08-07 (duplicate key, see 'buy' entry above for citation)
   'sell': 'Pala',
   'come': 'Re·ba·a',
   'go': 'Re·anga',
