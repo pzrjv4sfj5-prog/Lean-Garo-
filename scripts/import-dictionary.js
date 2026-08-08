@@ -53,6 +53,69 @@ export function normalize(s) {
   return (s || '').toString().toLowerCase().trim();
 }
 
+// Item 2 — canonical Garo near-duplicate comparison key. Compare-only:
+// NEVER used to overwrite, modify, or replace stored Garo text, and
+// deliberately looser than normalize()/the exact-duplicate check above,
+// which stay authoritative for actual conflict/dup classification.
+// Ruleset (Claude A, 2026-08-08 — supersedes/retires
+// claude-d-preflight.js's prior ad hoc normalizeGaroLoose()):
+//   1. Remove parenthetical "(...)" OCR/pronunciation glosses entirely
+//      — that text is explanatory metadata, not part of the Garo
+//      lexical value, and must be excluded from comparison rather than
+//      normalized itself.
+//   2. Strip raka dots (·).
+//   3. Strip hyphens (-).
+//   4. Collapse consecutive whitespace.
+//   5. Trim leading/trailing whitespace.
+//   6. Case-fold to lowercase.
+//   7. Preserve apostrophes (') exactly — confirmed load-bearing, not
+//      noise: docs/GRAMMAR_RAKA_RULE_CONFIRMED_20260626.md's `cha'a`
+//      example shows the raka itself can surface as an apostrophe, so
+//      stripping it here would erase a real phonetic distinction rather
+//      than normalize away formatting noise.
+export function normalizeGaro(s) {
+  return (s || '')
+    .toString()
+    .replace(/\([^)]*\)/g, '')
+    .replace(/·/g, '')
+    .replace(/-/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+// Global (english-independent) index of production Garo values keyed by
+// normalizeGaro(), for near-duplicate flagging at import- and
+// promotion-time. Deliberately separate from buildExistingIndex() above
+// (which is english-keyed and exact-match, and stays the authoritative
+// conflict/dup signal) — this index exists purely to raise
+// near_duplicate warnings, never to skip, merge, or resolve anything.
+export function buildNormalizedGaroIndex(masterDictionaryPath = 'master_dictionary.json') {
+  const existing = loadJSON(masterDictionaryPath);
+  const byNormGaro = new Map();
+  for (const e of existing) {
+    const raw = (e.garo || '').trim();
+    if (!raw) continue;
+    const norm = normalizeGaro(raw);
+    if (!norm) continue;
+    if (!byNormGaro.has(norm)) byNormGaro.set(norm, []);
+    byNormGaro.get(norm).push({ english: e.english, garo: raw });
+  }
+  return byNormGaro;
+}
+
+// Given a raw Garo value and a pre-built buildNormalizedGaroIndex()
+// result, returns near-duplicate matches (same normalized key, genuinely
+// different raw spelling) or an empty array. Excludes exact raw-string
+// matches — those are handled by the authoritative exact-duplicate path
+// already and shouldn't double-report as "near" duplicates too.
+export function findNearDuplicates(rawGaro, normGaroIndex) {
+  const garo = (rawGaro || '').trim();
+  const norm = normalizeGaro(garo);
+  if (!norm) return [];
+  return (normGaroIndex.get(norm) || []).filter(m => m.garo !== garo);
+}
+
 export function loadJSON(p, fallback = null) {
   if (!fs.existsSync(p)) {
     if (fallback !== null) return fallback;
@@ -139,6 +202,7 @@ function main() {
   }
 
   const existingByKey = buildExistingIndex('master_dictionary.json');
+  const normGaroIndex = buildNormalizedGaroIndex('master_dictionary.json');
   const pendingLexicon = loadJSON('src/data/pending_lexicon.json', []);
   const pendingKeys = buildPendingKeys('src/data/pending_lexicon.json');
 
@@ -187,6 +251,18 @@ function main() {
         conflictDetails = [...existingValues];
       }
 
+      // Item 2 — near-duplicate flag. Compare-only, additive, and
+      // completely independent of conflictType above: an entry can be
+      // "clean" by exact-match rules and still get flagged here (e.g.
+      // it normalizes the same as an existing production headword OCR'd
+      // with different raka/hyphen/parenthetical-gloss formatting).
+      // Never skips, merges, or auto-resolves — Claude A's call during
+      // review, same as any other conflict field.
+      const nearDupMatches = findNearDuplicates(garo, normGaroIndex);
+      const nearDuplicate = nearDupMatches.length
+        ? { normalized_key: normalizeGaro(garo), matches: nearDupMatches }
+        : null;
+
       toStage.push({
         id: idFor(idCounter++),
         english: entry.english.trim(),
@@ -207,6 +283,7 @@ function main() {
         reviewed_by: null,
         reviewed_date: null,
         conflict: { type: conflictType, details: conflictDetails },
+        near_duplicate: nearDuplicate,
         promotion_status: 'pending',
         promoted_date: null,
       });
@@ -221,6 +298,7 @@ function main() {
   const withinBatchCount = toStage.filter(e => e.conflict.type === 'within-batch').length;
   const existingConflictCount = toStage.filter(e => e.conflict.type === 'existing-conflict').length;
   const cleanCount = toStage.filter(e => e.conflict.type === null).length;
+  const nearDuplicateCount = toStage.filter(e => e.near_duplicate !== null).length;
 
   let report = `# Dictionary Import Report — ${ts}\n`;
   report += `Source: \`${inputPath}\`  \nBatch: \`${batchId}\`  \nMode: ${apply ? 'APPLY (staged to Pending Lexicon)' : 'DRY RUN'}\n\n`;
@@ -233,6 +311,7 @@ function main() {
   report += `| Staged to Pending Lexicon — within-batch conflict | ${withinBatchCount} |\n`;
   report += `| Staged to Pending Lexicon — conflicts with existing production entry | ${existingConflictCount} |\n`;
   report += `| **Total staged to Pending Lexicon** | **${toStage.length}** |\n`;
+  report += `| Near-duplicate flag (Item 2, advisory — normalizes same as an existing production entry) | ${nearDuplicateCount} |\n`;
   report += `| Promoted to production | 0 (this tool never promotes — see scripts/promote-lexicon.js) |\n\n`;
 
   if (malformed.length) {
@@ -245,7 +324,10 @@ function main() {
     report += `## Staged for Claude A review (pending IDs)\n`;
     for (const e of toStage) {
       const flag = e.conflict.type ? ` — **${e.conflict.type}**: ${JSON.stringify(e.conflict.details)}` : '';
-      report += `- \`${e.id}\` "${e.english}" → "${e.garo}"${flag}\n`;
+      const nearDupFlag = e.near_duplicate
+        ? ` — **near_duplicate** (advisory): ${JSON.stringify(e.near_duplicate.matches)}`
+        : '';
+      report += `- \`${e.id}\` "${e.english}" → "${e.garo}"${flag}${nearDupFlag}\n`;
     }
     report += '\n';
   }

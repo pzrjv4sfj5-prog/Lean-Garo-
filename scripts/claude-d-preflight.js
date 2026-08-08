@@ -18,21 +18,25 @@
  * the draft spec's Section 3 describes "exact duplicate" as garo
  * string-equality "after stripping -, ·, spaces, lowercasing — same
  * normalization already used for the raka/case-only duplicate check in
- * the batch-review workflow." That function does not exist anywhere in
- * this repository — import-dictionary.js's own exact-duplicate check
- * (which this script reuses directly, not a reimplementation) compares
- * garo values with a bare `.trim()`, no raka/dash/space stripping at
- * all. Implementing the draft's looser rule here would mean this
- * script's "exact duplicate" classification could disagree with what
- * import-dictionary.js actually does downstream — exactly the kind of
- * drift the contract's own Section 7 says is worth flagging. Since
+ * the batch-review workflow." import-dictionary.js's own exact-duplicate
+ * check (which this script reuses directly, not a reimplementation)
+ * compares garo values with a bare `.trim()`, no raka/dash/space
+ * stripping at all. Implementing the draft's looser rule here would mean
+ * this script's "exact duplicate" classification could disagree with
+ * what import-dictionary.js actually does downstream — exactly the kind
+ * of drift the contract's own Section 7 says is worth flagging. Since
  * this script's classification is explicitly advisory (Section 7:
  * "Claude D's pre-flight is an optimization, not a trust boundary" —
  * import-dictionary.js re-checks everything independently regardless),
  * matching production's real behavior exactly was judged the safer
- * default. If Claude A wants a looser raka-aware fuzzy check, it
- * belongs under "possible_conflict" as an ADDITIONAL signal, not as a
- * redefinition of "exact duplicate" — flag it back if so.
+ * default. The looser raka-aware fuzzy check the draft was reaching for
+ * now exists as import-dictionary.js's normalizeGaro()/Item 2 (2026-08-08)
+ * — used here purely as an ADDITIONAL advisory signal (see
+ * findRakaVariantMatch/findGaroKeyedNearDuplicates below), never as a
+ * redefinition of "exact duplicate." This script previously had its own
+ * local normalizeGaroLoose() for the same purpose; retired in favor of
+ * the canonical function to close a drift risk (two independently
+ * maintained near-dup definitions could quietly diverge over time).
  *
  * Also: "existing_source" in the manifest is null/placeholder for the
  * vast majority of production entries. As of 2026-07-22, 0 of 8,535
@@ -66,6 +70,7 @@
 import fs from 'fs';
 import {
   normalize,
+  normalizeGaro,
   loadJSON,
   buildExistingIndex,
   buildPendingKeys,
@@ -172,16 +177,18 @@ export function classifyEntry(entry, existingByKey, pendingKeys) {
  * Claude A separate "probably just formatting, confirm and skip" from
  * "genuinely new word" without this script silently deciding either
  * way — it only ever suggests, never merges or drops an entry.
+ *
+ * Uses the canonical normalizeGaro() from import-dictionary.js (Item 2,
+ * 2026-08-08) — see that file for the full ruleset (strips raka dots,
+ * hyphens, and parenthetical OCR glosses; preserves apostrophes;
+ * case-folds). Retired this file's own local normalizeGaroLoose() in
+ * favor of it.
  */
-export function normalizeGaroLoose(s) {
-  return (s || '').toString().toLowerCase().replace(/[·\-\s]/g, '');
-}
-
 function findRakaVariantMatch(incomingGaro, existingValues) {
   if (!existingValues) return null;
-  const loose = normalizeGaroLoose(incomingGaro);
+  const loose = normalizeGaro(incomingGaro);
   for (const v of existingValues) {
-    if (v !== incomingGaro && normalizeGaroLoose(v) === loose) return v;
+    if (v !== incomingGaro && normalizeGaro(v) === loose) return v;
   }
   return null;
 }
@@ -198,7 +205,7 @@ function findRakaVariantMatch(incomingGaro, existingValues) {
  * english-keyed exact-duplicate nor within-batch conflict detection
  * ever saw them as related.
  *
- * Groups same-batch entries by normalizeGaroLoose(garo). A group only
+ * Groups same-batch entries by normalizeGaro(garo). A group only
  * gets flagged if it contains 2+ DISTINCT raw garo strings — a group
  * where every row shares one identical raw garo string is normal
  * multi-sense fan-out from a single headword (e.g. "Bitong" ->
@@ -209,7 +216,7 @@ function findRakaVariantMatch(incomingGaro, existingValues) {
 export function findGaroKeyedNearDuplicates(entries) {
   const groups = new Map(); // normalized garo -> Map(raw garo -> [english,...])
   for (const e of entries) {
-    const loose = normalizeGaroLoose(e.garo);
+    const loose = normalizeGaro(e.garo);
     if (!loose) continue;
     if (!groups.has(loose)) groups.set(loose, new Map());
     const rawMap = groups.get(loose);

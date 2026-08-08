@@ -8,9 +8,8 @@ import {
   splitPosMarker,
   checkPageAlreadyProcessed,
   classifyEntry,
-  normalizeGaroLoose,
 } from '../../scripts/claude-d-preflight.js';
-import { buildExistingIndex, buildPendingKeys, normalize } from '../../scripts/import-dictionary.js';
+import { buildExistingIndex, buildPendingKeys, normalize, normalizeGaro } from '../../scripts/import-dictionary.js';
 
 test('splitPosMarker splits a mid-string ".—POS. gloss" marker', () => {
   const r = splitPosMarker('to trust.—n. Hope');
@@ -82,10 +81,12 @@ test('classifyEntry uses exact trim-only garo equality, matching import-dictiona
   assert.equal(r.classification, 'possible_conflict', 'raka-stripped garo must not be treated as an exact duplicate');
 });
 
-test('normalizeGaroLoose strips raka, dashes, spaces, and case for the advisory (not authoritative) variant-detection signal', () => {
-  assert.equal(normalizeGaroLoose('bi·te'), 'bite');
-  assert.equal(normalizeGaroLoose('Bite'), 'bite');
-  assert.equal(normalizeGaroLoose('ra-a bi te'), 'raabite');
+test('normalizeGaro (Item 2, imported from import-dictionary.js) strips raka, hyphens, parenthetical glosses, and case for the advisory (not authoritative) variant-detection signal used here', () => {
+  assert.equal(normalizeGaro('bi·te'), 'bite');
+  assert.equal(normalizeGaro('Bite'), 'bite');
+  assert.equal(normalizeGaro('ra-a bi te'), 'raa bi te', 'hyphens are stripped but whitespace is collapsed, not removed, per the Item 2 spec');
+  assert.equal(normalizeGaro('Bolasari (a middle-sized deciduous tree)'), 'bolasari');
+  assert.equal(normalizeGaro("cha'a"), "cha'a", 'apostrophes must be preserved — they can be a genuine raka realization, not noise');
 });
 
 test('findGaroKeyedNearDuplicates: catches same-headword-different-english near-duplicates (the actual page 31 failure mode)', async () => {
