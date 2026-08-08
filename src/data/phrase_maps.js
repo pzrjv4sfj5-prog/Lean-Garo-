@@ -166,7 +166,7 @@ export const PHRASE_MAPS = {
   'school': 'Skul',
   'money': 'Tangka',
   'price': 'Dam',
-  'book': 'boi', // corrected 2026-08-07: 'Ki·tap' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'boi', unambiguous
+  'book': 'Ki·tap', // RECONFIRMED 2026-08-08: direct native correction reverses the 2026-08-07 fix (which itself reversed 2026-08-01's audit call). 'Ki·tap' confirmed final, 'boi' now SUPERSEDED. See NV-069.
   'table': 'te·bil', // corrected 2026-08-07: 'Mez' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'te·bil', unambiguous
   'buy': 'bre·a', // corrected 2026-08-07: 'Brea' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'bre·a', unambiguous
   'door': 'do·oga', // corrected 2026-08-07: 'Do·ga' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'do·oga', unambiguous

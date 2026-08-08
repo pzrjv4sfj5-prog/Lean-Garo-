@@ -343,9 +343,16 @@ test('phrase_maps.js: 6 dead hortative duplicates remain removed (shadowed by co
 // tested explicitly below to lock in the safe-fallback behavior). ---
 test('RC-CANDIDATE-010: NP subject (article+noun+copula) reaches grammar-assembly', async () => {
   const { translate } = await import('../../src/translationEngine.js');
+  // "the book is on the table" now has a direct native-confirmed exact-
+  // phrase entry (2026-08-08, NV-069: book=Ki·tap reconfirmed, overriding
+  // the earlier 2026-08-01 audit's 'boi' guess) which correctly takes
+  // precedence over the generic grammar-assembly template — a genuine
+  // improvement, not the RC-CANDIDATE-010 mechanism this test targets.
+  // "the market is far" (below) still exercises the actual NP-subject
+  // grammar-assembly path this test is meant to cover.
   const r1 = await translate('the book is on the table');
-  assert.equal(r1.method, 'grammar-assembly');
-  assert.equal(r1.garo, 'boi te·bil·o');
+  assert.equal(r1.method, 'exact-phrase');
+  assert.equal(r1.garo, 'Ki·tap tebilo ong·a');
   const r2 = await translate('the market is far');
   assert.equal(r2.method, 'grammar-assembly');
   assert.equal(r2.garo, 'bajal Chel·a');

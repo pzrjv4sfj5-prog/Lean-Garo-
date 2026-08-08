@@ -1165,7 +1165,7 @@
     "pos": null,
     "category": "education",
     "classifier": null,
-    "notes": "VERIFIED/HIGH v:boi"
+    "notes": "RECONFIRMED/VERIFIED/HIGH — 2026-08-08: native direct confirmation, final. See NV-069."
   },
   {
     "english": "Book",
@@ -1173,7 +1173,7 @@
     "pos": null,
     "category": "education",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — 2026-08-08: native reconfirmed book=Ki·tap. See NV-069, master_dictionary.json."
   },
   {
     "english": "Bottle Gourd",
@@ -5936,7 +5936,7 @@
     "notes": "variant/VERIFIED/HIGH"
   },
   {
-    "english": "Kid (young goat)",
+    "english": "Kid (goat child)",
     "garo": "Dobok bisa",
     "pos": null,
     "category": "phrases",
@@ -16709,7 +16709,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ma˙-su gen-da"
+    "notes": "SUPERSEDED — 2026-08-08: native confirmed calf=matchu bi·sa. See NV-069, master_dictionary.json."
   },
   {
     "english": "calf",
@@ -16717,7 +16717,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED — 2026-08-08: native confirmed calf=matchu bi·sa. See NV-069, master_dictionary.json."
   },
   {
     "english": "call",
@@ -37512,14 +37512,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "young",
-    "garo": "pi˙·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "young men's house",
     "garo": "nok·pan·te",
     "pos": null,
@@ -37662,5 +37654,29 @@
     "category": "health",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH v:bil-ong-a / bil-rak-a / mang-rak-a"
+  },
+  {
+    "english": "calf",
+    "garo": "matchu bi·sa",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — 2026-08-08: native direct confirmation. See NV-069."
+  },
+  {
+    "english": "children",
+    "garo": "Bi·sarang",
+    "pos": null,
+    "category": "family",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — 2026-08-08: native direct confirmation (bi·sa + plural -rang). See NV-069."
+  },
+  {
+    "english": "young",
+    "garo": "dambe",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — 2026-08-08: native direct confirmation, universal. See NV-069."
   }
 ]

@@ -1644,7 +1644,7 @@
     "english": "book",
     "garo": "Ki·tap",
     "category": "education",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'book' has VERIFIED/HIGH form(s) ['boi']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "RECONFIRMED — direct native correction, 2026-08-08 (Project Owner relay, Thangseng direct, from 'the book is on the table' = 'Ki.tap tebilo ong.a'): overrides prior 2026-08-01 corpus-internal-audit SUPERSEDED call. 'Ki·tap' confirmed final for 'book'. See NV-069."
   },
   {
     "english": "axe",
@@ -14827,7 +14827,8 @@
   {
     "english": "puppy",
     "garo": "achak bi·sa",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-08 (Project Owner relay, Thangseng direct): 'achak bi·sa' = puppy (achak=dog + bi·sa=offspring), final. See NV-069."
   },
   {
     "english": "queen",
@@ -15916,7 +15917,8 @@
   {
     "english": "children",
     "garo": "Bi·sa",
-    "category": "family"
+    "category": "family",
+    "notes": "SUPERSEDED — 2026-08-08, Claude A, Project Owner-relayed native correction: plural 'children' = 'Bi·sarang' (bi·sa + plural marker -rang), not bare 'Bi·sa' (which is singular child/offspring). See NV-069."
   },
   {
     "english": "food",
@@ -16468,7 +16470,7 @@
     "pos": null,
     "category": "education",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-08: native confirmed 'book'='Ki·tap' (see that entry), overriding this entry's prior variant/VERIFIED/HIGH tag from the 2026-08-01 corpus-internal audit. Retained per citation discipline, not deleted. See NV-069."
   },
   {
     "english": "Bow",
@@ -18319,12 +18321,12 @@
     "notes": "variant/VERIFIED/HIGH"
   },
   {
-    "english": "Kid (young goat)",
+    "english": "Kid (goat child)",
     "garo": "Dobok bi·sa",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH Gloss corrected 2026-08-08: 'young goat' terminology retired (native: no such concept as 'young goat' distinct from 'kid' in this compound; do·bok dambe entry removed). Value unchanged."
   },
   {
     "english": "King",
@@ -24412,7 +24414,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ma·-su gen-da"
+    "notes": "SUPERSEDED — 2026-08-08, Claude A, Project Owner-relayed native confirmation: 'calf' = 'matchu bi·sa' (matchu=cow + bi·sa=offspring), final. Retained per citation discipline. See NV-069."
   },
   {
     "english": "calf",
@@ -24420,7 +24422,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED — 2026-08-08, Claude A, Project Owner-relayed native confirmation: 'calf' = 'matchu bi·sa' (matchu=cow + bi·sa=offspring), final. Retained per citation discipline. See NV-069."
   },
   {
     "english": "call",
@@ -45199,14 +45201,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "young",
-    "garo": "pi·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "young men's house",
     "garo": "nok·pan·te",
     "pos": null,
@@ -61166,11 +61160,43 @@
     "notes": "VERIFIED/HIGH. CORRECTED 2026-08-08 (Project Owner relay, Thangseng direct, supersedes this entry's original 2026-08-07 note): the original note wrongly implied bi·sa itself means 'young one'. Native clarification establishes bi·sa = 'offspring' (noun) and dambe = 'young' (adjective/modifier) as two DISTINCT morphemes, not one. 'dambe bi·sa' is therefore a literal compositional compound ('young' + 'offspring' = 'young offspring'), not bi·sa functioning alone as a generic young-one word. Productive pattern per native: animal + dambe = young [animal] (e.g. do·bok dambe = young goat); animal + bi·sa = baby/offspring of [animal] (e.g. do·bok bi·sa = kid, achak bi·sa = puppy). Human 'child'/'baby' senses of bare bi·sa are UNAFFECTED and remain correct. See NV-068."
   },
   {
-    "english": "young goat",
-    "garo": "Do·bok dambe",
-    "pos": "n.",
+    "english": "children",
+    "garo": "Bi·sarang",
+    "pos": null,
+    "category": "family",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-08 (Project Owner relay, Thangseng direct): 'children' = 'bi·sarang' (bi·sa + plural -rang). See NV-069."
+  },
+  {
+    "english": "young",
+    "garo": "dambe",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-08 (Project Owner relay, Thangseng direct): 'young' = 'dambe', universal/general use, not animal-specific. Replaces prior UNVERIFIED 'pi·sa' entry, deleted (confirmed wrong, not a valid register variant). See NV-069."
+  },
+  {
+    "english": "offspring",
+    "garo": "bi·sa",
+    "pos": null,
+    "category": "family",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-08 (Project Owner relay, Thangseng direct): 'bi·sa' = offspring/child/human kid (general sense), same word as existing 'child'/'children[singular]' entries. See NV-069."
+  },
+  {
+    "english": "calf",
+    "garo": "matchu bi·sa",
+    "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. New entry, 2026-08-08 (Project Owner relay, Thangseng direct via WhatsApp/Tridip): \"we can give the meaning of young goat as do.bok dambe\". Distinguishes young goat (do·bok dambe) from kid/baby goat (do·bok bi·sa, existing entry). See NV-068."
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-08 (Project Owner relay, Thangseng direct): 'calf' = 'matchu bi·sa' (matchu=cow + bi·sa=offspring), final. Already matched corrections.json's pre-existing runtime override (synced 2026-08-04-ish, now reconciled at the master level too). See NV-069."
+  },
+  {
+    "english": "the book is on the table",
+    "garo": "Ki·tap tebilo ong·a",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. New entry, 2026-08-08 (Project Owner relay, Thangseng direct): 'the book is on the table' = 'Ki.tap tebilo ong.a'. book=Ki·tap (reconfirmed), table=te·bil (already VERIFIED/HIGH, unchanged). See NV-069."
   }
 ]

@@ -3654,3 +3654,84 @@ orthographically correct; only their English-language explanation was
 wrong). One new key added (`young goat`), one pending-lexicon entry
 promoted (`young offspring`) — both are new compiled_dict.json entries
 with no prior value to conflict with, so nothing to reconcile.
+
+## NV-069: final closure — young/bi·sa/children/calf/book/table (2026-08-08)
+
+Project Owner relay, Thangseng direct. Consolidates and finalizes
+NV-067/NV-068, corrects remaining errors, closes the whole cluster.
+
+**Deleted (confirmed wrong, not a valid variant):**
+- `young` = `pi·sa` — removed from master_dictionary.json and
+  final_entries.json entirely (not just SUPERSEDED-tagged), per
+  explicit Project Owner instruction. Not a citation-worthy legacy
+  form, a plain transcription/analysis error.
+- `young goat` = `Do·bok dambe` — removed entirely. Native: "there is
+  nothing called a young goat" as a distinct concept from kid. This
+  entry was Claude A's own addition last session (NV-068), based on a
+  premature reading of the goat-specific example; retracted.
+
+**Final vocabulary (VERIFIED/HIGH, universal unless noted):**
+- `young` = `dambe` (universal general word, not goat-specific)
+- `child` / `offspring` / `human kid` = `bi·sa` (singular; unchanged,
+  already correct)
+- `children` = `Bi·sarang` (bi·sa + plural `-rang`; old bare `Bi·sa`
+  entry for "children" marked SUPERSEDED, not deleted — singular/plural
+  distinction, not a wrong-word case)
+- `puppy` = `achak bi·sa` (achak=dog + bi·sa=offspring) — confirmed
+  final, tagged VERIFIED/HIGH
+- `calf` = `matchu bi·sa` (matchu=cow + bi·sa=offspring) — new
+  VERIFIED/HIGH entry; prior `ba·sur`/`ma·su gen·da` candidates marked
+  SUPERSEDED (already matched corrections.json's pre-existing value —
+  now reconciled at the master level too)
+- `goat` = `Do·bok` — unchanged, already correct (RECONFIRMED prior
+  session)
+- `kid` / `Kid (goat child)` = `Do·bok bi·sa` — value unchanged;
+  English gloss on the phrase-form entry corrected from
+  "Kid (young goat)" to "Kid (goat child)" since "young goat" is not a
+  valid concept per this session's closure
+- `book` = `Ki·tap` — **RECONFIRMED**, reverses the 2026-08-01
+  corpus-internal-audit call that had promoted `boi` instead. `boi` now
+  marked SUPERSEDED. Confirmed via full sentence: "the book is on the
+  table" = "Ki.tap tebilo ong.a"
+- `table` = `te·bil` — unchanged, already correct (was already
+  VERIFIED/HIGH from a prior session)
+- `the book is on the table` = `Ki·tap tebilo ong·a` — new sentence
+  entry
+
+**Root cause of the book/boi and calf confusion:** same class as the
+dambe/bi·sa issue — an earlier under-specified relay led to a
+corpus-internal-audit guess (2026-08-01) being trusted over what
+native speaker input later corrected directly. No repo process fix
+needed here beyond what NV-068 already documented; this is the same
+"direct native input overrides corpus-internal-audit guesses" pattern
+already established for `goat` (Do·bok) and `adultery`/`mature`.
+
+**Propagation:** `phrase_maps.js` `'book'` entry updated to `Ki·tap`
+(was `boi`). `corrections.json` already used `ki·tap` throughout its
+book-related sentences and `matchu bi·sa` for calf — already correct,
+no change needed. `garo_dictionary.json` already had `Ki·tap`/`Mez`
+consistently (no notes/confidence field, doesn't need editing).
+`final_entries.json` (orphaned, not in the live build pipeline)
+synced for full-repo consistency per standing instruction: `young`=
+`pi·sa`/`pi˙·sa` removed, calf/children/young/book/Kid-gloss updated
+in parallel with master_dictionary.json.
+`known_dictionary_conflicts.json`: added `children` (new genuine
+multi-value key); `calf`/`book`/`table` were already allowlisted from
+prior sessions, no change needed there; `young` was NOT added since it
+now has exactly one value (no conflict).
+
+**Duplicate check:** re-swept the full bi·sa/dambe/young/calf/book/
+table cluster across every source file after all edits — zero
+exact-key duplicates remain. All multi-value keys are legitimate
+VERIFIED-vs-SUPERSEDED citation pairs, not unresolved duplicates.
+
+**Pending Lexicon:** confirmed zero pending/unreviewed entries remain
+for any word in this cluster (PL-0002014 already promoted in NV-068).
+
+**Runtime Handoff (Claude B):** compiled_dict.json will change for
+`book` (boi -> Ki·tap) and `calf` (previously unresolved/absent ->
+matchu bi·sa) after rebuild — both are genuine value corrections, not
+bugs to fix in engine code. No prepare-data.js/pickPrimary changes
+needed; the existing SUPERSEDED-filter + master-preference logic
+(fixed 2026-08-07/08, commit 9b5d61b) handles this reversal correctly
+on its own, confirmed via rebuild.
