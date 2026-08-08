@@ -92,12 +92,13 @@ Each record in `src/data/pending_lexicon.json`:
 | `review_notes` / `reviewed_by` / `reviewed_date` | string \| null | Claude A fills these in |
 | `conflict.type` | enum \| null | `null` \| `within-batch` \| `existing-conflict` — engineering-detected, informational |
 | `conflict.details` | array \| null | the other value(s) in conflict |
+| `near_duplicate` | object \| null | Item 2 (2026-08-08) — `{normalized_key, matches: [{english, garo}, ...]}` when this entry's garo normalizes (via `normalizeGaro()` in `scripts/import-dictionary.js`) the same as one or more existing production entries with a genuinely different raw spelling; `null` otherwise. Independent of `conflict.type` — an entry can be near-duplicate-flagged while `conflict.type` is `null` (clean by exact-match rules) or vice versa. Compare-only: never overwrites, skips, merges, or auto-resolves anything; always Claude A's call on review. |
 | `promotion_status` | enum | `pending` \| `promoted` \| `rejected` \| `duplicate-skip` — engineering-managed |
 | `promoted_date` | ISO string \| null | set by the promotion tool |
 
-A `conflict.type` or a `review_status` of `unreviewed`/`needs-discussion`
-is **normal, healthy pending state** — it is never a repository-health
-failure (see Check D below).
+A `conflict.type`, a `near_duplicate`, or a `review_status` of
+`unreviewed`/`needs-discussion` is **normal, healthy pending state** — it
+is never a repository-health failure (see Check D below).
 
 ## Step 3 — Review (Claude A)
 
@@ -134,6 +135,11 @@ promoted; anything else is skipped with a reason printed. On `--apply`:
   re-run `repository-intelligence.js` — Check C now audits the
   newly-promoted entries for internal dictionary conflicts too, same as
   any hand-written entry.
+- Item 2 (2026-08-08): if a candidate's garo normalizes the same as an
+  existing master entry with a genuinely different raw spelling, the
+  tool prints a `WARN near_duplicate` line but **still promotes it** —
+  this is advisory only, same as the pending-record field, never a
+  block.
 
 ## Step 5 — Repository health (Check D)
 

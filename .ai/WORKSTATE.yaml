@@ -1,5 +1,5 @@
 repository:
-  head: 9cad999
+  head: 27df4fd
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -11,7 +11,8 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
-  last_updated: "2026-08-07 (Claude B, session close: synced clean at 9cad999 — see claude_b.current_task for full detail. Fixed the critical SUPERSEDED-precedence bug from Claude A's handoff, 330/337 keys verified corrected; found and fixed a related coupling bug in morphologyEngine.js's verb-conjugation pipeline; fixed phrase_maps.js's book/table/buy/door; updated 3 stale pre-audit tests; logged RC-CANDIDATE-038 (101-key orthography-drift discovery) and phrase_maps.js's wider 112-entry stale-vs-SUPERSEDED gap as follow-ups, neither rushed. Native-confirmed: child/kid=Bi·sa (raka mark corrected everywhere), goat=Do·bok (reconfirmed final, reversing the 2026-08-01 audit's call on that one word). Staged 'dambe bi·sa' via Pending Lexicon (PL-0002014), not written directly to master. Merged two concurrent origin pushes cleanly during the session (66bde9f then 11c4a6d, Claude A's gap audit + global hyphen->raka conversion) — compiled_dict.json/compiled_dict_alternates.json regenerated from merged source both times, all other files auto-merged clean. Pushed via session-supplied PAT, passed inline in the push URL only, never persisted to git config — confirmed clean. 177/177 tests, dictionary integrity 8058/8058, repository-intelligence.js 0 new violations.)"
+  last_updated: "2026-08-08 (Claude B, session close: Item 2 — normalizeGaro()/near-duplicate detection — implemented and shipped, see claude_b.current_task for full detail. Synced clean at 27df4fd before this session's commit.)"
+  last_updated_prior: "2026-08-07 (Claude B, session close: synced clean at 9cad999 — see claude_b.current_task for full detail. Fixed the critical SUPERSEDED-precedence bug from Claude A's handoff, 330/337 keys verified corrected; found and fixed a related coupling bug in morphologyEngine.js's verb-conjugation pipeline; fixed phrase_maps.js's book/table/buy/door; updated 3 stale pre-audit tests; logged RC-CANDIDATE-038 (101-key orthography-drift discovery) and phrase_maps.js's wider 112-entry stale-vs-SUPERSEDED gap as follow-ups, neither rushed. Native-confirmed: child/kid=Bi·sa (raka mark corrected everywhere), goat=Do·bok (reconfirmed final, reversing the 2026-08-01 audit's call on that one word). Staged 'dambe bi·sa' via Pending Lexicon (PL-0002014), not written directly to master. Merged two concurrent origin pushes cleanly during the session (66bde9f then 11c4a6d, Claude A's gap audit + global hyphen->raka conversion) — compiled_dict.json/compiled_dict_alternates.json regenerated from merged source both times, all other files auto-merged clean. Pushed via session-supplied PAT, passed inline in the push URL only, never persisted to git config — confirmed clean. 177/177 tests, dictionary integrity 8058/8058, repository-intelligence.js 0 new violations.)"
   test_status: >-
     "163/163 unit tests passing (155 pre-existing + 8 from Claude B two same-session fixes ea77de5/03bd2dc, picked up via rebase - none touched by pages 8-11 review, which was dictionary-data-only). 0 lint errors implied by clean build. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass). repository-intelligence.js Checks A-E: 0 new violations after allowlisting 2 intentional new Check-C conflicts ('a wearing apparel.', 'to have sexual intercourse.') in known_dictionary_conflicts.json with citation in this session's claude_a.current_task. 8025 unique compiled entries (up from prior), 157 net new master_dictionary.json entries this session (pages 8-11 review, 151 clean + 6 noted-approval; 13 rejected as duplicates and 2 held needs-discussion were NOT promoted). Prior 155/155 history preserved below.\\n\"155/155 unit tests passing (153 prior + 2 new: 'one person' VERIFIED-preference regression, 'he answered' to-X-exclusion regression). 0 lint errors. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass; vite build now succeeds in-sandbox with a fresh npm install, resolving the previously-flagged environment gap). repository-intelligence.js Checks B/C/D/E: 0 new violations. Stress benchmark 237/237 byte-identical before/after this session's fix (none of the 31 changed compiled_dict.json keys fall in that corpus). RC-CANDIDATE-036 follow-up fixed this session (prepare-data.js pickPrimary): master_dictionary.json's own INTERNAL duplicate-key conflicts (multiple master rows for one key) were not resolved by the original RC-036 master-preference fix, which still fell back to last-write-wins by array order among master's own candidates. Added a scoped rule: when exactly one non-variant candidate is tagged VERIFIED/HIGH (excluding UNVERIFIED via substring guard), it wins. Live regression caught mid-implementation (not shipped blind): applying this to 'to answer' picked a VERIFIED citation form whose '-na' ending is the Garo infinitive suffix already baked in, which morphologyEngine.js's tense-suffixing pipeline treats as a bare stem, producing malformed 'a·gan·chak·naha' — caught via the existing 'he answered' regression test. Fixed by excluding 'to '-prefixed keys from the rule (pickPrimary now takes the key as a 2nd argument); VERIFIED confidence attests translation correctness, not bare-stem safety for suffixing. Net: 31 compiled_dict.json keys changed (0 added/removed), same systemic-conflict shape as RC-036/RC-037, all individually spot-checked against their master_dictionary.json source rows before accepting (not just trusted from the tag) — includes 'one person'->'mande sak·sa' and 'answer'->'Aganchakani' (the two originally-traced keys) plus 29 others sharing the identical conflict shape. 7 of the changed bare-verb-root keys spot-verified live for conjugation safety (push/throw/clean/listen/cook/lie/fly) — all either route through a separate, unaffected 'to X' key first, or produce well-formed output consistent with the engine's established suffix pattern. Prior 153/153 history preserved below.
     "153/153 unit tests passing (147 prior + new tests/unit/rong_classifier.test.js, 6 tests: rong resolution for fruit/alcohol, no-raka behavior, ge/mang/sak/king/gong regression coverage). npm run build clean through prepare-data.js (compiled_dict.json/compiled_dict_alternates.json/category_index.json regenerated) and test-dictionary.js/repository-intelligence.js; vite build step still fails in this sandbox only because node_modules/vite is not installed — pre-existing environment gap, not a real issue, not re-flagged. Prior 147/147 history preserved below.\n147/147 regression tests passing (144 + 3 new RC-037 tests), 0 lint errors, build exits 0, stress benchmark 237/237 (isolated 1-line diff from RC-036, exactly the expected 'he has two dogs' correction; RC-037's changes not exercised by the stress corpus, confirmed instead via direct compiled-value spot checks). RC-CANDIDATE-032 fixed this session (commit f1ea1bf): number_engine.js's standalone toGaroNumber() teens formula corrected from the disproven 'chiking·ma·' form to the confirmed 'Chi·'+digit form, matching garo_classifier.js's own TEENS table (was unreachable dead code for 11-19, fixed anyway - misleading and a latent refactor trap). RC-CANDIDATE-036 fixed this session (commit afac50d, prepare-data.js): master_dictionary.json is the declared canonical compile source and WAS included in the merge, but plain last-write-wins by raw file order meant it only won if textually distinct from anything already deduped in from the legacy source files - if master's value coincidentally matched an earlier duplicate in a legacy file, a LATER wrong duplicate within that same legacy file won instead, invisible to the resolver. Fixed by tagging merge candidates with source file and preferring any master-sourced candidate. 51 keys corrected (e.g. 'one dog': 'sa mang·sa'->'achak mang·sa'). NOTE: a stricter VERIFIED-preference refinement (for keys where master itself holds multiple non-variant candidates, e.g. 'one person': unannotated 'sa mande·sa' vs VERIFIED/HIGH 'mande sak·sa') was attempted, correctly picked 'one person' but broke 'answer' (5-way case-entangled master entries - notes shape more complex than tracing budget allowed this session) - reverted, NOT shipped, logged as follow-up below. RC-CANDIDATE-037 fixed this session (commit afac50d, garo_dictionary.json + master_dictionary.json direct edits): bulk-generated 'two X'/'three X'/'twelve X'/'thirteen X' entries wrongly used 'do·o' (chicken/bird) or 'na·tok' (fish) as filler for nouns unrelated to birds/fish (e.g. 'two teachers'->'do·o skigipa·gni'). Two distinct sub-patterns, confirmed by inspection not guessed: 105 entries where the real noun was already present after the stray prefix (strip only); 11 dog/cat entries where the noun was entirely absent and do·o/na·tok was standing in for it (substituted the correct noun - achak/menggo, both independently confirmed via their own standalone dictionary entries - not just stripped). Genuine bird/chicken/fish entries excluded and confirmed unaffected. Source: external Copilot audit, synthesized and handed off by Project Owner; every cited finding re-verified against current HEAD before acting per standing discipline (audit's compiled_dict.json framing was imprecise - master WAS included in the merge, root cause was subtler than 'master ignored'; 2 of 8 secondary findings were already fixed, 1 was superseded/no-longer-live, 5 were confirmed-but-backlog). BACKLOG-003 FULLY COMPLETE, all 8 phases (unchanged, carried over)."
@@ -1396,6 +1397,70 @@ claude_a:
 
 claude_b:
   status: active
+  current_task: >-
+    2026-08-08 (this session, resumed from migration doc checkpoint
+    27df4fd, resynced via git fetch — clean, zero drift). Implemented
+    Item 2 (normalizeGaro()/near-duplicate detection), per Claude A's
+    ruleset relayed in chat this session (the external
+    ITEM2_NORMALIZATION_DESIGN.md from the prior design-only session was
+    never committed to the repo per its own PO instruction, so this
+    session confirmed the ruleset directly with Claude A rather than
+    guessing at the one underspecified piece — the parenthetical-OCR-
+    gloss handling — from the WORKSTATE.yaml/SESSION_BOOTSTRAP.md design
+    summary alone). Added normalizeGaro() to scripts/import-dictionary.js,
+    exported alongside the existing authoritative normalize(): removes
+    parenthetical "(...)" OCR/pronunciation glosses wholesale (not
+    normalized or compared inside), strips raka dots and hyphens,
+    collapses whitespace, case-folds, preserves apostrophes exactly
+    (confirmed load-bearing per docs/GRAMMAR_RAKA_RULE_CONFIRMED_20260626.md's
+    cha'a example — the raka itself can surface as an apostrophe, so
+    stripping it would erase a real phonetic distinction, not just
+    formatting noise). Added buildNormalizedGaroIndex()/findNearDuplicates()
+    — a global (english-independent), compare-only index/lookup, kept
+    deliberately separate from buildExistingIndex()'s authoritative
+    exact-match logic. Wired into import-dictionary.js at import-time:
+    every staged pending record now carries a near_duplicate field
+    (null, or {normalized_key, matches: [{english, garo}, ...]}),
+    independent of and additive to conflict.type — an entry can be
+    near-duplicate-flagged while clean by exact-match rules or vice
+    versa. Wired into promote-lexicon.js at promotion-time, reusing
+    Item 1's fresh-reload point: prints a WARN near_duplicate line but
+    never blocks, skips, or auto-resolves the promotion — always
+    Claude A's call on review, exactly as specified. Retired
+    claude-d-preflight.js's own local normalizeGaroLoose() in favor of
+    the canonical function (closes the exact drift risk that function's
+    own header comment had flagged as a future risk) — updated both its
+    call sites (findRakaVariantMatch, findGaroKeyedNearDuplicates) and
+    its header comment documenting the draft-contract deviation,
+    which now correctly says the looser normalization DOES exist
+    upstream, just isn't used for the exact-duplicate classification.
+    Updated docs/PENDING_LEXICON_WORKFLOW.md's schema table (new
+    near_duplicate field) and Step 4 (promotion-time WARN behavior).
+    New test file tests/unit/item2-normalization.test.js (19 tests:
+    normalizeGaro's full ruleset including the parenthetical-gloss
+    carve-out and apostrophe preservation; buildNormalizedGaroIndex/
+    findNearDuplicates including the "must not double-report an exact
+    match as near" guard and the cross-english-key global-match case;
+    full end-to-end CLI runs of both import-dictionary.js --apply and
+    promote-lexicon.js --apply against synthetic sandboxed fixtures,
+    never touching real repo data), registered in package.json's build
+    script gate. Fixed one stale expectation in
+    tests/unit/claude-d-preflight.test.js that had assumed the old
+    normalizeGaroLoose's incorrect whitespace-stripping (rather than
+    collapsing) behavior — a genuine pre-existing test bug this session
+    surfaced, not a regression introduced by the retirement. Verification:
+    184/184 unit tests, prepare-data.js/test-dictionary.js clean
+    (8058/8058, unchanged — no master_dictionary.json edits this
+    session), repository-intelligence.js 0 new violations all checks
+    (A-F), zero compiled_dict.json/compiled_dict_alternates.json drift
+    confirmed via clean `git diff --stat` after a fresh prepare-data.js
+    run. vite build still fails in this sandbox (vite not installed) —
+    same pre-existing environment gap as every prior session, not
+    re-flagged as new. Pushed via session-supplied PAT, inline in the
+    push URL only, never persisted to git config — confirmed clean via
+    grep after push.
+
+claude_b_prior:
   current_task: >-
     2026-08-07 (this session, resumed from migration doc checkpoint
     3d40ed7, resynced via git fetch — clean, zero drift). Fixed the

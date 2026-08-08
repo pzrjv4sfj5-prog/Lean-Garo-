@@ -31,7 +31,7 @@
  * will now audit the newly-promoted entries too).
  */
 import fs from 'fs';
-import { buildExistingIndex, normalize } from './import-dictionary.js';
+import { buildExistingIndex, normalize, buildNormalizedGaroIndex, findNearDuplicates } from './import-dictionary.js';
 
 function loadJSON(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -121,6 +121,21 @@ function main() {
   if (alreadyInMaster.length) {
     console.log(`\n${alreadyInMaster.length} candidate(s) already exist in current master_dictionary.json (added since this pending entry was staged/approved) — not re-promoted, pending record still marked promoted (nothing left to do for it):`);
     for (const e of alreadyInMaster) console.log(`  SKIP ${e.id}: "${e.english}" -> "${e.garo}" already in master`);
+  }
+
+  // Item 2 — near-duplicate warning, same fresh-reload point as the
+  // exact-match re-check above. Advisory only: never blocks, skips, or
+  // auto-resolves a promotion. Flags cases where the entry about to be
+  // written normalizes the same as a value already in master under
+  // different raka/hyphen/parenthetical-gloss formatting — Claude A's
+  // call on review, not engineering's to decide here.
+  const normGaroIndex = buildNormalizedGaroIndex('master_dictionary.json');
+  for (const e of actuallyPromote) {
+    const nearDupMatches = findNearDuplicates(e.garo, normGaroIndex);
+    if (nearDupMatches.length) {
+      const matchDesc = nearDupMatches.map(m => `"${m.garo}" (${m.english})`).join(', ');
+      console.log(`  WARN near_duplicate ${e.id}: "${e.english}" -> "${e.garo}" normalizes the same as existing master entr${nearDupMatches.length > 1 ? 'ies' : 'y'}: ${matchDesc} — proceeding with promotion, not blocked; flag for review.`);
+    }
   }
 
   const promotedIds = new Set(toPromote.map(e => e.id)); // pending records for ALL candidates are closed out, including already-in-master ones — nothing left pending for them either way
