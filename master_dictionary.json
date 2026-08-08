@@ -777,7 +777,8 @@
   {
     "english": "mouth",
     "garo": "Ku·sik",
-    "category": "body"
+    "category": "body",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-08 (Project Owner relay, Thangseng direct): \"mouth=Ku.sik\". See NV-067."
   },
   {
     "english": "hand",
@@ -15771,7 +15772,7 @@
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — 2026-08-08, Claude A, Project Owner-relayed native confirmation: mouth = 'Ku·sik' (with raka). This no-raka duplicate retained per citation discipline, not deleted."
   },
   {
     "english": "must",

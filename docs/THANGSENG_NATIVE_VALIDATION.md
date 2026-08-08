@@ -3551,3 +3551,23 @@ enforced rule). Converted 327 `master_dictionary.json` entries and 332
 `pending_lexicon.json` promotion records (kept in sync so Check D
 doesn't flag stale references). `garo_dictionary.json`, `final_entries.json`,
 `phrase_maps.js`, and `corrections.json` already had zero hyphens.
+
+## NV-067: smiled reconfirmed; mouth = Ku·sik (2026-08-08)
+
+Project Owner relay, Thangseng direct:
+- **smiled = Ka·dingsmitaha** — reconfirms the existing VERIFIED/HIGH
+  entry (added 2026-08-06, laugh/smile elimination pass) unchanged.
+  Already correct in master_dictionary.json/irregular_verbs.json/
+  compiled_dict.json, no action needed.
+- **mouth = Ku·sik** (with raka) — closes the open no-confidence-tag
+  orthography pair flagged in the 2026-08-06 duplicate sweep
+  (`.ai/WORKSTATE.yaml` `latest_6`). master_dictionary.json's existing
+  `Ku·sik` entry (idx 140) promoted to VERIFIED/HIGH; the no-raka
+  duplicate `Kusik` (idx 3022, health category) marked SUPERSEDED,
+  retained per citation discipline, not deleted.
+  `known_dictionary_conflicts.json`'s existing "mouth" allowlist entry
+  stays as-is (Check C correctly expects 2 garo values under this key).
+
+Remaining no-confidence-tag orthography pairs from the same 2026-08-06
+sweep, still open: joking, at, bright, sad, "praise the lord",
+direct/straight.
