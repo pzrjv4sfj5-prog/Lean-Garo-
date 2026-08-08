@@ -61158,5 +61158,19 @@
     "category": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"smiled=Ka.dingsmitaha\" -- past tense of the confirmed root Ka·dingsmita (\"smile\"), root+aha pattern (matches other confirmed past-tense forms in irregular_verbs.json)."
+  },
+  {
+    "english": "young offspring",
+    "garo": "dambe bi·sa",
+    "category": "animals",
+    "notes": "VERIFIED/HIGH. CORRECTED 2026-08-08 (Project Owner relay, Thangseng direct, supersedes this entry's original 2026-08-07 note): the original note wrongly implied bi·sa itself means 'young one'. Native clarification establishes bi·sa = 'offspring' (noun) and dambe = 'young' (adjective/modifier) as two DISTINCT morphemes, not one. 'dambe bi·sa' is therefore a literal compositional compound ('young' + 'offspring' = 'young offspring'), not bi·sa functioning alone as a generic young-one word. Productive pattern per native: animal + dambe = young [animal] (e.g. do·bok dambe = young goat); animal + bi·sa = baby/offspring of [animal] (e.g. do·bok bi·sa = kid, achak bi·sa = puppy). Human 'child'/'baby' senses of bare bi·sa are UNAFFECTED and remain correct. See NV-068."
+  },
+  {
+    "english": "young goat",
+    "garo": "Do·bok dambe",
+    "pos": "n.",
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. New entry, 2026-08-08 (Project Owner relay, Thangseng direct via WhatsApp/Tridip): \"we can give the meaning of young goat as do.bok dambe\". Distinguishes young goat (do·bok dambe) from kid/baby goat (do·bok bi·sa, existing entry). See NV-068."
   }
 ]

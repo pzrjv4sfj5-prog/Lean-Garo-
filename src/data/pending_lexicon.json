@@ -53024,7 +53024,7 @@
     "category": "animals",
     "pos": null,
     "classifier": null,
-    "notes": "Native clarification, this session (2026-08-07): general/generic term for young one/newborn of any species, distinct from the species-specific bi·sa compounds (dobok bi·sa=kid/goat, menggo bi·sa=kitten, matchu bi·sa=calf, achak bi·sa=puppy).",
+    "notes": "CORRECTED 2026-08-08 (Project Owner relay, Thangseng direct, supersedes this entry's original 2026-08-07 note): the original note wrongly implied bi·sa itself means 'young one'. Native clarification establishes bi·sa = 'offspring' (noun) and dambe = 'young' (adjective/modifier) as two DISTINCT morphemes, not one. 'dambe bi·sa' is therefore a literal compositional compound ('young' + 'offspring' = 'young offspring'), not bi·sa functioning alone as a generic young-one word. Productive pattern per native: animal + dambe = young [animal] (e.g. do·bok dambe = young goat); animal + bi·sa = baby/offspring of [animal] (e.g. do·bok bi·sa = kid, achak bi·sa = puppy). Human 'child'/'baby' senses of bare bi·sa are UNAFFECTED and remain correct. See NV-068.",
     "provenance": {
       "source": "Direct native chat clarification, 2026-08-07 session",
       "source_page": null,
@@ -53032,15 +53032,15 @@
       "import_date": "2026-08-07T16:05:18.395Z",
       "ocr_version": null
     },
-    "review_status": "unreviewed",
-    "review_notes": null,
-    "reviewed_by": null,
-    "reviewed_date": null,
+    "review_status": "approved",
+    "review_notes": "Approved 2026-08-08, Claude A. Compound is compositionally confirmed (dambe=young, bi·sa=offspring, both directly native-confirmed). See NV-068 and this entry's notes field.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-08-08",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "pending",
-    "promoted_date": null
+    "promotion_status": "promoted",
+    "promoted_date": "2026-08-08T12:00:23.225Z"
   }
 ]

@@ -3590,3 +3590,67 @@ key. Not fixed here — engine logic, Claude B's territory. The
 underlying data is correct and unambiguous (`Ka·dingsmita` VERIFIED/HIGH,
 `ka·ding·sim·ik·a` explicitly flagged unconfirmed) — this is purely a
 compile-precedence bug, not a linguistic question.
+
+## NV-068: dambe/bi·sa semantic correction (2026-08-08)
+
+**Corrects a wrong interpretation already relayed to Claude B this
+session (2026-08-07 raka-fix commit, WORKSTATE.yaml claude_b section:
+"bi·sa (child/young-offspring morpheme)").** That framing wrongly
+implied `bi·sa` itself means "young one." Native re-clarification
+(Thangseng, via Tridip/WhatsApp) corrects this:
+
+- **dambe = "young"** (adjective/modifier)
+- **bi·sa = "offspring"** (noun)
+- These are two distinct morphemes, not one word with a blended sense.
+
+Confirmed compounds (goat, directly from transcript):
+- **do·bok dambe = "young goat"** (new entry, added this session)
+- **do·bok bi·sa = "kid" / "baby goat"** (already correct in the
+  dictionary; Thangseng's own suggestion to key the English gloss as
+  "kid" was already implemented prior to this transcript arriving)
+
+General productive pattern per native's own general (non-goat-specific)
+definition of the two morphemes: **animal + dambe = young [animal]**;
+**animal + bi·sa = baby/offspring of [animal]** (e.g. existing
+`achak bi·sa` = puppy, dog+offspring). `dambe bi·sa` = literal
+compositional "young offspring" (PL-0002014, promoted this session,
+notes corrected).
+
+**NOT independently native-confirmed, NOT added:** "kitten" (menggo
+bi·sa), "calf" (a·chak bi·sa or matchu/ma·su bi·sa). The Project
+Owner's own relayed "ANIMAL COMPOUND PATTERN" example list includes
+"a·chak bi·sa = calf" — this conflicts with already-VERIFIED `achak` =
+dog (not cow/calf; existing `puppy` = `achak bi·sa` is correct and
+unaffected) and with the pending-lexicon note's own prior wording
+("matchu bi·sa=calf, achak bi·sa=puppy"). Treated as a probable relay
+transcription slip, not new native vocabulary — flagged back to
+Project Owner rather than acted on. New animal-specific compounds
+(kitten, calf) need their own direct native confirmation before
+addition, per evidence-first discipline; the general dambe/bi·sa
+*meaning* is confirmed, but that doesn't license guessing which
+specific animal-name root pairs with which compound for words not yet
+in the corpus.
+
+**Also flagged, not touched:** existing entry `"young"` = `"pi·sa"`
+(UNVERIFIED/HIGH) — possible OCR/raka confusion with `bi·sa`, or a
+genuine separate word. Not addressed by this transcript. Needs its own
+native check.
+
+**Human meanings of bi·sa confirmed unaffected and untouched:** `child`
+= `Bi·sa` (VERIFIED/HIGH), `children` = `Bi·sa` (VERIFIED/HIGH), plus
+the already-SUPERSEDED `Degipa`/`De` entries — all as before, no
+changes made or needed.
+
+**Duplicate check:** full sweep of every bi·sa/dambe-containing entry
+(23 rows) found zero exact-key duplicates in this cluster — the
+multiple entries under related keys (e.g. "puppy" vs "a puppy.", "kid"
+vs "Kid (young goat)") are distinct citation-discipline entries with
+different keys, not engine-level duplicates. Nothing deleted.
+
+**Runtime Handoff (Claude B):** None. This was a documentation/gloss-
+semantics correction only — no `garo` surface-form values changed (the
+raka-corrected strings from the 2026-08-07 commit were already
+orthographically correct; only their English-language explanation was
+wrong). One new key added (`young goat`), one pending-lexicon entry
+promoted (`young offspring`) — both are new compiled_dict.json entries
+with no prior value to conflict with, so nothing to reconcile.
