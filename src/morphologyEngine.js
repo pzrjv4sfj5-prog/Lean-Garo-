@@ -110,7 +110,7 @@ export function findVerbForm(w) {
     // infinitive (unambiguous, existing) -> corrections (top-priority
     // override, but only once the infinitive's failed to resolve) ->
     // IRREGULAR_VERBS (static fallback) -> bare lookupGaro w/ pronoun guard.
-    if (lookupGaro('to ' + stripped)) return lookupGaro('to ' + stripped);
+    if (lookupGaro('to ' + stripped) && !/(^|·)na$/.test(lookupGaro('to ' + stripped))) return lookupGaro('to ' + stripped);
     if (corrections[stripped]) return corrections[stripped];
     if (IRREGULAR_VERBS[stripped]) return IRREGULAR_VERBS[stripped];
     // RC-CANDIDATE-035 fix (2026-07-31, Claude B): the bare stripped-form

@@ -22,15 +22,13 @@ current repo state (not assumed from memory/prior summaries).
 
 | Item | What's needed | Ref |
 |---|---|---|
-| `bi·ka so·a` / `hel·hel` ("angry" cluster) | Existence + register confirmation | NV-027 |
-| `jegrika` ("quarrel") | Exact raka placement (native gave no marks) | NV-028 |
-| `Kajia` ("quarrel"/"dispute") | Wrong / synonym / different register vs. `jegrika`, unasked | NV-028 |
-| `Bal` = flower / air / big basket | Native only confirmed "load/burden," these 3 senses live in production unconfirmed | NV-020 |
+| `jegrika` raka placement | Meaning confirmed twice ("quarrel"), native has given the word plain both times — exact `·` placement still unconfirmed | NV-028 |
+| `Bal` = air / bundle / load / big basket | Native only addressed the flower sense (2026-08-06, closed); these 4 remain unaddressed | NV-020 |
 | "adolescent" | `dil·ding bal·jak` REJECTED 2026-08-06 (NV-064), no replacement on record | NV-064 |
-| `Boka Boka` polysemy ("to demand unduly") | Native gave no comment on this sense at all (silence ≠ resolution) | `PL-0001540` |
-| `dabia` ("to demand unduly") | Native offered this hedged ("I think..."), not firm — tentative_candidate only | `PL-0001540` |
 | "under" pseudo-verb (`Kokkimaoja`) | Whether Garo has a distinct stative "to-be-under" verb, or this is a bug mimicking one | `RC-CANDIDATE-017` follow-up |
 | `-ma` interrogative, present/past/object-present forms | Only future-tense forms confirmed so far | NV-031 |
+
+**Closed since the initial audit (2026-08-06, Project Owner relay):** `Boka Boka` polysemy (Boka = white only; `dabia` = "to demand unduly"/"to demand", confirmed), `Kajia` = fight (real distinct word, corroborates existing entries), `jegrika` meaning reconfirmed as "quarrel" (orthography/raka placement still open — folded into NV-028's remaining half below), `bika so'a`/`hel'hel` (native unfamiliar — closed as dead end, nothing was live in the dictionary), `Bal`'s flower sense (rejected; `Bibal`/`pul` confirmed instead).
 
 ## Genuinely open — engineering/Project Owner scope (not Claude A's to implement)
 

@@ -475,7 +475,7 @@
     "english": "goat",
     "garo": "Do·bok",
     "category": "animals",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'goat' has VERIFIED/HIGH form(s) ['do·omok']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "RECONFIRMED — direct native correction, 2026-08-07: overrides prior corpus-internal-audit SUPERSEDED flag (2026-08-01). Native confirms 'Do·bok'/'dobok' as final/correct for goat."
   },
   {
     "english": "horse",
@@ -660,7 +660,8 @@
   {
     "english": "laugh",
     "garo": "Ka·ding·a",
-    "category": "emotions"
+    "category": "emotions",
+    "notes": "SUPERSEDED — 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): asked to confirm 'laugh', native gave example sentence \"na.a maina ka.dinga?\" (\"Why do you laugh?\") -- confirms single raka before 'dinga' only ('Ka·dinga'), not this double-raka form. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "cry",
@@ -1464,7 +1465,8 @@
   {
     "english": "flower",
     "garo": "Bibal",
-    "category": "nature"
+    "category": "nature",
+    "notes": "Reconfirmed 2026-08-06 (Thangseng, via Tridip WhatsApp, NV-020): \"Flower - bibal (if only the flower itself is meant)\"."
   },
   {
     "english": "leaf",
@@ -14834,7 +14836,7 @@
   },
   {
     "english": "puppy",
-    "garo": "achak bisa",
+    "garo": "achak bi·sa",
     "category": "general"
   },
   {
@@ -14874,7 +14876,7 @@
   },
   {
     "english": "kid",
-    "garo": "dobok bisa",
+    "garo": "dobok bi·sa",
     "category": "general"
   },
   {
@@ -15584,7 +15586,7 @@
   },
   {
     "english": "this goat kid is ours",
-    "garo": "Ia dobok bisa chingni ong.a",
+    "garo": "Ia dobok bi·sa chingni ong.a",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -15772,7 +15774,7 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": null
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"Why do you laugh? na.a maina ka.dinga?\" -- closes the raka-placement ambiguity flagged in the 2026-08-06 duplicate audit (was Ka·ding·a vs Ka·dinga, unresolved)."
   },
   {
     "english": "mouth",
@@ -16716,7 +16718,7 @@
     "pos": null,
     "category": "family",
     "classifier": null,
-    "notes": "AMBIGUOUS/HIGH v:Bi·sa / Degipa"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: was AMBIGUOUS/HIGH v:Bi·sa / Degipa; resolved — 'bi·sa' confirmed as the universal word for child, same english key 'child' has VERIFIED form 'Bi·sa'. Not authoritative for compile; retained per citation discipline, not deleted."
   },
   {
     "english": "Chili",
@@ -17884,7 +17886,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — direct native correction, 2026-08-07: native gave final confirmation 'goat'='Do·bok'/'dobok', overriding this entry's prior variant/VERIFIED/HIGH tag. Not authoritative for compile; retained per citation discipline, not deleted. May still be a valid register/dialect variant rather than an outright error — flagging for Claude A review, not asserting this form is definitively wrong."
   },
   {
     "english": "God",
@@ -18328,7 +18330,7 @@
   },
   {
     "english": "Kid (young goat)",
-    "garo": "Dobok bisa",
+    "garo": "Dobok bi·sa",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -48499,7 +48501,8 @@
     "english": "A flower",
     "garo": "Bal",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "REJECTED 2026-08-06 (Thangseng, via Tridip WhatsApp, NV-020): asked \"Bal flower/air/basket?\", native answered \"Flower - bibal (if only the flower itself is meant) / Flower - pul (the whole flower plant)\" -- gave two different words, did not confirm Bal=flower. Treat this print-dictionary sense as unconfirmed/rejected. See flower->Bibal (already correct, now reconfirmed) and new pul entry."
   },
   {
     "english": "air",
@@ -55960,13 +55963,6 @@
     "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry. Native-confirmed 2026-07-22 (Thangseng, via PO): Kajina=tax/duty; Kajana=negative of \"to tie\"; Ka·jana=negative of \"to do\" — three unrelated words, not spelling variants. Corrected from erroneous comma-joined value."
   },
   {
-    "english": "Tax",
-    "garo": "Kajina",
-    "category": null,
-    "pos": "n.",
-    "notes": "Native-confirmed 2026-07-22 (Thangseng, via PO): Kajina=tax/duty; Kajana=negative of \"to tie\"; Ka·jana=negative of \"to do\" — three unrelated words, not spelling variants. Corrected from erroneous comma-joined value."
-  },
-  {
     "english": "rent",
     "garo": "Kajana, Kajina",
     "category": null,
@@ -56045,28 +56041,28 @@
     "garo": "Kajia",
     "category": null,
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry. | Confirmed 2026-08-06 (Project Owner relay): \"Kajia = fight\" -- corroborates existing quarrel/dispute/wrangling glosses, resolves NV-028's open question of whether Kajia is a distinct real word (it is)."
   },
   {
     "english": "dispute",
     "garo": "Kajia",
     "category": null,
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry. | Confirmed 2026-08-06 (Project Owner relay): \"Kajia = fight\" -- corroborates existing quarrel/dispute/wrangling glosses, resolves NV-028's open question of whether Kajia is a distinct real word (it is)."
   },
   {
     "english": "wrangling",
     "garo": "Kajia",
     "category": null,
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry. | Confirmed 2026-08-06 (Project Owner relay): \"Kajia = fight\" -- corroborates existing quarrel/dispute/wrangling glosses, resolves NV-028's open question of whether Kajia is a distinct real word (it is)."
   },
   {
     "english": "to dispute",
     "garo": "Kajia",
     "category": null,
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry."
+    "notes": "[OCR-flagged for review: ocr_confidence=High] Includes verbal entry. | Confirmed 2026-08-06 (Project Owner relay): \"Kajia = fight\" -- corroborates existing quarrel/dispute/wrangling glosses, resolves NV-028's open question of whether Kajia is a distinct real word (it is)."
   },
   {
     "english": "To stir up excitement",
@@ -56832,13 +56828,6 @@
   },
   {
     "english": "Work",
-    "garo": "Kam",
-    "category": null,
-    "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]"
-  },
-  {
-    "english": "business",
     "garo": "Kam",
     "category": null,
     "pos": "n.",
@@ -61142,5 +61131,41 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-054 follow-up, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Given alongside 'ka'o nanga' (most common) and 'bika chaa' (metaphorical). Distinct spelling from pre-existing unreconciled 'bi·ka so·a' (not merged, no guess)."
+  },
+  {
+    "english": "flower plant",
+    "garo": "pul",
+    "category": "nature",
+    "pos": "n.",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-06 (Thangseng, via Tridip WhatsApp, NV-020 followup): \"Flower - pul (the whole flower plant)\" -- distinct from Bibal (the bloom itself). Not to be confused with 'pul·ko·pi'/'Pul kobi' (cauliflower), a different compound."
+  },
+  {
+    "english": "to demand unduly",
+    "garo": "dabia",
+    "category": null,
+    "pos": "v.",
+    "notes": "VERIFIED/HIGH. Was tentative_candidate in pending_lexicon.json PL-0001540 (native hedged \"I think we can use 'dabia' for this one as well\", 2026-08-05). Firmly confirmed 2026-08-06 (Project Owner relay): \"dabia = demand unduly / demand\". Resolves PL-0001540: the print dictionary's merge of this sense under headword 'Boka' was a homonym-collision error -- Boka only means \"white\" (see Boka entry, corrected same date)."
+  },
+  {
+    "english": "to demand",
+    "garo": "dabia",
+    "category": null,
+    "pos": "v.",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay), same answer as \"to demand unduly\" -- see that entry."
+  },
+  {
+    "english": "quarrel (verb)",
+    "garo": "jegrika",
+    "category": null,
+    "pos": "v.",
+    "notes": "UNVERIFIED/HIGH — meaning confirmed twice independently (NV-028, 2026-07-22: \"Quarrel is jegrika\"; reconfirmed 2026-08-06 via Thangseng: \"jegrika? Quarrel\"), but native has given the word plain both times -- exact raka (·) placement is still unconfirmed. Spelled here without raka pending that confirmation; do not treat this spelling as authoritative for raka-locality tooling. See NV-028."
+  },
+  {
+    "english": "Why do you laugh?",
+    "garo": "Na·a maina ka·dinga?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"na.a maina ka.dinga?\" -- alternate subject-first word order for the same question, alongside the existing question-word-first \"Maina na·a ka·dinga?\"/\"Maina (na·a) ka·dinga?\"."
   }
 ]

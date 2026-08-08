@@ -70,7 +70,49 @@ verified unreachable before removal).
 
 ## Pending
 
-### RC-CANDIDATE-001 — Necessity-modal negation (`nangja`) collapses into desire-negation
+### RC-CANDIDATE-038 — corrections.json/phrase_maps.js orthography drift vs. compiled_dict.json (101 keys)
+- **Discovered:** 2026-08-07, Claude B, while closing out the
+  SUPERSEDED-precedence fix (docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md).
+  That fix corrected `prepare-data.js`'s `pickPrimary` (excluded
+  SUPERSEDED entries from the candidate pool; promoted master-preference
+  above the `isRealCaseCollision` heuristic — see that commit for full
+  detail) and, as an expected side effect, updated many more
+  `compiled_dict.json` values than the specific 337-key handoff list
+  enumerated. `repository-intelligence.js` Check F (runtime-cascade
+  agreement) then correctly flagged 101 places where `corrections.json`
+  or `phrase_maps.js` — separate, hand-maintained override layers that
+  sit *above* `compiled_dict.json` in the lookup cascade — still hold
+  the pre-fix value (99 found on first pass; 2 more — `come here`,
+  `full` — caught on a second pass after fixing a bug in the ad hoc
+  extraction tooling used to enumerate them, where a locally-added
+  punctuation-stripping step diverged from `repository-intelligence.js`'s
+  actual `normalize()`, which is plain `toLowerCase().trim()` with no
+  punctuation handling).
+- **Nature of the mismatches:** spot-checked; the overwhelming majority
+  are the same raka-orthography drift running throughout this whole
+  session (e.g. `sleep`: corrections has `Tusia`, compiled_dict now
+  correctly has `tu·si·a` — same word, old vs. raka-normalized
+  spelling), not new translation errors. One (`come here`) is pure
+  punctuation (`.` vs `!`). This is exactly the category Item 2
+  (`normalizeGaro()` near-duplicate detection, designed but not yet
+  built — see `ITEM2_NORMALIZATION_DESIGN.md`) was scoped to eventually
+  resolve systematically.
+- **Impact:** none currently live — `corrections.json`/`phrase_maps.js`
+  still win at runtime (they're checked first), so translate() output is
+  unchanged by this discovery. This is a data-hygiene flag, not a
+  shipping bug.
+- **Action taken:** added all 101 keys to
+  `src/data/known_cross_source_conflicts.json` (baseline) so the build
+  isn't blocked on a full manual reconciliation right now — logged here
+  first per this doc's own required process. Full list of the 101 in
+  that session's commit message.
+- **Status:** Needs Claude A review — for each key, decide whether
+  `compiled_dict.json`'s new (post-fix) value should be promoted up into
+  `corrections.json`/`phrase_maps.js` (replacing the stale override) or
+  whether the existing override is intentionally different. Likely
+  belongs alongside Item 2 rather than as 101 one-off reviews.
+
+
 - **Input:** `"I don't need to watch TV"` → `Anga sikengja` (collapses
   into the `sikenga`/"want" + negation path)
 - **Cause:** Grammar — no distinct necessity-modal negation path exists

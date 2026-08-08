@@ -3358,9 +3358,20 @@ All entries retained (not deleted) per citation discipline. `known_dictionary_co
 
 ## Not answered / still open (remain open, no guess made)
 
-- **`Boka Boka` polysemy** ("white" vs. "to demand unduly") — see above.
 - **"adolescent"** — `dil·ding bal·jak` REJECTED 2026-08-06 (NV-064); no replacement
   candidate on record.
+- **`Bal` = "air" / "a bundle" / "a load" / "a big basket"** — NV-020 flower sense
+  closed 2026-08-06 (see below); these four senses still unaddressed.
+- **~9 same-english-key raka/orthography pairs with no confidence tag on either
+  side** (duplicate audit, 2026-08-06 — see
+  `docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md` for full context):
+  `laugh` (`Ka·ding·a` vs `Ka·dinga`), `mouth` (`Ku·sik` vs `Kusik`), `joking`
+  (`kal·akenga` vs `Ka·lakenga`), `at` (`·o` vs `O`), `bright` (`ching·a` vs
+  `Ching·a`), `sad` (`duk ong·a` vs `Duk ong·a`), `"praise the lord"`
+  (`Gitelna rasong` vs `Gitel na rasong`), `direct`/`straight` (shared
+  `tong·tang`/`·tong·tang·` pair, unclear which headword it belongs under).
+  Neither side of any pair is marked correct — no evidence-first basis to
+  pick one without asking.
 - **"who gave you this" — keep or drop trailing `?`** — this is a JSON key-naming /
   schema question (source-of-truth: `corrections.json` vs. `compiled_dict.json`), not
   a linguistic question; native did not and would not be expected to address it.
@@ -3401,3 +3412,103 @@ mismatched pattern.
 **Fix applied:** added `"i have not eaten": "Anga cha·kuja"` to
 `src/data/corrections.json` (`corrections`-precedence beats
 grammar-assembly, so this closes the mismatch directly).
+
+## NV-066 — PL-0001540 (`Boka Boka` polysemy) — CLOSED 2026-08-06
+
+Project Owner relay, 2026-08-06: "it's only Boka meaning white and
+dabia = deman[d] unduly / demand."
+
+Confirms the print dictionary's merge of "white" and "to demand unduly"
+under one `Boka` headword was a homonym-collision error, same failure
+mode as the Kajina/Kajana collision (NV-032) — not genuine polysemy.
+`Boka` = white only. The 2026-08-05 hedged `dabia` candidate is now
+firm. **Applied:** `pending_lexicon.json` PL-0001540 marked
+`rejected-redirected`; `master_dictionary.json` gained two new
+VERIFIED/HIGH entries, `"to demand unduly": "dabia"` and
+`"to demand": "dabia"`.
+
+## NV-028 followup — `jegrika` meaning reconfirmed, orthography still open — 2026-08-06
+
+Thangseng, via Tridip WhatsApp: "jegrika? Quarrel." Second independent
+confirmation of the meaning (first was 2026-07-22, "Quarrel is
+jegrika"). Raka placement still not given by native either time — the
+orthography half of NV-028 stays open. **Applied:** added `jegrika` to
+`master_dictionary.json` as UNVERIFIED/HIGH (meaning solid, spelling
+provisional, flagged not to feed raka-locality tooling until confirmed).
+
+Same relay also closed the other half of NV-028: "Kajia=fight." Confirms
+`Kajia` is a real, distinct word (not a Kajina/Kajana-style collision) —
+corroborates the existing quarrel/dispute/wrangling/to-dispute glosses
+already in `master_dictionary.json`. **Applied:** citation added to all
+4 `Kajia` entries. `jegrika` and `Kajia` stand as two real, separate
+"quarrel" words — no register/distribution distinction asked or given;
+not assuming one.
+
+## NV-020 followup — flower sense: `Bal` rejected, two new words confirmed — 2026-08-06
+
+Thangseng, via Tridip WhatsApp: "Bal flower/air/basket? Flower - bibal
+(if only the flower itself is meant) / Flower - pul (the whole flower
+plant)."
+
+Native gave two *different* words instead of confirming `Bal` — this is
+a rejection of the "A flower" sense currently sitting under `Bal` in
+`master_dictionary.json` (index-independent match, print-dictionary
+sense), not a confirmation of it. `Bibal` was already the correct entry
+for "flower" (now reconfirmed); `pul` for "flower plant" (whole plant)
+is new. **Applied:** `Bal`/"A flower" entry marked REJECTED with full
+citation; `flower`/`Bibal` entry got a reinforcing citation; new entry
+`"flower plant": "pul"` added, VERIFIED/HIGH.
+
+**NV-020 is only partially closed.** The flower sense is now resolved
+(negatively). The air/basket/bundle/load senses under `Bal` — "air"
+(index-independent), "a bundle", "a load", "a big basket" — were not
+addressed by this answer and remain unconfirmed. Do not close NV-020 as
+fully resolved; a follow-up ask on air/basket specifically is still
+needed if the Project Owner wants those closed too.
+
+## NV-027 remainder — `bika so'a`/`hel'hel` — CLOSED (native unfamiliar), no dictionary entries existed
+
+Thangseng, via Tridip WhatsApp, 2026-08-06: "bika so'a/hel'hel? I have
+no idea."
+
+Neither term was ever promoted to `master_dictionary.json` or
+`pending_lexicon.json` — both were print-dictionary candidates flagged
+during the NV-027 "angry cluster" review and never used in production.
+Native not recognizing them closes the investigation thread: no further
+native ask needed, and there is nothing live in the dictionary to
+correct or roll back. Leaving as a documented dead end (possible OCR
+noise, a different Garo register/dialect, or a print-dictionary error)
+rather than guessing a resolution.
+
+## "laugh" orthography — CLOSED 2026-08-06
+
+Project Owner relay, Thangseng direct: "ka·dinga example - Why do you laugh?
+na.a maina ka.dinga?"
+
+Canonicalized `.` → `·`. Confirms `Ka·dinga` (single raka, before "dinga"
+only) over `Ka·ding·a` (double raka) — resolves the unlabeled-duplicate
+pair flagged in the 2026-08-06 duplicate audit. **Applied:** `Ka·ding·a`
+marked SUPERSEDED in `master_dictionary.json`; `Ka·dinga` marked
+VERIFIED/HIGH. Also fixed the same wrong value in `src/data/phrase_maps.js`
+(a separate, higher-precedence override table `translate()` checks before
+`compiled_dict.json` — it had `'laugh': 'Ka·ding·a'` independently of
+`master_dictionary.json`, so master's SUPERSEDED marker alone wouldn't have
+fixed live translation output even after Claude B's precedence-bug fix
+lands).
+
+The example sentence also gave a second confirmed word order for "why do
+you laugh?": `Na·a maina ka·dinga?` (subject-first), alongside the
+existing `Maina na·a ka·dinga?`/`Maina (na·a) ka·dinga?` (question-word-
+first). Added as a new `variant/VERIFIED/HIGH` entry.
+
+**Follow-on finding:** checking `phrase_maps.js` for the same
+SUPERSEDED-vs-shipped-value bug pattern found 5 more affected entries —
+`forest`, `some`, `all`, `god`, `white` — all independently confirmed via
+`docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md`'s cross-
+reference. Fixed `forest` and `some` with full confidence (exactly one
+VERIFIED/HIGH replacement each). `all`, `god`, `white` each have 2-3
+VERIFIED/HIGH synonym candidates in `master_dictionary.json` with no
+native confirmation of which is primary — picked the orthographically
+closest match to the legacy spelling as a provisional single value
+(phrase_maps.js can only hold one), flagged inline as provisional, not
+guessed at as a firm linguistic conclusion.

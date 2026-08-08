@@ -1246,6 +1246,111 @@ claude_a:
     Thangseng relay-question batch next, if wanted. Repo confirmed fully
     synced before and after (git fetch, HEAD == origin/main, clean tree)
     per Project Owner's explicit "nothing local" instruction.
+  latest_5: >-
+    2026-08-06 (same session, Project Owner relayed 4 fresh native
+    answers via WhatsApp, closing several items from the gap audit
+    above): (1) Boka Boka polysemy CLOSED - Boka=white only, dabia=
+    "to demand unduly"/"to demand" (was hedged tentative_candidate,
+    now firm). pending_lexicon.json PL-0001540 marked review_status/
+    promotion_status "rejected" (correct enum values - first attempt
+    used "resolved"/"rejected-redirected", failed Check D, fixed).
+    master_dictionary.json +2 entries (dabia). (2) Kajia=fight
+    confirmed - real distinct word, corroborates existing quarrel/
+    dispute/wrangling entries, citation added to all 4. (3) jegrika=
+    quarrel reconfirmed (2nd independent confirmation) but raka
+    placement still never given by native either time - added as
+    UNVERIFIED/HIGH-meaning/unconfirmed-orthography entry, NV-028
+    orthography half stays open. (4) Bal flower sense REJECTED -
+    native gave bibal/pul instead of confirming Bal=flower; Bal/"A
+    flower" entry marked rejected, Bibal/flower reconfirmed, new
+    entry flower plant->pul added. NV-020 only PARTIALLY closed -
+    air/bundle/load/basket senses still unaddressed, flagged in both
+    THANGSENG_NATIVE_VALIDATION.md and the gap audit doc. (5) bika
+    so'a/hel'hel CLOSED as dead end - native said "I have no idea",
+    neither term was ever live in the dictionary so nothing to
+    correct, just closing the investigation thread. All 4 closures
+    written up as new NV entries (NV-066 + NV-028/NV-020/NV-027
+    followups), gap audit doc updated to move closed items out of
+    the open table. Rebuilt: 8060 entries (was 8055), test-dictionary
+    8060/8060, repository-intelligence 0 new violations all checks
+    (Check D briefly failed on the enum typo, fixed and re-verified
+    clean), unit tests 177/177. Manually verified "to demand unduly",
+    "to demand", "flower plant" all resolve correctly via translate().
+    Committed and pushed, HEAD==origin/main confirmed clean.
+  latest_6: >-
+    2026-08-06 (same session, Project Owner: "no runtime errors, no open
+    items, find and eliminate all duplicates, need a clean pipeline").
+    Re-ran full runtime/build verification clean (8060/8060, 0 new
+    violations, 177/177 tests, manual translate()/getAllVocabulary()/
+    getCategories()/getAlternates()/analyzeGrammar() smoke test - 0
+    thrown errors). Full duplicate sweep of master_dictionary.json:
+    *** CRITICAL FINDING, HIGHEST PRIORITY, NOT FIXED (engine code,
+    Claude B's territory) ***: pickPrimary()'s isRealCaseCollision
+    heuristic in prepare-data.js (designed correctly for the book/
+    teacher register-variant pattern) misfires on SUPERSEDED-vs-
+    VERIFIED pairs whenever they happen to differ in original-import
+    casing (systematic, not rare - legacy imports were lowercase,
+    corrections capitalized). Result: 334 of 454 SUPERSEDED-tagged
+    english keys are CURRENTLY SHIPPING THE WRONG VALUE in
+    compiled_dict.json right now (confirmed live, e.g. translate/
+    getAllVocabulary "pineapple"->"Anaros" instead of "a·na·ros").
+    No existing repository-intelligence.js check catches this - Check
+    C only flags multi-value keys as known/allowlisted without knowing
+    which value shipped; Check F is a different layer (corrections/
+    phrase_maps vs compiled_dict) entirely. This is a blind spot in
+    the verification pipeline itself, not just an unlucky miss. Full
+    diagnosis, exact fix recommendation (exclude SUPERSEDED-tagged
+    entries from pickPrimary candidacy at the addValue() stage, pair
+    with a new Check G asserting compiled_dict never ships a
+    SUPERSEDED value), and the full 337-key affected list written to
+    docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md and
+    docs/CLAUDE_B_HANDOFF_337_KEYS_20260806.json. Claude A did NOT
+    touch prepare-data.js - out of territory, flagged for Claude B.
+    Also from the sweep: removed 2 genuine literal-duplicate rows
+    (Tax/Kajina, business/Kam - identical content repeated verbatim,
+    kept the richer-cited copy each time), 9147->9145 entries. Found
+    ~9 same-english-key raka/orthography pairs with no confidence tag
+    on either side (laugh, mouth, joking, at, bright, sad, "praise the
+    lord", direct/straight) - no evidence-first basis to pick one,
+    added to THANGSENG_NATIVE_VALIDATION.md open-items list rather
+    than guessed. Confirmed ~452 remaining SUPERSEDED/VERIFIED pairs
+    and ~15 variant/VERIFIED/HIGH-tagged groups are correctly-designed
+    citation-discipline retention, not duplicates to remove. Rebuilt
+    and reverified after the 2 removals: 8060 entries, test-dictionary
+    8060/8060, repository-intelligence 0 new violations all checks,
+    unit tests 177/177.
+  latest_7: >-
+    2026-08-06 (same session, Project Owner relayed native example
+    resolving the "laugh" duplicate: "Why do you laugh? na.a maina
+    ka.dinga?"). Confirms Ka·dinga (not Ka·ding·a) - closed the
+    unlabeled-duplicate pair from the audit above. Ka·ding·a marked
+    SUPERSEDED, Ka·dinga marked VERIFIED/HIGH in master_dictionary.json.
+    Added new variant/VERIFIED/HIGH entry for the alternate subject-
+    first word order "Na·a maina ka·dinga?" alongside the existing
+    question-word-first "Maina na·a ka·dinga?". *** Follow-on finding:
+    discovered phrase_maps.js (a separate override table, checked
+    BEFORE compiled_dict.json in translate()'s cascade) independently
+    had the same wrong 'Ka·ding·a' value for laugh - master_dictionary's
+    SUPERSEDED marker never touches this file, confirming the
+    prepare-data.js fix alone won't fully resolve these words even
+    once Claude B applies it. Cross-referenced all 78 phrase_maps
+    entries already baselined in known_cross_source_conflicts.json
+    (Check F) against the 337-key wrong-list from latest_6 - found 5
+    more hits (forest, some, all, god, white). Fixed all 6 directly in
+    phrase_maps.js (Claude A's own data file, no engine-code issue).
+    forest/some had exactly one VERIFIED replacement each, fixed with
+    full confidence. all/god/white each had 2-3 VERIFIED synonym
+    candidates with no native tie-breaker - picked the orthographically
+    closest match to the legacy spelling as a provisional single value,
+    inline-commented as provisional not firm. Flagged in the handoff
+    doc: Claude B should audit for more override layers beyond
+    phrase_maps.js/compiled_dict.json once the core fix lands. Rebuilt
+    and reverified: 8060 entries (was 8060, laugh entries were value
+    edits not new keys, +1 new sentence variant did not change unique
+    compiled count), test-dictionary 8060/8060, repository-intelligence
+    0 new violations all checks (Check F known-mismatches actually
+    dropped 232->231, laugh no longer mismatches), unit tests 177/177.
+    Manually verified all 6 words resolve correctly via translate().
 
 claude_b:
   status: active
