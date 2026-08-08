@@ -3735,3 +3735,59 @@ bugs to fix in engine code. No prepare-data.js/pickPrimary changes
 needed; the existing SUPERSEDED-filter + master-preference logic
 (fixed 2026-08-07/08, commit 9b5d61b) handles this reversal correctly
 on its own, confirmed via rebuild.
+
+## NV-070 (2026-08-09, Project Owner relay, Thangseng direct via WhatsApp)
+
+Seven-item vocabulary relay: `Mouth - Ku·sik`, `Joking - bal·eka`,
+`At - 'o' (suffix)`, `Bright - ching·a`, `Sad - duk ong·a`,
+`Praise the lord - Gitelko mittelbo`, `Direct/straight -
+joljol/srongsrong (usage will depend on context)`.
+
+Corpus cross-check (evidence-first, per SESSION_BOOTSTRAP.md
+do-not-repeat entry — checked every term against
+master_dictionary.json/pending_lexicon.json before trusting) found:
+
+- **mouth**: already VERIFIED/HIGH since NV-067 — exact match,
+  reconfirmed unchanged, no edit made.
+- **at, bright, sad**: exact matches to existing untagged corpus
+  entries — promoted those to VERIFIED/HIGH, superseded case/raka-only
+  duplicate rows (`O`, `Ching·a`, `Duk ong·a`).
+- **joking**: relay (`bal·eka`) has a different root from the existing
+  untagged `kal·akenga`/`Ka·lakenga` entries (b- vs k-) — treated as a
+  correction, those two superseded, `Bal·eka` added VERIFIED/HIGH.
+  Existing `Bal·ekonga` (variant/AMBIGUOUS/MEDIUM, same root, different
+  suffix) left as-is with a note flagging the shared root — bare vs
+  -konga-suffixed relationship (aspect? synonym?) not yet
+  disambiguated, needs a follow-up native question.
+- **praise the lord**: relay (`Gitelko mittelbo`) is a materially
+  different phrase from the existing untagged `Gitelna rasong`/
+  `Gitel na rasong` — treated as a correction, both superseded,
+  `Gitelko mittelbo` added VERIFIED/HIGH.
+- **direct/straight**: PO explicitly flagged this as context-dependent
+  without specifying the split. Added `direct`=`joljol` and
+  `straight`=`srongsrong` as variant/AMBIGUOUS/MEDIUM (native-confirmed
+  both words exist) but deliberately did NOT touch or supersede the
+  existing UNVERIFIED candidates (`tong·tang`, `wa·rek·rek`,
+  `dim·breng·a`) — guessing the sense-split would violate evidence-first.
+  **Open question for next Thangseng relay:** which contexts take
+  `joljol` vs `srongsrong` (e.g. physical path/line "straight" vs.
+  "direct/honest" speech or manner)?
+
+**Duplicate check:** confirmed no lingering exact-key/exact-value
+duplicates introduced by this round beyond the ones explicitly marked
+SUPERSEDED above.
+
+**Test fix:** `RC-CANDIDATE-012` (tests/unit/translationEngine.test.js)
+hardcoded the now-superseded capitalized `Ching·a`; changed to a
+case-insensitive check against the confirmed lowercase `ching·a` —
+genuine improvement, not a regression.
+
+**Runtime Handoff (Claude B):** compiled_dict.json changes for
+`joking`, `at`, `bright`, `sad`, `praise the lord`, `direct`,
+`straight` after rebuild — all via the existing master-preference
+mechanism, no engine changes needed, confirmed via rebuild + full test
+suite (196/196) + repository-intelligence.js (0 new violations).
+Separately, see `docs/CLAUDE_B_HANDOFF_20260809_smile_alias_gap.md`
+for the smile bug — re-diagnosed root cause (bare-infinitive alias
+gap-fill, not pickPrimary's master-preference branch), fix still
+outstanding.

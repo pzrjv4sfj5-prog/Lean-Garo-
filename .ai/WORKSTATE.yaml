@@ -1443,6 +1443,41 @@ claude_a:
     variant ka·ding·sim·ik·a instead of VERIFIED/HIGH Ka·dingsmita —
     master-preference in pickPrimary() ignores isVariant; not touched
     by Claude B's Item 2 work this session, still needs a fix.
+  latest_10: >-
+    2026-08-09 (new session, resumed clean from 4ab4048 migration doc,
+    zero drift). Two tasks: (1) re-diagnosed the smile bug — root cause
+    corrected from the NV-067 hypothesis. It is NOT pickPrimary()'s
+    master-preference branch; "Smile"/"To smile" normalize to different
+    keys ("smile" vs "to smile") so they never compete inside
+    pickPrimary at all. Actual cause: main()'s bare-infinitive alias
+    step only fills gaps (`!finalized[bare]`), so it never overwrites
+    the pre-existing unconfirmed finalized["smile"] with the correct
+    finalized["to smile"]=Ka·dingsmita. Full diagnosis + fix approach in
+    docs/CLAUDE_B_HANDOFF_20260809_smile_alias_gap.md — not fixed by
+    Claude A (engine code). (2) NV-070 (Project Owner relay, Thangseng
+    direct): mouth=Ku·sik reconfirmed unchanged (already VERIFIED/HIGH
+    since NV-067, no action needed); joking=Bal·eka VERIFIED/HIGH (new;
+    kal·akenga/Ka·lakenga wrong-root candidates superseded; relationship
+    to existing Bal·ekonga variant/AMBIGUOUS/MEDIUM flagged, not yet
+    disambiguated); at='o' (suffix) VERIFIED/HIGH (matched existing
+    ·o entry, no-raka "O" duplicate superseded); bright=ching·a
+    VERIFIED/HIGH (matched existing, case-only "Ching·a" duplicate
+    superseded); sad=duk ong·a VERIFIED/HIGH (matched existing,
+    case-only "Duk ong·a" duplicate superseded); praise the
+    lord=Gitelko mittelbo VERIFIED/HIGH (new, corrects prior Gitelna
+    rasong/Gitel na rasong candidates, both superseded);
+    direct=joljol / straight=srongsrong added as variant/AMBIGUOUS/MEDIUM
+    — PO explicitly flagged the direct/straight sense-split as
+    context-dependent without specifying which word maps to which
+    context, so existing UNVERIFIED candidates (tong·tang, wa·rek·rek,
+    dim·breng·a) were deliberately left untouched pending a follow-up
+    native disambiguation question — evidence-first, not guessed.
+    Fixed 1 stale test (RC-CANDIDATE-012) that hardcoded the now-
+    superseded capitalized "Ching·a" — changed to a case-insensitive
+    check against the confirmed lowercase value; genuine improvement,
+    not a regression. repository-intelligence.js: 0 new violations all
+    checks (A-F). 8061/8061 entries (no new unique keys — all NV-070
+    terms already existed as keys), 196/196 unit tests.
 
 claude_b:
   status: active

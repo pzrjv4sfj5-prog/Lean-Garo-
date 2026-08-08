@@ -390,7 +390,7 @@ test('RC-CANDIDATE-012: non-first-person predicate adjectives use raka, not apos
     assert.ok(!r.garo.includes("'"), `"${subj}" should not contain an apostrophe, got: ${r.garo}`);
   }
   const bright = await translate('the sky is bright');
-  assert.ok(bright.garo.includes('Ching·a'), `bright should use raka, got: ${bright.garo}`);
+  assert.ok(bright.garo.toLowerCase().includes('ching·a'), `bright should use raka, got: ${bright.garo}`);
 });
 
 test('RC-CANDIDATE-012 boundary: legitimate a\'/an\'/am\' prefix words are untouched', async () => {

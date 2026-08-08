@@ -14562,7 +14562,8 @@
   {
     "english": "joking",
     "garo": "kal·akenga",
-    "category": "general"
+    "category": "general",
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): correct root is bal- (Bal·eka), not kal-. See NV-070."
   },
   {
     "english": "job",
@@ -14592,7 +14593,8 @@
   {
     "english": "at",
     "garo": "·o",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"At - 'o' (suffix)\". Bound postposition/suffix, not a free-standing word — leading raka marks the attachment boundary. See NV-070."
   },
   {
     "english": "ate",
@@ -14649,7 +14651,8 @@
   {
     "english": "bright",
     "garo": "ching·a",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"Bright - ching.a\". See NV-070."
   },
   {
     "english": "butt",
@@ -14772,7 +14775,8 @@
   {
     "english": "sad",
     "garo": "duk ong·a",
-    "category": "emotions"
+    "category": "emotions",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"Sad - duk ong.a\". See NV-070."
   },
   {
     "english": "saw",
@@ -14817,7 +14821,8 @@
   {
     "english": "praise the lord",
     "garo": "Gitelna rasong",
-    "category": "general"
+    "category": "general",
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): correct phrase is Gitelko mittelbo. See NV-070."
   },
   {
     "english": "priceless",
@@ -15413,7 +15418,7 @@
     "pos": null,
     "category": "church",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): correct phrase is Gitelko mittelbo. See NV-070."
   },
   {
     "english": "bring me the rice powder",
@@ -15597,7 +15602,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): correct root is bal- (Bal·eka), not kal-. See NV-070."
   },
   {
     "english": "what job do you do",
@@ -15621,7 +15626,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — no-raka duplicate of the confirmed \"·o\" suffix form. See NV-070."
   },
   {
     "english": "awkward",
@@ -15661,7 +15666,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — case-only duplicate of the confirmed \"ching·a\" entry. See NV-070."
   },
   {
     "english": "bye",
@@ -15805,7 +15810,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — case-only duplicate of the confirmed \"duk ong·a\" entry. See NV-070."
   },
   {
     "english": "said",
@@ -18278,7 +18283,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM"
+    "notes": "variant/AMBIGUOUS/MEDIUM. 2026-08-09: root now confirmed as bal- via NV-070 (\"Joking - bal·eka\"). Relationship between bare Bal·eka and this -konga-suffixed form not yet disambiguated (verb-form/aspect difference vs synonym) — needs a follow-up native question."
   },
   {
     "english": "Journey",
@@ -61198,5 +61203,37 @@
     "category": "phrases",
     "classifier": null,
     "notes": "VERIFIED/HIGH. New entry, 2026-08-08 (Project Owner relay, Thangseng direct): 'the book is on the table' = 'Ki.tap tebilo ong.a'. book=Ki·tap (reconfirmed), table=te·bil (already VERIFIED/HIGH, unchanged). See NV-069."
+  },
+  {
+    "english": "Joking",
+    "garo": "Bal·eka",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"Joking - bal·eka\". Corrects the prior kal·akenga/Ka·lakenga candidates (wrong root, now SUPERSEDED). Relationship to the existing Bal·ekonga (variant/AMBIGUOUS/MEDIUM) candidate not yet disambiguated. See NV-070."
+  },
+  {
+    "english": "praise the lord",
+    "garo": "Gitelko mittelbo",
+    "pos": null,
+    "category": "church",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"Praise the lord - Gitelko mittelbo\". Corrects the prior Gitelna rasong/Gitel na rasong candidates, now SUPERSEDED. See NV-070."
+  },
+  {
+    "english": "direct",
+    "garo": "joljol",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "variant/AMBIGUOUS/MEDIUM. Relayed 2026-08-09 (Project Owner relay, Thangseng direct): \"Direct/straight - joljol/srongsrong (usage will depend on context)\". Native speaker confirmed both words exist but the direct/straight sense-split by context is not yet specified. Existing UNVERIFIED candidates (tong·tang, wa·rek·rek, dim·breng·a) left untouched pending disambiguation — do not treat this as superseding them. Needs a follow-up native question distinguishing which contexts take joljol vs srongsrong. See NV-070."
+  },
+  {
+    "english": "straight",
+    "garo": "srongsrong",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "variant/AMBIGUOUS/MEDIUM. Relayed 2026-08-09 (Project Owner relay, Thangseng direct): \"Direct/straight - joljol/srongsrong (usage will depend on context)\". Native speaker confirmed both words exist but the direct/straight sense-split by context is not yet specified. Existing UNVERIFIED candidates (tong·tang, wa·rek·rek, dim·breng·a) left untouched pending disambiguation — do not treat this as superseding them. Needs a follow-up native question distinguishing which contexts take joljol vs srongsrong. See NV-070."
   }
 ]
