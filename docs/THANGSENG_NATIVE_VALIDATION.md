@@ -3512,3 +3512,42 @@ native confirmation of which is primary — picked the orthographically
 closest match to the legacy spelling as a provisional single value
 (phrase_maps.js can only hold one), flagged inline as provisional, not
 guessed at as a firm linguistic conclusion.
+
+## "laugh"/"smile" cluster — FULLY ELIMINATED, 2026-08-06
+
+Follow-up Project Owner relay: "Ka·ding·a is a wrong word for smile
+replace with ka.dingsmita as instructed." This resolved the caution
+flagged earlier the same day (that `Ka·ding·a` looked like a legitimate
+VERIFIED word for "smile") — it wasn't; both the "laugh" and "smile"
+uses of `Ka·ding·a` were wrong, `Ka·dingsmita` is the one correct
+"smile" word.
+
+**Applied — full repo sweep, not just `master_dictionary.json`:**
+Removed every `Ka·ding·a` entry for "laugh"/"smile" (not just marked
+SUPERSEDED — actually deleted, per explicit Project Owner instruction
+that retained duplicates were themselves the problem) from
+`master_dictionary.json`, `garo_dictionary.json` (a live compile-pipeline
+source file — this is likely where the wrong value originally entered
+the corpus from), `final_entries.json` (an orphaned, non-pipeline
+snapshot, fixed anyway for repo-wide consistency), and `phrase_maps.js`/
+`corrections.json` (already fixed earlier the same session). `Ka·dingsmita`
+is now the sole "smile" word throughout.
+
+Also closed with direct native answers: `laughter` = `Ka·dingani` (was
+wrongly duplicating the verb `Ka·dinga`), `smiled` = `Ka·dingsmitaha`
+(past tense, root+aha pattern). Both added to `master_dictionary.json`
+and `irregular_verbs.json`.
+
+## Global hyphen→raka conversion — executed, 2026-08-06
+
+Project Owner instruction: "all hyphens needs to be replaced with rakka
+if exist, hyphens are wrong entry." Converts every remaining literal `-`
+in every `garo` field across the repo to `·`, per the standing native
+rule already on record ("ALL hyphens become raka, no exceptions",
+`docs/GLOBAL_RAKA_CONVERSION_HANDOFF.md`) — this closes the gap flagged
+earlier the same day (328 entries had never received the 2026-06-18
+global conversion, since it was a one-time script rather than an
+enforced rule). Converted 327 `master_dictionary.json` entries and 332
+`pending_lexicon.json` promotion records (kept in sync so Check D
+doesn't flag stale references). `garo_dictionary.json`, `final_entries.json`,
+`phrase_maps.js`, and `corrections.json` already had zero hyphens.

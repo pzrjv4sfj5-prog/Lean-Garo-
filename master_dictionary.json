@@ -658,12 +658,6 @@
     "category": "general"
   },
   {
-    "english": "laugh",
-    "garo": "Ka·ding·a",
-    "category": "emotions",
-    "notes": "SUPERSEDED — 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): asked to confirm 'laugh', native gave example sentence \"na.a maina ka.dinga?\" (\"Why do you laugh?\") -- confirms single raka before 'dinga' only ('Ka·dinga'), not this double-raka form. Not authoritative for compile; retained per citation discipline, not deleted."
-  },
-  {
     "english": "cry",
     "garo": "Grap·a",
     "category": "emotions"
@@ -4944,12 +4938,6 @@
     "garo": "Mik·chip·a",
     "category": "general",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'wink' has VERIFIED/HIGH form(s) ['mik·kem·a', 'mik·sel·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
-  },
-  {
-    "english": "smile",
-    "garo": "Ka·ding·mikseng·a",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'smile' has VERIFIED/HIGH form(s) ['ka·ding·a', 'ka·ding·sim·ik·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
   },
   {
     "english": "sneeze",
@@ -13830,8 +13818,9 @@
   },
   {
     "english": "the laugh",
-    "garo": "Ka·ding·a",
-    "category": "emotions"
+    "garo": "Ka·dinga",
+    "category": "emotions",
+    "notes": "VERIFIED/HIGH. Corrected 2026-08-06 (Project Owner instruction: Ka·ding·a is wrong, eliminate) from Ka·ding·a to confirmed Ka·dinga (NV close, \"na.a maina ka.dinga?\")."
   },
   {
     "english": "the cry",
@@ -20234,19 +20223,11 @@
   },
   {
     "english": "Smile",
-    "garo": "ka·ding·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Smile",
     "garo": "ka·ding·sim·ik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "variant/VERIFIED/HIGH -- flagged 2026-08-06: Ka·dingsmita is now the PO/native-confirmed primary word for \"smile\" (Ka·ding·a, the other former candidate, was confirmed WRONG same date and removed). This entry (ka·ding·sim·ik·a) was never itself invalidated, but its status relative to Ka·dingsmita is unconfirmed -- possible synonym or possible stale candidate. Not guessing; corrections.json now points \"smile\" at Ka·dingsmita."
   },
   {
     "english": "Smooth",
@@ -49089,7 +49070,7 @@
   },
   {
     "english": "fig. To be killed by an elephant.",
-    "garo": "Balwa-paka",
+    "garo": "Balwa·paka",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with the verbal definition."
@@ -50292,7 +50273,7 @@
   },
   {
     "english": "To pursue a busi-ness of trading.",
-    "garo": "Bading-chiwala",
+    "garo": "Bading·chiwala",
     "category": null,
     "notes": "[OCR-flagged for review: ocr_confidence=High] No POS tag printed."
   },
@@ -50469,25 +50450,25 @@
   },
   {
     "english": "Remainder",
-    "garo": "Agitchagipa (A-git-cha-gip-a)",
+    "garo": "Agitchagipa (A·git·cha·gip·a)",
     "category": null,
     "pos": "n."
   },
   {
     "english": "balance",
-    "garo": "Agitchagipa (A-git-cha-gip-a)",
+    "garo": "Agitchagipa (A·git·cha·gip·a)",
     "category": null,
     "pos": "n."
   },
   {
     "english": "an extra one",
-    "garo": "Agitchagipa (A-git-cha-gip-a)",
+    "garo": "Agitchagipa (A·git·cha·gip·a)",
     "category": null,
     "pos": "n."
   },
   {
     "english": "excess.",
-    "garo": "Agitchagipa (A-git-cha-gip-a)",
+    "garo": "Agitchagipa (A·git·cha·gip·a)",
     "category": null,
     "pos": "n."
   },
@@ -50505,19 +50486,19 @@
   },
   {
     "english": "To stall-feed (bull)",
-    "garo": "Agrang-gata",
+    "garo": "Agrang·gata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to stall the bull.",
-    "garo": "Agrang-gata",
+    "garo": "Agrang·gata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "A raised platform for stall-feeding the bull.",
-    "garo": "Agrang, (A-grang)",
+    "garo": "Agrang, (A·grang)",
     "category": null,
     "pos": "n."
   },
@@ -50861,7 +50842,7 @@
   },
   {
     "english": "A big timber tree, Variation of bolchim.",
-    "garo": "A·chim (Duabang sonnera tioi-des)",
+    "garo": "A·chim (Duabang sonnera tioi·des)",
     "category": null,
     "pos": "n."
   },
@@ -51178,7 +51159,7 @@
   },
   {
     "english": "Region.",
-    "garo": "A·dok-a·rin",
+    "garo": "A·dok·a·rin",
     "category": null,
     "pos": "n."
   },
@@ -51356,26 +51337,26 @@
   },
   {
     "english": "To say",
-    "garo": "Agana, (A-gan-a)",
+    "garo": "Agana, (A·gan·a)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to speak",
-    "garo": "Agana, (A-gan-a)",
+    "garo": "Agana, (A·gan·a)",
     "category": null,
     "pos": "v.",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'to speak' has VERIFIED/HIGH form(s) ['a·gan·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
   },
   {
     "english": "to tell",
-    "garo": "Agana, (A-gan-a)",
+    "garo": "Agana, (A·gan·a)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to talk",
-    "garo": "Agana, (A-gan-a)",
+    "garo": "Agana, (A·gan·a)",
     "category": null,
     "pos": "v."
   },
@@ -51387,19 +51368,19 @@
   },
   {
     "english": "to narrate",
-    "garo": "Agana, (A-gan-a)",
+    "garo": "Agana, (A·gan·a)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to relate",
-    "garo": "Agana, (A-gan-a)",
+    "garo": "Agana, (A·gan·a)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to state.",
-    "garo": "Agana, (A-gan-a)",
+    "garo": "Agana, (A·gan·a)",
     "category": null,
     "pos": "v."
   },
@@ -51654,7 +51635,7 @@
   },
   {
     "english": "To speak in a low voice",
-    "garo": "Bru-mitu (agana)",
+    "garo": "Bru·mitu (agana)",
     "category": null,
     "pos": "v."
   },
@@ -51832,7 +51813,7 @@
   },
   {
     "english": "Universe.",
-    "garo": "A·gilsak-chigilbo",
+    "garo": "A·gilsak·chigilbo",
     "category": null,
     "pos": "n."
   },
@@ -51868,7 +51849,7 @@
   },
   {
     "english": "To be poor, destitute, helpless (person).",
-    "garo": "Branga-gitchoa",
+    "garo": "Branga·gitchoa",
     "category": null,
     "pos": "vi."
   },
@@ -51955,14 +51936,14 @@
   },
   {
     "english": "Spotted",
-    "garo": "Brim-bittek",
+    "garo": "Brim·bittek",
     "category": null,
     "pos": "adj.",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'spotted' has VERIFIED/HIGH form(s) ['re·wa·a', 'tok·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
   },
   {
     "english": "brownish.",
-    "garo": "Brim-bittek",
+    "garo": "Brim·bittek",
     "category": null,
     "pos": "adj."
   },
@@ -52102,13 +52083,13 @@
   },
   {
     "english": "to grumble in a low sulky tone",
-    "garo": "Bru-mitu (agana)",
+    "garo": "Bru·mitu (agana)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to mutter.",
-    "garo": "Bru-mitu (agana)",
+    "garo": "Bru·mitu (agana)",
     "category": null,
     "pos": "v."
   },
@@ -52210,7 +52191,7 @@
   },
   {
     "english": "Tug-of-war.",
-    "garo": "Budu-salgrika",
+    "garo": "Budu·salgrika",
     "category": null,
     "pos": "n."
   },
@@ -52241,7 +52222,7 @@
   },
   {
     "english": "Jungle",
-    "garo": "Burung-bolgrim",
+    "garo": "Burung·bolgrim",
     "category": null,
     "pos": "n.",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'jungle' has VERIFIED/HIGH form(s) ['bring']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
@@ -52255,7 +52236,7 @@
   },
   {
     "english": "forest",
-    "garo": "Burung-bolgrim",
+    "garo": "Burung·bolgrim",
     "category": null,
     "pos": "n.",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'forest' has VERIFIED/HIGH form(s) ['bring']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
@@ -52287,14 +52268,14 @@
   },
   {
     "english": "In the depth of a forest",
-    "garo": "Burung-a. jangchi",
+    "garo": "Burung·a. jangchi",
     "category": null,
     "pos": "adv. & n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "wilderness.",
-    "garo": "Burung-a. jangchi",
+    "garo": "Burung·a. jangchi",
     "category": null,
     "pos": "adv. & n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
@@ -52313,7 +52294,7 @@
   },
   {
     "english": "woods.",
-    "garo": "Burung-bolgrim",
+    "garo": "Burung·bolgrim",
     "category": null,
     "pos": "n."
   },
@@ -52807,19 +52788,19 @@
   },
   {
     "english": "A well-to-do man",
-    "garo": "Cha·kal-ringkalgipa",
+    "garo": "Cha·kal·ringkalgipa",
     "category": null,
     "pos": "n."
   },
   {
     "english": "a rich man",
-    "garo": "Cha·kal-ringkalgipa",
+    "garo": "Cha·kal·ringkalgipa",
     "category": null,
     "pos": "n."
   },
   {
     "english": "affluent.",
-    "garo": "Cha·kal-ringkalgipa",
+    "garo": "Cha·kal·ringkalgipa",
     "category": null,
     "pos": "n."
   },
@@ -53317,19 +53298,19 @@
   },
   {
     "english": "To chew",
-    "garo": "Cha·mikepa, (Cha·mik-gepa)",
+    "garo": "Cha·mikepa, (Cha·mik·gepa)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to masticate",
-    "garo": "Cha·mikepa, (Cha·mik-gepa)",
+    "garo": "Cha·mikepa, (Cha·mik·gepa)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to mouth.",
-    "garo": "Cha·mikepa, (Cha·mik-gepa)",
+    "garo": "Cha·mikepa, (Cha·mik·gepa)",
     "category": null,
     "pos": "v."
   },
@@ -54523,13 +54504,13 @@
   },
   {
     "english": "In Garo mythology a mighty man",
-    "garo": "Grimchi-Saljapang",
+    "garo": "Grimchi·Saljapang",
     "category": null,
     "pos": "n."
   },
   {
     "english": "a hero.",
-    "garo": "Grimchi-Saljapang",
+    "garo": "Grimchi·Saljapang",
     "category": null,
     "pos": "n."
   },
@@ -54844,7 +54825,7 @@
   },
   {
     "english": "To meet one who is favourable at the opportune time.",
-    "garo": "Grong-namsanga",
+    "garo": "Grong·namsanga",
     "category": null,
     "pos": "v."
   },
@@ -54928,7 +54909,7 @@
   },
   {
     "english": "A compound of betel-nut, betel leaf and lime.",
-    "garo": "Gua-keli",
+    "garo": "Gua·keli",
     "category": null,
     "pos": "n."
   },
@@ -55057,157 +55038,157 @@
   },
   {
     "english": "To make to work",
-    "garo": "Ka-ata",
+    "garo": "Ka·ata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to employ",
-    "garo": "Ka-ata",
+    "garo": "Ka·ata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to cause to work",
-    "garo": "Ka-ata",
+    "garo": "Ka·ata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Heart broken",
-    "garo": "Ka-a-be-a",
+    "garo": "Ka·a·be·a",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "Angry",
-    "garo": "Ka-a soa",
+    "garo": "Ka·a soa",
     "category": null,
     "pos": "adj.",
     "notes": "Typo 'infurate' (for infuriate) preserved."
   },
   {
     "english": "rage",
-    "garo": "Ka-a soa",
+    "garo": "Ka·a soa",
     "category": null,
     "pos": "adj.",
     "notes": "Typo 'infurate' (for infuriate) preserved."
   },
   {
     "english": "infurate",
-    "garo": "Ka-a soa",
+    "garo": "Ka·a soa",
     "category": null,
     "pos": "adj.",
     "notes": "Typo 'infurate' (for infuriate) preserved."
   },
   {
     "english": "furious",
-    "garo": "Ka-a soa",
+    "garo": "Ka·a soa",
     "category": null,
     "pos": "adj.",
     "notes": "Typo 'infurate' (for infuriate) preserved."
   },
   {
     "english": "To suffer from dyspepsia",
-    "garo": "Ka-a saa",
+    "garo": "Ka·a saa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to have pain in the heart",
-    "garo": "Ka-a saa",
+    "garo": "Ka·a saa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To be greatly displeased",
-    "garo": "Ka-a amja",
+    "garo": "Ka·a amja",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to get very much angry",
-    "garo": "Ka-a amja",
+    "garo": "Ka·a amja",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To be so much vexatious that one is hardly able to hold in or restrain one'self from avenging but it is beyond one's power to do so",
-    "garo": "Ka-a amja-bil-sokja, (daka)",
+    "garo": "Ka·a amja·bil·sokja, (daka)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To fly into a passion",
-    "garo": "Ka-a bikbo-bikbo daka",
+    "garo": "Ka·a bikbo·bikbo daka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To get angry",
-    "garo": "Ka-a nanga",
+    "garo": "Ka·a nanga",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to be cross",
-    "garo": "Ka-a nanga",
+    "garo": "Ka·a nanga",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to be cross",
-    "garo": "Ka-chaa",
+    "garo": "Ka·chaa",
     "category": null,
     "pos": "v.",
     "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster."
   },
   {
     "english": "to be displeased",
-    "garo": "Ka-a nanga",
+    "garo": "Ka·a nanga",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To be in the state of emotion",
-    "garo": "Ka-asuangsuang daka",
+    "garo": "Ka·asuangsuang daka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to throb",
-    "garo": "Ka-asuangsuang daka",
+    "garo": "Ka·asuangsuang daka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Breast",
-    "garo": "Ka-bak",
+    "garo": "Ka·bak",
     "category": null,
     "pos": "n.",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'breast' has VERIFIED/HIGH form(s) ['sok', 'sok·me']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
   },
   {
     "english": "bosom",
-    "garo": "Ka-bak",
+    "garo": "Ka·bak",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Heart-rending",
-    "garo": "Ka-be-a",
+    "garo": "Ka·be·a",
     "category": null,
     "pos": "n."
   },
   {
     "english": "heart-break",
-    "garo": "Ka-be-a",
+    "garo": "Ka·be·a",
     "category": null,
     "pos": "n."
   },
   {
     "english": "heart failure",
-    "garo": "Ka-be-a",
+    "garo": "Ka·be·a",
     "category": null,
     "pos": "n."
   },
@@ -55232,41 +55213,41 @@
   },
   {
     "english": "Excitedly",
-    "garo": "Ka-bo-rang-bo",
+    "garo": "Ka·bo·rang·bo",
     "category": null,
     "pos": "adv."
   },
   {
     "english": "To be angry",
-    "garo": "Ka-chaa",
+    "garo": "Ka·chaa",
     "category": null,
     "pos": "v.",
     "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster. | Reconfirmed 2026-08-05 (NV-054 follow-up): native again gave 'ka'chaa' = to reprimand/to scold as its direct sense."
   },
   {
     "english": "to get angry with",
-    "garo": "Ka-chaa",
+    "garo": "Ka·chaa",
     "category": null,
     "pos": "v.",
     "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster. | Reconfirmed 2026-08-05 (NV-054 follow-up): native again gave 'ka'chaa' = to reprimand/to scold as its direct sense."
   },
   {
     "english": "to be annoyed or vexed",
-    "garo": "Ka-chaa",
+    "garo": "Ka·chaa",
     "category": null,
     "pos": "v.",
     "notes": "Native correction 2026-07-25: primary/most direct sense is 'to berate, to scold' (an action verb) - the angry/cross/annoyed senses recorded here are real but secondary; consider promoting 'to berate/to scold' to the lead sense if re-editing this cluster."
   },
   {
     "english": "Not to be able to restrain anger",
-    "garo": "Ka-a chakna amja",
+    "garo": "Ka·a chakna amja",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "Angry",
-    "garo": "Ka-a chakna amja",
+    "garo": "Ka·a chakna amja",
     "category": null,
     "pos": "adj.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
@@ -55305,63 +55286,63 @@
   },
   {
     "english": "To be too much vexed",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
   },
   {
     "english": "to be tied of",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
   },
   {
     "english": "to become tried",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
   },
   {
     "english": "to be disgusted or satiated",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
   },
   {
     "english": "to be fed up",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
   },
   {
     "english": "to be bore",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
   },
   {
     "english": "to feel disgust",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
   },
   {
     "english": "troublesome",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "adj.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
   },
   {
     "english": "vaxatious",
-    "garo": "Ka-chipa",
+    "garo": "Ka·chipa",
     "category": null,
     "pos": "adj.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Typo 'vaxatious' (vexatious) preserved."
@@ -55375,25 +55356,25 @@
   },
   {
     "english": "To tie the knot of the end of the thread in cloth",
-    "garo": "Kachottenga (ba-ra ku-teni killing-dingko)",
+    "garo": "Kachottenga (ba·ra ku·teni killing·dingko)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Beautiful",
-    "garo": "Ka-danga",
+    "garo": "Ka·danga",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "pleasant to the eye",
-    "garo": "Ka-danga",
+    "garo": "Ka·danga",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "pleasant",
-    "garo": "Ka-danga",
+    "garo": "Ka·danga",
     "category": null,
     "pos": "adj."
   },
@@ -55405,7 +55386,7 @@
   },
   {
     "english": "to suspend",
-    "garo": "Kadingde-a",
+    "garo": "Kadingde·a",
     "category": null,
     "pos": "v."
   },
@@ -55418,199 +55399,200 @@
   },
   {
     "english": "To hang",
-    "garo": "Kadingde-a",
+    "garo": "Kadingde·a",
     "category": null,
     "pos": "v.",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'to hang' has VERIFIED/HIGH form(s) ['al·a·i·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
   },
   {
     "english": "To laugh",
-    "garo": "Ka-dinga",
+    "garo": "Ka·dinga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "to gaggle",
-    "garo": "Ka-dinga",
+    "garo": "Ka·dinga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "Laughter",
-    "garo": "Ka-dinga",
+    "garo": "Ka·dingani",
     "category": null,
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+    "notes": "VERIFIED/HIGH. Corrected 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"laughter=Ka.dingani\" -- was previously an OCR-flagged duplicate of the verb \"laugh\" (Ka·dinga); native confirms \"laughter\" (noun) is a distinct derived form, Ka·dingani."
   },
   {
     "english": "To fell like laughing",
-    "garo": "Ka-dingna sika",
+    "garo": "Ka·dingna sika",
     "category": null,
     "pos": "v.",
     "notes": "Typo 'fell' (for feel) preserved."
   },
   {
     "english": "to feel inclined to laugh",
-    "garo": "Ka-dingna sika",
+    "garo": "Ka·dingna sika",
     "category": null,
     "pos": "v.",
     "notes": "Typo 'fell' (for feel) preserved."
   },
   {
     "english": "To make people laugh",
-    "garo": "Ka-dingata",
+    "garo": "Ka·dingata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to make fun",
-    "garo": "Ka-dingata",
+    "garo": "Ka·dingata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Laughing-stock",
-    "garo": "Ka-dingani",
+    "garo": "Ka·dingani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "fun",
-    "garo": "Ka-dingani",
+    "garo": "Ka·dingani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "It is no laughing matter",
-    "garo": "Ka-dingani ong-ja",
+    "garo": "Ka·dingani ong·ja",
     "category": null,
     "pos": "n."
   },
   {
     "english": "no laughing stock",
-    "garo": "Ka-dingani ong-ja",
+    "garo": "Ka·dingani ong·ja",
     "category": null,
     "pos": "n."
   },
   {
     "english": "A humorous person found of telling funny stories and playing jokes",
-    "garo": "Ka-dingatna changgipa",
+    "garo": "Ka·dingatna changgipa",
     "category": null,
     "pos": "n.",
     "notes": "Typo 'found' (fond) preserved."
   },
   {
     "english": "a wag",
-    "garo": "Ka-dingatna changgipa",
+    "garo": "Ka·dingatna changgipa",
     "category": null,
     "pos": "n.",
     "notes": "Typo 'found' (fond) preserved."
   },
   {
     "english": "to hang by the string or rope",
-    "garo": "Kadingde-a",
+    "garo": "Kadingde·a",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To smile",
-    "garo": "Ka-dingsmita",
+    "garo": "Ka·dingsmita",
     "category": null,
-    "pos": "v."
+    "pos": "v.",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"Smile - ka.dingsmita\". Previously unconfirmed with a hyphen (Ka-dingsmita) instead of raka; corrected. This is the correct \"smile\" word, replacing the earlier wrong Ka·ding·a/Ka·ding·mikseng·a candidates (both eliminated same date)."
   },
   {
     "english": "To laugh at",
-    "garo": "Ka-dingsteka",
+    "garo": "Ka·dingsteka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to ridicule",
-    "garo": "Ka-dingsteka",
+    "garo": "Ka·dingsteka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Laughing stock",
-    "garo": "Ka-dingstekani",
+    "garo": "Ka·dingstekani",
     "category": null,
     "pos": "n. & adj."
   },
   {
     "english": "derision",
-    "garo": "Ka-dingstekani",
+    "garo": "Ka·dingstekani",
     "category": null,
     "pos": "n. & adj."
   },
   {
     "english": "ridicule",
-    "garo": "Ka-dingstekani",
+    "garo": "Ka·dingstekani",
     "category": null,
     "pos": "n. & adj."
   },
   {
     "english": "making fun of",
-    "garo": "Ka-dingstekani",
+    "garo": "Ka·dingstekani",
     "category": null,
     "pos": "n. & adj."
   },
   {
     "english": "ridiculous",
-    "garo": "Ka-dingstekani",
+    "garo": "Ka·dingstekani",
     "category": null,
     "pos": "n. & adj."
   },
   {
     "english": "To work together",
-    "garo": "Ka-dima",
+    "garo": "Ka·dima",
     "category": null,
     "pos": "v.",
     "notes": "Repeated headword."
   },
   {
     "english": "to co-operate",
-    "garo": "Ka-dima",
+    "garo": "Ka·dima",
     "category": null,
     "pos": "v.",
     "notes": "Repeated headword."
   },
   {
     "english": "to join together",
-    "garo": "Ka-dima",
+    "garo": "Ka·dima",
     "category": null,
     "pos": "v.",
     "notes": "Repeated headword."
   },
   {
     "english": "to be free from fear",
-    "garo": "Ka-dima",
+    "garo": "Ka·dima",
     "category": null,
     "pos": "v.",
     "notes": "Repeated headword."
   },
   {
     "english": "To console",
-    "garo": "Ka-dimea",
+    "garo": "Ka·dimea",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to solace",
-    "garo": "Ka-dimea",
+    "garo": "Ka·dimea",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to be comforted",
-    "garo": "Ka-dimea",
+    "garo": "Ka·dimea",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Consolation",
-    "garo": "Ka-dimeani",
+    "garo": "Ka·dimeani",
     "category": null,
     "pos": "n."
   },
@@ -55628,318 +55610,318 @@
   },
   {
     "english": "To beat or punish one instead of another with whom one is angry or displeased",
-    "garo": "Ka-dona",
+    "garo": "Ka·dona",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To hope",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "to hope",
-    "garo": "Ka-dongsoa",
+    "garo": "Ka·dongsoa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to have faith",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "to rely on",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "to have courage",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "to expect",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "To expect",
-    "garo": "Ka-dongsoa",
+    "garo": "Ka·dongsoa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to be brave, bold",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "to trust",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "faith",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "confidence",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "reliance",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "trust",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "With hope",
-    "garo": "Ka-donga gnang",
+    "garo": "Ka·donga gnang",
     "category": null,
     "pos": "adv.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "with confidence",
-    "garo": "Ka-donga gnang",
+    "garo": "Ka·donga gnang",
     "category": null,
     "pos": "adv.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "Want of confidence",
-    "garo": "Ka-dongna man-gijani",
+    "garo": "Ka·dongna man·gijani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "distrust",
-    "garo": "Ka-dongna man-gijani",
+    "garo": "Ka·dongna man·gijani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "diffidence",
-    "garo": "Ka-dongna man-gijani",
+    "garo": "Ka·dongna man·gijani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Hopeful",
-    "garo": "Ka-dongani gnang",
+    "garo": "Ka·dongani gnang",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "having confidence",
-    "garo": "Ka-dongani gnang",
+    "garo": "Ka·dongani gnang",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "Hopeless",
-    "garo": "Ka-donga gri",
+    "garo": "Ka·donga gri",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "Hopeless",
-    "garo": "Ka-donga man-gijagipa",
+    "garo": "Ka·donga man·gijagipa",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "no hope",
-    "garo": "Ka-donga gri",
+    "garo": "Ka·donga gri",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "having no trust on (one)",
-    "garo": "Ka-donga gri",
+    "garo": "Ka·donga gri",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "unreliable",
-    "garo": "Ka-donga man-gijagipa",
+    "garo": "Ka·donga man·gijagipa",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "who can not be trusted",
-    "garo": "Ka-donga man-gijagipa",
+    "garo": "Ka·donga man·gijagipa",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "untrustworthy",
-    "garo": "Ka-donga man-gijagipa",
+    "garo": "Ka·donga man·gijagipa",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "To encourage",
-    "garo": "Ka-dongata",
+    "garo": "Ka·dongata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to embolden",
-    "garo": "Ka-dongata",
+    "garo": "Ka·dongata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to animate",
-    "garo": "Ka-dongata",
+    "garo": "Ka·dongata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Hero",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "a brave man",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "fearless",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "brave",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "brave",
-    "garo": "Ka-grak",
+    "garo": "Ka·grak",
     "category": null,
     "pos": "adj.",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'brave' has VERIFIED/HIGH form(s) ['pa·a', 'sang·chak·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
   },
   {
     "english": "gallant",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "courageous",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "courageous",
-    "garo": "Ka-grak",
+    "garo": "Ka·grak",
     "category": null,
     "pos": "adj.",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'courageous' has VERIFIED/HIGH form(s) ['sang·chak·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
   },
   {
     "english": "daring",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "intrepid",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "to anticipate",
-    "garo": "Ka-dongsoa",
+    "garo": "Ka·dongsoa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Reliable",
-    "garo": "Ka-dongna man-gipa",
+    "garo": "Ka·dongna man·gipa",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "trustworthy",
-    "garo": "Ka-dongna man-gipa",
+    "garo": "Ka·dongna man·gipa",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "Fiery-tempered",
-    "garo": "Ka-dot",
+    "garo": "Ka·dot",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "quick-tempered",
-    "garo": "Ka-dot",
+    "garo": "Ka·dot",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "quick-tempered",
-    "garo": "Ka-grak",
+    "garo": "Ka·grak",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "To efface from memory",
-    "garo": "Ka-guala",
+    "garo": "Ka·guala",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to forget",
-    "garo": "Ka-guala",
+    "garo": "Ka·guala",
     "category": null,
     "pos": "v."
   },
@@ -55951,7 +55933,7 @@
   },
   {
     "english": "Bold",
-    "garo": "Ka-grak",
+    "garo": "Ka·grak",
     "category": null,
     "pos": "adj."
   },
@@ -56080,26 +56062,26 @@
   },
   {
     "english": "To have the tickling sensation",
-    "garo": "Ka-jika",
+    "garo": "Ka·jika",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to tickle",
-    "garo": "Ka-jika",
+    "garo": "Ka·jika",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To tickle",
-    "garo": "Ka-jikata",
+    "garo": "Ka·jikata",
     "category": null,
     "pos": "v.",
     "notes": "Typo 'tiltilate' (titillate) preserved."
   },
   {
     "english": "to tiltilate",
-    "garo": "Ka-jikata",
+    "garo": "Ka·jikata",
     "category": null,
     "pos": "v.",
     "notes": "Typo 'tiltilate' (titillate) preserved."
@@ -56119,37 +56101,37 @@
   },
   {
     "english": "To be tired of",
-    "garo": "Ka-jroa",
+    "garo": "Ka·jroa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to be disgusted",
-    "garo": "Ka-jroa",
+    "garo": "Ka·jroa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to be fed up",
-    "garo": "Ka-jroa",
+    "garo": "Ka·jroa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to irri-tate",
-    "garo": "Ka-jroa",
+    "garo": "Ka·jroa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to be annoyed",
-    "garo": "Ka-jroa",
+    "garo": "Ka·jroa",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to have pain in the stomach",
-    "garo": "Ka-jroa",
+    "garo": "Ka·jroa",
     "category": null,
     "pos": "v."
   },
@@ -56167,13 +56149,13 @@
   },
   {
     "english": "To take offence or feels offended and wreak venge-ance",
-    "garo": "Ka-kama",
+    "garo": "Ka·kama",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To one's satisfaction in avenging",
-    "garo": "Ka-kam-ka-kam",
+    "garo": "Ka·kam·ka·kam",
     "category": null,
     "pos": "adv."
   },
@@ -56239,13 +56221,13 @@
   },
   {
     "english": "Bile",
-    "garo": "Ka-kit",
+    "garo": "Ka·kit",
     "category": null,
     "pos": "n."
   },
   {
     "english": "to feel itch",
-    "garo": "Ka-kita",
+    "garo": "Ka·kita",
     "category": null,
     "pos": "v."
   },
@@ -56370,31 +56352,31 @@
   },
   {
     "english": "The back of the neck",
-    "garo": "Ka-klok",
+    "garo": "Ka·klok",
     "category": null,
     "pos": "n."
   },
   {
     "english": "scruff",
-    "garo": "Ka-klok",
+    "garo": "Ka·klok",
     "category": null,
     "pos": "n."
   },
   {
     "english": "the nape",
-    "garo": "Ka-klok",
+    "garo": "Ka·klok",
     "category": null,
     "pos": "n."
   },
   {
     "english": "The lower part of the chest just below the breastbone which is a bit depressed",
-    "garo": "Ka-kol",
+    "garo": "Ka·kol",
     "category": null,
     "pos": "n."
   },
   {
     "english": "the pit of one's stomach",
-    "garo": "Ka-kol",
+    "garo": "Ka·kol",
     "category": null,
     "pos": "n."
   },
@@ -56406,19 +56388,19 @@
   },
   {
     "english": "To make a sound with the throat as a warning",
-    "garo": "Ka-krema",
+    "garo": "Ka·krema",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to feign cough",
-    "garo": "Ka-krema",
+    "garo": "Ka·krema",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to clear the throat",
-    "garo": "Ka-krema",
+    "garo": "Ka·krema",
     "category": null,
     "pos": "v."
   },
@@ -56442,7 +56424,7 @@
   },
   {
     "english": "A line of hair extending from the breast to the navel",
-    "garo": "Ka-kol",
+    "garo": "Ka·kol",
     "category": null,
     "pos": "n."
   },
@@ -56528,43 +56510,43 @@
   },
   {
     "english": "To play",
-    "garo": "Kal-a",
+    "garo": "Kal·a",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To play",
-    "garo": "Kal-grika",
+    "garo": "Kal·grika",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to play a prank",
-    "garo": "Kal-a",
+    "garo": "Kal·a",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to play a prank",
-    "garo": "Kal-ake",
+    "garo": "Kal·ake",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To tease",
-    "garo": "Kal-ake",
+    "garo": "Kal·ake",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to jeer at",
-    "garo": "Kal-ake",
+    "garo": "Kal·ake",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to cajole",
-    "garo": "Kal-ake",
+    "garo": "Kal·ake",
     "category": null,
     "pos": "v."
   },
@@ -56594,37 +56576,37 @@
   },
   {
     "english": "To play in (some place)",
-    "garo": "Kal-chaka",
+    "garo": "Kal·chaka",
     "category": null,
     "pos": "vt."
   },
   {
     "english": "to play for another",
-    "garo": "Kal-chaka",
+    "garo": "Kal·chaka",
     "category": null,
     "pos": "vt."
   },
   {
     "english": "Game",
-    "garo": "Kal-ani",
+    "garo": "Kal·ani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "a play",
-    "garo": "Kal-ani",
+    "garo": "Kal·ani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "a play thing",
-    "garo": "Kal-ani",
+    "garo": "Kal·ani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "a toy",
-    "garo": "Kal-ani",
+    "garo": "Kal·ani",
     "category": null,
     "pos": "n."
   },
@@ -56696,13 +56678,13 @@
   },
   {
     "english": "Bad-odour",
-    "garo": "Kalek-kalchek",
+    "garo": "Kalek·kalchek",
     "category": null,
     "pos": "adj. & n."
   },
   {
     "english": "unpleasant scent",
-    "garo": "Kalek-kalchek",
+    "garo": "Kalek·kalchek",
     "category": null,
     "pos": "adj. & n."
   },
@@ -56744,7 +56726,7 @@
   },
   {
     "english": "A small species of the honey bee",
-    "garo": "Kal-mik",
+    "garo": "Kal·mik",
     "category": null,
     "pos": "n."
   },
@@ -56756,61 +56738,61 @@
   },
   {
     "english": "To speak irreverently of God",
-    "garo": "Kal-stapa",
+    "garo": "Kal·stapa",
     "category": null,
     "pos": "v. & n."
   },
   {
     "english": "to blaspheme",
-    "garo": "Kal-stapa",
+    "garo": "Kal·stapa",
     "category": null,
     "pos": "v. & n."
   },
   {
     "english": "to mock or scoff at",
-    "garo": "Kal-stapa",
+    "garo": "Kal·stapa",
     "category": null,
     "pos": "v. & n."
   },
   {
     "english": "to deride",
-    "garo": "Kal-stapa",
+    "garo": "Kal·stapa",
     "category": null,
     "pos": "v. & n."
   },
   {
     "english": "To deride",
-    "garo": "Kal-steka",
+    "garo": "Kal·steka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "blasphemy",
-    "garo": "Kal-stapa",
+    "garo": "Kal·stapa",
     "category": null,
     "pos": "v. & n."
   },
   {
     "english": "mockery",
-    "garo": "Kal-stapa",
+    "garo": "Kal·stapa",
     "category": null,
     "pos": "v. & n."
   },
   {
     "english": "to mock at",
-    "garo": "Kal-steka",
+    "garo": "Kal·steka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to scoff at",
-    "garo": "Kal-steka",
+    "garo": "Kal·steka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Too narrow or short said of a garment",
-    "garo": "Kal-tangan",
+    "garo": "Kal·tangan",
     "category": null,
     "pos": "adj."
   },
@@ -57124,14 +57106,14 @@
   },
   {
     "english": "To threaten",
-    "garo": "Ka-mikkenata",
+    "garo": "Ka·mikkenata",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "to intimidate",
-    "garo": "Ka-mikkenata",
+    "garo": "Ka·mikkenata",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
@@ -57223,21 +57205,21 @@
   },
   {
     "english": "Hope",
-    "garo": "Ka-donga",
+    "garo": "Ka·donga",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "To have some hope",
-    "garo": "Ka-donga gnang",
+    "garo": "Ka·donga gnang",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "Bold",
-    "garo": "Ka-donggipa",
+    "garo": "Ka·donggipa",
     "category": null,
     "pos": "adj.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
@@ -57265,7 +57247,7 @@
   },
   {
     "english": "Threat",
-    "garo": "Ka-mikkenata",
+    "garo": "Ka·mikkenata",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]"
@@ -57449,13 +57431,13 @@
   },
   {
     "english": "(teremeles nudiflora). a very large and tall deciduous tree.",
-    "garo": "Bol-bok",
+    "garo": "Bol·bok",
     "category": null,
     "pos": "n."
   },
   {
     "english": "(dysoxylum procerum). a large deciduous tree.",
-    "garo": "Bol-cha·chat",
+    "garo": "Bol·cha·chat",
     "category": null,
     "pos": "n."
   },
@@ -57475,38 +57457,38 @@
   },
   {
     "english": "(duabanga sonneratioides). a large tree.",
-    "garo": "Bol-chim",
+    "garo": "Bol·chim",
     "category": null,
     "pos": "n."
   },
   {
     "english": "(hyptianthera stricta). an aromatic evergreen tree.",
-    "garo": "Bol-dik-i",
+    "garo": "Bol·dik·i",
     "category": null,
     "pos": "n."
   },
   {
     "english": "(hymenodictyon excelsum). a large deciduous tree.",
-    "garo": "Bol-dik-im",
+    "garo": "Bol·dik·im",
     "category": null,
     "pos": "n."
   },
   {
     "english": "(cordia grandis). a middle-sized tree with a spreading crown.",
-    "garo": "Bol-do-bak",
+    "garo": "Bol·do·bak",
     "category": null,
     "pos": "n."
   },
   {
     "english": "(wendlaudia tluclorla). a shrub or small tree with straggling branches",
-    "garo": "Bol-gan-chi, Bol-nabat",
+    "garo": "Bol·gan·chi, Bol·nabat",
     "category": null,
     "pos": "n.",
     "notes": "Typo 'mortant' (for mordant) preserved."
   },
   {
     "english": "the bark is used as a mortant in dyeing.",
-    "garo": "Bol-gan-chi, Bol-nabat",
+    "garo": "Bol·gan·chi, Bol·nabat",
     "category": null,
     "pos": "n.",
     "notes": "Typo 'mortant' (for mordant) preserved."
@@ -57519,7 +57501,7 @@
   },
   {
     "english": "(diospyros toposia). a large evergreen tree.",
-    "garo": "Bolgisim, Bol-gi-sim",
+    "garo": "Bolgisim, Bol·gi·sim",
     "category": null,
     "pos": "n."
   },
@@ -57631,13 +57613,13 @@
   },
   {
     "english": "the fleshy part of the plant",
-    "garo": "Bita (Bi-ta)",
+    "garo": "Bita (Bi·ta)",
     "category": null,
     "pos": "n."
   },
   {
     "english": "bulb.",
-    "garo": "Bita (Bi-ta)",
+    "garo": "Bita (Bi·ta)",
     "category": null,
     "pos": "n."
   },
@@ -57685,19 +57667,19 @@
   },
   {
     "english": "to move backward without turning the body.",
-    "garo": "Bitina (Bit-dina)",
+    "garo": "Bitina (Bit·dina)",
     "category": null,
     "pos": "v."
   },
   {
     "english": "persistently",
-    "garo": "Biting-biting",
+    "garo": "Biting·biting",
     "category": null,
     "pos": "adv."
   },
   {
     "english": "obstinately.",
-    "garo": "Biting-biting",
+    "garo": "Biting·biting",
     "category": null,
     "pos": "adv."
   },
@@ -57709,7 +57691,7 @@
   },
   {
     "english": "nest.",
-    "garo": "Bitip (Bi-tip)",
+    "garo": "Bitip (Bi·tip)",
     "category": null,
     "pos": "n."
   },
@@ -58174,7 +58156,7 @@
   },
   {
     "english": "the posi-tion in a jhum-land up to which weeding is done.",
-    "garo": "A·baku (a-ba-ku)",
+    "garo": "A·baku (a·ba·ku)",
     "category": null,
     "pos": "n.",
     "notes": "Hyphenation 'posi-tion' across lines preserved."
@@ -58234,7 +58216,7 @@
   },
   {
     "english": "my elder sister.",
-    "garo": "Abi (A-bi)",
+    "garo": "Abi (A·bi)",
     "category": null,
     "pos": "n."
   },
@@ -58587,7 +58569,7 @@
   },
   {
     "english": "wealth; riches.",
-    "garo": "Gam-jin, Gamseng",
+    "garo": "Gam·jin, Gamseng",
     "category": null,
     "pos": "n."
   },
@@ -58640,7 +58622,7 @@
   },
   {
     "english": "a woman's home-woven wearing apparel.",
-    "garo": "Gana-re·king",
+    "garo": "Gana·re·king",
     "category": null,
     "pos": "n."
   },
@@ -58732,7 +58714,7 @@
   },
   {
     "english": "the end of the 'gando makkal' when put on.",
-    "garo": "Gando ku-sre",
+    "garo": "Gando ku·sre",
     "category": null,
     "pos": "n."
   },
@@ -58750,14 +58732,14 @@
   },
   {
     "english": "The end of gando tucked into the waist band at the front.",
-    "garo": "Gu-sre",
+    "garo": "Gu·sre",
     "category": null,
     "pos": "n.",
     "notes": "Split from bundled OCR entry (Ki-pil separated out as its own headword, same source line)."
   },
   {
     "english": "a kind of small frog, usually found in cascade or cataract.",
-    "garo": "Gan-drak",
+    "garo": "Gan·drak",
     "category": null,
     "pos": "n."
   },
@@ -58769,7 +58751,7 @@
   },
   {
     "english": "to be in the sensual appetite; lust; to erect (of penis).",
-    "garo": "Gang-a",
+    "garo": "Gang·a",
     "category": null,
     "pos": "vi.",
     "notes": "Typo 'sualappetite' (sensual appetite) preserved."
@@ -58827,7 +58809,7 @@
   },
   {
     "english": "a bantis.",
-    "garo": "Gang-gi",
+    "garo": "Gang·gi",
     "category": null,
     "pos": "n."
   },
@@ -58845,13 +58827,13 @@
   },
   {
     "english": "to bend over backward.",
-    "garo": "Gang-great",
+    "garo": "Gang·great",
     "category": null,
     "pos": "v."
   },
   {
     "english": "without clothes even to wear.",
-    "garo": "Gan-gri chin-gri",
+    "garo": "Gan·gri chin·gri",
     "category": null,
     "pos": "adj."
   },
@@ -58888,7 +58870,7 @@
   },
   {
     "english": "full of pimples.",
-    "garo": "Gangma-ripu",
+    "garo": "Gangma·ripu",
     "category": null,
     "pos": "adj."
   },
@@ -58927,7 +58909,7 @@
   },
   {
     "english": "The end of gando tucked into the waist band at the back.",
-    "garo": "Ki-pil",
+    "garo": "Ki·pil",
     "category": null,
     "pos": "n.",
     "notes": "Split from bundled OCR entry (was combined with Gu-sre under one headword)."
@@ -59259,7 +59241,7 @@
   },
   {
     "english": "to make difficult for a person to understand; to muddle and confuse; to bewilder.",
-    "garo": "Jabra-chaa",
+    "garo": "Jabra·chaa",
     "category": null,
     "pos": "vi."
   },
@@ -59292,7 +59274,7 @@
   },
   {
     "english": "to lie down on one's back with legs bent.",
-    "garo": "Ja·chik-bo·rang gata",
+    "garo": "Ja·chik·bo·rang gata",
     "category": null,
     "pos": "vi."
   },
@@ -59375,7 +59357,7 @@
   },
   {
     "english": "to make stupid or dull; to be deprived of sensi-bility; to stupefy; to bewilder.",
-    "garo": "Jada-changa",
+    "garo": "Jada·changa",
     "category": null,
     "pos": "v."
   },
@@ -59447,7 +59429,7 @@
   },
   {
     "english": "to bewilder; stun; to be stupefied.",
-    "garo": "Jadip-changa",
+    "garo": "Jadip·changa",
     "category": null,
     "pos": "v."
   },
@@ -59573,7 +59555,7 @@
   },
   {
     "english": "to make someone start with sur-prise or fear; to startle.",
-    "garo": "Jagipua (Ja-gipa-bua)",
+    "garo": "Jagipua (Ja·gipa·bua)",
     "category": null,
     "pos": "v."
   },
@@ -59635,13 +59617,13 @@
   },
   {
     "english": "to startle.",
-    "garo": "Jagok-jabria",
+    "garo": "Jagok·jabria",
     "category": null,
     "pos": "v."
   },
   {
     "english": "to happen to be startled; to shudder.",
-    "garo": "Jagokman-pila",
+    "garo": "Jagokman·pila",
     "category": null,
     "pos": "v."
   },
@@ -59660,7 +59642,7 @@
   },
   {
     "english": "to berate; to scold",
-    "garo": "Ka-chaa",
+    "garo": "Ka·chaa",
     "category": null,
     "pos": "v.",
     "notes": "CONFIRMED 2026-07-25, direct native answer - primary sense of Ka-chaa (the existing be-angry/be-cross/be-annoyed senses are real but secondary to this)."
@@ -59882,7 +59864,7 @@
   },
   {
     "english": "With great difficulty; strenuously; to one's fill.",
-    "garo": "Amapet-amjapet",
+    "garo": "Amapet·amjapet",
     "category": null,
     "pos": "adv."
   },
@@ -59894,7 +59876,7 @@
   },
   {
     "english": "A no-man's land between two nokmas' a·kinglands.",
-    "garo": "A-mate",
+    "garo": "A·mate",
     "category": null,
     "pos": "n."
   },
@@ -59912,13 +59894,13 @@
   },
   {
     "english": "Never (do or risk).",
-    "garo": "Ambin-knapba",
+    "garo": "Ambin·knapba",
     "category": null,
     "pos": "adv."
   },
   {
     "english": "Same as Ama-pet-amjapet.",
-    "garo": "Amae-amjae",
+    "garo": "Amae·amjae",
     "category": null,
     "pos": "adj."
   },
@@ -59937,13 +59919,13 @@
   },
   {
     "english": "Ancestors; forefathers.",
-    "garo": "Ambi-atchu",
+    "garo": "Ambi·atchu",
     "category": null,
     "pos": "n."
   },
   {
     "english": "A name of a species of beetle which shams death when caught and if body is pressed it clic's; a death-watch.",
-    "garo": "Ambi-tiksu",
+    "garo": "Ambi·tiksu",
     "category": null,
     "pos": "n."
   },
@@ -59997,13 +59979,13 @@
   },
   {
     "english": "In vain; to no purpose; fruitless; aimless.",
-    "garo": "A·mikbrang, A·mikbrang-chimikbrang",
+    "garo": "A·mikbrang, A·mikbrang·chimikbrang",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "So and so; a certain man.",
-    "garo": "Amika (A-mik-a)",
+    "garo": "Amika (A·mik·a)",
     "category": null,
     "pos": "n."
   },
@@ -60033,7 +60015,7 @@
   },
   {
     "english": "To grudge; to accuse of unfaithfullness.",
-    "garo": "Amit-jachaa",
+    "garo": "Amit·jachaa",
     "category": null,
     "pos": "v.",
     "notes": "Typo 'unfaithfullness' preserved."
@@ -60170,7 +60152,7 @@
   },
   {
     "english": "To have sexual intercourse.",
-    "garo": "An·chi-jakchi nanga",
+    "garo": "An·chi·jakchi nanga",
     "category": null,
     "pos": "v.",
     "notes": "OPEN — Project Owner flagged 2026-08-03: no reference available to confirm either form. Left unresolved, not promoted, not superseded. NV-053."
@@ -60250,31 +60232,31 @@
   },
   {
     "english": "We, including the one to whom addressed.",
-    "garo": "An-ching",
+    "garo": "An·ching",
     "category": null,
     "pos": "pr."
   },
   {
     "english": "Us. (in the accusative case).",
-    "garo": "An-chingko",
+    "garo": "An·chingko",
     "category": null,
     "pos": "pr."
   },
   {
     "english": "Us; to us.",
-    "garo": "An-chingna",
+    "garo": "An·chingna",
     "category": null,
     "pos": "pr."
   },
   {
     "english": "Our.",
-    "garo": "An-chingni",
+    "garo": "An·chingni",
     "category": null,
     "pos": "pr."
   },
   {
     "english": "Ours.",
-    "garo": "An-chingnin",
+    "garo": "An·chingnin",
     "category": null,
     "pos": "pr."
   },
@@ -60292,7 +60274,7 @@
   },
   {
     "english": "In the dark.",
-    "garo": "Andal-min·dik",
+    "garo": "Andal·min·dik",
     "category": null,
     "pos": "adv."
   },
@@ -60353,31 +60335,31 @@
   },
   {
     "english": "A sharp and pointed bamboo splinter; a bamboo knife.",
-    "garo": "An-dileng",
+    "garo": "An·dileng",
     "category": null,
     "pos": "n."
   },
   {
     "english": "A female disease after delivery.",
-    "garo": "An-dime",
+    "garo": "An·dime",
     "category": null,
     "pos": "n."
   },
   {
     "english": "A timber which support the floor of a platform; a joist.",
-    "garo": "An-ding",
+    "garo": "An·ding",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Not easily consumable; lasting for a longer period.",
-    "garo": "An-donga",
+    "garo": "An·donga",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "To use economically; to spend frugally.",
-    "garo": "An-dongata",
+    "garo": "An·dongata",
     "category": null,
     "pos": "v."
   },
@@ -60467,7 +60449,7 @@
   },
   {
     "english": "To stretch the body or limb.",
-    "garo": "An-misala",
+    "garo": "An·misala",
     "category": null,
     "pos": "vi."
   },
@@ -60485,239 +60467,239 @@
   },
   {
     "english": "To shudder; to feel repulsive.",
-    "garo": "An-misila",
+    "garo": "An·misila",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To attend the delivery case; to attend the child-birth; to assist woman in childbirth.",
-    "garo": "An-nia",
+    "garo": "An·nia",
     "category": null,
     "pos": "v."
   },
   {
     "english": "With child; pregnant (more polite than okgnanga).",
-    "garo": "An-gnang",
+    "garo": "An·gnang",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "Palsy; paralysis.",
-    "garo": "An-ma goka",
+    "garo": "An·ma goka",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Backbone; the spine.",
-    "garo": "An-mrong",
+    "garo": "An·mrong",
     "category": null,
     "pos": "n."
   },
   {
     "english": "To be pregnant; to be with child; to conceive.",
-    "garo": "An-o gnang",
+    "garo": "An·o gnang",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To wear the clothe next the skin.",
-    "garo": "An-paa",
+    "garo": "An·paa",
     "category": null,
     "pos": "vt.",
     "notes": "Typo 'clothe' (clothes) preserved."
   },
   {
     "english": "Outer portion; the bedcloth which is nearest the body.",
-    "garo": "An-pagipa",
+    "garo": "An·pagipa",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Delivery; child birth.",
-    "garo": "An-paka",
+    "garo": "An·paka",
     "category": null,
     "pos": "n."
   },
   {
     "english": "To deliver; to give birth to; to bear.",
-    "garo": "An-paka",
+    "garo": "An·paka",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To stretch one's limbs when yawning; to twist or stretch the limb or body for relaxation.",
-    "garo": "An-pea",
+    "garo": "An·pea",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To turn backwards; to turn a new leaf; to turn away the head; to draw back in fear; to flench.",
-    "garo": "An-pila",
+    "garo": "An·pila",
     "category": null,
     "pos": "v.",
     "notes": "Typo 'flench' (flinch) preserved."
   },
   {
     "english": "To turn from side to side in bed when lying down.",
-    "garo": "An-pile ketchie tua",
+    "garo": "An·pile ketchie tua",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To turn back or",
-    "garo": "An-pildata",
+    "garo": "An·pildata",
     "category": null,
     "pos": "v.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] Entry cut off at the bottom of the page; continuation flows to page 11."
   },
   {
     "english": "To turn aside; to keep away; to ward off.",
-    "garo": "An-pile kata",
+    "garo": "An·pile kata",
     "category": null,
     "pos": "vi."
   },
   {
     "english": "To be not without child but pregnant.",
-    "garo": "An-rara-jakrara ong·ja",
+    "garo": "An·rara·jakrara ong·ja",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "To stretch one's limps.",
-    "garo": "An-sala",
+    "garo": "An·sala",
     "category": null,
     "pos": "v.",
     "notes": "Typo 'limps' (limbs) preserved."
   },
   {
     "english": "To get well; to get all right; to be pleasant; to be happy; to be in good health; to feel well.",
-    "garo": "An-senga",
+    "garo": "An·senga",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Health; happiness; gladness; joy.",
-    "garo": "An-sengani",
+    "garo": "An·sengani",
     "category": null,
     "pos": "n."
   },
   {
     "english": "To heal; to cure; to remedy.",
-    "garo": "An-sengata",
+    "garo": "An·sengata",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Healthy; happy; pleasant; cheerful.",
-    "garo": "An-senggipa",
+    "garo": "An·senggipa",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "To feel unwell; to be sickly.",
-    "garo": "An-sengja",
+    "garo": "An·sengja",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "To shake or tremble with fear, horror; to shudder.",
-    "garo": "An-skita",
+    "garo": "An·skita",
     "category": null,
     "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with verbal definition."
   },
   {
     "english": "A contagious skin disease; yaws.",
-    "garo": "An-soa",
+    "garo": "An·soa",
     "category": null,
     "pos": "n."
   },
   {
     "english": "A wearing apparel.",
-    "garo": "An-sre",
+    "garo": "An·sre",
     "category": null,
     "pos": "n.",
     "notes": "Refined per Holbrook's dictionary (relayed by Project Owner, 2026-08-03): specifically the front end of a non-Christian Garo man's loincloth, not a generic \"wearing apparel\" gloss. Original OCR gloss retained in english field pending a full re-gloss pass; source-cited refinement logged here per evidence-first discipline. NV-053."
   },
   {
     "english": "To change dress.",
-    "garo": "An-srea",
+    "garo": "An·srea",
     "category": null,
     "pos": "v."
   },
   {
     "english": "To shiver; to quiver; to tremble.",
-    "garo": "An-sri moa",
+    "garo": "An·sri moa",
     "category": null
   },
   {
     "english": "To be effective; to have given effect to.",
-    "garo": "An-sua",
+    "garo": "An·sua",
     "category": null,
     "pos": "v."
   },
   {
     "english": "Effective; powerful.",
-    "garo": "An-sua",
+    "garo": "An·sua",
     "category": null,
     "pos": "adj."
   },
   {
     "english": "Evening.",
-    "garo": "An-tam, Attam",
+    "garo": "An·tam, Attam",
     "category": null,
     "pos": "n."
   },
   {
     "english": "In the evening; in the afternoon.",
-    "garo": "An-tamo",
+    "garo": "An·tamo",
     "category": null,
     "pos": "adv."
   },
   {
     "english": "Towards the evening.",
-    "garo": "An-tamchibara",
+    "garo": "An·tamchibara",
     "category": null,
     "pos": "adv."
   },
   {
     "english": "In the evening just before darkness; time before dusk.",
-    "garo": "An-tampang",
+    "garo": "An·tampang",
     "category": null,
     "pos": "adv."
   },
   {
     "english": "Self.",
-    "garo": "An-tang",
+    "garo": "An·tang",
     "category": null,
     "pos": "pr."
   },
   {
     "english": "The self; ego.",
-    "garo": "An-tang",
+    "garo": "An·tang",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Plural of self; themselves; ourselves.",
-    "garo": "An-tangtang",
+    "garo": "An·tangtang",
     "category": null,
     "pos": "pr."
   },
   {
     "english": "As for myself; as for oneself; in its place.",
-    "garo": "An-tangnade",
+    "garo": "An·tangnade",
     "category": null
   },
   {
     "english": "To himself, herself, itself, one's self.",
-    "garo": "An-tangna",
+    "garo": "An·tangna",
     "category": null,
     "pos": "pr."
   },
   {
     "english": "Belonging to one-self; one's own; individual; personal.",
-    "garo": "An-tangni",
+    "garo": "An·tangni",
     "category": null,
     "pos": "pr."
   },
@@ -60759,25 +60741,25 @@
   },
   {
     "english": "A crawfish; a shrimp; prawn; lobster.",
-    "garo": "An-tik, (Na-tik)",
+    "garo": "An·tik, (Na·tik)",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Odour; smell.",
-    "garo": "An-ting",
+    "garo": "An·ting",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Circumference; girth; limb; trunk.",
-    "garo": "An-tong",
+    "garo": "An·tong",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Not worth anything; of no use; valueless.",
-    "garo": "A-ograng-chiograng",
+    "garo": "A·ograng·chiograng",
     "category": null
   },
   {
@@ -60794,26 +60776,26 @@
   },
   {
     "english": "Region; side; clime.",
-    "garo": "A-pak",
+    "garo": "A·pak",
     "category": null,
     "pos": "n."
   },
   {
     "english": "Plain; a flat land; out-side; stool; dung; excrement.",
-    "garo": "A-pal",
+    "garo": "A·pal",
     "category": null,
     "pos": "n."
   },
   {
     "english": "A plough land; wet cultivation; a paddy field.",
-    "garo": "A-pal",
+    "garo": "A·pal",
     "category": null,
     "pos": "n.",
     "notes": "Repeated headword."
   },
   {
     "english": "To pass motion; to move bowels.",
-    "garo": "A-pala",
+    "garo": "A·pala",
     "category": null,
     "pos": "v."
   },
@@ -60966,7 +60948,7 @@
   },
   {
     "english": "put the pen inside the bag",
-    "garo": "Kolomko bag-o sikatbo",
+    "garo": "Kolomko bag·o sikatbo",
     "category": "phrases",
     "pos": null,
     "classifier": null,
@@ -61167,5 +61149,13 @@
     "category": "phrases",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"na.a maina ka.dinga?\" -- alternate subject-first word order for the same question, alongside the existing question-word-first \"Maina na·a ka·dinga?\"/\"Maina (na·a) ka·dinga?\"."
+  },
+  {
+    "english": "smiled",
+    "garo": "Ka·dingsmitaha",
+    "pos": "v.",
+    "category": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-06 (Project Owner relay, Thangseng direct via WhatsApp): \"smiled=Ka.dingsmitaha\" -- past tense of the confirmed root Ka·dingsmita (\"smile\"), root+aha pattern (matches other confirmed past-tense forms in irregular_verbs.json)."
   }
 ]

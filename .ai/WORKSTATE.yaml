@@ -1351,6 +1351,48 @@ claude_a:
     0 new violations all checks (Check F known-mismatches actually
     dropped 232->231, laugh no longer mismatches), unit tests 177/177.
     Manually verified all 6 words resolve correctly via translate().
+  latest_8: >-
+    2026-08-06 (same session, PO: "eliminate the word Ka·ding·a from the
+    entire repo... eliminate duplicates" + "Ka·ding·a is a wrong word
+    for smile, replace with ka.dingsmita" + "all hyphens needs to be
+    replaced with rakka, hyphens are wrong entry"). Full elimination
+    (not just SUPERSEDED-marking): deleted Ka·ding·a laugh/smile entries
+    from master_dictionary.json (2, after fixing a case-sensitivity bug
+    in my own first deletion attempt - compared lowercased eng var
+    against mixed-case literal, silently no-opped, caught via
+    compiled_dict.json spot-check showing stale value still shipping).
+    Traced root cause to garo_dictionary.json (a live prepare-data.js
+    pipeline source, dict1/source=0) - 4 raw Ka·ding·a entries there,
+    almost certainly the original entry point for the bug; fixed all 4
+    plus 3 related smile entries in the same file. Also fixed 1 in
+    final_entries.json (orphaned, not in the live pipeline, fixed
+    anyway per explicit repo-wide instruction). Zero Ka·ding·a
+    occurrences confirmed remaining anywhere in live data (grep swept
+    every source + compiled + alternates file). Added 2 new native-
+    confirmed entries: laughter=Ka·dingani (was wrongly duplicating the
+    verb), smiled=Ka·dingsmitaha (past tense, root+aha pattern) - both
+    in master_dictionary.json and irregular_verbs.json. Separately
+    executed the global hyphen->raka conversion flagged-but-unauthorized
+    earlier this session: 327 master_dictionary.json entries + 332
+    pending_lexicon.json promotion records (kept in sync to avoid Check
+    D staleness) converted; garo_dictionary.json/final_entries.json/
+    phrase_maps.js/corrections.json already had zero hyphens. Updated
+    docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md noting
+    the source-level cleanup narrows the 337-key bug's blast radius
+    (many were exactly this hyphen/raka pair) without changing the
+    underlying prepare-data.js diagnosis, still Claude B's fix. Hit 2
+    stale test-suite issues along the way, both legitimate updates not
+    regressions: tests/unit/translationEngine.test.js had 2 tests
+    literally asserting the old hyphenated "console"->"Ka-dimea" value
+    and the old unconfirmed smile candidate ka·ding·sim·ik·a - updated
+    both to the now-correct values with explanatory comments. Also
+    updated irregular_verbs.json entry-count assertion 50->51 for the
+    new smiled entry, and pending_lexicon.json PL-0001166 (Laughter)
+    to match the corrected garo value, both caught by Check D/test
+    failures and fixed same pass. Final state: 8061 entries,
+    test-dictionary 8061/8061, repository-intelligence 0 new violations
+    all checks, unit tests 177/177. Manually verified laugh/laughter/
+    smile/smiled/"why do you laugh?" all resolve to correct values.
 
 claude_b:
   status: active
