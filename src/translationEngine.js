@@ -273,7 +273,22 @@ export function getAllVocabulary() {
     for (const e of arr) {
       if (e?.garo) {
         const correctedGaro = corrections[english] || e.garo;
-        entries.push({ english, garo: correctedGaro, pos: e.pos||null, category: e.category||'uncategorized', classifier: e.classifier||null });
+        // BUGFIX (2026-08-09, "getCategories()/getByCategory() dormant"
+        // — flagged docs/CLAUDE_B_MIGRATION_20260808.md P1 #2): compiled_
+        // dict.json's values are plain Garo strings (no category field at
+        // all — see prepare-data.js's `finalized[key] = primary`), so
+        // normalizeEntry() always produced category: null here, and every
+        // entry fell through to the 'uncategorized' default below. The
+        // real per-word category data has existed all along in
+        // category_index.json (built separately by prepare-data.js from
+        // master_dictionary.json), and was already being used as a
+        // fallback by the default-export wrapper's getAllCategories()/
+        // getCategoryVocabulary() — but never by these two raw named
+        // exports themselves, since both are pure derivations of
+        // getAllVocabulary(). Looking CATEGORY_INDEX up here fixes both
+        // at the source, consistent with what the wrapper already does.
+        const category = e.category || CATEGORY_INDEX[english] || 'uncategorized';
+        entries.push({ english, garo: correctedGaro, pos: e.pos||null, category, classifier: e.classifier||null });
       }
     }
     seenEnglish.add(english);
@@ -281,7 +296,7 @@ export function getAllVocabulary() {
   for (const [english, garo] of Object.entries(corrections)) {
     if (seenEnglish.has(english)) continue;
     if (english.includes(' ')) continue;
-    entries.push({ english, garo, pos: null, category: 'uncategorized', classifier: null });
+    entries.push({ english, garo, pos: null, category: CATEGORY_INDEX[english] || 'uncategorized', classifier: null });
   }
   return entries;
 }

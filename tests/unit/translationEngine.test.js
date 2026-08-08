@@ -1221,3 +1221,42 @@ test('inverted yes/no questions ("is he/she going to X?") retain the verb, match
   assert.equal(sheQuestion.method, 'grammar-assembly');
   assert.ok(sheQuestion.garo.includes('ma?'));
 });
+
+// --- getCategories()/getByCategory() dormant (flagged P1 in
+// docs/CLAUDE_B_MIGRATION_20260808.md, carried over multiple prior
+// sessions): both always returned only ['uncategorized'] / an empty list,
+// because getAllVocabulary() built every entry from compiled_dict.json —
+// which stores plain Garo strings with no category field at all — and
+// never consulted category_index.json (built separately from
+// master_dictionary.json), even though the default-export wrapper's
+// getAllCategories()/getCategoryVocabulary() already fell back to it.
+// Fix: getAllVocabulary() now looks each english key up in CATEGORY_INDEX
+// when the compiled-dict entry itself has no category. Real category data
+// existed the whole time; this was purely a wiring gap.
+test('getCategories() returns real categories from category_index.json, not just ["uncategorized"]', async () => {
+  const { getCategories } = await import('../../src/translationEngine.js');
+  const cats = getCategories();
+  assert.ok(cats.length > 1, `expected multiple real categories, got: ${JSON.stringify(cats)}`);
+  assert.ok(cats.includes('home'), `expected 'home' among categories, got: ${JSON.stringify(cats)}`);
+  assert.ok(cats.includes('animals'), `expected 'animals' among categories, got: ${JSON.stringify(cats)}`);
+});
+
+test('getByCategory("home") returns real dictionary entries tagged with that category', async () => {
+  const { getByCategory } = await import('../../src/translationEngine.js');
+  const homeEntries = getByCategory('home');
+  assert.ok(homeEntries.length > 0, 'expected at least one "home"-category entry');
+  assert.ok(homeEntries.every(e => e.category === 'home'), 'every returned entry must actually be tagged "home"');
+  assert.ok(homeEntries.some(e => e.english === 'door'), `expected "door" among home entries, got: ${JSON.stringify(homeEntries.map(e => e.english).slice(0, 10))}`);
+});
+
+test('getAllVocabulary() prefers a compiled-dict entry\'s own category over category_index.json when both exist (no silent override of real data)', async () => {
+  const { getAllVocabulary } = await import('../../src/translationEngine.js');
+  const vocab = getAllVocabulary();
+  // compiled_dict.json entries are plain strings today (category always
+  // null coming in), so every entry's category currently comes from
+  // CATEGORY_INDEX or the 'uncategorized' default — this just guards
+  // that assumption doesn't silently reverse if compiled_dict.json's
+  // shape ever changes to carry its own category again.
+  assert.ok(vocab.length > 0);
+  assert.ok(vocab.every(e => typeof e.category === 'string' && e.category.length > 0));
+});
