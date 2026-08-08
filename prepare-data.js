@@ -362,7 +362,29 @@ function main() {
     // the three senses.
     'right (direction)': 'Jak·ra',
     'right (matching)': 'kra·a',
-    'right (correct)': 'Kakket'
+    'right (correct)': 'Kakket',
+    // NV-067 follow-up (flagged in docs/CLAUDE_A_SESSION_MIGRATION_20260808.md
+    // as an open P1 engine bug, root-caused there to pickPrimary's
+    // master-preference branch): master_dictionary.json's remaining
+    // (non-SUPERSEDED) "smile"/"Smile" candidate is itself notes-tagged
+    // "variant/VERIFIED/HIGH -- ...status relative to Ka·dingsmita is
+    // unconfirmed", i.e. explicitly NOT the confirmed default — yet
+    // pickPrimary's isVariant/isVerified fields can't distinguish that
+    // free-text caveat from genuinely-confirmed variant rows like
+    // "table"'s (identical "variant/VERIFIED/HIGH" tag shape, but
+    // silently confirmed), so a blanket variant-aware change to
+    // pickPrimary itself regressed the table/buy/door SUPERSEDED-
+    // precedence pattern (RC-CANDIDATE-027) when tried. A dedicated
+    // override — same mechanism already used for "right"'s 3-way split
+    // above — is the narrow, non-guessing fix: master_dictionary.json's
+    // "To smile" row (separate key, notes "VERIFIED/HIGH. Confirmed
+    // 2026-08-06...") is the actual native-confirmed value; this only
+    // sets bare "smile" to match what corrections.json already patches
+    // at the translate()/lookupGaro() layer, so the compiled artifact
+    // itself (compiled_dict.json, used directly by lookup()/near-
+    // duplicate tooling, which don't go through corrections.json) is
+    // correct too, not just runtime translation.
+    'smile': 'Ka·dingsmita'
   };
 
   const { finalized, alternates } = finalizeDictionary(mergedValues, grammarOverrides);
