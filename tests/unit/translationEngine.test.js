@@ -1293,9 +1293,36 @@ test('"she has N children" for counts without a corrections.json entry still app
 test('object-loop classifier fix does not touch already-resolved counting phrases (e.g. existing dictionary "three dogs" entry)', async () => {
   const withNumber = await translate('she has three dogs');
   const withoutNumber = await translate('she has dogs');
-  // Whatever "three dogs" resolves to (a separate, already-flagged data-
-  // quality question, not in scope here), it must NOT be identical to
-  // the number-less sentence — i.e. the number must not be silently
-  // dropped the way "children" was before this fix.
+  // "three dogs" itself is no longer a stale/wrong value (see prepare-
+  // data.js's counting-phrase self-correction, 2026-08-09, which fixed
+  // this specific entry along with 214 others) — but this test's actual
+  // job is narrower and still holds regardless: it must NOT be identical
+  // to the number-less sentence, i.e. the number must not be silently
+  // dropped the way "children" was before the object-loop fix.
   assert.notEqual(withNumber.garo, withoutNumber.garo);
+});
+
+// --- Counting-phrase self-correction (2026-08-09, per explicit native-
+// speaker-confirmed reference: "two dogs"=achak mang·gni, "three
+// dogs"=achak mang·gittam, "four dogs"=achak mang·bri). prepare-data.js
+// now re-derives every "<number> <noun>" compiled_dict.json entry from
+// garo_classifier.js's classifier engine at build time (noun's own
+// canonical dictionary entry + its confirmed classifier + the count),
+// overwriting whatever stale literal value the source dictionaries had —
+// closing this as a systemic, self-healing build step rather than a
+// one-off patch of the entries known-wrong today.
+test('counting-phrase entries use the correct classifier suffix for their actual count, across categories (not just animals)', async () => {
+  const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
+  const cases = [
+    ['two dogs', 'achak mang·gni'],
+    ['three dogs', 'achak mang·gittam'],
+    ['four dogs', 'achak mang·bri'],
+    ['one person', 'man·de sak·sa'],
+    ['two teachers', 'ti·char sak·gni'],
+    ['three books', 'ki·tap kinggittam'],
+    ['five coins', 'tangka·bisil gong·bonga'],
+  ];
+  for (const [key, expected] of cases) {
+    assert.equal(compiledDict[key], expected, `compiled_dict["${key}"] should be classifier-engine-derived`);
+  }
 });

@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+import { NUMBER_WORDS, CLASSIFIER_MAP, countNoun, parseCountingPhrase } from './src/garo_classifier.js';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -420,6 +422,60 @@ function main() {
   });
   if (bareAliasCount) {
     console.log(`Bare-infinitive aliases added: ${bareAliasCount} ("to X" -> "X" where "X" had no entry)`);
+  }
+
+  // Counting-phrase self-correction (2026-08-09, per explicit native-
+  // speaker-confirmed reference examples: "two dogs"=achak mang·gni,
+  // "three dogs"=achak mang·gittam, "four dogs"=achak mang·bri — flagged
+  // as a systemic, cross-category problem, not a one-off "three dogs"
+  // typo). Root cause: hundreds of "<number> <noun>" entries across
+  // master_dictionary.json/garo_dictionary.json were hand-authored
+  // literal phrases (OCR imports, early manual entries, etc.), stored
+  // and merged the same as any other headword — completely independent
+  // of garo_classifier.js's classifier-composition system (mang/sak/
+  // king/gong/jol/ge/rong/pang/dot + number suffix), even though that
+  // system is itself already native-speaker-confirmed (see
+  // garo_classifier.js file header) and can DERIVE the correct value
+  // for any of these entries from two already-verified facts: the bare
+  // noun's own dictionary entry, and the classifier category it
+  // belongs to. A one-time hand-patch of the ~400 currently-mismatched
+  // entries would fix today's data but not stop tomorrow's OCR import
+  // from reintroducing the same class of error — so instead, every
+  // build now derives these phrases fresh from the classifier engine
+  // and overwrites whatever literal value the source files had,
+  // permanently closing this category of drift rather than patching
+  // today's snapshot of it.
+  //
+  // Deliberately conservative about WHEN this fires, to add zero new
+  // guessed linguistic data:
+  //   - only when the noun has an EXPLICIT entry in CLASSIFIER_MAP
+  //     (never the 'ge' catch-all default for an unmapped noun — that
+  //     default is confirmed correct only for its own listed nouns,
+  //     not as a blind guess for arbitrary countable objects)
+  //   - only when the bare singular noun itself already has its own
+  //     finalized (post pickPrimary-resolution) dictionary entry — the
+  //     SAME canonical spelling every other lookup in this app uses,
+  //     not a raw, pre-merge, possibly-superseded source-file spelling
+  //   - never invents a new key: only overwrites keys that already
+  //     existed as "<number> <noun>" phrases in the source data
+  let countingPhraseCorrections = 0;
+  Object.keys(finalized).forEach(key => {
+    const words = key.split(' ');
+    if (words.length < 2 || NUMBER_WORDS[words[0]] === undefined) return;
+    const countPhrase = parseCountingPhrase(key);
+    if (!countPhrase) return;
+    if (!Object.prototype.hasOwnProperty.call(CLASSIFIER_MAP, countPhrase.englishNoun)) return;
+    const nounGaro = finalized[countPhrase.englishNoun] || finalized[countPhrase.originalNoun];
+    if (!nounGaro) return;
+    const expected = countNoun(nounGaro, countPhrase.count, countPhrase.englishNoun);
+    if (expected && finalized[key] !== expected) {
+      finalized[key] = expected;
+      delete alternates[key];
+      countingPhraseCorrections++;
+    }
+  });
+  if (countingPhraseCorrections) {
+    console.log(`Counting-phrase entries corrected via classifier engine: ${countingPhraseCorrections} ("<number> <noun>" phrases re-derived from the noun's own dictionary entry + its confirmed classifier, overwriting stale literal values)`);
   }
 
   const srcDir = path.join(__dirname, 'src');
