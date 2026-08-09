@@ -1260,3 +1260,42 @@ test('getAllVocabulary() prefers a compiled-dict entry\'s own category over cate
   assert.ok(vocab.length > 0);
   assert.ok(vocab.every(e => typeof e.category === 'string' && e.category.length > 0));
 });
+
+// --- "she has three children" open issue (P1 in
+// docs/CLAUDE_B_MIGRATION_20260808.md): grammarEngine.js's object-
+// extraction loop went straight from a failed full-phrase lookup
+// ("three children") to a bare lastWord lookup ("children" ->
+// "Bi·sarang"), silently dropping the leading number word and never
+// applying a classifier — even though garo_classifier.js's countNoun()/
+// parseCountingPhrase() already handle exactly this correctly on their
+// own. Fixed by wiring that existing classifier engine into the object
+// loop, scoped to only fire when no full-phrase lookup already succeeds
+// (so it can never override an existing, even if separately-flagged-
+// wrong, dictionary/phrase-map entry like "three dogs").
+test('"she/he has N children" applies the sak (person) classifier instead of silently dropping the number', async () => {
+  const cases = [
+    ['she has three children', 'Ua bi·sa sak·gittam donga'],
+    ['he has three children', 'Ua bi·sa sak·gittam donga'],
+  ];
+  for (const [input, expected] of cases) {
+    const result = await translate(input);
+    assert.equal(result.garo, expected);
+  }
+});
+
+test('"she has N children" for counts without a corrections.json entry still applies the classifier via grammar-assembly', async () => {
+  const result = await translate('she has five children');
+  assert.equal(result.method, 'grammar-assembly');
+  assert.equal(result.garo, 'Ua bi·sa sak·bonga·ko donga');
+  assert.ok(!result.garo.includes('bi·sarang'), 'should not fall back to the bare plural noun with no classifier');
+});
+
+test('object-loop classifier fix does not touch already-resolved counting phrases (e.g. existing dictionary "three dogs" entry)', async () => {
+  const withNumber = await translate('she has three dogs');
+  const withoutNumber = await translate('she has dogs');
+  // Whatever "three dogs" resolves to (a separate, already-flagged data-
+  // quality question, not in scope here), it must NOT be identical to
+  // the number-less sentence — i.e. the number must not be silently
+  // dropped the way "children" was before this fix.
+  assert.notEqual(withNumber.garo, withoutNumber.garo);
+});

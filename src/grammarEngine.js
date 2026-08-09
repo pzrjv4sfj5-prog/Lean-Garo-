@@ -13,7 +13,7 @@ import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import POSSESSIVES from './data/possessives.json' with { type: 'json' };
-import { NUMBER_WORDS } from './garo_classifier.js';
+import { NUMBER_WORDS, countNoun, parseCountingPhrase } from './garo_classifier.js';
 import { lookupGaro } from './lookupEngine.js';
 import { lookupPhrase } from './data/phrase_maps.js';
 import { applyNegation, applyTense, findVerbForm } from './morphologyEngine.js';
@@ -378,7 +378,41 @@ export function analyzeGrammar(input) {
     if (objectWords.length > 0) {
       const objEng = objectWords.join(' ');
       const lastWord = objectWords[objectWords.length-1];
-      const objGaro = lookupPhrase(objEng) || lookupGaro(objEng) || lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
+      // BUGFIX (2026-08-09, "she has three children" open issue, flagged
+      // P1 in docs/CLAUDE_B_MIGRATION_20260808.md): this used to go
+      // straight from a failed full-phrase lookup (objEng, e.g. "three
+      // children") to a bare lastWord lookup ("children" -> "Bi·sarang"),
+      // silently discarding any leading number word with no classifier
+      // applied at all — even though garo_classifier.js's countNoun()/
+      // parseCountingPhrase() already correctly handle exactly this
+      // ("three children" -> "bi·sa sak·gittam", matching the manual
+      // corrections.json entry for the same sentence) — they just weren't
+      // wired into this object-assembly path. Root cause: this file's
+      // object loop and step 1.6's standalone counting-phrase check in
+      // translationEngine.js are two independent object-noun resolvers
+      // that never shared the classifier engine. Scoped narrowly: only
+      // used when (a) the object phrase actually starts with a number
+      // word AND (b) no existing full-phrase lookup already succeeds —
+      // condition (b) means this never touches an already-answered case,
+      // including known-stale pre-baked "N noun" dictionary entries
+      // (e.g. "three dogs" -> "achak mang·gni", a separate data-quality
+      // issue flagged for Claude A, not silently overwritten here).
+      let objGaro = null;
+      const existingFullPhrase = lookupPhrase(objEng) || lookupGaro(objEng);
+      if (!existingFullPhrase) {
+        const countPhrase = parseCountingPhrase(objEng);
+        if (countPhrase) {
+          const nounGaro = lookupPhrase(countPhrase.englishNoun) || lookupGaro(countPhrase.englishNoun)
+            || lookupPhrase(countPhrase.originalNoun) || lookupGaro(countPhrase.originalNoun);
+          if (nounGaro) {
+            const classifierPhrase = countNoun(nounGaro, countPhrase.count, countPhrase.englishNoun);
+            if (classifierPhrase) objGaro = classifierPhrase;
+          }
+        }
+      }
+      if (!objGaro) {
+        objGaro = existingFullPhrase || lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
+      }
       const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
       object = { english: objEng, garo: objGaro, withMarker: objGaro + marker, isLocativeAdjunct: objectIsLocativeAdjunct };
     }
