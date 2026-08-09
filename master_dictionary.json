@@ -15911,7 +15911,8 @@
   {
     "english": "she",
     "garo": "Ua",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH. Note 2026-08-09 (NV-071): the same word is confirmed for 'he' in a direct native sentence ('ua ga·soltapaha' = 'he slipped') — Ua appears to be a gender-neutral 3rd-person pronoun, not exclusively 'she'. See new 'he'=Ua entry."
   },
   {
     "english": "we",
@@ -38716,7 +38717,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Example: 'Sen·dil rimila.' = 'The sandal is slippery.' Existing 'ja·kop' candidate left UNVERIFIED, not contradicted (may be a distinct footwear term)."
   },
   {
     "english": "sap",
@@ -40108,7 +40109,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Example: 'A·pa rimila.' = 'The floor is slippery.' Bare-adjective predicate, no copula — cf. RULE-006."
   },
   {
     "english": "slippery ground",
@@ -61300,5 +61301,109 @@
     "category": "phrases",
     "classifier": null,
     "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Past form of the au- (shower/bathe) paradigm, per RULE-002 (-aha marks simple past/perfect). Example: 'Anga auaha.' = 'I took a shower.'"
+  },
+  {
+    "english": "he",
+    "garo": "Ua",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Example: 'Ua ga·soltapaha.' = 'He slipped.' Same word already VERIFIED/HIGH for 'she' — appears to be a gender-neutral 3rd-person pronoun, not two homophonous words. Not yet confirmed whether it covers 'it' as well."
+  },
+  {
+    "english": "slip",
+    "garo": "Ga·soltapa",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). General/citation form. Past form 'Ga·soltapaha' confirmed same relay (RULE-002, -aha). Internal morpheme boundaries beyond the single marked raka not analyzed — retained as given, not further segmented."
+  },
+  {
+    "english": "he slipped",
+    "garo": "Ua ga·soltapaha.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Confirms RULE-002 (-aha past) applied to the new 'slip' root Ga·soltapa. See also new 'he'=Ua entry."
+  },
+  {
+    "english": "floor",
+    "garo": "A·pa",
+    "pos": null,
+    "category": "home",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Examples: 'A·pa rimila.' = 'The floor is slippery.'; 'A·pa sosia.' = 'The floor is wet.'"
+  },
+  {
+    "english": "the floor is slippery",
+    "garo": "A·pa rimila.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Bare-adjective predicate, no copula — cf. RULE-006."
+  },
+  {
+    "english": "the floor is wet",
+    "garo": "A·pa sosia.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Both 'floor' (A·pa) and 'wet' (so·si·a, already VERIFIED/HIGH from an earlier round) were already-known items reconfirmed together in this sentence — no dictionary key changes needed, retained as citation evidence for the sentence pairing itself."
+  },
+  {
+    "english": "the sandal is slippery",
+    "garo": "Sen·dil rimila.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Same bare-adjective predicate pattern as 'the floor is slippery.'"
+  },
+  {
+    "english": "a little / somewhat",
+    "garo": "on·tisa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Degree adverb ('a bit/a little further'), used pre-verbally in movement commands: 'Iachi on·tisa re·babo.' = 'Come a little (over) here.'; 'Uachi on·tisa re·angbo.' = 'Go a little (over) there.' Deliberately kept as a separate key from the existing 'little' adjective candidates (ak·ki, ak·ki·sa, chon·a, kom, all still UNVERIFIED) — this is a distinct word, not a confirmation or correction of those; the two senses (size adjective vs. degree adverb) may or may not share a root, not established here."
+  },
+  {
+    "english": "come a little here",
+    "garo": "Iachi on·tisa re·babo.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). re·babo already VERIFIED/HIGH (existing 'come!' imperative). 'Iachi' (here, this sentence) is a DIFFERENT confirmed 'here'-word from 'Ianona', which appears in the pre-existing, also-VERIFIED/HIGH 'come here!'='Ianona re·babo!' — both are directly attested; not reconciled or ranked against each other here. Possible read (not claimed as established): 'Iachi' = bare deictic root 'Ia' + the RULE-044 movement-to suffix '-chi' directly, vs. 'Ianona' = 'Iano' + a separate '-na' directional suffix (parallel to 'banona'=\"where to?\" in RULE-044's native_notes) — two distinct routes to a movement sense on the same 'here' root. Flagged for RULE-044 follow-up, not resolved."
+  },
+  {
+    "english": "go a little there",
+    "garo": "Uachi on·tisa re·angbo.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). re·angbo already VERIFIED/HIGH (existing 'go' imperative, RULE-044 examples). 'Uachi' (there, movement) parallels 'Iachi' above — same open flag re: relationship to the existing stationary 'Uano'/'there', not resolved."
+  },
+  {
+    "english": "TV",
+    "garo": "TV",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). English loanword, used as-is."
+  },
+  {
+    "english": "turn on (the) TV",
+    "garo": "TV on ka·atbo.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Native note: \"Garo makes use of the English words 'on' and 'off'.\" This 'on' is a distinct sense from the existing 'on'=Kosak·o (locative, e.g. 'on top of') — a borrowed English switch-particle, not a translation/correction of it. 'ka·atbo' here is the identical string already VERIFIED/HIGH as the imperative in the 'phone ka·a' paradigm ('call (imperative, on the phone)') — suggestive of a broader productive construction '[NOUN] + on/off + ka·atbo' = 'turn on/off NOUN' (imperative), with 'phone ka·atbo' as one idiomatic member (call) rather than literal 'switch on the phone'. Flagged as an observed pattern, not asserted as a confirmed general rule — needs more than two data points."
+  },
+  {
+    "english": "start the car",
+    "garo": "Gari start ka·bo.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). 'Gari' (car) already an existing entry, reconfirmed unchanged. 'start' is an English loanword, used as-is (cf. TV/on/off borrowing pattern this session). 'ka·bo' here (no '-at-' infix) differs from 'ka·atbo' used for 'turn on (the) TV' — open question whether this is free variation or a meaningful distinction (e.g. transitive/causative '-at-'); not guessed, flagged for follow-up."
   }
 ]

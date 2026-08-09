@@ -1511,6 +1511,34 @@ claude_a:
     repository-intelligence.js (Check F) before commit, not shipped.
     8068/8068 entries, 196/196 tests, 0 new repository-intelligence.js
     violations (A-F).
+  latest_12: >-
+    2026-08-09 (NV-071, same-day, Thangseng direct via Tridip WhatsApp).
+    10-item batch: promoted 2 existing UNVERIFIED candidates to
+    VERIFIED/HIGH on exact match (slippery=rim·il·a, sandal=sen·dil);
+    added 13 new entries (he=Ua, slip=Ga·soltapa, he slipped, floor=A·pa
+    + 2 sentences, the sandal is slippery, a little/somewhat=on·tisa
+    [kept deliberately separate from the existing unverified "little"
+    adjective candidates — different word/sense, not a correction of
+    them], come/go-a-little-here/there sentences, TV, turn on (the) TV,
+    start the car). Notable finding: "he slipped" uses Ua for "he" —
+    same word already VERIFIED/HIGH for "she"; added as gender-neutral-
+    pronoun evidence, both entries kept (not a correction, an
+    extension). Two genuine open questions flagged in dictionary notes,
+    NOT guessed at: (1) "Iachi"/"Uachi" (movement-to here/there, this
+    relay) vs. the pre-existing, also-VERIFIED "Ianona re·babo!"=
+    "come here!" — two attested forms for a movement-to-here sense,
+    relationship to RULE-044's -chi/-na suffix patterns not resolved;
+    (2) "ka·atbo" (used for "turn on TV") vs. "ka·bo" (used for "start
+    the car") — same light-verb slot, different suffix shape, not
+    established whether this is free variation or meaningful. "the
+    floor is wet" added as a sentence citation only — floor and wet
+    were both already-settled keys, no dictionary changes triggered.
+    Full corpus cross-check done against master_dictionary.json,
+    corrections.json, and phrase_maps.js before writing (avoided
+    repeating the prior session's key-collision mistake). 9174/9174
+    entries (8081 compiled unique keys), 196/196 tests, 0 new
+    repository-intelligence.js violations (A-F). Nothing left local —
+    committed and pushed, HEAD verified == origin/main.
 
 claude_b:
   status: active

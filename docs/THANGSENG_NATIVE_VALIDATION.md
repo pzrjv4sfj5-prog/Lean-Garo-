@@ -3850,3 +3850,69 @@ duplicate row instead of editing the existing one; (2) the
 **Runtime Handoff (Claude B):** no engine changes needed — all
 resolutions confirmed via rebuild + full test suite (196/196) +
 `repository-intelligence.js` (0 new violations, all checks A-F).
+
+## NV-071 (2026-08-09, Thangseng direct, WhatsApp relay via Tridip)
+
+Ten-item batch. Full corpus cross-check against master_dictionary.json,
+corrections.json, and phrase_maps.js done before writing any entries.
+
+**Straightforward promotions (exact match to existing UNVERIFIED
+candidates):**
+- `slippery` = `rim·il·a` → VERIFIED/HIGH
+- `sandal` = `sen·dil` → VERIFIED/HIGH (existing `ja·kop` candidate
+  left UNVERIFIED, not contradicted)
+
+**New entries:**
+- `slip` = `Ga·soltapa` (general form) and `he slipped` =
+  `Ua ga·soltapaha.` (confirms RULE-002 past `-aha` on the new root)
+- `floor` = `A·pa`, plus sentence citations `the floor is slippery`,
+  `the floor is wet` (bare-adjective predicate, no copula — cf.
+  RULE-006). `wet`=`so·si·a` was already VERIFIED/HIGH from an earlier
+  round — no key change, sentence added purely as citation evidence.
+- `the sandal is slippery` = `Sen·dil rimila.`
+- `a little / somewhat` = `on·tisa` — a degree adverb ("a bit
+  further"), used pre-verbally in movement commands. Deliberately kept
+  as a **separate key** from the existing `little` adjective candidates
+  (`ak·ki`, `ak·ki·sa`, `chon·a`, `kom`, still all UNVERIFIED) — this
+  relay didn't touch or resolve those; different word/sense, not a
+  correction.
+- `TV` (English loanword, used as-is), `turn on (the) TV` =
+  `TV on ka·atbo.` — native note confirms Garo borrows English "on"/
+  "off" directly; this `on` is a different sense from the existing
+  `on`=`Kosak·o` (locative "on top of"), not a correction of it.
+- `start the car` = `Gari start ka·bo.` (`Gari`=car already existed,
+  reconfirmed unchanged; `start` is another English loanword)
+
+**Gender-neutral pronoun finding:** `he slipped` uses `Ua` for "he" —
+the same word already VERIFIED/HIGH for "she". Added `he`=`Ua` as a
+new entry and noted the finding on the existing `she`=`Ua` entry
+(both kept; not a correction, an extension — `Ua` appears to be a
+gender-neutral 3rd-person pronoun, not two homophonous words).
+
+**Two open questions flagged in the dictionary, not guessed at:**
+
+1. **`Iachi`/`Uachi` (this relay) vs. `Ianona` (pre-existing, also
+   VERIFIED/HIGH in `come here!`=`Ianona re·babo!`)** — two directly
+   attested forms both associated with a movement-to-here/there sense.
+   Possible read, not claimed as established: `Iachi` = bare deictic
+   `Ia` + RULE-044's `-chi` movement suffix directly, vs. `Ianona` =
+   `Iano` + a separate `-na` directional suffix (paralleling
+   `banona`="where to?" already noted in RULE-044's native_notes) — two
+   routes to a movement sense on the same root. Needs a follow-up
+   native question; not resolved here. See RULE-044 for the
+   established part of this pattern (market/school/home/river/forest,
+   -chi vs -o) — this relay extends the same suffix into deictic
+   here/there territory but doesn't close the -na/-chi relationship.
+2. **`ka·atbo`** (used for "turn on the TV") **vs. `ka·bo`** (used for
+   "start the car") — same light-verb slot (`[NOUN] + English-loanword
+   + ka(·at)bo`, imperative), different suffix shape. Not established
+   whether this is free variation or a meaningful distinction (e.g. an
+   `-at-` transitive/causative infix). `ka·atbo` is the same string
+   already VERIFIED/HIGH in the `phone ka·a` paradigm ("call
+   (imperative, on the phone)"), suggestive of a broader productive
+   `[NOUN]+ka·atbo`="turn on/operate NOUN" construction — flagged as an
+   observed pattern from two data points, not asserted as a rule.
+
+**Runtime Handoff (Claude B):** no engine changes needed. All entries
+confirmed via rebuild + full test suite (196/196) +
+`repository-intelligence.js` (0 new violations, all checks A-F).

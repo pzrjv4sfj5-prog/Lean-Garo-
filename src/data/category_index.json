@@ -3673,5 +3673,18 @@
   "cook (future)": "phrases",
   "i am taking a shower": "phrases",
   "i will take a shower": "phrases",
-  "i took a shower": "phrases"
+  "i took a shower": "phrases",
+  "he": "general",
+  "slip": "phrases",
+  "he slipped": "phrases",
+  "floor": "home",
+  "the floor is slippery": "phrases",
+  "the floor is wet": "phrases",
+  "the sandal is slippery": "phrases",
+  "a little / somewhat": "general",
+  "come a little here": "phrases",
+  "go a little there": "phrases",
+  "tv": "general",
+  "turn on (the) tv": "phrases",
+  "start the car": "phrases"
 }
