@@ -3664,5 +3664,14 @@
   "young offspring": "animals",
   "young": "general",
   "offspring": "family",
-  "the book is on the table": "phrases"
+  "the book is on the table": "phrases",
+  "straight away / immediately": "general",
+  "straight": "general",
+  "i build (general)": "phrases",
+  "i am building": "phrases",
+  "i am cooking": "phrases",
+  "cook (future)": "phrases",
+  "i am taking a shower": "phrases",
+  "i will take a shower": "phrases",
+  "i took a shower": "phrases"
 }

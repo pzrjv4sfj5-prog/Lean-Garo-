@@ -3791,3 +3791,62 @@ Separately, see `docs/CLAUDE_B_HANDOFF_20260809_smile_alias_gap.md`
 for the smile bug — re-diagnosed root cause (bare-infinitive alias
 gap-fill, not pickPrimary's master-preference branch), fix still
 outstanding.
+
+## NV-070 follow-up (2026-08-09, same-day, Project Owner relay, Thangseng direct)
+
+Thangseng answered the open joljol/srongsrong question directly:
+
+- **joljol = "straight away / immediately"** (non-delay), not
+  "direct" as the prior AMBIGUOUS entry guessed. Example:
+  `Joljol auebo.` = "go take a bath straight away." Prior
+  `direct`=`joljol` entry marked SUPERSEDED; `joljol` re-homed under
+  new key `straight away / immediately`, VERIFIED/HIGH.
+- **srongsrong = "straight"** (spatial/postural), also conveys
+  non-resistance. Example: `Srongsrong chadengbo.` = "Stand up
+  straight." Promoted AMBIGUOUS/MEDIUM -> VERIFIED/HIGH.
+- **`direct` remains genuinely unresolved** — neither word confirmed
+  for it; left untouched rather than force-mapped.
+
+Same relay included a 7-sentence verb-paradigm batch, reinforcing
+already-established RULE-002 (`-aha` past) and RULE-023 (`-gen`
+future, no raka) rather than introducing new grammar:
+
+| English | Garo | Form |
+|---|---|---|
+| I build (the house) | Anga nokko rika. | general |
+| I am building (the house) | Anga nokko rikenga. | continuous |
+| I am cooking | Anga song'enga. | continuous |
+| I will cook | Anga song'gen. | future |
+| I am taking a shower | Anga auenga. | continuous |
+| I will take a shower | Anga augen. | future |
+| I took a shower | Anga auaha. | past |
+
+Dictionary changes:
+- `build`: promoted the existing UNVERIFIED `rik·a` candidate to
+  VERIFIED/HIGH (new key `I build (general)`); added continuous
+  `I am building`=`Rik·enga`. Other build candidates (`ba·nai·a`,
+  `dim·a`, `gat·a`) left UNVERIFIED, not contradicted.
+- `cook`: root already VERIFIED/HIGH (`Song·a`/`Song·timgipa`) since
+  an earlier round. The pre-existing `cooking`=`Giso·enga` entry had a
+  different, wrong root — SUPERSEDED. Added `I am cooking`=`Song·enga`
+  and `cook (future)`=`Song·gen` on the confirmed song- root. (Renamed
+  from a literal "I will cook" key after `repository-intelligence.js`
+  Check F flagged a collision with a pre-existing corrections.json
+  full-sentence key of the same name — same content, different
+  pipeline layer; resolved by renaming the dictionary key rather than
+  touching corrections.json.)
+- Added an `au-` root shower/bathe paradigm (no raka, consistent with
+  the existing `bath`=`aua` entry): `I am taking a shower`=`Auenga`,
+  `I will take a shower`=`Augen`, `I took a shower`=`Auaha`. Did NOT
+  touch the separate, still-unconfirmed `bathe`=`ha·bu·a`/`ha·bu·dil·a`
+  candidates — different root, not contradicted by this relay.
+
+**Process note:** caught and self-corrected two mistakes before
+commit — (1) initially added the `cooking` SUPERSEDED correction as a
+duplicate row instead of editing the existing one; (2) the
+`corrections.json` key collision above. Both surfaced by
+`repository-intelligence.js` Check F, not shipped.
+
+**Runtime Handoff (Claude B):** no engine changes needed — all
+resolutions confirmed via rebuild + full test suite (196/196) +
+`repository-intelligence.js` (0 new violations, all checks A-F).

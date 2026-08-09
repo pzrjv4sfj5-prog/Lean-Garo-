@@ -1478,6 +1478,39 @@ claude_a:
     not a regression. repository-intelligence.js: 0 new violations all
     checks (A-F). 8061/8061 entries (no new unique keys — all NV-070
     terms already existed as keys), 196/196 unit tests.
+  latest_11: >-
+    2026-08-09 (same-day follow-up relay). Thangseng answered the
+    NV-070 open question directly: joljol = "straight away/immediately"
+    (non-delay), NOT "direct" as previously guessed — my earlier
+    direct=joljol AMBIGUOUS entry was wrong and is now SUPERSEDED, with
+    joljol correctly re-homed under a new "straight away / immediately"
+    key VERIFIED/HIGH. srongsrong=straight (spatial/postural, also
+    "non-resistance") promoted AMBIGUOUS->VERIFIED/HIGH. "direct" itself
+    remains genuinely unresolved (neither word confirmed for it) —
+    left untouched, not force-mapped to anything. Same relay also gave
+    a 7-sentence verb-paradigm batch (build/cook/shower across
+    general/continuous/future/past) confirming existing RULE-002
+    (-aha past) and RULE-023 (-gen future, no raka): promoted the
+    existing UNVERIFIED "build"=rik·a candidate to VERIFIED/HIGH (new
+    key "I build (general)"), added continuous "I am building"=
+    Rik·enga; corrected "cooking" (was wrong-root Giso·enga, SUPERSEDED)
+    with new song- root forms "I am cooking"=Song·enga, and
+    "cook (future)"=Song·gen (renamed from a literal "I will cook" key
+    after Check F flagged a collision with a pre-existing
+    corrections.json full-sentence key of the same name — same content,
+    different pipeline layer, avoided by renaming rather than touching
+    corrections.json); added shower/bathe paradigm (au- root, no raka,
+    matches existing "bath"=aua) — "I am taking a shower"=Auenga,
+    "I will take a shower"=Augen, "I took a shower"=Auaha. Did NOT
+    touch the separate, still-unconfirmed "bathe"=ha·bu·a/ha·bu·dil·a
+    candidates (different root, not contradicted). One self-caught
+    process error this session: initially inserted the "cooking"
+    SUPERSEDED correction as a new duplicate row instead of editing the
+    existing one, and separately introduced (then fixed) the
+    corrections.json key collision above — both caught by
+    repository-intelligence.js (Check F) before commit, not shipped.
+    8068/8068 entries, 196/196 tests, 0 new repository-intelligence.js
+    violations (A-F).
 
 claude_b:
   status: active

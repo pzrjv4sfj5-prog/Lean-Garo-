@@ -15961,7 +15961,8 @@
   {
     "english": "cooking",
     "garo": "Giso·enga",
-    "category": "general"
+    "category": "general",
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): wrong root (giso- vs confirmed song-). See 'I am cooking'=Song·enga."
   },
   {
     "english": "walking",
@@ -24131,7 +24132,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): root and general form now confirmed VERIFIED/HIGH under english=\"I build (general)\"/\"Rik·a\". Retained per citation discipline. Other build candidates ba·nai·a/dim·a/gat·a remain UNVERIFIED, not contradicted."
   },
   {
     "english": "build hive",
@@ -61226,14 +61227,78 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM. Relayed 2026-08-09 (Project Owner relay, Thangseng direct): \"Direct/straight - joljol/srongsrong (usage will depend on context)\". Native speaker confirmed both words exist but the direct/straight sense-split by context is not yet specified. Existing UNVERIFIED candidates (tong·tang, wa·rek·rek, dim·breng·a) left untouched pending disambiguation — do not treat this as superseding them. Needs a follow-up native question distinguishing which contexts take joljol vs srongsrong. See NV-070."
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct, follow-up to NV-070). Correction: joljol does not mean \"direct\" — it means \"straight away / immediately\" (non-delay). Example: 'Joljol auebo.' = 'go take a bath straight away.' See new entry under english=\"straight away / immediately\". \"direct\" remains unresolved — neither joljol nor srongsrong confirmed for this sense; existing UNVERIFIED candidates (tong·tang, wa·rek·rek, dim·breng·a) unaffected."
+  },
+  {
+    "english": "straight away / immediately",
+    "garo": "joljol",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct, follow-up to NV-070). Conveys non-delay. Example: 'Joljol auebo.' = 'go take a bath straight away.'"
   },
   {
     "english": "straight",
     "garo": "srongsrong",
     "pos": null,
-    "category": "uncategorized",
+    "category": "general",
     "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM. Relayed 2026-08-09 (Project Owner relay, Thangseng direct): \"Direct/straight - joljol/srongsrong (usage will depend on context)\". Native speaker confirmed both words exist but the direct/straight sense-split by context is not yet specified. Existing UNVERIFIED candidates (tong·tang, wa·rek·rek, dim·breng·a) left untouched pending disambiguation — do not treat this as superseding them. Needs a follow-up native question distinguishing which contexts take joljol vs srongsrong. See NV-070."
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct, follow-up to NV-070). Spatial/postural \"straight\"; also conveys non-resistance. Example: 'Srongsrong chadengbo.' = 'Stand up straight.' Existing UNVERIFIED candidates for \"straight\" (dim·breng·a, tong·tang, wa·rek·rek) not superseded — may cover other senses (e.g. straight line/path) not addressed by this confirmation."
+  },
+  {
+    "english": "I build (general)",
+    "garo": "Rik·a",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Corrects prior UNVERIFIED status of the existing 'rik·a' build candidate (now this VERIFIED entry supersedes it for compile purposes; other build candidates ba·nai·a/dim·a/gat·a left UNVERIFIED, not contradicted). Example: 'Anga nokko rika.' = 'I build the house.'"
+  },
+  {
+    "english": "I am building",
+    "garo": "Rik·enga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Continuous form of the rik·a (build) paradigm. Example: 'Anga nokko rikenga.' = 'I am building the house.'"
+  },
+  {
+    "english": "I am cooking",
+    "garo": "Song·enga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Continuous form; shares the song- root already confirmed VERIFIED/HIGH for 'cook' (Song·a/Song·timgipa). Corrects the prior Giso·enga candidate (wrong root, now superseded). Example: 'Anga song'enga.' = 'I am cooking.'"
+  },
+  {
+    "english": "cook (future)",
+    "garo": "Song·gen",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Future form of the song- (cook) paradigm, per RULE-023 (-gen never carries raka). Example: 'Anga song'gen.' = 'I will cook.' Note: kept distinct from the pre-existing corrections.json full-sentence key \"i will cook\"=\"Anga Song·gen\" (same content, different pipeline layer) to avoid a Check-F cross-table key collision."
+  },
+  {
+    "english": "I am taking a shower",
+    "garo": "Auenga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Continuous form; shares the au- root with the existing 'bath'=aua entry. Example: 'Anga auenga.' = 'I am taking a shower.' Distinct from the unrelated, still-unconfirmed 'bathe' candidates (ha·bu·a/ha·bu·dil·a) — not addressed by this relay."
+  },
+  {
+    "english": "I will take a shower",
+    "garo": "Augen",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Future form of the au- (shower/bathe) paradigm, per RULE-023 (-gen never carries raka). Example: 'Anga augen.' = 'I will take a shower.'"
+  },
+  {
+    "english": "I took a shower",
+    "garo": "Auaha",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Past form of the au- (shower/bathe) paradigm, per RULE-002 (-aha marks simple past/perfect). Example: 'Anga auaha.' = 'I took a shower.'"
   }
 ]
