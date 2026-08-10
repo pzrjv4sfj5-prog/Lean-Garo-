@@ -6304,7 +6304,8 @@
   {
     "english": "three dogs",
     "garo": "achak mang·gni",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): legacy copy-paste corruption, reused the classifier form for 'two' (mang·gni) instead of 'three' (mang·gittam). See new VERIFIED/HIGH entry."
   },
   {
     "english": "three birds",
@@ -6349,7 +6350,8 @@
   {
     "english": "four dogs",
     "garo": "brang mang·gni",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): legacy copy-paste corruption, wrong dog-word (brang instead of achak) and wrong classifier (mang·gni='two' instead of mang·bri='four'). See new VERIFIED/HIGH entry."
   },
   {
     "english": "four birds",
@@ -7029,7 +7031,8 @@
   {
     "english": "three dog",
     "garo": "achak mang·gni",
-    "category": "animals"
+    "category": "animals",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): same legacy corruption as 'three dogs' (mang·gni='two' reused instead of mang·gittam='three')."
   },
   {
     "english": "three cat",
@@ -7134,7 +7137,8 @@
   {
     "english": "four dog",
     "garo": "brang mang·gni",
-    "category": "animals"
+    "category": "animals",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): same legacy corruption as 'four dogs' (wrong dog-word + wrong classifier)."
   },
   {
     "english": "four cat",
@@ -38713,11 +38717,11 @@
   },
   {
     "english": "sandal",
-    "garo": "sen·dil",
+    "garo": "sendil",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Example: 'Sen·dil rimila.' = 'The sandal is slippery.' Existing 'ja·kop' candidate left UNVERIFIED, not contradicted (may be a distinct footwear term)."
+    "notes": "VERIFIED/HIGH. FINAL — corrected 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): no raka. Prior 'sen·dil' spelling (this entry and the sentence example below) was wrong; corrected everywhere in master_dictionary.json. Existing 'ja·kop' candidate left UNVERIFIED, not contradicted (may be a distinct footwear term)."
   },
   {
     "english": "sap",
@@ -40105,19 +40109,19 @@
   },
   {
     "english": "slippery",
-    "garo": "rim·il·a",
+    "garo": "rimila",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Example: 'A·pa rimila.' = 'The floor is slippery.' Bare-adjective predicate, no copula — cf. RULE-006."
+    "notes": "VERIFIED/HIGH. FINAL — corrected 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): no raka. Prior 'rim·il·a' spelling was wrong; corrected everywhere in master_dictionary.json (including the 'slippery ground' compound). Example: 'A·pa rimila.' = 'The floor is slippery.' Bare-adjective predicate, no copula — cf. RULE-006."
   },
   {
     "english": "slippery ground",
-    "garo": "ha·rim·il·a",
+    "garo": "ha·rimila",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "UNVERIFIED/HIGH. Internal raka corrected 2026-08-09 (NV-071 follow-up) to match the now-confirmed no-raka 'rimila' root — compound as a whole still UNVERIFIED, only the embedded spelling error fixed."
   },
   {
     "english": "slope",
@@ -61352,11 +61356,11 @@
   },
   {
     "english": "the sandal is slippery",
-    "garo": "Sen·dil rimila.",
+    "garo": "Sendil rimila.",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Same bare-adjective predicate pattern as 'the floor is slippery.'"
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Same bare-adjective predicate pattern as 'the floor is slippery.' Corrected 'Sen·dil'->'Sendil' (NV-071 follow-up, no raka)."
   },
   {
     "english": "a little / somewhat",
@@ -61405,5 +61409,37 @@
     "category": "phrases",
     "classifier": null,
     "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). 'Gari' (car) already an existing entry, reconfirmed unchanged. 'start' is an English loanword, used as-is (cf. TV/on/off borrowing pattern this session). 'ka·bo' here (no '-at-' infix) differs from 'ka·atbo' used for 'turn on (the) TV' — open question whether this is free variation or a meaningful distinction (e.g. transitive/causative '-at-'); not guessed, flagged for follow-up."
+  },
+  {
+    "english": "three dogs",
+    "garo": "achak mang·gittam",
+    "pos": null,
+    "category": "numbers",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up). Follows the same achak+mang·+numeral-root pattern as the already-VERIFIED/HIGH 'one dog'=achak mang·sa and 'two dogs'=achak mang·gni; gittam=3 (cf. 'three fish'=na·tok mang·gittam, 'three books'=ki·tap king·gittam, already VERIFIED/HIGH). Corrects the legacy 'three dogs'/'three dog' entries (SUPERSEDED — copy-paste corruption reusing mang·gni='two')."
+  },
+  {
+    "english": "four dogs",
+    "garo": "achak mang·bri",
+    "pos": null,
+    "category": "numbers",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up). Same achak+mang·+numeral-root pattern; bri=4 (already VERIFIED/HIGH as the standalone numeral). Corrects the legacy 'four dogs'/'four dog' entries (SUPERSEDED — copy-paste corruption using wrong dog-word 'brang' and wrong classifier mang·gni='two'). Note for future rounds: the same mang·gni-reused-everywhere corruption pattern also appears, unconfirmed and untouched by this relay, in the existing 'five dog(s)'=bonga mang·gni and 'fourteen dog'=chi brang mang·gni entries — flagged for a future NV round, not fixed here (evidence-first — only 2/3/4 were directly confirmed)."
+  },
+  {
+    "english": "three dog",
+    "garo": "achak mang·gittam",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'three dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship."
+  },
+  {
+    "english": "four dog",
+    "garo": "achak mang·bri",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'four dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship."
   }
 ]

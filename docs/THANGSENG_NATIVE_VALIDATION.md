@@ -3916,3 +3916,52 @@ gender-neutral 3rd-person pronoun, not two homophonous words).
 **Runtime Handoff (Claude B):** no engine changes needed. All entries
 confirmed via rebuild + full test suite (196/196) +
 `repository-intelligence.js` (0 new violations, all checks A-F).
+
+## NV-071 follow-up #2 (2026-08-09, same day, Thangseng direct via Tridip)
+
+Closed two confusions permanently, per explicit PO instruction.
+
+**1. Raka correction — `slippery` and `sandal`.** Both had been
+promoted last session to VERIFIED/HIGH *with* raka (`rim·il·a`,
+`sen·dil`), carrying forward a pre-existing corpus spelling that
+predates this project's involvement. Confirmed final, no raka:
+`rimila`, `sendil`. Fixed every occurrence in master_dictionary.json:
+the two headword entries, the embedded root inside the UNVERIFIED
+`slippery ground`=`ha·rimila` compound (embedded typo fixed, compound
+as a whole still UNVERIFIED), and the `the sandal is slippery`
+sentence entry. Checked corrections.json/phrase_maps.js/
+garo_dictionary.json — no other occurrences found.
+
+**2. "Three dogs"/"four dogs" — legacy classifier corruption exposed.**
+Thangseng confirmed `three dogs`=`achak mang·gittam` and `four dogs`=
+`achak mang·bri`, following the same `achak+mang·+numeral-root` pattern
+as the already-VERIFIED `one dog`=`achak mang·sa` and `two dogs`=
+`achak mang·gni`. Cross-checking exposed a legacy bulk-import bug: the
+existing `three dogs`, `four dogs`, and their singular-gloss duplicates
+(`three dog`, `four dog`) had all been corrupted to share `mang·gni`
+(='two') — `four dogs`/`four dog` additionally used the wrong dog-word
+`brang` instead of `achak`. SUPERSEDED all 4 wrong legacy rows, added 4
+correct VERIFIED/HIGH replacements (plural + singular gloss — the
+singular keys needed their own new entries too, since
+`garo_dictionary.json` carries the same wrong value as a non-master
+duplicate that would otherwise still ship once master's only candidate
+was superseded).
+
+**Left untouched, flagged for a future round:** `five dog(s)`=
+`bonga mang·gni` and `fourteen dog`=`chi brang mang·gni` show the same
+corruption shape but weren't confirmed by this relay — not guessed at.
+
+**Process:** `repository-intelligence.js` Check C correctly flagged the
+resulting master-internal multi-value conflict on these 4 keys (old
+SUPERSEDED value + new VERIFIED value coexisting is intentional, not a
+bug) — logged all 4 keys to `src/data/known_dictionary_conflicts.json`
+per the check's own instructions, re-ran clean. Also fixed a downstream
+stale test (`RC-CANDIDATE-037`, `tests/unit/rc037_bird_classifier.test.js`)
+that had hardcoded the old wrong `three dogs` value from an earlier,
+unrelated classifier-noun-substitution fix — updated to the new
+confirmed value; left the parallel `three cat` assertion (same bug
+shape, not yet confirmed) unchanged.
+
+**Runtime Handoff (Claude B):** no engine changes needed. 9178/9178
+entries, 196/196 tests, `repository-intelligence.js` 0 new violations
+(all checks A-F).
