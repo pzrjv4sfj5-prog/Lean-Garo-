@@ -4002,3 +4002,29 @@ didn't speak to that, still flagged in RULE-044, not claimed.
 **Runtime Handoff (Claude B):** no engine changes needed. 9182/9182
 entries, 196/196 tests, `repository-intelligence.js` 0 new violations
 (all checks A-F).
+
+## NV-071 open question #2 — CLOSED (2026-08-10, Thangseng direct via Tridip)
+
+> "ka'atbo and ka'bo mean the same. It's kinda hard to make a
+> differentiation at all. But if attempt to show any differentiation
+> is made at all, I think it can be argued that when 'ka.bo' is used,
+> the person being told is expected to do it him/herself. But when
+> 'ka.atbo' is used, he/she is simply expected to get it done. He/she
+> may entrust someone else to do it. I could be wrong here. Take it
+> with a grain of salt."
+
+Resolution: recorded as a **MEDIUM-confidence, explicitly hedged**
+native intuition, not a firm rule — Thangseng himself flagged
+uncertainty. `ka·bo` ≈ addressee does it themselves; `ka·atbo` ≈
+addressee gets it done (may delegate). Updated the `turn on (the) TV`
+and `start the car` entries to cite this rather than leaving them
+flagged as unresolved. Not promoted into a standalone grammar rule —
+two data points plus an explicit native hedge isn't enough to assert a
+general morphological claim; if more examples surface in a future
+relay, revisit.
+
+Both NV-071 open questions are now closed.
+
+**Runtime Handoff (Claude B):** no engine changes needed. Same entry
+count/test/check status as above — this was a notes-only update, no
+new keys, no rebuild-affecting change beyond the two notes fields.

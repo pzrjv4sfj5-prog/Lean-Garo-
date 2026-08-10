@@ -1587,6 +1587,21 @@ claude_a:
     addressed by this relay — still open, untouched. 9182/9182
     entries, 196/196 tests, 0 new repository-intelligence.js
     violations (A-F). Pushed, HEAD verified == origin/main.
+  latest_15: >-
+    2026-08-10, closed NV-071 open question #2 (ka·atbo vs ka·bo).
+    Thangseng, explicitly hedged/MEDIUM confidence ("I could be wrong,
+    take it with a grain of salt"): largely synonymous; if forced,
+    ka·bo = addressee does it themselves, ka·atbo = addressee gets it
+    done (may delegate). Recorded in the two affected entries' notes,
+    not promoted to a standalone grammar rule (insufficient evidence +
+    native's own hedge). Both NV-071 open questions now closed.
+    Notes-only change, no new keys. 9182/9182 entries, 196/196 tests,
+    0 new repository-intelligence.js violations (A-F).
+
+    PERMANENT WORKSTYLE CHANGE (Project Owner instruction, 2026-08-10):
+    see SESSION_BOOTSTRAP.md "Token-efficient workstyle" section —
+    applies to all Claude A sessions going forward, not just this
+    thread.
 
 claude_b:
   status: active

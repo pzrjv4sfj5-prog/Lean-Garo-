@@ -61400,7 +61400,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Native note: \"Garo makes use of the English words 'on' and 'off'.\" This 'on' is a distinct sense from the existing 'on'=Kosak·o (locative, e.g. 'on top of') — a borrowed English switch-particle, not a translation/correction of it. 'ka·atbo' here is the identical string already VERIFIED/HIGH as the imperative in the 'phone ka·a' paradigm ('call (imperative, on the phone)') — suggestive of a broader productive construction '[NOUN] + on/off + ka·atbo' = 'turn on/off NOUN' (imperative), with 'phone ka·atbo' as one idiomatic member (call) rather than literal 'switch on the phone'. Flagged as an observed pattern, not asserted as a confirmed general rule — needs more than two data points."
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Native note: \"Garo makes use of the English words 'on' and 'off'.\" This 'on' is a distinct sense from the existing 'on'=Kosak·o (locative, e.g. 'on top of') — a borrowed English switch-particle, not a translation/correction of it. RESOLVED 2026-08-10 (Thangseng direct, MEDIUM confidence, explicitly hedged by the native speaker — \"I could be wrong here, take it with a grain of salt\"): ka·atbo and ka·bo largely mean the same and are hard to differentiate, but if forced, ka·atbo implies the addressee is expected to get it done (may delegate to someone else), vs. ka·bo implying the addressee does it themselves. Consistent with 'ka·atbo' here (get the TV switched on, delegable) vs. 'ka·bo' for 'start the car' (typically done by the person themselves). Not a firm rule — kept as a tentative native intuition, not upgraded to VERIFIED/HIGH scope beyond the individual word confirmations already established."
   },
   {
     "english": "start the car",
@@ -61408,7 +61408,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). 'Gari' (car) already an existing entry, reconfirmed unchanged. 'start' is an English loanword, used as-is (cf. TV/on/off borrowing pattern this session). 'ka·bo' here (no '-at-' infix) differs from 'ka·atbo' used for 'turn on (the) TV' — open question whether this is free variation or a meaningful distinction (e.g. transitive/causative '-at-'); not guessed, flagged for follow-up."
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). 'Gari' (car) already an existing entry, reconfirmed unchanged. 'start' is an English loanword, used as-is (cf. TV/on/off borrowing pattern this session). RESOLVED 2026-08-10 (Thangseng direct, MEDIUM confidence, explicitly hedged — \"I could be wrong here, take it with a grain of salt\"): ka·bo vs ka·atbo (see 'turn on (the) TV') are largely synonymous; if forced, ka·bo implies the addressee does it themselves rather than delegating. Tentative native intuition, not a firm rule."
   },
   {
     "english": "three dogs",

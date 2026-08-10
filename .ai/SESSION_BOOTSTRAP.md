@@ -1,5 +1,5 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-07-09 by Claude B (Repository Access Model replaced per Project Owner directive — see that section)._
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-10 by Claude A (added the "Permanent workstyle: this file is current-rules-only, not a log" section — see below; addresses thread/token length per Project Owner directive)._
 
 **If you are a new Claude A instance (fresh chat, session migration):**
 read `docs/CLAUDE_A_SESSION_MIGRATION_20260715.md` first — a
@@ -25,6 +25,39 @@ any future role) must use tokens smartly:
 - Don't re-litigate settled decisions (see each role's "do not repeat"
   list in `.ai/WORKSTATE.yaml`).
 - Lead with the result; keep commentary proportional to the task.
+
+## Permanent workstyle: this file is current-rules-only, not a log (Project Owner directive, 2026-08-10)
+
+This file grew to ~1900 lines of narrative session write-ups, and
+because it's the mandatory first read for every new session, that
+narrative gets re-read (and re-billed in tokens) every single time —
+compounding forever. Going forward, permanently:
+
+1. **Do not append narrative "session close"/"session recap" write-ups
+   to this file.** That history belongs in `.ai/WORKSTATE.yaml` (each
+   role's `latest_N` log, already the designated per-session record) or
+   in a dated Migration Document. This file only grows when a genuinely
+   new *standing rule* is established — a rule a future session must
+   follow, not a record of what happened.
+2. **A new session's read order is:** (a) this file's rule sections
+   only — stop at "## Roles" unless your role needs a specific
+   downstream section (e.g. "Claude D — repository ingestion layer");
+   (b) the most recent Migration Document named in `.ai/WORKSTATE.yaml`
+   or this file's top pointer; (c) your role's most recent 2-3
+   `latest_N` entries in `.ai/WORKSTATE.yaml`. **The long historical
+   narrative appended below "## Roles" in this file is legacy** —
+   frozen, not read by default. Consult it only if actively debugging
+   something whose root cause might be historical, by targeted
+   `grep`/line-range `view`, not a full read.
+3. **`.ai/WORKSTATE.yaml` per-role logs should stay short.** Nothing is
+   lost by not repeating old entries inline — full history is always
+   recoverable via `git log`/`git blame`. If a role's log grows past
+   ~5-6 recent entries, the oldest ones may be trimmed from the
+   inline file (not deleted from git history) at that role's own
+   session close, with a one-line pointer to the commit range that
+   covers the trimmed period.
+4. This applies identically to Claude A, Claude B, and Claude D,
+   permanently — not a one-off for this thread.
 
 ## Thread hygiene & zero-local-state ground rule (Project Owner directive, 2026-07-31)
 
