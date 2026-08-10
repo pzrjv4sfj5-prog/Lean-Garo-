@@ -3686,5 +3686,9 @@
   "go a little there": "phrases",
   "tv": "general",
   "turn on (the) tv": "phrases",
-  "start the car": "phrases"
+  "start the car": "phrases",
+  "here (towards/this side)": "general",
+  "there (towards/that side)": "general",
+  "here (locative, movement-sentence form)": "general",
+  "there (locative, movement-sentence form)": "general"
 }

@@ -3965,3 +3965,40 @@ shape, not yet confirmed) unchanged.
 **Runtime Handoff (Claude B):** no engine changes needed. 9178/9178
 entries, 196/196 tests, `repository-intelligence.js` 0 new violations
 (all checks A-F).
+
+## NV-071 open question #1 — CLOSED (2026-08-10, Thangseng direct via Tridip)
+
+> "Iachi and ianona = here, uachi and uanona = there. All of these are
+> locative, but the 'chi' suffix is directional, they not only convey
+> the idea of 'here' and 'there', but also the idea of 'that side' and
+> 'this side' or the idea of 'towards'... However, the translations
+> will be the same in English."
+
+Resolution: `Iachi`/`Uachi` and `Ianona`/`Uanona` were never a
+conflict — all four are locative and all translate to plain English
+"here"/"there". The `-chi` suffix specifically carries an additional
+directional/allative nuance ("towards", "this side"/"that side") that
+`Ianona`/`Uanona` don't, and English collapses that distinction in
+translation. Consistent with RULE-044's core `-chi`=movement-to claim,
+now extended to deictic here/there with an explicit native gloss for
+the nuance.
+
+Actions: updated the two NV-071 sentence entries' notes (were flagged
+"not resolved", now cite this); added four new standalone entries —
+`Iachi`, `Uachi` (both new, "towards/this-or-that-side" sense spelled
+out) and `Ianona`, `Uanona` (the latter genuinely new — Thangseng
+introduced it here; `Ianona` was already attested embedded in the
+pre-existing `come here!`=`Ianona re·babo!` sentence but hadn't had its
+own standalone entry); added a dated RULE-044 `native_notes`
+follow-up. Did not touch the base `here`=`Iano`/`there`=`Uano` entries
+— those are unaffected.
+
+**Not addressed by this relay, still open:** NV-071 open question #2
+(`ka·atbo` vs `ka·bo` light-verb suffix variation). Also unresolved:
+RULE-044's pre-existing separate open item on whether `banona`'s `-na`
+suffix is the same mechanism as `Ianona`/`Uanona`'s `-na` — this relay
+didn't speak to that, still flagged in RULE-044, not claimed.
+
+**Runtime Handoff (Claude B):** no engine changes needed. 9182/9182
+entries, 196/196 tests, `repository-intelligence.js` 0 new violations
+(all checks A-F).

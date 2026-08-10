@@ -61376,7 +61376,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). re·babo already VERIFIED/HIGH (existing 'come!' imperative). 'Iachi' (here, this sentence) is a DIFFERENT confirmed 'here'-word from 'Ianona', which appears in the pre-existing, also-VERIFIED/HIGH 'come here!'='Ianona re·babo!' — both are directly attested; not reconciled or ranked against each other here. Possible read (not claimed as established): 'Iachi' = bare deictic root 'Ia' + the RULE-044 movement-to suffix '-chi' directly, vs. 'Ianona' = 'Iano' + a separate '-na' directional suffix (parallel to 'banona'=\"where to?\" in RULE-044's native_notes) — two distinct routes to a movement sense on the same 'here' root. Flagged for RULE-044 follow-up, not resolved."
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). re·babo already VERIFIED/HIGH (existing 'come!' imperative). RESOLVED 2026-08-10 (Thangseng direct, follow-up): 'Iachi' and 'Ianona' (as in the pre-existing 'come here!'='Ianona re·babo!') both translate to English 'here' and both are locative — not a conflict. But 'chi' is specifically the directional suffix: forms with it also carry 'that side/this side'/'towards' beyond plain 'here', a nuance English collapses in translation. See RULE-044 native_notes follow-up."
   },
   {
     "english": "go a little there",
@@ -61384,7 +61384,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). re·angbo already VERIFIED/HIGH (existing 'go' imperative, RULE-044 examples). 'Uachi' (there, movement) parallels 'Iachi' above — same open flag re: relationship to the existing stationary 'Uano'/'there', not resolved."
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). re·angbo already VERIFIED/HIGH (existing 'go' imperative, RULE-044 examples). RESOLVED 2026-08-10 (Thangseng direct, follow-up): 'Uachi' and 'Uanona' both translate to English 'there' and both are locative — not a conflict, parallel to Iachi/Ianona above. See RULE-044 native_notes follow-up."
   },
   {
     "english": "TV",
@@ -61441,5 +61441,37 @@
     "category": "animals",
     "classifier": null,
     "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'four dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship."
+  },
+  {
+    "english": "here (towards/this side)",
+    "garo": "Iachi",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip). Translates to English 'here' same as the plain 'Iano'/'Ianona' forms, but carries the '-chi' directional suffix (RULE-044): also conveys 'this side'/'towards', a nuance English collapses. Direct quote: \"the 'chi' suffix is directional, they not only convey the idea of 'here' and 'there', but also the idea of 'that side' and 'this side' or the idea of 'towards'... However, the translations will be the same in English.\""
+  },
+  {
+    "english": "there (towards/that side)",
+    "garo": "Uachi",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip). Translates to English 'there' same as the plain 'Uano'/'Uanona' forms, but carries the '-chi' directional suffix (RULE-044): also conveys 'that side'/'towards', a nuance English collapses. Parallel to 'here (towards/this side)'=Iachi."
+  },
+  {
+    "english": "here (locative, movement-sentence form)",
+    "garo": "Ianona",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Standalone entry added 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip) — already attested embedded in the pre-existing VERIFIED/HIGH 'come here!'='Ianona re·babo!' sentence, now confirmed as its own locative 'here' form, distinct from but translating the same as 'Iachi' (which specifically adds the '-chi' directional/'towards' nuance) and the bare 'Iano'."
+  },
+  {
+    "english": "there (locative, movement-sentence form)",
+    "garo": "Uanona",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip), new — parallels the pre-existing 'Ianona'. Translates to English 'there' same as 'Uachi'/'Uano'; does not carry the '-chi' directional/'towards' nuance."
   }
 ]

@@ -1571,6 +1571,22 @@ claude_a:
     value, left "three cat" (same bug shape, not yet confirmed)
     untouched. 9178/9178 entries, 196/196 tests, 0 new
     repository-intelligence.js violations (A-F).
+  latest_14: >-
+    2026-08-10, closed open question #1 from NV-071 (Iachi/Uachi vs.
+    Ianona for here/there). Thangseng direct: both pairs are locative
+    and both translate to plain English "here"/"there" — not a
+    conflict. "-chi" specifically is the directional suffix, adding a
+    "towards"/"this side"/"that side" nuance that Ianona/Uanona (also
+    confirmed as a real form, new) don't carry and that English has no
+    separate word for. Updated the two NV-071 sentence entries' notes
+    from "not resolved" to cite this; added 4 new standalone entries
+    (Iachi, Uachi, Ianona, Uanona) with the nuance distinction spelled
+    out; added a RULE-044 native_notes follow-up (dated, sourced,
+    doesn't overclaim resolution of the separate still-open
+    banona/-na question). Open question #2 (ka·atbo vs ka·bo) was NOT
+    addressed by this relay — still open, untouched. 9182/9182
+    entries, 196/196 tests, 0 new repository-intelligence.js
+    violations (A-F). Pushed, HEAD verified == origin/main.
 
 claude_b:
   status: active

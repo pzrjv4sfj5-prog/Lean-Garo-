@@ -129,6 +129,24 @@ native_notes: >-
   context): the same relay distinguishes jeon/jeo ("where", relative
   pronoun, NV-054) from a genuinely separate word jean ("which",
   relative pronoun) - see master_dictionary.json new entry.
-last_updated: "2026-08-04"
+  Follow-up, 2026-08-10 (direct Thangseng relay via Tridip WhatsApp,
+  answering the open Iachi/Uachi-vs-Ianona/Uanona question raised in
+  NV-071): "Iachi and Ianona = here, Uachi and Uanona = there. All of
+  these are locative, but the 'chi' suffix is directional, they not
+  only convey the idea of 'here' and 'there', but also the idea of
+  'that side' and 'this side' or the idea of 'towards'... However, the
+  translations will be the same in English." Resolves that Iachi/Uachi
+  vs. Ianona/Uanona are not competing/conflicting forms: both pairs are
+  locative and both translate to plain "here"/"there" in English, but
+  -chi specifically carries an additional directional/allative nuance
+  ("towards", "this side"/"that side") that Ianona/Uanona do not, which
+  English has no separate lexical slot for. Consistent with this rule's
+  core -chi=movement-to claim, extended here to deictic here/there with
+  an explicit semantic gloss for the nuance beyond bare "movement to X"
+  seen in the noun-locative examples above. Does not, on its own,
+  resolve the separate open question (NV-054/RULE-044 above) of whether
+  "banona"'s -na suffix is the same mechanism as Ianona/Uanona's -na —
+  still flagged, not claimed.
+last_updated: "2026-08-10"
 updated_by: "Claude A"
-source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED), NV-051 (CLOSED), NV-052 (CLOSED), NV-054 (CLOSED), and NV-056 (CLOSED)"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED), NV-051 (CLOSED), NV-052 (CLOSED), NV-054 (CLOSED), NV-056 (CLOSED), and NV-071 follow-up (CLOSED, 2026-08-10)"
