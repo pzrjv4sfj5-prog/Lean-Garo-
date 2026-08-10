@@ -1,3 +1,8 @@
+> **STATUS: CLOSED (2026-08-10)** — Fixed as part of the 4 P1 engineering
+> fixes shipped in the 2026-08-09/10 session (checkpoint `02d3bec`).
+> `compiled_dict.json['smile']` now correctly resolves to `Ka·dingsmita`
+> (VERIFIED/HIGH). Doc kept below for root-cause history only.
+
 # Claude B Handoff — 2026-08-09 — "smile" bare-alias gap
 
 ## Symptom
