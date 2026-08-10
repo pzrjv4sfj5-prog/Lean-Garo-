@@ -1445,6 +1445,165 @@ claude_a:
     variant ka·ding·sim·ik·a instead of VERIFIED/HIGH Ka·dingsmita —
     master-preference in pickPrimary() ignores isVariant; not touched
     by Claude B's Item 2 work this session, still needs a fix.
+  latest_10: >-
+    2026-08-09 (new session, resumed clean from 4ab4048 migration doc,
+    zero drift). Two tasks: (1) re-diagnosed the smile bug — root cause
+    corrected from the NV-067 hypothesis. It is NOT pickPrimary()'s
+    master-preference branch; "Smile"/"To smile" normalize to different
+    keys ("smile" vs "to smile") so they never compete inside
+    pickPrimary at all. Actual cause: main()'s bare-infinitive alias
+    step only fills gaps (`!finalized[bare]`), so it never overwrites
+    the pre-existing unconfirmed finalized["smile"] with the correct
+    finalized["to smile"]=Ka·dingsmita. Full diagnosis + fix approach in
+    docs/CLAUDE_B_HANDOFF_20260809_smile_alias_gap.md — not fixed by
+    Claude A (engine code). (2) NV-070 (Project Owner relay, Thangseng
+    direct): mouth=Ku·sik reconfirmed unchanged (already VERIFIED/HIGH
+    since NV-067, no action needed); joking=Bal·eka VERIFIED/HIGH (new;
+    kal·akenga/Ka·lakenga wrong-root candidates superseded; relationship
+    to existing Bal·ekonga variant/AMBIGUOUS/MEDIUM flagged, not yet
+    disambiguated); at='o' (suffix) VERIFIED/HIGH (matched existing
+    ·o entry, no-raka "O" duplicate superseded); bright=ching·a
+    VERIFIED/HIGH (matched existing, case-only "Ching·a" duplicate
+    superseded); sad=duk ong·a VERIFIED/HIGH (matched existing,
+    case-only "Duk ong·a" duplicate superseded); praise the
+    lord=Gitelko mittelbo VERIFIED/HIGH (new, corrects prior Gitelna
+    rasong/Gitel na rasong candidates, both superseded);
+    direct=joljol / straight=srongsrong added as variant/AMBIGUOUS/MEDIUM
+    — PO explicitly flagged the direct/straight sense-split as
+    context-dependent without specifying which word maps to which
+    context, so existing UNVERIFIED candidates (tong·tang, wa·rek·rek,
+    dim·breng·a) were deliberately left untouched pending a follow-up
+    native disambiguation question — evidence-first, not guessed.
+    Fixed 1 stale test (RC-CANDIDATE-012) that hardcoded the now-
+    superseded capitalized "Ching·a" — changed to a case-insensitive
+    check against the confirmed lowercase value; genuine improvement,
+    not a regression. repository-intelligence.js: 0 new violations all
+    checks (A-F). 8061/8061 entries (no new unique keys — all NV-070
+    terms already existed as keys), 196/196 unit tests.
+  latest_11: >-
+    2026-08-09 (same-day follow-up relay). Thangseng answered the
+    NV-070 open question directly: joljol = "straight away/immediately"
+    (non-delay), NOT "direct" as previously guessed — my earlier
+    direct=joljol AMBIGUOUS entry was wrong and is now SUPERSEDED, with
+    joljol correctly re-homed under a new "straight away / immediately"
+    key VERIFIED/HIGH. srongsrong=straight (spatial/postural, also
+    "non-resistance") promoted AMBIGUOUS->VERIFIED/HIGH. "direct" itself
+    remains genuinely unresolved (neither word confirmed for it) —
+    left untouched, not force-mapped to anything. Same relay also gave
+    a 7-sentence verb-paradigm batch (build/cook/shower across
+    general/continuous/future/past) confirming existing RULE-002
+    (-aha past) and RULE-023 (-gen future, no raka): promoted the
+    existing UNVERIFIED "build"=rik·a candidate to VERIFIED/HIGH (new
+    key "I build (general)"), added continuous "I am building"=
+    Rik·enga; corrected "cooking" (was wrong-root Giso·enga, SUPERSEDED)
+    with new song- root forms "I am cooking"=Song·enga, and
+    "cook (future)"=Song·gen (renamed from a literal "I will cook" key
+    after Check F flagged a collision with a pre-existing
+    corrections.json full-sentence key of the same name — same content,
+    different pipeline layer, avoided by renaming rather than touching
+    corrections.json); added shower/bathe paradigm (au- root, no raka,
+    matches existing "bath"=aua) — "I am taking a shower"=Auenga,
+    "I will take a shower"=Augen, "I took a shower"=Auaha. Did NOT
+    touch the separate, still-unconfirmed "bathe"=ha·bu·a/ha·bu·dil·a
+    candidates (different root, not contradicted). One self-caught
+    process error this session: initially inserted the "cooking"
+    SUPERSEDED correction as a new duplicate row instead of editing the
+    existing one, and separately introduced (then fixed) the
+    corrections.json key collision above — both caught by
+    repository-intelligence.js (Check F) before commit, not shipped.
+    8068/8068 entries, 196/196 tests, 0 new repository-intelligence.js
+    violations (A-F).
+  latest_12: >-
+    2026-08-09 (NV-071, same-day, Thangseng direct via Tridip WhatsApp).
+    10-item batch: promoted 2 existing UNVERIFIED candidates to
+    VERIFIED/HIGH on exact match (slippery=rim·il·a, sandal=sen·dil);
+    added 13 new entries (he=Ua, slip=Ga·soltapa, he slipped, floor=A·pa
+    + 2 sentences, the sandal is slippery, a little/somewhat=on·tisa
+    [kept deliberately separate from the existing unverified "little"
+    adjective candidates — different word/sense, not a correction of
+    them], come/go-a-little-here/there sentences, TV, turn on (the) TV,
+    start the car). Notable finding: "he slipped" uses Ua for "he" —
+    same word already VERIFIED/HIGH for "she"; added as gender-neutral-
+    pronoun evidence, both entries kept (not a correction, an
+    extension). Two genuine open questions flagged in dictionary notes,
+    NOT guessed at: (1) "Iachi"/"Uachi" (movement-to here/there, this
+    relay) vs. the pre-existing, also-VERIFIED "Ianona re·babo!"=
+    "come here!" — two attested forms for a movement-to-here sense,
+    relationship to RULE-044's -chi/-na suffix patterns not resolved;
+    (2) "ka·atbo" (used for "turn on TV") vs. "ka·bo" (used for "start
+    the car") — same light-verb slot, different suffix shape, not
+    established whether this is free variation or meaningful. "the
+    floor is wet" added as a sentence citation only — floor and wet
+    were both already-settled keys, no dictionary changes triggered.
+    Full corpus cross-check done against master_dictionary.json,
+    corrections.json, and phrase_maps.js before writing (avoided
+    repeating the prior session's key-collision mistake). 9174/9174
+    entries (8081 compiled unique keys), 196/196 tests, 0 new
+    repository-intelligence.js violations (A-F). Nothing left local —
+    committed and pushed, HEAD verified == origin/main.
+  latest_13: >-
+    2026-08-09 (NV-071 follow-up, same day, Thangseng direct via
+    Tridip). Two corrections, closed for good per PO instruction:
+    (1) "slippery"=rim·il·a and "sandal"=sen·dil, both promoted last
+    session WITH raka, corrected to no-raka rimila/sendil — this was a
+    pre-existing corpus error, not something introduced this session.
+    Fixed every occurrence found repo-wide via cross-file grep
+    (master_dictionary.json's slippery/sandal/slippery-ground-compound/
+    both new sentence entries) — none left. (2) Native-confirmed
+    "three dogs"=achak mang·gittam and "four dogs"=achak mang·bri,
+    exposing a pre-existing legacy corpus bug: multiple "N dog(s)"
+    entries (three dogs, four dogs, and their singular-gloss
+    duplicates) had been corrupted by copy-paste to all share
+    "mang·gni" (=two) or even the wrong dog-word "brang" — SUPERSEDED
+    the 4 wrong legacy rows, added 4 correct VERIFIED/HIGH replacements
+    (plural + singular gloss, since garo_dictionary.json carried the
+    same wrong value as a non-master duplicate that would otherwise
+    still ship once master's only candidate was superseded). Left
+    "five dog(s)" and "fourteen dog" untouched — same bug pattern
+    visible but not confirmed by this relay, flagged for a future NV
+    round rather than guessed. repository-intelligence.js Check C
+    correctly flagged the resulting master-internal multi-value
+    conflict for these 4 keys (intentional, since old+new both
+    legitimately exist in the data) — logged all 4 to
+    src/data/known_dictionary_conflicts.json per its own instructions,
+    re-ran clean. Fixed one downstream stale test
+    (RC-CANDIDATE-037/tests/unit/rc037_bird_classifier.test.js) that
+    hardcoded the old wrong "three dogs" value from an earlier
+    classifier-noun-substitution fix — updated to the new confirmed
+    value, left "three cat" (same bug shape, not yet confirmed)
+    untouched. 9178/9178 entries, 196/196 tests, 0 new
+    repository-intelligence.js violations (A-F).
+  latest_14: >-
+    2026-08-10, closed open question #1 from NV-071 (Iachi/Uachi vs.
+    Ianona for here/there). Thangseng direct: both pairs are locative
+    and both translate to plain English "here"/"there" — not a
+    conflict. "-chi" specifically is the directional suffix, adding a
+    "towards"/"this side"/"that side" nuance that Ianona/Uanona (also
+    confirmed as a real form, new) don't carry and that English has no
+    separate word for. Updated the two NV-071 sentence entries' notes
+    from "not resolved" to cite this; added 4 new standalone entries
+    (Iachi, Uachi, Ianona, Uanona) with the nuance distinction spelled
+    out; added a RULE-044 native_notes follow-up (dated, sourced,
+    doesn't overclaim resolution of the separate still-open
+    banona/-na question). Open question #2 (ka·atbo vs ka·bo) was NOT
+    addressed by this relay — still open, untouched. 9182/9182
+    entries, 196/196 tests, 0 new repository-intelligence.js
+    violations (A-F). Pushed, HEAD verified == origin/main.
+  latest_15: >-
+    2026-08-10, closed NV-071 open question #2 (ka·atbo vs ka·bo).
+    Thangseng, explicitly hedged/MEDIUM confidence ("I could be wrong,
+    take it with a grain of salt"): largely synonymous; if forced,
+    ka·bo = addressee does it themselves, ka·atbo = addressee gets it
+    done (may delegate). Recorded in the two affected entries' notes,
+    not promoted to a standalone grammar rule (insufficient evidence +
+    native's own hedge). Both NV-071 open questions now closed.
+    Notes-only change, no new keys. 9182/9182 entries, 196/196 tests,
+    0 new repository-intelligence.js violations (A-F).
+
+    PERMANENT WORKSTYLE CHANGE (Project Owner instruction, 2026-08-10):
+    see SESSION_BOOTSTRAP.md "Token-efficient workstyle" section —
+    applies to all Claude A sessions going forward, not just this
+    thread.
 
 claude_b:
   status: active

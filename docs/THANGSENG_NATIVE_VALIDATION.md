@@ -3735,3 +3735,296 @@ bugs to fix in engine code. No prepare-data.js/pickPrimary changes
 needed; the existing SUPERSEDED-filter + master-preference logic
 (fixed 2026-08-07/08, commit 9b5d61b) handles this reversal correctly
 on its own, confirmed via rebuild.
+
+## NV-070 (2026-08-09, Project Owner relay, Thangseng direct via WhatsApp)
+
+Seven-item vocabulary relay: `Mouth - Ku·sik`, `Joking - bal·eka`,
+`At - 'o' (suffix)`, `Bright - ching·a`, `Sad - duk ong·a`,
+`Praise the lord - Gitelko mittelbo`, `Direct/straight -
+joljol/srongsrong (usage will depend on context)`.
+
+Corpus cross-check (evidence-first, per SESSION_BOOTSTRAP.md
+do-not-repeat entry — checked every term against
+master_dictionary.json/pending_lexicon.json before trusting) found:
+
+- **mouth**: already VERIFIED/HIGH since NV-067 — exact match,
+  reconfirmed unchanged, no edit made.
+- **at, bright, sad**: exact matches to existing untagged corpus
+  entries — promoted those to VERIFIED/HIGH, superseded case/raka-only
+  duplicate rows (`O`, `Ching·a`, `Duk ong·a`).
+- **joking**: relay (`bal·eka`) has a different root from the existing
+  untagged `kal·akenga`/`Ka·lakenga` entries (b- vs k-) — treated as a
+  correction, those two superseded, `Bal·eka` added VERIFIED/HIGH.
+  Existing `Bal·ekonga` (variant/AMBIGUOUS/MEDIUM, same root, different
+  suffix) left as-is with a note flagging the shared root — bare vs
+  -konga-suffixed relationship (aspect? synonym?) not yet
+  disambiguated, needs a follow-up native question.
+- **praise the lord**: relay (`Gitelko mittelbo`) is a materially
+  different phrase from the existing untagged `Gitelna rasong`/
+  `Gitel na rasong` — treated as a correction, both superseded,
+  `Gitelko mittelbo` added VERIFIED/HIGH.
+- **direct/straight**: PO explicitly flagged this as context-dependent
+  without specifying the split. Added `direct`=`joljol` and
+  `straight`=`srongsrong` as variant/AMBIGUOUS/MEDIUM (native-confirmed
+  both words exist) but deliberately did NOT touch or supersede the
+  existing UNVERIFIED candidates (`tong·tang`, `wa·rek·rek`,
+  `dim·breng·a`) — guessing the sense-split would violate evidence-first.
+  **Open question for next Thangseng relay:** which contexts take
+  `joljol` vs `srongsrong` (e.g. physical path/line "straight" vs.
+  "direct/honest" speech or manner)?
+
+**Duplicate check:** confirmed no lingering exact-key/exact-value
+duplicates introduced by this round beyond the ones explicitly marked
+SUPERSEDED above.
+
+**Test fix:** `RC-CANDIDATE-012` (tests/unit/translationEngine.test.js)
+hardcoded the now-superseded capitalized `Ching·a`; changed to a
+case-insensitive check against the confirmed lowercase `ching·a` —
+genuine improvement, not a regression.
+
+**Runtime Handoff (Claude B):** compiled_dict.json changes for
+`joking`, `at`, `bright`, `sad`, `praise the lord`, `direct`,
+`straight` after rebuild — all via the existing master-preference
+mechanism, no engine changes needed, confirmed via rebuild + full test
+suite (196/196) + repository-intelligence.js (0 new violations).
+Separately, see `docs/CLAUDE_B_HANDOFF_20260809_smile_alias_gap.md`
+for the smile bug — re-diagnosed root cause (bare-infinitive alias
+gap-fill, not pickPrimary's master-preference branch), fix still
+outstanding.
+
+## NV-070 follow-up (2026-08-09, same-day, Project Owner relay, Thangseng direct)
+
+Thangseng answered the open joljol/srongsrong question directly:
+
+- **joljol = "straight away / immediately"** (non-delay), not
+  "direct" as the prior AMBIGUOUS entry guessed. Example:
+  `Joljol auebo.` = "go take a bath straight away." Prior
+  `direct`=`joljol` entry marked SUPERSEDED; `joljol` re-homed under
+  new key `straight away / immediately`, VERIFIED/HIGH.
+- **srongsrong = "straight"** (spatial/postural), also conveys
+  non-resistance. Example: `Srongsrong chadengbo.` = "Stand up
+  straight." Promoted AMBIGUOUS/MEDIUM -> VERIFIED/HIGH.
+- **`direct` remains genuinely unresolved** — neither word confirmed
+  for it; left untouched rather than force-mapped.
+
+Same relay included a 7-sentence verb-paradigm batch, reinforcing
+already-established RULE-002 (`-aha` past) and RULE-023 (`-gen`
+future, no raka) rather than introducing new grammar:
+
+| English | Garo | Form |
+|---|---|---|
+| I build (the house) | Anga nokko rika. | general |
+| I am building (the house) | Anga nokko rikenga. | continuous |
+| I am cooking | Anga song'enga. | continuous |
+| I will cook | Anga song'gen. | future |
+| I am taking a shower | Anga auenga. | continuous |
+| I will take a shower | Anga augen. | future |
+| I took a shower | Anga auaha. | past |
+
+Dictionary changes:
+- `build`: promoted the existing UNVERIFIED `rik·a` candidate to
+  VERIFIED/HIGH (new key `I build (general)`); added continuous
+  `I am building`=`Rik·enga`. Other build candidates (`ba·nai·a`,
+  `dim·a`, `gat·a`) left UNVERIFIED, not contradicted.
+- `cook`: root already VERIFIED/HIGH (`Song·a`/`Song·timgipa`) since
+  an earlier round. The pre-existing `cooking`=`Giso·enga` entry had a
+  different, wrong root — SUPERSEDED. Added `I am cooking`=`Song·enga`
+  and `cook (future)`=`Song·gen` on the confirmed song- root. (Renamed
+  from a literal "I will cook" key after `repository-intelligence.js`
+  Check F flagged a collision with a pre-existing corrections.json
+  full-sentence key of the same name — same content, different
+  pipeline layer; resolved by renaming the dictionary key rather than
+  touching corrections.json.)
+- Added an `au-` root shower/bathe paradigm (no raka, consistent with
+  the existing `bath`=`aua` entry): `I am taking a shower`=`Auenga`,
+  `I will take a shower`=`Augen`, `I took a shower`=`Auaha`. Did NOT
+  touch the separate, still-unconfirmed `bathe`=`ha·bu·a`/`ha·bu·dil·a`
+  candidates — different root, not contradicted by this relay.
+
+**Process note:** caught and self-corrected two mistakes before
+commit — (1) initially added the `cooking` SUPERSEDED correction as a
+duplicate row instead of editing the existing one; (2) the
+`corrections.json` key collision above. Both surfaced by
+`repository-intelligence.js` Check F, not shipped.
+
+**Runtime Handoff (Claude B):** no engine changes needed — all
+resolutions confirmed via rebuild + full test suite (196/196) +
+`repository-intelligence.js` (0 new violations, all checks A-F).
+
+## NV-071 (2026-08-09, Thangseng direct, WhatsApp relay via Tridip)
+
+Ten-item batch. Full corpus cross-check against master_dictionary.json,
+corrections.json, and phrase_maps.js done before writing any entries.
+
+**Straightforward promotions (exact match to existing UNVERIFIED
+candidates):**
+- `slippery` = `rim·il·a` → VERIFIED/HIGH
+- `sandal` = `sen·dil` → VERIFIED/HIGH (existing `ja·kop` candidate
+  left UNVERIFIED, not contradicted)
+
+**New entries:**
+- `slip` = `Ga·soltapa` (general form) and `he slipped` =
+  `Ua ga·soltapaha.` (confirms RULE-002 past `-aha` on the new root)
+- `floor` = `A·pa`, plus sentence citations `the floor is slippery`,
+  `the floor is wet` (bare-adjective predicate, no copula — cf.
+  RULE-006). `wet`=`so·si·a` was already VERIFIED/HIGH from an earlier
+  round — no key change, sentence added purely as citation evidence.
+- `the sandal is slippery` = `Sen·dil rimila.`
+- `a little / somewhat` = `on·tisa` — a degree adverb ("a bit
+  further"), used pre-verbally in movement commands. Deliberately kept
+  as a **separate key** from the existing `little` adjective candidates
+  (`ak·ki`, `ak·ki·sa`, `chon·a`, `kom`, still all UNVERIFIED) — this
+  relay didn't touch or resolve those; different word/sense, not a
+  correction.
+- `TV` (English loanword, used as-is), `turn on (the) TV` =
+  `TV on ka·atbo.` — native note confirms Garo borrows English "on"/
+  "off" directly; this `on` is a different sense from the existing
+  `on`=`Kosak·o` (locative "on top of"), not a correction of it.
+- `start the car` = `Gari start ka·bo.` (`Gari`=car already existed,
+  reconfirmed unchanged; `start` is another English loanword)
+
+**Gender-neutral pronoun finding:** `he slipped` uses `Ua` for "he" —
+the same word already VERIFIED/HIGH for "she". Added `he`=`Ua` as a
+new entry and noted the finding on the existing `she`=`Ua` entry
+(both kept; not a correction, an extension — `Ua` appears to be a
+gender-neutral 3rd-person pronoun, not two homophonous words).
+
+**Two open questions flagged in the dictionary, not guessed at:**
+
+1. **`Iachi`/`Uachi` (this relay) vs. `Ianona` (pre-existing, also
+   VERIFIED/HIGH in `come here!`=`Ianona re·babo!`)** — two directly
+   attested forms both associated with a movement-to-here/there sense.
+   Possible read, not claimed as established: `Iachi` = bare deictic
+   `Ia` + RULE-044's `-chi` movement suffix directly, vs. `Ianona` =
+   `Iano` + a separate `-na` directional suffix (paralleling
+   `banona`="where to?" already noted in RULE-044's native_notes) — two
+   routes to a movement sense on the same root. Needs a follow-up
+   native question; not resolved here. See RULE-044 for the
+   established part of this pattern (market/school/home/river/forest,
+   -chi vs -o) — this relay extends the same suffix into deictic
+   here/there territory but doesn't close the -na/-chi relationship.
+2. **`ka·atbo`** (used for "turn on the TV") **vs. `ka·bo`** (used for
+   "start the car") — same light-verb slot (`[NOUN] + English-loanword
+   + ka(·at)bo`, imperative), different suffix shape. Not established
+   whether this is free variation or a meaningful distinction (e.g. an
+   `-at-` transitive/causative infix). `ka·atbo` is the same string
+   already VERIFIED/HIGH in the `phone ka·a` paradigm ("call
+   (imperative, on the phone)"), suggestive of a broader productive
+   `[NOUN]+ka·atbo`="turn on/operate NOUN" construction — flagged as an
+   observed pattern from two data points, not asserted as a rule.
+
+**Runtime Handoff (Claude B):** no engine changes needed. All entries
+confirmed via rebuild + full test suite (196/196) +
+`repository-intelligence.js` (0 new violations, all checks A-F).
+
+## NV-071 follow-up #2 (2026-08-09, same day, Thangseng direct via Tridip)
+
+Closed two confusions permanently, per explicit PO instruction.
+
+**1. Raka correction — `slippery` and `sandal`.** Both had been
+promoted last session to VERIFIED/HIGH *with* raka (`rim·il·a`,
+`sen·dil`), carrying forward a pre-existing corpus spelling that
+predates this project's involvement. Confirmed final, no raka:
+`rimila`, `sendil`. Fixed every occurrence in master_dictionary.json:
+the two headword entries, the embedded root inside the UNVERIFIED
+`slippery ground`=`ha·rimila` compound (embedded typo fixed, compound
+as a whole still UNVERIFIED), and the `the sandal is slippery`
+sentence entry. Checked corrections.json/phrase_maps.js/
+garo_dictionary.json — no other occurrences found.
+
+**2. "Three dogs"/"four dogs" — legacy classifier corruption exposed.**
+Thangseng confirmed `three dogs`=`achak mang·gittam` and `four dogs`=
+`achak mang·bri`, following the same `achak+mang·+numeral-root` pattern
+as the already-VERIFIED `one dog`=`achak mang·sa` and `two dogs`=
+`achak mang·gni`. Cross-checking exposed a legacy bulk-import bug: the
+existing `three dogs`, `four dogs`, and their singular-gloss duplicates
+(`three dog`, `four dog`) had all been corrupted to share `mang·gni`
+(='two') — `four dogs`/`four dog` additionally used the wrong dog-word
+`brang` instead of `achak`. SUPERSEDED all 4 wrong legacy rows, added 4
+correct VERIFIED/HIGH replacements (plural + singular gloss — the
+singular keys needed their own new entries too, since
+`garo_dictionary.json` carries the same wrong value as a non-master
+duplicate that would otherwise still ship once master's only candidate
+was superseded).
+
+**Left untouched, flagged for a future round:** `five dog(s)`=
+`bonga mang·gni` and `fourteen dog`=`chi brang mang·gni` show the same
+corruption shape but weren't confirmed by this relay — not guessed at.
+
+**Process:** `repository-intelligence.js` Check C correctly flagged the
+resulting master-internal multi-value conflict on these 4 keys (old
+SUPERSEDED value + new VERIFIED value coexisting is intentional, not a
+bug) — logged all 4 keys to `src/data/known_dictionary_conflicts.json`
+per the check's own instructions, re-ran clean. Also fixed a downstream
+stale test (`RC-CANDIDATE-037`, `tests/unit/rc037_bird_classifier.test.js`)
+that had hardcoded the old wrong `three dogs` value from an earlier,
+unrelated classifier-noun-substitution fix — updated to the new
+confirmed value; left the parallel `three cat` assertion (same bug
+shape, not yet confirmed) unchanged.
+
+**Runtime Handoff (Claude B):** no engine changes needed. 9178/9178
+entries, 196/196 tests, `repository-intelligence.js` 0 new violations
+(all checks A-F).
+
+## NV-071 open question #1 — CLOSED (2026-08-10, Thangseng direct via Tridip)
+
+> "Iachi and ianona = here, uachi and uanona = there. All of these are
+> locative, but the 'chi' suffix is directional, they not only convey
+> the idea of 'here' and 'there', but also the idea of 'that side' and
+> 'this side' or the idea of 'towards'... However, the translations
+> will be the same in English."
+
+Resolution: `Iachi`/`Uachi` and `Ianona`/`Uanona` were never a
+conflict — all four are locative and all translate to plain English
+"here"/"there". The `-chi` suffix specifically carries an additional
+directional/allative nuance ("towards", "this side"/"that side") that
+`Ianona`/`Uanona` don't, and English collapses that distinction in
+translation. Consistent with RULE-044's core `-chi`=movement-to claim,
+now extended to deictic here/there with an explicit native gloss for
+the nuance.
+
+Actions: updated the two NV-071 sentence entries' notes (were flagged
+"not resolved", now cite this); added four new standalone entries —
+`Iachi`, `Uachi` (both new, "towards/this-or-that-side" sense spelled
+out) and `Ianona`, `Uanona` (the latter genuinely new — Thangseng
+introduced it here; `Ianona` was already attested embedded in the
+pre-existing `come here!`=`Ianona re·babo!` sentence but hadn't had its
+own standalone entry); added a dated RULE-044 `native_notes`
+follow-up. Did not touch the base `here`=`Iano`/`there`=`Uano` entries
+— those are unaffected.
+
+**Not addressed by this relay, still open:** NV-071 open question #2
+(`ka·atbo` vs `ka·bo` light-verb suffix variation). Also unresolved:
+RULE-044's pre-existing separate open item on whether `banona`'s `-na`
+suffix is the same mechanism as `Ianona`/`Uanona`'s `-na` — this relay
+didn't speak to that, still flagged in RULE-044, not claimed.
+
+**Runtime Handoff (Claude B):** no engine changes needed. 9182/9182
+entries, 196/196 tests, `repository-intelligence.js` 0 new violations
+(all checks A-F).
+
+## NV-071 open question #2 — CLOSED (2026-08-10, Thangseng direct via Tridip)
+
+> "ka'atbo and ka'bo mean the same. It's kinda hard to make a
+> differentiation at all. But if attempt to show any differentiation
+> is made at all, I think it can be argued that when 'ka.bo' is used,
+> the person being told is expected to do it him/herself. But when
+> 'ka.atbo' is used, he/she is simply expected to get it done. He/she
+> may entrust someone else to do it. I could be wrong here. Take it
+> with a grain of salt."
+
+Resolution: recorded as a **MEDIUM-confidence, explicitly hedged**
+native intuition, not a firm rule — Thangseng himself flagged
+uncertainty. `ka·bo` ≈ addressee does it themselves; `ka·atbo` ≈
+addressee gets it done (may delegate). Updated the `turn on (the) TV`
+and `start the car` entries to cite this rather than leaving them
+flagged as unresolved. Not promoted into a standalone grammar rule —
+two data points plus an explicit native hedge isn't enough to assert a
+general morphological claim; if more examples surface in a future
+relay, revisit.
+
+Both NV-071 open questions are now closed.
+
+**Runtime Handoff (Claude B):** no engine changes needed. Same entry
+count/test/check status as above — this was a notes-only update, no
+new keys, no rebuild-affecting change beyond the two notes fields.

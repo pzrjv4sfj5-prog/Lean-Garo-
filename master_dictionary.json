@@ -6304,7 +6304,8 @@
   {
     "english": "three dogs",
     "garo": "achak mang·gni",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): legacy copy-paste corruption, reused the classifier form for 'two' (mang·gni) instead of 'three' (mang·gittam). See new VERIFIED/HIGH entry."
   },
   {
     "english": "three birds",
@@ -6349,7 +6350,8 @@
   {
     "english": "four dogs",
     "garo": "brang mang·gni",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): legacy copy-paste corruption, wrong dog-word (brang instead of achak) and wrong classifier (mang·gni='two' instead of mang·bri='four'). See new VERIFIED/HIGH entry."
   },
   {
     "english": "four birds",
@@ -7029,7 +7031,8 @@
   {
     "english": "three dog",
     "garo": "achak mang·gni",
-    "category": "animals"
+    "category": "animals",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): same legacy corruption as 'three dogs' (mang·gni='two' reused instead of mang·gittam='three')."
   },
   {
     "english": "three cat",
@@ -7134,7 +7137,8 @@
   {
     "english": "four dog",
     "garo": "brang mang·gni",
-    "category": "animals"
+    "category": "animals",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): same legacy corruption as 'four dogs' (wrong dog-word + wrong classifier)."
   },
   {
     "english": "four cat",
@@ -14562,7 +14566,8 @@
   {
     "english": "joking",
     "garo": "kal·akenga",
-    "category": "general"
+    "category": "general",
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): correct root is bal- (Bal·eka), not kal-. See NV-070."
   },
   {
     "english": "job",
@@ -14592,7 +14597,8 @@
   {
     "english": "at",
     "garo": "·o",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"At - 'o' (suffix)\". Bound postposition/suffix, not a free-standing word — leading raka marks the attachment boundary. See NV-070."
   },
   {
     "english": "ate",
@@ -14649,7 +14655,8 @@
   {
     "english": "bright",
     "garo": "ching·a",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"Bright - ching.a\". See NV-070."
   },
   {
     "english": "butt",
@@ -14772,7 +14779,8 @@
   {
     "english": "sad",
     "garo": "duk ong·a",
-    "category": "emotions"
+    "category": "emotions",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"Sad - duk ong.a\". See NV-070."
   },
   {
     "english": "saw",
@@ -14817,7 +14825,8 @@
   {
     "english": "praise the lord",
     "garo": "Gitelna rasong",
-    "category": "general"
+    "category": "general",
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): correct phrase is Gitelko mittelbo. See NV-070."
   },
   {
     "english": "priceless",
@@ -15413,7 +15422,7 @@
     "pos": null,
     "category": "church",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): correct phrase is Gitelko mittelbo. See NV-070."
   },
   {
     "english": "bring me the rice powder",
@@ -15597,7 +15606,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): correct root is bal- (Bal·eka), not kal-. See NV-070."
   },
   {
     "english": "what job do you do",
@@ -15621,7 +15630,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — no-raka duplicate of the confirmed \"·o\" suffix form. See NV-070."
   },
   {
     "english": "awkward",
@@ -15661,7 +15670,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — case-only duplicate of the confirmed \"ching·a\" entry. See NV-070."
   },
   {
     "english": "bye",
@@ -15805,7 +15814,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — case-only duplicate of the confirmed \"duk ong·a\" entry. See NV-070."
   },
   {
     "english": "said",
@@ -15906,7 +15915,8 @@
   {
     "english": "she",
     "garo": "Ua",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH. Note 2026-08-09 (NV-071): the same word is confirmed for 'he' in a direct native sentence ('ua ga·soltapaha' = 'he slipped') — Ua appears to be a gender-neutral 3rd-person pronoun, not exclusively 'she'. See new 'he'=Ua entry."
   },
   {
     "english": "we",
@@ -15956,7 +15966,8 @@
   {
     "english": "cooking",
     "garo": "Giso·enga",
-    "category": "general"
+    "category": "general",
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): wrong root (giso- vs confirmed song-). See 'I am cooking'=Song·enga."
   },
   {
     "english": "walking",
@@ -18278,7 +18289,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM"
+    "notes": "variant/AMBIGUOUS/MEDIUM. 2026-08-09: root now confirmed as bal- via NV-070 (\"Joking - bal·eka\"). Relationship between bare Bal·eka and this -konga-suffixed form not yet disambiguated (verb-form/aspect difference vs synonym) — needs a follow-up native question."
   },
   {
     "english": "Journey",
@@ -24126,7 +24137,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct): root and general form now confirmed VERIFIED/HIGH under english=\"I build (general)\"/\"Rik·a\". Retained per citation discipline. Other build candidates ba·nai·a/dim·a/gat·a remain UNVERIFIED, not contradicted."
   },
   {
     "english": "build hive",
@@ -38706,11 +38717,11 @@
   },
   {
     "english": "sandal",
-    "garo": "sen·dil",
+    "garo": "sendil",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH. FINAL — corrected 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): no raka. Prior 'sen·dil' spelling (this entry and the sentence example below) was wrong; corrected everywhere in master_dictionary.json. Existing 'ja·kop' candidate left UNVERIFIED, not contradicted (may be a distinct footwear term)."
   },
   {
     "english": "sap",
@@ -40098,19 +40109,19 @@
   },
   {
     "english": "slippery",
-    "garo": "rim·il·a",
+    "garo": "rimila",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH. FINAL — corrected 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): no raka. Prior 'rim·il·a' spelling was wrong; corrected everywhere in master_dictionary.json (including the 'slippery ground' compound). Example: 'A·pa rimila.' = 'The floor is slippery.' Bare-adjective predicate, no copula — cf. RULE-006."
   },
   {
     "english": "slippery ground",
-    "garo": "ha·rim·il·a",
+    "garo": "ha·rimila",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "UNVERIFIED/HIGH. Internal raka corrected 2026-08-09 (NV-071 follow-up) to match the now-confirmed no-raka 'rimila' root — compound as a whole still UNVERIFIED, only the embedded spelling error fixed."
   },
   {
     "english": "slope",
@@ -61198,5 +61209,269 @@
     "category": "phrases",
     "classifier": null,
     "notes": "VERIFIED/HIGH. New entry, 2026-08-08 (Project Owner relay, Thangseng direct): 'the book is on the table' = 'Ki.tap tebilo ong.a'. book=Ki·tap (reconfirmed), table=te·bil (already VERIFIED/HIGH, unchanged). See NV-069."
+  },
+  {
+    "english": "Joking",
+    "garo": "Bal·eka",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"Joking - bal·eka\". Corrects the prior kal·akenga/Ka·lakenga candidates (wrong root, now SUPERSEDED). Relationship to the existing Bal·ekonga (variant/AMBIGUOUS/MEDIUM) candidate not yet disambiguated. See NV-070."
+  },
+  {
+    "english": "praise the lord",
+    "garo": "Gitelko mittelbo",
+    "pos": null,
+    "category": "church",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct): \"Praise the lord - Gitelko mittelbo\". Corrects the prior Gitelna rasong/Gitel na rasong candidates, now SUPERSEDED. See NV-070."
+  },
+  {
+    "english": "direct",
+    "garo": "joljol",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — 2026-08-09 (Project Owner relay, Thangseng direct, follow-up to NV-070). Correction: joljol does not mean \"direct\" — it means \"straight away / immediately\" (non-delay). Example: 'Joljol auebo.' = 'go take a bath straight away.' See new entry under english=\"straight away / immediately\". \"direct\" remains unresolved — neither joljol nor srongsrong confirmed for this sense; existing UNVERIFIED candidates (tong·tang, wa·rek·rek, dim·breng·a) unaffected."
+  },
+  {
+    "english": "straight away / immediately",
+    "garo": "joljol",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct, follow-up to NV-070). Conveys non-delay. Example: 'Joljol auebo.' = 'go take a bath straight away.'"
+  },
+  {
+    "english": "straight",
+    "garo": "srongsrong",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct, follow-up to NV-070). Spatial/postural \"straight\"; also conveys non-resistance. Example: 'Srongsrong chadengbo.' = 'Stand up straight.' Existing UNVERIFIED candidates for \"straight\" (dim·breng·a, tong·tang, wa·rek·rek) not superseded — may cover other senses (e.g. straight line/path) not addressed by this confirmation."
+  },
+  {
+    "english": "I build (general)",
+    "garo": "Rik·a",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Corrects prior UNVERIFIED status of the existing 'rik·a' build candidate (now this VERIFIED entry supersedes it for compile purposes; other build candidates ba·nai·a/dim·a/gat·a left UNVERIFIED, not contradicted). Example: 'Anga nokko rika.' = 'I build the house.'"
+  },
+  {
+    "english": "I am building",
+    "garo": "Rik·enga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Continuous form of the rik·a (build) paradigm. Example: 'Anga nokko rikenga.' = 'I am building the house.'"
+  },
+  {
+    "english": "I am cooking",
+    "garo": "Song·enga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Continuous form; shares the song- root already confirmed VERIFIED/HIGH for 'cook' (Song·a/Song·timgipa). Corrects the prior Giso·enga candidate (wrong root, now superseded). Example: 'Anga song'enga.' = 'I am cooking.'"
+  },
+  {
+    "english": "cook (future)",
+    "garo": "Song·gen",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Future form of the song- (cook) paradigm, per RULE-023 (-gen never carries raka). Example: 'Anga song'gen.' = 'I will cook.' Note: kept distinct from the pre-existing corrections.json full-sentence key \"i will cook\"=\"Anga Song·gen\" (same content, different pipeline layer) to avoid a Check-F cross-table key collision."
+  },
+  {
+    "english": "I am taking a shower",
+    "garo": "Auenga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Continuous form; shares the au- root with the existing 'bath'=aua entry. Example: 'Anga auenga.' = 'I am taking a shower.' Distinct from the unrelated, still-unconfirmed 'bathe' candidates (ha·bu·a/ha·bu·dil·a) — not addressed by this relay."
+  },
+  {
+    "english": "I will take a shower",
+    "garo": "Augen",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Future form of the au- (shower/bathe) paradigm, per RULE-023 (-gen never carries raka). Example: 'Anga augen.' = 'I will take a shower.'"
+  },
+  {
+    "english": "I took a shower",
+    "garo": "Auaha",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Past form of the au- (shower/bathe) paradigm, per RULE-002 (-aha marks simple past/perfect). Example: 'Anga auaha.' = 'I took a shower.'"
+  },
+  {
+    "english": "he",
+    "garo": "Ua",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Example: 'Ua ga·soltapaha.' = 'He slipped.' Same word already VERIFIED/HIGH for 'she' — appears to be a gender-neutral 3rd-person pronoun, not two homophonous words. Not yet confirmed whether it covers 'it' as well."
+  },
+  {
+    "english": "slip",
+    "garo": "Ga·soltapa",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). General/citation form. Past form 'Ga·soltapaha' confirmed same relay (RULE-002, -aha). Internal morpheme boundaries beyond the single marked raka not analyzed — retained as given, not further segmented."
+  },
+  {
+    "english": "he slipped",
+    "garo": "Ua ga·soltapaha.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Confirms RULE-002 (-aha past) applied to the new 'slip' root Ga·soltapa. See also new 'he'=Ua entry."
+  },
+  {
+    "english": "floor",
+    "garo": "A·pa",
+    "pos": null,
+    "category": "home",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Examples: 'A·pa rimila.' = 'The floor is slippery.'; 'A·pa sosia.' = 'The floor is wet.'"
+  },
+  {
+    "english": "the floor is slippery",
+    "garo": "A·pa rimila.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Bare-adjective predicate, no copula — cf. RULE-006."
+  },
+  {
+    "english": "the floor is wet",
+    "garo": "A·pa sosia.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Both 'floor' (A·pa) and 'wet' (so·si·a, already VERIFIED/HIGH from an earlier round) were already-known items reconfirmed together in this sentence — no dictionary key changes needed, retained as citation evidence for the sentence pairing itself."
+  },
+  {
+    "english": "the sandal is slippery",
+    "garo": "Sendil rimila.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Same bare-adjective predicate pattern as 'the floor is slippery.' Corrected 'Sen·dil'->'Sendil' (NV-071 follow-up, no raka)."
+  },
+  {
+    "english": "a little / somewhat",
+    "garo": "on·tisa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Degree adverb ('a bit/a little further'), used pre-verbally in movement commands: 'Iachi on·tisa re·babo.' = 'Come a little (over) here.'; 'Uachi on·tisa re·angbo.' = 'Go a little (over) there.' Deliberately kept as a separate key from the existing 'little' adjective candidates (ak·ki, ak·ki·sa, chon·a, kom, all still UNVERIFIED) — this is a distinct word, not a confirmation or correction of those; the two senses (size adjective vs. degree adverb) may or may not share a root, not established here."
+  },
+  {
+    "english": "come a little here",
+    "garo": "Iachi on·tisa re·babo.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). re·babo already VERIFIED/HIGH (existing 'come!' imperative). RESOLVED 2026-08-10 (Thangseng direct, follow-up): 'Iachi' and 'Ianona' (as in the pre-existing 'come here!'='Ianona re·babo!') both translate to English 'here' and both are locative — not a conflict. But 'chi' is specifically the directional suffix: forms with it also carry 'that side/this side'/'towards' beyond plain 'here', a nuance English collapses in translation. See RULE-044 native_notes follow-up."
+  },
+  {
+    "english": "go a little there",
+    "garo": "Uachi on·tisa re·angbo.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). re·angbo already VERIFIED/HIGH (existing 'go' imperative, RULE-044 examples). RESOLVED 2026-08-10 (Thangseng direct, follow-up): 'Uachi' and 'Uanona' both translate to English 'there' and both are locative — not a conflict, parallel to Iachi/Ianona above. See RULE-044 native_notes follow-up."
+  },
+  {
+    "english": "TV",
+    "garo": "TV",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). English loanword, used as-is."
+  },
+  {
+    "english": "turn on (the) TV",
+    "garo": "TV on ka·atbo.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). Native note: \"Garo makes use of the English words 'on' and 'off'.\" This 'on' is a distinct sense from the existing 'on'=Kosak·o (locative, e.g. 'on top of') — a borrowed English switch-particle, not a translation/correction of it. RESOLVED 2026-08-10 (Thangseng direct, MEDIUM confidence, explicitly hedged by the native speaker — \"I could be wrong here, take it with a grain of salt\"): ka·atbo and ka·bo largely mean the same and are hard to differentiate, but if forced, ka·atbo implies the addressee is expected to get it done (may delegate to someone else), vs. ka·bo implying the addressee does it themselves. Consistent with 'ka·atbo' here (get the TV switched on, delegable) vs. 'ka·bo' for 'start the car' (typically done by the person themselves). Not a firm rule — kept as a tentative native intuition, not upgraded to VERIFIED/HIGH scope beyond the individual word confirmations already established."
+  },
+  {
+    "english": "start the car",
+    "garo": "Gari start ka·bo.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071). 'Gari' (car) already an existing entry, reconfirmed unchanged. 'start' is an English loanword, used as-is (cf. TV/on/off borrowing pattern this session). RESOLVED 2026-08-10 (Thangseng direct, MEDIUM confidence, explicitly hedged — \"I could be wrong here, take it with a grain of salt\"): ka·bo vs ka·atbo (see 'turn on (the) TV') are largely synonymous; if forced, ka·bo implies the addressee does it themselves rather than delegating. Tentative native intuition, not a firm rule."
+  },
+  {
+    "english": "three dogs",
+    "garo": "achak mang·gittam",
+    "pos": null,
+    "category": "numbers",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up). Follows the same achak+mang·+numeral-root pattern as the already-VERIFIED/HIGH 'one dog'=achak mang·sa and 'two dogs'=achak mang·gni; gittam=3 (cf. 'three fish'=na·tok mang·gittam, 'three books'=ki·tap king·gittam, already VERIFIED/HIGH). Corrects the legacy 'three dogs'/'three dog' entries (SUPERSEDED — copy-paste corruption reusing mang·gni='two')."
+  },
+  {
+    "english": "four dogs",
+    "garo": "achak mang·bri",
+    "pos": null,
+    "category": "numbers",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up). Same achak+mang·+numeral-root pattern; bri=4 (already VERIFIED/HIGH as the standalone numeral). Corrects the legacy 'four dogs'/'four dog' entries (SUPERSEDED — copy-paste corruption using wrong dog-word 'brang' and wrong classifier mang·gni='two'). Note for future rounds: the same mang·gni-reused-everywhere corruption pattern also appears, unconfirmed and untouched by this relay, in the existing 'five dog(s)'=bonga mang·gni and 'fourteen dog'=chi brang mang·gni entries — flagged for a future NV round, not fixed here (evidence-first — only 2/3/4 were directly confirmed)."
+  },
+  {
+    "english": "three dog",
+    "garo": "achak mang·gittam",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'three dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship."
+  },
+  {
+    "english": "four dog",
+    "garo": "achak mang·bri",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'four dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship."
+  },
+  {
+    "english": "here (towards/this side)",
+    "garo": "Iachi",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip). Translates to English 'here' same as the plain 'Iano'/'Ianona' forms, but carries the '-chi' directional suffix (RULE-044): also conveys 'this side'/'towards', a nuance English collapses. Direct quote: \"the 'chi' suffix is directional, they not only convey the idea of 'here' and 'there', but also the idea of 'that side' and 'this side' or the idea of 'towards'... However, the translations will be the same in English.\""
+  },
+  {
+    "english": "there (towards/that side)",
+    "garo": "Uachi",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip). Translates to English 'there' same as the plain 'Uano'/'Uanona' forms, but carries the '-chi' directional suffix (RULE-044): also conveys 'that side'/'towards', a nuance English collapses. Parallel to 'here (towards/this side)'=Iachi."
+  },
+  {
+    "english": "here (locative, movement-sentence form)",
+    "garo": "Ianona",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Standalone entry added 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip) — already attested embedded in the pre-existing VERIFIED/HIGH 'come here!'='Ianona re·babo!' sentence, now confirmed as its own locative 'here' form, distinct from but translating the same as 'Iachi' (which specifically adds the '-chi' directional/'towards' nuance) and the bare 'Iano'."
+  },
+  {
+    "english": "there (locative, movement-sentence form)",
+    "garo": "Uanona",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip), new — parallels the pre-existing 'Ianona'. Translates to English 'there' same as 'Uachi'/'Uano'; does not carry the '-chi' directional/'towards' nuance."
   }
 ]

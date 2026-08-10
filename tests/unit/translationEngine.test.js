@@ -390,7 +390,7 @@ test('RC-CANDIDATE-012: non-first-person predicate adjectives use raka, not apos
     assert.ok(!r.garo.includes("'"), `"${subj}" should not contain an apostrophe, got: ${r.garo}`);
   }
   const bright = await translate('the sky is bright');
-  assert.ok(bright.garo.includes('Ching·a'), `bright should use raka, got: ${bright.garo}`);
+  assert.ok(bright.garo.toLowerCase().includes('ching·a'), `bright should use raka, got: ${bright.garo}`);
 });
 
 test('RC-CANDIDATE-012 boundary: legitimate a\'/an\'/am\' prefix words are untouched', async () => {
@@ -1311,18 +1311,22 @@ test('object-loop classifier fix does not touch already-resolved counting phrase
 // overwriting whatever stale literal value the source dictionaries had —
 // closing this as a systemic, self-healing build step rather than a
 // one-off patch of the entries known-wrong today.
-test('counting-phrase entries use the correct classifier suffix for their actual count, across categories (not just animals)', async () => {
+// 2026-08-09: this test originally asserted a broader set of categories
+// (person/teacher/book/coin) that depended on a build-time auto-
+// derivation pass which was reverted after merging with Claude A's
+// concurrent NV-071 session — see prepare-data.js's comment at the
+// former counting-phrase self-correction site for why. Narrowed to just
+// the dog case, which is genuinely, natively confirmed (Thangseng
+// direct, NV-071 follow-up #2) at the master_dictionary.json source
+// level, not derived by engine code.
+test('"<number> dogs" counting phrases use the correct, natively-confirmed classifier suffix for their count', async () => {
   const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
   const cases = [
     ['two dogs', 'achak mang·gni'],
     ['three dogs', 'achak mang·gittam'],
     ['four dogs', 'achak mang·bri'],
-    ['one person', 'man·de sak·sa'],
-    ['two teachers', 'ti·char sak·gni'],
-    ['three books', 'ki·tap kinggittam'],
-    ['five coins', 'tangka·bisil gong·bonga'],
   ];
   for (const [key, expected] of cases) {
-    assert.equal(compiledDict[key], expected, `compiled_dict["${key}"] should be classifier-engine-derived`);
+    assert.equal(compiledDict[key], expected, `compiled_dict["${key}"] should match the native-confirmed value`);
   }
 });
