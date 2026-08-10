@@ -1,5 +1,5 @@
 repository:
-  head: 8d2a400
+  head: 00164cb
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -1683,20 +1683,34 @@ claude_b:
     fixed the NOUN substitution for a subset (dog/cat), never re-verified
     the classifier SUFFIX against the actual count, so 'three dogs' was
     still silently wrong (mang·gni, the suffix for TWO) even after that
-    fix. Rather than hand-patch ~400 individual records (one-time fix,
-    doesn't prevent recurrence), added a build-time self-correction pass
-    to prepare-data.js: every '<number> <noun>' compiled_dict.json entry
-    is now re-derived fresh from the noun's own canonical (post-merge)
-    dictionary entry + its classifier category + the count, permanently
-    closing this category of drift for every current and future entry --
-    not just today's known-wrong ones. Deliberately conservative to add
-    zero new guessed linguistic data: only fires when the noun has an
-    EXPLICIT CLASSIFIER_MAP entry (never the 'ge' catch-all as a blind
-    guess for an unmapped noun) and the bare singular noun already has its
-    own finalized dictionary entry. 215 entries corrected this build.
-    Updated 2 tests whose hardcoded expectations were themselves stale
-    (rc037_bird_classifier.test.js had 'three dogs'->'achak mang·gni'
-    hardcoded, i.e. was asserting the bug).
+    fix. Initially shipped as a build-time self-correction pass in
+    prepare-data.js (215 entries auto-derived and corrected, commit
+    8d2a400) -- then REVERTED after a post-fix git fetch/merge (commit
+    00164cb) surfaced that Claude A/Thangseng had independently, natively
+    confirmed the exact same dog-count values in parallel
+    (docs/THANGSENG_NATIVE_VALIDATION.md NV-071 follow-up #2), but
+    explicitly, deliberately left the structurally-identical 'three
+    cat'/'two cat' entries untouched pending their OWN native
+    confirmation -- 'not touched by that relay', on principle: this
+    project's standing discipline is that linguistic values are never
+    derived/guessed even when the derivation looks mechanically obvious
+    from an already-confirmed system, only entered once explicitly
+    confirmed word-by-word. The blanket build-time pass would have
+    silently overwritten that restraint on every future build for all 410
+    remaining (413 minus the 3 dog keys) mismatches. Deferred to Claude
+    A's more conservative approach: reverted the self-correction pass
+    (dog values now come directly from Claude A's own confirmed
+    master_dictionary.json entries, no code fix needed), took origin's
+    version of rc037_bird_classifier.test.js in full, narrowed the new
+    translationEngine.test.js regression test from 7 cross-category cases
+    down to the 3 genuinely-confirmed dog cases. The remaining 410
+    mismatches are a real, live finding, now handed to Claude A as a
+    review candidate list (see this session's migration doc) rather than
+    shipped as an unreviewed engineering fix -- the underlying mechanism
+    (deriving "<number> <noun>" phrases from a noun's own entry + its
+    classifier) may still be worth reviving later, but gated behind an
+    explicit per-noun allowlist Claude A maintains, not an implicit
+    "has a CLASSIFIER_MAP entry" trigger.
 
     Verification: full npm run build passes end-to-end, 203/203 unit tests
     (up from 196 at session start), lint clean (0 errors, 0 warnings), no

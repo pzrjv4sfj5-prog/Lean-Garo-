@@ -1,30 +1,37 @@
 # Claude B Migration Document — 2026-08-09
 
+## ⚠️ Session had a mid-work merge — read §1 and §3.E before anything else
+
 ## 1. Session Summary
 
 Resumed as Claude B from a user-pasted copy of the `2026-08-08` migration
 doc (checkpoint `4ee8f14`). Re-synced against actual repo state before
 acting per standing resume protocol — `git fetch` found origin had since
-advanced to `1aad3fe` (Claude A's NV-067/068/069 session: closed the
-`smile`-variant engine-bug handoff as a flag for Claude B, plus a full
-young/`bi·sa`/children/calf/book/table linguistic-correction cluster).
-Pulled clean, re-verified 196/196 before starting any new work.
+advanced to `1aad3fe` (Claude A's NV-067/068/069 session). Pulled clean,
+re-verified 196/196 before starting any new work.
 
 Closed all 4 P1 engineering items carried in the `2026-08-08` migration
-doc's backlog, plus one new systemic issue (counting-phrase classifier
-corruption across all categories) surfaced while fixing item 3, per an
-explicit Project Owner instruction mid-session with confirmed reference
-examples (`two dogs`=`achak mang·gni`, `three dogs`=`achak mang·gittam`,
-`four dogs`=`achak mang·bri`).
+doc's backlog (Fixes 1–4 below). While fixing item 3, surfaced a
+systemic `"<number> <noun>"` classifier-phrase issue across all
+categories and initially shipped a broad build-time fix for it (Fix 5,
+commit `8d2a400`) — **this was then substantially reverted after a
+second `git fetch` mid-session** found Claude A had independently
+natively confirmed the same dog-counting values in parallel, but
+deliberately declined to generalize the fix the way this session had.
+See §3.E for the full account — this is the most important finding of
+the session, more so than any individual bug fix.
+
 
 ## 2. Repository State
 
-- **HEAD:** `0ddd84a`
-- **origin/main:** to be pushed this session (was `4ee8f14` at session
-  start, `1aad3fe` after re-sync)
-- **Clean tree:** confirmed (`git status --short` empty as of this doc)
-- **PAT:** session-supplied, used inline in the clone/push URL only,
-  never written to `.git/config` or anywhere on disk
+- **HEAD:** `00164cb` (merge commit reconciling this session with
+  origin's concurrent Claude A work)
+- **origin/main:** to be pushed this session
+- **Clean tree:** confirmed (`git status --short` empty as of this doc;
+  `dist/index.html`'s incidental `vite build` diff reverted each time)
+- **PAT:** session-supplied, used inline in clone/push URLs only, never
+  written to `.git/config` or anywhere on disk (confirmed via `grep`
+  after each push)
 
 ## 3. Engineering Work Completed
 
@@ -38,234 +45,246 @@ genuinely-confirmed variant row of identical tag shape — `table`'s
 master row carries the exact same bare `variant/VERIFIED/HIGH` tag but
 *is* the confirmed value. A first attempt at a generic `isVariant`-aware
 fix to `pickPrimary` regressed the table/buy/door SUPERSEDED-precedence
-tests and was reverted before shipping (confirmed via `git diff`
-byte-identical revert). Landed instead on a narrow, in-pattern
-`grammarOverrides` entry — `'smile': 'Ka·dingsmita'` — the same
+tests and was reverted before shipping. Landed instead on a narrow, in-
+pattern `grammarOverrides` entry — `'smile': 'Ka·dingsmita'` — the same
 mechanism already used for the `right (direction)/(matching)/(correct)`
-3-way split. `compiled_dict.json` diff confirmed exactly one key
-changed. Commit `c071f73`.
+3-way split. Commit `c071f73`.
+
+**Note found post-merge:** Claude A, working in parallel that same day,
+independently re-diagnosed this bug with a *different* root-cause
+hypothesis (bare-infinitive alias gap-fill in `main()`, not
+`pickPrimary`'s master-preference branch — see
+`docs/CLAUDE_B_HANDOFF_20260809_smile_alias_gap.md`, still present in
+the repo, not yet reconciled). Both diagnoses may be partially correct
+for different reasons (there are two separate competing entries for
+"smile": a plain `garo_dictionary.json` `"smile"` key AND a
+`master_dictionary.json` `"To smile"` key with its own bare-alias path)
+— **not fully untangled this session**. Functionally this doesn't
+matter: the `grammarOverrides` entry is applied early in
+`finalizeDictionary()`, before the bare-alias step runs, so it wins
+regardless of which upstream mechanism is "the" root cause, and the
+compiled value is confirmed correct (`Ka·dingsmita`) after the merge.
+But the handoff doc is now stale and should be closed out by whoever
+picks this up next.
 
 ### Fix 2 — `getCategories()`/`getByCategory()` dormancy
 Root cause: `getAllVocabulary()` built every entry from
-`compiled_dict.json`, whose values are plain Garo strings with no
-category field at all — every entry fell through to the
-`'uncategorized'` default. Real per-word category data existed the
-whole time in `category_index.json` (built separately by
-`prepare-data.js` from `master_dictionary.json`'s own `category` field)
-and was already being consulted as a fallback by the default-export
-wrapper's `getAllCategories()`/`getCategoryVocabulary()` — but never by
-these two raw named exports themselves. Fixed by having
-`getAllVocabulary()` fall back to `CATEGORY_INDEX[english]` — pure
-wiring gap, no new data added or guessed. Now returns 25 real
-categories instead of just `['uncategorized']`. Added 3 regression
-tests. Commit `bb98c97`.
+`compiled_dict.json` (plain strings, no category field) — every entry
+fell through to `'uncategorized'`. Real category data existed the whole
+time in `category_index.json`, already consulted by the default-export
+wrapper's `getAllCategories()`/`getCategoryVocabulary()`, but never by
+these two raw named exports. Fixed by having `getAllVocabulary()` fall
+back to `CATEGORY_INDEX[english]` — pure wiring gap, no new data. Now
+returns 25 real categories instead of just `['uncategorized']`. Added 3
+regression tests. Commit `bb98c97`. Unaffected by the merge.
 
 ### Fix 3 — `"she has three children"` drops the number/classifier
-Root cause: `grammarEngine.js`'s object-extraction loop
-(`analyzeGrammar`) went straight from a failed full-phrase lookup
-(`"three children"`) to a bare `lastWord` lookup (`"children"` →
-`"Bi·sarang"`), discarding any leading number word entirely — even
-though `garo_classifier.js`'s `countNoun()`/`parseCountingPhrase()`
-already correctly handle exactly this pattern on their own. The two
-systems (`translationEngine.js`'s own step 1.6 classifier-counting
-check, and `grammarEngine.js`'s object loop) were simply never wired
-together for the in-sentence-object case. Fixed by trying
-`parseCountingPhrase()` + `countNoun()` first in the object loop, but
-**only** when no existing full-phrase lookup already succeeds — so it
-can never silently override an existing dictionary/phrase-map entry.
-This surfaced Fix 5 below while testing. Added 3 regression tests.
-Commit `2fcfca4`.
+Root cause: `grammarEngine.js`'s object-extraction loop went straight
+from a failed full-phrase lookup to a bare `lastWord` lookup
+(`"children"` → `"Bi·sarang"`), discarding any leading number word
+entirely — even though `garo_classifier.js`'s `countNoun()`/
+`parseCountingPhrase()` already handle this correctly on their own.
+Wired the existing classifier engine into the object loop, scoped to
+only fire when no full-phrase lookup already succeeds — so it can never
+silently override an existing dictionary/phrase-map entry. Added 3
+regression tests. Commit `2fcfca4`. Unaffected by the merge. This is
+what surfaced Fix 5 below.
 
 ### Fix 4 — Build gate silently skipped 3 of 6 unit test files
-`npm run build` hardcoded exactly 3 test files
-(`translationEngine.test.js`, `claude-d-preflight.test.js`,
-`item2-normalization.test.js`) to `node --test`, while `npm test`
-already used the glob `tests/unit/*.test.js`. Three files added since —
-`number_engine.test.js`, `rc037_bird_classifier.test.js`,
-`rong_classifier.test.js` (33 tests) — were never added to the
-hardcoded build-gate list, so a regression in any of them could ship
-through `npm run build` undetected. Verified all 3 previously-excluded
-files passed standalone *before* making the change (so the fix
-wouldn't newly block the build on a pre-existing failure), then
-switched the build script to the same glob `npm test` already uses.
-Commit `535d4b4`.
+`npm run build` hardcoded exactly 3 test files, while `npm test`
+already used the glob `tests/unit/*.test.js`. 3 files added since (33
+tests) were never added to the build-gate list. Verified all 3 passed
+standalone before making the change, then switched the build script to
+the same glob. Commit `535d4b4`. Unaffected by the merge.
 
-### Fix 5 — NEW, systemic `"<number> <noun>"` classifier-phrase corruption, all categories
-Not in the original backlog — surfaced while fixing item 3 and
-confirmed in-session by the Project Owner with explicit reference
-values: `two dogs`=`achak mang·gni`, `three dogs`=`achak mang·gittam`,
-`four dogs`=`achak mang·bri`. Audited all 884 `"<number> <noun>"`
-entries across `master_dictionary.json` + `garo_dictionary.json`
-against `garo_classifier.js`'s own already-native-speaker-confirmed
-classifier-composition system (see that file's header — mang/sak/king/
-gong/jol/ge/rong/pang/dot, each independently confirmed) and found 413
-mismatches spanning **every** classifier category, not just animals —
-`sak` (person/teacher/student), `king` (book), `gong` (coin/money),
-`rong` (fruit), `pang` (tree). Root cause: these are hand-authored
-literal phrases (OCR imports, early manual entries), stored and merged
-the same as any other headword, completely independent of the
-classifier engine that could derive them correctly.
-`RC-CANDIDATE-037` (2026-08-07 session) had only fixed the **noun**
-substitution for a subset (dog/cat), never re-verified the classifier
-**suffix** against the actual count — `"three dogs"` was still silently
-wrong (`mang·gni`, the suffix for TWO) even after that fix, just with
-the right noun.
+### Fix 5 — `"<number> <noun>"` classifier corruption: shipped broad, then reverted narrow (see §3.E)
+Initially: per Project Owner-confirmed reference (`two dogs`=`achak
+mang·gni`, `three dogs`=`achak mang·gittam`, `four dogs`=`achak
+mang·bri`), audited all 884 `"<number> <noun>"` entries across both
+source dictionaries against `garo_classifier.js`'s classifier system
+and found 413 mismatches spanning every category. Shipped a build-time
+self-correction pass in `prepare-data.js` deriving all 413 from the
+classifier engine (215 actually differed from stored values). Commit
+`8d2a400`.
 
-Rather than hand-patch ~400 individual records (a one-time fix that
-wouldn't prevent tomorrow's OCR import from reintroducing the same
-class of error), added a **build-time self-correction pass** to
-`prepare-data.js`: every `"<number> <noun>"` `compiled_dict.json` entry
-is now re-derived fresh from the noun's own canonical (post-merge)
-dictionary entry + its classifier category + the count, at every
-build — overwriting whatever stale literal value the source data had.
-Deliberately conservative to add zero new guessed linguistic data:
-only fires when (a) the noun has an **explicit** `CLASSIFIER_MAP` entry
-(never the `ge` catch-all as a blind guess for an unmapped noun) and
-(b) the bare singular noun already has its own finalized dictionary
-entry (so every phrase uses the exact same noun spelling any other
-lookup of that noun would return — this also fixed a related
-inconsistency where `"two birds"` used a different bird-word spelling
-than a bare `"bird"` lookup would). Never invents new keys, only
-corrects existing ones. **215 entries corrected** on this build.
+**This was reverted** (see §3.E) after discovering Claude A had
+independently fixed only the 3 dog keys, with explicit native
+confirmation, and deliberately left the other 410 — including the
+structurally-identical `"three cat"` — untouched pending their own
+confirmation. The revert is folded into the merge commit `00164cb`
+along with reconciling origin's changes; there is no separate
+Fix-5-revert commit.
 
-Updated 2 tests whose hardcoded expectations were themselves stale
-(`rc037_bird_classifier.test.js` had `"three dogs"`→`"achak mang·gni"`
-hardcoded, i.e. was asserting the pre-fix bug value; also updated its
-`"two birds"`/`"two cat"` expectations to the now-consistent canonical
-noun spellings). Added 1 new regression test spanning multiple
-classifier categories. Commit `8d2a400`.
+### E. The merge — why Fix 5 was reverted, in detail
 
-### Workstate doc sync
-Commit `0ddd84a`: updated `.ai/WORKSTATE.yaml` (`claude_b.current_task`
-full summary, `claude_b_prior` rotation, `repository.head`/
-`last_updated`/`test_status`) and `.ai/SESSION_BOOTSTRAP.md` (new
-"Current joint work package" entry + 2 new "Do not repeat" entries).
-Verified the spliced YAML parses correctly and that every section
-outside `claude_b`/`claude_b_prior`/`repository.head`/
-`repository.last_updated*`/`repository.test_status` is byte-identical
-to before this edit.
+Mid-session, a routine pre-push `git fetch` (standard protocol before
+any push, not triggered by anything going wrong) found origin had
+advanced **8 commits** while this session's work was in progress — all
+Claude A, including `5114846`: *"NV-071 follow-up — close rimila/sendil
+raka + dog-counting for good"*. That commit fixed `three dogs`/`four
+dogs` directly in `master_dictionary.json`, with Thangseng's explicit
+native confirmation of the exact values this session had also derived
+mechanically — **the same output, reached two different ways at the
+same time**, a coincidence worth noting for its own sake.
 
-## 4. Runtime Verification
+The commit message and `docs/THANGSENG_NATIVE_VALIDATION.md`'s NV-071
+follow-up #2 entry were explicit that `"five dog(s)"`/`"fourteen dog"`
+and `"three cat"`/`"two cat"` show the *same corruption shape* but were
+**deliberately left untouched** — `"not confirmed by this relay"`, `"not
+guessed at"`. This is a load-bearing, repeatedly-stated discipline
+throughout this project's history (see `SESSION_BOOTSTRAP.md`'s
+"Do not repeat" list for a similar prior case): linguistic values are
+never derived or generalized from an already-confirmed system, even
+when the derivation looks mechanically obvious — only entered once
+confirmed word-by-word.
 
-- **Unit tests:** `npm test` (all 6 files in `tests/unit/`) —
-  **203/203 passing** (up from 196 at session start: +3 children-
-  classifier regression tests, +1 counting-phrase-engine regression
-  test, +1 net after updating 2 stale RC-CANDIDATE-037 expectations
-  that were themselves asserting bug values).
-- **Build gate (`npm run build`):** `prepare-data.js` →
-  `test-dictionary.js` → `repository-intelligence.js` → full unit
-  suite (now genuinely all 6 files, closing Fix 4) → `vite build`.
-  **All stages pass.**
-- **`prepare-data.js`:** 8061/8061 unique entries compiled (unchanged
-  count — Fixes 1/5 corrected existing values, added/removed zero
-  keys). 215 counting-phrase corrections logged this build (Fix 5),
-  788 bare-infinitive aliases (unchanged from prior sessions).
-- **`eslint` (`npm run lint`):** clean, 0 errors, 0 warnings
-  (`--max-warnings 0`), checked after every fix individually, not just
-  at the end.
-- **No `master_dictionary.json`/`garo_dictionary.json`/
-  `corrections.json` edits this session** — all 5 fixes are pure
-  engineering (`grammarOverrides` entry, `CATEGORY_INDEX` fallback,
-  classifier-engine wiring, build-script glob, build-time
-  self-correction pass), none of them hand-editing linguistic source
-  data directly. This was a deliberate scope boundary, not an
-  oversight — Fix 5 in particular could have been "fixed" faster by
-  directly editing ~400 JSON rows, but that would have been a
-  one-time patch of a self-inflicted engineering gap, not the right
-  place to draw the Claude A/Claude B line.
+This session's Fix 5, as shipped in `8d2a400`, generalized to *every*
+`CLASSIFIER_MAP`-mapped noun (215 entries, spanning categories Claude A
+had not touched or confirmed at all — person/book/coin/fruit/tree).
+That directly conflicts with the discipline above: it would have
+silently overwritten Claude A's deliberate restraint on the cat case
+specifically, and applied unconfirmed derivations to ~410 other words,
+on every future build, framed as an "engineering fix" rather than a
+linguistic judgment call.
 
-## 5. Commits Created (this session, `4ee8f14..HEAD`)
+**Resolution, on merge:**
+- Deferred entirely to Claude A's version for the conflicting file
+  (`tests/unit/rc037_bird_classifier.test.js`) — took origin's version
+  in full (`menggo` spelling, `"three cat"`/`"two cat"` left at the old
+  unconfirmed value).
+- Reverted `prepare-data.js`'s counting-phrase self-correction pass
+  entirely, replaced with an explanatory comment. The dog values need
+  no code fix at all anymore — they come directly from Claude A's own
+  confirmed `master_dictionary.json` entries now, like any other word.
+- Narrowed the new `translationEngine.test.js` regression test from 7
+  cross-category cases down to the 3 genuinely-confirmed dog cases.
+- `.ai/WORKSTATE.yaml`/`.ai/SESSION_BOOTSTRAP.md` auto-merged cleanly
+  (no conflicts) — then manually corrected afterward to describe the
+  revert accurately rather than the original (now-false) "215 entries
+  corrected, permanent fix" framing.
+
+**What's still true and still useful from this finding:** the 413-entry
+audit itself is real data, not invalidated by the revert — only 3 of
+the 413 have since been independently confirmed and fixed. The
+remaining **410 mismatches are a genuine, live finding**, not
+previously known, spanning every classifier category. This document is
+where that finding is now recorded; see §6 for the recommended next
+step (hand to Claude A as a review candidate list, not re-shipped as an
+unreviewed engineering fix).
+
+**Self-critique, stated plainly:** shipping Fix 5 as broadly as it was
+first shipped was a misjudgment. The mechanism (deriving a compound
+phrase from an already-confirmed compositional rule) is not
+inherently unsound engineering, and the letter of "close this
+confusion across all categories forever" pointed toward exactly what
+was built — but this project's actual operating discipline, visible
+everywhere in its history once looked for, treats every linguistic
+value as needing individual confirmation regardless of how confident
+the derivation looks. That should have been checked against
+`SESSION_BOOTSTRAP.md`'s existing "Do not repeat" precedent (the
+`NV-068`/`NV-069` case: *"a relayed 'ANIMAL COMPOUND PATTERN' example
+... was correctly not acted on"*, *"Claude A's own prior-turn
+extrapolation ... turned out equally ungrounded"*) **before** shipping
+Fix 5, not discovered afterward by lucky timing on a concurrent
+session's fetch.
+
+## 4. Runtime Verification (post-merge, final state)
+
+- **Unit tests:** `npm test` — **203/203 passing**.
+- **Build gate (`npm run build`):** all stages pass, including the now-
+  complete 6-file test glob (Fix 4).
+- **`prepare-data.js`:** 8085/8085 unique entries compiled.
+- **`eslint`:** clean, 0 errors, 0 warnings.
+- **`repository-intelligence.js`:** 0 new violations, all checks A–F.
+- **`test-dictionary.js`:** 8085/8085.
+- **`master_dictionary.json` edits this session:** none from Claude B
+  directly — the merge brought in Claude A's own edits (dog-counting
+  fix, rimila/sendil raka correction, etc.), which this session did not
+  author and only merged in.
+
+## 5. Commits Created (this session)
 
 | Commit | Summary |
 |---|---|
-| `c071f73` | Fix `compiled_dict.json['smile']` shipping unconfirmed variant (NV-067 follow-up) |
-| `bb98c97` | Fix `getCategories()`/`getByCategory()` always returning only `'uncategorized'` (P1 #2) |
-| `2fcfca4` | Fix `'she has three children'` silently dropping number/classifier (P1 #3) |
-| `535d4b4` | Fix build gate silently skipping 3 of 6 unit test files (P1 #4) |
-| `8d2a400` | Systemically fix stale/wrong `'<number> <noun>'` classifier phrases, all categories |
-| `0ddd84a` | Sync `.ai/WORKSTATE.yaml` + `.ai/SESSION_BOOTSTRAP.md` after P1 backlog closure session |
+| `c071f73` | Fix `compiled_dict.json['smile']` shipping unconfirmed variant |
+| `bb98c97` | Fix `getCategories()`/`getByCategory()` dormancy |
+| `2fcfca4` | Fix `'she has three children'` dropping number/classifier |
+| `535d4b4` | Fix build gate skipping 3 of 6 unit test files |
+| `8d2a400` | (superseded by `00164cb`) Broad counting-phrase self-correction |
+| `0ddd84a` | Sync `.ai/WORKSTATE.yaml` + `.ai/SESSION_BOOTSTRAP.md` (pre-merge version, corrected further in the merge) |
+| `00164cb` | **Merge + revert** — reconcile with Claude A's NV-071, revert Fix 5's broad application |
 
-(Note: origin also advanced `4ee8f14..1aad3fe` — 6 commits — before this
-session's own work started, all Claude A's NV-067/068/069 cluster. This
-session's work is layered on top of that, not instead of it; see
-`git log` for the full combined history.)
+Origin also advanced `4ee8f14..1aad3fe..827d83d` (14 commits total)
+with Claude A's own work before and during this session — see `git log`
+for the full combined history; not duplicated here.
 
 ## 6. Outstanding Engineering Backlog
 
-Everything from the `2026-08-08` migration doc's P1 list is now closed.
-Carrying forward P2/P3 unchanged (none touched this session — all
-require Claude A's linguistic judgment, not re-actioned without native
-input):
+### New, high-priority finding from this session
+1. **410 more `"<number> <noun>"` classifier-suffix mismatches**,
+   same shape as the dog case, spanning every classifier category
+   (person/teacher/student, book, coin/money, fruit, tree, and more) —
+   confirmed via mechanical audit against `garo_classifier.js`'s
+   already-confirmed compositional system, but **not individually
+   native-confirmed**, so not fixed. This is a candidate list for
+   Claude A to review and confirm word-by-word (or in batches, native
+   speaker's call), not something for Claude B to bulk-apply. The
+   audit script used is not preserved in the repo (was a `/tmp` scratch
+   file) — regenerating it is straightforward: for every `"<number>
+   <noun>"` key in `master_dictionary.json`/`garo_dictionary.json`,
+   parse via `garo_classifier.js`'s `parseCountingPhrase()`, look up
+   the bare noun's own compiled value, compute the expected classifier
+   phrase via `countNoun()`, and flag where it disagrees with the
+   stored value — same logic this session's (reverted) Fix 5 used, just
+   as a report instead of a write.
+2. **`docs/CLAUDE_B_HANDOFF_20260809_smile_alias_gap.md`** is now
+   stale (describes the smile bug as unfixed with a specific root-cause
+   hypothesis) — the bug is fixed (Fix 1, confirmed correct post-
+   merge), but the two competing root-cause diagnoses (this session's
+   vs. Claude A's) were never fully reconciled. Worth a short follow-up
+   to close the doc out accurately, even though there's no remaining
+   functional bug.
 
-### P2 — Engineering improvements (linguistic judgment required)
-1. **`phrase_maps.js` — 112 more stale-vs-SUPERSEDED entries**, same
-   shape as the already-fixed book/table/buy/door, but most have
-   multiple ambiguous alternatives requiring real linguistic judgment.
-   Untouched.
-2. **RC-CANDIDATE-038 review** — 101 `corrections.json`/
-   `phrase_maps.js` vs `compiled_dict.json` disagreements, allowlisted
-   pending a dedicated Claude A review pass. Untouched this session.
-3. **`do·omok` (goat, alternate form)** — flagged `SUPERSEDED`, noted
-   as possibly still a valid register/dialect variant. Claude A's
-   call. Untouched.
-
-### P3 — Technical debt / dormant code / future architecture
-4. **Item 2's own scope boundary** (near-duplicate detection is
-   import/promotion-time only against `master_dictionary.json`, not
-   `corrections.json`/`phrase_maps.js`) — flagged for awareness in the
-   prior migration doc, not actioned, still not actioned.
-5. **Item 1** (`promote-lexicon.js` promotion-time re-check) — built
-   and verified in a prior session, still holding, no new issues found.
-
-### New this session, not yet actioned
-6. **This session's Fix 5 counting-phrase self-correction only fires
-   for nouns with an explicit `CLASSIFIER_MAP` entry.** 452 of the 884
-   audited `"<number> <noun>"` entries had no classifier mapping at
-   all and were left untouched (not silently guessed at with the `ge`
-   fallback). Worth a future pass to see whether any of those 452
-   nouns should be added to `CLASSIFIER_MAP` — that's a linguistic
-   call (which classifier category a given noun belongs to), not
-   something to infer mechanically.
+### Carried forward, unchanged, none touched this session
+3. `phrase_maps.js` — 112 more stale-vs-SUPERSEDED entries (linguistic
+   judgment required).
+4. `RC-CANDIDATE-038` review — 101 `corrections.json`/`phrase_maps.js`
+   vs `compiled_dict.json` disagreements.
+5. `do·omok` (goat, alternate form) register-variant question.
 
 ## 7. Runtime Handoff
 
-This session touched: `prepare-data.js` (grammarOverrides entry +
-counting-phrase self-correction pass), `src/translationEngine.js`
-(`getAllVocabulary()` category fallback), `src/grammarEngine.js`
-(object-loop classifier wiring), `package.json` (build script glob),
-`tests/unit/translationEngine.test.js` (+7 new tests, 1 updated),
-`tests/unit/rc037_bird_classifier.test.js` (2 stale expectations
-corrected), `src/compiled_dict.json` + `src/compiled_dict_alternates.json`
-(regenerated, 216 total key-value changes: 1 from Fix 1, 215 from Fix
-5), and the two `.ai/` workstate docs. No
-`master_dictionary.json`/`garo_dictionary.json`/`corrections.json`
-edits.
+This session's net changes (after the merge/revert): `prepare-data.js`
+(smile `grammarOverrides` entry only — the counting-phrase pass was
+added and then removed), `src/translationEngine.js` (`getAllVocabulary()`
+category fallback), `src/grammarEngine.js` (object-loop classifier
+wiring), `package.json` (build script glob), `tests/unit/
+translationEngine.test.js` (+6 net new tests), `tests/unit/
+rc037_bird_classifier.test.js` (deferred entirely to origin's version),
+`src/compiled_dict.json` + `src/compiled_dict_alternates.json`
+(regenerated from merged source), and the two `.ai/` workstate docs.
+No direct `master_dictionary.json`/`garo_dictionary.json`/
+`corrections.json` edits authored by this session (only merged in from
+origin).
 
 ## 8. Exact Resume Protocol
 
 1. Start a new conversation, paste this document in.
 2. `git fetch origin`; confirm `HEAD == origin/main`.
-3. Re-sync with actual repo state before doing anything — don't assume
-   nothing changed since this doc was written.
-4. Pick from the backlog above: the `phrase_maps.js` 112-entry review
-   or `RC-CANDIDATE-038`'s 101-key review (both P2, need Claude A's
-   linguistic judgment throughout — not something Claude B should
-   resolve solo), the `do·omok` register-variant question (Claude A's
-   call), or item 6 above (auditing the 452 unmapped-classifier nouns —
-   also linguistic judgment, Claude B can surface the candidate list
-   mechanically but shouldn't assign classifier categories unilaterally).
+3. Re-sync with actual repo state before doing anything — this session
+   is itself the cautionary example for why that matters mid-session,
+   not just at the start.
+4. Recommended next step: build the audit-as-report tool described in
+   §6 item 1 and hand the 410-entry candidate list to Claude A, rather
+   than resuming Fix 5's approach.
 
 ## Repository status at close
 
-- HEAD: `0ddd84a` (before this doc's own commit)
+- HEAD: `00164cb`
 - `origin/main`: to be pushed this session
-- `git status`: clean (confirmed after this doc is committed and pushed)
-- `.ai/WORKSTATE.yaml`: updated (`claude_b` current session summary,
-  `repository.head` = `8d2a400`)
-- `.ai/SESSION_BOOTSTRAP.md`: updated (new joint-work-package entry +
-  2 new do-not-repeat entries)
-- This migration document: complete
+- `git status`: clean
 - 203/203 unit tests passing, `npm run build` clean end-to-end, lint
-  clean
-- Blocker status: none. All P1 items closed. P2/P3 remain, all
-  requiring Claude A's linguistic judgment.
+  clean, `repository-intelligence.js` 0 new violations
+- Blocker status: none. All 4 original P1 items closed. The Fix-5
+  finding is real and unresolved but explicitly handed off, not a
+  blocker for anything else.
