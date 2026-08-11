@@ -15393,11 +15393,11 @@
   },
   {
     "english": "bird",
-    "garo": "do˙·",
+    "garo": "do·o",
     "pos": null,
     "category": "animals",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — synced from master_dictionary.json 2026-08-11 (native-confirmed: bird=do·o, same as chicken=do·o)"
   },
   {
     "english": "bird basket",
