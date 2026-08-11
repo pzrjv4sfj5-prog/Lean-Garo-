@@ -1,5 +1,5 @@
 repository:
-  head: 516ed57
+  head: 3e4d85b
   head_convention: >-
     PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records
     repository state IMMEDIATELY BEFORE the commit that updates this
@@ -11,10 +11,59 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
+  last_updated: "2026-08-11 (Claude B, session close: resumed from checkpoint 3
+    (d2fcb88) via user-pasted migration doc, re-synced before acting -- found
+    origin had advanced to 3ec06ee via a concurrent Claude A session (dog/cat
+    count completion + teens/twenty for dog/cat/bird/book/person/rupees +
+    closed the bird-root question for good: bird=chicken=do·o, superseding the
+    2026-07-24 split). Found and fixed a propagation gap A's bird-fix missed:
+    corrections.json still had the stale 'Do·' value and final_entries.json
+    had an unrelated pre-existing corruption ('do˙·', mixed dot-above +
+    middle-dot, predates the fix entirely) -- both fixed to do·o (c4ba231).
+    Reconciled own docs/COUNTING_PHRASE_AUDIT_20260810.md (253 candidates)
+    against current state: closed the fish gap (e847620, 40 new VERIFIED/HIGH
+    entries, mang classifier, mechanical regeneration off a clean root
+    (na·tok) + already-native-confirmed formula, same precedent as A's dog
+    fix) -- 'two fish' had been silently resolving to 'do·o mang·gni' (the
+    BIRD word), a genuine bug, not just an unconfirmed value. Scoped (did NOT
+    fix) the remaining ~213 candidates: person/student/teacher (sak, 111
+    candidates) blocked on UNVERIFIED/untagged/3-way-competing roots; book
+    (king, 26) has confirmed root but only teens were fixed by A, 1-10 not yet
+    checked; tree (pang, 22) blocked on two competing non-variant entries
+    (Bol/superseded vs a'bil/VERIFIED); apple (rong, 15) blocked on two
+    competing VERIFIED entries (Apple loanword vs te·spu native); coin (gong,
+    2) root untagged. None of these are safe for mechanical regeneration --
+    each needs either a missing verification tag resolved or a pick between
+    named competing words, both native-confirmation calls, not formula
+    application (same discipline as NV-071/the reverted 413-fix). Full gap
+    table + root-status citations: docs/MIGRATION_2026-08-11.md. New standing
+    resume-protocol rule added to that doc: size queued work against context
+    budget before starting; if too large, pre-split into batches; checkpoint
+    at ~90% context usage even mid-task rather than only at natural stopping
+    points. Did not touch Claude C's or D's work areas this session (Project
+    Owner instruction). .ai/WORKSTATE.yaml trim: still not started, still
+    needs explicit go-ahead -- this entry is a normal per-session append, not
+    the trim. Verified: 203/203 unit tests, repository-intelligence.js 0 new
+    violations, npm run build clean, working tree clean, fully pushed
+    (3e4d85b), nothing local. PAT supplied live by Project Owner, used inline
+    in push URL only, never persisted to git config/commit content/any file --
+    confirmed clean.)"
   last_updated: "2026-08-10 (Claude A, complete counting-system audit per Claude C's engineering report + own request to review every classifier family, not just dogs. Session started from a stale base (827d83d); git fetch mid-session found origin had advanced 11 commits, including a concurrent Claude A/Thangseng NV-071 fix (three/four dogs, deliberately leaving 'three cat' untouched) and a Claude B session that auto-corrected 413 mismatches by mechanical derivation then REVERTED it on discovering it silently overrode NV-071's restraint, replacing it with a read-only audit tool (docs/COUNTING_PHRASE_AUDIT_20260810.md, 253 candidates) addressed to Claude A. Reset to reconciled origin state and redid this audit against it. Found the identical fabrication template running through every classifier family (mang/sak/king/gong/pang/rong) plus 10 nouns with no confirmed classifier at all (house/car/road/river/mountain/village/water/food/rice/banana) — 523 entries total, same shape as NV-071's dog fix but corpus-wide: numeral suffix stuck at 2's-suffix ·gni regardless of claimed count, or a redundant 1's-prefix; fake roots reused across unrelated nouns (rang for house/tree/book/car; chik for river/water/student), none matching the noun's own VERIFIED singular entry. No new native input needed to flag these (pure arithmetic/root-word contradiction against evidence on file) — tagged all 523 SUPERSEDED in place (not deleted), NOT asserting replacement values (that stays native-review territory per NV-071/the revert's established restraint — Claude B's 253-candidate report is the correct next input for that). Full report + answers to Claude C's 7 questions: docs/CLAUDE_A_COUNTING_SYSTEM_AUDIT_20260810.md. Verified against reconciled state: 203/203 unit tests, prepare-data.js build 203/203, repository-intelligence.js 0 new violations. No engineering code touched — master_dictionary.json + .ai/ + docs/ only. Pushed via session-supplied PAT inline in push URL only, rotated after use.)"
   last_updated: "2026-08-09 (Claude B, session close: closed all 4 open P1 engineering items from the 2026-08-08 migration doc (smile variant, getCategories/getByCategory dormancy, dropped children classifier, build-gate test-file gap) plus a new systemic '<number> <noun>' classifier-phrase self-correction covering all categories, per Project Owner-confirmed reference examples — see claude_b.current_task for full detail. Synced clean at 4ee8f14 before this session's commits.)"
   last_updated_prior: "2026-08-07 (Claude B, session close: synced clean at 9cad999 — see claude_b.current_task for full detail. Fixed the critical SUPERSEDED-precedence bug from Claude A's handoff, 330/337 keys verified corrected; found and fixed a related coupling bug in morphologyEngine.js's verb-conjugation pipeline; fixed phrase_maps.js's book/table/buy/door; updated 3 stale pre-audit tests; logged RC-CANDIDATE-038 (101-key orthography-drift discovery) and phrase_maps.js's wider 112-entry stale-vs-SUPERSEDED gap as follow-ups, neither rushed. Native-confirmed: child/kid=Bi·sa (raka mark corrected everywhere), goat=Do·bok (reconfirmed final, reversing the 2026-08-01 audit's call on that one word). Staged 'dambe bi·sa' via Pending Lexicon (PL-0002014), not written directly to master. Merged two concurrent origin pushes cleanly during the session (66bde9f then 11c4a6d, Claude A's gap audit + global hyphen->raka conversion) — compiled_dict.json/compiled_dict_alternates.json regenerated from merged source both times, all other files auto-merged clean. Pushed via session-supplied PAT, passed inline in the push URL only, never persisted to git config — confirmed clean. 177/177 tests, dictionary integrity 8058/8058, repository-intelligence.js 0 new violations.)"
   test_status: >-
+    "203/203 unit tests passing (unchanged count from 2026-08-10 checkpoint --
+    this session's fixes corrected existing/added new entries within the
+    fixed pass count, net zero new test files; 1 stale rc037 assertion
+    updated to match the corrected 'three fish' value, no test added/removed).
+    0 lint errors. npm run build clean end-to-end (prepare-data.js/
+    test-dictionary.js/repository-intelligence.js/full unit suite all pass).
+    repository-intelligence.js: 0 new violations (Check C 1271->1311
+    known/allowlisted after adding 40 fish-key entries to
+    known_dictionary_conflicts.json, all pre-declared not discovered; Check F
+    unchanged at 309 known/allowlisted). 8105 unique compiled entries (up
+    from 8094 -- 40 new fish-count keys minus dedup against 29 already-live
+    duplicate slots). Prior 203/203 history preserved below.\n"
     "203/203 unit tests passing (196 prior + 3 children-classifier regression + 1 counting-phrase-engine regression, minus the 1 net from updating 2 stale RC-CANDIDATE-037 expectations that were themselves asserting the pre-fix bug values -- see claude_b.current_task for full detail). 0 lint errors (--max-warnings 0 clean). npm run build clean end-to-end (prepare-data.js/test-dictionary.js/repository-intelligence.js/full unit suite via the now-complete tests/unit/*.test.js glob/vite build all pass). 8061 unique compiled entries (unchanged count -- these fixes corrected existing values, added zero new/removed zero keys). Prior history preserved below.\n"
     "163/163 unit tests passing (155 pre-existing + 8 from Claude B two same-session fixes ea77de5/03bd2dc, picked up via rebase - none touched by pages 8-11 review, which was dictionary-data-only). 0 lint errors implied by clean build. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass). repository-intelligence.js Checks A-E: 0 new violations after allowlisting 2 intentional new Check-C conflicts ('a wearing apparel.', 'to have sexual intercourse.') in known_dictionary_conflicts.json with citation in this session's claude_a.current_task. 8025 unique compiled entries (up from prior), 157 net new master_dictionary.json entries this session (pages 8-11 review, 151 clean + 6 noted-approval; 13 rejected as duplicates and 2 held needs-discussion were NOT promoted). Prior 155/155 history preserved below.\\n\"155/155 unit tests passing (153 prior + 2 new: 'one person' VERIFIED-preference regression, 'he answered' to-X-exclusion regression). 0 lint errors. npm run build clean (prepare-data.js/test-dictionary.js/repository-intelligence.js/vite all pass; vite build now succeeds in-sandbox with a fresh npm install, resolving the previously-flagged environment gap). repository-intelligence.js Checks B/C/D/E: 0 new violations. Stress benchmark 237/237 byte-identical before/after this session's fix (none of the 31 changed compiled_dict.json keys fall in that corpus). RC-CANDIDATE-036 follow-up fixed this session (prepare-data.js pickPrimary): master_dictionary.json's own INTERNAL duplicate-key conflicts (multiple master rows for one key) were not resolved by the original RC-036 master-preference fix, which still fell back to last-write-wins by array order among master's own candidates. Added a scoped rule: when exactly one non-variant candidate is tagged VERIFIED/HIGH (excluding UNVERIFIED via substring guard), it wins. Live regression caught mid-implementation (not shipped blind): applying this to 'to answer' picked a VERIFIED citation form whose '-na' ending is the Garo infinitive suffix already baked in, which morphologyEngine.js's tense-suffixing pipeline treats as a bare stem, producing malformed 'a·gan·chak·naha' — caught via the existing 'he answered' regression test. Fixed by excluding 'to '-prefixed keys from the rule (pickPrimary now takes the key as a 2nd argument); VERIFIED confidence attests translation correctness, not bare-stem safety for suffixing. Net: 31 compiled_dict.json keys changed (0 added/removed), same systemic-conflict shape as RC-036/RC-037, all individually spot-checked against their master_dictionary.json source rows before accepting (not just trusted from the tag) — includes 'one person'->'mande sak·sa' and 'answer'->'Aganchakani' (the two originally-traced keys) plus 29 others sharing the identical conflict shape. 7 of the changed bare-verb-root keys spot-verified live for conjugation safety (push/throw/clean/listen/cook/lie/fly) — all either route through a separate, unaffected 'to X' key first, or produce well-formed output consistent with the engine's established suffix pattern. Prior 153/153 history preserved below.
     "153/153 unit tests passing (147 prior + new tests/unit/rong_classifier.test.js, 6 tests: rong resolution for fruit/alcohol, no-raka behavior, ge/mang/sak/king/gong regression coverage). npm run build clean through prepare-data.js (compiled_dict.json/compiled_dict_alternates.json/category_index.json regenerated) and test-dictionary.js/repository-intelligence.js; vite build step still fails in this sandbox only because node_modules/vite is not installed — pre-existing environment gap, not a real issue, not re-flagged. Prior 147/147 history preserved below.\n147/147 regression tests passing (144 + 3 new RC-037 tests), 0 lint errors, build exits 0, stress benchmark 237/237 (isolated 1-line diff from RC-036, exactly the expected 'he has two dogs' correction; RC-037's changes not exercised by the stress corpus, confirmed instead via direct compiled-value spot checks). RC-CANDIDATE-032 fixed this session (commit f1ea1bf): number_engine.js's standalone toGaroNumber() teens formula corrected from the disproven 'chiking·ma·' form to the confirmed 'Chi·'+digit form, matching garo_classifier.js's own TEENS table (was unreachable dead code for 11-19, fixed anyway - misleading and a latent refactor trap). RC-CANDIDATE-036 fixed this session (commit afac50d, prepare-data.js): master_dictionary.json is the declared canonical compile source and WAS included in the merge, but plain last-write-wins by raw file order meant it only won if textually distinct from anything already deduped in from the legacy source files - if master's value coincidentally matched an earlier duplicate in a legacy file, a LATER wrong duplicate within that same legacy file won instead, invisible to the resolver. Fixed by tagging merge candidates with source file and preferring any master-sourced candidate. 51 keys corrected (e.g. 'one dog': 'sa mang·sa'->'achak mang·sa'). NOTE: a stricter VERIFIED-preference refinement (for keys where master itself holds multiple non-variant candidates, e.g. 'one person': unannotated 'sa mande·sa' vs VERIFIED/HIGH 'mande sak·sa') was attempted, correctly picked 'one person' but broke 'answer' (5-way case-entangled master entries - notes shape more complex than tracing budget allowed this session) - reverted, NOT shipped, logged as follow-up below. RC-CANDIDATE-037 fixed this session (commit afac50d, garo_dictionary.json + master_dictionary.json direct edits): bulk-generated 'two X'/'three X'/'twelve X'/'thirteen X' entries wrongly used 'do·o' (chicken/bird) or 'na·tok' (fish) as filler for nouns unrelated to birds/fish (e.g. 'two teachers'->'do·o skigipa·gni'). Two distinct sub-patterns, confirmed by inspection not guessed: 105 entries where the real noun was already present after the stray prefix (strip only); 11 dog/cat entries where the noun was entirely absent and do·o/na·tok was standing in for it (substituted the correct noun - achak/menggo, both independently confirmed via their own standalone dictionary entries - not just stripped). Genuine bird/chicken/fish entries excluded and confirmed unaffected. Source: external Copilot audit, synthesized and handed off by Project Owner; every cited finding re-verified against current HEAD before acting per standing discipline (audit's compiled_dict.json framing was imprecise - master WAS included in the merge, root cause was subtler than 'master ignored'; 2 of 8 secondary findings were already fixed, 1 was superseded/no-longer-live, 5 were confirmed-but-backlog). BACKLOG-003 FULLY COMPLETE, all 8 phases (unchanged, carried over)."
@@ -1608,7 +1657,18 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
-    2026-08-09 (this session, resumed via user-pasted migration document
+    2026-08-11 (this session, resumed via user-pasted migration document
+    checkpoint 3 (d2fcb88), re-synced against actual repo state before acting
+    -- see repository.last_updated above (2026-08-11 entry) for full detail:
+    fixed bird-propagation gap (c4ba231), closed the fish-count classifier
+    gap from own docs/COUNTING_PHRASE_AUDIT_20260810.md (e847620, mechanical
+    regeneration off a clean root + already-confirmed formula), scoped the
+    remaining ~213 audit candidates and root-blocker-mapped each (see
+    docs/MIGRATION_2026-08-11.md for the full table) rather than guessing at
+    any of them. Session close, checkpoint 4: 3e4d85b, clean tree, fully
+    pushed, nothing local. Full detail in docs/MIGRATION_2026-08-11.md.
+
+    Prior session --- 2026-08-09 (resumed via user-pasted migration document
     docs/CLAUDE_B_MIGRATION_20260808.md, checkpoint 4ee8f14 -- re-synced
     against actual repo state before acting per standing resume protocol,
     found origin had since advanced to 1aad3fe (Claude A's NV-067/068/069
