@@ -6283,7 +6283,8 @@
   {
     "english": "two fishs",
     "garo": "do·o mang·gni",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-11 (Claude B): superseded by mechanically-regenerated na·tok+mang formula entry, same precedent as Claude A's dog/cat/bird fix (3ec06ee). Retained per citation discipline, not deleted."
   },
   {
     "english": "two students",
@@ -7036,7 +7037,8 @@
   {
     "english": "two fish",
     "garo": "do·o mang·gni",
-    "category": "food"
+    "category": "food",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-11 (Claude B): superseded by mechanically-regenerated na·tok+mang formula entry, same precedent as Claude A's dog/cat/bird fix (3ec06ee). Retained per citation discipline, not deleted."
   },
   {
     "english": "two teacher",
@@ -62716,5 +62718,285 @@
     "category": "general",
     "classifier": "gong",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "one fish",
+    "garo": "na·tok mang·sa",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "one fishs",
+    "garo": "na·tok mang·sa",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "two fish",
+    "garo": "na·tok mang·gni",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "two fishs",
+    "garo": "na·tok mang·gni",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "three fish",
+    "garo": "na·tok mang·gittam",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "three fishs",
+    "garo": "na·tok mang·gittam",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "four fish",
+    "garo": "na·tok mang·bri",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "four fishs",
+    "garo": "na·tok mang·bri",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "five fish",
+    "garo": "na·tok mang·bonga",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "five fishs",
+    "garo": "na·tok mang·bonga",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "six fish",
+    "garo": "na·tok mang·dok",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "six fishs",
+    "garo": "na·tok mang·dok",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "seven fish",
+    "garo": "na·tok mang·sni",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "seven fishs",
+    "garo": "na·tok mang·sni",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "eight fish",
+    "garo": "na·tok mang·chet",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "eight fishs",
+    "garo": "na·tok mang·chet",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "nine fish",
+    "garo": "na·tok mang·sku",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "nine fishs",
+    "garo": "na·tok mang·sku",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "ten fish",
+    "garo": "na·tok mang·chiking",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "ten fishs",
+    "garo": "na·tok mang·chiking",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "eleven fish",
+    "garo": "na·tok mang·Chi·sa",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "eleven fishs",
+    "garo": "na·tok mang·Chi·sa",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "twelve fish",
+    "garo": "na·tok mang·Chi·gni",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "twelve fishs",
+    "garo": "na·tok mang·Chi·gni",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "thirteen fish",
+    "garo": "na·tok mang·Chi·gittam",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "thirteen fishs",
+    "garo": "na·tok mang·Chi·gittam",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "fourteen fish",
+    "garo": "na·tok mang·Chi·bri",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "fourteen fishs",
+    "garo": "na·tok mang·Chi·bri",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "fifteen fish",
+    "garo": "na·tok mang·Chi·bonga",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "fifteen fishs",
+    "garo": "na·tok mang·Chi·bonga",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "sixteen fish",
+    "garo": "na·tok mang·Chi·dok",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "sixteen fishs",
+    "garo": "na·tok mang·Chi·dok",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "seventeen fish",
+    "garo": "na·tok mang·Chi·sni",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "seventeen fishs",
+    "garo": "na·tok mang·Chi·sni",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "eighteen fish",
+    "garo": "na·tok mang·Chi·chet",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "eighteen fishs",
+    "garo": "na·tok mang·Chi·chet",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "nineteen fish",
+    "garo": "na·tok mang·Chi·sku",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "nineteen fishs",
+    "garo": "na·tok mang·Chi·sku",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "twenty fish",
+    "garo": "na·tok mang·Kolgrik",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "twenty fishs",
+    "garo": "na·tok mang·Kolgrik",
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
   }
 ]

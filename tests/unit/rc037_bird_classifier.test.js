@@ -47,5 +47,10 @@ test('RC-CANDIDATE-037: dog/cat entries get the correct noun substituted, not ju
 
 test('RC-CANDIDATE-037: genuine bird/chicken/fish entries are unaffected', () => {
   assert.equal(compiled['two birds'], 'do·o mang·gni');
-  assert.equal(compiled['three fish'], 'na·tok mang·gni');
+  // "three fish" was corrected 2026-08-11 (Claude B, mechanical regeneration
+  // per docs/COUNTING_PHRASE_AUDIT_20260810.md mang section, same formula/
+  // precedent as Claude A's dog/cat/bird fix in 3ec06ee): na·tok (fish root)
+  // + mang classifier + the confirmed "three"=gittam suffix, replacing the
+  // stale shared-with-"two" placeholder "na·tok mang·gni".
+  assert.equal(compiled['three fish'], 'na·tok mang·gittam');
 });
