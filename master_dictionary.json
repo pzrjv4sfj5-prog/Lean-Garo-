@@ -61996,5 +61996,125 @@
     "category": "general",
     "classifier": null,
     "notes": "VERIFIED/HIGH. Confirmed 2026-08-10 (Thangseng direct, WhatsApp relay via Tridip), new — parallels the pre-existing 'Ianona'. Translates to English 'there' same as 'Uachi'/'Uano'; does not carry the '-chi' directional/'towards' nuance."
+  },
+  {
+    "english": "five dog",
+    "garo": "achak mang·bonga",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'five dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['5']='bonga' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'bonga mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "six dog",
+    "garo": "achak mang·dok",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'six dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['6']='dok' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'dokka mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "seven dog",
+    "garo": "achak mang·sni",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'seven dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['7']='sni' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sni mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "eight dog",
+    "garo": "achak mang·chet",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'eight dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['8']='chet' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chet mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "nine dog",
+    "garo": "achak mang·sku",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'nine dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['9']='sku' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sku mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "ten dog",
+    "garo": "achak mang·chiking",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'ten dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['10']='chiking' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chi mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "one cat",
+    "garo": "menggo mang·sa",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['1']='sa', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sa mang·sa' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "three cat",
+    "garo": "menggo mang·gittam",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['3']='gittam', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'menggo mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "four cat",
+    "garo": "menggo mang·bri",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['4']='bri', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'brang mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "five cat",
+    "garo": "menggo mang·bonga",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['5']='bonga', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'bonga mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "six cat",
+    "garo": "menggo mang·dok",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['6']='dok', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'dokka mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "seven cat",
+    "garo": "menggo mang·sni",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['7']='sni', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sni mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "eight cat",
+    "garo": "menggo mang·chet",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['8']='chet', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chet mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "nine cat",
+    "garo": "menggo mang·sku",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['9']='sku', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sku mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "ten cat",
+    "garo": "menggo mang·chiking",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['10']='chiking', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chi mang·gni' entry, which is retained SUPERSEDED per citation discipline."
   }
 ]
