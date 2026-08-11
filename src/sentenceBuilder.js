@@ -165,6 +165,15 @@ export function assembleGrammar(grammar) {
   const parts = [];
   parts.push(grammar.subject.garo);
 
+  // Destination/location + -chi marker (docs/BUG_location_noun_dropped.md
+  // fix, engine-level 2026-08-12). Placed right after subject, ahead of
+  // object/purpose/verb — matches the ordering that bug report scoped:
+  // Subject + Location-chi + Object-ko + Purpose-na + Verb.
+  if (grammar.location) {
+    const locText = grammar.location.garo === '[UNKNOWN]' ? grammar.location.garo : grammar.location.garo.toLowerCase();
+    parts.push(locText + '·chi');
+  }
+
   // Possessive + Object + -ko/-o marker
   // RC-CANDIDATE-002 fix (Claude A approved, 2026-07-10): use ·o for a
   // confirmed locative adjunct (in/on/at + noun), ·ko otherwise (default,

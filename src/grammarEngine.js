@@ -341,6 +341,23 @@ export function analyzeGrammar(input) {
     // reach this code.
     let objectIsLocativeAdjunct = false;
     let pendingLocative = false;
+    // Destination/location fix (docs/BUG_location_noun_dropped.md,
+    // root cause traced 2026-06-20): "to the market" was previously
+    // falling through into the same objectWords slot as "rice" in
+    // "i went to the market to buy rice", so the two nouns got joined
+    // ("market rice"), the combined-phrase lookup failed, and the
+    // fallback to lookupGaro(lastWord) silently kept only "rice" —
+    // "market" vanished with no [UNKNOWN] trace. A "to" that is NOT
+    // immediately followed by a purpose-clause verb (i.e. the
+    // PURPOSE_MAP check just above fails) marks the start of a
+    // destination noun phrase instead, distinct from the object of a
+    // later "to [verb]" purpose clause. Captured into its own
+    // `locationWords`/`location` slot here and given the documented
+    // "+chi" directional/locative suffix (docs/GARO_GRAMMAR_REFERENCE.md
+    // section on Directional -chi: "dokanchi" = "to the shop") rather
+    // than competing with the true object for the single ·ko/·o slot.
+    let locationWords = [];
+    let pendingDestination = false;
 
     for (let i = subjectEndIndex + 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
@@ -351,6 +368,8 @@ export function analyzeGrammar(input) {
           purposeAction = { english: words[i+1], garo: PURPOSE_MAP[nextW] };
           i++; continue;
         }
+        pendingDestination = true;
+        continue;
       }
       if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || subjectWords.has(w)) {
         if (/^(in|on|at)$/.test(w)) pendingLocative = true;
@@ -371,8 +390,16 @@ export function analyzeGrammar(input) {
       if (/^(not|never)$/.test(w)) continue;
       if (verb && words[i] === verb.english) continue;
       if (IRREGULAR_VERBS[w] || IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')]) continue;
+      if (pendingDestination) { locationWords.push(words[i]); pendingDestination = false; continue; }
       if (pendingLocative) { objectIsLocativeAdjunct = true; pendingLocative = false; }
       objectWords.push(words[i]);
+    }
+
+    let location = null;
+    if (locationWords.length > 0) {
+      const locEng = locationWords.join(' ');
+      const locGaro = lookupPhrase(locEng) || lookupGaro(locEng) || '[UNKNOWN]';
+      location = { english: locEng, garo: locGaro, withMarker: locGaro + '·chi' };
     }
 
     if (objectWords.length > 0) {
@@ -421,7 +448,7 @@ export function analyzeGrammar(input) {
       wordCount, detectedTense, tenseEvidence, isNegative, isQuestion,
       garoTenseSuffix: null, // removed 2026-07-05, see comment above
       structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
-      subject, verb, object, possessive, purposeAction, classifierHints,
+      subject, verb, object, possessive, purposeAction, location, classifierHints,
       garoWordOrder: 'SOV (Subject → Object → Verb)',
       notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
     };
