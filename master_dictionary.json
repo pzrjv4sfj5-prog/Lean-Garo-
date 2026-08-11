@@ -6186,7 +6186,8 @@
   {
     "english": "two books",
     "garo": "rang·gni",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — book-root closure 2026-08-11 (Claude A): replaced by 'ki·tap king·gni' (correct root 'ki·tap', 'king' classifier, standard NUMBERS/TEENS suffix). Old value used the wrong 'kitab' root and/or was missing the classifier token entirely. Retained per citation discipline. Prior notes: (none)"
   },
   {
     "english": "sorry / forgive me",
@@ -6299,7 +6300,8 @@
   {
     "english": "two trees",
     "garo": "rang·gni",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — counting-formula generalization 2026-08-11 (Claude A): replaced by 'a'bil panggni'. Old value used the fabricated 'rang' filler root (same fabrication pattern as dog/cat/bird/book/tree — 523-entry audit). Prior notes: (none)"
   },
   {
     "english": "two cars",
@@ -6776,8 +6778,9 @@
   },
   {
     "english": "my book",
-    "garo": "angni kitab",
-    "category": "education"
+    "garo": "angni ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'angni kitab'."
   },
   {
     "english": "my car",
@@ -6801,8 +6804,9 @@
   },
   {
     "english": "your book",
-    "garo": "nani kitab",
-    "category": "education"
+    "garo": "nani ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'nani kitab'."
   },
   {
     "english": "your car",
@@ -6826,8 +6830,9 @@
   },
   {
     "english": "his/her book",
-    "garo": "uni kitab",
-    "category": "education"
+    "garo": "uni ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'uni kitab'."
   },
   {
     "english": "his/her car",
@@ -6851,8 +6856,9 @@
   },
   {
     "english": "our book",
-    "garo": "ini kitab",
-    "category": "education"
+    "garo": "ini ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ini kitab'."
   },
   {
     "english": "our car",
@@ -6876,8 +6882,9 @@
   },
   {
     "english": "their book",
-    "garo": "bini kitab",
-    "category": "education"
+    "garo": "bini ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bini kitab'."
   },
   {
     "english": "their car",
@@ -7017,7 +7024,8 @@
   {
     "english": "two person",
     "garo": "mande·gni",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — counting-formula generalization 2026-08-11 (Claude A): replaced by 'mande sak·gni'. Prior notes: (none)"
   },
   {
     "english": "two dog",
@@ -7058,12 +7066,14 @@
   {
     "english": "two tree",
     "garo": "rang·gni",
-    "category": "nature"
+    "category": "nature",
+    "notes": "SUPERSEDED — counting-formula generalization 2026-08-11 (Claude A): replaced by 'a'bil panggni'. Old value used the fabricated 'rang' filler root (same fabrication pattern as dog/cat/bird/book/tree — 523-entry audit). Prior notes: (none)"
   },
   {
     "english": "two book",
     "garo": "kitab·gni",
-    "category": "education"
+    "category": "education",
+    "notes": "SUPERSEDED — book-root closure 2026-08-11 (Claude A): replaced by 'ki·tap king·gni' (correct root 'ki·tap', 'king' classifier, standard NUMBERS/TEENS suffix). Old value used the wrong 'kitab' root and/or was missing the classifier token entirely. Retained per citation discipline. Prior notes: (none)"
   },
   {
     "english": "two car",
@@ -10997,8 +11007,9 @@
   },
   {
     "english": "what book?",
-    "garo": "ma kitab?",
-    "category": "education"
+    "garo": "ma ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ma kitab?'."
   },
   {
     "english": "where person?",
@@ -11047,8 +11058,9 @@
   },
   {
     "english": "where book?",
-    "garo": "kade kitab?",
-    "category": "education"
+    "garo": "kade ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'kade kitab?'."
   },
   {
     "english": "when person?",
@@ -11097,8 +11109,9 @@
   },
   {
     "english": "when book?",
-    "garo": "bale kitab?",
-    "category": "education"
+    "garo": "bale ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bale kitab?'."
   },
   {
     "english": "why person?",
@@ -11147,8 +11160,9 @@
   },
   {
     "english": "why book?",
-    "garo": "bang·a kitab?",
-    "category": "education"
+    "garo": "bang·a ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bang·a kitab?'."
   },
   {
     "english": "how person?",
@@ -11197,8 +11211,9 @@
   },
   {
     "english": "how book?",
-    "garo": "kamat kitab?",
-    "category": "education"
+    "garo": "kamat ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'kamat kitab?'."
   },
   {
     "english": "who person?",
@@ -11247,8 +11262,9 @@
   },
   {
     "english": "who book?",
-    "garo": "ko kitab?",
-    "category": "education"
+    "garo": "ko ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ko kitab?'."
   },
   {
     "english": "which person?",
@@ -11297,8 +11313,9 @@
   },
   {
     "english": "which book?",
-    "garo": "ma·si kitab?",
-    "category": "education"
+    "garo": "ma·si ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ma·si kitab?'."
   },
   {
     "english": "how many person?",
@@ -11347,8 +11364,9 @@
   },
   {
     "english": "how many book?",
-    "garo": "kama kitab?",
-    "category": "education"
+    "garo": "kama ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'kama kitab?'."
   },
   {
     "english": "how much person?",
@@ -11397,8 +11415,9 @@
   },
   {
     "english": "how much book?",
-    "garo": "kama kitab?",
-    "category": "education"
+    "garo": "kama ki·tap?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'kama kitab?'."
   },
   {
     "english": "in the morning",
@@ -11544,8 +11563,9 @@
   },
   {
     "english": "big book",
-    "garo": "gonga kitab",
-    "category": "education"
+    "garo": "gonga ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'gonga kitab'."
   },
   {
     "english": "big car",
@@ -11619,8 +11639,9 @@
   },
   {
     "english": "small book",
-    "garo": "chik kitab",
-    "category": "education"
+    "garo": "chik ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'chik kitab'."
   },
   {
     "english": "small car",
@@ -11694,8 +11715,9 @@
   },
   {
     "english": "good book",
-    "garo": "ramang kitab",
-    "category": "education"
+    "garo": "ramang ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ramang kitab'."
   },
   {
     "english": "good car",
@@ -11769,8 +11791,9 @@
   },
   {
     "english": "bad book",
-    "garo": "rong·a kitab",
-    "category": "education"
+    "garo": "rong·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'rong·a kitab'."
   },
   {
     "english": "bad car",
@@ -11844,8 +11867,9 @@
   },
   {
     "english": "hot book",
-    "garo": "mek kitab",
-    "category": "education"
+    "garo": "mek ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'mek kitab'."
   },
   {
     "english": "hot car",
@@ -11919,8 +11943,9 @@
   },
   {
     "english": "cold book",
-    "garo": "jak kitab",
-    "category": "health"
+    "garo": "jak ki·tap",
+    "category": "health",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'jak kitab'."
   },
   {
     "english": "cold car",
@@ -11994,8 +12019,9 @@
   },
   {
     "english": "new book",
-    "garo": "gsa kitab",
-    "category": "education"
+    "garo": "gsa ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'gsa kitab'."
   },
   {
     "english": "new car",
@@ -12069,8 +12095,9 @@
   },
   {
     "english": "old book",
-    "garo": "rong kitab",
-    "category": "education"
+    "garo": "rong ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'rong kitab'."
   },
   {
     "english": "old car",
@@ -12144,8 +12171,9 @@
   },
   {
     "english": "beautiful book",
-    "garo": "gima kitab",
-    "category": "education"
+    "garo": "gima ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'gima kitab'."
   },
   {
     "english": "beautiful car",
@@ -12219,8 +12247,9 @@
   },
   {
     "english": "ugly book",
-    "garo": "rong kitab",
-    "category": "education"
+    "garo": "rong ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'rong kitab'."
   },
   {
     "english": "ugly car",
@@ -12312,33 +12341,39 @@
   },
   {
     "english": "i want book",
-    "garo": "ang nama kitab",
-    "category": "education"
+    "garo": "ang nama ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang nama kitab'."
   },
   {
     "english": "i need book",
-    "garo": "ang dang kitab",
-    "category": "education"
+    "garo": "ang dang ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang dang kitab'."
   },
   {
     "english": "i like book",
-    "garo": "ang on·a kitab",
-    "category": "education"
+    "garo": "ang on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang on·a kitab'."
   },
   {
     "english": "i have book",
-    "garo": "ang ong·a kitab",
-    "category": "education"
+    "garo": "ang ong·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang ong·a kitab'."
   },
   {
     "english": "i give book",
-    "garo": "ang on·a kitab",
-    "category": "education"
+    "garo": "ang on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang on·a kitab'."
   },
   {
     "english": "i take book",
-    "garo": "ang na·a kitab",
-    "category": "education"
+    "garo": "ang na·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang na·a kitab'."
   },
   {
     "english": "i want house",
@@ -12492,33 +12527,39 @@
   },
   {
     "english": "you want book",
-    "garo": "na· nama kitab",
-    "category": "education"
+    "garo": "na· nama ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· nama kitab'."
   },
   {
     "english": "you need book",
-    "garo": "na· dang kitab",
-    "category": "education"
+    "garo": "na· dang ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· dang kitab'."
   },
   {
     "english": "you like book",
-    "garo": "na· on·a kitab",
-    "category": "education"
+    "garo": "na· on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· on·a kitab'."
   },
   {
     "english": "you have book",
-    "garo": "na· ong·a kitab",
-    "category": "education"
+    "garo": "na· ong·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· ong·a kitab'."
   },
   {
     "english": "you give book",
-    "garo": "na· on·a kitab",
-    "category": "education"
+    "garo": "na· on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· on·a kitab'."
   },
   {
     "english": "you take book",
-    "garo": "na· na·a kitab",
-    "category": "education"
+    "garo": "na· na·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· na·a kitab'."
   },
   {
     "english": "you want house",
@@ -12672,33 +12713,39 @@
   },
   {
     "english": "he want book",
-    "garo": "u nama kitab",
-    "category": "education"
+    "garo": "u nama ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u nama kitab'."
   },
   {
     "english": "he need book",
-    "garo": "u dang kitab",
-    "category": "education"
+    "garo": "u dang ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u dang kitab'."
   },
   {
     "english": "he like book",
-    "garo": "u on·a kitab",
-    "category": "education"
+    "garo": "u on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'."
   },
   {
     "english": "he have book",
-    "garo": "u ong·a kitab",
-    "category": "education"
+    "garo": "u ong·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u ong·a kitab'."
   },
   {
     "english": "he give book",
-    "garo": "u on·a kitab",
-    "category": "education"
+    "garo": "u on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'."
   },
   {
     "english": "he take book",
-    "garo": "u na·a kitab",
-    "category": "education"
+    "garo": "u na·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u na·a kitab'."
   },
   {
     "english": "he want house",
@@ -12852,33 +12899,39 @@
   },
   {
     "english": "she want book",
-    "garo": "u nama kitab",
-    "category": "education"
+    "garo": "u nama ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u nama kitab'."
   },
   {
     "english": "she need book",
-    "garo": "u dang kitab",
-    "category": "education"
+    "garo": "u dang ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u dang kitab'."
   },
   {
     "english": "she like book",
-    "garo": "u on·a kitab",
-    "category": "education"
+    "garo": "u on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'."
   },
   {
     "english": "she have book",
-    "garo": "u ong·a kitab",
-    "category": "education"
+    "garo": "u ong·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u ong·a kitab'."
   },
   {
     "english": "she give book",
-    "garo": "u on·a kitab",
-    "category": "education"
+    "garo": "u on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'."
   },
   {
     "english": "she take book",
-    "garo": "u na·a kitab",
-    "category": "education"
+    "garo": "u na·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u na·a kitab'."
   },
   {
     "english": "she want house",
@@ -13032,33 +13085,39 @@
   },
   {
     "english": "we want book",
-    "garo": "i nama kitab",
-    "category": "education"
+    "garo": "i nama ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i nama kitab'."
   },
   {
     "english": "we need book",
-    "garo": "i dang kitab",
-    "category": "education"
+    "garo": "i dang ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i dang kitab'."
   },
   {
     "english": "we like book",
-    "garo": "i on·a kitab",
-    "category": "education"
+    "garo": "i on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i on·a kitab'."
   },
   {
     "english": "we have book",
-    "garo": "i ong·a kitab",
-    "category": "education"
+    "garo": "i ong·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i ong·a kitab'."
   },
   {
     "english": "we give book",
-    "garo": "i on·a kitab",
-    "category": "education"
+    "garo": "i on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i on·a kitab'."
   },
   {
     "english": "we take book",
-    "garo": "i na·a kitab",
-    "category": "education"
+    "garo": "i na·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i na·a kitab'."
   },
   {
     "english": "we want house",
@@ -13212,33 +13271,39 @@
   },
   {
     "english": "they want book",
-    "garo": "bi nama kitab",
-    "category": "education"
+    "garo": "bi nama ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi nama kitab'."
   },
   {
     "english": "they need book",
-    "garo": "bi dang kitab",
-    "category": "education"
+    "garo": "bi dang ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi dang kitab'."
   },
   {
     "english": "they like book",
-    "garo": "bi on·a kitab",
-    "category": "education"
+    "garo": "bi on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi on·a kitab'."
   },
   {
     "english": "they have book",
-    "garo": "bi ong·a kitab",
-    "category": "education"
+    "garo": "bi ong·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi ong·a kitab'."
   },
   {
     "english": "they give book",
-    "garo": "bi on·a kitab",
-    "category": "education"
+    "garo": "bi on·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi on·a kitab'."
   },
   {
     "english": "they take book",
-    "garo": "bi na·a kitab",
-    "category": "education"
+    "garo": "bi na·a ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi na·a kitab'."
   },
   {
     "english": "they want house",
@@ -13352,8 +13417,9 @@
   },
   {
     "english": "red book",
-    "garo": "bilak kitab",
-    "category": "education"
+    "garo": "bilak ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bilak kitab'."
   },
   {
     "english": "red flower",
@@ -13392,8 +13458,9 @@
   },
   {
     "english": "blue book",
-    "garo": "sam kitab",
-    "category": "education"
+    "garo": "sam ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'sam kitab'."
   },
   {
     "english": "blue flower",
@@ -13432,8 +13499,9 @@
   },
   {
     "english": "green book",
-    "garo": "seng kitab",
-    "category": "education"
+    "garo": "seng ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'seng kitab'."
   },
   {
     "english": "green flower",
@@ -13472,8 +13540,9 @@
   },
   {
     "english": "yellow book",
-    "garo": "wangala kitab",
-    "category": "education"
+    "garo": "wangala ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'wangala kitab'."
   },
   {
     "english": "yellow flower",
@@ -13512,8 +13581,9 @@
   },
   {
     "english": "black book",
-    "garo": "sal kitab",
-    "category": "education"
+    "garo": "sal ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'sal kitab'."
   },
   {
     "english": "black flower",
@@ -13552,8 +13622,9 @@
   },
   {
     "english": "white book",
-    "garo": "seng kitab",
-    "category": "education"
+    "garo": "seng ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'seng kitab'."
   },
   {
     "english": "white flower",
@@ -13592,8 +13663,9 @@
   },
   {
     "english": "brown book",
-    "garo": "rong kitab",
-    "category": "education"
+    "garo": "rong ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'rong kitab'."
   },
   {
     "english": "brown flower",
@@ -13632,8 +13704,9 @@
   },
   {
     "english": "purple book",
-    "garo": "sam bilak kitab",
-    "category": "education"
+    "garo": "sam bilak ki·tap",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'sam bilak kitab'."
   },
   {
     "english": "purple flower",
@@ -62998,5 +63071,477 @@
     "category": "animals",
     "classifier": "mang",
     "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation."
+  },
+  {
+    "english": "one book",
+    "garo": "ki·tap king·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "two book",
+    "garo": "ki·tap king·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "two books",
+    "garo": "ki·tap king·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "three book",
+    "garo": "ki·tap king·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "four book",
+    "garo": "ki·tap king·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "four books",
+    "garo": "ki·tap king·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "five book",
+    "garo": "ki·tap king·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "five books",
+    "garo": "ki·tap king·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "six book",
+    "garo": "ki·tap king·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "six books",
+    "garo": "ki·tap king·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "seven book",
+    "garo": "ki·tap king·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "seven books",
+    "garo": "ki·tap king·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "eight book",
+    "garo": "ki·tap king·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "eight books",
+    "garo": "ki·tap king·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "nine book",
+    "garo": "ki·tap king·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "nine books",
+    "garo": "ki·tap king·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "ten book",
+    "garo": "ki·tap king·chiking",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "ten books",
+    "garo": "ki·tap king·chiking",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "twenty book",
+    "garo": "ki·tap king·Kolgrik",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — book-root closure 2026-08-11 (Claude A, native-confirmed formula): root 'ki·tap' (book, RECONFIRMED 2026-08-08) + king classifier + NUMBERS/TEENS suffix. Full king-classifier counting rebuild for book (1-20)."
+  },
+  {
+    "english": "two person",
+    "garo": "mande sak·gni",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "three person",
+    "garo": "mande sak·gittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "four person",
+    "garo": "mande sak·bri",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "five person",
+    "garo": "mande sak·bonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "six person",
+    "garo": "mande sak·dok",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "seven person",
+    "garo": "mande sak·sni",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "eight person",
+    "garo": "mande sak·chet",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "nine person",
+    "garo": "mande sak·sku",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "ten person",
+    "garo": "mande sak·chiking",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "twenty person",
+    "garo": "mande sak·Kolgrik",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'mande' (person) + sak classifier."
+  },
+  {
+    "english": "twenty rupees",
+    "garo": "tangka gong·Kolgrik",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency). New key, no prior placeholder."
+  },
+  {
+    "english": "one tree",
+    "garo": "a'bil pangsa",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "two tree",
+    "garo": "a'bil panggni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "two trees",
+    "garo": "a'bil panggni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "three tree",
+    "garo": "a'bil panggittam",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "three trees",
+    "garo": "a'bil panggittam",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "four tree",
+    "garo": "a'bil pangbri",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "four trees",
+    "garo": "a'bil pangbri",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "five tree",
+    "garo": "a'bil pangbonga",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "five trees",
+    "garo": "a'bil pangbonga",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "six tree",
+    "garo": "a'bil pangdok",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "six trees",
+    "garo": "a'bil pangdok",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "seven tree",
+    "garo": "a'bil pangsni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "seven trees",
+    "garo": "a'bil pangsni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "eight tree",
+    "garo": "a'bil pangchet",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "eight trees",
+    "garo": "a'bil pangchet",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "nine tree",
+    "garo": "a'bil pangsku",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "nine trees",
+    "garo": "a'bil pangsku",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "ten tree",
+    "garo": "a'bil pangchiking",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "ten trees",
+    "garo": "a'bil pangchiking",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "eleven tree",
+    "garo": "a'bil pangChi·sa",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "twelve tree",
+    "garo": "a'bil pangChi·gni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "thirteen tree",
+    "garo": "a'bil pangChi·gittam",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "fourteen tree",
+    "garo": "a'bil pangChi·bri",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "fifteen tree",
+    "garo": "a'bil pangChi·bonga",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "sixteen tree",
+    "garo": "a'bil pangChi·dok",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "seventeen tree",
+    "garo": "a'bil pangChi·sni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "eighteen tree",
+    "garo": "a'bil pangChi·chet",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "nineteen tree",
+    "garo": "a'bil pangChi·sku",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "twenty tree",
+    "garo": "a'bil pangKolgrik",
+    "pos": null,
+    "category": "nature",
+    "classifier": "pang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
   }
 ]

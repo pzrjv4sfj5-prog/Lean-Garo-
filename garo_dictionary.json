@@ -28,10 +28,6 @@
     "garo": "tangka gong·bonga"
   },
   {
-    "english": "one book",
-    "garo": "ki·tap king·sa"
-  },
-  {
     "english": "three leaves",
     "garo": "bijak king·gittam"
   },
@@ -4244,10 +4240,6 @@
     "garo": "achak mang·gni"
   },
   {
-    "english": "three books",
-    "garo": "ki·tap king·gittam"
-  },
-  {
     "english": "four fruits",
     "garo": "mewa ge·bri"
   },
@@ -4624,10 +4616,6 @@
     "garo": "Mi donga ma?"
   },
   {
-    "english": "two books",
-    "garo": "ki·tap king·gni"
-  },
-  {
     "english": "three people",
     "garo": "manderang sak·gittam"
   },
@@ -4668,64 +4656,8 @@
     "garo": "Chinga"
   },
   {
-    "english": "one dog",
-    "garo": "achak mang·sa"
-  },
-  {
-    "english": "two birds",
-    "garo": "do·o mang·gni"
-  },
-  {
-    "english": "three fish",
-    "garo": "na·tok mang·gittam"
-  },
-  {
     "english": "one person",
     "garo": "manderang sak·sa"
-  },
-  {
-    "english": "two teachers",
-    "garo": "skigipa sak·gni"
-  },
-  {
-    "english": "one coin",
-    "garo": "tangka gong·sa"
-  },
-  {
-    "english": "five rupees",
-    "garo": "tangka gong·bonga"
-  },
-  {
-    "english": "one book",
-    "garo": "ki·tap king·sa"
-  },
-  {
-    "english": "three leaves",
-    "garo": "bijak king·gittam"
-  },
-  {
-    "english": "one chair",
-    "garo": "chokki ge·sa"
-  },
-  {
-    "english": "two knives",
-    "garo": "kettal ge·gni"
-  },
-  {
-    "english": "den· (to carry)",
-    "garo": "den·a (past), den·enga (continuous)"
-  },
-  {
-    "english": "cha· (to eat)",
-    "garo": "cha·a (past), cha·enga (continuous), cha·aha (past alt)"
-  },
-  {
-    "english": "re·ang (to go)",
-    "garo": "re·ang·a (past), re·angenga (continuous)"
-  },
-  {
-    "english": "on· (to give)",
-    "garo": "on·a (past), on·bo (command), on·enga (continuous)"
   },
   {
     "english": "Pineapple",
@@ -5184,10 +5116,6 @@
     "garo": "De·me·chik"
   },
   {
-    "english": "Grandfather",
-    "garo": "Abi·tang"
-  },
-  {
     "english": "Grandmother",
     "garo": "Ambichang"
   },
@@ -5292,158 +5220,6 @@
     "garo": "Rimit"
   },
   {
-    "english": "One",
-    "garo": "Sa"
-  },
-  {
-    "english": "Two",
-    "garo": "Gni"
-  },
-  {
-    "english": "Three",
-    "garo": "Gittam"
-  },
-  {
-    "english": "Four",
-    "garo": "Bri"
-  },
-  {
-    "english": "Five",
-    "garo": "Bonga"
-  },
-  {
-    "english": "Six",
-    "garo": "Dok"
-  },
-  {
-    "english": "Seven",
-    "garo": "Sni"
-  },
-  {
-    "english": "Eight",
-    "garo": "Chet"
-  },
-  {
-    "english": "Nine",
-    "garo": "Sku"
-  },
-  {
-    "english": "Ten",
-    "garo": "Chiking"
-  },
-  {
-    "english": "Eleven",
-    "garo": "Chi·sa"
-  },
-  {
-    "english": "Twelve",
-    "garo": "Chi·gni"
-  },
-  {
-    "english": "Thirteen",
-    "garo": "Chi·gittam"
-  },
-  {
-    "english": "Fourteen",
-    "garo": "Chi·bri"
-  },
-  {
-    "english": "Fifteen",
-    "garo": "Chi·bonga"
-  },
-  {
-    "english": "Sixteen",
-    "garo": "Chi·dok"
-  },
-  {
-    "english": "Seventeen",
-    "garo": "Chi·sni"
-  },
-  {
-    "english": "Eighteen",
-    "garo": "Chi·chet"
-  },
-  {
-    "english": "Nineteen",
-    "garo": "Chi·sku"
-  },
-  {
-    "english": "Twenty",
-    "garo": "Kolgrik"
-  },
-  {
-    "english": "Twenty-one",
-    "garo": "Kolgrik·sa"
-  },
-  {
-    "english": "Thirty",
-    "garo": "Kolatchi"
-  },
-  {
-    "english": "Forty",
-    "garo": "Sotbri"
-  },
-  {
-    "english": "Fifty",
-    "garo": "Sotbonga"
-  },
-  {
-    "english": "Sixty",
-    "garo": "Sotdok"
-  },
-  {
-    "english": "Seventy",
-    "garo": "Sotsni"
-  },
-  {
-    "english": "Eighty",
-    "garo": "Sotchet"
-  },
-  {
-    "english": "Ninety",
-    "garo": "Sotsku"
-  },
-  {
-    "english": "Hundred",
-    "garo": "Ritchasa"
-  },
-  {
-    "english": "One Thousand",
-    "garo": "Hajalsa"
-  },
-  {
-    "english": "First (ordinal)",
-    "garo": "Chipprangni"
-  },
-  {
-    "english": "Second (ordinal)",
-    "garo": "Gni·prangni"
-  },
-  {
-    "english": "Third (ordinal)",
-    "garo": "Gittam·prangni"
-  },
-  {
-    "english": "Last",
-    "garo": "Baksangni"
-  },
-  {
-    "english": "Half",
-    "garo": "Jatchi"
-  },
-  {
-    "english": "Quarter",
-    "garo": "Daldal"
-  },
-  {
-    "english": "Double",
-    "garo": "Gni·bita"
-  },
-  {
-    "english": "Zero / None",
-    "garo": "Bangbang / Ong·ja"
-  },
-  {
     "english": "Hello / Greetings",
     "garo": "Salam / Namengama"
   },
@@ -5498,10 +5274,6 @@
   {
     "english": "Come here",
     "garo": "Ianona re·babo."
-  },
-  {
-    "english": "Tasty / Delicious",
-    "garo": "Toa"
   },
   {
     "english": "Not tasty",
@@ -5964,10 +5736,6 @@
     "garo": "Pangnan·ba (ja)"
   },
   {
-    "english": "Always",
-    "garo": "Pangnan"
-  },
-  {
     "english": "Shirt",
     "garo": "Chola"
   },
@@ -6070,10 +5838,6 @@
   {
     "english": "Tasty",
     "garo": "Toa"
-  },
-  {
-    "english": "Not tasty",
-    "garo": "Touja"
   },
   {
     "english": "Village",
@@ -6268,16 +6032,8 @@
     "garo": "Agital"
   },
   {
-    "english": "School",
-    "garo": "Skul"
-  },
-  {
     "english": "Class",
     "garo": "Klas"
-  },
-  {
-    "english": "Book",
-    "garo": "Ki·tap"
   },
   {
     "english": "Paper",
@@ -6584,10 +6340,6 @@
     "garo": "To"
   },
   {
-    "english": "Water",
-    "garo": "Chi"
-  },
-  {
     "english": "Sugar",
     "garo": "Chini"
   },
@@ -6614,18 +6366,6 @@
   {
     "english": "Turmeric",
     "garo": "Holdi"
-  },
-  {
-    "english": "Garlic",
-    "garo": "Rasin·gipok"
-  },
-  {
-    "english": "Ginger",
-    "garo": "Re·ching"
-  },
-  {
-    "english": "Onion",
-    "garo": "Rasin"
   },
   {
     "english": "Chili",
@@ -6676,16 +6416,8 @@
     "garo": "Sospen"
   },
   {
-    "english": "Plate",
-    "garo": "Tala"
-  },
-  {
     "english": "Cup",
     "garo": "Cup"
-  },
-  {
-    "english": "Knife",
-    "garo": "Kettal"
   },
   {
     "english": "Firewood",
@@ -6714,10 +6446,6 @@
   {
     "english": "Airplane",
     "garo": "Sildo·reng"
-  },
-  {
-    "english": "Boat",
-    "garo": "Ring"
   },
   {
     "english": "Bridge",
@@ -6762,14 +6490,6 @@
   {
     "english": "Slow",
     "garo": "Ka·sina"
-  },
-  {
-    "english": "Near",
-    "garo": "Sepang"
-  },
-  {
-    "english": "Far",
-    "garo": "Chel·a"
   },
   {
     "english": "Man",
@@ -6824,10 +6544,6 @@
     "garo": "Noksul"
   },
   {
-    "english": "Guest",
-    "garo": "Sokgipa"
-  },
-  {
     "english": "Master / Owner",
     "garo": "Nokgipa"
   },
@@ -6844,10 +6560,6 @@
     "garo": "Bol"
   },
   {
-    "english": "Stone",
-    "garo": "Ro·ong"
-  },
-  {
     "english": "Iron / Metal",
     "garo": "Sil"
   },
@@ -6862,10 +6574,6 @@
   {
     "english": "Cloth",
     "garo": "Ba·ra"
-  },
-  {
-    "english": "Paper",
-    "garo": "Lekka"
   },
   {
     "english": "Plastic",
@@ -6930,10 +6638,6 @@
   {
     "english": "Because",
     "garo": "Maina"
-  },
-  {
-    "english": "Fish",
-    "garo": "Na·tok"
   },
   {
     "english": "Crab",
@@ -7008,10 +6712,6 @@
     "garo": "Ku·chot"
   },
   {
-    "english": "Egg",
-    "garo": "Do·chi"
-  },
-  {
     "english": "Nest",
     "garo": "Do·bitip"
   },
@@ -7076,10 +6776,6 @@
     "garo": "Janggi / Gisik"
   },
   {
-    "english": "Ghost",
-    "garo": "Me·mang"
-  },
-  {
     "english": "Heaven",
     "garo": "Salgi"
   },
@@ -7098,10 +6794,6 @@
   {
     "english": "Worship",
     "garo": "Olakkiani"
-  },
-  {
-    "english": "Church",
-    "garo": "Gilja·nok"
   },
   {
     "english": "Sin",
@@ -7148,10 +6840,6 @@
     "garo": "Sa·gre"
   },
   {
-    "english": "Tradition",
-    "garo": "Dakbewal"
-  },
-  {
     "english": "Law",
     "garo": "Niam"
   },
@@ -7190,10 +6878,6 @@
   {
     "english": "Signature",
     "garo": "Jak·soi"
-  },
-  {
-    "english": "Truth",
-    "garo": "Bebe"
   },
   {
     "english": "Lie",
@@ -7388,14 +7072,6 @@
     "garo": "Mitchia"
   },
   {
-    "english": "Full",
-    "garo": "Gapa"
-  },
-  {
-    "english": "Empty",
-    "garo": "Bangbang"
-  },
-  {
     "english": "Expensive",
     "garo": "Dam·raka"
   },
@@ -7426,18 +7102,6 @@
   {
     "english": "Him / Her",
     "garo": "Una"
-  },
-  {
-    "english": "We (excl.)",
-    "garo": "Chinga"
-  },
-  {
-    "english": "We (incl.)",
-    "garo": "An·ching"
-  },
-  {
-    "english": "Us",
-    "garo": "Chingna"
   },
   {
     "english": "They",
@@ -7536,28 +7200,12 @@
     "garo": "Gipin"
   },
   {
-    "english": "Market",
-    "garo": "Bajal / Anti"
-  },
-  {
-    "english": "Shop",
-    "garo": "Dokan"
-  },
-  {
     "english": "Money",
     "garo": "Tangka"
   },
   {
     "english": "Price",
     "garo": "Dam"
-  },
-  {
-    "english": "Expensive",
-    "garo": "Dam·raka"
-  },
-  {
-    "english": "Cheap",
-    "garo": "Dam·nom·a"
   },
   {
     "english": "To Buy",
@@ -7592,10 +7240,6 @@
     "garo": "Bregipa"
   },
   {
-    "english": "Shopkeeper",
-    "garo": "Dokan·dakgipa"
-  },
-  {
     "english": "Bag",
     "garo": "Thola"
   },
@@ -7628,28 +7272,8 @@
     "garo": "Salam / Namengama"
   },
   {
-    "english": "How are you?",
-    "garo": "Na·a namengama?"
-  },
-  {
-    "english": "I am fine",
-    "garo": "Anga namenga."
-  },
-  {
     "english": "What is your name?",
     "garo": "Nang·ni bimungara maia?"
-  },
-  {
-    "english": "My name is...",
-    "garo": "Angni bimungara..."
-  },
-  {
-    "english": "Thank you",
-    "garo": "Mittela."
-  },
-  {
-    "english": "Please",
-    "garo": "Ka·sapae."
   },
   {
     "english": "Excuse me",
@@ -7660,20 +7284,12 @@
     "garo": "Kema·bi·a."
   },
   {
-    "english": "Good morning",
-    "garo": "Pringnam."
-  },
-  {
     "english": "Good afternoon",
     "garo": "Salnam."
   },
   {
     "english": "Good evening",
     "garo": "Attamnam."
-  },
-  {
-    "english": "Good night",
-    "garo": "Walnam."
   },
   {
     "english": "Goodbye",
@@ -7720,24 +7336,12 @@
     "garo": "Konta"
   },
   {
-    "english": "Morning",
-    "garo": "Pring"
-  },
-  {
     "english": "Noon",
     "garo": "Sal·jatchi"
   },
   {
     "english": "Afternoon",
     "garo": "Sal·aksol"
-  },
-  {
-    "english": "Evening",
-    "garo": "Attam"
-  },
-  {
-    "english": "Night",
-    "garo": "Wal"
   },
   {
     "english": "Midnight",
@@ -7752,36 +7356,8 @@
     "garo": "Knalo"
   },
   {
-    "english": "Day after tomorrow",
-    "garo": "Me·nnalo"
-  },
-  {
     "english": "Yesterday",
     "garo": "Meja"
-  },
-  {
-    "english": "Day before yesterday",
-    "garo": "Me·si·ja"
-  },
-  {
-    "english": "Now",
-    "garo": "Da·o"
-  },
-  {
-    "english": "Later",
-    "garo": "Ja·mano"
-  },
-  {
-    "english": "Before",
-    "garo": "Skang"
-  },
-  {
-    "english": "Early",
-    "garo": "Bakkan / Pring·seng"
-  },
-  {
-    "english": "Late",
-    "garo": "Ja·man·chak·a"
   },
   {
     "english": "Summer",
@@ -7796,36 +7372,12 @@
     "garo": "Mikkari"
   },
   {
-    "english": "Always",
-    "garo": "Pangnan"
-  },
-  {
-    "english": "Never",
-    "garo": "Pangnan·ba (ja)"
-  },
-  {
-    "english": "And",
-    "garo": "Aro"
-  },
-  {
-    "english": "But",
-    "garo": "Indiba"
-  },
-  {
-    "english": "Or",
-    "garo": "Ba"
-  },
-  {
     "english": "If",
     "garo": "Ode / ·ode"
   },
   {
     "english": "So / Therefore",
     "garo": "Uni gimin"
-  },
-  {
-    "english": "Because",
-    "garo": "Maina"
   },
   {
     "english": "With",
@@ -7900,10 +7452,6 @@
     "garo": "Anga uia."
   },
   {
-    "english": "I don't know",
-    "garo": "Anga uija."
-  },
-  {
     "english": "No more",
     "garo": "Dongja"
   },
@@ -7914,10 +7462,6 @@
   {
     "english": "I don't care",
     "garo": "Anga Dal·e Ra·ja"
-  },
-  {
-    "english": "Wait a moment",
-    "garo": "Damo / Gisep sengbo"
   },
   {
     "english": "No problem / Never mind",
@@ -7944,10 +7488,6 @@
     "garo": "Na·a maiko agana?"
   },
   {
-    "english": "Is that so?",
-    "garo": "Inde·a?"
-  },
-  {
     "english": "Really?",
     "garo": "Bebema?"
   },
@@ -7956,24 +7496,12 @@
     "garo": "Oe, bebe!"
   },
   {
-    "english": "Let's eat",
-    "garo": "Hai cha·ha"
-  },
-  {
-    "english": "Let's go",
-    "garo": "Hai re·naha"
-  },
-  {
     "english": "Let's sleep",
     "garo": "Hai tusina"
   },
   {
     "english": "Hurry up!",
     "garo": "Tarkbo!"
-  },
-  {
-    "english": "Come quick!",
-    "garo": "Tarake re·babo!"
   },
   {
     "english": "Be careful!",
@@ -7994,10 +7522,6 @@
   {
     "english": "Not now",
     "garo": "Da·o ong·ja"
-  },
-  {
-    "english": "Later",
-    "garo": "Ja·mano"
   },
   {
     "english": "Maybe",
@@ -8116,28 +7640,8 @@
     "garo": "Anga chu·ongnika"
   },
   {
-    "english": "I don't care",
-    "garo": "Anga Dal·e Ra·ja"
-  },
-  {
-    "english": "Drive",
-    "garo": "Sala"
-  },
-  {
-    "english": "Pull",
-    "garo": "Sala"
-  },
-  {
     "english": "Push",
     "garo": "Jitpaka"
-  },
-  {
-    "english": "Swim",
-    "garo": "Jroa"
-  },
-  {
-    "english": "Climb",
-    "garo": "Maldoa / Gadoa"
   },
   {
     "english": "Jump",
@@ -8152,10 +7656,6 @@
     "garo": "Romroma"
   },
   {
-    "english": "Roam / Wander",
-    "garo": "Rorama / Roama"
-  },
-  {
     "english": "Fly",
     "garo": "Bila"
   },
@@ -8168,28 +7668,8 @@
     "garo": "De·jita"
   },
   {
-    "english": "Lock",
-    "garo": "Teka"
-  },
-  {
-    "english": "Shoot",
-    "garo": "Goa"
-  },
-  {
     "english": "Throw",
     "garo": "Goata / Gal·a"
-  },
-  {
-    "english": "Catch",
-    "garo": "Rim·a"
-  },
-  {
-    "english": "Look / See / Watch",
-    "garo": "Nia"
-  },
-  {
-    "english": "Stare",
-    "garo": "Nitata"
   },
   {
     "english": "Show",
@@ -8202,18 +7682,6 @@
   {
     "english": "Spread",
     "garo": "Barama"
-  },
-  {
-    "english": "Pour",
-    "garo": "Rua"
-  },
-  {
-    "english": "Apply",
-    "garo": "Nonga"
-  },
-  {
-    "english": "Pluck",
-    "garo": "Aka"
   },
   {
     "english": "Turn (page/sheet)",
@@ -8300,10 +7768,6 @@
     "garo": "Ka·ra chaka"
   },
   {
-    "english": "Lie",
-    "garo": "Tol·a"
-  },
-  {
     "english": "Tell the truth",
     "garo": "Bebeko aganbo"
   },
@@ -8336,10 +7800,6 @@
     "garo": "Sikie on·a"
   },
   {
-    "english": "Traditional festival",
-    "garo": "Wangala"
-  },
-  {
     "english": "Traditional dance",
     "garo": "Do·krua"
   },
@@ -8352,24 +7812,8 @@
     "garo": "Rongsi"
   },
   {
-    "english": "Clan / Lineage",
-    "garo": "Mahari"
-  },
-  {
-    "english": "Ancestral property",
-    "garo": "A·chik daka"
-  },
-  {
-    "english": "Village headman",
-    "garo": "Nokma"
-  },
-  {
     "english": "Traditional house",
     "garo": "A·chik nok"
-  },
-  {
-    "english": "Jhumming (slash & burn)",
-    "garo": "A·ba daka"
   },
   {
     "english": "Sacred grove",
@@ -8392,18 +7836,6 @@
     "garo": "Nokpante"
   },
   {
-    "english": "Ancestor worship",
-    "garo": "Songsarek"
-  },
-  {
-    "english": "Don't judge by appearance",
-    "garo": "Mikrangni bimung gri"
-  },
-  {
-    "english": "United we stand",
-    "garo": "Baksa nangchim·a, saksan sia"
-  },
-  {
     "english": "Work hard now, rest later",
     "garo": "Skang daka, ja·mano nengbo"
   },
@@ -8416,36 +7848,12 @@
     "garo": "Nama mande·ra ua kam·o uia"
   },
   {
-    "english": "Don't waste food",
-    "garo": "Mi gual·ata·bo ong·ja"
-  },
-  {
-    "english": "The forest gives, the forest takes",
-    "garo": "Buring on·a, buring ra·a"
-  },
-  {
     "english": "Truth always comes out",
     "garo": "Bebe·ra inde·a piltai"
   },
   {
     "english": "A little is better than nothing",
     "garo": "On·titi nama, bangbang·bata"
-  },
-  {
-    "english": "Wow! / Amazing!",
-    "garo": "Aio!"
-  },
-  {
-    "english": "Yikes! / Oh no!",
-    "garo": "Himanga!"
-  },
-  {
-    "english": "Hey! (calling someone)",
-    "garo": "Ei! / O!"
-  },
-  {
-    "english": "What's up?",
-    "garo": "Maiko nanga?"
   },
   {
     "english": "No way! / Impossible!",
@@ -8462,10 +7870,6 @@
   {
     "english": "Cool / Awesome",
     "garo": "Nito / Nita·gipa"
-  },
-  {
-    "english": "Annoying",
-    "garo": "Jala·gipa"
   },
   {
     "english": "Let's hang out",
@@ -8494,10 +7898,6 @@
   {
     "english": "Chill out / Relax",
     "garo": "Nom·a bo"
-  },
-  {
-    "english": "Let's go already!",
-    "garo": "Re·naha ba!"
   },
   {
     "english": "Kind / Gentle",
@@ -8656,10 +8056,6 @@
     "garo": "Gu·ua"
   },
   {
-    "english": "Cough",
-    "garo": "Gusua"
-  },
-  {
     "english": "Whistle",
     "garo": "Hu·a"
   },
@@ -8686,10 +8082,6 @@
   {
     "english": "I have a question",
     "garo": "Angna sing·ani donga"
-  },
-  {
-    "english": "I don't understand",
-    "garo": "Anga uija"
   },
   {
     "english": "Class is over",
@@ -8940,10 +8332,6 @@
     "garo": "Mai·a sing·aniara?"
   },
   {
-    "english": "What is written in the letter?",
-    "garo": "Chitthio mai sea dongachim?"
-  },
-  {
     "english": "What you had been told?",
     "garo": "Naa maiko aganata?"
   },
@@ -8952,52 +8340,16 @@
     "garo": "Aganchakani·ara mai ong·en?"
   },
   {
-    "english": "Why did you come?",
-    "garo": "Na·a maina reba·a?"
-  },
-  {
-    "english": "Why did you sleep?",
-    "garo": "Na·a maina tusia?"
-  },
-  {
     "english": "Why did you tell him to go?",
     "garo": "Na·a maina biko re·angna aganata?"
-  },
-  {
-    "english": "Why did he bring the bag?",
-    "garo": "Bia maina bag ko raba·a?"
-  },
-  {
-    "english": "Why did she pay the money?",
-    "garo": "Bia maina tangka ko gama?"
   },
   {
     "english": "Why did they sit there?",
     "garo": "Bisong maina uano a·songenga?"
   },
   {
-    "english": "Why do you drive the car?",
-    "garo": "Na·a maina gariko sal·a?"
-  },
-  {
     "english": "Why are they late for the meeting?",
     "garo": "Bisong maina meeting ona ru·ute reba·a?"
-  },
-  {
-    "english": "How did you come?",
-    "garo": "Na·a maidake reba·a?"
-  },
-  {
-    "english": "How did you sleep?",
-    "garo": "Na·a maidake tusia?"
-  },
-  {
-    "english": "How did you drive?",
-    "garo": "Na·a maidake sal·a?"
-  },
-  {
-    "english": "How did you write?",
-    "garo": "Na·a maidake se·a?"
   },
   {
     "english": "How many apples are there in my hand?",
@@ -9016,24 +8368,12 @@
     "garo": "Baita chelkuenga?"
   },
   {
-    "english": "How was the journey yesterday?",
-    "garo": "Mijal songre·ara nama ma?"
-  },
-  {
-    "english": "How are you?",
-    "garo": "Na·a namengama?"
-  },
-  {
     "english": "Which way did you come?",
     "garo": "Na·a bagita reba·a?"
   },
   {
     "english": "Which is your favourite colour?",
     "garo": "Nang namnikgipa rong·ara mai·a?"
-  },
-  {
-    "english": "In which room did you sleep?",
-    "garo": "Na·a badia room o tusia?"
   },
   {
     "english": "Which story did you tell?",
@@ -9064,56 +8404,8 @@
     "garo": "Ang·ar sako contact khagen?"
   },
   {
-    "english": "Can you give me your pen?",
-    "garo": "Na·a nang pen ko on·a mangenma?"
-  },
-  {
-    "english": "Yes, of course.",
-    "garo": "Hoe mangenva."
-  },
-  {
-    "english": "Can you lift the box?",
-    "garo": "Na·a box ko dena mangenma?"
-  },
-  {
-    "english": "Can you write the exam?",
-    "garo": "Na·a porikka sena mangenma?"
-  },
-  {
-    "english": "Will you come with me?",
-    "garo": "Na·ara ang·ming rebagenma?"
-  },
-  {
-    "english": "I shall come with you.",
-    "garo": "Ang·a nangming reangen."
-  },
-  {
-    "english": "May I sit down?",
-    "garo": "Anga asongna mangengma?"
-  },
-  {
     "english": "Can you give me water?",
     "garo": "Angna chi on·a mangengma?"
-  },
-  {
-    "english": "Do you love me?",
-    "garo": "Na·a angna kasa·a ma?"
-  },
-  {
-    "english": "Yes, I love you.",
-    "garo": "Hoe, ang·a nangna kasa·a."
-  },
-  {
-    "english": "I am fine.",
-    "garo": "Ang·a namengava."
-  },
-  {
-    "english": "Yes, of course.",
-    "garo": "Hoe mangenva."
-  },
-  {
-    "english": "That (far/there)",
-    "garo": "Haiwa"
   },
   {
     "english": "Which",
@@ -9124,168 +8416,24 @@
     "garo": "Bagita"
   },
   {
-    "english": "How many / How much",
-    "garo": "Baitarong / Baita"
-  },
-  {
-    "english": "Whom",
-    "garo": "Sako"
-  },
-  {
-    "english": "Whole night",
-    "garo": "Walgimik"
-  },
-  {
-    "english": "Last week",
-    "garo": "Mija antio"
-  },
-  {
-    "english": "With (me / you)",
-    "garo": "Ming"
-  },
-  {
     "english": "Late",
     "garo": "Ru·ute"
-  },
-  {
-    "english": "Favourite",
-    "garo": "Namnikgipa"
-  },
-  {
-    "english": "Sweetest",
-    "garo": "Chibata"
-  },
-  {
-    "english": "Largest / Most",
-    "garo": "Bangbata"
-  },
-  {
-    "english": "Well (adverb)",
-    "garo": "Namen"
-  },
-  {
-    "english": "Win",
-    "garo": "Am·a"
-  },
-  {
-    "english": "Lift / Carry (ability)",
-    "garo": "Dena"
-  },
-  {
-    "english": "Pay",
-    "garo": "Gama"
-  },
-  {
-    "english": "Mosque",
-    "garo": "Olakiram"
-  },
-  {
-    "english": "Letter (written)",
-    "garo": "Chitthio"
-  },
-  {
-    "english": "Population",
-    "garo": "Adoko mande"
   },
   {
     "english": "Newspaper",
     "garo": "Songbat"
   },
   {
-    "english": "Best (superlative)",
-    "garo": "Bilongen nambata"
-  },
-  {
-    "english": "Room",
-    "garo": "Room"
-  },
-  {
-    "english": "Apple",
-    "garo": "Apple"
-  },
-  {
-    "english": "Story",
-    "garo": "Golpo"
-  },
-  {
     "english": "Journey",
     "garo": "Songre"
-  },
-  {
-    "english": "Colour",
-    "garo": "Rong"
-  },
-  {
-    "english": "Contact (verb)",
-    "garo": "Contact khagen"
-  },
-  {
-    "english": "Tense / Form",
-    "garo": "Suffix / Pattern"
-  },
-  {
-    "english": "Past simple",
-    "garo": "verb + a"
-  },
-  {
-    "english": "Past simple (alt)",
-    "garo": "verb + aha"
-  },
-  {
-    "english": "Past perfect",
-    "garo": "verb + man + aha"
-  },
-  {
-    "english": "Present perfect",
-    "garo": "verb + manjok"
-  },
-  {
-    "english": "Present continuous",
-    "garo": "verb + enga"
   },
   {
     "english": "Future",
     "garo": "verb + en / gen"
   },
   {
-    "english": "Imperative / Command",
-    "garo": "verb + bo"
-  },
-  {
-    "english": "Let's [verb]",
-    "garo": "Hai + verb + ha"
-  },
-  {
-    "english": "Ability / Permission ?",
-    "garo": "verb + mangenma?"
-  },
-  {
-    "english": "Ability / Permission ✓",
-    "garo": "mangenva"
-  },
-  {
-    "english": "Past question",
-    "garo": "verb + ama?"
-  },
-  {
-    "english": "Present question",
-    "garo": "verb + engma?"
-  },
-  {
-    "english": "Permission request",
-    "garo": "verb + na + mangengma?"
-  },
-  {
     "english": "Negation",
     "garo": "verb + ong·ja / ·ja"
-  },
-  {
-    "english": "Adverb 'well'",
-    "garo": "namen"
-  },
-  {
-    "english": "Quickly (adverb)",
-    "garo": "tarake"
   },
   {
     "english": "Why",
@@ -9296,296 +8444,28 @@
     "garo": "maidake"
   },
   {
-    "english": "How many",
-    "garo": "baitarong"
-  },
-  {
-    "english": "How much",
-    "garo": "baita"
-  },
-  {
-    "english": "Which",
-    "garo": "badia / badiya"
-  },
-  {
-    "english": "Which way",
-    "garo": "bagita"
-  },
-  {
-    "english": "Whole / Entire",
-    "garo": "gimik"
-  },
-  {
-    "english": "Classifier",
-    "garo": "Used For"
-  },
-  {
-    "english": "mang",
-    "garo": "Animals, birds, fish, insects"
-  },
-  {
-    "english": "sak",
-    "garo": "People and persons"
-  },
-  {
-    "english": "gong",
-    "garo": "Money and currency"
-  },
-  {
     "english": "king",
     "garo": "Books, paper, leaves, flat / thin objects"
-  },
-  {
-    "english": "ge",
-    "garo": "Objects, tools, things (general fallback)"
-  },
-  {
-    "english": "1",
-    "garo": "sa"
-  },
-  {
-    "english": "2",
-    "garo": "gni"
-  },
-  {
-    "english": "3",
-    "garo": "gittam"
-  },
-  {
-    "english": "4",
-    "garo": "bri"
-  },
-  {
-    "english": "5",
-    "garo": "bonga"
-  },
-  {
-    "english": "one dog",
-    "garo": "achak mang·sa"
-  },
-  {
-    "english": "two dogs",
-    "garo": "achak mang·gni"
-  },
-  {
-    "english": "three books",
-    "garo": "ki·tap king·gittam"
-  },
-  {
-    "english": "one person",
-    "garo": "mande sak·sa"
-  },
-  {
-    "english": "four fruits",
-    "garo": "mewa ge·bri"
-  },
-  {
-    "english": "five coins",
-    "garo": "tangka gong·bonga"
-  },
-  {
-    "english": "ten birds",
-    "garo": "do·a mang·chiking"
-  },
-  {
-    "english": "Let's eat",
-    "garo": "Hai cha·ha"
-  },
-  {
-    "english": "Let's go",
-    "garo": "Hai re·naha"
-  },
-  {
-    "english": "Let's sleep",
-    "garo": "Hai tusina"
-  },
-  {
-    "english": "Let's drink",
-    "garo": "Hai ringaha"
-  },
-  {
-    "english": "Let's sit",
-    "garo": "Hai asongha"
-  },
-  {
-    "english": "Let's play",
-    "garo": "Hai kalaha"
-  },
-  {
-    "english": "Let's work",
-    "garo": "Hai dakha"
   },
   {
     "english": "Give me water",
     "garo": "Angna chi on·bo"
   },
   {
-    "english": "Give him food",
-    "garo": "Una mi on·bo"
-  },
-  {
-    "english": "Can you give me water?",
-    "garo": "Angna chi on·a mangengma?"
-  },
-  {
-    "english": "I gave you water",
-    "garo": "Anga nang·na chi on·a"
-  },
-  {
-    "english": "Please give me some",
-    "garo": "Angna mitam on·bo ka·sapae"
-  },
-  {
-    "english": "I went",
-    "garo": "Anga re·ang·a"
-  },
-  {
-    "english": "I ate",
-    "garo": "Anga cha·a"
-  },
-  {
-    "english": "I drank",
-    "garo": "Anga ringa·a"
-  },
-  {
-    "english": "I came",
-    "garo": "Anga re·ba·a"
-  },
-  {
-    "english": "She slept",
-    "garo": "Ua tusi·a"
-  },
-  {
-    "english": "They worked",
-    "garo": "Uamang daka"
-  },
-  {
-    "english": "I am eating",
-    "garo": "Anga cha·oenga"
-  },
-  {
-    "english": "She is going",
-    "garo": "Ua re·angenga"
-  },
-  {
-    "english": "He is sleeping",
-    "garo": "Ua tusienga"
-  },
-  {
-    "english": "I am coming",
-    "garo": "Anga re·baenga"
-  },
-  {
-    "english": "They are working",
-    "garo": "Uamang dakoenga"
-  },
-  {
-    "english": "Did you eat?",
-    "garo": "Na·a cha·ama?"
-  },
-  {
-    "english": "Did you go to market?",
-    "garo": "Na·a bajalchi re·angama?"
-  },
-  {
     "english": "Are you eating?",
     "garo": "Na·a cha·engma?"
-  },
-  {
-    "english": "Can you give me water?",
-    "garo": "Angna chi on·a mangengma?"
-  },
-  {
-    "english": "May I sit?",
-    "garo": "Anga asongna mangengma?"
-  },
-  {
-    "english": "Is he coming?",
-    "garo": "Ua re·baenga·ma?"
-  },
-  {
-    "english": "Come here!",
-    "garo": "Ianona re·babo!"
   },
   {
     "english": "Sit down",
     "garo": "Asongbo"
   },
   {
-    "english": "Go away",
-    "garo": "Re·angbo"
-  },
-  {
-    "english": "Wait",
-    "garo": "Damo/Sengbo"
-  },
-  {
-    "english": "Quick! / Hurry!",
-    "garo": "Tarkbo!"
-  },
-  {
-    "english": "Come quick!",
-    "garo": "Tarake re·babo!"
-  },
-  {
-    "english": "Please sit down",
-    "garo": "Asongbo ka·sapae"
-  },
-  {
-    "english": "Please give me water",
-    "garo": "Angna chi on·bo ka·sapae"
-  },
-  {
-    "english": "At the market / To the market",
-    "garo": "Bajalchi"
-  },
-  {
-    "english": "At school",
-    "garo": "Skulchi"
-  },
-  {
-    "english": "At home",
-    "garo": "Nokchi"
-  },
-  {
-    "english": "At the river",
-    "garo": "Chibimachi"
-  },
-  {
-    "english": "In the forest",
-    "garo": "Buringchi"
-  },
-  {
     "english": "I don't know",
     "garo": "Anga uija"
   },
   {
-    "english": "I don't want",
-    "garo": "Anga nang·ja"
-  },
-  {
-    "english": "I don't have",
-    "garo": "Anga dongja / Dongja"
-  },
-  {
     "english": "Don't eat",
     "garo": "Cha·bo ong·ja"
-  },
-  {
-    "english": "Don't go",
-    "garo": "Re·angbo ong·ja"
-  },
-  {
-    "english": "I don't care",
-    "garo": "Anga Dal·e Ra·ja"
-  },
-  {
-    "english": "No more",
-    "garo": "Dongja"
-  },
-  {
-    "english": "It is there / It exists",
-    "garo": "Donga"
   },
   {
     "english": "example",
@@ -9684,10 +8564,6 @@
     "garo": "nam·bea (better)"
   },
   {
-    "english": "example",
-    "garo": "pil·tai (again)"
-  },
-  {
     "english": "description",
     "garo": "animals, birds, fish, insects"
   },
@@ -9702,50 +8578,6 @@
   {
     "english": "description",
     "garo": "books, paper, leaves, flat thin objects"
-  },
-  {
-    "english": "description",
-    "garo": "objects, tools, things (general fallback)"
-  },
-  {
-    "english": "1",
-    "garo": "sa"
-  },
-  {
-    "english": "2",
-    "garo": "gni"
-  },
-  {
-    "english": "3",
-    "garo": "gittam"
-  },
-  {
-    "english": "4",
-    "garo": "bri"
-  },
-  {
-    "english": "5",
-    "garo": "bonga"
-  },
-  {
-    "english": "6",
-    "garo": "dok"
-  },
-  {
-    "english": "7",
-    "garo": "sni"
-  },
-  {
-    "english": "8",
-    "garo": "chet"
-  },
-  {
-    "english": "9",
-    "garo": "sku"
-  },
-  {
-    "english": "10",
-    "garo": "chiking"
   },
   {
     "english": "garo",
@@ -9788,10 +8620,6 @@
     "garo": "वह (पु.)"
   },
   {
-    "english": "garo",
-    "garo": "Ua"
-  },
-  {
     "english": "hindi",
     "garo": "वह (स्त्री.)"
   },
@@ -9804,10 +8632,6 @@
     "garo": "उसे (पु.)"
   },
   {
-    "english": "garo",
-    "garo": "Una"
-  },
-  {
     "english": "hindi",
     "garo": "उसे (स्त्री.)"
   },
@@ -9818,10 +8642,6 @@
   {
     "english": "hindi",
     "garo": "हम (श्रोता को छोड़कर)"
-  },
-  {
-    "english": "garo",
-    "garo": "Chinga"
   },
   {
     "english": "hindi",
@@ -9860,10 +8680,6 @@
     "garo": "यह"
   },
   {
-    "english": "garo",
-    "garo": "Ua"
-  },
-  {
     "english": "hindi",
     "garo": "वह"
   },
@@ -9874,14 +8690,6 @@
   {
     "english": "hindi",
     "garo": "ये"
-  },
-  {
-    "english": "garo",
-    "garo": "Uamang"
-  },
-  {
-    "english": "hindi",
-    "garo": "वे"
   },
   {
     "english": "garo",
@@ -10096,10 +8904,6 @@
     "garo": "ring·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "tus·na"
   },
@@ -10108,20 +8912,12 @@
     "garo": "tus·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "re·ang·na"
   },
   {
     "english": "root",
     "garo": "re·ang·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10146,10 +8942,6 @@
   {
     "english": "root",
     "garo": "re·ba·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10176,10 +8968,6 @@
     "garo": "agan·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "past",
     "garo": "agan·a"
   },
@@ -10198,10 +8986,6 @@
   {
     "english": "root",
     "garo": "ni·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10224,30 +9008,6 @@
     "garo": "on·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
-    "english": "past",
-    "garo": "on·aha"
-  },
-  {
-    "english": "continuous",
-    "garo": "on·enga"
-  },
-  {
-    "english": "future",
-    "garo": "on·gen"
-  },
-  {
-    "english": "command",
-    "garo": "on·bo"
-  },
-  {
-    "english": "past_question",
-    "garo": "on·ama?"
-  },
-  {
     "english": "garo",
     "garo": "ra·na"
   },
@@ -10256,20 +9016,12 @@
     "garo": "ra·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "dakna"
   },
   {
     "english": "root",
     "garo": "dak"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10296,10 +9048,6 @@
     "garo": "asong·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "command",
     "garo": "asong·bo"
   },
@@ -10310,10 +9058,6 @@
   {
     "english": "root",
     "garo": "kat"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10340,20 +9084,12 @@
     "garo": "re·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "bre·na"
   },
   {
     "english": "root",
     "garo": "bre·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10380,10 +9116,6 @@
     "garo": "pal·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "se·na"
   },
@@ -10392,20 +9124,12 @@
     "garo": "se·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "porai·na"
   },
   {
     "english": "root",
     "garo": "porai·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10432,20 +9156,12 @@
     "garo": "song·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "su·srong·na"
   },
   {
     "english": "root",
     "garo": "su·srong·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "garo",
@@ -10456,20 +9172,12 @@
     "garo": "de·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "den·na"
   },
   {
     "english": "root",
     "garo": "den·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10496,10 +9204,6 @@
     "garo": "cho·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "past",
     "garo": "cho·a"
   },
@@ -10524,10 +9228,6 @@
     "garo": "bil·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "past",
     "garo": "bil·a"
   },
@@ -10544,10 +9244,6 @@
     "garo": "jro·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "ga·ak·na"
   },
@@ -10556,20 +9252,12 @@
     "garo": "ga·ak·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "dakchak·na"
   },
   {
     "english": "root",
     "garo": "dakchak·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10592,10 +9280,6 @@
     "garo": "ong·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "negative",
     "garo": "ong·ja"
   },
@@ -10604,28 +9288,12 @@
     "garo": "donga"
   },
   {
-    "english": "root",
-    "garo": "dong"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
-    "english": "negative",
-    "garo": "dongja"
-  },
-  {
     "english": "garo",
     "garo": "dongdik·na"
   },
   {
     "english": "root",
     "garo": "dongdik·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "past",
@@ -10648,10 +9316,6 @@
     "garo": "ka·sa·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "past",
     "garo": "ka·sa·aha"
   },
@@ -10672,20 +9336,12 @@
     "garo": "bi·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "so·na"
   },
   {
     "english": "root",
     "garo": "so·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "garo",
@@ -10696,20 +9352,12 @@
     "garo": "rik·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "ge·na"
   },
   {
     "english": "root",
     "garo": "ge·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "garo",
@@ -10720,20 +9368,12 @@
     "garo": "gal·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "rim·na"
   },
   {
     "english": "root",
     "garo": "rim·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "garo",
@@ -10744,20 +9384,12 @@
     "garo": "dangtap·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "ka·ding·na"
   },
   {
     "english": "root",
     "garo": "ka·ding·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "garo",
@@ -10768,20 +9400,12 @@
     "garo": "grap·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "garo",
     "garo": "o·na"
   },
   {
     "english": "root",
     "garo": "o·"
-  },
-  {
-    "english": "type",
-    "garo": "verb"
   },
   {
     "english": "garo",
@@ -10792,20 +9416,8 @@
     "garo": "chip·"
   },
   {
-    "english": "type",
-    "garo": "verb"
-  },
-  {
     "english": "english",
     "garo": "to eat"
-  },
-  {
-    "english": "root",
-    "garo": "cha·"
-  },
-  {
-    "english": "simple",
-    "garo": "cha·na"
   },
   {
     "english": "continuous",
@@ -10814,10 +9426,6 @@
   {
     "english": "past",
     "garo": "cha·a"
-  },
-  {
-    "english": "past_alt",
-    "garo": "cha·aha"
   },
   {
     "english": "future",
@@ -10832,348 +9440,68 @@
     "garo": "cha·ama?"
   },
   {
-    "english": "present_question",
-    "garo": "cha·engma?"
-  },
-  {
     "english": "negation",
     "garo": "cha·ja"
-  },
-  {
-    "english": "perfect",
-    "garo": "cha·manjok"
-  },
-  {
-    "english": "I ate rice",
-    "garo": "Anga mi cha·a"
-  },
-  {
-    "english": "He is eating",
-    "garo": "Ua cha·enga"
-  },
-  {
-    "english": "Eat!",
-    "garo": "Cha·bo!"
-  },
-  {
-    "english": "Don't eat",
-    "garo": "Cha·ja"
   },
   {
     "english": "english",
     "garo": "to go"
   },
   {
-    "english": "root",
-    "garo": "re·ang·"
-  },
-  {
-    "english": "continuous",
-    "garo": "re·ang·enga"
-  },
-  {
-    "english": "past",
-    "garo": "re·ang·a"
-  },
-  {
-    "english": "future",
-    "garo": "re·ang·gen"
-  },
-  {
-    "english": "command",
-    "garo": "re·ang·bo"
-  },
-  {
     "english": "negation",
     "garo": "re·ang·ja"
-  },
-  {
-    "english": "He went",
-    "garo": "Ua re·ang·a"
   },
   {
     "english": "Where are you going?",
     "garo": "Na·a bano re·angenga?"
   },
   {
-    "english": "Go!",
-    "garo": "Re·ang·bo"
-  },
-  {
     "english": "english",
     "garo": "to come"
-  },
-  {
-    "english": "root",
-    "garo": "re·ba·"
-  },
-  {
-    "english": "continuous",
-    "garo": "re·ba·enga"
-  },
-  {
-    "english": "past",
-    "garo": "re·ba·a"
-  },
-  {
-    "english": "future",
-    "garo": "re·ba·gen"
-  },
-  {
-    "english": "command",
-    "garo": "re·ba·bo"
   },
   {
     "english": "negation",
     "garo": "re·ba·ja"
   },
   {
-    "english": "You came",
-    "garo": "Na·a re·ba·a"
-  },
-  {
-    "english": "They are coming",
-    "garo": "Uamang re·ba·enga"
-  },
-  {
-    "english": "Come!",
-    "garo": "Re·ba·bo!"
-  },
-  {
     "english": "english",
     "garo": "to do / to work / to make"
-  },
-  {
-    "english": "root",
-    "garo": "dak"
-  },
-  {
-    "english": "continuous",
-    "garo": "dakenga"
-  },
-  {
-    "english": "past",
-    "garo": "daka"
-  },
-  {
-    "english": "future",
-    "garo": "dakgen"
-  },
-  {
-    "english": "command",
-    "garo": "dakbo"
-  },
-  {
-    "english": "negation",
-    "garo": "dakja"
-  },
-  {
-    "english": "I did it",
-    "garo": "Anga daka"
-  },
-  {
-    "english": "Do it!",
-    "garo": "Dak·bo!"
-  },
-  {
-    "english": "a worker",
-    "garo": "Kam dakgipa"
   },
   {
     "english": "english",
     "garo": "to give / to offer"
   },
   {
-    "english": "root",
-    "garo": "on·"
-  },
-  {
-    "english": "continuous",
-    "garo": "on·enga"
-  },
-  {
-    "english": "past",
-    "garo": "on·aha"
-  },
-  {
-    "english": "future",
-    "garo": "on·gen"
-  },
-  {
-    "english": "command",
-    "garo": "on·bo"
-  },
-  {
-    "english": "past_question",
-    "garo": "on·ama?"
-  },
-  {
-    "english": "Give me water",
-    "garo": "Ang·na chi on·bo"
-  },
-  {
-    "english": "He gave me a book",
-    "garo": "Ua angna ki·tap on·a"
-  },
-  {
     "english": "english",
     "garo": "to be / to exist"
-  },
-  {
-    "english": "root",
-    "garo": "ong·"
   },
   {
     "english": "positive",
     "garo": "ong·a"
   },
   {
-    "english": "negative",
-    "garo": "ong·ja"
-  },
-  {
-    "english": "It is good",
-    "garo": "Nama ong·a"
-  },
-  {
-    "english": "It is not good",
-    "garo": "Nama ong·ja"
-  },
-  {
-    "english": "english",
-    "garo": "to have / to exist (possession)"
-  },
-  {
-    "english": "root",
-    "garo": "dong"
-  },
-  {
-    "english": "positive",
-    "garo": "donga"
-  },
-  {
-    "english": "negative",
-    "garo": "dongja"
-  },
-  {
-    "english": "I have a pen",
-    "garo": "Anga kolom donga"
-  },
-  {
-    "english": "I don't have time",
-    "garo": "A·gimiko dongja"
-  },
-  {
     "english": "rule",
     "garo": "SOV — Subject + Object + Verb"
-  },
-  {
-    "english": "I ate rice",
-    "garo": "Anga mi cha·a"
-  },
-  {
-    "english": "You drank water",
-    "garo": "Na·a chi ring·a"
   },
   {
     "english": "rule",
     "garo": "Add ·ja suffix to verb root"
   },
   {
-    "english": "don't eat / not eating",
-    "garo": "cha·ja"
-  },
-  {
-    "english": "is not",
-    "garo": "ong·ja"
-  },
-  {
-    "english": "don't have",
-    "garo": "dongja"
-  },
-  {
-    "english": "don't know",
-    "garo": "u·ija"
-  },
-  {
     "english": "rule",
     "garo": "[Possessive pronoun] + noun"
-  },
-  {
-    "english": "My house",
-    "garo": "Angni nok"
-  },
-  {
-    "english": "Your father",
-    "garo": "Nang·ni apa"
-  },
-  {
-    "english": "His / Her water",
-    "garo": "Uni chi"
   },
   {
     "english": "rule",
     "garo": "Add ·chi suffix to place noun"
   },
   {
-    "english": "at / to the market",
-    "garo": "bajal·chi"
-  },
-  {
-    "english": "at / to home",
-    "garo": "nok·chi"
-  },
-  {
-    "english": "at / to school",
-    "garo": "skul·chi"
-  },
-  {
     "english": "rule",
     "garo": "Add ·na suffix to pronoun/noun for indirect object"
   },
   {
-    "english": "to me / for me",
-    "garo": "ang·na"
-  },
-  {
-    "english": "to you / for you",
-    "garo": "nang·na"
-  },
-  {
-    "english": "to him / to her",
-    "garo": "una·na"
-  },
-  {
     "english": "rule",
     "garo": "Add 'ma?' at end of statement"
-  },
-  {
-    "english": "Are you eating?",
-    "garo": "Na·a cha·enga ma?"
-  },
-  {
-    "english": "Is there rice?",
-    "garo": "Mi donga ma?"
-  },
-  {
-    "english": "rule",
-    "garo": "NOUN + CLASSIFIER·NUMBER (not English order)"
-  },
-  {
-    "english": "one dog",
-    "garo": "achak mang·sa"
-  },
-  {
-    "english": "two books",
-    "garo": "ki·tap king·gni"
-  },
-  {
-    "english": "three people",
-    "garo": "manderang sak·gittam"
-  },
-  {
-    "english": "Hello / Greetings",
-    "garo": "Salam / Namengama"
   },
   {
     "english": "Good morning",
@@ -11196,14 +9524,6 @@
     "garo": "Re·ang·na / Nam·en·dongbo"
   },
   {
-    "english": "See you again",
-    "garo": "Pil·tai·grongna"
-  },
-  {
-    "english": "Welcome",
-    "garo": "Rimchaksoa"
-  },
-  {
     "english": "Please",
     "garo": "Ka·sapae"
   },
@@ -11212,40 +9532,16 @@
     "garo": "Mitela"
   },
   {
-    "english": "Sorry / Forgive me",
-    "garo": "Kema·bi·a"
-  },
-  {
     "english": "Excuse me",
     "garo": "Angko kema·watbo"
-  },
-  {
-    "english": "How are you?",
-    "garo": "Na·a namengama?"
   },
   {
     "english": "I am fine",
     "garo": "Anga namenga"
   },
   {
-    "english": "All is well",
-    "garo": "Nama ong·a"
-  },
-  {
     "english": "What is your name?",
     "garo": "Na·ani bimungara maia?"
-  },
-  {
-    "english": "My name is...",
-    "garo": "Angni bimungara..."
-  },
-  {
-    "english": "Where are you going?",
-    "garo": "Na·a bano re·angenga?"
-  },
-  {
-    "english": "Where are you from?",
-    "garo": "Na·a bano·ni?"
   },
   {
     "english": "I don't know",
@@ -11256,548 +9552,20 @@
     "garo": "Anga uia"
   },
   {
-    "english": "Help!",
-    "garo": "Madengma!"
-  },
-  {
-    "english": "Help me!",
-    "garo": "Dak·chak·bo!"
-  },
-  {
-    "english": "Call a doctor!",
-    "garo": "Doktor jong·bo!"
-  },
-  {
-    "english": "It hurts!",
-    "garo": "Mataha!"
-  },
-  {
-    "english": "Call police",
-    "garo": "Police jong·bo"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "pos",
-    "garo": "verb"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "pos",
-    "garo": "verb"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "pos",
-    "garo": "verb"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
     "english": "pos",
     "garo": "pronoun"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "type",
-    "garo": "ambiguous"
-  },
-  {
-    "english": "pos",
-    "garo": "verb"
-  },
-  {
-    "english": "pineapple",
-    "garo": "Anaros"
-  },
-  {
-    "english": "banana",
-    "garo": "Te·rik"
-  },
-  {
-    "english": "orange",
-    "garo": "Narang"
-  },
-  {
-    "english": "guava",
-    "garo": "Goaba"
-  },
-  {
-    "english": "papaya",
-    "garo": "Modu"
-  },
-  {
-    "english": "jackfruit",
-    "garo": "Te·brong"
-  },
-  {
-    "english": "mango",
-    "garo": "Te·gachu"
-  },
-  {
-    "english": "lychee",
-    "garo": "Letchu"
-  },
-  {
-    "english": "coconut",
-    "garo": "Narikel"
-  },
-  {
-    "english": "watermelon",
-    "garo": "Te·e raja"
-  },
-  {
-    "english": "lemon",
-    "garo": "Kakji"
-  },
-  {
-    "english": "pomegranate",
-    "garo": "Dalim"
-  },
-  {
-    "english": "sugar cane",
-    "garo": "Ge·rit"
-  },
-  {
-    "english": "tamarind",
-    "garo": "Che·eng"
-  },
-  {
-    "english": "pear",
-    "garo": "Naspati"
-  },
-  {
-    "english": "custard apple",
-    "garo": "Atapol"
-  },
-  {
-    "english": "pomelo",
-    "garo": "Narang·gira"
-  },
-  {
-    "english": "blackberry",
-    "garo": "Jam"
-  },
-  {
-    "english": "grapes",
-    "garo": "Drakka"
-  },
-  {
-    "english": "wild berry",
-    "garo": "Bol·meseng"
-  },
-  {
-    "english": "pumpkin",
-    "garo": "Gominda"
-  },
-  {
-    "english": "potato",
-    "garo": "Alu"
-  },
-  {
-    "english": "tomato",
-    "garo": "Baring belati"
-  },
-  {
-    "english": "brinjal",
-    "garo": "Baring"
-  },
-  {
-    "english": "bottle gourd",
-    "garo": "Lau"
-  },
-  {
-    "english": "bitter gourd",
-    "garo": "Karela"
-  },
-  {
-    "english": "bamboo shoot",
-    "garo": "Me·a"
-  },
-  {
-    "english": "garlic",
-    "garo": "Rasin·gipok"
-  },
-  {
-    "english": "ginger",
-    "garo": "Re·ching"
-  },
-  {
-    "english": "chilli",
-    "garo": "Jal·ik"
-  },
-  {
-    "english": "okra",
-    "garo": "Dorai"
-  },
-  {
-    "english": "cucumber",
-    "garo": "Te·e"
-  },
-  {
-    "english": "mustard leaves",
-    "garo": "Besual"
-  },
-  {
-    "english": "spinach",
-    "garo": "Palong·sam"
-  },
-  {
-    "english": "broad beans",
-    "garo": "Nakap"
-  },
-  {
-    "english": "yam",
-    "garo": "Ta·a"
-  },
-  {
-    "english": "sweet potato",
-    "garo": "Ta·we"
-  },
-  {
-    "english": "colocasia",
-    "garo": "Thabisa"
-  },
-  {
-    "english": "onion",
-    "garo": "Rasin"
-  },
-  {
-    "english": "cabbage",
-    "garo": "Kobi"
-  },
-  {
-    "english": "cauliflower",
-    "garo": "Pul kobi"
-  },
-  {
-    "english": "carrot",
-    "garo": "Kajol"
-  },
-  {
-    "english": "radish",
-    "garo": "Mula"
-  },
-  {
-    "english": "drumstick",
-    "garo": "Sojona"
-  },
-  {
-    "english": "peas",
-    "garo": "Motor"
-  },
-  {
-    "english": "love",
-    "garo": "Ka·saa"
-  },
-  {
-    "english": "happiness",
-    "garo": "Kusi"
-  },
-  {
-    "english": "sadness",
-    "garo": "Duk"
-  },
-  {
-    "english": "anger",
-    "garo": "Ka·o nanga"
-  },
-  {
-    "english": "fear",
-    "garo": "Kenani"
-  },
-  {
-    "english": "hatred",
-    "garo": "Mittera"
-  },
-  {
-    "english": "hope",
-    "garo": "Ka·donga"
   },
   {
     "english": "peace",
     "garo": "Tom·toma"
   },
   {
-    "english": "trust",
-    "garo": "Bebe ra·a"
-  },
-  {
-    "english": "jealousy",
-    "garo": "Mikboka"
-  },
-  {
-    "english": "shame",
-    "garo": "Kracha·a"
-  },
-  {
-    "english": "pride",
-    "garo": "Gaora"
-  },
-  {
-    "english": "surprise",
-    "garo": "Jagokani"
-  },
-  {
-    "english": "worry",
-    "garo": "Gisik ding·a"
-  },
-  {
-    "english": "patience",
-    "garo": "Chakchikani"
-  },
-  {
     "english": "mercy",
     "garo": "Kema"
   },
   {
-    "english": "satisfaction",
-    "garo": "Chu·ongnika"
-  },
-  {
-    "english": "loneliness",
-    "garo": "Saksan"
-  },
-  {
-    "english": "grateful",
-    "garo": "Mitela"
-  },
-  {
-    "english": "courage",
-    "garo": "Ka·rakani"
-  },
-  {
-    "english": "dog",
-    "garo": "Achak"
-  },
-  {
-    "english": "cat",
-    "garo": "Menggo"
-  },
-  {
-    "english": "cow",
-    "garo": "Matchu"
-  },
-  {
-    "english": "elephant",
-    "garo": "Monga"
-  },
-  {
-    "english": "tiger",
-    "garo": "Matcha"
-  },
-  {
-    "english": "deer",
-    "garo": "Matchok"
-  },
-  {
-    "english": "pig",
-    "garo": "Wak"
-  },
-  {
-    "english": "goat",
-    "garo": "Do·bok"
-  },
-  {
-    "english": "horse",
-    "garo": "Gure"
-  },
-  {
-    "english": "monkey",
-    "garo": "Makre"
-  },
-  {
-    "english": "snake",
-    "garo": "Chipu"
-  },
-  {
-    "english": "rat",
-    "garo": "Mese"
-  },
-  {
-    "english": "buffalo",
-    "garo": "Matma"
-  },
-  {
-    "english": "bear",
-    "garo": "Matmak"
-  },
-  {
-    "english": "rabbit",
-    "garo": "Sapau"
-  },
-  {
-    "english": "crow",
-    "garo": "Do·ka"
-  },
-  {
-    "english": "hen",
-    "garo": "Do·bit"
-  },
-  {
-    "english": "rooster",
-    "garo": "Do·bi"
-  },
-  {
-    "english": "duck",
-    "garo": "Do·gep"
-  },
-  {
-    "english": "owl",
-    "garo": "Do·po"
-  },
-  {
-    "english": "eagle",
-    "garo": "Do·reng"
-  },
-  {
-    "english": "parrot",
-    "garo": "Do·sik"
-  },
-  {
-    "english": "pigeon",
-    "garo": "Do·bak"
-  },
-  {
-    "english": "peacock",
-    "garo": "Do·de"
-  },
-  {
-    "english": "sparrow",
-    "garo": "Do·matchi"
-  },
-  {
-    "english": "eat",
-    "garo": "Cha·a"
-  },
-  {
-    "english": "drink",
-    "garo": "Ringa"
-  },
-  {
-    "english": "sleep",
-    "garo": "Tusia"
-  },
-  {
-    "english": "walk",
-    "garo": "Re·a"
-  },
-  {
-    "english": "run",
-    "garo": "Kat·a"
-  },
-  {
-    "english": "speak",
-    "garo": "Agana"
-  },
-  {
     "english": "listen",
     "garo": "Knachika"
-  },
-  {
-    "english": "see / look / watch",
-    "garo": "Nia"
-  },
-  {
-    "english": "give",
-    "garo": "On·a"
-  },
-  {
-    "english": "take",
-    "garo": "Ra·a"
-  },
-  {
-    "english": "work",
-    "garo": "Dak·a"
-  },
-  {
-    "english": "play",
-    "garo": "Kal·a"
-  },
-  {
-    "english": "sit",
-    "garo": "Asong·a"
-  },
-  {
-    "english": "stand",
-    "garo": "Chadenga"
-  },
-  {
-    "english": "laugh",
-    "garo": "Ka·dinga"
-  },
-  {
-    "english": "cry",
-    "garo": "Grap·a"
-  },
-  {
-    "english": "buy",
-    "garo": "Brea"
-  },
-  {
-    "english": "sell",
-    "garo": "Pala"
-  },
-  {
-    "english": "come",
-    "garo": "Re·ba·a"
-  },
-  {
-    "english": "go",
-    "garo": "Re·anga"
-  },
-  {
-    "english": "father",
-    "garo": "Pa / Apa"
-  },
-  {
-    "english": "mother",
-    "garo": "Ma / Ama"
   },
   {
     "english": "son",
@@ -11808,30 +9576,6 @@
     "garo": "De·me·chik"
   },
   {
-    "english": "grandmother",
-    "garo": "Ambichang"
-  },
-  {
-    "english": "elder brother",
-    "garo": "Ada"
-  },
-  {
-    "english": "elder sister",
-    "garo": "Abi"
-  },
-  {
-    "english": "younger sibling",
-    "garo": "Jong / No"
-  },
-  {
-    "english": "uncle",
-    "garo": "Mama / Pabok"
-  },
-  {
-    "english": "aunt",
-    "garo": "Mani"
-  },
-  {
     "english": "friend",
     "garo": "Ripsak / Ripeng"
   },
@@ -11840,140 +9584,8 @@
     "garo": "Atchu"
   },
   {
-    "english": "hindi",
-    "garo": "दादा / नाना"
-  },
-  {
-    "english": "head",
-    "garo": "Sko"
-  },
-  {
-    "english": "eye",
-    "garo": "Mikron"
-  },
-  {
-    "english": "ear",
-    "garo": "Nachil"
-  },
-  {
-    "english": "nose",
-    "garo": "Gingting"
-  },
-  {
-    "english": "mouth",
-    "garo": "Ku·sik"
-  },
-  {
-    "english": "hand",
-    "garo": "Jak"
-  },
-  {
-    "english": "leg",
-    "garo": "Ja·a"
-  },
-  {
-    "english": "hair",
-    "garo": "Kni"
-  },
-  {
-    "english": "stomach",
-    "garo": "Ok"
-  },
-  {
-    "english": "teeth",
-    "garo": "Wagam"
-  },
-  {
-    "english": "tongue",
-    "garo": "Sre"
-  },
-  {
-    "english": "skin",
-    "garo": "Bigil"
-  },
-  {
-    "english": "heart",
-    "garo": "Ka·tong"
-  },
-  {
-    "english": "red",
-    "garo": "Gitchak"
-  },
-  {
-    "english": "white",
-    "garo": "Gipok"
-  },
-  {
-    "english": "black",
-    "garo": "Gisim"
-  },
-  {
-    "english": "green",
-    "garo": "Tangsek"
-  },
-  {
-    "english": "blue",
-    "garo": "Tang·sim"
-  },
-  {
-    "english": "yellow",
-    "garo": "Rimit"
-  },
-  {
-    "english": "hello / greetings",
-    "garo": "Salam / Namengama"
-  },
-  {
-    "english": "how are you?",
-    "garo": "Na·a namengama?"
-  },
-  {
-    "english": "i am fine",
-    "garo": "Anga namenga."
-  },
-  {
-    "english": "thank you",
-    "garo": "Mittela."
-  },
-  {
     "english": "what is your name?",
     "garo": "Na·a ni bimungara maia?"
-  },
-  {
-    "english": "my name is...",
-    "garo": "Angni bimungara..."
-  },
-  {
-    "english": "where are you going?",
-    "garo": "Na·a bano re·angenga?"
-  },
-  {
-    "english": "good morning",
-    "garo": "Pringnam."
-  },
-  {
-    "english": "good night",
-    "garo": "Walnam."
-  },
-  {
-    "english": "yes",
-    "garo": "Oe"
-  },
-  {
-    "english": "no",
-    "garo": "Ong·ja"
-  },
-  {
-    "english": "please",
-    "garo": "Ka·sapae."
-  },
-  {
-    "english": "i don't know",
-    "garo": "Anga uija."
-  },
-  {
-    "english": "come here",
-    "garo": "Ianona re·babo."
   },
   {
     "english": "garo",
@@ -11984,392 +9596,36 @@
     "garo": "Touja"
   },
   {
-    "english": "sweet",
-    "garo": "Chi·a"
-  },
-  {
-    "english": "sour",
-    "garo": "Mesenga"
-  },
-  {
-    "english": "bitter",
-    "garo": "Ka·a"
-  },
-  {
-    "english": "salty",
-    "garo": "Kari nanga"
-  },
-  {
-    "english": "salt (noun)",
-    "garo": "Kari"
-  },
-  {
-    "english": "spicy",
-    "garo": "Jal·ik saa"
-  },
-  {
-    "english": "astringent",
-    "garo": "Ka·baka"
-  },
-  {
-    "english": "bland / tasteless",
-    "garo": "Chibroka"
-  },
-  {
-    "english": "smelly / stinky",
-    "garo": "Senga"
-  },
-  {
-    "english": "to fall (from height)",
-    "garo": "Ga·aka"
-  },
-  {
-    "english": "to fall (stumble/trip)",
-    "garo": "Nang·ting·a"
-  },
-  {
-    "english": "to fall (slip)",
-    "garo": "Ga·soltap"
-  },
-  {
-    "english": "to fall (collapse)",
-    "garo": "Be·a"
-  },
-  {
-    "english": "to drop (something)",
-    "garo": "Ga·akata"
-  },
-  {
-    "english": "to roll",
-    "garo": "Romroma"
-  },
-  {
-    "english": "to jump",
-    "garo": "Bildoa"
-  },
-  {
-    "english": "to shake",
-    "garo": "Moa"
-  },
-  {
-    "english": "to move (something)",
-    "garo": "De·jita"
-  },
-  {
-    "english": "to feel (general)",
-    "garo": "Ui·a"
-  },
-  {
-    "english": "to feel (emotionally)",
-    "garo": "Gisik·o nanga"
-  },
-  {
-    "english": "to hurt (pain)",
-    "garo": "Sa·dika"
-  },
-  {
-    "english": "to hurt (injure)",
-    "garo": "Mata"
-  },
-  {
-    "english": "to hurt (feelings)",
-    "garo": "Saknaata"
-  },
-  {
-    "english": "to touch",
-    "garo": "Dangtapa"
-  },
-  {
-    "english": "to pinch",
-    "garo": "Se·eta"
-  },
-  {
-    "english": "to scratch (body)",
-    "garo": "Brika"
-  },
-  {
-    "english": "to scratch (object)",
-    "garo": "Siksika"
-  },
-  {
-    "english": "to itch",
-    "garo": "Ka·kita"
-  },
-  {
-    "english": "to burn (sting like chili)",
-    "garo": "So·soa"
-  },
-  {
-    "english": "to heal",
-    "garo": "An·sengpila"
-  },
-  {
-    "english": "open",
-    "garo": "Oa"
-  },
-  {
-    "english": "close",
-    "garo": "Chip·a"
-  },
-  {
     "english": "push",
     "garo": "Jit·pak·a"
-  },
-  {
-    "english": "pull / drive",
-    "garo": "Sal·a (⚠ same word)"
-  },
-  {
-    "english": "break (glass/stick)",
-    "garo": "Be·ata"
-  },
-  {
-    "english": "tear (paper/cloth)",
-    "garo": "Gritt·a"
   },
   {
     "english": "throw",
     "garo": "Gal·a / Goata"
   },
   {
-    "english": "catch",
-    "garo": "Rim·a"
-  },
-  {
-    "english": "wash",
-    "garo": "Su·srong·a"
-  },
-  {
     "english": "clean",
     "garo": "Rongtal·ata"
-  },
-  {
-    "english": "sun",
-    "garo": "Sal"
-  },
-  {
-    "english": "moon",
-    "garo": "Jajong"
-  },
-  {
-    "english": "star",
-    "garo": "Aski"
-  },
-  {
-    "english": "sky",
-    "garo": "Salgi"
-  },
-  {
-    "english": "cloud",
-    "garo": "Aram"
-  },
-  {
-    "english": "rain",
-    "garo": "Mikka"
-  },
-  {
-    "english": "wind",
-    "garo": "Balwa"
-  },
-  {
-    "english": "thunder",
-    "garo": "Goera"
-  },
-  {
-    "english": "lightning",
-    "garo": "Mikka·kimma"
-  },
-  {
-    "english": "fire",
-    "garo": "Wa·al"
-  },
-  {
-    "english": "water",
-    "garo": "Chi"
-  },
-  {
-    "english": "earth / soil",
-    "garo": "A·a"
-  },
-  {
-    "english": "stone",
-    "garo": "Ro·ong"
-  },
-  {
-    "english": "sand",
-    "garo": "An·cheng"
-  },
-  {
-    "english": "river",
-    "garo": "Chibima"
-  },
-  {
-    "english": "mountain",
-    "garo": "A·bri"
-  },
-  {
-    "english": "forest",
-    "garo": "Buring"
-  },
-  {
-    "english": "tree",
-    "garo": "Bol"
-  },
-  {
-    "english": "flower",
-    "garo": "Bibal"
-  },
-  {
-    "english": "leaf",
-    "garo": "Bijak"
-  },
-  {
-    "english": "it is raining",
-    "garo": "Mikka ring·a"
-  },
-  {
-    "english": "it is sunny",
-    "garo": "Sal·seng·a"
-  },
-  {
-    "english": "it is cold",
-    "garo": "Sin·a"
-  },
-  {
-    "english": "it is hot",
-    "garo": "Ding·a"
-  },
-  {
-    "english": "flood",
-    "garo": "Mikka·brimba"
-  },
-  {
-    "english": "drought",
-    "garo": "Ran·kari"
-  },
-  {
-    "english": "earthquake",
-    "garo": "A·a·moa"
-  },
-  {
-    "english": "fog / mist",
-    "garo": "Ong·chel"
-  },
-  {
-    "english": "rainbow",
-    "garo": "Gitchak·rong jal·ang"
-  },
-  {
-    "english": "sunrise",
-    "garo": "Sal·aram"
-  },
-  {
-    "english": "sunset",
-    "garo": "Sal·ikram"
-  },
-  {
-    "english": "house",
-    "garo": "Nok"
-  },
-  {
-    "english": "door",
-    "garo": "Do·ga"
-  },
-  {
-    "english": "window",
-    "garo": "Kelki"
-  },
-  {
-    "english": "bed",
-    "garo": "Palang"
-  },
-  {
-    "english": "chair",
-    "garo": "Chokki"
-  },
-  {
-    "english": "table",
-    "garo": "Mez"
-  },
-  {
-    "english": "plate",
-    "garo": "Tala"
   },
   {
     "english": "cup",
     "garo": "Piala"
   },
   {
-    "english": "spoon",
-    "garo": "Chamus"
-  },
-  {
-    "english": "knife",
-    "garo": "Kettal"
-  },
-  {
     "english": "pot",
     "garo": "Dik·ke"
-  },
-  {
-    "english": "broom",
-    "garo": "Sal·re·at"
-  },
-  {
-    "english": "clothes",
-    "garo": "Ba·ra"
-  },
-  {
-    "english": "soap",
-    "garo": "Sabon"
-  },
-  {
-    "english": "mirror",
-    "garo": "Janera"
-  },
-  {
-    "english": "comb",
-    "garo": "Ken·chong"
-  },
-  {
-    "english": "lamp",
-    "garo": "Chakki"
-  },
-  {
-    "english": "key",
-    "garo": "Chabi"
   },
   {
     "english": "bag",
     "garo": "Jol·a"
   },
   {
-    "english": "book",
-    "garo": "Ki·tap"
-  },
-  {
     "english": "axe",
     "garo": "Rua (⚠ also means 'to pour' as verb)"
   },
   {
-    "english": "day",
-    "garo": "Sal"
-  },
-  {
-    "english": "night",
-    "garo": "Wal"
-  },
-  {
-    "english": "morning",
-    "garo": "Pring"
-  },
-  {
     "english": "noon",
     "garo": "Saljatchi"
-  },
-  {
-    "english": "evening",
-    "garo": "Attam"
   },
   {
     "english": "today",
@@ -12384,136 +9640,8 @@
     "garo": "Knal"
   },
   {
-    "english": "now",
-    "garo": "Da·o"
-  },
-  {
-    "english": "always",
-    "garo": "Pangnan"
-  },
-  {
-    "english": "sometimes",
-    "garo": "Gisep gisep"
-  },
-  {
-    "english": "week",
-    "garo": "Anti"
-  },
-  {
-    "english": "month",
-    "garo": "Ja"
-  },
-  {
-    "english": "year",
-    "garo": "Bilsi"
-  },
-  {
     "english": "time",
     "garo": "Somai"
-  },
-  {
-    "english": "day after tomorrow",
-    "garo": "Me·nnalo"
-  },
-  {
-    "english": "day before yesterday",
-    "garo": "Me·si·ja"
-  },
-  {
-    "english": "later",
-    "garo": "Ja·mano"
-  },
-  {
-    "english": "before",
-    "garo": "Skang"
-  },
-  {
-    "english": "early",
-    "garo": "Bakkan / Pring·seng"
-  },
-  {
-    "english": "late",
-    "garo": "Ja·man·chak·a"
-  },
-  {
-    "english": "never",
-    "garo": "Pangnan·ba (ja)"
-  },
-  {
-    "english": "shirt",
-    "garo": "Chola"
-  },
-  {
-    "english": "traditional wrap (women)",
-    "garo": "Dakmanda"
-  },
-  {
-    "english": "shawl",
-    "garo": "Rekkeng"
-  },
-  {
-    "english": "turban",
-    "garo": "Kotip"
-  },
-  {
-    "english": "shoes",
-    "garo": "Juta"
-  },
-  {
-    "english": "socks",
-    "garo": "Moja"
-  },
-  {
-    "english": "hat",
-    "garo": "Tupi"
-  },
-  {
-    "english": "ring",
-    "garo": "Jakstem"
-  },
-  {
-    "english": "necklace",
-    "garo": "Ripok"
-  },
-  {
-    "english": "earring",
-    "garo": "Nachil·ganna"
-  },
-  {
-    "english": "big",
-    "garo": "Dal·a"
-  },
-  {
-    "english": "small",
-    "garo": "Chon·a"
-  },
-  {
-    "english": "long",
-    "garo": "Ro·a"
-  },
-  {
-    "english": "short",
-    "garo": "Kan·dik·a"
-  },
-  {
-    "english": "tall",
-    "garo": "Chu·a"
-  },
-  {
-    "english": "new",
-    "garo": "Gital"
-  },
-  {
-    "english": "old",
-    "garo": "Gitcham"
-  },
-  {
-    "english": "good",
-    "garo": "Nama"
-  },
-  {
-    "english": "bad",
-    "garo": "Namja"
   },
   {
     "english": "fast",
@@ -12524,1900 +9652,44 @@
     "garo": "Ka·sna"
   },
   {
-    "english": "rich",
-    "garo": "Nokma / Man·e·cha·gipa"
-  },
-  {
-    "english": "poor",
-    "garo": "Kangal"
-  },
-  {
-    "english": "dry",
-    "garo": "Ran·a"
-  },
-  {
-    "english": "wet",
-    "garo": "Chon·a / Sosia"
-  },
-  {
-    "english": "tasty",
-    "garo": "Toa"
-  },
-  {
-    "english": "not tasty",
-    "garo": "Touja"
-  },
-  {
-    "english": "village",
-    "garo": "Song"
-  },
-  {
-    "english": "town",
-    "garo": "Songjinma"
-  },
-  {
-    "english": "school",
-    "garo": "Skul"
-  },
-  {
-    "english": "market",
-    "garo": "Bajal / Anti"
-  },
-  {
-    "english": "road",
-    "garo": "Rama"
-  },
-  {
-    "english": "field",
-    "garo": "A·ba"
-  },
-  {
-    "english": "office",
-    "garo": "Kam·ka·chakani"
-  },
-  {
-    "english": "church",
-    "garo": "Gilja·nok"
-  },
-  {
-    "english": "shop",
-    "garo": "Dokan"
-  },
-  {
-    "english": "hospital",
-    "garo": "Hospital / Sam·nok"
-  },
-  {
-    "english": "up",
-    "garo": "Kosak"
-  },
-  {
-    "english": "down",
-    "garo": "Ka·ma"
-  },
-  {
-    "english": "left",
-    "garo": "Jak·asi"
-  },
-  {
-    "english": "right",
-    "garo": "Jak·ra"
-  },
-  {
-    "english": "front",
-    "garo": "Mikkang"
-  },
-  {
-    "english": "back",
-    "garo": "Janggila"
-  },
-  {
-    "english": "inside",
-    "garo": "Ning·o"
-  },
-  {
-    "english": "outside",
-    "garo": "A·pal"
-  },
-  {
-    "english": "far",
-    "garo": "Chel·a"
-  },
-  {
-    "english": "near",
-    "garo": "Sepang"
-  },
-  {
-    "english": "north",
-    "garo": "Salgro"
-  },
-  {
-    "english": "south",
-    "garo": "Salgipeng"
-  },
-  {
-    "english": "east",
-    "garo": "Salaram"
-  },
-  {
-    "english": "west",
-    "garo": "Saliram"
-  },
-  {
-    "english": "center",
-    "garo": "Jatchi"
-  },
-  {
-    "english": "side",
-    "garo": "Rikam"
-  },
-  {
-    "english": "farmer",
-    "garo": "Game·cha·gipa"
-  },
-  {
-    "english": "teacher",
-    "garo": "Skigipa"
-  },
-  {
-    "english": "student",
-    "garo": "Porai·gipa"
-  },
-  {
-    "english": "doctor",
-    "garo": "Doctor / Sam·on·gipa"
-  },
-  {
-    "english": "nurse",
-    "garo": "Nurse"
-  },
-  {
-    "english": "driver",
-    "garo": "Gari·chalai·gipa"
-  },
-  {
-    "english": "carpenter",
-    "garo": "Bal·sol·gipa"
-  },
-  {
-    "english": "blacksmith",
-    "garo": "Sil·dakgipa"
-  },
-  {
-    "english": "shopkeeper",
-    "garo": "Dokan·dakgipa"
-  },
-  {
-    "english": "tailor",
-    "garo": "Ba·ra·sikgipa"
-  },
-  {
-    "english": "worker / laborer",
-    "garo": "Kam·ka·gipa"
-  },
-  {
-    "english": "king",
-    "garo": "Raja"
-  },
-  {
-    "english": "chief",
-    "garo": "Nokma"
-  },
-  {
-    "english": "police",
-    "garo": "Pulis"
-  },
-  {
-    "english": "soldier",
-    "garo": "Sipai"
-  },
-  {
-    "english": "postman",
-    "garo": "Chiti·ra·ba·gipa"
-  },
-  {
     "english": "cook",
     "garo": "Song·timgipa"
-  },
-  {
-    "english": "leader",
-    "garo": "Dilgipa"
-  },
-  {
-    "english": "preacher",
-    "garo": "Aganprakgipa"
-  },
-  {
-    "english": "thief",
-    "garo": "Cha·u"
-  },
-  {
-    "english": "guest",
-    "garo": "Sokgipa"
-  },
-  {
-    "english": "stranger",
-    "garo": "Agital"
-  },
-  {
-    "english": "school",
-    "garo": "Skul"
-  },
-  {
-    "english": "class",
-    "garo": "Klas"
-  },
-  {
-    "english": "book",
-    "garo": "Ki·tap"
-  },
-  {
-    "english": "paper",
-    "garo": "Lekka"
-  },
-  {
-    "english": "pen",
-    "garo": "Pen"
-  },
-  {
-    "english": "pencil",
-    "garo": "Pencil"
-  },
-  {
-    "english": "ink",
-    "garo": "Kali"
-  },
-  {
-    "english": "lesson",
-    "garo": "Porani"
-  },
-  {
-    "english": "letter (alphabet)",
-    "garo": "Oikor"
-  },
-  {
-    "english": "word",
-    "garo": "Katta"
-  },
-  {
-    "english": "sentence",
-    "garo": "Katta·ku·chik"
-  },
-  {
-    "english": "question",
-    "garo": "Sing·ani"
   },
   {
     "english": "answer",
     "garo": "Aganchakani"
   },
   {
-    "english": "test / exam",
-    "garo": "Porika"
-  },
-  {
-    "english": "knowledge",
-    "garo": "Gni / Ma·siani"
-  },
-  {
-    "english": "wisdom",
-    "garo": "Seng·ani"
-  },
-  {
-    "english": "story",
-    "garo": "Golpo"
-  },
-  {
-    "english": "map",
-    "garo": "Map"
-  },
-  {
-    "english": "picture",
-    "garo": "Noksa"
-  },
-  {
-    "english": "mistake",
-    "garo": "Gualani"
-  },
-  {
-    "english": "medicine",
-    "garo": "Sam"
-  },
-  {
-    "english": "pain",
-    "garo": "Sa·dika"
-  },
-  {
-    "english": "fever",
-    "garo": "Sin··ding··a"
-  },
-  {
-    "english": "cough",
-    "garo": "Gusua"
-  },
-  {
-    "english": "headache",
-    "garo": "Sko·saa"
-  },
-  {
-    "english": "stomachache",
-    "garo": "Ok·saa"
-  },
-  {
-    "english": "wound / injury",
-    "garo": "Mata"
-  },
-  {
-    "english": "blood",
-    "garo": "An·chi"
-  },
-  {
-    "english": "bone",
-    "garo": "Greng"
-  },
-  {
-    "english": "healthy",
-    "garo": "An·senga"
-  },
-  {
-    "english": "weak",
-    "garo": "Bilgri"
-  },
-  {
-    "english": "strong",
-    "garo": "Bilaka"
-  },
-  {
-    "english": "blind",
-    "garo": "Mikgri"
-  },
-  {
-    "english": "deaf",
-    "garo": "Nachil·kala"
-  },
-  {
-    "english": "mute",
-    "garo": "Ku·ma"
-  },
-  {
-    "english": "poison",
-    "garo": "Bisi"
-  },
-  {
-    "english": "swelling",
-    "garo": "Ripoma"
-  },
-  {
-    "english": "itch",
-    "garo": "Ka·kita"
-  },
-  {
-    "english": "pill",
-    "garo": "Sam"
-  },
-  {
-    "english": "axe",
-    "garo": "Rua (⚠ verb: to pour)"
-  },
-  {
-    "english": "knife (small)",
-    "garo": "Kettal"
-  },
-  {
-    "english": "sword / machete",
-    "garo": "Mil·am"
-  },
-  {
-    "english": "hoe",
-    "garo": "Gitchima / kodal"
-  },
-  {
-    "english": "hammer",
-    "garo": "Martul"
-  },
-  {
-    "english": "nail (metal)",
-    "garo": "Gajal / Gojal"
-  },
-  {
-    "english": "rope",
-    "garo": "Budu"
-  },
-  {
-    "english": "basket (backpack)",
-    "garo": "Kokcheng"
-  },
-  {
-    "english": "umbrella",
-    "garo": "Satta"
-  },
-  {
-    "english": "ladder",
-    "garo": "Jang·ke"
-  },
-  {
     "english": "bridge",
     "garo": "Jal·ang / dolong"
-  },
-  {
-    "english": "boat",
-    "garo": "Ring"
-  },
-  {
-    "english": "life",
-    "garo": "Janggi"
-  },
-  {
-    "english": "death",
-    "garo": "Sia"
-  },
-  {
-    "english": "truth",
-    "garo": "Bebe"
-  },
-  {
-    "english": "lie",
-    "garo": "Tol·a"
-  },
-  {
-    "english": "war",
-    "garo": "Dakgrikani"
-  },
-  {
-    "english": "peace",
-    "garo": "Tom·tomani"
-  },
-  {
-    "english": "dream",
-    "garo": "Jumang"
-  },
-  {
-    "english": "sound",
-    "garo": "Gam·a"
-  },
-  {
-    "english": "voice",
-    "garo": "Ku·rang"
-  },
-  {
-    "english": "light",
-    "garo": "Seng·a"
-  },
-  {
-    "english": "darkness",
-    "garo": "Andala"
-  },
-  {
-    "english": "ghost",
-    "garo": "Me·mang"
-  },
-  {
-    "english": "tradition",
-    "garo": "Dakbewal"
-  },
-  {
-    "english": "language",
-    "garo": "Ku·sik"
-  },
-  {
-    "english": "shadow",
-    "garo": "Jagring"
-  },
-  {
-    "english": "all",
-    "garo": "Gimikan"
-  },
-  {
-    "english": "some",
-    "garo": "Mitam"
-  },
-  {
-    "english": "many / much",
-    "garo": "Bang·a"
-  },
-  {
-    "english": "few / little",
-    "garo": "On·titi"
-  },
-  {
-    "english": "more",
-    "garo": "Bang·bata"
-  },
-  {
-    "english": "less",
-    "garo": "Komia"
-  },
-  {
-    "english": "empty",
-    "garo": "Bangbang"
-  },
-  {
-    "english": "full",
-    "garo": "Gapa"
-  },
-  {
-    "english": "enough",
-    "garo": "Chu·onga"
-  },
-  {
-    "english": "rice (uncooked)",
-    "garo": "Merong"
-  },
-  {
-    "english": "rice (cooked)",
-    "garo": "Mi"
-  },
-  {
-    "english": "salt",
-    "garo": "Kari"
-  },
-  {
-    "english": "oil",
-    "garo": "To"
-  },
-  {
-    "english": "water",
-    "garo": "Chi"
-  },
-  {
-    "english": "sugar",
-    "garo": "Chini"
-  },
-  {
-    "english": "milk",
-    "garo": "Dutt"
-  },
-  {
-    "english": "egg",
-    "garo": "Do·chi"
-  },
-  {
-    "english": "meat",
-    "garo": "Be·en"
-  },
-  {
-    "english": "fish",
-    "garo": "Na·tok"
-  },
-  {
-    "english": "dry fish",
-    "garo": "Na·kam"
-  },
-  {
-    "english": "turmeric",
-    "garo": "Holdi"
-  },
-  {
-    "english": "garlic",
-    "garo": "Rasin·gipok"
-  },
-  {
-    "english": "ginger",
-    "garo": "Re·ching"
-  },
-  {
-    "english": "onion",
-    "garo": "Rasin"
-  },
-  {
-    "english": "chili",
-    "garo": "Jal·ik"
-  },
-  {
-    "english": "lentils",
-    "garo": "Dalli"
-  },
-  {
-    "english": "bread",
-    "garo": "Ruti"
-  },
-  {
-    "english": "tea",
-    "garo": "Cha"
-  },
-  {
-    "english": "spices (general)",
-    "garo": "Mosila"
-  },
-  {
-    "english": "to cook",
-    "garo": "Song·a"
-  },
-  {
-    "english": "to fry",
-    "garo": "Jo·a"
-  },
-  {
-    "english": "to boil",
-    "garo": "Rita"
-  },
-  {
-    "english": "to bake / roast",
-    "garo": "Ang·a"
-  },
-  {
-    "english": "to stir",
-    "garo": "Mo·ila"
-  },
-  {
-    "english": "pot",
-    "garo": "Me.dik"
-  },
-  {
-    "english": "pan",
-    "garo": "Sospen"
-  },
-  {
-    "english": "plate",
-    "garo": "Tala"
-  },
-  {
-    "english": "cup",
-    "garo": "Cup"
-  },
-  {
-    "english": "knife",
-    "garo": "Kettal"
-  },
-  {
-    "english": "firewood",
-    "garo": "Am·bol"
-  },
-  {
-    "english": "road / path",
-    "garo": "Rama"
-  },
-  {
-    "english": "car",
-    "garo": "Gari"
-  },
-  {
-    "english": "bicycle",
-    "garo": "Rengrengsil"
-  },
-  {
-    "english": "motorcycle",
-    "garo": "Motor·cycle"
-  },
-  {
-    "english": "train",
-    "garo": "Rail·gari"
-  },
-  {
-    "english": "airplane",
-    "garo": "Sildo·reng"
-  },
-  {
-    "english": "boat",
-    "garo": "Ring"
-  },
-  {
-    "english": "bridge",
-    "garo": "Jal·ang"
-  },
-  {
-    "english": "distance",
-    "garo": "Chel·a"
   },
   {
     "english": "journey",
     "garo": "Songreani"
   },
   {
-    "english": "ticket",
-    "garo": "Tikit"
-  },
-  {
-    "english": "bag / luggage",
-    "garo": "Bostu"
-  },
-  {
-    "english": "to arrive",
-    "garo": "Sokbaa"
-  },
-  {
-    "english": "to leave",
-    "garo": "Re·ongkata"
-  },
-  {
-    "english": "to wait",
-    "garo": "Damo / Sengbo"
-  },
-  {
-    "english": "station / stop",
-    "garo": "Nengtakani Biap"
-  },
-  {
-    "english": "fast",
-    "garo": "Ta·raka"
-  },
-  {
-    "english": "slow",
-    "garo": "Ka·sina"
-  },
-  {
-    "english": "near",
-    "garo": "Sepang"
-  },
-  {
-    "english": "far",
-    "garo": "Chel·a"
-  },
-  {
-    "english": "man",
-    "garo": "Me·asa"
-  },
-  {
-    "english": "woman",
-    "garo": "Me·chik"
-  },
-  {
-    "english": "boy",
-    "garo": "Pante"
-  },
-  {
-    "english": "girl",
-    "garo": "Me·tra"
-  },
-  {
-    "english": "child",
-    "garo": "Bi·sa"
-  },
-  {
-    "english": "old man",
-    "garo": "Budepa"
-  },
-  {
-    "english": "old woman",
-    "garo": "Buchuma"
-  },
-  {
-    "english": "youth",
-    "garo": "Me·tra·pante"
-  },
-  {
-    "english": "son",
-    "garo": "Depante"
-  },
-  {
-    "english": "daughter",
-    "garo": "Demechik"
-  },
-  {
-    "english": "friend",
-    "garo": "Ripeng"
-  },
-  {
-    "english": "enemy",
-    "garo": "Bobil"
-  },
-  {
-    "english": "neighbor",
-    "garo": "Noksul"
-  },
-  {
-    "english": "guest",
-    "garo": "Sokgipa"
-  },
-  {
-    "english": "master / owner",
-    "garo": "Nokgipa"
-  },
-  {
-    "english": "servant",
-    "garo": "Nokkol"
-  },
-  {
-    "english": "village chief",
-    "garo": "Nokma"
-  },
-  {
-    "english": "wood",
-    "garo": "Bol"
-  },
-  {
-    "english": "stone",
-    "garo": "Ro·ong"
-  },
-  {
-    "english": "iron / metal",
-    "garo": "Sil"
-  },
-  {
-    "english": "gold",
-    "garo": "Sona"
-  },
-  {
-    "english": "silver",
-    "garo": "Rupa"
-  },
-  {
-    "english": "cloth",
-    "garo": "Ba·ra"
-  },
-  {
-    "english": "paper",
-    "garo": "Lekka"
-  },
-  {
-    "english": "plastic",
-    "garo": "Plastic"
-  },
-  {
-    "english": "glass",
-    "garo": "Glass"
-  },
-  {
-    "english": "bamboo",
-    "garo": "Wa·a"
-  },
-  {
-    "english": "thick",
-    "garo": "Ritchaa"
-  },
-  {
-    "english": "thin",
-    "garo": "Ba·renga"
-  },
-  {
     "english": "hard",
     "garo": "Raka"
-  },
-  {
-    "english": "who",
-    "garo": "Sawa"
-  },
-  {
-    "english": "what",
-    "garo": "Maia"
-  },
-  {
-    "english": "when",
-    "garo": "Basako"
-  },
-  {
-    "english": "where",
-    "garo": "Bano"
-  },
-  {
-    "english": "why",
-    "garo": "Maini·gimin"
-  },
-  {
-    "english": "how",
-    "garo": "Maikai"
-  },
-  {
-    "english": "and",
-    "garo": "Aro"
-  },
-  {
-    "english": "but",
-    "garo": "Indiba"
-  },
-  {
-    "english": "or",
-    "garo": "Ba"
-  },
-  {
-    "english": "because",
-    "garo": "Maina"
-  },
-  {
-    "english": "fish",
-    "garo": "Na·tok"
-  },
-  {
-    "english": "crab",
-    "garo": "Ang·ke"
-  },
-  {
-    "english": "frog",
-    "garo": "Beng·blok"
-  },
-  {
-    "english": "turtle",
-    "garo": "Ki·sing"
-  },
-  {
-    "english": "prawn / shrimp",
-    "garo": "Na·tik"
-  },
-  {
-    "english": "butterfly",
-    "garo": "Me·pilip"
-  },
-  {
-    "english": "bee",
-    "garo": "Bija"
-  },
-  {
-    "english": "ant",
-    "garo": "Chibrim"
-  },
-  {
-    "english": "mosquito",
-    "garo": "Ganggu"
   },
   {
     "english": "fly",
     "garo": "Tampi"
   },
   {
-    "english": "spider",
-    "garo": "Guwang"
-  },
-  {
-    "english": "cockroach",
-    "garo": "Karo"
-  },
-  {
-    "english": "scorpion",
-    "garo": "Mangkram"
-  },
-  {
-    "english": "worm / caterpillar",
-    "garo": "Jo·ong"
-  },
-  {
-    "english": "tail",
-    "garo": "Ki·me"
-  },
-  {
-    "english": "horn",
-    "garo": "Grong"
-  },
-  {
-    "english": "wing",
-    "garo": "Grang"
-  },
-  {
-    "english": "feather",
-    "garo": "Kimil"
-  },
-  {
-    "english": "beak",
-    "garo": "Ku·chot"
-  },
-  {
-    "english": "egg",
-    "garo": "Do·chi"
-  },
-  {
-    "english": "nest",
-    "garo": "Do·bitip"
-  },
-  {
-    "english": "hoof",
-    "garo": "Ja·skil"
-  },
-  {
-    "english": "claw",
-    "garo": "Jakskil"
-  },
-  {
-    "english": "to fly",
-    "garo": "Bila"
-  },
-  {
-    "english": "to swim",
-    "garo": "Jroa (⚠ also: stinging sensation)"
-  },
-  {
-    "english": "to bark",
-    "garo": "Sing·a"
-  },
-  {
-    "english": "to bite",
-    "garo": "Chika"
-  },
-  {
-    "english": "to crawl",
-    "garo": "Malama"
-  },
-  {
-    "english": "to growl",
-    "garo": "Randinga"
-  },
-  {
-    "english": "to lay eggs",
-    "garo": "Bitchi·chi·a"
-  },
-  {
-    "english": "to hunt",
-    "garo": "Sikar·ka·a"
-  },
-  {
-    "english": "to catch",
-    "garo": "Rim·a"
-  },
-  {
-    "english": "wild",
-    "garo": "Buringni"
-  },
-  {
-    "english": "tame",
-    "garo": "Nokni"
-  },
-  {
-    "english": "god",
-    "garo": "Isol"
-  },
-  {
-    "english": "spirit / soul",
-    "garo": "Janggi / Gisik"
-  },
-  {
-    "english": "ghost",
-    "garo": "Me·mang"
-  },
-  {
-    "english": "heaven",
-    "garo": "Salgi"
-  },
-  {
-    "english": "hell",
-    "garo": "Norok"
-  },
-  {
-    "english": "prayer",
-    "garo": "Bi·ani"
-  },
-  {
-    "english": "to pray",
-    "garo": "Bi·a"
-  },
-  {
-    "english": "worship",
-    "garo": "Olakkiani"
-  },
-  {
-    "english": "church",
-    "garo": "Gilja·nok"
-  },
-  {
-    "english": "sin",
-    "garo": "Pap"
-  },
-  {
-    "english": "blessing",
-    "garo": "Pattiani"
-  },
-  {
-    "english": "sacrifice",
-    "garo": "Boli"
-  },
-  {
-    "english": "holy",
-    "garo": "Rongtalgipa"
-  },
-  {
-    "english": "pastor",
-    "garo": "Pamong"
-  },
-  {
-    "english": "priest",
-    "garo": "Kamal"
-  },
-  {
-    "english": "bible",
-    "garo": "Sastro"
-  },
-  {
-    "english": "faith",
-    "garo": "Bebera·ani"
-  },
-  {
-    "english": "mercy",
-    "garo": "Ka·sachakani"
-  },
-  {
-    "english": "miracle",
-    "garo": "Aiao·inmangipa·kam"
-  },
-  {
-    "english": "angel",
-    "garo": "Sa·gre"
-  },
-  {
-    "english": "tradition",
-    "garo": "Dakbewal"
-  },
-  {
-    "english": "law",
-    "garo": "Niam"
-  },
-  {
-    "english": "court",
-    "garo": "Kachari"
-  },
-  {
-    "english": "prison",
-    "garo": "Patok·nok"
-  },
-  {
-    "english": "punishment",
-    "garo": "Sasti"
-  },
-  {
-    "english": "reward",
-    "garo": "Boksis"
-  },
-  {
-    "english": "country",
-    "garo": "A·song"
-  },
-  {
-    "english": "freedom",
-    "garo": "Jakgitelani"
-  },
-  {
-    "english": "fight",
-    "garo": "Dakgrikani"
-  },
-  {
-    "english": "tax",
-    "garo": "Kajina"
-  },
-  {
-    "english": "signature",
-    "garo": "Jak·soi"
-  },
-  {
-    "english": "truth",
-    "garo": "Bebe"
-  },
-  {
     "english": "lie",
     "garo": "Tol·napani"
-  },
-  {
-    "english": "witness",
-    "garo": "Sakki"
-  },
-  {
-    "english": "guilty",
-    "garo": "Dos·gnang"
-  },
-  {
-    "english": "innocent",
-    "garo": "Dos·gri"
-  },
-  {
-    "english": "to judge",
-    "garo": "Bichal·ka·a"
-  },
-  {
-    "english": "to clean",
-    "garo": "Rongtalata"
-  },
-  {
-    "english": "to sweep",
-    "garo": "Itroka"
-  },
-  {
-    "english": "to wash (clothes)",
-    "garo": "Su·sranga"
-  },
-  {
-    "english": "to wash (hands)",
-    "garo": "Jaksua"
-  },
-  {
-    "english": "to wash (face)",
-    "garo": "Miksua"
-  },
-  {
-    "english": "to bathe",
-    "garo": "Aua"
-  },
-  {
-    "english": "to mend / fix",
-    "garo": "Namatpila"
-  },
-  {
-    "english": "to build",
-    "garo": "Rika"
-  },
-  {
-    "english": "to dig",
-    "garo": "Cho·a"
-  },
-  {
-    "english": "to plant",
-    "garo": "Ge·a"
-  },
-  {
-    "english": "to cut (wood)",
-    "garo": "Den·a"
-  },
-  {
-    "english": "to break",
-    "garo": "Be·ata"
-  },
-  {
-    "english": "to burn",
-    "garo": "So·a"
-  },
-  {
-    "english": "to light (lamp)",
-    "garo": "Ching·ata"
-  },
-  {
-    "english": "to put out (fire)",
-    "garo": "Kimita"
-  },
-  {
-    "english": "to wrap",
-    "garo": "Kadepa"
-  },
-  {
-    "english": "to tie",
-    "garo": "Kaa"
-  },
-  {
-    "english": "to untie",
-    "garo": "Enga"
-  },
-  {
-    "english": "to carry (on head)",
-    "garo": "Ritchila"
-  },
-  {
-    "english": "to carry (on back)",
-    "garo": "Ripea"
-  },
-  {
-    "english": "to carry (in hand)",
-    "garo": "De·a"
-  },
-  {
-    "english": "hungry",
-    "garo": "Okkria"
-  },
-  {
-    "english": "thirsty",
-    "garo": "Chi·ringna·ska"
-  },
-  {
-    "english": "tired",
-    "garo": "Neng·a"
-  },
-  {
-    "english": "sleepy",
-    "garo": "Tusina·ska"
-  },
-  {
-    "english": "sick",
-    "garo": "Sakama"
-  },
-  {
-    "english": "dizzy",
-    "garo": "Miksula"
-  },
-  {
-    "english": "sweat",
-    "garo": "Ding·ol"
-  },
-  {
-    "english": "light (weight)",
-    "garo": "Seng·a"
-  },
-  {
-    "english": "hard",
-    "garo": "Rak·a"
-  },
-  {
-    "english": "soft",
-    "garo": "Nom·a"
-  },
-  {
-    "english": "sharp",
-    "garo": "Mata"
-  },
-  {
-    "english": "blunt",
-    "garo": "Bin·a"
-  },
-  {
-    "english": "smooth",
-    "garo": "Rinoka"
-  },
-  {
-    "english": "rough",
-    "garo": "Skaka"
-  },
-  {
-    "english": "deep",
-    "garo": "Tu·a"
-  },
-  {
-    "english": "shallow",
-    "garo": "Tu·ja"
-  },
-  {
-    "english": "high",
-    "garo": "Chua"
-  },
-  {
-    "english": "low",
-    "garo": "Ona"
-  },
-  {
-    "english": "wide",
-    "garo": "Apala"
-  },
-  {
-    "english": "narrow",
-    "garo": "Apchona"
-  },
-  {
-    "english": "clean",
-    "garo": "Rongtala"
-  },
-  {
-    "english": "dirty",
-    "garo": "Mitchia"
-  },
-  {
-    "english": "full",
-    "garo": "Gapa"
-  },
-  {
-    "english": "empty",
-    "garo": "Bangbang"
-  },
-  {
-    "english": "expensive",
-    "garo": "Dam·raka"
-  },
-  {
-    "english": "cheap",
-    "garo": "Dam·nom·a"
-  },
-  {
-    "english": "i",
-    "garo": "Anga"
-  },
-  {
-    "english": "me",
-    "garo": "Angko"
-  },
-  {
-    "english": "you (singular)",
-    "garo": "Na·a"
-  },
-  {
-    "english": "you (object)",
-    "garo": "Nang·na / Nang·ko"
-  },
-  {
-    "english": "he / she",
-    "garo": "Ua"
-  },
-  {
-    "english": "him / her",
-    "garo": "Una"
-  },
-  {
-    "english": "we /us (incl.)",
-    "garo": "Chinga"
-  },
-  {
-    "english": "they",
-    "garo": "Uamang"
-  },
-  {
-    "english": "them",
-    "garo": "Uamangna"
-  },
-  {
-    "english": "my / mine",
-    "garo": "Angni"
-  },
-  {
-    "english": "your / yours",
-    "garo": "Nang·ni"
-  },
-  {
-    "english": "his / her / hers",
-    "garo": "Uni"
-  },
-  {
-    "english": "our / ours",
-    "garo": "Chingni / An·chingni"
-  },
-  {
-    "english": "their / theirs",
-    "garo": "Uamangni"
-  },
-  {
-    "english": "whose?",
-    "garo": "Sani?"
-  },
-  {
-    "english": "someone's",
-    "garo": "Saniba"
-  },
-  {
-    "english": "everyone's",
-    "garo": "Pilakni"
-  },
-  {
-    "english": "this",
-    "garo": "Ia"
-  },
-  {
-    "english": "that",
-    "garo": "Ua"
-  },
-  {
-    "english": "these",
-    "garo": "Iamang"
-  },
-  {
-    "english": "those",
-    "garo": "Uamang"
-  },
-  {
-    "english": "here",
-    "garo": "Iano"
-  },
-  {
-    "english": "there",
-    "garo": "Uano"
-  },
-  {
-    "english": "myself",
-    "garo": "Anga an·tang"
-  },
-  {
-    "english": "yourself",
-    "garo": "Na·a an·tang"
-  },
-  {
-    "english": "himself / herself",
-    "garo": "Ua an·tang"
-  },
-  {
-    "english": "someone",
-    "garo": "Saksa"
-  },
-  {
-    "english": "no one",
-    "garo": "Darangba·ong·ja"
-  },
-  {
-    "english": "everyone",
-    "garo": "Sakanti"
-  },
-  {
-    "english": "each",
-    "garo": "Sakprak"
-  },
-  {
-    "english": "other",
-    "garo": "Gipin"
-  },
-  {
-    "english": "market",
-    "garo": "Bajal / Anti"
-  },
-  {
-    "english": "shop",
-    "garo": "Dokan"
-  },
-  {
-    "english": "money",
-    "garo": "Tangka"
-  },
-  {
-    "english": "price",
-    "garo": "Dam"
-  },
-  {
-    "english": "expensive",
-    "garo": "Dam·raka"
-  },
-  {
-    "english": "cheap",
-    "garo": "Dam·nom·a"
-  },
-  {
-    "english": "to buy",
-    "garo": "Brea"
-  },
-  {
-    "english": "to sell",
-    "garo": "Pala"
-  },
-  {
-    "english": "coin",
-    "garo": "Tangka·bisil"
-  },
-  {
-    "english": "scale",
-    "garo": "Tochakani"
-  },
-  {
-    "english": "fresh",
-    "garo": "Gital"
-  },
-  {
-    "english": "stale",
-    "garo": "Gitcham"
-  },
-  {
-    "english": "discount",
-    "garo": "Dam·komiatani"
-  },
-  {
-    "english": "customer",
-    "garo": "Bregipa"
-  },
-  {
-    "english": "shopkeeper",
-    "garo": "Dokan·dakgipa"
-  },
-  {
-    "english": "bag",
-    "garo": "Thola"
-  },
-  {
-    "english": "how much is this?",
-    "garo": "Baita?"
-  },
-  {
-    "english": "reduce the price",
-    "garo": "Dam·ko on·tisa komiatbo."
-  },
-  {
-    "english": "i want to buy this",
-    "garo": "Anga iako brena ska."
-  },
-  {
-    "english": "do you have...?",
-    "garo": "Nang·o ... dongama?"
-  },
-  {
-    "english": "it is too expensive",
-    "garo": "Ia dam rakduga."
-  },
-  {
-    "english": "give me one kilo",
-    "garo": "Angna kilo·sa on·bo."
-  },
-  {
-    "english": "hello",
-    "garo": "Salam / Namengama"
-  },
-  {
-    "english": "how are you?",
-    "garo": "Na·a namengama?"
-  },
-  {
-    "english": "i am fine",
-    "garo": "Anga namenga."
   },
   {
     "english": "what is your name?",
     "garo": "Nang·ni bimungara maia?"
   },
   {
-    "english": "my name is...",
-    "garo": "Angni bimungara..."
-  },
-  {
-    "english": "thank you",
-    "garo": "Mittela."
-  },
-  {
-    "english": "please",
-    "garo": "Ka·sapae."
-  },
-  {
-    "english": "excuse me",
-    "garo": "Angko kema·watbo."
-  },
-  {
-    "english": "sorry",
-    "garo": "Kema·bi·a."
-  },
-  {
-    "english": "good morning",
-    "garo": "Pringnam."
-  },
-  {
-    "english": "good afternoon",
-    "garo": "Salnam."
-  },
-  {
-    "english": "good evening",
-    "garo": "Attamnam."
-  },
-  {
-    "english": "good night",
-    "garo": "Walnam."
-  },
-  {
-    "english": "goodbye",
-    "garo": "Re·ang·na / Nam·en·dongbo."
-  },
-  {
-    "english": "see you again",
-    "garo": "Pil·tai·grongna"
-  },
-  {
-    "english": "welcome",
-    "garo": "Rimchaksoa"
-  },
-  {
-    "english": "come in",
-    "garo": "Ning·chi re·babo."
-  },
-  {
-    "english": "sit down",
-    "garo": "Asongbo."
-  },
-  {
-    "english": "eat well",
-    "garo": "Name cha·bo."
-  },
-  {
-    "english": "where are you from?",
-    "garo": "Na·a bano·ni?"
-  },
-  {
-    "english": "i am from...",
-    "garo": "Anga ...·ni."
-  },
-  {
-    "english": "time",
-    "garo": "Somoi"
-  },
-  {
-    "english": "clock / watch",
-    "garo": "Guri"
-  },
-  {
-    "english": "hour",
-    "garo": "Konta"
-  },
-  {
-    "english": "morning",
-    "garo": "Pring"
-  },
-  {
-    "english": "noon",
-    "garo": "Sal·jatchi"
-  },
-  {
-    "english": "afternoon",
-    "garo": "Sal·aksol"
-  },
-  {
-    "english": "evening",
-    "garo": "Attam"
-  },
-  {
-    "english": "night",
-    "garo": "Wal"
-  },
-  {
-    "english": "midnight",
-    "garo": "Wal·jatchi"
-  },
-  {
-    "english": "today",
-    "garo": "Da·alo"
-  },
-  {
-    "english": "tomorrow",
-    "garo": "Knalo"
-  },
-  {
-    "english": "day after tomorrow",
-    "garo": "Me·nnalo"
-  },
-  {
-    "english": "yesterday",
-    "garo": "Meja"
-  },
-  {
-    "english": "day before yesterday",
-    "garo": "Me·si·ja"
-  },
-  {
-    "english": "now",
-    "garo": "Da·o"
-  },
-  {
-    "english": "later",
-    "garo": "Ja·mano"
-  },
-  {
-    "english": "before",
-    "garo": "Skang"
-  },
-  {
-    "english": "early",
-    "garo": "Bakkan / Pring·seng"
-  },
-  {
-    "english": "late",
-    "garo": "Ja·man·chak·a"
-  },
-  {
-    "english": "summer",
-    "garo": "Ding·kari"
-  },
-  {
-    "english": "winter",
-    "garo": "Sin·kari"
-  },
-  {
-    "english": "rainy season",
-    "garo": "Mikkari"
-  },
-  {
-    "english": "always",
-    "garo": "Pangnan"
-  },
-  {
-    "english": "never",
-    "garo": "Pangnan·ba (ja)"
-  },
-  {
-    "english": "and",
-    "garo": "Aro"
-  },
-  {
-    "english": "but",
-    "garo": "Indiba"
-  },
-  {
-    "english": "or",
-    "garo": "Ba"
-  },
-  {
-    "english": "if",
-    "garo": "Ode / ·ode"
-  },
-  {
-    "english": "so / therefore",
-    "garo": "Uni gimin"
-  },
-  {
-    "english": "because",
-    "garo": "Maina"
-  },
-  {
-    "english": "with",
-    "garo": "Baksa"
-  },
-  {
-    "english": "for",
-    "garo": "Gimin / ·na"
-  },
-  {
-    "english": "from",
-    "garo": "·oni"
-  },
-  {
-    "english": "to",
-    "garo": "·na"
-  },
-  {
-    "english": "in / at",
-    "garo": "·o"
-  },
-  {
-    "english": "on",
-    "garo": "Kosak·o"
-  },
-  {
-    "english": "under",
-    "garo": "Kokkimao"
-  },
-  {
-    "english": "between",
-    "garo": "Jatchi·o"
-  },
-  {
-    "english": "only",
-    "garo": "·mangmang / ·san"
-  },
-  {
-    "english": "also",
-    "garo": "·ba"
-  },
-  {
-    "english": "very",
-    "garo": "Be·en / Bakkan"
-  },
-  {
-    "english": "again",
-    "garo": "Pil·tai"
-  },
-  {
-    "english": "wait",
-    "garo": "Damo/Sengbo"
-  },
-  {
-    "english": "quick / hurry",
-    "garo": "Tarkbo"
-  },
-  {
-    "english": "listen",
-    "garo": "Knachik·bo"
-  },
-  {
-    "english": "look",
-    "garo": "Ni·bo"
-  },
-  {
-    "english": "tell me",
-    "garo": "Angna agan·bo"
-  },
-  {
-    "english": "i know",
-    "garo": "Anga uia."
-  },
-  {
-    "english": "i don't know",
-    "garo": "Anga uija."
-  },
-  {
-    "english": "no more",
-    "garo": "Dongja"
-  },
-  {
-    "english": "it exists / it's there",
-    "garo": "Donga"
-  },
-  {
-    "english": "i don't care",
-    "garo": "Anga Dal·e Ra·ja"
-  },
-  {
     "english": "garo",
     "garo": "Damo / Gisep sengbo"
   },
   {
-    "english": "no problem / never mind",
-    "garo": "Maming ba ong·ja"
-  },
-  {
-    "english": "i understand",
-    "garo": "Anga uia"
-  },
-  {
-    "english": "i don't understand",
-    "garo": "Anga uija"
-  },
-  {
-    "english": "say it again",
-    "garo": "Piltai aganbo"
-  },
-  {
-    "english": "speak slowly",
-    "garo": "Ka·sine aganbo"
-  },
-  {
-    "english": "what did you say?",
-    "garo": "Na·a maiko agana?"
-  },
-  {
     "english": "garo",
     "garo": "Inde·a?"
-  },
-  {
-    "english": "really?",
-    "garo": "Bebema?"
-  },
-  {
-    "english": "of course!",
-    "garo": "Oe, bebe!"
   },
   {
     "english": "garo",
@@ -14428,172 +9700,12 @@
     "garo": "Hai re·naha"
   },
   {
-    "english": "let's sleep",
-    "garo": "Hai tusina"
-  },
-  {
-    "english": "hurry up!",
-    "garo": "Tarkbo!"
-  },
-  {
     "english": "garo",
     "garo": "Tarake re·babo!"
   },
   {
-    "english": "be careful!",
-    "garo": "Chimsakbo!"
-  },
-  {
-    "english": "come here!",
-    "garo": "Ianona re·babo!"
-  },
-  {
-    "english": "go away!",
-    "garo": "Re·angbo!"
-  },
-  {
-    "english": "enough!",
-    "garo": "Chu·onga!"
-  },
-  {
-    "english": "not now",
-    "garo": "Da·o ong·ja"
-  },
-  {
-    "english": "later",
-    "garo": "Ja·mano"
-  },
-  {
-    "english": "maybe",
-    "garo": "Ong·naba donga"
-  },
-  {
-    "english": "i forgot",
-    "garo": "Anga guala"
-  },
-  {
-    "english": "i remember",
-    "garo": "Anga gisik ra·a"
-  },
-  {
-    "english": "what time is it?",
-    "garo": "Baita baji?"
-  },
-  {
-    "english": "i am busy",
-    "garo": "Anga kam·gnanga"
-  },
-  {
-    "english": "i am not busy",
-    "garo": "Anga kam·gnang·ja"
-  },
-  {
-    "english": "i am coming",
-    "garo": "Anga re·baenga"
-  },
-  {
-    "english": "i am going",
-    "garo": "Anga re·angenga"
-  },
-  {
-    "english": "help me",
-    "garo": "Angko dakchakbo"
-  },
-  {
-    "english": "thank you very much",
-    "garo": "Mittela dakpile"
-  },
-  {
-    "english": "i am happy",
-    "garo": "Anga kusionga"
-  },
-  {
-    "english": "i am sad",
-    "garo": "Anga dukonga"
-  },
-  {
-    "english": "i am angry",
-    "garo": "Anga ka·o nanga"
-  },
-  {
-    "english": "i am scared",
-    "garo": "Anga kena"
-  },
-  {
-    "english": "i am tired",
-    "garo": "Anga neng·a"
-  },
-  {
-    "english": "i miss you",
-    "garo": "Anga nang·na simbraa"
-  },
-  {
-    "english": "i am worried",
-    "garo": "Anga jajrenja"
-  },
-  {
-    "english": "i feel lonely",
-    "garo": "Anga saksan gisik·o nanga"
-  },
-  {
-    "english": "don't be sad",
-    "garo": "Duk ong·ja"
-  },
-  {
-    "english": "don't be afraid",
-    "garo": "Kennabe"
-  },
-  {
-    "english": "be patient",
-    "garo": "Chakchikbo"
-  },
-  {
-    "english": "be brave",
-    "garo": "Ka·dongbo"
-  },
-  {
-    "english": "i am ashamed",
-    "garo": "Anga kracha·a"
-  },
-  {
-    "english": "i am jealous",
-    "garo": "Anga mikbua"
-  },
-  {
-    "english": "i forgive you",
-    "garo": "Anga nang·ko kema ka·ra"
-  },
-  {
-    "english": "i am grateful",
-    "garo": "Anga mittela nanga"
-  },
-  {
-    "english": "i trust you",
-    "garo": "Nang·ko bebe ra·a"
-  },
-  {
-    "english": "i am surprised",
-    "garo": "Anga jagok·a"
-  },
-  {
-    "english": "i am satisfied",
-    "garo": "Anga chu·ongnika"
-  },
-  {
-    "english": "i don't care",
-    "garo": "Anga Dal·e Ra·ja"
-  },
-  {
     "english": "garo",
     "garo": "Sala"
-  },
-  {
-    "english": "garo",
-    "garo": "Sala"
-  },
-  {
-    "english": "push",
-    "garo": "Jitpaka"
   },
   {
     "english": "garo",
@@ -14604,32 +9716,8 @@
     "garo": "Maldoa / Gadoa"
   },
   {
-    "english": "jump",
-    "garo": "Bildoa"
-  },
-  {
-    "english": "crawl",
-    "garo": "Malama"
-  },
-  {
-    "english": "roll",
-    "garo": "Romroma"
-  },
-  {
     "english": "garo",
     "garo": "Rorama / Roama"
-  },
-  {
-    "english": "fly",
-    "garo": "Bila"
-  },
-  {
-    "english": "shake",
-    "garo": "Moa"
-  },
-  {
-    "english": "move (something)",
-    "garo": "De·jita"
   },
   {
     "english": "garo",
@@ -14640,32 +9728,12 @@
     "garo": "Goa"
   },
   {
-    "english": "throw",
-    "garo": "Goata / Gal·a"
-  },
-  {
-    "english": "catch",
-    "garo": "Rim·a"
-  },
-  {
     "english": "garo",
     "garo": "Nia"
   },
   {
     "english": "garo",
     "garo": "Nitata"
-  },
-  {
-    "english": "show",
-    "garo": "Mesoka"
-  },
-  {
-    "english": "smell",
-    "garo": "Gingsika"
-  },
-  {
-    "english": "spread",
-    "garo": "Barama"
   },
   {
     "english": "garo",
@@ -14680,140 +9748,8 @@
     "garo": "Aka"
   },
   {
-    "english": "turn (page/sheet)",
-    "garo": "Badala"
-  },
-  {
-    "english": "cook",
-    "garo": "Song·a"
-  },
-  {
-    "english": "fry",
-    "garo": "Jo·a"
-  },
-  {
-    "english": "boil",
-    "garo": "Rita"
-  },
-  {
-    "english": "bake / roast",
-    "garo": "Ang·a"
-  },
-  {
-    "english": "stir",
-    "garo": "Mo·ila"
-  },
-  {
-    "english": "taste",
-    "garo": "Nong·mia"
-  },
-  {
-    "english": "peel",
-    "garo": "Brika"
-  },
-  {
-    "english": "chop",
-    "garo": "Rata"
-  },
-  {
-    "english": "grind",
-    "garo": "Supneka"
-  },
-  {
-    "english": "add salt",
-    "garo": "Kari on·bo"
-  },
-  {
-    "english": "serve food",
-    "garo": "Mi Onbo"
-  },
-  {
-    "english": "eat together",
-    "garo": "Baksa cha·ha"
-  },
-  {
-    "english": "think",
-    "garo": "Gisik·o nanga"
-  },
-  {
-    "english": "know",
-    "garo": "Uia"
-  },
-  {
-    "english": "forget",
-    "garo": "Guala"
-  },
-  {
-    "english": "remember",
-    "garo": "Ku·rachaka"
-  },
-  {
-    "english": "decide",
-    "garo": "Tik ka·a"
-  },
-  {
-    "english": "agree",
-    "garo": "Ka·racha"
-  },
-  {
-    "english": "disagree",
-    "garo": "Ka·rach·ong·ja"
-  },
-  {
-    "english": "promise",
-    "garo": "Ka·ra chaka"
-  },
-  {
-    "english": "lie",
-    "garo": "Tol·a"
-  },
-  {
-    "english": "tell the truth",
-    "garo": "Bebeko aganbo"
-  },
-  {
-    "english": "ask",
-    "garo": "Sing·a"
-  },
-  {
-    "english": "answer",
-    "garo": "Aganchaka"
-  },
-  {
-    "english": "read",
-    "garo": "Pora"
-  },
-  {
-    "english": "write",
-    "garo": "Sea"
-  },
-  {
-    "english": "count",
-    "garo": "Chanbo"
-  },
-  {
-    "english": "learn",
-    "garo": "Sikia"
-  },
-  {
-    "english": "teach",
-    "garo": "Sikie on·a"
-  },
-  {
     "english": "garo",
     "garo": "Wangala"
-  },
-  {
-    "english": "traditional dance",
-    "garo": "Do·krua"
-  },
-  {
-    "english": "traditional drum",
-    "garo": "Dama"
-  },
-  {
-    "english": "traditional flute",
-    "garo": "Rongsi"
   },
   {
     "english": "garo",
@@ -14828,32 +9764,8 @@
     "garo": "Nokma"
   },
   {
-    "english": "traditional house",
-    "garo": "A·chik nok"
-  },
-  {
     "english": "garo",
     "garo": "A·ba daka"
-  },
-  {
-    "english": "sacred grove",
-    "garo": "Kosi"
-  },
-  {
-    "english": "traditional rice beer",
-    "garo": "Minil Bitchi"
-  },
-  {
-    "english": "weaving",
-    "garo": "Do·rua"
-  },
-  {
-    "english": "dakmanda (women's wrap)",
-    "garo": "Dakmanda"
-  },
-  {
-    "english": "nokpante (bachelor house)",
-    "garo": "Nokpante"
   },
   {
     "english": "garo",
@@ -14868,32 +9780,12 @@
     "garo": "Baksa nangchim·a, saksan sia"
   },
   {
-    "english": "work hard now, rest later",
-    "garo": "Skang daka, ja·mano nengbo"
-  },
-  {
-    "english": "speak less, do more",
-    "garo": "Agana gri, daka bang·a"
-  },
-  {
-    "english": "a good person is known by deeds",
-    "garo": "Nama mande·ra ua kam·o uia"
-  },
-  {
     "english": "garo",
     "garo": "Mi gual·ata·bo ong·ja"
   },
   {
     "english": "garo",
     "garo": "Buring on·a, buring ra·a"
-  },
-  {
-    "english": "truth always comes out",
-    "garo": "Bebe·ra inde·a piltai"
-  },
-  {
-    "english": "a little is better than nothing",
-    "garo": "On·titi nama, bangbang·bata"
   },
   {
     "english": "garo",
@@ -14912,620 +9804,12 @@
     "garo": "Maiko nanga?"
   },
   {
-    "english": "no way! / impossible!",
-    "garo": "Ong·ja inde·ba!"
-  },
-  {
-    "english": "whatever / i don't care",
-    "garo": "Jeba Onj·china / Anga Dal·e Ra·ja"
-  },
-  {
-    "english": "stop it",
-    "garo": "Dontonjbo"
-  },
-  {
-    "english": "cool / awesome",
-    "garo": "Nito / Nita·gipa"
-  },
-  {
     "english": "garo",
     "garo": "Jala·gipa"
   },
   {
-    "english": "let's hang out",
-    "garo": "Hai roromna"
-  },
-  {
-    "english": "i'm broke",
-    "garo": "Anga tangka donja"
-  },
-  {
-    "english": "he/she is lying",
-    "garo": "Ua tolenga"
-  },
-  {
-    "english": "mind your own business",
-    "garo": "Nangni kamko dakbo"
-  },
-  {
-    "english": "i'm hungry (casual)",
-    "garo": "Anga okkrinenga"
-  },
-  {
-    "english": "just joking",
-    "garo": "Anga kalake roega"
-  },
-  {
-    "english": "chill out / relax",
-    "garo": "Nom·a bo"
-  },
-  {
     "english": "garo",
     "garo": "Re·naha ba!"
-  },
-  {
-    "english": "kind / gentle",
-    "garo": "Nama·gipa"
-  },
-  {
-    "english": "brave",
-    "garo": "Ka·rakani·gipa"
-  },
-  {
-    "english": "clever",
-    "garo": "Seng·a·gipa"
-  },
-  {
-    "english": "foolish",
-    "garo": "Bangbang·gisik"
-  },
-  {
-    "english": "honest",
-    "garo": "Bebe·agani·gipa"
-  },
-  {
-    "english": "dishonest",
-    "garo": "Tol·a·agani·gipa"
-  },
-  {
-    "english": "hardworking",
-    "garo": "Dak·rakgipa"
-  },
-  {
-    "english": "lazy",
-    "garo": "Bilgri·gipa"
-  },
-  {
-    "english": "generous",
-    "garo": "On·a·nakgipa"
-  },
-  {
-    "english": "greedy",
-    "garo": "Gisika·dakgipa"
-  },
-  {
-    "english": "proud / arrogant",
-    "garo": "Gaora·gipa"
-  },
-  {
-    "english": "humble",
-    "garo": "Chon·a·gisik"
-  },
-  {
-    "english": "shy",
-    "garo": "Kracha·gipa"
-  },
-  {
-    "english": "confident",
-    "garo": "Ka·raka·gisik"
-  },
-  {
-    "english": "talkative",
-    "garo": "Bang·a agani·gipa"
-  },
-  {
-    "english": "quiet",
-    "garo": "Agana·ja·gipa"
-  },
-  {
-    "english": "funny",
-    "garo": "Ka·ding·o on·a·gipa"
-  },
-  {
-    "english": "stubborn",
-    "garo": "An·tang·ra·gipa"
-  },
-  {
-    "english": "obedient",
-    "garo": "Knachika·gipa"
-  },
-  {
-    "english": "dog bark",
-    "garo": "Sing·a"
-  },
-  {
-    "english": "cat meow",
-    "garo": "Miau·miau"
-  },
-  {
-    "english": "cow moo",
-    "garo": "Ma·ma"
-  },
-  {
-    "english": "rooster crow",
-    "garo": "Ko·ko·rika"
-  },
-  {
-    "english": "frog croak",
-    "garo": "Beng·beng"
-  },
-  {
-    "english": "bird chirp",
-    "garo": "Chi·chi"
-  },
-  {
-    "english": "snake hiss",
-    "garo": "Chiss·chiss"
-  },
-  {
-    "english": "bee buzz",
-    "garo": "Guum·guum"
-  },
-  {
-    "english": "tiger roar",
-    "garo": "Randinga"
-  },
-  {
-    "english": "nod (yes)",
-    "garo": "Skola·o"
-  },
-  {
-    "english": "shake head (no)",
-    "garo": "Sko·moa"
-  },
-  {
-    "english": "wave hand",
-    "garo": "Jak·bildoa"
-  },
-  {
-    "english": "point finger",
-    "garo": "Jak·chip·a"
-  },
-  {
-    "english": "clap",
-    "garo": "Jak·taka"
-  },
-  {
-    "english": "bow",
-    "garo": "Sko·ka·mama"
-  },
-  {
-    "english": "hug",
-    "garo": "Jak·kadepa"
-  },
-  {
-    "english": "wink",
-    "garo": "Mik·chip·a"
-  },
-  {
-    "english": "smile",
-    "garo": "Ka·dingsmita"
-  },
-  {
-    "english": "sneeze",
-    "garo": "Hatchia"
-  },
-  {
-    "english": "yawn",
-    "garo": "Gu·ua"
-  },
-  {
-    "english": "cough",
-    "garo": "Gusua"
-  },
-  {
-    "english": "whistle",
-    "garo": "Hu·a"
-  },
-  {
-    "english": "open your book",
-    "garo": "Ki·tapko oa·bo"
-  },
-  {
-    "english": "close your book",
-    "garo": "Ki·tapko chip·a·bo"
-  },
-  {
-    "english": "listen carefully",
-    "garo": "Chakchik knachik·bo"
-  },
-  {
-    "english": "raise your hand",
-    "garo": "Jakko bil·bo"
-  },
-  {
-    "english": "answer the question",
-    "garo": "Sing·ani·ko aganchaka·bo"
-  },
-  {
-    "english": "i have a question",
-    "garo": "Angna sing·ani donga"
-  },
-  {
-    "english": "i don't understand",
-    "garo": "Anga uija"
-  },
-  {
-    "english": "class is over",
-    "garo": "Klas chu·a"
-  },
-  {
-    "english": "homework",
-    "garo": "Nok·o dakporani"
-  },
-  {
-    "english": "study hard",
-    "garo": "Chakchik pora·bo"
-  },
-  {
-    "english": "congratulations!",
-    "garo": "Ka·soa!"
-  },
-  {
-    "english": "happy birthday!",
-    "garo": "Bilsi·gital kusi!"
-  },
-  {
-    "english": "get well soon",
-    "garo": "Mangmang an·sengpibo"
-  },
-  {
-    "english": "i will pray for you",
-    "garo": "Nang·na anga bi·engena"
-  },
-  {
-    "english": "god bless you",
-    "garo": "Isol nang·na pattia·bo"
-  },
-  {
-    "english": "rest in peace",
-    "garo": "Tom·toma·o tusibo"
-  },
-  {
-    "english": "you did well",
-    "garo": "Na·a nama daka"
-  },
-  {
-    "english": "don't give up",
-    "garo": "Kimia·bo ong·ja"
-  },
-  {
-    "english": "i believe in you",
-    "garo": "Anga nang·na bebe ra·a"
-  },
-  {
-    "english": "i miss my family",
-    "garo": "Angni nokdang·na simbraa"
-  },
-  {
-    "english": "come (command)",
-    "garo": "Reba"
-  },
-  {
-    "english": "came (past)",
-    "garo": "Reba·aha"
-  },
-  {
-    "english": "will come (future)",
-    "garo": "Reangen"
-  },
-  {
-    "english": "he came by bus yesterday",
-    "garo": "Bia bus o raba·a mijalo"
-  },
-  {
-    "english": "why did you come?",
-    "garo": "Na·a maina reba·a?"
-  },
-  {
-    "english": "how did you come?",
-    "garo": "Na·a maidake reba·a?"
-  },
-  {
-    "english": "will you come with me?",
-    "garo": "Na·ara ang·ming rebagenma?"
-  },
-  {
-    "english": "i shall come with you.",
-    "garo": "Ang·a nangming reangen."
-  },
-  {
-    "english": "he will come.",
-    "garo": "Bia rebagen."
-  },
-  {
-    "english": "go (command)",
-    "garo": "Reangbo"
-  },
-  {
-    "english": "he had gone.",
-    "garo": "Bia reang·aha."
-  },
-  {
-    "english": "he will go.",
-    "garo": "Bia reangen."
-  },
-  {
-    "english": "they went to the mosque.",
-    "garo": "Bisong olakiramchi re·anga."
-  },
-  {
-    "english": "eat (command)",
-    "garo": "Chabo"
-  },
-  {
-    "english": "he is eating an apple.",
-    "garo": "Bia apple cha·enga."
-  },
-  {
-    "english": "he ate an apple.",
-    "garo": "Bia apple cha·aha."
-  },
-  {
-    "english": "he has eaten.",
-    "garo": "Bia chamanjok."
-  },
-  {
-    "english": "he had eaten.",
-    "garo": "Bia chaman·aha."
-  },
-  {
-    "english": "he will eat.",
-    "garo": "Bia chagen."
-  },
-  {
-    "english": "did you have lunch?",
-    "garo": "Na·a mi chajokma?"
-  },
-  {
-    "english": "open (command)",
-    "garo": "Khulibo"
-  },
-  {
-    "english": "opened (past)",
-    "garo": "Khulia·a"
-  },
-  {
-    "english": "will open (future)",
-    "garo": "Khuligen"
-  },
-  {
-    "english": "sit (command)",
-    "garo": "Asongbo"
-  },
-  {
-    "english": "walk (command)",
-    "garo": "Roranbo / Rebo"
-  },
-  {
-    "english": "drink (command)",
-    "garo": "Ringbo"
-  },
-  {
-    "english": "win",
-    "garo": "Am·a"
-  },
-  {
-    "english": "run (command)",
-    "garo": "Katbo"
-  },
-  {
-    "english": "why did you sleep?",
-    "garo": "Na·a maina tusia?"
-  },
-  {
-    "english": "how did you sleep?",
-    "garo": "Na·a maidake tusia?"
-  },
-  {
-    "english": "he slept the whole night.",
-    "garo": "Bia walgimik tua."
-  },
-  {
-    "english": "in which room did you sleep?",
-    "garo": "Na·a badia room o tusia?"
-  },
-  {
-    "english": "he wrote well in the exam.",
-    "garo": "Bia porikka namen se·ataha."
-  },
-  {
-    "english": "how did you write?",
-    "garo": "Na·a maidake se·a?"
-  },
-  {
-    "english": "can you write the exam?",
-    "garo": "Na·a porikka sena mangenma?"
-  },
-  {
-    "english": "what is written in the letter?",
-    "garo": "Chitthio mai sea dongachim?"
-  },
-  {
-    "english": "how did you drive?",
-    "garo": "Na·a maidake sal·a?"
-  },
-  {
-    "english": "why do you drive the car?",
-    "garo": "Na·a maina gariko sal·a?"
-  },
-  {
-    "english": "why did she pay the money?",
-    "garo": "Bia maina tangka ko gama?"
-  },
-  {
-    "english": "why did he bring the bag?",
-    "garo": "Bia maina bag ko raba·a?"
-  },
-  {
-    "english": "i saw the film last week.",
-    "garo": "Ang·a ia film ko nia mija antio."
-  },
-  {
-    "english": "how was the journey yesterday?",
-    "garo": "Mijal songre·ara nama ma?"
-  },
-  {
-    "english": "what is your name?",
-    "garo": "Nang bimung maia?"
-  },
-  {
-    "english": "what?",
-    "garo": "Maia?"
-  },
-  {
-    "english": "what did you do?",
-    "garo": "Na·a maiko daka?"
-  },
-  {
-    "english": "what should i do?",
-    "garo": "Ang·a maiko dakgen?"
-  },
-  {
-    "english": "what can i do?",
-    "garo": "Ang·a maiko dakgen?"
-  },
-  {
-    "english": "what are the questions?",
-    "garo": "Mai·a sing·ani chim?"
-  },
-  {
-    "english": "what were the questions?",
-    "garo": "Mai·a sing·aniara?"
-  },
-  {
-    "english": "what is written in the letter?",
-    "garo": "Chitthio mai sea dongachim?"
-  },
-  {
-    "english": "what you had been told?",
-    "garo": "Naa maiko aganata?"
-  },
-  {
-    "english": "what will be the answer?",
-    "garo": "Aganchakani·ara mai ong·en?"
-  },
-  {
-    "english": "why did you come?",
-    "garo": "Na·a maina reba·a?"
-  },
-  {
-    "english": "why did you sleep?",
-    "garo": "Na·a maina tusia?"
-  },
-  {
-    "english": "why did you tell him to go?",
-    "garo": "Na·a maina biko re·angna aganata?"
-  },
-  {
-    "english": "why did he bring the bag?",
-    "garo": "Bia maina bag ko raba·a?"
-  },
-  {
-    "english": "why did she pay the money?",
-    "garo": "Bia maina tangka ko gama?"
-  },
-  {
-    "english": "why did they sit there?",
-    "garo": "Bisong maina uano a·songenga?"
-  },
-  {
-    "english": "why do you drive the car?",
-    "garo": "Na·a maina gariko sal·a?"
-  },
-  {
-    "english": "why are they late for the meeting?",
-    "garo": "Bisong maina meeting ona ru·ute reba·a?"
-  },
-  {
-    "english": "how did you come?",
-    "garo": "Na·a maidake reba·a?"
-  },
-  {
-    "english": "how did you sleep?",
-    "garo": "Na·a maidake tusia?"
-  },
-  {
-    "english": "how did you drive?",
-    "garo": "Na·a maidake sal·a?"
-  },
-  {
-    "english": "how did you write?",
-    "garo": "Na·a maidake se·a?"
-  },
-  {
-    "english": "how many apples are there in my hand?",
-    "garo": "Ang jako baitarong apple donga?"
-  },
-  {
-    "english": "how many did you take?",
-    "garo": "Na·a baitarong ra·a?"
-  },
-  {
-    "english": "how much did he pay you?",
-    "garo": "Nangna baita tangka gama?"
-  },
-  {
-    "english": "how much distance to go?",
-    "garo": "Baita chelkuenga?"
-  },
-  {
-    "english": "how was the journey yesterday?",
-    "garo": "Mijal songre·ara nama ma?"
-  },
-  {
-    "english": "how are you?",
-    "garo": "Na·a namengama?"
-  },
-  {
-    "english": "which way did you come?",
-    "garo": "Na·a bagita reba·a?"
-  },
-  {
-    "english": "which is your favourite colour?",
-    "garo": "Nang namnikgipa rong·ara mai·a?"
-  },
-  {
-    "english": "in which room did you sleep?",
-    "garo": "Na·a badia room o tusia?"
-  },
-  {
-    "english": "which story did you tell?",
-    "garo": "Badiya golpo ko agana?"
-  },
-  {
-    "english": "which is the sweetest fruit?",
-    "garo": "Badia bite chibata?"
-  },
-  {
-    "english": "which indian state has the largest population?",
-    "garo": "India ni badiya adoko mande bangbata?"
-  },
-  {
-    "english": "where did you come from?",
-    "garo": "Na·a banoni reba·a?"
-  },
-  {
-    "english": "where did you sleep?",
-    "garo": "Na·a bano tusia?"
-  },
-  {
-    "english": "where should i go?",
-    "garo": "Ang·ara batchi reangbo?"
-  },
-  {
-    "english": "whom should i contact?",
-    "garo": "Ang·ar sako contact khagen?"
   },
   {
     "english": "garo",
@@ -15556,10 +9840,6 @@
     "garo": "Anga asongna mangengma?"
   },
   {
-    "english": "can you give me water?",
-    "garo": "Angna chi on·a mangengma?"
-  },
-  {
     "english": "garo",
     "garo": "Na·a angna kasa·a ma?"
   },
@@ -15570,10 +9850,6 @@
   {
     "english": "garo",
     "garo": "Ang·a namengava."
-  },
-  {
-    "english": "garo",
-    "garo": "Hoe mangenva."
   },
   {
     "english": "garo",
@@ -15628,10 +9904,6 @@
     "garo": "Namen"
   },
   {
-    "english": "win",
-    "garo": "Am·a"
-  },
-  {
     "english": "garo",
     "garo": "Dena"
   },
@@ -15652,10 +9924,6 @@
     "garo": "Adoko mande"
   },
   {
-    "english": "newspaper",
-    "garo": "Songbat"
-  },
-  {
     "english": "garo",
     "garo": "Bilongen nambata"
   },
@@ -15668,20 +9936,8 @@
     "garo": "Apple"
   },
   {
-    "english": "story",
-    "garo": "Golpo"
-  },
-  {
-    "english": "journey",
-    "garo": "Songre"
-  },
-  {
     "english": "garo",
     "garo": "Rong"
-  },
-  {
-    "english": "garo",
-    "garo": "Contact khagen"
   },
   {
     "english": "one person",
@@ -15716,24 +9972,12 @@
     "garo": "sa rang·sa"
   },
   {
-    "english": "one book",
-    "garo": "sa rang·sa"
-  },
-  {
     "english": "one car",
     "garo": "sa rang·sa"
   },
   {
     "english": "two persons",
     "garo": "sak·gni"
-  },
-  {
-    "english": "two dogs",
-    "garo": "achak mang·gni"
-  },
-  {
-    "english": "two birds",
-    "garo": "do·o mang·gni"
   },
   {
     "english": "two fishs",
@@ -15753,10 +9997,6 @@
   },
   {
     "english": "two trees",
-    "garo": "rang·gni"
-  },
-  {
-    "english": "two books",
     "garo": "rang·gni"
   },
   {
@@ -15796,10 +10036,6 @@
     "garo": "rang·gni"
   },
   {
-    "english": "three books",
-    "garo": "rang·gni"
-  },
-  {
     "english": "three cars",
     "garo": "rang·gni"
   },
@@ -15833,10 +10069,6 @@
   },
   {
     "english": "four trees",
-    "garo": "brang rang·gni"
-  },
-  {
-    "english": "four books",
     "garo": "brang rang·gni"
   },
   {
@@ -15876,10 +10108,6 @@
     "garo": "bonga rang·gni"
   },
   {
-    "english": "five books",
-    "garo": "bonga rang·gni"
-  },
-  {
     "english": "five cars",
     "garo": "bonga rang·gni"
   },
@@ -15913,10 +10141,6 @@
   },
   {
     "english": "six trees",
-    "garo": "dokka rang·gni"
-  },
-  {
-    "english": "six books",
     "garo": "dokka rang·gni"
   },
   {
@@ -15956,10 +10180,6 @@
     "garo": "sni rang·gni"
   },
   {
-    "english": "seven books",
-    "garo": "sni rang·gni"
-  },
-  {
     "english": "seven cars",
     "garo": "sni rang·gni"
   },
@@ -15993,10 +10213,6 @@
   },
   {
     "english": "eight trees",
-    "garo": "chet rang·gni"
-  },
-  {
-    "english": "eight books",
     "garo": "chet rang·gni"
   },
   {
@@ -16036,10 +10252,6 @@
     "garo": "sku rang·gni"
   },
   {
-    "english": "nine books",
-    "garo": "sku rang·gni"
-  },
-  {
     "english": "nine cars",
     "garo": "sku rang·gni"
   },
@@ -16073,10 +10285,6 @@
   },
   {
     "english": "ten trees",
-    "garo": "chi rang·gni"
-  },
-  {
-    "english": "ten books",
     "garo": "chi rang·gni"
   },
   {
@@ -16216,19 +10424,7 @@
     "garo": "sa mande·gni"
   },
   {
-    "english": "one dog",
-    "garo": "sa mang·sa"
-  },
-  {
     "english": "one cat",
-    "garo": "sa mang·sa"
-  },
-  {
-    "english": "one bird",
-    "garo": "sa mang·sa"
-  },
-  {
-    "english": "one fish",
     "garo": "sa mang·sa"
   },
   {
@@ -16246,18 +10442,6 @@
   {
     "english": "one students",
     "garo": "sa chik·gni"
-  },
-  {
-    "english": "one house",
-    "garo": "sa rang·sa"
-  },
-  {
-    "english": "one tree",
-    "garo": "sa rang·sa"
-  },
-  {
-    "english": "one book",
-    "garo": "sa kitab·sa"
   },
   {
     "english": "one car",
@@ -16356,10 +10540,6 @@
     "garo": "rang·gni"
   },
   {
-    "english": "two book",
-    "garo": "kitab·gni"
-  },
-  {
     "english": "two car",
     "garo": "mot·gni"
   },
@@ -16454,10 +10634,6 @@
   {
     "english": "three tree",
     "garo": "rang·gni"
-  },
-  {
-    "english": "three book",
-    "garo": "kitab·gni"
   },
   {
     "english": "three car",
@@ -16556,10 +10732,6 @@
     "garo": "brang rang·gni"
   },
   {
-    "english": "four book",
-    "garo": "brang kitab·gni"
-  },
-  {
     "english": "four car",
     "garo": "brang mot·gni"
   },
@@ -16654,10 +10826,6 @@
   {
     "english": "five tree",
     "garo": "bonga rang·gni"
-  },
-  {
-    "english": "five book",
-    "garo": "bonga kitab·gni"
   },
   {
     "english": "five car",
@@ -16756,10 +10924,6 @@
     "garo": "dokka rang·gni"
   },
   {
-    "english": "six book",
-    "garo": "dokka kitab·gni"
-  },
-  {
     "english": "six car",
     "garo": "dokka mot·gni"
   },
@@ -16854,10 +11018,6 @@
   {
     "english": "seven tree",
     "garo": "sni rang·gni"
-  },
-  {
-    "english": "seven book",
-    "garo": "sni kitab·gni"
   },
   {
     "english": "seven car",
@@ -16956,10 +11116,6 @@
     "garo": "chet rang·gni"
   },
   {
-    "english": "eight book",
-    "garo": "chet kitab·gni"
-  },
-  {
     "english": "eight car",
     "garo": "chet mot·gni"
   },
@@ -17054,10 +11210,6 @@
   {
     "english": "nine tree",
     "garo": "sku rang·gni"
-  },
-  {
-    "english": "nine book",
-    "garo": "sku kitab·gni"
   },
   {
     "english": "nine car",
@@ -17156,10 +11308,6 @@
     "garo": "chi rang·gni"
   },
   {
-    "english": "ten book",
-    "garo": "chi kitab·gni"
-  },
-  {
     "english": "ten car",
     "garo": "chi mot·gni"
   },
@@ -17254,10 +11402,6 @@
   {
     "english": "eleven tree",
     "garo": "chi sa rang·gni"
-  },
-  {
-    "english": "eleven book",
-    "garo": "chi sa kitab·gni"
   },
   {
     "english": "eleven car",
@@ -17356,10 +11500,6 @@
     "garo": "chi do·o rang·gni"
   },
   {
-    "english": "twelve book",
-    "garo": "chi do·o kitab·gni"
-  },
-  {
     "english": "twelve car",
     "garo": "chi do·o mot·gni"
   },
@@ -17454,10 +11594,6 @@
   {
     "english": "thirteen tree",
     "garo": "chi na·tok rang·gni"
-  },
-  {
-    "english": "thirteen book",
-    "garo": "chi na·tok kitab·gni"
   },
   {
     "english": "thirteen car",
@@ -17556,10 +11692,6 @@
     "garo": "chi brang rang·gni"
   },
   {
-    "english": "fourteen book",
-    "garo": "chi brang kitab·gni"
-  },
-  {
     "english": "fourteen car",
     "garo": "chi brang mot·gni"
   },
@@ -17654,10 +11786,6 @@
   {
     "english": "fifteen tree",
     "garo": "chi bonga rang·gni"
-  },
-  {
-    "english": "fifteen book",
-    "garo": "chi bonga kitab·gni"
   },
   {
     "english": "fifteen car",
@@ -17756,10 +11884,6 @@
     "garo": "chi dokka rang·gni"
   },
   {
-    "english": "sixteen book",
-    "garo": "chi dokka kitab·gni"
-  },
-  {
     "english": "sixteen car",
     "garo": "chi dokka mot·gni"
   },
@@ -17854,10 +11978,6 @@
   {
     "english": "seventeen tree",
     "garo": "chi sni rang·gni"
-  },
-  {
-    "english": "seventeen book",
-    "garo": "chi sni kitab·gni"
   },
   {
     "english": "seventeen car",
@@ -17956,10 +12076,6 @@
     "garo": "chi chet rang·gni"
   },
   {
-    "english": "eighteen book",
-    "garo": "chi chet kitab·gni"
-  },
-  {
     "english": "eighteen car",
     "garo": "chi chet mot·gni"
   },
@@ -18056,10 +12172,6 @@
     "garo": "chi sku rang·gni"
   },
   {
-    "english": "nineteen book",
-    "garo": "chi sku kitab·gni"
-  },
-  {
     "english": "nineteen car",
     "garo": "chi sku mot·gni"
   },
@@ -18154,10 +12266,6 @@
   {
     "english": "twenty tree",
     "garo": "chi chi rang·gni"
-  },
-  {
-    "english": "twenty book",
-    "garo": "chi chi kitab·gni"
   },
   {
     "english": "twenty car",
@@ -18965,7 +13073,7 @@
   },
   {
     "english": "my book",
-    "garo": "angni kitab"
+    "garo": "angni ki·tap"
   },
   {
     "english": "my car",
@@ -19045,7 +13153,7 @@
   },
   {
     "english": "your book",
-    "garo": "nani kitab"
+    "garo": "nani ki·tap"
   },
   {
     "english": "your car",
@@ -19125,7 +13233,7 @@
   },
   {
     "english": "his/her book",
-    "garo": "uni kitab"
+    "garo": "uni ki·tap"
   },
   {
     "english": "his/her car",
@@ -19205,7 +13313,7 @@
   },
   {
     "english": "our book",
-    "garo": "ini kitab"
+    "garo": "ini ki·tap"
   },
   {
     "english": "our car",
@@ -19285,7 +13393,7 @@
   },
   {
     "english": "their book",
-    "garo": "bini kitab"
+    "garo": "bini ki·tap"
   },
   {
     "english": "their car",
@@ -19365,7 +13473,7 @@
   },
   {
     "english": "what book?",
-    "garo": "ma kitab?"
+    "garo": "ma ki·tap?"
   },
   {
     "english": "where person?",
@@ -19405,7 +13513,7 @@
   },
   {
     "english": "where book?",
-    "garo": "kade kitab?"
+    "garo": "kade ki·tap?"
   },
   {
     "english": "when person?",
@@ -19445,7 +13553,7 @@
   },
   {
     "english": "when book?",
-    "garo": "bale kitab?"
+    "garo": "bale ki·tap?"
   },
   {
     "english": "why person?",
@@ -19485,7 +13593,7 @@
   },
   {
     "english": "why book?",
-    "garo": "bang·a kitab?"
+    "garo": "bang·a ki·tap?"
   },
   {
     "english": "how person?",
@@ -19525,7 +13633,7 @@
   },
   {
     "english": "how book?",
-    "garo": "kamat kitab?"
+    "garo": "kamat ki·tap?"
   },
   {
     "english": "who person?",
@@ -19565,7 +13673,7 @@
   },
   {
     "english": "who book?",
-    "garo": "ko kitab?"
+    "garo": "ko ki·tap?"
   },
   {
     "english": "which person?",
@@ -19605,7 +13713,7 @@
   },
   {
     "english": "which book?",
-    "garo": "ma·si kitab?"
+    "garo": "ma·si ki·tap?"
   },
   {
     "english": "how many person?",
@@ -19645,7 +13753,7 @@
   },
   {
     "english": "how many book?",
-    "garo": "kama kitab?"
+    "garo": "kama ki·tap?"
   },
   {
     "english": "how much person?",
@@ -19685,7 +13793,7 @@
   },
   {
     "english": "how much book?",
-    "garo": "kama kitab?"
+    "garo": "kama ki·tap?"
   },
   {
     "english": "in the morning",
@@ -19805,7 +13913,7 @@
   },
   {
     "english": "big book",
-    "garo": "gonga kitab"
+    "garo": "gonga ki·tap"
   },
   {
     "english": "big car",
@@ -19865,7 +13973,7 @@
   },
   {
     "english": "small book",
-    "garo": "chik kitab"
+    "garo": "chik ki·tap"
   },
   {
     "english": "small car",
@@ -19925,7 +14033,7 @@
   },
   {
     "english": "good book",
-    "garo": "ramang kitab"
+    "garo": "ramang ki·tap"
   },
   {
     "english": "good car",
@@ -19985,7 +14093,7 @@
   },
   {
     "english": "bad book",
-    "garo": "rong·a kitab"
+    "garo": "rong·a ki·tap"
   },
   {
     "english": "bad car",
@@ -20045,7 +14153,7 @@
   },
   {
     "english": "hot book",
-    "garo": "mek kitab"
+    "garo": "mek ki·tap"
   },
   {
     "english": "hot car",
@@ -20105,7 +14213,7 @@
   },
   {
     "english": "cold book",
-    "garo": "jak kitab"
+    "garo": "jak ki·tap"
   },
   {
     "english": "cold car",
@@ -20165,7 +14273,7 @@
   },
   {
     "english": "new book",
-    "garo": "gsa kitab"
+    "garo": "gsa ki·tap"
   },
   {
     "english": "new car",
@@ -20225,7 +14333,7 @@
   },
   {
     "english": "old book",
-    "garo": "rong kitab"
+    "garo": "rong ki·tap"
   },
   {
     "english": "old car",
@@ -20285,7 +14393,7 @@
   },
   {
     "english": "beautiful book",
-    "garo": "gima kitab"
+    "garo": "gima ki·tap"
   },
   {
     "english": "beautiful car",
@@ -20345,7 +14453,7 @@
   },
   {
     "english": "ugly book",
-    "garo": "rong kitab"
+    "garo": "rong ki·tap"
   },
   {
     "english": "ugly car",
@@ -20417,27 +14525,27 @@
   },
   {
     "english": "I want book",
-    "garo": "ang nama kitab"
+    "garo": "ang nama ki·tap"
   },
   {
     "english": "I need book",
-    "garo": "ang dang kitab"
+    "garo": "ang dang ki·tap"
   },
   {
     "english": "I like book",
-    "garo": "ang on·a kitab"
+    "garo": "ang on·a ki·tap"
   },
   {
     "english": "I have book",
-    "garo": "ang ong·a kitab"
+    "garo": "ang ong·a ki·tap"
   },
   {
     "english": "I give book",
-    "garo": "ang on·a kitab"
+    "garo": "ang on·a ki·tap"
   },
   {
     "english": "I take book",
-    "garo": "ang na·a kitab"
+    "garo": "ang na·a ki·tap"
   },
   {
     "english": "I want house",
@@ -20561,27 +14669,27 @@
   },
   {
     "english": "you want book",
-    "garo": "na· nama kitab"
+    "garo": "na· nama ki·tap"
   },
   {
     "english": "you need book",
-    "garo": "na· dang kitab"
+    "garo": "na· dang ki·tap"
   },
   {
     "english": "you like book",
-    "garo": "na· on·a kitab"
+    "garo": "na· on·a ki·tap"
   },
   {
     "english": "you have book",
-    "garo": "na· ong·a kitab"
+    "garo": "na· ong·a ki·tap"
   },
   {
     "english": "you give book",
-    "garo": "na· on·a kitab"
+    "garo": "na· on·a ki·tap"
   },
   {
     "english": "you take book",
-    "garo": "na· na·a kitab"
+    "garo": "na· na·a ki·tap"
   },
   {
     "english": "you want house",
@@ -20705,27 +14813,27 @@
   },
   {
     "english": "he want book",
-    "garo": "u nama kitab"
+    "garo": "u nama ki·tap"
   },
   {
     "english": "he need book",
-    "garo": "u dang kitab"
+    "garo": "u dang ki·tap"
   },
   {
     "english": "he like book",
-    "garo": "u on·a kitab"
+    "garo": "u on·a ki·tap"
   },
   {
     "english": "he have book",
-    "garo": "u ong·a kitab"
+    "garo": "u ong·a ki·tap"
   },
   {
     "english": "he give book",
-    "garo": "u on·a kitab"
+    "garo": "u on·a ki·tap"
   },
   {
     "english": "he take book",
-    "garo": "u na·a kitab"
+    "garo": "u na·a ki·tap"
   },
   {
     "english": "he want house",
@@ -20849,27 +14957,27 @@
   },
   {
     "english": "she want book",
-    "garo": "u nama kitab"
+    "garo": "u nama ki·tap"
   },
   {
     "english": "she need book",
-    "garo": "u dang kitab"
+    "garo": "u dang ki·tap"
   },
   {
     "english": "she like book",
-    "garo": "u on·a kitab"
+    "garo": "u on·a ki·tap"
   },
   {
     "english": "she have book",
-    "garo": "u ong·a kitab"
+    "garo": "u ong·a ki·tap"
   },
   {
     "english": "she give book",
-    "garo": "u on·a kitab"
+    "garo": "u on·a ki·tap"
   },
   {
     "english": "she take book",
-    "garo": "u na·a kitab"
+    "garo": "u na·a ki·tap"
   },
   {
     "english": "she want house",
@@ -20993,27 +15101,27 @@
   },
   {
     "english": "we want book",
-    "garo": "i nama kitab"
+    "garo": "i nama ki·tap"
   },
   {
     "english": "we need book",
-    "garo": "i dang kitab"
+    "garo": "i dang ki·tap"
   },
   {
     "english": "we like book",
-    "garo": "i on·a kitab"
+    "garo": "i on·a ki·tap"
   },
   {
     "english": "we have book",
-    "garo": "i ong·a kitab"
+    "garo": "i ong·a ki·tap"
   },
   {
     "english": "we give book",
-    "garo": "i on·a kitab"
+    "garo": "i on·a ki·tap"
   },
   {
     "english": "we take book",
-    "garo": "i na·a kitab"
+    "garo": "i na·a ki·tap"
   },
   {
     "english": "we want house",
@@ -21137,27 +15245,27 @@
   },
   {
     "english": "they want book",
-    "garo": "bi nama kitab"
+    "garo": "bi nama ki·tap"
   },
   {
     "english": "they need book",
-    "garo": "bi dang kitab"
+    "garo": "bi dang ki·tap"
   },
   {
     "english": "they like book",
-    "garo": "bi on·a kitab"
+    "garo": "bi on·a ki·tap"
   },
   {
     "english": "they have book",
-    "garo": "bi ong·a kitab"
+    "garo": "bi ong·a ki·tap"
   },
   {
     "english": "they give book",
-    "garo": "bi on·a kitab"
+    "garo": "bi on·a ki·tap"
   },
   {
     "english": "they take book",
-    "garo": "bi na·a kitab"
+    "garo": "bi na·a ki·tap"
   },
   {
     "english": "they want house",
@@ -21249,7 +15357,7 @@
   },
   {
     "english": "red book",
-    "garo": "bilak kitab"
+    "garo": "bilak ki·tap"
   },
   {
     "english": "red flower",
@@ -21281,7 +15389,7 @@
   },
   {
     "english": "blue book",
-    "garo": "sam kitab"
+    "garo": "sam ki·tap"
   },
   {
     "english": "blue flower",
@@ -21313,7 +15421,7 @@
   },
   {
     "english": "green book",
-    "garo": "seng kitab"
+    "garo": "seng ki·tap"
   },
   {
     "english": "green flower",
@@ -21345,7 +15453,7 @@
   },
   {
     "english": "yellow book",
-    "garo": "wangala kitab"
+    "garo": "wangala ki·tap"
   },
   {
     "english": "yellow flower",
@@ -21377,7 +15485,7 @@
   },
   {
     "english": "black book",
-    "garo": "sal kitab"
+    "garo": "sal ki·tap"
   },
   {
     "english": "black flower",
@@ -21409,7 +15517,7 @@
   },
   {
     "english": "white book",
-    "garo": "seng kitab"
+    "garo": "seng ki·tap"
   },
   {
     "english": "white flower",
@@ -21441,7 +15549,7 @@
   },
   {
     "english": "brown book",
-    "garo": "rong kitab"
+    "garo": "rong ki·tap"
   },
   {
     "english": "brown flower",
@@ -21473,7 +15581,7 @@
   },
   {
     "english": "purple book",
-    "garo": "sam bilak kitab"
+    "garo": "sam bilak ki·tap"
   },
   {
     "english": "purple flower",
@@ -23349,5 +17457,121 @@
     "garo": "An·tangko achik chanjok",
     "pos": "sentence",
     "note": "An·tangko: Me, Achik: Dog, Chanjok: Bit"
+  },
+  {
+    "english": "one book",
+    "garo": "ki·tap king·sa"
+  },
+  {
+    "english": "two book",
+    "garo": "ki·tap king·gni"
+  },
+  {
+    "english": "two books",
+    "garo": "ki·tap king·gni"
+  },
+  {
+    "english": "three book",
+    "garo": "ki·tap king·gittam"
+  },
+  {
+    "english": "three books",
+    "garo": "ki·tap king·gittam"
+  },
+  {
+    "english": "four book",
+    "garo": "ki·tap king·bri"
+  },
+  {
+    "english": "four books",
+    "garo": "ki·tap king·bri"
+  },
+  {
+    "english": "five book",
+    "garo": "ki·tap king·bonga"
+  },
+  {
+    "english": "five books",
+    "garo": "ki·tap king·bonga"
+  },
+  {
+    "english": "six book",
+    "garo": "ki·tap king·dok"
+  },
+  {
+    "english": "six books",
+    "garo": "ki·tap king·dok"
+  },
+  {
+    "english": "seven book",
+    "garo": "ki·tap king·sni"
+  },
+  {
+    "english": "seven books",
+    "garo": "ki·tap king·sni"
+  },
+  {
+    "english": "eight book",
+    "garo": "ki·tap king·chet"
+  },
+  {
+    "english": "eight books",
+    "garo": "ki·tap king·chet"
+  },
+  {
+    "english": "nine book",
+    "garo": "ki·tap king·sku"
+  },
+  {
+    "english": "nine books",
+    "garo": "ki·tap king·sku"
+  },
+  {
+    "english": "ten book",
+    "garo": "ki·tap king·chiking"
+  },
+  {
+    "english": "ten books",
+    "garo": "ki·tap king·chiking"
+  },
+  {
+    "english": "eleven book",
+    "garo": "ki·tap king·Chi·sa"
+  },
+  {
+    "english": "twelve book",
+    "garo": "ki·tap king·Chi·gni"
+  },
+  {
+    "english": "thirteen book",
+    "garo": "ki·tap king·Chi·gittam"
+  },
+  {
+    "english": "fourteen book",
+    "garo": "ki·tap king·Chi·bri"
+  },
+  {
+    "english": "fifteen book",
+    "garo": "ki·tap king·Chi·bonga"
+  },
+  {
+    "english": "sixteen book",
+    "garo": "ki·tap king·Chi·dok"
+  },
+  {
+    "english": "seventeen book",
+    "garo": "ki·tap king·Chi·sni"
+  },
+  {
+    "english": "eighteen book",
+    "garo": "ki·tap king·Chi·chet"
+  },
+  {
+    "english": "nineteen book",
+    "garo": "ki·tap king·Chi·sku"
+  },
+  {
+    "english": "twenty book",
+    "garo": "ki·tap king·Kolgrik"
   }
 ]
