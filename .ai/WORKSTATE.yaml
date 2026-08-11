@@ -11,6 +11,44 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
+  head: b263902
+  last_updated: "2026-08-11 (Claude A, session close: closed the fruit/mewa and
+    pen/kolom root ambiguities flagged open in the prior checkpoint --
+    fruit=bite (matches pre-existing live entry, 'mewa' retired),
+    fruits=biterang (plain plural, distinct word not just bite+suffix), root
+    error 'mewa'->'bite' fixed in the one existing counted entry ('four
+    fruits'); pen=kolom (matches pre-existing live 'Anga kolom donga'='i have
+    a pen', 'Pen' English-loanword placeholder retired, embedded loanword in
+    'can you give me your pen?' fixed). Built out full 1-20 counting for both
+    now that roots are settled: fruit (bite+rong classifier, no raka, matches
+    'mewa rongbri' structural precedent) and pen (kolom+ge classifier, raka,
+    matches RULE-G-classifier.yaml's 'kolom ge·sa' reference). Also closed
+    'book' root repo-wide this session (kitab->ki·tap, both
+    master_dictionary.json and the legacy garo_dictionary.json source file;
+    1,437 pre-existing exact-duplicate rows removed from garo_dictionary.json
+    as a side effect of the dedup pass) and generalized the
+    NOUN+CLASSIFIER+SUFFIX formula to person/rupees/tree (1-20). Caught and
+    fixed a self-introduced bug mid-session: a notes.includes('SUPERSEDED')
+    status check false-positived on VERIFIED entries whose own citation text
+    contained that word, producing 9 duplicate-live rows for book teens --
+    fixed the check to notes.trim().startsWith('SUPERSEDED'), audited the
+    full corpus for any other false-positive damage (found none), deduped the
+    9 rows. Synced against origin three times mid-session (Claude B's
+    concurrent fish-classifier fix e847620, bird-propagation fix c4ba231, and
+    two doc-only session-close commits) via rebase, all clean, no conflicts
+    in dictionary data. Also synced final_entries.json (currently unused by
+    the build pipeline, not referenced from any .js file, but kept in sync
+    for corpus hygiene per the precedent Claude B set fixing it for bird) --
+    fixed the same mewa/Pen root errors there too, plus a wrong classifier
+    ('ge' instead of 'rong') on its fruit entry. Remaining known-open items:
+    person/student/teacher's wider 111-candidate root ambiguity, apple's
+    Apple/te·spu competing-VERIFIED conflict, coin's untagged root -- none
+    touched, all still need native-confirmation calls per docs/MIGRATION_2026-08-11.md's
+    gap table. Verified: 203/203 unit tests, prepare-data.js build (8146
+    unique compiled entries), repository-intelligence.js 0 new violations
+    across all six checks, working tree clean, fully pushed. PAT supplied
+    live by Project Owner, used inline in push URL only, never persisted,
+    rotated after use.)"
   last_updated: "2026-08-11 (Claude B, session close: resumed from checkpoint 3
     (d2fcb88) via user-pasted migration doc, re-synced before acting -- found
     origin had advanced to 3ec06ee via a concurrent Claude A session (dog/cat
@@ -51,6 +89,15 @@ repository:
   last_updated: "2026-08-10 (Claude A, complete counting-system audit per Claude C's engineering report + own request to review every classifier family, not just dogs. Session started from a stale base (827d83d); git fetch mid-session found origin had advanced 11 commits, including a concurrent Claude A/Thangseng NV-071 fix (three/four dogs, deliberately leaving 'three cat' untouched) and a Claude B session that auto-corrected 413 mismatches by mechanical derivation then REVERTED it on discovering it silently overrode NV-071's restraint, replacing it with a read-only audit tool (docs/COUNTING_PHRASE_AUDIT_20260810.md, 253 candidates) addressed to Claude A. Reset to reconciled origin state and redid this audit against it. Found the identical fabrication template running through every classifier family (mang/sak/king/gong/pang/rong) plus 10 nouns with no confirmed classifier at all (house/car/road/river/mountain/village/water/food/rice/banana) — 523 entries total, same shape as NV-071's dog fix but corpus-wide: numeral suffix stuck at 2's-suffix ·gni regardless of claimed count, or a redundant 1's-prefix; fake roots reused across unrelated nouns (rang for house/tree/book/car; chik for river/water/student), none matching the noun's own VERIFIED singular entry. No new native input needed to flag these (pure arithmetic/root-word contradiction against evidence on file) — tagged all 523 SUPERSEDED in place (not deleted), NOT asserting replacement values (that stays native-review territory per NV-071/the revert's established restraint — Claude B's 253-candidate report is the correct next input for that). Full report + answers to Claude C's 7 questions: docs/CLAUDE_A_COUNTING_SYSTEM_AUDIT_20260810.md. Verified against reconciled state: 203/203 unit tests, prepare-data.js build 203/203, repository-intelligence.js 0 new violations. No engineering code touched — master_dictionary.json + .ai/ + docs/ only. Pushed via session-supplied PAT inline in push URL only, rotated after use.)"
   last_updated: "2026-08-09 (Claude B, session close: closed all 4 open P1 engineering items from the 2026-08-08 migration doc (smile variant, getCategories/getByCategory dormancy, dropped children classifier, build-gate test-file gap) plus a new systemic '<number> <noun>' classifier-phrase self-correction covering all categories, per Project Owner-confirmed reference examples — see claude_b.current_task for full detail. Synced clean at 4ee8f14 before this session's commits.)"
   last_updated_prior: "2026-08-07 (Claude B, session close: synced clean at 9cad999 — see claude_b.current_task for full detail. Fixed the critical SUPERSEDED-precedence bug from Claude A's handoff, 330/337 keys verified corrected; found and fixed a related coupling bug in morphologyEngine.js's verb-conjugation pipeline; fixed phrase_maps.js's book/table/buy/door; updated 3 stale pre-audit tests; logged RC-CANDIDATE-038 (101-key orthography-drift discovery) and phrase_maps.js's wider 112-entry stale-vs-SUPERSEDED gap as follow-ups, neither rushed. Native-confirmed: child/kid=Bi·sa (raka mark corrected everywhere), goat=Do·bok (reconfirmed final, reversing the 2026-08-01 audit's call on that one word). Staged 'dambe bi·sa' via Pending Lexicon (PL-0002014), not written directly to master. Merged two concurrent origin pushes cleanly during the session (66bde9f then 11c4a6d, Claude A's gap audit + global hyphen->raka conversion) — compiled_dict.json/compiled_dict_alternates.json regenerated from merged source both times, all other files auto-merged clean. Pushed via session-supplied PAT, passed inline in the push URL only, never persisted to git config — confirmed clean. 177/177 tests, dictionary integrity 8058/8058, repository-intelligence.js 0 new violations.)"
+  test_status: >-
+    "203/203 unit tests passing (unchanged count -- this session's fixes
+    corrected/added dictionary entries only, no new test files. 1 pre-existing
+    RC-037 assertion touched earlier in this checkpoint's session lineage
+    already fixed; no new stale assertions found this round.
+    prepare-data.js build: 8146 unique compiled entries.
+    repository-intelligence.js: 0 new violations across Checks A-F.
+    Working tree clean, HEAD == origin/main, nothing local-only.) - Claude A,
+    2026-08-11, fruit/pen root closure + book repo-wide fix checkpoint"
   test_status: >-
     "203/203 unit tests passing (unchanged count from 2026-08-10 checkpoint --
     this session's fixes corrected existing/added new entries within the
@@ -110,6 +157,54 @@ claude_a:
     2026-07-24 migration doc pasted directly into the current session
     (not yet its own committed file). See current_task below for
     everything since.
+  current_task: >-
+    2026-08-11 (session, resumed via user-pasted migration doc reference,
+    re-synced against actual origin state before acting -- found origin had
+    advanced past the pasted doc through several commits, including
+    concurrent Claude A counting work already covering dog/cat/bird/book
+    teens+twenty and the bird=chicken=do·o root closure). This session's own
+    work, in order: (1) native-confirmed and closed the 'three cat' open
+    question (menggo mang·gittam) and mechanically completed dog/cat 1-10
+    counting off that root; (2) native-confirmed and closed the bird
+    Do·/do·o/do·a three-way root split for good (bird=chicken=do·o), fixing a
+    hidden root error along the way (a cited 'VERIFIED' reference example had
+    silently been using 'do·a'='climb', not a bird word, this whole time) and
+    implementing teen counting (11-19+20, CLASSIFIER·Chi·[suffix] formula)
+    across dog/cat/bird for the first time -- the formula already existed in
+    garo_classifier.js (confirmed 2026-06-28) but had never been applied to
+    dictionary data; (3) closed the book root for good, repo-wide
+    (kitab->ki·tap, both master_dictionary.json and the legacy
+    garo_dictionary.json source file), full 1-20 king-classifier rebuild,
+    deduped 1,437 pre-existing exact-duplicate rows from garo_dictionary.json
+    as a side effect; (4) generalized NOUN+CLASSIFIER+SUFFIX to
+    person/rupees/tree (1-20), filling a previously-unnoticed gap where
+    person's 2-10 entries were missing the 'sak' classifier token entirely
+    (same bug class as book); (5) closed the fruit/mewa and pen/kolom root
+    ambiguities flagged open earlier this session (fruit=bite,
+    fruits=biterang as a distinct plain-plural word, pen=kolom), full 1-20
+    rebuild for both once roots were settled, plus a matching fix to
+    final_entries.json (an orphaned data file, not currently read by the
+    build, but kept in sync per the precedent Claude B set fixing it for
+    bird) which had the same mewa/Pen errors plus a wrong classifier. Caught
+    and fixed a bug in my own tooling mid-session: a
+    notes.includes('SUPERSEDED') status check false-positived on VERIFIED
+    entries whose own citation text happened to contain that word (e.g.
+    '...retained SUPERSEDED per citation discipline'), producing 9
+    exact-duplicate live rows for book's teen entries -- caught via a
+    full-corpus duplicate-live-value audit, fixed the check to
+    notes.trim().startsWith('SUPERSEDED'), confirmed zero incorrect
+    SUPERSEDED mis-tagging occurred anywhere else, deduped the 9 rows.
+    Rebased three times against Claude B's concurrent commits (fish-count fix
+    e847620, bird-propagation fix c4ba231, two session-close doc commits) --
+    all clean, no data conflicts. STILL OPEN, not touched, needs native input
+    before any fix (root ambiguity, not a formula question): person's wider
+    student/teacher root conflict (111 candidates per Claude B's
+    COUNTING_PHRASE_AUDIT_20260810.md), apple's Apple/te·spu competing-VERIFIED
+    conflict, coin's untagged root. Verified: 203/203 unit tests,
+    prepare-data.js build clean (8146 unique entries),
+    repository-intelligence.js 0 new violations (Checks A-F), working tree
+    clean, fully pushed. PAT supplied live by Project Owner, used inline in
+    push URL only, never persisted, rotated after use.
   current_task: >-
     2026-08-02 (new session, resumed from checkpoint 0ab04bf via
     migration doc, re-verified against repo before acting): Claude D's

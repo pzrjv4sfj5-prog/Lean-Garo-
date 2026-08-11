@@ -4073,11 +4073,11 @@
   },
   {
     "english": "four fruits",
-    "garo": "mewa ge·bri",
+    "garo": "bite rongbri",
     "pos": null,
     "category": "numbers",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH"
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — synced 2026-08-11 (Claude A) to match master_dictionary.json's fruit-root closure: root 'mewa'->'bite', classifier corrected 'ge'->'rong' (fruit is a rong/roundish-object noun, not a ge/pen-family noun)."
   },
   {
     "english": "Fourteen",
@@ -8145,19 +8145,19 @@
   },
   {
     "english": "Pen",
-    "garo": "Pen",
+    "garo": "kolom",
     "pos": null,
     "category": "education",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:kol-om"
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — synced 2026-08-11 (Claude A) to match master_dictionary.json's pen-root closure: English loanword 'Pen' -> native root 'kolom'."
   },
   {
     "english": "Pen",
-    "garo": "kol·om",
+    "garo": "kolom",
     "pos": null,
     "category": "education",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — synced 2026-08-11 (Claude A): dot-variant 'kol·om' corrected to canonical no-dot 'kolom'."
   },
   {
     "english": "Pencil",

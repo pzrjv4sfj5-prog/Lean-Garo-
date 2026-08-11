@@ -5390,8 +5390,9 @@
   },
   {
     "english": "can you give me your pen?",
-    "garo": "Na·a nang pen ko on·a mangenma?",
-    "category": "education"
+    "garo": "Na·a nang kolom ko on·a mangenma?",
+    "category": "education",
+    "notes": "Root corrected 2026-08-11 (Claude A): embedded English loanword 'pen' -> 'kolom' per pen-root closure. Was: 'Na·a nang pen ko on·a mangenma?'."
   },
   {
     "english": "yes, of course.",
@@ -5704,7 +5705,8 @@
   {
     "english": "four fruits",
     "garo": "mewa rongbri",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — fruit-root closure 2026-08-11 (Claude A): root 'mewa' replaced by native-confirmed 'bite'. Retained per citation discipline. Prior notes: (none)"
   },
   {
     "english": "five coins",
@@ -19879,7 +19881,7 @@
     "pos": null,
     "category": "education",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — pen-root closure 2026-08-11 (Claude A): dot-variant 'kol·om' replaced by canonical no-dot 'kolom' (matches native confirmation and pre-existing live usage elsewhere in the corpus). Retained per citation discipline. Prior notes: variant/VERIFIED/HIGH"
   },
   {
     "english": "Pencil",
@@ -63543,5 +63545,349 @@
     "category": "nature",
     "classifier": "pang",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+  },
+  {
+    "english": "fruits",
+    "garo": "biterang",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). 'fruits'=biterang (plain plural of 'fruit'=bite). Closes prior fruit/mewa root ambiguity in favor of 'bite'."
+  },
+  {
+    "english": "one fruits",
+    "garo": "bite rongsa",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "two fruits",
+    "garo": "bite ronggni",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "three fruits",
+    "garo": "bite ronggittam",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "four fruits",
+    "garo": "bite rongbri",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "five fruits",
+    "garo": "bite rongbonga",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "six fruits",
+    "garo": "bite rongdok",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "seven fruits",
+    "garo": "bite rongsni",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "eight fruits",
+    "garo": "bite rongchet",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "nine fruits",
+    "garo": "bite rongsku",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "ten fruits",
+    "garo": "bite rongchiking",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "eleven fruits",
+    "garo": "bite rongChi·sa",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "twelve fruits",
+    "garo": "bite rongChi·gni",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "thirteen fruits",
+    "garo": "bite rongChi·gittam",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "fourteen fruits",
+    "garo": "bite rongChi·bri",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "fifteen fruits",
+    "garo": "bite rongChi·bonga",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "sixteen fruits",
+    "garo": "bite rongChi·dok",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "seventeen fruits",
+    "garo": "bite rongChi·sni",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "eighteen fruits",
+    "garo": "bite rongChi·chet",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "nineteen fruits",
+    "garo": "bite rongChi·sku",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "twenty fruits",
+    "garo": "bite rongKolgrik",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'bite' (fruit) + rong classifier (roundish objects, NV-048/049), no raka dot between classifier and suffix (matches pre-existing 'mewa rongbri' structural pattern, just corrected root)."
+  },
+  {
+    "english": "pen",
+    "garo": "kolom",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). 'pen'=kolom, closing the Pen/kolom root ambiguity for good. Example confirmed: \"I have a pen\"=\"ango kolom donga\"."
+  },
+  {
+    "english": "Pen",
+    "garo": "kolom",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Canonical no-dot spelling, closing the kolom/kol·om orthography split."
+  },
+  {
+    "english": "one pens",
+    "garo": "kolom ge·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "two pens",
+    "garo": "kolom ge·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "three pens",
+    "garo": "kolom ge·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "four pens",
+    "garo": "kolom ge·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "five pens",
+    "garo": "kolom ge·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "six pens",
+    "garo": "kolom ge·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "seven pens",
+    "garo": "kolom ge·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "eight pens",
+    "garo": "kolom ge·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "nine pens",
+    "garo": "kolom ge·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "ten pens",
+    "garo": "kolom ge·chiking",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "eleven pens",
+    "garo": "kolom ge·Chi·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "twelve pens",
+    "garo": "kolom ge·Chi·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "thirteen pens",
+    "garo": "kolom ge·Chi·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "fourteen pens",
+    "garo": "kolom ge·Chi·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "fifteen pens",
+    "garo": "kolom ge·Chi·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "sixteen pens",
+    "garo": "kolom ge·Chi·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "seventeen pens",
+    "garo": "kolom ge·Chi·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "eighteen pens",
+    "garo": "kolom ge·Chi·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "nineteen pens",
+    "garo": "kolom ge·Chi·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "twenty pens",
+    "garo": "kolom ge·Kolgrik",
+    "pos": null,
+    "category": "education",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
   }
 ]
