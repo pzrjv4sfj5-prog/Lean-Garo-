@@ -438,6 +438,18 @@ export function analyzeGrammar(input) {
         }
       }
       if (!objGaro) {
+        // "buy rice" -> uncooked rice (merong), not the default cooked
+        // reading (mi). Narrowly scoped to purposeAction=buy + object=
+        // exactly "rice" only — direct Project Owner confirmation,
+        // 2026-08-12 ("Rice (Uncooked) = Merong, Rice (Cooked) = Mi").
+        // Does not touch "rice" in any other context (eating, generic
+        // reference, etc.), where "mi" (cooked) remains the correct
+        // default — that distinction is unchanged.
+        if (purposeAction && purposeAction.english.toLowerCase() === 'buy' && lastWord.toLowerCase() === 'rice') {
+          objGaro = 'merong';
+        }
+      }
+      if (!objGaro) {
         objGaro = existingFullPhrase || lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
       }
       const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
