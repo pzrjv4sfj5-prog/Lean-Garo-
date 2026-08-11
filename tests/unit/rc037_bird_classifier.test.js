@@ -36,12 +36,13 @@ test('RC-CANDIDATE-037: dog/cat entries get the correct noun substituted, not ju
   assert.equal(compiled['two dogs'], 'achak mang·gni');
   // "three dogs" was corrected 2026-08-09 (NV-071 follow-up, Thangseng
   // direct) from the shared-with-"two" placeholder to the numerically
-  // correct achak+mang·+gittam('three') form. "three cat" still carries
-  // the old un-confirmed mang·gni placeholder pending its own native
-  // confirmation — not touched by that relay.
+  // correct achak+mang·+gittam('three') form. "three cat" was closed the
+  // same way 2026-08-11 (Thangseng direct, WhatsApp relay via Tridip):
+  // 'three cat'=Menggo mang·gittam, confirming the identical mang·gittam
+  // pattern for the cat root.
   assert.equal(compiled['three dogs'], 'achak mang·gittam');
   assert.equal(compiled['two cat'], 'menggo mang·gni');
-  assert.equal(compiled['three cat'], 'menggo mang·gni');
+  assert.equal(compiled['three cat'], 'menggo mang·gittam');
 });
 
 test('RC-CANDIDATE-037: genuine bird/chicken/fish entries are unaffected', () => {
