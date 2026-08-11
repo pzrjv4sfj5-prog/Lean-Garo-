@@ -5715,7 +5715,7 @@
     "english": "ten birds",
     "garo": "do·a mang·chiking",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'ten birds' has VERIFIED/HIGH form(s) ['do·a mang·chiking']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'ten birds' has VERIFIED/HIGH form(s) ['do·a mang·chiking']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. | Also carries the separate do·a/climb root-error, see live entry's correction note."
   },
   {
     "english": "let's drink",
@@ -21300,7 +21300,7 @@
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH"
+    "notes": "SUPERSEDED — root-error correction 2026-08-11 (Claude A): \"do·a\" is not a bird-root spelling variant, it's a different word entirely (\"climb\"/\"upward\" — see master_dictionary.json \"Climb\"/\"upward\" entries). Wrong root baked into what was mistakenly treated as the VERIFIED/HIGH reference example. Corrected to \"do·o mang·chiking\" per bird-root closure (Thangseng, 2026-08-11). Retained per citation discipline. Prior notes: VERIFIED/HIGH"
   },
   {
     "english": "Testicle",
@@ -23628,7 +23628,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "CONFIRMED — Project Owner relay 2026-07-24: Do· alone is the bird-family root/generic word; supersedes prior do·o merge (do·o itself now separately confirmed = chicken, see chicken entry / NV-025)"
+    "notes": "SUPERSEDED — do·o CLOSED 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): \"bird\"=do·o, same word as \"chicken\"=do·o — bird is the category, do·o is the shared root, native-reconfirmed. Supersedes the 2026-07-24 relay that had set \"Do·\" (no 'o') as a separate generic form. Retained per citation discipline, not deleted. Prior notes: CONFIRMED — Project Owner relay 2026-07-24: Do· alone is the bird-family root/generic word; supersedes prior do·o merge (do·o itself now separately confirmed = chicken, see chicken entry / NV-025)"
   },
   {
     "english": "chicken",
@@ -23636,7 +23636,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "CONFIRMED native (Thangseng, NV-025, 2026-07-20) + Project Owner relay 2026-07-24 resolving prior bird/chicken do·o collision"
+    "notes": "CONFIRMED native (Thangseng, NV-025, 2026-07-20) + Project Owner relay 2026-07-24 resolving prior bird/chicken do·o collision | Cross-ref 2026-08-11: this root is shared with \"bird\" (do·o) — bird is the category, chicken is a member of it, same word, not a coincidence. See \"bird\" entry."
   },
   {
     "english": "bird basket",
@@ -62116,5 +62116,605 @@
     "category": "animals",
     "classifier": null,
     "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['10']='chiking', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chi mang·gni' entry, which is retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "bird",
+    "garo": "do·o",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): \"bird\"=do·o, identical to \"chicken\"=do·o. Bird is the category; do·o is the correct shared root for both — not two words, not a spelling variant, the same word. Closes the prior Do·/do·o/do·a three-way spelling confusion for good."
+  },
+  {
+    "english": "ten bird",
+    "garo": "do·o mang·chiking",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Corrects the \"do·a\" root error (do·a=\"climb\"/\"upward\", not bird) in the pre-existing entry — root should be do·o per 2026-08-11 bird-root closure (Thangseng). Classifier+suffix (mang·chiking, NUMBERS[10]) unchanged, already correct."
+  },
+  {
+    "english": "ten birds",
+    "garo": "do·o mang·chiking",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Corrects the \"do·a\" root error (do·a=\"climb\"/\"upward\", not bird) in the pre-existing entry — root should be do·o per 2026-08-11 bird-root closure (Thangseng). Classifier+suffix (mang·chiking, NUMBERS[10]) unchanged, already correct."
+  },
+  {
+    "english": "one bird",
+    "garo": "do·o mang·sa",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['1']='sa' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sa mang·sa' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "three bird",
+    "garo": "do·o mang·gittam",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['3']='gittam' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'na·tok mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "three birds",
+    "garo": "do·o mang·gittam",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['3']='gittam' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'na·tok mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "four bird",
+    "garo": "do·o mang·bri",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['4']='bri' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'brang mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "four birds",
+    "garo": "do·o mang·bri",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['4']='bri' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'brang mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "five bird",
+    "garo": "do·o mang·bonga",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['5']='bonga' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'bonga mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "five birds",
+    "garo": "do·o mang·bonga",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['5']='bonga' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'bonga mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "six bird",
+    "garo": "do·o mang·dok",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['6']='dok' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'dokka mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "six birds",
+    "garo": "do·o mang·dok",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['6']='dok' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'dokka mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "seven bird",
+    "garo": "do·o mang·sni",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['7']='sni' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sni mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "seven birds",
+    "garo": "do·o mang·sni",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['7']='sni' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sni mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "eight bird",
+    "garo": "do·o mang·chet",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['8']='chet' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'chet mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "eight birds",
+    "garo": "do·o mang·chet",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['8']='chet' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'chet mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "nine bird",
+    "garo": "do·o mang·sku",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['9']='sku' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sku mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "nine birds",
+    "garo": "do·o mang·sku",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['9']='sku' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sku mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "eleven dog",
+    "garo": "achak mang·Chi·sa",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "twelve dog",
+    "garo": "achak mang·Chi·gni",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "thirteen dog",
+    "garo": "achak mang·Chi·gittam",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "fourteen dog",
+    "garo": "achak mang·Chi·bri",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "fifteen dog",
+    "garo": "achak mang·Chi·bonga",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "sixteen dog",
+    "garo": "achak mang·Chi·dok",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "seventeen dog",
+    "garo": "achak mang·Chi·sni",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "eighteen dog",
+    "garo": "achak mang·Chi·chet",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "nineteen dog",
+    "garo": "achak mang·Chi·sku",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "twenty dog",
+    "garo": "achak mang·Kolgrik",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED."
+  },
+  {
+    "english": "eleven cat",
+    "garo": "menggo mang·Chi·sa",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "twelve cat",
+    "garo": "menggo mang·Chi·gni",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "thirteen cat",
+    "garo": "menggo mang·Chi·gittam",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "fourteen cat",
+    "garo": "menggo mang·Chi·bri",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "fifteen cat",
+    "garo": "menggo mang·Chi·bonga",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "sixteen cat",
+    "garo": "menggo mang·Chi·dok",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "seventeen cat",
+    "garo": "menggo mang·Chi·sni",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "eighteen cat",
+    "garo": "menggo mang·Chi·chet",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "nineteen cat",
+    "garo": "menggo mang·Chi·sku",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "twenty cat",
+    "garo": "menggo mang·Kolgrik",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED."
+  },
+  {
+    "english": "eleven bird",
+    "garo": "do·o mang·Chi·sa",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "twelve bird",
+    "garo": "do·o mang·Chi·gni",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "thirteen bird",
+    "garo": "do·o mang·Chi·gittam",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "fourteen bird",
+    "garo": "do·o mang·Chi·bri",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "fifteen bird",
+    "garo": "do·o mang·Chi·bonga",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "sixteen bird",
+    "garo": "do·o mang·Chi·dok",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "seventeen bird",
+    "garo": "do·o mang·Chi·sni",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "eighteen bird",
+    "garo": "do·o mang·Chi·chet",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "nineteen bird",
+    "garo": "do·o mang·Chi·sku",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline."
+  },
+  {
+    "english": "twenty bird",
+    "garo": "do·o mang·Kolgrik",
+    "pos": null,
+    "category": "animals",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED."
+  },
+  {
+    "english": "eleven book",
+    "garo": "ki·tap king·Chi·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi sa kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "twelve book",
+    "garo": "ki·tap king·Chi·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi do·o kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "thirteen book",
+    "garo": "ki·tap king·Chi·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi na·tok kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "fourteen book",
+    "garo": "ki·tap king·Chi·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi brang kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "fifteen book",
+    "garo": "ki·tap king·Chi·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi bonga kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "sixteen book",
+    "garo": "ki·tap king·Chi·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi dokka kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "seventeen book",
+    "garo": "ki·tap king·Chi·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi sni kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "eighteen book",
+    "garo": "ki·tap king·Chi·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi chet kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "nineteen book",
+    "garo": "ki·tap king·Chi·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "king",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'ki·tap' (book, VERIFIED) + king classifier — raka dot confirmed by both this session's relay and the pre-existing live 'ki·tap king·gittam'=\"three books\" reference. Replaces fabricated 'chi sku kitab·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'book' counted entries (e.g. 'two book'='kitab·gni') use a different, likely-broken construction — wrong root spelling and missing the 'king' classifier token entirely. That's a separate, wider bug from this teens fix and is NOT touched here; flagging for a dedicated follow-up."
+  },
+  {
+    "english": "eleven person",
+    "garo": "mande sak·Chi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi sa mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "twelve person",
+    "garo": "mande sak·Chi·gni",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi do·o mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "thirteen person",
+    "garo": "mande sak·Chi·gittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi na·tok mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "fourteen person",
+    "garo": "mande sak·Chi·bri",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi brang mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "fifteen person",
+    "garo": "mande sak·Chi·bonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi bonga mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "sixteen person",
+    "garo": "mande sak·Chi·dok",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi dokka mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "seventeen person",
+    "garo": "mande sak·Chi·sni",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi sni mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "eighteen person",
+    "garo": "mande sak·Chi·chet",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi chet mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "nineteen person",
+    "garo": "mande sak·Chi·sku",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'mande' (person) + sak classifier, matching the pre-existing live 'mande sak·sa'=\"one person\" reference. Replaces fabricated 'chi sku mande·gni' entry, retained SUPERSEDED. NOTE: the pre-existing 1-10 singular-key 'person' counted entries (e.g. 'two person'='mande·gni') are missing the 'sak' classifier token entirely — same class of bug as 'book', separate from this teens fix, NOT touched here; flagging for follow-up."
+  },
+  {
+    "english": "eleven rupees",
+    "garo": "tangka gong·Chi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "twelve rupees",
+    "garo": "tangka gong·Chi·gni",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "thirteen rupees",
+    "garo": "tangka gong·Chi·gittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "fourteen rupees",
+    "garo": "tangka gong·Chi·bri",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "fifteen rupees",
+    "garo": "tangka gong·Chi·bonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "sixteen rupees",
+    "garo": "tangka gong·Chi·dok",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "seventeen rupees",
+    "garo": "tangka gong·Chi·sni",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "eighteen rupees",
+    "garo": "tangka gong·Chi·chet",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
+  },
+  {
+    "english": "nineteen rupees",
+    "garo": "tangka gong·Chi·sku",
+    "pos": null,
+    "category": "general",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'tangka' (rupee/currency) + gong classifier ('gong'=money/currency, native-reconfirmed 2026-08-11), matching the pre-existing live 'tangka gong·bonga'=\"five rupees\" reference. New entry — no fabricated placeholder existed for this key yet."
   }
 ]
