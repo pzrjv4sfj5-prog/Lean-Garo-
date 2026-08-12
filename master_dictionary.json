@@ -1475,7 +1475,7 @@
     "english": "tree",
     "garo": "Bol",
     "category": "nature",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'tree' has VERIFIED/HIGH form(s) [\"a'bil\", 'bi·pang', 'bol·bi·pang', 'bol·pang']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): 'Bol' is the generic word for 'tree' ('Bol panggni'='two trees'). Previously marked SUPERSEDED in the 2026-08-01 audit in favor of a'bil, which the Project Owner has now clarified names a *specific* tree species, not the generic word — see the a'bil entry's updated notes. This was the entry that 2026-08-01's audit note pointed away from; the pointer direction is now reversed."
   },
   {
     "english": "flower",
@@ -6321,7 +6321,7 @@
     "english": "two trees",
     "garo": "rang·gni",
     "category": "numbers",
-    "notes": "SUPERSEDED — counting-formula generalization 2026-08-11 (Claude A): replaced by 'a'bil panggni'. Old value used the fabricated 'rang' filler root (same fabrication pattern as dog/cat/bird/book/tree — 523-entry audit). Prior notes: (none)"
+    "notes": "SUPERSEDED — counting-formula generalization 2026-08-11 (Claude A): replaced by 'Bol panggni'. Old value used the fabricated 'rang' filler root (same fabrication pattern as dog/cat/bird/book/tree — 523-entry audit). Prior notes: (none)"
   },
   {
     "english": "two cars",
@@ -7087,7 +7087,7 @@
     "english": "two tree",
     "garo": "rang·gni",
     "category": "nature",
-    "notes": "SUPERSEDED — counting-formula generalization 2026-08-11 (Claude A): replaced by 'a'bil panggni'. Old value used the fabricated 'rang' filler root (same fabrication pattern as dog/cat/bird/book/tree — 523-entry audit). Prior notes: (none)"
+    "notes": "SUPERSEDED — counting-formula generalization 2026-08-11 (Claude A): replaced by 'Bol panggni'. Old value used the fabricated 'rang' filler root (same fabrication pattern as dog/cat/bird/book/tree — 523-entry audit). Prior notes: (none)"
   },
   {
     "english": "two book",
@@ -48193,7 +48193,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/doc7"
+    "notes": "NOT the generic word for 'tree' — corrected 2026-08-12 (direct Project Owner input). Original note 'VERIFIED/HIGH/doc7' verified only that this is real Garo, not that it maps to generic 'tree'; it in fact names a *specific* tree species. The generic root is 'Bol' — see that entry. This mislabeling is what led Claude A's 2026-08-11 counting-formula work (session commit b263902) to build the tree 1-20 counting set on the wrong root; corrected same day it was found, 2026-08-12."
   },
   {
     "english": "Unable",
@@ -63494,235 +63494,235 @@
   },
   {
     "english": "one tree",
-    "garo": "a'bil pangsa",
+    "garo": "Bol pangsa",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "two tree",
-    "garo": "a'bil panggni",
+    "garo": "Bol panggni",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "two trees",
-    "garo": "a'bil panggni",
+    "garo": "Bol panggni",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "three tree",
-    "garo": "a'bil panggittam",
+    "garo": "Bol panggittam",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "three trees",
-    "garo": "a'bil panggittam",
+    "garo": "Bol panggittam",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "four tree",
-    "garo": "a'bil pangbri",
+    "garo": "Bol pangbri",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "four trees",
-    "garo": "a'bil pangbri",
+    "garo": "Bol pangbri",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "five tree",
-    "garo": "a'bil pangbonga",
+    "garo": "Bol pangbonga",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "five trees",
-    "garo": "a'bil pangbonga",
+    "garo": "Bol pangbonga",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "six tree",
-    "garo": "a'bil pangdok",
+    "garo": "Bol pangdok",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "six trees",
-    "garo": "a'bil pangdok",
+    "garo": "Bol pangdok",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "seven tree",
-    "garo": "a'bil pangsni",
+    "garo": "Bol pangsni",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "seven trees",
-    "garo": "a'bil pangsni",
+    "garo": "Bol pangsni",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "eight tree",
-    "garo": "a'bil pangchet",
+    "garo": "Bol pangchet",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "eight trees",
-    "garo": "a'bil pangchet",
+    "garo": "Bol pangchet",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "nine tree",
-    "garo": "a'bil pangsku",
+    "garo": "Bol pangsku",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "nine trees",
-    "garo": "a'bil pangsku",
+    "garo": "Bol pangsku",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "ten tree",
-    "garo": "a'bil pangchiking",
+    "garo": "Bol pangchiking",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "ten trees",
-    "garo": "a'bil pangchiking",
+    "garo": "Bol pangchiking",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "eleven tree",
-    "garo": "a'bil pangChi·sa",
+    "garo": "Bol pangChi·sa",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "twelve tree",
-    "garo": "a'bil pangChi·gni",
+    "garo": "Bol pangChi·gni",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "thirteen tree",
-    "garo": "a'bil pangChi·gittam",
+    "garo": "Bol pangChi·gittam",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "fourteen tree",
-    "garo": "a'bil pangChi·bri",
+    "garo": "Bol pangChi·bri",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "fifteen tree",
-    "garo": "a'bil pangChi·bonga",
+    "garo": "Bol pangChi·bonga",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "sixteen tree",
-    "garo": "a'bil pangChi·dok",
+    "garo": "Bol pangChi·dok",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "seventeen tree",
-    "garo": "a'bil pangChi·sni",
+    "garo": "Bol pangChi·sni",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "eighteen tree",
-    "garo": "a'bil pangChi·chet",
+    "garo": "Bol pangChi·chet",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "nineteen tree",
-    "garo": "a'bil pangChi·sku",
+    "garo": "Bol pangChi·sku",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "twenty tree",
-    "garo": "a'bil pangKolgrik",
+    "garo": "Bol pangKolgrik",
     "pos": null,
     "category": "nature",
     "classifier": "pang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): general counting formula NOUN+CLASSIFIER+NUMBER-SUFFIX applied systematically 1-20. Root \"a'bil\" (tree, VERIFIED/HIGH) + pang classifier, no raka dot between classifier and suffix (confirmed by pre-existing live \"a'bil panggni\"=\"two trees\" reference — pang is a no-raka classifier, unlike mang/sak/gong/king)."
+    "notes": "VERIFIED/HIGH — root corrected 2026-08-12 (direct Project Owner input): the \"a'bil panggni\"=\"two trees\" reference this 1-20 set was built on (Claude A, 2026-08-11) actually names a *specific* tree species, not the generic word for \"tree\" — Project Owner confirmed the correct generic root/count is \"Bol\" (\"Bol panggni\"=\"two trees\"). Formula unchanged (NOUN+CLASSIFIER+NUMBER-SUFFIX, root Bol + pang classifier, no raka dot — pang's no-raka behavior is a property of the classifier, independent of root, so that part of Claude A's 2026-08-11 analysis still holds), only the root swapped a'bil -> Bol across all 20 entries."
   },
   {
     "english": "fruits",
