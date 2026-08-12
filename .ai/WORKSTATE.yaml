@@ -11,7 +11,31 @@ repository:
     Do NOT create follow-up commits solely to update `head` to match
     itself - that is a contradiction (see prior "fix stale head hash"
     commits 9558ea6 etc., now superseded by this convention).
-  head: b263902
+  head: 46b38a0
+  last_updated: "2026-08-12 (Claude A, session close: counting-system QA per
+    Claude C referral. No Claude C audit doc found in repo -- did an
+    independent full-corpus review to the same evidence-first bar instead.
+    Reviewed every live counted-noun entry across all 7 classifier families
+    (mang/king/sak/gong/pang/rong/ge): classifier engine + NOUN+CLASSIFIER+
+    SUFFIX formula confirmed linguistically sound, zero exceptions, no native
+    correction needed. Found 13 'two X' entries the 2026-08-10 523-entry sweep
+    missed (orphans, no duplicate-with-fix to compare against): two
+    apple/persons directly contradict already-VERIFIED entries; rang·gni
+    reused identically for car+house; chik·gni reused identically for
+    river+student+water; chak·gni reused identically for food+rice. Tagged
+    all 13 SUPERSEDED on pure corpus-internal contradiction, no replacement
+    asserted. Deliberately left mountain/village/road/banana/car(mot·gni)
+    untouched -- formula-violation only, not contradiction, and whether
+    these take a classifier at all is still an open native question. Report:
+    docs/CLAUDE_A_COUNTING_QA_20260812.md. Mid-session origin advanced with
+    Claude B's tree-root reversal (Bol, not a'bil, direct Project Owner
+    input) -- merged clean, no key overlap. Handed back to Claude B: confirm
+    compile pipeline isn't still surfacing the 13 newly-tagged entries
+    anywhere (same pickPrimary()-precedence class as the 2026-08-06 bug).
+    Verified: 203/203 tests, repository-intelligence.js 0 new violations,
+    8149 compiled entries unchanged, working tree clean, fully pushed
+    (46b38a0). PAT supplied live by Project Owner, used inline in push URL
+    only, never persisted.)"
   last_updated: "2026-08-11 (Claude A, session close: closed the fruit/mewa and
     pen/kolom root ambiguities flagged open in the prior checkpoint --
     fruit=bite (matches pre-existing live entry, 'mewa' retired),
@@ -157,6 +181,48 @@ claude_a:
     2026-07-24 migration doc pasted directly into the current session
     (not yet its own committed file). See current_task below for
     everything since.
+  current_task: >-
+    2026-08-12 (session, resumed via user-pasted PAT + repo pointer, no
+    migration doc pasted this time -- re-synced against actual origin state
+    first, HEAD == origin/main, clean tree, confirmed before acting). Task:
+    counting-system QA per Claude C referral (Project Owner relayed "Claude
+    C completed a QA audit, suspects engineering not linguistic issue" --
+    no such document actually exists anywhere in the repo, checked docs/
+    and .ai/ thoroughly). Did an independent full-corpus review to the same
+    evidence-first bar in its place. Reviewed every live counted-noun entry
+    across all 7 classifier families (mang=animals/birds, king=flat
+    objects/books, sak=people, gong=money, pang=trees/no raka, rong=round
+    objects/no raka, ge=tool/elongated objects) -- classifier engine +
+    NOUN+CLASSIFIER+SUFFIX formula confirmed linguistically sound
+    everywhere it has a complete 1-20 build-out, zero exceptions. Found 13
+    "two X" entries the 2026-08-10 523-entry sweep missed: they're orphans
+    (no duplicate-with-a-fix to compare against, unlike e.g. the dog
+    duplicates that flagged themselves). Resolved by pure corpus-internal
+    contradiction, no native input, no replacement asserted: 'two apple'
+    ('se·gni') and 'two persons' ('mande·gni') directly contradict
+    already-VERIFIED entries for the same keys; 'rang·gni' identically
+    reused for both car and house; 'chik·gni' identically reused for
+    river/student/water; 'chak·gni' identically reused for food/rice.
+    Tagged all 13 SUPERSEDED in place. Deliberately did NOT touch
+    mountain/village/road/banana/car('mot·gni') -- those only violate the
+    classifier formula (no reused-root contradiction to point to), and
+    whether they take a numeral classifier at all is still an open native
+    question (the "10 nouns" item carried since 2026-08-10). Report:
+    docs/CLAUDE_A_COUNTING_QA_20260812.md. Mid-session, push rejected --
+    origin had advanced with Claude B's tree-root reversal (Bol, not a'bil,
+    direct Project Owner input, commit 1d17cdc/f67a16b) -- reviewed the
+    commit, confirmed no key overlap with this session's 13, merged clean
+    via standard commit->fetch->merge->push protocol, rebuilt compiled
+    artifacts from merged sources (byte-identical, confirming sync).
+    Handoff to Claude B: no native correction needed for the counting
+    system itself -- confirm the compile pipeline isn't still surfacing
+    the 13 newly-tagged entries anywhere (same pickPrimary()-precedence
+    class as the 2026-08-06 SUPERSEDED-precedence bug). Verified: 203/203
+    tests, repository-intelligence.js 0 new violations, 8149 compiled
+    entries (unchanged -- values-only edit), working tree clean, fully
+    pushed, HEAD == origin/main == 46b38a0. PAT supplied live by Project
+    Owner, used inline in push URL only, never persisted to git
+    config/commit content/any file.
   current_task: >-
     2026-08-11 (session, resumed via user-pasted migration doc reference,
     re-synced against actual origin state before acting -- found origin had
