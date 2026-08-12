@@ -9628,6 +9628,166 @@
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline."
   },
   {
+    "english": "one apple",
+    "garo": "Apple rongsa",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "two apple",
+    "garo": "Apple ronggni",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "three apple",
+    "garo": "Apple ronggittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "four apple",
+    "garo": "Apple rongbri",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "five apple",
+    "garo": "Apple rongbonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "six apple",
+    "garo": "Apple rongdok",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "seven apple",
+    "garo": "Apple rongsni",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "eight apple",
+    "garo": "Apple rongchet",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "nine apple",
+    "garo": "Apple rongsku",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "ten apple",
+    "garo": "Apple rongchiking",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "eleven apple",
+    "garo": "Apple rongChi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "twelve apple",
+    "garo": "Apple rongChi·gni",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "thirteen apple",
+    "garo": "Apple rongChi·gittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "fourteen apple",
+    "garo": "Apple rongChi·bri",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "fifteen apple",
+    "garo": "Apple rongChi·bonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "sixteen apple",
+    "garo": "Apple rongChi·dok",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "seventeen apple",
+    "garo": "Apple rongChi·sni",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "eighteen apple",
+    "garo": "Apple rongChi·chet",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "nineteen apple",
+    "garo": "Apple rongChi·sku",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
+    "english": "twenty apple",
+    "garo": "Apple rongKolgrik",
+    "pos": null,
+    "category": "general",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-12 (Thangseng, via Project Owner relay: \"Apple = apple\" confirmed). Root 'Apple' (loanword, NV-049, VERIFIED/HIGH) + rong classifier (roundish objects, direct Thangseng-typed example 'apple rongsa', NV-048/049), no raka dot between classifier and suffix (rong is a no-raka classifier, matches 'bite rong[suffix]' fruit rebuild structural pattern, 2026-08-11 session)."
+  },
+  {
     "english": "twenty banana",
     "garo": "chi chi sobo·gni",
     "category": "general",
