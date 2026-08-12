@@ -1869,19 +1869,75 @@ claude_b:
   status: active
   current_task: >-
     2026-08-13 (this session, resumed via user-pasted migration document
-    docs/CLAUDE_B_SESSION_MIGRATION_20260812.md, re-synced against actual
-    repo state before acting -- pulled 4 clean Claude A commits
-    (f67a16b..b8fc44c, counting-QA session), no conflicts). Two pieces of
-    work, no code shipped:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260812.md, checkpoint f67a16b).
+    Re-synced repeatedly against actual repo state -- origin advanced
+    multiple times during this session (Claude A: counting-QA, hundreds/
+    thousands classifier fix, ba/RULE-023, currency-classifier fix, final
+    WORKSTATE checklist); each advance pulled clean (fast-forward or
+    rebase, zero conflicts), full build gate re-verified every time before
+    continuing. Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260813.md.
 
     1. Dead-code removal (e4cb0ce): deleted src/gemini.js (confirmed zero
-    imports anywhere -- only stray comments referencing "Gemini"), removed
-    unused @google/generative-ai dependency from package.json. Verified an
-    earlier external audit's companion claim -- that
-    compiled_dict_alternates.json/getAlternates() is also dead -- is FALSE;
-    it's live, imported and used in translationEngine.js. Left untouched.
-    Full build gate green (prepare-data -> test-dictionary -> repo-intel ->
-    203/203 -> lint 0 errors -> vite build).
+    imports anywhere), removed unused @google/generative-ai dependency.
+    Verified an external audit's companion claim -- that
+    compiled_dict_alternates.json/getAlternates() is also dead -- is
+    FALSE; it's live in translationEngine.js. Left untouched.
+
+    2. The "wait" near-miss (investigated, reverted, NO code shipped):
+    traced "wait" as a Check-F shadowing bug (grammarOverrides intends
+    'Damo/Sengbo', corrections.json's 'Damo' wins at runtime). Project
+    Owner confirmed 'Damo/Sengbo' based on my report; editing
+    corrections.json broke 2 regression tests, surfacing RC-CANDIDATE-015
+    (2026-07-25) -- 'Damo/Sengbo' was itself a literal unresolved OCR
+    placeholder, already superseded by native-confirmed values.
+    corrections.json was already correct. Reverted immediately, confirmed
+    203/203 + clean tree. Standing lesson, now written into process: a
+    runtime data mismatch alone is never bug evidence -- check
+    tests/unit/*.test.js + docs/ + raw source dicts first, every time.
+
+    3. Check F gap ledger -- methodology + tooling + first resolutions.
+    Project Owner directive: resolve every engineering-only item directly,
+    don't just hand a static backlog to Claude A. A SECOND process failure
+    caught before it propagated: the first gap-analysis script's
+    normalize() stripped trailing punctuation, causing silent key
+    collisions ("eat" absorbed "eat!"'s compiled_dict value) -- the
+    already-pushed report doc from earlier this session was built from
+    this wrong dataset. Caught by direct spot-check against
+    src/compiled_dict.json. Rebuilt as scripts/analyze-check-f-gaps.mjs,
+    replicating repository-intelligence.js's exact normalize()/joinKey()
+    logic -- verified byte-identical match counts (305) against a live
+    Check F run; compiled_dict.json also changed 3 separate times
+    underneath this analysis as Claude A pushed concurrently, tool re-run
+    fresh against origin/main each time. Resolved with real evidence (5
+    keys + 1 twelve-item batch, 17 of 305): "eat" (not a gap, tooling bug
+    only); "wait" (stale artifact, escalated -- grammarOverrides['wait']
+    in prepare-data.js is a one-line delete pending Claude A sign-off);
+    "dance" (stale artifact, escalated -- corrections.json's "Chroka" is
+    directly native-confirmed per VERB_INVENTORY.md/Thangseng 2026-07-14,
+    master_dictionary.json's 4 "dance" candidates are all still
+    UNVERIFIED and none is even Chroka -- flagged to Claude A, their file,
+    citation already exists); "no" (not a bug -- corrections.json winning
+    already explicitly verified correct in
+    RUNTIME_ENGINEERING_AUDIT_20260803.md); 12 punctuation-only items
+    (intentional/cosmetic, no functional difference). Full ledger +
+    exact per-item continuation process: docs/CHECK_F_GAP_REPORT_20260813.md.
+    288 of 305 items NOT yet investigated -- genuinely multi-session work,
+    process is documented so continuation doesn't restart from zero.
+
+    Verification: HEAD==origin/main + clean tree confirmed at every sync
+    point, full npm run build green (prepare-data -> test-dictionary ->
+    repo-intel 0 new violations, 305 known unchanged -> 203/203 -> lint 0
+    errors -> vite build), no master_dictionary.json/garo_dictionary.json/
+    corrections.json edits shipped (the one attempted corrections.json
+    edit was reverted before commit).
+
+    Handed to Claude A: (1) grammarOverrides['wait'] deletion, one line;
+    (2) master_dictionary.json "dance" -- add VERIFIED Chroka, citation
+    already exists; (3) 288 remaining Check F gap ledger items (queue +
+    process documented, not a raw dump); (4) everything already carried
+    from prior sessions (410/523-item classifier-suffix native-review
+    backlog, person/student/teacher root conflict, 10-noun classifier-
+    applicability question).
 
     2. Check F gap audit + a real process failure, caught before shipping.
     Traced "wait" as a candidate shadowing bug (grammarOverrides intends
@@ -1891,35 +1947,6 @@ claude_b:
     'Damo/Sengbo' as correct; I edited corrections.json and re-ran the build
     -- 2 regression tests failed (translationEngine.test.js lines ~132/154),
     which is what surfaced RC-CANDIDATE-015 (2026-07-25): 'Damo / Sengbo'
-    was itself a literal unresolved OCR placeholder, already investigated
-    and superseded -- 'Damo' (bare imperative, RULE-036) and 'senga'
-    (declarative root, via grammar-assembly) are the actual native-confirmed
-    values. corrections.json was right; grammarOverrides['wait'] in
-    prepare-data.js is the real stale leftover. Reverted both edits
-    immediately (corrections.json + known_cross_source_conflicts.json back
-    to original), confirmed clean tree + 203/203 passing, nothing pushed.
-    Lesson: don't trust a Check-F data mismatch as bug evidence without
-    first checking tests/unit/*.test.js and prior migration docs for that
-    exact key -- surfaced explicitly to the Project Owner rather than
-    quietly self-correcting.
-
-    Given that near-miss, did NOT attempt to fix the remaining candidates
-    solo. Instead built docs/CHECK_F_GAP_REPORT_20260813.md: all 302
-    current Check F allowlist entries (corrections.json/phrase_maps.js vs
-    compiled_dict.json), bucketed by surface similarity only (171
-    no-shared-root, 130 shared-root/differing-form, 1 punctuation-only) --
-    zero bug claims, zero proposed fixes, explicit warning about the wait
-    near-miss at the top. This is the same backlog class as RC-CANDIDATE-038
-    (2026-08-08, then 101 items) grown to 302 -- not a new finding, a
-    refresh/expansion of already-flagged Claude-A territory. Handed off
-    whole; next_action below.
-
-    Recommended item to flag to Claude A first: grammarOverrides['wait'] =
-    'Damo/Sengbo' in prepare-data.js (~line 350) is very likely safe to
-    delete outright given RC-CANDIDATE-015's history -- one-line linguistic
-    sign-off, not touched here since it's inside native-confirmed-rule
-    territory.
-
     Prior session --- 2026-08-11 (resumed via user-pasted migration document
     checkpoint 3 (d2fcb88), re-synced against actual repo state before acting
     -- see repository.last_updated above (2026-08-11 entry) for full detail:
