@@ -3990,7 +3990,8 @@
   {
     "english": "also",
     "garo": "·ba",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-13 (Project Owner relay, Thangseng direct): 'ba' suffix = also/too, e.g. 'Angaba cha·gen' = 'I will also eat' (Anga=I + ba=also, cha·gen=will eat). Bound suffix, attaches directly to the word it scopes over; leading raka in this entry's citation form marks the attachment boundary per the convention already used for '·oni'/from, '·na'/to, '·o'/at (see NV-070)."
   },
   {
     "english": "very",
@@ -64080,5 +64081,11 @@
     "category": "education",
     "classifier": "ge",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Root 'kolom' (pen) + ge classifier, raka dot (matches pre-existing RULE-G-classifier.yaml reference 'kolom ge·sa'=\"a pen\"). New key, no prior placeholder existed."
+  },
+  {
+    "english": "I will also eat",
+    "garo": "Anga·ba cha·gen",
+    "category": "food",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-13 (Project Owner relay, Thangseng direct): 'Angaba cha·gen'. 'ba' = also/too suffix on the pronoun Anga (I); cha·gen = future of 'eat' (root cha·a, RULE-023: -gen never carries raka — the raka present here belongs to the root cha·a itself, not added by the suffix). Live typed example omitted the interpunct on 'Angaba' (dotless), consistent with informal-transcription patterns seen elsewhere in the corpus (cf. 'he will eat.'='Bia chagen.', also dotless); citation form here includes the boundary dot per standing corpus convention."
   }
 ]

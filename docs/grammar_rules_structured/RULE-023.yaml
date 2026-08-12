@@ -14,11 +14,12 @@ dependencies:
 claims:
   - scope: null
     status: verified
-    status_note: "GRAMMAR_MORPHOLOGY_CONFIDENCE_REVIEW.md already flagged this exact claim as resting on a single example (bilakgen) and recommended a raka-bearing-root test case to confirm raka-suppression generally, not just absence-on-an-already-raka-free-root"
-    confidence: medium
-    confidence_note: "the claim itself is clean, but the one example available doesn't distinguish \"never had raka to begin with\" from \"raka actively suppressed\""
+    status_note: "The raka-bearing-root test case this rule's confidence_note called for is now in hand: 'cha·gen' (root cha·a, which carries its own raka) confirmed 2026-08-13 via Project Owner relay ('Angaba cha·gen'='I will also eat'). The root's raka is retained (cha· survives stem formation) but -gen itself adds no NEW raka boundary — this distinguishes \"raka actively suppressed\" from \"never had raka\" as the confidence_note requested."
+    confidence: high
+    confidence_note: "Two independent example classes now support this: a raka-free root (bilakgen) showing no raka appears, and a raka-bearing root (cha·a -> cha·gen) showing the root's own raka is preserved but the suffix attaches with none of its own. Together these confirm -gen never carries/triggers raka, rather than merely surfacing on already-raka-free roots."
 examples:
   - 'bilakgen="will be strong" (root bilak, no raka on the suffix); general pattern across future-tense forms'
+  - "cha·gen=\"will eat\" (root cha·a, which itself carries raka) — confirmed 2026-08-13 via \"Angaba cha·gen\"=\"I will also eat\". The root's raka survives stem formation (cha· from cha·a); -gen adds none of its own."
 counterexamples:
   note: "none recorded"
   items: []
@@ -26,6 +27,6 @@ launch_priority:
   - scope: null
     tier: P1
 native_notes: "Source Rule 23, GRAMMAR_SPEC.md."
-last_updated: "2026-07-26"
+last_updated: "2026-08-13"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-023"
