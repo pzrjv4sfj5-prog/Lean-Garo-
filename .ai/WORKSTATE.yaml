@@ -182,6 +182,56 @@ claude_a:
     (not yet its own committed file). See current_task below for
     everything since.
   current_task: >-
+    2026-08-13 (session, resumed via user-pasted PAT + migration-doc
+    filename reference docs/CLAUDE_A_SESSION_MIGRATION_20260812B.md --
+    re-synced first: HEAD == origin/main, clean tree, repo matched the
+    doc's checkpoint exactly, only the migration-doc commit itself had
+    landed since). Two tasks, in order: (1) Project Owner reported the
+    currency large-number classifier composer was wrong -- "10,001"
+    was rendering as gong·chiking·hajalsa·sa (classifier fused via raka
+    to the FRONT of the whole multi-word place-value number) instead of
+    the correct hajal chiking gong·sa (classifier attaches only to the
+    final atomic digit; higher place-value words stay bare). Rewrote
+    garo_classifier.js's large-number path (new bareNumberWord(),
+    composeLargeBareNumber(), buildLargeClassifierPhrase()) so
+    hajal(1000)/ritcha(100) and their multipliers stay bare
+    space-separated words and only the final 1-99 remainder gets the
+    classifier+raka, via the existing unchanged 2026-06-28-verified
+    tens+units logic -- that sub-rule (e.g. mang·Kolgrik·sa for "21
+    dogs") was deliberately left untouched. Exact multiples of 100/1000
+    (remainder=0) handled by direct analogy from the confirmed 10,001
+    case, flagged in-code as not independently native-confirmed. Corpus
+    sweep: zero stored dictionary entries used the old buggy pattern --
+    bug was runtime-only in the engine, now closed for every classifier,
+    not just currency. Commit d831caa. (2) Project Owner relay (Thangseng
+    direct): "Angaba cha·gen" = "I will also eat" -- promoted 'also'=
+    '·ba' (previously untagged) to VERIFIED/HIGH, added new sentence
+    entry 'I will also eat'='Anga·ba cha·gen'. This doubled as the
+    raka-bearing-root test case RULE-023 ("-gen never carries raka") had
+    flagged as missing since 2026-07-26 -- root cha·a carries its own
+    raka, cha·gen retains the root's raka but -gen itself adds none;
+    RULE-023 confidence raised medium -> high with the new example.
+    Commit 17e249f. Also noted but deliberately NOT written to the
+    corpus this session (came up mid-conversation, session had already
+    pivoted to the currency bug before it could be processed as its own
+    task): a native relay covering teacher=Skigipa, student(male)=
+    Chattro, student(female)=Chattri, mountain=A·bri dotsa, village=Song
+    damsa, road=Rama dilsa, banana=Te·rik ge·sa, "a bunch of banana"=
+    Te·rik akkasa, car=Gari bolsa -- flagged explicitly in this session's
+    migration doc (docs/CLAUDE_A_SESSION_MIGRATION_20260813.md) with the
+    literal strings so it isn't lost; next session should write it up as
+    its own task rather than guessing from memory. Verified both fixes:
+    203/203 unit tests, prepare-data.js + test-dictionary.js clean (8150
+    valid entries), and this session additionally ran `npx vite build`
+    end-to-end (dependencies weren't pre-installed in this session's
+    sandbox; `npm install` run once to enable the check -- sandbox-only
+    step, not a repo change) -- clean, no runtime/bundle errors. Rebased
+    twice against concurrent Claude B pushes (dead-code removal e4cb0ce,
+    docs-only Check-F backlog report 332ee36) -- both clean, no
+    conflicts. Working tree clean, fully pushed, HEAD == origin/main ==
+    b5d73ed. PAT supplied live by Project Owner, used inline in push URL
+    only, never persisted to git config/commit content/any file.
+  current_task: >-
     2026-08-12 (session, resumed via user-pasted PAT + repo pointer, no
     migration doc pasted this time -- re-synced against actual origin state
     first, HEAD == origin/main, clean tree, confirmed before acting). Task:

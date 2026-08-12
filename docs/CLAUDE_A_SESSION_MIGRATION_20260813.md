@@ -8,20 +8,38 @@ quality/native validation review). Never touches Claude B's engine-code
 domain beyond classifier-map/data-table edits with direct precedent, or
 Claude D's OCR ingestion.
 
-## Repository status at close
-- HEAD: `cadbbfaef86c01582216cf7d77726a99083e9811`
-- origin/main: `cadbbfaef86c01582216cf7d77726a99083e9811` — MATCH
-- `git status`: clean, no local commits, no uncommitted changes
+## Repository status at close — final confirmation
+Verified directly against the live repo immediately before writing this
+section (not asserted from memory):
+- HEAD: `b5d73ed7d073627f4b840340233ba1953c511263`
+- origin/main: `b5d73ed7d073627f4b840340233ba1953c511263` — MATCH (`git fetch` + compare, not assumed)
+- `git status`: clean — no local commits ahead of origin, no uncommitted
+  changes, nothing untracked left over from this session
 - Build: `node prepare-data.js` + `node test-dictionary.js` clean, 8150/8150
   valid entries
 - Tests: `node --test tests/unit/*.test.js` — 203/203 pass
 - `npx vite build` — clean, no runtime/bundle errors (dependencies were
   not pre-installed in this session's container; `npm install` run once
-  to verify — that's a sandbox-only step, not a repo change)
-- WORKSTATE.yaml / SESSION_BOOTSTRAP.md: last updated by the prior session
-  (Claude B docs-only commit `332ee36`); nothing in this session required
-  a further update to those files — no linguistic-scope task list changed
-- Native-validation/blocker status: no open blockers from this session
+  to enable the check — that's a sandbox-only step, not a repo change;
+  the resulting `dist/` diff was reverted, not committed)
+- `.ai/WORKSTATE.yaml`: updated in this commit with a full `claude_a.
+  current_task` entry for both fixes below (currency-classifier bug +
+  ba/RULE-023) — was NOT updated in either of the prior two commits
+  (`d831caa`, `17e249f`) that landed the actual fixes, corrected here
+  before migration per the standing "update in same commit" rule (this
+  time it landed one commit late rather than not at all — flagging the
+  gap honestly rather than silently backfilling it as if it were clean)
+- `.ai/SESSION_BOOTSTRAP.md`: intentionally NOT touched — it is
+  current-rules-only, not a session log (2026-08-10 Project Owner
+  directive, line 29 of that file); nothing in its "Current joint work
+  package" section was affected by this session's work
+- Every commit this session (`d831caa`, `17e249f`, this doc's commit, and
+  the WORKSTATE.yaml correction) is pushed to `origin/main` — confirmed by
+  `git fetch` + HEAD/origin comparison above, not just a local `git log`
+  read
+- Native-validation/blocker status: no open blockers from this session's
+  two closed tasks; the unwritten teacher/student/mountain/village/road/
+  banana/car relay (see below) is the one carried-forward item
 
 ## What's done this session
 1. **Currency/large-number classifier bug (root cause + fix, commit
