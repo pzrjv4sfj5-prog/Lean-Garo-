@@ -123,8 +123,96 @@ const RAKA_CLASSIFIERS = new Set(['mang', 'sak', 'ge', 'gong']);
 // rong confirmed no-raka 2026-08-01 from Thangseng's own typed examples
 // ("rongsa", "rongbonga" — no dot in either), see file header note.
 
+// Bare (classifier-free) number word for a place-value multiplier, e.g. the
+// "10" in "ten thousand". <=10 uses NUMBERS directly; 11-19 uses TEENS;
+// 20-99 delegates to the already-verified (2026-06-28) tens+units composer;
+// 100+ recurses through composeLargeBareNumber. Never carries a classifier —
+// this is purely for naming the multiplier itself.
+function bareNumberWord(n) {
+  n = parseInt(n);
+  if (NUMBERS[n]) return NUMBERS[n];
+  const TEENS = {
+    11:'Chi·sa', 12:'Chi·gni', 13:'Chi·gittam', 14:'Chi·bri',
+    15:'Chi·bonga', 16:'Chi·dok', 17:'Chi·sni', 18:'Chi·chet', 19:'Chi·sku',
+  };
+  if (TEENS[n]) return TEENS[n];
+  if (n >= 20 && n <= 99) {
+    const result = toGaroNumberImported(n);
+    return result ? result.replace(/ /g, '·') : null;
+  }
+  if (n >= 100) return composeLargeBareNumber(n);
+  return null;
+}
+
+// Place-value composer for 100+: "hajal" (1000) and "ritcha" (100) are
+// stated as bare words, each optionally followed by its own bare multiplier
+// word when the multiplier isn't 1 (e.g. "hajal chiking" = ten thousand,
+// not "chiking hajalsa" — see buildLargeClassifierPhrase's file note,
+// corrected 2026-08-13 per Project Owner direct correction on 10,001).
+function composeLargeBareNumber(n) {
+  const thousands = Math.floor(n / 1000);
+  const remThousand = n % 1000;
+  const hundreds = Math.floor(remThousand / 100);
+  const remHundred = remThousand % 100;
+  const parts = [];
+  if (thousands > 0) parts.push(thousands === 1 ? 'hajal' : `hajal ${bareNumberWord(thousands)}`);
+  if (hundreds > 0) parts.push(hundreds === 1 ? 'ritcha' : `ritcha ${bareNumberWord(hundreds)}`);
+  if (remHundred > 0) parts.push(bareNumberWord(remHundred));
+  return parts.join(' ');
+}
+
+// Hundreds/thousands + classifier composition — corrected 2026-08-13.
+// PREVIOUS (WRONG) BEHAVIOR: the classifier was fused via raka to the
+// FRONT of the entire multi-word number (e.g. 10,001 rupees ->
+// "gong·chiking·hajalsa·sa"), treating the whole place-value phrase as if
+// it were a single classifier suffix. Direct Project Owner correction:
+// the classifier only ever attaches to the FINAL atomic digit (the
+// noun+classifier+category pattern is per-count, not per-number-phrase).
+// Every higher place-value word (hajal=1000, ritcha=100, and their
+// multipliers) is stated as a bare, space-separated word IN FRONT of the
+// classifier-marked remainder.
+// CONFIRMED: 10,001 -> "hajal chiking gong·sa" (hajal=1000, chiking=10
+// bare multiplier for the thousands place, gong·sa=classifier+final 1).
+// Tens 20-99 (e.g. "21 dogs" = achak mang·Kolgrik·sa) are UNCHANGED here —
+// that raka-to-classifier-front form for the tens+units block was
+// independently native-confirmed 2026-06-28 and is not touched by this fix.
+function buildLargeClassifierPhrase(classifier, n) {
+  const thousands = Math.floor(n / 1000);
+  const remThousand = n % 1000;
+  const hundreds = Math.floor(remThousand / 100);
+  const remHundred = remThousand % 100; // 0-99: goes through the existing verified tens+units+classifier path
+
+  const prefixParts = [];
+  if (thousands > 0) prefixParts.push(thousands === 1 ? 'hajal' : `hajal ${bareNumberWord(thousands)}`);
+  if (hundreds > 0) prefixParts.push(hundreds === 1 ? 'ritcha' : `ritcha ${bareNumberWord(hundreds)}`);
+
+  let tail;
+  if (remHundred > 0) {
+    const suffix = getClassifierSuffix(remHundred);
+    if (suffix === null) return null;
+    tail = RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·${suffix}` : `${classifier}${suffix}`;
+  } else if (prefixParts.length > 0) {
+    // Exact multiple of 100/1000 (e.g. exactly 1000, 2000, 100, 500):
+    // classifier + 'sa' attaches to the trailing place-value word.
+    // Inferred by direct analogy from the confirmed 10,001 case, not yet
+    // independently native-confirmed for the exact-multiple case — flag
+    // for native review if precision on round-thousand phrasing matters.
+    const last = prefixParts.pop();
+    const attach = RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·sa` : `${classifier}sa`;
+    tail = `${last} ${attach}`;
+  } else {
+    return null;
+  }
+  return [...prefixParts, tail].filter(Boolean).join(' ');
+}
+
 export function buildClassifierPhrase(classifier, count) {
-  const suffix = getClassifierSuffix(count);
+  const n = parseInt(count);
+  if (isNaN(n) || n <= 0) return null;
+  if (n >= 100) {
+    return buildLargeClassifierPhrase(classifier, n);
+  }
+  const suffix = getClassifierSuffix(n);
   if (suffix === null) return null;
   // Only add raka if this classifier has one (Rule 1 — raka in root only)
   return RAKA_CLASSIFIERS.has(classifier)
