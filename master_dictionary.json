@@ -586,6 +586,24 @@
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'eat' has VERIFIED/HIGH form(s) ['cha·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
   },
   {
+    "english": "can eat",
+    "garo": "cha·na man·a",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — direct Project Owner input, 2026-08-12. Modal 'can' + purpose-suffixed verb: cha· (eat, VERIFIED/HIGH) + ·na (purpose suffix, already established via PURPOSE_MAP) + man·a (ability modal). Recorded as a single phrase entry only — NOT yet generalized into a modal-construction rule the way PURPOSE_MAP generalizes 'to buy'/'to work'/etc., since only 'eat' has been confirmed with this modal so far. Generalizing man·a/nanga/ska as a reusable ANY-VERB+na+modal formula needs at least one more confirmed verb pair before it's safe to apply broadly (same discipline as the fish/tree/book classifier work — one confirmed instance isn't yet a confirmed formula)."
+  },
+  {
+    "english": "need to eat",
+    "garo": "cha·na nanga",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — direct Project Owner input, 2026-08-12. Modal 'need to' + purpose-suffixed verb: cha· (eat, VERIFIED/HIGH) + ·na (purpose suffix) + nanga (obligation modal). Same generalization caveat as 'can eat' — see that entry's notes."
+  },
+  {
+    "english": "want to eat",
+    "garo": "cha·na ska·",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — direct Project Owner input, 2026-08-12. Modal 'want to' + purpose-suffixed verb: cha· (eat, VERIFIED/HIGH) + ·na (purpose suffix) + ska· (desiderative modal). Same generalization caveat as 'can eat' — see that entry's notes."
+  },
+  {
     "english": "drink",
     "garo": "Ringa",
     "category": "food",
