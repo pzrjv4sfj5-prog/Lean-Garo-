@@ -256,7 +256,7 @@ export const PHRASE_MAPS = {
   'pig': 'Wak',
   'goat': 'Do·bok',
   'horse': 'Gure',
-  'monkey': 'Makre',
+  'monkey': 'a·mak',
   'snake': 'Chipu',
   'rat': 'Mese',
   'buffalo': 'Matma',

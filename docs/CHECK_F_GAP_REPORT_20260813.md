@@ -96,3 +96,19 @@ that doesn't mean they're wrong, it means the archaeology hasn't been done yet.
    evidence resolves it either way — this is the only category that goes to
    Claude A without a proposed answer already attached).
 4. Update this ledger's resolved table before moving to the next key.
+
+## Resolved — VERIFIED-match triage, corrected (2026-08-13, cont'd)
+
+**Method correction:** an earlier pass in this session classified matches using `'VERIFIED' in notes` (substring), which false-positived on `UNVERIFIED` and on `SUPERSEDED ... has VERIFIED` notes describing *other* entries. Caught before anything was committed. Corrected to `notes.startswith('VERIFIED')`. Re-running dropped false "resolved" count from 94 to the real number below.
+
+**11 keys fixed in `corrections.json`** (stale value → matching VERIFIED master_dictionary form): `i want to sleep/eat/drink/go/come/work/study/pray` (old `ska` suffix → verified `sikenga`), `orange` (`Narang`→`a·mnk`), `monkey` (`Makrew`→`a·mak`), `chameleon` (`gara`→`a·ga·tek`).
+
+**1 key fixed in `phrase_maps.js`**: `monkey` (`Makre`→`a·mak`).
+
+**1 key checked and reverted — real homonym, not a bug:** `cooked`. Matched VERIFIED `min·a` by English-key string, but `min·a` is the *ripe/cooked adjective* sense (NV-050); `corrections.json["cooked"]` is the *verb past-tense* sense feeding `"he cooked"` (`Ua Song·aha`) through the tense-suffix pipeline — confirmed by regression test `translationEngine.test.js:184`. Reverted to original `Song·aha`. **Lesson for future passes: English-key string match alone is not sufficient when a key has multiple POS/senses; check regression tests before applying a VERIFIED-match edit.**
+
+**1 key confirmed correct, no edit:** `where` (`phrase_maps`) — `Bano` already matches VERIFIED.
+
+Full build gate green after fix + after revert: 203/203 tests, 0 lint errors, 0 new Check F violations.
+
+**287 of the remaining keys have no VERIFIED master_dictionary entry at all** — genuine open linguistic gaps, not mechanically resolvable. These need the full per-item process (grep tests/docs → check raw dictionaries → classify → escalate to Claude A if genuinely undecided).
