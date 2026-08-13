@@ -107,7 +107,7 @@ export const PHRASE_MAPS = {
   'tomorrow': 'Knalo',
   'now': 'Da·o',
   'later': 'Ja·mano',
-  'always': 'Pangnan',
+  'always': 'pang·na',
   'never': 'Pangnan·ba (ja)',
   'morning': 'Pring',
   'noon': 'Saljatchi',
