@@ -112,3 +112,9 @@ that doesn't mean they're wrong, it means the archaeology hasn't been done yet.
 Full build gate green after fix + after revert: 203/203 tests, 0 lint errors, 0 new Check F violations.
 
 **287 of the remaining keys have no VERIFIED master_dictionary entry at all** — genuine open linguistic gaps, not mechanically resolvable. These need the full per-item process (grep tests/docs → check raw dictionaries → classify → escalate to Claude A if genuinely undecided).
+
+## Resolved — per-item investigation (2026-08-13, cont'd)
+
+| Key | Finding |
+|---|---|
+| `beautiful` | **Not a bug.** `corrections.json["beautiful"]="Sila"` is confirmed by 4 grammar docs (`GARO_GRAMMAR_REFERENCE.md`, `GRAMMAR_NOTES_20260622.md`, `GRAMMAR_RULE_CATALOGUE.md`, `GRAMMAR_CONFIDENCE_MATRIX.md`) via `Gari sila` = "the car is beautiful", predicative. `compiled_dict`'s `Ka·danga` traces to a **case-duplicate key** in `master_dictionary.json`: capitalized `Beautiful` → `Ka·danga`, separate from lowercase `beautiful` → `Sila`/`nitoa`, neither notes-tagged. Compile pipeline picked the capitalized dup. Flagging for Claude A: possible case-folding gap in the english-key dedup/pickPrimary step — not fixed here, out of Claude B's file scope. |
