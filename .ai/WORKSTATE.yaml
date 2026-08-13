@@ -239,6 +239,33 @@ repository:
     supplied live by Project Owner, used inline in push URL only, never
     persisted."
 
+  head_governance_note: "2026-08-13 (Claude A) -- adopted Project Owner
+    governance directive: added Rules 7 and 8 to the 'Thread hygiene &
+    zero-local-state ground rule' section of .ai/SESSION_BOOTSTRAP.md,
+    immediately after Rule 6. Rule 7: migration documents must state
+    verification SCOPE, not just result -- which forms/files/paths, how
+    many of how many, what was intentionally not checked; a passing
+    build/test/repository-intelligence run only confirms the existing
+    regression set still passes, not that new/modified behaviour was
+    itself executed and inspected -- report that separately. Rule 8:
+    before marking any fix resolved, search for every duplicate
+    representation of the same fact (alternate key forms, lookup tables,
+    generated artifacts, runtime maps, compile outputs, derived files),
+    verify each reflects the correction, and explicitly document any
+    that don't; until that review is done the fix is provisional, not
+    resolved, and the migration doc must say so. Prompted by repeated
+    findings from Claude C's independent QA audits. Applies to Claude A,
+    B, C, D, and any future role, effective immediately. Documentation-only
+    change -- no engineering code or linguistic data touched this session.
+    Directly relevant to this session's own prior audit and relay work:
+    the counting-pipeline audit (docs/CLAUDE_A_COUNTING_QA_20260813.md)
+    and the 120-entry relay commit did not yet perform an explicit
+    Rule-8-style duplicate-representation sweep (e.g. corrections.json,
+    phrase_maps.js, category_index.json, any other derived table besides
+    compiled_dict.json/known_dictionary_conflicts.json) -- to be treated
+    as provisional per Rule 8 and swept in the next session before being
+    called fully resolved."
+
 claude_a:
   status: active
   migration_doc: >-

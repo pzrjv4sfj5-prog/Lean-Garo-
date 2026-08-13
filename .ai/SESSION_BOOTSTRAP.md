@@ -149,6 +149,32 @@ history, before any actual work occurs.
      corrections, Claude B checks its own fixes against the linguistic
      source they're meant to serve, Claude D N/A (no runtime, ingestion
      only) unless stated otherwise.
+7. **State verification scope, not just verification result, before
+   closing any item.** A migration document's completeness words
+   ("clean", "resolved", "confirmed", "all X") must always state
+   exactly what was verified — which forms, which files, which code
+   paths, how many of how many, and what was intentionally not
+   checked. If only a subset was verified, explicitly say so. Future
+   sessions interpret silence as "everything was checked," not
+   "everything I happened to inspect."
+   A successful build, test suite, or repository-intelligence run
+   confirms only that the existing regression set still passes. It
+   does **not** confirm newly added or modified behaviour unless that
+   behaviour was itself executed and its actual runtime output was
+   inspected. Always report those as separate verification steps.
+8. **Before marking any fix as resolved, check for duplicate
+   representations of the same fact.** This repository frequently
+   contains parallel representations of the same information
+   (alternate key forms, alternate lookup tables, generated artifacts,
+   runtime maps, compile outputs, derived files, etc.).
+   Before declaring any issue resolved:
+   • search for every place that may independently encode the same fact;
+   • verify each representation reflects the correction;
+   • if any representation remains unchanged, explicitly document it and
+     explain why.
+   Until this duplicate-representation review has been completed, the
+   fix should be considered **provisional**, not fully resolved, and
+   the migration document must state that clearly.
 
 This is a standing rule, not a one-off — applies identically whether
 the next session is Claude A, Claude B, or Claude D.
