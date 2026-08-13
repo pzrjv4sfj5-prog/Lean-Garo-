@@ -19849,7 +19849,7 @@
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH. Reconfirmed NV-072 (2026-08-13, Thangseng direct via Tridip): explicitly confirmed 'man·de sak·sa' sounds correct and natural for 'one person'. Resolves the person-root portion of the person/student/teacher classifier question queued in docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md."
   },
   {
     "english": "Onion",

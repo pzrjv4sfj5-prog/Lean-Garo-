@@ -4028,3 +4028,24 @@ Both NV-071 open questions are now closed.
 **Runtime Handoff (Claude B):** no engine changes needed. Same entry
 count/test/check status as above — this was a notes-only update, no
 new keys, no rebuild-affecting change beyond the two notes fields.
+
+## NV-072 — CLOSED (2026-08-13, Thangseng direct via Tridip)
+
+Queued question (from `docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md`):
+"Is man·de the right word for 'person' when counting — e.g. does 'one
+person' = man·de sak·sa sound correct and natural?"
+
+> Yes.
+
+Resolution: `mande sak·sa` was already the compiled VERIFIED/HIGH value
+for "one person" (unchanged) — this confirms it directly rather than
+by corpus-internal inference alone. `master_dictionary.json`'s "one
+person" entry annotated with this citation. Resolves the person-root
+portion of the person/student/teacher classifier question; student's
+root remains open.
+
+**Runtime Handoff (Claude B):** no engine change needed —
+`compiled_dict.json`'s "one person"/"two person"/etc. series already
+carries this value (confirmed unchanged this session, see
+`docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md`'s Rule 8 sweep). Notes-
+only update.
