@@ -173,6 +173,39 @@ repository:
     roles should check it first for active priorities rather than
     relying solely on the per-role sections below, which may lag it
     slightly.
+  head: 65378f4
+  last_updated: "2026-08-13 (Claude A, session close: rebased cleanly onto
+    Claude B's concurrent session-close commit (65378f4, Check F gap ledger
+    correction + migration doc, no file overlap with this session). Counting-system
+    compile-pipeline audit, prompted by relaying native-confirmed 'two
+    trees = Bol panggni' -- already correct/live, no action needed, but
+    auditing it led to checking the whole counting system to the same
+    100%-match standard per Project Owner request. Cross-checked every
+    counting entry (1-20) in compiled_dict.json against master_dictionary.json
+    source status for all counting nouns (~350 keys). Found: (1) 146 keys
+    clean (dog/fish/person/cat/apple/tree/book, full 1-20, formula sound,
+    matches 2026-08-12 finding); (2) 'one dog' has a harmless pickPrimary
+    tie-break issue -- VERIFIED and SUPERSEDED duplicates share the same
+    Garo string, so it ships correct by coincidence, not by correct
+    precedence; (3) SEVERE -- teacher/student/house/car/banana/rice/water/
+    food/road/river/mountain/village are shipping the exact bulk-fabricated
+    SUPERSEDED values across nearly all of 1-20 (~230 keys), with zero
+    VERIFIED alternative anywhere in the corpus for any of them. This
+    substantially widens the 2026-08-12 handoff (it flagged 13 keys as a
+    risk; this is ~230, already live, not new). This is a compile-pipeline
+    defect (Claude B's domain), not a linguistic gap -- the SUPERSEDED
+    tagging itself was correct. Report: docs/CLAUDE_A_COUNTING_QA_20260813.md.
+    Handoff to Claude B: (a) compile pipeline should ship nothing rather than
+    a SUPERSEDED value when no VERIFIED candidate exists for a key; (b) spot-
+    check whether the 'one dog' tie-break class masks a real mismatch
+    elsewhere. Linguistic work not touched this session (one-task-per-session):
+    the actual VERIFIED replacement values for the 12 affected nouns --
+    partially covered by the already-held native relay (teacher/student/
+    mountain/village/road/banana/car) plus house/rice/water/food which still
+    need native input. No content edits made; docs-only commit. Verified:
+    git status clean, HEAD 10a90ea, origin/main matches, fully pushed. PAT
+    supplied live by Project Owner, used inline in push URL only, never
+    persisted."
 
 claude_a:
   status: active
