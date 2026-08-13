@@ -39,6 +39,12 @@ conclusion shipped:
    replicates `repository-intelligence.js`'s exact join logic — verified
    byte-identical counts (305) against the live Check F run.
 
+## Resolved — continuation session (2026-08-13, cont'd)
+
+| Key | Classification | Resolution |
+|---|---|---|
+| `apple` | **Stale artifact, fixed directly** | `corrections.json` still had `apal` (pre-2026-08-01 placeholder), while `master_dictionary.json` (`VERIFIED/HIGH`, NV-049, direct Thangseng confirmation "Apple = apple") and `compiled_dict.json` both already correctly have `Apple`. This is the same stale-artifact pattern as `wait`/`dance` above, but `corrections.json` is an engineering file (not `master_dictionary.json`), so per the Project Owner directive this was fixed directly rather than escalated: `corrections.json["apple"]` changed from `apal` → `Apple`. Full build gate re-verified green (203/203 tests, 0 lint errors, 0 new Check F violations); Check F allowlist count correctly dropped 305→304 as a result. No `master_dictionary.json` edit needed — it was already right. |
+
 ## Resolved this session (5 keys + 1 twelve-item batch, 17 of 305)
 
 | Key | Classification | Resolution |
