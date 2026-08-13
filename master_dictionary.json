@@ -64087,5 +64087,973 @@
     "garo": "Anga·ba cha·gen",
     "category": "food",
     "notes": "VERIFIED/HIGH. Confirmed 2026-08-13 (Project Owner relay, Thangseng direct): 'Angaba cha·gen'. 'ba' = also/too suffix on the pronoun Anga (I); cha·gen = future of 'eat' (root cha·a, RULE-023: -gen never carries raka — the raka present here belongs to the root cha·a itself, not added by the suffix). Live typed example omitted the interpunct on 'Angaba' (dotless), consistent with informal-transcription patterns seen elsewhere in the corpus (cf. 'he will eat.'='Bia chagen.', also dotless); citation form here includes the boundary dot per standing corpus convention."
+  },
+  {
+    "english": "one mountain",
+    "garo": "A·bri dotsa",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "two mountain",
+    "garo": "A·bri dotgni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "three mountain",
+    "garo": "A·bri dotgittam",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "four mountain",
+    "garo": "A·bri dotbri",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "five mountain",
+    "garo": "A·bri dotbonga",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "six mountain",
+    "garo": "A·bri dotdok",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "seven mountain",
+    "garo": "A·bri dotsni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "eight mountain",
+    "garo": "A·bri dotchet",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "nine mountain",
+    "garo": "A·bri dotsku",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "ten mountain",
+    "garo": "A·bri dotchiking",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "eleven mountain",
+    "garo": "A·bri dotChi·sa",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "twelve mountain",
+    "garo": "A·bri dotChi·gni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "thirteen mountain",
+    "garo": "A·bri dotChi·gittam",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "fourteen mountain",
+    "garo": "A·bri dotChi·bri",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "fifteen mountain",
+    "garo": "A·bri dotChi·bonga",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "sixteen mountain",
+    "garo": "A·bri dotChi·dok",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "seventeen mountain",
+    "garo": "A·bri dotChi·sni",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "eighteen mountain",
+    "garo": "A·bri dotChi·chet",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "nineteen mountain",
+    "garo": "A·bri dotChi·sku",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "twenty mountain",
+    "garo": "A·bri dotKolgrik",
+    "pos": null,
+    "category": "nature",
+    "classifier": "dot",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'A·bri' + dot classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'A·bri dotsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (mountain takes 'dot')."
+  },
+  {
+    "english": "one village",
+    "garo": "Song damsa",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "two village",
+    "garo": "Song damgni",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "three village",
+    "garo": "Song damgittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "four village",
+    "garo": "Song dambri",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "five village",
+    "garo": "Song dambonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "six village",
+    "garo": "Song damdok",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "seven village",
+    "garo": "Song damsni",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "eight village",
+    "garo": "Song damchet",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "nine village",
+    "garo": "Song damsku",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "ten village",
+    "garo": "Song damchiking",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "eleven village",
+    "garo": "Song damChi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "twelve village",
+    "garo": "Song damChi·gni",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "thirteen village",
+    "garo": "Song damChi·gittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "fourteen village",
+    "garo": "Song damChi·bri",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "fifteen village",
+    "garo": "Song damChi·bonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "sixteen village",
+    "garo": "Song damChi·dok",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "seventeen village",
+    "garo": "Song damChi·sni",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "eighteen village",
+    "garo": "Song damChi·chet",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "nineteen village",
+    "garo": "Song damChi·sku",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "twenty village",
+    "garo": "Song damKolgrik",
+    "pos": null,
+    "category": "general",
+    "classifier": "dam",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Song' + dam classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Song damsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (village takes 'dam')."
+  },
+  {
+    "english": "one road",
+    "garo": "Rama dilsa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "two road",
+    "garo": "Rama dilgni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "three road",
+    "garo": "Rama dilgittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "four road",
+    "garo": "Rama dilbri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "five road",
+    "garo": "Rama dilbonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "six road",
+    "garo": "Rama dildok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "seven road",
+    "garo": "Rama dilsni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "eight road",
+    "garo": "Rama dilchet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "nine road",
+    "garo": "Rama dilsku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "ten road",
+    "garo": "Rama dilchiking",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "eleven road",
+    "garo": "Rama dilChi·sa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "twelve road",
+    "garo": "Rama dilChi·gni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "thirteen road",
+    "garo": "Rama dilChi·gittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "fourteen road",
+    "garo": "Rama dilChi·bri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "fifteen road",
+    "garo": "Rama dilChi·bonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "sixteen road",
+    "garo": "Rama dilChi·dok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "seventeen road",
+    "garo": "Rama dilChi·sni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "eighteen road",
+    "garo": "Rama dilChi·chet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "nineteen road",
+    "garo": "Rama dilChi·sku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "twenty road",
+    "garo": "Rama dilKolgrik",
+    "pos": null,
+    "category": "travel",
+    "classifier": "dil",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Rama' + dil classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Rama dilsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (road takes 'dil')."
+  },
+  {
+    "english": "one banana",
+    "garo": "Te·rik ge·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "two banana",
+    "garo": "Te·rik ge·gni",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "three banana",
+    "garo": "Te·rik ge·gittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "four banana",
+    "garo": "Te·rik ge·bri",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "five banana",
+    "garo": "Te·rik ge·bonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "six banana",
+    "garo": "Te·rik ge·dok",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "seven banana",
+    "garo": "Te·rik ge·sni",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "eight banana",
+    "garo": "Te·rik ge·chet",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "nine banana",
+    "garo": "Te·rik ge·sku",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "ten banana",
+    "garo": "Te·rik ge·chiking",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "eleven banana",
+    "garo": "Te·rik ge·Chi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "twelve banana",
+    "garo": "Te·rik ge·Chi·gni",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "thirteen banana",
+    "garo": "Te·rik ge·Chi·gittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "fourteen banana",
+    "garo": "Te·rik ge·Chi·bri",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "fifteen banana",
+    "garo": "Te·rik ge·Chi·bonga",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "sixteen banana",
+    "garo": "Te·rik ge·Chi·dok",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "seventeen banana",
+    "garo": "Te·rik ge·Chi·sni",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "eighteen banana",
+    "garo": "Te·rik ge·Chi·chet",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "nineteen banana",
+    "garo": "Te·rik ge·Chi·sku",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "twenty banana",
+    "garo": "Te·rik ge·Kolgrik",
+    "pos": null,
+    "category": "general",
+    "classifier": "ge",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Te·rik' + ge classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Te·rik ge·sa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (banana takes 'ge', same classifier root as pen/chair/knife, raka-bearing). A distinct bunch-counter form was also relayed ('Te·rik akkasa', classifier 'akka', no raka) and is recorded separately as a single count=1 entry, not mechanically expanded 1-20 this session."
+  },
+  {
+    "english": "one car",
+    "garo": "Gari bolsa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "two car",
+    "garo": "Gari bolgni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "three car",
+    "garo": "Gari bolgittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "four car",
+    "garo": "Gari bolbri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "five car",
+    "garo": "Gari bolbonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "six car",
+    "garo": "Gari boldok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "seven car",
+    "garo": "Gari bolsni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "eight car",
+    "garo": "Gari bolchet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "nine car",
+    "garo": "Gari bolsku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "ten car",
+    "garo": "Gari bolchiking",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "eleven car",
+    "garo": "Gari bolChi·sa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "twelve car",
+    "garo": "Gari bolChi·gni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "thirteen car",
+    "garo": "Gari bolChi·gittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "fourteen car",
+    "garo": "Gari bolChi·bri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "fifteen car",
+    "garo": "Gari bolChi·bonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "sixteen car",
+    "garo": "Gari bolChi·dok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "seventeen car",
+    "garo": "Gari bolChi·sni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "eighteen car",
+    "garo": "Gari bolChi·chet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "nineteen car",
+    "garo": "Gari bolChi·sku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "twenty car",
+    "garo": "Gari bolKolgrik",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Gari' + bol classifier (no raka dot (classifier-level property, like pang/rong/dot/dam/dil/bol)), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Count=1 form 'Gari bolsa' relayed directly by Thangseng; resolves one of the 10 open classifier-or-not questions (car takes 'bol'). FLAG: 'bol' is orthographically identical to the tree root 'Bol' (Bol pangsa=\"one tree\") — different words (classifier vs. noun root) that happen to share spelling; no compile-time collision since they occupy different grammatical slots (classifier suffix position vs. sentence-initial noun), but worth a native disambiguation question if ambiguity ever surfaces in running text."
+  },
+  {
+    "english": "one teacher",
+    "garo": "Skigipa sak·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "two teacher",
+    "garo": "Skigipa sak·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "three teacher",
+    "garo": "Skigipa sak·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "four teacher",
+    "garo": "Skigipa sak·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "five teacher",
+    "garo": "Skigipa sak·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "six teacher",
+    "garo": "Skigipa sak·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "seven teacher",
+    "garo": "Skigipa sak·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "eight teacher",
+    "garo": "Skigipa sak·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "nine teacher",
+    "garo": "Skigipa sak·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "ten teacher",
+    "garo": "Skigipa sak·chiking",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "eleven teacher",
+    "garo": "Skigipa sak·Chi·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "twelve teacher",
+    "garo": "Skigipa sak·Chi·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "thirteen teacher",
+    "garo": "Skigipa sak·Chi·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "fourteen teacher",
+    "garo": "Skigipa sak·Chi·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "fifteen teacher",
+    "garo": "Skigipa sak·Chi·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "sixteen teacher",
+    "garo": "Skigipa sak·Chi·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "seventeen teacher",
+    "garo": "Skigipa sak·Chi·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "eighteen teacher",
+    "garo": "Skigipa sak·Chi·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "nineteen teacher",
+    "garo": "Skigipa sak·Chi·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "twenty teacher",
+    "garo": "Skigipa sak·Kolgrik",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; count=1 citation form recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md \"Held / not done\" section, analyzed but not yet written until this session): root 'Skigipa' + sak classifier (raka dot between classifier and suffix), 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book. Root 'Skigipa' relayed directly by Thangseng this session, resolving the teacher portion of the person/student/teacher root conflict (student's root remains open, not touched here). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'=\"one person\"; same classifier+raka behavior applied here by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "one bunch of bananas",
+    "garo": "Te·rik akkasa",
+    "pos": null,
+    "category": "general",
+    "classifier": "akka",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md). Distinct bunch-counter form for banana, separate from the per-fruit 'ge' classifier ('Te·rik ge·sa'=\"one banana\"). 'akka' classifier, no raka dot. Not mechanically expanded to 2-20 this session — single count=1 form only, as relayed."
   }
 ]

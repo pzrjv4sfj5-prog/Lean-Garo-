@@ -207,6 +207,38 @@ repository:
     supplied live by Project Owner, used inline in push URL only, never
     persisted."
 
+  head: 381bc29
+  last_updated: "2026-08-13 (Claude A, session close: wrote the held native
+    relay from docs/CLAUDE_A_SESSION_MIGRATION_20260813.md into the corpus --
+    teacher/mountain/village/road/banana/car, 120 new VERIFIED/HIGH counting
+    entries (6 nouns x 20 counts), plus a separate 'one bunch of bananas'=
+    'Te·rik akkasa' entry (akka classifier, not mechanically expanded).
+    Roots/classifiers per the literal relayed count=1 forms: mountain=A·bri+dot
+    (no raka), village=Song+dam (no raka), road=Rama+dil (no raka),
+    banana=Te·rik+ge· (raka, same classifier as pen/chair), car=Gari+bol (no
+    raka -- flagged, not resolved, as an orthographic-only collision with the
+    unrelated tree root 'Bol'), teacher=Skigipa+sak (raka, same classifier as
+    person). This resolves 5 of the 10 open house/car/road/river/mountain/
+    village/water/food/rice/banana classifier questions (mountain/village/
+    road/banana/car) and the teacher portion of the person/student/teacher
+    root conflict (student still open, not touched). Directly fixes 120 of
+    the ~230 keys flagged in this session's earlier compile-pipeline audit
+    (docs/CLAUDE_A_COUNTING_QA_20260813.md) as shipping already-SUPERSEDED
+    fabrications with no VERIFIED alternative -- those 120 now have one.
+    Remaining ~110 (house/rice/water/food, ~19 keys each) still need native
+    input, not resolved here. Old SUPERSEDED duplicates retained per citation
+    discipline (not deleted); the resulting 120 new dictionary
+    self-consistency conflicts (VERIFIED value now differs from the old
+    live SUPERSEDED string for the same key -- intentional, expected) logged
+    to src/data/known_dictionary_conflicts.json per Check B/C convention.
+    Verified: node prepare-data.js (8151 entries, compiled_dict.json rebuilt,
+    new values confirmed live for all 6 nouns), node test-dictionary.js
+    (8151/8151 valid), node repository-intelligence.js (PASSED, 0 new
+    violations after allowlisting), node --test tests/unit/*.test.js
+    (203/203 pass). git status clean, HEAD==origin/main, fully pushed. PAT
+    supplied live by Project Owner, used inline in push URL only, never
+    persisted."
+
 claude_a:
   status: active
   migration_doc: >-
