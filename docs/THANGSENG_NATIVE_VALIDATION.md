@@ -4049,3 +4049,75 @@ root remains open.
 carries this value (confirmed unchanged this session, see
 `docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md`'s Rule 8 sweep). Notes-
 only update.
+
+## NV-073 — CLOSED (2026-08-14, Thangseng direct via Tridip)
+
+Four items relayed together:
+
+1. **Student's root**, closing the last piece of the person/student/
+   teacher conflict: "one student" = `chattro sak·sa`.
+2. **Person, reconfirmed**: "a person" = `mande sak·sa` (native
+   explicitly noted no raka *in* the root `mande` itself — the raka
+   dot sits between classifier and suffix, as already recorded under
+   NV-072).
+3. **Coin's root, corrected**: "tangka" and "bisil" are two separate
+   words; the compound root is "tangka bisil", not "tangka" alone —
+   "a coin" = `tangka bisil gong·sa`.
+4. **House/rice/water — the "10 nouns" question, partially resolved**:
+   "one house" = `nok te·sa` (new classifier `te`, raka-carrying);
+   "a grain of rice" (uncooked) = `merong rong·sa` (reuses the
+   already-VERIFIED `rong` classifier); "a glass of water" =
+   `chi glass sa`; "one plate of rice" (cooked) = `mi plate sa`.
+
+Resolution:
+- Student: `Chattro sak·N` generated 1–20 by direct analogy to the
+  teacher/person precedent (root substitution into the already-
+  VERIFIED `sak` classifier + NUMBERS suffix table). Old fabricated
+  `chik`-root student entries remain SUPERSEDED, untouched.
+- Coin: old `tangka gong·N` entries (root missing "bisil") marked
+  SUPERSEDED; `tangka bisil gong·N` generated 1–20 by the same
+  substitution logic.
+- House: new classifier `te` (raka-carrying) added to
+  `garo_classifier.js` CLASSIFIER_MAP and RAKA_CLASSIFIERS — its first
+  confirmed member. `nok te·N` generated 1–20. Old fabricated
+  `rang`-root house entries remain SUPERSEDED, untouched.
+- Rice (uncooked/grain): `merong rong·N` generated 1–20, reusing the
+  already-VERIFIED no-raka `rong` classifier (round objects/fruit) —
+  confirms grain rice fits the existing classifier system rather than
+  needing a new one.
+- Water and cooked rice/food: recorded as **single VERIFIED/HIGH
+  citation forms only** (`chi glass sa`, `mi plate sa`), NOT
+  mechanically extended to counts 2–20. These reveal a genuinely new
+  structural pattern — mass nouns counted via a container/measure
+  word (English loanword, e.g. "glass"/"plate") standing in the
+  classifier slot, rather than a semantic classifier. Whether the
+  NUMBERS suffix table and no-raka attachment generalize to this slot
+  across counts is unconfirmed from a single data point — flagged as
+  an open question for a future NV relay before generating a 1–20
+  series. This is evidence that water/food/cooked-rice are mass
+  nouns, as suspected in the original "10 nouns" question; uncooked
+  rice (grain) is not — it's classifier-countable via `rong`.
+
+Repository hygiene: 32 dictionary self-consistency conflicts (each new
+VERIFIED entry vs. its own pre-existing SUPERSEDED counterpart, same
+pattern as every prior root fix) added to
+`src/data/known_dictionary_conflicts.json` with this citation.
+
+**Runtime Handoff (Claude B):** `compiled_dict.json` regenerated via
+`node prepare-data.js` (8201 entries, up from 8181 pre-session — net
++20 new keys after dedup: the student/coin/house/rice series plus the
+two mass-noun citations). All 203 unit tests pass;
+`repository-intelligence.js` exits 0 (0 new violations across all
+checks). Known gap, not introduced this session: plural-keyed queries
+("twenty students") for both student and teacher still resolve to the
+stale SUPERSEDED value under `pickPrimary()`, because the VERIFIED fix
+was only written under the singular key ("twenty student"), mirroring
+the exact pre-existing teacher pattern. Not fixed here — flagged
+alongside the existing Check F "beautiful"/`Sila` case-duplicate gap
+Claude B surfaced in commit `d0a28b5`, both plausible candidates for a
+future singular/plural key-normalization pass.
+
+Student's root is now closed — the full person/student/teacher
+conflict is resolved. Remaining open items: whether the container-word
+mass-noun pattern generalizes past count=1, and `bol` vehicle-
+classifier scope (car/road/etc. still unconfirmed).

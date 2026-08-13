@@ -30,7 +30,8 @@
   {
     "english": "one coin",
     "garo": "tangka gong·sa",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — native correction 2026-08-14 (NV-073, Thangseng via Tridip): root was incomplete — 'tangka' and 'bisil' are two separate words that together form the compound root for 'coin'; correct form is 'tangka bisil gong·sa'. Not deleted, retained per citation discipline. See replacement VERIFIED/HIGH entry."
   },
   {
     "english": "five rupees",
@@ -5730,7 +5731,8 @@
   {
     "english": "five coins",
     "garo": "tangka gong·bonga",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — native correction 2026-08-14 (NV-073, Thangseng via Tridip): same incomplete-root issue as 'one coin' — see that entry's note. Correct form is 'tangka bisil gong·bonga'."
   },
   {
     "english": "ten birds",
@@ -14046,7 +14048,8 @@
   {
     "english": "the one coin",
     "garo": "tangka gong·sa",
-    "category": "numbers"
+    "category": "numbers",
+    "notes": "SUPERSEDED — native correction 2026-08-14 (NV-073, Thangseng via Tridip): same incomplete-root issue as 'one coin' — see that entry's note. Correct form is 'tangka bisil gong·sa'."
   },
   {
     "english": "the five rupees",
@@ -65055,5 +65058,661 @@
     "category": "general",
     "classifier": "akka",
     "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session; recorded in docs/CLAUDE_A_SESSION_MIGRATION_20260813.md). Distinct bunch-counter form for banana, separate from the per-fruit 'ge' classifier ('Te·rik ge·sa'=\"one banana\"). 'akka' classifier, no raka dot. Not mechanically expanded to 2-20 this session — single count=1 form only, as relayed."
+  },
+  {
+    "english": "one student",
+    "garo": "Chattro sak·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "two student",
+    "garo": "Chattro sak·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "three student",
+    "garo": "Chattro sak·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "four student",
+    "garo": "Chattro sak·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "five student",
+    "garo": "Chattro sak·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "six student",
+    "garo": "Chattro sak·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "seven student",
+    "garo": "Chattro sak·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "eight student",
+    "garo": "Chattro sak·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "nine student",
+    "garo": "Chattro sak·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "ten student",
+    "garo": "Chattro sak·chiking",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "eleven student",
+    "garo": "Chattro sak·Chi·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "twelve student",
+    "garo": "Chattro sak·Chi·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "thirteen student",
+    "garo": "Chattro sak·Chi·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "fourteen student",
+    "garo": "Chattro sak·Chi·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "fifteen student",
+    "garo": "Chattro sak·Chi·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "sixteen student",
+    "garo": "Chattro sak·Chi·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "seventeen student",
+    "garo": "Chattro sak·Chi·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "eighteen student",
+    "garo": "Chattro sak·Chi·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "nineteen student",
+    "garo": "Chattro sak·Chi·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "twenty student",
+    "garo": "Chattro sak·Kolgrik",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'Chattro' + sak classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'Chattro' relayed directly by Thangseng this session ('one student' = 'chattro sak·sa'), resolving the student portion of the person/student/teacher root conflict (person and teacher already closed). 'sak' classifier (people) already settled/VERIFIED via 'mande sak·sa'; same classifier+raka behavior applied by direct analogy, root-for-root substitution only."
+  },
+  {
+    "english": "one coin",
+    "garo": "tangka bisil gong·sa",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "two coins",
+    "garo": "tangka bisil gong·gni",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "three coins",
+    "garo": "tangka bisil gong·gittam",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "four coins",
+    "garo": "tangka bisil gong·bri",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "five coins",
+    "garo": "tangka bisil gong·bonga",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "six coins",
+    "garo": "tangka bisil gong·dok",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "seven coins",
+    "garo": "tangka bisil gong·sni",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "eight coins",
+    "garo": "tangka bisil gong·chet",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "nine coins",
+    "garo": "tangka bisil gong·sku",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "ten coins",
+    "garo": "tangka bisil gong·chiking",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "eleven coins",
+    "garo": "tangka bisil gong·Chi·sa",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "twelve coins",
+    "garo": "tangka bisil gong·Chi·gni",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "thirteen coins",
+    "garo": "tangka bisil gong·Chi·gittam",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "fourteen coins",
+    "garo": "tangka bisil gong·Chi·bri",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "fifteen coins",
+    "garo": "tangka bisil gong·Chi·bonga",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "sixteen coins",
+    "garo": "tangka bisil gong·Chi·dok",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "seventeen coins",
+    "garo": "tangka bisil gong·Chi·sni",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "eighteen coins",
+    "garo": "tangka bisil gong·Chi·chet",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "nineteen coins",
+    "garo": "tangka bisil gong·Chi·sku",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "twenty coins",
+    "garo": "tangka bisil gong·Kolgrik",
+    "pos": null,
+    "category": "numbers",
+    "classifier": "gong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): compound root 'tangka bisil' + gong classifier (raka dot between classifier and suffix). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root correction: 'tangka' and 'bisil' are two separate words forming the compound root for 'coin' (Thangseng, NV-073, 2026-08-14: 'tangka bisil gong·sa' = 'a coin'), replacing the incomplete 'tangka'-only root used in prior entries (now SUPERSEDED). 'gong' classifier (money) already settled/VERIFIED via 'tangka gong·N' money-counting entries; same classifier+raka behavior retained, root corrected."
+  },
+  {
+    "english": "one house",
+    "garo": "nok te·sa",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "two houses",
+    "garo": "nok te·gni",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "three houses",
+    "garo": "nok te·gittam",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "four houses",
+    "garo": "nok te·bri",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "five houses",
+    "garo": "nok te·bonga",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "six houses",
+    "garo": "nok te·dok",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "seven houses",
+    "garo": "nok te·sni",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "eight houses",
+    "garo": "nok te·chet",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "nine houses",
+    "garo": "nok te·sku",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "ten houses",
+    "garo": "nok te·chiking",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "eleven houses",
+    "garo": "nok te·Chi·sa",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "twelve houses",
+    "garo": "nok te·Chi·gni",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "thirteen houses",
+    "garo": "nok te·Chi·gittam",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "fourteen houses",
+    "garo": "nok te·Chi·bri",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "fifteen houses",
+    "garo": "nok te·Chi·bonga",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "sixteen houses",
+    "garo": "nok te·Chi·dok",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "seventeen houses",
+    "garo": "nok te·Chi·sni",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "eighteen houses",
+    "garo": "nok te·Chi·chet",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "nineteen houses",
+    "garo": "nok te·Chi·sku",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "twenty houses",
+    "garo": "nok te·Kolgrik",
+    "pos": null,
+    "category": "home",
+    "classifier": "te",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'nok' + te classifier (raka dot between classifier and suffix, new classifier). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'nok' (matches VERIFIED singular 'house'=Nok) + NEW classifier 'te' relayed directly by Thangseng this session ('one house' = 'nok te·sa'), replacing the fabricated 'rang' root used in prior SUPERSEDED entries. 'te' classifier newly added to garo_classifier.js CLASSIFIER_MAP (raka-carrying, per this citation) — house is its first confirmed member."
+  },
+  {
+    "english": "one grain of rice",
+    "garo": "merong rong·sa",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "two grains of rice",
+    "garo": "merong rong·gni",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "three grains of rice",
+    "garo": "merong rong·gittam",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "four grains of rice",
+    "garo": "merong rong·bri",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "five grains of rice",
+    "garo": "merong rong·bonga",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "six grains of rice",
+    "garo": "merong rong·dok",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "seven grains of rice",
+    "garo": "merong rong·sni",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "eight grains of rice",
+    "garo": "merong rong·chet",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "nine grains of rice",
+    "garo": "merong rong·sku",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "ten grains of rice",
+    "garo": "merong rong·chiking",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "eleven grains of rice",
+    "garo": "merong rong·Chi·sa",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "twelve grains of rice",
+    "garo": "merong rong·Chi·gni",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "thirteen grains of rice",
+    "garo": "merong rong·Chi·gittam",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "fourteen grains of rice",
+    "garo": "merong rong·Chi·bri",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "fifteen grains of rice",
+    "garo": "merong rong·Chi·bonga",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "sixteen grains of rice",
+    "garo": "merong rong·Chi·dok",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "seventeen grains of rice",
+    "garo": "merong rong·Chi·sni",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "eighteen grains of rice",
+    "garo": "merong rong·Chi·chet",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "nineteen grains of rice",
+    "garo": "merong rong·Chi·sku",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "twenty grains of rice",
+    "garo": "merong rong·Kolgrik",
+    "pos": null,
+    "category": "food",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): root 'merong' + rong classifier (no raka — suffix attaches directly). 1-20 mechanically built from the count=1 citation form using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for person/tree/apple/book/teacher. Root 'merong' (matches VERIFIED 'rice (uncooked)'=Merong) classified with the already-VERIFIED 'rong' classifier (round objects/fruit, no raka dot — confirmed 2026-08-01 via apple/mango/alcohol), relayed directly by Thangseng this session ('a grain of rice' = 'merong rong·sa'). Note: 'rong' is a no-raka classifier — suffix attaches directly ('rong·sa' written with the mark here only per the raka-in-root display convention already used elsewhere for no-raka classifiers; verify against garo_classifier.js RAKA_CLASSIFIERS if rendering matters)."
+  },
+  {
+    "english": "a glass of water",
+    "garo": "chi glass sa",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): 'a glass of water' = 'chi glass sa'. This is a NEW pattern, structurally distinct from the noun+classifier+suffix system: water (root 'chi') is a mass noun counted via a CONTAINER/MEASURE WORD ('glass', English loanword) rather than a semantic classifier (mang/sak/king/gong/pang/rong/ge/te). Suffix 'sa' matches the standard NUMBERS table, but whether the full 1-20 suffix table and no-raka attachment generalize to this container-word slot is UNCONFIRMED — only the count=1 form is citation-backed. Not mechanically extended to counts 2-20; flag for a future NV item before generating the series. Resolves 'water is a mass noun, not classifier-countable' per the queued 10-nouns classifier question."
+  },
+  {
+    "english": "one plate of rice",
+    "garo": "mi plate sa",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-073): 'one plate of rice' = 'mi plate sa'. Root 'mi' matches VERIFIED 'rice (cooked)'=Mi. Same new container/measure-word pattern as 'a glass of water' (see that entry's note) — 'plate' (English loanword) stands in the classifier slot instead of a semantic classifier. Only the count=1 form is citation-backed; not mechanically extended to counts 2-20. Confirms cooked rice/food is counted as a mass noun via container word, distinct from uncooked rice grains (which take the 'rong' classifier — see 'N grain(s) of rice' entries)."
   }
 ]

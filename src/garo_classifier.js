@@ -80,6 +80,12 @@ export const CLASSIFIER_MAP = {
   'fruit':'rong','fruits':'rong','mewa':'rong','bite':'rong','bi·te':'rong',
   'apple':'rong','mango':'rong',
   'alcohol':'rong','chu':'rong','beer':'rong',
+  'merong':'rong', // rice (uncooked/grain); cooked rice ('mi') is a mass
+  // noun counted via container word ('plate'), not this classifier — see
+  // master_dictionary.json 'one plate of rice' note. Do not map generic
+  // 'rice' here, it's ambiguous between the two.
+  'house':'te','nok':'te', // NEW classifier, native-confirmed 2026-08-14
+  // (NV-073, Thangseng): 'nok te·sa' = 'one house'. Raka-carrying.
 };
 
 export const CLASSIFIERS = CLASSIFIER_MAP;
@@ -118,7 +124,9 @@ function getClassifierSuffix(count) {
 }
 
 // Classifiers that carry raka (·) — confirmed by Thangseng raka rule
-const RAKA_CLASSIFIERS = new Set(['mang', 'sak', 'ge', 'gong']);
+const RAKA_CLASSIFIERS = new Set(['mang', 'sak', 'ge', 'gong', 'te']);
+// 'te' (house) added 2026-08-14, NV-073, Thangseng direct: 'nok te·sa'
+// shows the raka dot, so 'te' joins the raka-carrying set.
 // No-raka classifiers: king, jol, pang, dot, rong (suffixes attach directly)
 // rong confirmed no-raka 2026-08-01 from Thangseng's own typed examples
 // ("rongsa", "rongbonga" — no dot in either), see file header note.
