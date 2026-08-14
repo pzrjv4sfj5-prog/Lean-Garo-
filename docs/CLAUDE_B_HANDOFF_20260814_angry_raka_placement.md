@@ -91,6 +91,32 @@ methodology should probably be spot-checked more broadly — if it got
 affected. Not attempting that sweep here (outside Check F engineering
 scope) — flagging for Claude A's awareness alongside the specific fixes.
 
+## Update, same day — second relay, revises the "a dog bit me" native form
+
+Project Owner sent a further direct correction in-session:
+
+```
+a dog bit me = angko achak chikaha
+```
+
+This revises the native form logged above (`Angko achak chika`) — same
+word order (`Angko achak`), but the final word now carries the `-ha`
+suffix (`chikaha`) rather than `chika`. That `-ha` ending now matches
+`corrections.json`'s existing value (`Achak Angko chikaha`) on the verb
+form, while still disagreeing with it on word order (`Angko achak`
+native vs. `Achak Angko` in `corrections.json`). `master_dictionary.json`'s
+untagged legacy form (`An·tangko achik chanjok`) remains the outlier,
+matching neither.
+
+So the "a dog bit me" question is still 3-way, but narrower than before:
+the dispute now looks like word-order (`Angko achak` vs `Achak Angko`)
+rather than a fully divergent verb form, since two of the three sources
+now agree on `chikaha`. Not editing `corrections.json` or
+`master_dictionary.json` on the strength of this alone — same reasoning
+as above (linguistic-content call, needs Claude A / original native
+channel to confirm). Check F's engineering closure for this key is
+unaffected either way.
+
 ## Commits referenced
 - `30c667c` — the now-reverted `always` fix (Check F session, based on
   the audit tag before this contradicting evidence arrived).

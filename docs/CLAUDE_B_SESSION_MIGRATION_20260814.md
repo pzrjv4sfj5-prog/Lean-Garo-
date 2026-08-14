@@ -90,12 +90,17 @@ the original NV-054 capture, or the Owner's shorthand just dropped raka
 marks casually (less certain than the always/answer conflict, which was
 a clean full-value contradiction). Lower urgency than issue #1.
 
-**3. `a dog bit me` — 3-way linguistic conflict.**
-Native: `Angko achak chika`. `corrections.json`: `Achak Angko chikaha`
-(documented Batch-2 native session). `master_dictionary.json`: `An·tangko
-achik chanjok` (untagged legacy). Check F engineering closure stands
+**3. `a dog bit me` — 3-way linguistic conflict, narrowed by a second relay.**
+First native relay: `Angko achak chika`. Second relay (post-doc,
+2026-08-14): `angko achak chikaha` — same word order, revises the ending
+to `-ha`. `corrections.json`: `Achak Angko chikaha` (documented Batch-2
+native session) — now agrees with the second relay on the verb form
+(`chikaha`), still disagrees on word order (`Angko achak` vs
+`Achak Angko`). `master_dictionary.json`: `An·tangko achik chanjok`
+(untagged legacy, matches neither). Check F engineering closure stands
 (corrections wins at runtime either way) but which form is *right*
-linguistically is open. Flagged in the same handoff doc.
+linguistically is open — now looks like a word-order question rather
+than a fully divergent form. Flagged in the same handoff doc.
 
 ## Standing rules established this session (in addition to prior ones)
 - **Don't trust a SUPERSEDED/VERIFIED tag pair at face value if the
