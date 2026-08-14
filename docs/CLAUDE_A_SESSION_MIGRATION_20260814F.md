@@ -49,11 +49,19 @@ in corrections.json/phrase_maps.js; angry: corrections.json synced,
 phrase_maps.js flagged not synced — see above).
 
 ## Verification
-- `node prepare-data.js`: 8299 → 8322 unique compiled entries.
-- `node test-dictionary.js`: 8322/8322 valid, JSON compliance clean.
-- `npm test` (i.e. `node --test tests/unit/*.test.js` — **note:** bare
-  `node --test tests/` without the glob misfires with a false failure,
-  use the npm script or the explicit glob): 206/206 passing.
+- `node prepare-data.js`: 8322 unique compiled entries pre-rebase.
+  After rebasing onto Claude B's concurrent session-E work (SUPERSEDED-
+  only-candidate filtering, `cc903d4`/`5ac363f`), re-ran clean:
+  8132 compiled entries (the count shift is Claude B's new filter
+  correctly excluding SUPERSEDED-only candidates, not a regression —
+  190 keys now held per `docs/SUPERSEDED_ONLY_KEYS.md`; the medicine/
+  pill and angry entries from this session are all VERIFIED/HIGH and
+  ship normally).
+- `node test-dictionary.js`: 8132/8132 valid, JSON compliance clean.
+- `npm test`: 215/215 passing (up from 206 pre-rebase — Claude B added
+  9 tests this session for the precedence/filtering fixes). **Note:**
+  bare `node --test tests/` without the glob misfires with a false
+  failure, use the npm script or the explicit glob.
 - `node repository-intelligence.js`: 0 new violations across Checks
   A–F (289 known/allowlisted Check-F mismatches unchanged).
 - `npm run build`: clean through the Node pipeline; `vite build` itself
@@ -65,12 +73,15 @@ Session-supplied PAT used inline in clone/push remote URLs only, never
 persisted to git config, commit content, or any tracked file.
 
 ## Repository status at close
-- HEAD: `a01d729` plus this doc's own commit (below)
+- HEAD: this commit, rebased cleanly onto Claude B's concurrent
+  session-E push (`39763a3`), no conflicts, zero file overlap requiring
+  manual resolution
 - `origin/main`: will match HEAD exactly after push
 - `git status`: clean, no uncommitted changes, no local-only commits
 - `WORKSTATE.yaml`: updated this session (`claude_a.next_action`/
   `next_action_prior`, new `claude_b.flag_from_claude_a`)
-- `SESSION_BOOTSTRAP.md`: unchanged (no governance change this session)
+- `SESSION_BOOTSTRAP.md`: unchanged by Claude A this session (Claude B
+  made an unrelated concurrent addition, already merged via rebase)
 - Migration doc: this document, complete
 - Native-validation/blocker status: NV-078 closed. `angry` raka-count
   closed (two passes). One open engineering flag for Claude B
