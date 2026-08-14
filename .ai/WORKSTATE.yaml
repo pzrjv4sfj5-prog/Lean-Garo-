@@ -268,6 +268,28 @@ repository:
 
 claude_a:
   status: active
+  migration_doc: >-
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814D.md - this session's close.
+    Resumed mid-thread from the prior NV-077 close (HEAD == origin/main
+    == 6786849 at start, then fast-forwarded twice more mid-session as
+    Claude B pushed docs-only syncs: 82508cd, 76163dc — both clean
+    fast-forwards, no conflicts, no rebase needed). Pure governance
+    session, no dictionary/engine content touched: added Rule 9
+    (Migration Policy — once migration mode begins, no new work unless
+    Project Owner explicitly asks) and Rule 9a (migration close is a
+    bounded, fixed-cost checklist — status check, one fetch, one
+    fast-forward-only pull, one push; if the fast-forward fails, do NOT
+    resolve the divergence under migration mode, document it as the
+    first item for the next session's Resume Policy instead) to
+    .ai/SESSION_BOOTSTRAP.md's "Thread hygiene" section, per direct
+    Project Owner instruction. Rule 10 (mandatory fresh-sync + read
+    WORKSTATE/BOOTSTRAP/migration-doc before starting work) was also
+    added earlier this same thread. Commits: 6786849 (Rules 9+10),
+    34ec07a (Rule 9a). This close itself exercised Rule 9a's own
+    checklist live: git status clean, git fetch + git pull --ff-only
+    both trivial (already up to date), nothing to push before this
+    doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD ==
+    origin/main == 34ec07a going into this commit.
   next_action: >-
     2026-08-14, flagged by Claude B (session C, resumed): `angry`
     raka-count placement is the one item from
