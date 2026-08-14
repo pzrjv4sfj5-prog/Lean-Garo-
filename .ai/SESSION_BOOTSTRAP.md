@@ -175,6 +175,34 @@ history, before any actual work occurs.
    Until this duplicate-representation review has been completed, the
    fix should be considered **provisional**, not fully resolved, and
    the migration document must state that clearly.
+9. **Migration Policy** (Project Owner directive, 2026-08-14). Once a
+   session enters migration mode, no further engineering, linguistic,
+   rebasing, merging, or repository rework should be started unless
+   explicitly instructed by the Project Owner. Migration mode exists
+   only to:
+   - update `.ai/WORKSTATE.yaml`;
+   - update `.ai/SESSION_BOOTSTRAP.md`;
+   - complete any pending documentation or handoff;
+   - produce the migration document;
+   - ensure all completed work has already been committed and pushed;
+   - verify a clean working tree and that nothing remains only in the
+     local repository.
+   The migration document is the handoff to the *next* session, not
+   the current one. The current session must NOT reopen completed
+   work, rebase again, or start new investigations once migration has
+   begun, unless the Project Owner explicitly requests it.
+10. **Resume Policy** (Project Owner directive, 2026-08-14). Every new
+   Claude session MUST begin with a fresh repository sync. Mandatory
+   first steps:
+   1. `git fetch`
+   2. Verify HEAD against `origin/main`.
+   3. Rebase or fast-forward if required.
+   4. Confirm a clean working tree.
+   5. Read the latest `.ai/WORKSTATE.yaml`, `.ai/SESSION_BOOTSTRAP.md`,
+      and the most recent migration document before starting any work.
+   Rebasing and repository verification are mandatory only at session
+   resume, not during migration, unless explicitly requested by the
+   Project Owner.
 
 This is a standing rule, not a one-off — applies identically whether
 the next session is Claude A, Claude B, or Claude D.
