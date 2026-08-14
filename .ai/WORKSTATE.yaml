@@ -269,10 +269,13 @@ repository:
 claude_a:
   status: active
   migration_doc: >-
-    docs/CLAUDE_A_SESSION_MIGRATION_20260715.md - superseded by the
-    2026-07-24 migration doc pasted directly into the current session
-    (not yet its own committed file). See current_task below for
-    everything since.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814.md - this session's close.
+    Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md; resolved
+    NV-072 through NV-075 (person/student/teacher root conflict fully
+    closed, coin root corrected, new 'te' house classifier, rice-grain
+    via 'rong', water/food container-word mass-noun pattern confirmed
+    and generalized 1-20, no-raka + no-native-word clarifications).
+    Only 'bol' vehicle-classifier scope remains open.
   current_task: >-
     2026-08-13 (session, resumed via user-pasted PAT + migration-doc
     filename reference docs/CLAUDE_A_SESSION_MIGRATION_20260812B.md --
