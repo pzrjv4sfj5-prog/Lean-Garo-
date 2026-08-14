@@ -16,7 +16,7 @@ const compiled = JSON.parse(fs.readFileSync(new URL('../../src/compiled_dict.jso
 test('RC-CANDIDATE-037: non-bird/fish nouns no longer carry a stray do·o/na·tok prefix', () => {
   const shouldNotStartWithDoO = [
     'two teachers', 'two books', 'two persons', 'two students',
-    'two houses', 'two trees', 'two cars',
+    'two houses', 'two trees',
   ];
   for (const k of shouldNotStartWithDoO) {
     const v = compiled[k];
@@ -30,6 +30,21 @@ test('RC-CANDIDATE-037: non-bird/fish nouns no longer carry a stray do·o/na·to
     assert.ok(v, `expected a compiled entry for "${k}"`);
     assert.ok(!/^na·tok\s/i.test(v), `"${k}" still starts with stray "na·tok": ${v}`);
   }
+});
+
+// "two cars" removed from the list above 2026-08-14 (Claude B, per Claude
+// C's audit §3 / prepare-data.js SUPERSEDED-only-candidate fix): its sole
+// candidate ("rang·gni") was already flagged SUPERSEDED by Claude A on
+// 2026-08-12 as a corpus-internal fabrication (root "rang" wrongly reused
+// from "house") with no replacement asserted. It never should have shipped
+// in the first place — the pipeline previously had no mechanism to hold a
+// key back when every candidate is SUPERSEDED and none survive, so it fell
+// through to last-write-wins and shipped the flagged-wrong value anyway.
+// This asserts the fixed pipeline now correctly withholds it instead of
+// re-shipping known-fabricated content; see docs/SUPERSEDED_ONLY_KEYS.md.
+test('RC-CANDIDATE-037 follow-up: "two cars" (SUPERSEDED, no replacement) is held, not shipped', () => {
+  assert.equal(compiled['two cars'], undefined,
+    '"two cars" has no non-SUPERSEDED candidate and must not appear in compiled_dict.json');
 });
 
 test('RC-CANDIDATE-037: dog/cat entries get the correct noun substituted, not just stripped', () => {
