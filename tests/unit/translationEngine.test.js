@@ -554,7 +554,7 @@ test('RC-CANDIDATE-025 regression guard: bare-infinitive aliasing never overwrit
 
 // --- corrections.json had two stale entries discovered the same session:
 // "angry" was a truncated fragment (ka·o, not a complete word) instead of
-// the VERIFIED/HIGH master_dictionary.json entry (ka·o·nang·a); "smile"
+// the VERIFIED/HIGH master_dictionary.json entry; "smile"
 // was silently overridden to laugh's word (Ka·dinga) instead of its own
 // VERIFIED entry. That VERIFIED entry was itself provisional
 // (ka·ding·sim·ik·a) until 2026-08-06, when the Project Owner relayed a
@@ -565,11 +565,17 @@ test('RC-CANDIDATE-025 regression guard: bare-infinitive aliasing never overwrit
 // here. The separate open question of whether the newly-imported
 // "Ka·a chakna amja" is a legitimate distinct-register synonym for angry
 // is NOT resolved by this fix and is left for Claude A.
+//
+// 2026-08-14 (NV-078, Claude A): the master_dictionary.json VERIFIED
+// value itself was corrected from 'ka·o·nang·a' (three raka) to
+// 'Ka·o nanga' (one raka, matching the pre-existing 'anger' noun entry
+// and the Project Owner's exact native-confirmed raka placement). This
+// assertion is updated to match; see NV-078 in master_dictionary.json.
 
 test('corrections.json: "angry" resolves to the VERIFIED entry, not the truncated fragment', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('he is angry');
-  assert.ok(r.garo.includes('ka·o·nang·a'), `must use full VERIFIED word, got: ${r.garo}`);
+  assert.ok(r.garo.includes('Ka·o nanga'), `must use full VERIFIED word, got: ${r.garo}`);
 });
 
 test('corrections.json: "smile" resolves to its own word, not to laugh', async () => {

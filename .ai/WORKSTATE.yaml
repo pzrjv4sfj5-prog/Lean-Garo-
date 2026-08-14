@@ -269,7 +269,17 @@ repository:
 claude_a:
   status: active
   migration_doc: >-
-    docs/CLAUDE_A_SESSION_MIGRATION_20260814E.md - this session's close.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814F.md - this session's close.
+    Same session as 20260814E, continued: closed the `angry` raka-count
+    placement (NV-078 follow-up) once the Project Owner supplied the
+    exact placement. See next_action for details. 8321->8322 compiled
+    entries (+1: 'do not be angry'), 206/206 unit tests (up from 203 —
+    Claude B's concurrent session D added 3 audit-script tests, picked
+    up via rebase), 0 new repository-intelligence violations. Working
+    tree clean, fully pushed.
+  migration_doc_prior: >-
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814E.md - prior close, same
+    session.
     Resumed from 20260814D (HEAD == origin/main == a1cd496 at start, zero
     drift). NV-078: closed the medicine/pill counting + drink-medicine
     items relayed by Thangseng via Tridip (Project Owner). "one/two/three
@@ -313,18 +323,31 @@ claude_a:
     doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD ==
     origin/main == 34ec07a going into this commit.
   next_action: >-
-    2026-08-14 (this session): `angry` raka-count placement is still the
-    only open Claude B flag (docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md).
-    Attempted to close it this session per Project Owner instruction but
-    did not — the Owner's own "ka.onanga, mind the raka" spelling
-    (recorded in that handoff doc) uses a plain period, not a raka mark,
-    so it doesn't specify a precise position: could be ka·onanga,
-    kao·nanga, or something else, none of which is safely
-    distinguishable from the live ka·o·nang·a (three raka) without an
-    exact position. Per evidence-first discipline this needs one more
-    round of confirmation, not a guess: Project Owner to relay back to
-    Thangseng "how many raka marks in 'angry' (ka.onanga) and exactly
-    where" (e.g. spelled with · in place of each glottal stop).
+    2026-08-14 (this session, second pass): `angry` raka-count placement
+    is now CLOSED. Project Owner relayed the exact placement directly
+    ("Angry = ka'o nanga" / "ka.onanga" / "Ka.o nangnabe. = do not be
+    angry", period standing for the raka mark, one raka after 'ka' only)
+    — matching the pre-existing 'anger' noun entry ('Ka·o nanga') and
+    resolving the earlier mismatch between NV-054's stored value
+    (ka·o·nang·a, three raka) and NV-054's own citation text (which had
+    quoted 'ka'o nanga' all along). master_dictionary.json's 'angry'
+    entry corrected to 'Ka·o nanga'; corrections.json's matching entry
+    corrected (phrase_maps.js's 'i am angry' already had it right); new
+    entry 'do not be angry' = 'Ka·o nangnabe' added.
+    tests/unit/translationEngine.test.js:572 updated to assert the
+    corrected value (was asserting the now-superseded three-raka form —
+    flagged for Claude B's awareness, not an engineering change, just a
+    content-accuracy fix to an assertion string). docs/CLAUDE_B_HANDOFF_
+    20260814_angry_raka_placement.md's one remaining open item is
+    resolved; no items left open in that handoff.
+  next_action_prior: >-
+    2026-08-14 (this session, first pass): `angry` raka-count placement
+    was still the only open Claude B flag. Attempted to close it per
+    Project Owner instruction but did not — the Owner's own "ka.onanga,
+    mind the raka" spelling used a plain period, not a raka mark, so it
+    didn't specify a precise position. Asked Project Owner to relay back
+    to Thangseng the exact raka placement. (Resolved later this same
+    session — see next_action above.)
   next_action_prior: >-
     2026-08-14, flagged by Claude B (session C, resumed): `angry`
     raka-count placement is the one item from

@@ -22963,11 +22963,19 @@
   },
   {
     "english": "angry",
-    "garo": "ka·o·nang·a",
+    "garo": "Ka·o nanga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Native gave 'Angry = ka'o nanga' directly, with three confirming example sentences (Ka'o nangnabe / Bia ka'o nangengama? / Bi'sarangko ka'o nangatnabe.). Promoted from UNVERIFIED/HIGH. Not a judgment on the other 'angry' variants in this cluster (bi·ka so·a, hel·hel) or on the separate an'chi ding·na (doc7) / Ka-chaa (secondary sense, NV-025-adjacent) forms elsewhere in the dictionary — three distinct 'angry' clusters now coexist unreconciled; flagged for awareness, not resolved here per evidence-first discipline."
+    "notes": "VERIFIED/HIGH — NV-054 (2026-08-03) corrected under NV-078 (2026-08-14): the stored value 'ka·o·nang·a' (three raka) did not match its own NV-054 citation, which quoted the native form as 'ka'o nanga' (one raka, after 'ka' only). Project Owner reconfirmed directly in-session with exact raka placement ('ka.onanga' / 'Ka.o nangnabe' — the period standing for the raka mark), matching the pre-existing 'anger' noun entry ('Ka·o nanga'). Value corrected to align with both. Not a judgment on the other 'angry' variants in this cluster (bi·ka so·a, hel·hel) or on the separate an'chi ding·na (doc7) / Ka-chaa (secondary sense, NV-025-adjacent) forms elsewhere in the dictionary — three distinct 'angry' clusters now coexist unreconciled; flagged for awareness, not resolved here per evidence-first discipline."
+  },
+  {
+    "english": "do not be angry",
+    "garo": "Ka·o nangnabe",
+    "pos": null,
+    "category": "emotions",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-14 (NV-078, Thangseng via Tridip WhatsApp relay, Project Owner: 'Ka.o nangnabe. = do not be angry', period standing for the raka mark). Negative imperative built on the corrected 'Ka·o nanga' (angry) root."
   },
   {
     "english": "animals",
