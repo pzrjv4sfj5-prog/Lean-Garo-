@@ -29,22 +29,26 @@ import {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.join(__dirname, '..');
 
-const files = ['master_dictionary.json', 'garo_dictionary.json'];
+const files = ['garo_dictionary.json', 'master_dictionary.json'];
 
 // Build a canonical bare-noun -> garo lookup the same way prepare-data.js's
 // finalized dict effectively does: prefer the LAST non-empty, non-
 // SUPERSEDED entry for a given lowercased english key across both files,
 // scanning master_dictionary.json second so it wins ties (mirrors
 // prepare-data.js's own master-preference intent for this purpose).
-function isSuperseded(item) {
+export function isSuperseded(item) {
   return typeof item.notes === 'string' && /^superseded\b/i.test(item.notes);
 }
 
-function buildBareNounIndex() {
+// Pure merge logic, injectable for testing without touching disk. `sources`
+// is an array of {name, items} processed in order; later sources win ties
+// for a given lowercased english key. Production usage scans
+// garo_dictionary.json first, master_dictionary.json second, so master
+// wins ties (mirrors prepare-data.js's own master-preference intent).
+export function mergeBareNounIndex(sources) {
   const index = {};
-  for (const f of files) {
-    const arr = JSON.parse(fs.readFileSync(path.join(repoRoot, f), 'utf8'));
-    for (const item of arr) {
+  for (const { items } of sources) {
+    for (const item of items) {
       const eng = (item.english || '').trim().toLowerCase();
       if (!eng || !item.garo) continue;
       if (isSuperseded(item)) continue;
@@ -52,6 +56,14 @@ function buildBareNounIndex() {
     }
   }
   return index;
+}
+
+function buildBareNounIndex() {
+  const sources = files.map((f) => ({
+    name: f,
+    items: JSON.parse(fs.readFileSync(path.join(repoRoot, f), 'utf8')),
+  }));
+  return mergeBareNounIndex(sources);
 }
 
 function main() {
@@ -184,4 +196,9 @@ function main() {
   console.log(`Report written to ${path.relative(repoRoot, outPath)}`);
 }
 
-main();
+// Only run when executed directly (`node scripts/audit-counting-phrases.mjs`),
+// not when imported — lets tests import mergeBareNounIndex/isSuperseded
+// without triggering the full file-scan + report-write side effects.
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main();
+}

@@ -25,295 +25,415 @@ why this stays a report, not a script that writes to the dictionaries.
 
 ## Summary
 
-- `"<number> <noun>"` entries checked: 879
-- Mismatches found (candidates for review): 253
-- Nouns with no explicit `CLASSIFIER_MAP` entry (skipped — not guessed at): 30
+- `"<number> <noun>"` entries checked: 835
+- Mismatches found (candidates for review): 368
+- Nouns with no explicit `CLASSIFIER_MAP` entry (skipped — not guessed at): 39
 - Nouns with a classifier mapping but no bare dictionary entry to derive from (skipped): 1
 
 ## Candidates by classifier category
 
-### `sak` classifier (111 candidates)
+### `sak` classifier (150 candidates)
 
 | English | Stored | Classifier-derived candidate | Source file |
 |---|---|---|---|
-| eight person | `chet mande·gni` | `man·de sak·chet` | master_dictionary.json |
-| eight persons | `chet mande·gni` | `man·de sak·chet` | master_dictionary.json |
+| eight person | `chet mande·gni` | `man·de sak·chet` | garo_dictionary.json |
+| eight person | `mande sak·chet` | `man·de sak·chet` | master_dictionary.json |
 | eight persons | `chet sak·gni` | `man·de sak·chet` | garo_dictionary.json |
-| eight student | `chet chik·gni` | `porai·gipa sak·chet` | master_dictionary.json |
-| eight students | `chet chik·gni` | `porai·gipa sak·chet` | master_dictionary.json |
+| eight persons | `chet mande·gni` | `man·de sak·chet` | garo_dictionary.json |
+| eight student | `chet chik·gni` | `porai·gipa sak·chet` | garo_dictionary.json |
+| eight student | `Chattro sak·chet` | `porai·gipa sak·chet` | master_dictionary.json |
 | eight students | `chet sak·gni` | `porai·gipa sak·chet` | garo_dictionary.json |
-| eight teacher | `chet skigipa·gni` | `skigipa sak·chet` | master_dictionary.json |
-| eight teachers | `chet skigipa·gni` | `skigipa sak·chet` | master_dictionary.json |
-| eight teachers | `chet sak·gni` | `skigipa sak·chet` | garo_dictionary.json |
-| eleven person | `chi sa mande·gni` | `man·de sak·Chi·sa` | master_dictionary.json |
-| eleven persons | `chi sa mande·gni` | `man·de sak·Chi·sa` | master_dictionary.json |
-| eleven student | `chi sa chik·gni` | `porai·gipa sak·Chi·sa` | master_dictionary.json |
-| eleven students | `chi sa chik·gni` | `porai·gipa sak·Chi·sa` | master_dictionary.json |
-| eleven teacher | `chi sa skigipa·gni` | `skigipa sak·Chi·sa` | master_dictionary.json |
-| eleven teachers | `chi sa skigipa·gni` | `skigipa sak·Chi·sa` | master_dictionary.json |
-| five person | `bonga mande·gni` | `man·de sak·bonga` | master_dictionary.json |
-| five persons | `bonga mande·gni` | `man·de sak·bonga` | master_dictionary.json |
+| eight students | `chet chik·gni` | `porai·gipa sak·chet` | garo_dictionary.json |
+| eight teacher | `chet skigipa·gni` | `ti·char sak·chet` | garo_dictionary.json |
+| eight teacher | `Skigipa sak·chet` | `ti·char sak·chet` | master_dictionary.json |
+| eight teachers | `chet sak·gni` | `ti·char sak·chet` | garo_dictionary.json |
+| eight teachers | `chet skigipa·gni` | `ti·char sak·chet` | garo_dictionary.json |
+| eleven person | `chi sa mande·gni` | `man·de sak·Chi·sa` | garo_dictionary.json |
+| eleven person | `mande sak·Chi·sa` | `man·de sak·Chi·sa` | master_dictionary.json |
+| eleven persons | `chi sa mande·gni` | `man·de sak·Chi·sa` | garo_dictionary.json |
+| eleven student | `chi sa chik·gni` | `porai·gipa sak·Chi·sa` | garo_dictionary.json |
+| eleven student | `Chattro sak·Chi·sa` | `porai·gipa sak·Chi·sa` | master_dictionary.json |
+| eleven students | `chi sa chik·gni` | `porai·gipa sak·Chi·sa` | garo_dictionary.json |
+| eleven teacher | `chi sa skigipa·gni` | `ti·char sak·Chi·sa` | garo_dictionary.json |
+| eleven teacher | `Skigipa sak·Chi·sa` | `ti·char sak·Chi·sa` | master_dictionary.json |
+| eleven teachers | `chi sa skigipa·gni` | `ti·char sak·Chi·sa` | garo_dictionary.json |
+| five person | `bonga mande·gni` | `man·de sak·bonga` | garo_dictionary.json |
+| five person | `mande sak·bonga` | `man·de sak·bonga` | master_dictionary.json |
 | five persons | `bonga sak·gni` | `man·de sak·bonga` | garo_dictionary.json |
-| five student | `bonga chik·gni` | `porai·gipa sak·bonga` | master_dictionary.json |
-| five students | `bonga chik·gni` | `porai·gipa sak·bonga` | master_dictionary.json |
+| five persons | `bonga mande·gni` | `man·de sak·bonga` | garo_dictionary.json |
+| five student | `bonga chik·gni` | `porai·gipa sak·bonga` | garo_dictionary.json |
+| five student | `Chattro sak·bonga` | `porai·gipa sak·bonga` | master_dictionary.json |
 | five students | `bonga sak·gni` | `porai·gipa sak·bonga` | garo_dictionary.json |
-| five teacher | `bonga skigipa·gni` | `skigipa sak·bonga` | master_dictionary.json |
-| five teachers | `bonga skigipa·gni` | `skigipa sak·bonga` | master_dictionary.json |
-| five teachers | `bonga sak·gni` | `skigipa sak·bonga` | garo_dictionary.json |
-| four person | `brang mande·gni` | `man·de sak·bri` | master_dictionary.json |
-| four persons | `brang mande·gni` | `man·de sak·bri` | master_dictionary.json |
+| five students | `bonga chik·gni` | `porai·gipa sak·bonga` | garo_dictionary.json |
+| five teacher | `bonga skigipa·gni` | `ti·char sak·bonga` | garo_dictionary.json |
+| five teacher | `Skigipa sak·bonga` | `ti·char sak·bonga` | master_dictionary.json |
+| five teachers | `bonga sak·gni` | `ti·char sak·bonga` | garo_dictionary.json |
+| five teachers | `bonga skigipa·gni` | `ti·char sak·bonga` | garo_dictionary.json |
+| four person | `brang mande·gni` | `man·de sak·bri` | garo_dictionary.json |
+| four person | `mande sak·bri` | `man·de sak·bri` | master_dictionary.json |
 | four persons | `brang sak·gni` | `man·de sak·bri` | garo_dictionary.json |
-| four student | `brang chik·gni` | `porai·gipa sak·bri` | master_dictionary.json |
-| four students | `brang chik·gni` | `porai·gipa sak·bri` | master_dictionary.json |
+| four persons | `brang mande·gni` | `man·de sak·bri` | garo_dictionary.json |
+| four student | `brang chik·gni` | `porai·gipa sak·bri` | garo_dictionary.json |
+| four student | `Chattro sak·bri` | `porai·gipa sak·bri` | master_dictionary.json |
 | four students | `brang sak·gni` | `porai·gipa sak·bri` | garo_dictionary.json |
-| four teacher | `brang skigipa·gni` | `skigipa sak·bri` | master_dictionary.json |
-| four teachers | `brang skigipa·gni` | `skigipa sak·bri` | master_dictionary.json |
-| four teachers | `brang sak·gni` | `skigipa sak·bri` | garo_dictionary.json |
-| nine person | `sku mande·gni` | `man·de sak·sku` | master_dictionary.json |
-| nine persons | `sku mande·gni` | `man·de sak·sku` | master_dictionary.json |
+| four students | `brang chik·gni` | `porai·gipa sak·bri` | garo_dictionary.json |
+| four teacher | `brang skigipa·gni` | `ti·char sak·bri` | garo_dictionary.json |
+| four teacher | `Skigipa sak·bri` | `ti·char sak·bri` | master_dictionary.json |
+| four teachers | `brang sak·gni` | `ti·char sak·bri` | garo_dictionary.json |
+| four teachers | `brang skigipa·gni` | `ti·char sak·bri` | garo_dictionary.json |
+| nine person | `sku mande·gni` | `man·de sak·sku` | garo_dictionary.json |
+| nine person | `mande sak·sku` | `man·de sak·sku` | master_dictionary.json |
 | nine persons | `sku sak·gni` | `man·de sak·sku` | garo_dictionary.json |
-| nine student | `sku chik·gni` | `porai·gipa sak·sku` | master_dictionary.json |
-| nine students | `sku chik·gni` | `porai·gipa sak·sku` | master_dictionary.json |
+| nine persons | `sku mande·gni` | `man·de sak·sku` | garo_dictionary.json |
+| nine student | `sku chik·gni` | `porai·gipa sak·sku` | garo_dictionary.json |
+| nine student | `Chattro sak·sku` | `porai·gipa sak·sku` | master_dictionary.json |
 | nine students | `sku sak·gni` | `porai·gipa sak·sku` | garo_dictionary.json |
-| nine teacher | `sku skigipa·gni` | `skigipa sak·sku` | master_dictionary.json |
-| nine teachers | `sku skigipa·gni` | `skigipa sak·sku` | master_dictionary.json |
-| nine teachers | `sku sak·gni` | `skigipa sak·sku` | garo_dictionary.json |
-| one person | `mande sak·sa` | `man·de sak·sa` | master_dictionary.json |
+| nine students | `sku chik·gni` | `porai·gipa sak·sku` | garo_dictionary.json |
+| nine teacher | `sku skigipa·gni` | `ti·char sak·sku` | garo_dictionary.json |
+| nine teacher | `Skigipa sak·sku` | `ti·char sak·sku` | master_dictionary.json |
+| nine teachers | `sku sak·gni` | `ti·char sak·sku` | garo_dictionary.json |
+| nine teachers | `sku skigipa·gni` | `ti·char sak·sku` | garo_dictionary.json |
+| one person | `mande sak·sa` | `man·de sak·sa` | garo_dictionary.json |
 | one person | `manderang sak·sa` | `man·de sak·sa` | garo_dictionary.json |
 | one person | `sa sak·sa` | `man·de sak·sa` | garo_dictionary.json |
 | one person | `sa mande·sa` | `man·de sak·sa` | garo_dictionary.json |
-| one persons | `sa mande·gni` | `man·de sak·sa` | master_dictionary.json |
-| one student | `sa chik·sa` | `porai·gipa sak·sa` | master_dictionary.json |
+| one persons | `sa mande·gni` | `man·de sak·sa` | garo_dictionary.json |
 | one student | `sa sak·sa` | `porai·gipa sak·sa` | garo_dictionary.json |
-| one students | `sa chik·gni` | `porai·gipa sak·sa` | master_dictionary.json |
-| one teacher | `sa skigipa·sa` | `skigipa sak·sa` | master_dictionary.json |
-| one teacher | `sa sak·sa` | `skigipa sak·sa` | garo_dictionary.json |
-| one teachers | `sa skigipa·gni` | `skigipa sak·sa` | master_dictionary.json |
-| seven person | `sni mande·gni` | `man·de sak·sni` | master_dictionary.json |
-| seven persons | `sni mande·gni` | `man·de sak·sni` | master_dictionary.json |
+| one student | `sa chik·sa` | `porai·gipa sak·sa` | garo_dictionary.json |
+| one student | `Chattro sak·sa` | `porai·gipa sak·sa` | master_dictionary.json |
+| one students | `sa chik·gni` | `porai·gipa sak·sa` | garo_dictionary.json |
+| one teacher | `sa sak·sa` | `ti·char sak·sa` | garo_dictionary.json |
+| one teacher | `sa skigipa·sa` | `ti·char sak·sa` | garo_dictionary.json |
+| one teacher | `Skigipa sak·sa` | `ti·char sak·sa` | master_dictionary.json |
+| one teachers | `sa skigipa·gni` | `ti·char sak·sa` | garo_dictionary.json |
+| seven person | `sni mande·gni` | `man·de sak·sni` | garo_dictionary.json |
+| seven person | `mande sak·sni` | `man·de sak·sni` | master_dictionary.json |
 | seven persons | `sni sak·gni` | `man·de sak·sni` | garo_dictionary.json |
-| seven student | `sni chik·gni` | `porai·gipa sak·sni` | master_dictionary.json |
-| seven students | `sni chik·gni` | `porai·gipa sak·sni` | master_dictionary.json |
+| seven persons | `sni mande·gni` | `man·de sak·sni` | garo_dictionary.json |
+| seven student | `sni chik·gni` | `porai·gipa sak·sni` | garo_dictionary.json |
+| seven student | `Chattro sak·sni` | `porai·gipa sak·sni` | master_dictionary.json |
 | seven students | `sni sak·gni` | `porai·gipa sak·sni` | garo_dictionary.json |
-| seven teacher | `sni skigipa·gni` | `skigipa sak·sni` | master_dictionary.json |
-| seven teachers | `sni skigipa·gni` | `skigipa sak·sni` | master_dictionary.json |
-| seven teachers | `sni sak·gni` | `skigipa sak·sni` | garo_dictionary.json |
-| six person | `dokka mande·gni` | `man·de sak·dok` | master_dictionary.json |
-| six persons | `dokka mande·gni` | `man·de sak·dok` | master_dictionary.json |
+| seven students | `sni chik·gni` | `porai·gipa sak·sni` | garo_dictionary.json |
+| seven teacher | `sni skigipa·gni` | `ti·char sak·sni` | garo_dictionary.json |
+| seven teacher | `Skigipa sak·sni` | `ti·char sak·sni` | master_dictionary.json |
+| seven teachers | `sni sak·gni` | `ti·char sak·sni` | garo_dictionary.json |
+| seven teachers | `sni skigipa·gni` | `ti·char sak·sni` | garo_dictionary.json |
+| six person | `dokka mande·gni` | `man·de sak·dok` | garo_dictionary.json |
+| six person | `mande sak·dok` | `man·de sak·dok` | master_dictionary.json |
 | six persons | `dokka sak·gni` | `man·de sak·dok` | garo_dictionary.json |
-| six student | `dokka chik·gni` | `porai·gipa sak·dok` | master_dictionary.json |
-| six students | `dokka chik·gni` | `porai·gipa sak·dok` | master_dictionary.json |
+| six persons | `dokka mande·gni` | `man·de sak·dok` | garo_dictionary.json |
+| six student | `dokka chik·gni` | `porai·gipa sak·dok` | garo_dictionary.json |
+| six student | `Chattro sak·dok` | `porai·gipa sak·dok` | master_dictionary.json |
 | six students | `dokka sak·gni` | `porai·gipa sak·dok` | garo_dictionary.json |
-| six teacher | `dokka skigipa·gni` | `skigipa sak·dok` | master_dictionary.json |
-| six teachers | `dokka skigipa·gni` | `skigipa sak·dok` | master_dictionary.json |
-| six teachers | `dokka sak·gni` | `skigipa sak·dok` | garo_dictionary.json |
-| ten person | `chi mande·gni` | `man·de sak·chiking` | master_dictionary.json |
-| ten persons | `chi mande·gni` | `man·de sak·chiking` | master_dictionary.json |
+| six students | `dokka chik·gni` | `porai·gipa sak·dok` | garo_dictionary.json |
+| six teacher | `dokka skigipa·gni` | `ti·char sak·dok` | garo_dictionary.json |
+| six teacher | `Skigipa sak·dok` | `ti·char sak·dok` | master_dictionary.json |
+| six teachers | `dokka sak·gni` | `ti·char sak·dok` | garo_dictionary.json |
+| six teachers | `dokka skigipa·gni` | `ti·char sak·dok` | garo_dictionary.json |
+| ten person | `chi mande·gni` | `man·de sak·chiking` | garo_dictionary.json |
+| ten person | `mande sak·chiking` | `man·de sak·chiking` | master_dictionary.json |
 | ten persons | `chi sak·gni` | `man·de sak·chiking` | garo_dictionary.json |
-| ten student | `chi chik·gni` | `porai·gipa sak·chiking` | master_dictionary.json |
-| ten students | `chi chik·gni` | `porai·gipa sak·chiking` | master_dictionary.json |
+| ten persons | `chi mande·gni` | `man·de sak·chiking` | garo_dictionary.json |
+| ten student | `chi chik·gni` | `porai·gipa sak·chiking` | garo_dictionary.json |
+| ten student | `Chattro sak·chiking` | `porai·gipa sak·chiking` | master_dictionary.json |
 | ten students | `chi sak·gni` | `porai·gipa sak·chiking` | garo_dictionary.json |
-| ten teacher | `chi skigipa·gni` | `skigipa sak·chiking` | master_dictionary.json |
-| ten teachers | `chi skigipa·gni` | `skigipa sak·chiking` | master_dictionary.json |
-| ten teachers | `chi sak·gni` | `skigipa sak·chiking` | garo_dictionary.json |
+| ten students | `chi chik·gni` | `porai·gipa sak·chiking` | garo_dictionary.json |
+| ten teacher | `chi skigipa·gni` | `ti·char sak·chiking` | garo_dictionary.json |
+| ten teacher | `Skigipa sak·chiking` | `ti·char sak·chiking` | master_dictionary.json |
+| ten teachers | `chi sak·gni` | `ti·char sak·chiking` | garo_dictionary.json |
+| ten teachers | `chi skigipa·gni` | `ti·char sak·chiking` | garo_dictionary.json |
 | three people | `manderang sak·gittam` | `man·de sak·gittam` | garo_dictionary.json |
-| three person | `mande·gni` | `man·de sak·gittam` | master_dictionary.json |
-| three persons | `mande·gni` | `man·de sak·gittam` | master_dictionary.json |
+| three person | `mande·gni` | `man·de sak·gittam` | garo_dictionary.json |
+| three person | `mande sak·gittam` | `man·de sak·gittam` | master_dictionary.json |
 | three persons | `sak·gni` | `man·de sak·gittam` | garo_dictionary.json |
-| three student | `chik·gni` | `porai·gipa sak·gittam` | master_dictionary.json |
-| three students | `chik·gni` | `porai·gipa sak·gittam` | master_dictionary.json |
+| three persons | `mande·gni` | `man·de sak·gittam` | garo_dictionary.json |
+| three student | `chik·gni` | `porai·gipa sak·gittam` | garo_dictionary.json |
+| three student | `Chattro sak·gittam` | `porai·gipa sak·gittam` | master_dictionary.json |
 | three students | `sak·gni` | `porai·gipa sak·gittam` | garo_dictionary.json |
-| three teacher | `skigipa·gni` | `skigipa sak·gittam` | master_dictionary.json |
-| three teachers | `skigipa·gni` | `skigipa sak·gittam` | master_dictionary.json |
-| three teachers | `sak·gni` | `skigipa sak·gittam` | garo_dictionary.json |
-| twelve person | `chi do·o mande·gni` | `man·de sak·Chi·gni` | master_dictionary.json |
-| twelve persons | `chi do·o mande·gni` | `man·de sak·Chi·gni` | master_dictionary.json |
-| twelve student | `chi do·o chik·gni` | `porai·gipa sak·Chi·gni` | master_dictionary.json |
-| twelve students | `chi do·o chik·gni` | `porai·gipa sak·Chi·gni` | master_dictionary.json |
-| twelve teacher | `chi do·o skigipa·gni` | `skigipa sak·Chi·gni` | master_dictionary.json |
-| twelve teachers | `chi do·o skigipa·gni` | `skigipa sak·Chi·gni` | master_dictionary.json |
-| twenty person | `chi chi mande·gni` | `man·de sak·Kolgrik` | master_dictionary.json |
-| twenty persons | `chi chi mande·gni` | `man·de sak·Kolgrik` | master_dictionary.json |
-| twenty student | `chi chi chik·gni` | `porai·gipa sak·Kolgrik` | master_dictionary.json |
-| twenty students | `chi chi chik·gni` | `porai·gipa sak·Kolgrik` | master_dictionary.json |
-| twenty teacher | `chi chi skigipa·gni` | `skigipa sak·Kolgrik` | master_dictionary.json |
-| twenty teachers | `chi chi skigipa·gni` | `skigipa sak·Kolgrik` | master_dictionary.json |
-| two person | `mande·gni` | `man·de sak·gni` | master_dictionary.json |
-| two persons | `mande·gni` | `man·de sak·gni` | master_dictionary.json |
+| three students | `chik·gni` | `porai·gipa sak·gittam` | garo_dictionary.json |
+| three teacher | `skigipa·gni` | `ti·char sak·gittam` | garo_dictionary.json |
+| three teacher | `Skigipa sak·gittam` | `ti·char sak·gittam` | master_dictionary.json |
+| three teachers | `sak·gni` | `ti·char sak·gittam` | garo_dictionary.json |
+| three teachers | `skigipa·gni` | `ti·char sak·gittam` | garo_dictionary.json |
+| twelve person | `chi do·o mande·gni` | `man·de sak·Chi·gni` | garo_dictionary.json |
+| twelve person | `mande sak·Chi·gni` | `man·de sak·Chi·gni` | master_dictionary.json |
+| twelve persons | `chi do·o mande·gni` | `man·de sak·Chi·gni` | garo_dictionary.json |
+| twelve student | `chi do·o chik·gni` | `porai·gipa sak·Chi·gni` | garo_dictionary.json |
+| twelve student | `Chattro sak·Chi·gni` | `porai·gipa sak·Chi·gni` | master_dictionary.json |
+| twelve students | `chi do·o chik·gni` | `porai·gipa sak·Chi·gni` | garo_dictionary.json |
+| twelve teacher | `chi do·o skigipa·gni` | `ti·char sak·Chi·gni` | garo_dictionary.json |
+| twelve teacher | `Skigipa sak·Chi·gni` | `ti·char sak·Chi·gni` | master_dictionary.json |
+| twelve teachers | `chi do·o skigipa·gni` | `ti·char sak·Chi·gni` | garo_dictionary.json |
+| twenty person | `chi chi mande·gni` | `man·de sak·Kolgrik` | garo_dictionary.json |
+| twenty person | `mande sak·Kolgrik` | `man·de sak·Kolgrik` | master_dictionary.json |
+| twenty persons | `chi chi mande·gni` | `man·de sak·Kolgrik` | garo_dictionary.json |
+| twenty student | `chi chi chik·gni` | `porai·gipa sak·Kolgrik` | garo_dictionary.json |
+| twenty student | `Chattro sak·Kolgrik` | `porai·gipa sak·Kolgrik` | master_dictionary.json |
+| twenty students | `chi chi chik·gni` | `porai·gipa sak·Kolgrik` | garo_dictionary.json |
+| twenty teacher | `chi chi skigipa·gni` | `ti·char sak·Kolgrik` | garo_dictionary.json |
+| twenty teacher | `Skigipa sak·Kolgrik` | `ti·char sak·Kolgrik` | master_dictionary.json |
+| twenty teachers | `chi chi skigipa·gni` | `ti·char sak·Kolgrik` | garo_dictionary.json |
+| two person | `mande·gni` | `man·de sak·gni` | garo_dictionary.json |
+| two person | `mande sak·gni` | `man·de sak·gni` | master_dictionary.json |
 | two persons | `sak·gni` | `man·de sak·gni` | garo_dictionary.json |
-| two student | `chik·gni` | `porai·gipa sak·gni` | master_dictionary.json |
-| two students | `chik·gni` | `porai·gipa sak·gni` | master_dictionary.json |
+| two persons | `mande·gni` | `man·de sak·gni` | garo_dictionary.json |
+| two student | `chik·gni` | `porai·gipa sak·gni` | garo_dictionary.json |
+| two student | `Chattro sak·gni` | `porai·gipa sak·gni` | master_dictionary.json |
 | two students | `sak·gni` | `porai·gipa sak·gni` | garo_dictionary.json |
-| two teacher | `skigipa·gni` | `skigipa sak·gni` | master_dictionary.json |
-| two teachers | `skigipa·gni` | `skigipa sak·gni` | master_dictionary.json |
-| two teachers | `sak·gni` | `skigipa sak·gni` | garo_dictionary.json |
+| two students | `chik·gni` | `porai·gipa sak·gni` | garo_dictionary.json |
+| two teacher | `skigipa·gni` | `ti·char sak·gni` | garo_dictionary.json |
+| two teacher | `Skigipa sak·gni` | `ti·char sak·gni` | master_dictionary.json |
+| two teachers | `skigipa sak·gni` | `ti·char sak·gni` | garo_dictionary.json |
+| two teachers | `sak·gni` | `ti·char sak·gni` | garo_dictionary.json |
+| two teachers | `skigipa·gni` | `ti·char sak·gni` | garo_dictionary.json |
 
-### `mang` classifier (77 candidates)
+### `mang` classifier (88 candidates)
 
 | English | Stored | Classifier-derived candidate | Source file |
 |---|---|---|---|
-| eight bird | `chet mang·gni` | `do· mang·chet` | master_dictionary.json |
-| eight birds | `chet mang·gni` | `do· mang·chet` | master_dictionary.json |
-| eight cat | `chet mang·gni` | `menggo mang·chet` | master_dictionary.json |
-| eight dog | `chet mang·gni` | `achak mang·chet` | master_dictionary.json |
-| eight dogs | `chet mang·gni` | `achak mang·chet` | master_dictionary.json |
-| eight fish | `chet mang·gni` | `na·tok mang·chet` | master_dictionary.json |
-| eight fishs | `chet mang·gni` | `na·tok mang·chet` | master_dictionary.json |
-| eleven bird | `chi sa mang·gni` | `do· mang·Chi·sa` | master_dictionary.json |
-| eleven cat | `chi sa mang·gni` | `menggo mang·Chi·sa` | master_dictionary.json |
-| eleven dog | `chi sa mang·gni` | `achak mang·Chi·sa` | master_dictionary.json |
-| eleven fish | `chi sa mang·gni` | `na·tok mang·Chi·sa` | master_dictionary.json |
-| five bird | `bonga mang·gni` | `do· mang·bonga` | master_dictionary.json |
-| five birds | `bonga mang·gni` | `do· mang·bonga` | master_dictionary.json |
-| five cat | `bonga mang·gni` | `menggo mang·bonga` | master_dictionary.json |
-| five dog | `bonga mang·gni` | `achak mang·bonga` | master_dictionary.json |
-| five dogs | `bonga mang·gni` | `achak mang·bonga` | master_dictionary.json |
-| five fish | `bonga mang·gni` | `na·tok mang·bonga` | master_dictionary.json |
-| five fishs | `bonga mang·gni` | `na·tok mang·bonga` | master_dictionary.json |
-| four bird | `brang mang·gni` | `do· mang·bri` | master_dictionary.json |
-| four birds | `brang mang·gni` | `do· mang·bri` | master_dictionary.json |
-| four cat | `brang mang·gni` | `menggo mang·bri` | master_dictionary.json |
+| eight bird | `chet mang·gni` | `do·o mang·chet` | garo_dictionary.json |
+| eight birds | `chet mang·gni` | `do·o mang·chet` | garo_dictionary.json |
+| eight cat | `chet mang·gni` | `meng·gong mang·chet` | garo_dictionary.json |
+| eight cat | `menggo mang·chet` | `meng·gong mang·chet` | master_dictionary.json |
+| eight dog | `chet mang·gni` | `achak mang·chet` | garo_dictionary.json |
+| eight dogs | `chet mang·gni` | `achak mang·chet` | garo_dictionary.json |
+| eight fish | `chet mang·gni` | `na·tok mang·chet` | garo_dictionary.json |
+| eight fishs | `chet mang·gni` | `na·tok mang·chet` | garo_dictionary.json |
+| eleven bird | `chi sa mang·gni` | `do·o mang·Chi·sa` | garo_dictionary.json |
+| eleven cat | `chi sa mang·gni` | `meng·gong mang·Chi·sa` | garo_dictionary.json |
+| eleven cat | `menggo mang·Chi·sa` | `meng·gong mang·Chi·sa` | master_dictionary.json |
+| eleven dog | `chi sa mang·gni` | `achak mang·Chi·sa` | garo_dictionary.json |
+| eleven fish | `chi sa mang·gni` | `na·tok mang·Chi·sa` | garo_dictionary.json |
+| five bird | `bonga mang·gni` | `do·o mang·bonga` | garo_dictionary.json |
+| five birds | `bonga mang·gni` | `do·o mang·bonga` | garo_dictionary.json |
+| five cat | `bonga mang·gni` | `meng·gong mang·bonga` | garo_dictionary.json |
+| five cat | `menggo mang·bonga` | `meng·gong mang·bonga` | master_dictionary.json |
+| five dog | `bonga mang·gni` | `achak mang·bonga` | garo_dictionary.json |
+| five dogs | `bonga mang·gni` | `achak mang·bonga` | garo_dictionary.json |
+| five fish | `bonga mang·gni` | `na·tok mang·bonga` | garo_dictionary.json |
+| five fishs | `bonga mang·gni` | `na·tok mang·bonga` | garo_dictionary.json |
+| four bird | `brang mang·gni` | `do·o mang·bri` | garo_dictionary.json |
+| four birds | `brang mang·gni` | `do·o mang·bri` | garo_dictionary.json |
+| four cat | `brang mang·gni` | `meng·gong mang·bri` | garo_dictionary.json |
+| four cat | `menggo mang·bri` | `meng·gong mang·bri` | master_dictionary.json |
 | four dog | `brang mang·gni` | `achak mang·bri` | garo_dictionary.json |
 | four dogs | `brang mang·gni` | `achak mang·bri` | garo_dictionary.json |
-| four fish | `brang mang·gni` | `na·tok mang·bri` | master_dictionary.json |
-| four fishs | `brang mang·gni` | `na·tok mang·bri` | master_dictionary.json |
-| nine bird | `sku mang·gni` | `do· mang·sku` | master_dictionary.json |
-| nine birds | `sku mang·gni` | `do· mang·sku` | master_dictionary.json |
-| nine cat | `sku mang·gni` | `menggo mang·sku` | master_dictionary.json |
-| nine dog | `sku mang·gni` | `achak mang·sku` | master_dictionary.json |
-| nine dogs | `sku mang·gni` | `achak mang·sku` | master_dictionary.json |
-| nine fish | `sku mang·gni` | `na·tok mang·sku` | master_dictionary.json |
-| nine fishs | `sku mang·gni` | `na·tok mang·sku` | master_dictionary.json |
-| one bird | `sa mang·sa` | `do· mang·sa` | master_dictionary.json |
-| one cat | `sa mang·sa` | `menggo mang·sa` | master_dictionary.json |
+| four fish | `brang mang·gni` | `na·tok mang·bri` | garo_dictionary.json |
+| four fishs | `brang mang·gni` | `na·tok mang·bri` | garo_dictionary.json |
+| nine bird | `sku mang·gni` | `do·o mang·sku` | garo_dictionary.json |
+| nine birds | `sku mang·gni` | `do·o mang·sku` | garo_dictionary.json |
+| nine cat | `sku mang·gni` | `meng·gong mang·sku` | garo_dictionary.json |
+| nine cat | `menggo mang·sku` | `meng·gong mang·sku` | master_dictionary.json |
+| nine dog | `sku mang·gni` | `achak mang·sku` | garo_dictionary.json |
+| nine dogs | `sku mang·gni` | `achak mang·sku` | garo_dictionary.json |
+| nine fish | `sku mang·gni` | `na·tok mang·sku` | garo_dictionary.json |
+| nine fishs | `sku mang·gni` | `na·tok mang·sku` | garo_dictionary.json |
+| one bird | `sa mang·sa` | `do·o mang·sa` | garo_dictionary.json |
+| one cat | `sa mang·sa` | `meng·gong mang·sa` | garo_dictionary.json |
+| one cat | `menggo mang·sa` | `meng·gong mang·sa` | master_dictionary.json |
 | one dog | `sa mang·sa` | `achak mang·sa` | garo_dictionary.json |
-| one fish | `sa mang·sa` | `na·tok mang·sa` | master_dictionary.json |
-| seven bird | `sni mang·gni` | `do· mang·sni` | master_dictionary.json |
-| seven birds | `sni mang·gni` | `do· mang·sni` | master_dictionary.json |
-| seven cat | `sni mang·gni` | `menggo mang·sni` | master_dictionary.json |
-| seven dog | `sni mang·gni` | `achak mang·sni` | master_dictionary.json |
-| seven dogs | `sni mang·gni` | `achak mang·sni` | master_dictionary.json |
-| seven fish | `sni mang·gni` | `na·tok mang·sni` | master_dictionary.json |
-| seven fishs | `sni mang·gni` | `na·tok mang·sni` | master_dictionary.json |
-| six bird | `dokka mang·gni` | `do· mang·dok` | master_dictionary.json |
-| six birds | `dokka mang·gni` | `do· mang·dok` | master_dictionary.json |
-| six cat | `dokka mang·gni` | `menggo mang·dok` | master_dictionary.json |
-| six dog | `dokka mang·gni` | `achak mang·dok` | master_dictionary.json |
-| six dogs | `dokka mang·gni` | `achak mang·dok` | master_dictionary.json |
-| six fish | `dokka mang·gni` | `na·tok mang·dok` | master_dictionary.json |
-| six fishs | `dokka mang·gni` | `na·tok mang·dok` | master_dictionary.json |
-| ten bird | `chi mang·gni` | `do· mang·chiking` | master_dictionary.json |
-| ten birds | `do·a mang·chiking` | `do· mang·chiking` | master_dictionary.json |
-| ten birds | `chi mang·gni` | `do· mang·chiking` | garo_dictionary.json |
-| ten cat | `chi mang·gni` | `menggo mang·chiking` | master_dictionary.json |
-| ten dog | `chi mang·gni` | `achak mang·chiking` | master_dictionary.json |
-| ten dogs | `chi mang·gni` | `achak mang·chiking` | master_dictionary.json |
-| ten fish | `chi mang·gni` | `na·tok mang·chiking` | master_dictionary.json |
-| ten fishs | `chi mang·gni` | `na·tok mang·chiking` | master_dictionary.json |
-| three bird | `na·tok mang·gni` | `do· mang·gittam` | master_dictionary.json |
-| three birds | `na·tok mang·gni` | `do· mang·gittam` | master_dictionary.json |
-| three cat | `menggo mang·gni` | `menggo mang·gittam` | master_dictionary.json |
+| one fish | `sa mang·sa` | `na·tok mang·sa` | garo_dictionary.json |
+| seven bird | `sni mang·gni` | `do·o mang·sni` | garo_dictionary.json |
+| seven birds | `sni mang·gni` | `do·o mang·sni` | garo_dictionary.json |
+| seven cat | `sni mang·gni` | `meng·gong mang·sni` | garo_dictionary.json |
+| seven cat | `menggo mang·sni` | `meng·gong mang·sni` | master_dictionary.json |
+| seven dog | `sni mang·gni` | `achak mang·sni` | garo_dictionary.json |
+| seven dogs | `sni mang·gni` | `achak mang·sni` | garo_dictionary.json |
+| seven fish | `sni mang·gni` | `na·tok mang·sni` | garo_dictionary.json |
+| seven fishs | `sni mang·gni` | `na·tok mang·sni` | garo_dictionary.json |
+| six bird | `dokka mang·gni` | `do·o mang·dok` | garo_dictionary.json |
+| six birds | `dokka mang·gni` | `do·o mang·dok` | garo_dictionary.json |
+| six cat | `dokka mang·gni` | `meng·gong mang·dok` | garo_dictionary.json |
+| six cat | `menggo mang·dok` | `meng·gong mang·dok` | master_dictionary.json |
+| six dog | `dokka mang·gni` | `achak mang·dok` | garo_dictionary.json |
+| six dogs | `dokka mang·gni` | `achak mang·dok` | garo_dictionary.json |
+| six fish | `dokka mang·gni` | `na·tok mang·dok` | garo_dictionary.json |
+| six fishs | `dokka mang·gni` | `na·tok mang·dok` | garo_dictionary.json |
+| ten bird | `chi mang·gni` | `do·o mang·chiking` | garo_dictionary.json |
+| ten birds | `do·a mang·chiking` | `do·o mang·chiking` | garo_dictionary.json |
+| ten birds | `chi mang·gni` | `do·o mang·chiking` | garo_dictionary.json |
+| ten cat | `chi mang·gni` | `meng·gong mang·chiking` | garo_dictionary.json |
+| ten cat | `menggo mang·chiking` | `meng·gong mang·chiking` | master_dictionary.json |
+| ten dog | `chi mang·gni` | `achak mang·chiking` | garo_dictionary.json |
+| ten dogs | `chi mang·gni` | `achak mang·chiking` | garo_dictionary.json |
+| ten fish | `chi mang·gni` | `na·tok mang·chiking` | garo_dictionary.json |
+| ten fishs | `chi mang·gni` | `na·tok mang·chiking` | garo_dictionary.json |
+| three bird | `na·tok mang·gni` | `do·o mang·gittam` | garo_dictionary.json |
+| three birds | `na·tok mang·gni` | `do·o mang·gittam` | garo_dictionary.json |
+| three cat | `menggo mang·gni` | `meng·gong mang·gittam` | garo_dictionary.json |
+| three cat | `menggo mang·gittam` | `meng·gong mang·gittam` | master_dictionary.json |
 | three dog | `achak mang·gni` | `achak mang·gittam` | garo_dictionary.json |
 | three dogs | `achak mang·gni` | `achak mang·gittam` | garo_dictionary.json |
-| three fish | `na·tok mang·gni` | `na·tok mang·gittam` | master_dictionary.json |
-| three fishs | `na·tok mang·gni` | `na·tok mang·gittam` | master_dictionary.json |
-| twelve bird | `chi do·o mang·gni` | `do· mang·Chi·gni` | master_dictionary.json |
-| twelve cat | `chi do·o mang·gni` | `menggo mang·Chi·gni` | master_dictionary.json |
-| twelve dog | `chi do·o mang·gni` | `achak mang·Chi·gni` | master_dictionary.json |
-| twelve fish | `chi do·o mang·gni` | `na·tok mang·Chi·gni` | master_dictionary.json |
-| twenty bird | `chi chi mang·gni` | `do· mang·Kolgrik` | master_dictionary.json |
-| twenty cat | `chi chi mang·gni` | `menggo mang·Kolgrik` | master_dictionary.json |
-| twenty dog | `chi chi mang·gni` | `achak mang·Kolgrik` | master_dictionary.json |
-| twenty fish | `chi chi mang·gni` | `na·tok mang·Kolgrik` | master_dictionary.json |
-| two bird | `do·o mang·gni` | `do· mang·gni` | master_dictionary.json |
-| two birds | `do·o mang·gni` | `do· mang·gni` | master_dictionary.json |
-| two fish | `do·o mang·gni` | `na·tok mang·gni` | master_dictionary.json |
-| two fishs | `do·o mang·gni` | `na·tok mang·gni` | master_dictionary.json |
+| three fish | `na·tok mang·gni` | `na·tok mang·gittam` | garo_dictionary.json |
+| three fishs | `na·tok mang·gni` | `na·tok mang·gittam` | garo_dictionary.json |
+| twelve bird | `chi do·o mang·gni` | `do·o mang·Chi·gni` | garo_dictionary.json |
+| twelve cat | `chi do·o mang·gni` | `meng·gong mang·Chi·gni` | garo_dictionary.json |
+| twelve cat | `menggo mang·Chi·gni` | `meng·gong mang·Chi·gni` | master_dictionary.json |
+| twelve dog | `chi do·o mang·gni` | `achak mang·Chi·gni` | garo_dictionary.json |
+| twelve fish | `chi do·o mang·gni` | `na·tok mang·Chi·gni` | garo_dictionary.json |
+| twenty bird | `chi chi mang·gni` | `do·o mang·Kolgrik` | garo_dictionary.json |
+| twenty cat | `chi chi mang·gni` | `meng·gong mang·Kolgrik` | garo_dictionary.json |
+| twenty cat | `menggo mang·Kolgrik` | `meng·gong mang·Kolgrik` | master_dictionary.json |
+| twenty dog | `chi chi mang·gni` | `achak mang·Kolgrik` | garo_dictionary.json |
+| twenty fish | `chi chi mang·gni` | `na·tok mang·Kolgrik` | garo_dictionary.json |
+| two cat | `menggo mang·gni` | `meng·gong mang·gni` | garo_dictionary.json |
+| two fish | `do·o mang·gni` | `na·tok mang·gni` | garo_dictionary.json |
+| two fishs | `do·o mang·gni` | `na·tok mang·gni` | garo_dictionary.json |
 
-### `king` classifier (26 candidates)
+### `pang` classifier (44 candidates)
 
 | English | Stored | Classifier-derived candidate | Source file |
 |---|---|---|---|
-| eight book | `chet kitab·gni` | `ki·tap kingchet` | master_dictionary.json |
-| eight books | `chet rang·gni` | `ki·tap kingchet` | master_dictionary.json |
-| eleven book | `chi sa kitab·gni` | `ki·tap kingChi·sa` | master_dictionary.json |
-| five book | `bonga kitab·gni` | `ki·tap kingbonga` | master_dictionary.json |
-| five books | `bonga rang·gni` | `ki·tap kingbonga` | master_dictionary.json |
-| four book | `brang kitab·gni` | `ki·tap kingbri` | master_dictionary.json |
-| four books | `brang rang·gni` | `ki·tap kingbri` | master_dictionary.json |
-| nine book | `sku kitab·gni` | `ki·tap kingsku` | master_dictionary.json |
-| nine books | `sku rang·gni` | `ki·tap kingsku` | master_dictionary.json |
-| one book | `sa kitab·sa` | `ki·tap kingsa` | master_dictionary.json |
+| eight tree | `chet rang·gni` | `a'bil pangchet` | garo_dictionary.json |
+| eight tree | `Bol pangchet` | `a'bil pangchet` | master_dictionary.json |
+| eight trees | `chet rang·gni` | `a'bil pangchet` | garo_dictionary.json |
+| eight trees | `Bol pangchet` | `a'bil pangchet` | master_dictionary.json |
+| eleven tree | `chi sa rang·gni` | `a'bil pangChi·sa` | garo_dictionary.json |
+| eleven tree | `Bol pangChi·sa` | `a'bil pangChi·sa` | master_dictionary.json |
+| five tree | `bonga rang·gni` | `a'bil pangbonga` | garo_dictionary.json |
+| five tree | `Bol pangbonga` | `a'bil pangbonga` | master_dictionary.json |
+| five trees | `bonga rang·gni` | `a'bil pangbonga` | garo_dictionary.json |
+| five trees | `Bol pangbonga` | `a'bil pangbonga` | master_dictionary.json |
+| four tree | `brang rang·gni` | `a'bil pangbri` | garo_dictionary.json |
+| four tree | `Bol pangbri` | `a'bil pangbri` | master_dictionary.json |
+| four trees | `brang rang·gni` | `a'bil pangbri` | garo_dictionary.json |
+| four trees | `Bol pangbri` | `a'bil pangbri` | master_dictionary.json |
+| nine tree | `sku rang·gni` | `a'bil pangsku` | garo_dictionary.json |
+| nine tree | `Bol pangsku` | `a'bil pangsku` | master_dictionary.json |
+| nine trees | `sku rang·gni` | `a'bil pangsku` | garo_dictionary.json |
+| nine trees | `Bol pangsku` | `a'bil pangsku` | master_dictionary.json |
+| one tree | `sa rang·sa` | `a'bil pangsa` | garo_dictionary.json |
+| one tree | `Bol pangsa` | `a'bil pangsa` | master_dictionary.json |
+| seven tree | `sni rang·gni` | `a'bil pangsni` | garo_dictionary.json |
+| seven tree | `Bol pangsni` | `a'bil pangsni` | master_dictionary.json |
+| seven trees | `sni rang·gni` | `a'bil pangsni` | garo_dictionary.json |
+| seven trees | `Bol pangsni` | `a'bil pangsni` | master_dictionary.json |
+| six tree | `dokka rang·gni` | `a'bil pangdok` | garo_dictionary.json |
+| six tree | `Bol pangdok` | `a'bil pangdok` | master_dictionary.json |
+| six trees | `dokka rang·gni` | `a'bil pangdok` | garo_dictionary.json |
+| six trees | `Bol pangdok` | `a'bil pangdok` | master_dictionary.json |
+| ten tree | `chi rang·gni` | `a'bil pangchiking` | garo_dictionary.json |
+| ten tree | `Bol pangchiking` | `a'bil pangchiking` | master_dictionary.json |
+| ten trees | `chi rang·gni` | `a'bil pangchiking` | garo_dictionary.json |
+| ten trees | `Bol pangchiking` | `a'bil pangchiking` | master_dictionary.json |
+| three tree | `rang·gni` | `a'bil panggittam` | garo_dictionary.json |
+| three tree | `Bol panggittam` | `a'bil panggittam` | master_dictionary.json |
+| three trees | `rang·gni` | `a'bil panggittam` | garo_dictionary.json |
+| three trees | `Bol panggittam` | `a'bil panggittam` | master_dictionary.json |
+| twelve tree | `chi do·o rang·gni` | `a'bil pangChi·gni` | garo_dictionary.json |
+| twelve tree | `Bol pangChi·gni` | `a'bil pangChi·gni` | master_dictionary.json |
+| twenty tree | `chi chi rang·gni` | `a'bil pangKolgrik` | garo_dictionary.json |
+| twenty tree | `Bol pangKolgrik` | `a'bil pangKolgrik` | master_dictionary.json |
+| two tree | `rang·gni` | `a'bil panggni` | garo_dictionary.json |
+| two tree | `Bol panggni` | `a'bil panggni` | master_dictionary.json |
+| two trees | `rang·gni` | `a'bil panggni` | garo_dictionary.json |
+| two trees | `Bol panggni` | `a'bil panggni` | master_dictionary.json |
+
+### `rong` classifier (27 candidates)
+
+| English | Stored | Classifier-derived candidate | Source file |
+|---|---|---|---|
+| eight apple | `chet se·gni` | `te·spu rongchet` | garo_dictionary.json |
+| eight apple | `Apple rongchet` | `te·spu rongchet` | master_dictionary.json |
+| eleven apple | `chi sa se·gni` | `te·spu rongChi·sa` | garo_dictionary.json |
+| eleven apple | `Apple rongChi·sa` | `te·spu rongChi·sa` | master_dictionary.json |
+| five apple | `bonga se·gni` | `te·spu rongbonga` | garo_dictionary.json |
+| five apple | `Apple rongbonga` | `te·spu rongbonga` | master_dictionary.json |
+| four apple | `brang se·gni` | `te·spu rongbri` | garo_dictionary.json |
+| four apple | `Apple rongbri` | `te·spu rongbri` | master_dictionary.json |
+| four fruits | `mewa ge·bri` | `bite rongbri` | garo_dictionary.json |
+| nine apple | `sku se·gni` | `te·spu rongsku` | garo_dictionary.json |
+| nine apple | `Apple rongsku` | `te·spu rongsku` | master_dictionary.json |
+| one apple | `sa se·sa` | `te·spu rongsa` | garo_dictionary.json |
+| one apple | `Apple rongsa` | `te·spu rongsa` | master_dictionary.json |
+| seven apple | `sni se·gni` | `te·spu rongsni` | garo_dictionary.json |
+| seven apple | `Apple rongsni` | `te·spu rongsni` | master_dictionary.json |
+| six apple | `dokka se·gni` | `te·spu rongdok` | garo_dictionary.json |
+| six apple | `Apple rongdok` | `te·spu rongdok` | master_dictionary.json |
+| ten apple | `chi se·gni` | `te·spu rongchiking` | garo_dictionary.json |
+| ten apple | `Apple rongchiking` | `te·spu rongchiking` | master_dictionary.json |
+| three apple | `se·gni` | `te·spu ronggittam` | garo_dictionary.json |
+| three apple | `Apple ronggittam` | `te·spu ronggittam` | master_dictionary.json |
+| twelve apple | `chi do·o se·gni` | `te·spu rongChi·gni` | garo_dictionary.json |
+| twelve apple | `Apple rongChi·gni` | `te·spu rongChi·gni` | master_dictionary.json |
+| twenty apple | `chi chi se·gni` | `te·spu rongKolgrik` | garo_dictionary.json |
+| twenty apple | `Apple rongKolgrik` | `te·spu rongKolgrik` | master_dictionary.json |
+| two apple | `se·gni` | `te·spu ronggni` | garo_dictionary.json |
+| two apple | `Apple ronggni` | `te·spu ronggni` | master_dictionary.json |
+
+### `te` classifier (22 candidates)
+
+| English | Stored | Classifier-derived candidate | Source file |
+|---|---|---|---|
+| eight house | `chet rang·gni` | `nok te·chet` | garo_dictionary.json |
+| eight houses | `chet rang·gni` | `nok te·chet` | garo_dictionary.json |
+| eleven house | `chi sa rang·gni` | `nok te·Chi·sa` | garo_dictionary.json |
+| five house | `bonga rang·gni` | `nok te·bonga` | garo_dictionary.json |
+| five houses | `bonga rang·gni` | `nok te·bonga` | garo_dictionary.json |
+| four house | `brang rang·gni` | `nok te·bri` | garo_dictionary.json |
+| four houses | `brang rang·gni` | `nok te·bri` | garo_dictionary.json |
+| nine house | `sku rang·gni` | `nok te·sku` | garo_dictionary.json |
+| nine houses | `sku rang·gni` | `nok te·sku` | garo_dictionary.json |
+| one house | `sa rang·sa` | `nok te·sa` | garo_dictionary.json |
+| seven house | `sni rang·gni` | `nok te·sni` | garo_dictionary.json |
+| seven houses | `sni rang·gni` | `nok te·sni` | garo_dictionary.json |
+| six house | `dokka rang·gni` | `nok te·dok` | garo_dictionary.json |
+| six houses | `dokka rang·gni` | `nok te·dok` | garo_dictionary.json |
+| ten house | `chi rang·gni` | `nok te·chiking` | garo_dictionary.json |
+| ten houses | `chi rang·gni` | `nok te·chiking` | garo_dictionary.json |
+| three house | `rang·gni` | `nok te·gittam` | garo_dictionary.json |
+| three houses | `rang·gni` | `nok te·gittam` | garo_dictionary.json |
+| twelve house | `chi do·o rang·gni` | `nok te·Chi·gni` | garo_dictionary.json |
+| twenty house | `chi chi rang·gni` | `nok te·Kolgrik` | garo_dictionary.json |
+| two house | `rang·gni` | `nok te·gni` | garo_dictionary.json |
+| two houses | `rang·gni` | `nok te·gni` | garo_dictionary.json |
+
+### `king` classifier (22 candidates)
+
+| English | Stored | Classifier-derived candidate | Source file |
+|---|---|---|---|
+| eight book | `ki·tap king·chet` | `ki·tap kingchet` | garo_dictionary.json |
+| eight books | `ki·tap king·chet` | `ki·tap kingchet` | garo_dictionary.json |
+| eleven book | `ki·tap king·Chi·sa` | `ki·tap kingChi·sa` | garo_dictionary.json |
+| five book | `ki·tap king·bonga` | `ki·tap kingbonga` | garo_dictionary.json |
+| five books | `ki·tap king·bonga` | `ki·tap kingbonga` | garo_dictionary.json |
+| four book | `ki·tap king·bri` | `ki·tap kingbri` | garo_dictionary.json |
+| four books | `ki·tap king·bri` | `ki·tap kingbri` | garo_dictionary.json |
+| nine book | `ki·tap king·sku` | `ki·tap kingsku` | garo_dictionary.json |
+| nine books | `ki·tap king·sku` | `ki·tap kingsku` | garo_dictionary.json |
 | one book | `ki·tap king·sa` | `ki·tap kingsa` | garo_dictionary.json |
-| one book | `sa rang·sa` | `ki·tap kingsa` | garo_dictionary.json |
-| seven book | `sni kitab·gni` | `ki·tap kingsni` | master_dictionary.json |
-| seven books | `sni rang·gni` | `ki·tap kingsni` | master_dictionary.json |
-| six book | `dokka kitab·gni` | `ki·tap kingdok` | master_dictionary.json |
-| six books | `dokka rang·gni` | `ki·tap kingdok` | master_dictionary.json |
-| ten book | `chi kitab·gni` | `ki·tap kingchiking` | master_dictionary.json |
-| ten books | `chi rang·gni` | `ki·tap kingchiking` | master_dictionary.json |
-| three book | `kitab·gni` | `ki·tap kinggittam` | master_dictionary.json |
-| three books | `ki·tap king·gittam` | `ki·tap kinggittam` | master_dictionary.json |
-| three books | `rang·gni` | `ki·tap kinggittam` | garo_dictionary.json |
-| twelve book | `chi do·o kitab·gni` | `ki·tap kingChi·gni` | master_dictionary.json |
-| twenty book | `chi chi kitab·gni` | `ki·tap kingKolgrik` | master_dictionary.json |
-| two book | `kitab·gni` | `ki·tap kinggni` | master_dictionary.json |
-| two books | `rang·gni` | `ki·tap kinggni` | master_dictionary.json |
+| seven book | `ki·tap king·sni` | `ki·tap kingsni` | garo_dictionary.json |
+| seven books | `ki·tap king·sni` | `ki·tap kingsni` | garo_dictionary.json |
+| six book | `ki·tap king·dok` | `ki·tap kingdok` | garo_dictionary.json |
+| six books | `ki·tap king·dok` | `ki·tap kingdok` | garo_dictionary.json |
+| ten book | `ki·tap king·chiking` | `ki·tap kingchiking` | garo_dictionary.json |
+| ten books | `ki·tap king·chiking` | `ki·tap kingchiking` | garo_dictionary.json |
+| three book | `ki·tap king·gittam` | `ki·tap kinggittam` | garo_dictionary.json |
+| three books | `ki·tap king·gittam` | `ki·tap kinggittam` | garo_dictionary.json |
+| twelve book | `ki·tap king·Chi·gni` | `ki·tap kingChi·gni` | garo_dictionary.json |
+| twenty book | `ki·tap king·Kolgrik` | `ki·tap kingKolgrik` | garo_dictionary.json |
+| two book | `ki·tap king·gni` | `ki·tap kinggni` | garo_dictionary.json |
 | two books | `ki·tap king·gni` | `ki·tap kinggni` | garo_dictionary.json |
 
-### `pang` classifier (22 candidates)
+### `gong` classifier (15 candidates)
 
 | English | Stored | Classifier-derived candidate | Source file |
 |---|---|---|---|
-| eight tree | `chet rang·gni` | `bol pangchet` | master_dictionary.json |
-| eight trees | `chet rang·gni` | `bol pangchet` | master_dictionary.json |
-| eleven tree | `chi sa rang·gni` | `bol pangChi·sa` | master_dictionary.json |
-| five tree | `bonga rang·gni` | `bol pangbonga` | master_dictionary.json |
-| five trees | `bonga rang·gni` | `bol pangbonga` | master_dictionary.json |
-| four tree | `brang rang·gni` | `bol pangbri` | master_dictionary.json |
-| four trees | `brang rang·gni` | `bol pangbri` | master_dictionary.json |
-| nine tree | `sku rang·gni` | `bol pangsku` | master_dictionary.json |
-| nine trees | `sku rang·gni` | `bol pangsku` | master_dictionary.json |
-| one tree | `sa rang·sa` | `bol pangsa` | master_dictionary.json |
-| seven tree | `sni rang·gni` | `bol pangsni` | master_dictionary.json |
-| seven trees | `sni rang·gni` | `bol pangsni` | master_dictionary.json |
-| six tree | `dokka rang·gni` | `bol pangdok` | master_dictionary.json |
-| six trees | `dokka rang·gni` | `bol pangdok` | master_dictionary.json |
-| ten tree | `chi rang·gni` | `bol pangchiking` | master_dictionary.json |
-| ten trees | `chi rang·gni` | `bol pangchiking` | master_dictionary.json |
-| three tree | `rang·gni` | `bol panggittam` | master_dictionary.json |
-| three trees | `rang·gni` | `bol panggittam` | master_dictionary.json |
-| twelve tree | `chi do·o rang·gni` | `bol pangChi·gni` | master_dictionary.json |
-| twenty tree | `chi chi rang·gni` | `bol pangKolgrik` | master_dictionary.json |
-| two tree | `rang·gni` | `bol panggni` | master_dictionary.json |
-| two trees | `rang·gni` | `bol panggni` | master_dictionary.json |
-
-### `rong` classifier (15 candidates)
-
-| English | Stored | Classifier-derived candidate | Source file |
-|---|---|---|---|
-| eight apple | `chet se·gni` | `apple rongchet` | master_dictionary.json |
-| eleven apple | `chi sa se·gni` | `apple rongChi·sa` | master_dictionary.json |
-| five apple | `bonga se·gni` | `apple rongbonga` | master_dictionary.json |
-| four apple | `brang se·gni` | `apple rongbri` | master_dictionary.json |
-| four fruits | `mewa rongbri` | `bite rongbri` | master_dictionary.json |
-| four fruits | `mewa ge·bri` | `bite rongbri` | garo_dictionary.json |
-| nine apple | `sku se·gni` | `apple rongsku` | master_dictionary.json |
-| one apple | `sa se·sa` | `apple rongsa` | master_dictionary.json |
-| seven apple | `sni se·gni` | `apple rongsni` | master_dictionary.json |
-| six apple | `dokka se·gni` | `apple rongdok` | master_dictionary.json |
-| ten apple | `chi se·gni` | `apple rongchiking` | master_dictionary.json |
-| three apple | `se·gni` | `apple ronggittam` | master_dictionary.json |
-| twelve apple | `chi do·o se·gni` | `apple rongChi·gni` | master_dictionary.json |
-| twenty apple | `chi chi se·gni` | `apple rongKolgrik` | master_dictionary.json |
-| two apple | `se·gni` | `apple ronggni` | master_dictionary.json |
-
-### `gong` classifier (2 candidates)
-
-| English | Stored | Classifier-derived candidate | Source file |
-|---|---|---|---|
-| five coins | `tangka gong·bonga` | `tangka·bisil gong·bonga` | master_dictionary.json |
-| one coin | `tangka gong·sa` | `tangka·bisil gong·sa` | master_dictionary.json |
+| eight coins | `tangka bisil gong·chet` | `tangka·bisil gong·chet` | master_dictionary.json |
+| eleven coins | `tangka bisil gong·Chi·sa` | `tangka·bisil gong·Chi·sa` | master_dictionary.json |
+| five coins | `tangka gong·bonga` | `tangka·bisil gong·bonga` | garo_dictionary.json |
+| five coins | `tangka bisil gong·bonga` | `tangka·bisil gong·bonga` | master_dictionary.json |
+| four coins | `tangka bisil gong·bri` | `tangka·bisil gong·bri` | master_dictionary.json |
+| nine coins | `tangka bisil gong·sku` | `tangka·bisil gong·sku` | master_dictionary.json |
+| one coin | `tangka gong·sa` | `tangka·bisil gong·sa` | garo_dictionary.json |
+| one coin | `tangka bisil gong·sa` | `tangka·bisil gong·sa` | master_dictionary.json |
+| seven coins | `tangka bisil gong·sni` | `tangka·bisil gong·sni` | master_dictionary.json |
+| six coins | `tangka bisil gong·dok` | `tangka·bisil gong·dok` | master_dictionary.json |
+| ten coins | `tangka bisil gong·chiking` | `tangka·bisil gong·chiking` | master_dictionary.json |
+| three coins | `tangka bisil gong·gittam` | `tangka·bisil gong·gittam` | master_dictionary.json |
+| twelve coins | `tangka bisil gong·Chi·gni` | `tangka·bisil gong·Chi·gni` | master_dictionary.json |
+| twenty coins | `tangka bisil gong·Kolgrik` | `tangka·bisil gong·Kolgrik` | master_dictionary.json |
+| two coins | `tangka bisil gong·gni` | `tangka·bisil gong·gni` | master_dictionary.json |
 
 ## Nouns with no `CLASSIFIER_MAP` entry (not audited, not guessed at)
 
@@ -322,5 +442,5 @@ These nouns appear in `"<number> <noun>"` phrases but have no entry in
 mechanically derived. Whether any of these should be added to the classifier
 system (and which classifier they'd take) is itself a linguistic call.
 
-`anna`, `anna coin`, `banana`, `car`, `chair`, `draught of drink`, `food`, `house`, `knive`, `leave`, `mountain`, `rice`, `river`, `road`, `thousand`, `village`, `water`, `who announces.`, `who bears suffering impassively`, `who commits an offence`, `who helps or support`, `who interrupt`, `who is great eater.`, `who is the elder sister of or to some one.`, `who keeps one's feeling rigidly controlled`, `who lends money`, `who looks after children`, `who say`, `who speaks in riddle`, `who takes wife from his own mahari (i.e. his own relative of mother's side).`
+`airplane`, `anna`, `anna coin`, `banana`, `bunch of banana`, `car`, `chair`, `draught of drink`, `food`, `glass of water`, `glasses of water`, `grain of rice`, `grains of rice`, `knive`, `leave`, `motorcycle`, `mountain`, `plate of rice`, `plates of rice`, `rice`, `river`, `road`, `thousand`, `train`, `village`, `water`, `who announces.`, `who bears suffering impassively`, `who commits an offence`, `who helps or support`, `who interrupt`, `who is great eater.`, `who is the elder sister of or to some one.`, `who keeps one's feeling rigidly controlled`, `who lends money`, `who looks after children`, `who say`, `who speaks in riddle`, `who takes wife from his own mahari (i.e. his own relative of mother's side).`
 
