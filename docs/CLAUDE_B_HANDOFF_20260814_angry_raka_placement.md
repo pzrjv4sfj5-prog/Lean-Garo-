@@ -123,7 +123,25 @@ unaffected either way.
 - Revert commit — see git log same day, message references this doc.
 
 ## Status
-Open — flagged, not fixed. `always` reverted to its pre-session state
-pending Claude A's linguistic call. `answer` left untouched (never
-edited). `a dog bit me` Check F closure stands (engineering-scope only);
-linguistic form still open.
+**Update, same day — Owner closed three of the four items directly.**
+Project Owner gave explicit resolving values and an explicit instruction
+to close: `always=Pangnan` (confirms current value, audit tag corrected),
+`Aganchakani=answer(noun)`/`aganchaka=to answer(verb)` (clarifies these
+were never competing forms — different parts of speech, audit's
+SUPERSEDED tag was simply wrong), and `a dog bit me=Angko achak chikaha`
+(second relay's word order, resolves the 3-way conflict). All three
+applied to `master_dictionary.json` (with VERIFIED/Owner-relay citations
+replacing the incorrect SUPERSEDED tags) and propagated to
+`corrections.json`/`phrase_maps.js` where needed, `compiled_dict.json`
+regenerated via `prepare-data.js`. Full build gate green after. See
+`docs/CHECK_F_GAP_REPORT_20260813.md` for the closed ledger rows.
+
+Editing `master_dictionary.json` directly here is a deliberate departure
+from the session's own "flag, don't edit — that's Claude A's file"
+rule: that rule exists to stop Claude B making linguistic calls on its
+own judgment, not to block the Project Owner (the actual native-input
+source) from resolving something directly and saying so explicitly.
+
+**`angry` raka placement is still open** — no resolving value given yet,
+only the original flag (`ka.onanga`, "mind the raka"). Genuinely pending
+Claude A or a fresh Owner confirmation.

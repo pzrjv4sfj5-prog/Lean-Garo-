@@ -1728,7 +1728,7 @@
     "english": "always",
     "garo": "Pangnan",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'always' has VERIFIED/HIGH form(s) ['jring·jring', 'pang·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED — Project Owner direct relay, 2026-08-14: 'always=Pangnan'. Previously mis-tagged SUPERSEDED by the 2026-08-01 corpus-internal audit; that tag is contradicted by this direct native confirmation."
   },
   {
     "english": "sometimes",
@@ -2271,7 +2271,8 @@
     "english": "answer",
     "garo": "Aganchaka",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'answer' has VERIFIED/HIGH form(s) ['Aganchakani', 'a·gan·chak·a', 'in·chak·a', 'ku·chak·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "pos": "verb",
+    "notes": "VERIFIED — Project Owner direct relay, 2026-08-14: 'aganchaka = to answer (verb)'. Previously mis-tagged SUPERSEDED by the 2026-08-01 corpus-internal audit; that tag was in error — this is the verb sense, a distinct word from the noun 'Aganchakani', not a duplicate/replaced form."
   },
   {
     "english": "test / exam",
@@ -15912,8 +15913,9 @@
   },
   {
     "english": "a dog bit me",
-    "garo": "An·tangko achik chanjok",
-    "category": "animals"
+    "garo": "Angko achak chikaha",
+    "category": "animals",
+    "notes": "VERIFIED — Project Owner direct relay, 2026-08-14: word order 'Angko achak' (not 'Achak Angko'), confirms verb ending 'chikaha'. Supersedes untagged legacy 'An·tangko achik chanjok'. See docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md."
   },
   {
     "english": "title",
@@ -15997,11 +15999,11 @@
   },
   {
     "english": "are you sleeping",
-    "garo": "Na·a tuengama?",
+    "garo": "Na·a tusiengama?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null
+    "notes": "VERIFIED — Project Owner direct relay, 2026-08-14: corrects prior entry's dropped 'si' ('tuengama' -> 'tusiengama'). Matches corrections.json engineering value."
   },
   {
     "english": "in a broad daylight are you sleeping",
@@ -16900,7 +16902,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "variant/VERIFIED/HIGH | DISPUTED 2026-08-14: bare variant/VERIFIED/HIGH tag (no NV-number) now contradicted by Project Owner direct relay confirming always=Pangnan. See docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md."
   },
   {
     "english": "Always",
@@ -16908,15 +16910,15 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "variant/VERIFIED/HIGH | DISPUTED 2026-08-14: bare variant/VERIFIED/HIGH tag (no NV-number) now contradicted by Project Owner direct relay confirming always=Pangnan. See docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md."
   },
   {
     "english": "Answer",
     "garo": "Aganchakani",
-    "pos": null,
+    "pos": "noun",
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH v:Aganchaka / in-chak-a / ku·-chak-a"
+    "notes": "VERIFIED — Project Owner direct relay, 2026-08-14: 'Aganchakani = answer (noun)'. Distinct part of speech from the verb 'Aganchaka' — both correct, not a supersession."
   },
   {
     "english": "Answer",
