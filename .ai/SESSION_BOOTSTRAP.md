@@ -256,6 +256,17 @@ the next session is Claude A, Claude B, or Claude D.
   No linguistic reasoning, does not replace or reimplement the
   deterministic script. See "Claude D — repository ingestion layer"
   section below for full scope and history.
+- **Claude C** — independent QA/repository auditor. Read-only: no
+  commits, no linguistic decisions, no engineering fixes — verifies
+  claims against actual repository/runtime state and reports findings.
+  Has no persistent write access, ever; a role with push access that
+  session (A or B, per the standard PAT policy) commits Claude C's
+  reports on its behalf. Reports live at `docs/CLAUDE_C_AUDIT_*.md`.
+  **Both Claude A and Claude B should check for a `claude_c:` block in
+  `.ai/WORKSTATE.yaml` and the latest `docs/CLAUDE_C_AUDIT_*.md` at
+  session start** (per the Bootstrap order below) — Claude C findings
+  are independent verification, not a substitute for either role's own
+  judgment, but should not be silently ignored either.
 - **Thangseng** — native speaker, sole source of ground-truth validation.
 - **Project Owner / ChatGPT** — priorities, executive review, cross-team
   coordination. Advisory, not in every session.
@@ -1522,6 +1533,10 @@ The repository is always the source of truth over conversation history.
    touches your own role's files unexpectedly.
 8. Check `docs/PENDING_*` and `docs/pending_corrections.md` for anything
    awaiting action.
+9. Check `.ai/WORKSTATE.yaml`'s `claude_c:` block and the most recent
+   `docs/CLAUDE_C_AUDIT_*.md` for open independent-QA findings addressed
+   to your role — same "read before acting" discipline as the other
+   steps above, not optional just because Claude C has no write access.
 
 ## Significant proposals must use the migration template (Project Owner directive, 2026-07-25)
 

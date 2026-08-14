@@ -2253,6 +2253,43 @@ claude_a:
     applies to all Claude A sessions going forward, not just this
     thread.
 
+claude_c:
+  status: active
+  role: >-
+    Read-only independent QA/repository auditor. No commits, no linguistic
+    or engineering decisions — see SESSION_BOOTSTRAP.md "Roles" for the
+    full charter. Reports land in docs/CLAUDE_C_AUDIT_*.md; a role with
+    push access (A or B, per the standard PAT policy) commits them on
+    Claude C's behalf, since Claude C itself never has write access.
+  latest_audit_head: 6ce3785
+  latest_report: >-
+    docs/CLAUDE_C_AUDIT_20260815.md — verified Session E's engineering
+    fixes (exact-phrase precedence, SUPERSEDED-only filtering) correct
+    live, not just as claimed. Found `student`'s bare-noun root still
+    unconfirmed (Claude A action). New finding: 28 of 37 sampled
+    src/data/known_cross_source_conflicts.json (Check F allowlist)
+    entries confirmed live to be serving explicitly-SUPERSEDED roots at
+    the highest-confidence runtime layers (correction/phrase-map), while
+    a VERIFIED replacement sits unused in compiled_dict.json — same bug
+    class as the prior salt/wait and book/table/buy/door fixes, not yet
+    swept comprehensively (Claude B action, full table + fix approach in
+    the report). Also identifies a structural gap: Rule 6's Runtime
+    Handoff requirement only covers individual NV closures, not Claude
+    A's periodic bulk corpus-internal SUPERSEDED-tagging sweeps
+    (2026-08-01/476 entries, 2026-08-10/523, 2026-08-12/13/~230+) — none
+    of those produced a Runtime Handoff list, which is why this bug class
+    keeps recurring across different vocabulary instead of getting closed
+    once. Recommends extending Rule 6 to bulk-supersession sessions
+    (Project Owner decision, not unilateral for either role).
+  next_action: >-
+    Claude A: confirm student's bare-noun root (Chattro vs Porai·gipa),
+    ideally alongside the open person/student/teacher 111-candidate
+    conflict. Claude B: run the full mechanical pass over all 334
+    known_cross_source_conflicts.json entries (not just the 37 sampled)
+    using the same check described in the report §3.2/3.4, resync any
+    confirmed stale-vs-SUPERSEDED matches. Neither action needs native
+    input for the resync itself, only for student's root.
+
 claude_b:
   status: active
   pending_next_session: >-
