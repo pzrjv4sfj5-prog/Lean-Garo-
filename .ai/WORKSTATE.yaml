@@ -1983,6 +1983,17 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
+    2026-08-14 SESSION CLOSE (session C): synced against Claude A's
+    concurrent session-close commit (80c239a, NV-076 migration doc),
+    fast-forward pull, no conflicts. Full gate reconfirmed green
+    (203/203, 0 lint, Check F 292/0 new). Field-level re-verified the
+    four flagged keys (always/answer/a dog bit me/are you sleeping) are
+    still in their original untouched state -- no drift from the
+    session's edit-then-revert. Full session detail, governance
+    decisions, and exact next step:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260814_C.md (supersedes this
+    session's earlier _B.md checkpoint doc).
+
     2026-08-14 (this session, resumed via user-pasted migration document
     docs/CLAUDE_B_SESSION_MIGRATION_20260814.md, checkpoint c82e62a; origin
     had since advanced via Claude A commits 59e0135->d3dcd6c->b0c4955->
