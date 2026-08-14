@@ -269,13 +269,33 @@ repository:
 claude_a:
   status: active
   migration_doc: >-
-    docs/CLAUDE_A_SESSION_MIGRATION_20260814.md - this session's close.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814B.md - this session's close.
+    Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260814.md; re-synced
+    first (HEAD == origin/main == b0c4955, clean tree, zero drift).
+    Closed the only open item, NV-076: Project Owner confirmed (native
+    relay, Thangseng via Tridip) 'bol' vehicle-classifier scope extends
+    to motorcycle/train/airplane, same as car/bike/cycle/ship confirmed
+    2026-08-13. Generated 1-20 counting series for all three off
+    already-VERIFIED roots (Motor·cycle, Rail·gari, Sildo·reng) via the
+    standard NOUN+CLASSIFIER+NUMBER-SUFFIX formula, no raka (bol
+    matches pang/rong precedent). 60 new entries, commit 43d3337.
+    Verified: prepare-data.js (8239->8299 entries), 203/203 unit tests,
+    repository-intelligence.js 0 new violations, full `npm run build`
+    end-to-end clean (vite build succeeded, zero runtime/bundle
+    errors; npm install was a sandbox-only step, not a repo change).
+    Working tree clean, fully pushed, HEAD == origin/main == 43d3337.
+    No open native-validation items remain queued. PAT supplied live
+    by Project Owner, used inline in clone/push URLs only, never
+    persisted to git config/commit content/any file.
+  migration_doc: >-
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814.md - prior session's close.
     Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md; resolved
     NV-072 through NV-075 (person/student/teacher root conflict fully
     closed, coin root corrected, new 'te' house classifier, rice-grain
     via 'rong', water/food container-word mass-noun pattern confirmed
     and generalized 1-20, no-raka + no-native-word clarifications).
-    Only 'bol' vehicle-classifier scope remains open.
+    Only 'bol' vehicle-classifier scope remained open (now closed, see
+    entry above).
   current_task: >-
     2026-08-13 (session, resumed via user-pasted PAT + migration-doc
     filename reference docs/CLAUDE_A_SESSION_MIGRATION_20260812B.md --
