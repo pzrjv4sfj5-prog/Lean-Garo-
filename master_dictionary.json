@@ -66034,5 +66034,485 @@
     "category": "food",
     "classifier": null,
     "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14, NV-074): container-word mass-noun pattern (root 'mi' + container word 'plate' + NUMBER-SUFFIX, no raka dot) confirmed to generalize across counts — \"two glasses of water\"=\"chi glass gni\" and \"two plates of rice\"=\"mi plate gni\" directly confirmed, remaining counts 1-20 mechanically built from the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same derivation logic as the classifier system's root/classifier-substitution precedent (teacher/student/coin/house), applied here to a container word standing in the classifier slot instead of a semantic classifier. Resolves the water/cooked rice/food portion of the \"10 nouns\" mass-noun question: closed as container-word counting, not classifier counting. NV-075 addendum (2026-08-14, Thangseng direct via Tridip): confirmed no raka dot ever occurs between the container word and the number suffix (matches gong/sak-vs-rong/pang precedent, container words pattern with the no-raka classifiers). Confirmed no native Garo word exists for \"glass\" or \"plate\" as containers — historically Garo used banana leaves and bamboo-stem cups, not glass/plate vessels, so the English loanwords are the only available container terms, not a gap in relay."
+  },
+  {
+    "english": "one motorcycle",
+    "garo": "Motor·cycle bolsa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "two motorcycle",
+    "garo": "Motor·cycle bolgni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "three motorcycle",
+    "garo": "Motor·cycle bolgittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "four motorcycle",
+    "garo": "Motor·cycle bolbri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "five motorcycle",
+    "garo": "Motor·cycle bolbonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "six motorcycle",
+    "garo": "Motor·cycle boldok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "seven motorcycle",
+    "garo": "Motor·cycle bolsni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eight motorcycle",
+    "garo": "Motor·cycle bolchet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "nine motorcycle",
+    "garo": "Motor·cycle bolsku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "ten motorcycle",
+    "garo": "Motor·cycle bolchiking",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eleven motorcycle",
+    "garo": "Motor·cycle bolChi·sa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "twelve motorcycle",
+    "garo": "Motor·cycle bolChi·gni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "thirteen motorcycle",
+    "garo": "Motor·cycle bolChi·gittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "fourteen motorcycle",
+    "garo": "Motor·cycle bolChi·bri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "fifteen motorcycle",
+    "garo": "Motor·cycle bolChi·bonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "sixteen motorcycle",
+    "garo": "Motor·cycle bolChi·dok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "seventeen motorcycle",
+    "garo": "Motor·cycle bolChi·sni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eighteen motorcycle",
+    "garo": "Motor·cycle bolChi·chet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "nineteen motorcycle",
+    "garo": "Motor·cycle bolChi·sku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "twenty motorcycle",
+    "garo": "Motor·cycle bolKolgrik",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "one train",
+    "garo": "Rail·gari bolsa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "two train",
+    "garo": "Rail·gari bolgni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "three train",
+    "garo": "Rail·gari bolgittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "four train",
+    "garo": "Rail·gari bolbri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "five train",
+    "garo": "Rail·gari bolbonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "six train",
+    "garo": "Rail·gari boldok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "seven train",
+    "garo": "Rail·gari bolsni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eight train",
+    "garo": "Rail·gari bolchet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "nine train",
+    "garo": "Rail·gari bolsku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "ten train",
+    "garo": "Rail·gari bolchiking",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eleven train",
+    "garo": "Rail·gari bolChi·sa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "twelve train",
+    "garo": "Rail·gari bolChi·gni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "thirteen train",
+    "garo": "Rail·gari bolChi·gittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "fourteen train",
+    "garo": "Rail·gari bolChi·bri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "fifteen train",
+    "garo": "Rail·gari bolChi·bonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "sixteen train",
+    "garo": "Rail·gari bolChi·dok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "seventeen train",
+    "garo": "Rail·gari bolChi·sni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eighteen train",
+    "garo": "Rail·gari bolChi·chet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "nineteen train",
+    "garo": "Rail·gari bolChi·sku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "twenty train",
+    "garo": "Rail·gari bolKolgrik",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "one airplane",
+    "garo": "Sildo·reng bolsa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "two airplane",
+    "garo": "Sildo·reng bolgni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "three airplane",
+    "garo": "Sildo·reng bolgittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "four airplane",
+    "garo": "Sildo·reng bolbri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "five airplane",
+    "garo": "Sildo·reng bolbonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "six airplane",
+    "garo": "Sildo·reng boldok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "seven airplane",
+    "garo": "Sildo·reng bolsni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eight airplane",
+    "garo": "Sildo·reng bolchet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "nine airplane",
+    "garo": "Sildo·reng bolsku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "ten airplane",
+    "garo": "Sildo·reng bolchiking",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eleven airplane",
+    "garo": "Sildo·reng bolChi·sa",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "twelve airplane",
+    "garo": "Sildo·reng bolChi·gni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "thirteen airplane",
+    "garo": "Sildo·reng bolChi·gittam",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "fourteen airplane",
+    "garo": "Sildo·reng bolChi·bri",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "fifteen airplane",
+    "garo": "Sildo·reng bolChi·bonga",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "sixteen airplane",
+    "garo": "Sildo·reng bolChi·dok",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "seventeen airplane",
+    "garo": "Sildo·reng bolChi·sni",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "eighteen airplane",
+    "garo": "Sildo·reng bolChi·chet",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "nineteen airplane",
+    "garo": "Sildo·reng bolChi·sku",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "twenty airplane",
+    "garo": "Sildo·reng bolKolgrik",
+    "pos": null,
+    "category": "travel",
+    "classifier": "bol",
+    "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
   }
 ]
