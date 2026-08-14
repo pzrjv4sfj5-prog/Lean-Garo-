@@ -323,31 +323,44 @@ claude_a:
     doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD ==
     origin/main == 34ec07a going into this commit.
   next_action: >-
-    2026-08-14 (this session, second pass): `angry` raka-count placement
-    is now CLOSED. Project Owner relayed the exact placement directly
-    ("Angry = ka'o nanga" / "ka.onanga" / "Ka.o nangnabe. = do not be
-    angry", period standing for the raka mark, one raka after 'ka' only)
-    — matching the pre-existing 'anger' noun entry ('Ka·o nanga') and
-    resolving the earlier mismatch between NV-054's stored value
-    (ka·o·nang·a, three raka) and NV-054's own citation text (which had
-    quoted 'ka'o nanga' all along). master_dictionary.json's 'angry'
-    entry corrected to 'Ka·o nanga'; corrections.json's matching entry
-    corrected (phrase_maps.js's 'i am angry' already had it right); new
-    entry 'do not be angry' = 'Ka·o nangnabe' added.
-    tests/unit/translationEngine.test.js:572 updated to assert the
-    corrected value (was asserting the now-superseded three-raka form —
-    flagged for Claude B's awareness, not an engineering change, just a
-    content-accuracy fix to an assertion string). docs/CLAUDE_B_HANDOFF_
-    20260814_angry_raka_placement.md's one remaining open item is
-    resolved; no items left open in that handoff.
+    2026-08-14 (this session, third pass): `angry` raka-count placement
+    fully CLOSED, corrected TWICE. Pass 2 landed on 'Ka·o nanga' (one
+    raka, but with a space, matching the pre-existing 'anger' noun
+    entry) — see next_action_prior below. Pass 3: Project Owner supplied
+    the exact raka a second time, explicitly one word, no space
+    ("Angry = ka.onanga", "I am giving with exact raka") — corrected
+    again to 'Ka·onanga' (no space) in master_dictionary.json,
+    corrections.json, and tests/unit/translationEngine.test.js. The
+    pre-existing 'anger' noun entry ('Ka·o nanga', still spaced) was
+    NOT re-confirmed to the no-space form and left untouched — noun vs.
+    adjective may legitimately differ. HANDOFF TO CLAUDE B (was
+    incorrectly marked resolved in next_action_prior below):
+    src/data/phrase_maps.js line 38 ('i am angry': 'Anga ka·o nanga')
+    still has the pass-2 spaced form, now stale against the pass-3
+    correction — out of Claude A's lane, needs Claude B to update to
+    'Ka·onanga' or confirm the sentence-internal form is deliberately
+    different. Also closed this session: "delete all dups" check on the
+    always/answer/dog-bit-me/are-you-sleeping (NV-077) + medicine/pill
+    (NV-078) entries — no true exact {english,garo} duplicates found;
+    the SUPERSEDED/CONTESTED variants are deliberate audit-trail
+    retention per standing citation discipline, not left un-reviewed.
+    Verified via `npm test` (206/206 — note: bare `node --test tests/`
+    without the glob misfires, use the npm script), 8322 compiled
+    entries, 0 new repository-intelligence violations.
   next_action_prior: >-
-    2026-08-14 (this session, first pass): `angry` raka-count placement
-    was still the only open Claude B flag. Attempted to close it per
-    Project Owner instruction but did not — the Owner's own "ka.onanga,
-    mind the raka" spelling used a plain period, not a raka mark, so it
-    didn't specify a precise position. Asked Project Owner to relay back
-    to Thangseng the exact raka placement. (Resolved later this same
-    session — see next_action above.)
+    2026-08-14 (this session, pass 1-2): Pass 1 — attempted to close
+    `angry` per Project Owner instruction but did not: the Owner's own
+    "ka.onanga, mind the raka" spelling used a plain period, ambiguous
+    position. Asked Project Owner to confirm exact placement. Pass 2 —
+    Owner replied "Angry = ka'o nanga" / "Ka'o nangnabe = do not be
+    angry" (apostrophe standing for the raka mark). Corrected
+    master_dictionary.json's 'angry' entry from three-raka
+    'ka·o·nang·a' to one-raka 'Ka·o nanga', added 'do not be angry' =
+    'Ka·o nangnabe', updated corrections.json and
+    tests/unit/translationEngine.test.js to match. NOTE: this pass's
+    'Ka·o nanga' (with a space) was itself superseded one pass later —
+    see next_action above for the final no-space form and the
+    resulting phrase_maps.js handoff to Claude B.
   next_action_prior: >-
     2026-08-14, flagged by Claude B (session C, resumed): `angry`
     raka-count placement is the one item from

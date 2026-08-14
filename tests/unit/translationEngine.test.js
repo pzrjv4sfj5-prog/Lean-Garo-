@@ -566,16 +566,17 @@ test('RC-CANDIDATE-025 regression guard: bare-infinitive aliasing never overwrit
 // "Ka·a chakna amja" is a legitimate distinct-register synonym for angry
 // is NOT resolved by this fix and is left for Claude A.
 //
-// 2026-08-14 (NV-078, Claude A): the master_dictionary.json VERIFIED
-// value itself was corrected from 'ka·o·nang·a' (three raka) to
-// 'Ka·o nanga' (one raka, matching the pre-existing 'anger' noun entry
-// and the Project Owner's exact native-confirmed raka placement). This
-// assertion is updated to match; see NV-078 in master_dictionary.json.
+// 2026-08-14 (NV-078, Claude A, two rounds): the master_dictionary.json
+// VERIFIED value was first corrected from 'ka·o·nang·a' (three raka) to
+// 'Ka·o nanga' (one raka, but with a space), then corrected again the
+// same day to 'Ka·onanga' (no space) once the Project Owner supplied
+// the exact raka a second time, explicitly one word. This assertion is
+// updated to match the final form; see NV-078 in master_dictionary.json.
 
 test('corrections.json: "angry" resolves to the VERIFIED entry, not the truncated fragment', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('he is angry');
-  assert.ok(r.garo.includes('Ka·o nanga'), `must use full VERIFIED word, got: ${r.garo}`);
+  assert.ok(r.garo.includes('Ka·onanga'), `must use full VERIFIED word, got: ${r.garo}`);
 });
 
 test('corrections.json: "smile" resolves to its own word, not to laugh', async () => {

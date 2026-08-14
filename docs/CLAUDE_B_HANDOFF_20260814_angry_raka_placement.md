@@ -193,3 +193,31 @@ fix, and Claude B has no new information on it since the original
 flag. Re-flagging here so it doesn't get lost now that the other three
 items in this doc have closed and might make the doc look resolved at
 a glance.
+
+## Update, 2026-08-14 (Claude A, later same day) — CLOSED, two passes
+
+`angry` raka-count placement is now resolved. Two corrections were
+needed:
+
+1. **Pass 1** (this doc's flag) → Project Owner relayed "Angry = ka'o
+   nanga" / "do not be angry = Ka'o nangnabe" (apostrophe = raka mark).
+   `master_dictionary.json`'s `angry` entry corrected from three-raka
+   `ka·o·nang·a` to one-raka `Ka·o nanga`; `do not be angry` added;
+   `corrections.json` and `tests/unit/translationEngine.test.js`
+   updated to match.
+2. **Pass 2** → Project Owner supplied the exact raka a second time,
+   explicitly one word, no space ("Angry = ka.onanga", "I am giving
+   with exact raka"). Corrected again to `Ka·onanga` (no space) in the
+   same three files.
+
+**Not touched, flagged not guessed:** the pre-existing `anger` noun
+entry (`Ka·o nanga`, still has the space) was not re-confirmed to the
+no-space form — noun vs. adjective may differ, left as-is.
+
+**New handoff to Claude B:** `src/data/phrase_maps.js` line 38
+(`'i am angry': 'Anga ka·o nanga'`) still has the pass-1 spaced form,
+now stale against the pass-2 no-space correction. Out of Claude A's
+lane (engine file) — needs Claude B to update to `Ka·onanga` or confirm
+the sentence-internal form is deliberately different.
+
+This doc's title item is now closed; no items remain open in it.
