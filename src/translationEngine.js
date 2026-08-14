@@ -131,6 +131,30 @@ export async function translate(input) {
   const phraseMap = lookupPhrase(lower);
   if (phraseMap) return { garo: phraseMap, method: 'phrase-map', confidence: 0.99 };
 
+  // 2. Exact phrase (compiled dict) — runs BEFORE classifier composition.
+  // RUNTIME-PROPAGATION FIX (2026-08-14, Claude B, per Claude C's audit
+  // §3.5): this block used to sit AFTER "1.6 Classifier counting" below,
+  // even though this file's own header docstring has always documented
+  // "2. Exact phrase match (compiled dict)" as outranking "5. Number +
+  // classifier engine". That inversion meant a phrase-level fix landed
+  // in compiled_dict.json (e.g. NV-073's "twenty student" ->
+  // "Chattro sak·Kolgrik", via master_dictionary.json/prepare-data.js)
+  // was silently shadowed at runtime: translate("twenty student") kept
+  // mechanically recomposing from the *bare*-noun dictionary entry
+  // ("student" -> stale "Porai·gipa") every time, because classifier
+  // composition ran first and returned before this exact-phrase lookup
+  // ever got a turn. A confirmed, native-reviewed phrase-level entry is
+  // a stronger signal than mechanical bare-noun composition, so it must
+  // win the race. Moving this block ahead of classifier composition
+  // restores the documented precedence and lets phrase-level fixes
+  // actually reach users without requiring a matching bare-noun update
+  // in lockstep. Composition remains the correct fallback for every
+  // counted-noun phrase that has no dedicated compiled_dict.json entry
+  // (the vast majority) — this only changes behavior for phrases that
+  // DO have one.
+  const exactPhrase = lookupGaro(lower);
+  if (exactPhrase) return { garo: exactPhrase, method: 'exact-phrase', confidence: 0.98 };
+
   // 1.6 Classifier counting — "2 dogs", "one teacher", "5 birds"
   const countPhrase = parseCountingPhrase(cleaned);
   if (countPhrase) {
@@ -163,10 +187,6 @@ export async function translate(input) {
       }
     }
   }
-
-  // 2. Exact phrase
-  const exactPhrase = lookupGaro(lower);
-  if (exactPhrase) return { garo: exactPhrase, method: 'exact-phrase', confidence: 0.98 };
 
   // 3. Single word
   if (words.length === 1) {

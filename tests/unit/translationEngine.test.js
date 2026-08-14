@@ -176,7 +176,15 @@ const REGRESSION_CASES = [
   // -> applyTense) treats as a bare stem, producing a malformed
   // double-suffixed form. "one person" is the clean case the new rule is
   // FOR; "he answered" is the case it must NOT touch.
-  { in: 'one person', expectGaro: 'mande sak·sa', expectMethod: ['classifier'] },
+  // expectMethod widened 2026-08-14 (Claude B, runtime-propagation fix,
+  // Claude C's audit §3.5): "exact phrase" (compiled_dict.json) now runs
+  // BEFORE classifier composition, matching this file's own documented
+  // priority cascade, so a confirmed phrase-level entry for "one person"
+  // wins the race instead of the bare-noun classifier recomposing it from
+  // scratch every time. The garo VALUE is unchanged ('mande sak·sa') —
+  // only which pipeline step produces it changed, which is the whole
+  // point of the fix (see translationEngine.js step 2's comment).
+  { in: 'one person', expectGaro: 'mande sak·sa', expectMethod: ['classifier', 'exact-phrase'] },
   { in: 'he answered', expectGaro: 'Ua Aganchakaha', expectMethod: ['grammar-assembly'] },
 ];
 
@@ -1336,4 +1344,61 @@ test('"<number> dogs" counting phrases use the correct, natively-confirmed class
   for (const [key, expected] of cases) {
     assert.equal(compiledDict[key], expected, `compiled_dict["${key}"] should match the native-confirmed value`);
   }
+});
+
+// --- Runtime-propagation fix (2026-08-14, Claude B, per Claude C's audit
+// §3.5): translate()'s own header docstring has always documented "2.
+// Exact phrase match (compiled dict)" as outranking "5. Number + classifier
+// engine", but the code that wired classifier composition (8f7dfba) placed
+// it at step "1.6", running BEFORE the exact-phrase lookup — inverting the
+// documented precedence. That meant a confirmed, native-reviewed
+// compiled_dict.json entry for a specific counting phrase (e.g. NV-073's
+// "twenty student" -> "Chattro sak·Kolgrik") was silently shadowed at
+// runtime: translate() kept mechanically recomposing from the bare noun's
+// (unfixed) dictionary entry every single time, because classifier
+// composition ran first and returned before the exact-phrase check ever
+// got a turn. These tests guard the fixed precedence directly. ---
+test('runtime propagation: an exact compiled_dict.json phrase entry wins over classifier composition (NV-073 "twenty student")', async () => {
+  const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
+  assert.equal(compiledDict['twenty student'], 'Chattro sak·Kolgrik',
+    'precondition: compiled_dict.json must carry the NV-073-fixed phrase-level entry for this test to be meaningful');
+  const r = await translate('twenty student');
+  assert.equal(r.method, 'exact-phrase',
+    'a confirmed phrase-level compiled_dict.json entry must win over mechanical classifier composition');
+  assert.equal(r.garo, 'Chattro sak·Kolgrik');
+});
+
+test('runtime propagation: classifier composition still runs as the fallback when no exact-phrase entry exists', async () => {
+  const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
+  assert.equal(compiledDict['six dogs'], undefined,
+    'precondition: this phrase must have no dedicated compiled_dict.json entry for this test to exercise the fallback path');
+  const r = await translate('six dogs');
+  assert.equal(r.method, 'classifier',
+    'with no exact-phrase entry, composition from the bare noun must still be reached (the reorder must not break the fallback)');
+  assert.equal(r.garo, 'achak mang·dok');
+});
+
+// --- Plural counted-noun generation defect (2026-08-14, Claude B, per
+// Claude C's audit §3/§3.5, "twenty students"): the bulk-generated plural
+// phrase-level entry for "twenty students" in garo_dictionary.json
+// ("chi chi chik·gni") was independently flagged SUPERSEDED for that exact
+// key in master_dictionary.json, with no verified replacement ever added —
+// unlike its singular sibling "twenty student", which NV-073 did fix.
+// Before the SUPERSEDED-only-candidate pipeline fix (prepare-data.js),
+// that untagged garo_dictionary.json duplicate shipped anyway once
+// master's own (sole) candidate was filtered out as superseded, silently
+// re-introducing the exact value master had already rejected. Now the key
+// is correctly held out of compiled_dict.json (see
+// docs/SUPERSEDED_ONLY_KEYS.md), and translate() falls through to
+// classifier composition instead of surfacing the known-wrong bulk value —
+// this test guards that translate() never emits the specific rejected
+// string again, whatever composition currently produces from the (still
+// linguistically unconfirmed) bare "students" root. ---
+test('plural counted-noun defect: "twenty students" no longer surfaces the SUPERSEDED bulk value', async () => {
+  const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
+  assert.equal(compiledDict['twenty students'], undefined,
+    'the SUPERSEDED-only-candidate pipeline fix must hold this key out of compiled_dict.json entirely');
+  const r = await translate('twenty students');
+  assert.notEqual(r.garo, 'chi chi chik·gni',
+    'translate() must never surface the specific value master_dictionary.json marked SUPERSEDED for this key');
 });
