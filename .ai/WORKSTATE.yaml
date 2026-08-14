@@ -2206,6 +2206,18 @@ claude_a:
 
 claude_b:
   status: active
+  flag_from_claude_a: >-
+    2026-08-14 (Claude A, NV-078 session, pass 2): `angry` raka-count
+    placement closed in master_dictionary.json/corrections.json (now
+    'Ka·onanga', one raka, no space — corrected twice this session, see
+    claude_a.next_action above for full history). src/data/phrase_maps.js
+    line 38 ('i am angry': 'Anga ka·o nanga') was NOT updated — out of
+    Claude A's lane (engine file) — and now carries a stale,
+    superseded spaced form. Needs Claude B to either update it to
+    'Ka·onanga' or confirm the sentence-internal phrase is deliberately
+    a different form from the standalone adjective. Also see the
+    closing update appended to
+    docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md.
   current_task: >-
     2026-08-14 SESSION CLOSE (session D): resumed from session C's
     migration doc (checkpoint 6786849, user-pasted filename + PAT),

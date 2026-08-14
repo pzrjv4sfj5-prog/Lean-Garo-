@@ -1,76 +1,78 @@
 # Claude A — Session Migration Document — 2026-08-14 (F)
 
-Continuation of the same session as `20260814E`. That doc closed
-NV-078 (medicine/pill) and left the `angry` raka-count placement open,
-pending a more precise native relay. This document closes that.
+*(Supersedes this file's own pass-1 content, committed mid-session at
+`5ccb79a` before the Owner's second, more precise raka correction
+arrived. This is the final, complete session close.)*
 
-## What was done — `angry` raka-count placement, closed
+## Resume protocol followed
+Resumed from `docs/CLAUDE_A_SESSION_MIGRATION_20260814D.md` (pasted by
+Project Owner). HEAD == origin/main == `a1cd496` at start, zero drift.
+Treated as ground truth, no re-litigation.
 
-Project Owner supplied the exact placement directly:
-```
-Angry = ka'o nanga
-Ka'o nangnabe. = do not be angry
-```
-then, on request for exact raka marks:
-```
-Angry = ka.onanga
-Ka.o nangnabe. = do not be angry
-i am giving with exact rakka.
-```
-(period standing in for the raka mark — one raka, after "ka" only).
+## What was done this session
+1. **NV-078 (medicine/pill)** — Thangseng native confirmation (via
+   Tridip WhatsApp, Project Owner relay): pill/medicine counting
+   (`Sam rongsa/ronggni/ronggittam`, rong classifier, 4–20 mechanically
+   extended off the already-verified formula) and `take/drink medicine`
+   = `Sam ringbo`. 22 new/upgraded entries, category `health`.
+2. **`angry` raka-count placement — closed, two passes.**
+   - Pass 1: Owner relayed "Angry = ka'o nanga" / "do not be angry =
+     Ka'o nangnabe" (apostrophe = raka). Corrected from three-raka
+     `ka·o·nang·a` to one-raka-with-space `Ka·o nanga`; added
+     `do not be angry`; synced `corrections.json` and
+     `tests/unit/translationEngine.test.js`.
+   - Pass 2: Owner supplied the exact raka again, explicitly one word,
+     no space ("ka.onanga", "I am giving with exact raka"). Corrected
+     again to `Ka·onanga` (no space) in the same three files.
+   - Pre-existing `anger` noun entry (`Ka·o nanga`, still spaced) was
+     **not** touched — not re-confirmed to the no-space form, left
+     flagged rather than guessed.
+   - `docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md` closing
+     update appended: this doc's title item is now fully resolved.
+3. **Dup sweep** — checked always/answer/dog-bit-me/are-you-sleeping
+   (NV-077, already closed in a prior session) and medicine/pill
+   (NV-078) for true exact `{english, garo}` duplicates. None found.
+   What looks like duplication is deliberately-retained
+   SUPERSEDED/CONTESTED variant history per standing citation
+   discipline — not un-reviewed, not deleted.
+4. **Flag to Claude B** — `src/data/phrase_maps.js` line 38
+   (`'i am angry': 'Anga ka·o nanga'`) still has the pass-1 spaced
+   form, now stale against the pass-2 no-space correction. Out of
+   Claude A's lane (engine file). Flagged in two places: a
+   `flag_from_claude_a` block at the top of `claude_b`'s WORKSTATE.yaml
+   section (per Rule 10), and the closing update to the handoff doc
+   above.
 
-This matches the pre-existing `anger` (noun) entry, `Ka·o nanga`,
-already live and correct in `master_dictionary.json`. It also resolves
-a latent inconsistency in the NV-054 entry: NV-054's own citation text
-had quoted the native form as `ka'o nanga` all along, but the stored
-`garo` value was `ka·o·nang·a` (three raka) — the two never matched.
-
-**Changes:**
-- `master_dictionary.json`: `angry` VERIFIED/HIGH entry's value
-  corrected from `ka·o·nang·a` to `Ka·o nanga`; notes updated to
-  record the correction and cite NV-078.
-- `master_dictionary.json`: new entry `do not be angry` =
-  `Ka·o nangnabe`, VERIFIED/HIGH, citing NV-078.
-- `src/data/corrections.json`: `angry` entry corrected to match
-  (`phrase_maps.js`'s `i am angry` already had the correct one-raka
-  form, so no change needed there).
-- `tests/unit/translationEngine.test.js` line 572: the assertion was
-  checking for the old three-raka fragment as the "correct" value —
-  updated to assert the corrected value, with a comment explaining
-  why. This is a content-accuracy fix to an assertion string, not an
-  engineering change; flagged here for Claude B's awareness in case it
-  overlaps with planned work.
-- `src/data/pending_lexicon.json` line 29287 was **not** touched — it's
-  a historical OCR-ingestion audit record (conflict snapshot from
-  2026-07-21), not a live dictionary value; editing it would falsify
-  the audit trail.
+## Duplicate-representation check (Rule 8)
+Covered inline per-item above (medicine/pill: no propagation targets
+in corrections.json/phrase_maps.js; angry: corrections.json synced,
+phrase_maps.js flagged not synced — see above).
 
 ## Verification
+- `node prepare-data.js`: 8299 → 8322 unique compiled entries.
+- `node test-dictionary.js`: 8322/8322 valid, JSON compliance clean.
+- `npm test` (i.e. `node --test tests/unit/*.test.js` — **note:** bare
+  `node --test tests/` without the glob misfires with a false failure,
+  use the npm script or the explicit glob): 206/206 passing.
+- `node repository-intelligence.js`: 0 new violations across Checks
+  A–F (289 known/allowlisted Check-F mismatches unchanged).
+- `npm run build`: clean through the Node pipeline; `vite build` itself
+  still fails in this sandbox only (binary absent), pre-existing
+  environment gap, not re-flagged as new.
 
-- `node prepare-data.js`: 8321 → 8322 compiled entries (+1).
-- `node test-dictionary.js`: 8322/8322 valid.
-- `node repository-intelligence.js`: 0 new violations, all checks
-  (Check F's 289 known/allowlisted mismatches unchanged).
-- `npm test`: 206/206 passing. (Up from the 203 baseline — Claude B's
-  concurrent session D added 3 audit-script tests; picked up cleanly
-  via the earlier rebase in this session, no conflict.)
-
-## Runtime Handoff (Claude B)
-
-None required beyond the note above about the test-assertion edit —
-purely a content-string correction to match the corrected dictionary
-value, no logic changed.
+## PAT handling
+Session-supplied PAT used inline in clone/push remote URLs only, never
+persisted to git config, commit content, or any tracked file.
 
 ## Repository status at close
-
-- HEAD: (this commit, immediately following)
-- `origin/main`: will match HEAD exactly after push (verified via
-  `git fetch` + compare)
+- HEAD: `a01d729` plus this doc's own commit (below)
+- `origin/main`: will match HEAD exactly after push
 - `git status`: clean, no uncommitted changes, no local-only commits
-- `WORKSTATE.yaml`: updated this session (`claude_a.migration_doc`,
-  `claude_a.next_action`)
-- `SESSION_BOOTSTRAP.md`: unchanged this session (no governance change)
+- `WORKSTATE.yaml`: updated this session (`claude_a.next_action`/
+  `next_action_prior`, new `claude_b.flag_from_claude_a`)
+- `SESSION_BOOTSTRAP.md`: unchanged (no governance change this session)
 - Migration doc: this document, complete
-- Native-validation/blocker status: NV-078 fully closed (medicine/pill
-  + angry raka-count). No open Claude A items remain from
-  `docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md`.
+- Native-validation/blocker status: NV-078 closed. `angry` raka-count
+  closed (two passes). One open engineering flag for Claude B
+  (phrase_maps.js line 38, non-blocking, does not affect dictionary
+  data integrity).
