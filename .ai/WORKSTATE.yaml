@@ -269,7 +269,34 @@ repository:
 claude_a:
   status: active
   migration_doc: >-
-    docs/CLAUDE_A_SESSION_MIGRATION_20260814B.md - this session's close.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814C.md - this session's close.
+    Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260814B.md (HEAD ==
+    origin/main == 80c239a, clean tree, zero drift). Closed NV-077: the
+    4-key evidence package Claude B had correctly refused to apply from
+    an unverified chat claim (docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md)
+    — Project Owner supplied the same 4 values directly in this Claude A
+    session, the recognized channel. always=Pangnan (un-superseded,
+    reverses the 2026-08-01 audit's uncited SUPERSEDED tag; jring·jring/
+    pang·na marked CONTESTED, not deleted); answer resolved as a POS
+    split, not a conflict (noun=Aganchakani, verb=Aganchaka, both
+    VERIFIED/HIGH); a dog bit me=Angko achak chikaha (new VERIFIED/HIGH,
+    supersedes untagged legacy entry, corrections.json word-order
+    synced); are you sleeping=Na·a tusiengama? (corrects dropped-si
+    error, corrections.json spacing synced). angry/ka·o·nang·a raka-count
+    question from the same handoff NOT addressed, still open. Allowlisted
+    2 new Check C conflicts with citation. Commit d28882b. Claude B then
+    synced onto this commit same session (1cb59d7), fixing a propagation
+    gap NV-077 itself missed (sibling corrections.json keys 'dog bit
+    me'/'the dog bit me' still on old word order) — pure propagation,
+    no new linguistic decision. Verified: prepare-data.js (8299->8299,
+    value edits only), test-dictionary.js 8299/8299, repository-
+    intelligence.js 0 new violations all checks, 203/203 unit tests,
+    full `npm run build` end-to-end clean. Working tree clean, fully
+    pushed, HEAD == origin/main == 1cb59d7 (after pulling Claude B's
+    sync commit). PAT supplied live by Project Owner, used inline in
+    clone/push URLs only, never persisted.
+  migration_doc: >-
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814B.md - prior session's close.
     Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260814.md; re-synced
     first (HEAD == origin/main == b0c4955, clean tree, zero drift).
     Closed the only open item, NV-076: Project Owner confirmed (native
