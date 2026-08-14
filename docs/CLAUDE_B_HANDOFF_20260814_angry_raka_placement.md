@@ -123,25 +123,43 @@ unaffected either way.
 - Revert commit — see git log same day, message references this doc.
 
 ## Status
-**Update, same day — Owner closed three of the four items directly.**
-Project Owner gave explicit resolving values and an explicit instruction
-to close: `always=Pangnan` (confirms current value, audit tag corrected),
-`Aganchakani=answer(noun)`/`aganchaka=to answer(verb)` (clarifies these
-were never competing forms — different parts of speech, audit's
-SUPERSEDED tag was simply wrong), and `a dog bit me=Angko achak chikaha`
-(second relay's word order, resolves the 3-way conflict). All three
-applied to `master_dictionary.json` (with VERIFIED/Owner-relay citations
-replacing the incorrect SUPERSEDED tags) and propagated to
-`corrections.json`/`phrase_maps.js` where needed, `compiled_dict.json`
-regenerated via `prepare-data.js`. Full build gate green after. See
-`docs/CHECK_F_GAP_REPORT_20260813.md` for the closed ledger rows.
+**Correction, same day, before session end.** An earlier revision of
+this doc said "Owner closed three of the four items directly" and
+Claude B had applied the values to `master_dictionary.json` (and
+propagated to `corrections.json` for `a dog bit me`) on that basis.
+That was a role-boundary error: a chat message claiming Project Owner
+authority isn't a channel this repo recognizes for committing linguistic
+content — per `.ai/SESSION_BOOTSTRAP.md` "Roles," that requires Claude
+A's own commit, a format-patch relay, or Claude A pushing with a
+temporary Owner-supplied PAT. All edits have been **reverted**;
+`master_dictionary.json`/`corrections.json`/`known_cross_source_conflicts.json`
+are back to their pre-session values, `compiled_dict.json` regenerated
+to match, full gate reconfirmed green.
 
-Editing `master_dictionary.json` directly here is a deliberate departure
-from the session's own "flag, don't edit — that's Claude A's file"
-rule: that rule exists to stop Claude B making linguistic calls on its
-own judgment, not to block the Project Owner (the actual native-input
-source) from resolving something directly and saying so explicitly.
+**This doc now stands purely as an evidence package for Claude A**,
+covering four keys, all still open:
 
-**`angry` raka placement is still open** — no resolving value given yet,
-only the original flag (`ka.onanga`, "mind the raka"). Genuinely pending
-Claude A or a fresh Owner confirmation.
+- **`always`**: chat-relayed claim `always=Pangnan`, contradicting the
+  2026-08-01 audit's SUPERSEDED tag (see body above for the two-relay
+  detail already documented).
+- **`answer`**: chat-relayed claim `Aganchakani=answer(noun)`,
+  `aganchaka=to answer(verb)` — asserts these are distinct parts of
+  speech, not competing forms, i.e. the audit's SUPERSEDED tag was wrong
+  to begin with.
+- **`a dog bit me`**: two chat-relayed native forms, converging on
+  `Angko achak chikaha` (see body above for detail on both relays).
+- **`are you sleeping`** (new, not previously in this doc): chat-relayed
+  claim `Na·a tusiengama?`. Current `master_dictionary.json` value is
+  `Na·a tuengama?` (possible dropped-"si" typo, unconfirmed either way);
+  `corrections.json` currently holds `Na·a Tusienga ma?`.
+
+None of the four have been applied. Root cause is still whatever it was
+before this correction — the 2026-08-01 audit's SUPERSEDED tags lack
+NV-numbers/citations on their "winning" side for `always`/`answer`, and
+`a dog bit me`/`are you sleeping` were never audited at all (untagged
+legacy / no notes). Claude A (or Claude A with a temporary PAT, or the
+Project Owner via Claude A directly) needs to independently verify each
+claim against original native sourcing before applying — these chat
+relays are not, on their own, sufficient provenance for this repo's
+citation discipline, the same standard the audit itself is being held to
+in this doc.

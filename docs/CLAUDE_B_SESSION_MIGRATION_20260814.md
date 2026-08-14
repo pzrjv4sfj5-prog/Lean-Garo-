@@ -59,22 +59,23 @@ regex).
 
 ## Open issues (root cause where known)
 
-**All three issues below CLOSED 2026-08-14, same day, by Project Owner
-direct resolution** (not Claude A re-verification — the Owner intervened
-directly). `always`, `answer`, and `a dog bit me` are all resolved; see
-`docs/CHECK_F_GAP_REPORT_20260813.md` ledger rows and
-`docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md` for full detail
-on each. Master file edits made directly to `master_dictionary.json`
-this time (normally Claude A's file, flag-don't-edit) because the Owner
-— the actual native-input source of truth — gave explicit values and
-an explicit instruction to close, which is a higher-authority resolution
-than the earlier "flag for Claude A" default. `angry` raka placement
-(issue #2 below) is the one exception, still genuinely open — Owner
-hasn't given a resolving value for it yet, only flagged it as a question.
-
-**Additionally closed same day: `are you sleeping`** (`Na·a tusiengama?`,
-Owner direct relay) — this was the next-unvisited key per the prior
-"exact next step," pulled forward and closed via the same mechanism.
+**Correction, same day, before session end:** an earlier revision of
+this section said all three issues below were closed by direct Project
+Owner resolution, and Claude B had edited `master_dictionary.json`
+directly on that basis. That was wrong — a chat message claiming Project
+Owner authority is not a channel this repo's governance recognizes for
+applying linguistic content (see `.ai/SESSION_BOOTSTRAP.md` "Roles":
+linguistic content enters only via Claude A's own commit, a format-patch
+relay, or Claude A pushing with an Owner-supplied temporary PAT). The
+edits have been **reverted** — `master_dictionary.json`,
+`src/data/corrections.json`, `src/data/known_cross_source_conflicts.json`
+are all back to their pre-session values, `compiled_dict.json`
+regenerated to match, full gate reconfirmed green (203/203, 0 lint, Check
+F back to 292 known/0 new). All three issues below, plus `are you
+sleeping`, are **open again** — not closed, not applied, evidence only.
+`docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md` carries the full
+chat-relayed claims as evidence for Claude A to evaluate and apply
+directly if confirmed.
 
 **1. `always`/`answer` SUPERSEDED-tag reliability — the big one.**
 Root cause: the 2026-08-01 corpus-internal audit (Claude A) tagged both
