@@ -4181,3 +4181,26 @@ tests pass; `repository-intelligence.js` exits 0.
 This closes the full "10 nouns" mass-noun/classifier investigation
 and the container-word pattern sub-question. Only remaining open item:
 `bol` vehicle-classifier exact scope (motorcycle/train/airplane).
+
+## NV-077 (2026-08-14, Project Owner direct native relay, in-session)
+
+Four keys confirmed directly by the Project Owner this session, resolving
+the evidence package left open in
+`docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md`:
+
+- **always** = `Pangnan` — reverses the 2026-08-01 audit's SUPERSEDED tag
+  (that audit's replacements `jring·jring`/`pang·na` had no NV citation).
+  Those two now marked CONTESTED, not deleted.
+- **answer** — POS split: noun = `Aganchakani` (already VERIFIED/HIGH,
+  unchanged), verb = `Aganchaka` (un-superseded, now VERIFIED/HIGH). The
+  audit had wrongly treated these as competing values for one sense.
+- **a dog bit me** = `Angko achak chikaha` — new VERIFIED/HIGH entry,
+  supersedes the untagged legacy `An·tangko achik chanjok`.
+  `corrections.json` synced (was `Achak Angko chikaha`, opposite word
+  order).
+- **are you sleeping** = `Na·a tusiengama?` — corrects a dropped-`si`
+  error in the existing `Na·a tuengama?` entry (now SUPERSEDED).
+  `corrections.json` synced (was `Na·a Tusienga ma?`, spacing only).
+
+Not addressed this round: `angry`/`ka·o·nang·a` raka-count question from
+the same handoff doc, still open.

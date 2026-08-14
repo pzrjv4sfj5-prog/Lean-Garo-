@@ -1728,7 +1728,7 @@
     "english": "always",
     "garo": "Pangnan",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'always' has VERIFIED/HIGH form(s) ['jring·jring', 'pang·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH — NV-077, Project Owner direct native relay in-session, 2026-08-14 (\"always = Pangnan\"). Reverses the 2026-08-01 corpus-internal audit's SUPERSEDED tag on this entry: that audit's replacement candidates (jring·jring, pang·na) carried only bare 'variant/VERIFIED/HIGH' notes with no NV-number or relay citation, and are now contradicted by dated direct native input. Not asserting jring·jring/pang·na are wrong — see their own entries, flagged CONTESTED, not deleted."
   },
   {
     "english": "sometimes",
@@ -2271,7 +2271,7 @@
     "english": "answer",
     "garo": "Aganchaka",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'answer' has VERIFIED/HIGH form(s) ['Aganchakani', 'a·gan·chak·a', 'in·chak·a', 'ku·chak·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH — NV-077, Project Owner direct native relay in-session, 2026-08-14 (\"answer: noun Aganchakani / verb Aganchaka\"). Reverses the 2026-08-01 audit's SUPERSEDED tag: the audit conflated two parts of speech under one key — Aganchaka is the verb (bare/citation form), Aganchakani (see 'Answer' entry) is the noun. Coexist as distinct-POS entries, not competing values for the same sense."
   },
   {
     "english": "test / exam",
@@ -15913,7 +15913,8 @@
   {
     "english": "a dog bit me",
     "garo": "An·tangko achik chanjok",
-    "category": "animals"
+    "category": "animals",
+    "notes": "SUPERSEDED — untagged legacy import, superseded by NV-077 (2026-08-14, Project Owner direct native relay, two converging messages, final form 'Angko achak chikaha'). Retained per citation discipline, not deleted."
   },
   {
     "english": "title",
@@ -16001,7 +16002,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — likely dropped-'si' OCR/transcription error, superseded by NV-077 (2026-08-14, Project Owner direct native relay: 'Na·a tusiengama?'). Retained per citation discipline, not deleted."
   },
   {
     "english": "in a broad daylight are you sleeping",
@@ -16900,7 +16901,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "CONTESTED — NV-077 (2026-08-14) directly confirmed 'always'=Pangnan, but this entry's own prior 'variant/VERIFIED/HIGH' tag had no NV-number or citation to begin with. Not marked wrong outright (may be a legitimate variant/register form) but no longer authoritative for compile pending native re-check. Not deleted."
   },
   {
     "english": "Always",
@@ -16908,7 +16909,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "CONTESTED — NV-077 (2026-08-14) directly confirmed 'always'=Pangnan, but this entry's own prior 'variant/VERIFIED/HIGH' tag had no NV-number or citation to begin with. Not marked wrong outright (may be a legitimate variant/register form) but no longer authoritative for compile pending native re-check. Not deleted."
   },
   {
     "english": "Answer",
@@ -16916,7 +16917,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH v:Aganchaka / in-chak-a / ku·-chak-a"
+    "notes": "VERIFIED/HIGH v:Aganchaka / in-chak-a / ku·-chak-a — POS clarified NV-077 (2026-08-14): this is specifically the NOUN 'answer'. See separate 'answer' (lowercase key) entry for the VERB form, Aganchaka — distinct part of speech, not a competing value."
   },
   {
     "english": "Answer",
@@ -66514,5 +66515,21 @@
     "category": "travel",
     "classifier": "bol",
     "notes": "VERIFIED/HIGH — native relay (Thangseng, via Tridip/WhatsApp, Project Owner-relayed this session, 2026-08-14, NV-076): scope question from 2026-08-13 ('does bol extend to motorcycle, train, airplane?') answered YES — Project Owner confirmed all three take the 'bol' vehicle classifier, same as car/bike/cycle/ship. Root + bol classifier (no raka dot, classifier-level property, like pang/rong/dot/dam/dil/bol), 1-20 mechanically built using the already-VERIFIED NUMBERS suffix table (sa/gni/gittam/bri/bonga/dok/sni/chet/sku/chiking, Chi·sa...Chi·sku, Kolgrik), same NOUN+CLASSIFIER+NUMBER-SUFFIX formula and per-classifier raka behavior already confirmed for car (2026-08-13) and person/tree/apple/book. This closes the 'bol' vehicle-classifier scope question — no longer open."
+  },
+  {
+    "english": "a dog bit me",
+    "garo": "Angko achak chikaha",
+    "category": "animals",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-077, Project Owner direct native relay in-session, 2026-08-14. Two messages converged on this exact form (word order 'Angko achak', verb 'chikaha'). Supersedes the untagged legacy 'An·tangko achik chanjok' entry. corrections.json's pre-existing 'Achak Angko chikaha' agreed on the verb form but used the opposite word order — corrections.json updated to match this native form in the same session (see commit)."
+  },
+  {
+    "english": "are you sleeping",
+    "garo": "Na·a tusiengama?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-077, Project Owner direct native relay in-session, 2026-08-14. Corrects the prior 'Na·a tuengama?' entry (dropped 'si'). corrections.json's pre-existing 'Na·a Tusienga ma?' agreed on the word/suffix but differed in spacing — corrections.json updated to match this exact form in the same session (see commit)."
   }
 ]
