@@ -4121,3 +4121,32 @@ Student's root is now closed — the full person/student/teacher
 conflict is resolved. Remaining open items: whether the container-word
 mass-noun pattern generalizes past count=1, and `bol` vehicle-
 classifier scope (car/road/etc. still unconfirmed).
+
+## NV-074 — CLOSED (2026-08-14, Thangseng direct via Tridip)
+
+Confirms the container-word pattern generalizes across counts:
+"two glasses of water" = `chi glass gni`, "two plates of rice" =
+`mi plate gni` — same NUMBERS suffix table as the classifier system,
+no raka dot between container word and suffix.
+
+Resolution: `chi glass N` and `mi plate N` mechanically generated 1–20
+using the confirmed suffix table, same root/slot-substitution logic
+already used for teacher/student/coin/house. Old count=1-only citation
+entries (`a glass of water`, `one plate of rice`) marked SUPERSEDED,
+replaced by the singular-keyed `one glass of water`/`one plate of
+rice` entries in the new series. This closes the water/food portion of
+the original "10 nouns" mass-noun question: both are mass nouns
+counted via a container word standing in the classifier slot, not via
+a semantic classifier — confirmed pattern, not a one-off.
+
+**Runtime Handoff (Claude B):** `compiled_dict.json` regenerated
+(8239 entries, up from 8201). Spot-checked `one/two/twenty glass(es)
+of water` and `one/two/twenty plate(s) of rice` directly against
+compiled output — all correct. 203/203 unit tests pass;
+`repository-intelligence.js` exits 0 (0 new violations — no allowlist
+addition needed this time, since old entries were edited in place
+rather than left as standing duplicates).
+
+Remaining open items: `bol` vehicle-classifier exact scope (does it
+extend past car/bike/cycle/ship to motorcycle/train/airplane — logged
+2026-08-13, still unconfirmed).
