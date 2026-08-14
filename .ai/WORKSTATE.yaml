@@ -266,6 +266,96 @@ repository:
     as provisional per Rule 8 and swept in the next session before being
     called fully resolved."
 
+  head: c22ae5a
+  last_updated: "2026-08-14 (Claude B, session close: counting-system
+    engineering work from Claude C's independent audit (relayed in chat
+    by the Project Owner this session, not committed to the repo as a
+    file) closed end-to-end -- both engineering findings fixed with
+    regression tests, full gate re-verified. Resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260814_D.md (checkpoint ed53f47);
+    git fetch clean, zero drift, re-synced before acting.
+
+    (1) Runtime-propagation fix (audit §3.5, translationEngine.js): the
+    file's own header docstring has always documented \"2. Exact phrase
+    match (compiled dict)\" as outranking \"5. Number + classifier
+    engine\", but 8f7dfba (2026-06-13) wired classifier composition in at
+    step 1.6, running BEFORE the exact-phrase lookup -- inverting the
+    documented cascade. Confirmed directly: translate('twenty student')
+    returned the stale bare-noun-composed 'porai·gipa sak·Kolgrik' even
+    though compiled_dict.json already carried NV-073's fixed phrase-level
+    entry ('Chattro sak·Kolgrik'), because classifier composition ran
+    first and returned before exact-phrase ever got a turn -- a confirmed
+    phrase-level fix was silently shadowed at runtime. Moved the
+    exact-phrase block ahead of classifier composition, restoring the
+    documented precedence. Composition remains the correct fallback for
+    the vast majority of counted-noun phrases with no dedicated
+    compiled_dict.json entry (verified 'six dogs' still resolves via
+    classifier, unaffected).
+
+    (2) SUPERSEDED-only-candidate pipeline fix (audit §3, the 'twenty
+    students' case; also the un-actioned half of Claude A's
+    2026-08-13 counting-pipeline audit,
+    docs/CLAUDE_A_COUNTING_QA_20260813.md, handoff item (a)): traced
+    'twenty students' specifically -- master_dictionary.json's only
+    candidate for that key is explicitly marked SUPERSEDED
+    ('chi chi chik·gni'), no VERIFIED replacement was ever added (unlike
+    its singular sibling 'twenty student', which NV-073 did fix), yet
+    compiled_dict.json shipped that exact SUPERSEDED string anyway --
+    because garo_dictionary.json (no `notes` field, can never carry a
+    SUPERSEDED tag) independently duplicates the identical wrong value
+    untagged, and once master's own sole candidate was filtered out,
+    pickPrimary fell back to it with no mechanism to recognize it as the
+    same rejected content. normalizeFile() now also returns which garo
+    VALUES were marked SUPERSEDED per key; finalizeDictionary() takes this
+    as a new supersededByKey argument and filters out any non-master
+    (source !== 2) candidate whose value matches, before pickPrimary sees
+    it -- scoped to non-master specifically so master's own legitimate
+    same-string VERIFIED/SUPERSEDED coincidences ('two dogs' -- see
+    2026-08-13's tie-break note) are never touched. If a key's candidate
+    pool empties entirely, it's held out of
+    compiled_dict.json/compiled_dict_alternates.json instead of shipping a
+    known-wrong value, logged to docs/SUPERSEDED_ONLY_KEYS.md
+    (auto-regenerated every build) for follow-up native review. 190 keys
+    held this run, including the 189 remaining of Claude A's ~230-key
+    2026-08-13 finding not already closed by the 2026-08-13 teacher/
+    mountain/village/road/banana/car relay -- house/rice/water/food (~19
+    keys each) chief among them, still needing native input per that
+    session's own handoff.
+
+    Both fixes are pure engineering, no master_dictionary.json/
+    garo_dictionary.json/corrections.json edits. Regression tests added:
+    tests/unit/translationEngine.test.js (exact-phrase-wins /
+    classifier-still-fallback / plural-defect-no-longer-surfaces-the-
+    rejected-string, 3 new tests), tests/unit/prepare-data.test.js (new
+    file, 5 tests directly against finalizeDictionary with synthetic data
+    covering held/shipped/master-reconfirmed/unaffected-by-default).
+    Updated 2 stale pre-fix test expectations that were themselves
+    asserting bug behavior as correct: translationEngine.test.js's 'one
+    person' case (garo value unchanged, only the producing pipeline step
+    changed) and rc037_bird_classifier.test.js's 'two cars' case (was
+    asserting a compiled entry existed at all, when its sole candidate was
+    already-flagged-SUPERSEDED fabricated content that never should have
+    shipped -- given its own dedicated held-not-shipped assertion
+    instead). Remaining linguistic gap surfaced, not fixed (engineering's
+    fix makes it consistent rather than silently wrong, but doesn't
+    resolve it): 'student' 's bare-noun dictionary entry was never updated
+    to NV-073's 'Chattro' root alongside the phrase-level fix, so
+    translate('twenty students') (plural, no phrase-level entry of its
+    own) now correctly falls through to classifier composition but still
+    composes from the stale 'Porai·gipa' root -- flagged for Claude A,
+    not engineering's call to resolve.
+
+    Verified: npm run build green end-to-end -- 215/215 unit tests (up
+    from 203), test-dictionary.js 8109/8109 valid, repository-
+    intelligence.js PASSED with 0 NEW violations across all checks (Check
+    F's known-mismatch count dropped 292->289, expected and harmless --
+    some previously-allowlisted mismatches were for keys this session's
+    fix correctly stopped shipping, not a new violation), lint 0
+    errors/warnings, vite build clean. git status clean, HEAD==origin/main,
+    fully pushed. PAT supplied live by Project Owner, used inline in the
+    push URL only, never persisted. Full detail:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260814_E.md."
+
 claude_a:
   status: active
   migration_doc: >-
