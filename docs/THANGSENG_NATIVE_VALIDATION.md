@@ -4150,3 +4150,34 @@ rather than left as standing duplicates).
 Remaining open items: `bol` vehicle-classifier exact scope (does it
 extend past car/bike/cycle/ship to motorcycle/train/airplane — logged
 2026-08-13, still unconfirmed).
+
+## NV-075 — CLOSED (2026-08-14, Thangseng direct via Tridip)
+
+Two clarifications, closing the container-word pattern investigation:
+
+1. No raka dot ever occurs between a container word ("glass"/"plate")
+   and the number suffix — confirms what was already encoded (`chi
+   glass sa`, not `glass·sa`); container words pattern with the
+   no-raka classifiers (`rong`/`pang`), not the raka-carrying ones
+   (`gong`/`sak`/`ge`/`te`).
+2. No native Garo word exists for "glass" or "plate" as containers.
+   Historically Garo used banana leaves and bamboo-stem cups, not
+   glass/plate vessels — so the English loanwords are the only
+   available container terms for this counting pattern, not a gap in
+   relay or an incomplete answer.
+
+Resolution: addendum note added to all 40 `chi glass N` / `mi plate N`
+entries (1–20 each) recording both points and the cultural/historical
+rationale. No data values changed — this closes the *reasoning*, not
+the roots. The container-word mass-noun pattern (NV-074/NV-075
+combined) is now fully closed: confirmed generalizes across counts,
+confirmed no-raka, confirmed no native alternative container words.
+
+**Runtime Handoff (Claude B):** notes-only update, no key/value
+changes. `compiled_dict.json` unchanged in content (8239 entries,
+same as post-NV-074); regenerated only to confirm no drift. 203/203
+tests pass; `repository-intelligence.js` exits 0.
+
+This closes the full "10 nouns" mass-noun/classifier investigation
+and the container-word pattern sub-question. Only remaining open item:
+`bol` vehicle-classifier exact scope (motorcycle/train/airplane).
