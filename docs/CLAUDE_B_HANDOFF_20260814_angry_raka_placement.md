@@ -47,5 +47,57 @@ fresh native check, and correct `master_dictionary.json` + propagate to
 regression test at `translationEngine.test.js:569` will need its expected
 string updated to match.
 
+## Update, same day — same pattern found on "always" and "answer"
+
+Project Owner relayed two more direct native messages in-session:
+
+```
+[1:48 am, 14/8/2026] native: always = Pangnan
+[1:48 am, 14/8/2026] native: a dog bit me = Angko achak chika. "answer": "Aganchaka"
+```
+
+This is more than a raka question — it's a **direct contradiction of the
+2026-08-01 corpus-internal SUPERSEDED audit** for two keys, not just one:
+
+- **`always`**: audit tags `master_dictionary.json`'s `Pangnan` entry
+  `SUPERSEDED`, citing `jring·jring`/`pang·na` as the VERIFIED/HIGH
+  replacements — but those two replacement entries carry only a bare
+  `variant/VERIFIED/HIGH` note, no NV-number, no relay citation. Fresh
+  native input now says `always = Pangnan` — the value the audit marked
+  superseded. Claude B had already fixed `phrase_maps.js["always"]` from
+  `Pangnan` → `pang·na` on the strength of the audit tag alone (commit
+  `30c667c`); **that fix has been reverted** (commit below) given the
+  audit tag is now contradicted by better-sourced evidence and the
+  citation asymmetry (thin tag vs. direct dated native quote).
+- **`answer`**: identical pattern. Audit tags `Aganchaka` `SUPERSEDED`,
+  citing `Aganchakani`/`a·gan·chak·a`/`in·chak·a`/`ku·chak·a` as
+  VERIFIED/HIGH (again, bare `variant/VERIFIED/HIGH` tags, no NV-number).
+  Fresh native input says `answer = Aganchaka` — the "superseded" value.
+  Claude B had NOT yet applied the mirror fix here (this key was queued
+  next in the Check F ledger) — left untouched, not closed either way.
+- **`a dog bit me`**: now a *three-way* conflict, not two. Fresh native:
+  `Angko achak chika`. `corrections.json` (from the documented Batch-2
+  native-speaker session, `docs/NEW_SENTENCES_BATCH2_NATIVE.md`):
+  `Achak Angko chikaha`. `master_dictionary.json` (untagged legacy
+  import): `An·tangko achik chanjok`. Check F's engineering-agreement
+  question was already closed for this key (`corrections.json` wins at
+  runtime regardless of which is linguistically correct) — that closure
+  stands. But which Garo form is actually right is now a live 3-way
+  question, not resolved by this handoff.
+
+**Broader concern:** the 2026-08-01 corpus-internal SUPERSEDED audit's
+methodology should probably be spot-checked more broadly — if it got
+`always` and `answer` backwards, other keys it touched may also be
+affected. Not attempting that sweep here (outside Check F engineering
+scope) — flagging for Claude A's awareness alongside the specific fixes.
+
+## Commits referenced
+- `30c667c` — the now-reverted `always` fix (Check F session, based on
+  the audit tag before this contradicting evidence arrived).
+- Revert commit — see git log same day, message references this doc.
+
 ## Status
-Open — flagged, not fixed. Owner input relayed verbatim above.
+Open — flagged, not fixed. `always` reverted to its pre-session state
+pending Claude A's linguistic call. `answer` left untouched (never
+edited). `a dog bit me` Check F closure stands (engineering-scope only);
+linguistic form still open.
