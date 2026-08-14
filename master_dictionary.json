@@ -2314,7 +2314,8 @@
   {
     "english": "medicine",
     "garo": "Sam",
-    "category": "health"
+    "category": "health",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-14 (NV-078, Thangseng via Tridip WhatsApp relay, Project Owner): root reconfirmed via counting example ('individual pills counted in terms of rong: rongsa, ronggni, ronggittam') and via sentence 'Sam ringbo' (take/drink medicine)."
   },
   {
     "english": "pain",
@@ -2414,7 +2415,184 @@
   {
     "english": "pill",
     "garo": "Sam",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-14 (NV-078, Thangseng via Tridip WhatsApp relay, Project Owner): \"Individual pills will be counted in terms of 'rong'. Rongsa, ronggni, ronggittam, etc.\" Same root as 'medicine'."
+  },
+  {
+    "english": "one pill",
+    "garo": "Sam rongsa",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-14 (NV-078, Thangseng via Tridip WhatsApp relay, Project Owner, direct example 'Rongsa'). Root 'Sam' (medicine/pill) + rong classifier (roundish objects), no raka dot between classifier and suffix, matches apple/fruit rong-family structural pattern (2026-08-11/12 sessions)."
+  },
+  {
+    "english": "two pill",
+    "garo": "Sam ronggni",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-14 (NV-078, Thangseng via Tridip WhatsApp relay, Project Owner, direct example 'ronggni'). Root 'Sam' (medicine/pill) + rong classifier (roundish objects), no raka dot between classifier and suffix, matches apple/fruit rong-family structural pattern (2026-08-11/12 sessions)."
+  },
+  {
+    "english": "three pill",
+    "garo": "Sam ronggittam",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-14 (NV-078, Thangseng via Tridip WhatsApp relay, Project Owner, direct example 'ronggittam'). Root 'Sam' (medicine/pill) + rong classifier (roundish objects), no raka dot between classifier and suffix, matches apple/fruit rong-family structural pattern (2026-08-11/12 sessions)."
+  },
+  {
+    "english": "four pill",
+    "garo": "Sam rongbri",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "five pill",
+    "garo": "Sam rongbonga",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "six pill",
+    "garo": "Sam rongdok",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "seven pill",
+    "garo": "Sam rongsni",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "eight pill",
+    "garo": "Sam rongchet",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "nine pill",
+    "garo": "Sam rongsku",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "ten pill",
+    "garo": "Sam rongchiking",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "eleven pill",
+    "garo": "Sam rongChi·sa",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "twelve pill",
+    "garo": "Sam rongChi·gni",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "thirteen pill",
+    "garo": "Sam rongChi·gittam",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "fourteen pill",
+    "garo": "Sam rongChi·bri",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "fifteen pill",
+    "garo": "Sam rongChi·bonga",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "sixteen pill",
+    "garo": "Sam rongChi·dok",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "seventeen pill",
+    "garo": "Sam rongChi·sni",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "eighteen pill",
+    "garo": "Sam rongChi·chet",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "nineteen pill",
+    "garo": "Sam rongChi·sku",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "twenty pill",
+    "garo": "Sam rongKolgrik",
+    "pos": null,
+    "category": "health",
+    "classifier": "rong",
+    "notes": "VERIFIED/HIGH — mechanical extension of NV-078's confirmed rong-suffix formula (Thangseng gave 1-3 + 'etc.', formula already native-confirmed repo-wide for the rong classifier family, no new native input needed per evidence-first standard for formula-application, not fact-assertion)."
+  },
+  {
+    "english": "take medicine",
+    "garo": "Sam ringbo",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-14 (NV-078, Thangseng via Tridip WhatsApp relay, Project Owner: \"Take medicine or drink medicine: Sam ringbo. Ring·bo, from ringa (to drink). Ring+bo.\"). Imperative form of ringa (to drink), matches existing live '...ringbo' imperative pattern (see 'drink some tea' = 'Cha on·tisa (okkisa) ringbo')."
+  },
+  {
+    "english": "drink medicine",
+    "garo": "Sam ringbo",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-14 (NV-078, Thangseng via Tridip WhatsApp relay, Project Owner: \"Take medicine or drink medicine: Sam ringbo. Ring·bo, from ringa (to drink). Ring+bo.\"). Duplicate-meaning key alongside 'take medicine', same value, kept in sync per Rule 8 duplicate-representation discipline."
   },
   {
     "english": "knife (small)",

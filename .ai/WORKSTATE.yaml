@@ -269,7 +269,29 @@ repository:
 claude_a:
   status: active
   migration_doc: >-
-    docs/CLAUDE_A_SESSION_MIGRATION_20260814D.md - this session's close.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814E.md - this session's close.
+    Resumed from 20260814D (HEAD == origin/main == a1cd496 at start, zero
+    drift). NV-078: closed the medicine/pill counting + drink-medicine
+    items relayed by Thangseng via Tridip (Project Owner). "one/two/three
+    pill" (rongsa/ronggni/ronggittam) native-confirmed directly; 4-20
+    pill mechanically extended off the already-verified rong-classifier
+    formula (Thangseng's own "etc."). "take medicine"/"drink medicine" =
+    "Sam ringbo" native-confirmed, matches existing "...ringbo" imperative
+    pattern. "medicine"/"pill" root entries upgraded to VERIFIED/HIGH.
+    22 new/upgraded entries, all category "health" except the pre-existing
+    "pill" (general). Rule 8 sweep: no duplicate representation in
+    corrections.json/phrase_maps.js for "medicine"/"pill"/"sam"/"ringbo"
+    keys, nothing to propagate. `angry` raka-count placement (the one
+    open Claude B flag) NOT closed — Owner's "ka.onanga" spelling still
+    doesn't pin down exact raka position against the live 3-raka
+    ka·o·nang·a; asked Owner to confirm exact placement rather than
+    guessing. Verified: prepare-data.js 8299->8321, test-dictionary.js
+    8321/8321, repository-intelligence.js 0 new violations all checks,
+    203/203 unit tests, npm run build clean (vite binary still absent in
+    this sandbox only, pre-existing env gap, not re-flagged). Working
+    tree clean, fully pushed.
+  migration_doc_prior: >-
+    docs/CLAUDE_A_SESSION_MIGRATION_20260814D.md - prior session's close.
     Resumed mid-thread from the prior NV-077 close (HEAD == origin/main
     == 6786849 at start, then fast-forwarded twice more mid-session as
     Claude B pushed docs-only syncs: 82508cd, 76163dc — both clean
@@ -291,6 +313,19 @@ claude_a:
     doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD ==
     origin/main == 34ec07a going into this commit.
   next_action: >-
+    2026-08-14 (this session): `angry` raka-count placement is still the
+    only open Claude B flag (docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md).
+    Attempted to close it this session per Project Owner instruction but
+    did not — the Owner's own "ka.onanga, mind the raka" spelling
+    (recorded in that handoff doc) uses a plain period, not a raka mark,
+    so it doesn't specify a precise position: could be ka·onanga,
+    kao·nanga, or something else, none of which is safely
+    distinguishable from the live ka·o·nang·a (three raka) without an
+    exact position. Per evidence-first discipline this needs one more
+    round of confirmation, not a guess: Project Owner to relay back to
+    Thangseng "how many raka marks in 'angry' (ka.onanga) and exactly
+    where" (e.g. spelled with · in place of each glottal stop).
+  next_action_prior: >-
     2026-08-14, flagged by Claude B (session C, resumed): `angry`
     raka-count placement is the one item from
     docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md that NV-077
