@@ -203,6 +203,43 @@ history, before any actual work occurs.
    Rebasing and repository verification are mandatory only at session
    resume, not during migration, unless explicitly requested by the
    Project Owner.
+9a. **Migration mode is a bounded, fixed-cost checklist — never an
+   open-ended resync** (Project Owner directive, 2026-08-14). Migration
+   mode is entered on explicit Project Owner instruction (the word
+   "migration" or equivalent), or proactively per Rule 1 if genuine
+   token exhaustion is imminent — either way, once entered, the close
+   sequence is:
+   1. Confirm all in-progress work for this session is already
+      committed (`git status`).
+   2. `git fetch origin`, then attempt a fast-forward-only pull
+      (`git pull --ff-only`).
+   3. **If the fast-forward succeeds** (including the trivial
+      already-up-to-date case): proceed — push this session's commits,
+      verify `git status` clean and HEAD == `origin/main`, update
+      `.ai/WORKSTATE.yaml` (mandatory, see below) and
+      `.ai/SESSION_BOOTSTRAP.md` (only if a new standing rule was
+      established), write the migration document.
+   4. **If the fast-forward fails** (real divergence needing a
+      rebase/merge decision): do NOT attempt to resolve it under
+      migration mode — conflict resolution is exactly the kind of
+      open-ended work Rule 9 already excludes from migration mode, and
+      is also the highest-risk place to run out of tokens mid-merge.
+      Instead: push this session's already-committed work only if it
+      can be pushed without resolving the divergence (e.g. as a
+      separate un-rebased branch tip is not an option in this
+      single-branch workflow, so if push itself is rejected, stop —
+      do not force-push, do not start resolving); state the exact
+      divergence (`git log --oneline <local>..origin/main` and
+      reverse) directly in the migration document as the **first**
+      item the next session's Resume Policy (Rule 10) must handle;
+      still complete the `WORKSTATE.yaml` update and migration doc for
+      everything that *was* committed and verified before the
+      divergence was found.
+   5. This bounds migration-close to a small, fixed number of git
+      operations (one fetch, one fast-forward attempt, one push) —
+      never a rebase/merge-conflict loop — so a session can always
+      reach a clean, documented stopping point regardless of remaining
+      token budget.
 
 This is a standing rule, not a one-off — applies identically whether
 the next session is Claude A, Claude B, or Claude D.
