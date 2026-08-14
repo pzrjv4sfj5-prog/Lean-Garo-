@@ -266,7 +266,7 @@ repository:
     as provisional per Rule 8 and swept in the next session before being
     called fully resolved."
 
-  head: c22ae5a
+  head: 39763a3
   last_updated: "2026-08-14 (Claude B, session close: counting-system
     engineering work from Claude C's independent audit (relayed in chat
     by the Project Owner this session, not committed to the repo as a
@@ -343,21 +343,70 @@ repository:
     translate('twenty students') (plural, no phrase-level entry of its
     own) now correctly falls through to classifier composition but still
     composes from the stale 'Porai·gipa' root -- flagged for Claude A,
-    not engineering's call to resolve.
+    not engineering's call to resolve. Not touched, deliberately, per this
+    resume-mode session's own instruction to do no further investigation:
+    Claude A's separate flag_from_claude_a item below (src/data/
+    phrase_maps.js line 38's stale spaced 'angry' form) -- noted as
+    pending, not actioned.
 
-    Verified: npm run build green end-to-end -- 215/215 unit tests (up
-    from 203), test-dictionary.js 8109/8109 valid, repository-
-    intelligence.js PASSED with 0 NEW violations across all checks (Check
-    F's known-mismatch count dropped 292->289, expected and harmless --
+    Verified at initial session close (commit c22ae5a, now superseded by
+    two clean rebases below): npm run build green end-to-end -- 215/215
+    unit tests (up from 203), test-dictionary.js 8109/8109 valid,
+    repository-intelligence.js PASSED 0 NEW violations across all checks
+    (Check F's known-mismatch count dropped 292->289, expected/harmless --
     some previously-allowlisted mismatches were for keys this session's
-    fix correctly stopped shipping, not a new violation), lint 0
-    errors/warnings, vite build clean. git status clean, HEAD==origin/main,
-    fully pushed. PAT supplied live by Project Owner, used inline in the
-    push URL only, never persisted. Full detail:
-    docs/CLAUDE_B_SESSION_MIGRATION_20260814_E.md."
+    fix correctly stopped shipping), lint 0 errors/warnings, vite build
+    clean.
+
+    POST-CLOSE SYNC (same session, migration mode, no further engineering):
+    two concurrent Claude A pushes landed while resolving/pushing this
+    session's work (8d165f7+5ccb79a: NV-078 medicine/pill counting +
+    angry raka-count closure; then a01d729: angry raka pass 2) --
+    rebased cleanly through both, regenerating compiled_dict.json/
+    compiled_dict_alternates.json/category_index.json fresh via
+    `node prepare-data.js` at each conflict point rather than hand-merging
+    generated JSON (both times byte-identical to a plain rebuild, no
+    manual data reconciliation needed), rebuilding dist/ and re-running
+    the FULL gate after each rebase. Final re-verification against the
+    fully-merged state (commit 39763a3): npm run build green
+    end-to-end -- 215/215 unit tests (unchanged; entry count now
+    8132/8132 in test-dictionary.js, up from 8109, reflecting NV-078's new
+    medicine/pill entries, not this session's own work),
+    repository-intelligence.js PASSED 0 NEW violations (Check F still 289
+    known/0 new), lint clean, vite build clean. git status clean at every
+    step, HEAD==origin/main at push time (39763a3), fully pushed. PAT
+    supplied live by Project Owner, used inline in the push URL only,
+    never persisted. A further two docs-only Claude A commits
+    (56291e4, 1901a56 -- session-close migration doc + a new
+    flag_from_claude_a item, phrase_maps.js 'angry') landed immediately
+    after and were fast-forward-merged with zero conflict; not
+    investigated or actioned this session per explicit instruction to
+    stop and enter migration mode -- left as a pending item, see
+    claude_b.pending_next_session below. Full detail:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260814_E.md (updated to match this
+    final state)."
 
 claude_a:
   status: active
+  next_action: >-
+    2026-08-14 (Claude B, session E, engineering handoff — read this
+    FIRST per Rule 10): 'student''s bare-noun dictionary entry
+    (compiled_dict.json['student'], root 'Porai·gipa') was never updated
+    to NV-073's confirmed 'Chattro' root alongside NV-073's own
+    phrase-level fix ('twenty student' -> 'Chattro sak·Kolgrik'). This is
+    a linguistic gap, not an engineering defect — needs a native-
+    confirmed bare-noun update, same class as the person/student/teacher
+    111-candidate root conflict already open since 2026-08-11/12.
+    Engineering-side context (not itself the fix): two Claude B
+    engineering fixes this session (translationEngine.js exact-phrase-
+    before-classifier precedence; prepare-data.js SUPERSEDED-only-
+    candidate filtering) together mean translate('twenty students')
+    (plural) now falls through to classifier composition *consistently*
+    rather than surfacing an unrelated wrong bulk value, but it still
+    composes from the stale 'Porai·gipa' root since the bare noun itself
+    was never corrected. Full detail:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260814_E.md, section "Flagged, not
+    fixed — Claude A's territory."
   migration_doc: >-
     docs/CLAUDE_A_SESSION_MIGRATION_20260814F.md - this session's close.
     Same session as 20260814E, continued: closed the `angry` raka-count
@@ -2206,6 +2255,19 @@ claude_a:
 
 claude_b:
   status: active
+  pending_next_session: >-
+    2026-08-14 (Claude B, session E migration-mode close). Two items
+    carried forward, neither investigated or actioned this session per
+    explicit instruction to stop and enter migration mode once the
+    counting-system engineering work closed:
+    1) flag_from_claude_a below (src/data/phrase_maps.js line 38's stale
+    spaced 'angry' form, 'Anga ka·o nanga' vs the now-corrected
+    'Ka·onanga') -- Claude B's lane (engine/phrase-map file), needs either
+    a value update or an explicit confirmation that the sentence-internal
+    phrase is deliberately distinct from the standalone adjective.
+    2) The 'student' bare-noun root gap surfaced (not fixed) by this
+    session's own engineering work -- see claude_a.next_action above,
+    this is explicitly Claude A's linguistic call, not Claude B's.
   flag_from_claude_a: >-
     2026-08-14 (Claude A, NV-078 session, pass 2): `angry` raka-count
     placement closed in master_dictionary.json/corrections.json (now
@@ -2219,6 +2281,23 @@ claude_b:
     closing update appended to
     docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md.
   current_task: >-
+    2026-08-14 SESSION CLOSE (session E, migration mode): counting-system
+    engineering work from Claude C's independent audit (relayed live in
+    chat by the Project Owner, not a committed repo file) closed
+    end-to-end -- see the detailed `repository.last_updated` entry above
+    (head 39763a3) for the full technical account of both fixes (runtime-
+    propagation precedence in translationEngine.js; SUPERSEDED-only-
+    candidate filtering in prepare-data.js), the regression tests added,
+    the two clean post-close rebases onto concurrent Claude A NV-078
+    pushes, and full verification detail. This entry is the short
+    pointer; full narrative lives there and in
+    docs/CLAUDE_B_SESSION_MIGRATION_20260814_E.md.
+    STOPPED HERE deliberately: entered migration mode immediately after
+    the engineering work + its own verification was done, per explicit
+    Project Owner instruction not to investigate or fix anything further
+    this session. See pending_next_session above for what's carried
+    forward untouched.
+  prior_current_task: >-
     2026-08-14 SESSION CLOSE (session D): resumed from session C's
     migration doc (checkpoint 6786849, user-pasted filename + PAT),
     verified zero drift. Fixed 3 stale "Not closed" rows in

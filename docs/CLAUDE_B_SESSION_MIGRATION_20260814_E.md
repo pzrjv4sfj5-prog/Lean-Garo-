@@ -1,8 +1,11 @@
-# Claude B Session Migration — 2026-08-14 (session E, session close)
+# Claude B Session Migration — 2026-08-14 (session E, migration-mode final close)
 
 Resumed from `docs/CLAUDE_B_SESSION_MIGRATION_20260814_D.md`
 (checkpoint `ed53f47`, via user-pasted filename reference + PAT).
-Supersedes that doc.
+Supersedes that doc. This version finalized in migration mode after
+two post-close rebases onto concurrent Claude A pushes — see "Post-close
+sync" below for what changed after the engineering work itself was
+already done and verified. **Final pushed commit: `39763a3`.**
 
 ## What was verified at resume
 
@@ -127,7 +130,7 @@ dogs" case, explicit regression guard); unaffected when a key has no
 superseded history at all; `supersededByKey` defaults to `{}` when
 omitted.
 
-### 3. Rebuild + downstream test fix (commit `c22ae5a`)
+### 3. Rebuild + downstream test fix (commit `c22ae5a`, later rewritten — see Post-close sync below)
 
 Ran `node prepare-data.js` then `npm run build` with both fixes
 applied. `compiled_dict.json`/`compiled_dict_alternates.json`/`dist/`
@@ -140,6 +143,48 @@ corpus-internal fabrication (root `'rang'` wrongly reused from
 `'house'`) with no replacement asserted, so it never should have
 shipped. Removed it from that test's do·o-prefix list and gave it its
 own dedicated test asserting it's now correctly held.
+
+## Post-close sync (migration mode, same session, no further engineering)
+
+Two concurrent Claude A pushes landed while resolving/pushing the work
+above: `8d165f7`+`5ccb79a` (NV-078 medicine/pill counting + angry
+raka-count closure), then `a01d729` (angry raka pass 2). Both required
+a `git rebase origin/main`, since the earlier commits above touch the
+same generated files Claude A's sessions also regenerate. Both
+conflicts were **only** in generated JSON
+(`compiled_dict.json`/`compiled_dict_alternates.json`) — resolved by
+regenerating fresh via `node prepare-data.js` at each rebase point
+rather than hand-merging, then re-running the full gate before
+continuing. Both rebases rewrote this session's commit hashes; the
+`f737f14`/`f0453d6`/`c22ae5a` hashes cited above no longer exist on
+`origin/main`'s history (confirmed: `git merge-base --is-ancestor
+c22ae5a origin/main` returns false) — this is expected, ordinary
+rebase behavior per this repo's own established practice, not data
+loss; the content is identical, only the hashes changed. **Final
+commit hashes, as actually pushed:** `6187b2a` (runtime-propagation
+fix), `5ac363f` (SUPERSEDED-only-candidate fix), `cc903d4` (rebuild
+#1), `5da5b16` (session-close docs, itself later amended — see below),
+`3ff50c0`/`39763a3` (further dist rebuilds after the second rebase).
+**This session's true final commit: `39763a3`.**
+
+Two further Claude A commits (`56291e4`, `1901a56` — a session-close
+migration doc plus a new `flag_from_claude_a` item for Claude B,
+`src/data/phrase_maps.js`'s stale "angry" form) landed immediately
+after and were pulled via a clean fast-forward (`git merge --ff-only
+origin/main`, zero conflict, docs-only). **Not investigated or
+actioned** — entering migration mode per explicit instruction to stop
+rather than continuing to chase a moving target. This migration doc
+and `.ai/WORKSTATE.yaml`/`.ai/SESSION_BOOTSTRAP.md` were updated in
+place afterward, in migration mode, purely to correct now-stale
+commit-hash references and entry counts and to record what's pending
+— no code, test, or dictionary content changed after the fast-forward.
+
+Full gate re-verified once more, against the final fully-merged state
+(after both rebases, before the trailing fast-forward, and confirmed
+unaffected by the fast-forward since it touched no shared files):
+215/215 unit tests (unchanged from before the rebases), 0 NEW
+`repository-intelligence.js` violations, lint clean, vite build clean.
+See the corrected counts in Verification below.
 
 ## Flagged, not fixed — Claude A's territory
 
@@ -155,52 +200,116 @@ gap, not an engineering defect — needs a native-confirmed bare-noun
 update from Claude A, same class of item as the person/student/
 teacher 111-candidate root conflict noted open since 2026-08-11/12.
 
-## Verification
+## Verification (per Governance Rules 7–8: scope stated explicitly, not just result)
 
-- `npm run build`: **green end-to-end.**
-  - `node prepare-data.js`: 8109 unique entries, 190 held
-    (SUPERSEDED-only), 1019 alternates, category index 3907.
-  - `node test-dictionary.js`: 8109/8109 valid.
-  - `node repository-intelligence.js`: PASSED, **0 NEW violations**
-    across all checks (A raka-locality 11 report-only unchanged; B
-    7 known/0 new; C 1533 known/0 new; D 2014 checked/0 problems; E
-    115 known/0 new; F 289 known/0 new — down from 292 known at
-    session D's resume, expected and harmless: some previously-
-    allowlisted Check F mismatches were for keys this session's fix
-    correctly stopped shipping from `compiled_dict.json`, so they
-    can no longer be found as mismatches at all, not silently
-    dropped from the allowlist).
-  - `node --test tests/unit/*.test.js`: **215/215** (up from 206 at
-    resume — 8 new tests, 1 pre-existing case widened, 1 pre-existing
-    case's assertion set corrected as described above).
-  - `npm run lint`: 0 errors, 0 warnings.
-  - `vite build`: clean.
+**What WAS verified, this session, against the final pushed state
+(`39763a3`):**
+- `node prepare-data.js`: 8132 unique entries (8109 before Claude A's
+  concurrent NV-078 medicine/pill additions were rebased in; the delta
+  is entirely NV-078 content, not this session's own work), 190 held
+  (SUPERSEDED-only, this session's own fix — count unchanged by the
+  rebases since no rebased-in content touched the held-key set), 1019
+  alternates, category index 3930.
+- `node test-dictionary.js`: **8132/8132** valid.
+- `node repository-intelligence.js`: PASSED, **0 NEW violations**
+  across all checks (A raka-locality 11 report-only unchanged; B 7
+  known/0 new; C 1533 known/0 new; D 2014 checked/0 problems; E 115
+  known/0 new; F 289 known/0 new — down from 292 known at session D's
+  resume, expected and harmless: some previously-allowlisted Check F
+  mismatches were for keys this session's fix correctly stopped
+  shipping from `compiled_dict.json`, so they can no longer be found
+  as mismatches at all, not silently dropped from the allowlist).
+- `node --test tests/unit/*.test.js`: **215/215** (up from 206 at
+  resume — 8 new tests from this session's own fixes; 1 pre-existing
+  case widened, 1 pre-existing case's assertion set corrected, both
+  described above; unaffected by either rebase — Claude A's own test
+  edits this session were to unrelated cases, confirmed by diff
+  before rebasing).
+- `npm run lint`: 0 errors, 0 warnings — re-run after each rebase.
+- `vite build`: clean — re-run after each rebase, `dist/` committed
+  fresh each time (asset hashes change because the underlying
+  `compiled_dict.json` content changed; this is expected and not
+  itself evidence of a problem).
+- Both rebase conflicts were confirmed to be **exclusively** in
+  generated files (`compiled_dict.json`/`compiled_dict_alternates.json`)
+  — checked via `git status --short` immediately after each conflict,
+  not assumed.
+- `docs/SUPERSEDED_ONLY_KEYS.md` spot-checked post-rebase: `'two cars'`
+  and `'twenty students'` still present and correctly held, confirming
+  the fix survived both rebases intact.
 - No `master_dictionary.json`/`garo_dictionary.json`/
-  `corrections.json` edits this session — all changes are pure
-  engineering (`translationEngine.js`, `prepare-data.js`, generated
-  `compiled_dict*.json`/`dist/`, test files, docs).
-- `git status` clean, `HEAD == origin/main` at every commit, fully
-  pushed. PAT supplied live by the Project Owner, used inline in the
-  push URL only, never persisted to git config.
+  `corrections.json` edits by Claude B this session — all Claude-B-side
+  changes are pure engineering (`translationEngine.js`,
+  `prepare-data.js`, generated `compiled_dict*.json`/`dist/`, test
+  files, docs).
+- `git fetch origin` run before every push attempt (three times total
+  this session); `git status` clean and `HEAD == origin/main` (or a
+  clean fast-forward ahead of it) confirmed at each of those points and
+  again at final migration-mode close.
 
-## Commits this session
+**What was NOT verified / explicitly out of scope this session:**
+- The two items Claude A's own concurrent commits introduced or
+  flagged (NV-078 medicine/pill content; the new `phrase_maps.js`
+  "angry" flag) were **not** independently reviewed for linguistic
+  correctness — only confirmed not to conflict with or break this
+  session's own engineering changes (full gate green after each
+  rebase). Reviewing NV-078's content, or acting on the
+  `phrase_maps.js` flag, is out of scope for this session per the
+  explicit instruction to stop and enter migration mode.
+- The `student` bare-noun root gap (this session's own finding) was
+  **flagged, not resolved** — no attempt was made to guess or derive
+  a replacement value; that is explicitly left for Claude A, see
+  below.
+- A full Rule-8-style duplicate-representation sweep (checking
+  `corrections.json`/`phrase_maps.js`/`category_index.json` for any
+  other place the `'twenty students'`/`'two cars'`-class fix might
+  need to propagate) was **not** performed this session — the fix
+  operates at the `prepare-data.js` compile-pipeline level, upstream
+  of all of those derived tables, so by construction none of them can
+  independently re-introduce a filtered SUPERSEDED-only value; this
+  reasoning was checked against the pipeline's actual data flow but
+  not verified by an exhaustive per-table audit. Noted as provisional
+  in that narrow sense, not because a gap is suspected.
+- No new native-speaker input was sought, relayed, or applied this
+  session — consistent with "pure engineering" scope stated above.
 
-1. `f737f14` — runtime-propagation fix + tests (§3.5)
-2. `f0453d6` — SUPERSEDED-only-candidate pipeline fix + tests (§3)
-3. `c22ae5a` — rebuild (`compiled_dict*`/`dist`) + rc037 test update
-4. (this commit) — `docs/SUPERSEDED_ONLY_KEYS.md` was created by
-   commit 3 above; this commit closes the session:
-   `.ai/WORKSTATE.yaml`, `.ai/SESSION_BOOTSTRAP.md`, this migration
-   doc.
+## Commits this session (final hashes, post-rebase, as pushed to `origin/main`)
 
-## Next unvisited item
+1. `6187b2a` — runtime-propagation fix + tests (§3.5)
+2. `5ac363f` — SUPERSEDED-only-candidate pipeline fix + tests (§3)
+3. `cc903d4` — rebuild (`compiled_dict*`/`dist`) + rc037 test update
+4. `5da5b16` — session close: `.ai/WORKSTATE.yaml`, `.ai/
+   SESSION_BOOTSTRAP.md`, this migration doc (initial version)
+5. `3ff50c0` — dist rebuild after first post-close rebase (NV-078)
+6. `39763a3` — dist rebuild after second post-close rebase (angry raka
+   pass 2) — **this session's true final commit**
+7. (this commit) — migration-mode finalization: corrected stale
+   commit-hash references and entry counts in this doc,
+   `.ai/WORKSTATE.yaml`, `.ai/SESSION_BOOTSTRAP.md` to match the
+   actually-pushed state; added explicit pending-next-session notes.
+   No code/test/dictionary content changed.
 
-None from this session's task list — both engineering findings
-closed, tested, and verified. Standing open items unchanged from
-session D and earlier, all Claude A's territory: `student`'s
-bare-noun root (this session's flagged item, above); house/rice/
-water/food counting (~76 keys, need native input); person/student/
-teacher 111-candidate root conflict; `always`/`answer`/`a dog bit
-me`/`are you sleeping` (evidence-only, waiting on Claude A per
-session D); `angry` raka-count placement (re-flagged session D, still
-open).
+Two trailing Claude A commits (`56291e4`, `1901a56`) sit on
+`origin/main` on top of `39763a3` as of migration-mode close —
+pulled clean via fast-forward, not authored by this session, not
+actioned.
+
+## Pending for next session (nothing further investigated past this point)
+
+1. **`src/data/phrase_maps.js` line 38** — stale spaced "angry" form
+   (`'Anga ka·o nanga'`), superseded by NV-078's corrected
+   `'Ka·onanga'` in `master_dictionary.json`/`corrections.json` but not
+   yet updated in this engine-layer file. Claude B's lane. See
+   `.ai/WORKSTATE.yaml`'s `claude_b.flag_from_claude_a` and
+   `claude_b.pending_next_session`, and
+   `docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md`'s closing
+   update.
+2. **`student` bare-noun root** — see "Flagged, not fixed" above.
+   Claude A's lane. `.ai/WORKSTATE.yaml`'s `claude_a.next_action` now
+   carries this at the top of that block per Rule 10.
+3. Standing open items, unchanged from session D and earlier, not
+   re-investigated this session: house/rice/water/food counting (~76
+   keys, need native input); person/student/teacher 111-candidate root
+   conflict; `always`/`answer`/`a dog bit me`/`are you sleeping`
+   (evidence-only, waiting on Claude A); the P2/P3
+   `phrase_maps.js`/`RC-CANDIDATE-038` backlog noted since 2026-08-07/09.
