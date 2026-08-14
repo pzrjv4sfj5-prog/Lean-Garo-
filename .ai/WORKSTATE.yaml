@@ -268,6 +268,20 @@ repository:
 
 claude_a:
   status: active
+  next_action: >-
+    2026-08-14, flagged by Claude B (session C, resumed): `angry`
+    raka-count placement is the one item from
+    docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md that NV-077
+    explicitly did not address (per NV-077's own commit message) — still
+    open, confirmed still open by direct repo read this session
+    (master_dictionary.json's ka·o·nang·a still three raka marks,
+    corrections.json/translationEngine.test.js:569 still mirror it,
+    Owner's flagged ka.onanga spelling still unmatched). See that doc's
+    2026-08-14 update section for full status (the other three items in
+    the same doc are now closed via NV-077, this is the only one left).
+    Needs the NV-054 native-validation channel, not an engineering fix —
+    Claude B has no new information on it, just re-flagging so it isn't
+    lost now that the doc's other items have closed.
   migration_doc: >-
     docs/CLAUDE_A_SESSION_MIGRATION_20260814C.md - this session's close.
     Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260814B.md (HEAD ==

@@ -163,3 +163,33 @@ claim against original native sourcing before applying — these chat
 relays are not, on their own, sufficient provenance for this repo's
 citation discipline, the same standard the audit itself is being held to
 in this doc.
+
+## Update, 2026-08-14 (Claude B, session C / resumed session) — status for Claude A to sync
+
+**Three of the four evidence items above are now CLOSED.** Claude A's
+own commit `d28882b` ("NV-077: close always/answer/a dog bit me/are you
+sleeping") applied `always`, `answer`, `a dog bit me`, and `are you
+sleeping` through the proper channel, citing this doc directly. Detail
+in `docs/CLAUDE_B_SESSION_MIGRATION_20260814_C.md` and now reflected in
+`docs/CHECK_F_GAP_REPORT_20260813.md`'s per-key ledger rows (updated
+this session, commit `82508cd`). One propagation gap was found and
+fixed on the `a dog bit me` sibling keys (`dog bit me`/`the dog bit
+me` in `corrections.json`) — pure propagation of the already-committed
+value, not a new linguistic call, logged in the same migration doc.
+
+**Still open — the actual subject of this doc's title, NOT addressed by
+NV-077:** `angry` raka-count placement. NV-077's own commit message
+says so explicitly ("angry raka-count question from the same handoff
+doc NOT addressed, still open"). Confirmed still open by direct repo
+read this session — `master_dictionary.json`'s `ka·o·nang·a` (three
+raka marks, NV-054) is unchanged, `corrections.json["angry"]` still
+mirrors it, `translationEngine.test.js:569` still locks in the
+three-raka form. The Owner's flagged spelling (`ka.onanga`, "mind the
+raka") still doesn't match any live entry on raka count. Everything
+in the "Why I'm not editing this myself" / "What I checked" / "Suggested
+next step" sections above still stands unchanged — this is a linguistic
+call needing the NV-054 native-validation channel, not an engineering
+fix, and Claude B has no new information on it since the original
+flag. Re-flagging here so it doesn't get lost now that the other three
+items in this doc have closed and might make the doc look resolved at
+a glance.
