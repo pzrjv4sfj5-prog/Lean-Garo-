@@ -2046,6 +2046,33 @@ claude_a:
 claude_b:
   status: active
   current_task: >-
+    2026-08-14 SESSION CLOSE (session D): resumed from session C's
+    migration doc (checkpoint 6786849, user-pasted filename + PAT),
+    verified zero drift. Fixed 3 stale "Not closed" rows in
+    docs/CHECK_F_GAP_REPORT_20260813.md (always/answer/a dog bit me/are
+    you sleeping, closed last session via NV-077 but ledger not updated)
+    -- caught and corrected a drafting error before committing (the
+    "are you sleeping" corrections.json value already matched, wrongly
+    flagged as unconfirmed in first draft). Re-flagged `angry`
+    raka-count placement for Claude A (confirmed still open, NV-077
+    explicitly didn't touch it) -- appended status update to the
+    original handoff doc, added a next_action pointer at the TOP of
+    claude_a's WORKSTATE block per Rule 10. Fixed a real bug from
+    Claude C's independent read-only audit (pasted by user, HEAD
+    73b7a8f): scripts/audit-counting-phrases.mjs had its files array in
+    the wrong order, letting garo_dictionary.json's untagged legacy
+    values silently overwrite master_dictionary.json's VERIFIED values
+    in the script's own bare-noun lookup (concrete instance: pen=kolom
+    overwritten by pen=Pen, producing bogus candidates). Swapped the
+    order, extracted the merge logic into an exported/injectable
+    function, added 3 regression tests (206/206, was 203/203),
+    regenerated docs/COUNTING_PHRASE_AUDIT_20260810.md (368 mismatches/
+    7 categories, corrects both the stale committed 253 and Claude C's
+    own bug-affected 367). Hit real divergence pushing (Claude A's
+    concurrent a1cd496, no file overlap) -- clean rebase, gate re-run
+    green, pushed. Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260814_D.md
+    (supersedes _C.md).
+  prior_current_task: >-
     2026-08-14 SESSION CLOSE (session C): the 4-key evidence handoff
     (docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md) was
     resolved by Claude A's own commit (d28882b, NV-077) mid-session --
