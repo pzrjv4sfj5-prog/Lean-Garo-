@@ -6,19 +6,42 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 function normalizeFile(filePath) {
-  // Returns { [key]: {v: string, isVariant: boolean}[] } — ALL values seen
-  // for each key, in file order, not just the last one, tagged with
+  // Returns { normalized, superseded }.
+  // normalized: { [key]: {v: string, isVariant: boolean}[] } — ALL values
+  // seen for each key, in file order, not just the last one, tagged with
   // whether the source entry's `notes` field was explicitly marked as a
   // register/loanword "variant" (master_dictionary.json only — other
   // sources have no notes field, so isVariant is always false for them).
   // Previously this silently overwrote earlier values on key collision,
   // the root mechanism behind every duplicate-key bug found this session
   // (eat/Eat, current/Current, good/Good, etc.).
-  if (!fs.existsSync(filePath)) return {};
+  // superseded: { [key]: Set<string> } — garo VALUES (not entries) that
+  // this file explicitly marked SUPERSEDED for that key, kept around
+  // (2026-08-14, Claude B, per Claude C's audit §3/finalized in
+  // COUNTING_PHRASE_AUDIT follow-up) so finalizeDictionary can recognize
+  // the SAME wrong value resurfacing untagged from a source file that has
+  // no `notes` field at all (garo_dictionary.json et al can never carry a
+  // SUPERSEDED tag themselves — see the "twenty students" case: master
+  // marks "chi chi chik·gni" SUPERSEDED for that key, but
+  // garo_dictionary.json independently duplicates the literal same wrong
+  // string, untagged, and previously shipped anyway once master's own
+  // (only) candidate was filtered out). Only master_dictionary.json has a
+  // `notes` field so only it ever populates this, but the return shape is
+  // generic in case another source gains notes later.
+  if (!fs.existsSync(filePath)) return { normalized: {}, superseded: {} };
   try {
     const raw = fs.readFileSync(filePath, 'utf8');
     const parsed = JSON.parse(raw);
     const normalized = {};
+    const superseded = {};
+
+    const addSuperseded = function(key, value) {
+      const k = key.trim().toLowerCase();
+      const v = String(value).trim();
+      if (!k || !v) return;
+      if (!superseded[k]) superseded[k] = new Set();
+      superseded[k].add(v);
+    };
 
     const addValue = function(key, value, isVariant = false, isVerified = false) {
       const k = key.trim().toLowerCase();
@@ -68,7 +91,10 @@ function normalizeFile(filePath) {
         // never sees a SUPERSEDED candidate, with no new special-case
         // logic needed in pickPrimary itself.
         const isSuperseded = /^superseded\b/i.test(notes);
-        if (isSuperseded) return;
+        if (isSuperseded) {
+          if (eng) addSuperseded(eng, garo);
+          return;
+        }
         if (eng) addValue(eng, garo, isVariant, isVerified);
       });
     } else if (typeof parsed === 'object' && parsed !== null) {
@@ -103,10 +129,10 @@ function normalizeFile(filePath) {
         }
       });
     }
-    return normalized;
+    return { normalized, superseded };
   } catch (e) {
     console.error(`Error reading ${filePath}:`, e.message);
-    return {};
+    return { normalized: {}, superseded: {} };
   }
 }
 
@@ -263,16 +289,58 @@ function pickPrimary(entries, key) {
 // dictionary file. Behavior is identical to what main() ran inline before
 // this refactor — no logic changed here beyond what's documented at the
 // grammarOverrides-skip site below.
-function finalizeDictionary(mergedValues, grammarOverrides) {
+function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}) {
   const finalized = {};
   const alternates = {};
   const verifiedKeys = new Set();
+  // Keys where every surviving candidate turned out to be a SUPERSEDED
+  // value re-appearing untagged from a non-master source (see
+  // normalizeFile's `superseded` return above). Reported, not shipped.
+  const heldSupersededOnly = {};
 
   Object.keys(mergedValues).forEach(key => {
+    const supersededValues = supersededByKey[key];
     const cleanedEntries = mergedValues[key]
       .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, isVerified: e.isVerified, rawKey: e.rawKey, source: e.source }))
-      .filter(e => Boolean(e.v));
-    if (!cleanedEntries.length) return;
+      .filter(e => Boolean(e.v))
+      // 2026-08-14, Claude B (per Claude C's audit §3 / the "twenty
+      // students" case): a candidate whose value is byte-identical to a
+      // value master_dictionary.json explicitly marked SUPERSEDED for
+      // this SAME key is the same known-wrong content resurfacing from a
+      // source file that has no `notes` field to tag it with (e.g.
+      // garo_dictionary.json). Master already made the call that this
+      // exact string is wrong for this key; a different file agreeing by
+      // coincidence isn't a second opinion, it's the same stale value.
+      // Filtering it here, after cleanRakka normalization (so trivial
+      // whitespace/raka-spacing differences don't defeat the match),
+      // means pickPrimary and isRealCaseCollision downstream never see a
+      // superseded-tainted candidate, without needing new special-case
+      // logic in either of them.
+      //
+      // Scoped to source !== 2 (not master) only — see "two dogs":
+      // master_dictionary.json can legitimately hold a stale SUPERSEDED
+      // row and a separate, still-live VERIFIED/HIGH row that happen to
+      // share the exact same garo value (the SUPERSEDED note there flags
+      // a *different* prior contradiction already resolved, not this
+      // value itself). The merge step above (main()) already collapses
+      // same-value duplicates into one entry and upgrades its `source` to
+      // 2 whenever master re-lists that value non-superseded, so an
+      // entry that survives here with source === 2 is master's own
+      // current, live word on the matter and must not be second-guessed
+      // by its own stale sibling row's note.
+      .filter(e => !(supersededValues && supersededValues.has(e.v) && e.source !== 2));
+    if (!cleanedEntries.length) {
+      if (supersededValues && supersededValues.size) {
+        // Every candidate for this key was either absent or itself a
+        // SUPERSEDED value — nothing safe to ship. Record for the
+        // held-keys report instead of silently dropping (a plain
+        // `return` here would look identical to "this key was never
+        // populated at all", losing the distinction that matters for
+        // follow-up native review).
+        heldSupersededOnly[key] = [...supersededValues];
+      }
+      return;
+    }
     const { value: primary, verifiedSelection } = pickPrimary(cleanedEntries, key);
     finalized[key] = primary;
     if (verifiedSelection) verifiedKeys.add(key);
@@ -301,15 +369,26 @@ function finalizeDictionary(mergedValues, grammarOverrides) {
     delete alternates[key];
   });
 
-  return { finalized, alternates };
+  return { finalized, alternates, heldSupersededOnly };
 }
 
 function main() {
   console.log('Compiling and sanitizing Garo dictionary records...');
 
-  const dict1 = normalizeFile(path.join(__dirname, 'garo_dictionary.json'));
-  const dict2 = normalizeFile(path.join(__dirname, 'garo_dictionary (2).json'));
-  const dict3 = normalizeFile(path.join(__dirname, 'master_dictionary.json'));
+  const { normalized: dict1, superseded: superseded1 } = normalizeFile(path.join(__dirname, 'garo_dictionary.json'));
+  const { normalized: dict2, superseded: superseded2 } = normalizeFile(path.join(__dirname, 'garo_dictionary (2).json'));
+  const { normalized: dict3, superseded: superseded3 } = normalizeFile(path.join(__dirname, 'master_dictionary.json'));
+
+  // Merge superseded-value sets across all three sources (in practice only
+  // master_dictionary.json ever populates this, since it's the only file
+  // with a `notes` field — see normalizeFile).
+  const supersededByKey = {};
+  [superseded1, superseded2, superseded3].forEach(supersededMap => {
+    Object.entries(supersededMap).forEach(([key, values]) => {
+      if (!supersededByKey[key]) supersededByKey[key] = new Set();
+      values.forEach(v => supersededByKey[key].add(v));
+    });
+  });
 
   // RC-CANDIDATE-036: tag each entry with its source dict index (2 =
   // master_dictionary.json) so pickPrimary can give master's declared
@@ -387,7 +466,7 @@ function main() {
     'smile': 'Ka·dingsmita'
   };
 
-  const { finalized, alternates } = finalizeDictionary(mergedValues, grammarOverrides);
+  const { finalized, alternates, heldSupersededOnly } = finalizeDictionary(mergedValues, grammarOverrides, supersededByKey);
 
   // RULE-040: bare "right" is a genuine 3-way homonymy split (direction /
   // matching / correct), not a single headword with a best default — every
@@ -460,6 +539,33 @@ function main() {
 
   console.log(`Success: Compiled ${Object.keys(finalized).length} unique entries into src/compiled_dict.json`);
   console.log(`Alternates: ${Object.keys(alternates).length} entries have 2+ known Garo variants -> src/compiled_dict_alternates.json`);
+
+  const heldKeys = Object.keys(heldSupersededOnly);
+  if (heldKeys.length) {
+    console.log(`Held (not shipped — SUPERSEDED-only candidates): ${heldKeys.length} key(s), see docs/SUPERSEDED_ONLY_KEYS.md`);
+    const reportLines = [
+      '# Superseded-only keys — held from compiled_dict.json',
+      '',
+      `Auto-generated by prepare-data.js. Regenerated on every build; do not`,
+      `hand-edit. ${heldKeys.length} key(s) currently held.`,
+      '',
+      'Every candidate value collected for each key below was either explicitly',
+      'marked `SUPERSEDED` in master_dictionary.json, or byte-identical to a',
+      'value marked `SUPERSEDED` for that same key (i.e. the same known-wrong',
+      'string resurfacing untagged from a source file with no `notes` field,',
+      'such as garo_dictionary.json). No candidate was safe to ship, so the key',
+      'is absent from compiled_dict.json / compiled_dict_alternates.json rather',
+      'than shipping a known-wrong value. Needs a native-confirmed replacement',
+      '(master_dictionary.json entry, non-SUPERSEDED) before it will compile.',
+      '',
+      ...heldKeys.sort().map(key => `- \`${key}\`: superseded value(s) — ${heldSupersededOnly[key].map(v => `\`${v}\``).join(', ')}`),
+      '',
+    ];
+    fs.writeFileSync(path.join(__dirname, 'docs', 'SUPERSEDED_ONLY_KEYS.md'), reportLines.join('\n'), 'utf8');
+  } else {
+    const staleReportPath = path.join(__dirname, 'docs', 'SUPERSEDED_ONLY_KEYS.md');
+    if (fs.existsSync(staleReportPath)) fs.unlinkSync(staleReportPath);
+  }
 
   const masterPath = path.join(__dirname, 'master_dictionary.json');
   if (fs.existsSync(masterPath)) {
