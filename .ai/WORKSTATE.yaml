@@ -479,23 +479,23 @@ repository:
 claude_a:
   status: active
   next_action: >-
+    2026-08-15C (this session's close): no open native-validation item,
+    no queued task. Prior queued item (2026-08-15B, below) is CLOSED —
+    see migration_doc.
+  next_action_prior_3: >-
     2026-08-15B (queued by Claude C's follow-up audit,
-    docs/CLAUDE_C_AUDIT_20260815B.md — DO THIS FIRST): tag
-    master_dictionary.json's "answer"->"a·gan·chak·a" row SUPERSEDED,
-    citing NV-077 (which already superseded it linguistically but the
-    row was never tagged). Pure hygiene, no native input needed, single-
-    file change, same exact pattern as every SUPERSEDED-tagging fix from
-    the 2026-08-15 session below. Currently masked at runtime by an
-    unrelated corrections.json/phrase_maps.js override (zero live user-
-    facing exposure), but tagging it correctly is what lets a future
-    mechanical resync pass (like this session's 85-key one) treat it
-    correctly instead of by accident. After tagging: full gate
-    (prepare-data.js / test-dictionary.js / repository-intelligence.js /
-    npm test / scripts/runtime-error-sweep.mjs) — note tagging this row
-    SUPERSEDED will expose a pre-existing pickPrimary 2-way VERIFIED tie
-    (Aganchaka/Aganchakani) in compiled_dict.json's "answer" key; that
-    tie-break is Claude B's territory, not something to fix here — just
-    confirm the sweep still passes and hand off if the value changes.
+    docs/CLAUDE_C_AUDIT_20260815B.md — DONE THIS SESSION, see
+    migration_doc): tagged master_dictionary.json's
+    "answer"->"a·gan·chak·a" row SUPERSEDED, citing NV-077. Pure
+    hygiene, single-file change. Full gate + runtime sweep re-verified
+    after — 0 new violations all checks, 215/215 tests, 14532/14532
+    runtime-sweep calls clean. Note: tagging this row SUPERSEDED did
+    NOT surface a new Check C conflict this run (compiled_dict.json's
+    "answer" already resolves to "ku·chak·a", a different candidate
+    than the Aganchaka/Aganchakani tie the queued note anticipated) —
+    the pickPrimary tie-break class itself, if it exists elsewhere for
+    this key, remains Claude B's territory, not re-investigated here
+    per one-task-per-session discipline.
   next_action_prior_2: >-
     2026-08-15 (this session's close): no open native-validation item.
     ENGINEERING HANDOFF for Claude B, new this session (not the
@@ -535,7 +535,26 @@ claude_a:
     bulk value, but it still composed from the stale 'Porai·gipa' root
     until this session's fix.
   migration_doc: >-
-    docs/CLAUDE_A_SESSION_MIGRATION_20260815.md - this session's close.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260815C.md - this session's close.
+    Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260815.md, HEAD ==
+    origin/main == ef8a742 at start (3 commits ahead of that doc's
+    edf5837 checkpoint — all Claude B docs-only session-close commits,
+    QA-verification of Claude C's audits, zero file overlap, already
+    reflected in this WORKSTATE). One task: tagged
+    master_dictionary.json's "answer"->"a·gan·chak·a" row SUPERSEDED,
+    citing NV-077 (the queued item from the prior session's close).
+    Single-line, single-file change. Verified: prepare-data.js 8132
+    entries (unchanged, values-only edit), test-dictionary.js
+    8132/8132, repository-intelligence.js 0 new violations all checks
+    (no new Check C conflict surfaced — compiled_dict.json's "answer"
+    resolves to "ku·chak·a", not the Aganchaka/Aganchakani tie the
+    prior session's note anticipated; if that tie-break exists
+    elsewhere it's unchanged by this fix and remains Claude B's
+    territory), 215/215 unit tests, runtime-error-sweep.mjs 14532/14532
+    calls 0 errors. Working tree clean, fully pushed. No open
+    native-validation items, no queued task.
+  migration_doc_prior: >-
+    docs/CLAUDE_A_SESSION_MIGRATION_20260815.md - prior session's close.
     Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260814F.md, HEAD ==
     origin/main == 6ce3785 at start, zero drift beyond one reviewed
     docs-only Claude B commit already on top of the pasted doc's
