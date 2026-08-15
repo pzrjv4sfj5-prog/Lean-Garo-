@@ -132,20 +132,64 @@ Session-supplied PAT used inline in clone/push remote URLs only, never
 persisted to git config, commit content, or any tracked file. Stripped
 from the remote URL immediately after each push.
 
-## Repository status at close
-- HEAD: `1ccac8c`
+## Post-close addendum (same session, "start migration now" instruction)
+Before formally closing, ran a dedicated runtime-error sweep
+(`scripts/runtime-error-sweep.mjs`, committed) distinct from the
+correctness checks above: 14,532 `translate()` calls across every
+compiled_dict.json key, naive plurals, a 500-key counted-noun sample,
+~30 structural edge cases (empty/whitespace/punctuation/numerals/very
+long input/unicode/injection-shaped/malformed counts), 7 non-string
+type-safety inputs, plus the full `getAllVocabulary`/`getCategories`/
+`getByCategory`/`getAlternates` surface. **Zero unhandled exceptions,
+zero undefined/null returns.**
+
+While closing, Claude C landed a follow-up audit
+(`docs/CLAUDE_C_AUDIT_20260815B.md`, commit `96de20d`, docs/WORKSTATE-
+only, `claude_c:` block only — no overlap with this session's changes)
+independently verifying this session's two fixes live (student +
+85-key resync, both confirmed 0 remaining candidates on re-run) and
+surfacing one new small item: `master_dictionary.json`'s
+`"answer"`→`"a·gan·chak·a"` row is stale UNVERIFIED content that was
+never explicitly marked SUPERSEDED despite NV-077 having superseded it
+— currently masked at runtime by an unrelated `corrections.json`/
+`phrase_maps.js` override, so zero live exposure, but fragile if that
+override is ever mechanically resynced away (would surface a 2-way
+`pickPrimary` VERIFIED tie between `Aganchaka`/`Aganchakani` that falls
+through to last-write-wins, Claude B's territory, not this session's).
+
+**Deliberately not actioned this session** — pure hygiene, no native
+input needed, but new work belongs in migration mode's queue, not
+squeezed in during close: tagging that `answer` row SUPERSEDED with an
+NV-077 citation is the queued first item for the next Claude A session.
+Rebased cleanly onto this commit (zero file overlap), full gate +
+runtime sweep re-verified after.
+
+## Repository status at close (final, supersedes the section above)
+- HEAD: `edf5837`
 - `origin/main`: matches HEAD exactly (verified via `git fetch` +
   `git rev-parse` both sides post-push)
 - `git status`: clean, no uncommitted changes, no local-only commits
-- `WORKSTATE.yaml`: updated this session (see below, committed alongside
-  this doc)
+- `WORKSTATE.yaml`: updated by Claude A this session (claude_a block);
+  Claude C's `96de20d` update to the `claude_c` block also present,
+  rebased in cleanly
 - `SESSION_BOOTSTRAP.md`: unchanged by Claude A this session
-- Migration doc: this document, complete
-- Native-validation/blocker status: no open native-validation items
-  from this session. New engineering handoff for Claude B: the `work`/
-  `answer`/+7 more `compiled_dict.json` values resolving to
-  unverified/OCR-flagged content instead of a real VERIFIED candidate
-  (§3 above) — needs the `pickPrimary`/master-internal-duplicate
-  precedence class of fix, not a data resync. Full list reproducible via
-  `node scripts/resync-stale-overrides.mjs` (dry-run, no `--apply`) —
-  see its `skip_no_verified_match` bucket.
+- Migration doc: this document, complete (this addendum is the final
+  word; the "Repository status at close" section above it reflects an
+  intermediate push, superseded here)
+- Runtime error sweep: PASSED, 0 errors, 14,532 calls
+  (`scripts/runtime-error-sweep.mjs`, reusable for future sessions)
+- Native-validation/blocker status: no open native-validation items.
+  Two engineering handoffs queued for Claude B (unchanged from above):
+  the 9-key `pickPrimary` no-verified-candidate defect, and (once
+  Claude A tags `answer` SUPERSEDED) the `Aganchaka`/`Aganchakani`
+  2-way tie it will then expose.
+
+## Exact next step for the next Claude A session
+1. Resume per Rule 10 (fetch/verify HEAD/pull-if-needed/confirm clean/
+   read WORKSTATE+BOOTSTRAP+this doc).
+2. Tag `master_dictionary.json`'s `"answer"`→`"a·gan·chak·a"` row
+   SUPERSEDED, citing NV-077 — pure hygiene, no native input, single-file
+   change, matches the exact pattern of every prior SUPERSEDED-tagging
+   fix this session. Full gate + runtime sweep after.
+3. One-task-per-session: stop there unless the Project Owner asks for
+   more.
