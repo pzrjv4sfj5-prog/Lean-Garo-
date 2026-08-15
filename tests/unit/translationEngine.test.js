@@ -1031,15 +1031,28 @@ test('isVerified anchoring: a SUPERSEDED legacy entry ("type") is no longer forc
 // washes" returned compiled_dict.json's "Su·gala" instead of
 // phrase_maps.js's "Su·srong·a" (what bare "wash" correctly returns) via
 // findVerbForm on the main grammar-assembly path, not just the fallback.
+//
+// UPDATED 2026-08-15 (Claude A, mechanical stale-override resync per
+// docs/CLAUDE_C_AUDIT_20260815.md §3.4): "food" was itself one of the
+// resynced words -- phrase_maps.js's "food" was the SUPERSEDED value
+// "Mi", now corrected to VERIFIED "al·a", which happens to be identical
+// to compiled_dict.json's own value. That makes "food" no longer
+// demonstrate override-precedence (both layers now agree), so the
+// mechanism check below was moved to "quick"/"Tarkbo!" (phrase_maps-only,
+// an intentional exclamation-marked imperative variant, not shadowed by
+// a corrections.json entry the way "hurry" is) vs. compiled_dict's
+// punctuation-free "Tarkbo" -- a genuine, stable divergence, same
+// precedent as the RC-CANDIDATE-010/012 test-value swaps after a real
+// correction landed.
 test('lookupGaro() consults phrase_maps.js: direct call', async () => {
   const { lookupGaro } = await import('../../src/lookupEngine.js');
-  assert.equal(lookupGaro('food'), 'Mi');
+  assert.equal(lookupGaro('quick'), 'Tarkbo!');
 });
 
-test('RUNTIME-AUDIT: stopword-stripped fallback path reaches phrase_maps.js ("so food")', async () => {
+test('RUNTIME-AUDIT: stopword-stripped fallback path reaches phrase_maps.js ("so quick")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const result = await translate('so food');
-  assert.equal(result.garo, 'Mi');
+  const result = await translate('so quick');
+  assert.equal(result.garo, 'Tarkbo!');
 });
 
 test('RUNTIME-AUDIT: findVerbForm/grammar-assembly path reaches phrase_maps.js ("he washes")', async () => {
