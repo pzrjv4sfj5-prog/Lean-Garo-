@@ -2293,29 +2293,30 @@ claude_c:
 claude_b:
   status: active
   pending_next_session: >-
-    2026-08-14 (Claude B, session E migration-mode close). Two items
-    carried forward, neither investigated or actioned this session per
-    explicit instruction to stop and enter migration mode once the
-    counting-system engineering work closed:
-    1) flag_from_claude_a below (src/data/phrase_maps.js line 38's stale
-    spaced 'angry' form, 'Anga ka·o nanga' vs the now-corrected
-    'Ka·onanga') -- Claude B's lane (engine/phrase-map file), needs either
-    a value update or an explicit confirmation that the sentence-internal
-    phrase is deliberately distinct from the standalone adjective.
-    2) The 'student' bare-noun root gap surfaced (not fixed) by this
+    2026-08-14 (Claude B, session E, resumed). One item remains open:
+    the 'student' bare-noun root gap surfaced (not fixed) by this
     session's own engineering work -- see claude_a.next_action above,
     this is explicitly Claude A's linguistic call, not Claude B's.
+    The phrase_maps.js 'angry' flag (below) was checked this session
+    and found to be a held linguistic question, not an engineering fix
+    -- see flag_from_claude_a for the resolution and
+    docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md for full
+    detail. No further action pending on it from Claude B's side; next
+    step is native confirmation, Claude A's channel.
   flag_from_claude_a: >-
     2026-08-14 (Claude A, NV-078 session, pass 2): `angry` raka-count
     placement closed in master_dictionary.json/corrections.json (now
     'Ka·onanga', one raka, no space — corrected twice this session, see
     claude_a.next_action above for full history). src/data/phrase_maps.js
     line 38 ('i am angry': 'Anga ka·o nanga') was NOT updated — out of
-    Claude A's lane (engine file) — and now carries a stale,
-    superseded spaced form. Needs Claude B to either update it to
-    'Ka·onanga' or confirm the sentence-internal phrase is deliberately
-    a different form from the standalone adjective. Also see the
-    closing update appended to
+    Claude A's lane (engine file). CHECKED by Claude B (session E,
+    resumed): the phrase_maps.js value matches master_dictionary.json's
+    own untagged, unconfirmed 'i am angry' sentence entry exactly --
+    it hasn't drifted from its own source, only from the corrected
+    adjective root. Whether the sentence tracks the adjective root or
+    is its own fixed form (same open question as the 'anger' noun
+    entry above) is a linguistic call. HELD, not fixed -- needs native
+    confirmation either way. See the closing update appended to
     docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md.
   current_task: >-
     2026-08-14 SESSION CLOSE (session E, migration mode): counting-system

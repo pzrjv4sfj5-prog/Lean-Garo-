@@ -221,3 +221,29 @@ lane (engine file) — needs Claude B to update to `Ka·onanga` or confirm
 the sentence-internal form is deliberately different.
 
 This doc's title item is now closed; no items remain open in it.
+
+## Update, 2026-08-14 (Claude B, session E) — phrase_maps.js checked, held not fixed
+
+Checked `src/data/phrase_maps.js` line 38 against source. It matches
+`master_dictionary.json`'s own `"i am angry"` sentence entry exactly
+(both the pass-1 spaced form, `'Anga ka·o nanga'`) — that sentence
+entry is itself untagged/legacy and was not touched by either NV-078
+pass. So the phrase-map line hasn't drifted from its own dictionary
+source; it's only stale relative to the corrected *adjective root*
+(`Ka·onanga`).
+
+Whether `"i am angry"` is built compositionally off that adjective
+root, or is its own fixed sentence form — same open question as the
+`"anger"` noun entry Claude A deliberately left un-reconfirmed above
+("noun vs. adjective may legitimately differ") — is a linguistic call,
+not an engineering one. No regression test locks in the current value;
+no `corrections.json` entry exists for this key either.
+
+**Not fixed. Held**, same discipline as the rest of this doc: needs
+either (a) native confirmation that `"i am angry"` tracks the corrected
+adjective root, in which case update both `master_dictionary.json`'s
+sentence entry and `phrase_maps.js` together, or (b) confirmation it's
+deliberately a distinct form, in which case tag the sentence entry to
+close the question explicitly instead of leaving it silently untagged.
+Claude A's lane to resolve; Claude B has no independent way to confirm
+either way.
