@@ -2108,7 +2108,8 @@
   {
     "english": "student",
     "garo": "Porai·gipa",
-    "category": "education"
+    "category": "education",
+    "notes": "SUPERSEDED — corpus-internal fix 2026-08-14 (Claude A, per Claude B session E handoff / Rule 10 next_action): bare-noun entry never updated to NV-073's native-confirmed root 'Chattro', even though all NV-073 phrase-level 1-20 entries already use it. Untagged legacy import, not authoritative for compile. Retained per citation discipline, not deleted."
   },
   {
     "english": "doctor",
@@ -66717,5 +66718,13 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-077, Project Owner direct native relay in-session, 2026-08-14. Corrects the prior 'Na·a tuengama?' entry (dropped 'si'). corrections.json's pre-existing 'Na·a Tusienga ma?' agreed on the word/suffix but differed in spacing — corrections.json updated to match this exact form in the same session (see commit)."
+  },
+  {
+    "english": "student",
+    "garo": "Chattro",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — corpus-internal fix 2026-08-14 (Claude A): bare-noun citation form for the root already native-confirmed under NV-073 (Thangseng, via Tridip/WhatsApp, Project Owner-relayed 2026-08-14: 'one student' = 'chattro sak·sa'). No new native input needed — this applies the already-VERIFIED root to the standalone headword, matching the existing pattern (teacher/person have their own bare-noun VERIFIED entries alongside their counted-phrase series). Resolves the flagged gap in Claude B's session-E engineering handoff (WORKSTATE.yaml claude_a.next_action): translate('twenty students') composing from the stale Porai·gipa root via classifier-fallback."
   }
 ]
