@@ -2477,21 +2477,28 @@ claude_c:
 claude_b:
   status: active
   pending_next_session: >-
-    2026-08-15 (Claude B, session close). One new item, this session's
-    own finding, mechanical (no native input needed) but needs careful
-    design, not a blind swap: prepare-data.js's pickPrimary is
-    selecting OCR-flagged/UNVERIFIED candidates over plain VERIFIED
-    ones for at least 'work' and 'answer' (2 confirmed this session;
-    scope beyond these two not audited -- a full sweep is the first
-    step, same shape as the 2026-08-14 SUPERSEDED-only-candidate fix).
-    'work' is live-broken end-to-end right now (translate('work')
-    returns the stale 'Daka'); 'answer' is currently masked by a
-    correct corrections.json override, not actually fixed. See
-    repository.last_updated (head 1ccac8c) for full detail on both
-    words and the verification performed. Do not fix source-side
-    (compiled_dict.json/corrections.json) linguistic content without
-    Claude A -- this is a pickPrimary precedence question, same
-    category as the prior SUPERSEDED-only fix, not a value question.
+    2026-08-15 (Claude B, session close, reconciled post-rebase onto
+    concurrent claude_a.next_action + Claude C's follow-up audit,
+    docs/CLAUDE_C_AUDIT_20260815B.md -- both landed after this
+    session's own pickPrimary finding was drafted and supersede its
+    framing with more precise root-cause detail; not duplicating that
+    detail here, just pointing to it). Two items open, both this
+    general bug class, neither fixed yet:
+    (1) The 9-key no-verified-candidate defect (claude_a.next_action
+    above: work x2/boil/build/close/empty/leg/outside/strong) --
+    'work' confirmed live-broken this session (translate('work')
+    returns stale 'Daka'), matches Claude A's account exactly.
+    (2) 'answer' -- NOT in the 9-key bucket (its override table entry
+    is correct, not stale), but Claude C's follow-up pins the precise
+    mechanism this session only characterized loosely: a lowercasing
+    collapse in pickPrimary creates a genuine 2-way VERIFIED tie
+    (Aganchaka/Aganchakani) that the verified-neutral branch declines
+    to resolve, falling through to last-write-wins -- currently masked
+    by a coincidental override, zero live exposure today, but fragile.
+    Claude C's next_action above has the precise two-step plan (Claude
+    A: tag the stale row SUPERSEDED citing NV-077 first; Claude B:
+    resolve the tie after). Follow that sequencing, not this session's
+    own looser 'work'/'answer' framing.
     The 'student' bare-noun root gap is now CLOSED (Claude A, bbd3b3f,
     Chattro). The phrase_maps.js 'angry' flag remains correctly HELD,
     re-confirmed unchanged this session -- no further action pending

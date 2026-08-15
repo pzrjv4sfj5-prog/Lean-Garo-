@@ -163,6 +163,24 @@ these two. See `.ai/WORKSTATE.yaml`'s `claude_b.pending_next_session`.
 
 ## Pending for next session
 
+**Reconciliation note added post-rebase:** two commits landed on
+`origin/main` after this section was originally drafted —
+`888c61a` (Claude A's own session-close, which independently found the
+*same* pickPrimary defect class at fuller scope: 9 keys, not the 2
+this session spot-checked) and `96de20d` (Claude C's follow-up audit,
+which pins the exact mechanism behind `answer` specifically: a
+lowercasing collapse creates a genuine 2-way `VERIFIED` tie between
+`Aganchaka`/`Aganchakani` that `pickPrimary`'s tie-break declines to
+resolve, distinct from the 9-key no-verified-candidate bucket). Their
+accounts are more precise than the "OCR-flagged/UNVERIFIED" framing
+below and should be treated as authoritative for next session; see
+`.ai/WORKSTATE.yaml`'s `claude_a.next_action` and
+`claude_c.next_action` for the reconciled, correct framing and
+sequencing. This session's own contribution stands: independently
+confirming the defect live via `translate()` (not just source-reading)
+before either of those landed, and the `answer`-row audit-table
+correction below, which neither of those commits addresses.
+
 1. **pickPrimary OCR-flagged/UNVERIFIED precedence defect** —
    Claude B's lane, mechanical to find, needs careful design to fix
    (same category as the 2026-08-14 SUPERSEDED-only-candidate
