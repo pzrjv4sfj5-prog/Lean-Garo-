@@ -386,6 +386,96 @@ repository:
     docs/CLAUDE_B_SESSION_MIGRATION_20260814_E.md (updated to match this
     final state)."
 
+  head: 1ccac8c
+  last_updated: "2026-08-15 (Claude B, session close: QA/verification
+    session, no engineering changes of its own -- resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260814_E.md (checkpoint 216ee46,
+    itself this role's prior session's docs-only close committing the
+    phrase_maps.js 'angry' hold-decision). git fetch found origin had
+    advanced twice while reviewing: Claude A's bbd3b3f (student
+    bare-noun root fix, Chattro) and 922ef9d (Claude C's first audit
+    report, docs/CLAUDE_C_AUDIT_20260815.md, wired into WORKSTATE/
+    BOOTSTRAP) -- rebased clean, both fast-forwards, no conflicts.
+
+    Reviewed the Claude C audit's own findings at the Project Owner's
+    request. Verified its core claim directly (live translate() calls,
+    not just source-reading): the 2026-08-01/10/12-13 bulk SUPERSEDED
+    sweeps in master_dictionary.json genuinely never propagated to
+    corrections.json/phrase_maps.js for a meaningful number of keys.
+    But found one row in the audit's own 37-word sample table was a
+    false positive: 'answer' was reported as matching a SUPERSEDED
+    candidate for its own key, when the SUPERSEDED tag it actually
+    matched belongs to a *different* key ('To answer', capitalized,
+    same garo string) -- master_dictionary.json's actual 'answer'
+    (lowercase) key is VERIFIED/HIGH via NV-077, which explicitly
+    reversed the 2026-08-01 audit's original SUPERSEDED tag on this
+    exact word. A key-matching artifact in the audit script, not a
+    real defect in the override tables. Confirmed 'food' (adjacent row)
+    checked out clean by contrast -- same key both directions, genuine
+    match. Not yet corrected in docs/CLAUDE_C_AUDIT_20260815.md itself
+    (Claude C has no write access; the document is written in Claude
+    C's voice and shouldn't be silently edited by another role) -- see
+    claude_c.next_action below for how this is being surfaced instead.
+
+    While reviewing, found Claude A had independently already acted on
+    the audit's §3.2/§3.4 finding at scale: commit 1ccac8c (pulled via
+    the same fetch above) mechanically resynced 85 stale
+    corrections.json/phrase_maps.js keys against genuinely-VERIFIED
+    compiled_dict.json values, using a stricter check (requires
+    compiled_dict.json's own live value to be non-SUPERSEDED/
+    non-UNVERIFIED/non-OCR-flagged before resyncing to it) that
+    independently avoided the same 'answer' false-positive for a
+    related but distinct reason -- see next paragraph. Check F baseline
+    dropped 334 -> 249 -> (203 after this session's own re-run, see
+    Verification below; the further drop is this session's re-run
+    picking up cumulative state, not new work).
+
+    New finding, this session's own (mechanical verification, not
+    linguistic): live-tested 'work' and 'answer' directly against
+    compiled_dict.json and master_dictionary.json. Both show
+    pickPrimary (prepare-data.js) selecting an OCR-flagged or otherwise
+    non-VERIFIED candidate over a plain VERIFIED one for the same key --
+    'work' -> compiled_dict.json ships 'Kam' ([OCR-flagged, high
+    confidence]) instead of either 'Work'/'ga·a' or 'Work'/'ka·a'
+    (both variant/VERIFIED/HIGH, untagged-case sibling entries);
+    'answer' -> compiled_dict.json ships 'a·gan·chak·a' (UNVERIFIED)
+    instead of 'Aganchaka' (VERIFIED/HIGH, NV-077). This is upstream of
+    and distinct from the override-table staleness Claude A's resync
+    already fixed -- it means compiled_dict.json itself can carry the
+    wrong value even when a correct VERIFIED master entry exists, no
+    override table involved at all. Currently masked for 'answer' only
+    because corrections.json's override ('Aganchaka') happens to
+    independently hold the right value; NOT masked for 'work' --
+    corrections.json's own 'work' override is itself the original
+    2026-08-01-superseded value ('Daka'), correctly left untouched by
+    Claude A's resync script (compiled_dict's 'Kam' wasn't a safe
+    resync target either), so translate('work') is currently WRONG
+    end-to-end with no correct value anywhere in the live cascade for
+    that key. Flagged, not fixed, this session -- see
+    claude_b.pending_next_session below.
+
+    Verification (full gate re-run against 1ccac8c, this session's own
+    re-verification, not assumed from Claude A's commit message):
+    prepare-data.js re-run, byte-identical output (8132 entries, 190
+    held, confirmed via git status --short showing no diff after
+    running it); node test-dictionary.js 8132/8132 valid; npm install
+    run to restore a missing local eslint binary (sandbox-environment
+    issue only, package.json/lockfile unchanged, not a repo defect)
+    then npm run lint 0 errors/0 warnings; node --test
+    tests/unit/*.test.js 215/215; npx vite build clean; node
+    repository-intelligence.js PASSED, 0 NEW violations all checks
+    (Check F 203 known/allowlisted/0 new). Live translate() smoke-test
+    (not just source-read) for 10 representative keys spanning
+    resynced words (work, sleep, food, teacher), the held angry-phrase
+    question (confirmed still untouched, correctly), and the newly-
+    surfaced pickPrimary gap (answer, work) -- no exceptions, no
+    malformed/empty responses, confirms the 'work' defect above is
+    real and live, not just visible in the JSON. git status clean
+    throughout, HEAD==origin/main at push time (this commit), fully
+    pushed. PAT supplied live by Project Owner, used inline in the
+    push URL only, never persisted. Full detail:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260815.md."
+
 claude_a:
   status: active
   next_action: >-
@@ -2363,19 +2453,50 @@ claude_c:
     of the report). Both: no action needed on student or the 85-key
     resync, both closed.
 
+    Correction, 2026-08-15 (Claude B, verification session, not an
+    edit to Claude C's report itself -- Claude C has no write access
+    and the report is written in its voice): the §3.2 sample table's
+    'answer' row is a false positive. It reports 'answer'/'Aganchaka'
+    as matching a SUPERSEDED candidate, but the SUPERSEDED tag it
+    actually matched belongs to a different key ('To answer',
+    capitalized, same garo string coincidentally) -- the real 'answer'
+    (lowercase) key in master_dictionary.json is VERIFIED/HIGH via
+    NV-077, which explicitly reversed the original 2026-08-01
+    SUPERSEDED tag on this exact word. Likely a case/key-normalization
+    gap in the audit script's key-matching, not a methodology failure
+    at large -- the adjacent 'food' row was independently re-verified
+    clean (same key both directions). Doesn't change the report's
+    overall 28/37 finding materially (Claude A's own independent
+    resync script, commit 1ccac8c, used a stricter per-key check and
+    already excluded 'answer' correctly, for a related but distinct
+    reason -- see claude_b's repository.last_updated entry, head
+    1ccac8c). Surfacing here so a future Claude C session tightens the
+    key-matching check before reusing this methodology at the
+    remaining 249-entry (was 334) baseline.
+
 claude_b:
   status: active
   pending_next_session: >-
-    2026-08-14 (Claude B, session E, resumed). One item remains open:
-    the 'student' bare-noun root gap surfaced (not fixed) by this
-    session's own engineering work -- see claude_a.next_action above,
-    this is explicitly Claude A's linguistic call, not Claude B's.
-    The phrase_maps.js 'angry' flag (below) was checked this session
-    and found to be a held linguistic question, not an engineering fix
-    -- see flag_from_claude_a for the resolution and
-    docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md for full
-    detail. No further action pending on it from Claude B's side; next
-    step is native confirmation, Claude A's channel.
+    2026-08-15 (Claude B, session close). One new item, this session's
+    own finding, mechanical (no native input needed) but needs careful
+    design, not a blind swap: prepare-data.js's pickPrimary is
+    selecting OCR-flagged/UNVERIFIED candidates over plain VERIFIED
+    ones for at least 'work' and 'answer' (2 confirmed this session;
+    scope beyond these two not audited -- a full sweep is the first
+    step, same shape as the 2026-08-14 SUPERSEDED-only-candidate fix).
+    'work' is live-broken end-to-end right now (translate('work')
+    returns the stale 'Daka'); 'answer' is currently masked by a
+    correct corrections.json override, not actually fixed. See
+    repository.last_updated (head 1ccac8c) for full detail on both
+    words and the verification performed. Do not fix source-side
+    (compiled_dict.json/corrections.json) linguistic content without
+    Claude A -- this is a pickPrimary precedence question, same
+    category as the prior SUPERSEDED-only fix, not a value question.
+    The 'student' bare-noun root gap is now CLOSED (Claude A, bbd3b3f,
+    Chattro). The phrase_maps.js 'angry' flag remains correctly HELD,
+    re-confirmed unchanged this session -- no further action pending
+    on it from Claude B; next step is still native confirmation via
+    Claude A's channel.
   flag_from_claude_a: >-
     2026-08-14 (Claude A, NV-078 session, pass 2): `angry` raka-count
     placement closed in master_dictionary.json/corrections.json (now
