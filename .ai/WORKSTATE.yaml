@@ -2311,34 +2311,39 @@ claude_c:
     full charter. Reports land in docs/CLAUDE_C_AUDIT_*.md; a role with
     push access (A or B, per the standard PAT policy) commits them on
     Claude C's behalf, since Claude C itself never has write access.
-  latest_audit_head: 6ce3785
+  latest_audit_head: 888c61a
   latest_report: >-
-    docs/CLAUDE_C_AUDIT_20260815.md — verified Session E's engineering
-    fixes (exact-phrase precedence, SUPERSEDED-only filtering) correct
-    live, not just as claimed. Found `student`'s bare-noun root still
-    unconfirmed (Claude A action). New finding: 28 of 37 sampled
-    src/data/known_cross_source_conflicts.json (Check F allowlist)
-    entries confirmed live to be serving explicitly-SUPERSEDED roots at
-    the highest-confidence runtime layers (correction/phrase-map), while
-    a VERIFIED replacement sits unused in compiled_dict.json — same bug
-    class as the prior salt/wait and book/table/buy/door fixes, not yet
-    swept comprehensively (Claude B action, full table + fix approach in
-    the report). Also identifies a structural gap: Rule 6's Runtime
-    Handoff requirement only covers individual NV closures, not Claude
-    A's periodic bulk corpus-internal SUPERSEDED-tagging sweeps
-    (2026-08-01/476 entries, 2026-08-10/523, 2026-08-12/13/~230+) — none
-    of those produced a Runtime Handoff list, which is why this bug class
-    keeps recurring across different vocabulary instead of getting closed
-    once. Recommends extending Rule 6 to bulk-supersession sessions
-    (Project Owner decision, not unilateral for either role).
+    docs/CLAUDE_C_AUDIT_20260815B.md — follow-up pass. Verified fixed at
+    runtime (not just claimed): student's bare-noun root (all paths,
+    Chattro) and the 85-key SUPERSEDED-override resync (0 candidates
+    remaining on re-run). Confirmed still open, unchanged: the 9
+    compiled_dict.json keys (work x2, boil, build, close, empty, leg,
+    outside, strong) serving non-VERIFIED values, pickPrimary
+    no-verified-candidate defect, Claude B's. MAIN NEW FINDING: `answer`
+    is a live instance of this same bug class, currently masked by a
+    coincidental corrections.json/phrase_maps.js override that predates
+    and is unrelated to NV-077. compiled_dict.json["answer"] is still
+    "a·gan·chak·a" (stale UNVERIFIED, never marked SUPERSEDED despite
+    NV-077 superseding it) because lowercasing collapses "answer"/
+    "Answer" into one pickPrimary pool where Aganchaka (verb) and
+    Aganchakani (noun) form a genuine 2-way VERIFIED tie that the
+    verified-neutral branch (requires exactly 1) declines to resolve,
+    falling through to last-write-wins. Zero runtime exposure today, but
+    fragile: if the masking override is ever mechanically resynced away,
+    the wrong value ships with no test coverage catching it. This is the
+    concrete case behind the Project Owner's "A already fixed answer, why
+    does B flag it again" question — both are right, at different layers;
+    see report §3 for full resolution.
   next_action: >-
-    Claude A: confirm student's bare-noun root (Chattro vs Porai·gipa),
-    ideally alongside the open person/student/teacher 111-candidate
-    conflict. Claude B: run the full mechanical pass over all 334
-    known_cross_source_conflicts.json entries (not just the 37 sampled)
-    using the same check described in the report §3.2/3.4, resync any
-    confirmed stale-vs-SUPERSEDED matches. Neither action needs native
-    input for the resync itself, only for student's root.
+    Claude A: tag the stale UNVERIFIED "answer"->"a·gan·chak·a" master_dictionary.json
+    row SUPERSEDED, citing NV-077 (pure hygiene, no new native input
+    needed). Claude B: after that lands, pickPrimary still has an
+    unresolved 2-way VERIFIED tie (Aganchaka/Aganchakani) for the
+    collapsed "answer" key — falls through to last-write-wins, currently
+    masked by the correction-layer override but not principled; also
+    still open from before: the 9-key no-verified-candidate defect (§2.2
+    of the report). Both: no action needed on student or the 85-key
+    resync, both closed.
 
 claude_b:
   status: active
