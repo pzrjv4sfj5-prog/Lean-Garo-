@@ -2438,6 +2438,18 @@ claude_c:
     full charter. Reports land in docs/CLAUDE_C_AUDIT_*.md; a role with
     push access (A or B, per the standard PAT policy) commits them on
     Claude C's behalf, since Claude C itself never has write access.
+  closure_protocol: >-
+    latest_report/latest_audit_head below are the ONLY current Claude C
+    findings — read this block, not a glob over docs/CLAUDE_C_AUDIT_*.md
+    (older dated files are historical citations only once superseded).
+    When every item in next_action is done, whoever closes the last one
+    updates latest_report to state no open findings + the closure head,
+    and `git mv`s that report from docs/ to docs/archive/ in the same
+    commit as the fix. Archive, never delete — later SUPERSEDED/NV
+    entries sometimes cite an old audit by date. First applied
+    2026-08-15: docs/CLAUDE_C_AUDIT_20260815.md archived after both its
+    items (student root, 85-key resync) verified closed by
+    CLAUDE_C_AUDIT_20260815B.md.
   latest_audit_head: 888c61a
   latest_report: >-
     docs/CLAUDE_C_AUDIT_20260815B.md — follow-up pass. Verified fixed at

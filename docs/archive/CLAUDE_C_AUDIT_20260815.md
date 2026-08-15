@@ -1,3 +1,10 @@
+> **CLOSED / ARCHIVED 2026-08-15.** Both `next_action` items verified
+> resolved live (student's bare-noun root; 85-key stale-override
+> resync) — see `docs/CLAUDE_C_AUDIT_20260815B.md` §1.1–1.2 for the
+> independent re-verification. Kept here for historical citation only;
+> not an open action item. Current findings live at the file
+> `.ai/WORKSTATE.yaml`'s `claude_c.latest_report` points to.
+
 # Claude C Independent Audit — Handoff to Claude A & Claude B
 
 **HEAD audited:** `6ce3785` (2026-08-14 21:23 UTC), verified `== origin/main`, working

@@ -261,11 +261,25 @@ the next session is Claude A, Claude B, or Claude D.
   claims against actual repository/runtime state and reports findings.
   Has no persistent write access, ever; a role with push access that
   session (A or B, per the standard PAT policy) commits Claude C's
-  reports on its behalf. Reports live at `docs/CLAUDE_C_AUDIT_*.md`.
-  **Both Claude A and Claude B should check for a `claude_c:` block in
-  `.ai/WORKSTATE.yaml` and the latest `docs/CLAUDE_C_AUDIT_*.md` at
-  session start** (per the Bootstrap order below) — Claude C findings
-  are independent verification, not a substitute for either role's own
+  reports on its behalf.
+  **Read ONLY the single file `.ai/WORKSTATE.yaml`'s `claude_c.latest_report`
+  field points to — never glob `docs/CLAUDE_C_AUDIT_*.md` and open every
+  match.** That field is the sole source of truth for "what's currently
+  open." Older dated audit files under `docs/CLAUDE_C_AUDIT_*.md` may
+  still exist for historical citation (e.g. an NV entry citing which
+  audit first flagged something) but are not action items once a newer
+  `latest_report` supersedes them — do not re-read or re-action them.
+  **Closure protocol (either role, whoever closes the last open item):**
+  when every item in `claude_c.next_action` for the current report is
+  done, (1) update `claude_c.latest_report` to state no open findings
+  and the head at closure, (2) `git mv` the actioned report from
+  `docs/` to `docs/archive/`, in the same commit as the fix. This is
+  what keeps the live report singular — closed audits move out of the
+  active read path but aren't deleted, since later SUPERSEDED/NV
+  entries sometimes cite them by date. **Both Claude A and Claude B
+  should check the `claude_c:` block in `.ai/WORKSTATE.yaml` at session
+  start** (per the Bootstrap order below) — Claude C findings are
+  independent verification, not a substitute for either role's own
   judgment, but should not be silently ignored either.
 - **Thangseng** — native speaker, sole source of ground-truth validation.
 - **Project Owner / ChatGPT** — priorities, executive review, cross-team
