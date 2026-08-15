@@ -113,6 +113,9 @@ for (const r of results.resync) {
 }
 console.log(`Skipped — override doesn't match a SUPERSEDED master candidate (likely intentional variant): ${results.skip_not_superseded_match.length}`);
 console.log(`Skipped — no VERIFIED master candidate matches compiled_dict value: ${results.skip_no_verified_match.length}`);
+for (const r of results.skip_no_verified_match) {
+  console.log(`  [${r.prefix}] "${r.key}": override="${r.overrideValue}" (SUPERSEDED-matched), compiled_dict="${r.compiledValue}" (not verified)`);
+}
 console.log(`Skipped — no compiled_dict entry for this key: ${results.skip_no_master_entry.length}`);
 
 if (APPLY && results.resync.length > 0) {
