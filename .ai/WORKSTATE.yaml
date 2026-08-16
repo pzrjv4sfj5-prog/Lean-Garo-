@@ -200,7 +200,39 @@ repository:
     swept in the next session before being called fully resolved.'
 claude_a:
   status: active
-  next_action: '2026-08-04 (Project Owner correction, closes the need question): Project Owner directly
+  next_action: >-
+    2026-08-16b (Claude A, this session's close): scanned Check A's 12
+    report-only raka candidates per PO request, found + fixed a real
+    regression: "i want to drink" had reverted to the raka'd
+    ring·a="sing" homophone (RC-CANDIDATE-009, originally fixed
+    2026-07-23). Root cause traced to master_dictionary.json (the
+    canonical compile source) never having been updated when
+    corrections.json was fixed, plus two more uncited entries there
+    mislabeling the same homophone as "Drink". All three fixed in
+    master_dictionary.json this session, corrections.json re-fixed,
+    permanent regression test added
+    (tests/unit/rc009_drink_sing_raka.test.js). Full gate re-verified:
+    218/218 tests, 8127/8127 dictionary entries, repository-intelligence.js
+    0 new violations, runtime-sweep 14523/14523 calls 0 errors. Separate
+    finding NOT fixed, flagged for a dedicated session: the "let's
+    [verb]" hortative pattern conflicts systematically between
+    master_dictionary.json (-ha, has a VERIFIED/HIGH/200sentences
+    citation) and corrections.json (-na, uncited, ~15 entries) — see
+    docs/PENDING_REGRESSION_CASES.md RC-CANDIDATE-012. No queued
+    native-validation item.
+  next_action_note_workstate_anomaly: >-
+    2026-08-16b (Claude A): found on resync — the field immediately
+    below (now next_action_prior_stale_20260804) was sitting in the
+    `next_action` (current/top) slot after Claude B's large WORKSTATE.yaml
+    restructure (cb1f1f5), despite being dated 2026-08-04 and
+    chronologically preceding next_action_prior_5 (dated 2026-08-16,
+    correctly further down the prior-chain). Looks like an ordering bug
+    in whatever produced that rewrite, not intentional. Not fixed beyond
+    relabeling it out of the current-action slot (relabeling only,
+    content untouched, retained per citation discipline) — restructuring
+    WORKSTATE.yaml itself is engine/tooling territory, out of my lane.
+    Flagging for Claude B to check next session.
+  next_action_prior_stale_20260804: '2026-08-04 (Project Owner correction, closes the need question): Project Owner directly
     confirmed "need" = "nanga" (no raka), not "nang·a" as this session''s earlier linguistic call had
     it. This reverses the "nang·a" correction two entries below. Corrected across all of: master_dictionary.json
     (the VERIFIED/HIGH "need" entry''s own garo field and notes — the note already quoted Thangseng as

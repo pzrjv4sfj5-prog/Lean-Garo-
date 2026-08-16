@@ -215,7 +215,46 @@ direct Thangseng question**, logged as NV-037.
 
 - **Status:** CLOSED except `nam·`, tracked separately as NV-037.
 
-### [Superseded by RC-CANDIDATE-011] `·o` fix scope question
+### RC-CANDIDATE-012 — "i want to drink" regression of RC-CANDIDATE-009's fix — 2026-08-16
+
+`corrections.json`'s `"i want to drink"` had reverted to `"Anga
+ring·na sikenga"` (the raka'd "sing" homophone, meaning "want to sing"),
+exactly the bug RC-CANDIDATE-009 already fixed on 2026-07-23.
+**Root cause traced:** `master_dictionary.json` — the project's declared
+canonical compile source (`prepare-data.js` line 242) — still carried
+the raka'd value at idx 7120, tagged bare `"VERIFIED/native-speaker"`
+with no NV-number, date, or relay chain (every genuine native
+confirmation in this corpus cites one). corrections.json edits alone
+never fixed the user-facing bug for good, because `master_dictionary.json`
+also independently mislabeled `"Drink"`→`"ring·a"` (idx 3259,
+`variant/VERIFIED/HIGH`, same uncited pattern), which had additionally
+suppressed the correct `"drink"`→`"Ringa"` entry (idx 109) as
+SUPERSEDED. Fixed all three in `master_dictionary.json` this session
+(7120, 3259 → SUPERSEDED; 109 → promoted to VERIFIED/HIGH), plus
+re-applied the corrections.json fix. Verified via `translate()` output
+directly (not just `compiled_dict.json`, since corrections.json is
+checked first at runtime — see `src/lookupEngine.js`) — `"i want to
+drink"` → `"Anga ringna sikenga"`, `"drink"` → `"Ringa"`,
+`"sing"` → `"ring·a"` (unaffected, correct homophone). Permanent
+regression pin added: `tests/unit/rc009_drink_sing_raka.test.js`,
+asserting against `translate()` output so a future data-only edit that
+reintroduces the raka in either file fails the suite. The other 11 Check
+A candidates re-confirmed unchanged (report-only, correctly
+false-positive per existing analysis — `ring·a`=sing homophone cluster,
+`wa·`=bamboo vs `wa`=tooth lexical-split false positive).
+
+**Separate finding, not fixed this session (flagged for a dedicated
+session):** `master_dictionary.json`'s "let's [verb]" hortative pattern
+uses `-ha` (idx 1064's own documented template rule: `"Hai + verb +
+ha"`; `"Let's eat."`→`"Hai cha·ha."` is VERIFIED/HIGH/200sentences), but
+`corrections.json` uses `-na` for most of the same verbs (`"let's
+drink"`→`"Hai ringna"`, `"let's eat"`→`"Hai cha·na"`, etc.), uncited.
+Since master_dictionary.json is canonical, `-ha` wins at compile
+(`"let's drink"` currently resolves to `"Hai ringaha"`). This is a
+distinct systematic ~15-entry conflict, not a raka issue — needs its own
+investigation, possibly a native check, before touching either file.
+
+
 Originally a separate `RC-CANDIDATE-010` created independently by
 Claude B the same day as Claude A's stress-test `RC-CANDIDATE-010`
 (naming collision, concurrent sessions). Retired in favor of

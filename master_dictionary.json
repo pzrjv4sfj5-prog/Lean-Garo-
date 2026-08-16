@@ -608,7 +608,7 @@
     "english": "drink",
     "garo": "Ringa",
     "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'drink' has VERIFIED/HIGH form(s) ['ring·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH - 2026-08-16, Claude A, promoted: its blocker ('Drink'->'ring·a', idx 3259) has been superseded as the raka'd 'sing' homophone wrongly tagged for 'drink'. 'Ringa' matches every sibling drink-verb conjugation and corrections.json's own 'drink'->'Ringa'."
   },
   {
     "english": "sleep",
@@ -18267,7 +18267,7 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED - 2026-08-16, Claude A, corpus-internal contradiction (no native check needed): 'ring·a' is the raka-bearing 'sing' homophone (raka_roots.json, root 'ring' - the drink verb is confirmed no-raka; 'ring·a' is a genuinely different word). This exact value was already fixed in corrections.json 2026-07-23 (RC-CANDIDATE-009) but master_dictionary.json - the canonical compile source - was never updated, so the raka'd value kept silently winning at compile regardless of corrections.json edits. The bare 'VERIFIED/native-speaker' or 'VERIFIED/HIGH' tag has no NV-number, date, or relay chain (every genuine native confirmation in this corpus cites one) and directly contradicts every sibling drink-verb conjugation in the corpus (all raka-free) and the near-identical companion entry 'i want water'->'Anga chi ringna skenga'. Was: variant/VERIFIED/HIGH."
   },
   {
     "english": "Drink some tea",
@@ -49112,7 +49112,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED - 2026-08-16, Claude A, corpus-internal contradiction (no native check needed): 'ring·a' is the raka-bearing 'sing' homophone (raka_roots.json, root 'ring' - the drink verb is confirmed no-raka; 'ring·a' is a genuinely different word). This exact value was already fixed in corrections.json 2026-07-23 (RC-CANDIDATE-009) but master_dictionary.json - the canonical compile source - was never updated, so the raka'd value kept silently winning at compile regardless of corrections.json edits. The bare 'VERIFIED/native-speaker' or 'VERIFIED/HIGH' tag has no NV-number, date, or relay chain (every genuine native confirmation in this corpus cites one) and directly contradicts every sibling drink-verb conjugation in the corpus (all raka-free) and the near-identical companion entry 'i want water'->'Anga chi ringna skenga'. Was: VERIFIED/native-speaker (uncited)."
   },
   {
     "english": "i want to go",
