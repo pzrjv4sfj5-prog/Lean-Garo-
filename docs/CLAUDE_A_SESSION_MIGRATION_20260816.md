@@ -121,9 +121,51 @@ persisted to git config, commit content, or any tracked file.
   block): the `answer`/`Answer` pickPrimary POS tie-break, now a clean
   2-candidate tie instead of a noisy 4-candidate one.
 
-## Exact next step for the next Claude A session
-1. Resume per Rule 10 (fetch/verify HEAD/pull-if-needed/confirm clean/
-   read WORKSTATE+BOOTSTRAP+this doc).
-2. No queued linguistic task. Check `.ai/WORKSTATE.yaml`'s
-   `claude_a.next_action` and Claude C's latest audit for anything new
-   before starting fresh work.
+## Post-close addendum — mid-session rebase (Rule 9a-style bounded close)
+
+After this doc's initial write, `git push` was rejected — Claude B had
+pushed `cb1f1f5` (the `pickPrimary` VERIFIED-tie fix) concurrently.
+Diffed first: no textual overlap in `corrections.json` (B only touched
+`"work"`), so rebased.
+
+Two conflicts, both resolved:
+- **`.ai/WORKSTATE.yaml`**: B's commit included a large restructure
+  (~5,900 line diff). Took B's version as base, layered this session's
+  `next_action` on top. Also found and flagged (relabeled, not deleted)
+  an apparent ordering bug in B's restructure — a stale 2026-08-04 entry
+  had landed in the current `next_action` slot ahead of the correctly-
+  chronological entries below it. Content preserved, just relabeled
+  `next_action_prior_stale_20260804` with a note for Claude B.
+- **`src/compiled_dict.json`**: regenerated via `node prepare-data.js`
+  rather than manual merge, since all three real source files
+  (`master_dictionary.json`, `corrections.json`, `prepare-data.js`)
+  merged clean with no conflicts — a fresh compile from already-correct
+  sources is strictly safer than reconciling two derived JSON diffs by
+  hand.
+
+Full gate re-verified on the rebased state (not just pre-rebase):
+218/218 tests, 8127/8127 dictionary entries, repository-intelligence.js
+0 new violations, runtime-sweep 14523/14523 calls 0 errors. Pushed as
+`99ea565`, confirmed `origin/main` match.
+
+**New info surfaced by B's rebuild, not yet acted on:** `prepare-data.js`
+now reports 4 pickPrimary ties needing Claude A disambiguation (was
+already-known 2 — `angry`, `demand` — plus 2 new from this session's
+own `master_dictionary.json` changes: `where (relative pronoun)`
+jeon/jeo, `the market is nearby`). Per `docs/PICKPRIMARY_VERIFIED_TIES.md`
+(B's new 141-key backlog). Not investigated this session — flagged as
+Next Recommended Task.
+
+## Repository status at close (superseding the section above)
+- HEAD: `99ea565513d...` (see `git log -1`)
+- `origin/main`: confirmed match via `git fetch` + `git rev-parse` both
+  sides, post-push
+- `git status`: clean
+- `WORKSTATE.yaml`: updated (claude_a block, both the `next_action` and
+  the anomaly note above)
+- Native-validation/blocker status: no open native-validation items, no
+  queued task. Next Recommended Tasks: (1) the hortative -ha/-na
+  conflict (RC-CANDIDATE-012 note), (2) the 4 pickPrimary ties above,
+  (3) `docs/PICKPRIMARY_VERIFIED_TIES.md`'s broader 141-key backlog
+  (B's handoff, not mine to triage alone).
+
