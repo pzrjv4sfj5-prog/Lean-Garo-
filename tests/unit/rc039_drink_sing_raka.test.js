@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { translate } from '../../src/translationEngine.js';
 
-// RC-CANDIDATE-009 (fixed 2026-07-23) / RC-CANDIDATE-012 (regressed and
+// RC-CANDIDATE-009 (fixed 2026-07-23) / RC-CANDIDATE-039 (regressed and
 // re-fixed 2026-08-16): "i want to drink" repeatedly reverts to
 // "Anga ring·na sikenga" — the raka'd "ring·a"="sing" homophone
 // (raka_roots.json: root "ring" is no-raka for the drink verb; ring·a is
@@ -10,7 +10,7 @@ import { translate } from '../../src/translationEngine.js';
 // raka'd form means "want to sing," not "want to drink." git history
 // shows this exact key flip-flopping between raka/no-raka at least three
 // times across sessions (see docs/PENDING_REGRESSION_CASES.md
-// RC-CANDIDATE-012). 2026-08-16: root cause traced to
+// RC-CANDIDATE-039). 2026-08-16: root cause traced to
 // master_dictionary.json (the canonical compile source, which
 // corrections.json edits alone don't override for compiled_dict.json
 // population) also carrying the raka'd value under a bare, uncited
@@ -19,7 +19,7 @@ import { translate } from '../../src/translationEngine.js';
 // layer, see src/lookupEngine.js), so this test asserts against
 // translate() output, not compiled_dict.json, to match what a user
 // actually sees.
-test('RC-CANDIDATE-009/012: "i want to drink" does not carry the ring·a="sing" homophone', async () => {
+test('RC-CANDIDATE-009/039: "i want to drink" does not carry the ring·a="sing" homophone', async () => {
   const result = await translate('i want to drink');
   assert.ok(result && result.garo, 'expected translate() to return a garo value for "i want to drink"');
   assert.ok(!/ring·na/i.test(result.garo),

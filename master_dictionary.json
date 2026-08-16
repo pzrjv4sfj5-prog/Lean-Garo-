@@ -62108,7 +62108,7 @@
     "category": "emotions",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-054 follow-up, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Given alongside 'ka'o nanga' (most common) and 'bika chaa' (metaphorical). Distinct spelling from pre-existing unreconciled 'bi·ka so·a' (not merged, no guess)."
+    "notes": "variant/VERIFIED/HIGH — NV-054 follow-up, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Given alongside 'ka'o nanga' (idx 3847, explicitly noted by the native as most common) and 'bika chaa' (metaphorical). 2026-08-16, Claude A: tagged variant (not competing primary) per the native's own 'most common' ranking of Ka·onanga — resolves the pickPrimary tie without asserting bika ding'a is wrong, it's a real secondary form."
   },
   {
     "english": "flower plant",

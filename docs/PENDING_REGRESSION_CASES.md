@@ -215,7 +215,12 @@ direct Thangseng question**, logged as NV-037.
 
 - **Status:** CLOSED except `nam·`, tracked separately as NV-037.
 
-### RC-CANDIDATE-012 — "i want to drink" regression of RC-CANDIDATE-009's fix — 2026-08-16
+### RC-CANDIDATE-039 — "i want to drink" regression of RC-CANDIDATE-009's fix — 2026-08-16
+
+(Corrected numbering 2026-08-16b — this was originally mis-numbered
+"012" in this doc, colliding with the pre-existing, unrelated
+RC-CANDIDATE-012 below ("Raka rendered as apostrophe"). Renumbered to
+039, the next free ID; content unchanged.)
 
 `corrections.json`'s `"i want to drink"` had reverted to `"Anga
 ring·na sikenga"` (the raka'd "sing" homophone, meaning "want to sing"),
@@ -243,16 +248,46 @@ A candidates re-confirmed unchanged (report-only, correctly
 false-positive per existing analysis — `ring·a`=sing homophone cluster,
 `wa·`=bamboo vs `wa`=tooth lexical-split false positive).
 
-**Separate finding, not fixed this session (flagged for a dedicated
-session):** `master_dictionary.json`'s "let's [verb]" hortative pattern
-uses `-ha` (idx 1064's own documented template rule: `"Hai + verb +
-ha"`; `"Let's eat."`→`"Hai cha·ha."` is VERIFIED/HIGH/200sentences), but
-`corrections.json` uses `-na` for most of the same verbs (`"let's
-drink"`→`"Hai ringna"`, `"let's eat"`→`"Hai cha·na"`, etc.), uncited.
-Since master_dictionary.json is canonical, `-ha` wins at compile
-(`"let's drink"` currently resolves to `"Hai ringaha"`). This is a
-distinct systematic ~15-entry conflict, not a raka issue — needs its own
-investigation, possibly a native check, before touching either file.
+**Follow-up 2026-08-16b — hortative -ha/-na scope corrected, not a
+~15-entry conflict as first flagged.** Re-checked every "let's [verb]"
+entry's actual citation status individually (not just idx 1064's
+template rule, which is itself untagged/uncited and not authoritative
+on its own): only **two** of the cluster carry a real citation —
+`"Let's go."`→`"Hai re·naha."` and `"Let's eat."`→`"Hai cha·ha."`, both
+`VERIFIED/HIGH/200sentences` (idx 7054/7055). Everything else in the
+`-ha` cluster (sleep/drink/sit/play/work/hang out) is just as uncited
+as corrections.json's `-na` versions — bare legacy entries, no NV
+number, no date. Only one real fix applied: `corrections.json`'s
+`"let's eat"`/`"let's eat food"` (`Hai cha·na`→`Hai cha·ha`,
+`Hai mi cha·na`→`Hai mi cha·ha`) to match the cited value; `"let's go"`
+already matched. The remaining ~6 uncited pairs (sleep/drink/sit/play/
+work/hang out) are genuinely open — neither side has evidence, not
+resolvable without a native check, not touched.
+
+**Follow-up 2026-08-16b — pickPrimary VERIFIED-tie backlog
+(`docs/PICKPRIMARY_VERIFIED_TIES.md`), triaged, not bulk-"fixed":**
+scanned all 141 keys' underlying `master_dictionary.json` notes for any
+citation asymmetry or explicit ranking language (not just POS labels).
+Found and fixed exactly one: **`angry`** — `bika ding'a` (idx 9182)'s
+own citation explicitly notes the native gave `ka'o nanga` as "most
+common" alongside it; retagged `bika ding'a` `variant/VERIFIED/HIGH` so
+`Ka·onanga` (idx 3847) ships as primary, without asserting the other is
+wrong. No other key in the 141 had comparable ranking language — the
+rest are either (a) genuinely tied free variants the native gave with
+no stated preference (e.g. `"the market is nearby"`'s own note says
+"distinction not yet characterized (open)" — forcing a pick here would
+be a guess, not a fix), or (b) legitimate POS splits like `demand`
+(Dabia=verb/Dabiani=noun, both correctly VERIFIED, same shape as
+`answer`) that don't need "resolving," they need POS-aware
+`pickPrimary` logic (Claude B's lane), or (c) a case-insensitive
+key-collapse merging two genuinely different words (`"where"`=`Bano`,
+stationary, vs `"Where"`=`Bachi`, movement-to, per RULE-044 — picking
+either as "the" answer for the shared casual key would silently discard
+a real distinction; this is a compile-layer case-handling question, not
+a data question). Did not touch any of these 140 — doing so without
+evidence would violate this project's evidence-first standard. Full
+141-key list stands as a legitimate native-validation backlog, not a
+bug list.
 
 
 Originally a separate `RC-CANDIDATE-010` created independently by
