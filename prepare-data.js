@@ -5,6 +5,18 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// 2026-08-16 (Claude B): module-level collector for pickPrimary's new
+// verified-tie branch (see pickPrimary below) — populated during
+// finalizeDictionary, written to docs/PICKPRIMARY_VERIFIED_TIES.md at
+// the end of main(), same pattern as heldSupersededOnly/
+// SUPERSEDED_ONLY_KEYS.md. Not a defect list: every key here already
+// ships a genuinely VERIFIED/HIGH value (no OCR/UNVERIFIED garbage,
+// which is what the fix corrected) — it's an honest record of which
+// keys had that choice made by last-write-wins among equally-verified
+// candidates rather than a linguistic decision, so Claude A can
+// disambiguate on their own schedule without re-discovering the list.
+const pickPrimaryVerifiedTies = [];
+
 function normalizeFile(filePath) {
   // Returns { normalized, superseded }.
   // normalized: { [key]: {v: string, isVariant: boolean}[] } — ALL values
@@ -43,13 +55,13 @@ function normalizeFile(filePath) {
       superseded[k].add(v);
     };
 
-    const addValue = function(key, value, isVariant = false, isVerified = false) {
+    const addValue = function(key, value, isVariant = false, isVerified = false, isVariantVerified = false, isWeak = false) {
       const k = key.trim().toLowerCase();
       const v = String(value).trim();
       const rawKey = key.trim();
       if (!k || !v) return;
       if (!normalized[k]) normalized[k] = [];
-      if (!normalized[k].some(entry => entry.v === v)) normalized[k].push({ v, isVariant, isVerified, rawKey });
+      if (!normalized[k].some(entry => entry.v === v)) normalized[k].push({ v, isVariant, isVerified, isVariantVerified, isWeak, rawKey });
     }
 
     if (Array.isArray(parsed)) {
@@ -76,6 +88,20 @@ function normalizeFile(filePath) {
         // over untagged or explicitly-UNVERIFIED siblings sharing its key.
         const notes = item.notes || '';
         const isVerified = /^verified\/high\b/i.test(notes);
+        // 2026-08-15 (Claude B, per Claude A's 9-key handoff + Claude C
+        // audit 20260815B §1.3/§2.2): isVerified above is anchored to the
+        // START of notes, so a variant-tagged entry ("variant/VERIFIED/
+        // HIGH") never matches it — this new flag catches that shape
+        // specifically. See pickPrimary for how it's used.
+        const isVariantVerified = /^variant\/verified\/high\b/i.test(notes);
+        // Same handoff: entries with no independent evidence at all (no
+        // notes, an OCR-import flag, or an explicit UNVERIFIED tag) are
+        // exactly the shape that was wrongly winning over VERIFIED/HIGH
+        // variant siblings via last-write-wins. Used only to gate the new
+        // pickPrimary branch — never widens which candidates are shown as
+        // verified, only which are recognized as having NO evidence.
+        const notesLower = notes.toLowerCase();
+        const isWeak = !notesLower || notesLower.includes('unverified') || notesLower.includes('ocr-flagged');
         // CRITICAL FIX (2026-08-07, Claude B, per Claude A's handoff
         // docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md):
         // a `SUPERSEDED —` notes entry means Claude A already determined
@@ -95,7 +121,7 @@ function normalizeFile(filePath) {
           if (eng) addSuperseded(eng, garo);
           return;
         }
-        if (eng) addValue(eng, garo, isVariant, isVerified);
+        if (eng) addValue(eng, garo, isVariant, isVerified, isVariantVerified, isWeak);
       });
     } else if (typeof parsed === 'object' && parsed !== null) {
       Object.entries(parsed).forEach(([key, value]) => {
@@ -237,6 +263,94 @@ function pickPrimary(entries, key) {
     return { value: verifiedNeutral[0].v, verifiedSelection: true };
   }
 
+  // 2026-08-16, addendum (Claude B — surfaced by rebasing onto Claude A's
+  // cb53f1c, which tagged 'answer'/'a·gan·chak·a' SUPERSEDED per NV-077 and
+  // explicitly handed off what it found: with that UNVERIFIED row removed,
+  // 'answer' now has TWO non-variant candidates both independently tagged
+  // VERIFIED/HIGH — 'answer'/Aganchaka (verb sense) and 'Answer'/Aganchakani
+  // (noun sense, distinct POS, NV-077) — so verifiedNeutral.length is 2, not
+  // 1, and the branch above declines exactly as designed. Without this
+  // branch, control fell all the way to masterEntries' flat last-write-wins
+  // over ALL master-sourced candidates (verified or not), which picked
+  // 'ku·chak·a' — a variant/VERIFIED/HIGH candidate, correctly verified, but
+  // strictly lower-confidence than having TWO independently-verified neutral
+  // senses simply lose a coin-flip to it by array position. Same shape and
+  // same restraint as the single-verified-variant branch below: this
+  // doesn't try to pick Aganchaka vs. Aganchakani (a genuine POS tie, not
+  // this function's call to make) — it only ensures a tied pair of
+  // full-VERIFIED neutral candidates can't be beaten by a lesser-confidence
+  // candidate through pure last-write-wins. Falls back to last-write-wins
+  // among the tied VERIFIED neutral candidates only, and logs it into the
+  // same PICKPRIMARY_VERIFIED_TIES.md report as the branch below.
+  if (!isInfinitiveKey && verifiedNeutral.length > 1) {
+    const chosen = verifiedNeutral[verifiedNeutral.length - 1].v;
+    console.log(`pickPrimary: '${key}' has ${verifiedNeutral.length} tied VERIFIED/HIGH non-variant candidates (${verifiedNeutral.map(e => e.v).join(', ')}) — excluding lower-confidence candidates, falling back to last-write-wins among the verified candidates only. Needs Claude A disambiguation — not resolved here.`);
+    pickPrimaryVerifiedTies.push({ key, candidates: verifiedNeutral.map(e => e.v), chosen });
+    return { value: chosen, verifiedSelection: false };
+  }
+
+  // NEW (2026-08-15, Claude B — Claude A's 9-key handoff in
+  // .ai/WORKSTATE.yaml claude_a.next_action + Claude C's follow-up audit,
+  // docs/CLAUDE_C_AUDIT_20260815B.md §1.3/§2.2): variant-tagged
+  // VERIFIED/HIGH candidates (e.g. "Work"/"ga·a", notes
+  // "variant/VERIFIED/HIGH") are invisible to the branch above (isVerified
+  // is anchored to the START of notes, which a "variant/..." prefix never
+  // matches) AND to the masterEntries branch below (flat last-write-wins
+  // over every master-sourced candidate, no confidence tag consulted at
+  // all). Confirmed live: 'work' shipped the OCR-flagged 'Kam' over two
+  // variant/VERIFIED/HIGH candidates (ga·a/ka·a) purely because Kam
+  // happens to sit last in master_dictionary.json's array order for that
+  // key — same shape for boil/close/empty/leg/strong.
+  //
+  // Scoped narrowly, same restraint as the branch above: only fires when
+  // EVERY non-variant candidate has no independent evidence of its own
+  // (no notes at all, an OCR-import flag, or an explicit UNVERIFIED tag)
+  // — it never overrides a neutral candidate carrying its own citation
+  // (e.g. "outside"/a'palo, tagged CONFIRMED — a real sense-distinction
+  // question, not this bug; deliberately left untouched here, flagged
+  // separately to Claude A rather than guessed at).
+  //
+  // When exactly one variant candidate is VERIFIED/HIGH it wins outright
+  // (verifiedSelection: true, same confidence tier as the branch above).
+  // When two or more are tied (work: ga·a/ka·a; boil/close/empty/leg/
+  // strong all have 2-3-way ties), this deliberately does NOT guess which
+  // is "more correct" — same restraint already used for the neutral-tie
+  // case (see "answer", Claude C audit §3, verifiedNeutral.length !== 1
+  // falls through rather than picking). It only refuses to let the
+  // weak-evidence neutral value win, then falls back to last-write-wins
+  // among the verified variants only — the same fallback mechanism this
+  // function already trusts elsewhere, not a new judgment call — and logs
+  // the remaining tie so it's visible rather than silently shipped as if
+  // settled.
+  // verifiedSelection is deliberately FALSE for both cases below, unlike
+  // the verifiedNeutral branch above — found live via 'smile': its sole
+  // variant/VERIFIED/HIGH candidate ('ka·ding·sim·ik·a') carries a
+  // self-contradicting note ("...its status...is unconfirmed -- possible
+  // synonym or possible stale candidate. Not guessing..."), i.e. the tag
+  // header and the note body disagree (same failure shape as the
+  // NV-031/NV-038 header-vs-body mismatches found 2026-07-29). The
+  // existing grammarOverrides entry for 'smile' exists specifically to
+  // override pickPrimary here — marking this branch's picks as
+  // verifiedSelection:true silently defeated that override (confirmed by
+  // a first pass of this fix, caught via `pickPrimary already selected a
+  // VERIFIED/HIGH candidate` log output before shipping, reverted here).
+  // Unlike verifiedNeutral's regex (anchored, single, hand-reviewed
+  // pattern), this branch's signal is a heuristic over the whole corpus
+  // and shouldn't get the same trust level or block an explicit override.
+  const neutralHasNoEvidence = neutral.length === 0 || neutral.every(e => e.isWeak);
+  if (!isInfinitiveKey && neutralHasNoEvidence) {
+    const verifiedVariants = variants.filter(e => e.isVariantVerified);
+    if (verifiedVariants.length === 1) {
+      return { value: verifiedVariants[0].v, verifiedSelection: false };
+    }
+    if (verifiedVariants.length > 1) {
+      const chosen = verifiedVariants[verifiedVariants.length - 1].v;
+      console.log(`pickPrimary: '${key}' has ${verifiedVariants.length} tied VERIFIED/HIGH variant candidates (${verifiedVariants.map(e => e.v).join(', ')}) and only weak-evidence non-variant candidates. Excluding the weak value; falling back to last-write-wins among the verified candidates only. Needs Claude A disambiguation — not resolved here.`);
+      pickPrimaryVerifiedTies.push({ key, candidates: verifiedVariants.map(e => e.v), chosen });
+      return { value: chosen, verifiedSelection: false };
+    }
+  }
+
   // RC-CANDIDATE-036 (external audit, 2026-07-31; confirmed live via
   // "one dog" -> shipped "sa mang·sa" vs master's "achak mang·sa"):
   // master_dictionary.json is the project's declared canonical source and
@@ -301,7 +415,7 @@ function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}
   Object.keys(mergedValues).forEach(key => {
     const supersededValues = supersededByKey[key];
     const cleanedEntries = mergedValues[key]
-      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, isVerified: e.isVerified, rawKey: e.rawKey, source: e.source }))
+      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, isVerified: e.isVerified, isVariantVerified: e.isVariantVerified, isWeak: e.isWeak, rawKey: e.rawKey, source: e.source }))
       .filter(e => Boolean(e.v))
       // 2026-08-14, Claude B (per Claude C's audit §3 / the "twenty
       // students" case): a candidate whose value is byte-identical to a
@@ -417,6 +531,8 @@ function main() {
           // duplicate, so pickPrimary can still see "master confirms this".
           existing.source = 2;
           if (entry.isVerified) existing.isVerified = true;
+          if (entry.isVariantVerified) existing.isVariantVerified = true;
+          if (!entry.isWeak) existing.isWeak = false;
         }
       });
     });
@@ -565,6 +681,38 @@ function main() {
   } else {
     const staleReportPath = path.join(__dirname, 'docs', 'SUPERSEDED_ONLY_KEYS.md');
     if (fs.existsSync(staleReportPath)) fs.unlinkSync(staleReportPath);
+  }
+
+  if (pickPrimaryVerifiedTies.length) {
+    console.log(`pickPrimary verified-tie report: ${pickPrimaryVerifiedTies.length} key(s), see docs/PICKPRIMARY_VERIFIED_TIES.md`);
+    const tieLines = [
+      '# pickPrimary verified-tie report',
+      '',
+      'Auto-generated by prepare-data.js. Regenerated on every build; do not',
+      `hand-edit. ${pickPrimaryVerifiedTies.length} key(s) currently listed.`,
+      '',
+      'Not a defect list — every key below already ships a genuinely',
+      '`VERIFIED/HIGH` value (2026-08-16 fix: pickPrimary no longer lets an',
+      'OCR-flagged/untagged/`UNVERIFIED` non-variant candidate win over a',
+      '`variant/VERIFIED/HIGH` one, see docs/CLAUDE_B_SESSION_MIGRATION_20260816.md).',
+      'What\'s recorded here is which key had 2+ candidates that were',
+      '*equally* VERIFIED/HIGH, with no signal to prefer one over the',
+      'others — the shipped value was picked by last-write-wins (array',
+      'order), not a linguistic decision. Low priority (nothing here is',
+      'wrong), but each is a real open disambiguation question for',
+      'Claude A whenever there\'s time — same shape as the `answer`',
+      '(Aganchaka/Aganchakani) case already tracked separately.',
+      '',
+      ...pickPrimaryVerifiedTies
+        .slice()
+        .sort((a, b) => a.key.localeCompare(b.key))
+        .map(({ key, candidates, chosen }) => `- \`${key}\`: candidates — ${candidates.map(v => `\`${v}\``).join(', ')} — shipped: \`${chosen}\``),
+      '',
+    ];
+    fs.writeFileSync(path.join(__dirname, 'docs', 'PICKPRIMARY_VERIFIED_TIES.md'), tieLines.join('\n'), 'utf8');
+  } else {
+    const staleTiesPath = path.join(__dirname, 'docs', 'PICKPRIMARY_VERIFIED_TIES.md');
+    if (fs.existsSync(staleTiesPath)) fs.unlinkSync(staleTiesPath);
   }
 
   const masterPath = path.join(__dirname, 'master_dictionary.json');

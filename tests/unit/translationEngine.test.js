@@ -52,7 +52,16 @@ const REGRESSION_CASES = [
   { in: 'i finished eating', expectMethod: ['grammar-assembly'] },
   { in: 'she completed her work', expectMethod: ['grammar-assembly'] },
   { in: "she doesn't eat", expectGaro: 'Ua Cha·ja', expectMethod: ['grammar-assembly'] },
-  { in: "he doesn't work", expectGaro: 'Ua Dakja', expectMethod: ['grammar-assembly'] },
+  // 2026-08-16 (Claude B): expected value updated from 'Ua Dakja' to
+  // 'Ua ka·ja'. 'Dak·a' was the corpus's SUPERSEDED root for "work"
+  // (corpus-internal audit, 2026-08-01); 'ka·a' is the VERIFIED/HIGH
+  // replacement. This test previously baked in the stale root because
+  // pickPrimary had no way to prefer a variant-tagged VERIFIED candidate
+  // over an untagged/OCR neutral one (fixed this session, see
+  // docs/CLAUDE_B_SESSION_MIGRATION_20260816.md) — the grammar-assembly
+  // pipeline was always correctly suffixing whatever root it was given;
+  // only the root itself was wrong.
+  { in: "he doesn't work", expectGaro: 'Ua ka·ja', expectMethod: ['grammar-assembly'] },
 
   // chim/pastcont/gija-construction fixes (e80a6a6)
   { in: 'i used to eat', expectGaro: 'Anga Cha·achim', expectMethod: ['grammar-assembly'] },

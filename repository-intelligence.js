@@ -168,6 +168,12 @@ const KNOWN_CROSS_TABLE_EXCEPTIONS = new Set([
                 // repository-evidence call. NOT fixed in the data.
   // Resolved and removed from this list 2026-07-10 (fixed in the data
   // instead): search, coming, slept, sleeping, laughing.
+  // RC-CANDIDATE-041 (2026-08-16, Claude B) — same shape as 'sing'/'dance'
+  // above: purpose_map.json's 'work'->'dakna' reflects the old,
+  // now-superseded 'Dak·a' root; corrections.json's 'work' was correctly
+  // resynced to 'ka·a' this session (pickPrimary fix). purpose_map.json
+  // itself intentionally not touched — see docs/PENDING_REGRESSION_CASES.md.
+  'work',
 ]);
 
 function normalize(v) {

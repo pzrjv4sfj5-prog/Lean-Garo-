@@ -1774,3 +1774,27 @@ three fix mirrors that shape exactly), (3) likely touching
 `master_dictionary.json`, `garo_dictionary.json`, and compiled
 outputs together. Scoping as its own work item, not fixing ad hoc.
 
+
+## RC-CANDIDATE-041 — "work" corrections/purpose_map divergence (2026-08-15/16, Claude B)
+
+Same shape as the already-allowlisted `sing`/`dance` cases (RC-CANDIDATE-007):
+`purpose_map.json`'s `"work": "dakna"` is the infinitive/purpose form of
+the *old*, now-superseded root (`Dak·a`). This session's `pickPrimary`
+fix (see `docs/CLAUDE_B_SESSION_MIGRATION_20260816.md`) correctly resynced
+`corrections.json`'s `"work"` to `ka·a` (the VERIFIED root), which makes
+the two tables diverge with no shared prefix — Check B's B2 heuristic
+flags this as new.
+
+**Not a bug in either table**: `purpose_map.json` governs a separate
+suffix-construction subsystem and was out of scope for this session's
+`pickPrimary`/override-table fix (same reasoning as `sing`/`dance` —
+`purpose_map` wasn't touched, so it still reflects the pre-fix root).
+Whether `purpose_map.json`'s `"work"` entry should be updated to `ka·na`
+to match is a real question but requires the same care as any
+`purpose_map` edit (verifying the suffix attaches correctly to the new
+root, not just swapping strings) — deliberately not done in this
+session, which was scoped to `pickPrimary`/`compiled_dict.json`
+correctness, not `purpose_map.json` maintenance.
+
+**Allowlisted in Check B (`KNOWN_CROSS_TABLE_EXCEPTIONS`)**, not fixed,
+pending a future `purpose_map.json` review pass.
