@@ -201,24 +201,40 @@ repository:
 claude_a:
   status: active
   next_action: >-
-    2026-08-16b (Claude A, this session's close): scanned Check A's 12
+    2026-08-16c (Claude A, this session's close): PO said "fix all"
+    covering the 3 Next Recommended Tasks from the prior session. Did
+    NOT bulk-fix -- evidence-first forbids guessing 140 words. Instead:
+    (1) hortative -ha/-na: re-checked citation status per-entry, found
+    the prior session's "~15-entry conflict" claim was overstated -- only
+    "let's eat"/"let's eat food" actually had a citation mismatch,
+    fixed; the rest (sleep/drink/sit/play/work/hang out) are uncited on
+    BOTH sides, genuinely unresolvable without native input, left open.
+    (2) 141-key pickPrimary tie backlog: scanned all for ranking/citation
+    signals, fixed the one real case (angry -- native's own note ranks
+    ka'o nanga "most common"), left the rest untouched with reasons
+    (free variants with no stated preference, POS splits that need
+    engine logic not data picks, or a case-collapse merging genuinely
+    different words). (3) Also found and fixed a naming collision -- my
+    prior session's RC-CANDIDATE-012 duplicated an existing unrelated
+    ID, renumbered to 039. Full gate green: 218/218 tests, 8127/8127
+    entries, 0 new repository-intelligence violations, 0 sweep errors.
+    Pushed a656c22, confirmed origin match. No queued native-validation
+    item. See docs/CLAUDE_A_SESSION_MIGRATION_20260816.md for full
+    detail.
+  next_action_prior_new: >-
+    2026-08-16b (Claude A): scanned Check A's 12
     report-only raka candidates per PO request, found + fixed a real
     regression: "i want to drink" had reverted to the raka'd
-    ring·a="sing" homophone (RC-CANDIDATE-009, originally fixed
+    ring·a="sing" homophone (RC-CANDIDATE-009/039, originally fixed
     2026-07-23). Root cause traced to master_dictionary.json (the
     canonical compile source) never having been updated when
     corrections.json was fixed, plus two more uncited entries there
     mislabeling the same homophone as "Drink". All three fixed in
     master_dictionary.json this session, corrections.json re-fixed,
     permanent regression test added
-    (tests/unit/rc009_drink_sing_raka.test.js). Full gate re-verified:
+    (tests/unit/rc039_drink_sing_raka.test.js). Full gate re-verified:
     218/218 tests, 8127/8127 dictionary entries, repository-intelligence.js
-    0 new violations, runtime-sweep 14523/14523 calls 0 errors. Separate
-    finding NOT fixed, flagged for a dedicated session: the "let's
-    [verb]" hortative pattern conflicts systematically between
-    master_dictionary.json (-ha, has a VERIFIED/HIGH/200sentences
-    citation) and corrections.json (-na, uncited, ~15 entries) — see
-    docs/PENDING_REGRESSION_CASES.md RC-CANDIDATE-012. No queued
+    0 new violations, runtime-sweep 14523/14523 calls 0 errors.
     native-validation item.
   next_action_note_workstate_anomaly: >-
     2026-08-16b (Claude A): found on resync — the field immediately
