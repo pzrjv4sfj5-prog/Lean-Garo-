@@ -3488,7 +3488,8 @@
   {
     "english": "tax",
     "garo": "Kajina",
-    "category": "general"
+    "category": "general",
+    "notes": "2026-08-16, Claude A, full-corpus dedup audit: untagged legacy import, same value as native-confirmed 'Tax'->'Kajina' entry (idx 8369, Thangseng via PO, 2026-07-22). Not conflicting, annotated for clarity only, no value change."
   },
   {
     "english": "signature",
@@ -5182,7 +5183,8 @@
   {
     "english": "answer the question",
     "garo": "Sing·ani·ko aganchaka·bo",
-    "category": "general"
+    "category": "general",
+    "notes": "Usage example — verb sense (NV-077, 2026-08-16 annotation): demonstrates 'aganchaka' (root Aganchaka) in imperative/command form '-bo'. Companion noun-sense example: idx 1008."
   },
   {
     "english": "i have a question",
@@ -5504,7 +5506,8 @@
   {
     "english": "what will be the answer?",
     "garo": "Aganchakani·ara mai ong·en?",
-    "category": "general"
+    "category": "general",
+    "notes": "Usage example — noun sense (NV-077, 2026-08-16 annotation): demonstrates 'Aganchakani' (the noun 'answer') in a question frame. Companion verb-sense example: idx 944."
   },
   {
     "english": "why did you tell him to go?",
@@ -17104,7 +17107,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — 2026-08-16, Claude A, NV-077 reconfirmation (2026-08-16, Project Owner direct native relay): Aganchakani=answer (noun), Aganchaka=to answer (verb) — final word, no raka dot in either form. 'in·chak·a' carries no independent date/citation (bare 'variant/VERIFIED/HIGH' tag) and was never native-confirmed; superseded in favor of Aganchakani. Retained per citation discipline, not deleted. Was: variant/VERIFIED/HIGH"
   },
   {
     "english": "Answer",
@@ -17112,7 +17115,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — 2026-08-16, Claude A, NV-077 reconfirmation (2026-08-16, Project Owner direct native relay): Aganchakani=answer (noun), Aganchaka=to answer (verb) — final word, no raka dot in either form. 'ku·chak·a' carries no independent date/citation (bare 'variant/VERIFIED/HIGH' tag) and was never native-confirmed; superseded in favor of Aganchakani. Note: this was the value shipping at runtime prior to this fix (case-insensitive pickPrimary pool tie). Retained per citation discipline, not deleted. Was: variant/VERIFIED/HIGH"
   },
   {
     "english": "Ant",
@@ -21752,7 +21755,7 @@
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "SUPERSEDED — root-error correction 2026-08-11 (Claude A): \"do·a\" is not a bird-root spelling variant, it's a different word entirely (\"climb\"/\"upward\" — see master_dictionary.json \"Climb\"/\"upward\" entries). Wrong root baked into what was mistakenly treated as the VERIFIED/HIGH reference example. Corrected to \"do·o mang·chiking\" per bird-root closure (Thangseng, 2026-08-11). Retained per citation discipline. Prior notes: VERIFIED/HIGH"
+    "notes": "SUPERSEDED — root-error correction 2026-08-11 (Claude A): \"do·a\" is not a bird-root spelling variant, it's a different word entirely (\"climb\"/\"upward\" — see master_dictionary.json \"Climb\"/\"upward\" entries). Wrong root baked into what was mistakenly treated as the VERIFIED/HIGH reference example. Corrected form ships as a separate replacement entry (idx 9245, \"ten birds\"->\"do·o mang·chiking\", VERIFIED/HIGH) — this row's own garo field was intentionally left as the original wrong value 'do·a mang·chiking' for citation-discipline provenance, not edited in place. 2026-08-16 audit note (Claude A): clarified wording, no value change — prior wording read as if this row itself had been corrected in place, which it wasn't."
   },
   {
     "english": "Testicle",
@@ -47638,7 +47641,7 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/doc7"
+    "notes": "SUPERSEDED — 2026-08-16, Claude A, NV-077 reconfirmation (2026-08-16, Project Owner direct native relay): Aganchakani=answer (noun), Aganchaka=to answer (verb) — final word, no raka dot in either form. 'a·gan·chak·na' is a legacy doc7-import syllable-fragmented spelling contradicting the confirmed no-raka form. Superseded in favor of 'Aganchaka' (idx 7647, promoted this session). Retained per citation discipline, not deleted. Was: VERIFIED/HIGH/doc7"
   },
   {
     "english": "To be able",
@@ -52421,7 +52424,7 @@
     "garo": "Aganchaka",
     "category": null,
     "pos": "v.",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'to answer' has VERIFIED/HIGH form(s) ['a·gan·chak·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH — NV-077 reconfirmation (2026-08-16, Project Owner direct native relay): Aganchakani=answer (noun), Aganchaka=to answer (verb) — final word, no raka dot in either form. Promoted this session: its prior blocker (a·gan·chak·na, idx 6933) has been superseded as a raka-fragmented legacy import. 'Aganchaka' is the correct verb form (bare/citation and infinitive-gloss sense coincide for this root)."
   },
   {
     "english": "to reply",
@@ -52451,25 +52454,29 @@
     "english": "An answer",
     "garo": "Aganchaka",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "SUPERSEDED — 2026-08-16, Claude A, NV-077 reconfirmation (2026-08-16, Project Owner direct native relay): Aganchakani=answer (noun), Aganchaka=to answer (verb) — final word, no raka dot in either form. legacy doc7 import mislabels 'Aganchaka' pos as noun ('An answer'); NV-077 confirms Aganchaka is verb-only, correct noun form is Aganchakani. Superseded, not relabeled in place, to preserve the legacy gloss for provenance. Retained per citation discipline, not deleted. Was: "
   },
   {
     "english": "a reply",
     "garo": "Aganchaka",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "SUPERSEDED — 2026-08-16, Claude A, NV-077 reconfirmation (2026-08-16, Project Owner direct native relay): Aganchakani=answer (noun), Aganchaka=to answer (verb) — final word, no raka dot in either form. legacy doc7 import mislabels 'Aganchaka' pos as noun ('a reply'); NV-077 confirms Aganchaka is verb-only, correct noun form is Aganchakani. Superseded, not relabeled in place, to preserve the legacy gloss for provenance. Retained per citation discipline, not deleted. Was: "
   },
   {
     "english": "a respond",
     "garo": "Aganchaka",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "SUPERSEDED — 2026-08-16, Claude A, NV-077 reconfirmation (2026-08-16, Project Owner direct native relay): Aganchakani=answer (noun), Aganchaka=to answer (verb) — final word, no raka dot in either form. legacy doc7 import mislabels 'Aganchaka' pos as noun ('a respond'); NV-077 confirms Aganchaka is verb-only, correct noun form is Aganchakani. Superseded, not relabeled in place, to preserve the legacy gloss for provenance. Retained per citation discipline, not deleted. Was: "
   },
   {
     "english": "a rejoinder.",
     "garo": "Aganchaka",
     "category": null,
-    "pos": "n."
+    "pos": "n.",
+    "notes": "SUPERSEDED — 2026-08-16, Claude A, NV-077 reconfirmation (2026-08-16, Project Owner direct native relay): Aganchakani=answer (noun), Aganchaka=to answer (verb) — final word, no raka dot in either form. legacy doc7 import mislabels 'Aganchaka' pos as noun ('a rejoinder.'); NV-077 confirms Aganchaka is verb-only, correct noun form is Aganchakani. Superseded, not relabeled in place, to preserve the legacy gloss for provenance. Retained per citation discipline, not deleted. Was: "
   },
   {
     "english": "To speak in ridd-les",
@@ -58197,7 +58204,7 @@
     "garo": "Ka·donga",
     "category": null,
     "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]"
+    "notes": "SUPERSEDED — 2026-08-16, Claude A, full-corpus dedup audit: redundant OCR import, same value as already-VERIFIED 'Hope'->'ka·donga' entry (idx 3371, part of the 3-way a·sa/ka·donga/mik·sok·a variant set). Retained per citation discipline, not deleted. Was: [OCR-flagged for review: ocr_confidence=High]"
   },
   {
     "english": "To have some hope",

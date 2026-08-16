@@ -479,6 +479,22 @@ repository:
 claude_a:
   status: active
   next_action: >-
+    2026-08-16 (this session's close): no open native-validation item,
+    no queued task. Project Owner directly reconfirmed NV-077's POS
+    split (Aganchakani=noun/answer, Aganchaka=verb/to answer, no raka)
+    and gave explicit "resolve it" instruction — closed this session,
+    see migration_doc. Also confirmed adultery/mature/jeon-jeo were
+    already correctly closed (no data changes needed there, verified
+    against compiled_dict.json). Full-corpus dedup audit run per PO
+    request — 9 exact-duplicate (english,garo) pairs found, all but 3
+    are the established retain-both-for-citation pattern (SUPERSEDED
+    legacy + VERIFIED replacement, same value) and were left untouched;
+    3 got hygiene fixes (see migration_doc). Claude B's pickPrimary
+    tie-break for 'answer' (verb vs noun POS tie) is UNCHANGED as an
+    open item — this session reduced the pool from a noisy 4-way tie to
+    a clean, correctly-diagnosed 2-way POS tie, did not resolve it
+    engine-side (not my lane).
+  next_action_prior_5: >-
     2026-08-16 (Claude C re-audit pointer, docs/CLAUDE_C_AUDIT_20260816.md):
     no action for you — your SUPERSEDED-tagging step (cb53f1c) is
     confirmed done and correct. Re-audit is zero-drift, nothing new.
@@ -539,7 +555,10 @@ claude_a:
     bulk value, but it still composed from the stale 'Porai·gipa' root
     until this session's fix.
   migration_doc: >-
-    docs/CLAUDE_A_SESSION_MIGRATION_20260815C.md - this session's close.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260816.md - this session's close.
+    See below for prior session.
+  migration_doc_prior_current: >-
+    docs/CLAUDE_A_SESSION_MIGRATION_20260815C.md - prior session's close.
     Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260815.md, HEAD ==
     origin/main == ef8a742 at start (3 commits ahead of that doc's
     edf5837 checkpoint — all Claude B docs-only session-close commits,
@@ -2537,6 +2556,26 @@ claude_c:
 claude_b:
   status: active
   next_action: >-
+    2026-08-16 (Claude A, data-side update — read this FIRST, changes
+    the shape of the tie-break you're implementing): Project
+    Owner-reconfirmed NV-077 this session. Superseded 4 uncited legacy
+    'Aganchaka'-mislabeled-as-noun rows and 2 uncited 'Answer' noun
+    variants (in·chak·a, ku·chak·a — no date/citation, never
+    native-confirmed) that were previously in the VERIFIED pool for the
+    case-insensitive 'answer'/'Answer' key. Also superseded a
+    raka-fragmented legacy 'To answer' row (a·gan·chak·na) and promoted
+    the clean 'Aganchaka' row in its place. The pool for 'answer' is now
+    a clean 2-way tie: Aganchaka (verb, idx 411) vs Aganchakani (noun,
+    idx 3113) — no more noise. compiled_dict.json['answer'] currently
+    resolves to 'Aganchakani' (last-write-wins picked the noun); your
+    tie-break still needs to make that POS-aware/deliberate rather than
+    incidental. Full gate re-verified after this change: 8128/8128
+    entries (was 8132 — 4 keys with no remaining VERIFIED candidate,
+    'An answer'/'a reply'/'a respond'/'a rejoinder.', correctly moved to
+    held/SUPERSEDED_ONLY, not shipped), 215/215 tests,
+    repository-intelligence.js 0 new violations, runtime-sweep
+    14525/14525 calls 0 errors.
+  next_action_prior_new: >-
     2026-08-16, IMPORTANT (Claude C, verified via origin API, not local
     claim): an intervening Claude B session reported doing this exact
     work — rebasing onto Claude A's SUPERSEDED tag, tracing the 'answer'
