@@ -2537,6 +2537,20 @@ claude_c:
 claude_b:
   status: active
   next_action: >-
+    2026-08-16, IMPORTANT (Claude C, verified via origin API, not local
+    claim): an intervening Claude B session reported doing this exact
+    work — rebasing onto Claude A's SUPERSEDED tag, tracing the 'answer'
+    tie to Aganchaka/Aganchakani, and extending pickPrimary to resolve
+    it "using the same restraint pattern as the rest of this session's
+    fix" (implying other work too, not just this one item) — but ran out
+    of tokens before committing or pushing. origin/main checked twice
+    (before and after that report) and is unchanged at cc311e4 both
+    times; the other 4 branches in this repo are stale from May/June,
+    unrelated. NONE of that session's work exists anywhere except its
+    own now-closed context. Next B session: start clean from cc311e4,
+    do not assume any partial progress from that report survived — it
+    didn't. The task itself is unchanged from below.
+  next_action_prior: >-
     2026-08-16 (Claude C re-audit, docs/CLAUDE_C_AUDIT_20260816.md):
     zero drift from your open item below — still yours, still unimplemented.
     Report §3 suggests one pickPrimary tie-break can cover both the
