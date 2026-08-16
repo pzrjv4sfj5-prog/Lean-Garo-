@@ -374,7 +374,8 @@ claude_a:
     is the only one left). Needs the NV-054 native-validation channel, not an engineering fix — Claude
     B has no new information on it, just re-flagging so it isn''t lost now that the doc''s other items
     have closed.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260814.md - prior session's close. Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md;
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260816c.md - this session's close (2026-08-16c). See migration_doc_prior_2026_08_16b for prior same-day session.
+  migration_doc_prior_2026_08_16b: docs/CLAUDE_A_SESSION_MIGRATION_20260814.md - prior session's close. Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md;
     resolved NV-072 through NV-075 (person/student/teacher root conflict fully closed, coin root corrected,
     new 'te' house classifier, rice-grain via 'rong', water/food container-word mass-noun pattern confirmed
     and generalized 1-20, no-raka + no-native-word clarifications). Only 'bol' vehicle-classifier scope
