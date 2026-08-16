@@ -2454,7 +2454,7 @@ claude_c:
     2026-08-15: docs/CLAUDE_C_AUDIT_20260815.md archived after both its
     items (student root, 85-key resync) verified closed by
     CLAUDE_C_AUDIT_20260815B.md.
-  latest_audit_head: PENDING_THIS_COMMIT
+  latest_audit_head: e9a9fcf
   latest_report: >-
     docs/CLAUDE_C_AUDIT_20260816.md — re-audit pass, zero drift, zero new
     findings. Confirmed both items below still open and unchanged: (1)
