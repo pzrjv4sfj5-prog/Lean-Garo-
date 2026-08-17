@@ -201,6 +201,23 @@ repository:
 claude_a:
   status: active
   next_action: >-
+    2026-08-17 (Claude A, this session's close): resync-only session,
+    zero drift from 2026-08-16c (all gate numbers matched exactly:
+    8127 entries, 218/218 tests, 0 new repository-intelligence
+    violations, 14523/14523 runtime-sweep calls). Compiled the
+    standing 140-key pickPrimary verified-tie backlog plus the 6
+    hortative -ha/-na pairs and 2 standalone grammar questions
+    (jeon/jeo, where Bano/Bachi default) into one consolidated
+    141-item Thangseng relay batch, docs/THANGSENG_RELAY_BATCH_20260817.md
+    -- drafted and pushed (06cb27c), NOT yet sent to Thangseng. Nothing
+    in it is a bug -- every candidate already ships VERIFIED/HIGH,
+    batch only asks which is preferred/default. Mid-session, cleanly
+    fast-forwarded onto Claude B's 303c0c4 (resync audit, no code
+    fixes). No dictionary/data content changed this session. See
+    docs/CLAUDE_A_SESSION_MIGRATION_20260817.md for full detail. Next
+    session: send batch or await Thangseng answers; if answers already
+    in hand, expect a large multi-part NV-logging session.
+  next_action_prior_new: >-
     2026-08-16c (Claude A, this session's close): PO said "fix all"
     covering the 3 Next Recommended Tasks from the prior session. Did
     NOT bulk-fix -- evidence-first forbids guessing 140 words. Instead:
@@ -374,7 +391,8 @@ claude_a:
     is the only one left). Needs the NV-054 native-validation channel, not an engineering fix — Claude
     B has no new information on it, just re-flagging so it isn''t lost now that the doc''s other items
     have closed.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260816c.md - this session's close (2026-08-16c). See migration_doc_prior_2026_08_16b for prior same-day session.
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260817.md - this session's close (2026-08-17). See migration_doc_prior_20260816c for prior session.
+  migration_doc_prior_20260816c: docs/CLAUDE_A_SESSION_MIGRATION_20260816c.md - prior session's close (2026-08-16c). See migration_doc_prior_2026_08_16b for prior same-day session.
   migration_doc_prior_2026_08_16b: docs/CLAUDE_A_SESSION_MIGRATION_20260814.md - prior session's close. Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md;
     resolved NV-072 through NV-075 (person/student/teacher root conflict fully closed, coin root corrected,
     new 'te' house classifier, rice-grain via 'rong', water/food container-word mass-noun pattern confirmed
