@@ -201,22 +201,41 @@ repository:
 claude_a:
   status: active
   next_action: >-
-    2026-08-17 (Claude A, this session's close): resync-only session,
-    zero drift from 2026-08-16c (all gate numbers matched exactly:
-    8127 entries, 218/218 tests, 0 new repository-intelligence
-    violations, 14523/14523 runtime-sweep calls). Compiled the
-    standing 140-key pickPrimary verified-tie backlog plus the 6
-    hortative -ha/-na pairs and 2 standalone grammar questions
-    (jeon/jeo, where Bano/Bachi default) into one consolidated
-    141-item Thangseng relay batch, docs/THANGSENG_RELAY_BATCH_20260817.md
-    -- drafted and pushed (06cb27c), NOT yet sent to Thangseng. Nothing
-    in it is a bug -- every candidate already ships VERIFIED/HIGH,
-    batch only asks which is preferred/default. Mid-session, cleanly
-    fast-forwarded onto Claude B's 303c0c4 (resync audit, no code
-    fixes). No dictionary/data content changed this session. See
-    docs/CLAUDE_A_SESSION_MIGRATION_20260817.md for full detail. Next
-    session: send batch or await Thangseng answers; if answers already
-    in hand, expect a large multi-part NV-logging session.
+    2026-08-17b (Claude A, this session's close): applied the Thangseng
+    relay batch cross-reference (NV-080) -- 127 of 141 pickPrimary items
+    closed against master_dictionary.json + corrections.json. 14 items
+    deliberately left OPEN, no native evidence to close without guessing
+    (full list in NV-080): 82 Brave/84 Hope duplicate-encoding conflict
+    (Ka·donga for both), 94 Agree, 138/139/140 let's sit/play/work
+    (relay batch's own doc flags these as contradicting RULE 2 table),
+    26 Last, 96 Bear (verb sense), 133 Where-relative jeon/jeo, 133b
+    "Bao", 44 Gong (instrument sense), small/wet Chon·a duplicate. Also
+    fixed: gong corrupted data row, bear animal/verb polysemy (kept off
+    compile-dominant anchor -- flagged for Claude B, single-key schema
+    can't hold two senses), market-phrase contradiction vs NV-060
+    (flagged not resolved), corrections.json synced (6 stale entries:
+    let's drink, let's hang out, long, rain, love, work -- the last 4
+    went stale mid-session as a side effect of today's dictionary
+    changes, not pre-existing drift). 34 phrase_maps.js values (Claude
+    B's lane, not touched directly) allowlisted in
+    src/data/known_cross_source_conflicts.json pending Claude B sync --
+    see Next Recommended Tasks. translationEngine.test.js "he doesn't
+    work" fixture updated to match corrected work root. Gate: 8127
+    entries, 218/218 tests, 0 new repository-intelligence violations,
+    14523/14523 runtime-sweep, 16 pre-existing pickPrimary ties (none
+    introduced -- caught and fixed a duplicate-VERIFIED-row bug of my
+    own mid-session before it could ship). Pushed d217f54.
+    Next Recommended Tasks: (1) hand phrase_maps.js sync list (34 keys,
+    see known_cross_source_conflicts.json "phrase_maps:*" entries added
+    today) to Claude B. (2) 82/84 Ka·donga duplicate-encoding conflict
+    needs a fresh native question via Tridip/Thangseng. (3) 138/139/140
+    hortative RULE 2 table internal inconsistency needs native
+    re-confirmation.
+  next_action_prior: >-
+    2026-08-17 (Claude A, resync-only close): zero drift from 2026-08-16c.
+    Compiled the 141-item Thangseng relay batch,
+    docs/THANGSENG_RELAY_BATCH_20260817.md -- drafted and pushed, not
+    yet sent. See docs/CLAUDE_A_SESSION_MIGRATION_20260817.md.
   next_action_prior_new: >-
     2026-08-16c (Claude A, this session's close): PO said "fix all"
     covering the 3 Next Recommended Tasks from the prior session. Did
