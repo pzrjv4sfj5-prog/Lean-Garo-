@@ -3215,11 +3215,11 @@
     "notes": "VERIFIED/HIGH — corpus-internal audit 2026-08-01 (Claude A), aligning tag with RULE-044 (Upgraded to Verified/High, Project Owner closure 2026-07-31): Bano is the no-movement stationary locative form, directly evidenced by RULE-044's own citation of 'Na·ara bano?' = 'where are you?'. No new linguistic claim, annotation-only correction."
   },
   {
-    "english": "where?",
+    "english": "where (object placement)",
     "garo": "Bao",
     "category": "general",
     "pos": "adv.",
-    "notes": "VERIFIED/HIGH — NV-047, Thangseng relay via Tridip, 2026-07-31. Bare/short interrogative 'where?', given as a direct definition, distinct from 'Bano' above (which carries the -o no-movement locative suffix per RULE-044 - not yet confirmed whether these are simply free variants or have a usage distinction; keyed separately as 'where?' rather than reusing the 'where' key to avoid a duplicate-key clobber risk, cf. RC-CANDIDATE-036 this session). UPDATED — NV-054, 2026-08-03: native directly clarifies Bao is NOT normally used for places at all (contra the prior open question about free-variant status); it is used for the location of objects (e.g. \"Angni ki·tap bao?\" = \"Where is my book?\"), and is probably a shortened form of Bano. RULE-044 updated in parallel to reflect this."
+    "notes": "VERIFIED/HIGH — re-keyed 2026-08-18 (Claude A), citing existing NV-054 (Thangseng relay via Tridip, 2026-08-03), reconfirmed verbatim by Project Owner same wording 2026-08-18. Originally keyed as generic 'where?' (NV-047, 2026-07-31) before NV-054 clarified Bao is NOT used for places/general interrogative 'where?' at all — it's specifically for the location of an object already placed somewhere, e.g. \"Angni ki·tap bao?\" = \"Where is my book?\", and is probably a shortened form of Bano. Re-keyed off the generic 'where?' slot to stop it compiling as the general answer (that slot now falls through to the existing where/Bano vs where/Bachi tie, unaffected here — separate open pickPrimary tie, not touched by this fix). RULE-044.yaml already carried this nuance in prose; the master_dictionary.json key itself had not been re-synced until now — this closes relay-batch item 133b."
   },
   {
     "english": "why",

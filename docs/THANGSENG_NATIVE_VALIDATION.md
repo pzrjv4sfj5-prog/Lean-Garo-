@@ -4268,3 +4268,18 @@ pre-existing pickPrimary ties — none introduced by this batch, reduced from
 mid-session); `test-dictionary.js` 8127/8127; `npm test` 218/218;
 `repository-intelligence.js` 0 new violations (223 known/allowlisted);
 `runtime-error-sweep.mjs` 14523/14523, 0 errors.
+
+## Relay item 133b closure — "Bao" re-keyed off generic "where?" — 2026-08-18
+
+Project Owner re-supplied the NV-054 native quote verbatim in chat
+(2026-08-18), prompting a check of whether NV-054's finding had actually
+been synced into `master_dictionary.json` — it had not. RULE-044.yaml
+carried the corrected linguistic understanding since 2026-08-03, but the
+dictionary entry itself was still keyed as generic `"where?"` -> `Bao`,
+still compiling as the answer to plain "where?" queries.
+
+**Fix:** re-keyed `master_dictionary.json`'s `Bao` entry from english key
+`"where?"` to `"where (object placement)"`, citing existing NV-054 (no new
+NV number needed — same evidence, just applied to the schema). Notes
+rewritten to explain the re-key and stop it compiling as a general "where?"
+answer. Closes relay-batch item 133b.
