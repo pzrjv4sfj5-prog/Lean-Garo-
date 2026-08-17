@@ -4204,3 +4204,67 @@ the evidence package left open in
 
 Not addressed this round: `angry`/`ka·o·nang·a` raka-count question from
 the same handoff doc, still open.
+
+## NV-080 (2026-08-17, Thangseng relay via Tridip — pickPrimary consolidated batch)
+
+Cross-reference of `docs/THANGSENG_RELAY_BATCH_20260817.md` (141 items)
+against native response document `Garo_Master_Dictionary_need_verification.docx`,
+applied to `master_dictionary.json` / `src/data/corrections.json` this session.
+
+**127 items closed** (65 CONFIRMS — native form matched one of the proposed
+options; 57 CORRECTS — native gave a different form, promoted/added as
+VERIFIED/HIGH, non-selected options marked `SUPERSEDED`; 1 new word —
+`blink` = `Mik-chip-a`, surfaced while disambiguating item 129 *wink*, which
+was itself corrected: `wink` = `Mik·kem·a`, and the prior `Mik-chip-a` row
+under `wink` was superseded — it was actually mislabeled *blink*).
+
+Also applied: **hoe** = both `Gitchima`/`git·chi` and `kodal`/`ko·dal` are
+independently valid (dual-valid pair, cited, tie is correct not a defect).
+**gong** — lowercase corrupted row (`garo` field held a stray gloss
+"Money and currency" instead of a translation) retired; native clarifies
+`gong` is a money-counting classifier suffix, not a standalone noun — the
+percussion-instrument sense (`gon·ta`/`rang`) is still open. **bear** — the
+ANIMAL sense is now confirmed (`Matmak`); the carry/endure VERB sense
+(`ba·a`/`mak·bil`/`nang·a`) is still open — kept off the compile-dominant
+anchor deliberately since `bear` is a polysemous key and letting the animal
+sense win pickPrimary would silently break verb-sense translations (flagged
+for Claude B). **"The market is nearby"** — native this round rejected
+both suffixed forms from NV-060 (`Bajalde sambaon`/`-de`,
+`Bajalara sambaon`/`-ara`) in favor of unsuffixed `Bajal sambaon`; this
+CONTRADICTS NV-060 (2026-08-05) — both NV-060 rows marked SUPERSEDED with
+an explicit contradiction flag rather than silently resolved; standalone
+`Market` = `Bajal` reconfirmed. **let's drink** / **let's hang out** —
+`corrections.json` synced to `Hai ringaha` / `Hai roromna`.
+**long/rain/love/work** — `corrections.json` was stale against today's
+newly-confirmed compiled values; synced. 34 additional stale
+`phrase_maps.js` values (engine file, Claude B's lane) logged to
+`src/data/known_cross_source_conflicts.json` pending Claude B sync — see
+handoff note. `tests/unit/translationEngine.test.js` "he doesn't work"
+fixture updated (`ka·ja` → `Dak·ja`) to match the corrected `work` root.
+
+**14 items deliberately left OPEN — not force-closed, no native evidence
+to close them without guessing:**
+- **82 Brave / 84 Hope** — same form `Ka·donga` now recorded for both;
+  duplicate-encoding conflict, needs native re-check which is which (or
+  whether both are legitimately `Ka·donga` with a third form for the other).
+- **94 Agree** — held open at Claude B's request.
+- **138/139/140 Let's sit/play/work** — the relay batch's own cross-reference
+  flags these as contradicting the dictionary's RULE 2 table (an internal
+  Native-response inconsistency), explicitly "not resolved here" in the
+  source document. Not applied.
+- **26 Last** (ordinal/final sense), **96 Bear (verb sense)**,
+  **133 Where-relative (jeon/jeo)**, **133b "Bao"** (new form raised by
+  Tridip, never addressed by Thangseng) — no matching native entry found.
+- **44 Gong (instrument sense)** — classifier sense confirmed, instrument
+  sense still unconfirmed.
+- **'small'/'wet' → `Chon·a`** — native listed the same form for both
+  meanings; flagged as-is per the relay batch's own note, not resolved.
+- **early / demand (POS split) / 132** — no dictionary edit needed (native
+  gave non-defaulting or already-consistent answers).
+
+Gate at close: `prepare-data.js` clean (8127 compiled entries, 16
+pre-existing pickPrimary ties — none introduced by this batch, reduced from
+64 pre-batch as duplicate-VERIFIED-tie side effects were caught and fixed
+mid-session); `test-dictionary.js` 8127/8127; `npm test` 218/218;
+`repository-intelligence.js` 0 new violations (223 known/allowlisted);
+`runtime-error-sweep.mjs` 14523/14523, 0 errors.

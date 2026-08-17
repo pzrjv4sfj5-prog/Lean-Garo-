@@ -61,7 +61,7 @@ const REGRESSION_CASES = [
   // docs/CLAUDE_B_SESSION_MIGRATION_20260816.md) — the grammar-assembly
   // pipeline was always correctly suffixing whatever root it was given;
   // only the root itself was wrong.
-  { in: "he doesn't work", expectGaro: 'Ua ka·ja', expectMethod: ['grammar-assembly'] },
+  { in: "he doesn't work", expectGaro: 'Ua Dak·ja', expectMethod: ['grammar-assembly'] }, // updated 2026-08-17: 'work' root corrected ka·a -> Dak·a, native relay NV-080
 
   // chim/pastcont/gija-construction fixes (e80a6a6)
   { in: 'i used to eat', expectGaro: 'Anga Cha·achim', expectMethod: ['grammar-assembly'] },

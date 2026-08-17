@@ -202,7 +202,7 @@
   "second (ordinal)": "time",
   "third (ordinal)": "numbers",
   "last": "general",
-  "half": "numbers",
+  "half": "general",
   "quarter": "general",
   "double": "general",
   "zero / none": "general",
@@ -826,7 +826,7 @@
   "drive": "general",
   "pull": "general",
   "swim": "general",
-  "climb": "travel",
+  "climb": "general",
   "jump": "general",
   "crawl": "general",
   "roll": "general",
@@ -3928,5 +3928,6 @@
   "seventeen airplane": "travel",
   "eighteen airplane": "travel",
   "nineteen airplane": "travel",
-  "twenty airplane": "travel"
+  "twenty airplane": "travel",
+  "blink": "general"
 }
