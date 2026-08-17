@@ -1430,7 +1430,28 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-16 (Claude A, data-side update — read this FIRST, changes the shape of the tie-break
+  next_action: '2026-08-17 (Claude B, resync/audit session, no code change): STALE FIELD FOUND AND CORRECTED
+    — this next_action (below, kept as next_action_stale_20260816) described the Aganchaka/Aganchakani
+    tie-break as still unimplemented, but that was already done and pushed at cb1f1f5 (see
+    docs/CLAUDE_B_SESSION_MIGRATION_20260816.md) BEFORE this file''s own repository.head/last_updated
+    fields were written — the top-level repository block was correctly updated on close but this
+    sub-field was not overwritten, leaving it misleading if read on its own. Re-verified from scratch
+    this session (215/215 tests -> now 218/218 after Claude A''s a656c22, 8127/8127 dictionary, 0 lint
+    errors, repository-intelligence.js 0 new violations, HEAD==origin/main at 6ffc5aa, clean tree).
+    Investigated the one item Claude A flagged as my lane in a656c22 (''where''/''Where'' case-collapse,
+    Bano vs Bachi): confirmed live via translate() that this is NOT a runtime bug — phrase_maps.js
+    already overrides ''where'' to ''Bano'' and separately routes ''where are you going'' to ''Na·a bachi
+    re·angenga?'' via corrections.json, so both senses already ship correctly today regardless of the
+    compiled_dict.json-level collision. Root cause why this can''t be fixed by preserving key casing at
+    compile time: normalizationEngine.js''s normalizeInput() lowercases all user input before lookup, so
+    ''where''/''Where'' become byte-identical before compiled_dict.json is ever consulted — a case-sensitive
+    compiled_dict key could never be selected differently at runtime under the current lookup
+    architecture. This is the same underlying shape as the demand/answer POS-split problem (one flat
+    key, two legitimate senses) — genuinely needs a sense-aware schema change if it''s ever to be solved
+    at the compile layer instead of via phrase-level overrides, not a quick case-handling fix. Documenting
+    rather than guessing at a schema migration solo. No other item in my lane is currently actionable
+    without native/Claude A linguistic input (see pending_next_session below, unchanged).'
+  next_action_stale_20260816: '2026-08-16 (Claude A, data-side update — read this FIRST, changes the shape of the tie-break
     you''re implementing): Project Owner-reconfirmed NV-077 this session. Superseded 4 uncited legacy
     ''Aganchaka''-mislabeled-as-noun rows and 2 uncited ''Answer'' noun variants (in·chak·a, ku·chak·a
     — no date/citation, never native-confirmed) that were previously in the VERIFIED pool for the case-insensitive
@@ -1441,7 +1462,8 @@ claude_b:
     to make that POS-aware/deliberate rather than incidental. Full gate re-verified after this change:
     8128/8128 entries (was 8132 — 4 keys with no remaining VERIFIED candidate, ''An answer''/''a reply''/''a
     respond''/''a rejoinder.'', correctly moved to held/SUPERSEDED_ONLY, not shipped), 215/215 tests,
-    repository-intelligence.js 0 new violations, runtime-sweep 14525/14525 calls 0 errors.'
+    repository-intelligence.js 0 new violations, runtime-sweep 14525/14525 calls 0 errors. [STALE per
+    Claude B 2026-08-17 -- superseded by next_action above, kept for history only.]'
   next_action_prior_new: '2026-08-16, IMPORTANT (Claude C, verified via origin API, not local claim):
     an intervening Claude B session reported doing this exact work — rebasing onto Claude A''s SUPERSEDED
     tag, tracing the ''answer'' tie to Aganchaka/Aganchakani, and extending pickPrimary to resolve it
