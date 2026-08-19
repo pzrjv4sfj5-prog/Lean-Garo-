@@ -60,12 +60,41 @@ HEAD matched exactly.
 |---|---|
 | 82 Brave / 84 Hope | Both `Ka·donga` — duplicate-encoding conflict |
 | 94 Agree | Held at Claude B's request |
-| 138/139/140 Let's sit/play/work | Relay doc's own text contradicts the RULE 2 table |
-| 26 Last | No native entry for the ordinal/final sense |
+| 26 Last | No native entry for the ordinal/final sense (NV-081 confirms `Mija` is recency-only, does NOT cover this sense — stays open) |
 | 96 Bear (verb sense) | No native entry for carry/endure; animal sense (`Matmak`) confirmed |
 | 44 Gong (instrument) | Classifier sense confirmed; instrument sense still unconfirmed |
 
 133b ("Bao") is now CLOSED — see above. Removed from this table.
+
+## Closures — 2026-08-19, RULE 2 doc + NV-081
+- **138 Let's sit — CLOSED.** `Hai Asongna` (suffix -na). Owner-supplied
+  RULE 2 table matches existing repo pattern (`corrections.json`,
+  `VALIDATION_CORPUS.md`, `GRAMMAR_RULE_CATALOGUE.md`,
+  `GRAMMAR_CONFIDENCE_MATRIX.md` all already use -na, e.g. `Hai cha·na`).
+  Supersedes stale `Hai asongha` from `GRAMMAR_FLAGS_20260625.md`.
+- **139 Let's play — CLOSED.** `Hai kalana` (suffix -na). Same basis.
+  Supersedes stale `Hai kalaha`.
+- **140 Let's work — CLOSED.** `Hai Kam kana`. Root confirmed as
+  `Kam ka` (not `Dak-a`) — verified no collision: `Dak·a` (noun "work",
+  NV-080) and `Kam ka·a` (verb "to work", independently CONFIRMED under
+  RULE-041, Thangseng relay 2026-07-22) are separate POS entries in
+  different schema slots. RULE 2's "let's work" is a verb-root HAI form,
+  correctly maps to `Kam ka·a`/RULE-041, not the noun entry. No
+  overwrite.
+- **Mija/antio duplicate-encoding — CLOSED, narrowly.** NV-081 (new,
+  logged this session — see `THANGSENG_NATIVE_VALIDATION.md`) confirms
+  `Mija` = temporal-recency modifier, co-occurring with `antio` in
+  `Mija antio` ("last week"), based on two genuine relayed sentences.
+  Full "free noun `Anti` vs. bound-locative `antio`" grammar rule and
+  the wider tense-paradigm table (next week/month, tomorrow) were
+  **not** part of the native data — that was Gemini/Owner analysis
+  layered on top — and are held as an open hypothesis, not applied.
+  `Sop·ta` is untouched: no native evidence addresses it, and deletion
+  was explicitly refused regardless of source per this project's
+  retain-and-tag policy.
+- **26 Last — stays OPEN**, per NV-081's own finding: `Mija` is
+  recency-only and explicitly does not cover the ordinal/final sense
+  this item tracks.
 
 ## Additional closures — 2026-08-19 QA audit propagation-gap corrections
 - **133 (jeon/jeo main-vs-short-form) — CLOSED.** Already answered by

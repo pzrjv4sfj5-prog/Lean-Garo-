@@ -4317,3 +4317,47 @@ sweep):
 
 Remaining 11 items on the table are genuinely open — no prior native
 evidence found for any of them. Not touched.
+
+## NV-081 (2026-08-19, Thangseng relay via Tridip / Project Owner — Gemini-formatted transmission)
+
+**Source note:** relayed to Claude A as a structured grammatical
+analysis with tables and "Use Case" framing, attributed to Thangseng
+via the Project Owner but restructured by Gemini before reaching this
+session. Only the two sentence pairs below are treated as native data;
+everything else in that transmission (free/bound-noun rule, full
+week/day/month tense paradigm, `Sop·ta` "borrowed synonym" claim) is
+Gemini/Owner analysis layered on top of these two sentences, not a
+direct native statement, and is NOT applied here — see "Held, not
+applied" below.
+
+**Confirmed sentences (native data):**
+- "I saw the film last week." = `Ang·a ia film ko nia mija antio.`
+- "How was the journey yesterday?" = `Mijal songre·ara nam·a ma?`
+
+**What this supports (VERIFIED/HIGH, narrow):**
+- `Mija` = recency/previous-time modifier ("last" in the temporal
+  sense), confirmed co-occurring with `antio` in a "last week" context.
+- `Mijal` = "yesterday" context, same root family as `Mija`.
+- Confirms `Mija` does NOT carry the ordinal/final-in-sequence sense —
+  consistent with keeping item 26 open for that sense, still covered
+  separately by `bai·a`/`ses`.
+
+**Held, not applied (no native confirmation, analysis-only):**
+- The claim that `Anti` is a free-standing counting-noun root and
+  `antio` its bound locative inflection — plausible, not confirmed.
+  Only the compound `Mija antio` has been seen in an actual sentence;
+  no sentence confirms free-standing `Anti` (e.g. `Anti Gittam` for
+  "three weeks") was ever said by Thangseng.
+- `Mikkang antio` / `Mikkang jao` ("next week" / "next month"),
+  `Kinal` / `Kinalo` ("tomorrow") — no supporting sentence at all,
+  pure extrapolation from the paradigm table. NOT VERIFIED.
+- `Sop·ta` as a "borrowed synonym" to be deprioritized — no native
+  statement addresses `Sop·ta` at all. Existing VERIFIED/HIGH status
+  unchanged.
+
+**Action:** duplicate-encoding flag on `Mija`/`antio` closes on the
+narrow finding above. The full tense-paradigm table stays an open
+hypothesis pending a real confirmation round through Tridip — plain
+sentences, not pre-analyzed. `Sop·ta` is untouched (see repo retention
+policy — SUPERSEDED-tag-not-delete applies regardless of source, and in
+this case there isn't even evidence to tag it against).
