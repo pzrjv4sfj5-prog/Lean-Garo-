@@ -2368,16 +2368,39 @@ claude_b_resync_sweep:
     (genuinely blocked on Claude A/native input). ~26 keys hit tied-VERIFIED-candidate ambiguity, same
     shape as answer -- these need a POS/sense-aware schema fix (structural, not per-key), flagged but not
     designed this session per scope discipline (one task at a time).'
-  next_action: 'Next Claude B session: (1) apply the same manual-verification discipline used on "answer"
-    this session to the remaining ~69 sweep-found mismatches before any bulk resync -- do not trust
-    resync-stale-overrides.mjs output blindly for keys with case-variant OR tied-candidate master_dictionary.json
-    entries without checking whether the tie/case-split is a genuine sense distinction first. (2) the
-    corrections:answer / phrase_maps:answer entries in known_cross_source_conflicts.json are intentionally
-    still open -- this is a design gap (case-insensitive lookup key colliding with a native POS distinction
-    the dictionary tries to encode via case), needs a schema-level fix (e.g. explicit pos field) design
-    question for Claude A/Project Owner, not a mechanical resync target. (3) build the permanent scripted
-    gate recommended in the prior QA audit block above (auto-run this class of sweep in CI, not ad-hoc) --
-    not done this session, still backlog item 1 from the diagnostic report.'
+  next_action: 'Backlog item closed this session (see below). Remaining next action: build the permanent
+    scripted gate recommended in the QA audit block above (auto-run this class of sweep in CI, not ad-hoc)
+    -- still not done, still backlog item 1 from the original diagnostic report.'
+  followup_20260819b:
+    status: done
+    role: 'Applied the same manual-verification discipline used on "answer" to the ~69 remaining
+      sweep-found mismatches, per Project Owner instruction to close the backlog and notify Claude A
+      of anything blocked at its end.'
+    finding: 'Rewrote the sweep to require (a) the override match a documented SUPERSEDED master_dictionary.json
+      row for the exact key -- not just disagree with the current VERIFIED value -- and (b) no case-variant
+      of the key carry an unresolved OPEN sense the override might belong to. Result: ZERO of the remaining
+      187 known_cross_source_conflicts.json entries qualify for mechanical resync. Caught one more
+      answer-shaped trap this pass: "bear" looked safe under the looser first-pass sweep (single VERIFIED
+      candidate, Matmak, for the animal sense) but master_dictionary.json marks the capitalized "Bear" verb
+      sense (carry/endure) as explicitly OPEN with 3 unconfirmed candidates -- one of which, nang.a, is the
+      exact value currently live in phrase_maps.js/corrections.json. Resyncing to Matmak would have silently
+      discarded a plausibly-intentional verb-sense override. Left untouched, flagged for Claude A.'
+    breakdown: '1 case/sense-risk item needing disambiguation (bear); 2 tied-VERIFIED-candidate items needing
+      a primary pick (elephant, outside); 20 items where the override disagrees with master but does not
+      match any documented SUPERSEDED row, so staleness cannot be mechanically proven (clever, come here,
+      current, forest, i am fine, i am sick, it is raining, lets go to the market, mountain, see, skin,
+      smell, smile, strong, to pluck, to see, enough, i am hungry, i dont understand -- some duplicated
+      across both corrections.json and phrase_maps.js); 160 items with no VERIFIED/HIGH master_dictionary.json
+      candidate to check against at all (genuinely open, native-validation backlog).'
+    handoff: 'docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md (full detail + table) and
+      docs/CLAUDE_B_RESYNC_SWEEP_20260819_data.json (machine-readable, reproducible against current
+      master_dictionary.json + known_cross_source_conflicts.json). No data files touched by this pass --
+      audit output only, zero linguistic judgment calls made.'
+    next_action: 'Claude A: read the handoff doc above. Recommend folding the 2 tied-candidate items into
+      the existing docs/PICKPRIMARY_VERIFIED_TIES.md backlog, and the 160 no-candidate items into the next
+      Thangseng relay batch. The 20 no-superseded-match items and the 1 bear case/sense item need your
+      direct judgment (not a relay item necessarily -- may be resolvable from existing repo context) before
+      any further mechanical resync is possible on them.'
 chatgpt:
   status: unknown
   current_task: unknown

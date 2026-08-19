@@ -1,0 +1,1252 @@
+{
+  "case_or_sense_risk": [
+    {
+      "prefix": "phrase_maps",
+      "key": "bear",
+      "overrideValue": "nang·a",
+      "reason": "OPEN unresolved-sense row present",
+      "rows": [
+        {
+          "english": "bear",
+          "garo": "Matmak",
+          "notes": "Native-confirmed 2026-08-17 (Thangseng relay, NV-080), confidence VERIFIED/HIGH: 'bear' the ANIMAL ="
+        },
+        {
+          "english": "Bear",
+          "garo": "ba·a",
+          "notes": "OPEN — native relay NV-080 (2026-08-17) explicitly did NOT confirm or reject this candidate for the "
+        },
+        {
+          "english": "Bear",
+          "garo": "mak·bil",
+          "notes": "OPEN — native relay NV-080 (2026-08-17) explicitly did NOT confirm or reject this candidate for the "
+        },
+        {
+          "english": "Bear",
+          "garo": "nang·a",
+          "notes": "OPEN — native relay NV-080 (2026-08-17) explicitly did NOT confirm or reject this candidate for the "
+        }
+      ]
+    }
+  ],
+  "no_superseded_match": [
+    {
+      "prefix": "corrections",
+      "key": "clever",
+      "overrideValue": "seng·a",
+      "verifiedTarget": "hai·man·a ku·man·a",
+      "rows": [
+        {
+          "english": "clever",
+          "garo": "Seng·a·gipa",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "Clever",
+          "garo": "hai·man·a ku·man·a",
+          "notes": "variant/VERIFIED/HIGH"
+        },
+        {
+          "english": "Clever",
+          "garo": "Chalak",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "come here",
+      "overrideValue": "Ianona re·babo",
+      "verifiedTarget": "Ianona re·babo!",
+      "rows": [
+        {
+          "english": "come here",
+          "garo": "Ianona re·babo.",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "Come here",
+          "garo": "Ianona re·babo!",
+          "notes": "variant/VERIFIED/HIGH"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "current",
+      "overrideValue": "karen",
+      "verifiedTarget": "Dongenggipa",
+      "rows": [
+        {
+          "english": "current",
+          "garo": "da·o ong·enggipa",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "Current",
+          "garo": "Dongenggipa",
+          "notes": "variant/VERIFIED/HIGH"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "forest",
+      "overrideValue": "mongma",
+      "verifiedTarget": "bring",
+      "rows": [
+        {
+          "english": "forest",
+          "garo": "Buring",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "Forest",
+          "garo": "bring",
+          "notes": "variant/VERIFIED/HIGH"
+        },
+        {
+          "english": "forest",
+          "garo": "Burung",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "forest",
+          "garo": "Burung·bolgrim",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "forest",
+          "garo": "Burungni",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "i am fine",
+      "overrideValue": "Anga namenga",
+      "verifiedTarget": "Ang·a namengava.",
+      "rows": [
+        {
+          "english": "i am fine",
+          "garo": "Anga namenga.",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "I am fine",
+          "garo": "Ang·a namengava.",
+          "notes": "variant/VERIFIED/HIGH"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "i am sick",
+      "overrideValue": "Anga sakamenga",
+      "verifiedTarget": "Anga kene dongka",
+      "rows": [
+        {
+          "english": "I am sick",
+          "garo": "Anga kene dongka",
+          "notes": "VERIFIED/HIGH/200sentences"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "it is raining",
+      "overrideValue": "Mikka waenga",
+      "verifiedTarget": "Mikka wabenga",
+      "rows": [
+        {
+          "english": "it is raining",
+          "garo": "Mikka ring·a",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "It is raining",
+          "garo": "Mikka wabenga",
+          "notes": "VERIFIED/HIGH/200sentences"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "let's go to the market",
+      "overrideValue": "Hai bajalchi re·na",
+      "verifiedTarget": "Hai bajalchi re'na",
+      "rows": [
+        {
+          "english": "let's go to the market",
+          "garo": "Hai bajalchi re'na",
+          "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, "
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "mountain",
+      "overrideValue": "A'bri",
+      "verifiedTarget": "ha·bri",
+      "rows": [
+        {
+          "english": "mountain",
+          "garo": "A·bri",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        },
+        {
+          "english": "Mountain",
+          "garo": "ha·bri",
+          "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consol"
+        },
+        {
+          "english": "Mountain",
+          "garo": "ha·chik",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "see",
+      "overrideValue": "Nika",
+      "verifiedTarget": "nia",
+      "rows": [
+        {
+          "english": "see",
+          "garo": "nik·a",
+          "notes": "UNVERIFIED/HIGH"
+        },
+        {
+          "english": "see",
+          "garo": "nia",
+          "notes": "variant/VERIFIED/HIGH — native speaker (Thangseng), WhatsApp 2026-05-10, confirm"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "skin",
+      "overrideValue": "bigi",
+      "verifiedTarget": "bi·gil",
+      "rows": [
+        {
+          "english": "skin",
+          "garo": "Bigil",
+          "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the "
+        },
+        {
+          "english": "Skin",
+          "garo": "bi·gil",
+          "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consol"
+        },
+        {
+          "english": "Skin",
+          "garo": "sol·a",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "smell",
+      "overrideValue": "biba",
+      "verifiedTarget": "Gingsika",
+      "rows": [
+        {
+          "english": "smell",
+          "garo": "Gingsika",
+          "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consol"
+        },
+        {
+          "english": "Smell",
+          "garo": "sal·srip·a",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        },
+        {
+          "english": "Smell",
+          "garo": "sim·il·ot·a",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "smile",
+      "overrideValue": "ka·dingsmita",
+      "verifiedTarget": "ka·ding·sim·ik·a",
+      "rows": [
+        {
+          "english": "Smile",
+          "garo": "ka·ding·sim·ik·a",
+          "notes": "variant/VERIFIED/HIGH -- flagged 2026-08-06: Ka·dingsmita is now the PO/native-c"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "strong",
+      "overrideValue": "bilak",
+      "verifiedTarget": "Bilaka",
+      "rows": [
+        {
+          "english": "strong",
+          "garo": "Bilaka",
+          "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consol"
+        },
+        {
+          "english": "Strong",
+          "garo": "bil·ong·a",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        },
+        {
+          "english": "Strong",
+          "garo": "bil·rak·a",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        },
+        {
+          "english": "Strong",
+          "garo": "mang·rak·a",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        },
+        {
+          "english": "strong",
+          "garo": "bil·ak·a",
+          "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the "
+        },
+        {
+          "english": "strong",
+          "garo": "Gong·raka",
+          "notes": "[OCR-flagged for review: ocr_confidence=High]"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "to pluck",
+      "overrideValue": "aka",
+      "verifiedTarget": "ak·na",
+      "rows": [
+        {
+          "english": "To pluck",
+          "garo": "ak·na",
+          "notes": "VERIFIED/HIGH/doc7"
+        }
+      ]
+    },
+    {
+      "prefix": "corrections",
+      "key": "to see",
+      "overrideValue": "nika",
+      "verifiedTarget": "nia",
+      "rows": [
+        {
+          "english": "to see",
+          "garo": "nia",
+          "notes": "variant/VERIFIED/HIGH — native speaker (Thangseng), WhatsApp 2026-05-10, confirm"
+        }
+      ]
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "enough",
+      "overrideValue": "Chu·onga!",
+      "verifiedTarget": "chu·ong·a",
+      "rows": [
+        {
+          "english": "enough",
+          "garo": "Chu·onga",
+          "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the "
+        },
+        {
+          "english": "Enough",
+          "garo": "chu·ong·a",
+          "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consol"
+        },
+        {
+          "english": "Enough",
+          "garo": "gip·a",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        },
+        {
+          "english": "Enough",
+          "garo": "hem·hem",
+          "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed fo"
+        },
+        {
+          "english": "enough",
+          "garo": "chip·a",
+          "notes": "UNVERIFIED/HIGH v:chu·-ong-a / gip-a / hem-hem"
+        }
+      ]
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "i am hungry",
+      "overrideValue": "Anga okkria",
+      "verifiedTarget": "Anga okkrienga",
+      "rows": [
+        {
+          "english": "I am hungry",
+          "garo": "Anga okkrienga",
+          "notes": "VERIFIED/HIGH/200sentences"
+        }
+      ]
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "i am sick",
+      "overrideValue": "Anga sakama",
+      "verifiedTarget": "Anga kene dongka",
+      "rows": [
+        {
+          "english": "I am sick",
+          "garo": "Anga kene dongka",
+          "notes": "VERIFIED/HIGH/200sentences"
+        }
+      ]
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "i don't understand",
+      "overrideValue": "Anga ma·sija",
+      "verifiedTarget": "Anga man·ja",
+      "rows": [
+        {
+          "english": "i don't understand",
+          "garo": "Anga uija",
+          "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated imp"
+        },
+        {
+          "english": "I don't understand",
+          "garo": "Anga man·ja",
+          "notes": "VERIFIED/HIGH/200sentences"
+        }
+      ]
+    }
+  ],
+  "no_verified_candidate": [
+    {
+      "prefix": "corrections",
+      "key": "a tree",
+      "overrideValue": "Bol pangsa"
+    },
+    {
+      "prefix": "corrections",
+      "key": "backbone",
+      "overrideValue": "kangkare"
+    },
+    {
+      "prefix": "corrections",
+      "key": "basically",
+      "overrideValue": "chong·motan"
+    },
+    {
+      "prefix": "corrections",
+      "key": "be happy",
+      "overrideValue": "kusi ong·bo"
+    },
+    {
+      "prefix": "corrections",
+      "key": "beautiful",
+      "overrideValue": "Sila"
+    },
+    {
+      "prefix": "corrections",
+      "key": "begin",
+      "overrideValue": "a'ba·cheng·na"
+    },
+    {
+      "prefix": "corrections",
+      "key": "bored",
+      "overrideValue": "Arata"
+    },
+    {
+      "prefix": "corrections",
+      "key": "bring",
+      "overrideValue": "ra·babo"
+    },
+    {
+      "prefix": "corrections",
+      "key": "choose",
+      "overrideValue": "basea"
+    },
+    {
+      "prefix": "corrections",
+      "key": "coin",
+      "overrideValue": "tangka bisil"
+    },
+    {
+      "prefix": "corrections",
+      "key": "coins",
+      "overrideValue": "tangka bisil"
+    },
+    {
+      "prefix": "corrections",
+      "key": "coming",
+      "overrideValue": "re·baenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "cooked",
+      "overrideValue": "Song·aha"
+    },
+    {
+      "prefix": "corrections",
+      "key": "cooking",
+      "overrideValue": "Song·enga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "curry",
+      "overrideValue": "bi·jak"
+    },
+    {
+      "prefix": "corrections",
+      "key": "daily",
+      "overrideValue": "Salanti"
+    },
+    {
+      "prefix": "corrections",
+      "key": "dance",
+      "overrideValue": "Chroka"
+    },
+    {
+      "prefix": "corrections",
+      "key": "dangerous",
+      "overrideValue": "Namen kenbegnigipa"
+    },
+    {
+      "prefix": "corrections",
+      "key": "darkness",
+      "overrideValue": "Andalani"
+    },
+    {
+      "prefix": "corrections",
+      "key": "dead",
+      "overrideValue": "Manggisi"
+    },
+    {
+      "prefix": "corrections",
+      "key": "deceive",
+      "overrideValue": "Tol·napa"
+    },
+    {
+      "prefix": "corrections",
+      "key": "did you eat",
+      "overrideValue": "Na·a Cha·aha ma?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "did you go to market",
+      "overrideValue": "Na·a Bajal Re·anga ma?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "did you have lunch",
+      "overrideValue": "Na·a mi cha·jok ma?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "don't eat",
+      "overrideValue": "cha·nabe"
+    },
+    {
+      "prefix": "corrections",
+      "key": "don't go",
+      "overrideValue": "re·angnabe"
+    },
+    {
+      "prefix": "corrections",
+      "key": "down",
+      "overrideValue": "Ka·ma"
+    },
+    {
+      "prefix": "corrections",
+      "key": "dried",
+      "overrideValue": "tipjok"
+    },
+    {
+      "prefix": "corrections",
+      "key": "eaten",
+      "overrideValue": "cha·jok"
+    },
+    {
+      "prefix": "corrections",
+      "key": "goat",
+      "overrideValue": "dobok"
+    },
+    {
+      "prefix": "corrections",
+      "key": "gossip",
+      "overrideValue": "a·gan·jo·jo·na"
+    },
+    {
+      "prefix": "corrections",
+      "key": "happy",
+      "overrideValue": "kusi"
+    },
+    {
+      "prefix": "corrections",
+      "key": "have you eaten",
+      "overrideValue": "Na·a Cha·jok ma?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "he has eaten",
+      "overrideValue": "Ua cha·jok"
+    },
+    {
+      "prefix": "corrections",
+      "key": "home",
+      "overrideValue": "Nok"
+    },
+    {
+      "prefix": "corrections",
+      "key": "how",
+      "overrideValue": "maidake"
+    },
+    {
+      "prefix": "corrections",
+      "key": "how are you",
+      "overrideValue": "Na·a namenga ma?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "how much is this",
+      "overrideValue": "Iako baita dam?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "hurry up",
+      "overrideValue": "Tarkbo"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i am eating",
+      "overrideValue": "Anga cha·enga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i am happy",
+      "overrideValue": "Anga kusi ong·a"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i am sad",
+      "overrideValue": "Anga duk ong·a"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i ate",
+      "overrideValue": "Anga cha·aha"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i ate rice",
+      "overrideValue": "Anga mi cha·aha"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i drank",
+      "overrideValue": "Anga ringaha"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i have a pen",
+      "overrideValue": "Ango pen donga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i have two children",
+      "overrideValue": "Ang·o bi·sa sak·gni donga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i want to come",
+      "overrideValue": "Anga re·ba·na sikenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i want to drink",
+      "overrideValue": "Anga ringna sikenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i want to eat",
+      "overrideValue": "Anga cha·na sikenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i want to go",
+      "overrideValue": "Anga re·ang·na sikenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i want to pray",
+      "overrideValue": "Anga bi·a·na sikenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i want to sleep",
+      "overrideValue": "Anga tusia·na sikenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i want to study",
+      "overrideValue": "Anga pora·na sikenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "i want to work",
+      "overrideValue": "Anga dakna sikenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "if",
+      "overrideValue": "Ode"
+    },
+    {
+      "prefix": "corrections",
+      "key": "it is not good",
+      "overrideValue": "nama·gija"
+    },
+    {
+      "prefix": "corrections",
+      "key": "knowledge",
+      "overrideValue": "Uiani ba ma·siani"
+    },
+    {
+      "prefix": "corrections",
+      "key": "land",
+      "overrideValue": "a'a"
+    },
+    {
+      "prefix": "corrections",
+      "key": "lead",
+      "overrideValue": "dila"
+    },
+    {
+      "prefix": "corrections",
+      "key": "let's drink",
+      "overrideValue": "Hai ringaha"
+    },
+    {
+      "prefix": "corrections",
+      "key": "let's eat",
+      "overrideValue": "Hai cha·ha"
+    },
+    {
+      "prefix": "corrections",
+      "key": "let's play",
+      "overrideValue": "Hai kalna"
+    },
+    {
+      "prefix": "corrections",
+      "key": "let's sit",
+      "overrideValue": "Hai asongna"
+    },
+    {
+      "prefix": "corrections",
+      "key": "let's work",
+      "overrideValue": "Hai dakna"
+    },
+    {
+      "prefix": "corrections",
+      "key": "live",
+      "overrideValue": "donga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "living",
+      "overrideValue": "dongenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "log",
+      "overrideValue": "dot"
+    },
+    {
+      "prefix": "corrections",
+      "key": "look",
+      "overrideValue": "Nibo"
+    },
+    {
+      "prefix": "corrections",
+      "key": "luck",
+      "overrideValue": "rasong"
+    },
+    {
+      "prefix": "corrections",
+      "key": "must",
+      "overrideValue": "nang·a"
+    },
+    {
+      "prefix": "corrections",
+      "key": "my dog",
+      "overrideValue": "ang·ni achak"
+    },
+    {
+      "prefix": "corrections",
+      "key": "my father",
+      "overrideValue": "ang·ni baba"
+    },
+    {
+      "prefix": "corrections",
+      "key": "my house",
+      "overrideValue": "ang·ni nok"
+    },
+    {
+      "prefix": "corrections",
+      "key": "my mother",
+      "overrideValue": "ang·ni aai"
+    },
+    {
+      "prefix": "corrections",
+      "key": "newspaper",
+      "overrideValue": "janera"
+    },
+    {
+      "prefix": "corrections",
+      "key": "nipple",
+      "overrideValue": "Sok kute"
+    },
+    {
+      "prefix": "corrections",
+      "key": "no",
+      "overrideValue": "Ihing"
+    },
+    {
+      "prefix": "corrections",
+      "key": "only",
+      "overrideValue": "saksakosan"
+    },
+    {
+      "prefix": "corrections",
+      "key": "person",
+      "overrideValue": "mande"
+    },
+    {
+      "prefix": "corrections",
+      "key": "plant",
+      "overrideValue": "Songna"
+    },
+    {
+      "prefix": "corrections",
+      "key": "playing",
+      "overrideValue": "kal·enga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "pray",
+      "overrideValue": "Bi·abo"
+    },
+    {
+      "prefix": "corrections",
+      "key": "roam",
+      "overrideValue": "rorama"
+    },
+    {
+      "prefix": "corrections",
+      "key": "roof",
+      "overrideValue": "nokking"
+    },
+    {
+      "prefix": "corrections",
+      "key": "search",
+      "overrideValue": "Sandia"
+    },
+    {
+      "prefix": "corrections",
+      "key": "self",
+      "overrideValue": "an·tang"
+    },
+    {
+      "prefix": "corrections",
+      "key": "sit down",
+      "overrideValue": "Asongbo"
+    },
+    {
+      "prefix": "corrections",
+      "key": "sitting",
+      "overrideValue": "asongenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "smelly",
+      "overrideValue": "senga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "smoke",
+      "overrideValue": "wal·ku"
+    },
+    {
+      "prefix": "corrections",
+      "key": "someone",
+      "overrideValue": "Saoba"
+    },
+    {
+      "prefix": "corrections",
+      "key": "song",
+      "overrideValue": "git"
+    },
+    {
+      "prefix": "corrections",
+      "key": "soul",
+      "overrideValue": "Gisik"
+    },
+    {
+      "prefix": "corrections",
+      "key": "stay",
+      "overrideValue": "donga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "stop",
+      "overrideValue": "Sengbo"
+    },
+    {
+      "prefix": "corrections",
+      "key": "studying",
+      "overrideValue": "poraenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "take revenge",
+      "overrideValue": "a·jak soka"
+    },
+    {
+      "prefix": "corrections",
+      "key": "tell",
+      "overrideValue": "agana"
+    },
+    {
+      "prefix": "corrections",
+      "key": "telling",
+      "overrideValue": "aganeng"
+    },
+    {
+      "prefix": "corrections",
+      "key": "they are working",
+      "overrideValue": "Uamang dakenga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "thief",
+      "overrideValue": "cha·u"
+    },
+    {
+      "prefix": "corrections",
+      "key": "to spread",
+      "overrideValue": "barama"
+    },
+    {
+      "prefix": "corrections",
+      "key": "to throw",
+      "overrideValue": "goata"
+    },
+    {
+      "prefix": "corrections",
+      "key": "very",
+      "overrideValue": "namen"
+    },
+    {
+      "prefix": "corrections",
+      "key": "wait",
+      "overrideValue": "Damo"
+    },
+    {
+      "prefix": "corrections",
+      "key": "walking",
+      "overrideValue": "re·enga"
+    },
+    {
+      "prefix": "corrections",
+      "key": "well",
+      "overrideValue": "chiakol"
+    },
+    {
+      "prefix": "corrections",
+      "key": "what is your name",
+      "overrideValue": "Nang·ni bimung mai?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "what job do you do",
+      "overrideValue": "Na·a mai kamko ka·a?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "when",
+      "overrideValue": "Basaku"
+    },
+    {
+      "prefix": "corrections",
+      "key": "where is the market",
+      "overrideValue": "Bajal bano?"
+    },
+    {
+      "prefix": "corrections",
+      "key": "why",
+      "overrideValue": "Maina"
+    },
+    {
+      "prefix": "corrections",
+      "key": "why did you come",
+      "overrideValue": "Na·a maini gimin re·baa"
+    },
+    {
+      "prefix": "corrections",
+      "key": "wrist",
+      "overrideValue": "jak gito"
+    },
+    {
+      "prefix": "corrections",
+      "key": "yes",
+      "overrideValue": "Am"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "beautiful",
+      "overrideValue": "Sila"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "bland",
+      "overrideValue": "Chibroka"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "build",
+      "overrideValue": "Rika"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "bye",
+      "overrideValue": "De"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "child",
+      "overrideValue": "Bi·sa"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "cold",
+      "overrideValue": "Sin·a"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "come",
+      "overrideValue": "Re·ba·a"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "cut",
+      "overrideValue": "Den·a"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "doctor",
+      "overrideValue": "Sam·on·gipa"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "down",
+      "overrideValue": "Ka·ma"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "few",
+      "overrideValue": "On·titi"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "give me water",
+      "overrideValue": "Angna chi on·bo"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "go",
+      "overrideValue": "Re·anga"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "go away",
+      "overrideValue": "Re·angbo."
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "help",
+      "overrideValue": "Betoi"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "help me",
+      "overrideValue": "Angko dakchakbo"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "hot",
+      "overrideValue": "Ding·a"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "how",
+      "overrideValue": "Maidake"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "how many",
+      "overrideValue": "Baitarong"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "how much",
+      "overrideValue": "Baita?"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "hurry",
+      "overrideValue": "Tarkbo!"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "hurry up",
+      "overrideValue": "Tarkbo!"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "i don't have",
+      "overrideValue": "Anga dong·ja"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "i don't know",
+      "overrideValue": "Anga uija"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "i understand",
+      "overrideValue": "Anga ma·sia"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "no",
+      "overrideValue": "Ong·ja"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "quick",
+      "overrideValue": "Tarkbo!"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "run",
+      "overrideValue": "Kat·a"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "smelly",
+      "overrideValue": "Senga"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "sorry",
+      "overrideValue": "Kema·bi·a."
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "stand",
+      "overrideValue": "Chadenga"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "stand up",
+      "overrideValue": "Chadenga."
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "stop",
+      "overrideValue": "Sengbo"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "tasteless",
+      "overrideValue": "Chibroka"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "teach",
+      "overrideValue": "Sikie on·a"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "thank you very much",
+      "overrideValue": "Mittela dakpile."
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "wait",
+      "overrideValue": "Damo / Sengbo"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "wash",
+      "overrideValue": "Su·srong·a"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "what is your name",
+      "overrideValue": "Nang·ni bimungara maia?"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "where are you from",
+      "overrideValue": "Na·a bano·ni?"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "which",
+      "overrideValue": "Badia"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "why",
+      "overrideValue": "Maina"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "you",
+      "overrideValue": "Na·a"
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "you did well",
+      "overrideValue": "Na·a nama dak·a"
+    }
+  ],
+  "tied": [
+    {
+      "prefix": "corrections",
+      "key": "elephant",
+      "overrideValue": "buring·o",
+      "candidates": [
+        "mong",
+        "hati",
+        "mongma"
+      ]
+    },
+    {
+      "prefix": "phrase_maps",
+      "key": "outside",
+      "overrideValue": "A·pal",
+      "candidates": [
+        "baire",
+        "hagate"
+      ]
+    }
+  ]
+}
