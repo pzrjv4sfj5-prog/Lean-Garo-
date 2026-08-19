@@ -4283,3 +4283,37 @@ still compiling as the answer to plain "where?" queries.
 NV number needed — same evidence, just applied to the schema). Notes
 rewritten to explain the re-key and stop it compiling as a general "where?"
 answer. Closes relay-batch item 133b.
+
+## Open-items list correction — 2026-08-19 (QA audit, propagation gap, no new native input)
+
+Two items on the "13 open, evidence-blocked" table (see
+docs/CLAUDE_A_SESSION_MIGRATION_20260818.md) were re-checked against
+existing repo evidence and found already answered — same gap-recurrence
+pattern already documented elsewhere (Rule 8, duplicate-representation
+sweep):
+
+- **Item 133 (jeon/jeo, main-vs-short-form)** — the 2026-08-18 migration
+  doc lists this as "Both confirmed valid, no main/short-form ranking."
+  That's incorrect: **NV-064 (2026-08-06)** directly states *"jeo = short
+  form of jeon"* — the ranking was given, 12 days before this open-items
+  table was last written. No new native round needed; the answer already
+  exists in this document, just wasn't propagated to the open-items
+  tracker. Item 133 should be marked CLOSED, citing NV-064.
+
+- **"small/wet → Chon·a duplicate"** — flagged as "same form recorded for
+  both meanings." Checked `master_dictionary.json` directly: NV-080
+  itself already resolved this distinctly within the same batch — `small`
+  = `Chon·a` (VERIFIED/HIGH), `wet` = `so·si·a` (VERIFIED/HIGH). No shared
+  form remains at the data layer. This item should be marked CLOSED,
+  citing NV-080 (already-cited evidence, no new question needed).
+
+  Separately (engineering, not linguistic — see Claude B's lane): the
+  reason this *looked* unresolved at runtime is that `phrase_maps.js`
+  independently held a stale `small` -> `rong·chon·a` override (a
+  SUPERSEDED value), masking the correct compiled value. Fixed same
+  session — see repository.last_updated / WORKSTATE for detail. Not a
+  linguistic finding, listed here only because it's what made the
+  already-closed data-layer question look open.
+
+Remaining 11 items on the table are genuinely open — no prior native
+evidence found for any of them. Not touched.

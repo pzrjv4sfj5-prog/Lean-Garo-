@@ -2287,6 +2287,44 @@ claude_b_prior:
     and commit canonical rule(s); Thangseng native validation on Rules 30/31.'
   expected_output: Repository fully bootstrap-able from .ai/ + PROJECT_STATUS.md with zero conversational
     context required
+qa_audit:
+  status: active
+  role: External QA pass (2026-08-19), same charter as Claude C (read/verify, live translate() checks
+    over doc-reading, propose fixes with citations, no new linguistic content invented).
+  latest_report: '2026-08-19 (fixes applied and pushed with Project Owner-supplied PAT, per standard
+    session-scoped-PAT policy, used inline in push URL only, never persisted). Found and fixed 3 items,
+    all masking bugs of the same shape already documented in this project (Boil/Close/Chop-class, the
+    9-key defect, the ''answer'' tie): (1) Claude A''s 2026-08-18 "baba/Aa.i confirmed correct" verdict
+    was wrong — checked compiled_dict.json only, not the full runtime cascade. phrase_maps.js still held
+    pre-NV-080 values (father->pa·a, mother->na·gi·pa) ahead of compiled_dict.json in lookup order; translate()
+    was still serving the SUPERSEDED values. Fixed: phrase_maps.js father->ba·ba, mother->Aa.i, matching
+    NV-080. (2) Same bug independently found on ''small'' (phrase_maps.js still had SUPERSEDED rong·chon·a
+    instead of NV-080''s VERIFIED Chon·a) — not previously flagged by any role, found via direct translate()
+    smoke-test, not doc-reading. Fixed: phrase_maps.js small->Chon·a. (3) Two propagation-gap corrections
+    to the open-items tracking (docs/THANGSENG_NATIVE_VALIDATION.md, new section) — item 133 (jeon/jeo
+    main-vs-short-form) already answered by NV-064 (2026-08-06, "jeo = short form of jeon") but re-flagged
+    as open in the 2026-08-18 migration doc; "small/wet Chon·a duplicate" already resolved distinctly within
+    NV-080 itself (small=Chon·a, wet=so·si·a) but also re-flagged. Both should be marked CLOSED by Claude
+    A next session, citing existing evidence — no new native round needed. Verification after all 3 fixes:
+    8127/8127 dictionary entries, 218/218 unit tests, 0 lint errors, repository-intelligence.js 0 new violations
+    (Check F known-mismatches dropped 223->220, the 3 fixed keys), live translate() re-confirmed for all
+    4 affected words (father/mother/small/wet) resolving to their VERIFIED/HIGH values. Remaining 11 items
+    on the 2026-08-18 open-items table checked individually against THANGSENG_NATIVE_VALIDATION.md — no
+    prior evidence found for any, correctly still open, not touched. 117 other phrase_maps:* known/allowlisted
+    keys in known_cross_source_conflicts.json NOT individually re-verified this pass (only the 3 flagged
+    by this session''s direct checks) — flagged as a likely-systemic gap, full sweep recommended, not done
+    here (scope/budget).'
+  next_action: 'Claude A: mark item 133 and "small/wet" CLOSED in the open-items table per the citations
+    above (docs/THANGSENG_NATIVE_VALIDATION.md, "Open-items list correction" section has the exact wording).
+    Claude B: the 117 remaining phrase_maps:* entries in known_cross_source_conflicts.json are UNVERIFIED
+    for this exact masking pattern (stale override beating a corrected compiled_dict.json value) — recommend
+    a scripted sweep (compare phrase_maps.js value against master_dictionary.json''s current VERIFIED/HIGH
+    value for the same key, not just against compiled_dict.json, since compiled_dict.json can itself be
+    correct while phrase_maps.js still overrides it wrong) rather than fixing findings one-by-one as they''re
+    stumbled into by chance smoke-tests, which is how father/mother/small sat live-broken for an unknown
+    number of sessions despite passing every existing gate check (Check F only flags a mismatch, it doesn''t
+    know which side is right, so 3 genuinely-fixed-at-the-data-layer words show as "known, allowlisted"
+    forever unless someone manually re-checks each one against the live app).'
 chatgpt:
   status: unknown
   current_task: unknown
