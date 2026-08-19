@@ -24,10 +24,10 @@ Claude A whenever there's time — same shape as the `answer`
 - `fever`: candidates — `ding·du·a`, `han·ding·a`, `jom·a` — shipped: `jom·a`
 - `greedy`: candidates — `mat·u·a`, `mik·bok·a`, `mik·ni·a` — shipped: `mik·ni·a`
 - `hoe`: candidates — `git·chi`, `ko·dal` — shipped: `ko·dal`
-- `hope`: candidates — `a·sa`, `ka·donga`, `mik·sok·a` — shipped: `mik·sok·a`
+- `hope`: candidates — `ka·donga`, `ka·dongani` — shipped: `ka·dongani`
 - `horn`: candidates — `a·du·ri`, `sing·ga` — shipped: `sing·ga`
 - `king`: candidates — `Books, paper, leaves, flat`, `thin objects` — shipped: `thin objects`
-- `last`: candidates — `bai·a`, `ses` — shipped: `ses`
+- `last`: candidates — `bon·kamgipa`, `ja·mangipa` — shipped: `ja·mangipa`
 - `leg`: candidates — `ja·chok`, `ja·git·teng`, `ja·teng` — shipped: `ja·teng`
 - `where`: candidates — `Bano`, `Bachi` — shipped: `Bachi`
 - `where (relative pronoun)`: candidates — `jeon`, `jeo` — shipped: `jeo`

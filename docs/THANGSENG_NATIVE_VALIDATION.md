@@ -4361,3 +4361,57 @@ hypothesis pending a real confirmation round through Tridip — plain
 sentences, not pre-analyzed. `Sop·ta` is untouched (see repo retention
 policy — SUPERSEDED-tag-not-delete applies regardless of source, and in
 this case there isn't even evidence to tag it against).
+
+## NV-082 (2026-08-19, Thangseng relay via Tridip — WhatsApp, real-time)
+
+Genuine relay: short exchanges, native hedging, and Thangseng correcting
+his own literal glosses — matches this project's established relay
+pattern (unlike the Gemini-formatted table under NV-081, which is
+explicitly held separate).
+
+**"Last" — ordinal/final sense (closes item 26):**
+- `bon·kamgipa` = last/final in sequence, e.g. "last page."
+- `ja·mangipa` = "the last one / last person," a related but distinct
+  ordinal sense.
+- Thangseng explicitly distinguishes both from `Mija`: *"Mija in Garo
+  simply implies past in time"* — a determiner, not the ordinal sense.
+  Confirms NV-081's finding that `Mija` doesn't cover this item.
+- **Item 26 CLOSED.**
+
+**"Hope" — POS split (closes item 84):**
+- `ka·dongani` = hope (noun). `ka·donga` = to hope (verb).
+- Mirrors the NV-077 "answer" pattern (Aganchakani=noun /
+  Aganchaka=verb) exactly. Applied the same way: `ka·dongani` added as
+  new VERIFIED/HIGH noun entry; existing loose `Hope`→`ka·donga`
+  variant entry POS-clarified as the verb, not deleted, not treated as
+  a competing noun value.
+- **Item 84 (Hope) CLOSED.**
+
+**"Brave"/"Bravery" — explicitly deferred by Thangseng, NOT closed:**
+- Thangseng: *"let's reserve brave and bravery for later discussion. I'd
+  like to see if another word can be employed apart from ka'donga and
+  ka'dongani. I only have these two words right now, both for hope and
+  bravery."*
+- This is Thangseng flagging the current candidates as unsatisfying —
+  the opposite of a confirmation. **Item 82 (Brave) stays OPEN**,
+  explicitly pending further native input, not for lack of data.
+
+**"Agree" — no answer given, stays OPEN:**
+- Tridip asked; Thangseng's only reply was *"and 'agree' as well"* —
+  read in context as adding it to the reserved-for-later list, not
+  answering it. **Item 94 stays OPEN.**
+
+**Sentence data (not an open-item closure, noted for sentence-builder):**
+- "I saw the film last week." → natural: `Ang·a ia film ko nia mija
+  antio.` Thangseng's SOV-strict literal alternative: `Anga ia film-ko
+  mija antio nia.`
+- "How was the journey yesterday?" → natural: `Mijal songre·ara nam·a
+  ma?` Thangseng flagged the natural form as non-literal and offered a
+  literal fallback: `Mijal songrear mai rokom?` ("what kind"). Both
+  forms native-confirmed; flagging for Claude B in case sentence-builder
+  confidence scoring wants the literal SOV form as a fallback path.
+
+**No new evidence on Anti/Antio/counting.** This relay round did not
+address free-standing `Anti`, `Mikkang antio`, or the classifier
+question — that remains exactly where NV-081 left it: open hypothesis,
+not applied.

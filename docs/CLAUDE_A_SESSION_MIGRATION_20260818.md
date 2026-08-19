@@ -55,16 +55,31 @@ HEAD matched exactly.
    (see below). Going forward: "is X correct" checks must call
    `translate()`, not read `compiled_dict.json` directly.
 
-## Deliberately held OPEN — evidence-first, no native answer to force (13, was 14)
+## Deliberately held OPEN — evidence-first, no native answer to force
 | Item | Reason |
 |---|---|
-| 82 Brave / 84 Hope | Both `Ka·donga` — duplicate-encoding conflict |
-| 94 Agree | Held at Claude B's request |
-| 26 Last | No native entry for the ordinal/final sense (NV-081 confirms `Mija` is recency-only, does NOT cover this sense — stays open) |
+| 82 Brave | Thangseng explicitly deferred (NV-082): wants a different word than `ka·donga`/`ka·dongani`, not confirming either — pending further native input |
+| 94 Agree | No answer given; Tridip's question wasn't addressed by Thangseng (NV-082) — stays open |
 | 96 Bear (verb sense) | No native entry for carry/endure; animal sense (`Matmak`) confirmed |
 | 44 Gong (instrument) | Classifier sense confirmed; instrument sense still unconfirmed |
 
 133b ("Bao") is now CLOSED — see above. Removed from this table.
+
+## Closures — 2026-08-19, NV-082 (Thangseng relay via Tridip, WhatsApp)
+- **26 Last — CLOSED.** `bon·kamgipa` (final, e.g. "last page") and
+  `ja·mangipa` ("the last one/person") — two ordinal-final forms,
+  explicitly distinguished by Thangseng from `Mija` ("Mija in Garo
+  simply implies past in time"). Confirms NV-081's finding rather than
+  contradicting it.
+- **84 Hope — CLOSED.** `ka·dongani` (noun) / `ka·donga` (verb) — POS
+  split, mirrors NV-077's "answer" pattern exactly. Existing loose
+  `Hope`→`ka·donga` entry POS-clarified as the verb, not deleted.
+- **82 Brave — reclassified, stays OPEN.** No longer bundled with Hope
+  as a duplicate-encoding conflict (that framing is resolved — they're
+  different words entirely, not a shared-form collision). Thangseng
+  wants a different word than the current `ka·donga`/`ka·dongani`
+  candidates for brave/bravery specifically — open pending that.
+- **94 Agree — stays OPEN.** Asked, not answered.
 
 ## Closures — 2026-08-19, RULE 2 doc + NV-081
 - **138 Let's sit — CLOSED.** `Hai Asongna` (suffix -na). Owner-supplied

@@ -19374,10 +19374,10 @@
   {
     "english": "Hope",
     "garo": "ka·donga",
-    "pos": null,
+    "pos": "v.",
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH — POS clarified NV-082 (2026-08-19, Thangseng relay via Tridip): this is specifically the VERB 'to hope'. See separate 'hope'/'ka·dongani' entry for the NOUN form — distinct part of speech, not a competing value. Mirrors NV-077 answer pattern."
   },
   {
     "english": "Hope",
@@ -67241,5 +67241,29 @@
     "classifier": null,
     "confidence": "VERIFIED/HIGH",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, NV-080). CONTRADICTS earlier NV-060 (2026-08-05): native this round rejected both suffixed forms ('Bajalde sambaon' / '-de', 'Bajalara sambaon' / '-ara') in favor of the unsuffixed 'Bajal sambaon'. Flagged as an inter-session native contradiction, not a routine non-selection — see NV-060 entries."
+  },
+  {
+    "english": "last",
+    "garo": "bon·kamgipa",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-082, Thangseng relay via Tridip, 2026-08-19. Ordinal/final-in-sequence sense, e.g. 'last page'. Distinct from ja·mangipa (last one/specific person) and from Mija (temporal recency, e.g. 'last week' — see NV-081). Closes item 26 ('no native entry for the ordinal/final sense')."
+  },
+  {
+    "english": "last",
+    "garo": "ja·mangipa",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-082, Thangseng relay via Tridip, 2026-08-19. Ordinal/final sense specifically 'the last one / last person'. Distinct from bon·kamgipa (final, e.g. 'last page') and from Mija (temporal recency — see NV-081). Closes item 26 together with bon·kamgipa."
+  },
+  {
+    "english": "hope",
+    "garo": "ka·dongani",
+    "pos": "n.",
+    "category": "emotions",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-082, Thangseng relay via Tridip, 2026-08-19 (\"hope = ka'dongani (noun); to hope = ka'donga (verb)\"). Mirrors the NV-077 answer POS-split pattern: ka·dongani is the NOUN, ka·donga is the VERB — coexist as distinct-POS entries, not competing values. See 'Hope'/'ka·donga' entry, POS-clarified accordingly."
   }
 ]
