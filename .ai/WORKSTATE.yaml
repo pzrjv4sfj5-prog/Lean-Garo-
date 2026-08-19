@@ -2325,6 +2325,59 @@ qa_audit:
     number of sessions despite passing every existing gate check (Check F only flags a mismatch, it doesn''t
     know which side is right, so 3 genuinely-fixed-at-the-data-layer words show as "known, allowlisted"
     forever unless someone manually re-checks each one against the live app).'
+claude_b_resync_sweep:
+  status: done
+  role: 'Claude B, full A<->B propagation audit (2026-08-19) per Project Owner diagnostic brief. Traced
+    the runtime lookup cascade (corrections.json -> phrase_maps.js -> compiled_dict.json -> classifier
+    -> single-word, confirmed by reading translationEngine.js lines 92-195), producing an 11-section
+    report identifying Check F as a disagreement-detector, not a correctness-detector, as the systemic
+    root cause of the father/mother/small class of bug fixed earlier this session (commit 76156c2).'
+  latest_report: 'Ran scripts/resync-stale-overrides.mjs (pre-existing, not previously run this cycle)
+    dry-run: found 35 mechanical resync candidates (override value matches a SUPERSEDED master_dictionary.json
+    row AND compiled_dict.json already resolves to a VERIFIED/HIGH row for the same key). Before applying,
+    manually verified "answer" against master_dictionary.json directly and found it is a FALSE POSITIVE:
+    the script''s joinKey() lowercases before matching, silently merging master_dictionary''s case-split
+    POS entries ("answer" lowercase = VERIFIED/HIGH verb Aganchaka, "Answer" capitalized = VERIFIED/HIGH
+    noun Aganchakani, per NV-077) into one candidate pool. Its apparent SUPERSEDED match for override
+    "Aganchaka" was actually a duplicate-spelling row (a·gan·chak·a) being superseded in favor of the SAME
+    verb value, not evidence the verb sense should become the noun. Applying it would have silently swapped
+    a correct verb override for a wrong noun one -- exactly the trap named in the Project Owner''s brief
+    ("do NOT repeat the previous answer audit error"). Checked whether the other 34 candidates shared this
+    case-collision risk: all 34 have case-variant english keys in master_dictionary.json (e.g. big/Big,
+    climb/Climb) but unlike answer/Answer, every one converges on a SINGLE NV-080 native-confirmed form
+    regardless of case (spot-checked big/climb/teacher directly) -- plain import-duplication artifacts,
+    not genuine sense splits. Applied the script with --apply (wrote 3 corrections.json + 32 phrase_maps.js
+    updates, removed 35 baseline entries), then manually reverted the 2 "answer" writes back to "Aganchaka"
+    and re-added corrections:answer + phrase_maps:answer to known_cross_source_conflicts.json (still a live
+    tracked issue, not resolved -- needs a POS-sense-aware key scheme, not a mechanical fix). Also corrected
+    a now-stale provisional-pick comment on the "all" phrase_maps.js entry (2026-08-06 comment described
+    a 3-way tie that NV-080 on 2026-08-17 definitively resolved -- comment was accurate when written, stale
+    after NV-080, not a data bug). Full gate re-run after all edits: 8127/8127 dictionary entries, 218/218
+    unit tests, 0 lint errors, repository-intelligence.js 0 new violations, Check F known-mismatches 220
+    -> 187 (35 resynced, 2 re-added for answer = net -33). Live translate() spot-checked for 8 words
+    (big/climb/teacher/river/love/answer/work/strong) post-fix -- all resolve to their intended values,
+    "answer" confirmed still correctly returning the verb form "Aganchaka".'
+  remaining_from_prior_sweep: 'Broader diagnostic sweep (comparing ALL known_cross_source_conflicts.json
+    entries against master_dictionary.json VERIFIED/HIGH candidates directly, not just the SUPERSEDED-match
+    subset resync-stale-overrides.mjs targets) found ~69 additional live semantic mismatches beyond this
+    session''s 34 fixed (36 phrase_maps + 33 corrections, before dedup) -- NOT yet applied, most were not
+    run through resync-stale-overrides.mjs''s stricter double-verification (SUPERSEDED-match required, not
+    just a raw compiled_dict.json comparison) so some may carry the same case-collision or tied-candidate
+    risk "answer" did. Needs the same manual verification pass as this session before any bulk apply.
+    ~111 phrase_maps/corrections keys have no VERIFIED/HIGH master_dictionary.json candidate at all
+    (genuinely blocked on Claude A/native input). ~26 keys hit tied-VERIFIED-candidate ambiguity, same
+    shape as answer -- these need a POS/sense-aware schema fix (structural, not per-key), flagged but not
+    designed this session per scope discipline (one task at a time).'
+  next_action: 'Next Claude B session: (1) apply the same manual-verification discipline used on "answer"
+    this session to the remaining ~69 sweep-found mismatches before any bulk resync -- do not trust
+    resync-stale-overrides.mjs output blindly for keys with case-variant OR tied-candidate master_dictionary.json
+    entries without checking whether the tie/case-split is a genuine sense distinction first. (2) the
+    corrections:answer / phrase_maps:answer entries in known_cross_source_conflicts.json are intentionally
+    still open -- this is a design gap (case-insensitive lookup key colliding with a native POS distinction
+    the dictionary tries to encode via case), needs a schema-level fix (e.g. explicit pos field) design
+    question for Claude A/Project Owner, not a mechanical resync target. (3) build the permanent scripted
+    gate recommended in the prior QA audit block above (auto-run this class of sweep in CI, not ad-hoc) --
+    not done this session, still backlog item 1 from the diagnostic report.'
 chatgpt:
   status: unknown
   current_task: unknown
