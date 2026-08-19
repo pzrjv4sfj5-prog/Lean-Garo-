@@ -25,6 +25,14 @@ jobs:
       - name: Check for stale corrections.json/phrase_maps.js overrides
         run: npm run check:resync
 
+      - name: Verify compiled_dict.json / compiled_dict_alternates.json are not hand-edited or stale
+        run: |
+          cp src/compiled_dict.json /tmp/compiled_dict.before.json
+          cp src/compiled_dict_alternates.json /tmp/compiled_dict_alternates.before.json
+          node prepare-data.js > /dev/null
+          diff -q /tmp/compiled_dict.before.json src/compiled_dict.json
+          diff -q /tmp/compiled_dict_alternates.before.json src/compiled_dict_alternates.json
+
       - name: Lint
         run: npx eslint . --ext js,jsx --max-warnings 0
         continue-on-error: true
