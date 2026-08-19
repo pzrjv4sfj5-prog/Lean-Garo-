@@ -4452,3 +4452,24 @@ sent, no corrections given:
 **Remaining items from THANGSENG_RELAY_BATCH_20260820**: still open,
 144 keys (150 sent minus these 6). No other part of the batch has come
 back yet.
+
+## NV-083 continued (2026-08-20) — "beautiful" (Sila), "child" (Bi·sa)
+
+Source: Thangseng relay via Tridip, `THANGSENG_RELAY_BATCH_20260820`
+Part A. Confirmed correct as sent:
+
+- "beautiful": Sila
+- "child": Bi·sa
+
+**Applied to `master_dictionary.json`:** both were previously untagged
+(no VERIFIED/SUPERSEDED marker) — the values were already correct and
+already shipping at runtime, this closes the citation gap only. Sila
+and Bi·sa rows now marked VERIFIED/HIGH with NV-083 citation.
+
+**Not touched:** "beautiful" has two other untagged rows (`nitoa`,
+`Ka·danga`) — Thangseng confirmed Sila specifically, not that the
+others are wrong. Left as-is, no verdict.
+
+Confirmed via live `translate()`: both resolve to the confirmed value.
+Gate green (8127 entries, 218/218 unit, 14523/14523 runtime sweep, 0
+new violations; Check F cascade-mismatch backlog dropped 183→181).

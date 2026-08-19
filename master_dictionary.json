@@ -3082,7 +3082,8 @@
   {
     "english": "child",
     "garo": "Bi·sa",
-    "category": "family"
+    "category": "family",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part A)"
   },
   {
     "english": "old man",
@@ -16762,7 +16763,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part A)"
   },
   {
     "english": "bright",
