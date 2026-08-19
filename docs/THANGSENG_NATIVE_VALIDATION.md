@@ -4415,3 +4415,40 @@ explicitly held separate).
 address free-standing `Anti`, `Mikkang antio`, or the classifier
 question — that remains exactly where NV-081 left it: open hypothesis,
 not applied.
+
+## NV-083 (2026-08-20) — "let's..." verbs + "my dog", relay batch confirmation
+
+Source: Thangseng relay via Tridip, responding to
+`docs/THANGSENG_RELAY_BATCH_20260820.md` Part B. Confirmed correct as
+sent, no corrections given:
+
+- "let's drink": Hai ringaha
+- "let's eat": Hai cha·ha
+- "let's play": Hai kalna
+- "let's sit": Hai asongna
+- "let's work": Hai dakna
+- "my dog": ang·ni achak
+
+**Applied to `master_dictionary.json`:**
+- "let's drink", "let's eat": already matched the shipping
+  `corrections.json` override exactly; existing master rows annotated
+  with NV-083 citation, no value change.
+- "let's play", "let's sit", "let's work", "my dog": master previously
+  held a *different*, unconfirmed value for each (`Hai kalaha`,
+  `Hai asongha`, `Hai dakha`, `angni mang` respectively) that had never
+  been checked against native input — these were the actual "no
+  VERIFIED candidate" gap `docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md`
+  section 4 flagged. Old rows tagged SUPERSEDED (cites NV-083); new
+  VERIFIED/HIGH rows added with the Thangseng-confirmed value
+  (retain-and-tag, not delete).
+- All 6 keys allowlisted in `known_dictionary_conflicts.json` (Check C)
+  since master now legitimately holds two rows (SUPERSEDED + VERIFIED)
+  per key for the 4 corrected ones.
+- Confirmed via live `translate()` for all 6 keys — all already
+  shipped correctly through the `corrections.json` override, gate
+  green before and after (218/218 unit, 14523/14523 runtime sweep,
+  8127 entries, 0 new violations).
+
+**Remaining items from THANGSENG_RELAY_BATCH_20260820**: still open,
+144 keys (150 sent minus these 6). No other part of the batch has come
+back yet.
