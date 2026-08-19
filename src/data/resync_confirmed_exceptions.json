@@ -1,0 +1,14 @@
+[
+  {
+    "prefix": "corrections",
+    "key": "answer",
+    "reason": "override 'Aganchaka' is the correct VERB-sense form; compiled_dict's 'Aganchakani' is the NOUN sense. The mechanical SUPERSEDED/VERIFIED heuristic can't see the POS split (case-insensitive key match), so it will always look like a stale override. Confirmed intentional, not stale.",
+    "source": "docs/CLAUDE_B_SESSION_MIGRATION_20260819b.md, resync sweep pass 1"
+  },
+  {
+    "prefix": "phrase_maps",
+    "key": "answer",
+    "reason": "same verb/noun split as corrections:answer above — phrase_maps carries the same verb-sense override for the same reason.",
+    "source": "docs/CLAUDE_B_SESSION_MIGRATION_20260819b.md, resync sweep pass 1"
+  }
+]

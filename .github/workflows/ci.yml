@@ -22,6 +22,9 @@ jobs:
       - name: Build (includes dictionary validation + regression suite)
         run: npm run build
 
+      - name: Check for stale corrections.json/phrase_maps.js overrides
+        run: npm run check:resync
+
       - name: Lint
         run: npx eslint . --ext js,jsx --max-warnings 0
         continue-on-error: true

@@ -23,6 +23,8 @@ function joinKey(k) { return normalize(k).replace(/\?+$/, ''); }
 // override "Daka" against SUPERSEDED "Dak·a" as the same underlying value.
 
 const baseline = loadJSON('src/data/known_cross_source_conflicts.json');
+const confirmedExceptions = loadJSON('src/data/resync_confirmed_exceptions.json');
+const exceptionSet = new Set(confirmedExceptions.map(e => `${e.prefix}:${e.key}`));
 const corrections = loadJSON('src/data/corrections.json');
 const compiledDict = loadJSON('src/compiled_dict.json');
 const master = loadJSON('master_dictionary.json');
@@ -65,7 +67,7 @@ function isVerifiedLike(notes) {
   return /verified\/high/i.test(n);
 }
 
-const results = { resync: [], skip_no_verified_match: [], skip_not_superseded_match: [], skip_no_master_entry: [] };
+const results = { resync: [], skip_no_verified_match: [], skip_not_superseded_match: [], skip_no_master_entry: [], skip_confirmed_exception: [] };
 
 for (const baselineKey of baseline) {
   const [prefix, ...rest] = baselineKey.split(':');
@@ -103,6 +105,11 @@ for (const baselineKey of baseline) {
     continue;
   }
 
+  if (exceptionSet.has(`${prefix}:${actualKey}`)) {
+    results.skip_confirmed_exception.push({ prefix, key: actualKey, overrideValue, compiledValue });
+    continue;
+  }
+
   results.resync.push({ prefix, key: actualKey, from: overrideValue, to: compiledValue, baselineKey });
 }
 
@@ -117,6 +124,10 @@ for (const r of results.skip_no_verified_match) {
   console.log(`  [${r.prefix}] "${r.key}": override="${r.overrideValue}" (SUPERSEDED-matched), compiled_dict="${r.compiledValue}" (not verified)`);
 }
 console.log(`Skipped — no compiled_dict entry for this key: ${results.skip_no_master_entry.length}`);
+console.log(`Skipped — confirmed exception (see src/data/resync_confirmed_exceptions.json): ${results.skip_confirmed_exception.length}`);
+for (const r of results.skip_confirmed_exception) {
+  console.log(`  [${r.prefix}] "${r.key}": override="${r.overrideValue}" (heuristic-matched, but already confirmed intentional)`);
+}
 
 if (APPLY && results.resync.length > 0) {
   const correctionsKeysToUpdate = results.resync.filter(r => r.prefix === 'corrections');
@@ -157,6 +168,17 @@ if (APPLY && results.resync.length > 0) {
   const newBaseline = Array.from(baselineSet).sort((a, b) => a.localeCompare(b));
   fs.writeFileSync('src/data/known_cross_source_conflicts.json', JSON.stringify(newBaseline, null, 2) + '\n');
   console.log(`Removed ${results.resync.length} resynced key(s) from src/data/known_cross_source_conflicts.json baseline (${baseline.length} -> ${newBaseline.length})`);
+}
+
+// CI gate (Claude B backlog item, migration doc 2026-08-19b): in report-only
+// mode, a nonzero mechanical resync count means known-stale overrides exist
+// that the stricter (pass-2) test would apply cleanly — that should fail the
+// build instead of sitting until someone runs this ad hoc. --apply runs
+// (local, human-invoked) keep exit 0 regardless, since their job is to fix
+// the drift, not report it.
+if (!APPLY && results.resync.length > 0) {
+  console.error(`\nFAIL: ${results.resync.length} mechanical resync candidate(s) found and not applied. Run with --apply to fix, or investigate why CI drifted since the last clean run.`);
+  process.exit(1);
 }
 
 process.exit(0);
