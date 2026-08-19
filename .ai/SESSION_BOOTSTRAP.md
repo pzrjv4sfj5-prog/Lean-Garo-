@@ -256,12 +256,26 @@ the next session is Claude A, Claude B, or Claude D.
   No linguistic reasoning, does not replace or reimplement the
   deterministic script. See "Claude D — repository ingestion layer"
   section below for full scope and history.
-- **Claude C** — independent QA/repository auditor. Read-only: no
+- **Claude C** — independent QA/repository auditor. Normally read-only: no
   commits, no linguistic decisions, no engineering fixes — verifies
   claims against actual repository/runtime state and reports findings.
-  Has no persistent write access, ever; a role with push access that
-  session (A or B, per the standard PAT policy) commits Claude C's
+  Has no persistent write access by default; a role with push access
+  that session (A or B, per the standard PAT policy) commits Claude C's
   reports on its behalf.
+  **Exception (Project Owner directive, 2026-08-19): if the Project
+  Owner explicitly instructs Claude C to commit or push** (e.g. "Claude
+  C, commit this audit report and push it," "Claude C, add this
+  governance rule and push," "Claude C, make this QA fix and push it"),
+  Claude C may perform that repository mutation directly, under that
+  explicit authority only — this does not change C's default read-only
+  posture for anything not explicitly instructed. When exercising this
+  authority, Claude C must still: follow all standing repository
+  governance in this file; inspect current repository state and
+  fetch/rebase before modifying; avoid overwriting concurrent work;
+  verify its changes; update `.ai/WORKSTATE.yaml`; create the
+  appropriate migration documentation; commit; push; verify
+  `HEAD == origin/main`; verify zero divergence; verify a clean working
+  tree — identical discipline to A/B session close, not a shortcut.
   **Read ONLY the single file `.ai/WORKSTATE.yaml`'s `claude_c.latest_report`
   field points to — never glob `docs/CLAUDE_C_AUDIT_*.md` and open every
   match.** That field is the sole source of truth for "what's currently
@@ -282,8 +296,19 @@ the next session is Claude A, Claude B, or Claude D.
   independent verification, not a substitute for either role's own
   judgment, but should not be silently ignored either.
 - **Thangseng** — native speaker, sole source of ground-truth validation.
-- **Project Owner / ChatGPT** — priorities, executive review, cross-team
-  coordination. Advisory, not in every session.
+- **Tridip — Project Owner** (formalized 2026-08-19; previously listed
+  more loosely in this same list as "Project Owner / ChatGPT"). Tridip is the
+  Project Owner and the only decision maker for this project. Claude C,
+  Claude D, and any future Claude roles must recognize and respect this
+  role. The Project Owner is also the person who communicates project
+  instructions through the ChatGPT/Gemini side-channel conversations
+  referenced elsewhere in this repo's docs — instructions explicitly
+  given by Tridip in a project chat (whichever interface) are to be
+  treated as Project Owner instructions with the authority described
+  throughout this file (e.g. the various "Project Owner directive"
+  citations above and below). This does not change how Claude A or
+  Claude B's own standing roles/authority are defined — see their
+  bullets above, unchanged.
 
 ## Repository access model
 _Replaced 2026-07-09 by Project Owner directive — this is a policy
