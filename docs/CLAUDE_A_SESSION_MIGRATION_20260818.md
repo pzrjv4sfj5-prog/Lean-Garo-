@@ -47,6 +47,13 @@ HEAD matched exactly.
    reading raw `master_dictionary.json` directly; the live app never
    surfaces them. Flagged that physically deleting superseded rows would
    be a real policy change, not something to do silently.
+   **Correction (2026-08-19 QA audit):** this verdict was wrong — it
+   checked `compiled_dict.json` only, not the runtime cascade.
+   `phrase_maps.js` overrode ahead of it with stale pre-NV-080 values, so
+   `translate()` was actually still serving `father`->old form,
+   `mother`->old form. Fixed in `76156c2`; live-reverified this session
+   (see below). Going forward: "is X correct" checks must call
+   `translate()`, not read `compiled_dict.json` directly.
 
 ## Deliberately held OPEN — evidence-first, no native answer to force (13, was 14)
 | Item | Reason |
@@ -56,11 +63,26 @@ HEAD matched exactly.
 | 138/139/140 Let's sit/play/work | Relay doc's own text contradicts the RULE 2 table |
 | 26 Last | No native entry for the ordinal/final sense |
 | 96 Bear (verb sense) | No native entry for carry/endure; animal sense (`Matmak`) confirmed |
-| 133 Where-relative (jeon/jeo) | Both confirmed valid, no main/short-form ranking |
 | 44 Gong (instrument) | Classifier sense confirmed; instrument sense still unconfirmed |
-| small/wet → `Chon·a` | Same form recorded for both meanings, flagged as-is |
 
 133b ("Bao") is now CLOSED — see above. Removed from this table.
+
+## Additional closures — 2026-08-19 QA audit propagation-gap corrections
+- **133 (jeon/jeo main-vs-short-form) — CLOSED.** Already answered by
+  NV-064 (2026-08-06): "jeo = short form of jeon." Was re-flagged open in
+  error; no new native round needed. See
+  `docs/THANGSENG_NATIVE_VALIDATION.md`, "Open-items list correction"
+  section.
+- **small/wet → `Chon·a` duplicate — CLOSED.** Already resolved distinctly
+  within NV-080 itself: small=`Chon·a`, wet=`so·si·a`, no shared form at
+  the data layer. Was re-flagged open in error. The runtime symptom that
+  made it look open (`phrase_maps.js` masking with a stale SUPERSEDED
+  value) was an engineering bug, fixed by QA audit `76156c2` — not a
+  linguistic finding. See same section as above.
+
+11 items now remain genuinely open (verified individually against
+`THANGSENG_NATIVE_VALIDATION.md`, no prior evidence for any — QA audit
+confirmed this, no action needed).
 
 ## Standing rules (unchanged, reaffirmed this session)
 Rules 7–10, 9a as previously established. Evidence-first: resolve only
