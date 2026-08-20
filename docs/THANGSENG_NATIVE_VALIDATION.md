@@ -4622,3 +4622,72 @@ A (Thangseng): "A simple past tense would be: Na.a bajalchi re.angama"
 **Remaining `THANGSENG_RELAY_BATCH_20260820` items:** still open —
 140 keys (141 minus this one). No other part of the batch has come
 back yet. Do not close further items without a direct per-item answer.
+
+## NV-087 (2026-08-20) — Anti/week framework closure + "i understand" correction
+
+Source: Thangseng via Tridip, WhatsApp, 3:21pm, direct answers to the
+5 standing Anti/week relay questions (drafted, awaiting confirmation
+per prior sessions), plus two unprompted bonus answers ("beautiful",
+"i understand").
+
+**Anti/week — 4 of 5 questions closed:**
+- "What is the word for week?" → `anti` = week. **Closes.**
+- "Is Anti a real Garo word?" → yes, means week. **Closes** (same
+  answer as above).
+- "How do you say next week?" → `mikkang anti`. **Closes.**
+- "Is there a difference between Anti and Antio?" → `antio` = `anti`
+  + locative `-o` = "(in) week" — confirms they are the same root,
+  differing only by the already-established locative suffix (RULE-033/
+  034/035 cover the `-o` locative generally; this is a confirming
+  instance, not a new rule). **Closes.**
+- "How do you say three weeks?" → **not answered** — only `antisa`
+  (a week) and `antigni` (two weeks) were given. **Stays open.**
+  Pattern (`anti` + counting-suffix, acting as its own classifier)
+  suggests `antigittam`, but this is inference, not direct evidence —
+  not applied without confirmation.
+
+**Applied to `master_dictionary.json`:**
+- `week` / `Anti`: was SUPERSEDED (corpus-internal audit 2026-08-01,
+  conflicting with a same-key `sop·ta` row). Direct native evidence
+  now resolves this: `Anti` → VERIFIED/HIGH (NV-087); `sop·ta` →
+  SUPERSEDED (NV-087) — its original "variant/VERIFIED/HIGH" tag was
+  untraceable (no NV citation, legacy import, same suspect class
+  flagged in the 2026-08-01 audit). Both rows retained per citation
+  discipline, not deleted.
+- New VERIFIED/HIGH rows: `a week` = `Antisa`, `two weeks` = `Antigni`,
+  `next week` = `Mikkang anti`.
+- `anti` (bare key) was already correctly tagged VERIFIED/native-
+  speaker — no change needed.
+
+**"beautiful" = Sila** — re-confirms NV-083's existing closure, no
+change needed (already VERIFIED/HIGH, value matches exactly).
+
+**"i understand" — correction, not a no-op:**
+Thangseng: "I understand = anga u'ia" — matches the existing
+untagged master row (`Anga uia`) and the established `uia`-root
+family (`i know` = `Anga uia.`, `i don't know` = `Anga uija.`).
+Contradicts the shipping `phrase_maps.js` override (`Anga ma·sia`),
+which was never checked against master — the exact "no VERIFIED
+candidate" gap `CLAUDE_B_HANDOFF_20260819` section 4 flagged for this
+key. Master row now VERIFIED/HIGH (NV-087, value unchanged);
+`phrase_maps.js` fixed directly (Rule 8) to `Anga uia`. Note: `ma·sia`/
+`ma·siama?` remains correct elsewhere in the corpus for second-person
+"do you understand?" constructions — separate key, not touched.
+
+**Applied via live `translate()` (all confirmed):**
+`week`→`Anti`, `a week`→`Antisa`, `two weeks`→`Antigni`,
+`next week`→`Mikkang anti`, `i understand`→`Anga uia` (now via
+phrase-map, matching master), `beautiful`→`Sila` (unchanged), `anti`→
+`Anti` (unchanged).
+
+Gate green: 8131 entries (+3 new: a week/two weeks/next week), 9/9
+grammatical corrections, 218/218 unit tests, 14530/14530 runtime
+sweep, 0 errors, 0 new Check A–F violations (Check C's 1540
+allowlisted conflicts already covered the week/sop·ta and i-understand
+pairs — no new allowlist entries needed).
+
+**Remaining `THANGSENG_RELAY_BATCH_20260820` items:** 140 → 139
+(this batch didn't include a numbered relay item — Anti/week and
+"i understand" were tracked separately from the 141-item batch;
+"beautiful" was already closed in NV-083). Still open: 139 batch
+items + "three weeks" (Anti/week Q3, unresolved).

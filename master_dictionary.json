@@ -1767,7 +1767,25 @@
     "english": "week",
     "garo": "Anti",
     "category": "time",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'week' has VERIFIED/HIGH form(s) ['sop·ta']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-087, Thangseng relay via Tridip, WhatsApp, direct answer to 'What is the word for week?'). Was previously SUPERSEDED against a same-key 'sop·ta' row that only carried an untraceable legacy 'variant/VERIFIED/HIGH' tag (no NV citation, no evidence trail) — direct native evidence now resolves the corpus-internal conflict in Anti's favor; see 'sop·ta' row for the reciprocal SUPERSEDED tag."
+  },
+  {
+    "english": "a week",
+    "garo": "Antisa",
+    "category": "time",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-087, Thangseng relay via Tridip, WhatsApp: 'a week = antisa'). anti + -sa (counting suffix 1), consistent with the established NOUN+CLASSIFIER+NUMBER-SUFFIX pattern, anti acting as its own classifier."
+  },
+  {
+    "english": "two weeks",
+    "garo": "Antigni",
+    "category": "time",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-087, Thangseng relay via Tridip, WhatsApp: 'two weeks = antigni'). anti + -gni (counting suffix 2)."
+  },
+  {
+    "english": "next week",
+    "garo": "Mikkang anti",
+    "category": "time",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-087, Thangseng relay via Tridip, WhatsApp: 'next week = mikkang anti')."
   },
   {
     "english": "month",
@@ -4324,7 +4342,8 @@
   {
     "english": "i understand",
     "garo": "Anga uia",
-    "category": "general"
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-087, Thangseng relay via Tridip, WhatsApp: 'I understand = anga u'ia'). Matches the existing uia-root family ('i know'='Anga uia.', 'i don't know'='Anga uija.'). Shipping override 'Anga ma·sia' (phrase_maps.js) was unconfirmed against master — the exact 'no VERIFIED candidate' gap flagged in CLAUDE_B_HANDOFF_20260819 section 4 — and is now contradicted by direct native evidence; fixed. Note: 'ma·sia'/'ma·siama?' does appear correctly elsewhere in the corpus for second-person 'do you understand?' constructions — that is a separate key, not touched."
   },
   {
     "english": "i don't understand",
@@ -22516,7 +22535,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — native relay NV-087 (2026-08-20, Thangseng via Tridip): direct confirmation is 'Anti', not 'sop·ta'. Original 'variant/VERIFIED/HIGH' tag was untraceable (no NV citation, no evidence trail — legacy import, same class as other suspect tags flagged in the 2026-08-01 corpus-internal audit). Retained per citation discipline, not deleted."
   },
   {
     "english": "West",
