@@ -4473,3 +4473,62 @@ others are wrong. Left as-is, no verdict.
 Confirmed via live `translate()`: both resolve to the confirmed value.
 Gate green (8127 entries, 218/218 unit, 14523/14523 runtime sweep, 0
 new violations; Check F cascade-mismatch backlog dropped 183→181).
+
+## NV-084 (2026-08-20) — historical WhatsApp transcript (2026-07-03), general grammar; one open-item implication
+
+Source: Thangseng/Tridip WhatsApp transcript, dated 3/7/2026, supplied
+directly by the Project Owner (not a new same-session exchange —
+predates NV-080 through NV-083, being surfaced now). Docs-only, no
+`master_dictionary.json` edits this entry — see reasoning per item.
+
+**Hortative `-na`/`-naha` nuance — corroborating, not new, no action:**
+Thangseng confirms both are grammatical: `-na` = general urge (unspecified
+timing), `-naha` = urge to do it *right now* / "finally" get it done
+(`Hai asongna` = "let's sit, just that" vs. `Hai asongnaha` = "let's
+sit, finally sit down"). Consistent with the already-canonical examples
+in `GRAMMAR_RULE_CATALOGUE.md` RULE-002 (`Hai cha·na`, `Hai re·naha`).
+Does not conflict with or reopen NV-083's direct confirmations of
+`Hai cha·ha` ("let's eat") — that was a separate, direct native
+reconfirmation of the exact form as sent, and direct confirmation
+outranks pattern inference from a different transcript, per standing
+methodology. No change.
+
+**Past `-ha` exception + future negative `-wa` — already documented, no action:**
+`Ringaha`/`Cha·aha` (irregular, no letter dropped from simple root) vs.
+`Cha·jaha` (regular, compound suffix); `-ha` cannot combine with `-gen`
+(naturally opposed tenses); future negative `Anga cha·jawa` = "I will
+not eat". All already captured (`Re·jawa`, `Cha·jawama?` in
+`THANGSENG_NATIVE_VALIDATION.md`; RULE-028 aha/manaha overlap). This
+transcript is a corroborating duplicate source, not new evidence.
+
+**Classifier note — new, and raises a real doubt about relay-batch item 47 ("log: dot"):**
+Thangseng: pole/rod/bamboo/pencil use classifier `jol` (already
+confirmed, `GRAMMAR_RULE_CATALOGUE.md` RULE-006-area); tree uses `pang`
+(no raka, already confirmed); **a log or wooden post can *also* use
+`dot` (no raka) as its counting classifier** — "Dotsa, dotgni,
+dotgittam" (one/two/three logs). This is new: `dot` as a log-counting
+classifier was not previously in `raka_roots.json` or the grammar
+catalogue.
+
+**Implication, not applied:** `docs/THANGSENG_RELAY_BATCH_20260820.md`
+Part A item 47 asks whether `dot` (the value currently shipping via
+`corrections.json` for the headword "log") is correct. This transcript
+only confirms `dot` as a *classifier* for counting logs — the same
+role `dot` plays for "mountain" (root `A·bri` + classifier `dot`,
+2026-08-11 counting rule), where the classifier is demonstrably *not*
+the headword. `master_dictionary.json` separately holds two
+UNVERIFIED/HIGH candidates for the headword itself (`bol·gan·tong`,
+`bol·tong`), neither of which is `dot`. This raises a real possibility
+that `corrections.json`'s `"log": "dot"` is a classifier-for-headword
+mix-up, not a correct translation — but this transcript does not
+directly confirm or deny that, so item 47 is **not** closed and
+`corrections.json` is **not** changed here (evidence-first: a plausible
+inference from classifier structure is not the same as a direct
+native answer to the headword question).
+
+**Recommended follow-up (not yet sent):** ask Thangseng directly —
+"What is the Garo word for 'log' the object (not the counting word
+used with numbers)? Is it `bol·gan·tong`, `bol·tong`, something else,
+or is `dot` genuinely used as the bare noun too?"
+
+No dictionary data changed this entry. Gate unaffected (docs-only).
