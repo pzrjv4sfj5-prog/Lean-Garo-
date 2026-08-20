@@ -137,7 +137,6 @@
   "sell": "business",
   "come": "travel",
   "go": "travel",
-  "father": "family",
   "mother": "family",
   "son": "family",
   "daughter": "family",
@@ -2569,7 +2568,6 @@
   "purple flower": "nature",
   "purple sky": "nature",
   "purple water": "food",
-  "my father": "family",
   "my mother": "family",
   "my brother": "family",
   "my sister": "family",
@@ -3048,6 +3046,7 @@
   "bye, i'm going": "phrases",
   "do you have a boyfriend?": "phrases",
   "eyelash / eyebrows": "health",
+  "father": "family",
   "housefly": "animals",
   "have you eaten rice?": "phrases",
   "in a broad daylight, are you sleeping?": "phrases",
@@ -3929,5 +3928,7 @@
   "eighteen airplane": "travel",
   "nineteen airplane": "travel",
   "twenty airplane": "travel",
-  "blink": "general"
+  "blink": "general",
+  "happy": "emotions",
+  "have you eaten": "food"
 }

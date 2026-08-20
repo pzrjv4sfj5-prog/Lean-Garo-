@@ -4532,3 +4532,62 @@ used with numbers)? Is it `bol·gan·tong`, `bol·tong`, something else,
 or is `dot` genuinely used as the bare noun too?"
 
 No dictionary data changed this entry. Gate unaffected (docs-only).
+
+## NV-085 (2026-08-20) — WhatsApp Q&A batch (lettered A–Q), supplied directly by Project Owner
+
+Source: large Thangseng Q&A transcript, letters A through Q, covering
+negation/continuous ordering, `ong'a` as the to-be verb, spatial
+phrases, `ska`/`nanga`/`ama` (want/need/can) distinctions,
+watch-vs-see, lying-down conjugation, loanword status (TV/phone/
+internet/status), `ska` irregular conjugation (follows `sika`),
+bear/tolerate/berate vocabulary, hung/hidden/broken descriptions,
+`ong'ja` vs `dong'ja`, past-interrogative `ma`/`hama` nuance, and a
+culture note (`cha` = tea, colloquially also "breakfast").
+
+**Closed — three items, VERIFIED/HIGH, citing this transcript (letter B):**
+- `happy` = `kusi` ("Happy = Kusi"). Old master row `han·seng·a`
+  (UNVERIFIED) SUPERSEDED, not deleted.
+- `be happy` = `Kusi ong·bo` (imperative, explicit example given). Old
+  untagged row `Kusi ong.bo` (period typo) SUPERSEDED.
+- `i am happy` = `Anga kusi ong·a` (explicit example; `ong'a` confirmed
+  as the to-be verb functioning as am/are/is across all persons/tenses
+  — `ong'aha`=was, `ong'gen`=will be, `ong'jawa`=will not be,
+  `ong'genma?`=will I be?). Old untagged row `Anga kusionga` (unspaced)
+  SUPERSEDED; stale `phrase_maps.js` copy of the same value also fixed
+  to match (Rule 8 duplicate-representation sweep — not just
+  allowlisted).
+
+**Fixed — one item, real correction, not citation-only:**
+`have you eaten` — `corrections.json` was shipping `Na·a Cha·jok ma?`,
+which matched *neither* this transcript's direct answer
+("Have you eaten? = Na'a cha'ahama?", letter N) *nor* the dictionary's
+own pre-existing VERIFIED/HIGH/200sentences master row for
+`Have you eaten?` (`Na·a cha·ama?`). Corrected `corrections.json` to
+`Na·a cha·aha ma?`, matching the direct transcript answer, and added a
+new VERIFIED/HIGH master row citing this NV. Nuance carried in the
+notes: `cha·ama?` (generic/simple past, e.g. "yesterday") and
+`cha·aha ma?` (recent/specific referent, present-perfect reading) are
+both legitimate depending on context, per the same source — not
+competing values. `did you eat` (separate key, already shipping
+`Na·a Cha·aha ma?`) is unaffected and consistent with this reading.
+
+**Logged, not closed — new open candidate for Bear (verb, endure/tolerate sense):**
+Letter L, item 27: "ka'a chakna amja = cannot bear or tolerate" —
+fairly confident (unlike items 28–30 in the same letter, which
+Thangseng explicitly flagged as unconfirmed). Added as a fourth OPEN
+candidate (`ka·a chak`) alongside the existing `ba·a` / `mak·bil` /
+`nang·a` (NV-080). Indirect evidence (answers an example sentence, not
+a direct headword question) — does not resolve the open item.
+Recommended follow-up: ask directly whether `ka·a chak` (or infinitive
+`ka·a chakna`) is the bear/tolerate/endure headword and how it relates
+to the three existing candidates.
+
+**Reviewed, no action (not new, or not applicable to any current dictionary key):** negation+continuous suffix ordering (`re'angjaenga`); spatial "book is X" phrase set (below/inside/outside/above/behind/beside/up-on); `ska` (want) vs `nanga` (need) vs `ama` (can, homophone of `ama`=mother) distinctions and `ska`'s irregular conjugation following `sika` (push/insert); `nia` (watch) vs `nika` (see) vs `nisona` (wait/watch-with-expectation); lying-down conjugation set; TV=`bairong` (obsolete), no word for "status", phone=`ku'bilbat` (obsolete), no word for "internet"; hung/hidden/broken example sentences; `ong'ja` (is-not, being) vs `dong'ja` (is-not, presence); "are you eating?"=`Na'a cha'engama?`; "do you want the book?"=`Na'a ki'tapko nangnikama?`; `jroa` (burning sensation, not heat itself; also "to swim") — none of these match a currently-open relay-batch item, logged for future reference only.
+
+**Also this session (explicit Project Owner instruction, not native-evidence-driven):** all non-`ba·ba` master rows for "father"/"my father" (`Pa / Apa`, `a·pa`, `pa·a`, `angni papa`) physically deleted rather than retained-and-SUPERSEDED — a one-off scoped exception to the standard retain-and-tag policy, done on explicit instruction, not a general policy change.
+
+Gate green: 8128 compiled entries, 9/9 grammatical corrections, 218/218
+unit tests, 14525/14525 runtime sweep, 0 errors, 0 new Check A–F
+violations (3 self-consistency pairs allowlisted in
+`known_dictionary_conflicts.json`, expected from the 3 supersede+add
+pairs above).

@@ -33,7 +33,7 @@ export const PHRASE_MAPS = {
   'i am busy': 'Anga kam·gnanga',
   'i am coming': 'Anga re·baenga',
   'i am going': 'Anga re·angenga',
-  'i am happy': 'Anga kusionga',
+  'i am happy': 'Anga kusi ong·a',
   'i am sad': 'Anga dukonga',
   'i am angry': 'Anga ka·o nanga',
   'i am scared': 'Anga kena',

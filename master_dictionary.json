@@ -720,13 +720,6 @@
     "category": "travel"
   },
   {
-    "english": "father",
-    "garo": "Pa / Apa",
-    "category": "family",
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'father' is 'ba·ba'. Retained per citation discipline, not deleted.",
-    "confidence": "SUPERSEDED"
-  },
-  {
     "english": "mother",
     "garo": "Ma / Ama",
     "category": "family",
@@ -4475,7 +4468,9 @@
   {
     "english": "i am happy",
     "garo": "Anga kusionga",
-    "category": "emotions"
+    "category": "emotions",
+    "confidence": "SUPERSEDED",
+    "notes": "SUPERSEDED — native relay NV-085 (2026-08-20): stale/unspaced variant; native-confirmed form is 'Anga kusi ong·a' (Thangseng, letter B). Retained per citation discipline, not deleted."
   },
   {
     "english": "i am sad",
@@ -14225,11 +14220,6 @@
     "category": "food"
   },
   {
-    "english": "my father",
-    "garo": "angni papa",
-    "category": "family"
-  },
-  {
     "english": "my mother",
     "garo": "angni mama",
     "category": "family"
@@ -16755,7 +16745,8 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null
+    "notes": "SUPERSEDED — native relay NV-085 (2026-08-20): stale period-typo variant; native-confirmed form is 'Kusi ong·bo' (Thangseng, letter B). Retained per citation discipline, not deleted.",
+    "confidence": "SUPERSEDED"
   },
   {
     "english": "beautiful",
@@ -18733,30 +18724,12 @@
   },
   {
     "english": "Father",
-    "garo": "a·pa",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'father' is 'ba·ba'. Retained per citation discipline, not deleted.",
-    "confidence": "SUPERSEDED"
-  },
-  {
-    "english": "Father",
     "garo": "ba·ba",
     "pos": null,
     "category": "family",
     "classifier": null,
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
     "confidence": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Father",
-    "garo": "pa·a",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'father' is 'ba·ba'. Retained per citation discipline, not deleted.",
-    "confidence": "SUPERSEDED"
   },
   {
     "english": "Feather",
@@ -32439,7 +32412,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED — native relay NV-085 (2026-08-20): not selected; native-confirmed 'happy' = kusi (Thangseng, WhatsApp transcript letter B). Retained per citation discipline, not deleted.",
+    "confidence": "SUPERSEDED"
   },
   {
     "english": "harmonium",
@@ -67300,5 +67274,50 @@
     "category": "general",
     "classifier": null,
     "notes": "VERIFIED/HIGH — imperative sense, re-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part A). Matches the existing NV-015/RULE-029 finding: Da·mo and Sengbo (the -bo imperative form of senga) are the imperative 'Wait!', while declarative 'to wait' is senga (see separate 'wait'/'senga' row, and 'Wait.'/'Damo.' row). Spelled here with no space around the slash ('Damo/Sengbo') to match prepare-data.js's existing grammarOverrides constant exactly -- see tests/unit/translationEngine.test.js:1117 regression test, which locks this key to the pre-existing engine value on purpose (Claude B's pickPrimary-precedence fix, RUNTIME_ENGINEERING_AUDIT_20260803.md). This row closes the Check E citation gap without changing runtime output or tripping that guard."
+  },
+  {
+    "english": "happy",
+    "garo": "kusi",
+    "pos": null,
+    "category": "emotions",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (Thangseng, WhatsApp transcript letter B, NV-085): 'Happy = Kusi'.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "i am happy",
+    "garo": "Anga kusi ong·a",
+    "pos": null,
+    "category": "emotions",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (Thangseng, WhatsApp transcript letter B, NV-085): 'I am happy. = Anga kusi ong'a.' ong'a functions as to-be verb (am/are/is).",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "be happy",
+    "garo": "Kusi ong·bo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (Thangseng, WhatsApp transcript letter B, NV-085): 'Be happy. = Kusi ong'bo. (Imperative)'.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "have you eaten",
+    "garo": "Na·a cha·aha ma?",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (Thangseng, WhatsApp transcript letter N, NV-085): direct answer to 'Have you eaten?'. Nuance: 'Na·a cha·ama?' (simple past, generic, e.g. yesterday) also valid per same source — the two forms are context-dependent, not competing (see existing Have you eaten?/VERIFIED/HIGH/200sentences row for the generic-past reading). corrections.json 'have you eaten' key corrected to match this row this session (was 'Na·a Cha·jok ma?', unsupported by either native source).",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "Bear",
+    "garo": "ka·a chak",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "OPEN — new candidate, native relay NV-085 (2026-08-20, Thangseng WhatsApp transcript letter L, item 27): 'ka'a chakna amja = cannot bear or tolerate' (fairly confident, not hedged, unlike items 28-30 in same letter which Thangseng explicitly flagged as unconfirmed). This is indirect: answers a 'cannot bear/tolerate' example sentence, not a direct 'what is the verb bear?' question. Adds to, does not resolve, the existing open candidate set (ba·a / mak·bil / nang·a, all still OPEN from NV-080). Recommended follow-up: ask directly whether 'ka'a chak' (or infinitive 'ka'a chakna') is the headword for bear/tolerate/endure, and how it relates to ba·a/mak·bil/nang·a.",
+    "confidence": "OPEN"
   }
 ]
