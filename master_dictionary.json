@@ -6475,7 +6475,14 @@
   {
     "english": "my house",
     "garo": "angni rang",
-    "category": "home"
+    "category": "home",
+    "notes": "SUPERSEDED — native relay NV-088 (2026-08-20, Thangseng via Tridip): not confirmed, superseded by 'ang·ni nok'."
+  },
+  {
+    "english": "my house",
+    "garo": "ang·ni nok",
+    "category": "home",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-088, Thangseng relay via Tridip, WhatsApp: 'my house = Angni Nok'). Matches the shipping corrections.json override exactly — this closes the citation gap CLAUDE_B_HANDOFF_20260819 section 4 flagged (master previously held a different, unconfirmed value)."
   },
   {
     "english": "your father",

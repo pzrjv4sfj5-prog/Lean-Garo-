@@ -4691,3 +4691,28 @@ pairs — no new allowlist entries needed).
 "i understand" were tracked separately from the 141-item batch;
 "beautiful" was already closed in NV-083). Still open: 139 batch
 items + "three weeks" (Anti/week Q3, unresolved).
+
+## NV-088 (2026-08-20) — "my house" real-time WhatsApp confirmation
+
+Source: Thangseng via Tridip, WhatsApp — direct answer to relay item
+`THANGSENG_RELAY_BATCH_20260820` Part B #40 ("my house").
+
+A: "my house = Angni Nok"
+
+**Applied:**
+- Matches the shipping `corrections.json` override exactly
+  (`ang·ni nok`, modulo raka-dot orthography) — but master previously
+  held a different, unconfirmed value (`angni rang`), the exact
+  "no VERIFIED candidate" gap `CLAUDE_B_HANDOFF_20260819` section 4
+  flagged. Old master row tagged SUPERSEDED (cites NV-088, retain-and-
+  tag, not deleted); new VERIFIED/HIGH row added with the confirmed
+  value.
+- Allowlisted in `known_dictionary_conflicts.json` (Check C) — master
+  now legitimately holds two rows (SUPERSEDED + VERIFIED) for this key.
+- Confirmed via live `translate("my house")` → `ang·ni nok`, method
+  `correction`, confidence 1.
+- Gate green: 8131 entries, 9/9 grammatical corrections, 218/218 unit
+  tests, 14530/14530 runtime sweep, 0 errors, 0 new Check A–F
+  violations.
+
+**Remaining `THANGSENG_RELAY_BATCH_20260820` items:** 138 still open.
