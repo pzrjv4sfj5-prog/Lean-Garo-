@@ -1388,7 +1388,22 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-20 (Claude B): built the permanent CI resync gate (backlog item from 08-19b) --
+  next_action: '2026-08-20b (Claude B): built CI guard-rail against hand-edited/stale
+    compiled_dict.json and compiled_dict_alternates.json -- CI now snapshots the
+    committed files, regenerates via prepare-data.js, diffs; fails on any divergence.
+    Verified both directions (clean on real repo, correctly catches a simulated
+    hand-edit -- caught and fixed my own test-order mistake before shipping it).
+    Also: rejected an in-conversation "QA findings" document claiming 69 live-masking
+    bugs -- independently checked all 4 named examples against the repo, all 4 were
+    false, no fixes applied, no sweep run. Rebased cleanly onto Claude A''s concurrent
+    work twice, full gate re-run after each. HEAD==origin/main==a0c7be4, clean tree.
+    Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260820b.md.
+    Next Recommended Tasks: none in this lane -- still blocked on Claude A reading
+    docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md (bear, elephant/outside,
+    20 unproven-stale, 160 no-candidate items -- 150 of the no-candidate items have
+    a drafted-not-sent Thangseng relay batch per Claude A''s ee6d462, still pending
+    send+reply). Same blocker as 08-19b/08-20, unchanged by this session.'
+  next_action_prior: '2026-08-20 (Claude B): built the permanent CI resync gate (backlog item from 08-19b) --
     scripts/resync-stale-overrides.mjs now fails CI on any unresolved mechanical resync candidate, wired
     into .github/workflows/ci.yml as its own step. Added src/data/resync_confirmed_exceptions.json to
     record the already-decided answer verb/noun trap so the gate doesn''t perma-fail on it (no new linguistic
