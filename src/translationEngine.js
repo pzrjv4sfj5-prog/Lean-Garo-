@@ -128,7 +128,15 @@ export async function translate(input) {
   if (correction) return { garo: correction, method: 'correction', confidence: 1.0 };
 
   // 1.5 Phrase map
-  const phraseMap = lookupPhrase(lower);
+  // RUNTIME BUG FIX (2026-08-20, Claude A): was calling lookupPhrase(lower)
+  // with the apostrophe-stripped form only. 13 PHRASE_MAPS keys contain
+  // apostrophes (contractions like "i don't know", "don't give up") and
+  // were therefore never reachable — silently falling through to weaker
+  // methods (stopword-stripped/grammar-assembly/sov-assembly). Worst case:
+  // "i don't know" shipped as "Anga uia." (= "I know", polarity reversed)
+  // instead of the confirmed "Anga uija" (= "I don't know"). Mirrors the
+  // corrections lookup pattern above: try apostrophe-preserved forms first.
+  const phraseMap = lookupPhrase(lowerWithApos) || lookupPhrase(cleaned) || lookupPhrase(lower);
   if (phraseMap) return { garo: phraseMap, method: 'phrase-map', confidence: 0.99 };
 
   // 2. Exact phrase (compiled dict) — runs BEFORE classifier composition.

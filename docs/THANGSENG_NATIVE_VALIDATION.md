@@ -4716,3 +4716,54 @@ A: "my house = Angni Nok"
   violations.
 
 **Remaining `THANGSENG_RELAY_BATCH_20260820` items:** 138 still open.
+
+## Runtime bug fix (2026-08-20, Claude A, corpus-internal — no native input needed)
+
+**Found while auditing open relay items for compositional/rule-based
+resolution** (per Project Owner directive to resolve from existing
+data before relaying further, and to check for runtime errors).
+
+**Bug:** `translationEngine.js`'s phrase-map lookup step called
+`lookupPhrase(lower)`, where `lower` has all apostrophes stripped
+(`"i don't know"` → `"i dont know"`). `PHRASE_MAPS` keys are stored
+WITH apostrophes intact. Result: all 13 apostrophe-containing
+`phrase_maps.js` entries were silently unreachable — every one fell
+through to a weaker method (stopword-stripped / grammar-assembly /
+sov-assembly) instead of the confirmed 0.99-confidence phrase-map
+value.
+
+**Severity varied by key** — checked live output for all 13 before
+and after:
+- **Meaning-reversed (worst case):** "i don't know" shipped as
+  `Anga uia.` (= "I know" — polarity completely lost) instead of the
+  confirmed `Anga uija` (= "I don't know").
+- **Wrong verb root:** "i don't understand" shipped `Anga uija`
+  ("I don't know") instead of `Anga ma·sija` ("I don't understand").
+  "i don't want" shipped `Anga skja` (want-root) instead of the
+  confirmed `Anga nang·ja`.
+- **Wrong construction:** "don't be afraid" shipped a negated
+  statement (`ken·ja`) instead of the confirmed imperative/prohibitive
+  form (`Kennabe`).
+- **Word-salad:** "don't give up" and "don't forget your language"
+  shipped disordered sov-assembly output instead of the confirmed full
+  sentences.
+- **Minor (case/raka-dot only, same meaning):** "i don't have",
+  "don't be sad", "that's good", "that's bad".
+- **Not actually affected:** "let's go", "let's sleep", "i don't care"
+  — these happen to also exist in `corrections.json`, which is checked
+  before the phrase-map step and already returned the correct value.
+
+**Fix:** phrase-map lookup now tries apostrophe-preserved forms first
+(`lowerWithApos`, then `cleaned`, then apostrophe-stripped `lower` as
+last-resort fallback), mirroring the pattern already used for the
+corrections lookup immediately above it in the same function.
+
+**Verified:** all 13 keys now resolve via `phrase-map` at 0.99
+confidence, matching their `PHRASE_MAPS` values exactly (spot-checked
+live via `translate()`, not `compiled_dict.json`). Gate green: 8131
+entries, 9/9 grammatical corrections, 218/218 unit tests, 14530/14530
+runtime sweep, 0 errors, 0 new Check A–F violations.
+
+**Scope note:** this is corpus-internal engine logic — no native
+input involved or needed. Filed as its own fix, separate from any
+relay-batch NV closure.
