@@ -1,5 +1,5 @@
 repository:
-  head: 6b9700d
+  head: d0f3eb8
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -7,7 +7,11 @@ repository:
     to review everything since this checkpoint; continue from actual repo state. Do NOT create follow-up
     commits solely to update `head` to match itself - that is a contradiction (see prior "fix stale head
     hash" commits 9558ea6 etc., now superseded by this convention).'
-  last_updated: '2026-08-16 (Claude B, session close, double-rebased). Same pickPrimary fix as before
+  last_updated: '2026-08-20 (Claude A, session resume/close): updated WORKSTATE.yaml + SESSION_BOOTSTRAP.md
+    to point at docs/CLAUDE_A_SESSION_MIGRATION_20260820.md (this was flagged outstanding at prior session
+    close and remained outstanding through the NV-083 commits themselves -- done now, first action on
+    resume, before any new work, per Rule 10). No code/data changes this update, WORKSTATE/BOOTSTRAP only.'
+  last_updated_prior: '2026-08-16 (Claude B, session close, double-rebased). Same pickPrimary fix as before
     (see docs/CLAUDE_B_SESSION_MIGRATION_20260816.md for full account: variant-tie branch fixing work/boil/close/empty/leg/strong/small,
     plus a neutral-tie branch added after the first rebase onto Claude A''s cb53f1c). While preparing
     to push a SECOND time, origin advanced again to 6b9700d (Claude A independently resolved the same
@@ -21,64 +25,6 @@ repository:
     unrelated dedup work in the same commit, not a regression here). All counts/tests re-verified on the
     actual final commit: 215/215 tests, 8128/8128 dictionary, repository-intelligence.js 0 new violations.
     HEAD==origin/main confirmed immediately before this push.'
-  last_updated_prior: '2026-08-15 (Claude B, session close: QA/verification session, no engineering changes
-    of its own -- resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260814_E.md (checkpoint 216ee46, itself
-    this role''s prior session''s docs-only close committing the phrase_maps.js ''angry'' hold-decision).
-    git fetch found origin had advanced twice while reviewing: Claude A''s bbd3b3f (student bare-noun
-    root fix, Chattro) and 922ef9d (Claude C''s first audit report, docs/CLAUDE_C_AUDIT_20260815.md, wired
-    into WORKSTATE/ BOOTSTRAP) -- rebased clean, both fast-forwards, no conflicts.
-
-    Reviewed the Claude C audit''s own findings at the Project Owner''s request. Verified its core claim
-    directly (live translate() calls, not just source-reading): the 2026-08-01/10/12-13 bulk SUPERSEDED
-    sweeps in master_dictionary.json genuinely never propagated to corrections.json/phrase_maps.js for
-    a meaningful number of keys. But found one row in the audit''s own 37-word sample table was a false
-    positive: ''answer'' was reported as matching a SUPERSEDED candidate for its own key, when the SUPERSEDED
-    tag it actually matched belongs to a *different* key (''To answer'', capitalized, same garo string)
-    -- master_dictionary.json''s actual ''answer'' (lowercase) key is VERIFIED/HIGH via NV-077, which
-    explicitly reversed the 2026-08-01 audit''s original SUPERSEDED tag on this exact word. A key-matching
-    artifact in the audit script, not a real defect in the override tables. Confirmed ''food'' (adjacent
-    row) checked out clean by contrast -- same key both directions, genuine match. Not yet corrected in
-    docs/CLAUDE_C_AUDIT_20260815.md itself (Claude C has no write access; the document is written in Claude
-    C''s voice and shouldn''t be silently edited by another role) -- see claude_c.next_action below for
-    how this is being surfaced instead.
-
-    While reviewing, found Claude A had independently already acted on the audit''s §3.2/§3.4 finding
-    at scale: commit 1ccac8c (pulled via the same fetch above) mechanically resynced 85 stale corrections.json/phrase_maps.js
-    keys against genuinely-VERIFIED compiled_dict.json values, using a stricter check (requires compiled_dict.json''s
-    own live value to be non-SUPERSEDED/ non-UNVERIFIED/non-OCR-flagged before resyncing to it) that independently
-    avoided the same ''answer'' false-positive for a related but distinct reason -- see next paragraph.
-    Check F baseline dropped 334 -> 249 -> (203 after this session''s own re-run, see Verification below;
-    the further drop is this session''s re-run picking up cumulative state, not new work).
-
-    New finding, this session''s own (mechanical verification, not linguistic): live-tested ''work'' and
-    ''answer'' directly against compiled_dict.json and master_dictionary.json. Both show pickPrimary (prepare-data.js)
-    selecting an OCR-flagged or otherwise non-VERIFIED candidate over a plain VERIFIED one for the same
-    key -- ''work'' -> compiled_dict.json ships ''Kam'' ([OCR-flagged, high confidence]) instead of either
-    ''Work''/''ga·a'' or ''Work''/''ka·a'' (both variant/VERIFIED/HIGH, untagged-case sibling entries);
-    ''answer'' -> compiled_dict.json ships ''a·gan·chak·a'' (UNVERIFIED) instead of ''Aganchaka'' (VERIFIED/HIGH,
-    NV-077). This is upstream of and distinct from the override-table staleness Claude A''s resync already
-    fixed -- it means compiled_dict.json itself can carry the wrong value even when a correct VERIFIED
-    master entry exists, no override table involved at all. Currently masked for ''answer'' only because
-    corrections.json''s override (''Aganchaka'') happens to independently hold the right value; NOT masked
-    for ''work'' -- corrections.json''s own ''work'' override is itself the original 2026-08-01-superseded
-    value (''Daka''), correctly left untouched by Claude A''s resync script (compiled_dict''s ''Kam''
-    wasn''t a safe resync target either), so translate(''work'') is currently WRONG end-to-end with no
-    correct value anywhere in the live cascade for that key. Flagged, not fixed, this session -- see claude_b.pending_next_session
-    below.
-
-    Verification (full gate re-run against 1ccac8c, this session''s own re-verification, not assumed from
-    Claude A''s commit message): prepare-data.js re-run, byte-identical output (8132 entries, 190 held,
-    confirmed via git status --short showing no diff after running it); node test-dictionary.js 8132/8132
-    valid; npm install run to restore a missing local eslint binary (sandbox-environment issue only, package.json/lockfile
-    unchanged, not a repo defect) then npm run lint 0 errors/0 warnings; node --test tests/unit/*.test.js
-    215/215; npx vite build clean; node repository-intelligence.js PASSED, 0 NEW violations all checks
-    (Check F 203 known/allowlisted/0 new). Live translate() smoke-test (not just source-read) for 10 representative
-    keys spanning resynced words (work, sleep, food, teacher), the held angry-phrase question (confirmed
-    still untouched, correctly), and the newly- surfaced pickPrimary gap (answer, work) -- no exceptions,
-    no malformed/empty responses, confirms the ''work'' defect above is real and live, not just visible
-    in the JSON. git status clean throughout, HEAD==origin/main at push time (this commit), fully pushed.
-    PAT supplied live by Project Owner, used inline in the push URL only, never persisted. Full detail:
-    docs/CLAUDE_B_SESSION_MIGRATION_20260815.md.'
   test_status: '"203/203 unit tests passing (unchanged count from 2026-08-10 checkpoint -- this session''s
     fixes corrected existing/added new entries within the fixed pass count, net zero new test files; 1
     stale rc037 assertion updated to match the corrected ''three fish'' value, no test added/removed).
@@ -200,137 +146,106 @@ repository:
     swept in the next session before being called fully resolved.'
 claude_a:
   status: active
-  next_action: >-
-    2026-08-18 (Claude A, this session's close): re-keyed
-    master_dictionary.json's "where?" -> Bao entry to "where (object
-    placement)" -- it was still compiling as the generic "where?" answer
-    despite NV-054 (2026-08-03) already establishing Bao is object-
-    placement-only, not general "where?". No new NV number; cited
-    existing NV-054, since Project Owner re-supplied the same native
-    quote verbatim in chat. Closes relay-batch item 133b. Pushed b09c336.
-    Also investigated Project Owner's "baba/Aa.i still showing up"
-    report: confirmed not a bug -- compiled_dict.json already resolves
-    father->ba·ba, mother->Aa.i correctly; the old competing rows
-    (Pa/Apa, a·pa, pa·a, Ma/Ama, a·ma, ma·gip·a, na·gi·pa) are all
-    already tagged SUPERSEDED with NV-080 citations, retained per
-    citation-discipline policy, not deleted -- visible only if reading
-    raw master_dictionary.json directly, not via the compiled app.
-    Explicitly declined a "close everything" instruction covering the
-    13 remaining open items (see next_action_prior for the list, now 13
-    not 14 -- 133b closed this session) -- no new native evidence
-    supplied for any of them, evidence-first methodology holds even
-    under a direct instruction to force-close. Gate re-verified clean
-    after the Bao fix: 8127 entries, 218/218 tests, 0 new
-    repository-intelligence violations, 14523/14523 runtime-sweep, 0
-    errors, 16 pre-existing pickPrimary ties (none introduced -- one
-    fewer key now falls into the "where?" collision).
-    Next Recommended Tasks: (1) hand phrase_maps.js sync list (34 keys,
-    known_cross_source_conflicts.json "phrase_maps:*") to Claude B --
-    still pending, untouched this session. (2) 82/84 Ka·donga
-    duplicate-encoding conflict needs a fresh native question via
-    Tridip/Thangseng. (3) 138/139/140 hortative RULE 2 table internal
-    inconsistency needs native re-confirmation. (4) If Project Owner
-    wants superseded rows physically deleted rather than retained-and-
-    tagged, that's a policy change to raise explicitly, not assume.
-  next_action_prior: >-
-    2026-08-17b (Claude A): applied the Thangseng relay batch
-    cross-reference (NV-080) -- 127 of 141 pickPrimary items closed
-    against master_dictionary.json + corrections.json. 14 items
-    deliberately left OPEN (13 remain after 133b closed 2026-08-18):
-    82 Brave/84 Hope duplicate-encoding conflict (Ka·donga for both),
-    94 Agree, 138/139/140 let's sit/play/work (relay batch's own doc
-    flags these as contradicting RULE 2 table), 26 Last, 96 Bear (verb
-    sense), 133 Where-relative jeon/jeo, 44 Gong (instrument sense),
-    small/wet Chon·a duplicate. Gate: 8127 entries, 218/218 tests, 0
-    new repository-intelligence violations, 14523/14523 runtime-sweep,
-    16 pre-existing pickPrimary ties. Pushed d217f54, then 9ec26c4.
-    See docs/CLAUDE_A_SESSION_MIGRATION_20260817B.md.
-  next_action_prior_new: >-
-    2026-08-16c (Claude A, this session's close): PO said "fix all"
-    covering the 3 Next Recommended Tasks from the prior session. Did
-    NOT bulk-fix -- evidence-first forbids guessing 140 words. Instead:
-    (1) hortative -ha/-na: re-checked citation status per-entry, found
-    the prior session's "~15-entry conflict" claim was overstated -- only
-    "let's eat"/"let's eat food" actually had a citation mismatch,
-    fixed; the rest (sleep/drink/sit/play/work/hang out) are uncited on
-    BOTH sides, genuinely unresolvable without native input, left open.
-    (2) 141-key pickPrimary tie backlog: scanned all for ranking/citation
-    signals, fixed the one real case (angry -- native's own note ranks
-    ka'o nanga "most common"), left the rest untouched with reasons
-    (free variants with no stated preference, POS splits that need
-    engine logic not data picks, or a case-collapse merging genuinely
-    different words). (3) Also found and fixed a naming collision -- my
-    prior session's RC-CANDIDATE-012 duplicated an existing unrelated
-    ID, renumbered to 039. Full gate green: 218/218 tests, 8127/8127
-    entries, 0 new repository-intelligence violations, 0 sweep errors.
-    Pushed a656c22, confirmed origin match. No queued native-validation
-    item. See docs/CLAUDE_A_SESSION_MIGRATION_20260816.md for full
-    detail.
-  next_action_prior_new: >-
-    2026-08-16b (Claude A): scanned Check A's 12
-    report-only raka candidates per PO request, found + fixed a real
-    regression: "i want to drink" had reverted to the raka'd
-    ring·a="sing" homophone (RC-CANDIDATE-009/039, originally fixed
-    2026-07-23). Root cause traced to master_dictionary.json (the
-    canonical compile source) never having been updated when
-    corrections.json was fixed, plus two more uncited entries there
-    mislabeling the same homophone as "Drink". All three fixed in
-    master_dictionary.json this session, corrections.json re-fixed,
-    permanent regression test added
-    (tests/unit/rc039_drink_sing_raka.test.js). Full gate re-verified:
-    218/218 tests, 8127/8127 dictionary entries, repository-intelligence.js
-    0 new violations, runtime-sweep 14523/14523 calls 0 errors.
-    native-validation item.
-  next_action_note_workstate_anomaly: >-
-    2026-08-16b (Claude A): found on resync — the field immediately
-    below (now next_action_prior_stale_20260804) was sitting in the
-    `next_action` (current/top) slot after Claude B's large WORKSTATE.yaml
-    restructure (cb1f1f5), despite being dated 2026-08-04 and
-    chronologically preceding next_action_prior_5 (dated 2026-08-16,
-    correctly further down the prior-chain). Looks like an ordering bug
-    in whatever produced that rewrite, not intentional. Not fixed beyond
-    relabeling it out of the current-action slot (relabeling only,
-    content untouched, retained per citation discipline) — restructuring
-    WORKSTATE.yaml itself is engine/tooling territory, out of my lane.
-    Flagging for Claude B to check next session.
-  next_action_prior_stale_20260804: '2026-08-04 (Project Owner correction, closes the need question): Project Owner directly
-    confirmed "need" = "nanga" (no raka), not "nang·a" as this session''s earlier linguistic call had
-    it. This reverses the "nang·a" correction two entries below. Corrected across all of: master_dictionary.json
-    (the VERIFIED/HIGH "need" entry''s own garo field and notes — the note already quoted Thangseng as
-    "nanga = need", so the raka in the garo field itself was the actual mistranscription, not the note),
-    corrections.json, irregular_verbs.json, and src/compiled_dict.json (patched directly rather than via
-    a full build-master-dictionary.js rebuild, to avoid touching unrelated merge-derived content in that
-    script''s other inputs). Verified via repository-intelligence.js: Check B "need" — 0 new violations;
-    Check F "need" — 0 new violations (only the pre-existing, unrelated "who gave you this" mismatch remains).
-    test-dictionary.js: 8048/8048 valid, 9/9 corrections verified. 2026-08-04 (mid-session collision note):
-    while pushing the fix below, found Claude B had pushed b4890a6 (Claude C audit findings 1-3) in the
-    interim. Fetched, diffed (no textual overlap with my changes), merged clean via git merge. That commit
-    synced irregular_verbs.json''s "need" to "nanga" (to match corrections.json''s pre-fix value) - now
-    stale against my raka correction below, so also updated irregular_verbs.json "need"->"nang·a" to keep
-    all three tables (corrections.json, irregular_verbs.json, master_dictionary.json) consistent on the
-    VERIFIED/HIGH spelling. Re-ran repository-intelligence.js post- merge: Check B "need" now 0 new violations
-    (was already 0 for my original 3 targets pre-merge; merge did not reintroduce anything). Full post-merge
-    state matches what was already documented below - my 3 targeted items stay fixed, the 3 pre-existing/unrelated
-    items (Check C x4, Check F "who gave you this") are untouched by the merge, still open, still Next
-    Recommended Tasks. test-dictionary.js re-run post-merge: 8048/8048 valid, 9/9 corrections verified.
-    2026-08-04 (this session): the 3 build-gate items handed off to Claude A are fixed (see current_task''s
-    2026-08-04 update) - PL-0002012/PL-0002013 enum+field corrections, "need" corrections.json/master
-    spelling sync. Claude B''s build gate still fails on unrelated pre-existing issues, none touched this
-    session: Check B "need" corrections.json="nang·a" vs irregular_verbs.json="sikenga" (stale, same root
-    cause class as the fix above but a different file - irregular_verbs.json was never updated when NV-005/016
-    propagated); Check C 4 findings ("where did you come from?", "can", "mature", "where (relative pronoun)"
-    jeon/jeo - this last one may be a false positive, since jeon/jeo are legitimate free variants per
-    NV-054, not a real conflict - worth a second look before allowlisting); Check F "who gave you this"
-    corrections.json vs compiled_dict.json (trailing "?" mismatch, same class as the already-documented
-    BUG-REPORT-WHERE-GOING pattern). None guessed at or fixed this session - flagged as Next Recommended
-    Tasks per one-task-per-session discipline. 2026-08-01 (later): NV-049 CLOSED (see current_task) -
-    mipring/-de and phone/smartphone/mobile, the two items listed as "genuinely still open" a few entries
-    below, are now resolved. "apple"/te·gatchu standalone-gloss gap from NV-048 also closed. Claude A
-    has no open linguistic task right now and is standing down for Claude B to resume engine-side work
-    - nothing on Claude A''s side is blocking. Only remaining non-urgent item: mina/minaha "ready" verb
-    paradigm has just 1 form on record, not worth a dedicated relay question yet. 2026-08-01: NV-048 CLOSED
-    (see current_task) - no follow-up action needed in this lineage. Genuinely still open, unchanged:
-    mipring vs mipringde (needs a disambiguating example, not corpus-resolvable) and phone/smartphone/
+  next_action: '2026-08-20 (Claude A, session close, NV-083): closed citation gaps on let''s drink/eat/play/sit/work,
+    my dog, beautiful, child, wait -- from Thangseng relay via Tridip responding to docs/THANGSENG_RELAY_BATCH_20260820.md
+    (150-item batch; only a small subset answered so far, 144/150 still open). let''s play/sit/work/my
+    dog were NOT just citation-only: master held stale unconfirmed values differing from what corrections.json
+    actually shipped -- old rows tagged SUPERSEDED, new VERIFIED/HIGH rows added citing NV-083, runtime
+    value unchanged (was already correct). Root cause found and fixed: closing the ''wait'' citation gap
+    first attempt used ''Damo / Sengbo'' (spaced) which is semantically identical to but byte-different
+    from the existing grammarOverrides constant ''Damo/Sengbo'' (no spaces) in prepare-data.js -- pickPrimary
+    treated it as a new VERIFIED selection, silently changed the compiled runtime value, broke tests/unit/translationEngine.test.js:1117
+    (217/218, plus an 8/9 test-dictionary.js mismatch traced to the same cause, not pre-existing as first
+    assumed). Caught by gate before push, corrected to match grammarOverrides byte-for-byte, re-verified
+    fully green. Lesson: any new VERIFIED/HIGH row for a key with a grammarOverrides entry needs byte-for-byte
+    value comparison, not just same-meaning comparison, before commit -- real Claude A/B architectural
+    coupling invisible from master_dictionary.json alone. Declined a verdict-only ''week=anti confirmed''
+    claim without the actual relay text -- evidence-first held under direct pressure. Also declined ''correct
+    entries don''t need Thangseng'' pushback re: the 150-item no-VERIFIED candidate batch -- no citation
+    isn''t the same as wrong, but isn''t confirmed either. Gate green: 8127 entries, 9/9 grammatical corrections
+    (was 8/9 mid-session, traced and closed), 218/218 unit tests, 14523/14523 runtime-sweep, 0 errors.
+    Pushed 72ff3a6, then d0f3eb8 (migration doc). WORKSTATE.yaml/SESSION_BOOTSTRAP.md NOT updated same-session
+    as the fix commits -- done now, this edit. See docs/CLAUDE_A_SESSION_MIGRATION_20260820.md. Open:
+    82 Brave, 94 Agree, 96 Bear (verb sense), 44 Gong (instrument sense), Anti/Antio/week (5 questions,
+    still unanswered), THANGSENG_RELAY_BATCH_20260820.md (144/150 open), B''s resync-sweep handoff (bear
+    case/sense risk = same as 96; elephant/outside tied candidates need a primary pick, Claude A judgment
+    not relay; 20 ''override disagrees with VERIFIED but not tagged SUPERSEDED'' items already cited,
+    worth Claude A reviewing directly next session).'
+  next_action_prior: '2026-08-18 (Claude A, this session''s close): re-keyed master_dictionary.json''s
+    "where?" -> Bao entry to "where (object placement)" -- it was still compiling as the generic "where?"
+    answer despite NV-054 (2026-08-03) already establishing Bao is object- placement-only, not general
+    "where?". No new NV number; cited existing NV-054, since Project Owner re-supplied the same native
+    quote verbatim in chat. Closes relay-batch item 133b. Pushed b09c336. Also investigated Project Owner''s
+    "baba/Aa.i still showing up" report: confirmed not a bug -- compiled_dict.json already resolves father->ba·ba,
+    mother->Aa.i correctly; the old competing rows (Pa/Apa, a·pa, pa·a, Ma/Ama, a·ma, ma·gip·a, na·gi·pa)
+    are all already tagged SUPERSEDED with NV-080 citations, retained per citation-discipline policy,
+    not deleted -- visible only if reading raw master_dictionary.json directly, not via the compiled app.
+    Explicitly declined a "close everything" instruction covering the 13 remaining open items (see next_action_prior
+    for the list, now 13 not 14 -- 133b closed this session) -- no new native evidence supplied for any
+    of them, evidence-first methodology holds even under a direct instruction to force-close. Gate re-verified
+    clean after the Bao fix: 8127 entries, 218/218 tests, 0 new repository-intelligence violations, 14523/14523
+    runtime-sweep, 0 errors, 16 pre-existing pickPrimary ties (none introduced -- one fewer key now falls
+    into the "where?" collision). Next Recommended Tasks: (1) hand phrase_maps.js sync list (34 keys,
+    known_cross_source_conflicts.json "phrase_maps:*") to Claude B -- still pending, untouched this session.
+    (2) 82/84 Ka·donga duplicate-encoding conflict needs a fresh native question via Tridip/Thangseng.
+    (3) 138/139/140 hortative RULE 2 table internal inconsistency needs native re-confirmation. (4) If
+    Project Owner wants superseded rows physically deleted rather than retained-and- tagged, that''s a
+    policy change to raise explicitly, not assume.'
+  next_action_prior_new: '2026-08-14, flagged by Claude B (session C, resumed): `angry` raka-count placement
+    is the one item from docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md that NV-077 explicitly
+    did not address (per NV-077''s own commit message) — still open, confirmed still open by direct repo
+    read this session (master_dictionary.json''s ka·o·nang·a still three raka marks, corrections.json/translationEngine.test.js:569
+    still mirror it, Owner''s flagged ka.onanga spelling still unmatched). See that doc''s 2026-08-14
+    update section for full status (the other three items in the same doc are now closed via NV-077, this
+    is the only one left). Needs the NV-054 native-validation channel, not an engineering fix — Claude
+    B has no new information on it, just re-flagging so it isn''t lost now that the doc''s other items
+    have closed.'
+  next_action_note_workstate_anomaly: '2026-08-16b (Claude A): found on resync — the field immediately
+    below (now next_action_prior_stale_20260804) was sitting in the `next_action` (current/top) slot after
+    Claude B''s large WORKSTATE.yaml restructure (cb1f1f5), despite being dated 2026-08-04 and chronologically
+    preceding next_action_prior_5 (dated 2026-08-16, correctly further down the prior-chain). Looks like
+    an ordering bug in whatever produced that rewrite, not intentional. Not fixed beyond relabeling it
+    out of the current-action slot (relabeling only, content untouched, retained per citation discipline)
+    — restructuring WORKSTATE.yaml itself is engine/tooling territory, out of my lane. Flagging for Claude
+    B to check next session.'
+  next_action_prior_stale_20260804: '2026-08-04 (Project Owner correction, closes the need question):
+    Project Owner directly confirmed "need" = "nanga" (no raka), not "nang·a" as this session''s earlier
+    linguistic call had it. This reverses the "nang·a" correction two entries below. Corrected across
+    all of: master_dictionary.json (the VERIFIED/HIGH "need" entry''s own garo field and notes — the note
+    already quoted Thangseng as "nanga = need", so the raka in the garo field itself was the actual mistranscription,
+    not the note), corrections.json, irregular_verbs.json, and src/compiled_dict.json (patched directly
+    rather than via a full build-master-dictionary.js rebuild, to avoid touching unrelated merge-derived
+    content in that script''s other inputs). Verified via repository-intelligence.js: Check B "need" —
+    0 new violations; Check F "need" — 0 new violations (only the pre-existing, unrelated "who gave you
+    this" mismatch remains). test-dictionary.js: 8048/8048 valid, 9/9 corrections verified. 2026-08-04
+    (mid-session collision note): while pushing the fix below, found Claude B had pushed b4890a6 (Claude
+    C audit findings 1-3) in the interim. Fetched, diffed (no textual overlap with my changes), merged
+    clean via git merge. That commit synced irregular_verbs.json''s "need" to "nanga" (to match corrections.json''s
+    pre-fix value) - now stale against my raka correction below, so also updated irregular_verbs.json
+    "need"->"nang·a" to keep all three tables (corrections.json, irregular_verbs.json, master_dictionary.json)
+    consistent on the VERIFIED/HIGH spelling. Re-ran repository-intelligence.js post- merge: Check B "need"
+    now 0 new violations (was already 0 for my original 3 targets pre-merge; merge did not reintroduce
+    anything). Full post-merge state matches what was already documented below - my 3 targeted items stay
+    fixed, the 3 pre-existing/unrelated items (Check C x4, Check F "who gave you this") are untouched
+    by the merge, still open, still Next Recommended Tasks. test-dictionary.js re-run post-merge: 8048/8048
+    valid, 9/9 corrections verified. 2026-08-04 (this session): the 3 build-gate items handed off to Claude
+    A are fixed (see current_task''s 2026-08-04 update) - PL-0002012/PL-0002013 enum+field corrections,
+    "need" corrections.json/master spelling sync. Claude B''s build gate still fails on unrelated pre-existing
+    issues, none touched this session: Check B "need" corrections.json="nang·a" vs irregular_verbs.json="sikenga"
+    (stale, same root cause class as the fix above but a different file - irregular_verbs.json was never
+    updated when NV-005/016 propagated); Check C 4 findings ("where did you come from?", "can", "mature",
+    "where (relative pronoun)" jeon/jeo - this last one may be a false positive, since jeon/jeo are legitimate
+    free variants per NV-054, not a real conflict - worth a second look before allowlisting); Check F
+    "who gave you this" corrections.json vs compiled_dict.json (trailing "?" mismatch, same class as the
+    already-documented BUG-REPORT-WHERE-GOING pattern). None guessed at or fixed this session - flagged
+    as Next Recommended Tasks per one-task-per-session discipline. 2026-08-01 (later): NV-049 CLOSED (see
+    current_task) - mipring/-de and phone/smartphone/mobile, the two items listed as "genuinely still
+    open" a few entries below, are now resolved. "apple"/te·gatchu standalone-gloss gap from NV-048 also
+    closed. Claude A has no open linguistic task right now and is standing down for Claude B to resume
+    engine-side work - nothing on Claude A''s side is blocking. Only remaining non-urgent item: mina/minaha
+    "ready" verb paradigm has just 1 form on record, not worth a dedicated relay question yet. 2026-08-01:
+    NV-048 CLOSED (see current_task) - no follow-up action needed in this lineage. Genuinely still open,
+    unchanged: mipring vs mipringde (needs a disambiguating example, not corpus-resolvable) and phone/smartphone/
     mobile spelling (PENDING/MEDIUM, not yet in a relay batch). Not added this session (flagged, not built):
     "apple" and te·gatchu as standalone dictionary headwords - would need a dedicated relay question for
     a clean gloss. Next general-direction item, unchanged from before: -chi/ -o locative productivity
@@ -410,24 +325,19 @@ claude_a:
     session (docs/CLAUDE_A_SESSION_MIGRATION_20260815.md) stopped exactly at this boundary. Reproducible
     via `node scripts/resync-stale-overrides.mjs` (no --apply — dry run), the `skip_no_verified_match`
     bucket in its output.'
-  next_action_prior: '2026-08-14, flagged by Claude B (session C, resumed): `angry` raka-count placement
-    is the one item from docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md that NV-077 explicitly
-    did not address (per NV-077''s own commit message) — still open, confirmed still open by direct repo
-    read this session (master_dictionary.json''s ka·o·nang·a still three raka marks, corrections.json/translationEngine.test.js:569
-    still mirror it, Owner''s flagged ka.onanga spelling still unmatched). See that doc''s 2026-08-14
-    update section for full status (the other three items in the same doc are now closed via NV-077, this
-    is the only one left). Needs the NV-054 native-validation channel, not an engineering fix — Claude
-    B has no new information on it, just re-flagging so it isn''t lost now that the doc''s other items
-    have closed.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - this session's close (2026-08-18). See migration_doc_prior_20260817b for prior session.
-  migration_doc_prior_20260817b: docs/CLAUDE_A_SESSION_MIGRATION_20260817B.md - prior session's close (2026-08-17b, NV-080 relay batch). See migration_doc_prior_20260816c for the session before that.
-  migration_doc_prior_20260817: docs/CLAUDE_A_SESSION_MIGRATION_20260817.md - prior session's close (2026-08-17, resync-only). See migration_doc_prior_20260816c for prior session.
-  migration_doc_prior_20260816c: docs/CLAUDE_A_SESSION_MIGRATION_20260816c.md - prior session's close (2026-08-16c). See migration_doc_prior_2026_08_16b for prior same-day session.
-  migration_doc_prior_2026_08_16b: docs/CLAUDE_A_SESSION_MIGRATION_20260814.md - prior session's close. Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md;
-    resolved NV-072 through NV-075 (person/student/teacher root conflict fully closed, coin root corrected,
-    new 'te' house classifier, rice-grain via 'rong', water/food container-word mass-noun pattern confirmed
-    and generalized 1-20, no-raka + no-native-word clarifications). Only 'bol' vehicle-classifier scope
-    remained open (now closed, see entry above).
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - this session's close (2026-08-18). See
+    migration_doc_prior_20260817b for prior session.
+  migration_doc_prior_20260817b: docs/CLAUDE_A_SESSION_MIGRATION_20260817B.md - prior session's close
+    (2026-08-17b, NV-080 relay batch). See migration_doc_prior_20260816c for the session before that.
+  migration_doc_prior_20260817: docs/CLAUDE_A_SESSION_MIGRATION_20260817.md - prior session's close (2026-08-17,
+    resync-only). See migration_doc_prior_20260816c for prior session.
+  migration_doc_prior_20260816c: docs/CLAUDE_A_SESSION_MIGRATION_20260816c.md - prior session's close
+    (2026-08-16c). See migration_doc_prior_2026_08_16b for prior same-day session.
+  migration_doc_prior_2026_08_16b: docs/CLAUDE_A_SESSION_MIGRATION_20260814.md - prior session's close.
+    Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260813B.md; resolved NV-072 through NV-075 (person/student/teacher
+    root conflict fully closed, coin root corrected, new 'te' house classifier, rice-grain via 'rong',
+    water/food container-word mass-noun pattern confirmed and generalized 1-20, no-raka + no-native-word
+    clarifications). Only 'bol' vehicle-classifier scope remained open (now closed, see entry above).
   migration_doc_prior_current: 'docs/CLAUDE_A_SESSION_MIGRATION_20260815C.md - prior session''s close.
     Resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260815.md, HEAD == origin/main == ef8a742 at start
     (3 commits ahead of that doc''s edf5837 checkpoint — all Claude B docs-only session-close commits,
@@ -1478,55 +1388,32 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: >-
-    2026-08-20 (Claude B): built the permanent CI resync gate (backlog
-    item from 08-19b) -- scripts/resync-stale-overrides.mjs now fails
-    CI on any unresolved mechanical resync candidate, wired into
-    .github/workflows/ci.yml as its own step. Added
-    src/data/resync_confirmed_exceptions.json to record the
-    already-decided answer verb/noun trap so the gate doesn't
-    perma-fail on it (no new linguistic judgment made). Pulled and
-    rebased cleanly onto Claude A's NV-082 close mid-session, full gate
-    re-run after. HEAD==origin/main==429f1e9, clean tree. Full detail:
-    docs/CLAUDE_B_SESSION_MIGRATION_20260820.md.
-    Next Recommended Tasks: none in this lane -- still blocked on
-    Claude A reading docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md
-    (bear, elephant/outside, 20 unproven-stale, 160 no-candidate items),
-    same blocker as 08-19b, unchanged by this session.
-  next_action_prior: '2026-08-17 (Claude B, resync/audit session, no code change): STALE FIELD FOUND AND CORRECTED
-    — this next_action (below, kept as next_action_stale_20260816) described the Aganchaka/Aganchakani
-    tie-break as still unimplemented, but that was already done and pushed at cb1f1f5 (see
-    docs/CLAUDE_B_SESSION_MIGRATION_20260816.md) BEFORE this file''s own repository.head/last_updated
-    fields were written — the top-level repository block was correctly updated on close but this
-    sub-field was not overwritten, leaving it misleading if read on its own. Re-verified from scratch
-    this session (215/215 tests -> now 218/218 after Claude A''s a656c22, 8127/8127 dictionary, 0 lint
-    errors, repository-intelligence.js 0 new violations, HEAD==origin/main at 6ffc5aa, clean tree).
-    Investigated the one item Claude A flagged as my lane in a656c22 (''where''/''Where'' case-collapse,
-    Bano vs Bachi): confirmed live via translate() that this is NOT a runtime bug — phrase_maps.js
-    already overrides ''where'' to ''Bano'' and separately routes ''where are you going'' to ''Na·a bachi
-    re·angenga?'' via corrections.json, so both senses already ship correctly today regardless of the
-    compiled_dict.json-level collision. Root cause why this can''t be fixed by preserving key casing at
-    compile time: normalizationEngine.js''s normalizeInput() lowercases all user input before lookup, so
-    ''where''/''Where'' become byte-identical before compiled_dict.json is ever consulted — a case-sensitive
-    compiled_dict key could never be selected differently at runtime under the current lookup
-    architecture. This is the same underlying shape as the demand/answer POS-split problem (one flat
-    key, two legitimate senses) — genuinely needs a sense-aware schema change if it''s ever to be solved
-    at the compile layer instead of via phrase-level overrides, not a quick case-handling fix. Documenting
-    rather than guessing at a schema migration solo. No other item in my lane is currently actionable
-    without native/Claude A linguistic input (see pending_next_session below, unchanged).'
-  next_action_stale_20260816: '2026-08-16 (Claude A, data-side update — read this FIRST, changes the shape of the tie-break
-    you''re implementing): Project Owner-reconfirmed NV-077 this session. Superseded 4 uncited legacy
-    ''Aganchaka''-mislabeled-as-noun rows and 2 uncited ''Answer'' noun variants (in·chak·a, ku·chak·a
-    — no date/citation, never native-confirmed) that were previously in the VERIFIED pool for the case-insensitive
-    ''answer''/''Answer'' key. Also superseded a raka-fragmented legacy ''To answer'' row (a·gan·chak·na)
-    and promoted the clean ''Aganchaka'' row in its place. The pool for ''answer'' is now a clean 2-way
-    tie: Aganchaka (verb, idx 411) vs Aganchakani (noun, idx 3113) — no more noise. compiled_dict.json[''answer'']
-    currently resolves to ''Aganchakani'' (last-write-wins picked the noun); your tie-break still needs
-    to make that POS-aware/deliberate rather than incidental. Full gate re-verified after this change:
-    8128/8128 entries (was 8132 — 4 keys with no remaining VERIFIED candidate, ''An answer''/''a reply''/''a
-    respond''/''a rejoinder.'', correctly moved to held/SUPERSEDED_ONLY, not shipped), 215/215 tests,
-    repository-intelligence.js 0 new violations, runtime-sweep 14525/14525 calls 0 errors. [STALE per
-    Claude B 2026-08-17 -- superseded by next_action above, kept for history only.]'
+  next_action: '2026-08-20 (Claude B): built the permanent CI resync gate (backlog item from 08-19b) --
+    scripts/resync-stale-overrides.mjs now fails CI on any unresolved mechanical resync candidate, wired
+    into .github/workflows/ci.yml as its own step. Added src/data/resync_confirmed_exceptions.json to
+    record the already-decided answer verb/noun trap so the gate doesn''t perma-fail on it (no new linguistic
+    judgment made). Pulled and rebased cleanly onto Claude A''s NV-082 close mid-session, full gate re-run
+    after. HEAD==origin/main==429f1e9, clean tree. Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260820.md.
+    Next Recommended Tasks: none in this lane -- still blocked on Claude A reading docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md
+    (bear, elephant/outside, 20 unproven-stale, 160 no-candidate items), same blocker as 08-19b, unchanged
+    by this session.'
+  next_action_prior: '2026-08-16 (Claude C re-audit, docs/CLAUDE_C_AUDIT_20260816.md): zero drift from
+    your open item below — still yours, still unimplemented. Report §3 suggests one pickPrimary tie-break
+    can cover both the ''answer'' 2-way-VERIFIED-tie case and the 9-key no-verified-candidate case; see
+    report for the suggested shape (not a mandate — your design call).'
+  next_action_stale_20260816: '2026-08-16 (Claude A, data-side update — read this FIRST, changes the shape
+    of the tie-break you''re implementing): Project Owner-reconfirmed NV-077 this session. Superseded
+    4 uncited legacy ''Aganchaka''-mislabeled-as-noun rows and 2 uncited ''Answer'' noun variants (in·chak·a,
+    ku·chak·a — no date/citation, never native-confirmed) that were previously in the VERIFIED pool for
+    the case-insensitive ''answer''/''Answer'' key. Also superseded a raka-fragmented legacy ''To answer''
+    row (a·gan·chak·na) and promoted the clean ''Aganchaka'' row in its place. The pool for ''answer''
+    is now a clean 2-way tie: Aganchaka (verb, idx 411) vs Aganchakani (noun, idx 3113) — no more noise.
+    compiled_dict.json[''answer''] currently resolves to ''Aganchakani'' (last-write-wins picked the noun);
+    your tie-break still needs to make that POS-aware/deliberate rather than incidental. Full gate re-verified
+    after this change: 8128/8128 entries (was 8132 — 4 keys with no remaining VERIFIED candidate, ''An
+    answer''/''a reply''/''a respond''/''a rejoinder.'', correctly moved to held/SUPERSEDED_ONLY, not
+    shipped), 215/215 tests, repository-intelligence.js 0 new violations, runtime-sweep 14525/14525 calls
+    0 errors. [STALE per Claude B 2026-08-17 -- superseded by next_action above, kept for history only.]'
   next_action_prior_new: '2026-08-16, IMPORTANT (Claude C, verified via origin API, not local claim):
     an intervening Claude B session reported doing this exact work — rebasing onto Claude A''s SUPERSEDED
     tag, tracing the ''answer'' tie to Aganchaka/Aganchakani, and extending pickPrimary to resolve it
@@ -1536,10 +1423,6 @@ claude_b:
     repo are stale from May/June, unrelated. NONE of that session''s work exists anywhere except its own
     now-closed context. Next B session: start clean from cc311e4, do not assume any partial progress from
     that report survived — it didn''t. The task itself is unchanged from below.'
-  next_action_prior: '2026-08-16 (Claude C re-audit, docs/CLAUDE_C_AUDIT_20260816.md): zero drift from
-    your open item below — still yours, still unimplemented. Report §3 suggests one pickPrimary tie-break
-    can cover both the ''answer'' 2-way-VERIFIED-tie case and the 9-key no-verified-candidate case; see
-    report for the suggested shape (not a mandate — your design call).'
   pending_next_session: '2026-08-15 (Claude B, session close, reconciled post-rebase onto concurrent claude_a.next_action
     + Claude C''s follow-up audit, docs/CLAUDE_C_AUDIT_20260815B.md -- both landed after this session''s
     own pickPrimary finding was drafted and supersede its framing with more precise root-cause detail;
@@ -2306,29 +2189,28 @@ qa_audit:
   status: active
   role: External QA pass (2026-08-19), same charter as Claude C (read/verify, live translate() checks
     over doc-reading, propose fixes with citations, no new linguistic content invented).
-  latest_report: '2026-08-19 (fixes applied and pushed with Project Owner-supplied PAT, per standard
-    session-scoped-PAT policy, used inline in push URL only, never persisted). Found and fixed 3 items,
-    all masking bugs of the same shape already documented in this project (Boil/Close/Chop-class, the
-    9-key defect, the ''answer'' tie): (1) Claude A''s 2026-08-18 "baba/Aa.i confirmed correct" verdict
-    was wrong — checked compiled_dict.json only, not the full runtime cascade. phrase_maps.js still held
-    pre-NV-080 values (father->pa·a, mother->na·gi·pa) ahead of compiled_dict.json in lookup order; translate()
-    was still serving the SUPERSEDED values. Fixed: phrase_maps.js father->ba·ba, mother->Aa.i, matching
-    NV-080. (2) Same bug independently found on ''small'' (phrase_maps.js still had SUPERSEDED rong·chon·a
-    instead of NV-080''s VERIFIED Chon·a) — not previously flagged by any role, found via direct translate()
-    smoke-test, not doc-reading. Fixed: phrase_maps.js small->Chon·a. (3) Two propagation-gap corrections
-    to the open-items tracking (docs/THANGSENG_NATIVE_VALIDATION.md, new section) — item 133 (jeon/jeo
-    main-vs-short-form) already answered by NV-064 (2026-08-06, "jeo = short form of jeon") but re-flagged
-    as open in the 2026-08-18 migration doc; "small/wet Chon·a duplicate" already resolved distinctly within
-    NV-080 itself (small=Chon·a, wet=so·si·a) but also re-flagged. Both should be marked CLOSED by Claude
-    A next session, citing existing evidence — no new native round needed. Verification after all 3 fixes:
-    8127/8127 dictionary entries, 218/218 unit tests, 0 lint errors, repository-intelligence.js 0 new violations
-    (Check F known-mismatches dropped 223->220, the 3 fixed keys), live translate() re-confirmed for all
-    4 affected words (father/mother/small/wet) resolving to their VERIFIED/HIGH values. Remaining 11 items
-    on the 2026-08-18 open-items table checked individually against THANGSENG_NATIVE_VALIDATION.md — no
-    prior evidence found for any, correctly still open, not touched. 117 other phrase_maps:* known/allowlisted
-    keys in known_cross_source_conflicts.json NOT individually re-verified this pass (only the 3 flagged
-    by this session''s direct checks) — flagged as a likely-systemic gap, full sweep recommended, not done
-    here (scope/budget).'
+  latest_report: '2026-08-19 (fixes applied and pushed with Project Owner-supplied PAT, per standard session-scoped-PAT
+    policy, used inline in push URL only, never persisted). Found and fixed 3 items, all masking bugs
+    of the same shape already documented in this project (Boil/Close/Chop-class, the 9-key defect, the
+    ''answer'' tie): (1) Claude A''s 2026-08-18 "baba/Aa.i confirmed correct" verdict was wrong — checked
+    compiled_dict.json only, not the full runtime cascade. phrase_maps.js still held pre-NV-080 values
+    (father->pa·a, mother->na·gi·pa) ahead of compiled_dict.json in lookup order; translate() was still
+    serving the SUPERSEDED values. Fixed: phrase_maps.js father->ba·ba, mother->Aa.i, matching NV-080.
+    (2) Same bug independently found on ''small'' (phrase_maps.js still had SUPERSEDED rong·chon·a instead
+    of NV-080''s VERIFIED Chon·a) — not previously flagged by any role, found via direct translate() smoke-test,
+    not doc-reading. Fixed: phrase_maps.js small->Chon·a. (3) Two propagation-gap corrections to the open-items
+    tracking (docs/THANGSENG_NATIVE_VALIDATION.md, new section) — item 133 (jeon/jeo main-vs-short-form)
+    already answered by NV-064 (2026-08-06, "jeo = short form of jeon") but re-flagged as open in the
+    2026-08-18 migration doc; "small/wet Chon·a duplicate" already resolved distinctly within NV-080 itself
+    (small=Chon·a, wet=so·si·a) but also re-flagged. Both should be marked CLOSED by Claude A next session,
+    citing existing evidence — no new native round needed. Verification after all 3 fixes: 8127/8127 dictionary
+    entries, 218/218 unit tests, 0 lint errors, repository-intelligence.js 0 new violations (Check F known-mismatches
+    dropped 223->220, the 3 fixed keys), live translate() re-confirmed for all 4 affected words (father/mother/small/wet)
+    resolving to their VERIFIED/HIGH values. Remaining 11 items on the 2026-08-18 open-items table checked
+    individually against THANGSENG_NATIVE_VALIDATION.md — no prior evidence found for any, correctly still
+    open, not touched. 117 other phrase_maps:* known/allowlisted keys in known_cross_source_conflicts.json
+    NOT individually re-verified this pass (only the 3 flagged by this session''s direct checks) — flagged
+    as a likely-systemic gap, full sweep recommended, not done here (scope/budget).'
   next_action: 'Claude A: mark item 133 and "small/wet" CLOSED in the open-items table per the citations
     above (docs/THANGSENG_NATIVE_VALIDATION.md, "Open-items list correction" section has the exact wording).
     Claude B: the 117 remaining phrase_maps:* entries in known_cross_source_conflicts.json are UNVERIFIED
@@ -2342,11 +2224,11 @@ qa_audit:
     forever unless someone manually re-checks each one against the live app).'
 claude_b_resync_sweep:
   status: done
-  role: 'Claude B, full A<->B propagation audit (2026-08-19) per Project Owner diagnostic brief. Traced
+  role: Claude B, full A<->B propagation audit (2026-08-19) per Project Owner diagnostic brief. Traced
     the runtime lookup cascade (corrections.json -> phrase_maps.js -> compiled_dict.json -> classifier
-    -> single-word, confirmed by reading translationEngine.js lines 92-195), producing an 11-section
-    report identifying Check F as a disagreement-detector, not a correctness-detector, as the systemic
-    root cause of the father/mother/small class of bug fixed earlier this session (commit 76156c2).'
+    -> single-word, confirmed by reading translationEngine.js lines 92-195), producing an 11-section report
+    identifying Check F as a disagreement-detector, not a correctness-detector, as the systemic root cause
+    of the father/mother/small class of bug fixed earlier this session (commit 76156c2).
   latest_report: 'Ran scripts/resync-stale-overrides.mjs (pre-existing, not previously run this cycle)
     dry-run: found 35 mechanical resync candidates (override value matches a SUPERSEDED master_dictionary.json
     row AND compiled_dict.json already resolves to a VERIFIED/HIGH row for the same key). Before applying,
@@ -2354,68 +2236,67 @@ claude_b_resync_sweep:
     the script''s joinKey() lowercases before matching, silently merging master_dictionary''s case-split
     POS entries ("answer" lowercase = VERIFIED/HIGH verb Aganchaka, "Answer" capitalized = VERIFIED/HIGH
     noun Aganchakani, per NV-077) into one candidate pool. Its apparent SUPERSEDED match for override
-    "Aganchaka" was actually a duplicate-spelling row (a·gan·chak·a) being superseded in favor of the SAME
-    verb value, not evidence the verb sense should become the noun. Applying it would have silently swapped
-    a correct verb override for a wrong noun one -- exactly the trap named in the Project Owner''s brief
-    ("do NOT repeat the previous answer audit error"). Checked whether the other 34 candidates shared this
-    case-collision risk: all 34 have case-variant english keys in master_dictionary.json (e.g. big/Big,
+    "Aganchaka" was actually a duplicate-spelling row (a·gan·chak·a) being superseded in favor of the
+    SAME verb value, not evidence the verb sense should become the noun. Applying it would have silently
+    swapped a correct verb override for a wrong noun one -- exactly the trap named in the Project Owner''s
+    brief ("do NOT repeat the previous answer audit error"). Checked whether the other 34 candidates shared
+    this case-collision risk: all 34 have case-variant english keys in master_dictionary.json (e.g. big/Big,
     climb/Climb) but unlike answer/Answer, every one converges on a SINGLE NV-080 native-confirmed form
     regardless of case (spot-checked big/climb/teacher directly) -- plain import-duplication artifacts,
     not genuine sense splits. Applied the script with --apply (wrote 3 corrections.json + 32 phrase_maps.js
     updates, removed 35 baseline entries), then manually reverted the 2 "answer" writes back to "Aganchaka"
-    and re-added corrections:answer + phrase_maps:answer to known_cross_source_conflicts.json (still a live
-    tracked issue, not resolved -- needs a POS-sense-aware key scheme, not a mechanical fix). Also corrected
-    a now-stale provisional-pick comment on the "all" phrase_maps.js entry (2026-08-06 comment described
-    a 3-way tie that NV-080 on 2026-08-17 definitively resolved -- comment was accurate when written, stale
-    after NV-080, not a data bug). Full gate re-run after all edits: 8127/8127 dictionary entries, 218/218
-    unit tests, 0 lint errors, repository-intelligence.js 0 new violations, Check F known-mismatches 220
-    -> 187 (35 resynced, 2 re-added for answer = net -33). Live translate() spot-checked for 8 words
+    and re-added corrections:answer + phrase_maps:answer to known_cross_source_conflicts.json (still a
+    live tracked issue, not resolved -- needs a POS-sense-aware key scheme, not a mechanical fix). Also
+    corrected a now-stale provisional-pick comment on the "all" phrase_maps.js entry (2026-08-06 comment
+    described a 3-way tie that NV-080 on 2026-08-17 definitively resolved -- comment was accurate when
+    written, stale after NV-080, not a data bug). Full gate re-run after all edits: 8127/8127 dictionary
+    entries, 218/218 unit tests, 0 lint errors, repository-intelligence.js 0 new violations, Check F known-mismatches
+    220 -> 187 (35 resynced, 2 re-added for answer = net -33). Live translate() spot-checked for 8 words
     (big/climb/teacher/river/love/answer/work/strong) post-fix -- all resolve to their intended values,
     "answer" confirmed still correctly returning the verb form "Aganchaka".'
-  remaining_from_prior_sweep: 'Broader diagnostic sweep (comparing ALL known_cross_source_conflicts.json
+  remaining_from_prior_sweep: Broader diagnostic sweep (comparing ALL known_cross_source_conflicts.json
     entries against master_dictionary.json VERIFIED/HIGH candidates directly, not just the SUPERSEDED-match
     subset resync-stale-overrides.mjs targets) found ~69 additional live semantic mismatches beyond this
-    session''s 34 fixed (36 phrase_maps + 33 corrections, before dedup) -- NOT yet applied, most were not
-    run through resync-stale-overrides.mjs''s stricter double-verification (SUPERSEDED-match required, not
-    just a raw compiled_dict.json comparison) so some may carry the same case-collision or tied-candidate
+    session's 34 fixed (36 phrase_maps + 33 corrections, before dedup) -- NOT yet applied, most were not
+    run through resync-stale-overrides.mjs's stricter double-verification (SUPERSEDED-match required,
+    not just a raw compiled_dict.json comparison) so some may carry the same case-collision or tied-candidate
     risk "answer" did. Needs the same manual verification pass as this session before any bulk apply.
-    ~111 phrase_maps/corrections keys have no VERIFIED/HIGH master_dictionary.json candidate at all
-    (genuinely blocked on Claude A/native input). ~26 keys hit tied-VERIFIED-candidate ambiguity, same
-    shape as answer -- these need a POS/sense-aware schema fix (structural, not per-key), flagged but not
-    designed this session per scope discipline (one task at a time).'
+    ~111 phrase_maps/corrections keys have no VERIFIED/HIGH master_dictionary.json candidate at all (genuinely
+    blocked on Claude A/native input). ~26 keys hit tied-VERIFIED-candidate ambiguity, same shape as answer
+    -- these need a POS/sense-aware schema fix (structural, not per-key), flagged but not designed this
+    session per scope discipline (one task at a time).
   next_action: 'Backlog item closed this session (see below). Remaining next action: build the permanent
     scripted gate recommended in the QA audit block above (auto-run this class of sweep in CI, not ad-hoc)
     -- still not done, still backlog item 1 from the original diagnostic report.'
   followup_20260819b:
     status: done
-    role: 'Applied the same manual-verification discipline used on "answer" to the ~69 remaining
-      sweep-found mismatches, per Project Owner instruction to close the backlog and notify Claude A
-      of anything blocked at its end.'
+    role: Applied the same manual-verification discipline used on "answer" to the ~69 remaining sweep-found
+      mismatches, per Project Owner instruction to close the backlog and notify Claude A of anything blocked
+      at its end.
     finding: 'Rewrote the sweep to require (a) the override match a documented SUPERSEDED master_dictionary.json
       row for the exact key -- not just disagree with the current VERIFIED value -- and (b) no case-variant
       of the key carry an unresolved OPEN sense the override might belong to. Result: ZERO of the remaining
-      187 known_cross_source_conflicts.json entries qualify for mechanical resync. Caught one more
-      answer-shaped trap this pass: "bear" looked safe under the looser first-pass sweep (single VERIFIED
-      candidate, Matmak, for the animal sense) but master_dictionary.json marks the capitalized "Bear" verb
-      sense (carry/endure) as explicitly OPEN with 3 unconfirmed candidates -- one of which, nang.a, is the
+      187 known_cross_source_conflicts.json entries qualify for mechanical resync. Caught one more answer-shaped
+      trap this pass: "bear" looked safe under the looser first-pass sweep (single VERIFIED candidate,
+      Matmak, for the animal sense) but master_dictionary.json marks the capitalized "Bear" verb sense
+      (carry/endure) as explicitly OPEN with 3 unconfirmed candidates -- one of which, nang.a, is the
       exact value currently live in phrase_maps.js/corrections.json. Resyncing to Matmak would have silently
       discarded a plausibly-intentional verb-sense override. Left untouched, flagged for Claude A.'
-    breakdown: '1 case/sense-risk item needing disambiguation (bear); 2 tied-VERIFIED-candidate items needing
+    breakdown: 1 case/sense-risk item needing disambiguation (bear); 2 tied-VERIFIED-candidate items needing
       a primary pick (elephant, outside); 20 items where the override disagrees with master but does not
       match any documented SUPERSEDED row, so staleness cannot be mechanically proven (clever, come here,
       current, forest, i am fine, i am sick, it is raining, lets go to the market, mountain, see, skin,
       smell, smile, strong, to pluck, to see, enough, i am hungry, i dont understand -- some duplicated
       across both corrections.json and phrase_maps.js); 160 items with no VERIFIED/HIGH master_dictionary.json
-      candidate to check against at all (genuinely open, native-validation backlog).'
-    handoff: 'docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md (full detail + table) and
-      docs/CLAUDE_B_RESYNC_SWEEP_20260819_data.json (machine-readable, reproducible against current
-      master_dictionary.json + known_cross_source_conflicts.json). No data files touched by this pass --
-      audit output only, zero linguistic judgment calls made.'
+      candidate to check against at all (genuinely open, native-validation backlog).
+    handoff: docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md (full detail + table) and docs/CLAUDE_B_RESYNC_SWEEP_20260819_data.json
+      (machine-readable, reproducible against current master_dictionary.json + known_cross_source_conflicts.json).
+      No data files touched by this pass -- audit output only, zero linguistic judgment calls made.
     next_action: 'Claude A: read the handoff doc above. Recommend folding the 2 tied-candidate items into
-      the existing docs/PICKPRIMARY_VERIFIED_TIES.md backlog, and the 160 no-candidate items into the next
-      Thangseng relay batch. The 20 no-superseded-match items and the 1 bear case/sense item need your
-      direct judgment (not a relay item necessarily -- may be resolvable from existing repo context) before
-      any further mechanical resync is possible on them.'
+      the existing docs/PICKPRIMARY_VERIFIED_TIES.md backlog, and the 160 no-candidate items into the
+      next Thangseng relay batch. The 20 no-superseded-match items and the 1 bear case/sense item need
+      your direct judgment (not a relay item necessarily -- may be resolvable from existing repo context)
+      before any further mechanical resync is possible on them.'
 chatgpt:
   status: unknown
   current_task: unknown
