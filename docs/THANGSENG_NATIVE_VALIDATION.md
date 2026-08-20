@@ -4591,3 +4591,34 @@ unit tests, 14525/14525 runtime sweep, 0 errors, 0 new Check A–F
 violations (3 self-consistency pairs allowlisted in
 `known_dictionary_conflicts.json`, expected from the 3 supersede+add
 pairs above).
+
+## NV-086 (2026-08-20) — "did you go to market" real-time WhatsApp confirmation
+
+Source: Thangseng via Tridip, WhatsApp, 10/5/2026 2:18–2:21pm — direct
+answer to relay item `THANGSENG_RELAY_BATCH_20260820` Part B #4
+("did you go to market"). Only one item answered this exchange; no
+blanket close applied to the rest of the batch (evidence-first —
+each item needs its own direct answer).
+
+Q: "Did you go to the market?"
+A (Thangseng): "A simple past tense would be: Na.a bajalchi re.angama"
+
+**Applied:**
+- Master already held this exact value (`Na·a bajalchi re·angama?`)
+  as an untagged row — this was the real gap `CLAUDE_B_HANDOFF_20260819`
+  section 4 flagged (no VERIFIED/HIGH citation existed for the key).
+  Now marked VERIFIED/HIGH with NV-086 citation. No value change to
+  master.
+- Shipping `corrections.json` override was **wrong** — `Na·a Bajal
+  Re·anga ma?` (present/continuous tense, missing `-chi` locative on
+  bajal). Fixed directly to `Na·a bajalchi re·angama?` to match
+  (Rule 8 — no `phrase_maps.js` copy existed for this key, so only
+  one file needed the fix).
+- Confirmed via live `translate("did you go to market?")` →
+  `Na·a bajalchi re·angama?`, method `correction`, confidence 1.
+- Gate green: 8128 entries, 9/9 grammatical corrections, 218/218 unit
+  tests, 14525/14525 runtime sweep, 0 errors, 0 new violations.
+
+**Remaining `THANGSENG_RELAY_BATCH_20260820` items:** still open —
+140 keys (141 minus this one). No other part of the batch has come
+back yet. Do not close further items without a direct per-item answer.
