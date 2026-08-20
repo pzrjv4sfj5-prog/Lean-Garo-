@@ -171,7 +171,14 @@ export function assembleGrammar(grammar) {
   // Subject + Location-chi + Object-ko + Purpose-na + Verb.
   if (grammar.location) {
     const locText = grammar.location.garo === '[UNKNOWN]' ? grammar.location.garo : grammar.location.garo.toLowerCase();
-    parts.push(locText + '·chi');
+    // Precomposed-value guard (2026-08-20, Claude B, engineering-only):
+    // analyzeGrammar now prefers an already-VERIFIED "to X" phrase entry
+    // (e.g. "bajalchi") over bare-noun composition when one exists — that
+    // value already includes the -chi suffix, so appending it again here
+    // would double it ("bajalchi·chi"). Only the bare-noun fallback case
+    // (unconfirmed destinations, no dedicated "to X" entry) still needs
+    // the suffix appended here.
+    parts.push(/chi$/.test(locText) ? locText : locText + '·chi');
   }
 
   // Possessive + Object + -ko/-o marker

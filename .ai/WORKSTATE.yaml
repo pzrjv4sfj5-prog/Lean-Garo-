@@ -1388,7 +1388,33 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-20b (Claude B): built CI guard-rail against hand-edited/stale
+  next_action: '2026-08-20c (Claude B): Project Owner supplied 3 native sentences in
+    chat ("going to school"=skulchi re.angenga, "want to eat food"=cha.aniko, can/need/want-to-eat
+    forms). Checked each against repo before acting (2026-08-14 role-boundary rule
+    still in force -- chat input is not a valid entry channel regardless of source).
+    can/need/want-to-eat: already VERIFIED, byte-identical, no action. "school"/skulchi:
+    turned out to be ALREADY-VERIFIED data (RULE-044/NV-051) just not wired into the
+    engine -- real engineering bug, fixed directly (grammarEngine.js verb-search loop
+    was letting a destination noun after bare "to" get mis-picked as the main verb
+    via findVerbForm''s generic lookupGaro fallback; also fixed a resulting location-composition
+    double-suffix and a pre-existing punctuation bug in location-word extraction, exposed
+    not introduced by this fix). "food"/cha·ani: genuinely new, NOT applied, logged
+    as a handoff item below for Claude A. Full test suite run 3x during the fix (caught
+    2 regressions -- inverted yes/no questions, "used to eat" chim-tense -- both fixed
+    in the same pass), final 218/218 clean, 0 runtime errors (14523-call sweep), 0
+    compiled-dict drift, 0 new resync candidates. HEAD==origin/main==37f421b before
+    this session''s commit, clean tree throughout. Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260820c.md.
+    New handoff for Claude A: "cha·ani" (food) supplied in chat, not in dictionary
+    (current VERIFIED="al·a") -- needs Claude A''s own commit/relay/PAT, open question
+    whether it''s a variant/register form or a different word. Process note: Project
+    Owner flagged WORKSTATE.yaml/migration-doc chain as "becoming big, need to find
+    a way" -- not resolved this session (process decision, out of engineering scope),
+    flagged for whoever picks it up next -- see migration doc''s Process Note section
+    for pruning candidates. Next Recommended Tasks: none new in the engineering lane
+    beyond the food handoff above -- still blocked on Claude A reading docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md
+    (bear, elephant/outside, 20 unproven-stale, 160 no-candidate items), same blocker
+    as every session since 08-19b, unchanged by this session.'
+  next_action_prior: '2026-08-20b (Claude B): built CI guard-rail against hand-edited/stale
     compiled_dict.json and compiled_dict_alternates.json -- CI now snapshots the
     committed files, regenerates via prepare-data.js, diffs; fails on any divergence.
     Verified both directions (clean on real repo, correctly catches a simulated

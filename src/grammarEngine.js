@@ -201,8 +201,47 @@ export function analyzeGrammar(input) {
     let pendingLocativeVerbGuard = false;
     for (let i = subjectEndIndex + 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
+      const prevWv = i > 0 ? words[i-1].toLowerCase().replace(/[^a-z]/g,'') : '';
       if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) {
         if (/^(in|on|at)$/.test(w)) pendingLocativeVerbGuard = true;
+        // Destination/purpose-"to" verb-guard (2026-08-20, Claude B,
+        // engineering-only, confirmed live via "I am going to school"):
+        // same RC-CANDIDATE-010 class as the in/on/at guard immediately
+        // above. A bare "to" is already excluded from `content` via
+        // AUXILIARY_SKIP, but the word immediately following it was not
+        // guarded here, so a "to <destination-noun>" whose noun happens
+        // to resolve via the generic findVerbForm->lookupGaro fallback
+        // (which succeeds on ANY dictionary word, not just verbs — see
+        // the parser-boundary review above) got wrongly picked as the
+        // main verb before the dedicated destination/location logic
+        // further below (docs/BUG_location_noun_dropped.md) ever got a
+        // chance to claim it via its own `pendingDestination` flag.
+        // Confirmed live: "I am going to school" -> "Anga Skulgen"
+        // ("school" itself mis-picked as verb, future-suffixed) instead
+        // of "Anga skulchi re·angenga" (already-VERIFIED/HIGH "to
+        // school"="skulchi" per RULE-044/NV-051's confirmed-general
+        // movement-to locative, already used correctly for "the market"
+        // via its own exact-phrase entry). No main finite verb ever
+        // immediately follows bare "to" in English in any of the three
+        // constructions this parses (destination "going to X", purpose
+        // "went to buy X", infinitive complement "want to work") — in
+        // all three the real verb is found earlier in the sentence
+        // (went/want/wants) before this loop ever reaches "to", or (for
+        // bare destination sentences with no separate lexical verb) the
+        // word after "to" is never a verb at all. Verified this guard
+        // doesn't regress the purpose-clause cases (\"I went to buy
+        // rice\", \"I want to buy rice\", \"she wants to work\") since in
+        // each of those the loop already breaks on the earlier verb
+        // (went/want/wants) before ever reaching \"to\".
+        //
+        // Exception: "used to <verb>" (detectedTense='chim', e.g. "i
+        // used to eat" -> "Anga Cha·achim") — unlike the destination/
+        // purpose cases above, THIS "to" really is immediately followed
+        // by the sentence's one and only lexical verb, which must still
+        // be found here (guarding it broke the existing, already-
+        // VERIFIED chim-tense regression case; caught by the full test
+        // suite before this landed, not a live-only find).
+        if (w === 'to' && prevWv !== 'used') pendingLocativeVerbGuard = true;
         continue;
       }
       // Number-word guard (2026-07-13): reuses the existing NUMBER_WORDS
@@ -390,7 +429,21 @@ export function analyzeGrammar(input) {
       if (/^(not|never)$/.test(w)) continue;
       if (verb && words[i] === verb.english) continue;
       if (IRREGULAR_VERBS[w] || IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')]) continue;
-      if (pendingDestination) { locationWords.push(words[i]); pendingDestination = false; continue; }
+      // Push the cleaned `w` (punctuation-stripped), not raw words[i]
+      // (2026-08-20, Claude B, engineering-only): pre-existing bug,
+      // exposed (not introduced) by this session's verb-guard fix above
+      // — previously masked because the mis-picked-verb bug independently
+      // caused this branch to never be reached for the trailing-
+      // punctuation case (question forms), so the two bugs canceled each
+      // other into a coincidentally-consistent wrong answer rather than
+      // either being visibly broken. Confirmed live: "is he going to
+      // school?" previously never reached this line at all (verb.english
+      // held the raw "school?" token, matched words[i], and the earlier
+      // `if (verb && words[i] === verb.english) continue` always fired
+      // first) — now that "school" is correctly left for this branch to
+      // claim, the raw "school?" (with trailing '?') was failing every
+      // dictionary lookup and silently producing [UNKNOWN].
+      if (pendingDestination) { locationWords.push(w); pendingDestination = false; continue; }
       if (pendingLocative) { objectIsLocativeAdjunct = true; pendingLocative = false; }
       objectWords.push(words[i]);
     }
@@ -398,8 +451,47 @@ export function analyzeGrammar(input) {
     let location = null;
     if (locationWords.length > 0) {
       const locEng = locationWords.join(' ');
-      const locGaro = lookupPhrase(locEng) || lookupGaro(locEng) || '[UNKNOWN]';
-      location = { english: locEng, garo: locGaro, withMarker: locGaro + '·chi' };
+      // Prefer an already-VERIFIED "to X" phrase entry (school/the
+      // market/home/the forest/the river — RULE-044/NV-051 confirmed-
+      // general movement-to locative) over composing bare-noun+"·chi"
+      // ourselves (2026-08-20, Claude B, engineering-only, confirmed
+      // live): the dedicated entries ARE the VERIFIED forms (e.g.
+      // "bajalchi", no separator), while manual bare-noun+"·chi"
+      // composition produced a mismatched, unconfirmed "bajal·chi"
+      // (extra raka dot) for the identical destination. Falls back to
+      // the original bare-noun+chi composition, unchanged, when no
+      // dedicated "to X" entry exists — no new destinations are
+      // fabricated here, only the already-confirmed ones are preferred.
+      // "the" is stripped from locEng upstream (STOP_WORDS), but the
+      // confirmed "to X" keys are inconsistent on including it ("to
+      // school"/"to home" vs. "to the market"/"to the forest"/"to the
+      // river") — try both surface forms of the same already-known key,
+      // no new content, purely mechanical reconstruction.
+      const toPhraseGaro = lookupPhrase('to ' + locEng) || lookupGaro('to ' + locEng)
+        || lookupPhrase('to the ' + locEng) || lookupGaro('to the ' + locEng);
+      const locGaro = toPhraseGaro || lookupPhrase(locEng) || lookupGaro(locEng) || '[UNKNOWN]';
+      location = { english: locEng, garo: locGaro, withMarker: toPhraseGaro || (locGaro + '·chi') };
+      // Verb synthesis for bare "[I am] going to <destination>" (2026-
+      // 08-20, Claude B, engineering-only): when "going to" supplied the
+      // tense evidence and no other lexical verb was found in the
+      // sentence (the mis-picked-noun-as-verb bug this session's other
+      // fix already prevents), the main verb is missing entirely and
+      // assembleGrammar drops it silently. Scoped strictly to first-
+      // person subject and an already-VERIFIED, precomposed "to X" value
+      // (the toPhraseGaro branch above) — the ONLY data point on record
+      // for this construction's verb form is the single existing
+      // exact-phrase entry "I am going to the market." -> "Anga bajalchi
+      // re·angenga." (master_dictionary.json). Reusing that exact,
+      // already-VERIFIED verb form for the other already-VERIFIED
+      // destinations sharing the identical "to X"="...chi" shape (school/
+      // home/the forest/the river) is direct application of on-record
+      // data, not a new conjugation invented here — deliberately NOT
+      // extended to other persons/tenses, which have no confirmed
+      // instance to reuse.
+      if (!verb && toPhraseGaro && subject && subject.garo === 'Anga'
+          && tenseEvidence && /going to/i.test(tenseEvidence) && !isNegative && !isQuestion) {
+        verb = { english: 'going', garo: 're·angenga', tense: 'present_continuous', garoWithTense: 're·angenga', isNegative: false };
+      }
     }
 
     if (objectWords.length > 0) {
