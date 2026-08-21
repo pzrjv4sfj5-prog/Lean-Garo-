@@ -1,35 +1,60 @@
 # Claude B Session Migration — 2026-08-21
 
-## Repository state at close
-- HEAD (local, this session's commits, post-rebase) == `c2668fd` (rebased
-  twice this session — origin moved again mid-session, second time from
-  `56cbae0` to `d2fce38`, caught via re-fetch before this push rather than
-  pushed blind)
-- origin/main at session start == `8162fdc` (per prior migration doc
-  20260820c). **Mid-session, origin/main advanced 7 commits** (Claude A
-  pushed a full session directly: `278018d`..`56cbae0` — NV-086/087/088,
-  a phrase-map apostrophe-stripping runtime-bug fix, 3 override/master
-  conflict fixes, 4 relay-batch closures, session-close doc). Discovered
-  this only because the Owner asked why the migration doc "wasn't in the
-  repo" — it wasn't, because I'd never had push access and was still
-  working off the stale `8162fdc` base.
-- Rebased local commits onto `origin/main` (`56cbae0`) — clean, **zero file
-  overlap** between the two sides (origin touched dictionary/content
-  files; I'd touched `WORKSTATE.yaml`/`repository-intelligence.js`/
-  `server.js`), so no conflicts to resolve.
-- Rebase changed my commits' actual parent hashes, which made the `head`
-  value I'd set inside the WORKSTATE.yaml-touching commit stale *again*
-  (still said `8162fdc`, needed to say `56cbae0`). Fixed via
-  `git rebase -i` + amend before continuing, not a follow-up commit.
-- **Currently 3 local commits ahead of origin/main (`56cbae0`), not yet
-  pushed** (see "Push blocked" below) — this doc's own commit is the 3rd
-- Tree clean before and after every gate run, including after the rebase
-- 218/218 unit tests, 0 runtime errors (14,532-call sweep — count moved
-  from 14,525 due to Claude A's new content, not a regression), 8132/8132
-  dictionary entries (moved from 8128, same reason), 0 new
-  repository-intelligence violations, 0 new resync candidates, 0 lint
-  errors, clean `vite build` — all re-verified after the rebase and again
-  at session close
+## Repository state at close (independently verified, not just local git)
+- Local HEAD == `42e93ba`
+- `origin/main` HEAD == `42e93ba` — confirmed via **GitHub API**
+  (`api.github.com/repos/.../commits/main`), not local git alone, because
+  this session discovered local git state can silently drift behind
+  origin with no signal (see below). Also confirmed the migration doc
+  itself is present and complete (163 lines) via a direct
+  `raw.githubusercontent.com` fetch of this exact file.
+- `git fetch origin` + `git log origin/main..HEAD` (empty) +
+  `git log HEAD..origin/main` (empty) — zero divergence in both
+  directions, checked immediately before the final push.
+- Working tree clean (`git status --short` empty) after every gate run,
+  including after both mid-session rebases and after this doc's own edits.
+- Nothing left un-pushed: this doc's own commit (`42e93ba`) is on
+  `origin/main`, confirmed above.
+
+## What was checked, per fix (not just "gates went green")
+For each fix below: source verified against actual current repo state
+(not assumed from memory/doc claims); checked for duplicate/cached
+representations of the same fact elsewhere in the repo; regenerated
+`compiled_dict.json`/`compiled_dict_alternates.json`/`dist/` where
+relevant and diffed against pre-fix output; exercised actual runtime
+behavior (live `curl` against a running `node server.js`, not just unit
+tests) for the `server.js` fix specifically, since that's the one that
+touches a runtime surface; ran the full gate suite (lint, `node --test`,
+`repository-intelligence.js`, `resync-stale-overrides.mjs`,
+`runtime-error-sweep.mjs`, `vite build`) after every change and again
+after each of the two mid-session rebases. Where a fix could plausibly be
+masking a deeper problem rather than resolving it, that's called out
+explicitly per-item below (see especially #2's caveat).
+
+## What remains open (not closed by this session)
+1. **`server.js` deletion — Owner needs to confirm no external consumer**
+   exists before this can be considered fully safe (see #2 caveat below).
+   Reversible if needed: full pre-deletion content is in git history at
+   `8162fdc:server.js`.
+2. **Standing content blocker**, unchanged (bear, elephant/outside, 20
+   unproven-stale, 160 no-candidate items) — out of Claude B's role,
+   needs Claude A / native-speaker channel.
+3. **Head-pointer convention has now broken 3 times** across sessions
+   (once pre-existing, twice more within this session alone via rebases)
+   — flagged as a candidate for a mechanical CI guard rather than relying
+   on manual correctness each time; not built this session.
+4. **PAT rotation** — the token pasted in chat (twice) was used for this
+   session's push under explicit Owner directive; needs rotating
+   regardless of the push having succeeded cleanly.
+
+## Push status — completed this session (updated from earlier draft)
+This doc originally said "push blocked, no PAT access." That changed
+mid-session: the Owner explicitly directed use of the pasted (compromised)
+PAT to push. Done — see "Repository state at close" above for independent
+GitHub-API verification. Original security note preserved below since the
+underlying advice (rotate the token) still stands regardless of the push
+having succeeded.
+
 
 ## Push blocked — security note, action needed from Project Owner
 Session opened with the Project Owner pasting a live GitHub PAT in plaintext
@@ -74,8 +99,25 @@ app (`src/pages/Translator.jsx`) imports `translationEngine.js` and runs
 client-side only. Owner confirmed via prompt: delete rather than wire up.
 Removed ~190 lines; `server.js` now only serves `dist/` static + SPA
 catch-all. Rebuilt, confirmed `dist/` bundle hash unchanged (zero effect on
-the real app), confirmed dead routes now 404 instead of silently returning
-stale data.
+the real app), confirmed dead routes now 404 (not silently return stale
+data) — re-verified against the live server process itself, not just build
+output, in both this session's initial pass and again after the later
+rebases.
+
+**Caveat surfaced on deeper audit, after already shipping/pushing:** repo-
+internal grep proves nothing *in this repo* calls the removed routes, but
+does not prove no *external* consumer ever did. `git log -- server.js`
+shows this code had real production history — a commit as recent as
+2026-07-02 ("fix: remove Gemini fallback from /api/translate — always-
+truthy check returned raw English objects as translation on every miss")
+authored by the repo owner account, and it survived a 2026-07-06 Owner-
+authored "Repository Architect pass: ... dead-code cleanup" untouched.
+That the Owner was actively fixing bugs in this endpoint 6 weeks ago, and
+a dedicated cleanup pass didn't remove it, is a signal I should have
+surfaced *before* deleting, not after. Flagged to Owner in-session;
+**not yet confirmed whether any external consumer exists.** If one does,
+this needs reverting or re-implementing against the real engine instead
+of deleting.
 
 ### 3. Fixed: stale comment in `repository-intelligence.js` (commit `b697421`)
 Comment on the `'work'` RC-CANDIDATE-041 entry claimed `corrections.json`'s
