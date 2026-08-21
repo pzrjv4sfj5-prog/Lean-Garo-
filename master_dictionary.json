@@ -4349,7 +4349,7 @@
     "english": "i don't understand",
     "garo": "Anga uija",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'i don't understand' has VERIFIED/HIGH form(s) ['Anga man·ja']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B."
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'i don't understand' has VERIFIED/HIGH form(s) ['Anga man·ja']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. RESOLVED 2026-08-20 (Claude A): shipping phrase_maps.js override was 'Anga ma·sija' — matched neither this row nor the VERIFIED target, and was only reachable at all due to a separate apostrophe-lookup bug (fixed same session). Corrected phrase_maps.js to the VERIFIED target 'Anga man·ja' (source: 'I don't understand'/200sentences citation). This was one of the 20 override-vs-master conflicts Claude B flagged in CLAUDE_B_HANDOFF_20260819 section 3 — resolved via existing corpus citation, no native input needed."
   },
   {
     "english": "say it again",

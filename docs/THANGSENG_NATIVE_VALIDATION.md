@@ -4767,3 +4767,52 @@ runtime sweep, 0 errors, 0 new Check A–F violations.
 **Scope note:** this is corpus-internal engine logic — no native
 input involved or needed. Filed as its own fix, separate from any
 relay-batch NV closure.
+
+## Corpus-internal override-vs-master fixes (2026-08-20, Claude A — no native input needed)
+
+**Found while auditing open relay-batch items against master citation
+status** (per Project Owner directive: resolve from existing data
+before relaying, only send genuinely unresolvable items to native).
+
+Three shipping overrides disagreed with an already-VERIFIED/HIGH
+master row — resolvable directly from existing corpus evidence, no
+native relay needed:
+
+1. **"i don't understand"** — one of the 20 override-vs-master
+   conflicts Claude B flagged in `CLAUDE_B_HANDOFF_20260819` section 3
+   (`phrase_maps` override `Anga ma·sija` vs master VERIFIED target
+   `Anga man·ja`, citation "200sentences"). Was undiscoverable at
+   runtime until this session's apostrophe-lookup bugfix made
+   `phrase_maps.js` entries containing apostrophes reachable again —
+   at which point it started shipping the wrong value. Fixed
+   `phrase_maps.js` to the VERIFIED target `Anga man·ja`.
+2. **"what job do you do"** — `corrections.json` shipped
+   `Na·a mai kamko ka·a?`, master's VERIFIED/HIGH row says
+   `Na·ara mai kamko ka·a?` (missing "ra"). Not previously flagged by
+   Claude B's sweep. Fixed `corrections.json` to match.
+3. **"what is your name"** — `corrections.json` shipped
+   `Nang·ni bimung mai?`, structurally different from both of master's
+   two VERIFIED/HIGH variants (`Na·a ni bimungara maia?` primary,
+   `Nang·ni bimungara maia?` tagged variant). Fixed `corrections.json`
+   to the variant matching shipping's existing subject pronoun
+   (`Nang·ni bimungara maia?`).
+
+**Checked, no action (raka-dot-only differences, deferred per
+established caution — same class as the Check A raka-locality
+candidates, report-only, lexical-split risk):**
+- "where are you from": master `Na·a banoni?` vs shipping
+  `Na·a bano·ni?` — raka dot placement only, matches what the relay
+  batch itself listed as the item to confirm. Not touched.
+- "where is the market": master `Bajal banoa?` vs shipping
+  `Bajal bano?` — one-letter difference, ambiguous whether meaningful.
+  Not touched.
+
+**"wait" (Damo vs master's Damo/Sengbo):** not a bug — expected,
+matches the prior session's established two-form VERIFIED/HIGH
+handling (pickPrimary extracts "Damo" as one of two valid confirmed
+forms).
+
+**Verified via live `translate()`** (not `compiled_dict.json`): all
+3 fixes confirmed shipping correctly. Gate green: 8131 entries, 9/9
+grammatical corrections, 218/218 unit tests, 14530/14530 runtime
+sweep, 0 errors, 0 new Check A–F violations.
