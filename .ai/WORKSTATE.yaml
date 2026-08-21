@@ -1361,16 +1361,18 @@ claude_c:
     in the same commit as the fix. Archive, never delete — later SUPERSEDED/NV entries sometimes cite
     an old audit by date. First applied 2026-08-15: docs/CLAUDE_C_AUDIT_20260815.md archived after both
     its items (student root, 85-key resync) verified closed by CLAUDE_C_AUDIT_20260815B.md.'
-  latest_audit_head: e9a9fcf
-  latest_report: 'docs/CLAUDE_C_AUDIT_20260816.md — re-audit pass, zero drift, zero new findings. Confirmed
-    both items below still open and unchanged: (1) ''answer'' pickPrimary tie (Claude A''s SUPERSEDED-tagging
-    step landed, cb53f1c; Claude B''s tie-break still not implemented), (2) the 9-key no-verified-candidate
-    defect (spot-checked ''work'' in full this pass, matches prior account exactly — live value ''Kam''
-    traces to an OCR-flagged row, not either VERIFIED candidate). §3 of the new report notes explicitly:
-    no coordination gap between A and B, sequencing is correct, the only remaining gap is Claude B''s
-    tie-break implementation, which would resolve both bug subclasses at once. docs/CLAUDE_C_AUDIT_20260815B.md
-    stays in docs/ (not archived) — its findings aren''t closed yet, per closure_protocol only fully-resolved
-    reports move to docs/archive/.'
+  latest_audit_head: 42e93ba
+  latest_report: 'docs/CLAUDE_C_AUDIT_20260821.md — full QA pass (repo-wide, per Project Owner request).
+    Gate green throughout: 218/218 tests, lint clean, build clean, resync gate 0 candidates, live translate()
+    sweep 8132/8132 keys, 0 errors. Two open findings, handoffs written: (1) ''king'' — live bug, translate(''king'')
+    returns ''thin objects'' not Raja, root-caused to two misimported classifier-scope-description rows
+    outranking the real SUPERSEDED-only Raja row (see docs/HANDOFF_CLAUDE_A_20260821.md +
+    docs/HANDOFF_CLAUDE_B_20260821.md for the two-sided fix). (2) ''film''/''movie'' missing from dictionary
+    entirely + a new finding: translate() silently drops unresolved object nouns rather than flagging them
+    (docs/HANDOFF_CLAUDE_A_20260821.md for the vocab fix, docs/HANDOFF_CLAUDE_B_20260821.md for the
+    silent-drop behavior). ''answer'' tie confirmed still open, unchanged, masked by a corrections.json
+    override. No live A/B desync — Claude B''s 8/21 rebase onto Claude A''s push was clean. docs/CLAUDE_C_AUDIT_20260816.md
+    stays in docs/ (historical), superseded by this report per closure_protocol.'
   prior_report: 'docs/CLAUDE_C_AUDIT_20260815B.md — follow-up pass. Verified fixed at runtime (not just
     claimed): student''s bare-noun root (all paths, Chattro) and the 85-key SUPERSEDED-override resync
     (0 candidates remaining on re-run). Confirmed still open, unchanged: the 9 compiled_dict.json keys
