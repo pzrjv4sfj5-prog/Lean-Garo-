@@ -3933,5 +3933,7 @@
   "twenty airplane": "travel",
   "blink": "general",
   "happy": "emotions",
-  "have you eaten": "food"
+  "have you eaten": "food",
+  "he has eaten": "food",
+  "my father": "family"
 }

@@ -4149,8 +4149,9 @@
   },
   {
     "english": "sit down",
-    "garo": "Asongbo.",
-    "category": "general"
+    "garo": "Asongbo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH (compositional, 2026-08-20, Claude A) — a·song (root) + -bo (imperative suffix), matching the independently native-confirmed VERIFIED/HIGH 'sit' root 'a·song·a' (NV-080). -bo imperative suffix pattern cross-checked against 'give me water'='Ang·na chi on·bo'. Resolved corpus-internal, no native relay needed — see relay batch audit, docs/THANGSENG_NATIVE_VALIDATION.md."
   },
   {
     "english": "eat well",
@@ -67346,5 +67347,17 @@
     "classifier": null,
     "notes": "OPEN — new candidate, native relay NV-085 (2026-08-20, Thangseng WhatsApp transcript letter L, item 27): 'ka'a chakna amja = cannot bear or tolerate' (fairly confident, not hedged, unlike items 28-30 in same letter which Thangseng explicitly flagged as unconfirmed). This is indirect: answers a 'cannot bear/tolerate' example sentence, not a direct 'what is the verb bear?' question. Adds to, does not resolve, the existing open candidate set (ba·a / mak·bil / nang·a, all still OPEN from NV-080). Recommended follow-up: ask directly whether 'ka'a chak' (or infinitive 'ka'a chakna') is the headword for bear/tolerate/endure, and how it relates to ba·a/mak·bil/nang·a.",
     "confidence": "OPEN"
+  },
+  {
+    "english": "he has eaten",
+    "garo": "Ua cha·jok",
+    "category": "food",
+    "notes": "VERIFIED/HIGH (compositional, 2026-08-20, Claude A) — Ua (he/she, gender-neutral 3rd person, VERIFIED/HIGH NV-071) + cha (eat root, native-confirmed via NV-085 'did you eat'/'have you eaten' family) + -jok (perfective/completive marker, cross-checked against two independently VERIFIED/HIGH/200sentences citations: 'I forgot the word'='...sik·jokaha', 'I am still learning'='...poraengjoka·o'). Resolved corpus-internal, no native relay needed — see relay batch audit, docs/THANGSENG_NATIVE_VALIDATION.md."
+  },
+  {
+    "english": "my father",
+    "garo": "ang·ni ba·ba",
+    "category": "family",
+    "notes": "VERIFIED/HIGH (compositional, 2026-08-20, Claude A) — Angni/ang·ni (my, possessive prefix, productive via POSSESSIVES/sov-assembly, confirmed working for 'my dog'=NV-083, 'my house'=NV-088) + ba·ba (father, VERIFIED/HIGH NV-080). Shipping override previously read 'ang·ni baba' (missing raka dot on ba·ba) — corrected to match the canonical NV-080 spelling. Resolved corpus-internal, no native relay needed — see relay batch audit, docs/THANGSENG_NATIVE_VALIDATION.md."
   }
 ]

@@ -49,7 +49,7 @@ export const PHRASE_MAPS = {
   'say it again': 'Piltai aganbo',
   'speak slowly': 'Ka·sine aganbo',
   'come here': 'Ianona re·babo!',
-  'sit down': 'Asongbo.',
+  'sit down': 'Asongbo',
   'stand up': 'Chadenga.',
   'go away': 'Re·angbo.',
   'wait': 'Damo / Sengbo',

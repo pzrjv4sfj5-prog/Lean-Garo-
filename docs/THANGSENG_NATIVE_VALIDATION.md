@@ -4816,3 +4816,56 @@ forms).
 3 fixes confirmed shipping correctly. Gate green: 8131 entries, 9/9
 grammatical corrections, 218/218 unit tests, 14530/14530 runtime
 sweep, 0 errors, 0 new Check A–F violations.
+
+## Compositional closures — relay batch items resolved without native input (2026-08-20, Claude A)
+
+**Per Project Owner directive:** resolve open relay-batch items from
+existing verified data wherever possible; only relay genuinely
+irreducible items to native. Following the earlier finding that
+"my X" possessive phrases are productive grammar (not idioms needing
+individual confirmation), audited the full open batch for similar
+compositional cases.
+
+**Closed (master rows added/corrected, all VERIFIED/HIGH, all
+verified via live `translate()`):**
+
+1. **"my father"** = `ang·ni ba·ba` — Angni (possessive, proven
+   productive: my dog/NV-083, my house/NV-088) + `ba·ba` (father,
+   VERIFIED/HIGH NV-080). Shipping previously had a spelling bug
+   (`baba`, missing raka dot) — corrected to match canonical NV-080
+   spelling.
+2. **"he has eaten"** = `Ua cha·jok` — `Ua` (he/she, VERIFIED/HIGH
+   NV-071) + `cha` (eat root, NV-085 family) + `-jok` (perfective
+   marker, cross-checked against 2 independent VERIFIED/HIGH/
+   200sentences citations elsewhere in the corpus).
+3. **"sit down"** = `Asongbo` — `a·song` root (VERIFIED/HIGH NV-080)
+   + `-bo` imperative suffix (cross-checked against "give me water").
+   Also fixed a stale duplicate: `phrase_maps.js` held a trailing-
+   period variant (`Asongbo.`) never reachable since `corrections.json`
+   is checked first — removed the inconsistency (Rule 8).
+4. **"a tree"** = `Bol pangsa` — already correct, no change needed.
+   `Bol` (tree, VERIFIED/HIGH, direct Project Owner correction
+   2026-08-12) + `pang` (tree classifier, native-confirmed) + `-sa`
+   (counting suffix 1).
+
+**Checked but left open — insufficient corroboration for confident
+compositional closure, staying in the native relay queue:**
+- "give me water" — `water`=`Chi` and the imperative `give`-stem
+  (`on·bo`) are both uncited; master's only VERIFIED `give` root is
+  `ron·a` (different initial consonant: on- vs ron-), and it's
+  unclear whether that's a real imperative-stem alternation or a
+  data inconsistency. Needs a direct answer, not inference.
+- "stand" / "stand up" — two competing uncited candidates
+  (`Chadenga`, `Chakata`), neither independently verified. No safe
+  base to compose from.
+- "take revenge" — the only citation is for the noun `Revenge` =
+  `a'jak sok·a·ni` (VERIFIED/HIGH/doc7); the shipping verb-phrase
+  form `a·jak soka` diverges enough (missing `·ni`, apostrophe vs
+  raka-dot orthography) that it's not safe to assume it's the same
+  citation covering a different grammatical form.
+- "self" — atomic root, no independent citation found anywhere in
+  the corpus to cross-check against.
+
+Gate green throughout: 8132 entries (+1 net after "sit down" citation
+add), 9/9, 218/218, 14532/14532 runtime sweep, 0 errors, 0 new
+Check A–F violations.
