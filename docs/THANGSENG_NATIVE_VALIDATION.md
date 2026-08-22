@@ -4998,3 +4998,75 @@ Genuinely new/contradictory items from this batch, not silently
 resolved: `yes` (Am vs Oe) remains the one open reconciliation point —
 everything else either matched, was already closed, or was added as a
 non-contradicting coexisting alternate form.
+
+## NV-091 (2026-08-22, direct Project Owner relay, continuing batch)
+
+Batch: sit/sit(command)/may i sit down?/sitting, smelly, smoke,
+someone, song, sorry, soul, stand, stay, stop, studying, tasteless,
+teach, tell, telling, Hoe=yes.
+
+Closed by citation (matched existing, uncited values, now VERIFIED/HIGH):
+sit (command)=Asongbo, sit down=Asongbo, may i sit?=Anga asongna
+mangengma? (also covers this batch's "May I sit down?" — same value,
+not duplicated as a separate key), sitting=Asong·enga, stand=Chadenga,
+studying=Poraienga, bland/tasteless=Chibroka (already covered this
+exact key, "tasteless" alone not separately added), teach=Sikie on·a
+(git vs skie spelling-variant note), telling=Aganenga.
+
+New coexisting entries added, none superseding existing UNVERIFIED
+candidates without stronger evidence: smelly(homonym)=senga (same
+word as VERIFIED 'wait'=senga, documented homonym), song: giit
+promoted primary (git=this relay, spelling variant), tell(alt)=agana
+(possible simplification of a·gan·e ron·a).
+
+Still-flagged, unresolved, deliberately not silently closed:
+- **sit (alt)=aonga** — still contradicts NV-080's a·song·a; resent
+  without new resolving context.
+- **stay (alt)=donga** — part of the live/stay/sit consolidation
+  question from NV-089, needs one combined judgment call.
+- **yes** — now a 3-way: Oe (VERIFIED, original), Am (NV-090, flagged),
+  Hoe (this batch, flagged — already used sentence-internally in
+  existing entries like "Hoe mangenva."). All three coexist; none
+  superseded. Needs explicit reconciliation.
+
+**Duplicate-representation check (per Rule 8/duplicate-representation
+discipline):** searched master_dictionary.json for exact (english,garo)
+duplicate rows — found 10, all pre-existing and unrelated to this
+session's edits (e.g. "one dog", "hope", "pen", "tax", "3", "two dogs",
+"three books", "ten birds", "one plate of rice" — legacy import
+duplicates predating NV-089). None of this session's added/cited rows
+are among them. Flagging the pre-existing 10 as a separate cleanup
+item, not fixed here — out of scope for relay processing, needs its
+own dedicated pass (likely Claude B tooling, since several are
+mechanically-generated counting-phrase duplicates).
+
+## Runtime Handoff note, NV-090/091 (yes: Oe/Am/Hoe three-way)
+
+Discovered while spot-checking runtime post-batch: `src/data/corrections.json`
+already carried `"yes": "Am"` as a pre-existing override (predates this
+session, not added by Claude A) — meaning `translate("yes")` has been
+shipping `Am` all along, not master_dictionary.json's own VERIFIED
+`Oe`. This session's NV-090 independently added `Am` as a flagged
+coexisting master-dictionary candidate before this pre-existing runtime
+fact was noticed. Net effect: two independent signals (the pre-existing
+runtime override and this session's direct relay) now agree on `Am`,
+while master's own VERIFIED tag still says `Oe`, and `Hoe` (NV-091) is
+a third candidate used sentence-internally elsewhere in the corpus.
+**Not resolved here** — this needs an explicit three-way reconciliation
+(Oe/Am/Hoe: register variants? one is stale? one is a different
+sense?), not a silent pick. Flagging prominently for the next relay or
+Claude A session with this fuller context, since it changes the shape
+of the open question from "NV-090 flagged Am against VERIFIED Oe" to
+"runtime already ships Am, master still tags Oe VERIFIED, Hoe is a
+third open candidate."
+
+**Full runtime sweep run this session (`scripts/runtime-error-sweep.mjs`):**
+14,566 `translate()` calls (every compiled_dict key, plural forms,
+counted-noun forms, structural edge cases, type-safety null/undefined
+inputs, full API surface) — **0 errors**.
+
+**Duplicate-representation re-check after full batch (NV-089/090/091):**
+none of this session's added or cited rows introduced a new exact
+(english,garo) duplicate — the 10 pre-existing duplicate rows found
+during NV-091 remain the only ones in the file, all predating this
+session's work (see NV-091 entry above).

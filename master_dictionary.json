@@ -690,7 +690,9 @@
   {
     "english": "stand",
     "garo": "Chadenga",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)"
   },
   {
     "english": "cry",
@@ -1229,7 +1231,9 @@
   {
     "english": "bland / tasteless",
     "garo": "Chibroka",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)"
   },
   {
     "english": "smelly / stinky",
@@ -4181,7 +4185,8 @@
     "english": "sit down",
     "garo": "Asongbo",
     "category": "general",
-    "notes": "VERIFIED/HIGH (compositional, 2026-08-20, Claude A) — a·song (root) + -bo (imperative suffix), matching the independently native-confirmed VERIFIED/HIGH 'sit' root 'a·song·a' (NV-080). -bo imperative suffix pattern cross-checked against 'give me water'='Ang·na chi on·bo'. Resolved corpus-internal, no native relay needed — see relay batch audit, docs/THANGSENG_NATIVE_VALIDATION.md."
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)",
+    "confidence": "VERIFIED/HIGH"
   },
   {
     "english": "eat well",
@@ -4904,7 +4909,9 @@
   {
     "english": "teach",
     "garo": "Sikie on·a",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) ('Skie on·a' this relay treated as the same word, spelling variant only.)"
   },
   {
     "english": "traditional festival",
@@ -5552,7 +5559,9 @@
   {
     "english": "sit (command)",
     "garo": "Asongbo",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)"
   },
   {
     "english": "walk (command)",
@@ -6220,7 +6229,9 @@
   {
     "english": "may i sit?",
     "garo": "Anga asongna mangengma?",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) (also phrased 'May I sit down?' this batch — same value, not duplicated as a separate key.)"
   },
   {
     "english": "is he coming?",
@@ -17028,7 +17039,8 @@
     "pos": null,
     "category": "education",
     "classifier": null,
-    "notes": null
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)",
+    "confidence": "VERIFIED/HIGH"
   },
   {
     "english": "reading",
@@ -17052,7 +17064,8 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": null
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)",
+    "confidence": "VERIFIED/HIGH"
   },
   {
     "english": "their",
@@ -17151,7 +17164,9 @@
   {
     "english": "sitting",
     "garo": "Asong·enga",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)"
   },
   {
     "english": "1",
@@ -42055,7 +42070,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) 'git' (this relay) treated as the same word, spelling variant only.",
+    "confidence": "VERIFIED/HIGH"
   },
   {
     "english": "soot",
@@ -67797,6 +67813,41 @@
     "garo": "Am",
     "category": "general",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — FLAGGED: directly contradicts the existing VERIFIED 'yes'='Oe' entry (also used elsewhere, e.g. 'of course!'='Oe, bebe!'). Not superseding Oe on this alone — both may be genuine register/dialect variants, but this needs an explicit Claude A/Project Owner reconciliation before either is treated as primary.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "sit (alt)",
+    "garo": "aonga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — FLAGGED: directly contradicts NV-080's VERIFIED 'sit'='a·song·a', resent this batch without new resolving context. Not superseded — 'Sit (command)'/'sitting' below are confirmed asong- root forms, reinforcing a·song·a as the dominant live form. Needs explicit reconciliation (register? different sense?) before either is treated as sole primary.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "smelly (homonym)",
+    "garo": "senga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — same word/spelling as the already-VERIFIED 'wait'='senga' (documented homonym pair, see NV-015). Existing 'smelly'='kal·ting·a' (UNVERIFIED) is a different, unrelated word — left untouched, not superseded.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "stay (alt)",
+    "garo": "donga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — FLAGGED: part of the same live/stay/sit consolidation question raised in NV-089 (this exact word 'donga' recurs across all three senses in the same relay) — needs one consolidated Claude A judgment call, not a standalone fix. Existing 'stay'='dongchak·a'/'dongdang·a' (UNVERIFIED) left untouched.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "tell (alt)",
+    "garo": "agana",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — possibly the correct simplification of the existing UNVERIFIED 'a·gan·e ron·a'/'in·a', per this same relay's own pattern (cf. 'aganjojoa' simplification for 'gossip'). Added as a new coexisting VERIFIED form, not superseding the existing candidates.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "yes (alt 2)",
+    "garo": "Hoe",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — third candidate for 'yes', alongside VERIFIED 'Oe' and the flagged 'yes (alt)'='Am'. 'Hoe' already appears in existing sentence-level entries ('yes, of course.'='Hoe mangenva.', 'yes, i love you.'='Hoe, ang·a nangna kasa·a.') — this is the first direct standalone confirmation of it as 'yes' itself. All three ('Oe'/'Am'/'Hoe') now need one consolidated reconciliation — register/dialect variants, or a real correction — not resolved here.",
     "confidence": "VERIFIED/HIGH"
   }
 ]
