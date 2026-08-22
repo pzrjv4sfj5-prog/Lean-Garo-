@@ -18,8 +18,17 @@
  * so every production dictionary entry sourced through this pipeline
  * keeps a permanent, queryable link back to its source/page/import
  * batch/reviewer. Only the (english, garo, category, pos, classifier,
- * notes) fields get copied into master_dictionary.json; provenance and
- * review metadata are not production-engine concerns and stay here.
+ * notes, confidence, confidence_source) fields get copied into
+ * master_dictionary.json; provenance and review metadata are not
+ * production-engine concerns and stay here.
+ *
+ * confidence/confidence_source (added 2026-08-22, docs/
+ * PROPOSAL_CONFIDENCE_SCHEMA_20260822.md step 1): optional structured
+ * fields, pass-through only -- this tool does not infer or default
+ * either one. prepare-data.js does not read confidence yet (still
+ * regex-parses notes per AI-001); this is schema/writer support only,
+ * ahead of the cutover in step 4 of that proposal. A promoted entry
+ * with no confidence set behaves exactly as before.
  *
  * USAGE:
  *   node scripts/promote-lexicon.js --id PL-0000001 [--id PL-0000002 ...]
@@ -144,6 +153,8 @@ function main() {
     if (e.pos) entry.pos = e.pos;
     if (e.classifier) entry.classifier = e.classifier;
     if (e.notes) entry.notes = e.notes;
+    if (e.confidence) entry.confidence = e.confidence;
+    if (e.confidence_source) entry.confidence_source = e.confidence_source;
     return entry;
   });
   const updatedMaster = master.concat(newMasterEntries);

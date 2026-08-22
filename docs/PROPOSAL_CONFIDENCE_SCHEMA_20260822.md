@@ -3,6 +3,21 @@ _Drafted 2026-08-22, Claude B. Structural fix for AI-001
 (`docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` §4), designed 2026-08-04 per
 `docs/MILESTONE_2026-08-11.md` Phase 1, not started until now._
 
+## Erratum (2026-08-22, same session, post-signoff)
+The "Current State" section below claimed no row carried a structured
+`confidence` field. That was wrong — running step 1's own CI check
+against the live repo (not assumed, the build gate itself failed)
+surfaced 442 rows already carrying an ad hoc `confidence` value from
+an undocumented 2026-08-17/08-20 import step, in a different casing
+than proposed here, plus a state (`open`) this document's four-value
+enum never accounted for. `rejected` was added alongside it, matching
+a gap already documented in `docs/CLAUDE_B_TRIAGE_..._20260822.md`
+§3. The enum below is now six values, not four; migration used the
+corrected version. Left the original text below unedited (citation
+discipline, not deleted) — see
+`scripts/migrate-confidence-schema.js`'s header for the authoritative
+account of what actually shipped.
+
 ## Why
 `pickPrimary`/`finalizeDictionary` (`prepare-data.js`) currently infer
 confidence entirely from regex over the free-text `notes` field:

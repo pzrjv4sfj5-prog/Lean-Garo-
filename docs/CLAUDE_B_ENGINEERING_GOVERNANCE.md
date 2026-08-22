@@ -99,7 +99,7 @@ sessions that happen to touch it directly.
 
 | ID | Mechanism | Subclass | Status | Instances (cumulative) | Proposed fix |
 |---|---|---|---|---|---|
-| AI-001 | pickPrimary cannot distinguish genuinely-confirmed tag from a same-shaped free-text caveat / mistagged row | (a) tie, (b) no-verified-candidate | **OPEN** | `wait`, `salt`, `smile`, work×2/boil/build/close/empty/leg/outside/strong (9), `answer`, `king` — 14+ named, 16 more enumerated in PICKPRIMARY_VERIFIED_TIES.md not yet individually triaged | `confidence`/`confidence_source` schema on `master_dictionary.json` rows (designed 2026-08-04, `docs/MILESTONE_2026-08-11.md` Phase 1 — not started) |
+| AI-001 | pickPrimary cannot distinguish genuinely-confirmed tag from a same-shaped free-text caveat / mistagged row | (a) tie, (b) no-verified-candidate | **OPEN — schema migrated, cutover not done** | `wait`, `salt`, `smile`, work×2/boil/build/close/empty/leg/outside/strong (9), `answer`, `king` — 14+ named, 16 more enumerated in PICKPRIMARY_VERIFIED_TIES.md not yet individually triaged | `confidence`/`confidence_source` schema on `master_dictionary.json` rows (designed 2026-08-04, `docs/MILESTONE_2026-08-11.md` Phase 1 — steps 1-2 done 2026-08-22 per `docs/PROPOSAL_CONFIDENCE_SCHEMA_20260822.md`: all 9,791 rows classified, 335 left unresolved for Claude A (step 3), `prepare-data.js` cutover (step 4) not yet done — regex parsing of `notes` is still what ships) |
 
 New rows are added here, never silently folded into an existing one
 unless the mechanism genuinely matches (§2 step 1). This table is

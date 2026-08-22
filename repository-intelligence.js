@@ -498,6 +498,43 @@ function checkPlaceholderEntries() {
 }
 
 
+// --- CHECK G: master_dictionary.json confidence field validity ---
+// Added 2026-08-22, docs/PROPOSAL_CONFIDENCE_SCHEMA_20260822.md step 1
+// (AI-001 structural fix). Additive schema, NOT yet a required field.
+// Six values, not the four originally proposed — running this check's
+// own build gate surfaced 442 rows already carrying an ad hoc
+// confidence value from an earlier, undocumented import step
+// (2026-08-17/08-20 relay batches), including a 5th state ("open": a
+// new candidate under active investigation) the original proposal
+// never accounted for. `rejected` was added alongside it for the same
+// reason — see scripts/migrate-confidence-schema.js's header for the
+// full account. A row with no `confidence` at all remains valid.
+const VALID_CONFIDENCE_VALUES = new Set(['verified_high', 'unverified', 'ocr_flagged', 'superseded', 'open', 'rejected']);
+
+function checkConfidenceFieldValidity() {
+  console.log('\n=== CHECK G: master_dictionary.json confidence field validity ===');
+  const dict = loadJSON('master_dictionary.json');
+  const problems = [];
+
+  dict.forEach((entry, idx) => {
+    if (!entry || typeof entry !== 'object') return; // structural issues are Check C/E's concern, not this one
+    const where = entry.english ? `"${entry.english}"/"${entry.garo}"` : `entry index ${idx}`;
+    if (entry.confidence !== undefined && !VALID_CONFIDENCE_VALUES.has(entry.confidence)) {
+      problems.push(`${where}: invalid confidence value "${entry.confidence}" (must be one of: ${[...VALID_CONFIDENCE_VALUES].join(', ')})`);
+    }
+    if (entry.confidence_source !== undefined && entry.confidence === undefined) {
+      problems.push(`${where}: has confidence_source but no confidence value to source`);
+    }
+  });
+
+  problems.slice(0, 30).forEach(p => console.log(`  FAIL: ${p}`));
+  if (problems.length > 30) console.log(`  ... and ${problems.length - 30} more`);
+  console.log(`  ${dict.length} rows checked, ${problems.length} confidence-schema problem(s).`);
+  if (problems.length > 0) hasNewViolation = true;
+  return problems.length;
+}
+
+
 console.log('Repository Intelligence validation (BACKLOG-006) starting...');
 const rakaCandidates = checkRakaLocality();
 const crossTableViolations = checkCrossTableConsistency();
@@ -505,6 +542,7 @@ const dictSelfConflicts = checkDictionarySelfConsistency();
 const pendingLexiconProblems = checkPendingLexiconIntegrity();
 const placeholderEntries = checkPlaceholderEntries();
 const crossSourceViolations = checkCrossSourceVsCompiledDict();
+const confidenceSchemaProblems = checkConfidenceFieldValidity();
 
 console.log('\n=== Summary ===');
 console.log(`Raka locality candidates (report-only): ${rakaCandidates}`);
@@ -513,6 +551,7 @@ console.log(`New dictionary self-consistency conflicts: ${dictSelfConflicts}`);
 console.log(`Pending Lexicon structural problems: ${pendingLexiconProblems}`);
 console.log(`New unresolved-placeholder entries: ${placeholderEntries}`);
 console.log(`New runtime-cascade source mismatches: ${crossSourceViolations}`);
+console.log(`Confidence-schema problems: ${confidenceSchemaProblems}`);
 
 if (hasNewViolation) {
   console.log('\nFAILED — new inconsistency detected. Fix the data or, if this is a');
