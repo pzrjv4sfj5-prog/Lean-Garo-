@@ -244,6 +244,29 @@ history, before any actual work occurs.
 This is a standing rule, not a one-off — applies identically whether
 the next session is Claude A, Claude B, or Claude D.
 
+13. **Recurring symptom-level bugs must trigger an architectural
+    investigation before another override is added** (Project Owner
+    directive, 2026-08-22, following the 2026-08-22 Claude B Role
+    Self-Audit — full protocol: `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md`).
+    Mandatory for every Claude B session, permanently, not a one-off:
+    - Before adding any `grammarOverrides`/`corrections.json` entry
+      (or equivalent per-key exception), check whether its *mechanism*
+      matches an already-open investigation in that doc's §4 table —
+      not just whether the same word was seen before.
+    - A second occurrence of the same mechanism may still ship the
+      override as a stopgap, but the same commit must also advance the
+      architectural fix or explicitly record why not — silent
+      re-patching is what this rule exists to stop.
+    - Every Claude B session runs the A→B→runtime trace in that doc's
+      §3 (source → compiled → override → live `translate()` call) for
+      any key it touches — reporting the final `translate()` output
+      alone, without the intermediate steps, does not satisfy Rule 7's
+      verification-scope requirement for this class of claim.
+    - Claude C verifies class-level closure per that doc's §5
+      (count-based, regenerated auto-enumeration files) before any §4
+      row is marked `CLOSED` — a single working example is
+      instance-level evidence only, not class closure.
+
 11. **Check compositional grammar before relaying a multi-word phrase
     to native** (Project Owner directive, 2026-08-20). "My X" and
     similar possessive/tense/imperative/classifier constructions are

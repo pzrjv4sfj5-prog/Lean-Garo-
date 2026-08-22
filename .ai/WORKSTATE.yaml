@@ -1,5 +1,5 @@
 repository:
-  head: 82ce230
+  head: 9b1364e
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -7,17 +7,19 @@ repository:
     to review everything since this checkpoint; continue from actual repo state. Do NOT create follow-up
     commits solely to update `head` to match itself - that is a contradiction (see prior "fix stale head
     hash" commits 9558ea6 etc., now superseded by this convention).'
-  last_updated: '2026-08-21 (Claude B, session close): updated WORKSTATE.yaml to
-    point at docs/CLAUDE_B_SESSION_MIGRATION_20260821.md. Session closed clean: HEAD
-    42e93ba verified == origin/main via both local git AND GitHub API (independent
-    of local git state, since this session discovered mid-session that trusting local
-    git alone was insufficient -- origin advanced twice without local signal),
-    working tree clean, gate green (8132 entries, 218/218 unit tests, 14532/14532
-    runtime-sweep, 0 errors, 0 new repository-intelligence violations, 0 lint errors,
-    0 resync candidates, clean vite build). See migration doc for full session detail
-    (head-pointer off-by-one x3 total across sessions, orphaned server.js API removed
-    with an unresolved external-consumer caveat, stale repository-intelligence.js
-    comment fixed, two mid-session rebases onto Claude A''s concurrent pushes).'
+  last_updated: '2026-08-22 (Claude B): ran a Project-Owner-directed Claude B Role
+    Self-Audit (chat), independently re-verifying claims rather than trusting docs
+    (npm test 218/218 confirmed green; live translate() calls confirmed king/answer/film
+    still exhibit the reported defects). Finding: pickPrimary/override-precedence
+    ambiguity is a recurring defect class patched narrowly >=6 times since 2026-08-04
+    (wait, salt, smile, 9-key no-verified-candidate defect, answer, king) without the
+    class itself ever being closed. Per Owner direction, converted the finding into a
+    mandatory governance model: docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md (new) +
+    .ai/SESSION_BOOTSTRAP.md Rule 13 (new pointer rule). Documentation-only commit,
+    no engine/data changes -- king/answer/film themselves remain open, not touched
+    this session (that is now AI-001''s scope, see governance doc). See claude_c
+    entry below for the corresponding class-closure verification duty added to C''s
+    role.'
   last_updated_prior_20260820c: '2026-08-20c (Claude A, session close): updated WORKSTATE.yaml + SESSION_BOOTSTRAP.md
     to point at docs/CLAUDE_A_SESSION_MIGRATION_20260820c.md. Session closed clean: HEAD 56cbae0 (migration
     doc commit) verified == origin/main, working tree clean, gate green (8132 entries, 218/218 unit tests,
@@ -1372,6 +1374,16 @@ claude_c:
     in the same commit as the fix. Archive, never delete — later SUPERSEDED/NV entries sometimes cite
     an old audit by date. First applied 2026-08-15: docs/CLAUDE_C_AUDIT_20260815.md archived after both
     its items (student root, 85-key resync) verified closed by CLAUDE_C_AUDIT_20260815B.md.'
+  class_closure_protocol: 'Added 2026-08-22 (Project Owner directive, following the Claude B Role
+    Self-Audit) — see docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §5 for full detail. When a §4
+    architectural-investigation row in that doc (e.g. AI-001, the pickPrimary/override-precedence
+    class) is proposed as CLOSED, Claude C must verify the CLASS is resolved, not just the named
+    example(s) that originally surfaced it: regenerate the relevant auto-enumerated artifact(s)
+    (docs/PICKPRIMARY_VERIFIED_TIES.md and its not-yet-built subclass-(b) counterpart) post-fix, and
+    report a before/after count — total instances matched pre-fix, how many now resolve to a
+    principled (non-last-write-wins) value, how many remain and why. A single working example (e.g.
+    "king now returns Raja") is instance-level evidence only and does not satisfy this protocol.
+    Only after that count-based report can whoever has push access mark the §4 row CLOSED.'
   latest_audit_head: 42e93ba
   latest_report: 'docs/CLAUDE_C_AUDIT_20260821.md — full QA pass (repo-wide, per Project Owner request).
     Gate green throughout: 218/218 tests, lint clean, build clean, resync gate 0 candidates, live translate()
@@ -1428,7 +1440,33 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-21 (Claude B): full audit requested by Project Owner ("check
+  next_action: '2026-08-22 (Claude B): Project-Owner-directed Role Self-Audit (see
+    docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md for the full writeup) found pickPrimary/
+    override-precedence ambiguity is a recurring defect class (>=6 narrow patches
+    since 2026-08-04, class never closed). Verified live before writing anything:
+    npm test 218/218 green; translate(''king'')->"thin objects" still wrong,
+    translate(''answer'')->Aganchaka only correct because corrections.json masks an
+    unresolved pickPrimary tie underneath, translate(''I saw the film'')->"Anga Nikaha"
+    still silently drops the object -- all three match Claude C''s 2026-08-21 findings,
+    none fixed this session (audit + governance only, per Owner instruction). Shipped:
+    docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md (new) -- defines AI-001 (the pickPrimary/
+    override defect class, table in its S4), the mandatory rule that a 2nd occurrence
+    of the same mechanism must advance the architectural fix or explicitly say why not
+    before another override ships, the A->B->runtime trace protocol (S3) required for
+    any key touched, and Claude C''s class-level (count-based, not single-example)
+    closure-verification protocol (S5). .ai/SESSION_BOOTSTRAP.md Rule 13 added as the
+    permanent pointer rule. head-pointer set to 9b1364e (this commit''s actual parent,
+    verified via git log -1 HEAD^ before writing, not assumed).
+    Next Recommended Tasks: (a) build docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md as a
+    prepare-data.js auto-generated report, parallel to the existing
+    PICKPRIMARY_VERIFIED_TIES.md, so AI-001''s subclass (b) is mechanically enumerable
+    too (currently only narrative, per governance doc S1 -- this is the first concrete
+    engineering gap the new model itself identifies). (b) Whenever AI-001 work resumes,
+    the confidence/confidence_source schema (designed 2026-08-04, still Phase 1
+    not-started per docs/MILESTONE_2026-08-11.md) is the proposed structural fix, not
+    another grammarOverrides entry. (c) king/answer/film handoffs from Claude C''s
+    2026-08-21 audit remain open, now explicitly AI-001-scoped.'
+  next_action_prior_20260821: '2026-08-21 (Claude B): full audit requested by Project Owner ("check
     all runtime and all updated," then "find what''s missing/runtime errors between
     A and B and start fixing," explicitly scoped to Claude B''s role). Closed 2 real
     engineering bugs + 1 stale-doc cleanup: (1) WORKSTATE.yaml head off-by-one --
