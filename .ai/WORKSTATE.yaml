@@ -1437,6 +1437,29 @@ claude_c:
     silent-drop behavior). ''answer'' tie confirmed still open, unchanged, masked by a corrections.json
     override. No live A/B desync — Claude B''s 8/21 rebase onto Claude A''s push was clean. docs/CLAUDE_C_AUDIT_20260816.md
     stays in docs/ (historical), superseded by this report per closure_protocol.'
+  self_push_note: '2026-08-22, Claude C — this commit was pushed directly by Claude C (not relayed
+    through Claude A/B), under the explicit Project Owner-directive exception in SESSION_BOOTSTRAP.md
+    (dated 2026-08-19): "if the Project Owner explicitly instructs Claude C to commit or push... Claude
+    C may perform that repository mutation directly." Scope of this action: two new native-data
+    reference documents only, not an audit fix, not a linguistic or engineering decision — Claude C''s
+    normal report-writing function, just self-pushed instead of relayed this time. Added:
+    docs/THANGSENG_RELAY_TABLE_20260821B.md (full item-by-item table, every entry cross-checked against
+    live master_dictionary.json) and docs/CLAUDE_C_TRANSCRIPT_ANALYSIS_20260821B.md (narrative summary).
+    SOURCE / ATTRIBUTION (read this before treating anything in either doc as ground truth): all Garo-language
+    data in both documents originates from Thangseng (native speaker), relayed via a Tridip-Thangseng
+    WhatsApp transcript dated 2026-08-21, itself relayed into this Claude C session by the Project Owner.
+    Two items (king = Raja, film = film) were separately confirmed by Thangseng and added directly by
+    the Project Owner in this same session. Neither document asserts any of its own linguistic judgment
+    — every proposed promotion/supersession is flagged for Claude A''s decision, per Claude C''s standing
+    no-linguistic-decisions boundary. Directly relevant to this report''s two open findings above: the
+    relay table''s `king`/`film` rows supply the native citations `docs/HANDOFF_CLAUDE_A_20260821.md`
+    needs, but do NOT themselves close either finding — king still needs Claude B''s structural pickPrimary
+    fix (class_closure_protocol above applies: a single "king now returns Raja" instance is not sufficient
+    to mark AI-001 CLOSED), and film''s sibling gap (`movie`) plus the silent-object-drop engineering
+    defect are untouched. Raka orthography note: both documents render raka consistently as the middle
+    dot (·), matching master_dictionary.json''s predominant convention, not the apostrophe form seen in
+    docs/GRAMMAR_RAKA_RULE_CONFIRMED_20260626.md and in the raw transcript — a deliberate normalization
+    for readability, not a claim that one form is more correct than the other.'
   prior_report: 'docs/CLAUDE_C_AUDIT_20260815B.md — follow-up pass. Verified fixed at runtime (not just
     claimed): student''s bare-noun root (all paths, Chattro) and the 85-key SUPERSEDED-override resync
     (0 candidates remaining on re-run). Confirmed still open, unchanged: the 9 compiled_dict.json keys
