@@ -58,7 +58,20 @@ const PATH = 'master_dictionary.json';
 // (2026-08-17/08-20 relay-import batches) — case-insensitive alias map
 // to the canonical lowercase form. Purely a casing/vocabulary
 // normalization; the underlying meaning does not change.
-const LEGACY_ALIASES = { superseded: 'superseded', 'verified/high': 'verified_high', open: 'open', rejected: 'rejected', 'ocr-flagged': 'ocr_flagged', unverified: 'unverified' };
+const LEGACY_ALIASES = {
+  // legacy ad hoc casings (2026-08-17/08-20 import), mapped to canonical form
+  superseded: 'superseded', 'verified/high': 'verified_high', open: 'open',
+  rejected: 'rejected', 'ocr-flagged': 'ocr_flagged', unverified: 'unverified',
+  // canonical values must also self-map — without this, a SECOND run of
+  // this script treats an already-migrated 'verified_high' as unrecognized
+  // (not in the legacy-casing list above), falls through to re-deriving
+  // from notes, and silently drops any row whose confidence was set
+  // authoritatively with no independently-matching notes text (e.g.
+  // "under (sheet/slab/covering)" — see this file's header). Caught via
+  // dry run before it could apply; the bug never shipped to committed
+  // data, but this fix is required before any future re-run.
+  verified_high: 'verified_high', ocr_flagged: 'ocr_flagged',
+};
 
 function normalizeLegacy(value) {
   if (value === undefined || value === null) return undefined;
