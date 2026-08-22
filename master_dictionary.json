@@ -797,7 +797,8 @@
     "english": "stand",
     "garo": "Chadenga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)"
   },
   {
     "english": "cry",
@@ -1284,7 +1285,8 @@
     "english": "thank you",
     "garo": "Mittela.",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "what is your name?",
@@ -1297,7 +1299,8 @@
     "english": "my name is...",
     "garo": "Angni bimungara...",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "where are you going?",
@@ -1316,13 +1319,15 @@
     "english": "good morning",
     "garo": "Pringnam.",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "good night",
     "garo": "Walnam.",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "yes",
@@ -1340,7 +1345,8 @@
     "english": "please",
     "garo": "Ka·sapae.",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "i don't know",
@@ -1418,7 +1424,8 @@
     "english": "bland / tasteless",
     "garo": "Chibroka",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)"
   },
   {
     "english": "smelly / stinky",
@@ -2427,8 +2434,8 @@
     "english": "outside",
     "garo": "A·pal",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'outside' has VERIFIED/HIGH form(s) ['bai·re', 'ha·gat·e']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-089 (2026-08-21 relay): un-superseded on direct native reconfirmation. Thangseng gives A·pal as the wider general sense of 'outside', with an explicit collocation caveat: 'A·pal + re·a' idiomatically means 'to defecate' — that collocation should not be used/translated literally as a generic 'go outside'. bai·re/ha·gat·e (existing VERIFIED/HIGH) and a'palo (locative, existing) remain valid coexisting forms, not superseded by this.",
+    "confidence": "verified_high"
   },
   {
     "english": "far",
@@ -2556,8 +2563,8 @@
     "english": "king",
     "garo": "Raja",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'king' has VERIFIED/HIGH form(s) ['Books, paper, leaves, flat', 'thin objects']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-089 (2026-08-21, Project Owner + Thangseng direct confirmation, relayed via Claude C's THANGSENG_RELAY_TABLE_20260821B.md). Closes the live translate('king') bug: this row was wrongly SUPERSEDED while two misimported classifier-metadata rows outranked it. Claude B's structural pickPrimary fix (excluding classifier-scope rows from candidacy) is still needed as the durable engineering fix.",
+    "confidence": "verified_high"
   },
   {
     "english": "chief",
@@ -2609,7 +2616,8 @@
     "english": "thief",
     "garo": "Cha·u",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch)"
   },
   {
     "english": "guest",
@@ -3699,7 +3707,8 @@
     "english": "when",
     "garo": "Basako",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch)"
   },
   {
     "english": "where",
@@ -4448,7 +4457,8 @@
     "english": "you (singular)",
     "garo": "Na·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session) — direct confirmation: 'you is Na·a'."
   },
   {
     "english": "you (object)",
@@ -4739,37 +4749,43 @@
     "english": "excuse me",
     "garo": "Angko kema·watbo.",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "sorry",
     "garo": "Kema·bi·a.",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session) (full word form)"
   },
   {
     "english": "good afternoon",
     "garo": "Salnam.",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "good evening",
     "garo": "Attamnam.",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "goodbye",
     "garo": "Re·ang·na / Nam·en·dongbo.",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): differs from Thangseng's current answer; also clarified Garo has no dedicated 'goodbye' word, these are common parting expressions, not a fixed lexical item. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "see you again",
     "garo": "Pil·tai·grongna",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "welcome",
@@ -4787,7 +4803,7 @@
     "english": "sit down",
     "garo": "Asongbo",
     "category": "general",
-    "notes": "VERIFIED/HIGH (compositional, 2026-08-20, Claude A) — a·song (root) + -bo (imperative suffix), matching the independently native-confirmed VERIFIED/HIGH 'sit' root 'a·song·a' (NV-080). -bo imperative suffix pattern cross-checked against 'give me water'='Ang·na chi on·bo'. Resolved corpus-internal, no native relay needed — see relay batch audit, docs/THANGSENG_NATIVE_VALIDATION.md.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)",
     "confidence": "verified_high"
   },
   {
@@ -5179,7 +5195,8 @@
     "english": "thank you very much",
     "garo": "Mittela dakpile",
     "category": "greetings",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): uncited; native gives the opposite word order 'dakpile mittela'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "i am happy",
@@ -5192,7 +5209,8 @@
     "english": "i am sad",
     "garo": "Anga dukonga",
     "category": "emotions",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): uncited; native confirms the same word with a space, 'Anga duk ong·a' — orthography only. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "i am angry",
@@ -5612,7 +5630,8 @@
     "english": "teach",
     "garo": "Sikie on·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) ('Skie on·a' this relay treated as the same word, spelling variant only.)"
   },
   {
     "english": "traditional festival",
@@ -6112,25 +6131,29 @@
     "english": "open your book",
     "garo": "Ki·tapko oa·bo",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): same construction, native gives the contracted form 'Ki·tapko obo'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "close your book",
     "garo": "Ki·tapko chip·a·bo",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): same construction, native gives the contracted form 'Ki·tapko chip·bo'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "listen carefully",
     "garo": "Chakchik knachik·bo",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): Thangseng explicitly and completely rejected this construction in favor of 'name knatimbo'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "raise your hand",
     "garo": "Jakko bil·bo",
     "category": "body",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): Thangseng explicitly and completely rejected this in favor of 'Jakko songdobo'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "answer the question",
@@ -6148,7 +6171,8 @@
     "english": "class is over",
     "garo": "Klas chu·a",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): Thangseng explicitly and completely rejected this in favor of 'Klas matchotaha'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "homework",
@@ -6202,7 +6226,8 @@
     "english": "you did well",
     "garo": "Na·a nama daka",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): uncited; native confirms the past-tense-suffixed form 'Na·a nama dakaha'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "don't give up",
@@ -6364,7 +6389,8 @@
     "english": "sit (command)",
     "garo": "Asongbo",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)"
   },
   {
     "english": "walk (command)",
@@ -6679,7 +6705,8 @@
     "english": "which",
     "garo": "badia / badiya",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch)"
   },
   {
     "english": "which way",
@@ -7077,13 +7104,15 @@
     "english": "i ate",
     "garo": "Anga cha·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): uncited; native confirms the tense-suffixed form 'Anga cha·aha'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "i drank",
     "garo": "Anga ringa·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): uncited; native confirms the fuller form 'Anga ringaha'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "i came",
@@ -7150,7 +7179,8 @@
     "english": "may i sit?",
     "garo": "Anga asongna mangengma?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) (also phrased 'May I sit down?' this batch — same value, not duplicated as a separate key.)"
   },
   {
     "english": "is he coming?",
@@ -7376,7 +7406,8 @@
     "english": "i ate rice",
     "garo": "Anga mi cha·a",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): uncited; native confirms the tense-suffixed form 'Anga mi cha·aha'. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "he is eating",
@@ -19843,8 +19874,8 @@
     "pos": null,
     "category": "education",
     "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)",
+    "confidence": "verified_high"
   },
   {
     "english": "reading",
@@ -19870,8 +19901,8 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)",
+    "confidence": "verified_high"
   },
   {
     "english": "their",
@@ -19986,7 +20017,8 @@
     "english": "sitting",
     "garo": "Asong·enga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)"
   },
   {
     "english": "1",
@@ -21608,7 +21640,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH — NV-089 (2026-08-21 relay): Thangseng independently volunteered 'mongma' when asked for 'elephant' with no prompt, designating this the native-preferred primary among the existing Mong/ha·ti/mong·ma VERIFIED tie. Mong and ha·ti remain valid VERIFIED/HIGH variants, not superseded.",
     "confidence": "verified_high"
   },
   {
@@ -22604,8 +22636,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): misimported classifier-metadata row, not a real translation of 'king'; wrongly tagged variant/VERIFIED/HIGH, outranking the correct 'Raja' entry. See docs/CLAUDE_C_AUDIT_20260821.md §1. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md.",
+    "confidence": "superseded"
   },
   {
     "english": "King",
@@ -22613,8 +22645,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): misimported classifier-metadata row, not a real translation of 'king'; wrongly tagged variant/VERIFIED/HIGH, outranking the correct 'Raja' entry. See docs/CLAUDE_C_AUDIT_20260821.md §1. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md.",
+    "confidence": "superseded"
   },
   {
     "english": "Knife",
@@ -28436,8 +28468,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "born",
@@ -28868,8 +28900,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "bring",
@@ -30263,8 +30295,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "Christmas",
@@ -30758,8 +30790,8 @@
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "cold",
@@ -32036,8 +32068,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:mat-a / rat-a",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "cut",
@@ -32324,8 +32356,8 @@
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): unrelated form; native gives a person/body sense split instead ('sigimin' for a person, 'Manggisi' for a body). Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md.",
+    "confidence": "superseded"
   },
   {
     "english": "dead body",
@@ -33422,8 +33454,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): unrelated form; native gives a water/things sense split instead ('tipjok' for water, 'ran·aha' for things). Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md.",
+    "confidence": "superseded"
   },
   {
     "english": "dried eel",
@@ -37409,8 +37441,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:gek-gek / jro-a",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "hot",
@@ -38885,8 +38917,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:si-sa",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "lead",
@@ -39668,8 +39700,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "loin cloth",
@@ -42539,8 +42571,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "perspiration",
@@ -45202,8 +45234,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "roof of mouth",
@@ -45859,8 +45891,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "seat",
@@ -47263,8 +47295,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "smoke",
@@ -47587,8 +47619,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) 'git' (this relay) treated as the same word, spelling variant only.",
+    "confidence": "verified_high"
   },
   {
     "english": "soot",
@@ -52159,8 +52191,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ku-a",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "well",
@@ -52735,8 +52767,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "confidence": "verified_high"
   },
   {
     "english": "yearn",
@@ -52988,7 +53020,7 @@
     "english": "you",
     "garo": "Nang",
     "category": "general",
-    "confidence": "unverified"
+    "notes": "FLAGGED, not superseded — 2026-08-22 direct relay confirmed 'you is Na·a' (see 'you (singular)'=Na·a, now VERIFIED/HIGH). This entry's 'Nang' was not declared wrong, but Na·a is now the confirmed plain subject pronoun 'you' — Nang recurs elsewhere only in possessive/case-marked forms (e.g. 'Nang·ni bimung' = 'your name'). Likely a case-form distinction (subject vs. possessive/oblique stem), not a contradiction — needs an explicit paradigm confirmation before this is resolved as a rule. Not deleted per citation discipline."
   },
   {
     "english": "understanding",
@@ -63068,7 +63100,8 @@
     "garo": "Gotata",
     "category": null,
     "pos": "v.",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): same word, orthography drift confirmed as 'goata' by this relay. Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md."
   },
   {
     "english": "to stone.",
@@ -76312,7 +76345,7 @@
     "pos": null,
     "category": "general",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — imperative sense, re-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part A). Matches the existing NV-015/RULE-029 finding: Da·mo and Sengbo (the -bo imperative form of senga) are the imperative 'Wait!', while declarative 'to wait' is senga (see separate 'wait'/'senga' row, and 'Wait.'/'Damo.' row). Spelled here with no space around the slash ('Damo/Sengbo') to match prepare-data.js's existing grammarOverrides constant exactly -- see tests/unit/translationEngine.test.js:1117 regression test, which locks this key to the pre-existing engine value on purpose (Claude B's pickPrimary-precedence fix, RUNTIME_ENGINEERING_AUDIT_20260803.md). This row closes the Check E citation gap without changing runtime output or tripping that guard.",
+    "notes": "VERIFIED/HIGH — imperative sense, re-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part A). Matches the existing NV-015/RULE-029 finding: Da·mo and Sengbo (the -bo imperative form of senga) are the imperative 'Wait!', while declarative 'to wait' is senga (see separate 'wait'/'senga' row, and 'Wait.'/'Damo.' row). Spelled here with no space around the slash ('Damo/Sengbo') to match prepare-data.js's existing grammarOverrides constant exactly -- see tests/unit/translationEngine.test.js:1117 regression test, which locks this key to the pre-existing engine value on purpose (Claude B's pickPrimary-precedence fix, RUNTIME_ENGINEERING_AUDIT_20260803.md). This row closes the Check E citation gap without changing runtime output or tripping that guard. Reconfirmed 2026-08-22 direct relay ('sengbo / Da·mo, an expression').",
     "confidence": "verified_high"
   },
   {
@@ -76372,6 +76405,405 @@
     "garo": "ang·ni ba·ba",
     "category": "family",
     "notes": "VERIFIED/HIGH (compositional, 2026-08-20, Claude A) — Angni/ang·ni (my, possessive prefix, productive via POSSESSIVES/sov-assembly, confirmed working for 'my dog'=NV-083, 'my house'=NV-088) + ba·ba (father, VERIFIED/HIGH NV-080). Shipping override previously read 'ang·ni baba' (missing raka dot on ba·ba) — corrected to match the canonical NV-080 spelling. Resolved corpus-internal, no native relay needed — see relay batch audit, docs/THANGSENG_NATIVE_VALIDATION.md.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "a tree",
+    "garo": "Bol pangsa",
+    "category": "nature",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "what is your name",
+    "garo": "Nang·ni bimung mai?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (alt: Nang·ni bimungara maia?)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "where are you from",
+    "garo": "Na·a bano·ni?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "where is the market",
+    "garo": "Bajal bano?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "why did you come",
+    "garo": "Na·a maini gimin re·baa?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (alt: Na·a maina re·baa?)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "home",
+    "garo": "Nok",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "hurry",
+    "garo": "Tarkbo!",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "self",
+    "garo": "an·tang",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "open the lock",
+    "garo": "Chabi kulibo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — scope note: kulia is used specifically for locks; oa is preferred for doors; khulibo was explicitly rejected for books/doors. Not yet reconciled with existing plain \"oa\"/\"open\" entries — flagged for a dedicated open-verb scope rule.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "coins",
+    "garo": "tangka bisilrang",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (plural of the confirmed singular tangka·bisil; existing poi·sa/pil· candidates left untouched, native did not address them)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "back",
+    "garo": "kang·kare",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — coexists with the already-VERIFIED/HIGH 'jang·gil' (table's claim of 'no repo entry' for back was stale; jang·gil already exists). Flagged: kang·kare also covers 'waist' below — possible dual-gloss single lexeme, not yet consolidated.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "waist",
+    "garo": "kang·kare",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — same Garo form as 'back' above; existing 'waist'=ko·mor (UNVERIFIED/HIGH) left untouched pending a dedicated body-region sense-scope review.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i have two children",
+    "garo": "Ang·o bi·sa sak·gni donga",
+    "category": "family",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — supplies the live VERIFIED replacement for the 2026-08-07 SUPERSEDED 'Ang·o gini de donga' entry, which previously had no cited live successor.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "film",
+    "garo": "film",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (direct loanword) — closes the film/movie vocabulary gap; movie itself remains unaddressed.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "listen carefully",
+    "garo": "name knatimbo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "raise your hand",
+    "garo": "Jakko songdobo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "class is over",
+    "garo": "Klas matchotaha",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dead (person)",
+    "garo": "sigimin",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dead (body)",
+    "garo": "Manggisi",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dried (water)",
+    "garo": "tipjok",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dried (things)",
+    "garo": "ran·aha",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to spread (physical/opening sense)",
+    "garo": "barama",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to spread (gossip/message sense)",
+    "garo": "gipata",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "daily",
+    "garo": "Salanti",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "deceive",
+    "garo": "Tol·napa",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "few",
+    "garo": "On·titi",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "gossip",
+    "garo": "aganjojoa",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (simplified spelling)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "help (noun)",
+    "garo": "dakchakani",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "help (verb)",
+    "garo": "dakchaka",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "luck",
+    "garo": "rasong",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "newspaper",
+    "garo": "janera",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "soul",
+    "garo": "Gisik",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "curry",
+    "garo": "bi·jak",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — existing ja·ba (UNVERIFIED/HIGH) left untouched, may be a distinct curry-type word.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "land",
+    "garo": "a·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — existing ha·/ha·ga left untouched, may be a distinct register/sense (soil vs. territory).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "someone",
+    "garo": "Saoba",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — existing Saksa left untouched, may be a distinct sense (\"someone\" vs \"one person\").",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "wash",
+    "garo": "Su·sranga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — flagged, not asserted as a correction: likely the same word as existing 'Su·srong·a' (orthography drift), but per the relay table's own caution this needs Claude A confirmation rather than an assumed supersession; both retained.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "stop",
+    "garo": "dontonga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — Tridip's guess 'Sengbo' was explicitly rejected (Sengbo confirmed elsewhere as 'wait', consistent with project history). Existing repo value 'dondip' is a third distinct form, not explicitly rejected — left untouched pending reconciliation.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to throw",
+    "garo": "goata",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "you did well",
+    "garo": "Na·a nama dakaha",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thank you very much",
+    "garo": "dakpile mittela",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i am sad",
+    "garo": "Anga duk ong·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i ate",
+    "garo": "Anga cha·aha",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i ate rice",
+    "garo": "Anga mi cha·aha",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i drank",
+    "garo": "Anga ringaha",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "goodbye",
+    "garo": "Re·angengjok / Name dongbo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (no dedicated word — common parting expressions, per Thangseng) Reconfirmed 2026-08-22 direct relay.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "open your book",
+    "garo": "Ki·tapko obo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "close your book",
+    "garo": "Ki·tapko chip·bo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sorry (short greeting)",
+    "garo": "Kema",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session) — shorter phrase-book form of 'sorry', distinct register from the full 'Kema·bi·a.' word form; both valid, not a conflict.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "very (intensifier, alt)",
+    "garo": "namen",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — coexists with the already-VERIFIED 'indakpile' (Project Owner confirmation 2026-07-23); 'namen' recurs constantly elsewhere in the corpus as an intensifier (e.g. 'dangerous'='namen kenbegnigipa'), consistent with being a genuine second valid intensifier, not a replacement.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "walking (contracted)",
+    "garo": "re·enga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — coexists with existing uncited 'Re·ang·enga' (fuller form); likely same root, contracted, not a contradiction.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "why (bare)",
+    "garo": "Maina",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — coexists with existing uncited 'Maini·gimin' (fuller form); likely same root, consistent with this same relay's own 'why did you come' answer also using 'maini gimin' — related, not contradictory.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "yes (alt)",
+    "garo": "Am",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — FLAGGED: directly contradicts the existing VERIFIED 'yes'='Oe' entry (also used elsewhere, e.g. 'of course!'='Oe, bebe!'). Not superseding Oe on this alone — both may be genuine register/dialect variants, but this needs an explicit Claude A/Project Owner reconciliation before either is treated as primary.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sit (alt)",
+    "garo": "aonga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — FLAGGED: directly contradicts NV-080's VERIFIED 'sit'='a·song·a', resent this batch without new resolving context. Not superseded — 'Sit (command)'/'sitting' below are confirmed asong- root forms, reinforcing a·song·a as the dominant live form. Needs explicit reconciliation (register? different sense?) before either is treated as sole primary.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "smelly (homonym)",
+    "garo": "senga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — same word/spelling as the already-VERIFIED 'wait'='senga' (documented homonym pair, see NV-015). Existing 'smelly'='kal·ting·a' (UNVERIFIED) is a different, unrelated word — left untouched, not superseded.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "stay (alt)",
+    "garo": "donga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — FLAGGED: part of the same live/stay/sit consolidation question raised in NV-089 (this exact word 'donga' recurs across all three senses in the same relay) — needs one consolidated Claude A judgment call, not a standalone fix. Existing 'stay'='dongchak·a'/'dongdang·a' (UNVERIFIED) left untouched.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "tell (alt)",
+    "garo": "agana",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — possibly the correct simplification of the existing UNVERIFIED 'a·gan·e ron·a'/'in·a', per this same relay's own pattern (cf. 'aganjojoa' simplification for 'gossip'). Added as a new coexisting VERIFIED form, not superseding the existing candidates.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "yes (alt 2)",
+    "garo": "Hoe",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — third candidate for 'yes', alongside VERIFIED 'Oe' and the flagged 'yes (alt)'='Am'. 'Hoe' already appears in existing sentence-level entries ('yes, of course.'='Hoe mangenva.', 'yes, i love you.'='Hoe, ang·a nangna kasa·a.') — this is the first direct standalone confirmation of it as 'yes' itself. All three ('Oe'/'Am'/'Hoe') now need one consolidated reconciliation — register/dialect variants, or a real correction — not resolved here.",
     "confidence": "verified_high"
   }
 ]
