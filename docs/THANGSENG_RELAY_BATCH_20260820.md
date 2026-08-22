@@ -5,8 +5,10 @@ Source: `docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md`, section 4
 currently ships a `corrections.json`/`phrase_maps.js` override that has never
 been checked against `master_dictionary.json`, because master has no
 VERIFIED/HIGH row for that exact key at all. Not a tie-break, not a fix —
-genuinely never confirmed. 150 unique keys (some appeared in both source
-files with the same value; deduplicated here).
+genuinely never confirmed. 149 unique keys (some appeared in both source
+files with the same value; deduplicated here). (Originally 150 — item 28,
+"i understand," removed 2026-08-22: already resolved via NV-087 before
+this batch was sent, no longer an open question.)
 
 Status: DRAFTED, not yet sent. Relay via Tridip -> Thangseng (WhatsApp),
 per standing channel. For each item: is the current Garo form correct for
@@ -110,7 +112,7 @@ anything to the dictionary.
 90. yes: **Am** — correct?
 91. you: **Na·a** — correct?
 
-## Part B — Phrases / sentences (59)
+## Part B — Phrases / sentences (58)
 
 1. "a tree": **Bol pangsa** — correct?
 2. "be happy": **kusi ong·bo** — correct?
@@ -139,7 +141,6 @@ anything to the dictionary.
 25. "i drank": **Anga ringaha** — correct?
 26. "i have a pen": **Ango pen donga** — correct?
 27. "i have two children": **Ang·o bi·sa sak·gni donga** — correct?
-28. "i understand": **Anga ma·sia** — correct?
 29. "i want to come": **Anga re·ba·na sikenga** — correct?
 30. "i want to drink": **Anga ringna sikenga** — correct?
 31. "i want to eat": **Anga cha·na sikenga** — correct?
