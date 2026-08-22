@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { finalizeDictionary } from '../../prepare-data.js';
+import { finalizeDictionary, pickPrimaryNoVerifiedCandidate } from '../../prepare-data.js';
 
 // 2026-08-14, Claude B — regression tests for the SUPERSEDED-only-candidate
 // fix (per Claude C's audit §3, the "twenty students" case: master
@@ -90,4 +90,40 @@ test('finalizeDictionary: supersededByKey defaults to {} when omitted (back-comp
   };
   const { finalized } = finalizeDictionary(mergedValues, {});
   assert.equal(finalized['k'], 'v');
+});
+
+// 2026-08-22, Claude B — AI-001 subclass (b) enumeration (docs/
+// CLAUDE_B_ENGINEERING_GOVERNANCE.md §1/§4): pickPrimaryNoVerifiedCandidate
+// is a module-level collector populated as a side effect of
+// finalizeDictionary, so these tests check for the presence of the
+// expected key rather than exact array equality — the array accumulates
+// across every finalizeDictionary call in this process, same shared-state
+// shape as pickPrimaryVerifiedTies already has (untested before this).
+
+test('finalizeDictionary: a key with zero verified candidates anywhere is recorded in pickPrimaryNoVerifiedCandidate', () => {
+  const mergedValues = {
+    'no_verified_test_key_20260822': [
+      { v: 'Kam', isVariant: false, isVerified: false, isVariantVerified: false, isWeak: true, rawKey: 'work', source: 0 },
+      { v: 'ga·a', isVariant: true, isVerified: false, isVariantVerified: false, isWeak: false, rawKey: 'Work', source: 0 },
+    ],
+  };
+  const { finalized } = finalizeDictionary(mergedValues, {});
+  const entry = pickPrimaryNoVerifiedCandidate.find(e => e.key === 'no_verified_test_key_20260822');
+  assert.ok(entry, 'expected key to be recorded in pickPrimaryNoVerifiedCandidate');
+  assert.equal(entry.chosen, finalized['no_verified_test_key_20260822']);
+  assert.equal(entry.candidates.length, 2);
+  assert.ok(entry.candidates.some(c => c.v === 'Kam' && c.isWeak === true));
+});
+
+test('finalizeDictionary: a key with a VERIFIED/HIGH candidate is NOT recorded in pickPrimaryNoVerifiedCandidate', () => {
+  const mergedValues = {
+    'has_verified_test_key_20260822': [
+      { v: 'wrongvalue', isVariant: false, isVerified: false, isVariantVerified: false, isWeak: false, rawKey: 'x', source: 0 },
+      { v: 'correctvalue', isVariant: false, isVerified: true, isVariantVerified: false, isWeak: false, rawKey: 'X', source: 0 },
+    ],
+  };
+  const { finalized } = finalizeDictionary(mergedValues, {});
+  assert.equal(finalized['has_verified_test_key_20260822'], 'correctvalue');
+  const entry = pickPrimaryNoVerifiedCandidate.find(e => e.key === 'has_verified_test_key_20260822');
+  assert.equal(entry, undefined, 'a key with a genuine VERIFIED candidate must not appear in the no-verified-candidate report');
 });
