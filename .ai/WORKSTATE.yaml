@@ -165,6 +165,28 @@ repository:
     swept in the next session before being called fully resolved.'
 claude_a:
   status: active
+  operating_governance: '2026-08-22 (Claude A, Project Owner-directed): established
+    `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` as MANDATORY reading for every future
+    Claude A session, per `.ai/SESSION_BOOTSTRAP.md`''s updated Claude A role
+    bullet and top-of-file pointer. Converts the same-day Role Self-Audit
+    (`docs/CLAUDE_A_ROLE_SELF_AUDIT_20260822.md`, ROLE HEALTH: NEEDS CORRECTION)
+    into binding rules: mandatory A/B/C/D/E classification before any relay or
+    fix; native evidence required only for genuinely unresolved questions, not
+    as a default; a DERIVED confidence tag for rule-derived (not separately
+    native-confirmed) entries; explicit classifier/number derivation sequence
+    (rule -> representative spot-check -> systematic derivation -> engineering
+    propagation -> QA) intended to resolve the 410-entry classifier backlog in
+    a FUTURE session, NOT this one -- no dictionary/runtime data touched this
+    session, governance/documentation only; mandatory duplicate-representation
+    check with an explicit PASS/remaining-gap statement per closure; mandatory
+    Runtime Handoff section (extended format) or explicit "Runtime Handoff:
+    None."; mandatory POS/sense default statement whenever superseding a
+    conflicting row (the "answer" tie is the named cautionary example); a
+    14-step mandatory session workflow; a rework-prevention pre-close
+    checklist; and performance measures explicitly de-emphasizing raw NV/
+    dictionary-entry counts in favor of rule-generalization and reduced
+    rework. Not a replacement for `.ai/SESSION_BOOTSTRAP.md` Rules 1-12 --
+    sits on top of them as the linguistic-reasoning-specific layer.'
   next_action: '2026-08-20c (Claude A, session close): NV-086 (did you go to market), NV-087 (Anti/week
     framework, 4 of 5 questions closed: week=Anti, a week=Antisa, two weeks=Antigni, next week=Mikkang
     anti, antio confirmed same root via -o locative; three weeks NOT answered, stays open; also fixed

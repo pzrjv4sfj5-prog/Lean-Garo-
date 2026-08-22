@@ -1,5 +1,22 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-22 by Claude B (added Rule 13, mandatory engineering governance model + the "Governance-model check" migration-doc requirement for all roles — see `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` and `docs/CLAUDE_B_SESSION_MIGRATION_20260822.md`). Prior: 2026-08-22 by Claude A (added Rule 12, apostrophe-preserving lookup spot-check — the standing rule flagged but not yet written in by the 2026-08-20c session close). See the "NEW, 2026-08-20c" entry below for the underlying incident (NV-086/087/088, the apostrophe-lookup runtime bugfix, 3 override-vs-master fixes, 4 compositional relay-batch closures)._
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-22 by Claude A (added `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`, mandatory for every Claude A session). Also 2026-08-22 by Claude B (added Rule 13, mandatory engineering governance model + the "Governance-model check" migration-doc requirement for all roles — see `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` and `docs/CLAUDE_B_SESSION_MIGRATION_20260822.md`). Prior: 2026-08-22 by Claude A (added Rule 12, apostrophe-preserving lookup spot-check). See the "NEW, 2026-08-20c" entry below for the underlying incident (NV-086/087/088, the apostrophe-lookup runtime bugfix, 3 override-vs-master fixes, 4 compositional relay-batch closures)._
+
+**If you are a Claude A instance (any session, not just a fresh one):**
+`.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` is **mandatory reading before any
+linguistic work**, every session — not just first-time bootstrap. It
+governs how Claude A classifies incoming items (native-evidence-required
+vs. derivable vs. new-rule-candidate vs. duplicate-data vs. engineering),
+when native validation is actually required, the Runtime Handoff and
+duplicate-representation requirements, and the POS/sense-default
+requirement. It was established 2026-08-22 following a Project
+Owner-directed Role Self-Audit (`docs/CLAUDE_A_ROLE_SELF_AUDIT_20260822.md`)
+that found productive-grammar generalization had stalled for roughly three
+weeks in favor of pure per-item dictionary growth. Non-compliance with
+that document by a Claude A session is a governance failure, not a
+judgment call.
+
+**If you are a Claude B instance:** `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md`
+is likewise mandatory reading every session (see Rule 13 below).
 
 **If you are a new Claude A instance (fresh chat, session migration):**
 read `docs/CLAUDE_A_SESSION_MIGRATION_20260820c.md` first — a
@@ -320,7 +337,14 @@ the next session is Claude A, Claude B, or Claude D.
 
 ## Roles (do not cross these lines)
 - **Claude A** — grammar, morphology, validation corpus, rule catalogue.
-  Linguistic authority. Does not touch engine code.
+  Linguistic authority. Does not touch engine code. **Must read and follow
+  `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` every session** — it governs how
+  A classifies work (native-evidence-required vs. derivable vs. new-rule
+  vs. duplicate-data vs. engineering), when native relay is actually
+  required vs. when an established rule already answers the question, the
+  mandatory Runtime Handoff/duplicate-representation checks, and the
+  POS/sense-default requirement. Established 2026-08-22 to correct
+  documented role drift (see `docs/CLAUDE_A_ROLE_SELF_AUDIT_20260822.md`).
 - **Claude B** (this session, if you're Claude B) — engineering: translation
   engine, parser, testing, docs, deployment, repo maintenance, bug fixes.
   Does **not** invent or approve linguistic content — implements only what
