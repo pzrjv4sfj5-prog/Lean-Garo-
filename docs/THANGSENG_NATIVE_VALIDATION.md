@@ -4952,3 +4952,27 @@ it per §5 self-monitoring.
 
 Full source-of-truth: `docs/THANGSENG_RELAY_TABLE_20260821B.md` (every
 row's disposition). This entry indexes it, does not duplicate it.
+
+## NV-089b (2026-08-22, direct Project Owner relay, same session as NV-089)
+
+Direct reconfirmation (not via the relay table doc): **"you" = `Na·a`**,
+resolving NV-089's flagged you/Nang question — the plain subject pronoun
+is `Na·a` (matches the already-present, now-promoted `"you (singular)"`
+entry). `"you"="Nang"` is NOT superseded — flagged instead as likely a
+possessive/oblique case-form (cf. `Nang·ni bimung` = "your name"), still
+needing an explicit paradigm confirmation before this becomes a rule.
+
+Also reconfirmed and cited (previously-correct, uncited phrase-book
+entries, promoted to VERIFIED/HIGH on this direct relay): my name is...,
+thank you, please, excuse me, good morning/afternoon/evening/night, see
+you again, and "sorry" (full word form `Kema·bi·a.`) plus a new distinct
+short-greeting form `"sorry (short greeting)"="Kema"` (register variant,
+not a conflict — avoids an ambiguous duplicate under the same `sorry`
+key). `goodbye` (`Re·angengjok / Name dongbo`, already VERIFIED/HIGH
+from NV-089) reconfirmed.
+
+Still not addressed this session: "answer the question" (tied to the
+open `answer` pickPrimary engineering tie-break, NV-077) and "i have a
+question" (tied to the flagged Angna/Ango pattern) — deliberately held,
+per the Project Owner's own confirmation these are separate from this
+batch.

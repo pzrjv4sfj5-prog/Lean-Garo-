@@ -1105,7 +1105,9 @@
   {
     "english": "thank you",
     "garo": "Mittela.",
-    "category": "greetings"
+    "category": "greetings",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "what is your name?",
@@ -1116,7 +1118,9 @@
   {
     "english": "my name is...",
     "garo": "Angni bimungara...",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "where are you going?",
@@ -1133,12 +1137,16 @@
   {
     "english": "good morning",
     "garo": "Pringnam.",
-    "category": "greetings"
+    "category": "greetings",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "good night",
     "garo": "Walnam.",
-    "category": "time"
+    "category": "time",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "yes",
@@ -1153,7 +1161,9 @@
   {
     "english": "please",
     "garo": "Ka·sapae.",
-    "category": "greetings"
+    "category": "greetings",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "i don't know",
@@ -3869,7 +3879,9 @@
   {
     "english": "you (singular)",
     "garo": "Na·a",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session) — direct confirmation: 'you is Na·a'."
   },
   {
     "english": "you (object)",
@@ -4112,22 +4124,30 @@
   {
     "english": "excuse me",
     "garo": "Angko kema·watbo.",
-    "category": "greetings"
+    "category": "greetings",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "sorry",
     "garo": "Kema·bi·a.",
-    "category": "greetings"
+    "category": "greetings",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session) (full word form)"
   },
   {
     "english": "good afternoon",
     "garo": "Salnam.",
-    "category": "greetings"
+    "category": "greetings",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "good evening",
     "garo": "Attamnam.",
-    "category": "greetings"
+    "category": "greetings",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "goodbye",
@@ -4139,7 +4159,9 @@
   {
     "english": "see you again",
     "garo": "Pil·tai·grongna",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session)"
   },
   {
     "english": "welcome",
@@ -46830,7 +46852,8 @@
   {
     "english": "you",
     "garo": "Nang",
-    "category": "general"
+    "category": "general",
+    "notes": "FLAGGED, not superseded — 2026-08-22 direct relay confirmed 'you is Na·a' (see 'you (singular)'=Na·a, now VERIFIED/HIGH). This entry's 'Nang' was not declared wrong, but Na·a is now the confirmed plain subject pronoun 'you' — Nang recurs elsewhere only in possessive/case-marked forms (e.g. 'Nang·ni bimung' = 'your name'). Likely a case-form distinction (subject vs. possessive/oblique stem), not a contradiction — needs an explicit paradigm confirmation before this is resolved as a rule. Not deleted per citation discipline."
   },
   {
     "english": "understanding",
@@ -67718,7 +67741,7 @@
     "english": "goodbye",
     "garo": "Re·angengjok / Name dongbo",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (no dedicated word — common parting expressions, per Thangseng)",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (no dedicated word — common parting expressions, per Thangseng) Reconfirmed 2026-08-22 direct relay.",
     "confidence": "VERIFIED/HIGH"
   },
   {
@@ -67733,6 +67756,13 @@
     "garo": "Ki·tapko chip·bo",
     "category": "general",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md)",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "sorry (short greeting)",
+    "garo": "Kema",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session) — shorter phrase-book form of 'sorry', distinct register from the full 'Kema·bi·a.' word form; both valid, not a conflict.",
     "confidence": "VERIFIED/HIGH"
   }
 ]
