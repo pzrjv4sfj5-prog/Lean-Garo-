@@ -1,5 +1,5 @@
 repository:
-  head: 9b1364e
+  head: aead387
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -7,19 +7,19 @@ repository:
     to review everything since this checkpoint; continue from actual repo state. Do NOT create follow-up
     commits solely to update `head` to match itself - that is a contradiction (see prior "fix stale head
     hash" commits 9558ea6 etc., now superseded by this convention).'
-  last_updated: '2026-08-22 (Claude B): ran a Project-Owner-directed Claude B Role
-    Self-Audit (chat), independently re-verifying claims rather than trusting docs
-    (npm test 218/218 confirmed green; live translate() calls confirmed king/answer/film
-    still exhibit the reported defects). Finding: pickPrimary/override-precedence
-    ambiguity is a recurring defect class patched narrowly >=6 times since 2026-08-04
-    (wait, salt, smile, 9-key no-verified-candidate defect, answer, king) without the
-    class itself ever being closed. Per Owner direction, converted the finding into a
-    mandatory governance model: docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md (new) +
-    .ai/SESSION_BOOTSTRAP.md Rule 13 (new pointer rule). Documentation-only commit,
-    no engine/data changes -- king/answer/film themselves remain open, not touched
-    this session (that is now AI-001''s scope, see governance doc). See claude_c
-    entry below for the corresponding class-closure verification duty added to C''s
-    role.'
+  last_updated: '2026-08-22 (Claude B, session close/migration): after the Role
+    Self-Audit + governance-model commit (aead387, see prior entry), Project Owner
+    directed migration close. Added one more standing rule this session (not yet
+    reflected in the prior entry): every migration document from any role must
+    include a "Governance-model check" line (SESSION_BOOTSTRAP.md Rule 13''s new
+    final bullet + Rule 6a pointer) -- states whether the session touched anything
+    in docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md S4, and if so, whether the S2/S3/S5
+    obligations were actually followed, not just asserted. Session closed clean:
+    HEAD verified == origin/main via git ls-remote (independent of local git state,
+    following the 2026-08-21 session''s lesson that local git alone was once
+    insufficient), working tree clean. Documentation-only session throughout -- no
+    engine/data/test changes, so no build/test rerun was needed or performed. Full
+    detail: docs/CLAUDE_B_SESSION_MIGRATION_20260822.md.'
   last_updated_prior_20260820c: '2026-08-20c (Claude A, session close): updated WORKSTATE.yaml + SESSION_BOOTSTRAP.md
     to point at docs/CLAUDE_A_SESSION_MIGRATION_20260820c.md. Session closed clean: HEAD 56cbae0 (migration
     doc commit) verified == origin/main, working tree clean, gate green (8132 entries, 218/218 unit tests,
@@ -1440,7 +1440,23 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-22 (Claude B): Project-Owner-directed Role Self-Audit (see
+  next_action: '2026-08-22 (Claude B, session close/migration): see
+    docs/CLAUDE_B_SESSION_MIGRATION_20260822.md for full detail. This session (a)
+    ran the Role Self-Audit and shipped docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md +
+    SESSION_BOOTSTRAP.md Rule 13 (commit aead387, prior entry below has full detail),
+    then (b) at Owner''s migration instruction, added one more standing rule --
+    every migration doc from any role must carry a one-line "Governance-model check"
+    (Rule 13''s final bullet + new Rule 6a) -- and closed the session. No engine/data
+    work done or attempted. Governance-model check for this session itself: touched
+    S4 (AI-001) only by creating the table, not by fixing or patching anything in it
+    -- no override added, no investigation-match check applicable.
+    Next Recommended Tasks: (a) docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
+    (prepare-data.js auto-report, subclass (b)''s missing enumeration -- flagged
+    2026-08-22, still not built). (b) confidence/confidence_source schema (Phase 1,
+    designed 2026-08-04, still not started) is AI-001''s proposed structural fix
+    whenever engineering bandwidth resumes. (c) king/answer/film handoffs remain
+    open, AI-001-scoped.'
+  next_action_prior_20260822_audit: '2026-08-22 (Claude B): Project-Owner-directed Role Self-Audit (see
     docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md for the full writeup) found pickPrimary/
     override-precedence ambiguity is a recurring defect class (>=6 narrow patches
     since 2026-08-04, class never closed). Verified live before writing anything:

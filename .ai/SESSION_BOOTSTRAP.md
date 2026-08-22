@@ -1,5 +1,5 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-22 by Claude A (added Rule 12, apostrophe-preserving lookup spot-check — the standing rule flagged but not yet written in by the 2026-08-20c session close). See the "NEW, 2026-08-20c" entry below for the underlying incident (NV-086/087/088, the apostrophe-lookup runtime bugfix, 3 override-vs-master fixes, 4 compositional relay-batch closures)._
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-22 by Claude B (added Rule 13, mandatory engineering governance model + the "Governance-model check" migration-doc requirement for all roles — see `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` and `docs/CLAUDE_B_SESSION_MIGRATION_20260822.md`). Prior: 2026-08-22 by Claude A (added Rule 12, apostrophe-preserving lookup spot-check — the standing rule flagged but not yet written in by the 2026-08-20c session close). See the "NEW, 2026-08-20c" entry below for the underlying incident (NV-086/087/088, the apostrophe-lookup runtime bugfix, 3 override-vs-master fixes, 4 compositional relay-batch closures)._
 
 **If you are a new Claude A instance (fresh chat, session migration):**
 read `docs/CLAUDE_A_SESSION_MIGRATION_20260820c.md` first — a
@@ -149,6 +149,10 @@ history, before any actual work occurs.
      corrections, Claude B checks its own fixes against the linguistic
      source they're meant to serve, Claude D N/A (no runtime, ingestion
      only) unless stated otherwise.
+6a. **Every migration document also needs a "Governance-model check"
+   note** (all roles, added 2026-08-22) — see Rule 13 below for the
+   full requirement; one line if nothing this session touched
+   `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` §4.
 7. **State verification scope, not just verification result, before
    closing any item.** A migration document's completeness words
    ("clean", "resolved", "confirmed", "all X") must always state
@@ -266,6 +270,18 @@ the next session is Claude A, Claude B, or Claude D.
       (count-based, regenerated auto-enumeration files) before any §4
       row is marked `CLOSED` — a single working example is
       instance-level evidence only, not class closure.
+    - **Every migration document, from any role (A, B, C, D), must
+      include a short "Governance-model check" note** (Project Owner
+      directive, 2026-08-22, same session as the rule above): state
+      whether this session's work touched any key/mechanism tracked in
+      `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` §4, and if so, whether
+      the §2/§3/§5 obligations (investigation-match check, A→B→runtime
+      trace, class-count evidence) were followed — not just "yes/no
+      relevant," the actual evidence. If nothing this session intersects
+      §4, a one-line "No §4 intersection this session" is sufficient —
+      this is a mandatory-but-cheap check, not a new narrative section.
+      This is how the rule above stays enforced across sessions instead
+      of quietly lapsing the way the pre-2026-08-22 pattern did.
 
 11. **Check compositional grammar before relaying a multi-word phrase
     to native** (Project Owner directive, 2026-08-20). "My X" and
