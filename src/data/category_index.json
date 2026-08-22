@@ -3963,5 +3963,9 @@
   "luck": "general",
   "land": "general",
   "to throw": "general",
-  "sorry (short greeting)": "general"
+  "sorry (short greeting)": "general",
+  "very (intensifier, alt)": "general",
+  "walking (contracted)": "general",
+  "why (bare)": "general",
+  "yes (alt)": "general"
 }

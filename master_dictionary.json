@@ -2276,7 +2276,9 @@
   {
     "english": "thief",
     "garo": "Cha·u",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch)"
   },
   {
     "english": "guest",
@@ -3230,7 +3232,9 @@
   {
     "english": "when",
     "garo": "Basako",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch)"
   },
   {
     "english": "where",
@@ -5814,7 +5818,9 @@
   {
     "english": "which",
     "garo": "badia / badiya",
-    "category": "general"
+    "category": "general",
+    "confidence": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch)"
   },
   {
     "english": "which way",
@@ -67370,7 +67376,7 @@
     "pos": null,
     "category": "general",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — imperative sense, re-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part A). Matches the existing NV-015/RULE-029 finding: Da·mo and Sengbo (the -bo imperative form of senga) are the imperative 'Wait!', while declarative 'to wait' is senga (see separate 'wait'/'senga' row, and 'Wait.'/'Damo.' row). Spelled here with no space around the slash ('Damo/Sengbo') to match prepare-data.js's existing grammarOverrides constant exactly -- see tests/unit/translationEngine.test.js:1117 regression test, which locks this key to the pre-existing engine value on purpose (Claude B's pickPrimary-precedence fix, RUNTIME_ENGINEERING_AUDIT_20260803.md). This row closes the Check E citation gap without changing runtime output or tripping that guard."
+    "notes": "VERIFIED/HIGH — imperative sense, re-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part A). Matches the existing NV-015/RULE-029 finding: Da·mo and Sengbo (the -bo imperative form of senga) are the imperative 'Wait!', while declarative 'to wait' is senga (see separate 'wait'/'senga' row, and 'Wait.'/'Damo.' row). Spelled here with no space around the slash ('Damo/Sengbo') to match prepare-data.js's existing grammarOverrides constant exactly -- see tests/unit/translationEngine.test.js:1117 regression test, which locks this key to the pre-existing engine value on purpose (Claude B's pickPrimary-precedence fix, RUNTIME_ENGINEERING_AUDIT_20260803.md). This row closes the Check E citation gap without changing runtime output or tripping that guard. Reconfirmed 2026-08-22 direct relay ('sengbo / Da·mo, an expression')."
   },
   {
     "english": "happy",
@@ -67763,6 +67769,34 @@
     "garo": "Kema",
     "category": "general",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, same NV-089 batch/session) — shorter phrase-book form of 'sorry', distinct register from the full 'Kema·bi·a.' word form; both valid, not a conflict.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "very (intensifier, alt)",
+    "garo": "namen",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — coexists with the already-VERIFIED 'indakpile' (Project Owner confirmation 2026-07-23); 'namen' recurs constantly elsewhere in the corpus as an intensifier (e.g. 'dangerous'='namen kenbegnigipa'), consistent with being a genuine second valid intensifier, not a replacement.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "walking (contracted)",
+    "garo": "re·enga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — coexists with existing uncited 'Re·ang·enga' (fuller form); likely same root, contracted, not a contradiction.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "why (bare)",
+    "garo": "Maina",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — coexists with existing uncited 'Maini·gimin' (fuller form); likely same root, consistent with this same relay's own 'why did you come' answer also using 'maini gimin' — related, not contradictory.",
+    "confidence": "VERIFIED/HIGH"
+  },
+  {
+    "english": "yes (alt)",
+    "garo": "Am",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — FLAGGED: directly contradicts the existing VERIFIED 'yes'='Oe' entry (also used elsewhere, e.g. 'of course!'='Oe, bebe!'). Not superseding Oe on this alone — both may be genuine register/dialect variants, but this needs an explicit Claude A/Project Owner reconciliation before either is treated as primary.",
     "confidence": "VERIFIED/HIGH"
   }
 ]

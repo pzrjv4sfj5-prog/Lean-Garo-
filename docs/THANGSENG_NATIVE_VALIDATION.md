@@ -4976,3 +4976,25 @@ open `answer` pickPrimary engineering tie-break, NV-077) and "i have a
 question" (tied to the flagged Angna/Ango pattern) — deliberately held,
 per the Project Owner's own confirmation these are separate from this
 batch.
+
+## NV-090 (2026-08-22, direct Project Owner relay, continuing NV-089 batch)
+
+Next batch of the same 2026-08-21 relay table, direct final answers:
+thief=`cha·u` (cited, matches existing), very=`namen` (new coexisting
+intensifier alongside VERIFIED `indakpile`, not a replacement),
+wait=`sengbo / Da·mo` (already VERIFIED/HIGH from NV-083, reconfirmed),
+walking=`re·enga` (new contracted-form alt alongside uncited
+`Re·ang·enga`), wash=`Su·sranga` (already VERIFIED/HIGH from NV-089, no
+action), well=`chi·kol` (already VERIFIED/HIGH from NV-089, no action),
+when=`Basako` (cited, matches existing), which=`Badia` (cited, matches
+existing `badia / badiya`), why=`Maina` (new bare-form alt alongside
+uncited fuller `Maini·gimin`), wrist=`jak·git·ok` (already VERIFIED/HIGH
+from NV-089, no action), **yes=`Am`** (new — FLAGGED, directly
+contradicts existing VERIFIED `yes`=`Oe`; added as coexisting candidate,
+not superseding Oe, pending explicit reconciliation), you=`Na·a`
+(already VERIFIED/HIGH from NV-089b, no action).
+
+Genuinely new/contradictory items from this batch, not silently
+resolved: `yes` (Am vs Oe) remains the one open reconciliation point —
+everything else either matched, was already closed, or was added as a
+non-contradicting coexisting alternate form.
