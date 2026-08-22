@@ -1,5 +1,5 @@
 repository:
-  head: aead387
+  head: ba5a426
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -7,7 +7,18 @@ repository:
     to review everything since this checkpoint; continue from actual repo state. Do NOT create follow-up
     commits solely to update `head` to match itself - that is a contradiction (see prior "fix stale head
     hash" commits 9558ea6 etc., now superseded by this convention).'
-  last_updated: '2026-08-22 (Claude B, session close/migration): after the Role
+  last_updated: '2026-08-22b (Claude B, session close/migration): resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260822.md, synced past Claude C''s
+    self-pushed 1dae44e (data-citation docs only), then built docs/
+    PICKPRIMARY_NO_VERIFIED_CANDIDATE.md -- the AI-001 subclass (b)
+    auto-enumeration flagged as the next concrete engineering step. See
+    claude_b.next_action for full detail; docs/
+    CLAUDE_B_SESSION_MIGRATION_20260822B.md for the full migration document.
+    Session closed clean: HEAD ba5a426 verified == origin/main via git
+    ls-remote, working tree clean, full build gate green (220/220 tests, 0
+    lint errors, 0 new repository-intelligence violations, 8132 compiled
+    entries unchanged).'
+  last_updated_prior: '2026-08-22 (Claude B, session close/migration): after the Role
     Self-Audit + governance-model commit (aead387, see prior entry), Project Owner
     directed migration close. Added one more standing rule this session (not yet
     reflected in the prior entry): every migration document from any role must
@@ -1504,7 +1515,47 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-22 (Claude B, session close/migration): see
+  next_action: '2026-08-22b (Claude B, session close/migration, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260822.md): synced clean past Claude C''s
+    self-pushed 1dae44e (two new native-citation docs, king=Raja/film=film --
+    data-side only, does not close AI-001, see .ai/WORKSTATE.yaml claude_c.self_push_note).
+    Built docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md -- the AI-001 subclass (b)
+    auto-enumeration flagged as the first concrete engineering action under the
+    new governance model (docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md S1), same
+    pattern as subclass (a)''s existing PICKPRIMARY_VERIFIED_TIES.md. New
+    pickPrimaryNoVerifiedCandidate collector in prepare-data.js, populated in
+    finalizeDictionary: records any key whose entire candidate set has zero
+    VERIFIED signal (neither isVerified nor isVariantVerified anywhere), not
+    just the value that shipped. Exported for testability; 2 new regression
+    tests (key with zero verified candidates is recorded; key with a genuine
+    VERIFIED candidate is not). 5909 keys enumerated -- explicitly NOT a defect
+    list on its own (documented in the report''s own header), the large
+    majority are simply not-yet-natively-validated vocabulary; gives Claude
+    A/C a concrete artifact to triage the confirmed work/boil/build/close/
+    empty/leg/outside/strong shape out of instead of re-deriving by hand.
+    Does NOT fix AI-001 itself -- still OPEN, the confidence/confidence_source
+    schema (S4''s proposed structural fix, designed 2026-08-04) is still the
+    durable fix and still not started. Pure engineering, zero
+    master_dictionary.json/corrections.json/grammarOverrides edits this
+    session -- governance S2/S3 (override-precedence check, A->B->runtime
+    trace) don''t apply, no override was touched. Verified: 220/220 unit tests
+    (2 new), 0 lint errors, repository-intelligence.js PASSED 0 new violations
+    (7 known/allowlisted unchanged), 8132 compiled entries unchanged (pure
+    reporting, no dictionary content changed), vite build clean. Governance-
+    model check: touched S4/AI-001 by building the missing subclass-(b)
+    enumeration artifact S1 flagged as the next concrete step -- did not add
+    or touch any grammarOverrides/corrections.json entry, so S2''s
+    investigation-match-before-override step doesn''t apply; S3''s
+    A->B->runtime trace doesn''t apply for the same reason (no key''s
+    translation output changed). Pushed ba5a426. HEAD == origin/main,
+    verified via git ls-remote, working tree clean. Next Recommended Tasks:
+    (a) confidence/confidence_source schema (AI-001''s actual structural fix,
+    still not started) -- now has both subclass (a) and (b) enumeration
+    artifacts to validate against once built. (b) king/answer/film handoffs
+    remain open, AI-001-scoped, per Claude C''s self-push note. (c) resync-sweep
+    backlog in docs/CLAUDE_B_HANDOFF_20260819_resync_sweep_blocked.md,
+    untouched this session.'
+  next_action_prior: '2026-08-22 (Claude B, session close/migration): see
     docs/CLAUDE_B_SESSION_MIGRATION_20260822.md for full detail. This session (a)
     ran the Role Self-Audit and shipped docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md +
     SESSION_BOOTSTRAP.md Rule 13 (commit aead387, prior entry below has full detail),
