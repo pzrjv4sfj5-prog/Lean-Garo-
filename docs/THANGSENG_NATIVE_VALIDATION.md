@@ -4869,3 +4869,86 @@ compositional closure, staying in the native relay queue:**
 Gate green throughout: 8132 entries (+1 net after "sit down" citation
 add), 9/9, 218/218, 14532/14532 runtime sweep, 0 errors, 0 new
 Check A–F violations.
+
+## NV-089 (2026-08-21 relay, processed 2026-08-22, Claude A)
+
+Source: `docs/THANGSENG_RELAY_TABLE_20260821B.md` (Claude C, WhatsApp
+transcript 2026-08-21 afternoon, Tridip↔Thangseng, ~150 rows cross-checked
+against live `master_dictionary.json`). Processed per SESSION_BOOTSTRAP.md
+resume instructions: CONFLICT rows first, then tied-candidate resolutions,
+then plain new vocabulary. Full per-item disposition is the relay table
+itself (Remarks column) plus this session's `notes` fields on each touched
+entry — not restated here in full per token-discipline.
+
+**Closed this session:**
+- 14 UNVERIFIED/HIGH candidates promoted to VERIFIED/HIGH on exact-match
+  confirmation (bored, bring, choose, cold, cut, lead, log, person, roof,
+  search, smoke, well, hot, wrist).
+- ~25 new VERIFIED/HIGH entries added (new vocabulary, sense-splits for
+  dead/dried, explicitly-rejected-construction replacements for listen
+  carefully/raise your hand/class is over, tense-suffix and orthography
+  corrections for several short sentences, king/film).
+- Tied-candidate resolutions: **elephant** — `mong·ma` designated
+  native-preferred primary among the existing VERIFIED tie (Mong/ha·ti
+  unchanged, still valid variants). **outside** — `A·pal` un-superseded to
+  VERIFIED/HIGH with an explicit collocation caveat (`A·pal + re·a` = "to
+  defecate," idiomatic, not literal); bai·re/ha·gat·e/a'palo unchanged.
+- **king**: closed the live `translate("king")` bug — `Raja` flipped
+  SUPERSEDED→VERIFIED/HIGH, the two misimported classifier-metadata rows
+  ("Books, paper, leaves, flat" / "thin objects") marked SUPERSEDED.
+  Claude B's structural `pickPrimary` fix (excluding classifier-scope rows
+  from candidacy) is still the durable engineering fix, not done here.
+- **film**: new VERIFIED/HIGH entry added, direct loanword.
+
+**Deliberately left OPEN, not touched (needs further native input, not a
+corpus-resolvable judgment call):**
+- **yes** — `Am` (this relay) directly contradicts existing VERIFIED `Oe`.
+  No resolution attempted; both are single-word contradictions with no
+  supporting context to arbitrate.
+- **you** — `Na·a` (used constantly as 2nd-person subject throughout this
+  transcript) vs. existing VERIFIED `Nang`. Likely a subject-case vs.
+  other-case paradigm (cf. `Nang·ni bimung` = "your name," possessive),
+  not a contradiction — but needs an explicit paradigm confirmation before
+  encoding as a rule. Flagged as a **grammar-rule candidate**, not
+  resolved this session.
+- **i understand** — this relay gives `Anga ma·sia`, directly contradicting
+  NV-087's own direct confirmation of `Anga uia` (which had itself
+  explicitly ruled out `ma·sia` for this exact sentence). Two conflicting
+  direct Thangseng citations now exist for the same sentence — left as-is
+  (`Anga uia` stays VERIFIED/HIGH) pending explicit reconciliation, not
+  silently flipped.
+- **sit** — this relay gives `aonga`, directly contradicting NV-080's
+  direct confirmation of `a·song·a`. Same pattern as "i understand" above —
+  left as-is, flagged for reconciliation.
+- **let's drink / let's eat** — this relay gives `Hai ringna`/`Hai cha·na`,
+  contradicting NV-083's direct confirmation of `Hai ringaha`/`Hai cha·ha`.
+  Left as-is, flagged — possible partial retraction of NV-083, needs
+  explicit confirmation before superseding a same-native VERIFIED entry.
+- **"i want to X" paradigm** (skenga vs. sikenga) — this relay consistently
+  gives `skenga` where the existing VERIFIED paradigm uses `sikenga`
+  (except "pray," which keeps `sikenga` even in this relay — possible
+  transcription slip). Systemic, paradigm-wide — not changed on inference
+  from one relay; needs its own explicit question back to Thangseng.
+- **they are working** — three distinct forms now on record (repo's
+  `Uamang dakoenga`, Tridip's guess `dakenga`, Thangseng's `kam ka·enga`).
+  Not resolved.
+- **it is not good** — three distinct forms on record. Not resolved.
+- **Anga/Ango recurring pattern** — `Ango` appears repeatedly in this
+  relay specifically in possession/existential "X donga" constructions
+  (i don't have, i have a pen, i have two children, i have a question),
+  while `Anga` is used elsewhere as plain subject "I." This looks
+  systematic enough to be a real grammar-rule candidate (possessive/
+  existential subject-case marking), not four unrelated typos — flagged
+  for a dedicated review, not built into a rule this session (would need
+  more than 4 same-relay data points to generalize safely per §2/§5 of
+  the operating governance).
+
+**Rule-generalization check:** this session closed vocabulary/sense
+items but did not add or update a `docs/grammar_rules_structured/`
+rule — the Anga/Ango and you/Na·a-Nang patterns above are flagged as
+rule candidates, not yet built into rules. This is the 1st such session
+since RULE-045; not yet at the 3-session drift-flag threshold, but noting
+it per §5 self-monitoring.
+
+Full source-of-truth: `docs/THANGSENG_RELAY_TABLE_20260821B.md` (every
+row's disposition). This entry indexes it, does not duplicate it.

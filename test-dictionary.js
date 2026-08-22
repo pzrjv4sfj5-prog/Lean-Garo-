@@ -9,7 +9,7 @@ const requiredCorrections = {
   'no more': 'Dongja',
   'it exists': 'Donga',
   'quick': 'Tarkbo',
-  'hurry': 'Tarkbo',
+  'hurry': 'Tarkbo!', // NV-089 (2026-08-21): native form includes the exclamation
   "i don't care": 'Anga Dal·e Ra·ja'
 };
 
