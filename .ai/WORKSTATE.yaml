@@ -1,5 +1,5 @@
 repository:
-  head: 13d951c
+  head: 5c5b633
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -7,6 +7,14 @@ repository:
     to review everything since this checkpoint; continue from actual repo state. Do NOT create follow-up
     commits solely to update `head` to match itself - that is a contradiction (see prior "fix stale head
     hash" commits 9558ea6 etc., now superseded by this convention).'
+  last_updated_correction_20260823: '2026-08-23 (Claude A, resume-sync correction): `head` above was 13d951c
+    at commit 7467063 (the CLAUDE_A_SESSION_MIGRATION_20260822C session close), but 7467063''s actual
+    git parent was 5c5b633 (Claude B''s confidence-schema steps 1-2 + merge of NV-089/090/091, landed
+    on origin/main before that session-close commit was authored) -- 13d951c was itself an ancestor of
+    5c5b633, not the immediate prior state. Corrected head to 5c5b633 per the file''s own stated convention.
+    No repo content changed by this correction, pointer-only. Build gate reverified clean at actual current
+    HEAD (7467063, == origin/main): 220/220 tests, 8159 entries, 0 new repository-intelligence violations
+    (Check G confidence-schema check included).'
   last_updated: '2026-08-22b (Claude B, session close/migration): resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260822.md,
     synced past Claude C''s self-pushed 1dae44e (data-citation docs only), then built docs/ PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
     -- the AI-001 subclass (b) auto-enumeration flagged as the next concrete engineering step. See claude_b.next_action

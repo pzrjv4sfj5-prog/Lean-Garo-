@@ -73,7 +73,7 @@ export const PHRASE_MAPS = {
   'it is there': 'Donga',
   'no more': 'Dongja',
   "it does not exist": 'Dongja',
-  "i don't have": 'Anga dong·ja',
+  "i don't have": 'Ango dongja',
   "i don't want": 'Anga nang·ja',
   "i don't care": 'Anga Dal·e Ra·ja',
   'delicious': 'Toa',

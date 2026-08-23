@@ -5070,3 +5070,83 @@ none of this session's added or cited rows introduced a new exact
 (english,garo) duplicate — the 10 pre-existing duplicate rows found
 during NV-091 remain the only ones in the file, all predating this
 session's work (see NV-091 entry above).
+
+## NV-092 — Project Owner direct chat relay, 2026-08-23 (41-item batch)
+
+Processed against current repo state before writing anything (several
+items turned out to be exact re-confirmations of already-VERIFIED
+NV-083/NV-088/NV-089 data — no action needed on those: elephant/mongma,
+to throw/goata, wait(alt)=Damo/Sengbo, where are you from, where is
+the market, why did you come (long form), you did well, thank you very
+much, i am sad, i ate, i ate rice, i drank, let's play/sit, my dog, my
+house, i have two children, i don't know).
+
+**New VERIFIED/HIGH additions/supersessions this batch** (full detail
+in each master_dictionary.json row's own notes): what is your name
+(alt form), why did you come (short alt form), let's work (alt, kam
+ka·na), my father (alt, pa·gipa), my mother (ang·ni a·ai — closes a
+duplicate-representation gap, corrections.json already shipped this),
+stand up (imperative, chadengbo — closes the priority stand/stand-up
+item), take revenge (simple form a·jak soka — closes the priority
+take-revenge item), to spread (alt, barama), i don't have (Ango dongja
+— supersedes old unverified Anga-form, 5th Anga/Ango pattern data
+point), i have a pen (Ango pen donga — supersedes old unverified
+kolom-form, new "pen" loanword), they are working (Uamang kam ka·enga
+— supersedes old unverified dakoenga-form, closes the item left OPEN
+at NV-089), it is not good ((iade) namja — supersedes old unverified
+Nama-ong·ja-form, closes the item left OPEN at NV-089), what job do
+you do (pronoun-only fix, Na·a not Na·ara).
+
+**FLAGGED, NOT resolved — directly contradicts an existing VERIFIED
+entry, needs explicit reconciliation, not a silent pick:**
+- **i understand** — this relay gives `Anga ma·sia`, contradicting the
+  existing VERIFIED (NV-087) `Anga uia`. Same open item carried since
+  NV-089 close; now has 2 data points on the ma·sia side. NOT promoted.
+- **let's drink** — this relay gives `Hai ringna`, contradicting the
+  existing VERIFIED (NV-083) `Hai ringaha`. NOT promoted. Note: `ringna`
+  fits the same `Hai <root>na` shape as the already-VERIFIED let's
+  play/sit/work (kalna/asongna/dakna) — `ringaha`/`cha·ha` are the two
+  outliers in that paradigm. Worth a direct Thangseng question on
+  whether drink/eat are genuinely irregular or whether the -aha/-ha
+  forms are stale, rather than guessed from the pattern alone.
+- **let's eat** — this relay gives `Hai cha·na`, contradicting the
+  existing VERIFIED (NV-083) `Hai cha·ha`. Same paradigm note as above.
+- **skenga vs sikenga** ("want to X" paradigm) — this relay uses
+  `skenga` for come/drink/eat/go/sleep/study, but `Anga bi·na sikenga`
+  (pray) uses `sikenga`, matching what's already VERIFIED everywhere
+  else. Same open paradigm question carried since NV-089 (untouched),
+  now with more data on the skenga side but still not a clean split
+  (pray breaks the pattern) — not resolved.
+- **i want to work** — this relay gives `Anga kam ka·na skenga`
+  (kam ka·a root), differing from the existing VERIFIED `Anga dakna
+  sikenga` (daka root). Coexisting root-choice question, not new to
+  this session (daka/kam-ka·a coexist elsewhere in the corpus too) —
+  flagged, not resolved.
+
+**Runtime/build:** rebuilt via `npm run build` after the additions —
+220/220 tests, 8161 compiled entries, 0 new repository-intelligence
+violations (Check G confidence-schema check included). No
+phrase_maps.js/corrections.json edits needed — "my mother" already
+shipped the now-matching value, nothing else in this batch is
+currently overridden by a stale table entry.
+
+**Runtime cascade findings, same batch (spot-checked live via translate(), not just compiled_dict.json):**
+Fixed 2 clean Rule-8 stale-override cases (override mirrored the OLD
+superseded master row with no independent evidence of its own, so no
+new judgment call): corrections.json "what job do you do" (was
+Na·ara-form, now Na·a-form) and phrase_maps.js "i don't have" (was
+Anga-form, now Ango-form).
+
+**NOT fixed, flagged instead — the runtime override is a THIRD,
+independent form, not just a copy of the old master row, so this is a
+genuine multi-way disagreement, not simple staleness:**
+- **they are working** — corrections.json ships `Uamang dakenga`
+  (dak- root, distinct spelling from both the old unverified master
+  `dakoenga` and this session's new VERIFIED `Uamang kam ka·enga`).
+  Three forms now: dakenga (shipping)/dakoenga (superseded)/kam
+  ka·enga (VERIFIED this session, not yet wired to ship). Needs
+  reconciliation — not resolved here.
+- **it is not good** — corrections.json ships `nama·gija` (yet another
+  contraction, distinct from both the old unverified master `Nama
+  ong·ja` and this session's new VERIFIED `(iade) namja`). Not
+  resolved here either.

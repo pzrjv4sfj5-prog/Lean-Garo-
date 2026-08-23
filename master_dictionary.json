@@ -7154,7 +7154,8 @@
     "english": "they are working",
     "garo": "Uamang dakoenga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-08-23 Thangseng relay (Project Owner direct chat): superseded by new native form. Retained per citation discipline, not deleted. Prior notes: "
   },
   {
     "english": "did you eat?",
@@ -7253,7 +7254,8 @@
     "english": "i don't have",
     "garo": "Anga dongja / Dongja",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-08-23 Thangseng relay (Project Owner direct chat): superseded by new native form. Retained per citation discipline, not deleted. Prior notes: "
   },
   {
     "english": "don't eat",
@@ -7491,13 +7493,15 @@
     "english": "it is not good",
     "garo": "Nama ong·ja",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-08-23 Thangseng relay (Project Owner direct chat): superseded by new native form. Retained per citation discipline, not deleted. Prior notes: "
   },
   {
     "english": "i have a pen",
     "garo": "Anga kolom donga",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-08-23 Thangseng relay (Project Owner direct chat): superseded by new native form. Retained per citation discipline, not deleted. Prior notes: "
   },
   {
     "english": "i don't have time",
@@ -16665,7 +16669,8 @@
     "english": "my mother",
     "garo": "angni mama",
     "category": "family",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-08-23 Thangseng relay (Project Owner direct chat): superseded by new native form. Retained per citation discipline, not deleted. Prior notes: "
   },
   {
     "english": "my brother",
@@ -19604,8 +19609,8 @@
     "pos": null,
     "category": "business",
     "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — 2026-08-23 Thangseng relay (Project Owner direct chat): superseded by new native form. Retained per citation discipline, not deleted. Prior notes: ",
+    "confidence": "superseded"
   },
   {
     "english": "abnormal",
@@ -76804,6 +76809,123 @@
     "garo": "Hoe",
     "category": "general",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) — third candidate for 'yes', alongside VERIFIED 'Oe' and the flagged 'yes (alt)'='Am'. 'Hoe' already appears in existing sentence-level entries ('yes, of course.'='Hoe mangenva.', 'yes, i love you.'='Hoe, ang·a nangna kasa·a.') — this is the first direct standalone confirmation of it as 'yes' itself. All three ('Oe'/'Am'/'Hoe') now need one consolidated reconciliation — register/dialect variants, or a real correction — not resolved here.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "what is your name (alt)",
+    "garo": "Nang·ni bimungara maia?",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "why did you come (alt, short form)",
+    "garo": "Na·a maina re·baa?",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "let's work (alt)",
+    "garo": "hai kam ka·na",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Coexists with VERIFIED 'Hai dakna' — kam ka·a and daka both attested work-verb roots in this corpus.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "my father (alt)",
+    "garo": "angni pa·gipa",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Coexists with primary VERIFIED 'ang·ni ba·ba'. pa·gip·a already independently attested as the 'father' morpheme in the existing 'parents'='pa·gip·a·na·gip·a' entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "my mother",
+    "garo": "ang·ni a·ai",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Compositional (POSSESSIVES/sov-assembly, Rule 11) from already-VERIFIED 'mother (address form)'=a·ai (NV-080/NV-018-followup). Matches what corrections.json already ships (ang·ni aai) — closes a duplicate-representation gap, not a new linguistic claim.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "stand up (imperative)",
+    "garo": "chadengbo",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Imperative -bo suffix on already-VERIFIED 'stand'=Chadenga (NV-091). Closes the previously-flagged priority item — the competing uncited 'Chakata' candidate stays unverified/untouched, not superseded (no direct rejection given).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "take revenge (simple form)",
+    "garo": "a·jak soka",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Root+a simple/citation form, compositionally consistent with already-VERIFIED 'Revenge'=a'jak sok·a·ni and 'To take revenge'=a'jak sok·na (same a'jak sok- root). Closes the previously-flagged priority item (only a noun-form citation existed before).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to spread (alt)",
+    "garo": "barama",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). New native-confirmed candidate; coexists with the two existing UNVERIFIED candidates (Badala, Badalata) — none superseded, no native tie-break given between them yet.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i don't have",
+    "garo": "Ango dongja",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Fits the Anga/Ango possessive-existential pattern (flagged grammar-rule candidate from the 2026-08-22C migration doc — 4+ prior data points: i have a pen, i have two children, etc.) — this is a 5th data point, now negative-polarity. Rule-generalization still not built this session, flagging strengthened evidence only.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i have a pen",
+    "garo": "Ango pen donga",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Two changes from the old unverified entry: (1) Ango (not Anga), fitting the possessive-existential pattern; (2) 'pen' as a direct English loanword, not 'kolom'. Both new, from this relay.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "they are working",
+    "garo": "Uamang kam ka·enga",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Uses the 'kam ka·a' work-root (cf. RULE-041's corrected 'To work'=Kam ka·a), not the previously-unverified 'dakoenga'. Closes the item left OPEN at NV-089 close (was contradicting no prior VERIFIED entry — this is the first native confirmation for this key).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "it is not good",
+    "garo": "(iade) namja",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Contracted nama+ja negation construction, differs from the old unverified 'Nama ong·ja' (separate copula+negation). Closes the item left OPEN at NV-089 close.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "what job do you do",
+    "garo": "Na·a mai kamko ka·a?",
+    "pos": "",
+    "classifier": "",
+    "category": "",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Thangseng, direct Project Owner relay, chat batch). Pronoun form only differs from the old unverified entry (Na·a vs Na·ara) — now native-confirmed.",
     "confidence": "verified_high"
   }
 ]
