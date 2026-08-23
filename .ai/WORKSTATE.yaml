@@ -1578,7 +1578,7 @@ claude_b:
     Claude A/D territory). Re-verified wait/salt/king/answer/my house/angry/stand
     all still correct, no regression. Full gate clean before and after (220/220
     tests, 0 new repository-intelligence violations) -- confirms audit introduced
-    no drift, as expected since no files were touched.
+    no drift, as expected since no files were touched.'
   next_action_prior_20260823B: '2026-08-22b (Claude B, session close/migration, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260822.md):
     synced clean past Claude C''s self-pushed 1dae44e (two new native-citation docs, king=Raja/film=film
     -- data-side only, does not close AI-001, see .ai/WORKSTATE.yaml claude_c.self_push_note). Built docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
