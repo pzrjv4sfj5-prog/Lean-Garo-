@@ -1,5 +1,5 @@
 repository:
-  head: 5c5b633
+  head: 7467063
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -184,7 +184,7 @@ claude_a:
     raw NV/ dictionary-entry counts in favor of rule-generalization and reduced rework. Not a replacement
     for `.ai/SESSION_BOOTSTRAP.md` Rules 1-12 -- sits on top of them as the linguistic-reasoning-specific
     layer.'
-  next_action: 'Next Claude A session, in priority order: (1) yes = Oe/Am/Hoe three-way reconciliation
+  next_action_prior_20260822c_yes: 'Next Claude A session, in priority order: (1) yes = Oe/Am/Hoe three-way reconciliation
     — Am is what''s ACTUALLY shipping at runtime (pre-existing corrections.json override), Oe is master''s
     VERIFIED tag, Hoe is a third relay-confirmed candidate used sentence-internally elsewhere. This is
     the highest-priority open item, needs an explicit Thangseng question, not a guess. (2) sit=aonga vs
@@ -427,7 +427,28 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-22, Claude A — NV-089/089b/090/091: full THANGSENG_RELAY_TABLE_20260821B.md processed
+  current_task: '2026-08-23, Claude A — NV-092: 41-item Project Owner chat-relay batch processed. Closed
+    priority items stand-up/take-revenge; closed they-are-working/it-is-not-good (flagged at NV-089
+    close) with new VERIFIED forms, though corrections.json ships a third, unreconciled form for both
+    (not force-fixed). Extended Anga/Ango pattern (i dont have, i have a pen + new pen loanword). 4 new
+    coexisting alt-forms. Fixed my-mother duplicate-representation gap + 2 clean Rule-8 stale overrides.
+    FLAGGED not resolved: i understand (uia vs ma·sia), lets drink/eat (-ha vs -na), skenga/sikenga
+    paradigm, i-want-to-work root choice. Also corrected WORKSTATE.yaml''s own stale head pointer on
+    resume (was 13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already
+    landed before the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations.
+    See docs/THANGSENG_NATIVE_VALIDATION.md NV-092 for full detail.'
+  next_action: 'Next Claude A session, in priority order: (1) yes=Oe/Am/Hoe three-way (still top, unchanged
+    — Oe is actually UNVERIFIED per its own confidence field, not VERIFIED as earlier docs claimed;
+    corrected characterization, still needs a Thangseng question between Am and Hoe). (2) they-are-working
+    and it-is-not-good: corrections.json ships a third form for each, disagreeing with both the old
+    superseded master row and this session''s new VERIFIED row — needs reconciliation. (3) i understand
+    (uia vs ma·sia, now 2 data points each direction), lets drink/eat (-ha vs -na, note the -na forms
+    fit the lets-play/sit/work paradigm better), skenga/sikenga paradigm, i-want-to-work root (kam-ka·a
+    vs daka) — all flagged in NV-092, none resolved. (4) Claude B''s confidence-schema step 3: a 336-row
+    manual triage is queued for Claude A (see docs/PROPOSAL_CONFIDENCE_SCHEMA_20260822.md and
+    docs/CLAUDE_B_SESSION_MIGRATION_20260822C.md) — not started, large task, needs its own session.
+    (5) sit=aonga vs a·song·a (NV-080), stay=donga vs dongchak·a/dongdang·a — still open, unchanged.'
+  current_task_prior_new: '2026-08-22, Claude A — NV-089/089b/090/091: full THANGSENG_RELAY_TABLE_20260821B.md processed
     across 4 sub-batches (conflicts, tied-candidates, new vocab, then 3 more direct-relay batches from
     the Project Owner covering the remainder of the table). See docs/THANGSENG_NATIVE_VALIDATION.md NV-089/089b/090/091
     entries for full detail. Session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260822C.md.
