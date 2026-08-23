@@ -5150,3 +5150,50 @@ genuine multi-way disagreement, not simple staleness:**
   contraction, distinct from both the old unverified master `Nama
   ong·ja` and this session's new VERIFIED `(iade) namja`). Not
   resolved here either.
+
+## NV-093 — Project Owner direct chat relay, 2026-08-23 (48-item batch)
+
+Checked against current repo state before writing anything. Clean
+reconfirmations of already-VERIFIED data, no action: waist, beautiful,
+child, coins, cold, curry, cut, daily, few, goat, gossip, deceive,
+home, hot, hurry, land, lead, log, choose, and both "dead"/"dried"
+person-vs-body / water-vs-things splits (already resolved at NV-089).
+"build"=Rika matches an existing SUPERSEDED row whose note already
+points to the correct current key ("I build (general)"), so no action.
+
+**Promoted to VERIFIED/HIGH** (exact or near-exact match to a
+previously-unverified master row, now natively reconfirmed): backbone,
+basically, coin (singular), come, dangerous, darkness, doctor, down,
+if, look.
+
+**New coexisting forms/senses added** (do not supersede any existing
+VERIFIED or unverified row — different suffix, sense, or genuinely
+distinct candidate, full reasoning in each row's own notes): begin
+(infinitive), bland (alt, confirms the -brok- variant), bring
+(imperative), bye (clarified as "just an expression"), coming
+(progressive -enga), cooked (past-tense verb sense, distinct from the
+already-VERIFIED adjectival min·a sense), dance (5th candidate), eaten
+(alt, -jok perfective), happy (predicate ong·a form), help (noun/verb)
+— see bug note below, how (alt), knowledge (fuller compound), live
+(alt, donga root), living (alt, progressive of donga).
+
+**Bug found and fixed, unrelated to native-data judgment calls:**
+corrections.json's `"backbone": "kangkare"` was shipping the *waist*
+translation under the backbone key — a straight data-entry error, not
+a stale-override-vs-new-native case. Fixed to the now-VERIFIED
+`jangil bolgro`.
+
+**Duplicates:** attempted to add "help (noun)"=dakchakani and "help
+(verb)"=dakchaka without first checking those specific compound keys
+(only checked bare "help") — both already existed, VERIFIED, from a
+prior session. Caught and removed my 2 duplicate rows before commit.
+10 other exact english+garo duplicate rows remain in the corpus,
+unrelated to this session — these predate NV-092/093 (confirmed via
+git show against d89d5da) and were already flagged as a separate
+backlog item in the NV-089 close (docs/CLAUDE_A_SESSION_MIGRATION_20260822C.md,
+"10 pre-existing dups found and flagged separately") — not touched
+here, out of scope for a native-data processing session.
+
+**Runtime/build:** 220/220 tests, 0 new repository-intelligence
+violations after both the additions and the backbone fix. Spot-checked
+every touched/added key live via translate().
