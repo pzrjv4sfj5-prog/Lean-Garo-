@@ -737,7 +737,8 @@
     "english": "run",
     "garo": "Kata",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — same word as the now-VERIFIED/HIGH NV-094 form; retained per citation discipline, not deleted."
   },
   {
     "english": "speak",
@@ -1340,7 +1341,8 @@
     "english": "no",
     "garo": "Ong·ja",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — same word as the now-VERIFIED/HIGH NV-094 form; retained per citation discipline, not deleted."
   },
   {
     "english": "please",
@@ -19817,8 +19819,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — same word as the now-VERIFIED/HIGH NV-094 form; retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "okay",
@@ -77054,5 +77056,26 @@
     "category": "",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Progressive -enga form of 'live (alt)'=donga above, consistent with the established -enga pattern. Distinct from unverified 'git·tang·a'.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "must",
+    "garo": "nanga",
+    "category": "uncategorized",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-094, Project Owner chat relay). Supersedes prior UNVERIFIED spelling."
+  },
+  {
+    "english": "no",
+    "garo": "ong·ja",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-094, Project Owner chat relay). Supersedes prior UNVERIFIED spelling."
+  },
+  {
+    "english": "run",
+    "garo": "Kata",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-094, Project Owner chat relay), exact match to prior unverified entry."
   }
 ]
