@@ -1,5 +1,5 @@
 repository:
-  head: f553017
+  head: 13d951c
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -176,14 +176,21 @@ claude_a:
     raw NV/ dictionary-entry counts in favor of rule-generalization and reduced rework. Not a replacement
     for `.ai/SESSION_BOOTSTRAP.md` Rules 1-12 -- sits on top of them as the linguistic-reasoning-specific
     layer.'
-  next_action: 'Next Claude A session: (1) resolve or explicitly re-relay the OPEN items from NV-089 (yes,
-    i understand, sit, let''s drink/eat, they are working, it is not good, skenga/sikenga paradigm) —
-    each contradicts an existing direct-native VERIFIED entry, needs explicit Thangseng reconciliation,
-    not a corpus-internal guess. (2) Consider building the you=Na·a/Nang subject-case rule and the Anga/Ango
-    possessive-existential rule flagged this session — would need more supporting data points before generalizing
-    per operating-governance §2/§5. (3) Coordinate with Claude B on the king pickPrimary structural fix
-    (classifier-scope rows still shouldn''t be candidates for any key) to durably close AI-001''s king
-    instance, not just this session''s citation-level fix.'
+  next_action: 'Next Claude A session, in priority order: (1) yes = Oe/Am/Hoe three-way reconciliation
+    — Am is what''s ACTUALLY shipping at runtime (pre-existing corrections.json override), Oe is master''s
+    VERIFIED tag, Hoe is a third relay-confirmed candidate used sentence-internally elsewhere. This is
+    the highest-priority open item, needs an explicit Thangseng question, not a guess. (2) sit=aonga vs
+    a·song·a (NV-080) and stay=donga vs dongchak·a/dongdang·a, both part of the still-open live/stay/sit
+    consolidation question (donga recurs across all three senses in the same relay). (3) i understand
+    (uia vs ma·sia, contradicts NV-087), let''s drink/eat (contradicts NV-083), the skenga/sikenga ''want
+    to X'' paradigm, they are working, it is not good — all still open from NV-089, unaddressed since.
+    (4) answer the question / i have a question — deliberately held, tied to the open answer pickPrimary
+    tie-break (NV-077, Claude B territory) and the Angna/Ango pattern. (5) Grammar-rule candidates flagged
+    but not built: you=Na·a/Nang case paradigm (now has 1 direct confirmation for Na·a=subject, Nang''s
+    role still unconfirmed), Anga/Ango possessive-existential pattern (4+ same-relay data points, worth
+    building now per operating-governance §5 threshold). (6) 10 pre-existing exact-duplicate (english,garo)
+    rows found during NV-091''s duplicate-representation check — unrelated to this session''s work, flagged
+    for a dedicated cleanup pass (see NV-091 entry, docs/THANGSENG_NATIVE_VALIDATION.md).'
   next_action_prior_20260822: '2026-08-20c (Claude A, session close): NV-086 (did you go to market), NV-087
     (Anti/week framework, 4 of 5 questions closed: week=Anti, a week=Antisa, two weeks=Antigni, next week=Mikkang
     anti, antio confirmed same root via -o locative; three weeks NOT answered, stays open; also fixed
@@ -231,21 +238,14 @@ claude_a:
     case/sense risk = same as 96; elephant/outside tied candidates need a primary pick, Claude A judgment
     not relay; 20 ''override disagrees with VERIFIED but not tagged SUPERSEDED'' items already cited,
     worth Claude A reviewing directly next session).'
-  next_action_prior: '2026-08-22 (Claude A, session close, governance): completed Project Owner-directed
-    Role Self-Audit (docs/CLAUDE_A_ROLE_SELF_AUDIT_20260822.md, ROLE HEALTH: NEEDS CORRECTION) and established
-    .ai/CLAUDE_A_OPERATING_GOVERNANCE.md as mandatory reading every session (see operating_governance
-    field above for full content summary). No linguistic/dictionary work this session -- explicitly deferred
-    by Project Owner instruction. Two concrete next tasks are ready under the new governance: (1) the
-    410-entry classifier backlog, to be resolved via CLAUDE_A_OPERATING_GOVERNANCE.md Sec 6''s rule ->
-    spot-check -> derive -> propagate -> QA sequence, NOT bulk-generated blindly; (2) the "answer" Aganchaka/Aganchakani
-    POS/sense default, unresolved since NV-077, to be explicitly decided per Sec 10 rather than left as
-    an implicit pickPrimary tie-break. Standing background: docs/THANGSENG_RELAY_BATCH_20260820.md (149
-    items) still drafted, not sent -- re-run the A/B/C/D/E classification pass against it first, since
-    some items may now resolve as class B under the new governance rather than needing relay. Gate green
-    throughout, zero drift: 8132/8132 entries, 218/218 tests, repository-intelligence.js 0 new violations
-    (verified 3x this session, including after two mid-session rebases against concurrent Claude B governance
-    work on the same two files). Pushed 0c1c721, then 86ffb26 (post-rebase). See docs/CLAUDE_A_SESSION_MIGRATION_20260822.md
-    for full detail.'
+  next_action_prior: 'Next Claude A session: (1) resolve or explicitly re-relay the OPEN items from NV-089
+    (yes, i understand, sit, let''s drink/eat, they are working, it is not good, skenga/sikenga paradigm)
+    — each contradicts an existing direct-native VERIFIED entry, needs explicit Thangseng reconciliation,
+    not a corpus-internal guess. (2) Consider building the you=Na·a/Nang subject-case rule and the Anga/Ango
+    possessive-existential rule flagged this session — would need more supporting data points before generalizing
+    per operating-governance §2/§5. (3) Coordinate with Claude B on the king pickPrimary structural fix
+    (classifier-scope rows still shouldn''t be candidates for any key) to durably close AI-001''s king
+    instance, not just this session''s citation-level fix.'
   next_action_prior_new: '2026-08-14, flagged by Claude B (session C, resumed): `angry` raka-count placement
     is the one item from docs/CLAUDE_B_HANDOFF_20260814_angry_raka_placement.md that NV-077 explicitly
     did not address (per NV-077''s own commit message) — still open, confirmed still open by direct repo
@@ -419,38 +419,14 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-22, Claude A — NV-089: processed docs/THANGSENG_RELAY_TABLE_20260821B.md (Claude
-    C''s 2026-08-21 relay table, ~150 rows), per session-bootstrap resume instructions (CONFLICT rows
-    first, then tied-candidates, then new vocab). 14 promotions, ~25 new VERIFIED/HIGH entries, elephant/outside
-    tied-candidate judgment calls, king bug closed (Raja VERIFIED/HIGH, 2 junk rows SUPERSEDED — still
-    needs Claude B''s structural pickPrimary fix for full closure), film added. Fixed 2 stale phrase_maps.js
-    entries + 1 corrections.json punctuation mismatch. Deliberately left OPEN (contradicts existing direct-native
-    VERIFIED entries, needs explicit reconciliation not silent override): yes(Am vs Oe), i understand
-    (vs NV-087), sit (vs NV-080), let''s drink/eat (vs NV-083), skenga/sikenga paradigm, they are working,
-    it is not good. Flagged as grammar-rule candidates for a future session (not built this session):
-    you=Na·a/Nang subject-case paradigm, Anga/Ango possessive-existential pattern. Full detail: NV-089
-    entry in docs/THANGSENG_NATIVE_VALIDATION.md and this repo commit''s message (f553017). Gate green:
-    8149 entries, 9/9 grammatical corrections, 220/220 unit tests, 0 new repository-intelligence violations.
-    HEAD==origin/main, clean tree, rebased cleanly onto 4 concurrent Claude B commits mid-session (docs-only,
-    no conflict).'
-  current_task_prior5: '2026-08-02, NV-051 CLOSED: -chi/-o locative contrast confirmed general, closing
-    the productivity question RULE-044 had explicitly left open ("does the movement-to/-chi vs stationary/-o
-    contrast hold beyond where-question forms?"). Thangseng direct relay: "chi cannot mean ''at''. chi
-    carries a sense of motion to. At is locative ''o''." with 5 noun-locative pairs (market/school/home/river/forest).
-    Surfaced that several pre-existing dictionary entries had conflated both senses under one -chi form
-    glossed "at X" - annotated 4 as INCORRECT GLOSS/superseded (Bajalchi, Skulchi, Nokchi, Buringchi,
-    plus their dotted-spelling duplicates), nothing deleted. Two pre-existing entries are genuine open
-    discrepancies rather than clear errors (chiko vs chibimao for "at the river"; bajaro vs bajalo for
-    "at the market", likely r/l variance) - flagged, not resolved, not urgent. One pre-existing correct
-    entry ("at the school"->"skulo") promoted to VERIFIED/HIGH. 10 new entries added for the confirmed
-    pairs. RULE-044''s second claim upgraded needs_native_validation -> verified, launch priority P2 ->
-    P0. 5 new Check-C self-consistency conflicts (intentional, old-superseded- entry-vs-new-correct-entry
-    duplicate keys) added to known_dictionary_conflicts.json baseline with citation in this log and THANGSENG_NATIVE_VALIDATION.md.
-    No engine code touched. Test suite 155/155, repository-intelligence.js 0 new violations after full
-    rebuild + allowlist update. compiled_dict.json verified to resolve all 10 pairs correctly (Claude
-    B''s VERIFIED-preference fix from earlier this session picks the right value automatically). Claude
-    A has no active task and no open linguistic items outstanding.'
-  current_task_prior4: '2026-08-02, NV-050 CLOSED: mina/minaha root corrected. Prior single-example gloss
+  current_task: '2026-08-22, Claude A — NV-089/089b/090/091: full THANGSENG_RELAY_TABLE_20260821B.md processed
+    across 4 sub-batches (conflicts, tied-candidates, new vocab, then 3 more direct-relay batches from
+    the Project Owner covering the remainder of the table). See docs/THANGSENG_NATIVE_VALIDATION.md NV-089/089b/090/091
+    entries for full detail. Session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260822C.md.
+    Final HEAD: 13d951c. Gate green throughout (220/220 tests, 0 new violations), full 14,566-call runtime-error-sweep
+    clean, duplicate-representation checked (0 new dups introduced, 10 pre-existing dups found and flagged
+    separately).'
+  current_task_prior5: '2026-08-02, NV-050 CLOSED: mina/minaha root corrected. Prior single-example gloss
     "ready/finished" (flagged non-urgent open item since NV-045/049) was wrong - Thangseng direct relay
     confirms mina = "ripe" (fruit) / "cooked" (food), with a full 4-form paradigm: minaha (stative, "Te·gatchu
     minaha." = "the mango(es) are ripe"), minengaha (has started ripening), minkuja (not ripe/ negative),
@@ -464,7 +440,7 @@ claude_a:
     instead. No engine code touched. Test suite 155/155 unchanged, repository-intelligence.js 0 new violations
     after full rebuild. This closes the last remaining open item from the corpus-internal audit below.
     Claude A has no active task and is standing down.'
-  current_task_prior3: '2026-08-01 (corpus-internal linguistic audit, no native validation required, no
+  current_task_prior4: '2026-08-01 (corpus-internal linguistic audit, no native validation required, no
     NV items opened). Scope: duplicate-key audit across master_dictionary.json (8934 entries), grammar-rule
     <-> dictionary consistency check, doc staleness check post-NV-048/049. Findings: (1) 476 legacy unannotated
     entries silently shadowed a VERIFIED/ HIGH sibling under the same english key (pure formatting duplicates
@@ -483,7 +459,7 @@ claude_a:
     artifact, Claude B''s regen territory, not hand-edited. Docs (RULE-038.yaml, RULE-G-classifier.yaml,
     GARO_GRAMMAR_REFERENCE.md, SESSION_BOOTSTRAP.md) already current post-NV-048/049, no staleness found.
     Test suite: 153/153 unchanged. mina/minaha still the only open non-urgent item, unchanged.'
-  current_task_prior2: '2026-08-01 (earlier same session, checkpoint 03e981d/fa55cce): NV-049 CLOSED.
+  current_task_prior3: '2026-08-01 (earlier same session, checkpoint 03e981d/fa55cce): NV-049 CLOSED.
     Thangseng batch resolved all remaining open items from the NV-045/046/048 lineage in one relay: (1)
     mipring/mipringde (NV-045) - "Mipringde minaha. = Lunch is ready" gives a second independent mipringde
     sentence with a different predicate than the existing one, confirming -de attaches regardless of verb,
@@ -667,7 +643,7 @@ claude_a:
     uses re·angjaha, so this was a documentation- only error, now fixed, not a live translation bug. One
     direct native confirmation added to the (now very small) pending batch to fully close it rather than
     resting on inference alone.'
-  current_task_prior: '2026-08-02 (new session, resumed from checkpoint 0ab04bf via migration doc, re-verified
+  current_task_prior2: '2026-08-02 (new session, resumed from checkpoint 0ab04bf via migration doc, re-verified
     against repo before acting): Claude D''s page 8-11 headword collisions reviewed and resolved (the
     deferred task from that migration doc). Ran the full pending-lexicon pipeline on all 4 pages (172
     entries total, none previously imported) via import-dictionary.js --apply, then reviewed every entry
@@ -856,6 +832,20 @@ claude_a:
     discipline. test-dictionary.js: 8048/8048 valid, 9/9 corrections verified, passed (entry count differs
     from prior 8047 baseline only because that number was itself stale in this doc, not because of this
     session''s changes - not re-investigated, out of scope). No engine code touched.'
+  current_task_prior: '2026-08-22, Claude A — NV-089: processed docs/THANGSENG_RELAY_TABLE_20260821B.md
+    (Claude C''s 2026-08-21 relay table, ~150 rows), per session-bootstrap resume instructions (CONFLICT
+    rows first, then tied-candidates, then new vocab). 14 promotions, ~25 new VERIFIED/HIGH entries, elephant/outside
+    tied-candidate judgment calls, king bug closed (Raja VERIFIED/HIGH, 2 junk rows SUPERSEDED — still
+    needs Claude B''s structural pickPrimary fix for full closure), film added. Fixed 2 stale phrase_maps.js
+    entries + 1 corrections.json punctuation mismatch. Deliberately left OPEN (contradicts existing direct-native
+    VERIFIED entries, needs explicit reconciliation not silent override): yes(Am vs Oe), i understand
+    (vs NV-087), sit (vs NV-080), let''s drink/eat (vs NV-083), skenga/sikenga paradigm, they are working,
+    it is not good. Flagged as grammar-rule candidates for a future session (not built this session):
+    you=Na·a/Nang subject-case paradigm, Anga/Ango possessive-existential pattern. Full detail: NV-089
+    entry in docs/THANGSENG_NATIVE_VALIDATION.md and this repo commit''s message (f553017). Gate green:
+    8149 entries, 9/9 grammatical corrections, 220/220 unit tests, 0 new repository-intelligence violations.
+    HEAD==origin/main, clean tree, rebased cleanly onto 4 concurrent Claude B commits mid-session (docs-only,
+    no conflict).'
   progress: 'This WORKSTATE.yaml itself had drifted 9 days / 2 sessions behind actual repo state before
     this update - HEAD, test count, and this entire claude_a block were still showing 2026-07-16. Root
     cause: no session closed out by updating this file, even when other repo docs (GRAMMAR_RULE_CATALOGUE.md,
@@ -1373,28 +1363,27 @@ claude_a:
 
     PERMANENT WORKSTYLE CHANGE (Project Owner instruction, 2026-08-10): see SESSION_BOOTSTRAP.md "Token-efficient
     workstyle" section — applies to all Claude A sessions going forward, not just this thread.'
-  current_task_prior6: '2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo discrepancy closed,
-    -chi present-continuous usage clarified (Project Owner direct decision, not a Thangseng relay this
-    time). (1) NV-051''s open ''at the market'' bajaro/bajalo discrepancy closed in favor of bajalo -
-    bajaro annotated INCORRECT/superseded. (2) ''market'' confirmed spelled ''Bajal'', not ''Bajar'' -
-    5 legacy import entries (Market/mart/hat./Market price/prevailing price, all ''Bajar''-spelled) annotated
-    SPELLING CORRECTED/superseded, nothing deleted; the pre-existing correctly-spelled ''market''->''Bajal''
-    entry (previously SUPERSEDED only because variant ''ha·ti'' was VERIFIED) promoted to VERIFIED/HIGH,
-    coexists with ha·ti as a legitimate variant (loanword vs likely-native term), not a conflict. (3)
-    Clarified that -chi locative forms (Bajalchi/ Skulchi/Nokchi/Buringchi and the NV-051 to-X entries)
-    canonically occur inside present-continuous ''going to X'' sentences, corroborated by pre-existing
-    VERIFIED ''I am going to the market.''->''Anga bajalchi re·angenga.'' - usage notes appended to 8
-    dictionary entries and RULE-044 native_notes. This is a pragmatic clarification, not a revision of
-    RULE-044''s core claim: -chi remains the movement- to locative suffix, continuous sense comes from
-    the paired verb. No new dictionary keys added (annotation/promotion pass only). No engine code touched.
-    Test suite 155/155, repository-intelligence.js 0 new violations. compiled_dict.json verified: ''at
-    the market''-> ''bajalo'', ''market''->''Bajal'', both correct. Claude A has no active task and no
-    open linguistic items outstanding.'
+  current_task_prior6: '2026-08-02, NV-051 CLOSED: -chi/-o locative contrast confirmed general, closing
+    the productivity question RULE-044 had explicitly left open ("does the movement-to/-chi vs stationary/-o
+    contrast hold beyond where-question forms?"). Thangseng direct relay: "chi cannot mean ''at''. chi
+    carries a sense of motion to. At is locative ''o''." with 5 noun-locative pairs (market/school/home/river/forest).
+    Surfaced that several pre-existing dictionary entries had conflated both senses under one -chi form
+    glossed "at X" - annotated 4 as INCORRECT GLOSS/superseded (Bajalchi, Skulchi, Nokchi, Buringchi,
+    plus their dotted-spelling duplicates), nothing deleted. Two pre-existing entries are genuine open
+    discrepancies rather than clear errors (chiko vs chibimao for "at the river"; bajaro vs bajalo for
+    "at the market", likely r/l variance) - flagged, not resolved, not urgent. One pre-existing correct
+    entry ("at the school"->"skulo") promoted to VERIFIED/HIGH. 10 new entries added for the confirmed
+    pairs. RULE-044''s second claim upgraded needs_native_validation -> verified, launch priority P2 ->
+    P0. 5 new Check-C self-consistency conflicts (intentional, old-superseded- entry-vs-new-correct-entry
+    duplicate keys) added to known_dictionary_conflicts.json baseline with citation in this log and THANGSENG_NATIVE_VALIDATION.md.
+    No engine code touched. Test suite 155/155, repository-intelligence.js 0 new violations after full
+    rebuild + allowlist update. compiled_dict.json verified to resolve all 10 pairs correctly (Claude
+    B''s VERIFIED-preference fix from earlier this session picks the right value automatically). Claude
+    A has no active task and no open linguistic items outstanding.'
   next_action_prior6: null
   next_action_prior5: null
   next_action_prior4: null
-  next_action_prior3: null
-  next_action_prior2: '2026-08-18 (Claude A, this session''s close): re-keyed master_dictionary.json''s
+  next_action_prior3: '2026-08-18 (Claude A, this session''s close): re-keyed master_dictionary.json''s
     "where?" -> Bao entry to "where (object placement)" -- it was still compiling as the generic "where?"
     answer despite NV-054 (2026-08-03) already establishing Bao is object- placement-only, not general
     "where?". No new NV number; cited existing NV-054, since Project Owner re-supplied the same native
@@ -1414,6 +1403,39 @@ claude_a:
     (3) 138/139/140 hortative RULE 2 table internal inconsistency needs native re-confirmation. (4) If
     Project Owner wants superseded rows physically deleted rather than retained-and- tagged, that''s a
     policy change to raise explicitly, not assume.'
+  next_action_prior2: '2026-08-22 (Claude A, session close, governance): completed Project Owner-directed
+    Role Self-Audit (docs/CLAUDE_A_ROLE_SELF_AUDIT_20260822.md, ROLE HEALTH: NEEDS CORRECTION) and established
+    .ai/CLAUDE_A_OPERATING_GOVERNANCE.md as mandatory reading every session (see operating_governance
+    field above for full content summary). No linguistic/dictionary work this session -- explicitly deferred
+    by Project Owner instruction. Two concrete next tasks are ready under the new governance: (1) the
+    410-entry classifier backlog, to be resolved via CLAUDE_A_OPERATING_GOVERNANCE.md Sec 6''s rule ->
+    spot-check -> derive -> propagate -> QA sequence, NOT bulk-generated blindly; (2) the "answer" Aganchaka/Aganchakani
+    POS/sense default, unresolved since NV-077, to be explicitly decided per Sec 10 rather than left as
+    an implicit pickPrimary tie-break. Standing background: docs/THANGSENG_RELAY_BATCH_20260820.md (149
+    items) still drafted, not sent -- re-run the A/B/C/D/E classification pass against it first, since
+    some items may now resolve as class B under the new governance rather than needing relay. Gate green
+    throughout, zero drift: 8132/8132 entries, 218/218 tests, repository-intelligence.js 0 new violations
+    (verified 3x this session, including after two mid-session rebases against concurrent Claude B governance
+    work on the same two files). Pushed 0c1c721, then 86ffb26 (post-rebase). See docs/CLAUDE_A_SESSION_MIGRATION_20260822.md
+    for full detail.'
+  current_task_prior7: '2026-08-02, NV-052 CLOSED: market spelling and bajaro/bajalo discrepancy closed,
+    -chi present-continuous usage clarified (Project Owner direct decision, not a Thangseng relay this
+    time). (1) NV-051''s open ''at the market'' bajaro/bajalo discrepancy closed in favor of bajalo -
+    bajaro annotated INCORRECT/superseded. (2) ''market'' confirmed spelled ''Bajal'', not ''Bajar'' -
+    5 legacy import entries (Market/mart/hat./Market price/prevailing price, all ''Bajar''-spelled) annotated
+    SPELLING CORRECTED/superseded, nothing deleted; the pre-existing correctly-spelled ''market''->''Bajal''
+    entry (previously SUPERSEDED only because variant ''ha·ti'' was VERIFIED) promoted to VERIFIED/HIGH,
+    coexists with ha·ti as a legitimate variant (loanword vs likely-native term), not a conflict. (3)
+    Clarified that -chi locative forms (Bajalchi/ Skulchi/Nokchi/Buringchi and the NV-051 to-X entries)
+    canonically occur inside present-continuous ''going to X'' sentences, corroborated by pre-existing
+    VERIFIED ''I am going to the market.''->''Anga bajalchi re·angenga.'' - usage notes appended to 8
+    dictionary entries and RULE-044 native_notes. This is a pragmatic clarification, not a revision of
+    RULE-044''s core claim: -chi remains the movement- to locative suffix, continuous sense comes from
+    the paired verb. No new dictionary keys added (annotation/promotion pass only). No engine code touched.
+    Test suite 155/155, repository-intelligence.js 0 new violations. compiled_dict.json verified: ''at
+    the market''-> ''bajalo'', ''market''->''Bajal'', both correct. Claude A has no active task and no
+    open linguistic items outstanding.'
+  next_action_prior7: null
 claude_c:
   status: active
   role: Read-only independent QA/repository auditor. No commits, no linguistic or engineering decisions
