@@ -1,5 +1,5 @@
 repository:
-  head: 13d951c
+  head: 9ef4603
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -7,6 +7,14 @@ repository:
     to review everything since this checkpoint; continue from actual repo state. Do NOT create follow-up
     commits solely to update `head` to match itself - that is a contradiction (see prior "fix stale head
     hash" commits 9558ea6 etc., now superseded by this convention).'
+  last_updated_correction_20260823: '2026-08-23 (Claude A, resume-sync correction): `head` above was 13d951c
+    at commit 7467063 (the CLAUDE_A_SESSION_MIGRATION_20260822C session close), but 7467063''s actual
+    git parent was 5c5b633 (Claude B''s confidence-schema steps 1-2 + merge of NV-089/090/091, landed
+    on origin/main before that session-close commit was authored) -- 13d951c was itself an ancestor of
+    5c5b633, not the immediate prior state. Corrected head to 5c5b633 per the file''s own stated convention.
+    No repo content changed by this correction, pointer-only. Build gate reverified clean at actual current
+    HEAD (7467063, == origin/main): 220/220 tests, 8159 entries, 0 new repository-intelligence violations
+    (Check G confidence-schema check included).'
   last_updated: '2026-08-22b (Claude B, session close/migration): resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260822.md,
     synced past Claude C''s self-pushed 1dae44e (data-citation docs only), then built docs/ PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
     -- the AI-001 subclass (b) auto-enumeration flagged as the next concrete engineering step. See claude_b.next_action
@@ -176,7 +184,7 @@ claude_a:
     raw NV/ dictionary-entry counts in favor of rule-generalization and reduced rework. Not a replacement
     for `.ai/SESSION_BOOTSTRAP.md` Rules 1-12 -- sits on top of them as the linguistic-reasoning-specific
     layer.'
-  next_action: 'Next Claude A session, in priority order: (1) yes = Oe/Am/Hoe three-way reconciliation
+  next_action_prior_20260822c_yes: 'Next Claude A session, in priority order: (1) yes = Oe/Am/Hoe three-way reconciliation
     — Am is what''s ACTUALLY shipping at runtime (pre-existing corrections.json override), Oe is master''s
     VERIFIED tag, Hoe is a third relay-confirmed candidate used sentence-internally elsewhere. This is
     the highest-priority open item, needs an explicit Thangseng question, not a guess. (2) sit=aonga vs
@@ -419,7 +427,38 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-22, Claude A — NV-089/089b/090/091: full THANGSENG_RELAY_TABLE_20260821B.md processed
+  current_task: '2026-08-23 session close, Claude A: NV-092 (41-item batch) + NV-093 (48-item batch)
+    Project Owner chat relays processed, plus WORKSTATE.yaml YAML-integrity fixes (2 of my own,
+    1 pre-existing in Claude B''s 548cc61) and a clean merge with Claude B''s concurrent audit-only
+    session. Full session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md — read
+    that first, it supersedes the summary below for anything it covers. Final HEAD 9ef4603, verified
+    == origin/main by direct comparison. Gate green throughout (220/220 tests, 0 new violations).'
+  current_task_prior_20260823_nv092only: '2026-08-23, Claude A — NV-092: 41-item Project Owner chat-relay batch processed. Closed
+    priority items stand-up/take-revenge; closed they-are-working/it-is-not-good (flagged at NV-089
+    close) with new VERIFIED forms, though corrections.json ships a third, unreconciled form for both
+    (not force-fixed). Extended Anga/Ango pattern (i dont have, i have a pen + new pen loanword). 4 new
+    coexisting alt-forms. Fixed my-mother duplicate-representation gap + 2 clean Rule-8 stale overrides.
+    FLAGGED not resolved: i understand (uia vs ma·sia), lets drink/eat (-ha vs -na), skenga/sikenga
+    paradigm, i-want-to-work root choice. Also corrected WORKSTATE.yaml''s own stale head pointer on
+    resume (was 13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already
+    landed before the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations.
+    See docs/THANGSENG_NATIVE_VALIDATION.md NV-092 for full detail.'
+  next_action: 'Next Claude A session, in priority order: (1) yes=Oe/Am/Hoe three-way (still top, unchanged
+    — Oe is actually UNVERIFIED per its own confidence field, not VERIFIED as earlier docs claimed;
+    corrected characterization, still needs a Thangseng question between Am and Hoe). (2) they-are-working
+    and it-is-not-good: corrections.json ships a third form for each, disagreeing with both the old
+    superseded master row and this session''s new VERIFIED row — needs reconciliation. (3) i understand
+    (uia vs ma·sia, now 2 data points each direction), lets drink/eat (-ha vs -na, note the -na forms
+    fit the lets-play/sit/work paradigm better), skenga/sikenga paradigm, i-want-to-work root (kam-ka·a
+    vs daka) — all flagged in NV-092, none resolved. (4) Claude B''s confidence-schema step 3: a 336-row
+    manual triage is queued for Claude A (see docs/PROPOSAL_CONFIDENCE_SCHEMA_20260822.md and
+    docs/CLAUDE_B_SESSION_MIGRATION_20260822C.md) — not started, large task, needs its own session.
+    (5) sit=aonga vs a·song·a (NV-080), stay=donga vs dongchak·a/dongdang·a — still open, unchanged
+    (note: donga is now also the new VERIFIED "live" per NV-093 — worth flagging explicitly to
+    Thangseng if/when stay is reconciled, not assuming). (6) 10 pre-existing exact-duplicate rows
+    in master_dictionary.json (confirmed predate 2026-08-23 via git show against d89d5da) — separate
+    backlog item, not actioned. Full detail and resume instructions: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md.'
+  current_task_prior_new: '2026-08-22, Claude A — NV-089/089b/090/091: full THANGSENG_RELAY_TABLE_20260821B.md processed
     across 4 sub-batches (conflicts, tied-candidates, new vocab, then 3 more direct-relay batches from
     the Project Owner covering the remainder of the table). See docs/THANGSENG_NATIVE_VALIDATION.md NV-089/089b/090/091
     entries for full detail. Session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260822C.md.
@@ -1549,7 +1588,7 @@ claude_b:
     Claude A/D territory). Re-verified wait/salt/king/answer/my house/angry/stand
     all still correct, no regression. Full gate clean before and after (220/220
     tests, 0 new repository-intelligence violations) -- confirms audit introduced
-    no drift, as expected since no files were touched.
+    no drift, as expected since no files were touched.'
   next_action_prior_20260823B: '2026-08-22b (Claude B, session close/migration, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260822.md):
     synced clean past Claude C''s self-pushed 1dae44e (two new native-citation docs, king=Raja/film=film
     -- data-side only, does not close AI-001, see .ai/WORKSTATE.yaml claude_c.self_push_note). Built docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
