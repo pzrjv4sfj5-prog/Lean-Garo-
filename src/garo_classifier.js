@@ -281,7 +281,25 @@ export function parseCountingPhrase(input) {
   const englishNoun = words.slice(consumed).join(' ');
   if (!englishNoun) return null;
   const singular = IRREGULAR_PLURALS[englishNoun] || englishNoun.replace(/s$/, '');
-  return { count, englishNoun: singular, originalNoun: englishNoun };
+  // Item 2 fix (2026-08-23, Claude B, session migration): this function
+  // has no dictionary access (no import here), so it can't itself know
+  // whether the multi-word remainder ("long sticks") is a genuine
+  // multi-word noun ("sugar cane") or an [ADJ][NOUN] phrase where only
+  // the last word is the actual noun. Rather than guess here, expose
+  // BOTH candidates and let the caller (translationEngine.js, which
+  // already has dictionary lookups) try the full phrase first — as
+  // today, so genuine multi-word nouns are unaffected — and fall back
+  // to `nounOnly` only if that fails. This is purely a parsing-coverage
+  // change: no new vocabulary, no adjective translation, no word-order
+  // decision (the adjective's Garo form is simply not looked up at
+  // this stage, per the migration doc's explicit scope: "still feed
+  // the resolved noun into countNoun() unchanged").
+  const nounWords = englishNoun.split(' ');
+  const lastWord = nounWords[nounWords.length - 1];
+  const nounOnly = nounWords.length > 1
+    ? (IRREGULAR_PLURALS[lastWord] || lastWord.replace(/s$/, ''))
+    : singular;
+  return { count, englishNoun: singular, originalNoun: englishNoun, nounOnly };
 }
 
 export function countNoun(garoNoun, count, englishNoun) {

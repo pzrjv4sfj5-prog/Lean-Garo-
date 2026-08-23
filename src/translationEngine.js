@@ -173,14 +173,33 @@ export async function translate(input) {
     // whenever the noun was counted rather than looked up bare
     // ("two oranges" kept using the old wrong word even after "orange"
     // alone was fixed).
-    const garoNoun = corrections?.[countPhrase.englishNoun]
+    let resolvedNoun = countPhrase.englishNoun;
+    let garoNoun = corrections?.[countPhrase.englishNoun]
       || corrections?.[singular]
       || lookupPhrase(countPhrase.englishNoun)
       || lookupGaro(countPhrase.englishNoun)
       || lookupPhrase(singular)
       || lookupGaro(singular);
+    // Item 2 fix (2026-08-23, Claude B, session migration): the above
+    // chain only ever tried the full remainder after the count
+    // ("long stick" for "three long sticks") — a genuine dictionary
+    // entry for the bare noun ("stick") was unreachable whenever an
+    // adjective sat between the number and the noun, so the whole
+    // phrase fell through to the weaker sov-assembly fallback (0.75)
+    // instead of classifier composition (0.96). Fall back to
+    // parseCountingPhrase()'s nounOnly (the last word alone) only when
+    // the full-phrase attempt above fails and an adjective is actually
+    // present (nounOnly !== singular) — genuine multi-word nouns
+    // ("sugar cane") are unaffected since they resolve on the first
+    // attempt and never reach this branch.
+    if (!garoNoun && countPhrase.nounOnly !== singular) {
+      garoNoun = corrections?.[countPhrase.nounOnly]
+        || lookupPhrase(countPhrase.nounOnly)
+        || lookupGaro(countPhrase.nounOnly);
+      if (garoNoun) resolvedNoun = countPhrase.nounOnly;
+    }
     if (garoNoun) {
-      const classifierResult = countNoun(garoNoun, countPhrase.count, countPhrase.englishNoun);
+      const classifierResult = countNoun(garoNoun, countPhrase.count, resolvedNoun);
       // countNoun returns null for counts it can't confidently handle yet
       // (currently: 20+, pending native-speaker confirmation of how
       // classifiers compose with multi-word number forms — see

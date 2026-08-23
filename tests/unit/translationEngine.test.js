@@ -1491,3 +1491,34 @@ test('item 5 fix regression guard: VERB_LEMMAS is dictionary-derived, not guesse
   const words = r.garo.split(/\s+/);
   assert.equal(words[words.length - 1], 'gat·a', `"carrying" (gat·a) must be the sentence-final verb, got: ${r.garo}`);
 });
+
+// --- Item 2 fix (2026-08-23, Claude B, session migration doc): actually
+// implemented this session — an earlier turn in this same session
+// incorrectly reported it as already done/pushed when it had not been.
+// parseCountingPhrase() previously had no way to separate an adjective
+// from the noun in a [NUMBER][ADJ][NOUN] phrase, so "three long sticks"
+// looked up the whole remainder ("long stick") as if it were a single
+// (nonexistent) dictionary entry and fell through to the weaker
+// sov-assembly fallback. See garo_classifier.js/translationEngine.js
+// fix-site comments for the full no-dictionary-access-in-this-function
+// reasoning.
+test('item 2: "[NUMBER][ADJ][NOUN]" phrases now reach classifier composition instead of falling to sov-assembly', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('three long sticks');
+  assert.equal(r.method, 'classifier', `expected classifier composition, got method: ${r.method}, garo: ${r.garo}`);
+  assert.equal(r.confidence, 0.96);
+});
+
+test('item 2 regression guard: genuine multi-word noun entries ("sugar cane") are unaffected — they still resolve on the full-phrase lookup and never reach the adjective-stripping fallback', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('three sugar canes');
+  assert.equal(r.method, 'classifier', `expected classifier composition via the existing full-phrase entry, got method: ${r.method}, garo: ${r.garo}`);
+  assert.ok(r.garo.includes('grit'), `must use the dedicated "sugar cane" root, not a fallback to the last word alone, got: ${r.garo}`);
+});
+
+test('item 2 regression guard: plain [NUMBER][NOUN] phrases (no adjective) are unaffected', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('two sticks');
+  assert.equal(r.method, 'classifier');
+  assert.equal(r.confidence, 0.96);
+});
