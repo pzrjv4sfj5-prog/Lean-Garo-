@@ -1,5 +1,5 @@
 repository:
-  head: 9ef4603
+  head: 598bea2
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -388,8 +388,10 @@ claude_a:
     session (docs/CLAUDE_A_SESSION_MIGRATION_20260815.md) stopped exactly at this boundary. Reproducible
     via `node scripts/resync-stale-overrides.mjs` (no --apply — dry run), the `skip_no_verified_match`
     bucket in its output.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - this session's close (2026-08-18). See
-    migration_doc_prior_20260817b for prior session.
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823B.md - this session's close (2026-08-23B).
+  migration_doc_prior_20260823: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md - prior session's close (2026-08-23).
+  migration_doc_prior_20260818: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - prior session's close (2026-08-18). See
+    migration_doc_prior_20260817b for the session before that.
   migration_doc_prior_20260817b: docs/CLAUDE_A_SESSION_MIGRATION_20260817B.md - prior session's close
     (2026-08-17b, NV-080 relay batch). See migration_doc_prior_20260816c for the session before that.
   migration_doc_prior_20260817: docs/CLAUDE_A_SESSION_MIGRATION_20260817.md - prior session's close (2026-08-17,
@@ -427,7 +429,18 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-23 session close, Claude A: NV-092 (41-item batch) + NV-093 (48-item batch)
+  current_task: '2026-08-23B session close, Claude A: Project Owner re-pasted a 16-item "validated
+    data" batch with an "eliminate all old ones" instruction; all 16 were already VERIFIED/HIGH from
+    NV-092/093 (prior session), so no new native judgment made. Declined the eliminate-old framing
+    (citation discipline: retained rows already lose to VERIFIED at compile time, deletion is not
+    the fix). Fixed 1 clean Rule-8 stale override (gossip, pre-simplification spelling). Found and
+    FLAGGED (not fixed) 2 runtime gaps needing judgment: help resolves to uncited "Betoi" instead of
+    either VERIFIED sense (dakchakani/dakchaka); log resolves to classifier stem "dot" instead of
+    VERIFIED noun "boltong". Rebased cleanly through a concurrent Claude B push (item 3, sov-assembly
+    fix), rebuilt dist, re-verified live. Full session-close migration doc:
+    docs/CLAUDE_A_SESSION_MIGRATION_20260823B.md. Final HEAD 598bea2, verified == origin/main.
+    Gate green throughout (220/220 tests, 0 new violations).'
+  current_task_prior_20260823B: '2026-08-23 session close, Claude A: NV-092 (41-item batch) + NV-093 (48-item batch)
     Project Owner chat relays processed, plus WORKSTATE.yaml YAML-integrity fixes (2 of my own,
     1 pre-existing in Claude B''s 548cc61) and a clean merge with Claude B''s concurrent audit-only
     session. Full session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md — read
@@ -443,7 +456,12 @@ claude_a:
     resume (was 13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already
     landed before the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations.
     See docs/THANGSENG_NATIVE_VALIDATION.md NV-092 for full detail.'
-  next_action: 'Next Claude A session, in priority order: (1) yes=Oe/Am/Hoe three-way (still top, unchanged
+  next_action: 'Next Claude A session, in priority order: (0, new this session) help and log runtime
+    gaps: help=Betoi (uncited, zero master_dictionary match — pick between VERIFIED dakchakani/noun
+    and dakchaka/verb, or leave phrase_maps.js bare "help" key unset so it falls through) and
+    log=dot (classifier stem, from a July 2 counting-system commit — decide if bare "log" should
+    resolve to VERIFIED boltong instead, or if dot is intentionally correct for that key). Then,
+    unchanged from 20260823A: (1) yes=Oe/Am/Hoe three-way (still top, unchanged
     — Oe is actually UNVERIFIED per its own confidence field, not VERIFIED as earlier docs claimed;
     corrected characterization, still needs a Thangseng question between Am and Hoe). (2) they-are-working
     and it-is-not-good: corrections.json ships a third form for each, disagreeing with both the old
