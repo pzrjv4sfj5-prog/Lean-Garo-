@@ -40,6 +40,26 @@ for (const [key, val] of Object.entries(compiledDictRaw)) {
   EN_INDEX[key.toLowerCase().trim()] = val;
 }
 
+// Item 5 fix (2026-08-23, Claude B, session migration): a mechanically-
+// derived set of English verb lemmas, built from the dictionary's own
+// "to X" headwords (939 of them, per prepare-data.js's bare-infinitive
+// aliasing pass). This is NOT a hand-picked or guessed verb list — every
+// entry here already exists in the source data specifically because
+// Claude A/D's own data-entry convention marks it as an infinitive
+// ("to see", "to fall (from height)"). Using it as a verb signal in
+// sentenceBuilder.js's sov-assembly fallback is a structural fix, not a
+// linguistic decision: it reuses a classification the dictionary source
+// already made, rather than inventing a new one (the RC-CANDIDATE-003/
+// 010 boundary is specifically about NOT inventing POS data — this
+// isn't that, since no new fact is being asserted here).
+export const VERB_LEMMAS = new Set();
+for (const key of Object.keys(compiledDictRaw)) {
+  if (key.startsWith('to ')) {
+    const lemma = key.slice(3).split('(')[0].trim().toLowerCase();
+    if (lemma) VERB_LEMMAS.add(lemma);
+  }
+}
+
 export function lookup(key) {
   const entry = EN_INDEX[key.toLowerCase().trim()];
   return entry ? normalizeEntry(entry) : null;

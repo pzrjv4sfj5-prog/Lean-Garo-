@@ -1459,12 +1459,35 @@ test('item 3 regression guard: single-predicate-adjective sentences (RC-CANDIDAT
   assert.ok(r.garo.includes('tusienga') || r.garo.includes('tu·si'), `verb must still resolve, got: ${r.garo}`);
 });
 
-test('item 3 regression guard: "did you see the two small dogs" — adjective ("small") now lands next to its noun', async () => {
+test('item 3/5 regression guard: "did you see the two small dogs" — adjective ("small") now lands next to its noun', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('did you see the two small dogs');
   const words = r.garo.split(/\s+/);
   const smallIdx = words.indexOf('Chon·a');
   const dogIdx = words.indexOf('Achak');
   assert.ok(smallIdx !== -1 && dogIdx !== -1, `both "small" and "dog" must be present, got: ${r.garo}`);
-  assert.equal(smallIdx, dogIdx + 1, `"small" must sit immediately after "dog", got: ${r.garo}`);
+  // Item 5's VERB_LEMMAS fix (below) additionally lets "see" be
+  // correctly identified as the verb instead of "small" - so "small"
+  // now keeps its original pre-noun position (small immediately BEFORE
+  // dog, matching natural English adjective-noun order) rather than the
+  // post-noun position from item 3's fix alone (which only had the
+  // false-positive suffix signal to go on, with "small" wrongly elected
+  // as the verb and appended after everything else).
+  assert.equal(dogIdx, smallIdx + 1, `"small" must sit immediately before "dog", got: ${r.garo}`);
+});
+
+test('item 5 fix: "did you see the two small dogs" — "see" (bare-root Garo verb, no suffix) is now correctly identified as the finite verb, not stranded as a nonverb', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('did you see the two small dogs');
+  const words = r.garo.split(/\s+/);
+  assert.equal(words[words.length - 1], 'Nia', `"see" (Nia) must be the sentence-final verb per SOV, got: ${r.garo}`);
+});
+
+test('item 5 fix regression guard: VERB_LEMMAS is dictionary-derived, not guessed — a definitive lemma match anywhere in the sentence takes priority over an ambiguous suffix match elsewhere', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  // "carrying" (lemma-confirmed: "to carry" exists) must still win over
+  // "tall" (only a suffix false-positive) even though "tall" precedes it.
+  const r = await translate('the tall man is carrying four heavy boxes to the river');
+  const words = r.garo.split(/\s+/);
+  assert.equal(words[words.length - 1], 'gat·a', `"carrying" (gat·a) must be the sentence-final verb, got: ${r.garo}`);
 });

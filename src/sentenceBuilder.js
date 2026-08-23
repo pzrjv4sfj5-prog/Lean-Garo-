@@ -34,7 +34,7 @@ import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
-import { lookup, lookupGaro } from './lookupEngine.js';
+import { lookup, lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { applyNegation, applyTense, stripToStem } from './morphologyEngine.js';
 import { STOP_WORDS, AUXILIARY_SKIP, MID_JOIN_CONNECTIVES } from './normalizationEngine.js';
 import { translate } from './translationEngine.js';
@@ -131,10 +131,43 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
   // Confirmed harmless for the true single-predicate-adjective case
   // ("a big dog is sleeping"/RC-CANDIDATE-018 tests): when only one word
   // matches, it's still elected as the (only) verb exactly as before.
-  const verbSignal = pairs.map(({ eng, garo: t }) => {
+  // Item 5 fix (2026-08-23, Claude B, session migration): the /·a$/
+  // suffix regex only catches verbs whose Garo form happens to carry a
+  // recognizable tense/mood suffix - bare-root Garo verb citations with
+  // no suffix at all ("Nia"=see) matched nothing, so "did you see the
+  // two small dogs" never identified "see" as the verb at all (confirmed
+  // live: old output put "Nia" among nonVerbs). Added VERB_LEMMAS (see
+  // lookupEngine.js) as a second, DEFINITIVE signal, checked against the
+  // ENGLISH word (not the Garo output), so it works regardless of which
+  // Garo suffix shape the translation happens to have.
+  //
+  // The two signals are NOT treated as equally trustworthy. lemmaSignal
+  // is ground truth (the dictionary's own "to X" classification);
+  // suffixSignal is a heuristic already known to false-positive on
+  // adjectives (item 3, above). Naively taking "last match wins" across
+  // both, as item 3's fix alone did, breaks exactly this sentence: "see"
+  // (true verb, lemma-confirmed) sits BEFORE "small" (false-positive
+  // suffix match, adjective) in English word order, so plain last-wins
+  // picked the adjective. Fix: whenever at least one lemma-confirmed
+  // verb exists anywhere in the sentence, that signal alone decides the
+  // verb (last such match, still per SOV convention) and the ambiguous
+  // suffix signal is ignored entirely. Only fall back to suffix-signal
+  // last-wins when no word matches VERB_LEMMAS at all - i.e. exactly the
+  // item 3 fix, preserved unchanged for verbs the 939-word lemma list
+  // doesn't happen to cover ("eat", "sleep", etc., confirmed missing).
+  const lemmaSignal = pairs.map(({ eng }) => {
+    const lw = eng.toLowerCase().replace(/[^a-z]/g,'');
+    return VERB_LEMMAS.has(lw)
+      || VERB_LEMMAS.has(lw.replace(/ing$/,''))
+      || VERB_LEMMAS.has(lw.replace(/ed$/,''))
+      || VERB_LEMMAS.has(lw.replace(/s$/,''));
+  });
+  const suffixSignal = pairs.map(({ eng, garo: t }) => {
     const e = lookup(eng.toLowerCase());
     return e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$|·a$/.test(t);
   });
+  const hasLemmaMatch = lemmaSignal.some(Boolean);
+  const verbSignal = hasLemmaMatch ? lemmaSignal : suffixSignal;
   let lastVerbIdx = -1;
   for (let i = verbSignal.length - 1; i >= 0; i--) {
     if (verbSignal[i]) { lastVerbIdx = i; break; }
