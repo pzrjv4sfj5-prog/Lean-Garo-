@@ -1,5 +1,5 @@
 repository:
-  head: 7467063
+  head: 9ef4603
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -427,7 +427,13 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-23, Claude A — NV-092: 41-item Project Owner chat-relay batch processed. Closed
+  current_task: '2026-08-23 session close, Claude A: NV-092 (41-item batch) + NV-093 (48-item batch)
+    Project Owner chat relays processed, plus WORKSTATE.yaml YAML-integrity fixes (2 of my own,
+    1 pre-existing in Claude B''s 548cc61) and a clean merge with Claude B''s concurrent audit-only
+    session. Full session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md — read
+    that first, it supersedes the summary below for anything it covers. Final HEAD 9ef4603, verified
+    == origin/main by direct comparison. Gate green throughout (220/220 tests, 0 new violations).'
+  current_task_prior_20260823_nv092only: '2026-08-23, Claude A — NV-092: 41-item Project Owner chat-relay batch processed. Closed
     priority items stand-up/take-revenge; closed they-are-working/it-is-not-good (flagged at NV-089
     close) with new VERIFIED forms, though corrections.json ships a third, unreconciled form for both
     (not force-fixed). Extended Anga/Ango pattern (i dont have, i have a pen + new pen loanword). 4 new
@@ -447,7 +453,11 @@ claude_a:
     vs daka) — all flagged in NV-092, none resolved. (4) Claude B''s confidence-schema step 3: a 336-row
     manual triage is queued for Claude A (see docs/PROPOSAL_CONFIDENCE_SCHEMA_20260822.md and
     docs/CLAUDE_B_SESSION_MIGRATION_20260822C.md) — not started, large task, needs its own session.
-    (5) sit=aonga vs a·song·a (NV-080), stay=donga vs dongchak·a/dongdang·a — still open, unchanged.'
+    (5) sit=aonga vs a·song·a (NV-080), stay=donga vs dongchak·a/dongdang·a — still open, unchanged
+    (note: donga is now also the new VERIFIED "live" per NV-093 — worth flagging explicitly to
+    Thangseng if/when stay is reconciled, not assuming). (6) 10 pre-existing exact-duplicate rows
+    in master_dictionary.json (confirmed predate 2026-08-23 via git show against d89d5da) — separate
+    backlog item, not actioned. Full detail and resume instructions: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md.'
   current_task_prior_new: '2026-08-22, Claude A — NV-089/089b/090/091: full THANGSENG_RELAY_TABLE_20260821B.md processed
     across 4 sub-batches (conflicts, tied-candidates, new vocab, then 3 more direct-relay batches from
     the Project Owner covering the remainder of the table). See docs/THANGSENG_NATIVE_VALIDATION.md NV-089/089b/090/091
