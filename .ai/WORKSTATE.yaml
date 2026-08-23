@@ -1,5 +1,5 @@
 repository:
-  head: 9ef4603
+  head: 1812d0b
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -1575,7 +1575,53 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-23B (Claude B, session close/migration, audit-only session
+  next_action: '2026-08-23C (Claude B, session close/migration, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260823B.md): closed all 4 ENGINEERING
+    items from that audit''s backlog. (1) Stale corrections.json overrides
+    (song/telling/studying) synced to master VERIFIED values, pushed 548cc61.
+    (2) parseCountingPhrase() adjective-slot gap fixed -- [NUMBER][ADJ][NOUN]
+    phrases now reach classifier composition (0.96) instead of sov-assembly
+    (0.75); the function has no dictionary access so it exposes both a
+    full-phrase candidate (tried first, genuine multi-word nouns like
+    "sugar cane" unaffected) and a nounOnly fallback for the caller,
+    pushed 1812d0b. **Self-correction, logged not hidden:** an earlier turn
+    this same session incorrectly reported item 2 as already done when only
+    investigation had happened -- caught while writing this close record,
+    actually implemented before closing. (3) sov-assembly fixed two bugs:
+    sibilant plurals (boxes->boxe) silently dropped nouns entirely (es$
+    fallback strip added); adjectives ending in ·a were misclassified as
+    verbs via an overly-broad suffix regex and stranded at the sentence tail
+    -- no POS data exists anywhere in this repo (confirmed RC-CANDIDATE-003)
+    to tell adjectives from verbs, so fixed structurally instead of by
+    guessing: only the LAST verb-signal match is elected as the finite verb,
+    earlier matches fall back to nonVerbs preserving original order (keeps
+    adjectives adjacent to their noun with zero new linguistic claims),
+    pushed 86b9016. (4) Item 5''s remaining half (verb "see" never detected
+    at all, bare-root Garo verbs like Nia carry no suffix) fixed via new
+    VERB_LEMMAS (lookupEngine.js) -- mechanically derived from the
+    dictionary''s own 939 "to X" headwords (Claude A/D''s existing
+    infinitive-marking convention, reused not invented); a definitive lemma
+    match takes priority over the ambiguous suffix regex when both exist in
+    one sentence, pushed 35be4cb. Gate green throughout, every commit:
+    229/229 tests by close (up from 220), repository-intelligence PASSED 0
+    new violations every time, compiled_dict.json byte-identical (all 4
+    fixes are engine-only, zero master_dictionary.json/corrections.json
+    content edits beyond item 1''s mechanical value sync). Two clean merges
+    of concurrent Claude A pushes mid-session (NV-092/NV-093 batch + session
+    close; then a Rule 8 gossip fix + dist rebuild) -- no key overlap, gate
+    re-verified green after each. **Flagged for Claude A, not attempted
+    (DATA/LINGUISTIC, correctly out of Claude B scope):** (a) no productive
+    plural rule -- "dog"/"dogs" both ship the identical Achak string, needs
+    a ruling on plural-marking scope (is -rang productive for all nouns or
+    only animate, per the confirmed Bi·sarang case) before any engineering
+    rule can be written; (b) bland/tasteless compiles to a corrupted
+    fragment ·brok· (bare raka marks) -- master rows UNVERIFIED, needs
+    Claude A/D to supply a correct value; (c) you=Nang in the dictionary but
+    every runtime path ships Na·a instead -- could be a legitimate
+    nominative/oblique case distinction, not asserted as a defect, needs
+    Claude A confirmation either way. Full detail:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260823C.md.'
+  next_action_prior_20260823B: '2026-08-23B (Claude B, session close/migration, audit-only session
     per explicit Project Owner instruction -- AI-001 backlog set aside, no linguistic
     data modified): full real-time runtime audit, 51 cases through translate(),
     see docs/CLAUDE_B_SESSION_MIGRATION_20260823B.md for complete findings. Zero
