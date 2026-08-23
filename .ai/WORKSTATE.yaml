@@ -1536,7 +1536,21 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-22b (Claude B, session close/migration, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260822.md):
+  next_action: '2026-08-23B (Claude B, session close/migration, audit-only session
+    per explicit Project Owner instruction -- AI-001 backlog set aside, no linguistic
+    data modified): full real-time runtime audit, 51 cases through translate(),
+    see docs/CLAUDE_B_SESSION_MIGRATION_20260823B.md for complete findings. Zero
+    code/data changes this session. 5 root-caused engineering findings held for
+    next session, ordered by recommended sequence in the migration doc (stale-override
+    resync in corrections.json for song/telling/studying; parseCountingPhrase adjective-slot
+    gap in garo_classifier.js; sov-assembly dropped-noun + word-order defects, likely
+    shared root cause, needs joint investigation before fixing either; plural-marking
+    gap, engineering/linguistic boundary unclear; bland/tasteless data corruption,
+    Claude A/D territory). Re-verified wait/salt/king/answer/my house/angry/stand
+    all still correct, no regression. Full gate clean before and after (220/220
+    tests, 0 new repository-intelligence violations) -- confirms audit introduced
+    no drift, as expected since no files were touched.
+  next_action_prior_20260823B: '2026-08-22b (Claude B, session close/migration, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260822.md):
     synced clean past Claude C''s self-pushed 1dae44e (two new native-citation docs, king=Raja/film=film
     -- data-side only, does not close AI-001, see .ai/WORKSTATE.yaml claude_c.self_push_note). Built docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
     -- the AI-001 subclass (b) auto-enumeration flagged as the first concrete engineering action under
