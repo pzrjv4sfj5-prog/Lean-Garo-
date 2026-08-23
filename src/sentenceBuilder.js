@@ -80,10 +80,19 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
     // confirmed root cause risks masking genuine ed$/s$-stripped verbs.
     const ingStripped = lw.replace(/ing$/,'');
     const ingLookup = (ingStripped !== lw && !(ingStripped in PRONOUN_MAP)) ? lookupGaro(ingStripped) : null;
+    // Item 3 fix (2026-08-23, Claude B, session migration): the s$-only
+    // strip left sibilant-ending plurals ("boxes"->"boxe", "wishes"->
+    // "wishe") unresolved, so the noun was silently dropped from output
+    // entirely rather than surfacing wrong or [UNKNOWN] - confirmed live
+    // via "...four heavy boxes..." translating with box/bak·so completely
+    // absent. Try the s$ strip first (existing, correct for the common
+    // case: "dogs"->"dog"), then fall back to an es$ strip only if that
+    // failed to resolve ("boxes"->"box"). Ordered so the pre-existing s$
+    // path is untouched for every word it already handled correctly.
     return lookupPhrase(lw) || lookupGaro(lw)
       || IRREGULAR_VERBS[lw]
       || ingLookup || lookupGaro(lw.replace(/ed$/,''))
-      || lookupGaro(lw.replace(/s$/,'')) || null;
+      || lookupGaro(lw.replace(/s$/,'')) || lookupGaro(lw.replace(/es$/,'')) || null;
   });
   const validTranslations = translated.filter(Boolean);
   if (!validTranslations.length) return null;
@@ -97,15 +106,42 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
   // already applies to its own verb resolution — without it, future
   // tense on an irregular verb here would double-inflect.
   let lastVerbIsIrregular = false;
-  pairs.forEach(({ eng, garo: t }) => {
-    const lw = eng.toLowerCase().replace(/[^a-z]/g,'');
+  // Item 3 fix (2026-08-23, Claude B, session migration): the /·a$/
+  // verb-signal regex (added for the "eat"/"go" root-form fix above)
+  // also matches many attributive adjectives, since Garo's raka+a
+  // pattern is used for both stative predicates AND adjective glosses
+  // ("Chu·a"=tall, "Chon·a"=small). No POS data exists anywhere in this
+  // repo to tell these apart (confirmed RC-CANDIDATE-003, see
+  // grammarEngine.js's RC-CANDIDATE-010 comment) - genuinely an
+  // architectural boundary, not a gap to guess around by inventing a
+  // tall/small/etc. exclusion list (same failure mode RC-CANDIDATE-003
+  // already rejected for "down"/"bed").
+  // Reproduced: "the tall man is carrying four heavy boxes to the
+  // river" put BOTH "tall"->Chu·a and "carrying"->gat·a in `verbs`,
+  // stranding the adjective at the sentence tail, disjoint from "man".
+  // Fix avoids guessing which word IS an adjective; instead it uses a
+  // structural fact already implicit in this function's own design (one
+  // verbs[] entry receives the tense/negation suffix) - a sentence has
+  // exactly one finite predicate, so when multiple words match the
+  // verb-signal regex, only the LAST one (closest to the SOV-final verb
+  // slot this whole engine assumes) is treated as the verb; earlier
+  // matches fall back to nonVerbs, which preserves their original
+  // relative position - keeping an attributive adjective adjacent to
+  // the noun it preceded, with no need to know it's an adjective at all.
+  // Confirmed harmless for the true single-predicate-adjective case
+  // ("a big dog is sleeping"/RC-CANDIDATE-018 tests): when only one word
+  // matches, it's still elected as the (only) verb exactly as before.
+  const verbSignal = pairs.map(({ eng, garo: t }) => {
     const e = lookup(eng.toLowerCase());
-    // Original regex only caught enga/aha/gen/bo/na endings and missed the
-    // common present-tense pattern (root+raka+a, e.g. "Cha·a", "Re·a") —
-    // meaning words like "eat"/"go" were classified as nonVerbs here and
-    // never received tense/negation suffixes at all. Added ·a as a verb
-    // signal (raka immediately before a trailing 'a').
-    if (e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$|·a$/.test(t)) {
+    return e?.pos === 'verb' || /enga$|aha$|gen$|bo$|na$|·a$/.test(t);
+  });
+  let lastVerbIdx = -1;
+  for (let i = verbSignal.length - 1; i >= 0; i--) {
+    if (verbSignal[i]) { lastVerbIdx = i; break; }
+  }
+  pairs.forEach(({ eng, garo: t }, i) => {
+    const lw = eng.toLowerCase().replace(/[^a-z]/g,'');
+    if (i === lastVerbIdx) {
       verbs.push(t);
       lastVerbIsIrregular = !!(IRREGULAR_VERBS[lw] || IRREGULAR_VERBS[lw.replace(/ing$|ed$|es$|s$/, '')]);
     } else {

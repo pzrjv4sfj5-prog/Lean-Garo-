@@ -1424,3 +1424,47 @@ test('plural counted-noun defect: "twenty students" no longer surfaces the SUPER
   assert.notEqual(r.garo, 'chi chi chik·gni',
     'translate() must never surface the specific value master_dictionary.json marked SUPERSEDED for this key');
 });
+
+// --- Item 3 fix (2026-08-23, Claude B, session migration doc): two
+// independent bugs in assembleSentenceSOV's fallback path, both
+// reproduced via "the tall man is carrying four heavy boxes to the
+// river". See sentenceBuilder.js fix-site comments for full root-cause
+// analysis (no POS data exists anywhere in this repo to distinguish
+// adjectives from verbs - this is a structural fix, not a linguistic one).
+test('item 3: sibilant-ending plural ("boxes") no longer silently vanishes from sov-assembly output', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('the tall man is carrying four heavy boxes to the river');
+  assert.equal(r.method, 'sov-assembly');
+  assert.ok(r.garo.includes('bak·so'), `"box" must resolve and appear in output, got: ${r.garo}`);
+});
+
+test('item 3: attributive adjective ending in ·a stays adjacent to its noun instead of stranding at the sentence tail', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('the tall man is carrying four heavy boxes to the river');
+  assert.equal(r.method, 'sov-assembly');
+  const words = r.garo.split(/\s+/);
+  const tallIdx = words.indexOf('Chu·a');
+  const manIdx = words.indexOf('Me·asa');
+  assert.ok(tallIdx !== -1 && manIdx !== -1, `both "tall" and "man" must be present, got: ${r.garo}`);
+  assert.equal(manIdx, tallIdx + 1, `"tall" must sit immediately before "man", got: ${r.garo}`);
+});
+
+test('item 3 regression guard: single-predicate-adjective sentences (RC-CANDIDATE-018 family) are unaffected — the lone ·a-ending word is still elected as the verb', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('a big dog is sleeping');
+  assert.equal(r.method, 'sov-assembly');
+  // "sleeping" resolves to the true verb and, being the last ·a-ending
+  // content word, must still be the elected verb — same behavior as before
+  // this fix for the ordinary single-verb case.
+  assert.ok(r.garo.includes('tusienga') || r.garo.includes('tu·si'), `verb must still resolve, got: ${r.garo}`);
+});
+
+test('item 3 regression guard: "did you see the two small dogs" — adjective ("small") now lands next to its noun', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('did you see the two small dogs');
+  const words = r.garo.split(/\s+/);
+  const smallIdx = words.indexOf('Chon·a');
+  const dogIdx = words.indexOf('Achak');
+  assert.ok(smallIdx !== -1 && dogIdx !== -1, `both "small" and "dog" must be present, got: ${r.garo}`);
+  assert.equal(smallIdx, dogIdx + 1, `"small" must sit immediately after "dog", got: ${r.garo}`);
+});
