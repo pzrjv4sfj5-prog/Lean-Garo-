@@ -1,5 +1,5 @@
 repository:
-  head: ca2e9bc
+  head: 1505301
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -1614,7 +1614,45 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-23C (Claude B, session close/migration, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260823B.md):
+  next_action: '2026-08-24 (Claude B, -rang plural-marking audit, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260823C.md
+    + Claude A''s 20260823D close, synced clean fast-forward, 3 commits pulled -- NV-095 final
+    reconciliation, already resolved 2 of Claude B''s 3 flagged items: bland/tasteless (Chibroka)
+    and you=Nang/Na·a both closed by Claude A; only the plural-marking question remained open):
+    Per explicit Project Owner instruction, audited item (a) end-to-end without choosing a linguistic
+    ruling -- full report docs/CLAUDE_B_RANG_PLURAL_AUDIT_20260824.md. **Verified, not guessed:**
+    (1) zero code anywhere generates or strips a -rang suffix -- grepped all src/*.js, confirmed
+    the only -rang content is inert dictionary-string data. (2) exactly 3 VERIFIED/HIGH master_dictionary.json
+    rows carry a -rang plural form (children/Bi·sarang, fruits/biterang, coins/tangka bisilrang),
+    each its own independent native-relay entry, not derived from any rule. (3) 100% hard-coded,
+    confirmed by reading assembleSentenceSOV''s fallback path -- it strips English -s/-es and looks
+    up the bare singular Garo root, appends nothing. (4) the implementation makes no productivity
+    assumption at all, since no code applies -rang in the first place -- there is nothing to
+    over/under-apply. (5) live-tested translate() across dog/dogs, child/children, fruit/fruits,
+    coin/coins, student/students, tree/trees, book/books, person/people, apple/apples, water, rice
+    -- confirmed the 3 -rang forms ship correctly, every other bare plural noun correctly falls
+    through to the unmarked singular (not a wrong guess -- no plural data exists for those nouns
+    at all). Directly relevant evidence for Claude A: the 3 confirmed -rang cases span 1 animate
+    noun (child) and 2 inanimate count nouns (fruit, coin) -- contradicts a strict animate-only
+    hypothesis, but 3 data points can''t establish universal productivity either. (6) engineering
+    consequence of each of the 3 possible rulings (universal / class-restricted / confirmed-only)
+    laid out in the doc''s S7 -- none requires new architecture, all are additive at
+    assembleSentenceSOV''s one existing fallback point; class-restricted needs a new noun-class
+    signal Claude A would have to specify (classifier family is the closest existing proxy but
+    reusing it is itself a linguistic call). **Separately found and fixed, independent of the
+    linguistic question:** corrections.json''s "coins" override shipped "tangka bisil" (identical
+    to the singular), silently shadowing master''s own already-VERIFIED/HIGH "tangka bisilrang"
+    (NV-089) -- same Rule 8 stale-override-vs-master pattern as every prior fix of this shape, pure
+    sync to an already-cited value, zero new linguistic content. Fixed, confirmed live
+    (translate("coins") now correctly returns tangka bisilrang), full gate re-verified green. **No
+    other pluralization engineering bugs found** -- every other bare-plural noun resolves consistently
+    with what its own dictionary data actually supports. Item (a) (plural-marking scope) remains
+    genuinely open, handed to Claude A per the audit doc''s S8 with the evidence above -- not a
+    proposed answer. Gate green throughout: 229/229 tests (unchanged, no new tests needed for a
+    pure corrections.json value sync), repository-intelligence.js PASSED 0 new violations,
+    compiled_dict.json unaffected (corrections.json is a separate runtime layer, not part of the
+    compile pipeline this fix touched). Pushed 1505301 (coins fix), audit doc + this WORKSTATE
+    update pending push in the same close. Full detail: docs/CLAUDE_B_RANG_PLURAL_AUDIT_20260824.md.'
+  next_action_prior_20260824: '2026-08-23C (Claude B, session close/migration, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260823B.md):
     closed all 4 ENGINEERING items from that audit''s backlog. (1) Stale corrections.json overrides (song/telling/studying)
     synced to master VERIFIED values, pushed 548cc61. (2) parseCountingPhrase() adjective-slot gap fixed
     -- [NUMBER][ADJ][NOUN] phrases now reach classifier composition (0.96) instead of sov-assembly (0.75);
