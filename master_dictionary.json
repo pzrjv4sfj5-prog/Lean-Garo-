@@ -565,7 +565,8 @@
     "english": "goat",
     "garo": "Do·bok",
     "category": "animals",
-    "notes": "RECONFIRMED — direct native correction, 2026-08-07: overrides prior corpus-internal-audit SUPERSEDED flag (2026-08-01). Native confirms 'Do·bok'/'dobok' as final/correct for goat."
+    "notes": "RECONFIRMED — direct native correction, 2026-08-07: overrides prior corpus-internal-audit SUPERSEDED flag (2026-08-01). Native confirms 'Do·bok'/'dobok' as final/correct for goat. Reconfirmed again via NV-095 (2026-08-23 final reconciliation relay); confidence field explicitly set (was previously untagged despite RECONFIRMED note).",
+    "confidence": "verified_high"
   },
   {
     "english": "horse",
@@ -1335,7 +1336,8 @@
     "english": "yes",
     "garo": "Oe",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile. Resolves the long-standing Oe/Am/Hoe three-way tie in favor of 'Am'."
   },
   {
     "english": "no",
@@ -2516,10 +2518,10 @@
   },
   {
     "english": "doctor",
-    "garo": "Doctor / Sam·on·gipa",
+    "garo": "Sam·on·gipa",
     "category": "health",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch)"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch) Data-hygiene fix (NV-095 session): stray literal English word \"Doctor / \" prefix removed from garo field (import artifact); value unchanged in meaning, matches Thangseng's final 'Sam on·gipa'."
   },
   {
     "english": "nurse",
@@ -2719,7 +2721,8 @@
     "english": "knowledge",
     "garo": "Gni / Ma·siani",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
   },
   {
     "english": "wisdom",
@@ -3214,8 +3217,8 @@
     "english": "darkness",
     "garo": "Andala",
     "category": "general",
-    "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch)"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
   },
   {
     "english": "ghost",
@@ -5639,8 +5642,8 @@
     "english": "teach",
     "garo": "Sikie on·a",
     "category": "general",
-    "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) ('Skie on·a' this relay treated as the same word, spelling variant only.)"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
   },
   {
     "english": "traditional festival",
@@ -18583,7 +18586,8 @@
     "english": "eaten",
     "garo": "cha·man·aha",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
   },
   {
     "english": "educated",
@@ -20015,7 +20019,8 @@
     "english": "playing",
     "garo": "Kala·enga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
   },
   {
     "english": "cooking",
@@ -20028,7 +20033,8 @@
     "english": "walking",
     "garo": "Re·ang·enga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile. Note: 'Re·ang·enga' is the continuous form of the established re·/re·ang='go' root ('going'), not 'walking' — likely a prior mis-gloss, not a true synonym."
   },
   {
     "english": "sitting",
@@ -24633,8 +24639,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile. Resolves the long-open NV-080 sit=aonga-vs-a·song·a question in favor of 'aonga' as the bare/simple form; 'sitting'=asongenga (continuous stem) is unaffected.",
+    "confidence": "superseded"
   },
   {
     "english": "Sit",
@@ -32220,8 +32226,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:han·-seng-a / kiir-ton / ro-a",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "dance",
@@ -32229,8 +32235,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "dance",
@@ -32238,8 +32244,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "dance",
@@ -32247,8 +32253,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "dandruff",
@@ -37071,8 +37077,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "herb",
@@ -39546,8 +39552,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "liver",
@@ -39564,8 +39570,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "lizard",
@@ -41517,8 +41523,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:sok-kit-e",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "nipple",
@@ -41526,8 +41532,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "nod",
@@ -42966,8 +42972,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:go-a",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "plant",
@@ -42975,8 +42981,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "plaster",
@@ -45170,8 +45176,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "roar",
@@ -47285,8 +47291,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "smoke",
@@ -47618,8 +47624,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:gan / giit",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "song",
@@ -47627,8 +47633,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "song",
@@ -47636,8 +47642,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) 'git' (this relay) treated as the same word, spelling variant only.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "soot",
@@ -49688,8 +49694,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:-brok-",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "tasteless",
@@ -49697,8 +49703,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "tattered",
@@ -49814,8 +49820,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:in-a",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "tell",
@@ -49823,8 +49829,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "temple",
@@ -51605,8 +51611,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:-be- / -mi-si- / be-si",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "very",
@@ -51614,8 +51620,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "very",
@@ -51623,8 +51629,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "very",
@@ -51632,8 +51638,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "vines",
@@ -52208,8 +52214,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "well",
@@ -76371,8 +76377,8 @@
     "pos": null,
     "category": "emotions",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (Thangseng, WhatsApp transcript letter B, NV-085): 'Happy = Kusi'.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "i am happy",
@@ -77068,8 +77074,8 @@
     "english": "no",
     "garo": "ong·ja",
     "category": "general",
-    "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-094, Project Owner chat relay). Supersedes prior UNVERIFIED spelling."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
   },
   {
     "english": "run",
@@ -77077,5 +77083,236 @@
     "category": "general",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-094, Project Owner chat relay), exact match to prior unverified entry."
+  },
+  {
+    "english": "cooked",
+    "garo": "Song·aha",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "cooking",
+    "garo": "Song·enga",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dance",
+    "garo": "Chroka",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "darkness",
+    "garo": "Andalani",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dead",
+    "garo": "sigimin",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dried",
+    "garo": "tipjok",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eaten",
+    "garo": "cha·jok",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "help",
+    "garo": "dakchaka",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how",
+    "garo": "maidake",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "knowledge",
+    "garo": "U·iani ba ma·siani",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "live",
+    "garo": "donga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "living",
+    "garo": "dongenga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "nipple",
+    "garo": "Sok kute",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "no",
+    "garo": "Ihing",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "plant",
+    "garo": "Songna",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "playing",
+    "garo": "kal·enga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "pray",
+    "garo": "Bi·bo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "quick",
+    "garo": "Ta·rakbo!",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "roam",
+    "garo": "rorama",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sit",
+    "garo": "aonga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "smelly",
+    "garo": "senga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "song",
+    "garo": "git",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "stay",
+    "garo": "donga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "tasteless",
+    "garo": "Chibroka",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "teach",
+    "garo": "Skie on·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "tell",
+    "garo": "agana",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "very",
+    "garo": "namen",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "walking",
+    "garo": "re·enga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "why",
+    "garo": "Maina",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "yes",
+    "garo": "Am",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "you",
+    "garo": "Na·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "well",
+    "garo": "chiakol",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "happy",
+    "garo": "kusi ong·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "confidence": "verified_high"
   }
 ]

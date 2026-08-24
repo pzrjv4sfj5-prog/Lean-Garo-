@@ -433,7 +433,7 @@
   },
   {
     "english": "run",
-    "garo": "Kat·a"
+    "garo": "Kata"
   },
   {
     "english": "speak",
@@ -465,7 +465,7 @@
   },
   {
     "english": "sit",
-    "garo": "Asong·a"
+    "garo": "aonga"
   },
   {
     "english": "stand",
@@ -809,7 +809,7 @@
   },
   {
     "english": "yes",
-    "garo": "Oe"
+    "garo": "Am"
   },
   {
     "english": "no",
@@ -989,7 +989,7 @@
   },
   {
     "english": "wash",
-    "garo": "Su·srong·a"
+    "garo": "Su·sranga"
   },
   {
     "english": "clean",
@@ -2693,7 +2693,7 @@
   },
   {
     "english": "someone",
-    "garo": "Saksa"
+    "garo": "Saoba"
   },
   {
     "english": "no one",
@@ -3325,7 +3325,7 @@
   },
   {
     "english": "teach",
-    "garo": "Sikie on·a"
+    "garo": "Skie on·a"
   },
   {
     "english": "Traditional festival",
@@ -5037,7 +5037,7 @@
   },
   {
     "english": "Run",
-    "garo": "Kat·a"
+    "garo": "Kata"
   },
   {
     "english": "Speak",
@@ -5069,7 +5069,7 @@
   },
   {
     "english": "Sit",
-    "garo": "Asong·a"
+    "garo": "aonga"
   },
   {
     "english": "Stand",
@@ -5257,7 +5257,7 @@
   },
   {
     "english": "Yes",
-    "garo": "Oe"
+    "garo": "Am"
   },
   {
     "english": "No",
@@ -5433,7 +5433,7 @@
   },
   {
     "english": "Wash",
-    "garo": "Su·srong·a"
+    "garo": "Su·sranga"
   },
   {
     "english": "Clean",
@@ -7181,7 +7181,7 @@
   },
   {
     "english": "Someone",
-    "garo": "Saksa"
+    "garo": "Saoba"
   },
   {
     "english": "No one",
@@ -7797,7 +7797,7 @@
   },
   {
     "english": "Teach",
-    "garo": "Sikie on·a"
+    "garo": "Skie on·a"
   },
   {
     "english": "Traditional dance",
@@ -17294,7 +17294,7 @@
   },
   {
     "english": "wash",
-    "garo": "su·gala",
+    "garo": "Su·sranga",
     "pos": "verb",
     "example_en": "I wash things",
     "example_garo": "Anga bostu su·gala"

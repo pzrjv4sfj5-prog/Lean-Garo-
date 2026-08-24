@@ -584,8 +584,11 @@ function main() {
     'salt': 'Kari',
     'no more': 'Dongja',
     'it exists': 'Donga',
-    'quick': 'Tarkbo',
-    'hurry': 'Tarkbo',
+    // NV-095 (2026-08-23 final reconciliation relay): "quick" and "hurry"
+    // are distinct headwords with distinct imperative forms — Ta·rakbo!
+    // vs Tarkbo! respectively — not synonyms sharing one override.
+    'quick': 'Ta·rakbo!',
+    'hurry': 'Tarkbo!',
     "i don't care": 'Anga Dal·e Ra·ja',
     // RULE-040 (docs/GRAMMAR_RULE_CATALOGUE.md): "right" collapses three
     // distinct, native-confirmed Garo headwords via pickPrimary's
@@ -617,7 +620,15 @@ function main() {
     // itself (compiled_dict.json, used directly by lookup()/near-
     // duplicate tooling, which don't go through corrections.json) is
     // correct too, not just runtime translation.
-    'smile': 'Ka·dingsmita'
+    'smile': 'Ka·dingsmita',
+    // NV-095 (2026-08-23 final reconciliation relay): "cooked" now has two
+    // tied VERIFIED/HIGH candidates — min·a (NV-050, ripe/done-state sense,
+    // shared with "ripe") and Song·aha (NV-095, cooked-food verb-paradigm
+    // sense, alongside "cooking"=Song·enga). Thangseng's final relay
+    // explicitly supplied Song·aha for this exact word-list entry, so it
+    // is the default for bare "cooked"; min·a remains valid and reachable
+    // under its own citation, not superseded, for the ripe/done sense.
+    'cooked': 'Song·aha'
   };
 
   const { finalized, alternates, heldSupersededOnly } = finalizeDictionary(mergedValues, grammarOverrides, supersededByKey);

@@ -215,7 +215,7 @@ test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
   assert.equal(Object.keys(irregularVerbs).length, 51, 'entry count: 49 from the original extraction + "has" added 2026-07-13 (suppletive form of "have", same confirmed value "donga") + "smiled" added 2026-08-06 (Ka·dingsmitaha, confirmed same date as the Ka·dingsmita "smile" root)');
   assert.equal(irregularVerbs['went'], 're·anga');
   assert.equal(irregularVerbs['ate'], 'cha·aha');
-  assert.equal(irregularVerbs['eaten'], 'cha·manaha');
+  assert.equal(irregularVerbs['eaten'], 'cha·jok', 'corrected 2026-08-23 (NV-095, Thangseng final reconciliation relay) from cha·manaha');
   assert.equal(irregularVerbs['want'], 'ska', 'corrected 2026-07-18 from sikenga - see docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md');
   assert.equal(irregularVerbs['sitting'], 'asong·enga');
   // RC-CANDIDATE-008 (partial, d0e6c06): the 4 specific values actually
@@ -1047,27 +1047,30 @@ test('isVerified anchoring: a SUPERSEDED legacy entry ("type") is no longer forc
 // "Mi", now corrected to VERIFIED "al·a", which happens to be identical
 // to compiled_dict.json's own value. That makes "food" no longer
 // demonstrate override-precedence (both layers now agree), so the
-// mechanism check below was moved to "quick"/"Tarkbo!" (phrase_maps-only,
+// mechanism check below was moved to "quick"/"Ta·rakbo!" (phrase_maps-only,
 // an intentional exclamation-marked imperative variant, not shadowed by
 // a corrections.json entry the way "hurry" is) vs. compiled_dict's
-// punctuation-free "Tarkbo" -- a genuine, stable divergence, same
+// punctuation-free "Ta·rakbo" -- a genuine, stable divergence, same
 // precedent as the RC-CANDIDATE-010/012 test-value swaps after a real
-// correction landed.
+// correction landed. Values updated 2026-08-23 (NV-095, Thangseng final
+// reconciliation relay): "quick"="Ta·rakbo!" was previously wrongly
+// borrowing "hurry"'s value "Tarkbo!" — the relay confirmed these are
+// distinct headwords with distinct forms.
 test('lookupGaro() consults phrase_maps.js: direct call', async () => {
   const { lookupGaro } = await import('../../src/lookupEngine.js');
-  assert.equal(lookupGaro('quick'), 'Tarkbo!');
+  assert.equal(lookupGaro('quick'), 'Ta·rakbo!');
 });
 
 test('RUNTIME-AUDIT: stopword-stripped fallback path reaches phrase_maps.js ("so quick")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const result = await translate('so quick');
-  assert.equal(result.garo, 'Tarkbo!');
+  assert.equal(result.garo, 'Ta·rakbo!');
 });
 
 test('RUNTIME-AUDIT: findVerbForm/grammar-assembly path reaches phrase_maps.js ("he washes")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const result = await translate('he washes');
-  assert.equal(result.garo, 'Ua Su·srong·a');
+  assert.equal(result.garo, 'Ua Su·sranga');
 });
 
 test('RUNTIME-AUDIT: corrections.json still takes precedence over phrase_maps.js through lookupGaro()', async () => {

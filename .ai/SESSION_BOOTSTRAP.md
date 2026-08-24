@@ -1,5 +1,9 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-22 by Claude A (added `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`, mandatory for every Claude A session). Also 2026-08-22 by Claude B (added Rule 13, mandatory engineering governance model + the "Governance-model check" migration-doc requirement for all roles — see `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` and `docs/CLAUDE_B_SESSION_MIGRATION_20260822.md`). Prior: 2026-08-22 by Claude A (added Rule 12, apostrophe-preserving lookup spot-check). See the "NEW, 2026-08-20c" entry below for the underlying incident (NV-086/087/088, the apostrophe-lookup runtime bugfix, 3 override-vs-master fixes, 4 compositional relay-batch closures)._
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-23C by Claude A (NV-095 —
+Thangseng final native-data reconciliation relay; see
+`docs/CLAUDE_A_SESSION_MIGRATION_20260823C.md` and
+`docs/CLAUDE_B_RUNTIME_HANDOFF_20260823C.md`. No new standing rule — same governance as before).
+Prior: 2026-08-22 by Claude A (added `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`, mandatory for every Claude A session). Also 2026-08-22 by Claude B (added Rule 13, mandatory engineering governance model + the "Governance-model check" migration-doc requirement for all roles — see `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` and `docs/CLAUDE_B_SESSION_MIGRATION_20260822.md`). Prior: 2026-08-22 by Claude A (added Rule 12, apostrophe-preserving lookup spot-check). See the "NEW, 2026-08-20c" entry below for the underlying incident (NV-086/087/088, the apostrophe-lookup runtime bugfix, 3 override-vs-master fixes, 4 compositional relay-batch closures)._
 
 **If you are a Claude A instance (any session, not just a fresh one):**
 `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` is **mandatory reading before any

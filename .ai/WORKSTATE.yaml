@@ -15,13 +15,10 @@ repository:
     No repo content changed by this correction, pointer-only. Build gate reverified clean at actual current
     HEAD (7467063, == origin/main): 220/220 tests, 8159 entries, 0 new repository-intelligence violations
     (Check G confidence-schema check included).'
-  last_updated: '2026-08-22b (Claude B, session close/migration): resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260822.md,
-    synced past Claude C''s self-pushed 1dae44e (data-citation docs only), then built docs/ PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
-    -- the AI-001 subclass (b) auto-enumeration flagged as the next concrete engineering step. See claude_b.next_action
-    for full detail; docs/ CLAUDE_B_SESSION_MIGRATION_20260822B.md for the full migration document. Session
-    closed clean: HEAD ba5a426 verified == origin/main via git ls-remote, working tree clean, full build
-    gate green (220/220 tests, 0 lint errors, 0 new repository-intelligence violations, 8132 compiled
-    entries unchanged).'
+  last_updated: '2026-08-23C (Claude A, session close): NV-095 Thangseng final reconciliation. Full detail
+    in docs/CLAUDE_A_SESSION_MIGRATION_20260823C.md. head=7e3799d is the actual HEAD immediately before
+    this close commit (NV-094''s own commit had left head stale at 598bea2 — corrected here per Rule 10
+    resync, no repo content changed by that correction). 226/226 tests, repository-intelligence.js clean.'
   last_updated_prior: '2026-08-16 (Claude B, session close, double-rebased). Same pickPrimary fix as before
     (see docs/CLAUDE_B_SESSION_MIGRATION_20260816.md for full account: variant-tie branch fixing work/boil/close/empty/leg/strong/small,
     plus a neutral-tie branch added after the first rebase onto Claude A''s cb53f1c). While preparing
@@ -166,6 +163,7 @@ repository:
     sweep (e.g. corrections.json, phrase_maps.js, category_index.json, any other derived table besides
     compiled_dict.json/known_dictionary_conflicts.json) -- to be treated as provisional per Rule 8 and
     swept in the next session before being called fully resolved.'
+  head_prior_20260823C: 598bea2
 claude_a:
   status: active
   operating_governance: '2026-08-22 (Claude A, Project Owner-directed): established `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`
@@ -184,11 +182,11 @@ claude_a:
     raw NV/ dictionary-entry counts in favor of rule-generalization and reduced rework. Not a replacement
     for `.ai/SESSION_BOOTSTRAP.md` Rules 1-12 -- sits on top of them as the linguistic-reasoning-specific
     layer.'
-  next_action_prior_20260822c_yes: 'Next Claude A session, in priority order: (1) yes = Oe/Am/Hoe three-way reconciliation
-    — Am is what''s ACTUALLY shipping at runtime (pre-existing corrections.json override), Oe is master''s
-    VERIFIED tag, Hoe is a third relay-confirmed candidate used sentence-internally elsewhere. This is
-    the highest-priority open item, needs an explicit Thangseng question, not a guess. (2) sit=aonga vs
-    a·song·a (NV-080) and stay=donga vs dongchak·a/dongdang·a, both part of the still-open live/stay/sit
+  next_action_prior_20260822c_yes: 'Next Claude A session, in priority order: (1) yes = Oe/Am/Hoe three-way
+    reconciliation — Am is what''s ACTUALLY shipping at runtime (pre-existing corrections.json override),
+    Oe is master''s VERIFIED tag, Hoe is a third relay-confirmed candidate used sentence-internally elsewhere.
+    This is the highest-priority open item, needs an explicit Thangseng question, not a guess. (2) sit=aonga
+    vs a·song·a (NV-080) and stay=donga vs dongchak·a/dongdang·a, both part of the still-open live/stay/sit
     consolidation question (donga recurs across all three senses in the same relay). (3) i understand
     (uia vs ma·sia, contradicts NV-087), let''s drink/eat (contradicts NV-083), the skenga/sikenga ''want
     to X'' paradigm, they are working, it is not good — all still open from NV-089, unaddressed since.
@@ -388,10 +386,11 @@ claude_a:
     session (docs/CLAUDE_A_SESSION_MIGRATION_20260815.md) stopped exactly at this boundary. Reproducible
     via `node scripts/resync-stale-overrides.mjs` (no --apply — dry run), the `skip_no_verified_match`
     bucket in its output.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823B.md - this session's close (2026-08-23B).
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823C.md - this session's close (2026-08-23C, NV-095
+    Thangseng final reconciliation).
   migration_doc_prior_20260823: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md - prior session's close (2026-08-23).
-  migration_doc_prior_20260818: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - prior session's close (2026-08-18). See
-    migration_doc_prior_20260817b for the session before that.
+  migration_doc_prior_20260818: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - prior session's close (2026-08-18).
+    See migration_doc_prior_20260817b for the session before that.
   migration_doc_prior_20260817b: docs/CLAUDE_A_SESSION_MIGRATION_20260817B.md - prior session's close
     (2026-08-17b, NV-080 relay batch). See migration_doc_prior_20260816c for the session before that.
   migration_doc_prior_20260817: docs/CLAUDE_A_SESSION_MIGRATION_20260817.md - prior session's close (2026-08-17,
@@ -429,57 +428,53 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-23B session close, Claude A: Project Owner re-pasted a 16-item "validated
-    data" batch with an "eliminate all old ones" instruction; all 16 were already VERIFIED/HIGH from
-    NV-092/093 (prior session), so no new native judgment made. Declined the eliminate-old framing
-    (citation discipline: retained rows already lose to VERIFIED at compile time, deletion is not
-    the fix). Fixed 1 clean Rule-8 stale override (gossip, pre-simplification spelling). Found and
-    FLAGGED (not fixed) 2 runtime gaps needing judgment: help resolves to uncited "Betoi" instead of
-    either VERIFIED sense (dakchakani/dakchaka); log resolves to classifier stem "dot" instead of
-    VERIFIED noun "boltong". Rebased cleanly through a concurrent Claude B push (item 3, sov-assembly
-    fix), rebuilt dist, re-verified live. Full session-close migration doc:
-    docs/CLAUDE_A_SESSION_MIGRATION_20260823B.md. Final HEAD 598bea2, verified == origin/main.
-    Gate green throughout (220/220 tests, 0 new violations).'
-  current_task_prior_20260823B: '2026-08-23 session close, Claude A: NV-092 (41-item batch) + NV-093 (48-item batch)
-    Project Owner chat relays processed, plus WORKSTATE.yaml YAML-integrity fixes (2 of my own,
-    1 pre-existing in Claude B''s 548cc61) and a clean merge with Claude B''s concurrent audit-only
-    session. Full session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md — read
-    that first, it supersedes the summary below for anything it covers. Final HEAD 9ef4603, verified
-    == origin/main by direct comparison. Gate green throughout (220/220 tests, 0 new violations).'
-  current_task_prior_20260823_nv092only: '2026-08-23, Claude A — NV-092: 41-item Project Owner chat-relay batch processed. Closed
-    priority items stand-up/take-revenge; closed they-are-working/it-is-not-good (flagged at NV-089
-    close) with new VERIFIED forms, though corrections.json ships a third, unreconciled form for both
-    (not force-fixed). Extended Anga/Ango pattern (i dont have, i have a pen + new pen loanword). 4 new
-    coexisting alt-forms. Fixed my-mother duplicate-representation gap + 2 clean Rule-8 stale overrides.
-    FLAGGED not resolved: i understand (uia vs ma·sia), lets drink/eat (-ha vs -na), skenga/sikenga
-    paradigm, i-want-to-work root choice. Also corrected WORKSTATE.yaml''s own stale head pointer on
-    resume (was 13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already
-    landed before the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations.
-    See docs/THANGSENG_NATIVE_VALIDATION.md NV-092 for full detail.'
-  next_action: 'Next Claude A session, in priority order: (0, new this session) help and log runtime
-    gaps: help=Betoi (uncited, zero master_dictionary match — pick between VERIFIED dakchakani/noun
-    and dakchaka/verb, or leave phrase_maps.js bare "help" key unset so it falls through) and
-    log=dot (classifier stem, from a July 2 counting-system commit — decide if bare "log" should
-    resolve to VERIFIED boltong instead, or if dot is intentionally correct for that key). Then,
-    unchanged from 20260823A: (1) yes=Oe/Am/Hoe three-way (still top, unchanged
-    — Oe is actually UNVERIFIED per its own confidence field, not VERIFIED as earlier docs claimed;
-    corrected characterization, still needs a Thangseng question between Am and Hoe). (2) they-are-working
-    and it-is-not-good: corrections.json ships a third form for each, disagreeing with both the old
-    superseded master row and this session''s new VERIFIED row — needs reconciliation. (3) i understand
-    (uia vs ma·sia, now 2 data points each direction), lets drink/eat (-ha vs -na, note the -na forms
-    fit the lets-play/sit/work paradigm better), skenga/sikenga paradigm, i-want-to-work root (kam-ka·a
-    vs daka) — all flagged in NV-092, none resolved. (4) Claude B''s confidence-schema step 3: a 336-row
-    manual triage is queued for Claude A (see docs/PROPOSAL_CONFIDENCE_SCHEMA_20260822.md and
-    docs/CLAUDE_B_SESSION_MIGRATION_20260822C.md) — not started, large task, needs its own session.
-    (5) sit=aonga vs a·song·a (NV-080), stay=donga vs dongchak·a/dongdang·a — still open, unchanged
-    (note: donga is now also the new VERIFIED "live" per NV-093 — worth flagging explicitly to
-    Thangseng if/when stay is reconciled, not assuming). (6) 10 pre-existing exact-duplicate rows
-    in master_dictionary.json (confirmed predate 2026-08-23 via git show against d89d5da) — separate
-    backlog item, not actioned. Full detail and resume instructions: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md.'
-  current_task_prior_new: '2026-08-22, Claude A — NV-089/089b/090/091: full THANGSENG_RELAY_TABLE_20260821B.md processed
-    across 4 sub-batches (conflicts, tied-candidates, new vocab, then 3 more direct-relay batches from
-    the Project Owner covering the remainder of the table). See docs/THANGSENG_NATIVE_VALIDATION.md NV-089/089b/090/091
-    entries for full detail. Session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260822C.md.
+  current_task: '2026-08-23C session close, Claude A: NV-095 — Project Owner delivered Thangseng''s FINAL
+    native-data reconciliation (74 words + 10 fixed phrases). Added 31 new verified_high master entries,
+    superseded 35 conflicting old rows (resolves long-open ''yes''=Oe/Am/Hoe and ''sit''=aonga-vs-a·song·a
+    NV-080 questions), promoted 1 (goat), 1 data-hygiene fix (doctor). Propagated to corrections.json/phrase_maps.js/garo_dictionary.json/irregular_verbs.json/grammarOverrides.
+    Caught+reverted own mistake (wait/RULE-036 suffixation break). 226/226 tests, repository-intelligence.js
+    clean (18 new conflicts allowlisted with citations). Live-verified 15 keys via translate(). See docs/CLAUDE_B_RUNTIME_HANDOFF_20260823C.md
+    — no Claude B action required on this batch. Also fixed prior session''s gap: NV-094''s commit (7e3799d)
+    hadn''t updated WORKSTATE/BOOTSTRAP — done here.'
+  current_task_prior_20260823B: '2026-08-23 session close, Claude A: NV-092 (41-item batch) + NV-093 (48-item
+    batch) Project Owner chat relays processed, plus WORKSTATE.yaml YAML-integrity fixes (2 of my own,
+    1 pre-existing in Claude B''s 548cc61) and a clean merge with Claude B''s concurrent audit-only session.
+    Full session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md — read that first, it
+    supersedes the summary below for anything it covers. Final HEAD 9ef4603, verified == origin/main by
+    direct comparison. Gate green throughout (220/220 tests, 0 new violations).'
+  current_task_prior_20260823_nv092only: '2026-08-23, Claude A — NV-092: 41-item Project Owner chat-relay
+    batch processed. Closed priority items stand-up/take-revenge; closed they-are-working/it-is-not-good
+    (flagged at NV-089 close) with new VERIFIED forms, though corrections.json ships a third, unreconciled
+    form for both (not force-fixed). Extended Anga/Ango pattern (i dont have, i have a pen + new pen loanword).
+    4 new coexisting alt-forms. Fixed my-mother duplicate-representation gap + 2 clean Rule-8 stale overrides.
+    FLAGGED not resolved: i understand (uia vs ma·sia), lets drink/eat (-ha vs -na), skenga/sikenga paradigm,
+    i-want-to-work root choice. Also corrected WORKSTATE.yaml''s own stale head pointer on resume (was
+    13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already landed before
+    the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations. See docs/THANGSENG_NATIVE_VALIDATION.md
+    NV-092 for full detail.'
+  next_action: 'Next Claude A session, in priority order: (0, new this session) help and log runtime gaps:
+    help=Betoi (uncited, zero master_dictionary match — pick between VERIFIED dakchakani/noun and dakchaka/verb,
+    or leave phrase_maps.js bare "help" key unset so it falls through) and log=dot (classifier stem, from
+    a July 2 counting-system commit — decide if bare "log" should resolve to VERIFIED boltong instead,
+    or if dot is intentionally correct for that key). Then, unchanged from 20260823A: (1) yes=Oe/Am/Hoe
+    three-way (still top, unchanged — Oe is actually UNVERIFIED per its own confidence field, not VERIFIED
+    as earlier docs claimed; corrected characterization, still needs a Thangseng question between Am and
+    Hoe). (2) they-are-working and it-is-not-good: corrections.json ships a third form for each, disagreeing
+    with both the old superseded master row and this session''s new VERIFIED row — needs reconciliation.
+    (3) i understand (uia vs ma·sia, now 2 data points each direction), lets drink/eat (-ha vs -na, note
+    the -na forms fit the lets-play/sit/work paradigm better), skenga/sikenga paradigm, i-want-to-work
+    root (kam-ka·a vs daka) — all flagged in NV-092, none resolved. (4) Claude B''s confidence-schema
+    step 3: a 336-row manual triage is queued for Claude A (see docs/PROPOSAL_CONFIDENCE_SCHEMA_20260822.md
+    and docs/CLAUDE_B_SESSION_MIGRATION_20260822C.md) — not started, large task, needs its own session.
+    (5) sit=aonga vs a·song·a (NV-080), stay=donga vs dongchak·a/dongdang·a — still open, unchanged (note:
+    donga is now also the new VERIFIED "live" per NV-093 — worth flagging explicitly to Thangseng if/when
+    stay is reconciled, not assuming). (6) 10 pre-existing exact-duplicate rows in master_dictionary.json
+    (confirmed predate 2026-08-23 via git show against d89d5da) — separate backlog item, not actioned.
+    Full detail and resume instructions: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md.'
+  current_task_prior_new: '2026-08-22, Claude A — NV-089/089b/090/091: full THANGSENG_RELAY_TABLE_20260821B.md
+    processed across 4 sub-batches (conflicts, tied-candidates, new vocab, then 3 more direct-relay batches
+    from the Project Owner covering the remainder of the table). See docs/THANGSENG_NATIVE_VALIDATION.md
+    NV-089/089b/090/091 entries for full detail. Session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260822C.md.
     Final HEAD: 13d951c. Gate green throughout (220/220 tests, 0 new violations), full 14,566-call runtime-error-sweep
     clean, duplicate-representation checked (0 new dups introduced, 10 pre-existing dups found and flagged
     separately).'
@@ -1493,6 +1488,18 @@ claude_a:
     the market''-> ''bajalo'', ''market''->''Bajal'', both correct. Claude A has no active task and no
     open linguistic items outstanding.'
   next_action_prior7: null
+  migration_doc_prior_20260823C_from: docs/CLAUDE_A_SESSION_MIGRATION_20260823B.md - this session's close
+    (2026-08-23B).
+  current_task_prior_20260823C_from: '2026-08-23B session close, Claude A: Project Owner re-pasted a 16-item
+    "validated data" batch with an "eliminate all old ones" instruction; all 16 were already VERIFIED/HIGH
+    from NV-092/093 (prior session), so no new native judgment made. Declined the eliminate-old framing
+    (citation discipline: retained rows already lose to VERIFIED at compile time, deletion is not the
+    fix). Fixed 1 clean Rule-8 stale override (gossip, pre-simplification spelling). Found and FLAGGED
+    (not fixed) 2 runtime gaps needing judgment: help resolves to uncited "Betoi" instead of either VERIFIED
+    sense (dakchakani/dakchaka); log resolves to classifier stem "dot" instead of VERIFIED noun "boltong".
+    Rebased cleanly through a concurrent Claude B push (item 3, sov-assembly fix), rebuilt dist, re-verified
+    live. Full session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823B.md. Final HEAD 598bea2,
+    verified == origin/main. Gate green throughout (220/220 tests, 0 new violations).'
 claude_c:
   status: active
   role: Read-only independent QA/repository auditor. No commits, no linguistic or engineering decisions
