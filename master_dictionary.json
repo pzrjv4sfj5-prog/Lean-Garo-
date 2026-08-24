@@ -77314,5 +77314,12 @@
     "category": "general",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
     "confidence": "verified_high"
+  },
+  {
+    "english": "sorry (interjection)",
+    "garo": "Kema",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat, resolving the ambiguity flagged in docs/CLAUDE_A_SESSION_MIGRATION_20260823C.md/NV-095): both forms are correct, genuine register distinction — bare \"sorry\" stays \"Kema bi·a\" (full form, VERIFIED/HIGH, NV-095/2026-08-22 Thangseng direct), \"Kema\" is the short interjection form, sense-tagged separately per the help(noun)/help(verb) precedent, not superseding the canonical bare key.",
+    "confidence": "verified_high"
   }
 ]
