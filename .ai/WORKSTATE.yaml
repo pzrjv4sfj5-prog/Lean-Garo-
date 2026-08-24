@@ -1,5 +1,5 @@
 repository:
-  head: 7e3799d
+  head: ca2e9bc
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -15,10 +15,10 @@ repository:
     No repo content changed by this correction, pointer-only. Build gate reverified clean at actual current
     HEAD (7467063, == origin/main): 220/220 tests, 8159 entries, 0 new repository-intelligence violations
     (Check G confidence-schema check included).'
-  last_updated: '2026-08-23C (Claude A, session close): NV-095 Thangseng final reconciliation. Full detail
-    in docs/CLAUDE_A_SESSION_MIGRATION_20260823C.md. head=7e3799d is the actual HEAD immediately before
-    this close commit (NV-094''s own commit had left head stale at 598bea2 — corrected here per Rule 10
-    resync, no repo content changed by that correction). 226/226 tests, repository-intelligence.js clean.'
+  last_updated: '2026-08-23D (Claude A, session close): sorry-interjection follow-up + resume-protocol
+    addendum for future Claude A. Full detail in docs/CLAUDE_A_SESSION_MIGRATION_20260823D.md. head=ca2e9bc
+    is the actual HEAD immediately before this close commit, verified == origin/main via git fetch. 229/229
+    tests, repository-intelligence.js clean, 0 new violations.'
   last_updated_prior: '2026-08-16 (Claude B, session close, double-rebased). Same pickPrimary fix as before
     (see docs/CLAUDE_B_SESSION_MIGRATION_20260816.md for full account: variant-tie branch fixing work/boil/close/empty/leg/strong/small,
     plus a neutral-tie branch added after the first rebase onto Claude A''s cb53f1c). While preparing
@@ -164,6 +164,7 @@ repository:
     compiled_dict.json/known_dictionary_conflicts.json) -- to be treated as provisional per Rule 8 and
     swept in the next session before being called fully resolved.'
   head_prior_20260823C: 598bea2
+  head_prior_20260823D: 7e3799d
 claude_a:
   status: active
   operating_governance: '2026-08-22 (Claude A, Project Owner-directed): established `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`
@@ -386,8 +387,7 @@ claude_a:
     session (docs/CLAUDE_A_SESSION_MIGRATION_20260815.md) stopped exactly at this boundary. Reproducible
     via `node scripts/resync-stale-overrides.mjs` (no --apply — dry run), the `skip_no_verified_match`
     bucket in its output.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823C.md - this session's close (2026-08-23C, NV-095
-    Thangseng final reconciliation).
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823D.md - this session's close (2026-08-23D).
   migration_doc_prior_20260823: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md - prior session's close (2026-08-23).
   migration_doc_prior_20260818: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - prior session's close (2026-08-18).
     See migration_doc_prior_20260817b for the session before that.
@@ -428,14 +428,18 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-23C session close, Claude A: NV-095 — Project Owner delivered Thangseng''s FINAL
-    native-data reconciliation (74 words + 10 fixed phrases). Added 31 new verified_high master entries,
-    superseded 35 conflicting old rows (resolves long-open ''yes''=Oe/Am/Hoe and ''sit''=aonga-vs-a·song·a
-    NV-080 questions), promoted 1 (goat), 1 data-hygiene fix (doctor). Propagated to corrections.json/phrase_maps.js/garo_dictionary.json/irregular_verbs.json/grammarOverrides.
-    Caught+reverted own mistake (wait/RULE-036 suffixation break). 226/226 tests, repository-intelligence.js
-    clean (18 new conflicts allowlisted with citations). Live-verified 15 keys via translate(). See docs/CLAUDE_B_RUNTIME_HANDOFF_20260823C.md
-    — no Claude B action required on this batch. Also fixed prior session''s gap: NV-094''s commit (7e3799d)
-    hadn''t updated WORKSTATE/BOOTSTRAP — done here.'
+  current_task: '2026-08-23D session close, Claude A: closed out the NV-095 session with a second small
+    commit (ca2e9bc) resolving the flagged ''sorry'' ambiguity — Project Owner confirmed both ''Kema bi·a''
+    (bare ''sorry'', unchanged) and new sense-tagged ''sorry (interjection)''=Kema are correct, genuine
+    distinction not a conflict. Also reconfirmed ''i understand''=Anga u·ia, already the established NV-087
+    value end-to-end, no change needed. 229/229 tests, repository-intelligence.js clean. Confirmed Claude
+    B''s flagged items (b) bland/tasteless and (c) you=Nang/Na·a were ALREADY resolved by NV-095 itself;
+    only their (a) plural-marking-scope question remains genuinely open. Added an explicit resume-protocol
+    addendum to the migration doc for future Claude A sessions: a commit that changes shipped linguistic
+    data isn''t session-closed until WORKSTATE.yaml/SESSION_BOOTSTRAP.md reflect it in the SAME close,
+    even for small same-day follow-up commits — see docs/CLAUDE_A_SESSION_MIGRATION_20260823D.md ''Resume
+    protocol addendum'' section for the full reasoning (this pattern caused the NV-094 WORKSTATE gap found
+    and fixed at 2026-08-23C''s resume).'
   current_task_prior_20260823B: '2026-08-23 session close, Claude A: NV-092 (41-item batch) + NV-093 (48-item
     batch) Project Owner chat relays processed, plus WORKSTATE.yaml YAML-integrity fixes (2 of my own,
     1 pre-existing in Claude B''s 548cc61) and a clean merge with Claude B''s concurrent audit-only session.
@@ -1500,6 +1504,16 @@ claude_a:
     Rebased cleanly through a concurrent Claude B push (item 3, sov-assembly fix), rebuilt dist, re-verified
     live. Full session-close migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823B.md. Final HEAD 598bea2,
     verified == origin/main. Gate green throughout (220/220 tests, 0 new violations).'
+  migration_doc_prior_20260823D_from: docs/CLAUDE_A_SESSION_MIGRATION_20260823C.md - this session's close
+    (2026-08-23C, NV-095 Thangseng final reconciliation).
+  current_task_prior_20260823D_from: '2026-08-23C session close, Claude A: NV-095 — Project Owner delivered
+    Thangseng''s FINAL native-data reconciliation (74 words + 10 fixed phrases). Added 31 new verified_high
+    master entries, superseded 35 conflicting old rows (resolves long-open ''yes''=Oe/Am/Hoe and ''sit''=aonga-vs-a·song·a
+    NV-080 questions), promoted 1 (goat), 1 data-hygiene fix (doctor). Propagated to corrections.json/phrase_maps.js/garo_dictionary.json/irregular_verbs.json/grammarOverrides.
+    Caught+reverted own mistake (wait/RULE-036 suffixation break). 226/226 tests, repository-intelligence.js
+    clean (18 new conflicts allowlisted with citations). Live-verified 15 keys via translate(). See docs/CLAUDE_B_RUNTIME_HANDOFF_20260823C.md
+    — no Claude B action required on this batch. Also fixed prior session''s gap: NV-094''s commit (7e3799d)
+    hadn''t updated WORKSTATE/BOOTSTRAP — done here.'
 claude_c:
   status: active
   role: Read-only independent QA/repository auditor. No commits, no linguistic or engineering decisions
@@ -1600,66 +1614,37 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-23C (Claude B, session close/migration, resumed via
-    docs/CLAUDE_B_SESSION_MIGRATION_20260823B.md): closed all 4 ENGINEERING
-    items from that audit''s backlog. (1) Stale corrections.json overrides
-    (song/telling/studying) synced to master VERIFIED values, pushed 548cc61.
-    (2) parseCountingPhrase() adjective-slot gap fixed -- [NUMBER][ADJ][NOUN]
-    phrases now reach classifier composition (0.96) instead of sov-assembly
-    (0.75); the function has no dictionary access so it exposes both a
-    full-phrase candidate (tried first, genuine multi-word nouns like
-    "sugar cane" unaffected) and a nounOnly fallback for the caller,
-    pushed 1812d0b. **Self-correction, logged not hidden:** an earlier turn
-    this same session incorrectly reported item 2 as already done when only
-    investigation had happened -- caught while writing this close record,
-    actually implemented before closing. (3) sov-assembly fixed two bugs:
-    sibilant plurals (boxes->boxe) silently dropped nouns entirely (es$
-    fallback strip added); adjectives ending in ·a were misclassified as
-    verbs via an overly-broad suffix regex and stranded at the sentence tail
-    -- no POS data exists anywhere in this repo (confirmed RC-CANDIDATE-003)
-    to tell adjectives from verbs, so fixed structurally instead of by
-    guessing: only the LAST verb-signal match is elected as the finite verb,
-    earlier matches fall back to nonVerbs preserving original order (keeps
-    adjectives adjacent to their noun with zero new linguistic claims),
-    pushed 86b9016. (4) Item 5''s remaining half (verb "see" never detected
-    at all, bare-root Garo verbs like Nia carry no suffix) fixed via new
-    VERB_LEMMAS (lookupEngine.js) -- mechanically derived from the
-    dictionary''s own 939 "to X" headwords (Claude A/D''s existing
-    infinitive-marking convention, reused not invented); a definitive lemma
-    match takes priority over the ambiguous suffix regex when both exist in
-    one sentence, pushed 35be4cb. Gate green throughout, every commit:
-    229/229 tests by close (up from 220), repository-intelligence PASSED 0
-    new violations every time, compiled_dict.json byte-identical (all 4
-    fixes are engine-only, zero master_dictionary.json/corrections.json
-    content edits beyond item 1''s mechanical value sync). Two clean merges
-    of concurrent Claude A pushes mid-session (NV-092/NV-093 batch + session
-    close; then a Rule 8 gossip fix + dist rebuild) -- no key overlap, gate
-    re-verified green after each. **Flagged for Claude A, not attempted
-    (DATA/LINGUISTIC, correctly out of Claude B scope):** (a) no productive
-    plural rule -- "dog"/"dogs" both ship the identical Achak string, needs
-    a ruling on plural-marking scope (is -rang productive for all nouns or
-    only animate, per the confirmed Bi·sarang case) before any engineering
-    rule can be written; (b) bland/tasteless compiles to a corrupted
-    fragment ·brok· (bare raka marks) -- master rows UNVERIFIED, needs
-    Claude A/D to supply a correct value; (c) you=Nang in the dictionary but
-    every runtime path ships Na·a instead -- could be a legitimate
-    nominative/oblique case distinction, not asserted as a defect, needs
-    Claude A confirmation either way. Full detail:
-    docs/CLAUDE_B_SESSION_MIGRATION_20260823C.md.'
-  next_action_prior_20260823B: '2026-08-23B (Claude B, session close/migration, audit-only session
-    per explicit Project Owner instruction -- AI-001 backlog set aside, no linguistic
-    data modified): full real-time runtime audit, 51 cases through translate(),
-    see docs/CLAUDE_B_SESSION_MIGRATION_20260823B.md for complete findings. Zero
-    code/data changes this session. 5 root-caused engineering findings held for
-    next session, ordered by recommended sequence in the migration doc (stale-override
-    resync in corrections.json for song/telling/studying; parseCountingPhrase adjective-slot
-    gap in garo_classifier.js; sov-assembly dropped-noun + word-order defects, likely
-    shared root cause, needs joint investigation before fixing either; plural-marking
-    gap, engineering/linguistic boundary unclear; bland/tasteless data corruption,
-    Claude A/D territory). Re-verified wait/salt/king/answer/my house/angry/stand
-    all still correct, no regression. Full gate clean before and after (220/220
-    tests, 0 new repository-intelligence violations) -- confirms audit introduced
-    no drift, as expected since no files were touched.'
+  next_action: '2026-08-23C (Claude B, session close/migration, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260823B.md):
+    closed all 4 ENGINEERING items from that audit''s backlog. (1) Stale corrections.json overrides (song/telling/studying)
+    synced to master VERIFIED values, pushed 548cc61. (2) parseCountingPhrase() adjective-slot gap fixed
+    -- [NUMBER][ADJ][NOUN] phrases now reach classifier composition (0.96) instead of sov-assembly (0.75);
+    the function has no dictionary access so it exposes both a full-phrase candidate (tried first, genuine
+    multi-word nouns like "sugar cane" unaffected) and a nounOnly fallback for the caller, pushed 1812d0b.
+    **Self-correction, logged not hidden:** an earlier turn this same session incorrectly reported item
+    2 as already done when only investigation had happened -- caught while writing this close record,
+    actually implemented before closing. (3) sov-assembly fixed two bugs: sibilant plurals (boxes->boxe)
+    silently dropped nouns entirely (es$ fallback strip added); adjectives ending in ·a were misclassified
+    as verbs via an overly-broad suffix regex and stranded at the sentence tail -- no POS data exists
+    anywhere in this repo (confirmed RC-CANDIDATE-003) to tell adjectives from verbs, so fixed structurally
+    instead of by guessing: only the LAST verb-signal match is elected as the finite verb, earlier matches
+    fall back to nonVerbs preserving original order (keeps adjectives adjacent to their noun with zero
+    new linguistic claims), pushed 86b9016. (4) Item 5''s remaining half (verb "see" never detected at
+    all, bare-root Garo verbs like Nia carry no suffix) fixed via new VERB_LEMMAS (lookupEngine.js) --
+    mechanically derived from the dictionary''s own 939 "to X" headwords (Claude A/D''s existing infinitive-marking
+    convention, reused not invented); a definitive lemma match takes priority over the ambiguous suffix
+    regex when both exist in one sentence, pushed 35be4cb. Gate green throughout, every commit: 229/229
+    tests by close (up from 220), repository-intelligence PASSED 0 new violations every time, compiled_dict.json
+    byte-identical (all 4 fixes are engine-only, zero master_dictionary.json/corrections.json content
+    edits beyond item 1''s mechanical value sync). Two clean merges of concurrent Claude A pushes mid-session
+    (NV-092/NV-093 batch + session close; then a Rule 8 gossip fix + dist rebuild) -- no key overlap,
+    gate re-verified green after each. **Flagged for Claude A, not attempted (DATA/LINGUISTIC, correctly
+    out of Claude B scope):** (a) no productive plural rule -- "dog"/"dogs" both ship the identical Achak
+    string, needs a ruling on plural-marking scope (is -rang productive for all nouns or only animate,
+    per the confirmed Bi·sarang case) before any engineering rule can be written; (b) bland/tasteless
+    compiles to a corrupted fragment ·brok· (bare raka marks) -- master rows UNVERIFIED, needs Claude
+    A/D to supply a correct value; (c) you=Nang in the dictionary but every runtime path ships Na·a instead
+    -- could be a legitimate nominative/oblique case distinction, not asserted as a defect, needs Claude
+    A confirmation either way. Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260823C.md.'
   next_action_prior_20260823B: '2026-08-22b (Claude B, session close/migration, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260822.md):
     synced clean past Claude C''s self-pushed 1dae44e (two new native-citation docs, king=Raja/film=film
     -- data-side only, does not close AI-001, see .ai/WORKSTATE.yaml claude_c.self_push_note). Built docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
