@@ -788,3 +788,14 @@ construction still rests on exactly one example sentence.
 **Launch Priority:** P2 — worth flagging so the engine doesn't
 conflate the three "have" senses, but not yet generalizable enough to
 wire in beyond literal-match handling of these three sentences.
+
+---
+### RULE-046 — Yes/No Question Particle `-ma` Joins Directly to the Verb (No Space)
+**Description:** The yes/no question particle `ma` attaches directly onto the inflected verb with no space and no period before it (`Cha·ahama?`), not as a separate word (`Cha·aha ma?`) or period-joined (`Cha·aha.ma?`). Orthographic/morphological attachment rule, not a new tense or mood — applies on top of whatever verb inflection the sentence already carries.
+**Examples:** `Na·a Cha·ahama?` = "Did you eat?" (corrects draft `Na·a Cha·aha ma?`); `Na·a Bajal Re·angama?` = "Did you go to market?" (corrects draft `Na·a Bajal Re·anga ma?`); `Na·a mi cha·jokma?` = "Did you have lunch?" (corrects draft `Na·a mi cha·jok ma?`).
+**Counterexamples:** a number of pre-existing dictionary entries still ship verb+space+`ma?` (e.g. "are you eating?"→`Na·a cha·enga ma?`, "is there rice?"→`Mi donga ma?`, "have you eaten breakfast?"→`na·a nastha cha·aha ma?`). These predate this rule and are outside the 2026-08-21 relay batch that prompted it — flagged as a separate P1 follow-up cleanup, not fixed under this closure.
+**Dependencies:** RULE-002 (Past/Perfect Unification — `-ma` commonly attaches to the `-aha` past form in the confirmed examples, but the rule is about the particle's attachment generally); RULE-015 (Stem Formation — `-ma` attaches after the verb's existing inflection is complete).
+**Native Notes:** Direct Thangseng correction, relayed via Tridip WhatsApp, 2026-08-21 (`THANGSENG_RELAY_TABLE_20260821B.md`): repeatedly corrected Tridip's drafts wherever a space or period preceded `ma`, across "did you eat", "did you go to market", "did you have lunch". Given as a general grammar note applying project-wide.
+**Validation Status:** Verified.
+**Confidence:** High.
+**Launch Priority:** P0 for the three 2026-08-21 batch items (closed, NV-096); P1 for the wider pre-existing space-before-`ma` corpus (open, separate sweep needed).

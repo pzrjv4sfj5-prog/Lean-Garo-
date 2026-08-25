@@ -6377,7 +6377,8 @@
     "english": "did you have lunch?",
     "garo": "Na·a mi chajokma?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-096 (2026-08-21 relay, THANGSENG_RELAY_TABLE_20260821B.md): missing raka dot (cha·jok not chajok) and ma not joined to verb; superseded by corrected VERIFIED/HIGH form."
   },
   {
     "english": "open (command)",
@@ -7173,7 +7174,8 @@
     "english": "did you eat?",
     "garo": "Na·a cha·ama?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-096 (2026-08-21 relay, THANGSENG_RELAY_TABLE_20260821B.md): wrong root; native confirms question form is cha·aha+ma (Cha·ahama?), not cha·a+ma."
   },
   {
     "english": "did you go to market?",
@@ -77320,6 +77322,20 @@
     "garo": "Kema",
     "category": "general",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat, resolving the ambiguity flagged in docs/CLAUDE_A_SESSION_MIGRATION_20260823C.md/NV-095): both forms are correct, genuine register distinction — bare \"sorry\" stays \"Kema bi·a\" (full form, VERIFIED/HIGH, NV-095/2026-08-22 Thangseng direct), \"Kema\" is the short interjection form, sense-tagged separately per the help(noun)/help(verb) precedent, not superseding the canonical bare key.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "did you eat?",
+    "garo": "Na·a Cha·ahama?",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-096, Thangseng relay via Tridip WhatsApp, THANGSENG_RELAY_TABLE_20260821B.md): question particle -ma attaches directly to the verb with no space (RULE-046).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "did you have lunch?",
+    "garo": "Na·a mi cha·jokma?",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-096, Thangseng relay via Tridip WhatsApp, THANGSENG_RELAY_TABLE_20260821B.md): 'Na·a mi cha·jokma?' — ma joins verb, no space (RULE-046); raka dot on cha·jok per RULE-001.",
     "confidence": "verified_high"
   }
 ]

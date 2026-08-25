@@ -5197,3 +5197,61 @@ here, out of scope for a native-data processing session.
 **Runtime/build:** 220/220 tests, 0 new repository-intelligence
 violations after both the additions and the backbone fix. Spot-checked
 every touched/added key live via translate().
+
+## NV-096 — Thangseng relay via Tridip WhatsApp, 2026-08-21 (question-particle + did-you-X family, THANGSENG_RELAY_TABLE_20260821B.md)
+
+Closes the grammar/lexical items from the 2026-08-21 relay batch that
+NV-089/089b/090/091 (same-day session) had not yet processed: the
+yes/no question particle `-ma` and the three "did you X" sentences it
+appeared on.
+
+**Grammar (new rule, RULE-046):** `-ma` attaches directly to the
+inflected verb with no space and no period (`Cha·ahama?`, not
+`Cha·aha ma?` / `Cha·aha.ma?`). Confirmed general/project-wide by
+Thangseng, repeatedly correcting Tridip's drafts across this
+transcript. Not previously codified in `docs/grammar_rules_structured/`
+— checked, confirmed absent, added as RULE-046.
+
+**Lexical, closed this batch:**
+- "did you eat?" — old unverified `Na·a cha·ama?` (wrong root)
+  superseded; new VERIFIED/HIGH `Na·a Cha·ahama?`.
+- "did you have lunch?" — old unverified `Na·a mi chajokma?` (missing
+  raka dot + old draft lacked the -ma join before this pass) superseded;
+  new VERIFIED/HIGH `Na·a mi cha·jokma?`.
+- "did you go to market?" — already VERIFIED/HIGH (NV-086) as
+  `Na·a bajalchi re·angama?`, already correctly `-ma`-joined and
+  consistent with RULE-044's -chi movement locative. No change — MATCH,
+  not a conflict; Thangseng's relay-table answer dropping "chi" read as
+  informal shorthand, not a rejection of the -chi form.
+
+**Duplicate representation check: PASS.** Checked and fixed every
+representation of the "did you eat"/"did you have lunch" family found
+repo-wide: `master_dictionary.json` (superseded old rows, added new
+VERIFIED/HIGH rows), `garo_dictionary.json` (5 stale `cha·ama`/`chajokma`
+occurrences corrected in place — this file has no confidence field so
+pickPrimary would otherwise have kept shipping the old value tied
+against master's now-superseded row), `src/data/corrections.json` (5
+entries fixed: "did you eat", "did you eat food", "did you eat orange",
+"did you eat apple", "did you have lunch" — corrections.json is
+runtime-authoritative and was the actual source of the live-wrong
+output caught during verification). `phrase_maps.js` checked, no
+matching entries. `src/compiled_dict.json` rebuilt via `prepare-data.js`
+and live-verified via `translate()` for all four keys after the fix.
+Two new master_dictionary.json self-consistency pairs (superseded old
+row vs. new VERIFIED row) allowlisted in
+`src/data/known_dictionary_conflicts.json` with citation, same pattern
+as every other superseded/VERIFIED pair in the corpus.
+
+**Flagged, not fixed (separate P1 backlog item, RULE-046's
+counterexamples list):** a wider set of pre-existing "verb + space +
+ma?" entries outside this batch (are you eating?, is there rice?, have
+you eaten breakfast?, have you eaten rice?, do you love me?, are you
+scared?, do you have children?) — same rule, different (older) batch,
+left untouched per one-task-at-a-time discipline. Needs its own sweep
+session.
+
+**Runtime/build:** 229/229 tests, `repository-intelligence.js` exits 0
+(0 new violations after allowlisting the two intentional
+superseded/VERIFIED pairs). Live-verified via `translate()`: "did you
+eat?", "did you eat food", "did you have lunch?", "did you go to
+market?" all resolve correctly post-fix.

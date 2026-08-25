@@ -990,7 +990,7 @@
   "he has eaten.": "general",
   "he had eaten.": "general",
   "he will eat.": "food",
-  "did you have lunch?": "general",
+  "did you have lunch?": "food",
   "open (command)": "general",
   "opened (past)": "general",
   "will open (future)": "general",

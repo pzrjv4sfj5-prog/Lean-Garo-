@@ -3805,7 +3805,7 @@
   },
   {
     "english": "did you have lunch?",
-    "garo": "Na·a mi chajokma?"
+    "garo": "Na·a mi cha·jokma?"
   },
   {
     "english": "open (command)",
@@ -4325,7 +4325,7 @@
   },
   {
     "english": "Did you eat?",
-    "garo": "Na·a cha·ama?"
+    "garo": "Na·a Cha·ahama?"
   },
   {
     "english": "Did you go to market?",
@@ -8213,7 +8213,7 @@
   },
   {
     "english": "Did you have lunch?",
-    "garo": "Na·a mi chajokma?"
+    "garo": "Na·a mi cha·jokma?"
   },
   {
     "english": "Open (command)",
@@ -8497,7 +8497,7 @@
   },
   {
     "english": "example",
-    "garo": "cha·ama? (did you eat?)"
+    "garo": "cha·ahama? (did you eat?)"
   },
   {
     "english": "example",
@@ -9437,7 +9437,7 @@
   },
   {
     "english": "past_question",
-    "garo": "cha·ama?"
+    "garo": "cha·ahama?"
   },
   {
     "english": "negation",

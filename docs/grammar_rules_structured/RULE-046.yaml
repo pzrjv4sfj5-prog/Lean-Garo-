@@ -1,0 +1,60 @@
+id: RULE-046
+title: "Yes/No Question Particle -ma Joins Directly to the Verb (No Space)"
+description: >-
+  The yes/no question particle `ma` attaches directly onto the inflected
+  verb with no space and no period before it (`Cha·ahama?`), not as a
+  separate word (`Cha·aha ma?`) or with a period-join (`Cha·aha.ma?`).
+  This is an orthographic/morphological attachment rule, not a new tense
+  or mood: it applies on top of whatever verb form (simple past -aha,
+  perfective -jok, etc.) the sentence already carries.
+dependencies:
+  - id: RULE-002
+    name: "Past/Perfect Unification"
+    note: "-ma commonly attaches to the -aha past form in the confirmed examples (Cha·ahama?), but the rule is about the particle's attachment, not specific to this tense"
+  - id: RULE-015
+    name: "Stem Formation"
+    note: "-ma attaches after the verb's existing inflection is complete, not to the bare stem"
+claims:
+  - scope: "-ma is a bound question-particle suffix, not an independent word: no space or punctuation separates it from the verb it questions"
+    status: verified
+    confidence: high
+examples:
+  - "Na·a Cha·ahama? = \"Did you eat?\" (Cha·aha + ma, no space) — corrects prior draft form \"Na·a Cha·aha ma?\""
+  - "Na·a Bajal Re·angama? = \"Did you go to market?\" (Re·anga + ma, no space) — corrects prior draft form \"Na·a Bajal Re·anga ma?\""
+  - "Na·a mi cha·jokma? = \"Did you have lunch?\" (cha·jok + ma, no space) — corrects prior draft form \"Na·a mi cha·jok ma?\""
+counterexamples:
+  note: >-
+    A number of pre-existing master_dictionary.json/garo_dictionary.json
+    entries still ship the verb and `ma?` with a space (e.g. "are you
+    eating?"->"Na·a cha·enga ma?", "is there rice?"->"Mi donga ma?",
+    "have you eaten breakfast?"->"na·a nastha cha·aha ma?"). These predate
+    this rule's formalization and were not part of the 2026-08-21 relay
+    batch that prompted it. Flagged as a follow-up cleanup item, not
+    fixed under this rule's closure — same violation, different batch,
+    kept separate per one-task-at-a-time discipline.
+  items:
+    - "are you eating? -> Na·a cha·enga ma? (space before ma, unfixed)"
+    - "is there rice? -> Mi donga ma? (space before ma, unfixed)"
+    - "have you eaten breakfast? -> na·a nastha cha·aha ma? (space before ma, unfixed)"
+    - "have you eaten rice? -> Mi cha·jok ma? (space before ma, unfixed)"
+    - "do you love me? -> Na·a angna kasa·a ma? (space before ma, unfixed)"
+    - "are you scared? -> Na·a kenenga ma? (space before ma, unfixed)"
+    - "do you have children? -> Nang·o de donga ma? (space before ma, unfixed)"
+launch_priority:
+  - scope: "the three 2026-08-21 relay-batch items this rule directly closes (did you eat / did you go to market / did you have lunch)"
+    tier: P0
+    note: "closed 2026-08-21/NV-096; propagated to master_dictionary.json, garo_dictionary.json, corrections.json"
+  - scope: "the wider pre-existing space-before-ma corpus (counterexamples list above)"
+    tier: P1
+    note: "genuine open backlog item — same rule, unfixed instances, needs its own sweep session"
+native_notes: >-
+  Direct Thangseng correction, relayed via Tridip WhatsApp, 2026-08-21
+  (THANGSENG_RELAY_TABLE_20260821B.md): repeatedly corrected Tridip's
+  drafts wherever a space or period was inserted before `ma` —
+  "Cha·ahama?", not "Cha·aha ma?" / "Cha·aha.ma?" — across "did you
+  eat", "did you go to market", and "did you have lunch". Given as a
+  general grammar note applying project-wide, not a one-off lexical
+  correction.
+last_updated: "2026-08-21"
+updated_by: "Claude A"
+source_ref: "docs/THANGSENG_RELAY_TABLE_20260821B.md, NV-096"

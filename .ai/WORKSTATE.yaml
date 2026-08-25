@@ -15,7 +15,17 @@ repository:
     No repo content changed by this correction, pointer-only. Build gate reverified clean at actual current
     HEAD (7467063, == origin/main): 220/220 tests, 8159 entries, 0 new repository-intelligence violations
     (Check G confidence-schema check included).'
-  last_updated: '2026-08-23D (Claude A, session close): sorry-interjection follow-up + resume-protocol
+  last_updated: '2026-08-23E (Claude A, session close): NV-096 — question-particle grammar rule (RULE-046,
+    -ma joins verb with no space) + closed the 2026-08-21 relay batch''s "did you eat/have lunch/go to
+    market" family. Full detail in docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md. Rebased mid-close onto
+    3 concurrent Claude B commits (74a4a9a/1505301/551b18b — -rang plural audit + a corrections.json
+    "coins" fix, different key, no textual overlap; an AI-fallback research prototype) — clean rebase,
+    no conflicts, rebuilt compiled_dict.json/category_index.json fresh (byte-identical to pre-rebase,
+    confirmed via clean git status), re-verified 229/229 tests + repository-intelligence.js 0 new
+    violations + live translate() for all 4 touched keys AND Claude B''s "coins" fix post-rebase. head=551b18b
+    is the actual HEAD immediately before this close commit (post-rebase), verified == origin/main via
+    git fetch before push. 229/229 tests, repository-intelligence.js clean, 0 new violations.'
+  last_updated_prior_20260823D: '2026-08-23D (Claude A, session close): sorry-interjection follow-up + resume-protocol
     addendum for future Claude A. Full detail in docs/CLAUDE_A_SESSION_MIGRATION_20260823D.md. head=ca2e9bc
     is the actual HEAD immediately before this close commit, verified == origin/main via git fetch. 229/229
     tests, repository-intelligence.js clean, 0 new violations.'
@@ -387,7 +397,8 @@ claude_a:
     session (docs/CLAUDE_A_SESSION_MIGRATION_20260815.md) stopped exactly at this boundary. Reproducible
     via `node scripts/resync-stale-overrides.mjs` (no --apply — dry run), the `skip_no_verified_match`
     bucket in its output.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823D.md - this session's close (2026-08-23D).
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md - this session's close (2026-08-23E).
+  migration_doc_prior_20260823D: docs/CLAUDE_A_SESSION_MIGRATION_20260823D.md - prior session's close (2026-08-23D).
   migration_doc_prior_20260823: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md - prior session's close (2026-08-23).
   migration_doc_prior_20260818: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - prior session's close (2026-08-18).
     See migration_doc_prior_20260817b for the session before that.
@@ -428,7 +439,22 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-23D session close, Claude A: closed out the NV-095 session with a second small
+  current_task: '2026-08-23E session close, Claude A: NV-096 — processed the 2026-08-21 relay batch''s
+    question-particle grammar note (docs/THANGSENG_RELAY_TABLE_20260821B.md''s "Grammar note" section,
+    left unactioned since that table was written) and the three "did you X" sentences it applied to.
+    New RULE-046 (docs/grammar_rules_structured/RULE-046.yaml + GRAMMAR_RULE_CATALOGUE.md): question
+    particle -ma joins directly to the verb, no space/period. Closed "did you eat?" (was wrong-root
+    unverified Na·a cha·ama?, now VERIFIED/HIGH Na·a Cha·ahama?) and "did you have lunch?" (missing raka
+    dot + unjoined ma, now VERIFIED/HIGH Na·a mi cha·jokma?); "did you go to market?" confirmed already
+    correct (NV-086), no change. Full duplicate-representation check per governance §7: fixed 5 stale
+    occurrences in garo_dictionary.json and 5 in src/data/corrections.json (the corrections.json ones
+    were the actual live-wrong runtime source — caught via post-fix translate() spot-check, not assumed
+    fixed from source-file edits alone). Two new master_dictionary.json superseded/VERIFIED pairs
+    allowlisted in known_dictionary_conflicts.json. Flagged, not fixed (separate P1 backlog, listed in
+    RULE-046''s counterexamples): a wider pre-existing set of "verb + space + ma?" entries outside this
+    batch. 229/229 tests, repository-intelligence.js clean, live-verified via translate() for all four
+    keys post-fix. See docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md for full detail.'
+  current_task_prior_20260823D: '2026-08-23D session close, Claude A: closed out the NV-095 session with a second small
     commit (ca2e9bc) resolving the flagged ''sorry'' ambiguity — Project Owner confirmed both ''Kema bi·a''
     (bare ''sorry'', unchanged) and new sense-tagged ''sorry (interjection)''=Kema are correct, genuine
     distinction not a conflict. Also reconfirmed ''i understand''=Anga u·ia, already the established NV-087
