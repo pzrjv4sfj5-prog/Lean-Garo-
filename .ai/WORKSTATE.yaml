@@ -1614,7 +1614,55 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-24 (Claude B, -rang plural-marking audit, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260823C.md
+  next_action: '2026-08-24B (Claude B, AI/web fallback research prototype -- engineering
+    investigation only, per explicit Project Owner brief, no linguistic decisions made,
+    no master_dictionary.json/corrections.json/compiled_dict.json changes): full design
+    doc docs/CLAUDE_B_AI_FALLBACK_DESIGN_20260824.md. **Audited the existing cascade first,
+    as instructed, before writing any code.** Found translate() has TWO independent silent-loss
+    mechanisms neither of which reliably surfaces via the existing [UNKNOWN]-string checks:
+    (1) assembleSentenceSOV''s `.filter(p => p.garo)` (sentenceBuilder.js:100) drops any
+    unresolved content word with zero marker -- confirmed live, "she is carrying a widget"
+    -> "Ua gat·a", widget vanishes, confidence 0.75, indistinguishable from a correct
+    translation. (2) assembleGrammar''s object loop (grammarEngine.js:544-545) falls back
+    to the LAST word of a multi-word object phrase when the full phrase fails -- if an
+    earlier word is the actually-unresolved one but a later word happens to resolve alone,
+    the wrong resolved word silently takes the object slot, evading the existing
+    result.includes(''[UNKNOWN]'') safety check entirely since no [UNKNOWN] string ever
+    appears -- confirmed live, "i bought a gadget yesterday" -> "Anga mejal·ko breaha"
+    ("yesterday" wrongly object-marked, "gadget" gone with zero trace). This means detection
+    cannot be built by parsing translate()''s final output string -- built
+    src/research/detectUnresolved.js instead to re-derive resolution status directly from
+    the original English content words using the SAME lookup primitives (lookupGaro/
+    lookupPhrase/STOP_WORDS/AUXILIARY_SKIP, same ing/ed/s/es stripping order) the real
+    engine already uses internally, read-only reuse, zero new lookup logic. Built
+    src/research/researchFallback.js implementing the researchMissingWord() interface
+    exactly as specced (candidates/evidence/confidence/sources/status/
+    requires_native_validation), provider-agnostic (injectable {search,synthesize}, no
+    search/AI vendor committed to per instruction), in-memory cache keyed on word+context,
+    STATUS enum deliberately has no CONFIRMED value at all (only translate()''s real
+    dictionary cascade can produce that), candidate_garo stays null whenever multiple
+    candidates disagree so nothing gets silently chosen. Confirmed 4 independent structural
+    barriers preventing AI output from ever reaching canonical dictionary files (detailed
+    in design doc S6) -- no write path to any *.json dictionary file exists anywhere in
+    src/research/, verified by inspection. Built src/research/demo.js proving the full
+    pipeline end-to-end on 3 real cases (widget/gadget/computer), using REAL evidence
+    gathered via a live web search performed this session (not simulated by the sandboxed
+    script, which has no general web egress) -- confirmed a genuine "no Garo evidence
+    exists" outcome for widget/gadget (correctly returns NO_EVIDENCE_FOUND, no fabricated
+    candidate) and a genuine "resource exists but wasn''t fetched" case for computer
+    (Glosbe''s English-Garo dictionary recorded under sources as a lead, still correctly
+    NO_EVIDENCE_FOUND since the specific entry wasn''t parsed this phase). **Not wired into
+    translationEngine.js** -- zero existing files touched, translate()''s behavior/output
+    unchanged, full gate re-verified byte-identical (229/229 tests, repository-intelligence.js
+    0 new violations) after adding these files, confirming the feature is fully
+    disable-able by construction (nothing currently depends on it). **Discovered but
+    explicitly out of scope this session:** the assembleGrammar wrong-substitution bug
+    (mechanism 2 above) is a genuine independent engineering bug, flagged in the design
+    doc S"Discovered but out of scope" for a future dedicated session -- not fixed here
+    since detectUnresolvedWords()''s design sidesteps it entirely (never relies on
+    assembleGrammar''s object extraction) and fixing it wasn''t necessary to complete this
+    session''s actual brief. No linguistic content invented anywhere in this work.'
+  next_action_prior_20260824B: '2026-08-24 (Claude B, -rang plural-marking audit, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260823C.md
     + Claude A''s 20260823D close, synced clean fast-forward, 3 commits pulled -- NV-095 final
     reconciliation, already resolved 2 of Claude B''s 3 flagged items: bland/tasteless (Chibroka)
     and you=Nang/Na·a both closed by Claude A; only the plural-marking question remained open):
