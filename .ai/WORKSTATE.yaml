@@ -1,5 +1,5 @@
 repository:
-  head: 1505301
+  head: b327476
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -1655,7 +1655,34 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-24B (Claude B, AI/web fallback research prototype -- engineering
+  next_action: '2026-08-24C (Claude B, migration close, resumed mid-session from the AI/web
+    fallback prototype work in 551b18b -- resynced first via git fetch, found Claude A had
+    pushed 2 new commits since (b1352ad NV-096/RULE-046, b327476 migration close), pulled
+    clean fast-forward before doing anything else): Verified no runtime errors -- 229/229
+    tests, repository-intelligence.js 0 new violations, AND the new src/research/demo.js
+    prototype itself re-run end to end with no thrown errors. Verified nothing local-only --
+    git fetch + git status clean, up to date with origin, checked fresh rather than assumed.
+    **Governance-model check (Rule 13):** logged the wrong-substitution bug found last
+    session (grammarEngine.js object loop silently substituting an unrelated resolved word,
+    e.g. "yesterday", into the object slot when the true unresolved word in a multi-word
+    object phrase is not the last one) as a new tracked row, AI-002, in
+    docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md S4 -- previously only documented inside a dated
+    migration doc where a future session could miss it; now in the standing architectural-
+    investigation table alongside AI-001, with mechanism/subclass/status/instances/proposed-fix
+    filled in per the table''s existing format. Full migration doc with an explicit Resume
+    Protocol section for the next Claude B session:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260824C.md -- covers: mandatory Rule 13 governance-doc
+    read every session (not just first bootstrap), resync-before-work discipline, what to do
+    if continuing the AI-fallback prototype (real provider still stubbed, wiring into
+    translate() deliberately left undone, hard rule that no research result of any status
+    may ever reach master_dictionary.json/corrections.json/compiled_dict.json directly, and
+    that STATUS.CONFIRMED does not exist in researchFallback.js on purpose and should not be
+    added without explicit Project Owner sign-off), and what to do if picking up AI-002
+    instead (already scoped, engineering-only, unrelated to Claude A''s linguistic queue).
+    No engineering/linguistic work performed this close beyond the governance-doc table
+    update and documentation, per Migration Policy (Rule 9) -- migration mode does not start
+    new engineering work.'
+  next_action_prior_20260824C: '2026-08-24B (Claude B, AI/web fallback research prototype -- engineering
     investigation only, per explicit Project Owner brief, no linguistic decisions made,
     no master_dictionary.json/corrections.json/compiled_dict.json changes): full design
     doc docs/CLAUDE_B_AI_FALLBACK_DESIGN_20260824.md. **Audited the existing cascade first,
