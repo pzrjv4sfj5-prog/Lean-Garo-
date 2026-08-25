@@ -90,16 +90,38 @@ garo_dictionary.json → corrections.json → compiled_dict.json) was
 completed and live-verified within the session; no remaining gap for
 Claude B.
 
-## Open items carried forward (unresolved this session, not blocking)
-- 138-item relay batch still held (pre-existing, unrelated to this
-  session).
-- pickPrimary verified-ties, pre-existing, unchanged (hope, leg, last,
-  early, answer, fever, hoe, empty, where, horn, agree, brave, greedy,
-  demand, where (relative)) — out of scope, untouched.
-- Claude B's plural-marking-scope question (is `-rang` productive for
-  all nouns or only animate) — still genuinely open, needs a ruling.
-- **New this session:** the wider space-before-`ma` corpus (see
-  "Flagged, not fixed" above) — separate P1 backlog item.
+## NV-096: CLOSED
+
+## Next Session Work Queue
+Intentionally deferred — not started, not investigated further, this
+session:
+1. **138-item relay batch** (pre-existing, unrelated to NV-096).
+2. **pickPrimary verified-ties backlog** (hope, leg, last, early,
+   answer, fever, hoe, empty, where, horn, agree, brave, greedy, demand,
+   where (relative)) — unchanged, out of scope.
+3. **Plural `-rang` scope decision** — is `-rang` productive for all
+   nouns or only animate (Claude B's flagged question, still open).
+4. **Repository-wide space-before-`ma` sweep** — the wider "verb +
+   space + `ma`?" corpus outside the 2026-08-21 batch (are you eating?,
+   is there rice?, have you eaten breakfast?, have you eaten rice?, do
+   you love me?, are you scared?, do you have children?) — same
+   RULE-046 violation, different/older batch, listed in RULE-046's own
+   `counterexamples` field.
+
+## Resume protocol for next Claude A
+1. Read `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` in full before any
+   linguistic work — mandatory per `.ai/SESSION_BOOTSTRAP.md`'s Claude A
+   role bullet, not optional preamble.
+2. Rule 10's mandatory resume sequence: `git fetch origin` → compare
+   HEAD to `origin/main` → `git log <workstate-head>..HEAD --oneline` to
+   see everything since this checkpoint (`b1352ad`) → read the diff, not
+   just commit subjects, for anything touching
+   `master_dictionary.json`/`corrections.json`/`phrase_maps.js`.
+3. Only then pick **one** item from the Next Session Work Queue above —
+   one task per session, per standing discipline. Do not start more than
+   one, and do not silently expand scope mid-item (see this session's
+   own "flagged, not fixed" discipline on the wider space-before-`ma`
+   corpus as the pattern to follow).
 
 ## Final report
 - Entries processed this session: 2 (did you eat?, did you have lunch?)

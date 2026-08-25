@@ -482,8 +482,23 @@ claude_a:
     13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already landed before
     the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations. See docs/THANGSENG_NATIVE_VALIDATION.md
     NV-092 for full detail.'
-  next_action: 'Next Claude A session, in priority order: (0, new this session) help and log runtime gaps:
-    help=Betoi (uncited, zero master_dictionary match — pick between VERIFIED dakchakani/noun and dakchaka/verb,
+  next_action: 'NEXT SESSION WORK QUEUE (2026-08-23E close) — NV-096 CLOSED (RULE-046 + did-you-eat/lunch/market
+    family, see current_task and docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md). The 4 items below are
+    intentionally deferred to the next session, not started this session: (1) 138-item relay batch (pre-existing,
+    unrelated to NV-096). (2) pickPrimary verified-ties backlog (hope, leg, last, early, answer, fever,
+    hoe, empty, where, horn, agree, brave, greedy, demand, where (relative)) — unchanged, out of scope.
+    (3) plural -rang scope decision — is -rang productive for all nouns or only animate (Claude B''s flagged
+    question, still open). (4) Repository-wide space-before-ma sweep — the wider "verb + space + ma?"
+    corpus outside the 2026-08-21 batch (are you eating?, is there rice?, have you eaten breakfast?, have
+    you eaten rice?, do you love me?, are you scared?, do you have children?), same RULE-046 violation,
+    different/older batch, listed in RULE-046''s own counterexamples field. Resume protocol for whoever
+    picks this up: read .ai/CLAUDE_A_OPERATING_GOVERNANCE.md in full before any linguistic work (mandatory
+    per SESSION_BOOTSTRAP.md''s Claude A role bullet); then Rule 10''s mandatory resume sequence (git fetch
+    origin, compare HEAD to origin/main, git log <workstate-head>..HEAD --oneline to see everything since
+    this checkpoint, read the diff not just subjects for anything touching master_dictionary.json/corrections.json/phrase_maps.js);
+    only then pick one item from the queue above — one task per session, per standing discipline.'
+  next_action_prior_20260823D: '2026-08-23D (superseded by next_action above — kept for history): help=Betoi
+    (uncited, zero master_dictionary match — pick between VERIFIED dakchakani/noun and dakchaka/verb,
     or leave phrase_maps.js bare "help" key unset so it falls through) and log=dot (classifier stem, from
     a July 2 counting-system commit — decide if bare "log" should resolve to VERIFIED boltong instead,
     or if dot is intentionally correct for that key). Then, unchanged from 20260823A: (1) yes=Oe/Am/Hoe
