@@ -397,7 +397,7 @@ claude_a:
     session (docs/CLAUDE_A_SESSION_MIGRATION_20260815.md) stopped exactly at this boundary. Reproducible
     via `node scripts/resync-stale-overrides.mjs` (no --apply — dry run), the `skip_no_verified_match`
     bucket in its output.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md - this session's close (2026-08-23E).
+  migration_doc_prior_20260823E_dup: docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md - prior session's close (2026-08-23E).
   migration_doc_prior_20260823D: docs/CLAUDE_A_SESSION_MIGRATION_20260823D.md - prior session's close (2026-08-23D).
   migration_doc_prior_20260823: docs/CLAUDE_A_SESSION_MIGRATION_20260823.md - prior session's close (2026-08-23).
   migration_doc_prior_20260818: docs/CLAUDE_A_SESSION_MIGRATION_20260818.md - prior session's close (2026-08-18).
@@ -439,7 +439,21 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-23E session close, Claude A: NV-096 — processed the 2026-08-21 relay batch''s
+  current_task: '2026-08-25 session close, Claude A: ruled on the -rang plural-marking scope question
+    handed off in docs/CLAUDE_B_RANG_PLURAL_AUDIT_20260824.md. Ruling: status quo, formalized — -rang
+    used only where explicitly native-confirmed (children/Bi·sarang, fruits/biterang, coins/tangka
+    bisilrang), not ruled productive for any class. Only 3 confirmed data points exist, spanning 1
+    animate + 2 inanimate nouns — enough to rule out strict animate-only, not enough to establish
+    universal or class-restricted productivity without guessing. Zero engineering change (per audit
+    §7, this is the no-new-architecture option). Documented as deliberate policy in
+    .ai/SESSION_BOOTSTRAP.md''s "Current joint work package" so a future session doesn''t reopen it as
+    a suspected bug; flagged as an open relay question for a future Thangseng batch to eventually
+    gather more data points. Full ruling: docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md. No
+    master_dictionary.json/corrections.json/phrase_maps.js/engine content touched — documentation-only
+    session.'
+  migration_doc: docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md - this session's close (2026-08-25).
+  migration_doc_prior_20260823E: docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md - prior session's close (2026-08-23E).
+  current_task_prior_20260823E: '2026-08-23E session close, Claude A: NV-096 — processed the 2026-08-21 relay batch''s
     question-particle grammar note (docs/THANGSENG_RELAY_TABLE_20260821B.md''s "Grammar note" section,
     left unactioned since that table was written) and the three "did you X" sentences it applied to.
     New RULE-046 (docs/grammar_rules_structured/RULE-046.yaml + GRAMMAR_RULE_CATALOGUE.md): question
@@ -482,7 +496,20 @@ claude_a:
     13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already landed before
     the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations. See docs/THANGSENG_NATIVE_VALIDATION.md
     NV-092 for full detail.'
-  next_action: 'NEXT SESSION WORK QUEUE (2026-08-23E close) — NV-096 CLOSED (RULE-046 + did-you-eat/lunch/market
+  next_action: 'NEXT SESSION WORK QUEUE (2026-08-25 close) — item (3) below CLOSED this session, see
+    current_task and docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md: -rang plural-marking scope ruled
+    status-quo/confirmed-only (not universal, not class-restricted), zero engineering change, per
+    insufficient evidence (3 data points) to generalize either way; flagged as an open relay question
+    for a future Thangseng batch instead. Remaining queue, unchanged: (1) 138-item relay batch
+    (pre-existing). (2) pickPrimary verified-ties backlog (hope, leg, last, early, answer, fever, hoe,
+    empty, where, horn, agree, brave, greedy, demand, where (relative)) — unchanged, out of scope. (4)
+    Repository-wide space-before-ma sweep — the wider "verb + space + ma?" corpus outside the 2026-08-21
+    batch (are you eating?, is there rice?, have you eaten breakfast?, have you eaten rice?, do you love
+    me?, are you scared?, do you have children?), same RULE-046 violation, different/older batch. Resume
+    protocol for whoever picks this up: read .ai/CLAUDE_A_OPERATING_GOVERNANCE.md in full before any
+    linguistic work; then Rule 10''s mandatory resume sequence; only then pick one item from the queue
+    above — one task per session, per standing discipline.'
+  next_action_prior_20260823E: 'NEXT SESSION WORK QUEUE (2026-08-23E close) — NV-096 CLOSED (RULE-046 + did-you-eat/lunch/market
     family, see current_task and docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md). The 4 items below are
     intentionally deferred to the next session, not started this session: (1) 138-item relay batch (pre-existing,
     unrelated to NV-096). (2) pickPrimary verified-ties backlog (hope, leg, last, early, answer, fever,
