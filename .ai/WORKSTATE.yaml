@@ -1,5 +1,5 @@
 repository:
-  head: b327476
+  head: 47437e0
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -15,7 +15,14 @@ repository:
     No repo content changed by this correction, pointer-only. Build gate reverified clean at actual current
     HEAD (7467063, == origin/main): 220/220 tests, 8159 entries, 0 new repository-intelligence violations
     (Check G confidence-schema check included).'
-  last_updated: '2026-08-23E (Claude A, session close): NV-096 — question-particle grammar rule (RULE-046,
+  last_updated: '2026-08-25 (Claude B, session close): AI-002 fixed -- see claude_b.next_action
+    above and docs/CLAUDE_B_SESSION_MIGRATION_20260825.md for full detail. head=47437e0 is
+    the actual HEAD immediately before this close commit, verified == origin/main via git
+    fetch (rebased cleanly onto Claude A''s 47437e0 -rang ruling commit, landed after this
+    session started -- doc-only overlap in SESSION_BOOTSTRAP.md/WORKSTATE.yaml, both entries
+    additive, resolved by keeping both). 235/235 tests (229 baseline + 6 new), repository-intelligence.js
+    0 new violations.'
+  last_updated_prior_20260825: '2026-08-23E (Claude A, session close): NV-096 — question-particle grammar rule (RULE-046,
     -ma joins verb with no space) + closed the 2026-08-21 relay batch''s "did you eat/have lunch/go to
     market" family. Full detail in docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md. Rebased mid-close onto
     3 concurrent Claude B commits (74a4a9a/1505301/551b18b — -rang plural audit + a corrections.json
@@ -1682,7 +1689,42 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-24C (Claude B, migration close, resumed mid-session from the AI/web
+  next_action: '2026-08-25 (Claude B, AI-002 fix -- engineering-only, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260824C.md, resynced first: initial git fetch
+    found local HEAD 50b06b6 == origin/main, no rebase needed; a SECOND git fetch
+    immediately before committing found Claude A had pushed 47437e0 [-rang plural-marking
+    ruling, doc-only, no dictionary/engine content] in the interim -- rebased cleanly onto
+    it, one doc-only conflict in SESSION_BOOTSTRAP.md [Current joint work package section,
+    both entries additive] resolved by keeping both entries, re-verified gate green
+    post-rebase before pushing): Fixed AI-002
+    (docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md S4, now marked FIXED) -- analyzeGrammar''s
+    object-resolution fallback in src/grammarEngine.js checked only the LAST word of a
+    multi-word object phrase for resolution; if an earlier word was the one that actually
+    failed, and the last word (e.g. a trailing time adverb like "yesterday") happened to
+    resolve on its own, that unrelated resolved word was silently placed in the object slot
+    -- confirmed live repro "i bought a gadget yesterday" -> was "Anga mejal·ko breaha",
+    "gadget" vanished with zero [UNKNOWN] trace. Reproduced first via analyzeGrammar()
+    directly, root-caused precisely, then implemented the smallest structural fix: every
+    object word now checked individually, surfacing [UNKNOWN] if any fails to resolve --
+    but ONLY when a finite verb exists elsewhere in the sentence (gated on `!!verb`).
+    Without that gate, the fix regressed 2 existing tests ("I am lying in bed"/"I am lying
+    down" -- no-finite-verb copula construction where a stray unresolved participle like
+    "lying" is expected to be dropped in favor of the following locative noun); found this
+    via a full gate run after the first fix attempt (229 baseline -> 3 failures), root-caused
+    each failure rather than patching test expectations, then corrected the fix structurally.
+    existingFullPhrase priority unchanged. 6 new regression tests added to
+    tests/unit/translationEngine.test.js covering all 4 required word-resolution shapes
+    (all resolve / first resolves+later fails / earlier fails+later resolves [the bug itself]
+    / multiple fail) plus exact-phrase, corrections, classifier, and grammar-assembly
+    non-interference guards. Final gate: 235/235 tests pass (229 baseline + 6 new), 0 new
+    repository-intelligence.js violations. npm run build''s vite step fails with "vite: not
+    found" -- this sandbox has no node_modules installed at all this session (pre-existing
+    environment gap, unrelated to this fix) -- flagged explicitly rather than silently
+    treated as gate-clean. Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260825.md.
+    AI-fallback prototype (src/research/*) untouched, still Phase 1/not wired in, per
+    instruction not to start that work this session. Linguistic backlog untouched;
+    master_dictionary.json unchanged.'
+  next_action_prior_20260825: '2026-08-24C (Claude B, migration close, resumed mid-session from the AI/web
     fallback prototype work in 551b18b -- resynced first via git fetch, found Claude A had
     pushed 2 new commits since (b1352ad NV-096/RULE-046, b327476 migration close), pulled
     clean fast-forward before doing anything else): Verified no runtime errors -- 229/229

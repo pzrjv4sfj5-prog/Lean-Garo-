@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 
 import translationEngine from '../../src/translationEngine.js';
 import { translate } from '../../src/translationEngine.js';
+import { analyzeGrammar } from '../../src/grammarEngine.js';
 
 test('translate uses phrase-level dictionary matches for common expressions', async () => {
   const result = await translationEngine.translate('good morning');
@@ -1524,4 +1525,106 @@ test('item 2 regression guard: plain [NUMBER][NOUN] phrases (no adjective) are u
   const r = await translate('two sticks');
   assert.equal(r.method, 'classifier');
   assert.equal(r.confidence, 0.96);
+});
+
+// --- AI-002 fix (2026-08-25, Claude B, docs/CLAUDE_B_ENGINEERING_
+// GOVERNANCE.md §4): analyzeGrammar's object-resolution fallback
+// (grammarEngine.js, the block right after the "buy rice" special case)
+// used to fall straight to lookupGaro(lastWord) alone once the full-
+// phrase and counting-phrase lookups both failed. If an EARLIER word in
+// a multi-word object phrase was the one that actually failed to
+// resolve, and the LAST word happened to resolve on its own (e.g. a
+// trailing time adverb), the resolved-but-unrelated last word was
+// silently placed in the object slot with the object marker, and the
+// true unresolved word disappeared with zero trace — worse than a
+// plain drop, since no '[UNKNOWN]' string was ever produced, so this
+// evaded the existing `result.includes('[UNKNOWN]')` safety check in
+// sentenceBuilder.js entirely. Confirmed live pre-fix:
+// "i bought a gadget yesterday" -> "Anga mejal·ko breaha" ("mejal" =
+// "yesterday" wrongly took the object slot, "gadget" vanished).
+//
+// Fixture words used below, confirmed directly via lookupGaro():
+// "dog" -> "Achak" (resolves), "yesterday" -> "Mejal" (resolves),
+// "gadget"/"widget" -> null (do not resolve, not in any dictionary
+// source). These are chosen purely for their known resolution status,
+// not for grammatical naturalness.
+test('AI-002: object-word resolution is tracked per-word, not by last-word-only fallback', () => {
+  // (would ALL FAIL under the old lastWord-only fallback, which never
+  // even inspected these words to begin with)
+
+  // Case 1: all object words resolve individually — unaffected by the
+  // fix, same as the pre-fix fallback (which also happened to be
+  // correct here, since the one word it checked, the last, resolved).
+  const allResolve = analyzeGrammar('i saw dog');
+  assert.equal(allResolve.object.garo, 'Achak');
+  assert.notEqual(allResolve.object.garo, '[UNKNOWN]');
+
+  // Case 2: first word resolves, later (last) word fails — the old
+  // fallback already produced '[UNKNOWN]' here too (it only ever
+  // checked the last word), so this is a regression guard, not a new
+  // fix, but must keep working under the new per-word check.
+  const laterFails = analyzeGrammar('i bought a dog gadget');
+  assert.equal(laterFails.object.garo, '[UNKNOWN]');
+
+  // Case 3 — THE AI-002 BUG ITSELF: an earlier object word fails to
+  // resolve, but the last word ("yesterday") resolves on its own. Under
+  // the old code this silently shipped "Mejal" (yesterday's Garo value)
+  // as if it were the translation of "gadget yesterday" as a whole —
+  // this assertion is exactly what would have FAILED under the
+  // pre-fix behavior (old value: 'Mejal', not '[UNKNOWN]').
+  const earlierFails = analyzeGrammar('i bought a gadget yesterday');
+  assert.equal(earlierFails.object.garo, '[UNKNOWN]',
+    'an unresolved earlier word must not be silently replaced by an unrelated resolved later word');
+  assert.notEqual(earlierFails.object.garo, 'Mejal',
+    'the true unresolved word ("gadget") must not disappear in favor of "yesterday"/Mejal');
+
+  // Case 4: multiple object words fail to resolve — must still surface
+  // '[UNKNOWN]', not silently succeed or throw.
+  const multipleFail = analyzeGrammar('i bought a gadget widget');
+  assert.equal(multipleFail.object.garo, '[UNKNOWN]');
+
+  // Case 5 (single-word object, resolves) / Case 6 (single-word object,
+  // fails) — unaffected by the fix, same as before.
+  assert.equal(analyzeGrammar('i saw dog').object.garo, 'Achak');
+  assert.equal(analyzeGrammar('i saw gadget').object.garo, '[UNKNOWN]');
+});
+
+test('AI-002: end-to-end translate() no longer ships the wrong-substitution output for the confirmed live repro case', async () => {
+  const result = await translate('i bought a gadget yesterday');
+  // Pre-fix, this was 'Anga mejal·ko breaha' via method 'grammar-
+  // assembly' — grammar-assembly incorrectly succeeded by mislabeling
+  // "yesterday" as the object. Post-fix, grammar-assembly must
+  // recognize the object as unresolved (see the unit-level test above)
+  // and correctly decline (return null), so translate() falls through
+  // to a different method rather than shipping the wrong substitution.
+  assert.notEqual(result.garo, 'Anga mejal·ko breaha');
+  assert.notEqual(result.method, 'grammar-assembly',
+    'grammar-assembly must not silently succeed when a genuine object word is unresolved');
+});
+
+// --- AI-002 regression guard: verify the fix does not interfere with
+// exact phrases, corrections, classifier composition, or already-
+// working grammar-assembly object resolution (all paths that reach the
+// same object-resolution code but must be structurally unaffected).
+test('AI-002 regression guard: exact-phrase/corrections lookups still take precedence over the object-resolution fallback', async () => {
+  // "good morning" is an exact corrections/phrase-map match, never
+  // reaching analyzeGrammar's object loop at all.
+  const result = await translate('good morning');
+  assert.equal(result.garo, 'Pringnam.');
+});
+
+test('AI-002 regression guard: classifier composition for counted nouns is unaffected (fires before the per-word fallback is ever reached)', async () => {
+  const result = await translate('two sticks');
+  assert.equal(result.method, 'classifier');
+});
+
+test('AI-002 regression guard: "she has three children" classifier fix (2026-08-09) still applies — unaffected by the per-word fallback change', async () => {
+  const result = await translate('she has three children');
+  assert.equal(result.garo, 'Ua bi·sa sak·gittam donga');
+});
+
+test('AI-002 regression guard: a fully-resolved multi-word object sentence still reaches grammar-assembly correctly', async () => {
+  const result = await translate('i saw the dog');
+  assert.equal(result.method, 'grammar-assembly');
+  assert.ok(result.garo.toLowerCase().includes('achak'), `expected the resolved object "achak" to appear, got: ${result.garo}`);
 });

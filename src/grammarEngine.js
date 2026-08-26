@@ -542,7 +542,54 @@ export function analyzeGrammar(input) {
         }
       }
       if (!objGaro) {
-        objGaro = existingFullPhrase || lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
+        if (existingFullPhrase) {
+          objGaro = existingFullPhrase;
+        } else if (!verb) {
+          // No finite verb was found elsewhere in analyzeGrammar (the
+          // affirmative-copula/locative-residue construction, e.g. "I am
+          // lying in bed" / "I am lying down" — "am"/"is" is implicit
+          // and the participle, e.g. "lying", never resolves to a Garo
+          // verb and is expected to be dropped in favor of the actual
+          // locative noun that follows it). This is a structurally
+          // distinct case from AI-002's bug (a genuine transitive
+          // sentence with a resolved verb elsewhere, where an
+          // unresolved EARLIER object word must not be silently
+          // replaced) — preserve the pre-existing lastWord-wins
+          // behavior here rather than applying the stricter per-word
+          // check, since flipping this case to '[UNKNOWN]' would lose
+          // the locative/object marker downstream (grammar-assembly
+          // falls through to a weaker fallback stage that has no
+          // marker suffix at all) despite still identifying the
+          // correct noun.
+          objGaro = lookupPhrase(lastWord) || lookupGaro(lastWord) || '[UNKNOWN]';
+        } else {
+          // AI-002 fix (2026-08-25, Claude B, docs/CLAUDE_B_ENGINEERING_
+          // GOVERNANCE.md §4): this used to fall straight to
+          // lookupGaro(lastWord) alone — if an EARLIER word in a
+          // multi-word object phrase was the one that actually failed
+          // to resolve, and the last word happened to resolve on its
+          // own (e.g. a trailing time adverb like "yesterday"), that
+          // unrelated resolved word was silently placed in the object
+          // slot and the true unresolved word vanished with zero trace
+          // (confirmed live: "i bought a gadget yesterday" -> "gadget"
+          // disappears, "yesterday"/mejal wrongly takes the object slot
+          // — evades the '[UNKNOWN]' safety check entirely since no
+          // '[UNKNOWN]' string is ever produced). Fix: check EVERY word
+          // in objectWords individually, not just the last one. If any
+          // word fails to resolve, the true resolution status of the
+          // whole phrase is "not fully resolved" and must surface
+          // '[UNKNOWN]' — same signal the single-word case already
+          // correctly produces — rather than silently substituting
+          // whatever the last word alone happens to resolve to. When
+          // every word DOES resolve individually, behavior is unchanged
+          // from before (last word's resolution is used, same as the
+          // pre-fix fallback) — this fix does not attempt multi-word
+          // object composition, which would be inventing a linguistic
+          // translation, not an engineering fix.
+          const perWordGaro = objectWords.map((w) => lookupPhrase(w) || lookupGaro(w) || null);
+          const allWordsResolved = perWordGaro.every((g) => g !== null);
+          objGaro = allWordsResolved ? perWordGaro[perWordGaro.length - 1] : '[UNKNOWN]';
+        }
       }
       const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
       object = { english: objEng, garo: objGaro, withMarker: objGaro + marker, isLocativeAdjunct: objectIsLocativeAdjunct };
