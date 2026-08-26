@@ -1766,20 +1766,19 @@ claude_b:
     read directly not just asserted). Full gate: 247/247 tests (235 baseline +
     12 new), 0 new repository-intelligence.js violations. Still not wired into
     translate(); no real provider; STATUS.CONFIRMED still does not exist.
-    **DIVERGENCE FOUND AT SESSION CLOSE, NOT RESOLVED (Rule 9a step 4):** a
-    second git fetch immediately before push found Claude A had pushed
-    5273c0f (migration-close commit, doc-only: docs/
-    CLAUDE_A_SESSION_MIGRATION_20260825.md + WORKSTATE.yaml head-pointer
-    update, no linguistic/engineering data) in the interim -- local HEAD
-    1e60ed6 and origin/main 5273c0f have genuinely diverged (each has one
-    commit the other lacks), `git pull --ff-only` correctly refused, and per
-    Rule 9a step 4 this session did NOT attempt a rebase/merge under
-    migration mode. `git push` was attempted and rejected (non-fast-forward)
-    as expected. This session''s commit (1e60ed6) remains LOCAL ONLY, not on
-    origin -- full detail, exact commit hashes, and the mandatory next-session
-    resume action are in docs/CLAUDE_B_SESSION_MIGRATION_20260826.md, cited
-    here as the FIRST item the next session (any role) must handle before any
-    other work, per Rule 10.'
+    **DIVERGENCE FOUND MID-CLOSE, THEN RESOLVED SAME SESSION (Rule 9a
+    step 4, then Rule 10):** a second git fetch immediately before push
+    found Claude A had pushed 5273c0f (migration-close commit, doc-only)
+    in the interim -- git pull --ff-only correctly refused, git push
+    rejected, migration-mode close did not attempt to resolve it (per
+    Rule 9a), commits left local-only and documented. On continued
+    instruction: git fetch (origin/main unchanged), git rebase
+    origin/main -- clean, zero conflicts (disjoint files/fields). Full
+    gate re-run post-rebase: 247/247, 0 new repository-intelligence.js
+    violations. Rule 12 apostrophe spot-check re-run
+    ("i don''t know" -> "Anga uija", correct). Pushed 5273c0f..4724bb5.
+    Verified: HEAD == origin/main (4724bb5), zero divergence, clean tree.
+    Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260826.md.'
   next_action_prior_20260826: '2026-08-25 (Claude B, AI-002 fix -- engineering-only, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260824C.md, resynced first: initial git fetch
     found local HEAD 50b06b6 == origin/main, no rebase needed; a SECOND git fetch

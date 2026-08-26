@@ -1,35 +1,28 @@
 # Claude B — Session Migration Document (2026-08-26)
 
-## ⚠️ FIRST ITEM FOR NEXT SESSION: unresolved git divergence (Rule 9a step 4)
+## Divergence found mid-close, then resolved same session (Rule 9a step 4, then Rule 10)
 
-This session's work is committed locally (`1e60ed6`) but **NOT pushed to
-origin** — `origin/main` moved to `5273c0f` (Claude A, doc-only migration
-close) while this session was working, discovered on the mandatory
-pre-push `git fetch`. `git pull --ff-only` correctly refused
-(`fatal: Not possible to fast-forward`); `git push` was attempted and
-rejected (non-fast-forward), exactly as expected for genuine divergence.
-Per Rule 9a step 4, this session did **not** attempt a rebase/merge under
-migration mode — that is deliberately left for the next session's normal
-(non-migration) resync.
+The initial migration-mode close (Rule 9a) found `origin/main` had moved
+to `5273c0f` (Claude A, doc-only) while this session was working —
+`git pull --ff-only` correctly refused, `git push` was rejected, and per
+Rule 9a step 4 this session did not resolve it under migration mode; the
+two commits were left local-only and documented for the next session.
 
-- **Local, unpushed:** `1e60ed6` — this session's commit (see "Completed
-  work" below), parent `f8571be`.
-- **On origin, not in local history:** `5273c0f` — Claude A's 2026-08-25
-  migration-close commit. **Doc-only**, confirmed via `git show --stat`:
-  `docs/CLAUDE_A_SESSION_MIGRATION_20260825.md` (new) +
-  `.ai/WORKSTATE.yaml` update. No linguistic or engineering data.
-- **Next session's required first step (any role):** `git fetch origin`,
-  then rebase local `1e60ed6` onto `origin/main` (`5273c0f`). Since
-  Claude A's commit is doc-only and touches `.ai/WORKSTATE.yaml` (this
-  session's own commit also touched `.ai/WORKSTATE.yaml`, in the
-  `claude_b:` block only — Claude A's touched `claude_a:`/`repository.head`
-  fields), expect at most a trivial adjacent-region conflict in that one
-  file; `docs/`, `src/` changes should not conflict at all (disjoint
-  files). Re-run the full gate after rebasing, before pushing — do not
-  assume clean.
-- **This is not a content problem** — nothing in this session's actual
-  work (AI-002 verification, AI-fallback prototype additions) is in
-  question; it's purely an unresolved-divergence bookkeeping step.
+**Immediately after, on continued instruction, the divergence was
+resolved:** `git fetch` (confirmed `origin/main` unchanged at `5273c0f`),
+`git rebase origin/main` — clean, zero conflicts (Claude A's commit was
+doc-only in `docs/`/`repository.head`; this session's commits touched only
+`claude_b:` in `.ai/WORKSTATE.yaml`, disjoint fields). Full gate re-run
+post-rebase (not assumed clean): 247/247 tests, 0 new
+`repository-intelligence.js` violations. Rule 12 apostrophe spot-check
+re-run for good measure (`"i don't know"` → `"Anga uija"`, phrase-map —
+correct, not the polarity-reversed regression). Pushed:
+`5273c0f..4724bb5`. Verified after push: `git fetch` + `git status` clean,
+local `HEAD` (`4724bb5`) == `origin/main` (`4724bb5`), zero divergence.
+
+**Nothing below this point needs revisiting** — the actual engineering
+work (AI-002 verification, AI-fallback additions) was unaffected by the
+divergence; only the final push mechanics needed the extra step.
 
 ## AI-002: independent runtime re-verification (per explicit instruction, not just re-running unit tests)
 
@@ -209,16 +202,15 @@ PROVISIONAL path actually demonstrated rather than only asserted:
 
 ## Resume protocol for the next Claude B (or any role) session
 
-1. **Handle the divergence first** — see the top of this document. Do not
-   start new work until `git status` is clean and `HEAD == origin/main`.
-2. After resolving, re-run the full gate once more post-rebase before
-   trusting it (per Rule 9's own "re-verified post-rebase before pushing"
-   pattern used at the 2026-08-25 close).
-3. **AI-fallback next step, if picked up:** a real `provider`
+1. **Resync first per Rule 10** — `git fetch`, confirm `HEAD == origin/main`
+   (should already be true: `4724bb5`), read this doc, then
+   `.ai/WORKSTATE.yaml`. The divergence noted above is already resolved;
+   no rebase should be needed unless something new has landed since.
+2. **AI-fallback next step, if picked up:** a real `provider`
    implementation is still the standing next task, per
    `docs/CLAUDE_B_AI_FALLBACK_DESIGN_20260824.md` §4 and this doc's "What
    remains" section above — needs Project Owner input on which
    search/AI API to integrate, not purely an engineering call.
-4. Read `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` in full, every session,
+3. Read `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` in full, every session,
    per Rule 13 — AI-002's row is unchanged (`FIXED`, 2026-08-25), this
    session only added independent runtime confirmation of that fix.
