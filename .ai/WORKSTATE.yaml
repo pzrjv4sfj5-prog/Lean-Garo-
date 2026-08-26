@@ -1,5 +1,5 @@
 repository:
-  head: 47437e0
+  head: f8571be
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -15,14 +15,31 @@ repository:
     No repo content changed by this correction, pointer-only. Build gate reverified clean at actual current
     HEAD (7467063, == origin/main): 220/220 tests, 8159 entries, 0 new repository-intelligence violations
     (Check G confidence-schema check included).'
-  last_updated: '2026-08-25 (Claude B, session close): AI-002 fixed -- see claude_b.next_action
+  last_updated: '2026-08-25 (Claude A, MIGRATION CLOSE, resumed via a clean rebase onto Claude B''s
+    concurrent AI-002 fix, f8571be): NV-096 and this session''s -rang plural-marking scope ruling both
+    complete — see docs/CLAUDE_A_SESSION_MIGRATION_20260825.md and
+    docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md for full detail. Ruling: confirmed-only policy
+    (children/fruits/coins), no universal/class-wide productivity rule invented, zero engineering
+    change. This migration close is handoff-only — no linguistic or engineering data modified in this
+    commit, WORKSTATE.yaml/migration-doc updates only. Origin advanced mid-close (Claude B pushed
+    f8571be, the AI-002 assembleGrammar fix, while this migration commit was being prepared) — rebased
+    cleanly onto it before pushing, per Rule 9a (fetch/compare/ff-only-or-rebase, no new work). head
+    below corrected to f8571be, the actual HEAD immediately before this (rebased) close commit,
+    verified == origin/main via git fetch immediately before push. This session''s own build-gate
+    verification (229/229 tests, build clean) predates and is unaffected by Claude B''s AI-002 fix —
+    neither touches the other''s files (Claude B: src/grammarEngine.js + tests only; this session:
+    docs/.ai only) — see Claude B''s own last_updated_prior entry below for their 235/235 post-fix gate
+    result, which supersedes the 229/229 baseline as the actual current state of the test suite. Three
+    items explicitly deferred to the next session, untouched: 138-item Thangseng relay batch,
+    pickPrimary verified-ties backlog, repository-wide space-before-ma sweep.'
+  last_updated_prior_20260825_claude_b: '2026-08-25 (Claude B, session close): AI-002 fixed -- see claude_b.next_action
     above and docs/CLAUDE_B_SESSION_MIGRATION_20260825.md for full detail. head=47437e0 is
     the actual HEAD immediately before this close commit, verified == origin/main via git
     fetch (rebased cleanly onto Claude A''s 47437e0 -rang ruling commit, landed after this
     session started -- doc-only overlap in SESSION_BOOTSTRAP.md/WORKSTATE.yaml, both entries
     additive, resolved by keeping both). 235/235 tests (229 baseline + 6 new), repository-intelligence.js
     0 new violations.'
-  last_updated_prior_20260825: '2026-08-23E (Claude A, session close): NV-096 — question-particle grammar rule (RULE-046,
+  last_updated_prior_20260823E: '2026-08-23E (Claude A, session close): NV-096 — question-particle grammar rule (RULE-046,
     -ma joins verb with no space) + closed the 2026-08-21 relay batch''s "did you eat/have lunch/go to
     market" family. Full detail in docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md. Rebased mid-close onto
     3 concurrent Claude B commits (74a4a9a/1505301/551b18b — -rang plural audit + a corrections.json
@@ -446,19 +463,29 @@ claude_a:
     git status clean, git fetch + git pull --ff-only both trivial (already up to date), nothing to push
     before this doc/WORKSTATE commit. Working tree clean, fully pushed, HEAD == origin/main == 34ec07a
     going into this commit.'
-  current_task: '2026-08-25 session close, Claude A: ruled on the -rang plural-marking scope question
-    handed off in docs/CLAUDE_B_RANG_PLURAL_AUDIT_20260824.md. Ruling: status quo, formalized — -rang
+  current_task: '2026-08-25 MIGRATION CLOSE, Claude A: NV-096 and the -rang plural-marking scope
+    ruling (this session''s only work item) are both complete. Ruling: status quo, formalized — -rang
     used only where explicitly native-confirmed (children/Bi·sarang, fruits/biterang, coins/tangka
     bisilrang), not ruled productive for any class. Only 3 confirmed data points exist, spanning 1
     animate + 2 inanimate nouns — enough to rule out strict animate-only, not enough to establish
     universal or class-restricted productivity without guessing. Zero engineering change (per audit
     §7, this is the no-new-architecture option). Documented as deliberate policy in
     .ai/SESSION_BOOTSTRAP.md''s "Current joint work package" so a future session doesn''t reopen it as
-    a suspected bug; flagged as an open relay question for a future Thangseng batch to eventually
-    gather more data points. Full ruling: docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md. No
-    master_dictionary.json/corrections.json/phrase_maps.js/engine content touched — documentation-only
-    session.'
-  migration_doc: docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md - this session's close (2026-08-25).
+    a suspected bug; flagged separately as an open relay question for a future Thangseng batch to
+    eventually gather more data points (not part of the numbered next-session queue). Full ruling +
+    evidence: docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md. This migration close touched no
+    master_dictionary.json/corrections.json/phrase_maps.js/engine content — documentation/handoff
+    only. Verification scope: 229/229 unit tests, repository-intelligence.js 0 new violations (no
+    content changed, so none possible), vite build clean — full detail and exact scope statement in
+    docs/CLAUDE_A_SESSION_MIGRATION_20260825.md. Runtime Handoff: None (nothing touched to propagate).
+    Three items explicitly deferred to the NEXT SESSION WORK QUEUE (see next_action), untouched this
+    session: (1) 138-item Thangseng relay batch, (2) pickPrimary verified-ties backlog, (3)
+    repository-wide space-before-ma sweep.'
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260825.md - this session's close (2026-08-25,
+    migration/handoff only — see also docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md for the ruling
+    itself, which this migration doc incorporates in full).
+  migration_doc_prior_20260825_ruling: docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md - this session's
+    linguistic-ruling doc (2026-08-25), incorporated into the migration doc above.
   migration_doc_prior_20260823E: docs/CLAUDE_A_SESSION_MIGRATION_20260823E.md - prior session's close (2026-08-23E).
   current_task_prior_20260823E: '2026-08-23E session close, Claude A: NV-096 — processed the 2026-08-21 relay batch''s
     question-particle grammar note (docs/THANGSENG_RELAY_TABLE_20260821B.md''s "Grammar note" section,
@@ -503,7 +530,26 @@ claude_a:
     13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already landed before
     the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations. See docs/THANGSENG_NATIVE_VALIDATION.md
     NV-092 for full detail.'
-  next_action: 'NEXT SESSION WORK QUEUE (2026-08-25 close) — item (3) below CLOSED this session, see
+  next_action: 'NEXT SESSION WORK QUEUE (2026-08-25 migration close) — the -rang plural-marking scope
+    question is CLOSED (see current_task and docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md): ruled
+    status-quo/confirmed-only (children/fruits/coins), not universal, not class-restricted, zero
+    engineering change, per insufficient evidence (3 data points, spans animate+inanimate) to
+    generalize either way; flagged separately as an open relay question for a future Thangseng batch
+    (not part of this numbered queue). Three items intentionally deferred to the next session, NOT
+    started this session: 1. 138-item Thangseng relay batch (pre-existing — 89 Part A single words +
+    ~39 Part B phrases + 4 flagged priority: give me water, stand/stand up, take revenge, self). 2.
+    pickPrimary verified-ties backlog (hope, leg, last, early, answer, fever, hoe, empty, where, horn,
+    agree, brave, greedy, demand, where (relative)) — Claude B territory (AI-001), Claude A''s role
+    limited to supplying POS/sense defaults when asked. 3. Repository-wide space-before-ma sweep — the
+    wider "verb + space + ma?" corpus outside the 2026-08-21 batch RULE-046 already closed (are you
+    eating?, is there rice?, have you eaten breakfast?, have you eaten rice?, do you love me?, are you
+    scared?, do you have children?), same RULE-046 violation, different/older batch. Full resume
+    protocol in docs/CLAUDE_A_SESSION_MIGRATION_20260825.md: read .ai/CLAUDE_A_OPERATING_GOVERNANCE.md
+    in full before any linguistic work, then Rule 10''s mandatory resume sequence (git fetch, HEAD
+    comparison, git log <workstate-head>..HEAD --oneline read in full for anything touching
+    master_dictionary.json/corrections.json/phrase_maps.js), then pick exactly ONE item from the queue
+    above — one task per session, per standing discipline.'
+  next_action_prior_20260825: 'NEXT SESSION WORK QUEUE (2026-08-25 close) — item (3) below CLOSED this session, see
     current_task and docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md: -rang plural-marking scope ruled
     status-quo/confirmed-only (not universal, not class-restricted), zero engineering change, per
     insufficient evidence (3 data points) to generalize either way; flagged as an open relay question
