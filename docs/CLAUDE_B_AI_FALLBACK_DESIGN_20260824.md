@@ -207,3 +207,43 @@ blocker for this prototype — flagging here for a future dedicated
 engineering session, not fixed in this one, since fixing it wasn't
 necessary to accomplish the task and this session's brief was scoped to
 the fallback-research investigation, not general cascade bug-hunting.
+
+## Addendum, 2026-08-26 (Claude B) — AI-002 closed; PROVISIONAL path demonstrated; automated isolation tests added
+
+- **The bug flagged above is fixed.** See `docs/CLAUDE_B_ENGINEERING_
+  GOVERNANCE.md` §4 (AI-002, marked `FIXED 2026-08-25`) and
+  `docs/CLAUDE_B_SESSION_MIGRATION_20260825.md`. Independently re-verified
+  live via `translate()` this session (not just unit tests) — full detail
+  in this session's migration document.
+- **Gap closed: this doc's own "Can we return a useful provisional
+  translation?" claim was structure-only** — `demo.js`'s two cases both
+  land on `NO_EVIDENCE_FOUND`, never actually exercising the PROVISIONAL
+  shape. Added `src/research/mockProvider.js` (explicitly-labeled
+  fabricated/mocked evidence and candidate — not real linguistic content)
+  and `src/research/demoProvisional.js`, which runs `researchMissingWord()`
+  through a provider that *does* return a candidate and asserts every
+  field of the documented shape (`candidates[]` with `garo`/`confidence`/
+  `source`, `evidence[]`, `sources[]`, `confidence`, `status===PROVISIONAL`,
+  `requires_native_validation===true`). All checks pass live
+  (`node src/research/demoProvisional.js`).
+- **Added `tests/unit/researchFallback.test.js`** (12 tests, now part of
+  the standard gate) covering: `STATUS` has no `CONFIRMED` key;
+  `DEFAULT_PROVIDER` fails closed; invalid input → `UNRESOLVED`; the full
+  PROVISIONAL shape (mocked provider); disagreeing candidates leave
+  `candidate_garo` null; cache hit/miss behavior;
+  **structural isolation** — no file under `src/` or `src/data/` imports
+  `src/research/`, and `researchFallback.js`/`detectUnresolved.js`/
+  `mockProvider.js` never import `node:fs` (so they have no code path
+  capable of writing any file, canonical or otherwise);
+  **behavioral isolation** — `translate()`'s output for an unchanged
+  sentence is identical before and after calling `researchMissingWord()`,
+  and `master_dictionary.json`/`corrections.json`/`compiled_dict.json` are
+  read and confirmed byte-identical before/after a research call (not just
+  asserted by inspection, as this doc's §6/success-criteria section had
+  previously done).
+- **Still not done, unchanged from this doc's original scope:** no real
+  `provider` implementation (still `DEFAULT_PROVIDER`'s honest
+  no-op + the two demo/mock providers, none live-search-backed); not wired
+  into `translate()`'s cascade; `STATUS.CONFIRMED` still does not exist
+  anywhere in the module. See this session's migration document for the
+  full "what remains before production integration" list.
