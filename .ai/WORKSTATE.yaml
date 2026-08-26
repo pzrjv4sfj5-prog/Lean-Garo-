@@ -1735,7 +1735,52 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-25 (Claude B, AI-002 fix -- engineering-only, resumed via
+  next_action: '2026-08-26 (Claude B, AI-002 independent runtime re-verification +
+    AI-fallback PROVISIONAL demo/isolation tests -- engineering-only, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260825.md, resynced first: initial git fetch
+    found local HEAD f8571be == origin/main, no rebase needed to BEGIN work): Ran
+    live translate() (not just unit tests) across all required AI-002 shapes --
+    all-resolve (single-word/full-phrase-classifier/per-word-2-word),
+    first/middle/last-word unresolved, multiple unresolved, single-word-unresolved
+    baseline, both no-verb-copula regression guards, exact-phrase/classifier
+    non-interference. Confirmed unresolved object words are no longer wrongly
+    substituted (traced the mechanism: assembleGrammar now surfaces internal
+    [UNKNOWN], which correctly routes via the pre-existing
+    sentenceBuilder.js:314 [UNKNOWN]-check to the sov-assembly fallback --
+    confidence 0.75 vs 0.82, unresolved content honestly omitted rather than
+    guessed). No linguistic data touched, no changes made (verification only).
+    Then inspected src/research/researchFallback.js + detectUnresolved.js
+    (provider interface/status model/cache already solid from 2026-08-24).
+    Added src/research/mockProvider.js (explicitly-labeled mocked/fabricated
+    evidence+candidate) and src/research/demoProvisional.js, closing a gap where
+    the existing demo.js never exercised the PROVISIONAL path -- all shape
+    fields (candidates[]/evidence[]/sources[]/confidence/status=PROVISIONAL/
+    requires_native_validation=true) confirmed live. Added
+    tests/unit/researchFallback.test.js (12 tests): STATUS has no CONFIRMED
+    value; DEFAULT_PROVIDER fails closed; invalid input -> UNRESOLVED; full
+    PROVISIONAL shape; disagreeing candidates leave candidate_garo null; cache
+    hit/miss; structural isolation (no src/ or src/data/ file imports
+    src/research/, research modules never import node:fs); behavioral isolation
+    (translate() output AND master_dictionary.json/corrections.json/
+    compiled_dict.json confirmed byte-identical before/after a research call,
+    read directly not just asserted). Full gate: 247/247 tests (235 baseline +
+    12 new), 0 new repository-intelligence.js violations. Still not wired into
+    translate(); no real provider; STATUS.CONFIRMED still does not exist.
+    **DIVERGENCE FOUND AT SESSION CLOSE, NOT RESOLVED (Rule 9a step 4):** a
+    second git fetch immediately before push found Claude A had pushed
+    5273c0f (migration-close commit, doc-only: docs/
+    CLAUDE_A_SESSION_MIGRATION_20260825.md + WORKSTATE.yaml head-pointer
+    update, no linguistic/engineering data) in the interim -- local HEAD
+    1e60ed6 and origin/main 5273c0f have genuinely diverged (each has one
+    commit the other lacks), `git pull --ff-only` correctly refused, and per
+    Rule 9a step 4 this session did NOT attempt a rebase/merge under
+    migration mode. `git push` was attempted and rejected (non-fast-forward)
+    as expected. This session''s commit (1e60ed6) remains LOCAL ONLY, not on
+    origin -- full detail, exact commit hashes, and the mandatory next-session
+    resume action are in docs/CLAUDE_B_SESSION_MIGRATION_20260826.md, cited
+    here as the FIRST item the next session (any role) must handle before any
+    other work, per Rule 10.'
+  next_action_prior_20260826: '2026-08-25 (Claude B, AI-002 fix -- engineering-only, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260824C.md, resynced first: initial git fetch
     found local HEAD 50b06b6 == origin/main, no rebase needed; a SECOND git fetch
     immediately before committing found Claude A had pushed 47437e0 [-rang plural-marking
