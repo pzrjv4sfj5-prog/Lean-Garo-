@@ -1,5 +1,5 @@
 repository:
-  head: 576e96a
+  head: e6c44c5
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -537,7 +537,27 @@ claude_a:
     13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already landed before
     the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations. See docs/THANGSENG_NATIVE_VALIDATION.md
     NV-092 for full detail.'
-  next_action: 'NEXT SESSION -- PENDING WORK (2026-08-26 migration close). Full itemized detail
+  next_action: 'NEXT SESSION -- resume at item 2 of the 2026-08-26 queue (recalculate the true
+    LINGUISTICALLY OPEN count for the 149-item relay batch, folding in this session''s item-1
+    closures below), then items 5-10 unchanged. Full detail: docs/CLAUDE_A_SESSION_MIGRATION_20260827.md.'
+  current_task_20260827: '2026-08-27 (Claude A, resumed via pasted docs/CLAUDE_A_SESSION_MIGRATION_20260826.md):
+    resolved item 1 of that doc''s queue (NV-093 parenthetical-key pattern) plus items 3-4
+    (bring/cooked cross-checks, no action needed, both confirmed consistent). begin/bland/bye/coming
+    (relay batch items 4/5/9/16) were already native-confirmed via NV-093 but filed under
+    parenthetical keys ("begin (infinitive)" etc.) instead of the bare relay-batch keys -- traced
+    each against the batch''s exact wording, all four are direct confirmations, not distinct senses.
+    Added VERIFIED/HIGH rows for begin/bland/coming; promoted Bye->De from AMBIGUOUS/HIGH to
+    VERIFIED/HIGH with an explicit POS/sense-default statement (Bai/Ra stay unresolved variants,
+    per governance doc SS10). Duplicate-representation check: corrections.json/phrase_maps.js
+    already served all 4 correct values pre-session (live translate() confirmed) -- pure
+    citation-hygiene, zero runtime change. known_dictionary_conflicts.json +2 (begin, coming).
+    Rebased cleanly onto Claude B''s concurrent doc-only close (bd8a966, zero file overlap).
+    Gate green: 247/247 tests, repository-intelligence.js 0 new violations, 8185 entries.
+    Pre-existing/unrelated "cooked" pickPrimary tie noticed but confirmed via git-stash baseline
+    to predate this session, ships correctly regardless (corrections.json override) -- not fixed,
+    flagged to Claude B as a possible new AI-001-class instance, not urgent. Full detail:
+    docs/CLAUDE_A_SESSION_MIGRATION_20260827.md.'
+  next_action_prior_20260826: 'NEXT SESSION -- PENDING WORK (2026-08-26 migration close). Full itemized detail
     (task/status/verified/remains/reference/role for each) is in
     docs/CLAUDE_A_SESSION_MIGRATION_20260826.md, "Next Session -- Pending Work" section -- read that
     section in full before starting, this is a compressed index only. Relay batch identity corrected:
