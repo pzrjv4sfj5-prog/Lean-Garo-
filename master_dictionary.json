@@ -77400,5 +77400,26 @@
     "category": "phrases",
     "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "stand up",
+    "garo": "Chadengbo",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-092, Project Owner direct chat relay, 41-item batch). Documented in docs/THANGSENG_NATIVE_VALIDATION.md as closing this item but the master_dictionary.json write was never applied at the time -- applied now (2026-08-26, Claude A) while classifying the Thangseng relay batch; native evidence itself dates to NV-092, not new.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "take revenge",
+    "garo": "a·jak soka",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-092, Project Owner direct chat relay, 41-item batch). Documented in docs/THANGSENG_NATIVE_VALIDATION.md as closing this item but the master_dictionary.json write was never applied at the time -- applied now (2026-08-26, Claude A) while classifying the Thangseng relay batch; native evidence itself dates to NV-092, not new.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to spread",
+    "garo": "barama",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-092, Project Owner direct chat relay, 41-item batch). Documented in docs/THANGSENG_NATIVE_VALIDATION.md as closing this item but the master_dictionary.json write was never applied at the time -- applied now (2026-08-26, Claude A) while classifying the Thangseng relay batch; native evidence itself dates to NV-092, not new. Alt form; existing unverified Badala/Badalata candidates left untouched -- no evidence to supersede them.",
+    "confidence": "verified_high"
   }
 ]
