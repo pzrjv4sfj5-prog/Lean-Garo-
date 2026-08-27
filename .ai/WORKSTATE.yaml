@@ -1765,7 +1765,89 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-26 (Claude B, AI-002 independent runtime re-verification +
+  next_action: '2026-08-27 (Claude B, AI-001 engineering audit -- resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260826.md, resynced first: initial git
+    fetch found local HEAD b7112fe == origin/main, no rebase needed): Audited
+    AI-001 (pickPrimary precedence) per Project Owner-scoped instruction:
+    no linguistic choices made, no wiring of AI-fallback (both correctly
+    out of scope this session). Confirmed by direct grep + fresh rebuild
+    (byte-identical to committed compiled_dict.json) that pickPrimary is
+    still 100% regex-on-notes -- the confidence/confidence_source schema
+    (9578/9913 master_dictionary.json rows populated) is NOT read anywhere
+    in prepare-data.js or src/; step 4 (cutover) has not happened. 335 rows
+    still lack a confidence value, including "book" (a directly reconfirmed
+    native correction whose "RECONFIRMED --" notes prefix the regex does
+    not recognize as verified -- it currently resolves correctly only by
+    accident, as sole surviving candidate after SUPERSEDED-filtering, not
+    because anything marks it high-confidence); ~40+ further rows use
+    confidence language ("VERIFIED/native-speaker", "CONFIRMED",
+    "fix/verified", "Native-confirmed") the regex/migration script do not
+    recognize. Performed the mandatory 5-key random sample from
+    docs/PICKPRIMARY_VERIFIED_TIES.md (demand, hoe, early, greedy, "where
+    (relative pronoun)"): full trace master row -> compiled_dict.json ->
+    override check -> live translate() for each, all consistent, no stale
+    grammarOverrides masking found. Two false positives surfaced IN the
+    tie report itself and flagged for Claude A: hoe''s own citation already
+    states both candidates are native-confirmed as independently valid
+    ("not a defect"), and "where (relative pronoun)" looks like the same
+    free-variant/short-form shape -- neither should likely be listed as an
+    open disambiguation question. MID-SESSION SELF-CORRECTION (documented
+    per governance, not hidden): built a new findCorrectionsDrift
+    mechanical report (prepare-data.js) + regression tests believing I''d
+    found an unflagged gap (corrections.json silently overriding
+    compiled_dict.json''s "answer" tie at runtime, confirmed live --
+    translate("answer") returns "Aganchaka" via corrections.json, not
+    compiled_dict.json''s "Aganchakani"). Before shipping, checked existing
+    tooling and found repository-intelligence.js Check F (added 2026-08-02)
+    already does exactly this and already fails the build on NEW mismatches
+    specifically -- "answer" is already in the
+    known_cross_source_conflicts.json allowlist (94 known, 0 new, confirmed
+    by this session''s repository-intelligence.js run). Reverted the
+    duplicate work cleanly (git checkout, rebuilt, confirmed byte-identical
+    to origin, working tree clean) rather than leave two divergence
+    detectors doing the same job. No code or dictionary content changed
+    this session -- audit + one built-then-reverted duplicate, net zero
+    diff. Full gate re-confirmed after revert: test-dictionary.js 8184/8184
+    valid (8/9 grammatical corrections -- pre-existing stale hardcoded
+    "quick" expectation, unrelated to this session, not touched);
+    repository-intelligence.js PASSED, 0 new violations across all checks
+    (Check E: 110 known/0 new placeholders; Check F: 94 known/0 new
+    runtime-cascade mismatches; Check G: 9913 rows, 0 confidence-schema
+    problems); node --test tests/unit/*.test.js: 247/247 passing, 0
+    failures. AI-001 verdict: cannot move to cutover yet -- blocked on
+    B-only engineering work (below), not on A. Next action, B-only: (1)
+    widen the confidence-classification regex (both prepare-data.js
+    isVerified/isWeak logic AND scripts/migrate-confidence-schema.js) to
+    recognize the unrecognized-but-real verification prefixes found this
+    session ("RECONFIRMED", "VERIFIED/native-speaker", "CONFIRMED",
+    "fix/verified", "Native-confirmed", etc.) before the 335 ungapped rows
+    can be trusted; (2) design and implement the actual step-4 cutover --
+    pickPrimary reading the confidence field directly instead of
+    re-deriving it from notes text via regex, with the existing 16-tie /
+    5792-no-verified-candidate (post-rebase count, see below) reports
+    re-validated post-cutover for any count drift. Separately flag for
+    Claude A (not blocking B''s items above): the two probable
+    false-positive ties in docs/PICKPRIMARY_VERIFIED_TIES.md (hoe,
+    "where (relative pronoun)") noted above.
+    SYNC WITH A, SAME SESSION (Rule 9a, then Rule 10): pre-push fetch
+    found Claude A had pushed 1a4f940 (4 commits, Thangseng relay batch +
+    NV-092 fixes -- real content changes to master_dictionary.json/
+    compiled_dict.json/corrections.json/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md)
+    in the interim. git rebase origin/main -- clean, zero conflicts
+    (disjoint files/fields). Full gate + all runtime spot-checks
+    re-run post-rebase against A''s updated content, not just the
+    pre-rebase snapshot: rebuild byte-identical to newly-committed
+    compiled_dict.json, 16 ties unchanged, no-verified-candidate
+    5800->5792 (A''s batch resolved 8, expected, not a defect),
+    confidence-missing 335->328 (9913->9924 total rows -- A added 11 new
+    + resolved 7 of the prior gap), test-dictionary.js 8185/8185,
+    repository-intelligence.js 0 new violations (Check F 94->85 known
+    mismatches, A resolved some), 247/247 unit tests, no runtime errors
+    on translate() re-checks (early/hoe/greedy/demand/book all
+    re-verified live post-rebase, unchanged). Migration doc amended
+    in place to reflect actual post-rebase state before push, not the
+    stale pre-rebase snapshot.'
+  next_action_prior_20260827: '2026-08-26 (Claude B, AI-002 independent runtime re-verification +
     AI-fallback PROVISIONAL demo/isolation tests -- engineering-only, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260825.md, resynced first: initial git fetch
     found local HEAD f8571be == origin/main, no rebase needed to BEGIN work): Ran
