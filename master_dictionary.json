@@ -19699,7 +19699,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
+    "notes": "SUPERSEDED 2026-08-26 — imprecise bundled candidate, no single confirmed default. See 'Bye'->'De' (VERIFIED/HIGH, NV-093) for the resolved default; Bai/Ra remain unresolved variants.",
     "confidence": "unverified"
   },
   {
@@ -20752,7 +20752,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "AMBIGUOUS/HIGH v:Bai / Ra"
+    "notes": "VERIFIED/HIGH — direct answer to relay batch item 9 ('bye: De — correct?'), confirmed 2026-08-23 via NV-093 (found+cross-checked 2026-08-26). Native explicitly called it 'just an expression' without rejecting Bai/Ra. POS/sense default per CLAUDE_A_OPERATING_GOVERNANCE.md §10: Key 'bye'/'Bye' — De is the default for the bare key (this row); Bai and Ra remain variant/AMBIGUOUS/HIGH, neither confirmed nor rejected as alternates, not the default.",
+    "confidence": "verified_high"
   },
   {
     "english": "Bye",
@@ -28151,7 +28152,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:-brok-",
+    "notes": "SUPERSEDED 2026-08-26, citing NV-093 ('bland'->'Chibroka', VERIFIED/HIGH). Original note: UNVERIFIED/HIGH v:-brok-",
     "confidence": "unverified"
   },
   {
@@ -28160,7 +28161,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
+    "notes": "SUPERSEDED 2026-08-26, citing NV-093 ('bland'->'Chibroka', VERIFIED/HIGH). Original note: variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
   },
   {
@@ -77420,6 +77421,33 @@
     "garo": "barama",
     "category": "phrases",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-092, Project Owner direct chat relay, 41-item batch). Documented in docs/THANGSENG_NATIVE_VALIDATION.md as closing this item but the master_dictionary.json write was never applied at the time -- applied now (2026-08-26, Claude A) while classifying the Thangseng relay batch; native evidence itself dates to NV-092, not new. Alt form; existing unverified Badala/Badalata candidates left untouched -- no evidence to supersede them.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "begin",
+    "garo": "a'bachengna",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct answer to THANGSENG_RELAY_BATCH_20260820.md item 4 ('begin: a'ba·cheng·na — correct?'), confirmed 2026-08-23 via NV-093 (Project Owner direct chat relay), originally recorded only under the parenthetical key 'begin (infinitive)' (found+cross-checked 2026-08-26, docs/CLAUDE_A_SESSION_MIGRATION_20260826.md §5). Coexists with unverified bare-root 'a·ba·cheng·a' (likely same root, -na infinitive suffix) — not superseded, native did not reject it.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "bland",
+    "garo": "Chibroka",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct answer to THANGSENG_RELAY_BATCH_20260820.md item 5 ('bland: Chibroka — correct?'), confirmed 2026-08-23 via NV-093 (Project Owner direct chat relay), originally recorded only under the parenthetical key 'bland (alt)' (found+cross-checked 2026-08-26, docs/CLAUDE_A_SESSION_MIGRATION_20260826.md §5). Confirms the '-brok-' variant flagged on the unverified 'chi·brek·a'/'·brok·' entries, which are now superseded in its favor.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "coming",
+    "garo": "re·baenga",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct answer to THANGSENG_RELAY_BATCH_20260820.md item 16 ('coming: re·baenga — correct?'), confirmed 2026-08-23 via NV-093 (Project Owner direct chat relay), originally recorded only under the parenthetical key 'coming (progressive)' (found+cross-checked 2026-08-26, docs/CLAUDE_A_SESSION_MIGRATION_20260826.md §5). Fits the established -enga progressive suffix pattern. Coexists with differently-spelled unverified 'Re·baengjok' — not superseded, native did not reject it.",
     "confidence": "verified_high"
   }
 ]
