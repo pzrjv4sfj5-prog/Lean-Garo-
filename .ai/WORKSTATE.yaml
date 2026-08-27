@@ -537,44 +537,47 @@ claude_a:
     13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already landed before
     the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations. See docs/THANGSENG_NATIVE_VALIDATION.md
     NV-092 for full detail.'
-  next_action: 'NEXT SESSION WORK QUEUE (2026-08-26 migration close). The Thangseng relay batch has
-    been RENAMED and RECOUNTED this session: the "138-item" figure was a frozen historical count from
-    NV-088 (2026-08-20) that was never updated as items closed — the actual source
-    (docs/THANGSENG_RELAY_BATCH_20260820.md) has 149 unique items (91 Part A + 58 Part B, corrected
-    from a prior miscount of 89+58=147 that also missed 2 words). Full accounting NOT yet complete —
-    see docs/CLAUDE_A_SESSION_MIGRATION_20260826.md for the complete session record. TOP PRIORITY,
-    resume exactly here: 1. Resolve the parenthetical-key question before anything else. NV-093
-    (commit 9ef4603, 2026-08-23) wrote rows under keys like "begin (infinitive)", "bland (alt)",
-    "bye (clarified)", "coming (progressive)", "cooked (past-tense verb, ''I cooked'')", "dance (alt)",
-    "eaten (alt, perfective)", "happy (predicate form)", "how (alt)", "knowledge (alt, fuller
-    compound)", "live (alt)", "living (alt, progressive)" — NOT under the bare relay-batch keys
-    ("begin", "bland", "bye", "coming"). Confirmed via git show 9ef4603 -- master_dictionary.json --
-    this is a key-naming mismatch, not lost data (nothing was lost). Needs: (a) read the actual
-    garo+confidence values under each parenthetical key; (b) run translate() for the bare keys (begin,
-    bland, bye, coming, and any others sharing this pattern) to see whether they already resolve
-    correctly via some other path, or whether the bare key is a genuinely different (still-open)
-    lookup from the parenthetical alt-sense row; (c) do NOT guess at whether the parenthetical row
-    should also answer the bare key — that is a POS/sense judgment call requiring evidence, not
-    assumption. 2. Recalculate the true remaining LINGUISTICALLY OPEN count once (1) is resolved. As
-    of this close, believed-still-open (pending final confirmation after step 1): go, only (has an old
-    contradictory SUPERSEDED-note anomaly referencing VERIFIED forms that are no longer tagged
-    verified_high in current data — needs its own look), don''t eat, don''t go, give me water, go
-    away, help me, how are you, how many, how much, how much is this, hurry up, i am eating, i don''t
-    know (soft — very likely already correct per the established uia-root family referenced near
-    NV-087, ships correctly at runtime via phrase-map at 0.99 confidence, but has no direct
-    master_dictionary.json VERIFIED/HIGH citation under this exact key — low priority, confirm-only).
-    3. Once the true open count is fixed, draft and send the actual (much shorter) relay batch to
-    Tridip -> Thangseng — this has NOT been sent yet, only classified. 4. Only after all of the above:
-    resume the pre-existing deferred backlog — pickPrimary verified-ties (hope, leg, last, early,
-    answer, fever, hoe, empty, where, horn, agree, brave, greedy, demand, where (relative)) — Claude
-    B territory (AI-001), Claude A''s role limited to POS/sense defaults when asked — and the
-    repository-wide space-before-ma sweep (are you eating?, is there rice?, have you eaten breakfast?,
-    have you eaten rice?, do you love me?, are you scared?, do you have children?). Full resume
-    protocol in docs/CLAUDE_A_SESSION_MIGRATION_20260826.md, Resume Protocol section: read
-    .ai/CLAUDE_A_OPERATING_GOVERNANCE.md in full before any linguistic work, then Rule 10''s mandatory
+  next_action: 'NEXT SESSION -- PENDING WORK (2026-08-26 migration close). Full itemized detail
+    (task/status/verified/remains/reference/role for each) is in
+    docs/CLAUDE_A_SESSION_MIGRATION_20260826.md, "Next Session -- Pending Work" section -- read that
+    section in full before starting, this is a compressed index only. Relay batch identity corrected:
+    "138-item" was a frozen NV-088 (2026-08-20) snapshot, never updated as items closed; actual source
+    (docs/THANGSENG_RELAY_BATCH_20260820.md) has 149 items (91 Part A + 58 Part B). Items, in priority
+    order: (1) [A, linguistic] Resolve the NV-093 parenthetical-key pattern -- commit 9ef4603
+    (2026-08-23) wrote "begin (infinitive)"/"bland (alt)"/"bye (clarified)"/"coming (progressive)" etc,
+    not the bare relay-batch keys "begin"/"bland"/"bye"/"coming". Verified: rows genuinely exist, not
+    lost (git show 9ef4603). Remains: read exact garo+confidence values under each parenthetical key,
+    translate() the bare keys, determine via evidence (not guessing) whether parenthetical answers bare
+    key or is a distinct sense. (2) [A] Recalculate true LINGUISTICALLY OPEN count once (1) resolved --
+    blocked on (1), nothing else to re-derive. (3) [A, quick cross-check] cooked (past-tense verb) --
+    confirm NV-093''s parenthetical row matches the already-shipping NV-095 Song·aha value, not a third
+    value. (4) [A, quick cross-check] bring (imperative) -- confirm NV-093''s parenthetical row is a
+    distinct sense from the already-shipping NV-089 ra·ba·a value, not a contradiction. (5) [Owner/native]
+    go -- zero VERIFIED candidate under any key checked, corpus-internally unresolvable, needs actual
+    relay. (6) [A first, may become Owner/native] only -- old SUPERSEDED note cites VERIFIED forms
+    (ak·sa/ma·mang/·pit·chi/·sa) that are all currently tagged unverified in live data; needs git-log
+    archaeology on master_dictionary.json for this key (same shape as the NV-092 stand-up/take-revenge/
+    to-spread finding this session, but not yet traced to a specific commit) before deciding relay vs
+    apply-lost-evidence. (7) [A, citation formalization not new evidence] i don''t know -- ships
+    correctly at runtime (Anga uija, phrase-map, 0.99 confidence) via the established uia-root family
+    referenced near NV-087, but has no direct master_dictionary.json VERIFIED/HIGH row under this exact
+    key; read the NV-087-era text and formalize if citable. (8) [Owner/native] Remaining open relay
+    items, zero corpus-internal path: don''t eat, don''t go, give me water, go away, help me, how are
+    you, how many, how much, how much is this, hurry up, i am eating -- assemble into an actual new
+    relay batch doc and send via Tridip once (1)-(7) settle what else belongs in it; NOT sent yet, only
+    classified. (9) [A or B, low-urgency QA] optional full 149-item translate() re-sweep to confirm 0
+    new engineering-propagation gaps after (1)-(8) land -- the method (compare master VH value against
+    translate() output) already found and fixed all 12 gaps that existed as of this close; this is a
+    confirmatory re-run, not first-time coverage. (10) [B primarily, A for sense defaults/grammar-rule
+    input] Pre-existing deferred backlog, untouched again this session: pickPrimary verified-ties
+    (hope, leg, last, early, answer, fever, hoe, empty, where, horn, agree, brave, greedy, demand, where
+    (relative)) -- Claude B territory (AI-001); repository-wide space-before-ma sweep (are you eating?,
+    is there rice?, have you eaten breakfast?, have you eaten rice?, do you love me?, are you scared?,
+    do you have children?) -- Claude B territory, Claude A input on the underlying grammar rule if
+    needed. Resume sequence: read .ai/CLAUDE_A_OPERATING_GOVERNANCE.md in full, then Rule 10''s mandatory
     resume sequence (git fetch, HEAD comparison, git log <workstate-head>..HEAD --oneline read in full
     for anything touching master_dictionary.json/corrections.json/phrase_maps.js), then start at item
-    1 above — one task per session, per standing discipline, but this task itself spans steps 1-3
+    (1) above -- one task per session, per standing discipline, but this task itself spans (1)-(2)
     before it can be called closed.'
   next_action_prior_20260825: 'NEXT SESSION WORK QUEUE (2026-08-25 close) — item (3) below CLOSED this session, see
     current_task and docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md: -rang plural-marking scope ruled
