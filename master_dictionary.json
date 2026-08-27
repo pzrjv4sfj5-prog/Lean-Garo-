@@ -56133,7 +56133,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
+    "confidence": "superseded"
   },
   {
     "english": "i want to drink",
@@ -56141,7 +56142,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "SUPERSEDED - 2026-08-16, Claude A, corpus-internal contradiction (no native check needed): 'ring·a' is the raka-bearing 'sing' homophone (raka_roots.json, root 'ring' - the drink verb is confirmed no-raka; 'ring·a' is a genuinely different word). This exact value was already fixed in corrections.json 2026-07-23 (RC-CANDIDATE-009) but master_dictionary.json - the canonical compile source - was never updated, so the raka'd value kept silently winning at compile regardless of corrections.json edits. The bare 'VERIFIED/native-speaker' or 'VERIFIED/HIGH' tag has no NV-number, date, or relay chain (every genuine native confirmation in this corpus cites one) and directly contradicts every sibling drink-verb conjugation in the corpus (all raka-free) and the near-identical companion entry 'i want water'->'Anga chi ringna skenga'. Was: VERIFIED/native-speaker (uncited).",
+    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
     "confidence": "superseded"
   },
   {
@@ -56150,7 +56151,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
+    "confidence": "superseded"
   },
   {
     "english": "i want to sleep",
@@ -56158,7 +56160,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
+    "confidence": "superseded"
   },
   {
     "english": "i want water",
@@ -56184,7 +56187,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
+    "confidence": "superseded"
   },
   {
     "english": "i want to work",
@@ -56192,7 +56196,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
+    "confidence": "superseded"
   },
   {
     "english": "i want to study",
@@ -56200,7 +56205,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
+    "confidence": "superseded"
   },
   {
     "english": "i want to pray",
@@ -56208,7 +56214,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
+    "confidence": "superseded"
   },
   {
     "english": "go to sleep",
@@ -77336,6 +77343,62 @@
     "garo": "Na·a mi cha·jokma?",
     "category": "food",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-096, Thangseng relay via Tridip WhatsApp, THANGSENG_RELAY_TABLE_20260821B.md): 'Na·a mi cha·jokma?' — ma joins verb, no space (RULE-046); raka dot on cha·jok per RULE-001.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to eat",
+    "garo": "Anga cha·na ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to drink",
+    "garo": "Anga ringna ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to go",
+    "garo": "Anga re·ang·na ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to sleep",
+    "garo": "Anga tusia·na ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to come",
+    "garo": "Anga re·ba·na ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to work",
+    "garo": "Anga dakna ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to study",
+    "garo": "Anga pora·na ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to pray",
+    "garo": "Anga bi·a·na ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
     "confidence": "verified_high"
   }
 ]

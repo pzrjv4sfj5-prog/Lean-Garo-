@@ -19,12 +19,18 @@ import { translate } from '../../src/translationEngine.js';
 // layer, see src/lookupEngine.js), so this test asserts against
 // translate() output, not compiled_dict.json, to match what a user
 // actually sees.
+// 2026-08-26 (Claude A): expected value updated from stale
+// "Anga ringna sikenga" to "Anga ringna ska" — Thangseng's final evidence
+// (relayed via Tridip) closed the ska-vs-skenga question left open in
+// docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md: ska =
+// simple want, skenga = continuous of ska. Homophone assertion below is
+// unaffected and still holds.
 test('RC-CANDIDATE-009/039: "i want to drink" does not carry the ring·a="sing" homophone', async () => {
   const result = await translate('i want to drink');
   assert.ok(result && result.garo, 'expected translate() to return a garo value for "i want to drink"');
   assert.ok(!/ring·na/i.test(result.garo),
     `"i want to drink" carries the raka'd "sing" homophone (means "want to sing"): ${result.garo}`);
-  assert.equal(result.garo, 'Anga ringna sikenga');
+  assert.equal(result.garo, 'Anga ringna ska');
 });
 
 test('RC-CANDIDATE-009: companion drink-verb forms remain raka-free (sanity check, unaffected roots)', async () => {
