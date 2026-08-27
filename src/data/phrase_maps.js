@@ -17,7 +17,7 @@ export const PHRASE_MAPS = {
   'welcome': 'Rimchaksoa',
   'come in': 'Ning·chi re·babo.',
   'thank you': 'Mittela.',
-  'thank you very much': 'Mittela dakpile.',
+  'thank you very much': 'dakpile mittela', // corrected 2026-08-26 (Claude A): synced to NV-089 native-confirmed word order (master_dictionary.json VERIFIED/HIGH) -- phrase_maps had never been updated to match, shipping a stale word order
   'please': 'Ka·sapae.',
   'sorry': 'Kema·bi·a.',
   'excuse me': 'Angko kema·watbo.',
@@ -137,7 +137,7 @@ export const PHRASE_MAPS = {
   'be patient': 'Chakchikbo',
   'be brave': 'Ka·dongbo',
   "don't give up": 'Kimia·bo ong·ja',
-  'you did well': 'Na·a nama dak·a',
+  'you did well': 'Na·a nama dakaha', // corrected 2026-08-26 (Claude A): synced to NV-089 native-confirmed suffix form (master_dictionary.json VERIFIED/HIGH) -- phrase_maps had never been updated to match
   'god bless you': 'Isol nang·na pattia·bo',
   'amen': 'Amen',
   'rest in peace': 'Tom·toma·o tusibo',

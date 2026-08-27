@@ -31256,8 +31256,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH - NV-050 (Thangseng direct relay, 2026-08-02, see RULE-045): confirms min-a root = ripe/cooked. Promoted from prior UNVERIFIED/HIGH.",
-    "confidence": "verified_high"
+    "notes": "VERIFIED/HIGH - NV-050 (Thangseng direct relay, 2026-08-02, see RULE-045): confirms min-a root = ripe/cooked. Promoted from prior UNVERIFIED/HIGH. SUPERSEDED 2026-08-26 (Claude A): NV-095 (2026-08-23, 'FINAL NATIVE DATA RECONCILIATION') gave 'Song·aha' as the reconciled answer for this same key, effectively superseding this earlier NV-050 finding, but this row was never re-tagged. Runtime (corrections.json) already correctly serves Song·aha; this is a citation-hygiene fix, not a live bug. Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "cooking pot",
