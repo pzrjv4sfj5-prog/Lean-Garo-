@@ -116,14 +116,21 @@ Resume Protocol below.
 | Applied from undocumented-but-cited NV-092 evidence | 3 | stand up, take revenge, to spread |
 | Resolved under a `?`-suffixed key variant (NV-096) | 3 | did you eat, did you go to market, did you have lunch |
 | VERIFIED — already correct, no action needed | 104 | includes 4 legitimate-multi-form items (if/wait/which/what is your name) and 18 items where the draft's original guess was superseded by a later, different, already-correct answer (RECONCILIATION) |
-| Pending parenthetical-key resolution (§5) | 4 | begin, bland, bye, coming — status genuinely unknown until resolved |
+| Parenthetical-key resolved (2026-08-27, class D dup-repr. fix) | 4 | begin, bland, bye, coming — all confirmed word-for-word matches of the relay batch's own proposed values (NV-093); resolved as citation-hygiene, not relay. See `docs/CLAUDE_A_SESSION_MIGRATION_20260827.md`. |
 | LINGUISTICALLY OPEN — needs actual Thangseng relay | ~14 | go, only, don't eat, don't go, give me water, go away, help me, how are you, how many, how much, how much is this, hurry up, i am eating, i don't know (soft) |
 
-**8 + 7 + 1 + 3 + 3 + 104 + 4 + 14 = 144.** Discrepancy from 149 (5 items)
-is expected rounding/overlap in the "104 VERIFIED" bucket's internal
-breakdown (not re-verified line-by-line for this table) — the per-item
-classification script output (see Resume Protocol, re-run it) is the
-authoritative source, not this summary table.
+**8 + 7 + 1 + 3 + 3 + 4 + 104 + 14 = 144.** Same total as before the
+2026-08-27 resolution — the 4 parenthetical items moved from a separate
+"pending" bucket into "resolved," they were never part of the 14-item
+LINGUISTICALLY OPEN list, so that count is UNCHANGED at ~14. Discrepancy
+from 149 (5 items) is expected rounding/overlap in the "104 VERIFIED"
+bucket's internal breakdown (not re-verified line-by-line) — the
+per-item classification script output remains the authoritative source.
+
+**Item 2 (recalculate true LINGUISTICALLY OPEN count) — CLOSED
+2026-08-27:** confirmed above. The 14-item list is the true, current,
+corpus-internally-unresolvable relay queue. No new items added, none
+removed by this recalculation.
 
 ## Runtime Handoff
 

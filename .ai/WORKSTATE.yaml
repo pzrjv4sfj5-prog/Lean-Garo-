@@ -208,6 +208,11 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
+  next_action: '2026-08-27b (Claude A): Item 2 (recalculate LINGUISTICALLY OPEN count) CLOSED
+    — see docs/CLAUDE_A_SESSION_MIGRATION_20260826.md accounting table update. Count unchanged
+    at ~14 (go, only, don''t eat, don''t go, give me water, go away, help me, how are you, how
+    many, how much, how much is this, hurry up, i am eating, i don''t know (soft)). Next: item
+    5 (go), item 6 (only, needs commit archaeology), item 7 (i don''t know citation formalization).'
   operating_governance: '2026-08-22 (Claude A, Project Owner-directed): established `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`
     as MANDATORY reading for every future Claude A session, per `.ai/SESSION_BOOTSTRAP.md`''s updated
     Claude A role bullet and top-of-file pointer. Converts the same-day Role Self-Audit (`docs/CLAUDE_A_ROLE_SELF_AUDIT_20260822.md`,
