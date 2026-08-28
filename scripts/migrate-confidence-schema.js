@@ -2,11 +2,25 @@
  * scripts/migrate-confidence-schema.js — one-time migration, step 2 of
  * docs/PROPOSAL_CONFIDENCE_SCHEMA_20260822.md (AI-001 structural fix).
  *
+ * STATUS (2026-08-28): step 3 (pickPrimary cutover) is now COMPLETE —
+ * prepare-data.js reads `confidence` directly instead of re-deriving
+ * classification from `notes` on every build. This script remains the
+ * one-time/on-demand tool for materializing `confidence` onto rows that
+ * don't have it yet (currently 300, all needing Claude A's linguistic
+ * judgment — see docs/CLAUDE_B_SESSION_MIGRATION_20260827.md). A
+ * pre-existing `confidence` value is still treated as authoritative and
+ * never silently overwritten by this script (see main()) — including
+ * when it's grown stale relative to a later notes edit. 4 such stale
+ * rows are known and documented (bye, bland x2, cooked) — confirmed to
+ * have zero effect on shipped compiled_dict.json output, flagged to
+ * Claude A for cleanup, not auto-corrected here.
+ *
  * Materializes a `confidence` value onto every master_dictionary.json
  * row where the existing `notes` text unambiguously implies one, by
  * restating prepare-data.js's own regex classification rather than
  * inventing a new one. Six enum values, in precedence order (first
- * match wins, mirrors the order prepare-data.js itself checks them):
+ * match wins, mirrors the order prepare-data.js itself checked them
+ * pre-cutover):
  *
  *   1. superseded    — notes starts "superseded" (already excluded
  *                       from pickPrimary candidacy entirely today).

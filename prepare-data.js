@@ -130,8 +130,21 @@ function normalizeFile(filePath) {
         // SENSE is primary) are deliberately left unclassified here — that
         // is Claude A's call (open sense/POS judgment), not an engineering
         // classification gap.
-        const isVerified = /^verified\/high\b/i.test(notes) ||
-          /^(reconfirmed|confirmed|native-confirmed|verified\/native-speaker|fix\/verified)\b/i.test(notes);
+        // CUTOVER (2026-08-28, Claude B, per docs/CLAUDE_B_SESSION_
+        // MIGRATION_20260827.md §5 item 2): reads the `confidence` field
+        // directly instead of re-deriving from `notes`. Performed only
+        // after a read-only impact analysis (see that doc) found and fixed
+        // the one real blocker first: a merge-order bug (this file, master-
+        // upgrade path above) that silently dropped a master row's
+        // isVariant tag when the same Garo text also appeared untagged in
+        // an earlier non-master source. With that fixed, this cutover
+        // produces ZERO compiled_dict.json changes against the pre-cutover
+        // build (verified byte-for-byte) — confirmed via an isolated
+        // scratch-directory simulation before touching this file. isVariant
+        // stays notes-derived below: the confidence schema has no variant/
+        // non-variant dimension of its own (verified_high covers both), so
+        // that distinction has no field to cut over to.
+        const isVerified = item.confidence === 'verified_high';
         // 2026-08-15 (Claude B, per Claude A's 9-key handoff + Claude C
         // audit 20260815B §1.3/§2.2): isVerified above is anchored to the
         // START of notes, so a variant-tagged entry ("variant/VERIFIED/
@@ -145,7 +158,9 @@ function normalizeFile(filePath) {
         // pickPrimary branch — never widens which candidates are shown as
         // verified, only which are recognized as having NO evidence.
         const notesLower = notes.toLowerCase();
-        const isWeak = !notesLower || notesLower.includes('unverified') || notesLower.includes('ocr-flagged');
+        // CUTOVER (2026-08-28, see isVerified comment above for full
+        // rationale): weak-evidence now reads confidence directly.
+        const isWeak = item.confidence === 'unverified' || item.confidence === 'ocr_flagged' || !item.confidence;
         // CRITICAL FIX (2026-08-07, Claude B, per Claude A's handoff
         // docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md):
         // a `SUPERSEDED —` notes entry means Claude A already determined
@@ -160,7 +175,9 @@ function normalizeFile(filePath) {
         // (isRealCaseCollision, VERIFIED-neutral, last-write-wins) simply
         // never sees a SUPERSEDED candidate, with no new special-case
         // logic needed in pickPrimary itself.
-        const isSuperseded = /^superseded\b/i.test(notes);
+        // CUTOVER (2026-08-28, see isVerified comment above for full
+        // rationale): superseded status now reads confidence directly.
+        const isSuperseded = item.confidence === 'superseded';
         if (isSuperseded) {
           if (eng) addSuperseded(eng, garo);
           return;
@@ -588,6 +605,32 @@ function main() {
           // upgrade its source tag rather than dropping the master-tagged
           // duplicate, so pickPrimary can still see "master confirms this".
           existing.source = 2;
+          // FIX (2026-08-28, Claude B, read-only impact-analysis follow-up
+          // per docs/CLAUDE_B_SESSION_MIGRATION_20260827.md §5 item 2):
+          // this upgrade path copied isVerified/isVariantVerified/isWeak
+          // from the incoming master entry but never isVariant, so when a
+          // master row's exact Garo text ALSO appears untagged in an
+          // earlier non-master source (garo_dictionary.json etc.), the
+          // earlier non-master entry's default isVariant=false silently
+          // survives the "upgrade" and permanently overwrites master's own
+          // variant tag for that value. Confirmed live via 'lie': master's
+          // "Tol·napani" is variant/VERIFIED/HIGH, but garo_dictionary.json
+          // also has an untagged "Tol·napani" row processed first, so the
+          // merged entry stayed isVariant:false — invisible to
+          // PICKPRIMARY_VERIFIED_TIES.md's variant-tie branch even though
+          // it's a real, otherwise-correctly-detected tie (verified live:
+          // this fix adds exactly one entry, 'lie', to that report). Master
+          // is this pipeline's declared canonical source (see
+          // RC-CANDIDATE-036 above), so its own tag should always win on
+          // upgrade — direct assignment, not OR, matching how source itself
+          // is handled on the line above. Verified zero compiled_dict.json
+          // change from this fix alone (checked byte-for-byte against pre-
+          // fix output): every previously-shipped winner is unaffected:
+          // this only makes an already-real tie visible in the report
+          // where it was previously silently hidden by the bug, and closes
+          // an interaction risk for a future confidence-field cutover
+          // (see that migration doc's impact-analysis findings).
+          existing.isVariant = entry.isVariant;
           if (entry.isVerified) existing.isVerified = true;
           if (entry.isVariantVerified) existing.isVariantVerified = true;
           if (!entry.isWeak) existing.isWeak = false;

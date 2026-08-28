@@ -18,7 +18,6 @@ Claude A whenever there's time — same shape as the `answer`
 - `agree`: candidates — `kin·a·chak·a`, `ku·chak·a`, `ku·ra·chak·a` — shipped: `ku·ra·chak·a`
 - `answer`: candidates — `Aganchaka`, `Aganchakani` — shipped: `Aganchakani`
 - `brave`: candidates — `pa·a`, `sang·chak·a` — shipped: `sang·chak·a`
-- `cooked`: candidates — `min·a`, `Song·aha` — shipped: `Song·aha`
 - `demand`: candidates — `Dabia`, `Dabiani` — shipped: `Dabiani`
 - `early`: candidates — `Bakkan`, `Pring·seng` — shipped: `Pring·seng`
 - `empty`: candidates — `bang·bang`, `chi·chang·chang`, `jak·ra·ra` — shipped: `jak·ra·ra`
@@ -29,6 +28,7 @@ Claude A whenever there's time — same shape as the `answer`
 - `horn`: candidates — `a·du·ri`, `sing·ga` — shipped: `sing·ga`
 - `last`: candidates — `bon·kamgipa`, `ja·mangipa` — shipped: `ja·mangipa`
 - `leg`: candidates — `ja·chok`, `ja·git·teng`, `ja·teng` — shipped: `ja·teng`
+- `lie`: candidates — `Tol·napani`, `bo·a ra·a` — shipped: `bo·a ra·a`
 - `outside`: candidates — `A·pal`, `a'palo` — shipped: `a'palo`
 - `where`: candidates — `Bano`, `Bachi` — shipped: `Bachi`
 - `where (relative pronoun)`: candidates — `jeon`, `jeo` — shipped: `jeo`

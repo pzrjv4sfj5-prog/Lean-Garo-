@@ -1819,7 +1819,101 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-27 (Claude B, AI-001 engineering audit -- resumed via
+  next_action: '2026-08-28 (Claude B, session close). §5 item 1 (widen
+    confidence-classification regex) done and pushed (bb46abe): 27 rows
+    newly classified verified_high via 5 added prefixes (RECONFIRMED,
+    CONFIRMED, VERIFIED/native-speaker, fix/verified, Native-confirmed);
+    also caught and fixed a real bug the widening exposed -- phrase_maps.js
+    "bear" was a stale override (same shape as the 2026-08-15 85-key sweep,
+    just born 2 days after it, post-NV-080) and a merge-order bug where
+    isVariant wasn''t propagated when a master row''s Garo text also
+    appeared untagged in an earlier non-master source, confirmed live via
+    "lie"/"what is your name?". §5 item 2 (the actual pickPrimary cutover
+    to read `confidence` directly) is now ALSO COMPLETE, pushed same
+    commit range, per explicit Project Owner instruction to run a
+    read-only impact analysis first and migrate only if clean. Impact
+    analysis method: row-level notes-vs-confidence disagreement count
+    across all 9927 rows (622 total: 4 superseded, 262 verified, 359 weak
+    dimension disagreements -- all attributable to either the already-fixed
+    27-row gap or a further ~230 rows where confidence was manually set by
+    Claude A from context notes-regex can''t parse, e.g. "under
+    (sheet/slab/covering)"), then a full isolated-scratch-directory
+    simulation (never touched the working repo mid-analysis) rebuilding
+    compiled_dict.json under a confidence-based pickPrimary and diffing
+    byte-for-byte against production. First pass (pre-merge-fix) found
+    exactly 2 real compiled_dict.json divergences ("bear", "lie"/"what is
+    your name?" pattern) -- both traced to the SAME merge-order bug above,
+    not new linguistic questions. Fixed that bug first (verified: zero
+    compiled_dict.json change from the fix alone against unmodified
+    production), THEN re-ran the full cutover simulation on the fixed
+    base: zero compiled_dict.json changes, one report-only improvement
+    ("cooked" correctly drops from PICKPRIMARY_VERIFIED_TIES.md, matching
+    Claude A''s own citation-hygiene note on that row). Applied the cutover
+    to prepare-data.js for real; rebuilt; diffed against a pre-cutover
+    build captured via git stash -- REAL change count: 0. Full gate green
+    (8185/8185 dictionary tests, 247/247 unit tests, repository-
+    intelligence.js 0 new violations) and live translate() spot-checked
+    for every touched key (bear, outside, lie, cooked, bye, bland, book,
+    ant, "what is your name?") -- all match pre-cutover output exactly.
+    4 rows have a confidence field now confirmed STALE relative to current
+    notes (bye, bland x2, cooked) -- flagged to Claude A below, NOT
+    auto-corrected (direction of staleness isn''t uniform across the 4: 3
+    need the confidence field updated to match a later notes edit, 1
+    -- cooked/min·a -- already has the CORRECT confidence value and it''s
+    the notes-regex that''s naive; picking which source of truth wins per
+    row is a citation-hygiene judgment call, not mechanical). Confirmed
+    zero shipped-output impact from all 4 regardless. Remaining 300 rows
+    with no confidence value at all are unchanged from before this
+    session -- still Claude A''s call (Typo/Root/Split/Hyphenation/
+    AMBIGUOUS/INCORRECT/"Native correction" sense-disputes etc.), migration
+    script (scripts/migrate-confidence-schema.js) untouched in behavior,
+    only re-documented to reflect that prepare-data.js now consumes its
+    output live. Pushed bb46abe, HEAD == origin/main verified via git
+    ls-remote, working tree clean, no local-only commits.
+    POST-CUTOVER VERIFICATION FOLLOW-UP (same session, same commit): the
+    2 files git flagged modified after the cutover (compiled_dict.json,
+    compiled_dict_alternates.json) were investigated to ground truth
+    rather than assumed harmless, per explicit Project Owner instruction.
+    compiled_dict.json: proven byte-length-identical (242380 bytes) with
+    identical key sets and identical values for all 8185 keys (scripted
+    key-by-key diff) -- the git blob hash differs solely from JSON key
+    insertion-order drift (first divergence at array index 2832), a pure
+    serialization artifact with zero functional consequence (JS object
+    access is order-independent; confirmed via live translate() calls).
+    compiled_dict_alternates.json genuinely gained 2 entries (bye,
+    bland) -- both trace to 3 of the same 4 already-identified stale-
+    confidence rows (their notes say SUPERSEDED but confidence was never
+    updated to match), now surfacing in this secondary human-readable-
+    only report (confirmed NOT read by translate() -- checked against
+    translationEngine.js''s priority chain) since the isSuperseded filter
+    that generates this file now reads confidence directly. Primary
+    shipped values for both keys reconfirmed unchanged (bye->De,
+    bland->Chibroka) via live runtime call. No code or data change was
+    needed in response -- this is accurate new visibility into already-
+    documented stale data, not a new bug.
+    REBASE (before final push): origin/main had advanced past bb46abe
+    with Claude A''s 1aee580 (NV-097/NV-098) in the meantime. Rebased
+    cleanly on source files (master_dictionary.json, prepare-data.js,
+    migrate-confidence-schema.js, corrections.json, phrase_maps.js --
+    zero conflicts); only the 3 generated artifacts conflicted
+    (compiled_dict.json, compiled_dict_alternates.json,
+    PICKPRIMARY_NO_VERIFIED_CANDIDATE.md) and were resolved correctly by
+    discarding both conflicting sides and regenerating fresh via node
+    prepare-data.js rather than hand-merging JSON. Result: 8187 shipped
+    entries (Claude A''s new rows + this session''s logic). Full gate and
+    all this-session touched-key runtime checks re-confirmed green on
+    the merged base.
+    FINAL STATE: HEAD == origin/main after push, working tree clean, 0
+    untracked files, 0 local-only commits. Full gate green as final
+    action before push (8187/8187 dictionary tests, 247/247 unit tests,
+    repository-intelligence.js 0 new violations).
+    NEXT SESSION: (a) flag the 4 stale-confidence rows (bye, bland x2,
+    cooked) to Claude A/Project Owner for a citation-hygiene pass -- zero
+    urgency, zero shipped impact, purely a "keep the confidence field
+    honest" cleanup; (b) the 300 no-confidence rows remain the actual
+    AI-001 linguistic backlog, unchanged in scope from prior sessions. No
+    engineering-scoped work is outstanding as of this commit.'
+  next_action_prior_20260827: '2026-08-27 (Claude B, AI-001 engineering audit -- resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260826.md, resynced first: initial git
     fetch found local HEAD b7112fe == origin/main, no rebase needed): Audited
     AI-001 (pickPrimary precedence) per Project Owner-scoped instruction:
