@@ -1357,7 +1357,8 @@
     "english": "i don't know",
     "garo": "Anga uija.",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-098, Thangseng relay via Tridip, direct reconciliation of NV-097's flagged contradiction: \"Those two mean the same thing.\" — uija and ma·sija are confirmed synonyms for 'I don't know', not competing candidates. This row (matching the long-established uia-root family already shipping at runtime, referenced throughout NV-087 and after) kept as primary; 'Anga ma·sija' recorded as a confirmed coexisting synonym variant below, not superseded."
   },
   {
     "english": "come here",
@@ -5203,7 +5204,8 @@
     "english": "help me",
     "garo": "Angko dakchakbo",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": " VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"help me = Angna dakchakbo (or angko dakchakbo)\" — confirms this row as an accepted form; 'Angna dakchakbo' logged as a coexisting variant below, not a replacement."
   },
   {
     "english": "thank you very much",
@@ -7089,7 +7091,8 @@
     "english": "give me water",
     "garo": "Ang·na chi on·bo",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": " VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"give me water = Angna chi on'bo\" (matches this row modulo raka placement on 'Ang·na' — same word)."
   },
   {
     "english": "give him food",
@@ -7151,7 +7154,8 @@
     "english": "i am eating",
     "garo": "Anga cha·oenga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — contradicted by direct native evidence, NV-097 (2026-08-28) — see new VERIFIED/HIGH 'Anga cha·enga' row, which also matches the value already shipping via corrections.json. "
   },
   {
     "english": "she is going",
@@ -7209,7 +7213,8 @@
     "english": "go away",
     "garo": "Re·angbo",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": " VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"go away = re'angbo (can also mean 'go')\" — same root as re·a ('to go/walk') + imperative -bo. Confirms the value already shipping via corrections.json/phrase_maps.js."
   },
   {
     "english": "quick! / hurry!",
@@ -7277,13 +7282,15 @@
     "english": "don't eat",
     "garo": "Cha·ja",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — replaced by direct native evidence, NV-097 (2026-08-28) — see new VERIFIED/HIGH 'cha·nabe' row. "
   },
   {
     "english": "don't go",
     "garo": "Re·angbo ong·ja",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — replaced by direct native evidence, NV-097 (2026-08-28) — see new VERIFIED/HIGH 're·angnabe' row. "
   },
   {
     "english": "it is there / it exists",
@@ -58681,7 +58688,8 @@
     "garo": "Badita",
     "category": null,
     "pos": "adv.",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": " VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"how many = Badita? (In spoken language, Baita?)\" *Garo has no separate words for 'many' and 'much' — differentiation is understood only via additional context words. 'baitarong' (separate existing candidate) is NOT confirmed by this relay, left unverified/unchanged."
   },
   {
     "english": "how much.",
@@ -77007,7 +77015,7 @@
     "pos": "",
     "classifier": "",
     "category": "",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Imperative -bo suffix, distinct sense from already-VERIFIED general 'bring'=ra·ba·a.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Imperative -bo suffix, distinct sense from already-VERIFIED general 'bring'=ra·ba·a. Reconfirmed independently via NV-097 (2026-08-28, Thangseng relay: \"bring (imperative) = ra'babo; 'bo' suffix indicates imperative\") — second independent native relay landing on the identical value; closes the 2026-08-26 migration doc's item-4 cross-check (bare 'bring'=ra·ba·a vs this imperative-specific sense are confirmed distinct, not contradictory).",
     "confidence": "verified_high"
   },
   {
@@ -77070,7 +77078,7 @@
     "pos": "",
     "classifier": "",
     "category": "",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Coexists with unverified 'Maikai' — distinct form, not superseded without explicit rejection.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Coexists with unverified 'Maikai' — distinct form, not superseded without explicit rejection. Reconfirmed via NV-097 (2026-08-28, Thangseng relay, listed alongside 'maikai'). Per NV-046 (2026-07-31), maidake and maikai are NOT interchangeable in the purpose/'so that' sense — this relay's bare re-mention of 'maikai' is not treated as new evidence for promoting it under this key; left unverified, not guessed at.",
     "confidence": "verified_high"
   },
   {
@@ -77349,7 +77357,7 @@
     "english": "happy",
     "garo": "kusi ong·a",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\") Reconfirmed via NV-097 (2026-08-28, Thangseng relay), which adds an explicit grammatical note not previously on record: 'happy' has no separate predicate form — the adjective+ong·a construction is invariant (e.g. 'He is happy.' = 'Ua kusi ong·a.', same as attributive use).",
     "confidence": "verified_high"
   },
   {
@@ -77475,6 +77483,118 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH — direct answer to THANGSENG_RELAY_BATCH_20260820.md item 16 ('coming: re·baenga — correct?'), confirmed 2026-08-23 via NV-093 (Project Owner direct chat relay), originally recorded only under the parenthetical key 'coming (progressive)' (found+cross-checked 2026-08-26, docs/CLAUDE_A_SESSION_MIGRATION_20260826.md §5). Fits the established -enga progressive suffix pattern. Coexists with differently-spelled unverified 'Re·baengjok' — not superseded, native did not reject it.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dance (alt)",
+    "garo": "mesaa",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"dance (alt) = mesaa; * 'chroka' is more commonly used\" — confirms existing VERIFIED/HIGH 'Chroka' (NV-093) remains the preferred/primary form; 'mesaa' logged as a native-confirmed secondary alt, not a replacement.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eaten",
+    "garo": "cha·manaha",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"eaten = cha'manaha, cha'manjok (alt, perfective)\". This is the fuller/uncontracted form corroborating the previously-SUPERSEDED (NV-095) 'cha·man·aha' row — same word, now independently re-attested. Primary VERIFIED/HIGH for 'eaten' remains 'cha·jok' (NV-095); not superseding it, logging as corroborating variant only.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eaten",
+    "garo": "cha·manjok",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch, explicitly marked '(alt, perfective)'. Fuller form of the already-VERIFIED/HIGH 'cha·jok' (NV-095) — same root, perfective-aspect-marked variant. Not superseding cha·jok.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "knowledge (alt, fuller compound)",
+    "garo": "u·i-ma·siani",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"knowledge (alt, fuller compound) = u'i-ma'siani (may sometimes refer to wisdom)\". FLAGGED, not reconciled: this differs structurally from the existing VERIFIED/HIGH 'U·iani ba ma·siani' (NV-093, u·iani + ba['and'] + ma·siani) — this new form is a direct hyphenated compound (u·i + ma·siani) with no conjunction. Both are native-confirmed; relationship between the two compounding patterns needs a future explicit reconciliation pass, not guessed at here.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "live (alt)",
+    "garo": "tanga",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"live (alt) = tanga\". FLAGGED, not reconciled: reopens the tang-root question — 'live'/tang·a was marked SUPERSEDED at NV-095 in favor of 'donga' (now VERIFIED/HIGH for 'live (alt)'). This relay re-attests a tang-root form under the SAME 'live (alt)' key as donga, without disambiguating register/sense. Not un-superseding tang·a and not demoting donga; logged for explicit Thangseng reconciliation of the tang-/dong- family.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "living",
+    "garo": "tangenggipa",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch, explicitly marked '(alt, progressive)'. Same tang-root family tension as 'live (alt)'=tanga above (this session) — 'living' currently VERIFIED/HIGH as 'dongenga' (NV-095), 'git·tang·a' SUPERSEDED. This progressive nominalized tang-form is logged as-is, not reconciled against dongenga; part of the same flagged tang-/dong- family needing a future explicit relay question.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "don't eat",
+    "garo": "cha·nabe",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"don't eat = cha'nabe; from cha'a = to eat; nabe = negative imperative suffix.\"",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "don't go",
+    "garo": "re·angnabe",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"don't go = re'angnabe; from re'a = to go/walk; nabe = negative imperative suffix.\"",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "help me",
+    "garo": "Ang·na dakchakbo",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch, offered as an alternate to the now-VERIFIED/HIGH 'Angko dakchakbo' (\"Angna dakchakbo (or angko dakchakbo); from dakchaka = to help; bo = imperative\"). Both native-confirmed; 'Angko dakchakbo' remains primary since it is the form already shipping at runtime (corrections.json/phrase_maps.js).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how are you",
+    "garo": "Namengama?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"how are you = lit. Na'a mai rokom? (This is rarely used unless the condition of specific circumstances are implied.) More frequently and commonly, 'Namengama?'\" — this is the common/default form. Corroborates the root already shipping via corrections.json ('Na·a namenga ma?') and phrase_maps.js ('Na·a namengama?').",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how are you",
+    "garo": "Na·a mai rokom?",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch, the literal form, explicitly noted as rarely used outside specific circumstances — see the primary 'Namengama?' row above for the common form.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how much",
+    "garo": "Badita",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"how much = Badita? (In spoken language, Baita?)\" — same word as 'how many' per this relay's explicit note that Garo has no separate words for 'many'/'much'. Pre-existing lowercase unverified 'baita' candidate for this key is a spoken-register spelling of the same word, not superseded.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how much is this",
+    "garo": "Iara badita?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"how much is this = Iara badita?\" No prior master_dictionary.json row existed for this key. Differs from the value currently shipping via corrections.json ('Iako baita dam?', uncited) and phrase_maps.js ('Baita?', uncited) — corrections.json synced to this citation in the same session (see commit).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "hurry up",
+    "garo": "Ta·rakbo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"hurry up = Ta'rakbo.\" No prior master_dictionary.json row existed for this key. Differs slightly (missing medial vowel/raka) from the value currently shipping via corrections.json ('Tarkbo') and phrase_maps.js ('Tarkbo!') — both synced to this citation in the same session (see commit).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i am eating",
+    "garo": "Anga cha·enga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"i am eating = Anga cha'enga.\" Matches the value already shipping via corrections.json exactly.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i don't know",
+    "garo": "Anga ma·sija",
+    "category": "general",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-098, Thangseng relay via Tridip). Resolves NV-097's flagged contradiction: Thangseng directly confirmed uija and ma·sija are synonyms for 'I don't know', not competing/contradictory forms. Coexists with the primary 'Anga uija.' row (already shipping at runtime, kept as-is); this row is the second confirmed synonym, not a replacement.",
     "confidence": "verified_high"
   }
 ]

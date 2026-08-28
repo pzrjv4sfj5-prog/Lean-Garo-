@@ -1132,8 +1132,8 @@
   "in the forest": "nature",
   "i don't want": "general",
   "i don't have": "general",
-  "don't eat": "food",
-  "don't go": "travel",
+  "don't eat": "general",
+  "don't go": "general",
   "it is there / it exists": "general",
   "example": "general",
   "description": "general",
@@ -2885,7 +2885,7 @@
   "decent": "general",
   "deficiency": "general",
   "depend": "general",
-  "eaten": "food",
+  "eaten": "general",
   "educated": "general",
   "echo": "general",
   "eel": "general",
@@ -3991,5 +3991,11 @@
   "sorry (interjection)": "general",
   "stand up": "phrases",
   "take revenge": "phrases",
-  "to spread": "phrases"
+  "to spread": "phrases",
+  "dance (alt)": "general",
+  "knowledge (alt, fuller compound)": "general",
+  "live (alt)": "general",
+  "how are you": "general",
+  "how much is this": "general",
+  "hurry up": "general"
 }

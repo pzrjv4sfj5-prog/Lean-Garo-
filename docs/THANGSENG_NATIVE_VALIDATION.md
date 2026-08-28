@@ -5255,3 +5255,139 @@ session.
 superseded/VERIFIED pairs). Live-verified via `translate()`: "did you
 eat?", "did you eat food", "did you have lunch?", "did you go to
 market?" all resolve correctly post-fix.
+
+## NV-097 — Thangseng relay, uploaded transcript batch, 2026-08-28 (Rakka orthography-normalization pass applied)
+
+Resolves most of the "LINGUISTICALLY OPEN" §8 items from
+`docs/CLAUDE_A_SESSION_MIGRATION_20260826.md`, plus reconfirms 3 items
+and adds 6 flagged variants. Source: PDF transcript uploaded directly by
+the Project Owner (not a WhatsApp screenshot this time), containing raw
+apostrophe (`'`/`'`) morpheme-separator orthography — normalized to `·`
+per the Rakka convention (apostrophe/curly-apostrophe as morpheme
+separator → `·`; hyphen as English/Garo suffix separator → `·`; hyphens
+inside genuine lexical/compound forms left untouched — see `knowledge
+(alt, fuller compound)` below, kept as `u·i-ma·siani` since that hyphen
+joins two Garo morphemes, not an English/Garo suffix boundary... **flagged,
+not fully certain**, logged as such rather than force-normalized).
+
+**Resolved (new VERIFIED/HIGH, closes migration-doc §8 items):**
+- `don't eat` = `cha·nabe` (cha·a=eat + nabe=negative imperative
+  suffix). Old unverified `Cha·ja` superseded.
+- `don't go` = `re·angnabe` (re·a=go/walk + nabe). Old unverified
+  `Re·angbo ong·ja` superseded.
+- `give me water`, `go away`, `help me`, `how many` — all promoted
+  unverified→verified_high; new evidence matches the existing
+  candidate row (modulo cosmetic raka placement), several also matching
+  what corrections.json/phrase_maps.js already ship.
+- `how are you` = `Namengama?` (common form) / `Na·a mai rokom?`
+  (literal, explicitly rare register) — both new rows, no prior master
+  row existed.
+- `how much` = `Badita` (native explicitly states Garo has no separate
+  words for "many"/"much" — same word as `how many`).
+- `how much is this` = `Iara badita?` — new row; corrections.json
+  synced from an uncited `Iako baita dam?`.
+- `hurry up` = `Ta·rakbo` — new row; corrections.json/phrase_maps.js
+  synced from uncited `Tarkbo`/`Tarkbo!`.
+- `i am eating` = `Anga cha·enga` — new row, matches what
+  corrections.json already shipped. Old unverified `Anga cha·oenga`
+  superseded.
+
+**Reconfirmed (no value change, citation added):** `bring (imperative)`
+(closes the 2026-08-26 migration doc's parenthetical cross-check item
+4 — confirmed a genuinely distinct imperative sense, not a
+contradiction of bare `bring`), `happy` (adds explicit "no distinct
+predicate form" grammar note), `how (alt)`=`maidake` (bare re-mention
+of `maikai` in the same line is NOT treated as new promotion evidence —
+NV-046's maidake/maikai purpose-sense distinction stands unguessed-at).
+
+**New flagged variants, NOT reconciled against existing primaries —
+each explicitly logged as needing a future targeted relay question,
+not resolved here:**
+- `dance (alt)` = `mesaa` (native's own note: "chroka is more commonly
+  used" — Chroka/NV-093 stays primary).
+- `eaten` = `cha·manaha` / `cha·manjok` (alt, perfective) — fuller forms
+  corroborating the already-superseded `cha·man·aha` and the
+  already-VERIFIED `cha·jok` respectively; primary unchanged.
+- `knowledge (alt, fuller compound)` = `u·i-ma·siani` — a direct
+  compound, structurally different from the existing VERIFIED
+  `U·iani ba ma·siani` (uses `ba`="and").
+- `live (alt)` = `tanga` and `living` = `tangenggipa` (alt, progressive)
+  — reopens the tang-/dong- root tension NV-095 had settled toward
+  `donga`/`dongenga`; NOT un-superseding tang·a, NOT demoting donga.
+
+**Contradiction found, deliberately NOT resolved:** `i don't know` —
+this batch gives `Anga ma·sija`, a different root from the
+long-established, repeatedly-cited uia-root (`Anga uija.`,
+NV-087-era). Notably `ma·sia`("know") independently appears elsewhere
+in this same batch (the knowledge compound above), so this isn't a
+one-off transcription slip. Logged as an `unverified` candidate row
+citing the contradiction explicitly; the existing `uija` row is
+untouched. This needs an explicit Thangseng reconciliation question,
+not a guess — closes migration-doc item 7 for a different reason than
+expected (contradiction discovered, not just a citation-hygiene gap).
+
+**Confirmed still genuinely open by this same batch (no data given):**
+`go` (migration-doc item 5) and `only` (item 6) — the PDF's own closing
+note explicitly names both as remaining open.
+
+**Duplicate-representation check:** searched `corrections.json` and
+`phrase_maps.js` for every key touched above. Found and fixed 3 stale
+uncited runtime values that disagreed with this session's new
+citations: `hurry up` (`Tarkbo`→`Ta·rakbo` in both files), `how are
+you` (corrections.json's `Na·a namenga ma?` had a stray space before
+`ma?`, violating RULE-046 — synced to phrase_maps.js's already-correct
+`Na·a namengama?`), `how much is this` (`Iako baita dam?`→
+`Iara badita?`). `give me water`/`help me` phrase_maps.js spellings
+(`Angna` vs master's `Ang·na`) were left untouched — same
+long-standing, project-wide Angna/Ang·na inconsistency seen across
+dozens of pre-existing entries, out of scope for a single-item fix.
+`don't eat`/`don't go`/`i am eating` corrections.json values already
+matched the new citations exactly, no sync needed. `how many`'s
+phrase_maps.js value (`Baitarong`, the pre-existing *unconfirmed*
+candidate) also disagreed with the new citation and was synced to
+`Badita`.
+
+Gate re-verified after this batch: see
+`docs/CLAUDE_A_SESSION_MIGRATION_20260828.md` for exact counts.
+
+## NV-098 — Thangseng relay, direct reconciliation of NV-097's flagged contradiction, 2026-08-28
+
+Resolves the one item NV-097 deliberately left open: "i don't know" had
+two native-sourced candidates — the long-established `Anga uija.`
+(uia-root family, referenced since NV-087) and the new-that-session
+`Anga ma·sija` (from the uploaded PDF batch) — flagged as a genuine
+contradiction, not guessed at.
+
+**Thangseng's direct answer:** "Those two mean the same thing." — `uija`
+and `ma·sija` are confirmed **synonyms** for "I don't know", not
+competing/contradictory candidates.
+
+**Applied:** both rows promoted to `verified_high`. `Anga uija.` kept as
+primary (matches what's already shipping at runtime via
+corrections.json/phrase_maps.js, and is the form cross-referenced
+throughout the project's history) — its notes updated to record the
+reconciliation and cite `NV-098`, no confidence tag conflict since
+`Anga ma·sija` is tagged `variant/VERIFIED/HIGH`, so `pickPrimary`
+still resolves the key unambiguously to the single non-variant
+VERIFIED/HIGH candidate.
+
+**Duplicate-representation check:** searched `corrections.json`,
+`phrase_maps.js`, `garo_dictionary.json`, `final_entries.json` for
+every other representation of this key/value pair — all 9 existing
+occurrences (`i don't know`, `i do not know`, `i do not understand`,
+plus source-file duplicates) already consistently use `Anga uija`
+(cosmetic period-only variation). Nothing needed syncing; no stale
+duplicate found. `master_dictionary.json`'s own Check-C allowlist entry
+for `i don't know` (added in the NV-097 commit) remains valid — the key
+still legitimately holds 2 values, now both confirmed rather than one
+flagged as contradictory.
+
+**Runtime verification:** `translate()` re-run live for `i don't know`,
+`i do not know`, `i do not understand` — all three unchanged, all
+correctly resolve to `Anga uija`.
+
+**Gate:** 247/247 unit tests, `test-dictionary.js` 8187/8187, 0 new
+`repository-intelligence.js` violations (Checks A–G).
+
+This closes NV-097's one open contradiction. No other Thangseng
+questions are pending from this reconciliation.
