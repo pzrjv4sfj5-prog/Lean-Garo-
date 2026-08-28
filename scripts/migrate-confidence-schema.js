@@ -86,6 +86,12 @@ function classify(notes) {
   if (/^rejected\b/i.test(n)) return 'rejected';
   if (/^open\b/i.test(n)) return 'open';
   if (/^variant\/verified\/high\b/i.test(n) || /^verified\/high\b/i.test(n)) return 'verified_high';
+  // WIDENED (2026-08-28, per docs/CLAUDE_B_SESSION_MIGRATION_20260827.md
+  // §5 item 1 — same 5 prefixes added to prepare-data.js's isVerified,
+  // restated here per this script's own stated design goal of mirroring
+  // prepare-data.js's classification exactly. See that file's comment
+  // for the full rationale and the 27-row breakdown.
+  if (/^(reconfirmed|confirmed|native-confirmed|verified\/native-speaker|fix\/verified)\b/i.test(n)) return 'verified_high';
   if (!nl || nl.includes('unverified')) return 'unverified';
   if (nl.includes('ocr-flagged')) return 'ocr_flagged';
   return null; // ambiguous — Claude A's call, step 3, not guessed here

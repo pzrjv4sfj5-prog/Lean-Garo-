@@ -1756,7 +1756,8 @@
     "english": "flower",
     "garo": "Bibal",
     "category": "nature",
-    "notes": "Reconfirmed 2026-08-06 (Thangseng, via Tridip WhatsApp, NV-020): \"Flower - bibal (if only the flower itself is meant)\"."
+    "notes": "Reconfirmed 2026-08-06 (Thangseng, via Tridip WhatsApp, NV-020): \"Flower - bibal (if only the flower itself is meant)\".",
+    "confidence": "verified_high"
   },
   {
     "english": "leaf",
@@ -1970,7 +1971,8 @@
     "english": "book",
     "garo": "Ki·tap",
     "category": "education",
-    "notes": "RECONFIRMED — direct native correction, 2026-08-08 (Project Owner relay, Thangseng direct, from 'the book is on the table' = 'Ki.tap tebilo ong.a'): overrides prior 2026-08-01 corpus-internal-audit SUPERSEDED call. 'Ki·tap' confirmed final for 'book'. See NV-069."
+    "notes": "RECONFIRMED — direct native correction, 2026-08-08 (Project Owner relay, Thangseng direct, from 'the book is on the table' = 'Ki.tap tebilo ong.a'): overrides prior 2026-08-01 corpus-internal-audit SUPERSEDED call. 'Ki·tap' confirmed final for 'book'. See NV-069.",
+    "confidence": "verified_high"
   },
   {
     "english": "axe",
@@ -21972,7 +21974,8 @@
     "pos": "n.",
     "category": "animals",
     "classifier": null,
-    "notes": "CONFIRMED — NV-039, direct native confirmation (Tridip -> Thangseng, 2026-07-24: \"aiwaa tampi ma?\" -> \"Tampi\"). Closed 2026-07-25. Does not resolve the broader 'fly' noun conflict (Bila/Tampi/til·a) — Bila under 'fly' likely bleeds in from the separate 'to fly' verb entry (also Bila); til·a remains an unconfirmed alternate."
+    "notes": "CONFIRMED — NV-039, direct native confirmation (Tridip -> Thangseng, 2026-07-24: \"aiwaa tampi ma?\" -> \"Tampi\"). Closed 2026-07-25. Does not resolve the broader 'fly' noun conflict (Bila/Tampi/til·a) — Bila under 'fly' likely bleeds in from the separate 'to fly' verb entry (also Bila); til·a remains an unconfirmed alternate.",
+    "confidence": "verified_high"
   },
   {
     "english": "Forest",
@@ -28009,7 +28012,8 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "CONFIRMED native (Thangseng, NV-025, 2026-07-20) + Project Owner relay 2026-07-24 resolving prior bird/chicken do·o collision | Cross-ref 2026-08-11: this root is shared with \"bird\" (do·o) — bird is the category, chicken is a member of it, same word, not a coincidence. See \"bird\" entry."
+    "notes": "CONFIRMED native (Thangseng, NV-025, 2026-07-20) + Project Owner relay 2026-07-24 resolving prior bird/chicken do·o collision | Cross-ref 2026-08-11: this root is shared with \"bird\" (do·o) — bird is the category, chicken is a member of it, same word, not a coincidence. See \"bird\" entry.",
+    "confidence": "verified_high"
   },
   {
     "english": "bird basket",
@@ -44109,7 +44113,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "Native-confirmed 2026-07-22 (Thangseng, via PO): bot·a means to incite/provoke, NOT quarrel. Re-glossed from erroneous \"quarrel\" entry; cross-ref v:ni-ri-a preserved as-is (ni·ri·a unconfirmed, see NV-028)."
+    "notes": "Native-confirmed 2026-07-22 (Thangseng, via PO): bot·a means to incite/provoke, NOT quarrel. Re-glossed from erroneous \"quarrel\" entry; cross-ref v:ni-ri-a preserved as-is (ni·ri·a unconfirmed, see NV-028).",
+    "confidence": "verified_high"
   },
   {
     "english": "quarrel",
@@ -56061,7 +56066,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "fix/verified"
+    "notes": "fix/verified",
+    "confidence": "verified_high"
   },
   {
     "english": "the doctor explained the anatomy",
@@ -56069,7 +56075,8 @@
     "category": "health",
     "pos": null,
     "classifier": null,
-    "notes": "fix/verified"
+    "notes": "fix/verified",
+    "confidence": "verified_high"
   },
   {
     "english": "people say it is good is it good",
@@ -56077,7 +56084,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "fix/verified"
+    "notes": "fix/verified",
+    "confidence": "verified_high"
   },
   {
     "english": "anatomy",
@@ -56085,7 +56093,8 @@
     "category": "health",
     "pos": null,
     "classifier": null,
-    "notes": "fix/verified"
+    "notes": "fix/verified",
+    "confidence": "verified_high"
   },
   {
     "english": "explain",
@@ -56093,7 +56102,8 @@
     "category": "verbs",
     "pos": null,
     "classifier": null,
-    "notes": "fix/verified"
+    "notes": "fix/verified",
+    "confidence": "verified_high"
   },
   {
     "english": "explained",
@@ -56101,7 +56111,8 @@
     "category": "verbs",
     "pos": null,
     "classifier": null,
-    "notes": "fix/verified"
+    "notes": "fix/verified",
+    "confidence": "verified_high"
   },
   {
     "english": "want",
@@ -56224,7 +56235,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/native-speaker",
+    "confidence": "verified_high"
   },
   {
     "english": "go to eat",
@@ -56232,7 +56244,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/native-speaker",
+    "confidence": "verified_high"
   },
   {
     "english": "go to drink",
@@ -56240,7 +56253,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/native-speaker",
+    "confidence": "verified_high"
   },
   {
     "english": "ant",
@@ -56248,7 +56262,8 @@
     "category": "animals",
     "pos": null,
     "classifier": "mang",
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/native-speaker",
+    "confidence": "verified_high"
   },
   {
     "english": "ants",
@@ -56256,7 +56271,8 @@
     "category": "animals",
     "pos": null,
     "classifier": "mang",
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/native-speaker",
+    "confidence": "verified_high"
   },
   {
     "english": "let's go to market",
@@ -56282,7 +56298,8 @@
     "category": "travel",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/native-speaker",
+    "confidence": "verified_high"
   },
   {
     "english": "anti",
@@ -56290,7 +56307,8 @@
     "category": "travel",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/native-speaker"
+    "notes": "VERIFIED/native-speaker",
+    "confidence": "verified_high"
   },
   {
     "english": "see",
@@ -56797,7 +56815,8 @@
     "english": "Orchid",
     "garo": "Balgito",
     "category": null,
-    "notes": "Native-confirmed 2026-07-19 (Thangseng, direct relay), replaces the cut-off/incomplete senses rejected as PL-0000071/072/073 (page ended mid-definition)."
+    "notes": "Native-confirmed 2026-07-19 (Thangseng, direct relay), replaces the cut-off/incomplete senses rejected as PL-0000071/072/073 (page ended mid-definition).",
+    "confidence": "verified_high"
   },
   {
     "english": "A barking deer.",
@@ -65327,7 +65346,8 @@
     "garo": "Kajina",
     "category": null,
     "pos": "n.",
-    "notes": "Native-confirmed 2026-07-22 (Thangseng, via PO): Kajina=tax/duty; Kajana=negative of \"to tie\"; Ka·jana=negative of \"to do\" — three unrelated words, not spelling variants. Corrected from erroneous comma-joined value."
+    "notes": "Native-confirmed 2026-07-22 (Thangseng, via PO): Kajina=tax/duty; Kajana=negative of \"to tie\"; Ka·jana=negative of \"to do\" — three unrelated words, not spelling variants. Corrected from erroneous comma-joined value.",
+    "confidence": "verified_high"
   },
   {
     "english": "A kind of fish",
@@ -66222,7 +66242,8 @@
     "garo": "Kam ka·a",
     "category": null,
     "pos": "v.",
-    "notes": "CONFIRMED — RULE-041, Thangseng relay 2026-07-22: 'Kam ka·a' is the verb 'to work' (Kam=noun work/job + ka·a=to do/act). OCR had misplaced this value in the pos field, causing 'he works' to fall back to the generic 'Daka' (to do) entry instead. Corrected 2026-07-25."
+    "notes": "CONFIRMED — RULE-041, Thangseng relay 2026-07-22: 'Kam ka·a' is the verb 'to work' (Kam=noun work/job + ka·a=to do/act). OCR had misplaced this value in the pos field, causing 'he works' to fall back to the generic 'Daka' (to do) entry instead. Corrected 2026-07-25.",
+    "confidence": "verified_high"
   },
   {
     "english": "to do",
@@ -69364,42 +69385,48 @@
     "garo": "Ka·chaa",
     "category": null,
     "pos": "v.",
-    "notes": "CONFIRMED 2026-07-25, direct native answer - primary sense of Ka-chaa (the existing be-angry/be-cross/be-annoyed senses are real but secondary to this)."
+    "notes": "CONFIRMED 2026-07-25, direct native answer - primary sense of Ka-chaa (the existing be-angry/be-cross/be-annoyed senses are real but secondary to this).",
+    "confidence": "verified_high"
   },
   {
     "english": "behind",
     "garo": "janggilo",
     "category": "general",
     "pos": null,
-    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is behind the door' = 'Ki'tap cholgugani janggilo ong'a'. Alternate 'paksao' ('other side') also given and explicitly preferred for capturing 'behind a door' specifically: 'paksao...captures the idea of behind the door better'."
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is behind the door' = 'Ki'tap cholgugani janggilo ong'a'. Alternate 'paksao' ('other side') also given and explicitly preferred for capturing 'behind a door' specifically: 'paksao...captures the idea of behind the door better'.",
+    "confidence": "verified_high"
   },
   {
     "english": "behind (other side, preferred for doors)",
     "garo": "paksao",
     "category": "general",
     "pos": null,
-    "notes": "CONFIRMED 2026-07-25, direct native answer - preferred alternate to janggilo for 'behind the door' specifically, literally 'other side'."
+    "notes": "CONFIRMED 2026-07-25, direct native answer - preferred alternate to janggilo for 'behind the door' specifically, literally 'other side'.",
+    "confidence": "verified_high"
   },
   {
     "english": "beside",
     "garo": "sambao",
     "category": "general",
     "pos": null,
-    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is beside the window' = 'Ki'tap kelkini sambao ong'a'."
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is beside the window' = 'Ki'tap kelkini sambao ong'a'.",
+    "confidence": "verified_high"
   },
   {
     "english": "outside",
     "garo": "a'palo",
     "category": "general",
     "pos": null,
-    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'."
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'.",
+    "confidence": "verified_high"
   },
   {
     "english": "have you had breakfast? (idiom, lit. \"have you had tea?\")",
     "garo": "cha ringjokma?",
     "category": "phrases",
     "pos": null,
-    "notes": "CONFIRMED 2026-07-25, direct native answer, NV-038 - genuine common metonymic expression for asking about breakfast, using 'cha' (tea). Preferred over na·sta (regional/dated) for this meaning in common usage."
+    "notes": "CONFIRMED 2026-07-25, direct native answer, NV-038 - genuine common metonymic expression for asking about breakfast, using 'cha' (tea). Preferred over na·sta (regional/dated) for this meaning in common usage.",
+    "confidence": "verified_high"
   },
   {
     "english": "call",

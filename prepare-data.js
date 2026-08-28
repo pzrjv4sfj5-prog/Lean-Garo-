@@ -111,7 +111,27 @@ function normalizeFile(filePath) {
         // pickPrimary can prefer a single unambiguous VERIFIED candidate
         // over untagged or explicitly-UNVERIFIED siblings sharing its key.
         const notes = item.notes || '';
-        const isVerified = /^verified\/high\b/i.test(notes);
+        // WIDENED (2026-08-28, Claude B, per docs/CLAUDE_B_SESSION_MIGRATION_
+        // 20260827.md §5 item 1): the confidence-schema migration
+        // (scripts/migrate-confidence-schema.js) left 327 rows with no
+        // `confidence` value because their notes use real verification
+        // language the original regex — anchored strictly to "verified/high"
+        // — never recognized. 27 of those 327 rows use one of five prefixes
+        // confirmed this session to mean the same thing as VERIFIED/HIGH:
+        // RECONFIRMED (e.g. "book"), CONFIRMED (e.g. "housefly", "chicken"),
+        // VERIFIED/native-speaker (e.g. "ant", "anti"), fix/verified (e.g.
+        // "explain"), Native-confirmed (e.g. "duty", "incite"). Adding these
+        // as recognized isVerified prefixes is a pure classification-gap
+        // fix, not a new judgment call — each was independently confirmed
+        // via a direct native relay per its own citation. See that doc for
+        // the full 327-row breakdown; the remaining ~300 rows (Typo/Root/
+        // Split/Hyphenation/AMBIGUOUS/INCORRECT/etc. prefixes, plus
+        // "Native correction"-prefixed rows whose content debates which
+        // SENSE is primary) are deliberately left unclassified here — that
+        // is Claude A's call (open sense/POS judgment), not an engineering
+        // classification gap.
+        const isVerified = /^verified\/high\b/i.test(notes) ||
+          /^(reconfirmed|confirmed|native-confirmed|verified\/native-speaker|fix\/verified)\b/i.test(notes);
         // 2026-08-15 (Claude B, per Claude A's 9-key handoff + Claude C
         // audit 20260815B §1.3/§2.2): isVerified above is anchored to the
         // START of notes, so a variant-tagged entry ("variant/VERIFIED/

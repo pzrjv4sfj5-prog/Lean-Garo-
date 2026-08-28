@@ -260,7 +260,20 @@ export const PHRASE_MAPS = {
   'snake': 'chip·pu',
   'rat': 'Mese',
   'buffalo': 'mo·si',
-  'bear': 'nang·a',
+  'bear': 'Matmak', // resynced 2026-08-28 (Claude B): same stale-override
+  // shadow bug as the 2026-08-15 85-key sweep (commit 1ccac8c7), just born
+  // 2 days after that sweep so it wasn't caught by it. 'nang·a' was
+  // compiled_dict.json's live pick as of 2026-08-15; NV-080 (2026-08-17,
+  // master_dictionary.json) then confirmed the ANIMAL sense of 'bear' as
+  // Matmak (VERIFIED/HIGH) while explicitly leaving nang·a (and ba·a/
+  // mak·bil/ka·a chak) OPEN as unresolved candidates for the separate,
+  // still-unconfirmed carry/endure VERB sense -- not superseding nang·a,
+  // just never re-pointing this override at the newly-verified answer for
+  // the flat 'bear' key this table actually serves. Mechanical resync to
+  // compiled_dict.json's current pick, not a new sense judgment: this
+  // table's job is to mirror pickPrimary's verified answer, and the verb
+  // sense remains a distinct, still-open question for Claude A (see NV-080
+  // note on master_dictionary.json's 'bear' entry).
   'rabbit': 'Sapau',
   'crow': 'do·oka',
   'hen': 'do·obi·ma',
