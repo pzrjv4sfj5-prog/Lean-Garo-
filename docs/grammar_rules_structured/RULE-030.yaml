@@ -77,6 +77,32 @@ corrections:
       "he did not go to the market" are corrected, not just reworded -
       see claim 2 above. re'angjaha examples relocated/reinterpreted
       as the cessative sense per RULE-025, not deleted.
+  - date: "2026-08-28"
+    note: >-
+      FLAGGED TENSION, not resolved (Project Owner direct chat relay,
+      session 2): a direct answer to the bare dictionary key "go" gave
+      "re'a", conflicting with this rule's own established example
+      "Re·anga=go". Same relay also gave "will not go"=re'angjawa,
+      conflicting with this rule's "Re·jawa = 'I will not go' (bare, no
+      destination)" example. Both new forms are recorded as new
+      VERIFIED/HIGH master_dictionary.json rows (english="go" and
+      english="will not go"), NOT used to silently overwrite this
+      rule's examples or shipped runtime values. Possible explanation
+      consistent with this rule's own finding (mood/tense/negation as
+      the conditioning factor, not destination) — a register or
+      mood distinction between the bare re·a/re·jawa forms and the
+      re·ang-stem forms — but this is speculation, not confirmed.
+      Needs an explicit future relay question contrasting the two
+      pairs directly before either is promoted to override the other.
+      RUNTIME CONFIRMATION (2026-08-28, same session): attempted
+      setting phrase_maps.js's 'go' root to 're·a' to match the new
+      relay — broke 4 live regression tests ("going", "will go", "he/i
+      did not go") because findVerbForm('go') feeds stem derivation
+      for all conjugated forms via the existing re·ang- stem system.
+      Reverted; engine root stays 'Re·anga'. This confirms the
+      standing re·ang- stem system is correct for conjugation, and
+      narrows the open question to just the bare/citation-form "go"
+      itself, not the conjugation paradigm.
 last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-030"

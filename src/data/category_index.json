@@ -3997,5 +3997,7 @@
   "live (alt)": "general",
   "how are you": "general",
   "how much is this": "general",
-  "hurry up": "general"
+  "hurry up": "general",
+  "will go": "verbs",
+  "will not go": "verbs"
 }
