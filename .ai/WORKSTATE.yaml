@@ -1,5 +1,12 @@
 repository:
-  head: 721bf6f
+  head: 568e9b6
+  last_updated_20260829: '2026-08-29 (Claude B, session close): fresh engineering
+    QA pass + 4 of 5 engineering findings from a claimed (but unverifiable --
+    no such doc exists anywhere) Claude C audit actioned, 1 investigated and
+    reverted as a false positive. Full account in claude_b.next_action above
+    and docs/CLAUDE_B_SESSION_MIGRATION_20260829.md. 8189/8189 dictionary,
+    9/9 grammatical corrections (was 8/9), 247/247 unit tests, repository-
+    intelligence.js 0 new violations, 0 resync candidates.'
   head_convention: 'PROJECT POLICY (2026-07-31, Project Owner ruling): `head` records repository state
     IMMEDIATELY BEFORE the commit that updates this file - not the commit''s own hash, which cannot be
     known while it is being created. This is intentional, deterministic behavior, not stale metadata.
@@ -1819,7 +1826,120 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-28 (Claude B, session close). §5 item 1 (widen
+  next_action: '2026-08-29 (Claude B, session close). Two parts this
+    session: (A) a full engineering-only QA pass against origin/main
+    (Claude A had advanced linguistic data since the 2026-08-28
+    cutover close) -- verified propagation master->compiled->
+    corrections/phrase_maps->runtime end-to-end (fresh prepare-data.js
+    rebuild byte-identical to committed compiled_dict.json, confirmed
+    via clean git status), checked for stale duplicates/shadowing
+    overrides (0 mechanical resync candidates going in), and ran
+    actual runtime translate() checks rather than trusting the test
+    suite alone (per explicit instruction) across pickPrimary/
+    confidence, stale-override, duplicate-representation, and grammar
+    "ma" propagation shapes -- all clean, 0 findings, full gate green
+    (8189/8189 dictionary, 247/247 unit, repository-intelligence.js 0
+    new violations all checks A-G). One NEW finding surfaced by this
+    pass''s runtime sweep (not previously flagged anywhere): OOV
+    proper nouns (city/place names absent from the dictionary, e.g.
+    "guwahati", "delhi") are silently dropped from sov-assembly output
+    with zero [UNKNOWN] trace -- confirmed via translate("i live in
+    guwahati") -> "Anga donga" (location vanishes, no error, no
+    marker), same failure shape as every precedent "silent word drop"
+    bug this repo has fixed before (AI-002, the sibilant-plural
+    boxes/es$ fix, the multi-word-object fix), but in a different
+    function (assembleSentenceSOV''s `.filter(p => p.garo)` step,
+    sentenceBuilder.js) than any of those prior fixes touched. NOT
+    fixed this session -- found late in the pass, root-caused but
+    deliberately left as a flagged, reproducible finding rather than
+    rushed; the smallest-diff shape mirrors the assembleGrammar
+    [UNKNOWN]-surfacing precedent (AI-002) but needs its own care
+    since assembleSentenceSOV''s `pairs.every(p => p.garo === p.eng)`
+    early-return and the STOP_WORDS/AUXILIARY_SKIP pre-filter both
+    interact with any change here -- see next_action below, first
+    item next session.
+    (B) Actioned 4 of 5 engineering findings from a Claude-C-audit
+    claim relayed in chat (no docs/CLAUDE_C_AUDIT_20260829.md exists
+    anywhere -- not in this repo, not on origin, not in uploads --
+    so per this project''s own standing discipline [audits are
+    re-verified against current HEAD before acting, never trusted
+    blind, see e.g. claude_c.next_action''s 2026-08-15 "answer" false-
+    positive history above] every claim was independently re-derived
+    from the live repo rather than taken on faith): (1) stale `no`
+    phrase_maps.js override -- CONFIRMED real via
+    scripts/resync-stale-overrides.mjs (its one live RESYNC candidate,
+    `"no": "Ong·ja"` [SUPERSEDED per NV-095] shadowing VERIFIED/HIGH
+    `Ihing`), fixed via --apply, zero live-runtime change (corrections.json
+    already independently served Ihing) but closes a real landmine --
+    if that shadowing correction is ever resynced away first, the
+    stale phrase_maps.js value would have shipped. (2) stale `wait`
+    corrections.json value -- INVESTIGATED, found to be a FALSE
+    POSITIVE, reverted before commit. corrections.json''s bare
+    `"wait": "Damo"` looked stale against master''s cited
+    verified_high `"Damo/Sengbo"` (NV-083), so it was changed to match
+    -- but this broke live conjugation: `"i will wait"` went from the
+    correct `"Anga Damogen"` to the malformed `"Anga Damo/Sengbogen"`
+    (future-tense `-gen` suffixed onto a two-form imperative citation
+    that was never meant to be a bare conjugatable stem -- master''s
+    own notes on that row explicitly scope it to "imperative sense").
+    2 pre-existing regression tests (translationEngine.test.js:202,
+    "wait"/"i will wait") caught this before it shipped. This is
+    exactly the sense-collision trap (imperative vs. declarative
+    "wait", a real fork not a stale duplicate) already on record from
+    the 2026-08-04 audit and never resolved -- reverted corrections.json
+    back to `"Damo"` unchanged, left genuinely open, NOT re-fixed by
+    guessing. (3) stale `quick` test-dictionary.js assertion --
+    CONFIRMED real and fixed: `requiredCorrections[''quick'']` still
+    asserted the old `''Tarkbo''` value (matches the exact 8/9-not-9/9
+    grammatical-corrections gap seen in this session''s first gate
+    run), while the live/correct value has been `''Ta·rakbo!''` since
+    NV-095 (2026-08-23) per tests/unit/translationEngine.test.js''s own
+    already-passing regression guard -- updated to match, now 9/9.
+    (4) `check:resync` added to the mandatory `npm run build` gate
+    (package.json) -- previously only ever run manually/ad hoc despite
+    existing as a script since 2026-08-19b; item (1) above is exactly
+    the kind of drift this would have caught automatically. (5) Added
+    a new §6 to docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md ("Engineering-
+    scope edits to master_dictionary metadata") stating the bright
+    line as a rule rather than re-deriving it per session: a fix is
+    engineering-scope only when it can be fully justified by pointing
+    at one already-existing verified_high/citation and saying "the
+    override doesn''t match this yet"; if justifying it requires
+    deciding *which* of two-or-more candidates is linguistically
+    correct (a genuine tie, or -- as items (2) above demonstrated live,
+    same session -- a real sense split), it is NOT engineering-scope
+    regardless of how mechanical the diff looks. Item (2)''s
+    investigate-then-revert is used as the worked example in that new
+    section.
+    VERIFICATION: full gate re-run after every change (not just at
+    close) -- final state 8189/8189 dictionary entries, 9/9
+    grammatical corrections (was 8/9 at session start), repository-
+    intelligence.js 0 new violations all checks (Check F 78->76 known
+    mismatches, both this session''s real fixes closing one each),
+    scripts/resync-stale-overrides.mjs 0 RESYNC candidates (was 1),
+    247/247 unit tests, `npx vite build` clean. Runtime-verified live
+    via translate() post-fix: no/quick/"so quick" all correct; wait/"i
+    wait"/"i will wait" all confirmed unchanged (safe pre-existing
+    behavior, post-revert).
+    NEXT SESSION: (a) the OOV-proper-noun silent-drop finding from
+    part (A) above is the actual priority -- root-cause and fix
+    assembleSentenceSOV''s silent content-word drop (sentenceBuilder.js,
+    the `pairs = content.map(...).filter(p => p.garo)` step), mirroring
+    the AI-002 precedent''s [UNKNOWN]-surfacing approach but scoped
+    to this different function; add regression coverage per the
+    existing "all resolve / some fail" test shape. (b) the imperative-
+    vs-declarative "wait" sense-collision, confirmed live-broken in
+    the corrections.json-vs-master sense above, needs an explicit
+    Claude A/Thangseng disambiguation (does bare declarative "wait"
+    default to "senga", with "Damo/Sengbo" reserved for the imperative-
+    with-punctuation path only? not decided here, engineering-out-of-
+    scope per this session''s own new §6). (c) the pre-existing 300-row
+    no-confidence backlog (AI-001''s actual remaining linguistic scope,
+    unchanged, Claude A''s call) and the 4 stale-confidence citation-
+    hygiene rows (bye, bland x2, cooked) flagged at the 2026-08-28
+    close, both still untouched, still not this session''s scope. No
+    other engineering-scoped work outstanding as of this commit.'
+  next_action_prior_20260828B: '2026-08-28 (Claude B, session close). §5 item 1 (widen
     confidence-classification regex) done and pushed (bb46abe): 27 rows
     newly classified verified_high via 5 added prefixes (RECONFIRMED,
     CONFIRMED, VERIFIED/native-speaker, fix/verified, Native-confirmed);

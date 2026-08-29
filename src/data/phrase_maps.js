@@ -22,7 +22,7 @@ export const PHRASE_MAPS = {
   'sorry': 'Kema·bi·a.',
   'excuse me': 'Angko kema·watbo.',
   'yes': 'Am',
-  'no': 'Ong·ja',
+  'no': 'Ihing',
   'what is your name': 'Nang·ni bimungara maia?',
   'my name is': 'Angni bimungara...',
   'where are you from': 'Na·a bano·ni?',

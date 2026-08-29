@@ -154,6 +154,7 @@
   "corrections:where is the market",
   "corrections:why",
   "corrections:why did you come",
+  "corrections:will not go",
   "corrections:wrist",
   "corrections:yes",
   "phrase_maps:always",
@@ -188,6 +189,7 @@
   "phrase_maps:help me",
   "phrase_maps:hot",
   "phrase_maps:how",
+  "phrase_maps:how are you",
   "phrase_maps:how many",
   "phrase_maps:how much",
   "phrase_maps:hurry",
@@ -205,7 +207,6 @@
   "phrase_maps:moon",
   "phrase_maps:mouth",
   "phrase_maps:new",
-  "phrase_maps:no",
   "phrase_maps:outside",
   "phrase_maps:quick",
   "phrase_maps:rat",
@@ -238,7 +239,5 @@
   "phrase_maps:write",
   "phrase_maps:yellow",
   "phrase_maps:you",
-  "phrase_maps:you did well",
-  "phrase_maps:how are you",
-  "corrections:will not go"
+  "phrase_maps:you did well"
 ]

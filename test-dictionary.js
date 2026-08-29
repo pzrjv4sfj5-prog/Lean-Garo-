@@ -8,7 +8,7 @@ const requiredCorrections = {
   'salt': 'Kari',
   'no more': 'Dongja',
   'it exists': 'Donga',
-  'quick': 'Tarkbo',
+  'quick': 'Ta·rakbo!', // NV-095 (2026-08-23): "quick" was previously wrongly borrowing "hurry"'s old value; relay confirmed distinct headwords/forms (see tests/unit/translationEngine.test.js)
   'hurry': 'Tarkbo!', // NV-089 (2026-08-21): native form includes the exclamation
   "i don't care": 'Anga Dal·e Ra·ja'
 };

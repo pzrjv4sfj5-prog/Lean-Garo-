@@ -133,3 +133,64 @@ Claude C's audit must do more than re-check the named examples:
    has push access that session (A or B) updates the row, same
    division of labor as C's existing closure protocol elsewhere in
    this repo.
+
+## 6. Engineering-scope edits to master_dictionary metadata
+
+Added 2026-08-29 (Claude B), prompted by a recurring ambiguity: is
+syncing `corrections.json`/`phrase_maps.js` to an already-VERIFIED
+`master_dictionary.json` value a Claude B (engineering) action, or a
+Claude A (linguistic) one? This has caused real hesitation in past
+sessions (see e.g. the 2026-08-14 role-boundary incident above) and
+is worth stating as a bright line rather than re-deriving per session.
+
+**Engineering-scope (Claude B may act alone, no relay/PAT/Claude A
+commit needed):**
+
+- Any edit whose entire justification is "field X currently disagrees
+  with field Y for the same already-cited fact, and Y is the more
+  authoritative/more recent source" — e.g. `corrections.json` shipping
+  a truncated or superseded form of a value `master_dictionary.json`
+  already carries as `verified_high` with an explicit citation;
+  `phrase_maps.js` still holding a value tagged `SUPERSEDED` in
+  master. `scripts/resync-stale-overrides.mjs` mechanizes exactly this
+  class — its `RESYNC candidates` output is by definition
+  engineering-scope, since the tool only ever proposes replacing a
+  `SUPERSEDED`-matched override with the value `master_dictionary.json`
+  itself already marks `VERIFIED`.
+- Stale test/doc assertions that assert a superseded value the source
+  data has already moved past (e.g. a hardcoded expected string that
+  predates a later NV-relay correction to the same key).
+- Adding automated checks/gates (like §1's enumeration files, or
+  wiring `check:resync` into the build) that make an existing
+  engineering-owned invariant mechanically enforced instead of
+  narratively tracked.
+
+**NOT engineering-scope (needs Claude A judgment, relay, or an
+explicit Project Owner decision first):**
+
+- Anything where the "correct" value is itself ambiguous — two or
+  more `master_dictionary.json` candidates are each independently
+  tagged verified/cited (a genuine tie, §1 subclass (a)), or the
+  disagreement reflects a real sense split (e.g. imperative vs.
+  declarative "wait") rather than one value simply being stale.
+  Picking a winner in that situation is a linguistic call even if the
+  mechanical shape looks identical to a resync.
+- Any edit to `master_dictionary.json` itself that adds new content,
+  changes a `garo` value's meaning, or changes a `confidence` tag's
+  truth value (as opposed to a schema-formatting-only pass, per the
+  existing confidence-schema migration precedent) — Claude B may
+  *read and consume* `confidence`/`notes`, never assign linguistic
+  confidence.
+- Resolving a `resync-stale-overrides.mjs` "Skipped — no VERIFIED
+  master candidate matches compiled_dict value" row, or the "Skipped
+  — override doesn't match a SUPERSEDED master candidate (likely
+  intentional variant)" bucket — both require judging *which* value is
+  actually correct, not just detecting disagreement.
+
+**The test:** if the fix can be fully justified by pointing at a
+single already-existing `verified_high`/citation in
+`master_dictionary.json` and saying "the override doesn't match this
+yet," it's engineering-scope. If justifying the fix requires deciding
+*which* of two or more candidate values is linguistically correct,
+it isn't — hand it to Claude A regardless of how mechanical the change
+looks.
