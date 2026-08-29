@@ -1,11 +1,32 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-28 by Claude A (session close,
-CLEAN — NV-097 (uploaded Thangseng PDF transcript batch, Rakka-normalized) closed 10 of the ~14 items
-open since 2026-08-26, plus 3 reconfirmations and 6 flagged variants; NV-098 (same session) resolved
-NV-097's one flagged contradiction — Thangseng confirmed uija/ma·sija are synonyms for "i don't know".
-Only `go` and `only` remain open from the original count; both now need an explicit future Thangseng
-relay question or commit archaeology, not more corpus-internal investigation — see
-`docs/CLAUDE_A_SESSION_MIGRATION_20260828.md`, "Exact next actions" section). Prior: 2026-08-26 by
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-28 (session 3) by Claude A
+(session close, CLEAN — Claude C audit response, 5 items actioned: `movie` left unresolved, no
+`film`=`movie` assumption, relay question queued with meaning/POS/context stated; RULE-046
+space-before-`ma` repo-wide sweep — 13 `master_dictionary.json` + 82 `corrections.json` violations
+fixed, P1 backlog CLOSED, zero remaining verified in `compiled_dict.json`; WORKSTATE next_action
+corrected, AND a pre-existing stray duplicate `next_action` key from the 2026-08-27 session (which
+had been silently shadowing the real value per YAML's undefined duplicate-key behavior) found and
+renamed — a similar duplicate key still exists in Claude B's section, flagged not fixed; `go`/
+tang-dong/knowledge reconciled only where evidence supports — no change beyond session 2; 1 genuine
+exact-duplicate dictionary row removed (`Pen`/`pen`, case-only), full ~1000-group duplicate-key
+backlog flagged as ongoing, not attempted blindly. 247/247 tests, 9947 entries, 0 new
+repository-intelligence violations. See `docs/CLAUDE_A_SESSION_MIGRATION_20260828C.md`.)
+Prior: 2026-08-28 (session 2) by Claude A
+(session close, CLEAN — Project Owner relayed new Thangseng answers directly in chat, resolving
+3 of the 4 items left open by session 1: `only`=mangmang, `going`=re·angenga, `will go`=re·anggen
+now VERIFIED/HIGH; the live/living tang-/dong- sense split confirmed (donga/dongenga="living at a
+place", tanga/tangenggipa="being alive"). Two items added as VERIFIED/HIGH citations but flagged,
+NOT used to override existing runtime/rule values — `go`=re'a (tension with RULE-030's `Re·anga`
+example and the engine's conjugation root) and `will not go`=re'angjawa (tension with shipped
+`re·jawa`) — two ready-to-send Thangseng relay questions logged in `.ai/WORKSTATE.yaml`
+`claude_a.pending_thangseng_questions`, not yet sent. Item 4 (`knowledge` alt-compound) still open,
+untouched this session. Rebased cleanly onto Claude B's concurrent pickPrimary cutover (8272495).
+See `docs/CLAUDE_A_SESSION_MIGRATION_20260828B.md`.) Prior: 2026-08-28 (session 1) by Claude A
+(session close, CLEAN — NV-097 (uploaded Thangseng PDF transcript batch, Rakka-normalized) closed 10
+of the ~14 items open since 2026-08-26, plus 3 reconfirmations and 6 flagged variants; NV-098 (same
+session) resolved NV-097's one flagged contradiction — Thangseng confirmed uija/ma·sija are synonyms
+for "i don't know". See `docs/CLAUDE_A_SESSION_MIGRATION_20260828.md`, "Exact next actions" section).
+Prior: 2026-08-26 by
 Claude A (session close, MID-TASK — Thangseng relay batch corrected from a stale "138-item" count to
 the actual 149, ska/skenga question closed, 7 engineering-propagation-gap fixes, 3 NV-092 findings
 applied that were never written — see `docs/CLAUDE_A_SESSION_MIGRATION_20260826.md`). Prior: 2026-08-25 by Claude A (session close —

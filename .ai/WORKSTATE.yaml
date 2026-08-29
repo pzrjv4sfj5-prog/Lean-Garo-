@@ -1,5 +1,5 @@
 repository:
-  head: 568e9b6
+  head: 6187453
   last_updated_20260829: '2026-08-29 (Claude B, session close): fresh engineering
     QA pass + 4 of 5 engineering findings from a claimed (but unverifiable --
     no such doc exists anywhere) Claude C audit actioned, 1 investigated and
@@ -22,7 +22,27 @@ repository:
     No repo content changed by this correction, pointer-only. Build gate reverified clean at actual current
     HEAD (7467063, == origin/main): 220/220 tests, 8159 entries, 0 new repository-intelligence violations
     (Check G confidence-schema check included).'
-  last_updated: '2026-08-28 (Claude A, CLEAN CLOSE): processed NV-097 (uploaded Thangseng PDF
+  last_updated: '2026-08-28 (Claude A, session 3, CLEAN CLOSE — Claude C audit response):
+    5 audit items actioned. movie left unresolved (no film=movie assumption), relay
+    question queued with meaning/POS/context. RULE-046 space-before-ma: repo-wide sweep,
+    13 master_dictionary.json + 82 corrections.json violations fixed, P1 backlog CLOSED,
+    zero remaining verified in compiled_dict.json. WORKSTATE next_action corrected (this
+    entry). go/tang-dong/knowledge reconciled only where evidence supports — no change
+    beyond session 2 (tang-/dong- already closed, go/will-not-go still flagged, knowledge
+    untouched). 1 genuine exact-duplicate removed (Pen/pen case-only dupe); full ~1000-group
+    duplicate-key backlog flagged as ongoing, not attempted blindly. 247/247 tests, 9947
+    entries, 0 new repository-intelligence violations. Full detail:
+    docs/CLAUDE_A_SESSION_MIGRATION_20260828C.md.'
+  last_updated_prior_20260828B: '2026-08-28 (Claude A, session 2, CLEAN CLOSE): Project Owner relayed new
+    Thangseng answers in chat resolving 3 of session 1''s 4 open items (only=mangmang,
+    going=re·angenga, will go=re·anggen new VERIFIED/HIGH; live/living tang-/dong- sense
+    split confirmed). go=re·a and will not go=re·angjawa added as VERIFIED/HIGH citations
+    but flagged as unresolved tensions against RULE-030/shipped runtime values, not used to
+    override — 2 relay questions queued (see claude_a.pending_thangseng_questions). Rebased
+    cleanly onto Claude B''s concurrent pickPrimary cutover (8272495). 247/247 tests,
+    8189/8189 entries, 0 new repository-intelligence violations. Full detail:
+    docs/CLAUDE_A_SESSION_MIGRATION_20260828B.md.'
+  last_updated_prior_20260828: '2026-08-28 (Claude A, session 1, CLEAN CLOSE): processed NV-097 (uploaded Thangseng PDF
     transcript batch, Rakka-normalized: apostrophe/curly-apostrophe as morpheme separator -> ·,
     hyphen as English/Garo suffix separator -> ·) and NV-098 (same-session reconciliation of
     NV-097''s one flagged contradiction — Thangseng confirmed uija/ma·sija are synonyms for
@@ -232,23 +252,51 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-28 (Claude A, CLEAN CLOSE): NV-097 (uploaded Thangseng PDF transcript
-    batch, Rakka-normalized) closed 10 of the ~14 items counted in the prior next_action —
-    don''t eat, don''t go, give me water, go away, help me, how are you, how many, how much,
-    how much is this, hurry up, i am eating all now VERIFIED/HIGH, stale unverified rows
-    superseded where directly contradicted. 3 reconfirmed (bring (imperative), happy, how (alt)).
-    6 new flagged variants logged, deliberately not reconciled (dance (alt), eaten x2, knowledge
-    (alt, fuller compound), live (alt), living). i don''t know''s uija/ma·sija contradiction —
-    resolved same session as NV-098: Thangseng confirmed directly, "those two mean the same
-    thing" — both now VERIFIED/HIGH, uija kept primary, ma·sija variant. NEXT SESSION: only
-    2 items remain from the original ~14 — go (item 5, zero corpus-internal evidence across
-    two full sessions now, needs an actual Thangseng relay question, not more investigation)
-    and only (item 6, needs commit archaeology on the old SUPERSEDED note''s cited VERIFIED
-    forms — ak·sa/ma·mang/·pit·chi/·sa — which are all unverified in live data; same shape as
-    the NV-092 stand-up/take-revenge archaeology finding, not yet traced to a specific commit).
-    Also open: tang-/dong- root family reconciliation (live (alt)/living) and the
-    U·iani-ba-ma·siani vs u·i-ma·siani knowledge-compound question — both need explicit future
-    relay questions, not guesses. Full detail: docs/CLAUDE_A_SESSION_MIGRATION_20260828.md.'
+  next_action: '2026-08-28 (Claude A, session 3, CLEAN CLOSE — Claude C audit response):
+    actioned the 5 Claude-C-audit items assigned to Claude A. (1) movie: NOT assumed to be
+    film — genuinely open, no data, relay question queued (see
+    claude_a.pending_thangseng_questions) with meaning/POS/context stated per the audit''s
+    own instruction. (2) RULE-046 space-before-ma: repo-wide sweep, not just the 7-item
+    counterexamples list — found and fixed 13 live-shipping violations in
+    master_dictionary.json (2 also had a garbled-import raka defect corrected alongside)
+    plus 82 in src/data/corrections.json (a whole verb-conjugation template family shared
+    the same defect) — RULE-046.yaml''s P1 backlog item CLOSED, zero remaining violations
+    verified in src/compiled_dict.json. (3) WORKSTATE next_action corrected — this entry.
+    (4) go/tang-dong/knowledge reconciled only where evidence supports: tang-/dong-
+    already closed session 2; go and will-not-go remain flagged, unresolved, 2 relay
+    questions still queued (no new evidence this session); knowledge (alt) untouched, no
+    evidence. (5) Dictionary cleanup: found and removed 1 genuine exact-duplicate row
+    (english=''Pen''/''pen'', capitalization-only difference, identical garo/confidence/
+    classifier/category — zero information loss). Did NOT attempt the full ~1000-group
+    duplicate-key backlog from the 2026-06-20 audit (docs/DUPLICATE_AND_RAKA_AUDIT_SUMMARY.md)
+    — that scale needs its own dedicated session(s), most groups are legitimate POS/sense/
+    register variants requiring individual review, not a mechanical sweep; flagged as
+    ongoing backlog, not attempted blindly. 247/247 tests, 9947 entries (was 9948, -1
+    duplicate), 0 new repository-intelligence violations, every fixed key live-verified via
+    translate(). Full detail: docs/CLAUDE_A_SESSION_MIGRATION_20260828C.md.'
+  next_action_prior_20260828B: '2026-08-28 (Claude A, session 2, CLEAN CLOSE): Project Owner
+    relayed new Thangseng answers directly in chat, resolving 3 of the 4 open items from
+    session 1''s next_action: only=mangmang, going=re·angenga, will go=re·anggen new
+    VERIFIED/HIGH; live/living tang-/dong- sense split confirmed. go=re·a and
+    will not go=re·angjawa added as VERIFIED/HIGH citations but flagged, not used to
+    override RULE-030/shipped runtime values. Rebased cleanly onto Claude B''s concurrent
+    pickPrimary cutover (8272495). Full detail: docs/CLAUDE_A_SESSION_MIGRATION_20260828B.md.'
+  pending_thangseng_questions: '2026-08-28 (Claude A, session 3): three relay questions
+    ready to send, not yet sent. (1) "go" — you told us "go = re''a", but our grammar rule
+    (RULE-030) has an established example "Re·anga = go" from an earlier session, and our
+    engine uses Re·anga/re·ang- as the root for all conjugated forms (going, will go, did
+    not go). Are re''a and re''anga two different things (e.g. a short/bare form vs. a
+    fuller form), or the same word said two ways? When would a Garo speaker use one over
+    the other? (2) "will not go" — you told us "will not go = re''angjawa", but an earlier
+    session recorded "re·jawa" (without "ang") for "I will not go" with no destination
+    mentioned. Are re·jawa and re''angjawa the same, or different (e.g. one with a
+    destination in mind, one without; or one more formal/informal)? (3) "movie" — meaning:
+    a motion picture / film you watch (noun), as in "let''s watch a movie" or "I like this
+    movie" — NOT the general concept of cinema, and not assumed to be the same word as our
+    already-confirmed "film" (garo: film, a direct loanword, confirmed 2026-08-21). Is
+    there a distinct Garo word for "movie" in the sense of a film you watch, or is "film"
+    (the loanword) used for both senses? Per Claude C''s audit, this must not be assumed —
+    genuinely no data either way currently.'
   operating_governance: '2026-08-22 (Claude A, Project Owner-directed): established `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`
     as MANDATORY reading for every future Claude A session, per `.ai/SESSION_BOOTSTRAP.md`''s updated
     Claude A role bullet and top-of-file pointer. Converts the same-day Role Self-Audit (`docs/CLAUDE_A_ROLE_SELF_AUDIT_20260822.md`,
@@ -578,7 +626,15 @@ claude_a:
     13d951c, should have been 5c5b633 — Claude B''s confidence-schema merge had already landed before
     the prior close commit). Gate green: 220/220 tests, 8167 entries, 0 new violations. See docs/THANGSENG_NATIVE_VALIDATION.md
     NV-092 for full detail.'
-  next_action: 'NEXT SESSION -- resume at item 2 of the 2026-08-26 queue (recalculate the true
+  next_action_prior_20260827_stray_duplicate: '2026-08-28 (Claude A, session 3, YAML-integrity
+    fix): this key was a bare "next_action:" — a duplicate of the top claude_a.next_action
+    key, pre-existing since the 2026-08-27 session, violating this file''s own
+    "next_action_prior_X" naming convention. Duplicate mapping keys are undefined behavior
+    in YAML; in practice this shadowed the real next_action for an unknown number of
+    sessions (whichever bare "next_action:" appeared textually last in the claude_a block
+    silently won on parse, not the intended value). Renamed to preserve content and fix the
+    collision, per this session''s task-3 directive to correct WORKSTATE. Original content
+    follows verbatim. NEXT SESSION -- resume at item 2 of the 2026-08-26 queue (recalculate the true
     LINGUISTICALLY OPEN count for the 149-item relay batch, folding in this session''s item-1
     closures below), then items 5-10 unchanged. Full detail: docs/CLAUDE_A_SESSION_MIGRATION_20260827.md.'
   current_task_20260827: '2026-08-27 (Claude A, resumed via pasted docs/CLAUDE_A_SESSION_MIGRATION_20260826.md):

@@ -514,11 +514,11 @@ CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `approximately`: candidates — `prai` (weak/OCR) — shipped: `prai`
 - `are you busy`: candidates — `jakchakjaengama?` (weak/OCR) — shipped: `jakchakjaengama?`
 - `are you busy?`: candidates — `Jakchakjaengama?` (weak/OCR), `Jakchakjaengama` (weak/OCR), `jakchakja·ongama?` (weak/OCR) — shipped: `jakchakja·ongama?`
-- `are you eating?`: candidates — `Na·a cha·enga ma?` (weak/OCR), `Na·a cha·engma?` (weak/OCR) — shipped: `Na·a cha·enga ma?`
+- `are you eating?`: candidates — `Na·a cha·enga ma?` (weak/OCR), `Na·a cha·engma?` (weak/OCR), `Na·a cha·engama?` (weak/OCR) — shipped: `Na·a cha·engama?`
 - `are you guys coming`: candidates — `Na·simang re·baengama?` (weak/OCR) — shipped: `Na·simang re·baengama?`
 - `are you guys coming?`: candidates — `na·simang re·baengama?` (weak/OCR) — shipped: `na·simang re·baengama?`
-- `are you having fun`: candidates — `An·sengenga ma?` (weak/OCR) — shipped: `An·sengenga ma?`
-- `are you having fun?`: candidates — `An·sengenga ma?` (weak/OCR) — shipped: `An·sengenga ma?`
+- `are you having fun`: candidates — `An·sengengama?` (weak/OCR) — shipped: `An·sengengama?`
+- `are you having fun?`: candidates — `An·sengengama?` (weak/OCR) — shipped: `An·sengengama?`
 - `are you hungry`: candidates — `Okkriengama?` (weak/OCR) — shipped: `Okkriengama?`
 - `are you hungry?`: candidates — `okkriengama?` (weak/OCR), `Okkriengama` (weak/OCR), `okkriengjokma?` (weak/OCR) — shipped: `okkriengjokma?`
 - `are you scared`: candidates — `Ma na·a kenenga?` (weak/OCR) — shipped: `Ma na·a kenenga?`
@@ -1281,8 +1281,8 @@ CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `divorce`: candidates — `gal·a` (weak/OCR), `gal·grik·a` (weak/OCR), `ha·wal` (weak/OCR), `jik gal·a` (weak/OCR) — shipped: `jik gal·a`
 - `do`: candidates — `daka` (weak/OCR), `ka·a` (weak/OCR) — shipped: `ka·a`
 - `do it!`: candidates — `Dak·bo!` (weak/OCR) — shipped: `Dak·bo!`
-- `do you have a boyfriend`: candidates — `Nangni mikchagipa dong.a ma?` (weak/OCR) — shipped: `Nangni mikchagipa dong.a ma?`
-- `do you have a boyfriend?`: candidates — `Nangni mikchagipa dong.a ma?` (weak/OCR) — shipped: `Nangni mikchagipa dong.a ma?`
+- `do you have a boyfriend`: candidates — `Nangni mikchagipa dong.ama?` (weak/OCR) — shipped: `Nangni mikchagipa dong.ama?`
+- `do you have a boyfriend?`: candidates — `Nangni mikchagipa dong.ama?` (weak/OCR) — shipped: `Nangni mikchagipa dong.ama?`
 - `do you have your boyfriend`: candidates — `Nang·ni mikchagipa dongama?` (weak/OCR) — shipped: `Nang·ni mikchagipa dongama?`
 - `do you have...?`: candidates — `Nang·o ... dongama?` (weak/OCR) — shipped: `Nang·o ... dongama?`
 - `do you know english`: candidates — `Na·a inglis man·ama?` (weak/OCR) — shipped: `Na·a inglis man·ama?`
@@ -1291,7 +1291,7 @@ CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `do you know hindi?`: candidates — `na·a Hindi man·ama?` (weak/OCR) — shipped: `na·a Hindi man·ama?`
 - `do you know me`: candidates — `Na·a angko ma·siama?` (weak/OCR) — shipped: `Na·a angko ma·siama?`
 - `do you know me?`: candidates — `na·a angko ma·siama?` (weak/OCR), `Na·a angko ma·siama` (weak/OCR), `u·iama?` (weak/OCR), `Na·a angko u·iama?` (weak/OCR) — shipped: `Na·a angko u·iama?`
-- `do you love me?`: candidates — `Na·a angna kasa·a ma?` (weak/OCR) — shipped: `Na·a angna kasa·a ma?`
+- `do you love me?`: candidates — `Na·a angna kasa·a ma?` (weak/OCR), `Na·a angna kasa·ama?` (weak/OCR) — shipped: `Na·a angna kasa·ama?`
 - `do you play games`: candidates — `Na·a gamerangko kal·ama?` (weak/OCR) — shipped: `Na·a gamerangko kal·ama?`
 - `do you play games?`: candidates — `na·a gamerangko kal·ama?` (weak/OCR) — shipped: `na·a gamerangko kal·ama?`
 - `do you use whatsapp`: candidates — `Na·a whatsapp jakkalama?` (weak/OCR) — shipped: `Na·a whatsapp jakkalama?`
@@ -1798,8 +1798,8 @@ CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `hatch`: candidates — `pe·a` (weak/OCR) — shipped: `pe·a`
 - `hatred`: candidates — `Mittera` (weak/OCR), `Bobil daka` (weak/OCR) — shipped: `Bobil daka`
 - `have`: candidates — `donga` (weak/OCR) — shipped: `donga`
-- `have you eaten breakfast`: candidates — `Naa nastha chaa ha ma?` (weak/OCR) — shipped: `Naa nastha chaa ha ma?`
-- `have you eaten rice`: candidates — `Mi cha·jok ma?` (weak/OCR) — shipped: `Mi cha·jok ma?`
+- `have you eaten breakfast`: candidates — `Na·a nastha cha·ahama?` (weak/OCR) — shipped: `Na·a nastha cha·ahama?`
+- `have you eaten rice`: candidates — `Mi cha·jokma?` (weak/OCR) — shipped: `Mi cha·jokma?`
 - `having confidence`: candidates — `Ka·dongani gnang` (weak/OCR) — shipped: `Ka·dongani gnang`
 - `having egg.`: candidates — `Bitchi gnanggipa` (weak/OCR) — shipped: `Bitchi gnanggipa`
 - `having iron taste as mineral spring water`: candidates — `Kaltinga` (weak/OCR) — shipped: `Kaltinga`
@@ -2054,7 +2054,7 @@ CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `how student?`: candidates — `kamat chik?` (weak/OCR) — shipped: `kamat chik?`
 - `how teacher?`: candidates — `kamat skigipa?` (weak/OCR) — shipped: `kamat skigipa?`
 - `how tree?`: candidates — `kamat rang?` (weak/OCR) — shipped: `kamat rang?`
-- `how was the journey yesterday?`: candidates — `Mijal songre·ara nama ma?` (weak/OCR) — shipped: `Mijal songre·ara nama ma?`
+- `how was the journey yesterday?`: candidates — `Mijal songre·ara nama ma?` (weak/OCR), `Mijal songre·ara namama?` (weak/OCR) — shipped: `Mijal songre·ara namama?`
 - `howl`: candidates — `gring·a` (weak/OCR) — shipped: `gring·a`
 - `human being`: candidates — `man·de` (weak/OCR) — shipped: `man·de`
 - `humble`: candidates — `Chon·a·gisik` (weak/OCR) — shipped: `Chon·a·gisik`
@@ -2282,7 +2282,7 @@ CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `is it good?`: candidates — `namama?` (weak/OCR) — shipped: `namama?`
 - `is not`: candidates — `ong·ja` (weak/OCR) — shipped: `ong·ja`
 - `is that so?`: candidates — `Inde·a?` (weak/OCR) — shipped: `Inde·a?`
-- `is there rice?`: candidates — `Mi donga ma?` (weak/OCR) — shipped: `Mi donga ma?`
+- `is there rice?`: candidates — `Mi donga ma?` (weak/OCR), `Mi dongama?` (weak/OCR) — shipped: `Mi dongama?`
 - `it exists / it's there`: candidates — `Donga` (weak/OCR) — shipped: `Donga`
 - `it hurts!`: candidates — `Mataha!` (weak/OCR) — shipped: `Mataha!`
 - `it is all the same to me.`: candidates — `Angnade apsanaia` (weak/OCR) — shipped: `Angnade apsanaia`

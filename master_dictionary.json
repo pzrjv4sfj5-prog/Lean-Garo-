@@ -6514,9 +6514,10 @@
   },
   {
     "english": "how was the journey yesterday?",
-    "garo": "Mijal songre·ara nama ma?",
+    "garo": "Mijal songre·ara namama?",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period)."
   },
   {
     "english": "what?",
@@ -6695,9 +6696,10 @@
   },
   {
     "english": "do you love me?",
-    "garo": "Na·a angna kasa·a ma?",
+    "garo": "Na·a angna kasa·ama?",
     "category": "emotions",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period). Was flagged as a P1 backlog item in RULE-046's own counterexamples field since 2026-08-21."
   },
   {
     "english": "yes, i love you.",
@@ -7192,9 +7194,10 @@
   },
   {
     "english": "are you eating?",
-    "garo": "Na·a cha·enga ma?",
+    "garo": "Na·a cha·engama?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period). Was flagged as a P1 backlog item in RULE-046's own counterexamples field since 2026-08-21."
   },
   {
     "english": "may i sit?",
@@ -7632,9 +7635,10 @@
   },
   {
     "english": "is there rice?",
-    "garo": "Mi donga ma?",
+    "garo": "Mi dongama?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period). Was flagged as a P1 backlog item in RULE-046's own counterexamples field since 2026-08-21."
   },
   {
     "english": "two books",
@@ -19164,11 +19168,11 @@
   },
   {
     "english": "are you having fun",
-    "garo": "An·sengenga ma?",
+    "garo": "An·sengengama?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period).",
     "confidence": "unverified"
   },
   {
@@ -19272,11 +19276,11 @@
   },
   {
     "english": "do you have a boyfriend",
-    "garo": "Nangni mikchagipa dong.a ma?",
+    "garo": "Nangni mikchagipa dong.ama?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period).",
     "confidence": "unverified"
   },
   {
@@ -19542,20 +19546,20 @@
   },
   {
     "english": "have you eaten breakfast",
-    "garo": "Naa nastha chaa ha ma?",
+    "garo": "Na·a nastha cha·ahama?",
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": null,
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period). Also corrected raka orthography (Naa->Na·a, chaa ha->cha·aha) to match the correctly-normalized SUPERSEDED sibling row for the '?' variant of this key, same underlying garbled-import defect.",
     "confidence": "unverified"
   },
   {
     "english": "have you eaten rice",
-    "garo": "Mi cha·jok ma?",
+    "garo": "Mi cha·jokma?",
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": null,
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period).",
     "confidence": "unverified"
   },
   {
@@ -20291,11 +20295,11 @@
   },
   {
     "english": "Are you having fun?",
-    "garo": "An·sengenga ma?",
+    "garo": "An·sengengama?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM",
+    "notes": "UNVERIFIED/MEDIUM RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period).",
     "confidence": "unverified"
   },
   {
@@ -21434,11 +21438,11 @@
   },
   {
     "english": "Do you have a boyfriend?",
-    "garo": "Nangni mikchagipa dong.a ma?",
+    "garo": "Nangni mikchagipa dong.ama?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM",
+    "notes": "UNVERIFIED/MEDIUM RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period).",
     "confidence": "unverified"
   },
   {
@@ -22381,11 +22385,11 @@
   },
   {
     "english": "Have you eaten rice?",
-    "garo": "Mi cha·jok ma?",
+    "garo": "Mi cha·jokma?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period). Was flagged as a P1 backlog item in RULE-046's own counterexamples field since 2026-08-21.",
     "confidence": "verified_high"
   },
   {
@@ -55619,11 +55623,11 @@
   },
   {
     "english": "Have you eaten breakfast?",
-    "garo": "Naa nastha chaa ha ma?",
+    "garo": "Na·a nastha cha·ahama?",
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/200sentences",
+    "notes": "VERIFIED/HIGH/200sentences RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical): removed space before -ma per RULE-046, AND corrected raka orthography (Naa->Na·a, chaa ha->cha·aha) to match the correctly-normalized SUPERSEDED sibling row for this same english key ('na·a nastha cha·aha ma?', 2026-08-01 audit) — same underlying garbled-import defect, not new native evidence.",
     "confidence": "verified_high"
   },
   {
@@ -73322,16 +73326,7 @@
     "pos": null,
     "category": "education",
     "classifier": "ge",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). 'pen'=kolom, closing the Pen/kolom root ambiguity for good. Example confirmed: \"I have a pen\"=\"ango kolom donga\".",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Pen",
-    "garo": "kolom",
-    "pos": null,
-    "category": "education",
-    "classifier": "ge",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). Canonical no-dot spelling, closing the kolom/kol·om orthography split.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner). 'pen'=kolom, closing the Pen/kolom root ambiguity for good. Example confirmed: \"I have a pen\"=\"ango kolom donga\". DUPLICATE CLEANUP (2026-08-28, Claude A): removed an exact-duplicate row (english='Pen', capitalization-only difference, identical garo/confidence/classifier/category/notes) that shipped no additional information.",
     "confidence": "verified_high"
   },
   {
@@ -76445,11 +76440,11 @@
   },
   {
     "english": "have you eaten",
-    "garo": "Na·a cha·aha ma?",
+    "garo": "Na·a cha·ahama?",
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (Thangseng, WhatsApp transcript letter N, NV-085): direct answer to 'Have you eaten?'. Nuance: 'Na·a cha·ama?' (simple past, generic, e.g. yesterday) also valid per same source — the two forms are context-dependent, not competing (see existing Have you eaten?/VERIFIED/HIGH/200sentences row for the generic-past reading). corrections.json 'have you eaten' key corrected to match this row this session (was 'Na·a Cha·jok ma?', unsupported by either native source).",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (Thangseng, WhatsApp transcript letter N, NV-085): direct answer to 'Have you eaten?'. Nuance: 'Na·a cha·ama?' (simple past, generic, e.g. yesterday) also valid per same source — the two forms are context-dependent, not competing (see existing Have you eaten?/VERIFIED/HIGH/200sentences row for the generic-past reading). corrections.json 'have you eaten' key corrected to match this row this session (was 'Na·a Cha·jok ma?', unsupported by either native source). RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period).",
     "confidence": "verified_high"
   },
   {

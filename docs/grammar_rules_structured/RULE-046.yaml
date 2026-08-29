@@ -24,15 +24,17 @@ examples:
   - "Na·a mi cha·jokma? = \"Did you have lunch?\" (cha·jok + ma, no space) — corrects prior draft form \"Na·a mi cha·jok ma?\""
 counterexamples:
   note: >-
-    A number of pre-existing master_dictionary.json/garo_dictionary.json
-    entries still ship the verb and `ma?` with a space (e.g. "are you
-    eating?"->"Na·a cha·enga ma?", "is there rice?"->"Mi donga ma?",
-    "have you eaten breakfast?"->"na·a nastha cha·aha ma?"). These predate
-    this rule's formalization and were not part of the 2026-08-21 relay
-    batch that prompted it. Flagged as a follow-up cleanup item, not
-    fixed under this rule's closure — same violation, different batch,
-    kept separate per one-task-at-a-time discipline.
-  items:
+    CLOSED 2026-08-28 (Claude A, repo-wide sweep, DERIVED/mechanical application
+    of this already-VERIFIED rule — not new native evidence). All 13 live-shipping
+    space-before-ma violations found across master_dictionary.json (both "?" and
+    bare-key variants) and src/data/corrections.json fixed in place; 2 also had a
+    garbled-import raka defect (missing dots, awkward word-split) corrected
+    alongside using a correctly-normalized SUPERSEDED sibling row as reference.
+    SUPERSEDED rows themselves left untouched per citation-discipline (not
+    shipped, not fixed). Verified zero remaining space-before-ma matches in
+    src/compiled_dict.json after rebuild. 247/247 tests, 0 new
+    repository-intelligence violations.
+  items_prior_20260821:
     - "are you eating? -> Na·a cha·enga ma? (space before ma, unfixed)"
     - "is there rice? -> Mi donga ma? (space before ma, unfixed)"
     - "have you eaten breakfast? -> na·a nastha cha·aha ma? (space before ma, unfixed)"
@@ -46,7 +48,7 @@ launch_priority:
     note: "closed 2026-08-21/NV-096; propagated to master_dictionary.json, garo_dictionary.json, corrections.json"
   - scope: "the wider pre-existing space-before-ma corpus (counterexamples list above)"
     tier: P1
-    note: "genuine open backlog item — same rule, unfixed instances, needs its own sweep session"
+    note: "CLOSED 2026-08-28 (Claude A) — see counterexamples.note above"
 native_notes: >-
   Direct Thangseng correction, relayed via Tridip WhatsApp, 2026-08-21
   (THANGSENG_RELAY_TABLE_20260821B.md): repeatedly corrected Tridip's
