@@ -252,7 +252,19 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-28 (Claude A, session 3, CLEAN CLOSE — Claude C audit response):
+  next_action: '2026-08-29 (Claude A, session 4, IN PROGRESS): applied new Project
+    Owner-relayed Thangseng evidence for "film" — "I saw the film last week." =
+    "Anga ia film-ko mija antio nia." Promoted master_dictionary.json''s existing
+    unverified row to VERIFIED/HIGH (NV-099); confirms both the sentence and the
+    film-ko object construction as a confirming instance of already-verified
+    RULE-009 (-ko), no rule change. Synced 2 stale untagged duplicates in the
+    legacy garo_dictionary.json source (hygiene only, pickPrimary already
+    master-preferred so no runtime behavior change). movie explicitly NOT touched
+    (per Do-NOT-repeat) — genuinely no evidence, remains queued. go/will-not-go
+    also untouched, no new evidence. Continuing to remaining dictionary cleanup
+    (exact-duplicate sweep only, per prior session''s scoping) this session. See
+    docs/CLAUDE_A_SESSION_MIGRATION_20260829.md (in progress).'
+  next_action_prior_20260828C: '2026-08-28 (Claude A, session 3, CLEAN CLOSE — Claude C audit response):
     actioned the 5 Claude-C-audit items assigned to Claude A. (1) movie: NOT assumed to be
     film — genuinely open, no data, relay question queued (see
     claude_a.pending_thangseng_questions) with meaning/POS/context stated per the audit''s

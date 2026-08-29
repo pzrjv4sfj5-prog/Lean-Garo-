@@ -1,5 +1,20 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-28 (session 3) by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-29 (session 4) by Claude A
+(session close, CLEAN — new Project Owner-relayed Thangseng evidence applied for `film`: "I saw the
+film last week." = "Anga ia film-ko mija antio nia." (NV-099). Promoted the existing unverified
+master_dictionary.json row to VERIFIED/HIGH; confirms both the sentence and the `film-ko` object
+construction as a confirming instance of already-verified RULE-009 (-ko accusative suffix), no rule
+change. Synced 2 stale untagged duplicates in the legacy garo_dictionary.json source for hygiene
+(pickPrimary already master-preferred, no runtime behavior change). `movie` explicitly NOT assumed
+to be `film` — remains a genuinely open, separate question, still queued for relay. `go`/`will not
+go` untouched, no new evidence. Re-ran the full exact-duplicate dictionary sweep: found one
+near-match (`ten birds`/SUPERSEDED, two rows) but its notes carry distinct real audit history, so
+correctly left unmerged — no new removals this session beyond session 3's `Pen`/`pen` case. 247/247
+tests, 8189/8189 compiled entries, 9/9 grammatical corrections, 0 new repository-intelligence
+violations, 0 resync candidates, film sentence live-verified via translate(). New cross-role flag: 9
+pre-existing lint errors in src/research/*.js (no-unused-vars), unrelated to this session, flagged
+for Claude B. See `docs/CLAUDE_A_SESSION_MIGRATION_20260829.md`.)
+Prior: 2026-08-28 (session 3) by Claude A
 (session close, CLEAN — Claude C audit response, 5 items actioned: `movie` left unresolved, no
 `film`=`movie` assumption, relay question queued with meaning/POS/context stated; RULE-046
 space-before-`ma` repo-wide sweep — 13 `master_dictionary.json` + 82 `corrections.json` violations

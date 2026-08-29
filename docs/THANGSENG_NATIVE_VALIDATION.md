@@ -5391,3 +5391,41 @@ correctly resolve to `Anga uija`.
 
 This closes NV-097's one open contradiction. No other Thangseng
 questions are pending from this reconciliation.
+
+## NV-099 — Thangseng relay (Project Owner), `film` sentence + `-ko` object construction, 2026-08-29
+
+**Correction relayed by the Project Owner:** `film` (already VERIFIED/HIGH,
+NV-089, direct loanword) is confirmed, and must not be re-asked. New
+evidence this session, direct from Thangseng: "I saw the film last week."
+→ `Anga ia film-ko mija antio nia.`
+
+**Applied:** the existing `master_dictionary.json` row for `i saw the film
+last week.` (previously `unverified`, word-order `Ang·a ia film ko nia
+mija antio.`, no native backing) promoted to `verified_high` with the
+native-confirmed text and word order. This is native confirmation of two
+things at once: (1) the sentence itself, and (2) `film` taking the `-ko`
+accusative/object suffix exactly as `RULE-009`'s already-verified/high
+`-ko` general system predicts (`film-ko`) — a confirming instance of an
+existing rule, not a new rule and not a reason to touch `RULE-009` itself.
+
+**Duplicate-representation check:** searched `corrections.json`,
+`phrase_maps.js`, `garo_dictionary.json`, `final_entries.json`,
+`compiled_dict.json` for other representations of this key. Found 2 stale
+untagged duplicates in `garo_dictionary.json` (a legacy build-input source
+with no `notes`/confidence field) carrying the old unconfirmed word order
+under both `i saw the film last week.` and `I saw the film last week.`
+(case-variant key). `prepare-data.js`'s `pickPrimary` master-preference
+logic means these were never going to ship over master's now-VERIFIED row,
+but left as-is they're stale/misleading source content — synced both to
+the confirmed text for hygiene, no runtime behavior change. No other
+representations found.
+
+**Runtime verification:** pending rebuild + `translate()` spot-check this
+session (see Runtime Handoff in the session's migration doc).
+
+**Gate:** to be re-run post-build this session.
+
+No other Thangseng questions resolved this session. `go`, `will not go`,
+and `movie` remain open exactly as queued in
+`.ai/WORKSTATE.yaml` `claude_a.pending_thangseng_questions` — not
+re-asked, not guessed at.

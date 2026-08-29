@@ -6508,9 +6508,10 @@
   },
   {
     "english": "i saw the film last week.",
-    "garo": "Ang·a ia film ko nia mija antio.",
+    "garo": "Anga ia film-ko mija antio nia.",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-29 (NV-099, Project Owner-relayed Thangseng evidence). Confirms the sentence AND the 'film-ko' direct-object construction of the already-VERIFIED 'film' loanword (RULE-009 -ko accusative marker, general system already verified/high; this is a confirming instance, not a new rule). Superseded prior unverified row 'Ang·a ia film ko nia mija antio.' (word-order variant, no prior native backing)."
   },
   {
     "english": "how was the journey yesterday?",
