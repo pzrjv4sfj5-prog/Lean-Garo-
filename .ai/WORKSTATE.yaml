@@ -252,7 +252,33 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-29 (Claude A, session 4, IN PROGRESS): applied new Project
+  next_action: '2026-08-29 (Claude A, session 5, CLEAN CLOSE): worked backlog item 4
+    (full duplicate-key backlog, ~1,000+ groups per the stale 2026-06-20 audit).
+    Regenerated the census against current data (docs/DUPLICATE_AND_RAKA_AUDIT_20260829.md,
+    supersedes the duplicate-key portion of DUPLICATE_AND_RAKA_AUDIT_SUMMARY.md — double-raka
+    cluster untouched, not re-audited): 1,619 groups now (was 1,055 in June, count grew
+    with the dictionary). 0 exact zero-info duplicates (sessions 3/4 already cleared this
+    shape). 848 legitimate VERIFIED-primary+SUPERSEDED/variant-sibling groups — no action,
+    citation discipline working as designed. 9 groups had 2+ distinct non-variant-tagged
+    VERIFIED/HIGH primaries (genuine-conflict heuristic) — 8 of 9 checked individually and
+    found ALREADY resolved (POS splits: hope/answer/demand; distinct senses: last/outside/where;
+    explicitly-both-valid: hoe; confirmed free variants: where(relative pronoun)) — my grouping
+    heuristic false-positived on all 8 since it doesn''t parse sense/POS from notes text, no
+    action needed, cross-referenced only. 1 of 9 genuinely open and NOT previously tracked as
+    a question: "to support" (al·du·na vs. Chaka, NV-063''s own note says "not reconciled as
+    synonyms vs. distinct senses") — added as relay question 4 (see
+    claude_a.pending_thangseng_questions_20260829_addendum), not guessed at. Remaining 715
+    "other" groups (no verified anchor at all): 602 are simple both-unverified pairs — genuine
+    unvalidated-vocabulary backlog, matches every prior audit''s characterization, not
+    corpus-resolvable, not attempted. 44 have a SUPERSEDED note whose text claims a sibling
+    "has VERIFIED/HIGH form(s)" that is now actually plain unverified in current data (spot-checked
+    10/44, confirmed genuine drift in each) — a citation-accuracy gap (the note is now stale),
+    zero runtime impact either way (nothing verified ships from these groups regardless), flagged
+    not fixed — see report for why. 29 groups unclassified (mixed missing/ocr_flagged/rejected/open
+    tags), not triaged this session. No dictionary values changed this session — pure audit/triage,
+    consistent with the low actionable yield the census itself found. Gate unchanged from session 4
+    close (nothing touched that affects compile): not re-run, per "only re-test what changed."'
+  next_action_prior_20260829_session4: '2026-08-29 (Claude A, session 4, CLEAN CLOSE): applied new Project
     Owner-relayed Thangseng evidence for "film" — "I saw the film last week." =
     "Anga ia film-ko mija antio nia." Promoted master_dictionary.json''s existing
     unverified row to VERIFIED/HIGH (NV-099); confirms both the sentence and the
@@ -261,9 +287,9 @@ claude_a:
     legacy garo_dictionary.json source (hygiene only, pickPrimary already
     master-preferred so no runtime behavior change). movie explicitly NOT touched
     (per Do-NOT-repeat) — genuinely no evidence, remains queued. go/will-not-go
-    also untouched, no new evidence. Continuing to remaining dictionary cleanup
-    (exact-duplicate sweep only, per prior session''s scoping) this session. See
-    docs/CLAUDE_A_SESSION_MIGRATION_20260829.md (in progress).'
+    also untouched, no new evidence. See docs/CLAUDE_A_SESSION_MIGRATION_20260829.md
+    (this doc itself confirms CLEAN CLOSE, not in-progress — this field''s prior
+    "IN PROGRESS" label was stale/mislabeled, corrected on 2026-08-29 session 5 resync).'
   next_action_prior_20260828C: '2026-08-28 (Claude A, session 3, CLEAN CLOSE — Claude C audit response):
     actioned the 5 Claude-C-audit items assigned to Claude A. (1) movie: NOT assumed to be
     film — genuinely open, no data, relay question queued (see
@@ -293,6 +319,13 @@ claude_a:
     will not go=re·angjawa added as VERIFIED/HIGH citations but flagged, not used to
     override RULE-030/shipped runtime values. Rebased cleanly onto Claude B''s concurrent
     pickPrimary cutover (8272495). Full detail: docs/CLAUDE_A_SESSION_MIGRATION_20260828B.md.'
+  pending_thangseng_questions_20260829_addendum: '2026-08-29 (Claude A, session 5, duplicate-key
+    backlog census, docs/DUPLICATE_AND_RAKA_AUDIT_20260829.md): 4th relay question, additive to
+    the three below, not yet sent. (4) "to support" — you confirmed "chaka" = to support (NV-063),
+    which coexists with an existing citation "al·du·na" (also to support). Are chaka and al·du·na
+    two different words for the same thing (synonyms), or do they mean slightly different things
+    (e.g. supporting a person vs. supporting a physical object, or a different register)? When
+    would a Garo speaker use one over the other?'
   pending_thangseng_questions: '2026-08-28 (Claude A, session 3): three relay questions
     ready to send, not yet sent. (1) "go" — you told us "go = re''a", but our grammar rule
     (RULE-030) has an established example "Re·anga = go" from an earlier session, and our
