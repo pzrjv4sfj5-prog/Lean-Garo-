@@ -291,6 +291,22 @@ claude_a:
     tags), not triaged this session. No dictionary values changed this session — pure audit/triage,
     consistent with the low actionable yield the census itself found. Gate unchanged from session 4
     close (nothing touched that affects compile): not re-run, per "only re-test what changed."'
+  next_action_prior_20260829_addendum: '2026-08-29 (Claude A, session 5 addendum, Project Owner
+    request): classified the 1,016 SUPERSEDED rows in the 848 "legit" groups into the 6
+    requested categories (docs/DUPLICATE_AND_RAKA_AUDIT_20260829.md, "Retention-policy
+    classification" section) — NO rows deleted or changed. ~55 genuine obsolete duplicates
+    (cat 1), ~277 rejected-candidate rows with real provenance value (cat 2, NV-080 "not
+    selected" pattern), ~5 confirmed distinct-POS/sense rows (cat 3), ~119 pure orthography
+    variants (cat 4), ~470 historical-correction audit trail (cat 5, includes the bulk
+    classifier/counted-noun numeral-suffix bug-fix family), 0 incorrectly-marked-SUPERSEDED
+    found (cat 6) — inverse pattern found instead (a few rows, e.g. "king", were incorrectly
+    VERIFIED earlier via misimport/copy-paste corruption, correctly superseded later).
+    Confirmed none of the 1,016 rows affects runtime either way — every group already has
+    exactly one non-variant VERIFIED primary and pickPrimary already excludes SUPERSEDED
+    from compilation, so this is purely a documentation-size question. Recommendation
+    given (categories 1+4, ~174 rows/~17%, are the only ones with zero remaining information
+    value if deletion is ever wanted; categories 2+5, ~74%, are exactly what citation
+    discipline protects) — not acted on, awaiting Owner decision on retention policy.'
   next_action_prior_20260829_session4: '2026-08-29 (Claude A, session 4, CLEAN CLOSE): applied new Project
     Owner-relayed Thangseng evidence for "film" — "I saw the film last week." =
     "Anga ia film-ko mija antio nia." Promoted master_dictionary.json''s existing
