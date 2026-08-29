@@ -20,6 +20,7 @@
 
 import ALTERNATES_RAW from './compiled_dict_alternates.json' with { type: 'json' };
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
+import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
 import { countNoun, parseCountingPhrase } from './garo_classifier.js';
 import { corrections, normalizeEntry, EN_INDEX, lookupGaro } from './lookupEngine.js';
@@ -284,7 +285,49 @@ export async function translate(input) {
   // only the silent drop is fixed, by carrying an '[UNKNOWN]' marker through
   // in place of a dropped word, same signal convention already used by the
   // step 10 passthrough fallback below.
-  const morphWords = words.map(w => lookupGaro(w) || lookupGaro(w.replace(/ing$|ed$|s$|ly$/,'')) || '[UNKNOWN]');
+  // Pronoun-collision guard (2026-08-29, Claude B, session migration,
+  // surfaced by the OOV/proper-noun sov-assembly fix above): this step's
+  // own ing$/ed$/s$/ly$ stripping is a third, independent copy of the
+  // exact RC-CANDIDATE-035 collision class already guarded in
+  // sentenceBuilder.js's own stripping and in morphologyEngine.js's
+  // findVerbForm — "using" strips to "us", a real pronoun_map.json key,
+  // so the unguarded bare lookupGaro(stripped) below returned the
+  // pronoun's Garo form ("Chingna") as if it were "using"'s translation.
+  // This copy was never actually reached for that sentence before today
+  // (sov-assembly's own silent-drop bug always intercepted "she is using
+  // her phone" one cascade step earlier — see sentenceBuilder.js), so the
+  // gap here was latent, not exercised. Now that sov-assembly correctly
+  // bails instead of silently dropping, this step is reachable for that
+  // input and needs the same guard its two sibling copies already carry.
+  // Reuses PRONOUN_MAP exactly as the existing precedent does — no new
+  // vocabulary or heuristic invented.
+  const morphWords = words.map(w => {
+    // Non-letter stripping (2026-08-29, Claude B, session migration):
+    // mirrors the same `[^a-z'·]` strip assembleSentenceSOV's own
+    // per-word lookup already applies (sentenceBuilder.js) before it
+    // does any lookupGaro call. Without it, a bare non-alphabetic token
+    // (confirmed live via "0 dogs", surfaced once sov-assembly's silent-
+    // drop fix above stopped masking it) queries the dictionary with the
+    // raw, unstripped token — and master_dictionary.json happens to carry
+    // a single stray `"0"` entry (`confidence: "unverified"`, garo value
+    // "don't do") that is self-evidently a data-entry error, not a real
+    // translation for the digit zero. This block cannot fix that entry
+    // (linguistic-data judgment, out of engineering scope per this
+    // repo's own governance §6 bright line — an 'unverified' value has no
+    // citation to defer to) — it only restores the same defensive
+    // normalization every other per-word lookup site in this codebase
+    // already applies, so a non-word token fails to resolve cleanly
+    // (-> '[UNKNOWN]', consistent with genuinely OOV input) instead of
+    // accidentally matching whatever garbage happens to sit under its
+    // literal raw-character dictionary key. Confirmed safe for genuine
+    // standalone digit words ("3" -> "gittam", etc.): those are handled
+    // earlier in the cascade (step 3 exact-word, or classifier
+    // composition for count >= 1) and never reach this step at all.
+    const lw = w.replace(/[^a-z'·]/g, '');
+    const stripped = lw.replace(/ing$|ed$|s$|ly$/,'');
+    const strippedLookup = (stripped !== lw && !(stripped in PRONOUN_MAP)) ? lookupGaro(stripped) : null;
+    return lookupGaro(lw) || strippedLookup || '[UNKNOWN]';
+  });
   const morph = morphWords.filter(w => w !== '[UNKNOWN]');
   if (morph.length >= Math.ceil(words.length * 0.5)) {
     const garo = morphWords.includes('[UNKNOWN]') ? morphWords.join(' ') : morph.join(' ');

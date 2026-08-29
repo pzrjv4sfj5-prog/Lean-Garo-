@@ -1,5 +1,18 @@
 repository:
-  head: 6187453
+  head: 5c08102
+  last_updated_20260829B: '2026-08-29B (Claude B, session close): fixed the
+    OOV/proper-noun sov-assembly silent-drop this session flagged as its
+    own next priority item, plus 2 latent regressions it surfaced (pronoun-
+    collision guard missing from a 3rd copy of ing$-stripping in
+    translationEngine.js step 7; bare "not" missing from the content-word
+    filter). One data-quality finding (master_dictionary.json "0"->"don''t
+    do", unverified) surfaced but correctly left for Claude A per
+    governance §6 -- not engineering-scope. 8189/8189 dictionary
+    (unchanged), 9/9 grammatical corrections (unchanged), 254/254 unit
+    tests (was 247, +7 new), 0 new repository-intelligence.js violations,
+    0 resync candidates, vite build clean. Full account in
+    claude_b.next_action above and
+    docs/CLAUDE_B_SESSION_MIGRATION_20260829B.md.'
   last_updated_20260829: '2026-08-29 (Claude B, session close): fresh engineering
     QA pass + 4 of 5 engineering findings from a claimed (but unverifiable --
     no such doc exists anywhere) Claude C audit actioned, 1 investigated and
@@ -1927,7 +1940,91 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-29 (Claude B, session close). Two parts this
+  next_action: '2026-08-29B (Claude B, session close, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260829.md). Fixed this session''s
+    flagged priority item: assembleSentenceSOV''s silent content-word drop
+    for OOV/unresolved words (src/sentenceBuilder.js). Fix: `pairs` now
+    keeps every content word, substituting an explicit ''[UNKNOWN]''
+    marker for a failed lookup instead of filtering it out; the function
+    then bails (returns null) if its own joined result would contain
+    ''[UNKNOWN]'', mirroring assembleGrammar''s own existing
+    `result.includes(''[UNKNOWN]'')` bail precedent one tier up --
+    translate()''s cascade then correctly falls through to step 7
+    (morphology), which already surfaces ''[UNKNOWN]'' cleanly at its own
+    honest, lower confidence (0.65 vs sov-assembly''s 0.75). Confirmed
+    live: translate("i live in guwahati") now -> "Anga donga [UNKNOWN]
+    [UNKNOWN]" (was "Anga donga", destination silently vanished) --
+    verified across 3 independent OOV city names (guwahati/delhi/
+    shillong), not a single-word coincidence; a place name already in the
+    dictionary (tura) and every other exact-phrase/grammar-assembly
+    control case confirmed completely unaffected. No linguistic data
+    touched, no new Garo vocabulary invented -- purely a "surface instead
+    of silently drop" structural fix, same shape as every prior fix in
+    this lineage (AI-002, the sibilant-plural fix, RC-CANDIDATE-034).
+    TWO real regressions surfaced by this fix (not introduced by it --
+    both were pre-existing latent bugs the old silent-drop behavior had
+    been accidentally masking) were found via the full unit-test run and
+    fixed in the same commit, each with its own regression test added:
+    (1) translationEngine.js step 7''s own independent ing$/ed$/s$/ly$
+    stripping had no PRONOUN_MAP collision guard -- the exact
+    RC-CANDIDATE-035 collision class already guarded in two OTHER copies
+    of this same stripping logic (sentenceBuilder.js''s own, and
+    morphologyEngine.js''s findVerbForm) but never in this third one,
+    since sov-assembly''s silent-drop always intercepted "she is using her
+    phone" one cascade step earlier and this copy was never actually
+    reached for that input before today. Added the same guard, mirroring
+    the existing precedent exactly -- confirmed "Chingna" no longer leaks.
+    (2) bare "not" was in neither STOP_WORDS nor AUXILIARY_SKIP (only the
+    contraction forms -- dont/wont/etc -- were), so it reached
+    assembleSentenceSOV''s translation attempt, failed (negation is
+    handled via the isNegative flag, never as lexical content), and was
+    silently dropped by the OLD filter -- meaning "a big dog will not eat
+    rice" secretly depended on that same silent-drop bug to reach its
+    correct output. Added a local `/^(not|never)$/` exclusion to
+    assembleSentenceSOV''s content filter, mirroring grammarEngine.js''s
+    own PRE-EXISTING identical guard (2026-07-29, "Negation-word guard"
+    comment) in its object-extraction loop -- same two words, not a new
+    linguistic rule, deliberately NOT a global STOP_WORDS change (smaller
+    diff, STOP_WORDS is shared by other call sites not audited this
+    session). A THIRD, separate, out-of-scope finding was surfaced but
+    deliberately NOT fixed here: master_dictionary.json carries a literal
+    `"0"` entry (`confidence: "unverified"`, garo value "don''t do") that
+    is self-evidently a data-entry error -- confirmed it has no citation
+    to defer to, so per this project''s own governance §6 bright line
+    (docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md) this is a linguistic call,
+    not engineering-scope; NOT edited. Added a digit/non-letter-stripping
+    guard to translationEngine.js step 7 (mirroring assembleSentenceSOV''s
+    own existing `[^a-z''·]` strip) so a bare non-word token like "0"
+    fails to resolve cleanly (-> ''[UNKNOWN]'') instead of accidentally
+    matching that garbage value -- this IS engineering-scope (a general
+    "don''t trust a bare non-alphabetic token as dictionary-lookup-able
+    lexical content" normalization, not a judgment about what "0" should
+    mean) -- and updated the one regression test that depended on the old
+    silently-wrong-but-passing behavior (`"0 dogs"` -> was asserting bare
+    `"Achak"`, now asserts the honest `"[UNKNOWN] Achak"`, with a comment
+    explaining why and flagging the underlying dictionary entry for
+    Claude A). Added 7 new regression tests total (4 for the core OOV
+    fix, 1 for the pronoun-collision side-fix, 1 for the negation-guard
+    side-fix, plus the updated "0 dogs" case) --
+    tests/unit/translationEngine.test.js. Full gate re-run clean after
+    every change: 8189/8189 dictionary entries (unchanged -- no
+    linguistic data touched), 9/9 grammatical corrections (unchanged),
+    254/254 unit tests (was 247 -- +7 new, 0 failures), 0 new
+    repository-intelligence.js violations (checks E/F/G all 0 new), 0
+    resync-stale-overrides.mjs candidates, `npx vite build` clean (58
+    modules). Propagation verified: fresh prepare-data.js rebuild
+    byte-identical to committed compiled_dict.json/
+    compiled_dict_alternates.json (git status short empty on both after
+    rebuild). No dictionary/data files touched this session -- only
+    src/sentenceBuilder.js, src/translationEngine.js,
+    tests/unit/translationEngine.test.js -- so the pre-existing ~1000-
+    group duplicate-key backlog and other data-side items are genuinely
+    unaffected, not re-checked beyond confirming no data files changed.
+    Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260829B.md. No
+    engineering-scoped work outstanding as of this commit; the "0"
+    dictionary-value question is the only open item, and it is
+    explicitly Claude A''s, not engineering''s.'
+  next_action_prior_20260829: '2026-08-29 (Claude B, session close). Two parts this
     session: (A) a full engineering-only QA pass against origin/main
     (Claude A had advanced linguistic data since the 2026-08-28
     cutover close) -- verified propagation master->compiled->

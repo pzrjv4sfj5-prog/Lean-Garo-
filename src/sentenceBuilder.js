@@ -54,7 +54,27 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
   // but adjective-modified subjects and other RC-010-documented
   // exclusions still legitimately reach this function and need working
   // tense attachment regardless.
-  const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()) && !AUXILIARY_SKIP.has(w.toLowerCase()));
+  // Negation-word guard (2026-08-29, Claude B, session migration):
+  // mirrors grammarEngine.js's own identical guard (2026-07-29,
+  // "Negation-word guard" comment, object-extraction loop) — "not"/
+  // "never" are neither STOP_WORDS nor AUXILIARY_SKIP, so a bare "not"
+  // was reaching this function's own translation attempt, failing
+  // (lookupGaro('not') has no entry — negation is handled entirely via
+  // the isNegative flag below, never as lexical content), and being
+  // silently dropped by the old `.filter(p => p.garo)` step (same silent-
+  // drop bug class fixed above). Confirmed live: "a big dog will not eat
+  // rice" — content included "not" — sov-assembly's own translation bail
+  // now (correctly) fires because "not" resolves to '[UNKNOWN]', losing
+  // the otherwise-correct negative-future assembly entirely, a real
+  // regression from the fix above. Not a contested linguistic call, same
+  // reasoning as grammarEngine's own precedent: a bare negation particle
+  // is never real translatable content once isNegative already carries
+  // this sentence's negation status (detected independently, upstream,
+  // via analyzeGrammar's own /n't|\b(not|never)\b/i pattern) — dropping
+  // it here loses no information. Scoped to exactly grammarEngine's own
+  // two words, not a broader STOP_WORDS change (smaller, safer diff;
+  // STOP_WORDS is shared by other call sites not audited this session).
+  const content = words.filter(w => !STOP_WORDS.has(w.toLowerCase()) && !AUXILIARY_SKIP.has(w.toLowerCase()) && !/^(not|never)$/.test(w.toLowerCase()));
   if (!content.length) return null;
   // RULE-044/NV-047 movement-locative override — see fix comment above
   // this function's diff for full rationale. "going" is checked against
@@ -96,8 +116,22 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
   });
   const validTranslations = translated.filter(Boolean);
   if (!validTranslations.length) return null;
-  // Build result using only words that have translations
-  const pairs = content.map((w, i) => ({ eng: w, garo: translated[i] })).filter(p => p.garo);
+  // OOV/proper-noun fix (2026-08-29, Claude B, session migration): this
+  // used to be `.filter(p => p.garo)`, which silently DROPPED any content
+  // word whose translation attempt came back null (most commonly an
+  // out-of-dictionary proper noun — city/place names like "guwahati" or
+  // "delhi" — but any unresolved content word hits the same path) instead
+  // of surfacing it. Confirmed live: translate("i live in guwahati") ->
+  // "Anga donga" (the destination vanished entirely, no error, no
+  // [UNKNOWN], confidence still reported 0.75 as if nothing were missing)
+  // — the same silent-drop shape already fixed once in assembleGrammar's
+  // object/location handling (2026-07-29) and again in step 7 morphology
+  // (RC-CANDIDATE-034, 2026-07-31), but this function's own `pairs` step
+  // had never been touched by either fix. Every content word is now kept
+  // in `pairs`, substituting an explicit '[UNKNOWN]' marker for a failed
+  // lookup instead of removing the word — same convention used
+  // everywhere else in this codebase.
+  const pairs = content.map((w, i) => ({ eng: w, garo: translated[i] || '[UNKNOWN]' }));
   if (pairs.every(p => p.garo === p.eng)) return null;
   const verbs = [], nonVerbs = [];
   // isIrregularVerb tracked per verb (RC-CANDIDATE-018 part b): a
@@ -210,7 +244,21 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
     const ongja = lookupGaro('no');
     if (ongja) nonVerbs.unshift(ongja);
   }
-  return [...nonVerbs, ...verbs].join(' ');
+  const result = [...nonVerbs, ...verbs].join(' ');
+  // Mirrors assembleGrammar's own `result.includes('[UNKNOWN]')` bail
+  // (see that function, ~line 314): this function sits directly above
+  // step 7 (morphology) in translate()'s cascade, and morphology already
+  // knows how to surface '[UNKNOWN]' correctly and report a lower,
+  // honest confidence (0.65) for a partially-resolved sentence. Rather
+  // than have THIS function confidently return a sentence with a bare
+  // "[UNKNOWN]" token stitched into otherwise-fluent SOV output at
+  // sov-assembly's own (higher, 0.75) confidence, bail here so
+  // translate() falls through to the weaker-but-honest step instead —
+  // same tradeoff assembleGrammar already made one tier up, now applied
+  // consistently at this tier too. A fully-resolved sentence (no
+  // '[UNKNOWN]' pairs) is completely unaffected.
+  if (result.includes('[UNKNOWN]')) return null;
+  return result;
 }
 
 // fuzzyMatch extracted to src/normalizationEngine.js (2026-07-26, BACKLOG-003 Phase 7).

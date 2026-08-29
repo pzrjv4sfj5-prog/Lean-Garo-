@@ -75,7 +75,23 @@ const REGRESSION_CASES = [
   { in: 'i will not drink', expectGaro: 'Anga ringjawa', expectMethod: ['correction'] },
   { in: 'i will not go', expectGaro: 'Anga re·jawa', expectMethod: ['correction'] },
   { in: 'dogs', expectGaro: 'Achak' },
-  { in: '0 dogs', expectGaro: 'Achak' },
+  // NOTE (2026-08-29, Claude B, session migration): was `expectGaro:
+  // 'Achak'` alone. That relied on assembleSentenceSOV's own silent
+  // content-word drop (fixed this session, see sentenceBuilder.js) to
+  // quietly discard "0" — which itself has no sane translation reachable
+  // here (buildClassifierPhrase deliberately rejects count<=0 by design,
+  // so classifier composition never fires for "0 X"; master_dictionary.json's
+  // literal `"0"` entry is a confirmed, self-evidently wrong data artifact,
+  // `confidence: "unverified"`, garo value "don't do" — NOT edited here,
+  // fixing a linguistic value has no citation to defer to and is out of
+  // engineering scope per this repo's governance §6; flagged for Claude A
+  // in this session's migration doc instead). Once the silent-drop bug is
+  // fixed, "0" honestly resolves to '[UNKNOWN]' (not silently dropped, and
+  // not the garbage dictionary value either, per the digit-stripping guard
+  // added to translationEngine.js step 7 this same session) and the
+  // sentence correctly falls to the morphology fallback instead of
+  // sov-assembly.
+  { in: '0 dogs', expectGaro: '[UNKNOWN] Achak', expectMethod: ['morphology'] },
 
   // --- Rules 27/28/29 (2026-07-05): no true simple past, aha/manaha overlap, -bo hortative ---
   { in: 'he did not go', expectGaro: 'Ua Re·angja', expectMethod: ['grammar-assembly'] },
@@ -1627,4 +1643,95 @@ test('AI-002 regression guard: a fully-resolved multi-word object sentence still
   const result = await translate('i saw the dog');
   assert.equal(result.method, 'grammar-assembly');
   assert.ok(result.garo.toLowerCase().includes('achak'), `expected the resolved object "achak" to appear, got: ${result.garo}`);
+});
+
+// --- OOV/proper-noun sov-assembly fix (2026-08-29, Claude B, session
+// migration). Root cause: assembleSentenceSOV's `pairs = content.map(...)
+// .filter(p => p.garo)` step silently DROPPED any content word whose
+// translation attempt returned null — most visibly, out-of-dictionary
+// proper nouns (city/place names never added to master_dictionary.json,
+// since Claude A's data work is ongoing and can never cover every real
+// place name). Confirmed live pre-fix: translate("i live in guwahati")
+// -> "Anga donga" (the destination silently vanished, no [UNKNOWN], no
+// error, confidence still reported 0.75 as if nothing were missing) —
+// same silent-drop shape already fixed once in assembleGrammar's own
+// object/location handling (2026-07-29) and again in step 7 morphology
+// (RC-CANDIDATE-034, 2026-07-31), but never in this function's own
+// `pairs` step until now. Fix: every content word is kept in `pairs`
+// (an unresolved lookup becomes an explicit '[UNKNOWN]' marker instead
+// of being removed), and — mirroring assembleGrammar's own
+// `result.includes('[UNKNOWN]')` bail precedent — assembleSentenceSOV
+// now returns null when its own joined output would contain
+// '[UNKNOWN]', letting translate()'s cascade fall through to step 7
+// (morphology), which already knows how to surface '[UNKNOWN]' cleanly
+// and reports the correspondingly lower, honest confidence (0.65)
+// instead of sov-assembly's higher (0.75) confidence on an incomplete
+// sentence. No linguistic data changed and no new Garo vocabulary
+// invented — "guwahati" remains genuinely untranslated, now visibly so.
+test('OOV proper noun: "i live in guwahati" no longer silently drops the destination', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('i live in guwahati');
+  assert.ok(r.garo.includes('[UNKNOWN]'), `unresolved place name must be visibly signalled, got: ${r.garo}`);
+  assert.notEqual(r.method, 'sov-assembly', 'sov-assembly must bail rather than confidently ship an incomplete sentence');
+});
+
+test('OOV proper noun: the resolved words in "i live in guwahati" are still present alongside the marker', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('i live in guwahati');
+  assert.ok(r.garo.includes('donga'), `"live" must still resolve and appear, got: ${r.garo}`);
+});
+
+test('OOV proper noun regression guard: a place name already in the dictionary ("tura") is completely unaffected', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('i live in tura');
+  assert.ok(!r.garo.includes('[UNKNOWN]'), `a genuinely resolved place name must not gain a spurious marker, got: ${r.garo}`);
+  assert.equal(r.method, 'exact-phrase');
+});
+
+test('OOV proper noun regression guard: multiple different OOV city names all correctly surface the marker (not a single-word coincidence)', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  for (const city of ['guwahati', 'delhi', 'shillong']) {
+    const r = await translate(`i live in ${city}`);
+    assert.ok(r.garo.includes('[UNKNOWN]'), `expected [UNKNOWN] for "${city}", got: ${r.garo}`);
+  }
+});
+
+test('OOV proper noun regression guard: a fully-resolved sentence with no unknown words is completely unaffected by the sov-assembly bail change', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('a big dog will not eat rice');
+  assert.equal(r.method, 'sov-assembly');
+  assert.ok(!r.garo.includes('[UNKNOWN]'), `got: ${r.garo}`);
+});
+
+// Side-fix, surfaced (not introduced) by the above: translationEngine.js's
+// own step 7 (morphology) does its own independent ing$/ed$/s$/ly$
+// stripping before dictionary lookup, with no PRONOUN_MAP collision guard
+// — the exact RC-CANDIDATE-035 collision class already guarded in two
+// other places (sentenceBuilder.js's own stripping, morphologyEngine.js's
+// findVerbForm) but never in this third copy, since sov-assembly's own
+// silent-drop bug always intercepted "she is using her phone" one
+// cascade step earlier and this copy was never actually reached for that
+// input before today.
+test('morphology ing$-stripping pronoun-collision guard: "she is using her phone" must not leak "Chingna" now that it reaches step 7', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('she is using her phone');
+  assert.ok(!r.garo.includes('Chingna'), `must not leak the "us" pronoun translation via ing$-stripping of "using", got: ${r.garo}`);
+});
+
+// Second side-fix, surfaced (not introduced) by the sov-assembly bail
+// change: bare "not" was neither in STOP_WORDS nor AUXILIARY_SKIP (only
+// the contraction forms — "dont", "wont", etc. — were), so it reached
+// assembleSentenceSOV's own translation attempt, failed (negation is
+// handled entirely via the isNegative flag, never as lexical content),
+// and was silently dropped by the old filter — masking the fact that a
+// negative-future sentence like "a big dog will not eat rice" depended
+// on that silent drop to reach its correct output at all. Mirrors
+// grammarEngine.js's own pre-existing identical guard (2026-07-29,
+// "Negation-word guard" comment) in its object-extraction loop — same
+// two words, not a new linguistic rule.
+test('negation-word content-filter guard: "a big dog will not eat rice" still assembles the correct negative-future form', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('a big dog will not eat rice');
+  assert.equal(r.garo, 'dal·a Achak Mi Cha·jawa');
+  assert.equal(r.method, 'sov-assembly');
 });
