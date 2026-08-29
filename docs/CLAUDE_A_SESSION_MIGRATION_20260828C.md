@@ -173,8 +173,19 @@ row count (9947, down from 9948 after the 1 duplicate removal).
 
 - A pre-existing duplicate-key defect in Claude B's WORKSTATE.yaml section
   was found and flagged (not fixed) — see "Do NOT repeat" above.
-- No concurrent commits from other roles landed during this session (checked
-  via `git fetch` immediately before push — see Repository status below).
+- Rebased onto Claude B's concurrent commit `6187453` ("engineering QA pass
+  + resync no/quick fixes, wait investigated+reverted, check:resync gated,
+  governance §6") before push — one real conflict in `.ai/WORKSTATE.yaml`
+  (both sessions added a `repository.*` block same-turn), resolved by
+  keeping Claude B's `last_updated_20260829` entry and updating
+  `repository.head` to `6187453` per this file's own head-convention (must
+  record the commit immediately prior). Claude B's commit also fixed the
+  grammatical-corrections baseline from 8/9 to 9/9 — confirmed by full gate
+  re-run post-rebase, no unit-test regressions (still 247/247). Notably,
+  Claude B's own commit message independently flags that the "Claude C
+  audit" referenced by both sessions has no corresponding doc anywhere in
+  the repo — worth surfacing to the Project Owner, since this session's
+  audit items were also relayed via chat, not a committed file.
 
 ## Exact next actions (priority order)
 
@@ -231,16 +242,25 @@ work):
 
 - HEAD after this session's final commit and `origin/main`: verified
   identical via `git fetch` + `git rev-parse` comparison immediately
-  after push (see commit hash in `.ai/WORKSTATE.yaml` `repository.head`,
-  which per this file's own convention records the state *immediately
-  before* this commit, i.e. `568e9b6`).
-- `git status`: clean before and after this migration commit.
+  after push — both `cb56f6a`.
+- Rebased onto Claude B's concurrent `6187453` before push (see Cross-role
+  notes); `.ai/WORKSTATE.yaml` `repository.head` correctly updated to
+  `6187453` per this file's own convention (records the commit immediately
+  prior to the one updating this file).
+- `git status`: clean before and after this migration commit, and after
+  the rebase + push.
 - `.ai/WORKSTATE.yaml`: updated this commit (`claude_a.next_action`,
   `claude_a.pending_thangseng_questions`, the stray-duplicate-key rename,
-  `repository.head`, `repository.last_updated`).
+  `repository.head`) — merged cleanly alongside Claude B's own concurrent
+  `repository.last_updated_20260829` addition.
 - `.ai/SESSION_BOOTSTRAP.md`: updated this commit (top pointer).
 - No local-only commits — pushed in the same step this doc was finalized.
 - No uncommitted or untracked files at close.
+- Full gate re-verified post-rebase (not just pre-rebase): 247/247 tests,
+  9/9 grammatical corrections (Claude B's concurrent fix, carried through
+  cleanly), 8189/8189 compiled entries, 0 new repository-intelligence
+  violations, zero remaining RULE-046 space-before-`ma` matches confirmed
+  again in `src/compiled_dict.json` after rebuild.
 - Native-validation/blocker status: 0 new native evidence this session; 3
   relay questions queued (go, will not go, movie); 2 pre-existing untouched
   items (knowledge alt, only citation-hygiene archaeology); 1 cross-role
