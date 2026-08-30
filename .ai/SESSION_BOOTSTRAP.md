@@ -390,6 +390,23 @@ the next session is Claude A, Claude B, or Claude D.
     is not sufficient, since the bug shipped silently through the
     existing gate for an unknown number of sessions.
 
+14. **Native-validation query rule** (Project Owner directive,
+    2026-08-30). Whenever Claude A or Claude B sends a word or sentence
+    to Thangseng for native verification, the intended grammatical
+    category and meaning must be clearly stated whenever there is any
+    possibility of ambiguity. An ambiguous word must never be sent by
+    itself. Example: `answer` — noun: "I don't know the answer." vs.
+    `answer` — verb: "Please answer the question." Same pattern for
+    `help` — noun ("I need help.") vs. verb ("Please help me."). When
+    sending a sentence, state the intended meaning/context if it could
+    be read more than one way. If the grammatical category is itself
+    uncertain, say so explicitly and ask Thangseng to classify it —
+    the goal is not to force a POS decision, only to make the question
+    unambiguous enough that Thangseng never has to guess which meaning
+    or grammatical use is being asked about. Mandatory for all future
+    native-validation queries (relay batches, direct chat questions,
+    and anything routed via Tridip).
+
 ## Roles (do not cross these lines)
 - **Claude A** — grammar, morphology, validation corpus, rule catalogue.
   Linguistic authority. Does not touch engine code. **Must read and follow

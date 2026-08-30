@@ -6733,7 +6733,8 @@
     "english": "which way",
     "garo": "bagita",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row."
   },
   {
     "english": "how many / how much",
@@ -6745,19 +6746,22 @@
     "english": "whom",
     "garo": "Sako",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row."
   },
   {
     "english": "whole night",
     "garo": "Walgimik",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row."
   },
   {
     "english": "last week",
     "garo": "Mija antio",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row."
   },
   {
     "english": "with (me / you)",
@@ -6769,7 +6773,8 @@
     "english": "favourite",
     "garo": "Namnikgipa",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row."
   },
   {
     "english": "sweetest",
@@ -6976,7 +6981,8 @@
     "english": "whole / entire",
     "garo": "gimik",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row. Also corroborated by pre-existing VERIFIED/HIGH \"whole earth\"=a'gim·ik (idx 7035), which shares the same gimik root."
   },
   {
     "english": "classifier",
@@ -77707,6 +77713,20 @@
     "garo": "Gualgen",
     "category": "general",
     "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "with me",
+    "garo": "Ang·ming",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row. Comitative -ming suffix (see RULE-047): angming=with me, nang'ming=with you. \"With me\" kept as Ang·ming per 2 pre-existing VERIFIED/HIGH sentence citations (idx 7085, 7103) using that exact raka'd form; \"with you\" transcribed Nang·ming per the project's apostrophe-as-morpheme-separator convention.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "with you",
+    "garo": "Nang·ming",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row. Comitative -ming suffix (see RULE-047): angming=with me, nang'ming=with you. \"With me\" kept as Ang·ming per 2 pre-existing VERIFIED/HIGH sentence citations (idx 7085, 7103) using that exact raka'd form; \"with you\" transcribed Nang·ming per the project's apostrophe-as-morpheme-separator convention.",
     "confidence": "verified_high"
   }
 ]

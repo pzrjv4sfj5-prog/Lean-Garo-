@@ -1,0 +1,54 @@
+id: RULE-047
+title: "Comitative Suffix -ming (\"with [pronoun]\")"
+description: >-
+  `-ming` attaches to a pronoun to mean "with [that pronoun]" (comitative
+  case): `ang` (I/me) + `-ming` -> `Angming`/`Ang·ming` = "with me";
+  `nang` (you) + `-ming` -> `Nang·ming` = "with you". Productive
+  pronoun-suffix composition, in the same family as RULE-004's pronoun
+  paradigm and the possessive-suffix pattern already treated as
+  productive (see .ai/SESSION_BOOTSTRAP.md Rule 11) — not itself
+  claimed as fully general beyond the two pronoun forms directly
+  evidenced here.
+dependencies:
+  - id: RULE-001
+    name: "Raka Locality"
+    note: "governs the Ang·ming vs. angming orthography question"
+  - id: RULE-004
+    name: "Pronoun Paradigm"
+    note: "ang/nang base forms this suffix attaches to"
+claims:
+  - scope: "with me = Ang·ming; with you = Nang·ming"
+    status: verified
+    confidence: high
+  - scope: "generalization of -ming to other pronouns (him/her/them/us)"
+    status: unknown
+    confidence: n/a
+    status_note: "no data either way, not assumed"
+examples:
+  - "Ang·ming Achik agana. = Speak Garo with me. (pre-existing VERIFIED/HIGH, 200sentences corpus)"
+  - "Ang·ming re·babo. = Come with me. (pre-existing VERIFIED/HIGH, 200sentences corpus)"
+  - "Ang·a nangming reangen. = I shall come with you. (pre-existing, unverified, unmarked nangming)"
+counterexamples:
+  note: >-
+    None identified. One orthographic wrinkle: Ang·ming (raka'd, in the
+    two pre-existing VERIFIED/HIGH sentence citations) vs. the new
+    relay's unmarked angming (casual gloss list, no diacritic effort).
+    Not treated as a conflict — the raka'd form is kept as primary per
+    the stronger pre-existing evidence.
+  items: []
+launch_priority:
+  - scope: "with me / with you (this closure, NV-102)"
+    tier: P1
+    note: "closes NV-102's comitative item"
+  - scope: "generalization across the rest of the pronoun paradigm"
+    tier: "deferred"
+    note: "natural next relay question, not yet asked"
+native_notes: >-
+  Direct Thangseng relay via Tridip, 2026-08-30: "With (me / you) =
+  Ming. Suffix: angming = with me; nang'ming = with you." Confirms the
+  suffix analysis directly; two pre-existing 200sentences-corpus
+  VERIFIED/HIGH sentences already used the raka'd Ang·ming form for
+  "with me" independently, before this relay.
+last_updated: "2026-08-30"
+updated_by: "Claude A"
+source_ref: "NV-102"

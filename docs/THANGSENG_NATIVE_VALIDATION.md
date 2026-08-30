@@ -5539,3 +5539,30 @@ This directly resolves a standing citation ambiguity: master_dictionary.json hel
 **Gate:** `node prepare-data.js` (8197 entries, 17 pre-existing pickPrimary verified-ties unchanged, none involve any "forget" key), `node test-dictionary.js` (8197/8197, 9/9 grammatical corrections), `node --test tests/unit/*.test.js` (264/264), `node scripts/resync-stale-overrides.mjs` (0 new candidates), `node repository-intelligence.js` (0 new violations, all checks). Live-verified via `translate()`: forget→Guala, i forgot→Anga gualaha, to forget→Guala, do not forget→Gualnabe, forgot→Gualaha, forget (imperative)→Gualbo, will not forget→Gualjawa, will forget→Gualgen — all match master_dictionary.json exactly.
 
 NV-101 is now fully CLOSED.
+
+## NV-102 — "which way" / "whom" / "whole night" / "last week" / "favourite" / comitative "-ming" — CLOSED 2026-08-30
+
+Project Owner relayed a direct Thangseng data-input batch (via Tridip), unprompted:
+
+| English | Garo | Note |
+|---|---|---|
+| Which way | Bagita | Directional which |
+| Whom | Sako | Object form of "who" |
+| Whole night | Walgimik | Wal = night + gimik = whole/entire |
+| Last week | Mija antio | Mija = last, antio = week (in) |
+| With (me / you) | Ming | Suffix: angming = with me; nang'ming = with you |
+| Favourite | Namnikgipa | The one liked most |
+
+**5 exact matches, promoted to VERIFIED/HIGH:** every one of "which way"=bagita, "whom"=Sako, "whole night"=Walgimik, "last week"=Mija antio, "favourite"=Namnikgipa already existed in `master_dictionary.json` as an exact-text unverified row — this relay is direct confirmation, not new vocabulary. All 5 promoted in place.
+
+**1 corroborated promotion:** "whole / entire"=gimik (was unverified) promoted on two convergent lines — this relay's own gloss ("gimik = whole/entire") plus the pre-existing VERIFIED/HIGH "whole earth"=a'gim·ik (idx 7035), which shares the same root.
+
+**Comitative -ming, new grammar rule (RULE-047):** the relay's suffix note ("angming = with me; nang'ming = with you") is a rule-level statement, not just vocabulary — written up as RULE-047 in `docs/GRAMMAR_RULE_CATALOGUE.md` and `docs/grammar_rules_structured/RULE-047.yaml`. Two new bare-key VERIFIED/HIGH rows added: "with me"=Ang·ming, "with you"=Nang·ming. Orthography note: "with me" is kept as the raka'd `Ang·ming` (matching 2 pre-existing independent VERIFIED/HIGH sentence citations — idx 7085 "Speak Garo with me", idx 7103 "Come with me" — both from the `200sentences` corpus, predating this relay) rather than the new relay's unmarked `angming`, which reads as a casual gloss-list transcription with no diacritic effort. "With you" is transcribed `Nang·ming` per the project's standing apostrophe-as-morpheme-separator convention (raw `nang'ming` → `Nang·ming`).
+
+**Duplicate-representation check:** `phrase_maps.js` already had `'which way': 'Bagita'` — correct, unchanged. No other phrase_maps.js/corrections.json entries exist for any of these 8 keys (5 promotions + gimik + with me/with you). No gap found, nothing to sync.
+
+**Left open, not force-reconciled:** three pre-existing sentence-level entries that use these same components — "which way did you come?" (bagita), "he slept the whole night." (walgimik), "i shall come with you." (nangming, unmarked) — remain unverified. Confirming a component word does not automatically confirm a full-sentence construction under this project's compositional-grammar discipline (SESSION_BOOTSTRAP.md Rule 11 lists specific compositional patterns — possessives, tense suffixes, imperative forms — free sentence assembly isn't among them); left untouched rather than force-promoted. `-ming`'s generalization to other pronouns (with him/her/them/us) is also open, flagged in RULE-047 as a natural next relay question, no data either way.
+
+**Gate:** `node prepare-data.js` (8199 entries, 18 pre-existing pickPrimary verified-ties unchanged), `node test-dictionary.js` (8199/8199, 9/9 grammatical corrections), `node --test tests/unit/*.test.js` (264/264), `node scripts/resync-stale-overrides.mjs` (0 new candidates — the 3 reported are pre-existing/confirmed exceptions, unrelated to this session), `node repository-intelligence.js` (0 new violations). Live-verified via `translate()`: which way→Bagita, whom→Sako, whole night→Walgimik, last week→Mija antio, favourite→Namnikgipa, whole / entire→gimik, with me→Ang·ming, with you→Nang·ming — all match `master_dictionary.json` exactly.
+
+NV-102 is now fully CLOSED.
