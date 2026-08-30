@@ -77608,7 +77608,7 @@
     "pos": null,
     "category": "travel",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (Project Owner direct chat relay, Thangseng answer, session 2) ('go = re'a'). Closes docs/CLAUDE_A_SESSION_MIGRATION_20260828.md 'Exact next actions' #2 for the literal dictionary key. FLAGGED TENSION with docs/grammar_rules_structured/RULE-030.yaml, whose confirmed examples list 'Re·anga=go' — this direct key-level answer conflicts with that gloss. Not resolved by guessing; RULE-030 updated this session with a corrections entry recording the tension for a future relay question (bare re·a vs re·anga — may be a mood/tense register distinction per RULE-030's own conditioning finding, untested for this pair). RUNTIME NOTE (2026-08-28, this session): the engine's canonical stem root for 'go' (src/data/phrase_maps.js, feeding findVerbForm/morphologyEngine.js) was left as 'Re·anga' — changing it to 're·a' broke live derivation for 'going'/'will go'/'did not go' (4 regression-test failures), confirming the engine's re·ang- stem system is correct for conjugated forms. 're·a' ships only as this standalone dictionary citation for the bare 'go' lookup key, not as the derivation root. grammarEngine.js already has a pre-existing scoped exception using 're·a' as the negative-future root specifically (2026-07-25 fix, RULE-030 launch_priority note) — consistent with this citation, unrelated to the reverted phrase_maps.js edit.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (Project Owner direct chat relay, Thangseng answer, session 2) ('go = re'a'). Closes docs/CLAUDE_A_SESSION_MIGRATION_20260828.md 'Exact next actions' #2 for the literal dictionary key. FLAGGED TENSION with docs/grammar_rules_structured/RULE-030.yaml, whose confirmed examples list 'Re·anga=go' — this direct key-level answer conflicts with that gloss. Not resolved by guessing; RULE-030 updated this session with a corrections entry recording the tension for a future relay question (bare re·a vs re·anga — may be a mood/tense register distinction per RULE-030's own conditioning finding, untested for this pair). RUNTIME NOTE (2026-08-28, this session): the engine's canonical stem root for 'go' (src/data/phrase_maps.js, feeding findVerbForm/morphologyEngine.js) was left as 'Re·anga' — changing it to 're·a' broke live derivation for 'going'/'will go'/'did not go' (4 regression-test failures), confirming the engine's re·ang- stem system is correct for conjugated forms. 're·a' ships only as this standalone dictionary citation for the bare 'go' lookup key, not as the derivation root. grammarEngine.js already has a pre-existing scoped exception using 're·a' as the negative-future root specifically (2026-07-25 fix, RULE-030 launch_priority note) — consistent with this citation, unrelated to the reverted phrase_maps.js edit. UPDATE 2026-08-30 (NV-100, direct Thangseng relay): the flagged tension against RULE-030's \"Re·anga=go\" example is clarified, not fully closed — Thangseng's own gloss for re·anga is \"went\" (past), and re·a is \"to walk\" (root), see new rows english=\"went\"/\"to walk\" and RULE-030.yaml. The precise bare-citation-form question (is \"go\" best represented by re·a, re·anga, or neither in isolation) is not directly re-asked by this relay and remains open; recorded here as a paradigm clarification, not a resolution of this specific row's tension flag.",
     "confidence": "verified_high"
   },
   {
@@ -77630,12 +77630,39 @@
     "confidence": "verified_high"
   },
   {
-    "english": "will not go",
+    "english": "will not be going",
     "garo": "re·angjawa",
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-28 (Project Owner direct chat relay, Thangseng answer, session 2) ('will not go = re'angjawa'). FLAGGED TENSION: runtime (src/data/corrections.json) already ships 'will not go' -> 're·jawa' (bare stem + jawa), sourced from RULE-030's 2026-07-26 derivation ('Re·jawa = \"I will not go\" (bare, no destination)') — that corrections.json value has no master_dictionary.json row backing it (pre-existing orphan/propagation gap, not introduced this session). Both forms are native-sourced; NOT silently merged or overridden — may be a bare-stem/full-stem or destination-present/absent register distinction per RULE-030's own conditioning findings, unconfirmed for this specific pair. Runtime intentionally NOT changed for this key this session; needs one more relay question before either form is promoted to override the other.",
+    "notes": "VERIFIED/HIGH — RELABELED 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip): resolves the 2026-08-28 FLAGGED TENSION in RULE-030.yaml. Thangseng's own words: \"Re.angjawa = will not be going\" and explicitly recommended this English gloss \"to avoid confusion, and for better rendering\" (as opposed to the original key \"will not go\", now reassigned to a separate row for re·jawa). Not a new translation — same garo value (re·angjawa) as the original 2026-08-28 citation, only the English key changed per direct native guidance. Paradigm per Thangseng: re·a (\"to walk\", root) -> re·anga (\"went\") for the affirmative; re·jawa (\"will not go\", simple negative future) vs. re·angjawa (\"will not be going\", continuous/progressive negative future) for the negative future pair — these are NOT competing synonyms, they are two distinct English senses, each independently correct. See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to walk",
+    "garo": "Re·a",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip): \"Re.a = to walk.\" Root/infinitive form; re·anga (\"went\") is derived from it per Thangseng's own statement. Distinct dictionary key from the existing 'walk'=Re·a row (idx 111, SUPERSEDED 2026-08-01 corpus-internal audit, retained per citation discipline, not re-promoted this session — that audit's judgment about the bare 'walk' key vs. 're·am·a' is a separate question this new evidence doesn't directly settle, left for that row's own review). See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "went",
+    "garo": "Re·anga",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip): \"re.anga = went\", explicitly derived from re·a (\"to walk\"). Clarifies the existing unverified 'go'=Re·anga row (idx 126): Thangseng's own gloss for this exact form is the past tense \"went\", not bare \"go\" — that older row not renamed this session (used as the engine's re·ang- stem/conjugation root per RULE-030, renaming its dictionary key is a separate decision from adding this new clean citation). See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "will not go",
+    "garo": "re·jawa",
+    "pos": null,
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip): \"Re.jawa = will not go\" (simple negative future, contrasted explicitly against re·angjawa = \"will not be going\", see the relabeled row for that form). Resolves the pre-existing corrections.json orphan flagged 2026-08-28 (that runtime value had no master_dictionary.json row backing it) — this row now provides that backing. Matches RULE-030's 2026-07-26 derivation example. See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.",
     "confidence": "verified_high"
   }
 ]

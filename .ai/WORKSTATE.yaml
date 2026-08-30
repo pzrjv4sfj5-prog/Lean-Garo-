@@ -265,7 +265,37 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-29 (Claude A, session 5, CLEAN CLOSE): worked backlog item 4
+  next_action: '2026-08-30 (Claude A, session 5 continued, NV-100): Project Owner
+    relayed direct unprompted Thangseng evidence resolving the 2026-08-28 RULE-030
+    "go"/"will not go" flagged tension. Paradigm: re·a="to walk" (root), re·anga=
+    "went" (derived past, not bare "go"), re·jawa="will not go" (simple negative
+    future), re·angjawa="will not be going" (continuous negative future,
+    Thangseng''s own recommended gloss) — the two forms were never competing
+    synonyms, they''re distinct English senses. Applied: relabeled the existing
+    "will not go"=re·angjawa row to english="will not be going" (same garo value,
+    key corrected per direct native guidance); added 3 new verified_high rows
+    ("will not go"=re·jawa — backs the pre-existing corrections.json orphan value
+    for the first time, "to walk"=Re·a, "went"=Re·anga); updated RULE-030.yaml
+    corrections with RESOLVED entry; added NV-100 to
+    docs/THANGSENG_NATIVE_VALIDATION.md. NOT touched: engine root (Re·anga stays
+    the re·ang- conjugation stem per the 2026-08-28 regression-test finding),
+    phrase_maps.js, corrections.json. NOT fully closed: the bare-citation-form
+    "go"=re·a row (2026-08-28) — Thangseng''s answer clarifies but doesn''t
+    directly re-settle whether "go" in isolation is re·a or re·anga, left open
+    with a clarifying note only. Also NOT re-promoted: "walk"=Re·a (idx 111,
+    SUPERSEDED 2026-08-01) — consistent with the new "to walk" evidence but its
+    relationship to VERIFIED "re·am·a" is a separate, unaddressed question.
+    Duplicate-representation check DONE: corrections.json already has "will not
+    go"->"re·jawa" and "i will not go"->"Anga re·jawa" (matches exactly, no
+    conflict); phrase_maps.js/garo_dictionary.json/final_entries.json — no hits.
+    RUNTIME HANDOFF FOR CLAUDE B: src/compiled_dict.json is now STALE — still
+    ships "will not go"->"re·angjawa" (pre-relabel value) and has no entries for
+    "will not be going"/"to walk"/"went". Needs a rebuild via the normal compile
+    pipeline; not attempted here (engine/build territory, not Claude A''s). Gate
+    not re-run at the master_dictionary.json level (no compile-affecting values
+    changed there, only new rows + one english-key relabel with unchanged garo
+    value) — the real gate re-run belongs with the rebuild.'
+  next_action_prior_20260829_dupkey_census: '2026-08-29 (Claude A, session 5, CLEAN CLOSE): worked backlog item 4
     (full duplicate-key backlog, ~1,000+ groups per the stale 2026-06-20 audit).
     Regenerated the census against current data (docs/DUPLICATE_AND_RAKA_AUDIT_20260829.md,
     supersedes the duplicate-key portion of DUPLICATE_AND_RAKA_AUDIT_SUMMARY.md — double-raka

@@ -103,6 +103,32 @@ corrections:
       standing re·ang- stem system is correct for conjugation, and
       narrows the open question to just the bare/citation-form "go"
       itself, not the conjugation paradigm.
-last_updated: "2026-07-26"
+  - date: "2026-08-30"
+    note: >-
+      RESOLVED (NV-100, direct Thangseng relay via Project Owner/Tridip,
+      session following the 2026-08-28 flag): Thangseng gave the full
+      paradigm unprompted. "Re.a = to walk; re.anga = went" — re·a is the
+      root/infinitive ("to walk"), re·anga is derived from it and glosses
+      as the past tense "went", not bare "go" as this rule's own example
+      list had it. For the negative-future pair: "Re.jawa = will not go"
+      and "Re.angjawa = will not be going" — Thangseng explicitly
+      recommended translating re·angjawa as "will not be going" rather
+      than "will not go", "to avoid confusion, and for better rendering".
+      These are NOT competing synonyms for one meaning as the 2026-08-28
+      note speculated — they are two distinct English senses (simple vs.
+      continuous/progressive negative future), each independently
+      correct. master_dictionary.json updated: the "will not go"=
+      re·angjawa row relabeled to english="will not be going" (same garo
+      value, key corrected per direct native guidance); new clean rows
+      added for "will not go"=re·jawa (resolves the pre-existing
+      corrections.json orphan), "to walk"=Re·a, and "went"=Re·anga. The
+      bare-citation-form "go" row (re·a, 2026-08-28) is clarified but not
+      fully closed — Thangseng's paradigm doesn't directly re-answer
+      whether "go" in isolation is best represented by re·a or re·anga;
+      left as its own open note on that row. Engine root unchanged
+      (Re·anga stays the re·ang- stem/conjugation root per the
+      2026-08-28 regression-test finding — this relay doesn't touch
+      that). See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.
+last_updated: "2026-08-30"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-030"
