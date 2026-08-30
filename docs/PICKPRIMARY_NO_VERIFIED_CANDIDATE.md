@@ -14,10 +14,12 @@ confirmed failure shape from docs/CLAUDE_C_AUDIT_20260816.md §2
 (`work`/`boil`/`build`/`close`/`empty`/`leg`/`outside`/`strong`) where a
 SUPERSEDED/OCR-flagged row is actively winning over a better untagged
 candidate — this report does not distinguish the two cases, that call
-is Claude A/C's. Structural fix (AI-001, still OPEN): a `confidence`/
-`confidence_source` schema on master_dictionary.json rows, designed
-2026-08-04, not yet implemented — see docs/
-CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
+is Claude A/C's. The `confidence` schema cutover (AI-001 subclass a)
+shipped 2026-08-28 — this report is already generated from schema-
+driven isVerified/isWeak, not notes-regex. `confidence_source`
+(optional citation-traceability field) remains unimplemented but was
+never required to resolve subclass (b) — that is inherently per-key
+content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 
 - `_classifier`: candidates — `ge` (weak/OCR) — shipped: `ge`
 - `_description`: candidates — `Words with multiple meanings depending on context` (weak/OCR) — shipped: `Words with multiple meanings depending on context`

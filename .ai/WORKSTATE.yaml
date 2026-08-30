@@ -1,5 +1,5 @@
 repository:
-  head: 9a9d471
+  head: d57aaf3
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -2037,7 +2037,92 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-30 (Claude B, session close, resumed via
+  next_action: '2026-08-30C (Claude B, session close, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260830B.md == this WORKSTATE state
+    prior to this entry). Project Owner directive: investigate AI-001
+    subclass (b)/confidence_source before changing anything, do not
+    restart the completed cutover, do not make linguistic decisions.
+    Investigation (not a fix -- read master_dictionary.json schema,
+    prepare-data.js, governance doc, both PICKPRIMARY_*.md reports):
+    confidence_source is 0/9,956 rows populated, confirmed genuinely
+    absent from every row. Traced its actual role via docs/
+    PROPOSAL_CONFIDENCE_SCHEMA_20260822.md: it was scoped ONLY as an
+    optional replacement for notes'' citation prose (traceability/
+    documentation), never as an input pickPrimary reads for any
+    decision -- pickPrimary/finalizeDictionary read `confidence` (the
+    enum), not `confidence_source` (the free-text citation), and that
+    `confidence` cutover (subclass a AND subclass b''s enumeration,
+    which shares the same isVerified/isVariantVerified fields) already
+    shipped 2026-08-28, confirmed live this session (prepare-data.js
+    lines 147/163/200 read item.confidence directly, zero notes-regex
+    for those three signals bar the documented/tested 2026-08-30
+    notesDeclareSuperseded exception). CONCLUSION: confidence_source is
+    case 3 (proposed future enhancement, quality-of-life for citation
+    traceability) -- NOT case 1 (not required by any current decision
+    logic) and the "cutover not done" framing in both the governance
+    table and the auto-generated PICKPRIMARY_NO_VERIFIED_CANDIDATE.md
+    boilerplate was simply stale documentation, not an actual
+    engineering gap (case 4 territory for that specific claim, though
+    subclass (b) itself -- per-key human review of 5,745 listed keys,
+    5,742 weak/OCR-flagged -- remains genuinely open as a CONTENT
+    backlog, not an engineering one). No engineering fix implemented,
+    per instruction not to create unnecessary work. Two doc-only
+    corrections made (zero decision-logic change, confirmed by
+    identical gate numbers before/after and untouched compiled_dict.
+    json/compiled_dict_alternates.json): (1) docs/
+    CLAUDE_B_ENGINEERING_GOVERNANCE.md SS4 AI-001 row corrected --
+    subclass (a) marked CLOSED as an engineering mechanism (cutover
+    done 2026-08-28), subclass (b) reframed as content-triage backlog
+    not missing engineering, confidence_source''s actual scope
+    clarified so a future session doesn''t re-derive this. (2)
+    prepare-data.js''s PICKPRIMARY_NO_VERIFIED_CANDIDATE.md report-
+    generation boilerplate corrected to state accurate cutover status
+    instead of "not yet implemented". The one remaining named instance
+    of the 2026-08-16-confirmed failure shape (work/boil/build/close/
+    empty/leg/outside/strong) is now down to 1 (`build` -- the other 7
+    were resolved by content work between sessions); left untouched,
+    per instruction, as Claude A/Owner''s linguistic call (compiled_
+    dict ships `gat·a`, weak/OCR; override wants SUPERSEDED-tagged
+    `Rika` -- resync-stale-overrides.mjs correctly flags and skips it,
+    same as last session).
+
+    Full gate re-run clean, byte-identical numbers to pre-investigation
+    baseline confirming zero behavioral drift: node prepare-data.js
+    (8197 compiled entries, 929 alternates, 190 held-SUPERSEDED, 18
+    verified-ties, 5745 no-verified-candidate -- all unchanged), node
+    test-dictionary.js (8197/8197 entries, 9/9 grammatical corrections),
+    node --test tests/unit/*.test.js (264/264 passing), node
+    repository-intelligence.js (0 new violations across checks A-G,
+    including check G''s 9956-row confidence-schema validity scan --
+    0 problems), node scripts/resync-stale-overrides.mjs (0 RESYNC
+    candidates, same 1 skip on `build`, same 2 confirmed exceptions on
+    `answer`). Runtime spot-check via direct translate() calls (ESM,
+    awaited) across the full set of previously-audited regression
+    cases -- all correct, all matching documented/expected shapes:
+    "will not go"->re·jawa (correction, 1.0), "to walk"->Re·a
+    (exact-phrase, 0.98), "went"->Re·anga, "will not be going"->
+    re·angjawa, "he stayed without eating"->"Ua Cha·gija dongaha"
+    (gija-construction, 0.85, legitimate no-object case unaffected),
+    "he stayed without doing her xyzobjectwordnotreal"->"Ua donga
+    [UNKNOWN] ka·a Uni [UNKNOWN]" (morphology, 0.65, honest fallback,
+    no silent drop), "well-known xyzcitynotreal"->"chiakol [UNKNOWN]
+    [UNKNOWN]" (compound-split, 0.6, OOV surfaced not swallowed), "i
+    bought a gadget yesterday"->"Anga breaha [UNKNOWN] [UNKNOWN] Mejal"
+    (morphology, 0.65, no silent wrong-substitution, AI-002 fix intact),
+    "i am lying in bed"->"Anga palang·o" (grammar-assembly, 0.82), "good
+    morning"->"Pringnam." (phrase-map, 0.99). No translation or grammar-
+    assembly errors found. git status clean, nothing local, this entry
+    committed and pushed to origin/main same session per Project Owner
+    instruction ("nothing may remain local").
+
+    Next session: no blocking engineering item. If/when prioritized,
+    subclass (b)''s content backlog (5,745 keys, dominated by
+    genuinely-not-yet-validated vocabulary, not defects) is Claude
+    A/Owner''s call on triage approach, not Claude B''s to act on
+    unprompted.
+
+    -----
+    2026-08-30 (Claude B, session close, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260829B.md). Engineering-only scope
     per Project Owner directive (no re-litigation of the 20260829B OOV fix
     or any other closed item). 4 findings, all fixed with regression
