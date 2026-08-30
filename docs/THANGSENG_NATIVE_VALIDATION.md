@@ -5430,7 +5430,7 @@ and `movie` remain open exactly as queued in
 `.ai/WORKSTATE.yaml` `claude_a.pending_thangseng_questions` — not
 re-asked, not guessed at.
 
-## NV-100 — "go"/"went"/"will not go" family — RESOLVED 2026-08-30
+## NV-100 — "go"/"went"/"will not go" family — CLOSED 2026-08-30
 
 **Trigger:** the 2026-08-28 FLAGGED TENSION (RULE-030 corrections entry,
 `master_dictionary.json` rows for "go"=re·a and "will not go"=re·angjawa)
@@ -5476,3 +5476,38 @@ pairs were never synonyms. Full paradigm:
 **Runtime impact, restated:** master_dictionary.json is the source of truth and is now correct; `compiled_dict.json` needs a rebuild to catch up. Nothing was ever silently wrong at the source-of-truth level — only the compiled cache is behind.
 
 **Gate:** not re-run this session — no compile-affecting rows touched at the master_dictionary.json level; the actual gate re-run belongs with the rebuild.
+
+### NV-100 follow-up — remaining sub-questions closed, 2026-08-30 (same day)
+
+Project Owner directed closure of the two items left open above, using the
+same Thangseng evidence already on record (no new relay needed — the
+existing statement was sufficient):
+
+1. **Bare "go"=re·a citation gloss** — closed. Thangseng's gloss for re·a
+   is "to walk"; that's now the precise dictionary entry. The "go"=re·a
+   row itself (Thangseng's own direct 2026-08-28 answer to the key "go")
+   stays VERIFIED/HIGH and uncontradicted — "to walk"/"go" gloss overlap
+   for a general motion-verb root is ordinary, not an error, and not
+   re-litigated further.
+2. **"walk"=Re·a re-promoted from SUPERSEDED** — now VERIFIED/HIGH, tagged
+   as a co-existing variant of the already-VERIFIED "re·am·a" (same key).
+   Deliberately NOT made the new shipped primary: this evidence confirms
+   re·a is a genuine word for "walk" but says nothing about its exact
+   relationship to re·am·a (free variants? root vs. durative form?) —
+   that specific question is unconfirmed, so runtime output for "walk"
+   is left undisturbed. Promoting re·a to primary instead would be a
+   separate, explicit decision.
+
+**Duplicate-representation / runtime verification, master → compiled:**
+ran `node prepare-data.js`. Confirmed in `src/compiled_dict.json`:
+`"will not go"→"re·jawa"`, `"will not be going"→"re·angjawa"`,
+`"to walk"→"Re·a"`, `"went"→"Re·anga"`, `"go"→"re·a"`, `"walk"→"re·am·a"`
+(unchanged, as intended — the promoted re·a row is variant-tagged, so no
+new pickPrimary tie was introduced). The 17 pre-existing pickPrimary
+verified-ties reported by the build (hope, leg, last, early, outside,
+answer, fever, hoe, lie, empty, where, horn, agree, brave, greedy,
+demand, where (relative pronoun)) are unchanged from before this session
+and do not include any of NV-100's keys.
+
+**NV-100 is now fully CLOSED.** No sub-questions from this relay remain
+open.

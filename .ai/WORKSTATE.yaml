@@ -296,36 +296,40 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-30 (Claude A, session 5 continued, NV-100): Project Owner
-    relayed direct unprompted Thangseng evidence resolving the 2026-08-28 RULE-030
-    "go"/"will not go" flagged tension. Paradigm: re·a="to walk" (root), re·anga=
-    "went" (derived past, not bare "go"), re·jawa="will not go" (simple negative
-    future), re·angjawa="will not be going" (continuous negative future,
-    Thangseng''s own recommended gloss) — the two forms were never competing
-    synonyms, they''re distinct English senses. Applied: relabeled the existing
-    "will not go"=re·angjawa row to english="will not be going" (same garo value,
-    key corrected per direct native guidance); added 3 new verified_high rows
-    ("will not go"=re·jawa — backs the pre-existing corrections.json orphan value
-    for the first time, "to walk"=Re·a, "went"=Re·anga); updated RULE-030.yaml
-    corrections with RESOLVED entry; added NV-100 to
-    docs/THANGSENG_NATIVE_VALIDATION.md. NOT touched: engine root (Re·anga stays
-    the re·ang- conjugation stem per the 2026-08-28 regression-test finding),
-    phrase_maps.js, corrections.json. NOT fully closed: the bare-citation-form
-    "go"=re·a row (2026-08-28) — Thangseng''s answer clarifies but doesn''t
-    directly re-settle whether "go" in isolation is re·a or re·anga, left open
-    with a clarifying note only. Also NOT re-promoted: "walk"=Re·a (idx 111,
-    SUPERSEDED 2026-08-01) — consistent with the new "to walk" evidence but its
-    relationship to VERIFIED "re·am·a" is a separate, unaddressed question.
-    Duplicate-representation check DONE: corrections.json already has "will not
-    go"->"re·jawa" and "i will not go"->"Anga re·jawa" (matches exactly, no
-    conflict); phrase_maps.js/garo_dictionary.json/final_entries.json — no hits.
-    RUNTIME HANDOFF FOR CLAUDE B: src/compiled_dict.json is now STALE — still
-    ships "will not go"->"re·angjawa" (pre-relabel value) and has no entries for
-    "will not be going"/"to walk"/"went". Needs a rebuild via the normal compile
-    pipeline; not attempted here (engine/build territory, not Claude A''s). Gate
-    not re-run at the master_dictionary.json level (no compile-affecting values
-    changed there, only new rows + one english-key relabel with unchanged garo
-    value) — the real gate re-run belongs with the rebuild.'
+  next_action: '2026-08-30 (Claude A, session 5, CLEAN CLOSE): NV-100 fully CLOSED
+    ("go"/"went"/"will not go"/"will not be going"/"to walk"/"walk" family).
+    Paradigm per direct unprompted Thangseng relay (Project Owner/Tridip): re·a=
+    "to walk" (root), re·anga="went" (derived past), re·jawa="will not go" (simple
+    negative future), re·angjawa="will not be going" (continuous negative future,
+    Thangseng''s own recommended gloss) — never competing synonyms, distinct
+    English senses. Applied to master_dictionary.json: relabeled "will not
+    go"=re·angjawa row to english="will not be going" (same garo value); added
+    verified_high rows "will not go"=re·jawa (backs the pre-existing
+    corrections.json orphan for the first time), "to walk"=Re·a, "went"=Re·anga;
+    CLOSED the "go"=re·a bare-citation tension (Thangseng''s precise gloss for
+    re·a is "to walk", captured in its own row; "go"=re·a itself stays
+    VERIFIED/HIGH, uncontradicted); RE-PROMOTED "walk"=Re·a (idx 111) from
+    SUPERSEDED to VERIFIED/HIGH, tagged as a co-existing variant of "re·am·a"
+    (deliberately not made the new primary — relationship between the two forms
+    unconfirmed, runtime output for "walk" left undisturbed). RULE-030.yaml: two
+    corrections entries (initial + same-day follow-up closure). NV-100 entry in
+    THANGSENG_NATIVE_VALIDATION.md has two parts (initial + follow-up), title
+    now "CLOSED". RUNTIME VERIFIED master->compiled->runtime this session: ran
+    `node prepare-data.js` (rebuild, 8192 entries, the 17 pre-existing
+    pickPrimary verified-ties unchanged and none involve NV-100 keys — confirms
+    the "walk" variant-tag choice introduced no new tie), `node
+    test-dictionary.js` (8192/8192 valid, 9/9 grammatical corrections), `node
+    repository-intelligence.js` (0 new violations, all checks), `node --test
+    tests/unit/*.test.js` (254/254 pass), and a live translate() spot-check for
+    all 6 keys via `node -e "import(''./src/translationEngine.js'')..."` —
+    every value matches compiled_dict.json exactly ("walk"->re·am·a and
+    "go"->Re·anga both correctly unchanged, engine root untouched). No
+    outstanding Claude B handoff — compiled_dict.json staleness from the prior
+    note is resolved (rebuilt and verified in this session). See
+    docs/CLAUDE_A_SESSION_MIGRATION_20260830.md for full session record,
+    including Thread 1 (duplicate-key census) and Thread 2 (SUPERSEDED
+    retention-policy classification) also completed this session, plus the
+    genuinely-remaining open items and resume protocol for next session.'
   next_action_prior_20260829_dupkey_census: '2026-08-29 (Claude A, session 5, CLEAN CLOSE): worked backlog item 4
     (full duplicate-key backlog, ~1,000+ groups per the stale 2026-06-20 audit).
     Regenerated the census against current data (docs/DUPLICATE_AND_RAKA_AUDIT_20260829.md,
