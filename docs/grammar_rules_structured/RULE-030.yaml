@@ -129,6 +129,33 @@ corrections:
       (Re·anga stays the re·ang- stem/conjugation root per the
       2026-08-28 regression-test finding — this relay doesn't touch
       that). See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.
+  - date: "2026-08-30b"
+    note: >-
+      FULLY CLOSED (NV-100 continued, direct Thangseng relay via Project
+      Owner/Tridip, same-day follow-up). The two items left open in the
+      first 2026-08-30 entry are resolved: (1) the bare "go"=re·a
+      citation-form question is closed — Thangseng's own gloss for re·a
+      is "to walk", so that is now the precise dictionary gloss (see
+      "to walk"=Re·a); "go"=re·a itself stays VERIFIED/HIGH and
+      uncontradicted, since it was Thangseng's own direct 2026-08-28
+      answer to the literal key "go" — "to walk"/"go" gloss overlap for
+      a general motion verb is treated as ordinary, not an error. (2)
+      "walk"=Re·a (SUPERSEDED since a 2026-08-01 corpus-internal audit)
+      is re-promoted to VERIFIED/HIGH on this direct native evidence,
+      tagged as a co-existing variant of the already-VERIFIED "re·am·a"
+      rather than silently made the new primary — their exact
+      relationship (free variants vs. root-vs-durative) is still
+      unconfirmed, so the shipped runtime value for "walk" is
+      deliberately left undisturbed (still re·am·a) pending an explicit
+      decision if the Owner wants re·a promoted to primary instead.
+      Verified master_dictionary.json -> compiled_dict.json via
+      `node prepare-data.js`: "will not go"->re·jawa, "will not be
+      going"->re·angjawa, "to walk"->Re·a, "went"->Re·anga, "go"->re·a
+      all compile correctly; "walk" still compiles to re·am·a as
+      intended (no new pickPrimary tie introduced, since the promoted
+      re·a row is variant-tagged). NV-100 is now CLOSED in full — no
+      remaining open sub-questions from this relay. See
+      docs/THANGSENG_NATIVE_VALIDATION.md NV-100.
 last_updated: "2026-08-30"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-030"

@@ -3999,5 +3999,8 @@
   "how much is this": "general",
   "hurry up": "general",
   "will go": "verbs",
+  "will not be going": "verbs",
+  "to walk": "verbs",
+  "went": "verbs",
   "will not go": "verbs"
 }
