@@ -1,5 +1,5 @@
 repository:
-  head: 2a44b2d
+  head: df87891
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -18,11 +18,19 @@ repository:
     silently dropped a named-but-unresolved possessive object at
     confidence 0.85 -- now bails to cascade fallthrough, surfacing
     [UNKNOWN] honestly at 0.65. resync-stale-overrides.mjs: 0 candidates
-    before and after. 8189/8189 dictionary (unchanged), 9/9 grammatical
-    corrections (unchanged), 264/264 unit tests (was 254, +10 new), 0 new
-    repository-intelligence.js violations, vite build clean. Full account
-    in claude_b.next_action above and
-    docs/CLAUDE_B_SESSION_MIGRATION_20260830.md.'
+    before and after. 8189/8189 dictionary at fix-time (unchanged by this
+    session''s own edits), 9/9 grammatical corrections (unchanged), 264/264
+    unit tests (was 254, +10 new), 0 new repository-intelligence.js
+    violations, vite build clean. Session close required a merge of
+    origin/main (Claude A landed NV-100 + a SUPERSEDED retention-policy
+    classification doc mid-session, df87891''s parent onto 5264e04/ffdb87f)
+    -- merged cleanly (git auto-merge, no conflicts), then
+    compiled_dict.json/category_index.json were rebuilt against the
+    post-merge master_dictionary.json (8192 entries post-merge, +3 from
+    NV-100) and the full gate + resync audit were re-run clean against the
+    merged state before pushing; this session made zero master_
+    dictionary.json edits of its own. Full account in claude_b.next_action
+    above and docs/CLAUDE_B_SESSION_MIGRATION_20260830.md.'
   last_updated_20260829B: '2026-08-29B (Claude B, session close): fixed the
     OOV/proper-noun sov-assembly silent-drop this session flagged as its
     own next priority item, plus 2 latent regressions it surfaced (pronoun-
