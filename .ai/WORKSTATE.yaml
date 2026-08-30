@@ -1,5 +1,5 @@
 repository:
-  head: 1034dfc
+  head: 9a9d471
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
