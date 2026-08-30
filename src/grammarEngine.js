@@ -650,8 +650,28 @@ export function tryWithoutGijaConstruction(input) {
   }
   if (!mainVerbGaro) return null;
 
-  const objGaro = clauseObjectWord && lookupGaro(clauseObjectWord)
-    ? lookupGaro(clauseObjectWord) + 'ko' : null;
+  // SILENT-DROP FIX (2026-08-30, Claude B, this session's runtime-data-
+  // loss audit, docs/CLAUDE_B_SESSION_MIGRATION_20260830.md): a fourth
+  // copy of the same bug class fixed in assembleSentenceSOV and
+  // translationEngine.js steps 7/8 — when `clauseObjectWord` was present
+  // (the sentence genuinely named a possessed object, e.g. "without
+  // doing her X") but its lookup failed, the old code collapsed that
+  // straight to `null` and `.filter(Boolean)` silently erased it from
+  // `parts`, still returning a fully-confident (0.85, the highest
+  // fallback-cascade confidence below exact-match) gija-construction
+  // result with the object simply gone. Live repro confirmed pre-fix:
+  // "he stayed without doing her xyzobjectwordnotreal" -> "Ua ka·gija
+  // dongaha" (method gija-construction, confidence 0.85) — no [UNKNOWN],
+  // no trace the object was ever there. Fix: distinguish "no object in
+  // this construction at all" (clauseObjectWord null — legitimately
+  // omit, e.g. "without eating") from "an object was named but didn't
+  // resolve" (bail this whole construction — return null — so the
+  // cascade falls through to a step that surfaces [UNKNOWN] honestly,
+  // same "don't confidently ship a partial result under a method name
+  // that implies completeness" precedent as assembleSentenceSOV's own
+  // fix).
+  if (clauseObjectWord && !lookupGaro(clauseObjectWord)) return null;
+  const objGaro = clauseObjectWord ? lookupGaro(clauseObjectWord) + 'ko' : null;
 
   const parts = [subjectGaro, objGaro, gijaForm, mainVerbGaro].filter(Boolean);
   return parts.length >= 2 ? parts.join(' ') : null;

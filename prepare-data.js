@@ -177,7 +177,27 @@ function normalizeFile(filePath) {
         // logic needed in pickPrimary itself.
         // CUTOVER (2026-08-28, see isVerified comment above for full
         // rationale): superseded status now reads confidence directly.
-        const isSuperseded = item.confidence === 'superseded';
+        // WIDENED (2026-08-30, Claude B, per docs/CLAUDE_B_SESSION_
+        // MIGRATION_20260829B.md follow-up / this session's SUPERSEDED-
+        // eligibility audit): the 2026-08-28 cutover above stopped
+        // consulting `notes` for the SUPERSEDED signal, but the
+        // confidence-schema migration that introduced the `confidence`
+        // field never went back and re-tagged rows whose `notes` already
+        // said "SUPERSEDED" at the time of migration — 3 confirmed rows
+        // (english: bye, bland x2) still carry confidence: 'unverified'
+        // despite notes literally starting "SUPERSEDED ...". Those rows
+        // is a metadata-sync gap, not a new linguistic call: the SUPERSEDED
+        // determination was already made (it's right there in the note),
+        // this only makes the compile step actually honor it, closing the
+        // exact class of bug this session found leaking into
+        // compiled_dict_alternates.json for both keys (see
+        // docs/CLAUDE_B_SESSION_MIGRATION_20260829B.md, item 1). Reads
+        // notes only to detect an ALREADY-STATED SUPERSEDED tag — never
+        // assigns or infers a new confidence/superseded judgment, per
+        // CLAUDE_B_ENGINEERING_GOVERNANCE.md §6 ("Claude B may read and
+        // consume confidence/notes, never assign linguistic confidence").
+        const notesDeclareSuperseded = /^superseded\b/i.test(notes.trim());
+        const isSuperseded = item.confidence === 'superseded' || notesDeclareSuperseded;
         if (isSuperseded) {
           if (eng) addSuperseded(eng, garo);
           return;
@@ -520,7 +540,22 @@ function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}
     finalized[key] = primary;
     if (verifiedSelection) verifiedKeys.add(key);
     if (cleanedEntries.length > 1) {
-      alternates[key] = mergedValues[key].map(e => e.v);
+      // FIX (2026-08-30, Claude B, this session's SUPERSEDED-eligibility
+      // audit): was `mergedValues[key].map(e => e.v)` — the RAW,
+      // pre-filter candidate list, not `cleanedEntries` (the list that
+      // already had SUPERSEDED-tainted duplicates filtered out just
+      // above). Whenever a key had >=2 surviving cleaned candidates,
+      // this shipped every raw candidate to compiled_dict_alternates.json
+      // — including ones the filter had just correctly excluded from
+      // `finalized`. No live leak found in current data (checked via
+      // scratch instrumentation: 0 keys currently affected), but the
+      // shape was there by luck, not by construction, and
+      // getAlternates() is public API — a SUPERSEDED value could surface
+      // to a caller as a legitimate alternate translation the moment a
+      // future data change hit this path. Using `cleanedEntries` makes
+      // "alternates can never contain a filtered-out SUPERSEDED
+      // candidate" a structural guarantee instead of a data coincidence.
+      alternates[key] = cleanedEntries.map(e => e.v);
     }
     // AI-001 subclass (b) enumeration (see pickPrimaryNoVerifiedCandidate
     // above): record any key whose ENTIRE candidate set — not just the
@@ -889,4 +924,4 @@ if (isRunDirectly) {
   main();
 }
 
-export { pickPrimary, finalizeDictionary, pickPrimaryNoVerifiedCandidate };
+export { pickPrimary, finalizeDictionary, pickPrimaryNoVerifiedCandidate, normalizeFile };

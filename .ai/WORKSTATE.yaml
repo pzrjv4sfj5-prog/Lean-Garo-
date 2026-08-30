@@ -1,5 +1,28 @@
 repository:
-  head: 5c08102
+  head: 2a44b2d
+  last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
+    only session per Project Owner directive. 4 real bugs found and fixed,
+    all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
+    master_dictionary.json rows (bye, bland x2) had notes declaring
+    SUPERSEDED but a stale confidence field left over from the 2026-08-28
+    migration cutover, letting them evade filtering and leak into
+    compiled_dict_alternates.json; prepare-data.js now falls back to
+    notes-detection when confidence disagrees. (2) alternates construction
+    used the raw pre-filter candidate list instead of the SUPERSEDED-
+    filtered one -- 0 live leaks found but fixed as a structural
+    guarantee. (3) translationEngine.js step 8 (compound-split) silently
+    dropped any OOV word/sub-word via .filter(Boolean) while still
+    returning a confident (0.60) result -- live repro:
+    translate("well-known xyzcitynotreal") was "chiakol", now "chiakol
+    [UNKNOWN] [UNKNOWN]". (4) grammarEngine.js tryWithoutGijaConstruction
+    silently dropped a named-but-unresolved possessive object at
+    confidence 0.85 -- now bails to cascade fallthrough, surfacing
+    [UNKNOWN] honestly at 0.65. resync-stale-overrides.mjs: 0 candidates
+    before and after. 8189/8189 dictionary (unchanged), 9/9 grammatical
+    corrections (unchanged), 264/264 unit tests (was 254, +10 new), 0 new
+    repository-intelligence.js violations, vite build clean. Full account
+    in claude_b.next_action above and
+    docs/CLAUDE_B_SESSION_MIGRATION_20260830.md.'
   last_updated_20260829B: '2026-08-29B (Claude B, session close): fixed the
     OOV/proper-noun sov-assembly silent-drop this session flagged as its
     own next priority item, plus 2 latent regressions it surfaced (pronoun-
@@ -1940,7 +1963,56 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-29B (Claude B, session close, resumed via
+  next_action: '2026-08-30 (Claude B, session close, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260829B.md). Engineering-only scope
+    per Project Owner directive (no re-litigation of the 20260829B OOV fix
+    or any other closed item). 4 findings, all fixed with regression
+    tests, full detail in docs/CLAUDE_B_SESSION_MIGRATION_20260830.md:
+    (1) SUPERSEDED-eligibility gap: 3 master_dictionary.json rows (bye,
+    bland x2) had notes literally starting "SUPERSEDED" but confidence
+    left at unverified by the 2026-08-28 schema-cutover migration --
+    prepare-data.js normalizeFile now falls back to /^superseded\b/i
+    notes-detection whenever confidence disagrees (reads an
+    already-stated note, does not assign new confidence -- permitted
+    under governance SS6). Rebuilt compiled_dict_alternates.json: bye alt
+    now [De, Bai, Ra] (was leaking the superseded "De / Ra / Bai" bundle),
+    bland alt now absent (was leaking both superseded forms). master_
+    dictionary.json itself NOT edited -- flagged for Claude A as new
+    item 3 below (a 3-row confidence-field truth-value fix, not
+    engineering-scope per SS6). (2) finalizeDictionary''s alternates
+    construction used mergedValues (raw, pre-filter) instead of
+    cleanedEntries (post-SUPERSEDED-filter) -- 0 live leaks found via
+    debug instrumentation before fixing, but fixed as a structural
+    guarantee rather than a data coincidence. (3) translationEngine.js
+    step 8 (compound-split): `.map(lookupGaro).filter(Boolean)` silently
+    dropped any unresolved word/sub-word, still returning a confident
+    0.60 result -- live repro translate("well-known xyzcitynotreal") was
+    "chiakol", now "chiakol [UNKNOWN] [UNKNOWN]"; fixed with the same
+    [UNKNOWN]-marker shape as step 7, firing condition unchanged.
+    (4) grammarEngine.js tryWithoutGijaConstruction ("without VERB-ing"
+    idiom): a named-but-unresolved possessive object silently vanished
+    via the same filter(Boolean) shape, shipping a confident 0.85 result
+    -- live repro translate("he stayed without doing her
+    xyzobjectwordnotreal") was "Ua ka·gija dongaha", now correctly bails
+    (returns null) so the cascade falls through to morphology, which
+    surfaces [UNKNOWN] honestly at 0.65. Legitimate no-object omissions
+    (e.g. "without eating") confirmed completely unaffected.
+    scripts/resync-stale-overrides.mjs re-run before AND after fix (1):
+    0 candidates both times -- phrase_maps.js already independently held
+    correct bye/bland values, the leak was confined to the alternates
+    artifact and never reached the override layer. Swept remaining
+    conditional-lookup/.filter(Boolean) shapes across garo_classifier.js,
+    lookupEngine.js, morphologyEngine.js, normalizationEngine.js,
+    sentenceBuilder.js -- no further silent-drop instances found.
+    8189/8189 dictionary (unchanged, no linguistic data touched), 9/9
+    grammatical corrections (unchanged), 264/264 unit tests (was 254,
+    +10 new: 4 in prepare-data.test.js for findings 1-2, 2 for the
+    compound-split fix, 3 for the gija-construction fix, 1 unchanged-
+    behavior control each), 0 new repository-intelligence.js violations,
+    vite build clean (58 modules). node_modules was absent at session
+    start (npm install run to restore it; remains gitignored, not
+    committed).'
+  prior_next_action_20260829B: '2026-08-29B (Claude B, session close, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260829.md). Fixed this session''s
     flagged priority item: assembleSentenceSOV''s silent content-word drop
     for OOV/unresolved words (src/sentenceBuilder.js). Fix: `pairs` now

@@ -335,8 +335,27 @@ export async function translate(input) {
   }
 
   // 8. Compound split
-  const compound = words.flatMap(w => w.split('-')).map(w => lookupGaro(w)).filter(Boolean);
-  if (compound.length) return { garo: compound.join(' '), method: 'compound-split', confidence: 0.60 };
+  // SILENT-DROP FIX (2026-08-30, Claude B, this session's runtime-data-loss
+  // audit, docs/CLAUDE_B_SESSION_MIGRATION_20260830.md): a third,
+  // previously-unfixed copy of the exact bug class fixed in
+  // assembleSentenceSOV (sentenceBuilder.js, prior session) and step 7
+  // above (this session's predecessor) — `.map(lookupGaro).filter(Boolean)`
+  // silently deleted any word/sub-word whose lookup failed, then still
+  // returned a confident (0.60) result built only from whatever survived.
+  // Live repro confirmed pre-fix: translate("well-known xyzcitynotreal")
+  // -> "chiakol" (method compound-split, confidence 0.60) — the OOV word
+  // vanished with zero trace. Same fix shape as step 7: mark failed
+  // lookups '[UNKNOWN]' instead of dropping them, and surface the markers
+  // in the joined output whenever any occurred. Firing condition
+  // unchanged (still requires >=1 real resolved word, matching the
+  // original `compound.length` truthy check) — this only changes what the
+  // *output string* honestly shows, not when this step fires at all.
+  const compoundWords = words.flatMap(w => w.split('-')).map(w => lookupGaro(w) || '[UNKNOWN]');
+  const compound = compoundWords.filter(w => w !== '[UNKNOWN]');
+  if (compound.length) {
+    const garo = compoundWords.includes('[UNKNOWN]') ? compoundWords.join(' ') : compound.join(' ');
+    return { garo, method: 'compound-split', confidence: 0.60 };
+  }
 
   // 9. Fuzzy — skip if input contains raka (·): that means user typed Garo, not English.
   // ro·a typed as English was fuzzy-matching to "road" → so·rok (wrong). Fixed.

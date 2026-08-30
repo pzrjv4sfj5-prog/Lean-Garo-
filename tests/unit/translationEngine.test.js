@@ -1735,3 +1735,63 @@ test('negation-word content-filter guard: "a big dog will not eat rice" still as
   assert.equal(r.garo, 'dal·a Achak Mi Cha·jawa');
   assert.equal(r.method, 'sov-assembly');
 });
+
+// 2026-08-30, Claude B — runtime silent-data-loss audit (docs/CLAUDE_B_
+// SESSION_MIGRATION_20260830.md). Step 8 (compound-split) was a third,
+// previously-unfixed copy of the exact silent-drop bug class already fixed
+// in assembleSentenceSOV (sentenceBuilder.js) and step 7/morphology
+// (translationEngine.js, prior session): `.map(lookupGaro).filter(Boolean)`
+// deleted any word/sub-word whose lookup failed with zero trace, then
+// still returned a confident (0.60) result built only from survivors. Live
+// pre-fix repro: translate("well-known xyzcitynotreal") -> "chiakol"
+// (compound-split, confidence 0.60) — the OOV word vanished entirely, no
+// [UNKNOWN], no confidence penalty.
+test('compound-split silent-drop fix: an OOV word alongside a resolvable one surfaces [UNKNOWN] instead of silently vanishing', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('well-known xyzcitynotreal');
+  assert.ok(r.garo.includes('[UNKNOWN]'), `expected the unresolved word to surface as [UNKNOWN], got: ${JSON.stringify(r)}`);
+  assert.equal(r.method, 'compound-split');
+});
+
+test('compound-split silent-drop fix: firing condition is unchanged — still requires at least one resolved word before returning this method at all', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  // Two genuinely unresolvable tokens: compound-split must not fire (0
+  // survivors), leaving the cascade to fall through further (e.g. to
+  // passthrough), exactly as before this fix — only the *content* of a
+  // firing result changed (markers instead of silent deletion), not
+  // when it fires.
+  const r = await translate('xyznotarealword1-xyznotarealword2');
+  assert.notEqual(r.method, 'compound-split',
+    'compound-split must not fire when zero sub-words resolve, matching pre-fix behavior');
+});
+
+// 2026-08-30, Claude B — runtime silent-data-loss audit (docs/CLAUDE_B_
+// SESSION_MIGRATION_20260830.md), fourth instance of the silent-drop bug
+// class: grammarEngine.js's tryWithoutGijaConstruction ("without VERB-ing"
+// idiom) silently erased a named-but-unresolved possessive object
+// ("without doing her X" where X is OOV) via `.filter(Boolean)`, still
+// returning a fully-confident (0.85) gija-construction result with the
+// object simply gone — no [UNKNOWN], no confidence penalty. Live pre-fix
+// repro: translate("he stayed without doing her xyzobjectwordnotreal") ->
+// "Ua ka·gija dongaha" (gija-construction, 0.85), object vanished.
+test('gija-construction silent-drop fix: an OOV possessive object makes the construction bail (return null) so the cascade falls through to a step that surfaces [UNKNOWN]', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he stayed without doing her xyzobjectwordnotreal');
+  assert.notEqual(r.method, 'gija-construction',
+    'must not confidently ship gija-construction with a silently-dropped object');
+  assert.ok(r.garo.includes('[UNKNOWN]'), `expected the unresolved object to surface as [UNKNOWN] via cascade fallthrough, got: ${JSON.stringify(r)}`);
+});
+
+test('gija-construction silent-drop fix: a fully-resolved object is completely unaffected', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he stayed without doing her work');
+  assert.equal(r.method, 'gija-construction');
+  assert.equal(r.garo, 'Ua Dak·ako ka·gija dongaha');
+});
+
+test('gija-construction silent-drop fix: a construction with no object at all (legitimate grammatical omission, e.g. "without eating") is completely unaffected', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he stayed without eating');
+  assert.equal(r.method, 'gija-construction');
+  assert.ok(!r.garo.includes('[UNKNOWN]'), 'a construction with no object named at all must not spuriously show [UNKNOWN]');
+});
