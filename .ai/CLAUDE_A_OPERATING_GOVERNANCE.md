@@ -333,7 +333,10 @@ failure this section closes.
 5. For class B items: check existing grammar before proposing any native
    relay. Derive directly if the rule and its scope are confirmed (§2, §6).
 6. For class A items only: seek native evidence, citing the precise open
-   question (per the existing relay-batch discipline).
+   question (per the existing relay-batch discipline). Any word or
+   sentence sent to Thangseng must state its intended grammatical
+   category/meaning whenever ambiguity is possible — never send a bare
+   ambiguous word alone (SESSION_BOOTSTRAP.md Rule 14).
 7. For class C items: generalize — write or update the rule (§5).
 8. For class D items: resolve via the duplicate-representation check (§7),
    not via relay.

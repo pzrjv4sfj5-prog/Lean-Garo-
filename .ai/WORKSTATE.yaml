@@ -296,7 +296,22 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-30B (Claude A, session 6, CLEAN CLOSE): NV-101 fully
+  next_action: '2026-08-30C (Claude A, session 7, CLEAN CLOSE, governance only):
+    established Rule 14 in `.ai/SESSION_BOOTSTRAP.md` (Project Owner
+    directive) — every future Thangseng native-validation query must
+    state the intended grammatical category/meaning whenever ambiguity
+    is possible, and must never send a bare ambiguous word alone (e.g.
+    answer-noun vs answer-verb, help-noun vs help-verb; for sentences,
+    state intended meaning/context if it could be read more than one
+    way; if POS itself is uncertain, say so explicitly and ask
+    Thangseng to classify). Cross-referenced into
+    `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` section 11 step 6 (relay
+    drafting step). Checked the 2 pending unsent relay questions in
+    claude_a.pending_thangseng_questions/_20260829_addendum against
+    the new rule — both already state POS/meaning unambiguously, no
+    edits needed. No dictionary/engine/compiled data touched. Runtime
+    Handoff: None.'
+  next_action_prior_20260830C: '2026-08-30B (Claude A, session 6, CLEAN CLOSE): NV-101 fully
     CLOSED — "forget" 6-form paradigm (to forget=guala, do not forget=gualnabe,
     forgot=gualaha, forget(imp.)=gualbo, will not forget=gualjawa, will
     forget=gualgen), Thangseng direct relay via Tridip. Superseded 2 stale/
