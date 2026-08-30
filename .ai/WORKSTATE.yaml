@@ -296,7 +296,23 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-30 (Claude A, session 5, CLEAN CLOSE): NV-100 fully CLOSED
+  next_action: '2026-08-30B (Claude A, session 6, CLEAN CLOSE): NV-101 fully
+    CLOSED — "forget" 6-form paradigm (to forget=guala, do not forget=gualnabe,
+    forgot=gualaha, forget(imp.)=gualbo, will not forget=gualjawa, will
+    forget=gualgen), Thangseng direct relay via Tridip. Superseded 2 stale/
+    uncorroborated citations (raka''d "Forget"=gu·al·a; "to forget"=Ka·guala),
+    promoted 1 ocr_flagged row, added 6 new VERIFIED/HIGH rows, upgraded
+    "i forgot" to confirmed past-tense "Anga gualaha" (was unverified bare-root
+    "Anga guala"). Synced phrase_maps.js/garo_dictionary.json/final_entries.json
+    (corrections.json had no forget keys). 8197 entries, 9/9 grammatical
+    corrections, 264/264 unit tests, 0 new repository-intelligence violations,
+    0 new resync candidates. Live-verified all 8 touched keys via translate().
+    Left open, not force-reconciled: phrase_maps.js "don''t forget your
+    language"=...gualboja uses a distinct -boja suffix vs this paradigm''s
+    -nabe — flagged as a possible future relay question. No engine code
+    touched, no Claude B handoff. Full detail:
+    docs/CLAUDE_A_SESSION_MIGRATION_20260830B.md.
+  next_action_prior_20260830: '2026-08-30 (Claude A, session 5, CLEAN CLOSE): NV-100 fully CLOSED
     ("go"/"went"/"will not go"/"will not be going"/"to walk"/"walk" family).
     Paradigm per direct unprompted Thangseng relay (Project Owner/Tridip): re·a=
     "to walk" (root), re·anga="went" (derived past), re·jawa="will not go" (simple
