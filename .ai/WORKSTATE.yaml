@@ -1,5 +1,5 @@
 repository:
-  head: df87891
+  head: 1034dfc
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -2069,7 +2069,97 @@ claude_b:
     behavior control each), 0 new repository-intelligence.js violations,
     vite build clean (58 modules). node_modules was absent at session
     start (npm install run to restore it; remains gitignored, not
-    committed).'
+    committed).
+
+    NV-100 MERGE/PROPAGATION (Claude A concurrent work, integrated not
+    authored this session): two rounds of Claude A commits landed on
+    origin/main mid-session (5264e04+ffdb87f, then 457b242 -- NV-100
+    go/went/will-not-go/will-not-be-going/to-walk/walk paradigm fully
+    closed via direct Thangseng relay, see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260830.md). Merge 1: auto-merged
+    clean (only WORKSTATE.yaml needed git auto-merge), rebuilt
+    compiled_dict.json/category_index.json against merged master (8189
+    -> 8192 entries), full gate re-run clean. Merge 2: src/compiled_
+    dict.json genuinely conflicted (both sides independently rebuilt the
+    same generated artifact from different points in master_dictionary.
+    json history -- ordinary build-output conflict shape, not a real
+    data disagreement); resolved by discarding both conflicting versions
+    and running node prepare-data.js fresh against the fully-merged
+    master -- result was byte-identical to Claude A''s own committed
+    rebuild in 457b242, confirming pipeline determinism. master_
+    dictionary.json, WORKSTATE.yaml, all docs/ merged with zero
+    conflicts. This session made ZERO edits of its own to master_
+    dictionary.json -- every change to it came from the merged Claude A
+    commits. Final gate re-run clean post-merge before push: 264/264
+    tests, 8192/8192 dictionary, 0 new violations, 0 resync candidates,
+    vite build clean.
+
+    STATUS -- OPEN (linguistic, no engineering action needed): (1) the
+    "0"->"don''t do" master_dictionary.json entry (unverified confidence,
+    data-entry-error-shaped) -- unchanged. (2) imperative-vs-declarative
+    "wait" sense-collision -- unchanged. (3) NARROWED this session: of
+    the 2026-08-28 "4 stale-confidence citation-hygiene rows (bye, bland
+    x2, cooked)" item, the engineering half is now CLOSED (these 3 rows
+    can no longer leak into any runtime artifact regardless of their
+    confidence field). What remains open is purely a metadata truth-
+    value correction: master_dictionary.json''s confidence field for
+    bye->"De / Ra / Bai", bland->"chi·brek·a", bland->"·brok·" should
+    change from unverified to superseded to match what each row''s own
+    notes already say -- not a new judgment (already written in the
+    notes), but per governance SS6 this is Claude A''s/Owner''s edit to
+    commit, not Claude B''s. "cooked" confirmed NOT part of this
+    mismatch (notes don''t start with SUPERSEDED) -- separate, still-
+    open, untouched. (4) ~300-row no-confidence backlog -- untouched.
+    (5) ~1000+-group duplicate-key backlog (regenerated to 1,619 groups
+    by Claude A this session) -- untouched, no engineering action
+    required (Claude A confirmed none of the 1,016 SUPERSEDED rows in it
+    affect runtime). STATUS -- BLOCKED: none, nothing in this session''s
+    engineering scope is blocked on external input. STATUS -- HANDOFF:
+    none undocumented -- all 4 bugs found this session were fixed this
+    session with regression coverage; open item 3 above is the only
+    thing crossing into next-session/Claude-A''s queue and it is fully
+    specified (exact rows, exact field, exact target value).
+
+    NEXT-SESSION ENGINEERING PRIORITIES (exact, in order): (1) no open
+    engineering-scoped bug is currently known -- before inventing new
+    work, re-run scripts/resync-stale-overrides.mjs and check for any
+    newer docs/CLAUDE_A_SESSION_MIGRATION_*.md beyond 20260830.md that
+    might need propagation verification (compiled-artifact rebuild,
+    runtime spot-check) -- ordinary session-start hygiene, not new
+    priority work. (2) if assigned a new audit sweep: the pattern behind
+    2 sessions'' worth of real bugs in a row (20260829B: assembleSentenceSOV
+    + 2 latent regressions; 20260830: 4 more) is
+    lookup-or-check.filter(Boolean) / condition ? lookup : null shapes
+    that drop resolved-but-failed content silently instead of marking
+    [UNKNOWN] -- this session swept every engine file and found no
+    further instances, but a cheap sweep of any newly-added fallback
+    step is worth doing on sight. (3) if asked to action open item 3: it
+    is Claude A''s/Owner''s edit per governance SS6, not Claude B''s --
+    flag it, do not make it.
+
+    WHAT THE NEXT CLAUDE B MUST NOT REPEAT: do not re-run the
+    SUPERSEDED-eligibility, stale-override, or silent-drop audits from
+    scratch as if still open -- all three closed this session with
+    concrete before/after live repros and regression tests; check git
+    log/migration docs/this field first, and if genuinely new data
+    landed, do a targeted re-check of the same bug classes, not a full
+    re-audit from zero. Do not hand-resolve a compiled_dict.json (or any
+    generated-artifact) merge conflict by editing JSON conflict markers
+    directly -- always let source files (master_dictionary.json etc.)
+    merge normally, then discard both conflicting versions of the
+    generated file and run node prepare-data.js fresh; this session
+    confirmed that produces a byte-identical, correct result, while
+    hand-editing risks a file that doesn''t match what the pipeline
+    would actually produce. Do not edit master_dictionary.json''s
+    confidence or notes fields directly, even for changes that look
+    purely mechanical (see open item 3 -- deliberately left to Claude A
+    per SS6 despite being "obviously correct"); reading those fields to
+    drive compile-pipeline logic is fine, writing to them in the data
+    file is not Claude B''s to do. Do not skip the post-merge rebuild-
+    and-gate step when master_dictionary.json changes during a merge,
+    even if the merge itself is conflict-free -- this session''s first
+    merge had zero conflicts but still required a full prepare-data.js
+    rebuild + gate re-run before it was safe to consider done.'
   prior_next_action_20260829B: '2026-08-29B (Claude B, session close, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260829.md). Fixed this session''s
     flagged priority item: assembleSentenceSOV''s silent content-word drop
