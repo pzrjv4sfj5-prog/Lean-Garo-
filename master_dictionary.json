@@ -5160,9 +5160,10 @@
   },
   {
     "english": "i forgot",
-    "garo": "Anga guala",
+    "garo": "Anga gualaha",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm. Updated to the confirmed past-tense form 'gualaha' (was bare-root 'guala')."
   },
   {
     "english": "i remember",
@@ -22004,8 +22005,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — 2026-08-30 (Claude A, NV-101): Thangseng direct relay gives a clean 6-form paradigm for 'forget' rooted in no-raka 'guala' (to forget=guala, do not forget=gualnabe, forgot=gualaha, forget(imp.)=gualbo, will not forget=gualjawa, will forget=gualgen). This raka'd 'gu·al·a' variant citation has no paradigm support and is superseded in favor of the confirmed root. Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "Friend",
@@ -64028,8 +64029,8 @@
     "garo": "Guala",
     "category": null,
     "pos": "v.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]",
-    "confidence": "ocr_flagged"
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm.",
+    "confidence": "verified_high"
   },
   {
     "english": "to slip from memory",
@@ -65172,7 +65173,8 @@
     "garo": "Ka·guala",
     "category": null,
     "pos": "v.",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-08-30 (Claude A, NV-101): Thangseng direct relay confirms the infinitive/root form is bare 'guala' (see the 'to forget' VERIFIED/HIGH row), not 'Ka·guala'. No corroborating paradigm evidence for the Ka·- prefixed form. Retained per citation discipline, not deleted."
   },
   {
     "english": "To bandage",
@@ -77663,6 +77665,48 @@
     "category": "verbs",
     "classifier": null,
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip): \"Re.jawa = will not go\" (simple negative future, contrasted explicitly against re·angjawa = \"will not be going\", see the relabeled row for that form). Resolves the pre-existing corrections.json orphan flagged 2026-08-28 (that runtime value had no master_dictionary.json row backing it) — this row now provides that backing. Matches RULE-030's 2026-07-26 derivation example. See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forget",
+    "garo": "Guala",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "do not forget",
+    "garo": "Gualnabe",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forgot",
+    "garo": "Gualaha",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forget (imperative)",
+    "garo": "Gualbo",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "will not forget",
+    "garo": "Gualjawa",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "will forget",
+    "garo": "Gualgen",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-101): Thangseng direct relay, full 'forget' paradigm.",
     "confidence": "verified_high"
   }
 ]

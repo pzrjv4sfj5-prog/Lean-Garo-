@@ -4053,7 +4053,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED — synced 2026-08-30 (NV-101): no-raka guala paradigm confirmed instead; retained per citation discipline"
   },
   {
     "english": "Forty",
@@ -5505,11 +5505,11 @@
   },
   {
     "english": "I forgot",
-    "garo": "Anga guala",
+    "garo": "Anga gualaha",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH — synced 2026-08-30 (NV-101): updated to confirmed past-tense gualaha"
   },
   {
     "english": "I have a question",

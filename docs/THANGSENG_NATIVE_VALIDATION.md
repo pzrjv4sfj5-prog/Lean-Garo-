@@ -5511,3 +5511,31 @@ and do not include any of NV-100's keys.
 
 **NV-100 is now fully CLOSED.** No sub-questions from this relay remain
 open.
+
+## NV-101 — "forget" paradigm — CLOSED 2026-08-30
+
+Project Owner relayed a direct Thangseng data-input batch (via Tridip), unprompted, giving a clean 6-form paradigm for "forget":
+
+- to forget = guala
+- do not forget = gualnabe
+- forgot = gualaha
+- forget (imperative) = gualbo
+- will not forget (future, negative) = gualjawa
+- will forget (future) = gualgen
+
+This directly resolves a standing citation ambiguity: master_dictionary.json held a raka'd "Forget"=gu·al·a as the sole VERIFIED/HIGH candidate for the bare "forget" key (superseding an earlier unraka'd "Guala" row), while the runtime actually shipped the no-raka "Guala" the whole time via a phrase_maps.js override that was never traced back to a citation. The new 6-form paradigm confirms the no-raka root is correct — no member of the paradigm carries a raka mark — so the runtime value was right, the master citation underneath it was stale.
+
+**Applied to master_dictionary.json:**
+- Superseded "Forget"=gu·al·a (idx 3316, was variant/VERIFIED/HIGH) — no paradigm support, contradicted by this relay.
+- Superseded "to forget"=Ka·guala (idx 8366, was unverified) — no paradigm support for the Ka·- prefix.
+- Promoted "To forget"=Guala (idx 8210, was ocr_flagged) to VERIFIED/HIGH — matches the confirmed root exactly.
+- Added new VERIFIED/HIGH rows: "forget"=Guala, "do not forget"=Gualnabe, "forgot"=Gualaha, "forget (imperative)"=Gualbo, "will not forget"=Gualjawa, "will forget"=Gualgen.
+- Updated "i forgot" (idx 787, was unverified "Anga guala") to the confirmed past-tense form "Anga gualaha", promoted to VERIFIED/HIGH.
+
+**Duplicate-representation check:** `phrase_maps.js` 'i forgot' synced Anga guala → Anga gualaha ('forget': 'Guala' was already correct, unchanged). `garo_dictionary.json` idx 757/1882 ("i forgot"/"I forgot") synced to Anga gualaha. `final_entries.json` idx 688 synced to Anga gualaha; idx 506 (gu·al·a variant) notes updated to reflect supersession. `corrections.json` — no forget-related keys, nothing to sync.
+
+**Left open, not force-reconciled:** `phrase_maps.js`'s "don't forget your language"=Nangni ba·sa·ko gualboja uses a distinct `-boja` negative-imperative suffix rather than this paradigm's `-nabe` (gualnabe). Both may be legitimate, non-competing constructions (e.g. plain negative imperative vs. an object-marked one) — not reconciled here, no evidence either way yet. "i forgot the word"=Anga ku·sik·ko sik·jokaha (sik·jok·a, a different root meaning roughly "the word slipped away") is a distinct expression, unaffected, cross-referenced only.
+
+**Gate:** `node prepare-data.js` (8197 entries, 17 pre-existing pickPrimary verified-ties unchanged, none involve any "forget" key), `node test-dictionary.js` (8197/8197, 9/9 grammatical corrections), `node --test tests/unit/*.test.js` (264/264), `node scripts/resync-stale-overrides.mjs` (0 new candidates), `node repository-intelligence.js` (0 new violations, all checks). Live-verified via `translate()`: forget→Guala, i forgot→Anga gualaha, to forget→Guala, do not forget→Gualnabe, forgot→Gualaha, forget (imperative)→Gualbo, will not forget→Gualjawa, will forget→Gualgen — all match master_dictionary.json exactly.
+
+NV-101 is now fully CLOSED.

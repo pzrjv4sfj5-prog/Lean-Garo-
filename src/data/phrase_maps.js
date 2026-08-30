@@ -43,7 +43,7 @@ export const PHRASE_MAPS = {
   'i am satisfied': 'Anga chu·ongnika',
   'i feel lonely': 'Anga saksan gisik·o nanga',
   'i miss you': 'Anga nang·na simbraa',
-  'i forgot': 'Anga guala',
+  'i forgot': 'Anga gualaha',
   'i remember': 'Anga gisik ra·a',
   'i know': 'Anga uia.',
   'say it again': 'Piltai aganbo',

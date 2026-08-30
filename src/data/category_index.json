@@ -4002,5 +4002,10 @@
   "will not be going": "verbs",
   "to walk": "verbs",
   "went": "verbs",
-  "will not go": "verbs"
+  "will not go": "verbs",
+  "do not forget": "general",
+  "forgot": "general",
+  "forget (imperative)": "general",
+  "will not forget": "general",
+  "will forget": "general"
 }
