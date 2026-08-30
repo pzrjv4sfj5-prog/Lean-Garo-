@@ -799,3 +799,13 @@ wire in beyond literal-match handling of these three sentences.
 **Validation Status:** Verified.
 **Confidence:** High.
 **Launch Priority:** P0 for the three 2026-08-21 batch items (closed, NV-096); P1 for the wider pre-existing space-before-`ma` corpus (open, separate sweep needed).
+
+### RULE-047 — Comitative Suffix `-ming` ("with [pronoun]")
+**Description:** `-ming` attaches to a pronoun to mean "with [that pronoun]" (comitative case): `ang` (I/me) + `-ming` → `Angming`/`Ang·ming` = "with me"; `nang` (you) + `-ming` → `Nang·ming` = "with you". Productive pronoun-suffix composition, in the same family as RULE-004's pronoun paradigm and the possessive-suffix pattern already treated as productive (see `.ai/SESSION_BOOTSTRAP.md` Rule 11) — not itself claimed as fully general beyond the two pronoun forms directly evidenced here.
+**Examples:** `Ang·ming Achik agana` = "Speak Garo with me" (pre-existing VERIFIED/HIGH, `200sentences` corpus); `Ang·ming re·babo` = "Come with me" (pre-existing VERIFIED/HIGH, `200sentences` corpus); `Ang·a nangming reangen.` = "I shall come with you." (pre-existing, unverified, uses unmarked `nangming`).
+**Counterexamples:** none identified. The one orthographic wrinkle — `Ang·ming` (raka'd, in the two VERIFIED/HIGH sentence citations) vs. the new relay's unmarked `angming` — is not treated as a conflict; the raka'd form is kept as primary per the stronger pre-existing evidence, flagged below.
+**Dependencies:** RULE-001 (Raka Locality — governs the `Ang·ming` vs. `angming` orthography question); RULE-004 (Pronoun Paradigm — `ang`/`nang` base forms).
+**Native Notes:** Direct Thangseng relay via Tridip, 2026-08-30: "With (me / you) = Ming. Suffix: angming = with me; nang'ming = with you." Confirms the suffix analysis directly; two pre-existing `200sentences`-corpus VERIFIED/HIGH sentences already used the raka'd `Ang·ming` form for "with me" independently, before this relay.
+**Validation Status:** Verified.
+**Confidence:** High for the two evidenced forms (`Ang·ming`=with me, `Nang·ming`=with you). Not yet generalized to other pronouns (e.g. "with him/her/them") — no data either way, not assumed.
+**Launch Priority:** P1 — closes NV-102's comitative item; a natural next relay question would test whether `-ming` generalizes across the rest of the pronoun paradigm.

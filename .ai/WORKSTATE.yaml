@@ -296,7 +296,26 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-30C (Claude A, session 7, CLEAN CLOSE, governance only):
+  next_action: '2026-08-30D (Claude A, session 8, CLEAN CLOSE): NV-102 fully
+    CLOSED — 6-item Thangseng relay: which way=Bagita, whom=Sako, whole
+    night=Walgimik, last week=Mija antio, favourite=Namnikgipa, and
+    comitative with(me/you)=-ming suffix. 5 exact-match unverified rows
+    promoted to VERIFIED/HIGH; 1 corroborated promotion (whole/entire=
+    gimik, via this relay + pre-existing VERIFIED/HIGH "whole earth"=
+    a''gim·ik sharing the root); 2 new rows added (with me=Ang·ming, with
+    you=Nang·ming — Ang·ming kept over the relay''s unmarked "angming" per
+    2 pre-existing independent VERIFIED/HIGH sentence citations). New
+    grammar rule RULE-047 (comitative -ming) written in both
+    GRAMMAR_RULE_CATALOGUE.md and grammar_rules_structured/RULE-047.yaml.
+    phrase_maps.js/corrections.json checked, no gap found. 8199 entries,
+    9/9 grammatical corrections, 264/264 unit tests, 0 new
+    repository-intelligence violations, 0 new resync candidates. Live-
+    verified all 8 touched keys via translate(). Left open, not forced:
+    3 sentence-level entries sharing these components (compositional
+    discipline doesn''t cover free sentences); -ming''s generalization to
+    other pronouns. No engine code touched, no Claude B handoff. Full
+    detail: docs/CLAUDE_A_SESSION_MIGRATION_20260830D.md.'
+  next_action_prior_20260830D: '2026-08-30C (Claude A, session 7, CLEAN CLOSE, governance only):
     established Rule 14 in `.ai/SESSION_BOOTSTRAP.md` (Project Owner
     directive) — every future Thangseng native-validation query must
     state the intended grammatical category/meaning whenever ambiguity
