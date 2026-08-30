@@ -78,6 +78,54 @@ rejected, etc.) that would need the same per-row check first.
 Remaining ~29 other-bucket groups (mixed missing/ocr_flagged/rejected/
 open tags) not individually triaged this session.
 
+## Retention-policy classification (Project Owner request, addendum)
+
+**No rows deleted or changed.** Classified the 1,016 SUPERSEDED rows inside
+the 848 "legit" groups into the 6 categories requested, via automated
+pattern matching (byte/normalized value comparison + note-text patterns)
+followed by manual sampling to correct heuristic overlap (e.g. "redundant"
+appearing in bulk-numeral audit notes initially miscounted them as
+plain duplicates — caught and reassigned by reading samples). Numbers
+below reflect the corrected pass; exact boundaries are estimates, not
+a row-by-row certified count — this is a representative classification,
+not exhaustive per-row adjudication.
+
+**Runtime relevance, checked first:** none of these 1,016 rows affects
+compiled output regardless of the retention decision. Every one sits in
+a group that already has exactly one non-variant VERIFIED/HIGH primary
+(that's the group definition), and `pickPrimary` already excludes
+SUPERSEDED-tagged candidates from compilation. This is a documentation-
+size/data-hygiene question, not a runtime-correctness one.
+
+| category | count | what it is |
+|---|---|---|
+| 1. Genuine obsolete duplicate, no informational value | ~55 (7 byte-exact + 48 "differs only in capitalization/spelling" per NV-080's own explicit "duplicate row" notes) | e.g. `love`→`Ka·saa` superseded, `ka·sa·a` verified — same word, case only |
+| 2. Earlier native-considered form, useful provenance | ~277 | NV-080 pattern: "not selected; native-confirmed form for X is Y" — a *different* word Thangseng was offered and explicitly rejected, e.g. `bow`→`Sko·ka·mama` rejected in favor of `bam·a`. Documents what NOT to re-propose. |
+| 3. Different POS/sense/context, must be retained | ~5 confirmed, likely more not keyword-caught | e.g. 4 `call` variants, note: "may still be valid for a distinct sense" |
+| 4. Spelling/orthography variant | ~119 (66 raka-dot/hyphen-only, 53 substring/compound-form) | e.g. `bamboo`→`Wa·a` superseded, `wa·` verified — raka placement only |
+| 5. Historical correction, audit evidence should remain | ~470 (167 generic 2026-08-01 corpus-dedup audit + ~300 bulk classifier/counted-noun numeral-suffix fixes, e.g. RC-CANDIDATE-037-class bugs) | Documents real systemic bugs and their fixes — losing these loses the bug-fix trail |
+| 6. Incorrectly marked SUPERSEDED | **0 found** | No case found where a demoted row looked like it should still be VERIFIED. (Inverse pattern exists instead — see below.) |
+
+**Inverse finding, worth flagging separately from the 6 categories:** a
+handful of rows (e.g. `king`→"Books, paper, leaves, flat", the
+`three dog`/`four dogs` legacy copy-paste corruptions) were
+**incorrectly VERIFIED/HIGH** at some earlier point — misimported
+classifier metadata or copy-paste errors, not real translations — and
+were *correctly* superseded later. These have essentially zero
+linguistic value (they're data-entry errors, not alternate word forms)
+but their SUPERSEDED record still documents that the error existed and
+was caught, which is exactly the audit trail category 5 protects.
+
+## Recommendation (not acted on — Owner decision)
+
+If a deletion policy is wanted at all, categories 1 and 4 (~174 rows,
+~17% of the 1,016) are the safest candidates — zero remaining
+information not already present in the VERIFIED sibling. Categories 2
+and 5 (~747 rows, ~74%) are exactly the kind of provenance the
+project's citation discipline was built to protect and should stay
+retained-and-tagged regardless of what's decided for 1/4. Category 3
+must stay. No changes made pending your decision.
+
 ## Action taken this session
 
 - Added "to support" (al·du·na vs. Chaka — synonym or distinct sense?)

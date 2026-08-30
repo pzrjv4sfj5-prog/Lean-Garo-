@@ -5429,3 +5429,50 @@ No other Thangseng questions resolved this session. `go`, `will not go`,
 and `movie` remain open exactly as queued in
 `.ai/WORKSTATE.yaml` `claude_a.pending_thangseng_questions` — not
 re-asked, not guessed at.
+
+## NV-100 — "go"/"went"/"will not go" family — RESOLVED 2026-08-30
+
+**Trigger:** the 2026-08-28 FLAGGED TENSION (RULE-030 corrections entry,
+`master_dictionary.json` rows for "go"=re·a and "will not go"=re·angjawa)
+— two native-sourced forms per key, not reconciled, awaiting a relay
+question.
+
+**Native evidence, unprompted, direct Thangseng relay via Project
+Owner/Tridip:**
+> "If to avoid confusion, and for better rendering, I think it is better
+> to translate re·angjawa as 'will not be going'. Re.anga is derived from
+> re.a. Re.a = to walk; re.anga = went. Re.jawa = will not go.
+> Re.angjawa = will not be going."
+
+**Resolution:** not a tie-break between competing synonyms — the two
+pairs were never synonyms. Full paradigm:
+- `re·a` = "to walk" (root/infinitive)
+- `re·anga` = "went" (derived past tense, not bare "go")
+- `re·jawa` = "will not go" (simple negative future)
+- `re·angjawa` = "will not be going" (continuous/progressive negative
+  future) — Thangseng's own recommended gloss, replacing "will not go"
+  for this specific form
+
+**Applied:**
+- `master_dictionary.json`: the existing "will not go"=re·angjawa row
+  relabeled to english="will not be going" (same garo value, key
+  corrected per direct native guidance, confidence stays verified_high).
+- New verified_high rows added: "will not go"=re·jawa (this backs the
+  pre-existing `corrections.json` runtime value, which had no
+  master_dictionary.json citation until now), "to walk"=Re·a, "went"=Re·anga.
+- `RULE-030.yaml`: corrections entry added marking the 2026-08-28 tension
+  RESOLVED with this paradigm.
+- The bare-citation-form "go"=re·a row (2026-08-28) gets a clarifying
+  note only — Thangseng's answer doesn't directly re-settle whether "go"
+  in isolation is best represented by re·a or re·anga; **left open**,
+  not guessed at.
+- "walk"=Re·a (idx 111, SUPERSEDED 2026-08-01 corpus audit) is
+  consistent with "Re.a = to walk" but **not re-promoted** this session
+  — that audit's judgment about "walk" vs. the VERIFIED "re·am·a" is a
+  separate question this evidence doesn't directly address.
+
+**Duplicate-representation check:** searched `corrections.json`, `phrase_maps.js`, `garo_dictionary.json`, `final_entries.json`, `compiled_dict.json`. `corrections.json` already has `"will not go": "re·jawa"` and `"i will not go": "Anga re·jawa"` — matches the new dictionary row exactly, no conflict. `phrase_maps.js`, `garo_dictionary.json`, `final_entries.json` — no hits. `compiled_dict.json` (build artifact, last built 2026-08-29) is now **stale** relative to `master_dictionary.json`: it still ships `"will not go": "re·angjawa"` (the pre-relabel value) and has no entries yet for `"will not be going"`, `"to walk"`, or `"went"`. This is a build-pipeline rebuild, not a dictionary-content question — flagged for Claude B, not attempted here.
+
+**Runtime impact, restated:** master_dictionary.json is the source of truth and is now correct; `compiled_dict.json` needs a rebuild to catch up. Nothing was ever silently wrong at the source-of-truth level — only the compiled cache is behind.
+
+**Gate:** not re-run this session — no compile-affecting rows touched at the master_dictionary.json level; the actual gate re-run belongs with the rebuild.
