@@ -406,26 +406,6 @@ claude_a:
     not be silently carried forward indefinitely as a workaround-masks-
     stale-data situation. Full detail: docs/
     CLAUDE_B_SESSION_MIGRATION_20260831.md.'
-  next_action: '2026-08-31 (Claude A, session 10, CLEAN CLOSE): Project
-    Owner-directed task -- fix "bye" primary/alternates. Primary was
-    already correct ("bye"->"De", NV-093 VERIFIED/HIGH); the actual defect
-    was compiled_dict_alternates.json still surfacing "Bai"/"Ra" as if
-    confirmed equivalents, when governance (CLAUDE_A_OPERATING_GOVERNANCE.md
-    §10) states both remain variant/AMBIGUOUS/HIGH, never confirmed as
-    alternates. Fixed via a grammarOverrides-style `delete alternates[''bye'']`
-    in prepare-data.js (same mechanism already used for "right"), rebuilt:
-    927 alternates entries (was 928), 8199 entries unchanged. Also closed
-    Claude B''s 2026-08-31 data-cleanup handoff (see
-    pending_data_cleanup_from_b_RESOLVED_20260831 above) in the same
-    session: updated confidence unverified->superseded on the 3 flagged
-    rows (bye/De-Ra-Bai, bland/chi·brek·a, bland/·brok·) to match their
-    existing SUPERSEDED notes; compiled output byte-identical before/after,
-    confirming Claude B''s zero-runtime-impact assessment. Did not touch
-    the open go/re·ang- stem-decoupling item (still Claude B''s, untouched).
-    Full gate green: 8199/8199, 9/9, 264/264, 0 new repository-intelligence
-    violations. resync-stale-overrides.mjs still flags the pre-existing,
-    documented "go" candidate (unrelated, Claude B''s open item) --
-    unchanged by this session.'
   next_action_prior_20260831: '2026-08-31 (Claude A, session 10, CLEAN CLOSE):
     Project Owner-directed task -- fix "bye" primary/alternates. Primary was
     already correct ("bye"->"De", NV-093 VERIFIED/HIGH); the actual defect
@@ -446,7 +426,7 @@ claude_a:
     violations. resync-stale-overrides.mjs still flags the pre-existing,
     documented "go" candidate (unrelated, Claude B''s open item) --
     unchanged by this session.'
-  next_action: '2026-08-31B (Claude A, session 11, CLEAN CLOSE): Project
+  next_action_prior_20260831B: '2026-08-31B (Claude A, session 11, CLEAN CLOSE): Project
     Owner-directed close-out of the "movie" relay question. CLOSED "movie" =
     "film" (garo: film) via corpus-internal evidence, not a new relay --
     Project Owner supplied the resolving evidence directly: the already-
@@ -662,13 +642,34 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: 'CLOSED 2026-08-31 (Claude A, Project Owner-directed,
+  pending_thangseng_questions: 'OPEN 2026-08-31C (Claude A, joint A+B grammar/morphology/tense
+    audit session, sent to queue per audit-brief instruction to ask precisely
+    rather than invent): item (1) "can" — ama vs man·a. Meaning: the ability
+    modal "can/be able to" (auxiliary, not the noun "can" as in tin container,
+    and not "may/permission"). POS: modal auxiliary, pre-verbal. Tense/aspect:
+    paradigm already fully confirmed for the primary form ama across simple-present-habitual
+    ability ("I can eat" = Anga cha''na ama, "I can go" = Anga re''angna ama,
+    "I can work" = Anga kam ka''na ama) — this question is NOT about ama''s
+    paradigm (closed, NV-008), only about a second, less-attested citation
+    man·a recorded for the same English gloss "can" in master_dictionary.json.
+    Question for Thangseng: are ama and man·a the same word (spelling/dialect
+    variant), or do they differ — e.g. one for physical/learned ability vs.
+    permission, or a formality/register distinction? If they differ, please
+    give one example sentence for each so the distinction is unambiguous
+    (e.g. "I can swim" vs. "I can go outside" or similar minimal pair).
+    Not sent via Tridip/WhatsApp yet as of this write — Project Owner to relay.
+    Does not block Finding B''s engineering implementation (grammarEngine.js
+    ama modal insertion), which can proceed against the already-closed ama
+    paradigm independent of this question''s answer.
+    ---
+    2026-08-31 (Claude A, Project Owner-directed,
     corpus-internal evidence): item (3) "movie" resolved — see the new "movie"
     master_dictionary.json row (garo: "film", VERIFIED/HIGH) for full resolving-
     evidence citation (NV-099 sentence "i saw the film last week."). Nothing
-    outstanding in this queue as of this close; queue empty pending any future
-    relay batch. Original text retained below for provenance — do not reopen
-    "movie" absent new native evidence to the contrary.
+    outstanding in this queue as of that close (now superseded above by the
+    new "can" item at close of 2026-08-31C). Original text retained below for
+    provenance — do not reopen "movie" absent new native evidence to the
+    contrary.
     ---
     2026-08-30D audit correction (Claude A): items (1) "go"
     and (2) "will not go" below were fully answered by NV-100 (2026-08-30, direct
