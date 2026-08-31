@@ -1862,3 +1862,58 @@ test('go/re·ang- decoupling: getConjugationRoot is a no-op for every verb not i
   const r = await translate('he did not eat');
   assert.equal(r.garo, 'Ua Cha·ja');
 });
+
+// ── Negative-future-continuous fix (2026-08-31B) ──────────────────────────
+// Confirmed native evidence: re·jawa = "will not go"; re·angjawa = "will
+// not be going" — two distinct forms that must never collapse into one.
+// See docs/CLAUDE_B_SESSION_MIGRATION_20260831C.md for the full root-cause
+// trace (AUXILIARY_SKIP unconditionally discarding "going" as a lexical
+// verb, plus the bare-noun-negation fallback wrongly firing on the bare
+// subject once no verb survived at all — live repro was
+// translate("he will not be going") -> "Ihing Ua").
+
+test('negative-future-continuous: "will not be going" renders the confirmed re·angjawa form (grammar-assembly), distinct from plain "will not go"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he will not be going');
+  assert.equal(r.garo, 'Ua Re·angjawa');
+  assert.equal(r.method, 'grammar-assembly');
+});
+
+test('negative-future-continuous: subject variations all resolve to the same re·angjawa stem', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const rShe = await translate('she will not be going');
+  assert.equal(rShe.garo, 'Ua Re·angjawa');
+  const rI = await translate('i will not be going');
+  assert.equal(rI.garo, 'Anga Re·angjawa');
+  const rThey = await translate('they will not be going');
+  assert.equal(rThey.garo, 'Uamang Re·angjawa');
+});
+
+test('negative-future-continuous: plain "will not go" (RULE-030, re·jawa) is unaffected by the re·angjawa fix — the two forms stay distinct', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r1 = await translate('he will not go');
+  assert.equal(r1.garo, 'Ua re·jawa');
+  const r2 = await translate('she will not go');
+  assert.equal(r2.garo, 'Ua re·jawa');
+});
+
+test('negative-future-continuous: "going" is not incorrectly discarded as a bare finite verb — "he is going" now resolves to the already-VERIFIED re·angenga stem instead of losing the verb entirely', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he is going');
+  assert.equal(r.garo, 'Ua re·angenga');
+});
+
+test('negative-future-continuous: "going to <infinitive verb>" (intention marker) is unaffected — "going" is still correctly skipped as a pure auxiliary, not misread as the finite verb', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r1 = await translate('he is going to eat');
+  assert.equal(r1.garo, 'Ua cha·na');
+  const r2 = await translate('i am going to school');
+  assert.equal(r2.garo, 'Anga skulchi re·angenga');
+});
+
+test('negative-future-continuous: the bare-noun-negation fallback (meant for "not rice"/"not water") cannot capture this construction — output comes from grammar-assembly, never the sov-assembly fallback that produced "Ihing Ua"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he will not be going');
+  assert.notEqual(r.method, 'sov-assembly');
+  assert.ok(!r.garo.includes('Ihing'));
+});

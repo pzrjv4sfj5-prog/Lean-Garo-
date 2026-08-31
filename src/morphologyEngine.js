@@ -36,7 +36,21 @@ import { corrections, lookupGaro } from './lookupEngine.js';
 // zero behavior change for anything except 'go').
 export function getConjugationRoot(w, garoVerb) {
   const k = w.toLowerCase().trim();
-  return CONJUGATION_ROOTS[k] || garoVerb;
+  if (CONJUGATION_ROOTS[k]) return CONJUGATION_ROOTS[k];
+  // Lemma fallback (2026-08-31B, Claude B — negative-future-continuous
+  // fix): the table is keyed by the verb's base/citation form ("go"),
+  // but a caller may pass an inflected surface token instead ("going")
+  // when that inflected form is itself the sentence's only finite verb
+  // (see grammarEngine.js's verb-finding loop fix, same session). Strip
+  // common inflectional endings and retry once before falling back to
+  // garoVerb unchanged — still a no-op for every verb not in the table,
+  // and still returns the same already-VERIFIED stem the direct-key
+  // lookup would for any verb that later gets a second inflected key
+  // added, so this doesn't require duplicating table entries per
+  // inflection.
+  const lemma = k.replace(/ing$|ed$|s$/, '');
+  if (lemma !== k && CONJUGATION_ROOTS[lemma]) return CONJUGATION_ROOTS[lemma];
+  return garoVerb;
 }
 
 export function applyNegation(garoForm) {

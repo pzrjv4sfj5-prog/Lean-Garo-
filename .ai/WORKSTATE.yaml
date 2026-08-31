@@ -2268,7 +2268,101 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-31B (Claude B, session close, resumed via
+  next_action: '2026-08-31C (Claude B, session close, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260831B.md; resync verified against
+    ACTUAL repo state, not the doc''s own claims -- HEAD at session start
+    was 95702d2 == origin/main, clean tree, confirming the prior session''s
+    go/re·ang- fix was genuinely landed.
+
+    Task: started the CLAUDE B grammar/morphology/tense engineering audit
+    (Project Owner brief), ran the shared runtime matrix live against
+    translate() rather than by inspection. Found one real, confirmed-
+    evidence bug: "he will not be going" -> "Ihing Ua" (should be
+    re·angjawa per confirmed evidence re·jawa=will not go /
+    re·angjawa=will not be going). Project Owner directed an immediate
+    fix rather than deferring to a later session.
+
+    Root cause (traced live, two compounding defects): (1)
+    grammarEngine.js''s verb-finding loop unconditionally discarded
+    "going" via AUXILIARY_SKIP in every sentence shape, including when
+    it was the sentence''s ONLY lexical verb -- verb stayed null; (2)
+    sentenceBuilder.js''s bare-noun-negation fallback (meant for "not
+    rice"/"not water") then misfired on the bare subject once no verb
+    survived, prepending "Ihing" ("no") to the SUBJECT instead of
+    negating a verb. A third issue: IRREGULAR_VERBS[''going''] already
+    exists, so isIrregular=true for "going", which gates RULE-030 (the
+    existing bare-"go" negative-future exception) off entirely -- would
+    have fallen through to the generic bare ''ja'' negation suffix
+    (Re·angja, the DIFFERENT already-correct "did not go" shape) instead
+    of the future-specific ''jawa'' this combination needs.
+
+    Fix (engineering-scope only, no Garo forms invented): (1)
+    grammarEngine.js -- "going" no longer unconditionally skipped; a
+    lookahead (past optional "to") checks PURPOSE_MAP and VERB_LEMMAS
+    (both ALREADY used elsewhere in this codebase for the identical
+    verb-vs-auxiliary judgment, not new heuristics) to decide whether
+    "going" introduces a real infinitive verb (skip, unchanged
+    behavior) or IS the finite verb (fall through to normal
+    resolution). An earlier draft using VERB_LEMMAS alone regressed
+    "he is going to eat" (VERB_LEMMAS has no "eat" entry) -- caught by
+    live testing before landing, fixed by also checking PURPOSE_MAP.
+    (2) New branch in grammarEngine.js, placed before RULE-030, fires
+    ONLY when isNegative && detectedTense===''future'' && w===''going'':
+    builds re·angjawa via applyTense(getConjugationRoot(''go'',
+    garoVerb), ''negative_future'') -- reuses the SAME already-VERIFIED
+    Re·ang stem and jawa suffix RULE-030 itself uses for re·jawa, just
+    without RULE-030''s bare-''go'' exception. RULE-030 itself completely
+    untouched. (3) morphologyEngine.js getConjugationRoot: added a
+    lemma fallback (strip ing$|ed$|s$, retry) so callers can pass an
+    inflected token ("going") and still reach the table''s "go" key --
+    no-op for every other verb. (4) sentenceBuilder.js''s fallback NOT
+    touched directly -- with (1)+(2) fixed, grammar-assembly now
+    succeeds and returns before sov-assembly is ever reached for this
+    construction, confirmed live (method=grammar-assembly for all 4
+    subject variants tested, never sov-assembly).
+
+    Side effects surfaced and documented, not silently shipped: "he is
+    going" (bare, no destination) improved from missing-verb ("Ua") to
+    the already-VERIFIED "Ua re·angenga". "he is not going" (present-
+    negative-continuous, no "will") improved from "Ihing Ua" to
+    "Ua Re·angja" -- but Re·angja is only NATIVE-CONFIRMED for the
+    past-negative shape ("did not go"); flagged LINGUISTICALLY
+    UNRESOLVED for Thangseng rather than asserted correct for present-
+    negative-continuous, since this project''s standing discipline is
+    linguistic values are never derived/guessed even when mechanically
+    plausible.
+
+    Also investigated (audit-only, no fix attempted, no linguistic call
+    made): the -ko object-marker question -- confirmed via film-ko, but
+    only ever attached in assembleGrammar''s structured subject+object
+    path, never in sov-assembly/bare-imperative/compound-split (e.g.
+    "watch the film" -> "film ni·rik·a", no -ko). Framed as a properly-
+    formed LINGUISTICALLY UNRESOLVED question and handed to Claude
+    A/Thangseng in this session''s migration doc -- not decided here.
+
+    Verification: added 6 new regression tests (core fix + all 4
+    subject variants + RULE-030 non-regression + "going" no-longer-
+    discarded + "going to eat" auxiliary-use non-regression + fallback-
+    unreachable assertion) to tests/unit/translationEngine.test.js,
+    zero existing tests modified. Full gate re-run clean: 277/277 unit
+    tests (was 271, +6 new, 0 failures), prepare-data.js 8199/8199
+    entries unchanged (zero master_dictionary.json edits -- pure engine
+    fix), test-dictionary.js 8199/8199 + 9/9 grammatical corrections,
+    repository-intelligence.js 0 new violations across all 7 checks,
+    resync-stale-overrides.mjs 0 candidates (same pre-existing
+    exceptions), vite build clean (59 modules). Full shared brief
+    matrix (present/past/future/continuous/negative/imperative/neg-
+    imperative/question/object+ko/classifier/OOV/multi-word-object)
+    re-run byte-for-byte identical to pre-fix values except the target
+    line. See docs/CLAUDE_B_SESSION_MIGRATION_20260831C.md for full
+    trace and the two Claude A/Thangseng handoffs.
+
+    Queued for next session (per Project Owner instruction, deferred
+    from this session''s plan): re-verify this fix + gate still green,
+    then continue the broader grammar/morphology/tense audit into
+    prepare-data.js internals, garo_classifier.js, and the full
+    corrections/override layer -- not yet deep-audited.)'
+  next_action_prior_20260831B: '2026-08-31B (Claude B, session close, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260831.md == this WORKSTATE state
     prior to this entry; resync verified against ACTUAL repo state, not
     assumed from the migration doc''s own claims -- HEAD at session start

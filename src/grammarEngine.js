@@ -14,7 +14,7 @@ import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import POSSESSIVES from './data/possessives.json' with { type: 'json' };
 import { NUMBER_WORDS, countNoun, parseCountingPhrase } from './garo_classifier.js';
-import { lookupGaro } from './lookupEngine.js';
+import { lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { lookupPhrase } from './data/phrase_maps.js';
 import { applyNegation, applyTense, findVerbForm, getConjugationRoot } from './morphologyEngine.js';
 import { STOP_WORDS, AUXILIARY_SKIP } from './normalizationEngine.js';
@@ -202,7 +202,43 @@ export function analyzeGrammar(input) {
     for (let i = subjectEndIndex + 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
       const prevWv = i > 0 ? words[i-1].toLowerCase().replace(/[^a-z]/g,'') : '';
-      if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) {
+      // going/re·ang- finite-verb fix (2026-08-31B, Claude B — closes the
+      // OPEN negative-future-continuous bug: "he will not be going" ->
+      // "Ihing Ua", docs/CLAUDE_B_SESSION_MIGRATION_20260831C.md).
+      // AUXILIARY_SKIP was unconditionally discarding "going" in every
+      // shape, but "going" is only ever a pure auxiliary when it
+      // introduces a real infinitive verb ("going to eat", "going to
+      // buy rice") — there the loop correctly continues past it to find
+      // the real finite verb later. In every other shape ("he is going",
+      // "he is going to school", "he will not be going") "going" IS the
+      // sentence's own finite verb and there is no other lexical verb
+      // anywhere in the sentence to find — discarding it unconditionally
+      // left `verb` permanently null for those shapes whenever the one
+      // pre-existing destination-verb-synthesis special case further
+      // below didn't apply (it's gated to affirmative, 1st-person,
+      // destination-present only). PURPOSE_MAP is the SAME table the
+      // purpose-clause extraction loop further below already uses for
+      // this exact judgment ("to eat" -> PURPOSE_MAP['eat'] -> 'cha·na')
+      // — reused here rather than reinvented so the two loops can't
+      // disagree. VERB_LEMMAS (used by sentenceBuilder.js's
+      // assembleSentenceSOV for the analogous verb-vs-non-verb decision)
+      // is checked too as a broader net: PURPOSE_MAP is hand-curated for
+      // the purpose-clause construction specifically and doesn't cover
+      // every dictionary verb, so relying on it alone would silently
+      // misclassify any infinitive verb it doesn't happen to list.
+      if (w === 'going') {
+        let j = i + 1;
+        if ((words[j] || '').toLowerCase().replace(/[^a-z]/g,'') === 'to') j++;
+        const nextW = (words[j] || '').toLowerCase().replace(/[^a-z]/g,'');
+        const nextLemma = nextW.replace(/ing$|ed$|s$/, '');
+        const introducesInfinitiveVerb = !!nextW && (!!PURPOSE_MAP[nextW] || VERB_LEMMAS.has(nextW) || VERB_LEMMAS.has(nextLemma));
+        if (!introducesInfinitiveVerb) {
+          // "going" is the finite verb here — do NOT skip; fall through
+          // to normal verb resolution below exactly like any other word.
+        } else if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) {
+          continue;
+        }
+      } else if (STOP_WORDS.has(w) || POSSESSIVES[w] || AUXILIARY_SKIP.has(w)) {
         if (/^(in|on|at)$/.test(w)) pendingLocativeVerbGuard = true;
         // Destination/purpose-"to" verb-guard (2026-08-20, Claude B,
         // engineering-only, confirmed live via "I am going to school"):
@@ -312,6 +348,28 @@ export function analyzeGrammar(input) {
       }
       if (garoVerb) {
         let garoWithTense = garoVerb;
+        // Negative-future-continuous fix (2026-08-31B, Claude B):
+        // "will not go" (re·jawa, RULE-030 below) and "will not be
+        // going" (re·angjawa) are two distinct native-confirmed forms —
+        // see docs/CLAUDE_A_SESSION_MIGRATION_20260830E.md and this
+        // session's migration doc. Must be checked BEFORE RULE-030,
+        // which is gated on `!isIrregular` and would otherwise never
+        // fire for "going" (IRREGULAR_VERBS['going'] exists, so
+        // isIrregular is true here) — falling through to the generic
+        // `if (isNegative)` branch further below instead, which only
+        // ever appends the bare 'ja' negation suffix (producing
+        // 'Re·angja', the already-correct but DIFFERENT "did not go"/
+        // "is not going" shape) and never the future-specific 'jawa'
+        // this aspect+tense combination requires. Scoped to exactly
+        // w==='going' — every other verb's negative-future handling
+        // (RULE-030 immediately below, and the generic negative branch
+        // further down) is completely untouched.
+        if (isNegative && detectedTense === 'future' && w === 'going') {
+          const contStem = getConjugationRoot('go', garoVerb);
+          garoWithTense = applyTense(contStem, 'negative_future');
+          verb = { english: words[i], garo: garoVerb, tense: 'negative_future_continuous', garoWithTense, isNegative, index: i };
+          break;
+        }
         // Rule 5 (confirmed): future negative is stem+jawa directly, e.g.
         // 'cha·jawa' = will not eat, 'ringjawa' = will not drink — NOT
         // future(gen) with negative(ja) stacked on top, which produced
