@@ -381,6 +381,46 @@ claude_a:
     violations. resync-stale-overrides.mjs still flags the pre-existing,
     documented "go" candidate (unrelated, Claude B''s open item) --
     unchanged by this session.'
+  next_action_prior_20260831: '2026-08-31 (Claude A, session 10, CLEAN CLOSE):
+    Project Owner-directed task -- fix "bye" primary/alternates. Primary was
+    already correct ("bye"->"De", NV-093 VERIFIED/HIGH); the actual defect
+    was compiled_dict_alternates.json still surfacing "Bai"/"Ra" as if
+    confirmed equivalents, when governance (CLAUDE_A_OPERATING_GOVERNANCE.md
+    §10) states both remain variant/AMBIGUOUS/HIGH, never confirmed as
+    alternates. Fixed via a grammarOverrides-style `delete alternates[''bye'']`
+    in prepare-data.js (same mechanism already used for "right"), rebuilt:
+    927 alternates entries (was 928), 8199 entries unchanged. Also closed
+    Claude B''s 2026-08-31 data-cleanup handoff (see
+    pending_data_cleanup_from_b_RESOLVED_20260831 above) in the same
+    session: updated confidence unverified->superseded on the 3 flagged
+    rows (bye/De-Ra-Bai, bland/chi·brek·a, bland/·brok·) to match their
+    existing SUPERSEDED notes; compiled output byte-identical before/after,
+    confirming Claude B''s zero-runtime-impact assessment. Did not touch
+    the open go/re·ang- stem-decoupling item (still Claude B''s, untouched).
+    Full gate green: 8199/8199, 9/9, 264/264, 0 new repository-intelligence
+    violations. resync-stale-overrides.mjs still flags the pre-existing,
+    documented "go" candidate (unrelated, Claude B''s open item) --
+    unchanged by this session.'
+  next_action: '2026-08-31B (Claude A, session 11, CLEAN CLOSE): Project
+    Owner-directed close-out of the "movie" relay question. CLOSED "movie" =
+    "film" (garo: film) via corpus-internal evidence, not a new relay --
+    Project Owner supplied the resolving evidence directly: the already-
+    VERIFIED/HIGH sentence "i saw the film last week." -> "Anga ia film-ko
+    mija antio nia." (NV-099, 2026-08-29) uses "film" as the direct object
+    of "saw", i.e. the concrete watched-object ("movie") sense, not the
+    general-concept-of-cinema sense; no competing Garo word for this sense
+    exists anywhere in the corpus. Added new master_dictionary.json row
+    (english="movie", garo="film", VERIFIED/HIGH, full citation in the row''s
+    notes) and updated the existing "film" row''s notes to point to it.
+    claude_a.pending_thangseng_questions item (3) closed (full text retained
+    below the closure note for provenance; do not reopen absent new native
+    evidence to the contrary). Relay queue is now empty. Rebuilt: 8200
+    entries (was 8199), 927 alternates unchanged. Full gate green: 8200/8200,
+    9/9, 264/264, 0 new repository-intelligence violations. Live
+    translate("movie") -> "film" confirmed. Did not touch the open
+    go/re·ang- stem-decoupling item (still Claude B''s, untouched). No other
+    task attempted this session per Project Owner instruction to close and
+    not start another task.'
   next_action_prior_20260830E: '2026-08-30E (Claude A, session 9, CLEAN CLOSE, joint A+B audit):
     resume-verified 30D''s claims live against the repo — all accurate, full
     gate green (8199/8199, 9/9, 264/264, 0 new violations), no orphaned
@@ -577,7 +617,15 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: '2026-08-30D audit correction (Claude A): items (1) "go"
+  pending_thangseng_questions: 'CLOSED 2026-08-31 (Claude A, Project Owner-directed,
+    corpus-internal evidence): item (3) "movie" resolved — see the new "movie"
+    master_dictionary.json row (garo: "film", VERIFIED/HIGH) for full resolving-
+    evidence citation (NV-099 sentence "i saw the film last week."). Nothing
+    outstanding in this queue as of this close; queue empty pending any future
+    relay batch. Original text retained below for provenance — do not reopen
+    "movie" absent new native evidence to the contrary.
+    ---
+    2026-08-30D audit correction (Claude A): items (1) "go"
     and (2) "will not go" below were fully answered by NV-100 (2026-08-30, direct
     Thangseng relay) — re''a="to walk"/"go", re''anga="went", re·jawa="will not go",
     re''angjawa="will not be going" (distinct senses, not competing synonyms). Removed

@@ -76575,7 +76575,14 @@
     "english": "film",
     "garo": "film",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (direct loanword) — closes the film/movie vocabulary gap; movie itself remains unaddressed.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) (direct loanword). \"movie\" sense closed 2026-08-31 — see 'movie' entry below.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "movie",
+    "garo": "film",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — CLOSED 2026-08-31 (Claude A, Project Owner-directed, corpus-internal native evidence, not a new relay). Resolves the previously-open claude_a.pending_thangseng_questions item (3) \"is there a distinct Garo word for 'movie' in the sense of a film you watch, or is 'film' used for both senses?\". Resolving evidence: the already-VERIFIED/HIGH sentence 'i saw the film last week.' -> 'Anga ia film-ko mija antio nia.' (NV-099, 2026-08-29, Project Owner-relayed Thangseng evidence, row english=\"i saw the film last week.\") uses 'film' as the direct object of 'saw' -- i.e. the concrete watched-object sense (\"movie\"), not the general-concept-of-cinema sense. No separate Garo word for this sense is attested anywhere in the corpus. Per evidence-first methodology this is a corpus-internal resolution (already-VERIFIED sentence + no competing candidate), not a guess -- treated as CLOSED, not reopened absent new native evidence to the contrary.",
     "confidence": "verified_high"
   },
   {

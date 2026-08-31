@@ -1,5 +1,22 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-29 (session 4) by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-31 (session 11) by Claude A
+(session close, CLEAN — Project Owner-directed close-out of the "movie" relay question. CLOSED
+`movie`=`film` (garo: `film`) via corpus-internal evidence, not a new relay: the already-
+VERIFIED/HIGH sentence "i saw the film last week." -> "Anga ia film-ko mija antio nia." (NV-099,
+2026-08-29) uses `film` as the direct object of "saw" — the concrete watched-object ("movie") sense,
+not the general-concept-of-cinema sense — and no competing Garo word for this sense exists anywhere
+in the corpus. Added new `master_dictionary.json` row (english="movie", garo="film", VERIFIED/HIGH,
+full citation in the row's notes); updated the existing `film` row's notes to point to it.
+`claude_a.pending_thangseng_questions` item (3) CLOSED, full text retained for provenance — do not
+reopen absent new native evidence to the contrary. Relay queue now empty. Session 10 (same day,
+prior close) fixed `bye` alternates (`compiled_dict_alternates.json` was surfacing unconfirmed
+`Bai`/`Ra` as if equivalent to the correct primary `De`) and closed Claude B's same-day
+bye/bland confidence-field metadata handoff (unverified->superseded, 3 rows, zero runtime impact
+confirmed by byte-identical rebuild). `go`/`re·ang-` stem-decoupling issue untouched, remains
+Claude B's. 8200/8200 compiled entries, 9/9 grammatical corrections, 264/264 unit tests, 0 new
+repository-intelligence violations, live `translate("movie")` -> "film" verified. See
+`docs/CLAUDE_A_SESSION_MIGRATION_20260831.md`.)
+Prior: 2026-08-29 (session 4) by Claude A
 (session close, CLEAN — new Project Owner-relayed Thangseng evidence applied for `film`: "I saw the
 film last week." = "Anga ia film-ko mija antio nia." (NV-099). Promoted the existing unverified
 master_dictionary.json row to VERIFIED/HIGH; confirms both the sentence and the `film-ko` object
