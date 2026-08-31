@@ -313,6 +313,14 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
+  pending_data_cleanup_from_b_RESOLVED_20260831: 'DONE 2026-08-31 (Claude A):
+    all 3 rows (bye/De-Ra-Bai, bland/chi·brek·a, bland/·brok·) confidence
+    field updated unverified -> superseded, matching their existing
+    SUPERSEDED notes. Full gate re-run clean (8199/8199, 9/9, 264/264, 0 new
+    violations); compiled_dict.json/compiled_dict_alternates.json byte-
+    identical before/after (0 runtime impact, as Claude B predicted). See
+    session commit for detail. Original handoff text retained below for
+    provenance.'
   pending_data_cleanup_from_b: 'DATA CLEANUP (flagged 2026-08-31, Claude B,
     engineering verification complete, not an engineering fix): three
     master_dictionary.json rows have notes declaring SUPERSEDED but
@@ -353,7 +361,27 @@ claude_a:
     not be silently carried forward indefinitely as a workaround-masks-
     stale-data situation. Full detail: docs/
     CLAUDE_B_SESSION_MIGRATION_20260831.md.'
-  next_action: '2026-08-30E (Claude A, session 9, CLEAN CLOSE, joint A+B audit):
+  next_action: '2026-08-31 (Claude A, session 10, CLEAN CLOSE): Project
+    Owner-directed task -- fix "bye" primary/alternates. Primary was
+    already correct ("bye"->"De", NV-093 VERIFIED/HIGH); the actual defect
+    was compiled_dict_alternates.json still surfacing "Bai"/"Ra" as if
+    confirmed equivalents, when governance (CLAUDE_A_OPERATING_GOVERNANCE.md
+    §10) states both remain variant/AMBIGUOUS/HIGH, never confirmed as
+    alternates. Fixed via a grammarOverrides-style `delete alternates[''bye'']`
+    in prepare-data.js (same mechanism already used for "right"), rebuilt:
+    927 alternates entries (was 928), 8199 entries unchanged. Also closed
+    Claude B''s 2026-08-31 data-cleanup handoff (see
+    pending_data_cleanup_from_b_RESOLVED_20260831 above) in the same
+    session: updated confidence unverified->superseded on the 3 flagged
+    rows (bye/De-Ra-Bai, bland/chi·brek·a, bland/·brok·) to match their
+    existing SUPERSEDED notes; compiled output byte-identical before/after,
+    confirming Claude B''s zero-runtime-impact assessment. Did not touch
+    the open go/re·ang- stem-decoupling item (still Claude B''s, untouched).
+    Full gate green: 8199/8199, 9/9, 264/264, 0 new repository-intelligence
+    violations. resync-stale-overrides.mjs still flags the pre-existing,
+    documented "go" candidate (unrelated, Claude B''s open item) --
+    unchanged by this session.'
+  next_action_prior_20260830E: '2026-08-30E (Claude A, session 9, CLEAN CLOSE, joint A+B audit):
     resume-verified 30D''s claims live against the repo — all accurate, full
     gate green (8199/8199, 9/9, 264/264, 0 new violations), no orphaned
     commits since d57aaf3. Fixed 2 stale-data items: (1) superseded the

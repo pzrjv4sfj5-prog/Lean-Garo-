@@ -19722,7 +19722,7 @@
     "category": "phrases",
     "classifier": null,
     "notes": "SUPERSEDED 2026-08-26 — imprecise bundled candidate, no single confirmed default. See 'Bye'->'De' (VERIFIED/HIGH, NV-093) for the resolved default; Bai/Ra remain unresolved variants.",
-    "confidence": "unverified"
+    "confidence": "superseded"
   },
   {
     "english": "carpet",
@@ -28177,7 +28177,7 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "SUPERSEDED 2026-08-26, citing NV-093 ('bland'->'Chibroka', VERIFIED/HIGH). Original note: UNVERIFIED/HIGH v:-brok-",
-    "confidence": "unverified"
+    "confidence": "superseded"
   },
   {
     "english": "bland",
@@ -28186,7 +28186,7 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "SUPERSEDED 2026-08-26, citing NV-093 ('bland'->'Chibroka', VERIFIED/HIGH). Original note: variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "confidence": "superseded"
   },
   {
     "english": "blanket",
