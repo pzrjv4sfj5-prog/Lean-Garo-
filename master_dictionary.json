@@ -833,7 +833,8 @@
     "english": "go",
     "garo": "Re·anga",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-08-30D audit (Claude A): this unverified 'go'=Re·anga row is now contradicted by NV-100 (2026-08-30, direct Thangseng relay), which confirms Re·anga = 'went' (distinct past-tense sense, own VERIFIED/HIGH row) and 'go' = re·a (VERIFIED/HIGH, native-confirmed 2026-08-28). Retained for citation history only, no runtime impact (was never pickPrimary-eligible against the existing VERIFIED 'go'=re·a row)."
   },
   {
     "english": "mother",
