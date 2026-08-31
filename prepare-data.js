@@ -740,6 +740,17 @@ function main() {
   delete finalized['right'];
   delete alternates['right'];
 
+  // Project Owner-directed fix (session 20260830E follow-up): bare "bye"
+  // already compiles to the correct primary ('De', per NV-093 — see
+  // CLAUDE_A_OPERATING_GOVERNANCE.md §10, "Bye"->"De" VERIFIED/HIGH).
+  // The alternates list was still surfacing 'Bai' and 'Ra' as if they were
+  // confirmed equivalents; per that same governance note both remain
+  // variant/AMBIGUOUS/HIGH — neither confirmed nor rejected as alternates,
+  // not interchangeable with the default. Drop the alternates entry
+  // entirely (same mechanism as "right" above) rather than let unconfirmed
+  // variants ship as if they were equally valid.
+  delete alternates['bye'];
+
   // Alias bare-infinitive form for "to X" headwords. Some dictionary
   // sources (e.g. the page-112 OCR import: "To bind", "To console") only
   // ever store the "to X" headword. Sentence assembly looks up verbs by
