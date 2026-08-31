@@ -1,5 +1,5 @@
 repository:
-  head: d57aaf3
+  head: 6aa558f
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,6 +313,26 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
+  next_action: '2026-08-31C (Claude A, joint A+B grammar/morphology/tense
+    audit, Claude A half, CLEAN CLOSE): full linguistic audit against
+    docs/GRAMMAR_RULE_CATALOGUE.md + live translate() across the shared
+    test matrix (tense/aspect/negation/imperative/question/classifier/
+    OOV/object-marking). Two findings, full detail in
+    docs/CLAUDE_A_GRAMMAR_MORPHOLOGY_TENSE_AUDIT_20260831.md: (1) RULE-046
+    catalogue text was stale (fixed this session, docs-only) -- the
+    2026-08-28 space-before-ma sweep already shipped correctly, catalogue
+    counterexamples/priority text never updated to match; live-reverified
+    all 3 flagged sentences correct. (2) NEW, B-owned engineering handoff:
+    NV-008 ability-modal "can"=ama has been native-confirmed CLOSED since
+    2026-07-25 (full 3-verb paradigm) but grep confirms zero engine-code
+    references anywhere -- "i can eat" silently drops "can" entirely,
+    "i cannot eat" surfaces a literal [UNKNOWN] token. No new native data
+    needed, pure implementation gap. Everything else audited (go/re·ang-
+    paradigm, want/need vs push-insert, -aha/-gen/-ja/-bo/-jaha/-manaha,
+    classifiers, film-ko object marking, OOV [UNKNOWN] surfacing) found
+    consistent with native evidence, no other discrepancies. No
+    dictionary/compiled data touched. Gate green: 8200/8200, 9/9, 271/271,
+    0 new repository-intelligence violations.'
   pending_data_cleanup_from_b_RESOLVED_20260831: 'DONE 2026-08-31 (Claude A):
     all 3 rows (bye/De-Ra-Bai, bland/chi·brek·a, bland/·brok·) confidence
     field updated unverified -> superseded, matching their existing
