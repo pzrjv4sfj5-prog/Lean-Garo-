@@ -1,5 +1,5 @@
 repository:
-  head: 6aa558f
+  head: 613d9e4
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,8 +313,33 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260831C.md - this session's
+    close (2026-08-31C, joint A+B grammar/morphology/tense audit, Claude A
+    half, MIGRATION CLOSE per explicit Project Owner instruction -- audit
+    and record only, no fixes attempted on Finding B, the one remaining
+    open item).
   next_action: '2026-08-31C (Claude A, joint A+B grammar/morphology/tense
-    audit, Claude A half, CLEAN CLOSE): full linguistic audit against
+    audit, Claude A half, MIGRATION CLOSE -- do NOT start fixing Finding B
+    below in the next session''s first action without first re-verifying
+    it is still open, per the resume protocol): full linguistic audit
+    complete, findings unchanged from the summary below. TWO findings: (A)
+    RULE-046 catalogue text was stale -- FIXED this session, docs-only,
+    CLOSED. (B) STILL OPEN, B-owned engineering handoff: NV-008
+    ability-modal "can"=ama, native-confirmed CLOSED since 2026-07-25 (full
+    3-verb paradigm), still has zero engine-code implementation -- "i can
+    eat" silently drops "can", "i cannot eat" surfaces a literal [UNKNOWN].
+    No new native data needed. One loose thread (ama vs. a second "man·a"
+    citation) flagged as a draft relay question, not sent, not blocking
+    Finding B''s fix. Full evidence, B-owned handoff detail, a draft
+    Thangseng question, and the exact next-session resume protocol (what
+    to check first, what NOT to repeat) are all in the migration doc above
+    -- read that first, this field is a pointer/summary only. Gate green
+    throughout, nothing touched: 8200/8200 dictionary, 9/9 grammatical
+    corrections, 271/271 unit tests, 0 new repository-intelligence
+    violations.'
+  next_action_prior_20260831C_audit: '2026-08-31C (Claude A, first pass,
+    superseded by the migration-close entry above -- kept for history):
+    full linguistic audit against
     docs/GRAMMAR_RULE_CATALOGUE.md + live translate() across the shared
     test matrix (tense/aspect/negation/imperative/question/classifier/
     OOV/object-marking). Two findings, full detail in
