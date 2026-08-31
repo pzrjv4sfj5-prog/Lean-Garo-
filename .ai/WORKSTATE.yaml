@@ -127,7 +127,24 @@ repository:
     3-item queue from the 2026-08-25 close (pickPrimary verified-ties backlog, repository-wide
     space-before-ma sweep, plus now this relay batch) remains open — relay batch takes priority per
     next_action.'
-  last_updated_prior_20260825_claude_b: '2026-08-25 (Claude B, session close): AI-002 fixed -- see claude_b.next_action
+  last_updated_prior_20260825_claude_b: '2026-08-31 (Claude B, session close): No engineering work this
+    session -- resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260830C.md,
+    confirmed no blocking engineering item (per that session''s own
+    close). Re-verified the bye/bland SUPERSEDED-notes/unverified-
+    confidence metadata mismatch (first found 2026-08-30) is still
+    present in master_dictionary.json and still correctly neutralized at
+    compile time by notesDeclareSuperseded -- 0 live/runtime impact,
+    confirmed against src/compiled_dict.json + compiled_dict_alternates.json.
+    This is data/citation-layer, not engineering, so explicitly handed off
+    to Claude A rather than left implicit -- see claude_a.
+    pending_data_cleanup_from_b above for full detail (exact rows,
+    requested action, provenance-check instruction). No code, no
+    master_dictionary.json fields touched by Claude B. Gate not re-run
+    (nothing changed since last verified-clean close at this same HEAD).
+    Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260831.md.
+
+    -----
+    2026-08-25 (Claude B, session close): AI-002 fixed -- see claude_b.next_action
     above and docs/CLAUDE_B_SESSION_MIGRATION_20260825.md for full detail. head=47437e0 is
     the actual HEAD immediately before this close commit, verified == origin/main via git
     fetch (rebased cleanly onto Claude A''s 47437e0 -rang ruling commit, landed after this
@@ -296,6 +313,46 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
+  pending_data_cleanup_from_b: 'DATA CLEANUP (flagged 2026-08-31, Claude B,
+    engineering verification complete, not an engineering fix): three
+    master_dictionary.json rows have notes declaring SUPERSEDED but
+    confidence still reads unverified -- stale metadata left over from the
+    2026-08-28 confidence-schema cutover, never re-tagged. Exact rows (line
+    numbers as of commit 9113a63, will drift with edits -- match on
+    english+garo instead):
+    (1) line ~19718: english="bye", garo="De / Ra / Bai", notes="SUPERSEDED
+    2026-08-26 — imprecise bundled candidate, no single confirmed default.
+    See ''Bye''->''De'' (VERIFIED/HIGH, NV-093) for the resolved default;
+    Bai/Ra remain unresolved variants.", confidence="unverified" (should be
+    "superseded").
+    (2) line ~28173: english="bland", garo="chi·brek·a", notes="SUPERSEDED
+    2026-08-26, citing NV-093 (''bland''->''Chibroka'', VERIFIED/HIGH).
+    Original note: UNVERIFIED/HIGH v:-brok-", confidence="unverified"
+    (should be "superseded").
+    (3) line ~28182: english="bland", garo="·brok·", notes="SUPERSEDED
+    2026-08-26, citing NV-093 (''bland''->''Chibroka'', VERIFIED/HIGH).
+    Original note: variant/UNVERIFIED/HIGH", confidence="unverified"
+    (should be "superseded"). (The third "bland" row at ~77475, garo=
+    "Chibroka", is the correct VERIFIED/HIGH default and is NOT affected --
+    leave it untouched.)
+    Action requested: update the confidence field on these 3 rows to
+    "superseded" to match the already-documented SUPERSEDED status in
+    notes, AFTER checking underlying provenance yourself per normal
+    linguistic-authority practice -- this is a citation/data-truth
+    correction, not a rubber-stamp. Claude B does not have write authority
+    over confidence and has NOT touched these fields.
+    Current live impact: NONE -- prepare-data.js''s notesDeclareSuperseded
+    regex fallback (shipped 2026-08-30) already reads the notes text
+    directly and correctly excludes all 3 from compiled_dict.json/
+    compiled_dict_alternates.json regardless of the stale confidence value.
+    Verified directly against src/compiled_dict.json +
+    src/compiled_dict_alternates.json at commit 9113a63: bye->"De" (alt
+    [De, Bai, Ra], correct separate-variant set, not a superseded-bundle
+    leak), bland->"Chibroka" (no alternates). This is a documentation/
+    schema-integrity cleanup, not a bug fix -- no urgency, but it should
+    not be silently carried forward indefinitely as a workaround-masks-
+    stale-data situation. Full detail: docs/
+    CLAUDE_B_SESSION_MIGRATION_20260831.md.'
   next_action: '2026-08-30E (Claude A, session 9, CLEAN CLOSE, joint A+B audit):
     resume-verified 30D''s claims live against the repo — all accurate, full
     gate green (8199/8199, 9/9, 264/264, 0 new violations), no orphaned
