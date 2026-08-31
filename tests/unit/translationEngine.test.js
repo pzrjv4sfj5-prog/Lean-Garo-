@@ -96,7 +96,15 @@ const REGRESSION_CASES = [
   // --- Rules 27/28/29 (2026-07-05): no true simple past, aha/manaha overlap, -bo hortative ---
   { in: 'he did not go', expectGaro: 'Ua Re·angja', expectMethod: ['grammar-assembly'] },
   { in: 'i did not go', expectGaro: 'Anga Re·angja', expectMethod: ['grammar-assembly'] },
-  { in: 'go', expectGaro: 'Re·anga' },
+  // 2026-08-31 (Claude B, go/re·ang- stem-decoupling fix): was 'Re·anga'
+  // (stale — that's actually "went"/"gone", per NV-100 VERIFIED/HIGH).
+  // phrase_maps.js['go'] mechanically resynced to compiled_dict.json's
+  // already-correct 're·a' now that the conjugation-stem coupling that
+  // required the wrong bare form is fixed (see conjugation_roots.json /
+  // getConjugationRoot in morphologyEngine.js). No linguistic decision
+  // made here — 'go'='re·a' was already the VERIFIED master_dictionary.json
+  // value; this test only catches up to it.
+  { in: 'go', expectGaro: 're·a' },
   { in: 'hai cha·bo', expectGaro: 'Hai cha·bo', expectMethod: ['correction'] },
 
   // --- Grammar-modeling audit (2026-07-05): affirmative past tense via
@@ -1794,4 +1802,63 @@ test('gija-construction silent-drop fix: a construction with no object at all (l
   const r = await translate('he stayed without eating');
   assert.equal(r.method, 'gija-construction');
   assert.ok(!r.garo.includes('[UNKNOWN]'), 'a construction with no object named at all must not spuriously show [UNKNOWN]');
+});
+
+// 2026-08-31, Claude B — go/re·ang- conjugation-stem decoupling fix (see
+// docs/CLAUDE_A_SESSION_MIGRATION_20260830E.md for the original discovery
+// and docs/CLAUDE_B_SESSION_MIGRATION_20260831.md-successor for the fix).
+// Root cause: findVerbForm('go') was the single source both for the bare-
+// form translation AND the stem every other tense suffixes onto. The bare
+// form is 're·a' (VERIFIED/HIGH, NV-100) but the tense-suffixed forms all
+// share a distinct, also-already-confirmed 'Re·ang' stem (went='re·anga',
+// going='re·angenga', will go='re·anggen'). getConjugationRoot() in
+// morphologyEngine.js (backed by conjugation_roots.json) now decouples the
+// two; phrase_maps.js['go'] was mechanically resynced to 're·a' via
+// scripts/resync-stale-overrides.mjs --apply once the decoupling made that
+// safe. These tests pin the full affected surface so the two can never
+// silently recouple.
+test('go/re·ang- decoupling: bare "go" uses the correct VERIFIED "re·a" root, not the "went"-family stem', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('go');
+  assert.equal(r.garo, 're·a');
+});
+
+test('go/re·ang- decoupling: "going" (present continuous, sov-assembly verb synthesis) still uses the re·ang- stem', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('i am going to school');
+  assert.equal(r.garo, 'Anga skulchi re·angenga');
+});
+
+test('go/re·ang- decoupling: "will go" (affirmative future) still uses the re·ang- stem, not the resynced bare "re·a" root', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('she will go');
+  assert.equal(r.garo, 'Ua Re·anggen');
+});
+
+test('go/re·ang- decoupling: "went" (past, IRREGULAR_VERBS entry via corrections.json exact-phrase) is unaffected', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('yesterday i went to the market');
+  assert.equal(r.garo, 'Mijalde bajalchi re·anga');
+});
+
+test('go/re·ang- decoupling: "did not go" (negative past, grammar-assembly) still uses the re·ang- stem for negation, not the resynced bare "re·a" root', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r1 = await translate('he did not go');
+  assert.equal(r1.garo, 'Ua Re·angja');
+  const r2 = await translate('i did not go');
+  assert.equal(r2.garo, 'Anga Re·angja');
+});
+
+test('go/re·ang- decoupling: "will not go" (negative future, RULE-030) is unaffected — still the bare "re·a" root directly, not the re·ang- stem', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r1 = await translate('he will not go');
+  assert.equal(r1.garo, 'Ua re·jawa');
+  const r2 = await translate('they will not go');
+  assert.equal(r2.garo, 'Uamang re·jawa');
+});
+
+test('go/re·ang- decoupling: getConjugationRoot is a no-op for every verb not in conjugation_roots.json (control case, "did not eat" unaffected)', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he did not eat');
+  assert.equal(r.garo, 'Ua Cha·ja');
 });

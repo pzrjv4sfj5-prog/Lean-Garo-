@@ -16,7 +16,28 @@
 
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
+import CONJUGATION_ROOTS from './data/conjugation_roots.json' with { type: 'json' };
 import { corrections, lookupGaro } from './lookupEngine.js';
+
+// go/re·ang- stem-decoupling fix (2026-08-31, Claude B — see
+// docs/CLAUDE_A_SESSION_MIGRATION_20260830E.md for the bug this closes).
+// findVerbForm(w) returns ONE value per English verb, used both as (a) the
+// bare/imperative translation shown for the untensed word, and (b) the stem
+// that applyTense/applyNegation suffix onto to build every other tense. For
+// most verbs those are the same root, so the coupling is invisible. For 'go'
+// they are NOT: the bare form is 're·a' (VERIFIED/HIGH, NV-100), but every
+// tense-suffixed form (went/going/will go/did not go) is built on a
+// different, also-already-confirmed 'Re·ang' stem. Previously the engine
+// papered over this by shipping the WRONG bare form ('Re·anga', actually
+// "went") just so the suffixed forms would come out right — this helper lets
+// the two be corrected independently: callers building a tense-suffixed
+// form should look the conjugation stem up here first, falling back to the
+// plain dictionary/findVerbForm value for every verb not in the table (i.e.
+// zero behavior change for anything except 'go').
+export function getConjugationRoot(w, garoVerb) {
+  const k = w.toLowerCase().trim();
+  return CONJUGATION_ROOTS[k] || garoVerb;
+}
 
 export function applyNegation(garoForm) {
   const base = garoForm.replace(/·a$/, '·').replace(/a$/, '');

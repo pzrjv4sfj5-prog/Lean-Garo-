@@ -16,7 +16,7 @@ import POSSESSIVES from './data/possessives.json' with { type: 'json' };
 import { NUMBER_WORDS, countNoun, parseCountingPhrase } from './garo_classifier.js';
 import { lookupGaro } from './lookupEngine.js';
 import { lookupPhrase } from './data/phrase_maps.js';
-import { applyNegation, applyTense, findVerbForm } from './morphologyEngine.js';
+import { applyNegation, applyTense, findVerbForm, getConjugationRoot } from './morphologyEngine.js';
 import { STOP_WORDS, AUXILIARY_SKIP } from './normalizationEngine.js';
 
 export function analyzeGrammar(input) {
@@ -335,7 +335,12 @@ export function analyzeGrammar(input) {
           break;
         }
         if (!isIrregular && ['future', ...SPECIAL_TENSES].includes(detectedTense)) {
-          garoWithTense = applyTense(garoVerb, detectedTense);
+          // go/re·ang- stem-decoupling (2026-08-31): suffix onto the
+          // dedicated conjugation stem when one exists for this verb, not
+          // onto garoVerb (the bare-form dictionary value) directly — see
+          // getConjugationRoot's own doc comment in morphologyEngine.js.
+          // No-op for every verb not in conjugation_roots.json.
+          garoWithTense = applyTense(getConjugationRoot(w, garoVerb), detectedTense);
         } else if (!isNegative && !isIrregular && (detectedTense === 'past' || /ed$/.test(w))
                    && !/(enga|aha|gen|bo|chim|jaha|jawa|nabe|manaha)$/.test(garoVerb)) {
           // Rule 2 (confirmed): -aha = simple past AND perfect. Applied here
@@ -349,7 +354,14 @@ export function analyzeGrammar(input) {
           garoWithTense = applyTense(garoVerb, 'past');
         }
         if (isNegative) {
-          garoWithTense = applyNegation(garoWithTense);
+          // Same decoupling as the future-tense branch above: at this point
+          // garoWithTense is still the untouched bare-form value for any
+          // non-future negative tense (the past branch above is gated on
+          // !isNegative and never runs here), so route it through the same
+          // conjugation-stem lookup before suffixing -ja. Negative-future
+          // 'go' is unaffected — it returns via the RULE-030 branch above
+          // and never reaches this line.
+          garoWithTense = applyNegation(getConjugationRoot(w, garoWithTense));
         }
         verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i };
         break;

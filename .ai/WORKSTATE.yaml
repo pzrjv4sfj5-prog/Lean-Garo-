@@ -2174,7 +2174,95 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-30C (Claude B, session close, resumed via
+  next_action: '2026-08-31B (Claude B, session close, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260831.md == this WORKSTATE state
+    prior to this entry; resync verified against ACTUAL repo state, not
+    assumed from the migration doc''s own claims -- HEAD at session start
+    was c581ee0, two commits ahead of what that doc/the resume brief
+    named as latest (a48139f): Claude A had already actioned the
+    pending_data_cleanup_from_b handoff (bye/bland confidence-field
+    fix) between that doc''s close and this session''s start. Confirmed
+    via git log, not assumed unchanged.
+
+    Task: fix the go/re·ang- conjugation-stem decoupling engineering bug
+    flagged OPEN for Claude B in docs/CLAUDE_A_SESSION_MIGRATION_
+    20260830E.md. Root cause (confirmed by re-reading that doc + live
+    reproduction before touching anything): findVerbForm(''go'') returned
+    ONE value serving two different roles -- (a) the bare/imperative
+    translation, and (b) the stem every other tense (future/negative-
+    past/present-continuous) suffixes onto. compiled_dict.json[''go'']
+    was already correctly ''re·a'' (NV-100, VERIFIED/HIGH), but
+    phrase_maps.js[''go''] still shipped the stale ''Re·anga'' (actually
+    "went"/"gone"'' sense) -- the ONLY reason will-go/did-not-go hadn''t
+    already broken, per A''s own diagnosis.
+
+    Fix (engineering-scope only -- no Garo forms invented, no linguistic
+    calls made, per instruction): added src/data/conjugation_roots.json
+    (`{"go": "Re·ang"}`) -- the stem mechanically extracted from forms
+    already shipping elsewhere in the codebase (went=re·anga,
+    going=re·angenga, will go=re·anggen), not a new fact. Added
+    getConjugationRoot(w, garoVerb) in morphologyEngine.js -- returns the
+    table override or falls through to garoVerb unchanged, so it''s a
+    no-op for every verb except ''go''. Updated grammarEngine.js''s
+    future/special-tense branch and the general negation branch to
+    suffix onto getConjugationRoot(...) instead of the raw dictionary
+    value; RULE-030''s existing negative-future hardcode (bare ''re·a''
+    root for "will not go") was left untouched -- separate, already-
+    correct native rule, unaffected. Then ran scripts/resync-stale-
+    overrides.mjs --apply, which mechanically flipped phrase_maps.js
+    [''go''] from ''Re·anga'' to ''re·a'' (the one candidate it was
+    already flagging pre-fix) now that the decoupling makes it safe.
+
+    Verified live (translate(), not grep, per SS3 of the governance doc):
+    "go"->"re·a" (was "Re·anga", now correct), "he/i did not go"->"...
+    Re·angja" (unchanged), "she will go"->"...Re·anggen" (unchanged),
+    "yesterday i went to the market"->"...re·anga" (unchanged, exact-
+    phrase correction path), "i am going to school"->"...re·angenga"
+    (unchanged), "he/they will not go"->"...re·jawa" (unchanged, RULE-030
+    untouched), "he did not eat" (control, no table entry)->"Ua Cha·ja"
+    (unchanged) -- confirming the fix is scoped to exactly ''go'' and
+    nothing else regressed.
+
+    Updated 1 stale test (tests/unit/translationEngine.test.js:99,
+    ''go''->expectGaro was ''Re·anga'', now ''re·a'') -- this is catching
+    the test up to the already-VERIFIED master_dictionary.json value,
+    not a new linguistic decision (per governance SS6''s "stale test/doc
+    assertions" engineering-scope carve-out). Added 7 new regression
+    tests pinning the full affected surface (bare go, going, will go,
+    went, did-not-go x2 subjects, will-not-go x2 subjects, control case
+    eat) so the two roles can''t silently recouple again.
+
+    Full gate clean: node prepare-data.js (8199/8199 entries, unchanged
+    -- zero master_dictionary.json edits this session), node
+    test-dictionary.js (8199/8199, 9/9 grammatical corrections), node
+    repository-intelligence.js (0 new violations across all 7 checks),
+    node scripts/resync-stale-overrides.mjs (0 candidates, down from 1
+    pre-fix -- the ''go'' entry it was flagging), node --test
+    tests/unit/*.test.js (271/271, was 264, +7 new), vite build clean
+    (59 modules). npm install run fresh (node_modules absent at session
+    start, gitignored, not committed).
+
+    Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260831B.md.
+
+    -----
+    2026-08-31 (Claude B, session close): No engineering work this
+    session -- resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260830C.md,
+    confirmed no blocking engineering item (per that session''s own
+    close). Re-verified the bye/bland SUPERSEDED-notes/unverified-
+    confidence metadata mismatch (first found 2026-08-30) is still
+    present in master_dictionary.json and still correctly neutralized at
+    compile time by notesDeclareSuperseded -- 0 live/runtime impact,
+    confirmed against src/compiled_dict.json + compiled_dict_alternates.json.
+    This is data/citation-layer, not engineering, so explicitly handed off
+    to Claude A rather than left implicit -- see claude_a.
+    pending_data_cleanup_from_b above for full detail (exact rows,
+    requested action, provenance-check instruction). No code, no
+    master_dictionary.json fields touched by Claude B. Gate not re-run
+    (nothing changed since last verified-clean close at this same HEAD).
+    Full detail: docs/CLAUDE_B_SESSION_MIGRATION_20260831.md.
+
+    -----
+    2026-08-30C (Claude B, session close, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260830B.md == this WORKSTATE state
     prior to this entry). Project Owner directive: investigate AI-001
     subclass (b)/confidence_source before changing anything, do not

@@ -318,7 +318,7 @@ export const PHRASE_MAPS = {
   'cry': 'Grap·a',
   'sell': 'Pala',
   'come': 'Re·ba·a',
-  'go': 'Re·anga',
+  'go': 're·a',
   'open': 'Oa',
   'close': 'Chip·a',
   'push': 'Jit·pak·a',
