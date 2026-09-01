@@ -5637,3 +5637,23 @@ Reading: `[Anga-de]`(topic-subject) `[English]`(loan object) `[ku·sik-ko-san]`(
 
 
 **5. Secondary engine anomaly found while live-verifying this session's new rows (Claude B handoff, not investigated further — out of lane):** `translate("i don't know garo")` returns `"Anga rong·ko hai·ja"` via `grammar-assembly`, NOT the new exact-match row `"Angade Garo man·ja."` — despite `src/compiled_dict.json` containing the key `"i don't know garo"` with exactly that value (confirmed via direct JSON read). Every other new row this session (`can you talk in garo`, `do you know hindi/english`, `can you help me with the address`, `i cannot help you`) resolved correctly via `exact-phrase` at 0.98 confidence on the first live check. The one row that failed is the one containing an apostrophe (`don't`) — possibly a recurrence of the historical apostrophe-lookup defect class (see 2026-08-16b entry, `lookupPhrase`), but this time on the exact-phrase/compiled_dict.json path rather than the old `PHRASE_MAPS` path already fixed then. Not diagnosed further — engine code is Claude B's territory.
+
+---
+
+## NV-104 — "yesterday": Mijal confirmed (2026-09-01)
+
+**Source:** Thangseng, direct confirmation via Project Owner relay (Tridip/WhatsApp), answering `docs/THANGSENG_RELAY_QUESTION_20260901.md`.
+
+**Question asked:** whether `Mijal` (used in two existing unverified sentences) is the same word as the already-VERIFIED/HIGH `Mejal`/`me·ja·o` ("yesterday"), a mistake, or a distinct word.
+
+**Answer:** Thangseng confirmed `Mijal` = "yesterday". Not reconciled/merged into a single spelling with `Mejal`/`me·ja·o` — kept as a separate confirmed variant, per citation discipline (the relay did not state a preferred/primary spelling among the three).
+
+**Action taken:** promoted both affected sentences to VERIFIED/HIGH:
+- "he came by bus yesterday" = `Bia bus o raba·a mijalo` (idx 964)
+- "how was the journey yesterday?" = `Mijal songre·ara namama?` (idx 1002)
+
+Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) are unchanged, still VERIFIED/HIGH, uncontradicted.
+
+**Duplicate-representation check (Rule 8):** `corrections.json`/`phrase_maps.js` checked for either sentence key — no entries exist in either file, nothing to sync. Live-verified via `translate()` post-rebuild: both resolve `exact-phrase`, 0.98 confidence, correct value.
+
+**Runtime Handoff:** None — pure confidence-field promotion on two existing rows, no new keys, no engine involvement.

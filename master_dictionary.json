@@ -6287,7 +6287,8 @@
     "english": "he came by bus yesterday",
     "garo": "Bia bus o raba·a mijalo",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-01, NV-104), answering docs/THANGSENG_RELAY_QUESTION_20260901.md: Mijal confirmed as a valid form of \"yesterday\", coexisting with the already-VERIFIED/HIGH Mejal/me·ja·o (not merged/reconciled as a single spelling — kept as a confirmed variant per citation discipline)."
   },
   {
     "english": "why did you come?",
@@ -6519,8 +6520,8 @@
     "english": "how was the journey yesterday?",
     "garo": "Mijal songre·ara namama?",
     "category": "time",
-    "confidence": "unverified",
-    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period)."
+    "confidence": "verified_high",
+    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period). | VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-01, NV-104), answering docs/THANGSENG_RELAY_QUESTION_20260901.md: Mijal confirmed as a valid form of \"yesterday\", coexisting with the already-VERIFIED/HIGH Mejal/me·ja·o (not merged/reconciled as a single spelling — kept as a confirmed variant per citation discipline)."
   },
   {
     "english": "what?",

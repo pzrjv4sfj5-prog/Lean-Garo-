@@ -1,6 +1,6 @@
 # Thangseng Relay — Single Question (2026-09-01)
 
-**Status:** Not yet sent. For Project Owner to relay via Tridip/WhatsApp.
+**Status:** ANSWERED / CLOSED (2026-09-01). Thangseng confirmed `Mijal` = "yesterday" via Project Owner relay. See NV-104 in `docs/THANGSENG_NATIVE_VALIDATION.md` for the full closure and the two rows promoted to VERIFIED/HIGH.
 **Source:** `docs/CLAUDE_A_SESSION_MIGRATION_20260901.md` §9 item 4;
 flagged during NV-103.
 
