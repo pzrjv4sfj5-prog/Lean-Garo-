@@ -16,7 +16,7 @@ import POSSESSIVES from './data/possessives.json' with { type: 'json' };
 import { NUMBER_WORDS, countNoun, parseCountingPhrase } from './garo_classifier.js';
 import { lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { lookupPhrase } from './data/phrase_maps.js';
-import { applyNegation, applyTense, findVerbForm, getConjugationRoot } from './morphologyEngine.js';
+import { applyNegation, applyTense, findVerbForm, getConjugationRoot, applyTopicSuffix, composeBoundOnlyObject, applyDeclarativeEndingAia } from './morphologyEngine.js';
 import { STOP_WORDS, AUXILIARY_SKIP } from './normalizationEngine.js';
 
 export function analyzeGrammar(input) {
@@ -745,4 +745,66 @@ export function tryWithoutGijaConstruction(input) {
 
   const parts = [subjectGaro, objGaro, gijaForm, mainVerbGaro].filter(Boolean);
   return parts.length >= 2 ? parts.join(' ') : null;
+}
+
+// NV-103 (2026-09-01, Claude B — docs/CLAUDE_B_SESSION_MIGRATION_20260901.md):
+// "the only NOUN SUBJ VERB is OBJECT" identity/restrictive construction.
+// Fixes the confirmed sov-assembly composition gap for
+// translate("the only language i speak is english") — was shipping
+// "mangmang ba·sa Anga to be / to exist Agana" (free-standing "only",
+// wrong word order, bare unmarked verb). Native evidence (single
+// attestation, NV-103): "Angade English ku·sikkosan aganaia." reads as
+// [topic-subject][object][noun-OBJ-only, one bound unit][verb+ending].
+//
+// This is a general PATTERN handler, not a single-sentence patch — any
+// English sentence matching "the only X SUBJ VERB is Y" is routed
+// through the same four already-attested morphemes (-de topic suffix,
+// -ko object marker (RULE-009), -san bound "only", -aia declarative
+// ending). No new linguistic forms are used or invented; per governance
+// (single-attestation is below threshold for a general RULE — see the
+// migration doc above) this stays a narrowly-triggered construction
+// handler rather than being folded into applyTense's general suffix
+// table.
+//
+// Object-word loanword fallback: if the object noun has no dictionary
+// entry, native evidence shows English loanwords surface unchanged
+// ("English" stays "English" in the native sentence) — so an
+// unresolved object falls back to its capitalized surface form rather
+// than bailing the whole construction, mirroring that one attested
+// data point. NOTE (flagged, not fixed here — out of engineering
+// scope): the specific object "english" currently resolves via
+// lookupGaro to "to be / to exist" rather than falling through to this
+// loanword path, because of a second, previously undocumented data
+// corruption in garo_dictionary.json (7 rows keyed bare "english",
+// unrelated conjugation-table fragments — "to eat", "to go", "to come",
+// "to give / to offer", "to be / to exist", etc., confirmed via direct
+// read) that master_dictionary.json's NV-103 fix did not reach because
+// it lives in a different source file entirely. See migration doc for
+// the full citation — this is a Claude A/data-hygiene item, not
+// something this function should silently work around.
+export function tryOnlyIdentityConstruction(input) {
+  const m = input.match(/\bthe only (.+?) (i|you|he|she|we|they) ([a-z']+) is ([a-z']+)\b/i);
+  if (!m) return null;
+  const [, nounPhraseRaw, subjectWord, verbWord, objectWord] = m;
+  const nounWord = nounPhraseRaw.trim().toLowerCase();
+  const subjectPronounGaro = PRONOUN_MAP[subjectWord.toLowerCase()];
+  if (!subjectPronounGaro) return null;
+
+  const nounGaro = lookupGaro(nounWord);
+  if (!nounGaro) return null;
+
+  const verbGaro = findVerbForm(verbWord.toLowerCase());
+  if (!verbGaro) return null;
+
+  const objGaroRaw = lookupGaro(objectWord.toLowerCase());
+  // Loanword fallback (see comment above) only when the dictionary has
+  // genuinely nothing — a resolved (even if separately-corrupted)
+  // dictionary value is not second-guessed here.
+  const objGaro = objGaroRaw || (objectWord.charAt(0).toUpperCase() + objectWord.slice(1).toLowerCase());
+
+  const subjectWithTopic = applyTopicSuffix(subjectPronounGaro);
+  const boundObject = composeBoundOnlyObject(nounGaro);
+  const verbWithEnding = applyDeclarativeEndingAia(verbGaro);
+
+  return [subjectWithTopic, objGaro, boundObject, verbWithEnding].join(' ');
 }

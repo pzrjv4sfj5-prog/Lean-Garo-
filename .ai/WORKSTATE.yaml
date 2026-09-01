@@ -2353,7 +2353,111 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: '2026-08-31C (Claude B, session close, resumed via
+  next_action: '2026-09-01 (Claude B, session close, resumed via
+    docs/CLAUDE_B_SESSION_MIGRATION_20260831C.md; resynced against ACTUAL
+    repo state per user preference, not the doc''s stale head pointer --
+    HEAD at session start was 07e6ac0 (one commit ahead of the cited doc:
+    Claude A''s NV-103 man·a batch + Major Finding, landed after
+    20260831C closed), clean tree, origin/main up to date.
+
+    Priority 1 (DONE): NV-103 sov-composition gap for "the only language
+    i speak is english". Root-caused: sov-assembly is a flat bag-of-words
+    composer with no topic-marking, no bound-object-compounding, no
+    verb-ending logic at all -- not a bug in existing logic, a genuinely
+    missing capability. Added a new, general (not sentence-specific)
+    construction handler, tryOnlyIdentityConstruction (grammarEngine.js),
+    wired into translate() at step 5.7 (same tier as the gija
+    construction, before grammar-assembly). Three new narrow morphology
+    helpers in morphologyEngine.js (applyTopicSuffix, composeBoundOnlyObject,
+    applyDeclarativeEndingAia) reuse the existing stripToStem/concatenative-
+    suffix convention -- no new stripping rules invented. Per governance
+    (single-attestation is below the threshold for a general RULE), this
+    stays a narrowly-triggered pattern handler, not folded into applyTense.
+    Verified live against multiple sentences beyond the one cited example
+    ("the only fruit i eat is mango" -> "Angade te·ga·chu Bitekosan
+    Cha·aia", "the only book you read is bible" -> "Na·ade Sastro
+    Ki·tapkosan po·ri·aia", "the only game they play is football" ->
+    "Uamangde Football Kal·anikosan Kal·aia") -- confirms the mechanism
+    generalizes, not a single-sentence patch. The NV-103 cited sentence
+    itself now correctly gets topic-suffix + bound-object + SOV order +
+    verb-ending; only the object slot for "english" specifically is still
+    wrong, because of a NEW finding below.
+
+    NEW FINDING (flagged for Claude A, not fixed here -- data-hygiene,
+    out of engineering lane): NV-103''s fix superseded the ONE corrupted
+    "english" row in master_dictionary.json ("Call police"), but
+    compiled_dict.json still resolves "english" -> "to be / to exist"
+    after a fresh prepare-data.js rebuild. Traced to garo_dictionary.json
+    (a second, non-master merge source read by prepare-data.js''s
+    finalizeDictionary/mergedValues pipeline) which independently holds
+    SEVEN rows keyed bare "english" mapped to unrelated conjugation-table
+    fragments -- confirmed via direct read: {"english":"english",
+    "garo":"to have / to exist (possession)"}, then "to eat", "to go",
+    "to come", "to do / to work / to make", "to give / to offer", and
+    finally "to be / to exist" (the one pickPrimary selects). This looks
+    like the same class of corruption NV-103 already diagnosed and fixed
+    in master_dictionary.json (a flattened grammar-paradigm-table object
+    whose column labels got imported as if they were real headword rows),
+    just living in the other source file NV-103''s fix didn''t reach.
+    Not touched this session -- garo_dictionary.json content judgment is
+    Claude A''s data-authority lane, and it wasn''t clear whether this
+    file is even still meant to be a live merge input post-migration-
+    cutover (see this file''s own repeated "since migrated into
+    master_dictionary.json" references elsewhere) or should be
+    deprecated from the merge entirely. Flagging both options for Claude
+    A rather than guessing.
+
+    Priority 2 (DONE): investigated + fixed the "i don''t know garo"
+    apostrophe-lookup anomaly Claude A flagged (NV-103 §5, "Secondary
+    engine anomaly"). Root cause: translationEngine.js''s step-2 exact-
+    phrase lookup (`lookupGaro(lower)`) only ever tried the apostrophe-
+    STRIPPED form -- the third recurrence of a bug class already fixed
+    twice earlier in this exact cascade (corrections.json step 1,
+    RC-CANDIDATE-030; phrase_maps.js step 1.5, 2026-08-20), both of which
+    already try the apostrophe-preserved form first. compiled_dict.json
+    genuinely holds the exact key "i don''t know garo" ->
+    "Angade Garo man·ja." (added this NV-103 session), but the stripped
+    lookup key "i dont know garo" was never in the dict, so it fell
+    through to grammar-assembly. Fix: same three-form try order as the
+    two existing precedents (`lookupGaro(lowerWithApos) ||
+    lookupGaro(cleaned) || lookupGaro(lower)`), scoped to this one lookup
+    site only. Live-verified fixed, and confirmed the two existing
+    apostrophe-preserving paths (phrase-map, corrections) are unaffected.
+
+    Priority 3 (HELD, correctly not implemented): checked
+    claude_a.pending_thangseng_questions for the ama vs man·a relay
+    question before touching NV-008''s ama construction, per instruction
+    not to invent or merge forms. Confirmed still open/unanswered as of
+    this session''s WORKSTATE read (queued 2026-08-31C, re-referenced as
+    "still-open, still-unanswered" in Claude A''s 2026-09-01 close).
+    Implementing the ama modal construction now would require picking
+    between ama (NV-008, first-person declarative) and man·a (NV-103,
+    second-person ability-question/negation) without a native ruling on
+    whether the split is genuinely person/register-conditioned or
+    something else -- exactly the unresolved-pattern-inference NV-103
+    itself flagged as forbidden. Left untouched, holding for Thangseng''s
+    answer.
+
+    Priority 4 (deferred per explicit instruction + token-budget
+    constraint): the broader grammar/morphology/tense engineering audit
+    (prepare-data.js, garo_classifier.js, corrections/override layer)
+    was NOT started this session -- instructed to wait until priorities
+    1-3 were addressed, and 3 is correctly blocked on an external answer
+    rather than something resolvable this session. Next session should
+    pick this up fresh rather than assuming any of it was touched.
+
+    Gate: full clean, verified at every stage (baseline AND after each
+    fix). 282/282 tests before the item-5 fix, 284/284 after (7 new
+    tests added: 5 for the NV-103 construction incl. cross-pronoun
+    generalization + loanword-fallback + false-positive guard, 2 for the
+    apostrophe fix). 8205/8205 dictionary entries, 9/9 grammatical
+    corrections, 0 new repository-intelligence.js violations, 0 resync
+    candidates. prepare-data.js output byte-identical across every
+    rerun (8205 entries, same held/tie/no-verified-candidate counts) --
+    confirms this session touched zero dictionary DATA, only engine
+    code + tests, exactly as scoped. Full migration doc:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260901.md.'
+  next_action_prior_20260831C: '2026-08-31C (Claude B, session close, resumed via
     docs/CLAUDE_B_SESSION_MIGRATION_20260831B.md; resync verified against
     ACTUAL repo state, not the doc''s own claims -- HEAD at session start
     was 95702d2 == origin/main, clean tree, confirming the prior session''s

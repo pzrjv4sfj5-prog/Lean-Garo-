@@ -29,7 +29,7 @@ import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js
 // analyzeGrammar, tryWithoutGijaConstruction extracted to
 // src/grammarEngine.js (2026-07-29, BACKLOG-003 Phase 5). Verified zero
 // logic change via byte-identical 237-sentence stress benchmark diff.
-import { analyzeGrammar, tryWithoutGijaConstruction } from './grammarEngine.js';
+import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction } from './grammarEngine.js';
 export { analyzeGrammar };
 // assembleSentenceSOV, assembleGrammar, translateIfClause,
 // translateMultiClause extracted to src/sentenceBuilder.js
@@ -161,7 +161,24 @@ export async function translate(input) {
   // counted-noun phrase that has no dedicated compiled_dict.json entry
   // (the vast majority) — this only changes behavior for phrases that
   // DO have one.
-  const exactPhrase = lookupGaro(lower);
+  // APOSTROPHE-LOOKUP FIX (2026-09-01, Claude B — NV-103 item 5 handoff,
+  // docs/CLAUDE_B_SESSION_MIGRATION_20260901.md): this step only ever
+  // tried `lower` (apostrophe-stripped), the third recurrence of the
+  // exact same bug class already fixed for corrections.json (step 1,
+  // RC-CANDIDATE-030) and phrase_maps.js (step 1.5, 2026-08-20) earlier
+  // in this same cascade — both of those steps try the apostrophe-
+  // preserved form first and only fall back to the stripped form.
+  // Confirmed live: compiled_dict.json holds the exact key
+  // "i don't know garo" -> "Angade Garo man·ja." (added this session,
+  // NV-103), but translate("i don't know garo") shipped
+  // "Anga rong·ko hai·ja" via grammar-assembly instead — the apostrophe-
+  // stripped lookup key "i dont know garo" simply isn't in the dict,
+  // since compiled_dict.json's keys preserve apostrophes. Every other
+  // apostrophe-containing key added this session (none, as it happens —
+  // this is the first one) would have hit the identical failure. Same
+  // precedence fix, same three-form try order as the two existing
+  // precedents, scoped to this one lookup only.
+  const exactPhrase = lookupGaro(lowerWithApos) || lookupGaro(cleaned) || lookupGaro(lower);
   if (exactPhrase) return { garo: exactPhrase, method: 'exact-phrase', confidence: 0.98 };
 
   // 1.6 Classifier counting — "2 dogs", "one teacher", "5 birds"
@@ -259,6 +276,16 @@ export async function translate(input) {
   // 5.5 Rule 18 positive gija construction ("without VERB-ing")
   const gijaConstruction = tryWithoutGijaConstruction(cleaned);
   if (gijaConstruction) return { garo: gijaConstruction, method: 'gija-construction', confidence: 0.85 };
+
+  // 5.7 NV-103 "the only X SUBJ VERB is Y" identity/restrictive
+  // construction (2026-09-01, Claude B — see grammarEngine.js's
+  // tryOnlyIdentityConstruction for the full citation). Tried at the
+  // same tier as the gija construction, before grammar-assembly, since
+  // analyzeGrammar has no NP-coherence path for this shape and would
+  // otherwise fall all the way through to sov-assembly's word-salad
+  // output (the confirmed pre-fix bug).
+  const onlyIdentity = tryOnlyIdentityConstruction(cleaned);
+  if (onlyIdentity) return { garo: onlyIdentity, method: 'only-identity-construction', confidence: 0.85 };
 
   // 6. Grammar assembly — SOV with -ko object marker and -na purpose clause
   const grammar = analyzeGrammar(cleaned);

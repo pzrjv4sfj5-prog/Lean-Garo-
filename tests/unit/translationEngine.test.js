@@ -1917,3 +1917,84 @@ test('negative-future-continuous: the bare-noun-negation fallback (meant for "no
   assert.notEqual(r.method, 'sov-assembly');
   assert.ok(!r.garo.includes('Ihing'));
 });
+
+// ── NV-103 "only X SUBJ VERB is Y" identity/restrictive construction ──────
+// (2026-09-01, Claude B — docs/CLAUDE_B_SESSION_MIGRATION_20260901.md).
+// Native evidence (single attestation): "the only language i speak is
+// english" -> "Angade English ku·sikkosan aganaia." Confirmed pre-fix bug:
+// translate() shipped "mangmang ba·sa Anga to be / to exist Agana" via
+// sov-assembly (free-standing "only", wrong word order, no verb ending).
+// This handler generalizes the attested morphemes (-de topic suffix, -ko
+// object marker, -san bound "only", -aia declarative ending) to the whole
+// "the only X SUBJ VERB is Y" pattern, not just the one cited sentence.
+
+test('NV-103 only-identity: general mechanism — topic suffix, bound object+only, SOV order, and declarative ending are all present, using clean object/noun words unaffected by any other known data defect', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('the only fruit i eat is mango');
+  assert.equal(r.method, 'only-identity-construction');
+  assert.equal(r.garo, 'Angade te·ga·chu Bitekosan Cha·aia');
+  // topic suffix on subject
+  assert.ok(r.garo.startsWith('Angade '));
+  // bound object+only as ONE unit (not the free-standing "mangmang")
+  assert.ok(r.garo.includes('Bitekosan'));
+  assert.ok(!r.garo.includes('mangmang'));
+  // verb carries the -aia declarative ending, not a bare root
+  assert.ok(r.garo.endsWith('aia'));
+});
+
+test('NV-103 only-identity: generalizes across subject pronouns, not just "i"', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const rYou = await translate('the only book you read is bible');
+  assert.equal(rYou.garo, 'Na·ade Sastro Ki·tapkosan po·ri·aia');
+  const rThey = await translate('the only game they play is football');
+  assert.equal(rThey.garo, 'Uamangde Football Kal·anikosan Kal·aia');
+});
+
+test('NV-103 only-identity: the exact NV-103 cited sentence now routes through the construction (not sov-assembly) — the topic/order/bound-object/verb-ending composition bug is fixed; the object slot for "english" specifically still surfaces a SEPARATE, previously-undocumented data defect (garo_dictionary.json has 7 unrelated rows keyed bare "english") that is out of this fix\'s scope and flagged separately, not silently patched', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('the only language i speak is english');
+  assert.equal(r.method, 'only-identity-construction');
+  assert.ok(r.garo.startsWith('Angade '));
+  assert.ok(r.garo.includes('ba·sakosan'));
+  assert.ok(r.garo.endsWith('Aganaia'));
+  assert.ok(!r.garo.includes('mangmang'));
+});
+
+test('NV-103 only-identity: unresolved object noun falls back to a capitalized loanword pass-through rather than bailing the whole construction (matches the native "English" stays "English" pattern)', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('the only language i speak is klingon');
+  assert.equal(r.method, 'only-identity-construction');
+  assert.ok(r.garo.includes('Klingon'));
+});
+
+test('NV-103 only-identity: does not fire on unrelated "only" sentences — the free-standing mangmang path is untouched', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('i am the only student');
+  assert.notEqual(r.method, 'only-identity-construction');
+});
+
+// ── NV-103 item 5: exact-phrase apostrophe-lookup fix ─────────────────────
+// (2026-09-01, Claude B). Third recurrence of the apostrophe-stripped-only
+// lookup bug in this same cascade (corrections.json and phrase_maps.js
+// were already fixed for this; the exact-phrase/compiled_dict.json step
+// had not been). Confirmed live: compiled_dict.json holds an exact key
+// "i don't know garo" -> "Angade Garo man·ja." but translate() shipped a
+// different grammar-assembly result because the stripped lookup key
+// "i dont know garo" isn't in the dict.
+
+test("NV-103 item 5: i don't know garo now resolves via exact-phrase, matching its compiled_dict.json entry, instead of falling through to grammar-assembly", async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate("i don't know garo");
+  assert.equal(r.method, 'exact-phrase');
+  assert.equal(r.garo, 'Angade Garo man·ja.');
+});
+
+test('NV-103 item 5: existing apostrophe-preserving paths (corrections, phrase-map) are unaffected by the exact-phrase fix', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const rPhraseMap = await translate("i don't know");
+  assert.equal(rPhraseMap.method, 'phrase-map');
+  assert.equal(rPhraseMap.garo, 'Anga uija');
+  const rCorrection = await translate("let's go");
+  assert.equal(rCorrection.method, 'correction');
+  assert.equal(rCorrection.garo, 'Hai re·naha');
+});

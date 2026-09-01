@@ -201,3 +201,42 @@ export function stripToStem(garoWord) {
   if (!garoWord) return garoWord;
   return garoWord.replace(/a$/i, '');
 }
+
+// NV-103 (2026-09-01, Claude B, "only language" sov-composition fix —
+// docs/CLAUDE_B_SESSION_MIGRATION_20260901.md). Three narrow, mechanical
+// morphology helpers for the topic/bound-object/declarative-ending
+// construction attested ONCE in native evidence:
+//   Angade   English   ku·sikkosan       aganaia.
+//   [Anga-de][English] [ku·sik-ko-san]   [agan-aia]
+// Per governance (single-attestation is below the threshold for a new
+// general RULE — see docs/CLAUDE_A_SESSION_MIGRATION_20260901.md §5),
+// these are NOT wired into applyTense/applyNegation's general tables.
+// They exist only so grammarEngine.js's tryOnlyIdentityConstruction can
+// reuse already-verified concatenative-suffix conventions (the same
+// "strip trailing a, append suffix" pattern applyNegation/applyTense
+// already use) rather than reimplementing ad hoc string surgery inline.
+
+// -de topic/contrastive suffix ("as for..."). Concatenative, same
+// precedent as -ko (RULE-009) — no new stem invented, just suffixation
+// onto an already-resolved pronoun form.
+export function applyTopicSuffix(pronounGaro) {
+  if (!pronounGaro) return pronounGaro;
+  return pronounGaro + 'de';
+}
+
+// Bound object+"only" compound (noun + already-VERIFIED -ko object
+// marker, RULE-009, + the newly-attested bound "-san" only-suffix,
+// distinct from the free-standing "only" = mangmang). Mechanical
+// concatenation only.
+export function composeBoundOnlyObject(nounGaro) {
+  if (!nounGaro) return nounGaro;
+  return nounGaro + 'ko' + 'san';
+}
+
+// -aia declarative/copula verb-ending. Reuses stripToStem's existing
+// "strip the final bare a" convention (same one applyNegation's `base`
+// step relies on) rather than inventing a new stripping rule.
+export function applyDeclarativeEndingAia(garoVerb) {
+  if (!garoVerb) return garoVerb;
+  return stripToStem(garoVerb) + 'aia';
+}
