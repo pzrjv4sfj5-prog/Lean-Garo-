@@ -1,5 +1,5 @@
 repository:
-  head: 613d9e4
+  head: fc32588
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,12 +313,40 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260831C.md - this session's
+  next_action: '2026-08-31D (Claude A, resume of 20260831C migration doc,
+    CLEAN CLOSE): verified repo complete/synced on resume (HEAD 98cbb5b ==
+    origin/main, clean tree, nothing landed since the 613d9e4 checkpoint).
+    Live-reverified Finding B (ama modal "can"): still unimplemented,
+    exactly as documented -- B-owned, not touched. Only open linguistic
+    item was the ama-vs-man·a question, flagged but never sent last
+    session; sent it to the relay queue this session with full meaning/
+    POS/tense-aspect/context (see pending_thangseng_questions below and
+    docs/THANGSENG_RELAY_QUESTION_20260831C.md, copy-paste ready for
+    Project Owner to relay via Tridip/WhatsApp). Also found and fixed a
+    duplicate-key bug in this file: claude_a had three raw next_action:
+    keys instead of one current + prior-suffixed history, so any
+    yaml.safe_load consumer was silently reading the stale 31B entry
+    instead of the current 31C one -- fixed, exactly one live next_action
+    now parses. Noted (not fixed, out of scope/budget this session): the
+    same duplicate-key pattern recurs elsewhere in this file among older
+    next_action_prior_* archival keys (e.g. two next_action_prior_20260830E
+    entries) and in other roles'' sections -- archival only, does not
+    affect current-state reads, flagging for a future dedicated cleanup
+    pass rather than fixing now. No dictionary/compiled data touched --
+    master_dictionary.json/compiled_dict.json/corrections.json/
+    phrase_maps.js byte-identical to session start (rebuilt via
+    prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
+    9/9, 271/271, build clean. Migration doc:
+    docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md - this session's
+    close (2026-08-31D, resume of 20260831C, sent the ama/man·a Thangseng
+    question, fixed the WORKSTATE.yaml next_action duplicate-key bug).
+  migration_doc_prior_20260831C: docs/CLAUDE_A_SESSION_MIGRATION_20260831C.md - this session's
     close (2026-08-31C, joint A+B grammar/morphology/tense audit, Claude A
     half, MIGRATION CLOSE per explicit Project Owner instruction -- audit
     and record only, no fixes attempted on Finding B, the one remaining
     open item).
-  next_action: '2026-08-31C (Claude A, joint A+B grammar/morphology/tense
+  next_action_prior_20260831C: '2026-08-31C (Claude A, joint A+B grammar/morphology/tense
     audit, Claude A half, MIGRATION CLOSE -- do NOT start fixing Finding B
     below in the next session''s first action without first re-verifying
     it is still open, per the resume protocol): full linguistic audit
@@ -963,7 +991,7 @@ claude_a:
     Three items explicitly deferred to the NEXT SESSION WORK QUEUE (see next_action), untouched this
     session: (1) 138-item Thangseng relay batch, (2) pickPrimary verified-ties backlog, (3)
     repository-wide space-before-ma sweep.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260825.md - this session's close (2026-08-25,
+  migration_doc_prior_20260825: docs/CLAUDE_A_SESSION_MIGRATION_20260825.md - this session's close (2026-08-25,
     migration/handoff only — see also docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md for the ruling
     itself, which this migration doc incorporates in full).
   migration_doc_prior_20260825_ruling: docs/CLAUDE_A_RANG_PLURAL_RULING_20260825.md - this session's
