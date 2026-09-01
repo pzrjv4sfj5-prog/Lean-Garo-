@@ -7356,7 +7356,8 @@
     "english": "garo",
     "garo": "Contact khagen",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-103 (2026-09-01, Claude A): this row's garo value 'Contact khagen' is unrelated to the English headword 'garo' -- a data-import corruption (misaligned/garbled source row), not a linguistic candidate of any confidence tier. Same defect class as the sibling 'english'->'Call police' row documented in the same NV-103 finding (both surfaced while investigating the runtime bug in 'the only language i speak is english'; this row separately corrupted 'can you talk in garo' / 'i don't know garo' output before this session). No replacement value supplied here -- none is native-confirmed for the bare word 'garo' as of this entry. Retained per citation discipline, not deleted."
   },
   {
     "english": "hindi",
@@ -7413,7 +7414,8 @@
     "english": "english",
     "garo": "Call police",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-103 (2026-09-01, Claude A): this row's garo value 'Call police' is unrelated to the English headword 'english' -- a data-import corruption (misaligned/garbled source row), not a linguistic candidate of any confidence tier. Identified as the direct cause of the sov-assembly runtime bug documented in NV-103 (the bare word 'english' has no other master_dictionary.json row, so this corrupted unverified row was the only candidate pickPrimary/sov-assembly had to select for that slot). No replacement value supplied here -- none is native-confirmed for the bare word 'english' as of this entry; the object slot should fall through to [UNKNOWN] until a real citation exists, not silently ship unrelated text. Retained per citation discipline, not deleted."
   },
   {
     "english": "simple",
@@ -18946,13 +18948,15 @@
     "english": "do you know english?",
     "garo": "na·a inglis man·ama?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — corroborated by NV-103 (2026-09-01, Thangseng direct native evidence relay): combined sentence 'do you know Hindi/English -> Na·a English/Hindi man·ama?' confirms both the 'inglis man·ama?' and 'Hindi man·ama?' components as correct. Promoted from unverified."
   },
   {
     "english": "do you know hindi?",
     "garo": "na·a Hindi man·ama?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — corroborated by NV-103 (2026-09-01, Thangseng direct native evidence relay): combined sentence 'do you know Hindi/English -> Na·a English/Hindi man·ama?' confirms both the 'inglis man·ama?' and 'Hindi man·ama?' components as correct. Promoted from unverified."
   },
   {
     "english": "do you know me?",
@@ -19298,8 +19302,8 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — corroborated by NV-103 (2026-09-01, Thangseng direct native evidence relay): combined sentence 'do you know Hindi/English -> Na·a English/Hindi man·ama?' confirms both the 'inglis man·ama?' and 'Hindi man·ama?' components as correct. Promoted from unverified.",
+    "confidence": "verified_high"
   },
   {
     "english": "do you know hindi",
@@ -19307,8 +19311,8 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — corroborated by NV-103 (2026-09-01, Thangseng direct native evidence relay): combined sentence 'do you know Hindi/English -> Na·a English/Hindi man·ama?' confirms both the 'inglis man·ama?' and 'Hindi man·ama?' components as correct. Promoted from unverified.",
+    "confidence": "verified_high"
   },
   {
     "english": "do you know me",
@@ -77735,6 +77739,51 @@
     "garo": "Nang·ming",
     "category": "general",
     "notes": "VERIFIED/HIGH — 2026-08-30 (Claude A, NV-102): Thangseng direct relay, exact match to this pre-existing unverified row. Comitative -ming suffix (see RULE-047): angming=with me, nang'ming=with you. \"With me\" kept as Ang·ming per 2 pre-existing VERIFIED/HIGH sentence citations (idx 7085, 7103) using that exact raka'd form; \"with you\" transcribed Nang·ming per the project's apostrophe-as-morpheme-separator convention.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you talk in garo",
+    "garo": "Na·a Garochi aganna man·ama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-01 (NV-103, Thangseng direct native evidence relay via Tridip/Project Owner, unprompted batch). Ability-modal question using man·a (+ -ma question suffix), infinitive aganna (agan='speak' + -na infinitive/purposive suffix, same pattern as cha·na/re·angna), Garochi (Garo + -chi locative, RULE-044 extended here to a linguistic-medium sense rather than spatial movement -- flagged, not force-ruled).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i don't know garo",
+    "garo": "Angade Garo man·ja.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-01 (NV-103, Thangseng direct native evidence relay via Tridip/Project Owner, unprompted batch). man·ja here is the same negative form already VERIFIED/HIGH for 'i don't understand' = 'Anga man·ja' (200sentences citation) -- corroborates rather than contradicts that entry; 'know [a language]' and 'understand' share this negative construction. Angade = Anga + -de (topic/contrastive suffix on the subject pronoun); -de is new to the corpus in this relay, not yet a documented grammar rule -- flagged for RULE catalogue consideration, not built this session.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "do you know hindi/english",
+    "garo": "Na·a English/Hindi man·ama?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-01 (NV-103, Thangseng direct native evidence relay via Tridip/Project Owner, unprompted batch). Combined form; matches and corroborates the two pre-existing single-language rows (do you know english/hindi), promoted alongside this row.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you help me with the address",
+    "garo": "Ia biap/nok bano dakchakna man·genma?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-01 (NV-103, Thangseng direct native evidence relay via Tridip/Project Owner, unprompted batch). New ability-modal inflection: man·gen (future) + -ma (question), not previously attested in the corpus -- man·a paradigm now has present (man·a/man·ama), future (man·gen/man·genma), negative-present (man·ja), and negative-future (man·jawa) forms attested across this single relay batch. dakchakna = dakchak(a) 'help' (NV-095 VERIFIED/HIGH) + -na infinitive. biap/nok bano left as given (address/place + bano locative-no-movement suffix, RULE-044); not split into separate headwords this session.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i cannot help you",
+    "garo": "Anga nang·na dakchakna man·jawa.",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-01 (NV-103, Thangseng direct native evidence relay via Tridip/Project Owner, unprompted batch). man·jawa = negative-future ability, same -jawa suffix already established as productive in the 'go' paradigm (NV-100: re·jawa = 'will not go') -- corroborates -jawa as a general negative-future suffix, not verb-specific. nang·na = nang (you, object form) + -na; dakchakna = dakchak(a) 'help' + -na infinitive.",
     "confidence": "verified_high"
   }
 ]

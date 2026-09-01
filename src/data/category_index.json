@@ -4010,5 +4010,10 @@
   "will not forget": "general",
   "will forget": "general",
   "with me": "general",
-  "with you": "general"
+  "with you": "general",
+  "can you talk in garo": "phrases",
+  "i don't know garo": "phrases",
+  "do you know hindi/english": "phrases",
+  "can you help me with the address": "phrases",
+  "i cannot help you": "phrases"
 }

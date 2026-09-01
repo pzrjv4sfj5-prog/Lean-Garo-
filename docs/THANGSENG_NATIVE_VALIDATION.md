@@ -5566,3 +5566,74 @@ Project Owner relayed a direct Thangseng data-input batch (via Tridip), unprompt
 **Gate:** `node prepare-data.js` (8199 entries, 18 pre-existing pickPrimary verified-ties unchanged), `node test-dictionary.js` (8199/8199, 9/9 grammatical corrections), `node --test tests/unit/*.test.js` (264/264), `node scripts/resync-stale-overrides.mjs` (0 new candidates — the 3 reported are pre-existing/confirmed exceptions, unrelated to this session), `node repository-intelligence.js` (0 new violations). Live-verified via `translate()`: which way→Bagita, whom→Sako, whole night→Walgimik, last week→Mija antio, favourite→Namnikgipa, whole / entire→gimik, with me→Ang·ming, with you→Nang·ming — all match `master_dictionary.json` exactly.
 
 NV-102 is now fully CLOSED.
+
+## NV-103 — "man·a" ability-modal paradigm batch + MAJOR PROJECT FINDING: grammar-composition failure isolated from data corruption — 2026-09-01
+
+Project Owner relayed a direct Thangseng data-input batch (via Tridip), unprompted, plus a direct Thangseng assessment of a specific runtime failure.
+
+### Raw evidence
+
+| English | Garo |
+|---|---|
+| yesterday | Mijal |
+| the only language I speak is English | Angade English ku·sikkosan aganaia. |
+| can you talk in Garo | Na·a Garochi aganna man·ama? |
+| i don't know Garo | Angade Garo man·ja. |
+| do you know Hindi/English | Na·a English/Hindi man·ama? |
+| can you help me with the address | Ia biap/nok bano dakchakna man·genma? |
+| i cannot help you | Anga nang·na dakchakna man·jawa. |
+
+Thangseng's direct assessment (relayed verbatim), re: the runtime output for "the only language I speak is English?": **"The words are there, but I suspect the logic is not functioning properly. Apart from the sentences for which it has direct references from the examples submitted, it is struggling to render the sentences based on its own logic."**
+
+### Applied this session (5 clean items — no conflict with existing evidence)
+
+- New VERIFIED/HIGH rows added, citing this NV: "can you talk in garo"=`Na·a Garochi aganna man·ama?`, "i don't know garo"=`Angade Garo man·ja.`, "do you know hindi/english"=`Na·a English/Hindi man·ama?`, "can you help me with the address"=`Ia biap/nok bano dakchakna man·genma?`, "i cannot help you"=`Anga nang·na dakchakna man·jawa.`
+- Corroborated and promoted 4 pre-existing unverified rows to VERIFIED/HIGH: "do you know english(?)"=`na·a/Na·a inglis man·ama?` (2 case variants), "do you know hindi(?)"=`na·a/Na·a Hindi man·ama?` (2 case variants) — the new combined sentence confirms both components.
+- These 7 sentences also read as a single coherent ability-modal paradigm for `man·a` across present (`man·a`/`man·ama`), future (`man·gen`/`man·genma`), negative-present (`man·ja`), and negative-future (`man·jawa`) — new data directly relevant to the **still-open, still-unanswered** `ama` vs `man·a` relay question in `claude_a.pending_thangseng_questions` (queued 2026-08-31C). **Not treated as answering that question** — this batch shows `man·a` used in second-person ability questions and negation, while the closed `ama` paradigm (NV-008) is first-person declarative ("I can eat" = Anga cha'na ama); a person/register split is a plausible reading but is exactly the kind of pattern-based inference the project's methodology forbids resolving without an explicit Thangseng answer. Cross-referenced into the pending question's text (see WORKSTATE update), not closed.
+- `man·ja` here corroborates rather than contradicts the pre-existing VERIFIED/HIGH "i don't understand"=`Anga man·ja` (200sentences citation) — same negative form, extended sense.
+- `man·jawa` corroborates the `-jawa` negative-future suffix already established as productive via NV-100's `re·jawa` ("will not go") — cross-verb confirmation, not a new rule.
+- New, single-attestation, not yet built into a rule (flagged only): `-de` topic/contrastive suffix on subject pronouns (`Angade`); `-chi` locative (RULE-044) extended to a linguistic-medium sense (`Garochi` = "in Garo [language]") rather than pure spatial movement.
+
+### NOT applied — held open, not force-resolved
+
+- **"yesterday" = Mijal** — conflicts with the pre-existing VERIFIED/HIGH citations "Yesterday"=`Mejal`/`me·ja·o` (different vowel). Not the same string; not assumed to be a spelling variant without confirmation. Flagged for next-session reconciliation — needs an explicit Thangseng check (typo vs. genuine second form), not a guess.
+- **"the only language I speak is English" = `Angade English ku·sikkosan aganaia.`** — recorded as-is, native evidence intact. **No dictionary row added or changed for this sentence.** This is the subject of the Major Project Finding below; per Project Owner instruction, no replacement sentence is invented and no engine code is touched.
+
+### MAJOR PROJECT FINDING: runtime failure has TWO independent causes — a native-data defect (now fixed) and a grammar/composition-engine gap (still open, Claude B's territory)
+
+**1. Runtime output before this session (as reported):**
+`translate("the only language i speak is english")` → `"mangmang ba·sa Anga Call police Agana"` (sov-assembly, 0.75)
+
+**Root cause of the "Call police" insertion — traced and confirmed:** `master_dictionary.json` held exactly one row for the bare headword `english`: `{"english": "english", "garo": "Call police", "confidence": "unverified"}`. This is a data-import corruption (a garbled/misaligned source row) with zero connection to the word "English" — not a linguistic candidate under any confidence tier. Because it was the *only* row for that key, sov-assembly's object-slot lookup had nothing else to select. This is a **NATIVE DATA PROBLEM**, not a logic/grammar problem — confirmed by a parallel, independently-discovered corrupted row on the same headword class: `garo`=`"Contact khagen"`, which was separately corrupting `"can you talk in garo"` and `"i don't know garo"` before this session (see live-tested outputs, both pre-session).
+
+**Action taken this session (data hygiene only, no engine code touched):** both corrupted rows (`english`→`Call police`, `garo`→`Contact khagen`) tagged SUPERSEDED with notes documenting the corruption and citing this NV, per the project's established data-hygiene precedent (2026-08-01 corpus-internal audit pattern). No replacement value was invented for either — none is native-confirmed. Object slots for these words should now fall through to the engine's standard OOV handling instead of shipping unrelated text.
+
+**2. Runtime output after this session's data fix (re-verified live, same input, no engine code touched):**
+`translate("the only language i speak is english")` → `"mangmang ba·sa Anga to be / to exist Agana"` (sov-assembly, 0.75)
+
+The "Call police" contamination is gone (confirms the data-corruption diagnosis was correct and sufficient to explain that specific symptom). **Everything else about the output is unchanged and still wrong** — this isolates the second, independent problem:
+
+**3. Linguistic structure of the native sentence `Angade English ku·sikkosan aganaia.`:**
+
+| Segment | Gloss | Status in dictionary |
+|---|---|---|
+| `Anga` | I (pronoun root) | existing |
+| `-de` | topic/contrastive suffix ("as for...") | **NOT in dictionary — new, single-attestation, unbuilt** |
+| `English` | English (loanword, bare) | native data problem — no valid bare-word row (see above) |
+| `ku·sik` | language (root) | existing, but currently tagged SUPERSEDED in favor of `ba·sa` — this citation suggests `ku·sik` survives as a *bound* root rather than a dead synonym (see below) |
+| `-ko` | object marker | existing, VERIFIED (RULE-009) |
+| `-san` | "only" (bound suffix form) | existing only as an uncorroborated SUPERSEDED variant of "only" (`·san`) — this citation is the first evidence it's a real, productive **bound suffix** distinct from the free-standing "only" = `mangmang` (VERIFIED/HIGH, NV-088-era) |
+| `agan-` | speak (verb root) | existing (`Agana`, unverified) |
+| `-aia` | verb-ending (declarative/copula?) | **NOT in dictionary — new, single-attestation, unbuilt** |
+
+Reading: `[Anga-de]`(topic-subject) `[English]`(loan object) `[ku·sik-ko-san]`(language-OBJ-only, a single bound compound) `[agan-aia]`(speak-ENDING) — i.e., "As for me, [only the English language] is what I speak," with the object (including its "only" marking) assembled as one bound unit immediately before the verb, and the verb carrying its own ending rather than surfacing bare.
+
+**4. Dictionary vs. grammar/composition split — the required classification:**
+
+- **NATIVE DATA PROBLEM (now fixed this session):** the corrupted `english`/`garo` bare-word rows. This alone explains the "Call police" insertion.
+- **GRAMMAR/COMPOSITION ENGINE PROBLEM (confirmed still open, unaffected by this session's data fix):** sov-assembly does not (a) attach the `-de` topic suffix to the subject pronoun, (b) assemble the object as a single bound compound with a suffixed "only" (`-san`) rather than a free-standing "only" word (`mangmang`) placed sentence-initially, (c) produce the correct topic-object-verb word order (native puts the subject/topic first; the engine places `Anga` third), or (d) attach a verb-ending (`-aia`) to the bare root — it ships `Agana` unmarked. This matches Thangseng's own diagnosis exactly: the individual words (`mangmang`, `ba·sa`, `Anga`, `Agana`) are all real dictionary entries the engine successfully retrieves; what fails is *composing* them into the native word order and morphology. **This is Claude B's territory — no engine code was touched this session, and no replacement sentence was invented.**
+
+**Do not conflate the two.** The native-data fix (superseding two garbage rows) removed one visible symptom (`Call police`) but did not and could not touch the composition failure — the before/after outputs above are the direct proof, run against the identical input with only the dictionary changed.
+
+
+**5. Secondary engine anomaly found while live-verifying this session's new rows (Claude B handoff, not investigated further — out of lane):** `translate("i don't know garo")` returns `"Anga rong·ko hai·ja"` via `grammar-assembly`, NOT the new exact-match row `"Angade Garo man·ja."` — despite `src/compiled_dict.json` containing the key `"i don't know garo"` with exactly that value (confirmed via direct JSON read). Every other new row this session (`can you talk in garo`, `do you know hindi/english`, `can you help me with the address`, `i cannot help you`) resolved correctly via `exact-phrase` at 0.98 confidence on the first live check. The one row that failed is the one containing an apostrophe (`don't`) — possibly a recurrence of the historical apostrophe-lookup defect class (see 2026-08-16b entry, `lookupPhrase`), but this time on the exact-phrase/compiled_dict.json path rather than the old `PHRASE_MAPS` path already fixed then. Not diagnosed further — engine code is Claude B's territory.

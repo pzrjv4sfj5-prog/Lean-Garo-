@@ -1,5 +1,5 @@
 repository:
-  head: fc32588
+  head: 7507e8a
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,7 +313,45 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-08-31D (Claude A, resume of 20260831C migration doc,
+  next_action: '2026-09-01 (Claude A, resume of 20260831D migration doc, CLEAN
+    CLOSE): resume verification passed (HEAD == origin/main == 7507e8a on arrival,
+    clean tree, matches WORKSTATE repository.head fc32588 + this session''s
+    own migration-close commit sequencing, nothing missing). Processed new
+    unprompted Thangseng evidence (7-sentence man·a paradigm batch) per
+    Project Owner instruction -- see NV-103 in docs/THANGSENG_NATIVE_VALIDATION.md
+    for full detail. Applied 5 clean new VERIFIED/HIGH rows + promoted 4
+    pre-existing unverified rows (do you know english/hindi, 2 case variants
+    each) -- all corroborated, no conflicts. Held "yesterday"=Mijal open
+    (conflicts with existing VERIFIED Mejal/me·ja·o, not force-resolved).
+    MAJOR FINDING (Project Owner-directed investigation): diagnosed and
+    documented the runtime bug in "the only language i speak is english"
+    (reported output: "mangmang ba·sa Anga Call police Agana") as TWO
+    independent, separately-classified problems -- (1) NATIVE DATA PROBLEM:
+    master_dictionary.json''s only row for bare "english" was a corrupted
+    import ("Call police", unrelated garbage) with a matching sibling defect
+    on "garo" ("Contact khagen"); both SUPERSEDED this session, no replacement
+    invented, neither is native-confirmed. Re-verified live post-fix: same
+    input now produces "mangmang ba·sa Anga to be / to exist Agana" -- Call
+    police is gone, confirming the data fix was correct and sufficient for
+    that symptom. (2) GRAMMAR/COMPOSITION ENGINE PROBLEM, confirmed still
+    open and UNCHANGED by the data fix: sov-assembly does not attach the
+    -de topic suffix, does not compose the object as a bound
+    language-ko-only unit (uses free-standing "only" instead of the -san
+    suffix form), gets word order wrong (subject not sentence-initial),
+    and does not attach a verb-ending (native has -aia, engine ships bare
+    Agana). Full linguistic structure breakdown of "Angade English
+    ku·sikkosan aganaia." is in NV-103. No engine code touched, no
+    replacement sentence invented, per explicit instruction. SECONDARY
+    ENGINE ANOMALY found while live-verifying new rows, flagged for Claude
+    B, not investigated: "i don''t know garo" has an exact match in
+    compiled_dict.json but translate() returns a different grammar-assembly
+    result instead of it -- possible apostrophe-lookup regression on the
+    exact-phrase path (a different code path than the historical
+    PHRASE_MAPS apostrophe bug already fixed 2026-08-16b). Full gate green:
+    8205/8205 entries, 9/9 grammatical corrections, 277/277 unit tests, 0
+    new repository-intelligence violations. Migration doc:
+    docs/CLAUDE_A_SESSION_MIGRATION_20260901.md.'
+  next_action_prior_20260831D: '2026-08-31D (Claude A, resume of 20260831C migration doc,
     CLEAN CLOSE): verified repo complete/synced on resume (HEAD 98cbb5b ==
     origin/main, clean tree, nothing landed since the 613d9e4 checkpoint).
     Live-reverified Finding B (ama modal "can"): still unimplemented,
@@ -338,7 +376,12 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md - this session's
+  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260901.md - this session's
+    close (2026-09-01, resume of 20260831D, NV-103 man·a paradigm batch +
+    MAJOR FINDING isolating the "only language i speak is english" bug into
+    a native-data cause (fixed) and a grammar/composition-engine cause
+    (Claude B handoff, undiagnosed further)).
+  migration_doc_prior_20260831D: docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md - this session's
     close (2026-08-31D, resume of 20260831C, sent the ama/man·a Thangseng
     question, fixed the WORKSTATE.yaml next_action duplicate-key bug).
   migration_doc_prior_20260831C: docs/CLAUDE_A_SESSION_MIGRATION_20260831C.md - this session's
@@ -670,7 +713,15 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: 'OPEN 2026-08-31C (Claude A, joint A+B grammar/morphology/tense
+  pending_thangseng_questions: '2026-09-01 addendum (Claude A, NV-103): new unprompted
+    relay evidence (7-sentence batch) shows man·a used productively across present/future/negative-present/negative-future
+    ("can you talk in garo"=...man·ama?, "can you help..."=...man·genma?, "i don''t
+    know garo"=...man·ja., "i cannot help you"=...man·jawa.) — all second-person/negation
+    contexts, while the closed ama paradigm (NV-008) is first-person declarative.
+    A person/register split is a plausible reading of this new data but is NOT
+    treated as answering item (1) below — do not resolve from pattern-matching,
+    still needs the explicit Thangseng answer. See docs/THANGSENG_NATIVE_VALIDATION.md
+    NV-103 for full evidence. --- OPEN 2026-08-31C (Claude A, joint A+B grammar/morphology/tense
     audit session, sent to queue per audit-brief instruction to ask precisely
     rather than invent): item (1) "can" — ama vs man·a. Meaning: the ability
     modal "can/be able to" (auxiliary, not the noun "can" as in tin container,
