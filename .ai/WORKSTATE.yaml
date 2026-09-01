@@ -713,7 +713,13 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: '2026-09-01 addendum (Claude A, NV-103): new unprompted
+  pending_thangseng_questions: '2026-09-01B (Claude A, resume of 20260901 migration
+    doc, priority item 4): drafted docs/THANGSENG_RELAY_QUESTION_20260901.md ("yesterday"
+    — is Mijal the same word as VERIFIED/HIGH Mejal/me·ja·o, a mistake, or a distinct
+    form?), scoped to the 2 unverified sentences using the Mijal spelling. Not yet
+    sent — Project Owner to relay. Does not block anything (both affected sentences
+    already unverified). Item (2) "can" ama vs man·a below is unchanged, still unanswered.
+    --- 2026-09-01 addendum (Claude A, NV-103): new unprompted
     relay evidence (7-sentence batch) shows man·a used productively across present/future/negative-present/negative-future
     ("can you talk in garo"=...man·ama?, "can you help..."=...man·genma?, "i don''t
     know garo"=...man·ja., "i cannot help you"=...man·jawa.) — all second-person/negation
