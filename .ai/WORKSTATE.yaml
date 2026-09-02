@@ -313,7 +313,20 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-02B (Claude A, same session, new native evidence received via
+  next_action: '2026-09-02C (Claude A, same session, Project Owner directive):
+    docs/THANGSENG_RELAY_QUESTION_20260901B.md rewritten again -- removed ALL
+    internal terminology from the relay-facing section (previously still had
+    "RULE-038"/"RULE-046" in the internal-notes framing surrounding the
+    questions, flagged as risky). Every question now plain natural language a
+    native speaker can answer directly, using Project Owner-supplied phrasing.
+    Retained already-confirmed evidence (ama="can", NV-008/NV-106; Sak=people
+    classifier, NV-105) as stated context rather than re-asking those as open
+    questions -- items 1/2 now ask only for the missing piece (word order,
+    contrastive example). 6 items total: 5 grammar questions + 1 sentence
+    sign-off (unchanged from prior draft, just reworded). Nothing inferred
+    beyond what Thangseng has explicitly provided. No engine code touched, no
+    dictionary change, no gate re-run needed.'
+  next_action_prior_20260902B: '2026-09-02B (Claude A, same session, new native evidence received via
     Project Owner relay): two answers received. (1) Sak = human/people classifier --
     reconfirms already-VERIFIED RULE-038, no new dictionary row, relay question closed.
     See NV-105. (2) ama clarified as pure modal "can", lexical verb supplied separately
