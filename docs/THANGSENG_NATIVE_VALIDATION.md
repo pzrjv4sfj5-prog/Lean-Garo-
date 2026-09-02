@@ -5893,6 +5893,44 @@ is no live code path to fix or regress. This closes the relay-log gap
 only; RULE-047 is recorded for whenever question-construction becomes a
 general engine feature.
 
-**Relay item 5 status: CLOSED.** No re-send to Thangseng needed — this
-was gettable from data already on file.
+## NV-114 — "only" construction: speak-type vs eat-type divergence CONFIRMED verb-driven — CLOSED 2026-09-02
+
+**Source:** Thangseng, via Project Owner relay (2026-09-02), answering
+the follow-up question raised in NV-112 / the relay doc's item 1.
+
+**Question asked:** whether "the only language I speak is english"
+(`Angade English ba·sakosan aganaia` — bare SVO + `-aia` declarative
+ending) and "the only fruit I eat is mango" (`Angni cha·gipa bitede
+te·gatchusan` — relativizer `-gipa` + zero-copula predicate) differ
+structurally because the verbs ("speak" vs "eat") are different, or for
+some other reason.
+
+**Answer (relayed):** "yes eat and speak is different" — confirms the
+divergence is verb-driven, not free variation or an error in either
+sentence.
+
+**What this closes:** removes the risk that one of the two attested
+"only" sentences is simply wrong/non-standard — both are confirmed
+correct for their respective verbs, and the difference in construction
+is expected rather than noise. NV-103's general pattern (speak-type) and
+NV-112's exact-match override (eat-type) both stand as independently
+correct, per-verb-class forms; neither should be merged into the other
+or treated as a single general rule.
+
+**What this does NOT close:** the answer confirms *that* verb class
+drives the difference, not *which* verb classes pattern which way (e.g.
+whether it's specifically a consumption-verb-vs-communication-verb
+split, or something else). No new sentence was given, so no new pattern
+can be generalized from this — NV-103's pattern still covers only
+"speak"-type sentences it's been directly attested for (and their
+already-tested pronoun variants), and NV-112's override still covers
+only the exact "fruit/eat/mango" sentence. Do not extend either pattern
+to a new verb without a fresh attestation for that verb.
+
+**Engineering impact:** none — no code change required. This is a
+confirmation of existing, already-shipped behavior (`src/grammarEngine.js`
+`tryOnlyIdentityConstruction`), not a new construction to implement.
+
+**Relay item status: CLOSED.** No further open items in
+`docs/THANGSENG_RELAY_QUESTION_20260901B.md`.
 

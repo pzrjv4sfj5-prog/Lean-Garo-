@@ -1,35 +1,14 @@
-# Thangseng Relay — Combined Batch (drafted 2026-09-02, simplified 2026-09-02, 4 of 6 items answered 2026-09-02)
+# Thangseng Relay — Combined Batch (drafted 2026-09-02) — ALL ITEMS CLOSED 2026-09-02
 
-**Status:** PARTIALLY ANSWERED. Items 1-4 (old numbering) answered via
-Project Owner/Tridip relay — see NV-108, NV-109, NV-110, NV-111. Old
-item 6 (only-X sign-off) answered 2026-09-02 — see NV-112. Old item 5
-(question-word + question-ending co-occurrence) closed 2026-09-02 via
-internal-audit re-read of already-existing native evidence — see NV-113
-— no re-send needed. **1 item remains open and ready to send** (new
-follow-up from the NV-112 answer).
+**Status:** FULLY ANSWERED. Nothing to send. All 6 original items closed:
+NV-108, NV-109, NV-110, NV-111 (Project Owner/Tridip relay), NV-112
+(only-X sign-off), NV-113 (question-word/-ma, closed via internal-audit
+re-read, no re-send needed), NV-114 (speak-vs-eat follow-up, confirmed
+verb-driven).
 
 ---
 
-## SEND THIS SECTION TO THANGSENG — nothing else in this file
-
-**1. Two "only" sentences built differently — is that expected?**
-We now have two Garo sentences using "only" that turned out to be built
-in different ways, and we'd like to check if that's expected or if we're
-missing something:
-1. "the only language I speak is english" → "Angade English
-   ba·sakosan aganaia" (ends with the verb "aganaia")
-2. "the only fruit I eat is mango" → "Angni cha·gipa bitede
-   te·gatchusan" (no separate verb at the end, uses "cha·gipa" instead)
-- Is the difference just because the verbs are different ("speak" vs
-  "eat"), or are there other reasons a sentence like #1's pattern might
-  become sentence #2's pattern (or vice versa)?
-- If you took sentence #1's pattern and used it for something like "the
-  only fruit I eat is mango," would that also sound acceptable, or
-  clearly wrong?
-
----
-
-## Internal notes (NOT for relay — project record only, below this line)
+## Internal notes (project record only)
 
 **Source:** `docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md`
 "Unresolved Linguistic Boundaries" section, the pre-existing
@@ -54,30 +33,28 @@ Finding 2).
 - **Old item 4 (purpose `-na`):** "I went to eat"/"I went to work"
   confirm `-na` as the purpose/infinitive marker before a motion verb.
   See NV-111.
+- **Old item 5 (question-word + question-ending co-occurrence):** not
+  answered via relay — closed via internal-audit re-read of
+  already-existing native evidence scattered across
+  `docs/THANGSENG_NATIVE_VALIDATION.md` (7 question-word sentences, all
+  `-ma`-free; 4 polar sentences, all `-ma`-bearing; one clean minimal
+  pair). See NV-113 and new RULE-047.
+- **Old item 6 (sign-off on the two "only X" sentences):** answer
+  received: "I am the only student." = "Angan saksa kamkam chatro."
+  (stress-dependent, alternate framings exist, "mangmang" also valid for
+  "only" here). "The only fruit I eat is mango." = "Angni cha·gipa
+  bitede te·gatchusan." Implemented as NV-112 — see
+  `docs/CLAUDE_B_SESSION_MIGRATION_20260902F.md`. The second sentence's
+  answer directly contradicted NV-103's general "the only X SUBJ VERB is
+  Y" pattern for this specific case; shipped as an exact-match override,
+  not a change to NV-103's own attestation.
+- **Follow-up (raised after old item 6, not part of the original batch):**
+  why "speak"-type and "eat"-type only-constructions differ
+  structurally — answered: verb-driven, confirmed ("yes eat and speak is
+  different"). See NV-114. Does not reveal which verb classes pattern
+  which way — no new sentence generalization possible from this answer
+  alone.
 
-### Still open
+### Nothing currently open
 
-- ~~**Item 1 (was old item 5):** question-word + question-ending
-  co-occurrence~~ **CLOSED 2026-09-02.** Not answered via relay — closed
-  via internal-audit re-read of already-existing native evidence
-  scattered across this log (7 question-word sentences, all `-ma`-free;
-  4 polar sentences, all `-ma`-bearing; one clean minimal pair). See
-  NV-113 and new RULE-047. No re-send needed.
-- ~~**Item 2 (was old item 6):** sign-off on the two "only X" sentences~~
-  **CLOSED 2026-09-02.** Answer received: "I am the only student." =
-  "Angan saksa kamkam chatro." (stress-dependent, alternate framings
-  exist, "mangmang" also valid for "only" here). "The only fruit I eat
-  is mango." = "Angni cha·gipa bitede te·gatchusan." Implemented as
-  NV-112 — see `docs/CLAUDE_B_SESSION_MIGRATION_20260902F.md`. Note:
-  the second sentence's answer directly contradicts NV-103's general
-  "the only X SUBJ VERB is Y" pattern (single-attestation origin) for
-  this specific case; shipped as an exact-match override, not a change
-  to NV-103's own attestation. Open follow-up (not yet asked): why do
-  "speak"-type and "eat"-type only-constructions differ structurally?
-
-### Why we're asking
-
-Neither remaining item should be resolved by pattern-matching or
-engineering inference — the project's standing evidence-first rule.
-**Does not block other work:** neither is a prerequisite for
-already-shipped, already-confirmed material.
+No relay items pending. Future items go in a new dated relay doc.
