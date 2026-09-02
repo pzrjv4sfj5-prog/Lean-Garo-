@@ -77786,5 +77786,14 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — native-confirmed 2026-09-01 (NV-103, Thangseng direct native evidence relay via Tridip/Project Owner, unprompted batch). man·jawa = negative-future ability, same -jawa suffix already established as productive in the 'go' paradigm (NV-100: re·jawa = 'will not go') -- corroborates -jawa as a general negative-future suffix, not verb-specific. nang·na = nang (you, object form) + -na; dakchakna = dakchak(a) 'help' + -na infinitive.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "english",
+    "garo": "English",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — extracted as a citation-form headword from the already-native-confirmed NV-103 sentence \"Angade English ku·sikkosan aganaia.\" (Thangseng-confirmed structure, docs/THANGSENG_NATIVE_VALIDATION.md NV-103), where \"English\" appears as a bare, unmarked loanword (the language name itself, capitalized, no translation/adaptation). Not a new elicitation — same convention as prior citation-form headwords derived from already-verified longer forms (cf. \"phone ka·a\"). Added 2026-09-01 alongside superseding 7 corrupted garo_dictionary.json rows (english->\"to eat\"/\"to go\"/etc., column-misalignment import garbage, unrelated candidates) that were polluting this same key.",
+    "confidence": "verified_high"
   }
 ]

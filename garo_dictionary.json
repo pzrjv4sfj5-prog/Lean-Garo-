@@ -4464,10 +4464,6 @@
     "garo": "dongja"
   },
   {
-    "english": "english",
-    "garo": "to have / to exist (possession)"
-  },
-  {
     "english": "simple",
     "garo": "cha·na"
   },
@@ -9416,10 +9412,6 @@
     "garo": "chip·"
   },
   {
-    "english": "english",
-    "garo": "to eat"
-  },
-  {
     "english": "continuous",
     "garo": "cha·enga"
   },
@@ -9444,10 +9436,6 @@
     "garo": "cha·ja"
   },
   {
-    "english": "english",
-    "garo": "to go"
-  },
-  {
     "english": "negation",
     "garo": "re·ang·ja"
   },
@@ -9456,24 +9444,8 @@
     "garo": "Na·a bano re·angenga?"
   },
   {
-    "english": "english",
-    "garo": "to come"
-  },
-  {
     "english": "negation",
     "garo": "re·ba·ja"
-  },
-  {
-    "english": "english",
-    "garo": "to do / to work / to make"
-  },
-  {
-    "english": "english",
-    "garo": "to give / to offer"
-  },
-  {
-    "english": "english",
-    "garo": "to be / to exist"
   },
   {
     "english": "positive",

@@ -5638,6 +5638,38 @@ Reading: `[Anga-de]`(topic-subject) `[English]`(loan object) `[ku·sik-ko-san]`(
 
 **5. Secondary engine anomaly found while live-verifying this session's new rows (Claude B handoff, not investigated further — out of lane):** `translate("i don't know garo")` returns `"Anga rong·ko hai·ja"` via `grammar-assembly`, NOT the new exact-match row `"Angade Garo man·ja."` — despite `src/compiled_dict.json` containing the key `"i don't know garo"` with exactly that value (confirmed via direct JSON read). Every other new row this session (`can you talk in garo`, `do you know hindi/english`, `can you help me with the address`, `i cannot help you`) resolved correctly via `exact-phrase` at 0.98 confidence on the first live check. The one row that failed is the one containing an apostrophe (`don't`) — possibly a recurrence of the historical apostrophe-lookup defect class (see 2026-08-16b entry, `lookupPhrase`), but this time on the exact-phrase/compiled_dict.json path rather than the old `PHRASE_MAPS` path already fixed then. Not diagnosed further — engine code is Claude B's territory.
 
+### CLOSED — 2026-09-01 (same day, second session)
+
+Both open items above resolved:
+
+- **Grammar-composition failure (item 4):** fixed by Claude B, commit
+  `015d737` ("NV-103 sov-composition fix + apostrophe exact-phrase
+  lookup fix"), landed concurrently with Claude A's NV-104 work and
+  merged via clean rebase. `translate("the only language i speak is
+  english")` now returns `Angade English ba·sakosan Aganaia`
+  (only-identity-construction, 0.85) — topic `-de`, bound object, verb
+  `-aia`, and word order all now match the native-confirmed structure.
+- **Apostrophe lookup anomaly (item 5):** fixed by the same Claude B
+  commit. `translate("i don't know garo")` now returns `Angade Garo
+  man·ja.` via `exact-phrase`, 0.98.
+- **Follow-on data bug found post-fix (Claude A, same session):**
+  Claude B's fix exposed that the object "english" resolved to garbage
+  (`to have/to exist`, `to eat`, etc.) — traced to 7 corrupted rows in
+  `garo_dictionary.json` (column-misalignment import garbage, `english`
+  mapped to unrelated glosses; same defect class as the `master_dictionary.json`
+  "Call police" row from earlier this session, different source file).
+  Fixed: deleted the 7 corrupted rows; added `master_dictionary.json`
+  row `english → English`, VERIFIED/HIGH — a citation-form headword
+  extracted from the loanword already present, unmarked, in this same
+  NV-103 sentence's native-confirmed structure (not a new elicitation);
+  allowlisted the resulting SUPERSEDED+VERIFIED pair in
+  `src/data/known_dictionary_conflicts.json`. Full sentence now
+  end-to-end correct (see above). Full gate green: 8205/8205 entries,
+  9/9 grammatical corrections, 284/284 unit tests, 0 new
+  repository-intelligence violations.
+
+**NV-103 is now fully closed.** No open items remain from this finding.
+
 ---
 
 ## NV-104 — "yesterday": Mijal confirmed (2026-09-01)

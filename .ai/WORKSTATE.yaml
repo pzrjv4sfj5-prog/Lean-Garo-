@@ -313,7 +313,26 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-01B (Claude A, resume of 20260901 migration doc, CLEAN
+  next_action: '2026-09-01C (Claude A, CLEAN CLOSE, final session close for
+    2026-09-01): built docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md -- 14
+    complex-sentence composition tests run live against translate(), each checked
+    against docs/GRAMMAR_RULE_CATALOGUE.md for native-confirmed structure,
+    productive vs single-attestation rules, and linguistic uncertainty, per
+    explicit instruction. Found: 8 confirmed-reusable constructions (table in
+    matrix doc), 5 new unresolved linguistic boundaries (queued above as
+    2026-09-01D, item (i) merges with existing item (2)), and 3 Claude-B
+    engineering-composition handoffs -- #1 (highest confidence) modal "can"
+    (man·a) completely absent from "i can speak garo" output; #2 (highest
+    confidence) "did you eat rice yesterday?" violates the already-CLOSED
+    RULE-046 (-ma question particle) worked example, ships fully bare with no
+    -aha past marker either; #3 (lower confidence, flagged not confirmed)
+    possible -ko object-marking inconsistency between a 2-argument and a
+    3+-argument give-sentence. Full detail + recommended regression cases in the
+    matrix doc. NO engine code touched, NO new grammar rules invented -- single-
+    sentence evidence explicitly left unresolved rather than generalized (see
+    matrix doc''s boundary list). NOTHING else changed this block -- no dictionary
+    edits, no gate re-run needed (no compiled-data change).'
+  next_action_prior_20260901B: '2026-09-01B (Claude A, resume of 20260901 migration doc, CLEAN
     CLOSE): resume verified (HEAD==origin/main==e1fd390 on arrival, clean tree).
     Closed NV-104 -- Thangseng directly confirmed "yesterday"=Mijal via Project
     Owner relay, answering docs/THANGSENG_RELAY_QUESTION_20260901.md (drafted
@@ -393,7 +412,13 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: docs/CLAUDE_A_SESSION_MIGRATION_20260901B.md - this session's
+  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260901C.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC, final close of the 2026-09-01 session
+    (2026-09-01C): NV-104 + NV-103 both fully closed and pushed via PAT; built
+    docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md (14 composition tests, 5 new
+    Thangseng queries queued, 3 Claude B engineering handoffs, no engine code
+    touched, no new rules invented). Read this file first on resume.'
+  migration_doc_prior_20260901B: docs/CLAUDE_A_SESSION_MIGRATION_20260901B.md - this session's
     close (2026-09-01B, resume of 20260901, NV-104 closed the "yesterday"=Mijal
     relay question via direct Thangseng confirmation; restated the NV-103
     grammar/composition Runtime Handoff for Claude B, unchanged/unfixed).
@@ -734,7 +759,25 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: '2026-09-01C (Claude A, CLOSED): "yesterday"=Mijal
+  pending_thangseng_questions: '2026-09-01D (Claude A, NEW, from
+    docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md — not yet drafted as a relay
+    doc or sent): 5 new unresolved linguistic boundaries found while testing
+    complex-sentence composition against confirmed grammar rules. (i) Modal+verb
+    co-occurrence pattern for "can" -- where does man·a/ama actually go in a full
+    sentence like "I can speak Garo"? This MERGES WITH, does not replace, the
+    existing item (2) ama-vs-man·a question below -- combine into one relay batch.
+    (ii) Animate/human classifier: does counting people (e.g. "two friends") use a
+    different classifier than the general noun-counting pattern (RULE-038)? (iii)
+    Multi-adjective stacking order: fixed order when 2 adjectives modify one noun
+    post-nominally (e.g. "big red house")? (iv) Purpose/infinitive -na clause: is
+    there a dedicated citation confirming -na as a purpose marker, for a proper
+    numbered rule (catalogue not exhaustively re-searched this session, may already
+    exist uncited)? (v) Wh-question + -ma mutual exclusivity: does the RULE-046
+    yes/no question particle -ma ever co-occur with wh-words (Maina/"why" etc), or
+    are they mutually exclusive? Precise question wording for all 5 is in the
+    matrix doc''s "Unresolved Linguistic Boundaries" section -- use that wording
+    directly when drafting the relay batch, do not paraphrase from this summary.
+    --- 2026-09-01C (Claude A, CLOSED): "yesterday"=Mijal
     question (drafted this same session as 20260901B below) answered directly by
     Thangseng via Project Owner relay — Mijal confirmed as "yesterday", coexisting
     with VERIFIED/HIGH Mejal/me·ja·o as a separate confirmed variant, not merged.

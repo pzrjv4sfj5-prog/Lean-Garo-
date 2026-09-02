@@ -33,13 +33,44 @@ question doc updated to ANSWERED/CLOSED status.
 and `phrase_maps.js` for either sentence key — neither exists in either
 file, nothing to sync. **PASS.**
 
-### 2b. NV-103 grammar/composition bug — re-confirmed unchanged, not touched
+### 2b. NV-103 grammar/composition bug — CLOSED (concurrent Claude B fix + follow-on data fix)
 
-Re-verified live (see §3 below) that `translate("the only language i
-speak is english")` is byte-identical to how the prior session left it:
-`"mangmang ba·sa Anga to be / to exist Agana"` (sov-assembly, 0.75). No
-engine code touched this session — this bug remains fully Claude B's,
-per the Runtime Handoff below.
+Mid-session, `git push` was rejected non-fast-forward: Claude B pushed
+`015d737` concurrently, fixing the sov-composition engine bug (topic
+`-de`, bound object, word order, verb `-aia`) — the exact item this
+session's §5 handoff (below, left in its original pre-fix form for the
+record) was restating. Rebased cleanly onto it (no conflicts), rebuilt,
+full gate green, no regression.
+
+Claude B's fix exposed a second, independent bug: the object slot
+resolved to garbage (`"to have/to exist"`, `"to eat"`, etc.) instead of
+"English". Root cause (flagged by Claude B as data, not engine — correct
+call): **7 corrupted rows in `garo_dictionary.json`**, `english` mapped
+to unrelated glosses (column-misalignment import garbage, same defect
+class as the `master_dictionary.json` "Call police" row fixed last
+session, different source file). Fixed:
+- Deleted the 7 corrupted `garo_dictionary.json` rows.
+- Added `master_dictionary.json` row `english → English`, VERIFIED/HIGH
+  — not a new elicitation; extracted as a citation-form headword from
+  the loanword already present, unmarked, in NV-103's own
+  Thangseng-confirmed sentence (`"...English ku·sikkosan aganaia."`).
+  Same convention as other citation-form headwords derived from
+  already-verified longer forms.
+- Allowlisted the resulting `english` SUPERSEDED+VERIFIED pair in
+  `src/data/known_dictionary_conflicts.json` (legitimate shape — the
+  old corrupted row is retained per citation discipline, not deleted).
+
+**Live-verified, full sentence now correct end to end:**
+```
+translate("the only language i speak is english")
+→ {"garo":"Angade English ba·sakosan Aganaia","method":"only-identity-construction","confidence":0.85}
+```
+NV-103 in `docs/THANGSENG_NATIVE_VALIDATION.md` to be appended with this
+closing note (not yet done — see §9 next-session item).
+
+**No engine code touched by Claude A this session** — both fixes were
+data-file corrections (`garo_dictionary.json` deletions,
+`master_dictionary.json` addition, conflict-allowlist entry).
 
 ## 3. Runtime verification (all keys touched this session)
 
@@ -54,53 +85,42 @@ $ translate("the only language i speak is english")   # control, unchanged
 {"garo":"mangmang ba·sa Anga to be / to exist Agana","method":"sov-assembly","confidence":0.75}
 ```
 
-## 4. Full gate
+## 4. Full gate (final, post-rebase + follow-on data fix)
 
-- `node prepare-data.js`: 8205/8205 compiled entries (unchanged — this
-  session's edit was confidence/notes-only on 2 existing rows, no new
-  keys).
+- `node prepare-data.js`: 8205 compiled entries (unchanged count — the
+  `english` fix replaced garbage candidates with one correct one at the
+  same key, no net new/removed compiled keys).
 - `node test-dictionary.js`: 8205/8205 valid, 9/9 grammatical corrections.
-- `node repository-intelligence.js`: 0 new violations, all checks A–G.
-- `node --test tests/unit/*.test.js`: 277/277 passing (unchanged — no
-  new tests needed for a notes/confidence-only edit).
+- `node repository-intelligence.js`: 0 new violations (the `english`
+  SUPERSEDED+VERIFIED pair is allowlisted in
+  `src/data/known_dictionary_conflicts.json` — legitimate shape, not a
+  real conflict).
+- `node --test tests/unit/*.test.js`: 284/284 passing (277 from before
+  the rebase + Claude B's 7 new tests for the sov-composition fix).
 - `vite build`: clean.
 
-## 5. Runtime Handoff (Claude B — Grammar/Engine)
+## 5. Runtime Handoff (Claude B — Grammar/Engine) — SUPERSEDED, CLOSED MID-SESSION
 
-This is the same NV-103 finding from the prior session, restated here
-per Rule 6/Rule 8 so it isn't lost between migration docs. **Not fixed
-this session — no engine code touched.**
+**This section documents the state as originally handed off; it was
+closed by Claude B's concurrent push (`015d737`, "NV-103 sov-composition
+fix + apostrophe exact-phrase lookup fix") before this migration doc was
+finalized. See §2b above for the actual close and the follow-on data
+fix Claude A made after Claude B's engine fix. Left here verbatim for
+the historical record — do not re-open, do not re-attempt.**
 
 - **Sentence:** "the only language i speak is english"
 - **Native-confirmed linguistic structure:** `Angade English
   ku·sikkosan aganaia.`
-- **Engine current output:** `mangmang ba·sa Anga to be / to exist Agana`
-  (sov-assembly, 0.75) — the `Call police` data-corruption symptom is
-  gone (fixed prior session), but everything else below is unchanged.
-- **Action needed (debug sov-assembly / object-composition rules):**
-  1. Attach the `-de` topic suffix to the subject pronoun (`Anga` →
-     `Angade`) — not in the dictionary as a standalone morpheme yet,
-     single-attestation.
-  2. Compose the object as one bound unit — `language-ko-only`
-     (`ku·sik-ko-san`) — instead of a free-standing "only"
-     (`mangmang`) placed sentence-initially.
-  3. Fix word order — native puts the topic/subject sentence-initial;
-     the engine currently places `Anga` third.
-  4. Attach a verb-ending (`-aia`) to the bare root instead of shipping
-     `Agana` unmarked — also not in the dictionary yet, single-attestation.
-- Full linguistic breakdown (segment-by-segment table): NV-103 in
-  `docs/THANGSENG_NATIVE_VALIDATION.md`.
-- **Do not invent a "corrected" full sentence** — the `-de` and `-aia`
-  morphemes are each only attested once; wait for either an engine
-  implementation attempt using the existing dictionary primitives, or
-  new corroborating relay data, before treating either as a general rule.
+- **Engine output before Claude B's fix:** `mangmang ba·sa Anga to be /
+  to exist Agana` (sov-assembly, 0.75).
+- **Engine output after Claude B's fix + Claude A's follow-on data fix:**
+  `Angade English ba·sakosan Aganaia` (only-identity-construction, 0.85).
+  Matches the native-confirmed structure.
 
-Secondary, separately-flagged (also unfixed, also Claude B's, from the
-prior session, restated for continuity): `translate("i don't know
-garo")` returns a `grammar-assembly` result instead of the exact-match
-row that exists in `compiled_dict.json` — possible apostrophe-lookup
-regression on the exact-phrase path, different code path than the
-2026-08-16b `PHRASE_MAPS` fix. Not diagnosed further this session.
+Secondary item, also closed by the same Claude B commit per its own
+message ("apostrophe exact-phrase lookup fix"): `translate("i don't
+know garo")` — live-verified this session, now resolves correctly via
+`exact-phrase`, 0.98.
 
 ## 6. Rule-generalization check
 
