@@ -715,10 +715,20 @@ minimally-contrastive sentences with the same frame ("[time]-de,
 - `Da·al` ("today") + `-de` → `Da·alde bajalchi re·anggen` = "Today (I)
   will go to the market."
 - `Mijal`/`Mejal` ("yesterday") + `-de` → `Mijalde bajalchi re·anga` =
-  "Yesterday (I) went to the market."
+  "Yesterday (I) went to the market."¹
 - Also confirmed with a clock time, not just relative day words:
   `10:00 am bajiode bajalchi re·anggen` = "At 10:00 am (I) will go to
   the market" (`bajio` = "o'clock"/time-of-day + `-de`).
+
+¹ Semantic footnote (NV-107, 2026-09-02): `Mejal`/`me·ja·o`/`Mejao` (the
+`e`-vowel spellings; distinct from `Mijal`, closed separately in
+NV-104) is not limited to the literal calendar day before today — per
+Thangseng, it refers to "a specific time, not so long ago in the past
+... a particular time that the speaker and hearer may both know
+about," which can be a week or two weeks ago. "Yesterday" is a valid,
+common instance of this meaning, not its full scope. Does not change
+this rule's `-de` analysis, which is unaffected.
+
 
 Semantic nuance beyond "at that time," per Thangseng: it carries the
 sense that **of all the things happening, this particular thing will

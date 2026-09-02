@@ -313,7 +313,19 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-02C (Claude A, same session, Project Owner directive):
+  next_action: '2026-09-02D (Claude A, same session, Project Owner directive to
+    close a native item from a prior day): recorded NV-107 -- Thangseng
+    clarified `Mejal`/`me·ja·o`/`Mejao` is not limited to literal "yesterday",
+    refers to any specific/recent past time mutually known to speaker/hearer
+    (can be a week or two weeks ago), citing native example "Mejao anga
+    nang''chi re''angachim." = "I had gone to you (recently)". NV-104
+    (`Mijal`=yesterday) explicitly NOT reopened -- separate spelling, closed
+    as-is. Appended semantic-clarification notes to the 2 existing VERIFIED/HIGH
+    master_dictionary.json rows for `Mejal`/`me·ja·o` (english/garo/confidence
+    unchanged) + a footnote on RULE-042 in GRAMMAR_RULE_CATALOGUE.md. Full gate
+    re-run after edit: 8205/8205, 9/9, 284/284, 0 new violations. NV-107 CLOSED,
+    no open items from this finding. No engine code touched.'
+  next_action_prior_20260902C: '2026-09-02C (Claude A, same session, Project Owner directive):
     docs/THANGSENG_RELAY_QUESTION_20260901B.md rewritten again -- removed ALL
     internal terminology from the relay-facing section (previously still had
     "RULE-038"/"RULE-046" in the internal-notes framing surrounding the

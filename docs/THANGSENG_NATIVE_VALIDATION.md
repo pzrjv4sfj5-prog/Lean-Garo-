@@ -5722,3 +5722,28 @@ Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) 
 **Action taken:** none to `master_dictionary.json` — NV-008's three existing VERIFIED/HIGH rows for `ama` are unchanged (the Garo strings and their English glosses were already correct; only the *semantic segmentation* is now documented, not the data itself). No new row added, no existing row modified. No new numbered grammar rule created — a full modal-auxiliary rule (word order, `man·a` relationship) is still blocked on the remaining open half of relay item 1; this NV entry is the citation to draw on once that's answered.
 
 **Runtime Handoff:** None to engine code (Claude A does not touch engine code). For Claude B, when the modal-drop fix (highest-confidence handoff, still unpicked-up) is implemented: `ama` should be inserted as a standalone modal word alongside the main verb, not treated as a compound "can+verb" token — this NV is the citation for that composition detail. Exact word order still awaits the narrower relay answer (item 1, revised).
+
+---
+
+## NV-107 — `Mejal`/`me·ja·o`/`Mejao`: semantic scope clarified beyond literal "yesterday" — CLOSED (2026-09-02)
+
+**Source:** Thangseng, direct clarification via Project Owner relay (received 2026-09-01, recorded this session 2026-09-02).
+
+**Answer (relayed verbatim):** "Mejao refers to a specific time, not so long ago in the past. But it is specific only in the sense that it refers to a particular time that the speaker and hearer may both know about. It can be a week ago or two weeks ago."
+
+**Native example:** `Mejao anga nang'chi re'angachim.` = "I had gone to you (or visited you) recently."
+
+**Finding, CLOSED:**
+- `Mejal`/`me·ja·o`/`Mejao` (same word cluster, spelling variants already on record as VERIFIED/HIGH for "yesterday") is **not limited to the calendar day before today**.
+- It refers to a specific/recent past time that both speaker and hearer understand from context — this can be a week ago, two weeks ago, or similar, as long as it's a particular, mutually-known recent time, not just literally "yesterday."
+- The existing "Yesterday" gloss/translation is **not wrong** — "yesterday" is a valid, common instance of this word's broader meaning — but the word should not be treated as exclusively meaning the literal calendar day before today.
+
+**Relation to existing evidence — explicitly NOT reopening NV-104:** `Mijal` (a distinct spelling, closed separately in NV-104 as "yesterday," confirmed as coexisting with `Mejal`/`me·ja·o` without merging) is **unaffected** by this entry. This clarification applies to the `Mejal`/`me·ja·o`/`Mejao` cluster specifically. NV-104 remains closed as-is, not reopened, not reinterpreted.
+
+**Action taken:** Appended a semantic-clarification note (citing this NV, quoting Thangseng verbatim, and the native example) to the two existing VERIFIED/HIGH `master_dictionary.json` rows for `english: "Yesterday"` (`garo: "Mejal"` and `garo: "me·ja·o"`). **No change to either row's `english`, `garo`, or `confidence` fields** — both remain valid, correct translations for literal "yesterday" sentences. This is a documentation/notes-field addition only, so that future sessions don't mistakenly assume the word's meaning is limited to the literal calendar day. Full gate re-run after the edit: 8205/8205 entries, 9/9 grammatical corrections, 284/284 unit tests, 0 new repository-intelligence violations.
+
+**Not applied — no new dictionary row added:** The native example sentence (`Mejao anga nang'chi re'angachim.` = "I had gone to you recently") was not added as a new standalone dictionary entry this session — recorded here as the citation evidence; adding it as a translatable sentence is left for a future session if wanted, not assumed to be required by this clarification.
+
+**Runtime Handoff:** None — no engine code touched, no compiled-data-affecting change (notes-field only).
+
+**NV-107 is now fully closed.** No open items remain from this finding.
