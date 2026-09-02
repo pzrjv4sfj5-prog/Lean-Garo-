@@ -5689,3 +5689,36 @@ Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) 
 **Duplicate-representation check (Rule 8):** `corrections.json`/`phrase_maps.js` checked for either sentence key — no entries exist in either file, nothing to sync. Live-verified via `translate()` post-rebuild: both resolve `exact-phrase`, 0.98 confidence, correct value.
 
 **Runtime Handoff:** None — pure confidence-field promotion on two existing rows, no new keys, no engine involvement.
+
+---
+
+## NV-105 — Human/people counting classifier: `Sak` confirmed (2026-09-02)
+
+**Source:** Thangseng, direct confirmation via Project Owner relay, answering relay item 2 in `docs/THANGSENG_RELAY_QUESTION_20260901B.md` ("does counting people use a distinct classifier from the general noun-counting pattern?").
+
+**Answer (relayed verbatim):** "`Sak` = human/people." No worked example sentence (e.g. a specific "two friends"/"three teachers" phrase) was given alongside this answer.
+
+**Relation to existing evidence:** This directly reconfirms RULE-038 (Counting Construction: Noun + Classifier-Number), which already lists `sak` (people) as one of its confirmed classifier roots. **No new dictionary row or rule change results from this** — it closes the open relay question with a second, independent native confirmation of an already-VERIFIED classifier, it does not introduce new data. Per instruction, no additional grammar is inferred beyond what was stated (no assumption about a worked example's word order, no assumption this extends beyond the general classifier pattern already documented).
+
+**Action taken:** none to `master_dictionary.json`/`compiled_dict.json` — nothing to add. Relay item 2 marked CLOSED in `docs/THANGSENG_RELAY_QUESTION_20260901B.md` and `.ai/WORKSTATE.yaml`.
+
+**Runtime Handoff:** None — no code or data changed.
+
+---
+
+## NV-106 — `ama` lexical meaning clarified: modal "can" only, distinct from the lexical verb (2026-09-02)
+
+**Source:** Thangseng, direct confirmation via Project Owner relay, addressing relay item 1 in `docs/THANGSENG_RELAY_QUESTION_20260901B.md` (the `ama`/`man·a` "can" question).
+
+**Answer (relayed verbatim, paraphrased for record):** `ama` is not "can eat" — it does not itself carry the lexical verb's meaning. `ama` = "can" (the ability modal only); the lexical verb is supplied by a separate word in the construction. Reclassifying NV-008's existing evidence accordingly:
+- `Anga cha·na ama` = "I can eat" — `ama` contributes only "can"; `cha·na` ("eat") is the lexical verb.
+- `Anga re·angna ama` = "I can go" — `ama` contributes only "can"; `re·angna` ("go") is the lexical verb.
+- `Anga kam ka·na ama` = "I can work" — `ama` contributes only "can"; `kam ka·na` ("work") is the lexical verb.
+
+**Relation to existing evidence (NV-008):** NV-008 (closed 2026-07-25) already recorded these three full sentences and the gloss "can/able" for `ama`, and already established the `ama`("can")/`ama`("mother") homonymy split. This new evidence does not contradict or reopen NV-008 — it sharpens the semantic analysis: `ama`'s own lexical content is the bare modal "can," not a fused "can + verb" reading. This distinction matters for future engineering work (Claude B's "modal drop" handoff, `docs/CLAUDE_A_SESSION_MIGRATION_20260901C.md` §5 item 1) — it confirms `ama` should be composed as its own separate word alongside a main verb, not treated as if it already encodes the verb.
+
+**What this does NOT answer — explicitly still open, not inferred:** Per instruction, no additional grammar is inferred from this. This clarification is about `ama`'s meaning only. It does **not** state whether `ama` and `man·a` are the same word, different words, or register/person variants, and it does **not** state where the modal goes in a sentence like "I can speak Garo" relative to the main verb. **Relay item 1 remains OPEN** for those two questions — reworded down to exactly what's still unanswered (see relay doc update).
+
+**Action taken:** none to `master_dictionary.json` — NV-008's three existing VERIFIED/HIGH rows for `ama` are unchanged (the Garo strings and their English glosses were already correct; only the *semantic segmentation* is now documented, not the data itself). No new row added, no existing row modified. No new numbered grammar rule created — a full modal-auxiliary rule (word order, `man·a` relationship) is still blocked on the remaining open half of relay item 1; this NV entry is the citation to draw on once that's answered.
+
+**Runtime Handoff:** None to engine code (Claude A does not touch engine code). For Claude B, when the modal-drop fix (highest-confidence handoff, still unpicked-up) is implemented: `ama` should be inserted as a standalone modal word alongside the main verb, not treated as a compound "can+verb" token — this NV is the citation for that composition detail. Exact word order still awaits the narrower relay answer (item 1, revised).

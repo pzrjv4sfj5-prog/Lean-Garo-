@@ -313,7 +313,21 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-02 (Claude A, resumed from CLAUDE_A_SESSION_MIGRATION_20260901C):
+  next_action: '2026-09-02B (Claude A, same session, new native evidence received via
+    Project Owner relay): two answers received. (1) Sak = human/people classifier --
+    reconfirms already-VERIFIED RULE-038, no new dictionary row, relay question closed.
+    See NV-105. (2) ama clarified as pure modal "can", lexical verb supplied separately
+    (cha·na/re·angna/kam ka·na) -- sharpens NV-008''s existing semantic analysis, does
+    NOT reopen or change NV-008''s three existing VERIFIED/HIGH rows, does NOT resolve
+    the ama-vs-man·a identity question or modal word order (still open). See NV-106. No
+    additional grammar inferred beyond what was stated, per explicit instruction.
+    Rewrote docs/THANGSENG_RELAY_QUESTION_20260901B.md: added a clean, jargon-free
+    "SEND THIS SECTION TO THANGSENG" block up top (no rule numbers, no NV-/Claude-B
+    references) containing only the 5 still-genuinely-open items, renumbered; moved all
+    internal reasoning/citations below a clear separator so it can''t be mistaken for
+    relay text. NV-104/NV-103 still closed, not reopened. No engine code touched. No
+    gate re-run needed (no dictionary/compiled-data change this block).'
+  next_action_prior_20260902: '2026-09-02 (Claude A, resumed from CLAUDE_A_SESSION_MIGRATION_20260901C):
     resync verified clean (HEAD==origin/main==06eee5c on arrival; Claude B had pushed
     one investigation-only commit since the migration doc, docs/CLAUDE_B_SESSION_MIGRATION_20260902.md
     -- no code/data changed by it). Full gate re-confirmed green: 8205/8205 entries,
@@ -776,13 +790,21 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: '2026-09-02 (Claude A): all 6 items below (the
+  pending_thangseng_questions: '2026-09-02B (Claude A, CLOSURE): 2 of the 6
+    queued items answered via Project Owner relay -- people-counting classifier
+    (Sak, closes fully, see NV-105) and ama''s lexical meaning (closes the
+    meaning half of the ama/man·a item, see NV-106; the word-order half of that
+    item is still open). docs/THANGSENG_RELAY_QUESTION_20260901B.md rewritten:
+    5 items remain, renumbered, presented as a clean jargon-free block ready to
+    send (rule numbers/internal references removed from the actual relay text
+    per feedback that Thangseng shouldn''t see internal citations like RULE-038/
+    RULE-046). NOT YET SENT.
+    --- 2026-09-02 (Claude A): all 6 items below (the
     5 from 2026-09-01D + the pre-existing ama/man·a item, merged per instruction)
     PLUS a new 6th item (native sign-off on two "only"-construction sentences,
     from Claude B''s 2026-09-02 Finding 2) drafted as one combined relay batch:
-    docs/THANGSENG_RELAY_QUESTION_20260901B.md. NOT YET SENT — Project
-    Owner/Tridip to relay. Text below (2026-09-01D) retained for provenance/exact
-    wording, superseded by the drafted doc, do not re-draft or send twice.
+    docs/THANGSENG_RELAY_QUESTION_20260901B.md (superseded by the 2026-09-02B
+    rewrite above). NOT sent in that form.
     --- 2026-09-01D (Claude A, from
     docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md): 5 new unresolved linguistic boundaries found while testing
     complex-sentence composition against confirmed grammar rules. (i) Modal+verb
