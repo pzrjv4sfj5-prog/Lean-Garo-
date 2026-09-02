@@ -77849,5 +77849,47 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — Thangseng direct confirmation (2026-09-02, NV-111), answering relay item 4 (purpose/'to do something'). Same `-na` purpose-marker pattern as 'i went to eat' (NV-111): [verb]-na + re·angaha ('went').",
     "confidence": "verified_high"
+  },
+  {
+    "english": "i can eat",
+    "garo": "Anga cha·na ama",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i can eat",
+    "garo": "Anga cha·na man·a",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i can go",
+    "garo": "Anga re·angna ama",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i can go",
+    "garo": "Anga re·angna man·a",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i can work",
+    "garo": "Anga kam ka·na ama",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i can work",
+    "garo": "Anga kam ka·na man·a",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "confidence": "verified_high"
   }
 ]

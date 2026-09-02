@@ -507,8 +507,17 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260902.md - THIS IS THE
-    AUTHORITATIVE MIGRATION DOC, written 2026-09-02F (migrate-only session,
+  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC, written 2026-09-03. Records NV-117 (ama/man·a
+    identity now closed on direct native evidence, not just Project Owner
+    instruction; renumbered from a draft NV-112 after rebasing onto a
+    concurrent Claude B session that independently used NV-112-115), the 3
+    stale still-open passages reconciled, and the resulting pending-item
+    count: only RULE-038 tension remains open (Claude B closed the other 2
+    of the original 3 same-day, see NV-112-114). Read this file first on
+    resume.'
+  migration_doc_prior_20260902: 'docs/CLAUDE_A_SESSION_MIGRATION_20260902.md - prior
+    session''s close, written 2026-09-02F (migrate-only session,
     no linguistic/data/engine work). Records CLOSED (NV-103 through NV-111,
     ama/man·a identity per Project Owner closure decision), Claude B''s
     Finding 1 landing (290/290 new baseline), and exactly 3 still-pending
@@ -861,7 +870,24 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: '2026-09-02E (Claude A, CLOSURE): 4 more items
+  pending_thangseng_questions: '2026-09-03 (Claude A, CLOSURE, NV-117): the ama/man·a
+    identity question -- previously closed only by Project Owner instruction, not
+    native evidence (see 2026-09-02 closure note in CLAUDE_A_SESSION_MIGRATION_20260902.md)
+    -- is now closed with an actual direct Thangseng citation: ama and man·a
+    confirmed freely interchangeable across the full 3-verb can-eat/can-go/can-work
+    paradigm. See NV-117 in docs/THANGSENG_NATIVE_VALIDATION.md (renumbered from
+    a draft NV-112 after a concurrent Claude B session independently used NV-112
+    through NV-115 for other closures -- see below). 6 new tied-variant
+    master_dictionary.json rows added, allowlisted in known_dictionary_conflicts.json.
+    Reconciled 3 stale still-open passages in THANGSENG_NATIVE_VALIDATION.md (NV-103,
+    NV-106, NV-108) to point to this closure. SEPARATELY, same-day concurrent Claude B
+    session closed the other 2 of the original 3 still-pending items: relay item 5
+    (question-word+-ma, see NV-113, closed via internal-audit re-read) and the
+    only-X sign-off (see NV-112 [Finding 2] and NV-114, both sentences implemented,
+    speak-vs-eat divergence confirmed verb-driven). Only RULE-038 tension remains
+    genuinely open of the original 3 -- unaddressed by either session.
+    ---
+    2026-09-02E (Claude A, CLOSURE): 4 more items
     closed this session (old items 1-4: can word order, counting-people worked
     examples, adjective order, purpose -na -- see NV-108/109/110/111). Only 2
     items remain open, renumbered 1-2 in the current

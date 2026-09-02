@@ -5589,7 +5589,7 @@ Thangseng's direct assessment (relayed verbatim), re: the runtime output for "th
 
 - New VERIFIED/HIGH rows added, citing this NV: "can you talk in garo"=`Na·a Garochi aganna man·ama?`, "i don't know garo"=`Angade Garo man·ja.`, "do you know hindi/english"=`Na·a English/Hindi man·ama?`, "can you help me with the address"=`Ia biap/nok bano dakchakna man·genma?`, "i cannot help you"=`Anga nang·na dakchakna man·jawa.`
 - Corroborated and promoted 4 pre-existing unverified rows to VERIFIED/HIGH: "do you know english(?)"=`na·a/Na·a inglis man·ama?` (2 case variants), "do you know hindi(?)"=`na·a/Na·a Hindi man·ama?` (2 case variants) — the new combined sentence confirms both components.
-- These 7 sentences also read as a single coherent ability-modal paradigm for `man·a` across present (`man·a`/`man·ama`), future (`man·gen`/`man·genma`), negative-present (`man·ja`), and negative-future (`man·jawa`) — new data directly relevant to the **still-open, still-unanswered** `ama` vs `man·a` relay question in `claude_a.pending_thangseng_questions` (queued 2026-08-31C). **Not treated as answering that question** — this batch shows `man·a` used in second-person ability questions and negation, while the closed `ama` paradigm (NV-008) is first-person declarative ("I can eat" = Anga cha'na ama); a person/register split is a plausible reading but is exactly the kind of pattern-based inference the project's methodology forbids resolving without an explicit Thangseng answer. Cross-referenced into the pending question's text (see WORKSTATE update), not closed.
+- These 7 sentences also read as a single coherent ability-modal paradigm for `man·a` across present (`man·a`/`man·ama`), future (`man·gen`/`man·genma`), negative-present (`man·ja`), and negative-future (`man·jawa`) — at the time this entry was written, this was flagged as relevant to the then-open `ama` vs `man·a` relay question, with a person/register split noted as a plausible but explicitly *not*-inferred reading (pattern-matching alone was correctly declined as a basis for closure). **Superseded 2026-09-03 (NV-112):** the `ama`/`man·a` identity question is now closed with direct native evidence — both words are freely interchangeable, no person/register split — see NV-112. The person/register hypothesis floated here was not confirmed.
 - `man·ja` here corroborates rather than contradicts the pre-existing VERIFIED/HIGH "i don't understand"=`Anga man·ja` (200sentences citation) — same negative form, extended sense.
 - `man·jawa` corroborates the `-jawa` negative-future suffix already established as productive via NV-100's `re·jawa` ("will not go") — cross-verb confirmation, not a new rule.
 - New, single-attestation, not yet built into a rule (flagged only): `-de` topic/contrastive suffix on subject pronouns (`Angade`); `-chi` locative (RULE-044) extended to a linguistic-medium sense (`Garochi` = "in Garo [language]") rather than pure spatial movement.
@@ -5717,7 +5717,7 @@ Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) 
 
 **Relation to existing evidence (NV-008):** NV-008 (closed 2026-07-25) already recorded these three full sentences and the gloss "can/able" for `ama`, and already established the `ama`("can")/`ama`("mother") homonymy split. This new evidence does not contradict or reopen NV-008 — it sharpens the semantic analysis: `ama`'s own lexical content is the bare modal "can," not a fused "can + verb" reading. This distinction matters for future engineering work (Claude B's "modal drop" handoff, `docs/CLAUDE_A_SESSION_MIGRATION_20260901C.md` §5 item 1) — it confirms `ama` should be composed as its own separate word alongside a main verb, not treated as if it already encodes the verb.
 
-**What this does NOT answer — explicitly still open, not inferred:** Per instruction, no additional grammar is inferred from this. This clarification is about `ama`'s meaning only. It does **not** state whether `ama` and `man·a` are the same word, different words, or register/person variants, and it does **not** state where the modal goes in a sentence like "I can speak Garo" relative to the main verb. **Relay item 1 remains OPEN** for those two questions — reworded down to exactly what's still unanswered (see relay doc update).
+**What this does NOT answer — as of this entry (2026-09-02), still open, not inferred:** Per instruction, no additional grammar was inferred from this at the time. This clarification was about `ama`'s meaning only. It did **not** state whether `ama` and `man·a` are the same word, different words, or register/person variants, and it does **not** state where the modal goes in a sentence like "I can speak Garo" relative to the main verb. **Superseded 2026-09-03 (NV-112):** the `ama`/`man·a` identity half is now closed with direct native evidence (both words interchangeable) — see NV-112. The word-order question for a non-eat/go/work verb was separately closed by NV-108.
 
 **Action taken:** none to `master_dictionary.json` — NV-008's three existing VERIFIED/HIGH rows for `ama` are unchanged (the Garo strings and their English glosses were already correct; only the *semantic segmentation* is now documented, not the data itself). No new row added, no existing row modified. No new numbered grammar rule created — a full modal-auxiliary rule (word order, `man·a` relationship) is still blocked on the remaining open half of relay item 1; this NV entry is the citation to draw on once that's answered.
 
@@ -5764,7 +5764,7 @@ Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) 
 
 **Action taken:** Added new `master_dictionary.json` row: `english: "i can speak garo"` → `garo: "Anga Garo aganna man·a"`, VERIFIED/HIGH, citing this NV. Gate re-run clean after addition (see NV-111 below for the combined gate confirmation covering NV-108–111).
 
-**Runtime Handoff:** For Claude B, when the modal-drop fix is implemented: this is the citation for word order (modal follows the infinitive-marked verb, sentence-final). The `ama`/`man·a` choice-of-word question remains open (not part of this closure).
+**Runtime Handoff:** For Claude B, when the modal-drop fix is implemented: this is the citation for word order (modal follows the infinitive-marked verb, sentence-final). The `ama`/`man·a` choice-of-word question — open at the time this entry was written — is now closed, see NV-112 (either word is native-confirmed correct).
 
 ---
 
@@ -5823,10 +5823,10 @@ Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) 
 
 ---
 
-## Still open after this batch — explicitly not closed
+## Still open after this batch — status when first written, both since closed
 
-- **Relay item 5 (question word + question ending co-occurrence):** no answer received in this batch. Remains open, no evidence yet.
-- **Relay item 6 (sign-off on "I am the only student" / "the only fruit I eat is mango"):** Tridip/Thangseng reported confusion about this question in the relay conversation. Remains open — not closed, not guessed at. Needs a rephrased, simpler version in the next relay round (the "sign-off"/"do these sentences sound right" framing may need to be reworded further, or the confusion may be about something else entirely — not assumed without asking).
+- **Relay item 5 (question word + question ending co-occurrence):** open when this section was first written. **Closed 2026-09-02, see NV-113** (via internal-audit re-read, no new native transmission needed).
+- **Relay item 6 (sign-off on "I am the only student" / "the only fruit I eat is mango"):** open when this section was first written. **Closed 2026-09-02, see NV-112** (Finding 2, native sign-off received, both sentences implemented) **and NV-114** (speak-vs-eat divergence confirmed verb-driven).
 
 ---
 
@@ -5933,4 +5933,31 @@ confirmation of existing, already-shipped behavior (`src/grammarEngine.js`
 
 **Relay item status: CLOSED.** No further open items in
 `docs/THANGSENG_RELAY_QUESTION_20260901B.md`.
+
+---
+
+## NV-117 — `ama`/`man·a` identity CLOSED with direct native citation (2026-09-03)
+
+**Source:** Thangseng, direct relay (Project Owner/Tridip), full three-verb "can" paradigm resent with both modal words explicitly paired:
+
+> I can eat. = Anga cha·na ama/man·a.
+> I can go. = Anga re·angna ama/man·a.
+> I can work. = Anga kam ka·na ama/man·a.
+
+**Finding, CLOSED:** This is the same three-sentence paradigm already on record from NV-008 (closed 2026-07-25, `ama` only), but this transmission pairs each sentence with `man·a` as an explicit alternate ("ama/man·a") rather than a separate, unlinked citation for a different verb (contrast NV-108, where `man·a` appeared alone in a *different* sentence, "I can speak Garo"). Native evidence now directly shows `ama` and `man·a` used interchangeably in the identical slot, across all three verbs (eat/go/work) — not merely a plausible person/register split (the hypothesis floated and explicitly declined at NV-103) and not only a Project Owner administrative ruling (the 2026-09-02 closure recorded in `docs/CLAUDE_A_SESSION_MIGRATION_20260902.md`, which was explicit that it was **not** a new Thangseng citation). This is that missing citation. `ama` and `man·a` are the same function (ability modal "can"), freely interchangeable, at least in this first-person declarative slot.
+
+**Relation to existing evidence:**
+- **NV-008** (closed 2026-07-25): established the same three sentences with `ama` only. Unaffected/reconfirmed, not superseded.
+- **NV-103** (2026-09-01): found `man·a` used in second-person questions/negation and explicitly declined to infer a person/register split from that alone. This entry answers that open question directly — no split; both words go together, at minimum in first person declarative.
+- **NV-106** (2026-09-02): clarified `ama`'s own lexical content is the bare modal "can" only. Unaffected, still correct — this entry adds the identity-with-`man·a` piece NV-106 explicitly left open.
+- **NV-108** (2026-09-02): recorded `man·a` alone for "I can speak Garo" (word order evidence). Unaffected — this entry now also licenses `ama` as an equally valid alternate for that same sentence, though no new row is added for "speak" since that wasn't itself re-sent.
+- **Project Owner closure (2026-09-02, recorded in `docs/CLAUDE_A_SESSION_MIGRATION_20260902.md`):** that closure ("same function, canonical form is `ama`") is now backed by this direct native citation. Note this entry does **not** establish `ama` as more "canonical" than `man·a` — the relay gives no preference between them, both are offered equally ("ama/man·a"). The 2026-09-02 closure's "canonical form" framing was a Project Owner simplification for the dictionary's own default-value purposes, not something Thangseng stated; both forms are recorded as tied VERIFIED variants below, not one primary and one alternate.
+
+**Action taken:** Added 6 new `master_dictionary.json` rows (tied VERIFIED/HIGH variants, no primary chosen): `"i can eat"` → `Anga cha·na ama` / `Anga cha·na man·a`; `"i can go"` → `Anga re·angna ama` / `Anga re·angna man·a`; `"i can work"` → `Anga kam ka·na ama` / `Anga kam ka·na man·a`. All three keys allowlisted in `src/data/known_dictionary_conflicts.json` (intentional multi-VERIFIED-candidate ties, same pattern as NV-110's "big red house").
+
+**Duplicate-representation check (Rule 8):** `corrections.json`/`phrase_maps.js` checked for all 3 keys ("i can eat"/"i can go"/"i can work") — no entries exist in either file, nothing to sync.
+
+**Runtime Handoff:** None — no engine code touched. For Claude B, when the modal-drop fix (`ama`/`man·a` insertion, still the highest-confidence open handoff) is implemented: either word is native-confirmed correct in this slot, so the fix does not need to pick one over the other or detect which is "right."
+
+---
 
