@@ -782,11 +782,64 @@ export function tryWithoutGijaConstruction(input) {
 // it lives in a different source file entirely. See migration doc for
 // the full citation — this is a Claude A/data-hygiene item, not
 // something this function should silently work around.
+// NV-112 (2026-09-02, Claude B — native sign-off received this session for
+// the two sentences Finding 2 was blocked on, see
+// docs/CLAUDE_B_SESSION_MIGRATION_20260902F.md):
+//   1) "I am the only student." = "Angan saksa kamkam chatro."
+//      [Anga-n(topic, subject "I")] [sak-sa(one-classifier, "one [person]")]
+//      [kamkam(bound "only" — an ALTERNATE bound form to the already-
+//      attested free-standing "mangmang", per native note; NOT a
+//      replacement for mangmang elsewhere)] [chatro(noun predicate)].
+//      Zero-copula nominal predicate — no verb/-aia ending, unlike NV-103's
+//      pattern below. Native note: stress-dependent, other valid framings
+//      exist; this is the one attested surface form, shipped narrowly for
+//      subject "I" only (not generalized to other pronouns — no evidence
+//      for those yet).
+//   2) "the only fruit i eat is mango." = "Angni cha·gipa bitede te·gatchusan."
+//      This is a SECOND, CONTRADICTING attestation for NV-103's general
+//      "the only X SUBJ VERB is Y" pattern below (single-attestation
+//      origin: "the only language i speak is english"). Running this
+//      sentence through NV-103's pattern produces "Angade te·ga·chu
+//      Bitekosan Cha·aia", which native evidence now confirms is WRONG for
+//      this sentence. This is precisely the risk NV-103's own governance
+//      note warned about (single attestation below threshold for a general
+//      RULE). Rather than either (a) trusting NV-103's pattern for this new
+//      case despite contradicting evidence, or (b) discarding NV-103's
+//      pattern for its own original, still-unquestioned attestation, this
+//      ships as an EXACT-MATCH override — the verified form for this one
+//      sentence only. NV-103's general pattern is untouched and still
+//      applies to any other sentence matching its shape. Open question for
+//      Thangseng (not yet asked): why do "speak"-type and "eat"-type only-
+//      constructions differ (relativizer -gipa + zero-copula vs bare SVO +
+//      -aia)? Do not generalize either pattern further without an answer.
+const ONLY_STUDENT_RE = /^i am the only (.+?)\.?$/i;
+
 export function tryOnlyIdentityConstruction(input) {
+  const studentMatch = input.match(ONLY_STUDENT_RE);
+  if (studentMatch) {
+    const nounWord = studentMatch[1].trim().toLowerCase();
+    const nounGaro = lookupGaro(nounWord);
+    // No dictionary entry: do not guess a noun form. Fall through to null
+    // (same "don't ship a partial/invented result" precedent used
+    // throughout this file) rather than the general pattern below, since
+    // this sentence shape ("SUBJ am the only NOUN") doesn't match that
+    // pattern's shape ("the only NOUN SUBJ VERB is OBJ") anyway.
+    return nounGaro ? `Angan saksa kamkam ${nounGaro}` : null;
+  }
+
   const m = input.match(/\bthe only (.+?) (i|you|he|she|we|they) ([a-z']+) is ([a-z']+)\b/i);
   if (!m) return null;
   const [, nounPhraseRaw, subjectWord, verbWord, objectWord] = m;
   const nounWord = nounPhraseRaw.trim().toLowerCase();
+
+  // NV-112 exact-match override (see comment above) — ships the verified
+  // native form directly, bypassing NV-103's general composition below,
+  // which is confirmed wrong for this specific sentence.
+  if (nounWord === 'fruit' && subjectWord.toLowerCase() === 'i' &&
+      verbWord.toLowerCase() === 'eat' && objectWord.toLowerCase() === 'mango') {
+    return 'Angni cha\u00b7gipa bitede te\u00b7gatchusan';
+  }
+
   const subjectPronounGaro = PRONOUN_MAP[subjectWord.toLowerCase()];
   if (!subjectPronounGaro) return null;
 

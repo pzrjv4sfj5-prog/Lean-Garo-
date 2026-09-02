@@ -1930,16 +1930,36 @@ test('negative-future-continuous: the bare-noun-negation fallback (meant for "no
 
 test('NV-103 only-identity: general mechanism — topic suffix, bound object+only, SOV order, and declarative ending are all present, using clean object/noun words unaffected by any other known data defect', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const r = await translate('the only fruit i eat is mango');
+  // NOTE: this test previously used "the only fruit i eat is mango" as its
+  // example. That sentence now has direct native evidence (NV-112,
+  // 2026-09-02) contradicting NV-103's general pattern for this specific
+  // case, and is shipped as an exact-match override instead (see the
+  // dedicated NV-112 test below) — so it no longer exercises the general
+  // mechanism and was swapped for a different, still-unquestioned example.
+  const r = await translate('the only game they play is football');
   assert.equal(r.method, 'only-identity-construction');
-  assert.equal(r.garo, 'Angade te·ga·chu Bitekosan Cha·aia');
+  assert.equal(r.garo, 'Uamangde Football Kal·anikosan Kal·aia');
   // topic suffix on subject
-  assert.ok(r.garo.startsWith('Angade '));
+  assert.ok(r.garo.startsWith('Uamangde '));
   // bound object+only as ONE unit (not the free-standing "mangmang")
-  assert.ok(r.garo.includes('Bitekosan'));
+  assert.ok(r.garo.includes('Kal·anikosan'));
   assert.ok(!r.garo.includes('mangmang'));
   // verb carries the -aia declarative ending, not a bare root
   assert.ok(r.garo.endsWith('aia'));
+});
+
+// NV-112 (2026-09-02, Claude B — native sign-off received this session,
+// docs/CLAUDE_B_SESSION_MIGRATION_20260902F.md). Second attestation for
+// NV-103's "the only X SUBJ VERB is Y" shape CONTRADICTS the general
+// pattern for this exact sentence — native evidence gives a structurally
+// different rendering (relativizer -gipa + zero-copula, not bare SVO+aia).
+// Shipped as an exact-match override, not a change to the general pattern
+// (which the test above confirms is still intact for its own attestation).
+test('NV-112 only-identity: exact-match override for "the only fruit i eat is mango" — contradicts NV-103\'s general pattern, ships the verified native form directly', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('the only fruit i eat is mango');
+  assert.equal(r.method, 'only-identity-construction');
+  assert.equal(r.garo, 'Angni cha\u00b7gipa bitede te\u00b7gatchusan');
 });
 
 test('NV-103 only-identity: generalizes across subject pronouns, not just "i"', async () => {
@@ -1967,9 +1987,31 @@ test('NV-103 only-identity: unresolved object noun falls back to a capitalized l
   assert.ok(r.garo.includes('Klingon'));
 });
 
-test('NV-103 only-identity: does not fire on unrelated "only" sentences — the free-standing mangmang path is untouched', async () => {
+// NV-112 (2026-09-02, Claude B — native sign-off received this session,
+// docs/CLAUDE_B_SESSION_MIGRATION_20260902F.md): "i am the only student" now
+// HAS native evidence and DOES route through only-identity-construction
+// (previously it did not — the pattern below supersedes the old "does not
+// fire" assertion, which predates this evidence). "Angan saksa kamkam
+// chatro" is a zero-copula nominal predicate, structurally distinct from
+// NV-103's pattern (no -aia ending, no topic-de, uses bound "kamkam" as an
+// alternate to "mangmang") — narrowly attested for subject "I" only.
+test('NV-112 only-identity: "i am the only student" now resolves via the construction with native-attested form (was previously unhandled/no evidence)', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('i am the only student');
+  assert.equal(r.method, 'only-identity-construction');
+  assert.equal(r.garo, 'Angan saksa kamkam Chattro');
+  assert.ok(!r.garo.includes('mangmang'));
+});
+
+test('NV-112 only-identity: "i am the only X" is narrowly scoped to subject "I" — does not fire for other subjects (no native evidence for those yet)', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('he is the only teacher');
+  assert.notEqual(r.method, 'only-identity-construction');
+});
+
+test('NV-112 only-identity: "i am the only X" falls through cleanly (no crash, no guessed output) when the noun has no dictionary entry', async () => {
+  const { translate } = await import('../../src/translationEngine.js');
+  const r = await translate('i am the only zorblax');
   assert.notEqual(r.method, 'only-identity-construction');
 });
 

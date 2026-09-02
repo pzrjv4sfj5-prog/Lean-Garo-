@@ -58,12 +58,17 @@ Finding 2).
 
 - **Item 1 (was old item 5):** question-word + question-ending
   co-occurrence — no evidence yet.
-- **Item 2 (was old item 6):** sign-off on the two "only X" sentences —
-  Tridip/Thangseng reported confusion about this question in the prior
-  round. Kept in this send with a short acknowledgment of that
-  confusion and an offer to rephrase; not assumed to be understood now
-  just because it's being re-sent unchanged. Gates a specific pending
-  engineering fix — not implemented until this is answered.
+- ~~**Item 2 (was old item 6):** sign-off on the two "only X" sentences~~
+  **CLOSED 2026-09-02.** Answer received: "I am the only student." =
+  "Angan saksa kamkam chatro." (stress-dependent, alternate framings
+  exist, "mangmang" also valid for "only" here). "The only fruit I eat
+  is mango." = "Angni cha·gipa bitede te·gatchusan." Implemented as
+  NV-112 — see `docs/CLAUDE_B_SESSION_MIGRATION_20260902F.md`. Note:
+  the second sentence's answer directly contradicts NV-103's general
+  "the only X SUBJ VERB is Y" pattern (single-attestation origin) for
+  this specific case; shipped as an exact-match override, not a change
+  to NV-103's own attestation. Open follow-up (not yet asked): why do
+  "speak"-type and "eat"-type only-constructions differ structurally?
 
 ### Why we're asking
 
