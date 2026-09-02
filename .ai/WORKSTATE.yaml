@@ -313,7 +313,25 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-02E (Claude A, same session, "close all data" directive):
+  next_action: '2026-09-02F (Claude A, MIGRATE-ONLY session, no linguistic/data/
+    engine work performed): resynced against origin/main (fast-forwarded one new
+    Claude B docs-only commit, a4c91c3 -- corrected a stale Finding-1-status claim,
+    no code/data change). Wrote
+    docs/CLAUDE_A_SESSION_MIGRATION_20260902.md for the next Claude A session,
+    recording: CLOSED -- NV-103 through NV-111, and the ama/man·a identity
+    question (Project Owner closure decision this session: same function,
+    canonical form is ama -- NOT new Thangseng evidence, recorded as instructed;
+    flags 3 stale "still open" passages in THANGSENG_NATIVE_VALIDATION.md that
+    need reconciling next session, not touched this session per migrate-only
+    scope). CLAUDE B CHANGE LANDED -- Finding 1 (did not go bug) CLOSED,
+    implemented+tested+pushed in 20833a7 (re·ja -> Re·angja), new baseline is
+    290/290 unit tests (was 284/284) -- not redone, not reinvestigated. STILL
+    PENDING for next Claude A -- exactly 3 items, no others: (1) relay item
+    question-word+-ma ending co-occurrence, no answer yet; (2) native sign-off on
+    2 "only X" sentences, blocks Claude B Finding 2; (3) RULE-038 noun-elision
+    tension (NV-109), flagged not resolved. No new questions invented. No closed
+    item reopened. No engine or dictionary changes made this session.'
+  next_action_prior_20260902E: '2026-09-02E (Claude A, same session, "close all data" directive):
     processed a 4-item native evidence batch (WhatsApp relay via Tridip). Closed:
     NV-108 (can word order: man·a placed after infinitive-marked verb,
     sentence-final; "Anga Garo aganna man·a"="I can speak Garo"), NV-109
@@ -489,7 +507,14 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260901C.md - THIS IS THE
+  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260902.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC, written 2026-09-02F (migrate-only session,
+    no linguistic/data/engine work). Records CLOSED (NV-103 through NV-111,
+    ama/man·a identity per Project Owner closure decision), Claude B''s
+    Finding 1 landing (290/290 new baseline), and exactly 3 still-pending
+    items (question-word+-ma relay item; "only X" native sign-off; RULE-038
+    noun-elision tension). Read this file first on resume.'
+  migration_doc_prior_20260901C: 'docs/CLAUDE_A_SESSION_MIGRATION_20260901C.md - THIS IS THE
     AUTHORITATIVE MIGRATION DOC, final close of the 2026-09-01 session
     (2026-09-01C): NV-104 + NV-103 both fully closed and pushed via PAT; built
     docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md (14 composition tests, 5 new
