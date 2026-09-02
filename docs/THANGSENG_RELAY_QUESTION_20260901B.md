@@ -1,8 +1,10 @@
 # Thangseng Relay — Combined Batch (drafted 2026-09-02, simplified 2026-09-02, 4 of 6 items answered 2026-09-02)
 
-**Status:** PARTIALLY ANSWERED. Items 1-4 answered via Project
-Owner/Tridip relay — see NV-108, NV-109, NV-110, NV-111. **2 items
-remain open and ready to send.**
+**Status:** PARTIALLY ANSWERED. Items 1-4 (old numbering) answered via
+Project Owner/Tridip relay — see NV-108, NV-109, NV-110, NV-111. Old
+item 6 (only-X sign-off) answered 2026-09-02 — see NV-112. **2 items
+remain open and ready to send** (1 carried forward, 1 new follow-up
+from the NV-112 answer).
 
 ---
 
@@ -15,16 +17,20 @@ remain open and ready to send.**
 - Are there situations where you would not use a question ending with
   a question word?
 
-**2. Do these two sentences sound right?**
-1. "Anga chattro·ko mangmang" — meant to say "I am the only student."
-2. "Angade te·ga·chu Bitekosan Cha·aia" — meant to say "the only fruit
-   I eat is mango."
-If either sounds wrong, could you say it the correct way?
-
-There was some confusion about this question last time — happy to
-rephrase or explain differently if it helps. We're just checking
-whether these two Garo sentences sound natural for those two English
-meanings.
+**2. Two "only" sentences built differently — is that expected?**
+We now have two Garo sentences using "only" that turned out to be built
+in different ways, and we'd like to check if that's expected or if we're
+missing something:
+1. "the only language I speak is english" → "Angade English
+   ba·sakosan aganaia" (ends with the verb "aganaia")
+2. "the only fruit I eat is mango" → "Angni cha·gipa bitede
+   te·gatchusan" (no separate verb at the end, uses "cha·gipa" instead)
+- Is the difference just because the verbs are different ("speak" vs
+  "eat"), or are there other reasons a sentence like #1's pattern might
+  become sentence #2's pattern (or vice versa)?
+- If you took sentence #1's pattern and used it for something like "the
+  only fruit I eat is mango," would that also sound acceptable, or
+  clearly wrong?
 
 ---
 
