@@ -313,7 +313,24 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-01C (Claude A, CLEAN CLOSE, final session close for
+  next_action: '2026-09-02 (Claude A, resumed from CLAUDE_A_SESSION_MIGRATION_20260901C):
+    resync verified clean (HEAD==origin/main==06eee5c on arrival; Claude B had pushed
+    one investigation-only commit since the migration doc, docs/CLAUDE_B_SESSION_MIGRATION_20260902.md
+    -- no code/data changed by it). Full gate re-confirmed green: 8205/8205 entries,
+    9/9 grammatical corrections, 284/284 unit tests (unchanged, Claude B added none this
+    round), 0 new repository-intelligence violations. Drafted
+    docs/THANGSENG_RELAY_QUESTION_20260901B.md -- combined batch of the 6 queued items:
+    the 5 grammar-matrix boundaries (item (i) merged with the pre-existing ama/man·a
+    question per standing instruction, not sent twice) PLUS a new 6th item folded in
+    from Claude B''s 2026-09-02 Finding 2 (native sign-off needed on "i am the only
+    student" / "the only fruit i eat is mango" before tryOnlyIdentityConstruction is
+    touched). NOT YET SENT -- Project Owner/Tridip to relay. Neither of the two
+    highest-confidence Claude B engineering handoffs (modal drop; RULE-046
+    question-marking regression) has been picked up yet -- still open, restated here,
+    not attempted from this role. Did NOT reopen NV-103/NV-104 (both remain closed).
+    Did NOT touch engine code. Nothing else changed this block -- no dictionary edits,
+    no gate re-run needed beyond the resync confirmation above.'
+  next_action_prior_20260901C: '2026-09-01C (Claude A, CLEAN CLOSE, final session close for
     2026-09-01): built docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md -- 14
     complex-sentence composition tests run live against translate(), each checked
     against docs/GRAMMAR_RULE_CATALOGUE.md for native-confirmed structure,
@@ -759,9 +776,15 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: '2026-09-01D (Claude A, NEW, from
-    docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md — not yet drafted as a relay
-    doc or sent): 5 new unresolved linguistic boundaries found while testing
+  pending_thangseng_questions: '2026-09-02 (Claude A): all 6 items below (the
+    5 from 2026-09-01D + the pre-existing ama/man·a item, merged per instruction)
+    PLUS a new 6th item (native sign-off on two "only"-construction sentences,
+    from Claude B''s 2026-09-02 Finding 2) drafted as one combined relay batch:
+    docs/THANGSENG_RELAY_QUESTION_20260901B.md. NOT YET SENT — Project
+    Owner/Tridip to relay. Text below (2026-09-01D) retained for provenance/exact
+    wording, superseded by the drafted doc, do not re-draft or send twice.
+    --- 2026-09-01D (Claude A, from
+    docs/COMPLEX_SENTENCE_GRAMMAR_MATRIX_20260901.md): 5 new unresolved linguistic boundaries found while testing
     complex-sentence composition against confirmed grammar rules. (i) Modal+verb
     co-occurrence pattern for "can" -- where does man·a/ama actually go in a full
     sentence like "I can speak Garo"? This MERGES WITH, does not replace, the
