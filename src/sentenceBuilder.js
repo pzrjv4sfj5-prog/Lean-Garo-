@@ -35,7 +35,7 @@ import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
 import { lookup, lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
-import { applyNegation, applyTense, stripToStem } from './morphologyEngine.js';
+import { applyNegation, applyTense, stripToStem, getConjugationRoot } from './morphologyEngine.js';
 import { STOP_WORDS, AUXILIARY_SKIP, MID_JOIN_CONNECTIVES } from './normalizationEngine.js';
 import { translate } from './translationEngine.js';
 
@@ -209,7 +209,28 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
   pairs.forEach(({ eng, garo: t }, i) => {
     const lw = eng.toLowerCase().replace(/[^a-z]/g,'');
     if (i === lastVerbIdx) {
-      verbs.push(t);
+      // go/re·ang- stem-decoupling fix, part 2 (2026-09-02, Claude B —
+      // closes Finding 1, docs/CLAUDE_B_TRACE_FINDING1_20260902.md).
+      // This function resolves the elected verb via plain lookupGaro
+      // (see `translated` above), which correctly returns the bare-form
+      // root ('re·a' for "go" — VERIFIED/HIGH, NV-100) but is NOT the
+      // stem tense/negation suffixes should attach to for verbs with a
+      // dedicated conjugation_roots.json entry (same decoupling already
+      // applied in grammarEngine.js:401/422 for the grammar-assembly
+      // path). Without this, any subjectless sentence (no pronoun, no
+      // a/an/the NP — the only way this fallback is reached at all, per
+      // sentenceBuilder.js's own module comment above) using such a verb
+      // fell through to this SECOND, independent verb-resolution path
+      // with zero knowledge of the decoupling table, producing malformed
+      // output ("did not go" -> "re·ja" instead of "Re·angja", confirmed
+      // root-caused in the trace doc above). getConjugationRoot() is a
+      // documented no-op for every verb without a table entry (returns
+      // garoVerb unchanged), so this is behavior-identical for every verb
+      // except the ones the table exists to correct — same guarantee
+      // grammarEngine.js's callers already rely on. Scoped to exactly the
+      // elected verb slot (lastVerbIdx) — non-verb content words in
+      // `nonVerbs` are untouched.
+      verbs.push(getConjugationRoot(lw, t));
       lastVerbIsIrregular = !!(IRREGULAR_VERBS[lw] || IRREGULAR_VERBS[lw.replace(/ing$|ed$|es$|s$/, '')]);
     } else {
       nonVerbs.push(t);

@@ -1998,3 +1998,53 @@ test('NV-103 item 5: existing apostrophe-preserving paths (corrections, phrase-m
   assert.equal(rCorrection.method, 'correction');
   assert.equal(rCorrection.garo, 'Hai re·naha');
 });
+
+// ── Finding 1 fix: sov-assembly go/re·ang- stem-decoupling ─────────────────
+// (2026-09-02, Claude B — see docs/CLAUDE_B_TRACE_FINDING1_20260902.md for
+// the full root-cause trace). Root cause: subjectless sentences (no
+// pronoun, no a/an/the NP) skip analyzeGrammar's subject-gated verb-finding
+// block entirely and fall through to assembleSentenceSOV, a second,
+// independent verb-resolution path that had no knowledge of the
+// conjugation_roots.json stem-decoupling table grammarEngine.js already
+// uses (grammarEngine.js:401/422) — so it resolved "go" via the bare
+// dictionary root ('re·a') and negated THAT, producing malformed
+// 're·ja' instead of 'Re·angja'. Fix: route the elected verb through the
+// same getConjugationRoot() call, in sentenceBuilder.js, before tense/
+// negation suffixing. No new table, no go-specific special case — reuses
+// the existing mechanism, so it's a no-op for every verb without a
+// conjugation_roots.json entry (confirmed below via 'eat').
+test('Finding 1: subjectless "did not go" now resolves the Re·ang- conjugation stem via sov-assembly, not the bare re·a root', async () => {
+  const r = await translate('did not go');
+  assert.equal(r.method, 'sov-assembly');
+  assert.equal(r.garo, 'Re·angja');
+});
+
+test('Finding 1 regression guard: "will not go" is unaffected (already correct via the higher-priority corrections.json cascade step, never reaches sov-assembly)', async () => {
+  const r = await translate('will not go');
+  assert.equal(r.method, 'correction');
+  assert.equal(r.garo, 're·jawa');
+});
+
+test('Finding 1 regression guard: "will not be going" is unaffected (already correct via the higher-priority exact-phrase cascade step, never reaches sov-assembly)', async () => {
+  const r = await translate('will not be going');
+  assert.equal(r.method, 'exact-phrase');
+  assert.equal(r.garo, 're·angjawa');
+});
+
+test('Finding 1 regression guard: bare "go" is unaffected — still resolves to the bare re·a root via phrase-map, not the conjugation stem', async () => {
+  const r = await translate('go');
+  assert.equal(r.method, 'phrase-map');
+  assert.equal(r.garo, 're·a');
+});
+
+test('Finding 1 regression guard: getConjugationRoot is a no-op for verbs with no conjugation_roots.json entry — "did not eat" (sov-assembly) is byte-identical before/after the fix', async () => {
+  const r = await translate('did not eat');
+  assert.equal(r.method, 'sov-assembly');
+  assert.equal(r.garo, 'Cha·ja');
+});
+
+test('Finding 1 regression guard: subject-bearing "he did not go" is unaffected — was already correct via grammar-assembly (grammarEngine.js:422), which has its own, separate getConjugationRoot call untouched by this fix', async () => {
+  const r = await translate('he did not go');
+  assert.equal(r.method, 'grammar-assembly');
+  assert.equal(r.garo, 'Ua Re·angja');
+});
