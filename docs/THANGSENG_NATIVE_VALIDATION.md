@@ -5827,3 +5827,72 @@ Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) 
 
 - **Relay item 5 (question word + question ending co-occurrence):** no answer received in this batch. Remains open, no evidence yet.
 - **Relay item 6 (sign-off on "I am the only student" / "the only fruit I eat is mango"):** Tridip/Thangseng reported confusion about this question in the relay conversation. Remains open — not closed, not guessed at. Needs a rephrased, simpler version in the next relay round (the "sign-off"/"do these sentences sound right" framing may need to be reworded further, or the confusion may be about something else entirely — not assumed without asking).
+
+---
+
+## NV-113 — Relay item 5 (question-word + question-ending co-occurrence) — CLOSED 2026-09-02 via internal-audit re-read, no new native transmission needed
+
+**Not a new relay answer.** This session re-read this log's own existing
+entries (Project Owner prompted a re-check rather than re-sending the
+relay question) and found the question was already answered, multiple
+times over, scattered across prior sessions without ever being cross-
+referenced against relay item 5 specifically.
+
+**Multiply-attested pattern found (7 independent native-sourced sentences,
+no counter-example):**
+
+Question-word questions (using `maina`/`mai`/`maikai`/`mai rokom`/`badita`
+etc.) — **no `-ma` suffix**:
+1. "why do you laugh?" → `Maina na·a ka·dinga?` / `Na·a maina ka·dinga?`
+   (Thangseng direct, "laugh" orthography section, line ~3486).
+2. "How is your grandmother?" → `Nang'ni ambide mai rokom?` (line 2388).
+3. "How are you going to do it?" → `Na'a uako maikai dakna am'enga?`
+   (line 2390).
+4. "How can I be a better person?" → `Anga maikai nambatgipa mande
+   ong'na amgen?` (line 2391).
+5. "How many apples are on the table?" → `Tableo badita rong apple
+   donga?` (line 2387).
+6. "what kind" → `Mijal songrear mai rokom?` (line 4410).
+7. "how are you" (literal, rare register) → `Na·a mai rokom?` (line
+   5282) — directly paired in the same log entry with the idiomatic
+   yes/no-style greeting form below.
+
+Yes/no (polar) questions with no question word — **`-ma` suffix present**:
+- "Do you have my book?" → `Nang'o angni ki'tap dongama?` (line 2380).
+- "Have you eaten your lunch?" → `Na'a mipring cha'ahama?` (line 2382).
+- "Do you have to go to the market?" → `Na'a antichi re'angna
+  nangengama?` (line 2384).
+- "how are you" (idiomatic greeting, functionally "are you well?", no
+  literal question word) → `Namengama?` (line 5282) — same log entry as
+  the literal `mai rokom` form above; a clean minimal pair for the same
+  English gloss, one form with a question word (no `-ma`), one without
+  (has `-ma`).
+
+**Determination — RULE-047 (new):** In Garo, the `-ma` interrogative
+suffix marks **polar (yes/no) questions only**. Questions built with an
+explicit question word (`sawa`/`mai`/`maina`/`maikai`/`bano`/`basaku`/
+`mai rokom`/`badita`, etc.) do **not** take `-ma` — the question word
+itself carries the interrogative force, and the sentence otherwise keeps
+its normal declarative ending. No counter-example found across 7
+question-word sentences and 4 polar sentences spanning multiple relay
+sessions (2026-07 through 2026-09).
+
+**Not yet confirmed:** whether this holds for every question word in
+every tense/aspect combination — the 7 examples above cover `mai`-family
+words and `badita` across present/future/modal contexts, but not, e.g.,
+`sawa` (who) or `bano` (where) in a full sentence (both appear only as
+bare vocabulary entries elsewhere in this log, not in a full attested
+question-word sentence). RULE-047 is scoped to what's attested; do not
+assume it covers `sawa`/`bano` sentences without a direct example.
+
+**Engineering impact:** none required right now. `translate()` has no
+general question-construction logic that would append `-ma` — all
+current question output comes from `corrections.json`/`phrase_maps.js`
+lookups (see `src/translationEngine.js` "?" handling comment), so there
+is no live code path to fix or regress. This closes the relay-log gap
+only; RULE-047 is recorded for whenever question-construction becomes a
+general engine feature.
+
+**Relay item 5 status: CLOSED.** No re-send to Thangseng needed — this
+was gettable from data already on file.
+

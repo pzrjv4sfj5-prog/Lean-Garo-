@@ -2,22 +2,17 @@
 
 **Status:** PARTIALLY ANSWERED. Items 1-4 (old numbering) answered via
 Project Owner/Tridip relay — see NV-108, NV-109, NV-110, NV-111. Old
-item 6 (only-X sign-off) answered 2026-09-02 — see NV-112. **2 items
-remain open and ready to send** (1 carried forward, 1 new follow-up
-from the NV-112 answer).
+item 6 (only-X sign-off) answered 2026-09-02 — see NV-112. Old item 5
+(question-word + question-ending co-occurrence) closed 2026-09-02 via
+internal-audit re-read of already-existing native evidence — see NV-113
+— no re-send needed. **1 item remains open and ready to send** (new
+follow-up from the NV-112 answer).
 
 ---
 
 ## SEND THIS SECTION TO THANGSENG — nothing else in this file
 
-**1. Questions with a question word**
-- When you make a question using a question word such as "who,"
-  "what," "where," or "which," is a question ending also used?
-- Please give a natural example.
-- Are there situations where you would not use a question ending with
-  a question word?
-
-**2. Two "only" sentences built differently — is that expected?**
+**1. Two "only" sentences built differently — is that expected?**
 We now have two Garo sentences using "only" that turned out to be built
 in different ways, and we'd like to check if that's expected or if we're
 missing something:
@@ -62,8 +57,12 @@ Finding 2).
 
 ### Still open
 
-- **Item 1 (was old item 5):** question-word + question-ending
-  co-occurrence — no evidence yet.
+- ~~**Item 1 (was old item 5):** question-word + question-ending
+  co-occurrence~~ **CLOSED 2026-09-02.** Not answered via relay — closed
+  via internal-audit re-read of already-existing native evidence
+  scattered across this log (7 question-word sentences, all `-ma`-free;
+  4 polar sentences, all `-ma`-bearing; one clean minimal pair). See
+  NV-113 and new RULE-047. No re-send needed.
 - ~~**Item 2 (was old item 6):** sign-off on the two "only X" sentences~~
   **CLOSED 2026-09-02.** Answer received: "I am the only student." =
   "Angan saksa kamkam chatro." (stress-dependent, alternate framings

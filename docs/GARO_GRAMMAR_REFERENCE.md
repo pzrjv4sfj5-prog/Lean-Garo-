@@ -292,6 +292,16 @@ NOT categorically wrong. Correct for "yapping about":
 `Na·a maini gimin bel·belenga` ✅ = What are you yapping about
 But WRONG for lying/crying/saying — those use `maina` or `Maiko` instead.
 
+### RULE-047 — `-ma` interrogative suffix is for polar (yes/no) questions only
+Question-word questions (`sawa`/`mai`/`maina`/`maikai`/`mai rokom`/
+`badita`, etc.) do NOT take `-ma` — the question word itself carries the
+interrogative force. `-ma` marks yes/no questions with no question word.
+Confirmed via `docs/THANGSENG_NATIVE_VALIDATION.md` NV-113 (7
+question-word examples, 0 with `-ma`; 4 polar examples, all with `-ma`;
+includes a minimal pair: `Na·a mai rokom?` "how are you" literal, vs
+`Namengama?` "how are you" idiomatic greeting). Not yet confirmed for
+`sawa`/`bano` specifically in a full sentence.
+
 ---
 
 ## 7. KEY VOCABULARY
