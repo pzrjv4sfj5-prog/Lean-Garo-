@@ -2090,3 +2090,57 @@ test('Finding 1 regression guard: subject-bearing "he did not go" is unaffected 
   assert.equal(r.method, 'grammar-assembly');
   assert.equal(r.garo, 'Ua Re·angja');
 });
+
+// NV-115 (2026-09-03, Claude B). Confirmed loanwords with no Garo
+// equivalent were being mis-"translated" by fuzzy match matching them to
+// unrelated dictionary entries within edit-distance 1-2 (momo->moo,
+// chow->cow, maggie->magic, paneer/panner->anger). Fixed with an
+// exact-match loanword list checked before fuzzy match.
+test('NV-115 loanword passthrough: "momo" no longer fuzzy-matches to "moo" (im·bo·a)', async () => {
+  const r = await translate('momo');
+  assert.equal(r.method, 'loanword-passthrough');
+  assert.equal(r.garo, 'Momo');
+});
+
+test('NV-115 loanword passthrough: "chow" no longer fuzzy-matches to "cow" (ma·su)', async () => {
+  const r = await translate('chow');
+  assert.equal(r.method, 'loanword-passthrough');
+  assert.equal(r.garo, 'Chow');
+});
+
+test('NV-115 loanword passthrough: "maggie" no longer fuzzy-matches to "magic" (ban·a)', async () => {
+  const r = await translate('maggie');
+  assert.equal(r.method, 'loanword-passthrough');
+  assert.equal(r.garo, 'Maggie');
+});
+
+test('NV-115 loanword passthrough: "paneer" and "panner" no longer fuzzy-match to "anger" (Ka·o nanga)', async () => {
+  const paneer = await translate('paneer');
+  const panner = await translate('panner');
+  assert.equal(paneer.method, 'loanword-passthrough');
+  assert.equal(paneer.garo, 'Paneer');
+  assert.equal(panner.method, 'loanword-passthrough');
+  assert.equal(panner.garo, 'Panner');
+});
+
+test('NV-115 loanword passthrough: multi-word "paneer butter masala" / "panner butter masala" pass through cleanly, Title Case, no [UNKNOWN] tag', async () => {
+  const r1 = await translate('paneer butter masala');
+  const r2 = await translate('panner butter masala');
+  assert.equal(r1.method, 'loanword-passthrough');
+  assert.equal(r1.garo, 'Paneer Butter Masala');
+  assert.equal(r2.method, 'loanword-passthrough');
+  assert.equal(r2.garo, 'Panner Butter Masala');
+});
+
+test('NV-115 loanword passthrough: case-insensitive match ("MOMO", "Chow")', async () => {
+  const r1 = await translate('MOMO');
+  const r2 = await translate('Chow');
+  assert.equal(r1.garo, 'Momo');
+  assert.equal(r2.garo, 'Chow');
+});
+
+test('NV-115 regression guard: "roll" is NOT in the loanword list and still resolves via its existing, separately-attested dictionary entry (Romroma) — deliberately left untouched pending clarification on the verb-vs-food-noun ambiguity', async () => {
+  const r = await translate('roll');
+  assert.equal(r.method, 'exact-phrase');
+  assert.equal(r.garo, 'Romroma');
+});

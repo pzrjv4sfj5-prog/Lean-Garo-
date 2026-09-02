@@ -19,6 +19,8 @@
  */
 
 import ALTERNATES_RAW from './compiled_dict_alternates.json' with { type: 'json' };
+import CONFIRMED_LOANWORDS_RAW from './data/confirmed_loanwords.json' with { type: 'json' };
+const CONFIRMED_LOANWORDS = new Set(CONFIRMED_LOANWORDS_RAW.words.map(w => w.toLowerCase()));
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
@@ -382,6 +384,18 @@ export async function translate(input) {
   if (compound.length) {
     const garo = compoundWords.includes('[UNKNOWN]') ? compoundWords.join(' ') : compound.join(' ');
     return { garo, method: 'compound-split', confidence: 0.60 };
+  }
+
+  // 8.5 Confirmed loanwords — NV-115 (2026-09-03). Exact-match only, checked
+  // BEFORE fuzzy so these don't get swallowed by a false-positive fuzzy hit
+  // (momo->moo, chow->cow, maggie->magic, paneer/panner->anger were all
+  // being silently "translated" to unrelated words within edit-distance
+  // 1-2). Matches the whole cleaned input only — does not affect these
+  // words if they appear inside a longer sentence, since this checks
+  // `lower` (the full trimmed input), not per-word.
+  if (CONFIRMED_LOANWORDS.has(lower)) {
+    const garo = lower.split(/\s+/).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return { garo, method: 'loanword-passthrough', confidence: 0.95 };
   }
 
   // 9. Fuzzy — skip if input contains raka (·): that means user typed Garo, not English.
