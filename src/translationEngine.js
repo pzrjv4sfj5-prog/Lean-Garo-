@@ -142,6 +142,27 @@ export async function translate(input) {
   const phraseMap = lookupPhrase(lowerWithApos) || lookupPhrase(cleaned) || lookupPhrase(lower);
   if (phraseMap) return { garo: phraseMap, method: 'phrase-map', confidence: 0.99 };
 
+  // 1.75 Confirmed loanwords — NV-115 (2026-09-03), extended same day for
+  // "roll" (NV-116). Exact-match only, whole cleaned input, checked
+  // BEFORE exact-phrase/dictionary lookup (step 2) — deliberately outranks
+  // the dictionary here, not just fuzzy match. Originally sat right before
+  // fuzzy match (step 9), which was enough for momo/chow/maggie/paneer/
+  // panner (none had ANY existing dictionary entry, so ordering after
+  // exact-phrase made no difference). "roll" is different: bare "roll"
+  // already had a dictionary entry (Romroma, "to roll" as a verb) that
+  // would otherwise win at step 2 before this ever got a turn. Native
+  // confirmation (2026-09-03) that bare "roll" means the fast-food roll,
+  // not the verb, is stronger evidence than the pre-existing bare-word
+  // dictionary entry, so this check was promoted ahead of step 2. The
+  // verb sense is NOT lost: "to roll" (two words) is a separate dictionary
+  // key, untouched, and still resolves via the ordinary exact-phrase path
+  // since this loanword list is checked against the FULL cleaned input
+  // ("roll" alone), not "to roll".
+  if (CONFIRMED_LOANWORDS.has(lower)) {
+    const garo = lower.split(/\s+/).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return { garo, method: 'loanword-passthrough', confidence: 0.95 };
+  }
+
   // 2. Exact phrase (compiled dict) — runs BEFORE classifier composition.
   // RUNTIME-PROPAGATION FIX (2026-08-14, Claude B, per Claude C's audit
   // §3.5): this block used to sit AFTER "1.6 Classifier counting" below,
@@ -386,22 +407,9 @@ export async function translate(input) {
     return { garo, method: 'compound-split', confidence: 0.60 };
   }
 
-  // 8.5 Confirmed loanwords — NV-115 (2026-09-03). Exact-match only, checked
-  // BEFORE fuzzy so these don't get swallowed by a false-positive fuzzy hit
-  // (momo->moo, chow->cow, maggie->magic, paneer/panner->anger were all
-  // being silently "translated" to unrelated words within edit-distance
-  // 1-2). Matches the whole cleaned input only — does not affect these
-  // words if they appear inside a longer sentence, since this checks
-  // `lower` (the full trimmed input), not per-word.
-  if (CONFIRMED_LOANWORDS.has(lower)) {
-    const garo = lower.split(/\s+/).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    return { garo, method: 'loanword-passthrough', confidence: 0.95 };
-  }
-
   // 9. Fuzzy — skip if input contains raka (·): that means user typed Garo, not English.
   // ro·a typed as English was fuzzy-matching to "road" → so·rok (wrong). Fixed.
-  const fuzzy = input.includes('·') ? null : fuzzyMatch(lower);
-  if (fuzzy) {
+  const fuzzy = input.includes('·') ? null : fuzzyMatch(lower);  if (fuzzy) {
     const fg = lookupGaro(fuzzy.key);
     if (fg) return { garo: fg, method: `fuzzy(${fuzzy.key},d=${fuzzy.distance})`, confidence: Math.max(0.40, 0.75 - fuzzy.distance * 0.1) };
   }

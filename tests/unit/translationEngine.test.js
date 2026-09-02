@@ -2139,8 +2139,14 @@ test('NV-115 loanword passthrough: case-insensitive match ("MOMO", "Chow")', asy
   assert.equal(r2.garo, 'Chow');
 });
 
-test('NV-115 regression guard: "roll" is NOT in the loanword list and still resolves via its existing, separately-attested dictionary entry (Romroma) — deliberately left untouched pending clarification on the verb-vs-food-noun ambiguity', async () => {
+test('NV-116 loanword passthrough: bare "roll" now means the fast-food roll, promoted ahead of the pre-existing exact-phrase dictionary entry (Romroma)', async () => {
   const r = await translate('roll');
+  assert.equal(r.method, 'loanword-passthrough');
+  assert.equal(r.garo, 'Roll');
+});
+
+test('NV-116 regression guard: "to roll" (verb sense, two words) is untouched and still resolves via its own separate dictionary entry', async () => {
+  const r = await translate('to roll');
   assert.equal(r.method, 'exact-phrase');
-  assert.equal(r.garo, 'Romroma');
+  assert.equal(r.garo, 'A\u00b7dubeko romroma');
 });

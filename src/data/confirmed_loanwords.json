@@ -1,5 +1,5 @@
 {
-  "_comment": "NV-115 (2026-09-03, Claude B). Confirmed by Project Owner: these food/dish words have NO Garo equivalent and must pass through unchanged. Added because fuzzy-match was producing false-positive 'translations' for these exact words by matching them to unrelated dictionary entries within edit-distance 1-2 (momo->moo, chow->cow, maggie->magic, paneer/panner->anger). Checked as an exact-match set BEFORE fuzzy match (translationEngine.js step 9), so it intercepts only these confirmed items and does not change fuzzy-match behavior for anything else. List is intentionally narrow — add only on confirmed evidence, not by inference from this list's existing entries.",
+  "_comment": "NV-115 (2026-09-03, Claude B). Confirmed by Project Owner: these food/dish words have NO Garo equivalent and must pass through unchanged. Added because fuzzy-match was producing false-positive 'translations' for these exact words by matching them to unrelated dictionary entries within edit-distance 1-2 (momo->moo, chow->cow, maggie->magic, paneer/panner->anger). Checked as an exact-match set before exact-phrase dictionary lookup (translationEngine.js step 1.75), so it intercepts only these confirmed items and does not change lookup behavior for anything else. List is intentionally narrow — add only on confirmed evidence, not by inference from this list's existing entries. NV-116 (same day): 'roll' added on native confirmation that bare 'roll' means a fast-food roll, not the pre-existing 'to roll' verb dictionary entry (Romroma) — the verb sense stays intact via the separate two-word 'to roll' key.",
   "words": [
     "momo",
     "chow",
@@ -7,6 +7,7 @@
     "paneer",
     "panner",
     "paneer butter masala",
-    "panner butter masala"
+    "panner butter masala",
+    "roll"
   ]
 }
