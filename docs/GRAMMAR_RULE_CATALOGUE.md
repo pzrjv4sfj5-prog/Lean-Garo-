@@ -569,6 +569,22 @@ examples listed above. Needs Native Validation for the remaining
 classifier categories (materials, objects generally, etc. — Thangseng
 was asked for the full list 2026-07-21, awaiting reply) and for
 whether classifier choice ever varies by dialect/register.
+
+**Footnote (NV-109, 2026-09-02):** Thangseng also gave `sak·sa`/
+`sak·gni`/`sak·gittam` as valid standalone answers for "one/two/three
+person(s)" — **without** an explicit head noun (`mande`/`manderang`).
+This appears to be in tension with this rule's "the specific noun is
+always stated" claim above. Not resolved here — recorded as a flagged
+discrepancy, not force-resolved into either "the noun is optional" or
+"this was elliptical/context-dependent." **Not added as competing
+`master_dictionary.json` rows** — doing so flipped `pickPrimary`'s tie
+selection away from the already-shipped, regression-tested `mande
+sak·sa`/`mande sak·gni`/`mande sak·gittam` translations (discovered via
+a failing unit test, reverted). Recorded here and in NV-109 as citation
+evidence only; a dictionary addition, if wanted, needs a
+non-key-colliding approach and is left for a future session/Claude B
+coordination, not assumed to be safe to add unilaterally.
+
 **Confidence:** High (the general Noun+Classifier-Number pattern,
 given 4 independently-corroborated classifier roots); Low (completeness
 of the classifier-root inventory).

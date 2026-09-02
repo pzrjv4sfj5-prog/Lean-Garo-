@@ -5747,3 +5747,83 @@ Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) 
 **Runtime Handoff:** None — no engine code touched, no compiled-data-affecting change (notes-field only).
 
 **NV-107 is now fully closed.** No open items remain from this finding.
+
+---
+
+## NV-108 — "Can" word order: `man·a` placed after infinitive-marked verb — CLOSED (2026-09-02)
+
+**Source:** Thangseng, direct confirmation via Project Owner/Tridip relay (2026-09-02), answering the word-order half of relay item 1 (`docs/THANGSENG_RELAY_QUESTION_20260901B.md`).
+
+**Answer (relayed, two transmissions, same content):** "I can speak Garo." = `Anga Garo aganna man·a.` (An earlier transmission of the same answer read "Anga Gara aganna man'a" — spelling artifacts of WhatsApp typing: "Gara"→"Garo" typo and `'`/`·` are the same raka-dot mark; the 3:50pm re-transmission is treated as authoritative.)
+
+**Finding, CLOSED:**
+- Word order confirmed: Subject + Object + Verb-`na`(infinitive) + can-word, with the modal placed at the end of the sentence, after the infinitive-marked main verb. `agan` ("speak") + `-na` (infinitive) = `aganna`; `man·a` ("can") follows it.
+- This is the same structural slot NV-008's `ama` paradigm used (`Anga cha·na ama`, `Anga re·angna ama`, `Anga kam ka·na ama` — verb-`na` then the modal) — new evidence corroborates that slot with a new verb ("speak") and, notably, `man·a` rather than `ama`.
+
+**Explicitly NOT inferred/resolved:** Thangseng used `man·a` here, not `ama`, for a first-person "can" sentence — where NV-008's paradigm used `ama` for first-person "can eat/go/work." This session does **not** infer a rule for when to use which (e.g. skill vs. general ability, or free variation) — that was never asked directly and isn't stated. Recorded as parallel evidence only. "One or two more examples with 'can'" was requested but only this one example was given — not treated as a blocker to closing this item, since the core ask (meaning + word order) is answered.
+
+**Action taken:** Added new `master_dictionary.json` row: `english: "i can speak garo"` → `garo: "Anga Garo aganna man·a"`, VERIFIED/HIGH, citing this NV. Gate re-run clean after addition (see NV-111 below for the combined gate confirmation covering NV-108–111).
+
+**Runtime Handoff:** For Claude B, when the modal-drop fix is implemented: this is the citation for word order (modal follows the infinitive-marked verb, sentence-final). The `ama`/`man·a` choice-of-word question remains open (not part of this closure).
+
+---
+
+## NV-109 — Counting-people classifier: bare `sak·sa`/`sak·gni`/`sak·gittam` confirmed, flags tension with RULE-038's "noun always stated" claim — CLOSED (2026-09-02)
+
+**Source:** Thangseng, direct confirmation via Project Owner/Tridip relay (2026-09-02), answering relay item 2.
+
+**Answer (relayed, two transmissions):** "`sak` is used to count people. Saksa = one man/person; Sakgni = two men/persons; Sakgittam = three men/persons." (Earlier transmission gave `Saksa`=one person, `Sakgni`=two persons — the later, fuller transmission adding `Sakgittam`=three persons is treated as authoritative/complete.)
+
+**Finding, CLOSED:**
+- `sak` reconfirmed as the human/people classifier (already established via NV-105/RULE-038).
+- New: the classifier+number-suffix alone (`sak·sa`, `sak·gni`, `sak·gittam`) was given as a direct, standalone answer for "one/two/three person(s)" — **without** an explicit head noun (`mande`/`manderang`) preceding it.
+
+**Flagged, not resolved:** This appears to be in tension with RULE-038's documented claim that "the specific noun is always stated" in Garo counting constructions (footnote added to RULE-038 in `docs/GRAMMAR_RULE_CATALOGUE.md` citing this NV). Not force-resolved — could mean the noun is genuinely optional/elidable when contextually clear, or that this was an elliptical answer in an informal chat context; Thangseng was not asked to disambiguate, so neither is assumed.
+
+**Action taken — NOT added as new `master_dictionary.json` rows:** Adding `sak·sa`/`sak·gni`/`sak·gittam` as competing entries under the existing `"one person"`/`"two person"`/`"three person"` english keys flipped `pickPrimary`'s tie-break selection away from the already-shipped, regression-tested `mande sak·sa`/`mande sak·gni`/`mande sak·gittam` translations — caught by a failing unit test (`tests/unit/translationEngine.test.js`, "regression: one person"), then reverted. Recorded here as citation evidence only. A dictionary addition, if wanted later, needs a non-key-colliding approach (e.g. a distinct english key) and coordination on whether it should ever become the shipped primary — not something to resolve unilaterally this session.
+
+**Object-counting contrastive example:** not given in this batch (only person-counting examples were provided). Not treated as a blocker — object-classifier examples already exist elsewhere in RULE-038 (`mang`/`king`/`ge` categories).
+
+**Runtime Handoff:** None — no code touched; the reverted dictionary attempt is the relevant note for any future session considering the same addition.
+
+---
+
+## NV-110 — Multi-adjective order: flexible, three natural renderings confirmed — CLOSED (2026-09-02)
+
+**Source:** Thangseng, direct confirmation via Project Owner/Tridip relay (2026-09-02), answering relay item 3.
+
+**Answer (relayed verbatim):** "big red house = dalgipa nok gitchak./ dal.gipa gitchak. / nok gitchak dal.gipa. The stress may be different but these are the ways to render it." (Raka-dot normalization applied to match established spellings: `git·chak` per the already-VERIFIED "red" headword; `dal·gipa` for the recurring `dal`+`gipa` sequence, both dot placements consistent with existing project orthography convention — see prior precedent, e.g. `docs/THANGSENG_NATIVE_VALIDATION.md` "my father" `ba·ba` correction.)
+
+**Finding, CLOSED:** Adjective order for stacking two descriptors on one noun is **not a single fixed rule** — multiple natural orderings exist, with stress differing between them:
+1. `dal·gipa nok git·chak` (big + house + red)
+2. `dal·gipa git·chak` (big + red — given without `nok`/"house" stated explicitly; quoted exactly as relayed, not corrected or assumed to be an omission)
+3. `nok git·chak dal·gipa` (house + red + big)
+
+**Action taken:** Added all three as separate `master_dictionary.json` rows sharing the english key `"big red house"`, all VERIFIED/HIGH, citing this NV. `pickPrimary` reports this as a 3-way tie (expected/desired — genuinely tied valid variants, not a bug) and last-write-wins selects one as primary for compilation; logged the key in `src/data/known_dictionary_conflicts.json` (same treatment as the existing `"yesterday"` Mejal/me·ja·o variant-tie entry) so `repository-intelligence.js` treats this as a confirmed intentional divergence, not a new violation.
+
+**Runtime Handoff:** None — no engine code touched.
+
+---
+
+## NV-111 — Purpose/infinitive `-na` confirmed via two motion-verb sentences — CLOSED (2026-09-02)
+
+**Source:** Thangseng, direct confirmation via Project Owner/Tridip relay (2026-09-02), answering relay item 4.
+
+**Answer (relayed verbatim):** "I went to eat. = Anga cha.na re.angaha. I went to work. = Anga kam ka.na re.angaha." (`.` = raka-dot typing artifact, normalized to `·` matching established spelling of `cha·na`/`kam ka·na`, already-VERIFIED via NV-008.)
+
+**Finding, CLOSED:** `-na` (already confirmed productively as the infinitive marker in NV-008's ability paradigm, e.g. `cha·na`="to eat") is confirmed as the same marker used for purpose before a motion verb: `[verb]-na` + `re·angaha` ("went") = "went to [verb]." Structure: Subject + Verb-`na` + `re·angaha`.
+
+**Aside — internal meta-question caused confusion:** An earlier, pre-simplification transmission of this relay batch included the internal project question "Purpose/infinitive -na — does a numbered citation already exist uncited?" — Thangseng's reply was simply "?", i.e. the question wasn't understood. This confirms the Project Owner's earlier feedback (this session) that internal repository terminology/meta-questions should never be sent to Thangseng directly; the later, simplified re-send (which produced this NV's actual answer) is the one that worked. No action needed beyond noting this as the reason the simplification pass mattered.
+
+**Action taken:** Added two new `master_dictionary.json` rows: `english: "i went to eat"` → `garo: "Anga cha·na re·angaha"`, and `english: "i went to work"` → `garo: "Anga kam ka·na re·angaha"`, both VERIFIED/HIGH, citing this NV.
+
+**Combined gate confirmation for NV-108–111 (all dictionary changes from this batch):** After all additions/reverts above, full gate re-run: 8209/8209 entries, 9/9 grammatical corrections, 284/284 unit tests, 0 new repository-intelligence violations (after allowlisting the `"big red house"` intentional tie).
+
+**Runtime Handoff:** None — no engine code touched.
+
+---
+
+## Still open after this batch — explicitly not closed
+
+- **Relay item 5 (question word + question ending co-occurrence):** no answer received in this batch. Remains open, no evidence yet.
+- **Relay item 6 (sign-off on "I am the only student" / "the only fruit I eat is mango"):** Tridip/Thangseng reported confusion about this question in the relay conversation. Remains open — not closed, not guessed at. Needs a rephrased, simpler version in the next relay round (the "sign-off"/"do these sentences sound right" framing may need to be reworded further, or the confusion may be about something else entirely — not assumed without asking).

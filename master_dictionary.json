@@ -77795,5 +77795,59 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — extracted as a citation-form headword from the already-native-confirmed NV-103 sentence \"Angade English ku·sikkosan aganaia.\" (Thangseng-confirmed structure, docs/THANGSENG_NATIVE_VALIDATION.md NV-103), where \"English\" appears as a bare, unmarked loanword (the language name itself, capitalized, no translation/adaptation). Not a new elicitation — same convention as prior citation-form headwords derived from already-verified longer forms (cf. \"phone ka·a\"). Added 2026-09-01 alongside superseding 7 corrupted garo_dictionary.json rows (english->\"to eat\"/\"to go\"/etc., column-misalignment import garbage, unrelated candidates) that were polluting this same key.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "i can speak garo",
+    "garo": "Anga Garo aganna man·a",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-02, NV-108), answering the word-order half of relay item 1 (docs/THANGSENG_RELAY_QUESTION_20260901B.md). Confirms the ability modal 'can' is placed after the infinitive-marked main verb, at the end of the sentence: Subject + Object + Verb-na + can-word. Uses `man·a` here (not `ama`) — see NV-108 for the full discussion; this does not resolve whether `ama`/`man·a` are always interchangeable.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "big red house",
+    "garo": "dal·gipa nok git·chak",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation (2026-09-02, NV-110), answering relay item 3 (multi-adjective stacking order). Thangseng gave three natural renderings with differing stress, all valid: 'dal·gipa nok git·chak', 'dal·gipa git·chak' (given without 'nok'/house stated — quoted exactly as relayed, not corrected/assumed), and 'nok git·chak dal·gipa'. Finding: adjective order in this construction is flexible, not a single fixed rule — see NV-110 for all three forms and discussion. This is the primary form; see the other two rows sharing this same english key for the alternates.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "big red house",
+    "garo": "dal·gipa git·chak",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — alternate rendering, Thangseng direct confirmation (2026-09-02, NV-110). Given exactly as relayed, without 'nok'/house stated explicitly — quoted verbatim, not corrected or assumed to be an omission. See the other two rows sharing this english key for the other two valid renderings.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "big red house",
+    "garo": "nok git·chak dal·gipa",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — alternate rendering, Thangseng direct confirmation (2026-09-02, NV-110). See the other two rows sharing this english key for the other two valid renderings; Thangseng noted stress may differ between them but all three are natural.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i went to eat",
+    "garo": "Anga cha·na re·angaha",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation (2026-09-02, NV-111), answering relay item 4 (purpose/'to do something'). Confirms `-na` (already used productively as an infinitive/purpose marker, e.g. `cha·na`='to eat', NV-008) functions as the purpose marker before a motion verb: [verb]-na + re·angaha ('went').",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i went to work",
+    "garo": "Anga kam ka·na re·angaha",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation (2026-09-02, NV-111), answering relay item 4 (purpose/'to do something'). Same `-na` purpose-marker pattern as 'i went to eat' (NV-111): [verb]-na + re·angaha ('went').",
+    "confidence": "verified_high"
   }
 ]

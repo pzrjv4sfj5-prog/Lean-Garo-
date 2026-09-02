@@ -313,7 +313,28 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-02D (Claude A, same session, Project Owner directive to
+  next_action: '2026-09-02E (Claude A, same session, "close all data" directive):
+    processed a 4-item native evidence batch (WhatsApp relay via Tridip). Closed:
+    NV-108 (can word order: man·a placed after infinitive-marked verb,
+    sentence-final; "Anga Garo aganna man·a"="I can speak Garo"), NV-109
+    (counting-people: sak·sa/sak·gni/sak·gittam bare forms confirmed, flags
+    tension with RULE-038 "noun always stated" claim -- NOT shipped as dictionary
+    rows, an attempt broke a regression test [tests/unit/translationEngine.test.js
+    "one person"] by flipping pickPrimary away from the tested mande sak·sa,
+    reverted), NV-110 (adjective order: 3 valid renderings of "big red house",
+    flexible/stress-dependent, shipped as tied VERIFIED variants + allowlisted in
+    src/data/known_dictionary_conflicts.json), NV-111 (purpose -na confirmed via
+    "i went to eat"/"i went to work"). Added 6 net new master_dictionary.json rows
+    (i can speak garo; big red house x3; i went to eat; i went to work). Full gate
+    re-run clean after the revert: 8209/8209 entries, 9/9 grammatical corrections,
+    284/284 unit tests, 0 new repository-intelligence violations.
+    docs/THANGSENG_RELAY_QUESTION_20260901B.md rewritten: old items 1-4 closed and
+    removed from the send block, old items 5-6 renumbered 1-2 and remain the only
+    2 items still open/ready to send (item 2 = "only X" sign-off, explicitly
+    flagged as having caused confusion last round, kept with a short
+    acknowledgment rather than resent silently unchanged). NV-104/NV-103 untouched,
+    not reopened. No engine code touched.'
+  next_action_prior_20260902D: '2026-09-02D (Claude A, same session, Project Owner directive to
     close a native item from a prior day): recorded NV-107 -- Thangseng
     clarified `Mejal`/`me·ja·o`/`Mejao` is not limited to literal "yesterday",
     refers to any specific/recent past time mutually known to speaker/hearer
@@ -815,7 +836,14 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: '2026-09-02B (Claude A, CLOSURE): 2 of the 6
+  pending_thangseng_questions: '2026-09-02E (Claude A, CLOSURE): 4 more items
+    closed this session (old items 1-4: can word order, counting-people worked
+    examples, adjective order, purpose -na -- see NV-108/109/110/111). Only 2
+    items remain open, renumbered 1-2 in the current
+    docs/THANGSENG_RELAY_QUESTION_20260901B.md: question-word+question-ending
+    co-occurrence, and the "only X" sentence sign-off (previously caused
+    confusion, resent with a short acknowledgment). READY TO SEND.
+    --- 2026-09-02B (Claude A, CLOSURE): 2 of the 6
     queued items answered via Project Owner relay -- people-counting classifier
     (Sak, closes fully, see NV-105) and ama''s lexical meaning (closes the
     meaning half of the ama/man·a item, see NV-106; the word-order half of that
