@@ -3708,7 +3708,8 @@
     "english": "who",
     "garo": "Sawa",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "Promoted unverified->verified_high, NV-121, direct native citation (\"Sawa re·baa?\" = \"Who came?\")."
   },
   {
     "english": "what",
@@ -3748,7 +3749,8 @@
     "english": "how",
     "garo": "Maikai",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "Promoted unverified->verified_high, NV-122, direct native gloss (\"Maikai = How, in order that, so that\"). More versatile than maidake per native framing; also covers purpose sense, not yet sentence-cited."
   },
   {
     "english": "and",
@@ -77897,6 +77899,34 @@
     "garo": "Mejao anga nang·chi re·angachim.",
     "category": "sentences",
     "notes": "VERIFIED/HIGH — Thangseng, direct native citation, NV-107 (2026-09-01/02). Cited as evidence for Mejao's semantic scope (specific/recent mutually-known past time, not literal 'yesterday' only); promoted to a standalone dictionary row this session (was citation-only until now). Raka-dot spelling per project convention (source relay used apostrophe: \"nang'chi re'angachim\").",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "who came?",
+    "garo": "Sawa re·baa?",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — Thangseng direct native citation, NV-121 (2026-09-03). Confirms sawa (\"who\") as question word, no -ma suffix (RULE-048).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "what did you eat?",
+    "garo": "Na·a maiko cha·aha?",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — Thangseng direct native citation, NV-121 (2026-09-03). Confirms maiko (object-marked \"what\") as question word, no -ma suffix (RULE-048).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "where did you go?",
+    "garo": "Na·a bachi re·anga?",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — Thangseng direct native citation, NV-121 (2026-09-03). Confirms bachi (movement-to \"where\", RULE-044) as question word, no -ma suffix (RULE-048).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "which one did you take?",
+    "garo": "Na·a badiako ra·aha?",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — Thangseng direct native citation, NV-121 (2026-09-03). Confirms badiako (object-marked \"which one\") as question word, no -ma suffix (RULE-048).",
     "confidence": "verified_high"
   }
 ]

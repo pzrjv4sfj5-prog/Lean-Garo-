@@ -1,0 +1,53 @@
+id: RULE-048
+title: "Question-Word Questions Do Not Take the -ma Particle"
+description: >-
+  Questions built with an explicit question word (who/what/where/which,
+  etc.) do not take the yes/no question particle -ma (RULE-046). The
+  particle marks polar (yes/no) questions specifically; a question word
+  already marks the sentence as a question, so -ma is not added on top
+  of it. This is a distributional/scope rule about RULE-046, not a
+  separate suffix of its own.
+dependencies:
+  - id: RULE-046
+    name: "Yes/No Question Particle -ma Joins Directly to the Verb"
+    note: "RULE-048 defines where RULE-046 does NOT apply — question-word questions are the excluded class"
+claims:
+  - scope: "-ma is restricted to polar (yes/no) questions; question-word questions never take it, across at least 6 distinct question words so far attested"
+    status: verified
+    confidence: high
+examples:
+  - "Maina na·a ka·dinga? = \"Why are you laughing?\" (mai-family, no -ma) — NV-113"
+  - "Na·a maina re·baa? = \"Why did you come?\" (mai-family, no -ma) — NV-113"
+  - "Na·a badita cha·gimin? = \"How much did you eat?\" (badita, no -ma) — NV-113"
+  - "Sawa re·baa? = \"Who came?\" (sawa, no -ma) — NV-121"
+  - "Na·a maiko cha·aha? = \"What did you eat?\" (maiko, no -ma) — NV-121"
+  - "Na·a bachi re·anga? = \"Where did you go?\" (bachi, no -ma) — NV-121"
+  - "Na·a badiako ra·aha? = \"Which one did you take?\" (badiako, no -ma) — NV-121"
+counterexamples:
+  note: "None found. 11 attested question-word sentences (7 from NV-113, 4 from NV-121), zero take -ma."
+launch_priority:
+  - scope: "all attested question-word forms (mai-family, badita, sawa, maiko, bachi, badiako)"
+    tier: P1
+    note: >-
+      No live code path yet — all current question output comes from
+      corrections.json/phrase_maps.js exact-phrase lookups, not a
+      general question-construction engine. Flagged to Claude B
+      (docs/CLAUDE_B_HANDOFF_20260903_modal_drop_and_ma_question_gap.md,
+      Finding 2/3) as a paraphrase-breaks-badly gap, not yet picked up
+      for this specific rule (Claude B's NV-120 fix addressed the
+      polar-question `-ma` side, not this question-word side).
+  - scope: "bano (stationary 'where') and other untested question words"
+    tier: P2
+    note: "Not attested — very likely the same behavior as bachi, but not asserted without its own citation"
+native_notes: >-
+  NV-113 (2026-09-02, internal-audit re-read of already-transmitted
+  evidence, no new native transmission needed that session) established
+  the core pattern for mai-family words and badita. NV-121 (2026-09-03,
+  direct Thangseng relay via Project Owner/Tridip) extended it to sawa,
+  maiko, bachi, and badiako. Originally mislabeled "RULE-047 (new)" in
+  NV-113's own text — a numbering collision with the already-assigned
+  RULE-047 (comitative -ming, 2026-08-30) that was never actually filed
+  under that number. Corrected and formalized here as RULE-048.
+last_updated: "2026-09-03"
+updated_by: "Claude A"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-113, NV-121"

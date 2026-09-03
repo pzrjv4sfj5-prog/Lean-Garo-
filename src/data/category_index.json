@@ -4023,5 +4023,9 @@
   "i can eat": "phrases",
   "i can go": "phrases",
   "i can work": "phrases",
-  "i had gone to you (recently)": "sentences"
+  "i had gone to you (recently)": "sentences",
+  "who came?": "sentences",
+  "what did you eat?": "sentences",
+  "where did you go?": "sentences",
+  "which one did you take?": "sentences"
 }

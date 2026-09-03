@@ -507,14 +507,22 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903C.md - THIS IS THE
-    AUTHORITATIVE MIGRATION DOC, written 2026-09-03C (same-day follow-up
-    session). Project Owner said "close all" on 4 self-audited improvement
-    items; 3 DECLINED (no native evidence exists -- RULE-038 tension,
-    "only X" 3rd-person scope, RULE-047 sawa/bano gap -- all remain open,
-    need an actual relay question); 1 closed (NV-107''s Mejao example
-    sentence promoted to a master_dictionary.json row -- not a linguistic
-    call, just citation promotion). Read this file first on resume.'
+  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903D.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC, written 2026-09-03D (same-day follow-up
+    session). Processed 2 new Thangseng relays: NV-121 (sawa/maiko/bachi/
+    badiako question-word-no-ma pattern -- closes the RULE-047-scope gap
+    declined at the 2026-09-03C close; formalized as RULE-048; also fixed
+    a live corrections.json bug the evidence surfaced, "where did you go"
+    was shipping bano instead of bachi) and NV-122 (maikai/maidake "how"
+    gloss, maikai also covers purpose "in order that" -- flagged as
+    relevant to the still-open -na/purpose item, not closed, no sentence
+    evidence yet). Read this file first on resume.'
+  migration_doc_prior_20260903C: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903C.md -
+    prior session''s close, written 2026-09-03C. Project Owner said "close
+    all" on 4 self-audited improvement items; 3 DECLINED (no native
+    evidence exists -- RULE-038 tension, "only X" 3rd-person scope,
+    RULE-047 sawa/bano gap); 1 closed (NV-107''s Mejao example sentence
+    promoted to a master_dictionary.json row).'
   migration_doc_prior_20260903B: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903B.md -
     prior session''s close, written 2026-09-03B. Project Owner relayed a
     5-item closure instruction (ama/man·a, question-word+-ma, people
@@ -899,7 +907,27 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-03C (Claude A, Project Owner said
+  pending_thangseng_questions: '2026-09-03D (Claude A): processed 2 new
+    Thangseng relays. (1) NV-121 -- sawa/maiko/bachi/badiako all confirmed
+    question-word-questions-take-no-ma (RULE-047 scope gap from NV-113,
+    previously DECLINED to force-close, now genuinely closed with real
+    evidence). Also fixed a live corrections.json bug this evidence
+    surfaced: "where did you go" shipped bano (stationary) contradicting
+    RULE-044''s own movement/stationary contrast and the new bachi
+    citation -- fixed directly per Rule 8, not allowlisted. Formalized the
+    scope rule as RULE-048 (correcting NV-113''s stray, colliding
+    "RULE-047 (new)" label -- RULE-047 was already taken by comitative
+    -ming since 2026-08-30). who->Sawa promoted unverified->verified_high.
+    4 new sentence rows added. (2) NV-122 -- maikai/maidake "how" gloss:
+    maikai also covers "in order that/so that" (purpose), maidake is
+    "how" only. how->Maikai promoted to verified_high (runtime-neutral,
+    corrections.json''s maidake entry has precedence, unaffected).
+    FLAGGED not closed: maikai''s purpose sense may relate to the still-
+    OPEN -na/purpose item -- no sentence evidence yet, left for a future
+    relay question. Gate clean: 8217/8217, 9/9, 314/314, 0 new violations.
+    See docs/CLAUDE_A_SESSION_MIGRATION_20260903D.md.
+    ---
+    2026-09-03C (Claude A, Project Owner said
     "close all" on the 4 self-audited improvement items -- 3 of 4 DECLINED
     to force-close, no native evidence exists for them, evidence-first
     discipline holds even under a direct instruction (same pattern as the

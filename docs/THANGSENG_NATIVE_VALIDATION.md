@@ -5943,6 +5943,8 @@ confirmation of existing, already-shipped behavior (`src/grammarEngine.js`
 
 ## NV-117 — `ama`/`man·a` identity CLOSED with direct native citation (2026-09-03)
 
+
+
 **Source:** Thangseng, direct relay (Project Owner/Tridip), full three-verb "can" paradigm resent with both modal words explicitly paired:
 
 > I can eat. = Anga cha·na ama/man·a.
@@ -5966,3 +5968,127 @@ confirmation of existing, already-shipped behavior (`src/grammarEngine.js`
 
 ---
 
+---
+
+## NV-121 — Question-word (no `-ma`) pattern extended: `sawa`, `maiko`, `bachi`, `badiako` confirmed — CLOSES the RULE-047-scope gap flagged at NV-113
+
+**Source:** Thangseng, direct relay (Project Owner/Tridip), 4-sentence batch.
+
+**Evidence (relayed, raka-normalized to `·` per project convention — source
+used apostrophe typing):**
+1. "Who came?" = `Sawa re·baa?` — `sawa` ("who") functions as the
+   question word.
+2. "What did you eat?" = `Na·a maiko cha·aha?` — `maiko` ("what",
+   object-marked form of `Maia`) functions as the question word.
+3. "Where did you go?" = `Na·a bachi re·anga?` — `bachi` ("where",
+   movement-to sense, already VERIFIED/HIGH per RULE-044) functions as
+   the question word.
+4. "Which one did you take?" = `Na·a badiako ra·aha?` — `badiako`
+   (object-marked form of `badia`/`badiya`, "which", already
+   VERIFIED/HIGH) functions as the question word.
+
+**Finding, CLOSED:** all 4 sentences take **no `-ma` suffix**, extending
+the question-word-questions-don't-take-`-ma` pattern (first documented at
+NV-113 for `mai`-family words and `badita`) to 4 additional question
+words: `sawa`, `maiko`, `bachi`, `badiako`. This directly answers the gap
+this project explicitly declined to guess at (Project Owner asked to
+"close all" on open items including this one; declined without evidence
+— this is that evidence, supplied afterward, not force-closed).
+
+**Scope note — `bachi` vs `bano`:** this evidence uses `bachi`
+(movement-to "where"), not `bano` (stationary/placement "where", RULE-044).
+The pattern is now attested for `bachi` specifically; `bano` remains
+untested for this specific question — very likely the same behavior
+(both are the same question-word class), but not asserted here without
+its own citation, per this project's standing discipline against
+extrapolating across even closely related forms without direct evidence.
+
+**Rule-numbering correction (Rule 8/citation hygiene):** NV-113's text
+labeled its proposed rule "RULE-047 (new)" — this was never actually
+written to `docs/GRAMMAR_RULE_CATALOGUE.md` or
+`docs/grammar_rules_structured/`, and RULE-047 was already assigned
+(2026-08-30, comitative suffix `-ming`) before NV-113 was written — a
+genuine numbering collision that was caught before it did any damage
+(nothing was ever filed under the colliding number). Formalized properly
+here as **RULE-048** (`docs/grammar_rules_structured/RULE-048.yaml` +
+`docs/GRAMMAR_RULE_CATALOGUE.md`), combining NV-113's original 7-sentence
+evidence with this session's 4 new sentences (11 total, no
+counter-example).
+
+**Action taken:**
+- Promoted `master_dictionary.json`'s existing `"who"` → `"Sawa"` entry
+  from `unverified` to `verified_high`, citing this NV.
+- Added 4 new `master_dictionary.json` rows, all VERIFIED/HIGH, citing
+  this NV: `"who came?"` → `"Sawa re·baa?"`; `"what did you eat?"` →
+  `"Na·a maiko cha·aha?"`; `"where did you go?"` → `"Na·a bachi
+  re·anga?"`; `"which one did you take?"` → `"Na·a badiako ra·aha?"`.
+- New vocabulary introduced by these sentences, not separately
+  headworded (insufficient standalone evidence — recorded only inside
+  the sentence citations above): `maiko` (object-marked "what"),
+  `badiako` (object-marked "which one"), `ra·aha` ("took").
+- Wrote `docs/grammar_rules_structured/RULE-048.yaml` and a
+  `docs/GRAMMAR_RULE_CATALOGUE.md` entry for the question-particle `-ma`
+  scope rule (superseding NV-113's stray "RULE-047 (new)" label — NV-113
+  itself left otherwise unchanged, its own findings still correct, just
+  the rule-number label was wrong).
+
+**Duplicate-representation check (Rule 8):** `corrections.json`/
+`phrase_maps.js` checked for all 4 new keys and for `"who"` — no entries
+in either file, nothing to sync.
+
+**Runtime Handoff:** None — no engine code touched. `RULE-048` (like its
+predecessor scope note at NV-113) has no live code path yet: all
+question output currently comes from `corrections.json`/`phrase_maps.js`
+lookups, not general question-construction logic.
+
+---
+
+## NV-122 — `maikai` vs `maidake` ("how"): semantic scope distinguished, `maikai` also covers purpose ("in order that"/"so that")
+
+**Source:** Thangseng, direct relay (Project Owner/Tridip), gloss-level
+(no full sentence supplied this time — vocabulary clarification, same
+evidence class as prior gloss-only relays, e.g. NV-106's `ama` gloss):
+
+> Maikai = How, in order that, so that
+> Maidake = How
+> Maikai is a bit versatile than Maidake.
+
+**Finding:** both words mean "how"; `maidake` is "how" only, while
+`maikai` additionally covers "in order that"/"so that" — i.e. `maikai`
+can also function as a purpose/result-clause connective, not just an
+interrogative. Native framing ("a bit versatile") suggests `maikai` is
+the broader word and `maidake` a narrower/plainer alternative for the
+interrogative sense specifically — not a full synonym pair, an
+overlap-with-extra-scope relationship.
+
+**Action taken:** Promoted `master_dictionary.json`'s existing `"how"`
+→ `"Maikai"` row from `unverified` to `verified_high`, citing this NV.
+(Runtime-neutral: `src/data/corrections.json`'s pre-existing `"how"` →
+`"maidake"` entry has higher precedence and is unaffected — both forms
+remain correct for "how", same non-conflict pattern as NV-114's
+`mangmang`/`saksa kamkam` finding.) No new sentence row added — this is
+a gloss-level relay, no full sentence was supplied to cite as a
+sentence-level example.
+
+**Relevance flagged, NOT closed:** `maikai`'s "in order that"/"so that"
+sense is directly relevant to the still-OPEN purpose/`-na` item (see
+NV-111 and `.ai/WORKSTATE.yaml`'s remaining-open-items list) — it raises
+the possibility that `maikai` is an alternative purpose-marking strategy
+alongside (or in some contexts instead of) `-na`. This is **not**
+asserted here: no sentence evidence shows `maikai` actually used in a
+purpose clause, only the bare gloss claiming it can be. A natural next
+relay question: ask for a full "in order to/so that" sentence using
+`maikai`, to see how it relates to the existing `-na` citations
+(`Anga cha·na re·angaha.` = "I went to eat.", etc.) — do they compose
+together, alternate, or mark different clause types? Left for a future
+session/relay batch, not guessed at now.
+
+**Duplicate-representation check (Rule 8):** confirmed `corrections.json`
+already carries `"how"` → `"maidake"` (pre-existing, unaffected, no
+change made); no `phrase_maps.js` entry for `"how"`.
+
+**Runtime Handoff:** None — no engine code touched, no runtime-visible
+change (the promoted row was already shadowed by the higher-precedence
+correction).
+
+---
