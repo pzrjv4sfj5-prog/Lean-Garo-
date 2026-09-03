@@ -2176,3 +2176,75 @@ test('NV-118 regression guard: multi-word loanword phrases are NOT added to look
   const { lookupGaro } = await import('../../src/lookupEngine.js');
   assert.equal(lookupGaro('paneer butter masala'), null);
 });
+
+// NV-119 (2026-09-03, Claude B). Modal "can" (ama/man·a) — Claude A's
+// 2026-09-03 handoff Finding 1, reconfirmed general (not first-person-
+// scoped): "can" was silently dropped with no record it was ever
+// present. Fixed for the 4 verbs with direct native evidence.
+test('NV-119 modal-can: "she can eat" (third-person subject, no exact-phrase citation) now includes the modal, was silently dropping it entirely', async () => {
+  const r = await translate('she can eat');
+  assert.equal(r.method, 'modal-can-construction');
+  assert.equal(r.garo, 'Ua cha\u00b7na man\u00b7a');
+});
+
+test('NV-119 modal-can: "he can work" uses the native-cited "kam ka·na" form, not purpose_map.json\'s different "dakna"', async () => {
+  const r = await translate('he can work');
+  assert.equal(r.method, 'modal-can-construction');
+  assert.equal(r.garo, 'Ua kam ka\u00b7na man\u00b7a');
+});
+
+test('NV-119 modal-can: "they can speak garo" keeps "Garo" as itself, not the unrelated compiled_dict.json "garo"->"Rong" entry', async () => {
+  const r = await translate('they can speak garo');
+  assert.equal(r.method, 'modal-can-construction');
+  assert.equal(r.garo, 'Uamang Garo aganna man\u00b7a');
+});
+
+test('NV-119 regression guard: existing first-person exact-phrase citations are untouched (still route via correction, not the new construction)', async () => {
+  const r1 = await translate('i can eat');
+  const r2 = await translate('i can speak garo');
+  assert.equal(r1.method, 'exact-phrase');
+  assert.equal(r1.garo, 'Anga cha\u00b7na man\u00b7a');
+  assert.equal(r2.method, 'exact-phrase');
+  assert.equal(r2.garo, 'Anga Garo aganna man\u00b7a');
+});
+
+test('NV-119 regression guard: verbs with no native evidence in modal_can_map.json still fall through untouched (documented limitation, not silently guessed)', async () => {
+  const r = await translate('she can sing');
+  assert.notEqual(r.method, 'modal-can-construction');
+});
+
+test('NV-119 regression guard: "can\'t"/"cannot" (no native evidence for negative modal shape) do not fire this construction', async () => {
+  const r = await translate('she cannot eat');
+  assert.notEqual(r.method, 'modal-can-construction');
+});
+
+test('NV-119 regression guard: an object on an intransitive-in-this-construction verb ("he can eat rice") is unattested and does not fire', async () => {
+  const r = await translate('he can eat rice');
+  assert.notEqual(r.method, 'modal-can-construction');
+});
+
+// NV-120 (2026-09-03, Claude B). "-ma" polar question — Claude A's
+// 2026-09-03 handoff Finding 2. Narrowly generalizes ONE of two
+// structurally-different existing citations along its one attested
+// dimension (subject pronoun) — see grammarEngine.js's
+// tryPolarQuestionLunchConstruction for why the two citations are not
+// unified.
+test('NV-120 polar-question: "did she have lunch?" (pronoun swap, no exact-phrase citation) now resolves instead of the previous "donga"-injection word-salad', async () => {
+  const r = await translate('did she have lunch?');
+  assert.equal(r.method, 'polar-question-construction');
+  assert.equal(r.garo, 'Ua mi cha\u00b7jokma?');
+});
+
+test('NV-120 regression guard: both existing exact-phrase citations are untouched and still structurally different from each other', async () => {
+  const r1 = await translate('did you have lunch?');
+  const r2 = await translate('have you eaten lunch?');
+  assert.equal(r1.method, 'correction');
+  assert.equal(r1.garo, 'Na\u00b7a mi cha\u00b7jokma?');
+  assert.equal(r2.method, 'correction');
+  assert.equal(r2.garo, 'Mipringde cha\u00b7ahama?');
+});
+
+test('NV-120 regression guard: the possessive variant ("have you eaten your lunch?") is unattested territory and is deliberately NOT fixed — still falls through to the pre-existing broken sov-assembly path rather than being guessed', async () => {
+  const r = await translate('have you eaten your lunch?');
+  assert.notEqual(r.method, 'polar-question-construction');
+});

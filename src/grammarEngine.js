@@ -11,6 +11,7 @@
 
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
+import MODAL_CAN_MAP from './data/modal_can_map.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import POSSESSIVES from './data/possessives.json' with { type: 'json' };
 import { NUMBER_WORDS, countNoun, parseCountingPhrase } from './garo_classifier.js';
@@ -860,4 +861,117 @@ export function tryOnlyIdentityConstruction(input) {
   const verbWithEnding = applyDeclarativeEndingAia(verbGaro);
 
   return [subjectWithTopic, objGaro, boundObject, verbWithEnding].join(' ');
+}
+
+// NV-119 (2026-09-03, Claude B). Modal "can" (ama/man·a) — Claude A's
+// 2026-09-03 handoff (docs/CLAUDE_B_HANDOFF_20260903_modal_drop_and_
+// ma_question_gap.md, Finding 1) reconfirmed this is a GENERAL bug, not
+// scoped to first-person: "can" sits in both STOP_WORDS and
+// AUXILIARY_SKIP (normalizationEngine.js), so it is silently discarded
+// everywhere with no record that a modal was ever present — "she can
+// eat" -> "Ua Cha·a" (no modal at all), same failure shape as the
+// original first-person bug, just never generalized past the 4 exact-
+// phrase citations already in compiled_dict.json ("i can eat"/"i can
+// go"/"i can work"/"i can speak garo").
+//
+// This does NOT touch STOP_WORDS/AUXILIARY_SKIP or the main verb-finding
+// loop above (too risky — "can" is skipped in many other sentence shapes
+// this repo has no evidence for, e.g. embedded in a relative clause).
+// Instead, narrowly scoped like tryOnlyIdentityConstruction above: a
+// dedicated pattern tried before general grammar-assembly, firing ONLY
+// for "SUBJ can VERB [OBJECT]" with a pronoun subject and a verb that has
+// direct native evidence in modal_can_map.json (currently: eat, go,
+// work, speak). Any other verb falls through untouched (still silently
+// drops the modal — a known, documented limitation, not silently
+// "fixed" by guessing an unattested infinitive form).
+//
+// "can't"/"cannot" are deliberately NOT matched (regex requires
+// whitespace after "can", which neither contracted form has) — no
+// native evidence yet for the negative modal's shape, so this
+// construction only fires on the affirmative.
+const MODAL_CAN_VERBS = MODAL_CAN_MAP.verbs;
+
+export function tryModalCanConstruction(input) {
+  const m = input.match(/^([a-z]+)\s+can\s+([a-z]+)(?:\s+([a-z][a-z\s]*?))?\.?$/i);
+  if (!m) return null;
+  const [, subjectWord, verbWord, objectPhraseRaw] = m;
+
+  const subjectPronounGaro = PRONOUN_MAP[subjectWord.toLowerCase()];
+  if (!subjectPronounGaro) return null;
+
+  const entry = MODAL_CAN_VERBS[verbWord.toLowerCase()];
+  if (!entry) return null;
+
+  const objectPhrase = (objectPhraseRaw || '').trim();
+  // Object presence must match this verb's own attested shape — "speak"
+  // is the only verb with native evidence for taking an object here, and
+  // that citation always has one ("Garo"). Neither an unexpected object
+  // on an intransitive verb nor a missing object on "speak" has any
+  // evidence backing it, so both bail rather than guess.
+  if (!!objectPhrase !== entry.transitive) return null;
+
+  let objGaro = null;
+  if (objectPhrase) {
+    // Language-name guard: the one native citation with an object here
+    // ("Anga Garo aganna man·a") keeps "Garo" as itself — but
+    // compiled_dict.json separately has a "garo" -> "Rong" entry (a
+    // different, unrelated sense — likely "language" in general, not
+    // the proper name), which the generic lookup below would otherwise
+    // wrongly substitute. Confirmed live: "they can speak garo" produced
+    // "Uamang Rong aganna man·a" before this guard — "Rong" instead of
+    // "Garo". Scoped to exactly this one attested word, not a general
+    // "never translate object nouns for speak" rule (no evidence either
+    // way for other language names yet).
+    if (objectPhrase.toLowerCase() === 'garo') {
+      objGaro = 'Garo';
+    } else {
+      const objGaroRaw = lookupGaro(objectPhrase.toLowerCase());
+      // Same capitalized-loanword fallback convention as
+      // tryOnlyIdentityConstruction above.
+      objGaro = objGaroRaw || (objectPhrase.charAt(0).toUpperCase() + objectPhrase.slice(1).toLowerCase());
+    }
+  }
+
+  const parts = [subjectPronounGaro];
+  if (objGaro) parts.push(objGaro);
+  parts.push(entry.verbGaro, 'man\u00b7a');
+  return parts.join(' ');
+}
+
+// NV-120 (2026-09-03, Claude B). "-ma" polar-question construction —
+// Claude A's 2026-09-03 handoff (Finding 2) reproduced live: paraphrases
+// of the "did you have lunch?" citation produce broken, verb-salvaged
+// output with the object-eating-adjacent auxiliary "have" wrongly
+// substituting as the main verb ("donga", generic "to have/exist") and
+// no "-ma" at all.
+//
+// IMPORTANT — this is deliberately NOT a general "-ma polar question"
+// composer. There are TWO existing exact-phrase citations that look like
+// paraphrases of each other but are structurally different in Garo:
+//   "did you have lunch"    -> "Na·a mi cha·jokma?"     (corrections.json)
+//   "have you eaten lunch"  -> "Mipringde cha·ahama?"   (corrections.json)
+// Different object form (bare "mi" vs topic-marked "Mipringde"),
+// different verb suffix (-jokma vs -ahama), and citation 2 drops the
+// subject pronoun entirely while citation 1 keeps it. This is the same
+// "two attested sentences, two different shapes" situation NV-112/NV-114
+// already established for the "only" construction — unifying them would
+// be exactly the kind of single-attestation overreach this repo's
+// governance repeatedly warns against.
+//
+// Scope: only citation 1 ("did SUBJ have lunch") is generalized, and only
+// along the one dimension it actually attests — subject pronoun
+// substitution ("Na·a" already varies by subject in the citation itself,
+// so extending that is grounded evidence, not a guess). The object stays
+// fixed to bare "lunch" (no possessive) — citation 2's topic-marked
+// object form on a POSSESSED noun ("your lunch") is unattested territory
+// this does not attempt. Citation 2 is not generalized at all (no
+// evidence for how it behaves with a non-"you" subject, since the
+// citation drops the subject pronoun and there's nothing to substitute
+// on grounded evidence).
+export function tryPolarQuestionLunchConstruction(input) {
+  const m = input.match(/^did\s+([a-z]+)\s+have\s+lunch\??$/i);
+  if (!m) return null;
+  const subjectPronounGaro = PRONOUN_MAP[m[1].toLowerCase()];
+  if (!subjectPronounGaro) return null;
+  return `${subjectPronounGaro} mi cha\u00b7jokma?`;
 }

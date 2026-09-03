@@ -1,0 +1,9 @@
+{
+  "_comment": "NV-119 (2026-09-03, Claude B). Infinitive-form Garo verb used specifically in the modal-'can' construction ('SUBJ [OBJ] VERB-na man\u00b7a'). Deliberately a SEPARATE table from purpose_map.json (used for 'want to VERB'/'went to VERB'): the two constructions do not always share a form for the same verb ('work' is 'kam ka\u00b7na' here vs purpose_map.json's 'dakna' for the purpose-clause construction; 'go' is 're\u00b7angna' here vs purpose_map.json's 're\u00b7ang\u00b7na', a minor orthographic difference not worth risking by sharing the table). Source: docs/THANGSENG_NATIVE_VALIDATION.md lines ~5943-5945 and ~5757 (native-cited): 'Anga cha\u00b7na ama/man\u00b7a.' (I can eat), 'Anga re\u00b7angna ama/man\u00b7a.' (I can go), 'Anga kam ka\u00b7na ama/man\u00b7a.' (I can work), 'Anga Garo aganna man\u00b7a.' (I can speak Garo). Primary variant 'man\u00b7a' (not 'ama') per docs/PICKPRIMARY_VERIFIED_TIES.md's existing tie-break for these exact 3 sentences. 'speak' is the ONLY entry with native evidence for an object appearing in this construction (bare, no -ko marker) \u2014 do not assume other verbs take an object the same way without their own evidence; see tryModalCanConstruction's own transitive flag. List is intentionally narrow \u2014 add only on confirmed evidence, not by inference from this list's existing entries or from purpose_map.json.",
+  "verbs": {
+    "eat": { "verbGaro": "cha\u00b7na", "transitive": false },
+    "go": { "verbGaro": "re\u00b7angna", "transitive": false },
+    "work": { "verbGaro": "kam ka\u00b7na", "transitive": false },
+    "speak": { "verbGaro": "aganna", "transitive": true }
+  }
+}

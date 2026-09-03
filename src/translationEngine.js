@@ -31,7 +31,7 @@ import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js
 // analyzeGrammar, tryWithoutGijaConstruction extracted to
 // src/grammarEngine.js (2026-07-29, BACKLOG-003 Phase 5). Verified zero
 // logic change via byte-identical 237-sentence stress benchmark diff.
-import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction } from './grammarEngine.js';
+import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryPolarQuestionLunchConstruction } from './grammarEngine.js';
 export { analyzeGrammar };
 // assembleSentenceSOV, assembleGrammar, translateIfClause,
 // translateMultiClause extracted to src/sentenceBuilder.js
@@ -309,6 +309,23 @@ export async function translate(input) {
   // output (the confirmed pre-fix bug).
   const onlyIdentity = tryOnlyIdentityConstruction(cleaned);
   if (onlyIdentity) return { garo: onlyIdentity, method: 'only-identity-construction', confidence: 0.85 };
+
+  // 5.8 NV-119 modal "can" (ama/man·a) construction (2026-09-03, Claude B
+  // — see grammarEngine.js's tryModalCanConstruction for the full
+  // citation). Same tier as the two constructions above, for the same
+  // reason: "can" is silently discarded by STOP_WORDS/AUXILIARY_SKIP
+  // before general grammar-assembly ever sees it, so without this the
+  // modal vanishes with no record it was ever there (e.g. "she can eat"
+  // -> "Ua Cha·a", confirmed live, Claude A's 2026-09-03 handoff).
+  const modalCan = tryModalCanConstruction(cleaned);
+  if (modalCan) return { garo: modalCan, method: 'modal-can-construction', confidence: 0.85 };
+
+  // 5.9 NV-120 "did SUBJ have lunch" polar-question pronoun-substitution
+  // (2026-09-03, Claude B — see grammarEngine.js's
+  // tryPolarQuestionLunchConstruction for the full citation, including
+  // why this is narrowly scoped rather than a general -ma composer).
+  const polarLunch = tryPolarQuestionLunchConstruction(cleaned);
+  if (polarLunch) return { garo: polarLunch, method: 'polar-question-construction', confidence: 0.85 };
 
   // 6. Grammar assembly — SOV with -ko object marker and -na purpose clause
   const grammar = analyzeGrammar(cleaned);
