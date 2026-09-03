@@ -507,16 +507,20 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903B.md - THIS IS THE
-    AUTHORITATIVE MIGRATION DOC, written 2026-09-03B (same-day follow-up
-    session). Project Owner relayed a 5-item closure instruction (ama/man·a,
-    question-word+-ma, people classifier, "only" sign-off, Mejao) plus a
-    ·-not-apostrophe formatting requirement and a request to record the
-    -na/ability examples -- verified ALL 5 items were already CLOSED by the
-    prior 20260902/20260903 sessions (NV-117, NV-113, NV-109, NV-112/114,
-    NV-107 respectively); no new native evidence, no dictionary/engine
-    changes made. Only RULE-038 tension remains open. Read this file first
-    on resume.'
+  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903C.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC, written 2026-09-03C (same-day follow-up
+    session). Project Owner said "close all" on 4 self-audited improvement
+    items; 3 DECLINED (no native evidence exists -- RULE-038 tension,
+    "only X" 3rd-person scope, RULE-047 sawa/bano gap -- all remain open,
+    need an actual relay question); 1 closed (NV-107''s Mejao example
+    sentence promoted to a master_dictionary.json row -- not a linguistic
+    call, just citation promotion). Read this file first on resume.'
+  migration_doc_prior_20260903B: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903B.md -
+    prior session''s close, written 2026-09-03B. Project Owner relayed a
+    5-item closure instruction (ama/man·a, question-word+-ma, people
+    classifier, "only" sign-off, Mejao) -- verified ALL 5 items were already
+    CLOSED by prior sessions (NV-117, NV-113, NV-109, NV-112/114, NV-107);
+    no new native evidence, no changes made that session.'
   migration_doc_prior_20260903: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903.md -
     prior session''s close, written 2026-09-03. Records NV-117 (ama/man·a
     identity now closed on direct native evidence, not just Project Owner
@@ -895,7 +899,25 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-03B (Claude A, CONFIRMATION-ONLY, no
+  pending_thangseng_questions: '2026-09-03C (Claude A, Project Owner said
+    "close all" on the 4 self-audited improvement items -- 3 of 4 DECLINED
+    to force-close, no native evidence exists for them, evidence-first
+    discipline holds even under a direct instruction (same pattern as the
+    2026-08-20 "correct entries dont need Thangseng" decline): RULE-038
+    tension (NV-109), "only X" third-person scope (Finding 4,
+    docs/CLAUDE_B_HANDOFF_20260903_modal_drop_and_ma_question_gap.md), and
+    RULE-047 for sawa/bano remain genuinely OPEN, unresolved, need an actual
+    relay question, not guessed at. 1 of 4 WAS actionable without new native
+    input (not a linguistic call, just a promotion of already-cited
+    evidence): the NV-107 Mejao example sentence ("Mejao anga nang·chi
+    re·angachim." = "I had gone to you (recently)") added as a new
+    master_dictionary.json row, VERIFIED/HIGH. Gate re-run clean: 8213/8213
+    entries, 9/9 grammatical corrections, 304/304 unit tests, 0 new
+    repository-intelligence violations. Live-verified via translate(),
+    exact-phrase, 0.98 confidence. Rule 8 checked: no corrections.json/
+    phrase_maps.js entry for this key, nothing to sync.
+    ---
+    2026-09-03B (Claude A, CONFIRMATION-ONLY, no
     new native evidence): Project Owner relayed a 5-item closure instruction
     covering ama/man·a, question-word+-ma, people classifier, "only"
     sign-off, and Mejao -- all 5 verified already CLOSED (NV-117, NV-113,

@@ -77891,5 +77891,12 @@
     "category": "phrases",
     "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "i had gone to you (recently)",
+    "garo": "Mejao anga nang·chi re·angachim.",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — Thangseng, direct native citation, NV-107 (2026-09-01/02). Cited as evidence for Mejao's semantic scope (specific/recent mutually-known past time, not literal 'yesterday' only); promoted to a standalone dictionary row this session (was citation-only until now). Raka-dot spelling per project convention (source relay used apostrophe: \"nang'chi re'angachim\").",
+    "confidence": "verified_high"
   }
 ]

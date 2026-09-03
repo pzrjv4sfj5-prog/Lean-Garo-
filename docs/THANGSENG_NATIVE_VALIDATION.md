@@ -5742,7 +5742,12 @@ Both now cite NV-104. `Mejal`/`me·ja·o` (the standalone "yesterday" headword) 
 
 **Action taken:** Appended a semantic-clarification note (citing this NV, quoting Thangseng verbatim, and the native example) to the two existing VERIFIED/HIGH `master_dictionary.json` rows for `english: "Yesterday"` (`garo: "Mejal"` and `garo: "me·ja·o"`). **No change to either row's `english`, `garo`, or `confidence` fields** — both remain valid, correct translations for literal "yesterday" sentences. This is a documentation/notes-field addition only, so that future sessions don't mistakenly assume the word's meaning is limited to the literal calendar day. Full gate re-run after the edit: 8205/8205 entries, 9/9 grammatical corrections, 284/284 unit tests, 0 new repository-intelligence violations.
 
-**Not applied — no new dictionary row added:** The native example sentence (`Mejao anga nang'chi re'angachim.` = "I had gone to you recently") was not added as a new standalone dictionary entry this session — recorded here as the citation evidence; adding it as a translatable sentence is left for a future session if wanted, not assumed to be required by this clarification.
+**Update (2026-09-03B):** the native example sentence has now been added as
+a standalone `master_dictionary.json` row — `english: "i had gone to you
+(recently)"` → `garo: "Mejao anga nang·chi re·angachim."`, VERIFIED/HIGH,
+citing this NV. This was a promotion of already-cited evidence, not a new
+linguistic call — no new native input was needed or sought. Live-verified
+via `translate()`: exact-phrase match, confidence 0.98.
 
 **Runtime Handoff:** None — no engine code touched, no compiled-data-affecting change (notes-field only).
 
