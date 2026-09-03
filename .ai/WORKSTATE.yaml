@@ -507,15 +507,24 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903.md - THIS IS THE
-    AUTHORITATIVE MIGRATION DOC, written 2026-09-03. Records NV-117 (ama/man·a
+  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903B.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC, written 2026-09-03B (same-day follow-up
+    session). Project Owner relayed a 5-item closure instruction (ama/man·a,
+    question-word+-ma, people classifier, "only" sign-off, Mejao) plus a
+    ·-not-apostrophe formatting requirement and a request to record the
+    -na/ability examples -- verified ALL 5 items were already CLOSED by the
+    prior 20260902/20260903 sessions (NV-117, NV-113, NV-109, NV-112/114,
+    NV-107 respectively); no new native evidence, no dictionary/engine
+    changes made. Only RULE-038 tension remains open. Read this file first
+    on resume.'
+  migration_doc_prior_20260903: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903.md -
+    prior session''s close, written 2026-09-03. Records NV-117 (ama/man·a
     identity now closed on direct native evidence, not just Project Owner
     instruction; renumbered from a draft NV-112 after rebasing onto a
     concurrent Claude B session that independently used NV-112-115), the 3
     stale still-open passages reconciled, and the resulting pending-item
     count: only RULE-038 tension remains open (Claude B closed the other 2
-    of the original 3 same-day, see NV-112-114). Read this file first on
-    resume.'
+    of the original 3 same-day, see NV-112-114).'
   migration_doc_prior_20260902: 'docs/CLAUDE_A_SESSION_MIGRATION_20260902.md - prior
     session''s close, written 2026-09-02F (migrate-only session,
     no linguistic/data/engine work). Records CLOSED (NV-103 through NV-111,
@@ -870,7 +879,14 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
-  pending_thangseng_questions: '2026-09-03 (Claude A, CLOSURE, NV-117): the ama/man·a
+  pending_thangseng_questions: '2026-09-03B (Claude A, CONFIRMATION-ONLY, no
+    new native evidence): Project Owner relayed a 5-item closure instruction
+    covering ama/man·a, question-word+-ma, people classifier, "only"
+    sign-off, and Mejao -- all 5 verified already CLOSED (NV-117, NV-113,
+    NV-109, NV-112/114, NV-107). Nothing reopened, nothing new added. See
+    docs/CLAUDE_A_SESSION_MIGRATION_20260903B.md.
+    ---
+    2026-09-03 (Claude A, CLOSURE, NV-117): the ama/man·a
     identity question -- previously closed only by Project Owner instruction, not
     native evidence (see 2026-09-02 closure note in CLAUDE_A_SESSION_MIGRATION_20260902.md)
     -- is now closed with an actual direct Thangseng citation: ama and man·a
