@@ -2150,3 +2150,29 @@ test('NV-116 regression guard: "to roll" (verb sense, two words) is untouched an
   assert.equal(r.method, 'exact-phrase');
   assert.equal(r.garo, 'A\u00b7dubeko romroma');
 });
+
+// NV-118 (2026-09-03, Claude B). NV-115/116's loanword check only ever
+// matched the FULL cleaned input string, so a confirmed loanword embedded
+// inside a longer sentence still fell through every other lookupGaro()
+// call site to a literal '[UNKNOWN]' — e.g. translate("i want to eat
+// momo") shipped "Anga ska ·na Cha·a [UNKNOWN]" even though translate(
+// "momo") alone worked. Fixed by adding the single-word subset of the
+// loanword list as a fallback inside lookupGaro() itself (lookupEngine.js),
+// the shared choke point every one of those call sites already routes
+// through.
+test('NV-118 embedded loanword: "i want to eat momo" resolves momo instead of shipping a literal [UNKNOWN] marker', async () => {
+  const r = await translate('i want to eat momo');
+  assert.ok(!r.garo.includes('[UNKNOWN]'));
+  assert.ok(/momo/i.test(r.garo));
+});
+
+test('NV-118 embedded loanword: works for other single-word confirmed loanwords too ("chow")', async () => {
+  const r = await translate('i want to eat chow');
+  assert.ok(!r.garo.includes('[UNKNOWN]'));
+  assert.ok(/chow/i.test(r.garo));
+});
+
+test('NV-118 regression guard: multi-word loanword phrases are NOT added to lookupGaro\'s single-word fallback (would be dead weight — lookupGaro only ever receives one word at a time)', async () => {
+  const { lookupGaro } = await import('../../src/lookupEngine.js');
+  assert.equal(lookupGaro('paneer butter masala'), null);
+});

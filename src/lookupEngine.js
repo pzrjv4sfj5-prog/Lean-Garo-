@@ -19,6 +19,17 @@
 import compiledDictRaw from './compiled_dict.json' with { type: 'json' };
 import correctionsRaw from './data/corrections.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
+import confirmedLoanwordsRaw from './data/confirmed_loanwords.json' with { type: 'json' };
+
+// NV-118 (2026-09-03, Claude B). Single-word-only subset of the confirmed
+// loanword list (translationEngine.js's own step 1.75 already handles the
+// multi-word phrases like "paneer butter masala" at the top-level input
+// string; lookupGaro only ever receives one word at a time, so multi-word
+// entries can never match here and are filtered out rather than left in
+// as dead weight).
+const SINGLE_WORD_LOANWORDS = new Set(
+  confirmedLoanwordsRaw.words.filter(w => !w.includes(' ')).map(w => w.toLowerCase())
+);
 
 // Shadow index: apostrophe-stripped keys for typo tolerance (lets go -> let's go)
 export const corrections = { ...correctionsRaw };
@@ -91,5 +102,20 @@ export function lookupGaro(key) {
   const phraseMapValue = lookupPhrase(k);
   if (phraseMapValue) return phraseMapValue;
   const e = lookup(k);
-  return e ? e.garo : null;
+  if (e) return e.garo;
+  // NV-118 (2026-09-03, Claude B): momo/chow/maggie/paneer/panner/roll
+  // (confirmed no Garo equivalent, see confirmed_loanwords.json) were
+  // resolving to a hard '[UNKNOWN]' at every one of the dozen-plus call
+  // sites across grammarEngine.js/sentenceBuilder.js/translationEngine.js
+  // that do `lookupGaro(word) || '[UNKNOWN]'` — e.g. translate("i want to
+  // eat momo") shipped "Anga ska ·na Cha·a [UNKNOWN]" instead of resolving
+  // "momo" at all, even though translate("momo") alone worked correctly
+  // via NV-115/116's top-level exact-match step. Fixed at this single
+  // shared choke point (every one of those call sites already routes
+  // through lookupGaro) rather than patching each site individually —
+  // same rationale as this function's existing corrections/phrase-map
+  // checks above, which exist precisely because callers other than
+  // translate()'s own top-level cascade need the same precedence.
+  if (SINGLE_WORD_LOANWORDS.has(k)) return k.charAt(0).toUpperCase() + k.slice(1);
+  return null;
 }
