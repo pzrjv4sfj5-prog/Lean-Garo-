@@ -879,6 +879,22 @@ claude_a:
     two different words for the same thing (synonyms), or do they mean slightly different things
     (e.g. supporting a person vs. supporting a physical object, or a different register)? When
     would a Garo speaker use one over the other?'
+  handoff_to_claude_b_20260903: 'docs/CLAUDE_B_HANDOFF_20260903_modal_drop_and_ma_question_gap.md
+    -- 4 findings from live translate() runs on paraphrases/pronoun-swaps of
+    already-closed NV-107..117 citations (no exact-phrase match, forces
+    grammar-assembly/sov-assembly). (1) RE-CONFIRMED, not new: modal
+    ama/man·a still fully dropped outside exact-phrase (she can eat->
+    "Ua Cha·a", no modal) -- same class as the long-standing modal-drop
+    handoff. (2) NEW live reproduction: -ma polar-question suffix (RULE-047/
+    NV-113) has zero engine implementation -- paraphrase/pronoun-swap of the
+    "did you have lunch?" citation produces malformed word-salad output
+    (wrong verb, no -ma, wrong order). (3) positive control: question-word
+    (no -ma) half of RULE-047 degrades gracefully on paraphrase, unaffected.
+    (4) "only X" construction (NV-112) appears scoped to first-person
+    subjects only in the current implementation -- third-person falls back
+    to a different, still-VERIFIED but distinct construction (mangmang).
+    No engine code touched by Claude A. See handoff doc for exact
+    input/output pairs.'
   pending_thangseng_questions: '2026-09-03B (Claude A, CONFIRMATION-ONLY, no
     new native evidence): Project Owner relayed a 5-item closure instruction
     covering ama/man·a, question-word+-ma, people classifier, "only"
