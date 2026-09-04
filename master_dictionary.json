@@ -77965,5 +77965,419 @@
     "classifier": "sak",
     "notes": "VERIFIED/HIGH — plural-key gap fill (2026-09-03, Claude A, prompted by Project Owner relay reconfirming 'chatro sakgittam'='three students'): applies the already-VERIFIED 'three student'='Chattro sak·gittam' (root 'Chattro' native-confirmed NV-073, applied to the already-VERIFIED sak classifier + NUMBERS suffix table) to the natural-English plural key. Supersedes the arithmetic-error 'chik·gni' row previously the only entry under this plural key (see that row's own SUPERSEDED note). No new native input required beyond NV-073.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "male student",
+    "garo": "Chattro",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "female student",
+    "garo": "Chattri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one female student",
+    "garo": "Chattri saksa",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "two female student",
+    "garo": "Chattri sakgni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "three female student",
+    "garo": "Chattri sakgittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "four female student",
+    "garo": "Chattri sakbri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "five female student",
+    "garo": "Chattri sakbonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "six female student",
+    "garo": "Chattri sakdok",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seven female student",
+    "garo": "Chattri saksni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eight female student",
+    "garo": "Chattri sakchet",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "nine female student",
+    "garo": "Chattri saksku",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ten female student",
+    "garo": "Chattri sakchiking",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eleven female student",
+    "garo": "Chattri sakChi·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twelve female student",
+    "garo": "Chattri sakChi·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirteen female student",
+    "garo": "Chattri sakChi·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fourteen female student",
+    "garo": "Chattri sakChi·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifteen female student",
+    "garo": "Chattri sakChi·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixteen female student",
+    "garo": "Chattri sakChi·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventeen female student",
+    "garo": "Chattri sakChi·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighteen female student",
+    "garo": "Chattri sakChi·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "nineteen female student",
+    "garo": "Chattri sakChi·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty female student",
+    "garo": "Chattri sakKolgrik",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "two female students",
+    "garo": "Chattri sakgni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "three female students",
+    "garo": "Chattri sakgittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro is the standard/unmarked term for 'student' (also serves as the explicit 'male student' form when contrast is needed, like English 'actor'); Chattri is the explicit 'female student' form, like English 'actress'. Counting series mechanically built from the count=1 citation ('Chattri saksa'=one female student) using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, same methodology as the existing Chattro/Skigipa/mande series.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one male student",
+    "garo": "Chattro saksa",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "two male student",
+    "garo": "Chattro sakgni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "three male student",
+    "garo": "Chattro sakgittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "four male student",
+    "garo": "Chattro sakbri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "five male student",
+    "garo": "Chattro sakbonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "six male student",
+    "garo": "Chattro sakdok",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seven male student",
+    "garo": "Chattro saksni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eight male student",
+    "garo": "Chattro sakchet",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "nine male student",
+    "garo": "Chattro saksku",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ten male student",
+    "garo": "Chattro sakchiking",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eleven male student",
+    "garo": "Chattro sakChi·sa",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twelve male student",
+    "garo": "Chattro sakChi·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirteen male student",
+    "garo": "Chattro sakChi·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fourteen male student",
+    "garo": "Chattro sakChi·bri",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifteen male student",
+    "garo": "Chattro sakChi·bonga",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixteen male student",
+    "garo": "Chattro sakChi·dok",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventeen male student",
+    "garo": "Chattro sakChi·sni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighteen male student",
+    "garo": "Chattro sakChi·chet",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "nineteen male student",
+    "garo": "Chattro sakChi·sku",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty male student",
+    "garo": "Chattro sakKolgrik",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "two male students",
+    "garo": "Chattro sakgni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "three male students",
+    "garo": "Chattro sakgittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
+    "confidence": "verified_high"
   }
 ]

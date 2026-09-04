@@ -907,7 +907,24 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-04 (Claude A): NV-125 --
+  pending_thangseng_questions: '2026-09-04B (Claude A): NV-126 --
+    Chattro/Chattri gendered student pair. Project Owner confirmed
+    (verbal/native validation with Thangseng, no written transcript,
+    same provenance basis as NV-125) that Chattro is the standard/
+    unmarked "student" term and also the explicit "male student" form
+    when contrast is needed (like English "actor"); Chattri is the
+    explicit "female student" form (like "actress"). Added new lexeme
+    rows ("male student"=Chattro, "female student"=Chattri) plus a
+    full mechanically-derived 1-20 counting series for both
+    (Chattri/Chattro + already-VERIFIED no-dot sak classifier +
+    NUMBERS suffix table, NV-124 methodology) -- 46 new VERIFIED/HIGH
+    rows total. Also closed a live gap found while verifying: "one
+    male student" had no exact dictionary entry and was falling
+    through to the wrong ge\u00b7 classifier fallback; now resolves
+    correctly via sak. Gate clean: 8264/8264, 9/9, 314/314, 0 new
+    violations.
+    ---
+    2026-09-04 (Claude A): NV-125 --
     old man / old woman. Project Owner stated direct verbal/phone
     confirmation with Thangseng (no written transcript exists for
     this exchange, per Project Owner statement 2026-09-04). Promoted
