@@ -907,7 +907,28 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-03D (Claude A): processed 2 new
+  pending_thangseng_questions: '2026-09-03E (Claude A): NV-123 -- Project
+    Owner relayed Thangseng confirmation of the already-VERIFIED
+    NOUN+sak+NUMBER pattern for chatro (student) and mande (person)
+    generally, 1-3. Mechanical part added no new evidence (values already
+    shipped under the singular-form keys "two person"/"three person"/"two
+    student"/"three student" since NV-073/2026-08-11) -- filled the missing
+    natural-English plural keys "two/three people" and "two/three students"
+    with the same already-VERIFIED values (dictionary-only fix, allowlisted
+    in known_dictionary_conflicts.json alongside their singular
+    counterparts, no engine code touched). FLAGGED, NOT applied: same relay
+    also claimed Me\u00b7asa=boy and Me\u00b7chik=girl. This contradicts
+    existing VERIFIED/HIGH entries (boy=ko\u00b7ka, girl=ko\u00b7ki) and the
+    unverified/VERIFIED man/woman entries (man=Me\u00b7asa unverified,
+    woman=Me\u00b7chik/me\u00b7chik VERIFIED/HIGH) -- Me\u00b7asa/Me\u00b7chik
+    already look native-plausible as adult man/woman, not child boy/girl.
+    Not force-resolved either way; not added to master_dictionary.json.
+    Needs a direct disambiguating question back to Thangseng (does
+    Me\u00b7asa/Me\u00b7chik mean boy/girl, man/woman, or both depending on
+    context?) before any change. Gate clean: 8218/8218, 9/9, 314/314, 0 new
+    violations.
+    ---
+    2026-09-03D (Claude A): processed 2 new
     Thangseng relays. (1) NV-121 -- sawa/maiko/bachi/badiako all confirmed
     question-word-questions-take-no-ma (RULE-047 scope gap from NV-113,
     previously DECLINED to force-close, now genuinely closed with real

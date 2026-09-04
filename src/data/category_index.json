@@ -1203,7 +1203,7 @@
   "one car": "travel",
   "two persons": "numbers",
   "two fishs": "animals",
-  "two students": "numbers",
+  "two students": "education",
   "two houses": "home",
   "two trees": "nature",
   "two cars": "numbers",
@@ -1212,7 +1212,7 @@
   "three birds": "animals",
   "three fishs": "animals",
   "three teachers": "numbers",
-  "three students": "numbers",
+  "three students": "education",
   "three houses": "home",
   "three trees": "nature",
   "three cars": "numbers",
@@ -4027,5 +4027,7 @@
   "who came?": "sentences",
   "what did you eat?": "sentences",
   "where did you go?": "sentences",
-  "which one did you take?": "sentences"
+  "which one did you take?": "sentences",
+  "two people": "general",
+  "three people": "general"
 }

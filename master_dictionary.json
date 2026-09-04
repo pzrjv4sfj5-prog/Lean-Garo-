@@ -77928,5 +77928,41 @@
     "category": "sentences",
     "notes": "VERIFIED/HIGH — Thangseng direct native citation, NV-121 (2026-09-03). Confirms badiako (object-marked \"which one\") as question word, no -ma suffix (RULE-048).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "two people",
+    "garo": "mande sak·gni",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — plural-key gap fill (2026-09-03, Claude A, prompted by Project Owner relay reconfirming Thangseng's sak-classifier pattern for people generally): applies the already-VERIFIED 'two person'='mande sak·gni' (native-confirmed 2026-08-11, Thangseng via Tridip/Project Owner) to the natural-English plural key. No new native input required — same value already shipped under the singular-form key.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "three people",
+    "garo": "mande sak·gittam",
+    "pos": null,
+    "category": "general",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — plural-key gap fill (2026-09-03, Claude A, prompted by Project Owner relay reconfirming Thangseng's sak-classifier pattern for people generally): applies the already-VERIFIED 'three person'='mande sak·gittam' (native-confirmed 2026-08-11, Thangseng via Tridip/Project Owner) to the natural-English plural key. No new native input required — same value already shipped under the singular-form key.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "two students",
+    "garo": "Chattro sak·gni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — plural-key gap fill (2026-09-03, Claude A, prompted by Project Owner relay reconfirming 'chatro sak·gni'='two students'): applies the already-VERIFIED 'two student'='Chattro sak·gni' (root 'Chattro' native-confirmed NV-073, applied to the already-VERIFIED sak classifier + NUMBERS suffix table) to the natural-English plural key. Supersedes the arithmetic-error 'chik·gni' row previously the only entry under this plural key (see that row's own SUPERSEDED note). No new native input required beyond NV-073.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "three students",
+    "garo": "Chattro sak·gittam",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — plural-key gap fill (2026-09-03, Claude A, prompted by Project Owner relay reconfirming 'chatro sakgittam'='three students'): applies the already-VERIFIED 'three student'='Chattro sak·gittam' (root 'Chattro' native-confirmed NV-073, applied to the already-VERIFIED sak classifier + NUMBERS suffix table) to the natural-English plural key. Supersedes the arithmetic-error 'chik·gni' row previously the only entry under this plural key (see that row's own SUPERSEDED note). No new native input required beyond NV-073.",
+    "confidence": "verified_high"
   }
 ]
