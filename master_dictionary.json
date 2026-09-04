@@ -3583,14 +3583,15 @@
     "english": "old man",
     "garo": "Budepa",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement)."
   },
   {
     "english": "old woman",
     "garo": "Buchuma",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'old woman' has VERIFIED/HIGH form(s) ['bu·ri']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Retained alongside the pre-existing VERIFIED/HIGH 'Old Woman'=bu·ri (different exact english-key casing) as an attested alternate — not substituted, per Project Owner instruction not to remove bu·ri.",
+    "confidence": "verified_high"
   },
   {
     "english": "youth",

@@ -907,7 +907,20 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-03F (Claude A): NV-124 --
+  pending_thangseng_questions: '2026-09-04 (Claude A): NV-125 --
+    old man / old woman. Project Owner stated direct verbal/phone
+    confirmation with Thangseng (no written transcript exists for
+    this exchange, per Project Owner statement 2026-09-04). Promoted
+    2 existing rows from unverified/superseded to VERIFIED/HIGH:
+    "old man"=Budepa, "old woman"=Buchuma (both already sat in
+    master_dictionary.json at those exact values pre-session, only
+    the confidence tier changed). Retained alongside the pre-existing
+    VERIFIED/HIGH "Old Woman"=bu\u00b7ri (different exact english-key
+    casing) as an attested alternate per Project Owner instruction --
+    not substituted, not removed. Gate clean: 8218/8218, 9/9, 314/314,
+    0 new violations.
+    ---
+    2026-09-03F (Claude A): NV-124 --
     Project Owner re-supplied the raw WhatsApp transcript underlying
     NV-072/NV-073 (2026-08-13). It shows "chattro saksa"/"mande saksa"
     (Thangseng''s own annotation: "no raka in mande") with NO dot
