@@ -24,13 +24,21 @@ You told us "I am the only student" = "Angan saksa kamkam chatro."
 - Would you say it the same way for someone else? For example, how
   would you say "He is the only teacher" or "She is the only doctor"?
 
-**3. Question words "who" and "where" — same pattern as "what/how"?**
-You've shown us that questions with "what/how" (`mai`, `maina`,
-`maikai`) don't need a separate question-ending — the question word
-itself is enough, e.g. `Maina na·a ka·dinga?` ("why do you laugh?").
-- Does the same thing happen with "who" (`sawa`) and "where" (`bano`)?
-- Could you give an example of each — how would you naturally ask "who
-  is he?" and "where do you live?"
+**3. Question word "where" (staying in place) — same pattern?**
+You've confirmed that "who" (`sawa`), "what" (`maiko`), "where...going"
+(`bachi`), and "which" (`badiako`) don't need a separate
+question-ending. But that last one, `bachi`, was specifically about
+*going* somewhere ("where are you going?").
+- Does the other word for "where" — the one used for staying in one
+  place, like "where do you live?" or "where is it?" — work the same
+  way, with no question-ending? Could you give an example?
+
+**4. (Optional, lower priority) Does "maikai" ever mean "so that" / "in order that"?**
+You told us `maikai` = "how, in order that, so that" and is "a bit more
+versatile" than `maidake`. We'd like one real sentence to confirm the
+"so that / in order that" sense in practice — for example, how would
+you say something like "I went to the market so that I could buy rice"
+or "study hard so that you pass"?
 
 ---
 
@@ -48,11 +56,14 @@ itself is enough, e.g. `Maina na·a ka·dinga?` ("why do you laugh?").
    `mangmang` construction rather than `saksa kamkam` — not broken, but
    unconfirmed whether that's actually correct native usage for
    third-person, or whether `saksa kamkam` should extend there too.
-3. RULE-047 (NV-113, 2026-09-03) — the "`-ma` marks polar questions only"
-   rule is attested for `mai`-family words and `badita` (7 examples, 0
-   counter-examples) but never directly for `sawa` ("who") or `bano`
-   ("where") in a full sentence — those appear elsewhere in the corpus
-   only as bare vocabulary entries, not in an attested question.
+3. RULE-048 (NV-113, 2026-09-02; extended by NV-121, 2026-09-03) — the
+   "`-ma` marks polar questions only" rule is attested for `mai`-family
+   words, `badita`, `sawa`, `maiko`, `bachi`, and `badiako` (11 examples,
+   0 counter-examples) but never directly for `bano` (stationary
+   "where") in a full sentence — it appears elsewhere in the corpus only
+   as a bare vocabulary entry, not in an attested question. (Originally
+   mislabeled "RULE-047" — see `docs/CLAUDE_B_SESSION_MIGRATION_
+   20260903E.md` for the numbering-collision fix.)
 
 **Do not force-close any of these without an actual answer** — restated
 per this project's standing discipline (see Claude A's 2026-09-03C

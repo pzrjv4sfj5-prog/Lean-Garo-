@@ -292,15 +292,22 @@ NOT categorically wrong. Correct for "yapping about":
 `Na·a maini gimin bel·belenga` ✅ = What are you yapping about
 But WRONG for lying/crying/saying — those use `maina` or `Maiko` instead.
 
-### RULE-047 — `-ma` interrogative suffix is for polar (yes/no) questions only
+### RULE-048 — `-ma` interrogative suffix is for polar (yes/no) questions only
+(Corrected 2026-09-03: originally mislabeled "RULE-047" in this file
+before the canonical rule registry — `docs/GRAMMAR_RULE_CATALOGUE.md` —
+was checked; RULE-047 there is a different, unrelated rule, the
+comitative `-ming` suffix. This entry is the same finding as the
+canonical **RULE-048**, which also folds in NV-121's later extension —
+see that file for the authoritative version.)
 Question-word questions (`sawa`/`mai`/`maina`/`maikai`/`mai rokom`/
-`badita`, etc.) do NOT take `-ma` — the question word itself carries the
-interrogative force. `-ma` marks yes/no questions with no question word.
-Confirmed via `docs/THANGSENG_NATIVE_VALIDATION.md` NV-113 (7
-question-word examples, 0 with `-ma`; 4 polar examples, all with `-ma`;
-includes a minimal pair: `Na·a mai rokom?` "how are you" literal, vs
-`Namengama?` "how are you" idiomatic greeting). Not yet confirmed for
-`sawa`/`bano` specifically in a full sentence.
+`badita`/`maiko`/`bachi`/`badiako`, etc.) do NOT take `-ma` — the
+question word itself carries the interrogative force. `-ma` marks
+yes/no questions with no question word. Confirmed via
+`docs/THANGSENG_NATIVE_VALIDATION.md` NV-113 (7 question-word examples,
+0 with `-ma`; 4 polar examples, all with `-ma`; includes a minimal
+pair: `Na·a mai rokom?` "how are you" literal, vs `Namengama?` "how are
+you" idiomatic greeting) and NV-121 (extended to `sawa`, `maiko`,
+`bachi`, `badiako`). `bano` (stationary "where") remains untested.
 
 ---
 

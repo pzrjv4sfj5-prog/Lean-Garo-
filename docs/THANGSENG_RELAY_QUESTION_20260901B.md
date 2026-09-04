@@ -38,7 +38,8 @@ Finding 2).
   already-existing native evidence scattered across
   `docs/THANGSENG_NATIVE_VALIDATION.md` (7 question-word sentences, all
   `-ma`-free; 4 polar sentences, all `-ma`-bearing; one clean minimal
-  pair). See NV-113 and new RULE-047.
+  pair). See NV-113 and RULE-048 (renumbered from a stray "RULE-047"
+  label — see `docs/CLAUDE_B_SESSION_MIGRATION_20260903E.md`).
 - **Old item 6 (sign-off on the two "only X" sentences):** answer
   received: "I am the only student." = "Angan saksa kamkam chatro."
   (stress-dependent, alternate framings exist, "mangmang" also valid for
