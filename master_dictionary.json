@@ -77964,5 +77964,33 @@
     "classifier": "sak",
     "notes": "VERIFIED/HIGH — plural-key gap fill (2026-09-03, Claude A, prompted by Project Owner relay reconfirming 'chatro sakgittam'='three students'): applies the already-VERIFIED 'three student'='Chattro sak·gittam' (root 'Chattro' native-confirmed NV-073, applied to the already-VERIFIED sak classifier + NUMBERS suffix table) to the natural-English plural key. Supersedes the arithmetic-error 'chik·gni' row previously the only entry under this plural key (see that row's own SUPERSEDED note). No new native input required beyond NV-073.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "where are you staying?",
+    "garo": "(Na·a) Bano dongenga?",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — Thangseng direct native citation via Project Owner relay, NV-125 (2026-09-03/04). Confirms bano (stationary/placement 'where', RULE-044) as a question word taking no -ma suffix, extending RULE-048's pattern (previously attested only for bachi/sawa/maiko/badiako) to bano — closes the P2 gap flagged at RULE-048/NV-121.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "so that",
+    "garo": "Jedakode",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — Thangseng direct native citation via Project Owner relay, NV-126 (2026-09-03/04), given alongside a full sentence example. Native framing: 'these days jedakode is used more frequently (so that, in order that)' than maikai's older purpose sense (NV-122). Coexists with maikai (also VERIFIED/HIGH for 'how, in order that, so that', NV-122) — not a conflict, same non-competing-synonym pattern as maidake/maikai for 'how'. Also resolves/upgrades the pre-existing unverified pattern-logic guess in docs/GARO_GRAMMAR_REFERENCE.md (jedakode previously glossed only as tentative 'since/because', per corrections.json's 'i work so i can eat').",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i went to the market so that i could buy rice",
+    "garo": "Anga bajalchi re·angaha jedakode anga merong brena man·gen",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — Thangseng direct native citation via Project Owner relay, NV-126 (2026-09-03/04). Confirms jedakode in a full purpose-clause sentence, verb+ode pattern + future ability modal man·gen (consistent with the ama/man·a paradigm, NV-117). Resolves docs/GARO_GRAMMAR_REFERENCE.md Section 8's unverified/blocked item 'i went to the market to buy rice' with a native-confirmed near-equivalent (framed as 'so that' rather than 'to'). Flags an unresolved rice-word tension, NOT resolved here: this sentence uses 'merong' for rice, while the existing dictionary 'rice' entry is 'mi' — left as an open tension, not silently merged (same discipline as RULE-038's sak·sa tension); do not assume merong=mi without a direct citation.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "study hard so that you can be successful",
+    "garo": "Gisik nange poraibo maikai na·a chu·sokgipa ong·na man·gen",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — Thangseng direct native citation via Project Owner relay, NV-126 (2026-09-03/04). Confirms maikai used in the purpose/'so that' sense (previously only gloss-level at NV-122, not sentence-cited) — closes NV-122's explicitly-flagged-open question of whether maikai actually appears in a purpose clause. Note: this sentence's 'study hard' wording ('Gisik nange poraibo') does not match the existing dictionary 'study'='po·ri·a' — left as an open tension, not resolved or merged here, same discipline as the rice-word note above.",
+    "confidence": "verified_high"
   }
 ]

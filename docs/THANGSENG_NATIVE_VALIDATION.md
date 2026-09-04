@@ -6092,3 +6092,175 @@ change (the promoted row was already shadowed by the higher-precedence
 correction).
 
 ---
+
+## NV-124 — "Only X" third-person scope: relay answer received, does NOT close the open scope guard (2026-09-03/04)
+
+**Source:** Thangseng, via Project Owner relay (WhatsApp-style transcript,
+23:27 3/9/2026), answering the follow-up flagged at NV-112/NV-117/
+`docs/CLAUDE_B_SESSION_MIGRATION_20260903E.md` item 2: does `Angan saksa
+kamkam <NOUN>` ("I am the only X") generalize to third-person subjects?
+
+**Question asked (relayed):** "Would you say it the same way for someone
+else? For example, how would you say 'He is the only teacher' or 'She is
+the only doctor'?"
+
+**Answer (relayed):** "Yes, but that rendering is borrowed from the Bible
+translation. There may be other ways of translating it depending on the
+intention."
+
+**Finding: NOT CLOSED.** This is a real answer, not silence, but it does
+not supply what the open engineering question actually needs. It confirms
+the construction is *semantically* usable for third-person subjects in
+principle ("Yes"), but:
+- No actual third-person sentence was given (no rendering of "he is the
+  only teacher" or "she is the only doctor" was transmitted) — so the
+  surface form for a non-"I" subject is still unattested.
+- The caveat ("borrowed from the Bible translation... other ways of
+  translating it depending on the intention") is a direct warning against
+  assuming naive pronoun substitution (`Angan` → `Ua`) would produce a
+  correct sentence. It suggests the actual third-person form may differ
+  in ways not predictable from the first-person citation alone — exactly
+  the failure mode NV-112's original scope guard was written to prevent.
+
+**What this does NOT authorize:** removing or loosening the
+`tryOnlyIdentityConstruction` scope guard (`docs/
+CLAUDE_B_SESSION_MIGRATION_20260902F.md`, NV-112) that currently blocks
+third-person subjects. Per this project's standing evidence-first
+discipline (see NV-121's `bachi`/`bano` scope note, NV-114's
+verb-class note), a "yes" without a sentence is not a citation — it's a
+confirmation that a citation would be worth asking for.
+
+**Action taken:** None to engine or dictionary. Documentation only.
+
+**Follow-up needed (not guessed at here):** ask Thangseng directly for the
+actual third-person sentences ("He is the only teacher" / "She is the
+only doctor"), and ideally ask what "depending on the intention" means in
+practice — i.e. whether there's a stress/register choice similar to the
+`mangmang`/`saksa kamkam` alternation already noted at NV-112.
+
+**Runtime Handoff:** None — scope guard stays as-is until a real
+third-person sentence is transmitted.
+
+---
+
+## NV-125 — Question word `bano` (stationary "where") confirmed no `-ma` — CLOSES RULE-048's flagged P2 gap (2026-09-03/04)
+
+**Source:** Thangseng, via Project Owner relay (23:29 3/9/2026).
+
+**Question asked (relayed):** whether `bano` (stationary/placement
+"where", distinct from `bachi`'s movement-to sense) patterns the same as
+the other 6 already-attested question words (no `-ma` suffix), with an
+example request ("where do you live?"/"where is it?").
+
+**Answer (relayed), with source's own note:**
+> (Na•a) Bano dongenga? = Where are you staying?
+> If the sentence starts with a regular form of interrogative word.
+
+Raka-normalized per project convention (source used `•`): **`(Na·a) Bano
+dongenga?`**
+
+**Finding, CLOSED:** confirms `bano` takes no `-ma` suffix, exactly as
+predicted (but explicitly not assumed) at NV-121's scope note. This is
+the 7th question word directly attested for RULE-048's pattern (after
+`mai`-family, `badita`, `sawa`, `maiko`, `bachi`, `badiako`). The source's
+own gloss ("if the sentence starts with a regular form of interrogative
+word") reads as a restatement of the same scope condition already on
+record, not a new caveat — no new exception surfaced.
+
+**Action taken:**
+- `docs/grammar_rules_structured/RULE-048.yaml`: added `bano` example,
+  moved it out of the P2 "untested" launch-priority entry (that entry
+  now has no specific flagged word), bumped attested-word count 6→7,
+  updated `native_notes`/`last_updated`/`updated_by`/`source_ref`.
+- `docs/GRAMMAR_RULE_CATALOGUE.md`: mirrored the same update.
+- `master_dictionary.json`: added `"where are you staying?"` →
+  `"(Na·a) Bano dongenga?"`, VERIFIED/HIGH, citing this NV.
+
+**Duplicate-representation check (Rule 8):** `corrections.json`/
+`phrase_maps.js` checked for `"where are you staying?"` — no entry in
+either file, nothing to sync.
+
+**Runtime Handoff:** None — same as RULE-048's existing note, no live
+question-construction code path yet (current question output is
+exact-phrase lookup only).
+
+---
+
+## NV-126 — `jedakode` and `maikai` both confirmed as purpose ("so that"/"in order that") connectives, with full sentences — CLOSES NV-122's open flag (2026-09-03/04)
+
+**Source:** Thangseng, via Project Owner relay (23:36 3/9/2026).
+
+**Question asked (relayed):** whether `maikai` (already VERIFIED/HIGH for
+"how", gloss-only for the "so that"/"in order that" sense per NV-122)
+actually appears in a purpose clause, with an example request.
+
+**Answer (relayed):**
+> Yes. But that usage is quite old. These days jedakode is used more
+> frequently (so that, in order that).
+> Anga bajalchi re•angaha jedakode anga merong brena man•gen. = I went to
+> the market so that I could buy rice.
+> Gisik nange poraibo maikai na•a chu•sokgipa ong•na man•gen. = Study
+> hard so that you can be successful (man).
+
+Raka-normalized per project convention: `Anga bajalchi re·angaha jedakode
+anga merong brena man·gen` / `Gisik nange poraibo maikai na·a chu·sokgipa
+ong·na man·gen`.
+
+**Finding, CLOSED (two things at once):**
+1. **`maikai` purpose-clause use confirmed with a real sentence** — closes
+   the question NV-122 explicitly left open ("no sentence evidence shows
+   `maikai` actually used in a purpose clause"). It is genuinely
+   versatile: interrogative "how" and purpose "so that", same word.
+2. **`jedakode` independently confirmed as the more common modern purpose
+   connective** — and, notably, this native citation's `jedakode ... 
+   man·gen` structure closely matches a sentence this project had already
+   guessed at via pattern-logic alone (`docs/GARO_GRAMMAR_REFERENCE.md`
+   §7, "i work so i can eat" = `Anga kam ka·a jedakode anga cha·na
+   man·gen`, previously listed in §8 as UNVERIFIED/pattern-logic-only,
+   `jedakode` itself glossed only as a tentative "since/because"
+   connector). This new, independently-elicited citation validates that
+   earlier guess's *shape* (verb+ode... jedakode... man·gen) without
+   validating the specific old sentence itself — the old sentence is
+   still not directly cited, only the pattern it guessed at.
+
+**Not asserted:** whether `jedakode` and `maikai` are freely
+interchangeable in all purpose contexts, or whether there's a
+register/formality split beyond "these days X is more common than Y" (no
+minimal-pair evidence either way). Not asserted: any resolution of the
+`-na` (NV-111) vs `jedakode`/`maikai` relationship — do they compose,
+alternate, or mark different clause types. Still open, not guessed at.
+
+**New tensions flagged, NOT resolved:** the market/rice sentence uses
+`merong` for "rice" against the existing dictionary's `mi`; the
+study-hard sentence's `Gisik nange poraibo` doesn't match the existing
+dictionary's `study`=`po·ri·a`. Both recorded as open tensions in the new
+dictionary rows' notes, same discipline as RULE-038's `sak·sa` tension —
+not silently merged or assumed synonymous.
+
+**Action taken:**
+- `master_dictionary.json`: added `"so that"` → `"Jedakode"`
+  (VERIFIED/HIGH, general); `"i went to the market so that i could buy
+  rice"` → the full sentence (VERIFIED/HIGH, sentences); `"study hard so
+  that you can be successful"` → the full sentence (VERIFIED/HIGH,
+  sentences). 3 new rows total.
+- `docs/GARO_GRAMMAR_REFERENCE.md`: updated §7 in place (per the file's
+  own "update in place, don't append dated sections" rule) — `jedakode`
+  upgraded from tentative "since/because" to VERIFIED/HIGH "so that/in
+  order that", both new sentences added, `gita` explicitly left
+  untouched/still unverified, rice/study tensions flagged. §8's
+  "i went to the market to buy rice" unverified-item line updated to
+  note the near-equivalent native evidence now exists (engine
+  location-noun-dropped bug status not re-verified this session).
+
+**Duplicate-representation check (Rule 8):** `corrections.json` already
+carries `"i work so i can eat"` → `jedakode...man·gen` and `"i work so
+that i can eat"` → the `gita` alternate (both still unverified
+pattern-logic, unaffected/unchanged by this entry — neither of those
+exact English keys was re-sent, so neither is promoted). No entry for any
+of the 3 new keys added this session; nothing to sync there.
+`phrase_maps.js` checked, no relevant entries.
+
+**Runtime Handoff:** None — no engine code touched, no live construction
+path affected (dictionary-only + connector reference doc).
+
+---

@@ -12,7 +12,7 @@ dependencies:
     name: "Yes/No Question Particle -ma Joins Directly to the Verb"
     note: "RULE-048 defines where RULE-046 does NOT apply — question-word questions are the excluded class"
 claims:
-  - scope: "-ma is restricted to polar (yes/no) questions; question-word questions never take it, across at least 6 distinct question words so far attested"
+  - scope: "-ma is restricted to polar (yes/no) questions; question-word questions never take it, across at least 7 distinct question words so far attested"
     status: verified
     confidence: high
 examples:
@@ -23,8 +23,9 @@ examples:
   - "Na·a maiko cha·aha? = \"What did you eat?\" (maiko, no -ma) — NV-121"
   - "Na·a bachi re·anga? = \"Where did you go?\" (bachi, no -ma) — NV-121"
   - "Na·a badiako ra·aha? = \"Which one did you take?\" (badiako, no -ma) — NV-121"
+  - "(Na·a) Bano dongenga? = \"Where are you staying?\" (bano, stationary 'where', no -ma) — NV-125"
 counterexamples:
-  note: "None found. 11 attested question-word sentences (7 from NV-113, 4 from NV-121), zero take -ma."
+  note: "None found. 12 attested question-word sentences (7 from NV-113, 4 from NV-121, 1 from NV-125), zero take -ma."
 launch_priority:
   - scope: "all attested question-word forms (mai-family, badita, sawa, maiko, bachi, badiako)"
     tier: P1
@@ -36,18 +37,21 @@ launch_priority:
       Finding 2/3) as a paraphrase-breaks-badly gap, not yet picked up
       for this specific rule (Claude B's NV-120 fix addressed the
       polar-question `-ma` side, not this question-word side).
-  - scope: "bano (stationary 'where') and other untested question words"
-    tier: P2
-    note: "Not attested — very likely the same behavior as bachi, but not asserted without its own citation"
+  - scope: "other untested question words beyond the 7 now attested (mai-family, badita, sawa, maiko, bachi, badiako, bano)"
+    tier: P3
+    note: "No specific untested question word currently flagged; revisit if a new one surfaces in relay evidence"
 native_notes: >-
   NV-113 (2026-09-02, internal-audit re-read of already-transmitted
   evidence, no new native transmission needed that session) established
   the core pattern for mai-family words and badita. NV-121 (2026-09-03,
   direct Thangseng relay via Project Owner/Tridip) extended it to sawa,
-  maiko, bachi, and badiako. Originally mislabeled "RULE-047 (new)" in
-  NV-113's own text — a numbering collision with the already-assigned
-  RULE-047 (comitative -ming, 2026-08-30) that was never actually filed
-  under that number. Corrected and formalized here as RULE-048.
-last_updated: "2026-09-03"
-updated_by: "Claude A"
-source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-113, NV-121"
+  maiko, bachi, and badiako, explicitly leaving bano (stationary "where")
+  untested pending its own citation. NV-125 (2026-09-03/04, direct
+  Thangseng relay) supplied that citation, closing the gap. Originally
+  mislabeled "RULE-047 (new)" in NV-113's own text — a numbering
+  collision with the already-assigned RULE-047 (comitative -ming,
+  2026-08-30) that was never actually filed under that number. Corrected
+  and formalized here as RULE-048.
+last_updated: "2026-09-04"
+updated_by: "Claude B"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-113, NV-121, NV-125"

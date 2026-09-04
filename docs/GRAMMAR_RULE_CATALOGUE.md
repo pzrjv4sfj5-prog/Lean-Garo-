@@ -838,10 +838,10 @@ wire in beyond literal-match handling of these three sentences.
 
 ### RULE-048 — Question-Word Questions Do Not Take the `-ma` Particle
 **Description:** Questions built with an explicit question word (who/what/where/which, etc.) do not take the yes/no question particle `-ma` (RULE-046). The particle marks polar (yes/no) questions specifically; a question word already marks the sentence as a question, so `-ma` is not layered on top of it.
-**Examples:** `Maina na·a ka·dinga?` = "Why are you laughing?"; `Na·a badita cha·gimin?` = "How much did you eat?"; `Sawa re·baa?` = "Who came?"; `Na·a maiko cha·aha?` = "What did you eat?"; `Na·a bachi re·anga?` = "Where did you go?"; `Na·a badiako ra·aha?` = "Which one did you take?" — 11 attested sentences total across `mai`-family words, `badita`, `sawa`, `maiko`, `bachi`, and `badiako`.
+**Examples:** `Maina na·a ka·dinga?` = "Why are you laughing?"; `Na·a badita cha·gimin?` = "How much did you eat?"; `Sawa re·baa?` = "Who came?"; `Na·a maiko cha·aha?` = "What did you eat?"; `Na·a bachi re·anga?` = "Where did you go?"; `Na·a badiako ra·aha?` = "Which one did you take?"; `(Na·a) Bano dongenga?` = "Where are you staying?" — 12 attested sentences total across `mai`-family words, `badita`, `sawa`, `maiko`, `bachi`, `badiako`, and `bano`.
 **Counterexamples:** None found.
 **Dependencies:** RULE-046 (Yes/No Question Particle `-ma`) — RULE-048 defines the excluded class where RULE-046 does not apply.
-**Native Notes:** NV-113 (2026-09-02) established the pattern for `mai`-family words and `badita`. NV-121 (2026-09-03, direct Thangseng relay) extended it to `sawa`, `maiko`, `bachi`, and `badiako`. `bano` (stationary "where") and other question words remain untested.
+**Native Notes:** NV-113 (2026-09-02) established the pattern for `mai`-family words and `badita`. NV-121 (2026-09-03, direct Thangseng relay) extended it to `sawa`, `maiko`, `bachi`, and `badiako`, leaving `bano` (stationary "where") explicitly flagged untested. NV-125 (2026-09-03/04, direct Thangseng relay) supplied that citation — no other question words currently flagged untested.
 **Validation Status:** Verified.
-**Confidence:** High, for the 6 question words directly attested. Not generalized further without evidence.
+**Confidence:** High, for the 7 question words directly attested. Not generalized further without evidence.
 **Launch Priority:** P1 — no live code path yet (all current question output is exact-phrase lookup, not general construction); flagged to Claude B.

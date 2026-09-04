@@ -4029,5 +4029,9 @@
   "where did you go?": "sentences",
   "which one did you take?": "sentences",
   "two people": "general",
-  "three people": "general"
+  "three people": "general",
+  "where are you staying?": "sentences",
+  "so that": "general",
+  "i went to the market so that i could buy rice": "sentences",
+  "study hard so that you can be successful": "sentences"
 }
