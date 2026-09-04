@@ -30,7 +30,7 @@ examples:
   - "achak mang·sa=\"one dog\", achak mang·gni=\"two dogs\""
   - "do·o mang·gni=\"two chicken\" (do·o=\"chicken\", NOT a number or generic animal word — see RC-CANDIDATE-022/NV-025 for the corruption this caused when the noun was dropped)"
   - "na·tok mang·gittam=\"three fish\""
-  - "manderang sak·sa=\"one person\", skigipa sak·gni=\"two teachers\""
+  - "manderang saksa=\"one person\", skigipa sakgni=\"two teachers\" (sak takes NO raka dot before the number suffix — corrected 2026-09-03, see NV-124; unlike mang/king/gong which do take the dot)"
   - "ki·tap king·sa=\"one book\", ki·tap king·gittam=\"three books\""
   - "kettal ge·gni=\"two knives\""
   - "do·a mang·chiking=\"ten birds\" (do·a=\"bird\", distinct from do·o=\"chicken\" — a real minimal pair)"
@@ -68,7 +68,19 @@ native_notes: >-
   2026-08-01 - "with fruits, rong is the preferred prefix because they
   are roundish in shape, e.g., apple rongsa; te·gatchu rongbonga... and
   for alcohol is rong and in Garo alcohol is chu (new word)". See
-  NV-048.
-last_updated: "2026-07-26"
+  NV-048. NV-124 (2026-09-03): raw WhatsApp transcript from the
+  original NV-072/NV-073 relay (2026-08-13, Tridip/Thangseng)
+  re-supplied by Project Owner shows "chattro saksa" (student) and
+  "mande saksa" (person, "no raka in mande" per Thangseng's own
+  annotation) with no dot between sak and the number suffix, while the
+  same transcript uses a dot-equivalent character for gong ("tangka
+  bisil gong·sa"). This corrects the raka dot previously (and
+  incorrectly) inserted into all sak-classifier entries when NV-072/
+  NV-073 were first processed. sak now confirmed to take NO raka dot
+  before the number suffix, unlike mang/king/gong. Applied directly
+  across all 65 affected sak-classifier entries in
+  master_dictionary.json plus 3 children-counting entries in
+  corrections.json (Rule 8: fixed directly, not allowlisted).
+last_updated: "2026-09-03"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-038"

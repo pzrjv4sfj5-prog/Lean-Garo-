@@ -23486,7 +23486,7 @@
   },
   {
     "english": "one person",
-    "garo": "mande sak·sa",
+    "garo": "mande saksa",
     "pos": null,
     "category": "numbers",
     "classifier": null,
@@ -72137,7 +72137,7 @@
   },
   {
     "english": "eleven person",
-    "garo": "mande sak·Chi·sa",
+    "garo": "mande sakChi·sa",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72146,7 +72146,7 @@
   },
   {
     "english": "twelve person",
-    "garo": "mande sak·Chi·gni",
+    "garo": "mande sakChi·gni",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72155,7 +72155,7 @@
   },
   {
     "english": "thirteen person",
-    "garo": "mande sak·Chi·gittam",
+    "garo": "mande sakChi·gittam",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72164,7 +72164,7 @@
   },
   {
     "english": "fourteen person",
-    "garo": "mande sak·Chi·bri",
+    "garo": "mande sakChi·bri",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72173,7 +72173,7 @@
   },
   {
     "english": "fifteen person",
-    "garo": "mande sak·Chi·bonga",
+    "garo": "mande sakChi·bonga",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72182,7 +72182,7 @@
   },
   {
     "english": "sixteen person",
-    "garo": "mande sak·Chi·dok",
+    "garo": "mande sakChi·dok",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72191,7 +72191,7 @@
   },
   {
     "english": "seventeen person",
-    "garo": "mande sak·Chi·sni",
+    "garo": "mande sakChi·sni",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72200,7 +72200,7 @@
   },
   {
     "english": "eighteen person",
-    "garo": "mande sak·Chi·chet",
+    "garo": "mande sakChi·chet",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72209,7 +72209,7 @@
   },
   {
     "english": "nineteen person",
-    "garo": "mande sak·Chi·sku",
+    "garo": "mande sakChi·sku",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72790,7 +72790,7 @@
   },
   {
     "english": "two person",
-    "garo": "mande sak·gni",
+    "garo": "mande sakgni",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72799,7 +72799,7 @@
   },
   {
     "english": "three person",
-    "garo": "mande sak·gittam",
+    "garo": "mande sakgittam",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72808,7 +72808,7 @@
   },
   {
     "english": "four person",
-    "garo": "mande sak·bri",
+    "garo": "mande sakbri",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72817,7 +72817,7 @@
   },
   {
     "english": "five person",
-    "garo": "mande sak·bonga",
+    "garo": "mande sakbonga",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72826,7 +72826,7 @@
   },
   {
     "english": "six person",
-    "garo": "mande sak·dok",
+    "garo": "mande sakdok",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72835,7 +72835,7 @@
   },
   {
     "english": "seven person",
-    "garo": "mande sak·sni",
+    "garo": "mande saksni",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72844,7 +72844,7 @@
   },
   {
     "english": "eight person",
-    "garo": "mande sak·chet",
+    "garo": "mande sakchet",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72853,7 +72853,7 @@
   },
   {
     "english": "nine person",
-    "garo": "mande sak·sku",
+    "garo": "mande saksku",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72862,7 +72862,7 @@
   },
   {
     "english": "ten person",
-    "garo": "mande sak·chiking",
+    "garo": "mande sakchiking",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -72871,7 +72871,7 @@
   },
   {
     "english": "twenty person",
-    "garo": "mande sak·Kolgrik",
+    "garo": "mande sakKolgrik",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -74435,7 +74435,7 @@
   },
   {
     "english": "one teacher",
-    "garo": "Skigipa sak·sa",
+    "garo": "Skigipa saksa",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74444,7 +74444,7 @@
   },
   {
     "english": "two teacher",
-    "garo": "Skigipa sak·gni",
+    "garo": "Skigipa sakgni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74453,7 +74453,7 @@
   },
   {
     "english": "three teacher",
-    "garo": "Skigipa sak·gittam",
+    "garo": "Skigipa sakgittam",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74462,7 +74462,7 @@
   },
   {
     "english": "four teacher",
-    "garo": "Skigipa sak·bri",
+    "garo": "Skigipa sakbri",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74471,7 +74471,7 @@
   },
   {
     "english": "five teacher",
-    "garo": "Skigipa sak·bonga",
+    "garo": "Skigipa sakbonga",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74480,7 +74480,7 @@
   },
   {
     "english": "six teacher",
-    "garo": "Skigipa sak·dok",
+    "garo": "Skigipa sakdok",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74489,7 +74489,7 @@
   },
   {
     "english": "seven teacher",
-    "garo": "Skigipa sak·sni",
+    "garo": "Skigipa saksni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74498,7 +74498,7 @@
   },
   {
     "english": "eight teacher",
-    "garo": "Skigipa sak·chet",
+    "garo": "Skigipa sakchet",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74507,7 +74507,7 @@
   },
   {
     "english": "nine teacher",
-    "garo": "Skigipa sak·sku",
+    "garo": "Skigipa saksku",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74516,7 +74516,7 @@
   },
   {
     "english": "ten teacher",
-    "garo": "Skigipa sak·chiking",
+    "garo": "Skigipa sakchiking",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74525,7 +74525,7 @@
   },
   {
     "english": "eleven teacher",
-    "garo": "Skigipa sak·Chi·sa",
+    "garo": "Skigipa sakChi·sa",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74534,7 +74534,7 @@
   },
   {
     "english": "twelve teacher",
-    "garo": "Skigipa sak·Chi·gni",
+    "garo": "Skigipa sakChi·gni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74543,7 +74543,7 @@
   },
   {
     "english": "thirteen teacher",
-    "garo": "Skigipa sak·Chi·gittam",
+    "garo": "Skigipa sakChi·gittam",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74552,7 +74552,7 @@
   },
   {
     "english": "fourteen teacher",
-    "garo": "Skigipa sak·Chi·bri",
+    "garo": "Skigipa sakChi·bri",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74561,7 +74561,7 @@
   },
   {
     "english": "fifteen teacher",
-    "garo": "Skigipa sak·Chi·bonga",
+    "garo": "Skigipa sakChi·bonga",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74570,7 +74570,7 @@
   },
   {
     "english": "sixteen teacher",
-    "garo": "Skigipa sak·Chi·dok",
+    "garo": "Skigipa sakChi·dok",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74579,7 +74579,7 @@
   },
   {
     "english": "seventeen teacher",
-    "garo": "Skigipa sak·Chi·sni",
+    "garo": "Skigipa sakChi·sni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74588,7 +74588,7 @@
   },
   {
     "english": "eighteen teacher",
-    "garo": "Skigipa sak·Chi·chet",
+    "garo": "Skigipa sakChi·chet",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74597,7 +74597,7 @@
   },
   {
     "english": "nineteen teacher",
-    "garo": "Skigipa sak·Chi·sku",
+    "garo": "Skigipa sakChi·sku",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74606,7 +74606,7 @@
   },
   {
     "english": "twenty teacher",
-    "garo": "Skigipa sak·Kolgrik",
+    "garo": "Skigipa sakKolgrik",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74624,7 +74624,7 @@
   },
   {
     "english": "one student",
-    "garo": "Chattro sak·sa",
+    "garo": "Chattro saksa",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74633,7 +74633,7 @@
   },
   {
     "english": "two student",
-    "garo": "Chattro sak·gni",
+    "garo": "Chattro sakgni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74642,7 +74642,7 @@
   },
   {
     "english": "three student",
-    "garo": "Chattro sak·gittam",
+    "garo": "Chattro sakgittam",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74651,7 +74651,7 @@
   },
   {
     "english": "four student",
-    "garo": "Chattro sak·bri",
+    "garo": "Chattro sakbri",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74660,7 +74660,7 @@
   },
   {
     "english": "five student",
-    "garo": "Chattro sak·bonga",
+    "garo": "Chattro sakbonga",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74669,7 +74669,7 @@
   },
   {
     "english": "six student",
-    "garo": "Chattro sak·dok",
+    "garo": "Chattro sakdok",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74678,7 +74678,7 @@
   },
   {
     "english": "seven student",
-    "garo": "Chattro sak·sni",
+    "garo": "Chattro saksni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74687,7 +74687,7 @@
   },
   {
     "english": "eight student",
-    "garo": "Chattro sak·chet",
+    "garo": "Chattro sakchet",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74696,7 +74696,7 @@
   },
   {
     "english": "nine student",
-    "garo": "Chattro sak·sku",
+    "garo": "Chattro saksku",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74705,7 +74705,7 @@
   },
   {
     "english": "ten student",
-    "garo": "Chattro sak·chiking",
+    "garo": "Chattro sakchiking",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74714,7 +74714,7 @@
   },
   {
     "english": "eleven student",
-    "garo": "Chattro sak·Chi·sa",
+    "garo": "Chattro sakChi·sa",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74723,7 +74723,7 @@
   },
   {
     "english": "twelve student",
-    "garo": "Chattro sak·Chi·gni",
+    "garo": "Chattro sakChi·gni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74732,7 +74732,7 @@
   },
   {
     "english": "thirteen student",
-    "garo": "Chattro sak·Chi·gittam",
+    "garo": "Chattro sakChi·gittam",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74741,7 +74741,7 @@
   },
   {
     "english": "fourteen student",
-    "garo": "Chattro sak·Chi·bri",
+    "garo": "Chattro sakChi·bri",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74750,7 +74750,7 @@
   },
   {
     "english": "fifteen student",
-    "garo": "Chattro sak·Chi·bonga",
+    "garo": "Chattro sakChi·bonga",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74759,7 +74759,7 @@
   },
   {
     "english": "sixteen student",
-    "garo": "Chattro sak·Chi·dok",
+    "garo": "Chattro sakChi·dok",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74768,7 +74768,7 @@
   },
   {
     "english": "seventeen student",
-    "garo": "Chattro sak·Chi·sni",
+    "garo": "Chattro sakChi·sni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74777,7 +74777,7 @@
   },
   {
     "english": "eighteen student",
-    "garo": "Chattro sak·Chi·chet",
+    "garo": "Chattro sakChi·chet",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74786,7 +74786,7 @@
   },
   {
     "english": "nineteen student",
-    "garo": "Chattro sak·Chi·sku",
+    "garo": "Chattro sakChi·sku",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -74795,7 +74795,7 @@
   },
   {
     "english": "twenty student",
-    "garo": "Chattro sak·Kolgrik",
+    "garo": "Chattro sakKolgrik",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -76573,7 +76573,7 @@
   },
   {
     "english": "i have two children",
-    "garo": "Ang·o bi·sa sak·gni donga",
+    "garo": "Ang·o bi·sa sakgni donga",
     "category": "family",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — supplies the live VERIFIED replacement for the 2026-08-07 SUPERSEDED 'Ang·o gini de donga' entry, which previously had no cited live successor.",
     "confidence": "verified_high"
@@ -77931,7 +77931,7 @@
   },
   {
     "english": "two people",
-    "garo": "mande sak·gni",
+    "garo": "mande sakgni",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -77940,7 +77940,7 @@
   },
   {
     "english": "three people",
-    "garo": "mande sak·gittam",
+    "garo": "mande sakgittam",
     "pos": null,
     "category": "general",
     "classifier": "sak",
@@ -77949,7 +77949,7 @@
   },
   {
     "english": "two students",
-    "garo": "Chattro sak·gni",
+    "garo": "Chattro sakgni",
     "pos": null,
     "category": "education",
     "classifier": "sak",
@@ -77958,7 +77958,7 @@
   },
   {
     "english": "three students",
-    "garo": "Chattro sak·gittam",
+    "garo": "Chattro sakgittam",
     "pos": null,
     "category": "education",
     "classifier": "sak",

@@ -907,7 +907,38 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-03E (Claude A): NV-123 -- Project
+  pending_thangseng_questions: '2026-09-03F (Claude A): NV-124 --
+    Project Owner re-supplied the raw WhatsApp transcript underlying
+    NV-072/NV-073 (2026-08-13). It shows "chattro saksa"/"mande saksa"
+    (Thangseng''s own annotation: "no raka in mande") with NO dot
+    between sak and the number suffix, vs. a dot-equivalent character
+    used for gong ("gong\u2022sa") in the same transcript. This
+    corrects a transcription error from when NV-072/NV-073 were first
+    processed -- the raka dot was wrongly inserted for sak. Fixed
+    directly (Rule 8, evidence is a direct primary-source quote, no
+    force-resolution needed): all 65 sak-classifier rows in
+    master_dictionary.json (person/teacher/student 1-20, two/three
+    people, two/three students) plus 3 children-counting rows in
+    corrections.json, RULE-038.yaml + GRAMMAR_RULE_CATALOGUE.md
+    updated, 2 stale test assertions fixed to match. Live translate()
+    verified correct for all affected dictionary phrases. NOT
+    resolved: RAKA_CLASSIFIERS in src/garo_classifier.js still
+    includes ''sak'' -- classifier-composition FALLBACK (phrases with
+    no exact dictionary match) still produces the stale dotted form.
+    Engine code, Claude B territory -- flagged with a regression-test
+    comment in tests/unit/rong_classifier.test.js, not touched here.
+    ALSO NOT applied from the same relay: the Me\u00b7asa=boy/
+    Me\u00b7chik=girl claim from the Project Owner''s prior message --
+    checked against this same 2026-08-13 transcript and the male-vs-
+    female-student sub-question was never actually answered by
+    Thangseng in it (transcript only gives "one student = chattro
+    saksa", no gendered forms). No evidence for boy/girl found in the
+    primary source; still flagged open, still contradicts existing
+    VERIFIED boy=ko\u00b7ka/girl=ko\u00b7ki and woman=Me\u00b7chik/
+    me\u00b7chik VERIFIED. Gate clean: 8218/8218, 9/9, 314/314, 0 new
+    violations.
+    ---
+    2026-09-03E (Claude A): NV-123 -- Project
     Owner relayed Thangseng confirmation of the already-VERIFIED
     NOUN+sak+NUMBER pattern for chatro (student) and mande (person)
     generally, 1-3. Mechanical part added no new evidence (values already
