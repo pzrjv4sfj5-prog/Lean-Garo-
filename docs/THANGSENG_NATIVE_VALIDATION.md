@@ -6458,3 +6458,50 @@ dictionary.json`'s `"Menggo"` row is already tagged SUPERSEDED
 (2026-08-01 corpus audit, citing the VERIFIED `meng·gong` sibling), and
 both `compiled_dict.json` and live `translate("cat")` already correctly
 ship `meng·gong`. No action needed.
+
+## NV-134 (2026-09-06, direct Project Owner relay) — `cat`: FLAGGED, unresolved native conflict, NOT resolved
+
+Source: Direct Project Owner confirmation of Thangseng native
+validation (verbal — Project Owner states this confirmation was
+obtained directly with Thangseng by phone/in person; no WhatsApp
+transcript or screenshot exists for it, consistent with how prior
+verbal-relay items in this project, e.g. NV-125/NV-126, were sourced).
+Recorded honestly as reported — no transcript or quotation has been
+fabricated to represent it.
+
+**Claim:** Thangseng confirmed `Menggo` = cat.
+
+**Existing evidence on the other side:** `meng·gong` carries
+VERIFIED/HIGH status and is the form actually shipping in
+`phrase_maps.js` and live `translate("cat")`. `Menggo` was marked
+SUPERSEDED specifically *because of* this — the 2026-08-01
+corpus-internal audit found both forms under the same English key and
+treated `meng·gong` as the native-preferred sibling, retiring `Menggo`
+as a legacy unannotated import (not deleted, kept for citation trail
+per standing retention policy). That audit's own provenance for why
+`meng·gong` was preferred over `Menggo` is not documented beyond
+"VERIFIED/HIGH" in the row itself — it predates NV-numbering.
+
+**Determination:** this is a direct contradiction between two
+purported Thangseng-confirmed forms for the same single-word key, with
+no supporting sentence context, collocation, or dialect note on either
+side to arbitrate between them (same shape as the NV-089 `yes`
+Oe/Am conflict and the NV-089 `sit`/`i understand` conflicts — in each
+of those, a new direct citation contradicting an existing VERIFIED
+entry was left OPEN rather than silently flipped or silently ignored).
+Per that same precedent: **left as an unresolved native conflict.**
+This is not ruled a supersession, not ruled a preferred/canonical pick,
+and not ruled a distinct variant/dialect split — none of those are
+supported by what's on record; ruling any of them would be guessing.
+
+**No dictionary or runtime change made.** `meng·gong` remains
+VERIFIED/HIGH and the shipping value; `Menggo` remains SUPERSEDED, not
+deleted (deleting either side of a live, unreconciled conflict would
+destroy the citation trail the retention policy exists to protect).
+
+**Needed to close this:** an explicit reconciling question back to
+Thangseng — e.g. "for a cat, is it `meng·gong` or `Menggo`, and if
+both are known, is one more common, older, regional, or specific to a
+sub-type of cat?" — the same kind of explicit follow-up NV-089's open
+items (yes, sit, i understand) are still waiting on. Flagged for the
+next relay batch, not resolved here.
