@@ -313,7 +313,67 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-02F (Claude A, MIGRATE-ONLY session, no linguistic/data/
+  next_action: '2026-09-05 (Claude A, resumed from CLAUDE_A_SESSION_MIGRATION_20260904D.md,
+    "close remaining native-evidence items" directive): resync verified clean
+    (HEAD==origin/main==d066005 on arrival). CLOSED per already-supplied
+    Thangseng evidence, no new relay needed: NV-130 (renumbered from
+    collision NV-127 -- boy/girl/man/woman gendered pair), NV-131
+    (renumbered from collision NV-128 -- purpose -na via "came to eat/work",
+    companion to NV-111''s "went" pair), NV-132 (renumbered from collision
+    NV-129 -- adjective order for the two specific "the big red
+    house"/"the small white house" examples, promoted OPEN->VERIFIED/HIGH,
+    explicitly NOT generalized to a universal rule per Project Owner
+    instruction). REAL BUG FOUND AND FIXED: d066005 (prior session) assigned
+    NV-127/128/129 to 3 findings without re-pulling origin/main first --
+    those numbers were already canonically in use by Claude B''s own
+    NV-124/125/126->127/128/129 renumbering (merge 009df0f, same day) for 3
+    *different* findings (only-X 3rd-person scope -- still open; bano+-ma;
+    jedakode/maikai purpose -- both already closed). Resolved by renumbering
+    the side with no existing canonical THANGSENG_NATIVE_VALIDATION.md entry
+    (d066005''s 3 findings, now 130/131/132) rather than touching Claude B''s
+    already-logged 127/128/129. Added full NV-130/131/132 canonical entries
+    (previously missing entirely) plus a numbering-collision-correction note,
+    all to THANGSENG_NATIVE_VALIDATION.md. RECONFIRMED CLOSED, no action
+    needed (already correctly closed in canonical docs, verified by direct
+    read): "only X" first-person sign-off (NV-112/114, implemented in
+    grammarEngine.js, Claude B territory, not dictionary rows), question-word
+    +(no)-ma (NV-113/121/RULE-047), ama/man·a identity (NV-117, both forms
+    tied-VERIFIED, no preference), human/people classifier sak (NV-105,
+    RULE-038 -- no engineering change made, RAKA_CLASSIFIERS left to Claude
+    B). NV-109 bare-form tension: left exactly as already documented (CLOSED
+    as an NV entry, but the RULE-038 "noun always stated" tension is
+    deliberately still flagged/unresolved in the entry itself, not
+    force-resolved -- no change made, this was already correct). Chattri/
+    Chattro sanity check: reviewed directly (all 1-20 rows both genders) --
+    no contradiction found with the new Me·asa/Me·chik pair, nothing to fix.
+    Gate after all master_dictionary.json edits: 8278/8278 entries, 9/9
+    grammatical corrections, 314/314 unit tests, repository-intelligence.js
+    0 new violations. Live-verified via translate(): "the big red house",
+    "the small white house", "i came to eat", "i came to work" all
+    exact-phrase 0.98. No engine code touched. PUSHED AND VERIFIED: commit
+    f65babc rejected on first push (Claude B pushed fb31b7c -- NV-124
+    RAKA_CLASSIFIERS sak-removal + stale test fix -- in the interim);
+    rebased clean (no conflicts, no file overlap), rebuilt (byte-identical
+    artifacts), pushed fb31b7c..ad8e819 fast-forward. Final state confirmed
+    same session: HEAD ad8e819 == origin/main (git fetch, no further
+    remote movement), git status clean, scripts/runtime-error-sweep.mjs run
+    in full (14,767 translate() calls across every compiled key + naive
+    plurals + counted-noun forms + structural/type-safety edge cases + full
+    exported API surface) -- 0 errors. This is a genuine stopping point,
+    not a mid-task pause. STILL OPEN for next Claude A (no native evidence
+    supplied to close these): RULE-038/NV-109 bare-form tension itself
+    (deliberately left flagged, do not force-resolve); two Claude-B-flagged
+    word tensions from NV-129/jedakode-maikai session (merong vs mi for
+    rice; Gisik nange poraibo vs po·ri·a for study) -- no Thangseng
+    question sent yet; Claude B''s NV-127 (only-X third-person scope) --
+    genuinely blocked on an actual third-person sentence, not invented as
+    closed. RAKA_CLASSIFIERS sak-removal item is CLOSED -- Claude B fixed
+    it this same session (fb31b7c), absorbed via rebase, no longer open.
+    Next Claude A: before assigning any new NV number, check the highest
+    number actually in THANGSENG_NATIVE_VALIDATION.md after fetch/pull --
+    the collision fixed this session happened because a prior session
+    assigned numbers without re-checking post-pull state.'
+  next_action_prior_20260905: '2026-09-02F (Claude A, MIGRATE-ONLY session, no linguistic/data/
     engine work performed): resynced against origin/main (fast-forwarded one new
     Claude B docs-only commit, a4c91c3 -- corrected a stale Finding-1-status claim,
     no code/data change). Wrote

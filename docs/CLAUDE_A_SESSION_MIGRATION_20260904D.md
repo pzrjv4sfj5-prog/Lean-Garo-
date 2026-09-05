@@ -1,5 +1,14 @@
 # Claude A Session Migration — 2026-09-04D
 
+> **Correction, 2026-09-05:** This doc's NV-127/128/129 collided with
+> Claude B's own NV-127/128/129 (merge `009df0f`, same day, already
+> canonical in `THANGSENG_NATIVE_VALIDATION.md`). Renumbered to
+> NV-130/131/132 respectively — see
+> `docs/CLAUDE_A_SESSION_MIGRATION_20260905.md` and the
+> "Numbering-collision correction" entry in
+> `docs/THANGSENG_NATIVE_VALIDATION.md`. This file is left otherwise
+> unedited as the historical record of what happened at the time.
+
 ## Resume sequence (Rule 10)
 Continuation of same session (2026-09-04B close, HEAD `7acf794`,
 verified clean/pushed). No new resync needed — no other Claude
