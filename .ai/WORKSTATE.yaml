@@ -313,7 +313,20 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260905B.md - THIS IS THE
+  next_action: 'NV-134 (2026-09-06, cat): Project Owner relayed a new
+    direct verbal Thangseng confirmation that Menggo=cat, contradicting
+    the existing VERIFIED/HIGH meng·gong (which Menggo was marked
+    SUPERSEDED against on 2026-08-01). No supporting context on either
+    side to arbitrate a single-word contradiction. Per NV-089 precedent
+    (yes Oe/Am, sit, i-understand - conflicting direct citations left
+    OPEN, not silently flipped), recorded as an unresolved native
+    conflict in docs/THANGSENG_NATIVE_VALIDATION.md, NOT resolved either
+    direction. meng·gong still ships live, unchanged; Menggo still
+    SUPERSEDED, not deleted. Needs an explicit reconciling question back
+    to Thangseng (meng·gong vs Menggo - which, or is one regional/older/
+    subtype-specific) in the next relay batch before this can close.
+    -----
+    docs/CLAUDE_A_SESSION_MIGRATION_20260905B.md - THIS IS THE
     AUTHORITATIVE MIGRATION DOC, written 2026-09-05B (same-day follow-up
     session). NV-133 (Thangseng relay): mi=cooked rice, merong=uncooked
     rice, resolving the merong/mi tension NV-129 flagged open; also a new
