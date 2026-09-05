@@ -313,8 +313,29 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906B.md - THIS IS THE
-    AUTHORITATIVE MIGRATION DOC as of 2026-09-06B. Resumed from
+  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906C.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC as of 2026-09-06C. Resumed from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260906B.md (HEAD 788004c ==
+    origin/main on arrival, clean). Actioned handoff item 3 (answer
+    POS reconfirmation): re-verified Aganchaka(verb)/Aganchakani(noun)
+    is a genuine two-form split, confirmed independently TWICE by
+    direct native relay (NV-077, 2026-08-14 and 2026-08-15/16) --
+    not a single-citation tie. New finding, not previously flagged:
+    corrections.json''s "answer"->"Aganchaka" override ships the verb
+    at runtime for the bare key, while master_dictionary.json''s own
+    compiled bare "answer" key is the noun form Aganchakani -- both are
+    individually correct per the confirmed split, but the bare-key
+    ambiguity itself is exactly what Claude B''s POS-disambiguation fix
+    needs to resolve by context. Addendum written to NV-077 in
+    docs/THANGSENG_NATIVE_VALIDATION.md. No dictionary/runtime value
+    changed -- pure documentation/confirmation, engineering scope for
+    the actual fix. Items 4-6 and all standing carried-forward items
+    UNTOUCHED this session, one-task-at-a-time. Gate: docs-only change,
+    re-ran full gate anyway -- node prepare-data.js 8280 unique entries
+    (unchanged), node test-dictionary.js 8280/8280 valid 9/9 corrections,
+    node --test tests/unit/*.test.js 314/314, node repository-intelligence.js
+    0 new violations. Pushed clean, HEAD==origin/main verified via git fetch.
+  next_action_prior_20260906c: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906B.md - Resumed from
     docs/CLAUDE_A_SESSION_MIGRATION_20260906.md (HEAD aaf7774 ==
     origin/main on arrival, clean). Read
     docs/HANDOFF_CLAUDE_A_20260906.md (Claude C''s newest audit,
