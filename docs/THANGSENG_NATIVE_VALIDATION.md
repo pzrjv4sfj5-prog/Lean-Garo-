@@ -6264,3 +6264,116 @@ of the 3 new keys added this session; nothing to sync there.
 path affected (dictionary-only + connector reference doc).
 
 ---
+
+## Numbering-collision correction (2026-09-05, Claude A)
+
+Commit `d066005` (2026-09-04D session close) assigned **NV-127/128/129**
+to three unrelated findings (boy/girl/man/woman gendered pair; purpose
+`-na` via "came" sentences; adjective order for two specific "the big
+red house"/"the small white house" examples) — but those numbers were
+already in canonical use as of the immediately-prior merge `009df0f`
+(Claude B's own NV-124/125/126 renumbered to 127/128/129: only-X
+third-person scope, `bano`+`-ma`, `jedakode`/`maikai` purpose — all
+already logged above under those headings). The 2026-09-04D session did
+not `git pull`/re-check the fresh `origin/main` before assigning numbers,
+repeating the exact collision pattern `RULE-048.yaml`'s `native_notes`
+and Claude B's own 2026-09-04 migration doc had already flagged once
+this week. Resolved by renumbering the *never-yet-logged-in-this-file*
+side (Claude A's d066005 findings, which had no canonical
+`THANGSENG_NATIVE_VALIDATION.md` entries of their own yet) rather than
+touching the already-canonical Claude B entries above:
+- boy/girl/man/woman: NV-127 → **NV-130**
+- purpose `-na` ("came to eat/work"): NV-128 → **NV-131**
+- adjective order ("the big red house"/"the small white house"): NV-129 → **NV-132**
+
+All affected `master_dictionary.json` `notes` fields updated in place
+(citation text only — no `english`/`garo` values changed). Highest NV
+number now in use: **NV-132**. Canonical entries for each follow below.
+
+---
+
+## NV-130 — Gendered pair `Me·asa`/`Me·chik` (male/female, man/woman) confirmed — CLOSED (2026-09-04, renumbered 2026-09-05)
+
+**Source:** Thangseng, direct relay via Tridip, WhatsApp 4/9/2026 1:53–1:55pm.
+
+**Answer (relayed verbatim):** "Me'chik can mean both female and woman.
+Me.chikma is a married or an elderly woman... me.chik bi.sa = girl,
+me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly
+man."
+
+**Finding, CLOSED:** `Me·asa`=male/man, `Me·chik`=female/woman,
+`me·apa`=married/elderly man, `Me·chikma`=married/elderly woman,
+`me·a bi·sa`=boy, `me·chik bi·sa`=girl. `bi·sa` keeps its existing
+"kid/child" sense — `me·a`/`me·chik` are the roots doing the gendering
+in the compound, per Project Owner clarification the same session.
+
+**Action taken:** Promoted existing `man`=`Me·asa` and `man (male)`=
+`me·a` from unverified to VERIFIED/HIGH. Added new rows: `male`=
+`Me·asa`, `female`=`Me·chik`, `married or elderly man`=`me·apa`,
+`married or elderly woman`=`Me·chikma`, `boy`=`me·a bi·sa`, `girl`=
+`me·chik bi·sa` (all VERIFIED/HIGH). The new `boy`/`girl` compound rows
+are tagged `variant/VERIFIED/HIGH`, alongside the pre-existing
+`Boy`=`ko·ka`/`Girl`=`ko·ki` rows (kept as the shipped primary via
+array-order tie-break) — new compositional forms ship as genuine
+VERIFIED alternates, not replacements. Does not touch the unrelated
+`Chattro`/`Chattri` (student) gendered pair — reviewed 2026-09-05, no
+contradiction found (both pairs independently use `sak`+NUMBER, no
+overlap in root or sense).
+
+**Runtime Handoff:** None new — the `repository-intelligence.js` Check F
+runtime-cascade mismatch this surfaced (`compiled_dict.json`'s new
+`boy`/`girl` primary vs. `phrase_maps.js`'s hardcoded values) was
+resolved same-session via the variant-tag + array-reorder above.
+
+---
+
+## NV-131 — Purpose `-na` confirmed via "came" sentences (companion to NV-111's "went" pair) — CLOSED (2026-09-04, renumbered 2026-09-05)
+
+**Source:** Thangseng, direct relay via Tridip, WhatsApp 4/9/2026.
+
+**Answer (relayed verbatim):** "Anga cha·na re·baa." = I came to eat;
+"Anga kam ka·na re·baa." = I came to work; both also given with subject
+omitted ("Cha·na re·baa." / "Kam ka·na re·baa.").
+
+**Finding, CLOSED:** Confirms `-na` as the normal "to + verb" marker
+with `re·baa` ("came"), extending the already-VERIFIED NV-111 pair
+(`re·angaha`="went") to the companion motion verb. Not a duplicate of
+NV-111 — different verb ("came" vs. "went").
+
+**Action taken:** Added 4 new `master_dictionary.json` rows: `"i came to
+eat"`→`"Anga cha·na re·baa"`, `"came to eat"`→`"Cha·na re·baa"`, `"i
+came to work"`→`"Anga kam ka·na re·baa"`, `"came to work"`→`"Kam ka·na
+re·baa"`, all VERIFIED/HIGH. `RULE-009.yaml` updated with this citation.
+
+**Runtime Handoff:** None — no engine code touched. Live-verified via
+`translate()`: `"i came to eat"`→`"Anga cha·na re·baa"`, `"i came to
+work"`→`"Anga kam ka·na re·baa"`, confidence 0.98.
+
+---
+
+## NV-132 — Adjective order for two specific definite-article examples confirmed — CLOSED, narrowly scoped (2026-09-04/05)
+
+**Source:** Thangseng, direct relay via Tridip, WhatsApp 4/9/2026.
+
+**Answer (relayed verbatim):** "Dal·gipa gitchak nok." = The big red
+house. "Chon·gipa gipok nok." = The small white house.
+
+**Finding, CLOSED — narrow scope, by explicit Project Owner
+instruction:** These two sentences are native-confirmed as the natural
+renderings for exactly these requested examples. **This does NOT
+establish or imply a general/universal adjective-order rule** — no
+broader ordering claim is made or should be inferred from these two
+data points. These are different sentences from NV-110's "big red
+house" (no definite article, three tied VERIFIED orderings) — left
+un-reconciled with NV-110 on purpose; a "the"-marked sentence and a
+bare noun phrase are not assumed to pattern identically without a
+direct citation covering that specific question.
+
+**Action taken:** `"the big red house"`→`"Dal·gipa gitchak nok"` and
+`"the small white house"`→`"Chon·gipa gipok nok"` promoted from
+provisional/OPEN to VERIFIED/HIGH.
+
+**Runtime Handoff:** None — no engine code touched. Live-verified via
+`translate()`: both confidence 0.98, exact-phrase method.
+
+---
