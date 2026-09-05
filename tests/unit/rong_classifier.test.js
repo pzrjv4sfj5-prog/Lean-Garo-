@@ -7,8 +7,8 @@ import { countNoun, getClassifier, CLASSIFIER_MAP } from '../../src/garo_classif
 // fallback previously assumed. Thangseng's own typed examples
 // ("rongsa", "rongbonga") carry no raka mark, so rong is a no-raka
 // classifier (like king/jol/sak), unlike mang/ge/gong. (sak corrected
-// to no-raka 2026-09-03, NV-124 — dictionary data fixed; engine's
-// RAKA_CLASSIFIERS set still stale, see handoff comment below.)
+// to no-raka 2026-09-03, NV-124 — dictionary data fixed then; engine's
+// RAKA_CLASSIFIERS set fixed 2026-09-05, same handoff, see below.)
 
 test('rong classifier: fruit nouns resolve to rong, no raka', () => {
   assert.equal(getClassifier('fruit'), 'rong');
@@ -35,16 +35,11 @@ test('regression: ge fallback still applies to genuinely uncategorized/tool noun
 
 test('regression: existing classifier roots unaffected by rong addition', () => {
   assert.equal(countNoun('achak', 1, 'dog'), 'achak mang·sa');
-  // KNOWN GAP (NV-124, 2026-09-03, Claude A -> Claude B handoff): dictionary
-  // data now correctly has NO raka dot for sak (see master_dictionary.json,
-  // RULE-038.yaml), but RAKA_CLASSIFIERS in src/garo_classifier.js still
-  // includes 'sak', so live classifier-composition fallback (for phrases
-  // with no exact dictionary match) still produces the stale dotted form.
-  // Not fixed here — engine code is Claude B's territory. Asserting current
-  // (stale) engine behavior so the gate stays accurate about what's
-  // actually shipped; do not "fix" this assertion without removing 'sak'
-  // from RAKA_CLASSIFIERS first.
-  assert.equal(countNoun('mande', 1, 'person'), 'mande sak·sa');
+  // FIXED (NV-124 engine handoff, closed 2026-09-05): 'sak' removed from
+  // RAKA_CLASSIFIERS in src/garo_classifier.js, so the classifier-
+  // composition fallback (for phrases with no exact dictionary match)
+  // now matches the already-corrected dictionary data (no raka dot).
+  assert.equal(countNoun('mande', 1, 'person'), 'mande saksa');
   assert.equal(countNoun('ki·tap', 3, 'book'), 'ki·tap kinggittam');
   assert.equal(countNoun('tangka', 5, 'coin'), 'tangka gong·bonga');
   assert.equal(countNoun('do·a', 10, 'bird'), 'do·a mang·chiking');

@@ -1351,7 +1351,7 @@ test('"she/he has N children" applies the sak (person) classifier instead of sil
 test('"she has N children" for counts without a corrections.json entry still applies the classifier via grammar-assembly', async () => {
   const result = await translate('she has five children');
   assert.equal(result.method, 'grammar-assembly');
-  assert.equal(result.garo, 'Ua bi·sa sak·bonga·ko donga');
+  assert.equal(result.garo, 'Ua bi·sa sakbonga·ko donga');
   assert.ok(!result.garo.includes('bi·sarang'), 'should not fall back to the bare plural noun with no classifier');
 });
 
