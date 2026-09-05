@@ -313,7 +313,39 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-05 (Claude A, resumed from CLAUDE_A_SESSION_MIGRATION_20260904D.md,
+  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260905B.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC, written 2026-09-05B (same-day follow-up
+    session). NV-133 (Thangseng relay): mi=cooked rice, merong=uncooked
+    rice, resolving the merong/mi tension NV-129 flagged open; also a new
+    direct -na-purposive citation for "i went to the market to buy rice"
+    (Anga bajalchi merong brena re·anga), fully resolving
+    GARO_GRAMMAR_REFERENCE.md §8''s item (NV-129 only had a "so that"
+    near-equivalent). 4 master_dictionary.json rows touched. Separately,
+    Project Owner claimed cat=Menggo and elephant=mongma were both wrong
+    -- investigated before acting: cat was ALREADY correct (Menggo
+    already SUPERSEDED since 2026-08-01, meng·gong ships correctly, no
+    action); elephant WAS buggy but not as claimed -- mongma is actually
+    the NV-089 native-preferred VERIFIED primary, not wrong; the real bug
+    was corrections.json["elephant"] shipping a corrupted, unrelated
+    value ("buring·o", this dictionary''s "forest" root) instead of any
+    legitimate elephant citation -- fixed to mong·ma per Rule 8, no new
+    native input needed. Reviewed Claude C''s 2026-09-05B audit
+    (docs/HANDOFF_CLAUDE_A_20260905B.md, commit 7382f75) but did NOT
+    action it this session (one-task-at-a-time, Project Owner
+    instruction): flags a man·a lexical-collision question (able/finish/
+    find/get/earn/can all compile to the same string, linked to a live
+    silent-constituent-drop bug -- needs Claude A to determine genuine-
+    polysemy vs. import-artifact before any fix) and 2 of Claude B''s 34
+    slash-leak rows ("you (object)"=Nang·na/Nang·ko, "our/ours"=
+    Chingni/An·chingni) that may be grammatically-conditioned allomorphs,
+    not free variants -- both carried forward as the next session''s
+    priority, not started. Gate clean: 8280/8280 entries (was 8278),
+    9/9 grammatical corrections, 314/314 unit tests (unchanged), 0 new
+    repository-intelligence violations. Rebased cleanly onto one
+    concurrent Claude B docs-only close (39df832, zero overlap). Pushed
+    39df832..045cb6f fast-forward, confirmed HEAD==origin/main clean.
+    Read this file first on resume.'
+  next_action_prior_20260905A: '2026-09-05 (Claude A, resumed from CLAUDE_A_SESSION_MIGRATION_20260904D.md,
     "close remaining native-evidence items" directive): resync verified clean
     (HEAD==origin/main==d066005 on arrival). CLOSED per already-supplied
     Thangseng evidence, no new relay needed: NV-130 (renumbered from
@@ -567,8 +599,14 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903D.md - THIS IS THE
-    AUTHORITATIVE MIGRATION DOC, written 2026-09-03D (same-day follow-up
+  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260905B.md - THIS IS
+    THE AUTHORITATIVE MIGRATION DOC as of 2026-09-05B. See claude_a.
+    next_action above for full detail (NV-133 rice cooked/uncooked
+    resolution + direct buy-rice sentence; elephant corrections.json
+    corruption fixed; Claude C man·a-collision and slash-variant flags
+    reviewed, carried forward not actioned).'
+  migration_doc_prior_20260903D: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903D.md -
+    prior session''s close, written 2026-09-03D (same-day follow-up
     session). Processed 2 new Thangseng relays: NV-121 (sawa/maiko/bachi/
     badiako question-word-no-ma pattern -- closes the RULE-047-scope gap
     declined at the 2026-09-03C close; formalized as RULE-048; also fixed
@@ -576,7 +614,7 @@ claude_a:
     was shipping bano instead of bachi) and NV-122 (maikai/maidake "how"
     gloss, maikai also covers purpose "in order that" -- flagged as
     relevant to the still-open -na/purpose item, not closed, no sentence
-    evidence yet). Read this file first on resume.'
+    evidence yet).'
   migration_doc_prior_20260903C: 'docs/CLAUDE_A_SESSION_MIGRATION_20260903C.md -
     prior session''s close, written 2026-09-03C. Project Owner said "close
     all" on 4 self-audited improvement items; 3 DECLINED (no native
