@@ -390,7 +390,7 @@ assume synonymy without a direct citation asking about it.
 These were assembled via SOV pattern-logic, NOT yet native-confirmed.
 Treat as best-guess only — do not cite as grammar fact until confirmed.
 
-- `i went to the market to buy rice` — native-confirmed near-equivalent now exists (NV-129, "so that" framing rather than "to": `Anga bajalchi re·angaha jedakode anga merong brena man·gen`). Engine bug (location-noun dropped) status not re-verified this session — check before assuming fixed. The literal "to buy" (`-na` purpose-infinitive) framing itself is still not directly cited for this sentence.
+- `i went to the market to buy rice` — RESOLVED, NV-133 (2026-09-05): direct native citation for the literal "to buy" (`-na` purpose-infinitive) framing: `Anga bajalchi merong brena re·anga`. Supersedes the NV-129 "so that"-framed near-equivalent (`Anga bajalchi re·angaha jedakode anga merong brena man·gen`, still valid as a separate sentence, not wrong, just a different framing). Engine composition for this exact key already independently produced a near-identical result via grammar-assembly (`...merong·ko bre·na re·anga`, differing only in an added `-ko` object marker) — not re-verified against the new exact-phrase row this session, check before assuming fixed.
 - `she bought three books` — unconfirmed
 - `the boy is playing in the school` — unconfirmed
 - `my father is a teacher` — unconfirmed

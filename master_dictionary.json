@@ -3315,7 +3315,8 @@
     "english": "rice (uncooked)",
     "garo": "Merong",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-133 (Thangseng, via Project Owner relay, 2026-09-05): \"Mi is cooked rice and merong is uncooked [rice].\" Resolves the merong-vs-mi tension flagged open at NV-129's close (2026-09-03/04) — the two are not competing synonyms for one 'rice' sense, they are the cooked/uncooked distinction itself, same pattern as the existing cooked/uncooked adjective pair."
   },
   {
     "english": "rice (cooked)",
@@ -18783,7 +18784,8 @@
     "english": "rice",
     "garo": "mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-133 (Thangseng, via Project Owner relay, 2026-09-05): \"Mi is cooked rice and merong is uncooked [rice].\" Resolves the merong-vs-mi tension flagged open at NV-129's close (2026-09-03/04) — the two are not competing synonyms for one 'rice' sense, they are the cooked/uncooked distinction itself, same pattern as the existing cooked/uncooked adjective pair. Kept as the default/bare 'rice' gloss since cooked rice is the unmarked food sense (matches already-shipping runtime, phrase_maps.js 'rice'->'Mi', unchanged, no engineering action needed) — see new explicit 'cooked rice' row below for the disambiguated sense."
   },
   {
     "english": "such as",
@@ -78515,6 +78517,20 @@
     "category": "general",
     "classifier": null,
     "notes": "VERIFIED/HIGH — Thangseng direct native citation via Project Owner relay, NV-132 (renumbered 2026-09-05 from the collision-numbered NV-129; originally received 2026-09-03/04). Thangseng supplied this as the natural rendering for the specific requested example; per explicit Project Owner instruction this closure covers only this exact sentence, not a general/firm adjective-order rule — see the 3 already-VERIFIED 'big red house' orderings (NV-110, no article) for the pre-existing tied variants, a different sentence this one does not attempt to reconcile with or generalize from.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "cooked rice",
+    "garo": "Mi",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — NV-133 (Thangseng, via Project Owner relay, 2026-09-05): \"Mi is cooked rice and merong is uncooked [rice].\" Resolves the merong-vs-mi tension flagged open at NV-129's close (2026-09-03/04) — the two are not competing synonyms for one 'rice' sense, they are the cooked/uncooked distinction itself, same pattern as the existing cooked/uncooked adjective pair.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i went to the market to buy rice",
+    "garo": "Anga bajalchi merong brena re·anga",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — NV-133 (Thangseng, via Project Owner relay, 2026-09-05): \"anga bajalchi merong brena re.anga\" = \"I went to the market to buy rice.\" Raka-normalized: 'Anga bajalchi merong brena re·anga'. This is a DIRECT resolution of docs/GARO_GRAMMAR_REFERENCE.md Section 8's originally-blocked item — NV-129 (2026-09-03/04) had only a 'so that' (jedakode) near-equivalent for this sentence; this is the plain -na purposive rendering the item actually asked for. Uses 'merong' (uncooked/raw rice) for the object bought at market, consistent with NV-133's cooked/uncooked distinction (you buy raw rice, not cooked rice, at market) and with NV-129's own market/rice sentence, which used the same word. NOT resolved by this entry, flagged for Claude B: live grammar-assembly for this exact English key currently produces 'Anga bajalchi merong·ko bre·na re·anga' (adds a -ko object marker the native citation omits on this bare mass noun) — this new exact-phrase row will take priority over that composed output per the existing exact-phrase-over-grammar-assembly precedence, so no live behavior change is needed for this key specifically, but the -ko-on-bare-mass-noun question itself is not addressed and may affect other sentences.",
     "confidence": "verified_high"
   }
 ]

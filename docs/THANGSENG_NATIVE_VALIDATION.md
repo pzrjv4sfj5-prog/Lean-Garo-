@@ -6377,3 +6377,84 @@ provisional/OPEN to VERIFIED/HIGH.
 `translate()`: both confidence 0.98, exact-phrase method.
 
 ---
+
+## NV-133 — `mi`/`merong` rice tension resolved (cooked vs. uncooked), plus a direct citation for the market/buy-rice sentence (2026-09-05)
+
+**Source:** Thangseng, via Project Owner relay (2026-09-05).
+
+**Answer (relayed):** "Mi is cooked rice and merong is uncooked [rice]."
+Plus a new example sentence: "anga bajalchi merong brena re.anga" = "I
+went to the market to buy rice." Raka-normalized: `Anga bajalchi merong
+brena re·anga`.
+
+**Finding, CLOSED:** resolves the tension flagged open at NV-129's close
+(2026-09-03/04) — `merong` and `mi` are not competing synonyms for one
+"rice" sense, they are the cooked/uncooked distinction itself (same
+shape as the project's existing cooked/uncooked adjective pair). `mi` =
+cooked rice (the unmarked/default food sense); `merong` = uncooked/raw
+rice (matches the pre-existing `"rice (uncooked)"`→`"Merong"` row,
+previously unverified, now promoted).
+
+The new sentence is a DIRECT resolution of `docs/GARO_GRAMMAR_REFERENCE.md`
+Section 8's originally-blocked "i went to the market to buy rice" item —
+NV-129 only gave a "so that" (`jedakode`) near-equivalent; this is the
+plain `-na` purposive rendering the item actually asked for. It uses
+`merong` (uncooked rice) as the object bought at market, consistent with
+this session's cooked/uncooked finding (you buy raw rice, not cooked
+rice, at market) and with NV-129's own market/rice sentence, which used
+the same word.
+
+**Action taken:**
+- `master_dictionary.json`: promoted `"rice (uncooked)"`→`"Merong"` to
+  VERIFIED/HIGH; added `"cooked rice"`→`"Mi"` (new, VERIFIED/HIGH);
+  updated the existing bare `"rice"`→`"mi"` row's notes/confidence
+  (VERIFIED/HIGH, kept as the default gloss since cooked rice is the
+  unmarked food sense, matches already-shipping runtime); added
+  `"i went to the market to buy rice"`→`"Anga bajalchi merong brena
+  re·anga"` (new, VERIFIED/HIGH).
+- 4 rows total, no rows superseded or deleted.
+
+**Not resolved, flagged for Claude B:** live grammar-assembly for this
+exact English key currently composes `"Anga bajalchi merong·ko bre·na
+re·anga"` (adds a `-ko` object marker the native citation omits on this
+bare mass noun). The new exact-phrase row takes priority over that
+composed output for this specific key (no live behavior change needed
+here), but the broader "-ko on a bare mass-noun object" question is
+untouched and may affect other sentences — not investigated this
+session.
+
+**Duplicate-representation check (Rule 8):** no `corrections.json`/
+`phrase_maps.js` entry exists for `"cooked rice"`/`"uncooked rice"`
+(both currently fall through to sov-assembly) or for the new sentence
+key — nothing to sync. Bare `"rice"` already correctly ships `"Mi"` via
+`phrase_maps.js`, unchanged, matches this session's finding.
+
+**Runtime Handoff:** None beyond the `-ko` note above — no engine code
+touched. Live-verified via `translate()`: `"rice"` unchanged (`Mi`,
+phrase-map, 0.99); the new sentence key not yet rebuilt/re-verified at
+write time, expected exact-phrase per standard precedence — confirm on
+next build.
+
+---
+
+## Data-hygiene fix (not an NV item, no new native input needed): `elephant` corrections.json override was corrupted
+
+Project Owner flagged `elephant` as shipping a wrong value (also
+separately flagged `cat`, see below — that one was already correct).
+Live `translate("elephant")` returned `"buring·o"` — not any of the
+three existing VERIFIED/HIGH elephant citations (`Mong` / `ha·ti` /
+`mong·ma`, the last being the NV-089 native-preferred primary) and not
+recognizable as an elephant word at all (`buring` is this dictionary's
+root for "forest" — looks like a stray/corrupted override, unrelated
+value). Fixed directly per Rule 8 (fix stale `corrections.json` values
+directly, never allowlist): `corrections.json["elephant"]` changed from
+`"buring·o"` to `"mong·ma"`, matching the existing NV-089 native-
+preferred primary. No new native evidence needed — this is a citation
+that already existed, just never propagated to this override layer
+correctly.
+
+`cat` was separately checked and found already correct: `master_
+dictionary.json`'s `"Menggo"` row is already tagged SUPERSEDED
+(2026-08-01 corpus audit, citing the VERIFIED `meng·gong` sibling), and
+both `compiled_dict.json` and live `translate("cat")` already correctly
+ship `meng·gong`. No action needed.
