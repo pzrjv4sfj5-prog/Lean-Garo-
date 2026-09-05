@@ -543,8 +543,10 @@ roots above are the complete set.
 `do·o mang·gni`="two chicken" (`do·o`="chicken", NOT a number or
 generic animal word — see `RC-CANDIDATE-022`/NV-025 for the
 corruption this caused when the noun was dropped), `na·tok
-mang·gittam`="three fish", `manderang sak·sa`="one person", `skigipa
-sak·gni`="two teachers", `ki·tap king·sa`="one book", `ki·tap
+mang·gittam`="three fish", `manderang saksa`="one person", `skigipa
+sakgni`="two teachers" (sak takes NO raka dot before the number
+suffix — corrected 2026-09-03, see NV-124 footnote below), `ki·tap
+king·sa`="one book", `ki·tap
 king·gittam`="three books", `kettal ge·gni`="two knives", `do·a
 mang·chiking`="ten birds" (`do·a`="bird", distinct from `do·o`
 ="chicken" — a real minimal pair).
@@ -584,6 +586,24 @@ a failing unit test, reverted). Recorded here and in NV-109 as citation
 evidence only; a dictionary addition, if wanted, needs a
 non-key-colliding approach and is left for a future session/Claude B
 coordination, not assumed to be safe to add unilaterally.
+
+**Footnote (NV-124, 2026-09-03):** Project Owner re-supplied the raw
+WhatsApp transcript underlying NV-072/NV-073 (2026-08-13,
+Tridip/Thangseng). It shows `chattro saksa` (student) and `mande
+saksa` (person — Thangseng's own annotation: "no raka in mande") with
+**no dot** between `sak` and the number suffix, while the same
+transcript uses a dot-equivalent character for `gong` (`tangka bisil
+gong·sa`). This corrects a transcription error: the raka dot was
+incorrectly inserted into every `sak`-classifier entry when NV-072/
+NV-073 were first processed into the dictionary. `sak` is now
+confirmed to take **no** raka dot before the number suffix, unlike
+`mang`/`king`/`gong`. Fixed directly (Rule 8) across all 65 affected
+`master_dictionary.json` rows (person/teacher/student 1-20, plus
+"two/three people", "two/three students") and the 3 children-counting
+rows in `corrections.json`. The NV-109 bare-form tension above is
+unaffected by this fix (still open, still not added to the
+dictionary) — this footnote only corrects the dot, not the
+noun-optionality question.
 
 **Confidence:** High (the general Noun+Classifier-Number pattern,
 given 4 independently-corroborated classifier roots); Low (completeness
@@ -841,7 +861,7 @@ wire in beyond literal-match handling of these three sentences.
 **Examples:** `Maina na·a ka·dinga?` = "Why are you laughing?"; `Na·a badita cha·gimin?` = "How much did you eat?"; `Sawa re·baa?` = "Who came?"; `Na·a maiko cha·aha?` = "What did you eat?"; `Na·a bachi re·anga?` = "Where did you go?"; `Na·a badiako ra·aha?` = "Which one did you take?"; `(Na·a) Bano dongenga?` = "Where are you staying?" — 12 attested sentences total across `mai`-family words, `badita`, `sawa`, `maiko`, `bachi`, `badiako`, and `bano`.
 **Counterexamples:** None found.
 **Dependencies:** RULE-046 (Yes/No Question Particle `-ma`) — RULE-048 defines the excluded class where RULE-046 does not apply.
-**Native Notes:** NV-113 (2026-09-02) established the pattern for `mai`-family words and `badita`. NV-121 (2026-09-03, direct Thangseng relay) extended it to `sawa`, `maiko`, `bachi`, and `badiako`, leaving `bano` (stationary "where") explicitly flagged untested. NV-125 (2026-09-03/04, direct Thangseng relay) supplied that citation — no other question words currently flagged untested.
+**Native Notes:** NV-113 (2026-09-02) established the pattern for `mai`-family words and `badita`. NV-121 (2026-09-03, direct Thangseng relay) extended it to `sawa`, `maiko`, `bachi`, and `badiako`, leaving `bano` (stationary "where") explicitly flagged untested. NV-128 (2026-09-03/04, direct Thangseng relay) supplied that citation — no other question words currently flagged untested.
 **Validation Status:** Verified.
 **Confidence:** High, for the 7 question words directly attested. Not generalized further without evidence.
 **Launch Priority:** P1 — no live code path yet (all current question output is exact-phrase lookup, not general construction); flagged to Claude B.

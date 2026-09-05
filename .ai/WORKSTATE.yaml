@@ -907,7 +907,68 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-03E (Claude A): NV-123 -- Project
+  pending_thangseng_questions: '2026-09-04B (Claude A): NV-126 --
+    Chattro/Chattri gendered student pair. Project Owner confirmed
+    (verbal/native validation with Thangseng, no written transcript,
+    same provenance basis as NV-125) that Chattro is the standard/
+    unmarked "student" term and also the explicit "male student" form
+    when contrast is needed (like English "actor"); Chattri is the
+    explicit "female student" form (like "actress"). Added new lexeme
+    rows ("male student"=Chattro, "female student"=Chattri) plus a
+    full mechanically-derived 1-20 counting series for both
+    (Chattri/Chattro + already-VERIFIED no-dot sak classifier +
+    NUMBERS suffix table, NV-124 methodology) -- 46 new VERIFIED/HIGH
+    rows total. Also closed a live gap found while verifying: "one
+    male student" had no exact dictionary entry and was falling
+    through to the wrong ge\u00b7 classifier fallback; now resolves
+    correctly via sak. Gate clean: 8264/8264, 9/9, 314/314, 0 new
+    violations.
+    ---
+    2026-09-04 (Claude A): NV-125 --
+    old man / old woman. Project Owner stated direct verbal/phone
+    confirmation with Thangseng (no written transcript exists for
+    this exchange, per Project Owner statement 2026-09-04). Promoted
+    2 existing rows from unverified/superseded to VERIFIED/HIGH:
+    "old man"=Budepa, "old woman"=Buchuma (both already sat in
+    master_dictionary.json at those exact values pre-session, only
+    the confidence tier changed). Retained alongside the pre-existing
+    VERIFIED/HIGH "Old Woman"=bu\u00b7ri (different exact english-key
+    casing) as an attested alternate per Project Owner instruction --
+    not substituted, not removed. Gate clean: 8218/8218, 9/9, 314/314,
+    0 new violations.
+    ---
+    2026-09-03F (Claude A): NV-124 --
+    Project Owner re-supplied the raw WhatsApp transcript underlying
+    NV-072/NV-073 (2026-08-13). It shows "chattro saksa"/"mande saksa"
+    (Thangseng''s own annotation: "no raka in mande") with NO dot
+    between sak and the number suffix, vs. a dot-equivalent character
+    used for gong ("gong\u2022sa") in the same transcript. This
+    corrects a transcription error from when NV-072/NV-073 were first
+    processed -- the raka dot was wrongly inserted for sak. Fixed
+    directly (Rule 8, evidence is a direct primary-source quote, no
+    force-resolution needed): all 65 sak-classifier rows in
+    master_dictionary.json (person/teacher/student 1-20, two/three
+    people, two/three students) plus 3 children-counting rows in
+    corrections.json, RULE-038.yaml + GRAMMAR_RULE_CATALOGUE.md
+    updated, 2 stale test assertions fixed to match. Live translate()
+    verified correct for all affected dictionary phrases. NOT
+    resolved: RAKA_CLASSIFIERS in src/garo_classifier.js still
+    includes ''sak'' -- classifier-composition FALLBACK (phrases with
+    no exact dictionary match) still produces the stale dotted form.
+    Engine code, Claude B territory -- flagged with a regression-test
+    comment in tests/unit/rong_classifier.test.js, not touched here.
+    ALSO NOT applied from the same relay: the Me\u00b7asa=boy/
+    Me\u00b7chik=girl claim from the Project Owner''s prior message --
+    checked against this same 2026-08-13 transcript and the male-vs-
+    female-student sub-question was never actually answered by
+    Thangseng in it (transcript only gives "one student = chattro
+    saksa", no gendered forms). No evidence for boy/girl found in the
+    primary source; still flagged open, still contradicts existing
+    VERIFIED boy=ko\u00b7ka/girl=ko\u00b7ki and woman=Me\u00b7chik/
+    me\u00b7chik VERIFIED. Gate clean: 8218/8218, 9/9, 314/314, 0 new
+    violations.
+    ---
+    2026-09-03E (Claude A): NV-123 -- Project
     Owner relayed Thangseng confirmation of the already-VERIFIED
     NOUN+sak+NUMBER pattern for chatro (student) and mande (person)
     generally, 1-3. Mechanical part added no new evidence (values already
@@ -2673,7 +2734,8 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: "2026-09-04 (Claude B, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260903E.md, resynced first -- doc's claimed HEAD 10beeed was stale by 1 commit, ddf433a/NV-123 landed same-day by Claude A after the doc was written, dictionary-only plural-key fill, gate already reported clean there, not re-run). This session processed Thangseng's next relay batch (3 items) via Project Owner: NV-124 (only-X third-person scope) -- answer received ('Yes, but...borrowed from Bible translation, other ways depending on intention') but NOT sufficient to close, no actual third-person sentence transmitted, scope guard in tryOnlyIdentityConstruction left untouched, still blocked, follow-up flagged. NV-125 (bano stationary-where) -- CLOSED, direct citation '(Na\xB7a) Bano dongenga?'=where are you staying, closes RULE-048's flagged P2 gap, 6->7 attested question words; RULE-048.yaml + GRAMMAR_RULE_CATALOGUE.md + master_dictionary.json (+1 row) updated. NV-126 (jedakode/maikai purpose clauses) -- CLOSED, 2 full sentences confirm both maikai and jedakode work as 'so that/in order that', jedakode now more common than maikai's older usage; also independently validates the *shape* (not the specific old sentence) of a prior pattern-logic-only guess in GARO_GRAMMAR_REFERENCE.md \xA77 -- that section updated in place per its own convention, \xA78's blocked market/rice item updated to note near-equivalent evidence now exists (engine bug status not re-verified); master_dictionary.json +3 rows. Flagged, NOT resolved: 2 new word-tensions (rice: merong vs existing mi; study: 'Gisik nange poraibo' vs existing po\xB7ri\xB7a) -- recorded in the new rows' notes only, no merge attempted. No engine code touched this session -- docs + master_dictionary.json only (+4 rows total, 8218->8222). Full gate re-run clean after npm install (missing in fresh clone): prepare-data.js + test-dictionary.js 8222/8222 dict / 9/9 grammatical, repository-intelligence.js 0 new violations, resync-stale-overrides.mjs 0 candidates, unit tests 314/314 (unchanged from pre-session baseline, as expected for docs/dictionary-only changes). Full account in docs/THANGSENG_NATIVE_VALIDATION.md NV-124/125/126. Next Claude B/A: ask Thangseng directly for actual third-person only-X sentences (he is the only teacher / she is the only doctor) plus what 'depending on the intention' means; that's the only open relay item from this batch.\n"
+  next_action: "2026-09-04 (Claude B, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260903E.md, resynced first -- doc's claimed HEAD 10beeed was stale by 1 commit, ddf433a/NV-123 landed same-day by Claude A after the doc was written, dictionary-only plural-key fill, gate already reported clean there, not re-run). Processed Thangseng's next relay batch (3 items) via Project Owner. Originally logged these as NV-124/125/126 but Claude A concurrently pushed 3 DIFFERENT findings under those same numbers (sak-classifier raka fix, old man/woman, student gendered pairs) before this session pushed -- renumbered mine to NV-127/128/129 across all touched files (THANGSENG_NATIVE_VALIDATION.md headings+body, RULE-048.yaml, GRAMMAR_RULE_CATALOGUE.md, GARO_GRAMMAR_REFERENCE.md, master_dictionary.json's 4 new rows) before merging/pushing, per this project's standing numbering-collision discipline (same as the RULE-047/048 collision precedent). NV-127 (only-X third-person scope) -- answer received ('Yes, but...borrowed from Bible translation, other ways depending on intention') but NOT sufficient to close, no actual third-person sentence transmitted, scope guard in tryOnlyIdentityConstruction left untouched, still blocked, follow-up flagged. NV-128 (bano stationary-where) -- CLOSED, direct citation '(Na\xB7a) Bano dongenga?'=where are you staying, closes RULE-048's flagged P2 gap, 6->7 attested question words. NV-129 (jedakode/maikai purpose clauses) -- CLOSED, 2 full sentences confirm both maikai and jedakode work as 'so that/in order that'; also independently validates the *shape* (not the specific old sentence) of a prior pattern-logic-only guess in GARO_GRAMMAR_REFERENCE.md \xA77 -- updated in place per its own convention, \xA78's blocked market/rice item updated to note near-equivalent evidence now exists (engine bug status not re-verified). Flagged, NOT resolved: 2 new word-tensions (rice: merong vs existing mi; study: 'Gisik nange poraibo' vs existing po\xB7ri\xB7a). No engine code touched this session -- docs + master_dictionary.json only (this session's own contribution: +4 rows, 8218->8222 at this session's own pre-merge gate run). Merged origin/main (7acf794, Claude A's concurrent NV-124/125/126 session, +46 rows) cleanly after resolving conflicts in master_dictionary.json (both sessions append-only, kept both) and regenerating compiled_dict.json/category_index.json from the merged source (do not hand-merge build artifacts). Post-merge dictionary count: 10036 rows in master_dictionary.json, 8268 unique entries in compiled_dict.json. Full gate re-run clean AFTER the merge, at the actual pushed state: 8268/8268 dictionary, 9/9 grammatical corrections, repository-intelligence.js 0 new violations, resync-stale-overrides.mjs 0 candidates, unit tests 314/314 (unchanged from pre-merge baseline). Full account in docs/THANGSENG_NATIVE_VALIDATION.md NV-127/128/129 and docs/CLAUDE_B_SESSION_MIGRATION_20260904.md. Next Claude B/A: ask Thangseng directly for actual third-person only-X sentences (he is the only teacher / she is the only doctor) plus what 'depending on the intention' means; that's the only open relay item from this batch.\n"
+
   next_action_prior_20260904: "2026-09-02D (Claude B, session-close/migration ONLY, no code/data changed): resynced against origin/main (fast-forwarded one new Claude A commit, 5298e68, data-only -- NV-108/109/110/111 closed, no engine code touched). CORRECTED a stale incoming instruction that claimed Finding 1 was still unimplemented -- verified via git log that Finding 1 actually shipped in commit 20833a7 (prior session), fully tested (290/290) and pushed. Finding 1 is CLOSED, not pending. Finding 2 (only-constructions) still OPEN -- Claude A resent the relay question this session ('with a confusion acknowledgment' per 5298e68) but no native answer received yet, still blocked. Full accurate state recorded in docs/CLAUDE_B_SESSION_MIGRATION_20260902D.md, including explicit unambiguous next-session instructions: DO NOT re-implement Finding 1; check Finding 2's relay answer first; if still blocked, ask Project Owner for next priority (candidates: chim-tense gap in assembleSentenceSOV noted as a side-effect in the 20260902C doc, or a fresh audit pass). Gate reconfirmed clean at fast-forwarded HEAD before writing docs: 290/290.\n  next_action_prior_20260902D: \"2026-09-02C (Claude B, Finding 1 IMPLEMENTED): root cause was NOT in grammarEngine.js:395-422 (that branch is unreachable for subjectless sentences -- see docs/CLAUDE_B_TRACE_FINDING1_20260902.md). Real bug: assembleSentenceSOV (sentenceBuilder.js), the fallback for subjectless sentences, resolved verbs via plain lookupGaro with zero knowledge of the conjugation_roots.json go/Re·ang- stem-decoupling table grammarEngine.js already used. Fix: route the elected verb (pairs[lastVerbIdx]) through the existing getConjugationRoot() before tense/negation suffixing -- one line, no new table, no go-specific special case, no-op for every verb without a table entry. translate('did not go') now returns 'Re·angja' (was 're·ja'). Added 6 regression tests (290 total, was 284): the fix case + 5 guards (will-not-go via corrections, will-not-be-going via exact-phrase, bare go, did-not-eat as a no-op-verb control, he-did-not-go as a separate-code-path control). Full suite 290/290, build green, diff confirmed scoped to src/sentenceBuilder.js (1 import + 1 line) + tests only, zero linguistic-data files touched. Side-effect noted, not fixed (separate pre-existing bug, out of scope): 'used to go' via sov-assembly was already missing its chim suffix before this fix and still is after -- no test covers it, no regression, just documented for a future session. Finding 2 (only-constructions) untouched, still blocked on Claude A / native sign-off. See docs/CLAUDE_B_SESSION_MIGRATION_20260902C.md.\"\n  next_action_prior_20260902C: \"2026-09-02B (Claude B, session close, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260902.md): resync found doc's claimed HEAD (015d737) stale by one commit -- 70ebb21 (Claude A, docs-only, folded Finding 2 into a relay batch, not yet sent). No engine code touched by that commit. Baseline reconfirmed clean at actual HEAD 70ebb21 after npm install (missing in fresh clone): 284/284 tests, vite build green. NO code/data changed this session, no fixes attempted. Finding 1 (did-not-go bug) and Finding 2 (only-construction) both unchanged from prior doc -- see docs/CLAUDE_B_SESSION_MIGRATION_20260902B.md. Next Claude B: start with Finding 1, trace verb-finding loop before fixing.\"\n"
   next_action_prior_20260902: "2026-09-02 (Claude B, investigation-only per explicit instruction, NO code/data changed): started Priority 4 audit. Baseline reconfirmed clean (HEAD 015d737, 284/284, matches 20260901 doc). Found 2 items, both documented in docs/CLAUDE_B_SESSION_MIGRATION_20260902.md, not fixed: (1) CONFIRMED BUG - translate(\"did not go\") returns \"re\xB7ja\", expected \"Re\xB7angja\" per Rule 27 + conjugation_roots.json; root cause not yet isolated (traced intended path in grammarEngine.js:414-422, live output doesn't match it, need debug trace in verb-finding loop before fixing). (2) GENERALIZATION QUESTION - \"i am the only student\" and \"the only fruit i eat is mango\" against tryOnlyIdentityConstruction, needs Claude A native sign-off before any engineering change. Next Claude B: start with (1), trace before fixing; do not touch (2) until Claude A responds.\n"
   next_action_prior_20260831C: '2026-08-31C (Claude B, session close, resumed via

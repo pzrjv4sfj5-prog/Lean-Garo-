@@ -6093,7 +6093,7 @@ correction).
 
 ---
 
-## NV-124 — "Only X" third-person scope: relay answer received, does NOT close the open scope guard (2026-09-03/04)
+## NV-127 — "Only X" third-person scope: relay answer received, does NOT close the open scope guard (2026-09-03/04)
 
 **Source:** Thangseng, via Project Owner relay (WhatsApp-style transcript,
 23:27 3/9/2026), answering the follow-up flagged at NV-112/NV-117/
@@ -6143,7 +6143,7 @@ third-person sentence is transmitted.
 
 ---
 
-## NV-125 — Question word `bano` (stationary "where") confirmed no `-ma` — CLOSES RULE-048's flagged P2 gap (2026-09-03/04)
+## NV-128 — Question word `bano` (stationary "where") confirmed no `-ma` — CLOSES RULE-048's flagged P2 gap (2026-09-03/04)
 
 **Source:** Thangseng, via Project Owner relay (23:29 3/9/2026).
 
@@ -6186,7 +6186,7 @@ exact-phrase lookup only).
 
 ---
 
-## NV-126 — `jedakode` and `maikai` both confirmed as purpose ("so that"/"in order that") connectives, with full sentences — CLOSES NV-122's open flag (2026-09-03/04)
+## NV-129 — `jedakode` and `maikai` both confirmed as purpose ("so that"/"in order that") connectives, with full sentences — CLOSES NV-122's open flag (2026-09-03/04)
 
 **Source:** Thangseng, via Project Owner relay (23:36 3/9/2026).
 

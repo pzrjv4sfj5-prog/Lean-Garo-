@@ -357,27 +357,27 @@ what have you come for           = Na·a maina re·baaha?
 love is not angry but gentle     = Ka·sara ka·o nangja, indiba rinok rinok daka
 i work so i can eat (literal, unverified pattern-guess) = Anga kam ka·a jedakode anga cha·na man·gen
 i work so that i can eat (alt, unverified pattern-guess) = Anga cha·na man·na gita kam ka·a
-i went to the market so that i could buy rice (VERIFIED/HIGH, NV-126) = Anga bajalchi re·angaha jedakode anga merong brena man·gen
-study hard so that you can be successful (VERIFIED/HIGH, NV-126)     = Gisik nange poraibo maikai na·a chu·sokgipa ong·na man·gen
+i went to the market so that i could buy rice (VERIFIED/HIGH, NV-129) = Anga bajalchi re·angaha jedakode anga merong brena man·gen
+study hard so that you can be successful (VERIFIED/HIGH, NV-129)     = Gisik nange poraibo maikai na·a chu·sokgipa ong·na man·gen
 ```
 
 ### New vocab from "i work so i can eat"
 ```
 kam = work (noun) | ka·a = do (verb, distinct from dak·a)
-jedakode = "so that / in order that" purpose connector — VERIFIED/HIGH as of NV-126
+jedakode = "so that / in order that" purpose connector — VERIFIED/HIGH as of NV-129
   (2026-09-03/04, direct Thangseng citation: "these days jedakode is used more
   frequently" than maikai's older purpose sense). Upgraded from this section's
   earlier tentative "since/because" gloss, which was pattern-logic only, never
   native-confirmed for that sense specifically.
 man·gen = will get/will be able (future of man = to get/obtain)
 gita = "in order to" / purposive connector (alternate construction) — still
-  UNVERIFIED, not touched by NV-126 (that citation used jedakode/maikai, not gita)
+  UNVERIFIED, not touched by NV-129 (that citation used jedakode/maikai, not gita)
 maikai = "how" (VERIFIED/HIGH, NV-122) also confirmed usable as a purpose
-  connective ("so that"/"in order that") via NV-126's sentence-level citation —
+  connective ("so that"/"in order that") via NV-129's sentence-level citation —
   previously only gloss-level for that sense.
 ```
 
-**Open tension, not resolved:** NV-126's citations use `merong` for "rice" and
+**Open tension, not resolved:** NV-129's citations use `merong` for "rice" and
 `Gisik nange poraibo` for "study hard", neither of which match this doc's
 existing dictionary entries (`rice`=`mi`, `study`=`po·ri·a`). Left as flagged
 tensions in `master_dictionary.json`'s new rows — do not silently merge or
@@ -390,7 +390,7 @@ assume synonymy without a direct citation asking about it.
 These were assembled via SOV pattern-logic, NOT yet native-confirmed.
 Treat as best-guess only — do not cite as grammar fact until confirmed.
 
-- `i went to the market to buy rice` — native-confirmed near-equivalent now exists (NV-126, "so that" framing rather than "to": `Anga bajalchi re·angaha jedakode anga merong brena man·gen`). Engine bug (location-noun dropped) status not re-verified this session — check before assuming fixed. The literal "to buy" (`-na` purpose-infinitive) framing itself is still not directly cited for this sentence.
+- `i went to the market to buy rice` — native-confirmed near-equivalent now exists (NV-129, "so that" framing rather than "to": `Anga bajalchi re·angaha jedakode anga merong brena man·gen`). Engine bug (location-noun dropped) status not re-verified this session — check before assuming fixed. The literal "to buy" (`-na` purpose-infinitive) framing itself is still not directly cited for this sentence.
 - `she bought three books` — unconfirmed
 - `the boy is playing in the school` — unconfirmed
 - `my father is a teacher` — unconfirmed

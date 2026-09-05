@@ -215,10 +215,10 @@ const REGRESSION_CASES = [
   // BEFORE classifier composition, matching this file's own documented
   // priority cascade, so a confirmed phrase-level entry for "one person"
   // wins the race instead of the bare-noun classifier recomposing it from
-  // scratch every time. The garo VALUE is unchanged ('mande sak·sa') —
+  // scratch every time. The garo VALUE is unchanged ('mande saksa') —
   // only which pipeline step produces it changed, which is the whole
   // point of the fix (see translationEngine.js step 2's comment).
-  { in: 'one person', expectGaro: 'mande sak·sa', expectMethod: ['classifier', 'exact-phrase'] },
+  { in: 'one person', expectGaro: 'mande saksa', expectMethod: ['classifier', 'exact-phrase'] },
   { in: 'he answered', expectGaro: 'Ua Aganchakaha', expectMethod: ['grammar-assembly'] },
 ];
 
@@ -1339,8 +1339,8 @@ test('getAllVocabulary() prefers a compiled-dict entry\'s own category over cate
 // wrong, dictionary/phrase-map entry like "three dogs").
 test('"she/he has N children" applies the sak (person) classifier instead of silently dropping the number', async () => {
   const cases = [
-    ['she has three children', 'Ua bi·sa sak·gittam donga'],
-    ['he has three children', 'Ua bi·sa sak·gittam donga'],
+    ['she has three children', 'Ua bi·sa sakgittam donga'],
+    ['he has three children', 'Ua bi·sa sakgittam donga'],
   ];
   for (const [input, expected] of cases) {
     const result = await translate(input);
@@ -1403,19 +1403,19 @@ test('"<number> dogs" counting phrases use the correct, natively-confirmed class
 // it at step "1.6", running BEFORE the exact-phrase lookup — inverting the
 // documented precedence. That meant a confirmed, native-reviewed
 // compiled_dict.json entry for a specific counting phrase (e.g. NV-073's
-// "twenty student" -> "Chattro sak·Kolgrik") was silently shadowed at
+// "twenty student" -> "Chattro sakKolgrik") was silently shadowed at
 // runtime: translate() kept mechanically recomposing from the bare noun's
 // (unfixed) dictionary entry every single time, because classifier
 // composition ran first and returned before the exact-phrase check ever
 // got a turn. These tests guard the fixed precedence directly. ---
 test('runtime propagation: an exact compiled_dict.json phrase entry wins over classifier composition (NV-073 "twenty student")', async () => {
   const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
-  assert.equal(compiledDict['twenty student'], 'Chattro sak·Kolgrik',
+  assert.equal(compiledDict['twenty student'], 'Chattro sakKolgrik',
     'precondition: compiled_dict.json must carry the NV-073-fixed phrase-level entry for this test to be meaningful');
   const r = await translate('twenty student');
   assert.equal(r.method, 'exact-phrase',
     'a confirmed phrase-level compiled_dict.json entry must win over mechanical classifier composition');
-  assert.equal(r.garo, 'Chattro sak·Kolgrik');
+  assert.equal(r.garo, 'Chattro sakKolgrik');
 });
 
 test('runtime propagation: classifier composition still runs as the fallback when no exact-phrase entry exists', async () => {
@@ -1644,7 +1644,7 @@ test('AI-002 regression guard: classifier composition for counted nouns is unaff
 
 test('AI-002 regression guard: "she has three children" classifier fix (2026-08-09) still applies — unaffected by the per-word fallback change', async () => {
   const result = await translate('she has three children');
-  assert.equal(result.garo, 'Ua bi·sa sak·gittam donga');
+  assert.equal(result.garo, 'Ua bi·sa sakgittam donga');
 });
 
 test('AI-002 regression guard: a fully-resolved multi-word object sentence still reaches grammar-assembly correctly', async () => {
