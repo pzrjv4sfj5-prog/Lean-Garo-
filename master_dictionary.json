@@ -7590,17 +7590,17 @@
   },
   {
     "english": "my house",
-    "garo": "angni rang",
+    "garo": "angni Nok",
     "category": "home",
-    "notes": "SUPERSEDED — native relay NV-088 (2026-08-20, Thangseng via Tridip): not confirmed, superseded by 'ang·ni nok'.",
-    "confidence": "superseded"
+    "notes": "SUPERSEDED — native relay NV-088 (2026-08-20, Thangseng via Tridip): not confirmed, superseded by 'ang·ni nok'. | Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree.",
+    "confidence": "unverified"
   },
   {
     "english": "my house",
-    "garo": "ang·ni nok",
+    "garo": "ang·ni Nok",
     "category": "home",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-088, Thangseng relay via Tridip, WhatsApp: 'my house = Angni Nok'). Matches the shipping corrections.json override exactly — this closes the citation gap CLAUDE_B_HANDOFF_20260819 section 4 flagged (master previously held a different, unconfirmed value).",
-    "confidence": "verified_high"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-088, Thangseng relay via Tridip, WhatsApp: 'my house = Angni Nok'). Matches the shipping corrections.json override exactly — this closes the citation gap CLAUDE_B_HANDOFF_20260819 section 4 flagged (master previously held a different, unconfirmed value). | Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree.",
+    "confidence": "unverified"
   },
   {
     "english": "your father",
@@ -8369,21 +8369,24 @@
   },
   {
     "english": "my food",
-    "garo": "angni chak",
+    "garo": "angni al·a",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "my water",
-    "garo": "angni chik",
+    "garo": "angni Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "your house",
-    "garo": "nani rang",
+    "garo": "nani Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "your book",
@@ -8399,21 +8402,24 @@
   },
   {
     "english": "your food",
-    "garo": "nani chak",
+    "garo": "nani al·a",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "your water",
-    "garo": "nani chik",
+    "garo": "nani Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "his/her house",
-    "garo": "uni rang",
+    "garo": "uni Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "his/her book",
@@ -8429,21 +8435,24 @@
   },
   {
     "english": "his/her food",
-    "garo": "uni chak",
+    "garo": "uni al·a",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "his/her water",
-    "garo": "uni chik",
+    "garo": "uni Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "our house",
-    "garo": "ini rang",
+    "garo": "ini Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "our book",
@@ -8459,21 +8468,24 @@
   },
   {
     "english": "our food",
-    "garo": "ini chak",
+    "garo": "ini al·a",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "our water",
-    "garo": "ini chik",
+    "garo": "ini Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their house",
-    "garo": "bini rang",
+    "garo": "bini Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their book",
@@ -8489,15 +8501,17 @@
   },
   {
     "english": "their food",
-    "garo": "bini chak",
+    "garo": "bini al·a",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their water",
-    "garo": "bini chik",
+    "garo": "bini Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "what is it?",
@@ -13028,10 +13042,10 @@
   },
   {
     "english": "my dog",
-    "garo": "angni mang",
+    "garo": "angni Achak",
     "category": "animals",
-    "notes": "SUPERSEDED — native relay NV-083 (2026-08-20, Thangseng via Tridip): not confirmed, superseded by 'ang·ni achak'.",
-    "confidence": "superseded"
+    "notes": "SUPERSEDED — native relay NV-083 (2026-08-20, Thangseng via Tridip): not confirmed, superseded by 'ang·ni achak'. | Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md.",
+    "confidence": "unverified"
   },
   {
     "english": "my cat",
@@ -13041,15 +13055,17 @@
   },
   {
     "english": "my bird",
-    "garo": "angni mang",
+    "garo": "angni do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "my fish",
-    "garo": "angni mang",
+    "garo": "angni na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "my teacher",
@@ -13059,15 +13075,17 @@
   },
   {
     "english": "my student",
-    "garo": "angni chik",
+    "garo": "angni Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "my tree",
-    "garo": "angni rang",
+    "garo": "angni Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "my apple",
@@ -13083,9 +13101,10 @@
   },
   {
     "english": "my rice",
-    "garo": "angni chak",
+    "garo": "angni mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "my road",
@@ -13095,9 +13114,10 @@
   },
   {
     "english": "my river",
-    "garo": "angni chik",
+    "garo": "angni chi·bi·ma",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "my mountain",
@@ -13119,9 +13139,10 @@
   },
   {
     "english": "your dog",
-    "garo": "nani mang",
+    "garo": "nani Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "your cat",
@@ -13131,15 +13152,17 @@
   },
   {
     "english": "your bird",
-    "garo": "nani mang",
+    "garo": "nani do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "your fish",
-    "garo": "nani mang",
+    "garo": "nani na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "your teacher",
@@ -13149,15 +13172,17 @@
   },
   {
     "english": "your student",
-    "garo": "nani chik",
+    "garo": "nani Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "your tree",
-    "garo": "nani rang",
+    "garo": "nani Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "your apple",
@@ -13173,9 +13198,10 @@
   },
   {
     "english": "your rice",
-    "garo": "nani chak",
+    "garo": "nani mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "your road",
@@ -13185,9 +13211,10 @@
   },
   {
     "english": "your river",
-    "garo": "nani chik",
+    "garo": "nani chi·bi·ma",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "your mountain",
@@ -13209,9 +13236,10 @@
   },
   {
     "english": "his/her dog",
-    "garo": "uni mang",
+    "garo": "uni Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "his/her cat",
@@ -13221,15 +13249,17 @@
   },
   {
     "english": "his/her bird",
-    "garo": "uni mang",
+    "garo": "uni do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "his/her fish",
-    "garo": "uni mang",
+    "garo": "uni na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "his/her teacher",
@@ -13239,15 +13269,17 @@
   },
   {
     "english": "his/her student",
-    "garo": "uni chik",
+    "garo": "uni Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "his/her tree",
-    "garo": "uni rang",
+    "garo": "uni Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "his/her apple",
@@ -13263,9 +13295,10 @@
   },
   {
     "english": "his/her rice",
-    "garo": "uni chak",
+    "garo": "uni mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "his/her road",
@@ -13275,9 +13308,10 @@
   },
   {
     "english": "his/her river",
-    "garo": "uni chik",
+    "garo": "uni chi·bi·ma",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "his/her mountain",
@@ -13299,9 +13333,10 @@
   },
   {
     "english": "our dog",
-    "garo": "ini mang",
+    "garo": "ini Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "our cat",
@@ -13311,15 +13346,17 @@
   },
   {
     "english": "our bird",
-    "garo": "ini mang",
+    "garo": "ini do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "our fish",
-    "garo": "ini mang",
+    "garo": "ini na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "our teacher",
@@ -13329,15 +13366,17 @@
   },
   {
     "english": "our student",
-    "garo": "ini chik",
+    "garo": "ini Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "our tree",
-    "garo": "ini rang",
+    "garo": "ini Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "our apple",
@@ -13353,9 +13392,10 @@
   },
   {
     "english": "our rice",
-    "garo": "ini chak",
+    "garo": "ini mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "our road",
@@ -13365,9 +13405,10 @@
   },
   {
     "english": "our river",
-    "garo": "ini chik",
+    "garo": "ini chi·bi·ma",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "our mountain",
@@ -13389,9 +13430,10 @@
   },
   {
     "english": "their dog",
-    "garo": "bini mang",
+    "garo": "bini Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "their cat",
@@ -13401,15 +13443,17 @@
   },
   {
     "english": "their bird",
-    "garo": "bini mang",
+    "garo": "bini do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "their fish",
-    "garo": "bini mang",
+    "garo": "bini na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "their teacher",
@@ -13419,15 +13463,17 @@
   },
   {
     "english": "their student",
-    "garo": "bini chik",
+    "garo": "bini Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their tree",
-    "garo": "bini rang",
+    "garo": "bini Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their apple",
@@ -13443,9 +13489,10 @@
   },
   {
     "english": "their rice",
-    "garo": "bini chak",
+    "garo": "bini mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their road",
@@ -13455,9 +13502,10 @@
   },
   {
     "english": "their river",
-    "garo": "bini chik",
+    "garo": "bini chi·bi·ma",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their mountain",
@@ -14134,9 +14182,10 @@
   },
   {
     "english": "big dog",
-    "garo": "gonga mang",
+    "garo": "gonga Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "big cat",
@@ -14146,15 +14195,17 @@
   },
   {
     "english": "big bird",
-    "garo": "gonga mang",
+    "garo": "gonga do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "big fish",
-    "garo": "gonga mang",
+    "garo": "gonga na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "big teacher",
@@ -14164,21 +14215,24 @@
   },
   {
     "english": "big student",
-    "garo": "gonga chik",
+    "garo": "gonga Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "big house",
-    "garo": "gonga rang",
+    "garo": "gonga Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "big tree",
-    "garo": "gonga rang",
+    "garo": "gonga Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "big book",
@@ -14206,15 +14260,17 @@
   },
   {
     "english": "big rice",
-    "garo": "gonga chak",
+    "garo": "gonga mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "big water",
-    "garo": "gonga chik",
+    "garo": "gonga Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small person",
@@ -14224,9 +14280,10 @@
   },
   {
     "english": "small dog",
-    "garo": "chik mang",
+    "garo": "chik Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "small cat",
@@ -14236,15 +14293,17 @@
   },
   {
     "english": "small bird",
-    "garo": "chik mang",
+    "garo": "chik do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "small fish",
-    "garo": "chik mang",
+    "garo": "chik na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "small teacher",
@@ -14254,21 +14313,24 @@
   },
   {
     "english": "small student",
-    "garo": "chik chik",
+    "garo": "chik Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small house",
-    "garo": "chik rang",
+    "garo": "chik Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small tree",
-    "garo": "chik rang",
+    "garo": "chik Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small book",
@@ -14296,15 +14358,17 @@
   },
   {
     "english": "small rice",
-    "garo": "chik chak",
+    "garo": "chik mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small water",
-    "garo": "chik chik",
+    "garo": "chik Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "good person",
@@ -14314,9 +14378,10 @@
   },
   {
     "english": "good dog",
-    "garo": "ramang mang",
+    "garo": "ramang Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "good cat",
@@ -14326,15 +14391,17 @@
   },
   {
     "english": "good bird",
-    "garo": "ramang mang",
+    "garo": "ramang do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "good fish",
-    "garo": "ramang mang",
+    "garo": "ramang na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "good teacher",
@@ -14344,21 +14411,24 @@
   },
   {
     "english": "good student",
-    "garo": "ramang chik",
+    "garo": "ramang Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "good house",
-    "garo": "ramang rang",
+    "garo": "ramang Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "good tree",
-    "garo": "ramang rang",
+    "garo": "ramang Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "good book",
@@ -14386,15 +14456,17 @@
   },
   {
     "english": "good rice",
-    "garo": "ramang chak",
+    "garo": "ramang mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "good water",
-    "garo": "ramang chik",
+    "garo": "ramang Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "bad person",
@@ -14404,9 +14476,10 @@
   },
   {
     "english": "bad dog",
-    "garo": "rong·a mang",
+    "garo": "rong·a Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "bad cat",
@@ -14416,15 +14489,17 @@
   },
   {
     "english": "bad bird",
-    "garo": "rong·a mang",
+    "garo": "rong·a do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "bad fish",
-    "garo": "rong·a mang",
+    "garo": "rong·a na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "bad teacher",
@@ -14434,21 +14509,24 @@
   },
   {
     "english": "bad student",
-    "garo": "rong·a chik",
+    "garo": "rong·a Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "bad house",
-    "garo": "rong·a rang",
+    "garo": "rong·a Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "bad tree",
-    "garo": "rong·a rang",
+    "garo": "rong·a Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "bad book",
@@ -14476,15 +14554,17 @@
   },
   {
     "english": "bad rice",
-    "garo": "rong·a chak",
+    "garo": "rong·a mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "bad water",
-    "garo": "rong·a chik",
+    "garo": "rong·a Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "hot person",
@@ -14494,9 +14574,10 @@
   },
   {
     "english": "hot dog",
-    "garo": "mek mang",
+    "garo": "mek Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "hot cat",
@@ -14506,15 +14587,17 @@
   },
   {
     "english": "hot bird",
-    "garo": "mek mang",
+    "garo": "mek do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "hot fish",
-    "garo": "mek mang",
+    "garo": "mek na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "hot teacher",
@@ -14524,21 +14607,24 @@
   },
   {
     "english": "hot student",
-    "garo": "mek chik",
+    "garo": "mek Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "hot house",
-    "garo": "mek rang",
+    "garo": "mek Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "hot tree",
-    "garo": "mek rang",
+    "garo": "mek Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "hot book",
@@ -14566,15 +14652,17 @@
   },
   {
     "english": "hot rice",
-    "garo": "mek chak",
+    "garo": "mek mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "hot water",
-    "garo": "mek chik",
+    "garo": "mek Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "cold person",
@@ -14584,9 +14672,10 @@
   },
   {
     "english": "cold dog",
-    "garo": "jak mang",
+    "garo": "jak Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "cold cat",
@@ -14596,15 +14685,17 @@
   },
   {
     "english": "cold bird",
-    "garo": "jak mang",
+    "garo": "jak do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "cold fish",
-    "garo": "jak mang",
+    "garo": "jak na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "cold teacher",
@@ -14614,21 +14705,24 @@
   },
   {
     "english": "cold student",
-    "garo": "jak chik",
+    "garo": "jak Chattro",
     "category": "health",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "cold house",
-    "garo": "jak rang",
+    "garo": "jak Nok",
     "category": "health",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "cold tree",
-    "garo": "jak rang",
+    "garo": "jak Bol",
     "category": "health",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "cold book",
@@ -14656,15 +14750,17 @@
   },
   {
     "english": "cold rice",
-    "garo": "jak chak",
+    "garo": "jak mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "cold water",
-    "garo": "jak chik",
+    "garo": "jak Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "new person",
@@ -14674,9 +14770,10 @@
   },
   {
     "english": "new dog",
-    "garo": "gsa mang",
+    "garo": "gsa Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "new cat",
@@ -14686,15 +14783,17 @@
   },
   {
     "english": "new bird",
-    "garo": "gsa mang",
+    "garo": "gsa do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "new fish",
-    "garo": "gsa mang",
+    "garo": "gsa na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "new teacher",
@@ -14704,21 +14803,24 @@
   },
   {
     "english": "new student",
-    "garo": "gsa chik",
+    "garo": "gsa Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "new house",
-    "garo": "gsa rang",
+    "garo": "gsa Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "new tree",
-    "garo": "gsa rang",
+    "garo": "gsa Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "new book",
@@ -14746,15 +14848,17 @@
   },
   {
     "english": "new rice",
-    "garo": "gsa chak",
+    "garo": "gsa mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "new water",
-    "garo": "gsa chik",
+    "garo": "gsa Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "old person",
@@ -14764,9 +14868,10 @@
   },
   {
     "english": "old dog",
-    "garo": "rong mang",
+    "garo": "rong Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "old cat",
@@ -14776,15 +14881,17 @@
   },
   {
     "english": "old bird",
-    "garo": "rong mang",
+    "garo": "rong do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "old fish",
-    "garo": "rong mang",
+    "garo": "rong na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "old teacher",
@@ -14794,21 +14901,24 @@
   },
   {
     "english": "old student",
-    "garo": "rong chik",
+    "garo": "rong Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "old house",
-    "garo": "rong rang",
+    "garo": "rong Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "old tree",
-    "garo": "rong rang",
+    "garo": "rong Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "old book",
@@ -14836,15 +14946,17 @@
   },
   {
     "english": "old rice",
-    "garo": "rong chak",
+    "garo": "rong mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "old water",
-    "garo": "rong chik",
+    "garo": "rong Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "beautiful person",
@@ -14854,9 +14966,10 @@
   },
   {
     "english": "beautiful dog",
-    "garo": "gima mang",
+    "garo": "gima Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "beautiful cat",
@@ -14866,15 +14979,17 @@
   },
   {
     "english": "beautiful bird",
-    "garo": "gima mang",
+    "garo": "gima do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "beautiful fish",
-    "garo": "gima mang",
+    "garo": "gima na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "beautiful teacher",
@@ -14884,21 +14999,24 @@
   },
   {
     "english": "beautiful student",
-    "garo": "gima chik",
+    "garo": "gima Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "beautiful house",
-    "garo": "gima rang",
+    "garo": "gima Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "beautiful tree",
-    "garo": "gima rang",
+    "garo": "gima Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "beautiful book",
@@ -14926,15 +15044,17 @@
   },
   {
     "english": "beautiful rice",
-    "garo": "gima chak",
+    "garo": "gima mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "beautiful water",
-    "garo": "gima chik",
+    "garo": "gima Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "ugly person",
@@ -14944,9 +15064,10 @@
   },
   {
     "english": "ugly dog",
-    "garo": "rong mang",
+    "garo": "rong Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "ugly cat",
@@ -14956,15 +15077,17 @@
   },
   {
     "english": "ugly bird",
-    "garo": "rong mang",
+    "garo": "rong do·o",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "ugly fish",
-    "garo": "rong mang",
+    "garo": "rong na·tok",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "ugly teacher",
@@ -14974,21 +15097,24 @@
   },
   {
     "english": "ugly student",
-    "garo": "rong chik",
+    "garo": "rong Chattro",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "ugly house",
-    "garo": "rong rang",
+    "garo": "rong Nok",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "ugly tree",
-    "garo": "rong rang",
+    "garo": "rong Bol",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "ugly book",
@@ -15016,15 +15142,17 @@
   },
   {
     "english": "ugly rice",
-    "garo": "rong chak",
+    "garo": "rong mi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "ugly water",
-    "garo": "rong chik",
+    "garo": "rong Chi",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "i want food",

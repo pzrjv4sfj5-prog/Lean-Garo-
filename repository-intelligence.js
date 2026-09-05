@@ -535,6 +535,89 @@ function checkConfidenceFieldValidity() {
 }
 
 
+// --- CHECK H: Modifier+noun generated-placeholder collision ---
+// Found 2026-09-05 (Claude B, translation-integrity audit remediation).
+// master_dictionary.json is bulk-templated in places: a fixed "[modifier]
+// [noun]" shape gets generated for a whole batch of nouns at once, and
+// when the generator's noun slot fails to substitute, every noun in that
+// batch ships the *identical* Garo string under the same modifier. First
+// found as "big dog"/"big cat"/"big bird"/"big fish" all shipping "gonga
+// mang" (finding #3); the SAME defect turned out to also hit "house"/
+// "tree" (both -> "rang"), "water"/"student"/"river" (all -> "chik"), and
+// "food"/"rice" (both -> "chak") under the identical 15-modifier batch —
+// not animal-specific at all, just whichever noun's real root happened to
+// look like a generic classifier word. Both classes fixed together this
+// session (root-cause identical): each noun's own canonical/compiled root
+// substituted in, no animal names or noun names hard-coded in the check
+// below — it works over the *shape* (same modifier, same value, 2+
+// different real nouns), which is what actually generalizes.
+//
+// Scope is intentionally the 15 confirmed non-numeral, non-idiomatic
+// modifiers this batch generator actually used (possessive pronouns +
+// common adjectives). A first draft of this check ran over ALL two-word
+// English phrases and was far too noisy to be useful: numeral-classifier
+// phrases ("one X".."twenty X") legitimately reuse one classifier suffix
+// across dozens of unrelated nouns (real Garo grammar — tracked
+// separately as the counting-phrase issue, not this one), and "to X"
+// infinitive entries legitimately collapse true English synonyms onto one
+// Garo word ("to bloom"/"to blossom"). Neither is this defect; scoping to
+// the modifier set the actual bulk-generation batch used keeps the signal
+// clean without hiding future recurrences of the same shape on some other
+// noun under these same modifiers.
+const MODIFIER_NOUN_BATCH_MODIFIERS = new Set([
+  'my', 'your', 'his/her', 'our', 'their',
+  'big', 'small', 'good', 'bad', 'hot', 'cold', 'new', 'old', 'beautiful', 'ugly',
+]);
+
+function baseLemma(noun) {
+  // Collapse trivial singular/plural pairs of the SAME word ("dog"/"dogs")
+  // so they don't look like two different nouns colliding — that's a
+  // separate, already-tracked issue (plural resolution), not this one.
+  return noun.endsWith('s') && noun.length > 3 ? noun.slice(0, -1) : noun;
+}
+
+function checkModifierNounPlaceholderCollision() {
+  console.log('\n=== CHECK H: Modifier+noun generated-placeholder collision ===');
+  const baseline = new Set(loadJSON('src/data/known_modifier_noun_collisions.json'));
+  const dict = loadJSON('master_dictionary.json');
+
+  // group[modifier][garoValue] = Set of distinct noun lemmas
+  const groups = new Map();
+  for (const entry of dict) {
+    const eng = (entry.english || '').trim().toLowerCase();
+    const garo = (entry.garo || '').trim();
+    if (!eng || !garo) continue;
+    const parts = eng.split(/\s+/);
+    if (parts.length !== 2) continue; // only the simple "<modifier> <noun>" shape
+    const [modifier, noun] = parts;
+    if (!MODIFIER_NOUN_BATCH_MODIFIERS.has(modifier)) continue; // see header note
+    if (!groups.has(modifier)) groups.set(modifier, new Map());
+    const byValue = groups.get(modifier);
+    if (!byValue.has(garo)) byValue.set(garo, new Set());
+    byValue.get(garo).add(baseLemma(noun));
+  }
+
+  let known = 0;
+  let fresh = 0;
+  const freshFindings = [];
+  for (const [modifier, byValue] of groups) {
+    for (const [garoValue, nouns] of byValue) {
+      if (nouns.size < 2) continue; // one noun, one value — no collision
+      const key = `${modifier}|${garoValue}`;
+      if (baseline.has(key)) { known++; continue; }
+      fresh++;
+      freshFindings.push(`  NEW: modifier "${modifier}" + garo "${garoValue}" shared identically by ${nouns.size} different nouns: ${[...nouns].join(', ')}`);
+    }
+  }
+
+  freshFindings.slice(0, 20).forEach(l => console.log(l));
+  if (freshFindings.length > 20) console.log(`  ... and ${freshFindings.length - 20} more`);
+  console.log(`  ${known} known/allowlisted modifier+noun collision group(s), ${fresh} NEW collision group(s).`);
+  if (fresh > 0) hasNewViolation = true;
+  return fresh;
+}
+
+
 console.log('Repository Intelligence validation (BACKLOG-006) starting...');
 const rakaCandidates = checkRakaLocality();
 const crossTableViolations = checkCrossTableConsistency();
@@ -543,6 +626,7 @@ const pendingLexiconProblems = checkPendingLexiconIntegrity();
 const placeholderEntries = checkPlaceholderEntries();
 const crossSourceViolations = checkCrossSourceVsCompiledDict();
 const confidenceSchemaProblems = checkConfidenceFieldValidity();
+const modifierNounCollisions = checkModifierNounPlaceholderCollision();
 
 console.log('\n=== Summary ===');
 console.log(`Raka locality candidates (report-only): ${rakaCandidates}`);
@@ -552,6 +636,7 @@ console.log(`Pending Lexicon structural problems: ${pendingLexiconProblems}`);
 console.log(`New unresolved-placeholder entries: ${placeholderEntries}`);
 console.log(`New runtime-cascade source mismatches: ${crossSourceViolations}`);
 console.log(`Confidence-schema problems: ${confidenceSchemaProblems}`);
+console.log(`New modifier+noun placeholder collisions: ${modifierNounCollisions}`);
 
 if (hasNewViolation) {
   console.log('\nFAILED — new inconsistency detected. Fix the data or, if this is a');
