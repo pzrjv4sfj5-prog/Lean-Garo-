@@ -313,7 +313,45 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: 'NV-134 (2026-09-06, cat): Project Owner relayed a new
+  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906B.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC as of 2026-09-06B. Resumed from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260906.md (HEAD aaf7774 ==
+    origin/main on arrival, clean). Read
+    docs/HANDOFF_CLAUDE_A_20260906.md (Claude C''s newest audit,
+    flagged unread at the prior close) per that doc''s exact-next-step
+    priority 1. Actioned ONE task: item 1 of that handoff (cat
+    menggo/meng·gong split) overlaps directly with the already-open
+    NV-134 -- cross-checked both forms'' actual provenance in
+    master_dictionary.json rather than treating them as symmetrically
+    undocumented. Found: menggo has 2 independent, dated, sourced
+    Thangseng citations (NV-071, 2026-08-11, via Tridip/WhatsApp,
+    backing the VERIFIED/HIGH "one cat"/"three cat" counted rows);
+    meng·gong has literally nothing beyond a bare "variant/VERIFIED/HIGH"
+    tag, no date/source/NV number. This is new evidence the evidentiary
+    picture is asymmetric, NOT a resolution -- richer paper trail isn''t
+    proof of correctness, per this project''s own standing discipline
+    (NV-089 precedent). No dictionary/runtime value changed;
+    meng·gong still ships, Menggo still SUPERSEDED. Addendum written to
+    NV-134 in docs/THANGSENG_NATIVE_VALIDATION.md, sharpening the
+    already-queued reconciling question to Thangseng (now cites the
+    exact asymmetry so the question is more precise) rather than adding
+    a new one. Cross-referenced (not actioned, engineering scope):
+    handoff item 2 (the mang classifier-morpheme leak on "where is the
+    cat?") is a different, unrelated bug -- routed to Claude B,
+    explicitly NOT counted as a fifth cat citation. Handoff items 3-6
+    (answer POS confirmation; leaf/leaves plural + Re·ongkata
+    verification; ball/pole/babies/cities vocabulary gaps; adjective+
+    animal placeholder spot-check) are UNTOUCHED this session, one-task-
+    at-a-time discipline -- next Claude A session should pick up item 3
+    next per the handoff''s own ordering. Gate: docs-only change
+    (THANGSENG_NATIVE_VALIDATION.md + this file), no
+    master_dictionary.json/engine edit -- re-ran the full gate anyway
+    per standing discipline rather than assuming docs-only is safe:
+    node prepare-data.js unchanged entry count, node test-dictionary.js
+    and node --test tests/unit/*.test.js both unchanged pass counts
+    from the 20260906 close, node repository-intelligence.js 0 new
+    violations. Pushed clean, HEAD==origin/main verified via git fetch.
+  next_action_prior_20260906: 'NV-134 (2026-09-06, cat): Project Owner relayed a new
     direct verbal Thangseng confirmation that Menggo=cat, contradicting
     the existing VERIFIED/HIGH meng·gong (which Menggo was marked
     SUPERSEDED against on 2026-08-01). No supporting context on either

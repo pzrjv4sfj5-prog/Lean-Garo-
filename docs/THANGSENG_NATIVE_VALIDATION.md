@@ -6505,3 +6505,46 @@ both are known, is one more common, older, regional, or specific to a
 sub-type of cat?" — the same kind of explicit follow-up NV-089's open
 items (yes, sit, i understand) are still waiting on. Flagged for the
 next relay batch, not resolved here.
+
+### NV-134 addendum (2026-09-06, same day — corpus-internal archaeology, no new relay evidence)
+
+Prompted by Claude C's `HANDOFF_CLAUDE_A_20260906.md` item 1, which
+independently surfaced the same `meng·gong`/`menggo` split from the
+counting-phrase family and asked for adjudication. Cross-checked both
+sides' actual provenance directly in `master_dictionary.json` rather
+than treating them as symmetrically undocumented:
+
+- `menggo` (no dot) already has TWO independent, dated, sourced
+  Thangseng citations on record, both predating today's verbal relay:
+  NV-071 (2026-08-11, Thangseng via Tridip/WhatsApp, direct quote
+  "'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni"), backing
+  the VERIFIED/HIGH `"one cat"`→`menggo mang·sa` and
+  `"three cat"`→`menggo mang·gittam` rows (idx 9232/9233). This is
+  root-level evidence for `menggo` itself, not just the counted forms.
+- `meng·gong` (idx 3183, english key `"Cat"`) has no citation at all
+  beyond the bare tag `"variant/VERIFIED/HIGH"` — no date, no source,
+  no NV number, no quote. NV-134 already flagged this as
+  "not documented beyond VERIFIED/HIGH... predates NV-numbering";
+  this addendum confirms directly (not just by inference) that nothing
+  else exists anywhere in the row to trace it further.
+
+**This changes the evidentiary picture from symmetric to asymmetric**:
+one side has multiple traceable native citations, the other has none.
+That said, per this project's standing discipline (NV-089 precedent,
+reaffirmed in NV-134 itself), an asymmetry in documentation quality is
+still not the same as an explicit native reconciliation of the two
+forms — `meng·gong` could still be correct and simply predate this
+project's citation practice; richer paper trail is not proof of
+correctness. **Not resolved by this addendum** — no dictionary or
+runtime value changed. This strengthens, rather than replaces, the
+case for sending the already-queued explicit reconciling question to
+Thangseng (see above): the question can now be asked more precisely —
+"we have your 2026-08-11 confirmation of `menggo` (no dot) for
+counting cats, and separately `meng·gong` (with a dot) shipping as the
+plain word for cat with no record of who confirmed it or when — are
+these the same word, and if so which spelling/pronunciation is right?"
+Also cross-referenced: Claude C's item 2 in the same handoff (`"where
+is the cat?"` leaking the bare classifier morpheme `mang`, not a real
+word) is a separate engineering bug, routed to Claude B, not a fifth
+competing citation for `cat` itself — noted here only so a future
+session doesn't mistake it for new evidence.
