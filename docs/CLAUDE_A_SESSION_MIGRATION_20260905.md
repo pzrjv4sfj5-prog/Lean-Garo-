@@ -105,30 +105,66 @@ untouched:
 ## Governance-model check
 No §4 intersection this session (no engine code touched).
 
+## Push, mid-session collision, and final resync
+First push (commit `f65babc`) was rejected — Claude B had pushed
+`fb31b7c` (NV-124 engine handoff: removed `sak` from
+`RAKA_CLASSIFIERS`, fixed stale dotted-form test assertions) in the
+interim. Rebased clean onto `origin/main`, no conflicts (no file
+overlap — B's commit was engine-only, mine was docs+dictionary-only).
+Rebuilt (`prepare-data.js`) and reran the full gate post-rebase — byte-
+identical artifacts, nothing to amend. Pushed: `fb31b7c..ad8e819`,
+fast-forward, confirmed clean.
+
+**Final verification (post-push, this same session):** `git fetch`
+shows no further remote movement — `ad8e819` still == `origin/main`.
+Ran `scripts/runtime-error-sweep.mjs` in full: 14,767 `translate()`
+calls (every compiled key, naive plurals, counted-noun forms,
+structural/type-safety edge cases, full exported API surface) — **0
+errors.**
+
 ## Repository status at close
-- [x] HEAD hash: see git log after this commit
-- [x] origin/main match: to be pushed and verified
-- [x] `git status` clean after commit
+- [x] HEAD hash: `ad8e819` (== `origin/main`, confirmed via `git fetch`)
+- [x] origin/main match: confirmed, fast-forward push, no divergence
+- [x] `git status` clean, no untracked files
 - [x] `.ai/WORKSTATE.yaml` updated (new `next_action`, prior chained)
 - [x] `.ai/SESSION_BOOTSTRAP.md` — no standing-rule changes, not touched
 - [x] Migration doc complete (this file)
-- [x] No local-only commits after push
-- [x] No uncommitted changes after push
+- [x] No local-only commits — pushed and verified
+- [x] No uncommitted changes
+- [x] Runtime-error sweep: 14,767 calls, 0 errors (full run, not sampled)
 - [x] Native-validation/blocker status: NV-130/131/132 closed; NV-109's
       tension deliberately still open; Claude B's NV-127 (only-X
       third-person) remains open, correctly not force-closed
 
-## Open items carried forward
-1. **Claude B engine handoff (NV-124):** `RAKA_CLASSIFIERS` still
-   includes `'sak'` — fallback-only, no live dictionary phrase affected.
-2. **RULE-038 / NV-109 bare-form tension:** still open, not resolved.
+## Open items carried forward (for next Claude A)
+1. ~~Claude B engine handoff (NV-124): `RAKA_CLASSIFIERS`~~ — **resolved
+   by Claude B this same session**, commit `fb31b7c` (`sak` removed,
+   stale dotted-form test assertions fixed). No longer open.
+2. **RULE-038 / NV-109 bare-form tension:** still open, not resolved —
+   no new evidence supplied this session, correctly left alone.
 3. **Claude B's NV-127 (only-X third-person scope):** blocked on an
    actual third-person sentence from Thangseng — not invented here.
-4. **Two word-tensions from the jedakode/maikai closure:** `merong`/
-   `mi` (rice), `Gisik nange poraibo`/`po·ri·a` (study) — unresolved,
-   not asked about yet.
+   Do not close without a real relayed sentence.
+4. **Two word-tensions from the jedakode/maikai closure (NV-129,
+   Claude B's numbering):** `merong` vs. `mi` (rice); `Gisik nange
+   poraibo` vs. `po·ri·a` (study) — unresolved, no Thangseng question
+   sent yet.
 
-## Exact next step
-None mandatory. If resuming: Rule 10 resume sequence, then either
-pursue Claude B's NV-127 third-person "only X" evidence if newly
-supplied, or continue any other Project Owner-directed item.
+No other native-evidence items are known-open as of this close — full
+canonical review this session found everything else already correctly
+closed or correctly left open.
+
+## Exact next step (for next Claude A)
+None mandatory. Repo is at rest: `ad8e819` == `origin/main`, gate
+green, 0 runtime errors. **This is a genuine stopping point, not a
+mid-task pause** — do not start new work on resume without a new
+Project Owner directive. If one arrives:
+1. Rule 10 resume sequence first (git fetch, HEAD check, re-read
+   `.ai/WORKSTATE.yaml` + `.ai/SESSION_BOOTSTRAP.md` — don't assume
+   nothing changed).
+2. Before assigning any new NV number, check the highest number
+   actually in `docs/THANGSENG_NATIVE_VALIDATION.md` **after** the
+   fetch/pull — the collision fixed this session happened because a
+   prior session assigned numbers without re-checking post-pull state.
+3. The 4 items above are the only known-open native/language threads;
+   everything else is closed.

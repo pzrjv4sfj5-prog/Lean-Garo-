@@ -350,13 +350,29 @@ claude_a:
     grammatical corrections, 314/314 unit tests, repository-intelligence.js
     0 new violations. Live-verified via translate(): "the big red house",
     "the small white house", "i came to eat", "i came to work" all
-    exact-phrase 0.98. No engine code touched. STILL OPEN, untouched (no
-    native evidence supplied this session to close them): RAKA_CLASSIFIERS
-    sak-removal (Claude B''s, NV-124 handoff); RULE-038/NV-109 tension
-    itself; two Claude-B-flagged word tensions from NV-129/jedakode-maikai
-    session (merong vs mi for rice; Gisik nange poraibo vs po·ri·a for
-    study); Claude B''s NV-127 (only-X third-person scope) -- genuinely
-    blocked on an actual third-person sentence, not invented as closed.'
+    exact-phrase 0.98. No engine code touched. PUSHED AND VERIFIED: commit
+    f65babc rejected on first push (Claude B pushed fb31b7c -- NV-124
+    RAKA_CLASSIFIERS sak-removal + stale test fix -- in the interim);
+    rebased clean (no conflicts, no file overlap), rebuilt (byte-identical
+    artifacts), pushed fb31b7c..ad8e819 fast-forward. Final state confirmed
+    same session: HEAD ad8e819 == origin/main (git fetch, no further
+    remote movement), git status clean, scripts/runtime-error-sweep.mjs run
+    in full (14,767 translate() calls across every compiled key + naive
+    plurals + counted-noun forms + structural/type-safety edge cases + full
+    exported API surface) -- 0 errors. This is a genuine stopping point,
+    not a mid-task pause. STILL OPEN for next Claude A (no native evidence
+    supplied to close these): RULE-038/NV-109 bare-form tension itself
+    (deliberately left flagged, do not force-resolve); two Claude-B-flagged
+    word tensions from NV-129/jedakode-maikai session (merong vs mi for
+    rice; Gisik nange poraibo vs po·ri·a for study) -- no Thangseng
+    question sent yet; Claude B''s NV-127 (only-X third-person scope) --
+    genuinely blocked on an actual third-person sentence, not invented as
+    closed. RAKA_CLASSIFIERS sak-removal item is CLOSED -- Claude B fixed
+    it this same session (fb31b7c), absorbed via rebase, no longer open.
+    Next Claude A: before assigning any new NV number, check the highest
+    number actually in THANGSENG_NATIVE_VALIDATION.md after fetch/pull --
+    the collision fixed this session happened because a prior session
+    assigned numbers without re-checking post-pull state.'
   next_action_prior_20260905: '2026-09-02F (Claude A, MIGRATE-ONLY session, no linguistic/data/
     engine work performed): resynced against origin/main (fast-forwarded one new
     Claude B docs-only commit, a4c91c3 -- corrected a stale Finding-1-status claim,
