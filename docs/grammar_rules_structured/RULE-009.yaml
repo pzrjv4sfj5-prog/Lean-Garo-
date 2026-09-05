@@ -49,7 +49,16 @@ launch_priority:
     note: "implemented - the only one currently wired, per GRAMMAR_SPEC.md's own gap note, confirmed by engine read"
   - scope: "-o / -chi / -ni / -na general grammar-assembly routing"
     tier: P1
-native_notes: "Source Rule 9, GRAMMAR_SPEC.md; primary source suffixes.pdf for the full system overview."
-last_updated: "2026-07-26"
+native_notes: >-
+  Source Rule 9, GRAMMAR_SPEC.md; primary source suffixes.pdf for the
+  full system overview. NV-128 (2026-09-04, direct Thangseng relay via
+  Tridip): explicitly confirmed -na as the normal way to express "to +
+  verb" (purpose/infinitive), with native sentence-level examples
+  ("Anga cha·na re·baa."=I came to eat; "Anga kam ka·na re·baa."=I
+  came to work; both also given with the subject omitted). Closes the
+  -na/purpose open item tracked in WORKSTATE.yaml, extending NV-111's
+  earlier "went" pair (Anga cha·na re·angaha / Anga kam ka·na
+  re·angaha) with a "came" pair, both native-confirmed.
+last_updated: "2026-09-04"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-009"

@@ -3549,7 +3549,8 @@
     "english": "man",
     "garo": "Me·asa",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-127): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended."
   },
   {
     "english": "woman",
@@ -20660,15 +20661,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "Boy",
-    "garo": "ko·ka",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "Brave",
     "garo": "pa·a",
     "pos": null,
@@ -22145,15 +22137,6 @@
     "garo": "e·ching",
     "pos": null,
     "category": "food",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Girl",
-    "garo": "ko·ki",
-    "pos": null,
-    "category": "uncategorized",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
@@ -40361,8 +40344,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:me·-a-sa",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-127): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended. (bound root, as used in me·a bi·sa=boy)",
+    "confidence": "verified_high"
   },
   {
     "english": "man (male)",
@@ -78407,5 +78390,131 @@
     "classifier": "sak",
     "notes": "VERIFIED/HIGH — Project Owner confirmed directly with Thangseng; verbal/native validation (2026-09-04, no written transcript exists for this exchange, per Project Owner statement). Chattro doubles as the standard/unmarked 'student' term and the explicit 'male student' form when contrast with Chattri (female student) is needed, like English 'actor'. Counting series added to close a live gap: 'N male student' had no exact dictionary entry and fell through to the generic ge· classifier fallback instead of the correct sak classifier. Mechanically built using the already-VERIFIED sak classifier (no raka dot, NV-124) + NUMBERS suffix table, identical values to the pre-existing 'N student' series (same root, same classifier).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "male",
+    "garo": "Me·asa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-127): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "married or elderly man",
+    "garo": "me·apa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-127): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "female",
+    "garo": "Me·chik",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-127): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "married or elderly woman",
+    "garo": "Me·chikma",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-127): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "girl",
+    "garo": "me·chik bi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-127): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended. Retained as an attested alternate alongside the pre-existing VERIFIED/HIGH standalone form — not substituted; both stand.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "boy",
+    "garo": "me·a bi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-127): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended. Retained as an attested alternate alongside the pre-existing VERIFIED/HIGH standalone form — not substituted; both stand.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "Boy",
+    "garo": "ko·ka",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "Girl",
+    "garo": "ko·ki",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i came to eat",
+    "garo": "Anga cha·na re·baa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026, closing the -na purpose-clause question (NV-128): \"Anga cha·na re·baa.\"=I came to eat, \"Cha·na re·baa.\"=I came to eat (subject omitted), \"Anga kam ka·na re·baa.\"=I came to work, \"Kam ka·na re·baa.\"=I came to work (subject omitted). Confirms -na as the normal way to express \"to + verb\" (purpose/infinitive), consistent with the already-VERIFIED \"went\" pair from NV-111 (Anga cha·na re·angaha/Anga kam ka·na re·angaha) and RULE-009's dative/infinitive-purposive -na entry. CLOSED per Project Owner instruction.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "came to eat",
+    "garo": "Cha·na re·baa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026, closing the -na purpose-clause question (NV-128): \"Anga cha·na re·baa.\"=I came to eat, \"Cha·na re·baa.\"=I came to eat (subject omitted), \"Anga kam ka·na re·baa.\"=I came to work, \"Kam ka·na re·baa.\"=I came to work (subject omitted). Confirms -na as the normal way to express \"to + verb\" (purpose/infinitive), consistent with the already-VERIFIED \"went\" pair from NV-111 (Anga cha·na re·angaha/Anga kam ka·na re·angaha) and RULE-009's dative/infinitive-purposive -na entry. CLOSED per Project Owner instruction. (subject omitted)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i came to work",
+    "garo": "Anga kam ka·na re·baa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026, closing the -na purpose-clause question (NV-128): \"Anga cha·na re·baa.\"=I came to eat, \"Cha·na re·baa.\"=I came to eat (subject omitted), \"Anga kam ka·na re·baa.\"=I came to work, \"Kam ka·na re·baa.\"=I came to work (subject omitted). Confirms -na as the normal way to express \"to + verb\" (purpose/infinitive), consistent with the already-VERIFIED \"went\" pair from NV-111 (Anga cha·na re·angaha/Anga kam ka·na re·angaha) and RULE-009's dative/infinitive-purposive -na entry. CLOSED per Project Owner instruction.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "came to work",
+    "garo": "Kam ka·na re·baa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026, closing the -na purpose-clause question (NV-128): \"Anga cha·na re·baa.\"=I came to eat, \"Cha·na re·baa.\"=I came to eat (subject omitted), \"Anga kam ka·na re·baa.\"=I came to work, \"Kam ka·na re·baa.\"=I came to work (subject omitted). Confirms -na as the normal way to express \"to + verb\" (purpose/infinitive), consistent with the already-VERIFIED \"went\" pair from NV-111 (Anga cha·na re·angaha/Anga kam ka·na re·angaha) and RULE-009's dative/infinitive-purposive -na entry. CLOSED per Project Owner instruction. (subject omitted)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the big red house",
+    "garo": "Dal·gipa gitchak nok",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "OPEN — native relay via Tridip, WhatsApp 4/9/2026 (NV-129). Thangseng gave this as one native-provided example sentence; explicitly NOT to be marked VERIFIED and NOT to be used to infer a general/firm adjective-order rule (Project Owner instruction). Recorded as-is for future native clarification. Still a genuine open candidate — see the 3 already-VERIFIED 'big red house' orderings (NV-110) for the pre-existing tied variants this example does not yet reconcile with.",
+    "confidence": "open"
+  },
+  {
+    "english": "the small white house",
+    "garo": "Chon·gipa gipok nok",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "OPEN — native relay via Tridip, WhatsApp 4/9/2026 (NV-129). Thangseng gave this as one native-provided example sentence; explicitly NOT to be marked VERIFIED and NOT to be used to infer a general/firm adjective-order rule (Project Owner instruction). Recorded as-is for future native clarification. Still a genuine open candidate — see the 3 already-VERIFIED 'big red house' orderings (NV-110) for the pre-existing tied variants this example does not yet reconcile with.",
+    "confidence": "open"
   }
 ]

@@ -4079,5 +4079,15 @@
   "nineteen male student": "education",
   "twenty male student": "education",
   "two male students": "education",
-  "three male students": "education"
+  "three male students": "education",
+  "male": "general",
+  "married or elderly man": "general",
+  "female": "general",
+  "married or elderly woman": "general",
+  "i came to eat": "general",
+  "came to eat": "general",
+  "i came to work": "general",
+  "came to work": "general",
+  "the big red house": "general",
+  "the small white house": "general"
 }

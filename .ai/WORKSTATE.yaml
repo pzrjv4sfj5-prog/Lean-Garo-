@@ -907,7 +907,47 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-04B (Claude A): NV-126 --
+  pending_thangseng_questions: '2026-09-04D (Claude A): NV-128/NV-129
+    -- direct Thangseng relay via Tridip, WhatsApp 4/9/2026. NV-128
+    (purpose -na, CLOSED): confirmed -na as the normal "to + verb"
+    marker with 4 new native sentence examples (I came to eat/work,
+    subject-included and -omitted); added as 4 new VERIFIED/HIGH
+    master_dictionary.json rows, extends NV-111''s existing "went"
+    pair. RULE-009.yaml updated with the citation. NV-129 (adjective
+    order, OPEN/PRELIMINARY per explicit Project Owner instruction --
+    NOT marked VERIFIED, NOT used to infer a general rule): 2 new
+    example sentences ("the big red house", "the small white house")
+    added at confidence="open", recorded as-is, doesn''t reconcile
+    with the pre-existing 3 tied VERIFIED "big red house" orderings
+    from NV-110 -- left as a genuine open question. Gate clean:
+    8274/8274, 9/9, 314/314, 0 new violations.
+    ---
+    2026-09-04C (Claude A): NV-127 -- direct Thangseng relay via
+    Tridip, WhatsApp 4/9/2026 1:53-1:55pm, resolves the boy/girl/man/
+    woman question first raised 2026-09-03: "Me''chik can mean both
+    female and woman. Me.chikma is a married or an elderly woman...
+    me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa
+    = married or an elderly man." Promoted existing unverified "man"=
+    Me\u00b7asa and "man (male)"=me\u00b7a to VERIFIED/HIGH; added new
+    rows "male"=Me\u00b7asa, "female"=Me\u00b7chik, "married or
+    elderly man"=me\u00b7apa, "married or elderly woman"=Me\u00b7chikma,
+    "boy"=me\u00b7a bi\u00b7sa, "girl"=me\u00b7chik bi\u00b7sa (all
+    VERIFIED/HIGH). The new boy/girl compound forms are tagged
+    variant/VERIFIED/HIGH and the pre-existing "Boy"=ko\u00b7ka/
+    "Girl"=ko\u00b7ki moved to array-end so pickPrimary''s tie-break
+    keeps ko\u00b7ka/ko\u00b7ki as the shipped primary (live-verified
+    unchanged) with the new compositional forms as genuine VERIFIED
+    alternates, not replacements -- a repository-intelligence Check F
+    (runtime-cascade mismatch vs. phrase_maps.js hardcoded boy/girl)
+    surfaced and was resolved this way, not allowlisted. Project
+    Owner clarified per-turn that bi\u00b7sa retains its existing
+    "kid/child" sense (not a new meaning) -- me\u00b7chik/me\u00b7a
+    are the female/male roots doing the actual gendering work in the
+    compounds; no dictionary change needed for that clarification,
+    already consistent with how NV-127 was recorded. Gate clean:
+    8274/8274, 9/9, 314/314, 0 new violations.
+    ---
+    2026-09-04B (Claude A): NV-126 --
     Chattro/Chattri gendered student pair. Project Owner confirmed
     (verbal/native validation with Thangseng, no written transcript,
     same provenance basis as NV-125) that Chattro is the standard/
