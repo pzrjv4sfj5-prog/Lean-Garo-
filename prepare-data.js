@@ -253,7 +253,7 @@ function cleanRakka(str) {
   return str.replace(/\s+·/g, '·');
 }
 
-function pickPrimary(entries, key) {
+function pickPrimary(entries, key, infinitiveVerbForm) {
   // IMPORTANT: base case must match the OLD behavior exactly (last value
   // wins, by file/array processing order), not a "smart" heuristic. A
   // previous version sorted by length-then-alphabetical, which picked
@@ -364,6 +364,34 @@ function pickPrimary(entries, key) {
   // among the tied VERIFIED neutral candidates only, and logs it into the
   // same PICKPRIMARY_VERIFIED_TIES.md report as the branch below.
   if (!isInfinitiveKey && verifiedNeutral.length > 1) {
+    // Handoff B item 8 fix (2026-09-06, Claude B — docs/HANDOFF_CLAUDE_B_
+    // 20260906.md, re-confirmed still open in docs/CLAUDE_C_REAUDIT_
+    // 20260906B.md): this is exactly the "answer" case — 'answer'/
+    // Aganchaka (verb, NV-077) and 'Answer'/Aganchakani (noun, NV-077,
+    // distinct POS by Claude A's own confirmed note) both land here as a
+    // genuine two-way VERIFIED/HIGH tie, and last-write-wins previously
+    // shipped whichever happened to sort last (Aganchakani, the noun) —
+    // wrong for a bare/citation key, only masked at runtime by
+    // corrections.json overriding back to the verb form. This is NOT this
+    // function guessing which SENSE is primary (that's still Claude A's
+    // call, same restraint as every other branch here) — it only uses a
+    // signal already present in the dictionary's own established
+    // convention: a bare key that coincides with the value of its own
+    // "to <key>" verified infinitive entry IS the verb/citation form,
+    // exactly the same "to X" -> "X" relationship prepare-data.js's own
+    // bare-infinitive alias generator and morphologyEngine.js's
+    // infinitive-preference check already rely on elsewhere in this
+    // codebase. When that signal picks out exactly one of the tied
+    // candidates, it wins; otherwise falls through unchanged to the
+    // existing last-write-wins tie-break (still logged/reported exactly
+    // as before) — no new sense judgment invented, no other tie shape
+    // affected.
+    if (infinitiveVerbForm) {
+      const matchesInfinitive = verifiedNeutral.filter(e => e.v === infinitiveVerbForm);
+      if (matchesInfinitive.length === 1) {
+        return { value: matchesInfinitive[0].v, verifiedSelection: true };
+      }
+    }
     const chosen = verifiedNeutral[verifiedNeutral.length - 1].v;
     console.log(`pickPrimary: '${key}' has ${verifiedNeutral.length} tied VERIFIED/HIGH non-variant candidates (${verifiedNeutral.map(e => e.v).join(', ')}) — excluding lower-confidence candidates, falling back to last-write-wins among the verified candidates only. Needs Claude A disambiguation — not resolved here.`);
     pickPrimaryVerifiedTies.push({ key, candidates: verifiedNeutral.map(e => e.v), chosen });
@@ -493,6 +521,29 @@ function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}
   // normalizeFile's `superseded` return above). Reported, not shipped.
   const heldSupersededOnly = {};
 
+  // Handoff B item 8 fix (2026-09-06, Claude B): precompute, for every
+  // bare key, the value of its own "to <key>" sibling entry when that
+  // sibling has an unambiguous VERIFIED/HIGH (or sole) candidate — used
+  // only as a tie-break signal in pickPrimary's verifiedNeutral.length>1
+  // branch above. Built once, up front, since Object.keys(mergedValues)
+  // iteration order doesn't guarantee "to X" is processed before "X".
+  // Deliberately mirrors, not invents: this is the same "to X" bare-verb
+  // relationship prepare-data.js's own bare-infinitive alias generator
+  // (below) already treats as authoritative.
+  const infinitiveVerbForms = {};
+  Object.keys(mergedValues).forEach(key => {
+    if (!key.startsWith('to ')) return;
+    const lemma = key.slice(3).split('(')[0].trim();
+    if (!lemma) return;
+    const candidates = mergedValues[key]
+      .map(e => ({ v: cleanRakka(e.v), isVerified: e.isVerified }))
+      .filter(e => Boolean(e.v));
+    if (!candidates.length) return;
+    const verified = candidates.filter(e => e.isVerified);
+    if (verified.length === 1) infinitiveVerbForms[lemma] = verified[0].v;
+    else if (candidates.length === 1) infinitiveVerbForms[lemma] = candidates[0].v;
+  });
+
   Object.keys(mergedValues).forEach(key => {
     const supersededValues = supersededByKey[key];
     const cleanedEntries = mergedValues[key]
@@ -536,7 +587,7 @@ function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}
       }
       return;
     }
-    const { value: primary, verifiedSelection } = pickPrimary(cleanedEntries, key);
+    const { value: primary, verifiedSelection } = pickPrimary(cleanedEntries, key, infinitiveVerbForms[key]);
     finalized[key] = primary;
     if (verifiedSelection) verifiedKeys.add(key);
     if (cleanedEntries.length > 1) {
