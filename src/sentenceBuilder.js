@@ -100,6 +100,21 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
     // confirmed root cause risks masking genuine ed$/s$-stripped verbs.
     const ingStripped = lw.replace(/ing$/,'');
     const ingLookup = (ingStripped !== lw && !(ingStripped in PRONOUN_MAP)) ? lookupGaro(ingStripped) : null;
+    // Handoff B item 1 fix (2026-09-06, Claude B): "-y->-ies" and
+    // "-f/-fe->-ves" pluralization must be tried BEFORE the generic s$
+    // strip below, not after. Root cause (fully traced in
+    // docs/HANDOFF_CLAUDE_B_20260906.md item 1): "leaves" has no
+    // dictionary entry of its own, so it fell through to the generic s$
+    // strip -> "leave", which unintentionally resolves via
+    // prepare-data.js's bare-infinitive alias for "to leave" ("Re·ongkata")
+    // instead of ever reaching "leaf" (bi·jak). Trying the irregular
+    // plural forms first means "leaves" resolves directly to "leaf" and
+    // never falls through to the "leave" alias at all. Same fix closes
+    // "babies"/"cities" (previously hard [UNKNOWN], no y->ies rule
+    // existed) and "knives" (previously only resolved by fuzzy-match
+    // accident at .55 confidence).
+    const yIesForm = /ies$/.test(lw) ? lw.replace(/ies$/, 'y') : null;
+    const vesForms = /ves$/.test(lw) ? [lw.replace(/ves$/, 'fe'), lw.replace(/ves$/, 'f')] : null;
     // Item 3 fix (2026-08-23, Claude B, session migration): the s$-only
     // strip left sibilant-ending plurals ("boxes"->"boxe", "wishes"->
     // "wishe") unresolved, so the noun was silently dropped from output
@@ -112,6 +127,8 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
     return lookupPhrase(lw) || lookupGaro(lw)
       || IRREGULAR_VERBS[lw]
       || ingLookup || lookupGaro(lw.replace(/ed$/,''))
+      || (yIesForm && lookupGaro(yIesForm))
+      || (vesForms && (lookupGaro(vesForms[0]) || lookupGaro(vesForms[1])))
       || lookupGaro(lw.replace(/s$/,'')) || lookupGaro(lw.replace(/es$/,'')) || null;
   });
   const validTranslations = translated.filter(Boolean);
