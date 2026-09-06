@@ -111,11 +111,17 @@ role boundary (Claude A doesn't edit test code):
    respectively — the underlying translate() behavior is now correct.
 
 ## Push and resync
-Committed. `git fetch` immediately before push showed no further
-remote movement (`origin/main` still `bd34301`). Pushed fast-forward.
+Committed (`c8e2c57`). `git fetch` before push found remote had moved
+again to `f4f5f5d` (Claude B, "Trace-only: root-cause investigation of
+'it's/it is very hot (today)' composition failures" — a trace/
+investigation commit, no data or engine changes). Rebased clean, no
+conflicts; rebuilt `prepare-data.js` artifacts; re-ran full gate
+(unchanged: 8257/8257, 9/9, 0 new RI violations, same 5 known/expected
+unit-test handoff failures, nothing new). Committed the rebuild
+(`07b4ad6`) and pushed fast-forward with no further remote movement.
 
 ## Repository status at close
-- [x] HEAD hash: verified == `origin/main` (see final push output)
+- [x] HEAD hash: verified == `origin/main` == `07b4ad6`
 - [x] `git status` clean, no untracked files
 - [x] `.ai/WORKSTATE.yaml` updated (this session's work appended)
 - [x] `.ai/SESSION_BOOTSTRAP.md` — no standing-rule changes, not touched
