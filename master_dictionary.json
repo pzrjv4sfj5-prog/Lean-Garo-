@@ -13539,25 +13539,29 @@
     "english": "what dog?",
     "garo": "ma mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "what cat?",
     "garo": "ma mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "what bird?",
     "garo": "ma mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "what fish?",
     "garo": "ma mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "what teacher?",
@@ -13599,25 +13603,29 @@
     "english": "where dog?",
     "garo": "kade mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "where cat?",
     "garo": "kade mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "where bird?",
     "garo": "kade mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "where fish?",
     "garo": "kade mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "where teacher?",
@@ -13659,25 +13667,29 @@
     "english": "when dog?",
     "garo": "bale mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "when cat?",
     "garo": "bale mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "when bird?",
     "garo": "bale mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "when fish?",
     "garo": "bale mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "when teacher?",
@@ -13719,25 +13731,29 @@
     "english": "why dog?",
     "garo": "bang·a mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "why cat?",
     "garo": "bang·a mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "why bird?",
     "garo": "bang·a mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "why fish?",
     "garo": "bang·a mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "why teacher?",
@@ -13779,25 +13795,29 @@
     "english": "how dog?",
     "garo": "kamat mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how cat?",
     "garo": "kamat mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how bird?",
     "garo": "kamat mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how fish?",
     "garo": "kamat mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how teacher?",
@@ -13839,25 +13859,29 @@
     "english": "who dog?",
     "garo": "ko mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "who cat?",
     "garo": "ko mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "who bird?",
     "garo": "ko mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "who fish?",
     "garo": "ko mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "who teacher?",
@@ -13899,25 +13923,29 @@
     "english": "which dog?",
     "garo": "ma·si mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "which cat?",
     "garo": "ma·si mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "which bird?",
     "garo": "ma·si mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "which fish?",
     "garo": "ma·si mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "which teacher?",
@@ -13959,25 +13987,29 @@
     "english": "how many dog?",
     "garo": "kama mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how many cat?",
     "garo": "kama mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how many bird?",
     "garo": "kama mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how many fish?",
     "garo": "kama mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how many teacher?",
@@ -14019,25 +14051,29 @@
     "english": "how much dog?",
     "garo": "kama mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how much cat?",
     "garo": "kama mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how much bird?",
     "garo": "kama mang?",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how much fish?",
     "garo": "kama mang?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED (2026-09-06, Claude B) — Handoff B item 6 (docs/HANDOFF_CLAUDE_B_20260906.md): this whole row was an unverified, uncited question-template guess that used the generic animal-classifier placeholder 'mang' instead of a real species-specific noun lookup (e.g. 'where is the cat?' -> 'kade mang?' instead of composing with 'Menggo'). Root-caused: the literal phrase-table row was intercepting input before it ever reached the working sov-assembly composition path that animals WITHOUT their own placeholder row (cow, goat, etc.) already use correctly. Removing it (not correcting the value in place, since this row carries no native citation to correct against) lets sov-assembly compose these the same way. Retained per citation discipline, not deleted."
   },
   {
     "english": "how much teacher?",
