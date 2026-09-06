@@ -377,11 +377,15 @@ maikai = "how" (VERIFIED/HIGH, NV-122) also confirmed usable as a purpose
   previously only gloss-level for that sense.
 ```
 
-**Open tension, not resolved:** NV-129's citations use `merong` for "rice" and
-`Gisik nange poraibo` for "study hard", neither of which match this doc's
-existing dictionary entries (`rice`=`mi`, `study`=`po·ri·a`). Left as flagged
-tensions in `master_dictionary.json`'s new rows — do not silently merge or
-assume synonymy without a direct citation asking about it.
+**Tensions from NV-129, status update (2026-09-06):** NV-129's citations use
+`merong` for "rice" and `Gisik nange poraibo` for "study hard", neither of
+which match this doc's existing dictionary entries (`rice`=`mi`, `study`=
+`po·ri·a`). The `merong`/`mi` rice tension was resolved at NV-133
+(cooked/uncooked distinction, not competing roots). The `poraibo`/`po·ri·a`
+study tension was resolved at NV-147: `poraibo` is the imperative mood form
+("study sincerely"), contrasted with `poraia` (statement, "studies
+sincerely") — `po·ri·a` remains the unaffected general/citation-form root.
+Both tensions closed; see `docs/THANGSENG_NATIVE_VALIDATION.md` NV-133/NV-147.
 
 ---
 

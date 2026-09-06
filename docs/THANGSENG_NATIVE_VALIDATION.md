@@ -6841,3 +6841,145 @@ rows added to `master_dictionary.json` as `unverified`, cross-
 referencing each other. Not picked — routed to
 `docs/THANGSENG_RELAY_QUESTION_20260906.md` for Thangseng to
 adjudicate.
+
+## NV-142 (2026-09-06 evening, direct Thangseng relay via Project Owner/WhatsApp) — `ball` = `robol`
+
+**Answer (relayed):** `ball` = `robol`. Resolves a previously-missing
+vocabulary item — no prior candidate was on file.
+
+**Action taken:** `master_dictionary.json`: `"ball"` → `"robol"`,
+`verified_high`, citing this NV.
+
+## NV-143 (2026-09-06 evening, direct Thangseng relay via Project Owner/WhatsApp) — `pole (post/pillar)` = `krong`, scoped
+
+**Answer (relayed):** `krong` covers the post/pillar sense of "pole"
+only. Thangseng explicitly has no reference for other senses (flagpole,
+fishing pole, ski pole, etc.) — **not** logged as a blanket `"pole"` key.
+
+**Corroboration:** the existing `"post"` = `krong` candidate (previously
+`UNVERIFIED/HIGH`, with two further unverified variants `pak·ri·ni
+krong`/`song·chi` left untouched) is the same root, same sense. Promoted
+to `verified_high` on the strength of this citation.
+
+**Action taken:** `master_dictionary.json`: added `"pole (post/pillar)"`
+→ `"krong"` (`verified_high`, new row); promoted the existing `"post"` →
+`"krong"` row to `verified_high`, both citing NV-143.
+
+## NV-144 (2026-09-06 evening, direct Thangseng relay via Project Owner/WhatsApp) — `small cat` = `Menggo chona`; Project Owner-directed generalization
+
+**Answer (relayed):** `small cat` = `Menggo chona` — noun-then-adjective
+order, using `chona` (also spelled `chone`), not the previously-shipped
+`chik Menggo` (adjective-then-noun, using `chik`, already confirmed not
+a real word — see NV-135's closing confirmation). This is the only
+`small [noun]` row Thangseng was actually asked about.
+
+**Project Owner instruction (separate provenance, per
+`.ai/PROJECT_OWNER_AUTHORITY.md`):** generalize both the root swap
+(`chik`→`chona`) and the word-order flip (noun-then-adjective) to every
+other `small [noun]` row (person/dog/bird/fish/teacher/student/house/
+tree/book/car/apple/banana/rice/water) — 14 rows. This is a Project
+Owner instruction layered on top of one directly-confirmed native fact,
+**not** independent native evidence for each of those 14 nouns.
+Provenance kept honest in each row's own note; confidence deliberately
+left `unverified` for all 14 (only `small cat` itself is `verified_high`).
+
+**Canonical spelling:** `chona` used (matches the literal relay text);
+`chone` noted as an attested variant of the same word. The pre-existing
+bare `"small"` = `Chon·a` (`verified_high`, NV-080) is very likely the
+same root written with the raka mark — **not merged**, flagged for a
+future direct confirmation.
+
+**Action taken:** `master_dictionary.json`: `"small cat"` → `"Menggo
+chona"` (`verified_high`, citing NV-144); the other 14 `"small [noun]"`
+rows updated to noun-then-adjective + `chona`, confidence left
+`unverified`, each row's note distinguishing native evidence from
+Project Owner authority.
+
+## NV-145 (2026-09-06 evening, direct Thangseng relay via Project Owner/WhatsApp) — `leave`/`leaves` disambiguated by sense
+
+**Answer (relayed):**
+- Act of leaving (verb, infinitive) = `re·anga` — supersedes
+  `Re·ongkata` (previously `unverified` for `"to leave"`).
+- Tree leaves (plural noun) = `bijakrang` — the missing plural form that
+  was causing a runtime collision (`"leaf"` vs `"leaves"` both resolving
+  to the unmarked singular).
+- `leaf` (singular) also has a legitimate alternate compound, `bol
+  bijak` (tree+leaf) — `bijak`/`bi·jak` stays primary.
+
+**OPEN TENSION, not resolved here:** `re·anga` is the identical string
+already on file as `verified_high` for `"went"` (NV-100, disambiguated
+there from `"go"`=`re·a`). This relay gives no indication whether
+`"went"` and `"to leave"` (infinitive) are genuinely homophonous forms
+of a shared departure concept, or whether this citation is better read
+as a different tensed/derived form of the same go/leave root rather
+than a true infinitive. Flagged for the next Thangseng relay question —
+same discipline as the `get`/`can` `man·a` collision (NV-140). Logged in
+`src/data/known_dictionary_conflicts.json` (Check C) with this NV as the
+citation trail, per Rule 8.
+
+**Reopened/corrected:** `bol·bi·jak`'s row (previously `superseded`,
+"not selected" per NV-080) is corrected to `verified_high` (alternate)
+— this session's direct citation confirms it as a genuine alternate
+compound, not a rejected candidate. `bi·jak` remains primary, unchanged.
+
+**Action taken:** `master_dictionary.json`: `Re·ongkata` marked
+`superseded`, citing NV-145; added `"to leave"` → `"re·anga"`
+(`verified_high`); added `"leaves"` → `"bijakrang"` (`verified_high`);
+corrected `bol·bi·jak`'s row from `superseded` to `verified_high`
+(alternate).
+
+**Runtime handoff (Claude B):** 2 unit-test regressions in
+`tests/unit/plural_morphology_ies_ves.test.js` are a *direct, expected*
+consequence of this NV, not a bug — the tests hardcode the pre-fix
+values (`"leaves"`→`bi·jak` fallback, bare `"leave"`→`Re·ongkata`) that
+this citation supersedes. Live-verified via `translate()`:
+`"leaves"`→`bijakrang` (0.98), `"leave"`→`donbo` (see NV-146, 0.98),
+`"to leave"`→`re·anga` (0.98) — all three now correct per native
+evidence. Test assertions need updating to the new expected values;
+left untouched this session per role boundary (Claude A doesn't edit
+test code).
+
+## NV-146 (2026-09-06 evening, direct Thangseng relay via Project Owner/WhatsApp) — sentence: "leave me alone." = `angko saksan donbo`
+
+**New items:** `angko` = "me" (object form of `anga`, promotes the
+existing unverified `"me"`=`Angko` row to `verified_high`); `saksan` =
+"alone" (imperative-sentence use); `donbo` = "leave" (imperative).
+
+**OBSERVATION, not asserted as confirmed:** `donbo` (imperative "leave")
+is a third distinct form associated with "leave", alongside NV-145's
+infinitive `re·anga` and the superseded `Re·ongkata`. This
+imperative-vs-infinitive split looks structurally parallel to NV-147's
+`poraibo`/`poraia` mood pattern for "study" below — worth asking
+Thangseng directly whether "leave" follows the same pattern, not
+assumed here.
+
+**OPEN TENSION flagged, not resolved:** `saksan` here for "alone"
+collides with the existing `"alone"` = `ak·sa` (unverified, no
+citation) and is also independently on file (unverified) as
+`"loneliness"` = `Saksan`. Both `"alone"` candidates left on file,
+neither picked.
+
+**Action taken:** `master_dictionary.json`: added `"leave me alone"` →
+`"angko saksan donbo"` (`verified_high`); added `"leave"` → `"donbo"`
+(`verified_high`, imperative, with the mood-pattern observation note);
+promoted `"me"` → `"Angko"` to `verified_high`; added a cross-reference
+note to the existing `"alone"` = `ak·sa` row flagging the `saksan`
+tension.
+
+## NV-147 (2026-09-06 evening, direct Thangseng relay via Project Owner/WhatsApp) — NV-129 `study` tension resolved: mood distinction, not competing roots
+
+**Answer (relayed):** `Gisik nange poraibo` = "study sincerely"
+(imperative); `Gisik nange poraia` = "studies sincerely"
+(statement/declarative).
+
+**Finding, CLOSED:** resolves the tension flagged at NV-129's close
+(`Gisik nange poraibo` vs. the existing dictionary root `study`=
+`po·ri·a`, carried open across `docs/CLAUDE_A_SESSION_MIGRATION_20260905.md`
+and several successors) — not competing roots after all, but an
+imperative/declarative mood distinction. `po·ri·a` remains the
+general/citation-form root, unaffected by this resolution.
+
+**Action taken:** `master_dictionary.json`: added `"study sincerely"` →
+`"Gisik nange poraibo"` (`verified_high`, imperative) and `"studies
+sincerely"` → `"Gisik nange poraia"` (`verified_high`, statement), each
+citing NV-147 and cross-referencing the other.

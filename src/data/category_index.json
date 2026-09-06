@@ -4100,5 +4100,12 @@
   "finish": "verbs",
   "find": "verbs",
   "milled rice": "food",
-  "she will not be able to finish the difficult work tomorrow": "phrases"
+  "she will not be able to finish the difficult work tomorrow": "phrases",
+  "ball": "general",
+  "pole (post/pillar)": "general",
+  "leaves": "nature",
+  "leave me alone": "phrases",
+  "leave": "general",
+  "study sincerely": "education",
+  "studies sincerely": "education"
 }

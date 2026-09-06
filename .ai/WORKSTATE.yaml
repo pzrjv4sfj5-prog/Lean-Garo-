@@ -1,5 +1,5 @@
 repository:
-  head: 7c7c928
+  head: bd34301
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,8 +313,43 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906E.md - THIS IS THE
-    AUTHORITATIVE MIGRATION DOC as of 2026-09-06E. Resumed mid-session with a
+  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906F.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC as of 2026-09-06F. Resumed from 20260906E;
+    git fetch showed origin/main had moved to bd34301 (Claude B engineering,
+    Handoff B items 2/4/6/8) since that doc closed -- pulled clean, full gate
+    reconfirmed green before starting. Processed items 8-14 of the
+    2026-09-05-evening Thangseng batch (items 1-6/11 were already NV-137-141
+    in 20260906E; item 7 tied-sentence already on file) -- these matched the
+    unsent draft prompt in docs/CLAUDE_C_SESSION_MIGRATION_20260906D.md.
+    NV-142 (ball=robol), NV-143 (pole/post/pillar=krong, scoped; promoted
+    existing post=krong to verified_high), NV-144 (small cat=Menggo chona,
+    verified_high; generalized chik->chona + word-order flip to the other 14
+    small-[noun] rows on PROJECT OWNER AUTHORITY, left unverified, provenance
+    kept distinct per row), NV-145 (leave/leaves: to-leave=re·anga supersedes
+    Re·ongkata, leaves(plural)=bijakrang new, bol·bi·jak reopened
+    superseded->verified_high alternate; flagged NOT resolved: re·anga now
+    double-duties for "went"(NV-100) and "to leave" -- added to
+    known_dictionary_conflicts.json), NV-146 (sentence "leave me
+    alone"=angko saksan donbo; promoted me=Angko verified_high; added
+    leave(imperative)=donbo; flagged mood-pattern parallel to NV-147 and a
+    saksan/ak·sa "alone" tension, neither resolved), NV-147 (closes the
+    long-open NV-129 study tension as an imperative/statement mood
+    distinction: poraibo vs poraia, po·ri·a unaffected; updated stale note in
+    docs/GARO_GRAMMAR_REFERENCE.md §7). Appended 3 more open questions to
+    docs/THANGSENG_RELAY_QUESTION_20260906.md (now 6 total, still unsent).
+    Runtime Handoff to Claude B: 5 unit-test failures in
+    adjective_animal_mang_placeholder.test.js (3) and
+    plural_morphology_ies_ves.test.js (2) are direct/expected consequences of
+    this session''s data changes (small-noun word-order flip; leave/leaves
+    resolution) outrunning hardcoded test assertions -- data is correct
+    (live-verified via translate()), tests need updating, NOT reverted; see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260906F.md for exact fix guidance. Full
+    gate otherwise green: 8257/8257 dictionary, 9/9 grammatical corrections,
+    0 new repository-intelligence.js violations (1 self-consistency conflict
+    allowlisted per Rule 8), 0 resync candidates.'
+
+  next_action_20260906E: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906E.md -
+    PRIOR migration doc, chained below. Resumed mid-session with a
     stale audit note claiming origin/main==a52f5e5 and describing bdc5af7/
     NV-136 as unpublished -- git fetch showed origin/main was actually
     7afc92b; bdc5af7 already an ancestor; the repo''s real NV-136 (big:

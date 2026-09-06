@@ -3535,7 +3535,8 @@
     "english": "to leave",
     "garo": "Re·ongkata",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-145 (2026-09-06 evening, direct Thangseng relay via Project Owner/WhatsApp): 'to leave' (act of leaving, verb) is confirmed as 're·anga', not 'Re·ongkata'. Retained per citation discipline, not deleted."
   },
   {
     "english": "to wait",
@@ -4472,7 +4473,8 @@
     "english": "me",
     "garo": "Angko",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — promoted by NV-146 (2026-09-06 evening relay): appears as 'angko' (object form of 'anga') in the native-confirmed sentence 'leave me alone' = 'angko saksan donbo'."
   },
   {
     "english": "you (singular)",
@@ -14327,102 +14329,108 @@
   },
   {
     "english": "small person",
-    "garo": "chik mande",
+    "garo": "mande chona",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation."
   },
   {
     "english": "small dog",
-    "garo": "chik Achak",
+    "garo": "Achak chona",
     "category": "animals",
     "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "small cat",
-    "garo": "chik Menggo",
+    "garo": "Menggo chona",
     "category": "animals",
-    "confidence": "unverified",
-    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-144, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch). Native evidence: 'small cat' = 'Menggo chona' (noun-then-adjective order), replacing the previously-shipped 'chik Menggo' (adjective-then-noun, using 'chik', which Thangseng has separately confirmed is not a real word — see the 'gonga'/'chik' closing-confirmation note on NV-135). This is the only 'small [noun]' row with direct native confirmation; the other 14 rows in this template are updated on Project Owner authority (per .ai/PROJECT_OWNER_AUTHORITY.md's provenance-category distinction), not on independent native evidence for each noun — see their own notes."
   },
   {
     "english": "small bird",
-    "garo": "chik do·o",
+    "garo": "do·o chona",
     "category": "animals",
     "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "small fish",
-    "garo": "chik na·tok",
+    "garo": "na·tok chona",
     "category": "food",
     "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "small teacher",
-    "garo": "chik skigipa",
+    "garo": "skigipa chona",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation."
   },
   {
     "english": "small student",
-    "garo": "chik Chattro",
+    "garo": "Chattro chona",
     "category": "education",
     "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small house",
-    "garo": "chik Nok",
+    "garo": "Nok chona",
     "category": "home",
     "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small tree",
-    "garo": "chik Bol",
+    "garo": "Bol chona",
     "category": "nature",
     "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small book",
-    "garo": "chik ki·tap",
+    "garo": "ki·tap chona",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'chik kitab'."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'chik kitab'.",
+    "confidence": "unverified"
   },
   {
     "english": "small car",
-    "garo": "chik mot",
+    "garo": "mot chona",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation."
   },
   {
     "english": "small apple",
-    "garo": "chik se",
+    "garo": "se chona",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation."
   },
   {
     "english": "small banana",
-    "garo": "chik sobo",
+    "garo": "sobo chona",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation."
   },
   {
     "english": "small rice",
-    "garo": "chik mi",
+    "garo": "mi chona",
     "category": "food",
     "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "small water",
-    "garo": "chik Chi",
+    "garo": "Chi chona",
     "category": "food",
     "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "notes": "Word order changed to noun-then-adjective and 'chik' replaced with 'chona', per Project Owner instruction generalizing NV-144's directly-confirmed 'small cat' = 'Menggo chona' to every 'small [noun]' row (Project Owner authority, not independent native evidence for this specific noun — see .ai/PROJECT_OWNER_AUTHORITY.md category distinction). Confidence deliberately left unverified: only 'small cat' itself has direct Thangseng confirmation. 'chik' was already known not to be a real Garo word (Thangseng's own 'gonga?'-style non-recognition, closing-confirmation on NV-135). Canonical spelling 'chona' used per this session's literal relay text; 'chone' is an attested variant spelling of the same word, and the pre-existing bare 'small' = 'Chon·a' (VERIFIED/HIGH, NV-080) is very likely the same root written with the raka mark — not merged here, flagged for confirmation. Prior note: Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "good person",
@@ -23031,8 +23039,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'leaf' is 'bi·jak'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH (alternate) — reopened and corrected by NV-145 (2026-09-06 evening, direct Thangseng relay): this same-session citation confirms 'bol bijak' (tree+leaf compound) as a genuine alternate form for singular 'leaf', existing alongside 'bijak' rather than being a rejected candidate. 'bi·jak'/'bijak' stays primary per this same relay. Supersedes this row's prior NV-080 framing ('not selected'), which is now understood to have been a primary-selection choice, not a rejection of validity.",
+    "confidence": "verified_high"
   },
   {
     "english": "Learn",
@@ -26866,7 +26874,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
+    "notes": "UNVERIFIED/HIGH OPEN TENSION flagged by NV-146 (2026-09-06 evening relay): the native sentence 'leave me alone' = 'angko saksan donbo' uses 'saksan' for 'alone', not 'ak·sa'. 'saksan' is independently on file (unverified) as 'loneliness'. Not resolved — both 'alone' candidates ('ak·sa', unverified; 'saksan', now directly attested in a native sentence) are left on file rather than merged or picked.",
     "confidence": "unverified"
   },
   {
@@ -43606,8 +43614,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:pak-ri-ni krong / song-chi",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — promoted by NV-143 (2026-09-06 evening, direct Thangseng relay): Thangseng confirmed krong for 'pole (post/pillar)', the same post/pillar sense as this 'post' entry. Was: 'UNVERIFIED/HIGH v:pak-ri-ni krong / song-chi'. The two variant rows ('pak·ri·ni krong', 'song·chi') are unaffected — left unverified, not addressed by this citation.",
+    "confidence": "verified_high"
   },
   {
     "english": "post",
@@ -78821,5 +78829,61 @@
     "category": "phrases",
     "confidence": "unverified",
     "notes": "UNVERIFIED — tied candidate, no native confirmation of which is preferred. Checked against a fresh clone; the discrepancy between this and its sibling candidate is real, not a subtle artifact. Flagged for Thangseng disambiguation rather than picked -- see docs/THANGSENG_RELAY_QUESTION_20260906.md. Same treatment as the existing docs/PICKPRIMARY_VERIFIED_TIES.md ties, logged manually here since neither candidate is yet verified_high."
+  },
+  {
+    "english": "ball",
+    "garo": "robol",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-142, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch). Resolves a previously-missing vocabulary item; no prior candidate on file."
+  },
+  {
+    "english": "pole (post/pillar)",
+    "garo": "krong",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-143, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch). Explicitly scoped by Thangseng to the post/pillar sense only — he has no reference for other senses of 'pole' (flagpole, fishing pole, ski pole, etc.); do not generalize this entry beyond post/pillar. Corroborates the existing 'post'=krong candidate (previously UNVERIFIED/HIGH) — same root, same sense — which this citation now promotes."
+  },
+  {
+    "english": "to leave",
+    "garo": "re·anga",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-145, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch). Supersedes 'Re·ongkata' (see that row). OPEN TENSION, not resolved here: this is the identical string already on file as VERIFIED/HIGH for 'went' (re·anga, NV-100, disambiguated there from 'go'=re·a). This relay gives no indication whether 'went' and 'to leave (infinitive)' are genuinely the same form (departure as a shared underlying concept) or whether this citation is better read as another tensed/derived form of the same 'go/leave' root rather than a true infinitive. Flagged as a collision for the next Thangseng relay question, same discipline as the 'get'/'can' man·a collision (NV-140) — not silently merged or assumed."
+  },
+  {
+    "english": "leaves",
+    "garo": "bijakrang",
+    "category": "nature",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-145, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch). Tree leaves, plural noun — the missing plural form of 'leaf'/'bi·jak' (VERIFIED/HIGH, NV-080) that was causing a runtime lookup collision ('leaf' vs 'leaves' resolving to the same unmarked singular form)."
+  },
+  {
+    "english": "leave me alone",
+    "garo": "angko saksan donbo",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-146, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch)."
+  },
+  {
+    "english": "leave",
+    "garo": "donbo",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH (imperative) — NV-146, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch), from the sentence 'leave me alone.' OBSERVATION, not asserted as confirmed: this is a third distinct form associated with 'leave', alongside 'to leave' (infinitive) = 're·anga' (NV-145) and the superseded 'Re·ongkata'. The imperative/general-verb split here is structurally parallel to NV-147's 'poraibo' (imperative) vs. 'po·ri·a'/'poraia' (statement/infinitive) pattern for 'study' — worth asking Thangseng directly whether 'leave' follows the same imperative-vs-infinitive mood pattern, not assumed here."
+  },
+  {
+    "english": "study sincerely",
+    "garo": "Gisik nange poraibo",
+    "category": "education",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH (imperative) — NV-147, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch). Resolves the open tension flagged at NV-129's close (docs/CLAUDE_A_SESSION_MIGRATION_20260905.md and successors) between 'Gisik nange poraibo' (from NV-129's 'study hard so that you can be successful' sentence) and the existing dictionary root 'study'='po·ri·a': not competing roots after all, but a mood distinction — 'poraibo' is the imperative form, contrasted with NV-147's own 'poraia' (statement/declarative) below. 'po·ri·a' remains the general/citation-form root, unaffected."
+  },
+  {
+    "english": "studies sincerely",
+    "garo": "Gisik nange poraia",
+    "category": "education",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH (statement/declarative) — NV-147, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch). Companion citation to 'Gisik nange poraibo' (imperative) above — see that row for the full resolution of the NV-129 study-root tension."
   }
 ]
