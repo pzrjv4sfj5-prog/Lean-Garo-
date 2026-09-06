@@ -6459,7 +6459,7 @@ dictionary.json`'s `"Menggo"` row is already tagged SUPERSEDED
 both `compiled_dict.json` and live `translate("cat")` already correctly
 ship `meng·gong`. No action needed.
 
-## NV-134 (2026-09-06, direct Project Owner relay) — `cat`: FLAGGED, unresolved native conflict, NOT resolved
+## NV-134 (2026-09-06, direct Project Owner relay) — `cat`: CLOSED by NV-135 below
 
 Source: Direct Project Owner confirmation of Thangseng native
 validation (verbal — Project Owner states this confirmation was
@@ -6548,6 +6548,73 @@ is the cat?"` leaking the bare classifier morpheme `mang`, not a real
 word) is a separate engineering bug, routed to Claude B, not a fifth
 competing citation for `cat` itself — noted here only so a future
 session doesn't mistake it for new evidence.
+
+## NV-135 (2026-09-06, direct Project Owner relay, same-session follow-up) — `cat` = `Menggo`, CLOSES NV-134
+
+Source: Direct Project Owner statement in-session that Thangseng
+confirms `cat` = `Menggo` — explicitly framed as a native confirmation
+to remove the NV-134 ambiguity going forward. Same sourcing shape as
+other verbal-relay-only closures already accepted in this project (see
+NV-125/NV-126 precedent cited in NV-134 itself) — no transcript exists,
+none is fabricated here.
+
+**This is the reconciling answer NV-134 was explicitly waiting on**
+(see NV-134's own "Needed to close this" section and its addendum,
+which had already found the evidentiary picture asymmetric in
+`menggo`'s favor via NV-071's independent 2026-08-11 citation, but
+correctly declined to resolve on documentation-richness alone). With
+an actual direct answer to the reconciling question now in hand, this
+is no longer a bare unarbitrated conflict — closing it, not just
+re-flagging it.
+
+**Resolution:** `Menggo` (capitalized, bare root) is the confirmed
+primary for `cat`. `meng·gong` is superseded — its own citation trail
+never went beyond an undated, unsourced `variant/VERIFIED/HIGH` tag
+(confirmed by NV-134's own archaeology), so nothing is lost by
+retiring it in favor of a form that now has both a fresh direct
+confirmation and a prior independent 2026-08-11 root citation (NV-071)
+behind it.
+
+**Changes made** (`master_dictionary.json`, all four keys touched by
+the conflict): `cat`→`Menggo` promoted superseded→verified_high;
+`the cat`→`Menggo` promoted unverified→verified_high; `two cat`→`menggo
+mang·gni` promoted unverified→verified_high (already matched the
+confirmed root + the established counting-family pattern, just hadn't
+been tagged); `Cat`→`meng·gong` demoted verified_high→superseded, not
+deleted. The already-VERIFIED counting family (`one cat` through
+`twenty cat`, NV-071) is untouched — it already used `menggo`, this
+closure just brings the bare-word forms into agreement with it instead
+of leaving them contradicting each other.
+
+**Duplicate-representation check (Rule 8):** `src/data/corrections.json`
+had no `cat` entry (nothing to sync). `src/data/phrase_maps.js` DID
+have a live override (`'cat': 'meng·gong'`) that would have kept
+shipping the now-superseded value at runtime regardless of the
+master_dictionary.json fix — corrected to `'Menggo'`, comment added
+citing NV-135. `garo_dictionary.json` (a live `prepare-data.js`
+pipeline source) was checked and found to already say `Menggo` for
+both `cat` and `Cat` — no fix needed there, it already agreed.
+`final_entries.json` (confirmed orphaned/non-pipeline in prior
+sessions) still holds both `Cat`→`Menggo` and `Cat`→`meng·gong` as
+separate rows — not touched this session, out of live-pipeline scope,
+flagged here for whoever next does a full-repo consistency pass.
+
+**Verified live post-rebuild** via `translate()`: `"cat"`, `"the cat"`,
+`"Cat"` all resolve to `Menggo` (phrase-map/exact-phrase, 0.98–0.99);
+`"one cat"`/`"two cat"`/`"three cat"` unchanged and still correct.
+`"where is the cat?"` still leaks the bare classifier morpheme `mang`
+— this is Claude C's item 2, a separate engineering bug (routed to
+Claude B), unaffected by and not part of this closure.
+
+Gate re-run clean after this fix: `node prepare-data.js` 8280 unique
+entries (unchanged), `node test-dictionary.js` 8280/8280 valid, 9/9
+grammatical corrections, `node --test tests/unit/*.test.js` 314/314
+(one test was live-asserting the old `meng·gong` value for `cat` via
+phrase_maps.js — now passes against the corrected value, not modified
+to assert something new), `node repository-intelligence.js` 0 new
+violations (the phrase_maps.js fix cleared the 1 new Check-F mismatch
+this session's master_dictionary.json edit alone would otherwise have
+introduced), `node scripts/resync-stale-overrides.mjs` 0 new candidates.
 
 ## NV-077 addendum (2026-09-06, Claude A — reconfirmation per HANDOFF_CLAUDE_A_20260906 item 3)
 

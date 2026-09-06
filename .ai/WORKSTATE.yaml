@@ -313,7 +313,38 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906C.md - THIS IS THE
+  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906D.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC as of 2026-09-06D. Resumed from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260906C.md (HEAD 4342a58 ==
+    origin/main on arrival, clean). Project Owner directly relayed a new
+    native confirmation in-session: cat = Menggo. Closed NV-134 (the
+    Menggo/meng·gong conflict, previously left open pending an explicit
+    reconciling answer) via new NV-135 in docs/THANGSENG_NATIVE_VALIDATION.md.
+    master_dictionary.json: cat->Menggo superseded->verified_high, the
+    cat->Menggo unverified->verified_high, two cat->menggo mang·gni
+    unverified->verified_high (already matched the confirmed root +
+    established counting pattern), Cat->meng·gong verified_high->superseded
+    (not deleted). Rule 8 duplicate-representation check found and fixed
+    a live runtime override: src/data/phrase_maps.js still shipped
+    ''cat'':''meng·gong'' — corrected to ''Menggo''. garo_dictionary.json
+    already agreed (Menggo), no fix needed there; final_entries.json
+    (orphaned/non-pipeline) still has both forms, flagged not touched
+    (out of live-pipeline scope). Live-verified via translate(): cat/the
+    cat/Cat/one-three cat all correct. NOT touched (separate, already
+    Claude-B-routed bug): "where is the cat?" still leaks the bare
+    classifier morpheme "mang" (Claude C HANDOFF item 2). Gate: node
+    prepare-data.js 8280 unique entries (unchanged), node test-dictionary.js
+    8280/8280 valid 9/9 corrections, node --test tests/unit/*.test.js
+    314/314 (1 test was live-asserting the pre-fix phrase_maps.js value,
+    now passes against the corrected value), node repository-intelligence.js
+    0 new violations (the phrase_maps.js fix cleared 1 new Check-F
+    mismatch the dictionary-only edit would otherwise have introduced),
+    node scripts/resync-stale-overrides.mjs 0 new candidates. Items 4-6
+    of docs/HANDOFF_CLAUDE_A_20260906.md (leaf/leaves + Re·ongkata;
+    ball/pole/babies/cities; adjective+animal spot-check) and all other
+    standing carried-forward items UNTOUCHED this session, one-task-at-
+    a-time discipline.
+  next_action_prior_20260906d: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906C.md - THIS IS THE
     AUTHORITATIVE MIGRATION DOC as of 2026-09-06C. Resumed from
     docs/CLAUDE_A_SESSION_MIGRATION_20260906B.md (HEAD 788004c ==
     origin/main on arrival, clean). Actioned handoff item 3 (answer
