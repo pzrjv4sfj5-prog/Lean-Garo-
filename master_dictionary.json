@@ -14182,102 +14182,108 @@
   },
   {
     "english": "big person",
-    "garo": "gonga mande",
+    "garo": "dal·gipa mande",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big dog",
-    "garo": "gonga Achak",
+    "garo": "dal·gipa Achak",
     "category": "animals",
-    "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big cat",
-    "garo": "gonga Menggo",
+    "garo": "dal·gipa Menggo",
     "category": "animals",
-    "confidence": "unverified",
-    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big bird",
-    "garo": "gonga do·o",
+    "garo": "dal·gipa do·o",
     "category": "animals",
-    "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big fish",
-    "garo": "gonga na·tok",
+    "garo": "dal·gipa na·tok",
     "category": "food",
-    "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big teacher",
-    "garo": "gonga skigipa",
+    "garo": "dal·gipa skigipa",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big student",
-    "garo": "gonga Chattro",
+    "garo": "dal·gipa Chattro",
     "category": "education",
-    "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big house",
-    "garo": "gonga Nok",
+    "garo": "dal·gipa Nok",
     "category": "home",
-    "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big tree",
-    "garo": "gonga Bol",
+    "garo": "dal·gipa Bol",
     "category": "nature",
-    "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big book",
-    "garo": "gonga ki·tap",
+    "garo": "dal·gipa ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'gonga kitab'."
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path.",
+    "confidence": "verified_high"
   },
   {
     "english": "big car",
-    "garo": "gonga mot",
+    "garo": "dal·gipa mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big apple",
-    "garo": "gonga se",
+    "garo": "dal·gipa se",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big banana",
-    "garo": "gonga sobo",
+    "garo": "dal·gipa sobo",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big rice",
-    "garo": "gonga mi",
+    "garo": "dal·gipa mi",
     "category": "food",
-    "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "big water",
-    "garo": "gonga Chi",
+    "garo": "dal·gipa Chi",
     "category": "food",
-    "confidence": "unverified",
-    "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
+    "confidence": "verified_high",
+    "notes": "Fixed 2026-09-06 (Claude B) per NV-136 (Project Owner-confirmed direct Thangseng relay): attributive \"big\" = dal·gipa (dal.gipa nok = a big house), not the uncited \"gonga\" this batch previously used. Noun half untouched. Matches the already-verified_high \"big red house\" precedent and the working sov-assembly composition path."
   },
   {
     "english": "small person",

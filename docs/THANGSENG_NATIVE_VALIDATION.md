@@ -6616,6 +6616,82 @@ violations (the phrase_maps.js fix cleared the 1 new Check-F mismatch
 this session's master_dictionary.json edit alone would otherwise have
 introduced), `node scripts/resync-stale-overrides.mjs` 0 new candidates.
 
+## NV-136 (2026-09-06, Project Owner-confirmed — direct Thangseng relay via Project Owner) — "big": predicate vs. attributive forms
+
+**Source:** Project Owner-confirmed, relayed directly in chat, per
+`.ai/PROJECT_OWNER_AUTHORITY.md` category "Project Owner-confirmed"
+(Thangseng's own data, Owner relaying/endorsing it — not the Owner's own
+decision, so not mislabeled as a "Project Owner directive").
+
+**Citation (verbatim, as relayed):**
+- `dal.a` = big (adjective); used when the adjective is a **predicate**.
+  Example: `Ua nok namen dal.a.` = "That house is very big."
+- `dal'gipa` = big; used when the adjective is **before the noun**
+  (attributive). Example: `Dal.gipa nok` = "a big house."
+
+**Cross-check against existing repo state (both already independently
+attested, not new roots):**
+- `dal·a` (predicate) — already `verified_high` for bare "big"/"Big"
+  since NV-080 (2026-08-17). This relay reconfirms the same root and
+  additionally supplies the *grammatical condition* (predicate position)
+  that NV-080 didn't specify.
+- `dal·gipa` (attributive) — already appears as the `verified_high`
+  root in the existing `"big red house"` tied-candidate rows (3-way tie,
+  `docs/PICKPRIMARY_VERIFIED_TIES.md`), so this relay independently
+  confirms a root the dictionary already had evidence for, under the
+  correct grammatical label this time (attributive, not a stray
+  compound-specific form).
+
+**New finding, not previously known (surfaced while checking this
+citation's scope, not asserted by the relay itself):** every
+`"big [noun]"` phrase-table row in `master_dictionary.json` (16 rows:
+person/dog/cat/bird/fish/teacher/student/house/tree/book/car/apple/
+banana/rice/water) uses a **third, uncited, `unverified`/`None`-
+confidence root, `gonga`**, for "big" — not `dal·gipa`. `gonga` has no
+citation trail anywhere in this file and appears nowhere else in
+`master_dictionary.json` except this one bulk-generated batch. Live
+`translate()` on sentences not covered by this static phrase table
+(e.g. `"a big elephant is sleeping"`) already independently produces
+`dal·a` via the working sov-assembly composition path — so the
+phrase-table `gonga` rows disagree with both (a) this new native
+citation and (b) the engine's own already-working composition path.
+Same defect shape as defect-class-3 (phrase-table value inconsistent
+with the confirmed/working root), different root (`gonga` vs. the
+prior sessions' generic-noun-classifier placeholders).
+
+**Resolution — attributive rows only:** the 16 `"big [noun]"` rows are
+all noun phrases (adjective before noun), matching `dal'gipa`'s
+attributive condition exactly as cited. Fixed this session: `gonga` ->
+`dal·gipa`, noun half untouched. `"big around"` (`ding·dang`) is a
+separate idiom, does not contain `gonga`, not touched.
+
+**Flagged, NOT fixed (engineering scope, needs a design pass — see
+`docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md`'s "NOT engineering-scope"
+test):** live-probing this citation surfaced that the sov-assembly
+composition path itself does not yet distinguish predicate vs.
+attributive position for "big" — `"a big elephant is sleeping"`
+(attributive) and `"that house is very big"` (predicate) **both**
+currently resolve through `dal·a`, the predicate form, per this
+session's own live check. Per this new citation, the attributive
+sentence should use `dal·gipa` instead. This is a **general
+grammar-position rule potentially affecting adjectives beyond "big"**,
+not something to infer from a single adjective's citation — routed to
+Claude A/engineering as a new finding, not resolved in this session.
+
+**Gate re-run clean after the 16-row phrase-table fix:**
+`node prepare-data.js` 8280 unique entries (unchanged),
+`node test-dictionary.js` 8280/8280 valid, 9/9 grammatical corrections,
+`node repository-intelligence.js` 0 new violations across all 8 checks,
+`node scripts/resync-stale-overrides.mjs` 0 candidates,
+`node scripts/runtime-error-sweep.mjs` 0 errors across 14,771
+`translate()` calls, `node --test tests/unit/*.test.js` 318/318 (was
+317, +1 new regression test), `npm run build` clean. Live
+`translate()` spot-checked post-fix: `"big cat"`/`"big dog"`/`"big
+house"`/`"big student"` all resolve to `dal·gipa [noun]`
+(exact-phrase, 0.98); `"a big elephant is sleeping"` unchanged
+(`dal·a Mong tusienga`, sov-assembly, 0.75) — the flagged sov-assembly
+gap above, left as documented, not silently patched.
+
 ## NV-077 addendum (2026-09-06, Claude A — reconfirmation per HANDOFF_CLAUDE_A_20260906 item 3)
 
 Re-verified the `Aganchaka`/`Aganchakani` POS split is a genuine
