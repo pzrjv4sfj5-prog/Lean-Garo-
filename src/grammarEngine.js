@@ -45,7 +45,56 @@ export function analyzeGrammar(input) {
   // narrowly to pronoun subjects only (NP-subject inversion, e.g. "is the
   // teacher going...", is a separate, unconfirmed case — left untouched).
   let isQuestion = false;
-  if (/^(is|are|was|were)$/i.test(words[0] || '') && PRONOUN_MAP[(words[1] || '').toLowerCase().replace(/[^a-z]/g,'')]) {
+  // Handoff B item 2 (2026-09-06, Claude B — docs/HANDOFF_CLAUDE_B_
+  // 20260906.md / re-audit CLAUDE_C_REAUDIT_20260906B.md): the 2026-08-04
+  // fix above only recognized is/are/was/were inversion, so ANY other
+  // aux-inverted polar question ("did he eat?", "will he eat?", "did you
+  // not eat?", "will you not eat?", "does she eat?") never reached this
+  // branch at all — words[0] ("did"/"will"/...) isn't a pronoun and isn't
+  // "a/an/the", so the subject/verb search below never even starts,
+  // grammar.subject and grammar.verb both stay null, assembleGrammar
+  // requires grammar.subject and returns null unconditionally, and the
+  // WHOLE sentence (negation, tense, subject, everything) silently drops
+  // to assembleSentenceSOV, which has no question-marking of its own —
+  // exactly the "degrades to a declarative with no confidence drop" bug
+  // this handoff item describes. Root cause was here, one line earlier
+  // than the "-ma?" appending logic (sentenceBuilder.js) this handoff item
+  // suspected — that logic is already correct and general; it just never
+  // got a chance to run for anything but is/are/was/were.
+  // Fix: widen the SAME closed-class aux-inversion recognition to
+  // did/will/does/do/has/have, exactly like is/are/was/were already are.
+  // This adds NO new question-marking logic and invents NO new Garo
+  // content — it only lets these five more auxiliaries reach the already-
+  // general, already-VERIFIED "+ ma?" suffix (sentenceBuilder.js
+  // assembleGrammar) the same way is/are/was/were already do. detectedTense
+  // (computed below from the ORIGINAL `input` string, unaffected by this
+  // splice) already separately recognizes did->past and will->future, so
+  // the verb still gets the correct tense suffix via the existing,
+  // unmodified tense-attachment logic once subject/verb are found.
+  // Still explicitly does NOT cover wh-questions ("what did he eat?",
+  // "when will you go?") — wh-word placement is a different, still-
+  // unaddressed part of this same handoff item and needs its own fix;
+  // this only restores polar (yes/no) question composition.
+  // Split into the original four (is/are/was/were — no "?" required,
+  // matching the exact pre-existing behavior the "are you going" test
+  // below pins) and the newly-added six (did/will/does/do/has/have —
+  // DOES require a terminal "?"). Without that split, "did you see the
+  // two small dogs" (a declarative-mood test sentence from an earlier,
+  // unrelated fix that happens to start with "did", no question mark)
+  // got swept into this branch and lost its sov-assembly-specific
+  // adjective-ordering/verb-identification composition entirely —
+  // confirmed as a real regression against tests/unit/translationEngine.
+  // test.js's item 3/5 fixtures. Requiring "?" for only the new six is
+  // the narrowest fix that still restores every case in this handoff
+  // item's own listed examples ("did he eat?", "will he eat?", "did you
+  // not eat?", "will you not eat?" — all naturally carry "?"), without
+  // touching the pre-existing is/are/was/were behavior at all.
+  const endsWithQuestionMark = /\?\s*$/.test(input);
+  if (
+    (/^(is|are|was|were)$/i.test(words[0] || '') ||
+      (endsWithQuestionMark && /^(did|will|does|do|has|have)$/i.test(words[0] || ''))
+    ) && PRONOUN_MAP[(words[1] || '').toLowerCase().replace(/[^a-z]/g,'')]
+  ) {
     isQuestion = true;
     words.splice(0, 1);
   }
