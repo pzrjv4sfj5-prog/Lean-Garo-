@@ -313,7 +313,45 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906D.md - THIS IS THE
+  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906E.md - THIS IS THE
+    AUTHORITATIVE MIGRATION DOC as of 2026-09-06E. Resumed mid-session with a
+    stale audit note claiming origin/main==a52f5e5 and describing bdc5af7/
+    NV-136 as unpublished -- git fetch showed origin/main was actually
+    7afc92b; bdc5af7 already an ancestor; the repo''s real NV-136 (big:
+    dal·a/dal·gipa) already closed+pushed (e058884), already Claude-C-
+    reaudited (a52f5e5). No action needed on that note. Processed a
+    2026-09-05-evening direct-Thangseng-relay batch (via Project Owner/
+    WhatsApp): NV-137 (distance sentence, promoted hour/five/distance to
+    verified_high), NV-138 (duration sentence, added songrena/nangaha
+    unverified, flagged gnisan-vs-Gni "two" discrepancy NOT merged),
+    NV-139 (fill-in-blank template for "it takes only a few hours", added
+    banggija/somaisan/nangaia unverified), NV-140 (verb batch: finish=
+    bon·a/find=nika/earn=kamaia promoted verified_high, get=man·a
+    deliberately NOT promoted -- collision with can=man·a, flagged as
+    open relay question not resolved), NV-141 (migil, new distinct entry;
+    the mi/merong split itself was already NV-133, not new this session).
+    Appended original-source timestamp citation to existing NV-136 (no
+    dictionary change). Item 7 (tied "she will not be able to finish the
+    difficult work tomorrow" candidates) added unverified, cross-
+    referenced, not picked -- no native confirmation, not an NV. Drafted
+    docs/THANGSENG_RELAY_QUESTION_20260906.md (3 open items: get/can
+    collision, Gni/gnisan, tied sentence) -- NOT yet sent. Rule 8 check:
+    4 new self-consistency conflicts (two/earn/find/tied-sentence) added
+    to src/data/known_dictionary_conflicts.json; 1 new runtime-cascade
+    mismatch (phrase_maps:two) added to src/data/known_cross_source_conflicts.json
+    -- intentional, phrase_maps.js left shipping Gni so the unconfirmed
+    gnisan candidate cannot silently flip live translate() output. Gate:
+    node prepare-data.js 8287 unique entries (+7), node test-dictionary.js
+    8287/8287 valid 9/9 corrections, node repository-intelligence.js 0 new
+    violations, node scripts/resync-stale-overrides.mjs 0 new candidates,
+    node --test tests/unit/*.test.js 319/319 (unchanged, no test touched).
+    Live-verified via translate(): finish/find/earn/hour/five/distance/
+    migil all resolve to new values; get and two UNCHANGED (sik·a, Gni)
+    confirming no unintended runtime flip. All standing carried-forward
+    items (RULE-038/NV-109, NV-127, slash-variant rows, leaf/leaves/
+    Re·ongkata, ball/pole/babies/cities) UNTOUCHED this session,
+    one-task-at-a-time discipline.'
+  next_action_prior_20260906e: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906D.md - THIS IS THE
     AUTHORITATIVE MIGRATION DOC as of 2026-09-06D. Resumed from
     docs/CLAUDE_A_SESSION_MIGRATION_20260906C.md (HEAD 4342a58 ==
     origin/main on arrival, clean). Project Owner directly relayed a new

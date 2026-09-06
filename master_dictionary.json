@@ -1046,7 +1046,8 @@
     "english": "two",
     "garo": "Gni",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "UNVERIFIED — existing root 'Gni' (unpromoted). NV-138 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening) independently relayed 'gnisan' for 'two' inside the Williamnagar->Tura duration sentence. The two forms are not obviously the same root ('Gni' vs 'gnisan') -- flagged as an open cross-check per governance (no guessing whether 'gnisan' is a suffixed/citation-form variant of 'Gni' or a distinct form) rather than silently merged. See docs/THANGSENG_RELAY_QUESTION_20260906.md."
   },
   {
     "english": "three",
@@ -1064,7 +1065,8 @@
     "english": "five",
     "garo": "Bonga",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-137 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): \"The distance from Williamnagar to Guwahati is 5 hours.\" -> \"Willamnagaroni Guwahationa konta bongamang chel·a.\" Promotes this root off the strength of the full sentence (-oni 'from' + -na 'to' + konta 'hour' + bonga 'five' + chel·a 'far/distance', NOUN+CLASSIFIER+NUMBER-SUFFIX pattern already established). Corroborated by NV-138's companion sentence (same -oni/-ona/konta pattern)."
   },
   {
     "english": "six",
@@ -3501,7 +3503,8 @@
     "english": "distance",
     "garo": "Chel·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-137 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): \"The distance from Williamnagar to Guwahati is 5 hours.\" -> \"Willamnagaroni Guwahationa konta bongamang chel·a.\" Promotes this root off the strength of the full sentence (-oni 'from' + -na 'to' + konta 'hour' + bonga 'five' + chel·a 'far/distance', NOUN+CLASSIFIER+NUMBER-SUFFIX pattern already established). Corroborated by NV-138's companion sentence (same -oni/-ona/konta pattern)."
   },
   {
     "english": "journey",
@@ -4854,7 +4857,8 @@
     "english": "hour",
     "garo": "Konta",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-137 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): \"The distance from Williamnagar to Guwahati is 5 hours.\" -> \"Willamnagaroni Guwahationa konta bongamang chel·a.\" Promotes this root off the strength of the full sentence (-oni 'from' + -na 'to' + konta 'hour' + bonga 'five' + chel·a 'far/distance', NOUN+CLASSIFIER+NUMBER-SUFFIX pattern already established). Corroborated by NV-138's companion sentence (same -oni/-ona/konta pattern)."
   },
   {
     "english": "afternoon",
@@ -36276,7 +36280,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ra·-a / sik-a",
+    "notes": "UNVERIFIED — NV-140 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening) — direct verb relay batch (finish/find/get/earn). 'get' = 'man·a', reusing the string already on file (and already VERIFIED/HIGH) for 'can' ('ama'/'man·a'). This is a second attested sense for the same form, not a resolution of that collision -- NOT promoted to verified_high pending disambiguation. Flagged as the next relay question: see docs/THANGSENG_RELAY_QUESTION_20260906.md.",
     "confidence": "unverified"
   },
   {
@@ -78683,5 +78687,103 @@
     "category": "sentences",
     "notes": "VERIFIED/HIGH — NV-133 (Thangseng, via Project Owner relay, 2026-09-05): \"anga bajalchi merong brena re.anga\" = \"I went to the market to buy rice.\" Raka-normalized: 'Anga bajalchi merong brena re·anga'. This is a DIRECT resolution of docs/GARO_GRAMMAR_REFERENCE.md Section 8's originally-blocked item — NV-129 (2026-09-03/04) had only a 'so that' (jedakode) near-equivalent for this sentence; this is the plain -na purposive rendering the item actually asked for. Uses 'merong' (uncooked/raw rice) for the object bought at market, consistent with NV-133's cooked/uncooked distinction (you buy raw rice, not cooked rice, at market) and with NV-129's own market/rice sentence, which used the same word. NOT resolved by this entry, flagged for Claude B: live grammar-assembly for this exact English key currently produces 'Anga bajalchi merong·ko bre·na re·anga' (adds a -ko object marker the native citation omits on this bare mass noun) — this new exact-phrase row will take priority over that composed output per the existing exact-phrase-over-grammar-assembly precedence, so no live behavior change is needed for this key specifically, but the -ko-on-bare-mass-noun question itself is not addressed and may affect other sentences.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "the distance from williamnagar to guwahati is 5 hours",
+    "garo": "Willamnagaroni Guwahationa konta bongamang chel·a.",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-137 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): \"The distance from Williamnagar to Guwahati is 5 hours.\" -> \"Willamnagaroni Guwahationa konta bongamang chel·a.\" Promotes this root off the strength of the full sentence (-oni 'from' + -na 'to' + konta 'hour' + bonga 'five' + chel·a 'far/distance', NOUN+CLASSIFIER+NUMBER-SUFFIX pattern already established). Corroborated by NV-138's companion sentence (same -oni/-ona/konta pattern)."
+  },
+  {
+    "english": "it's taken only 2 hours to travel from williamnagar to tura",
+    "garo": "Williamnagaroni Turaona songrena konta gnisan nangaha.",
+    "category": "phrases",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED/HIGH — NV-138 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): \"It's taken only 2 hours to travel from Williamnagar to Tura.\" -> \"Williamnagaroni Turaona songrena konta gnisan nangaha.\" Same -oni/-ona/konta pattern as NV-137 (corroborating pair), but the sentence introduces the numeral form 'gnisan' for 'two' where the existing dictionary root for 'two' is 'Gni' (unverified) -- flagged as a discrepancy to cross-check, not merged/resolved here. Not yet promoted pending that check."
+  },
+  {
+    "english": "travel",
+    "garo": "songrena",
+    "category": "verbs",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED/HIGH — NV-138 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): new root extracted from the Williamnagar->Tura duration sentence (\"...songrena konta gnisan nangaha\" = \"...traveling took only 2 hours\"). No prior dictionary attestation for 'travel'/'traveling'."
+  },
+  {
+    "english": "took (time, past tense)",
+    "garo": "nangaha",
+    "category": "verbs",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED/HIGH — NV-138 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): new root, past-tense 'took/needed [time]' from the Williamnagar->Tura duration sentence. Contrast with NV-139's 'nangaia' ('it takes', different tense/aspect) -- the two are NOT interchangeable, flagged for explicit confirmation rather than assumed as simple allomorphs."
+  },
+  {
+    "english": "two",
+    "garo": "gnisan",
+    "category": "numbers",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED/HIGH — NV-138 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): 'gnisan' relayed for 'two' inside the Williamnagar->Tura duration sentence. Existing dictionary root for 'two' is 'Gni' (also unverified) -- not merged, see note on that row and docs/THANGSENG_RELAY_QUESTION_20260906.md."
+  },
+  {
+    "english": "only",
+    "garo": "banggija",
+    "category": "grammar",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED/HIGH — NV-139 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening), reply to Tridip's relay question \"how will you say 'it takes only few hours'\": template \"__oni __ona banggija somaisan (lit. konta) nangaia.\" Logged as a fill-in-the-blank grammatical template (not a standalone sentence) -- see docs/THANGSENG_NATIVE_VALIDATION.md NV-139 for the full template writeup. 'nangaia' = 'it takes' (contrasts with NV-138's 'nangaha' = 'it took', past tense -- different tense/aspect, not yet cross-confirmed as a regular present/past pair)."
+  },
+  {
+    "english": "few",
+    "garo": "somaisan",
+    "category": "grammar",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED/HIGH — NV-139 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening), reply to Tridip's relay question \"how will you say 'it takes only few hours'\": template \"__oni __ona banggija somaisan (lit. konta) nangaia.\" Logged as a fill-in-the-blank grammatical template (not a standalone sentence) -- see docs/THANGSENG_NATIVE_VALIDATION.md NV-139 for the full template writeup. 'nangaia' = 'it takes' (contrasts with NV-138's 'nangaha' = 'it took', past tense -- different tense/aspect, not yet cross-confirmed as a regular present/past pair)."
+  },
+  {
+    "english": "it takes",
+    "garo": "nangaia",
+    "category": "grammar",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED/HIGH — NV-139 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening), reply to Tridip's relay question \"how will you say 'it takes only few hours'\": template \"__oni __ona banggija somaisan (lit. konta) nangaia.\" Logged as a fill-in-the-blank grammatical template (not a standalone sentence) -- see docs/THANGSENG_NATIVE_VALIDATION.md NV-139 for the full template writeup. 'nangaia' = 'it takes' (contrasts with NV-138's 'nangaha' = 'it took', past tense -- different tense/aspect, not yet cross-confirmed as a regular present/past pair)."
+  },
+  {
+    "english": "finish",
+    "garo": "bon·a",
+    "category": "verbs",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-140 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening) — direct verb relay batch (finish/find/get/earn). 'finish' = 'bon·a'. Corroborates the already-present unverified 'bon·a' candidates on 'done', 'finished', and 'used up' (same root, different english glosses of the same completive sense) -- those rows left as-is, not auto-promoted, since the direct relay confirms only the headword 'finish' itself."
+  },
+  {
+    "english": "find",
+    "garo": "nika",
+    "category": "verbs",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-140 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening) — direct verb relay batch (finish/find/get/earn). 'find' = 'nika'. Note: existing dictionary has 'saw' = 'nikaha' (unverified) -- same root family, possibly a see/find polysemy or a tense-marked form of the same verb; not resolved here, flagged as an observation only (not blocking, not a relay question)."
+  },
+  {
+    "english": "earn",
+    "garo": "kamaia",
+    "category": "verbs",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-140 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening) — direct verb relay batch (finish/find/get/earn). 'earn' = 'kamaia'. New root; existing 'earn' row (garo 'man·a', unverified) is a separate, unpromoted candidate -- not superseded here, since this relay confirms 'kamaia' rather than adjudicating between the two."
+  },
+  {
+    "english": "milled rice",
+    "garo": "migil",
+    "category": "food",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-141 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): new term 'migil' for the milled/husked grain, introduced alongside re-confirmation of NV-133's merong (uncooked)/mi (cooked) distinction. Whether the grain is husked or unhusked does not change which of merong/mi applies -- migil is logged as its own distinct sense (the processing state of the grain), not folded into either existing entry."
+  },
+  {
+    "english": "she will not be able to finish the difficult work tomorrow",
+    "garo": "Ua man·a·chi knal·ko man·jawa",
+    "category": "phrases",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED — tied candidate, no native confirmation of which is preferred. Checked against a fresh clone; the discrepancy between this and its sibling candidate is real, not a subtle artifact. Flagged for Thangseng disambiguation rather than picked -- see docs/THANGSENG_RELAY_QUESTION_20260906.md. Same treatment as the existing docs/PICKPRIMARY_VERIFIED_TIES.md ties, logged manually here since neither candidate is yet verified_high."
+  },
+  {
+    "english": "she will not be able to finish the difficult work tomorrow",
+    "garo": "rakbegipa kamko ua knalo matchotatna man·jawa",
+    "category": "phrases",
+    "confidence": "unverified",
+    "notes": "UNVERIFIED — tied candidate, no native confirmation of which is preferred. Checked against a fresh clone; the discrepancy between this and its sibling candidate is real, not a subtle artifact. Flagged for Thangseng disambiguation rather than picked -- see docs/THANGSENG_RELAY_QUESTION_20260906.md. Same treatment as the existing docs/PICKPRIMARY_VERIFIED_TIES.md ties, logged manually here since neither candidate is yet verified_high."
   }
 ]

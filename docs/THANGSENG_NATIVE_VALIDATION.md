@@ -6629,6 +6629,13 @@ decision, so not mislabeled as a "Project Owner directive").
 - `dal'gipa` = big; used when the adjective is **before the noun**
   (attributive). Example: `Dal.gipa nok` = "a big house."
 
+**Original-source addendum (2026-09-06, session 20260906E):** provenance
+directly confirmed — this is not a paraphrase, it is Thangseng's own
+message, independently reproducing this exact citation (`Ua nok namen
+dal·a` / `Dal·gipa nok`) with an exact timestamp: 2026-09-05, 6:13pm.
+Same content as above, not a new entry — logged here as the
+original-source citation, not a second NV item.
+
 **Cross-check against existing repo state (both already independently
 attested, not new roots):**
 - `dal·a` (predicate) — already `verified_high` for bare "big"/"Big"
@@ -6721,3 +6728,116 @@ exactly the kind of bare-key ambiguity a POS-disambiguation fix needs
 to resolve by context, not the kind of value mismatch NV-077 already
 settled. Flagged for Claude B's item-3 fix design, not resolved here
 (engineering scope).
+
+## NV-137 (2026-09-05 evening, direct Thangseng relay via Project Owner/WhatsApp) — distance sentence, Williamnagar→Guwahati
+
+**Citation (verbatim, as relayed; apostrophes converted to raka `·`
+per Thangseng's own instruction):**
+"The distance from Williamnagar to Guwahati is 5 hours." ->
+`Willamnagaroni Guwahationa konta bongamang chel·a.`
+
+**Supports promoted off the strength of this sentence (all were
+`unverified` bare roots already on file):**
+- `konta` = "hour"
+- `bonga` = "five"
+- `chel·a` = "far/distance"
+- `-oni` = "from", `-na` = "to" (already-established suffix pattern,
+  not new roots — this sentence corroborates their use here)
+
+Promoted `hour`, `five`, and `distance` to `verified_high` in
+`master_dictionary.json`, citing NV-137. (`far` already had an
+independent `verified_high` variant, `chel·a`, from a separate
+citation trail — unaffected.) New sentence row added for the full
+citation.
+
+## NV-138 (2026-09-05 evening, direct Thangseng relay via Project Owner/WhatsApp) — duration sentence, Williamnagar→Tura
+
+**Citation (verbatim, as relayed):**
+"It's taken only 2 hours to travel from Williamnagar to Tura." ->
+`Williamnagaroni Turaona songrena konta gnisan nangaha.`
+
+Same `-oni`/`-ona`/`konta` pattern as NV-137 — a good corroborating
+pair. New items introduced, logged `unverified` (single-sentence
+attestation only, not independently cross-checked):
+- `songrena` = "travel/traveling" — no prior attestation.
+- `nangaha` = "took/needed" (past tense) — no prior attestation.
+  Contrast with NV-139's `nangaia` ("it takes") — different tense/
+  aspect, not assumed to be a regular pair without explicit
+  confirmation.
+- `gnisan` = "two" — **flagged discrepancy**, not merged: the existing
+  dictionary root for "two" is `Gni` (also unverified). Whether
+  `gnisan` is a citation-form/suffixed variant of `Gni` or a distinct
+  form is an open cross-check, not resolved here. See
+  `docs/THANGSENG_RELAY_QUESTION_20260906.md`.
+
+## NV-139 (2026-09-05 evening, direct Thangseng relay via Project Owner/WhatsApp) — grammatical template, "it takes only a few hours"
+
+Reply to Tridip's relay question "how will you say 'it takes only few
+hours'":
+
+`__oni __ona banggija somaisan (lit. konta) nangaia.`
+
+Logged as a **fill-in-the-blank grammatical template**, not a single
+sentence — the blanks are the from/to place names (same `-oni`/`-ona`
+slots as NV-137/NV-138). New items, logged `unverified`:
+- `banggija` = "only"
+- `somaisan` = "few/some"
+- `nangaia` = "it takes" (present/habitual) — contrast with NV-138's
+  `nangaha` = "it took" (past). Worth confirming explicitly whether
+  these are a regular tense pair of the same root before relying on
+  that pattern elsewhere.
+
+## NV-140 (2026-09-05 evening, direct Thangseng relay via Project Owner/WhatsApp) — verb batch: finish, find, get, earn
+
+Direct relay, four verbs:
+
+| english | garo | status |
+|---|---|---|
+| finish | `bon·a` | promoted `verified_high` |
+| find | `nika` | promoted `verified_high` |
+| get | `man·a` | **NOT promoted — see below** |
+| earn | `kamaia` | promoted `verified_high` |
+
+- `finish` = `bon·a` corroborates the already-present `unverified`
+  `bon·a` candidates on `done`, `finished`, and `used up` (same root,
+  different english glosses) — those rows left as-is, not
+  auto-promoted; this relay confirms only the headword `finish`.
+- `find` = `nika` — existing `saw` = `nikaha` (unverified) shares the
+  root; possibly a see/find polysemy or a tense-marked form of the
+  same verb. Noted as an observation, not a blocker.
+- `get` = `man·a` **reuses the string already on file (and already
+  `verified_high`) for `can`** (`ama`/`man·a`). This is a second
+  attested sense for the same form, not a resolution of that
+  collision. Per governance (no guessing), **not promoted** — flagged
+  as the next relay question rather than assuming either reading is
+  the whole story. See `docs/THANGSENG_RELAY_QUESTION_20260906.md`.
+- `earn` = `kamaia` is a new root; the existing `earn` = `man·a`
+  (unverified) row is left as a separate, unpromoted candidate — not
+  superseded, since this relay confirms `kamaia` rather than
+  adjudicating between the two.
+
+## NV-141 (2026-09-05 evening, direct Thangseng relay via Project Owner/WhatsApp) — rice: `migil` (milled/husked grain)
+
+Rice cooked/uncooked distinction (`mi`/`merong`) was already resolved
+at NV-133 (2026-09-05) — this relay independently re-confirms it,
+not new. What **is** new: Thangseng introduced `migil` for the
+milled/husked grain. Whether the grain is husked or unhusked does not
+change which of `merong`/`mi` applies (those are the cooked/uncooked
+axis) — `migil` names a different axis (processing state) entirely.
+Logged as its own distinct `verified_high` entry (english: "milled
+rice"), not folded into either existing row.
+
+## Item 7 — tied candidate pair, "she will not be able to finish the difficult work tomorrow" (not an NV — no native confirmation yet)
+
+Two candidate renderings surfaced, no indication which is preferred:
+- `Ua man·a·chi knal·ko man·jawa`
+- `rakbegipa kamko ua knalo matchotatna man·jawa`
+
+Checked against a fresh clone — the discrepancy is real, not a subtle
+artifact. Treated as a tied non-variant candidate pair (same shape as
+the existing `docs/PICKPRIMARY_VERIFIED_TIES.md` entries, logged
+manually here since neither candidate is yet `verified_high`). Both
+rows added to `master_dictionary.json` as `unverified`, cross-
+referencing each other. Not picked — routed to
+`docs/THANGSENG_RELAY_QUESTION_20260906.md` for Thangseng to
+adjudicate.
