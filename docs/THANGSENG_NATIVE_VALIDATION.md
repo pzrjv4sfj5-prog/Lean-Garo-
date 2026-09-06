@@ -6505,3 +6505,76 @@ both are known, is one more common, older, regional, or specific to a
 sub-type of cat?" — the same kind of explicit follow-up NV-089's open
 items (yes, sit, i understand) are still waiting on. Flagged for the
 next relay batch, not resolved here.
+
+### NV-134 addendum (2026-09-06, same day — corpus-internal archaeology, no new relay evidence)
+
+Prompted by Claude C's `HANDOFF_CLAUDE_A_20260906.md` item 1, which
+independently surfaced the same `meng·gong`/`menggo` split from the
+counting-phrase family and asked for adjudication. Cross-checked both
+sides' actual provenance directly in `master_dictionary.json` rather
+than treating them as symmetrically undocumented:
+
+- `menggo` (no dot) already has TWO independent, dated, sourced
+  Thangseng citations on record, both predating today's verbal relay:
+  NV-071 (2026-08-11, Thangseng via Tridip/WhatsApp, direct quote
+  "'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni"), backing
+  the VERIFIED/HIGH `"one cat"`→`menggo mang·sa` and
+  `"three cat"`→`menggo mang·gittam` rows (idx 9232/9233). This is
+  root-level evidence for `menggo` itself, not just the counted forms.
+- `meng·gong` (idx 3183, english key `"Cat"`) has no citation at all
+  beyond the bare tag `"variant/VERIFIED/HIGH"` — no date, no source,
+  no NV number, no quote. NV-134 already flagged this as
+  "not documented beyond VERIFIED/HIGH... predates NV-numbering";
+  this addendum confirms directly (not just by inference) that nothing
+  else exists anywhere in the row to trace it further.
+
+**This changes the evidentiary picture from symmetric to asymmetric**:
+one side has multiple traceable native citations, the other has none.
+That said, per this project's standing discipline (NV-089 precedent,
+reaffirmed in NV-134 itself), an asymmetry in documentation quality is
+still not the same as an explicit native reconciliation of the two
+forms — `meng·gong` could still be correct and simply predate this
+project's citation practice; richer paper trail is not proof of
+correctness. **Not resolved by this addendum** — no dictionary or
+runtime value changed. This strengthens, rather than replaces, the
+case for sending the already-queued explicit reconciling question to
+Thangseng (see above): the question can now be asked more precisely —
+"we have your 2026-08-11 confirmation of `menggo` (no dot) for
+counting cats, and separately `meng·gong` (with a dot) shipping as the
+plain word for cat with no record of who confirmed it or when — are
+these the same word, and if so which spelling/pronunciation is right?"
+Also cross-referenced: Claude C's item 2 in the same handoff (`"where
+is the cat?"` leaking the bare classifier morpheme `mang`, not a real
+word) is a separate engineering bug, routed to Claude B, not a fifth
+competing citation for `cat` itself — noted here only so a future
+session doesn't mistake it for new evidence.
+
+## NV-077 addendum (2026-09-06, Claude A — reconfirmation per HANDOFF_CLAUDE_A_20260906 item 3)
+
+Re-verified the `Aganchaka`/`Aganchakani` POS split is a genuine
+two-form distinction, not a right/wrong tie, before Claude B builds a
+POS-disambiguation fix on it. Traced every `master_dictionary.json` row
+touching either form: NV-077 (2026-08-14, direct Project Owner native
+relay) established the split; a second direct native relay
+(2026-08-15/16) independently reconfirmed it byte-for-byte ("Aganchakani
+= answer (noun), Aganchaka = to answer (verb) — final word, no raka dot
+in either form") while superseding three stray unraka'd/duplicate rows
+(`in·chak·a`, `ku·chak·a`, `a·gan·chak·na`). Two usage examples already
+cross-reference each other in context (idx 944 "answer the question" —
+imperative verb form `aganchaka·bo`; idx 1010 "what will be the
+answer?" — noun form `Aganchakani·ara`). This is confirmed twice by
+independent native relay, not a single uncorroborated citation — no
+further native input needed on the POS split itself.
+
+**New finding, not previously flagged:** the runtime is currently
+asymmetric in a way directly relevant to Claude B's fix. `master_dictionary.json`'s own bare `answer` key compiles to the noun
+form (`Aganchakani`), but `src/data/corrections.json`'s `"answer":
+"Aganchaka"` override (verb form) wins at runtime per the standard
+correction-precedence order — so `translate("answer")` today ships the
+*verb* sense for a bare, POS-ambiguous English input, while the
+dictionary's own compiled value for the same bare key is the noun.
+Neither is "wrong" given the two-form split confirmed above — this is
+exactly the kind of bare-key ambiguity a POS-disambiguation fix needs
+to resolve by context, not the kind of value mismatch NV-077 already
+settled. Flagged for Claude B's item-3 fix design, not resolved here
+(engineering scope).
