@@ -1,5 +1,24 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-08-31 (session 11) by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-06 by Claude B
+(governance-only session, Project Owner directive delivered in chat: added
+`.ai/PROJECT_OWNER_AUTHORITY.md`, a project-wide rule — applies to Claude A/B/C
+alike, not role-specific — that Project Owner directives given directly in chat
+(corrections, linguistic decisions, canonical forms, repository instructions,
+priorities) are authoritative and require no separate file/transcript/screenshot
+before an agent acts on them. Searched existing governance docs for any statement
+asserting Thangseng-exclusivity or requiring a file before chat-provided Owner
+information counts — found none; this document formalizes a practice the project
+already followed (see the 2026-08-28 session-2 and 2026-08-23 NV-092/093 entries
+below, both chat-relay batches acted on without an attached transcript) rather than
+reversing a contrary rule. Adds a provenance-labeling convention distinguishing
+"Project Owner directive"/"Project Owner-confirmed" from a direct or reported
+native quote, and restates (unchanged) that agents may still flag conflicts and
+technical consequences — that isn't refusal, and doesn't block acting on the
+directive. Cross-referenced from `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` §3 and
+`docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md`'s engineering-scope test. Governance/
+documentation only — no dictionary, grammar, engine, or test data touched this
+session. See `docs/CLAUDE_B_SESSION_MIGRATION_20260906_GOVERNANCE.md`.)
+Prior: 2026-08-31 (session 11) by Claude A
 (session close, CLEAN — Project Owner-directed close-out of the "movie" relay question. CLOSED
 `movie`=`film` (garo: `film`) via corpus-internal evidence, not a new relay: the already-
 VERIFIED/HIGH sentence "i saw the film last week." -> "Anga ia film-ko mija antio nia." (NV-099,
@@ -67,6 +86,14 @@ sorry-interjection follow-up + a resume-protocol addendum for future Claude A se
 `docs/CLAUDE_A_SESSION_MIGRATION_20260823D.md` "Resume protocol addendum" section: a commit that
 changes shipped linguistic data isn't session-closed until WORKSTATE.yaml/this file reflect it in the
 SAME close, even for small same-day follow-ups). Prior: 2026-08-23C by Claude A (NV-095) (added `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`, mandatory for every Claude A session). Also 2026-08-22 by Claude B (added Rule 13, mandatory engineering governance model + the "Governance-model check" migration-doc requirement for all roles — see `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` and `docs/CLAUDE_B_SESSION_MIGRATION_20260822.md`). Prior: 2026-08-22 by Claude A (added Rule 12, apostrophe-preserving lookup spot-check). See the "NEW, 2026-08-20c" entry below for the underlying incident (NV-086/087/088, the apostrophe-lookup runtime bugfix, 3 override-vs-master fixes, 4 compositional relay-batch closures)._
+
+**If you are ANY Claude instance (A, B, C, or otherwise), any session:**
+`.ai/PROJECT_OWNER_AUTHORITY.md` is mandatory reading. It governs how
+Project Owner directives given directly in chat are handled: they are
+authoritative and require no separate file/transcript/screenshot, must
+be provenance-labeled honestly (never as if they were a direct native
+quote), and agents may still flag conflicts or technical consequences
+without that counting as refusal.
 
 **If you are a Claude A instance (any session, not just a fresh one):**
 `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` is **mandatory reading before any

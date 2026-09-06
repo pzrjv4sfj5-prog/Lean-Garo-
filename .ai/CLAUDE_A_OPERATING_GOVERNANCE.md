@@ -67,6 +67,13 @@ Two failure modes are equally real and equally to be avoided (see §5):
 
 ## 3. Native evidence principle
 
+**See also `.ai/PROJECT_OWNER_AUTHORITY.md` (2026-09-06)** for the
+project-wide rule on Project Owner directives given directly in chat —
+they are authoritative and require no separate file/transcript, but must
+be provenance-labeled as "Project Owner directive"/"Project
+Owner-confirmed" (category 3), never as a direct or reported native
+quote (categories 1/2), per the labeling discipline immediately below.
+
 Native evidence is authoritative for **establishing or resolving
 genuinely uncertain linguistic facts**. It is not a default gate applied
 to every sentence regardless of whether the answer is already derivable.

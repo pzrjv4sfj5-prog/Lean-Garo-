@@ -166,7 +166,8 @@ commit needed):**
   narratively tracked.
 
 **NOT engineering-scope (needs Claude A judgment, relay, or an
-explicit Project Owner decision first):**
+explicit Project Owner decision first — see `.ai/PROJECT_OWNER_AUTHORITY.md`
+for what counts as a valid Project Owner decision and how to label it):**
 
 - Anything where the "correct" value is itself ambiguous — two or
   more `master_dictionary.json` candidates are each independently
