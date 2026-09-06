@@ -19,6 +19,30 @@
  */
 
 import ALTERNATES_RAW from './compiled_dict_alternates.json' with { type: 'json' };
+import UNVERIFIED_WORDS_RAW from './data/unverified_words.json' with { type: 'json' };
+const UNVERIFIED_WORDS = new Set(UNVERIFIED_WORDS_RAW);
+// Handoff B item 4 fix (2026-09-06, Claude B — docs/HANDOFF_CLAUDE_B_
+// 20260906.md / re-audit CLAUDE_C_REAUDIT_20260906B.md): confidence-schema
+// gap — these dictionary-lookup methods (a value pulled essentially
+// verbatim from the dictionary, not composed) previously reported a fixed
+// per-method confidence regardless of whether the source master_dictionary
+// row was ever actually verified. Confirmed live: "dog" (source row
+// `confidence: "unverified"`, no citation) shipped 0.99 via phrase-map,
+// indistinguishable from a native-confirmed entry. UNVERIFIED_WORDS is
+// prepare-data.js's own already-computed "zero VERIFIED/HIGH evidence for
+// this key" signal (see pickPrimaryNoVerifiedCandidate there) — reused
+// here, not re-derived or newly judged. capLookupConfidence caps to 0.75
+// (the existing sov-assembly/general-composition tier) rather than
+// inventing a new number: "as trustworthy as our best composition guess,
+// not as trustworthy as a double-checked entry" already has a meaning
+// elsewhere in this file's own confidence scale. Runtime-COMPOSED methods
+// (grammar-assembly, sov-assembly, morphology, classifier, etc.) are
+// deliberately NOT touched by this helper — their confidence already
+// reflects composition uncertainty, a different signal that capping here
+// would conflate rather than split.
+function capLookupConfidence(key, confidence) {
+  return UNVERIFIED_WORDS.has((key || '').trim().toLowerCase()) ? Math.min(confidence, 0.75) : confidence;
+}
 import CONFIRMED_LOANWORDS_RAW from './data/confirmed_loanwords.json' with { type: 'json' };
 const CONFIRMED_LOANWORDS = new Set(CONFIRMED_LOANWORDS_RAW.words.map(w => w.toLowerCase()));
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
@@ -140,7 +164,7 @@ export async function translate(input) {
   // instead of the confirmed "Anga uija" (= "I don't know"). Mirrors the
   // corrections lookup pattern above: try apostrophe-preserved forms first.
   const phraseMap = lookupPhrase(lowerWithApos) || lookupPhrase(cleaned) || lookupPhrase(lower);
-  if (phraseMap) return { garo: phraseMap, method: 'phrase-map', confidence: 0.99 };
+  if (phraseMap) return { garo: phraseMap, method: 'phrase-map', confidence: capLookupConfidence(lowerWithApos, 0.99) };
 
   // 1.75 Confirmed loanwords — NV-115 (2026-09-03), extended same day for
   // "roll" (NV-116). Exact-match only, whole cleaned input, checked
@@ -202,7 +226,7 @@ export async function translate(input) {
   // precedence fix, same three-form try order as the two existing
   // precedents, scoped to this one lookup only.
   const exactPhrase = lookupGaro(lowerWithApos) || lookupGaro(cleaned) || lookupGaro(lower);
-  if (exactPhrase) return { garo: exactPhrase, method: 'exact-phrase', confidence: 0.98 };
+  if (exactPhrase) return { garo: exactPhrase, method: 'exact-phrase', confidence: capLookupConfidence(lower, 0.98) };
 
   // 1.6 Classifier counting — "2 dogs", "one teacher", "5 birds"
   const countPhrase = parseCountingPhrase(cleaned);
@@ -259,7 +283,7 @@ export async function translate(input) {
   // 3. Single word
   if (words.length === 1) {
     const w = lookupGaro(words[0]);
-    if (w) return { garo: w, method: 'exact-word', confidence: 0.95 };
+    if (w) return { garo: w, method: 'exact-word', confidence: capLookupConfidence(words[0], 0.95) };
   }
 
   // 3.5 Multi-clause connective splitting ("X and Y", "if X Y", etc.)
@@ -289,7 +313,7 @@ export async function translate(input) {
       if (isNegativeShortcut && /a$/i.test(sm)) {
         sm = applyNegation(sm);
       }
-      return { garo: sm, method: 'stopword-stripped', confidence: 0.88 };
+      return { garo: sm, method: 'stopword-stripped', confidence: capLookupConfidence(stripped, 0.88) };
     }
   }
 

@@ -862,6 +862,36 @@ function main() {
     'utf8'
   );
 
+  // Handoff B item 4 fix (2026-09-06, Claude B — docs/HANDOFF_CLAUDE_B_
+  // 20260906.md / re-audit CLAUDE_C_REAUDIT_20260906B.md): confidence-
+  // schema gap — runtime confidence for dictionary-lookup methods
+  // (phrase-map/exact-phrase/exact-word/stopword-stripped) was a FIXED
+  // per-method number (0.95-0.99), completely independent of whether the
+  // underlying master_dictionary.json row for that key was ever actually
+  // verified. Confirmed live: "dog" (source row explicitly tagged
+  // `confidence: "unverified"`, no citation) still shipped 0.99 via
+  // phrase_maps.js — indistinguishable at runtime from a genuinely
+  // native-confirmed word. "two cat" was independently fixed as a side
+  // effect of NV-135, but this is the GENERAL gap behind it, not a single
+  // instance.
+  // Fix: export the exact set of keys pickPrimaryNoVerifiedCandidate
+  // already computed above (zero VERIFIED/HIGH evidence across every
+  // candidate for that key) so translationEngine.js can cap confidence
+  // for these specific dictionary-lookup methods at build time — reusing
+  // an existing, already-computed signal, not inventing a new confidence
+  // judgment. Runtime-composed methods (grammar-assembly, sov-assembly,
+  // morphology, classifier, etc.) are untouched: their confidence already
+  // reflects composition uncertainty, not source-citation status, so
+  // capping them against the same list would conflate two different
+  // signals rather than split them.
+  const unverifiedWords = pickPrimaryNoVerifiedCandidate.map(({ key }) => key).sort();
+  fs.writeFileSync(
+    path.join(srcDir, 'data', 'unverified_words.json'),
+    JSON.stringify(unverifiedWords),
+    'utf8'
+  );
+  console.log(`Unverified-confidence set: ${unverifiedWords.length} key(s) -> src/data/unverified_words.json (used to cap dictionary-lookup confidence at runtime)`);
+
   console.log(`Success: Compiled ${Object.keys(finalized).length} unique entries into src/compiled_dict.json`);
   console.log(`Alternates: ${Object.keys(alternates).length} entries have 2+ known Garo variants -> src/compiled_dict_alternates.json`);
 
