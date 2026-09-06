@@ -2897,41 +2897,53 @@ claude_c:
     how many now resolve to a principled (non-last-write-wins) value, how many remain and why. A single
     working example (e.g. "king now returns Raja") is instance-level evidence only and does not satisfy
     this protocol. Only after that count-based report can whoever has push access mark the §4 row CLOSED.'
-  latest_audit_head: 42e93ba
-  latest_report: 'docs/CLAUDE_C_AUDIT_20260821.md — full QA pass (repo-wide, per Project Owner request).
+  latest_audit_head: 7afc92b
+  latest_report: 'docs/CLAUDE_C_REAUDIT_20260906B.md (chained from docs/CLAUDE_C_AUDIT_20260905.md +
+    ..._ADDENDUM.md, all pushed) — full-scale independent audit + re-audit, all read-only, live translate()
+    + source-trace verified (not commit-message-trusted). RESOLVED, independently confirmed: cat root
+    unified to Menggo (NV-135), adjective+animal placeholder collision fixed and generalized beyond
+    animals. STILL OPEN, reconfirmed unchanged at re-audit: leaf/leaves collision (highest severity —
+    silently resolves to an unrelated root, ''to leave'' bare-infinitive-alias/plural-strip collision,
+    fully root-caused), babies/cities/knives plural morphology (no y→ies or f→ves rule), "where is the
+    cat?"→"mang" classifier-stub leak (stopword-stripped path, root cause not yet located), question-type
+    marking generalization failure (polar + wh-word, broader than the documented NV-119/120 scope — silently
+    drops to a bare declarative for almost any subject/tense off a literal citation, no confidence signal),
+    answer compiled-level tie (Claude A reconfirmed the POS split via NV-077 addendum, now purely blocked
+    on Claude B), elephant cross-layer variant divergence (low priority), ball fuzzy false-positive, dog
+    confidence-schema gap. Full 9-item breakdown + severity ranking in docs/HANDOFF_CLAUDE_B_20260906.md;
+    linguistic-only items in docs/HANDOFF_CLAUDE_A_20260906.md. Also reviewed (not edited/pushed) two
+    not-yet-pushed Claude A/B migration drafts this session — see docs/CLAUDE_C_SESSION_MIGRATION_20260906D.md
+    for the review notes (one factual discrepancy caught: a draft''s "pushed and verified" self-report
+    didn''t match actual origin/main, and its main fix duplicated an already-landed commit).
+    docs/CLAUDE_C_AUDIT_20260821.md stays in docs/ (historical), superseded by this report per
+    closure_protocol.'
+  self_push_note: '2026-09-06, Claude C — this commit was pushed directly by Claude C (not relayed through
+    Claude A/B), under the explicit Project Owner-directive exception in SESSION_BOOTSTRAP.md (dated
+    2026-08-19), invoked explicitly this session ("start migration use push... don''t touch A and B, only
+    c"). Scope: docs/CLAUDE_C_AUDIT_20260905.md, ..._ADDENDUM.md, docs/CLAUDE_C_REAUDIT_20260906B.md,
+    docs/HANDOFF_CLAUDE_A_20260906.md, docs/HANDOFF_CLAUDE_B_20260906.md (all Claude C''s own report-writing
+    function, no linguistic or engineering decision), plus this session-close migration doc
+    (docs/CLAUDE_C_SESSION_MIGRATION_20260906D.md) and this claude_c WORKSTATE block only — no
+    master_dictionary.json edit, no claude_a/claude_b WORKSTATE block touched, per explicit instruction.
+    docs/CLAUDE_C_SESSION_MIGRATION_20260906D.md also carries two full draft relay-prompts (Claude A and
+    Claude B) for new Thangseng evidence the Project Owner supplied this session — drafted, NOT yet sent
+    to either agent''s live session and NOT yet logged as NV entries; full verbatim text preserved there
+    so it isn''t lost. SOURCE / ATTRIBUTION: all new Garo-language content in those draft prompts
+    originates from Thangseng, relayed by the Project Owner via WhatsApp transcript excerpts and direct
+    in-chat correction this session. Neither draft asserts a linguistic decision on Claude C''s own
+    authority — both route every promotion/supersession/generalization question to Claude A, and the
+    "small [noun]: chik→chona, all rows" generalization is explicitly marked as Project Owner authority
+    layered on the native evidence, not something Thangseng said generalizes on his own.'
+  prior_report: 'docs/CLAUDE_C_AUDIT_20260821.md — full QA pass (repo-wide, per Project Owner request).
     Gate green throughout: 218/218 tests, lint clean, build clean, resync gate 0 candidates, live translate()
-    sweep 8132/8132 keys, 0 errors. Two open findings, handoffs written: (1) ''king'' — live bug, translate(''king'')
-    returns ''thin objects'' not Raja, root-caused to two misimported classifier-scope-description rows
-    outranking the real SUPERSEDED-only Raja row (see docs/HANDOFF_CLAUDE_A_20260821.md + docs/HANDOFF_CLAUDE_B_20260821.md
-    for the two-sided fix). (2) ''film''/''movie'' missing from dictionary entirely + a new finding: translate()
-    silently drops unresolved object nouns rather than flagging them (docs/HANDOFF_CLAUDE_A_20260821.md
-    for the vocab fix, docs/HANDOFF_CLAUDE_B_20260821.md for the silent-drop behavior). ''answer'' tie
-    confirmed still open, unchanged, masked by a corrections.json override. No live A/B desync — Claude
-    B''s 8/21 rebase onto Claude A''s push was clean. docs/CLAUDE_C_AUDIT_20260816.md stays in docs/ (historical),
-    superseded by this report per closure_protocol.'
-  self_push_note: '2026-08-22, Claude C — this commit was pushed directly by Claude C (not relayed through
-    Claude A/B), under the explicit Project Owner-directive exception in SESSION_BOOTSTRAP.md (dated 2026-08-19):
-    "if the Project Owner explicitly instructs Claude C to commit or push... Claude C may perform that
-    repository mutation directly." Scope of this action: two new native-data reference documents only,
-    not an audit fix, not a linguistic or engineering decision — Claude C''s normal report-writing function,
-    just self-pushed instead of relayed this time. Added: docs/THANGSENG_RELAY_TABLE_20260821B.md (full
-    item-by-item table, every entry cross-checked against live master_dictionary.json) and docs/CLAUDE_C_TRANSCRIPT_ANALYSIS_20260821B.md
-    (narrative summary). SOURCE / ATTRIBUTION (read this before treating anything in either doc as ground
-    truth): all Garo-language data in both documents originates from Thangseng (native speaker), relayed
-    via a Tridip-Thangseng WhatsApp transcript dated 2026-08-21, itself relayed into this Claude C session
-    by the Project Owner. Two items (king = Raja, film = film) were separately confirmed by Thangseng
-    and added directly by the Project Owner in this same session. Neither document asserts any of its
-    own linguistic judgment — every proposed promotion/supersession is flagged for Claude A''s decision,
-    per Claude C''s standing no-linguistic-decisions boundary. Directly relevant to this report''s two
-    open findings above: the relay table''s `king`/`film` rows supply the native citations `docs/HANDOFF_CLAUDE_A_20260821.md`
-    needs, but do NOT themselves close either finding — king still needs Claude B''s structural pickPrimary
-    fix (class_closure_protocol above applies: a single "king now returns Raja" instance is not sufficient
-    to mark AI-001 CLOSED), and film''s sibling gap (`movie`) plus the silent-object-drop engineering
-    defect are untouched. Raka orthography note: both documents render raka consistently as the middle
-    dot (·), matching master_dictionary.json''s predominant convention, not the apostrophe form seen in
-    docs/GRAMMAR_RAKA_RULE_CONFIRMED_20260626.md and in the raw transcript — a deliberate normalization
-    for readability, not a claim that one form is more correct than the other.'
-  prior_report: 'docs/CLAUDE_C_AUDIT_20260815B.md — follow-up pass. Verified fixed at runtime (not just
+    sweep 8132/8132 keys, 0 errors. Two open findings at the time, both since closed: (1) ''king'' — live
+    bug, root-caused to two misimported classifier-scope-description rows outranking the real
+    SUPERSEDED-only Raja row. (2) ''film''/''movie'' missing from dictionary entirely + translate() silently
+    dropping unresolved object nouns. ''answer'' tie flagged still open at the time — remains open as of
+    the current latest_report above, now purely blocked on Claude B per Claude A''s NV-077 addendum.
+    (Older chain, 2026-08-15B and earlier, superseded by this entry per closure_protocol — see git history
+    for that text if needed.)'
+  prior_report_older: 'docs/CLAUDE_C_AUDIT_20260815B.md — follow-up pass. Verified fixed at runtime (not just
     claimed): student''s bare-noun root (all paths, Chattro) and the 85-key SUPERSEDED-override resync
     (0 candidates remaining on re-run). Confirmed still open, unchanged: the 9 compiled_dict.json keys
     (work x2, boil, build, close, empty, leg, outside, strong) serving non-VERIFIED values, pickPrimary
@@ -2945,7 +2957,17 @@ claude_c:
     resynced away, the wrong value ships with no test coverage catching it. This is the concrete case
     behind the Project Owner''s "A already fixed answer, why does B flag it again" question — both are
     right, at different layers; see report §3 for full resolution.'
-  next_action: '2026-08-16 re-audit (docs/CLAUDE_C_AUDIT_20260816.md), supersedes the text below with
+  next_action: 'Full text: docs/CLAUDE_C_SESSION_MIGRATION_20260906D.md. Two draft relay-prompts (Claude
+    A and Claude B) for new Thangseng evidence are written and preserved verbatim in that doc but NOT
+    yet sent to either agent''s live session, and nothing in them is logged as an NV entry yet — that''s
+    the actual next action, pending the Project Owner sending them. Once Claude A logs the NV entries:
+    re-verify each one live against master_dictionary.json/translate() before treating any as closed —
+    same discipline as this session''s audits, one of which caught a migration draft''s "pushed and
+    verified" self-report not matching actual origin/main. Once Claude B''s queued fixes land (leaf/leaves,
+    small-noun chik→chona, the new "very hot today" word-order + composition findings): re-audit against
+    docs/CLAUDE_C_REAUDIT_20260906B.md''s 7-item open list, do not assume a fix is correct from its commit
+    message alone.'
+  next_action_prior_20260821: '2026-08-16 re-audit (docs/CLAUDE_C_AUDIT_20260816.md), supersedes the text below with
     the same substance, re-verified live, no changes: Claude A''s SUPERSEDED-tagging step is DONE (cb53f1c).
     Claude B: design and implement one pickPrimary tie-break covering both bug subclasses — (1) the ''answer''
     2-way VERIFIED tie (Aganchaka/Aganchakani, currently last-write-wins, masked by a corrections.json
