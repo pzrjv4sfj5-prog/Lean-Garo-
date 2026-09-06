@@ -595,7 +595,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `bad bird`: candidates — `rong·a mang` (weak/OCR), `rong·a do·o` (weak/OCR) — shipped: `rong·a do·o`
 - `bad book`: candidates — `rong·a ki·tap` (weak/OCR) — shipped: `rong·a ki·tap`
 - `bad car`: candidates — `rong·a mot` (weak/OCR) — shipped: `rong·a mot`
-- `bad cat`: candidates — `rong·a mang` (weak/OCR) — shipped: `rong·a mang`
+- `bad cat`: candidates — `rong·a mang` (weak/OCR), `rong·a Menggo` (weak/OCR) — shipped: `rong·a Menggo`
 - `bad dog`: candidates — `rong·a mang` (weak/OCR), `rong·a Achak` (weak/OCR) — shipped: `rong·a Achak`
 - `bad fish`: candidates — `rong·a mang` (weak/OCR), `rong·a na·tok` (weak/OCR) — shipped: `rong·a na·tok`
 - `bad house`: candidates — `rong·a rang` (weak/OCR), `rong·a Nok` (weak/OCR) — shipped: `rong·a Nok`
@@ -649,7 +649,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `beautiful bird`: candidates — `gima mang` (weak/OCR), `gima do·o` (weak/OCR) — shipped: `gima do·o`
 - `beautiful book`: candidates — `gima ki·tap` (weak/OCR) — shipped: `gima ki·tap`
 - `beautiful car`: candidates — `gima mot` (weak/OCR) — shipped: `gima mot`
-- `beautiful cat`: candidates — `gima mang` (weak/OCR) — shipped: `gima mang`
+- `beautiful cat`: candidates — `gima mang` (weak/OCR), `gima Menggo` (weak/OCR) — shipped: `gima Menggo`
 - `beautiful dog`: candidates — `gima mang` (weak/OCR), `gima Achak` (weak/OCR) — shipped: `gima Achak`
 - `beautiful fish`: candidates — `gima mang` (weak/OCR), `gima na·tok` (weak/OCR) — shipped: `gima na·tok`
 - `beautiful house`: candidates — `gima rang` (weak/OCR), `gima Nok` (weak/OCR) — shipped: `gima Nok`
@@ -700,7 +700,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `big bird`: candidates — `gonga mang` (weak/OCR), `gonga do·o` (weak/OCR) — shipped: `gonga do·o`
 - `big book`: candidates — `gonga ki·tap` (weak/OCR) — shipped: `gonga ki·tap`
 - `big car`: candidates — `gonga mot` (weak/OCR) — shipped: `gonga mot`
-- `big cat`: candidates — `gonga mang` (weak/OCR) — shipped: `gonga mang`
+- `big cat`: candidates — `gonga mang` (weak/OCR), `gonga Menggo` (weak/OCR) — shipped: `gonga Menggo`
 - `big dog`: candidates — `gonga mang` (weak/OCR), `gonga Achak` (weak/OCR) — shipped: `gonga Achak`
 - `big fish`: candidates — `gonga mang` (weak/OCR), `gonga na·tok` (weak/OCR) — shipped: `gonga na·tok`
 - `big house`: candidates — `gonga rang` (weak/OCR), `gonga Nok` (weak/OCR) — shipped: `gonga Nok`
@@ -1024,7 +1024,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `cold bird`: candidates — `jak mang` (weak/OCR), `jak do·o` (weak/OCR) — shipped: `jak do·o`
 - `cold book`: candidates — `jak ki·tap` (weak/OCR) — shipped: `jak ki·tap`
 - `cold car`: candidates — `jak mot` (weak/OCR) — shipped: `jak mot`
-- `cold cat`: candidates — `jak mang` (weak/OCR) — shipped: `jak mang`
+- `cold cat`: candidates — `jak mang` (weak/OCR), `jak Menggo` (weak/OCR) — shipped: `jak Menggo`
 - `cold dog`: candidates — `jak mang` (weak/OCR), `jak Achak` (weak/OCR) — shipped: `jak Achak`
 - `cold fish`: candidates — `jak mang` (weak/OCR), `jak na·tok` (weak/OCR) — shipped: `jak na·tok`
 - `cold house`: candidates — `jak rang` (weak/OCR), `jak Nok` (weak/OCR) — shipped: `jak Nok`
@@ -1701,7 +1701,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `good bird`: candidates — `ramang mang` (weak/OCR), `ramang do·o` (weak/OCR) — shipped: `ramang do·o`
 - `good book`: candidates — `ramang ki·tap` (weak/OCR) — shipped: `ramang ki·tap`
 - `good car`: candidates — `ramang mot` (weak/OCR) — shipped: `ramang mot`
-- `good cat`: candidates — `ramang mang` (weak/OCR) — shipped: `ramang mang`
+- `good cat`: candidates — `ramang mang` (weak/OCR), `ramang Menggo` (weak/OCR) — shipped: `ramang Menggo`
 - `good dog`: candidates — `ramang mang` (weak/OCR), `ramang Achak` (weak/OCR) — shipped: `ramang Achak`
 - `good enough`: candidates — `nam·hang` (weak/OCR) — shipped: `nam·hang`
 - `good fish`: candidates — `ramang mang` (weak/OCR), `ramang na·tok` (weak/OCR) — shipped: `ramang na·tok`
@@ -1944,7 +1944,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `his/her bird`: candidates — `uni mang` (weak/OCR), `uni do·o` (weak/OCR) — shipped: `uni do·o`
 - `his/her book`: candidates — `uni book` (weak/OCR), `uni ki·tap` (weak/OCR) — shipped: `uni ki·tap`
 - `his/her car`: candidates — `uni car` (weak/OCR), `uni mot` (weak/OCR) — shipped: `uni mot`
-- `his/her cat`: candidates — `uni mang` (weak/OCR) — shipped: `uni mang`
+- `his/her cat`: candidates — `uni mang` (weak/OCR), `uni Menggo` (weak/OCR) — shipped: `uni Menggo`
 - `his/her dog`: candidates — `uni mang` (weak/OCR), `uni Achak` (weak/OCR) — shipped: `uni Achak`
 - `his/her fish`: candidates — `uni mang` (weak/OCR), `uni na·tok` (weak/OCR) — shipped: `uni na·tok`
 - `his/her food`: candidates — `uni food` (weak/OCR), `uni chak` (weak/OCR), `uni al·a` (weak/OCR) — shipped: `uni al·a`
@@ -1987,7 +1987,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `hot bird`: candidates — `mek mang` (weak/OCR), `mek do·o` (weak/OCR) — shipped: `mek do·o`
 - `hot book`: candidates — `mek ki·tap` (weak/OCR) — shipped: `mek ki·tap`
 - `hot car`: candidates — `mek mot` (weak/OCR) — shipped: `mek mot`
-- `hot cat`: candidates — `mek mang` (weak/OCR) — shipped: `mek mang`
+- `hot cat`: candidates — `mek mang` (weak/OCR), `mek Menggo` (weak/OCR) — shipped: `mek Menggo`
 - `hot dog`: candidates — `mek mang` (weak/OCR), `mek Achak` (weak/OCR) — shipped: `mek Achak`
 - `hot fish`: candidates — `mek mang` (weak/OCR), `mek na·tok` (weak/OCR) — shipped: `mek na·tok`
 - `hot house`: candidates — `mek rang` (weak/OCR), `mek Nok` (weak/OCR) — shipped: `mek Nok`
@@ -2601,7 +2601,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `my book`: candidates — `angni book` (weak/OCR), `angni ki·tap` (weak/OCR) — shipped: `angni ki·tap`
 - `my brother`: candidates — `angni da·o` (weak/OCR) — shipped: `angni da·o`
 - `my car`: candidates — `angni car` (weak/OCR), `angni mot` (weak/OCR) — shipped: `angni mot`
-- `my cat`: candidates — `angni mang` (weak/OCR) — shipped: `angni mang`
+- `my cat`: candidates — `angni mang` (weak/OCR), `angni Menggo` (weak/OCR) — shipped: `angni Menggo`
 - `my daughter`: candidates — `angni ko·ani` (weak/OCR) — shipped: `angni ko·ani`
 - `my elder sister.`: candidates — `Abi (A·bi)` (weak/OCR) — shipped: `Abi (A·bi)`
 - `my father; father.`: candidates — `Apa` (weak/OCR) — shipped: `Apa`
@@ -2664,7 +2664,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `new book`: candidates — `gsa ki·tap` (weak/OCR) — shipped: `gsa ki·tap`
 - `new born`: candidates — `a·wa git·chak` (weak/OCR) — shipped: `a·wa git·chak`
 - `new car`: candidates — `gsa mot` (weak/OCR) — shipped: `gsa mot`
-- `new cat`: candidates — `gsa mang` (weak/OCR) — shipped: `gsa mang`
+- `new cat`: candidates — `gsa mang` (weak/OCR), `gsa Menggo` (weak/OCR) — shipped: `gsa Menggo`
 - `new dog`: candidates — `gsa mang` (weak/OCR), `gsa Achak` (weak/OCR) — shipped: `gsa Achak`
 - `new fish`: candidates — `gsa mang` (weak/OCR), `gsa na·tok` (weak/OCR) — shipped: `gsa na·tok`
 - `new house`: candidates — `gsa rang` (weak/OCR), `gsa Nok` (weak/OCR) — shipped: `gsa Nok`
@@ -2764,7 +2764,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `old bird`: candidates — `rong mang` (weak/OCR), `rong do·o` (weak/OCR) — shipped: `rong do·o`
 - `old book`: candidates — `rong ki·tap` (weak/OCR) — shipped: `rong ki·tap`
 - `old car`: candidates — `rong mot` (weak/OCR) — shipped: `rong mot`
-- `old cat`: candidates — `rong mang` (weak/OCR) — shipped: `rong mang`
+- `old cat`: candidates — `rong mang` (weak/OCR), `rong Menggo` (weak/OCR) — shipped: `rong Menggo`
 - `old dog`: candidates — `rong mang` (weak/OCR), `rong Achak` (weak/OCR) — shipped: `rong Achak`
 - `old fish`: candidates — `rong mang` (weak/OCR), `rong na·tok` (weak/OCR) — shipped: `rong na·tok`
 - `old house`: candidates — `rong rang` (weak/OCR), `rong Nok` (weak/OCR) — shipped: `rong Nok`
@@ -2815,7 +2815,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `our bird`: candidates — `ini mang` (weak/OCR), `ini do·o` (weak/OCR) — shipped: `ini do·o`
 - `our book`: candidates — `ini book` (weak/OCR), `ini ki·tap` (weak/OCR) — shipped: `ini ki·tap`
 - `our car`: candidates — `ini car` (weak/OCR), `ini mot` (weak/OCR) — shipped: `ini mot`
-- `our cat`: candidates — `ini mang` (weak/OCR) — shipped: `ini mang`
+- `our cat`: candidates — `ini mang` (weak/OCR), `ini Menggo` (weak/OCR) — shipped: `ini Menggo`
 - `our country is big`: candidates — `An.chingni a.song dala` (weak/OCR) — shipped: `An.chingni a.song dala`
 - `our dog`: candidates — `ini mang` (weak/OCR), `ini Achak` (weak/OCR) — shipped: `ini Achak`
 - `our fish`: candidates — `ini mang` (weak/OCR), `ini na·tok` (weak/OCR) — shipped: `ini na·tok`
@@ -3481,7 +3481,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `small bird`: candidates — `chik mang` (weak/OCR), `chik do·o` (weak/OCR) — shipped: `chik do·o`
 - `small book`: candidates — `chik ki·tap` (weak/OCR) — shipped: `chik ki·tap`
 - `small car`: candidates — `chik mot` (weak/OCR) — shipped: `chik mot`
-- `small cat`: candidates — `chik mang` (weak/OCR) — shipped: `chik mang`
+- `small cat`: candidates — `chik mang` (weak/OCR), `chik Menggo` (weak/OCR) — shipped: `chik Menggo`
 - `small dog`: candidates — `chik mang` (weak/OCR), `chik Achak` (weak/OCR) — shipped: `chik Achak`
 - `small fish`: candidates — `chik mang` (weak/OCR), `chik na·tok` (weak/OCR) — shipped: `chik na·tok`
 - `small house`: candidates — `chik rang` (weak/OCR), `chik Nok` (weak/OCR) — shipped: `chik Nok`
@@ -4101,7 +4101,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `their bird`: candidates — `bini mang` (weak/OCR), `bini do·o` (weak/OCR) — shipped: `bini do·o`
 - `their book`: candidates — `bini book` (weak/OCR), `bini ki·tap` (weak/OCR) — shipped: `bini ki·tap`
 - `their car`: candidates — `bini car` (weak/OCR), `bini mot` (weak/OCR) — shipped: `bini mot`
-- `their cat`: candidates — `bini mang` (weak/OCR) — shipped: `bini mang`
+- `their cat`: candidates — `bini mang` (weak/OCR), `bini Menggo` (weak/OCR) — shipped: `bini Menggo`
 - `their conversation is very nice`: candidates — `Uamangni agangrikani namen nambea` (weak/OCR) — shipped: `Uamangni agangrikani namen nambea`
 - `their dog`: candidates — `bini mang` (weak/OCR), `bini Achak` (weak/OCR) — shipped: `bini Achak`
 - `their fish`: candidates — `bini mang` (weak/OCR), `bini na·tok` (weak/OCR) — shipped: `bini na·tok`
@@ -5164,7 +5164,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `ugly bird`: candidates — `rong mang` (weak/OCR), `rong do·o` (weak/OCR) — shipped: `rong do·o`
 - `ugly book`: candidates — `rong ki·tap` (weak/OCR) — shipped: `rong ki·tap`
 - `ugly car`: candidates — `rong mot` (weak/OCR) — shipped: `rong mot`
-- `ugly cat`: candidates — `rong mang` (weak/OCR) — shipped: `rong mang`
+- `ugly cat`: candidates — `rong mang` (weak/OCR), `rong Menggo` (weak/OCR) — shipped: `rong Menggo`
 - `ugly dog`: candidates — `rong mang` (weak/OCR), `rong Achak` (weak/OCR) — shipped: `rong Achak`
 - `ugly fish`: candidates — `rong mang` (weak/OCR), `rong na·tok` (weak/OCR) — shipped: `rong na·tok`
 - `ugly house`: candidates — `rong rang` (weak/OCR), `rong Nok` (weak/OCR) — shipped: `rong Nok`
@@ -5722,7 +5722,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `your bird`: candidates — `nani mang` (weak/OCR), `nani do·o` (weak/OCR) — shipped: `nani do·o`
 - `your book`: candidates — `nani book` (weak/OCR), `nani ki·tap` (weak/OCR) — shipped: `nani ki·tap`
 - `your car`: candidates — `nani car` (weak/OCR), `nani mot` (weak/OCR) — shipped: `nani mot`
-- `your cat`: candidates — `nani mang` (weak/OCR) — shipped: `nani mang`
+- `your cat`: candidates — `nani mang` (weak/OCR), `nani Menggo` (weak/OCR) — shipped: `nani Menggo`
 - `your dog`: candidates — `nani mang` (weak/OCR), `nani Achak` (weak/OCR) — shipped: `nani Achak`
 - `your father`: candidates — `Nang·ni apa` (weak/OCR) — shipped: `Nang·ni apa`
 - `your feet stinks`: candidates — `nang·ni ja·a senga` (weak/OCR), `Nangni ja'a senga` (weak/OCR) — shipped: `Nangni ja'a senga`

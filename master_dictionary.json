@@ -13050,9 +13050,10 @@
   },
   {
     "english": "my cat",
-    "garo": "angni mang",
+    "garo": "angni Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "my bird",
@@ -13147,9 +13148,10 @@
   },
   {
     "english": "your cat",
-    "garo": "nani mang",
+    "garo": "nani Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "your bird",
@@ -13244,9 +13246,10 @@
   },
   {
     "english": "his/her cat",
-    "garo": "uni mang",
+    "garo": "uni Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "his/her bird",
@@ -13341,9 +13344,10 @@
   },
   {
     "english": "our cat",
-    "garo": "ini mang",
+    "garo": "ini Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "our bird",
@@ -13438,9 +13442,10 @@
   },
   {
     "english": "their cat",
-    "garo": "bini mang",
+    "garo": "bini Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "their bird",
@@ -14190,9 +14195,10 @@
   },
   {
     "english": "big cat",
-    "garo": "gonga mang",
+    "garo": "gonga Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "big bird",
@@ -14288,9 +14294,10 @@
   },
   {
     "english": "small cat",
-    "garo": "chik mang",
+    "garo": "chik Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "small bird",
@@ -14386,9 +14393,10 @@
   },
   {
     "english": "good cat",
-    "garo": "ramang mang",
+    "garo": "ramang Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "good bird",
@@ -14484,9 +14492,10 @@
   },
   {
     "english": "bad cat",
-    "garo": "rong·a mang",
+    "garo": "rong·a Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "bad bird",
@@ -14582,9 +14591,10 @@
   },
   {
     "english": "hot cat",
-    "garo": "mek mang",
+    "garo": "mek Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "hot bird",
@@ -14680,9 +14690,10 @@
   },
   {
     "english": "cold cat",
-    "garo": "jak mang",
+    "garo": "jak Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "cold bird",
@@ -14778,9 +14789,10 @@
   },
   {
     "english": "new cat",
-    "garo": "gsa mang",
+    "garo": "gsa Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "new bird",
@@ -14876,9 +14888,10 @@
   },
   {
     "english": "old cat",
-    "garo": "rong mang",
+    "garo": "rong Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "old bird",
@@ -14974,9 +14987,10 @@
   },
   {
     "english": "beautiful cat",
-    "garo": "gima mang",
+    "garo": "gima Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "beautiful bird",
@@ -15072,9 +15086,10 @@
   },
   {
     "english": "ugly cat",
-    "garo": "rong mang",
+    "garo": "rong Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "ugly bird",

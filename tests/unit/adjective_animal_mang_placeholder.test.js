@@ -26,13 +26,20 @@ const compiled = JSON.parse(fs.readFileSync(new URL('../../src/compiled_dict.jso
 // na·tok, house -> Nok, tree -> Bol, water -> Chi, student -> Chattro,
 // river -> chi·bi·ma, food -> al·a, rice -> mi.
 //
-// "cat" rows in this same batch are deliberately left untouched/unfixed:
-// cat's own canonical root is a genuine unresolved conflict between two
-// verified_high sources (menggo vs meng·gong) per
+// "cat" rows in this same batch were deliberately left untouched/unfixed
+// at that time: cat's own canonical root was a genuine unresolved conflict
+// between two verified_high sources (menggo vs meng·gong) per
 // docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md, and this task's own
 // standing rule is "do not make independent linguistic decisions where
 // Claude A owns the canonical data." Fixing every other noun in the batch
-// without inventing a cat answer is exactly the boundary of this fix.
+// without inventing a cat answer was exactly the boundary of that fix.
+//
+// Cat's root was resolved 2026-09-06 (NV-135, direct Project Owner relay):
+// cat = Menggo, meng·gong superseded. That unblocked this same batch's 15
+// "[modifier] cat" rows for the identical defect-class-3 fix already
+// applied to the other 10 nouns above (see
+// docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md for the original fix,
+// current session's migration doc for this follow-up).
 
 const MODIFIERS = [
   'my', 'your', 'his/her', 'our', 'their',
@@ -96,13 +103,16 @@ test('adjective+noun (non-animal): house/tree, water/student/river, food/rice no
   }
 });
 
-test('adjective+animal: "cat" rows remain the known, tracked, un-fixed placeholder (not silently changed)', () => {
-  // This is a deliberate "still broken, and we know it" guard, not a pass/fail
-  // on correctness — it exists so nobody's future edit quietly picks a cat
-  // root here without also updating the audit/migration trail.
+test('adjective+animal: "cat" no longer collides on the "mang" placeholder (NV-135 fix)', () => {
   for (const mod of MODIFIERS) {
     const cat = compiled[`${mod} cat`];
+    const dog = compiled[`${mod} dog`];
     assert.ok(cat, `expected a compiled entry for "${mod} cat"`);
-    assert.match(cat, /\bmang$/i, `"${mod} cat" was changed — if cat's root has been resolved, update this test and the migration doc together: ${cat}`);
+
+    assert.ok(!/\bmang$/i.test(cat), `"${mod} cat" still ends in the generic placeholder "mang": ${cat}`);
+    assert.match(cat, /menggo$/i, `"${mod} cat" does not end with the canonical cat root (Menggo, NV-135): ${cat}`);
+
+    // Cross-check against a former collision partner: no longer identical.
+    assert.notEqual(cat, dog, `"${mod} cat" and "${mod} dog" still collide: ${cat}`);
   }
 });
