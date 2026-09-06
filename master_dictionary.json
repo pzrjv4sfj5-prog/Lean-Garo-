@@ -524,8 +524,8 @@
     "english": "cat",
     "garo": "Menggo",
     "category": "animals",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'cat' has VERIFIED/HIGH form(s) ['meng·gong']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-135 (2026-09-06, direct Project Owner relay of Thangseng native confirmation: 'cat' = Menggo). Resolves the NV-134 Menggo/meng·gong conflict in favor of Menggo — reconciling question answered directly, not guessed. Also matches NV-071's independent 2026-08-11 root-level citation ('menggo' in the counting-phrase family). meng·gong now SUPERSEDED, see its own row.",
+    "confidence": "verified_high"
   },
   {
     "english": "cow",
@@ -8671,7 +8671,8 @@
     "english": "two cat",
     "garo": "menggo mang·gni",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-135 (2026-09-06): root 'menggo' confirmed via direct Project Owner relay, matches the already-VERIFIED/HIGH counting family (NV-071, 'one cat'/'three cat'/etc. idx 9232+) and the mang·gni=2 classifier-number pattern used throughout that family."
   },
   {
     "english": "two bird",
@@ -17444,7 +17445,8 @@
     "english": "the cat",
     "garo": "Menggo",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-135 (2026-09-06, direct Project Owner relay of Thangseng native confirmation: 'cat' = Menggo). Resolves the NV-134 Menggo/meng·gong conflict in favor of Menggo — reconciling question answered directly, not guessed. Also matches NV-071's independent 2026-08-11 root-level citation ('menggo' in the counting-phrase family). meng·gong now SUPERSEDED, see its own row."
   },
   {
     "english": "the cow",
@@ -20965,8 +20967,8 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-135 (2026-09-06, direct Project Owner relay of Thangseng native confirmation: 'cat' = Menggo). Resolves the NV-134 conflict against Menggo; this row's own citation trail never went beyond the bare tag 'variant/VERIFIED/HIGH' (no date/source/quote), confirmed by the same-day corpus archaeology in NV-134's addendum. Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "Catch",

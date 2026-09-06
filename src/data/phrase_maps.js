@@ -249,7 +249,7 @@ export const PHRASE_MAPS = {
   'blue': 'niil',
   'yellow': 'Rimit',
   'dog': 'Achak',
-  'cat': 'meng·gong',
+  'cat': 'Menggo', // NV-135 (2026-09-06): Menggo confirmed, meng·gong superseded
   'cow': 'ma·su',
   'elephant': 'Mong',
   'tiger': 'Matcha',
