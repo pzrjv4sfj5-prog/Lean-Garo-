@@ -18,7 +18,7 @@ import { NUMBER_WORDS, countNoun, parseCountingPhrase } from './garo_classifier.
 import { lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { lookupPhrase } from './data/phrase_maps.js';
 import { applyNegation, applyTense, findVerbForm, getConjugationRoot, applyTopicSuffix, composeBoundOnlyObject, applyDeclarativeEndingAia } from './morphologyEngine.js';
-import { STOP_WORDS, AUXILIARY_SKIP } from './normalizationEngine.js';
+import { STOP_WORDS, AUXILIARY_SKIP, INTENSIFIER_WORDS } from './normalizationEngine.js';
 
 export function analyzeGrammar(input) {
   if (!input || typeof input !== 'string') return null;
@@ -339,6 +339,18 @@ export function analyzeGrammar(input) {
       // word "Gni"), leaving "has dogs" unresolved as the object
       // ("[UNKNOWN]"). A number word is never the main verb.
       if (NUMBER_WORDS[w] !== undefined) continue;
+      // Bug A fix (2026-09-07, Claude B, docs/
+      // CLAUDE_B_TRACE_INTENSIFIER_ADJECTIVE_20260907.md): same shape as
+      // the NUMBER_WORDS guard immediately above - a closed-class word
+      // that resolves via findVerbForm's dictionary fallback but is
+      // never itself the main verb. Without this, "it is very hot"
+      // wrongly elects "very" (real dictionary entry "namen") as the
+      // finite verb before the loop ever reaches the real predicate
+      // adjective "hot", stranding "hot" as a leftover object with an
+      // incorrect -ko marker. See INTENSIFIER_WORDS in
+      // normalizationEngine.js for why this is a narrow closed-class
+      // table, not a general POS fix.
+      if (INTENSIFIER_WORDS.has(w)) continue;
       // RC-CANDIDATE-010 fix (2026-07-12): a word immediately following a
       // locative preposition (in/on/at), possibly with an intervening
       // article ("on the table"), is a locative-adjunct object, never the
@@ -530,7 +542,7 @@ export function analyzeGrammar(input) {
         pendingDestination = true;
         continue;
       }
-      if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || subjectWords.has(w)) {
+      if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || subjectWords.has(w) || INTENSIFIER_WORDS.has(w)) {
         if (/^(in|on|at)$/.test(w)) pendingLocative = true;
         continue;
       }

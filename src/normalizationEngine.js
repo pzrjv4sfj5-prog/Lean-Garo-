@@ -51,6 +51,29 @@ export const STOP_WORDS = new Set([
 // their own standalone dictionary entries) and get the same treatment.
 export const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','should','may','might','can','used','to','stopped','quit','finished','completed','longer']);
 
+// Bug A fix (2026-09-07, Claude B — docs/CLAUDE_B_TRACE_INTENSIFIER_
+// ADJECTIVE_20260907.md, open item 1 of docs/
+// CLAUDE_B_SESSION_MIGRATION_20260907.md). Same closed-class-table
+// discipline as STOP_WORDS/AUXILIARY_SKIP above, applied to the gap
+// those two tables didn't cover: grammarEngine.js's verb-finding loop
+// (analyzeGrammar) accepts the first word that resolves via
+// findVerbForm, which falls back to a plain dictionary lookup and so
+// succeeds on ANY word with an entry - not just verbs. Intensifiers
+// like "very" have their own real dictionary entry ("very"->"namen"),
+// so without this guard the loop wrongly elects the intensifier as the
+// finite verb before it ever reaches the real predicate adjective
+// ("hot" in "it is very hot"), stranding the adjective as a leftover
+// object that then gets an incorrect -ko marker. "so" is deliberately
+// left out here - it's already in STOP_WORDS above and is skipped by
+// that check before the verb loop would ever see it as a candidate;
+// duplicating it here would be redundant, not additive. This table is
+// intentionally narrow (closed-class degree adverbs only) - it is NOT a
+// general POS tag and does not attempt to cover every possible
+// intensifier a future sentence might use, matching the same
+// no-POS-data boundary already documented at the NP-subject coherence
+// check a few dozen lines into grammarEngine.js.
+export const INTENSIFIER_WORDS = new Set(['very','too','quite','really','extremely','rather','somewhat']);
+
 export function fuzzyMatch(input) {
   const lower = input.toLowerCase();
   let best = null, bestDist = Infinity;
