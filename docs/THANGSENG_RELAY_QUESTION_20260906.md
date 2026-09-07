@@ -1,23 +1,20 @@
 # Thangseng Relay Questions — 2026-09-06 (session 20260906E)
 
-Three open items surfaced while processing the 2026-09-05 evening
-native-evidence batch (NV-137–NV-141). Evidence-first: none of these
-are guessed or resolved by pattern — each needs an explicit answer.
+Evidence-first: none of these are guessed or resolved by pattern —
+each needs an explicit answer.
 
-1. **`get` vs `can` collision.** New relay: `get` = `man·a`. But
-   `man·a` is already `verified_high` for `can` (NV-018/Check C,
-   2026-08-05/08-04). Is `man·a` genuinely doing double duty for both
-   senses ("get" and "can"), or is one of these a mishearing/
-   misrelay? If both are correct, is there a grammatical or contextual
-   cue (word order, a suffix, surrounding words) that distinguishes
-   "get" from "can" when `man·a` is used?
+~~1. `get` vs `can` collision.~~ **CLOSED, NV-148 (2026-09-07):** both
+confirmed correct, genuine polysemy — no distinguishing cue given.
 
-2. **`two`: `Gni` vs `gnisan`.** The dictionary's existing (unverified)
-   root for "two" is `Gni`. The 2026-09-05 duration sentence
-   (Williamnagar→Tura) instead uses `gnisan`. Are these the same root
-   in different forms (e.g. a bare root vs. a citation/suffixed form),
-   or two different words? If they're the same root, which
-   environment calls for which form?
+2. **`two`: `Gni`/`gni` vs `gnisan` vs `gini`. PARTIALLY CLOSED,
+   NV-149 (2026-09-07):** Thangseng confirmed `two`/`2` = `gini`
+   (new VERIFIED/HIGH row). Still open, not addressed by that answer:
+   (a) is `gini` the same root as the already-VERIFIED classifier-
+   suffix `gni` (used compositionally, e.g. `mang·gni`), just a
+   standalone-numeral spelling, or a distinct word — does it replace
+   `gni` in suffix position too, or only as the free-standing numeral?
+   (b) how does `gnisan` (NV-138) relate to `gini` — suffixed/citation
+   form of the same root, or unrelated?
 
 3. **Tied candidate — "she will not be able to finish the difficult
    work tomorrow."** Two renderings on file, no signal for which is

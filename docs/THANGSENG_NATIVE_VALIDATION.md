@@ -6983,3 +6983,26 @@ general/citation-form root, unaffected by this resolution.
 `"Gisik nange poraibo"` (`verified_high`, imperative) and `"studies
 sincerely"` → `"Gisik nange poraia"` (`verified_high`, statement), each
 citing NV-147 and cross-referencing the other.
+
+## NV-148 (2026-09-07, direct Thangseng relay via Project Owner/WhatsApp)
+**Closes relay question 1** (docs/THANGSENG_RELAY_QUESTION_20260906.md).
+`get` = `man·a`, reconfirmed directly (not just via the NV-140 sentence
+relay). This is genuine polysemy, not a mishearing: `man·a` does double
+duty for both `can` (NV-018, VERIFIED/HIGH) and `get`. No distinguishing
+grammatical cue was supplied. `master_dictionary.json`'s NV-140 `get`
+row promoted `unverified` → `verified_high`. Not resolved: how the two
+senses are disambiguated in running text — flagged for a future
+question or left to context, not guessed.
+
+## NV-149 (2026-09-07, direct Thangseng relay via Project Owner/WhatsApp)
+**Partially closes relay question 2** (docs/THANGSENG_RELAY_QUESTION_20260906.md).
+`two`/`2` = `gini`. New VERIFIED/HIGH row added. Deliberately NOT merged
+with or superseding: the existing unverified `two`=`Gni` row, the
+existing unverified `two`=`gnisan` row (NV-138), or the separately
+VERIFIED/HIGH classifier-suffix root `gni` (bare `2` key, used
+compositionally, e.g. `mang·gni`="two [animals]"). This relay confirmed
+the word for the bare numeral but did not address whether `gini` is a
+spelling variant of the same root as suffix `gni`, a distinct
+standalone-numeral form, or how `gnisan` relates. Still open, not
+resolved by this session — see relay-question doc for the remaining
+follow-up needed.

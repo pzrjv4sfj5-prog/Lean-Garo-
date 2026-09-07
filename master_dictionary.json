@@ -36324,8 +36324,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED — NV-140 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening) — direct verb relay batch (finish/find/get/earn). 'get' = 'man·a', reusing the string already on file (and already VERIFIED/HIGH) for 'can' ('ama'/'man·a'). This is a second attested sense for the same form, not a resolution of that collision -- NOT promoted to verified_high pending disambiguation. Flagged as the next relay question: see docs/THANGSENG_RELAY_QUESTION_20260906.md.",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-148, direct Thangseng relay via Project Owner/WhatsApp (2026-09-07): 'get' = 'man·a' reconfirmed directly (not just via the NV-140 sentence relay), closing relay question 1 (docs/THANGSENG_RELAY_QUESTION_20260906.md #1) as genuine polysemy: 'man·a' does double duty for both 'can' (NV-018, VERIFIED/HIGH) and 'get'. No distinguishing grammatical cue (word order, suffix, context marker) was supplied to disambiguate the two senses -- flagged as an open engineering/disambiguation-by-context question if it ever becomes practically necessary, not guessed at here.",
+    "confidence": "verified_high"
   },
   {
     "english": "get",
@@ -78885,5 +78885,12 @@
     "category": "education",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH (statement/declarative) — NV-147, direct Thangseng relay via Project Owner/WhatsApp (2026-09-06 evening batch). Companion citation to 'Gisik nange poraibo' (imperative) above — see that row for the full resolution of the NV-129 study-root tension."
+  },
+  {
+    "english": "two",
+    "garo": "gini",
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-149, direct Thangseng relay via Project Owner/WhatsApp (2026-09-07): 'two'/'2' = 'gini'. Confirms and closes the immediate word-identity question for the bare numeral (docs/THANGSENG_RELAY_QUESTION_20260906.md #2). NOT MERGED/NOT SUPERSEDING: existing unverified 'two'='Gni' row and unverified 'two'='gnisan' row (NV-138) are left untouched, and the separately VERIFIED/HIGH classifier-suffix root 'gni' (bare '2' key, used compositionally e.g. 'mang·gni'='two [animals]') is also left untouched -- this relay answered 'what is the word for two/2' but did not address whether 'gini' is a variant spelling of the same root as suffix 'gni', a distinct standalone-numeral form vs. a bound classifier suffix, or how 'gnisan' relates. STILL OPEN, not guessed at: (a) does 'gini' replace 'gni' in classifier-suffix composition too, or only as the free-standing numeral; (b) is 'gnisan' a further-suffixed/citation form of the same root. Both need an explicit follow-up question before any supersession."
   }
 ]
