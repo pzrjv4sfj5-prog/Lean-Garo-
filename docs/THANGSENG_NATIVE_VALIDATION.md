@@ -7006,3 +7006,12 @@ spelling variant of the same root as suffix `gni`, a distinct
 standalone-numeral form, or how `gnisan` relates. Still open, not
 resolved by this session — see relay-question doc for the remaining
 follow-up needed.
+
+## NV-150 (2026-09-07, direct Thangseng relay via Project Owner/WhatsApp)
+**Further closes relay question 2.** `gini` (NV-149) was a likely
+spelling error for `gni`, not a distinct word — `two`/`2` is `gni`
+only. `master_dictionary.json`'s `gini` row marked SUPERSEDED (retained,
+not deleted); the bare `two`=`Gni` row promoted `unverified` →
+`verified_high`, matching the already-VERIFIED bare `2`=`gni` row.
+Still open, not addressed by this answer: how `gnisan` (NV-138) relates
+to `gni` — unresolved.

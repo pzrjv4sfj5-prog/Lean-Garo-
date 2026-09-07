@@ -6,15 +6,11 @@ each needs an explicit answer.
 ~~1. `get` vs `can` collision.~~ **CLOSED, NV-148 (2026-09-07):** both
 confirmed correct, genuine polysemy — no distinguishing cue given.
 
-2. **`two`: `Gni`/`gni` vs `gnisan` vs `gini`. PARTIALLY CLOSED,
-   NV-149 (2026-09-07):** Thangseng confirmed `two`/`2` = `gini`
-   (new VERIFIED/HIGH row). Still open, not addressed by that answer:
-   (a) is `gini` the same root as the already-VERIFIED classifier-
-   suffix `gni` (used compositionally, e.g. `mang·gni`), just a
-   standalone-numeral spelling, or a distinct word — does it replace
-   `gni` in suffix position too, or only as the free-standing numeral?
-   (b) how does `gnisan` (NV-138) relate to `gini` — suffixed/citation
-   form of the same root, or unrelated?
+2. **`two`: `gni` vs `gnisan`. PARTIALLY CLOSED, NV-149/NV-150
+   (2026-09-07):** `gini` was a spelling error — confirmed `two`/`2` is
+   `gni` only, matching the classifier-suffix use. Still open, not
+   addressed: how does `gnisan` (NV-138) relate to `gni` — is it a
+   suffixed/citation form of the same root, or a different word?
 
 3. **Tied candidate — "she will not be able to finish the difficult
    work tomorrow."** Two renderings on file, no signal for which is

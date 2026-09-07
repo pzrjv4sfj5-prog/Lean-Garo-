@@ -1046,8 +1046,8 @@
     "english": "two",
     "garo": "Gni",
     "category": "numbers",
-    "confidence": "unverified",
-    "notes": "UNVERIFIED — existing root 'Gni' (unpromoted). NV-138 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening) independently relayed 'gnisan' for 'two' inside the Williamnagar->Tura duration sentence. The two forms are not obviously the same root ('Gni' vs 'gnisan') -- flagged as an open cross-check per governance (no guessing whether 'gnisan' is a suffixed/citation-form variant of 'Gni' or a distinct form) rather than silently merged. See docs/THANGSENG_RELAY_QUESTION_20260906.md."
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-150 (2026-09-07, direct Thangseng relay via Project Owner): confirms 'two' = 'gni' (case/orthography matches the already-VERIFIED/HIGH bare '2'=gni row, idx unchanged, not touched here). Closes NV-149's open sub-question re: 'gini' -- 'gini' was a spelling error, not a real variant, now superseded. STILL OPEN, not addressed by this answer: how 'gnisan' (NV-138) relates to 'gni' -- unresolved, not guessed at."
   },
   {
     "english": "three",
@@ -78890,7 +78890,7 @@
     "english": "two",
     "garo": "gini",
     "category": "numbers",
-    "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — NV-149, direct Thangseng relay via Project Owner/WhatsApp (2026-09-07): 'two'/'2' = 'gini'. Confirms and closes the immediate word-identity question for the bare numeral (docs/THANGSENG_RELAY_QUESTION_20260906.md #2). NOT MERGED/NOT SUPERSEDING: existing unverified 'two'='Gni' row and unverified 'two'='gnisan' row (NV-138) are left untouched, and the separately VERIFIED/HIGH classifier-suffix root 'gni' (bare '2' key, used compositionally e.g. 'mang·gni'='two [animals]') is also left untouched -- this relay answered 'what is the word for two/2' but did not address whether 'gini' is a variant spelling of the same root as suffix 'gni', a distinct standalone-numeral form vs. a bound classifier suffix, or how 'gnisan' relates. STILL OPEN, not guessed at: (a) does 'gini' replace 'gni' in classifier-suffix composition too, or only as the free-standing numeral; (b) is 'gnisan' a further-suffixed/citation form of the same root. Both need an explicit follow-up question before any supersession."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-150 (2026-09-07, direct Thangseng relay via Project Owner): 'gini' (NV-149) confirmed to be a likely spelling error for 'gni', not a distinct word. 'two'/'2' is 'gni' only. See NV-150 for full closure. Retained, not deleted, per citation discipline."
   }
 ]
