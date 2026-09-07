@@ -20565,11 +20565,11 @@
   },
   {
     "english": "Axe",
-    "garo": "Rua (⚠ also means 'to pour' as verb)",
+    "garo": "Rua",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH v:Rua (⚠ verb: to pour) / ru-a",
+    "notes": "VERIFIED/HIGH v:Rua (⚠ verb: to pour) / ru-a | garo-field cleanup 2026-09-07 (Claude A): stripped inline (also means to pour) parenthetical into notes only; pickPrimary should prefer clean duplicate idx 3131 (ru·a)",
     "confidence": "verified_high"
   },
   {
