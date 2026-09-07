@@ -55,7 +55,7 @@ import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js
 // analyzeGrammar, tryWithoutGijaConstruction extracted to
 // src/grammarEngine.js (2026-07-29, BACKLOG-003 Phase 5). Verified zero
 // logic change via byte-identical 237-sentence stress benchmark diff.
-import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryPolarQuestionLunchConstruction } from './grammarEngine.js';
+import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryPolarQuestionLunchConstruction, tryVeryHotConstruction } from './grammarEngine.js';
 export { analyzeGrammar };
 // assembleSentenceSOV, assembleGrammar, translateIfClause,
 // translateMultiClause extracted to src/sentenceBuilder.js
@@ -350,6 +350,16 @@ export async function translate(input) {
   // why this is narrowly scoped rather than a general -ma composer).
   const polarLunch = tryPolarQuestionLunchConstruction(cleaned);
   if (polarLunch) return { garo: polarLunch, method: 'polar-question-construction', confidence: 0.85 };
+
+  // 5.95 "it's/it is very hot (today)" (2026-09-07, Claude B — native
+  // evidence, see grammarEngine.js's tryVeryHotConstruction for the full
+  // citation and why this is narrowly scoped, not a general intensifier-
+  // placement rule). Tried at the same tier as the constructions above,
+  // before grammar-assembly/sov-assembly ever get a chance at either of
+  // their two separate, unrelated bugs on this exact sentence (see
+  // docs/CLAUDE_B_TRACE_INTENSIFIER_ADJECTIVE_20260907.md).
+  const veryHot = tryVeryHotConstruction(cleaned);
+  if (veryHot) return { garo: veryHot, method: 'very-hot-construction', confidence: 0.85 };
 
   // 6. Grammar assembly — SOV with -ko object marker and -na purpose clause
   const grammar = analyzeGrammar(cleaned);

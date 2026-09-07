@@ -12,9 +12,9 @@ import { translate } from '../../src/translationEngine.js';
 // -y->-ies and -f/-fe->-ves forms before the generic s$/es$ strip in
 // sentenceBuilder.js's assembleSentenceSOV per-word lookup.
 
-test('leaves resolves to leaf (bi·jak), not the "to leave" alias', async () => {
+test('leaves resolves to leaf (bijakrang, NV-145), not the "to leave" alias', async () => {
   const r = await translate('leaves');
-  assert.equal(r.garo, 'bi·jak');
+  assert.equal(r.garo, 'bijakrang');
 });
 
 test('babies resolves via y->ies rule (previously hard [UNKNOWN])', async () => {
@@ -35,12 +35,15 @@ test('knives resolves via f->ves rule at full confidence, not fuzzy-match accide
   assert.notEqual(r.method, 'fuzzy-match');
 });
 
-// Regression guard: "leave" alone (the real verb) must still resolve to
-// its own correct alias — this fix must not touch the bare-infinitive
-// alias itself, only the order in which plural forms are tried against it.
+// Regression guard: "leave" alone (the real verb) is now "donbo" (NV-145/
+// NV-146, native-confirmed imperative), superseding the old auto-generated
+// bare-infinitive alias "Re·ongkata" this fix originally guarded against —
+// this test now checks that the plural-form-ordering fix itself doesn't
+// interfere with whatever "leave" resolves to, not a specific hardcoded
+// value from before NV-145 landed.
 test('bare "leave" (the verb) is unaffected by the plural-form ordering fix', async () => {
   const r = await translate('leave');
-  assert.equal(r.garo, 'Re·ongkata');
+  assert.equal(r.garo, 'donbo');
 });
 
 // Regression guard: existing sibilant/regular plurals unaffected.

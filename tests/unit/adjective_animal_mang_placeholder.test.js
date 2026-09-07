@@ -66,9 +66,19 @@ test('adjective+animal: dog/bird/fish no longer collide on the "mang" placeholde
 
     // Each must end with the same species root the working sentence-assembly
     // path already uses, so phrase-table and sentence composition agree.
-    assert.match(dog, /achak$/i, `"${mod} dog" does not end with the canonical dog root: ${dog}`);
-    assert.match(bird, /do·o$/i, `"${mod} bird" does not end with the canonical bird root: ${bird}`);
-    assert.match(fish, /na·tok$/i, `"${mod} fish" does not end with the canonical fish root: ${fish}`);
+    // NV-144 (2026-09-06, Claude A, native-confirmed) flipped "small" (and
+    // only "small") to noun-then-adjective word order for every noun in
+    // this batch, so it now correctly ends in the adjective "chona" instead
+    // of the noun root — expected per that citation, not a regression.
+    if (mod === 'small') {
+      assert.match(dog, /chona$/i, `"small dog" does not end with "chona" per NV-144: ${dog}`);
+      assert.match(bird, /chona$/i, `"small bird" does not end with "chona" per NV-144: ${bird}`);
+      assert.match(fish, /chona$/i, `"small fish" does not end with "chona" per NV-144: ${fish}`);
+    } else {
+      assert.match(dog, /achak$/i, `"${mod} dog" does not end with the canonical dog root: ${dog}`);
+      assert.match(bird, /do·o$/i, `"${mod} bird" does not end with the canonical bird root: ${bird}`);
+      assert.match(fish, /na·tok$/i, `"${mod} fish" does not end with the canonical fish root: ${fish}`);
+    }
   }
 });
 
@@ -89,7 +99,15 @@ test('adjective+noun (non-animal): house/tree, water/student/river, food/rice no
     for (const noun of nounsForThisMod) {
       const v = compiled[`${mod} ${noun}`];
       assert.ok(v, `expected a compiled entry for "${mod} ${noun}"`);
-      assert.match(v, CANON[noun], `"${mod} ${noun}" does not end with its own canonical root: ${v}`);
+      // NV-144's "small" word-order flip (see the animal test above for the
+      // full citation) was generalized to every noun in this batch, not
+      // just the animals — "small house"/"small tree"/etc. now correctly
+      // end in "chona" instead of their own noun root.
+      if (mod === 'small') {
+        assert.match(v, /chona$/i, `"small ${noun}" does not end with "chona" per NV-144: ${v}`);
+      } else {
+        assert.match(v, CANON[noun], `"${mod} ${noun}" does not end with its own canonical root: ${v}`);
+      }
     }
     // Cross-check the two nouns that used to collide are now distinct.
     assert.notEqual(compiled[`${mod} house`], compiled[`${mod} tree`]);
@@ -110,7 +128,13 @@ test('adjective+animal: "cat" no longer collides on the "mang" placeholder (NV-1
     assert.ok(cat, `expected a compiled entry for "${mod} cat"`);
 
     assert.ok(!/\bmang$/i.test(cat), `"${mod} cat" still ends in the generic placeholder "mang": ${cat}`);
-    assert.match(cat, /menggo$/i, `"${mod} cat" does not end with the canonical cat root (Menggo, NV-135): ${cat}`);
+    // NV-144 flips "small cat" to noun-then-adjective ("Menggo chona");
+    // every other modifier keeps the NV-135 adjective-then-noun root ending.
+    if (mod === 'small') {
+      assert.match(cat, /chona$/i, `"small cat" does not end with "chona" per NV-144: ${cat}`);
+    } else {
+      assert.match(cat, /menggo$/i, `"${mod} cat" does not end with the canonical cat root (Menggo, NV-135): ${cat}`);
+    }
 
     // Cross-check against a former collision partner: no longer identical.
     assert.notEqual(cat, dog, `"${mod} cat" and "${mod} dog" still collide: ${cat}`);

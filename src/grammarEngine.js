@@ -1024,3 +1024,36 @@ export function tryPolarQuestionLunchConstruction(input) {
   if (!subjectPronounGaro) return null;
   return `${subjectPronounGaro} mi cha\u00b7jokma?`;
 }
+
+// Handoff B item ("it's very hot today" word-order bug, 2026-09-07, Claude
+// B — native evidence relayed via Thangseng, see docs/
+// CLAUDE_C_SESSION_MIGRATION_20260906D.md's "Draft prompt for Claude A"
+// section, "it's very hot today" citation). Confirmed correct rendering:
+// "Da\u00b7alo namen Ding\u00b7a" (time-word + intensifier + adjective) —
+// NOT "namen Da\u00b7alo Ding\u00b7a" (intensifier + time-word +
+// adjective), which grammar-assembly/sov-assembly currently produce via
+// two SEPARATE, unrelated bugs (see docs/
+// CLAUDE_B_TRACE_INTENSIFIER_ADJECTIVE_20260907.md for the full trace):
+// contraction "it's" fails subject detection entirely and reroutes to
+// sov-assembly's ordering-naive fallback, while "it is" reaches
+// grammar-assembly's verb-finding loop, which wrongly elects the
+// intensifier "very" as the finite verb (it has its own real dictionary
+// entry) and stray-strands the real predicate adjective "hot" as an
+// object with a wrongly-applied -ko marker.
+//
+// "Da\u00b7alo" (today), "namen" (very), and "Ding\u00b7a" (hot) are each
+// independently VERIFIED/HIGH already — only the composition ORDER was
+// wrong, per the citation. Per Project Owner instruction ("don't assume
+// it generalizes on one example"), this is scoped to exactly this
+// attested sentence and its one directly-implied variant (the same
+// sentence with the time-word omitted — not a new pattern, just the same
+// attested adjunct being optional) — NOT to any other adjective, any
+// other time word, or any other intensifier. A general intensifier-
+// placement rule for grammar-assembly/sov-assembly is exactly the
+// "generalize on one example" this guards against; that stays blocked on
+// further native confirmation, per the citation's own caveat.
+export function tryVeryHotConstruction(input) {
+  const m = input.match(/^(?:it's|it\s+is)\s+very\s+hot(\s+today)?\.?$/i);
+  if (!m) return null;
+  return m[1] ? 'Da\u00b7alo namen Ding\u00b7a' : 'namen Ding\u00b7a';
+}
