@@ -313,7 +313,34 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-07 (Claude A, session complete -- see
+  next_action: '2026-09-07B (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260907B.md for full detail, this is
+    a pointer only). Two data/citation-layer items, no engine code
+    touched: (1) raka cleanup -- reviewed all 112 apostrophe + 3 hyphen
+    rows in master_dictionary.json, converted 13 confirmed via existing
+    raka-spelled duplicates/roots elsewhere in the corpus, left 99
+    untouched (94 are the a''/an''/am'' RULE-042 prefix, genuinely not
+    raka; angry cluster raka placement is an existing open dispute, not
+    resolved here; Til''eka/Si''i have no comparanda). Synced
+    corrections.json + non-pipeline garo_dictionary.json/
+    final_entries.json copies, fixed 1 stale test. (2) the "0"/"don''t
+    do" anomaly turned out to be an 8-row schema-metadata-debris cluster
+    (idx 2984-2991, title/version/word_order/_description/structure/
+    breakdown/_classifier + the "0" key) that was shipping live in
+    compiled_dict.json -- tagged all 8 SUPERSEDED, not deleted. Gate
+    green: 8249/8249 dictionary (was 8257, -8 junk keys correctly
+    excluded), 9/9 grammatical corrections, 350/350 unit tests, 0 new
+    repository-intelligence violations, runtime-sweep 14755/14755 0
+    errors. Pushed clean, HEAD 25b54ff, no local commits, HEAD==
+    origin/main verified. Still open: angry-cluster raka placement
+    (newly flagged, needs a Thangseng question, not yet in the relay
+    doc), Axe idx 3130 garo-field pollution (quick fix, no native input
+    needed), plus everything carried from 20260907: gnisan-vs-gni, tied
+    finish-sentence (item 3), donbo/re·anga sign-off, saksan-vs-
+    loneliness -- all in docs/THANGSENG_RELAY_QUESTION_20260906.md, not
+    yet sent. Next Claude A: read
+    docs/CLAUDE_A_SESSION_MIGRATION_20260907B.md first.'
+  next_action_prior_20260907: '2026-09-07 (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260907.md for full detail, this is a
     pointer only). Processed 5 native-relay items (NV-148 get=man·a,
     NV-149/150 two=gni not gini-spelling-error, NV-151 saksan/ak·sa
