@@ -1,21 +1,32 @@
 {
   "document_type": "lean_garo_thangseng_direct_evidence_reconciliation",
-  "version": "2.0",
-  "status": "AUDIT_FREEZE_PENDING_FINAL_A_PROMPT",
+  "version": "2.1",
+  "status": "PROJECT_OWNER_UPDATED",
   "source_policy": {
     "primary_linguistic_authority": "Direct Thangseng responses relayed by Project Owner",
-    "conflict_rule": "Where any current repository value conflicts with a direct Thangseng response supplied by the Project Owner, the direct Thangseng response is the canonical linguistic value. The old repository value must be superseded/retired from live selection unless separate direct Thangseng evidence establishes it as a distinct sense.",
-    "single_live_output_rule": "Every live translator English key must resolve to exactly one canonical Garo output. Do not leave competing A-vs-B values equally live.",
-    "sense_split_rule": "When Thangseng provides distinct meanings/senses, create separate explicit English sense keys so each key has one live Garo output.",
-    "variant_rule": "If Thangseng explicitly gives multiple legitimate variants, preserve them as provenance/attestation but choose one canonical live output per English key unless the product explicitly supports variant output.",
-    "separator_rule": "Garo raka/separator is ·. The character • is treated as a laptop/input error and normalized to · where it appears in relayed data. Do not insert · mechanically where it does not belong.",
+    "conflict_rule": "Where any current repository value conflicts with a direct Thangseng response supplied by the Project Owner, the direct Thangseng response is the canonical linguistic value. The old repository value must be retired from live selection unless separate direct Thangseng evidence establishes it as a distinct sense.",
+    "single_live_output_rule": "Every live translator English key must resolve to exactly one canonical Garo output. Do not leave competing values equally live.",
+    "sense_split_rule": "When Thangseng provides distinct meanings or senses, create separate explicit English sense keys so each key has one live Garo output.",
+    "variant_rule": "If Thangseng explicitly gives multiple legitimate variants, preserve them as provenance/attestation but choose one canonical live output per English key unless the product explicitly supports variants.",
+    "separator_rule": "Garo raka/separator is ·. The character • is treated as a laptop/input error and normalized to · where applicable. Do not insert · mechanically where it does not belong.",
     "deletion_rule": "Wrong or contaminated rows must be deleted from runtime/build-source dictionaries rather than retained as SUPERSEDED rows. Historical audit evidence may remain in non-runtime documentation."
+  },
+  "project_owner_confirmed_closures": {
+    "elephant": "mongma",
+    "an elephant": "mongma",
+    "cat": "Menggo",
+    "teacher": "skigipa",
+    "student_male": "chattro",
+    "student_female": "chattri"
   },
   "key_confirmations": {
     "can": ["ama", "man·a"],
     "people_classifier": ["saksa", "sakgni", "sakgittam"],
     "elephant": "mongma",
     "cat": "Menggo",
+    "teacher": "skigipa",
+    "student_male": "chattro",
+    "student_female": "chattri",
     "boy": "Me·a",
     "girl": "Me·chik",
     "child": "bi·sa",
@@ -68,7 +79,7 @@
       "Anga kam ka·na skenga",
       "Anga momo·ko cha·na ska."
     ],
-    "blocker": "There is an independent-audit conflict between this reconciliation evidence and an older explicitly documented Thangseng resolution around ska/skenga. Do not auto-resolve until Project Owner/Thangseng adjudication."
+    "open_adjudication": "Project Owner confirmation is still required for the ska/skenga conflict before repository-wide cleanup."
   },
   "batch_terms": {
     "dangerous": "namen kenbegnigipa",
@@ -111,11 +122,27 @@
   "specific_cleanup": {
     "elephant": {
       "keep": "mongma",
-      "remove_wrong_live_values": ["buring·o", "other contaminated elephant alternatives"],
-      "remove_wrong_sentence": "an elephant -> mangsa buring·o",
-      "do_not_auto_change": "forest"
+      "delete_wrong_live_values": ["Monga", "Mong", "ha·ti", "buring·o", "other contaminated elephant alternatives"],
+      "an_elephant": "mongma"
     },
-    "separator": "Normalize relayed • to · only where applicable; do not add raka to saksa/sakgni/sakgittam, sak family already confirmed without ·."
+    "cat": {
+      "keep": "Menggo",
+      "delete_wrong_live_values": ["meng·gong", "other conflicting cat alternatives"]
+    },
+    "teacher": {
+      "keep": "skigipa",
+      "delete_wrong_live_values": ["ti·char", "other conflicting teacher alternatives"]
+    },
+    "student": {
+      "male": "chattro",
+      "female": "chattri",
+      "delete_wrong_live_values": ["other conflicting student alternatives"]
+    },
+    "separator": "Normalize relayed • to · only where applicable; do not add raka to saksa/sakgni/sakgittam."
+  },
+  "open_adjudications": {
+    "forest": "Current repository has a collision involving forest and mongma. Project Owner/Thangseng value still needed before changing forest.",
+    "ska_skenga": "Project Owner/Thangseng value still needed because the repository contains conflicting documented evidence."
   },
   "repository_audit_findings": {
     "superseded_only_keys": 226,
@@ -126,11 +153,11 @@
       "build-master-dictionary.js merges multiple dictionary sources and can reintroduce stale rows.",
       "compiled_dict_alternates.json exposes multiple live variants; desired state is one live canonical output per English key.",
       "phrase_maps.js and corrections.json contain stale conflicting values that must be cleaned at source.",
-      "cat, teacher, and ska/skenga remain adjudication blockers where evidence is not safe to auto-resolve."
+      "cat, teacher, and elephant are now explicitly closed by Project Owner confirmation and should no longer be treated as adjudication blockers."
     ]
   },
   "agent_workflow": {
-    "claude_a": "Perform linguistic/data cleanup using direct Thangseng evidence. Search all relevant source layers, delete wrong live rows rather than suspending them, preserve only one canonical live output per English key, and do not auto-resolve blockers.",
+    "claude_a": "Perform linguistic/data cleanup using direct Thangseng and Project Owner evidence. Search all relevant source layers, delete wrong live rows rather than suspending them, preserve one canonical live output per English key, and do not change items listed in open_adjudications without Project Owner confirmation.",
     "claude_b": "Verify build/runtime integration after A cleanup: rebuild compiled data, run tests, detect resurrection or source/compiled drift, and report failures without making unsupported linguistic changes.",
     "claude_c": "Independently audit the resulting diff and runtime outputs against this reconciliation package and Project Owner directives.",
     "session_end": "Migration doc + WORKSTATE update + commit + PUSH + verify HEAD == origin/main, zero divergence, clean tree, no local-only/untracked/unpushed work."
