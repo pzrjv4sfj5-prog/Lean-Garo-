@@ -313,7 +313,19 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-07B (Claude A, session complete -- see
+  next_action: '2026-09-07C (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260907C.md for full detail, this is
+    a pointer only). Fixed Axe idx 3130 garo-field pollution (clean
+    "Rua" now resolves at runtime); added angry-cluster raka-placement
+    item 7 to the Thangseng relay doc (not yet sent). Resolved two
+    push collisions (Project Owner reconciliation JSON, Claude B
+    session-close doc) via rebase, no conflicts. Governance note:
+    Project Owner states Claude C audits will push into this repo
+    from next session, and the PAT will be shared for Claude A and
+    Claude B to work directly -- no Claude C task run yet, recorded
+    for the next session. Gate green: 8249/8249, 9/9, 360/360, 0 new
+    violations.'
+  next_action_prior_20260907B: '2026-09-07B (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260907B.md for full detail, this is
     a pointer only). Two data/citation-layer items, no engine code
     touched: (1) raka cleanup -- reviewed all 112 apostrophe + 3 hyphen
