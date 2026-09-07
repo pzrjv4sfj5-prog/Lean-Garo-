@@ -375,7 +375,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `ability / permission ?`: candidates — `verb + mangenma?` (weak/OCR) — shipped: `verb + mangenma?`
 - `ability / permission ✓`: candidates — `mangenva` (weak/OCR) — shipped: `mangenva`
 - `able`: candidates — `ham·sok·a` (weak/OCR), `man·a` (weak/OCR) — shipped: `man·a`
-- `abnormal`: candidates — `ong·ronggijagipa` (weak/OCR), `Ong'ronggijagipa` (weak/OCR) — shipped: `Ong'ronggijagipa`
+- `abnormal`: candidates — `ong·ronggijagipa` (weak/OCR), `Ong·ronggijagipa` (weak/OCR) — shipped: `Ong·ronggijagipa`
 - `aboriginal`: candidates — `a·di·ba·si` (weak/OCR) — shipped: `a·di·ba·si`
 - `abortion`: candidates — `Ba·gala` (weak/OCR) — shipped: `Ba·gala`
 - `about`: candidates — `gimin` (weak/OCR), `Nigimin` (weak/OCR), `Samtangtangchi` (weak/OCR), `Sepango` (weak/OCR) — shipped: `Sepango`
@@ -857,7 +857,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `business`: candidates — `Kalbal` (weak/OCR), `Kam` (weak/OCR) — shipped: `Kam`
 - `busy`: candidates — `jak·chak·a` (weak/OCR) — shipped: `jak·chak·a`
 - `but`: candidates — `Indiba` (weak/OCR) — shipped: `Indiba`
-- `butt`: candidates — `Ki'sang` (weak/OCR) — shipped: `Ki'sang`
+- `butt`: candidates — `Ki·sang` (weak/OCR) — shipped: `Ki·sang`
 - `butt of cigarette`: candidates — `chok·ken·da` (weak/OCR) — shipped: `chok·ken·da`
 - `buttocks`: candidates — `ki·sang` (weak/OCR) — shipped: `ki·sang`
 - `button`: candidates — `gut·am` (weak/OCR) — shipped: `gut·am`
@@ -5392,9 +5392,9 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `where is it?`: candidates — `kade?` (weak/OCR) — shipped: `kade?`
 - `where is this man from?`: candidates — `Banoni mandesa iara?` (weak/OCR) — shipped: `Banoni mandesa iara?`
 - `where person?`: candidates — `kade mande?` (weak/OCR) — shipped: `kade mande?`
-- `where should i go to?`: candidates — `Banona re'angbo angara?` (weak/OCR) — shipped: `Banona re'angbo angara?`
+- `where should i go to?`: candidates — `Banona re·angbo angara?` (weak/OCR) — shipped: `Banona re·angbo angara?`
 - `where should i go?`: candidates — `Ang·ara batchi reangbo?` (weak/OCR) — shipped: `Ang·ara batchi reangbo?`
-- `where should i take this book to?`: candidates — `Ia ki'tapko banona ra'angbo?` (weak/OCR) — shipped: `Ia ki'tapko banona ra'angbo?`
+- `where should i take this book to?`: candidates — `Ia ki·tapko banona ra·angbo?` (weak/OCR) — shipped: `Ia ki·tapko banona ra·angbo?`
 - `where student?`: candidates — `kade chik?` (weak/OCR) — shipped: `kade chik?`
 - `where teacher?`: candidates — `kade skigipa?` (weak/OCR) — shipped: `kade skigipa?`
 - `where tree?`: candidates — `kade rang?` (weak/OCR) — shipped: `kade rang?`
@@ -5666,7 +5666,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `your cat`: candidates — `nani mang` (weak/OCR), `nani Menggo` (weak/OCR) — shipped: `nani Menggo`
 - `your dog`: candidates — `nani mang` (weak/OCR), `nani Achak` (weak/OCR) — shipped: `nani Achak`
 - `your father`: candidates — `Nang·ni apa` (weak/OCR) — shipped: `Nang·ni apa`
-- `your feet stinks`: candidates — `nang·ni ja·a senga` (weak/OCR), `Nangni ja'a senga` (weak/OCR) — shipped: `Nangni ja'a senga`
+- `your feet stinks`: candidates — `nang·ni ja·a senga` (weak/OCR), `Nangni ja·a senga` (weak/OCR) — shipped: `Nangni ja·a senga`
 - `your fish`: candidates — `nani mang` (weak/OCR), `nani na·tok` (weak/OCR) — shipped: `nani na·tok`
 - `your food`: candidates — `nani food` (weak/OCR), `nani chak` (weak/OCR), `nani al·a` (weak/OCR) — shipped: `nani al·a`
 - `your house`: candidates — `nani house` (weak/OCR), `nani rang` (weak/OCR), `nani Nok` (weak/OCR) — shipped: `nani Nok`

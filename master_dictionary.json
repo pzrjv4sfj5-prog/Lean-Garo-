@@ -6522,10 +6522,10 @@
   },
   {
     "english": "i saw the film last week.",
-    "garo": "Anga ia film-ko mija antio nia.",
+    "garo": "Anga ia film·ko mija antio nia.",
     "category": "time",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-29 (NV-099, Project Owner-relayed Thangseng evidence). Confirms the sentence AND the 'film-ko' direct-object construction of the already-VERIFIED 'film' loanword (RULE-009 -ko accusative marker, general system already verified/high; this is a confirming instance, not a new rule). Superseded prior unverified row 'Ang·a ia film ko nia mija antio.' (word-order variant, no prior native backing)."
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-29 (NV-099, Project Owner-relayed Thangseng evidence). Confirms the sentence AND the 'film-ko' direct-object construction of the already-VERIFIED 'film' loanword (RULE-009 -ko accusative marker, general system already verified/high; this is a confirming instance, not a new rule). Superseded prior unverified row 'Ang·a ia film ko nia mija antio.' (word-order variant, no prior native backing). Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation."
   },
   {
     "english": "how was the journey yesterday?",
@@ -19810,11 +19810,11 @@
   },
   {
     "english": "your feet stinks",
-    "garo": "Nangni ja'a senga",
+    "garo": "Nangni ja·a senga",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
+    "notes": "Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "unverified"
   },
   {
@@ -19864,11 +19864,11 @@
   },
   {
     "english": "abnormal",
-    "garo": "Ong'ronggijagipa",
+    "garo": "Ong·ronggijagipa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null,
+    "notes": "Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "unverified"
   },
   {
@@ -20944,11 +20944,11 @@
   },
   {
     "english": "Butt",
-    "garo": "Ki'sang",
+    "garo": "Ki·sang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM",
+    "notes": "UNVERIFIED/MEDIUM Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "unverified"
   },
   {
@@ -56488,20 +56488,20 @@
   },
   {
     "english": "let's go to market",
-    "garo": "Hai bajalchi re'na",
+    "garo": "Hai bajalchi re·na",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. SUPERSEDES prior 'Hai Bajal Anti Re·na' (NV-059, held open pending this check). Native gave bare 'Hai bajalchi re'na' for both 'let's go to market' and 'let's go to the market' (Garo has no article; 'the' is simply assumed) — 'Anti' is not part of this idiom. Resolves NV-059.",
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. SUPERSEDES prior 'Hai Bajal Anti Re·na' (NV-059, held open pending this check). Native gave bare 'Hai bajalchi re'na' for both 'let's go to market' and 'let's go to the market' (Garo has no article; 'the' is simply assumed) — 'Anti' is not part of this idiom. Resolves NV-059. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "verified_high"
   },
   {
     "english": "let's go to the market",
-    "garo": "Hai bajalchi re'na",
+    "garo": "Hai bajalchi re·na",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. SUPERSEDES prior 'Hai Bajal Anti Re·na' (NV-059, held open pending this check). Native gave bare 'Hai bajalchi re'na' for both 'let's go to market' and 'let's go to the market' (Garo has no article; 'the' is simply assumed) — 'Anti' is not part of this idiom. Resolves NV-059.",
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. SUPERSEDES prior 'Hai Bajal Anti Re·na' (NV-059, held open pending this check). Native gave bare 'Hai bajalchi re'na' for both 'let's go to market' and 'let's go to the market' (Garo has no article; 'the' is simply assumed) — 'Anti' is not part of this idiom. Resolves NV-059. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "verified_high"
   },
   {
@@ -71030,11 +71030,11 @@
   },
   {
     "english": "from where did you buy this dress?",
-    "garo": "Ia cholako banoniko ra'aha?",
+    "garo": "Ia cholako banoniko ra·aha?",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript.",
+    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. New VERIFIED/HIGH example sentence from native validation transcript. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "verified_high"
   },
   {
@@ -71110,11 +71110,11 @@
   },
   {
     "english": "where did you come from?",
-    "garo": "Banoni re'baa na'ara?",
+    "garo": "Banoni re·baa na·ara?",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence. Coexists with pre-existing unverified entry idx 997 ('Na·a banoni reba·a?') — different word order/particle placement for the same gloss, not overwritten. Flagged, not reconciled.",
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence. Coexists with pre-existing unverified entry idx 997 ('Na·a banoni reba·a?') — different word order/particle placement for the same gloss, not overwritten. Flagged, not reconciled. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "unverified"
   },
   {
@@ -71127,19 +71127,19 @@
   },
   {
     "english": "where should i take this book to?",
-    "garo": "Ia ki'tapko banona ra'angbo?",
+    "garo": "Ia ki·tapko banona ra·angbo?",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence."
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation."
   },
   {
     "english": "where should i go to?",
-    "garo": "Banona re'angbo angara?",
+    "garo": "Banona re·angbo angara?",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence. Coexists with pre-existing unverified entry idx 999 ('Ang·ara batchi reangbo?', using bachi/batchi rather than banona) — same gloss, different construction, not overwritten. Flagged, not reconciled.",
+    "notes": "NV-056, Thangseng direct native validation via Tridip WhatsApp, 2026-08-03 (relayed 2026-08-04). New VERIFIED/HIGH example sentence. Coexists with pre-existing unverified entry idx 999 ('Ang·ara batchi reangbo?', using bachi/batchi rather than banona) — same gloss, different construction, not overwritten. Flagged, not reconciled. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "unverified"
   },
   {
@@ -71203,11 +71203,11 @@
   },
   {
     "english": "go to the market",
-    "garo": "Bajalchi re'angbo",
+    "garo": "Bajalchi re·angbo",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Uses -chi (movement-to locative, RULE-044), imperative.",
+    "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Uses -chi (movement-to locative, RULE-044), imperative. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "verified_high"
   },
   {
@@ -76537,12 +76537,12 @@
   },
   {
     "english": "blink",
-    "garo": "Mik-chip-a",
+    "garo": "Mik·chip·a",
     "pos": null,
     "category": "general",
     "classifier": null,
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080)."
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080). Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation."
   },
   {
     "english": "the market is nearby",
@@ -77712,9 +77712,9 @@
   },
   {
     "english": "knowledge (alt, fuller compound)",
-    "garo": "u·i-ma·siani",
+    "garo": "u·i·ma·siani",
     "category": "general",
-    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"knowledge (alt, fuller compound) = u'i-ma'siani (may sometimes refer to wisdom)\". FLAGGED, not reconciled: this differs structurally from the existing VERIFIED/HIGH 'U·iani ba ma·siani' (NV-093, u·iani + ba['and'] + ma·siani) — this new form is a direct hyphenated compound (u·i + ma·siani) with no conjunction. Both are native-confirmed; relationship between the two compounding patterns needs a future explicit reconciliation pass, not guessed at here.",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"knowledge (alt, fuller compound) = u'i-ma'siani (may sometimes refer to wisdom)\". FLAGGED, not reconciled: this differs structurally from the existing VERIFIED/HIGH 'U·iani ba ma·siani' (NV-093, u·iani + ba['and'] + ma·siani) — this new form is a direct hyphenated compound (u·i + ma·siani) with no conjunction. Both are native-confirmed; relationship between the two compounding patterns needs a future explicit reconciliation pass, not guessed at here. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
     "confidence": "verified_high"
   },
   {

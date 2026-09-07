@@ -81,7 +81,7 @@
   },
   {
     "english": "Abnormal",
-    "garo": "Ong'ronggijagipa",
+    "garo": "Ong·ronggijagipa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -1393,7 +1393,7 @@
   },
   {
     "english": "Butt",
-    "garo": "Ki'sang",
+    "garo": "Ki·sang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -13769,7 +13769,7 @@
   },
   {
     "english": "Your feet stinks",
-    "garo": "Nangni ja'a senga",
+    "garo": "Nangni ja·a senga",
     "pos": null,
     "category": "phrases",
     "classifier": null,
