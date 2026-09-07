@@ -19305,49 +19305,57 @@
     "english": "title",
     "garo": "Garo Language Master Dictionary",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-07 (Claude A, data-anomaly review): confirmed malformed import — this row and its 7 neighbors (idx 2984-2991) are schema/metadata keys from a source JSON structure (title/version/word_order/_description/structure/breakdown/_classifier, plus this numeric-index key '0'), not real English-to-Garo dictionary entries. All 8 were shipping live in compiled_dict.json under these literal keys pre-fix. Retained, not deleted, per citation discipline; excluded from compile via this tag."
   },
   {
     "english": "version",
     "garo": "3.1",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-07 (Claude A, data-anomaly review): confirmed malformed import — this row and its 7 neighbors (idx 2984-2991) are schema/metadata keys from a source JSON structure (title/version/word_order/_description/structure/breakdown/_classifier, plus this numeric-index key '0'), not real English-to-Garo dictionary entries. All 8 were shipping live in compiled_dict.json under these literal keys pre-fix. Retained, not deleted, per citation discipline; excluded from compile via this tag."
   },
   {
     "english": "0",
     "garo": "don't do",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-07 (Claude A, data-anomaly review): confirmed malformed import — this row and its 7 neighbors (idx 2984-2991) are schema/metadata keys from a source JSON structure (title/version/word_order/_description/structure/breakdown/_classifier, plus this numeric-index key '0'), not real English-to-Garo dictionary entries. All 8 were shipping live in compiled_dict.json under these literal keys pre-fix. Retained, not deleted, per citation discipline; excluded from compile via this tag."
   },
   {
     "english": "word_order",
     "garo": "SOV",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-07 (Claude A, data-anomaly review): confirmed malformed import — this row and its 7 neighbors (idx 2984-2991) are schema/metadata keys from a source JSON structure (title/version/word_order/_description/structure/breakdown/_classifier, plus this numeric-index key '0'), not real English-to-Garo dictionary entries. All 8 were shipping live in compiled_dict.json under these literal keys pre-fix. Retained, not deleted, per citation discipline; excluded from compile via this tag."
   },
   {
     "english": "_description",
     "garo": "Words with multiple meanings depending on context",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-07 (Claude A, data-anomaly review): confirmed malformed import — this row and its 7 neighbors (idx 2984-2991) are schema/metadata keys from a source JSON structure (title/version/word_order/_description/structure/breakdown/_classifier, plus this numeric-index key '0'), not real English-to-Garo dictionary entries. All 8 were shipping live in compiled_dict.json under these literal keys pre-fix. Retained, not deleted, per citation discipline; excluded from compile via this tag."
   },
   {
     "english": "structure",
     "garo": "chiking",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-07 (Claude A, data-anomaly review): confirmed malformed import — this row and its 7 neighbors (idx 2984-2991) are schema/metadata keys from a source JSON structure (title/version/word_order/_description/structure/breakdown/_classifier, plus this numeric-index key '0'), not real English-to-Garo dictionary entries. All 8 were shipping live in compiled_dict.json under these literal keys pre-fix. Retained, not deleted, per citation discipline; excluded from compile via this tag."
   },
   {
     "english": "breakdown",
     "garo": "You + water + drank",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-07 (Claude A, data-anomaly review): confirmed malformed import — this row and its 7 neighbors (idx 2984-2991) are schema/metadata keys from a source JSON structure (title/version/word_order/_description/structure/breakdown/_classifier, plus this numeric-index key '0'), not real English-to-Garo dictionary entries. All 8 were shipping live in compiled_dict.json under these literal keys pre-fix. Retained, not deleted, per citation discipline; excluded from compile via this tag."
   },
   {
     "english": "_classifier",
     "garo": "ge",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-07 (Claude A, data-anomaly review): confirmed malformed import — this row and its 7 neighbors (idx 2984-2991) are schema/metadata keys from a source JSON structure (title/version/word_order/_description/structure/breakdown/_classifier, plus this numeric-index key '0'), not real English-to-Garo dictionary entries. All 8 were shipping live in compiled_dict.json under these literal keys pre-fix. Retained, not deleted, per citation discipline; excluded from compile via this tag."
   },
   {
     "english": "what is going on",
