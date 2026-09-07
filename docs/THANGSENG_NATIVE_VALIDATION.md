@@ -7024,3 +7024,14 @@ to `gni` — unresolved.
 Still open, not addressed: whether `saksan` also covers `loneliness`
 (existing unverified `loneliness`=`Saksan` row untouched) — separate
 question.
+
+## NV-152 (2026-09-07, direct Thangseng relay via Project Owner/WhatsApp)
+**Closes the elephant NV-089 tie handoff (raised by Claude B, Claude A's
+call).** Spelling fix: `mongma`, no raka mark — not `mong·ma`. The raka
+dot was a transcription error; NV-089's own note already quoted
+Thangseng's word as `'mongma'` (no raka) even though the stored `garo`
+field had one. Fixed directly in `master_dictionary.json` (Elephant/
+mong·ma row) and `src/data/corrections.json` (Rule 8: fix stale values
+directly, never allowlist). `Mong` and `ha·ti` remain valid VERIFIED/HIGH
+variants — this is a spelling correction to the already-designated
+native-preferred primary, not a re-opening of the tie itself.

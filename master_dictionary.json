@@ -21885,11 +21885,11 @@
   },
   {
     "english": "Elephant",
-    "garo": "mong·ma",
+    "garo": "mongma",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH — NV-089 (2026-08-21 relay): Thangseng independently volunteered 'mongma' when asked for 'elephant' with no prompt, designating this the native-preferred primary among the existing Mong/ha·ti/mong·ma VERIFIED tie. Mong and ha·ti remain valid VERIFIED/HIGH variants, not superseded.",
+    "notes": "variant/VERIFIED/HIGH — NV-089 (2026-08-21 relay): Thangseng independently volunteered 'mongma' when asked for 'elephant' with no prompt, designating this the native-preferred primary among the existing Mong/ha·ti/mong·ma VERIFIED tie. Mong and ha·ti remain valid VERIFIED/HIGH variants, not superseded. SPELLING FIX, NV-152 (2026-09-07, direct Thangseng relay via Project Owner): confirmed no raka mark — 'mongma', not 'mong·ma'. Corrected here and in src/data/corrections.json (Rule 8: fix stale values directly, never allowlist).",
     "confidence": "verified_high"
   },
   {
