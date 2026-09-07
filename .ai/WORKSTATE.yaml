@@ -313,6 +313,40 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
+  next_action: '2026-09-07 (Claude A, resumed via docs/CLAUDE_A_SESSION_MIGRATION_20260906F.md,
+    resync verified clean at start -- HEAD/origin/main matched the doc''s closing hash
+    07b4ad6 plus one bookkeeping commit (5da50ac), then two more concurrent pushes
+    landed mid-session (Claude B: it''s/it is very hot today word-order fix, 762a20f;
+    Claude B: session migration doc bookkeeping, 17c630e) -- both pulled clean,
+    zero overlap, gate reconfirmed green each time before proceeding). Processed 2
+    items from docs/THANGSENG_RELAY_QUESTION_20260906.md via direct Project
+    Owner/Thangseng relay: NV-148 (closes q1 -- get=man·a reconfirmed directly,
+    genuine polysemy with can=man·a, no distinguishing cue given; promoted
+    NV-140''s existing unverified row to verified_high) and NV-149 (partially closes
+    q2 -- two/2=gini, new verified_high row added, deliberately NOT merged with or
+    superseding the existing unverified Gni/gnisan rows or the separately-VERIFIED
+    classifier-suffix root gni, since the relay didn''t address whether gini replaces
+    gni in suffix composition or how gnisan relates -- both sub-questions still open,
+    restated in the relay-question doc). docs/THANGSENG_RELAY_QUESTION_20260906.md
+    updated: item 1 struck through/closed, item 2 rewritten to reflect partial
+    closure and the 2 still-open sub-questions; items 3-6 untouched. Gate clean:
+    8257/8257 dictionary (unchanged unique-key count -- both NV entries added
+    candidates to existing keys, not new keys), 9/9 grammatical corrections,
+    345/345 unit tests (0 failures -- the 5 known/expected failures flagged at the
+    prior close are gone, resolved by Claude B''s concurrent work this session, not
+    re-verified in detail since out of scope for this task), 0 new
+    repository-intelligence.js violations. Live-verified via translate(): get/can
+    both resolve to man·a (0.98, exact-phrase); two still resolves to the
+    pre-existing phrase_maps.js value Gni (0.99, phrase-map) -- unaffected by the
+    new gini candidate, confirming no unintended runtime flip. No engine code
+    touched. Pushed cdfb678 (rebased once mid-session onto 17c630e, docs-only,
+    zero conflict, rebuild byte-identical). HEAD==origin/main verified via git fetch.
+    Next: settle relay items 3 (tied finish-sentence), 4/5 (re·anga/donbo mood
+    pattern -- data already applied via NV-145/146, question is whether to still
+    formally ask Thangseng to confirm the pattern-level generalization), 6
+    (saksan/ak·sa alone); also still need an explicit follow-up question for
+    NV-149''s two open sub-questions (gini vs suffix-gni; gini vs gnisan) before
+    those can close.'
   next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906F.md - THIS IS THE
     AUTHORITATIVE MIGRATION DOC as of 2026-09-06F. Resumed from 20260906E;
     git fetch showed origin/main had moved to bd34301 (Claude B engineering,
