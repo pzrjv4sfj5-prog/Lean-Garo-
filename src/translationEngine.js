@@ -120,7 +120,32 @@ export async function translate(input) {
   if (!input || typeof input !== 'string') return { garo: '', method: 'empty', confidence: 0 };
 
 
-  const cleaned = normalizeInput(input.trim().replace(/’/g, "'"));
+  // "it's" contraction-expansion (2026-09-07, Claude B, Bug B part 1 —
+  // resumes docs/CLAUDE_B_SESSION_MIGRATION_20260907B.md). Must run before
+  // `cleaned` is finalized, while the apostrophe is still present, because
+  // "it's" (contraction) and "its" (possessive determiner, no apostrophe)
+  // are only distinguishable before the apostrophe-stripping line below
+  // turns both into the identical string "its". Expanding "it's" -> "it
+  // is" here lets the real subject pronoun "it" survive as its own word
+  // through every downstream consumer of `cleaned` (analyzeGrammar,
+  // stopword-strip, sov-assembly, etc.), while true possessive "its" (e.g.
+  // "its color") is completely untouched — deliberately NOT solved by
+  // adding "its" to PRONOUN_MAP, which would make the two indistinguishable
+  // again downstream and misfire on possessives. Confirmed no corrections/
+  // phrase-map source keys on the literal apostrophe form "it's" (grep'd
+  // clean), so this can't shadow an existing exact-match entry, and
+  // tryVeryHotConstruction's regex (grammarEngine.js) already accepts
+  // "it is" as an alternative to "it's", so that construction is unaffected
+  // either way. "he's"/"she's" are deliberately NOT touched by this fix —
+  // confirmed separately that they already resolve correctly via
+  // sov-assembly's own generic s$-strip fallback (lookupGaro("hes"
+  // .replace(/s$/,'')) => lookupGaro("he") => "Ua", a pre-existing accident
+  // of that fallback, not a bug), and unlike "it's"/"its" there's no
+  // possessive-collision risk to protect against for them ("he's"/"she's"
+  // never mean "belonging to him/her" — that's "his"/"her", distinct word
+  // forms), so leaving them as-is is both correct and lower-risk than an
+  // unneeded change.
+  const cleaned = normalizeInput(input.trim().replace(/’/g, "'")).replace(/\bit['’]s\b/gi, 'it is');
   // Normalize: strip apostrophes for lookup consistency
   const lower = cleaned.toLowerCase().replace(/[''\u2019]/g, '');
   const words = lower.split(/\s+/);
@@ -306,7 +331,35 @@ export async function translate(input) {
   // contraction set directly instead.
   const NEGATION_WORDS = new Set(['not','never','dont','doesnt','didnt','wont','cant','isnt','arent','wasnt','werent']);
   const isNegativeShortcut = words.some(w => NEGATION_WORDS.has(w));
-  const stripped = words.filter(w => !STOP_WORDS.has(w)).join(' ');
+  // Sentence-initial "it" guard (2026-09-07, Claude B, Bug B part 1 —
+  // resumes docs/CLAUDE_B_SESSION_MIGRATION_20260907B.md). "it" is a
+  // STOP_WORDS member (needed for dummy-it constructions like "it is
+  // hot"/"it is raining" — both caught by higher-priority correction/
+  // exact-phrase steps above and never even reach this step, so this
+  // guard can't affect them). But when "it" is the sentence's FIRST word,
+  // it's in referential subject position, and stripping it here lets this
+  // step's own lookupGaro(stripped) call fire on the remaining verb alone
+  // (e.g. "eating" -> "cha·enga", a real exact dictionary entry),
+  // short-circuiting BEFORE grammar-assembly or sov-assembly ever run —
+  // both of which already correctly resolve subject "it" via PRONOUN_MAP
+  // when given the chance. Confirmed live: "it eats"/"it runs" (verb forms
+  // with no exact single-word entry) correctly reach grammar-assembly and
+  // produce "Ua Cha·a"/"Ua Kata"; "it is eating"/"it is running"/"it is
+  // sleeping" (ing-forms that DO have exact entries) previously lost the
+  // subject entirely via this exact path. Scoped to sentence-initial "it"
+  // only — mid-sentence "it" (e.g. "i saw it running") and possessive
+  // "its" (unaffected either way; "it's" is already expanded to "it is"
+  // upstream, so the literal string "its" reaching this step is always the
+  // true possessive, and remains a normal STOP_WORDS member here) are
+  // untouched. Keeping "it" in the joined `stripped` string (rather than
+  // dropping it) is what defeats the shortcut: "it eating" is not itself a
+  // known phrase, so lookupGaro(stripped) fails here exactly as it already
+  // does for "hes eating"/"shes eating" (same mechanism, already correct),
+  // and the cascade falls through to grammar-assembly as intended.
+  const stripWords = words[0] === 'it'
+    ? words.filter((w, i) => i === 0 || !STOP_WORDS.has(w))
+    : words.filter(w => !STOP_WORDS.has(w));
+  const stripped = stripWords.join(' ');
   if (stripped && stripped !== lower) {
     let sm = lookupGaro(stripped);
     if (sm) {
