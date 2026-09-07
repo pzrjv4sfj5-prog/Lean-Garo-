@@ -40,5 +40,15 @@ confirmed correct, genuine polysemy — no distinguishing cue given.
    confirmed synonyms. Still open, not addressed: whether `saksan` also
    covers "loneliness" (separate unverified row on file).
 
+7. **Angry-cluster raka placement.** `Ka·o nanga` ("angry") and related
+   entries (`Ka·onanga`, `Ka·chaa`) carry a raka dot after `Ka` — but
+   `Anga ka·o nanga` ("i am angry") and `Ka·o nangnabe` ("do not be
+   angry") vary in whether the raka dot lands before or after the `o`.
+   Is the raka-dot placement `Ka·o` (after Ka) or `Ka·chaa`/`Kao·nanga`
+   consistently one fixed form across the whole angry-cluster, or does
+   it shift with the surrounding grammar (imperative vs statement vs
+   compound)? No corpus-internal rule resolves this — needs an
+   explicit native check.
+
 Not yet sent to Thangseng. Hold for the next relay batch alongside any
 other queued items (see `.ai/WORKSTATE.yaml` `pending_thangseng_questions`).
