@@ -26874,8 +26874,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH OPEN TENSION flagged by NV-146 (2026-09-06 evening relay): the native sentence 'leave me alone' = 'angko saksan donbo' uses 'saksan' for 'alone', not 'ak·sa'. 'saksan' is independently on file (unverified) as 'loneliness'. Not resolved — both 'alone' candidates ('ak·sa', unverified; 'saksan', now directly attested in a native sentence) are left on file rather than merged or picked.",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-151 (2026-09-07, direct Thangseng relay via Project Owner): confirmed synonymous with 'saksan' (used in the 'leave me alone' sentence, NV-146) -- both mean 'alone', interchangeable. Closes the NV-146 open tension. Not addressed here: whether 'saksan' also separately covers 'loneliness' (see unverified 'loneliness'=Saksan row) -- still open.",
+    "confidence": "verified_high"
   },
   {
     "english": "altar",
@@ -78892,5 +78892,12 @@
     "category": "numbers",
     "confidence": "superseded",
     "notes": "SUPERSEDED — NV-150 (2026-09-07, direct Thangseng relay via Project Owner): 'gini' (NV-149) confirmed to be a likely spelling error for 'gni', not a distinct word. 'two'/'2' is 'gni' only. See NV-150 for full closure. Retained, not deleted, per citation discipline."
+  },
+  {
+    "english": "alone",
+    "garo": "saksan",
+    "category": "adjectives",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-151 (2026-09-07, direct Thangseng relay via Project Owner): confirmed synonymous with 'ak·sa' for 'alone' -- closes NV-146's open tension between the two words used in the 'leave me alone' sentence context. Not addressed here, still open: whether this same 'saksan' is also the word for 'loneliness' (see unverified 'loneliness'=Saksan row) -- separate question, not resolved by this confirmation."
   }
 ]

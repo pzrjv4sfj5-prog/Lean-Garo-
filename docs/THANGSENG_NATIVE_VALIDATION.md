@@ -7015,3 +7015,12 @@ not deleted); the bare `two`=`Gni` row promoted `unverified` →
 `verified_high`, matching the already-VERIFIED bare `2`=`gni` row.
 Still open, not addressed by this answer: how `gnisan` (NV-138) relates
 to `gni` — unresolved.
+
+## NV-151 (2026-09-07, direct Thangseng relay via Project Owner/WhatsApp)
+**Closes relay question 6** (docs/THANGSENG_RELAY_QUESTION_20260906.md).
+`saksan` and `ak·sa` confirmed synonyms for `alone` — both promoted
+`unverified` → `verified_high` (`alone`=`ak·sa`; new row `alone`=
+`saksan` added, cross-referencing NV-146's "leave me alone" sentence).
+Still open, not addressed: whether `saksan` also covers `loneliness`
+(existing unverified `loneliness`=`Saksan` row untouched) — separate
+question.

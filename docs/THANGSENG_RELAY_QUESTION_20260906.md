@@ -36,12 +36,9 @@ confirmed correct, genuine polysemy — no distinguishing cue given.
    "leave" follow the same mood split, with `donbo` as the imperative
    counterpart to `re·anga`?
 
-6. **`saksan` vs `ak·sa` for "alone".** NV-146's "leave me alone" uses
-   `saksan` for "alone" (`saksan` is also independently on file,
-   unverified, as "loneliness"). The dictionary's existing candidate
-   for bare "alone" is `ak·sa` (unverified, no citation). Are these two
-   different words, or does `saksan` cover both "alone" and
-   "loneliness" while `ak·sa` is something else (or a misrelay)?
+~~6. `saksan` vs `ak·sa` for "alone".~~ **CLOSED, NV-151 (2026-09-07):**
+   confirmed synonyms. Still open, not addressed: whether `saksan` also
+   covers "loneliness" (separate unverified row on file).
 
 Not yet sent to Thangseng. Hold for the next relay batch alongside any
 other queued items (see `.ai/WORKSTATE.yaml` `pending_thangseng_questions`).
