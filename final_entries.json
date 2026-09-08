@@ -4248,22 +4248,6 @@
     "notes": "VERIFIED/HIGH v:na-sin-do˙-ki / ro-sun gip-bok"
   },
   {
-    "english": "Garlic",
-    "garo": "na·sin·do˙·ki",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Garlic",
-    "garo": "ro·sun gip·bok",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "ge",
     "garo": "Objects, tools, things (general fallback)",
     "pos": null,
