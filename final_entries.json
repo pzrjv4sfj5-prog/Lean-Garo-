@@ -1336,14 +1336,6 @@
     "notes": "VERIFIED/HIGH v:ba-ring"
   },
   {
-    "english": "Brinjal",
-    "garo": "ba·ring",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Broad Beans",
     "garo": "Nakap",
     "pos": null,
@@ -4302,14 +4294,6 @@
     "category": "food",
     "classifier": null,
     "notes": "VERIFIED/HIGH v:e˙-ching"
-  },
-  {
-    "english": "Ginger",
-    "garo": "e˙·ching",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
   },
   {
     "english": "Girl",
@@ -12406,14 +12390,6 @@
     "category": "food",
     "classifier": null,
     "notes": "VERIFIED/HIGH v:to-ma-to"
-  },
-  {
-    "english": "Tomato",
-    "garo": "to·ma·to",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
   },
   {
     "english": "Tomorrow",

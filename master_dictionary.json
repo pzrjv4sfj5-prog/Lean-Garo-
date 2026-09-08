@@ -229,8 +229,8 @@
     "english": "pumpkin",
     "garo": "Gominda",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'pumpkin' has VERIFIED/HIGH form(s) ['ak·ka·ru']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Project Owner direct confirmation 2026-09-09: only this value should exist for this key. Supersedes the 2026-08-01 corpus-internal-audit precedence call that had wrongly deferred to an uncited 'variant/VERIFIED/HIGH' import.",
+    "confidence": "verified_high"
   },
   {
     "english": "potato",
@@ -243,15 +243,15 @@
     "english": "tomato",
     "garo": "Baring belati",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'tomato' has VERIFIED/HIGH form(s) ['to·ma·to']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Project Owner direct confirmation 2026-09-09: only this value should exist for this key. Supersedes the 2026-08-01 corpus-internal-audit precedence call that had wrongly deferred to an uncited 'variant/VERIFIED/HIGH' import.",
+    "confidence": "verified_high"
   },
   {
     "english": "brinjal",
     "garo": "Baring",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'brinjal' has VERIFIED/HIGH form(s) ['ba·ring']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Project Owner direct confirmation 2026-09-09: only this value should exist for this key. Supersedes the 2026-08-01 corpus-internal-audit precedence call that had wrongly deferred to an uncited 'variant/VERIFIED/HIGH' import.",
+    "confidence": "verified_high"
   },
   {
     "english": "bottle gourd",
@@ -282,8 +282,8 @@
     "english": "ginger",
     "garo": "Re·ching",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'ginger' has VERIFIED/HIGH form(s) ['e·ching']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Project Owner direct confirmation 2026-09-09: only this value should exist for this key. Supersedes the 2026-08-01 corpus-internal-audit precedence call that had wrongly deferred to an uncited 'variant/VERIFIED/HIGH' import.",
+    "confidence": "verified_high"
   },
   {
     "english": "chilli",
@@ -20924,15 +20924,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Brinjal",
-    "garo": "ba·ring",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "Broom",
     "garo": "sal·a",
     "pos": null,
@@ -22283,15 +22274,6 @@
     "garo": "me·mang",
     "pos": null,
     "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Ginger",
-    "garo": "e·ching",
-    "pos": null,
-    "category": "food",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
@@ -25752,15 +25734,6 @@
     "garo": "Da·al",
     "pos": null,
     "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Tomato",
-    "garo": "to·ma·to",
-    "pos": null,
-    "category": "food",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
@@ -54277,15 +54250,6 @@
     "garo": "al·da",
     "pos": null,
     "category": "culture",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH/doc7",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "pumpkin",
-    "garo": "ak·ka·ru",
-    "pos": null,
-    "category": "food",
     "classifier": null,
     "notes": "VERIFIED/HIGH/doc7",
     "confidence": "verified_high"
