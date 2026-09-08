@@ -1,20 +1,36 @@
 {
   "document_type": "lean_garo_agent_handoff",
-  "version": "2026-09-08.1",
+  "version": "2026-09-08.2",
   "status": "ACTIVE",
-  "authority": "Project Owner supplied direct/native Thangseng evidence",
+  "authority": "Project Owner supplied direct/native Thangseng evidence, reconciled against Claude C forensic audit",
   "read_order": [
     "docs/lean_garo_thangseng_reconciliation_v2_machine_ready.json",
     "docs/AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json",
     "docs/CLAUDE_C_PRE_AUDIT_PROMPT_20260908.md"
   ],
+  "audit_basis": {
+    "claude_c_audit_status": "CURRENT_REPO_FORENSIC_AUDIT_COMPLETE",
+    "current_audit_head_at_review": "adf5fb010ccad48ccd04e05a1dd1d166925a606b",
+    "critical_findings": [
+      "boy/girl live output is incorrectly ko·ka/ko·ki because two verified_high variant rows tie and pickPrimary is last-write-wins; phrase_maps.js also hardcodes the stale values",
+      "married/elderly woman and man have verified compound answers but natural split phrasings are not reachable at runtime",
+      "the reconciliation package contains an internal bare Me·a/Me·chik versus child-compound contradiction that must not be silently adjudicated",
+      "forest=Buring is already resolved and must not be treated as an open fix",
+      "chiko/chibimao are already resolved and distinct",
+      "ska/skenga is narrowed to a remaining construction-usage question; do not mass-correct before native clarification",
+      "able has no verified evidence row yet even though man·a currently ships",
+      "finish/find/get/earn are clean in the audited runtime scope",
+      "sit/sitting are clean and native-confirmed"
+    ]
+  },
   "non_negotiable_rules": [
     "Direct Thangseng/native evidence takes precedence over stale repository values.",
     "Do not invent a linguistic distinction merely to force one canonical form.",
     "Do not delete a form when native evidence establishes it as a legitimate variant unless the evidence specifically says it is wrong.",
     "Wrong live rows must be removed from runtime/build-source layers; historical evidence may remain in non-runtime audit documentation.",
     "Linguistic agents must not make unsupported engineering changes; engineering agents must not adjudicate linguistic disputes.",
-    "All affected source layers and compiled/build layers must be checked so stale values cannot resurrect at runtime."
+    "All affected source layers and compiled/build layers must be checked so stale values cannot resurrect at runtime.",
+    "bi·sa must be treated as a meaningful kid/child/baby/young-one marker across categories; never strip or ignore it merely to simplify an English gloss."
   ],
   "native_confirmed": {
     "sit": "aonga",
@@ -31,34 +47,52 @@
     "need": "nanga",
     "need_example": "Need to eat = cha·na nanga",
     "want": "ska",
-    "want_example": "Want to eat = cha·na ska"
+    "want_example": "Want to eat = cha·na ska",
+    "child_marker": {
+      "bisa": "kid / child / baby / young one; productive across categories",
+      "examples": [
+        {"garo": "bi·sa", "english": "kid / child"},
+        {"garo": "me·a bi·sa", "english": "little boy"},
+        {"garo": "me·chik bi·sa", "english": "little girl"},
+        {"garo": "menggo bi·sa", "english": "kitten"}
+      ],
+      "rule": "Do not treat bi·sa as redundant or remove it from a compound simply because the English category may be labelled boy/girl."
+    }
   },
   "linguistic_adjudications_for_claude_a": {
     "forest": {
-      "action": "FIX",
-      "instruction": "Resolve the current forest collision using direct Thangseng/native evidence. Do not guess from frequency or existing repository majority."
+      "status": "RESOLVED_NO_ACTION",
+      "approved": "Buring",
+      "instruction": "C audit confirms forest is already resolved as Buring across the relevant source/build/runtime layers. Do not modify it unless new direct native evidence contradicts Buring."
     },
     "gender_and_age": {
       "me·chik": "can mean female and woman",
       "me·chikma": "married or elderly woman",
-      "me·a_bisa": "boy (kid)",
-      "me·chik_bisa": "girl (kid)",
-      "instruction": "Trace Me·a versus Me·asa rather than mechanically collapsing them. Promote Thangseng-verified forms and delete old ko·ka/ko·ki from all live source/build layers if no distinct native sense supports them.",
-      "old_live_values_to_remove": ["ko·ka", "ko·ki"]
+      "me·asa": "man / male",
+      "me·a_bisa": "little boy",
+      "me·chik_bisa": "little girl",
+      "bisa_semantics": "kid / child / baby / young one; used across categories",
+      "instruction": "Preserve the semantic contribution of bi·sa. Trace Me·a versus Me·asa rather than mechanically collapsing them. Promote Thangseng-verified forms and remove old ko·ka/ko·ki from all live source/build layers unless separate credible native evidence supports a distinct sense.",
+      "old_live_values_to_remove": ["ko·ka", "ko·ki"],
+      "unresolved_owner_clarification": "The reconciliation package has an internal conflict where key_confirmations uses bare Me·a / Me·chik for boy/girl while NV-130 and gender/age evidence use me·a bi·sa / me·chik bi·sa for little boy/little girl. Do not silently rewrite this contradiction; flag it to the Project Owner."
     },
     "can_and_able": {
       "english_can": ["ama", "man·a"],
       "english_able": ["ama", "man·a"],
-      "instruction": "Resolve the dictionary representation without inventing a hard distinction. Determine whether able should share the same variant set and how canonical selection/variants should be represented."
+      "can_status": "NATIVE_CONFIRMED_AND_CLEAN",
+      "able_status": "OPEN_EVIDENCE_PROMOTION",
+      "instruction": "Do not invent a hard can/able distinction. Preserve can as ama/man·a. For able, use the new direct/native evidence to promote ama/man·a to verified evidence if the cited source is available; otherwise leave the linguistic adjudication explicitly pending rather than treating the current unverified man·a row as proven."
     },
     "sit_and_sitting": {
       "sit": "aonga",
       "sitting": "asongenga",
-      "instruction": "Treat these as native-confirmed values and audit every affected source/build/runtime layer."
+      "status": "NATIVE_CONFIRMED_AND_CLEAN",
+      "instruction": "Audit only for stale resurrection; do not alter the confirmed values."
     },
     "ska_skenga": {
       "ska": "desire / wish / want; native evidence includes want-to-eat usage",
       "skenga": "documented as continuous/progressive form of ska in the current evidence set",
+      "status": "NARROW_OPEN_USAGE_QUESTION",
       "examples": [
         "Anga cha·na ska.",
         "Anga cha·na skenga.",
@@ -70,15 +104,16 @@
         "Anga poraina skenga",
         "Anga kam ka·na skenga"
       ],
-      "instruction": "This is an active linguistic conflict. Evaluate all supplied usage cases and direct Thangseng evidence. Decide the natural usage of ska versus skenga, including whether ska is the basic want/desire form and skenga is a continuous/progressive realization, and whether both can occur in contexts translated as want. Do not decide from English glosses alone."
+      "instruction": "Do not mass-correct. The remaining question is the natural construction for want-to-X: determine from direct Thangseng evidence whether bare ska, skenga, or both are natural in the relevant aspect/context. Also flag the separate ska· form with trailing raka dot for Project Owner clarification before cleanup."
     },
     "chiko_chibimao": {
-      "forms": ["chiko", "chibimao"],
-      "instruction": "Audit all Thangseng/native usage evidence and determine whether these are variants, different senses, or one is wrong. Do not guess."
+      "status": "RESOLVED_NO_ACTION",
+      "instruction": "C audit confirms chiko/chibimao are already resolved as distinct forms/senses. Do not reopen unless new direct native evidence contradicts the current resolution."
     },
     "other_requested_lexical_conflicts": {
       "terms": ["finish", "find", "get", "earn"],
-      "instruction": "Audit each word across dictionary, phrase maps, corrections, reconciliation, compiled data, and runtime outputs. Find all competing candidate forms and trace them to native/Thangseng evidence. Resolve only with evidence."
+      "status": "AUDITED_CLEAN",
+      "instruction": "C audit found finish=bon·a, find=nika, get=man·a, earn=kamaia clean in the scoped runtime. Do not change them unless new evidence appears."
     }
   },
   "engineering_scope_for_claude_b": {
@@ -93,13 +128,27 @@
       "runtime smoke tests and regression tests",
       "source-versus-compiled drift"
     ],
-    "specific_requirement": "If A changes ama/man·a, ska/skenga, sit/sitting, forest, gender terms, chiko/chibimao, finish/find/get/earn, verify that engineering logic preserves the linguistically approved result and does not resurrect stale values.",
+    "confirmed_engineering_bugs": {
+      "boy_girl": {
+        "problem": "ko·ka/ko·ki are live despite rejected/unsupported status",
+        "root_causes": [
+          "pickPrimary last-write-wins tie between two verified_high variant rows",
+          "phrase_maps.js hardcodes ko·ka/ko·ki"
+        ],
+        "required_fix": "After A confirms the intended little-boy/little-girl source keys, remove stale ko·ka/ko·ki from live source/build layers and ensure no tie/override can resurrect them."
+      },
+      "married_elderly_reachability": {
+        "problem": "verified Me·chikma and me·apa compound answers are not reachable for natural split phrasings",
+        "required_fix": "Add/repair aliases or lookup handling so married/elderly woman resolves to Me·chikma and married/elderly man resolves to me·apa, without changing the linguistic forms."
+      }
+    },
+    "specific_requirement": "If A changes ama/man·a, ska/skenga, sit/sitting, gender terms, or any other approved lexical layer, verify engineering logic preserves the approved result and does not resurrect stale values.",
     "report_format": "input → old output → root cause → fix → new output → tests"
   },
   "claude_c_role": {
     "mode": "READ_ONLY_INDEPENDENT_FORENSIC_AUDIT",
     "instruction": "Audit the evidence and resulting A/B changes independently. C must not silently rewrite linguistic decisions. Report unsupported conclusions, regressions, stale-layer resurrection, and mismatches between native evidence and shipped outputs.",
-    "priority_cases": ["can/able", "ama/man·a", "ska/skenga", "sit/sitting", "aonga/asongenga", "forest", "Me·a/Me·asa", "Me·chik/Me·chikma", "me·a bi·sa/me·chik bi·sa", "ko·ka/ko·ki", "chiko/chibimao", "finish", "find", "get", "earn"],
+    "priority_cases": ["can/able", "ama/man·a", "ska/skenga", "sit/sitting", "aonga/asongenga", "forest", "Me·a/Me·asa", "Me·chik/Me·chikma", "me·a bi·sa/me·chik bi·sa", "bi·sa", "ko·ka/ko·ki", "chiko/chibimao", "finish", "find", "get", "earn"],
     "deliverable": "Evidence matrix + pass/fail findings + exact files/keys affected + recommendation for A or B"
   },
   "merge_gate": {
@@ -116,7 +165,8 @@
       "old ko·ka/ko·ki remains live after being rejected",
       "stale source values can resurrect rejected values",
       "compiled output disagrees with approved source data",
-      "tests pass but an approved native sentence regresses"
+      "tests pass but an approved native sentence regresses",
+      "bi·sa has been stripped from a confirmed child/young-one compound without direct native evidence"
     ]
   }
 }
