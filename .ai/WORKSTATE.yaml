@@ -313,7 +313,42 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-08 (Claude A, session complete -- see
+  next_action: '2026-09-08B (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260908B.md for full detail, this is
+    a pointer only). Stopped at a token-discipline checkpoint per Project
+    Owner instruction (work in small batches, migrate when token-heavy),
+    not a blocker. Resolved boy/girl: downgraded uncited Boy->ko.ka/
+    Girl->ko.ki (verified_high->superseded, zero citation, superseded
+    2026-09-04D''s deliberate keep-as-primary per Claude C''s 2026-09-08
+    forensic audit), added little boy/little girl->me.a bi.sa/me.chik
+    bi.sa (VERIFIED/HIGH, reused NV-130). Rebuilt clean, pickPrimary tie
+    gone. Left phrase_maps.js boy/girl hardcode (lines 350-351) for
+    Claude B -- confirmed as the sole new Check F mismatch + 1 new
+    failing unit test (BACKLOG-006), do not allowlist. Discovered
+    man (male)->me.a already correctly VERIFIED/HIGH at row 5347 (bound
+    root, NV-130-cited) -- the me.a/me.asa distinction a pending PO
+    directive pass asks to close is already recorded. Two large batches
+    queued, NOT started: (A) a pasted PO "final closure pass" doc
+    (able, male/man, female/woman, bi.sa rule, ska/skenga/sikenga,
+    explicit-object .ko rule, ska. trailing dot) -- found the ska/skenga/
+    sikenga item is genuinely tangled (existing VERIFIED/HIGH sikenga
+    rows for "want food"/"want water" conflict with a dated 2026-07-18
+    correction rejecting sikenga as an error -- needs a real per-row
+    pass, not a blanket rename); (B) T''s live-pushed
+    .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json (schema 2026-09-08.2,
+    commit 2446176, rebased in cleanly, no file overlap with my work)
+    with 6 fruit/food canonical-form directives (three fish, orange,
+    papaya, watermelon, mango, sweet potato) with exact row indices
+    already given -- recommended as next session''s first batch, small
+    and well-scoped. Full detail, provenance-labeling rules
+    (.ai/PROJECT_OWNER_AUTHORITY.md + the new protocol file), and
+    recommended batch order all in the migration doc. Gate at close:
+    8251/8251 dictionary, 9/9 grammar, 363/364 unit tests (1 expected
+    fail, boy/girl BACKLOG-006, Claude B territory), 0 new
+    repository-intelligence violations besides the expected boy/girl
+    one. Pushed clean, HEAD 5177462, verified HEAD==origin/main, no
+    local/uncommitted changes.'
+  next_action_prior_20260908: '2026-09-08 (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260908.md for full detail, this is
     a pointer only). Resumed from 20260907C migration doc; resync clean
     (HEAD matched doc''s stated close, only commit since was the doc''s
