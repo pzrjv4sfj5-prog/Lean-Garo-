@@ -518,7 +518,8 @@
     "english": "dog",
     "garo": "Achak",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — confirmed via lean_garo_thangseng_reconciliation_v2 (2026-09-07, Project Owner/Thangseng direct confirmation batch): dog = Achak."
   },
   {
     "english": "cat",
@@ -532,13 +533,6 @@
     "garo": "Matchu",
     "category": "animals",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'cow' has VERIFIED/HIGH form(s) ['ma·su']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "elephant",
-    "garo": "Monga",
-    "category": "animals",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'elephant' has VERIFIED/HIGH form(s) ['Mong', 'ha·ti', 'mong·ma']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
     "confidence": "superseded"
   },
   {
@@ -1746,8 +1740,8 @@
     "english": "forest",
     "garo": "Buring",
     "category": "nature",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'forest' has VERIFIED/HIGH form(s) ['bring']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — confirmed via lean_garo_thangseng_reconciliation_v2 follow-up (2026-09-07, direct Thangseng confirmation via Project Owner): forest = Buring. Was wrongly SUPERSEDED by a typo'd duplicate ('bring', now deleted); also resolves the forest/mongma collision flagged as open_adjudication.",
+    "confidence": "verified_high"
   },
   {
     "english": "tree",
@@ -21039,15 +21033,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Cat",
-    "garo": "meng·gong",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "SUPERSEDED — NV-135 (2026-09-06, direct Project Owner relay of Thangseng native confirmation: 'cat' = Menggo). Resolves the NV-134 conflict against Menggo; this row's own citation trail never went beyond the bare tag 'variant/VERIFIED/HIGH' (no date/source/quote), confirmed by the same-day corpus archaeology in NV-134's addendum. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
     "english": "Catch",
     "garo": "ra·chak·a",
     "pos": null,
@@ -21875,24 +21860,6 @@
   },
   {
     "english": "Elephant",
-    "garo": "Mong",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:ha-ti / mong-ma",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Elephant",
-    "garo": "ha·ti",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Elephant",
     "garo": "mongma",
     "pos": null,
     "category": "animals",
@@ -22204,15 +22171,6 @@
     "category": "animals",
     "classifier": null,
     "notes": "CONFIRMED — NV-039, direct native confirmation (Tridip -> Thangseng, 2026-07-24: \"aiwaa tampi ma?\" -> \"Tampi\"). Closed 2026-07-25. Does not resolve the broader 'fly' noun conflict (Bila/Tampi/til·a) — Bila under 'fly' likely bleeds in from the separate 'to fly' verb entry (also Bila); til·a remains an unconfirmed alternate.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Forest",
-    "garo": "bring",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
   },
   {
@@ -25569,33 +25527,6 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
     "confidence": "verified_high"
-  },
-  {
-    "english": "Teacher",
-    "garo": "di·di",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'teacher' is 'Skigipa'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "Teacher",
-    "garo": "ma·star",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'teacher' is 'Skigipa'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "Teacher",
-    "garo": "ti·char",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'teacher' is 'Skigipa'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
   },
   {
     "english": "ten birds",
@@ -31567,12 +31498,12 @@
   },
   {
     "english": "corpse",
-    "garo": "mang·gi·si",
+    "garo": "Manggisi",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — confirmed via lean_garo_thangseng_reconciliation_v2 (2026-09-07, Project Owner/Thangseng direct confirmation batch): corpse = Manggisi. Supersedes prior raka-marked spelling 'mang·gi·si' (UNVERIFIED/HIGH) for this exact key.",
+    "confidence": "verified_high"
   },
   {
     "english": "correct",
@@ -32611,12 +32542,12 @@
   },
   {
     "english": "dead body",
-    "garo": "mang·gi·si",
+    "garo": "Manggisi",
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — confirmed via lean_garo_thangseng_reconciliation_v2 (2026-09-07, Project Owner/Thangseng direct confirmation batch): dead body = Manggisi. Supersedes prior raka-marked spelling 'mang·gi·si' (UNVERIFIED/HIGH) for this exact key.",
+    "confidence": "verified_high"
   },
   {
     "english": "decant",

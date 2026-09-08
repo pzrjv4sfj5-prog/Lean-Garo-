@@ -14,11 +14,22 @@ import { translate } from '../../src/translationEngine.js';
 // HIGH evidence across every one of its dictionary candidates (a signal
 // prepare-data.js already computes for its own pickPrimary reporting,
 // reused here rather than re-derived).
+//
+// "dog" was the original example but is no longer unverified: reconciliation
+// v2 (2026-09-07, Claude A) promoted it to VERIFIED/HIGH (native-confirmed
+// Achak), so it now moved to the regression-guard group below and "guava"
+// (still unverified at time of writing) covers the cap-behavior case instead.
 
-test('"dog" (unverified source row) reports capped confidence, not phrase-map\'s full 0.99', async () => {
+test('"guava" (unverified source row) reports capped confidence, not phrase-map\'s full 0.99', async () => {
+  const r = await translate('guava');
+  assert.equal(r.garo, 'Goaba');
+  assert.ok(r.confidence <= 0.75, `expected capped confidence for an unverified source row, got: ${r.confidence}`);
+});
+
+test('"dog" (promoted to VERIFIED/HIGH by reconciliation v2) reports full confidence (regression guard)', async () => {
   const r = await translate('dog');
   assert.equal(r.garo, 'Achak');
-  assert.ok(r.confidence <= 0.75, `expected capped confidence for an unverified source row, got: ${r.confidence}`);
+  assert.equal(r.confidence, 0.99);
 });
 
 test('a verified entry ("cat") still reports full dictionary-lookup confidence (regression guard)', async () => {

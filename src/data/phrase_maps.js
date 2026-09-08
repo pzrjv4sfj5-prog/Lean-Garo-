@@ -161,7 +161,7 @@ export const PHRASE_MAPS = {
   'house': 'Nok',
   'road': 'ra·ma',
   'river': 'chi·bi·ma',
-  'forest': 'bring', // corrected 2026-08-06: 'Buring' was flagged SUPERSEDED in master_dictionary.json (legacy import), single VERIFIED/HIGH replacement is 'bring'
+  'forest': 'Buring', // reconciliation-v2 (2026-09-07, direct Thangseng confirmation via Project Owner): forest = Buring. Prior 'bring' was an uncaught typo of 'Buring' that had wrongly displaced the correct form to SUPERSEDED; also fixes corrections.json's unrelated forest->mongma collision (an elephant word) found in the same audit.
   'village': 'Song',
   'school': 'Skul',
   'money': 'dang·ga',
@@ -251,7 +251,7 @@ export const PHRASE_MAPS = {
   'dog': 'Achak',
   'cat': 'Menggo', // NV-135 (2026-09-06): Menggo confirmed, meng·gong superseded
   'cow': 'ma·su',
-  'elephant': 'Mong',
+  'elephant': 'mongma', // NV-089/reconciliation-v2 (2026-09-07): mongma confirmed canonical; Mong/ha·ti retired from master_dictionary.json
   'tiger': 'Matcha',
   'pig': 'Wak',
   'goat': 'Do·bok',
