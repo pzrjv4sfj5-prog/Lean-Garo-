@@ -313,7 +313,25 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-08C (Claude A, session complete -- see
+  next_action: '2026-09-09 (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260909.md for full detail, this is
+    a pointer only). Resumed from 20260908C; resync clean (HEAD ==
+    origin/main == 226b41b on arrival), gate reconfirmed green (8251/8251,
+    9/9) before starting. Closed Batch A: able (promoted able->man·a to
+    VERIFIED/HIGH, added new able->ama row, citing
+    AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json OPEN_EVIDENCE_
+    PROMOTION instruction), bi·sa rule (new RULE-049 documenting bi·sa as
+    productive child/young-one marker, added kitten->menggo bi·sa VERIFIED
+    /HIGH), male/female (audited clean, Me·asa/Me·chik already correct and
+    distinct from compound Me·a -- no change needed). ska/skenga/sikenga
+    cluster + ·ko rule + ska· trailing-dot form: deliberately NOT mass-
+    corrected per handoff instruction (NARROW_OPEN_USAGE_QUESTION) --
+    found a corpus-internal contradiction (new handoff evidence reintro-
+    duces "Anga bi·na sikenga" despite the 2026-08-26 sikenga
+    supersession) plus two more open orthography/construction questions;
+    all written up in docs/THANGSENG_RELAY_QUESTION_20260909.md for
+    dedicated native relay, per Project Owner instruction not to guess.'
+  prior_next_action_20260908C: '2026-09-08C (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260908C.md for full detail, this is
     a pointer only). Resumed from 20260908B; resync found one new commit
     (80fe266, Claude B, closed the exact boy/girl phrase_maps.js handoff
