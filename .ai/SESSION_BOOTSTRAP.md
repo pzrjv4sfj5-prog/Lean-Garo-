@@ -1,5 +1,12 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-06 by Claude B
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-08 by Claude A
+(session close — closed Batch B, all 6 fruit/food canonical-form directives from
+`.ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json`: orange->Narang, papaya->Modupol,
+watermelon->tor·mus, mango->te·ga·chu, sweet potato->ta·mil·ang, three fish
+cleanup. Fixed a stale `corrections.json` "orange" override (Rule 8). Batch A
+(able/male-female/bi·sa-rule/ska·-skenga·-sikenga cluster/·ko-rule/ska·) remains
+open, next session's task. See `docs/CLAUDE_A_SESSION_MIGRATION_20260908C.md`.)
+Prior: 2026-09-06 by Claude B
 (governance-only session, Project Owner directive delivered in chat: added
 `.ai/PROJECT_OWNER_AUTHORITY.md`, a project-wide rule — applies to Claude A/B/C
 alike, not role-specific — that Project Owner directives given directly in chat

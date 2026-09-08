@@ -313,7 +313,32 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-08B (Claude A, session complete -- see
+  next_action: '2026-09-08C (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260908C.md for full detail, this is
+    a pointer only). Resumed from 20260908B; resync found one new commit
+    (80fe266, Claude B, closed the exact boy/girl phrase_maps.js handoff
+    that doc flagged), no conflict, gate reconfirmed green before
+    starting. Closed Batch B (all 6 fruit/food canonical-form directives
+    from .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json): three fish (cleanup
+    only, already correct), orange->Narang (un-superseded the canonical
+    row, superseded the uncited a·mnk candidate, fixed a stale
+    corrections.json override shipping a·mnk -- Rule 8 duplicate-
+    representation gap), papaya->Modupol (new rows, superseded the
+    conflicting NV-080 mo·du per owner_directive_precedence),
+    watermelon->tor·mus, mango->te·ga·chu, sweet potato->ta·mil·ang (each:
+    superseded stale "the X" rows, added correct "the X" verified_high
+    rows; bare keys already resolved correctly pre-session). Added 4 new
+    "the X" keys to known_dictionary_conflicts.json (expected new Check C
+    self-consistency conflicts). All 9 touched keys live-verified via
+    translate(). Batch A (able/male-female/bi·sa-rule/ska·skenga·sikenga
+    cluster/·ko-rule/ska·) remains untouched, next session's task per
+    20260908B''s own recommended ordering. Gate clean: 8251/8251
+    dictionary, 9/9 grammar, 379/379 unit tests (unchanged, data-only
+    session), 0 new repository-intelligence violations (8 checks), 0
+    resync-stale-overrides candidates, 14747/14747 runtime-sweep calls 0
+    errors. Pushed clean, HEAD verified == origin/main, no
+    local/uncommitted changes.'
+  next_action_prior_20260908B: '2026-09-08B (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260908B.md for full detail, this is
     a pointer only). Stopped at a token-discipline checkpoint per Project
     Owner instruction (work in small batches, migrate when token-heavy),

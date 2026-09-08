@@ -112,8 +112,8 @@
     "english": "orange",
     "garo": "Narang",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'orange' has VERIFIED/HIGH form(s) ['a·mnk', 'ko·mil·a', 'na·rang']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): 'Narang' is the Owner-directed canonical form for 'orange', orthographically identical to the pre-existing verified_high 'na·rang' (idx 3479, raka-dot/case variant, cleans identically at compile). Un-superseded (was SUPERSEDED 2026-08-01 corpus-internal audit; that audit predates and is overridden by this directive).",
+    "confidence": "verified_high"
   },
   {
     "english": "guava",
@@ -17033,7 +17033,8 @@
     "english": "the three fish",
     "garo": "na·tok mang·gittam",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): confirms canonical 'three fish'=na·tok mang·gittam (mang·gni reserved for 'two fish', per Owner's critical_duplicate_resolution). Value already correct, promoted from unverified."
   },
   {
     "english": "the one person",
@@ -17124,7 +17125,8 @@
     "english": "the orange",
     "garo": "Narang",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): same canonical decision as bare 'orange' (idx 17)."
   },
   {
     "english": "the guava",
@@ -17136,7 +17138,8 @@
     "english": "the papaya",
     "garo": "Modu",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical for 'the papaya' is now 'Modupol'. 'Modu' retained per citation discipline."
   },
   {
     "english": "the jackfruit",
@@ -17148,7 +17151,8 @@
     "english": "the mango",
     "garo": "Te·gachu",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical for 'the mango' is 'te·ga·chu' (matches bare 'mango', idx 21/3428, Native (Thangseng)-cited). 'Te·gachu' retained per citation discipline."
   },
   {
     "english": "the lychee",
@@ -17166,7 +17170,8 @@
     "english": "the watermelon",
     "garo": "Te·e raja",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical for 'the watermelon' is 'tor·mus' (matches bare 'watermelon', idx 24/3732). 'Te·e raja' retained per citation discipline."
   },
   {
     "english": "the lemon",
@@ -17328,7 +17333,8 @@
     "english": "the sweet potato",
     "garo": "Ta·we",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical for 'the sweet potato' is 'ta·mil·ang' (matches bare 'sweet potato', idx 51/3669). 'Ta·we' retained per citation discipline."
   },
   {
     "english": "the colocasia",
@@ -23695,7 +23701,7 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH | Cross-ref 2026-09-08: same lexical item as the Owner-directed canonical 'Narang' (idx 17/2625) — orthographic/case variant, not a distinct word.",
     "confidence": "verified_high"
   },
   {
@@ -23796,8 +23802,8 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
-    "confidence": "verified_high"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080). | SUPERSEDED 2026-09-08 — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): Owner's final decision is 'papaya'->'Modupol', overriding this NV-080 native-confirmed evidence per owner_directive_precedence (documented, not deleted, not vetoing the directive).",
+    "confidence": "superseded"
   },
   {
     "english": "Papaya",
@@ -25390,7 +25396,7 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH — provenance recorded 2026-09-08 as Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2) (no prior citation existed).",
     "confidence": "verified_high"
   },
   {
@@ -54119,8 +54125,8 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/doc7",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical active representation for 'orange' is now 'Narang' (idx 17). 'a·mnk' had no cited source beyond a bare 'doc7' tag and is retained per citation discipline, not deleted; older verified_high status does not veto the Owner directive per owner_directive_precedence.",
+    "confidence": "superseded"
   },
   {
     "english": "Ours",
@@ -78856,5 +78862,40 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-130, renumbered 2026-09-05 — see numbering-collision fix): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Added 2026-09-08 (per docs/AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json, native_confirmed.child_marker): explicit English key 'little girl' for the same cited me·chik bi·sa form already carried under the bare 'girl' key (see that row) — bi·sa is the productive kid/child/young-one marker, not redundant with the English 'little' gloss, and must not be stripped. Not a new native event, same NV-130 citation.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "papaya",
+    "garo": "Modupol",
+    "category": "food",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): Owner-directed canonical form for 'papaya'. Not present in the searched repository occurrence map prior to this directive; conflicting prior evidence (mo·du, NV-080) documented at idx 3491, not allowed to veto this decision."
+  },
+  {
+    "english": "the papaya",
+    "garo": "Modupol",
+    "category": "food",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): same canonical decision as bare 'papaya'."
+  },
+  {
+    "english": "the watermelon",
+    "garo": "tor·mus",
+    "category": "food",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical value, matches bare 'watermelon' (idx 3732)."
+  },
+  {
+    "english": "the mango",
+    "garo": "te·ga·chu",
+    "category": "food",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical value, matches bare 'mango' (idx 3428, Native (Thangseng)-cited)."
+  },
+  {
+    "english": "the sweet potato",
+    "garo": "ta·mil·ang",
+    "category": "food",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical value, matches bare 'sweet potato' (idx 3669)."
   }
 ]
