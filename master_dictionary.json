@@ -29640,24 +29640,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "calf",
-    "garo": "ba·sur",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "SUPERSEDED — 2026-08-08, Claude A, Project Owner-relayed native confirmation: 'calf' = 'matchu bi·sa' (matchu=cow + bi·sa=offspring), final. Retained per citation discipline. See NV-069.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "calf",
-    "garo": "ma·su gen·da",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "SUPERSEDED — 2026-08-08, Claude A, Project Owner-relayed native confirmation: 'calf' = 'matchu bi·sa' (matchu=cow + bi·sa=offspring), final. Retained per citation discipline. See NV-069.",
-    "confidence": "superseded"
-  },
-  {
     "english": "call",
     "garo": "don·a",
     "pos": null,
