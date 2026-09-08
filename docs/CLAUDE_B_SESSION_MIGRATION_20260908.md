@@ -93,8 +93,10 @@ behavior. Closed as resolved.
   checks.
 - `node scripts/resync-stale-overrides.mjs`: 0 new candidates (1
   pre-existing, unrelated `build`/`Rika` skip, unchanged).
-- `node --test tests/unit/*.test.js`: **363/363** (was 360 at prior
-  close; +3 new from the elephant-fix regression test).
+- `node --test tests/unit/*.test.js`: **364/364** at final pushed tip
+  (360 at prior close, +3 from this session's elephant regression test,
+  +1 net from Claude A's concurrent commit landing mid-session — see
+  Push and resync below).
 - `node scripts/runtime-error-sweep.mjs`: 14,743 `translate()` calls,
   **0 errors**.
 - Live spot-checks this session: `axe` (confirmed from prior turn),
@@ -141,9 +143,16 @@ already correct in their tree). Rebased cleanly onto it, full gate
 re-run at the merged tip (364/364 unit tests — 361 from Claude A's
 commit + 3 from this session's elephant test — 0 new
 repository-intelligence violations, 0 resync candidates, 0 runtime
-errors across 14743 calls, zero `prepare-data.js` diff), then pushed.
-Final `HEAD` == `origin/main` == `231ba6b`, confirmed clean
-(`git status --porcelain` empty).
+errors across 14743 calls, zero `prepare-data.js` diff), then pushed
+(`231ba6b`). One more concurrent commit landed immediately after
+(`80b2f85`, Claude A's own session-close migration doc, docs-only, no
+overlap) — rebased again, gate re-verified clean (zero diff, 364/364
+unchanged), pushed. **Final `HEAD` == `origin/main` == `ad1cac0`**,
+confirmed clean (`git status --porcelain` empty). Given how fast
+origin is moving with concurrent sessions, the next Claude B should
+treat `git fetch && git rev-parse origin/main` as ground truth over
+this hash the moment any doubt exists — this doc's numbers were
+already stale once mid-session.
 
 Worth noting: Claude A's concurrent commit independently flagged the
 exact same boy/girl conflict this session found (item 2 above) — NV-130's
