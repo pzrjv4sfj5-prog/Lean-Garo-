@@ -78591,8 +78591,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — corpus-internal audit 2026-09-08 (Claude A, per Claude C forensic audit and docs/AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json critical findings): this row carries no native citation of any kind ('variant/VERIFIED/HIGH' with no source), and was only shipping as the live pickPrimary primary because of a deliberate 2026-09-04D reorder move (see docs/CLAUDE_A_SESSION_MIGRATION_20260904D.md, NV-127) that has since been superseded by this audit. The same English key 'boy' has a directly-cited VERIFIED/HIGH form (NV-130, Thangseng via Tridip, WhatsApp 4/9/2026: \"me.a bi.sa = boy\") at 'me·a bi·sa'. No separate credible native evidence supports ko·ka as a distinct sense for 'boy' — not authoritative for compile; retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "Girl",
@@ -78600,8 +78600,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — corpus-internal audit 2026-09-08 (Claude A, per Claude C forensic audit and docs/AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json critical findings): this row carries no native citation of any kind ('variant/VERIFIED/HIGH' with no source), and was only shipping as the live pickPrimary primary because of a deliberate 2026-09-04D reorder move (see docs/CLAUDE_A_SESSION_MIGRATION_20260904D.md, NV-127) that has since been superseded by this audit. The same English key 'girl' has a directly-cited VERIFIED/HIGH form (NV-130, Thangseng via Tridip, WhatsApp 4/9/2026: \"me.a bi.sa = girl\") at 'me·chik bi·sa'. No separate credible native evidence supports ko·ki as a distinct sense for 'girl' — not authoritative for compile; retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "i came to eat",
@@ -78838,5 +78838,23 @@
     "category": "adjectives",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — NV-151 (2026-09-07, direct Thangseng relay via Project Owner): confirmed synonymous with 'ak·sa' for 'alone' -- closes NV-146's open tension between the two words used in the 'leave me alone' sentence context. Not addressed here, still open: whether this same 'saksan' is also the word for 'loneliness' (see unverified 'loneliness'=Saksan row) -- separate question, not resolved by this confirmation."
+  },
+  {
+    "english": "little boy",
+    "garo": "me·a bi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-130, renumbered 2026-09-05 — see numbering-collision fix): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Added 2026-09-08 (per docs/AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json, native_confirmed.child_marker): explicit English key 'little boy' for the same cited me·a bi·sa form already carried under the bare 'boy' key (see that row) — bi·sa is the productive kid/child/young-one marker, not redundant with the English 'little' gloss, and must not be stripped. Not a new native event, same NV-130 citation.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "little girl",
+    "garo": "me·chik bi·sa",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-130, renumbered 2026-09-05 — see numbering-collision fix): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Added 2026-09-08 (per docs/AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json, native_confirmed.child_marker): explicit English key 'little girl' for the same cited me·chik bi·sa form already carried under the bare 'girl' key (see that row) — bi·sa is the productive kid/child/young-one marker, not redundant with the English 'little' gloss, and must not be stripped. Not a new native event, same NV-130 citation.",
+    "confidence": "verified_high"
   }
 ]
