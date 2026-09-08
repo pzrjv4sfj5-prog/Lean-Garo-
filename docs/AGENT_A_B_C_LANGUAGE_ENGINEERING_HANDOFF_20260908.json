@@ -1,0 +1,122 @@
+{
+  "document_type": "lean_garo_agent_handoff",
+  "version": "2026-09-08.1",
+  "status": "ACTIVE",
+  "authority": "Project Owner supplied direct/native Thangseng evidence",
+  "read_order": [
+    "docs/lean_garo_thangseng_reconciliation_v2_machine_ready.json",
+    "docs/AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json",
+    "docs/CLAUDE_C_PRE_AUDIT_PROMPT_20260908.md"
+  ],
+  "non_negotiable_rules": [
+    "Direct Thangseng/native evidence takes precedence over stale repository values.",
+    "Do not invent a linguistic distinction merely to force one canonical form.",
+    "Do not delete a form when native evidence establishes it as a legitimate variant unless the evidence specifically says it is wrong.",
+    "Wrong live rows must be removed from runtime/build-source layers; historical evidence may remain in non-runtime audit documentation.",
+    "Linguistic agents must not make unsupported engineering changes; engineering agents must not adjudicate linguistic disputes.",
+    "All affected source layers and compiled/build layers must be checked so stale values cannot resurrect at runtime."
+  ],
+  "native_confirmed": {
+    "sit": "aonga",
+    "sitting": "asongenga",
+    "can": ["ama", "man·a"],
+    "can_examples": [
+      {"english": "I can speak Garo.", "garo": "Anga Garo aganna man·a"},
+      {"english": "I can eat.", "garo": "Anga cha·na man·a"},
+      {"english": "I can go.", "garo": "Anga re·angna ama"},
+      {"english": "I can work.", "garo": "Anga kam ka·na man·a"}
+    ],
+    "can_rule_evidence": "Thangseng: It is better to leave ama and man·a to be used freely; no strict rule regarding use/non-use of one or the other is recalled.",
+    "can_compact": "Can eat = cha·na ama/man·a",
+    "need": "nanga",
+    "need_example": "Need to eat = cha·na nanga",
+    "want": "ska",
+    "want_example": "Want to eat = cha·na ska"
+  },
+  "linguistic_adjudications_for_claude_a": {
+    "forest": {
+      "action": "FIX",
+      "instruction": "Resolve the current forest collision using direct Thangseng/native evidence. Do not guess from frequency or existing repository majority."
+    },
+    "gender_and_age": {
+      "me·chik": "can mean female and woman",
+      "me·chikma": "married or elderly woman",
+      "me·a_bisa": "boy (kid)",
+      "me·chik_bisa": "girl (kid)",
+      "instruction": "Trace Me·a versus Me·asa rather than mechanically collapsing them. Promote Thangseng-verified forms and delete old ko·ka/ko·ki from all live source/build layers if no distinct native sense supports them.",
+      "old_live_values_to_remove": ["ko·ka", "ko·ki"]
+    },
+    "can_and_able": {
+      "english_can": ["ama", "man·a"],
+      "english_able": ["ama", "man·a"],
+      "instruction": "Resolve the dictionary representation without inventing a hard distinction. Determine whether able should share the same variant set and how canonical selection/variants should be represented."
+    },
+    "sit_and_sitting": {
+      "sit": "aonga",
+      "sitting": "asongenga",
+      "instruction": "Treat these as native-confirmed values and audit every affected source/build/runtime layer."
+    },
+    "ska_skenga": {
+      "ska": "desire / wish / want; native evidence includes want-to-eat usage",
+      "skenga": "documented as continuous/progressive form of ska in the current evidence set",
+      "examples": [
+        "Anga cha·na ska.",
+        "Anga cha·na skenga.",
+        "Anga re·bana skenga",
+        "Anga ringna skenga",
+        "Anga re·angna skenga",
+        "Anga bi·na sikenga",
+        "Anga tusina skenga",
+        "Anga poraina skenga",
+        "Anga kam ka·na skenga"
+      ],
+      "instruction": "This is an active linguistic conflict. Evaluate all supplied usage cases and direct Thangseng evidence. Decide the natural usage of ska versus skenga, including whether ska is the basic want/desire form and skenga is a continuous/progressive realization, and whether both can occur in contexts translated as want. Do not decide from English glosses alone."
+    },
+    "chiko_chibimao": {
+      "forms": ["chiko", "chibimao"],
+      "instruction": "Audit all Thangseng/native usage evidence and determine whether these are variants, different senses, or one is wrong. Do not guess."
+    },
+    "other_requested_lexical_conflicts": {
+      "terms": ["finish", "find", "get", "earn"],
+      "instruction": "Audit each word across dictionary, phrase maps, corrections, reconciliation, compiled data, and runtime outputs. Find all competing candidate forms and trace them to native/Thangseng evidence. Resolve only with evidence."
+    }
+  },
+  "engineering_scope_for_claude_b": {
+    "instruction": "Resolve confirmed engineering/runtime/data-pipeline bugs after or alongside A's linguistic work, without deciding linguistic disputes.",
+    "required_checks": [
+      "lookup and fallback precedence",
+      "corrections.json and phrase_maps.js source consistency",
+      "pickPrimary behavior",
+      "grammar and morphology integration",
+      "stale override/source resurrection",
+      "build/compiled dictionary regeneration",
+      "runtime smoke tests and regression tests",
+      "source-versus-compiled drift"
+    ],
+    "specific_requirement": "If A changes ama/man·a, ska/skenga, sit/sitting, forest, gender terms, chiko/chibimao, finish/find/get/earn, verify that engineering logic preserves the linguistically approved result and does not resurrect stale values.",
+    "report_format": "input → old output → root cause → fix → new output → tests"
+  },
+  "claude_c_role": {
+    "mode": "READ_ONLY_INDEPENDENT_FORENSIC_AUDIT",
+    "instruction": "Audit the evidence and resulting A/B changes independently. C must not silently rewrite linguistic decisions. Report unsupported conclusions, regressions, stale-layer resurrection, and mismatches between native evidence and shipped outputs.",
+    "priority_cases": ["can/able", "ama/man·a", "ska/skenga", "sit/sitting", "aonga/asongenga", "forest", "Me·a/Me·asa", "Me·chik/Me·chikma", "me·a bi·sa/me·chik bi·sa", "ko·ka/ko·ki", "chiko/chibimao", "finish", "find", "get", "earn"],
+    "deliverable": "Evidence matrix + pass/fail findings + exact files/keys affected + recommendation for A or B"
+  },
+  "merge_gate": {
+    "order": [
+      "C pre-audit evidence and current live outputs",
+      "A linguistic fixes",
+      "B engineering/build/runtime fixes",
+      "C post-audit of combined result",
+      "full test/build gate",
+      "verify HEAD == origin/main and zero divergence"
+    ],
+    "do_not_merge_if": [
+      "a linguistic decision is based only on frequency or English intuition",
+      "old ko·ka/ko·ki remains live after being rejected",
+      "stale source values can resurrect rejected values",
+      "compiled output disagrees with approved source data",
+      "tests pass but an approved native sentence regresses"
+    ]
+  }
+}
