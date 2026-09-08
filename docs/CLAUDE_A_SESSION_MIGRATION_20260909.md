@@ -17,7 +17,12 @@ Source: `.ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json` + `docs/AGENT_A_B_C_LANGUAGE
 8252/8252 dictionary, 9/9 grammar, JSON compliance ✅. `pickPrimary` verified-tie count went 24→25 (new able ama/man·a tie — same category as the pre-existing can ama/man·a tie, not a regression). No engine code touched.
 
 ## 4. Runtime Handoff (mandatory section)
-None — no engine code touched. `translate('able')` and `translate('kitten')` both live-verified correct; no new mismatch introduced.
+
+**bi·sa productive-suffix gap (Claude B action needed).** Engine currently has no morphological rule for bi·sa — every young-animal/child compound (`achak bi·sa`, `matchu bi·sa`, `menggo bi·sa`, `me·a bi·sa`, `me·chik bi·sa`) exists only as a hardcoded dictionary row. `src/translationEngine.js`'s only compound mechanism is a generic hyphen-split fallback (`compoundWords`/`compound-split`, confidence 0.60) with no semantic awareness of bi·sa as a productive young-one marker. RULE-049 (this session) documents bi·sa as productive across categories, but the runtime doesn't act on that — any animal noun not already given an explicit `<animal> bi·sa` row will fail to produce a "baby/young <animal>" translation at all.
+- Required fix: implement bi·sa as a generative suffix — when English input matches a young-animal/child pattern (e.g. "baby X", "young X", "kid" for an animal already in the dictionary), append bi·sa to that animal's verified Garo noun rather than requiring a dedicated dictionary row per animal.
+- Test cases (already VERIFIED/HIGH, use as regression fixtures): puppy→achak bi·sa, calf→matchu bi·sa, kitten→menggo bi·sa, little boy→me·a bi·sa, little girl→me·chik bi·sa.
+- Do not adjudicate linguistic scope (which animals bi·sa productively applies to) — that's Claude A's call if any edge case surfaces; this handoff is the engineering mechanism only.
+- No engine code was touched this session (linguistic-only), so this is net-new scope, not a regression from tonight's dictionary edits.
 
 ## 5. Repository status at close (verified, not asserted)
 - HEAD: `2564ddc` (verify via `git log -1`)
