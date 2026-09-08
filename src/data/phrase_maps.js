@@ -347,8 +347,16 @@ export const PHRASE_MAPS = {
   'teach': 'Skie on·a',
   'man': 'Me·asa',
   'woman': 'Me·chik',
-  'boy': 'ko·ka',
-  'girl': 'ko·ki',
+  // FIX (2026-09-08, Claude B, per AGENT_A_B_C_LANGUAGE_ENGINEERING_
+  // HANDOFF_20260908.json v2026-09-08.2): was hardcoding the stale,
+  // uncited 'ko·ka'/'ko·ki' values, which overrode the dictionary
+  // regardless of what pickPrimary resolved (this map is consulted
+  // ahead of the compiled dictionary lookup). Native-confirmed source
+  // is NV-130 (direct Thangseng relay via Tridip): 'me·a bi·sa' = boy,
+  // 'me·chik bi·sa' = girl. See master_dictionary.json's 'boy'/'girl'
+  // VERIFIED/HIGH rows for the full citation.
+  'boy': 'me·a bi·sa',
+  'girl': 'me·chik bi·sa',
   'child': 'Bi·sa',
   'teacher': 'Skigipa',
   'doctor': 'Sam·on·gipa',
