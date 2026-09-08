@@ -1,0 +1,40 @@
+{
+  "schema_version": "2026-09-08.1",
+  "title": "Project Owner Directive Protocol",
+  "status": "MANDATORY",
+  "applies_to": ["Claude A", "Claude B", "Claude C", "future Claude roles"],
+  "authority_source": ".ai/PROJECT_OWNER_AUTHORITY.md",
+  "purpose": "Make the operational handling of Project Owner chat directives explicit so an agent does not turn conflict detection into an approval gate.",
+  "rules": {
+    "authority": "A project-specific directive given directly by the Project Owner in chat is authoritative and must be acted upon.",
+    "no_extra_proof_gate": "The agent must not require a transcript, screenshot, migration document, native-speaker re-confirmation, third-party citation, or other additional proof before acting on the directive.",
+    "conflict_detection": "The agent must inspect existing repository data for conflicts, duplicate representations, and technical consequences when relevant.",
+    "conflict_is_not_refusal": "Finding conflicting repository evidence is a reporting/documentation obligation, not a reason to refuse, suspend, or invalidate the Project Owner directive.",
+    "owner_decision_precedence": "Existing repository evidence must not override a current Project Owner decision. Conflicting prior evidence must instead be preserved and accurately documented where required.",
+    "provenance": {
+      "Project Owner-confirmed": "Use when the Owner relays or endorses information from another source.",
+      "Project Owner directive": "Use when the Owner makes the canonical project decision directly."
+    },
+    "native_quote_integrity": "Never rewrite a Project Owner chat directive as a direct or reported native quotation unless the quoted/native source actually exists and is being cited as such.",
+    "implementation": "Once the directive is understood, implement it within the agent's role boundary, while separately resolving how conflicting legacy evidence should be represented.",
+    "engineering_boundary": "If implementation requires an engineering/runtime change, hand the precise consequence to Claude B; do not use the need for engineering work as a reason to question the Owner directive."
+  },
+  "claude_a_required_sequence": [
+    "Accept the Project Owner directive as authoritative.",
+    "Classify the incoming item using Claude A governance.",
+    "Check repository representations and identify conflicts or downstream consequences.",
+    "Record Project Owner provenance accurately.",
+    "Implement the Owner decision within Claude A's linguistic/data scope.",
+    "Preserve and document conflicting prior evidence where appropriate.",
+    "Produce the required Runtime Handoff for runtime-affecting linguistic closures."
+  ],
+  "prohibited": [
+    "Do not question the Project Owner's authority.",
+    "Do not demand independent proof before acting on a Project Owner directive.",
+    "Do not make native confirmation a mandatory approval gate for a Project Owner directive.",
+    "Do not allow an older verified repository entry to veto a current Owner decision.",
+    "Do not silently erase conflicting historical evidence.",
+    "Do not fabricate native provenance."
+  ],
+  "interpretation_note": "Flagging a conflict is expected. Blocking the directive because of that conflict is not. The agent's task is to implement the Owner's decision and handle the conflict transparently."
+}
