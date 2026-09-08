@@ -131,9 +131,25 @@ behavior. Closed as resolved.
   it was pasted directly into chat history.
 
 ## Push and resync
-1 commit this session (`643fa62`), pushed, `HEAD` == `origin/main`
-confirmed clean (`git status --porcelain` empty) before this doc was
-written.
+2 commits this session: `643fa62` (elephant fix) and this doc's own
+commit. Before the second push, `git fetch` surfaced a concurrent
+Claude A commit (`8220f36`, "Reconciliation v2 cleanup:
+elephant/cat/teacher/dog/dead-body/forest") — inspected, no conflict
+(it fixed an unrelated `forest`→`mongma` collision in
+`corrections.json`; this session's `an elephant` fix was untouched and
+already correct in their tree). Rebased cleanly onto it, full gate
+re-run at the merged tip (364/364 unit tests — 361 from Claude A's
+commit + 3 from this session's elephant test — 0 new
+repository-intelligence violations, 0 resync candidates, 0 runtime
+errors across 14743 calls, zero `prepare-data.js` diff), then pushed.
+Final `HEAD` == `origin/main` == `231ba6b`, confirmed clean
+(`git status --porcelain` empty).
+
+Worth noting: Claude A's concurrent commit independently flagged the
+exact same boy/girl conflict this session found (item 2 above) — NV-130's
+detailed quote vs. the reconciliation's bare answer vs. ko·ka/ko·ki —
+so that finding is now cross-confirmed from both sessions, not just
+this one's read.
 
 ## Exact next step for the next session
 1. `git fetch origin`, confirm `HEAD` at this doc's committed hash or
