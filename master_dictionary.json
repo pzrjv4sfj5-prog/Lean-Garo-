@@ -26387,8 +26387,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2 / AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json), promoting on cited native evidence: english_can/english_able both = [ama, man·a]. Supporting relayed native evidence (Project Owner-confirmed, Thangseng via Tridip WhatsApp): 'It is better to leave ama and man·a to be used freely; no strict rule regarding use/non-use of one or the other is recalled.' Parallels the already-VERIFIED/HIGH can->man·a entry. Promoted from variant/UNVERIFIED/HIGH.",
+    "confidence": "verified_high"
   },
   {
     "english": "aboriginal",
@@ -78897,5 +78897,23 @@
     "category": "food",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical value, matches bare 'sweet potato' (idx 3669)."
+  },
+  {
+    "english": "able",
+    "garo": "ama",
+    "pos": "aux.",
+    "category": "grammar",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2 / AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json), new row, parallels the already-VERIFIED/HIGH can->ama entry. english_able=[ama, man·a] per the same cited evidence documented on the able->man·a row.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "kitten",
+    "garo": "menggo bi·sa",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json child_marker example set). Productive bi·sa (kid/child/baby/young-one marker, RULE-049) applied to menggo (cat), parallel to achak bi·sa (puppy, already VERIFIED/HIGH) and matchu bi·sa (calf, already VERIFIED/HIGH).",
+    "confidence": "verified_high"
   }
 ]

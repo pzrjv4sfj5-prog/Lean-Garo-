@@ -1,0 +1,32 @@
+id: RULE-049
+title: "bi·sa — Productive Child/Young-One Marker"
+description: >-
+  bi·sa means kid/child/baby/young-one and composes productively across
+  categories (human and animal) to derive "young X" compounds. It is a
+  meaningful semantic contribution, not a redundant or droppable element,
+  and must never be stripped from a compound merely to simplify an
+  English gloss (e.g. collapsing "little boy" -> "boy").
+dependencies: []
+claims:
+  - scope: "bi·sa as productive young-one marker (human + animal)"
+    status: verified
+    confidence: high
+    source: "Project Owner directive, 2026-09-08 — AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json non_negotiable_rules + child_marker block"
+open_questions:
+  - "Internal conflict, not yet adjudicated: the Thangseng reconciliation package's key_confirmations uses bare Me·a / Me·chik for boy/girl, while NV-130 and the gender/age evidence set use me·a bi·sa / me·chik bi·sa for little boy/little girl. Flagged to Project Owner in session 20260908B; not silently resolved. See docs/CLAUDE_A_SESSION_MIGRATION_20260908B.md."
+examples:
+  - english: "puppy"
+    garo: "achak bi·sa"
+    status: verified_high
+  - english: "calf"
+    garo: "matchu bi·sa"
+    status: verified_high
+  - english: "kitten"
+    garo: "menggo bi·sa"
+    status: verified_high
+  - english: "little boy"
+    garo: "me·a bi·sa"
+    status: verified_high
+  - english: "little girl"
+    garo: "me·chik bi·sa"
+    status: verified_high
