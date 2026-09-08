@@ -313,7 +313,40 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-07C (Claude A, session complete -- see
+  next_action: '2026-09-08 (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260908.md for full detail, this is
+    a pointer only). Resumed from 20260907C migration doc; resync clean
+    (HEAD matched doc''s stated close, only commit since was the doc''s
+    own session-close commit). Processed Project Owner reconciliation
+    package (docs/lean_garo_thangseng_reconciliation_v2_machine_ready.json):
+    elephant (deleted 3 contaminated master rows: Monga/Mong/ha·ti, kept
+    mongma, fixed stale phrase_maps.js override), teacher (deleted 3 dead
+    SUPERSEDED rows), cat (deleted 1 dead SUPERSEDED row, already correct
+    live), dog (promoted unverified->verified_high, Achak unchanged),
+    dead body/corpse (promoted unverified->verified_high, canonicalized
+    to Manggisi). Then processed a live Thangseng follow-up relayed by
+    Project Owner: forest=Buring -- promoted the correct SUPERSEDED
+    "Buring" master row to verified_high, deleted a typo''d "bring"
+    duplicate that had wrongly gone live, fixed phrase_maps.js override,
+    and fixed corrections.json''s forest->mongma collision (was resolving
+    to the elephant word). Hit one push collision with Claude B (who
+    fixed the sibling "an elephant"->mongma collision in
+    corrections.json concurrently) -- resolved via rebase, merged both
+    fixes onto adjacent lines, full gate re-run after merge before
+    pushing. Deliberately left untouched, pending Thangseng relay next
+    session: stop (NV-089 explicitly rejected Sengbo, reconciliation doc
+    says Sengbo -- direct contradiction), can/ama (NV-018 says ama is
+    general-purpose, reconciliation examples read as go-specific --
+    contradiction), boy/girl (NV-130 detailed quote says me·a bi·sa/
+    me·chik bi·sa, reconciliation says bare Me·a/Me·chik, live values are
+    a third option ko·ka/ko·ki -- 3-way conflict), wait (Damo/Sengbo is
+    locked by a regression test + hardcoded grammarOverrides constant,
+    Claude B/engine territory). Gate green: 8249/8249 dictionary, 9/9
+    grammar, 364/364 unit tests (was 360, +3 Claude B''s an-elephant
+    test, +1 mine), 0 new repository-intelligence violations, resync
+    clean. Pushed clean, HEAD 8220f36, verified HEAD==origin/main, no
+    local/uncommitted changes.'
+  next_action_prior_20260907C: '2026-09-07C (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260907C.md for full detail, this is
     a pointer only). Fixed Axe idx 3130 garo-field pollution (clean
     "Rua" now resolves at runtime); added angry-cluster raka-placement
