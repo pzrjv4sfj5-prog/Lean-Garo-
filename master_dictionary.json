@@ -8681,13 +8681,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "two fish",
-    "garo": "do·o mang·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-11 (Claude B): superseded by mechanically-regenerated na·tok+mang formula entry, same precedent as Claude A's dog/cat/bird fix (3ec06ee). Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
     "english": "two teacher",
     "garo": "skigipa·gni",
     "category": "education",
