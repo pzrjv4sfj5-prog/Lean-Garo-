@@ -1,5 +1,17 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-09 by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-09B by Claude A
+(session close — small-batch, Project-Owner-directed spot-fix session: garlic
+(deleted 2 wrong already-superseded candidates, no live bug), kitten (fixed a
+pre-existing corrections.json typo caught by the gate re-run), ginger/tomato/
+brinjal/pumpkin (LIVE BUG — an uncited variant/VERIFIED/HIGH import was
+outranking the correct native word at runtime for all 4; fixed and promoted
+per PO confirmation), pomelo/coconut (checked, already correct, no action),
+three fish/two fish (checked, already correct, then 2 old superseded
+duplicate rows deleted per PO instruction — two fish=do·o mang·gni wrong-root
+defect, three fish=na·tok mang·gni arithmetic mismatch). Gate green
+throughout, no engine code touched. See
+`docs/CLAUDE_A_SESSION_MIGRATION_20260909B.md`.)
+Prior: 2026-09-09 by Claude A
 (session close — closed Batch A: able (promoted able->man·a to VERIFIED/HIGH,
 added able->ama), bi·sa rule (new RULE-049, added kitten->menggo bi·sa),
 male/female (audited clean, no change needed). ska/skenga/sikenga cluster +

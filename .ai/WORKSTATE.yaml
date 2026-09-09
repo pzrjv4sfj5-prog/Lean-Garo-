@@ -313,7 +313,34 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-09 (Claude A, session complete -- see
+  next_action: '2026-09-09B (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260909B.md for full detail, this is
+    a pointer only). Resumed from 20260909 (Batch A) at HEAD fdd37f7,
+    resync clean. Small-batch, Project-Owner-directed spot-fix session
+    (reactive, not a planned relay/rule-building session): (1) garlic --
+    deleted 2 wrong already-superseded Garlic candidates, no live bug;
+    (2) kitten -- fixed a pre-existing corrections.json typo (mengo->
+    menggo) caught by the gate re-run, unrelated to garlic, confirmed via
+    git-stash not a regression I introduced; (3) ginger/tomato/brinjal/
+    pumpkin -- LIVE BUG, an uncited variant/VERIFIED/HIGH import was
+    outranking the Project-Owner-confirmed correct native word at
+    runtime for all 4; deleted the 4 wrong rows, promoted the 4 correct
+    rows superseded->verified_high citing PO confirmation; (4) pomelo/
+    coconut -- checked, already correct and live, no action; (5) three
+    fish/two fish -- checked, already correct and live, then 2 old
+    already-superseded duplicate rows explicitly flagged by PO for
+    deletion (two fish=do·o mang·gni wrong-root legacy defect, three
+    fish=na·tok mang·gni arithmetic mismatch) -- both deleted from
+    master_dictionary.json AND garo_dictionary.json (live pipeline
+    source, not just the orphaned final_entries.json mirror). Gate green
+    throughout (8252/8252, 9/9, 0 new repository-intelligence violations,
+    379/379 unit tests), live translate() spot-checked after every fix.
+    One push collision (unrelated concurrent calf-entry-removal commit,
+    no file overlap), rebased clean per protocol. No engine code touched;
+    Runtime Handoff: none new, bi·sa gap from Batch A carried forward
+    unchanged, still open in claude_b.pending_handoff_from_claude_a_20260909
+    below.'
+  next_action_prior_20260909A: '2026-09-09 (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260909.md for full detail, this is
     a pointer only). Resumed from 20260908C; resync clean (HEAD ==
     origin/main == 226b41b on arrival), gate reconfirmed green (8251/8251,
