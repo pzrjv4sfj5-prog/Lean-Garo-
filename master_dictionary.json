@@ -725,7 +725,7 @@
     "english": "walk",
     "garo": "Re·a",
     "category": "travel",
-    "notes": "variant/VERIFIED/HIGH — RE-PROMOTED 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip), overriding the 2026-08-01 corpus-internal-audit SUPERSEDED tag below. Thangseng's own words this session: \"Re.a = to walk\" — direct native confirmation, not corpus-internal reasoning. Tagged as a co-existing variant (not the primary) deliberately: this evidence confirms re·a is a genuine, correct word for \"walk\", but does not address its relationship to the already-VERIFIED 're·am·a' (same key) — whether they're free variants, root-vs-durative forms, or something else is unconfirmed, so the current shipped primary (re·am·a) is left undisturbed rather than silently flipped on an unrelated relay answer. If the Owner wants re·a promoted to primary instead, that is a separate explicit decision. ORIGINAL 2026-08-01 SUPERSEDED note (kept for the audit trail, no longer the current status): \"corpus-internal audit (Claude A): legacy unannotated import, same english key 'walk' has VERIFIED/HIGH form(s) ['re·am·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.\" See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.",
+    "notes": "VERIFIED/HIGH, PROMOTED TO PRIMARY 2026-09-09 (Claude A) — Project Owner directive explicitly promoted 're·a' to primary for the bare 'walk' key (the separate explicit decision this entry's prior note said it was waiting for), provenance-labeled per .ai/PROJECT_OWNER_AUTHORITY.md. Fixed the actual runtime-shipping layer: src/data/phrase_maps.js['walk'] changed from 're·am·a' to 'Re·a'. Deliberately did NOT retag or otherwise touch the sibling 'Walk'->'re·am·a' row (still verified_high, untagged/neutral) — the re·a/re·am·a relationship (free variant vs. root-vs-durative) remains unconfirmed; that row is left exactly as-is per the same non-single-winner caution used elsewhere (e.g. the pumpkin/ginger/tomato precedent). NOTE: this promotion resolves the phrase_maps.js layer only — compiled_dict.json's own pickPrimary tie-break for the bare 'walk' key is untouched and would still resolve to 're·am·a' if phrase_maps.js's override were ever removed, since re·am·a remains the sole non-variant-tagged candidate there. Flagged as a Runtime Handoff for Claude B, not resolved in this data-layer fix. ORIGINAL 2026-08-30 note (kept for the audit trail, no longer the current status): \"variant/VERIFIED/HIGH — RE-PROMOTED 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip), overriding the 2026-08-01 corpus-internal-audit SUPERSEDED tag below. Thangseng's own words this session: \"Re.a = to walk\" — direct native confirmation, not corpus-internal reasoning. Tagged as a co-existing variant (not the primary) deliberately: this evidence confirms re·a is a genuine, correct word for \"walk\", but does not address its relationship to the already-VERIFIED 're·am·a' (same key) — whether they're free variants, root-vs-durative forms, or something else is unconfirmed, so the current shipped primary (re·am·a) is left undisturbed rather than silently flipped on an unrelated relay answer. If the Owner wants re·a promoted to primary instead, that is a separate explicit decision. ORIGINAL 2026-08-01 SUPERSEDED note (kept for the audit trail, no longer the current status): \"corpus-internal audit (Claude A): legacy unannotated import, same english key 'walk' has VERIFIED/HIGH form(s) ['re·am·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.\" See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.\"",
     "confidence": "verified_high"
   },
   {
@@ -758,8 +758,8 @@
     "english": "give",
     "garo": "On·a",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'give' has VERIFIED/HIGH form(s) ['ron·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Project Owner directive, 2026-09-09 (provenance-labeled per .ai/PROJECT_OWNER_AUTHORITY.md — this is Owner authority, NOT a native/Thangseng citation; neither 'On·a' nor 'ron·a' had any native evidence behind it before this directive). Promoted from SUPERSEDED. See sibling 'Give'->'ron·a' row, now superseded citing this same directive.",
+    "confidence": "verified_high"
   },
   {
     "english": "take",
@@ -22277,8 +22277,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED 2026-09-09 — Project Owner directive named 'On·a' as the correct value for 'give' (provenance-labeled per .ai/PROJECT_OWNER_AUTHORITY.md; this row itself never had any native or other citation, was a bare 'variant/VERIFIED/HIGH' tag). Retained per citation discipline, not deleted. See 'give'->'On·a', now verified_high citing the same directive.",
+    "confidence": "superseded"
   },
   {
     "english": "Glass",
