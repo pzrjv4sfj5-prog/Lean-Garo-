@@ -79,13 +79,13 @@ function normalizeFile(filePath) {
       superseded[k].add(v);
     };
 
-    const addValue = function(key, value, isVariant = false, isVerified = false, isVariantVerified = false, isWeak = false) {
+    const addValue = function(key, value, isVariant = false, isVerified = false, isVariantVerified = false, isWeak = false, pos = null) {
       const k = key.trim().toLowerCase();
       const v = String(value).trim();
       const rawKey = key.trim();
       if (!k || !v) return;
       if (!normalized[k]) normalized[k] = [];
-      if (!normalized[k].some(entry => entry.v === v)) normalized[k].push({ v, isVariant, isVerified, isVariantVerified, isWeak, rawKey });
+      if (!normalized[k].some(entry => entry.v === v)) normalized[k].push({ v, isVariant, isVerified, isVariantVerified, isWeak, rawKey, pos });
     }
 
     if (Array.isArray(parsed)) {
@@ -202,7 +202,16 @@ function normalizeFile(filePath) {
           if (eng) addSuperseded(eng, garo);
           return;
         }
-        if (eng) addValue(eng, garo, isVariant, isVerified, isVariantVerified, isWeak);
+        // POS field (2026-09-09, Claude B, per this session's demand/hope
+        // POS-split investigation — docs/CLAUDE_B_SESSION_MIGRATION_
+        // 20260909.md §6): item.pos already exists on rows explicitly
+        // citing a noun/verb split (e.g. NV-077 'answer', NV-082 'hope'),
+        // but was never threaded through to pickPrimary, so the signal
+        // was silently discarded. Reads an ALREADY-STATED pos tag only —
+        // never infers or assigns one — same restraint as the
+        // isSuperseded/isVariant parsing immediately above.
+        const pos = typeof item.pos === 'string' ? item.pos.trim() || null : null;
+        if (eng) addValue(eng, garo, isVariant, isVerified, isVariantVerified, isWeak, pos);
       });
     } else if (typeof parsed === 'object' && parsed !== null) {
       Object.entries(parsed).forEach(([key, value]) => {
@@ -386,16 +395,53 @@ function pickPrimary(entries, key, infinitiveVerbForm) {
     // existing last-write-wins tie-break (still logged/reported exactly
     // as before) — no new sense judgment invented, no other tie shape
     // affected.
-    if (infinitiveVerbForm) {
-      const matchesInfinitive = verifiedNeutral.filter(e => e.v === infinitiveVerbForm);
-      if (matchesInfinitive.length === 1) {
-        return { value: matchesInfinitive[0].v, verifiedSelection: true };
+    // Computed up-front so every return path in this tie branch (infinitive
+    // match, pos-tag match, or the last-write-wins fallback) can attach it —
+    // see the fuller comment further down where posSenses is consumed.
+    let posSenses = null;
+    {
+      const posValues = verifiedNeutral.map(e => e.pos);
+      if (verifiedNeutral.length === 2 && posValues.every(p => p === 'v.' || p === 'n.') && new Set(posValues).size === 2) {
+        posSenses = {};
+        verifiedNeutral.forEach(e => { posSenses[e.pos] = e.v; });
       }
+    }
+    if (infinitiveVerbForm) {
+      // CASE-INSENSITIVE FIX (2026-09-09, Claude B — docs/CLAUDE_B_SESSION_
+      // MIGRATION_20260909.md §6, 'demand'): this comparison was strict
+      // (`===`), so a verified "to demand" citation stored as lowercase
+      // 'dabia' silently failed to match the bare-key neutral candidate
+      // 'Dabia' over one capital letter, defeating this branch entirely
+      // for that key and falling through to last-write-wins (wrong,
+      // shipped the noun 'Dabiani'). Comparing case-insensitively doesn't
+      // change which VALUE ships (matchesInfinitive[0].v below still
+      // returns the candidate's own original casing) — it only fixes
+      // which candidate the signal is allowed to recognize as a match.
+      const matchesInfinitive = verifiedNeutral.filter(e => e.v.toLowerCase() === infinitiveVerbForm.toLowerCase());
+      if (matchesInfinitive.length === 1) {
+        return { value: matchesInfinitive[0].v, verifiedSelection: true, posSenses };
+      }
+    }
+    // POS-TAG FIX (2026-09-09, Claude B — same investigation, 'hope'):
+    // some keys (NV-082 'hope') carry an explicit, natively-cited `pos`
+    // tag directly on the bare-key candidate rows themselves ('v.' / 'n.')
+    // instead of via a separate "to X" infinitive sibling key, so the
+    // check above has no signal to work with for them at all. Same
+    // restraint as every branch in this function: only fires when exactly
+    // one tied candidate is explicitly tagged pos 'v.' (an ALREADY-STATED
+    // signal, never inferred) — the verb/citation form is the established
+    // convention for what a bare key resolves to elsewhere in this file
+    // (the "to X" -> "X" alias generator, the branch just above). Any
+    // other shape (no pos tags, more than one 'v.', a 'v.' tag but no
+    // tie) falls through unchanged to last-write-wins, exactly as before.
+    const verbTagged = verifiedNeutral.filter(e => e.pos === 'v.');
+    if (verbTagged.length === 1) {
+      return { value: verbTagged[0].v, verifiedSelection: true, posSenses };
     }
     const chosen = verifiedNeutral[verifiedNeutral.length - 1].v;
     console.log(`pickPrimary: '${key}' has ${verifiedNeutral.length} tied VERIFIED/HIGH non-variant candidates (${verifiedNeutral.map(e => e.v).join(', ')}) — excluding lower-confidence candidates, falling back to last-write-wins among the verified candidates only. Needs Claude A disambiguation — not resolved here.`);
     pickPrimaryVerifiedTies.push({ key, candidates: verifiedNeutral.map(e => e.v), chosen });
-    return { value: chosen, verifiedSelection: false };
+    return { value: chosen, verifiedSelection: false, posSenses };
   }
 
   // NEW (2026-08-15, Claude B — Claude A's 9-key handoff in
@@ -514,6 +560,7 @@ function pickPrimary(entries, key, infinitiveVerbForm) {
 // grammarOverrides-skip site below.
 function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}) {
   const finalized = {};
+  const finalizedPosSenses = {};
   const alternates = {};
   const verifiedKeys = new Set();
   // Keys where every surviving candidate turned out to be a SUPERSEDED
@@ -547,7 +594,7 @@ function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}
   Object.keys(mergedValues).forEach(key => {
     const supersededValues = supersededByKey[key];
     const cleanedEntries = mergedValues[key]
-      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, isVerified: e.isVerified, isVariantVerified: e.isVariantVerified, isWeak: e.isWeak, rawKey: e.rawKey, source: e.source }))
+      .map(e => ({ v: cleanRakka(e.v), isVariant: e.isVariant, isVerified: e.isVerified, isVariantVerified: e.isVariantVerified, isWeak: e.isWeak, rawKey: e.rawKey, source: e.source, pos: e.pos || null }))
       .filter(e => Boolean(e.v))
       // 2026-08-14, Claude B (per Claude C's audit §3 / the "twenty
       // students" case): a candidate whose value is byte-identical to a
@@ -587,8 +634,9 @@ function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}
       }
       return;
     }
-    const { value: primary, verifiedSelection } = pickPrimary(cleanedEntries, key, infinitiveVerbForms[key]);
+    const { value: primary, verifiedSelection, posSenses } = pickPrimary(cleanedEntries, key, infinitiveVerbForms[key]);
     finalized[key] = primary;
+    if (posSenses) finalizedPosSenses[key] = posSenses;
     if (verifiedSelection) verifiedKeys.add(key);
     if (cleanedEntries.length > 1) {
       // FIX (2026-08-30, Claude B, this session's SUPERSEDED-eligibility
@@ -644,7 +692,7 @@ function finalizeDictionary(mergedValues, grammarOverrides, supersededByKey = {}
     delete alternates[key];
   });
 
-  return { finalized, alternates, heldSupersededOnly };
+  return { finalized, alternates, heldSupersededOnly, finalizedPosSenses };
 }
 
 function main() {
@@ -780,7 +828,7 @@ function main() {
     'cooked': 'Song·aha'
   };
 
-  const { finalized, alternates, heldSupersededOnly } = finalizeDictionary(mergedValues, grammarOverrides, supersededByKey);
+  const { finalized, alternates, heldSupersededOnly, finalizedPosSenses } = finalizeDictionary(mergedValues, grammarOverrides, supersededByKey);
 
   // RULE-040: bare "right" is a genuine 3-way homonymy split (direction /
   // matching / correct), not a single headword with a best default — every
@@ -850,9 +898,29 @@ function main() {
   const srcDir = path.join(__dirname, 'src');
   if (!fs.existsSync(srcDir)) fs.mkdirSync(srcDir);
 
+  // SENSE-SPLIT SHIPPING (2026-09-09, Claude B — see pickPrimary's
+  // posSenses comment for the full rationale). Keys where finalizedPosSenses
+  // has an entry ship an object {garo, pos, senses} instead of a plain
+  // string — lookupEngine.js's normalizeEntry() already accepts either
+  // shape generically (it predates this change), so every OTHER key's
+  // output is byte-identical to before. The plain-string `finalized[key]`
+  // value is preserved unchanged as `garo` (the default/bare-key sense,
+  // same value that would have shipped without this block) so any caller
+  // not yet passing an expectedPos still gets exactly today's behavior.
+  const compiledDictOutput = {};
+  Object.keys(finalized).forEach(key => {
+    const senses = finalizedPosSenses[key];
+    if (senses) {
+      const defaultPos = Object.keys(senses).find(p => senses[p] === finalized[key]) || null;
+      compiledDictOutput[key] = { garo: finalized[key], pos: defaultPos, senses };
+    } else {
+      compiledDictOutput[key] = finalized[key];
+    }
+  });
+
   fs.writeFileSync(
     path.join(srcDir, 'compiled_dict.json'),
-    JSON.stringify(finalized),
+    JSON.stringify(compiledDictOutput),
     'utf8'
   );
 

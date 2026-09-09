@@ -361,7 +361,20 @@ export async function translate(input) {
     : words.filter(w => !STOP_WORDS.has(w));
   const stripped = stripWords.join(' ');
   if (stripped && stripped !== lower) {
-    let sm = lookupGaro(stripped);
+    // SENSE-SPLIT FIX (2026-09-09, Claude B — docs/CLAUDE_B_SESSION_
+    // MIGRATION_20260909.md §6): confirmed live regression — "this is a
+    // demand"/"this is an answer" reduce to a single bare word here after
+    // stripping the copula+article, and without a hint this step just
+    // took whichever sense compiled_dict.json's flat default happened to
+    // be (now the verb, since the fix above prefers it for the bare key).
+    // An article ('a'/'an'/'the') present in the ORIGINAL sentence, with
+    // exactly one content word surviving the strip, is an unambiguous
+    // noun-phrase-head signal already present in the input — not a new
+    // inference. Scoped narrowly (single surviving word only) so it can't
+    // misfire on multi-word residuals of other constructions.
+    const hadArticle = words.some(w => w === 'a' || w === 'an' || w === 'the');
+    const nounHint = (hadArticle && !stripped.includes(' ')) ? 'n.' : null;
+    let sm = lookupGaro(stripped, nounHint);
     if (sm) {
       if (isNegativeShortcut && /a$/i.test(sm)) {
         sm = applyNegation(sm);

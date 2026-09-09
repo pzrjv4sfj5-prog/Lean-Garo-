@@ -46,6 +46,22 @@ export function normalizeEntry(val) {
   return val;
 }
 
+// SENSE-SPLIT LOOKUP (2026-09-09, Claude B — docs/CLAUDE_B_SESSION_
+// MIGRATION_20260909.md §6). prepare-data.js now ships an object with a
+// `senses` map ({ "v.": "...", "n.": "..." }) for the small number of keys
+// where a bare English word genuinely has two independently-verified,
+// distinct-POS Garo forms (currently: answer, demand, hope). This resolves
+// to a specific sense ONLY when the caller explicitly asks for one via
+// expectedPos AND that sense exists — every other call site, and every
+// other key (the other ~8,000+ entries are unaffected, still plain
+// strings), keeps exactly its current default behavior. Never guesses; a
+// caller that doesn't pass expectedPos gets entry.garo, same as before
+// this change existed.
+function resolveSense(entry, expectedPos) {
+  if (expectedPos && entry.senses && entry.senses[expectedPos]) return entry.senses[expectedPos];
+  return entry.garo;
+}
+
 export const EN_INDEX = {};
 for (const [key, val] of Object.entries(compiledDictRaw)) {
   EN_INDEX[key.toLowerCase().trim()] = val;
@@ -76,7 +92,7 @@ export function lookup(key) {
   return entry ? normalizeEntry(entry) : null;
 }
 
-export function lookupGaro(key) {
+export function lookupGaro(key, expectedPos = null) {
   // Check corrections.json first — single-word keys were previously
   // bypassed here since EN_INDEX is built only from compiled_dict.json.
   // This meant confirmed corrections only took effect in the top-level
@@ -102,7 +118,7 @@ export function lookupGaro(key) {
   const phraseMapValue = lookupPhrase(k);
   if (phraseMapValue) return phraseMapValue;
   const e = lookup(k);
-  if (e) return e.garo;
+  if (e) return resolveSense(e, expectedPos);
   // NV-118 (2026-09-03, Claude B): momo/chow/maggie/paneer/panner/roll
   // (confirmed no Garo equivalent, see confirmed_loanwords.json) were
   // resolving to a hard '[UNKNOWN]' at every one of the dozen-plus call

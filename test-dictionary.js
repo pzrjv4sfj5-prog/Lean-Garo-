@@ -42,8 +42,19 @@ try {
   const errors = [];
 
   // Validate each entry
-  Object.entries(compiled).forEach(([key, value]) => {
+  Object.entries(compiled).forEach(([key, rawValue]) => {
     totalEntries++;
+
+    // SENSE-SPLIT FIX (2026-09-09, Claude B — docs/CLAUDE_B_SESSION_
+    // MIGRATION_20260909.md §6): prepare-data.js now ships {garo, pos,
+    // senses} objects for the small set of POS-split keys (answer/demand/
+    // hope), same shape lookupEngine.js's normalizeEntry() already
+    // handles generically at runtime. This script predates that and
+    // assumed every value is a plain string. Validating/comparing against
+    // `.garo` (the same default value a plain string would have been)
+    // keeps this check meaningful for those keys instead of crashing on
+    // them — no behavior change for the ~8,000+ plain-string entries.
+    const value = (rawValue && typeof rawValue === 'object') ? rawValue.garo : rawValue;
 
     const validation = validateEntry(key, value);
     if (!validation.valid) {

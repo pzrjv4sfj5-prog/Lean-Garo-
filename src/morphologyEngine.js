@@ -129,7 +129,15 @@ export function findVerbForm(w) {
   const k = w.toLowerCase().trim();
   if (corrections[k]) return corrections[k];
   if (IRREGULAR_VERBS[w]) return IRREGULAR_VERBS[w];
-  if (lookupGaro(w)) return lookupGaro(w);
+  // SENSE-SPLIT FIX (2026-09-09, Claude B — docs/CLAUDE_B_SESSION_
+  // MIGRATION_20260909.md §6): findVerbForm's entire job is resolving a
+  // VERB form, so every lookupGaro() call in this function requests the
+  // 'v.' sense explicitly now. For the ~8,000+ keys with no senses map
+  // this is a no-op (lookupGaro falls back to the plain garo value exactly
+  // as before) — only affects the small set of POS-split keys (currently
+  // answer/demand/hope) where it fixes e.g. "I demand"/"I hope" resolving
+  // to the noun instead of the verb.
+  if (lookupGaro(w, 'v.')) return lookupGaro(w, 'v.');
   const stripped = w.replace(/ing$|ed$|es$|s$/, '');
   if (stripped !== w) {
     // RUNTIME-AUDIT fix (2026-08-04, Claude B): IRREGULAR_VERBS[stripped]
@@ -168,13 +176,13 @@ export function findVerbForm(w) {
     // to sov-assembly/morphology per the normal cascade) - no new Garo
     // vocabulary invented for "use/using", which is still genuinely
     // absent from the dictionary in its -ing form.
-    if (lookupGaro(stripped) && !(stripped in PRONOUN_MAP)) return lookupGaro(stripped);
+    if (lookupGaro(stripped, 'v.') && !(stripped in PRONOUN_MAP)) return lookupGaro(stripped, 'v.');
     // English y->ied spelling change: 'studied' strips to 'studi', not
     // 'study' (found 2026-07-05) - try restoring the 'y'.
     if (/i$/.test(stripped)) {
       const yForm = stripped.slice(0, -1) + 'y';
       if (IRREGULAR_VERBS[yForm]) return IRREGULAR_VERBS[yForm];
-      if (lookupGaro(yForm)) return lookupGaro(yForm);
+      if (lookupGaro(yForm, 'v.')) return lookupGaro(yForm, 'v.');
     }
     // Silent-e "+s" fallback (found 2026-07-22, page-113-115 vocab
     // testing): "tickles" strips to "tickl" via the es$ branch above,
@@ -191,7 +199,11 @@ export function findVerbForm(w) {
     if (/es$/.test(w) && !/e$/.test(stripped)) {
       const eForm = stripped + 'e';
       if (IRREGULAR_VERBS[eForm]) return IRREGULAR_VERBS[eForm];
-      if (lookupGaro(eForm)) return lookupGaro(eForm);
+      // This is the "hopes"/"likes"/"closes" path (see comment above) —
+      // 'hope' is exactly one of the sense-split keys, so this needs the
+      // 'v.' hint too: "she hopes" was silently at risk of resolving to
+      // the noun the moment 'hope' gained a senses map.
+      if (lookupGaro(eForm, 'v.')) return lookupGaro(eForm, 'v.');
     }
   }
   return null;

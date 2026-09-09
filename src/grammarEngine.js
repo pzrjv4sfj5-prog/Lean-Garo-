@@ -220,7 +220,11 @@ export function analyzeGrammar(input) {
   if (!PRONOUN_MAP[firstWord] && /^(a|an|the)$/.test(firstWord) && words.length > 1) {
     const nounWord = words[1].toLowerCase().replace(/[^a-z]/g,'');
     if (!STOP_WORDS.has(nounWord) && !POSSESSIVES[nounWord]) {
-      const g = lookupGaro(nounWord);
+      // SENSE-SPLIT FIX (2026-09-09, Claude B — docs/CLAUDE_B_SESSION_
+      // MIGRATION_20260909.md §6): this is the subject noun of an "a/an/the
+      // X is ..." construction ("the demand is high") — unambiguously a
+      // noun role. No-op for the ~8,000+ keys with no senses map.
+      const g = lookupGaro(nounWord, 'n.');
       const nextTok = words[2] ? words[2].toLowerCase().replace(/[^a-z]/g,'') : null;
       // Note: deliberately NOT using findVerbForm(nextTok) here, even
       // though it looks like a natural "is this a verb" check - it isn't
