@@ -1,0 +1,42 @@
+{
+  "schema_version":"2026-09-09.1",
+  "title":"Claude A — 2026-09-09 Thangseng Evidence Closure",
+  "status":"MANDATORY",
+  "workflow":"REVIEW_SUSPEND_CONFIRM_DELETE",
+  "scope":"Process only the supplied 2026-09-09 evidence. Keep this session short and focused.",
+  "authority":"Direct Project Owner instructions are authoritative; follow .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json.",
+  "critical_correction":"The sentence is `Anga bi·na skenga` (not sikenga).",
+  "closures":{
+    "ska":"want / desire",
+    "skenga":"wanting; derived from ska",
+    "sika":"push / blow",
+    "sikenga":"pushing / blowing; derived from sika",
+    "distinction":"CLOSED: skenga and sikenga are distinct, not variants.",
+    "example":"Anga bi·na skenga"
+  },
+  "evidence":[
+    {"key":"bamboo shoot","native":"Me·a = bamboo shoot; me.a or mi.a","proposed":"Me·a","action":"Audit active forms; propose suspension of competing forms only. Do not delete yet."},
+    {"key":"listen","native":"Listen = Knabo/knatimbo","proposed":["Knabo","knatimbo"],"action":"Retain both as native-supported unless repo evidence establishes otherwise; propose suspension only for unsupported competitors."},
+    {"key":"what did he eat?","native":"Bia maiko cha·a?","proposed":"Bia maiko cha·a?","action":"Record evidence; do not invent extra tense rules."},
+    {"key":"sit","native":"Asonga = to sit; no raka/dot","proposed":"Asonga","action":"Audit active forms and propose suspension of competing forms only."}
+  ],
+  "pray":{"sentence":"Anga bi·na skenga","note":"Process the corrected sentence as supplied. Do not replace skenga with sikenga. Do not invent additional analysis."},
+  "repo_check":["master_dictionary.json","garo_dictionary.json","corrections.json","phrase_maps.js","compiled/runtime data","relevant audit/migration files"],
+  "rules":[
+    "Search affected English keys and every competing Garo representation.",
+    "Check cross-key uses before proposing suspension; never globally delete a valid Garo form.",
+    "Do not reopen the closed skenga/sikenga distinction.",
+    "Do not pursue unrelated unresolved questions.",
+    "Review stage only: NO DELETION and NO JSON for lexical cleanup.",
+    "Show the Project Owner a consolidated SUSPENSION CANDIDATE LIST; wait for confirmation before deletion/active-data cleanup."
+  ],
+  "required_output":[
+    "SKA/SKENGA/SIKENGA — CLOSED, with corrected example `Anga bi·na skenga`.",
+    "Bamboo shoot audit + suspension candidates.",
+    "Listen audit + native-supported forms.",
+    "What did he eat? evidence.",
+    "Sit audit + suspension candidates.",
+    "Consolidated suspension table: English key | current active form | retained form | suspend candidate | evidence.",
+    "End exactly: REVIEW COMPLETE — CONFIRMED DATA PROCESSED. NO FORMS DELETED. NO LEXICAL JSON CREATED. WAITING FOR PROJECT OWNER CONFIRMATION."
+  ]
+}
