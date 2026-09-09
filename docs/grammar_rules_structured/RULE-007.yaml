@@ -23,6 +23,8 @@ examples:
   - 'Hai ring·na="let''s sing" (2026-07-14, raka confirmed, matches ring·="sing")'
   - 'Hai chrokna="let''s dance" (2026-07-14, regular -na on Chroka)'
   - 'Hai jrona="let''s swim" (2026-07-14, root jroa, corroborated independently by a printed-dictionary source the same day)'
+  - 'Hai bajalchi re·na="let''s go to market" (non-immediate/general urge) vs. Hai re·naha="let''s go (now)" (immediate urge) — same -na infinitive vs. -naha contrast, NV-154'
+  - 'Song·bo="cook!" (imperative) — -bo suffix on a different verb root, NV-154'
 counterexamples:
   note: "none recorded"
   items: []
@@ -40,6 +42,33 @@ native_notes: >-
   ring·na, hai (chio) jrona" — the parenthetical subjects don't all
   match known pronouns (an·ching="we" does; git/chio don't), flagged
   in NV-013 rather than assumed.
-last_updated: "2026-07-25"
+last_updated: "2026-09-09"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-007"
+corrections:
+  - date: "2026-09-09"
+    note: >-
+      EXTENDED, not corrected (NV-154, direct Thangseng quote via
+      Tridip, relayed via Project Owner): Thangseng volunteered a
+      three-way suffix-immediacy distinction not previously written up
+      as a rule, though already latent in existing data ("let's go to
+      market"=Hai bajalchi re·na vs. "Let's go."=Hai re·naha, both
+      already VERIFIED/HIGH). Direct quote: "Both the suffixes are
+      used in hortative sentences... The 'na' is used generally to
+      urge... 'Let us go = hai re.na'... 'the naha suffix is the urge
+      to do something right away'... 'Hai re.naha. = Let us go (now)'."
+      So: -na = general/non-immediate urge, -naha = immediate/right-now
+      urge — a real semantic split, not free variation, layered on top
+      of this rule's existing -na (standard) vs. -bo (casual register)
+      contrast. Separately, Thangseng gave a general raka-placement
+      principle while illustrating this with the cook paradigm: "The
+      rules of suffixes apply. The raka is in the stem, not the suffix
+      itself. Cook = song.a... song. + bo = song.bo = cook (imperative)."
+      This confirms -bo (and by the same logic -na/-naha) never
+      introduces its own raka — matches the existing RULE-023 -gen
+      pattern (suffix carries no raka) and the project's general raka-
+      normalization convention; not a new rule, just corroborating
+      evidence for -bo specifically. Full cook-paradigm data (Song·bo,
+      Song·ahama?, Song·engama?, Song·ama?) added to
+      master_dictionary.json this session. See
+      docs/THANGSENG_NATIVE_VALIDATION.md NV-154.

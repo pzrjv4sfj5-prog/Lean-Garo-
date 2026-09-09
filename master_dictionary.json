@@ -46261,8 +46261,17 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED 2026-09-09 (Claude A, NV-154) — root-confusion error, exactly the collision Thangseng's transcript distinguishes: 'song·a' is the 'cook' root, not 'erect/set up'. Correct value is 'Songna' (the same word already VERIFIED/HIGH for 'plant', idx 9872/NV-095) per Thangseng's direct example: \"Krongna songna = to erect a wooden post. Krong = wooden post.\" See 'set up post'->'Songna', now verified_high citing NV-154. Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "set up post",
+    "garo": "Songna",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-154 (2026-09-09, direct Thangseng quote via Tridip, relayed via Project Owner): \"Songna is also a word but it has a different meaning. It can mean to plant something or to erect something. Example: Krongna songna = to erect a wooden post. Krong = wooden post.\" Same word as the already-VERIFIED 'plant'=Songna (idx 9872, NV-095) — this is its second, 'erect' sense, not a separate word. 'krong'=post/wooden post is already an independent VERIFIED/HIGH row. Corrects the prior 'song·a' (cook-root) confusion at this key, now superseded.",
+    "confidence": "verified_high"
   },
   {
     "english": "set, of",
@@ -71314,6 +71323,34 @@
     "confidence": "verified_high"
   },
   {
+    "english": "cook (command)",
+    "garo": "Song·bo",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — NV-154 (2026-09-09, direct Thangseng quote via Tridip, relayed via Project Owner): \"Cook = song.a... song. + bo = song.bo = cook (imperative)\". Completes the song- (cook) paradigm alongside the existing Song·a/Song·enga/Song·gen/Song·aha rows; same imperative -bo pattern as 'sit (command)'=Asongbo (NV-091). Named 'cook (command)' rather than 'cook (imperative)' to avoid a Check-F cross-table key collision with the pre-existing corrections.json full-sentence key 'cook (imperative)'->'Song·bo' (same value, different pipeline layer — same avoidance pattern used by the sibling 'cook (future)' row).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "cook (past interrogative)",
+    "garo": "Song·ahama?",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — NV-154 (2026-09-09, direct Thangseng quote via Tridip, relayed via Project Owner): \"The interrogative has 'ma' added to the suffixes... Song·ahama? = Have you cooked?\" Completes the song- (cook) paradigm's interrogative set. Named by grammatical form rather than the pre-existing corrections.json natural-phrasing key 'have you cooked'->'Na·a Song·ahama?' (same value, different pipeline layer, different subject-inclusion) to avoid a Check-F cross-table collision.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "cook (continuous interrogative)",
+    "garo": "Song·engama?",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — NV-154 (2026-09-09, direct Thangseng quote via Tridip, relayed via Project Owner): \"Song·engama? = Are you cooking?\" Completes the song- (cook) paradigm's interrogative set. Named by grammatical form rather than the pre-existing corrections.json natural-phrasing key 'are you cooking'->'Na·a Song·engama?' (same value, different pipeline layer, different subject-inclusion) to avoid a Check-F cross-table collision.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "cook (simple interrogative)",
+    "garo": "Song·ama?",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — NV-154 (2026-09-09, direct Thangseng quote via Tridip, relayed via Project Owner): \"Song•ama? = Did/do you cook?\" (bullet character in the raw transcript normalized to the standard raka dot; no live substitution issue — the raw bullet form never appears in any garo/english field). Completes the song- (cook) paradigm's interrogative set. Named by grammatical form rather than the pre-existing corrections.json natural-phrasing key 'did you cook'->'Na·a Song·ama?' (same value, different pipeline layer, different subject-inclusion) to avoid a Check-F cross-table collision.",
+    "confidence": "verified_high"
+  },
+  {
     "english": "cook (future)",
     "garo": "Song·gen",
     "pos": "v.",
@@ -77301,7 +77338,14 @@
     "english": "plant",
     "garo": "Songna",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\"). UPDATE 2026-09-09 (NV-154, direct Thangseng quote via Tridip): 'Songna' is polysemous, also meaning 'to erect something' (distinct from the homophonous 'song·a'=cook root — Thangseng's transcript explicitly distinguishes these). \"Songna is also a word but it has a different meaning. It can mean to plant something or to erect something. Example: Krongna songna = to erect a wooden post.\" See 'to erect a wooden post'->'Krongna songna' (new row, NV-154) and 'set up post'->'Songna' (corrected from the wrong song·a/cook-root value, NV-154).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to erect a wooden post",
+    "garo": "Krongna songna",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — NV-154 (2026-09-09, direct Thangseng quote via Tridip, relayed via Project Owner): \"Krongna songna = to erect a wooden post. Krong = wooden post.\" Compound example illustrating the 'erect' sense of 'Songna' (also = 'plant', idx 9872) combined with the already-VERIFIED 'post'=krong (idx 5680).",
     "confidence": "verified_high"
   },
   {

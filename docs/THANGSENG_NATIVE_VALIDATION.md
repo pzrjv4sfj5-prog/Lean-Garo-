@@ -7085,3 +7085,49 @@ now resolve correctly via exact-phrase match.
 exception) and item 3 (`ska` vs `skenga` aspect distribution) — see
 docs/THANGSENG_RELAY_QUESTION_20260909.md, both still awaiting a
 direct answer.
+
+## NV-154 (2026-09-09, direct Thangseng quote via Tridip, WhatsApp
+## 12:27-12:29am 3/7/2026; relayed via Project Owner, analysis
+## originally drafted by Claude D)
+
+**1. Cook paradigm completed.** Existing `Song·a`/`Song·enga`/
+`Song·gen`/`Song·aha` (root/continuous/future/past) were missing the
+imperative and all three interrogatives. Thangseng gave all four
+directly: "song. + bo = song.bo = cook (imperative)... Song·ahama? =
+Have you cooked? Song·engama? = Are you cooking? Song•ama? = Did/do
+you cook?" Added as new verified_high rows: `cook (command)`→
+`Song·bo`, `cook (past interrogative)`→`Song·ahama?`,
+`cook (continuous interrogative)`→`Song·engama?`,
+`cook (simple interrogative)`→`Song·ama?`. Named by grammatical form
+(matching the existing `cook (future)` precedent) rather than the
+pre-existing corrections.json natural-phrasing keys, which already
+independently shipped the same correct values via a different
+pipeline layer — no runtime change, this closes a data/citation gap,
+not a live bug.
+
+**2/3. `Songna` root-collision fixed.** Thangseng's own example
+distinguishes two homophonous roots: "Songna is also a word but it
+has a different meaning. It can mean to plant something or to erect
+something. Example: Krongna songna = to erect a wooden post. Krong =
+wooden post." `set up post`→`song·a` (unverified) was the wrong root
+(cook, not erect) — superseded, replaced with `set up post`→`Songna`
+(verified_high). Extended the `plant`→`Songna` row's citation to
+note its second "erect" sense. Added new row
+`to erect a wooden post`→`Krongna songna`.
+
+**4. `-na` vs `-naha` hortative-immediacy distinction documented.**
+Not a data fix (existing rows — "let's go to market"=Hai bajalchi
+re·na, "Let's go."=Hai re·naha — already correctly reflected this,
+both verified_high) but a missing grammar-rule writeup. Thangseng:
+"The 'na' is used generally to urge... 'the naha suffix is the urge
+to do something right away'." Extended `docs/grammar_rules_structured/
+RULE-007.yaml` (Hai Construction/Hortative — already owned this
+topic) rather than creating a duplicate rule. Also noted, corroborating
+not new: "the raka is in the stem, not the suffix itself" (matches
+RULE-023's existing -gen-carries-no-raka pattern, extended to -bo).
+
+**5. Raka/bullet-character check — no live issue.** The "•" bullet
+Thangseng used in the raw transcript never appears in any
+`garo`/`english` field in the repo; only inside citation notes that
+already correctly document the normalization convention. Nothing to
+fix, confirmed by direct search.
