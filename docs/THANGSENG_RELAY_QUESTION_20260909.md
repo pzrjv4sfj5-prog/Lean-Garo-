@@ -1,4 +1,9 @@
 # Thangseng Relay Question — 2026-09-09
+
+**STATUS (2026-09-09, Claude A): Items 2 and 4 CLOSED — see NV-153 in
+docs/THANGSENG_NATIVE_VALIDATION.md. Items 1 and 3 remain OPEN, still
+need a direct answer — do not resend items 2/4, only 1 and 3 below are
+still live questions.**
 Author: Claude A. Source of new evidence: AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json (`ska_skenga` block). Per evidence-first methodology, none of the below is resolved unilaterally — corpus-internal contradictions only, flagged for direct Thangseng clarification.
 
 ## 1. `sikenga` reintroduction contradicts the 2026-08-26 supersession
@@ -7,7 +12,7 @@ Session 2026-08-26 superseded 8 `...sikenga` phrase rows (master_dictionary.json
 alongside otherwise-`skenga` sentences (`Anga re·bana skenga`, `Anga ringna skenga`, `Anga re·angna skenga`, `Anga tusina skenga`, `Anga poraina skenga`, `Anga kam ka·na skenga`).//
 **Question:** Is `Anga bi·na sikenga` correct as given (i.e. does `bi·na` specifically take `sikenga`, not `skenga`), or is this a transcription slip that should read `skenga`? Please also confirm what `bi·na` means in this sentence (e.g. "to bear/give birth," "to carry," "to hit") since that bears on whether this is a genuine lexical exception.
 
-## 2. `ska` vs `ska·` (trailing raka dot) for "want to eat"
+## 2. `ska` vs `ska·` (trailing raka dot) for "want to eat" — CLOSED, see NV-153
 Two VERIFIED/HIGH rows currently coexist for the same sentence:
 - master_dictionary.json #107: `cha·na ska·` (direct Project Owner input, 2026-08-12)
 - master_dictionary.json #9903: `Anga cha·na ska` (Thangseng evidence, 2026-08-26)
@@ -19,7 +24,7 @@ Both forms are currently VERIFIED/HIGH but for different sentences, with no conf
 - `skenga`: water, food, "want to see you" (#9149–9151); also re·bana/ringna/re·angna/tusina/poraina/kam ka·na per the new handoff set
 **Question:** Is `skenga` simply the continuous/progressive form of `ska` (as documented), and if so, is the choice between them driven by aspect (simple want vs. ongoing want), by the specific verb, or are both freely interchangeable for all of these sentences?
 
-## 4. `-ko` retention before `ska`/`skenga` (noun-incorporation vs. pronoun object)
+## 4. `-ko` retention before `ska`/`skenga` (noun-incorporation vs. pronoun object) — PARTIALLY CLOSED, see NV-153 (common-noun side corroborated; pronoun-object side still unconfirmed further)
 Observed pattern (2 data points only — not yet a rule):
 - `Anga chi ringna skenga` ("I want water") — no `-ko` on `chi` (noun-incorporated object)
 - `Anga nang·ko nina skenga` ("I want to see you") — `-ko` retained on `nang` (pronoun object)

@@ -7035,3 +7035,53 @@ mong·ma row) and `src/data/corrections.json` (Rule 8: fix stale values
 directly, never allowlist). `Mong` and `ha·ti` remain valid VERIFIED/HIGH
 variants — this is a spelling correction to the already-designated
 native-preferred primary, not a re-opening of the tie itself.
+
+## NV-153 (2026-09-09, direct Thangseng relay via Tridip, WhatsApp)
+**Partially closes docs/THANGSENG_RELAY_QUESTION_20260909.md** — items 2
+and 4 (below), plus new corroborating data. Items 1 and 3 of that doc
+remain unanswered by this relay, still open.
+
+**Item 2 (`ska` vs `ska·` trailing dot) — CLOSED.** `ska` takes no
+trailing raka dot: "Want to eat = cha.na ska". Direct quote. The
+2026-08-12 Project Owner-input dotted form (`cha·na ska·`) is wrong,
+superseded (not deleted). New `verified_high` row `want to eat`→
+`cha·na ska`, derived by subject-drop from the already-VERIFIED
+`i want to eat`→`Anga cha·na ska` (2026-08-26).
+
+**Item 4 (`-ko` retention before `ska`) — further corroborated, not yet
+a fully general rule.** Thangseng gave, then self-corrected in the same
+exchange: "Anga momo·ko cha·na ska" (wrong, earlier accidental typo)
+→ "Anga momo cha.na ska" (correct — `-ko` dropped on the definite
+common-noun object `momo`). Explicit quote: "Incase we use a definite
+object like momo, it will become Anga momo cha.na ska, ealrier we
+accidently type momo.ko which is wrong." This directly corroborates
+the existing `chi ringna skenga` ("want water", NV-071) data point —
+now 2 independent confirmations of common-noun-object-drops-`-ko`
+before `ska`/`skenga`. Still not promoted to a formalized grammar rule
+— pronoun-object-keeps-`-ko` side of the pattern (`nang·ko nina skenga`)
+has no new confirmation this session. New `verified_high` row
+`i want to eat momo`→`Anga momo cha·na ska`.
+
+**New corroborating data (no dictionary change needed, already
+correct):** "can eat"="cha.na ama" (matches existing tied VERIFIED/HIGH
+`ama`/`man·a` interchangeability, NV-117); "need to eat"="cha.na nanga"
+(matches existing VERIFIED/HIGH `need`=`nanga`); "I came to eat"=
+"Anga cha'na re.baa" (matches existing VERIFIED/HIGH row exactly,
+2026-09 session).
+
+**New sentence, not previously in relay-question doc:** "have you eaten
+your lunch?"→"Na·a mipring cha·jokma?" — distinct object (`mipring`=
+lunch itself) from the existing "did you have lunch?"→"Na·a mi
+cha·jokma?" (`mi`=cooked food/rice as object); also drops `-ko`,
+consistent with the item-4 pattern. New `verified_high` row added.
+
+Runtime bugs fixed by these additions (both previously had no exact
+dictionary match and were falling through to a wrong-value engine
+path — "i want to eat momo" to grammar-assembly generating `·ko`;
+"have you eaten your lunch?" to a malformed sov-assembly output):
+now resolve correctly via exact-phrase match.
+
+**Still open, not touched by this relay:** item 1 (`bi·na sikenga`
+exception) and item 3 (`ska` vs `skenga` aspect distribution) — see
+docs/THANGSENG_RELAY_QUESTION_20260909.md, both still awaiting a
+direct answer.

@@ -697,7 +697,14 @@
     "english": "want to eat",
     "garo": "cha·na ska·",
     "category": "food",
-    "notes": "VERIFIED/HIGH — direct Project Owner input, 2026-08-12. Modal 'want to' + purpose-suffixed verb: cha· (eat, VERIFIED/HIGH) + ·na (purpose suffix) + ska· (desiderative modal). Same generalization caveat as 'can eat' — see that entry's notes.",
+    "notes": "SUPERSEDED 2026-09-09 (Claude A) — Thangseng directly confirmed (via Tridip, WhatsApp) 'ska' takes no trailing raka dot: 'want to eat = cha.na ska'. Contradicts the 2026-08-12 Project Owner-input dot. See 'want to eat'->'cha·na ska' (VERIFIED/HIGH, this session, derived by subject-drop from 'i want to eat'->'Anga cha·na ska', NV-153) and NV-153 for full citation. Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "want to eat",
+    "garo": "cha·na ska",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — 2026-09-09 (Claude A, NV-153): Thangseng directly confirmed (via Tridip, WhatsApp) 'want to eat = cha.na ska' with no trailing raka dot, superseding the 2026-08-12 Project Owner-input dotted form. Matches 'i want to eat'->'Anga cha·na ska' (2026-08-26, NV-089-lineage) with the subject dropped, same convention used elsewhere in this dictionary for bare-infinitive/no-subject forms.",
     "confidence": "verified_high"
   },
   {
@@ -77491,6 +77498,20 @@
     "garo": "Anga pora·na ska",
     "category": "phrases",
     "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i want to eat momo",
+    "garo": "Anga momo cha·na ska",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-09-09 (Claude A, NV-153): Thangseng directly confirmed (via Tridip, WhatsApp), with a live self-correction in-transcript: 'Anga momo·ko cha·na ska' was an accidental typo/error; the correct form drops -ko on the definite common-noun object, 'Anga momo cha.na ska'. Corroborates the noun-incorporation-drops-ko pattern already observed for 'Anga chi ringna skenga' (NV-071). Fixes a live grammar-assembly bug that was generating the wrong '·ko'-marked form for this exact sentence (confidence 0.82, no dictionary entry existed before this row).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "have you eaten your lunch?",
+    "garo": "Na·a mipring cha·jokma?",
+    "category": "phrases",
+    "notes": "VERIFIED/HIGH — 2026-09-09 (Claude A, NV-153): Thangseng directly confirmed (via Tridip, WhatsApp). Distinct English phrasing/object from the existing 'did you have lunch?'->'Na·a mi cha·jokma?' (NV-092-lineage, uses 'mi'=cooked food/rice as object) — this key explicitly names 'mipring'=lunch itself as the object, also with -ko dropped, consistent with the noun-incorporation pattern. Fixes a live sov-assembly fallback (was producing a malformed word-order/case-marking output, confidence 0.75, no dictionary entry existed before this row).",
     "confidence": "verified_high"
   },
   {
