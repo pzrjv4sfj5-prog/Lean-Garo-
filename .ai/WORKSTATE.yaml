@@ -1,5 +1,5 @@
 repository:
-  head: 07b4ad6
+  head: d2f0b59
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,7 +313,52 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-09B (Claude A, session complete -- see
+  next_action: '2026-09-09C (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260909C.md for full detail, this is
+    a pointer only). Resumed from 20260909B at HEAD b7d4ec3, resync clean
+    (1 intervening docs-only Claude B commit, no conflict). NV-153
+    (Thangseng relay via Tridip) PARTIALLY CLOSED: items 2 (ska takes no
+    trailing raka dot) and 4 (-ko drops before ska/skenga for a common-
+    noun object, corroborated a 2nd time) closed, fixing 2 live bugs with
+    no prior dictionary entry ("i want to eat momo", "have you eaten your
+    lunch?"); items 1 (bi·na sikenga exception) and 3 (ska vs skenga
+    aspect) remain OPEN, awaiting Thangseng. Project Owner directives:
+    walk promoted to Re·a at the phrase_maps.js shipping layer only
+    (sibling re·am·a master row deliberately untouched, relationship
+    unconfirmed); give resolved to On·a (real conflict, neither prior
+    candidate had any citation, provenance-labeled as a PO directive not
+    native evidence, per .ai/PROJECT_OWNER_AUTHORITY.md); sleep reviewed
+    (no-op, already correct); hope reviewed (audit-only, no directive,
+    cleanup queue logged for a future pass, not actioned). Ran a
+    citation-mismatch audit (uncited shipping value vs. a better-cited
+    non-superseded sibling -- the walk/give bug shape) across all of
+    master_dictionary.json: 2 initial hits, both false positives on
+    inspection (a key-casefold artifact; an already-correct Thangseng-
+    confirmed word-order variant) -- no further instances found repo-
+    wide. NV-154 (Thangseng quote via Tridip, relayed via Project Owner,
+    analysis originally drafted by Claude D) CLOSED: completed the cook
+    (song-) paradigm''s imperative + 3 interrogatives (named by
+    grammatical form to avoid a Check-F collision with corrections.json''s
+    pre-existing natural-phrasing keys, which already independently
+    shipped the same values -- citation-completeness fix, not a runtime
+    bug); fixed a root collision ("set up post" was using the cook root
+    song·a instead of Songna, the same word as "plant"''s erect sense);
+    extended docs/grammar_rules_structured/RULE-007.yaml with the
+    -na (general urge) vs -naha (immediate urge) hortative distinction
+    Thangseng volunteered (existing data already reflected it correctly,
+    this was a missing writeup only). Runtime Handoff to Claude B (not
+    new, restated): compiled_dict.json''s own pickPrimary tie-break for
+    bare "walk" remains unresolved -- would fall back to re·am·a if the
+    phrase_maps.js override is ever removed; the underlying re·a/re·am·a
+    relationship question is separate and still open, not resolvable by
+    more native evidence on its own. Gate green throughout, 3 commits
+    (55d989c, f7cfc7e, d2f0b59): 8260/8260 dictionary, 9/9 grammatical
+    corrections, 0 new repository-intelligence violations (8 checks, 2
+    new self-consistency conflicts allowlisted with citation), 379/379
+    unit tests (unchanged, no engine code touched). Every touched/new key
+    live-verified via translate() post-build. Pushed clean, HEAD
+    d2f0b59 verified == origin/main, no local/uncommitted changes.'
+  next_action_prior_20260909B: '2026-09-09B (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260909B.md for full detail, this is
     a pointer only). Resumed from 20260909 (Batch A) at HEAD fdd37f7,
     resync clean. Small-batch, Project-Owner-directed spot-fix session
@@ -376,7 +421,7 @@ claude_a:
     "the X" keys to known_dictionary_conflicts.json (expected new Check C
     self-consistency conflicts). All 9 touched keys live-verified via
     translate(). Batch A (able/male-female/bi·sa-rule/ska·skenga·sikenga
-    cluster/·ko-rule/ska·) remains untouched, next session's task per
+    cluster/·ko-rule/ska·) remains untouched, next session''s task per
     20260908B''s own recommended ordering. Gate clean: 8251/8251
     dictionary, 9/9 grammar, 379/379 unit tests (unchanged, data-only
     session), 0 new repository-intelligence violations (8 checks), 0
@@ -504,7 +549,12 @@ claude_a:
     tied finish-sentence (item 3), donbo/re·anga mood pattern formal
     sign-off (data already correct), saksan-vs-loneliness. Next Claude A:
     read docs/CLAUDE_A_SESSION_MIGRATION_20260907.md first.'
-  next_action: 'docs/CLAUDE_A_SESSION_MIGRATION_20260906F.md - THIS IS THE
+  next_action_prior_20260906F_stray_duplicate: 'FOUND 2026-09-09C (Claude A):
+    this key was a bare "next_action:" -- a duplicate of the top claude_a.next_action
+    key, silently shadowing it (YAML last-write-wins on duplicate mapping keys),
+    same bug class as the 2026-08-27 stray-duplicate fix elsewhere in this file.
+    Renamed to preserve content and restore the real current next_action. Original
+    content follows verbatim, unedited. docs/CLAUDE_A_SESSION_MIGRATION_20260906F.md - THIS IS THE
     AUTHORITATIVE MIGRATION DOC as of 2026-09-06F. Resumed from 20260906E;
     git fetch showed origin/main had moved to bd34301 (Claude B engineering,
     Handoff B items 2/4/6/8) since that doc closed -- pulled clean, full gate

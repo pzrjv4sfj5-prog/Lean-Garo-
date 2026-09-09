@@ -1,5 +1,25 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-09B by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-09C by Claude A
+(session close — NV-153 partially closed (relay items 2 `ska` trailing-dot
+and 4 `-ko`-drop corroborated, items 1/3 still open, awaiting Thangseng);
+Project Owner directives actioned: walk promoted to `Re·a` at the
+phrase_maps.js shipping layer (sibling `re·am·a` row deliberately
+untouched, relationship unconfirmed), give resolved to `On·a` (real
+conflict, neither prior candidate cited, provenance-labeled as a PO
+directive not native evidence), sleep/hope reviewed (sleep no-op, hope
+audit-only cleanup queue noted for later); a citation-mismatch audit
+(the walk/give bug shape) found no further instances repo-wide. NV-154
+(Thangseng quote via Tridip, relayed via PO, analysis drafted by
+Claude D) closed: completed the cook (`song-`) imperative + 3
+interrogative forms, fixed a `set up post`/`song·a` root collision
+(should be `Songna`, the same word as `plant`), extended
+`RULE-007.yaml` with the `-na`/`-naha` hortative-immediacy distinction.
+Runtime Handoff: `compiled_dict.json`'s own pickPrimary tie-break for
+bare `walk` is still unresolved (Claude B territory) if the
+phrase_maps.js override is ever removed. Gate green throughout:
+8260/8260, 9/9, 0 new repository-intelligence violations, 379/379 unit
+tests. See `docs/CLAUDE_A_SESSION_MIGRATION_20260909C.md`.)
+Prior: 2026-09-09B by Claude A
 (session close — small-batch, Project-Owner-directed spot-fix session: garlic
 (deleted 2 wrong already-superseded candidates, no live bug), kitten (fixed a
 pre-existing corrections.json typo caught by the gate re-run), ginger/tomato/
