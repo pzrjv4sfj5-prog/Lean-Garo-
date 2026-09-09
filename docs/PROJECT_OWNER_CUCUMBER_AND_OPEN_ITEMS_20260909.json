@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-09",
+  "provenance": "Project Owner directive",
+  "cucumber": {
+    "english_key": "cucumber",
+    "canonical": "temit",
+    "status": "VERIFIED",
+    "active_forms_policy": "Only `temit` may remain active for the English key `cucumber`, unless a future form is explicitly introduced by the Project Owner or Thangseng.",
+    "remove_or_suspend": [
+      "so·sra",
+      "Te·e"
+    ],
+    "notes": "`so·sra` was previously marked VERIFIED/HIGH and `Te·e` is an older superseded representation. Historical audit/migration records may retain them for traceability, but neither may remain an active dictionary/runtime candidate for `cucumber`. Do not globally delete either Garo string if it is independently valid under another English key."
+  },
+  "genuinely_open_items": {
+    "status": "OPEN",
+    "scope": "angry cluster",
+    "items": [
+      {
+        "form": "bika so'a",
+        "normalized_repository_form": "bi·ka so·a",
+        "question": "Is this a genuine Garo word/form for `angry`, and if so what sense/register does it have?",
+        "current_status": "UNCONFIRMED / OPEN",
+        "action": "Do not promote, delete, reinterpret, or use as a canonical form without new native evidence or an explicit Project Owner decision."
+      },
+      {
+        "form": "hel'hel",
+        "normalized_repository_form": "hel·hel",
+        "question": "Is this a genuine Garo form, and does repetition `hel-hel` carry a meaning such as `very angry` or emphasis?",
+        "current_status": "UNCONFIRMED / OPEN",
+        "action": "Do not promote, delete, reinterpret, or use as a canonical form without new native evidence or an explicit Project Owner decision."
+      }
+    ],
+    "evidence_summary": "The repository's earlier native-validation question records state that both items could not be confirmed when last asked. Later audit/handoff records describe them as unresolved/unconfirmed variants in the angry cluster. The current repository evidence does not contain a later native confirmation resolving either item."
+  },
+  "implementation_boundary": {
+    "claude_a": "May record the directive and linguistic status, and may clean the affected lexical representations within its data scope.",
+    "claude_b": "Must verify the actual runtime/build path and ensure `cucumber` cannot select `so·sra` or `Te·e` after the lexical cleanup; regenerate compiled data if required.",
+    "do_not_reopen": "The two open angry items remain genuinely open. Do not infer a resolution from repository presence, spelling normalization, or older audit language."
+  },
+  "required_final_state": {
+    "cucumber": "temit only",
+    "future_exception": "A new cucumber form may become active only after explicit introduction by the Project Owner or Thangseng.",
+    "bika_so_a": "OPEN / UNCONFIRMED",
+    "hel_hel": "OPEN / UNCONFIRMED"
+  }
+}
