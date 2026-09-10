@@ -61,8 +61,26 @@ export const CLASSIFIER_MAP = {
   'mountain':'dot','village':'dam',
   'banana':'ge','banana bunch':'akka',
   'alcohol':'rong','chu':'rong','beer':'rong',
-  'merong':'rong','house':'te','nok':'te',
-  'car':'bol','gari':'bol',
+  'merong':'rong', // rice (uncooked/grain); cooked rice ('mi') is a mass
+  // noun counted via container word ('plate'), not this classifier — see
+  // master_dictionary.json 'one plate of rice' note. Do not map generic
+  // 'rice' here, it's ambiguous between the two.
+  'house':'te','nok':'te', // NEW classifier, native-confirmed 2026-08-14
+  // (NV-073, Thangseng): 'nok te·sa' = 'one house'. Raka-carrying.
+  'car':'bol','gari':'bol', // NEW classifier, 2026-09-10, per contract
+  // Transport/Car row + Owner chat confirmation ('Gari bol sa'). No-raka
+  // (see RAKA_CLASSIFIERS below -- 'bol' deliberately not added there).
+  'road':'dil', // NEW classifier, 2026-09-10, Owner directive overriding
+  // the contract file's classifier_table entry (which had noun "Rama dil"
+  // + classifier "roa" -> "Rama dil roa sa"). Owner directive: noun is
+  // "Rama" alone, classifier is "dil", giving "Rama dilsa". 'roa' is a
+  // *different* classifier reserved for length/distance measurement, not
+  // this noun-counting classifier. No-raka (matches "Rama dilsa" fused,
+  // no dot). NOTE: the noun the runtime actually ships for "road" is
+  // "ra·ma" (compiled_dict.json), not "Rama" -- casing/raka-mark aside,
+  // this matches the confirmed "Rama" up to the project's existing
+  // lowercase-surface convention (see "chattro", "song", "gari" etc. above,
+  // all lowercased at surface realization). Not a new conflict.
 };
 
 export const CLASSIFIERS = CLASSIFIER_MAP;
@@ -143,7 +161,21 @@ function buildLargeClassifierPhrase(classifier, n) {
 export function buildClassifierPhrase(classifier, count) {
   const n = parseInt(count);
   if (isNaN(n) || n <= 0) return null;
-  if (n >= 100) return buildLargeClassifierPhrase(classifier, n);
+  if (n >= 100) {
+    return buildLargeClassifierPhrase(classifier, n);
+  }
+  // sak (human) 20-99: Owner directive 2026-09-10, "Chattro saksotbri sa"
+  // -- differs from the general n>19 rule below (which the 2026-06-28
+  // native confirmation established for 'mang'/animals: tens+units join
+  // with a raka dot, e.g. "mang·Kolgrik·sa"). For 'sak' specifically, the
+  // tens word fuses straight onto the classifier (no separator) and the
+  // ORIGINAL space before the trailing units word is kept, not converted
+  // to a dot: classifier + lowercase(tens) + " " + units.
+  if (classifier === 'sak' && n > 19) {
+    const raw = toGaroNumberImported(n); // e.g. "Sotbri sa" (n=41)
+    if (!raw) return null;
+    return `${classifier}${raw.charAt(0).toLowerCase()}${raw.slice(1)}`;
+  }
   const suffix = getClassifierSuffix(n);
   if (suffix === null) return null;
   return RAKA_CLASSIFIERS.has(classifier)

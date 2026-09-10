@@ -49,6 +49,7 @@ import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
 import { countNoun, parseCountingPhrase } from './garo_classifier.js';
+import { toGaroNumber as toGaroNumberBare } from './number_engine.js';
 import { corrections, normalizeEntry, EN_INDEX, lookupGaro } from './lookupEngine.js';
 import { applyNegation } from './morphologyEngine.js';
 import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js';
@@ -522,6 +523,25 @@ export async function translate(input) {
   if (compound.length) {
     const garo = compoundWords.includes('[UNKNOWN]') ? compoundWords.join(' ') : compound.join(' ');
     return { garo, method: 'compound-split', confidence: 0.60 };
+  }
+
+  // 8.5 Bare numeric input -> number engine (2026-09-10, Claude B, Owner-
+  // reported live bug: "41" alone returned "sa" -- traced to fuzzy match
+  // against the dictionary's "1" entry at edit-distance 1, since nothing
+  // upstream ever routes a standalone digit string to the number engine.
+  // Step 5 (parseCountingPhrase, count+noun) requires >=2 words so never
+  // fires here. Confirmed broken for every multi-digit case tested before
+  // this fix: 11,20,21,30,41,67,100 all fuzzy-matched their leading digit;
+  // 1000 fell all the way to passthrough as "[UNKNOWN]". Only 1-9 worked,
+  // by accident, because those digits are themselves exact dictionary
+  // keys. Scoped tightly to whole-input pure-digit strings only, so it
+  // can never shadow "41 students" (handled correctly already, upstream,
+  // by step 5) or any word-form number ("forty one", handled by the
+  // exact-phrase/phrase-map compound entries Claude A added this session).
+  if (/^\d+$/.test(lower)) {
+    const n = parseInt(lower, 10);
+    const num = toGaroNumberBare(n);
+    if (num) return { garo: num, method: 'number-engine', confidence: 0.98 };
   }
 
   // 9. Fuzzy — skip if input contains raka (·): that means user typed Garo, not English.
