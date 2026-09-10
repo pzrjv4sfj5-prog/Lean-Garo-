@@ -783,13 +783,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "sit",
-    "garo": "Asong·a",
-    "category": "general",
-    "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the now-VERIFIED 'a·song·a' row for 'sit', differs only in capitalization/spelling. Retained per citation discipline, not deleted, but not a second independent candidate.",
-    "confidence": "superseded"
-  },
-  {
     "english": "stand",
     "garo": "Chadenga",
     "category": "general",
@@ -829,13 +822,6 @@
     "category": "travel",
     "confidence": "superseded",
     "notes": "SUPERSEDED — 2026-08-30D audit (Claude A): this unverified 'go'=Re·anga row is now contradicted by NV-100 (2026-08-30, direct Thangseng relay), which confirms Re·anga = 'went' (distinct past-tense sense, own VERIFIED/HIGH row) and 'go' = re·a (VERIFIED/HIGH, native-confirmed 2026-08-28). Retained for citation history only, no runtime impact (was never pickPrimary-eligible against the existing VERIFIED 'go'=re·a row)."
-  },
-  {
-    "english": "mother",
-    "garo": "Ma / Ama",
-    "category": "family",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'mother' has VERIFIED/HIGH form(s) ['a·ma', 'ma·gip·a', 'na·gi·pa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. UPDATE, 2026-08-04 (NV-018 follow-up): the 'Ama' candidate specifically is now confirmed to be the ability-modal 'ama'/\"can\" homonym - it has been retired from the mother sense in favor of 'a·ai' (address form) or the pre-existing 'a·ma'/'ma·gip·a'/'na·gi·pa' variants. Not a candidate for mother going forward.",
-    "confidence": "superseded"
   },
   {
     "english": "son",
@@ -23358,33 +23344,6 @@
     "notes": "variant/AMBIGUOUS/HIGH"
   },
   {
-    "english": "Mother",
-    "garo": "a·ma",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'mother' is 'Aa.i'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "Mother",
-    "garo": "ma·gip·a",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'mother' is 'Aa.i'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "Mother",
-    "garo": "na·gi·pa",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'mother' is 'Aa.i'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
     "english": "Mountain",
     "garo": "ha·bri",
     "pos": null,
@@ -24779,24 +24738,6 @@
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
-  },
-  {
-    "english": "Sit",
-    "garo": "a·song·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile. Resolves the long-open NV-080 sit=aonga-vs-a·song·a question in favor of 'aonga' as the bare/simple form; 'sitting'=asongenga (continuous stem) is unaffected.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "Sit",
-    "garo": "at·chong·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'sit' is 'a·song·a'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
   },
   {
     "english": "Skin",

@@ -7032,38 +7032,6 @@
     "notes": "variant/AMBIGUOUS/HIGH"
   },
   {
-    "english": "Mother",
-    "garo": "Ma / Ama",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:a-ma / ma˙-gip-a / na˙-gi-pa"
-  },
-  {
-    "english": "Mother",
-    "garo": "a·ma",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Mother",
-    "garo": "ma˙·gip·a",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Mother",
-    "garo": "na˙·gi·pa",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Motorcycle",
     "garo": "Motor·cycle",
     "pos": null,
@@ -9990,30 +9958,6 @@
     "category": "church",
     "classifier": null,
     "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Sit",
-    "garo": "Asong·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:a-song-a / at-chong-a"
-  },
-  {
-    "english": "Sit",
-    "garo": "a·song·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Sit",
-    "garo": "at·chong·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
   },
   {
     "english": "Sit down",
