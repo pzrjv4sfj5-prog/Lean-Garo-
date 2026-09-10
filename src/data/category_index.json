@@ -3619,7 +3619,6 @@
   "i want to come": "phrases",
   "i want to work": "phrases",
   "i want to study": "phrases",
-  "i want to pray": "phrases",
   "go to sleep": "phrases",
   "go to eat": "phrases",
   "go to drink": "phrases",
@@ -4119,5 +4118,10 @@
   "little boy": "general",
   "little girl": "general",
   "able": "grammar",
-  "kitten": "animals"
+  "kitten": "animals",
+  "i want to pray": "phrases",
+  "fermented bamboo shoot": "general",
+  "listen (imperative)": "phrases",
+  "listen (imperative, alt)": "phrases",
+  "what did he eat?": "phrases"
 }

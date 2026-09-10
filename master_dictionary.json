@@ -262,7 +262,8 @@
     "english": "bamboo shoot",
     "garo": "Me·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-155 (2026-09-09, direct Thangseng WhatsApp transcript relayed by Tridip): 'Me·a = bamboo shoot' (also written me.a/mi.a in casual transcription, same word)."
   },
   {
     "english": "garlic",
@@ -56249,15 +56250,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "i want to pray",
-    "garo": "Anga bi·a·na sikenga",
-    "category": "phrases",
-    "pos": null,
-    "classifier": null,
-    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
-    "confidence": "superseded"
-  },
-  {
     "english": "go to sleep",
     "garo": "Tusibo",
     "category": "phrases",
@@ -77500,13 +77492,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "i want to pray",
-    "garo": "Anga bi·a·na ska",
-    "category": "phrases",
-    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
-    "confidence": "verified_high"
-  },
-  {
     "english": "stand up",
     "garo": "Chadengbo",
     "category": "phrases",
@@ -78835,5 +78820,40 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json child_marker example set). Productive bi·sa (kid/child/baby/young-one marker, RULE-049) applied to menggo (cat), parallel to achak bi·sa (puppy, already VERIFIED/HIGH) and matchu bi·sa (calf, already VERIFIED/HIGH).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "i want to pray",
+    "garo": "Anga bi·na skenga",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-155 (2026-09-09, direct Thangseng WhatsApp transcript relayed by Tridip, real-time). Closes NV-153 item 1: root is bi·na (not bi·a·na), suffix is skenga (not sikenga — confirmed a transcription slip). Thangseng explicitly distinguished skenga (derived from ska, 'to want/desire' -> 'wanting') from sikenga (derived from sika, 'to push/blow' -> 'pushing/blowing') as two unrelated roots, not aspect variants of one word — closes NV-153 item 3 as well: 'want' sentences never take sikenga. Supersedes the prior 'Anga bi·a·na ska'/'Anga bi·a·na sikenga' rows, both deleted per explicit Project Owner instruction (departure from retain-superseded-not-delete norm)."
+  },
+  {
+    "english": "fermented bamboo shoot",
+    "garo": "Me·a meseng",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-155 (2026-09-09, direct Thangseng WhatsApp transcript relayed by Tridip): compound of Me·a (bamboo shoot) + meseng."
+  },
+  {
+    "english": "listen (imperative)",
+    "garo": "Knabo",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-155 (2026-09-09, direct Thangseng WhatsApp transcript relayed by Tridip): 'Listen = Knabo/knatimbo'. Distinct from the existing general-verb 'listen' cluster (Knachika/kin·a·a/kin·a·tim·a, VERIFIED/HIGH) — flagged as likely imperative register, not merged; the corpus already separately carries 'listen carefully'='name knatimbo'."
+  },
+  {
+    "english": "listen (imperative, alt)",
+    "garo": "Knatimbo",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-155 (2026-09-09, direct Thangseng WhatsApp transcript relayed by Tridip), companion form to 'Knabo'. See that entry's notes."
+  },
+  {
+    "english": "what did he eat?",
+    "garo": "Bia maiko cha·a?",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-155 (2026-09-09, direct Thangseng WhatsApp transcript relayed by Tridip). Thangseng noted a grammar point worth flagging as a rule candidate (not yet built into a RULE-XXX entry, Claude A's own call for a future session): Garo can carry past sense via an explicit past-time word alone, with the verb staying in normal/present form — e.g. 'Mijalo na·a maiko daka?' ('what did you do yesterday?') is grammatical despite 'daka' being unmarked for tense, because 'Mijalo' (yesterday) already carries the past sense. Contrast with English, where the verb must also inflect for past even with an explicit time word."
   }
 ]

@@ -1,16 +1,14 @@
 # Thangseng Relay Question — 2026-09-09
 
-**STATUS (2026-09-09, Claude A): Items 2 and 4 CLOSED — see NV-153 in
-docs/THANGSENG_NATIVE_VALIDATION.md. Items 1 and 3 remain OPEN, still
-need a direct answer — do not resend items 2/4, only 1 and 3 below are
-still live questions.**
+**STATUS (2026-09-09, Claude A): ALL FOUR ITEMS NOW CLOSED. Items 2 and
+4 closed earlier — see NV-153. Items 1 and 3 closed same-day via a
+direct Thangseng WhatsApp transcript (real-time, relayed by Tridip) —
+see NV-155 in docs/THANGSENG_NATIVE_VALIDATION.md. This relay batch is
+fully resolved, nothing further to send.**
 Author: Claude A. Source of new evidence: AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json (`ska_skenga` block). Per evidence-first methodology, none of the below is resolved unilaterally — corpus-internal contradictions only, flagged for direct Thangseng clarification.
 
-## 1. `sikenga` reintroduction contradicts the 2026-08-26 supersession
-Session 2026-08-26 superseded 8 `...sikenga` phrase rows (master_dictionary.json #7109–7118) as a stale regression to the wrong root (sika/push-insert), in favor of `ska`/`skenga`. The new 2026-09-08 handoff evidence set includes:
-> `Anga bi·na sikenga`
-alongside otherwise-`skenga` sentences (`Anga re·bana skenga`, `Anga ringna skenga`, `Anga re·angna skenga`, `Anga tusina skenga`, `Anga poraina skenga`, `Anga kam ka·na skenga`).//
-**Question:** Is `Anga bi·na sikenga` correct as given (i.e. does `bi·na` specifically take `sikenga`, not `skenga`), or is this a transcription slip that should read `skenga`? Please also confirm what `bi·na` means in this sentence (e.g. "to bear/give birth," "to carry," "to hit") since that bears on whether this is a genuine lexical exception.
+## 1. `sikenga` reintroduction contradicts the 2026-08-26 supersession — CLOSED, see NV-155
+**Answer (Thangseng, direct WhatsApp, 2026-09-09, relayed by Tridip):** it is `Anga bi·na skenga` — a transcription slip, not a genuine exception; `bi·na` = "to pray" (confirms the compound is the pray root + `skenga`, replacing the prior `bi·a·na` spelling and the stale `ska` suffix — both deleted per explicit Project Owner instruction). Thangseng additionally clarified the general mechanism, which also closes item 3 below: `skenga` is the continuous of `ska` ("to want/desire"); `sikenga` is the continuous of the unrelated `sika` ("to push/blow") — two different roots, not aspect variants of one word.
 
 ## 2. `ska` vs `ska·` (trailing raka dot) for "want to eat" — CLOSED, see NV-153
 Two VERIFIED/HIGH rows currently coexist for the same sentence:
@@ -18,11 +16,8 @@ Two VERIFIED/HIGH rows currently coexist for the same sentence:
 - master_dictionary.json #9903: `Anga cha·na ska` (Thangseng evidence, 2026-08-26)
 **Question:** Does `ska` take a trailing raka dot in this position or not? Is `ska·` a distinct orthographic/grammatical variant, or an error in the 2026-08-12 row?
 
-## 3. `ska` vs `skenga` distribution (aspect/construction question)
-Both forms are currently VERIFIED/HIGH but for different sentences, with no confirmed rule governing which applies where:
-- `ska`: eat, drink, go, sleep, come, work, study, pray (#9903–9910)
-- `skenga`: water, food, "want to see you" (#9149–9151); also re·bana/ringna/re·angna/tusina/poraina/kam ka·na per the new handoff set
-**Question:** Is `skenga` simply the continuous/progressive form of `ska` (as documented), and if so, is the choice between them driven by aspect (simple want vs. ongoing want), by the specific verb, or are both freely interchangeable for all of these sentences?
+## 3. `ska` vs `skenga` distribution (aspect/construction question) — CLOSED, see NV-155
+**Answer:** confirmed as documented — `skenga` is the continuous/progressive of `ska` (both from the "want" root), distinct from `sikenga` (continuous of the unrelated "push/blow" root `sika`). See item 1's answer above for the full quote. Not further specified which of `ska`/`skenga` governs each individual sentence beyond the pray example — left as-is per existing VERIFIED rows, no forced reconciliation.
 
 ## 4. `-ko` retention before `ska`/`skenga` (noun-incorporation vs. pronoun object) — PARTIALLY CLOSED, see NV-153 (common-noun side corroborated; pronoun-object side still unconfirmed further)
 Observed pattern (2 data points only — not yet a rule):

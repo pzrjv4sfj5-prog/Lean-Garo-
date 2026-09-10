@@ -7131,3 +7131,57 @@ Thangseng used in the raw transcript never appears in any
 `garo`/`english` field in the repo; only inside citation notes that
 already correctly document the normalization convention. Nothing to
 fix, confirmed by direct search.
+
+## NV-155 (2026-09-09, direct Thangseng WhatsApp transcript, real-time, relayed by Tridip)
+
+Closes NV-153 items 1 and 3 (`docs/THANGSENG_RELAY_QUESTION_20260909.md`), plus four independent items from the same transcript.
+
+**1. `ska`/`skenga`/`sikenga` — CLOSED.** Thangseng: "Skenga is derived
+from ska = to want, desire. Therefore, skenga = wanting. Sikenga is
+derived from sika = to push / to blow (as in blowing a whistle).
+Therefore, sikenga = pushing / blowing." Confirms the two are
+unrelated roots, not aspect variants of one word (closes NV-153 item
+3). "i want to pray" is `Anga bi·na skenga` (not `sikenga` — confirmed
+transcription slip; not `bi·a·na` either). Deleted the prior
+`Anga bi·a·na ska` (verified_high) and `Anga bi·a·na sikenga`
+(superseded) rows per explicit Project Owner instruction ("delete
+bi·a·na we will stay with bi.na") — departure from the usual
+retain-superseded-not-delete norm. New row added:
+`i want to pray`→`Anga bi·na skenga` (verified_high). Runtime propagated:
+`src/data/corrections.json`'s `"i want to pray"` override updated to
+match (was shipping the stale `bi·a·na ska` value); `master_dictionary.json`
+rebuilt via `prepare-data.js`; live-verified via `translate()`.
+
+**2. Bamboo shoot — promoted.** Thangseng: "Bamboo shoot - me.a or
+mi.a. Me.a = bamboo shoot. Me.a meseng = fermented bamboo shoot."
+Existing `bamboo shoot`→`Me·a` row promoted unverified→verified_high;
+new row added `fermented bamboo shoot`→`Me·a meseng` (verified_high).
+
+**3. Listen — new imperative forms added, general form untouched.**
+Thangseng: "Listen = Knabo/knatimbo." Added as new rows
+`listen (imperative)`→`Knabo` and `listen (imperative, alt)`→`Knatimbo`
+(both verified_high), flagged as likely imperative register — the
+existing general-verb `listen` cluster (`Knachika`/`kin·a·a`/
+`kin·a·tim·a`, verified_high) was left untouched, not merged, since the
+transcript didn't address it directly.
+
+**4. "What did he eat?" — new sentence, plus a grammar observation
+flagged (not built into a rule this session).** Thangseng: "What did
+he eat? = Bia maiko cha.a? In Garo, a sentence can have a past sense
+even without a verb in the past, provided a word denoting the past is
+employed... in Garo 'Mijalo na.a maiko daka [note that the verb is in
+normal/present form]?' (what did you do yesterday?) is perfectly
+fine." New row added: `what did he eat?`→`Bia maiko cha·a?`
+(verified_high), with the grammar note recorded in-row. Flagged as a
+future RULE-XXX candidate (temporal-word-implies-past-without-verb-marking)
+— not written up as a formal rule this session, no existing rule
+covers it yet.
+
+**Sit — reconfirmed, no change.** Thangseng: "is there a rakka
+sit → Asong·a? No.. asonga = to sit" — matches the already-VERIFIED/HIGH
+`sit`→`Asonga` (closed 2026-09-09D, Batch 4). No action needed.
+
+Gate green throughout: 8264/8264 compiled entries, 9/9 grammatical
+corrections, 379/379 unit tests, 0 new repository-intelligence
+violations. Live-verified `translate("i want to pray")` →
+`"Anga bi·na skenga"`.
