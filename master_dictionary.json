@@ -1083,55 +1083,64 @@
     "english": "eleven",
     "garo": "Chi·sa",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "twelve",
     "garo": "Chi·gni",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "thirteen",
     "garo": "Chi·gittam",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "fourteen",
     "garo": "Chi·bri",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "fifteen",
     "garo": "Chi·bonga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "sixteen",
     "garo": "Chi·dok",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "seventeen",
     "garo": "Chi·sni",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "eighteen",
     "garo": "Chi·chet",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "nineteen",
     "garo": "Chi·sku",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-10): confirmed correct as-is; value unchanged. Matches the already-established native-confirmed teens rule (11–19 = Chi· + number-suffix, sa/gni/gittam/bri/bonga/dok/sni/chet/sku) recorded in the project's grammar corpus. Also resolves a live conflict against the GPT-drafted garo_number_system_machine_ready.json, which gives a two-word 'Chiking SPACE unit' form (e.g. 'Chiking Sni') for this range — that form is superseded by this directive; flagged to Claude B."
   },
   {
     "english": "twenty",

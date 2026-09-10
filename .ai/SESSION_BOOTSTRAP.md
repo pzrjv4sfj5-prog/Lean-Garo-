@@ -2412,3 +2412,31 @@ only) — safe to build now.
 
 
 
+
+## Session close — 2026-09-10, Claude A, NV-155 teens promotion + GPT number-table review start
+
+Resumed from `docs/CLAUDE_A_SESSION_MIGRATION_20260909E.md`, resync clean
+at `a69baca`. Reviewing Claude B's concurrently-added GPT-drafted number
+files (`data/garo_number_system_machine_ready.json`,
+`data/garo_number_classifier_engine_machine_ready.json`) for validated
+push into `master_dictionary.json`, per Project Owner instruction, small
+batches at a time.
+
+First batch: Project Owner confirmed eleven–nineteen
+(`Chi·sa`...`Chi·sku`) as correct. Values were already right in
+`master_dictionary.json`, just stuck at `unverified` confidence (already
+`verified_high` in `final_entries.json`, matching `garo_dictionary.json`)
+— promoted to `verified_high`, citing the Project Owner directive and
+the already-established native-confirmed teens rule (11–19 = `Chi·` +
+number-suffix). Gate green throughout (8264/8264, 9/9, 0 new violations,
+379/379), live-verified via `translate()`.
+
+**Handoff to Claude B:** `garo_number_system_machine_ready.json`'s
+`composition_rules."11_19"` field ("Chiking SPACE unit", e.g. "Chiking
+Sni" for seventeen) contradicts the corrected `master_dictionary.json`
+value and the established teens rule — needs correcting to the `Chi·`-
+prefix fused form before anything downstream consumes it. See
+`.ai/WORKSTATE.yaml` `claude_a.next_action` for full detail.
+
+Remainder of the 1–100+ table (1–10, 20–99, 100+) not yet reviewed —
+next task.
