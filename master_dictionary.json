@@ -7046,13 +7046,15 @@
     "english": "4",
     "garo": "bri",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: (none)"
   },
   {
     "english": "5",
     "garo": "bonga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: (none)"
   },
   {
     "english": "two dogs",
@@ -7345,31 +7347,36 @@
     "english": "6",
     "garo": "dok",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: (none)"
   },
   {
     "english": "7",
     "garo": "sni",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: (none)"
   },
   {
     "english": "8",
     "garo": "chet",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: (none)"
   },
   {
     "english": "9",
     "garo": "sku",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: (none)"
   },
   {
     "english": "10",
     "garo": "chiking",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: (none)"
   },
   {
     "english": "garo",
@@ -20305,8 +20312,8 @@
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: VERIFIED/HIGH",
+    "confidence": "superseded"
   },
   {
     "english": "2",
@@ -20314,8 +20321,8 @@
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: VERIFIED/HIGH",
+    "confidence": "superseded"
   },
   {
     "english": "3",
@@ -20323,8 +20330,8 @@
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — full linguistic re-audit 2026-09-11 (Claude A, Project Owner directive): malformed English key (bare digit string, not a valid English word input). Duplicates the proper word-form entry for the same number, which remains VERIFIED/HIGH under its own key. Retained per citation discipline, not deleted. Original notes: VERIFIED/HIGH",
+    "confidence": "superseded"
   },
   {
     "english": "A lot of mosquitoes in here",
@@ -58317,11 +58324,11 @@
     "confidence": "unverified"
   },
   {
-    "english": "Where",
+    "english": "where (movement-to)",
     "garo": "Bachi",
     "category": null,
     "pos": "adj.",
-    "notes": "VERIFIED/HIGH — corpus-internal audit 2026-08-01 (Claude A), aligning tag with RULE-044 and NV-047 (Project Owner closure 2026-07-31, see 'where are you going?' entry): bachi is the movement-to locative form. Case-duplicate of lowercase 'where'/'where?' keys (RC-CANDIDATE-036-style clobber risk) — kept separate per existing project convention, flagged for Claude B if key-casing unification is ever undertaken.",
+    "notes": "VERIFIED/HIGH — corpus-internal audit 2026-08-01 (Claude A), aligning tag with RULE-044 and NV-047 (Project Owner closure 2026-07-31, see 'where are you going?' entry): bachi is the movement-to locative form. Case-duplicate of lowercase 'where'/'where?' keys (RC-CANDIDATE-036-style clobber risk) — kept separate per existing project convention, flagged for Claude B if key-casing unification is ever undertaken. | RE-KEYED 2026-09-11 (Claude A, full linguistic re-audit, Project Owner directive): this row's own notes already flagged it as a case-duplicate clobber risk against lowercase 'where'/Bano — re-keyed to a sense-tagged key (matches the established 'where (object placement)' pattern from 2026-08-18) rather than left colliding. 'where' (bare) stays Bano — the stationary sense, per RULE-044/NV-047, matching the more common bare-word usage ('where are you?').",
     "confidence": "verified_high"
   },
   {

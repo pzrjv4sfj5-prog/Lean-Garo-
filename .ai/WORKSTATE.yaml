@@ -313,7 +313,50 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-10 (Claude A, session complete -- see
+  next_action: '2026-09-11 (Claude A, session complete -- full linguistic
+    re-audit per Project Owner directive, see docs/CLAUDE_A_SESSION_MIGRATION_20260911.md
+    for full detail, this is a pointer only). Resumed clean at cb93d1b ==
+    origin/main. Full 12-section audit of current main (number system,
+    classifier contract, human 40+ rule, master-dictionary contamination
+    sweep, verified-ties, no-verified-candidate backlog, orthography,
+    runtime contract, unseen-combination generalization test, suspension
+    candidates). Number/classifier CONTRACT DATA verified clean throughout
+    -- no linguistic defects found in master_dictionary.json or either
+    machine-ready file for 1-100000. MAJOR FINDING: runtime generation
+    does NOT generalize past ~20 or past pre-seeded classifier/noun pairs
+    -- confirmed via live translate() on unseen combinations (41/55/67/100
+    students, one hundred dogs, seven mangoes, 7/19 books all malformed or
+    wrong). Full root-caused writeup and fix recommendations in
+    docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md -- 5
+    distinct bugs, none touched by Claude A (engine code, Claude B
+    territory). Fixed 2 data-layer items within scope, using only
+    already-cited evidence (no new native input needed): (1) 10 malformed
+    bare-digit English keys (e.g. english="4"/"10") marked
+    superseded, citing this audit -- duplicated the real word-form number
+    entries, not valid English input, retained not deleted; (2) the
+    "where"/"Where" case-collision (Bano vs Bachi) -- the capitalized
+    "Where"/Bachi row''s own notes already flagged it as a clobber risk
+    against lowercase "where"/Bano; re-keyed to "where (movement-to)"
+    per the established sense-tagged-key pattern (matches the 2026-08-18
+    "where (object placement)" precedent), citing already-established
+    RULE-044/NV-047 evidence -- no new relay needed. Synced
+    src/data/pending_lexicon.json PL-0000273 to match. Did NOT force-close
+    the remaining 10 unclassified verified-ties (agree, brave, early,
+    empty, greedy, horn, last, leg, lie, outside) -- no native/Owner
+    evidence found anywhere in session history for any of them, genuinely
+    open, not corpus-resolvable. Reviewed and found no actual defect in
+    the fever/suffer possible-homograph Claude B flagged (2026-09-10 Stage
+    2C) -- jom·a''s appearance as an unverified "suffer" candidate
+    does not conflict with its verified_high "fever" status, plausible
+    legitimate polysemy (ache/suffer -> fever), left as-is, not force-
+    resolved either way. Gate green throughout: 8363/8363 dictionary, 9/9
+    grammatical corrections, 0 new repository-intelligence violations
+    (Check D structural gap from the rename caught and fixed same session
+    via the pending_lexicon sync), 379/379 unit tests. Live-verified via
+    translate(): where/where are you?/where are you going? all correct;
+    bare digits 4/10 no longer resolve to stale entries; four/ten
+    unaffected.'
+  next_action_prior_20260910: '2026-09-10 (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260910.md for full detail, this is
     a pointer only). Resumed from 20260909E at a69baca, resync clean.
     Reviewed and pushed the full GPT-drafted number table
@@ -3378,6 +3421,7 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
+  pending_handoff_from_claude_a_20260911: "Full linguistic re-audit found the number/classifier machine-ready CONTRACT DATA is clean, but runtime generation does not generalize past ~20 or past pre-seeded noun/count pairs -- 5 distinct bugs (missing 'king' in RAKA_CLASSIFIERS; 20-99 composition blindly dot-fuses+wrong-cases the tens portion instead of matching the approved human-40+ surface form; exact-hundred composition silently substitutes count=1; parseCountingPhrase has no hundred/thousand word handling; unseeded nouns bypass the classifier engine entirely via sov-assembly fallback). Full root-cause + fix guidance + live-verification data in docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md. Not started by Claude A -- engine code, out of role."
   pending_handoff_from_claude_a_20260909: "bi·sa productive-suffix gap, flagged 2026-09-09 -- see docs/CLAUDE_A_SESSION_MIGRATION_20260909.md Sec.4 for full detail. Engine has no morphological rule for bi·sa (RULE-049): every young-animal/child compound is a hardcoded dictionary row, no generative mechanism. Needs engineering design, not a linguistic call."
   pending_handoff_from_claude_a_20260910: "CLOSED (2026-09-10, same session): Claude B picked this up directly -- commits bd6ca54/9b60cfa fixed both files' 11-19 rule to the Chi·-prefix form, b6c5a08/d3b51db completed teen-number parsing. Claude A rebased onto Claude B's fix (one merge conflict on data/garo_number_classifier_engine_machine_ready.json -- both sides had touched it; kept Claude B's content, re-applied the bullet-to-raka-dot fix for one instance Claude B's edit had reintroduced (Bi·sarang), gate re-verified green, live-verified via translate()). No outstanding action. Full detail: docs/CLAUDE_A_SESSION_MIGRATION_20260910.md."
   next_action: "2026-09-10 (Claude B, session close, zero-runtime doc-only close). Fixed cucumber: so·sra/Te·e marked confidence:superseded (the pipeline's real exclusion mechanism, not the invented 'suspended' value first tried and caught before compiling) for both 'cucumber' and 'the cucumber' keys per docs/PROJECT_OWNER_CUCUMBER_AND_OPEN_ITEMS_20260909.json; temit added as sole active verified_high candidate for both. Verified end-to-end via real translationEngine.js translate() (plain lookup, a/an/the-SUBJECT-is path, grammar-assembly path), not just compiled_dict.json. 'the cucumber' logged in src/data/known_dictionary_conflicts.json (CHECK C) since it now legitimately carries 2 values. Pushed once, rejected (bbc7bb0 had landed, 8 concurrent commits from Claude A/C/D: NV-155 closures + Batch 4 mother/sit); rebased cleanly (master_dictionary.json auto-merged, only generated files compiled_dict.json/unverified_words.json conflicted, resolved by regenerating via prepare-data.js not hand-merging); full gate re-run clean against the merged state before second push. Gate throughout: 8264/8264 dictionary, repository-intelligence.js 0 new violations, resync-stale-overrides.mjs 0 candidates, 379/379 unit tests, 0 runtime errors. Continued Stage 2C tied-key classification (batch 3: early/empty/fever, all provisionally LINGUISTIC-ADJUDICATION-REQUIRED, no engineering tiebreaker found for any; fever/suffer possible homograph flagged for Claude A) -- explicitly left PENDING per Project Owner instruction, 14 keys remain, do not auto-resume. Flagged but NOT started: Project Owner pushed 2 new machine-ready counting-system files this session (data/garo_number_system_machine_ready.json, data/garo_number_classifier_engine_machine_ready.json, commits b23d91b/2b78781) describing a contract the Owner says will surface a major flaw in the existing number_engine.js -- next session's first priority, needs a full read + gap analysis before any fix, not attempted this session (zero-runtime close). Full account: docs/CLAUDE_B_SESSION_MIGRATION_20260910.md."

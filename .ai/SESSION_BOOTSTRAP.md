@@ -2476,3 +2476,45 @@ spec) is complete — no remaining task there. Classifier engine file is
 linguistically reviewed and ready for Claude B integration once the
 11–19 fix lands; nothing further for Claude A to do on it unless new
 categories/nouns are added to that file later.
+
+## Session close — 2026-09-11, Claude A, full linguistic re-audit
+
+Full 12-section linguistic re-audit of current `main` per Project
+Owner directive. Resumed clean at `cb93d1b` == `origin/main`.
+
+**Number system and classifier contract (data layer): VERIFIED
+clean.** 1-10, 11-19 (`Chi·` fused forms), 20-99, and 100-100000 all
+`verified_high` and internally consistent. Both machine-ready files'
+11-19 rule correctly reads the `Chi·` form (confirms Claude B's prior
+fix landed in the data, not just the runtime). Classifier categories,
+exceptions (banana/water/mountain/village/road/car), and the
+human-40+ surface rule all match Owner-confirmed policy.
+
+**Major finding: runtime generation does not generalize.** Live
+`translate()` calls on unseen combinations (numbers/nouns not
+pre-seeded as literal dictionary rows) surfaced 5 distinct
+composition bugs — malformed 20-99 output, broken exact-hundred
+handling, no hundred/thousand word parsing, a missing classifier in
+`RAKA_CLASSIFIERS`, and unseeded nouns bypassing the classifier
+engine entirely. Full root-cause + fix guidance in
+`docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md` —
+Claude B territory, not touched by Claude A.
+
+**Two data-layer fixes made**, both using only already-established
+evidence (no new native relay needed): 10 malformed bare-digit
+English keys (e.g. `"4"`, `"10"`) marked superseded, citing this
+audit; the `where`/`Where` case-collision (Bano vs Bachi) re-keyed to
+`where (movement-to)` per the established sense-tagged-key pattern,
+using RULE-044/NV-047 evidence already on file. `pending_lexicon.json`
+PL-0000273 synced to match.
+
+**Left deliberately open, no evidence available:** 10 unclassified
+verified-ties (agree, brave, early, empty, greedy, horn, last, leg,
+lie, outside) — no native/Owner citation found anywhere in session
+history for any of them. Reviewed the fever/suffer possible-homograph
+Claude B flagged (2026-09-10) — found no actual conflict, left as-is.
+
+Gate green throughout: 8363/8363 dictionary, 9/9 grammatical
+corrections, 0 new repository-intelligence violations, 379/379 unit
+tests. See `docs/CLAUDE_A_SESSION_MIGRATION_20260911.md` for full
+detail.

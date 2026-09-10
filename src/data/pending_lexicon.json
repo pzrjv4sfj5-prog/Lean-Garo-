@@ -7143,7 +7143,7 @@
   },
   {
     "id": "PL-0000273",
-    "english": "Where",
+    "english": "where (movement-to)",
     "garo": "Bachi",
     "category": null,
     "pos": "adj.",
@@ -7157,7 +7157,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster).",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster). | RE-KEYED 2026-09-11 (Claude A, full linguistic re-audit): master_dictionary.json row re-keyed from case-duplicate 'Where' to sense-tagged 'where (movement-to)' to resolve a silent case-collision with lowercase 'where'/Bano at compile time; synced here per Check D.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
