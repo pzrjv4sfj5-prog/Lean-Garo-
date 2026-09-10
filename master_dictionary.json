@@ -76377,12 +76377,12 @@
   },
   {
     "english": "mother",
-    "garo": "Aa.i",
+    "garo": "a.ai",
     "pos": null,
     "category": "family",
     "classifier": null,
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080)."
+    "notes": "VERIFIED/HIGH — CANONICAL FORM UPDATED 2026-09-09 (Batch 4, Claude A). Direct native evidence: Thangseng transcript, 15/7/2026 11:59am: \"Depends on the region. But you can go with a.ai (mother), baba (father)\" / \"Remember the raka in a.ai\" (Tridip ack 12:00pm). Same word as the prior 'Aa.i' spelling (NV-080, 2026-08-17) — raka placement corrected per this direct transcript, not a new word. Canonical active form for 'mother' is 'a.ai'; no competing active form retained for this key. 'baba'=father is out of scope, untouched."
   },
   {
     "english": "half",
@@ -77378,9 +77378,9 @@
   },
   {
     "english": "sit",
-    "garo": "aonga",
+    "garo": "Asonga",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "notes": "VERIFIED/HIGH — FINAL, Project Owner directive (Batch 4, 2026-09-09, no Thangseng transcript supplied for this item — provenance: Project Owner directive). sit -> Asonga, no raka/dot. Owner-supplied example: \"Hai asongna\" = \"Let us sit\". Supersedes the prior 'aonga' spelling recorded under NV-095 (2026-08-23) — same lexical decision, corrected spelling per explicit Owner final ruling. Do not reopen; do not request further native confirmation. No competing active form retained for 'sit'.",
     "confidence": "verified_high"
   },
   {

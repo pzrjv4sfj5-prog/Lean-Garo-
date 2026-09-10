@@ -102,9 +102,9 @@ test('the original compound phrasings still resolve correctly (no regression)', 
 // handoff's explicit regression list — confirming this session's changes
 // didn't disturb any of them.
 
-test('"sit" still resolves to aonga', async () => {
+test('"sit" resolves to Asonga (Batch 4, 2026-09-09, Project Owner final directive)', async () => {
   const result = await translate('sit');
-  assert.equal(result.garo, 'aonga');
+  assert.equal(result.garo, 'Asonga');
 });
 
 test('"sitting" still resolves to asongenga', async () => {
