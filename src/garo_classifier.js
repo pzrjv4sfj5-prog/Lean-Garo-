@@ -41,7 +41,16 @@ export const NUMBERS = {
 export const NUMBER_WORDS = {
   'one':1,'two':2,'three':3,'four':4,'five':5,
   'six':6,'seven':7,'eight':8,'nine':9,'ten':10,
-  'eleven':11,'twelve':12,'twenty':20,'hundred':100,'thousand':1000,
+  'eleven':11,'twelve':12,'twenty':20,'thirty':30,'forty':40,'fifty':50,
+  'sixty':60,'seventy':70,'eighty':80,'ninety':90,'hundred':100,'thousand':1000,
+  // 30-90 added 2026-09-10 (Claude B, live bug fix): only 'twenty' was
+  // present, so parseCountingPhrase() returned null for "forty one
+  // students" etc. — any tens word besides twenty silently failed to
+  // parse as a count, causing translationEngine.js to fall through to
+  // the wrong sov-assembly path instead of the correct classifier path.
+  // The existing compounding logic below (count>=20 && count%10===0)
+  // already generalizes to these per its own 2026-07-30 comment — no
+  // parsing-logic change needed, only the missing vocabulary.
 };
 
 export function parseCount(input) {
