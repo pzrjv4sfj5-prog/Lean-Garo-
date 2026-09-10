@@ -88,6 +88,29 @@ export const CLASSIFIER_MAP = {
   'pen':'ge','kolom':'ge','pencil':'ge',
   'fruit':'rong','fruits':'rong','mewa':'rong','bite':'rong','bi·te':'rong',
   'apple':'rong','mango':'rong',
+  // Added 2026-09-10 (Claude B), per data/garo_number_classifier_engine_machine_ready.json
+  // classifier_table + Owner chat confirmation same session. 'road' deliberately
+  // excluded here — contract file's confirmed_examples ("Rama dil roa sa") conflicts
+  // with the Owner's own chat shorthand ("Rama dilsa") on whether 'roa' is a real
+  // in-between classifier or not. Flagged, not guessed.
+  'mountain':'dot', // was previously unmapped -> fell to 'ge' default (wrong);
+  // A·bri dot sa confirmed_examples in the contract, Owner-reconfirmed in chat.
+  // NOTE: separate from this classifier fix, the noun VALUE the runtime ships for
+  // "mountain" is itself a known stale-override bug (corrections.json ships a
+  // superseded "A'bri" instead of compiled_dict.json's current verified "ha·bri")
+  // -- not touched here, out of scope for a classifier-only fix.
+  'village':'dam', // was previously unmapped -> fell to 'ge' default (wrong);
+  // Song dam sa confirmed_examples in the contract, Owner-reconfirmed in chat.
+  // Village's own noun ("Song") is master_dictionary confidence:unverified, not a
+  // runtime bug, unrelated to this classifier fix.
+  'banana':'ge', // now explicit (was previously an accidental match via the
+  // default fallback, not real exception logic) -- exception_priority 100 in the
+  // contract, must resolve before the general fruit->rong rule below.
+  'banana bunch':'akka', // NEW classifier, contract exception_priority 101, same
+  // noun as banana (Te·rik) per the contract's own worked example. Corresponding
+  // dictionary-phrase entry added in corrections.json so "banana bunch" actually
+  // resolves to a noun at all (previously a genuine dictionary gap, phrase fell
+  // through to the broken compound-split fallback).
   'alcohol':'rong','chu':'rong','beer':'rong',
   'merong':'rong', // rice (uncooked/grain); cooked rice ('mi') is a mass
   // noun counted via container word ('plate'), not this classifier — see
@@ -95,6 +118,9 @@ export const CLASSIFIER_MAP = {
   // 'rice' here, it's ambiguous between the two.
   'house':'te','nok':'te', // NEW classifier, native-confirmed 2026-08-14
   // (NV-073, Thangseng): 'nok te·sa' = 'one house'. Raka-carrying.
+  'car':'bol','gari':'bol', // NEW classifier, 2026-09-10, per contract
+  // Transport/Car row + Owner chat confirmation ('Gari bol sa'). No-raka
+  // (see RAKA_CLASSIFIERS below -- 'bol' deliberately not added there).
 };
 
 export const CLASSIFIERS = CLASSIFIER_MAP;
@@ -139,7 +165,11 @@ const RAKA_CLASSIFIERS = new Set(['mang', 'ge', 'gong', 'te']);
 // 'sak' removed 2026-09-05, NV-124 engine handoff: Thangseng confirmed
 // 2026-09-03 that sak is no-raka ('saksa', not 'sak·sa') — dictionary
 // data was fixed at the time, this was the deferred engine-side half.
-// No-raka classifiers: king, jol, pang, dot, rong, sak (suffixes attach directly)
+// No-raka classifiers: king, jol, pang, dot, rong, sak, dam, akka, bol
+// (suffixes attach directly). dam/akka/bol added 2026-09-10 (Claude B) per
+// Owner chat evidence: "A.bri dotsa", "Song damsa", "Te.rik akkasa",
+// "Gari bolsa" -- all fused with no raka dot, consistent with dot's
+// existing no-raka status.
 // rong confirmed no-raka 2026-08-01 from Thangseng's own typed examples
 // ("rongsa", "rongbonga" — no dot in either), see file header note.
 
