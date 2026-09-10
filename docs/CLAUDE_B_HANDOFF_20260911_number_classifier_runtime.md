@@ -12,6 +12,17 @@ dictionary rows).
 Claude A did not touch any of the files below — audit + data-layer
 fixes only, per standing role boundary.
 
+**UPDATE, same day, post-rebase:** a concurrent Claude B session
+(commits `e40f17e`/`9627230`/`e7c54cf`) landed while this doc was
+being written and fixed Bug 2 **for the `sak` classifier specifically**
+(41/55/67 students now correctly produce `chattro saksotbri sa` etc.,
+matching the approved surface exactly) plus bare-digit number parsing
+(now correctly routes through `number-engine`, independent of Claude
+A's data-layer digit-key supersession below). **Bugs 1, 3, 4, 5 are
+still live, and Bug 2 is still live for every classifier other than
+`sak`** (e.g. `41 cars` is still malformed) — re-verified live,
+post-rebase, table updated below.
+
 ## Bug 1 — `king` missing from `RAKA_CLASSIFIERS`
 `src/garo_classifier.js:90`: `RAKA_CLASSIFIERS = new Set(['mang', 'ge', 'gong', 'te'])`.
 `king` is missing, despite the dictionary-established, citation-backed
@@ -20,7 +31,7 @@ for `king`-classified nouns (e.g. "7 books") compile without the dot
 (`kingsni` instead of `king·sni`).
 **Fix:** add `'king'` to the set.
 
-## Bug 2 — 20–99 composition (`getClassifierSuffix`, `garo_classifier.js:100-102`)
+## Bug 2 — 20–99 composition (`getClassifierSuffix`, `garo_classifier.js:100-102`) — PARTIALLY FIXED (sak only)
 For n in 20-99, the code takes the two-word number-table form (e.g.
 `"Sotbri Sa"`, capitalized per its citation form) and does
 `.replace(/ /g, '·')` — blind space→dot substitution, no case
@@ -76,18 +87,21 @@ classifier-map should route through `countNoun`/`buildClassifierPhrase`
 regardless of whether that literal count was pre-seeded as a
 dictionary row.
 
-## Verification data (live `translate()` calls, this session)
-| Input | Actual output | Bug |
+## Verification data (live `translate()` calls, re-checked post-rebase against e7c54cf)
+| Input | Output | Status |
 |---|---|---|
-| 41 students | `chattro sakSotbri·sa` | 2 |
-| 55 students | `chattro sakSotbonga·bonga` | 2 |
-| 67 students | `chattro sakSotdok·sni` | 2 |
-| 100 students | `chattro ritcha saksa` | 3 |
-| one hundred dogs | `achak mang·sa` | 3, 4 |
-| seven mangoes | `Sni te·ga·chu` | 5 |
-| 7 books / 19 books | `ki·tap kingsni` / `ki·tap kingChi·sku` | 1 |
-| 41 cars | `gari bolSotbri·sa` | 1(no), 2 |
+| 41 students | `chattro saksotbri sa` | ✅ FIXED — matches approved surface exactly |
+| 55 students | `chattro saksotbonga bonga` | ✅ FIXED |
+| 67 students | `chattro saksotdok sni` | ✅ FIXED |
+| 100 students | `chattro ritcha saksa` | ❌ still Bug 3 — reads as count=1 |
+| one hundred dogs | `achak mang·sa` | ❌ still Bug 3/4 — "hundred" dropped |
+| seven mangoes | `Sni te·ga·chu` | ❌ still Bug 5 — bypasses classifier engine |
+| 7 books / 19 books | `ki·tap kingsni` / `ki·tap kingChi·sku` | ❌ still Bug 1 — no dot |
+| 41 cars | `gari bolSotbri·sa` | ❌ still Bug 2 for non-`sak` classifiers — `bol` not covered by the sak-specific fix |
+| 4 / 10 (bare digit) | `bri` / `chiking` via `number-engine` | ✅ FIXED — now routes correctly (previously stale dictionary junk) |
 
-Everything at/below ~20 for the classifiers the system was originally
-built against (mang, sak for 1-19) works correctly — this is purely a
-generalization gap above that range and for the exact-hundred case.
+**Remaining scope:** Bug 2's fix was scoped to `sak` only — needs
+generalizing to every classifier (`king`, `bol`, `mang`, etc.), which
+would likely also subsume Bug 1 (the missing-dot `king` case) if the
+same lowercase-and-space-join approach is applied uniformly instead of
+per-classifier. Bugs 3, 4, 5 are untouched.

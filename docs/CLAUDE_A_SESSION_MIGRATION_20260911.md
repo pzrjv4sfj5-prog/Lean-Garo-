@@ -67,6 +67,16 @@ Everything at/below ~20 for the classifiers the system was originally
 built against (mang, sak for 1-19) works correctly — this is purely a
 generalization gap.
 
+**Post-rebase update, same session:** a concurrent Claude B session
+(`e40f17e`/`9627230`/`e7c54cf`) landed while this was being written
+and fixed Bug 2 for the `sak` classifier specifically (41/55/67
+students now match the approved surface exactly) plus bare-digit
+number parsing (now correctly routes through `number-engine`). Bugs
+1, 3, 4, 5 remain live, and Bug 2 remains live for every other
+classifier (`bol`/cars confirmed still broken) — re-verified live
+post-rebase, handoff doc updated to reflect current state before
+push.
+
 **Two data-layer fixes made**, using only already-established
 evidence already on record (no new native relay needed):
 - 10 malformed bare-digit English keys (e.g. `english="4"`,
