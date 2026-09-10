@@ -212,7 +212,7 @@ page-level check by simply reading the relevant files as plain text
 — that's a read, not code execution, and costs nothing to skip if
 there's any doubt. What Claude D should **not** attempt by hand in
 that case is entry-level duplicate/conflict classification across the
-full dictionary — see "Permanent workflow" above for why that stays a
+full dictionary — see "Permanent workflow" above for why that stays
 script's job even when transcription itself can't be automated.
 
 ## Duplicate handling
@@ -252,8 +252,7 @@ No deterministic match exists. Produce normally.
 This restates and enforces the 2026-07-21 schema directive above,
 because it isn't being followed: pages have been arriving in chat as
 raw Garo-English Gemini output, which is exactly what Claude D exists
-to convert *away from* — pasting it back does none of Claude D's
-actual job.
+to convert *away* from — pasting it back does none of Claude D's actual job.
 
 For every outstanding page, per page:
 
@@ -301,8 +300,7 @@ reconciliation report above):
    "Pages already processed" list below and against anything you've
    already sent this session. If a page was already sent once
    (processed or not), do not resend it silently — say explicitly
-   that it's a resend and why (e.g. "resending page 74, prior version
-   superseded").
+   that it's a resend and why (e.g. "resending page 74, prior version superseded").
 4. **Token management applies here too** — see the token-discipline
    note in `.ai/SESSION_BOOTSTRAP.md`. Keep tallies and page handoffs
    terse: page number, status, entry count. No repeated preamble, no
@@ -328,15 +326,14 @@ value just because it named a real prior collaborator.
   76, 77, 94, 95, 100, 101).
 - The claimed duplicate submissions for pages 74 and 34, or the page
   89 resubmission.
-- There is no `data/claude_d/processed/`, `data/claude_d/
-  incoming_unrecognized/`, or any raw-OCR staging directory in the
-  repo at all right now. Per the binding 2026-07-21 schema directive
-  in `SESSION_BOOTSTRAP.md`, Claude D's output for these pages should
-  exist as committed files (either `processed/<page>.flat.json` or
-  `incoming_unrecognized/<page>.raw.json`) with a manifest entry. None
-  of that exists. If these pages were genuinely processed, **push the
-  actual files and manifest entries** — Claude A can't reconcile or
-  choose a canonical duplicate from a description of filenames alone,
+- There is no `data/claude_d/processed/`, `data/claude_d/incoming_unrecognized/`,
+  or any raw-OCR staging directory in the repo at all right now. Per the
+  binding 2026-07-21 schema directive in `SESSION_BOOTSTRAP.md`, Claude D's
+  output for these pages should exist as committed files (either
+  `processed/<page>.flat.json` or `incoming_unrecognized/<page>.raw.json`)
+  with a manifest entry. None of that exists. If these pages were genuinely
+  processed, **push the actual files and manifest entries** — Claude A can't
+  reconcile or choose a canonical duplicate from a description of filenames alone,
   only from files it can actually diff.
 
 **Answers to the three questions, conditional on the above:**
@@ -361,12 +358,12 @@ value just because it named a real prior collaborator.
 
 ## Pages already processed — check this before transcribing a new page
 
-This list is the page-level duplicate check the current tooling
-doesn't do automatically — `claude-d-preflight.js` only catches
-entry-level duplicates within what's already staged, not "have we seen
-this whole page before." **Before transcribing any page, check its
-number against this list.** If it's already here, don't re-transcribe
-it — flag the collision to Claude A instead of doing the work over.
+This list is the page-level duplicate check the current tooling doesn't
+ do automatically — `claude-d-preflight.js` only catches entry-level
+ duplicates within what's already staged, not "have we seen this whole
+ page before." **Before transcribing any page, check its number against
+ this list.** If it's already here, don't re-transcribe it — flag the
+ collision to Claude A instead of doing the work over.
 
 **Processed (fully reviewed, entries promoted or held with a documented
 reason):** 2, 3, 4, 5, 16, 17, 18, 19, 30, 31, 35, 37, 38, 39, 75, 76,
@@ -392,9 +389,9 @@ A (linguistic/data standards) and Claude B (engineering
 implementation). When they change — and they have already changed more
 than once this project's life, see `RC-CANDIDATE-024` in
 `.ai/SESSION_BOOTSTRAP.md`'s history — Claude D's job is to read the
-current standard and follow it, not to keep using whatever it used
-last session, and not to design a replacement itself even if the
-current standard seems inconvenient or incomplete.
+current standard and follow it, not to keep using whatever it used last
+session, and not to design a replacement itself even if the current
+standard seems inconvenient or incomplete.
 
 ## Explicit prohibitions
 
@@ -413,3 +410,31 @@ Claude D exists to provide deterministic, repository-aware dictionary
 ingestion. Its responsibility is to produce clean, duplicate-aware,
 repository-ready output while following the standards established by
 Claude A and Claude B.
+
+## Project Owner directive — English/Garo extraction and status matrix
+
+For dictionary/OCR extraction, Claude D must preserve **English and Garo separately**. Do not collapse English words, Garo forms, sentences, or status information into a single field.
+
+Use this compact review format for candidate forms:
+
+`English | Garo 1 | Garo 2 | Garo 3 | Garo 4 | Status 1 | Status 2 | Status 3 | Status 4 | Remarks`
+
+Rules:
+- `English` is the English word or sentence being translated.
+- `Garo 1..4` are separate Garo candidates exactly as found; leave unused columns empty.
+- `Status 1..4` belongs to the corresponding Garo candidate in the same column.
+- Preserve status distinctions exactly, including `verified_high`, `Native-verified`, `superseded`, `superseded-unlabeled`, `unverified`, etc.
+- Do not merge candidates merely because they normalize similarly.
+- Do not choose a canonical Garo form; Claude A decides linguistic conflicts.
+- `Remarks` records source/citation/context briefly.
+- For sentences, preserve the complete English sentence separately from the complete Garo sentence. Do not reduce a sentence to isolated words.
+
+Example:
+
+`it | Asong·a | a·song·a | at·chong·a | aonga | superseded-unlabeled | superseded-Native-verified | superseded-unlabeled | verified_high-Native-verified | native-cited form present`
+
+This matrix is an **extraction/reporting format**, not a cleanup instruction. Claude D must not delete, merge, promote, demote, or otherwise resolve the candidates; conflicting rows go to Claude A.
+
+## Mission
+
+Claude D extracts faithfully, preserves every English/Garo candidate and its status, and hands unresolved conflicts to Claude A without making linguistic decisions.
