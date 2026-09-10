@@ -135,6 +135,28 @@ function composeLargeBareNumber(n) {
   return parts.join(' ');
 }
 
+// Shared classifier+number-word fusion for n in 1-99, including the sak
+// (human) 20-99 surface-form exception (Owner directive 2026-09-10,
+// "Chattro saksotbri sa"): tens word fuses straight onto the classifier,
+// lowercased, keeping the original space before the trailing units word
+// -- NOT the general n>19 rule (native-confirmed 2026-06-28 for
+// mang/animals: tens+units join to the classifier with a raka dot, e.g.
+// "mang·Kolgrik·sa"). Used by both buildClassifierPhrase (n<100) and
+// buildLargeClassifierPhrase's remHundred branch (n>=100 with a 1-99
+// remainder, e.g. "999 students" = ritcha sku + this tail for n=99) --
+// previously only the former called the sak branch, so "999/141 students"
+// still shipped the old dot-joined form even after the <100 fix.
+function classifierTail(classifier, n) {
+  if (classifier === 'sak' && n > 19) {
+    const raw = toGaroNumberImported(n); // e.g. "Sotbri sa" (n=41)
+    if (!raw) return null;
+    return `${classifier}${raw.charAt(0).toLowerCase()}${raw.slice(1)}`;
+  }
+  const suffix = getClassifierSuffix(n);
+  if (suffix === null) return null;
+  return RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·${suffix}` : `${classifier}${suffix}`;
+}
+
 function buildLargeClassifierPhrase(classifier, n) {
   const thousands = Math.floor(n / 1000);
   const remThousand = n % 1000;
@@ -145,9 +167,8 @@ function buildLargeClassifierPhrase(classifier, n) {
   if (hundreds > 0) prefixParts.push(hundreds === 1 ? 'ritcha' : `ritcha ${bareNumberWord(hundreds)}`);
   let tail;
   if (remHundred > 0) {
-    const suffix = getClassifierSuffix(remHundred);
-    if (suffix === null) return null;
-    tail = RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·${suffix}` : `${classifier}${suffix}`;
+    tail = classifierTail(classifier, remHundred);
+    if (tail === null) return null;
   } else if (prefixParts.length > 0) {
     const last = prefixParts.pop();
     const attach = RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·sa` : `${classifier}sa`;
@@ -164,24 +185,10 @@ export function buildClassifierPhrase(classifier, count) {
   if (n >= 100) {
     return buildLargeClassifierPhrase(classifier, n);
   }
-  // sak (human) 20-99: Owner directive 2026-09-10, "Chattro saksotbri sa"
-  // -- differs from the general n>19 rule below (which the 2026-06-28
-  // native confirmation established for 'mang'/animals: tens+units join
-  // with a raka dot, e.g. "mang·Kolgrik·sa"). For 'sak' specifically, the
-  // tens word fuses straight onto the classifier (no separator) and the
-  // ORIGINAL space before the trailing units word is kept, not converted
-  // to a dot: classifier + lowercase(tens) + " " + units.
-  if (classifier === 'sak' && n > 19) {
-    const raw = toGaroNumberImported(n); // e.g. "Sotbri sa" (n=41)
-    if (!raw) return null;
-    return `${classifier}${raw.charAt(0).toLowerCase()}${raw.slice(1)}`;
-  }
-  const suffix = getClassifierSuffix(n);
-  if (suffix === null) return null;
-  return RAKA_CLASSIFIERS.has(classifier)
-    ? `${classifier}·${suffix}`
-    : `${classifier}${suffix}`;
+  return classifierTail(classifier, n);
 }
+
+
 
 export function toGaroNumber(n) {
   const num = parseInt(n);
