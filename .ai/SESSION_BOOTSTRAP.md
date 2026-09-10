@@ -1,5 +1,17 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-09C by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-09E/NV-155 by Claude A
+(session close — closed NV-153 items 1 and 3 via a direct real-time
+Thangseng transcript: "i want to pray" = Anga bi·na skenga (not
+bi·a·na/sikenga); skenga (from ska/want) vs sikenga (from sika/
+push-blow) confirmed as distinct roots. Also: bamboo shoot promoted
+to VERIFIED/HIGH + fermented bamboo shoot added; listen (imperative)
+= Knabo/Knatimbo added alongside the existing general-verb cluster;
+"what did he eat?" added with a temporal-word-implies-past grammar
+note flagged for a future rule; sit reconfirmed, no change. Full
+detail: docs/THANGSENG_NATIVE_VALIDATION.md NV-155 entry and
+.ai/WORKSTATE.yaml claude_a.next_action. Gate green: 8264/8264,
+379/379, 0 new violations. Pushed clean, HEAD 3b79b6d.)
+Prior: 2026-09-09C by Claude A
 (session close — NV-153 partially closed (relay items 2 `ska` trailing-dot
 and 4 `-ko`-drop corroborated, items 1/3 still open, awaiting Thangseng);
 Project Owner directives actioned: walk promoted to `Re·a` at the

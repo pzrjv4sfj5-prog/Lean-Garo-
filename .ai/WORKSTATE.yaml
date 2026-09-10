@@ -313,7 +313,36 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-09C (Claude A, session complete -- see
+  next_action: '2026-09-09E/NV-155 (Claude A, session complete -- see
+    docs/THANGSENG_NATIVE_VALIDATION.md NV-155 entry for full detail,
+    this is a pointer only). Resumed from 20260909D at HEAD 19c0efb,
+    resync clean. Closed NV-153 items 1 and 3 via a direct real-time
+    Thangseng WhatsApp transcript (relayed by Tridip): "i want to
+    pray" = Anga bi·na skenga (not bi·a·na/sikenga -- confirmed
+    transcription slip); skenga (from ska/want) vs sikenga (from
+    sika/push-blow) confirmed as distinct roots, not aspect variants
+    -- both prior bi·a·na rows deleted per explicit Project Owner
+    instruction, live corrections.json override fixed to match (was
+    a live bug shipping the stale value). Also from the same
+    transcript: bamboo shoot promoted to VERIFIED/HIGH, fermented
+    bamboo shoot added; listen (imperative) = Knabo/Knatimbo added
+    alongside (not merged into) the existing general-verb Knachika
+    cluster; "what did he eat?" = Bia maiko cha·a? added, with a
+    temporal-word-implies-past grammar observation flagged for a
+    future rule (not built this session); sit = Asonga reconfirmed,
+    no change. Also reviewed .ai/CLAUDE_A_20260909_EVIDENCE_CLOSURE.json
+    (a GPT-drafted, not-native-transcript version of similar content)
+    per its own review-only workflow -- found it didn''t cleanly match
+    the real transcript on the pray item (wrong root spelling and
+    suffix) and reported that discrepancy instead of acting on it;
+    the real transcript pasted later in the same session superseded
+    it entirely. Gate green: 8264/8264 dictionary, 9/9 grammatical
+    corrections, 379/379 unit tests, 0 new repository-intelligence
+    violations. Live-verified via translate(). Pushed clean, HEAD
+    3b79b6d verified == origin/main, no local/uncommitted changes.
+    Runtime Handoff: None -- all new/changed keys confirmed at
+    runtime this session.'
+  next_action_prior_20260909C: '2026-09-09C (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260909C.md for full detail, this is
     a pointer only). Resumed from 20260909B at HEAD b7d4ec3, resync clean
     (1 intervening docs-only Claude B commit, no conflict). NV-153
