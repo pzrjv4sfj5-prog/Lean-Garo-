@@ -2440,3 +2440,39 @@ prefix fused form before anything downstream consumes it. See
 
 Remainder of the 1–100+ table (1–10, 20–99, 100+) not yet reviewed —
 next task.
+
+## Session close — 2026-09-10, Claude A, full number table push + classifier engine review
+
+Resumed from `docs/CLAUDE_A_SESSION_MIGRATION_20260909E.md`, resync
+clean at `a69baca`. Continuation of same-day session (see prior entry
+above for eleven–nineteen batch).
+
+Project Owner reviewed the full 1–100 table in chat, then confirmed
+200–900, 1001–1900, 2000, 10000, 100000. Pushed to
+`master_dictionary.json`: 17 existing bases promoted
+`unverified`→`verified_high` (values unchanged), 108 new entries added
+(72 compounds for 21–99, 36 landmarks for 100–100000), all sourced from
+`data/garo_number_system_machine_ready.json` (GPT-drafted, landed by
+Claude B) and cross-checked against master before push. Gate green:
+8372/8372, 9/9, 0 new violations, 379/379. Live-verified via
+`translate()` across the range.
+
+Read and explained `data/garo_number_classifier_engine_machine_ready.json`
+(classifier/category map, number-engine pipeline, default vs.
+human-40+-fused surface rules) to the Project Owner in chat — no push
+needed there, explanation only. Normalized a bullet (`•`) vs. raka-dot
+(`·`) transcription-typo pattern in that file (8 fields) — known
+pattern per NV-130/NV-124/NV-154 precedent; file isn't wired into any
+runtime code yet, so this was a data-only fix with zero live-bug risk.
+Gate re-verified green after.
+
+**Handoff to Claude B:** both GPT machine-ready files' 11–19
+composition rule ("Chiking SPACE unit") is wrong — needs the
+`Chi·`-prefix fused form before either file is consumed at runtime.
+Full detail in `.ai/WORKSTATE.yaml` `claude_b.pending_handoff_from_claude_a_20260910`.
+
+**Next Claude A:** number table push (1–100000, per Project Owner
+spec) is complete — no remaining task there. Classifier engine file is
+linguistically reviewed and ready for Claude B integration once the
+11–19 fix lands; nothing further for Claude A to do on it unless new
+categories/nouns are added to that file later.
