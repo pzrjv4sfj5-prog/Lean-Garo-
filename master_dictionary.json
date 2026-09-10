@@ -1021,7 +1021,8 @@
     "english": "one",
     "garo": "Sa",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "two",
@@ -1034,13 +1035,15 @@
     "english": "three",
     "garo": "Gittam",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "four",
     "garo": "Bri",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "five",
@@ -1053,31 +1056,36 @@
     "english": "six",
     "garo": "Dok",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "seven",
     "garo": "Sni",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "eight",
     "garo": "Chet",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "nine",
     "garo": "Sku",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "ten",
     "garo": "Chiking",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "eleven",
@@ -1145,8 +1153,9 @@
   {
     "english": "twenty",
     "garo": "Kolgrik",
-    "category": "general",
-    "confidence": "unverified"
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "twenty-one",
@@ -1157,44 +1166,51 @@
   {
     "english": "thirty",
     "garo": "Kolatchi",
-    "category": "general",
-    "confidence": "unverified"
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "forty",
     "garo": "Sotbri",
-    "category": "general",
-    "confidence": "unverified"
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "fifty",
     "garo": "Sotbonga",
-    "category": "general",
-    "confidence": "unverified"
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "sixty",
     "garo": "Sotdok",
-    "category": "general",
-    "confidence": "unverified"
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "seventy",
     "garo": "Sotsni",
-    "category": "general",
-    "confidence": "unverified"
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "eighty",
     "garo": "Sotchet",
-    "category": "general",
-    "confidence": "unverified"
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "ninety",
     "garo": "Sotsku",
-    "category": "general",
-    "confidence": "unverified"
+    "category": "numbers",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "hundred",
@@ -1206,7 +1222,8 @@
     "english": "one thousand",
     "garo": "Hajalsa",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
     "english": "first (ordinal)",
@@ -78879,5 +78896,761 @@
     "category": "phrases",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — NV-155 (2026-09-09, direct Thangseng WhatsApp transcript relayed by Tridip). Thangseng noted a grammar point worth flagging as a rule candidate (not yet built into a RULE-XXX entry, Claude A's own call for a future session): Garo can carry past sense via an explicit past-time word alone, with the verb staying in normal/present form — e.g. 'Mijalo na·a maiko daka?' ('what did you do yesterday?') is grammatical despite 'daka' being unmarked for tense, because 'Mijalo' (yesterday) already carries the past sense. Contrast with English, where the verb must also inflect for past even with an explicit time word."
+  },
+  {
+    "english": "twenty one",
+    "garo": "Kolgrik Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty two",
+    "garo": "Kolgrik Gni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty three",
+    "garo": "Kolgrik Gittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty four",
+    "garo": "Kolgrik Bri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty five",
+    "garo": "Kolgrik Bonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty six",
+    "garo": "Kolgrik Dok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty seven",
+    "garo": "Kolgrik Sni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty eight",
+    "garo": "Kolgrik Chet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "twenty nine",
+    "garo": "Kolgrik Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty one",
+    "garo": "Kolatchi Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty two",
+    "garo": "Kolatchi Gni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty three",
+    "garo": "Kolatchi Gittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty four",
+    "garo": "Kolatchi Bri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty five",
+    "garo": "Kolatchi Bonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty six",
+    "garo": "Kolatchi Dok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty seven",
+    "garo": "Kolatchi Sni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty eight",
+    "garo": "Kolatchi Chet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "thirty nine",
+    "garo": "Kolatchi Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty one",
+    "garo": "Sotbri Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty two",
+    "garo": "Sotbri Gni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty three",
+    "garo": "Sotbri Gittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty four",
+    "garo": "Sotbri Bri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty five",
+    "garo": "Sotbri Bonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty six",
+    "garo": "Sotbri Dok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty seven",
+    "garo": "Sotbri Sni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty eight",
+    "garo": "Sotbri Chet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "forty nine",
+    "garo": "Sotbri Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty one",
+    "garo": "Sotbonga Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty two",
+    "garo": "Sotbonga Gni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty three",
+    "garo": "Sotbonga Gittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty four",
+    "garo": "Sotbonga Bri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty five",
+    "garo": "Sotbonga Bonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty six",
+    "garo": "Sotbonga Dok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty seven",
+    "garo": "Sotbonga Sni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty eight",
+    "garo": "Sotbonga Chet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fifty nine",
+    "garo": "Sotbonga Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty one",
+    "garo": "Sotdok Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty two",
+    "garo": "Sotdok Gni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty three",
+    "garo": "Sotdok Gittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty four",
+    "garo": "Sotdok Bri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty five",
+    "garo": "Sotdok Bonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty six",
+    "garo": "Sotdok Dok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty seven",
+    "garo": "Sotdok Sni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty eight",
+    "garo": "Sotdok Chet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sixty nine",
+    "garo": "Sotdok Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy one",
+    "garo": "Sotsni Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy two",
+    "garo": "Sotsni Gni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy three",
+    "garo": "Sotsni Gittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy four",
+    "garo": "Sotsni Bri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy five",
+    "garo": "Sotsni Bonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy six",
+    "garo": "Sotsni Dok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy seven",
+    "garo": "Sotsni Sni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy eight",
+    "garo": "Sotsni Chet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seventy nine",
+    "garo": "Sotsni Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty one",
+    "garo": "Sotchet Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty two",
+    "garo": "Sotchet Gni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty three",
+    "garo": "Sotchet Gittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty four",
+    "garo": "Sotchet Bri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty five",
+    "garo": "Sotchet Bonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty six",
+    "garo": "Sotchet Dok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty seven",
+    "garo": "Sotchet Sni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty eight",
+    "garo": "Sotchet Chet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eighty nine",
+    "garo": "Sotchet Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety one",
+    "garo": "Sotsku Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety two",
+    "garo": "Sotsku Gni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety three",
+    "garo": "Sotsku Gittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety four",
+    "garo": "Sotsku Bri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety five",
+    "garo": "Sotsku Bonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety six",
+    "garo": "Sotsku Dok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety seven",
+    "garo": "Sotsku Sni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety eight",
+    "garo": "Sotsku Chet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ninety nine",
+    "garo": "Sotsku Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 21-99 = tens SPACE unit, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred",
+    "garo": "Ritchasa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred one",
+    "garo": "Ritchasa Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred ten",
+    "garo": "Ritchasa Chiking",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred twenty",
+    "garo": "Ritchasa Kolgrik",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred thirty",
+    "garo": "Ritchasa Kolatchi",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred forty",
+    "garo": "Ritchasa Sotbri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred fifty",
+    "garo": "Ritchasa Sotbonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred sixty",
+    "garo": "Ritchasa Sotdok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred seventy",
+    "garo": "Ritchasa Sotsni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred eighty",
+    "garo": "Ritchasa Sotchet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred ninety",
+    "garo": "Ritchasa Sotsku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred ninety nine",
+    "garo": "Ritchasa Sotsku Sku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "two hundred",
+    "garo": "Ritchagni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "three hundred",
+    "garo": "Ritchagittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "four hundred",
+    "garo": "Ritchabri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "five hundred",
+    "garo": "Ritchabonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "six hundred",
+    "garo": "Ritchadok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "seven hundred",
+    "garo": "Ritchasni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eight hundred",
+    "garo": "Ritchachet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "nine hundred",
+    "garo": "Ritchasku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 100-999 = Ritcha + hundred-multiplier, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand one",
+    "garo": "Hajalsa Sa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand ten",
+    "garo": "Hajalsa Chiking",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand one hundred",
+    "garo": "Hajalsa Ritchasa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand one hundred ten",
+    "garo": "Hajalsa Ritchasa Chiking",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand one hundred twenty",
+    "garo": "Hajalsa Ritchasa Kolgrik",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand two hundred",
+    "garo": "Hajalsa Ritchagni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand three hundred",
+    "garo": "Hajalsa Ritchagittam",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand four hundred",
+    "garo": "Hajalsa Ritchabri",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand five hundred",
+    "garo": "Hajalsa Ritchabonga",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand six hundred",
+    "garo": "Hajalsa Ritchadok",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand seven hundred",
+    "garo": "Hajalsa Ritchasni",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand eight hundred",
+    "garo": "Hajalsa Ritchachet",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one thousand nine hundred",
+    "garo": "Hajalsa Ritchasku",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "two thousand",
+    "garo": "Gni Hajalsa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 1000-9999 = Hajal + thousand-multiplier SPACE remainder, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ten thousand",
+    "garo": "Hajalchikking",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 10000/100000 = dedicated base word, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "one hundred thousand",
+    "garo": "Lakhsa",
+    "category": "numbers",
+    "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 10000/100000 = dedicated base word, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
   }
 ]
