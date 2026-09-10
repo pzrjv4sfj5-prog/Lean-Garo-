@@ -48,7 +48,7 @@ const CONFIRMED_LOANWORDS = new Set(CONFIRMED_LOANWORDS_RAW.words.map(w => w.toL
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
-import { countNoun, parseCountingPhrase } from './garo_classifier.js';
+import { countNoun, countNounWithClassifier, parseCountingPhrase } from './garo_classifier.js';
 import { toGaroNumber as toGaroNumberBare } from './number_engine.js';
 import { corrections, normalizeEntry, EN_INDEX, lookupGaro } from './lookupEngine.js';
 import { applyNegation } from './morphologyEngine.js';
@@ -290,7 +290,9 @@ export async function translate(input) {
       if (garoNoun) resolvedNoun = countPhrase.nounOnly;
     }
     if (garoNoun) {
-      const classifierResult = countNoun(garoNoun, countPhrase.count, resolvedNoun);
+      const classifierResult = countPhrase.unit
+        ? countNounWithClassifier(garoNoun.toLowerCase(), countPhrase.count, countPhrase.unit)
+        : countNoun(garoNoun, countPhrase.count, resolvedNoun);
       // countNoun returns null for counts it can't confidently handle yet
       // (currently: 20+, pending native-speaker confirmation of how
       // classifiers compose with multi-word number forms — see

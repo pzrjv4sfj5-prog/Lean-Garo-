@@ -61,6 +61,20 @@ export const CLASSIFIER_MAP = {
   'mountain':'dot','village':'dam',
   'banana':'ge','banana bunch':'akka',
   'alcohol':'rong','chu':'rong','beer':'rong',
+  'water':'rong','chi':'rong', // contract Drink/Water row, confirmed_examples
+  // "Chi rong sa" -- uses rong's already-established no-raka rule.
+  'egg':'rong', // contract Egg row (classifier_or_unit: rong). No
+  // confirmed_examples given, but rong's no-raka fusion is independently
+  // established (rongsa/rongbonga/Chi rong sa above) so this follows the
+  // same convention, not a new/separate guess.
+  'tool':'se','tools':'se', // contract Tools row. NOTE: 'tool'/'tools'
+  // is a genuine dictionary gap -- not in master_dictionary.json at all,
+  // so this mapping has no noun to attach to yet; added defensively for
+  // whenever the noun exists. RAKA BEHAVIOR UNVERIFIED for 'se' -- no
+  // confirmed_examples anywhere in this repo. Defaulted to no-raka
+  // (see RAKA_CLASSIFIERS below -- 'se' deliberately not added there)
+  // as the majority-pattern guess, flagged for native review, not
+  // presented as confirmed.
   'merong':'rong', // rice (uncooked/grain); cooked rice ('mi') is a mass
   // noun counted via container word ('plate'), not this classifier — see
   // master_dictionary.json 'one plate of rice' note. Do not map generic
@@ -203,6 +217,22 @@ const IRREGULAR_PLURALS = {
   'sheep': 'sheep', 'fish': 'fish', 'deer': 'deer',
 };
 
+// Measurement/serving unit words (2026-09-10, Claude B, per Owner
+// contract's Measurement/Food categories: kg=weight, litre=liquid volume,
+// plate=serving). Recognized only as the FIRST word of the noun phrase
+// (optionally followed by "of"), stripped before normal noun resolution.
+// RAKA BEHAVIOR UNVERIFIED for all three -- no native-confirmed example
+// exists anywhere in this repo (unlike mountain/village/car/banana, which
+// all had explicit confirmed_examples). Defaulted to no-raka below
+// (RAKA_CLASSIFIERS unchanged, so these fall to the no-raka branch) as
+// the majority-pattern guess, NOT a confirmed rule -- flag for native
+// review before treating "kgsa"/"litresa"/"platesa" as settled.
+const UNIT_WORDS = {
+  'kg': 'kg', 'kilogram': 'kg', 'kilograms': 'kg',
+  'litre': 'litre', 'litres': 'litre', 'liter': 'litre', 'liters': 'litre',
+  'plate': 'plate', 'plates': 'plate',
+};
+
 export function parseCountingPhrase(input) {
   if (!input) return null;
   const lower = input.toLowerCase().trim();
@@ -218,7 +248,14 @@ export function parseCountingPhrase(input) {
       consumed = 2;
     }
   }
-  const englishNoun = words.slice(consumed).join(' ');
+  let remaining = words.slice(consumed);
+  let unit = null;
+  if (remaining.length > 0 && UNIT_WORDS[remaining[0]]) {
+    unit = UNIT_WORDS[remaining[0]];
+    remaining = remaining.slice(1);
+    if (remaining[0] === 'of') remaining = remaining.slice(1);
+  }
+  const englishNoun = remaining.join(' ');
   if (!englishNoun) return null;
   const singular = IRREGULAR_PLURALS[englishNoun] || englishNoun.replace(/s$/, '');
   const nounWords = englishNoun.split(' ');
@@ -226,7 +263,7 @@ export function parseCountingPhrase(input) {
   const nounOnly = nounWords.length > 1
     ? (IRREGULAR_PLURALS[lastWord] || lastWord.replace(/s$/, ''))
     : singular;
-  return { count, englishNoun: singular, originalNoun: englishNoun, nounOnly };
+  return { count, englishNoun: singular, originalNoun: englishNoun, nounOnly, unit };
 }
 
 export function countNoun(garoNoun, count, englishNoun) {
