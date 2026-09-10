@@ -3766,7 +3766,6 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the cow`: candidates — `Matchu` (weak/OCR) — shipped: `Matchu`
 - `the crow`: candidates — `Do·ka` (weak/OCR) — shipped: `Do·ka`
 - `the cry`: candidates — `Grap·a` (weak/OCR) — shipped: `Grap·a`
-- `the cucumber`: candidates — `Te·e` (weak/OCR) — shipped: `Te·e`
 - `the custard apple`: candidates — `Atapol` (weak/OCR) — shipped: `Atapol`
 - `the dark night after the full moon; complete darkness before new moon.`: candidates — `Jabitsim` (weak/OCR) — shipped: `Jabitsim`
 - `the daughter`: candidates — `Demechik` (weak/OCR) — shipped: `Demechik`

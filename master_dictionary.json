@@ -295,7 +295,7 @@
     "english": "cucumber",
     "garo": "Te·e",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'cucumber' has VERIFIED/HIGH form(s) ['so·sra']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
+    "notes": "SUPERSEDED — Project Owner directive docs/PROJECT_OWNER_CUCUMBER_AND_OPEN_ITEMS_20260909.json (2026-09-09): only 'temit' may remain active for english key 'cucumber' unless a future form is explicitly introduced by the Project Owner or Thangseng. Previously VERIFIED/HIGH (so·sra) / already-superseded (Te·e); retained per citation discipline, not deleted. Not authoritative for compile.",
     "confidence": "superseded"
   },
   {
@@ -17283,7 +17283,15 @@
     "english": "the cucumber",
     "garo": "Te·e",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — Project Owner directive docs/PROJECT_OWNER_CUCUMBER_AND_OPEN_ITEMS_20260909.json (2026-09-09): only 'temit' may remain active for the 'cucumber' lexical item (bare key and article-prefixed key alike). Retained per citation discipline, not deleted."
+  },
+  {
+    "english": "the cucumber",
+    "garo": "temit",
+    "category": "general",
+    "notes": "Added per Project Owner directive docs/PROJECT_OWNER_CUCUMBER_AND_OPEN_ITEMS_20260909.json (2026-09-09), mirroring the bare-key 'cucumber' -> 'temit' fix for consistency across the article-prefixed key used by the runtime's a/an/the SUBJECT-is lookup path.",
+    "confidence": "verified_high"
   },
   {
     "english": "the mustard leaves",
@@ -21438,7 +21446,14 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "SUPERSEDED — Project Owner directive docs/PROJECT_OWNER_CUCUMBER_AND_OPEN_ITEMS_20260909.json (2026-09-09): only 'temit' may remain active for english key 'cucumber' unless a future form is explicitly introduced by the Project Owner or Thangseng. Previously VERIFIED/HIGH (so·sra) / already-superseded (Te·e); retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "cucumber",
+    "garo": "temit",
+    "category": "general",
+    "notes": "Added per Project Owner directive docs/PROJECT_OWNER_CUCUMBER_AND_OPEN_ITEMS_20260909.json (2026-09-09): canonical/VERIFIED form for english key 'cucumber'. so·sra and Te·e suspended in the same pass.",
     "confidence": "verified_high"
   },
   {
