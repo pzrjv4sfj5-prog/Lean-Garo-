@@ -1158,12 +1158,6 @@
     "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10), cross-checked against data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Value unchanged, confidence promoted from unverified."
   },
   {
-    "english": "twenty-one",
-    "garo": "Kolgrik·sa",
-    "category": "numbers",
-    "confidence": "unverified"
-  },
-  {
     "english": "thirty",
     "garo": "Kolatchi",
     "category": "numbers",
@@ -78657,13 +78651,6 @@
     "category": "verbs",
     "confidence": "unverified",
     "notes": "UNVERIFIED/HIGH — NV-138 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): new root, past-tense 'took/needed [time]' from the Williamnagar->Tura duration sentence. Contrast with NV-139's 'nangaia' ('it takes', different tense/aspect) -- the two are NOT interchangeable, flagged for explicit confirmation rather than assumed as simple allomorphs."
-  },
-  {
-    "english": "two",
-    "garo": "gnisan",
-    "category": "numbers",
-    "confidence": "unverified",
-    "notes": "UNVERIFIED/HIGH — NV-138 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening): 'gnisan' relayed for 'two' inside the Williamnagar->Tura duration sentence. Existing dictionary root for 'two' is 'Gni' (also unverified) -- not merged, see note on that row and docs/THANGSENG_RELAY_QUESTION_20260906.md."
   },
   {
     "english": "only",
