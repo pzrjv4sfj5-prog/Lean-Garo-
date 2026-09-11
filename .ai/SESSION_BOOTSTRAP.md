@@ -1,5 +1,27 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-10 by Claude B
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-11 by Claude B
+(session close, zero-runtime, per explicit Project Owner instruction — keep
+open items pending for next session. Shipped 5 commits this session
+(cf06844/acd9816/e40f17e/9627230/e7c54cf): bare-digit tens words 30-90;
+mountain/village/banana/banana-bunch/car classifiers; bare-digit number
+parsing (was silently returning "sa" for e.g. "41" alone); road→dil per
+Owner directive; sak (human) 20-99 surface form fixed for both <100 and
+100+ paths; kg/litre/plate measurement-unit recognition (was a genuine
+silent-drop bug, not just a missing mapping); water/egg→rong; se(tools)
+mapped defensively (dictionary gap, no noun yet). One real rebase conflict
+handled mid-session against Claude A's concurrent edits to the same file —
+resolved keeping both sides' content in full. NOT started, kept pending
+per explicit instruction: Claude A's full linguistic re-audit handoff
+(docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md, 5 runtime
+generation bugs, all independently re-verified live before this close).
+Also open: vegetables dictionary-key mismatch (plural-only key), tool/tools
+dictionary gap, kg/litre/plate/se raka behavior unverified. CLOSED this
+session: mountain noun spelling (Owner directive confirmed a'bri). Gate
+clean: repository-intelligence.js 0 new violations, resync-stale-overrides.mjs
+0 candidates, runtime-error-sweep.mjs 0 errors/14972 calls, 379/379 unit
+tests. Full detail: .ai/WORKSTATE.yaml claude_b.next_action and
+docs/CLAUDE_B_SESSION_MIGRATION_20260911.md.)
+Prior: 2026-09-10 by Claude B
 (session close, zero-runtime, PENDING per Project Owner instruction — fixed
 cucumber: so·sra/Te·e superseded, temit made sole active candidate for
 'cucumber' and 'the cucumber', verified end-to-end via real translate(),
