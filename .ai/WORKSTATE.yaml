@@ -1525,7 +1525,16 @@ claude_a:
     to a different, still-VERIFIED but distinct construction (mangmang).
     No engine code touched by Claude A. See handoff doc for exact
     input/output pairs.'
-  pending_thangseng_questions: '2026-09-07C (Claude A): item 7 added to
+  pending_thangseng_questions: '2026-09-11 (Claude A): drafted
+    docs/THANGSENG_RELAY_QUESTION_20260911.md -- 11 items (10
+    pickPrimary verified-ties with zero session-history evidence:
+    agree, brave, early, empty, greedy, horn, last, leg, lie, outside;
+    plus fever/suffer jom·a dual-sense question). All flagged in the
+    2026-09-11 full linguistic re-audit
+    (docs/CLAUDE_A_SESSION_MIGRATION_20260911.md), none
+    corpus-resolvable. NOT YET SENT -- Project Owner/Tridip to relay.
+    ---
+    2026-09-07C (Claude A): item 7 added to
     docs/THANGSENG_RELAY_QUESTION_20260906.md -- angry-cluster raka
     placement (Ka·o nanga / Ka·onanga / Ka·chaa): does the raka dot
     position stay fixed or shift with imperative/statement/compound
