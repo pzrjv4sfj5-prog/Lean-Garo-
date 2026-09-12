@@ -16,11 +16,24 @@ test('rong classifier: fruit nouns resolve to rong, no raka', () => {
   assert.equal(countNoun('mewa', 1, 'fruit'), 'mewa rongsa');
 });
 
-test('rong classifier: alcohol nouns resolve to rong, no raka', () => {
+// CORRECTION (2026-09-13, Claude B, direct Owner chat confirmation):
+// the fused "chu rongsa" example above was itself a stale assumption.
+// Owner confirmed live: "beer rong sa is correct" (literal space before
+// the number), and clarified "beer"/"alcohol" both resolve to the
+// single Garo noun chu ("chu is alcohol, it can be beer gin or
+// anything") -- so the space applies to chu itself. Owner said "maybe
+// water" when asked whether this generalizes to 'chi' (water) too --
+// that's not a confirmation, so water/chi deliberately keeps the old
+// fused behavior (see SPACED_NOUNS in garo_classifier.js) pending a
+// firmer answer. Fruit nouns (mewa/apple/etc, same 'rong' classifier)
+// are unaffected -- this is a per-noun exception (SPACED_NOUNS), not a
+// change to the classifier's default join rule.
+test('rong classifier: alcohol nouns resolve to rong, no raka, WITH a space before the number (chu is the Owner-confirmed exception)', () => {
   assert.equal(getClassifier('alcohol'), 'rong');
   assert.equal(getClassifier('beer'), 'rong');
-  assert.equal(countNoun('chu', 1, 'alcohol'), 'chu rongsa');
-  assert.equal(countNoun('chu', 5, 'alcohol'), 'chu rongbonga');
+  assert.equal(countNoun('chu', 1, 'alcohol'), 'chu rong sa');
+  assert.equal(countNoun('chu', 5, 'alcohol'), 'chu rong bonga');
+  assert.equal(countNoun('chu', 1, 'beer'), 'chu rong sa');
 });
 
 test('rong classifier: does not carry raka (·) unlike mang/sak/ge/gong', () => {

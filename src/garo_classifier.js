@@ -121,6 +121,24 @@ function getClassifierSuffix(count) {
 
 const RAKA_CLASSIFIERS = new Set(['mang', 'ge', 'gong', 'te', 'king']);
 
+// Owner-confirmed 2026-09-13 (in-chat, live conversation): "beer rong sa"
+// is correct with a literal space before the number -- NOT the fused
+// "rongsa" this codebase otherwise ships for the 'rong' classifier
+// (e.g. "mewa rongbri"/"chu rongsa" per RULE-038, fused, high-confidence
+// for solid/fruit nouns). Clarified in the same conversation: "beer" and
+// "alcohol" both resolve to the single Garo noun 'chu' ("chu is alcohol,
+// it can be beer gin or anything") -- so this is chu itself taking a
+// space, not a separate loanword. Owner explicitly said "maybe water" for
+// whether 'chi' (water) should also be spaced -- that's a "maybe", not a
+// confirmation, so 'chi'/'water' is deliberately left OUT of this set
+// pending a firmer answer; it keeps the existing fused behavior for now.
+// This does not change RULE-038's existing "chu rongsa"=one alcohol
+// example wording -- that example is now understood to be the stale
+// fused assumption this correction supersedes for chu specifically; the
+// written rule doc itself was not edited in this pass (flagged, not
+// silently rewritten -- see conversation log).
+const SPACED_NOUNS = new Set(['chu', 'alcohol', 'beer']);
+
 function bareNumberWord(n) {
   n = parseInt(n);
   if (NUMBERS[n]) return NUMBERS[n];
@@ -160,7 +178,7 @@ function composeLargeBareNumber(n) {
 // remainder, e.g. "999 students" = ritcha sku + this tail for n=99) --
 // previously only the former called the sak branch, so "999/141 students"
 // still shipped the old dot-joined form even after the <100 fix.
-function classifierTail(classifier, n) {
+function classifierTail(classifier, n, spaced = false) {
   if (classifier === 'sak' && n > 19) {
     const raw = toGaroNumberImported(n); // e.g. "Sotbri sa" (n=41)
     if (!raw) return null;
@@ -168,10 +186,11 @@ function classifierTail(classifier, n) {
   }
   const suffix = getClassifierSuffix(n);
   if (suffix === null) return null;
+  if (spaced) return `${classifier} ${suffix}`;
   return RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·${suffix}` : `${classifier}${suffix}`;
 }
 
-function buildLargeClassifierPhrase(classifier, n) {
+function buildLargeClassifierPhrase(classifier, n, spaced = false) {
   const thousands = Math.floor(n / 1000);
   const remThousand = n % 1000;
   const hundreds = Math.floor(remThousand / 100);
@@ -181,11 +200,13 @@ function buildLargeClassifierPhrase(classifier, n) {
   if (hundreds > 0) prefixParts.push(hundreds === 1 ? 'ritcha' : `ritcha ${bareNumberWord(hundreds)}`);
   let tail;
   if (remHundred > 0) {
-    tail = classifierTail(classifier, remHundred);
+    tail = classifierTail(classifier, remHundred, spaced);
     if (tail === null) return null;
   } else if (prefixParts.length > 0) {
     const last = prefixParts.pop();
-    const attach = RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·sa` : `${classifier}sa`;
+    const attach = spaced
+      ? `${classifier} sa`
+      : (RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·sa` : `${classifier}sa`);
     tail = `${last} ${attach}`;
   } else {
     return null;
@@ -193,13 +214,13 @@ function buildLargeClassifierPhrase(classifier, n) {
   return [...prefixParts, tail].filter(Boolean).join(' ');
 }
 
-export function buildClassifierPhrase(classifier, count) {
+export function buildClassifierPhrase(classifier, count, spaced = false) {
   const n = parseInt(count);
   if (isNaN(n) || n <= 0) return null;
   if (n >= 100) {
-    return buildLargeClassifierPhrase(classifier, n);
+    return buildLargeClassifierPhrase(classifier, n, spaced);
   }
-  return classifierTail(classifier, n);
+  return classifierTail(classifier, n, spaced);
 }
 
 
@@ -341,7 +362,8 @@ export function parseCountingPhrase(input) {
 
 export function countNoun(garoNoun, count, englishNoun) {
   const classifier = getClassifier(englishNoun || garoNoun);
-  const classifierPhrase = buildClassifierPhrase(classifier, count);
+  const spaced = SPACED_NOUNS.has((englishNoun || garoNoun || '').toLowerCase().trim());
+  const classifierPhrase = buildClassifierPhrase(classifier, count, spaced);
   if (classifierPhrase === null) return null;
   return `${garoNoun.toLowerCase()} ${classifierPhrase}`;
 }

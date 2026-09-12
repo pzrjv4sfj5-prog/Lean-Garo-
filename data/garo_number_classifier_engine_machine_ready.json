@@ -438,7 +438,7 @@
       "confirmed_examples": [
         "Chi rong sa"
       ],
-      "notes": "UNCONFIRMED (2026-09-12, Claude A): 'Chi rong sa' has no backing master_dictionary.json row — likely the same stale spaced-draft assumption corrected elsewhere in this file for mountain/village/road/car. Not yet native-confirmed either way."
+      "notes": "STILL UNCONFIRMED (2026-09-13 update, Claude B): asked Owner directly whether this spaced pattern (confirmed for chu/beer/alcohol, see Beer row) generalizes to water/chi too -- answer was 'maybe water', not a confirmation. Left as fused ('chi rongsa') in the running code pending a firmer answer; do not change without one."
     },
     {
       "category": "Drink / Liquid",
@@ -462,11 +462,12 @@
       "garo_noun_source": "Master Dictionary",
       "marker_type": "classifier",
       "classifier_or_unit": "rong",
-      "counting_logic": "noun + rong + number",
+      "counting_logic": "chu + rong + number (SPACED)",
       "confirmed_examples": [
-        "beer rong sa"
+        "chu rong sa"
       ],
-      "notes": "Dictionary-first noun lookup. Current Master Dictionary contains traditional rice beer = Minil Bitchi; exact English beer mapping remains dictionary-first. UNCONFIRMED (2026-09-12, Claude A): 'beer rong sa' likewise has no backing master_dictionary.json row."
+      "notes": "Owner-confirmed 2026-09-13 (live chat, direct to Claude B): 'beer rong sa is correct'. Clarified same conversation: beer and alcohol both resolve to the single Garo noun 'chu' ('chu is alcohol, it can be beer gin or anything') -- so this is chu taking a literal SPACE before the number, not fused ('chu rongsa'), contradicting RULE-038's older fused high-confidence example for the same noun. Implemented in garo_classifier.js via a targeted SPACED_NOUNS exception (chu/alcohol/beer only) -- this does not change the 'rong' classifier's default fused behavior for solid nouns (fruit etc). Master Dictionary's separate 'Minil Bitchi' (traditional rice beer) is a distinct, more specific term, not implicated by this correction.",
+      "garo_noun": "chu"
     },
     {
       "category": "Drink / Liquid",
