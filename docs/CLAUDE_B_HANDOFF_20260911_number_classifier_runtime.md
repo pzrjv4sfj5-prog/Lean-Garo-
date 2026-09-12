@@ -18,31 +18,24 @@ being written and fixed Bug 2 **for the `sak` classifier specifically**
 (41/55/67 students now correctly produce `chattro saksotbri sa` etc.,
 matching the approved surface exactly) plus bare-digit number parsing
 (now correctly routes through `number-engine`, independent of Claude
-A's data-layer digit-key supersession below). **Bugs 1, 3, 4, 5 are
-still live, and Bug 2 is still live for every classifier other than
-`sak`** (e.g. `41 cars` is still malformed) — re-verified live,
-post-rebase, table updated below.
+A's data-layer digit-key supersession below). **UPDATE 2026-09-12
+(Claude A): Bug 1 (`king` only — the `sak` half was a misreading, see
+Bug 1 Addendum #2) and Bug 5 are now also fully resolved. Bugs 2
+(beyond `sak`), 3, and 4 remain open** — see the corrected bug
+sections and verification table below for current status.
 
-## Bug 1 — `king` AND `sak` missing from `RAKA_CLASSIFIERS` (addendum, same day, continued Claude A session)
+## Bug 1 — `king` missing from `RAKA_CLASSIFIERS` (addendum, same day, continued Claude A session) — FIXED (commit `3ba97c3`)
 `src/garo_classifier.js:90`: `RAKA_CLASSIFIERS = new Set(['mang', 'ge', 'gong', 'te'])`.
 `king` is missing, despite the dictionary-established, citation-backed
 form `ki·tap king·sa` ("one book") using the dot. Result: unseen counts
 for `king`-classified nouns (e.g. "7 books") compile without the dot
 (`kingsni` instead of `king·sni`).
 
-**`sak` is also missing**, confirmed via multiple existing VERIFIED/HIGH
-dictionary rows (`mande sak·sa`="one person", `mande sak·gni`="two
-person", `skigipa sak·gni`, `sak·ki`="witness") and a standing code
-comment in `grammarEngine.js` (~line 643) documenting the manually
-corrected form "three children" -> `bi·sa sak·gittam`. Live-confirmed:
-`buildClassifierPhrase('sak', 3)` -> `sakgittam` (no dot) instead of the
-established `sak·gittam`. This is separate from the already-approved
-`sak` 40+ human-fusion exception (`saksotbri sa`, no dot, intentional) --
-this bug is specifically `sak` for n <= 19/20, where the dot is missing.
+**`sak` is NOT part of this bug — see the 2026-09-12 correction below.
+The original text of this section had claimed `sak` was also missing
+and should be added; that was wrong.**
 
-**Fix:** add both `'king'` and `'sak'` to the set (for the n<=19/20 path
-only -- do not touch the already-approved 40+ fusion branch, which is a
-separate, deliberately dot-less surface form).
+**Fix:** `king` only, already applied.
 
 **Addendum, 2026-09-12 (Claude A):** the standing question of whether
 `ge`/`te` (already in the set) are genuine confirmed exceptions or
@@ -50,6 +43,28 @@ simply wrong is now CLOSED -- both are real, richly-cited raka
 classifiers (`ge`: 18-row VERIFIED/HIGH pen paradigm; `te`: 10-row
 VERIFIED/HIGH house paradigm). No removal needed. See RULE-038.yaml
 for full citations.
+
+**Addendum #2, 2026-09-12 (Claude A) — CORRECTION, the `sak` claim was
+wrong, do not implement it:** the `sak·sa`/`sak·gni`/`sak·gittam`
+forms originally cited above (with a dot) came from *prose in notes
+and code comments* — the "man·de sak·sa" phrasing in NV-072's note,
+and a `grammarEngine.js:643` comment ("three children" -> `bi·sa
+sak·gittam`). Checked the actual stored values: every real
+VERIFIED/HIGH `garo` field for a `sak`-classified count (`mande
+saksa`, `mande sakgni`, both citation-backed) has NO dot, and
+`grammarEngine.js`'s own functional string (`Angan saksa kamkam
+chatro`, line 893) also has no dot. This matches RULE-038.yaml's
+explicit standing rule ("sak takes NO raka dot before the number
+suffix — corrected 2026-09-03, see NV-124"), which the 2026-09-11
+audit apparently missed by reading a comment's illustrative spelling
+as if it were the authoritative citation. The current engine
+behavior for `sak` at n<=19/20 (`sakgittam`, no dot) is **already
+correct** — do not add `sak` to `RAKA_CLASSIFIERS`; doing so would
+introduce a real regression, undoing NV-124. The `bi·sa sakgittam`
+"three children" row in the verification table below is a false
+positive for the same reason — corrected there too. Separately, the
+`grammarEngine.js:643` comment itself is stale/wrong for future-reader
+clarity (doesn't affect runtime output, so not urgent).
 
 ## Bug 2 — 20–99 composition (`getClassifierSuffix`, `garo_classifier.js:100-102`) — PARTIALLY FIXED (sak only)
 For n in 20-99, the code takes the two-word number-table form (e.g.
@@ -115,37 +130,43 @@ reaches Bug 3's broken composer.
 hundred/thousand multipliers per
 `data/garo_number_system_machine_ready.json`'s composition rules.
 
-## Bug 5 — unseeded nouns fall through the classifier engine entirely
+## Bug 5 — unseeded nouns fall through the classifier engine entirely — FIXED
 Nouns without a literal pre-seeded count row (e.g. "mango", not
-pre-generated 1-20 like "apple" was) don't route through the
-classifier composer at all — they fall to a different code path
-(`sov-assembly`, confidence 0.75) which ignores the `rong` classifier
-and produces wrong word order: `"seven mangoes"` → `"Sni te·ga·chu"`
+pre-generated 1-20 like "apple" was) used to not route through the
+classifier composer at all — they fell to a different code path
+(`sov-assembly`, confidence 0.75) which ignored the `rong` classifier
+and produced wrong word order: `"seven mangoes"` → `"Sni te·ga·chu"`
 (bare number+noun, no classifier, number-first).
-**Fix:** any noun resolvable via Master Dictionary lookup + the
-classifier-map should route through `countNoun`/`buildClassifierPhrase`
-regardless of whether that literal count was pre-seeded as a
-dictionary row.
+**Re-verified 2026-09-12 (Claude A):** `"seven mangoes"` now correctly
+returns `"te·ga·chu rongsni"` (method: `classifier`, not
+`sov-assembly`) — noun-classifier-number order, `rong` correctly
+applied. Fixed by a concurrent Claude B session sometime between
+2026-09-11 and 2026-09-12; no corresponding commit note found in this
+doc's history, but the runtime behavior is confirmed correct now.
 
-## Verification data (live `translate()` calls, re-checked post-rebase against e7c54cf)
+## Verification data (live `translate()` calls, re-verified 2026-09-12)
 | Input | Output | Status |
 |---|---|---|
 | 41 students | `chattro saksotbri sa` | ✅ FIXED — matches approved surface exactly |
 | 55 students | `chattro saksotbonga bonga` | ✅ FIXED |
 | 67 students | `chattro saksotdok sni` | ✅ FIXED |
+| 71 students | (not yet live-tested via `translate()`; `countNoun` gives `chatro saksotsni sa`, correct) | ✅ correct via countNoun |
 | 100 students | `chattro ritcha saksa` | ❌ still Bug 3 — reads as count=1 |
 | one hundred dogs | `achak mang·sa` | ❌ still Bug 3/4 — "hundred" dropped |
-| seven mangoes | `Sni te·ga·chu` | ❌ still Bug 5 — bypasses classifier engine |
-| 7 books / 19 books | `ki·tap kingsni` / `ki·tap kingChi·sku` | ❌ still Bug 1 — no dot |
-| three children | `bi·sa sakgittam` | ❌ Bug 1 addendum — no dot, should be `bi·sa sak·gittam` per existing dictionary/comment precedent |
-| 41 cars | `gari bolSotbri·sa` | ❌ still Bug 2 for non-`sak` classifiers — `bol` not covered by the sak-specific fix |
+| seven mangoes | `te·ga·chu rongsni` | ✅ FIXED — Bug 5 resolved, see above |
+| 7 books | `ki·tap king·sni` | ✅ FIXED — Bug 1 (`king`), commit `3ba97c3` |
+| 19 books | `ki·tap king·Chi·sku` | ✅ FIXED |
+| three children | `bi·sa sakgittam` | ✅ correct, not a bug — see Bug 1 Addendum #2 (2026-09-12); the "should be `bi·sa sak·gittam`" claim was based on a misread comment |
+| 41 cars | `gari bolSotbri·sa` | ❌ still Bug 2 — wrong capitalization ("Sotbri"), spurious dot before "sa"; same root cause as the pre-fix `sak` case, just not yet generalized to `bol`/other classifiers |
 | 4 / 10 (bare digit) | `bri` / `chiking` via `number-engine` | ✅ FIXED — now routes correctly (previously stale dictionary junk) |
 
-**Remaining scope:** Bug 2's fix was scoped to `sak` only — needs
-generalizing to every classifier (`king`, `bol`, `mang`, etc.), which
-would likely also subsume Bug 1 (the missing-dot `king` case) if the
-same lowercase-and-space-join approach is applied uniformly instead of
-per-classifier. Bugs 3, 4, 5 are untouched.
+**Remaining open bugs, in priority order:** Bug 2 (generalize the
+already-working `sak`-specific tens-composition capitalization/dot
+fix to every classifier — `bol`/`dot`/`dam`/`dil`/`king`/`mang`/etc.,
+all currently broken the same way `sak` was before its fix), Bug 3
+(exact-hundred composition), Bug 4 (parser doesn't recognize
+hundred/thousand words — blocks Bug 3's fix from ever being reached
+for "one hundred X" phrasing). Bug 1 and Bug 5 are fully resolved.
 
 **Separately (2026-09-12, Claude A, RESOLVED — see NV-157):** whether
 the `sak` 40+ fusion pattern generalizes past 70/80/90 is now
