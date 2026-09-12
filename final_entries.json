@@ -3488,14 +3488,6 @@
     "notes": "variant/VERIFIED/HIGH"
   },
   {
-    "english": "Empty",
-    "garo": "jak·ra·ra",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Enemy",
     "garo": "Bobil",
     "pos": null,
@@ -6434,14 +6426,6 @@
   {
     "english": "Lie",
     "garo": "Tol·napani",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Lie",
-    "garo": "bo˙·a ra˙·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,

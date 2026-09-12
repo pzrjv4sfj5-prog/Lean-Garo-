@@ -39740,14 +39740,14 @@
       "ocr_version": "gemini-v1"
     },
     "review_status": "approved",
-    "review_notes": null,
+    "review_notes": "Was promoted 2026-07-23; master_dictionary.json row (\"to tell a lie\",\"Bo·a\") deleted 2026-09-12 per direct Project Owner instruction, superseded by native-confirmed 'Tol·a' (NV-156). Marked rejected rather than promoted to reflect current state; history preserved here.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-23",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "promoted",
+    "promotion_status": "rejected",
     "promoted_date": "2026-07-23T11:18:45.840Z"
   },
   {

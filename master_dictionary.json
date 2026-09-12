@@ -21821,15 +21821,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "Empty",
-    "garo": "jak·ra·ra",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import; one of them (jak·ra·ra) was shipping live via phrase_maps.js. NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'bang·bang' instead; see that row.",
-    "confidence": "superseded"
-  },
-  {
     "english": "Enemy",
     "garo": "bo·bil",
     "pos": null,
@@ -22982,15 +22973,6 @@
   {
     "english": "Lie",
     "garo": "Tol·napani",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import. NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'Tol·a' instead for the tell-a-lie sense; see that row. Whether this form (recline sense vs. some other nuance) is separately valid was not addressed by the relay answer — genuinely still open if a distinct meaning is ever claimed for it.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "Lie",
-    "garo": "bo·a ra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -67290,13 +67272,6 @@
     "category": null,
     "pos": "n.",
     "confidence": "unverified"
-  },
-  {
-    "english": "to tell a lie",
-    "garo": "Bo·a",
-    "category": null,
-    "pos": "v.",
-    "notes": "Double period at the end of the entry."
   },
   {
     "english": "to lie",
