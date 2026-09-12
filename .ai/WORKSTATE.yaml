@@ -5572,5 +5572,12 @@ claude_d:
     rang·gni) deleted -- same pattern as Batch 1/2, cross-checked against
     CLASSIFIER_GROUND_TRUTH_REFERENCE.md (tree''s real classifier is pang, book''s is king, neither
     matches the placeholder''s rang). Exact-match verified before delete. 9963 -> 9888 records, hash
-    4d76b95e...->c8340c7b.... Commit 756ec59. Family 4 (food/rice, 40 rows) and the separate apple/se
-    item remain pending Owner confirmation. No action needed from A/B.'
+    4d76b95e...->c8340c7b.... Commit 756ec59.
+    FINAL BATCH: Batch 4 (Family 4: food/rice, 40 rows, classifier-family chak·gni) deleted -- doubly
+    wrong per the reference doc (chak isn''t a real classifier at all, AND rice''s official rule is
+    noun+kg+number by weight, not a piece-classifier). Exact-match verified before delete. 9888 -> 9848
+    records, hash c8340c7b...->4150d062.... Commit 896cc6d. This closes out the original 315-record
+    generated-counting placeholder candidate set in full (12+200+1+75+40 = 328 total rows deleted across
+    this session''s batches). Remaining separately-flagged item: apple''s leftover se-classifier
+    superseded row (different wrong-classifier family, still pending Owner confirmation). No action
+    needed from A/B for any of this.'
