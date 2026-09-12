@@ -8102,20 +8102,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "one rice",
-    "garo": "sa chak·sa",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "one food",
-    "garo": "sa chak·sa",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "one road",
     "garo": "sa lam·sa",
     "category": "travel",
@@ -8193,20 +8179,6 @@
     "garo": "sobo·gni",
     "category": "numbers",
     "confidence": "unverified"
-  },
-  {
-    "english": "two rice",
-    "garo": "chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — repo-wide counting-audit gap closure 2026-08-12 (Claude A, per Claude C QA referral): orphaned pre-evidence-first fabrication, missed by the 2026-08-10 523-entry SUPERSEDED sweep because it has no duplicate-with-fix to compare against. Corpus-internal contradiction only (no native input needed, no replacement asserted): root 'chak' identically reused for the unrelated noun 'food'. Classifier engine/formula confirmed correct and unaffected — see docs/CLAUDE_A_COUNTING_QA_20260812.md.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "two food",
-    "garo": "chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — repo-wide counting-audit gap closure 2026-08-12 (Claude A, per Claude C QA referral): orphaned pre-evidence-first fabrication, missed by the 2026-08-10 523-entry SUPERSEDED sweep because it has no duplicate-with-fix to compare against. Corpus-internal contradiction only (no native input needed, no replacement asserted): root 'chak' identically reused for the unrelated noun 'rice'. Classifier engine/formula confirmed correct and unaffected — see docs/CLAUDE_A_COUNTING_QA_20260812.md.",
-    "confidence": "superseded"
   },
   {
     "english": "two road",
@@ -8290,20 +8262,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "three rice",
-    "garo": "chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "three food",
-    "garo": "chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "three road",
     "garo": "lam·gni",
     "category": "travel",
@@ -8363,20 +8321,6 @@
     "english": "four banana",
     "garo": "brang sobo·gni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "four rice",
-    "garo": "brang chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "four food",
-    "garo": "brang chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
@@ -8444,20 +8388,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "five rice",
-    "garo": "bonga chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "five food",
-    "garo": "bonga chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "five road",
     "garo": "bonga lam·gni",
     "category": "travel",
@@ -8517,20 +8447,6 @@
     "english": "six banana",
     "garo": "dokka sobo·gni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "six rice",
-    "garo": "dokka chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "six food",
-    "garo": "dokka chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
@@ -8598,20 +8514,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "seven rice",
-    "garo": "sni chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "seven food",
-    "garo": "sni chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "seven road",
     "garo": "sni lam·gni",
     "category": "travel",
@@ -8664,20 +8566,6 @@
     "english": "eight banana",
     "garo": "chet sobo·gni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "eight rice",
-    "garo": "chet chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "eight food",
-    "garo": "chet chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
@@ -8745,20 +8633,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "nine rice",
-    "garo": "sku chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "nine food",
-    "garo": "sku chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "nine road",
     "garo": "sku lam·gni",
     "category": "travel",
@@ -8818,20 +8692,6 @@
     "english": "ten banana",
     "garo": "chi sobo·gni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "ten rice",
-    "garo": "chi chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "ten food",
-    "garo": "chi chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
@@ -8913,20 +8773,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "eleven rice",
-    "garo": "chi sa chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "eleven food",
-    "garo": "chi sa chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "eleven road",
     "garo": "chi sa lam·gni",
     "category": "travel",
@@ -9000,20 +8846,6 @@
     "english": "twelve banana",
     "garo": "chi do·o sobo·gni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "twelve rice",
-    "garo": "chi do·o chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "twelve food",
-    "garo": "chi do·o chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
@@ -9095,20 +8927,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "thirteen rice",
-    "garo": "chi na·tok chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "thirteen food",
-    "garo": "chi na·tok chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "thirteen road",
     "garo": "chi na·tok lam·gni",
     "category": "travel",
@@ -9182,20 +9000,6 @@
     "english": "fourteen banana",
     "garo": "chi brang sobo·gni",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "fourteen rice",
-    "garo": "chi brang chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "fourteen food",
-    "garo": "chi brang chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
@@ -9277,20 +9081,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "fifteen rice",
-    "garo": "chi bonga chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "fifteen food",
-    "garo": "chi bonga chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "fifteen road",
     "garo": "chi bonga lam·gni",
     "category": "travel",
@@ -9364,20 +9154,6 @@
     "english": "sixteen banana",
     "garo": "chi dokka sobo·gni",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "sixteen rice",
-    "garo": "chi dokka chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "sixteen food",
-    "garo": "chi dokka chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
@@ -9459,20 +9235,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "seventeen rice",
-    "garo": "chi sni chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "seventeen food",
-    "garo": "chi sni chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "seventeen road",
     "garo": "chi sni lam·gni",
     "category": "travel",
@@ -9550,20 +9312,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "eighteen rice",
-    "garo": "chi chet chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "eighteen food",
-    "garo": "chi chet chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "eighteen road",
     "garo": "chi chet lam·gni",
     "category": "travel",
@@ -9637,20 +9385,6 @@
     "english": "nineteen banana",
     "garo": "chi sku sobo·gni",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "nineteen rice",
-    "garo": "chi sku chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "nineteen food",
-    "garo": "chi sku chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
@@ -9908,20 +9642,6 @@
     "english": "twenty banana",
     "garo": "chi chi sobo·gni",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "twenty rice",
-    "garo": "chi chi chak·gni",
-    "category": "food",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "twenty food",
-    "garo": "chi chi chak·gni",
-    "category": "food",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
