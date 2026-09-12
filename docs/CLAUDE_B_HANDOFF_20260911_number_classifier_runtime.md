@@ -23,13 +23,26 @@ still live, and Bug 2 is still live for every classifier other than
 `sak`** (e.g. `41 cars` is still malformed) — re-verified live,
 post-rebase, table updated below.
 
-## Bug 1 — `king` missing from `RAKA_CLASSIFIERS`
+## Bug 1 — `king` AND `sak` missing from `RAKA_CLASSIFIERS` (addendum, same day, continued Claude A session)
 `src/garo_classifier.js:90`: `RAKA_CLASSIFIERS = new Set(['mang', 'ge', 'gong', 'te'])`.
 `king` is missing, despite the dictionary-established, citation-backed
 form `ki·tap king·sa` ("one book") using the dot. Result: unseen counts
 for `king`-classified nouns (e.g. "7 books") compile without the dot
 (`kingsni` instead of `king·sni`).
-**Fix:** add `'king'` to the set.
+
+**`sak` is also missing**, confirmed via multiple existing VERIFIED/HIGH
+dictionary rows (`mande sak·sa`="one person", `mande sak·gni`="two
+person", `skigipa sak·gni`, `sak·ki`="witness") and a standing code
+comment in `grammarEngine.js` (~line 643) documenting the manually
+corrected form "three children" -> `bi·sa sak·gittam`. Live-confirmed:
+`buildClassifierPhrase('sak', 3)` -> `sakgittam` (no dot) instead of the
+established `sak·gittam`. This is separate from the already-approved
+`sak` 40+ human-fusion exception (`saksotbri sa`, no dot, intentional) --
+this bug is specifically `sak` for n <= 19/20, where the dot is missing.
+
+**Fix:** add both `'king'` and `'sak'` to the set (for the n<=19/20 path
+only -- do not touch the already-approved 40+ fusion branch, which is a
+separate, deliberately dot-less surface form).
 
 ## Bug 2 — 20–99 composition (`getClassifierSuffix`, `garo_classifier.js:100-102`) — PARTIALLY FIXED (sak only)
 For n in 20-99, the code takes the two-word number-table form (e.g.
@@ -97,6 +110,7 @@ dictionary row.
 | one hundred dogs | `achak mang·sa` | ❌ still Bug 3/4 — "hundred" dropped |
 | seven mangoes | `Sni te·ga·chu` | ❌ still Bug 5 — bypasses classifier engine |
 | 7 books / 19 books | `ki·tap kingsni` / `ki·tap kingChi·sku` | ❌ still Bug 1 — no dot |
+| three children | `bi·sa sakgittam` | ❌ Bug 1 addendum — no dot, should be `bi·sa sak·gittam` per existing dictionary/comment precedent |
 | 41 cars | `gari bolSotbri·sa` | ❌ still Bug 2 for non-`sak` classifiers — `bol` not covered by the sak-specific fix |
 | 4 / 10 (bare digit) | `bri` / `chiking` via `number-engine` | ✅ FIXED — now routes correctly (previously stale dictionary junk) |
 

@@ -313,7 +313,42 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-11 (Claude A, session complete -- full linguistic
+  next_action: '2026-09-11B (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260911B.md for full detail, this
+    is a pointer only). Resumed as Claude A per Project Owner choice
+    (docs/CLAUDE_B_SESSION_MIGRATION_20260911.md was pasted but that
+    doc''s next-step was Claude B engine work; Owner chose Claude A
+    instead). Resync found real drift: origin/main was at b5c4c7d, not
+    that doc''s claimed 796e427 -- two commits ahead (the migration-doc
+    commit itself, plus an uncommitted-to-migration-protocol Claude A
+    relay draft, docs/THANGSENG_RELAY_QUESTION_20260911.md, not yet
+    sent). Delivered full 1-100 number table to Owner (all verified_high,
+    single dictionary rows) and full 16-classifier breakdown from
+    data/garo_number_classifier_engine_machine_ready.json. Found and
+    fixed, per Owner deletion directive: gnisan="two" (unverified,
+    NV-138, genuinely distinct unresolved relay vs Gni, not a duplicate)
+    and Kolgrik·sa="twenty-one" (unverified, no provenance, plus a "the
+    Twenty-one" derivative) -- deleted from master_dictionary.json,
+    final_entries.json, garo_dictionary.json. Side effect: fixed a live
+    bug where hyphenated "twenty-one" resolved to the now-deleted wrong
+    value at 0.75 confidence via exact-phrase (diverging from spaced
+    "twenty one" -> Kolgrik Sa at 0.98); now falls through to
+    compound-split -> same correct value at 0.6. Then found `sak` is
+    ALSO missing from RAKA_CLASSIFIERS (src/garo_classifier.js) --
+    addendum to the SAME-DAY EARLIER Claude A session''s
+    docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md Bug 1
+    (which only caught `king`), confirmed via existing VERIFIED/HIGH
+    dictionary rows (mande sak·sa, mande sak·gni, sak·ki) and a standing
+    grammarEngine.js comment documenting "three children" ->
+    "bi·sa sak·gittam" as the manually-corrected form; live-verified
+    current output is "bi·sa sakgittam" (no dot) via translate(). Did
+    NOT touch garo_classifier.js (Claude B territory) -- doc-only
+    addendum + verification-table row. Gate green throughout (doc-only
+    change): 8362/8362 dictionary (net -2 from prior session''s 8363,
+    reflects this session''s 2 deletions), 9/9 grammatical corrections,
+    0 new repository-intelligence violations, 379/379 unit tests.
+    Pushed clean, HEAD [PENDING -- see migration doc for final hash].
+  next_action_prior_20260911: '2026-09-11 (Claude A, session complete -- full linguistic
     re-audit per Project Owner directive, see docs/CLAUDE_A_SESSION_MIGRATION_20260911.md
     for full detail, this is a pointer only). Resumed clean at cb93d1b ==
     origin/main. Full 12-section audit of current main (number system,
