@@ -5585,4 +5585,14 @@ claude_d:
     exact-match verified before write. 9848 -> 9829 records, hash 4150d062...->d8e0af35.... Commit
     cabca84. Left untouched: apple still has two competing verified_high base-word translations (Apple /
     te·spu) -- that''s a linguistic tie for Claude A, not placeholder debris, not acted on. No action
-    needed from A/B for any of this session''s batches.'
+    needed from A/B for any of this session''s batches.
+    BATCH 6: found a different defect shape while checking for more batches -- classifier omitted
+    entirely (noun+numeral fused with no classifier token, e.g. mande·gni for person) rather than a
+    wrong/shared classifier. 8 nouns, 193 rows: person(40) teacher(38) book(20) car/banana/road/mountain/
+    village(19 each). All superseded, every one already has a correct verified_high counterpart
+    elsewhere (zero orphans, verified before deletion). Excluded 3 unrelated coin rows (different root
+    cause, native-correction issue) and 2 singleton unrelated rows from the batch. Post-write verified by
+    full semantic diff (old records minus exactly these 193 idx == new records) since the raw git diff
+    showed more line churn than expected from line-alignment shift around the deletion block -- confirmed
+    clean before committing. 9829 -> 9636 records, hash d8e0af35...->2f00c4e3.... Commit 61a4e1a. No
+    action needed from A/B.'
