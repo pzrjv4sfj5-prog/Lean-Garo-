@@ -5578,6 +5578,11 @@ claude_d:
     noun+kg+number by weight, not a piece-classifier). Exact-match verified before delete. 9888 -> 9848
     records, hash c8340c7b...->4150d062.... Commit 896cc6d. This closes out the original 315-record
     generated-counting placeholder candidate set in full (12+200+1+75+40 = 328 total rows deleted across
-    this session''s batches). Remaining separately-flagged item: apple''s leftover se-classifier
-    superseded row (different wrong-classifier family, still pending Owner confirmation). No action
-    needed from A/B for any of this.'
+    this session''s batches).
+    BATCH 5 (final): the apple/se item mentioned above turned out to be a 19-row family, not 1 row --
+    every counted form of apple (one through twenty, minus eight already gone in Batch 1) used classifier
+    se (Tools) instead of the correct rong (Fruit). All superseded, none verified_high. Deleted,
+    exact-match verified before write. 9848 -> 9829 records, hash 4150d062...->d8e0af35.... Commit
+    cabca84. Left untouched: apple still has two competing verified_high base-word translations (Apple /
+    te·spu) -- that''s a linguistic tie for Claude A, not placeholder debris, not acted on. No action
+    needed from A/B for any of this session''s batches.'
