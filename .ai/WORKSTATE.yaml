@@ -347,7 +347,8 @@ claude_a:
     change): 8362/8362 dictionary (net -2 from prior session''s 8363,
     reflects this session''s 2 deletions), 9/9 grammatical corrections,
     0 new repository-intelligence violations, 379/379 unit tests.
-    Pushed clean, HEAD [PENDING -- see migration doc for final hash].
+    Migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260911B.md. Pushed
+    clean, HEAD 7bf7823, verified == origin/main.
   next_action_prior_20260911: '2026-09-11 (Claude A, session complete -- full linguistic
     re-audit per Project Owner directive, see docs/CLAUDE_A_SESSION_MIGRATION_20260911.md
     for full detail, this is a pointer only). Resumed clean at cb93d1b ==
