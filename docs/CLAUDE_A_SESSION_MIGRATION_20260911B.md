@@ -83,8 +83,8 @@ doc's Bug 1 section and verification table only.
 - `master_dictionary.json`: 10,180 → 10,178 rows (net −2, the two deletions).
 
 ## Repository status at close
-- HEAD: `7b649d9`
-- origin/main: `7b649d9` — matches exactly
+- HEAD: `8540677`
+- origin/main: `8540677` — matches exactly
 - `git status`: clean
 - `.ai/WORKSTATE.yaml`: updated (`claude_a.next_action` for this session; prior entry
   preserved as `next_action_prior_20260911`)
