@@ -2517,13 +2517,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "student",
-    "garo": "Porai·gipa",
-    "category": "education",
-    "notes": "SUPERSEDED — corpus-internal fix 2026-08-14 (Claude A, per Claude B session E handoff / Rule 10 next_action): bare-noun entry never updated to NV-073's native-confirmed root 'Chattro', even though all NV-073 phrase-level 1-20 entries already use it. Untagged legacy import, not authoritative for compile. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
     "english": "doctor",
     "garo": "Sam·on·gipa",
     "category": "health",
