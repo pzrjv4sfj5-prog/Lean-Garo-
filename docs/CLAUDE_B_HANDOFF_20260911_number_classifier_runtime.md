@@ -20,8 +20,8 @@ matching the approved surface exactly) plus bare-digit number parsing
 (now correctly routes through `number-engine`, independent of Claude
 A's data-layer digit-key supersession below). **UPDATE 2026-09-12
 (Claude A): Bug 1 (`king` only — the `sak` half was a misreading, see
-Bug 1 Addendum #2) and Bug 5 are now also fully resolved. Bugs 2
-(beyond `sak`), 3, and 4 remain open** — see the corrected bug
+Bug 1 Addendum #2), Bug 4, and Bug 5 are now also fully resolved.
+Bugs 2 (beyond `sak`) and 3 remain open** — see the corrected bug
 sections and verification table below for current status.
 
 ## Bug 1 — `king` missing from `RAKA_CLASSIFIERS` (addendum, same day, continued Claude A session) — FIXED (commit `3ba97c3`)
@@ -121,14 +121,19 @@ not just a formatting one — it silently ships a wrong count.
 **Fix:** an exact-hundred count needs to attach the classifier to the
 hundred-multiplier itself, not substitute a count of 1.
 
-## Bug 4 — `parseCountingPhrase` doesn't handle "hundred"/"thousand" words
-Only handles the two-word `[tens][unit]` compound (e.g. "forty one").
-No handling for multiplier words at all, so `"one hundred dogs"`
-parses as `count=1`, silently dropping "hundred" before it ever
-reaches Bug 3's broken composer.
-**Fix:** extend the word-number parser to recognize
-hundred/thousand multipliers per
-`data/garo_number_system_machine_ready.json`'s composition rules.
+## Bug 4 — `parseCountingPhrase` doesn't handle "hundred"/"thousand" words — FIXED
+Used to only handle the two-word `[tens][unit]` compound (e.g. "forty
+one"). No handling for multiplier words at all, so `"one hundred
+dogs"` parsed as `count=1`, silently dropping "hundred" before it
+ever reached Bug 3's broken composer.
+**Re-verified 2026-09-12 (Claude A):** fixed by a concurrent Claude B
+commit ("Bug 4: parse word-form hundred/thousand cardinals"). `"one
+hundred dogs"` now correctly returns `"achak ritcha mang·sa"` —
+"ritcha" (hundred) is present and no longer silently dropped. Note
+this exposes Bug 3 more clearly rather than fully resolving the
+phrase: the classifier is still wrongly attached as a count-of-1 tail
+after "ritcha" (`mang·sa`) instead of being attached to represent the
+full count of 100 — see Bug 3, still open.
 
 ## Bug 5 — unseeded nouns fall through the classifier engine entirely — FIXED
 Nouns without a literal pre-seeded count row (e.g. "mango", not
@@ -151,8 +156,8 @@ doc's history, but the runtime behavior is confirmed correct now.
 | 55 students | `chattro saksotbonga bonga` | ✅ FIXED |
 | 67 students | `chattro saksotdok sni` | ✅ FIXED |
 | 71 students | (not yet live-tested via `translate()`; `countNoun` gives `chatro saksotsni sa`, correct) | ✅ correct via countNoun |
-| 100 students | `chattro ritcha saksa` | ❌ still Bug 3 — reads as count=1 |
-| one hundred dogs | `achak mang·sa` | ❌ still Bug 3/4 — "hundred" dropped |
+| 100 students | `chattro ritcha saksa` | ❌ still Bug 3 — reads as "hundred, one student", not 100 |
+| one hundred dogs | `achak ritcha mang·sa` | ❌ still Bug 3 (Bug 4 fixed — "hundred" no longer dropped, but classifier still wrongly attached as count-of-1) |
 | seven mangoes | `te·ga·chu rongsni` | ✅ FIXED — Bug 5 resolved, see above |
 | 7 books | `ki·tap king·sni` | ✅ FIXED — Bug 1 (`king`), commit `3ba97c3` |
 | 19 books | `ki·tap king·Chi·sku` | ✅ FIXED |
@@ -164,9 +169,9 @@ doc's history, but the runtime behavior is confirmed correct now.
 already-working `sak`-specific tens-composition capitalization/dot
 fix to every classifier — `bol`/`dot`/`dam`/`dil`/`king`/`mang`/etc.,
 all currently broken the same way `sak` was before its fix), Bug 3
-(exact-hundred composition), Bug 4 (parser doesn't recognize
-hundred/thousand words — blocks Bug 3's fix from ever being reached
-for "one hundred X" phrasing). Bug 1 and Bug 5 are fully resolved.
+(exact-hundred composition — classifier still wrongly attaches as a
+count-of-1 tail after "ritcha" instead of representing the true
+count). Bug 1, Bug 4, and Bug 5 are fully resolved.
 
 **Separately (2026-09-12, Claude A, RESOLVED — see NV-157):** whether
 the `sak` 40+ fusion pattern generalizes past 70/80/90 is now

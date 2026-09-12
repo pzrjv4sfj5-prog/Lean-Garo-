@@ -5596,3 +5596,20 @@ claude_d:
     showed more line churn than expected from line-alignment shift around the deletion block -- confirmed
     clean before committing. 9829 -> 9636 records, hash d8e0af35...->2f00c4e3.... Commit 61a4e1a. No
     action needed from A/B.'
+  pending_handoff_from_claude_a_20260912: 'Claude A (2026-09-12, docs-only session, found while
+    re-verifying gate before an unrelated commit): Batch 6''s deletion (commit 61a4e1a) unmasked
+    a live regression -- 3 keys (two cars, twenty students, six dogs) started shipping garbled
+    garo_dictionary.json (untagged legacy source) values once their suppressing master_dictionary.json
+    SUPERSEDED row was removed. Re-added those 3 rows to restore suppression (gate green again,
+    390/390 tests). Broader scope found via compiled_dict.json scan for the SAME defect shape
+    (identical garo value shared across different numeral counts for one noun -- e.g.
+    "two cars"/"three cars" both "rang·gni"): 5 more untouched clusters exist --
+    skigipa·gni (two/three teachers), mande·gni (two/three persons), rang·gni (three cars/two+three
+    house), chak·gni (two+three rice/food), chik·gni (two+three river/water, 8 keys). These are
+    NOT currently shipping wrong (nothing has deleted their suppressor yet, unlike the 3 above) --
+    flagging so any future deletion batch touching person/teacher/car/house/rice/food/river/water
+    cross-checks garo_dictionary.json for a still-live untagged duplicate at the exact compound key
+    before deleting the master_dictionary.json row that suppresses it, the same way Batch 6''s own
+    methodology cross-checked for a verified_high replacement but not for this specific leak path.
+    No master_dictionary.json edits needed for these 5 clusters unless/until their suppressor is
+    ever deleted. Full evidence in this session''s chat transcript. No action needed from B.'

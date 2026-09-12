@@ -75850,5 +75850,32 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner), explicitly for this sense ('as in telling a lie'). Added alongside the existing unrated 'to tell a lie'=Bo·a row (not deleted, see citation-discipline norm) so this verified value wins at compile.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "two cars",
+    "garo": "rang·gni",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — corpus-internal audit 2026-09-12 (Claude A), same defect shape as the 2026-08-10 audit (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry from garo_dictionary.json (untagged legacy source), classifier omitted/wrong root, numeral suffix contradicts its own claimed count ('rang·gni' is also claimed for a different count of the same noun elsewhere). Was previously suppressed by a master_dictionary.json SUPERSEDED row for this noun family that Claude D's Batch 6 deletion (commit 61a4e1a) removed without cross-checking garo_dictionary.json for a still-live untagged duplicate at this exact compound key. Re-added to restore suppression. Not deleted (garo_dictionary.json itself untouched, out of Claude A's remit), retained per citation discipline.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "twenty students",
+    "garo": "chi chi chik·gni",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — corpus-internal audit 2026-09-12 (Claude A), same defect shape as the 2026-08-10 audit (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry from garo_dictionary.json (untagged legacy source), classifier omitted/wrong root, numeral suffix contradicts its own claimed count ('chi chi chik·gni' is also claimed for a different count of the same noun elsewhere). Was previously suppressed by a master_dictionary.json SUPERSEDED row for this noun family that Claude D's Batch 6 deletion (commit 61a4e1a) removed without cross-checking garo_dictionary.json for a still-live untagged duplicate at this exact compound key. Re-added to restore suppression. Not deleted (garo_dictionary.json itself untouched, out of Claude A's remit), retained per citation discipline.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "six dogs",
+    "garo": "dokka mang·gni",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — corpus-internal audit 2026-09-12 (Claude A), same defect shape as the 2026-08-10 audit (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry from garo_dictionary.json (untagged legacy source), classifier omitted/wrong root, numeral suffix contradicts its own claimed count ('dokka mang·gni' is also claimed for a different count of the same noun elsewhere). Was previously suppressed by a master_dictionary.json SUPERSEDED row for this noun family that Claude D's Batch 6 deletion (commit 61a4e1a) removed without cross-checking garo_dictionary.json for a still-live untagged duplicate at this exact compound key. Re-added to restore suppression. Not deleted (garo_dictionary.json itself untouched, out of Claude A's remit), retained per citation discipline.",
+    "confidence": "superseded"
   }
 ]
