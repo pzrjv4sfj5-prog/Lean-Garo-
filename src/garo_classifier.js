@@ -233,6 +233,29 @@ const UNIT_WORDS = {
   'plate': 'plate', 'plates': 'plate',
 };
 
+// Bug 5 fix (2026-09-12, Claude B): the naive `word.replace(/s$/, '')`
+// singularizer below only strips a bare trailing 's', so any noun with a
+// regular English "-es" plural (mangoes, boxes, potatoes, dishes, ...)
+// singularized to a form ("mangoe", "boxe", "potatoe", "dishe") that
+// doesn't exist in the dictionary. That silently dropped garoNoun in
+// translationEngine.js's classifier-counting branch, so the whole phrase
+// fell through to the much weaker sov-assembly fallback (wrong word
+// order, classifier ignored) instead of classifier composition — live-
+// confirmed via translate("seven mangoes") returning "Sni te·ga·chu"
+// (number-first, no classifier) instead of "te·ga·chu rong·sni".
+// This does NOT touch classifier selection, raka rules, or any Garo
+// surface form — purely the English-side plural stripping used to find
+// the dictionary key, a mechanical fix to standard English orthography
+// (not a linguistic/Garo decision, so within Claude B's remit).
+function singularize(word) {
+  if (IRREGULAR_PLURALS[word]) return IRREGULAR_PLURALS[word];
+  if (word.length > 4 && /ies$/.test(word)) return word.slice(0, -3) + 'y'; // berries -> berry
+  if (/(?:[sxz]|ch|sh)es$/.test(word)) return word.slice(0, -2); // boxes/churches/dishes/buses -> box/church/dish/bus
+  if (/oes$/.test(word)) return word.slice(0, -2); // mangoes/potatoes/tomatoes -> mango/potato/tomato
+  if (/s$/.test(word) && !/ss$/.test(word)) return word.slice(0, -1); // dogs -> dog (unchanged default)
+  return word;
+}
+
 export function parseCountingPhrase(input) {
   if (!input) return null;
   const lower = input.toLowerCase().trim();
@@ -257,12 +280,10 @@ export function parseCountingPhrase(input) {
   }
   const englishNoun = remaining.join(' ');
   if (!englishNoun) return null;
-  const singular = IRREGULAR_PLURALS[englishNoun] || englishNoun.replace(/s$/, '');
+  const singular = singularize(englishNoun);
   const nounWords = englishNoun.split(' ');
   const lastWord = nounWords[nounWords.length - 1];
-  const nounOnly = nounWords.length > 1
-    ? (IRREGULAR_PLURALS[lastWord] || lastWord.replace(/s$/, ''))
-    : singular;
+  const nounOnly = nounWords.length > 1 ? singularize(lastWord) : singular;
   return { count, englishNoun: singular, originalNoun: englishNoun, nounOnly, unit };
 }
 

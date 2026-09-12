@@ -257,7 +257,15 @@ export async function translate(input) {
   // 1.6 Classifier counting — "2 dogs", "one teacher", "5 birds"
   const countPhrase = parseCountingPhrase(cleaned);
   if (countPhrase) {
-    const singular = countPhrase.englishNoun.replace(/s$/, '');
+    // Bug 5 fix (2026-09-12, Claude B): countPhrase.englishNoun is
+    // already correctly singularized by parseCountingPhrase() (see
+    // garo_classifier.js singularize()). This used to re-strip a
+    // trailing 's' here too, which was harmless when the upstream
+    // singularizer only handled bare "-s" plurals, but became actively
+    // wrong once "-es" plurals were fixed upstream: a correctly
+    // singularized "bus" (from "buses") would get double-stripped to
+    // "bu" here. Just use the already-singular value.
+    const singular = countPhrase.englishNoun;
     // Check corrections.json first — this branch previously skipped
     // straight to phrase_maps/dictionary lookup, meaning a corrections.json
     // fix to a countable noun (e.g. orange/monkey) was silently bypassed
