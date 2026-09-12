@@ -1,5 +1,27 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-12 by Claude B
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-12 by Claude D
+(forensic segregation/audit session. Rebuilt segregation-audit tooling from
+scratch (prior tooling confirmed never pushed to origin/main). Ran two full
+16-section forensic-analysis passes per Project Owner directive, delivered
+evidence packages to Claude A (no verdicts, MULTIPLE CANDIDATES framing
+throughout), and built a classifier ground-truth reference cross-checking
+data/garo_number_classifier_engine_machine_ready.json's 16-entry table
+against every verified_high counted-form in the corpus — zero contradictions
+found on the trusted side. Executed two Owner-confirmed deletion batches
+under the project's live-chat-instruction-overrides-standing-default rule
+(Batch 1: 12 rows, commit 913ffd1; Batch 2: 200 rows, commit bec4fae) — both
+exact-match verified against (idx, english, garo, confidence) immediately
+before write, full candidate lists shown to Owner before and after. Deleted
+records were a generic classifier+numeral placeholder pattern
+(mang·gni/chik·gni/se·gni tails with no noun stem) reused byte-identical
+across unrelated nouns; `chik` confirmed absent from the official classifier
+table entirely. 10180 -> 9964 records this session. Cross-session notes left
+for Claude A/B: `sak` still missing from RAKA_CLASSIFIERS (flagged, not
+Claude D's lane to fix); apple has one leftover se-classifier superseded row;
+two more families (~115 rows) from the original candidate set remain pending
+Owner confirmation. Full detail: .ai/WORKSTATE.yaml claude_d.next_action and
+docs/CLAUDE_D_SESSION_MIGRATION_20260912.md.)
+Prior: 2026-09-12 by Claude B
 (review + role-doc session, minimal-runtime. Owner asked to review all recent
 Claude B work, provided a fresh PAT, and asked for an explicit role-
 clarification section for new Claude B sessions — added to

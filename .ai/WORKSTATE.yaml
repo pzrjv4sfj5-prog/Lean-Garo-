@@ -5552,5 +5552,16 @@ claude_d:
     food/rice, ~40 rows), plus a newly-flagged separate item (apple still has one leftover superseded
     row using classifier se, wrong category, not part of this batch) -- all pending Owner confirmation,
     not yet acted on.'
-  next_action: 'None pending from Claude D. Awaiting Project Owner confirmation for Batch 3 (Family 3/4,
-    or the separate apple/se item) of the generated-counting placeholder cleanup, if desired.'
+  next_action: '2026-09-12 session complete -- see docs/CLAUDE_D_SESSION_MIGRATION_20260912.md for full
+    detail, this is a pointer only. Session covered: forensic segregation audit rebuilt from scratch
+    (audit/segregation/build_segregation.py, prior tooling confirmed never pushed to origin/main), two
+    full 16-section forensic-analysis passes for the Project Owner directive + refresh, evidence packages
+    handed to Claude A (CLAUDE_A_EVIDENCE_PACKAGE.md/_REFRESH.md/_FULL.csv, no verdicts), a classifier
+    ground-truth reference (CLASSIFIER_GROUND_TRUTH_REFERENCE.md) cross-checking the rule engine against
+    every verified_high counted-form (zero contradictions found), and two Owner-confirmed deletion
+    batches (Batch 1: 12 rows, commit 913ffd1; Batch 2: 200 rows, commit bec4fae) -- both exact-match
+    verified before write, full candidate lists shown to Owner first. 10180 -> 9964 records over the
+    session. Cross-session notes for A/B: sak still missing from RAKA_CLASSIFIERS (higher-impact than
+    the already-fixed king half); apple has one leftover se-classifier superseded row (possible Batch 3,
+    not acted on); Family 3 (book/car/house/tree, ~75 rows) and Family 4 (food/rice, ~40 rows) from the
+    original 315-candidate set remain pending. Awaiting Project Owner confirmation for Batch 3 if desired.'
