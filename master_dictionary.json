@@ -8088,13 +8088,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "one apple",
-    "garo": "sa se·sa",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "one banana",
     "garo": "sa sobo·sa",
     "category": "numbers",
@@ -8166,13 +8159,6 @@
     "garo": "mot·gni",
     "category": "travel",
     "confidence": "unverified"
-  },
-  {
-    "english": "two apple",
-    "garo": "se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — repo-wide counting-audit gap closure 2026-08-12 (Claude A, per Claude C QA referral): orphaned pre-evidence-first fabrication, missed by the 2026-08-10 523-entry SUPERSEDED sweep because it has no duplicate-with-fix to compare against. Corpus-internal contradiction only (no native input needed, no replacement asserted): directly contradicts already-VERIFIED 'Apple ronggni' for the same key. Classifier engine/formula confirmed correct and unaffected — see docs/CLAUDE_A_COUNTING_QA_20260812.md.",
-    "confidence": "superseded"
   },
   {
     "english": "two banana",
@@ -8248,13 +8234,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "three apple",
-    "garo": "se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "three banana",
     "garo": "sobo·gni",
     "category": "numbers",
@@ -8308,13 +8287,6 @@
     "garo": "brang mot·gni",
     "category": "travel",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "four apple",
-    "garo": "brang se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
   {
@@ -8374,13 +8346,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "five apple",
-    "garo": "bonga se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "five banana",
     "garo": "bonga sobo·gni",
     "category": "numbers",
@@ -8437,13 +8402,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "six apple",
-    "garo": "dokka se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "six banana",
     "garo": "dokka sobo·gni",
     "category": "numbers",
@@ -8497,13 +8455,6 @@
     "garo": "sni mot·gni",
     "category": "travel",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "seven apple",
-    "garo": "sni se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
   {
@@ -8619,13 +8570,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "nine apple",
-    "garo": "sku se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "nine banana",
     "garo": "sku sobo·gni",
     "category": "numbers",
@@ -8679,13 +8623,6 @@
     "garo": "chi mot·gni",
     "category": "travel",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "ten apple",
-    "garo": "chi se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
   {
@@ -8759,13 +8696,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "eleven apple",
-    "garo": "chi sa se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "eleven banana",
     "garo": "chi sa sobo·gni",
     "category": "numbers",
@@ -8833,13 +8763,6 @@
     "garo": "chi do·o mot·gni",
     "category": "travel",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "twelve apple",
-    "garo": "chi do·o se·gni",
-    "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
   {
@@ -8913,13 +8836,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "thirteen apple",
-    "garo": "chi na·tok se·gni",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "thirteen banana",
     "garo": "chi na·tok sobo·gni",
     "category": "general",
@@ -8987,13 +8903,6 @@
     "garo": "chi brang mot·gni",
     "category": "travel",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "fourteen apple",
-    "garo": "chi brang se·gni",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
   {
@@ -9067,13 +8976,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "fifteen apple",
-    "garo": "chi bonga se·gni",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "fifteen banana",
     "garo": "chi bonga sobo·gni",
     "category": "general",
@@ -9141,13 +9043,6 @@
     "garo": "chi dokka mot·gni",
     "category": "travel",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "sixteen apple",
-    "garo": "chi dokka se·gni",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
   {
@@ -9221,13 +9116,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "seventeen apple",
-    "garo": "chi sni se·gni",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "seventeen banana",
     "garo": "chi sni sobo·gni",
     "category": "general",
@@ -9295,13 +9183,6 @@
     "garo": "chi chet mot·gni",
     "category": "travel",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "eighteen apple",
-    "garo": "chi chet se·gni",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
   {
@@ -9375,13 +9256,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "nineteen apple",
-    "garo": "chi sku se·gni",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "nineteen banana",
     "garo": "chi sku sobo·gni",
     "category": "general",
@@ -9449,13 +9323,6 @@
     "garo": "chi chi mot·gni",
     "category": "travel",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count, and the root word does not match this noun's own VERIFIED singular dictionary entry (fabricated placeholder — the same root is reused across unrelated nouns elsewhere in this pattern, e.g. 'rang' for house/tree/book/car). No classifier family is native-confirmed for this noun at all yet (outside garo_classifier.js's CLASSIFIER_MAP) — classifier assignment is an open native-validation question, separate from this data-hygiene tag. Not deleted, retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "twenty apple",
-    "garo": "chi chi se·gni",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
     "confidence": "superseded"
   },
   {
