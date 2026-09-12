@@ -5559,9 +5559,13 @@ claude_d:
     handed to Claude A (CLAUDE_A_EVIDENCE_PACKAGE.md/_REFRESH.md/_FULL.csv, no verdicts), a classifier
     ground-truth reference (CLASSIFIER_GROUND_TRUTH_REFERENCE.md) cross-checking the rule engine against
     every verified_high counted-form (zero contradictions found), and two Owner-confirmed deletion
-    batches (Batch 1: 12 rows, commit 913ffd1; Batch 2: 200 rows, commit bec4fae) -- both exact-match
-    verified before write, full candidate lists shown to Owner first. 10180 -> 9964 records over the
-    session. Cross-session notes for A/B: sak still missing from RAKA_CLASSIFIERS (higher-impact than
-    the already-fixed king half); apple has one leftover se-classifier superseded row (possible Batch 3,
-    not acted on); Family 3 (book/car/house/tree, ~75 rows) and Family 4 (food/rice, ~40 rows) from the
-    original 315-candidate set remain pending. Awaiting Project Owner confirmation for Batch 3 if desired.'
+    batches (Batch 1: 12 rows, commit 913ffd1; Batch 2: 200 rows, commit bec4fae). Cross-session notes
+    for A/B: sak still missing from RAKA_CLASSIFIERS (higher-impact than the already-fixed king half);
+    Family 3 (book/car/house/tree, ~75 rows) and Family 4 (food/rice, ~40 rows) from the original
+    315-candidate set remain pending Owner confirmation.
+    FOLLOW-UP after close: one more Owner-confirmed single-row deletion -- idx 379, student=Porai·gipa
+    (superseded duplicate of the already-native-confirmed root Chattro, NV-073; apple''s leftover
+    se-classifier superseded row noted previously is still separately pending, not this row). Exact-match
+    verified before delete. 9964 -> 9963 records, hash ...b8d02ad6->4d76b95e. Commit 47d03d7. No action
+    needed from A/B -- purely removes a dead retained-per-citation-discipline row, Chattro was already
+    the sole active form everywhere else.'
