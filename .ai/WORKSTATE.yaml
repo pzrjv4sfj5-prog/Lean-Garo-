@@ -5508,3 +5508,34 @@ chatgpt:
   completed: []
   next_action: unknown
   do_not_repeat: []
+claude_d:
+  status: 'forensic segregation/audit only -- never edits master_dictionary.json except under explicit,
+    scoped Project Owner directive in-chat, exact-match verified before write, per repo governance
+    (.ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json priority order).'
+  last_updated_20260912_batch1: '2026-09-12 (Claude D): Project Owner directive, in-chat, this session --
+    delete 12 confirmed-wrong superseded placeholder counting entries. All were a generic classifier+numeral
+    placeholder (mang·gni / se·gni with no noun-specific root, e.g. bare "eight"/"eleven" count suffix)
+    reused byte-identical across unrelated nouns (dog/cat/bird/fish/apple), including malformed-plural
+    keys (eight dogs/birds/fishs). All 12 were confidence=superseded; each noun already has its correct
+    noun-specific verified_high counterpart (achak mang·chet, na·tok mang·Chi·sa, Apple rongchet, etc.) --
+    these were leftover duplicates, not the only representation. Identified via Claude D segregation audit
+    2026-09-12 (see CLAUDE_A_EVIDENCE_PACKAGE.md / CLAUDE_A_EVIDENCE_PACKAGE_REFRESH.md, section on the
+    ranggni/chikgni generic-placeholder pattern within the 689-record generated-counting population).
+    Every target record verified by exact (idx, english, garo, confidence) match immediately before
+    deletion; script asserted all 12 matched before touching the file, and asserted post-count = pre-count
+    - 12. 10178 -> 10166 records. Commit 913ffd1. This is Batch 1 of an ongoing Owner-directed cleanup of
+    the generated-counting placeholder population -- Claude A/B should expect further batches, each scoped
+    to an explicit Owner confirmation in-chat before any write, same as this one. No other record, no
+    runtime file, no rule contract touched.'
+  handoff_to_claude_a: 'FYI, not a request for action: the deleted rows were pure duplicates of forms you
+    already have verified_high citations for (see commit 913ffd1 message for the noun-specific replacements
+    each superseded row was a duplicate of). If any of those noun-specific verified_high forms are
+    themselves later revised, note there is no longer a superseded fallback row for eight/eleven
+    dog/cat/bird/fish/apple to fall back to -- not expected to matter, flagging for completeness only.'
+  handoff_to_claude_b: 'FYI, not a request for action: if any compiled/runtime artifact (compiled_dict.json,
+    category_index.json, etc.) still references idx positions from before this deletion, note
+    master_dictionary.json array indices shifted for every record after idx 1252 as of commit 913ffd1 --
+    consistent with the general index-drift risk already flagged in Claude D''s prior forensic report
+    (FULL_FORENSIC_REPORT.md). No runtime file was rebuilt as part of this change; that remains your call.'
+  next_action: 'None pending from Claude D. Awaiting Project Owner confirmation for Batch 2 of the
+    generated-counting placeholder cleanup, if desired.'
