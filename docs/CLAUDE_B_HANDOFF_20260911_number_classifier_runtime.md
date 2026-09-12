@@ -44,6 +44,13 @@ this bug is specifically `sak` for n <= 19/20, where the dot is missing.
 only -- do not touch the already-approved 40+ fusion branch, which is a
 separate, deliberately dot-less surface form).
 
+**Addendum, 2026-09-12 (Claude A):** the standing question of whether
+`ge`/`te` (already in the set) are genuine confirmed exceptions or
+simply wrong is now CLOSED -- both are real, richly-cited raka
+classifiers (`ge`: 18-row VERIFIED/HIGH pen paradigm; `te`: 10-row
+VERIFIED/HIGH house paradigm). No removal needed. See RULE-038.yaml
+for full citations.
+
 ## Bug 2 — 20–99 composition (`getClassifierSuffix`, `garo_classifier.js:100-102`) — PARTIALLY FIXED (sak only)
 For n in 20-99, the code takes the two-word number-table form (e.g.
 `"Sotbri Sa"`, capitalized per its citation form) and does
@@ -64,9 +71,13 @@ surface rule is `NOUN + SPACE + CLASSIFIER + SPACE + NUMBER`
 (fully separate tokens), so `"41 dogs"`/`"41 cars"` should very
 likely not be dot-fused at all — only the explicitly-approved
 human-sak-40+ exception gets the special fused-but-space-separated
-form. Worth confirming the intended default surface with the Owner
-before implementing, since the contract doesn't give a worked example
-for a non-human tens+unit case.
+form. **Addendum, 2026-09-12 (Claude A):** no Owner confirmation is actually
+needed here -- the contract's own `surface_policy.default_display`
+already states this general rule explicitly, and its
+`confirmed_examples` for `bol`/`dot`/`dam`/`roa`/`rong` (`Gari bol sa`,
+`A·bri dot sa`, `Song dam sa`, `Rama dil roa sa`, `Chi rong sa`) all
+use a plain space. This is settled data, not an open question -- clear
+to implement as a uniform non-`sak` default without a further check-in.
 
 ## Bug 3 — exact-hundred composition (`buildLargeClassifierPhrase`, `garo_classifier.js:120-141`)
 When `remHundred === 0` (i.e. an exact multiple of 100), the code
@@ -119,3 +130,11 @@ generalizing to every classifier (`king`, `bol`, `mang`, etc.), which
 would likely also subsume Bug 1 (the missing-dot `king` case) if the
 same lowercase-and-space-join approach is applied uniformly instead of
 per-classifier. Bugs 3, 4, 5 are untouched.
+
+**Separately (2026-09-12, Claude A, checked not fixed):** whether the
+`sak` 40+ fusion pattern generalizes past the three Owner-confirmed
+examples (40/50/60, i.e. `Sotbri`/`Sotbonga`/`Sotdok` bases) to
+70/80/90 remains genuinely open -- no 70s/80s/90s worked example or
+note exists anywhere in the contract or master_dictionary.json. Not
+corpus-resolvable; needs an actual Owner/Thangseng confirmation before
+Bug 2's fix is extended to those ranges for `sak`.
