@@ -256,21 +256,73 @@ function singularize(word) {
   return word;
 }
 
+function parseNumberBlock(words, pos) {
+  const v = NUMBER_WORDS[words[pos]];
+  if (v === undefined || v >= 100) return null; // this block only handles 1-19 and tens-multiples
+  if (v >= 20 && v % 10 === 0) {
+    const nextV = NUMBER_WORDS[words[pos + 1]];
+    if (nextV !== undefined && nextV >= 1 && nextV <= 9) {
+      return { value: v + nextV, consumed: 2 }; // e.g. "twenty five" -> 25
+    }
+    return { value: v, consumed: 1 }; // a following word that isn't 1-9 (e.g. "twenty ten") must not combine
+  }
+  return { value: v, consumed: 1 };
+}
+
+function skipAnd(words, pos) {
+  return (words[pos] === 'and' && NUMBER_WORDS[words[pos + 1]] !== undefined) ? pos + 1 : pos;
+}
+
 export function parseCountingPhrase(input) {
   if (!input) return null;
   const lower = input.toLowerCase().trim();
   const words = lower.split(/\s+/);
   if (words.length < 2) return null;
-  let count = parseCount(words[0]);
-  if (!count) return null;
-  let consumed = 1;
-  if (count >= 20 && count % 10 === 0 && words.length > 2) {
-    const units = parseCount(words[1]);
-    if (units !== null && units >= 1 && units <= 9) {
-      count += units;
-      consumed = 2;
+  // Bug 4 fix (2026-09-12, Claude B): explicit thousands/hundreds/tens
+  // grammar so word-form cardinals like "one hundred" or "two thousand"
+  // — "hundred"/"thousand" were already in NUMBER_WORDS but never
+  // consumed past the first word — are recognized and combined, the
+  // same way "twenty five" already was. This only changes which
+  // English number *words* map to which integer (ordinary English
+  // cardinal grammar, not a Garo decision); it feeds the same existing
+  // buildClassifierPhrase/buildLargeClassifierPhrase composition
+  // already used by digit input like "100 dogs", so it does not add or
+  // change any Garo surface rule. Structured as explicit blocks (not a
+  // flat accumulate-loop) specifically to preserve the existing
+  // RC-CANDIDATE-031 guarantee that an invalid compound like "twenty
+  // ten" must not combine.
+  let total = 0;
+  let pos = 0;
+  const asDigit = /^\d+$/.test(words[0]) ? parseInt(words[0], 10) : null;
+  if (asDigit !== null && asDigit > 0) {
+    total = asDigit;
+    pos = 1;
+  } else {
+    let block = parseNumberBlock(words, pos);
+    if (block && words[pos + block.consumed] === 'thousand') {
+      total += block.value * 1000;
+      pos = skipAnd(words, pos + block.consumed + 1);
+    } else if (words[pos] === 'thousand') {
+      total += 1000;
+      pos = skipAnd(words, pos + 1);
+    }
+    block = parseNumberBlock(words, pos);
+    if (block && words[pos + block.consumed] === 'hundred') {
+      total += block.value * 100;
+      pos = skipAnd(words, pos + block.consumed + 1);
+    } else if (words[pos] === 'hundred') {
+      total += 100;
+      pos = skipAnd(words, pos + 1);
+    }
+    block = parseNumberBlock(words, pos);
+    if (block) {
+      total += block.value;
+      pos += block.consumed;
     }
   }
+  let count = total;
+  if (!count) return null;
+  const consumed = pos;
   let remaining = words.slice(consumed);
   let unit = null;
   if (remaining.length > 0 && UNIT_WORDS[remaining[0]]) {
