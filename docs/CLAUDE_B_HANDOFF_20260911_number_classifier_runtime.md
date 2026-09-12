@@ -66,18 +66,34 @@ match the Owner-approved human-40+ surface form
 **Fix:** lowercase the tens-portion before composing, and stop
 replacing the internal space with a dot — the approved surface keeps
 a plain space there, it does not fuse to a dot.
-**Also applies to non-human classifiers** — the contract's *default*
-surface rule is `NOUN + SPACE + CLASSIFIER + SPACE + NUMBER`
-(fully separate tokens), so `"41 dogs"`/`"41 cars"` should very
-likely not be dot-fused at all — only the explicitly-approved
-human-sak-40+ exception gets the special fused-but-space-separated
-form. **Addendum, 2026-09-12 (Claude A):** no Owner confirmation is actually
-needed here -- the contract's own `surface_policy.default_display`
-already states this general rule explicitly, and its
-`confirmed_examples` for `bol`/`dot`/`dam`/`roa`/`rong` (`Gari bol sa`,
-`A·bri dot sa`, `Song dam sa`, `Rama dil roa sa`, `Chi rong sa`) all
-use a plain space. This is settled data, not an open question -- clear
-to implement as a uniform non-`sak` default without a further check-in.
+**Also applies to non-human classifiers, but NOT as originally stated
+below** — see the 2026-09-12 correction.
+
+**Addendum, 2026-09-12 (Claude A) — CORRECTION, retracting my own
+earlier note today:** I originally wrote here that the contract's
+`surface_policy.default_display` settles this toward plain-space
+(`NOUN SPACE CLASSIFIER SPACE NUMBER`) for `bol`/`dot`/`dam`/`roa`/
+`rong`, citing that policy field's `confirmed_examples`. That was
+wrong — I hadn't checked those examples against actual
+master_dictionary.json rows before writing it. Doing so now: `A·bri
+dotsa`, `Song damsa`, `Rama dilsa`, and `Gari bolsa` (mountain/
+village/road/car) are all directly Thangseng-cited, VERIFIED/HIGH,
+and FUSED with no space ("no raka dot (classifier-level property,
+like pang/rong/dot/dam/dil/bol)" — direct quote from those rows'
+citation notes, native relay session 2026-08-13). The contract's
+spaced `confirmed_examples` for these four were a stale draft
+assumption that predates those citations and was never reconciled —
+corrected the contract file itself
+(`data/garo_number_classifier_engine_machine_ready.json`) to match
+the actual native evidence. **Corrected fix:** `sak`/`rong`/`pang`/
+`dot`/`dam`/`dil`/`bol` all fuse with NO space and NO raka dot — i.e.
+the current `${classifier}${suffix}` behavior in
+`buildClassifierPhrase` for non-`RAKA_CLASSIFIERS` members is already
+correct for these. Nothing to fix here after all; Bug 2's real scope
+is only the human-sak-40+ dot/capitalization issue described above.
+Separately, `rong` for water/beer (`Chi rong sa`, `beer rong sa`) has
+no backing master_dictionary.json citation at all — flagged
+unconfirmed in the contract, not resolved either way.
 
 ## Bug 3 — exact-hundred composition (`buildLargeClassifierPhrase`, `garo_classifier.js:120-141`)
 When `remHundred === 0` (i.e. an exact multiple of 100), the code

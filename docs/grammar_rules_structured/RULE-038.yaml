@@ -105,18 +105,20 @@ native_notes: >-
   runtime bug — the dictionary rows were always correct). Both take
   the raka dot, same as mang/king/gong. CLOSED — no engineering change
   needed, ge/te correctly belong in RAKA_CLASSIFIERS.
-  Space-before-number question (2026-09-12, closing the same doc's
-  item re: bol/dot/dam/roa/rong): NOT actually an open linguistic
-  question — data/garo_number_classifier_engine_machine_ready.json's
-  own surface_policy.default_display already states the general rule
-  (NOUN + SPACE + CLASSIFIER + SPACE + NUMBER for every classifier
-  except the one explicitly-approved sak 40+ fused exception), and
-  every one of that file's confirmed_examples for these classifiers
-  (Gari bol sa, A·bri dot sa, Song dam sa, Rama dil roa sa, Chi rong
-  sa) already uses a plain space. This was already Owner+Claude A
-  corrected data sitting in a ready-for-consumption contract, not an
-  unanswered question — restated to Claude B as a pure Bug 2
-  implementation task, no further Owner confirmation needed.
+  Space-before-number question (2026-09-12, CORRECTED — retracting
+  my own earlier note today): originally closed this as "settled,
+  plain space" citing the contract's surface_policy.default_display
+  and its confirmed_examples for bol/dot/dam/roa/rong. That was wrong
+  — those confirmed_examples were a stale draft assumption predating
+  the 2026-08-13 direct Thangseng citations for mountain/village/
+  road/car, which are explicitly FUSED with no space (master_
+  dictionary.json: "no raka dot (classifier-level property, like
+  pang/rong/dot/dam/dil/bol)"). Corrected the contract file to match.
+  Actual answer: sak/rong/pang/dot/dam/dil/bol all fuse with no space
+  and no raka dot — the engine's existing behavior for these is
+  already correct, nothing to change. Water/beer's rong examples
+  ("Chi rong sa") remain genuinely unconfirmed, no citation backs
+  them.
   sak 40+ fusion generalization (2026-09-12, CLOSED — see NV-157):
   raised the question in docs/THANGSENG_RELAY_QUESTION_20260912.md
   (item 12); Thangseng confirmed same-day the fused sak+tens pattern
