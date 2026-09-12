@@ -3183,8 +3183,8 @@
     "english": "lie",
     "garo": "Tol·a",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'lie' has VERIFIED/HIGH form(s) ['Tol·napani', 'bo·a ra·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner): confirmed 'tol.a (as in telling a lie)'. Corroborated by pre-existing final_entries.json record (already listed Tol·a as primary for 'Lie', Tol·napani/bo·a ra·a as variants, independent of this session). Supersedes the 2026-08-01 corpus-internal audit.",
+    "confidence": "verified_high"
   },
   {
     "english": "war",
@@ -3357,8 +3357,8 @@
     "english": "egg",
     "garo": "Do·chi",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'egg' has VERIFIED/HIGH form(s) ['do·obit·chi']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner): confirmed 'do.chi' for egg. Corroborated by pre-existing final_entries.json record (already listed Do·chi as primary, do˙-bit-chi as variant, independent of this session). Supersedes the 2026-08-01 corpus-internal audit that wrongly flagged this as an unannotated legacy import.",
+    "confidence": "verified_high"
   },
   {
     "english": "meat",
@@ -19924,8 +19924,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'early' has VERIFIED/HIGH form(s) ['Bakkan', 'Pring·seng']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner): confirmed 'seng.gnang' for early. Corroborated by pre-existing final_entries.json record (already listed Seng·gnang as primary, Bakkan/Pring-seng as variants, independent of this session). Supersedes the 2026-08-01 corpus-internal audit.",
+    "confidence": "verified_high"
   },
   {
     "english": "earthquake",
@@ -21729,8 +21729,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import outranked the correct native word at runtime. NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'Seng·gnang' instead; see that row. Original relay question (item 3, THANGSENG_RELAY_QUESTION_20260911.md) asking to disambiguate this word from Pring·seng was not directly answered — Thangseng instead supplied a third, independently-confirmed word.",
+    "confidence": "superseded"
   },
   {
     "english": "Early",
@@ -21738,8 +21738,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import outranked the correct native word at runtime. NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'Seng·gnang' instead; see that row. Original relay question (item 3, THANGSENG_RELAY_QUESTION_20260911.md) asking to disambiguate this word from Pring·seng was not directly answered — Thangseng instead supplied a third, independently-confirmed word.",
+    "confidence": "superseded"
   },
   {
     "english": "East",
@@ -21790,8 +21790,8 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import outranked the correct native word at runtime (same bug shape as ginger/garlic/tomato). NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'Do·chi' instead; see that row.",
+    "confidence": "superseded"
   },
   {
     "english": "Elephant",
@@ -21808,7 +21808,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH — NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner): confirmed 'bangbang' for empty (general sense; container/room/stomach distinction from the relay question not addressed in the answer). Corroborated by pre-existing final_entries.json record (already listed Bangbang as primary).",
     "confidence": "verified_high"
   },
   {
@@ -21817,8 +21817,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import; one of them (jak·ra·ra) was shipping live via phrase_maps.js. NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'bang·bang' instead; see that row.",
+    "confidence": "superseded"
   },
   {
     "english": "Empty",
@@ -21826,8 +21826,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import; one of them (jak·ra·ra) was shipping live via phrase_maps.js. NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'bang·bang' instead; see that row.",
+    "confidence": "superseded"
   },
   {
     "english": "Enemy",
@@ -22985,8 +22985,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import. NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'Tol·a' instead for the tell-a-lie sense; see that row. Whether this form (recline sense vs. some other nuance) is separately valid was not addressed by the relay answer — genuinely still open if a distinct meaning is ever claimed for it.",
+    "confidence": "superseded"
   },
   {
     "english": "Lie",
@@ -22994,8 +22994,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — uncited 'variant/VERIFIED/HIGH' import. NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner) confirms 'Tol·a' instead for the tell-a-lie sense; see that row. Whether this form (recline sense vs. some other nuance) is separately valid was not addressed by the relay answer — genuinely still open if a distinct meaning is ever claimed for it.",
+    "confidence": "superseded"
   },
   {
     "english": "Life",
@@ -79561,6 +79561,15 @@
     "garo": "Lakhsa",
     "category": "numbers",
     "notes": "VERIFIED/HIGH — Project Owner confirmed (2026-09-10) from data/garo_number_system_machine_ready.json (GPT-drafted, landed by Claude B, commit 2b78781, blob f599bcee9bb50fbb44647d4d13fbf1d8156022ba). Composition: 10000/100000 = dedicated base word, per the machine-ready file's composition_rules.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to tell a lie",
+    "garo": "Tol·a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-156 (2026-09-12, Thangseng direct confirmation via WhatsApp, relayed by Project Owner), explicitly for this sense ('as in telling a lie'). Added alongside the existing unrated 'to tell a lie'=Bo·a row (not deleted, see citation-discipline norm) so this verified value wins at compile.",
     "confidence": "verified_high"
   }
 ]

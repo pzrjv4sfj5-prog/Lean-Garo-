@@ -235,7 +235,7 @@ export const PHRASE_MAPS = {
   'clean': 'Rongtal·ata',
   'dirty': 'Mitchia',
   'full': 'Gapa',
-  'empty': 'jak·ra·ra',
+  'empty': 'bang·bang',
   'expensive': 'rak·a',
   'cheap': 'Dam·nom·a',
   'all': 'Gimikan', // native-confirmed 2026-08-17 (NV-080, Thangseng relay) as 'Gimikan', superseding the earlier 2026-08-06 provisional 3-way tie (be·bak / gim·ik / ·tok·) referenced in prior versions of this comment -- no longer provisional

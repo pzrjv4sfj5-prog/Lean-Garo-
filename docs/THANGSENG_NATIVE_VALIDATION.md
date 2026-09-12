@@ -7185,3 +7185,54 @@ Gate green throughout: 8264/8264 compiled entries, 9/9 grammatical
 corrections, 379/379 unit tests, 0 new repository-intelligence
 violations. Live-verified `translate("i want to pray")` →
 `"Anga bi·na skenga"`.
+
+## NV-156 (2026-09-12, WhatsApp relay via Project Owner)
+
+Thangseng answered part of the pending batch in
+`docs/THANGSENG_RELAY_QUESTION_20260911.md` directly over WhatsApp
+(relayed into chat by the Project Owner, provenance-labeled as a
+direct Thangseng quote per the Owner's transcript):
+
+> "egg? do.chi" / "lie — tol.a (as in telling a lie)" /
+> "early = seng.gnang" / "empty = bangbang"
+
+All four were **live runtime bugs**, not just data hygiene: an uncited
+`variant/VERIFIED/HIGH` import was outranking the correct native word
+at runtime in every case (same shape as the 2026-09-09 ginger/garlic/
+tomato/brinjal/pumpkin fix), while the correct word sat wrongly
+SUPERSEDED under a 2026-08-01 corpus-internal audit. All four were
+independently corroborated by `final_entries.json`, which had already
+recorded the same primary/variant split (unrelated to this session).
+
+- **egg** → `Do·chi` promoted superseded→verified_high; `do·obit·chi`
+  (Egg) demoted verified_high→superseded.
+- **early** → `Seng·gnang` promoted superseded→verified_high; `Bakkan`
+  and `Pring·seng` (Early) demoted verified_high→superseded. Note: the
+  original relay question (item 3) asked Thangseng to disambiguate
+  Bakkan vs. Pring·seng specifically — he did not address either one,
+  instead independently confirming a third word. That disambiguation
+  is still open if ever needed.
+- **empty** → `bang·bang` (Empty) kept verified_high, citation added;
+  `chi·chang·chang` and `jak·ra·ra` (Empty) demoted verified_high→
+  superseded. `jak·ra·ra` was shipping live via `phrase_maps.js` —
+  fixed directly (Rule 8). Note: the relay question's container/room/
+  stomach distinction was not addressed by this general answer.
+- **lie** → `Tol·a` promoted superseded→verified_high for bare "lie";
+  `Tol·napani` and `bo·a ra·a` (Lie) demoted verified_high→superseded.
+  New row added for the unambiguous sense, `to tell a lie`→`Tol·a`
+  (verified_high) — old unrated `to tell a lie`→`Bo·a` row kept per
+  citation discipline, allowlisted in `known_dictionary_conflicts.json`
+  as an intentional two-candidate key. `to lie` (still ambiguous
+  recline-vs-tell-a-lie) left untouched — genuinely unaddressed by the
+  answer.
+
+Remaining items from the relay batch (agree, brave, greedy, horn,
+last, leg, outside, and the fever/suffer question) are still
+unanswered — Thangseng's message only covered egg/lie/early/empty.
+
+Gate green throughout: 8362 compiled entries, 0 new
+repository-intelligence violations (1 intentional conflict allowlisted,
+see above), 379/379 unit tests. Live-verified all four:
+`translate("egg")`→`Do·chi`, `translate("early")`→`Seng·gnang`,
+`translate("empty")`→`bang·bang`, `translate("lie")`→`Tol·a`,
+`translate("to tell a lie")`→`Tol·a`.
