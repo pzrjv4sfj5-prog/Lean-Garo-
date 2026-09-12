@@ -7236,3 +7236,25 @@ see above), 379/379 unit tests. Live-verified all four:
 `translate("egg")`→`Do·chi`, `translate("early")`→`Seng·gnang`,
 `translate("empty")`→`bang·bang`, `translate("lie")`→`Tol·a`,
 `translate("to tell a lie")`→`Tol·a`.
+
+## NV-157 (2026-09-12, WhatsApp relay via Project Owner)
+
+Thangseng confirmed item 12 of `docs/THANGSENG_RELAY_QUESTION_20260912.md`
+("12 is correct"): the fused `sak`+tens-word counting surface pattern
+(confirmed at 40/50/60 as `Chattro saksotbri sa` / `saksotbonga bonga`
+/ `saksotdok sni`) generalizes cleanly past 60 with no change — e.g.
+71 = `Chattro saksotsni sa`. Applies uniformly through 70s/80s/90s
+using `Sotsni`/`Sotchet`/`Sotsku`.
+
+Added `human_70_plus` field + 71/81/91 worked examples to
+`data/garo_number_classifier_engine_machine_ready.json`. Restated to
+the standing Claude B handoff
+(`docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md`) as
+resolved — Bug 2's fix can safely cover the full 40-99 `sak` range,
+not just 40-67. RULE-038.yaml's note on this updated from OPEN to
+CLOSED.
+
+No dictionary data or runtime code changed this entry — contract/doc
+update only, not a compile input. Gate not re-run for this entry
+alone (no master_dictionary.json/phrase_maps.js change); will be
+verified on next full-gate pass.

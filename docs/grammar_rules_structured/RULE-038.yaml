@@ -117,15 +117,13 @@ native_notes: >-
   corrected data sitting in a ready-for-consumption contract, not an
   unanswered question — restated to Claude B as a pure Bug 2
   implementation task, no further Owner confirmation needed.
-  sak 40+ fusion generalization (2026-09-12, checked, still OPEN):
-  looked for confirmation beyond the three examples already in the
-  contract (41/55/67 -> Sotbri/Sotbonga/Sotdok bases, i.e. 40s/50s/
-  60s). Found none — no 70s/80s/90s worked example or note anywhere
-  in data/garo_number_classifier_engine_machine_ready.json or
-  master_dictionary.json. Genuinely not corpus-resolvable; stays open,
-  candidate for a future Thangseng relay batch (not added to the
-  currently-drafted docs/THANGSENG_RELAY_QUESTION_20260911.md, which
-  is scoped to pickPrimary ties — this needs its own future item).
+  sak 40+ fusion generalization (2026-09-12, CLOSED — see NV-157):
+  raised the question in docs/THANGSENG_RELAY_QUESTION_20260912.md
+  (item 12); Thangseng confirmed same-day the fused sak+tens pattern
+  generalizes cleanly past 60, e.g. 71 = Chattro saksotsni sa. Applies
+  uniformly through 70s/80s/90s (Sotsni/Sotchet/Sotsku). Worked
+  examples added to
+  data/garo_number_classifier_engine_machine_ready.json.
 last_updated: "2026-09-12"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-038"

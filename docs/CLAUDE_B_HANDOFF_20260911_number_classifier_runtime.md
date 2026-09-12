@@ -131,10 +131,13 @@ would likely also subsume Bug 1 (the missing-dot `king` case) if the
 same lowercase-and-space-join approach is applied uniformly instead of
 per-classifier. Bugs 3, 4, 5 are untouched.
 
-**Separately (2026-09-12, Claude A, checked not fixed):** whether the
-`sak` 40+ fusion pattern generalizes past the three Owner-confirmed
-examples (40/50/60, i.e. `Sotbri`/`Sotbonga`/`Sotdok` bases) to
-70/80/90 remains genuinely open -- no 70s/80s/90s worked example or
-note exists anywhere in the contract or master_dictionary.json. Not
-corpus-resolvable; needs an actual Owner/Thangseng confirmation before
-Bug 2's fix is extended to those ranges for `sak`.
+**Separately (2026-09-12, Claude A, RESOLVED — see NV-157):** whether
+the `sak` 40+ fusion pattern generalizes past 70/80/90 is now
+confirmed. Thangseng: "12 is correct" (in response to the exact
+question of whether 71 = `Chattro saksotsni sa` following the same
+pattern). Generalizes cleanly through the 70s/80s/90s using
+`Sotsni`/`Sotchet`/`Sotsku` — no change in the pattern past 60.
+Worked examples added to
+`data/garo_number_classifier_engine_machine_ready.json`
+(`human_70_plus` field + 71/81/91 entries). Safe for Bug 2's fix to
+cover the full 40-99 range for `sak`, not just 40-67.
