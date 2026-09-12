@@ -1,5 +1,24 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-11 by Claude B
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-12 by Claude B
+(review + role-doc session, minimal-runtime. Owner asked to review all recent
+Claude B work, provided a fresh PAT, and asked for an explicit role-
+clarification section for new Claude B sessions — added to
+docs/CLAUDE_B_SESSION_MIGRATION_20260912.md. Re-synced and found 8 concurrent
+commits since the 2026-09-11 close, all Claude A / direct Owner work,
+reviewed not redone: unsent Thangseng relay draft; gnisan/Kolgrik·sa deleted
+(unverified, Owner directive) with a live side-effect fix (hyphenated
+"twenty-one" no longer resolves to the deleted wrong value); Claude A found
+`sak` is also missing from RAKA_CLASSIFIERS (addendum to Bug 1, flagged only,
+not touched); direct Owner commit added `king` to RAKA_CLASSIFIERS, closing
+Bug 1's `king` half. Found and fixed this session: the `king` fix left
+tests/unit/rong_classifier.test.js stale (one-line test-oracle update, 379/379
+restored). Also found and fixed: .ai/WORKSTATE.yaml had a pre-existing missing
+closing quote on Claude A's own next_action entry, breaking YAML parsing
+entirely — pure syntax repair, no content changed. No new engineering work
+attempted beyond those two fixes. Open items unchanged in substance, restated
+with current evidence — full detail: .ai/WORKSTATE.yaml claude_b.next_action
+and docs/CLAUDE_B_SESSION_MIGRATION_20260912.md.)
+Prior: 2026-09-11 by Claude B
 (session close, zero-runtime, per explicit Project Owner instruction — keep
 open items pending for next session. Shipped 5 commits this session
 (cf06844/acd9816/e40f17e/9627230/e7c54cf): bare-digit tens words 30-90;

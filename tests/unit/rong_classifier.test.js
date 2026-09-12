@@ -41,8 +41,7 @@ test('regression: existing classifier roots unaffected by rong addition', () => 
   // now matches the already-corrected dictionary data (no raka dot).
   assert.equal(countNoun('mande', 1, 'person'), 'mande saksa');
   // Stale value fixed 2026-09-12 (Claude A): 'king' was added to
-  // RAKA_CLASSIFIERS in commit 3ba97c3 (Claude B, responding to this
-  // session's ge/te RAKA_CLASSIFIERS resolution), matching the
+  // RAKA_CLASSIFIERS in commit 3ba97c3 (direct Owner fix), matching the
   // native-confirmed dotted form already in master_dictionary.json
   // ("ki·tap king·sa"). This test's old no-dot expectation was written
   // before that fix and never updated.
