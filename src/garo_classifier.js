@@ -119,7 +119,7 @@ function getClassifierSuffix(count) {
   return null;
 }
 
-const RAKA_CLASSIFIERS = new Set(['mang', 'ge', 'gong', 'te']);
+const RAKA_CLASSIFIERS = new Set(['mang', 'ge', 'gong', 'te', 'king']);
 
 function bareNumberWord(n) {
   n = parseInt(n);
