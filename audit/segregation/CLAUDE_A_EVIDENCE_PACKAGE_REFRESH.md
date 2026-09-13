@@ -88,6 +88,17 @@ Per instruction, this backlog is reported as statistics only — Claude A is not
 
 ---
 
+## Addendum — apple base-word tie (found in chat, not in the original scan)
+
+Not part of the original SHARED_GARO/SAME_ENGLISH_DIFF_GARO clustering above (both rows are exact-key `apple`, so this is a P0-shaped tie, same category as the 68-item list): two `verified_high` candidates for the bare word "apple," neither downgraded, both citing native/documentary sources.
+
+| idx | English | Garo | Confidence | Notes (verbatim) |
+|---|---|---|---|---|
+| 1048 | apple | Apple | verified_high | "VERIFIED/HIGH — 2026-08-01, direct Thangseng confirmation via Project Owner relay: \"Apple = apple\" (loanword, not shorthand). See NV-049." |
+| 6573 | apple | te·spu | verified_high | "variant/VERIFIED/HIGH — Grammar_Notes_(1).odt, 2026-06-24: the real Garo word for apple, rarely used (most speakers use the English loanword \"Apple\", kept as live default per user). Recorded as alternate." |
+
+Idx 6573's own note already frames this as "recorded as alternate," not a live conflict — it may be that both are intended to coexist (loanword vs native term) rather than needing a single canonical pick. Reporting evidence only, not adjudicating.
+
 ## Files in this refresh
 
 - `CLAUDE_A_EVIDENCE_FULL.csv` — regenerated, 9,376 rows, same schema as before (`cluster_type, cluster_key, cluster_size, idx, english, garo, confidence, notes`).
