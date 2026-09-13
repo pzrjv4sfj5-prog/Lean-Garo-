@@ -1,0 +1,510 @@
+{
+ "head": "b5c4c7dba7a6cbecb508feca01aa4f77ca71e8bd",
+ "dict_hash": "12e87c9a2e04f4cfae33d4888b66975232cdda82",
+ "record_count": 10180,
+ "shared_garo_clusters": 1914,
+ "shared_garo_records": 5445,
+ "same_eng_clusters": 1585,
+ "same_eng_records": 3931,
+ "total_evidence_rows": 9376,
+ "gen_hits_total": 689,
+ "gen_status_breakdown": {
+  "explicitly superseded": 126,
+  "unverified/OCR": 16,
+  "verified/high": 547
+ },
+ "gen_active_count": 563,
+ "coexist_cluster_count": 881,
+ "P0_count": 68,
+ "P1_count": 783,
+ "P2_count": 563,
+ "P3_count": 881,
+ "P4_count": 117,
+ "P5": {
+  "space_variant_groups": 179,
+  "garo_case_variant_groups": 175,
+  "interpunct_period_mix": 46
+ },
+ "P6": {
+  "superseded": 1380,
+  "unverified": 6163,
+  "verified_high": 2059,
+  "missing": 298,
+  "open": 8,
+  "rejected": 5,
+  "ocr_flagged": 267
+ },
+ "P0_examples": {
+  "orange": [
+   "orange|Narang",
+   "Orange|ko·mil·a",
+   "Orange|na·rang",
+   "orange|a·mnk"
+  ],
+  "hope": [
+   "hope|Ka·donga",
+   "Hope|a·sa",
+   "Hope|ka·donga",
+   "Hope|mik·sok·a",
+   "Hope|Ka·donga",
+   "hope|ka·dongani"
+  ],
+  "monkey": [
+   "monkey|Makre",
+   "Monkey|ha·mak",
+   "Monkey|mak·kre",
+   "Monkey|rang·gol",
+   "monkey|ha·mak rang·gol",
+   "monkey|a·mak"
+  ],
+  "walk": [
+   "walk|Re·a",
+   "Walk|re·am·a"
+  ],
+  "listen": [
+   "listen|Knachik·bo",
+   "Listen|Knachika",
+   "Listen|kin·a·a",
+   "Listen|kin·a·tim·a"
+  ],
+  "son": [
+   "son|Depante",
+   "Son|De·bi·pa",
+   "Son|de·pan·te"
+  ],
+  "grandfather": [
+   "grandfather|Abi·tang",
+   "Grandfather|Aitchu",
+   "Grandfather|at·chu"
+  ],
+  "friend": [
+   "friend|Ripeng",
+   "Friend|Ripsak / Ripeng",
+   "Friend|ba·ju",
+   "Friend|bi·sa"
+  ],
+  "leg": [
+   "leg|Ja·a",
+   "Leg|ja·chok",
+   "Leg|ja·git·teng",
+   "Leg|ja·teng",
+   "leg|ja·"
+  ],
+  "last": [
+   "last|Baksangni",
+   "Last|bai·a",
+   "Last|ses",
+   "last|bon·kamgipa",
+   "last|ja·mangipa"
+  ]
+ },
+ "P1_examples": {
+  "one person": [
+   "one person|sa mande·sa|superseded",
+   "one person|mande saksa|verified_high"
+  ],
+  "one coin": [
+   "one coin|tangka gong·sa|superseded",
+   "one coin|tangka bisil gong·sa|verified_high"
+  ],
+  "one book": [
+   "one book|sa kitab·sa|superseded",
+   "one book|ki·tap king·sa|verified_high"
+  ],
+  "papaya": [
+   "papaya|Modu|superseded",
+   "Papaya|mo·du|superseded",
+   "Papaya|pe·pe|superseded",
+   "papaya|Modupol|verified_high"
+  ],
+  "watermelon": [
+   "watermelon|Te·e raja|superseded",
+   "Watermelon|tor·mus|verified_high"
+  ],
+  "sugar cane": [
+   "sugar cane|Ge·rit|superseded",
+   "Sugar Cane|grit|verified_high"
+  ],
+  "pomelo": [
+   "pomelo|Narang·gira|superseded",
+   "Pomelo|jam·bu·ra|verified_high"
+  ],
+  "cucumber": [
+   "cucumber|Te·e|superseded",
+   "Cucumber|so·sra|superseded",
+   "cucumber|temit|verified_high"
+  ],
+  "sweet potato": [
+   "sweet potato|Ta·we|superseded",
+   "Sweet Potato|ta·mil·ang|verified_high"
+  ],
+  "onion": [
+   "onion|Rasin|superseded",
+   "Onion|ro·sun git·chak|verified_high"
+  ]
+ },
+ "P2_examples": [
+  {
+   "idx": 1,
+   "english": "two birds",
+   "garo": "do·o mang·gni",
+   "confidence": "unverified",
+   "status": "unverified/OCR"
+  },
+  {
+   "idx": 7,
+   "english": "three leaves",
+   "garo": "bijak king·gittam",
+   "confidence": "unverified",
+   "status": "unverified/OCR"
+  },
+  {
+   "idx": 8,
+   "english": "one chair",
+   "garo": "chokki ge·sa",
+   "confidence": "unverified",
+   "status": "unverified/OCR"
+  },
+  {
+   "idx": 9,
+   "english": "two knives",
+   "garo": "kettal ge·gni",
+   "confidence": "unverified",
+   "status": "unverified/OCR"
+  },
+  {
+   "idx": 163,
+   "english": "ten",
+   "garo": "Chiking",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 437,
+   "english": "one pill",
+   "garo": "Sam rongsa",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 438,
+   "english": "two pill",
+   "garo": "Sam ronggni",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 439,
+   "english": "three pill",
+   "garo": "Sam ronggittam",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 440,
+   "english": "four pill",
+   "garo": "Sam rongbri",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 441,
+   "english": "five pill",
+   "garo": "Sam rongbonga",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 442,
+   "english": "six pill",
+   "garo": "Sam rongdok",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 443,
+   "english": "seven pill",
+   "garo": "Sam rongsni",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 444,
+   "english": "eight pill",
+   "garo": "Sam rongchet",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 445,
+   "english": "nine pill",
+   "garo": "Sam rongsku",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  },
+  {
+   "idx": 446,
+   "english": "ten pill",
+   "garo": "Sam rongchiking",
+   "confidence": "verified_high",
+   "status": "verified/high"
+  }
+ ],
+ "P3_examples": [
+  {
+   "pop": "SHARED_GARO",
+   "key": "achak mangsa",
+   "size": 3,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    0,
+    2605,
+    3464
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "anaros",
+   "size": 3,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    14,
+    2620,
+    3501
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "terik",
+   "size": 3,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    15,
+    2621,
+    3133
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "tebrong",
+   "size": 3,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    19,
+    2625,
+    3371
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "tegachu",
+   "size": 4,
+   "verified_high_count": 2,
+   "has_superseded": true,
+   "idxs": [
+    20,
+    2626,
+    3423,
+    10063
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "narikel",
+   "size": 3,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    22,
+    2628,
+    3210
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "atapol",
+   "size": 3,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    29,
+    2635,
+    3231
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "alu",
+   "size": 3,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    35,
+    2641,
+    6865
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "jalik",
+   "size": 4,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    43,
+    504,
+    2649,
+    3185
+   ]
+  },
+  {
+   "pop": "SHARED_GARO",
+   "key": "kasaa",
+   "size": 3,
+   "verified_high_count": 1,
+   "has_superseded": true,
+   "idxs": [
+    59,
+    2666,
+    3420
+   ]
+  }
+ ],
+ "P4_examples": [
+  {
+   "garo": "kadonga",
+   "size": 15,
+   "idxs": [
+    65,
+    2672,
+    3359,
+    8295,
+    8297,
+    8298,
+    8299,
+    8300,
+    8302,
+    8303,
+    8304,
+    8305,
+    8306,
+    8307,
+    8547
+   ]
+  },
+  {
+   "garo": "rea",
+   "size": 4,
+   "idxs": [
+    110,
+    2714,
+    9926,
+    9930
+   ]
+  },
+  {
+   "garo": "nia",
+   "size": 9,
+   "idxs": [
+    114,
+    824,
+    2718,
+    5281,
+    6403,
+    6501,
+    6632,
+    7114,
+    7115
+   ]
+  },
+  {
+   "garo": "kala",
+   "size": 7,
+   "idxs": [
+    118,
+    2722,
+    3503,
+    8433,
+    8434,
+    8435,
+    8437
+   ]
+  },
+  {
+   "garo": "chadenga",
+   "size": 5,
+   "idxs": [
+    119,
+    2724,
+    7798,
+    7800,
+    7801
+   ]
+  },
+  {
+   "garo": "grapa",
+   "size": 8,
+   "idxs": [
+    120,
+    2726,
+    6605,
+    6655,
+    8091,
+    8093,
+    8094,
+    8095
+   ]
+  },
+  {
+   "garo": "brea",
+   "size": 5,
+   "idxs": [
+    121,
+    706,
+    2727,
+    3171,
+    6173
+   ]
+  },
+  {
+   "garo": "pala",
+   "size": 6,
+   "idxs": [
+    122,
+    707,
+    2728,
+    3574,
+    4959,
+    6268
+   ]
+  },
+  {
+   "garo": "reanga",
+   "size": 4,
+   "idxs": [
+    124,
+    2730,
+    9931,
+    10050
+   ]
+  },
+  {
+   "garo": "kaa",
+   "size": 8,
+   "idxs": [
+    211,
+    644,
+    2818,
+    3147,
+    3752,
+    4551,
+    6431,
+    6650
+   ]
+  }
+ ]
+}

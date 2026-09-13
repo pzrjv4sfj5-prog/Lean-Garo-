@@ -1,0 +1,608 @@
+{
+ "section1_repo_state": {
+  "head_commit": "796e427422782b71a6eb00d4972b03d62fd3c93c",
+  "branch": "main",
+  "master_dictionary_hash": "12e87c9a2e04f4cfae33d4888b66975232cdda82",
+  "record_count": 10180,
+  "unique_english_keys_raw": 8286,
+  "unique_garo_values_raw": 7116,
+  "duplicate_english_keys_raw": 1408,
+  "duplicate_english_keys_records_involved": 3302,
+  "duplicate_english_garo_pairs_raw": 9,
+  "duplicate_english_garo_pairs_records_involved": 18
+ },
+ "section3_generated_counting": {
+  "total_hits": 13,
+  "by_verdict": {
+   "UNCERTAIN": 11,
+   "GENERATED_INSTANCE": 2
+  },
+  "examples": [
+   {
+    "idx": 1080,
+    "english": "3",
+    "garo": "gittam",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 1081,
+    "english": "4",
+    "garo": "bri",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 1082,
+    "english": "5",
+    "garo": "bonga",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 1127,
+    "english": "6",
+    "garo": "dok",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 1128,
+    "english": "7",
+    "garo": "sni",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 1129,
+    "english": "8",
+    "garo": "chet",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 1130,
+    "english": "9",
+    "garo": "sku",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 1131,
+    "english": "10",
+    "garo": "chiking",
+    "verdict": "GENERATED_INSTANCE"
+   },
+   {
+    "idx": 3095,
+    "english": "1",
+    "garo": "sa",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 3096,
+    "english": "2",
+    "garo": "gni",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 3097,
+    "english": "3",
+    "garo": "gittam",
+    "verdict": "UNCERTAIN"
+   },
+   {
+    "idx": 10034,
+    "english": "the distance from williamnagar to guwahati is 5 hours",
+    "garo": "Willamnagaroni Guwahationa konta bongamang chel·a.",
+    "verdict": "GENERATED_INSTANCE"
+   },
+   {
+    "idx": 10035,
+    "english": "it's taken only 2 hours to travel from williamnagar to tura",
+    "garo": "Williamnagaroni Turaona songrena konta gnisan nangaha.",
+    "verdict": "UNCERTAIN"
+   }
+  ]
+ },
+ "section4_malformed_keys": {
+  "total": 29,
+  "with_garo_counterpart": 29,
+  "by_noun": {
+   "fish": 29
+  },
+  "examples": [
+   {
+    "idx": 1198,
+    "english": "two fishs",
+    "garo": "do·o mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 1206,
+    "english": "three fishs",
+    "garo": "na·tok mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 1215,
+    "english": "four fishs",
+    "garo": "brang mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 1225,
+    "english": "five fishs",
+    "garo": "bonga mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 1235,
+    "english": "six fishs",
+    "garo": "dokka mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 1245,
+    "english": "seven fishs",
+    "garo": "sni mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 1255,
+    "english": "eight fishs",
+    "garo": "chet mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 1265,
+    "english": "nine fishs",
+    "garo": "sku mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 1274,
+    "english": "ten fishs",
+    "garo": "chi mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9299,
+    "english": "one fishs",
+    "garo": "na·tok mang·sa",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9301,
+    "english": "two fishs",
+    "garo": "na·tok mang·gni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9303,
+    "english": "three fishs",
+    "garo": "na·tok mang·gittam",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9305,
+    "english": "four fishs",
+    "garo": "na·tok mang·bri",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9307,
+    "english": "five fishs",
+    "garo": "na·tok mang·bonga",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9309,
+    "english": "six fishs",
+    "garo": "na·tok mang·dok",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9311,
+    "english": "seven fishs",
+    "garo": "na·tok mang·sni",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9313,
+    "english": "eight fishs",
+    "garo": "na·tok mang·chet",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9315,
+    "english": "nine fishs",
+    "garo": "na·tok mang·sku",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9317,
+    "english": "ten fishs",
+    "garo": "na·tok mang·chiking",
+    "matched_noun": "fish"
+   },
+   {
+    "idx": 9319,
+    "english": "eleven fishs",
+    "garo": "na·tok mang·Chi·sa",
+    "matched_noun": "fish"
+   }
+  ]
+ },
+ "section5_duplicate_vs_shared": {
+  "true_duplicate_pairs": 9,
+  "true_duplicate_records_involved": 18,
+  "shared_garo_keys_count": 1914,
+  "shared_garo_records_involved_english_senses": 5323,
+  "same_english_diff_garo_keys_count": 1585
+ },
+ "section6_confidence_forensics": {
+  "by_confidence": {
+   "superseded": 1380,
+   "unverified": 6163,
+   "verified_high": 2059,
+   "missing": 298,
+   "open": 8,
+   "rejected": 5,
+   "ocr_flagged": 267
+  },
+  "contradictions_count": 313,
+  "contradictions_examples": [
+   {
+    "idx": 16,
+    "type": "notes=SUPERSEDED but confidence!=superseded",
+    "confidence": "verified_high",
+    "english": "orange"
+   },
+   {
+    "idx": 80,
+    "type": "notes=SUPERSEDED but confidence!=superseded",
+    "confidence": "verified_high",
+    "english": "cat"
+   },
+   {
+    "idx": 85,
+    "type": "notes=SUPERSEDED but confidence!=superseded",
+    "confidence": "verified_high",
+    "english": "goat"
+   },
+   {
+    "idx": 108,
+    "type": "notes=SUPERSEDED but confidence!=superseded",
+    "confidence": "verified_high",
+    "english": "drink"
+   },
+   {
+    "idx": 110,
+    "type": "notes=SUPERSEDED but confidence!=superseded",
+    "confidence": "verified_high",
+    "english": "walk"
+   },
+   {
+    "idx": 115,
+    "type": "notes=SUPERSEDED but confidence!=superseded",
+    "confidence": "verified_high",
+    "english": "give"
+   },
+   {
+    "idx": 154,
+    "type": "confidence=verified_high but notes mention weak/OCR/unverified",
+    "confidence": "verified_high",
+    "english": "one"
+   },
+   {
+    "idx": 155,
+    "type": "notes=SUPERSEDED but confidence!=superseded",
+    "confidence": "verified_high",
+    "english": "two"
+   },
+   {
+    "idx": 156,
+    "type": "confidence=verified_high but notes mention weak/OCR/unverified",
+    "confidence": "verified_high",
+    "english": "three"
+   },
+   {
+    "idx": 157,
+    "type": "confidence=verified_high but notes mention weak/OCR/unverified",
+    "confidence": "verified_high",
+    "english": "four"
+   },
+   {
+    "idx": 159,
+    "type": "confidence=verified_high but notes mention weak/OCR/unverified",
+    "confidence": "verified_high",
+    "english": "six"
+   },
+   {
+    "idx": 160,
+    "type": "confidence=verified_high but notes mention weak/OCR/unverified",
+    "confidence": "verified_high",
+    "english": "seven"
+   },
+   {
+    "idx": 161,
+    "type": "confidence=verified_high but notes mention weak/OCR/unverified",
+    "confidence": "verified_high",
+    "english": "eight"
+   },
+   {
+    "idx": 162,
+    "type": "confidence=verified_high but notes mention weak/OCR/unverified",
+    "confidence": "verified_high",
+    "english": "nine"
+   },
+   {
+    "idx": 163,
+    "type": "confidence=verified_high but notes mention weak/OCR/unverified",
+    "confidence": "verified_high",
+    "english": "ten"
+   }
+  ],
+  "pairs_with_multiple_confidence_states": 149
+ },
+ "section7_provenance_forensics": {
+  "notes_missing": 3086,
+  "ocr_provenance_mentions": 289,
+  "native_speaker_provenance_mentions": 1908,
+  "owner_directive_provenance_mentions": 1058,
+  "supersession_notes": 1595,
+  "suspiciously_repeated_verbatim_notes_groups": 94,
+  "repeated_notes_examples": {
+   "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claud": 278,
+   "VERIFIED/HIGH — Project Owner direct confirmation 2026-09-09: only this value should exist for this key. Supersedes the ": 4,
+   "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).": 116,
+   "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch)": 7,
+   "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch)": 8
+  }
+ },
+ "section8_english_key_normalization": {
+  "case_variant_groups": 463,
+  "case_variant_examples": {
+   "pineapple": [
+    "pineapple",
+    "Pineapple"
+   ],
+   "banana": [
+    "Banana",
+    "banana"
+   ],
+   "orange": [
+    "orange",
+    "Orange"
+   ],
+   "papaya": [
+    "papaya",
+    "Papaya"
+   ],
+   "jackfruit": [
+    "Jackfruit",
+    "jackfruit"
+   ],
+   "mango": [
+    "Mango",
+    "mango"
+   ],
+   "coconut": [
+    "Coconut",
+    "coconut"
+   ],
+   "watermelon": [
+    "Watermelon",
+    "watermelon"
+   ],
+   "sugar cane": [
+    "sugar cane",
+    "Sugar Cane"
+   ],
+   "custard apple": [
+    "Custard Apple",
+    "custard apple"
+   ]
+  },
+  "punctuation_variant_groups": 559,
+  "whitespace_variant_groups": 0,
+  "digit_vs_written_number_count": 17,
+  "digit_vs_written_number_examples": [
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "0",
+   "1"
+  ],
+  "naive_singular_plural_pairs": 232,
+  "singular_plural_examples": [
+   [
+    "five tree",
+    "five trees"
+   ],
+   [
+    "three house",
+    "three houses"
+   ],
+   [
+    "seven fish",
+    "seven fishs"
+   ],
+   [
+    "eight tree",
+    "eight trees"
+   ],
+   [
+    "eighteen teacher",
+    "eighteen teachers"
+   ],
+   [
+    "four dog",
+    "four dogs"
+   ],
+   [
+    "seven water",
+    "seven waters"
+   ],
+   [
+    "seventeen water",
+    "seventeen waters"
+   ],
+   [
+    "seventeen house",
+    "seventeen houses"
+   ],
+   [
+    "hill",
+    "hills"
+   ]
+  ]
+ },
+ "section9_garo_orthography": {
+  "interpunct_and_period_in_same_string": 46,
+  "interpunct_period_examples": [
+   {
+    "english": "please",
+    "garo": "Ka·sapae."
+   },
+   {
+    "english": "come here",
+    "garo": "Ianona re·babo."
+   },
+   {
+    "english": "reduce the price",
+    "garo": "Dam·ko on·tisa komiatbo."
+   },
+   {
+    "english": "do you have...?",
+    "garo": "Nang·o ... dongama?"
+   },
+   {
+    "english": "give me one kilo",
+    "garo": "Angna kilo·sa on·bo."
+   },
+   {
+    "english": "excuse me",
+    "garo": "Angko kema·watbo."
+   },
+   {
+    "english": "sorry",
+    "garo": "Kema·bi·a."
+   },
+   {
+    "english": "goodbye",
+    "garo": "Re·ang·na / Nam·en·dongbo."
+   },
+   {
+    "english": "come in",
+    "garo": "Ning·chi re·babo."
+   },
+   {
+    "english": "eat well",
+    "garo": "Name cha·bo."
+   }
+  ],
+  "space_variant_groups": 179,
+  "space_variant_examples": {
+   "te·rik": [
+    "te·rik",
+    "Te·rik"
+   ],
+   "te·brong": [
+    "Te·brong",
+    "te·brong"
+   ],
+   "jam": [
+    "jam",
+    "Jam"
+   ],
+   "lau": [
+    "Lau",
+    "lau"
+   ],
+   "me·a": [
+    "me·a",
+    "Me·a"
+   ],
+   "jal·ik": [
+    "Jal·ik",
+    "jal·ik"
+   ],
+   "ta·a": [
+    "Ta·a",
+    "ta·a"
+   ],
+   "kusi": [
+    "Kusi",
+    "kusi"
+   ],
+   "ka·onanga": [
+    "Ka·onanga",
+    "Ka·o nanga"
+   ],
+   "ka·donga": [
+    "Ka·donga",
+    "ka·donga"
+   ]
+  },
+  "garo_case_variant_groups": 175,
+  "repeated_punctuation_count": 3,
+  "repeated_punctuation_examples": [
+   "Nang·o ... dongama?",
+   "Angni bimungara...",
+   "Anga ...·ni."
+  ],
+  "unicode_lookalike_dot_hits": 0,
+  "unicode_lookalike_examples": [],
+  "trailing_leading_whitespace_count": 0
+ },
+ "section10_domain_contamination": {
+  "animal": {
+   "UNCERTAIN": 275,
+   "LEXICAL_LIKELY": 153
+  },
+  "human_counting": {
+   "LEXICAL_LIKELY": 340,
+   "UNCERTAIN": 138
+  },
+  "vehicle": {
+   "LEXICAL_LIKELY": 168,
+   "UNCERTAIN": 37
+  },
+  "fruit": {
+   "LEXICAL_LIKELY": 79,
+   "UNCERTAIN": 105
+  },
+  "water_liquid": {
+   "LEXICAL_LIKELY": 158,
+   "UNCERTAIN": 10
+  },
+  "geography": {
+   "LEXICAL_LIKELY": 210,
+   "UNCERTAIN": 48
+  },
+  "measurement": {
+   "LEXICAL_LIKELY": 2
+  }
+ },
+ "section11_machine_ready_contract_comparison": {
+  "numsys_base_number_records": 136,
+  "numsys_records_found_verbatim_in_master": 136,
+  "classifier_engine_worked_examples": 12,
+  "worked_example_surfaces_found_in_master": 0,
+  "records_containing_a_classifier_table_noun_plus_a_number_word": 3
+ },
+ "section12_full_classification": {
+  "TOTAL_RECORDS": 10180,
+  "POSSIBLE_STALE": 1575,
+  "LINGUISTIC_REVIEW_REQUIRED": 5673,
+  "PHRASES": 1545,
+  "SENTENCES": 712,
+  "LEXICAL_CANDIDATES": 632,
+  "GENERATED_INSTANCES": 13,
+  "MALFORMED_KEYS": 29,
+  "DUPLICATES": 1,
+  "PROVENANCE_ANOMALIES": 462,
+  "ORTHOGRAPHY_VARIANTS_GROUPS": 403,
+  "UNRESOLVED": 0
+ }
+}
