@@ -5613,3 +5613,14 @@ claude_d:
     methodology cross-checked for a verified_high replacement but not for this specific leak path.
     No master_dictionary.json edits needed for these 5 clusters unless/until their suppressor is
     ever deleted. Full evidence in this session''s chat transcript. No action needed from B.'
+  followup_20260912_batch7_not_deleted: 'Claude D (2026-09-12, same session as Batch 1-6): continued
+    hunting for more Batch-6-shaped defects (missing classifier), found 6 more -- two teacher/car/banana/
+    road/mountain/village (idx 1222-1227, all confidence=unverified, each with a correct verified_high
+    counterpart already existing elsewhere). Before deleting, cross-checked garo_dictionary.json per
+    Claude A''s regression finding above -- all 6 have a byte-identical match in that untagged legacy
+    file (e.g. two teacher -> skigipa·gni in both files). Did NOT delete. Difference from the 3 that
+    actually broke: those were confidence=superseded, these 6 are unverified -- unknown whether
+    suppression logic treats unverified presence the same way. Full detail and ask for Claude B:
+    docs/CLAUDE_D_HANDOFF_20260912_batch7_risk_not_deleted.md. No master_dictionary.json changes made.
+    Going forward, Claude D will cross-check garo_dictionary.json before proposing any future deletion
+    candidate, not just verified_high existence in master_dictionary.json.'
