@@ -75877,5 +75877,14 @@
     "classifier": null,
     "notes": "SUPERSEDED — corpus-internal audit 2026-09-12 (Claude A), same defect shape as the 2026-08-10 audit (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry from garo_dictionary.json (untagged legacy source), classifier omitted/wrong root, numeral suffix contradicts its own claimed count ('dokka mang·gni' is also claimed for a different count of the same noun elsewhere). Was previously suppressed by a master_dictionary.json SUPERSEDED row for this noun family that Claude D's Batch 6 deletion (commit 61a4e1a) removed without cross-checking garo_dictionary.json for a still-live untagged duplicate at this exact compound key. Re-added to restore suppression. Not deleted (garo_dictionary.json itself untouched, out of Claude A's remit), retained per citation discipline.",
     "confidence": "superseded"
+  },
+  {
+    "english": "i have three fish",
+    "garo": "Ango na·tok mang·gittam donga",
+    "pos": null,
+    "category": "food",
+    "classifier": "mang",
+    "notes": "VERIFIED/HIGH — Project Owner-supplied sentence (2026-09-13), composed entirely from already-VERIFIED/HIGH components: Ango (possessive-existential 'I', cf. 'Ango pen donga'/'i have a pen'), na·tok mang·gittam ('three fish', Project Owner directive 2026-09-08), donga (existential 'have', attested VERIFIED/HIGH in this exact slot across multiple sentences). No new grammar claimed — direct instance of the standing Ango+object+donga possessive-existential template, same class as the 'my X' composition precedent.",
+    "confidence": "verified_high"
   }
 ]
