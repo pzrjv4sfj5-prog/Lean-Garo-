@@ -640,9 +640,20 @@ export function analyzeGrammar(input) {
       // silently discarding any leading number word with no classifier
       // applied at all — even though garo_classifier.js's countNoun()/
       // parseCountingPhrase() already correctly handle exactly this
-      // ("three children" -> "bi·sa sak·gittam", matching the manual
+      // ("three children" -> "bi·sa sakgittam", matching the manual
       // corrections.json entry for the same sentence) — they just weren't
-      // wired into this object-assembly path. Root cause: this file's
+      // wired into this object-assembly path. [Comment corrected
+      // 2026-09-13, Claude B: this previously said "bi·sa sak·gittam"
+      // (with a raka dot). Direct Thangseng citation today confirmed sak
+      // takes NO dot ("Angan saksa kamkam chatro" = "I am the only
+      // student"; "Saksa" = one person, "Sakgni" = two persons),
+      // matching the already-closed NV-124 decision (2026-09-05) and the
+      // canonical dictionary form "mande saksa". A handful of older dot-
+      // form citations elsewhere in the repo (mande sak·sa, sak·ki,
+      // sak·gittam) predate that correction and are themselves stale —
+      // not new conflicting evidence. RAKA_CLASSIFIERS was correctly
+      // left without 'sak' this session; do not re-add it.]
+      // Root cause: this file's
       // object loop and step 1.6's standalone counting-phrase check in
       // translationEngine.js are two independent object-noun resolvers
       // that never shared the classifier engine. Scoped narrowly: only
