@@ -13234,10 +13234,10 @@
   },
   {
     "english": "the three fish",
-    "garo": "na·tok mang·gittam",
+    "garo": "na·tok manggittam",
     "category": "food",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): confirms canonical 'three fish'=na·tok mang·gittam (mang·gni reserved for 'two fish', per Owner's critical_duplicate_resolution). Value already correct, promoted from unverified."
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): confirms canonical 'three fish'=na·tok mang·gittam (mang·gni reserved for 'two fish', per Owner's critical_duplicate_resolution). Value already correct, promoted from unverified. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot)."
   },
   {
     "english": "the one person",
@@ -67651,11 +67651,11 @@
   },
   {
     "english": "three dogs",
-    "garo": "achak mang·gittam",
+    "garo": "achak manggittam",
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up). Follows the same achak+mang·+numeral-root pattern as the already-VERIFIED/HIGH 'one dog'=achak mang·sa and 'two dogs'=achak mang·gni; gittam=3 (cf. 'three fish'=na·tok mang·gittam, 'three books'=ki·tap king·gittam, already VERIFIED/HIGH). Corrects the legacy 'three dogs'/'three dog' entries (SUPERSEDED — copy-paste corruption reusing mang·gni='two').",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up). Follows the same achak+mang·+numeral-root pattern as the already-VERIFIED/HIGH 'one dog'=achak mang·sa and 'two dogs'=achak mang·gni; gittam=3 (cf. 'three fish'=na·tok mang·gittam, 'three books'=ki·tap king·gittam, already VERIFIED/HIGH). Corrects the legacy 'three dogs'/'three dog' entries (SUPERSEDED — copy-paste corruption reusing mang·gni='two'). RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
   },
   {
@@ -67669,11 +67669,11 @@
   },
   {
     "english": "three dog",
-    "garo": "achak mang·gittam",
+    "garo": "achak manggittam",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'three dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship.",
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'three dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
   },
   {
@@ -67786,11 +67786,11 @@
   },
   {
     "english": "three cat",
-    "garo": "menggo mang·gittam",
+    "garo": "menggo manggittam",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['3']='gittam', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'menggo mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['3']='gittam', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'menggo mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
   },
   {
@@ -67894,20 +67894,20 @@
   },
   {
     "english": "three bird",
-    "garo": "do·o mang·gittam",
+    "garo": "do·o manggittam",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['3']='gittam' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'na·tok mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['3']='gittam' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'na·tok mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
   },
   {
     "english": "three birds",
-    "garo": "do·o mang·gittam",
+    "garo": "do·o manggittam",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['3']='gittam' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'na·tok mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['3']='gittam' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'na·tok mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
   },
   {
@@ -68565,18 +68565,18 @@
   },
   {
     "english": "three fish",
-    "garo": "na·tok mang·gittam",
+    "garo": "na·tok manggittam",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
   },
   {
     "english": "three fishs",
-    "garo": "na·tok mang·gittam",
+    "garo": "na·tok manggittam",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
   },
   {
@@ -75856,11 +75856,11 @@
   },
   {
     "english": "i have three fish",
-    "garo": "Ango na·tok mang·gittam donga",
+    "garo": "Ango na·tok manggittam donga",
     "pos": null,
     "category": "food",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — Project Owner-supplied sentence (2026-09-13), composed entirely from already-VERIFIED/HIGH components: Ango (possessive-existential 'I', cf. 'Ango pen donga'/'i have a pen'), na·tok mang·gittam ('three fish', Project Owner directive 2026-09-08), donga (existential 'have', attested VERIFIED/HIGH in this exact slot across multiple sentences). No new grammar claimed — direct instance of the standing Ango+object+donga possessive-existential template, same class as the 'my X' composition precedent.",
+    "notes": "VERIFIED/HIGH — Project Owner-supplied sentence (2026-09-13), composed entirely from already-VERIFIED/HIGH components: Ango (possessive-existential 'I', cf. 'Ango pen donga'/'i have a pen'), na·tok mang·gittam ('three fish', Project Owner directive 2026-09-08), donga (existential 'have', attested VERIFIED/HIGH in this exact slot across multiple sentences). No new grammar claimed — direct instance of the standing Ango+object+donga possessive-existential template, same class as the 'my X' composition precedent. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
   }
 ]

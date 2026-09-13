@@ -53,11 +53,11 @@ test('RC-CANDIDATE-037: dog/cat entries get the correct noun substituted, not ju
   // direct) from the shared-with-"two" placeholder to the numerically
   // correct achak+mang·+gittam('three') form. "three cat" was closed the
   // same way 2026-08-11 (Thangseng direct, WhatsApp relay via Tridip):
-  // 'three cat'=Menggo mang·gittam, confirming the identical mang·gittam
+  // 'three cat'=Menggo manggittam, confirming the identical manggittam
   // pattern for the cat root.
-  assert.equal(compiled['three dogs'], 'achak mang·gittam');
+  assert.equal(compiled['three dogs'], 'achak manggittam');
   assert.equal(compiled['two cat'], 'menggo mang·gni');
-  assert.equal(compiled['three cat'], 'menggo mang·gittam');
+  assert.equal(compiled['three cat'], 'menggo manggittam');
 });
 
 test('RC-CANDIDATE-037: genuine bird/chicken/fish entries are unaffected', () => {
@@ -67,5 +67,5 @@ test('RC-CANDIDATE-037: genuine bird/chicken/fish entries are unaffected', () =>
   // precedent as Claude A's dog/cat/bird fix in 3ec06ee): na·tok (fish root)
   // + mang classifier + the confirmed "three"=gittam suffix, replacing the
   // stale shared-with-"two" placeholder "na·tok mang·gni".
-  assert.equal(compiled['three fish'], 'na·tok mang·gittam');
+  assert.equal(compiled['three fish'], 'na·tok manggittam');
 });

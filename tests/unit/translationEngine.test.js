@@ -1369,7 +1369,7 @@ test('object-loop classifier fix does not touch already-resolved counting phrase
 
 // --- Counting-phrase self-correction (2026-08-09, per explicit native-
 // speaker-confirmed reference: "two dogs"=achak mang·gni, "three
-// dogs"=achak mang·gittam, "four dogs"=achak mang·bri). prepare-data.js
+// dogs"=achak manggittam, "four dogs"=achak mang·bri). prepare-data.js
 // now re-derives every "<number> <noun>" compiled_dict.json entry from
 // garo_classifier.js's classifier engine at build time (noun's own
 // canonical dictionary entry + its confirmed classifier + the count),
@@ -1388,7 +1388,7 @@ test('"<number> dogs" counting phrases use the correct, natively-confirmed class
   const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
   const cases = [
     ['two dogs', 'achak mang·gni'],
-    ['three dogs', 'achak mang·gittam'],
+    ['three dogs', 'achak manggittam'],
     ['four dogs', 'achak mang·bri'],
   ];
   for (const [key, expected] of cases) {
