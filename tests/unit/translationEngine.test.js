@@ -1425,7 +1425,10 @@ test('runtime propagation: classifier composition still runs as the fallback whe
   const r = await translate('six dogs');
   assert.equal(r.method, 'classifier',
     'with no exact-phrase entry, composition from the bare noun must still be reached (the reorder must not break the fallback)');
-  assert.equal(r.garo, 'achak mang·dok');
+  // CORRECTED (2026-09-13, Claude B, direct Thangseng citation): mang
+  // (animals) has NO raka dot, confirmed via "Ango na·tok manggittam
+  // donga" = "I have three fish" -- was previously "achak mang·dok".
+  assert.equal(r.garo, 'achak mangdok');
 });
 
 // --- Plural counted-noun generation defect (2026-08-14, Claude B, per

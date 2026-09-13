@@ -47,7 +47,10 @@ test('regression: ge fallback still applies to genuinely uncategorized/tool noun
 });
 
 test('regression: existing classifier roots unaffected by rong addition', () => {
-  assert.equal(countNoun('achak', 1, 'dog'), 'achak mang·sa');
+  // CORRECTED (2026-09-13, Claude B, direct Thangseng citation): mang
+  // (animals) has NO raka dot, confirmed via "Ango na·tok manggittam
+  // donga" = "I have three fish" -- was previously "achak mang·sa" here.
+  assert.equal(countNoun('achak', 1, 'dog'), 'achak mangsa');
   // FIXED (NV-124 engine handoff, closed 2026-09-05): 'sak' removed from
   // RAKA_CLASSIFIERS in src/garo_classifier.js, so the classifier-
   // composition fallback (for phrases with no exact dictionary match)
@@ -60,7 +63,7 @@ test('regression: existing classifier roots unaffected by rong addition', () => 
   // before that fix and never updated.
   assert.equal(countNoun('ki·tap', 3, 'book'), 'ki·tap king·gittam');
   assert.equal(countNoun('tangka', 5, 'coin'), 'tangka gong·bonga');
-  assert.equal(countNoun('do·a', 10, 'bird'), 'do·a mang·chiking');
+  assert.equal(countNoun('do·a', 10, 'bird'), 'do·a mangchiking');
 });
 
 test('CLASSIFIER_MAP sanity: rong entries present', () => {

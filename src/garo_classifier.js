@@ -119,7 +119,27 @@ function getClassifierSuffix(count) {
   return null;
 }
 
-const RAKA_CLASSIFIERS = new Set(['mang', 'ge', 'gong', 'te', 'king']);
+// Owner-confirmed 2026-09-13 (live chat, direct Thangseng citation via
+// Claude B): "Ango na·tok manggittam donga" = "I have three fish" --
+// mang (animals classifier) has NO raka dot, confirmed explicitly
+// ("Real — mang genuinely has no raka dot, full stop") when asked
+// whether this was a real point vs. a typing/relay artifact (the raka
+// dot '·' is an easy character to drop when typing casually, so this
+// was checked rather than assumed). This REVERSES the RAKA_CLASSIFIERS
+// membership this project has run with for a long time — see the huge
+// body of prior 'mang·'-dotted citations throughout
+// docs/THANGSENG_NATIVE_VALIDATION.md and elsewhere.
+//
+// IMPORTANT — scope of this fix: this only changes the runtime
+// classifier-COMPOSITION fallback (used when no literal dictionary
+// entry exists for a given noun+count). It does NOT retroactively
+// correct the ~151 existing master_dictionary.json rows (110 tagged
+// verified_high) that literally store the old dotted 'mang·' form as
+// a hardcoded string, nor the ~28 test assertions across 6 files that
+// still expect it (both flagged in chat, not touched in this commit --
+// that's a large data-correction pass, outside a mechanical engine
+// fix, needs its own dedicated audit).
+const RAKA_CLASSIFIERS = new Set(['ge', 'gong', 'te', 'king']);
 
 // Owner-confirmed 2026-09-13 (in-chat, live conversation): "beer rong sa"
 // is correct with a literal space before the number -- NOT the fused
