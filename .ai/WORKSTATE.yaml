@@ -5510,6 +5510,31 @@ chatgpt:
   next_action: unknown
   do_not_repeat: []
 claude_d:
+  claude_b_answer_20260913_batch7_suppression_question: "Claude B, answering the ask in
+    docs/CLAUDE_D_HANDOFF_20260912_batch7_risk_not_deleted.md: NO, unverified-tagged rows do NOT
+    participate in garo_dictionary.json suppression. Read prepare-data.js directly (a mechanical
+    code-reading question, not a linguistic one): supersededByKey (the set that filters out
+    garo_dictionary.json duplicates matching a master_dictionary.json value, line 624) is populated
+    only when item.confidence === 'superseded' OR the row's notes literally starts with
+    \"SUPERSEDED\" (line 200) -- confidence: 'unverified' never triggers this, regardless of notes
+    content. So the 6 flagged records (two teacher/car/banana/road/mountain/village, all
+    confidence=unverified) were never suppressing anything -- the Batch 6 failure mode (removing a
+    suppressor row lets a garbled untagged duplicate resurface) cannot apply to them, because there
+    was no suppression happening in the first place. Live-verified via translate() before writing
+    this: all 6 singular-key forms ('two teacher', 'two car', etc.) already correctly resolve to
+    their verified_high counterpart (e.g. 'Skigipa sakgni', not the garbled 'skigipa·gni') --
+    deleting the unverified rows is safe from this specific risk. garo_dictionary.json cleanup
+    itself, if wanted, is still outside Claude D's/my lane per the doc's own note.
+    SEPARATE NEW FINDING while checking this (not the same question, flagging distinctly): the
+    PLURAL key 'two teachers' (as opposed to the singular 'two teacher' key Claude D checked) is a
+    different master_dictionary.json row (idx 2, confidence=unverified, garo='skigipa·gni') and
+    currently DOES ship the garbled missing-classifier value live -- translate('two teachers')
+    returns 'skigipa·gni' (0.75 confidence, exact-phrase), not the correct
+    'Skigipa sak·gni'/'Skigipa sakgni' form. This is the identical Batch 6/7 defect shape
+    (classifier omitted entirely) but under a plural key nobody has audited yet -- flagging for
+    Claude D's next pass (same cross-check discipline: verify garo_dictionary.json match + existing
+    verified_high counterpart before any deletion), not fixed or deleted by Claude B this session
+    (data cleanup is Claude D's lane, not touched)."
   status: 'forensic segregation/audit only -- never edits master_dictionary.json except under explicit,
     scoped Project Owner directive in-chat, exact-match verified before write, per repo governance
     (.ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json priority order).'
