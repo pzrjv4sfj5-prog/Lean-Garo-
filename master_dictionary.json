@@ -7952,32 +7952,8 @@
     "confidence": "unverified"
   },
   {
-    "english": "two car",
-    "garo": "mot·gni",
-    "category": "travel",
-    "confidence": "unverified"
-  },
-  {
     "english": "two banana",
     "garo": "sobo·gni",
-    "category": "numbers",
-    "confidence": "unverified"
-  },
-  {
-    "english": "two road",
-    "garo": "lam·gni",
-    "category": "travel",
-    "confidence": "unverified"
-  },
-  {
-    "english": "two mountain",
-    "garo": "nok·gni",
-    "category": "nature",
-    "confidence": "unverified"
-  },
-  {
-    "english": "two village",
-    "garo": "rim·gni",
     "category": "numbers",
     "confidence": "unverified"
   },
