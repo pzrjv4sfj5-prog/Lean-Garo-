@@ -1351,7 +1351,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `eight anna coin`: candidates — `rep·a` (weak/OCR) — shipped: `rep·a`
 - `eight annas`: candidates — `a·dul·i` (weak/OCR) — shipped: `a·dul·i`
 - `eight cars`: candidates — `chet rang·gni` (weak/OCR) — shipped: `chet rang·gni`
-- `eight dogs`: candidates — `chet mang·gni` (weak/OCR) — shipped: `chet mang·gni`
+- `eight dogs`: candidates — `chet manggni` (weak/OCR) — shipped: `chet manggni`
 - `eight food`: candidates — `chet chak·gni` (weak/OCR) — shipped: `chet chak·gni`
 - `eight house`: candidates — `chet rang·gni` (weak/OCR) — shipped: `chet rang·gni`
 - `eight persons`: candidates — `chet sak·gni` (weak/OCR), `chet mande·gni` (weak/OCR) — shipped: `chet mande·gni`
@@ -1531,7 +1531,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `fit`: candidates — `chak·a` (weak/OCR), `dang·a` (weak/OCR), `jak·chak·a` (weak/OCR), `tang·rong·rang·a` (weak/OCR) — shipped: `tang·rong·rang·a`
 - `fit; friendly; amiable.`: candidates — `Ga·rima` (weak/OCR) — shipped: `Ga·rima`
 - `five cars`: candidates — `bonga rang·gni` (weak/OCR) — shipped: `bonga rang·gni`
-- `five dogs`: candidates — `bonga mang·gni` (weak/OCR) — shipped: `bonga mang·gni`
+- `five dogs`: candidates — `bonga manggni` (weak/OCR) — shipped: `bonga manggni`
 - `five food`: candidates — `bonga chak·gni` (weak/OCR) — shipped: `bonga chak·gni`
 - `five house`: candidates — `bonga rang·gni` (weak/OCR) — shipped: `bonga rang·gni`
 - `five persons`: candidates — `bonga sak·gni` (weak/OCR), `bonga mande·gni` (weak/OCR) — shipped: `bonga mande·gni`
@@ -2688,7 +2688,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `niece`: candidates — `nam·chik` (weak/OCR) — shipped: `nam·chik`
 - `night`: candidates — `Wal` (weak/OCR) — shipped: `Wal`
 - `nine cars`: candidates — `sku rang·gni` (weak/OCR) — shipped: `sku rang·gni`
-- `nine dogs`: candidates — `sku mang·gni` (weak/OCR) — shipped: `sku mang·gni`
+- `nine dogs`: candidates — `sku manggni` (weak/OCR) — shipped: `sku manggni`
 - `nine food`: candidates — `sku chak·gni` (weak/OCR) — shipped: `sku chak·gni`
 - `nine house`: candidates — `sku rang·gni` (weak/OCR) — shipped: `sku rang·gni`
 - `nine persons`: candidates — `sku sak·gni` (weak/OCR), `sku mande·gni` (weak/OCR) — shipped: `sku mande·gni`
@@ -3355,7 +3355,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `settle out`: candidates — `jin·ong·a` (weak/OCR) — shipped: `jin·ong·a`
 - `settlement`: candidates — `mi·mang·sa` (weak/OCR), `song·nok` (weak/OCR) — shipped: `song·nok`
 - `seven cars`: candidates — `sni rang·gni` (weak/OCR) — shipped: `sni rang·gni`
-- `seven dogs`: candidates — `sni mang·gni` (weak/OCR) — shipped: `sni mang·gni`
+- `seven dogs`: candidates — `sni manggni` (weak/OCR) — shipped: `sni manggni`
 - `seven food`: candidates — `sni chak·gni` (weak/OCR) — shipped: `sni chak·gni`
 - `seven house`: candidates — `sni rang·gni` (weak/OCR) — shipped: `sni rang·gni`
 - `seven persons`: candidates — `sni sak·gni` (weak/OCR), `sni mande·gni` (weak/OCR) — shipped: `sni mande·gni`
@@ -3810,7 +3810,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `temple`: candidates — `na·teng` (weak/OCR) — shipped: `na·teng`
 - `tempt`: candidates — `bot·a pal·a` (weak/OCR), `mal·et·a` (weak/OCR) — shipped: `mal·et·a`
 - `ten cars`: candidates — `chi rang·gni` (weak/OCR) — shipped: `chi rang·gni`
-- `ten dogs`: candidates — `chi mang·gni` (weak/OCR) — shipped: `chi mang·gni`
+- `ten dogs`: candidates — `chi manggni` (weak/OCR) — shipped: `chi manggni`
 - `ten food`: candidates — `chi chak·gni` (weak/OCR) — shipped: `chi chak·gni`
 - `ten house`: candidates — `chi rang·gni` (weak/OCR) — shipped: `chi rang·gni`
 - `ten persons`: candidates — `chi sak·gni` (weak/OCR), `chi mande·gni` (weak/OCR) — shipped: `chi mande·gni`
@@ -4000,7 +4000,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the one`: candidates — `Sa` (weak/OCR) — shipped: `Sa`
 - `the one book`: candidates — `ki·tap king·sa` (weak/OCR) — shipped: `ki·tap king·sa`
 - `the one chair`: candidates — `chokki ge·sa` (weak/OCR) — shipped: `chokki ge·sa`
-- `the one dog`: candidates — `achak mang·sa` (weak/OCR) — shipped: `achak mang·sa`
+- `the one dog`: candidates — `achak mangsa` (weak/OCR) — shipped: `achak mangsa`
 - `the one person`: candidates — `mande sak·sa` (weak/OCR) — shipped: `mande sak·sa`
 - `the one thousand`: candidates — `Hajalsa` (weak/OCR) — shipped: `Hajalsa`
 - `the onion`: candidates — `Rasin` (weak/OCR) — shipped: `Rasin`
@@ -4132,7 +4132,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the twenty`: candidates — `Kolgrik` (weak/OCR) — shipped: `Kolgrik`
 - `the twenty-one`: candidates — `Kolgrik·sa` (weak/OCR) — shipped: `Kolgrik·sa`
 - `the two`: candidates — `Gni` (weak/OCR) — shipped: `Gni`
-- `the two birds`: candidates — `do·o mang·gni` (weak/OCR) — shipped: `do·o mang·gni`
+- `the two birds`: candidates — `do·o manggni` (weak/OCR) — shipped: `do·o manggni`
 - `the two knives`: candidates — `kettal ge·gni` (weak/OCR) — shipped: `kettal ge·gni`
 - `the two teachers`: candidates — `skigipa sak·gni` (weak/OCR) — shipped: `skigipa sak·gni`
 - `the uncle`: candidates — `Mama / Pabok` (weak/OCR) — shipped: `Mama / Pabok`
@@ -5239,9 +5239,9 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `twin`: candidates — `de·chap` (weak/OCR), `de·srong` (weak/OCR) — shipped: `de·srong`
 - `twist`: candidates — `sak·a` (weak/OCR) — shipped: `sak·a`
 - `twitch`: candidates — `dek·dek·a` (weak/OCR) — shipped: `dek·dek·a`
-- `two bird`: candidates — `do·o mang·gni` (weak/OCR) — shipped: `do·o mang·gni`
-- `two birds`: candidates — `do·o mang·gni` (weak/OCR) — shipped: `do·o mang·gni`
-- `two dog`: candidates — `achak mang·gni` (weak/OCR) — shipped: `achak mang·gni`
+- `two bird`: candidates — `do·o manggni` (weak/OCR) — shipped: `do·o manggni`
+- `two birds`: candidates — `do·o manggni` (weak/OCR) — shipped: `do·o manggni`
+- `two dog`: candidates — `achak manggni` (weak/OCR) — shipped: `achak manggni`
 - `two food`: candidates — `chak·gni` (weak/OCR) — shipped: `chak·gni`
 - `two house`: candidates — `rang·gni` (weak/OCR) — shipped: `rang·gni`
 - `two knives`: candidates — `kettal ge·gni` (weak/OCR) — shipped: `kettal ge·gni`

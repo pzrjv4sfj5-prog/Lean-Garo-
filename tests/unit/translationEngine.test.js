@@ -458,14 +458,14 @@ test('number word is never picked as the verb; "has" resolves as an irregular fo
   assert.equal(g.verb?.english, 'has');
   assert.equal(g.verb?.garo, 'donga');
   const r = await translate('he has two dogs');
-  // RC-CANDIDATE-036: was 'Ua do·o mang·gni·ko donga' - 'do·o mang·gni'
+  // RC-CANDIDATE-036: was 'Ua do·o manggni·ko donga' - 'do·o manggni'
   // literally means "two birds" (do·o = chicken/bird; confirmed via
   // "two birds" itself compiling to the identical string). That was the
   // pre-fix compiler bug's output, not the correct translation. Master
   // agrees unambiguously (2 entries, one VERIFIED/HIGH) that "two dogs"
-  // is 'achak mang·gni' (achak = dog). This assertion was locking in the
+  // is 'achak manggni' (achak = dog). This assertion was locking in the
   // bug; the verb-guard behavior under test here is unaffected.
-  assert.equal(r.garo, 'Ua achak mang·gni·ko donga');
+  assert.equal(r.garo, 'Ua achak manggni·ko donga');
 });
 
 // --- Second half of the same 2026-07-13 fix's benchmark claim ("exactly
@@ -1368,8 +1368,8 @@ test('object-loop classifier fix does not touch already-resolved counting phrase
 });
 
 // --- Counting-phrase self-correction (2026-08-09, per explicit native-
-// speaker-confirmed reference: "two dogs"=achak mang·gni, "three
-// dogs"=achak manggittam, "four dogs"=achak mang·bri). prepare-data.js
+// speaker-confirmed reference: "two dogs"=achak manggni, "three
+// dogs"=achak manggittam, "four dogs"=achak mangbri). prepare-data.js
 // now re-derives every "<number> <noun>" compiled_dict.json entry from
 // garo_classifier.js's classifier engine at build time (noun's own
 // canonical dictionary entry + its confirmed classifier + the count),
@@ -1387,9 +1387,9 @@ test('object-loop classifier fix does not touch already-resolved counting phrase
 test('"<number> dogs" counting phrases use the correct, natively-confirmed classifier suffix for their count', async () => {
   const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
   const cases = [
-    ['two dogs', 'achak mang·gni'],
+    ['two dogs', 'achak manggni'],
     ['three dogs', 'achak manggittam'],
-    ['four dogs', 'achak mang·bri'],
+    ['four dogs', 'achak mangbri'],
   ];
   for (const [key, expected] of cases) {
     assert.equal(compiledDict[key], expected, `compiled_dict["${key}"] should match the native-confirmed value`);

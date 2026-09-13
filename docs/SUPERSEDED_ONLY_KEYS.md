@@ -35,7 +35,7 @@ than shipping a known-wrong value. Needs a native-confirmed replacement
 - `how much cat?`: superseded value(s) — `kama mang?`
 - `how much dog?`: superseded value(s) — `kama mang?`
 - `how much fish?`: superseded value(s) — `kama mang?`
-- `six dogs`: superseded value(s) — `dokka mang·gni`
+- `six dogs`: superseded value(s) — `dokka manggni`
 - `the one coin`: superseded value(s) — `tangka gong·sa`
 - `to bake / roast`: superseded value(s) — `Ang·a`
 - `twenty students`: superseded value(s) — `chi chi chik·gni`

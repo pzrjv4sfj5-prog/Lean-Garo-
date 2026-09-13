@@ -58,5 +58,5 @@ test('translate: "-es" plural counted nouns now compose via the classifier engin
 
 test('regression guard: already-working -s plural counting is unaffected', async () => {
   const dogs = await translate('two dogs');
-  assert.equal(dogs.garo, 'achak mang·gni');
+  assert.equal(dogs.garo, 'achak manggni');
 });

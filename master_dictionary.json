@@ -1,16 +1,17 @@
 [
   {
     "english": "one dog",
-    "garo": "achak mang·sa",
+    "garo": "achak mangsa",
     "category": "animals",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'one dog' has VERIFIED/HIGH form(s) ['achak mang·sa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'one dog' has VERIFIED/HIGH form(s) ['achak mang·sa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
     "english": "two birds",
-    "garo": "do·o mang·gni",
+    "garo": "do·o manggni",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched."
   },
   {
     "english": "two teachers",
@@ -7031,9 +7032,9 @@
   },
   {
     "english": "two dogs",
-    "garo": "achak mang·gni",
+    "garo": "achak manggni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'two dogs' has VERIFIED/HIGH form(s) ['achak mang·gni']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'two dogs' has VERIFIED/HIGH form(s) ['achak mang·gni']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
@@ -7059,9 +7060,9 @@
   },
   {
     "english": "ten birds",
-    "garo": "do·a mang·chiking",
+    "garo": "do·a mangchiking",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'ten birds' has VERIFIED/HIGH form(s) ['do·a mang·chiking']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. | Also carries the separate do·a/climb root-error, see live entry's correction note.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'ten birds' has VERIFIED/HIGH form(s) ['do·a mang·chiking']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. | Also carries the separate do·a/climb root-error, see live entry's correction note. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
@@ -7706,30 +7707,30 @@
   },
   {
     "english": "two fishs",
-    "garo": "do·o mang·gni",
+    "garo": "do·o manggni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-11 (Claude B): superseded by mechanically-regenerated na·tok+mang formula entry, same precedent as Claude A's dog/cat/bird fix (3ec06ee). Retained per citation discipline, not deleted.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-11 (Claude B): superseded by mechanically-regenerated na·tok+mang formula entry, same precedent as Claude A's dog/cat/bird fix (3ec06ee). Retained per citation discipline, not deleted. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
     "english": "three dogs",
-    "garo": "achak mang·gni",
+    "garo": "achak manggni",
     "category": "numbers",
-    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): legacy copy-paste corruption, reused the classifier form for 'two' (mang·gni) instead of 'three' (mang·gittam). See new VERIFIED/HIGH entry.",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): legacy copy-paste corruption, reused the classifier form for 'two' (mang·gni) instead of 'three' (mang·gittam). See new VERIFIED/HIGH entry. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
     "english": "three birds",
-    "garo": "na·tok mang·gni",
+    "garo": "na·tok manggni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
     "english": "three fishs",
-    "garo": "na·tok mang·gni",
+    "garo": "na·tok manggni",
     "category": "numbers",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
@@ -7928,22 +7929,24 @@
   },
   {
     "english": "two dog",
-    "garo": "achak mang·gni",
+    "garo": "achak manggni",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched."
   },
   {
     "english": "two cat",
-    "garo": "menggo mang·gni",
+    "garo": "menggo manggni",
     "category": "animals",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — NV-135 (2026-09-06): root 'menggo' confirmed via direct Project Owner relay, matches the already-VERIFIED/HIGH counting family (NV-071, 'one cat'/'three cat'/etc. idx 9232+) and the mang·gni=2 classifier-number pattern used throughout that family."
+    "notes": "VERIFIED/HIGH — NV-135 (2026-09-06): root 'menggo' confirmed via direct Project Owner relay, matches the already-VERIFIED/HIGH counting family (NV-071, 'one cat'/'three cat'/etc. idx 9232+) and the mang·gni=2 classifier-number pattern used throughout that family. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched."
   },
   {
     "english": "two bird",
-    "garo": "do·o mang·gni",
+    "garo": "do·o manggni",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched."
   },
   {
     "english": "two teacher",
@@ -7959,23 +7962,23 @@
   },
   {
     "english": "three dog",
-    "garo": "achak mang·gni",
+    "garo": "achak manggni",
     "category": "animals",
-    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): same legacy corruption as 'three dogs' (mang·gni='two' reused instead of mang·gittam='three').",
+    "notes": "SUPERSEDED — 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up): same legacy corruption as 'three dogs' (mang·gni='two' reused instead of mang·gittam='three'). RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
     "english": "three cat",
-    "garo": "menggo mang·gni",
+    "garo": "menggo manggni",
     "category": "animals",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
     "english": "three bird",
-    "garo": "na·tok mang·gni",
+    "garo": "na·tok manggni",
     "category": "animals",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-10 (Claude A, per Claude C's engineering report + cross-checked against Claude B's docs/COUNTING_PHRASE_AUDIT_20260810.md read-only candidate report): bulk-generated counted-noun entry, numeral suffix contradicts its own claimed count (stuck at the 2's-suffix '·gni', or a redundant 1's-prefix), against the already-VERIFIED/HIGH NUMBERS suffix table (RULE-G-classifier.yaml/garo_classifier.js). This is a provable arithmetic mismatch, not a judgment call — no native input needed to flag it as non-authoritative. The REPLACEMENT value is not asserted here (per NV-071's standing restraint: mechanical derivation is a candidate, not a confirmation) — see Claude B's audit report for the mechanically-derived candidate pending native review. Not deleted, retained per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
@@ -13222,15 +13225,17 @@
   },
   {
     "english": "the one dog",
-    "garo": "achak mang·sa",
+    "garo": "achak mangsa",
     "category": "animals",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched."
   },
   {
     "english": "the two birds",
-    "garo": "do·o mang·gni",
+    "garo": "do·o manggni",
     "category": "numbers",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched."
   },
   {
     "english": "the three fish",
@@ -19771,11 +19776,11 @@
   },
   {
     "english": "one dog",
-    "garo": "achak mang·sa",
+    "garo": "achak mangsa",
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -21655,11 +21660,11 @@
   },
   {
     "english": "ten birds",
-    "garo": "do·a mang·chiking",
+    "garo": "do·a mangchiking",
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "SUPERSEDED — root-error correction 2026-08-11 (Claude A): \"do·a\" is not a bird-root spelling variant, it's a different word entirely (\"climb\"/\"upward\" — see master_dictionary.json \"Climb\"/\"upward\" entries). Wrong root baked into what was mistakenly treated as the VERIFIED/HIGH reference example. Corrected form ships as a separate replacement entry (idx 9245, \"ten birds\"->\"do·o mang·chiking\", VERIFIED/HIGH) — this row's own garo field was intentionally left as the original wrong value 'do·a mang·chiking' for citation-discipline provenance, not edited in place. 2026-08-16 audit note (Claude A): clarified wording, no value change — prior wording read as if this row itself had been corrected in place, which it wasn't.",
+    "notes": "SUPERSEDED — root-error correction 2026-08-11 (Claude A): \"do·a\" is not a bird-root spelling variant, it's a different word entirely (\"climb\"/\"upward\" — see master_dictionary.json \"Climb\"/\"upward\" entries). Wrong root baked into what was mistakenly treated as the VERIFIED/HIGH reference example. Corrected form ships as a separate replacement entry (idx 9245, \"ten birds\"->\"do·o mang·chiking\", VERIFIED/HIGH) — this row's own garo field was intentionally left as the original wrong value 'do·a mang·chiking' for citation-discipline provenance, not edited in place. 2026-08-16 audit note (Claude A): clarified wording, no value change — prior wording read as if this row itself had been corrected in place, which it wasn't. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
@@ -21994,11 +21999,11 @@
   },
   {
     "english": "two dogs",
-    "garo": "achak mang·gni",
+    "garo": "achak manggni",
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -67660,11 +67665,11 @@
   },
   {
     "english": "four dogs",
-    "garo": "achak mang·bri",
+    "garo": "achak mangbri",
     "pos": null,
     "category": "numbers",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up). Same achak+mang·+numeral-root pattern; bri=4 (already VERIFIED/HIGH as the standalone numeral). Corrects the legacy 'four dogs'/'four dog' entries (SUPERSEDED — copy-paste corruption using wrong dog-word 'brang' and wrong classifier mang·gni='two'). Note for future rounds: the same mang·gni-reused-everywhere corruption pattern also appears, unconfirmed and untouched by this relay, in the existing 'five dog(s)'=bonga mang·gni and 'fourteen dog'=chi brang mang·gni entries — flagged for a future NV round, not fixed here (evidence-first — only 2/3/4 were directly confirmed).",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Thangseng direct, WhatsApp relay via Tridip, NV-071 follow-up). Same achak+mang·+numeral-root pattern; bri=4 (already VERIFIED/HIGH as the standalone numeral). Corrects the legacy 'four dogs'/'four dog' entries (SUPERSEDED — copy-paste corruption using wrong dog-word 'brang' and wrong classifier mang·gni='two'). Note for future rounds: the same mang·gni-reused-everywhere corruption pattern also appears, unconfirmed and untouched by this relay, in the existing 'five dog(s)'=bonga mang·gni and 'fourteen dog'=chi brang mang·gni entries — flagged for a future NV round, not fixed here (evidence-first — only 2/3/4 were directly confirmed). RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -67678,11 +67683,11 @@
   },
   {
     "english": "four dog",
-    "garo": "achak mang·bri",
+    "garo": "achak mangbri",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'four dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship.",
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'four dogs' (same Garo). Added 2026-08-09 (NV-071 follow-up) because the only pre-existing master candidate for this exact key was SUPERSEDED and a non-master (garo_dictionary.json) duplicate of the same wrong legacy value would otherwise still ship. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -67723,65 +67728,65 @@
   },
   {
     "english": "five dog",
-    "garo": "achak mang·bonga",
+    "garo": "achak mangbonga",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'five dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['5']='bonga' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'bonga mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'five dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['5']='bonga' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'bonga mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "six dog",
-    "garo": "achak mang·dok",
+    "garo": "achak mangdok",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'six dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['6']='dok' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'dokka mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'six dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['6']='dok' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'dokka mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seven dog",
-    "garo": "achak mang·sni",
+    "garo": "achak mangsni",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'seven dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['7']='sni' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sni mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'seven dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['7']='sni' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sni mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eight dog",
-    "garo": "achak mang·chet",
+    "garo": "achak mangchet",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'eight dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['8']='chet' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chet mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'eight dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['8']='chet' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chet mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nine dog",
-    "garo": "achak mang·sku",
+    "garo": "achak mangsku",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'nine dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['9']='sku' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sku mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'nine dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['9']='sku' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sku mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "ten dog",
-    "garo": "achak mang·chiking",
+    "garo": "achak mangchiking",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'ten dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['10']='chiking' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chi mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Singular-gloss duplicate of 'ten dogs' pattern — root 'achak' (dog, VERIFIED) + mang classifier + NUMBERS['10']='chiking' suffix, same formula as achak mang·gittam/achak mang·bri (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chi mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "one cat",
-    "garo": "menggo mang·sa",
+    "garo": "menggo mangsa",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['1']='sa', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sa mang·sa' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['1']='sa', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sa mang·sa' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -67795,65 +67800,65 @@
   },
   {
     "english": "four cat",
-    "garo": "menggo mang·bri",
+    "garo": "menggo mangbri",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['4']='bri', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'brang mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['4']='bri', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'brang mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "five cat",
-    "garo": "menggo mang·bonga",
+    "garo": "menggo mangbonga",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['5']='bonga', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'bonga mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['5']='bonga', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'bonga mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "six cat",
-    "garo": "menggo mang·dok",
+    "garo": "menggo mangdok",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['6']='dok', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'dokka mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['6']='dok', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'dokka mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seven cat",
-    "garo": "menggo mang·sni",
+    "garo": "menggo mangsni",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['7']='sni', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sni mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['7']='sni', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sni mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eight cat",
-    "garo": "menggo mang·chet",
+    "garo": "menggo mangchet",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['8']='chet', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chet mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['8']='chet', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chet mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nine cat",
-    "garo": "menggo mang·sku",
+    "garo": "menggo mangsku",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['9']='sku', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sku mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['9']='sku', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'sku mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "ten cat",
-    "garo": "menggo mang·chiking",
+    "garo": "menggo mangchiking",
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['10']='chiking', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chi mang·gni' entry, which is retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'menggo' (cat) native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner: 'three cat'=Menggo mang·gittam, 'two cat'=Menggo mang·gni — matches pre-existing live 'two cat' entry exactly). Suffix per NUMBERS['10']='chiking', same mang-classifier formula as dog (NV-071). Added 2026-08-11 (Claude A, counting-system audit follow-up) replacing fabricated 'chi mang·gni' entry, which is retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -67867,29 +67872,29 @@
   },
   {
     "english": "ten bird",
-    "garo": "do·o mang·chiking",
+    "garo": "do·o mangchiking",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Corrects the \"do·a\" root error (do·a=\"climb\"/\"upward\", not bird) in the pre-existing entry — root should be do·o per 2026-08-11 bird-root closure (Thangseng). Classifier+suffix (mang·chiking, NUMBERS[10]) unchanged, already correct.",
+    "notes": "VERIFIED/HIGH. Corrects the \"do·a\" root error (do·a=\"climb\"/\"upward\", not bird) in the pre-existing entry — root should be do·o per 2026-08-11 bird-root closure (Thangseng). Classifier+suffix (mang·chiking, NUMBERS[10]) unchanged, already correct. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "ten birds",
-    "garo": "do·o mang·chiking",
+    "garo": "do·o mangchiking",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Corrects the \"do·a\" root error (do·a=\"climb\"/\"upward\", not bird) in the pre-existing entry — root should be do·o per 2026-08-11 bird-root closure (Thangseng). Classifier+suffix (mang·chiking, NUMBERS[10]) unchanged, already correct.",
+    "notes": "VERIFIED/HIGH. Corrects the \"do·a\" root error (do·a=\"climb\"/\"upward\", not bird) in the pre-existing entry — root should be do·o per 2026-08-11 bird-root closure (Thangseng). Classifier+suffix (mang·chiking, NUMBERS[10]) unchanged, already correct. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "one bird",
-    "garo": "do·o mang·sa",
+    "garo": "do·o mangsa",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['1']='sa' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sa mang·sa' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['1']='sa' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sa mang·sa' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -67912,380 +67917,380 @@
   },
   {
     "english": "four bird",
-    "garo": "do·o mang·bri",
+    "garo": "do·o mangbri",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['4']='bri' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'brang mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['4']='bri' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'brang mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "four birds",
-    "garo": "do·o mang·bri",
+    "garo": "do·o mangbri",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['4']='bri' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'brang mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['4']='bri' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'brang mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "five bird",
-    "garo": "do·o mang·bonga",
+    "garo": "do·o mangbonga",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['5']='bonga' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'bonga mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['5']='bonga' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'bonga mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "five birds",
-    "garo": "do·o mang·bonga",
+    "garo": "do·o mangbonga",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['5']='bonga' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'bonga mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['5']='bonga' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'bonga mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "six bird",
-    "garo": "do·o mang·dok",
+    "garo": "do·o mangdok",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['6']='dok' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'dokka mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['6']='dok' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'dokka mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "six birds",
-    "garo": "do·o mang·dok",
+    "garo": "do·o mangdok",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['6']='dok' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'dokka mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['6']='dok' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'dokka mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seven bird",
-    "garo": "do·o mang·sni",
+    "garo": "do·o mangsni",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['7']='sni' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sni mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['7']='sni' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sni mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seven birds",
-    "garo": "do·o mang·sni",
+    "garo": "do·o mangsni",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['7']='sni' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sni mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['7']='sni' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sni mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eight bird",
-    "garo": "do·o mang·chet",
+    "garo": "do·o mangchet",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['8']='chet' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'chet mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['8']='chet' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'chet mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eight birds",
-    "garo": "do·o mang·chet",
+    "garo": "do·o mangchet",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['8']='chet' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'chet mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['8']='chet' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'chet mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nine bird",
-    "garo": "do·o mang·sku",
+    "garo": "do·o mangsku",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['9']='sku' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sku mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['9']='sku' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sku mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nine birds",
-    "garo": "do·o mang·sku",
+    "garo": "do·o mangsku",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['9']='sku' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sku mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH. Root 'do·o' (bird, native-confirmed 2026-08-11, same word as chicken) + mang classifier + NUMBERS['9']='sku' suffix — same formula as dog/cat (NV-071, 2026-08-11 session). Replaces fabricated 'sku mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eleven dog",
-    "garo": "achak mang·Chi·sa",
+    "garo": "achak mangChi·sa",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twelve dog",
-    "garo": "achak mang·Chi·gni",
+    "garo": "achak mangChi·gni",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "thirteen dog",
-    "garo": "achak mang·Chi·gittam",
+    "garo": "achak mangChi·gittam",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fourteen dog",
-    "garo": "achak mang·Chi·bri",
+    "garo": "achak mangChi·bri",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fifteen dog",
-    "garo": "achak mang·Chi·bonga",
+    "garo": "achak mangChi·bonga",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "sixteen dog",
-    "garo": "achak mang·Chi·dok",
+    "garo": "achak mangChi·dok",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seventeen dog",
-    "garo": "achak mang·Chi·sni",
+    "garo": "achak mangChi·sni",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eighteen dog",
-    "garo": "achak mang·Chi·chet",
+    "garo": "achak mangChi·chet",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nineteen dog",
-    "garo": "achak mang·Chi·sku",
+    "garo": "achak mangChi·sku",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twenty dog",
-    "garo": "achak mang·Kolgrik",
+    "garo": "achak mangKolgrik",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'achak' (dog) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eleven cat",
-    "garo": "menggo mang·Chi·sa",
+    "garo": "menggo mangChi·sa",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twelve cat",
-    "garo": "menggo mang·Chi·gni",
+    "garo": "menggo mangChi·gni",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "thirteen cat",
-    "garo": "menggo mang·Chi·gittam",
+    "garo": "menggo mangChi·gittam",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fourteen cat",
-    "garo": "menggo mang·Chi·bri",
+    "garo": "menggo mangChi·bri",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fifteen cat",
-    "garo": "menggo mang·Chi·bonga",
+    "garo": "menggo mangChi·bonga",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "sixteen cat",
-    "garo": "menggo mang·Chi·dok",
+    "garo": "menggo mangChi·dok",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seventeen cat",
-    "garo": "menggo mang·Chi·sni",
+    "garo": "menggo mangChi·sni",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eighteen cat",
-    "garo": "menggo mang·Chi·chet",
+    "garo": "menggo mangChi·chet",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nineteen cat",
-    "garo": "menggo mang·Chi·sku",
+    "garo": "menggo mangChi·sku",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twenty cat",
-    "garo": "menggo mang·Kolgrik",
+    "garo": "menggo mangKolgrik",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'menggo' (cat) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eleven bird",
-    "garo": "do·o mang·Chi·sa",
+    "garo": "do·o mangChi·sa",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sa mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twelve bird",
-    "garo": "do·o mang·Chi·gni",
+    "garo": "do·o mangChi·gni",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi do·o mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "thirteen bird",
-    "garo": "do·o mang·Chi·gittam",
+    "garo": "do·o mangChi·gittam",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi na·tok mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fourteen bird",
-    "garo": "do·o mang·Chi·bri",
+    "garo": "do·o mangChi·bri",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi brang mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fifteen bird",
-    "garo": "do·o mang·Chi·bonga",
+    "garo": "do·o mangChi·bonga",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi bonga mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "sixteen bird",
-    "garo": "do·o mang·Chi·dok",
+    "garo": "do·o mangChi·dok",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi dokka mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seventeen bird",
-    "garo": "do·o mang·Chi·sni",
+    "garo": "do·o mangChi·sni",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sni mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eighteen bird",
-    "garo": "do·o mang·Chi·chet",
+    "garo": "do·o mangChi·chet",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi chet mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nineteen bird",
-    "garo": "do·o mang·Chi·sku",
+    "garo": "do·o mangChi·sku",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng, WhatsApp relay via Tridip, Project Owner): teen counting formula is CLASSIFIER·Chi·[ones-suffix] (11=Chi·sa ... 19=Chi·sku), matching garo_classifier.js's already-VERIFIED TEENS table (confirmed 2026-06-28, previously only wired into the engine, never applied to these dictionary data entries). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi sku mang·gni' entry, retained SUPERSEDED per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twenty bird",
-    "garo": "do·o mang·Kolgrik",
+    "garo": "do·o mangKolgrik",
     "pos": null,
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-11 (Thangseng relay): twenty = classifier + 'Kolgrik' (no Chi· prefix, distinct standalone word), matching garo_classifier.js's confirmed 20+ tens-word logic (2026-06-28). Root 'do·o' (bird) + mang classifier. Replaces fabricated 'chi chi mang·gni' entry, retained SUPERSEDED. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -68533,34 +68538,34 @@
   },
   {
     "english": "one fish",
-    "garo": "na·tok mang·sa",
+    "garo": "na·tok mangsa",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "one fishs",
-    "garo": "na·tok mang·sa",
+    "garo": "na·tok mangsa",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "two fish",
-    "garo": "na·tok mang·gni",
+    "garo": "na·tok manggni",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "two fishs",
-    "garo": "na·tok mang·gni",
+    "garo": "na·tok manggni",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -68581,274 +68586,274 @@
   },
   {
     "english": "four fish",
-    "garo": "na·tok mang·bri",
+    "garo": "na·tok mangbri",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "four fishs",
-    "garo": "na·tok mang·bri",
+    "garo": "na·tok mangbri",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "five fish",
-    "garo": "na·tok mang·bonga",
+    "garo": "na·tok mangbonga",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "five fishs",
-    "garo": "na·tok mang·bonga",
+    "garo": "na·tok mangbonga",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "six fish",
-    "garo": "na·tok mang·dok",
+    "garo": "na·tok mangdok",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "six fishs",
-    "garo": "na·tok mang·dok",
+    "garo": "na·tok mangdok",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seven fish",
-    "garo": "na·tok mang·sni",
+    "garo": "na·tok mangsni",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seven fishs",
-    "garo": "na·tok mang·sni",
+    "garo": "na·tok mangsni",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eight fish",
-    "garo": "na·tok mang·chet",
+    "garo": "na·tok mangchet",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eight fishs",
-    "garo": "na·tok mang·chet",
+    "garo": "na·tok mangchet",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nine fish",
-    "garo": "na·tok mang·sku",
+    "garo": "na·tok mangsku",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nine fishs",
-    "garo": "na·tok mang·sku",
+    "garo": "na·tok mangsku",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "ten fish",
-    "garo": "na·tok mang·chiking",
+    "garo": "na·tok mangchiking",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "ten fishs",
-    "garo": "na·tok mang·chiking",
+    "garo": "na·tok mangchiking",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eleven fish",
-    "garo": "na·tok mang·Chi·sa",
+    "garo": "na·tok mangChi·sa",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eleven fishs",
-    "garo": "na·tok mang·Chi·sa",
+    "garo": "na·tok mangChi·sa",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twelve fish",
-    "garo": "na·tok mang·Chi·gni",
+    "garo": "na·tok mangChi·gni",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twelve fishs",
-    "garo": "na·tok mang·Chi·gni",
+    "garo": "na·tok mangChi·gni",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "thirteen fish",
-    "garo": "na·tok mang·Chi·gittam",
+    "garo": "na·tok mangChi·gittam",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "thirteen fishs",
-    "garo": "na·tok mang·Chi·gittam",
+    "garo": "na·tok mangChi·gittam",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fourteen fish",
-    "garo": "na·tok mang·Chi·bri",
+    "garo": "na·tok mangChi·bri",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fourteen fishs",
-    "garo": "na·tok mang·Chi·bri",
+    "garo": "na·tok mangChi·bri",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fifteen fish",
-    "garo": "na·tok mang·Chi·bonga",
+    "garo": "na·tok mangChi·bonga",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "fifteen fishs",
-    "garo": "na·tok mang·Chi·bonga",
+    "garo": "na·tok mangChi·bonga",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "sixteen fish",
-    "garo": "na·tok mang·Chi·dok",
+    "garo": "na·tok mangChi·dok",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "sixteen fishs",
-    "garo": "na·tok mang·Chi·dok",
+    "garo": "na·tok mangChi·dok",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seventeen fish",
-    "garo": "na·tok mang·Chi·sni",
+    "garo": "na·tok mangChi·sni",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "seventeen fishs",
-    "garo": "na·tok mang·Chi·sni",
+    "garo": "na·tok mangChi·sni",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eighteen fish",
-    "garo": "na·tok mang·Chi·chet",
+    "garo": "na·tok mangChi·chet",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "eighteen fishs",
-    "garo": "na·tok mang·Chi·chet",
+    "garo": "na·tok mangChi·chet",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nineteen fish",
-    "garo": "na·tok mang·Chi·sku",
+    "garo": "na·tok mangChi·sku",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "nineteen fishs",
-    "garo": "na·tok mang·Chi·sku",
+    "garo": "na·tok mangChi·sku",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twenty fish",
-    "garo": "na·tok mang·Kolgrik",
+    "garo": "na·tok mangKolgrik",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
     "english": "twenty fishs",
-    "garo": "na·tok mang·Kolgrik",
+    "garo": "na·tok mangKolgrik",
     "category": "animals",
     "classifier": "mang",
-    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation.",
+    "notes": "VERIFIED/HIGH — mechanically regenerated 2026-08-11 (Claude B): fish=na·tok (confirmed root) + mang classifier + confirmed number-suffix formula, same formula/precedent Claude A applied to dog/cat/bird in 3ec06ee. See docs/COUNTING_PHRASE_AUDIT_20260810.md (mang section) for the derivation. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "verified_high"
   },
   {
@@ -75847,11 +75852,11 @@
   },
   {
     "english": "six dogs",
-    "garo": "dokka mang·gni",
+    "garo": "dokka manggni",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — corpus-internal audit 2026-09-12 (Claude A), same defect shape as the 2026-08-10 audit (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry from garo_dictionary.json (untagged legacy source), classifier omitted/wrong root, numeral suffix contradicts its own claimed count ('dokka mang·gni' is also claimed for a different count of the same noun elsewhere). Was previously suppressed by a master_dictionary.json SUPERSEDED row for this noun family that Claude D's Batch 6 deletion (commit 61a4e1a) removed without cross-checking garo_dictionary.json for a still-live untagged duplicate at this exact compound key. Re-added to restore suppression. Not deleted (garo_dictionary.json itself untouched, out of Claude A's remit), retained per citation discipline.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-09-12 (Claude A), same defect shape as the 2026-08-10 audit (Claude A, per Claude C's engineering report): bulk-generated counted-noun entry from garo_dictionary.json (untagged legacy source), classifier omitted/wrong root, numeral suffix contradicts its own claimed count ('dokka mang·gni' is also claimed for a different count of the same noun elsewhere). Was previously suppressed by a master_dictionary.json SUPERSEDED row for this noun family that Claude D's Batch 6 deletion (commit 61a4e1a) removed without cross-checking garo_dictionary.json for a still-live untagged duplicate at this exact compound key. Re-added to restore suppression. Not deleted (garo_dictionary.json itself untouched, out of Claude A's remit), retained per citation discipline. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
     "confidence": "superseded"
   },
   {
