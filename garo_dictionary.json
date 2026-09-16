@@ -1945,7 +1945,9 @@
   },
   {
     "english": "to bake / roast",
-    "garo": "Ang·a"
+    "garo": "Ang·a",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "to stir",
@@ -3229,7 +3231,9 @@
   },
   {
     "english": "bake / roast",
-    "garo": "Ang·a"
+    "garo": "Ang·a",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "stir",
@@ -4213,23 +4217,33 @@
   },
   {
     "english": "1",
-    "garo": "sa"
+    "garo": "sa",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "2",
-    "garo": "gni"
+    "garo": "gni",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "3",
-    "garo": "gittam"
+    "garo": "gittam",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "4",
-    "garo": "bri"
+    "garo": "bri",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "5",
-    "garo": "bonga"
+    "garo": "bonga",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "two dogs",
@@ -4405,23 +4419,33 @@
   },
   {
     "english": "6",
-    "garo": "dok"
+    "garo": "dok",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "7",
-    "garo": "sni"
+    "garo": "sni",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "8",
-    "garo": "chet"
+    "garo": "chet",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "9",
-    "garo": "sku"
+    "garo": "sku",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "10",
-    "garo": "chiking"
+    "garo": "chiking",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "garo",
@@ -6393,7 +6417,9 @@
   },
   {
     "english": "To Bake / Roast",
-    "garo": "Ang·a"
+    "garo": "Ang·a",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "To Stir",
@@ -7693,7 +7719,9 @@
   },
   {
     "english": "Bake / Roast",
-    "garo": "Ang·a"
+    "garo": "Ang·a",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "Stir",
@@ -9969,7 +9997,9 @@
   },
   {
     "english": "two cars",
-    "garo": "rang·gni"
+    "garo": "rang·gni",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "three persons",
@@ -10085,7 +10115,9 @@
   },
   {
     "english": "six dogs",
-    "garo": "dokka manggni"
+    "garo": "dokka manggni",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "six birds",
@@ -12213,7 +12245,9 @@
   },
   {
     "english": "twenty students",
-    "garo": "chi chi chik·gni"
+    "garo": "chi chi chik·gni",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "twenty house",
@@ -13397,19 +13431,27 @@
   },
   {
     "english": "what dog?",
-    "garo": "ma mang?"
+    "garo": "ma mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "what cat?",
-    "garo": "ma mang?"
+    "garo": "ma mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "what bird?",
-    "garo": "ma mang?"
+    "garo": "ma mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "what fish?",
-    "garo": "ma mang?"
+    "garo": "ma mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "what teacher?",
@@ -13437,19 +13479,27 @@
   },
   {
     "english": "where dog?",
-    "garo": "kade mang?"
+    "garo": "kade mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "where cat?",
-    "garo": "kade mang?"
+    "garo": "kade mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "where bird?",
-    "garo": "kade mang?"
+    "garo": "kade mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "where fish?",
-    "garo": "kade mang?"
+    "garo": "kade mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "where teacher?",
@@ -13477,19 +13527,27 @@
   },
   {
     "english": "when dog?",
-    "garo": "bale mang?"
+    "garo": "bale mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "when cat?",
-    "garo": "bale mang?"
+    "garo": "bale mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "when bird?",
-    "garo": "bale mang?"
+    "garo": "bale mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "when fish?",
-    "garo": "bale mang?"
+    "garo": "bale mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "when teacher?",
@@ -13517,19 +13575,27 @@
   },
   {
     "english": "why dog?",
-    "garo": "bang·a mang?"
+    "garo": "bang·a mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "why cat?",
-    "garo": "bang·a mang?"
+    "garo": "bang·a mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "why bird?",
-    "garo": "bang·a mang?"
+    "garo": "bang·a mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "why fish?",
-    "garo": "bang·a mang?"
+    "garo": "bang·a mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "why teacher?",
@@ -13557,19 +13623,27 @@
   },
   {
     "english": "how dog?",
-    "garo": "kamat mang?"
+    "garo": "kamat mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how cat?",
-    "garo": "kamat mang?"
+    "garo": "kamat mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how bird?",
-    "garo": "kamat mang?"
+    "garo": "kamat mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how fish?",
-    "garo": "kamat mang?"
+    "garo": "kamat mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how teacher?",
@@ -13597,19 +13671,27 @@
   },
   {
     "english": "who dog?",
-    "garo": "ko mang?"
+    "garo": "ko mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "who cat?",
-    "garo": "ko mang?"
+    "garo": "ko mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "who bird?",
-    "garo": "ko mang?"
+    "garo": "ko mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "who fish?",
-    "garo": "ko mang?"
+    "garo": "ko mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "who teacher?",
@@ -13637,19 +13719,27 @@
   },
   {
     "english": "which dog?",
-    "garo": "ma·si mang?"
+    "garo": "ma·si mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "which cat?",
-    "garo": "ma·si mang?"
+    "garo": "ma·si mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "which bird?",
-    "garo": "ma·si mang?"
+    "garo": "ma·si mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "which fish?",
-    "garo": "ma·si mang?"
+    "garo": "ma·si mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "which teacher?",
@@ -13677,19 +13767,27 @@
   },
   {
     "english": "how many dog?",
-    "garo": "kama mang?"
+    "garo": "kama mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how many cat?",
-    "garo": "kama mang?"
+    "garo": "kama mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how many bird?",
-    "garo": "kama mang?"
+    "garo": "kama mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how many fish?",
-    "garo": "kama mang?"
+    "garo": "kama mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how many teacher?",
@@ -13717,19 +13815,27 @@
   },
   {
     "english": "how much dog?",
-    "garo": "kama mang?"
+    "garo": "kama mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how much cat?",
-    "garo": "kama mang?"
+    "garo": "kama mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how much bird?",
-    "garo": "kama mang?"
+    "garo": "kama mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how much fish?",
-    "garo": "kama mang?"
+    "garo": "kama mang?",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "how much teacher?",
@@ -15665,7 +15771,9 @@
   },
   {
     "english": "the one coin",
-    "garo": "tangka gong·sa"
+    "garo": "tangka gong·sa",
+    "stale": true,
+    "stale_reason": "duplicate_of_superseded_master_row"
   },
   {
     "english": "the five rupees",
