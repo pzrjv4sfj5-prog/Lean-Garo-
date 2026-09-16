@@ -1,0 +1,34 @@
+{
+  "schema": "lean-garo.claude_a_review_input.v1",
+  "source_page": 95,
+  "source_type": "OCR",
+  "status": "NO_NEW_ENTRIES",
+  "deduplication": {
+    "raka_normalization": "Convert hyphen to · only inside Garo fields",
+    "comparison_key": "english|normalized_garo|pos",
+    "same_garo_different_pos": "preserve",
+    "same_garo_different_sense": "preserve",
+    "minimal_raka_pairs": "preserve",
+    "repository_history_checked": true
+  },
+  "summary": {
+    "ocr_records_reviewed": 41,
+    "new_records_for_claude_a": 0,
+    "already_processed_or_present": 40,
+    "held_from_a": 1,
+    "duplicate_records_in_output": 0,
+    "malformed_records_in_output": 0
+  },
+  "entries": [],
+  "held": [
+    {
+      "english": "reflection",
+      "garo": "Jagring",
+      "pos": ["n."],
+      "source_page": 95,
+      "status": "HOLD_CUTOFF",
+      "reason": "OCR/source gloss is cut off; do not infer or repair the missing text."
+    }
+  ],
+  "repository_note": "Page 0095 was previously staged through PL-0001797..PL-0001839. The repository import report records the page as previously processed, including legitimate sense splits and the Jagoka/Ja·goka raka minimal pair. This file therefore contains zero re-importable duplicates and does not re-stage existing records."
+}
