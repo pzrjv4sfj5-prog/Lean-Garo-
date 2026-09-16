@@ -20,6 +20,15 @@
     "confidence": "unverified"
   },
   {
+    "english": "two teachers",
+    "garo": "Skigipa sakgni",
+    "pos": null,
+    "category": "education",
+    "classifier": "sak",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-16, chat): plural-key parity correction. Flagged by Claude D's forensic audit (confidence:unverified, never audited) as reproducing the same missing-sak-classifier defect shape the Batch 6 deletion family fixed elsewhere -- 'two teachers' shipped 'skigipa·gni' (fused, no classifier) while the exact-key 'two teacher' already carries a VERIFIED/HIGH, natively-relayed form via the sak classifier ('Skigipa sakgni', native relay Thangseng, see the idx-70685 entry's own notes). Garo count nouns don't inflect for English-style plurality the way this key pair implied -- 'Skigipa sakgni' ('teacher' + sak-classifier + two) already covers both readings. Corrected here by direct mechanical parity with the already-verified form, not a new linguistic call.",
+    "confidence": "verified_high"
+  },
+  {
     "english": "one coin",
     "garo": "tangka gong·sa",
     "category": "numbers",
@@ -47821,6 +47830,15 @@
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
     "confidence": "unverified"
+  },
+  {
+    "english": "vegetable",
+    "garo": "mesu",
+    "pos": null,
+    "category": "food",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-16, chat): 'vegetable'=mesu. Fills the dictionary-key mismatch flagged in docs/CLAUDE_B_SESSION_MIGRATION_20260912.md and docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md (the singular 'vegetable' had no dictionary entry at all -- only the plural 'vegetables'='sam·bi·jak' existed, so the generic singularizer produced a key that fell through to a weak fuzzy match). Distinct headword from 'vegetables', not a raka/case variant of it -- both are retained independently, matching the project's existing singular-vs-collective pattern elsewhere in the corpus.",
+    "confidence": "verified_high"
   },
   {
     "english": "vegetarian food",

@@ -298,6 +298,17 @@ export async function translate(input) {
       if (garoNoun) resolvedNoun = countPhrase.nounOnly;
     }
     if (garoNoun) {
+      // Owner-confirmed (2026-09-16, chat): rice measured by weight is
+      // uncooked rice -- merong, not the default cooked reading (mi) --
+      // and confirmed no-raka before the kg classifier suffix ("merong
+      // kg gni"). Same narrow-scoping discipline as the pre-existing
+      // "buy rice" -> merong fix in grammarEngine.js: only the kg-
+      // measured reading changes; "rice" alone, or measured by litre/
+      // plate (unconfirmed, still defaulted no-raka), is untouched and
+      // still correctly resolves to "mi" elsewhere in the engine.
+      if (countPhrase.unit === 'kg' && resolvedNoun === 'rice') {
+        garoNoun = 'merong';
+      }
       const classifierResult = countPhrase.unit
         ? countNounWithClassifier(garoNoun.toLowerCase(), countPhrase.count, countPhrase.unit)
         : countNoun(garoNoun, countPhrase.count, resolvedNoun);

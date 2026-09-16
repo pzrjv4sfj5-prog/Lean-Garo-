@@ -262,12 +262,14 @@ const IRREGULAR_PLURALS = {
 // contract's Measurement/Food categories: kg=weight, litre=liquid volume,
 // plate=serving). Recognized only as the FIRST word of the noun phrase
 // (optionally followed by "of"), stripped before normal noun resolution.
-// RAKA BEHAVIOR UNVERIFIED for all three -- no native-confirmed example
-// exists anywhere in this repo (unlike mountain/village/car/banana, which
-// all had explicit confirmed_examples). Defaulted to no-raka below
-// (RAKA_CLASSIFIERS unchanged, so these fall to the no-raka branch) as
-// the majority-pattern guess, NOT a confirmed rule -- flag for native
-// review before treating "kgsa"/"litresa"/"platesa" as settled.
+// RAKA BEHAVIOR for 'kg' CONFIRMED no-raka 2026-09-16 (Project Owner
+// directive, chat, "merong kg gni" = 2kg (uncooked) rice) -- matches the
+// no-raka default already shipping, no code change needed for kg's raka
+// behavior itself. 'litre'/'plate' remain UNVERIFIED -- no native-
+// confirmed example exists for either, still defaulted to no-raka below
+// (RAKA_CLASSIFIERS unchanged) as the majority-pattern guess, NOT a
+// confirmed rule -- flag for native review before treating "litresa"/
+// "platesa" as settled.
 const UNIT_WORDS = {
   'kg': 'kg', 'kilogram': 'kg', 'kilograms': 'kg',
   'litre': 'litre', 'litres': 'litre', 'liter': 'litre', 'liters': 'litre',
