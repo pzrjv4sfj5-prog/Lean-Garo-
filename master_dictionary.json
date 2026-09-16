@@ -75874,5 +75874,32 @@
     "category": "numbers",
     "notes": "SUPERSEDED — placeholder, do NOT ship. Re-added 2026-09-13 (Claude B) purely as a SUPPRESSOR, not as usable data. Background: the identical row was deleted in 913ffd1 (Batch 1 dedup, Owner-directed) along with 11 siblings. For the other 11, a correct noun-specific row already existed under the same key, so deletion was clean. 'eight dogs' was the sole exception: it had no replacement row, and garo_dictionary.json (the untagged legacy file) independently carries the same garbled value for this exact key. With the master row gone, nothing suppressed that duplicate, so compiled_dict.json began shipping 'chet manggni' live again (a bare count suffix with no noun root, AND the wrong numeral -- gni=two, not chet=eight). Restoring this row as confidence=superseded re-engages prepare-data.js's suppression (supersededByKey, populated only from confidence==='superseded' or a notes field starting 'SUPERSEDED'), so the key falls through to classifier composition and correctly yields 'achak mangchet' (mang has no raka dot per Owner/Thangseng confirmation 2026-09-13). Proper fix is to clean the stale row out of garo_dictionary.json, which is outside Claude B's lane -- flagged for Claude D.",
     "confidence": "superseded"
+  },
+  {
+    "english": "did you drink medicine?",
+    "garo": "Na·a sam ringahama?",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive/confirmed (2026-09-16, chat): Garo has no separate \"take medicine\" verb — medicine is always spoken of as drunk (ring), never eaten/taken, mirroring the existing 'chu'(alcohol)-with-ring pattern. Composed entirely from already-VERIFIED/HIGH components: Na·a (you), sam (medicine, VERIFIED/HIGH), ringahama (drink-root 'ring'+'a'+yes/no-interrogative suffix '-hama', same exact composition already attested live for \"did you drink water?\" -> \"Na·a Chi Ringahama?\"). No new grammar claimed.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "did you take medicine?",
+    "garo": "Na·a sam ringahama?",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — alias of \"did you drink medicine?\" (see that entry). Project Owner directive/confirmed (2026-09-16, chat): English \"take medicine\" has no distinct Garo construction — it maps to the same drink-verb sentence. Filed as a separate English key (not a duplicate) so either English phrasing resolves correctly; Garo value is intentionally identical, not a second independent citation.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "which medicine did you take?",
+    "garo": "Badia samko ringa na·ara?",
+    "pos": null,
+    "category": "health",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive/confirmed (2026-09-16, chat). Composed from: badia (\"which\", determiner, stays separate from its noun here — contrast the fused \"badiako\" used when \"which one\" stands alone as a pronoun, e.g. existing \"which one did you take?\"->\"Na·a badiako ra·aha?\"), samko (sam=medicine, VERIFIED/HIGH, + -ko object/accusative marker attached to the noun it modifies), ringa (drink-root 'ring'+'a', same drink-not-take collocation as the \"did you drink/take medicine?\" pair above), na·ara (wh-question verb suffix — same suffix form as the existing unverified \"where did you come from?\"->\"Banoni re·baa na·ara?\", this new citation raises that suffix's evidentiary weight but does not itself promote the older unverified row).",
+    "confidence": "verified_high"
   }
 ]

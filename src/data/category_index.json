@@ -4021,5 +4021,8 @@
   "ten thousand": "numbers",
   "one hundred thousand": "numbers",
   "i have three fish": "food",
-  "eight dogs": "numbers"
+  "eight dogs": "numbers",
+  "did you drink medicine?": "health",
+  "did you take medicine?": "health",
+  "which medicine did you take?": "health"
 }
