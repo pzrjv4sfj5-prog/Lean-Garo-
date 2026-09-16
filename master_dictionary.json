@@ -75901,5 +75901,23 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — Project Owner directive/confirmed (2026-09-16, chat). Composed from: badia (\"which\", determiner, stays separate from its noun here — contrast the fused \"badiako\" used when \"which one\" stands alone as a pronoun, e.g. existing \"which one did you take?\"->\"Na·a badiako ra·aha?\"), samko (sam=medicine, VERIFIED/HIGH, + -ko object/accusative marker attached to the noun it modifies), ringa (drink-root 'ring'+'a', same drink-not-take collocation as the \"did you drink/take medicine?\" pair above), na·ara (wh-question verb suffix — same suffix form as the existing unverified \"where did you come from?\"->\"Banoni re·baa na·ara?\", this new citation raises that suffix's evidentiary weight but does not itself promote the older unverified row).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "who called? (phone call)",
+    "garo": "Sawa ka·ata?",
+    "pos": null,
+    "category": "questions",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Thangseng, direct citation via Project Owner relay (chat, 2026-09-16). Sawa (who, VERIFIED/HIGH) + ka·ata (the ka·at- stem already attested in the phone-call paradigm: phone ka·atbo/ka·atenga/ka·atjawa, VERIFIED/HIGH) + -ata (past/question). FLAGGED, not assumed: (1) this is the first corpus attestation of -ata as a past/question suffix on this stem — not yet confirmed to generalize to other verbs, do not extend without further citation; (2) unlike every other entry in the phone-ka·a paradigm, this form has no explicit 'phone' object — given as-is per Thangseng, presumed contextually implied (e.g. a ringing phone) rather than confirmed droppable in all contexts.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "who called? (summoned to a place)",
+    "garo": "Sawa okamata?",
+    "pos": null,
+    "category": "questions",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Thangseng, direct citation via Project Owner relay (chat, 2026-09-16). Sawa (who, VERIFIED/HIGH) + okamata (okam- root of Okama/Okamani, VERIFIED/HIGH 'call'/summon sense, NV-041) + -ata (past/question). Distinguishes this sense from the phone-call sense (see \"who called? (phone call)\" -> \"Sawa ka·ata?\"), which uses the separate ka·a/ka·at- stem, not okam-. FLAGGED, not assumed: same -ata suffix question as the phone-call sibling entry — first attestation on this root, not yet confirmed to generalize.",
+    "confidence": "verified_high"
   }
 ]

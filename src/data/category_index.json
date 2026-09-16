@@ -4024,5 +4024,7 @@
   "eight dogs": "numbers",
   "did you drink medicine?": "health",
   "did you take medicine?": "health",
-  "which medicine did you take?": "health"
+  "which medicine did you take?": "health",
+  "who called? (phone call)": "questions",
+  "who called? (summoned to a place)": "questions"
 }
