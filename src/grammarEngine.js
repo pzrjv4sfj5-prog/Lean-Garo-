@@ -581,7 +581,24 @@ export function analyzeGrammar(input) {
       // dictionary lookup and silently producing [UNKNOWN].
       if (pendingDestination) { locationWords.push(w); pendingDestination = false; continue; }
       if (pendingLocative) { objectIsLocativeAdjunct = true; pendingLocative = false; }
-      objectWords.push(words[i]);
+      // BUGFIX (2026-09-16, Claude B, docs/CLAUDE_B_HANDOFF_20260913_
+      // object_question_UNKNOWN.md): this used to push the raw token.
+      // Every other extraction point in this file cleans the word it
+      // matches against (see `w` above, and lines 257/538), but this is
+      // the one place that pushes the *raw* token through to dictionary
+      // lookup. For a sentence-final object ("did you eat rice?") the
+      // raw token still carries the trailing '?', so lookupGaro("rice?")
+      // fails, object.garo becomes '[UNKNOWN]', sentenceBuilder bails,
+      // and translate() falls through to the weaker assembleSentenceSOV
+      // path, which has no question-marking — silently dropping '?' and
+      // the interrogative suffix even though subject/verb/tense/
+      // isQuestion were all already correctly detected. Only trailing
+      // sentence punctuation is stripped here (not a full a-z-only
+      // clean like `w`'s) — '·' MUST stay, it's a real character in
+      // Garo dictionary keys and in some multi-word English input
+      // (compound corrections), and internal punctuation (contractions,
+      // hyphens) is real vocabulary, not noise to discard.
+      objectWords.push(words[i].replace(/[?.!,;:]+$/, ''));
     }
 
     let location = null;
