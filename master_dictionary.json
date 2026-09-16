@@ -75867,5 +75867,12 @@
     "classifier": "mang",
     "notes": "VERIFIED/HIGH — Project Owner-supplied sentence (2026-09-13), composed entirely from already-VERIFIED/HIGH components: Ango (possessive-existential 'I', cf. 'Ango pen donga'/'i have a pen'), na·tok mang·gittam ('three fish', Project Owner directive 2026-09-08), donga (existential 'have', attested VERIFIED/HIGH in this exact slot across multiple sentences). No new grammar claimed — direct instance of the standing Ango+object+donga possessive-existential template, same class as the 'my X' composition precedent. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): 'mang·gittam' has no raka dot before the number suffix -- corrected to 'manggittam'. Scoped to this classifier+number combo only, not generalized to other mang+number pairs (mang·sa/mang·gni/etc unchanged) pending confirmation whether this is specific to 'gittam' (three) or a broader correction to the mang-classifier raka rule (RULE-038/NV-124 currently states mang takes a dot).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "eight dogs",
+    "garo": "chet manggni",
+    "category": "numbers",
+    "notes": "SUPERSEDED — placeholder, do NOT ship. Re-added 2026-09-13 (Claude B) purely as a SUPPRESSOR, not as usable data. Background: the identical row was deleted in 913ffd1 (Batch 1 dedup, Owner-directed) along with 11 siblings. For the other 11, a correct noun-specific row already existed under the same key, so deletion was clean. 'eight dogs' was the sole exception: it had no replacement row, and garo_dictionary.json (the untagged legacy file) independently carries the same garbled value for this exact key. With the master row gone, nothing suppressed that duplicate, so compiled_dict.json began shipping 'chet manggni' live again (a bare count suffix with no noun root, AND the wrong numeral -- gni=two, not chet=eight). Restoring this row as confidence=superseded re-engages prepare-data.js's suppression (supersededByKey, populated only from confidence==='superseded' or a notes field starting 'SUPERSEDED'), so the key falls through to classifier composition and correctly yields 'achak mangchet' (mang has no raka dot per Owner/Thangseng confirmation 2026-09-13). Proper fix is to clean the stale row out of garo_dictionary.json, which is outside Claude B's lane -- flagged for Claude D.",
+    "confidence": "superseded"
   }
 ]
