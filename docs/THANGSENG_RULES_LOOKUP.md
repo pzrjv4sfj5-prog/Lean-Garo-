@@ -160,7 +160,7 @@ Numbers 21+: raka joins ALL parts — `mang·Kolgrik·sa` (not `mang·Kolgrik sa
 ```
 yes=Am | no=Ihing | good=Nama (NOT nam·a) | is/am/are=daka
 and=Aro | but=Indiba | or=ba | so=Uni gimin | if=Ode
-why=Maina (NOT Maini) | who=sawa | where=bano | when=Basaku | how=maidake
+why=Maina (NOT Maini) | who=sawa | where=bano | when=Basako (NOT Basaku) | how=maidake
 happy=kusi | tired=nenga | love(v)=ka·saa | beloved(n)=Ka·sara
 angry=ka·o | gentle=rinok | long=ro·a | very=namen
 thief=cha·u | rain(n)=mikka | home=nok | at home=noko
