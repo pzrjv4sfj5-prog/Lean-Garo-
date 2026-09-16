@@ -1,5 +1,28 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-12 by Claude D
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-16 by Claude D
+(long session, Owner-flagged for handoff. Full migration doc:
+docs/CLAUDE_D_MIGRATION_20260916.md — READ IT FIRST, this line is just a
+pointer. Summary: ran 7 Owner-confirmed deletion batches (544 rows,
+10180->9637 records) cleaning up generated-counting placeholder debris in
+master_dictionary.json. Caused two regressions via a mechanism not
+understood until partway through: garo_dictionary.json (a separate,
+untagged legacy file) can ship a garbled duplicate live once the
+master_dictionary.json `superseded` row suppressing it is deleted — Batch 6
+broke 3 keys (caught same-session, fixed by Claude A), Batch 1 broke a 4th
+(`eight dogs`, not caught until this session's end, by Claude B). Confirmed
+from Claude B reading prepare-data.js directly: only confidence=superseded
+triggers suppression, unverified never does. Four rows are now permanent
+suppressors, listed in full in docs/SUPERSEDED_ONLY_KEYS.md (53 keys total,
+auto-generated, regenerated every build) — do not delete any of them even
+though they match this session's own "safe to delete" pattern. Also:
+corrected my own earlier misdiagnosis this session (there was no "sak
+RAKA_CLASSIFIERS bug"), and confirmed the mang de-dotting data-correction
+pass other sessions flagged is already complete, not open. Two real next
+steps left open: garo_dictionary.json cleanup itself (Claude B explicitly
+assigned this to Claude D), and an unexamined 44-key interrogative-form
+family in SUPERSEDED_ONLY_KEYS.md that looks structurally similar to
+everything this session audited but was never looked at.)
+Prior: 2026-09-12 by Claude D
 (forensic segregation/audit session. Rebuilt segregation-audit tooling from
 scratch (prior tooling confirmed never pushed to origin/main). Ran two full
 16-section forensic-analysis passes per Project Owner directive, delivered

@@ -5664,3 +5664,16 @@ claude_d:
     docs/CLAUDE_D_HANDOFF_20260912_batch7_risk_not_deleted.md. No master_dictionary.json changes made.
     Going forward, Claude D will cross-check garo_dictionary.json before proposing any future deletion
     candidate, not just verified_high existence in master_dictionary.json.'
+  migration_doc_20260916: 'Session ran long (Owner-flagged), full migration doc written:
+    docs/CLAUDE_D_MIGRATION_20260916.md. Covers: role/governance, session history (7 deletion batches,
+    544 rows, 10180->9637), the garo_dictionary.json suppression mechanism and two regressions it caused
+    (Batch 6: two cars/twenty students/six dogs; Batch 1, found much later: eight dogs), the 4 permanent
+    suppressor rows that must never be deleted again (full list: docs/SUPERSEDED_ONLY_KEYS.md, 53 keys,
+    auto-generated), a self-correction (the "sak RAKA_CLASSIFIERS bug" I flagged earlier this session was
+    a misdiagnosis -- sak was never supposed to be in that set), confirmation the mang de-dotting pass is
+    already complete (don''t re-open), and open next steps: garo_dictionary.json cleanup itself (Claude
+    B explicitly assigned this to Claude D in commit 6359fed) and the unexamined interrogative-form
+    family in SUPERSEDED_ONLY_KEYS.md (44 of 53 held keys, how/what/when/where/which/who/why+animal?,
+    generic placeholder answers, structurally similar to everything else this session found but not yet
+    investigated). Read the migration doc in full before acting -- this WORKSTATE entry is a pointer,
+    not a substitute.'
