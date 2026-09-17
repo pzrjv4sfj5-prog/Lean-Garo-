@@ -313,7 +313,28 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-13 (Claude A, session complete -- see
+  next_action: '2026-09-16B (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260916B.md for full detail, this
+    is a pointer only, resumed from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260916.md). Resolved the
+    chim/achim open question from that prior session: extended
+    RULE-013 (docs/GRAMMAR_RULE_CATALOGUE.md) with a direct Thangseng
+    chat transcript (relayed by Tridip, 1/7/2026) confirming the
+    suffix is chim not achim, the plain-past+chim vs continuous+chim
+    (engachim) split, the dynamic "used to X" (ka.achim) vs stative
+    "had X" (dongachim) gloss split, and the discontinuity sense
+    behind the "Discontinued Past" name -- all matched the existing
+    rule exactly, no code/data bug found, doc-only enrichment.
+    Native evidence also confirmed 6 already-shipped classifier
+    values as correct with no change needed (mande sak.sa, tangka
+    bisil gong.sa, nok te.sa, merong rong.sa, chi glass sa, mi plate
+    sa). Runtime-error-sweep.mjs re-run clean: 0 errors/15262 calls.
+    Still open from the prior 20260916 session, untouched this
+    session: docs/THANGSENG_RELAY_QUESTION_20260916.md (7-pattern
+    wh-question suffix survey) not yet sent; the 44-key unexamined
+    interrogative-form family in docs/SUPERSEDED_ONLY_KEYS.md
+    (Claude D territory) not yet investigated.
+    ---PRIOR (2026-09-13, see
     docs/CLAUDE_A_SESSION_MIGRATION_20260913.md for full detail, this
     is a pointer only). Added "i have three fish"; fixed mang-classifier
     raka (scoped to gittam, then broadened to all mang+number); diagnosed

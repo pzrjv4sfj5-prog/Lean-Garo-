@@ -1,5 +1,24 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-16 by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-16B by Claude A
+(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260916.md. Full migration doc:
+docs/CLAUDE_A_SESSION_MIGRATION_20260916B.md — READ IT FIRST, this line is just
+a pointer. Summary: resolved that prior session's open chim/achim question.
+Direct Thangseng chat transcript (relayed by Tridip, 1/7/2026) confirmed the
+suffix is `chim` not `achim`, the plain-past+chim vs continuous+chim
+(`engachim`) split, the dynamic "used to X" (`ka·achim`) vs stative "had X"
+(`dongachim`) gloss split, and the discontinuity sense behind RULE-013's
+"Discontinued Past" name — all matched the rule exactly as already written,
+no code/data bug, doc-only extension of RULE-013's Native Notes in
+docs/GRAMMAR_RULE_CATALOGUE.md. Same transcript batch also confirmed 6
+already-shipped classifier values correct, no change needed (mande sak·sa,
+tangka bisil gong·sa, nok te·sa, merong rong·sa, chi glass sa, mi plate sa).
+Doc-only session, gate not re-run for dictionary/tests (unchanged since prior
+session's 8552/8552, 9/9, 407/407); runtime-error-sweep.mjs re-run clean, 0
+errors/15262 calls. Still open, untouched this session: the 7-pattern
+wh-question relay (docs/THANGSENG_RELAY_QUESTION_20260916.md) not yet sent;
+the 44-key interrogative-form family in docs/SUPERSEDED_ONLY_KEYS.md
+(Claude D territory) not yet investigated.)
+Prior: 2026-09-16 by Claude A
 (resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260913.md. Full migration doc:
 docs/CLAUDE_A_SESSION_MIGRATION_20260916.md — READ IT FIRST, this line is just
 a pointer. Summary: 3 new interrogative sentences (medicine=drink not
