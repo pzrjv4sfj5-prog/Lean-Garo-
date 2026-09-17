@@ -4027,5 +4027,7 @@
   "did you take medicine?": "health",
   "which medicine did you take?": "health",
   "who called? (phone call)": "questions",
-  "who called? (summoned to a place)": "questions"
+  "who called? (summoned to a place)": "questions",
+  "let's go to the shop": "phrases",
+  "let's go to school": "phrases"
 }
