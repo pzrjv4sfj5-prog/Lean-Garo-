@@ -288,11 +288,30 @@ function buildLargeClassifierPhrase(classifier, n, spaced = false) {
     tail = classifierTail(classifier, remHundred, spaced);
     if (tail === null) return null;
   } else if (prefixParts.length > 0) {
+    // Bug 3 fix (2026-09-18, direct Thangseng citation: "100 dogs" =
+    // "achak mangritcha"). The old code here guessed that an exact
+    // multiple of 100/1000 needs a spurious classifier+"sa" filler
+    // tacked on with a space (as if it were secretly "n+1") -- that was
+    // never confirmed and caused a real collision: n=100 and n=101 both
+    // rendered as "ritcha classifiersa". The citation shows the correct
+    // mechanism instead: for an exact multiple, the classifier fuses
+    // DIRECTLY onto the last quantifier word itself (mang + ritcha =
+    // "mangritcha"), no extra unit filler, and confirmed NO raka dot
+    // for this construction regardless of the classifier's own dot
+    // status elsewhere (mang is normally dot-carrying at n<20 --
+    // "mang·sa" -- but not here). This exactly mirrors the already-
+    // confirmed round-tens rule (classifierTail's units===0 branch:
+    // classifier fuses onto the bare tens word, e.g. "bolkolgrik" for
+    // 20, no filler) -- same mechanism, just one order of magnitude up.
+    // Only n=100 itself is a direct citation; extending the same
+    // fuse-no-filler mechanism to exact multiples of 100 (200, 300...)
+    // and exact multiples of 1000 (1000, 2000...) is a mechanical
+    // generalization of that confirmed mechanism, not an independently
+    // confirmed fact for each -- flagged here in case a future citation
+    // ever shows those diverge.
     const last = prefixParts.pop();
-    const attach = spaced
-      ? `${classifier} sa`
-      : (RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·sa` : `${classifier}sa`);
-    tail = `${last} ${attach}`;
+    const fusedLast = last.replace(/\s+/g, '').toLowerCase();
+    tail = spaced ? `${classifier} ${last}` : `${classifier}${fusedLast}`;
   } else {
     return null;
   }

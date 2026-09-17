@@ -37,6 +37,14 @@ test('translate: "one beer" and "five alcohol" surface the space end-to-end', as
 
 test('buildClassifierPhrase: spaced flag threads through the >=100 composition path too', () => {
   assert.equal(buildClassifierPhrase('rong', 1, true), 'rong sa');
-  assert.equal(buildClassifierPhrase('rong', 100, true), 'ritcha rong sa');
+  // Updated 2026-09-18: previously asserted 'ritcha rong sa', matching
+  // the old buggy exact-hundred filler (see Bug 3 fix in
+  // garo_classifier.js) -- that shape was never independently cited,
+  // just a mechanical assumption the spaced flag should carry the same
+  // "+sa" filler as the unspaced path. Now that the underlying mechanism
+  // is corrected (direct Thangseng citation: "100 dogs" = "achak
+  // mangritcha", no filler), the spaced equivalent is classifier + space
+  // + hundred-word, no filler either: 'rong ritcha'.
+  assert.equal(buildClassifierPhrase('rong', 100, true), 'rong ritcha');
   assert.equal(buildClassifierPhrase('rong', 1, false), 'rongsa');
 });

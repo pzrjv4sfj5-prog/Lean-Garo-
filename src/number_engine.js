@@ -59,16 +59,20 @@ export function toGaroNumber(n) {
     const hundreds = Math.floor(n / 100);
     const remainder = n % 100;
 
-    let result = "";
-
-    if (hundreds === 1) {
-      result = "ritchasa";
-    } else {
-      result = `${toGaroNumber(hundreds)} ritchasa`;
-    }
+    // Fixed 2026-09-18 (direct Thangseng citation: 100 = "ritcha",
+    // 101 = "ritchasa"). Previously this produced "ritchasa" for 100
+    // itself (uncited, no confirmed source) and "ritchasa sa" for 101
+    // (space-joined) -- both wrong per the citation: the bare hundred
+    // word is just "Ritcha" alone, and any remainder fuses directly
+    // onto it with no space, same fuse-no-gap mechanism used for
+    // classifier compounds elsewhere in this codebase. Only n=101 is a
+    // direct citation for the remainder-fusion behavior; extending it
+    // to remainder values 2-99 is a mechanical generalization of that
+    // same fuse mechanism, not independently confirmed for each value.
+    let result = hundreds === 1 ? "Ritcha" : `${toGaroNumber(hundreds)} Ritcha`;
 
     if (remainder > 0) {
-      result += ` ${toGaroNumber(remainder)}`;
+      result += toGaroNumber(remainder).replace(/\s+/g, '').toLowerCase();
     }
 
     return result;
