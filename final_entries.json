@@ -6693,7 +6693,7 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "SUPERSEDED 2026-09-16 (Project Owner directive, correcting this session's master_dictionary.json mango reversal): Te·gachu is the canonical spelling, not this te·ga·chu-family variant (which also carries a stray combining-dot encoding artifact, te\u02d9\u00b7ga\u00b7chu, distinct from the plain te\u00b7ga\u00b7chu spelling elsewhere). Retained per citation discipline, not deleted. This file is archival only, not read by prepare-data.js."
   },
   {
     "english": "Many / Much",

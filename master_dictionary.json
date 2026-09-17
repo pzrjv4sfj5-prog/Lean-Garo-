@@ -128,8 +128,8 @@
     "english": "mango",
     "garo": "Te·gachu",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'mango' has VERIFIED/HIGH form(s) ['te·ga·chu']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Project Owner direct chat instruction (2026-09-16, explicit: \"Te·gachu is right word, correct it across repo\"). Was superseded 2026-08-01 (corpus-internal audit, Claude A) in favor of 'te·ga·chu', then re-affirmed superseded 2026-09-08 (PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2) — this 2026-09-16 directive reverses both. Per that same protocol's own rule, a current PO directive is not vetoed by older verified_high evidence but must be documented, not silently erased -- both sides of this back-and-forth are kept on file (see the sibling 'Mango'->te·ga·chu row, now superseded).",
+    "confidence": "verified_high"
   },
   {
     "english": "lychee",
@@ -13368,8 +13368,8 @@
     "english": "the mango",
     "garo": "Te·gachu",
     "category": "general",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical for 'the mango' is 'te·ga·chu' (matches bare 'mango', idx 21/3428, Native (Thangseng)-cited). 'Te·gachu' retained per citation discipline."
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner direct chat instruction (2026-09-16, explicit: \"Te·gachu is right word, correct it across repo\"). Was superseded 2026-09-08 (PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2, which had made 'te·ga·chu' canonical for 'the mango'); this directive reverses that. Per that same protocol's own rule, a current PO directive is not vetoed by older verified_high evidence but must be documented, not silently erased -- both sides of this back-and-forth are kept on file (see the sibling 'the mango'->te·ga·chu row, now superseded)."
   },
   {
     "english": "the lychee",
@@ -19423,8 +19423,8 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH Cross-ref 2026-08-01: this is the te·gatchu from Thangseng's rong-classifier example (NV-048/RULE-038) — now identified as \"mango\", not a gloss-unknown fruit. See NV-049.",
-    "confidence": "verified_high"
+    "notes": "variant/VERIFIED/HIGH Cross-ref 2026-08-01: this is the te·gatchu from Thangseng's rong-classifier example (NV-048/RULE-038) — now identified as \"mango\", not a gloss-unknown fruit. See NV-049. REVERSED 2026-09-16 (Project Owner direct chat instruction, explicit: \"Te·gachu is right word, correct it across repo\"): this overturns the 2026-09-08 PROJECT_OWNER_DIRECTIVE_PROTOCOL.json decision (which had made te·ga·chu canonical) and the 2026-08-01 corpus audit before it. Per that same protocol's own rule, a current PO directive is not vetoed by older verified_high evidence but must be documented, not silently erased -- both sides of this back-and-forth are kept on file.",
+    "confidence": "superseded"
   },
   {
     "english": "Market",
@@ -62806,7 +62806,7 @@
     "garo": "Kam·kam",
     "category": null,
     "pos": "adj.",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'only' has VERIFIED/HIGH form(s) ['ak·sa', 'ma·mang', '·pit·chi', '·sa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'only' has VERIFIED/HIGH form(s) ['ak·sa', 'ma·mang', '·pit·chi', '·sa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. CITATION-HYGIENE CORRECTION 2026-09-16 (git archaeology, Claude A): the four forms this note cites as 'VERIFIED/HIGH' are all tagged 'unverified' in live data and always have been in every commit that touched them — this note's premise was wrong from the start, not merely gone stale. The actual reason Kam·kam doesn't ship is unrelated and still valid: 'only'='mangmang' is independently VERIFIED/HIGH (native-confirmed 2026-08-28, Thangseng via Project Owner relay) and no evidence has ever been offered for Kam·kam specifically. Kam·kam stays superseded on that basis, not the original (false) precedence claim. Not un-superseded; this correction only fixes the note text per Project Owner instruction to complete this archaeology.",
     "confidence": "superseded"
   },
   {
@@ -75022,8 +75022,8 @@
     "english": "the mango",
     "garo": "te·ga·chu",
     "category": "food",
-    "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical value, matches bare 'mango' (idx 3428, Native (Thangseng)-cited)."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical value, matches bare 'mango' (idx 3428, Native (Thangseng)-cited). REVERSED 2026-09-16 (Project Owner direct chat instruction, explicit: \"Te·gachu is right word, correct it across repo\"): this overturns the 2026-09-08 PROJECT_OWNER_DIRECTIVE_PROTOCOL.json decision (which had made te·ga·chu canonical) and the 2026-08-01 corpus audit before it. Per that same protocol's own rule, a current PO directive is not vetoed by older verified_high evidence but must be documented, not silently erased -- both sides of this back-and-forth are kept on file."
   },
   {
     "english": "the sweet potato",
