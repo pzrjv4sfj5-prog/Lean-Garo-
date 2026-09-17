@@ -207,8 +207,9 @@ function composeLargeBareNumber(n) {
 // above (that rule covers a bare digit fused to the classifier; this is
 // a compound tens+units word fused to the classifier -- a different
 // construction, not a contradiction of the earlier citation). Only
-// these three classifiers are confirmed for n>19; every other
-// classifier (bol/king/ge/gong/te/se/...) remains unconfirmed and
+// these classifiers were confirmed for n>19 as of 2026-09-16; see
+// 2026-09-18 addendum below for bol/king/ge/te (added) and gong
+// (reverted pending conflict resolution). jol/se remain unconfirmed and
 // classifierTail() returns null for them below rather than guess, so
 // translate() falls through to a weaker (but not actively wrong)
 // assembly path instead of shipping a fabricated/garbled compound form
@@ -227,11 +228,35 @@ function composeLargeBareNumber(n) {
 //                  20-99 case still had to be confirmed separately, per the
 //                  mang precedent where single-digit and compound behavior
 //                  are NOT guaranteed to match.
+//
+// *** UNRESOLVED CONFLICT (2026-09-18) ***
+// Counting_docx_thanseng.docx (Thangseng, direct doc upload) gives gong's
+// n=41 compound as "gongsotbrisa" -- NO dot -- directly contradicting the
+// 2026-09-17 "gong·sotbrisa" (WITH dot) citation above. Two purported
+// Thangseng sources disagree on the identical fact. gong is deliberately
+// left OUT of CONFIRMED_COMPOUND_CLASSIFIERS below (reverted from its
+// prior {dot:true} entry) until this is resolved directly with Thangseng
+// -- picking either source over the other here would be a guess dressed
+// up as a citation. classifierTail() falls through to its safe
+// null/unconfirmed path for gong n>19 in the meantime (same as jol/se),
+// not a silent re-guess of the old dot:true value.
+//
+// bol/king/ge/te 20-41 compounds: CONFIRMED (2026-09-18, same
+// Counting_docx_thanseng.docx). Verified mechanically against
+// number_engine.toGaroNumber() for n=20,21,24,30,31,40,41 -- table's
+// "bolkolgrik"/"kingkolgriksa"/"gesotbri"/"tesotbrisa" etc. equal
+// classifier + toGaroNumber(n) with spaces stripped and lowercased, same
+// shape as sak, no dot. jol and se are NOT in this table -- still fully
+// unconfirmed, classifierTail() still returns null (unresolved, not
+// guessed) for those two.
 const CONFIRMED_COMPOUND_CLASSIFIERS = {
   sak: { dot: false },
   mang: { dot: true },
   rong: { dot: false },
-  gong: { dot: true },
+  bol: { dot: false },
+  king: { dot: false },
+  ge: { dot: false },
+  te: { dot: false },
 };
 
 function classifierTail(classifier, n, spaced = false) {

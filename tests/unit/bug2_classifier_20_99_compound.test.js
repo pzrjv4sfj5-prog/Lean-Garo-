@@ -12,18 +12,22 @@ import { translate } from '../../src/translationEngine.js';
 // confirmed whether non-sak classifiers even use a spaced or fused
 // 20-99 form at all.
 //
-// Live Thangseng citations (relayed by Project Owner in chat) now
-// confirm four classifiers specifically -- and they do NOT all share
-// one shape:
+// Live Thangseng citations (relayed by Project Owner in chat, then
+// direct doc upload 2026-09-18) confirm several classifiers -- and they
+// do NOT all share one shape:
 //   sak (person): fused, no raka dot  -- "saksotbrisa"
 //   mang (animal): fused, WITH a raka dot -- "mang·sotbrisa"
 //   rong (fruit): fused, no raka dot  -- "rongkolgrikbonga"
-//   gong (money): fused, WITH a raka dot -- "gong·sotbrisa" (2026-09-17)
-// Every other classifier (bol/king/ge/jol/se/te/...) remains
-// unconfirmed for n>19; the fix makes those fall through to the
-// engine's existing morphology fallback ('[UNKNOWN] <word>') instead of
-// shipping a fabricated/garbled compound -- Bug 2 is only partially
-// closed by this fix, not fully generalized.
+//   bol/king/ge/te: fused, no raka dot (2026-09-18, Counting_docx_
+//     thanseng.docx) -- e.g. "bolsotbrisa", "tesotbrisa"
+// gong is UNRESOLVED, not confirmed: the 2026-09-17 chat-relayed
+// citation gave "gong·sotbrisa" (WITH dot), but the 2026-09-18 doc
+// upload gives "gongsotbrisa" (NO dot) for the same fact (41 coins).
+// Two purported Thangseng sources disagree -- gong deliberately falls
+// through to the morphology fallback below pending direct
+// clarification, rather than either source being picked as a guess.
+// jol/se remain fully unconfirmed (not in either source) and also fall
+// through to the same fallback.
 
 test('translate: sak 20-99 compound is fused with no raka dot, no space', async () => {
   const r = await translate('41 students');
@@ -43,21 +47,22 @@ test('translate: rong 20-99 compound is fused with no raka dot', async () => {
   assert.equal(r.garo, 'te·gatchu rongkolgrikbonga');
 });
 
-test('translate: gong 20-99 compound is fused WITH a raka dot', async () => {
+test('translate: gong 20-99 compound is UNRESOLVED (conflicting citations, see file header) -- falls through honestly instead of guessing either dotted or undotted form', async () => {
   const r = await translate('41 coins');
-  assert.equal(r.method, 'classifier');
-  assert.equal(r.garo, 'tangka bisil gong·sotbrisa');
+  assert.equal(r.method, 'morphology');
+  assert.doesNotMatch(r.garo, /gong[·.]?sotbrisa/i, `must not silently pick either conflicting citation, got: ${r.garo}`);
 });
 
-test('regression guard: an unconfirmed classifier at n>19 no longer ships a garbled fabricated form', async () => {
+test('regression guard: bol (now confirmed, 2026-09-18) no longer ships the old garbled fabricated form', async () => {
   const r = await translate('41 cars');
-  // Must not contain a mid-word capital letter or a spurious raka dot
-  // from the old bug -- either it honestly surfaces [UNKNOWN], or some
-  // future confirmed fix legitimately changes this; either way it must
-  // never again be "gari bolSotbri·sa".
+  // Old bug shape, must never reappear:
   assert.notEqual(r.garo, 'gari bolSotbri·sa');
   assert.doesNotMatch(r.garo, /[a-z][A-Z]/, `expected no mid-word capital letter, got: ${r.garo}`);
+  // Now confirmed (see bol_king_ge_te_compound.test.js): fused, no dot.
+  assert.equal(r.method, 'classifier');
+  assert.equal(r.garo, 'gari bolsotbrisa');
 });
+
 
 test('regression guard: sak/mang/rong counts under 20 are unaffected by the compound fix', async () => {
   const student = await translate('three students');
