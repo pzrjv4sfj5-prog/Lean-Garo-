@@ -4029,5 +4029,9 @@
   "who called? (phone call)": "questions",
   "who called? (summoned to a place)": "questions",
   "let's go to the shop": "phrases",
-  "let's go to school": "phrases"
+  "let's go to school": "phrases",
+  "mall": "general",
+  "restaurant": "general",
+  "let's go to the mall": "phrases",
+  "let's go to the restaurant": "phrases"
 }

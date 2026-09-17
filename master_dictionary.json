@@ -75955,5 +75955,41 @@
     "classifier": null,
     "notes": "DERIVED (schema note: repository-intelligence.js's VALID_CONFIDENCE_VALUES does not yet include a 'derived' tag despite .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3 introducing it -- tagged 'unverified' here as the honest fallback until Claude B adds the enum value; treat this note, not the confidence field, as the authoritative provenance marker) — Class B (mechanically derivable from established rules, per .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3/SS6), not itself separately native-confirmed. Composed from two independently VERIFIED/HIGH rules: RULE-007 (Hai hortative, 'na'=general/non-immediate urge) + RULE-044 (-chi movement-to locative, confirmed general across noun classes, NV-051) + RULE-007's own '-na' vs '-naha' immediacy distinction (NV-154). Model: 'let's go to the market'='Hai bajalchi re·na' (VERIFIED/HIGH, NV-060). the locative form 'to school'=skulchi is independently itself already VERIFIED/HIGH (NV-051/RULE-044), independent of bare 'school''s own unverified tag. Flag if contradicted by direct native evidence -- do not treat as equivalent to VERIFIED/HIGH.",
     "confidence": "unverified"
+  },
+  {
+    "english": "mall",
+    "garo": "Mall",
+    "category": "general",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (chat, 2026-09-18): loanword, no native Garo word exists for this concept; used as-is. Same pattern as TV/Phone (NV-049, NV-071). PROVENANCE: this is a Project Owner statement, not a direct/reported Thangseng quote -- kept as a separate provenance category per .ai/PROJECT_OWNER_AUTHORITY.md, not conflated with native evidence.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "restaurant",
+    "garo": "Restaurant",
+    "category": "general",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (chat, 2026-09-18): loanword, no native Garo word exists for this concept; used as-is. Same pattern as TV/Phone (NV-049, NV-071). PROVENANCE: this is a Project Owner statement, not a direct/reported Thangseng quote -- kept as a separate provenance category per .ai/PROJECT_OWNER_AUTHORITY.md, not conflated with native evidence.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "let's go to the mall",
+    "garo": "Hai mallchi re·na",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "DERIVED (schema note: repository-intelligence.js's VALID_CONFIDENCE_VALUES does not yet include a 'derived' tag despite .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3 introducing it -- tagged 'unverified' here as the honest fallback until Claude B adds the enum value; treat this note, not the confidence field, as the authoritative provenance marker) — Class B (mechanically derivable from established rules, per .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3/SS6), not itself separately native-confirmed. Composed from RULE-007 (Hai hortative, -na general-urge form) + RULE-044 (-chi movement-to locative, confirmed general across noun classes including loanwords -- cf. 'go to youtube'= iutubchi re·angbo). Modeled on 'let's go to the market'=Hai bajalchi re·na (VERIFIED/HIGH, NV-060). 'mall'=Mall is a Project-Owner-confirmed loanword (this session, see 'mall'/'restaurant' entries), not itself native-confirmed.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "let's go to the restaurant",
+    "garo": "Hai restaurantchi re·na",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "DERIVED (schema note: repository-intelligence.js's VALID_CONFIDENCE_VALUES does not yet include a 'derived' tag despite .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3 introducing it -- tagged 'unverified' here as the honest fallback until Claude B adds the enum value; treat this note, not the confidence field, as the authoritative provenance marker) — Class B (mechanically derivable from established rules, per .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3/SS6), not itself separately native-confirmed. Composed from RULE-007 (Hai hortative, -na general-urge form) + RULE-044 (-chi movement-to locative, confirmed general across noun classes including loanwords -- cf. 'go to youtube'= iutubchi re·angbo). Modeled on 'let's go to the market'=Hai bajalchi re·na (VERIFIED/HIGH, NV-060). 'restaurant'=Restaurant is a Project-Owner-confirmed loanword (this session, see 'mall'/'restaurant' entries), not itself native-confirmed.",
+    "confidence": "unverified"
   }
 ]
