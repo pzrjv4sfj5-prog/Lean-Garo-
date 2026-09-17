@@ -260,11 +260,11 @@ labeling gap in this rule's example, not a factual conflict.
 
 ---
 ### RULE-013 — Chim (Discontinued Past)
-**Description:** `chim` is a free-standing post-verbal word (not a fused suffix) marking "used to X" (with plain root) or "was X-ing, no longer" (with continuous form).
-**Examples:** `ka·achim` = "used to work"; `poraienga chim` = "was studying" (note: space).
-**Counterexamples:** Do not fuse as `poraiengachim` — confirmed wrong; the pastcont+chim construction is always two words.
+**Description:** `chim` is a free-standing post-verbal word (not a fused suffix) marking "used to X" (with plain root) or "was X-ing, no longer" (with continuous form). Plain-past+`chim` glosses as either "used to X" (dynamic verbs, e.g. `ka·achim` = "used to work") or "had X" (stative verbs, e.g. `dongachim` = "had [it]") — same construction, gloss selected by verb class, not two different suffixes.
+**Examples:** `ka·achim` = "used to work"; `dongachim` = "had [it]" (stative); `poraienga chim` = "was studying" (note: space).
+**Counterexamples:** Do not fuse as `poraiengachim` — confirmed wrong; the pastcont+chim construction is always two words. Do not treat the suffix as `achim` — the underlying morpheme is `chim`; the `a` belongs to the preceding past-tense root, not to `chim` itself.
 **Dependencies:** RULE-001, RULE-011 (continuous), RULE-015 exception.
-**Native Notes:** Source Rule 13. This was a real, fixed implementation bug (fused form produced incorrect output) — retained here as a explicit counterexample for future implementers.
+**Native Notes:** Source Rule 13, extended by direct Thangseng chat transcript (relayed by Tridip, 1/7/2026): confirms the suffix is `chim` (not `achim`), confirms the plain-past+`chim` vs continuous+`chim` split with the "engachim" continuous form, confirms the dynamic ("used to X") vs stative ("had X") gloss split via `anga ka·achim` ("I used to work") and `ango dongachim` ("I had it") examples, and confirms `chim` carries a discontinuity sense beyond plain pastness ("not just something that happened in the past but it is discontinued") — consistent with, and now directly evidencing, this rule's "Discontinued Past" name. This was also a real, fixed implementation bug (fused continuous form produced incorrect output) — retained here as an explicit counterexample for future implementers.
 **Validation Status:** Verified.
 **Confidence:** High.
 **Launch Priority:** P0.
