@@ -217,10 +217,21 @@ function composeLargeBareNumber(n) {
 //   41 students -> "Chattro saksotbrisa"      (sak: no gap, no dot)
 //   41 dogs     -> "Achak mang·sotbrisa"      (mang: no gap, WITH dot)
 //   25 mangoes  -> "te·gatchu rongkolgrikbonga" (rong: no gap, no dot)
+//   41 coins    -> "gong·sotbrisa" (2026-09-17, direct Thangseng citation
+//                  relayed by Project Owner via chat screenshot): fused,
+//                  WITH dot -- same shape as mang, not sak/rong. This is
+//                  consistent with (though not derivable from) gong's
+//                  already-confirmed single-digit rule (dotted: "gong·bonga"
+//                  for 5, "gong·sa" even after a large-number prefix in
+//                  "hajal chikking gong·sa" for 10,001) -- but the compound
+//                  20-99 case still had to be confirmed separately, per the
+//                  mang precedent where single-digit and compound behavior
+//                  are NOT guaranteed to match.
 const CONFIRMED_COMPOUND_CLASSIFIERS = {
   sak: { dot: false },
   mang: { dot: true },
   rong: { dot: false },
+  gong: { dot: true },
 };
 
 function classifierTail(classifier, n, spaced = false) {

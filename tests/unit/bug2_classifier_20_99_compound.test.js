@@ -13,12 +13,13 @@ import { translate } from '../../src/translationEngine.js';
 // 20-99 form at all.
 //
 // Live Thangseng citations (relayed by Project Owner in chat) now
-// confirm three classifiers specifically -- and they do NOT all share
+// confirm four classifiers specifically -- and they do NOT all share
 // one shape:
 //   sak (person): fused, no raka dot  -- "saksotbrisa"
 //   mang (animal): fused, WITH a raka dot -- "mang·sotbrisa"
 //   rong (fruit): fused, no raka dot  -- "rongkolgrikbonga"
-// Every other classifier (bol/king/ge/gong/te/se/...) remains
+//   gong (money): fused, WITH a raka dot -- "gong·sotbrisa" (2026-09-17)
+// Every other classifier (bol/king/ge/jol/se/te/...) remains
 // unconfirmed for n>19; the fix makes those fall through to the
 // engine's existing morphology fallback ('[UNKNOWN] <word>') instead of
 // shipping a fabricated/garbled compound -- Bug 2 is only partially
@@ -40,6 +41,12 @@ test('translate: rong 20-99 compound is fused with no raka dot', async () => {
   const r = await translate('25 mangoes');
   assert.equal(r.method, 'classifier');
   assert.equal(r.garo, 'te·gatchu rongkolgrikbonga');
+});
+
+test('translate: gong 20-99 compound is fused WITH a raka dot', async () => {
+  const r = await translate('41 coins');
+  assert.equal(r.method, 'classifier');
+  assert.equal(r.garo, 'tangka bisil gong·sotbrisa');
 });
 
 test('regression guard: an unconfirmed classifier at n>19 no longer ships a garbled fabricated form', async () => {
