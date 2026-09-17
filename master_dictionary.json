@@ -128,8 +128,8 @@
     "english": "mango",
     "garo": "Te·gachu",
     "category": "general",
-    "notes": "VERIFIED/HIGH — Project Owner direct chat instruction (2026-09-16, explicit: \"Te·gachu is right word, correct it across repo\"). Was superseded 2026-08-01 (corpus-internal audit, Claude A) in favor of 'te·ga·chu', then re-affirmed superseded 2026-09-08 (PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2) — this 2026-09-16 directive reverses both. Per that same protocol's own rule, a current PO directive is not vetoed by older verified_high evidence but must be documented, not silently erased -- both sides of this back-and-forth are kept on file (see the sibling 'Mango'->te·ga·chu row, now superseded).",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — 2026-09-16, Claude B: demoted again. Was VERIFIED/HIGH per an Owner direct-chat instruction earlier the same day (\"Te·gachu is right word, correct it across repo\", no Thangseng reference given) that itself reversed the 2026-09-08 PROJECT_OWNER_DIRECTIVE_PROTOCOL.json decision and the 2026-08-01 corpus audit before it. Superseded again the same day by a live Thangseng citation relayed by the Project Owner in chat: \"te·gatchu final answer\" — which independently matches the pre-existing NV-048/RULE-038 cross-reference at the sibling 'Mango'->te·ga·chu row (that row's own note already identified its intended value as \"te·gatchu\" from Thangseng's original rong-classifier example, despite the stored string itself having already drifted to 'te·ga·chu'). See the new 'mango'->te·gatchu row for the current canonical form.",
+    "confidence": "superseded"
   },
   {
     "english": "lychee",
@@ -13368,8 +13368,8 @@
     "english": "the mango",
     "garo": "Te·gachu",
     "category": "general",
-    "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner direct chat instruction (2026-09-16, explicit: \"Te·gachu is right word, correct it across repo\"). Was superseded 2026-09-08 (PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2, which had made 'te·ga·chu' canonical for 'the mango'); this directive reverses that. Per that same protocol's own rule, a current PO directive is not vetoed by older verified_high evidence but must be documented, not silently erased -- both sides of this back-and-forth are kept on file (see the sibling 'the mango'->te·ga·chu row, now superseded)."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-09-16, Claude B: demoted again, same reasoning as the sibling 'mango'->Te·gachu row. Live Thangseng citation relayed by the Project Owner the same day (\"te·gatchu final answer\") supersedes the earlier same-day, non-Thangseng-sourced Owner chat instruction. See the new 'the mango'->te·gatchu row for the current canonical form."
   },
   {
     "english": "the lychee",
@@ -19418,13 +19418,13 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Mango",
-    "garo": "te·ga·chu",
+    "english": "mango",
+    "garo": "te·gatchu",
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH Cross-ref 2026-08-01: this is the te·gatchu from Thangseng's rong-classifier example (NV-048/RULE-038) — now identified as \"mango\", not a gloss-unknown fruit. See NV-049. REVERSED 2026-09-16 (Project Owner direct chat instruction, explicit: \"Te·gachu is right word, correct it across repo\"): this overturns the 2026-09-08 PROJECT_OWNER_DIRECTIVE_PROTOCOL.json decision (which had made te·ga·chu canonical) and the 2026-08-01 corpus audit before it. Per that same protocol's own rule, a current PO directive is not vetoed by older verified_high evidence but must be documented, not silently erased -- both sides of this back-and-forth are kept on file.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — Native (Thangseng)-cited, relayed by Project Owner in chat 2026-09-16, explicit final answer: \"te·gatchu\". Matches the sibling 'Mango'->te·ga·chu row's own NV-048/RULE-038 cross-reference, which already identified its intended value as \"te·gatchu\" from Thangseng's original rong-classifier example. This is the canonical form; both 'Te·gachu' (unsourced same-day Owner chat instruction) and 'te·ga·chu' (2026-08-01 corpus audit / 2026-09-08 directive) are superseded.",
+    "confidence": "verified_high"
   },
   {
     "english": "Market",
@@ -75020,10 +75020,10 @@
   },
   {
     "english": "the mango",
-    "garo": "te·ga·chu",
+    "garo": "te·gatchu",
     "category": "food",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2): canonical value, matches bare 'mango' (idx 3428, Native (Thangseng)-cited). REVERSED 2026-09-16 (Project Owner direct chat instruction, explicit: \"Te·gachu is right word, correct it across repo\"): this overturns the 2026-09-08 PROJECT_OWNER_DIRECTIVE_PROTOCOL.json decision (which had made te·ga·chu canonical) and the 2026-08-01 corpus audit before it. Per that same protocol's own rule, a current PO directive is not vetoed by older verified_high evidence but must be documented, not silently erased -- both sides of this back-and-forth are kept on file."
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Native (Thangseng)-cited, relayed by Project Owner in chat 2026-09-16, explicit final answer: \"te·gatchu\". Matches bare 'mango' (see that row's notes for full provenance). Canonical; 'Te·gachu' and 'te·ga·chu' are both superseded."
   },
   {
     "english": "the sweet potato",

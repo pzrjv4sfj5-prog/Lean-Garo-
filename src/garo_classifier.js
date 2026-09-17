@@ -198,12 +198,41 @@ function composeLargeBareNumber(n) {
 // remainder, e.g. "999 students" = ritcha sku + this tail for n=99) --
 // previously only the former called the sak branch, so "999/141 students"
 // still shipped the old dot-joined form even after the <100 fix.
+// 20-99 compound surface forms, confirmed per-classifier (2026-09-16,
+// live Thangseng citations relayed by Project Owner in chat). This is
+// NOT a general rule that mechanically generalizes from one classifier
+// to the rest -- the shape differs by classifier: sak and rong fuse the
+// compound with no raka dot; mang fuses WITH a raka dot before the
+// compound, which is a DIFFERENT fact from mang's own n<20 no-dot rule
+// above (that rule covers a bare digit fused to the classifier; this is
+// a compound tens+units word fused to the classifier -- a different
+// construction, not a contradiction of the earlier citation). Only
+// these three classifiers are confirmed for n>19; every other
+// classifier (bol/king/ge/gong/te/se/...) remains unconfirmed and
+// classifierTail() returns null for them below rather than guess, so
+// translate() falls through to a weaker (but not actively wrong)
+// assembly path instead of shipping a fabricated/garbled compound form
+// -- this was Bug 2, and it is only partially closed by this fix.
+// Confirmed citations, live:
+//   41 students -> "Chattro saksotbrisa"      (sak: no gap, no dot)
+//   41 dogs     -> "Achak mang·sotbrisa"      (mang: no gap, WITH dot)
+//   25 mangoes  -> "te·gatchu rongkolgrikbonga" (rong: no gap, no dot)
+const CONFIRMED_COMPOUND_CLASSIFIERS = {
+  sak: { dot: false },
+  mang: { dot: true },
+  rong: { dot: false },
+};
+
 function classifierTail(classifier, n, spaced = false) {
-  if (classifier === 'sak' && n > 19) {
-    const raw = toGaroNumberImported(n); // e.g. "Sotbri sa" (n=41)
+  if (n > 19 && CONFIRMED_COMPOUND_CLASSIFIERS[classifier]) {
+    const raw = toGaroNumberImported(n); // e.g. "Sotbri Sa" (n=41)
     if (!raw) return null;
-    return `${classifier}${raw.charAt(0).toLowerCase()}${raw.slice(1)}`;
+    const fused = raw.replace(/\s+/g, '').toLowerCase();
+    return CONFIRMED_COMPOUND_CLASSIFIERS[classifier].dot
+      ? `${classifier}·${fused}`
+      : `${classifier}${fused}`;
   }
+  if (n > 19) return null; // unconfirmed classifier for 20-99 -- don't guess
   const suffix = getClassifierSuffix(n);
   if (suffix === null) return null;
   if (spaced) return `${classifier} ${suffix}`;

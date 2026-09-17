@@ -44,10 +44,13 @@ test('regular -s plurals are unaffected by the -es fix', () => {
 test('translate: "-es" plural counted nouns now compose via the classifier engine, not sov-assembly', async () => {
   const mangoes = await translate('seven mangoes');
   assert.equal(mangoes.method, 'classifier');
-  // 'te·ga·chu' -> 'Te·gachu' 2026-09-16 (Project Owner directive, reversing
-  // the 2026-09-08 PROJECT_OWNER_DIRECTIVE_PROTOCOL.json decision) — see
-  // master_dictionary.json 'mango'/'the mango' rows.
-  assert.equal(mangoes.garo, 'te·gachu rongsni');
+  // Canonical mango spelling as of 2026-09-16: 'te·gatchu' (live Thangseng
+  // citation relayed by Project Owner in chat, matching the sibling
+  // 'Mango'->te·ga·chu row's own NV-048/RULE-038 cross-reference). This
+  // supersedes a same-day, non-Thangseng-sourced 'Te·gachu' Owner chat
+  // instruction that briefly won out before it — see master_dictionary.json
+  // 'mango'/'the mango' rows for full provenance.
+  assert.equal(mangoes.garo, 'te·gatchu rongsni');
 
   const boxes = await translate('two boxes');
   assert.equal(boxes.method, 'classifier');

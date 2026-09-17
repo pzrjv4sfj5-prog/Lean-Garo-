@@ -868,7 +868,13 @@ test('RC-CANDIDATE-031: "twenty one apples" translates using the correct compile
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('twenty one apples');
   assert.equal(r.method, 'classifier');
-  assert.ok(r.garo.includes('Kolgrik·sa'), `expected 21 (Kolgrik·sa) in output, got: ${r.garo}`);
+  // Format updated 2026-09-16 (Claude B, confirmed Thangseng citation via
+  // Project Owner relay): rong's 20-99 compound is fused, all-lowercase,
+  // no raka dot ('rongkolgriksa', not the old placeholder-era
+  // 'Kolgrik·sa'). This assertion cares about count=21 vs 20, not the
+  // exact surface form -- 'kolgriksa' (lowercase, the '21' portion of the
+  // compound) is the marker that confirms 21 was used.
+  assert.ok(r.garo.includes('kolgriksa'), `expected 21 (kolgriksa) in output, got: ${r.garo}`);
 });
 
 test('RC-CANDIDATE-031: a plain single-number phrase ("twenty apples") is unaffected', async () => {
