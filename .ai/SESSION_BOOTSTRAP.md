@@ -1,5 +1,34 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-16 by Claude D
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-16 by Claude A
+(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260913.md. Full migration doc:
+docs/CLAUDE_A_SESSION_MIGRATION_20260916.md — READ IT FIRST, this line is just
+a pointer. Summary: 3 new interrogative sentences (medicine=drink not
+take/eat: Na·a sam ringahama?/Badia samko ringa na·ara?; who called? two-sense
+split: Sawa ka·ata?/Sawa okamata?, Thangseng direct citation). Drafted but not
+yet sent a Thangseng relay batch on wh-question suffix patterns
+(docs/THANGSENG_RELAY_QUESTION_20260916.md) — surveyed all 184 question-mark
+sentences in master_dictionary.json, found 7 distinct verb-endings with no
+single governing rule. Reversed the mango canonical spelling back to
+`Te·gachu` per fresh Project Owner directive (overturns the 2026-09-08
+PROJECT_OWNER_DIRECTIVE_PROTOCOL.json decision below — both directives kept on
+file per that protocol's own documentation rule; if you're reading the
+`mango->te·ga·chu` line in the 2026-09-08 entry further down, that's now
+superseded, Te·gachu is current). Found and fixed a live compile-time bug
+while doing that promotion: setting `confidence: verified_high` alone doesn't
+un-suppress a row if its `notes` field's first word is still literally
+"SUPERSEDED" — prepare-data.js's notesDeclareSuperseded regex reads that
+independently and will silently drop the row from the dictionary regardless
+of the confidence field; the notes text has to actually stop starting with
+that word. Closed 3 open items via git archaeology + direct Thangseng/Owner
+confirmation with NO data change needed (already correct since 2026-08-28/30):
+`only`=mangmang, the tang-/dong- live/living sense split, and the go
+paradigm — also fixed a citation-hygiene defect in the unrelated Kam·kam=
+"only" superseded row's note (false premise, not just stale). Gate green
+throughout: 8552/8552 dictionary, 9/9 grammatical corrections, 0 new
+repository-intelligence violations, 407/407 unit tests, runtime-error-
+sweep.mjs 0 errors/15262 calls. Two clean push-collision rebases this
+session, no lasting conflicts. No action needed from B/D.)
+Prior: 2026-09-16 by Claude D
 (long session, Owner-flagged for handoff. Full migration doc:
 docs/CLAUDE_D_MIGRATION_20260916.md — READ IT FIRST, this line is just a
 pointer. Summary: ran 7 Owner-confirmed deletion batches (544 rows,

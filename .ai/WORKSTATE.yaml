@@ -5677,3 +5677,37 @@ claude_d:
     generic placeholder answers, structurally similar to everything else this session found but not yet
     investigated). Read the migration doc in full before acting -- this WORKSTATE entry is a pointer,
     not a substitute.'
+  migration_doc_20260916_claudeA: 'Claude A, session close 2026-09-16 (resumed from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260913.md). Full detail:
+    docs/CLAUDE_A_SESSION_MIGRATION_20260916.md, this is a pointer only. Covers: 3
+    new interrogative sentences (did you drink/take medicine=Na·a sam ringahama?,
+    which medicine did you take=Badia samko ringa na·ara?), who called? two-sense
+    split (phone=Sawa ka·ata?, summon=Sawa okamata?, Thangseng direct citation), a
+    wh-question suffix survey (7 distinct patterns found across 184 question
+    sentences, no single rule -- relay batch drafted, not yet sent:
+    docs/THANGSENG_RELAY_QUESTION_20260916.md), and the mango canonical-spelling
+    reversal (Te·gachu, per Project Owner directive, overturning the 2026-09-08
+    PROJECT_OWNER_DIRECTIVE_PROTOCOL.json decision -- both sides documented in
+    notes per that protocol''s own rule). Found and fixed a live compile-time bug
+    along the way: promoting a row via confidence field alone isn''t sufficient if
+    its notes field''s first word is still literally "SUPERSEDED" --
+    notesDeclareSuperseded regex reads that independently, so mango silently
+    dropped out of the dictionary entirely until the notes prefix was also fixed.
+    Closed 3 items via git archaeology + Owner confirmation with NO data change
+    needed (already correct since 2026-08-28/30, matching Owner''s citations
+    exactly): only=mangmang, tang-/dong- live/living sense split, go paradigm.
+    Fixed a citation-hygiene defect in the Kam·kam="only" superseded note (false
+    premise, not just stale). Closed the will-not-go/will-not-be-going tension
+    (Thangseng confirmed the existing re·jawa/re·angjawa split was already
+    correct, no change). Also independently confirmed Claude B''s object-final
+    punctuation fix (grammarEngine.js:584, commit 40a2266) live before building on
+    top of it -- -hama is the Owner-cited correct suffix, not -gama, closing that
+    open item without needing to ask Thangseng. Two push collisions handled
+    cleanly (rebase, rebuild, re-gate, push): once against Claude B''s punctuation
+    fix, once against Claude D''s stale-row tagging + another session''s
+    vegetable/teacher/rice closes (compiled_dict.json conflict only, generated
+    artifact, resolved by regenerating post-merge). Gate green throughout: final
+    state 8552/8552 dictionary entries, 9/9 grammatical corrections, 0 new
+    repository-intelligence violations, 407/407 unit tests, runtime-error-sweep.mjs
+    0 errors across 15262 translate() calls. HEAD 4ed4e0c, verified == origin/main,
+    clean tree. No action needed from B/D from this session''s data-only work.'
