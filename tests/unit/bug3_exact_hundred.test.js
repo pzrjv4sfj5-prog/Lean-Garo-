@@ -5,20 +5,28 @@ import { toGaroNumber } from '../../src/number_engine.js';
 import { buildClassifierPhrase } from '../../src/garo_classifier.js';
 
 // Bug 3 fix (2026-09-18, direct Thangseng citation, relayed by Project
-// Owner: "100 = ritcha, 101 = ritchasa, 100 dogs = achak mangritcha").
+// Owner: "100 dogs = achak mangritcha"; corrected 2026-09-19 for the
+// bare-number word via a published Garo dictionary photo: "Ritcha, adj.
+// A hundred" / "Ritchasa, adj. One hundred" as distinct headwords).
 // Previously buildLargeClassifierPhrase's remHundred===0 branch guessed
 // that an exact multiple of 100/1000 needs a spurious classifier+"sa"
 // filler (as if secretly n+1) -- uncited, and it caused n=100 and n=101
 // to render identically for every classifier. The citation shows the
-// real mechanism: classifier fuses directly onto the quantifier word
-// itself with no filler and no raka dot, mirroring the already-
-// confirmed round-tens rule one order of magnitude up. Same root-cause
-// fix corrected number_engine.toGaroNumber's bare (no classifier) form,
-// which had the identical uncited "ritchasa"=100 guess.
+// real mechanism: classifier fuses directly onto the generic hundred
+// root ("Ritcha") with no filler and no raka dot, mirroring the
+// already-confirmed round-tens rule one order of magnitude up. The
+// bare (no-classifier) number word is a separate, distinct headword
+// ("Ritchasa" = "one hundred" specifically) per the dictionary --
+// my first pass at this wrongly conflated the two.
 
-test('bare number words: 100 vs 101 no longer collide, match direct citation', () => {
-  assert.equal(toGaroNumber(100), 'Ritcha');
-  assert.equal(toGaroNumber(101), 'Ritchasa');
+test('bare number words: 100 vs 101 no longer collide, match published dictionary + direct correction', () => {
+  // Corrected 2026-09-19: published dictionary shows "Ritcha"="a
+  // hundred" and "Ritchasa"="one hundred" as distinct headwords -- the
+  // bare number 100 is "Ritchasa" (not "Ritcha", which is the generic
+  // root used compositionally, e.g. inside classifier attachment or
+  // multi-hundred prefixes). 101 adds a further fused "sa" on top.
+  assert.equal(toGaroNumber(100), 'Ritchasa');
+  assert.equal(toGaroNumber(101), 'Ritchasasa');
 });
 
 test('classifier composition: 100 vs 101 no longer collide, mang matches direct citation exactly', () => {

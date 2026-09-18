@@ -59,17 +59,24 @@ export function toGaroNumber(n) {
     const hundreds = Math.floor(n / 100);
     const remainder = n % 100;
 
-    // Fixed 2026-09-18 (direct Thangseng citation: 100 = "ritcha",
-    // 101 = "ritchasa"). Previously this produced "ritchasa" for 100
-    // itself (uncited, no confirmed source) and "ritchasa sa" for 101
-    // (space-joined) -- both wrong per the citation: the bare hundred
-    // word is just "Ritcha" alone, and any remainder fuses directly
-    // onto it with no space, same fuse-no-gap mechanism used for
-    // classifier compounds elsewhere in this codebase. Only n=101 is a
-    // direct citation for the remainder-fusion behavior; extending it
-    // to remainder values 2-99 is a mechanical generalization of that
-    // same fuse mechanism, not independently confirmed for each value.
-    let result = hundreds === 1 ? "Ritcha" : `${toGaroNumber(hundreds)} Ritcha`;
+    // Corrected 2026-09-19 (published Garo dictionary, photographed
+    // page: "Ritcha, adj. A hundred" / "Ritchasa, adj. One hundred" --
+    // two distinct headwords). My 2026-09-18 fix wrongly conflated
+    // this bare (no-classifier) number word with the classifier-
+    // composition example ("achak mangritcha") and set this to
+    // "Ritcha" -- that classifier example is still correct (it fuses
+    // onto the generic root "Ritcha", matching its dictionary sense
+    // "a hundred"), but the bare standalone number 100 is its own
+    // headword, "Ritchasa" ("one hundred"), distinct from the generic
+    // root. Confirmed instruction for the remainder: 101 = 100's word
+    // + a further fused "sa" ("Ritchasasa"), same fuse-no-gap
+    // mechanism as before, just building on the correct 100 base.
+    // hundreds>1 (200, 300...) deliberately still composes with the
+    // generic "Ritcha" root, not "Ritchasa" -- unconfirmed either way,
+    // kept as the more linguistically consistent reading (Ritchasa
+    // already means "one hundred", so "two Ritchasa" would double up
+    // the "one"), not re-derived from new data.
+    let result = hundreds === 1 ? "Ritchasa" : `${toGaroNumber(hundreds)} Ritcha`;
 
     if (remainder > 0) {
       result += toGaroNumber(remainder).replace(/\s+/g, '').toLowerCase();
