@@ -10,7 +10,9 @@ import { buildClassifierPhrase, getClassifier, countNoun } from '../../src/garo_
 // at n=1: "jolsa", not "jol·sa". The bamboo/wa·a -> jol mapping already
 // existed uncited in CLASSIFIER_MAP before this photo; it corroborates
 // rather than introduces that mapping. Only n=1 is directly confirmed
-// -- the 20-99 compound shape remains unconfirmed, same as 'se'.
+// -- the 20-99 compound shape is still uncited (same as 'se'), but as
+// of 2026-09-19 ships an Owner-approved UNVERIFIED guess rather than
+// null; see jol_compound_unverified_guess.test.js for that path.
 
 test('jol: bamboo classifier, confirmed no raka dot at n=1', () => {
   assert.equal(getClassifier('bamboo'), 'jol');
@@ -32,8 +34,8 @@ test('translate: "one bamboo" surfaces the cited jolsa form end-to-end', async (
   assert.equal(r.garo, 'wa· jolsa');
 });
 
-test('jol 20-99 compound remains unconfirmed -- not part of this citation, no guess', () => {
-  assert.equal(buildClassifierPhrase('jol', 25), null);
+test('jol 20-99 compound: not part of this citation -- now ships an Owner-approved UNVERIFIED guess instead of null, see jol_compound_unverified_guess.test.js', () => {
+  assert.equal(buildClassifierPhrase('jol', 25), 'jolkolgrikbonga');
 });
 
 test('se remains fully unconfirmed at n>19 -- unaffected by the jol citation (n<20 still ships the flagged default-pattern guess, unchanged, see UNIT_WORDS/CLASSIFIER_MAP comment)', () => {

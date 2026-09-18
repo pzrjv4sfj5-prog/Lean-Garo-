@@ -42,8 +42,7 @@ test('te (houses) 20-99 compound: fused, no dot -- note this differs from te\'s 
   assert.equal(buildClassifierPhrase('te', 41), 'tesotbrisa');
 });
 
-test('jol/se remain unconfirmed for 20-99 -- no guess, returns null; gong now resolved (see bug2 test file), no longer null', () => {
-  assert.equal(buildClassifierPhrase('jol', 25), null);
+test('se remains unconfirmed for 20-99 -- no guess, returns null; gong now resolved (see bug2 test file), no longer null; jol now ships an Owner-approved guess (see jol_compound_unverified_guess.test.js), no longer null', () => {
   assert.equal(buildClassifierPhrase('se', 25), null);
   assert.equal(buildClassifierPhrase('gong', 25), 'gong·kolgrikbonga'); // corrected 2026-09-18, WITH dot -- see garo_classifier.js comment
 });

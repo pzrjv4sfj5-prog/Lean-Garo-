@@ -48,7 +48,7 @@ const CONFIRMED_LOANWORDS = new Set(CONFIRMED_LOANWORDS_RAW.words.map(w => w.toL
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
-import { countNoun, countNounWithClassifier, parseCountingPhrase } from './garo_classifier.js';
+import { countNoun, countNounWithClassifier, parseCountingPhrase, getClassifier, isUnverifiedCompoundGuess } from './garo_classifier.js';
 import { toGaroNumber as toGaroNumberBare } from './number_engine.js';
 import { corrections, normalizeEntry, EN_INDEX, lookupGaro } from './lookupEngine.js';
 import { applyNegation } from './morphologyEngine.js';
@@ -318,10 +318,24 @@ export async function translate(input) {
       // QUESTION_THANGSENG_20PLUS_COUNTING.md). Falling through to the
       // rest of the cascade instead of returning a fabricated/wrong answer.
       if (classifierResult !== null) {
+        // jol's 20-99 compound shape (and any future addition to
+        // garo_classifier.js's UNVERIFIED_COMPOUND_CLASSIFIERS_PENDING_
+        // EVIDENCE map) ships a pattern-based guess, not a citation --
+        // see that map's comment. Tag it distinctly (method suffix +
+        // confidence dropped to the same tier as sov-assembly, the
+        // engine's own "reasonable but not classifier-grade" fallback)
+        // so it is never indistinguishable from a cited compound
+        // classifier result in test output, logs, or the API surface.
+        // Unit-measured counts (kg/litre/plate) never route through the
+        // guessed map -- jol is a per-noun classifier (bamboo), not a
+        // unit word -- so the guess check only applies to the plain
+        // noun-classifier branch.
+        const isGuess = !countPhrase.unit
+          && isUnverifiedCompoundGuess(getClassifier(resolvedNoun), countPhrase.count);
         return {
           garo: classifierResult,
-          method: 'classifier',
-          confidence: 0.96,
+          method: isGuess ? 'classifier-unverified-guess' : 'classifier',
+          confidence: isGuess ? 0.75 : 0.96,
         };
       }
     }

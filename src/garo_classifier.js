@@ -301,6 +301,35 @@ const CONFIRMED_COMPOUND_CLASSIFIERS = {
   gong: { dot: true },
 };
 
+// *** UNVERIFIED GUESS -- Project Owner explicit override, 2026-09-19 ***
+// No citation exists for jol's 20-99 compound shape. jol was NOT in the
+// Counting_docx_thanseng.docx table that confirmed bol/king/ge/te/gong
+// (only jol's n=1 form is cited, from a separate dictionary-entry photo
+// -- see the CLASSIFIER_MAP comment above). This entry ships a
+// pattern-based guess (fused, no dot -- matching sak/rong/bol/king/ge/te's
+// majority shape) ONLY because the Project Owner explicitly instructed
+// it after being shown the standing rule against exactly this move
+// ("apply the logic" from other confirmed classifiers) -- see the
+// migration docs' repeated §4.1: mang and gong BOTH broke this same
+// majority-pattern guess once each, so this is a known-risky move being
+// taken deliberately, not a citation being treated as one.
+//
+// Kept in a SEPARATE map from CONFIRMED_COMPOUND_CLASSIFIERS so it can
+// never be mistaken for a citation, and so it's trivial to rip out the
+// moment real evidence arrives (positive or negative) -- just delete
+// the jol line here and move it into CONFIRMED_COMPOUND_CLASSIFIERS
+// once cited, or delete it entirely if a citation contradicts the
+// guess. classifierTail() below returns a { guess: true } marker
+// alongside the string for anything resolved from this map, which
+// translationEngine.js uses to cap the runtime confidence well below
+// the confirmed-classifier path (see its own comment at the call site)
+// and to tag the result's method distinctly, so a guessed jol count is
+// never indistinguishable from a cited one in test output, logs, or the
+// API surface.
+const UNVERIFIED_COMPOUND_CLASSIFIERS_PENDING_EVIDENCE = {
+  jol: { dot: false },
+};
+
 function classifierTail(classifier, n, spaced = false) {
   if (n > 19 && CONFIRMED_COMPOUND_CLASSIFIERS[classifier]) {
     const raw = toGaroNumberImported(n); // e.g. "Sotbri Sa" (n=41)
@@ -320,11 +349,35 @@ function classifierTail(classifier, n, spaced = false) {
       ? `${classifier}·${fused}`
       : `${classifier}${fused}`;
   }
+  if (n > 19 && UNVERIFIED_COMPOUND_CLASSIFIERS_PENDING_EVIDENCE[classifier]) {
+    // Owner-approved guess -- see the map's comment above. Deliberately
+    // duplicates (rather than shares code with) the CONFIRMED branch: a
+    // future edit to the confirmed path must not silently also change
+    // the guessed one, and vice versa.
+    const raw = toGaroNumberImported(n);
+    if (!raw) return null;
+    const fused = raw.replace(/\s+/g, '').toLowerCase();
+    if (spaced) return `${classifier} ${fused}`;
+    return UNVERIFIED_COMPOUND_CLASSIFIERS_PENDING_EVIDENCE[classifier].dot
+      ? `${classifier}·${fused}`
+      : `${classifier}${fused}`;
+  }
   if (n > 19) return null; // unconfirmed classifier for 20-99 -- don't guess
   const suffix = getClassifierSuffix(n);
   if (suffix === null) return null;
   if (spaced) return `${classifier} ${suffix}`;
   return RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·${suffix}` : `${classifier}${suffix}`;
+}
+
+// Exported so translationEngine.js can tell a cited compound-classifier
+// result apart from an Owner-approved guess and cap confidence/tag the
+// method accordingly, without classifierTail()'s return value itself
+// having to stop being a plain string everywhere else it's used.
+export function isUnverifiedCompoundGuess(classifier, count) {
+  const n = parseInt(count);
+  return n > 19
+    && !CONFIRMED_COMPOUND_CLASSIFIERS[classifier]
+    && !!UNVERIFIED_COMPOUND_CLASSIFIERS_PENDING_EVIDENCE[classifier];
 }
 
 function buildLargeClassifierPhrase(classifier, n, spaced = false) {
