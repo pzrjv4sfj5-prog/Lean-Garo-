@@ -139,7 +139,14 @@ function getClassifierSuffix(count) {
 // still expect it (both flagged in chat, not touched in this commit --
 // that's a large data-correction pass, outside a mechanical engine
 // fix, needs its own dedicated audit).
-const RAKA_CLASSIFIERS = new Set(['ge', 'gong', 'te', 'king']);
+// king removed 2026-09-19 (direct Owner directive: "king doesn't use
+// rakka") -- resolves the conflict flagged 2026-09-18 between this
+// set's prior 'king' membership (sourced to commit 3ba97c3, itself
+// only citing "per Claude A 8a12eca resolution" -- a commit whose own
+// diff never actually mentions king) and the docx table's consistent
+// undotted "Kingsa" across 15 rows. The docx reading wins outright now
+// by direct instruction, not inference.
+const RAKA_CLASSIFIERS = new Set(['ge', 'gong', 'te']);
 
 // Owner-confirmed 2026-09-13 (in-chat, live conversation): "beer rong sa"
 // is correct with a literal space before the number -- NOT the fused
@@ -229,17 +236,18 @@ function composeLargeBareNumber(n) {
 //                  mang precedent where single-digit and compound behavior
 //                  are NOT guaranteed to match.
 //
-// *** UNRESOLVED CONFLICT (2026-09-18) ***
-// Counting_docx_thanseng.docx (Thangseng, direct doc upload) gives gong's
-// n=41 compound as "gongsotbrisa" -- NO dot -- directly contradicting the
-// 2026-09-17 "gong·sotbrisa" (WITH dot) citation above. Two purported
-// Thangseng sources disagree on the identical fact. gong is deliberately
-// left OUT of CONFIRMED_COMPOUND_CLASSIFIERS below (reverted from its
-// prior {dot:true} entry) until this is resolved directly with Thangseng
-// -- picking either source over the other here would be a guess dressed
-// up as a citation. classifierTail() falls through to its safe
-// null/unconfirmed path for gong n>19 in the meantime (same as jol/se),
-// not a silent re-guess of the old dot:true value.
+// *** RESOLVED 2026-09-19 (Owner explicit decision, NOT a new Thangseng
+// citation -- flagged distinctly on purpose) ***
+// Owner was shown both conflicting sources plus a pattern breakdown
+// (5 of 6 classifiers with a known n<20-AND-compound pair use no dot
+// on the compound regardless of their n<20 dot status; mang is the
+// lone with-dot exception) and directed: gong n>19 = no dot, i.e. the
+// 2026-09-18 docx ("gongsotbrisa") is treated as correct over the
+// 2026-09-17 chat-screenshot citation ("gong·sotbrisa"). This is a
+// judgment call on which of two conflicting sources to trust, made by
+// the Owner with the tradeoffs in front of them -- not independently
+// re-confirmed by Thangseng. If a future direct citation contradicts
+// it, that citation wins.
 //
 // bol/king/ge/te 20-41 compounds: CONFIRMED (2026-09-18, same
 // Counting_docx_thanseng.docx). Verified mechanically against
@@ -257,6 +265,7 @@ const CONFIRMED_COMPOUND_CLASSIFIERS = {
   king: { dot: false },
   ge: { dot: false },
   te: { dot: false },
+  gong: { dot: false },
 };
 
 function classifierTail(classifier, n, spaced = false) {

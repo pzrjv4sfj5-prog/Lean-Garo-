@@ -31,8 +31,8 @@ test('translate: fallback composition (no exact-phrase entry) surfaces the no-do
   assert.equal(r.garo, 'achak mangdok');
 });
 
-test('other raka classifiers (king, ge, gong) are unaffected by the mang fix', () => {
-  assert.equal(countNoun('ki·tap', 3, 'book'), 'ki·tap king·gittam');
+test('other raka classifiers unaffected by the mang fix; king updated 2026-09-19 (no longer raka-carrying, see garo_classifier.js RAKA_CLASSIFIERS comment)', () => {
+  assert.equal(countNoun('ki·tap', 3, 'book'), 'ki·tap kinggittam');
   assert.equal(countNoun('tangka', 5, 'coin'), 'tangka gong·bonga');
   assert.equal(countNoun('kolom', 2, 'pen'), 'kolom ge·gni');
 });

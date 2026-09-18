@@ -56,12 +56,12 @@ test('regression: existing classifier roots unaffected by rong addition', () => 
   // composition fallback (for phrases with no exact dictionary match)
   // now matches the already-corrected dictionary data (no raka dot).
   assert.equal(countNoun('mande', 1, 'person'), 'mande saksa');
-  // Stale value fixed 2026-09-12 (Claude A): 'king' was added to
-  // RAKA_CLASSIFIERS in commit 3ba97c3 (direct Owner fix), matching the
-  // native-confirmed dotted form already in master_dictionary.json
-  // ("ki·tap king·sa"). This test's old no-dot expectation was written
-  // before that fix and never updated.
-  assert.equal(countNoun('ki·tap', 3, 'book'), 'ki·tap king·gittam');
+  // king's dot status flip-flopped: added 2026-09-12 (commit 3ba97c3,
+  // citing a "Claude A 8a12eca resolution" that never actually
+  // mentioned king), then removed again 2026-09-19 (direct Owner
+  // directive: "king doesn't use rakka" -- see garo_classifier.js
+  // RAKA_CLASSIFIERS comment for the full conflict this resolves).
+  assert.equal(countNoun('ki·tap', 3, 'book'), 'ki·tap kinggittam');
   assert.equal(countNoun('tangka', 5, 'coin'), 'tangka gong·bonga');
   assert.equal(countNoun('do·a', 10, 'bird'), 'do·a mangchiking');
 });

@@ -40,8 +40,8 @@ test('te (houses) 20-99 compound: fused, no dot -- note this differs from te\'s 
   assert.equal(buildClassifierPhrase('te', 41), 'tesotbrisa');
 });
 
-test('jol/se/gong remain unconfirmed for 20-99 -- no guess, returns null', () => {
+test('jol/se remain unconfirmed for 20-99 -- no guess, returns null; gong now resolved (see bug2 test file), no longer null', () => {
   assert.equal(buildClassifierPhrase('jol', 25), null);
   assert.equal(buildClassifierPhrase('se', 25), null);
-  assert.equal(buildClassifierPhrase('gong', 25), null); // conflict, see comment above
+  assert.equal(buildClassifierPhrase('gong', 25), 'gongkolgrikbonga'); // resolved 2026-09-19
 });

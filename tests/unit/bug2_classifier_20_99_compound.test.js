@@ -47,10 +47,10 @@ test('translate: rong 20-99 compound is fused with no raka dot', async () => {
   assert.equal(r.garo, 'te·gatchu rongkolgrikbonga');
 });
 
-test('translate: gong 20-99 compound is UNRESOLVED (conflicting citations, see file header) -- falls through honestly instead of guessing either dotted or undotted form', async () => {
+test('translate: gong 20-99 compound is RESOLVED 2026-09-19 (Owner decision between the two conflicting citations, no dot) -- see garo_classifier.js comment for the full reasoning', async () => {
   const r = await translate('41 coins');
-  assert.equal(r.method, 'morphology');
-  assert.doesNotMatch(r.garo, /gong[·.]?sotbrisa/i, `must not silently pick either conflicting citation, got: ${r.garo}`);
+  assert.equal(r.method, 'classifier');
+  assert.equal(r.garo, 'tangka bisil gongsotbrisa');
 });
 
 test('regression guard: bol (now confirmed, 2026-09-18) no longer ships the old garbled fabricated form', async () => {
