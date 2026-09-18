@@ -53,6 +53,18 @@ export const CLASSIFIER_MAP = {
   'board':'king','page':'king','notebook':'king',
   'money':'gong','tangka':'gong','rupee':'gong','coin':'gong',
   'stick':'ge','pole':'jol','rod':'jol','staff':'jol',
+  // jol CONFIRMED 2026-09-19 (published Garo dictionary photo): "Jol..,
+  // A numeral prefix the whole length of bamboo as Wa·a jolsa ra·babo
+  // -- Brings whole length of bamboo." This is a genuine per-noun
+  // classifier (not a generic tool/object fallback) specifically for
+  // whole lengths of bamboo, confirmed no-raka-dot at n=1 ("jolsa", not
+  // "jol·sa") -- matches the RAKA_CLASSIFIERS default it was already
+  // shipping (jol was never added there), now a confirmed fact rather
+  // than an unverified default. The bamboo/wa·a mapping below already
+  // existed in this file uncited before this citation; the dictionary
+  // corroborates it rather than introducing it. Only n=1 is directly
+  // confirmed -- the 20-99 compound shape for jol is still unconfirmed
+  // (classifierTail() still returns null for jol at n>19, same as se).
   'bamboo':'jol','wa·a':'jol',
   'tree':'pang','log':'dot','wooden post':'dot',
   'pen':'ge','kolom':'ge','pencil':'ge',
@@ -216,8 +228,12 @@ function composeLargeBareNumber(n) {
 // construction, not a contradiction of the earlier citation). Only
 // these classifiers were confirmed for n>19 as of 2026-09-16; see
 // 2026-09-18 addendum below for bol/king/ge/te (added) and gong
-// (reverted pending conflict resolution). jol/se remain unconfirmed and
-// classifierTail() returns null for them below rather than guess, so
+// (reverted pending conflict resolution). jol's own n<20 classifier
+// identity and dot status were confirmed 2026-09-19 (see CLASSIFIER_MAP
+// comment above); its 20-99 compound shape is still unconfirmed. se
+// remains fully unconfirmed (its n<20 form still ships as the flagged
+// default-pattern guess, not a citation -- see CLASSIFIER_MAP/UNIT_WORDS
+// comments; its n>19 compound is blocked below rather than guessed) so
 // translate() falls through to a weaker (but not actively wrong)
 // assembly path instead of shipping a fabricated/garbled compound form
 // -- this was Bug 2, and it is only partially closed by this fix.
@@ -255,8 +271,11 @@ function composeLargeBareNumber(n) {
 // "bolkolgrik"/"kingkolgriksa"/"gesotbri"/"tesotbrisa" etc. equal
 // classifier + toGaroNumber(n) with spaces stripped and lowercased, same
 // shape as sak, no dot. jol and se are NOT in this table -- still fully
-// unconfirmed, classifierTail() still returns null (unresolved, not
-// guessed) for those two.
+// unconfirmed for the 20-99 compound specifically, classifierTail()
+// still returns null (unresolved, not guessed) for those two. (jol's
+// own n<20 identity/dot status has since been separately confirmed --
+// see the CLASSIFIER_MAP comment above -- but that does not extend to
+// its compound shape.)
 const CONFIRMED_COMPOUND_CLASSIFIERS = {
   sak: { dot: false },
   mang: { dot: true },
