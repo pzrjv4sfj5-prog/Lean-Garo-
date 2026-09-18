@@ -264,6 +264,16 @@ function classifierTail(classifier, n, spaced = false) {
     const raw = toGaroNumberImported(n); // e.g. "Sotbri Sa" (n=41)
     if (!raw) return null;
     const fused = raw.replace(/\s+/g, '').toLowerCase();
+    // spaced-mode fix (2026-09-19, direct Thangseng citation: "21
+    // litres" = "litre rong kolgriksa" -- a space before the compound
+    // tail). Previously this branch ignored the spaced flag entirely
+    // (it had never been exercised for n>=20 before -- the only prior
+    // spaced citation, chu/alcohol, was only confirmed for n<20). Now
+    // mirrors the n<20 branch below: spaced mode inserts a literal
+    // space before the (internally still-fused) compound tail and
+    // skips the classifier's own dot rule entirely, same override
+    // already established for n<20.
+    if (spaced) return `${classifier} ${fused}`;
     return CONFIRMED_COMPOUND_CLASSIFIERS[classifier].dot
       ? `${classifier}·${fused}`
       : `${classifier}${fused}`;
@@ -348,17 +358,36 @@ const IRREGULAR_PLURALS = {
 // (optionally followed by "of"), stripped before normal noun resolution.
 // RAKA BEHAVIOR for 'kg' CONFIRMED no-raka 2026-09-16 (Project Owner
 // directive, chat, "merong kg gni" = 2kg (uncooked) rice) -- matches the
-// no-raka default already shipping, no code change needed for kg's raka
-// behavior itself. 'litre'/'plate' remain UNVERIFIED -- no native-
-// confirmed example exists for either, still defaulted to no-raka below
-// (RAKA_CLASSIFIERS unchanged) as the majority-pattern guess, NOT a
-// confirmed rule -- flag for native review before treating "litresa"/
-// "platesa" as settled.
+// no-raka default already shipping.
+//
+// SPACING (2026-09-19, direct Owner/Thangseng clarification): kg and
+// plate are self-classifying (the unit word IS its own classifier,
+// same as the existing UNIT_WORDS normalization below) -- confirmed
+// spaced: "kg gni", "plate sa" (momo plate sa = 1 plate of momos).
+// litre is NOT self-classifying: it's confirmed to take the existing
+// liquid/fruit classifier 'rong' (litre = liquid volume -- petrol,
+// diesel, kerosene), also spaced, same pattern as the chu/alcohol
+// exception in SPACED_NOUNS above but as its own citation, not
+// inferred from chu. Confirmed citation: "litre rong kolgriksa" = 21
+// litres.
+//
+// Bug found while landing this: countNounWithClassifier previously
+// called buildClassifierPhrase with no spaced argument (defaulting to
+// false/fused), so the already-shipped kg path produced "kggni" --
+// silently contradicting its own cited source above ("kg gni",
+// spaced). Fixed alongside litre/plate below; see
+// tests/unit/unit_word_classifiers.test.js.
 const UNIT_WORDS = {
   'kg': 'kg', 'kilogram': 'kg', 'kilograms': 'kg',
   'litre': 'litre', 'litres': 'litre', 'liter': 'litre', 'liters': 'litre',
   'plate': 'plate', 'plates': 'plate',
 };
+
+// kg/plate: self-classifying, the unit word itself is the classifier.
+// litre: NOT self-classifying, uses the existing 'rong' classifier.
+// All three confirmed spaced (see comment above) -- countNounWithClassifier
+// below always passes spaced=true for unit-word phrases.
+const UNIT_CLASSIFIER = { kg: 'kg', litre: 'rong', plate: 'plate' };
 
 // Bug 5 fix (2026-09-12, Claude B): the naive `word.replace(/s$/, '')`
 // singularizer below only strips a bare trailing 's', so any noun with a
@@ -474,8 +503,13 @@ export function countNoun(garoNoun, count, englishNoun) {
   return `${garoNoun.toLowerCase()} ${classifierPhrase}`;
 }
 
-export function countNounWithClassifier(garoNoun, count, classifier) {
-  const classifierPhrase = buildClassifierPhrase(classifier, count);
+export function countNounWithClassifier(garoNoun, count, unit) {
+  // unit is the normalized UNIT_WORDS value ('kg'/'litre'/'plate') --
+  // map to the real classifier (litre uses 'rong', not itself -- see
+  // UNIT_CLASSIFIER comment above) and always pass spaced=true, now
+  // confirmed for all three unit words (2026-09-19).
+  const classifier = UNIT_CLASSIFIER[unit] || unit;
+  const classifierPhrase = buildClassifierPhrase(classifier, count, true);
   if (classifierPhrase === null) return null;
   return `${garoNoun} ${classifierPhrase}`;
 }

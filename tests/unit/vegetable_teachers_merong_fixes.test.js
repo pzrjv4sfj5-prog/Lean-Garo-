@@ -22,11 +22,14 @@ import { translate } from '../../src/translationEngine.js';
 // 3. Rice measured by weight (kg) is uncooked rice ("merong"), not the
 //    default cooked reading ("mi") that bare "rice" resolves to. Owner
 //    citation "merong kg gni" also confirms no raka dot before the kg
-//    classifier suffix, matching what was already shipping (previously
-//    an unconfirmed default guess, now a confirmed rule) -- scoped
-//    narrowly to unit-measured rice only, via translationEngine.js's
-//    classifier-counting branch (step 1.6). litre/plate raka remain
-//    unverified and untouched.
+//    classifier suffix -- scoped narrowly to unit-measured rice only,
+//    via translationEngine.js's classifier-counting branch (step 1.6).
+//    CORRECTION 2026-09-19: the spacing in that same citation ("kg
+//    gni", literally spaced) was never actually implemented -- this
+//    test below originally asserted the fused "kggni", silently
+//    contradicting its own cited source above. Fixed alongside
+//    litre/plate confirmation, same underlying spaced-unit-word gap;
+//    see tests/unit/unit_word_classifiers.test.js.
 
 test('translate: "vegetable" now resolves to its own verified headword, not a fuzzy match', async () => {
   const veg = await translate('vegetable');
@@ -46,11 +49,11 @@ test('translate: "two teachers" now matches the verified "two teacher" classifie
   assert.equal(plural.garo, singular.garo);
 });
 
-test('translate: kg-measured rice resolves to merong (uncooked), not mi (cooked)', async () => {
+test('translate: kg-measured rice resolves to merong (uncooked), not mi (cooked); spaced per direct citation', async () => {
   const two = await translate('2 kg rice');
-  assert.equal(two.garo, 'merong kggni');
+  assert.equal(two.garo, 'merong kg gni');
   const three = await translate('3 kg rice');
-  assert.equal(three.garo, 'merong kggittam');
+  assert.equal(three.garo, 'merong kg gittam');
 });
 
 test('regression guard: bare "rice" and non-kg rice phrases are unaffected by the merong fix', async () => {
