@@ -313,7 +313,56 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-16B (Claude A, session complete -- see
+  next_action: '2026-09-18 (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260918.md for full detail, this
+    is a pointer only, resumed from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260916B.md). Resync found the
+    prior close was fully clean (the one commit beyond its stated HEAD
+    was only that doc''s own file-addition commit, no real drift);
+    docs/CLAUDE_B_SESSION_MIGRATION_20260917.md (bol/king/ge/te
+    classifier fix, Claude B territory) was already merged in via a
+    Claude B merge commit, absorbed via rebase mid-session with no
+    conflicts. Built the "let''s go to X" locative-movement
+    composition as a repeatable pattern (Class B per
+    .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3/SS6): any place noun that
+    is itself VERIFIED/HIGH, or has a VERIFIED/HIGH -chi form, can now
+    get a "let''s go to X" sentence for free by composing RULE-007
+    (Hai hortative, -na general-urge form) + RULE-044 (-chi
+    movement-to locative), modeled on the pre-existing "let''s go to
+    the market"=Hai bajalchi re·na (NV-060). Applied it to 2 keys:
+    "let''s go to the shop"=Hai do·kanchi re·na (shop=Do·kan
+    VERIFIED/HIGH), "let''s go to school"=Hai skulchi re·na (the
+    -chi form itself already VERIFIED/HIGH per NV-051, independent of
+    bare "school"''s own unverified tag). Then, per a direct Project
+    Owner directive (chat, 2026-09-18, provenance-labeled per
+    .ai/PROJECT_OWNER_AUTHORITY.md, not a Thangseng quote): added
+    mall=Mall and restaurant=Restaurant as confirmed loanwords (no
+    native Garo word exists), same pattern as TV/Phone (NV-049,
+    NV-071) -- both VERIFIED/HIGH. Applied the same -chi composition
+    to get "let''s go to the mall"=Hai mallchi re·na and "let''s go
+    to the restaurant"=Hai restaurantchi re·na, using the
+    already-established precedent that -chi attaches fine to
+    loanwords ("go to youtube"=iutubchi re·angbo). SCHEMA GAP FOUND
+    AND WORKED AROUND, flagged for Claude B: .ai/
+    CLAUDE_A_OPERATING_GOVERNANCE.md SS3 introduced a DERIVED
+    confidence tag for exactly this class of entry (mechanically
+    derivable from established rules, not separately
+    native-confirmed), but this is the first session to actually try
+    using it, and repository-intelligence.js''s VALID_CONFIDENCE_
+    VALUES enum was never updated to accept it -- all 4 new sentence
+    rows tagged "unverified" as the honest fallback instead, with the
+    real DERIVED/rule-citation provenance carried in each row''s
+    notes field (not lost, just not schema-enforced yet). Gate green
+    throughout both commits: 8558/8558 dictionary, 9/9 grammatical
+    corrections, 418/418 unit tests, 0 new repository-intelligence
+    violations. Every new/changed key live-verified via translate()
+    post-build (mall, restaurant, and all 4 "let''s go to X"
+    sentences resolve exact-phrase at 0.98 confidence). Two commits,
+    no push collisions on either: 8807004 (shop/school), 8167cb4
+    (mall/restaurant). Pushed clean, final HEAD 8167cb4, verified ==
+    origin/main, no local/uncommitted changes.
+'
+  next_action_prior_20260916B: '2026-09-16B (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260916B.md for full detail, this
     is a pointer only, resumed from
     docs/CLAUDE_A_SESSION_MIGRATION_20260916.md). Resolved the
