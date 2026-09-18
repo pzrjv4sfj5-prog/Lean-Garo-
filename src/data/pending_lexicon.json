@@ -53042,5 +53042,5669 @@
     },
     "promotion_status": "promoted",
     "promoted_date": "2026-08-08T12:00:23.225Z"
+  },
+  {
+    "id": "PL-0002015",
+    "english": "send away",
+    "garo": "A·rikgala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To drive away; to send away; to turn out; to expel; to evict; to oust; to eject.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002016",
+    "english": "expel",
+    "garo": "A·rikgala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To drive away; to send away; to turn out; to expel; to evict; to oust; to eject.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002017",
+    "english": "evict",
+    "garo": "A·rikgala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To drive away; to send away; to turn out; to expel; to evict; to oust; to eject.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002018",
+    "english": "eject",
+    "garo": "A·rikgala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To drive away; to send away; to turn out; to expel; to evict; to oust; to eject.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002019",
+    "english": "reach the brink",
+    "garo": "A·rikring srita",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To reach to the brink (of water).",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002020",
+    "english": "alligator",
+    "garo": "Aringaa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "An alligator; a kind of monitor.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002021",
+    "english": "carefree",
+    "garo": "Ariri",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Carefree; freely.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002022",
+    "english": "freely",
+    "garo": "Ariri",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Carefree; freely.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002023",
+    "english": "Terminalia chebula",
+    "garo": "Aritak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Terminalia chebula; Terminalia citrina. A middle-sized deciduous tree; fruits have medicinal property and dye.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002024",
+    "english": "Terminalia citrina",
+    "garo": "Aritak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Terminalia chebula; Terminalia citrina. A middle-sized deciduous tree; fruits have medicinal property and dye.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002025",
+    "english": "besides",
+    "garo": "Aroba",
+    "category": null,
+    "pos": "conj.",
+    "classifier": null,
+    "notes": "Moreover; besides; in addition to; still more.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002026",
+    "english": "in addition",
+    "garo": "Aroba",
+    "category": null,
+    "pos": "conj.",
+    "classifier": null,
+    "notes": "Moreover; besides; in addition to; still more.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002027",
+    "english": "hill portion of land",
+    "garo": "A·rongga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "The hill portion of land; a jhum.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002028",
+    "english": "jhum",
+    "garo": "A·rongga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "The hill portion of land; a jhum.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002029",
+    "english": "hillside",
+    "garo": "A·rongrong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "The sloping land; a slope; hillside.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002030",
+    "english": "raft",
+    "garo": "Aru",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A raft; the refused things carried down by water.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002031",
+    "english": "Gracina xanthochymos",
+    "garo": "Aruak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Gracina xanthochymos. A middle-sized evergreen tree with sombre green foliage and a deep narrow crown; the fruit is very acid and is eaten raw or dried.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002032",
+    "english": "fertile",
+    "garo": "A·sal gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Fertile (soil); rich soil.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002033",
+    "english": "rich soil",
+    "garo": "A·sal gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Fertile (soil); rich soil.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002034",
+    "english": "unfertile",
+    "garo": "A·sal gri",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Unfertile; barren; unfruitful; manureless.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002035",
+    "english": "barren",
+    "garo": "A·sal gri",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Unfertile; barren; unfruitful; manureless.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002036",
+    "english": "unfruitful",
+    "garo": "A·sal gri",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Unfertile; barren; unfruitful; manureless.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002037",
+    "english": "manureless",
+    "garo": "A·sal gri",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Unfertile; barren; unfruitful; manureless.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002038",
+    "english": "manure",
+    "garo": "A·sal on·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To enrich with fertilizing substances; to manure.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002039",
+    "english": "enrich with fertilizing substances",
+    "garo": "A·sal on·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To enrich with fertilizing substances; to manure.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002040",
+    "english": "fertilize",
+    "garo": "A·sal ong·ata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To make fertile; to fertilize.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002041",
+    "english": "make fertile",
+    "garo": "A·sal ong·ata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To make fertile; to fertilize.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002042",
+    "english": "along the border of the field",
+    "garo": "A·sam a·sam",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Along the border of the field.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002043",
+    "english": "fencing of the jhum",
+    "garo": "A·se",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "The fencing of the jhum with branches and twigs.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002044",
+    "english": "by reason of",
+    "garo": "ni·g·sel",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "By reason of; on account of; on matters of.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002045",
+    "english": "on account of",
+    "garo": "ni·g·sel",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "By reason of; on account of; on matters of.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002046",
+    "english": "spend the day without useful purpose",
+    "garo": "A·sel grama",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To spend the day for no useful purpose; to pass the day without doing any work.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002047",
+    "english": "time when man-eating tiger habitually kills men",
+    "garo": "A·sel raka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A time when man-eater tiger habitually kill men.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002048",
+    "english": "existence of a reason",
+    "garo": "A·sel gnang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Existence of some reason; that portend some evil or trouble to come.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002049",
+    "english": "portent of trouble",
+    "garo": "A·sel gnang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Existence of some reason; that portend some evil or trouble to come.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002050",
+    "english": "neighbouring jhum",
+    "garo": "A·sil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A neighbouring jhum; an adjoining land.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002051",
+    "english": "adjoining land",
+    "garo": "A·sil",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A neighbouring jhum; an adjoining land.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002052",
+    "english": "Symplocos spicata",
+    "garo": "Asila",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Symplocos spicata. A small tree; decoction of leaves used in Indian medicine.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002053",
+    "english": "cliff",
+    "garo": "A·silang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A precipice; a cliff.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002054",
+    "english": "cricket",
+    "garo": "Asilik",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A cricket; a mole-cricket.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002055",
+    "english": "mole-cricket",
+    "garo": "Asilik",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A cricket; a mole-cricket.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002056",
+    "english": "salt-spring",
+    "garo": "A·sim",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Salt-spring; a resort of wild animals such as a salt-lick; a salt marsh; a saline.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002057",
+    "english": "salt-lick",
+    "garo": "A·sim",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Salt-spring; a resort of wild animals such as a salt-lick; a salt marsh; a saline.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002058",
+    "english": "salt marsh",
+    "garo": "A·sim",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Salt-spring; a resort of wild animals such as a salt-lick; a salt marsh; a saline.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002059",
+    "english": "saline",
+    "garo": "A·sim",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Salt-spring; a resort of wild animals such as a salt-lick; a salt marsh; a saline.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002060",
+    "english": "mother of Susime",
+    "garo": "Asima Dingsima",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "The mother of Susime in Garo mythology.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002061",
+    "english": "forbidden",
+    "garo": "Asimalja",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Among primitive Garo people, forbidden for religious reason; a taboo.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002062",
+    "english": "ceremony involving fowl sacrifice before seeds are sown",
+    "garo": "A·sioka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A ceremony in which fowl sacrifices are offered on the next morning when the jhums are burnt before seeds are sown.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 13,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002063",
+    "english": "shoulder-carrier for luggage",
+    "garo": "Bara-basi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A stick with ropes hang from each end for slinging luggage to be carried on the shoulder.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002064",
+    "english": "weave",
+    "garo": "Ba·ra doka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To weave.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002065",
+    "english": "fringe",
+    "garo": "Ba·ra jate",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A tassel; a fringe.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002066",
+    "english": "hire",
+    "garo": "Bara",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Hire; fare; rent.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bara",
+        "Bara ra·a"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "bara",
+      "matches": [
+        {
+          "english": "clothes",
+          "garo": "Ba·ra"
+        },
+        {
+          "english": "cloth",
+          "garo": "Ba·ra"
+        },
+        {
+          "english": "Cloth",
+          "garo": "ba·ra"
+        },
+        {
+          "english": "Clothes",
+          "garo": "ba·ra"
+        },
+        {
+          "english": "fare",
+          "garo": "ba·ra"
+        },
+        {
+          "english": "payment",
+          "garo": "ba·ra"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002067",
+    "english": "hire",
+    "garo": "Bara ra·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To hire.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bara",
+        "Bara ra·a"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002068",
+    "english": "put one's hand on another's shoulder and walk on",
+    "garo": "Bara kaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To put the hand of one on the shoulder of another and walk on.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002069",
+    "english": "walk abreast",
+    "garo": "Bara kae re·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To walk abreast.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002070",
+    "english": "chintz",
+    "garo": "Ba·rachit",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Chintz.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002071",
+    "english": "remove clothing",
+    "garo": "Ba·ra kika",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "To remove clothing.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002072",
+    "english": "rag",
+    "garo": "Ba·rasuri",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A rag.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002073",
+    "english": "verandah",
+    "garo": "Baranda",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Verandah; a part of the building which is left out unwalled.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "baranda",
+      "matches": [
+        {
+          "english": "veranda",
+          "garo": "ba·ran·da"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002074",
+    "english": "moderate-sized deciduous tree",
+    "garo": "Barare",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A moderate-sized deciduous tree.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Barare",
+        "Babare"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002075",
+    "english": "moderate-sized deciduous tree",
+    "garo": "Babare",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A moderate-sized deciduous tree.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Barare",
+        "Babare"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002076",
+    "english": "partition wall",
+    "garo": "Bare",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A wall; a partition wall; the side of a boat.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002077",
+    "english": "side of a boat",
+    "garo": "Bare",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A wall; a partition wall; the side of a boat.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002078",
+    "english": "fence",
+    "garo": "Baria",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To fence; to enclose; to increase.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Baria",
+        "Bari kaa"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "baria",
+      "matches": [
+        {
+          "english": "increase",
+          "garo": "ba·ri·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002079",
+    "english": "fence",
+    "garo": "Bari kaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To fence.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Baria",
+        "Bari kaa"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002080",
+    "english": "extend",
+    "garo": "Bariata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To extend; to expand; to increase; to enhance; to raise; to widen.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002081",
+    "english": "expand",
+    "garo": "Bariata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To extend; to expand; to increase; to enhance; to raise; to widen.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002082",
+    "english": "enhance",
+    "garo": "Bariata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To extend; to expand; to increase; to enhance; to raise; to widen.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002083",
+    "english": "widen",
+    "garo": "Bariata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To extend; to expand; to increase; to enhance; to raise; to widen.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002084",
+    "english": "attend to",
+    "garo": "Ba·rika",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To attend to a child; to look after a child.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "barika",
+      "matches": [
+        {
+          "english": "care for",
+          "garo": "ba·rik·a"
+        },
+        {
+          "english": "carry baby",
+          "garo": "ba·rik·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002085",
+    "english": "look after a child",
+    "garo": "Ba·rika",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To attend to a child; to look after a child.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "barika",
+      "matches": [
+        {
+          "english": "care for",
+          "garo": "ba·rik·a"
+        },
+        {
+          "english": "carry baby",
+          "garo": "ba·rik·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002086",
+    "english": "belonging to same parents",
+    "garo": "Ba·rima",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Belonging to same parents; born of same parents.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002087",
+    "english": "persons of the same parents",
+    "garo": "Ba·rima-sokchaa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Persons of the same parents.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002088",
+    "english": "gunpowder",
+    "garo": "Barut",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Gunpowder.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002089",
+    "english": "tent",
+    "garo": "Baga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A tent; a hut; a camp; dwelling place.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002090",
+    "english": "hut",
+    "garo": "Baga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A tent; a hut; a camp; dwelling place.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002091",
+    "english": "camp",
+    "garo": "Baga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A tent; a hut; a camp; dwelling place.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002092",
+    "english": "how soon",
+    "garo": "Basakgijal",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "How soon.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002093",
+    "english": "lean-to",
+    "garo": "Base pina",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A lean to; a shelter.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002094",
+    "english": "some day",
+    "garo": "Basakoba",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Sometime or other; some day, sometime in future.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002095",
+    "english": "occasionally",
+    "garo": "Basakoba basakoba",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Sometimes; occasionally; now and then; at times.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002096",
+    "english": "now and then",
+    "garo": "Basakoba basakoba",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Sometimes; occasionally; now and then; at times.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002097",
+    "english": "from what date",
+    "garo": "Basakintal",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "From what date; since when; when.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002098",
+    "english": "since when",
+    "garo": "Basakintal",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "From what date; since when; when.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002099",
+    "english": "sort",
+    "garo": "Basea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To choose; to select; to sort in; to be sorted; to separate one thing from another.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002100",
+    "english": "take out one thing from others",
+    "garo": "Basegala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To take out one thing from amongst the other things.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002101",
+    "english": "selected",
+    "garo": "Basegimin",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Selected, chosen.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002102",
+    "english": "chosen",
+    "garo": "Basegimin",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Selected, chosen.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002103",
+    "english": "rejected",
+    "garo": "Basegalgimin",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Rejected.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002104",
+    "english": "a certain number or quantity",
+    "garo": "Basikba",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "A certain number or quantity.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002105",
+    "english": "water vessel",
+    "garo": "Basing",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A water vessel; a pot; a pitcher.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002106",
+    "english": "pitcher",
+    "garo": "Basing",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A water vessel; a pot; a pitcher.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002107",
+    "english": "crest",
+    "garo": "Basu",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A crest; erectile turf-feathers of a bird's head.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002108",
+    "english": "crested bird",
+    "garo": "Basucheng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A bird having a crest.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002109",
+    "english": "greater than",
+    "garo": "Bata",
+    "category": null,
+    "pos": "suffix",
+    "classifier": null,
+    "notes": "A noun or verb suffix meaning greater than; examples: nambata—better; rakbata—harder; ga·bata—to cross; chrok-bata—to jump over; chobata (ringko)—to cross over by boat.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bata",
+      "matches": [
+        {
+          "english": "exceed",
+          "garo": "bat·a"
+        },
+        {
+          "english": "increase",
+          "garo": "bat·a"
+        },
+        {
+          "english": "pass",
+          "garo": "bat·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002110",
+    "english": "wade",
+    "garo": "Bata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To cross; to wade; to fold; to pass; to contact as disease; to contract a disease; to infect; to exceed; to excel; to increase; to surpass; to be better.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 21,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bata",
+      "matches": [
+        {
+          "english": "exceed",
+          "garo": "bat·a"
+        },
+        {
+          "english": "increase",
+          "garo": "bat·a"
+        },
+        {
+          "english": "pass",
+          "garo": "bat·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002111",
+    "english": "be submissive",
+    "garo": "Bame on·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To be submissive; to yield; to be allowed to be beaten.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002112",
+    "english": "yield",
+    "garo": "Bame on·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To be submissive; to yield; to be allowed to be beaten.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002113",
+    "english": "bow down",
+    "garo": "Bamgopa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To bow down; to bend; to hang down; to droop; to lie close to the ground; to crouch.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002114",
+    "english": "droop",
+    "garo": "Bamgopa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To bow down; to bend; to hang down; to droop; to lie close to the ground; to crouch.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bamgopa",
+        "Jol-wea"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002115",
+    "english": "droop",
+    "garo": "Jol-wea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To droop; to hang down.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bamgopa",
+        "Jol-wea"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002116",
+    "english": "second",
+    "garo": "Bamil rata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "The second or last weeding of a jhum.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002117",
+    "english": "second",
+    "garo": "Bamil rata",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "The second or last weeding of a jhum.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002118",
+    "english": "last weeding of a jhum",
+    "garo": "Bamil rata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "The second or last weeding of a jhum.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002119",
+    "english": "last weeding of a jhum",
+    "garo": "Bamil rata",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "The second or last weeding of a jhum.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002120",
+    "english": "bursting of a dam",
+    "garo": "Ban be·praka",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "Bursting of a dam.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002121",
+    "english": "bursting of a dam",
+    "garo": "Ban be·praka",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": "Bursting of a dam.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002122",
+    "english": "flow",
+    "garo": "Bana",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To flow; flood; inundation.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bana",
+      "matches": [
+        {
+          "english": "magic",
+          "garo": "ban·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002123",
+    "english": "inundation",
+    "garo": "Bana",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "To flow; flood; inundation.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bana",
+      "matches": [
+        {
+          "english": "magic",
+          "garo": "ban·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002124",
+    "english": "invent",
+    "garo": "Banaia",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To invent; to fabricate; to devise falsely; to manufacture; to make; to concoct (as a falsehood); to make up; invented statement; figment; a make up story.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "banaia",
+      "matches": [
+        {
+          "english": "appoint",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "build",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "choose",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "construct",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "create",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "prepare",
+          "garo": "ba·nai·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002125",
+    "english": "fabricate",
+    "garo": "Banaia",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To invent; to fabricate; to devise falsely; to manufacture; to make; to concoct (as a falsehood); to make up; invented statement; figment; a make up story.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "banaia",
+      "matches": [
+        {
+          "english": "appoint",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "build",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "choose",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "construct",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "create",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "prepare",
+          "garo": "ba·nai·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002126",
+    "english": "manufacture",
+    "garo": "Banaia",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To invent; to fabricate; to devise falsely; to manufacture; to make; to concoct (as a falsehood); to make up; invented statement; figment; a make up story.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "banaia",
+      "matches": [
+        {
+          "english": "appoint",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "build",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "choose",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "construct",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "create",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "prepare",
+          "garo": "ba·nai·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002127",
+    "english": "make up",
+    "garo": "Banaia",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To invent; to fabricate; to devise falsely; to manufacture; to make; to concoct (as a falsehood); to make up; invented statement; figment; a make up story.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "banaia",
+      "matches": [
+        {
+          "english": "appoint",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "build",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "choose",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "construct",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "create",
+          "garo": "ba·nai·a"
+        },
+        {
+          "english": "prepare",
+          "garo": "ba·nai·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002128",
+    "english": "make-up story",
+    "garo": "Banaia katta",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A make-up story; a fiction.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002129",
+    "english": "fiction",
+    "garo": "Banaia katta",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A make-up story; a fiction.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002130",
+    "english": "float downstream",
+    "garo": "Bananga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To be carried down by water; to float downstream.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002131",
+    "english": "woollen cloth",
+    "garo": "Banat",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A kind of woollen cloth.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002132",
+    "english": "not full length",
+    "garo": "Banda",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "A portion; a piece; not full length; short.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002133",
+    "english": "powerful man in Garo mythology",
+    "garo": "Bandi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "In Garo mythology a very powerful man possessing herculean strength.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002134",
+    "english": "floating object remaining in one place",
+    "garo": "Banga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "To remain in one place of something floating on the water.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Banga",
+        "Bangrika"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "banga",
+      "matches": [
+        {
+          "english": "many / much",
+          "garo": "Bang·a"
+        },
+        {
+          "english": "many",
+          "garo": "bang·a"
+        },
+        {
+          "english": "much",
+          "garo": "bang·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002135",
+    "english": "floating object remaining in one place",
+    "garo": "Bangrika",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "To remain in one place of something floating on the water.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Banga",
+        "Bangrika"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002136",
+    "english": "remain in one place",
+    "garo": "Banga",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "To remain in one place of something floating on the water.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Banga",
+        "Bangrika"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "banga",
+      "matches": [
+        {
+          "english": "many / much",
+          "garo": "Bang·a"
+        },
+        {
+          "english": "many",
+          "garo": "bang·a"
+        },
+        {
+          "english": "much",
+          "garo": "bang·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002137",
+    "english": "remain in one place",
+    "garo": "Bangrika",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "To remain in one place of something floating on the water.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Banga",
+        "Bangrika"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002138",
+    "english": "not much",
+    "garo": "Bang·a-jala (ong·ja)",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Not much; not many; only a few; used only in negative sense.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002139",
+    "english": "not many",
+    "garo": "Bang·a-jala (ong·ja)",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Not much; not many; only a few; used only in negative sense.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002140",
+    "english": "only a few",
+    "garo": "Bang·a-jala (ong·ja)",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Not much; not many; only a few; used only in negative sense.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002141",
+    "english": "spacious",
+    "garo": "Bang-basang",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Spacious; empty; vacant.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002142",
+    "english": "vacant",
+    "garo": "Bang-basang",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Spacious; empty; vacant.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002143",
+    "english": "at what time",
+    "garo": "Ban-",
+    "category": null,
+    "pos": "prefix",
+    "classifier": null,
+    "notes": "Prefix meaning where, which, at what (time).",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "ban",
+      "matches": [
+        {
+          "english": "dam",
+          "garo": "ban"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002144",
+    "english": "expression of negation",
+    "garo": "Banisae",
+    "category": null,
+    "pos": "interj.",
+    "classifier": null,
+    "notes": "An expression of negation.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002145",
+    "english": "greater number or quantity",
+    "garo": "Bang-bata",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Majority; more; greater number or quantity.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bangbata",
+      "matches": [
+        {
+          "english": "more",
+          "garo": "Bang·bata"
+        },
+        {
+          "english": "largest / most",
+          "garo": "Bangbata"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002146",
+    "english": "slight difference",
+    "garo": "Bang-gija",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Slight (difference); little quantity.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "banggija",
+      "matches": [
+        {
+          "english": "only",
+          "garo": "banggija"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002147",
+    "english": "little quantity",
+    "garo": "Bang-gija",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Slight (difference); little quantity.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "banggija",
+      "matches": [
+        {
+          "english": "only",
+          "garo": "banggija"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002148",
+    "english": "stick in the throat",
+    "garo": "Bangkanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To stick in the throat (as fish bone, etc.).",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bangkanga",
+      "matches": [
+        {
+          "english": "deny",
+          "garo": "bang·kang·a"
+        },
+        {
+          "english": "obstruct",
+          "garo": "bang·kang·a"
+        },
+        {
+          "english": "prevent",
+          "garo": "bang·kang·a"
+        },
+        {
+          "english": "prohibit",
+          "garo": "bang·kang·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002149",
+    "english": "play the flute",
+    "garo": "Bangsi sika",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To play the flute.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002150",
+    "english": "keep clear of weeds and refuse",
+    "garo": "Bangtalata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To keep clear of weeds and refuses.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002151",
+    "english": "somewhere else",
+    "garo": "Banoba banoba",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Somewhere else.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002152",
+    "english": "whereto",
+    "garo": "Banona (Ba-no-na)",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Where; whereto.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Banona (Ba-no-na)",
+        "Baona"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "banona",
+      "matches": [
+        {
+          "english": "where to?",
+          "garo": "banona"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002153",
+    "english": "whereto",
+    "garo": "Baona",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Whereto; to which place; where.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Banona (Ba-no-na)",
+        "Baona"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002154",
+    "english": "float down",
+    "garo": "Banona (ban-ona)",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To float down.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "banona",
+      "matches": [
+        {
+          "english": "where to?",
+          "garo": "banona"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002155",
+    "english": "float down the stream",
+    "garo": "Banonanga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To float down the stream.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002156",
+    "english": "float or carry lightly over water",
+    "garo": "Banpaka",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": "To float or carry lightly over water.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002157",
+    "english": "wherefrom",
+    "garo": "Baonai",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Whence; wherefrom.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002158",
+    "english": "look down upon smaller things in pursuit of greater things",
+    "garo": "Baroa ong·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To look down upon smaller things in pursuit of greater things where one fails to get.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002159",
+    "english": "gecko",
+    "garo": "Bapme",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A gecko.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002160",
+    "english": "expression of contempt",
+    "garo": "Bapre",
+    "category": null,
+    "pos": "interj.",
+    "classifier": null,
+    "notes": "An expression of contempt; an expression of wonder.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 20,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002161",
+    "english": "abscond",
+    "garo": "Joke kata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To escape; to abscond.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002162",
+    "english": "leap",
+    "garo": "Jokjoka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To dance; to leap; to move the body up and down by bending the knees.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "jokjoka",
+      "matches": [
+        {
+          "english": "bounce",
+          "garo": "jok·jok·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002163",
+    "english": "flow constantly",
+    "garo": "Jokjoljola",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To flow constantly.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002164",
+    "english": "flow by",
+    "garo": "Jokpaka (chi gita)",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To flow by; to pass close to (as a river).",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002165",
+    "english": "pass close to",
+    "garo": "Jokpaka (chi gita)",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To flow by; to pass close to (as a river).",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002166",
+    "english": "flow by breaking through",
+    "garo": "Jokpraka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To flow by breaking through; to force through as current.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002167",
+    "english": "force through",
+    "garo": "Jokpraka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To flow by breaking through; to force through as current.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002168",
+    "english": "cause to curd by heat",
+    "garo": "Jo·krapa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To fry; to cause to curd by heat when cooking; to frizzle.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002169",
+    "english": "frizzle",
+    "garo": "Jo·krapa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To fry; to cause to curd by heat when cooking; to frizzle.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002170",
+    "english": "parry",
+    "garo": "Jokrongreta",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To parry; to avert (a blow); to ward off (the blow); to escape from being caught.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002171",
+    "english": "avert",
+    "garo": "Jokrongreta",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To parry; to avert (a blow); to ward off (the blow); to escape from being caught.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002172",
+    "english": "ward off",
+    "garo": "Jokrongreta",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To parry; to avert (a blow); to ward off (the blow); to escape from being caught.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002173",
+    "english": "escape being caught",
+    "garo": "Jokrongreta",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To parry; to avert (a blow); to ward off (the blow); to escape from being caught.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002174",
+    "english": "gush (of water)",
+    "garo": "Jokselsela",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To gush (of water).",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002175",
+    "english": "miss one's aim",
+    "garo": "Joksreta",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To cross; to come from opposite direction but somehow escapes meeting; to miss (one's aim); to turn aside a blow in order not to be hit.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002176",
+    "english": "turn aside a blow",
+    "garo": "Joksreta",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To cross; to come from opposite direction but somehow escapes meeting; to miss (one's aim); to turn aside a blow in order not to be hit.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002177",
+    "english": "run over",
+    "garo": "Joksuaka",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "To overflow; to run over.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002178",
+    "english": "while doing something else",
+    "garo": "·jola",
+    "category": null,
+    "pos": "suffix",
+    "classifier": null,
+    "notes": "Suffix added to verbs; example in source: `Anga Bazarchini re·bapilon matchu mangsako nikbajolaha`.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "·jola",
+        "Jola"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "jola",
+      "matches": [
+        {
+          "english": "Bag",
+          "garo": "Jol·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002179",
+    "english": "while doing something else",
+    "garo": "Jola",
+    "category": null,
+    "pos": "suffix",
+    "classifier": null,
+    "notes": "A suffix appended to verbs with a sense of doing a thing while doing something else.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "·jola",
+        "Jola"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "jola",
+      "matches": [
+        {
+          "english": "Bag",
+          "garo": "Jol·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002180",
+    "english": "fall flat on the ground",
+    "garo": "Jolbrak dake ga·aka",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "To fall flat on the ground.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002181",
+    "english": "be immediately as asked",
+    "garo": "Jol daka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To be immediately as asked.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002182",
+    "english": "one who says yes to everything",
+    "garo": "Jola jola dakgipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "One who says 'yes' to everything.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002183",
+    "english": "one who says yes to everything",
+    "garo": "Jola jola dakgipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "One who says 'yes' to everything.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002184",
+    "english": "tall and slender",
+    "garo": "Joldengbakbak",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Tall and slender; lanky.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002185",
+    "english": "lanky",
+    "garo": "Joldengbakbak",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Tall and slender; lanky.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002186",
+    "english": "whole length",
+    "garo": "Jolgimik",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "The whole length.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002187",
+    "english": "effeminate",
+    "garo": "Jol-jibrak",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Weak; effeminate.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002188",
+    "english": "coop-shaped fish-trap",
+    "garo": "Jolpi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "A coop-shaped fish-trap thrust down over a fish.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002189",
+    "english": "take up by ladle or spoon",
+    "garo": "Jol-waka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To lift or take up by means of ladle or spoon.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002190",
+    "english": "become almost liquid",
+    "garo": "Jol-weka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To become almost liquid owing to overdoing, cooking; to overripen.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002191",
+    "english": "overripen",
+    "garo": "Jol-weka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To become almost liquid owing to overdoing, cooking; to overripen.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002192",
+    "english": "hang down",
+    "garo": "Jol-wea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To droop; to hang down.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002193",
+    "english": "get unwell",
+    "garo": "Joma",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To get unwell; to be sick.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "joma",
+      "matches": [
+        {
+          "english": "Fever",
+          "garo": "jom·a"
+        },
+        {
+          "english": "Sick",
+          "garo": "jom·a"
+        },
+        {
+          "english": "suffer",
+          "garo": "jom·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002194",
+    "english": "be sick",
+    "garo": "Joma",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To get unwell; to be sick.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "joma",
+      "matches": [
+        {
+          "english": "Fever",
+          "garo": "jom·a"
+        },
+        {
+          "english": "Sick",
+          "garo": "jom·a"
+        },
+        {
+          "english": "suffer",
+          "garo": "jom·a"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002195",
+    "english": "go by stealth",
+    "garo": "Jom·anga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To go by stealth; to creep along stealthily or quietly; to stalk.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002196",
+    "english": "creep",
+    "garo": "Jom·anga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "To go by stealth; to creep along stealthily or quietly; to stalk.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002197",
+    "english": "sickly",
+    "garo": "Jommokmrok",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Sickly; languid; appearing as if sick; sallow.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002198",
+    "english": "languid",
+    "garo": "Jommokmrok",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Sickly; languid; appearing as if sick; sallow.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002199",
+    "english": "sallow",
+    "garo": "Jommokmrok",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Sickly; languid; appearing as if sick; sallow.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002200",
+    "english": "slowly",
+    "garo": "Jom-pe jom-pe",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Slowly.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002201",
+    "english": "younger brother",
+    "garo": "Jong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Younger brother; a cousin younger than (he); a word of endearment to one who is younger than oneself.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Jong",
+        "Jongsipa"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "jong",
+      "matches": [
+        {
+          "english": "bug",
+          "garo": "jong·"
+        },
+        {
+          "english": "insect",
+          "garo": "jong·"
+        },
+        {
+          "english": "worm",
+          "garo": "jong·"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002202",
+    "english": "younger brother",
+    "garo": "Jongsipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Younger brother; a cousin younger than (he); a word of endearment to one who is younger than oneself.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Jong",
+        "Jongsipa"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002203",
+    "english": "younger cousin",
+    "garo": "Jong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Younger brother; a cousin younger than (he); a word of endearment to one who is younger than oneself.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Jong",
+        "Jongsipa"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "jong",
+      "matches": [
+        {
+          "english": "bug",
+          "garo": "jong·"
+        },
+        {
+          "english": "insect",
+          "garo": "jong·"
+        },
+        {
+          "english": "worm",
+          "garo": "jong·"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002204",
+    "english": "younger cousin",
+    "garo": "Jongsipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Younger brother; a cousin younger than (he); a word of endearment to one who is younger than oneself.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Jong",
+        "Jongsipa"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002205",
+    "english": "along",
+    "garo": "Jol jol",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Along; direct; continually.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002206",
+    "english": "continually",
+    "garo": "Jol jol",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Along; direct; continually.",
+    "provenance": {
+      "source": "OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx",
+      "source_page": 108,
+      "import_batch": "IMPORT-2026-09-18T10-57-28-879Z",
+      "import_date": "2026-09-18T10:57:28.879Z",
+      "ocr_version": "v5"
+    },
+    "review_status": "unreviewed",
+    "review_notes": null,
+    "reviewed_by": null,
+    "reviewed_date": null,
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "pending",
+    "promoted_date": null
   }
 ]
