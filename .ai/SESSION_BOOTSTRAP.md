@@ -1,5 +1,35 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-18 by Claude D
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-18B by Claude A
+(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260918.md. Full migration doc:
+docs/CLAUDE_A_SESSION_MIGRATION_20260918B.md — READ IT FIRST, this line is
+just a pointer. Summary: resync clean, HEAD 3772d29 == origin/main on arrival
+(4 Claude B engineering commits beyond 20260918's close, no Claude A drift).
+Checked 3 WhatsApp relay batches (Thangseng, via Project Owner, dated
+2026-09-08) against the repo. Batch 1: I-am-cooking/I-will-cook/shower
+paradigm all already VERIFIED/HIGH, pure reconfirmation except "I build the
+house"=Anga nokko rika and "I am building the house"=Anga nokko rikenga
+(previously only example-sentence citations), now added as standalone
+VERIFIED/HIGH rows. Batch 2 (Project Owner instruction, same session): added
+3 sense-tagged bare-verb component entries exposing already-VERIFIED roots
+under new keys — "build (verb, general)"=Rik·a, "building (verb,
+continuous)"=Rik·enga (sense-tagged apart from the unrelated noun
+"building"=nok), "shower (verb, continuous)"=Auenga (apart from noun
+"shower"=gra·gra). Batch 3: joljol/srongsrong (straight-away vs.
+spatial-straight) + "come/go a little here/there" — 100% reconfirmation,
+zero repo changes, both atomic single-morpheme adverbs with no components to
+break out. RUNTIME HANDOFF TO CLAUDE B, NEW THIS SESSION: trailing
+punctuation (a period) breaks exact-phrase/corrections lookup entirely,
+falling to grammar-assembly/compound-split/morphology and shipping degraded
+or literal [UNKNOWN] output — confirmed on multiple already-VERIFIED keys,
+looks repo-wide not key-specific, not fixed (not Claude A's lane). Also
+NOTE: this session did not touch gong/mang/king classifier dots at all --
+see Claude D's 2026-09-18 entry below (now superseded to Prior by this one)
+for that separate, still-open thread. Gate green throughout both commits:
+8563/8563 dictionary, 9/9 grammatical corrections, 431/431 unit tests, 0 new
+repository-intelligence violations. Two commits, no push collisions:
+12e89b8 (build/cook/shower), 9b5eb3f (component entries). Pushed clean,
+final HEAD 9b5eb3f, verified == origin/main, no local/uncommitted changes.)
+Prior: 2026-09-18 by Claude D
 (evidence-only session, no code touched -- not Claude D's lane. Corrects commit 3772d29's
 gong no-dot call. Full detail + full 1-99 table: docs/CLAUDE_D_20260918_compound_
 classifier_findings.json — READ THIS if you're Claude B touching
