@@ -75991,5 +75991,23 @@
     "classifier": null,
     "notes": "DERIVED (schema note: repository-intelligence.js's VALID_CONFIDENCE_VALUES does not yet include a 'derived' tag despite .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3 introducing it -- tagged 'unverified' here as the honest fallback until Claude B adds the enum value; treat this note, not the confidence field, as the authoritative provenance marker) — Class B (mechanically derivable from established rules, per .ai/CLAUDE_A_OPERATING_GOVERNANCE.md SS3/SS6), not itself separately native-confirmed. Composed from RULE-007 (Hai hortative, -na general-urge form) + RULE-044 (-chi movement-to locative, confirmed general across noun classes including loanwords -- cf. 'go to youtube'= iutubchi re·angbo). Modeled on 'let's go to the market'=Hai bajalchi re·na (VERIFIED/HIGH, NV-060). 'restaurant'=Restaurant is a Project-Owner-confirmed loanword (this session, see 'mall'/'restaurant' entries), not itself native-confirmed.",
     "confidence": "unverified"
+  },
+  {
+    "english": "I build the house",
+    "garo": "Anga nokko rika",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Full-sentence form of the already-VERIFIED/HIGH 'I build (general)'=Rik·a paradigm (2026-08-09), whose own citation already gave this exact sentence as an example. Reconfirmed via a direct Thangseng WhatsApp transcript relayed by the Project Owner (2026-09-08 9:07pm): 'I build the house. = Anga nokko rika.' Object 'nokko' = house (Nok) + -ko accusative (RULE-009), matching the citation's own spelling (no raka dot on nokko).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "I am building the house",
+    "garo": "Anga nokko rikenga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Full-sentence form of the already-VERIFIED/HIGH 'I am building'=Rik·enga paradigm (2026-08-09), whose own citation already gave this exact sentence as an example. Reconfirmed via a direct Thangseng WhatsApp transcript relayed by the Project Owner (2026-09-08 9:07pm): 'I am building the house. = Anga nokko rikenga.' Same nokko object as 'I build the house', see that entry.",
+    "confidence": "verified_high"
   }
 ]
