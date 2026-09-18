@@ -1,24 +1,33 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-16B by Claude A
-(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260916.md. Full migration doc:
-docs/CLAUDE_A_SESSION_MIGRATION_20260916B.md — READ IT FIRST, this line is just
-a pointer. Summary: resolved that prior session's open chim/achim question.
-Direct Thangseng chat transcript (relayed by Tridip, 1/7/2026) confirmed the
-suffix is `chim` not `achim`, the plain-past+chim vs continuous+chim
-(`engachim`) split, the dynamic "used to X" (`ka·achim`) vs stative "had X"
-(`dongachim`) gloss split, and the discontinuity sense behind RULE-013's
-"Discontinued Past" name — all matched the rule exactly as already written,
-no code/data bug, doc-only extension of RULE-013's Native Notes in
-docs/GRAMMAR_RULE_CATALOGUE.md. Same transcript batch also confirmed 6
-already-shipped classifier values correct, no change needed (mande sak·sa,
-tangka bisil gong·sa, nok te·sa, merong rong·sa, chi glass sa, mi plate sa).
-Doc-only session, gate not re-run for dictionary/tests (unchanged since prior
-session's 8552/8552, 9/9, 407/407); runtime-error-sweep.mjs re-run clean, 0
-errors/15262 calls. Still open, untouched this session: the 7-pattern
-wh-question relay (docs/THANGSENG_RELAY_QUESTION_20260916.md) not yet sent;
-the 44-key interrogative-form family in docs/SUPERSEDED_ONLY_KEYS.md
-(Claude D territory) not yet investigated.)
-Prior: 2026-09-16 by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-18 by Claude A
+(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260916B.md. Full migration doc:
+docs/CLAUDE_A_SESSION_MIGRATION_20260918.md — READ IT FIRST, this line is just
+a pointer. Summary: resync found the prior close was fully clean, no real
+drift; docs/CLAUDE_B_SESSION_MIGRATION_20260917.md (bol/king/ge/te classifier
+fix) already merged in, absorbed via a clean mid-session rebase. Built
+"let's go to X" as a repeatable Class B composition (RULE-007 Hai hortative +
+RULE-044 -chi movement-to locative, per .ai/CLAUDE_A_OPERATING_GOVERNANCE.md
+SS3/SS6), modeled on the pre-existing "let's go to the market"=Hai bajalchi
+re·na (NV-060): any place noun that's VERIFIED/HIGH itself, or has a
+VERIFIED/HIGH -chi form, now gets a "let's go to X" sentence for free.
+Applied to shop (Hai do·kanchi re·na) and school (Hai skulchi re·na). Then,
+per a direct Project Owner directive (chat, 2026-09-18, provenance-labeled
+per .ai/PROJECT_OWNER_AUTHORITY.md): added mall=Mall and restaurant=
+Restaurant as confirmed loanwords (no native Garo word), same pattern as
+TV/Phone — both VERIFIED/HIGH — then composed "let's go to the mall"=Hai
+mallchi re·na and "let's go to the restaurant"=Hai restaurantchi re·na.
+SCHEMA GAP found and flagged for Claude B: .ai/CLAUDE_A_OPERATING_
+GOVERNANCE.md SS3's DERIVED confidence tag was never added to repository-
+intelligence.js's VALID_CONFIDENCE_VALUES enum — this was the first session
+to actually try using it; all 4 new sentence rows tagged "unverified" as the
+honest fallback instead, with the real DERIVED/rule-citation provenance
+carried in each row's notes field. Gate green throughout: 8558/8558
+dictionary, 9/9 grammatical corrections, 418/418 unit tests, 0 new
+repository-intelligence violations. All 6 new/changed keys live-verified via
+translate() post-build. Two commits, no push collisions: 8807004
+(shop/school), 8167cb4 (mall/restaurant). Pushed clean, final HEAD 8167cb4,
+verified == origin/main, no local/uncommitted changes.)
+Prior: 2026-09-16B by Claude A
 (resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260913.md. Full migration doc:
 docs/CLAUDE_A_SESSION_MIGRATION_20260916.md — READ IT FIRST, this line is just
 a pointer. Summary: 3 new interrogative sentences (medicine=drink not
