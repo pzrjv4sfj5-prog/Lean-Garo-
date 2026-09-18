@@ -12,22 +12,23 @@ import { translate } from '../../src/translationEngine.js';
 // confirmed whether non-sak classifiers even use a spaced or fused
 // 20-99 form at all.
 //
-// Live Thangseng citations (relayed by Project Owner in chat, then
-// direct doc upload 2026-09-18) confirm several classifiers -- and they
-// do NOT all share one shape:
+// Live Thangseng citations confirm several classifiers -- and they do
+// NOT all share one shape. Current state (see garo_classifier.js's
+// CONFIRMED_COMPOUND_CLASSIFIERS comment for the full flip history on
+// mang/gong -- both have reversed multiple times on direct citations):
 //   sak (person): fused, no raka dot  -- "saksotbrisa"
-//   mang (animal): fused, WITH a raka dot -- "mang·sotbrisa"
+//   mang (animal): fused, NO raka dot -- "mangsotbrisa" (reverted
+//     2026-09-18 on a direct Thangseng "No" citation -- was briefly
+//     dot:true, see git history for the full chain)
 //   rong (fruit): fused, no raka dot  -- "rongkolgrikbonga"
 //   bol/king/ge/te: fused, no raka dot (2026-09-18, Counting_docx_
 //     thanseng.docx) -- e.g. "bolsotbrisa", "tesotbrisa"
-// gong is UNRESOLVED, not confirmed: the 2026-09-17 chat-relayed
-// citation gave "gong·sotbrisa" (WITH dot), but the 2026-09-18 doc
-// upload gives "gongsotbrisa" (NO dot) for the same fact (41 coins).
-// Two purported Thangseng sources disagree -- gong deliberately falls
-// through to the morphology fallback below pending direct
-// clarification, rather than either source being picked as a guess.
-// jol/se remain fully unconfirmed (not in either source) and also fall
-// through to the same fallback.
+//   gong (money): fused, WITH a raka dot -- "gong·sotbrisa" (corrected
+//     2026-09-18: Owner's explicit "rakka at every number, 1 to
+//     infinity" directive, after the earlier docx no-dot reading was
+//     mechanically audited and traced to a transcription gap)
+// jol/se remain fully unconfirmed for the 20-99 compound specifically
+// and fall through to the morphology fallback below.
 
 test('translate: sak 20-99 compound is fused with no raka dot, no space', async () => {
   const r = await translate('41 students');
@@ -35,10 +36,10 @@ test('translate: sak 20-99 compound is fused with no raka dot, no space', async 
   assert.equal(r.garo, 'chattro saksotbrisa');
 });
 
-test('translate: mang 20-99 compound is fused WITH a raka dot (distinct from sak/rong)', async () => {
+test('translate: mang 20-99 compound is fused with NO raka dot (reverted 2026-09-18 on direct Thangseng "No" citation)', async () => {
   const r = await translate('41 dogs');
   assert.equal(r.method, 'classifier');
-  assert.equal(r.garo, 'achak mang·sotbrisa');
+  assert.equal(r.garo, 'achak mangsotbrisa');
 });
 
 test('translate: rong 20-99 compound is fused with no raka dot', async () => {
@@ -47,10 +48,10 @@ test('translate: rong 20-99 compound is fused with no raka dot', async () => {
   assert.equal(r.garo, 'te·gatchu rongkolgrikbonga');
 });
 
-test('translate: gong 20-99 compound is RESOLVED 2026-09-19 (Owner decision between the two conflicting citations, no dot) -- see garo_classifier.js comment for the full reasoning', async () => {
+test('translate: gong 20-99 compound is fused WITH a raka dot (corrected 2026-09-18, Owner "rakka at every number" directive) -- see garo_classifier.js comment for the full reasoning', async () => {
   const r = await translate('41 coins');
   assert.equal(r.method, 'classifier');
-  assert.equal(r.garo, 'tangka bisil gongsotbrisa');
+  assert.equal(r.garo, 'tangka bisil gong·sotbrisa');
 });
 
 test('regression guard: bol (now confirmed, 2026-09-18) no longer ships the old garbled fabricated form', async () => {

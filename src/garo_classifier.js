@@ -252,25 +252,39 @@ function composeLargeBareNumber(n) {
 //                  mang precedent where single-digit and compound behavior
 //                  are NOT guaranteed to match.
 //
-// *** RESOLVED 2026-09-19 (Owner explicit decision, NOT a new Thangseng
-// citation -- flagged distinctly on purpose) ***
-// Owner was shown both conflicting sources plus a pattern breakdown
-// (5 of 6 classifiers with a known n<20-AND-compound pair use no dot
-// on the compound regardless of their n<20 dot status; mang is the
-// lone with-dot exception) and directed: gong n>19 = no dot, i.e. the
-// 2026-09-18 docx ("gongsotbrisa") is treated as correct over the
-// 2026-09-17 chat-screenshot citation ("gong·sotbrisa"). This is a
-// judgment call on which of two conflicting sources to trust, made by
-// the Owner with the tradeoffs in front of them -- not independently
-// re-confirmed by Thangseng. If a future direct citation contradicts
-// it, that citation wins.
+// gong: dot:true. CORRECTED 2026-09-18 (Claude D findings, evidence-only,
+// docs/CLAUDE_D_20260918_compound_classifier_findings.json), reversing the
+// 2026-09-19 Owner judgment call below. This is the fact's third flip
+// (dot -> no dot -> dot) so the full chain is kept on record: the prior
+// no-dot call was explicitly flagged by its own commit as a pattern-based
+// guess between two conflicting sources, reversible by a future direct
+// citation -- that citation arrived: Owner, this chat, "Gong uses
+// rakka(.) it's clearly mentioned in the counting pdf." The apparent
+// docx contradiction was mechanically audited (source table's own gong
+// column: 19/19 dotted for n=1-19, 0/22 dotted for n=20-41, zero
+// exceptions either way) and read as a transcription gap in that one
+// table (consistent with two other already-flagged bad gong cells in
+// it), not a real split in the language -- so gong carries the dot at
+// every number, 1 to infinity, no exception.
 //
-// bol/king/ge/te 20-41 compounds: CONFIRMED (2026-09-18, same
-// Counting_docx_thanseng.docx). Verified mechanically against
-// number_engine.toGaroNumber() for n=20,21,24,30,31,40,41 -- table's
-// "bolkolgrik"/"kingkolgriksa"/"gesotbri"/"tesotbrisa" etc. equal
-// classifier + toGaroNumber(n) with spaces stripped and lowercased, same
-// shape as sak, no dot. jol and se are NOT in this table -- still fully
+// mang: dot:false. CORRECTED 2026-09-18 (same Claude D findings doc),
+// reversing 5a900ac. This is mang's THIRD reversal on this exact
+// question (dot:true bug -> de-dotted by Owner directive 2026-09-13 ->
+// reopened to dot:true by 5a900ac 2026-09-17). Reverted again on a fresh
+// direct Thangseng citation, dated the day after 5a900ac, relayed via
+// WhatsApp/Tridip: "[18/9/2026] Tridip: Mang and rong uses rakka or
+// not? Thangseng: No." rong's dot:false (also from 5a900ac) is
+// unaffected -- this citation corroborates rong, only reverses mang.
+// Given three flips on one fact, do not touch this again without a
+// citation at least this direct -- see standing rule §4 in the
+// migration docs against "applying logic" to fill the gap instead.
+//
+// bol/king/ge/te 20-41 compounds: CONFIRMED (2026-09-18, Counting_docx_
+// thanseng.docx). Verified mechanically against number_engine.
+// toGaroNumber() for n=20,21,24,30,31,40,41 -- table's "bolkolgrik"/
+// "kingkolgriksa"/"gesotbri"/"tesotbrisa" etc. equal classifier +
+// toGaroNumber(n) with spaces stripped and lowercased, same shape as
+// sak, no dot. jol and se are NOT in this table -- still fully
 // unconfirmed for the 20-99 compound specifically, classifierTail()
 // still returns null (unresolved, not guessed) for those two. (jol's
 // own n<20 identity/dot status has since been separately confirmed --
@@ -278,13 +292,13 @@ function composeLargeBareNumber(n) {
 // its compound shape.)
 const CONFIRMED_COMPOUND_CLASSIFIERS = {
   sak: { dot: false },
-  mang: { dot: true },
+  mang: { dot: false },
   rong: { dot: false },
   bol: { dot: false },
   king: { dot: false },
   ge: { dot: false },
   te: { dot: false },
-  gong: { dot: false },
+  gong: { dot: true },
 };
 
 function classifierTail(classifier, n, spaced = false) {

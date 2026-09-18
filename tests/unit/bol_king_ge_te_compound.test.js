@@ -7,10 +7,12 @@ import { buildClassifierPhrase } from '../../src/garo_classifier.js';
 // these four classifiers' 20-99 range: fused, NO raka dot, same shape
 // as 'sak'. Verified mechanically against number_engine.toGaroNumber()
 // before landing -- not just copied from the table. gong is deliberately
-// NOT covered here: its n=41 compound in this same doc ("gongsotbrisa",
-// no dot) contradicts the already-shipped 2026-09-17 citation
-// ("gong·sotbrisa", with dot) -- unresolved conflict, gong stays out of
-// CONFIRMED_COMPOUND_CLASSIFIERS pending direct Thangseng clarification.
+// NOT covered by this test file: its n=41 compound is covered separately
+// in bug2_classifier_20_99_compound.test.js, and now resolves WITH a
+// dot ("gong·sotbrisa") per the 2026-09-18 Owner directive -- see
+// garo_classifier.js's CONFIRMED_COMPOUND_CLASSIFIERS comment for the
+// full reasoning on why the no-dot reading of this same docx table was
+// traced to a transcription gap rather than treated as authoritative.
 // jol/se are not in this table at all and remain fully unconfirmed.
 
 test('bol (cars) 20-99 compound: fused, no dot', () => {
@@ -43,5 +45,5 @@ test('te (houses) 20-99 compound: fused, no dot -- note this differs from te\'s 
 test('jol/se remain unconfirmed for 20-99 -- no guess, returns null; gong now resolved (see bug2 test file), no longer null', () => {
   assert.equal(buildClassifierPhrase('jol', 25), null);
   assert.equal(buildClassifierPhrase('se', 25), null);
-  assert.equal(buildClassifierPhrase('gong', 25), 'gongkolgrikbonga'); // resolved 2026-09-19
+  assert.equal(buildClassifierPhrase('gong', 25), 'gong·kolgrikbonga'); // corrected 2026-09-18, WITH dot -- see garo_classifier.js comment
 });
