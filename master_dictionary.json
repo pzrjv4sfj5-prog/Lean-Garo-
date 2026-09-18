@@ -76009,5 +76009,32 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH. Full-sentence form of the already-VERIFIED/HIGH 'I am building'=Rik·enga paradigm (2026-08-09), whose own citation already gave this exact sentence as an example. Reconfirmed via a direct Thangseng WhatsApp transcript relayed by the Project Owner (2026-09-08 9:07pm): 'I am building the house. = Anga nokko rikenga.' Same nokko object as 'I build the house', see that entry.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "build (verb, general)",
+    "garo": "Rik·a",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Sense-tagged bare-verb exposure of the already-VERIFIED/HIGH 'I build (general)' root (2026-08-09, reconfirmed via 2026-09-08 Thangseng transcript, see 'I build the house'). Distinct key from the pre-existing unverified 'to build'=Rika (no raka dot, unconfirmed variant, left untouched) so a lookup on bare 'build' doesn't silently prefer the unconfirmed spelling.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "building (verb, continuous)",
+    "garo": "Rik·enga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Sense-tagged bare-verb exposure of the already-VERIFIED/HIGH 'I am building' root (2026-08-09, reconfirmed via 2026-09-08 Thangseng transcript, see 'I am building the house'). Sense-tagged specifically to distinguish from the pre-existing, unrelated, still-unverified noun sense 'building'=nok (structure/edifice) -- same english headword, two different words, not to be conflated or merged.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "shower (verb, continuous)",
+    "garo": "Auenga",
+    "pos": "v.",
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH. Sense-tagged bare-verb exposure of the already-VERIFIED/HIGH 'I am taking a shower' root/au- paradigm (2026-08-09, reconfirmed via 2026-09-08 Thangseng transcript). Sense-tagged to distinguish from the pre-existing, unrelated, still-unverified noun sense 'shower'=gra·gra -- same english headword, two different words, not to be conflated or merged.",
+    "confidence": "verified_high"
   }
 ]
