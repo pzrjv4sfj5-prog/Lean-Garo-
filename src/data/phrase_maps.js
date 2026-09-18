@@ -286,7 +286,7 @@ export const PHRASE_MAPS = {
   'grandmother': 'am·bi',
   'uncle': 'Mama / Pabok',
   'aunt': 'Mani',
-  'friend': 'Ripsak / Ripeng',
+  'friend': 'Ripeng',
   'head': 'Sko',
   'eye': 'mik·on',
   'ear': 'Nachil',

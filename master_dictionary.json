@@ -18404,11 +18404,11 @@
   },
   {
     "english": "Friend",
-    "garo": "Ripsak / Ripeng",
+    "garo": "Ripeng",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH v:Ripeng / ba-ju / bi-sa",
+    "notes": "VERIFIED/HIGH — friend = Ripeng. Project Owner (chat, 2026-09-18): confirmed friend = Ripeng; alternate forms are not valid — superseded.",
     "confidence": "verified_high"
   },
   {
@@ -18417,8 +18417,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — Project Owner (chat, 2026-09-18): confirmed friend = Ripeng; alternate forms are not valid — superseded.",
+    "confidence": "superseded"
   },
   {
     "english": "Friend",
@@ -18426,8 +18426,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — Project Owner (chat, 2026-09-18): confirmed friend = Ripeng; alternate forms are not valid — superseded.",
+    "confidence": "superseded"
   },
   {
     "english": "Frog",
@@ -53898,7 +53898,8 @@
     "garo": "Baju",
     "category": null,
     "pos": "n.",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — Project Owner (chat, 2026-09-18): confirmed friend = Ripeng; alternate forms are not valid — superseded."
   },
   {
     "english": "a companion",
