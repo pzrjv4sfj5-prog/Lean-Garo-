@@ -5782,3 +5782,30 @@ claude_d:
     repository-intelligence violations, 407/407 unit tests, runtime-error-sweep.mjs
     0 errors across 15262 translate() calls. HEAD 4ed4e0c, verified == origin/main,
     clean tree. No action needed from B/D from this session''s data-only work.'
+  findings_20260918_gong_correction_and_mang_urgent: 'Claude D (2026-09-18, evidence-only,
+    no code touched -- not Claude D''s lane). Full detail + full gong 1-99 table:
+    docs/CLAUDE_D_20260918_compound_classifier_findings.json -- pointer only.
+    GONG: corrects commit 3772d29''s gong: {dot:false} back to dot:true. That commit''s own
+    message flagged its choice as a pattern-based judgment call between two conflicting
+    sources, not a citation, and said explicitly "if a future direct citation contradicts
+    it, that citation wins." Owner has now directly stated, this chat: "Gong uses rakka(.)
+    it''s clearly mentioned in the counting pdf" -- and when the source docx''s own gong
+    column was audited mechanically (19/19 dotted for n=1-19, 0/22 dotted for n=20-41,
+    zero exceptions either way), Owner''s call was that the missing dot in the 20-41 range
+    is a transcription gap in that one table (consistent with that table''s two OTHER
+    already-flagged bad gong cells: n=24''s duplicate, and n=41 itself), not a real
+    linguistic split -- directive: gong takes the dot at every number, 1 to infinity.
+    king''s separate resolution in 3772d29 (removed from RAKA_CLASSIFIERS) is UNRELATED and
+    UNAFFECTED by this gong correction.
+    MANG, URGENT, separately, NOT resolved by anything above: mang: {dot:true} is still
+    live (commit 5a900ac, 2026-09-17, citing "Achak mang·sotbrisa"). This is mang''s THIRD
+    reversal on this exact question -- dot:true (bug) -> de-dotted + closed by Owner
+    directive 2026-09-13 (reaffirmed by c234957), recorded as closed in Claude D''s own
+    2026-09-16 migration note ("mang de-dotting pass is already complete -- don''t
+    re-open") -> reopened to dot:true by 5a900ac. A direct WhatsApp exchange relayed by
+    Owner, dated 2026-09-18 (the day after 5a900ac): "[12:03 am, 18/9/2026] Tridip: Mang
+    and rong uses rakka or not? [12:03 am, 18/9/2026] Thangseng: No." suggests mang should
+    revert to dot:false (rong''s dot:false from that same 5a900ac commit is UNAFFECTED --
+    this citation confirms rong, doesn''t change it). Given three flips on one fact,
+    recommend citing the exact dated exchange verbatim in the code comment before landing
+    a fourth change, so a fifth reversal doesn''t happen blind. Not touched by Claude D.'

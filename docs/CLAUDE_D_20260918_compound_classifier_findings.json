@@ -1,0 +1,38 @@
+{
+  "schema": "lean-garo.compound_classifier_findings.v1",
+  "title": "gong: correcting 3772d29's no-dot call back to dot:true, full 1-99 table",
+  "prepared_by": "Claude D, 2026-09-18. No code touched -- not Claude D's lane. This is a correction + data for Claude B.",
+
+  "correction_gong": {
+    "current_live_state": "gong: { dot: false } (commit 3772d29, 2026-09-19). Live: translate('41 coins') = 'tangka bisil gongsotbrisa' (no dot).",
+    "why_this_needs_correcting": "3772d29's own commit message and code comment are explicit that this was a pattern-based judgment call between two conflicting sources ('gong·sotbrisa' chat-screenshot citation vs 'gongsotbrisa' docx table), NOT an independent Thangseng re-confirmation -- and it says outright: 'If a future direct citation contradicts it, that citation wins.' Owner has now, in this chat, directly and explicitly reaffirmed the dotted form: 'Gong uses rakka(.) it's clearly mentioned in the counting pdf.'",
+    "resolving_the_apparent_pdf_contradiction": "Audited the source table's own gong column mechanically: 19/41 rows (n=1-19, every single-digit and teen) have the dot; all 22 rows from n=20-41 do not. Owner's read, given this full breakdown: the missing dot in the 20-41 range is a transcription gap in that specific table (consistent with the table's two other already-documented bad gong cells -- n=24's duplicate, and n=41 itself), not a real split in the language. Directive: gong carries the dot at every number, 1 to infinity, no exception.",
+    "action_for_claude_b": "Set gong: { dot: true } in CONFIRMED_COMPOUND_CLASSIFIERS (reverting 3772d29's gong change specifically -- that commit's king change, i.e. removing king from RAKA_CLASSIFIERS, is UNRELATED and UNAFFECTED by this, still correct). Recommend the code comment cite this chat session's audit (19/19 dotted for n<20, 0/22 dotted for n=20-41, all in one table) alongside the Owner's explicit 'rakka at every number' directive, so the reasoning for trusting the screenshot citation over the table survives for whoever reads this next -- this exact fact has now flipped 3 times (dot -> no dot -> dot) and each flip needs to be traceable."
+  },
+
+  "gong_1_to_99_table": {
+    "_note": "Generated from the existing engine building blocks (BASE units 1-10, teens 'chi'+unit, TENS 20-90 from src/number_engine.js), with the dot applied once after 'gong' per the correction above, and the number word itself fused/lowercase per the already-confirmed 20-99 internal-fusion rule (no second dot, ever, inside the number itself).",
+    "1":"gong·sa","2":"gong·gni","3":"gong·gittam","4":"gong·bri","5":"gong·bonga","6":"gong·dok","7":"gong·sni","8":"gong·chet","9":"gong·sku","10":"gong·chikking",
+    "11":"gong·chisa","12":"gong·chigni","13":"gong·chigittam","14":"gong·chibri","15":"gong·chibonga","16":"gong·chidok","17":"gong·chisni","18":"gong·chichet","19":"gong·chisku",
+    "20":"gong·kolgrik","21":"gong·kolgriksa","22":"gong·kolgrikgni","23":"gong·kolgrikgittam","24":"gong·kolgrikbri","25":"gong·kolgrikbonga","26":"gong·kolgrikdok","27":"gong·kolgriksni","28":"gong·kolgrikchet","29":"gong·kolgriksku",
+    "30":"gong·kolatchi","31":"gong·kolatchisa","32":"gong·kolatchigni","33":"gong·kolatchigittam","34":"gong·kolatchibri","35":"gong·kolatchibonga","36":"gong·kolatchidok","37":"gong·kolatchisni","38":"gong·kolatchichet","39":"gong·kolatchisku",
+    "40":"gong·sotbri","41":"gong·sotbrisa","42":"gong·sotbrigni","43":"gong·sotbrigittam","44":"gong·sotbribri","45":"gong·sotbribonga","46":"gong·sotbridok","47":"gong·sotbrisni","48":"gong·sotbrichet","49":"gong·sotbrisku",
+    "50":"gong·sotbonga","51":"gong·sotbongasa","52":"gong·sotbongagni","53":"gong·sotbongagittam","54":"gong·sotbongabri","55":"gong·sotbongabonga","56":"gong·sotbongadok","57":"gong·sotbongasni","58":"gong·sotbongachet","59":"gong·sotbongasku",
+    "60":"gong·sotdok","61":"gong·sotdoksa","62":"gong·sotdokgni","63":"gong·sotdokgittam","64":"gong·sotdokbri","65":"gong·sotdokbonga","66":"gong·sotdokdok","67":"gong·sotdoksni","68":"gong·sotdokchet","69":"gong·sotdoksku",
+    "70":"gong·sotsni","71":"gong·sotsnisa","72":"gong·sotsnigni","73":"gong·sotsnigittam","74":"gong·sotsnibri","75":"gong·sotsnibonga","76":"gong·sotsnidok","77":"gong·sotsnisni","78":"gong·sotsnichet","79":"gong·sotsnisku",
+    "80":"gong·sotchet","81":"gong·sotchetsa","82":"gong·sotchetgni","83":"gong·sotchetgittam","84":"gong·sotchetbri","85":"gong·sotchetbonga","86":"gong·sotchetdok","87":"gong·sotchetsni","88":"gong·sotchetchet","89":"gong·sotchetsku",
+    "90":"gong·sotsku","91":"gong·sotskusa","92":"gong·sotskugni","93":"gong·sotskugittam","94":"gong·sotskubri","95":"gong·sotskubonga","96":"gong·sotskudok","97":"gong·sotskusni","98":"gong·sotskuchet","99":"gong·sotskusku"
+  },
+
+  "gong_100_and_above": {
+    "rule": "Not separately tested against a native citation for gong specifically, but follows the same existing architecture already used for sak/mang/rong: hundreds/thousands prefix as 'ritcha'/'hajal' + bareNumberWord, THEN the 1-99 remainder attaches via the table above unchanged.",
+    "examples_by_formula_not_citation": ["101 coins = ritcha gong·sa", "141 coins = ritcha gong·sotbrisa", "1000 coins = hajalsa gong (no remainder)"],
+    "caveat": "Flagging the formula, not asserting these exact strings as confirmed -- same caveat this session already applied to bol/king/ge/te's 100+ range."
+  },
+
+  "unrelated_still_open_this_session": {
+    "mang_URGENT_still_unresolved": "mang: { dot: true } is still live (commit 5a900ac, 2026-09-17, citing 'Achak mang·sotbrisa'). Live: translate('41 dogs') = 'achak mang·sotbrisa' (with dot). This is mang's THIRD reversal on this exact question: dot:true originally (bug) -> removed entirely by commit 22b3e6d (2026-09-13, Owner directive), reaffirmed by c234957, and recorded as closed in Claude D's 2026-09-16 migration note ('confirmation the mang de-dotting pass is already complete -- don't re-open') -> reopened to dot:true by 5a900ac (2026-09-17). New evidence: a direct WhatsApp exchange relayed by Owner, dated 2026-09-18 (the day after 5a900ac): '[12:03 am, 18/9/2026] Tridip: Mang and rong uses rakka or not? [12:03 am, 18/9/2026] Thangseng: No.' Suggested action for Claude B: revert mang to dot:false (rong's dot:false from the same 5a900ac commit is unaffected -- this citation confirms rong, doesn't change it). Given this is the third flip on one fact, recommend citing the exact dated exchange verbatim in the code comment so a fourth reversal doesn't happen blind.",
+    "king_n_less_than_20": "Resolved by 3772d29 (king doesn't use rakka, direct Owner directive) -- no longer open, noted here only so nobody re-opens it thinking this file's gong correction implies king should be re-checked too. It doesn't.",
+    "houses_plural_bug": "translate('N houses') for any N still returns '[UNKNOWN] Nok' as of the last check this session -- unrelated to classifier dot status, not addressed here."
+  }
+}

@@ -1,5 +1,22 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-18 by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-18 by Claude D
+(evidence-only session, no code touched -- not Claude D's lane. Corrects commit 3772d29's
+gong no-dot call. Full detail + full 1-99 table: docs/CLAUDE_D_20260918_compound_
+classifier_findings.json — READ THIS if you're Claude B touching
+CONFIRMED_COMPOUND_CLASSIFIERS. Headline: gong should be dot:true (Owner explicit
+directive, this chat, "rakka at every number, 1 to infinity" -- reverses 3772d29's
+dot:false, which its own commit message flagged as a judgment call, not a citation,
+explicitly reversible by a future direct instruction). Audited the source docx's own gong
+column mechanically first: 19/19 dotted for n=1-19, 0/22 dotted for n=20-41 -- Owner is that gap is a transcription problem in that one table, not a real split, consistent
+with that table's two other already-flagged bad gong cells. Separately still open, NOT
+touched by this: mang -- currently dot:true (commit 5a900ac, 2026-09-17), but this is
+mang's THIRD reversal on this exact question (dot:true bug -> de-dotted + closed by Owner
+directive 2026-09-13 -> reopened to dot:true by 5a900ac) and a direct Thangseng citation
+dated the day after that commit ("Mang and rong uses rakka or not?" -> "No", relayed via
+WhatsApp/Tridip) says it should be dot:false again -- flagged URGENT, unresolved, full
+detail in the JSON file above. King is correctly resolved by 3772d29 and NOT reopened by
+this note.)
+Prior: 2026-09-18 by Claude A
 (resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260916B.md. Full migration doc:
 docs/CLAUDE_A_SESSION_MIGRATION_20260918.md — READ IT FIRST, this line is just
 a pointer. Summary: resync found the prior close was fully clean, no real
