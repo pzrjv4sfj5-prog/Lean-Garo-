@@ -75885,5 +75885,1349 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH. Sense-tagged bare-verb exposure of the already-VERIFIED/HIGH 'I am taking a shower' root/au- paradigm (2026-08-09, reconfirmed via 2026-09-08 Thangseng transcript). Sense-tagged to distinguish from the pre-existing, unrelated, still-unverified noun sense 'shower'=gra·gra -- same english headword, two different words, not to be conflated or merged.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "send away",
+    "garo": "A·rikgala",
+    "category": null,
+    "pos": "v.",
+    "notes": "To drive away; to send away; to turn out; to expel; to evict; to oust; to eject."
+  },
+  {
+    "english": "expel",
+    "garo": "A·rikgala",
+    "category": null,
+    "pos": "v.",
+    "notes": "To drive away; to send away; to turn out; to expel; to evict; to oust; to eject."
+  },
+  {
+    "english": "evict",
+    "garo": "A·rikgala",
+    "category": null,
+    "pos": "v.",
+    "notes": "To drive away; to send away; to turn out; to expel; to evict; to oust; to eject."
+  },
+  {
+    "english": "eject",
+    "garo": "A·rikgala",
+    "category": null,
+    "pos": "v.",
+    "notes": "To drive away; to send away; to turn out; to expel; to evict; to oust; to eject."
+  },
+  {
+    "english": "reach the brink",
+    "garo": "A·rikring srita",
+    "category": null,
+    "pos": "v.",
+    "notes": "To reach to the brink (of water)."
+  },
+  {
+    "english": "alligator",
+    "garo": "Aringaa",
+    "category": null,
+    "pos": "n.",
+    "notes": "An alligator; a kind of monitor."
+  },
+  {
+    "english": "carefree",
+    "garo": "Ariri",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Carefree; freely."
+  },
+  {
+    "english": "freely",
+    "garo": "Ariri",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Carefree; freely."
+  },
+  {
+    "english": "Terminalia chebula",
+    "garo": "Aritak",
+    "category": null,
+    "pos": "n.",
+    "notes": "Terminalia chebula; Terminalia citrina. A middle-sized deciduous tree; fruits have medicinal property and dye."
+  },
+  {
+    "english": "Terminalia citrina",
+    "garo": "Aritak",
+    "category": null,
+    "pos": "n.",
+    "notes": "Terminalia chebula; Terminalia citrina. A middle-sized deciduous tree; fruits have medicinal property and dye."
+  },
+  {
+    "english": "besides",
+    "garo": "Aroba",
+    "category": null,
+    "pos": "conj.",
+    "notes": "Moreover; besides; in addition to; still more."
+  },
+  {
+    "english": "in addition",
+    "garo": "Aroba",
+    "category": null,
+    "pos": "conj.",
+    "notes": "Moreover; besides; in addition to; still more."
+  },
+  {
+    "english": "hill portion of land",
+    "garo": "A·rongga",
+    "category": null,
+    "pos": "n.",
+    "notes": "The hill portion of land; a jhum."
+  },
+  {
+    "english": "jhum",
+    "garo": "A·rongga",
+    "category": null,
+    "pos": "n.",
+    "notes": "The hill portion of land; a jhum."
+  },
+  {
+    "english": "hillside",
+    "garo": "A·rongrong",
+    "category": null,
+    "pos": "n.",
+    "notes": "The sloping land; a slope; hillside."
+  },
+  {
+    "english": "raft",
+    "garo": "Aru",
+    "category": null,
+    "pos": "n.",
+    "notes": "A raft; the refused things carried down by water."
+  },
+  {
+    "english": "Gracina xanthochymos",
+    "garo": "Aruak",
+    "category": null,
+    "pos": "n.",
+    "notes": "Gracina xanthochymos. A middle-sized evergreen tree with sombre green foliage and a deep narrow crown; the fruit is very acid and is eaten raw or dried."
+  },
+  {
+    "english": "fertile",
+    "garo": "A·sal gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Fertile (soil); rich soil."
+  },
+  {
+    "english": "rich soil",
+    "garo": "A·sal gnanggipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Fertile (soil); rich soil."
+  },
+  {
+    "english": "unfertile",
+    "garo": "A·sal gri",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Unfertile; barren; unfruitful; manureless."
+  },
+  {
+    "english": "barren",
+    "garo": "A·sal gri",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Unfertile; barren; unfruitful; manureless."
+  },
+  {
+    "english": "unfruitful",
+    "garo": "A·sal gri",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Unfertile; barren; unfruitful; manureless."
+  },
+  {
+    "english": "manureless",
+    "garo": "A·sal gri",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Unfertile; barren; unfruitful; manureless."
+  },
+  {
+    "english": "manure",
+    "garo": "A·sal on·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "To enrich with fertilizing substances; to manure."
+  },
+  {
+    "english": "enrich with fertilizing substances",
+    "garo": "A·sal on·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "To enrich with fertilizing substances; to manure."
+  },
+  {
+    "english": "fertilize",
+    "garo": "A·sal ong·ata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To make fertile; to fertilize."
+  },
+  {
+    "english": "make fertile",
+    "garo": "A·sal ong·ata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To make fertile; to fertilize."
+  },
+  {
+    "english": "along the border of the field",
+    "garo": "A·sam a·sam",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Along the border of the field."
+  },
+  {
+    "english": "fencing of the jhum",
+    "garo": "A·se",
+    "category": null,
+    "pos": "n.",
+    "notes": "The fencing of the jhum with branches and twigs."
+  },
+  {
+    "english": "by reason of",
+    "garo": "ni·g·sel",
+    "category": null,
+    "pos": "adv.",
+    "notes": "By reason of; on account of; on matters of."
+  },
+  {
+    "english": "on account of",
+    "garo": "ni·g·sel",
+    "category": null,
+    "pos": "adv.",
+    "notes": "By reason of; on account of; on matters of."
+  },
+  {
+    "english": "spend the day without useful purpose",
+    "garo": "A·sel grama",
+    "category": null,
+    "pos": "v.",
+    "notes": "To spend the day for no useful purpose; to pass the day without doing any work."
+  },
+  {
+    "english": "time when man-eating tiger habitually kills men",
+    "garo": "A·sel raka",
+    "category": null,
+    "pos": "n.",
+    "notes": "A time when man-eater tiger habitually kill men."
+  },
+  {
+    "english": "existence of a reason",
+    "garo": "A·sel gnang",
+    "category": null,
+    "pos": "n.",
+    "notes": "Existence of some reason; that portend some evil or trouble to come."
+  },
+  {
+    "english": "portent of trouble",
+    "garo": "A·sel gnang",
+    "category": null,
+    "pos": "n.",
+    "notes": "Existence of some reason; that portend some evil or trouble to come."
+  },
+  {
+    "english": "neighbouring jhum",
+    "garo": "A·sil",
+    "category": null,
+    "pos": "n.",
+    "notes": "A neighbouring jhum; an adjoining land."
+  },
+  {
+    "english": "adjoining land",
+    "garo": "A·sil",
+    "category": null,
+    "pos": "n.",
+    "notes": "A neighbouring jhum; an adjoining land."
+  },
+  {
+    "english": "Symplocos spicata",
+    "garo": "Asila",
+    "category": null,
+    "pos": "n.",
+    "notes": "Symplocos spicata. A small tree; decoction of leaves used in Indian medicine."
+  },
+  {
+    "english": "cliff",
+    "garo": "A·silang",
+    "category": null,
+    "pos": "n.",
+    "notes": "A precipice; a cliff."
+  },
+  {
+    "english": "cricket",
+    "garo": "Asilik",
+    "category": null,
+    "pos": "n.",
+    "notes": "A cricket; a mole-cricket."
+  },
+  {
+    "english": "mole-cricket",
+    "garo": "Asilik",
+    "category": null,
+    "pos": "n.",
+    "notes": "A cricket; a mole-cricket."
+  },
+  {
+    "english": "salt-spring",
+    "garo": "A·sim",
+    "category": null,
+    "pos": "n.",
+    "notes": "Salt-spring; a resort of wild animals such as a salt-lick; a salt marsh; a saline."
+  },
+  {
+    "english": "salt-lick",
+    "garo": "A·sim",
+    "category": null,
+    "pos": "n.",
+    "notes": "Salt-spring; a resort of wild animals such as a salt-lick; a salt marsh; a saline."
+  },
+  {
+    "english": "salt marsh",
+    "garo": "A·sim",
+    "category": null,
+    "pos": "n.",
+    "notes": "Salt-spring; a resort of wild animals such as a salt-lick; a salt marsh; a saline."
+  },
+  {
+    "english": "saline",
+    "garo": "A·sim",
+    "category": null,
+    "pos": "n.",
+    "notes": "Salt-spring; a resort of wild animals such as a salt-lick; a salt marsh; a saline."
+  },
+  {
+    "english": "mother of Susime",
+    "garo": "Asima Dingsima",
+    "category": null,
+    "pos": "n.",
+    "notes": "The mother of Susime in Garo mythology."
+  },
+  {
+    "english": "forbidden",
+    "garo": "Asimalja",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Among primitive Garo people, forbidden for religious reason; a taboo."
+  },
+  {
+    "english": "ceremony involving fowl sacrifice before seeds are sown",
+    "garo": "A·sioka",
+    "category": null,
+    "pos": "n.",
+    "notes": "A ceremony in which fowl sacrifices are offered on the next morning when the jhums are burnt before seeds are sown."
+  },
+  {
+    "english": "shoulder-carrier for luggage",
+    "garo": "Bara-basi",
+    "category": null,
+    "pos": "n.",
+    "notes": "A stick with ropes hang from each end for slinging luggage to be carried on the shoulder."
+  },
+  {
+    "english": "weave",
+    "garo": "Ba·ra doka",
+    "category": null,
+    "pos": "v.",
+    "notes": "To weave."
+  },
+  {
+    "english": "fringe",
+    "garo": "Ba·ra jate",
+    "category": null,
+    "pos": "n.",
+    "notes": "A tassel; a fringe."
+  },
+  {
+    "english": "hire",
+    "garo": "Bara",
+    "category": null,
+    "pos": "n.",
+    "notes": "Hire; fare; rent."
+  },
+  {
+    "english": "hire",
+    "garo": "Bara ra·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "To hire."
+  },
+  {
+    "english": "put one's hand on another's shoulder and walk on",
+    "garo": "Bara kaa",
+    "category": null,
+    "pos": "v.",
+    "notes": "To put the hand of one on the shoulder of another and walk on."
+  },
+  {
+    "english": "walk abreast",
+    "garo": "Bara kae re·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "To walk abreast."
+  },
+  {
+    "english": "chintz",
+    "garo": "Ba·rachit",
+    "category": null,
+    "pos": "n.",
+    "notes": "Chintz."
+  },
+  {
+    "english": "remove clothing",
+    "garo": "Ba·ra kika",
+    "category": null,
+    "pos": "vi.",
+    "notes": "To remove clothing."
+  },
+  {
+    "english": "rag",
+    "garo": "Ba·rasuri",
+    "category": null,
+    "pos": "n.",
+    "notes": "A rag."
+  },
+  {
+    "english": "verandah",
+    "garo": "Baranda",
+    "category": null,
+    "pos": "n.",
+    "notes": "Verandah; a part of the building which is left out unwalled."
+  },
+  {
+    "english": "moderate-sized deciduous tree",
+    "garo": "Barare",
+    "category": null,
+    "pos": "n.",
+    "notes": "A moderate-sized deciduous tree."
+  },
+  {
+    "english": "moderate-sized deciduous tree",
+    "garo": "Babare",
+    "category": null,
+    "pos": "n.",
+    "notes": "A moderate-sized deciduous tree."
+  },
+  {
+    "english": "partition wall",
+    "garo": "Bare",
+    "category": null,
+    "pos": "n.",
+    "notes": "A wall; a partition wall; the side of a boat."
+  },
+  {
+    "english": "side of a boat",
+    "garo": "Bare",
+    "category": null,
+    "pos": "n.",
+    "notes": "A wall; a partition wall; the side of a boat."
+  },
+  {
+    "english": "fence",
+    "garo": "Baria",
+    "category": null,
+    "pos": "v.",
+    "notes": "To fence; to enclose; to increase."
+  },
+  {
+    "english": "fence",
+    "garo": "Bari kaa",
+    "category": null,
+    "pos": "v.",
+    "notes": "To fence."
+  },
+  {
+    "english": "extend",
+    "garo": "Bariata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To extend; to expand; to increase; to enhance; to raise; to widen."
+  },
+  {
+    "english": "expand",
+    "garo": "Bariata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To extend; to expand; to increase; to enhance; to raise; to widen."
+  },
+  {
+    "english": "enhance",
+    "garo": "Bariata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To extend; to expand; to increase; to enhance; to raise; to widen."
+  },
+  {
+    "english": "widen",
+    "garo": "Bariata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To extend; to expand; to increase; to enhance; to raise; to widen."
+  },
+  {
+    "english": "attend to",
+    "garo": "Ba·rika",
+    "category": null,
+    "pos": "v.",
+    "notes": "To attend to a child; to look after a child."
+  },
+  {
+    "english": "look after a child",
+    "garo": "Ba·rika",
+    "category": null,
+    "pos": "v.",
+    "notes": "To attend to a child; to look after a child."
+  },
+  {
+    "english": "belonging to same parents",
+    "garo": "Ba·rima",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Belonging to same parents; born of same parents."
+  },
+  {
+    "english": "persons of the same parents",
+    "garo": "Ba·rima-sokchaa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Persons of the same parents."
+  },
+  {
+    "english": "gunpowder",
+    "garo": "Barut",
+    "category": null,
+    "pos": "n.",
+    "notes": "Gunpowder."
+  },
+  {
+    "english": "tent",
+    "garo": "Baga",
+    "category": null,
+    "pos": "n.",
+    "notes": "A tent; a hut; a camp; dwelling place."
+  },
+  {
+    "english": "hut",
+    "garo": "Baga",
+    "category": null,
+    "pos": "n.",
+    "notes": "A tent; a hut; a camp; dwelling place."
+  },
+  {
+    "english": "camp",
+    "garo": "Baga",
+    "category": null,
+    "pos": "n.",
+    "notes": "A tent; a hut; a camp; dwelling place."
+  },
+  {
+    "english": "how soon",
+    "garo": "Basakgijal",
+    "category": null,
+    "pos": "adv.",
+    "notes": "How soon."
+  },
+  {
+    "english": "lean-to",
+    "garo": "Base pina",
+    "category": null,
+    "pos": "n.",
+    "notes": "A lean to; a shelter."
+  },
+  {
+    "english": "some day",
+    "garo": "Basakoba",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Sometime or other; some day, sometime in future."
+  },
+  {
+    "english": "occasionally",
+    "garo": "Basakoba basakoba",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Sometimes; occasionally; now and then; at times."
+  },
+  {
+    "english": "now and then",
+    "garo": "Basakoba basakoba",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Sometimes; occasionally; now and then; at times."
+  },
+  {
+    "english": "from what date",
+    "garo": "Basakintal",
+    "category": null,
+    "pos": "adv.",
+    "notes": "From what date; since when; when."
+  },
+  {
+    "english": "since when",
+    "garo": "Basakintal",
+    "category": null,
+    "pos": "adv.",
+    "notes": "From what date; since when; when."
+  },
+  {
+    "english": "sort",
+    "garo": "Basea",
+    "category": null,
+    "pos": "v.",
+    "notes": "To choose; to select; to sort in; to be sorted; to separate one thing from another."
+  },
+  {
+    "english": "take out one thing from others",
+    "garo": "Basegala",
+    "category": null,
+    "pos": "v.",
+    "notes": "To take out one thing from amongst the other things."
+  },
+  {
+    "english": "selected",
+    "garo": "Basegimin",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Selected, chosen."
+  },
+  {
+    "english": "chosen",
+    "garo": "Basegimin",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Selected, chosen."
+  },
+  {
+    "english": "rejected",
+    "garo": "Basegalgimin",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Rejected."
+  },
+  {
+    "english": "a certain number or quantity",
+    "garo": "Basikba",
+    "category": null,
+    "pos": "adj.",
+    "notes": "A certain number or quantity."
+  },
+  {
+    "english": "water vessel",
+    "garo": "Basing",
+    "category": null,
+    "pos": "n.",
+    "notes": "A water vessel; a pot; a pitcher."
+  },
+  {
+    "english": "pitcher",
+    "garo": "Basing",
+    "category": null,
+    "pos": "n.",
+    "notes": "A water vessel; a pot; a pitcher."
+  },
+  {
+    "english": "crest",
+    "garo": "Basu",
+    "category": null,
+    "pos": "n.",
+    "notes": "A crest; erectile turf-feathers of a bird's head."
+  },
+  {
+    "english": "crested bird",
+    "garo": "Basucheng",
+    "category": null,
+    "pos": "n.",
+    "notes": "A bird having a crest."
+  },
+  {
+    "english": "greater than",
+    "garo": "Bata",
+    "category": null,
+    "pos": "suffix",
+    "notes": "A noun or verb suffix meaning greater than; examples: nambata—better; rakbata—harder; ga·bata—to cross; chrok-bata—to jump over; chobata (ringko)—to cross over by boat."
+  },
+  {
+    "english": "wade",
+    "garo": "Bata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To cross; to wade; to fold; to pass; to contact as disease; to contract a disease; to infect; to exceed; to excel; to increase; to surpass; to be better."
+  },
+  {
+    "english": "be submissive",
+    "garo": "Bame on·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "To be submissive; to yield; to be allowed to be beaten."
+  },
+  {
+    "english": "yield",
+    "garo": "Bame on·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "To be submissive; to yield; to be allowed to be beaten."
+  },
+  {
+    "english": "bow down",
+    "garo": "Bamgopa",
+    "category": null,
+    "pos": "v.",
+    "notes": "To bow down; to bend; to hang down; to droop; to lie close to the ground; to crouch."
+  },
+  {
+    "english": "droop",
+    "garo": "Bamgopa",
+    "category": null,
+    "pos": "v.",
+    "notes": "To bow down; to bend; to hang down; to droop; to lie close to the ground; to crouch."
+  },
+  {
+    "english": "droop",
+    "garo": "Jol-wea",
+    "category": null,
+    "pos": "v.",
+    "notes": "To droop; to hang down."
+  },
+  {
+    "english": "second",
+    "garo": "Bamil rata",
+    "category": null,
+    "pos": "v.",
+    "notes": "The second or last weeding of a jhum."
+  },
+  {
+    "english": "second",
+    "garo": "Bamil rata",
+    "category": null,
+    "pos": "n.",
+    "notes": "The second or last weeding of a jhum."
+  },
+  {
+    "english": "last weeding of a jhum",
+    "garo": "Bamil rata",
+    "category": null,
+    "pos": "v.",
+    "notes": "The second or last weeding of a jhum."
+  },
+  {
+    "english": "last weeding of a jhum",
+    "garo": "Bamil rata",
+    "category": null,
+    "pos": "n.",
+    "notes": "The second or last weeding of a jhum."
+  },
+  {
+    "english": "bursting of a dam",
+    "garo": "Ban be·praka",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Bursting of a dam."
+  },
+  {
+    "english": "bursting of a dam",
+    "garo": "Ban be·praka",
+    "category": null,
+    "pos": "vt.",
+    "notes": "Bursting of a dam."
+  },
+  {
+    "english": "flow",
+    "garo": "Bana",
+    "category": null,
+    "pos": "v.",
+    "notes": "To flow; flood; inundation."
+  },
+  {
+    "english": "inundation",
+    "garo": "Bana",
+    "category": null,
+    "pos": "n.",
+    "notes": "To flow; flood; inundation."
+  },
+  {
+    "english": "invent",
+    "garo": "Banaia",
+    "category": null,
+    "pos": "v.",
+    "notes": "To invent; to fabricate; to devise falsely; to manufacture; to make; to concoct (as a falsehood); to make up; invented statement; figment; a make up story."
+  },
+  {
+    "english": "fabricate",
+    "garo": "Banaia",
+    "category": null,
+    "pos": "v.",
+    "notes": "To invent; to fabricate; to devise falsely; to manufacture; to make; to concoct (as a falsehood); to make up; invented statement; figment; a make up story."
+  },
+  {
+    "english": "manufacture",
+    "garo": "Banaia",
+    "category": null,
+    "pos": "v.",
+    "notes": "To invent; to fabricate; to devise falsely; to manufacture; to make; to concoct (as a falsehood); to make up; invented statement; figment; a make up story."
+  },
+  {
+    "english": "make up",
+    "garo": "Banaia",
+    "category": null,
+    "pos": "v.",
+    "notes": "To invent; to fabricate; to devise falsely; to manufacture; to make; to concoct (as a falsehood); to make up; invented statement; figment; a make up story."
+  },
+  {
+    "english": "make-up story",
+    "garo": "Banaia katta",
+    "category": null,
+    "pos": "n.",
+    "notes": "A make-up story; a fiction."
+  },
+  {
+    "english": "fiction",
+    "garo": "Banaia katta",
+    "category": null,
+    "pos": "n.",
+    "notes": "A make-up story; a fiction."
+  },
+  {
+    "english": "float downstream",
+    "garo": "Bananga",
+    "category": null,
+    "pos": "v.",
+    "notes": "To be carried down by water; to float downstream."
+  },
+  {
+    "english": "woollen cloth",
+    "garo": "Banat",
+    "category": null,
+    "pos": "n.",
+    "notes": "A kind of woollen cloth."
+  },
+  {
+    "english": "not full length",
+    "garo": "Banda",
+    "category": null,
+    "pos": "adj.",
+    "notes": "A portion; a piece; not full length; short."
+  },
+  {
+    "english": "powerful man in Garo mythology",
+    "garo": "Bandi",
+    "category": null,
+    "pos": "n.",
+    "notes": "In Garo mythology a very powerful man possessing herculean strength."
+  },
+  {
+    "english": "floating object remaining in one place",
+    "garo": "Banga",
+    "category": null,
+    "pos": "n.",
+    "notes": "To remain in one place of something floating on the water."
+  },
+  {
+    "english": "floating object remaining in one place",
+    "garo": "Bangrika",
+    "category": null,
+    "pos": "n.",
+    "notes": "To remain in one place of something floating on the water."
+  },
+  {
+    "english": "remain in one place",
+    "garo": "Banga",
+    "category": null,
+    "pos": "vi.",
+    "notes": "To remain in one place of something floating on the water."
+  },
+  {
+    "english": "remain in one place",
+    "garo": "Bangrika",
+    "category": null,
+    "pos": "vi.",
+    "notes": "To remain in one place of something floating on the water."
+  },
+  {
+    "english": "not much",
+    "garo": "Bang·a-jala (ong·ja)",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Not much; not many; only a few; used only in negative sense."
+  },
+  {
+    "english": "not many",
+    "garo": "Bang·a-jala (ong·ja)",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Not much; not many; only a few; used only in negative sense."
+  },
+  {
+    "english": "only a few",
+    "garo": "Bang·a-jala (ong·ja)",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Not much; not many; only a few; used only in negative sense."
+  },
+  {
+    "english": "spacious",
+    "garo": "Bang-basang",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Spacious; empty; vacant."
+  },
+  {
+    "english": "vacant",
+    "garo": "Bang-basang",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Spacious; empty; vacant."
+  },
+  {
+    "english": "at what time",
+    "garo": "Ban-",
+    "category": null,
+    "pos": "prefix",
+    "notes": "Prefix meaning where, which, at what (time)."
+  },
+  {
+    "english": "expression of negation",
+    "garo": "Banisae",
+    "category": null,
+    "pos": "interj.",
+    "notes": "An expression of negation."
+  },
+  {
+    "english": "greater number or quantity",
+    "garo": "Bang-bata",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Majority; more; greater number or quantity."
+  },
+  {
+    "english": "slight difference",
+    "garo": "Bang-gija",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Slight (difference); little quantity."
+  },
+  {
+    "english": "little quantity",
+    "garo": "Bang-gija",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Slight (difference); little quantity."
+  },
+  {
+    "english": "stick in the throat",
+    "garo": "Bangkanga",
+    "category": null,
+    "pos": "v.",
+    "notes": "To stick in the throat (as fish bone, etc.)."
+  },
+  {
+    "english": "play the flute",
+    "garo": "Bangsi sika",
+    "category": null,
+    "pos": "v.",
+    "notes": "To play the flute."
+  },
+  {
+    "english": "keep clear of weeds and refuse",
+    "garo": "Bangtalata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To keep clear of weeds and refuses."
+  },
+  {
+    "english": "somewhere else",
+    "garo": "Banoba banoba",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Somewhere else."
+  },
+  {
+    "english": "whereto",
+    "garo": "Banona (Ba-no-na)",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Where; whereto."
+  },
+  {
+    "english": "whereto",
+    "garo": "Baona",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Whereto; to which place; where."
+  },
+  {
+    "english": "float down",
+    "garo": "Banona (ban-ona)",
+    "category": null,
+    "pos": "v.",
+    "notes": "To float down."
+  },
+  {
+    "english": "float down the stream",
+    "garo": "Banonanga",
+    "category": null,
+    "pos": "v.",
+    "notes": "To float down the stream."
+  },
+  {
+    "english": "float or carry lightly over water",
+    "garo": "Banpaka",
+    "category": null,
+    "pos": "vt.",
+    "notes": "To float or carry lightly over water."
+  },
+  {
+    "english": "wherefrom",
+    "garo": "Baonai",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Whence; wherefrom."
+  },
+  {
+    "english": "look down upon smaller things in pursuit of greater things",
+    "garo": "Baroa ong·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "To look down upon smaller things in pursuit of greater things where one fails to get."
+  },
+  {
+    "english": "gecko",
+    "garo": "Bapme",
+    "category": null,
+    "pos": "n.",
+    "notes": "A gecko."
+  },
+  {
+    "english": "expression of contempt",
+    "garo": "Bapre",
+    "category": null,
+    "pos": "interj.",
+    "notes": "An expression of contempt; an expression of wonder."
+  },
+  {
+    "english": "abscond",
+    "garo": "Joke kata",
+    "category": null,
+    "pos": "v.",
+    "notes": "To escape; to abscond."
+  },
+  {
+    "english": "leap",
+    "garo": "Jokjoka",
+    "category": null,
+    "pos": "v.",
+    "notes": "To dance; to leap; to move the body up and down by bending the knees."
+  },
+  {
+    "english": "flow constantly",
+    "garo": "Jokjoljola",
+    "category": null,
+    "pos": "v.",
+    "notes": "To flow constantly."
+  },
+  {
+    "english": "flow by",
+    "garo": "Jokpaka (chi gita)",
+    "category": null,
+    "pos": "v.",
+    "notes": "To flow by; to pass close to (as a river)."
+  },
+  {
+    "english": "pass close to",
+    "garo": "Jokpaka (chi gita)",
+    "category": null,
+    "pos": "v.",
+    "notes": "To flow by; to pass close to (as a river)."
+  },
+  {
+    "english": "flow by breaking through",
+    "garo": "Jokpraka",
+    "category": null,
+    "pos": "v.",
+    "notes": "To flow by breaking through; to force through as current."
+  },
+  {
+    "english": "force through",
+    "garo": "Jokpraka",
+    "category": null,
+    "pos": "v.",
+    "notes": "To flow by breaking through; to force through as current."
+  },
+  {
+    "english": "cause to curd by heat",
+    "garo": "Jo·krapa",
+    "category": null,
+    "pos": "v.",
+    "notes": "To fry; to cause to curd by heat when cooking; to frizzle."
+  },
+  {
+    "english": "frizzle",
+    "garo": "Jo·krapa",
+    "category": null,
+    "pos": "v.",
+    "notes": "To fry; to cause to curd by heat when cooking; to frizzle."
+  },
+  {
+    "english": "parry",
+    "garo": "Jokrongreta",
+    "category": null,
+    "pos": "v.",
+    "notes": "To parry; to avert (a blow); to ward off (the blow); to escape from being caught."
+  },
+  {
+    "english": "avert",
+    "garo": "Jokrongreta",
+    "category": null,
+    "pos": "v.",
+    "notes": "To parry; to avert (a blow); to ward off (the blow); to escape from being caught."
+  },
+  {
+    "english": "ward off",
+    "garo": "Jokrongreta",
+    "category": null,
+    "pos": "v.",
+    "notes": "To parry; to avert (a blow); to ward off (the blow); to escape from being caught."
+  },
+  {
+    "english": "escape being caught",
+    "garo": "Jokrongreta",
+    "category": null,
+    "pos": "v.",
+    "notes": "To parry; to avert (a blow); to ward off (the blow); to escape from being caught."
+  },
+  {
+    "english": "gush (of water)",
+    "garo": "Jokselsela",
+    "category": null,
+    "pos": "v.",
+    "notes": "To gush (of water)."
+  },
+  {
+    "english": "miss one's aim",
+    "garo": "Joksreta",
+    "category": null,
+    "pos": "v.",
+    "notes": "To cross; to come from opposite direction but somehow escapes meeting; to miss (one's aim); to turn aside a blow in order not to be hit."
+  },
+  {
+    "english": "turn aside a blow",
+    "garo": "Joksreta",
+    "category": null,
+    "pos": "v.",
+    "notes": "To cross; to come from opposite direction but somehow escapes meeting; to miss (one's aim); to turn aside a blow in order not to be hit."
+  },
+  {
+    "english": "run over",
+    "garo": "Joksuaka",
+    "category": null,
+    "pos": "vi.",
+    "notes": "To overflow; to run over."
+  },
+  {
+    "english": "while doing something else",
+    "garo": "·jola",
+    "category": null,
+    "pos": "suffix",
+    "notes": "Suffix added to verbs; example in source: `Anga Bazarchini re·bapilon matchu mangsako nikbajolaha`."
+  },
+  {
+    "english": "while doing something else",
+    "garo": "Jola",
+    "category": null,
+    "pos": "suffix",
+    "notes": "A suffix appended to verbs with a sense of doing a thing while doing something else."
+  },
+  {
+    "english": "fall flat on the ground",
+    "garo": "Jolbrak dake ga·aka",
+    "category": null,
+    "pos": "vi.",
+    "notes": "To fall flat on the ground."
+  },
+  {
+    "english": "be immediately as asked",
+    "garo": "Jol daka",
+    "category": null,
+    "pos": "v.",
+    "notes": "To be immediately as asked."
+  },
+  {
+    "english": "one who says yes to everything",
+    "garo": "Jola jola dakgipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "One who says 'yes' to everything."
+  },
+  {
+    "english": "one who says yes to everything",
+    "garo": "Jola jola dakgipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "One who says 'yes' to everything."
+  },
+  {
+    "english": "tall and slender",
+    "garo": "Joldengbakbak",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Tall and slender; lanky."
+  },
+  {
+    "english": "lanky",
+    "garo": "Joldengbakbak",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Tall and slender; lanky."
+  },
+  {
+    "english": "whole length",
+    "garo": "Jolgimik",
+    "category": null,
+    "pos": "n.",
+    "notes": "The whole length."
+  },
+  {
+    "english": "effeminate",
+    "garo": "Jol-jibrak",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Weak; effeminate."
+  },
+  {
+    "english": "coop-shaped fish-trap",
+    "garo": "Jolpi",
+    "category": null,
+    "pos": "n.",
+    "notes": "A coop-shaped fish-trap thrust down over a fish."
+  },
+  {
+    "english": "take up by ladle or spoon",
+    "garo": "Jol-waka",
+    "category": null,
+    "pos": "v.",
+    "notes": "To lift or take up by means of ladle or spoon."
+  },
+  {
+    "english": "become almost liquid",
+    "garo": "Jol-weka",
+    "category": null,
+    "pos": "v.",
+    "notes": "To become almost liquid owing to overdoing, cooking; to overripen."
+  },
+  {
+    "english": "overripen",
+    "garo": "Jol-weka",
+    "category": null,
+    "pos": "v.",
+    "notes": "To become almost liquid owing to overdoing, cooking; to overripen."
+  },
+  {
+    "english": "hang down",
+    "garo": "Jol-wea",
+    "category": null,
+    "pos": "v.",
+    "notes": "To droop; to hang down."
+  },
+  {
+    "english": "get unwell",
+    "garo": "Joma",
+    "category": null,
+    "pos": "v.",
+    "notes": "To get unwell; to be sick."
+  },
+  {
+    "english": "be sick",
+    "garo": "Joma",
+    "category": null,
+    "pos": "v.",
+    "notes": "To get unwell; to be sick."
+  },
+  {
+    "english": "go by stealth",
+    "garo": "Jom·anga",
+    "category": null,
+    "pos": "v.",
+    "notes": "To go by stealth; to creep along stealthily or quietly; to stalk."
+  },
+  {
+    "english": "creep",
+    "garo": "Jom·anga",
+    "category": null,
+    "pos": "v.",
+    "notes": "To go by stealth; to creep along stealthily or quietly; to stalk."
+  },
+  {
+    "english": "sickly",
+    "garo": "Jommokmrok",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Sickly; languid; appearing as if sick; sallow."
+  },
+  {
+    "english": "languid",
+    "garo": "Jommokmrok",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Sickly; languid; appearing as if sick; sallow."
+  },
+  {
+    "english": "sallow",
+    "garo": "Jommokmrok",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Sickly; languid; appearing as if sick; sallow."
+  },
+  {
+    "english": "slowly",
+    "garo": "Jom-pe jom-pe",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Slowly."
+  },
+  {
+    "english": "younger brother",
+    "garo": "Jong",
+    "category": null,
+    "pos": "n.",
+    "notes": "Younger brother; a cousin younger than (he); a word of endearment to one who is younger than oneself."
+  },
+  {
+    "english": "younger brother",
+    "garo": "Jongsipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Younger brother; a cousin younger than (he); a word of endearment to one who is younger than oneself."
+  },
+  {
+    "english": "younger cousin",
+    "garo": "Jong",
+    "category": null,
+    "pos": "n.",
+    "notes": "Younger brother; a cousin younger than (he); a word of endearment to one who is younger than oneself."
+  },
+  {
+    "english": "younger cousin",
+    "garo": "Jongsipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Younger brother; a cousin younger than (he); a word of endearment to one who is younger than oneself."
+  },
+  {
+    "english": "along",
+    "garo": "Jol jol",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Along; direct; continually."
+  },
+  {
+    "english": "continually",
+    "garo": "Jol jol",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Along; direct; continually."
   }
 ]
