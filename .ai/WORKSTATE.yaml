@@ -313,38 +313,44 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-18B (Claude A, session complete -- see
-    docs/CLAUDE_A_SESSION_MIGRATION_20260918B.md for full detail, this
+  next_action: '2026-09-19 (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260919.md for full detail, this
     is a pointer only, resumed from
-    docs/CLAUDE_A_SESSION_MIGRATION_20260918.md). Resync clean at
-    3772d29 == origin/main (4 Claude B engineering commits beyond
-    20260918''s close, no Claude A drift). Checked 3 WhatsApp relay
-    batches (Thangseng, via Project Owner, dated 2026-09-08) against
-    the repo. Batch 1: I-am-cooking/I-will-cook/shower paradigm all
-    already VERIFIED/HIGH, pure reconfirmation except "I build the
-    house"=Anga nokko rika and "I am building the house"=Anga nokko
-    rikenga, previously only example-sentence citations, now added as
-    standalone VERIFIED/HIGH rows. Batch 2 (Project Owner instruction,
-    same session): added 3 sense-tagged bare-verb component entries
-    exposing already-VERIFIED roots under new keys -- "build (verb,
-    general)"=Rik·a, "building (verb, continuous)"=Rik·enga
-    (sense-tagged apart from the unrelated noun "building"=nok),
-    "shower (verb, continuous)"=Auenga (apart from noun
-    "shower"=gra·gra). Batch 3: joljol/srongsrong (straight-away vs.
-    spatial-straight) + "come/go a little here/there" -- 100%
-    reconfirmation, zero repo changes, both atomic single-morpheme
-    adverbs with no components to break out. RUNTIME HANDOFF TO
-    CLAUDE B, NEW THIS SESSION: trailing punctuation (a period) breaks
-    exact-phrase/corrections lookup entirely, falling to
-    grammar-assembly/compound-split/morphology and shipping degraded
-    or literal [UNKNOWN] output -- confirmed on multiple already-
-    VERIFIED keys, looks repo-wide not key-specific, not fixed (not
-    Claude A''s lane). Gate green throughout both commits: 8563/8563
-    dictionary, 9/9 grammatical corrections, 431/431 unit tests, 0 new
-    repository-intelligence violations. Two commits, no push
-    collisions: 12e89b8 (build/cook/shower), 9b5eb3f (component
-    entries). Pushed clean, final HEAD 9b5eb3f, verified ==
-    origin/main, no local/uncommitted changes.
+    docs/CLAUDE_A_SESSION_MIGRATION_20260918D.md). Resync clean at
+    fed025e == origin/main. Three tasks: (1) promoted the 192-entry
+    staged OCR batch (PL-0002015..PL-0002206, pages 13/20/21/108) --
+    172 clean, 20 as coexisting unverified variants across 10
+    within-batch pairs; found a pre-existing uncited corrections.json
+    "fertile"->"a''be·en" override shadowing the newly-cited entry,
+    allowlisted not resolved. (2) imported + reviewed + promoted
+    Claude D''s P24/P25 handoff (84 entries) -- 67 clean, 11 coexisting
+    variants, 4 renamed to sense-tagged keys ("skin (verb)", "smell
+    (verb, perceive)", "flower (verb)", "cane (verb)") to stop them
+    shadowing already-VERIFIED native-confirmed entries, 1 rejected as
+    a raka-less duplicate ("place"->"Biap"). New finding, not fixed:
+    corrections.json''s "skin"->"bigi" / "smell"->"biba" look
+    truncated/corrupted, predate this session. (3) Project Owner
+    relayed direct native confirmation closing all 4 P24/P25 held
+    items: added "he"->"Bia" (VERIFIED/HIGH, synonym of existing
+    "Ua", kept Ua as shipped primary) and "bark"->"bi·gil"
+    (VERIFIED/HIGH, shared root with the existing VERIFIED
+    "Skin"->"bi·gil"/NV-080); promoted the pre-existing unverified "to
+    pray"->"Bi·a" to VERIFIED/HIGH (flagged, not merged, against the
+    separately-VERIFIED "pray"->"Bi·bo"/NV-095); "a flower" and "curry"
+    resolved as non-issues (Claude D''s comparison targets were
+    stale -- both candidates simply reconfirmed already-VERIFIED
+    values). Documented all 4 resolutions directly in the Claude D
+    handoff JSON. Rebased twice against concurrent Claude D/Claude B
+    commits (Claude B''s 353b0bd restored the "to " prefix on 27 bare
+    verbs from task 2, including the 4 sense-tagged keys -- merged
+    cleanly, master_dictionary.json/pending_lexicon.json auto-merged,
+    only generated artifacts conflicted, rebuilt fresh each time). No
+    Claude B/runtime handoff this session. Gate green throughout, final:
+    8813/8813 dictionary, 9/9 grammatical corrections, 441/441 unit
+    tests, 0 new repository-intelligence violations, 0 resync
+    candidates. Pushed clean across 3 commits (f9a2b5c, 28b990e,
+    1c7504f), final HEAD 1c7504f, verified == origin/main, no
+    local/uncommitted changes.
 '
   next_action_prior_20260918: '2026-09-18 (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260918.md for full detail, this
