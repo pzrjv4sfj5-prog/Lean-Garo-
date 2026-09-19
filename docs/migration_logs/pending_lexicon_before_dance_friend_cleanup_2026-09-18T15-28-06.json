@@ -26699,14 +26699,14 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20. OCR-flagged for structural reason only (dual-POS split, cut-off tail, or verbatim typo) - no actual doubt about the core lexical mapping. REJECTED (post-promotion retraction) 2026-09-18 (Claude D, dance/friend cleanup): superseded by NV-095 (2026-08-23, Thangseng final reconciliation) which established 'dance'=Chroka; this promoted 'Grika' entry was a stale duplicate under a different English key ('To dance.' vs 'dance') that NV-095 never touched, causing a live cross-key conflict in compiled_dict.json. Removed from master_dictionary.json; this pending_lexicon record retained per citation discipline, not deleted.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20. OCR-flagged for structural reason only (dual-POS split, cut-off tail, or verbatim typo) - no actual doubt about the core lexical mapping.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "rejected",
+    "promotion_status": "promoted",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {

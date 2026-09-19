@@ -8927,6 +8927,114 @@
     "confidence": "unverified"
   },
   {
+    "english": "i dance (present)",
+    "garo": "ang dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "i dance (past)",
+    "garo": "ang danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "i dance (future)",
+    "garo": "ang dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "you (singular) dance (present)",
+    "garo": "na· dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "you (singular) dance (past)",
+    "garo": "na· danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "you (singular) dance (future)",
+    "garo": "na· dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "he/she dance (present)",
+    "garo": "u dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "he/she dance (past)",
+    "garo": "u danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "he/she dance (future)",
+    "garo": "u dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "we dance (present)",
+    "garo": "i dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "we dance (past)",
+    "garo": "i danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "we dance (future)",
+    "garo": "i dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "you (plural) dance (present)",
+    "garo": "si dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "you (plural) dance (past)",
+    "garo": "si danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "you (plural) dance (future)",
+    "garo": "si dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "they dance (present)",
+    "garo": "bi dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "they dance (past)",
+    "garo": "bi danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "english": "they dance (future)",
+    "garo": "bi dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
     "english": "i buy (present)",
     "garo": "ang buya",
     "category": "work",
@@ -18296,11 +18404,11 @@
   },
   {
     "english": "Friend",
-    "garo": "Ripeng",
+    "garo": "Ripsak / Ripeng",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — friend = Ripeng. Project Owner (chat, 2026-09-18): confirmed friend = Ripeng; alternate forms are not valid — superseded.",
+    "notes": "VERIFIED/HIGH v:Ripeng / ba-ju / bi-sa",
     "confidence": "verified_high"
   },
   {
@@ -18309,8 +18417,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — Project Owner (chat, 2026-09-18): confirmed friend = Ripeng; alternate forms are not valid — superseded.",
-    "confidence": "superseded"
+    "notes": "variant/VERIFIED/HIGH",
+    "confidence": "verified_high"
   },
   {
     "english": "Friend",
@@ -18318,8 +18426,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — Project Owner (chat, 2026-09-18): confirmed friend = Ripeng; alternate forms are not valid — superseded.",
-    "confidence": "superseded"
+    "notes": "variant/VERIFIED/HIGH",
+    "confidence": "verified_high"
   },
   {
     "english": "Frog",
@@ -28381,6 +28489,42 @@
     "classifier": null,
     "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
+  },
+  {
+    "english": "dance",
+    "garo": "grik·a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "dance",
+    "garo": "han·seng·a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "dance",
+    "garo": "kiir·ton",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "dance",
+    "garo": "ro·a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
   },
   {
     "english": "dandruff",
@@ -53754,8 +53898,7 @@
     "garo": "Baju",
     "category": null,
     "pos": "n.",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — Project Owner (chat, 2026-09-18): confirmed friend = Ripeng; alternate forms are not valid — superseded."
+    "confidence": "unverified"
   },
   {
     "english": "a companion",
@@ -59599,6 +59742,14 @@
     "category": null,
     "pos": "n.",
     "confidence": "unverified"
+  },
+  {
+    "english": "To dance.",
+    "garo": "Grika",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]",
+    "confidence": "ocr_flagged"
   },
   {
     "english": "Clear",

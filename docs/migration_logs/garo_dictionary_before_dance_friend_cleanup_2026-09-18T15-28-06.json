@@ -5157,7 +5157,7 @@
   },
   {
     "english": "Friend",
-    "garo": "Ripeng"
+    "garo": "Ripsak / Ripeng"
   },
   {
     "english": "Head",
@@ -9573,7 +9573,7 @@
   },
   {
     "english": "friend",
-    "garo": "Ripeng"
+    "garo": "Ripsak / Ripeng"
   },
   {
     "english": "garo",
@@ -12808,6 +12808,78 @@
   {
     "english": "they sing (future)",
     "garo": "bi singgen"
+  },
+  {
+    "english": "I dance (present)",
+    "garo": "ang dancea"
+  },
+  {
+    "english": "I dance (past)",
+    "garo": "ang danceaha"
+  },
+  {
+    "english": "I dance (future)",
+    "garo": "ang dancegen"
+  },
+  {
+    "english": "you (singular) dance (present)",
+    "garo": "na· dancea"
+  },
+  {
+    "english": "you (singular) dance (past)",
+    "garo": "na· danceaha"
+  },
+  {
+    "english": "you (singular) dance (future)",
+    "garo": "na· dancegen"
+  },
+  {
+    "english": "he/she dance (present)",
+    "garo": "u dancea"
+  },
+  {
+    "english": "he/she dance (past)",
+    "garo": "u danceaha"
+  },
+  {
+    "english": "he/she dance (future)",
+    "garo": "u dancegen"
+  },
+  {
+    "english": "we dance (present)",
+    "garo": "i dancea"
+  },
+  {
+    "english": "we dance (past)",
+    "garo": "i danceaha"
+  },
+  {
+    "english": "we dance (future)",
+    "garo": "i dancegen"
+  },
+  {
+    "english": "you (plural) dance (present)",
+    "garo": "si dancea"
+  },
+  {
+    "english": "you (plural) dance (past)",
+    "garo": "si danceaha"
+  },
+  {
+    "english": "you (plural) dance (future)",
+    "garo": "si dancegen"
+  },
+  {
+    "english": "they dance (present)",
+    "garo": "bi dancea"
+  },
+  {
+    "english": "they dance (past)",
+    "garo": "bi danceaha"
+  },
+  {
+    "english": "they dance (future)",
+    "garo": "bi dancegen"
   },
   {
     "english": "I buy (present)",

@@ -1,0 +1,295 @@
+[
+  {
+    "file": "master_dictionary.json",
+    "english": "friend",
+    "garo": "Ripeng",
+    "category": "general",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'friend' has VERIFIED/HIGH form(s) ['Ripsak / Ripeng', 'ba·ju', 'bi·sa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
+    "confidence": "superseded"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "i dance (present)",
+    "garo": "ang dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "i dance (past)",
+    "garo": "ang danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "i dance (future)",
+    "garo": "ang dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "you (singular) dance (present)",
+    "garo": "na· dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "you (singular) dance (past)",
+    "garo": "na· danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "you (singular) dance (future)",
+    "garo": "na· dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "he/she dance (present)",
+    "garo": "u dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "he/she dance (past)",
+    "garo": "u danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "he/she dance (future)",
+    "garo": "u dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "we dance (present)",
+    "garo": "i dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "we dance (past)",
+    "garo": "i danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "we dance (future)",
+    "garo": "i dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "you (plural) dance (present)",
+    "garo": "si dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "you (plural) dance (past)",
+    "garo": "si danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "you (plural) dance (future)",
+    "garo": "si dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "they dance (present)",
+    "garo": "bi dancea",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "they dance (past)",
+    "garo": "bi danceaha",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "they dance (future)",
+    "garo": "bi dancegen",
+    "category": "general",
+    "confidence": "unverified"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "Friend",
+    "garo": "Ripsak / Ripeng",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH v:Ripeng / ba-ju / bi-sa",
+    "confidence": "verified_high"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "Friend",
+    "garo": "ba·ju",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH",
+    "confidence": "verified_high"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "dance",
+    "garo": "grik·a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "dance",
+    "garo": "han·seng·a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "dance",
+    "garo": "kiir·ton",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "dance",
+    "garo": "ro·a",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
+    "confidence": "superseded"
+  },
+  {
+    "file": "master_dictionary.json",
+    "english": "To dance.",
+    "garo": "Grika",
+    "category": null,
+    "pos": "v.",
+    "notes": "[OCR-flagged for review: ocr_confidence=High]",
+    "confidence": "ocr_flagged"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "I dance (present)",
+    "garo": "ang dancea"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "I dance (past)",
+    "garo": "ang danceaha"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "I dance (future)",
+    "garo": "ang dancegen"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "you (singular) dance (present)",
+    "garo": "na· dancea"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "you (singular) dance (past)",
+    "garo": "na· danceaha"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "you (singular) dance (future)",
+    "garo": "na· dancegen"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "he/she dance (present)",
+    "garo": "u dancea"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "he/she dance (past)",
+    "garo": "u danceaha"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "he/she dance (future)",
+    "garo": "u dancegen"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "we dance (present)",
+    "garo": "i dancea"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "we dance (past)",
+    "garo": "i danceaha"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "we dance (future)",
+    "garo": "i dancegen"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "you (plural) dance (present)",
+    "garo": "si dancea"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "you (plural) dance (past)",
+    "garo": "si danceaha"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "you (plural) dance (future)",
+    "garo": "si dancegen"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "they dance (present)",
+    "garo": "bi dancea"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "they dance (past)",
+    "garo": "bi danceaha"
+  },
+  {
+    "file": "garo_dictionary.json",
+    "english": "they dance (future)",
+    "garo": "bi dancegen"
+  }
+]
