@@ -445,6 +445,23 @@ const IRREGULAR_PLURALS = {
   'women': 'woman', 'mice': 'mouse', 'feet': 'foot',
   'teeth': 'tooth', 'geese': 'goose', 'oxen': 'ox',
   'sheep': 'sheep', 'fish': 'fish', 'deer': 'deer',
+  // Houses bug fix (2026-09-18, Claude B): the regular /(?:[sxz]|ch|sh)es$/
+  // rule below exists for words like "bus"/"box"/"church" whose singular
+  // itself ends in a sibilant, so the plural adds a full "-es" syllable.
+  // It cannot tell those apart from words that already end in a silent
+  // "e" after s/z and just add a bare "-s" (house->houses, horse->horses)
+  // -- both surface forms end in "...ses", so suffix-only regex is
+  // genuinely ambiguous here, not fixable by a smarter pattern. Listed
+  // explicitly instead, same as this table's other true exceptions.
+  // Confirmed live: translate("2 houses") was falling all the way to the
+  // weak morphology fallback ("[UNKNOWN] Nok", 0.65) instead of classifier
+  // composition ("nok te·gni", 0.96) because singularize("houses") ->
+  // "hous", an unrecognized dictionary key. Scoped to the -se nouns that
+  // are actual headwords in master_dictionary.json (mechanical English
+  // orthography fix, not a Garo-form decision).
+  'houses': 'house', 'horses': 'horse', 'noses': 'nose',
+  'nurses': 'nurse', 'promises': 'promise', 'sunrises': 'sunrise',
+  'surprises': 'surprise',
 };
 
 // Measurement/serving unit words (2026-09-10, Claude B, per Owner

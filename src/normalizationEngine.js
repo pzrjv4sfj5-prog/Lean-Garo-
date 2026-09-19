@@ -75,12 +75,30 @@ export const AUXILIARY_SKIP = new Set(['will','shall','going','would','could','s
 export const INTENSIFIER_WORDS = new Set(['very','too','quite','really','extremely','rather','somewhat']);
 
 export function fuzzyMatch(input) {
+  // Tightened (2026-09-18, Claude B): the old threshold (dist<=1 for
+  // len<=4, dist<=max(2,len*0.25) otherwise) was loose enough to
+  // confidently substitute a completely unrelated real word for any
+  // short/mid-length word missing from the dictionary -- live-confirmed
+  // "tool" (dist 1 from "fool") and "tools" (dist 2 from "books"). Every
+  // existing test in this codebase that touches fuzzyMatch asserts a
+  // match must NOT fire (momo/moo, chow/cow, maggie/magic, paneer/anger,
+  // bind/wind, knives, vegetable) -- none assert a successful fuzzy
+  // correction, so there's no positive case here to protect. Consistent
+  // with this project's standing rule against shipping a confident guess
+  // in place of an honest miss (see docs/CLAUDE_B_SESSION_MIGRATION_
+  // 20260918B.md §4): words of length <=5 are too collision-prone at
+  // any distance (four- and five-letter English words are dense enough
+  // that dist-1/dist-2 neighbors are usually a different real word, not
+  // a typo) and are excluded entirely; longer words use a tighter ratio
+  // (0.15 vs 0.25) so a fuzzy hit only fires when it's a small fraction
+  // of the word, closer to genuine-typo territory.
   const lower = input.toLowerCase();
+  if (lower.length <= 5) return null;
   let best = null, bestDist = Infinity;
   for (const key of Object.keys(EN_INDEX)) {
+    if (key.length <= 5) continue;
     const dist = levenshtein(lower, key);
-    // Short words need tighter threshold to avoid false matches (rnu->rat not run)
-    const threshold = key.length <= 4 ? 1 : Math.max(2, Math.floor(key.length * 0.25));
+    const threshold = Math.max(1, Math.floor(key.length * 0.15));
     if (dist < bestDist && dist <= threshold) { bestDist = dist; best = key; }
   }
   return best ? { key: best, distance: bestDist } : null;
