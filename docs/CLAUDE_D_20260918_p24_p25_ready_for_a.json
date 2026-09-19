@@ -1,0 +1,1083 @@
+{
+ "schema": "lean-garo.claude_a_review_input.v1",
+ "source_page": "24-25",
+ "source_type": "OCR",
+ "status": "NEW_ENTRIES_READY",
+ "deduplication": {
+  "raka_normalization": "Convert hyphen to · only inside Garo fields",
+  "comparison_key": "english|normalized_garo|pos",
+  "same_garo_different_pos": "preserve",
+  "same_garo_different_sense": "preserve",
+  "minimal_raka_pairs": "preserve",
+  "repository_history_checked": true,
+  "checked_against": "live master_dictionary.json, 9632 rows, 2026-09-18 (Claude D)",
+  "source_file_self_audit_disregarded": "Uploaded file's own AUDIT_SUMMARY claimed dedup against a 3186-row master (stale/wrong count vs live 9632); re-audited from scratch, do not trust the source file's Audit Result/Audit Basis columns."
+ },
+ "normalization": {
+  "rule_verb": "Stripped leading \"to \" from English gloss where POS in {v., vi., vt.} -- bare root form required for classifier/phrase_maps sentence construction (matches existing \"dance\" vs stale \"to dance.\" precedent, see NV-095 / 2026-09-18 dance cleanup).",
+  "rule_noun": "Stripped leading \"a\"/\"an\"/\"the\" from short noun headwords only (not long definitional glosses, where article removal does not yield a usable lexical key).",
+  "verbs_neutralized": 29,
+  "nouns_neutralized": 16
+ },
+ "summary": {
+  "ocr_records_reviewed": 93,
+  "new_records_for_claude_a": 84,
+  "duplicate_records_excluded": 5,
+  "held_from_a": 4,
+  "homograph_flags": 2
+ },
+ "entries": [
+  {
+   "english": "forbid",
+   "garo": "Beng·a",
+   "pos": [
+    "v."
+   ],
+   "notes": "Beng·a, V. to forbid",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "compound word meaning to prohibit",
+   "garo": "Beng·a-kanga",
+   "pos": [
+    "n."
+   ],
+   "notes": "Beng·a-kanga, N. a compound word meaning to prohibit",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "the jingling sound",
+   "garo": "Bengbeng-chengcheng",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bengbeng-chengcheng, N. the jingling sound",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "young frog",
+   "garo": "Bengblok bi·sa",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bengblok bi·sa, N. a young frog",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "croak",
+   "garo": "Beng·blok nikoa",
+   "pos": [
+    "v."
+   ],
+   "notes": "Beng·blok nikoa, V. to croak",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "sling",
+   "garo": "Bengjuri",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bengjuri, N. a sling",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "a poisonous stinging bee akin to wasp",
+   "garo": "Bengsning",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bengsning, N. a poisonous stinging bee akin to wasp",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "break through",
+   "garo": "Be·praka",
+   "pos": [
+    "v."
+   ],
+   "notes": "Be·praka, V. to break through",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "be broken into pieces",
+   "garo": "Be·pria",
+   "pos": [
+    "v."
+   ],
+   "notes": "Be·pria, V. to be broken into pieces",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "spawn",
+   "garo": "Bengblok bitchi",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bengblok bitchi, N. spawn",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "a big green frog whose flesh is eaten",
+   "garo": "Bengbong",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bengbong, N. a big green frog whose flesh is eaten",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "easily broken",
+   "garo": "Be·ninggipa",
+   "pos": [
+    "adj."
+   ],
+   "notes": "Be·ninggipa, ADJ. easily broken",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "sting",
+   "garo": "Beri",
+   "pos": [
+    "n."
+   ],
+   "notes": "Beri, N. sting",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "crack",
+   "garo": "Be·sria",
+   "pos": [
+    "v."
+   ],
+   "notes": "Be·sria, V. to crack",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "crumble down",
+   "garo": "Be·rurua",
+   "pos": [
+    "v."
+   ],
+   "notes": "Be·rurua, V. to crumble down",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "mustard",
+   "garo": "Besual",
+   "pos": [
+    "n."
+   ],
+   "notes": "Besual, N. mustard",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "cane",
+   "garo": "Bet",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bet, N. a cane",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "cane",
+   "garo": "Bet doka",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bet doka, V. to cane",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "See bel-bela",
+   "garo": "Betbeta",
+   "pos": [
+    "v."
+   ],
+   "notes": "Betbeta, V. See bel-bela",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "a large evergreen tree",
+   "garo": "Bewa champa",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bewa champa, N. a large evergreen tree",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "habitually as",
+   "garo": "·bewal",
+   "pos": [
+    "suffix"
+   ],
+   "notes": "·bewal, SUFFIX. habitually as",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "usually",
+   "garo": "Bewal gita",
+   "pos": [
+    "adv."
+   ],
+   "notes": "Bewal gita, ADV. usually",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "to him",
+   "garo": "Bichi",
+   "pos": [
+    "pron."
+   ],
+   "notes": "Bichi, PR. to him",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "him or her (accusative case)",
+   "garo": "Biko",
+   "pos": [
+    "pron."
+   ],
+   "notes": "Biko, PR. him or her (accusative case)",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "to him or her",
+   "garo": "Bina",
+   "pos": [
+    "pron."
+   ],
+   "notes": "Bina, PR. to him or her",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "with him or her",
+   "garo": "Bimung",
+   "pos": [
+    "pron."
+   ],
+   "notes": "Bimung, PR. with him or her",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "his or her (possessive case)",
+   "garo": "Bini",
+   "pos": [
+    "pron."
+   ],
+   "notes": "Bini, PR. his or her (possessive case)",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "beg",
+   "garo": "Bi·a",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bi·a, V. to beg",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "marry",
+   "garo": "Bia ka·a",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bia ka·a, V. to marry",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "bridegroom",
+   "garo": "Bia ka·gnigipa me·asa",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bia ka·gnigipa me·asa, N. bridegroom",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "bride",
+   "garo": "Bia ka·gnigipa me·chik",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bia ka·gnigipa me·chik, N. bride",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "newly married",
+   "garo": "Bia ka·daldal",
+   "pos": [
+    "adj."
+   ],
+   "notes": "Bia ka·daldal, ADJ. newly married",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "the bottom of the boat",
+   "garo": "Biam",
+   "pos": [
+    "n."
+   ],
+   "notes": "Biam, N. the bottom of the boat",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "begger",
+   "garo": "Bi·ame cha·gipa",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bi·ame cha·gipa, N. a begger",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "mendicant",
+   "garo": "Bi·amgipa",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bi·amgipa, N. a mendicant",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "place",
+   "garo": "Biap",
+   "pos": [
+    "n."
+   ],
+   "notes": "Biap, N. place",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "make room",
+   "garo": "Biap on·a",
+   "pos": [
+    "v."
+   ],
+   "notes": "Biap on·a, V. to make room",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "take position",
+   "garo": "Biap ra·a",
+   "pos": [
+    "v."
+   ],
+   "notes": "Biap ra·a, V. to take position",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "congested place",
+   "garo": "Biap apchangket",
+   "pos": [
+    "n."
+   ],
+   "notes": "Biap apchangket, N. a congested place",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "lodging",
+   "garo": "Biap-bicham",
+   "pos": [
+    "n."
+   ],
+   "notes": "Biap-bicham, N. a lodging",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "a very strong unpleasant smell",
+   "garo": "Biba seenga",
+   "pos": [
+    "n."
+   ],
+   "notes": "Biba seenga, N. a very strong unpleasant smell",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "sickness",
+   "garo": "Biati",
+   "pos": [
+    "n."
+   ],
+   "notes": "Biati, N. sickness",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "odour",
+   "garo": "Biba",
+   "pos": [
+    "n."
+   ],
+   "notes": "Biba, N. odour",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "evaporate",
+   "garo": "Biba chadoa",
+   "pos": [
+    "v."
+   ],
+   "notes": "Biba chadoa, V. to evaporate",
+   "source_page": 24,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "escape as steam",
+   "garo": "Biba joka",
+   "pos": [
+    "v."
+   ],
+   "notes": "Biba joka, V. to escape as steam",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "smell",
+   "garo": "Biba man·a",
+   "pos": [
+    "v."
+   ],
+   "notes": "Biba man·a, V. to smell",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "defendant",
+   "garo": "Bibadi",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bibadi, N. defendant",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "same as Bibala",
+   "garo": "Bibal bala",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bibal bala, V. same as Bibala",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "flower",
+   "garo": "Bibala",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bibala, V. to flower",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "remove the contents from the intestines",
+   "garo": "Bibik sita",
+   "pos": [
+    "vi."
+   ],
+   "notes": "Bibik sita, VI. to remove the contents from the intestines",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "river mouth",
+   "garo": "Bibra",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bibra, N. river mouth",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "chink",
+   "garo": "Bibret",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bibret, N. a chink",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "pith",
+   "garo": "Bibrong",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bibrong, N. pith",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "pray for another",
+   "garo": "Bi·chaka",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bi·chaka, V. to pray for another",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "judgment",
+   "garo": "Bichal",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bichal, N. judgment",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "the day of judgment",
+   "garo": "Bichalni sal",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bichalni sal, N. the day of judgment",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "try a case",
+   "garo": "Bichal ka·a",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bichal ka·a, V. to try a case",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "judge",
+   "garo": "Bichal ka·gipa",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bichal ka·gipa, N. a judge",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "layer",
+   "garo": "Bichap",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bichap, N. layer",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "in layers",
+   "garo": "Bichap bichap",
+   "pos": [
+    "adv."
+   ],
+   "notes": "Bichap bichap, ADV. in layers",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "slice",
+   "garo": "Bichrit",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bichrit, N. slice",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "clue",
+   "garo": "Bichu",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bichu, N. a clue",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "learning",
+   "garo": "Bida",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bida, N. learning",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "resort",
+   "garo": "Bidam",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bidam, N. a resort",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "blade",
+   "garo": "Bidareng",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bidareng, N. blade",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "foreigner",
+   "garo": "Bidasi",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bidasi, N. a foreigner",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "pertaining to",
+   "garo": "Biding",
+   "pos": [
+    "adj."
+   ],
+   "notes": "Biding, ADJ. pertaining to",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "knot",
+   "garo": "Bidimel",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bidimel, N. a knot",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "a basket-like bamboo mat rolled up to contain the paddy",
+   "garo": "Bidol",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bidol, N. a basket-like bamboo mat rolled up to contain the paddy",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "skin",
+   "garo": "Bigil kika",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bigil kika, V. to skin",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "scrape the scale of a fish",
+   "garo": "Bigil gala",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bigil gala, V. to scrape the scale of a fish",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "torn of skin",
+   "garo": "Bigil gilchraka",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bigil gilchraka, N. torn of skin",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "cast (its skin or slough)",
+   "garo": "Bigil gilsrea",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bigil gilsrea, V. to cast (its skin or slough)",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "remove the skin",
+   "garo": "Bigil kiloka",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bigil kiloka, V. to remove the skin",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "circumcise",
+   "garo": "Bigil rasota",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bigil rasota, V. to circumcise",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "minute fragment",
+   "garo": "Biginchi",
+   "pos": [
+    "n."
+   ],
+   "notes": "Biginchi, N. a minute fragment",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "estrange",
+   "garo": "Bigraia",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bigraia, V. to estrange",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "bee-keeping",
+   "garo": "Bija jillani",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bija jillani, N. bee-keeping",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "buzz",
+   "garo": "Bija ongonga",
+   "pos": [
+    "v."
+   ],
+   "notes": "Bija ongonga, V. to buzz",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "honeycomb",
+   "garo": "Bija birang",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bija birang, N. honeycomb",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  },
+  {
+   "english": "collect honey",
+   "garo": "Bija chiria",
+   "pos": [
+    "vi."
+   ],
+   "notes": "Bija chiria, VI. to collect honey",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "smoke out bees to collect honey",
+   "garo": "Bija so·a",
+   "pos": [
+    "vt."
+   ],
+   "notes": "Bija so·a, VT. to smoke out bees to collect honey",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading \"to \" (verb POS)"
+  },
+  {
+   "english": "hornet",
+   "garo": "Bija wal",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bija wal, N. a hornet",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": "stripped leading article (noun headword)"
+  },
+  {
+   "english": "wax obtained from the honey comb",
+   "garo": "Bija ste",
+   "pos": [
+    "n."
+   ],
+   "notes": "Bija ste, N. wax obtained from the honey comb",
+   "source_page": 25,
+   "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1",
+   "normalization_applied": null
+  }
+ ],
+ "held": [
+  {
+   "english": "he",
+   "garo": "Bia",
+   "pos": [
+    "pron."
+   ],
+   "source_page": 24,
+   "status": "HOLD_CONFLICT",
+   "reason": "Master already has \"he\" -> Ua (different pronoun root). Real-form conflict, not a duplicate -- needs Thangseng confirmation on regional/dialect variant before either merge or dual-entry."
+  },
+  {
+   "english": "a flower",
+   "garo": "Bibal",
+   "pos": [
+    "n."
+   ],
+   "source_page": 25,
+   "status": "HOLD_CONFLICT",
+   "reason": "Master already has \"flower\" -> Bal. Different Garo form for the same concept, not a raka variant of the same word -- needs Thangseng confirmation."
+  },
+  {
+   "english": "bark",
+   "garo": "Bigil",
+   "pos": [
+    "n."
+   ],
+   "source_page": 25,
+   "status": "HOLD_CONFLICT",
+   "reason": "Master already has \"skin\"/\"the skin\" -> bi·kil·ap. Bigil vs bi·kil·ap look like distinct forms, not the same word -- needs Thangseng confirmation whether \"bark\" and \"skin\" share a root here or are false-positive collisions."
+  },
+  {
+   "english": "curry",
+   "garo": "Bijak",
+   "pos": [
+    "n."
+   ],
+   "source_page": 25,
+   "status": "HOLD_CONFLICT",
+   "reason": "Master already has \"leaf\" -> bi·jak (same spelling minus raka). Either an OCR/raka error merging two unrelated words, or a genuine polyseme -- needs Thangseng confirmation before either merge or dual-entry."
+  }
+ ],
+ "excluded_duplicates": [
+  {
+   "english": "a frog",
+   "garo": "Beng·blok",
+   "pos": [
+    "n."
+   ],
+   "source_page": 24,
+   "matched_master_entry": true
+  },
+  {
+   "english": "habit",
+   "garo": "Bewal",
+   "pos": [
+    "n."
+   ],
+   "source_page": 24,
+   "matched_master_entry": true
+  },
+  {
+   "english": "intestines",
+   "garo": "Bibik",
+   "pos": [
+    "n."
+   ],
+   "source_page": 25,
+   "matched_master_entry": true
+  },
+  {
+   "english": "straw",
+   "garo": "Bidang",
+   "pos": [
+    "n."
+   ],
+   "source_page": 25,
+   "matched_master_entry": true
+  },
+  {
+   "english": "honey",
+   "garo": "Bija bitchi",
+   "pos": [
+    "n."
+   ],
+   "source_page": 25,
+   "matched_master_entry": true
+  }
+ ],
+ "homograph_flags": [
+  {
+   "english": "cane",
+   "garo_forms": [
+    [
+     "Bet",
+     [
+      "n."
+     ]
+    ],
+    [
+     "Bet doka",
+     [
+      "v."
+     ]
+    ]
+   ],
+   "issue": "compiled_dict.json keys by English string only, not POS -- noun/verb homograph, pickPrimary will silently pick one unless disambiguated."
+  },
+  {
+   "english": "flower",
+   "garo_forms": [
+    [
+     "Bibala",
+     [
+      "v."
+     ]
+    ],
+    [
+     "Bal",
+     [
+      "n."
+     ]
+    ]
+   ],
+   "issue": "compiled_dict.json keys by English string only, not POS -- noun/verb homograph, pickPrimary will silently pick one unless disambiguated."
+  }
+ ],
+ "repository_note": "Pages 24-25 new OCR batch. Uploaded xlsx (OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO) self-reported as already-audited but checked against a stale/incorrect master count; Claude D re-ran full dedup against live master_dictionary.json and applied verb/noun neutralization per Owner instruction (2026-09-18). 84 entries clean for staging via scripts/promote-lexicon.js workflow or direct pending_lexicon.json append; 4 held for Thangseng (real Garo-form conflicts, not raka noise); 5 excluded as confirmed duplicates (audit trail in excluded_duplicates); 2 homograph collisions (cane, flower) flagged -- same English key, different POS, compiled_dict has no POS-aware key resolution yet."
+}
