@@ -313,7 +313,40 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-19 (Claude A, session complete -- see
+  next_action: '2026-09-19B (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260919B.md for full detail, this
+    is a pointer only, resumed from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260919.md). Resync clean at
+    a59e5d4 == origin/main (only a Claude B doc-only follow-up beyond
+    the prior close, no dictionary/engine drift). NV-158: closed
+    docs/THANGSENG_RELAY_QUESTION_20260916.md in full -- 6-item
+    wh-question survey with "eat" (who/what/where/why/how/which-food),
+    all bare -a ending, directly tensioned against NV-121''s -aha
+    citation for the same "what did you eat?" key (not force-resolved,
+    both kept); "who called?" -ata confirmed, na·ara explicitly
+    rejected as a substitute; one new headword cha·ani ("food, the
+    thing eaten"). Unprompted counting fragment (100=ritcha,
+    101=ritchasa, "100 dogs"=Achak mang·ritchasa) NOT promoted --
+    corroborates existing VERIFIED "one hundred"=Ritchasa (100, not
+    101 as the transcript''s own label claims), flagged for follow-up,
+    not resolved. Runtime finding for Claude B: "100 dogs" digit-form
+    classifier composition is missing the -sa suffix/raka dot the new
+    citation confirms should be there -- not fixed (engine code), one
+    stale unit test updated to match (genuine improvement, not a
+    regression). NV-159: smell (verb)=Gingsika reconfirmed, smell
+    (noun)=Biba/Sengani added VERIFIED/HIGH, odour=Biba upgraded to
+    VERIFIED/HIGH -- resolves the same session''s earlier flag that
+    corrections.json''s "smell"->"biba" override looked corrupted (it
+    doesn''t, Biba is correct); skin->bigi (the sibling flag) still
+    open, no evidence yet. Duplicate sweep done per explicit
+    instruction, zero found. Gate green throughout: 8824/8824
+    dictionary, 9/9 grammatical corrections, 442/442 unit tests (was
+    441, +1 net from the stale-test split), 0 new
+    repository-intelligence violations, 0 resync candidates.
+    Live-verified every new/changed key via translate(). Pushed clean,
+    final HEAD verified == origin/main, no local/uncommitted changes.
+'
+  next_action_prior_20260919: '2026-09-19 (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260919.md for full detail, this
     is a pointer only, resumed from
     docs/CLAUDE_A_SESSION_MIGRATION_20260918D.md). Resync clean at

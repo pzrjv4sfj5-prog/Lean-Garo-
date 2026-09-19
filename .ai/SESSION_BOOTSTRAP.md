@@ -1,5 +1,15 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-19 by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-19B by Claude A
+(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260919.md. Full migration doc:
+docs/CLAUDE_A_SESSION_MIGRATION_20260919B.md — READ IT FIRST, this line is
+just a pointer. Summary: resync clean, HEAD a59e5d4 == origin/main on arrival
+(only a Claude B doc-only follow-up beyond the prior close, no drift). NV-158
+closed docs/THANGSENG_RELAY_QUESTION_20260916.md in full (wh-question survey +
+"who called?" -ata/na·ara resolution); NV-159 closed a volunteered smell
+verb/noun batch, resolving the earlier "corrections.json smell override looks
+corrupted" flag (it doesn't — Biba is correct). Full detail in the migration
+doc above.)
+Prior: 2026-09-19 by Claude A
 (resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260918D.md. Full migration doc:
 docs/CLAUDE_A_SESSION_MIGRATION_20260919.md — READ IT FIRST, this line is
 just a pointer. Summary: resync clean, HEAD fed025e == origin/main on arrival.

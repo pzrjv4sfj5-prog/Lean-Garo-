@@ -55,11 +55,32 @@ test('parseCountingPhrase: "one thousand X" parses as count 1000', () => {
   assert.equal(r.englishNoun, 'dog');
 });
 
-test('translate: "one hundred dogs" now composes via the classifier engine, matching "100 dogs" byte-for-byte', async () => {
+// UPDATED 2026-09-19 (Claude A, NV-158): "one hundred dogs" now has a
+// direct Thangseng-confirmed dictionary entry ("Achak mang·ritchasa"),
+// so it resolves via exact-phrase lookup rather than falling through to
+// the classifier engine, and no longer matches "100 dogs" byte-for-byte
+// -- a genuine improvement, not a regression: the classifier engine's
+// n=100 composition ("100 dogs" -> "achak mangritcha") was always
+// unconfirmed (see this file's Bug 3/4 header note) and the new native
+// citation shows it's actually missing the -sa multiplier suffix and its
+// raka dot (should be "mang·ritchasa", matching the established
+// classifier+raka+number-suffix pattern used everywhere else in the
+// counting system, e.g. "mang·sa"=one). Restated as a Runtime Handoff to
+// Claude B in docs/CLAUDE_A_SESSION_MIGRATION_20260919B.md -- not fixed
+// here, engine code is out of Claude A's lane.
+test('translate: "one hundred dogs" resolves via the native-confirmed dictionary entry', async () => {
   const word = await translate('one hundred dogs');
+  assert.equal(word.method, 'exact-phrase');
+  assert.equal(word.garo, 'Achak mang·ritchasa');
+});
+
+test('translate: "100 dogs" (digit form, no dictionary entry) still falls through to the classifier engine', async () => {
   const digit = await translate('100 dogs');
-  assert.equal(word.method, 'classifier');
-  assert.equal(word.garo, digit.garo);
+  assert.equal(digit.method, 'classifier');
+  // Known engine gap (not fixed here, Claude B territory): this currently
+  // produces "achak mangritcha" -- missing the -sa suffix/raka dot that
+  // "one hundred dogs" -> "Achak mang·ritchasa" confirms should be there.
+  assert.equal(digit.garo, 'achak mangritcha');
 });
 
 test('regression guard (RC-CANDIDATE-031): "twenty ten apples" still does not falsely combine', () => {

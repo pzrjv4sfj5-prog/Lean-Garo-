@@ -2151,6 +2151,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `humble`: candidates — `Chon·a·gisik` (weak/OCR) — shipped: `Chon·a·gisik`
 - `hump of cattle`: candidates — `sin·chi` (weak/OCR) — shipped: `sin·chi`
 - `hundred`: candidates — `Ritchasa` (weak/OCR) — shipped: `Ritchasa`
+- `hundred (bare root, distinct from "one hundred")`: candidates — `Ritcha` (weak/OCR) — shipped: `Ritcha`
 - `hunt`: candidates — `si·kal daka` (weak/OCR) — shipped: `si·kal daka`
 - `hurriedly`: candidates — `hang·jang` (weak/OCR) — shipped: `hang·jang`
 - `hurry up!`: candidates — `Tarkbo!` (weak/OCR) — shipped: `Tarkbo!`
@@ -2898,7 +2899,6 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `occasionally`: candidates — `Basakoba basakoba` (weak/OCR) — shipped: `Basakoba basakoba`
 - `odd jobs`: candidates — `tak·tuk` (weak/OCR) — shipped: `tak·tuk`
 - `odor of body`: candidates — `han·dil` (weak/OCR) — shipped: `han·dil`
-- `odour`: candidates — `Biba` (weak/OCR) — shipped: `Biba`
 - `odour; smell.`: candidates — `An·ting` (weak/OCR) — shipped: `An·ting`
 - `of course`: candidates — `Oe, bebe` (weak/OCR) — shipped: `Oe, bebe`
 - `of course!`: candidates — `Oe, bebe!` (weak/OCR) — shipped: `Oe, bebe!`
