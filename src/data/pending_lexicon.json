@@ -58709,12 +58709,12 @@
   },
   {
     "id": "PL-0002207",
-    "english": "forbid",
+    "english": "to forbid",
     "garo": "Beng·a",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Beng·a, V. to forbid",
+    "notes": "Beng·a, V. to forbid | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -58831,12 +58831,12 @@
   },
   {
     "id": "PL-0002211",
-    "english": "croak",
+    "english": "to croak",
     "garo": "Beng·blok nikoa",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Beng·blok nikoa, V. to croak",
+    "notes": "Beng·blok nikoa, V. to croak | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -58912,12 +58912,12 @@
   },
   {
     "id": "PL-0002214",
-    "english": "break through",
+    "english": "to break through",
     "garo": "Be·praka",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Be·praka, V. to break through",
+    "notes": "Be·praka, V. to break through | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -58939,12 +58939,12 @@
   },
   {
     "id": "PL-0002215",
-    "english": "be broken into pieces",
+    "english": "to be broken into pieces",
     "garo": "Be·pria",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Be·pria, V. to be broken into pieces",
+    "notes": "Be·pria, V. to be broken into pieces | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59076,12 +59076,12 @@
   },
   {
     "id": "PL-0002220",
-    "english": "crack",
+    "english": "to crack",
     "garo": "Be·sria",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Be·sria, V. to crack",
+    "notes": "Be·sria, V. to crack | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59105,12 +59105,12 @@
   },
   {
     "id": "PL-0002221",
-    "english": "crumble down",
+    "english": "to crumble down",
     "garo": "Be·rurua",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Be·rurua, V. to crumble down",
+    "notes": "Be·rurua, V. to crumble down | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59191,12 +59191,12 @@
   },
   {
     "id": "PL-0002224",
-    "english": "cane (verb)",
+    "english": "to cane (verb)",
     "garo": "Bet doka",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bet doka, V. to cane",
+    "notes": "Bet doka, V. to cane | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59500,12 +59500,12 @@
   },
   {
     "id": "PL-0002234",
-    "english": "beg",
+    "english": "to beg",
     "garo": "Bi·a",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bi·a, V. to beg",
+    "notes": "Bi·a, V. to beg | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59541,12 +59541,12 @@
   },
   {
     "id": "PL-0002235",
-    "english": "marry",
+    "english": "to marry",
     "garo": "Bia ka·a",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bia ka·a, V. to marry",
+    "notes": "Bia ka·a, V. to marry | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59781,12 +59781,12 @@
   },
   {
     "id": "PL-0002243",
-    "english": "make room",
+    "english": "to make room",
     "garo": "Biap on·a",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Biap on·a, V. to make room",
+    "notes": "Biap on·a, V. to make room | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59808,12 +59808,12 @@
   },
   {
     "id": "PL-0002244",
-    "english": "take position",
+    "english": "to take position",
     "garo": "Biap ra·a",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Biap ra·a, V. to take position",
+    "notes": "Biap ra·a, V. to take position | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59970,12 +59970,12 @@
   },
   {
     "id": "PL-0002250",
-    "english": "evaporate",
+    "english": "to evaporate",
     "garo": "Biba chadoa",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Biba chadoa, V. to evaporate",
+    "notes": "Biba chadoa, V. to evaporate | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "24",
@@ -59997,12 +59997,12 @@
   },
   {
     "id": "PL-0002251",
-    "english": "escape as steam",
+    "english": "to escape as steam",
     "garo": "Biba joka",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Biba joka, V. to escape as steam",
+    "notes": "Biba joka, V. to escape as steam | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60024,12 +60024,12 @@
   },
   {
     "id": "PL-0002252",
-    "english": "smell (verb, perceive)",
+    "english": "to smell (verb, perceive)",
     "garo": "Biba man·a",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Biba man·a, V. to smell",
+    "notes": "Biba man·a, V. to smell | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60109,12 +60109,12 @@
   },
   {
     "id": "PL-0002255",
-    "english": "flower (verb)",
+    "english": "to flower (verb)",
     "garo": "Bibala",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bibala, V. to flower",
+    "notes": "Bibala, V. to flower | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60138,12 +60138,12 @@
   },
   {
     "id": "PL-0002256",
-    "english": "remove the contents from the intestines",
+    "english": "to remove the contents from the intestines",
     "garo": "Bibik sita",
     "category": null,
     "pos": "vi.",
     "classifier": null,
-    "notes": "Bibik sita, VI. to remove the contents from the intestines",
+    "notes": "Bibik sita, VI. to remove the contents from the intestines | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60246,12 +60246,12 @@
   },
   {
     "id": "PL-0002260",
-    "english": "pray for another",
+    "english": "to pray for another",
     "garo": "Bi·chaka",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bi·chaka, V. to pray for another",
+    "notes": "Bi·chaka, V. to pray for another | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60335,12 +60335,12 @@
   },
   {
     "id": "PL-0002263",
-    "english": "try a case",
+    "english": "to try a case",
     "garo": "Bichal ka·a",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bichal ka·a, V. to try a case",
+    "notes": "Bichal ka·a, V. to try a case | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60706,12 +60706,12 @@
   },
   {
     "id": "PL-0002276",
-    "english": "skin (verb)",
+    "english": "to skin (verb)",
     "garo": "Bigil kika",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bigil kika, V. to skin",
+    "notes": "Bigil kika, V. to skin | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60737,12 +60737,12 @@
   },
   {
     "id": "PL-0002277",
-    "english": "scrape the scale of a fish",
+    "english": "to scrape the scale of a fish",
     "garo": "Bigil gala",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bigil gala, V. to scrape the scale of a fish",
+    "notes": "Bigil gala, V. to scrape the scale of a fish | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60791,12 +60791,12 @@
   },
   {
     "id": "PL-0002279",
-    "english": "cast (its skin or slough)",
+    "english": "to cast (its skin or slough)",
     "garo": "Bigil gilsrea",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bigil gilsrea, V. to cast (its skin or slough)",
+    "notes": "Bigil gilsrea, V. to cast (its skin or slough) | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60818,12 +60818,12 @@
   },
   {
     "id": "PL-0002280",
-    "english": "remove the skin",
+    "english": "to remove the skin",
     "garo": "Bigil kiloka",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bigil kiloka, V. to remove the skin",
+    "notes": "Bigil kiloka, V. to remove the skin | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60845,12 +60845,12 @@
   },
   {
     "id": "PL-0002281",
-    "english": "circumcise",
+    "english": "to circumcise",
     "garo": "Bigil rasota",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bigil rasota, V. to circumcise",
+    "notes": "Bigil rasota, V. to circumcise | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60899,12 +60899,12 @@
   },
   {
     "id": "PL-0002283",
-    "english": "estrange",
+    "english": "to estrange",
     "garo": "Bigraia",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bigraia, V. to estrange",
+    "notes": "Bigraia, V. to estrange | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -60953,12 +60953,12 @@
   },
   {
     "id": "PL-0002285",
-    "english": "buzz",
+    "english": "to buzz",
     "garo": "Bija ongonga",
     "category": null,
     "pos": "v.",
     "classifier": null,
-    "notes": "Bija ongonga, V. to buzz",
+    "notes": "Bija ongonga, V. to buzz | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -61007,12 +61007,12 @@
   },
   {
     "id": "PL-0002287",
-    "english": "collect honey",
+    "english": "to collect honey",
     "garo": "Bija chiria",
     "category": null,
     "pos": "vi.",
     "classifier": null,
-    "notes": "Bija chiria, VI. to collect honey",
+    "notes": "Bija chiria, VI. to collect honey | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
@@ -61034,12 +61034,12 @@
   },
   {
     "id": "PL-0002288",
-    "english": "smoke out bees to collect honey",
+    "english": "to smoke out bees to collect honey",
     "garo": "Bija so·a",
     "category": null,
     "pos": "vt.",
     "classifier": null,
-    "notes": "Bija so·a, VT. to smoke out bees to collect honey",
+    "notes": "Bija so·a, VT. to smoke out bees to collect honey | VERB_LEMMAS fix 2026-09-19 (Claude B): restored 'to ' prefix. Owner instructed neutralizing 'to X' -> 'X' (doesn't change meaning) when this batch was promoted; correct call on meaning, but lookupEngine.js's VERB_LEMMAS -- the only verb-detection signal sentenceBuilder.js actually uses at runtime -- is built by scanning compiled_dict.json keys for a literal 'to ' prefix, and pos does not survive compiled_dict.json compilation for plain-string entries. prepare-data.js's existing bare-infinitive-alias step regenerates the neutralized bare form automatically at compile time, so restoring 'to ' here loses nothing and fixes verb detection for this word.",
     "provenance": {
       "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
       "source_page": "25",
