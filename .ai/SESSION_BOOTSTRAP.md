@@ -1,5 +1,32 @@
 # SESSION_BOOTSTRAP.md
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-18B by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-19 by Claude A
+(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260918D.md. Full migration doc:
+docs/CLAUDE_A_SESSION_MIGRATION_20260919.md — READ IT FIRST, this line is
+just a pointer. Summary: resync clean, HEAD fed025e == origin/main on arrival.
+Three tasks this session: (1) promoted the 192-entry staged OCR batch
+(PL-0002015..PL-0002206, pages 13/20/21/108); (2) imported + reviewed +
+promoted Claude D's P24/P25 handoff (84 entries), 4 renamed to sense-tagged
+keys to avoid shadowing already-VERIFIED entries, 1 rejected as a
+raka-less duplicate; (3) Project Owner relayed direct native confirmation
+closing all 4 P24/P25 held items — "he"->"Bia" added (VERIFIED/HIGH,
+synonym of existing "Ua", Ua kept as shipped primary), "bark"->"bi·gil"
+added (VERIFIED/HIGH, shared root with existing VERIFIED "Skin"->"bi·gil"),
+"to pray"->"Bi·a" promoted to VERIFIED/HIGH (coexists with separately-
+VERIFIED "pray"->"Bi·bo", not merged), "a flower"/"curry" resolved as
+non-issues (stale comparison targets in the handoff, both candidates just
+reconfirmed existing VERIFIED values). Two new findings, NOT fixed (both
+pre-existing, predate this session): corrections.json's uncited
+"fertile"->"a'be·en" and truncated-looking "skin"->"bigi"/"smell"->"biba"
+overrides, all already shadowing cited/VERIFIED dictionary entries at
+runtime — flagged for a future session. No Claude B/runtime handoff this
+session. Rebased twice against concurrent Claude D/Claude B commits
+(Claude B's 353b0bd restored the "to " prefix on 27 bare verbs from task 2
+— merged cleanly). Gate green throughout, final: 8813/8813 dictionary,
+9/9 grammatical corrections, 441/441 unit tests, 0 new repository-
+intelligence violations, 0 resync candidates. Pushed clean across 3
+commits (f9a2b5c, 28b990e, 1c7504f), final HEAD 1c7504f, verified ==
+origin/main, no local/uncommitted changes.)
+Prior: 2026-09-18B by Claude A
 (resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260918.md. Full migration doc:
 docs/CLAUDE_A_SESSION_MIGRATION_20260918B.md — READ IT FIRST, this line is
 just a pointer. Summary: resync clean, HEAD 3772d29 == origin/main on arrival
