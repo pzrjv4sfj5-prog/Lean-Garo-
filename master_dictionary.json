@@ -5440,7 +5440,7 @@
     "english": "smell",
     "garo": "Gingsika",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080). Reconfirmed 2026-09-19, VERIFIED/HIGH — NV-159 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip): smell (verb) = Gingsika, reconfirming the already-VERIFIED 'smell'->'Gingsika' (NV-080, 2026-08-17). smell (noun) = Biba and Sengani, two coexisting forms, neither marked as preferred over the other. This resolves the 2026-09-19 open finding that corrections.json's 'smell'->'biba' override 'looked truncated/corrupted' -- it is not corrupted, Biba is the directly native-confirmed noun form; corrections.json is left unchanged (still correctly ships the noun sense for the bare 'smell' key). Sengani coincides in spelling with the already-unverified 'wisdom'->'Seng·ani' -- flagged as a possible homonym, not merged or otherwise reconciled, no evidence either way.",
     "confidence": "verified_high"
   },
   {
@@ -75776,7 +75776,7 @@
     "pos": null,
     "category": "questions",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — Thangseng, direct citation via Project Owner relay (chat, 2026-09-16). Sawa (who, VERIFIED/HIGH) + ka·ata (the ka·at- stem already attested in the phone-call paradigm: phone ka·atbo/ka·atenga/ka·atjawa, VERIFIED/HIGH) + -ata (past/question). FLAGGED, not assumed: (1) this is the first corpus attestation of -ata as a past/question suffix on this stem — not yet confirmed to generalize to other verbs, do not extend without further citation; (2) unlike every other entry in the phone-ka·a paradigm, this form has no explicit 'phone' object — given as-is per Thangseng, presumed contextually implied (e.g. a ringing phone) rather than confirmed droppable in all contexts.",
+    "notes": "VERIFIED/HIGH — Thangseng, direct citation via Project Owner relay (chat, 2026-09-16). Sawa (who, VERIFIED/HIGH) + ka·ata (the ka·at- stem already attested in the phone-call paradigm: phone ka·atbo/ka·atenga/ka·atjawa, VERIFIED/HIGH) + -ata (past/question). FLAGGED, not assumed: (1) this is the first corpus attestation of -ata as a past/question suffix on this stem — not yet confirmed to generalize to other verbs, do not extend without further citation; (2) unlike every other entry in the phone-ka·a paradigm, this form has no explicit 'phone' object — given as-is per Thangseng, presumed contextually implied (e.g. a ringing phone) rather than confirmed droppable in all contexts. VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip), closing Part 2 of docs/THANGSENG_RELAY_QUESTION_20260916.md: confirms -ata attaches directly to the verb (no gap) for \"who called?\", matching the already-VERIFIED \"Sawa ka·ata?\"/\"Sawa okamata?\" entries. Explicitly rejects *na·ara* as a substitute in this construction (\"Sawa na'a na'ara?\" / \"Sawa okama na'ara?\" both confirmed incorrect) — na·ara is confirmed NOT a free alternative to -ata; its one existing citation (\"which medicine did you take?\"->\"Badia samko ringa na·ara?\") is a separate, unrelated construction, not generalizable to other wh-questions.",
     "confidence": "verified_high"
   },
   {
@@ -75785,7 +75785,7 @@
     "pos": null,
     "category": "questions",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — Thangseng, direct citation via Project Owner relay (chat, 2026-09-16). Sawa (who, VERIFIED/HIGH) + okamata (okam- root of Okama/Okamani, VERIFIED/HIGH 'call'/summon sense, NV-041) + -ata (past/question). Distinguishes this sense from the phone-call sense (see \"who called? (phone call)\" -> \"Sawa ka·ata?\"), which uses the separate ka·a/ka·at- stem, not okam-. FLAGGED, not assumed: same -ata suffix question as the phone-call sibling entry — first attestation on this root, not yet confirmed to generalize.",
+    "notes": "VERIFIED/HIGH — Thangseng, direct citation via Project Owner relay (chat, 2026-09-16). Sawa (who, VERIFIED/HIGH) + okamata (okam- root of Okama/Okamani, VERIFIED/HIGH 'call'/summon sense, NV-041) + -ata (past/question). Distinguishes this sense from the phone-call sense (see \"who called? (phone call)\" -> \"Sawa ka·ata?\"), which uses the separate ka·a/ka·at- stem, not okam-. FLAGGED, not assumed: same -ata suffix question as the phone-call sibling entry — first attestation on this root, not yet confirmed to generalize. VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip), closing Part 2 of docs/THANGSENG_RELAY_QUESTION_20260916.md: confirms -ata attaches directly to the verb (no gap) for \"who called?\", matching the already-VERIFIED \"Sawa ka·ata?\"/\"Sawa okamata?\" entries. Explicitly rejects *na·ara* as a substitute in this construction (\"Sawa na'a na'ara?\" / \"Sawa okama na'ara?\" both confirmed incorrect) — na·ara is confirmed NOT a free alternative to -ata; its one existing citation (\"which medicine did you take?\"->\"Badia samko ringa na·ara?\") is a separate, unrelated construction, not generalizable to other wh-questions.",
     "confidence": "verified_high"
   },
   {
@@ -77523,7 +77523,8 @@
     "garo": "Biba",
     "category": null,
     "pos": "n.",
-    "notes": "Biba, N. odour"
+    "notes": "VERIFIED/HIGH — NV-159 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip): smell (verb) = Gingsika, reconfirming the already-VERIFIED 'smell'->'Gingsika' (NV-080, 2026-08-17). smell (noun) = Biba and Sengani, two coexisting forms, neither marked as preferred over the other. This resolves the 2026-09-19 open finding that corrections.json's 'smell'->'biba' override 'looked truncated/corrupted' -- it is not corrupted, Biba is the directly native-confirmed noun form; corrections.json is left unchanged (still correctly ships the noun sense for the bare 'smell' key). Sengani coincides in spelling with the already-unverified 'wisdom'->'Seng·ani' -- flagged as a possible homonym, not merged or otherwise reconciled, no evidence either way.",
+    "confidence": "verified_high"
   },
   {
     "english": "to evaporate",
@@ -77825,5 +77826,82 @@
     "category": "uncategorized",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-09-19 (Project Owner relay, direct: \"Skin -> bi.gil\", closing Claude D's P24/P25 held item asking whether 'bark' and 'skin' share a root). Confirms 'bark' uses the same word as the already-VERIFIED 'Skin'->'bi·gil' (NV-080, 2026-08-17) -- one polysemous root covering 'outer covering' senses (skin/bark). Coexists with the pre-existing unverified 'bark'->'bi·kil·ap', not merged/deleted."
+  },
+  {
+    "english": "who ate?",
+    "garo": "Sawa cha·a?",
+    "category": "questions",
+    "notes": "VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript, relayed by Tridip, answering docs/THANGSENG_RELAY_QUESTION_20260916.md Part 1: the same-verb wh-question survey). Confirms bare -a verb ending (not -aha) across the full who/what/where/why/how/which-food paradigm with 'eat', corroborating NV-155's single earlier data point (\"what did he eat?\"=\"Bia maiko cha·a?\") that a temporal-word-implies-past reading lets -aha be dropped.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "what did you eat? (bare, no -aha)",
+    "garo": "Na·a maiko cha·a?",
+    "category": "questions",
+    "notes": "VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript, relayed by Tridip, answering docs/THANGSENG_RELAY_QUESTION_20260916.md Part 1: the same-verb wh-question survey). Confirms bare -a verb ending (not -aha) across the full who/what/where/why/how/which-food paradigm with 'eat', corroborating NV-155's single earlier data point (\"what did he eat?\"=\"Bia maiko cha·a?\") that a temporal-word-implies-past reading lets -aha be dropped. Coexists with, does not supersede, the earlier NV-121 citation \"what did you eat?\"->\"Na·a maiko cha·aha?\" (verified_high, with -aha) — same exact English key answered two different ways on two separate occasions by direct Thangseng citation. Genuinely NOT reconciled: flagged as an open tension, not force-resolved either direction. Both forms retained.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "where did you eat?",
+    "garo": "Na·a bano cha·a?",
+    "category": "questions",
+    "notes": "VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript, relayed by Tridip, answering docs/THANGSENG_RELAY_QUESTION_20260916.md Part 1: the same-verb wh-question survey). Confirms bare -a verb ending (not -aha) across the full who/what/where/why/how/which-food paradigm with 'eat', corroborating NV-155's single earlier data point (\"what did he eat?\"=\"Bia maiko cha·a?\") that a temporal-word-implies-past reading lets -aha be dropped.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "why did you eat?",
+    "garo": "Na·a maina cha·a?",
+    "category": "questions",
+    "notes": "VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript, relayed by Tridip, answering docs/THANGSENG_RELAY_QUESTION_20260916.md Part 1: the same-verb wh-question survey). Confirms bare -a verb ending (not -aha) across the full who/what/where/why/how/which-food paradigm with 'eat', corroborating NV-155's single earlier data point (\"what did he eat?\"=\"Bia maiko cha·a?\") that a temporal-word-implies-past reading lets -aha be dropped.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how did you eat?",
+    "garo": "Na·a maidake cha·a?",
+    "category": "questions",
+    "notes": "VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript, relayed by Tridip, answering docs/THANGSENG_RELAY_QUESTION_20260916.md Part 1: the same-verb wh-question survey). Confirms bare -a verb ending (not -aha) across the full who/what/where/why/how/which-food paradigm with 'eat', corroborating NV-155's single earlier data point (\"what did he eat?\"=\"Bia maiko cha·a?\") that a temporal-word-implies-past reading lets -aha be dropped.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "which food did you eat?",
+    "garo": "Na·a badia cha·aniko cha·a?",
+    "category": "questions",
+    "notes": "VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript, relayed by Tridip, answering docs/THANGSENG_RELAY_QUESTION_20260916.md Part 1: the same-verb wh-question survey). Confirms bare -a verb ending (not -aha) across the full who/what/where/why/how/which-food paradigm with 'eat', corroborating NV-155's single earlier data point (\"what did he eat?\"=\"Bia maiko cha·a?\") that a temporal-word-implies-past reading lets -aha be dropped. Introduces a new headword: cha·ani (nominalized \"eat\" = \"food/meal, the thing eaten\"), here object-marked with -ko (RULE-009), distinct from the existing food roots Mi/al·a/Adal — not merged, a separate lexical item.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "food (thing eaten, nominalized from eat)",
+    "garo": "Cha·ani",
+    "category": "food",
+    "notes": "VERIFIED/HIGH — NV-158 (2026-09-19, direct Thangseng WhatsApp transcript, relayed by Tridip, answering docs/THANGSENG_RELAY_QUESTION_20260916.md Part 1: the same-verb wh-question survey). Confirms bare -a verb ending (not -aha) across the full who/what/where/why/how/which-food paradigm with 'eat', corroborating NV-155's single earlier data point (\"what did he eat?\"=\"Bia maiko cha·a?\") that a temporal-word-implies-past reading lets -aha be dropped. New headword, derived component of \"which food did you eat?\" above. Coexists with Mi/al·a/Adal (all separately verified \"food\" senses) — relationship between them not established, not merged.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "hundred (bare root, distinct from \"one hundred\")",
+    "garo": "Ritcha",
+    "category": "numbers",
+    "notes": "Raw Thangseng transcript relayed 2026-09-19 (via Tridip, chat-pasted by Project Owner) gives \"100=ritcha, 101=ritchasa\" plus a worked example \"100 dogs\"=\"Achak mang·ritchasa\" and a trailing fragment \"Ritchasa gni\" with no gloss. This is NOT force-resolved — flagged as an open contradiction, not applied where it conflicts. The \"100 dogs\"=\"Achak mang·ritchasa\" example directly corroborates the already-VERIFIED \"one hundred\"=\"Ritchasa\" (and the whole multiplicative Ritcha+SUFFIX hundred-series: Ritchagni=200, Ritchagittam=300, etc.) — i.e. ritchasa=100, not 101 as the transcript's own \"101=\" label claims. The bare root \"ritcha\" (no suffix) as a standalone word for \"hundred\" is new and plausible — not previously on file distinct from \"Ritchasa\" — added here as a single unverified citation, not promoted, given the labeling inconsistency in the same transcript. The trailing \"Ritchasa gni\" has no attached gloss and is not interpretable without more context (a genuine \"201\"/\"200\" claim would contradict the already-VERIFIED \"Ritchagni\"=200, so not guessed at either way). Needs an explicit follow-up relay question before any of this promotes or overrides the existing verified_high 100-1900 numeral table.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "one hundred dogs",
+    "garo": "Achak mang·ritchasa",
+    "category": "animals",
+    "notes": "Raw Thangseng transcript relayed 2026-09-19 (via Tridip, chat-pasted by Project Owner) gives \"100=ritcha, 101=ritchasa\" plus a worked example \"100 dogs\"=\"Achak mang·ritchasa\" and a trailing fragment \"Ritchasa gni\" with no gloss. This is NOT force-resolved — flagged as an open contradiction, not applied where it conflicts. The \"100 dogs\"=\"Achak mang·ritchasa\" example directly corroborates the already-VERIFIED \"one hundred\"=\"Ritchasa\" (and the whole multiplicative Ritcha+SUFFIX hundred-series: Ritchagni=200, Ritchagittam=300, etc.) — i.e. ritchasa=100, not 101 as the transcript's own \"101=\" label claims. The bare root \"ritcha\" (no suffix) as a standalone word for \"hundred\" is new and plausible — not previously on file distinct from \"Ritchasa\" — added here as a single unverified citation, not promoted, given the labeling inconsistency in the same transcript. The trailing \"Ritchasa gni\" has no attached gloss and is not interpretable without more context (a genuine \"201\"/\"200\" claim would contradict the already-VERIFIED \"Ritchagni\"=200, so not guessed at either way). Needs an explicit follow-up relay question before any of this promotes or overrides the existing verified_high 100-1900 numeral table. Corroborates existing verified_high \"one hundred\"->\"Ritchasa\" via the established NOUN+CLASSIFIER+NUMBER-SUFFIX counting pattern (achak+mang+ritchasa).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "smell (noun)",
+    "garo": "Biba",
+    "category": "senses",
+    "notes": "VERIFIED/HIGH — NV-159 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip): smell (verb) = Gingsika, reconfirming the already-VERIFIED 'smell'->'Gingsika' (NV-080, 2026-08-17). smell (noun) = Biba and Sengani, two coexisting forms, neither marked as preferred over the other. This resolves the 2026-09-19 open finding that corrections.json's 'smell'->'biba' override 'looked truncated/corrupted' -- it is not corrupted, Biba is the directly native-confirmed noun form; corrections.json is left unchanged (still correctly ships the noun sense for the bare 'smell' key). Sengani coincides in spelling with the already-unverified 'wisdom'->'Seng·ani' -- flagged as a possible homonym, not merged or otherwise reconciled, no evidence either way.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "smell (noun, alt)",
+    "garo": "Sengani",
+    "category": "senses",
+    "notes": "VERIFIED/HIGH — NV-159 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip): smell (verb) = Gingsika, reconfirming the already-VERIFIED 'smell'->'Gingsika' (NV-080, 2026-08-17). smell (noun) = Biba and Sengani, two coexisting forms, neither marked as preferred over the other. This resolves the 2026-09-19 open finding that corrections.json's 'smell'->'biba' override 'looked truncated/corrupted' -- it is not corrupted, Biba is the directly native-confirmed noun form; corrections.json is left unchanged (still correctly ships the noun sense for the bare 'smell' key). Sengani coincides in spelling with the already-unverified 'wisdom'->'Seng·ani' -- flagged as a possible homonym, not merged or otherwise reconciled, no evidence either way.",
+    "confidence": "verified_high"
   }
 ]

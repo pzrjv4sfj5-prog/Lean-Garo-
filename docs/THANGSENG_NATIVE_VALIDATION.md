@@ -7258,3 +7258,119 @@ No dictionary data or runtime code changed this entry — contract/doc
 update only, not a compile input. Gate not re-run for this entry
 alone (no master_dictionary.json/phrase_maps.js change); will be
 verified on next full-gate pass.
+
+## NV-158 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip)
+
+Closes `docs/THANGSENG_RELAY_QUESTION_20260916.md` in full.
+
+**Part 1 — wh-question survey, verb held constant as "eat":**
+who ate?=`Sawa cha·a?`, what did you eat?=`Na·a maiko cha·a?`, where
+did you eat?=`Na·a bano cha·a?`, why did you eat?=`Na·a maina cha·a?`,
+how did you eat?=`Na·a maidake cha·a?`, which food did you
+eat?=`Na·a badia cha·aniko cha·a?`. All 6 added VERIFIED/HIGH. Every
+component root (Sawa/who, Na·a/you, maiko/what, bano/where,
+maina/why, maidake/how, badia/which) was already independently
+VERIFIED/HIGH — this batch is compositional confirmation, not new
+roots, except **cha·ani** ("food, the thing eaten" — nominalized
+form of the eat-root cha·a), a genuinely new headword, added
+separately.
+
+**Finding: bare `-a` verb ending, not `-aha`, across the whole
+paradigm.** All 6 answers use the bare form. This directly
+contradicts the existing NV-121 citation for the *identical* English
+key "what did you eat?" -> `Na·a maiko cha·aha?` (with -aha). NOT
+force-resolved: both forms kept as coexisting verified_high rows
+under differentiated keys, with the tension stated explicitly in
+each row's notes. This corroborates, with much stronger (6-item,
+explicitly-controlled) evidence, the single earlier NV-155 data point
+("what did he eat?"->`Bia maiko cha·a?`) that flagged a
+temporal-word-implies-past observation not yet built into a rule.
+Still not built into a rule here either — a genuine open item for a
+future session, now with real evidence behind it.
+
+**Part 2 — "who called?":** confirmed `-ata` fuses directly onto the
+verb (no gap) — matches the existing VERIFIED `Sawa ka·ata?` / `Sawa
+okamata?`. Explicitly REJECTED as incorrect for this construction:
+`Sawa na'a na'ara?` and `Sawa okama na'ara?` (both use a trailing
+*na·ara* word instead of the fused suffix). Citations added to the
+two existing entries. This settles docs/THANGSENG_RELAY_QUESTION_20260916.md's
+open question: *na·ara* is NOT a free alternative to *-ata* — its
+one other citation ("which medicine did you take?"->`Badia samko
+ringa na·ara?`) is a separate, unrelated construction, not a general
+question-forming device.
+
+**Separate, unprompted counting data (same transcript) — NOT
+resolved, flagged only:** raw text gives "100=ritcha, 101=ritchasa"
+plus a worked example "100 dogs"=`Achak mang·ritchasa` and an
+unglossed trailing fragment "Ritchasa gni". The worked example
+directly corroborates the already-VERIFIED "one hundred"=`Ritchasa`
+(and the whole Ritcha+SUFFIX multiplicative hundred-series:
+Ritchagni=200, Ritchagittam=300, ...) — i.e. ritchasa=100, contradicting
+the transcript's own "101=" label. Added `Ritcha` (bare root) as a
+single unverified citation for "hundred" as a standalone word,
+distinct from `Ritchasa` ("one hundred") — plausible, not promoted,
+given the labeling inconsistency in the same message. "Ritchasa gni"
+has no gloss and is not interpretable without more context (a literal
+"200"/"201" reading would contradict the already-VERIFIED
+`Ritchagni`=200, so not guessed at). Needs an explicit follow-up
+relay question before any of it can promote or override the existing
+verified_high 100–1900 numeral table.
+
+**Runtime finding, Claude B territory, not fixed:** live-verifying
+"100 dogs" (digit form, still falls through to the classifier engine
+since only the word-form "one hundred dogs" got a dictionary entry)
+shows `translate("100 dogs")` currently produces `achak mangritcha`
+— missing the `-sa` multiplier suffix and its raka dot that the new
+native citation `Achak mang·ritchasa` confirms should be there,
+matching the classifier+raka+number-suffix pattern used everywhere
+else in the counting system (e.g. `mang·sa`=one). Restated in this
+session's migration doc as a Runtime Handoff. Updated one stale unit
+test (`tests/unit/bug4_hundred_thousand_word_parsing.test.js`) that
+had asserted byte-for-byte parity between "100 dogs" and "one hundred
+dogs" via the classifier engine — that assumption is now superseded
+by the native citation shadowing the classifier path via exact-phrase
+lookup; genuine improvement, not a regression.
+
+Gate green throughout: 8822/8822 dictionary entries, 9/9 grammatical
+corrections, 442/442 unit tests (was 441, +1 net after the stale-test
+split), 0 new repository-intelligence violations, 0 resync
+candidates. Live-verified all 5 new full-sentence keys plus "who
+called?" via `translate()`.
+
+## NV-159 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip, same session)
+
+Closed a small "smell" batch, no separate relay question needed —
+volunteered directly. smell (verb) = `Gingsika`, reconfirming the
+already-VERIFIED `smell`->`Gingsika` (NV-080, 2026-08-17) — citation
+added to the existing row, no change to the value. smell (noun) =
+`Biba` and `Sengani`, two new coexisting VERIFIED/HIGH rows, neither
+preferred over the other. Also upgraded the pre-existing untagged
+`odour`->`Biba` row to VERIFIED/HIGH citing the same evidence (same
+word, same sense).
+
+**Resolves a prior open finding:** this session's earlier Task 2 (see
+docs/CLAUDE_A_SESSION_MIGRATION_20260919.md) had flagged
+`corrections.json`'s `"smell": "biba"` override as looking
+"truncated/corrupted." It is not — `Biba` is the direct
+native-confirmed noun. `corrections.json` is left unchanged (it
+already, correctly, ships the noun sense for the bare "smell" key);
+no engine/override edit needed.
+
+**Not resolved, flagged only:** `Sengani` coincides in spelling with
+the already-unverified `wisdom`->`Seng·ani` — a possible homonym, no
+evidence either way, not merged or otherwise reconciled. `skin`->`bigi`
+(the sibling half of the same original "truncated/corrupted" flag) is
+still untouched — no native evidence supplied for it this round,
+stays open.
+
+**Duplicate check (Project Owner instruction, "no dups"):** swept
+every existing smell/odour-related master_dictionary.json row for
+exact (english, garo) duplicates before adding anything — zero found;
+nothing to remove.
+
+Gate green: 8824/8824 dictionary entries, 9/9 grammatical corrections,
+442/442 unit tests (unchanged, no engine/test file touched this
+entry), 0 new repository-intelligence violations, 0 resync
+candidates. Live-verified: `translate("smell")`->`biba` (correction,
+unchanged), `translate("smell (noun)")`->`Biba`,
+`translate("odour")`->`Biba`.

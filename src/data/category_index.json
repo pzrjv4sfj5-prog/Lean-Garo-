@@ -4020,5 +4020,16 @@
   "i am building the house": "phrases",
   "build (verb, general)": "phrases",
   "building (verb, continuous)": "phrases",
-  "shower (verb, continuous)": "phrases"
+  "shower (verb, continuous)": "phrases",
+  "who ate?": "questions",
+  "what did you eat? (bare, no -aha)": "questions",
+  "where did you eat?": "questions",
+  "why did you eat?": "questions",
+  "how did you eat?": "questions",
+  "which food did you eat?": "questions",
+  "food (thing eaten, nominalized from eat)": "food",
+  "hundred (bare root, distinct from \"one hundred\")": "numbers",
+  "one hundred dogs": "animals",
+  "smell (noun)": "senses",
+  "smell (noun, alt)": "senses"
 }
