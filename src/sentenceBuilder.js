@@ -360,7 +360,24 @@ export function assembleGrammar(grammar) {
   // confidently returning an incomplete sentence. Pure engineering fix —
   // restores the behavior the existing check was already written to
   // provide, no new Garo vocabulary or grammar invented.
-  const objMarker = (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : '·ko';
+  // BUGFIX (2026-09-19, Claude B, engineering-only): "Angko" is the
+  // VERIFIED/HIGH-confirmed complete object form of "anga"/"me"
+  // (master_dictionary.json notes it as the object form of "anga",
+  // attested in the native-confirmed "angko saksan donbo" = "leave me
+  // alone", and separately in "help me = Angna dakchakbo (or angko
+  // dakchakbo)" — neither citation takes any further suffix). This
+  // unconditionally appended the accusative marker to every object
+  // regardless of whether the dictionary value was already a complete,
+  // marked pronoun — confirmed live: "i will help me" -> "Anga
+  // angko·ko dakchakgen" (double "ko"), not any attested Garo form.
+  // Scoped to the one case with direct, unambiguous citation evidence
+  // that no further marker applies; "him"/"us"/"them" (Bichi/Chingna/
+  // Uamangna) are left untouched — whether those dative-looking stems
+  // correctly take a further accusative suffix or are themselves
+  // already complete is a real open question with no citation on
+  // record either way, not an engineering call to make unilaterally.
+  const objAlreadyMarked = grammar.object && grammar.object.garo === 'Angko';
+  const objMarker = (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked ? '' : '·ko');
   if (grammar.possessive && grammar.object) {
     const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
     parts.push(grammar.possessive.garo + ' ' + objText + objMarker);
