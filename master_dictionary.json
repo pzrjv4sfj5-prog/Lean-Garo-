@@ -77229,5 +77229,586 @@
     "category": null,
     "pos": "adv.",
     "notes": "Along; direct; continually."
+  },
+  {
+    "english": "forbid",
+    "garo": "Beng·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Beng·a, V. to forbid"
+  },
+  {
+    "english": "compound word meaning to prohibit",
+    "garo": "Beng·a-kanga",
+    "category": null,
+    "pos": "n.",
+    "notes": "Beng·a-kanga, N. a compound word meaning to prohibit"
+  },
+  {
+    "english": "the jingling sound",
+    "garo": "Bengbeng-chengcheng",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bengbeng-chengcheng, N. the jingling sound"
+  },
+  {
+    "english": "young frog",
+    "garo": "Bengblok bi·sa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bengblok bi·sa, N. a young frog"
+  },
+  {
+    "english": "croak",
+    "garo": "Beng·blok nikoa",
+    "category": null,
+    "pos": "v.",
+    "notes": "Beng·blok nikoa, V. to croak"
+  },
+  {
+    "english": "sling",
+    "garo": "Bengjuri",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bengjuri, N. a sling"
+  },
+  {
+    "english": "a poisonous stinging bee akin to wasp",
+    "garo": "Bengsning",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bengsning, N. a poisonous stinging bee akin to wasp"
+  },
+  {
+    "english": "break through",
+    "garo": "Be·praka",
+    "category": null,
+    "pos": "v.",
+    "notes": "Be·praka, V. to break through"
+  },
+  {
+    "english": "be broken into pieces",
+    "garo": "Be·pria",
+    "category": null,
+    "pos": "v.",
+    "notes": "Be·pria, V. to be broken into pieces"
+  },
+  {
+    "english": "spawn",
+    "garo": "Bengblok bitchi",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bengblok bitchi, N. spawn"
+  },
+  {
+    "english": "a big green frog whose flesh is eaten",
+    "garo": "Bengbong",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bengbong, N. a big green frog whose flesh is eaten"
+  },
+  {
+    "english": "easily broken",
+    "garo": "Be·ninggipa",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Be·ninggipa, ADJ. easily broken"
+  },
+  {
+    "english": "sting",
+    "garo": "Beri",
+    "category": null,
+    "pos": "n.",
+    "notes": "Beri, N. sting"
+  },
+  {
+    "english": "crack",
+    "garo": "Be·sria",
+    "category": null,
+    "pos": "v.",
+    "notes": "Be·sria, V. to crack"
+  },
+  {
+    "english": "crumble down",
+    "garo": "Be·rurua",
+    "category": null,
+    "pos": "v.",
+    "notes": "Be·rurua, V. to crumble down"
+  },
+  {
+    "english": "mustard",
+    "garo": "Besual",
+    "category": null,
+    "pos": "n.",
+    "notes": "Besual, N. mustard"
+  },
+  {
+    "english": "cane",
+    "garo": "Bet",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bet, N. a cane"
+  },
+  {
+    "english": "cane (verb)",
+    "garo": "Bet doka",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bet doka, V. to cane"
+  },
+  {
+    "english": "See bel-bela",
+    "garo": "Betbeta",
+    "category": null,
+    "pos": "v.",
+    "notes": "Betbeta, V. See bel-bela"
+  },
+  {
+    "english": "a large evergreen tree",
+    "garo": "Bewa champa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bewa champa, N. a large evergreen tree"
+  },
+  {
+    "english": "habitually as",
+    "garo": "·bewal",
+    "category": null,
+    "pos": "suffix",
+    "notes": "·bewal, SUFFIX. habitually as"
+  },
+  {
+    "english": "usually",
+    "garo": "Bewal gita",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Bewal gita, ADV. usually"
+  },
+  {
+    "english": "to him",
+    "garo": "Bichi",
+    "category": null,
+    "pos": "pron.",
+    "notes": "Bichi, PR. to him"
+  },
+  {
+    "english": "him or her (accusative case)",
+    "garo": "Biko",
+    "category": null,
+    "pos": "pron.",
+    "notes": "Biko, PR. him or her (accusative case)"
+  },
+  {
+    "english": "to him or her",
+    "garo": "Bina",
+    "category": null,
+    "pos": "pron.",
+    "notes": "Bina, PR. to him or her"
+  },
+  {
+    "english": "with him or her",
+    "garo": "Bimung",
+    "category": null,
+    "pos": "pron.",
+    "notes": "Bimung, PR. with him or her"
+  },
+  {
+    "english": "his or her (possessive case)",
+    "garo": "Bini",
+    "category": null,
+    "pos": "pron.",
+    "notes": "Bini, PR. his or her (possessive case)"
+  },
+  {
+    "english": "beg",
+    "garo": "Bi·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bi·a, V. to beg"
+  },
+  {
+    "english": "marry",
+    "garo": "Bia ka·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bia ka·a, V. to marry"
+  },
+  {
+    "english": "bridegroom",
+    "garo": "Bia ka·gnigipa me·asa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bia ka·gnigipa me·asa, N. bridegroom"
+  },
+  {
+    "english": "bride",
+    "garo": "Bia ka·gnigipa me·chik",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bia ka·gnigipa me·chik, N. bride"
+  },
+  {
+    "english": "newly married",
+    "garo": "Bia ka·daldal",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Bia ka·daldal, ADJ. newly married"
+  },
+  {
+    "english": "the bottom of the boat",
+    "garo": "Biam",
+    "category": null,
+    "pos": "n.",
+    "notes": "Biam, N. the bottom of the boat"
+  },
+  {
+    "english": "begger",
+    "garo": "Bi·ame cha·gipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bi·ame cha·gipa, N. a begger"
+  },
+  {
+    "english": "mendicant",
+    "garo": "Bi·amgipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bi·amgipa, N. a mendicant"
+  },
+  {
+    "english": "make room",
+    "garo": "Biap on·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Biap on·a, V. to make room"
+  },
+  {
+    "english": "take position",
+    "garo": "Biap ra·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Biap ra·a, V. to take position"
+  },
+  {
+    "english": "congested place",
+    "garo": "Biap apchangket",
+    "category": null,
+    "pos": "n.",
+    "notes": "Biap apchangket, N. a congested place"
+  },
+  {
+    "english": "lodging",
+    "garo": "Biap-bicham",
+    "category": null,
+    "pos": "n.",
+    "notes": "Biap-bicham, N. a lodging"
+  },
+  {
+    "english": "a very strong unpleasant smell",
+    "garo": "Biba seenga",
+    "category": null,
+    "pos": "n.",
+    "notes": "Biba seenga, N. a very strong unpleasant smell"
+  },
+  {
+    "english": "sickness",
+    "garo": "Biati",
+    "category": null,
+    "pos": "n.",
+    "notes": "Biati, N. sickness"
+  },
+  {
+    "english": "odour",
+    "garo": "Biba",
+    "category": null,
+    "pos": "n.",
+    "notes": "Biba, N. odour"
+  },
+  {
+    "english": "evaporate",
+    "garo": "Biba chadoa",
+    "category": null,
+    "pos": "v.",
+    "notes": "Biba chadoa, V. to evaporate"
+  },
+  {
+    "english": "escape as steam",
+    "garo": "Biba joka",
+    "category": null,
+    "pos": "v.",
+    "notes": "Biba joka, V. to escape as steam"
+  },
+  {
+    "english": "smell (verb, perceive)",
+    "garo": "Biba man·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Biba man·a, V. to smell"
+  },
+  {
+    "english": "defendant",
+    "garo": "Bibadi",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bibadi, N. defendant"
+  },
+  {
+    "english": "same as Bibala",
+    "garo": "Bibal bala",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bibal bala, V. same as Bibala"
+  },
+  {
+    "english": "flower (verb)",
+    "garo": "Bibala",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bibala, V. to flower"
+  },
+  {
+    "english": "remove the contents from the intestines",
+    "garo": "Bibik sita",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Bibik sita, VI. to remove the contents from the intestines"
+  },
+  {
+    "english": "river mouth",
+    "garo": "Bibra",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bibra, N. river mouth"
+  },
+  {
+    "english": "chink",
+    "garo": "Bibret",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bibret, N. a chink"
+  },
+  {
+    "english": "pith",
+    "garo": "Bibrong",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bibrong, N. pith"
+  },
+  {
+    "english": "pray for another",
+    "garo": "Bi·chaka",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bi·chaka, V. to pray for another"
+  },
+  {
+    "english": "judgment",
+    "garo": "Bichal",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bichal, N. judgment"
+  },
+  {
+    "english": "the day of judgment",
+    "garo": "Bichalni sal",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bichalni sal, N. the day of judgment"
+  },
+  {
+    "english": "try a case",
+    "garo": "Bichal ka·a",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bichal ka·a, V. to try a case"
+  },
+  {
+    "english": "judge",
+    "garo": "Bichal ka·gipa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bichal ka·gipa, N. a judge"
+  },
+  {
+    "english": "layer",
+    "garo": "Bichap",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bichap, N. layer"
+  },
+  {
+    "english": "in layers",
+    "garo": "Bichap bichap",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Bichap bichap, ADV. in layers"
+  },
+  {
+    "english": "slice",
+    "garo": "Bichrit",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bichrit, N. slice"
+  },
+  {
+    "english": "clue",
+    "garo": "Bichu",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bichu, N. a clue"
+  },
+  {
+    "english": "learning",
+    "garo": "Bida",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bida, N. learning"
+  },
+  {
+    "english": "resort",
+    "garo": "Bidam",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bidam, N. a resort"
+  },
+  {
+    "english": "blade",
+    "garo": "Bidareng",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bidareng, N. blade"
+  },
+  {
+    "english": "foreigner",
+    "garo": "Bidasi",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bidasi, N. a foreigner"
+  },
+  {
+    "english": "pertaining to",
+    "garo": "Biding",
+    "category": null,
+    "pos": "adj.",
+    "notes": "Biding, ADJ. pertaining to"
+  },
+  {
+    "english": "knot",
+    "garo": "Bidimel",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bidimel, N. a knot"
+  },
+  {
+    "english": "a basket-like bamboo mat rolled up to contain the paddy",
+    "garo": "Bidol",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bidol, N. a basket-like bamboo mat rolled up to contain the paddy"
+  },
+  {
+    "english": "skin (verb)",
+    "garo": "Bigil kika",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bigil kika, V. to skin"
+  },
+  {
+    "english": "scrape the scale of a fish",
+    "garo": "Bigil gala",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bigil gala, V. to scrape the scale of a fish"
+  },
+  {
+    "english": "torn of skin",
+    "garo": "Bigil gilchraka",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bigil gilchraka, N. torn of skin"
+  },
+  {
+    "english": "cast (its skin or slough)",
+    "garo": "Bigil gilsrea",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bigil gilsrea, V. to cast (its skin or slough)"
+  },
+  {
+    "english": "remove the skin",
+    "garo": "Bigil kiloka",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bigil kiloka, V. to remove the skin"
+  },
+  {
+    "english": "circumcise",
+    "garo": "Bigil rasota",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bigil rasota, V. to circumcise"
+  },
+  {
+    "english": "minute fragment",
+    "garo": "Biginchi",
+    "category": null,
+    "pos": "n.",
+    "notes": "Biginchi, N. a minute fragment"
+  },
+  {
+    "english": "estrange",
+    "garo": "Bigraia",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bigraia, V. to estrange"
+  },
+  {
+    "english": "bee-keeping",
+    "garo": "Bija jillani",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bija jillani, N. bee-keeping"
+  },
+  {
+    "english": "buzz",
+    "garo": "Bija ongonga",
+    "category": null,
+    "pos": "v.",
+    "notes": "Bija ongonga, V. to buzz"
+  },
+  {
+    "english": "honeycomb",
+    "garo": "Bija birang",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bija birang, N. honeycomb"
+  },
+  {
+    "english": "collect honey",
+    "garo": "Bija chiria",
+    "category": null,
+    "pos": "vi.",
+    "notes": "Bija chiria, VI. to collect honey"
+  },
+  {
+    "english": "smoke out bees to collect honey",
+    "garo": "Bija so·a",
+    "category": null,
+    "pos": "vt.",
+    "notes": "Bija so·a, VT. to smoke out bees to collect honey"
+  },
+  {
+    "english": "hornet",
+    "garo": "Bija wal",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bija wal, N. a hornet"
+  },
+  {
+    "english": "wax obtained from the honey comb",
+    "garo": "Bija ste",
+    "category": null,
+    "pos": "n.",
+    "notes": "Bija ste, N. wax obtained from the honey comb"
   }
 ]

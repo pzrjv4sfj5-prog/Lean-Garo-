@@ -58706,5 +58706,2413 @@
     "near_duplicate": null,
     "promotion_status": "promoted",
     "promoted_date": "2026-09-19T06:19:38.865Z"
+  },
+  {
+    "id": "PL-0002207",
+    "english": "forbid",
+    "garo": "Beng·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Beng·a, V. to forbid",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "nim·a"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "benga",
+      "matches": [
+        {
+          "english": "block",
+          "garo": "beng·a"
+        },
+        {
+          "english": "prohibit",
+          "garo": "beng·a"
+        }
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002208",
+    "english": "compound word meaning to prohibit",
+    "garo": "Beng·a-kanga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Beng·a-kanga, N. a compound word meaning to prohibit",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002209",
+    "english": "the jingling sound",
+    "garo": "Bengbeng-chengcheng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bengbeng-chengcheng, N. the jingling sound",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002210",
+    "english": "young frog",
+    "garo": "Bengblok bi·sa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bengblok bi·sa, N. a young frog",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002211",
+    "english": "croak",
+    "garo": "Beng·blok nikoa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Beng·blok nikoa, V. to croak",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002212",
+    "english": "sling",
+    "garo": "Bengjuri",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bengjuri, N. a sling",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002213",
+    "english": "a poisonous stinging bee akin to wasp",
+    "garo": "Bengsning",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bengsning, N. a poisonous stinging bee akin to wasp",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002214",
+    "english": "break through",
+    "garo": "Be·praka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Be·praka, V. to break through",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002215",
+    "english": "be broken into pieces",
+    "garo": "Be·pria",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Be·pria, V. to be broken into pieces",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002216",
+    "english": "spawn",
+    "garo": "Bengblok bitchi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bengblok bitchi, N. spawn",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002217",
+    "english": "a big green frog whose flesh is eaten",
+    "garo": "Bengbong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bengbong, N. a big green frog whose flesh is eaten",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002218",
+    "english": "easily broken",
+    "garo": "Be·ninggipa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Be·ninggipa, ADJ. easily broken",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002219",
+    "english": "sting",
+    "garo": "Beri",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Beri, N. sting",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "del·a"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002220",
+    "english": "crack",
+    "garo": "Be·sria",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Be·sria, V. to crack",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bret·a"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002221",
+    "english": "crumble down",
+    "garo": "Be·rurua",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Be·rurua, V. to crumble down",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002222",
+    "english": "mustard",
+    "garo": "Besual",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Besual, N. mustard",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "sil·so"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002223",
+    "english": "cane",
+    "garo": "Bet",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bet, N. a cane",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bet",
+        "Bet doka"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002224",
+    "english": "cane (verb)",
+    "garo": "Bet doka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bet doka, V. to cane",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Renamed from bare 'cane' -- Claude D's own homograph_flags correctly caught this as a noun/verb pair sharing one English key with 'Bet' (PL-0002223, cane, n.). compiled_dict.json keys by English string only with no POS resolution, so both would silently tie under 'cane'; re-keyed the verb form to avoid the collision, matching the existing project pattern for sense-tagged headwords (e.g. 'man (male)', 'walk (verb)').",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Bet",
+        "Bet doka"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002225",
+    "english": "See bel-bela",
+    "garo": "Betbeta",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Betbeta, V. See bel-bela",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002226",
+    "english": "a large evergreen tree",
+    "garo": "Bewa champa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bewa champa, N. a large evergreen tree",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002227",
+    "english": "habitually as",
+    "garo": "·bewal",
+    "category": null,
+    "pos": "suffix",
+    "classifier": null,
+    "notes": "·bewal, SUFFIX. habitually as",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bewal",
+      "matches": [
+        {
+          "english": "convention",
+          "garo": "be·wal"
+        },
+        {
+          "english": "custom",
+          "garo": "be·wal"
+        },
+        {
+          "english": "habit",
+          "garo": "be·wal"
+        },
+        {
+          "english": "menstruation",
+          "garo": "be·wal"
+        }
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002228",
+    "english": "usually",
+    "garo": "Bewal gita",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Bewal gita, ADV. usually",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002229",
+    "english": "to him",
+    "garo": "Bichi",
+    "category": null,
+    "pos": "pron.",
+    "classifier": null,
+    "notes": "Bichi, PR. to him",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002230",
+    "english": "him or her (accusative case)",
+    "garo": "Biko",
+    "category": null,
+    "pos": "pron.",
+    "classifier": null,
+    "notes": "Biko, PR. him or her (accusative case)",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002231",
+    "english": "to him or her",
+    "garo": "Bina",
+    "category": null,
+    "pos": "pron.",
+    "classifier": null,
+    "notes": "Bina, PR. to him or her",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bina",
+      "matches": [
+        {
+          "english": "blunt",
+          "garo": "Bin·a"
+        }
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002232",
+    "english": "with him or her",
+    "garo": "Bimung",
+    "category": null,
+    "pos": "pron.",
+    "classifier": null,
+    "notes": "Bimung, PR. with him or her",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bimung",
+      "matches": [
+        {
+          "english": "name",
+          "garo": "bimung"
+        }
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002233",
+    "english": "his or her (possessive case)",
+    "garo": "Bini",
+    "category": null,
+    "pos": "pron.",
+    "classifier": null,
+    "notes": "Bini, PR. his or her (possessive case)",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002234",
+    "english": "beg",
+    "garo": "Bi·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bi·a, V. to beg",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "gil·a"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "bia",
+      "matches": [
+        {
+          "english": "ask, request",
+          "garo": "bi·a"
+        },
+        {
+          "english": "request",
+          "garo": "bi·a"
+        }
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002235",
+    "english": "marry",
+    "garo": "Bia ka·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bia ka·a, V. to marry",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bi·a·a",
+        "kim·a"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002236",
+    "english": "bridegroom",
+    "garo": "Bia ka·gnigipa me·asa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bia ka·gnigipa me·asa, N. bridegroom",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "ja·mai"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002237",
+    "english": "bride",
+    "garo": "Bia ka·gnigipa me·chik",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bia ka·gnigipa me·chik, N. bride",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bo"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002238",
+    "english": "newly married",
+    "garo": "Bia ka·daldal",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Bia ka·daldal, ADJ. newly married",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002239",
+    "english": "the bottom of the boat",
+    "garo": "Biam",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Biam, N. the bottom of the boat",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002240",
+    "english": "begger",
+    "garo": "Bi·ame cha·gipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bi·ame cha·gipa, N. a begger",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002241",
+    "english": "mendicant",
+    "garo": "Bi·amgipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bi·amgipa, N. a mendicant",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002242",
+    "english": "place",
+    "garo": "Biap",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Biap, N. place",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "rejected",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. REJECTED as a duplicate, not a new word: 'Biap' (no raka) is almost certainly the same word as the already-existing unverified 'place'->bi·ap (with raka) -- the near_duplicate flag on this very record confirms the normalized-Garo match. The other existing-conflict candidates ('ram, dam', don·a) are unrelated words/senses, untouched. Not promoted.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "bi·ap",
+        "·ram",
+        "dam·",
+        "don·a"
+      ]
+    },
+    "near_duplicate": {
+      "normalized_key": "biap",
+      "matches": [
+        {
+          "english": "location",
+          "garo": "bi·ap"
+        },
+        {
+          "english": "place",
+          "garo": "bi·ap"
+        }
+      ]
+    },
+    "promotion_status": "pending",
+    "promoted_date": null
+  },
+  {
+    "id": "PL-0002243",
+    "english": "make room",
+    "garo": "Biap on·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Biap on·a, V. to make room",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002244",
+    "english": "take position",
+    "garo": "Biap ra·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Biap ra·a, V. to take position",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002245",
+    "english": "congested place",
+    "garo": "Biap apchangket",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Biap apchangket, N. a congested place",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002246",
+    "english": "lodging",
+    "garo": "Biap-bicham",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Biap-bicham, N. a lodging",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002247",
+    "english": "a very strong unpleasant smell",
+    "garo": "Biba seenga",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Biba seenga, N. a very strong unpleasant smell",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002248",
+    "english": "sickness",
+    "garo": "Biati",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Biati, N. sickness",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002249",
+    "english": "odour",
+    "garo": "Biba",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Biba, N. odour",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002250",
+    "english": "evaporate",
+    "garo": "Biba chadoa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Biba chadoa, V. to evaporate",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "24",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002251",
+    "english": "escape as steam",
+    "garo": "Biba joka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Biba joka, V. to escape as steam",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002252",
+    "english": "smell (verb, perceive)",
+    "garo": "Biba man·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Biba man·a, V. to smell",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Renamed from bare 'smell' -- Claude D's normalization stripped leading 'to ' from 'to smell' (V., transitive act of perceiving an odor), which collides with the already VERIFIED/HIGH 'smell'->Gingsika (native-confirmed 2026-08-17). Gingsika reads as the stative/intransitive sense ('it smells [bad]'); this entry is the distinct transitive-action sense. Not flagged as a homograph by Claude D's own pass -- same collision shape as their cane/flower flags, re-keyed to avoid silently shadowing a native-confirmed entry.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Gingsika",
+        "sal·srip·a",
+        "sim·il·ot·a"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002253",
+    "english": "defendant",
+    "garo": "Bibadi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bibadi, N. defendant",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002254",
+    "english": "same as Bibala",
+    "garo": "Bibal bala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bibal bala, V. same as Bibala",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002255",
+    "english": "flower (verb)",
+    "garo": "Bibala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bibala, V. to flower",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Renamed from bare 'flower' per Claude D's own homograph_flags (Bibala, v., 'to flower/bloom' vs the already VERIFIED/HIGH noun 'flower'->Bibal, native-confirmed 2026-08-06/NV-066). Re-keyed to avoid silently shadowing the native-confirmed noun sense.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Bibal"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002256",
+    "english": "remove the contents from the intestines",
+    "garo": "Bibik sita",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "Bibik sita, VI. to remove the contents from the intestines",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002257",
+    "english": "river mouth",
+    "garo": "Bibra",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bibra, N. river mouth",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002258",
+    "english": "chink",
+    "garo": "Bibret",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bibret, N. a chink",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002259",
+    "english": "pith",
+    "garo": "Bibrong",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bibrong, N. pith",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002260",
+    "english": "pray for another",
+    "garo": "Bi·chaka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bi·chaka, V. to pray for another",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002261",
+    "english": "judgment",
+    "garo": "Bichal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bichal, N. judgment",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bichal",
+      "matches": [
+        {
+          "english": "trial",
+          "garo": "bi·chal"
+        }
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002262",
+    "english": "the day of judgment",
+    "garo": "Bichalni sal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bichalni sal, N. the day of judgment",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002263",
+    "english": "try a case",
+    "garo": "Bichal ka·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bichal ka·a, V. to try a case",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002264",
+    "english": "judge",
+    "garo": "Bichal ka·gipa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bichal ka·gipa, N. a judge",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002265",
+    "english": "layer",
+    "garo": "Bichap",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bichap, N. layer",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002266",
+    "english": "in layers",
+    "garo": "Bichap bichap",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Bichap bichap, ADV. in layers",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002267",
+    "english": "slice",
+    "garo": "Bichrit",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bichrit, N. slice",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002268",
+    "english": "clue",
+    "garo": "Bichu",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bichu, N. a clue",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": {
+      "normalized_key": "bichu",
+      "matches": [
+        {
+          "english": "end",
+          "garo": "bi·chu"
+        },
+        {
+          "english": "point",
+          "garo": "bi·chu"
+        },
+        {
+          "english": "tip",
+          "garo": "bi·chu"
+        }
+      ]
+    },
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002269",
+    "english": "learning",
+    "garo": "Bida",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bida, N. learning",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002270",
+    "english": "resort",
+    "garo": "Bidam",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bidam, N. a resort",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002271",
+    "english": "blade",
+    "garo": "Bidareng",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bidareng, N. blade",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Biwa"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002272",
+    "english": "foreigner",
+    "garo": "Bidasi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bidasi, N. a foreigner",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "ruri"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002273",
+    "english": "pertaining to",
+    "garo": "Biding",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "Biding, ADJ. pertaining to",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002274",
+    "english": "knot",
+    "garo": "Bidimel",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bidimel, N. a knot",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002275",
+    "english": "a basket-like bamboo mat rolled up to contain the paddy",
+    "garo": "Bidol",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bidol, N. a basket-like bamboo mat rolled up to contain the paddy",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002276",
+    "english": "skin (verb)",
+    "garo": "Bigil kika",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bigil kika, V. to skin",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Renamed from bare 'skin' -- Claude D's normalization stripped leading 'to ' from the source gloss 'to skin' (V., remove the hide), which collides with the already VERIFIED/HIGH noun 'skin'->bi·gil (native-confirmed, NV-080). Not flagged as a homograph by Claude D's own pass but is the same collision shape as their cane/flower flags -- re-keyed to avoid silently shadowing a native-confirmed entry.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "Bigil",
+        "bi·gil",
+        "sol·a"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002277",
+    "english": "scrape the scale of a fish",
+    "garo": "Bigil gala",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bigil gala, V. to scrape the scale of a fish",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002278",
+    "english": "torn of skin",
+    "garo": "Bigil gilchraka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bigil gilchraka, N. torn of skin",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002279",
+    "english": "cast (its skin or slough)",
+    "garo": "Bigil gilsrea",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bigil gilsrea, V. to cast (its skin or slough)",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002280",
+    "english": "remove the skin",
+    "garo": "Bigil kiloka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bigil kiloka, V. to remove the skin",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002281",
+    "english": "circumcise",
+    "garo": "Bigil rasota",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bigil rasota, V. to circumcise",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002282",
+    "english": "minute fragment",
+    "garo": "Biginchi",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Biginchi, N. a minute fragment",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002283",
+    "english": "estrange",
+    "garo": "Bigraia",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bigraia, V. to estrange",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002284",
+    "english": "bee-keeping",
+    "garo": "Bija jillani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bija jillani, N. bee-keeping",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002285",
+    "english": "buzz",
+    "garo": "Bija ongonga",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Bija ongonga, V. to buzz",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002286",
+    "english": "honeycomb",
+    "garo": "Bija birang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bija birang, N. honeycomb",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002287",
+    "english": "collect honey",
+    "garo": "Bija chiria",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": "Bija chiria, VI. to collect honey",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002288",
+    "english": "smoke out bees to collect honey",
+    "garo": "Bija so·a",
+    "category": null,
+    "pos": "vt.",
+    "classifier": null,
+    "notes": "Bija so·a, VT. to smoke out bees to collect honey",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002289",
+    "english": "hornet",
+    "garo": "Bija wal",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bija wal, N. a hornet",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff. Distinct Garo form from the existing production entry under this English key -- kept as a coexisting unverified variant/synonym rather than forced to a single pick absent native evidence.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": "existing-conflict",
+      "details": [
+        "ong"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002290",
+    "english": "wax obtained from the honey comb",
+    "garo": "Bija ste",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Bija ste, N. wax obtained from the honey comb",
+    "provenance": {
+      "source": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO.xlsx",
+      "source_page": "25",
+      "import_batch": "IMPORT-2026-09-19T06-23-56-718Z",
+      "import_date": "2026-09-19T06:23:56.718Z",
+      "ocr_version": "OCT_Garo_P24_P25_NEW_OCR_AUDITED_ENGLISH_GARO_v1"
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the Claude D P24/P25 OCR handoff (docs/CLAUDE_D_20260918_p24_p25_ready_for_a.json), standard print-dictionary vocabulary, unverified confidence, no native-validation dependency.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-19",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-19T06:24:27.845Z"
   }
 ]
