@@ -39,4 +39,13 @@ No in-progress edit — last action was a clean push (`353b0bd`), gate green, ve
 ## 7. Resume protocol for whoever picks this up
 Treat this doc as ground truth for what happened, but re-sync with actual current state before continuing: `git fetch`, check `origin/main` HEAD against `353b0bd`, re-run the full gate at whatever HEAD actually is (not just trust this doc), then proceed. Don't re-litigate the fixes or open items listed above as settled — they're settled — but do verify nothing new landed between this doc and resume time (this session itself hit exactly that race twice with Claude A's concurrent work; check `git log HEAD..origin/main` isn't just a formality).
 
-**PAT note:** if resuming in a fresh session, the person will need to provide credentials again (this session's PAT is chat-scoped, not persisted) — flag the plaintext-paste security note from §2 again if so.
+## 8. PAT usage for next session
+This session had no git remote access until the person pasted a GitHub PAT directly in chat. That token:
+- Is **not** stored anywhere in this repo, this doc, or persisted by Claude between sessions — it lived only in that chat's conversation history.
+- Was used exactly like this to authenticate: `git clone https://<PAT>@github.com/pzrjv4sfj5-prog/Lean-Garo-.git` (or equivalently set on an existing clone's remote: `git remote set-url origin https://<PAT>@github.com/pzrjv4sfj5-prog/Lean-Garo-.git`). Both `fetch` and `push` then work with no further auth step.
+- **The next Claude B session will need a fresh PAT from the person** — either the same one re-pasted (if not yet revoked) or a newly rotated one. There is no way to resume git access from this doc alone.
+- Restated from §2: that token was pasted in plaintext in this chat. Flag to the person again on resume that it should be revoked/rotated after use, and if giving a new one, note the same exposure applies to wherever they paste it.
+
+## 9. Link to this doc
+Pinned to the exact commit this session ended on (not a moving `main` reference, so it can't silently drift if something else merges before resume):
+`https://github.com/pzrjv4sfj5-prog/Lean-Garo-/blob/dbeaa7f80670693b8c15cf2fd7fc2da3172131c6/docs/CLAUDE_B_SESSION_MIGRATION_20260919B.md`
