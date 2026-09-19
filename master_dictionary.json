@@ -4017,7 +4017,8 @@
     "english": "to pray",
     "garo": "Bi·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-19 (Project Owner relay, direct: \"bi.a is to pray\"). Coexists with the separately-VERIFIED 'pray'->'Bi·bo' (NV-095, 2026-08-23) -- not merged/reconciled; flagged as an open register/synonym question, not forced either way absent further evidence."
   },
   {
     "english": "worship",
@@ -77810,5 +77811,19 @@
     "category": null,
     "pos": "n.",
     "notes": "Bija ste, N. wax obtained from the honey comb"
+  },
+  {
+    "english": "he",
+    "garo": "Bia",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-19 (Project Owner relay, direct: \"Bia and Ua are synonyms, confirmed hence no confusion, we can use either\"). Confirmed synonym of the existing VERIFIED 'he / she'->'Ua' (2026-08-09) -- both usable, not merged into one row."
+  },
+  {
+    "english": "bark",
+    "garo": "bi·gil",
+    "category": "uncategorized",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-19 (Project Owner relay, direct: \"Skin -> bi.gil\", closing Claude D's P24/P25 held item asking whether 'bark' and 'skin' share a root). Confirms 'bark' uses the same word as the already-VERIFIED 'Skin'->'bi·gil' (NV-080, 2026-08-17) -- one polysemous root covering 'outer covering' senses (skin/bark). Coexists with the pre-existing unverified 'bark'->'bi·kil·ap', not merged/deleted."
   }
 ]
