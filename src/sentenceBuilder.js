@@ -376,7 +376,19 @@ export function assembleGrammar(grammar) {
   // correctly take a further accusative suffix or are themselves
   // already complete is a real open question with no citation on
   // record either way, not an engineering call to make unilaterally.
-  const objAlreadyMarked = grammar.object && grammar.object.garo === 'Angko';
+  // EXTENDED (2026-09-20, Claude B, docs/CLAUDE_B_SESSION_MIGRATION_
+  // 20260920.md §6.1, unblocked by Claude A's uko-vs-Biko adjudication,
+  // commit d50a4c0): 'uko' is the Claude A-confirmed general 3rd-person
+  // accusative object form ("him"/"her"/"it") — same shape as 'Angko'
+  // above, already a complete '-ko'-suffixed pronoun in the citations
+  // it ships in ("Anga uko Nikaha" = "i saw him", "Anga uko kimgen" =
+  // "i will marry her", both already live in corrections.json). Same
+  // double-marker risk as Angko: appending another '·ko' here would
+  // produce the unattested "uko·ko", not the cited "uko". Scoped
+  // identically — exact-match on the resolved Garo value, not a
+  // pattern/prefix check, so it can't accidentally catch an unrelated
+  // word that happens to start with "u".
+  const objAlreadyMarked = grammar.object && (grammar.object.garo === 'Angko' || grammar.object.garo === 'uko');
   const objMarker = (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked ? '' : '·ko');
   if (grammar.possessive && grammar.object) {
     const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();

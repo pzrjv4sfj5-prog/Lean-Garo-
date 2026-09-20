@@ -494,9 +494,34 @@ export function analyzeGrammar(input) {
 
     // Extract possessive
     let possessive = null;
-    for (const w of words) {
-      const p = POSSESSIVES[w.toLowerCase()];
-      if (p) { possessive = { english: w, garo: p }; break; }
+    for (let pi = 0; pi < words.length; pi++) {
+      const w = words[pi];
+      const wLower = w.toLowerCase();
+      const p = POSSESSIVES[wLower];
+      if (!p) continue;
+      // BUGFIX (2026-09-20, Claude B): this loop unconditionally matched
+      // any POSSESSIVES entry anywhere in the sentence, with no
+      // awareness of the same possessive-vs-accusative-object
+      // disambiguation the object-extraction loop below now applies to
+      // "her". Without this guard, "i will help her" produced "Anga Uni
+      // uko dakchakgen" — this loop supplied the stray possessive "Uni"
+      // in addition to the correctly-resolved accusative "uko" object,
+      // confirmed live during verification of the object-loop fix. Same
+      // test, same reasoning: 'her' in true sentence-final object
+      // position (verb already resolved, no further content word) is
+      // the accusative pronoun, not a possessive determiner, so it must
+      // not also populate this field. 'his'/'my'/'your'/etc. are
+      // unaffected — they're not accusative pronouns in English under
+      // any reading, so this guard only ever fires for 'her'.
+      if (wLower === 'her' && verb) {
+        const hasFollowingContent = words.slice(pi + 1).some((fw) => {
+          const cleaned = fw.toLowerCase().replace(/[^a-z]/g, '');
+          return cleaned && !STOP_WORDS.has(cleaned);
+        });
+        if (!hasFollowingContent) continue;
+      }
+      possessive = { english: w, garo: p };
+      break;
     }
 
     // Extract object — noun after possessive or after 'to'
@@ -533,6 +558,9 @@ export function analyzeGrammar(input) {
     // than competing with the true object for the single ·ko/·o slot.
     let locationWords = [];
     let pendingDestination = false;
+    // See the "her"/"it" accusative-object fix below (2026-09-20,
+    // Claude B) for what sets this.
+    let objectIsThirdPersonAccusative = false;
 
     for (let i = subjectEndIndex + 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
@@ -545,6 +573,43 @@ export function analyzeGrammar(input) {
         }
         pendingDestination = true;
         continue;
+      }
+      // BUGFIX (2026-09-20, Claude B, reinstated per docs/CLAUDE_B_
+      // SESSION_MIGRATION_20260920.md §4.1/§6.1, unblocked by Claude A's
+      // uko-vs-Biko adjudication, commit d50a4c0): "her"/"it" as a
+      // sentence-final OBJECT pronoun ("marry her", "help it") were
+      // being unconditionally swallowed by the POSSESSIVES/STOP_WORDS
+      // skip just below, with no disambiguation against the possessive-
+      // determiner ("her book") or demonstrative ("it is raining")
+      // senses of the same words. Scoped narrowly to the exact
+      // disambiguation that previously caused a live-verified regression
+      // (see migration doc history) and reverted: only fires when (a) w
+      // is exactly 'her' or 'it', (b) a transitive verb has already been
+      // resolved earlier in this sentence (so this can't misfire on a
+      // subject-position or copula sentence), and (c) no further content
+      // word follows — i.e. this really is the sentence-final position,
+      // not a determiner/demonstrative with a noun or predicate still to
+      // come. Resolves directly to Claude A-confirmed 'uko'
+      // (master_dictionary.json, VERIFIED/HIGH; docs/
+      // GARO_GRAMMAR_REFERENCE.md + THANGSENG_RULES_LOOKUP.md + NV-011)
+      // via the objectIsThirdPersonAccusative flag below, deliberately
+      // bypassing lookupPhrase/lookupGaro for this token so phrase_maps.js's
+      // possessive-sense 'her':'Uni' entry (line 205) is never consulted
+      // for it — that collision is exactly what produced the confidently-
+      // wrong "Anga Uni uni·ko dakchakgen" output last time this was
+      // attempted. 'him' is already unaffected: it was never in
+      // POSSESSIVES or STOP_WORDS and already resolves correctly via the
+      // existing path below (Bichi, unchanged).
+      if ((w === 'her' || w === 'it') && verb) {
+        const hasFollowingContent = words.slice(i + 1).some((fw) => {
+          const cleaned = fw.toLowerCase().replace(/[^a-z]/g, '');
+          return cleaned && !STOP_WORDS.has(cleaned);
+        });
+        if (!hasFollowingContent) {
+          objectWords.push(words[i].replace(/[?.!,;:]+$/, ''));
+          objectIsThirdPersonAccusative = true;
+          continue;
+        }
       }
       if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || subjectWords.has(w) || INTENSIFIER_WORDS.has(w)) {
         if (/^(in|on|at)$/.test(w)) pendingLocative = true;
@@ -681,8 +746,15 @@ export function analyzeGrammar(input) {
       // (e.g. "three dogs" -> "achak mang·gni", a separate data-quality
       // issue flagged for Claude A, not silently overwritten here).
       let objGaro = null;
+      // Must be checked before existingFullPhrase is even consulted —
+      // see the fix comment at the push site above. lookupPhrase('her')
+      // would otherwise resolve via phrase_maps.js's possessive-sense
+      // 'Uni' entry, not the accusative 'uko' this flag confirms.
+      if (objectIsThirdPersonAccusative) {
+        objGaro = 'uko';
+      }
       const existingFullPhrase = lookupPhrase(objEng) || lookupGaro(objEng);
-      if (!existingFullPhrase) {
+      if (!objGaro && !existingFullPhrase) {
         const countPhrase = parseCountingPhrase(objEng);
         if (countPhrase) {
           const nounGaro = lookupPhrase(countPhrase.englishNoun) || lookupGaro(countPhrase.englishNoun)
