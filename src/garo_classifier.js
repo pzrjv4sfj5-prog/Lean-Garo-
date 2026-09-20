@@ -66,7 +66,24 @@ export const CLASSIFIER_MAP = {
   // confirmed -- the 20-99 compound shape for jol is still unconfirmed
   // (classifierTail() still returns null for jol at n>19, same as se).
   'bamboo':'jol','wa·a':'jol',
-  'tree':'pang','log':'dot','wooden post':'dot',
+  'tree':'pang', // Confirmed (2026-09-20, Project Owner relay of
+  // Thangseng citation, this chat): "two trees" = "pang·gni"/"panggni"
+  // -- no raka dot, matches the already-shipping default (pang was not
+  // in RAKA_CLASSIFIERS, so this was previously an unconfirmed default
+  // guess, not a citation; now a real fact). Runtime behavior
+  // unchanged -- classifierTail('pang', 2) already produced "panggni"
+  // before this citation arrived, this only upgrades its confidence
+  // status. Dot status given as typed in chat (no dot); per the
+  // project's own precedent (see 'mang' comment above: "the raka dot
+  // is an easy character to drop when typing casually, so this was
+  // checked rather than assumed"), this has NOT been independently
+  // re-confirmed as deliberate vs. a dropped keystroke -- flagged here
+  // for whoever next has a direct channel to double-check, not
+  // silently assumed certain. The 20-99 compound form for pang remains
+  // fully unconfirmed (not in CONFIRMED_COMPOUND_CLASSIFIERS or the
+  // UNVERIFIED-guess map either) -- classifierTail still returns null
+  // for pang at n>19, this citation only covers n<20.
+  'log':'dot','wooden post':'dot',
   'pen':'ge','kolom':'ge','pencil':'ge',
   'fruit':'rong','fruits':'rong','mewa':'rong','bite':'rong','bi·te':'rong',
   'apple':'rong','mango':'rong',
