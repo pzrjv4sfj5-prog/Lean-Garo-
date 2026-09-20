@@ -2349,7 +2349,7 @@
     "english": "market",
     "garo": "Bajal",
     "category": "travel",
-    "notes": "VERIFIED/HIGH — NV-052 (Project Owner direct decision, 2026-08-02): 'market' = 'Bajal' (loanword, correct spelling, confirmed). Coexists as a legitimate variant alongside the pre-existing 'ha·ti' (variant/VERIFIED/HIGH, likely the native Garo term) - not a conflict, two valid forms.",
+    "notes": "VERIFIED/HIGH — NV-052 (Project Owner direct decision, 2026-08-02): 'market' = 'Bajal' (loanword, correct spelling, confirmed). UPDATED 2026-09-20 (Project Owner directive, chat): 'bajal' is the sole canonical form for 'market' going forward — 'ha·ti' and 'Anti' are competing synonyms, not forms of bajal, and have been deleted from master_dictionary.json per this directive (formerly idx 2860 'Market'->'ha·ti' and idx 6546 'anti'->'Anti'; also removed an orphaned mis-keyed duplicate row 'bajal'->'bajal', formerly idx 6545). This does NOT affect inflected/compound forms of bajal itself (bajalchi, bajalo, bajal sambaon, etc.), which remain untouched. Supersedes this row's prior 'ha·ti coexists as a legitimate variant' language.",
     "confidence": "verified_high"
   },
   {
@@ -19317,15 +19317,6 @@
     "category": "food",
     "classifier": null,
     "notes": "VERIFIED/HIGH — Native (Thangseng)-cited, relayed by Project Owner in chat 2026-09-16, explicit final answer: \"te·gatchu\". Matches the sibling 'Mango'->te·ga·chu row's own NV-048/RULE-038 cross-reference, which already identified its intended value as \"te·gatchu\" from Thangseng's original rong-classifier example. This is the canonical form; both 'Te·gachu' (unsourced same-day Owner chat instruction) and 'te·ga·chu' (2026-08-01 corpus audit / 2026-09-08 directive) are superseded.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Market",
-    "garo": "ha·ti",
-    "pos": null,
-    "category": "business",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
   },
   {
@@ -52410,24 +52401,6 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. SUPERSEDES prior 'Hai Bajal Anti Re·na' (NV-059, held open pending this check). Native gave bare 'Hai bajalchi re'na' for both 'let's go to market' and 'let's go to the market' (Garo has no article; 'the' is simply assumed) — 'Anti' is not part of this idiom. Resolves NV-059. Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "bajal",
-    "garo": "bajal",
-    "category": "travel",
-    "pos": null,
-    "classifier": null,
-    "notes": "VERIFIED/native-speaker",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "anti",
-    "garo": "Anti",
-    "category": "travel",
-    "pos": null,
-    "classifier": null,
-    "notes": "VERIFIED/native-speaker",
     "confidence": "verified_high"
   },
   {
