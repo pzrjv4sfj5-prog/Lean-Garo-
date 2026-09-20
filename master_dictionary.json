@@ -77397,7 +77397,8 @@
     "garo": "Biko",
     "category": null,
     "pos": "pron.",
-    "notes": "Biko, PR. him or her (accusative case)"
+    "notes": "Biko, PR. him or her (accusative case) | NOT SELECTED as the general accusative default (Claude A adjudication, 2026-09-20) — see 'him / her / it (accusative object)' -> 'uko' for the citation-backed choice. Biko uses a distinct Bi- root, has no confidence tag and no native/corpus citation on record; retained as an unconfirmed alternate, not deleted.",
+    "confidence": "unverified"
   },
   {
     "english": "to him or her",
@@ -77903,5 +77904,13 @@
     "category": "senses",
     "notes": "VERIFIED/HIGH — NV-159 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip): smell (verb) = Gingsika, reconfirming the already-VERIFIED 'smell'->'Gingsika' (NV-080, 2026-08-17). smell (noun) = Biba and Sengani, two coexisting forms, neither marked as preferred over the other. This resolves the 2026-09-19 open finding that corrections.json's 'smell'->'biba' override 'looked truncated/corrupted' -- it is not corrupted, Biba is the directly native-confirmed noun form; corrections.json is left unchanged (still correctly ships the noun sense for the bare 'smell' key). Sengani coincides in spelling with the already-unverified 'wisdom'->'Seng·ani' -- flagged as a possible homonym, not merged or otherwise reconciled, no evidence either way.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "him / her / it (accusative object)",
+    "garo": "uko",
+    "category": "general",
+    "pos": "pron.",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Claude A adjudication (2026-09-20), resolving Claude B's docs/CLAUDE_B_SESSION_MIGRATION_20260920.md handoff between two candidate 3rd-person accusative forms (Biko, an unconfirmed/un-confidence-tagged Bi- paradigm import at idx 9847, vs. uko, the ua-root+ko accusative already used in production sentences). Resolved evidence-first from pre-existing citations, no new relay needed: 'Anga uko Nikaha' = 'I saw him/her' and 'Na·a uko Nikaha ma?' = 'Did you see him?' (docs/GARO_GRAMMAR_REFERENCE.md, docs/THANGSENG_RULES_LOOKUP.md — 'ua = subject ONLY, object = uko, never Anga Ua Nikaha'), plus 'Anga uko nika' = 'I see it' (NV-011, docs/THANGSENG_NATIVE_VALIDATION.md, closed 2026-07-25) — this last citation also gives 'it' as object a citation for the first time (Claude B's handoff said zero candidates existed for 'it', missed this NV-011 example). Also corroborated by docs/GRAMMAR_CONFIDENCE_MATRIX.md ('uko = him/her (object) — confirmed') and docs/GRAMMAR_SPECIFICATION.md's pronoun table. The Biko candidate (idx 9847) uses a wholly different root (Bi- vs. u-/Ua-), carries no confidence tag, and has zero corpus/native citations beyond its own print-dictionary gloss — not chosen. Biko retained, not deleted, annotated separately below. Runtime handoff: grammarEngine.js's reverted object-loop fix (Claude B, same session) can be reinstated using uko for her/it; him already resolves via the existing Bi- forms elsewhere (Bichi/etc.) unaffected by this entry."
   }
 ]

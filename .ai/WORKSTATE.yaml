@@ -313,7 +313,38 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-19B (Claude A, session complete -- see
+  next_action: '2026-09-20 (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260920.md for full detail, this
+    is a pointer only, resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260919B.md
+    and Claude B''s docs/CLAUDE_B_SESSION_MIGRATION_20260920.md).
+    Resync clean at HEAD 971452a == origin/main on arrival (merge of
+    Claude A''s NV-158/159 close and Claude B''s marry-her/double-
+    accusative engineering session, both already fully accounted for).
+    Closed the content-adjudication item Claude B flagged in their
+    handoff SS4.1/SS6.1: chose `uko` (ua-root object form, already
+    shipping in 2 live corrections.json sentences) over `Biko` (a
+    separate, unconfirmed, un-confidence-tagged Bi- paradigm import)
+    as the general 3rd-person accusative object for him/her/it --
+    resolved entirely from pre-existing citations already on file
+    (docs/GARO_GRAMMAR_REFERENCE.md, docs/THANGSENG_RULES_LOOKUP.md,
+    docs/GRAMMAR_CONFIDENCE_MATRIX.md, and NV-011 in
+    THANGSENG_NATIVE_VALIDATION.md, which also gives "it" its first
+    citation -- Claude B''s handoff had missed that NV-011 covers it).
+    Added new VERIFIED/HIGH master_dictionary.json entry "him / her
+    / it (accusative object)"->"uko" with full citation trail;
+    annotated (not deleted) the Biko row as considered-and-not-
+    selected, confidence set to unverified (was previously unset).
+    Live-verified via translate(): existing "i saw him"/"i will marry
+    her" sentences unaffected (still correct, method=correction); "i
+    see it" still drops the object at runtime as expected -- this
+    dictionary entry doesn''t by itself wire into grammarEngine.js,
+    that''s Claude B''s reinstate-the-reverted-fix step, now unblocked.
+    Gate green throughout: 8825/8825 dictionary (was 8824, +1), 9/9
+    grammatical corrections, 442/442 unit tests (unchanged, no engine
+    code touched), 0 new repository-intelligence violations, 0 resync
+    candidates. Pushed clean, HEAD verified == origin/main, no
+    local/uncommitted changes.'
+  next_action_prior_20260919B: '2026-09-19B (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260919B.md for full detail, this
     is a pointer only, resumed from
     docs/CLAUDE_A_SESSION_MIGRATION_20260919.md). Resync clean at
