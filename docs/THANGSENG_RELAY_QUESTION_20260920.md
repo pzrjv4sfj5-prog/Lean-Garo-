@@ -54,6 +54,22 @@ master_dictionary.json for "them" or "you-all" — genuinely zero
 citation either way, which is exactly why questions 5 and 6 are
 included plain, with no candidate form suggested.
 
+Linguistic flag added by Claude A (2026-09-20, before send — not a
+change to the question wording above, a caution on interpreting the
+reply): *An·chingko*'s root *An·ching* is already on file elsewhere as
+specifically the INCLUSIVE "we" (includes the addressee), distinct
+from *Chinga*, the EXCLUSIVE "we" that *Chingna* derives from — this
+project's existing pronoun table already carries that clusivity split
+for the subject forms. English "us" in question 4 doesn't disambiguate
+inclusive/exclusive, so Thangseng's answer may settle only ONE sense,
+not necessarily override the other. If the reply comes back
+*An·chingko* (or *Chingna·ko*), don't assume it resolves both senses
+of "us" — check whether Thangseng's answer implies which "us" he had
+in mind (does the helping include the listener or not?), and if
+genuinely ambiguous, a same-shape follow-up distinguishing "us
+(you+me)" from "us (me+others, not you)" may still be needed before
+this fully closes.
+
 Do NOT generalize any answer here to a pronoun not explicitly asked
 about, and do not apply any reply to this question's own "him"/"her"/
 "it" forms retroactively — those are separately closed per the uko
