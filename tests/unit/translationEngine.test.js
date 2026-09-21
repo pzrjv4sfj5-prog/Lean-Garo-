@@ -1280,17 +1280,26 @@ test('phrase_maps market fallback resolves to Bajal, not the stale Bajal Anti co
 // ("is he going to X?") never reached grammar-assembly — dropped the verb
 // entirely (fell to assembleSentenceSOV, which has no verb-tense assembly).
 // Fixed by normalizing aux-inversion word order before the existing
-// subject/verb search, and appending the already-VERIFIED ' ma?' yes/no
-// marker (confirmed via "are you going"->"...enga ma?" etc.).
+// subject/verb search, and appending the yes/no 'ma?' marker.
+//
+// Join form corrected 2026-09-21: the original fix here appended a SPACED
+// ' ma?' and this test asserted that spaced form as "already-VERIFIED",
+// but that was never actually true — every real corrections.json ma?
+// entry (dozens, checked exhaustively) joins with no space, matching
+// RULE-046 (docs/GRAMMAR_RULE_CATALOGUE.md, Thangseng-confirmed, High
+// confidence, P0). This test previously locked in the wrong output because
+// its own equality check compared against a hand-built spaced string
+// rather than a real corrections.json value.
 test('inverted yes/no questions ("is he/she going to X?") retain the verb, matching the declarative form + ma marker', async () => {
   const declarative = await translate('he is going to school');
   const question = await translate('is he going to school?');
   assert.equal(question.method, 'grammar-assembly');
-  assert.equal(question.garo, declarative.garo + ' ma?');
+  assert.equal(question.garo, declarative.garo + 'ma?');
 
   const sheQuestion = await translate('is she going to school?');
   assert.equal(sheQuestion.method, 'grammar-assembly');
   assert.ok(sheQuestion.garo.includes('ma?'));
+  assert.ok(!sheQuestion.garo.includes(' ma?'), 'RULE-046: ma must join with no space');
 });
 
 // --- getCategories()/getByCategory() dormant (flagged P1 in

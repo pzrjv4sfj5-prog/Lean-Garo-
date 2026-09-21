@@ -389,7 +389,23 @@ export function assembleGrammar(grammar) {
   // pattern/prefix check, so it can't accidentally catch an unrelated
   // word that happens to start with "u".
   const objAlreadyMarked = grammar.object && (grammar.object.garo === 'Angko' || grammar.object.garo === 'uko');
-  const objMarker = (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked ? '' : '·ko');
+  // NEW FIX (2026-09-21, Claude B): when the object is incorporated into a
+  // "want to eat/drink X" construction (grammar.purposeAction present),
+  // the accusative -ko marker is dropped entirely — a native-confirmed
+  // pattern, not an engineering guess. Direct citations: master_dictionary
+  // .json "i want water" -> "Anga chi ringna skenga" ("'ko' dropped in
+  // this eat/drink-desire construction", NV-021 follow-up, Thangseng via
+  // Tridip WhatsApp) and "i want to eat momo" -> "Anga momo cha·na ska"
+  // (NV-153, Thangseng's own live self-correction of an accidental
+  // "momo·ko" typo, explicitly noting the correct form drops -ko).
+  // Before this fix, only these two exact sentences (as dictionary
+  // entries) got the correct output; every other "want to eat/drink X"
+  // sentence fell through to live grammar-assembly, which unconditionally
+  // added ·ko regardless of purposeAction — confirmed live: "i want to
+  // eat rice" -> "Anga mi·ko cha·na ska" (wrong) before this fix. Scoped
+  // strictly to purposeAction being present; ordinary direct objects of a
+  // finite verb (no purposeAction) are untouched.
+  const objMarker = (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked || grammar.purposeAction) ? '' : '·ko';
   if (grammar.possessive && grammar.object) {
     const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
     parts.push(grammar.possessive.garo + ' ' + objText + objMarker);
@@ -427,13 +443,23 @@ export function assembleGrammar(grammar) {
   if (parts.length < 2) return null;
   const result = parts.join(' ');
   if (result.includes('[UNKNOWN]')) return null;
-  // Claude C audit Finding 2 fix (2026-08-04, Claude B): grammar.isQuestion
-  // (set by analyzeGrammar for inverted-aux yes/no questions, e.g. "is he
-  // going to school?") appends the general yes/no-question marker ' ma?' —
-  // already confirmed as the correct general pattern via multiple existing
-  // VERIFIED corrections.json entries ("are you going"->"...enga ma?",
-  // "will you eat"->"...genma?"), not new linguistic content.
-  return grammar.isQuestion ? result + ' ma?' : result;
+  // Claude C audit Finding 2 fix (2026-08-04, Claude B), corrected 2026-09-21:
+  // grammar.isQuestion (set by analyzeGrammar for inverted-aux yes/no
+  // questions, e.g. "is he going to school?") appends the yes/no-question
+  // marker 'ma?'. Per RULE-046 (docs/GRAMMAR_RULE_CATALOGUE.md, Thangseng-
+  // confirmed, High confidence, P0 closed project-wide), `ma` joins directly
+  // onto the inflected verb with NO space and no period before it
+  // (`Cha·ahama?`, not `Cha·aha ma?`). The original 2026-08-04 fix cited
+  // corrections.json's "will you eat"->"...enga ma?" as justification for a
+  // SPACED join, but that citation was simply wrong: the actual stored
+  // value is `Na·a cha·genma?` (joined, no space) — confirmed by checking
+  // every ma?-ending entry in corrections.json (dozens, 100% joined, 0
+  // spaced). The 2026-08-28 RULE-046 sweep fixed corrections.json/
+  // master_dictionary.json but missed this live grammar-assembly fallback,
+  // so any question not short-circuited by a canned correction (e.g. "did
+  // you eat rice?", which has a sentence-final object and so never matches
+  // a corrections.json key) still emitted the disproven spaced form.
+  return grammar.isQuestion ? result + 'ma?' : result;
 }
 
 

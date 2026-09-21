@@ -38,10 +38,13 @@ export function analyzeGrammar(input) {
   // to canonical SVO before the existing, working subject/verb logic runs —
   // same "closed-class word, not new guessing" discipline as
   // AUXILIARY_SKIP/STOP_WORDS elsewhere in this file. isQuestion is
-  // threaded through to assembleGrammar, which appends ' ma?' — the general
-  // yes/no-question marker already confirmed in multiple existing VERIFIED
-  // corrections.json entries ("are you going"->"...enga ma?", "will you
-  // eat"->"...genma?"), not new linguistic content invented here. Scoped
+  // threaded through to assembleGrammar, which appends 'ma?' (no space —
+  // see RULE-046, docs/GRAMMAR_RULE_CATALOGUE.md; fixed 2026-09-21 after
+  // this comment previously misquoted corrections.json as supporting a
+  // spaced join, which it never did) — the general yes/no-question marker
+  // already confirmed in multiple existing VERIFIED corrections.json
+  // entries ("are you going"->"...engama?", "will you eat"->"...genma?"),
+  // not new linguistic content invented here. Scoped
   // narrowly to pronoun subjects only (NP-subject inversion, e.g. "is the
   // teacher going...", is a separate, unconfirmed case — left untouched).
   let isQuestion = false;

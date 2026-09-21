@@ -27,15 +27,20 @@ import { translate } from '../../src/translationEngine.js';
 // via the existing tense-attachment logic — no new paradigm data was
 // invented here.
 
+// Join form corrected 2026-09-21: these two asserted a SPACED '... ma?'
+// as the "already-VERIFIED" suffix, but no corrections.json entry ever
+// actually uses a space before ma — see RULE-046 (docs/
+// GRAMMAR_RULE_CATALOGUE.md, Thangseng-confirmed, High confidence, P0)
+// and the sentenceBuilder.js fix note. Corrected to the joined form.
 test('"did he eat?" composes with past tense + polar "-ma?" marker', async () => {
   const r = await translate('did he eat?');
-  assert.equal(r.garo, 'Ua Cha·aha ma?');
+  assert.equal(r.garo, 'Ua Cha·ahama?');
   assert.equal(r.method, 'grammar-assembly');
 });
 
 test('"will he eat?" composes with future tense + polar "-ma?" marker', async () => {
   const r = await translate('will he eat?');
-  assert.equal(r.garo, 'Ua Cha·gen ma?');
+  assert.equal(r.garo, 'Ua Cha·genma?');
 });
 
 test('negated polar questions ("did/will you not eat?") stay negative and still get "-ma?"', async () => {

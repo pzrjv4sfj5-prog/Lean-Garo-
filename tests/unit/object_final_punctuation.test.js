@@ -36,12 +36,15 @@ import { translate } from '../../src/translationEngine.js';
 test('translate: sentence-final object with "?" now composes via grammar-assembly, not sov-assembly', async () => {
   const rice = await translate('did you eat rice?');
   assert.equal(rice.method, 'grammar-assembly');
-  assert.ok(rice.garo.endsWith('ma?'), `expected question form, got "${rice.garo}"`);
-  assert.match(rice.garo, /Cha·aha/, 'expected the -hama eat-suffix, not a dropped/alternate form');
+  // Exact-match, not just endsWith('ma?'): a looser check here previously
+  // let a spaced 'Cha·aha ma?' slip through undetected (fixed 2026-09-21,
+  // see sentenceBuilder.js RULE-046 fix note) since endsWith('ma?') is true
+  // for both the joined and spaced forms.
+  assert.equal(rice.garo, 'Na·a mi·ko Cha·ahama?');
 
   const water = await translate('did you eat water?');
   assert.equal(water.method, 'grammar-assembly');
-  assert.ok(water.garo.endsWith('ma?'), `expected question form, got "${water.garo}"`);
+  assert.equal(water.garo, 'Na·a chi·ko Cha·ahama?');
 });
 
 test('regression guard: object-less questions are unaffected by the fix', async () => {
@@ -62,4 +65,25 @@ test('regression guard: sentence-final object in a non-question sentence is unaf
   const school = await translate('is he going to school?');
   assert.ok(!school.garo.includes('[UNKNOWN]'), `expected no [UNKNOWN], got "${school.garo}"`);
   assert.ok(school.garo.endsWith('ma?'), `expected question form, got "${school.garo}"`);
+});
+
+// Purpose-clause -ko drop fix (2026-09-21, Claude B): the object of a
+// "want to eat/drink X" construction (grammar.purposeAction present) does
+// not take the accusative -ko marker — native-confirmed, see
+// sentenceBuilder.js fix note and master_dictionary.json "i want water"
+// ("'ko' dropped in this eat/drink-desire construction") and "i want to
+// eat momo" (NV-153, Thangseng's live self-correction). Before this fix,
+// only these two exact sentences (shipped as dictionary entries) got the
+// correct no-ko output; any other "want to eat X" sentence still fell
+// through to live grammar-assembly, which incorrectly added ·ko.
+test('purpose-clause object ("want to eat X") drops the accusative -ko marker', async () => {
+  const rice = await translate('i want to eat rice');
+  assert.equal(rice.method, 'grammar-assembly');
+  assert.equal(rice.garo, 'Anga mi cha·na ska');
+});
+
+test('regression guard: a plain finite-verb direct object still takes -ko (not affected by the purpose-clause fix)', async () => {
+  const ateRice = await translate('did you eat rice?');
+  assert.equal(ateRice.method, 'grammar-assembly');
+  assert.equal(ateRice.garo, 'Na·a mi·ko Cha·ahama?');
 });
