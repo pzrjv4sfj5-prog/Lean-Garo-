@@ -865,3 +865,15 @@ wire in beyond literal-match handling of these three sentences.
 **Validation Status:** Verified.
 **Confidence:** High, for the 7 question words directly attested. Not generalized further without evidence.
 **Launch Priority:** P1 — no live code path yet (all current question output is exact-phrase lookup, not general construction); flagged to Claude B.
+
+### RULE-050 — Ability Modal "Can" (`ama` / `man·a`) — Free Variants, Productive Across Any Verb
+**Description:** `ama` and `man·a` are full synonyms for the ability modal "can/be able to" — not a register, tense, or person distinction. Sentence-final, following the verb in its `-na` (infinitive) form: `[Subject] [Verb-na] ama/man·a.` Productive across any verb, not a closed list.
+**Examples:** `Anga Garo aganna man·a.` = "I can speak Garo."; `Anga cha·na ama.` / `Anga cha·na man·a.` = "I can eat."; `Anga re·angna ama.` / `Anga re·angna man·a.` = "I can go."; `Anga kam ka·na ama.` / `Anga kam ka·na man·a.` = "I can work."
+**Counterexamples:** None found across the 4 attested verbs.
+**Dependencies:** RULE-009 (`-na` infinitive/purpose marker) — the verb preceding `ama`/`man·a` is always in this form.
+**Native Notes:** NV-008 (2026-07-25) established `ama`'s modal paradigm. NV-103 (2026-09-01) raised an unconfirmed person/register-split hypothesis for `man·a`. NV-117 (2026-09-03) closed it directly: fully interchangeable. NV-160 (2026-09-21) reconfirms the same set and directs the pattern be treated as general (any verb) — a Project Owner directive, not a new per-verb native confirmation.
+**Validation Status:** Verified (synonymy); Derived (generality to untested verbs).
+**Confidence:** High for the 4 attested verbs; Medium for the general-to-any-verb claim.
+**Launch Priority:** P1 — no engine implementation; "i can X" ships today as per-verb exact-phrase rows, not a general modal-insertion rule. This is the same long-standing modal-drop gap flagged since 2026-08-31C. Claude B territory, not yet picked up.
+
+*(Note: RULE-049, "`bi·sa` — Productive Child/Young-One Marker", 2026-09-09, exists in `docs/grammar_rules_structured/RULE-049.yaml` but was never added to this catalogue — a pre-existing gap, not introduced by this edit, flagged for a future cleanup pass.)*

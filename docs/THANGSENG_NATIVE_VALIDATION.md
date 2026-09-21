@@ -7374,3 +7374,38 @@ entry), 0 new repository-intelligence violations, 0 resync
 candidates. Live-verified: `translate("smell")`->`biba` (correction,
 unchanged), `translate("smell (noun)")`->`Biba`,
 `translate("odour")`->`Biba`.
+
+## NV-160 (2026-09-21, Project Owner closure directive, reconfirming NV-117)
+
+**Item:** ability modal "can" — `ama`/`man·a` synonymy, and whether the
+pattern generalizes beyond the 4 attested verbs.
+
+**Closure:** Project Owner directly restated the same 4-sentence set
+NV-117 already closed — `Anga Garo aganna man·a.` (speak Garo),
+`Anga cha·na ama./man·a.` (eat), `Anga re·angna ama./man·a.` (go),
+`Anga kam ka·na ama./man·a.` (work) — confirming `ama` and `man·a` are
+synonyms, and directed that the pattern be built as fully general
+(`[Verb-na] ama/man·a`, any verb), not scoped to the 4 sentences on
+file.
+
+**Action:** the 6 `ama`/`man·a` master_dictionary.json rows for
+eat/go/work were VERIFIED/HIGH but not tagged `variant`, so
+`pickPrimary` flagged them as unresolved ties (see
+`docs/PICKPRIMARY_VERIFIED_TIES.md`) — this was a citation-tagging
+gap, not new linguistic uncertainty; NV-117 had already established
+the synonymy. Re-tagged all 6 `variant/VERIFIED/HIGH`, citing this
+entry, so `pickPrimary` treats them as co-existing rather than forcing
+one primary. New rule RULE-050 written
+(`docs/grammar_rules_structured/RULE-050.yaml` +
+`docs/GRAMMAR_RULE_CATALOGUE.md`) formalizing the synonymy (Verified,
+citing NV-008/NV-103/NV-117/NV-160) and the any-verb generality claim
+(Derived confidence — a Project Owner directive, not itself a new
+per-verb native confirmation).
+
+**Not resolved here (engine territory):** the general
+`[Verb-na] ama/man·a` composition itself has no engine implementation
+— "i can X" still ships as per-verb dictionary rows for the 4 attested
+verbs only. This is the same modal-drop gap flagged since 2026-08-31C
+(`docs/CLAUDE_B_HANDOFF_20260903_modal_drop_and_ma_question_gap.md`),
+now backed by an explicit Project Owner build directive and a formal
+rule (RULE-050) to implement against. Not picked up this session.

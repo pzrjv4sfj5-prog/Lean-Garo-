@@ -22395,7 +22395,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2 / AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json), promoting on cited native evidence: english_can/english_able both = [ama, man·a]. Supporting relayed native evidence (Project Owner-confirmed, Thangseng via Tridip WhatsApp): 'It is better to leave ama and man·a to be used freely; no strict rule regarding use/non-use of one or the other is recalled.' Parallels the already-VERIFIED/HIGH can->man·a entry. Promoted from variant/UNVERIFIED/HIGH.",
+    "notes": "variant/VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2 / AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json), promoting on cited native evidence: english_can/english_able both = [ama, man·a]. Supporting relayed native evidence (Project Owner-confirmed, Thangseng via Tridip WhatsApp): 'It is better to leave ama and man·a to be used freely; no strict rule regarding use/non-use of one or the other is recalled.' Parallels the already-VERIFIED/HIGH can->man·a entry. Promoted from variant/UNVERIFIED/HIGH. Also tagged variant per NV-160/RULE-050 closure (2026-09-21) — same ama/man·a ability-modal synonymy.",
     "confidence": "verified_high"
   },
   {
@@ -73951,42 +73951,42 @@
     "english": "i can eat",
     "garo": "Anga cha·na ama",
     "category": "phrases",
-    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
     "english": "i can eat",
     "garo": "Anga cha·na man·a",
     "category": "phrases",
-    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
     "english": "i can go",
     "garo": "Anga re·angna ama",
     "category": "phrases",
-    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
     "english": "i can go",
     "garo": "Anga re·angna man·a",
     "category": "phrases",
-    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
     "english": "i can work",
     "garo": "Anga kam ka·na ama",
     "category": "phrases",
-    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
     "english": "i can work",
     "garo": "Anga kam ka·na man·a",
     "category": "phrases",
-    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word.",
+    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
@@ -74862,7 +74862,7 @@
     "pos": "aux.",
     "category": "grammar",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2 / AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json), new row, parallels the already-VERIFIED/HIGH can->ama entry. english_able=[ama, man·a] per the same cited evidence documented on the able->man·a row.",
+    "notes": "variant/VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2 / AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json), new row, parallels the already-VERIFIED/HIGH can->ama entry. english_able=[ama, man·a] per the same cited evidence documented on the able->man·a row. Also tagged variant per NV-160/RULE-050 closure (2026-09-21) — same ama/man·a ability-modal synonymy.",
     "confidence": "verified_high"
   },
   {

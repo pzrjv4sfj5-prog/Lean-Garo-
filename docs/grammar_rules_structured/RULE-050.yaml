@@ -1,0 +1,64 @@
+id: RULE-050
+title: "Ability Modal 'Can' (ama / man·a) — Free Variants, Productive Across Any Verb"
+description: >-
+  ama and man·a are full synonyms for the ability modal "can/be able to" —
+  not a register, tense, or person distinction (that earlier hypothesis,
+  raised in the 2026-08-31C audit, is retracted; see native_notes). The
+  modal is sentence-final, following the verb in its infinitive/-na form:
+  [Subject] [Verb-na] ama/man·a. This is a productive pattern, not a
+  closed list of memorized sentences — it applies to any verb, not just
+  the four already on file (speak Garo/eat/go/work).
+dependencies:
+  - id: RULE-009
+    name: "-na infinitive/purpose marker"
+    note: "The verb preceding ama/man·a is always in its -na form; RULE-050 composes on top of RULE-009, does not redefine it."
+claims:
+  - scope: "ama and man·a are interchangeable ability-modal forms for at least eat/go/work/speak-Garo, with no meaning, register, or person split between them"
+    status: verified
+    confidence: high
+  - scope: "the [Verb-na] ama/man·a frame generalizes to any verb, not only the 4 attested — Project Owner directive, not itself independently native-tested per-verb"
+    status: derived
+    confidence: medium
+examples:
+  - "Anga Garo aganna man·a. = \"I can speak Garo.\" (man·a only attested form for this verb — NV-103)"
+  - "Anga cha·na ama. / Anga cha·na man·a. = \"I can eat.\" — both forms, synonymous (NV-008, NV-117)"
+  - "Anga re·angna ama. / Anga re·angna man·a. = \"I can go.\" — both forms, synonymous (NV-008, NV-117)"
+  - "Anga kam ka·na ama. / Anga kam ka·na man·a. = \"I can work.\" — both forms, synonymous (NV-008, NV-117)"
+counterexamples:
+  note: "None found across the 4 attested verbs. No verb has been found where only one of ama/man·a is accepted and the other rejected."
+launch_priority:
+  - scope: "engine composition of [Verb-na] ama/man·a for arbitrary verbs, replacing the current per-sentence dictionary-row approach"
+    tier: P1
+    note: >-
+      No live engine implementation — "i can eat/go/work/speak garo" ship
+      today as individual exact-phrase dictionary/sentence entries, not
+      via a general modal-insertion rule. The long-standing modal-drop
+      bug (ama/man·a silently dropped outside exact-phrase match, first
+      flagged 2026-08-31C, restated repeatedly since — see
+      docs/CLAUDE_B_HANDOFF_20260903_modal_drop_and_ma_question_gap.md)
+      is exactly this gap. Project Owner directive 2026-09-21: build
+      this as a general composition rule (any verb, not per-verb rows) —
+      Claude B territory, not yet picked up as of this rule's creation.
+native_notes: >-
+  NV-008 (2026-07-25) first established ama's own modal paradigm
+  (eat/go/work). NV-103 (2026-09-01) showed man·a used productively
+  across a 7-sentence batch, mostly second-person/negation contexts,
+  raising an unconfirmed hypothesis that ama/man·a might split by
+  person or register. NV-117 (2026-09-03) closed that question with a
+  direct Thangseng citation: ama and man·a are freely interchangeable
+  across the full 3-verb eat/go/work paradigm — no split. This rule
+  (RULE-050, 2026-09-21) formalizes that closure as a numbered rule for
+  the first time (it previously existed only as NV entries and a
+  pickPrimary verified-tie left unresolved — see
+  docs/PICKPRIMARY_VERIFIED_TIES.md) and adds NV-160: Project Owner
+  reconfirmed the same 4-sentence set directly in this session and
+  directed that the pattern be treated as fully general (any verb),
+  not scoped to the 4 attested sentences. The generality claim itself
+  (any verb, not just these 4) is a Project Owner directive, not a
+  new per-verb native confirmation — tagged "derived" confidence
+  accordingly, consistent with RULE-050's own evidence-first discipline
+  and the project's DERIVED-confidence convention
+  (.ai/CLAUDE_A_OPERATING_GOVERNANCE.md §3).
+last_updated: "2026-09-21"
+updated_by: "Claude A"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-008, NV-103, NV-117, NV-160"
