@@ -298,7 +298,7 @@ export const PHRASE_MAPS = {
   'stomach': 'Ok',
   'teeth': 'Wagam',
   'tongue': 'Sre',
-  'skin': 'bi·gil',
+  'skin': 'Bigil',
   'heart': 'Ka·tong',
   'eat': 'Cha·a',
   'drink': 'Ringa',
