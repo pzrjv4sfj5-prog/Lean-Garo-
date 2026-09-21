@@ -1,18 +1,20 @@
 # SESSION_BOOTSTRAP.md
 _Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-20 by Claude A
-(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260919B.md and Claude B's
-docs/CLAUDE_B_SESSION_MIGRATION_20260920.md. Full migration doc:
-docs/CLAUDE_A_SESSION_MIGRATION_20260920.md — READ IT FIRST, this line is
-just a pointer. Summary: resync clean, HEAD 971452a == origin/main on arrival
-(merge of Claude A's NV-158/159 close and Claude B's engineering session,
-both already fully accounted for). Closed Claude B's SS4.1/SS6.1 content-
-adjudication handoff: chose `uko` over `Biko` as the general 3rd-person
-accusative object (him/her/it), resolved entirely from pre-existing
-citations already on file, no new relay needed — also gives "it" its first
-citation via NV-011, which Claude B's search had missed. New VERIFIED/HIGH
-entry added, Biko annotated not deleted. Gate green: 8825/8825 (+1), 9/9,
-442/442, 0 new violations. Full detail in the migration doc above.)
-Prior: 2026-09-19B by Claude A
+(resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260920.md. Full migration
+doc: docs/CLAUDE_A_SESSION_MIGRATION_20260920B.md — READ IT FIRST, this
+line is just a pointer. Summary: resync clean, HEAD d50a4c0 == origin/main
+on arrival. Zero-runtime session (no engine code touched) — market=bajal
+canonical cleanup (Owner directive, deleted Anti/ha·ti synonym rows),
+closed skin/cow's skin corrections.json override + "Ritchasa gni"=102 open
+item (Owner directive), closed NV-121/NV-158 -aha/-a tension as free
+variation (Claude A linguistic analysis), adjudicated §6.2 for Claude B
+(narrowed after Claude B's own concurrent An·chingko find — corrected same
+day), drafted docs/THANGSENG_RELAY_QUESTION_20260920C.md (3 doubt-driven
+probes, NOT sent). Rebased clean through 5 concurrent Claude B commits, no
+file overlap. Gate green throughout: 8824/8824, 9/9, 456/456, 0 new
+violations. Final HEAD 7ca6810. Full detail in the migration doc above.)
+Prior: 2026-09-20 by Claude A
+
 (resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260919.md. Full migration doc:
 docs/CLAUDE_A_SESSION_MIGRATION_20260919B.md — READ IT FIRST, this line is
 just a pointer. Summary: resync clean, HEAD a59e5d4 == origin/main on arrival
