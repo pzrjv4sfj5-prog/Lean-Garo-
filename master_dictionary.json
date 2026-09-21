@@ -961,7 +961,7 @@
     "english": "skin",
     "garo": "Bigil",
     "category": "body",
-    "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the now-VERIFIED 'bi·gil' row for 'skin', differs only in capitalization/spelling. Retained per citation discipline, not deleted, but not a second independent candidate.",
+    "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17), same word as the VERIFIED 'skin' row (both now read 'Bigil' per 2026-09-21 spelling correction). Retained per citation discipline, not deleted, but not a second independent candidate.",
     "confidence": "superseded"
   },
   {
@@ -2349,7 +2349,7 @@
     "english": "market",
     "garo": "Bajal",
     "category": "travel",
-    "notes": "VERIFIED/HIGH — NV-052 (Project Owner direct decision, 2026-08-02): 'market' = 'Bajal' (loanword, correct spelling, confirmed). UPDATED 2026-09-20 (Project Owner directive, chat): 'bajal' is the sole canonical form for 'market' going forward — 'ha·ti' and 'Anti' are competing synonyms, not forms of bajal, and have been deleted from master_dictionary.json per this directive (formerly idx 2860 'Market'->'ha·ti' and idx 6546 'anti'->'Anti'; also removed an orphaned mis-keyed duplicate row 'bajal'->'bajal', formerly idx 6545). This does NOT affect inflected/compound forms of bajal itself (bajalchi, bajalo, bajal sambaon, etc.), which remain untouched. Supersedes this row's prior 'ha·ti coexists as a legitimate variant' language.",
+    "notes": "VERIFIED/HIGH — NV-052 (Project Owner direct decision, 2026-08-02): 'market' = 'Bajal' (loanword, correct spelling, confirmed). UPDATED 2026-09-20 (Project Owner directive, chat): 'bajal' is the sole canonical form for 'market' going forward — 'ha·ti' and 'Anti' are competing synonyms, not forms of bajal, and have been deleted from master_dictionary.json per this directive (formerly idx 2860 'Market'->'ha·ti' and idx 6546 'anti'->'Anti'; also removed an orphaned mis-keyed duplicate row 'bajal'->'bajal', formerly idx 6545). This does NOT affect inflected/compound forms of bajal itself (bajalchi, bajalo, bajal sambaon, etc.), which remain untouched. Supersedes this row's prior 'ha·ti coexists as a legitimate variant' language. CLOSED 2026-09-21 (Project Owner decision, Thangseng-confirmed): 'Anti anti' = 'every week/weekly' (reduplication of Anti=week) confirms Anti and Bajal are fully separate senses with no overlap — decision final.",
     "confidence": "verified_high"
   },
   {
@@ -20860,11 +20860,11 @@
   },
   {
     "english": "Skin",
-    "garo": "bi·gil",
+    "garo": "Bigil",
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, NV-080). CORRECTED 2026-09-21 (Project Owner directive, Thangseng-confirmed): spelling is 'Bigil', no raka — prior 'bi·gil' form retired.",
     "confidence": "verified_high"
   },
   {
@@ -66715,7 +66715,8 @@
     "garo": "Anti anti",
     "category": null,
     "pos": "n.",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-21 (Project Owner directive, Thangseng-confirmed): reduplication of 'Anti' (week) closes the market/week disambiguation — confirms Anti=week, Bajal=market as fully separate senses with no overlap.",
+    "confidence": "verified_high"
   },
   {
     "english": "A market place.",
