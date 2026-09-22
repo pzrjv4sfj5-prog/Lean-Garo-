@@ -67089,8 +67089,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "SUPERSEDED — CONTRADICTED by native relay NV-080 (2026-08-17): native this round rejected this suffixed form in favor of unsuffixed 'Bajal sambaon'. Retained per citation discipline — inter-session contradiction flagged for Project Owner/Thangseng review, not silently resolved. Prior note: VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Primary form, topic marker -de. Alternate: 'Bajalara sambaon' (see separate entry, -ara marker).",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-164 (2026-09-22, Project Owner direct decision): resolves the NV-060/NV-080 contradiction below by ruling all three forms ('Bajal sambaon', 'Bajalde sambaon', 'Bajalara sambaon') coexisting free-variant synonyms rather than NV-080 rejecting this one — same resolution class as NV-080's own 'hoe' dual-valid tie (cited in the same relay: 'tie is correct not a defect'). Un-superseded from that prior status. Original citation: NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Topic marker -de. Coexists with 'Bajalara sambaon' (-ara marker, see separate entry) and 'Bajal sambaon' (unsuffixed, NV-080).",
+    "confidence": "verified_high"
   },
   {
     "english": "the market is nearby",
@@ -67098,8 +67098,8 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "SUPERSEDED — CONTRADICTED by native relay NV-080 (2026-08-17): native this round rejected this suffixed form in favor of unsuffixed 'Bajal sambaon'. Retained per citation discipline — inter-session contradiction flagged for Project Owner/Thangseng review, not silently resolved. Prior note: VERIFIED/HIGH — NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Alternate form of 'Bajalde sambaon', -ara marker instead of -de. Both given directly by native as free variants; distinction not yet characterized (open).",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-164 (2026-09-22, Project Owner direct decision): resolves the NV-060/NV-080 contradiction below by ruling all three forms ('Bajal sambaon', 'Bajalde sambaon', 'Bajalara sambaon') coexisting free-variant synonyms rather than NV-080 rejecting this one — same resolution class as NV-080's own 'hoe' dual-valid tie (cited in the same relay: 'tie is correct not a defect'). Un-superseded from that prior status. Original citation: NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Alternate form of 'Bajalde sambaon', -ara marker instead of -de; distinction between the two markers still not characterized (open, unaffected by this decision). Coexists with unsuffixed 'Bajal sambaon' (NV-080).",
+    "confidence": "verified_high"
   },
   {
     "english": "tomorrow is market day",
@@ -72452,7 +72452,7 @@
     "pos": null,
     "classifier": null,
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, NV-080). CONTRADICTS earlier NV-060 (2026-08-05): native this round rejected both suffixed forms ('Bajalde sambaon' / '-de', 'Bajalara sambaon' / '-ara') in favor of the unsuffixed 'Bajal sambaon'. Flagged as an inter-session native contradiction, not a routine non-selection — see NV-060 entries."
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, NV-080). Originally flagged as contradicting NV-060's suffixed forms ('Bajalde sambaon'/'-de', 'Bajalara sambaon'/'-ara'); resolved NV-164 (2026-09-22, Project Owner direct decision): all three are coexisting free-variant synonyms, not a contradiction — see the -de/-ara entries, both un-superseded back to VERIFIED/HIGH."
   },
   {
     "english": "last",

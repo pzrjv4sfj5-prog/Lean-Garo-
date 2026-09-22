@@ -3283,13 +3283,14 @@ user — Garo omits `Anga` here because it's contextually assumed; "else we
 would have anga" (Project Owner's own words). Not a corrections.json
 formatting concern.
 
-**Not resolved:** whether this `-de` characterization also explains the
-NV-060/NV-080 contradiction on `Bajalde sambaon` vs. `Bajal sambaon` for
-"the market is nearby" (NV-080 rejected the suffixed forms outright,
-2026-08-17, and remains the current VERIFIED entry — this round's answer
-repeated NV-060's superseded pre-NV-080 forms without addressing that
-contradiction, so it is left as still-open per existing discipline, not
-silently resolved by this round's answer).
+**Not resolved by this round's answer — since resolved, see NV-164:**
+whether this `-de` characterization also explains the NV-060/NV-080
+contradiction on `Bajalde sambaon` vs. `Bajal sambaon` for "the market
+is nearby" (NV-080 rejected the suffixed forms outright, 2026-08-17;
+this round's repeat of NV-060's answer didn't itself address that
+contradiction, so it was left open here). NV-164 (2026-09-22, same
+session) resolves it separately, as a three-way synonym coexistence
+rather than a rejection.
 
 ## NV-061 — "to hang": sitea vs. kadea — PARTIALLY RESOLVED 2026-08-05
 
@@ -4317,6 +4318,37 @@ pre-existing pickPrimary ties — none introduced by this batch, reduced from
 mid-session); `test-dictionary.js` 8127/8127; `npm test` 218/218;
 `repository-intelligence.js` 0 new violations (223 known/allowlisted);
 `runtime-error-sweep.mjs` 14523/14523, 0 errors.
+
+## NV-164 — "the market is nearby" NV-060/NV-080 contradiction — RESOLVED 2026-09-22
+
+**Trigger:** Project Owner re-sent NV-060's `Bajalde sambaon`/`Bajalara
+sambaon` pair for "the market is nearby" a second time this session
+(first time was NV-163, folded into that entry unactioned pending this
+follow-up). Asked directly whether this was an override, a genuine
+three-way synonym set, or an unaware re-send of stale NV-060 data.
+Project Owner's answer: decide it as an engineering call — "there are
+synonyms, check from engine usage."
+
+**Resolution:** treated as a genuine three-way synonym set, not a
+contradiction requiring one winner — the same resolution class NV-080
+itself already used elsewhere in the very same relay for **hoe**
+(`Gitchima`/`git·chi` vs. `kodal`/`ko·dal`, explicitly noted there as "a
+dual-valid pair, cited, tie is correct not a defect"). `Bajalde
+sambaon` and `Bajalara sambaon` (both originally NV-060, 2026-08-05)
+un-superseded back to `verified_high` in `master_dictionary.json`; the
+existing `Bajal sambaon` (NV-080) row's notes updated to describe
+coexistence instead of one-sided contradiction. `-de` vs. `-ara`
+marker distinction remains uncharacterized — unaffected by this
+decision, still genuinely open.
+
+**Engine behavior (no regression, matches existing multi-variant
+architecture exactly — same mechanism as e.g. `"one dog"`):**
+`pickPrimary` now reports all 3 as a verified tie
+(`docs/PICKPRIMARY_VERIFIED_TIES.md`), ships `Bajal sambaon` as the
+single `compiled_dict.json` primary value (unchanged — `translate()`
+output for this sentence is identical before/after), and lists all 3
+in `src/compiled_dict_alternates.json` as known variants. No
+`corrections.json`/`translationEngine.js` change needed or made.
 
 ## Relay item 133b closure — "Bao" re-keyed off generic "where?" — 2026-08-18
 
