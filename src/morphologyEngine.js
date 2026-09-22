@@ -205,6 +205,32 @@ export function findVerbForm(w) {
       // the noun the moment 'hope' gained a senses map.
       if (lookupGaro(eForm, 'v.')) return lookupGaro(eForm, 'v.');
     }
+    // Silent-e "+d" fallback (found 2026-09-21, Claude B, session
+    // migration — docs/CLAUDE_B_SESSION_MIGRATION_20260921.md §sentence-
+    // builder gaps): same collision class as the "+s" fallback directly
+    // above, one suffix over. "estranged" strips to "estrang" via the
+    // ed$ branch (not a real word), so the verb-search loop in
+    // analyzeGrammar silently rejected it and mis-picked a LATER word as
+    // the verb instead ("she estranged her family" -> "family" wrongly
+    // elected verb, "estranged" stranded as an unresolved object).
+    // Confirmed root cause via live findVerbForm('estranged') -> null
+    // despite lookupGaro('estrange','v.') -> 'Bigraia' (a real,
+    // standalone dictionary verb; "do not estrange him" already worked
+    // correctly, since bare "estrange" needs no suffix-stripping at
+    // all). Root cause: verbs whose base already ends in a silent 'e'
+    // (estrange, tickle, like, hope, close) just add a bare 'd' for past
+    // tense, but that's indistinguishable at the string level from a
+    // genuine consonant+"ed" form (walked, jumped) until you check
+    // whether the un-restored stripped form resolves. Restoring the 'e'
+    // here only fires when the ed$-stripped form didn't resolve one line
+    // up, so genuine -ed verbs (which resolve via the earlier stripped
+    // lookup) are completely unaffected — same non-regression guarantee
+    // the "+s" fallback above already relies on.
+    if (/ed$/.test(w) && !/e$/.test(stripped)) {
+      const eForm = stripped + 'e';
+      if (IRREGULAR_VERBS[eForm]) return IRREGULAR_VERBS[eForm];
+      if (lookupGaro(eForm, 'v.')) return lookupGaro(eForm, 'v.');
+    }
   }
   return null;
 }
