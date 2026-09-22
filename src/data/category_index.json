@@ -4036,5 +4036,7 @@
   "to pass time": "time",
   "foot": "body",
   "fortnight": "time",
-  "she can cook": "general"
+  "she can cook": "general",
+  "nearby": "general",
+  "market day": "time"
 }

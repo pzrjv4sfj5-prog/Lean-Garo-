@@ -2353,7 +2353,8 @@
     "garo": "Bajal",
     "category": "travel",
     "notes": "VERIFIED/HIGH — NV-052 (Project Owner direct decision, 2026-08-02): 'market' = 'Bajal' (loanword, correct spelling, confirmed). UPDATED 2026-09-20 (Project Owner directive, chat): 'bajal' is the sole canonical form for 'market' going forward — 'ha·ti' and 'Anti' are competing synonyms, not forms of bajal, and have been deleted from master_dictionary.json per this directive (formerly idx 2860 'Market'->'ha·ti' and idx 6546 'anti'->'Anti'; also removed an orphaned mis-keyed duplicate row 'bajal'->'bajal', formerly idx 6545). This does NOT affect inflected/compound forms of bajal itself (bajalchi, bajalo, bajal sambaon, etc.), which remain untouched. Supersedes this row's prior 'ha·ti coexists as a legitimate variant' language. CLOSED 2026-09-21 (Project Owner decision, Thangseng-confirmed): 'Anti anti' = 'every week/weekly' (reduplication of Anti=week) confirms Anti and Bajal are fully separate senses with no overlap — decision final.",
-    "confidence": "verified_high"
+    "confidence": "verified_high",
+    "pos": "n."
   },
   {
     "english": "road",
@@ -77946,6 +77947,22 @@
     "category": "general",
     "pos": null,
     "notes": "variant/VERIFIED/HIGH — NV-162 (2026-09-22, Thangseng direct WhatsApp confirmation, relayed by Tridip/Project Owner, 11:47am/12:02pm): Thangseng directly confirmed 'Ua Song·na ama.' / 'Ua Song·na man·a.' both correct for 'She can cook.' Closes the composed-but-unconfirmed candidate flagged in the 2026-09-21B session (built by rule composition — RULE-009 -na infinitive + RULE-050 ama/man·a synonymy — but deliberately not filed VERIFIED on Claude A's own inference at the time). Also the first native-verified bare-verb infinitive citation for the 'cook' (song-) root — the noun Song·timgipa/song·a (occupation sense) was the only prior native-adjacent form; this does not supersede those, distinct sense. Tagged variant, tied with the ama form above — both equally correct per Thangseng, no preference stated.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "nearby",
+    "garo": "sambaon",
+    "category": "general",
+    "pos": "adj.",
+    "notes": "VERIFIED/HIGH — extracted from NV-080 (2026-08-17, Thangseng relay), the confirmed sentence 'the market is nearby' = 'Bajal sambaon'. 'sambaon' is the predicate-adjective component of that sentence; not independently re-confirmed as a standalone bare-word citation, same extraction pattern as other compound-derived standalone entries in this dictionary (e.g. 'bajal sal'=market day, added same session, NV-161).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "market day",
+    "garo": "bajal sal",
+    "category": "time",
+    "pos": "n.",
+    "notes": "VERIFIED/HIGH — extracted from NV-060 (2026-08-05, Thangseng direct native validation via Tridip WhatsApp), the confirmed sentence 'tomorrow is market day' = 'Knalde bajal sal'. 'bajal sal' (market + day, compound) is the predicate-noun component of that sentence; not independently re-confirmed as a standalone bare-word citation.",
     "confidence": "verified_high"
   }
 ]

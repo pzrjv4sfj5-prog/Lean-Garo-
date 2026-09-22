@@ -7484,3 +7484,38 @@ derivation.
 in this same message — checked against the repo, all three were
 already closed via NV-156 (2026-09-12) and are live/correct, no
 action needed.
+
+## NV-161 addendum (2026-09-22) — market-sentence batch check, breakdown, POS pass
+
+Project Owner pasted a 4-sentence market batch to check against the
+repo:
+
+1. `I am at the market.` = `Anga bajalo.` — **already exists**,
+   VERIFIED/HIGH (NV-060, 2026-08-05). Matches exactly. No action.
+2. `Go to the market.` = `Bajalchi re'angbo.` — **already exists**,
+   VERIFIED/HIGH (NV-060). Matches (apostrophe normalizes to the
+   stored raka-dot spelling `Bajalchi re·angbo` per the 2026-09-07
+   raka cleanup). No action.
+3. `The market is nearby.` = `Bajalde sambaon.` / `Bajalara sambaon.`
+   — **already exists, but these are the two SUPERSEDED forms**.
+   NV-080 (2026-08-17) directly contradicted both of these (rejected
+   both the `-de` and `-ara` suffixed forms) in favor of the
+   unsuffixed `Bajal sambaon`, which is the current VERIFIED/HIGH
+   live value. Not re-added or re-promoted — this message repeats the
+   already-superseded pair rather than the corrected one; flagged
+   back to the Project Owner rather than silently actioned.
+4. `Tomorrow is market day.` = `Knalde bajal sal.` — **already
+   exists**, VERIFIED/HIGH (NV-060). Matches exactly. No action.
+
+**Breakdown / new standalone extractions** (continuing the
+2026-09-21B/2026-09-22 POS-tagging initiative):
+- `market`->`Bajal`: added `pos: n.` (no content change).
+- `nearby`(adj.)->`sambaon`: new entry, extracted from NV-080's
+  confirmed `Bajal sambaon`.
+- `market day`(n.)->`bajal sal`: new entry, extracted from NV-060's
+  confirmed `Knalde bajal sal`.
+
+Not touched: `at`=`·o` (already VERIFIED/HIGH, NV-070), `go`=`re·a`
+(already VERIFIED/HIGH, NV-100), `tomorrow`=`Knal` (already
+VERIFIED/HIGH) — all pre-existing citations for this batch's
+component words, no gaps found beyond `nearby`/`market day`.
