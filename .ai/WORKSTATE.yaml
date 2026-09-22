@@ -1,5 +1,5 @@
 repository:
-  head: 176bdcf
+  head: 213ef8b
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -5851,6 +5851,25 @@ claude_d:
     food/rice, ~40 rows), plus a newly-flagged separate item (apple still has one leftover superseded
     row using classifier se, wrong category, not part of this batch) -- all pending Owner confirmation,
     not yet acted on.'
+  handoff_to_claude_b_20260922: 'Claude D (2026-09-22, audit-only session, no data/code edits): read this
+    before touching lookupEngine.js or prepare-data.js. Full write-up:
+    docs/CLAUDE_D_HANDOFF_TO_CLAUDE_B_20260922_engine_fixes.md -- pointer only, read it in full, it has
+    exact line numbers and root causes. TWO ITEMS: (1) RULE-042 lookup fails on trailing punctuation and
+    parenthetical glosses like "(I)" -- root-caused to the lookup key being built from raw input with no
+    normalization pass; RULE-042.yaml itself is correctly authored, the "(I)" is English-gloss notation
+    only. Proposed fix: strip trailing sentence punctuation and /\\s*\\([^)]*\\)\\s*/g parenthetical asides
+    in a normalization pass shared by every lookup path (exact-match AND sov-assembly) before the key is
+    built, not just one path, so they cannot silently diverge again. Also worth checking while in this
+    code: he/we subjects get no -de/-chi suffix at all -- may be the same gap, may be separate. (2) `to`
+    prefix / VERB_LEMMAS (lookupEngine.js line 84, gated on key.startsWith(\"to \")) vs Owner instruction
+    to make bare verbs canonical -- BLOCKED on Owner ruling (c), do not implement yet. Two implementation
+    options written up in the handoff doc: option 1 flips canonical form in prepare-data.js (more correct
+    long-term, more invasive, needs ruling (c) first); option 2 is lookup-side normalization only (strip
+    leading "to " from the input key before the VERB_LEMMAS check), lower-risk, does not touch master data,
+    could be implemented without waiting on ruling (c) if the engine needs unblocking sooner. Session also
+    re-verified the full gate clean twice as your b158512 (pos-array fix) and 7a906e9 (findVerbForm -ed
+    fallback) landed -- no regressions traced to either, 458/458 tests, 0 new repository-intelligence.js
+    violations. Full session account: docs/CLAUDE_D_MIGRATION_20260922.md.'
   next_action: '2026-09-12 session complete -- see docs/CLAUDE_D_SESSION_MIGRATION_20260912.md for full
     detail, this is a pointer only. Session covered: forensic segregation audit rebuilt from scratch
     (audit/segregation/build_segregation.py, prior tooling confirmed never pushed to origin/main), two
