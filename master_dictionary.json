@@ -929,8 +929,9 @@
     "english": "leg",
     "garo": "Ja·a",
     "category": "body",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'leg' has VERIFIED/HIGH form(s) ['ja·', 'ja·chok', 'ja·git·teng', 'ja·teng']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-161 (2026-09-22, Project Owner direct relay): Thangseng confirms Ja·a as a single word covering both 'leg' and 'foot' (dual-sense, no separate word for each). Reverses the 2026-08-01 corpus-internal audit's SUPERSEDED tag, which was based on an untraceable legacy 'variant/VERIFIED/HIGH' tag on ja·chok/ja·git·teng/ja·teng (no NV citation, same suspect-tag class as the resolved 'week'/sop·ta case, NV-087) — direct native evidence now resolves this in Ja·a's favor. ja·chok/ja·git·teng/ja·teng are NOT force-superseded by this — left as coexisting variant/VERIFIED/HIGH forms per evidence-first discipline (relationship unconfirmed, same pattern as the 'outside' A·pal/a'palo coexistence, NV-089). The separate unverified 'ja·' (no final -a) candidates for leg/foot are also untouched, distinct unconfirmed forms.",
+    "confidence": "verified_high",
+    "pos": "n."
   },
   {
     "english": "hair",
@@ -2446,7 +2447,8 @@
     "garo": "A·pal",
     "category": "general",
     "notes": "VERIFIED/HIGH — NV-089 (2026-08-21 relay): un-superseded on direct native reconfirmation. Thangseng gives A·pal as the wider general sense of 'outside', with an explicit collocation caveat: 'A·pal + re·a' idiomatically means 'to defecate' — that collocation should not be used/translated literally as a generic 'go outside'. bai·re/ha·gat·e (existing VERIFIED/HIGH) and a'palo (locative, existing) remain valid coexisting forms, not superseded by this.",
-    "confidence": "verified_high"
+    "confidence": "verified_high",
+    "pos": "n."
   },
   {
     "english": "far",
@@ -77913,5 +77915,21 @@
     "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-21, direct chat statement, POS-tagging initiative). Compositional: somoi (time, n.) + re·ata (pass, v.).",
     "confidence": "verified_high",
     "pos": "v."
+  },
+  {
+    "english": "foot",
+    "garo": "Ja·a",
+    "category": "body",
+    "pos": "n.",
+    "notes": "VERIFIED/HIGH — NV-161 (2026-09-22, Project Owner direct relay): same word as 'leg' (Ja·a), Thangseng confirms it covers both senses (dual-sense, no separate word). The separate unverified 'foot'->'ja·' (no final -a) candidate is untouched, distinct unconfirmed form.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fortnight",
+    "garo": "Antigini",
+    "category": "time",
+    "pos": "n.",
+    "notes": "VERIFIED/HIGH — NV-161 (2026-09-22, Project Owner direct relay): Thangseng gives Antigini for 'fortnight'. Same anti+-gni(2) root/meaning as the already-VERIFIED/HIGH 'two weeks'=Antigni (NV-087), but a distinct spelling (extra -i-) — flagged, NOT merged: may be a transcription variant of the same word or a genuinely separate form; needs an explicit reconciling question before treating as identical.",
+    "confidence": "verified_high"
   }
 ]

@@ -293,7 +293,7 @@ export const PHRASE_MAPS = {
   'nose': 'ging',
   'mouth': 'Ku·sik',
   'hand': 'Jak',
-  'leg': 'ja·teng',
+  'leg': 'Ja·a', // NV-161 (2026-09-22): native-confirmed, supersedes ja·teng
   'hair': 'Kni',
   'stomach': 'Ok',
   'teeth': 'Wagam',

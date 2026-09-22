@@ -7409,3 +7409,39 @@ verbs only. This is the same modal-drop gap flagged since 2026-08-31C
 (`docs/CLAUDE_B_HANDOFF_20260903_modal_drop_and_ma_question_gap.md`),
 now backed by an explicit Project Owner build directive and a formal
 rule (RULE-050) to implement against. Not picked up this session.
+
+## NV-161 (2026-09-22, Project Owner direct chat relay)
+
+Three-item batch, terse word-gloss(POS) format:
+
+1. **leg/foot** — `ja·a(n)` = "leg or foot": Thangseng confirms a
+   single word covers both senses (dual-sense noun, no separate word
+   for each). This reverses the 2026-08-01 corpus-internal audit's
+   SUPERSEDED tag on `leg`->`Ja·a`, which rested on an untraceable
+   legacy `variant/VERIFIED/HIGH` tag (no NV citation) attached to
+   `ja·chok`/`ja·git·teng`/`ja·teng` — same suspect-tag class as the
+   already-resolved `week`/`sop·ta` case (NV-087). Un-superseded
+   `leg`->`Ja·a` to VERIFIED/HIGH; added new `foot`->`Ja·a`
+   VERIFIED/HIGH (same word, new key). `ja·chok`/`ja·git·teng`/
+   `ja·teng` are NOT force-superseded — left as coexisting
+   variant/VERIFIED/HIGH forms, relationship to `ja·a` unconfirmed,
+   same pattern as the `outside` A·pal/a'palo coexistence (NV-089).
+   The separate unverified `ja·` (no final -a) candidates for both
+   leg and foot are untouched, distinct unconfirmed forms.
+2. **outside** — `A·pal (n)`: reconfirms the already-VERIFIED/HIGH
+   NV-089 value, POS only, no content change. Added `pos: n.` to the
+   existing row per the ongoing POS-tagging initiative
+   (2026-09-21B). Does not resolve the `A·pal`/`a'palo` pickPrimary
+   tie (both remain legitimately coexisting per NV-089's own note).
+3. **fortnight** — `Antigini(n)` = "fortnight": new vocabulary. Same
+   `anti`+`-gni`(2) root/meaning as the already-VERIFIED/HIGH `two
+   weeks`=`Antigni` (NV-087), but a distinct spelling (extra `-i-`).
+   Added as its own VERIFIED/HIGH entry, POS noun, NOT merged with
+   `Antigni` — flagged as either a transcription variant of the same
+   word or a genuinely separate form; needs an explicit reconciling
+   question before treating as identical.
+
+**Provenance note:** relayed by Project Owner in the terse
+word-gloss(POS) format used throughout this doc for direct Thangseng
+answers; treated as native evidence per standing practice, not a
+Project Owner directive.
