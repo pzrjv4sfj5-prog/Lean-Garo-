@@ -1,5 +1,5 @@
 repository:
-  head: 5750c6a
+  head: 5b7c9bd
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,7 +313,33 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-22 (Claude A, session complete -- see
+  next_action: '2026-09-22B (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md for full detail, this
+    is a pointer only, resumed as "Claude A" from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260922.md via a fresh clone +
+    live-pasted PAT). Resync found 2 commits of drift (Claude D''s
+    page-96 OCR handoff, 32 entries + 2 manual-review flags staged
+    for Claude A; plus the prior session''s own close commit), gate
+    reconfirmed green (8831/8831, 458/458). Imported Claude D''s page
+    96 OCR handoff (data/claude_d/ready_for_a/page_0096_deduplicated.json,
+    Owner-approved for staging) via scripts/import-dictionary.js,
+    staged PL-0002291..PL-0002322, reviewed and promoted all 32 as
+    ordinary unverified vocabulary (no shadowing risk found against
+    existing VERIFIED/HIGH senses). Resolved both manual-review flags
+    Claude D routed to Claude A: two distinct "Jak.." prefix senses
+    (leaves/pages vs. hand-noun) kept as separate entries, nested
+    worked examples NOT split into standalone rows (deferred);
+    Jajabitbatgija/Jajagija-bitbatgija near-duplicate pair staged as
+    coexisting unverified variants per evidence-first/never-guess
+    norm (no source-image evidence either is the OCR error). One new
+    Check C conflict from the expected Jahas/jahat within-batch
+    spelling pair, allowlisted in known_dictionary_conflicts.json.
+    Gate green throughout post-fix: 8874/8874 dictionary, 9/9
+    grammatical corrections, 458/458 unit tests, 0 new
+    repository-intelligence violations. No Claude B handoff this
+    session (no engine code touched). Pushed clean, final HEAD
+    5b7c9bd, verified == origin/main.'
+  next_action_prior_20260922: '2026-09-22 (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260922.md for full detail, this
     is a pointer only, resumed as "Claude A" from
     docs/CLAUDE_A_SESSION_MIGRATION_20260921B.md via a fresh clone +

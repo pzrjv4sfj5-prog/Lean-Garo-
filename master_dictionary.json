@@ -77964,5 +77964,207 @@
     "pos": "n.",
     "notes": "VERIFIED/HIGH — extracted from NV-060 (2026-08-05, Thangseng direct native validation via Tridip WhatsApp), the confirmed sentence 'tomorrow is market day' = 'Knalde bajal sal'. 'bajal sal' (market + day, compound) is the predicate-noun component of that sentence; not independently re-confirmed as a standalone bare-word citation.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "A long-legged person.",
+    "garo": "Ja·gro",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To kneel with one leg raised perpendicularly.",
+    "garo": "Ja·gugu·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "A ship; a steamer.",
+    "garo": "Jahas",
+    "category": null,
+    "pos": "n.",
+    "notes": "Repeated headword (variant spelling 'jahat' given same gloss, same source line)."
+  },
+  {
+    "english": "A ship; a steamer.",
+    "garo": "jahat",
+    "category": null,
+    "pos": "n.",
+    "notes": "Repeated headword (variant spelling of 'Jahas', same gloss, same source line)."
+  },
+  {
+    "english": "To hesitate; to waver.",
+    "garo": "Jajaa",
+    "category": null,
+    "pos": "v.",
+    "notes": "Split from bundled OCR entry."
+  },
+  {
+    "english": "Hesitation.",
+    "garo": "Jajaa",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense, same source line)."
+  },
+  {
+    "english": "To cause to hesitate; to doubt; to stagger.",
+    "garo": "Ja·jaata",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Hesitation; doubt; wavering.",
+    "garo": "Jajaatani",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Without faltering; without hesitation.",
+    "garo": "Jajagija-bitbatgija",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "Without faltering; without hesitation; clearly; without wavering.",
+    "garo": "Jajabitbatgija",
+    "category": null,
+    "pos": "adv.",
+    "notes": "Near-duplicate headword and gloss vs. Jajagija-bitbatgija immediately above - Claude D does not judge whether this is a real second headword or an OCR-garbled repeat; flagged for Claude A."
+  },
+  {
+    "english": "To be frightened; to startle.",
+    "garo": "Jajabria",
+    "category": null,
+    "pos": "v.",
+    "notes": "Source prints 'frighten' (adjective form used for verb sense); preserved as printed."
+  },
+  {
+    "english": "Helter-skelter; in confusion.",
+    "garo": "Ja·ja-jiji",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "To hesitate; to be undecided; to be in a confusion.",
+    "garo": "Jajajiji-daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Without hesitation; undauntedly.",
+    "garo": "Jajagija",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "To seduce; to entice.",
+    "garo": "Jajik-ra·a",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To frequent; to go very often; to roam about.",
+    "garo": "Ja·joa",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To die; to get to the other side.",
+    "garo": "Jajoka",
+    "category": null,
+    "pos": "v.",
+    "notes": "Split from bundled OCR entry."
+  },
+  {
+    "english": "The falling of the scale or skin of snakes or certain insects.",
+    "garo": "Jajoka",
+    "category": null,
+    "pos": "n.",
+    "notes": "Split from bundled OCR entry (noun sense, same source line)."
+  },
+  {
+    "english": "The demon which is believed to swallow the moon (at eclipses).",
+    "garo": "Jajong nawang minoka",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "Around a full moon as a measure of time.",
+    "garo": "Jajong-silo",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "Without fear; without hesitation; without minding; without care.",
+    "garo": "Jajrengmangija",
+    "category": null,
+    "pos": "adv."
+  },
+  {
+    "english": "A dream.",
+    "garo": "Jajumang",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "A prefix for leaves, pages of books.",
+    "garo": "Jak..",
+    "category": null,
+    "pos": "prefix",
+    "notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Source gives worked examples under this prefix: e·sal kingsa = a leaf of plantain tree; ki·tapni jaksa = one page of a book; pan jaksa = one betel-leaf. Examples not split into standalone headword rows - that would require judgment Claude D does not make."
+  },
+  {
+    "english": "A prefix added to nouns meaning hand.",
+    "garo": "Jak..",
+    "category": null,
+    "pos": "prefix",
+    "notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Second, distinct 'Jak..' prefix entry on same source line group as the leaves/pages prefix above - two prefix senses sharing the same headword string. Worked examples given: jatmatchi = pulse; jakpa (n.) = palm; jaksi = finger; jakchimita = sleeping of the hand; jakpong = Arm; jaksrama = liberal, generous; jaktuata = to slip from the hand. Examples not split into standalone headword rows."
+  },
+  {
+    "english": "As thick or big as the biceps or arm.",
+    "garo": "Jakambong gita",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "The size of the palm when closed.",
+    "garo": "Jakbo",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "To strike back when one is struck; to pay back some injury in an equal way; to retaliate; to avenge.",
+    "garo": "Jakbikpila",
+    "category": null,
+    "pos": "vi."
+  },
+  {
+    "english": "To stretch one's hands and legs when one is about to fall or in the water.",
+    "garo": "Jakbra-gangbra daka",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "Upper arm near the armpit.",
+    "garo": "Jakbrak",
+    "category": null,
+    "pos": "n."
+  },
+  {
+    "english": "As much as two palms can hold; a bunch (as of rice plants for transplanting).",
+    "garo": "Jakchomsa",
+    "category": null,
+    "pos": "adj."
+  },
+  {
+    "english": "To fold one's hands.",
+    "garo": "Jak chopjola",
+    "category": null,
+    "pos": "v."
+  },
+  {
+    "english": "To participate; to take part; to meddle; to get as involved.",
+    "garo": "Jak on·paa",
+    "category": null,
+    "pos": "vi."
   }
 ]

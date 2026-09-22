@@ -61114,5 +61114,875 @@
     "near_duplicate": null,
     "promotion_status": "promoted",
     "promoted_date": "2026-09-19T06:24:27.845Z"
+  },
+  {
+    "id": "PL-0002291",
+    "english": "A long-legged person.",
+    "garo": "Ja·gro",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002292",
+    "english": "To kneel with one leg raised perpendicularly.",
+    "garo": "Ja·gugu·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002293",
+    "english": "A ship; a steamer.",
+    "garo": "Jahas",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Repeated headword (variant spelling 'jahat' given same gloss, same source line).",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch. Source itself gives two spellings for one gloss (Jahas/jahat) -- kept as coexisting unverified variants, no evidence to force a single pick.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Jahas",
+        "jahat"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002294",
+    "english": "A ship; a steamer.",
+    "garo": "jahat",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Repeated headword (variant spelling of 'Jahas', same gloss, same source line).",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch. Source itself gives two spellings for one gloss (Jahas/jahat) -- kept as coexisting unverified variants, no evidence to force a single pick.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": "within-batch",
+      "details": [
+        "Jahas",
+        "jahat"
+      ]
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002295",
+    "english": "To hesitate; to waver.",
+    "garo": "Jajaa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Split from bundled OCR entry.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002296",
+    "english": "Hesitation.",
+    "garo": "Jajaa",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Split from bundled OCR entry (noun sense, same source line).",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002297",
+    "english": "To cause to hesitate; to doubt; to stagger.",
+    "garo": "Ja·jaata",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002298",
+    "english": "Hesitation; doubt; wavering.",
+    "garo": "Jajaatani",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002299",
+    "english": "Without faltering; without hesitation.",
+    "garo": "Jajagija-bitbatgija",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch. Claude D flagged as a possible OCR-garbled repeat of Jajabitbatgija (near-identical headword+gloss, same source page) -- no way to disambiguate without the source image, and no evidence either form is the error. Following the project's evidence-first/never-guess norm (same treatment as other same-gloss spelling pairs, e.g. this batch's Jahas/jahat): staged both as coexisting unverified variants rather than dropping either.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002300",
+    "english": "Without faltering; without hesitation; clearly; without wavering.",
+    "garo": "Jajabitbatgija",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": "Near-duplicate headword and gloss vs. Jajagija-bitbatgija immediately above - Claude D does not judge whether this is a real second headword or an OCR-garbled repeat; flagged for Claude A.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch. Claude D flagged as a possible OCR-garbled repeat of Jajagija-bitbatgija (near-identical headword+gloss, same source page) -- no way to disambiguate without the source image, and no evidence either form is the error. Following the project's evidence-first/never-guess norm: staged both as coexisting unverified variants rather than dropping either.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002301",
+    "english": "To be frightened; to startle.",
+    "garo": "Jajabria",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Source prints 'frighten' (adjective form used for verb sense); preserved as printed.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002302",
+    "english": "Helter-skelter; in confusion.",
+    "garo": "Ja·ja-jiji",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002303",
+    "english": "To hesitate; to be undecided; to be in a confusion.",
+    "garo": "Jajajiji-daka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002304",
+    "english": "Without hesitation; undauntedly.",
+    "garo": "Jajagija",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002305",
+    "english": "To seduce; to entice.",
+    "garo": "Jajik-ra·a",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002306",
+    "english": "To frequent; to go very often; to roam about.",
+    "garo": "Ja·joa",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002307",
+    "english": "To die; to get to the other side.",
+    "garo": "Jajoka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": "Split from bundled OCR entry.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002308",
+    "english": "The falling of the scale or skin of snakes or certain insects.",
+    "garo": "Jajoka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": "Split from bundled OCR entry (noun sense, same source line).",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002309",
+    "english": "The demon which is believed to swallow the moon (at eclipses).",
+    "garo": "Jajong nawang minoka",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002310",
+    "english": "Around a full moon as a measure of time.",
+    "garo": "Jajong-silo",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002311",
+    "english": "Without fear; without hesitation; without minding; without care.",
+    "garo": "Jajrengmangija",
+    "category": null,
+    "pos": "adv.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002312",
+    "english": "A dream.",
+    "garo": "Jajumang",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002313",
+    "english": "A prefix for leaves, pages of books.",
+    "garo": "Jak..",
+    "category": null,
+    "pos": "prefix",
+    "classifier": null,
+    "notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Source gives worked examples under this prefix: e·sal kingsa = a leaf of plantain tree; ki·tapni jaksa = one page of a book; pan jaksa = one betel-leaf. Examples not split into standalone headword rows - that would require judgment Claude D does not make.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch. Two distinct 'Jak..' prefix senses (this one: leaves/pages of books) on the same source line group -- approved as separate entries, not a duplicate. Claude D's nested worked examples (e·sal kingsa, ki·tapni jaksa, pan jaksa) NOT split into standalone headword rows this session -- that's a larger judgment call, deferred, not part of this batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002314",
+    "english": "A prefix added to nouns meaning hand.",
+    "garo": "Jak..",
+    "category": null,
+    "pos": "prefix",
+    "classifier": null,
+    "notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Second, distinct 'Jak..' prefix entry on same source line group as the leaves/pages prefix above - two prefix senses sharing the same headword string. Worked examples given: jatmatchi = pulse; jakpa (n.) = palm; jaksi = finger; jakchimita = sleeping of the hand; jakpong = Arm; jaksrama = liberal, generous; jaktuata = to slip from the hand. Examples not split into standalone headword rows.",
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch. Two distinct 'Jak..' prefix senses (this one: hand-noun prefix) on the same source line group -- approved as separate entries, not a duplicate. Claude D's nested worked examples (jatmatchi, jakpa, jaksi, jakchimita, jakpong, jaksrama, jaktuata) NOT split into standalone headword rows this session -- deferred, not part of this batch.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002315",
+    "english": "As thick or big as the biceps or arm.",
+    "garo": "Jakambong gita",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002316",
+    "english": "The size of the palm when closed.",
+    "garo": "Jakbo",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002317",
+    "english": "To strike back when one is struck; to pay back some injury in an equal way; to retaliate; to avenge.",
+    "garo": "Jakbikpila",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002318",
+    "english": "To stretch one's hands and legs when one is about to fall or in the water.",
+    "garo": "Jakbra-gangbra daka",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002319",
+    "english": "Upper arm near the armpit.",
+    "garo": "Jakbrak",
+    "category": null,
+    "pos": "n.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002320",
+    "english": "As much as two palms can hold; a bunch (as of rice plants for transplanting).",
+    "garo": "Jakchomsa",
+    "category": null,
+    "pos": "adj.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002321",
+    "english": "To fold one's hands.",
+    "garo": "Jak chopjola",
+    "category": null,
+    "pos": "v.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
+  },
+  {
+    "id": "PL-0002322",
+    "english": "To participate; to take part; to meddle; to get as involved.",
+    "garo": "Jak on·paa",
+    "category": null,
+    "pos": "vi.",
+    "classifier": null,
+    "notes": null,
+    "provenance": {
+      "source": "Print dictionary",
+      "source_page": "96",
+      "import_batch": "IMPORT-2026-09-22T18-16-09-464Z",
+      "import_date": "2026-09-22T18:16:09.464Z",
+      "ocr_version": null
+    },
+    "review_status": "approved",
+    "review_notes": "Reviewed by Claude A, 2026-09-22. Page 96 OCR batch, Owner-approved for staging. Clean, no conflict with production, approved as ordinary unverified vocabulary.",
+    "reviewed_by": "Claude A",
+    "reviewed_date": "2026-09-22",
+    "conflict": {
+      "type": null,
+      "details": null
+    },
+    "near_duplicate": null,
+    "promotion_status": "promoted",
+    "promoted_date": "2026-09-22T18:16:38.860Z"
   }
 ]

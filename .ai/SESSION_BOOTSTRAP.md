@@ -2832,3 +2832,26 @@ overlap). Gate green throughout: 8831/8831 dictionary, 9/9 grammatical
 corrections, 458/458 unit tests, 0 new repository-intelligence
 violations. Pushed clean, HEAD `5750c6a`, verified == origin/main.
 Full detail: `docs/CLAUDE_A_SESSION_MIGRATION_20260922.md`.
+
+## 2026-09-22B (Claude A) — Page 96 OCR import (32 entries)
+
+Resumed from `docs/CLAUDE_A_SESSION_MIGRATION_20260922.md`. 2 commits
+of drift on arrival (Claude D's page-96 handoff + the prior session's
+own close commit), gate green.
+
+Imported Claude D's page 96 OCR handoff (already Owner-approved for
+staging) via `scripts/import-dictionary.js`: 32 entries staged and
+promoted as ordinary unverified vocabulary, no shadowing risk found
+against existing VERIFIED/HIGH senses. Resolved both manual-review
+flags Claude D routed up: two distinct `Jak..` prefix senses kept as
+separate entries (nested worked examples not split into rows this
+session, deferred); `Jajabitbatgija`/`Jajagija-bitbatgija`
+near-duplicate pair staged as coexisting unverified variants
+(evidence-first — no way to tell which, if either, is an OCR error).
+
+One new Check C conflict from the expected `Jahas`/`jahat` spelling
+pair, allowlisted with citation. Gate green throughout post-fix:
+8874/8874 dictionary, 9/9 grammatical corrections, 458/458 unit
+tests, 0 new repository-intelligence violations. No Claude B handoff
+this session. Pushed clean, HEAD `5b7c9bd`, verified ==
+origin/main. Full detail: `docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md`.
