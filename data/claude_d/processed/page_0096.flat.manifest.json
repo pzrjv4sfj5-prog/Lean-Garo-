@@ -1,0 +1,214 @@
+{
+  "source_page": "96",
+  "new_count": 34,
+  "exact_duplicate_count": 0,
+  "possible_conflict_count": 6,
+  "likely_raka_variant_count": 2,
+  "manual_review_count": 4,
+  "garo_keyed_near_duplicates": [
+    {
+      "normalized_garo": "jagring",
+      "variants": [
+        {
+          "garo": "Jagring",
+          "english": [
+            "Reflection (of someone); shadow; image; spirit; vision. (page 96 continuation of page-95 held entry)"
+          ]
+        },
+        {
+          "garo": "Jagring",
+          "english": [
+            "shadow"
+          ],
+          "existing_source": "master_dictionary.json"
+        },
+        {
+          "garo": "ja·gring",
+          "english": [
+            "Shadow",
+            "reflection"
+          ],
+          "existing_source": "master_dictionary.json"
+        }
+      ]
+    },
+    {
+      "normalized_garo": "jagua",
+      "variants": [
+        {
+          "garo": "Ja·gua",
+          "english": [
+            "To fall; to be defeated; to blunder."
+          ]
+        },
+        {
+          "garo": "ja·gu·a",
+          "english": [
+            "stumble"
+          ],
+          "existing_source": "master_dictionary.json",
+          "note": "extra raka dot vs incoming form - possible genuine raka-marked distinction, not resolved here"
+        }
+      ]
+    },
+    {
+      "normalized_garo": "jajong",
+      "variants": [
+        {
+          "garo": "Jajong",
+          "english": [
+            "Moon; the moon-god."
+          ]
+        },
+        {
+          "garo": "Jajong",
+          "english": [
+            "moon",
+            "the moon"
+          ],
+          "existing_source": "master_dictionary.json"
+        },
+        {
+          "garo": "ja·jong",
+          "english": [
+            "Moon"
+          ],
+          "existing_source": "master_dictionary.json"
+        }
+      ]
+    },
+    {
+      "normalized_garo": "jajrenga",
+      "variants": [
+        {
+          "garo": "Jajrenga",
+          "english": [
+            "Anxious.",
+            "To be anxious; to worry; to care."
+          ]
+        },
+        {
+          "garo": "ja·jreng·a",
+          "english": [
+            "worried"
+          ],
+          "existing_source": "master_dictionary.json",
+          "note": "extra raka dots vs incoming form"
+        }
+      ]
+    },
+    {
+      "normalized_garo": "jak",
+      "variants": [
+        {
+          "garo": "Jak",
+          "english": [
+            "A hand; a page; a herd or flock."
+          ]
+        },
+        {
+          "garo": "Jak",
+          "english": [
+            "hand",
+            "the hand"
+          ],
+          "existing_source": "master_dictionary.json"
+        },
+        {
+          "garo": "jak",
+          "english": [
+            "arm"
+          ],
+          "existing_source": "master_dictionary.json"
+        }
+      ]
+    }
+  ],
+  "possible_conflicts": [
+    {
+      "english": "anxious.",
+      "incoming_garo": "Jajrenga",
+      "existing_garo": [
+        "ting·ting·a"
+      ],
+      "existing_source": "master_dictionary.json",
+      "likely_raka_variant": false,
+      "raka_variant_of": null,
+      "note": "same English gloss, entirely different Garo form - possible genuine synonym, not resolved here"
+    }
+  ],
+  "manual_review_items": [
+    {
+      "raw_ocr_text": "Jak.. — A prefix for leaves, pages of books, as, e·sal kingsa—a leaf of plantain tree; ki·tapni jaksa—one page of a book; pan jaksa—one betel-leaf.",
+      "reason": "prefix entry with nested worked examples; entry_type (lexical vs affix) and whether examples should become standalone headwords is not Claude D's call"
+    },
+    {
+      "raw_ocr_text": "Jak.. — A prefix added to nouns meaning hand, as, jatmatchi—pulse; jakpa, n.—palm; jaksi—finger; jakchimita—sleeping of the hand; jakpong—Arm; jaksrama—liberal, generous; jaktuata—to slip from the hand.",
+      "reason": "second prefix entry sharing the same headword string as the entry above; same routing question"
+    },
+    {
+      "raw_ocr_text": "Jakam, Jakgamsa, n. The amount",
+      "reason": "entry runs off the bottom-right edge of the source image, gloss incomplete - needs the next page to complete, not usable as a headword row yet"
+    },
+    {
+      "raw_ocr_text": "Jajabitbatgija, adv. Without faltering; without hesitation; clearly; without wavering.",
+      "reason": "near-duplicate headword and gloss vs. 'Jajagija-bitbatgija' on the same page - could be a genuine second headword or an OCR-garbled repeat; Claude D does not judge which"
+    }
+  ],
+  "disposition": {
+    "rule_applied": "Owner ruling (this session, 2026-09-22): if the Garo form already exists anywhere in master_dictionary.json, the new OCR word is not taken in, regardless of whether its gloss has additional senses not yet in master.",
+    "clean_output": "data/claude_d/processed/page_0096.flat.clean.json",
+    "kept": 32,
+    "dropped": 8,
+    "dropped_entries": [
+      {
+        "garo": "Jagring",
+        "pos": "n.",
+        "english": "Reflection (of someone); shadow; image; spirit; vision.",
+        "note": "master already has 'shadow'/'reflection' senses under this form; 'image'/'spirit'/'vision' senses not carried in per Owner rule"
+      },
+      {
+        "garo": "Ja·gua",
+        "pos": "v.",
+        "english": "To fall; to be defeated; to blunder.",
+        "note": "master has raka-variant form 'ja·gu·a' glossed 'stumble'"
+      },
+      {
+        "garo": "Jajong",
+        "pos": "n.",
+        "english": "Moon; the moon-god.",
+        "note": "master already has 'moon'/'the moon'; 'the moon-god' sense not carried in per Owner rule"
+      },
+      {
+        "garo": "Jajrenga",
+        "pos": "adj.",
+        "english": "Anxious.",
+        "note": "master has raka-variant form 'ja·jreng·a' glossed 'worried'"
+      },
+      {
+        "garo": "Jajrenga",
+        "pos": "v.",
+        "english": "To be anxious; to worry; to care.",
+        "note": "same headword as above"
+      },
+      {
+        "garo": "Jak",
+        "pos": "n.",
+        "english": "A hand; a page; a herd or flock.",
+        "note": "master already has 'hand'/'arm'; 'page'/'herd or flock' senses not carried in per Owner rule"
+      },
+      {
+        "garo": "Jaguala",
+        "pos": "vi.",
+        "english": "To forget; to let go from the memory; to slip from memory.",
+        "note": "Owner ruling (this session): already covered by the existing Guala/'forget' paradigm (master_dictionary.json, NV-101) - dropped even though it wasn't caught by the automated garo-normalization match (Jaguala vs. bare Guala)."
+      },
+      {
+        "garo": "Jakam, Jakgamsa",
+        "pos": "n.",
+        "english": "The amount",
+        "note": "Owner ruling (this session): dropped as incomplete - gloss cut off at page edge, not usable."
+      }
+    ]
+  }
+}

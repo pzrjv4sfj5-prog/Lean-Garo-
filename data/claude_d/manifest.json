@@ -102,7 +102,7 @@
       "flat_entries": 36,
       "affix_excluded": 0,
       "flagged_for_review": 0,
-      "note": "Mechanical exact-string check of flat 'garo' field against master_dictionary.json (case/whitespace-normalized, no semantic judgment): 3 of 36 entries share a headword string already present in master_dictionary.json — 'Am\u00b7bol', 'A\u00b7meng', 'Am\u00b7pang'. No dedup/resolution performed here; flagged for Claude A review only."
+      "note": "Mechanical exact-string check of flat 'garo' field against master_dictionary.json (case/whitespace-normalized, no semantic judgment): 3 of 36 entries share a headword string already present in master_dictionary.json — 'Am·bol', 'A·meng', 'Am·pang'. No dedup/resolution performed here; flagged for Claude A review only."
     },
     {
       "page": 34,
@@ -151,7 +151,7 @@
       "flat_entries": 41,
       "affix_excluded": 0,
       "flagged_for_review": 2,
-      "note": "Retroactive addendum 2026-08-02: page was already correctly processed 2026-07-26 (flat file re-verified byte-identical, not reprocessed). Adding mechanical exact-string check vs master_dictionary.json, enriched with colliding master entry's English gloss(es) to speed Claude A review (no resolution performed): 3 of 41 collide — 'Alu' (incoming: 'A potato.' vs master: 'potato' [SUPERSEDED legacy] and 'the potato'); 'Am' (incoming: 'A mat.' vs master: 'mat' [SUPERSEDED legacy, real form da\u00b7ri/pa\u00b7ti], 'carpet', 'okay' — likely false-positive, different senses); 'Am\u00b7a' (incoming: 'To search...' vs master: 'win' [SUPERSEDED legacy] and 'roar' [UNVERIFIED] — likely false-positive, different senses). Separately: the original 2 upstream OCR flags include 'Amak cheraa gita-do\u00b7po debaa gita', a phrase entry cut off mid-sentence with continuation noted as flowing to page 8 — page 8 (already processed) does not contain that continuation text, so this entry remains incomplete as transcribed."
+      "note": "Retroactive addendum 2026-08-02: page was already correctly processed 2026-07-26 (flat file re-verified byte-identical, not reprocessed). Adding mechanical exact-string check vs master_dictionary.json, enriched with colliding master entry's English gloss(es) to speed Claude A review (no resolution performed): 3 of 41 collide — 'Alu' (incoming: 'A potato.' vs master: 'potato' [SUPERSEDED legacy] and 'the potato'); 'Am' (incoming: 'A mat.' vs master: 'mat' [SUPERSEDED legacy, real form da·ri/pa·ti], 'carpet', 'okay' — likely false-positive, different senses); 'Am·a' (incoming: 'To search...' vs master: 'win' [SUPERSEDED legacy] and 'roar' [UNVERIFIED] — likely false-positive, different senses). Separately: the original 2 upstream OCR flags include 'Amak cheraa gita-do·po debaa gita', a phrase entry cut off mid-sentence with continuation noted as flowing to page 8 — page 8 (already processed) does not contain that continuation text, so this entry remains incomplete as transcribed."
     },
     {
       "page": 15,
@@ -225,6 +225,18 @@
       "flat_entries": 45,
       "affix_excluded": 0,
       "flagged_for_review": 1
+    },
+    {
+      "page": 96,
+      "status": "processed",
+      "output_path": "data/claude_d/processed/page_0096.flat.json",
+      "source_entries": 39,
+      "flat_entries": 40,
+      "affix_excluded": 0,
+      "flagged_for_review": 4,
+      "note": "40 flat rows from 39 source headword lines. Owner ruling applied this session: 6 rows dropped because their Garo form already exists in master_dictionary.json (Jagring, Ja·gua, Jajong, Jajrenga x2 senses, Jak) - dropped whole, even though some carried additional senses not yet in master (see page_0096.flat.manifest.json 'disposition' for the discarded senses). 34 clean rows remain in page_0096.flat.clean.json, not yet imported/promoted - awaiting Owner/Claude A review. 2 prefix entries ('Jak..' x2) and 1 near-duplicate adv. pair (Jajagija-bitbatgija/Jajabitbatgija) still routed to manual review, unaffected by the master-wins rule since they don't match master. 1 row ('Jakam, Jakgamsa') held - gloss runs off the page edge, incomplete. Owner reviewed the 34-row clean set in chat and additionally removed: 'Jaguala' (row 2, vi., 'to forget...') as already covered by the existing Guala/'forget' paradigm, and 'Jakam, Jakgamsa' (row 34, incomplete gloss). 32 rows remain in page_0096.flat.clean.json, approved by Owner, ready to push for Claude A's review.",
+      "clean_entries": 32,
+      "output_path_clean": "data/claude_d/processed/page_0096.flat.clean.json"
     }
   ]
 }

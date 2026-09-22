@@ -1,0 +1,372 @@
+{
+  "schema": "lean-garo.claude_a_review_input.v1",
+  "source_page": 96,
+  "source_type": "OCR",
+  "status": "NEW_ENTRIES",
+  "deduplication": {
+    "raka_normalization": "Convert hyphen to · only inside Garo fields",
+    "comparison_key": "english|normalized_garo|pos",
+    "same_garo_different_pos": "preserve",
+    "same_garo_different_sense": "preserve",
+    "minimal_raka_pairs": "preserve",
+    "repository_history_checked": true
+  },
+  "summary": {
+    "ocr_records_reviewed": 40,
+    "new_records_for_claude_a": 32,
+    "already_processed_or_present": 7,
+    "held_from_a": 1,
+    "duplicate_records_in_output": 0,
+    "malformed_records_in_output": 0
+  },
+  "entries": [
+    {
+      "english": "A long-legged person.",
+      "garo": "Ja·gro",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To kneel with one leg raised perpendicularly.",
+      "garo": "Ja·gugu·a",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "A ship; a steamer.",
+      "garo": "Jahas",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96,
+      "review_notes": "Repeated headword (variant spelling 'jahat' given same gloss, same source line)."
+    },
+    {
+      "english": "A ship; a steamer.",
+      "garo": "jahat",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96,
+      "review_notes": "Repeated headword (variant spelling of 'Jahas', same gloss, same source line)."
+    },
+    {
+      "english": "To hesitate; to waver.",
+      "garo": "Jajaa",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96,
+      "review_notes": "Split from bundled OCR entry."
+    },
+    {
+      "english": "Hesitation.",
+      "garo": "Jajaa",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96,
+      "review_notes": "Split from bundled OCR entry (noun sense, same source line)."
+    },
+    {
+      "english": "To cause to hesitate; to doubt; to stagger.",
+      "garo": "Ja·jaata",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "Hesitation; doubt; wavering.",
+      "garo": "Jajaatani",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "Without faltering; without hesitation.",
+      "garo": "Jajagija-bitbatgija",
+      "pos": [
+        "adv."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "Without faltering; without hesitation; clearly; without wavering.",
+      "garo": "Jajabitbatgija",
+      "pos": [
+        "adv."
+      ],
+      "source_page": 96,
+      "review_notes": "Near-duplicate headword and gloss vs. Jajagija-bitbatgija immediately above - Claude D does not judge whether this is a real second headword or an OCR-garbled repeat; flagged for Claude A."
+    },
+    {
+      "english": "To be frightened; to startle.",
+      "garo": "Jajabria",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96,
+      "review_notes": "Source prints 'frighten' (adjective form used for verb sense); preserved as printed."
+    },
+    {
+      "english": "Helter-skelter; in confusion.",
+      "garo": "Ja·ja-jiji",
+      "pos": [
+        "adv."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To hesitate; to be undecided; to be in a confusion.",
+      "garo": "Jajajiji-daka",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "Without hesitation; undauntedly.",
+      "garo": "Jajagija",
+      "pos": [
+        "adv."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To seduce; to entice.",
+      "garo": "Jajik-ra·a",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To frequent; to go very often; to roam about.",
+      "garo": "Ja·joa",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To die; to get to the other side.",
+      "garo": "Jajoka",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96,
+      "review_notes": "Split from bundled OCR entry."
+    },
+    {
+      "english": "The falling of the scale or skin of snakes or certain insects.",
+      "garo": "Jajoka",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96,
+      "review_notes": "Split from bundled OCR entry (noun sense, same source line)."
+    },
+    {
+      "english": "The demon which is believed to swallow the moon (at eclipses).",
+      "garo": "Jajong nawang minoka",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "Around a full moon as a measure of time.",
+      "garo": "Jajong-silo",
+      "pos": [
+        "adv."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "Without fear; without hesitation; without minding; without care.",
+      "garo": "Jajrengmangija",
+      "pos": [
+        "adv."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "A dream.",
+      "garo": "Jajumang",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "A prefix for leaves, pages of books.",
+      "garo": "Jak..",
+      "pos": [
+        "prefix"
+      ],
+      "source_page": 96,
+      "review_notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Source gives worked examples under this prefix: e·sal kingsa = a leaf of plantain tree; ki·tapni jaksa = one page of a book; pan jaksa = one betel-leaf. Examples not split into standalone headword rows - that would require judgment Claude D does not make."
+    },
+    {
+      "english": "A prefix added to nouns meaning hand.",
+      "garo": "Jak..",
+      "pos": [
+        "prefix"
+      ],
+      "source_page": 96,
+      "review_notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Second, distinct 'Jak..' prefix entry on same source line group as the leaves/pages prefix above - two prefix senses sharing the same headword string. Worked examples given: jatmatchi = pulse; jakpa (n.) = palm; jaksi = finger; jakchimita = sleeping of the hand; jakpong = Arm; jaksrama = liberal, generous; jaktuata = to slip from the hand. Examples not split into standalone headword rows."
+    },
+    {
+      "english": "As thick or big as the biceps or arm.",
+      "garo": "Jakambong gita",
+      "pos": [
+        "adj."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "The size of the palm when closed.",
+      "garo": "Jakbo",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To strike back when one is struck; to pay back some injury in an equal way; to retaliate; to avenge.",
+      "garo": "Jakbikpila",
+      "pos": [
+        "vi."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To stretch one's hands and legs when one is about to fall or in the water.",
+      "garo": "Jakbra-gangbra daka",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "Upper arm near the armpit.",
+      "garo": "Jakbrak",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "As much as two palms can hold; a bunch (as of rice plants for transplanting).",
+      "garo": "Jakchomsa",
+      "pos": [
+        "adj."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To fold one's hands.",
+      "garo": "Jak chopjola",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96
+    },
+    {
+      "english": "To participate; to take part; to meddle; to get as involved.",
+      "garo": "Jak on·paa",
+      "pos": [
+        "vi."
+      ],
+      "source_page": 96
+    }
+  ],
+  "already_processed": [
+    {
+      "english": "Reflection (of someone); shadow; image; spirit; vision.",
+      "garo": "Jagring",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96,
+      "reason": "Garo form already present in master_dictionary.json ('shadow'/'reflection' senses); completes a page-95 held entry but not re-staged per Owner ruling (master wins on any overlap)."
+    },
+    {
+      "english": "To fall; to be defeated; to blunder.",
+      "garo": "Ja·gua",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96,
+      "reason": "Normalized Garo form matches existing raka-variant 'ja·gu·a' ('stumble') in master_dictionary.json; not re-staged per Owner ruling."
+    },
+    {
+      "english": "Moon; the moon-god.",
+      "garo": "Jajong",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96,
+      "reason": "Garo form already present in master_dictionary.json ('moon'/'the moon'); not re-staged per Owner ruling."
+    },
+    {
+      "english": "Anxious.",
+      "garo": "Jajrenga",
+      "pos": [
+        "adj."
+      ],
+      "source_page": 96,
+      "reason": "Normalized Garo form matches existing raka-variant 'ja·jreng·a' ('worried') in master_dictionary.json; not re-staged per Owner ruling."
+    },
+    {
+      "english": "To be anxious; to worry; to care.",
+      "garo": "Jajrenga",
+      "pos": [
+        "v."
+      ],
+      "source_page": 96,
+      "reason": "Same headword as above; not re-staged per Owner ruling."
+    },
+    {
+      "english": "A hand; a page; a herd or flock.",
+      "garo": "Jak",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96,
+      "reason": "Garo form already present in master_dictionary.json ('hand'/'arm'); not re-staged per Owner ruling."
+    },
+    {
+      "english": "To forget; to let go from the memory; to slip from memory.",
+      "garo": "Jaguala",
+      "pos": [
+        "vi."
+      ],
+      "source_page": 96,
+      "reason": "Owner-reviewed in chat and removed: already covered by the existing verified_high 'Guala'/forget paradigm (NV-101, Thangseng relay) in master_dictionary.json. Not caught by automated normalization (Jaguala vs. bare Guala) - Owner override."
+    }
+  ],
+  "held": [
+    {
+      "english": "The amount",
+      "garo": "Jakam, Jakgamsa",
+      "pos": [
+        "n."
+      ],
+      "source_page": 96,
+      "status": "HOLD_CUTOFF",
+      "reason": "OCR/source gloss is cut off at the page edge; do not infer or repair the missing text. Owner-reviewed and confirmed held."
+    }
+  ],
+  "manual_review_flags": [
+    "Two 'Jak..' prefix entries included in entries (leaves/pages prefix; hand-noun prefix) - entry_type (lexical vs. affix) and whether their nested worked examples should become standalone headwords is not resolved here; Claude A's call.",
+    "'Jajabitbatgija' (adv.) included in entries alongside 'Jajagija-bitbatgija' (adv.) - near-identical headword and gloss on the same source page; could be a genuine second headword or an OCR-garbled repeat of the same entry. Not resolved here; Claude A's call."
+  ],
+  "repository_note": "Page 0096 is new to the repository (not previously in data/claude_d/manifest.json). 41 headword lines were transcribed from the source image; 1 ('Jagring') completes an entry held on page 95 and is classified above as already_processed rather than new. 40 flat rows were produced (1 sense-split: 'Jajaa' into v./n.; 'Jajoka' into v./n.; 'Jajrenga' into adj./v.). Of those 40, 7 are already present in master_dictionary.json in some form (6 by automated Garo-normalization match, 1 - 'Jaguala' - by Owner review in chat) and are not re-staged, and 1 ('Jakam, Jakgamsa') is held as incomplete. The 32 entries below have been reviewed by the Owner in chat and approved for staging."
+}
