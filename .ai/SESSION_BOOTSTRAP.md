@@ -2797,3 +2797,38 @@ violations. Two clean rebases through concurrent Claude B session-
 close commits (zero file overlap). Pushed clean, HEAD `176bdcf`,
 verified == origin/main. Full detail:
 `docs/CLAUDE_A_SESSION_MIGRATION_20260921B.md`.
+
+## 2026-09-22 (Claude A) — NV-161/162, Claude B handoff, market batch, POS pass
+
+Resumed from `docs/CLAUDE_A_SESSION_MIGRATION_20260921B.md`. 1 commit
+of drift on arrival (Claude B engineering-only), gate green.
+
+NV-161: `leg`/`foot`=`Ja·a` (un-superseded, same untraceable-legacy-tag
+pattern as the resolved `week`/`sop·ta` case; existing
+`ja·chok`/`ja·git·teng`/`ja·teng` left coexisting, not force-
+superseded), `outside`=`A·pal` POS-tagged, `fortnight`=`Antigini`
+added (flagged vs `two weeks`=`Antigni`, not merged). Fixed
+`phrase_maps.js`'s stale `leg`->`ja·teng` override directly (Rule 8).
+
+NV-162: `she can cook`=`Ua Song·na ama.`/`Ua Song·na man·a.`,
+Thangseng-confirmed via Tridip — closes the composed-but-unfiled
+candidate from 2026-09-21B; first native-verified bare-verb
+infinitive citation for `song-` (cook).
+
+Root-caused and handed off to Claude B
+(`docs/CLAUDE_B_HANDOFF_20260922_exact_phrase_trailing_period.md`):
+exact-phrase lookup doesn't strip a trailing `.` (mirrors, but isn't
+simply copy-pasteable from, the existing `?`-only strip in step 1).
+
+Checked a 4-sentence market batch against the repo: 3 already
+correct/matching; "the market is nearby" batch item was the pair NV-080
+already superseded in favor of unsuffixed `Bajal sambaon` — not
+re-added, flagged back to Owner. Extracted `nearby`->`sambaon` and
+`market day`->`bajal sal` as new standalone entries from the
+already-confirmed sentences, plus a `market` POS tag.
+
+Rebased clean through 1 Claude D session-close collision (zero
+overlap). Gate green throughout: 8831/8831 dictionary, 9/9 grammatical
+corrections, 458/458 unit tests, 0 new repository-intelligence
+violations. Pushed clean, HEAD `5750c6a`, verified == origin/main.
+Full detail: `docs/CLAUDE_A_SESSION_MIGRATION_20260922.md`.

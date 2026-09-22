@@ -1,5 +1,5 @@
 repository:
-  head: 213ef8b
+  head: 5750c6a
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,7 +313,37 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-21B (Claude A, session complete -- see
+  next_action: '2026-09-22 (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260922.md for full detail, this
+    is a pointer only, resumed as "Claude A" from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260921B.md via a fresh clone +
+    live-pasted PAT). Resync clean, 1 commit of drift (Claude B
+    engineering-only, no data overlap), gate reconfirmed green
+    (8827/8827, 9/9, 458/458). NV-161: leg/foot=Ja·a (un-superseded
+    against an untraceable legacy tag, same class as the resolved
+    week/sop·ta case; ja·chok/ja·git·teng/ja·teng left as coexisting
+    variants, not force-superseded), outside=A·pal POS-tagged,
+    fortnight=Antigini added (flagged vs two weeks=Antigni, not
+    merged). Fixed phrase_maps.js''s stale leg->ja·teng override
+    directly (Rule 8). NV-162: she can cook=Ua Song·na ama/man·a,
+    Thangseng-confirmed -- closes the composed-but-unfiled candidate
+    from 2026-09-21B, first native-verified bare-verb infinitive
+    citation for song- (cook). Root-caused and handed off to Claude B
+    (docs/CLAUDE_B_HANDOFF_20260922_exact_phrase_trailing_period.md):
+    exact-phrase lookup doesn''t strip a trailing "." the way
+    corrections-lookup strips a trailing "?", so "she can cook."
+    (with period) still mis-picks the noun sense. Checked a 4-sentence
+    market batch: 3 already-correct VERIFIED/HIGH sentences confirmed
+    matching; "the market is nearby" batch item was the two forms
+    NV-080 already superseded in favor of unsuffixed "Bajal sambaon"
+    -- not re-added, flagged back to Owner. Extracted 2 new standalone
+    entries (nearby->sambaon, market day->bajal sal) + market POS tag
+    from the confirmed sentences. Rebased clean through 1 Claude D
+    session-close collision (zero overlap), gate green throughout:
+    8831/8831 dictionary, 9/9 grammatical corrections, 458/458 unit
+    tests, 0 new repository-intelligence violations. Pushed clean,
+    final HEAD 5750c6a, verified == origin/main.'
+  next_action_prior_20260921B: '2026-09-21B (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260921B.md for full detail, this
     is a pointer only, resumed as "Claude A" from
     docs/CLAUDE_A_SESSION_MIGRATION_20260921.md via a fresh clone +
