@@ -2102,7 +2102,9 @@
     "english": "time",
     "garo": "Somoi",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "pos": "n.",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-21, direct chat statement, POS-tagging initiative). Previously unverified/uncited; reconfirmed by Owner, no change to Garo form."
   },
   {
     "english": "day after tomorrow",
@@ -77895,5 +77897,21 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-20, chat, no Thangseng transcript supplied for this specific item — provenance: Project Owner directive, resolving the previously-unglossed 'Ritchasa gni' trailing fragment from the 2026-09-19 Thangseng transcript relay). Follows the established Ritchasa+SUFFIX pattern (cf. 'one hundred one'->'Ritchasa Sa', 'one hundred ten'->'Ritchasa Chiking'). Do not reopen; do not request further native confirmation on this specific point.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "goldsmith",
+    "garo": "Sonari",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-21, direct chat statement, POS-tagging initiative).",
+    "confidence": "verified_high",
+    "pos": "n."
+  },
+  {
+    "english": "to pass time",
+    "garo": "Somoi re·ata",
+    "category": "time",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-21, direct chat statement, POS-tagging initiative). Compositional: somoi (time, n.) + re·ata (pass, v.).",
+    "confidence": "verified_high",
+    "pos": "v."
   }
 ]
