@@ -241,7 +241,32 @@ export function analyzeGrammar(input) {
       // above. AUXILIARY_SKIP added here (RC-CANDIDATE-018) for the same
       // reason STOP_WORDS already was: these are closed-class words this
       // file already treats as structural elsewhere, not new guessing.
-      const coherent = !nextTok || /^(is|are|was|were)$/.test(nextTok) || STOP_WORDS.has(nextTok) || AUXILIARY_SKIP.has(nextTok);
+      //
+      // NP-subject coherence fix (2026-09-22, Claude B — docs/CLAUDE_B_
+      // SESSION_MIGRATION_20260922.md §6/§4): the checks above only ever
+      // accepted a copula/stopword/auxiliary/absent nextTok, so a genuine
+      // bare main verb ("the dog runs", "the dog eats rice", "a boy runs")
+      // was never coherent and the whole sentence fell through to the
+      // weaker assembleSentenceSOV fallback, same failure mode the
+      // RC-CANDIDATE-018 fix above already fixed for auxiliaries. This does
+      // NOT reintroduce the rejected findVerbForm(nextTok) check the
+      // comment above warns against - that falls back to plain lookupGaro
+      // and accepts ANY dictionary word. Instead it reuses VERB_LEMMAS
+      // (lookupEngine.js), the same mechanically-derived, dictionary-
+      // sourced verb-only signal sentenceBuilder.js's own verb-search loop
+      // already trusts as "ground truth" (see its lemmaSignal comment) -
+      // built solely from the dictionary's own "to X" headwords, so it
+      // cannot false-positive on a noun like "dog" the way findVerbForm
+      // does. Checked against -ing/-ed/-s stripped forms too, mirroring
+      // sentenceBuilder.js's lemmaSignal exactly, so conjugated forms
+      // ("runs", "eats") match as well as the bare lemma.
+      const nextIsMainVerb = !!nextTok && (
+        VERB_LEMMAS.has(nextTok)
+        || VERB_LEMMAS.has(nextTok.replace(/ing$/, ''))
+        || VERB_LEMMAS.has(nextTok.replace(/ed$/, ''))
+        || VERB_LEMMAS.has(nextTok.replace(/s$/, ''))
+      );
+      const coherent = !nextTok || /^(is|are|was|were)$/.test(nextTok) || STOP_WORDS.has(nextTok) || AUXILIARY_SKIP.has(nextTok) || nextIsMainVerb;
       if (g && coherent) { npSubjectGaro = g; npSubjectEnglish = words[1]; subjectEndIndex = 1; }
     }
   }
