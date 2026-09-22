@@ -2760,3 +2760,40 @@ Gate green throughout: 8363/8363 dictionary, 9/9 grammatical
 corrections, 0 new repository-intelligence violations, 379/379 unit
 tests. See `docs/CLAUDE_A_SESSION_MIGRATION_20260911.md` for full
 detail.
+
+## 2026-09-21B (Claude A) — ama/man·a tie closure, RULE-050, POS-tagging pilot
+
+Closed the tagging gap behind 4 of the 19 pickPrimary verified-ties
+(able, i can eat/go/work): tagged 8 pre-existing ama/man·a rows
+`variant/VERIFIED/HIGH`, citing NV-117's already-established
+synonymy — not new native evidence, just a missing citation tag.
+Wrote `RULE-050.yaml` formalizing the synonymy (Verified) and the
+Owner's any-verb generality directive (Derived, not itself
+per-verb-confirmed). New NV-160.
+
+Live-demoed the modal-drop gap to the Owner: any verb not on file
+falls through to grammar-assembly with `ama`/`man·a` silently
+dropped, and "she can cook" specifically mis-resolved to the
+occupation noun (`Song·timgipa`, "a Cook") because no native-verified
+bare-verb form exists for `song-`. Composed `Ua Song·na ama/man·a` by
+rule (not filed VERIFIED — flagged as a relay-confirmation candidate).
+
+Found the `pos` schema field is pre-existing (not new), already read
+by `prepare-data.js` and `sentenceBuilder.js` — but
+`sentenceBuilder.js`'s verb-detection check compares against the
+literal string `'verb'` while every real row uses `'v.'`; this check
+has never matched real data. Flagged to Claude B, not fixed.
+
+Piloted the Owner's POS-tagging initiative: added `goldsmith`->`Sonari`
+(n.), `to pass time`->`Somoi re·ata` (v.), promoted existing
+`time`->`Somoi` to verified_high with pos `n.` added. Bulk backfill
+(~7621 untagged rows) and a noun/verb collision-list (prioritizing
+entries like `cook` that actively cause runtime mistranslation)
+deferred to next session per Owner instruction.
+
+Gate green throughout: 8827/8827 dictionary, 9/9 grammatical
+corrections, 458/458 unit tests, 0 new repository-intelligence
+violations. Two clean rebases through concurrent Claude B session-
+close commits (zero file overlap). Pushed clean, HEAD `176bdcf`,
+verified == origin/main. Full detail:
+`docs/CLAUDE_A_SESSION_MIGRATION_20260921B.md`.

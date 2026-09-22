@@ -1,5 +1,5 @@
 repository:
-  head: 7a906e9
+  head: 176bdcf
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,7 +313,63 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-20B (Claude A, session complete -- see
+  next_action: '2026-09-21B (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260921B.md for full detail, this
+    is a pointer only, resumed as "Claude A" from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260921.md via a fresh clone +
+    live-pasted PAT). Resync found drift on arrival: origin/main was 3
+    commits ahead of that doc''s stated HEAD (2 Claude B engineering
+    commits, no data overlap) -- gate reconfirmed green post-resync
+    (8824/8824, 9/9, 458/458 at the time). Closed 2 of 19 pickPrimary
+    verified-ties'' underlying tagging gap: tagged 8 pre-existing
+    ama/man·a rows (i can eat/go/work''s 6 pair-rows + able''s 2)
+    variant/VERIFIED/HIGH, citing NV-117 (already-established
+    synonymy) -- this was a citation gap, not new native evidence.
+    Wrote RULE-050.yaml + GRAMMAR_RULE_CATALOGUE.md entry formalizing
+    the synonymy (Verified) and the Owner''s any-verb generality
+    directive (Derived). Added NV-160. Live-demoed the gap this
+    exposes to Owner: unseeded verbs ("i can sleep/run", "she can
+    cook") fall through to grammar-assembly/sov-assembly with the
+    modal silently dropped -- and for "cook" specifically, mis-picked
+    the occupation-noun sense (Song·timgipa, "a Cook") over the verb
+    root, because no verb-form citation exists for song- (only the
+    noun and the NV-095 gerund are native-confirmed). Composed
+    "Ua Song·na ama/man·a" for Owner (RULE-009 -na + RULE-050) but
+    explicitly did NOT file it VERIFIED -- flagged as an
+    engine-composed candidate needing its own Thangseng relay
+    confirmation, not filed from inference.
+
+    Found the `pos` field is not new -- already exists (7116/9919
+    rows, 2298 with a real non-null value; convention: n./v./adj./
+    adv./vi./vt./pr./int./pron./suffix) and is already read by
+    prepare-data.js (pickPrimary tie-break) and sentenceBuilder.js
+    (verb detection). Found sentenceBuilder.js line ~218 checks
+    `e?.pos === ''verb''` (the full word) against data that only ever
+    uses the abbreviated `''v.''` -- this comparison has never matched
+    a single real row; verb detection there has silently run on
+    regex-suffix-guessing alone. Flagged to Claude B, not fixed (engine
+    code). Piloted the POS-tagging initiative per Owner directive:
+    added goldsmith->Sonari (new, n.) and to pass time->Somoi re·ata
+    (new, v.), promoted existing time->Somoi unverified->verified_high
+    with pos: n. added (Owner-reconfirmed, form unchanged). Remaining
+    ~7621 untagged rows and the noun/verb collision-list generation
+    (highest runtime value, e.g. cook) deferred to next session per
+    Owner instruction -- see docs/CLAUDE_A_SESSION_MIGRATION_20260921B.md
+    "Next Recommended Tasks". Category-field backfill (5432/9919
+    uncategorized/blank) and file-alphabetization discussed with
+    Owner, both deliberately deferred/declined for now, no action
+    taken.
+
+    Rebased clean through 2 separate Claude B push collisions this
+    session (session-close/WORKSTATE commits both times, zero file
+    overlap), rebuilding + re-running the full gate after each. Gate
+    green throughout: 8827/8827 dictionary (net +3 from opening,
+    Claude A''s own edits only), 9/9 grammatical corrections, 458/458
+    unit tests (unchanged by Claude A -- grew earlier this session via
+    Claude B''s own concurrent commit), 0 new repository-intelligence
+    violations. Live-verified via translate() throughout. Pushed
+    clean, final HEAD 176bdcf, verified == origin/main.'
+  next_action_prior_20260921: '2026-09-20B (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260920B.md for full detail, this
     is a pointer only, resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260920.md).
     Resync clean at HEAD d50a4c0 == origin/main on arrival. Zero-runtime
