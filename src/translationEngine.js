@@ -177,7 +177,24 @@ export async function translate(input) {
   // imperative "!" legitimately can.
   const lowerWithApos = cleaned.toLowerCase();
   const lowerNoPunct = lower.replace(/\?+$/, '');
-  const correction = corrections?.[lowerWithApos] || corrections?.[cleaned] || corrections?.[lower] || corrections?.[lowerNoPunct];
+  // (e) TRAILING-PERIOD FIX (2026-09-22, Claude B — Thangseng-relayed
+  // sentence corrections for "the market is nearby."/"i am at the
+  // market."/etc. all failing while their unpunctuated forms worked):
+  // same bug class, same fix shape as (d) above (RC-CANDIDATE-030),
+  // this time for a trailing "." instead of "?". Verified safe the same
+  // way (d) was: checked for any corrections.json/master_dictionary.json
+  // key pair where a period-having and non-period form of the SAME text
+  // map to DIFFERENT Garo values (the risk (d)'s own comment flags for
+  // "!" specifically) — 79 such pairs exist in master_dictionary.json,
+  // but every one is a distinct legacy-import entry that already exists
+  // in full with its own period intact, so it's matched directly by an
+  // earlier form in this chain and this fallback never even fires for
+  // it (fallback only activates when the WITH-period form isn't found
+  // at all). Tried last, single trailing "." only — does not touch "!"
+  // or internal periods (abbreviations, decimals), so (d)'s "eat!" vs
+  // "eat" distinction is unaffected.
+  const lowerNoPeriod = lower.replace(/\.+$/, '');
+  const correction = corrections?.[lowerWithApos] || corrections?.[cleaned] || corrections?.[lower] || corrections?.[lowerNoPunct] || corrections?.[lowerNoPeriod];
   if (correction) return { garo: correction, method: 'correction', confidence: 1.0 };
 
   // 1.5 Phrase map
@@ -251,7 +268,11 @@ export async function translate(input) {
   // this is the first one) would have hit the identical failure. Same
   // precedence fix, same three-form try order as the two existing
   // precedents, scoped to this one lookup only.
-  const exactPhrase = lookupGaro(lowerWithApos) || lookupGaro(cleaned) || lookupGaro(lower);
+  // TRAILING-PERIOD FIX (2026-09-22, Claude B): mirrors the corrections-
+  // chain fix above (step 1, same date) — see that comment for the full
+  // collision-risk check, which covers this compiled_dict.json-backed
+  // lookup too. Tried last, after all three exact/apostrophe forms.
+  const exactPhrase = lookupGaro(lowerWithApos) || lookupGaro(cleaned) || lookupGaro(lower) || lookupGaro(lower.replace(/\.+$/, ''));
   if (exactPhrase) return { garo: exactPhrase, method: 'exact-phrase', confidence: capLookupConfidence(lower, 0.98) };
 
   // 1.6 Classifier counting — "2 dogs", "one teacher", "5 birds"

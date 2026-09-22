@@ -3242,6 +3242,55 @@ flagged for a future question if it matters for the engine.
 
 **5 new VERIFIED/HIGH entries added**, 2 existing entries corrected.
 
+## NV-163 — NV-060 propagation gap + `-de` temporal-topic semantics — RESOLVED 2026-09-22
+
+**Trigger:** Project Owner re-sent NV-060's exact answer set unprompted this
+session; investigating why prompted this finding.
+
+**Propagation gap found (engine bug, not a linguistic question):** NV-060
+(2026-08-05) was correctly applied to `master_dictionary.json` for 5 of its
+6 sentences (`i am at the market`, `go to the market`, `the market is
+nearby`, `tomorrow is market day`, plus the `let's`-contraction market
+idiom), and those already resolve correctly today via `exact-phrase`/
+`correction`. Two gaps found, both fixed this session (Claude B):
+1. `corrections.json`'s `"let us go to market"` (uncontracted "us") was
+   never in `master_dictionary.json` at all — a corrections-only entry
+   that missed the NV-060 `Anti`-removal fix applied to its `"let's"`
+   sibling. Corrected to match: `Hai bajalchi re·na`.
+2. Every one of these sentences (and by extension every corrections.json/
+   compiled_dict.json exact-match entry generally) failed on a trailing
+   "." — e.g. `"the market is nearby"` resolved correctly but `"the market
+   is nearby."` fell through to weaker morphology/sov-assembly output.
+   General fix in `src/translationEngine.js` (both the corrections-chain
+   and exact-phrase lookup steps): added a single-trailing-period-stripped
+   fallback, tried last, mirroring the existing `?`-stripped fix
+   (RC-CANDIDATE-030) exactly. Checked for collision risk the same way
+   that fix was (see inline code comments) — safe.
+
+**`-de` semantics — new native clarification (Project Owner, 2026-09-22),
+partially answers NV-060's own flagged open question** ("`-de`/`-ara` as
+free-variant topic/subject markers... distinction not yet characterized"):
+`-de` marks that, of everything that could happen, *this* particular thing
+will be the one done at the specified time — it can also carry the
+implication that the thing had been planned but couldn't be done earlier,
+so it will now be done at the specified time. Illustrated with the
+existing VERIFIED `Knalde`/`Da·alde`/`Mijalde` (tomorrow/today/yesterday)
+market sentences, all re-confirmed unchanged by this round. Also
+clarifies: the "(I)" seen in some English glosses (e.g. "Tomorrow (I) will
+go to the market") marks an assumed/implicit subject in the English
+gloss itself, not a literal bracketed token translated or typed by a
+user — Garo omits `Anga` here because it's contextually assumed; "else we
+would have anga" (Project Owner's own words). Not a corrections.json
+formatting concern.
+
+**Not resolved:** whether this `-de` characterization also explains the
+NV-060/NV-080 contradiction on `Bajalde sambaon` vs. `Bajal sambaon` for
+"the market is nearby" (NV-080 rejected the suffixed forms outright,
+2026-08-17, and remains the current VERIFIED entry — this round's answer
+repeated NV-060's superseded pre-NV-080 forms without addressing that
+contradiction, so it is left as still-open per existing discipline, not
+silently resolved by this round's answer).
+
 ## NV-061 — "to hang": sitea vs. kadea — PARTIALLY RESOLVED 2026-08-05
 
 **Trigger:** flagged item "to hang → al·a·i·na", awaiting native-speaker confirmation.
