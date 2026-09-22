@@ -77931,5 +77931,21 @@
     "pos": "n.",
     "notes": "VERIFIED/HIGH — NV-161 (2026-09-22, Project Owner direct relay): Thangseng gives Antigini for 'fortnight'. Same anti+-gni(2) root/meaning as the already-VERIFIED/HIGH 'two weeks'=Antigni (NV-087), but a distinct spelling (extra -i-) — flagged, NOT merged: may be a transcription variant of the same word or a genuinely separate form; needs an explicit reconciling question before treating as identical.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "she can cook",
+    "garo": "Ua Song·na ama.",
+    "category": "general",
+    "pos": null,
+    "notes": "variant/VERIFIED/HIGH — NV-162 (2026-09-22, Thangseng direct WhatsApp confirmation, relayed by Tridip/Project Owner, 11:47am/12:02pm): Thangseng directly confirmed 'Ua Song·na ama.' / 'Ua Song·na man·a.' both correct for 'She can cook.' Closes the composed-but-unconfirmed candidate flagged in the 2026-09-21B session (built by rule composition — RULE-009 -na infinitive + RULE-050 ama/man·a synonymy — but deliberately not filed VERIFIED on Claude A's own inference at the time). Also the first native-verified bare-verb infinitive citation for the 'cook' (song-) root — the noun Song·timgipa/song·a (occupation sense) was the only prior native-adjacent form; this does not supersede those, distinct sense.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "she can cook",
+    "garo": "Ua Song·na man·a.",
+    "category": "general",
+    "pos": null,
+    "notes": "variant/VERIFIED/HIGH — NV-162 (2026-09-22, Thangseng direct WhatsApp confirmation, relayed by Tridip/Project Owner, 11:47am/12:02pm): Thangseng directly confirmed 'Ua Song·na ama.' / 'Ua Song·na man·a.' both correct for 'She can cook.' Closes the composed-but-unconfirmed candidate flagged in the 2026-09-21B session (built by rule composition — RULE-009 -na infinitive + RULE-050 ama/man·a synonymy — but deliberately not filed VERIFIED on Claude A's own inference at the time). Also the first native-verified bare-verb infinitive citation for the 'cook' (song-) root — the noun Song·timgipa/song·a (occupation sense) was the only prior native-adjacent form; this does not supersede those, distinct sense. Tagged variant, tied with the ama form above — both equally correct per Thangseng, no preference stated.",
+    "confidence": "verified_high"
   }
 ]

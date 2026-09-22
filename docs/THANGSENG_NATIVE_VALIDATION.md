@@ -7445,3 +7445,42 @@ Three-item batch, terse word-gloss(POS) format:
 word-gloss(POS) format used throughout this doc for direct Thangseng
 answers; treated as native evidence per standing practice, not a
 Project Owner directive.
+
+## NV-162 (2026-09-22, Thangseng direct WhatsApp confirmation, relayed by Tridip)
+
+**Transcript (11:47am/12:02pm, 22/9/2026):**
+> [Tridip:] Ua Song·na ama. / Ua Song·na man·a. — "She can cook." Just
+> check this one … it's logic based sentence
+> [Thangseng:] Ua Song·na ama. / Ua Song·na man·a. — "She can cook."
+> These are both correct...
+
+**Action:** added `she can cook` -> `Ua Song·na ama.` and
+`Ua Song·na man·a.` as two tied `variant/VERIFIED/HIGH` rows (same
+RULE-050 tie-tagging pattern as the eat/go/work ama-man·a rows).
+
+This closes the item flagged in `CLAUDE_A_SESSION_MIGRATION_20260921B.md`'s
+"Next Recommended Tasks" #1: that session composed this exact sentence
+by rule (RULE-009 `-na` infinitive + RULE-050 `ama`/`man·a` synonymy)
+to demonstrate the modal-drop gap to the Project Owner, but explicitly
+did NOT file it — an engine-composed candidate isn't itself native
+evidence. It now is. This is also the first native-verified bare-verb
+infinitive citation for the `song-` ("cook") root — previously only
+the occupation noun `Song·timgipa`/`song·a` had any native-adjacent
+standing (the 2026-09-21B session's live demo showed `translate("she
+can cook")` mis-picking that noun sense). Does not supersede the noun
+forms, distinct sense.
+
+**Not resolved here (engine territory, restated):** the general
+`[Verb-na] ama/man·a` modal composition still has no engine
+implementation — `translate("she can cook")` still ships
+`Ua Song·timgipa` (noun mis-pick) until Claude B implements RULE-050
+against unseeded verbs. This new row does not change that; it only
+gives the engine (once fixed) a directly-confirmed target to check
+its output against, on top of RULE-009+RULE-050's compositional
+derivation.
+
+**Also this session (NV-161 addendum):** `early`=`Seng·gnang`,
+`empty`=`Bangbang`, `lie`/`tol·a` (as in telling a lie) were re-sent
+in this same message — checked against the repo, all three were
+already closed via NV-156 (2026-09-12) and are live/correct, no
+action needed.
