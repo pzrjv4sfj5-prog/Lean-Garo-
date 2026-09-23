@@ -3417,7 +3417,8 @@
     "english": "to cook",
     "garo": "Song·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "PROMOTED 2026-09-23 (Claude A, Project Owner direct correction this session): the bare key 'Cook' collided two distinct English senses (agent-noun 'a cook'/person who cooks vs. verb 'to cook') under one ambiguous headword, and pickPrimary was arbitrarily tie-breaking between their two tied VERIFIED/HIGH candidates (Song·timgipa, song·a), surfacing the wrong one for the far more common verb usage. from unverified. Corroborated by the extensive already-VERIFIED/HIGH song- root paradigm already in the dictionary: Song·bo (idx 8607, NV-154), Song·ahama?/Song·engama?/Song·ama? (idx 8608-8610, NV-154), Song·gen (idx 8611), Song·aha (idx 9274/9285, NV-093/NV-095), Song·enga (idx 8606/9286, NV-095) — this bare infinitive is the same root cited throughout that paradigm, not a new/unconfirmed claim."
   },
   {
     "english": "to fry",
@@ -17477,21 +17478,21 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Cook",
+    "english": "a cook (person who cooks)",
     "garo": "Song·timgipa",
-    "pos": null,
+    "pos": "n.",
     "category": "food",
     "classifier": null,
-    "notes": "VERIFIED/HIGH v:Song·a / song·-a",
+    "notes": "2026-09-23 (Claude A, Project Owner direct correction this session): the bare key 'Cook' collided two distinct English senses (agent-noun 'a cook'/person who cooks vs. verb 'to cook') under one ambiguous headword, and pickPrimary was arbitrarily tie-breaking between their two tied VERIFIED/HIGH candidates (Song·timgipa, song·a), surfacing the wrong one for the far more common verb usage. This entry (the -gipa agentive/nominalizer form) is the person/agent-noun sense ('one who cooks') and now keys under this disambiguated English gloss rather than bare 'cook'/'Cook'. Original notes: 'VERIFIED/HIGH v:Song·a / song·-a' (cross-referenced the verb form, now split out separately as 'to cook').",
     "confidence": "verified_high"
   },
   {
-    "english": "Cook",
+    "english": "to cook",
     "garo": "song·a",
-    "pos": null,
+    "pos": "v.",
     "category": "food",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "2026-09-23 (Claude A, Project Owner direct correction this session): the bare key 'Cook' collided two distinct English senses (agent-noun 'a cook'/person who cooks vs. verb 'to cook') under one ambiguous headword, and pickPrimary was arbitrarily tie-breaking between their two tied VERIFIED/HIGH candidates (Song·timgipa, song·a), surfacing the wrong one for the far more common verb usage. This entry (variant/VERIFIED/HIGH) is the verb sense and now keys under 'to cook' alongside idx 506, rather than the ambiguous bare 'Cook'. Bare 'cook' will resolve via the bare-infinitive alias generator (prepare-data.js) once no longer directly populated by the agent-noun sense, correctly landing on this verb value.",
     "confidence": "verified_high"
   },
   {
@@ -78230,5 +78231,133 @@
     "pos": "n.",
     "confidence": "unverified",
     "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' hand-noun prefix entry (idx 9950, print dictionary, page 96, spelled 'jatmatchi' in source). FLAGGED not merged: existing 'pulse' candidates are 'dail' (idx 5170, unverified) and 'jak·mit·chi' (idx 5171, variant/unverified/high) — Jatmatchi may be an orthographic variant of jak·mit·chi (jak-mit-chi vs jat-mat-chi) but the source spelling diverges in more than raka placement, so not force-merged; added as a coexisting unverified variant per evidence-first/never-guess norm."
+  },
+  {
+    "english": "short of hearing",
+    "garo": "Nagok",
+    "category": null,
+    "pos": "adj.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). FLAGGED: the same headword's other listed sense, 'deaf', is NOT added here — 'na·gok' already exists in the corpus (idx 2675) SUPERSEDED, explicitly not-selected by native relay NV-080 (2026-08-17, Thangseng): native-confirmed 'deaf' is 'Nachil-kala'. This narrower 'short of hearing' sense is distinct from the rejected general 'deaf' sense and wasn't itself addressed by NV-080, so added as new, but flagged given the adjacent history."
+  },
+  {
+    "english": "betelnut",
+    "garo": "Gue",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). FLAGGED not merged: existing 'Betelnut.'='Gua' (idx 7613, unverified) is a close spelling variant — possible same word, not force-merged per evidence-first/never-guess norm; added as a coexisting unverified variant."
+  },
+  {
+    "english": "to play hide and seek",
+    "garo": "Guguka",
+    "category": null,
+    "pos": "v.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). No pre-existing entry."
+  },
+  {
+    "english": "rogue, notorious person",
+    "garo": "Gunda",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). FLAGGED not merged: existing 'rogue'='mat·te' (idx 5310, unverified) is a distinct word for the overlapping 'rogue' sense — not force-merged; this entry kept as the compound source gloss ('rogue, notorious person') rather than split into 'rogue' alone, to avoid colliding with mat·te under a bare 'rogue' key."
+  },
+  {
+    "english": "a mare",
+    "garo": "Gure bima",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). No pre-existing entry. Compound of 'Gure' (horse; already in corpus, see idx 85/2132, unverified/superseded, VERIFIED/HIGH primary for 'Horse' is 'go·ra' idx 2800) + 'bima'."
+  },
+  {
+    "english": "a mule",
+    "garo": "Gure kotchol",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). No pre-existing entry. Compound of 'Gure' (horse; see idx 85/2132/2800) + 'kotchol'."
+  },
+  {
+    "english": "perhaps, probably, may be — an expression of doubt",
+    "garo": "Haida",
+    "category": null,
+    "pos": "adv.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). CAUTION flagged by Project Owner: an existing entry already references 'Haida' by name for cross-referencing purposes ('same as Haida.'='Ahae', idx 6908) without itself defining it as a headword — this is the first direct definition. Project Owner asked that this be used carefully in the translator and by Claude B (a discourse/modal particle expressing doubt, not a plain lexical substitution) — flagging for Claude B's awareness; not wired into any grammar-assembly default or phrase_maps/corrections override this session."
+  },
+  {
+    "english": "this side, this way",
+    "garo": "Iachioak",
+    "category": null,
+    "pos": "adj.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). FLAGGED not merged: existing 'here (towards/this side)'='Iachi' (idx 8632, VERIFIED/HIGH) may share a root with this longer form — relationship unconfirmed, not merged either direction; added as a coexisting unverified variant."
+  },
+  {
+    "english": "here it is",
+    "garo": "Iake",
+    "category": null,
+    "pos": "excl.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). No pre-existing entry."
+  },
+  {
+    "english": "this and that, also",
+    "garo": "Iaba uaba",
+    "category": null,
+    "pos": "pr.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). FLAGGED not merged: existing 'this and that'='nang·a·nang·ja' (idx 5845, unverified) is a distinct word for the same gloss — not force-merged; added as a coexisting unverified variant."
+  },
+  {
+    "english": "the same, no change",
+    "garo": "Ian bae bae",
+    "category": null,
+    "pos": "adj.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). FLAGGED not merged: existing 'Same, no change'='Bae bae' (idx 6693, unverified; see also idx 6694 'in the same state as before.'='Bae bae') is the same root without the 'Ian' element — relationship unconfirmed (possible demonstrative-prefixed form of the same word), not merged; added as a coexisting unverified variant."
+  },
+  {
+    "english": "this time",
+    "garo": "Ianpako",
+    "category": null,
+    "pos": "adj.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). No pre-existing entry."
+  },
+  {
+    "english": "account",
+    "garo": "Hisab",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). FLAGGED not merged: existing 'account'='Chanani' (idx 7387, unverified) is a distinct word for the same gloss — not force-merged; added as a coexisting unverified variant. ('Hisab' resembles the common Assamese/Bengali/Urdu loanword for 'account', plausible as a borrowing, unconfirmed.)"
+  },
+  {
+    "english": "diamond",
+    "garo": "Hira",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). No pre-existing entry."
+  },
+  {
+    "english": "Hilsa fish",
+    "garo": "Hilsa Na·tok",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). No pre-existing entry for this species-specific compound. Compound of the loanword 'Hilsa' + 'Na·tok' (fish; already VERIFIED/HIGH generic term, idx 2737)."
+  },
+  {
+    "english": "snoring",
+    "garo": "Hirgok",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "2026-09-23 (Claude A, Project Owner direct submission this session, print dictionary pages 92/94). No pre-existing entry."
   }
 ]

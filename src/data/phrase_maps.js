@@ -326,7 +326,7 @@ export const PHRASE_MAPS = {
   'throw': 'Gal·a / Goata',
   'catch': 'rim·a',
   'wash': 'Su·sranga',
-  'cook': 'Song·timgipa',
+  'cook': 'song·a',
   'fry': 'Jo·a',
   'boil': 'Rita',
   'cut': 'Den·a',
