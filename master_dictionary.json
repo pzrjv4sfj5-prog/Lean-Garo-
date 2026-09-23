@@ -78110,14 +78110,14 @@
     "garo": "Jak..",
     "category": null,
     "pos": "prefix",
-    "notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Source gives worked examples under this prefix: e·sal kingsa = a leaf of plantain tree; ki·tapni jaksa = one page of a book; pan jaksa = one betel-leaf. Examples not split into standalone headword rows - that would require judgment Claude D does not make."
+    "notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Source gives worked examples under this prefix: e·sal kingsa = a leaf of plantain tree; ki·tapni jaksa = one page of a book; pan jaksa = one betel-leaf. RESOLVED 2026-09-23 (Claude A): all 3 worked examples split into standalone headword rows (see 'a leaf of plantain tree'/'one page of a book'/'one betel-leaf', new entries this session). See docs/CLAUDE_A_SESSION_MIGRATION_20260923.md."
   },
   {
     "english": "A prefix added to nouns meaning hand.",
     "garo": "Jak..",
     "category": null,
     "pos": "prefix",
-    "notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Second, distinct 'Jak..' prefix entry on same source line group as the leaves/pages prefix above - two prefix senses sharing the same headword string. Worked examples given: jatmatchi = pulse; jakpa (n.) = palm; jaksi = finger; jakchimita = sleeping of the hand; jakpong = Arm; jaksrama = liberal, generous; jaktuata = to slip from the hand. Examples not split into standalone headword rows."
+    "notes": "[Requires manual review: entry_type unclear, not classified as lexical/affix by Claude D] Second, distinct 'Jak..' prefix entry on same source line group as the leaves/pages prefix above - two prefix senses sharing the same headword string. Worked examples given: jatmatchi = pulse; jakpa (n.) = palm; jaksi = finger; jakchimita = sleeping of the hand; jakpong = Arm; jaksrama = liberal, generous; jaktuata = to slip from the hand. RESOLVED 2026-09-23 (Claude A): 5 of 7 worked examples split into standalone headword rows (sleeping of the hand/Jakchimita; to slip from the hand/Jaktuata; liberal-generous/Jaksrama [coexisting variant, not merged with VERIFIED 'generous'=al·nama]; arm/Jakpong [coexisting variant, not merged with unverified 'arm'=jak]; pulse/Jatmatchi [coexisting variant, not merged with unverified 'pulse'=jak·mit·chi]). 2 of 7 (jakpa=palm, jaksi=finger) were NOT added as new rows — both are exact-value duplicates of already-existing entries ('palm'=jak·pa idx 4967, 'finger'=jak·si idx 4172), nothing new to add. See docs/CLAUDE_A_SESSION_MIGRATION_20260923.md."
   },
   {
     "english": "As thick or big as the biceps or arm.",
@@ -78166,5 +78166,69 @@
     "garo": "Jak on·paa",
     "category": null,
     "pos": "vi."
+  },
+  {
+    "english": "a leaf of plantain tree",
+    "garo": "E·sal kingsa",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' leaves/pages prefix entry (idx 9949, print dictionary, page 96). No pre-existing dictionary entry for this specific gloss (checked against 'leaf'=Bijak/bi·jak/bol·bi·jak, a different general sense) — not a duplicate."
+  },
+  {
+    "english": "one page of a book",
+    "garo": "Ki·tapni jaksa",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' leaves/pages prefix entry (idx 9949, print dictionary, page 96). No pre-existing 'page' dictionary entry found (checked against 'turn (page/sheet)'=Badala, a distinct verb sense) — not a duplicate."
+  },
+  {
+    "english": "one betel-leaf",
+    "garo": "Pan jaksa",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' leaves/pages prefix entry (idx 9949, print dictionary, page 96). No pre-existing dictionary entry for this gloss (checked against 'Betelnut'=Gua, 'A compound of betel-nut, betel leaf and lime'=Gua·keli — both distinct senses) — not a duplicate."
+  },
+  {
+    "english": "sleeping of the hand",
+    "garo": "Jakchimita",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' hand-noun prefix entry (idx 9950, print dictionary, page 96) — the numbness/pins-and-needles sensation. No pre-existing dictionary entry found — not a duplicate."
+  },
+  {
+    "english": "to slip from the hand",
+    "garo": "Jaktuata",
+    "category": null,
+    "pos": "v.",
+    "confidence": "unverified",
+    "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' hand-noun prefix entry (idx 9950, print dictionary, page 96). No pre-existing dictionary entry found — not a duplicate."
+  },
+  {
+    "english": "liberal, generous",
+    "garo": "Jaksrama",
+    "category": null,
+    "pos": "adj.",
+    "confidence": "unverified",
+    "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' hand-noun prefix entry (idx 9950, print dictionary, page 96). FLAGGED not merged: 'generous' already has a VERIFIED/HIGH primary (al·nama, idx 2755) plus 2 unrelated SUPERSEDED candidates (On·a·nakgipa idx 905, Chanchininggipa idx 7418) — Jaksrama is a distinct, uncited fourth candidate, added as a coexisting unverified variant, not selected as primary, per evidence-first/never-guess norm."
+  },
+  {
+    "english": "arm",
+    "garo": "Jakpong",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' hand-noun prefix entry (idx 9950, print dictionary, page 96). FLAGGED not merged: an existing bare 'arm'='jak' (idx 3295, unverified) may be a root of this fuller form, or a distinct/looser gloss — relationship unconfirmed, no evidence to merge or supersede either way; added as a coexisting unverified variant."
+  },
+  {
+    "english": "pulse",
+    "garo": "Jatmatchi",
+    "category": null,
+    "pos": "n.",
+    "confidence": "unverified",
+    "notes": "Claude A, 2026-09-23 session: worked-example split from the page-96 'Jak..' prefix entries (docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md 'Next Recommended Tasks' item 1). Worked example under the 'Jak..' hand-noun prefix entry (idx 9950, print dictionary, page 96, spelled 'jatmatchi' in source). FLAGGED not merged: existing 'pulse' candidates are 'dail' (idx 5170, unverified) and 'jak·mit·chi' (idx 5171, variant/unverified/high) — Jatmatchi may be an orthographic variant of jak·mit·chi (jak-mit-chi vs jat-mat-chi) but the source spelling diverges in more than raka placement, so not force-merged; added as a coexisting unverified variant per evidence-first/never-guess norm."
   }
 ]
