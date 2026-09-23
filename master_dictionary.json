@@ -1938,7 +1938,7 @@
     "english": "mirror",
     "garo": "Janera",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'mirror' has VERIFIED/HIGH form(s) ['ai·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'mirror' has VERIFIED/HIGH form(s) ['ai·na']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. CORROBORATED 2026-09-23 (Claude A, Project Owner direct re-confirmation this session, print dictionary page 92): spelling confirmed as 'Janera' (an earlier same-session message read 'janara', corrected by Project Owner as a typo). Status unchanged — still SUPERSEDED for compile purposes, VERIFIED/HIGH primary remains 'ai·na' (idx 2863); this only confirms 'Janera' itself is a genuine, correctly-spelled word already on file, not a request to promote it over ai·na.",
     "confidence": "superseded"
   },
   {
