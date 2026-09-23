@@ -1,5 +1,5 @@
 repository:
-  head: c6de365
+  head: 2c94c2d
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,7 +313,50 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-22B (Claude A, session complete -- see
+  next_action: '2026-09-23 (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260923.md for full detail, this
+    is a pointer only, resumed as "Claude A" from
+    docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md via a fresh clone +
+    live-pasted PAT). Resync found 3 commits of drift, all pure
+    session-close documentation (Claude A''s own prior post-close
+    note; Claude B''s 20260923 session-close doc, that session''s
+    actual code/data work already landed at c6de365 before this;
+    Claude D''s 2026-09-22B session-close doc, that session''s actual
+    OCR work already landed at 95afb61, already accounted for) -- no
+    code/data drift, gate reconfirmed green (8874/8874, 458/458).
+    Worked Next Recommended Task #1: split the two page-96 "Jak.."
+    prefix entries'' worked examples into standalone headword rows.
+    Leaves/pages prefix (idx 9949): all 3 examples split, none
+    pre-existing (a leaf of plantain tree->E·sal kingsa, one page of
+    a book->Ki·tapni jaksa, one betel-leaf->Pan jaksa). Hand-noun
+    prefix (idx 9950): 2 of 7 examples were exact-value duplicates of
+    already-existing entries, not re-added (jaksi=finger already
+    jak·si idx 4172; jakpa=palm already jak·pa idx 4967); 5 split
+    into new rows (sleeping of the hand->Jakchimita, to slip from the
+    hand->Jaktuata, liberal/generous->Jaksrama [coexisting unverified
+    variant, generous keeps its VERIFIED/HIGH primary al·nama
+    unchanged], arm->Jakpong [coexisting unverified variant of bare
+    arm=jak, relationship unconfirmed, not merged], pulse->Jatmatchi
+    [coexisting unverified variant of jak·mit·chi, possible
+    orthographic relation flagged not merged]). Updated both source
+    prefix entries'' notes to record the split so the deferred-task
+    marker doesn''t re-trigger. Checked the "market is nearby"
+    orthography item from the prior session''s open-item list --
+    already fully closed by Claude B''s NV-164 (c6de365, landed before
+    this session started), nothing left for Claude A. 1 new Check C
+    conflict (arm: jak/Jakpong), allowlisted in
+    known_dictionary_conflicts.json citing this session. Gate green
+    throughout: 8881/8881 dictionary (+7 unique keys, confirmed by
+    direct compiled_dict.json diff), 9/9 grammatical corrections,
+    458/458 unit tests, 0 new repository-intelligence violations. All
+    8 new keys plus generous/finger/palm live-verified via
+    translate() post-build. No engine code touched, no Claude B
+    handoff this session. Pushed clean, final HEAD 2c94c2d, verified
+    == origin/main. Still open, unstarted: unsent Thangseng relay
+    drafts (20260920/B/C), POS collision-set backfill, ~15 remaining
+    pickPrimary verified-ties (none urgent, all already ship
+    VERIFIED/HIGH values).'
+  next_action_prior_20260922B: '2026-09-22B (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md for full detail, this
     is a pointer only, resumed as "Claude A" from
     docs/CLAUDE_A_SESSION_MIGRATION_20260922.md via a fresh clone +
