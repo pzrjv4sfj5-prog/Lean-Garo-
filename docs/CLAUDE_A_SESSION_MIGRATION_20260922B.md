@@ -118,17 +118,20 @@ found or implicated by this batch.
 
 ## Repository status at close
 
-- HEAD: `5b7c9bd`
+- HEAD: `c6de365` (fast-forwarded post-close: Claude B pushed `c6de365`
+  — NV-164 "market is nearby" resolution — after this session's own
+  push landed at `c36be6f`; no Claude A work involved, pure resync)
 - `origin/main`: verified match via `git fetch` + `git rev-parse`
 - `git status`: clean, no uncommitted changes
-- `WORKSTATE.yaml`: updated (`repository.head`, `claude_a.next_action`
-  updated, prior renamed `next_action_prior_20260922`) — validated as
-  parseable YAML post-edit
-- `SESSION_BOOTSTRAP.md`: updated (new dated section appended)
+- `WORKSTATE.yaml`: `repository.head` updated to `c6de365` to match;
+  `claude_a.next_action` unchanged (still describes this session's
+  actual work, above)
+- `SESSION_BOOTSTRAP.md`: unchanged (no new Claude A work to record)
 - Migration doc: this file, complete
 - No local commits ahead of origin
 - No uncommitted changes
 - Native-validation status: no blockers; unsent relay drafts noted in
   Next Recommended Tasks #2
-- Gate at close: 8874/8874 dictionary, 9/9 grammatical corrections,
-  458/458 unit tests, 0 new repository-intelligence violations
+- Gate re-verified clean at this final HEAD: 8874/8874 dictionary,
+  458/458 unit tests, 0 new repository-intelligence violations,
+  rebuild (`prepare-data.js`) produced zero diff
