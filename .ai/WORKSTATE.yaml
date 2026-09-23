@@ -5927,7 +5927,7 @@ claude_d:
     re-verified the full gate clean twice as your b158512 (pos-array fix) and 7a906e9 (findVerbForm -ed
     fallback) landed -- no regressions traced to either, 458/458 tests, 0 new repository-intelligence.js
     violations. Full session account: docs/CLAUDE_D_MIGRATION_20260922.md.'
-  next_action: '2026-09-12 session complete -- see docs/CLAUDE_D_SESSION_MIGRATION_20260912.md for full
+  next_action_prior_20260912: '2026-09-12 session complete -- see docs/CLAUDE_D_SESSION_MIGRATION_20260912.md for full
     detail, this is a pointer only. Session covered: forensic segregation audit rebuilt from scratch
     (audit/segregation/build_segregation.py, prior tooling confirmed never pushed to origin/main), two
     full 16-section forensic-analysis passes for the Project Owner directive + refresh, evidence packages
@@ -5971,6 +5971,33 @@ claude_d:
     showed more line churn than expected from line-alignment shift around the deletion block -- confirmed
     clean before committing. 9829 -> 9636 records, hash d8e0af35...->2f00c4e3.... Commit 61a4e1a. No
     action needed from A/B.'
+  next_action: 'session complete 2026-09-22B -- see docs/CLAUDE_D_MIGRATION_20260922B.md
+    for full detail, this is a pointer only. Resumed as "Claude D" from
+    docs/CLAUDE_D_MIGRATION_20260922.md via a fresh clone + live-pasted PAT. Resync found
+    5 commits of drift (2 Claude A, 1 Claude B, then this session''s own page-96 OCR
+    handoff (95afb61) plus Claude A''s same-day import/promotion of it (c36be6f), then 1
+    more Claude B commit) -- gate reconfirmed green (8874/8874, 458/458) both on arrival
+    and again at close. Transcribed page 96 of the physical dictionary from two uploaded
+    photographs (page 95, uploaded alongside it, correctly recognized as already fully
+    processed 2026-07-25 and not re-touched, per the ingestion contract''s pre-flight
+    check). 40 flat rows from 39 source lines; exact-string audit against master +
+    pending found 0 exact duplicates and 6 Garo-normalized possible conflicts, dropped
+    whole per Owner ruling this session (master wins on any Garo-form overlap, even
+    where the new gloss carries senses master doesn''t have yet -- those are discarded
+    too, not merged). Owner additionally removed 2 more by direct chat review
+    (Jaguala/''to forget''; Jakam-Jakgamsa/incomplete). 32 entries staged to
+    data/claude_d/ready_for_a/page_0096_deduplicated.json with 2 flagged for Claude A''s
+    judgment (Jak.. prefix pair; Jajabitbatgija/Jajagija-bitbatgija near-dup) -- both
+    resolved by Claude A same session, all 32 promoted, 0 skipped (see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md). Pushed clean as 95afb61 after one
+    clean rebase (zero file overlap with the concurrent commit). Full build pipeline
+    (npm run build) + scripts/runtime-error-sweep.mjs (15,821 translate()/API calls)
+    re-run fresh at session close against final origin/main state: 0 errors, 0 new
+    repository-intelligence violations, 0 resync candidates, vite build clean. No engine
+    code touched, no master_dictionary.json writes (Claude D never writes there
+    directly) -- role boundary held throughout. PAT reused across this session''s two
+    pushes per governance_note_2 below (rotation is the Owner''s call, not enforced
+    here).'
   pending_handoff_from_claude_a_20260912: 'Claude A (2026-09-12, docs-only session, found while
     re-verifying gate before an unrelated commit): Batch 6''s deletion (commit 61a4e1a) unmasked
     a live regression -- 3 keys (two cars, twenty students, six dogs) started shipping garbled
