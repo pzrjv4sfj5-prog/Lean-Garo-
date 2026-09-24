@@ -2855,3 +2855,48 @@ pair, allowlisted with citation. Gate green throughout post-fix:
 tests, 0 new repository-intelligence violations. No Claude B handoff
 this session. Pushed clean, HEAD `5b7c9bd`, verified ==
 origin/main. Full detail: `docs/CLAUDE_A_SESSION_MIGRATION_20260922B.md`.
+
+## 2026-09-24 (Claude A) — "last" sense-split, POS collision-set report, animal->Jontu
+
+Resumed from a Project Owner-named `docs/CLAUDE_A_SESSION_MIGRATION_20260923.md`
+(an early-day doc in the 2026-09-23 chain, superseded same-day by
+sessions B/C already reflected in WORKSTATE.yaml). Resync found one
+downstream commit not yet seen: Claude B's `a9adc4b` (has/have
+NP-subject word-order fix, `grammarEngine.js` only). Gate reconfirmed
+green on arrival: 8899/8899 dictionary, 9/9, 458/458, 0 new
+violations.
+
+Closed Next Recommended Task #2 (POS collision-set) from the
+2026-09-23C doc: `docs/POS_COLLISION_SET_20260924.md` — grouped
+`master_dictionary.json` by English key, found 4 genuine noun/verb
+sense collisions (demand, hire, hope, to blaze), live-checked as
+currently resolving to the correct sense (report only, no dictionary
+edit; lower-priority adj/adv pairs and label-only noise excluded).
+
+Quick pass on the 20-item `docs/PICKPRIMARY_VERIFIED_TIES.md`
+backlog: 19 confirmed genuine tied-variant pairs (matches the doc's
+own "not a defect" framing, no action). "last" was the one real gap —
+NV-082 already distinguishes `bon·kamgipa` (ordinal, "last page")
+from `ja·mangipa` (the specific one/person), but both were only filed
+under ambiguous bare "last". Split into `last (ordinal, e.g. last
+page)` and `last (the specific one/person)` as their own sense-labeled
+headwords citing NV-082 (a filing fix, no new native evidence, same
+shape as the earlier "cook" split). Bare "last" left unchanged,
+still a genuine tie. Flagged the uncited `variant/VERIFIED/HIGH` tags
+on "last"->`bai·a` and "last"->`ses` for future citation lookup — not
+resolved.
+
+Added `animal`->`Jontu`, verified_high, Project Owner relay from
+Thangseng (2026-09-24, direct chat statement, no transcript, per
+`.ai/PROJECT_OWNER_AUTHORITY.md`) — fills a real gap, both prior
+"animals" rows (`do·omat`, `mang·`) were unverified.
+
+Zero-runtime-error sweep clean: 15866/15866 `translate()` calls, 0
+errors. Gate green throughout and at close: 8902/8902 dictionary,
+9/9 grammatical corrections, 458/458 unit tests, 0 new
+repository-intelligence violations. One push collision (Claude B's
+own docs-only session-close, `15551f3`, zero file overlap) — rebased
+clean, rebuilt, gate re-verified green post-rebase. No Claude B
+runtime handoff this session. Pushed clean, HEAD `46aa62f` (pre-close
+commit), verified == origin/main. Full detail:
+`docs/CLAUDE_A_SESSION_MIGRATION_20260924.md`.
