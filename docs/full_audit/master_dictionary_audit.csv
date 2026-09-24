@@ -600,7 +600,7 @@ index,english,garo,category,notes,verification_tag,flags
 3177,Cook,song·a,food,variant/VERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 3178,Cough,bu·su·a,health,variant/VERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 3179,Count,chan·a,uncategorized,variant/VERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
-3180,Cow,ma·su,animals,variant/VERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
+3180,Cow,Matchu,animals,variant/VERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 3181,Crab,hang·ki,animals,variant/VERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 3182,Crawl,mal·a,uncategorized,variant/VERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 3183,Crawl,mal·am·a,uncategorized,variant/VERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
@@ -1330,7 +1330,7 @@ index,english,garo,category,notes,verification_tag,flags
 4102,bus,bas,travel,UNVERIFIED/HIGH v:ga-ri,VERIFIED/HIGH,DUPLICATE_KEY
 4103,bus,ga·ri,travel,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4112,calf,ba·sur,animals,UNVERIFIED/HIGH v:ma·-su gen-da,VERIFIED/HIGH,DUPLICATE_KEY
-4113,calf,ma·su gen·da,animals,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
+4113,calf,Matchu gen·da,animals,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4114,call,don·a,uncategorized,UNVERIFIED/HIGH v:ming-a / ok-gam-a / pe·-a,VERIFIED/HIGH,DUPLICATE_KEY
 4115,call,ming·a,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4116,call,ok·gam·a,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
@@ -1361,8 +1361,8 @@ index,english,garo,category,notes,verification_tag,flags
 4167,caterpillar,jong·sip·in,uncategorized,UNVERIFIED/HIGH v:jong·-su / mang-tip,VERIFIED/HIGH,DUPLICATE_KEY
 4168,caterpillar,jong·su,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4169,caterpillar,mang·tip,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
-4170,cattle,ma·su,uncategorized,UNVERIFIED/HIGH v:ma·-su mat-ti,VERIFIED/HIGH,DUPLICATE_KEY
-4171,cattle,ma·su mat·ti,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
+4170,cattle,Matchu,uncategorized,UNVERIFIED/HIGH v:ma·-su mat-ti,VERIFIED/HIGH,DUPLICATE_KEY
+4171,cattle,Matchu mat·ti,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4175,centipede,mang·gu·ak,uncategorized,UNVERIFIED/HIGH v:sin-a-ru,VERIFIED/HIGH,DUPLICATE_KEY
 4176,centipede,sin·a·ru,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4183,channel,chi·ret,uncategorized,UNVERIFIED/HIGH v:dren,VERIFIED/HIGH,DUPLICATE_KEY
@@ -1561,7 +1561,7 @@ index,english,garo,category,notes,verification_tag,flags
 4573,dull,chat·a,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4577,dung,gu·bol,uncategorized,UNVERIFIED/HIGH v:ke·-em-a / ma·-su-ke·-em-a,VERIFIED/HIGH,DUPLICATE_KEY
 4578,dung,ke·em·a,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
-4579,dung,ma·su·ke·em·a,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
+4579,dung,Matchu·ke·em·a,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4583,dust,dul·a,uncategorized,UNVERIFIED/HIGH v:ha·-gin-dil-a,VERIFIED/HIGH,DUPLICATE_KEY
 4584,dust,ha·gin·dil·a,uncategorized,variant/UNVERIFIED/HIGH,VERIFIED/HIGH,DUPLICATE_KEY
 4586,dwell,dong·a,uncategorized,UNVERIFIED/HIGH v:dong-chak-a / dong-dam-a,VERIFIED/HIGH,DUPLICATE_KEY
