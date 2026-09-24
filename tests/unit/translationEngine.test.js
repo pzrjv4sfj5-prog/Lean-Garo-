@@ -465,7 +465,16 @@ test('number word is never picked as the verb; "has" resolves as an irregular fo
   // agrees unambiguously (2 entries, one VERIFIED/HIGH) that "two dogs"
   // is 'achak manggni' (achak = dog). This assertion was locking in the
   // bug; the verb-guard behavior under test here is unaffected.
-  assert.equal(r.garo, 'Ua achak manggni·ko donga');
+  // UPDATED (2026-09-24, Claude B, Project Owner directive relaying
+  // Thangseng-confirmed native evidence): 'achak manggni·ko donga' locked
+  // in the pre-existing ordinary-transitive-object marker pattern, which
+  // the "the boy has a dog" -> "Me·a bi·sao achak donga" citation shows
+  // is wrong for this verb — "has/have" is existential possession
+  // (possessor takes locative -o, possessed object is bare), not a
+  // transitive accusative-object construction. See sentenceBuilder.js
+  // assembleGrammar's isPossessionConstruction comment for the full
+  // citation and scope of that fix.
+  assert.equal(r.garo, 'Uao achak manggni donga');
 });
 
 // --- Second half of the same 2026-07-13 fix's benchmark claim ("exactly
@@ -1366,7 +1375,12 @@ test('"she/he has N children" applies the sak (person) classifier instead of sil
 test('"she has N children" for counts without a corrections.json entry still applies the classifier via grammar-assembly', async () => {
   const result = await translate('she has five children');
   assert.equal(result.method, 'grammar-assembly');
-  assert.equal(result.garo, 'Ua bi·sa sakbonga·ko donga');
+  // UPDATED (2026-09-24, Claude B, Project Owner directive relaying
+  // Thangseng-confirmed native evidence): see the "he has two dogs" test
+  // above for the same existential-possession fix (possessor -o,
+  // possessed object bare) — 'sakbonga·ko' locked in the ordinary
+  // transitive-object marker pattern this fix corrects.
+  assert.equal(result.garo, 'Uao bi·sa sakbonga donga');
   assert.ok(!result.garo.includes('bi·sarang'), 'should not fall back to the bare plural noun with no classifier');
 });
 
@@ -2265,4 +2279,33 @@ test('NV-120 regression guard: both existing exact-phrase citations are untouche
 test('NV-120 regression guard: the possessive variant ("have you eaten your lunch?") is unattested territory and is deliberately NOT fixed — still falls through to the pre-existing broken sov-assembly path rather than being guessed', async () => {
   const r = await translate('have you eaten your lunch?');
   assert.notEqual(r.method, 'polar-question-construction');
+});
+
+// --- Existential-possession construction fix (2026-09-24, Claude B,
+// Project Owner directive relaying Thangseng-confirmed native evidence,
+// no separate proof gate required per .ai/PROJECT_OWNER_DIRECTIVE_
+// PROTOCOL.json). "SUBJ has OBJECT" is existential possession in Garo
+// ("at-SUBJ OBJECT exists"), not a transitive-object construction: the
+// possessor takes locative -o (appended directly, no '·'), the possessed
+// object is bare (no '·ko'). Direct citation: "the boy has a dog" ->
+// "Me·a bi·sao achak donga". See sentenceBuilder.js assembleGrammar's
+// isPossessionConstruction for full scope/citation.
+test('NV-165 existential-possession construction: "the boy has a dog" takes possessor -o and bare object, not the ordinary transitive accusative pattern', async () => {
+  const r = await translate('the boy has a dog');
+  assert.equal(r.method, 'grammar-assembly');
+  assert.equal(r.garo, 'me\u00b7a bi\u00b7sao achak donga');
+});
+
+test('NV-165 regression guard: the fix is scoped to has/have+donga and does not fire on an ordinary transitive verb with the same NP-subject shape', async () => {
+  const r = await translate('the boy sees a dog');
+  assert.ok(!r || !r.garo || !/o achak donga$/.test(r.garo), 'ordinary transitive verb must not pick up the possessor -o / bare-object pattern');
+});
+
+test('NV-165 regression guard: possessive object ("the boy has his dog") is a distinct construction and is deliberately left untouched by this fix', async () => {
+  const r = await translate('the boy has his dog');
+  // Untouched means: the ordinary possessive+accusative-object pattern
+  // (subject bare, object '·ko'-marked) still applies — the new
+  // possessor -o / bare-object rule does not fire when grammar.possessive
+  // is present, since that combination has no citation on record.
+  assert.equal(r.garo, 'me\u00b7a bi\u00b7sa Uni achak\u00b7ko donga');
 });

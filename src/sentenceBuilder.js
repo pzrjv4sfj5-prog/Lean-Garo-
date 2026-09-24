@@ -318,7 +318,37 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
 export function assembleGrammar(grammar, allowUnknown = false) {
   if (!grammar || !grammar.subject) return null;
   const parts = [];
-  parts.push(grammar.subject.garo);
+  // Existential-possession construction fix (2026-09-24, Claude B,
+  // Project Owner directive relaying Thangseng-confirmed native evidence,
+  // no separate proof gate required per .ai/PROJECT_OWNER_DIRECTIVE_
+  // PROTOCOL.json). "SUBJ has OBJECT" is not a transitive-object
+  // construction in Garo — it's existential possession, literally
+  // "at-SUBJ OBJECT exists": the POSSESSOR takes the locative -o
+  // (appended directly, no '·' separator — same convention as the
+  // confirmed "in bed" -> "palango" locative-adjunct case below), and
+  // the possessed OBJECT is bare (no '·ko' accusative marker at all).
+  // Confirmed live citation: "the boy has a dog" -> "Me·a bi·sao achak
+  // donga" (NOT "Me·a bi·sa achak·ko donga", which was this engine's
+  // prior output — the 2026-09-24 has/have coherence fix, commit
+  // a9adc4b, correctly got an NP subject into grammar-assembly for the
+  // first time but defaulted to the ordinary accusative-object marker
+  // pattern, which is wrong specifically for this existential-verb
+  // construction). Scoped narrowly: only fires when the finite verb
+  // resolved to English "has"/"have" AND Garo "donga" (the confirmed
+  // has/have lemma, master_dictionary.json "have"->"donga"), so it
+  // can't misfire on "donga" used as a different sense or on ordinary
+  // transitive verbs. Does not touch grammar.location (a distinct
+  // construction) or grammar.possessive (a distinct "SUBJ's OBJECT"
+  // construction) — this only changes marker placement for the plain
+  // "SUBJ has OBJECT" shape.
+  const isPossessionConstruction = !!(
+    grammar.verb &&
+    grammar.verb.garo === 'donga' &&
+    /^(has|have)$/i.test(grammar.verb.english || '') &&
+    grammar.object &&
+    !grammar.possessive
+  );
+  parts.push(isPossessionConstruction ? grammar.subject.garo + 'o' : grammar.subject.garo);
 
   // Destination/location + -chi marker (docs/BUG_location_noun_dropped.md
   // fix, engine-level 2026-08-12). Placed right after subject, ahead of
@@ -405,7 +435,11 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   // eat rice" -> "Anga mi·ko cha·na ska" (wrong) before this fix. Scoped
   // strictly to purposeAction being present; ordinary direct objects of a
   // finite verb (no purposeAction) are untouched.
-  const objMarker = (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked || grammar.purposeAction) ? '' : '·ko';
+  // isPossessionConstruction (defined above, at subject-push time): the
+  // possessed object in "SUBJ has OBJECT" is bare — no accusative marker
+  // — since the possessor, not the object, carries the case marking in
+  // this existential construction. See comment at parts.push(subject).
+  const objMarker = isPossessionConstruction ? '' : (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked || grammar.purposeAction) ? '' : '·ko';
   if (grammar.possessive && grammar.object) {
     const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
     parts.push(grammar.possessive.garo + ' ' + objText + objMarker);
