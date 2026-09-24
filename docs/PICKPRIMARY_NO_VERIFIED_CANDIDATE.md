@@ -943,7 +943,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `cat meow`: candidates — `Miau·miau` (weak/OCR) — shipped: `Miau·miau`
 - `catch up`: candidates — `katsrap·a` (weak/OCR), `srap·a` (weak/OCR) — shipped: `srap·a`
 - `caterpillar`: candidates — `jong·sip·in` (weak/OCR), `jong·su` (weak/OCR), `mang·tip` (weak/OCR) — shipped: `mang·tip`
-- `cattle`: candidates — `ma·su` (weak/OCR), `ma·su mat·ti` (weak/OCR) — shipped: `ma·su mat·ti`
+- `cattle`: candidates — `ma·su mat·ti` (weak/OCR) — shipped: `ma·su mat·ti`
 - `cattle shed`: candidates — `go·al·i·nok` (weak/OCR) — shipped: `go·al·i·nok`
 - `cause`: candidates — `dil·a` (weak/OCR) — shipped: `dil·a`
 - `cause to curd by heat`: candidates — `Jo·krapa` (weak/OCR) — shipped: `Jo·krapa`
@@ -4073,7 +4073,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the broad beans`: candidates — `Nakap` (weak/OCR) — shipped: `Nakap`
 - `the buffalo`: candidates — `Matma` (weak/OCR) — shipped: `Matma`
 - `the buy`: candidates — `Brea` (weak/OCR) — shipped: `Brea`
-- `the cabbage`: candidates — `Kobi` (weak/OCR) — shipped: `Kobi`
+- `the cabbage`: candidates — `ba·da ko·pi` (weak/OCR), `Kobi` (weak/OCR) — shipped: `Kobi`
 - `the carrot`: candidates — `Kajol` (weak/OCR) — shipped: `Kajol`
 - `the case or suit is in favour of one`: candidates — `Gro nama` (weak/OCR) — shipped: `Gro nama`
 - `the case will be favourably decided.`: candidates — `Gro nama` (weak/OCR) — shipped: `Gro nama`
@@ -4197,7 +4197,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the lower part of the chest just below the breastbone which is a bit depressed`: candidates — `Ka·kol` (weak/OCR) — shipped: `Ka·kol`
 - `the lychee`: candidates — `Letchu` (weak/OCR) — shipped: `Letchu`
 - `the meat or entraila cooked and eaten with or without drink or wine`: candidates — `Kaji` (weak/OCR) — shipped: `Kaji`
-- `the mercy`: candidates — `Ka·sachakani` (weak/OCR) — shipped: `Ka·sachakani`
+- `the mercy`: candidates — `Kema` (weak/OCR), `Ka·sachakani` (weak/OCR) — shipped: `Ka·sachakani`
 - `the monkey`: candidates — `Makre` (weak/OCR) — shipped: `Makre`
 - `the month after next.`: candidates — `Jagital changsa` (weak/OCR) — shipped: `Jagital changsa`
 - `the moon`: candidates — `Jajong` (weak/OCR) — shipped: `Jajong`
@@ -4368,7 +4368,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the wild berry`: candidates — `Bol·meseng` (weak/OCR) — shipped: `Bol·meseng`
 - `the wind`: candidates — `Balwa` (weak/OCR) — shipped: `Balwa`
 - `the work`: candidates — `Dak·a` (weak/OCR) — shipped: `Dak·a`
-- `the worry`: candidates — `Gisik ding·a` (weak/OCR) — shipped: `Gisik ding·a`
+- `the worry`: candidates — `simbraa` (weak/OCR), `Gisik ding·a` (weak/OCR) — shipped: `Gisik ding·a`
 - `the yam`: candidates — `Ta·a` (weak/OCR) — shipped: `Ta·a`
 - `the yellow`: candidates — `Rimit` (weak/OCR) — shipped: `Rimit`
 - `the yes`: candidates — `Oe` (weak/OCR) — shipped: `Oe`

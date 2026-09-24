@@ -12,16 +12,23 @@ DIRECTIVE_PROTOCOL.json` and `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md`
 for the boundary and how directives are handled.
 
 ## Current commit / state
-- HEAD at close: **defab0c** (merge commit; see `.ai/WORKSTATE.yaml`'s
-  `repository.head`) — this doc's own commit lands on top of it.
+- HEAD at close: **d399ecf** (second merge commit; see
+  `.ai/WORKSTATE.yaml`'s `repository.head`) — this doc's own commit
+  lands on top of it.
 - Verified `HEAD == origin/main` after push (check via `git ls-remote`,
   not just push exit code — prior sessions found exit-code-0 false
   positives).
 - Working tree clean at close.
-- Dictionary: 8902/8902 valid entries. Grammatical corrections: 9/9.
-  Unit tests: 461/461. `repository-intelligence.js`: 0 new violations.
-  `scripts/runtime-error-sweep.mjs`: 0 errors across 15866 `translate()`
-  calls.
+- Dictionary: 8901/8901 valid entries. Grammatical corrections: 9/9.
+  Unit tests: **459/461** — 2 failures, both confirmed pre-existing on
+  `origin/main` alone (isolated via a throwaway `git worktree`, not
+  introduced by this session — see "Second merge" section below for
+  full root-cause detail on both). `repository-intelligence.js`: **1
+  pre-existing failure** (Check D, same "Second merge" section), also
+  confirmed pre-existing on `origin/main` alone, not new from this
+  session's own work. `scripts/runtime-error-sweep.mjs`: 0 errors
+  across 15864 `translate()` calls — the actual zero-runtime-error
+  check requested at session close is clean.
 
 ## What's done this session
 **Fixed (commit c77b599, then carried through the merge below):**
@@ -105,7 +112,62 @@ consistency is a dictionary-content call (Claude A's lane per
 `engineering_boundary` in `.ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json`)
 — flagging rather than deciding.
 
-## Merge handled this session
+## Second merge + 2 inherited regressions found (NOT caused by this session's work — verified in isolation)
+A second round of concurrent pushes landed while writing this doc,
+authored directly by "T" (not a Claude agent) — 16 commits, headline
+content: `2583f5a`/`7316262` normalize "child"→`Bi·sa` and other forms
+in `garo_dictionary.json`; `f0a186a`/`c1a720b`/`80c78a0` dedupe "hope"
+duplicate rows; `deb667c`/`5251bdf`/`9f34e12`/`231e12a`/`3985059`
+**remove `ma·su` ("cow") entirely** from the dictionary/compiled/
+phrase-map/runtime data; plus duplicate-census audit docs
+(`cfacd0b`/`c05c2bd`, machine-ready handoffs `9945d8e`/`3a1b168`).
+
+Merged clean (`git merge origin/main`, no conflict markers). Diffed
+file-by-file: only `garo_dictionary.json`, `master_dictionary.json`,
+the 2 generated compiled files, and `src/data/phrase_maps.js` (the
+`cow`/`ma·su` line removed) touched — zero collision with c77b599's
+`sentenceBuilder.js` work. Regenerated compiled files fresh via
+`prepare-data.js` as before.
+
+**Full gate re-run surfaced 2 failures. Isolated both in a throwaway
+`git worktree` at `origin/main`'s exact tip (`2583f5a`, before this
+session's merge) and confirmed both fail there too — genuinely
+pre-existing on `origin/main`, not introduced by this session's merge
+or by c77b599:**
+
+1. **Live regression, urgent**: `repository-intelligence.js` Check D
+   (Pending Lexicon structural integrity) now fails:
+   `PL-0001453: promotion_status is "promoted" but ("Hope","Ka·donga")
+   not found in master_dictionary.json`. Root cause traced: the "hope"
+   dedup commits changed the surviving `master_dictionary.json` "Hope"
+   row's Garo value from `Ka·donga` to lowercase `ka·donga` (confirmed
+   — the row exists at line ~18729, casing is the only difference) but
+   didn't update `src/data/pending_lexicon.json`'s `PL-0001453` promoted
+   record to match, breaking the cross-reference this check verifies.
+   Content bookkeeping question, Claude A's lane — flagging, not fixing.
+2. **Live regression, urgent, loss of functionality**: "where is the
+   cow?" now translates to `Bano daka [UNKNOWN] [UNKNOWN]` instead of
+   the previously-working `Bano ma·su`
+   (`tests/unit/question_animal_placeholder.test.js:41`, "cow/goat
+   question composition is unaffected" regression guard — now failing).
+   The `ma·su` removal commits deleted the word from every layer
+   (`master_dictionary.json`, `src/data/phrase_maps.js`,
+   `compiled_dict.json`/`_alternates.json`) with no replacement Garo
+   form for "cow" supplied anywhere, so `sov-assembly` now has nothing
+   to compose with. This is a genuine loss of previously-working live
+   functionality, not a stale test — flagged directly to the person in
+   this session, and here for the next session/Claude A: needs either
+   a corrected replacement form for "cow" or a decision that "cow" is
+   intentionally unsupported for now (in which case the regression-guard
+   test itself needs updating to expect that, a content call either way).
+
+Both left exactly as found (test files untouched, `pending_lexicon.json`
+untouched) — not mine to silently allowlist or "fix" by weakening the
+test, since both require a dictionary-content decision. Everything else
+in the gate is clean and attributable to this session's own work; see
+counts below.
+
+## Merge handled this session (first round)
 Concurrent Claude A session-close pushes landed mid-session:
 - `46aa62f` — `'animal'` → `Jontu` (Project Owner relay from Thangseng)
   — this closes the "animal vocabulary gap" open item carried in prior
@@ -150,6 +212,16 @@ byte-identical to a fresh build.
   uncharacterized.
 - **New this session**: the `corrections.json` "has three children"
   divergence flagged above, for Claude A.
+- **New, urgent, inherited from concurrent commits (see "Second merge"
+  section above for full detail)**: (a) "where is the cow?" lost its
+  working translation entirely (`ma·su` removed dictionary-wide with no
+  replacement) — live functionality regression; (b)
+  `repository-intelligence.js` Check D fails on `PL-0001453` (Hope
+  casing mismatch between `master_dictionary.json` and
+  `pending_lexicon.json`'s promoted record). Both confirmed pre-existing
+  on `origin/main` alone via isolated worktree test, not caused by this
+  session's engineering fix or either merge — both are dictionary-
+  content decisions, Claude A's lane.
 
 ## Standing rules established / reused this session
 - `.ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json`: a direct Project Owner

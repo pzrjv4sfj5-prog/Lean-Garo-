@@ -1,5 +1,5 @@
 repository:
-  head: defab0c
+  head: d399ecf
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -4014,8 +4014,32 @@ claude_b:
     common-verb coverage gap, S6.2 pronoun ·ko adjudication, -de/-ara
     marker distinction, animal vocabulary gap (Claude A closed this one
     this session per the merge above -- confirmed no longer open). New
-    open item from this session: the corrections.json 'has three
-    children' divergence flagged above, for Claude A. Full account:
+    open items from this session, both for Claude A: (1) the
+    corrections.json 'has three children' divergence flagged above; (2)
+    URGENT, inherited from a second round of concurrent non-Claude
+    commits (authored directly by the Project Owner, 'T', mid-session --
+    2583f5a and 15 others) -- 'where is the cow?' lost its working
+    translation entirely ('Bano ma·su' -> 'Bano daka [UNKNOWN]
+    [UNKNOWN]') because the ma·su removal commits deleted the word
+    dictionary-wide with no replacement form supplied anywhere; and
+    repository-intelligence.js Check D now fails on PL-0001453 (a
+    'hope' dedup commit changed master_dictionary.json's surviving Hope
+    row from 'Ka·donga' to lowercase 'ka·donga', un-syncing it from
+    pending_lexicon.json's promoted record). Both confirmed pre-existing
+    on origin/main alone via an isolated throwaway git-worktree test at
+    origin's exact tip before this session's own merge touched anything
+    -- NOT caused by c77b599 or by either merge, both left exactly as
+    found (no test weakened, no data touched) since both need a
+    dictionary-content decision, not an engineering one. Full detail:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260924B.md's 'Second merge'
+    section. Gate at this close, all numbers exactly as actually
+    observed (not rounded to the usual all-clean pattern): dictionary
+    8901/8901, 9/9 grammatical corrections, unit tests 459/461 (2
+    failures, both the pre-existing regressions above, not new), 1
+    pre-existing repository-intelligence.js violation (Check D, same
+    root cause, also confirmed pre-existing not new), runtime-error-
+    sweep.mjs 0 errors/15864 translate() calls (the actual zero-
+    runtime-error check requested at close is clean). Full account:
     docs/CLAUDE_B_SESSION_MIGRATION_20260924B.md."
   next_action_prior_20260923C: "2026-09-23C (Claude B, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260923B.md,
     resynced first -- doc's pinned commit 3cb39f1 was only 1 commit stale
