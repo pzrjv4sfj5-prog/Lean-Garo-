@@ -118,14 +118,14 @@ authored directly by "T" (not a Claude agent) — 16 commits, headline
 content: `2583f5a`/`7316262` normalize "child"→`Bi·sa` and other forms
 in `garo_dictionary.json`; `f0a186a`/`c1a720b`/`80c78a0` dedupe "hope"
 duplicate rows; `deb667c`/`5251bdf`/`9f34e12`/`231e12a`/`3985059`
-**remove `ma·su` ("cow") entirely** from the dictionary/compiled/
+**remove `Matchu` ("cow") entirely** from the dictionary/compiled/
 phrase-map/runtime data; plus duplicate-census audit docs
 (`cfacd0b`/`c05c2bd`, machine-ready handoffs `9945d8e`/`3a1b168`).
 
 Merged clean (`git merge origin/main`, no conflict markers). Diffed
 file-by-file: only `garo_dictionary.json`, `master_dictionary.json`,
 the 2 generated compiled files, and `src/data/phrase_maps.js` (the
-`cow`/`ma·su` line removed) touched — zero collision with c77b599's
+`cow`/`Matchu` line removed) touched — zero collision with c77b599's
 `sentenceBuilder.js` work. Regenerated compiled files fresh via
 `prepare-data.js` as before.
 
@@ -147,10 +147,10 @@ or by c77b599:**
    Content bookkeeping question, Claude A's lane — flagging, not fixing.
 2. **Live regression, urgent, loss of functionality**: "where is the
    cow?" now translates to `Bano daka [UNKNOWN] [UNKNOWN]` instead of
-   the previously-working `Bano ma·su`
+   the previously-working `Bano Matchu`
    (`tests/unit/question_animal_placeholder.test.js:41`, "cow/goat
    question composition is unaffected" regression guard — now failing).
-   The `ma·su` removal commits deleted the word from every layer
+   The `Matchu` removal commits deleted the word from every layer
    (`master_dictionary.json`, `src/data/phrase_maps.js`,
    `compiled_dict.json`/`_alternates.json`) with no replacement Garo
    form for "cow" supplied anywhere, so `sov-assembly` now has nothing
@@ -214,7 +214,7 @@ byte-identical to a fresh build.
   divergence flagged above, for Claude A.
 - **New, urgent, inherited from concurrent commits (see "Second merge"
   section above for full detail)**: (a) "where is the cow?" lost its
-  working translation entirely (`ma·su` removed dictionary-wide with no
+  working translation entirely (`Matchu` removed dictionary-wide with no
   replacement) — live functionality regression; (b)
   `repository-intelligence.js` Check D fails on `PL-0001453` (Hope
   casing mismatch between `master_dictionary.json` and
