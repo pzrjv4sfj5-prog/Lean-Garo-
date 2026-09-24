@@ -74,7 +74,7 @@ direct source trace, not just missing at runtime):
 Claude B is mechanically fixing a bug where `"big cat"`/`"big dog"`/
 `"big bird"`/`"big fish"` all ship an identical generic placeholder
 (`"gonga mang"`) instead of composing correctly (the way `"big cow"` →
-`ma·su dal·a` already does correctly). The fix is expected to just be
+`Matchu dal·a` already does correctly). The fix is expected to just be
 "delete the bad placeholder rows and let the existing working composition
 path handle it," which needs no new linguistic input from you — but I'd
 suggest a quick spot-check of the composed output after Claude B's fix
