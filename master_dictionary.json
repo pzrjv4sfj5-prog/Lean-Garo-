@@ -19016,7 +19016,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH FLAGGED 2026-09-24 (Claude A): tagged variant/VERIFIED/HIGH with no citation text present in this note -- provenance unclear, unlike bon·kamgipa/ja·mangipa (NV-082, cited) which were split into their own sense-labeled headwords this session. Left untouched pending citation lookup; do not treat as equivalent-strength evidence to the NV-082 pair.",
     "confidence": "verified_high"
   },
   {
@@ -19025,7 +19025,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH FLAGGED 2026-09-24 (Claude A): tagged variant/VERIFIED/HIGH with no citation text present in this note -- provenance unclear, unlike bon·kamgipa/ja·mangipa (NV-082, cited) which were split into their own sense-labeled headwords this session. Left untouched pending citation lookup; do not treat as equivalent-strength evidence to the NV-082 pair.",
     "confidence": "verified_high"
   },
   {
@@ -78367,5 +78367,21 @@
     "pos": "n.",
     "confidence": "unverified",
     "notes": "2026-09-23 (Claude A, Project Owner direct submission, print dictionary page 92). Corrects this same session's 'Gure Bi.sa'='A cold' — Project Owner confirmed typo, correct gloss is 'a colt' (young horse). Compound of 'Gure' (horse; idx 85/2132/2800) + 'bi·sa' (young/offspring of X — matches the extensive existing productive pattern: achak bi·sa=puppy idx 2363, matchu bi·sa=calf idx 8597, dobok bi·sa=kid-goat idx 2815), confirming this session's earlier compositional flag. No pre-existing 'colt' entry."
+  },
+  {
+    "english": "last (ordinal, e.g. last page)",
+    "garo": "bon·kamgipa",
+    "category": "general",
+    "pos": "adj.",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — sense-disambiguation split from bare 'last' (2026-09-24, Claude A), citing existing NV-082 (Thangseng relay via Tridip, 2026-08-19), already on file under bare 'last': ordinal/final-in-sequence sense, e.g. 'last page'. Distinct from ja·mangipa (last one/specific person, see 'last (the specific one/person)') and from Mija (temporal recency, e.g. 'last week', NV-081). No new native evidence — this entry only files the pre-existing distinction under its own headword so pickPrimary can resolve it instead of tying with ja·mangipa/bai·a/ses. Bare 'last' left unchanged, still a genuine multi-way tie."
+  },
+  {
+    "english": "last (the specific one/person)",
+    "garo": "ja·mangipa",
+    "category": "general",
+    "pos": "n.",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — sense-disambiguation split from bare 'last' (2026-09-24, Claude A), citing existing NV-082 (Thangseng relay via Tridip, 2026-08-19), already on file under bare 'last': ordinal/final sense specifically 'the last one / last person'. Distinct from bon·kamgipa (final, e.g. 'last page', see 'last (ordinal, e.g. last page)') and from Mija (temporal recency, NV-081). No new native evidence — this entry only files the pre-existing distinction under its own headword so pickPrimary can resolve it instead of tying with bon·kamgipa/bai·a/ses. Bare 'last' left unchanged, still a genuine multi-way tie."
   }
 ]
