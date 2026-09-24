@@ -42,7 +42,7 @@ Groups with same normalized Garo value only: 33
 | 28 | pride | 2 | Gaora; ra·song | superseded; verified_high |
 | 29 | worry | 2 | Gisik ding·a; sim·bra·a | superseded; verified_high |
 | 30 | mercy | 2 | Ka·sachakani; Kema | superseded; verified_high |
-| 31 | cow | 2 | Matchu; ma·su | superseded; verified_high |
+| 31 | cow | 2 | Matchu; Matchu | superseded; verified_high |
 | 32 | tiger | 2 | Matcha; mat·cha | superseded; verified_high |
 | 33 | deer | 2 | Matchok; mat·chok | superseded; verified_high |
 | 34 | goat | 2 | Do·bok; do·omok | verified_high; superseded |
@@ -641,7 +641,7 @@ Groups with same normalized Garo value only: 33
 | 627 | carve | 4 | bik·a; sik·sik·a; sol·a; tak·a | unverified |
 | 628 | catch up | 2 | katsrap·a; srap·a | unverified |
 | 629 | caterpillar | 3 | jong·sip·in; jong·su; mang·tip | unverified |
-| 630 | cattle | 2 | ma·su; ma·su mat·ti | unverified |
+| 630 | cattle | 2 | Matchu; Matchu mat·ti | unverified |
 | 631 | centipede | 2 | mang·gu·ak; sin·a·ru | unverified |
 | 632 | channel | 2 | chi·ret; dren | unverified |
 | 633 | chipped | 3 | be·king·ben·da; be·ku·weng·a; be·rik·ken·a | unverified |
@@ -729,7 +729,7 @@ Groups with same normalized Garo value only: 33
 | 715 | drum | 2 | da·ma; kram | unverified |
 | 716 | drunk | 2 | han cheng·a; mik·mak·a | unverified |
 | 717 | dull | 2 | cham·a; chat·a | unverified |
-| 718 | dung | 3 | gu·bol; ke·em·a; ma·su·ke·em·a | unverified |
+| 718 | dung | 3 | gu·bol; ke·em·a; Matchu·ke·em·a | unverified |
 | 719 | dust | 2 | dul·a; ha·gin·dil·a | unverified |
 | 720 | dwell | 3 | donga; dongchak·a; dongdam·a | unverified |
 | 721 | earth | 4 | ha·; ha·gil·sak; ha·mang; a'gil·sak | unverified; verified_high |
