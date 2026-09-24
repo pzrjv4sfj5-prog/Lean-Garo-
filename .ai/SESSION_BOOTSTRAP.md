@@ -1,4 +1,13 @@
 # SESSION_BOOTSTRAP.md
+
+## Current machine-ready audit handoffs — 2026-09-24
+
+Before starting work, agents should read the role-specific live audit handoff:
+- Claude A: docs/CLAUDE_A_MACHINE_READY_AUDIT_20260924.md
+- Claude B: docs/CLAUDE_B_MACHINE_READY_AUDIT_20260924.md
+
+These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
+
 _Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-20 by Claude A
 (resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260920.md. Full migration
 doc: docs/CLAUDE_A_SESSION_MIGRATION_20260920B.md — READ IT FIRST, this
