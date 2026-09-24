@@ -83,7 +83,7 @@ and `good` (`"good dog"`/`"good cat"` → `ramang mang`).
 **But this only affects animals that happen to have their own `master_dictionary.json`
 "[adj] [animal]" row.** Animals without such a row (cow, goat, tiger, snake,
 monkey, pig, rat) correctly fall through to `sov-assembly` and get distinct,
-correct roots (e.g. `"big cow"` → `ma·su dal·a`, `"big elephant"` → `Mong dal·a`).
+correct roots (e.g. `"big cow"` → `Matchu dal·a`, `"big elephant"` → `Mong dal·a`).
 So the defect is **row-level, not systemic to the adjective-composition
 engine** — worth confirming exact affected-row count before scoping a fix
 (only 8 animals × 3 adjectives were sampled here — not a full sweep). B's
