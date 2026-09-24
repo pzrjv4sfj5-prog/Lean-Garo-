@@ -499,6 +499,26 @@ export async function translate(input) {
   const sov = assembleSentenceSOV(words, grammar?.isNegative || false, grammar?.detectedTense || 'present');
   if (sov) return { garo: sov, method: 'sov-assembly', confidence: 0.75 };
 
+  // 6.5 Grammar-assembly, unknown-tolerant (2026-09-23, Claude B,
+  // engineering-only, confirmed live — see sentenceBuilder.js's
+  // allowUnknown doc comment on assembleGrammar for the full comparison).
+  // Only reachable when the strict grammar-assembly at step 6 already
+  // bailed (grammarResult was null/falsy) AND sov-assembly above also
+  // failed. Re-runs the SAME already-computed `grammar` through the SAME
+  // assembleGrammar function, this time allowed to keep a structured
+  // result even if one part is '[UNKNOWN]' — strictly better signal than
+  // letting it fall to morphology's blind per-word join (confirmed live:
+  // "he is going to college"/"...gym"/"...airport", none of which have a
+  // dictionary entry, produced grammatically incoherent morphology-step
+  // output pulling unrelated dictionary fragments for "is"/"to" before
+  // this fix). Confidence deliberately below every fully-resolved method
+  // above it and below sov-assembly (0.75) — this candidate is known to
+  // be missing at least one piece of vocabulary, that's the entire reason
+  // it's here — but still preferred over morphology (0.65) since it's
+  // reached first in this cascade and is more legible when it fires.
+  const grammarResultLoose = assembleGrammar(grammar, true);
+  if (grammarResultLoose) return { garo: grammarResultLoose, method: 'grammar-assembly-partial', confidence: 0.6 };
+
   // 7. Morphology
   // RC-CANDIDATE-034 fix (2026-07-31): resolved/unresolved words were both
   // reduced to the same `.filter(Boolean)` step, so an unresolvable word

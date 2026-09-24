@@ -79,9 +79,37 @@ for (const [key, val] of Object.entries(compiledDictRaw)) {
 // already made, rather than inventing a new one (the RC-CANDIDATE-003/
 // 010 boundary is specifically about NOT inventing POS data — this
 // isn't that, since no new fact is being asserted here).
+// NON_VERB_TO_X_KEYS (2026-09-23, Claude B, engineering-only, confirmed
+// live): "to X" in this dictionary is used for two UNRELATED conventions
+// that collide under the mechanical "strip the leading 'to '" derivation
+// below — (1) Claude A/D's infinitive-verb headword convention ("to eat",
+// "to buy"), which this set exists to capture, and (2) a handful of
+// destination/object phrase entries that also happen to start with the
+// literal word "to" ("to school"->"skulchi", "to home"->"nokchi", "to
+// him"->"Bichi") but are locative/pronoun targets, not verbs at all.
+// Confirmed live bug from case (2): "he is going to school"/"he is going
+// to home" silently dropped the finite verb entirely (-> "Ua skulchi",
+// "Ua nokchi", no "re·angenga"), while "he is going to the market"
+// worked, because grammarEngine.js's going-to-infinitive guard
+// (introducesInfinitiveVerb, ~line 316) treats VERB_LEMMAS membership of
+// the word right after "to" as proof that "going" is a pure auxiliary
+// introducing a real infinitive verb next — true for "going to eat",
+// false for "going to school", but VERB_LEMMAS couldn't tell the two
+// apart because "school"/"home" were mechanically added as if they were
+// verb roots. "to the market"/"to the forest"/etc. never collided only
+// by accident: those dictionary keys include "the", so slice(3) produces
+// "the market", not "market". Excluded here by exact key, not by a
+// broader heuristic (no general POS data exists in this dictionary, same
+// constraint noted at the 'bed'/'down' guards in grammarEngine.js) — only
+// the three confirmed-bad entries are removed, every genuine infinitive
+// headword is untouched. If a future dictionary edit adds another "to X"
+// destination/object entry that isn't an infinitive verb, it will need
+// the same treatment; this is not a general fix for the whole class.
+const NON_VERB_TO_X_KEYS = new Set(['to school', 'to home', 'to him']);
+
 export const VERB_LEMMAS = new Set();
 for (const key of Object.keys(compiledDictRaw)) {
-  if (key.startsWith('to ')) {
+  if (key.startsWith('to ') && !NON_VERB_TO_X_KEYS.has(key)) {
     const lemma = key.slice(3).split('(')[0].trim().toLowerCase();
     if (lemma) VERB_LEMMAS.add(lemma);
   }

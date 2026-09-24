@@ -315,7 +315,7 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
 // over three weeks. Runtime Engineering Audit (2026-08-03) re-verified
 // current purpose_map.json value directly; no live defect here.
 
-export function assembleGrammar(grammar) {
+export function assembleGrammar(grammar, allowUnknown = false) {
   if (!grammar || !grammar.subject) return null;
   const parts = [];
   parts.push(grammar.subject.garo);
@@ -442,7 +442,32 @@ export function assembleGrammar(grammar) {
 
   if (parts.length < 2) return null;
   const result = parts.join(' ');
-  if (result.includes('[UNKNOWN]')) return null;
+  // allowUnknown (2026-09-23, Claude B, engineering-only, confirmed live):
+  // additive parameter, defaults to false so every existing caller and
+  // every existing test keeps today's exact behavior unchanged. When
+  // false (default), an '[UNKNOWN]' anywhere in `result` still bails to
+  // null exactly as before — that guard exists specifically so an
+  // incomplete grammar-assembly translation is never confidently
+  // returned to a caller expecting a complete sentence. This is
+  // deliberately NOT relaxed by default. The one caller that opts in
+  // (translationEngine.js, new fallback step between sov-assembly and
+  // morphology) uses it only as a LAST-RESORT, lower-confidence
+  // structured candidate — confirmed live that its output ("Ua
+  // [UNKNOWN]·chi re·angenga" for an OOV destination like "college"/
+  // "gym"/"airport", none of which have a dictionary entry) is strictly
+  // more legible than what the pre-existing cascade fell through to
+  // instead: step 7 morphology's blind per-word join, which — confirmed
+  // live — pulls unrelated bare dictionary fragments for function words
+  // never meant to be translated standalone this way (e.g. "is"->"daka",
+  // "to"->"·na", both real dictionary entries for OTHER senses of those
+  // strings) and produced "Ua daka re·angenga ·na [UNKNOWN]" for the
+  // identical input — worse on every axis (less grammatical, no clearer
+  // about what's actually missing) than the structured candidate this
+  // enables, while carrying the exact same single point of missing
+  // vocabulary. No new Garo vocabulary or grammar invented by this
+  // change — it only changes which of two ALREADY-COMPUTABLE candidates
+  // the cascade prefers when both contain the same '[UNKNOWN]' marker.
+  if (!allowUnknown && result.includes('[UNKNOWN]')) return null;
   // Claude C audit Finding 2 fix (2026-08-04, Claude B), corrected 2026-09-21:
   // grammar.isQuestion (set by analyzeGrammar for inverted-aux yes/no
   // questions, e.g. "is he going to school?") appends the yes/no-question
