@@ -1,5 +1,5 @@
 repository:
-  head: 46aa62f
+  head: defab0c
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -3948,7 +3948,76 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: "2026-09-23C (Claude B, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260923B.md,
+  next_action: "2026-09-24B (Claude B, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260923C.md,
+    resynced first -- doc's pinned commit b4a0d81 matched both origin/main and the
+    local clone exactly, zero drift, confirmed via full gate re-run before
+    continuing). Project Owner relayed a Thangseng-confirmed correction in
+    chat for the fix landed at the previous session's close (a9adc4b, the
+    has/have NP-subject coherence gate): live citation 'the boy has a dog'
+    -> 'Me·a bi·sao achak donga', not this engine's actual output at the
+    time ('Me·a bi·sa achak·ko donga'). No separate proof gate required
+    per .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json (direct Project Owner
+    chat directive, relaying native-speaker-confirmed evidence). Root
+    cause: 'SUBJ has OBJECT' is existential possession in Garo ('at-SUBJ
+    OBJECT exists'), not a transitive-object construction -- the
+    possessor takes locative -o (appended directly, no '·' separator,
+    same convention as the already-confirmed 'in bed'->'palango' locative
+    adjunct), and the possessed object is bare (no '·ko' accusative
+    marker). a9adc4b got the NP subject into grammar-assembly for the
+    first time but defaulted to the ordinary accusative-object marker
+    pattern, which is wrong specifically for this verb. Fixed in
+    sentenceBuilder.js's assembleGrammar (commit c77b599): scoped to
+    fire only when grammar.verb.garo==='donga' && english matches
+    has/have && grammar.object present && !grammar.possessive -- does
+    not touch grammar.location or grammar.possessive (distinct
+    constructions), confirmed live via 2 regression guards ('the boy
+    sees a dog' unaffected; 'the boy has his dog' [possessive] unaffected,
+    still 'me·a bi·sa Uni achak·ko donga'). Updated 2 pre-existing tests
+    (translationEngine.test.js:455/1366) whose expected values were only
+    ever locking in a DIFFERENT, unrelated fix's incidental output --
+    both explicitly commented in-place at the time as 'locking in the
+    bug'/artifacts of the verb-guard fix under test, never a linguistic
+    claim about marker placement -- to the now-confirmed correct form
+    (updated in place with a dated comment explaining why, not silently
+    changed). Added 3 new regression tests (NV-165; NV-121 was already
+    taken by Claude A's prior 'what did you eat?' resolution, checked
+    before numbering). Flagged, NOT touched (dictionary content, Claude
+    A's lane, per engineering_boundary): corrections.json's pre-existing
+    exact-phrase entries 'she/he has three children' -> 'Ua bi·sa
+    sakgittam donga' now diverge from this same construction's confirmed
+    pattern (bare subject, no possessor -o) -- written before this fix
+    existed, same has/have+donga shape, same object-bareness half already
+    right, only the subject-side -o missing. Concurrent Claude A
+    session-close pushes landed mid-session (46aa62f/6ffe11c/e187e04 --
+    'animal'->Jontu relay, 'last' ordinal/specific-person sense split,
+    POS-collision priority queue, session-close doc) -- merge-base was
+    exactly my own prior HEAD (fast-forward situation), merged clean
+    (git auto-merge, no conflicts), diffed file-by-file (not just stat):
+    only master_dictionary.json (content) + the 2 generated compiled
+    files touched on Claude A's side, zero src/*.js collision. Generated
+    files (src/compiled_dict.json, src/data/category_index.json)
+    regenerated fresh via prepare-data.js against the merged
+    master_dictionary.json rather than trusting the auto-merge, verified
+    byte-identical to the merge result (clean git status after
+    regeneration). PAT provided fresh this session in chat, used only to
+    set the remote URL for clone/push, never written to any tracked
+    file (verified via grep on .git/config after every push attempt).
+    Gate at close, explicitly re-run fresh at final merged HEAD:
+    prepare-data.js clean (8902 entries), test-dictionary.js 8902/8902,
+    9/9 grammatical corrections, 461/461 unit tests (was 458, +3 new),
+    0 new repository-intelligence.js violations, runtime-error-sweep.mjs
+    15866/15866 translate() calls 0 errors, HEAD verified == origin/main
+    after push, clean tree. Held open, unchanged from prior doc: leading-
+    time-word subject-detection gap + today/Da·al divergence (content
+    question, Claude A/D), AI-003 (multi-word VERB_LEMMAS matcher gap),
+    Claude D's to-prefix canonicalization (Owner-blocked), VERB_LEMMAS
+    common-verb coverage gap, S6.2 pronoun ·ko adjudication, -de/-ara
+    marker distinction, animal vocabulary gap (Claude A closed this one
+    this session per the merge above -- confirmed no longer open). New
+    open item from this session: the corrections.json 'has three
+    children' divergence flagged above, for Claude A. Full account:
+    docs/CLAUDE_B_SESSION_MIGRATION_20260924B.md."
+  next_action_prior_20260923C: "2026-09-23C (Claude B, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260923B.md,
     resynced first -- doc's pinned commit 3cb39f1 was only 1 commit stale
     (its own close-doc merge into origin), zero src/ impact, confirmed via
     full gate re-run before continuing). Person requested a general
