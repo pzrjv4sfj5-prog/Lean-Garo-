@@ -266,7 +266,22 @@ export function analyzeGrammar(input) {
         || VERB_LEMMAS.has(nextTok.replace(/ed$/, ''))
         || VERB_LEMMAS.has(nextTok.replace(/s$/, ''))
       );
-      const coherent = !nextTok || /^(is|are|was|were)$/.test(nextTok) || STOP_WORDS.has(nextTok) || AUXILIARY_SKIP.has(nextTok) || nextIsMainVerb;
+      // has/have coherence fix (2026-09-24, Claude B, engineering-only,
+      // confirmed live): the coherent-nextTok check accepted is/are/was/
+      // were, STOP_WORDS, AUXILIARY_SKIP, and VERB_LEMMAS-derived main
+      // verbs, but not has/have — so "the boy has a dog" (NP subject +
+      // "has") never passed this gate, grammar.subject stayed null, and
+      // the ENTIRE sentence fell through to sov-assembly, which has no
+      // verb-final SOV reordering — confirmed live: "the boy has a dog"
+      // -> "me·a bi·sa donga Achak" (verb "donga" stranded mid-sentence,
+      // wrong word order) instead of proper "Me·a bi·sa achak·ko donga".
+      // Not a new linguistic claim: "he has a dog" (pronoun subject,
+      // same verb-search loop downstream of this gate) already correctly
+      // resolves "has"->"donga" today — this only lets an NP subject
+      // reach that same, already-working downstream logic, exactly the
+      // same shape as the is/are/was/were literal check immediately to
+      // its left.
+      const coherent = !nextTok || /^(is|are|was|were|has|have)$/.test(nextTok) || STOP_WORDS.has(nextTok) || AUXILIARY_SKIP.has(nextTok) || nextIsMainVerb;
       if (g && coherent) { npSubjectGaro = g; npSubjectEnglish = words[1]; subjectEndIndex = 1; }
     }
   }
