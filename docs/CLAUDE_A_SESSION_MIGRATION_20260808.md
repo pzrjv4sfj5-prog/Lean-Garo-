@@ -31,7 +31,7 @@ Thangseng via Tridip/WhatsApp.
   - **New/reconfirmed VERIFIED/HIGH**: `young` = `dambe` (universal);
     `children` = `Bi·sarang` (plural, old bare `children=Bi·sa`
     SUPERSEDED — singular/plural distinction, not a wrong-word case);
-    `calf` = `matchu bi·sa` (new; `ba·sur`/`ma·su gen·da` SUPERSEDED);
+    `calf` = `matchu bi·sa` (new; `ba·sur`/`Matchu gen·da` SUPERSEDED);
     `puppy` = `achak bi·sa` (tagged final, value unchanged); `book` =
     `Ki·tap` (**RECONFIRMED**, reverses the 2026-08-01 corpus-audit
     call that had promoted `boi`; `boi` now SUPERSEDED); new sentence
