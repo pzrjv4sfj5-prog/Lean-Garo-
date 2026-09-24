@@ -416,13 +416,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "hope",
-    "garo": "Ka·donga",
-    "category": "emotions",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'hope' has VERIFIED/HIGH form(s) ['a·sa', 'ka·donga', 'mik·sok·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "peace",
     "garo": "Tom·tomani",
     "category": "emotions",
