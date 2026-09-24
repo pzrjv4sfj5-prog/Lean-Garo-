@@ -1,5 +1,5 @@
 repository:
-  head: b4a0d81
+  head: 46aa62f
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,7 +313,39 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-23C (Claude A, session complete -- see
+  next_action: '2026-09-24 (Claude A, session complete -- see
+    docs/CLAUDE_A_SESSION_MIGRATION_20260924.md for full detail).
+    Resumed from a Project Owner-named docs/CLAUDE_A_SESSION_MIGRATION_20260923.md
+    (an early-day doc in the 2026-09-23 chain); resync found two more
+    same-day sessions (B, C, already reflected here) plus one
+    downstream commit not yet seen: Claude B''s a9adc4b (has/have
+    NP-subject word-order fix, grammarEngine.js only, no linguistic
+    conflict). 1) Closed Next Recommended Task #2 (POS collision-set):
+    docs/POS_COLLISION_SET_20260924.md -- 4 genuine noun/verb sense
+    collisions (demand, hire, hope, to blaze) live-checked as
+    currently resolving correctly (report only, no dictionary edit).
+    2) pickPrimary verified-ties quick pass: 19 of 20 confirmed
+    genuine tied-variant pairs (not defects, per the doc''s own
+    header); "last" was the one real gap -- NV-082 already
+    distinguishes bon·kamgipa (ordinal, "last page") from ja·mangipa
+    (the specific one/person) but both were only filed under
+    ambiguous bare "last". Split into two sense-labeled headwords
+    citing NV-082 (no new native evidence, a filing fix); bare "last"
+    left unchanged, still a genuine tie. Flagged the uncited
+    variant/VERIFIED/HIGH tags on "last"->bai·a and "last"->ses for
+    future citation lookup, not resolved. 3) Added animal->Jontu,
+    verified_high, Project Owner relay from Thangseng (2026-09-24,
+    direct chat, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md) --
+    fills a real gap, prior "animals" rows (do·omat, mang·) were both
+    unverified. Zero-runtime-error sweep clean (15866/15866 calls, 0
+    errors). Gate green throughout and at close: 8902/8902 dictionary,
+    9/9 grammatical corrections, 458/458 unit tests, 0 new
+    repository-intelligence violations. One push collision (Claude
+    B''s own docs-only session-close, 15551f3, zero file overlap) --
+    rebased clean, rebuilt, gate re-verified green post-rebase.
+    Pushed clean, final HEAD to be confirmed at close, verified ==
+    origin/main, clean tree.'
+  next_action_prior_20260923C: '2026-09-23C (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260923C.md for full detail,
     this is a pointer only, final stretch of the same 2026-09-23
     session as next_action_prior_20260923B below). Two rounds of
