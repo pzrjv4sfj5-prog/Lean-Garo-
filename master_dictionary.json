@@ -17514,15 +17514,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Cow",
-    "garo": "ma·su",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "Crab",
     "garo": "hang·ki",
     "pos": null,
@@ -26155,15 +26146,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "cattle",
-    "garo": "ma·su",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ma·-su mat-ti",
     "confidence": "unverified"
   },
   {
