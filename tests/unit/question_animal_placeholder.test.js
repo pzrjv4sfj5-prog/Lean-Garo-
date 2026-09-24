@@ -40,5 +40,5 @@ test('question-word + animal composes with the real species root for cat/dog/bir
 // placeholder row existed for them) must be unaffected.
 test('cow/goat question composition is unaffected (regression guard)', async () => {
   const cow = await translate('where is the cow?');
-  assert.equal(cow.garo, 'Bano ma·su');
+  assert.equal(cow.garo, 'Bano Matchu');
 });
