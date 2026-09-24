@@ -18734,29 +18734,11 @@
   },
   {
     "english": "Hope",
-    "garo": "a·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Hope",
     "garo": "ka·donga",
     "pos": "v.",
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH — POS clarified NV-082 (2026-08-19, Thangseng relay via Tridip): this is specifically the VERB 'to hope'. See separate 'hope'/'ka·dongani' entry for the NOUN form — distinct part of speech, not a competing value. Mirrors NV-077 answer pattern.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Hope",
-    "garo": "mik·sok·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
   },
   {
@@ -62710,14 +62692,6 @@
     "category": null,
     "pos": "n.",
     "confidence": "unverified"
-  },
-  {
-    "english": "Hope",
-    "garo": "Ka·donga",
-    "category": null,
-    "pos": "n.",
-    "notes": "SUPERSEDED — 2026-08-16, Claude A, full-corpus dedup audit: redundant OCR import, same value as already-VERIFIED 'Hope'->'ka·donga' entry (idx 3371, part of the 3-way a·sa/ka·donga/mik·sok·a variant set). Retained per citation discipline, not deleted. Was: [OCR-flagged for review: ocr_confidence=High]",
-    "confidence": "superseded"
   },
   {
     "english": "To have some hope",
