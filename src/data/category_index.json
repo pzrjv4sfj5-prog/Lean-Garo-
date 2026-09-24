@@ -4041,5 +4041,6 @@
   "nearby": "general",
   "market day": "time",
   "last (ordinal, e.g. last page)": "general",
-  "last (the specific one/person)": "general"
+  "last (the specific one/person)": "general",
+  "animal": "animals"
 }
