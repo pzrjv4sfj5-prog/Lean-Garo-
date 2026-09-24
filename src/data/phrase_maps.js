@@ -250,6 +250,7 @@ export const PHRASE_MAPS = {
   'yellow': 'Rimit',
   'dog': 'Achak',
   'cat': 'Menggo', // NV-135 (2026-09-06): Menggo confirmed, meng·gong superseded
+  'cow': 'ma·su', // restored 2026-09-24C (Claude A): 2026-09-24 duplicate-census cleanup (commit 9f34e12) removed the VERIFIED/HIGH value instead of the SUPERSEDED "Matchu" duplicate it was paired with — see master_dictionary.json "Cow" row note.
   'elephant': 'mongma', // NV-089/reconciliation-v2 (2026-09-07): mongma confirmed canonical; Mong/ha·ti retired from master_dictionary.json
   'tiger': 'Matcha',
   'pig': 'Wak',

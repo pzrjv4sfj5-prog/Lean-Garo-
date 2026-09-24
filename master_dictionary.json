@@ -519,6 +519,15 @@
     "confidence": "superseded"
   },
   {
+    "english": "Cow",
+    "garo": "ma·su",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — RESTORED 2026-09-24C (Claude A, resync bug fix): this row was live-breaking-deleted by the same-day duplicate-census cleanup (commit 3985059), which removed the VERIFIED/HIGH value instead of its intended target, the SUPERSEDED 'Matchu' duplicate (see that row's own note, which names this exact value as the citation for why Matchu is superseded). No new linguistic evidence — restoring pre-existing citation, not asserting a new one.",
+    "confidence": "verified_high"
+  },
+  {
     "english": "tiger",
     "garo": "Matcha",
     "category": "animals",
