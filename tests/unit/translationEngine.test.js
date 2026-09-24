@@ -2134,7 +2134,7 @@ test('NV-115 loanword passthrough: "momo" no longer fuzzy-matches to "moo" (im·
   assert.equal(r.garo, 'Momo');
 });
 
-test('NV-115 loanword passthrough: "chow" no longer fuzzy-matches to "cow" (ma·su)', async () => {
+test('NV-115 loanword passthrough: "chow" no longer fuzzy-matches to "cow" (Matchu)', async () => {
   const r = await translate('chow');
   assert.equal(r.method, 'loanword-passthrough');
   assert.equal(r.garo, 'Chow');
