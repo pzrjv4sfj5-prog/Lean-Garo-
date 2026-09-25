@@ -2960,6 +2960,21 @@ calls. Live-verified: `translate('cow')` → `ma·su` (0.99,
 phrase-map), `translate('where is the cow?')` → `'Bano ma·su'`
 (0.75, sov-assembly).
 
+**RESOLVED 2026-09-25 (Claude A):** the "worth an explicit Project
+Owner check" flag above is closed. Three governance-file commits
+(all `T`) appeared between sessions declaring GPT-authored
+corrections under Project Owner authority binding on Claude A/B
+without further confirmation, using this exact cow case as their
+example — inspected and *not* acted on directly, since a commit
+asserting its own authority is not the same thing as the Project
+Owner confirming it. Asked the Project Owner directly in chat
+instead. They confirmed: `cow`=`Matchu` is intentional (Project
+Owner directive on their own authority, not native evidence,
+provenance-labeled as such), and the GPT cross-agent-protection
+governance is an intentional authorized workflow and stands.
+`Matchu` is now VERIFIED/HIGH, `ma·su` SUPERSEDED (retained, not
+deleted). See `docs/CLAUDE_A_SESSION_MIGRATION_20260925.md`.
+
 No Priority-A audit items from
 `docs/CLAUDE_A_MACHINE_READY_AUDIT_20260924.md` picked up this
 session — the arriving gate failure and live regression took
