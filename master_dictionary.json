@@ -78349,5 +78349,12 @@
     "pos": "n.",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — Project Owner relay (2026-09-24, direct chat statement: \"Animal = Jontu, new word from Thangseng\"), per standing provenance rule (.ai/PROJECT_OWNER_AUTHORITY.md): Project Owner directive given directly in chat is authoritative without transcript/screenshot, but provenance-labeled here as Project Owner relay, not a literal Thangseng quote. Fills a gap: prior plural 'animals' rows (do·omat, mang·) were both unverified/HIGH; this is the first verified_high entry for the animal/animals headword family and the first entry for the singular 'animal' key specifically."
+  },
+  {
+    "english": "a trader / merchant / money lender",
+    "garo": "Mahajon",
+    "category": "occupation",
+    "notes": "Project Owner directive (2026-09-25, chat, this Claude A session): Mahajon(n) = A trader/merchant/money lender. Not native-speaker evidence; provenance-labeled as Project Owner directive per .ai/PROJECT_OWNER_AUTHORITY.md. Alternate spelling given: Mahajonn.",
+    "confidence": "verified_high"
   }
 ]
