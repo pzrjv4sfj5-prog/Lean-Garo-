@@ -139,7 +139,7 @@ Needs investigation.
 generic placeholder (e.g. `"gonga mang"` for "big") instead of composing.
 **Scope check done:** animals *without* their own placeholder row (cow,
 goat, tiger, snake, monkey, pig, rat) already correctly fall through to
-`sov-assembly` and compose correctly (e.g. `"big cow"` → `ma·su dal·a`) — so
+`sov-assembly` and compose correctly (e.g. `"big cow"` → `Matchu dal·a`) — so
 this is a small number of bad `master_dictionary.json` rows, not a
 composition-engine defect. Recommend: delete the placeholder rows for the
 affected animal×adjective combos and let the existing working `sov-assembly`

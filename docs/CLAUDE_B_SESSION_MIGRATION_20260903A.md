@@ -14,7 +14,7 @@ them as if correct:
 | Input | Was fuzzy-matching to | Garo output (wrong) |
 |---|---|---|
 | momo | moo (d=1) | im·bo·a |
-| chow | cow (d=1) | ma·su |
+| chow | cow (d=1) | Matchu |
 | maggie | magic (d=2) | ban·a |
 | paneer | anger (d=2) | Ka·o nanga |
 | panner | anger (d=2) | Ka·o nanga |
