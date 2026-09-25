@@ -38378,14 +38378,14 @@
       "ocr_version": "gemini-flat-legacy-v1"
     },
     "review_status": "approved",
-    "review_notes": "Split from 'Ka-donga' mid-string POS-shift marker '.—n.' (source dictionary convention, same as the '-adj./-n.' prefix pattern seen on page 112).",
+    "review_notes": "Split from 'Ka-donga' mid-string POS-shift marker '.—n.' (source dictionary convention, same as the '-adj./-n.' prefix pattern seen on page 112). | UPDATED 2026-09-24 (Claude A, resync bookkeeping fix): promotion_status changed from 'promoted' to 'duplicate-skip' — the promoted master_dictionary.json row ('Hope'->'Ka·donga', pos: n.) was marked SUPERSEDED on 2026-08-16 (Claude A full-corpus dedup audit: redundant with the already-VERIFIED 'Hope'->'ka·donga' verb entry, part of the a·sa/ka·donga/mik·sok·a 3-way variant set), then hard-deleted on 2026-09-24 (commit f0a186a, Project Owner-driven duplicate-census cleanup consolidating the 'hope' entry down to the NV-082-sourced ka·donga (v.)/ka·dongani (n.) pair). No new linguistic evidence involved — citation trail preserved here since the row itself no longer exists in master_dictionary.json.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-22T05:26:57.949337+00:00",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-22T05:27:04.859Z"
   },
   {

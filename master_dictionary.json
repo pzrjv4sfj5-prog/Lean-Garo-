@@ -519,6 +519,15 @@
     "confidence": "verified_high"
   },
   {
+    "english": "Cow",
+    "garo": "ma·su",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "notes": "SUPERSEDED — 2026-09-25, direct Project Owner chat confirmation (same session as the 'cow'/Matchu row's note) names 'Matchu' as canonical and this form as the one to replace repository-wide. This supersedes the 2026-09-24C restoration note below, which had itself restored an older, now-overridden audit conclusion. Prior note, preserved for the citation trail: 'variant/VERIFIED/HIGH — RESTORED 2026-09-24C (Claude A, resync bug fix): this row was live-breaking-deleted by the same-day duplicate-census cleanup (commit 3985059), which removed the VERIFIED/HIGH value instead of its intended target, the SUPERSEDED Matchu duplicate. No new linguistic evidence — restoring pre-existing citation, not asserting a new one.'",
+    "confidence": "superseded"
+  },
+  {
     "english": "tiger",
     "garo": "Matcha",
     "category": "animals",

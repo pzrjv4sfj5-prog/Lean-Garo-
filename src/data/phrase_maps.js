@@ -250,6 +250,7 @@ export const PHRASE_MAPS = {
   'yellow': 'Rimit',
   'dog': 'Achak',
   'cat': 'Menggo', // NV-135 (2026-09-06): Menggo confirmed, meng·gong superseded
+  'cow': 'Matchu', // 2026-09-25: Project Owner directly confirmed in chat that Matchu, not ma·su, is canonical — see master_dictionary.json "cow"/"Cow" row notes.
   'elephant': 'mongma', // NV-089/reconciliation-v2 (2026-09-07): mongma confirmed canonical; Mong/ha·ti retired from master_dictionary.json
   'tiger': 'Matcha',
   'pig': 'Wak',

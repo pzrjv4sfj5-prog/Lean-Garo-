@@ -31,7 +31,15 @@
     },
     "native_quote_integrity": "Never rewrite a Project Owner chat directive as a direct or reported native quotation unless the quoted/native source actually exists and is being cited as such.",
     "implementation": "Once the directive is understood, implement it within the agent's role boundary, while separately resolving how conflicting legacy evidence should be represented.",
-    "engineering_boundary": "If implementation requires an engineering/runtime change, hand the precise consequence to Claude B; do not use the need for engineering work as a reason to question the Owner directive."
+    "engineering_boundary": "If implementation requires an engineering/runtime change, hand the precise consequence to Claude B; do not use the need for engineering work as a reason to question the Owner directive.",
+    "cross_agent_gpt_protection": {
+      "rule": "GPT may make repository corrections while acting directly on a Project Owner instruction. Such a correction is an authorized Project Owner-directed change and must not be altered, reverted, or superseded by Claude A or Claude B merely because it differs from prior agent work.",
+      "authority": "When GPT explicitly identifies a correction as being made under a current Project Owner directive, Claude A and Claude B must treat that correction as authoritative unless the Project Owner explicitly asks for a change or issues a newer conflicting directive.",
+      "conflict_handling": "If Claude A or Claude B finds conflicting prior repository evidence, they must report and preserve the conflict rather than silently changing the GPT-made correction.",
+      "engineering_verification": "Claude B may test, rebuild, trace runtime dependencies, and make non-semantic compatibility fixes, but must not silently change the Project Owner-directed linguistic/content decision.",
+      "linguistic_verification": "Claude A may audit provenance, scope, and affected English senses, but must not silently replace the GPT-made canonical form.",
+      "example": "The Project Owner directive cow = Matchu supersedes ma·su for cow. Claude A/B must not restore or substitute ma·su unless the Project Owner explicitly directs a new change."
+    }
   },
   "owner_directives_2026_09_08": {
     "three fish": {
@@ -136,7 +144,8 @@
       "grammar rule files",
       "aliases and alternate keys",
       "audit, regression, and migration files",
-      "other runtime-relevant representations discovered by the agent"
+      "other runtime-relevant representations discovered by the agent",
+      "GPT-made corrections explicitly tied to current Project Owner directives"
     ],
     "known_conflict_signal": "known_dictionary_conflicts.json already flags mango, orange, papaya, sweet potato, three fish, three fishs, and watermelon among its 1,659 conflicted English keys, with no resolution recorded there at the time of the evidence package.",
     "garo_dictionary_confidence": "garo_dictionary.json has no confidence field in the inspected evidence package. Its stale entries must therefore be evaluated against the English key/sense and authoritative source-of-truth rather than treated as independent verified evidence.",

@@ -163,6 +163,34 @@ compounds those commits missed — not an independent linguistic call):
   records of what was true when written, not live data, and rewriting
   them would falsify the historical record rather than reflect it.
 
+## Addendum 2 — merge with concurrent Claude A session
+Push was rejected a second time: a concurrent Claude A session (also
+committing as "T", `c7a43f4` etc., timestamped ~13h before the Project
+Owner's direct "Matchu is correct" confirmation in this chat) had
+independently restored `ma·su` in `master_dictionary.json`'s "Cow" row
+and in `src/data/phrase_maps.js`, plus made unrelated fixes (PL-0001453
+bookkeeping, new vocab batch, an owner-confirmed "slowly" correction).
+Merged cleanly except two conflicts (`.ai/WORKSTATE.yaml` log line,
+`compiled_dict.json` — resolved by keeping both log entries and
+regenerating, respectively). Re-applied the Project Owner's live
+confirmation on top: marked the "Cow"/`ma·su` row `superseded` again
+(preserving Claude A's restoration note in the citation trail rather
+than deleting it) and fixed `phrase_maps.js`'s hardcoded `'cow':
+'ma·su'` to `'Matchu'` — `repository-intelligence.js` Check F caught
+this second one directly (compiled_dict vs. phrase_maps mismatch).
+
+Check F also surfaced 6 further NEW mismatches from Claude A's session
+(`slowly`, `shade`, `anus`, `litchi`, `profit`, `ankle` — corrections.json
+values not reflected in compiled_dict.json) that are **not** cow-related
+and not touched here: out of scope for this session and Claude A's own
+lane to reconcile.
+
+Gate after the merge: 8916/8916 dictionary (entry count rose with
+Claude A's new vocab), 460/461 unit tests (same sole pre-existing
+failure), runtime-error-sweep.mjs 0 errors across 15888 calls.
+`repository-intelligence.js` still fails on the 6 unrelated new
+mismatches above (not on anything cow-related).
+
 ## Exact next step
 None queued by the Project Owner beyond the cow investigation closed
 this session. On resume: treat this doc as ground truth, resync against

@@ -501,7 +501,7 @@
   },
   {
     "english": "mother",
-    "garo": "a.ai"
+    "garo": "A.ai"
   },
   {
     "english": "son",
@@ -1189,7 +1189,7 @@
   },
   {
     "english": "bag",
-    "garo": "Thola"
+    "garo": "Jol·a"
   },
   {
     "english": "book",
@@ -2187,7 +2187,7 @@
   },
   {
     "english": "fly",
-    "garo": "Bila"
+    "garo": "Tampi"
   },
   {
     "english": "spider",
@@ -5121,7 +5121,7 @@
   },
   {
     "english": "Mother",
-    "garo": "a.ai"
+    "garo": "A.ai"
   },
   {
     "english": "Son",
@@ -7259,7 +7259,7 @@
   },
   {
     "english": "Bag",
-    "garo": "Thola"
+    "garo": "Jol·a"
   },
   {
     "english": "How much is this?",
@@ -7675,7 +7675,7 @@
   },
   {
     "english": "Fly",
-    "garo": "Bila"
+    "garo": "Tampi"
   },
   {
     "english": "Shake",
@@ -15635,7 +15635,7 @@
   },
   {
     "english": "it is hot",
-    "garo": "mek ong·a"
+    "garo": "Ding·a"
   },
   {
     "english": "it is cold",
@@ -17554,5 +17554,102 @@
   {
     "english": "twenty book",
     "garo": "ki·tap king·Kolgrik"
+  },
+  {
+    "english": "meat fat",
+    "garo": "Mitim",
+    "pos": "noun",
+    "example_en": "The pork meat has a lot of fat.",
+    "example_garo": "Wak be·en mitim bang·a."
+  },
+  {
+    "english": "slowly",
+    "garo": "Ka·sine",
+    "pos": "adverb"
+  },
+  {
+    "english": "drag / trail",
+    "garo": "Salbrita",
+    "pos": "verb"
+  },
+  {
+    "english": "to curse",
+    "garo": "Salbi jabia",
+    "pos": "verb"
+  },
+  {
+    "english": "to spend the day/time",
+    "garo": "Sal re·ata",
+    "pos": "verb"
+  },
+  {
+    "english": "shade",
+    "garo": "Salakkim",
+    "pos": "noun"
+  },
+  {
+    "english": "everyday / daily",
+    "garo": "Salanti",
+    "pos": "adjective"
+  },
+  {
+    "english": "anus",
+    "garo": "Ki·sangkol",
+    "pos": "noun"
+  },
+  {
+    "english": "gourd",
+    "garo": "Lau",
+    "pos": "noun"
+  },
+  {
+    "english": "litchi",
+    "garo": "Lechu",
+    "pos": "noun"
+  },
+  {
+    "english": "profit",
+    "garo": "Lab",
+    "pos": "noun"
+  },
+  {
+    "english": "ankle",
+    "garo": "Ja·gitok",
+    "pos": "noun"
+  },
+  {
+    "english": "something",
+    "garo": "Maiba",
+    "pos": "pronoun"
+  },
+  {
+    "english": "something or other",
+    "garo": "Maiba Maiba",
+    "pos": "noun"
+  },
+  {
+    "english": "several",
+    "garo": "Maiba Maiba",
+    "pos": "adjective"
+  },
+  {
+    "english": "relatives / kith and kin",
+    "garo": "Mahari",
+    "pos": "noun"
+  },
+  {
+    "english": "how is that",
+    "garo": "Maisa",
+    "pos": "interjection"
+  },
+  {
+    "english": "for some reason or other",
+    "garo": "Mainaba",
+    "pos": "adverb"
+  },
+  {
+    "english": "how! / what!",
+    "garo": "Maikasesa",
+    "pos": "interjection"
   }
 ]
