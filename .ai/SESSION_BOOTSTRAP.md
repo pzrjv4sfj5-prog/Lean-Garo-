@@ -2909,3 +2909,60 @@ clean, rebuilt, gate re-verified green post-rebase. No Claude B
 runtime handoff this session. Pushed clean, HEAD `46aa62f` (pre-close
 commit), verified == origin/main. Full detail:
 `docs/CLAUDE_A_SESSION_MIGRATION_20260924.md`.
+
+## 2026-09-24C (Claude A) — Check D bookkeeping fix + 'cow'/ma·su live-regression restore
+
+Resumed from the above doc at HEAD `46aa62f`. Resync found 21
+downstream commits: a same-day duplicate-census cleanup pass (hope
+dedup, `child` normalization, `ma·su` removal — all committed as
+`T`) plus Claude B's own session-close
+(`docs/CLAUDE_B_SESSION_MIGRATION_20260924B.md`), which had already
+found and documented — but not fixed — the same two issues closed
+below.
+
+Full gate on arrival **FAILED**: Check D
+(`repository-intelligence.js`) — `src/data/pending_lexicon.json`
+entry `PL-0001453` (Hope/Ka·donga, n.) still said
+`promotion_status: promoted`, but its `master_dictionary.json` row
+had been hard-deleted this same duplicate-census pass (after being
+correctly marked SUPERSEDED back on 2026-08-16). Fixed:
+`promotion_status` → `duplicate-skip`, with a `review_notes`
+citation trail. No new linguistic evidence — bookkeeping only.
+
+Also found, while verifying: the same duplicate-census pass deleted
+the **wrong** member of the "cow" duplicate pair — removed the
+VERIFIED/HIGH `Cow`→`ma·su` row and left only the SUPERSEDED
+`cow`→`Matchu` row, whose own note names `ma·su` as the correct
+VERIFIED form. This broke live translation (`translate('cow')` →
+passthrough failure, `'where is the cow?'` →
+`'Bano daka [UNKNOWN] [UNKNOWN]'`). Restored the `ma·su` row in both
+`master_dictionary.json` and `src/data/phrase_maps.js`, citing the
+surviving `Matchu` row's own note as evidence — not a new
+linguistic decision.
+
+Two clean rebases during the session (no conflicts). The second
+picked up a same-day Project Owner commit, `Canonicalize ma·su to
+Matchu in translation tests` (`ab7efa5`) — inspected: it only
+reworded a test docstring (`"chow" no longer fuzzy-matches to "cow"
+(Matchu)"`), no assertion or data change. Flagged, not acted on: the
+commit's title reads as intent to make `Matchu` canonical for "cow",
+which would contradict this session's restoration of `ma·su` as the
+VERIFIED/HIGH value — worth an explicit Project Owner check before
+any future session touches "cow" again.
+
+Gate green after fix and at close: 8902/8902 dictionary, 9/9
+grammatical corrections, 461/461 unit tests (was 458 — 3 new
+`translate()`-based tests landed via the pre-existing "has/have"
+work carried in by rebase, not authored this session), 0 new
+repository-intelligence violations, 0 pending-lexicon structural
+problems. Zero-runtime-error sweep clean: 15866/15866 `translate()`
+calls. Live-verified: `translate('cow')` → `ma·su` (0.99,
+phrase-map), `translate('where is the cow?')` → `'Bano ma·su'`
+(0.75, sov-assembly).
+
+No Priority-A audit items from
+`docs/CLAUDE_A_MACHINE_READY_AUDIT_20260924.md` picked up this
+session — the arriving gate failure and live regression took
+priority per one-task-per-session discipline. Next session should
+start there. Pushed clean, HEAD `de7e081`, verified == origin/main.
+Full detail: `docs/CLAUDE_A_SESSION_MIGRATION_20260924C.md`.

@@ -1,5 +1,5 @@
 repository:
-  head: d399ecf
+  head: de7e081
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
@@ -313,7 +313,8 @@ repository:
   head_prior_20260823D: 7e3799d
 claude_a:
   status: active
-  next_action: '2026-09-24 (Claude A, session complete -- see
+  next_action: "2026-09-24C (Claude A, session complete -- see docs/CLAUDE_A_SESSION_MIGRATION_20260924C.md for full detail). Resumed from a Project Owner-named CLAUDE_A_SESSION_MIGRATION_20260924.md at HEAD 46aa62f; resync found 21 downstream commits, including a same-day duplicate-census cleanup pass (all committed as 'T') and Claude B's own session-close (docs/CLAUDE_B_SESSION_MIGRATION_20260924B.md), which had already found-and-documented (not fixed) the same two issues below. Full gate on arrival FAILED: Check D (pending_lexicon.json PL-0001453, promoted row hard-deleted) -- fixed via promotion_status -> duplicate-skip, citation trail only, no new evidence. Also fixed a live regression: the duplicate-census pass deleted the wrong 'cow' duplicate (VERIFIED/HIGH 'ma.su' removed, SUPERSEDED 'Matchu' kept, breaking translate('cow')) -- restored ma.su in master_dictionary.json + phrase_maps.js citing the surviving row's own note. Gate green: 8902/8902 dictionary, 9/9 grammatical corrections, 461/461 unit tests, 0 new repository-intelligence violations, 0 pending-lexicon problems, zero-runtime-error sweep clean (15866/15866). Two rebases (clean, no conflicts) onto concurrent commits during the session, including a same-day 'Canonicalize ma.su to Matchu in translation tests' commit (ab7efa5, test-docstring wording only, no data/assertion change -- flagged below as worth Project Owner clarification since its title reads as intent to make Matchu canonical, which would contradict this session's restoration; not acted on without confirmation). No Priority-A audit items (docs/CLAUDE_A_MACHINE_READY_AUDIT_20260924.md) picked up -- next session should start there. Pushed clean, final HEAD to be confirmed at close, verified == origin/main, clean tree."
+  next_action_prior_20260924C: '2026-09-24 (Claude A, session complete -- see
     docs/CLAUDE_A_SESSION_MIGRATION_20260924.md for full detail).
     Resumed from a Project Owner-named docs/CLAUDE_A_SESSION_MIGRATION_20260923.md
     (an early-day doc in the 2026-09-23 chain); resync found two more
@@ -1637,7 +1638,8 @@ claude_a:
     prepare-data.js to verify, clean diff). Full gate green: 8200/8200,
     9/9, 271/271, build clean. Migration doc:
     docs/CLAUDE_A_SESSION_MIGRATION_20260831D.md.'
-  migration_doc: 'docs/CLAUDE_A_SESSION_MIGRATION_20260905B.md - THIS IS
+  migration_doc: "docs/CLAUDE_A_SESSION_MIGRATION_20260924C.md - THIS IS THE AUTHORITATIVE MIGRATION DOC as of 2026-09-24C. See claude_a.next_action above for full detail (pending_lexicon.json PL-0001453 bookkeeping fix + 'cow'/ma.su live regression restore)."
+  migration_doc_prior_20260924C: 'docs/CLAUDE_A_SESSION_MIGRATION_20260905B.md - THIS IS
     THE AUTHORITATIVE MIGRATION DOC as of 2026-09-05B. See claude_a.
     next_action above for full detail (NV-133 rice cooked/uncooked
     resolution + direct buy-rice sentence; elephant corrections.json
