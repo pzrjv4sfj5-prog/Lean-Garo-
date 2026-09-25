@@ -86,20 +86,50 @@ same session to close out the "worth an explicit Project Owner
 check" flag left by `20260924C`, so a future session reads the
 resolution rather than re-opening the question.
 
+## Post-fix drift: 5 more corrections.json overrides + 1 new entry
+
+Before push, `git fetch` found 10 more downstream commits (all `T`)
+— a "slowly = Ka·sine" override plus two vocabulary-batch commits
+adding `corrections.json` entries. Rebased clean (no conflicts), but
+the rebuild then failed Check F (`repository-intelligence.js`
+runtime-cascade source agreement): the vocabulary-batch commit had
+added 5 `corrections.json` entries for words that already had
+different, raka-dotted VERIFIED forms in the dictionary — shade,
+anus, litchi, profit, ankle (plus "slowly" itself, not yet
+baselined). Live-checked: all 5 were already shipping the new
+undotted forms at runtime (`corrections.json` wins at translate()
+step 1), so this was a real, uncited value change, not just a
+data-hygiene mismatch.
+
+Flagged to the Project Owner rather than guessing which form was
+right. Confirmed: all 6 are intentional. Added all 6 keys to
+`src/data/known_cross_source_conflicts.json` (Check F's documented
+baseline mechanism, per `docs/REPOSITORY_INTELLIGENCE.md`) rather
+than altering any Garo values — this is override-confirmation, not
+new linguistic content.
+
+Also added, per a new Project Owner directive given directly in
+chat this session: `master_dictionary.json` — `"a trader / merchant
+/ money lender"` → `"Mahajon"` (alt spelling `Mahajonn` noted in
+row), provenance-labeled per `.ai/PROJECT_OWNER_AUTHORITY.md`.
+Live-verified: `translate("a trader / merchant / money lender")` →
+`Mahajon` (0.98, exact-phrase).
+
 ## Runtime Handoff to Claude B
 
 None. Zero-runtime-code session; only `master_dictionary.json`,
-`src/data/phrase_maps.js`, and regenerated compiled artifacts
-touched.
+`src/data/phrase_maps.js`, `src/data/known_cross_source_conflicts.json`,
+and regenerated compiled artifacts touched.
 
 ## Gate status
 
-Green throughout and at close: 8902/8902 dictionary entries, 9/9
+Green throughout and at close: 8903/8903 dictionary entries, 9/9
 grammatical corrections, 461/461 unit tests, 0 new
 repository-intelligence violations, 0 pending-lexicon structural
 problems. Live-verified: `translate('cow')` → `Matchu` (0.99,
 phrase-map), `translate('where is the cow?')` → `'Bano Matchu'`
-(0.75, sov-assembly).
+(0.75, sov-assembly), `translate("a trader / merchant / money
+lender")` → `Mahajon` (0.98, exact-phrase).
 
 ## Not picked up this session
 
@@ -110,14 +140,19 @@ starting point.
 
 ## Repository status at close
 
-- HEAD: `f7f9e06`
-- `origin/main`: matches HEAD exactly (verified via `git fetch` +
-  comparison)
-- `git status`: clean, no uncommitted changes
+- HEAD: to be confirmed post-push (last local commit `b5b4d42` at
+  time of writing this doc; WORKSTATE.yaml/SESSION_BOOTSTRAP.md
+  updates and this doc's own commit come after)
+- `origin/main`: to be re-verified via `git fetch` + comparison
+  immediately before push, per Rule 10/multi-Claude push collision
+  protocol, given two rounds of concurrent drift already seen this
+  session
+- `git status`: clean at time of writing, no uncommitted changes
+  outside this doc's own pending commit
 - `.ai/WORKSTATE.yaml`: updated (head + `claude_a.next_action`)
 - `.ai/SESSION_BOOTSTRAP.md`: updated (cow flag resolved)
 - This migration doc: complete
-- No local-only commits
+- No local-only commits expected after final push
 - Native-validation status: unchanged this session (no NV items
   touched)
 - Blocker status: none

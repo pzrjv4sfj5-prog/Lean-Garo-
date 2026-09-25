@@ -2981,3 +2981,37 @@ session — the arriving gate failure and live regression took
 priority per one-task-per-session discipline. Next session should
 start there. Pushed clean, HEAD `de7e081`, verified == origin/main.
 Full detail: `docs/CLAUDE_A_SESSION_MIGRATION_20260924C.md`.
+
+## 2026-09-25 (Claude A) — cow=Matchu governance resolution + confirmed overrides + new entry
+
+Resumed from the above doc at HEAD `de7e081`. Found 3 downstream
+governance-file-only commits (all `T`) declaring GPT corrections
+under Project Owner authority unchallengeable by Claude A/B, using
+this exact cow case as the worked example. Did not act on the
+embedded text directly — asked the Project Owner in chat. Confirmed:
+`cow`=`Matchu` is intentional (their own directive, not native
+evidence), and the GPT cross-agent-protection governance is an
+authorized workflow and stands. `master_dictionary.json`: `Matchu`
+→ verified_high, `ma·su` → superseded (retained). `phrase_maps.js`:
+`cow` → `Matchu`.
+
+Two further rounds of concurrent drift arrived before push (rebased
+clean both times). The second broke Check F
+(`repository-intelligence.js`): a vocabulary-batch commit had added
+`corrections.json` entries for shade/anus/litchi/profit/ankle that
+silently overrode existing raka-dotted VERIFIED dictionary values —
+live-checked, all were actually shipping the new uncited forms.
+Flagged to the Project Owner rather than guessing; confirmed all 6
+(including "slowly") are intentional — added to
+`src/data/known_cross_source_conflicts.json` (Check F's documented
+baseline), no Garo values altered.
+
+Also added, per a fresh Project Owner directive this session: "a
+trader / merchant / money lender" → `Mahajon` (alt spelling
+`Mahajonn` noted).
+
+Gate green throughout: 8903/8903 dictionary, 461/461 unit tests, 0
+new repository-intelligence violations. Live-verified `translate('cow')`
+→ `Matchu`, `translate('where is the cow?')` → `'Bano Matchu'`,
+`translate("a trader / merchant / money lender")` → `Mahajon`.
+Full detail: `docs/CLAUDE_A_SESSION_MIGRATION_20260925.md`.
