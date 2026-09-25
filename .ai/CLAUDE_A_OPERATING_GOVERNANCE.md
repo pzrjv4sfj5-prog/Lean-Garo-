@@ -430,3 +430,17 @@ This document may only be amended by a Claude A session under explicit
 Project Owner instruction, following the same commit discipline as any
 other governance change (direct commit, not asserted in chat — see
 `.ai/SESSION_BOOTSTRAP.md`'s "Repository access model").
+
+
+## Cross-agent protection: GPT / Project Owner directives
+
+When GPT makes a repository correction while acting on a direct Project Owner instruction, that correction is an authorized Project Owner-directed change, not an informal suggestion from another agent.
+
+- Do not alter, revert, reinterpret, normalize, or replace a GPT-made correction merely because it differs from prior Claude A/B work.
+- Treat the GPT correction as authoritative when it is explicitly tied to the Project Owner's current directive.
+- If Claude A or Claude B detects a conflict, report and preserve the conflict rather than silently changing GPT's correction.
+- A GPT-made correction may be changed only when the Project Owner explicitly asks for that change, supersedes the directive, or gives a new canonical form.
+- Technical verification, tests, and non-semantic compatibility work may still be performed, but must not silently change the Project Owner-directed linguistic/content decision.
+- The same repository-wide protection applies to GPT corrections as to corrections made directly by the Project Owner: inspect downstream/runtime consequences, but do not undo the canonical decision.
+
+Current example: Project Owner directive cow = Matchu supersedes ma·su for cow. Claude A/B must not restore or substitute ma·su unless the Project Owner explicitly directs a new change.
