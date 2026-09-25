@@ -17616,5 +17616,40 @@
     "english": "ankle",
     "garo": "Ja·gitok",
     "pos": "noun"
+  },
+  {
+    "english": "something",
+    "garo": "Maiba",
+    "pos": "pronoun"
+  },
+  {
+    "english": "something or other",
+    "garo": "Maiba Maiba",
+    "pos": "noun"
+  },
+  {
+    "english": "several",
+    "garo": "Maiba Maiba",
+    "pos": "adjective"
+  },
+  {
+    "english": "relatives / kith and kin",
+    "garo": "Mahari",
+    "pos": "noun"
+  },
+  {
+    "english": "how is that",
+    "garo": "Maisa",
+    "pos": "interjection"
+  },
+  {
+    "english": "for some reason or other",
+    "garo": "Mainaba",
+    "pos": "adverb"
+  },
+  {
+    "english": "how! / what!",
+    "garo": "Maikasesa",
+    "pos": "interjection"
   }
 ]
