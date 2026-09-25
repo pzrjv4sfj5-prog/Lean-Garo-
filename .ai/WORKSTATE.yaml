@@ -1,5 +1,28 @@
 repository:
-  head: d399ecf
+  head: 1fa5ca4
+  last_updated_20260925: '2026-09-25 (Claude B, session close): investigated
+    the "cow" regression flagged urgent/unresolved by the prior session
+    (docs/CLAUDE_B_SESSION_MIGRATION_20260924B.md) -- ma·su removed
+    dictionary-wide by concurrent dedup commits, no replacement. Root
+    cause: master_dictionary.json''s only "cow" row is confidence:
+    superseded (Matchu); the VERIFIED/HIGH ma·su row was deleted from
+    master by the dedup commits. A direct commit by "T" (1fa5ca4)
+    restored ma·su only in garo_dictionary.json, not master -- looked
+    insufficient at first, but prepare-data.js''s pickPrimary excludes
+    SUPERSEDED master candidates and falls through to other sources, so
+    regenerating compiled_dict.json (pure regeneration, no dictionary
+    content edited) picked up garo_dictionary.json''s ma·su and fixed
+    the runtime. Verified live: "where is the cow?" -> "Bano ma·su",
+    "cow" -> "ma·su", etc. tests/unit/question_animal_placeholder.test.js
+    cow/goat regression guard now passes. Flagged (not fixed, Claude A''s
+    lane): master_dictionary.json still has no live ma·su row of its
+    own -- runtime correctness is fragile, depends entirely on
+    garo_dictionary.json as a fallback source. Gate at close: 8902/8902
+    dictionary, 9/9 grammatical corrections, 460/461 unit tests (was
+    459/461; the cow regression guard now passes, the pre-existing
+    PL-0001453 "Hope" casing failure remains, unchanged, Claude A''s
+    lane), runtime-error-sweep.mjs 15866/15866 calls 0 errors. Full
+    account in docs/CLAUDE_B_SESSION_MIGRATION_20260925.md.'
   last_updated_20260830: '2026-08-30 (Claude B, session close): engineering-
     only session per Project Owner directive. 4 real bugs found and fixed,
     all with regression coverage: (1) SUPERSEDED-eligibility gap -- 3
