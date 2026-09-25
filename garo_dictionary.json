@@ -17554,5 +17554,12 @@
   {
     "english": "twenty book",
     "garo": "ki·tap king·Kolgrik"
+  },
+  {
+    "english": "meat fat",
+    "garo": "Mitim",
+    "pos": "noun",
+    "example_en": "The pork meat has a lot of fat.",
+    "example_garo": "Wak be·en mitim bang·a."
   }
 ]
