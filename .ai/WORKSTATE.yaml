@@ -1,5 +1,34 @@
 repository:
-  head: 62e12cb+c5e6c6b (merged; this commit is the merge)
+  head: 016161d
+  last_updated_20260925C: '2026-09-25C (Claude B, session close, full
+    governance): "cow" is settled -- Matchu confirmed directly by the
+    Project Owner, applied and surviving a merge against a concurrent
+    Claude A session that had independently restored ma·su; see
+    20260925B below for the mechanics. This entry covers what happened
+    after: checked the 5-word Maiba/Mahari/Maisa/Mainaba/Maikasesa
+    batch through the sentence builder as the Project Owner asked --
+    all 5 resolve correctly standalone/embedded except 2 composition
+    gaps left open (engineering, not data): "several" (Maiba Maiba) is
+    silently dropped in composed sentences ("i have several books" ->
+    no quantifier at all); "for some reason or other" (Mainaba)
+    produces [UNKNOWN] when embedded in a sentence. Also added one
+    Project-Owner-confirmed idiom to src/data/corrections.json: "the
+    pork meat has a lot of fat" -> "Wak be·en mit·am bang·a" (does not
+    compose literally; bare composition produced 4x [UNKNOWN] before
+    this fix). A second acceptable form the Project Owner gave (Wak
+    be''enan mitim rarasa) is NOT captured anywhere -- unconfirmed
+    normalization for "rarasa", and corrections.json holds one value
+    per key. Gate at close: 8916/8916 dictionary, 9/9 grammatical
+    corrections, 460/461 unit tests (sole failure: pre-existing
+    PL-0001453 "Hope" issue, Claude A''s lane, unchanged all session),
+    runtime-error-sweep.mjs 15888/15888 calls, 0 errors. Also noted,
+    not touched (Claude A''s lane, Project Owner says Claude A is
+    already on it): 6 NEW repository-intelligence.js Check F mismatches
+    from Claude A''s concurrent session (slowly, shade, anus, litchi,
+    profit, ankle -- corrections.json values not reflected in
+    compiled_dict.json). Working tree clean, git fetch confirmed no
+    drift from origin/main at close. Full account in
+    docs/CLAUDE_B_SESSION_MIGRATION_20260925.md (3 addenda).'
   last_updated_20260925B: '2026-09-25B (Claude B): Project Owner directly
     confirmed in chat that Matchu, not ma·su, is the canonical "cow"
     form -- overriding the fix earlier in this same session (see

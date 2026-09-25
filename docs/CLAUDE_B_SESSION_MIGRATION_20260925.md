@@ -191,9 +191,101 @@ failure), runtime-error-sweep.mjs 0 errors across 15888 calls.
 `repository-intelligence.js` still fails on the 6 unrelated new
 mismatches above (not on anything cow-related).
 
+## Addendum 3 — sentence-builder check + one more idiom, session close
+Checked the 5 new words from Claude A's "Maiba/Mahari/Maisa/Mainaba/
+Maikasesa" batch through the sentence builder (Project Owner asked for
+this explicitly). All 5 resolve correctly as exact-phrase lookups,
+standalone or embedded. Two composition gaps found and **left open**
+(grammar-assembly layer issue, not data — flagged, not fixed, given the
+size/risk of touching that code without more investigation time):
+- `"several"` (Maiba Maiba) is silently dropped when composed into a
+  full sentence: `"i have several books"` → `Angao ki·tap donga` (no
+  quantifier at all).
+- `"for some reason or other"` (Mainaba) breaks when embedded:
+  `"he came for some reason or other"` → `Ua [UNKNOWN]·ko re·ba·aha`.
+- Both work fine as exact standalone phrases (`"several"` →
+  `Maiba Maiba`, `"for some reason or other"` → `Mainaba`).
+
+Also added one native-speaker-confirmed idiom the Project Owner gave
+directly in chat: `"the pork meat has a lot of fat"` does not compose
+literally (bare composition produced `[UNKNOWN]` x4 before this fix).
+Added to `src/data/corrections.json` as an exact-phrase override:
+`"the pork meat has a lot of fat": "Wak be·en mit·am bang·a"`
+(normalized to the repo's `·` glottal-stop convention per the Project
+Owner's own confirmation that `be'en` = `be·en`). The Project Owner
+gave a second acceptable form (`Wak be'enan mitim rarasa`) which was
+**not** captured anywhere — only one value fits `corrections.json`'s
+flat key→value shape, and the Project Owner did not confirm normalized
+spelling for `rarasa` (no existing dictionary citation for it) or
+resolve which of the two is primary. Flagged as an open item below
+rather than guessing.
+
+Gate at this point: 8916/8916 dictionary, 9/9 grammatical corrections,
+460/461 unit tests (same sole pre-existing PL-0001453 "Hope" failure,
+Claude A's lane, unchanged all session), runtime-error-sweep.mjs
+15888/15888 calls, 0 errors. Working tree clean, no drift from origin
+at close (`git fetch` confirmed).
+
+## Current commit / state (final, at session close)
+- HEAD at close: **016161d** — this doc's own commit lands on top.
+- Working tree clean, `git fetch` confirmed no drift from `origin/main`.
+- Gate: 8916/8916 dictionary entries, 9/9 grammatical corrections,
+  460/461 unit tests, runtime-error-sweep.mjs 15888/15888 calls with
+  0 errors.
+
+## Open issues (updated, session close)
+Carried forward unchanged from prior sessions (not touched this
+session, still open): leading-time-word subject-detection gap
+("tomorrow he will go to the market"); AI-003 multi-word `VERB_LEMMAS`
+matcher gap; Claude D's to-prefix canonicalization (Owner-blocked);
+`VERB_LEMMAS` common-verb coverage gap; S6.2 pronoun `·ko` adjudication
+("us"); `-de`/`-ara` marker distinction; `corrections.json` "has three
+children" bare-subject divergence; **repository-intelligence.js Check D,
+PL-0001453** ("Hope" casing mismatch — sole unit-test failure all
+session, Claude A's lane).
+
+New this session:
+- **"cow" is now stable and settled**: `Matchu` confirmed directly by
+  the Project Owner in chat, applied across `master_dictionary.json`
+  (both the "cow" and "Cow" rows — the latter marked superseded, not
+  deleted, full citation trail preserved), `garo_dictionary.json`,
+  `src/data/phrase_maps.js`, and the two test files, surviving a merge
+  with a concurrent Claude A session that had independently restored
+  the older `ma·su` conclusion. No further action needed here unless
+  new evidence surfaces.
+- **6 unrelated NEW mismatches from Claude A's concurrent session**
+  (`repository-intelligence.js` Check F): `slowly`, `shade`, `anus`,
+  `litchi`, `profit`, `ankle` — each has a `corrections.json` value not
+  reflected in `compiled_dict.json`. Not touched, not investigated
+  beyond naming them; Claude A's own lane to reconcile (Claude A is
+  already aware, per the Project Owner).
+- **Two sentence-builder composition gaps**, found while checking the
+  new Maiba/Mahari/Maisa/Mainaba/Maikasesa vocabulary batch (Addendum
+  3 above): `"several"` (Maiba Maiba) silently dropped in composed
+  sentences; `"for some reason or other"` (Mainaba) produces
+  `[UNKNOWN]` when embedded. Both are grammar-assembly-layer bugs
+  (engineering, Claude B's lane), not data issues. Flagged, not fixed
+  — need more investigation time than this session had.
+- **"the pork meat has a lot of fat" idiom**: added as a
+  `corrections.json` exact-phrase override, Project-Owner-confirmed,
+  does not compose literally. Only one of the two forms the Project
+  Owner gave is captured (see Addendum 3) — the second
+  (`Wak be'enan mitim rarasa`) is unconfirmed/unnormalized and not
+  stored anywhere.
+
 ## Exact next step
-None queued by the Project Owner beyond the cow investigation closed
-this session. On resume: treat this doc as ground truth, resync against
-actual `origin/main` (`git fetch` + compare, do not assume zero drift),
-re-run the full gate fresh, then either action the "cow" fragility note
-above (Claude A) or pick up one of the other open issues.
+No single next step queued by the Project Owner at close. Three
+concrete candidates, in the order they were raised this session:
+1. Fix the two sentence-builder composition gaps ("several" dropped;
+   "for some reason or other" → [UNKNOWN] when embedded) — engineering,
+   Claude B's lane.
+2. Resolve and store the second pork-fat form, or confirm the first is
+   the only one to keep.
+3. Claude A's 6 unrelated Check F mismatches, and the long-standing
+   PL-0001453 Check D failure — both Claude A's lane; Project Owner has
+   indicated Claude A is already on it.
+
+On resume: treat this doc as ground truth, resync against actual
+`origin/main` (`git fetch` + compare, do not assume zero drift), re-run
+the full gate fresh, then pick up whichever of the above the Project
+Owner directs.
