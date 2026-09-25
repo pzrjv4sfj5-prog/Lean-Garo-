@@ -1,5 +1,23 @@
 repository:
-  head: 1fa5ca4
+  head: ab7efa5
+  last_updated_20260925B: '2026-09-25B (Claude B): Project Owner directly
+    confirmed in chat that Matchu, not ma·su, is the canonical "cow"
+    form -- overriding the fix earlier in this same session (see
+    last_updated_20260925 below) and the 2026-08-01 Claude A audit note
+    it relied on. Per .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json this is
+    authoritative without a separate proof gate. master_dictionary.json
+    "cow" row promoted confidence: superseded -> verified_high with an
+    updated note; 2 compounds the Project Owner''s own repo commits
+    missed (cattle: "ma·su mat·ti" -> "Matchu mat·ti"; cow dung/dung:
+    "ma·su·ke·em·a" -> "Matchu·ke·em·a", 2 rows) fixed to match.
+    Regenerated compiled_dict.json fresh; "cow" no longer superseded-
+    only-held. Gate: 8902/8902 dictionary, 9/9 grammatical corrections,
+    460/461 unit tests (sole failure: pre-existing PL-0001453 "Hope"
+    issue, unchanged, Claude A''s lane), runtime-error-sweep.mjs
+    15866/15866 0 errors. Verified live: "where is the cow?" -> "Bano
+    Matchu". Did not touch backups/, docs/migration_logs/, or audit/
+    -- those are historical records, not live data. Full account in
+    docs/CLAUDE_B_SESSION_MIGRATION_20260925.md addendum.'
   last_updated_20260925: '2026-09-25 (Claude B, session close): investigated
     the "cow" regression flagged urgent/unresolved by the prior session
     (docs/CLAUDE_B_SESSION_MIGRATION_20260924B.md) -- ma·su removed

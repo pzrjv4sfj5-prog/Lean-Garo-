@@ -515,8 +515,8 @@
     "english": "cow",
     "garo": "Matchu",
     "category": "animals",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'cow' has VERIFIED/HIGH form(s) ['ma·su']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — 2026-09-25, direct Project Owner chat confirmation: 'Matchu' is the canonical Garo form for 'cow', superseding the prior 2026-08-01 audit note that had favored 'ma·su' (that form is now itself SUPERSEDED — see its own row). No separate proof gate required per .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json.",
+    "confidence": "verified_high"
   },
   {
     "english": "tiger",
@@ -26125,7 +26125,7 @@
   },
   {
     "english": "cattle",
-    "garo": "ma·su mat·ti",
+    "garo": "Matchu mat·ti",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -27700,7 +27700,7 @@
   },
   {
     "english": "cow dung",
-    "garo": "ma·su·ke·em·a",
+    "garo": "Matchu·ke·em·a",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -29761,7 +29761,7 @@
   },
   {
     "english": "dung",
-    "garo": "ma·su·ke·em·a",
+    "garo": "Matchu·ke·em·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,

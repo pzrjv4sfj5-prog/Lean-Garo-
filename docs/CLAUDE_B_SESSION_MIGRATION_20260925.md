@@ -120,6 +120,49 @@ words, which forms) — did not attempt to guess which without a citation.
 - PAT provided fresh in chat this session, used only to set the git
   remote URL for clone/push, never written to any tracked file.
 
+## Addendum — Project Owner overrode "cow" decision mid-session
+After the above was written and pushed, two more direct commits by "T"
+landed on `origin/main` (`351c73a` "Restore Matchu as canonical cow
+form", plus a batch of "Canonicalize ma·su to Matchu repository-wide"
+commits including test-file edits) reversing the `ma·su` conclusion.
+Regenerating from that state dropped "cow" from the compiled dictionary
+entirely (both remaining candidates matched the already-superseded
+value and were filtered out) — flagged directly to the Project Owner in
+chat rather than silently pushing a broken build.
+
+**Project Owner confirmed directly in chat: `Matchu` is correct**, to
+replace `ma·su` and its compounds repository-wide. Per
+`.ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json` this is authoritative
+without a separate proof gate.
+
+Engineering-side follow-through (data edits here are a direct
+transcription of the Project Owner's own repo commits plus the
+compounds those commits missed — not an independent linguistic call):
+- `master_dictionary.json` "cow" row: promoted from
+  `confidence: "superseded"` to `confidence: "verified_high"`, note
+  updated to record the 2026-09-25 Project Owner confirmation
+  superseding the prior 2026-08-01 audit note (which had favored
+  `ma·su`).
+- Two compounds the repository-wide commits missed (`garo_dictionary.json`
+  and the test files were already updated by "T"; these two live only
+  in `master_dictionary.json`): `"cattle": "ma·su mat·ti"` →
+  `"Matchu mat·ti"`; `"cow dung"` / `"dung": "ma·su·ke·em·a"` (2 rows)
+  → `"Matchu·ke·em·a"`.
+- Regenerated `compiled_dict.json` fresh. `"cow"` is no longer in the
+  SUPERSEDED-only held list (52, back down from the 53 the broken
+  intermediate state produced).
+- Full gate re-run clean at this final state: 8902/8902 dictionary,
+  9/9 grammatical corrections, 460/461 unit tests (the one failure is
+  the pre-existing PL-0001453 "Hope" issue, unchanged, Claude A's
+  lane), runtime-error-sweep.mjs 15866/15866 calls 0 errors.
+- Verified live: `where is the cow?` → `Bano Matchu`; `cow` → `Matchu`;
+  `cattle` → `Matchu mat·ti`; `the cow is big` → `Matchu dal·a`.
+- Did **not** touch historical/archival files (`backups/`,
+  `docs/migration_logs/`, `audit/segregation/MASTER_SEGREGATION.json`,
+  past migration docs other than this one) — those are point-in-time
+  records of what was true when written, not live data, and rewriting
+  them would falsify the historical record rather than reflect it.
+
 ## Exact next step
 None queued by the Project Owner beyond the cow investigation closed
 this session. On resume: treat this doc as ground truth, resync against
