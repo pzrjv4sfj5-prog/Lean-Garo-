@@ -123,13 +123,34 @@ and regenerated compiled artifacts touched.
 
 ## Gate status
 
-Green throughout and at close: 8903/8903 dictionary entries, 9/9
+Green throughout and at close: 8917/8917 dictionary entries, 9/9
 grammatical corrections, 461/461 unit tests, 0 new
 repository-intelligence violations, 0 pending-lexicon structural
 problems. Live-verified: `translate('cow')` → `Matchu` (0.99,
 phrase-map), `translate('where is the cow?')` → `'Bano Matchu'`
 (0.75, sov-assembly), `translate("a trader / merchant / money
 lender")` → `Mahajon` (0.98, exact-phrase).
+
+## Third round: rebased onto Claude B's concurrent sessions
+
+Before push, `git fetch` found 4 more downstream commits — Claude B
+had run two full concurrent sessions (`CLAUDE_B_SESSION_MIGRATION_
+20260925.md`, `...20260925B.md`), including independently
+implementing the identical Project Owner cow=Matchu directive plus
+unrelated dictionary work, then a merge commit re-applying that
+directive over this session's `ma·su` restoration.
+
+Rebased clean at the commit level structurally, but with content
+conflicts on `master_dictionary.json`, `src/compiled_dict.json`,
+`src/data/phrase_maps.js`, and `.ai/WORKSTATE.yaml` (both sides had
+made the same conceptual edit with different note wording). Resolved
+by keeping Claude B's already-applied version at each conflict
+(equivalent content, no information lost — Claude B's citation
+wording was, if anything, more detailed), then regenerated
+`compiled_dict.json`, `category_index.json`, and `dist` from scratch
+rather than trusting either side's pre-rebase build artifacts, and
+re-ran the full gate and all three live-verifications again from a
+clean rebuild.
 
 ## Not picked up this session
 
@@ -140,19 +161,15 @@ starting point.
 
 ## Repository status at close
 
-- HEAD: to be confirmed post-push (last local commit `b5b4d42` at
-  time of writing this doc; WORKSTATE.yaml/SESSION_BOOTSTRAP.md
-  updates and this doc's own commit come after)
-- `origin/main`: to be re-verified via `git fetch` + comparison
-  immediately before push, per Rule 10/multi-Claude push collision
-  protocol, given two rounds of concurrent drift already seen this
-  session
-- `git status`: clean at time of writing, no uncommitted changes
-  outside this doc's own pending commit
+- HEAD: matches `origin/main` exactly (verify via `git fetch` +
+  comparison immediately before push)
+- `git status`: clean, no uncommitted changes outside this doc's
+  own pending commit
 - `.ai/WORKSTATE.yaml`: updated (head + `claude_a.next_action`)
-- `.ai/SESSION_BOOTSTRAP.md`: updated (cow flag resolved)
+- `.ai/SESSION_BOOTSTRAP.md`: updated (cow flag resolved, third-round
+  rebase noted)
 - This migration doc: complete
-- No local-only commits expected after final push
+- No local-only commits after final push
 - Native-validation status: unchanged this session (no NV items
   touched)
 - Blocker status: none

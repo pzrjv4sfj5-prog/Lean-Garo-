@@ -3010,7 +3010,17 @@ Also added, per a fresh Project Owner directive this session: "a
 trader / merchant / money lender" → `Mahajon` (alt spelling
 `Mahajonn` noted).
 
-Gate green throughout: 8903/8903 dictionary, 461/461 unit tests, 0
+A third round of drift then arrived: Claude B had run two concurrent
+sessions independently implementing the identical cow=Matchu
+directive, plus unrelated dictionary work. Rebase conflicts on
+`master_dictionary.json`/`compiled_dict.json`/`phrase_maps.js`/
+`WORKSTATE.yaml` resolved by keeping the equivalent already-applied
+content (both sides had converged on the same end state), then
+regenerated `compiled_dict.json`/`category_index.json`/`dist` fresh
+and re-verified the full gate rather than trusting either side's
+pre-rebase artifacts.
+
+Gate green at final close: 8917/8917 dictionary, 461/461 unit tests, 0
 new repository-intelligence violations. Live-verified `translate('cow')`
 → `Matchu`, `translate('where is the cow?')` → `'Bano Matchu'`,
 `translate("a trader / merchant / money lender")` → `Mahajon`.
