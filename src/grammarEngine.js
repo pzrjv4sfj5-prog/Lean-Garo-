@@ -867,7 +867,13 @@ export function analyzeGrammar(input) {
           // translation, not an engineering fix.
           const perWordGaro = objectWords.map((w) => lookupPhrase(w) || lookupGaro(w) || null);
           const allWordsResolved = perWordGaro.every((g) => g !== null);
-          objGaro = allWordsResolved ? perWordGaro[perWordGaro.length - 1] : '[UNKNOWN]';
+          const quantifierIdx = perWordGaro.length > 1 ? perWordGaro.findIndex((g) => g && g.toLowerCase() === 'bang·a') : -1;
+          if (allWordsResolved && quantifierIdx !== -1 && quantifierIdx === perWordGaro.length - 2) {
+            // quantifier directly precedes the head noun ("several/many books") -- compose Noun + bang·a.
+            objGaro = perWordGaro[perWordGaro.length - 1] + ' bang·a';
+          } else {
+            objGaro = allWordsResolved ? perWordGaro[perWordGaro.length - 1] : '[UNKNOWN]';
+          }
         }
       }
       const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
