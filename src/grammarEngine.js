@@ -14,7 +14,7 @@ import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
 import MODAL_CAN_MAP from './data/modal_can_map.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import POSSESSIVES from './data/possessives.json' with { type: 'json' };
-import { NUMBER_WORDS, countNoun, parseCountingPhrase } from './garo_classifier.js';
+import { NUMBER_WORDS, countNoun, parseCountingPhrase, singularize } from './garo_classifier.js';
 import { lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { lookupPhrase } from './data/phrase_maps.js';
 import { applyNegation, applyTense, findVerbForm, getConjugationRoot, applyTopicSuffix, composeBoundOnlyObject, applyDeclarativeEndingAia } from './morphologyEngine.js';
@@ -865,7 +865,13 @@ export function analyzeGrammar(input) {
           // pre-fix fallback) — this fix does not attempt multi-word
           // object composition, which would be inventing a linguistic
           // translation, not an engineering fix.
-          const perWordGaro = objectWords.map((w) => lookupPhrase(w) || lookupGaro(w) || null);
+          const perWordGaro = objectWords.map((w) => {
+            const lw = w.toLowerCase();
+            const singular = singularize(lw);
+            return lookupPhrase(w) || lookupGaro(w)
+              || (singular !== lw && (lookupPhrase(singular) || lookupGaro(singular)))
+              || null;
+          });
           const allWordsResolved = perWordGaro.every((g) => g !== null);
           const quantifierIdx = perWordGaro.length > 1 ? perWordGaro.findIndex((g) => g && g.toLowerCase() === 'bang·a') : -1;
           if (allWordsResolved && quantifierIdx !== -1 && quantifierIdx === perWordGaro.length - 2) {

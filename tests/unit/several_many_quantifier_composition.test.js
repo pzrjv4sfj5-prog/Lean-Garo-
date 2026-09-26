@@ -53,3 +53,33 @@ test('numeral object composition (a different, already-working path) is untouche
   const r = await translate('i have three books');
   assert.match(r.garo, /king·gittam/);
 });
+
+// Follow-up fix, same session: "she has several dogs" and "we have many
+// students" were producing wrong word order ("Ua donga Achak bang·a" --
+// verb before object). Root cause: "dogs"/"students" have no direct
+// plural dictionary entry (only the singular does), so this object
+// resolver's per-word lookup (no plural stripping) failed on them,
+// object.garo became [UNKNOWN], and translate() fell all the way through
+// to sov-assembly -- a much weaker fallback whose verb-detection
+// heuristic mis-identifies bang·a as the verb (it matches that
+// heuristic's generic ·a$ suffix check). Fix: reuse garo_classifier.js's
+// existing singularize() as a fallback in this resolver, so these
+// sentences now succeed in grammar-assembly (the correct SOV path) and
+// never reach sov-assembly at all.
+test('"she has several dogs" uses grammar-assembly with correct SOV order, not the sov-assembly fallback', async () => {
+  const r = await translate('she has several dogs');
+  assert.equal(r.method, 'grammar-assembly');
+  assert.equal(r.garo, 'Uao achak bang·a donga');
+});
+
+test('"we have many students" uses grammar-assembly with correct SOV order, not the sov-assembly fallback', async () => {
+  const r = await translate('we have many students');
+  assert.equal(r.method, 'grammar-assembly');
+  assert.equal(r.garo, 'An·chingo chattro bang·a donga');
+});
+
+test('plural object noun with no quantifier still resolves via the singularize fallback ("she has cats")', async () => {
+  const r = await translate('she has cats');
+  assert.equal(r.method, 'grammar-assembly');
+  assert.match(r.garo, /menggo/);
+});

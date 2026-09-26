@@ -532,7 +532,7 @@ const UNIT_CLASSIFIER = { kg: 'kg', litre: 'rong', plate: 'plate' };
 // surface form — purely the English-side plural stripping used to find
 // the dictionary key, a mechanical fix to standard English orthography
 // (not a linguistic/Garo decision, so within Claude B's remit).
-function singularize(word) {
+export function singularize(word) {
   if (IRREGULAR_PLURALS[word]) return IRREGULAR_PLURALS[word];
   if (word.length > 4 && /ies$/.test(word)) return word.slice(0, -3) + 'y'; // berries -> berry
   if (/(?:[sxz]|ch|sh)es$/.test(word)) return word.slice(0, -2); // boxes/churches/dishes/buses -> box/church/dish/bus
