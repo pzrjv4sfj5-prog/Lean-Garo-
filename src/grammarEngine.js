@@ -604,10 +604,39 @@ export function analyzeGrammar(input) {
     // See the "her"/"it" accusative-object fix below (2026-09-20,
     // Claude B) for what sets this.
     let objectIsThirdPersonAccusative = false;
+    // Reason-adjunct fix (2026-09-26, Claude B, Project Owner directive:
+    // Thangseng in chat gave the native construction directly -- "he came
+    // for some reason or other" -> "Ua maiaba a·selni gimin re·ba·aha").
+    // Closes the open composition-gap item from
+    // docs/CLAUDE_B_SESSION_MIGRATION_20260925.md: "for some reason or
+    // other" already resolves correctly standalone (corrections.json ->
+    // "Mainaba"), but embedded in a sentence "for" is a STOP_WORD (silently
+    // skipped) and "some"/"reason"/"other" have no individual dictionary
+    // entries, so the whole phrase fell into objectWords unresolved and
+    // surfaced [UNKNOWN] — confirmed live: "he came for some reason or
+    // other" -> "Ua [UNKNOWN]·ko re·ba·aha". The embedded-sentence
+    // translation is a genuinely different Garo realization from the
+    // standalone one (a periphrastic "maiba a·sel-ni gimin" = "because of
+    // its (some) cause", not "Mainaba"), given directly by a native
+    // speaker rather than derived — so this is matched as one fixed,
+    // literal 5-word phrase (mirroring this same function's existing
+    // "to X" purpose-clause and locative-adjunct handling just below,
+    // not a general reason-clause grammar rule, which is not evidenced).
+    let reasonAdjunct = null;
 
     for (let i = subjectEndIndex + 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
       const prevW = i > 0 ? words[i-1].toLowerCase().replace(/[^a-z]/g,'') : '';
+      if (
+        w === 'for' && i + 4 < words.length &&
+        words[i+1].toLowerCase() === 'some' &&
+        words[i+2].toLowerCase().replace(/[^a-z]/g,'') === 'reason' &&
+        words[i+3].toLowerCase() === 'or' &&
+        words[i+4].toLowerCase().replace(/[^a-z]/g,'') === 'other'
+      ) {
+        reasonAdjunct = { english: 'for some reason or other', garo: 'maiaba a·selni gimin' };
+        i += 4; continue;
+      }
       if (w === 'to' && i + 1 < words.length && prevW !== 'used') {
         const nextW = words[i+1].toLowerCase().replace(/[^a-z]/g,'');
         if (PURPOSE_MAP[nextW]) {
@@ -890,7 +919,7 @@ export function analyzeGrammar(input) {
       wordCount, detectedTense, tenseEvidence, isNegative, isQuestion,
       garoTenseSuffix: null, // removed 2026-07-05, see comment above
       structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
-      subject, verb, object, possessive, purposeAction, location, classifierHints,
+      subject, verb, object, possessive, purposeAction, location, reasonAdjunct, classifierHints,
       garoWordOrder: 'SOV (Subject → Object → Verb)',
       notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
     };
