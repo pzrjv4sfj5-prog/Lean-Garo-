@@ -586,8 +586,8 @@
     "english": "buffalo",
     "garo": "Matma",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'buffalo' has VERIFIED/HIGH form(s) ['mo·si']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): buffalo = Matma, overriding mo·si. See sibling cow=Matchu precedent (2026-09-25 session).",
+    "confidence": "verified_high"
   },
   {
     "english": "bear",
@@ -14860,7 +14860,8 @@
     "english": "beef",
     "garo": "matchu be·en",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): beef = Matchu be·en."
   },
   {
     "english": "bright",
@@ -17064,8 +17065,8 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED 2026-09-26 — Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): buffalo = Matma is now the confirmed default. mo·si retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "Butt",
@@ -78356,5 +78357,19 @@
     "category": "occupation",
     "notes": "Project Owner directive (2026-09-25, chat, this Claude A session): Mahajon(n) = A trader/merchant/money lender. Not native-speaker evidence; provenance-labeled as Project Owner directive per .ai/PROJECT_OWNER_AUTHORITY.md. Alternate spelling given: Mahajonn.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "a bull",
+    "garo": "Matchu Bipa",
+    "pos": "n.",
+    "confidence": "verified_high",
+    "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): a bull = Matchu Bipa."
+  },
+  {
+    "english": "to finish / complete / to end",
+    "garo": "Matchota",
+    "pos": "v.",
+    "confidence": "verified_high",
+    "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): to finish/complete/to end = Matchota. Coexists with the already-VERIFIED/HIGH 'finish'->bon·a (NV-140); not merged, not overriding, distinct citation."
   }
 ]

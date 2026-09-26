@@ -259,7 +259,7 @@ export const PHRASE_MAPS = {
   'monkey': 'a·mak',
   'snake': 'chip·pu',
   'rat': 'Mese',
-  'buffalo': 'mo·si',
+  'buffalo': 'Matma',
   'bear': 'Matmak', // resynced 2026-08-28 (Claude B): same stale-override
   // shadow bug as the 2026-08-15 85-key sweep (commit 1ccac8c7), just born
   // 2 days after that sweep so it wasn't caught by it. 'nang·a' was
