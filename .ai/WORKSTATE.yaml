@@ -1,5 +1,37 @@
 repository:
-  head: 42da62c
+  head: 07ec71e
+  last_updated_20260925D: '2026-09-25D (Claude B, session close, full
+    governance, FINAL for this session): merged 2 more rounds of Claude
+    A drift (fd87e76: cow-resolution WORKSTATE/migration cleanup + new
+    Mahajon vocab; 07ec71e: Claude A''s own verification addendum) --
+    both fast-forward, no conflicts. Investigated the Project Owner''s
+    "deployment is closed" question: reproduced the exact Render/CI
+    build command locally (npm ci && npm run build, which chains
+    prepare-data -> test-dictionary -> repository-intelligence ->
+    resync-stale-overrides -> 461 unit tests -> vite build, all
+    &&-chained so one failure kills the whole build) -- at the time
+    repository-intelligence.js was still failing (PL-0001453 + 6 Check-F
+    mismatches, both since resolved by Claude A), a plausible cause for
+    a blocked auto-deploy. Attempted the Render MCP connector per the
+    Project Owner''s ask; OAuth completion failed (invalid_client:
+    unknown or inactive client, platform-side, not repo-fixable). Project
+    Owner then confirmed directly deployment is working. Final full gate
+    at this session''s true close: test-dictionary.js 8917/8917,
+    repository-intelligence.js PASSED clean (0 new violations -- the
+    PL-0001453 and 6 Check-F issues flagged earlier this session are
+    gone, resolved by Claude A independently), node --test
+    tests/unit/*.test.js 461/461 (the one failure that persisted across
+    this entire session''s earlier addenda is now clear), runtime-error-
+    sweep.mjs 15889/15889 calls 0 errors, and npm ci && npm run build
+    (full production build incl. vite build) succeeds end-to-end with
+    dist/ matching what''s already committed. Working tree clean, no
+    drift from origin/main at close. Standing open items for next
+    session, unchanged: the 2 sentence-builder composition gaps
+    ("several" dropped when composed; "for some reason or other" ->
+    [UNKNOWN] when embedded) and the uncaptured second pork-fat form
+    (Wak be''enan mitim rarasa). Full account in
+    docs/CLAUDE_B_SESSION_MIGRATION_20260925.md (4 addenda + final state
+    summary).'
   last_updated_20260925C: '2026-09-25C (Claude B, session close, full
     governance): "cow" is settled -- Matchu confirmed directly by the
     Project Owner, applied and surviving a merge against a concurrent

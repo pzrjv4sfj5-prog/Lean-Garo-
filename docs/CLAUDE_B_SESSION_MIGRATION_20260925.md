@@ -8,6 +8,9 @@ lane — see `.ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json` and
 `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md`.
 
 ## Current commit / state
+*(Note: this section describes state early in the session, before
+Addenda 1–4. See "Final state summary" near the end of this doc for
+the actual close state and final HEAD.)*
 - HEAD at close: **1fa5ca4** (T's direct commit "Restore ma·su as
   canonical cow translation") — this doc's own commit lands on top.
 - Working tree clean at close.
@@ -226,66 +229,83 @@ Claude A's lane, unchanged all session), runtime-error-sweep.mjs
 15888/15888 calls, 0 errors. Working tree clean, no drift from origin
 at close (`git fetch` confirmed).
 
-## Current commit / state (final, at session close)
-- HEAD at close: **016161d** — this doc's own commit lands on top.
-- Working tree clean, `git fetch` confirmed no drift from `origin/main`.
-- Gate: 8916/8916 dictionary entries, 9/9 grammatical corrections,
-  460/461 unit tests, runtime-error-sweep.mjs 15888/15888 calls with
-  0 errors.
+## Addendum 4 — deployment check + final full-governance close
+Project Owner asked why the Render deployment ("Live:
+https://lean-garo.onrender.com" per README) showed as closed.
+Diagnosed by reproducing the exact CI/Render build command locally:
+`npm ci && npm run build` (which chains `prepare-data.js →
+test-dictionary.js → repository-intelligence.js →
+resync-stale-overrides.mjs → 461 unit tests → vite build`, all `&&`-
+chained, so any single failure kills the whole build). At the time of
+this session's earlier addenda, `repository-intelligence.js` was
+failing (the PL-0001453 "Hope" issue plus 6 Check-F mismatches from
+Claude A's concurrent session) — a plausible cause for a blocked
+auto-deploy, since Render deploys are gated on the build succeeding.
+Attempted a direct Render MCP check per the Project Owner's request;
+the connector's OAuth completion failed (`invalid_client: unknown or
+inactive client` — a platform-side connector-setup issue, not
+something fixable from this session). Project Owner then confirmed
+directly that the deployment is in fact working now.
 
-## Open issues (updated, session close)
-Carried forward unchanged from prior sessions (not touched this
-session, still open): leading-time-word subject-detection gap
-("tomorrow he will go to the market"); AI-003 multi-word `VERB_LEMMAS`
-matcher gap; Claude D's to-prefix canonicalization (Owner-blocked);
-`VERB_LEMMAS` common-verb coverage gap; S6.2 pronoun `·ko` adjudication
-("us"); `-de`/`-ara` marker distinction; `corrections.json` "has three
-children" bare-subject divergence; **repository-intelligence.js Check D,
-PL-0001453** ("Hope" casing mismatch — sole unit-test failure all
-session, Claude A's lane).
+Final full-governance close, after merging two more rounds of Claude A
+drift (fast-forwards only, no conflicts: `fd87e76` bringing in Claude
+A's cow-resolution WORKSTATE/migration cleanup and a new Mahajon
+vocabulary entry, then `07ec71e` bringing in Claude A's own
+"verification only, no runtime errors" addendum) — full gate re-run
+clean at final HEAD:
+- `node prepare-data.js`: no diff (already current).
+- `node test-dictionary.js`: 8917/8917 valid, 9/9 grammatical
+  corrections.
+- `node repository-intelligence.js`: **PASSED, 0 new violations** —
+  the PL-0001453 "Hope" issue and all 6 Check-F mismatches from earlier
+  in this session are gone (Claude A resolved them independently; not
+  touched by this session).
+- `node --test tests/unit/*.test.js`: **461/461 passing** — the one
+  standing failure carried across this entire session's prior addenda
+  is now clear.
+- `node scripts/runtime-error-sweep.mjs`: 15889/15889 calls, 0 errors.
+- `npm ci && npm run build`: full production build succeeds end to end
+  (vite build included), `dist/` output matches what's already
+  committed — nothing to regenerate.
 
-New this session:
-- **"cow" is now stable and settled**: `Matchu` confirmed directly by
-  the Project Owner in chat, applied across `master_dictionary.json`
-  (both the "cow" and "Cow" rows — the latter marked superseded, not
-  deleted, full citation trail preserved), `garo_dictionary.json`,
-  `src/data/phrase_maps.js`, and the two test files, surviving a merge
-  with a concurrent Claude A session that had independently restored
-  the older `ma·su` conclusion. No further action needed here unless
-  new evidence surfaces.
-- **6 unrelated NEW mismatches from Claude A's concurrent session**
-  (`repository-intelligence.js` Check F): `slowly`, `shade`, `anus`,
-  `litchi`, `profit`, `ankle` — each has a `corrections.json` value not
-  reflected in `compiled_dict.json`. Not touched, not investigated
-  beyond naming them; Claude A's own lane to reconcile (Claude A is
-  already aware, per the Project Owner).
-- **Two sentence-builder composition gaps**, found while checking the
-  new Maiba/Mahari/Maisa/Mainaba/Maikasesa vocabulary batch (Addendum
-  3 above): `"several"` (Maiba Maiba) silently dropped in composed
-  sentences; `"for some reason or other"` (Mainaba) produces
-  `[UNKNOWN]` when embedded. Both are grammar-assembly-layer bugs
-  (engineering, Claude B's lane), not data issues. Flagged, not fixed
-  — need more investigation time than this session had.
-- **"the pork meat has a lot of fat" idiom**: added as a
-  `corrections.json` exact-phrase override, Project-Owner-confirmed,
-  does not compose literally. Only one of the two forms the Project
-  Owner gave is captured (see Addendum 3) — the second
-  (`Wak be'enan mitim rarasa`) is unconfirmed/unnormalized and not
-  stored anywhere.
+Working tree clean, no drift from `origin/main` at close.
+
+## Final state summary (this session, all addenda)
+- **Final HEAD: `07ec71e`** — this doc's own commit lands on top.
+- **Final gate: 461/461 unit tests, 8917/8917 dictionary entries,
+  repository-intelligence.js PASSED clean, runtime-error-sweep.mjs
+  15889/15889 calls 0 errors, full `npm run build` (incl. `vite build`)
+  succeeds end to end.**
+- "cow" → `Matchu`: settled, Project-Owner-confirmed, survived two
+  rounds of concurrent-session merges, stable.
+- Idiom `"the pork meat has a lot of fat"` → `Wak be·en mit·am bang·a`:
+  added, Project-Owner-confirmed. Second form the Project Owner gave
+  (`Wak be'enan mitim rarasa`) still not captured anywhere — unresolved
+  normalization, flagged again below.
+- Sentence-builder gaps found in the new Maiba/Mahari/Maisa/Mainaba/
+  Maikasesa batch: `"several"` dropped when composed; `"for some reason
+  or other"` → `[UNKNOWN]` when embedded. **Still open, not fixed.**
+- All previously-flagged dictionary-content issues (PL-0001453, the 6
+  Check-F mismatches) are now resolved — by Claude A, independently of
+  this session.
+- Deployment confirmed working by the Project Owner directly; root
+  cause of the earlier closure was most likely the now-resolved build-
+  blocking `repository-intelligence.js` failures, though this wasn't
+  independently confirmed against Render's own logs (connector auth
+  failed).
 
 ## Exact next step
-No single next step queued by the Project Owner at close. Three
-concrete candidates, in the order they were raised this session:
 1. Fix the two sentence-builder composition gaps ("several" dropped;
-   "for some reason or other" → [UNKNOWN] when embedded) — engineering,
-   Claude B's lane.
-2. Resolve and store the second pork-fat form, or confirm the first is
-   the only one to keep.
-3. Claude A's 6 unrelated Check F mismatches, and the long-standing
-   PL-0001453 Check D failure — both Claude A's lane; Project Owner has
-   indicated Claude A is already on it.
+   "for some reason or other" → `[UNKNOWN]` when embedded) —
+   engineering, Claude B's lane, still the top open item.
+2. Resolve/store the second pork-fat form, or confirm the first is the
+   only one to keep.
+3. If Render's connector auth (`invalid_client`) is still broken on
+   resume, that's worth a fresh attempt or an Anthropic support report
+   — not a repo-side fix.
 
 On resume: treat this doc as ground truth, resync against actual
-`origin/main` (`git fetch` + compare, do not assume zero drift), re-run
-the full gate fresh, then pick up whichever of the above the Project
-Owner directs.
+`origin/main` (`git fetch` + compare, do not assume zero drift —
+Claude A has pushed independently multiple times this session), re-run
+the full gate fresh, then pick up item 1 above unless the Project Owner
+directs otherwise.
