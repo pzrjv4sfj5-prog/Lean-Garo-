@@ -78380,5 +78380,19 @@
     "classifier": null,
     "confidence": "verified_high",
     "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): mosquito net = Mosori."
+  },
+  {
+    "english": "finished",
+    "garo": "Matchotaha",
+    "pos": "v.",
+    "confidence": "verified_high",
+    "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): finished = Matchotaha. Shares the Matchota root (this session's earlier 'to finish/complete/to end' citation) with the -aha completive suffix; corroborates the pre-existing unverified 'mat·chot·a' candidate for this same key without merging into it."
+  },
+  {
+    "english": "to get something completed",
+    "garo": "Matchotata",
+    "pos": "v.",
+    "confidence": "verified_high",
+    "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): to get something completed = Matchotata. Shares the Matchota root, distinct causative/completive sense from bare 'to finish/complete/to end'."
   }
 ]
