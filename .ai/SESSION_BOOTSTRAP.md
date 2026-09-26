@@ -8,7 +8,25 @@ Before starting work, agents should read the role-specific live audit handoff:
 
 These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
 
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-20 by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-26 by Claude A
+(resumed via a pasted migration-doc pointer + fresh PAT-cloned repo. Full
+migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260926.md — READ IT
+FIRST, this line is just a pointer. Summary: resync clean, HEAD 07ec71e ==
+origin/main on arrival. Applied Project Owner directives: buffalo=Matma
+(overriding mo·si, same shape as the prior session's cow=Matchu fix),
+beef=Matchu be·en promoted to verified_high, new a bull=Matchu Bipa, new
+to finish/complete/to end=Matchota (coexists with already-VERIFIED
+finish=bon·a), mosquito net=Mosori (overriding mo·sa·ri). Found and
+flagged (not fixed, Claude B territory): sov-assembly's "where is the X?"
+question template fails on multi-word nouns generally (pre-existing, not
+a regression — reproduces on cow dung/little boy/water buffalo too).
+Reviewed Claude D's evidence-package handoff naming cow + 6 other
+PO-directive keys, all already correctly disposed, no action needed. Gate
+green at close: 8920/8920 dictionary, 469/469 unit tests, 0 new
+repository-intelligence violations, 15893/15893 runtime-sweep calls 0
+errors. Pushed clean, verified == origin/main.)
+
+---PRIOR (2026-09-20, superseded above, kept for history)---
 (resumed from docs/CLAUDE_A_SESSION_MIGRATION_20260920.md. Full migration
 doc: docs/CLAUDE_A_SESSION_MIGRATION_20260920B.md — READ IT FIRST, this
 line is just a pointer. Summary: resync clean, HEAD d50a4c0 == origin/main
