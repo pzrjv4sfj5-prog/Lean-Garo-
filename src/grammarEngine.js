@@ -873,10 +873,10 @@ export function analyzeGrammar(input) {
               || null;
           });
           const allWordsResolved = perWordGaro.every((g) => g !== null);
-          const quantifierIdx = perWordGaro.length > 1 ? perWordGaro.findIndex((g) => g && g.toLowerCase() === 'bang·a') : -1;
+          const quantifierIdx = perWordGaro.length > 1 ? perWordGaro.findIndex((g) => g && /^bang·[ae]$/i.test(g)) : -1;
           if (allWordsResolved && quantifierIdx !== -1 && quantifierIdx === perWordGaro.length - 2) {
-            // quantifier directly precedes the head noun ("several/many books") -- compose Noun + bang·a.
-            objGaro = perWordGaro[perWordGaro.length - 1] + ' bang·a';
+            // quantifier directly precedes the head noun ("several/many books") -- compose Noun + quantifier.
+            objGaro = perWordGaro[perWordGaro.length - 1] + ' ' + perWordGaro[quantifierIdx].toLowerCase();
           } else {
             objGaro = allWordsResolved ? perWordGaro[perWordGaro.length - 1] : '[UNKNOWN]';
           }

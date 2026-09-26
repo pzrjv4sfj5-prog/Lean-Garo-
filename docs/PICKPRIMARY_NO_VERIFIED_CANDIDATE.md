@@ -3570,7 +3570,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `seventeen teachers`: candidates — `chi sni skigipa·gni` (weak/OCR) — shipped: `chi sni skigipa·gni`
 - `seventeen water`: candidates — `chi sni chik·gni` (weak/OCR) — shipped: `chi sni chik·gni`
 - `seventeen waters`: candidates — `chi sni chik·gni` (weak/OCR) — shipped: `chi sni chik·gni`
-- `several`: candidates — `bang·a` (weak/OCR) — shipped: `bang·a`
+- `several`: candidates — `bang·e` (weak/OCR) — shipped: `bang·e`
 - `sew`: candidates — `sik·a` (weak/OCR) — shipped: `sik·a`
 - `sex`: candidates — `Bima bipa ra·ani` (weak/OCR), `Jua` (weak/OCR) — shipped: `Jua`
 - `sexual relations`: candidates — `ju·a` (weak/OCR), `to·re·a` (weak/OCR) — shipped: `to·re·a`
