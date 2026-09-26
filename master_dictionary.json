@@ -37074,8 +37074,8 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED 2026-09-26 — Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): mosquito net = Mosori is now the confirmed form. mo·sa·ri retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "most",
@@ -78371,5 +78371,14 @@
     "pos": "v.",
     "confidence": "verified_high",
     "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): to finish/complete/to end = Matchota. Coexists with the already-VERIFIED/HIGH 'finish'->bon·a (NV-140); not merged, not overriding, distinct citation."
+  },
+  {
+    "english": "mosquito net",
+    "garo": "Mosori",
+    "pos": null,
+    "category": "animals",
+    "classifier": null,
+    "confidence": "verified_high",
+    "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): mosquito net = Mosori."
   }
 ]
