@@ -1,5 +1,29 @@
 repository:
   head: bf648f8
+  last_updated_20260926: '2026-09-26 (Claude B, session close, full
+    governance): closed both standing open items from
+    docs/CLAUDE_B_SESSION_MIGRATION_20260925.md. "several" dropped when
+    composed: root cause was a general multi-word-object bug (last word
+    only, any earlier resolved modifier silently dropped -- not
+    specific to Maiba Maiba), fixed with a narrowly-scoped Noun +
+    trailing-quantifier composition (bang·a/bang·e only). Follow-up
+    bug found in the same investigation and fixed: "she has several
+    dogs"/"we have many students" fell through to the unreliable
+    sov-assembly fallback because plural object nouns had no plural-
+    stripping in the resolver -- now reuses garo_classifier.js''s
+    singularize(). "for some reason or other" -> [UNKNOWN] when
+    embedded: fixed via a fixed reason-adjunct match, per Project Owner
+    directive supplying the native construction directly ("Ua maiaba
+    a.selni gimin re.baaha."). Content correction logged same session:
+    "several" final value is bang·e, not the session''s own earlier
+    bang·a call, per direct Project Owner instruction ("we will use
+    Bang.e instead of adita, log it."). Rebased cleanly through 3
+    rounds of concurrent Claude A/D drift (dictionary-content-layer
+    only, zero engine overlap); one compiled_dict.json conflict on
+    rebase, resolved by regenerating rather than hand-merging. Gate at
+    close: dictionary/unit-test/build counts as stated in
+    claude_b.next_action above. Full account in
+    docs/CLAUDE_B_SESSION_MIGRATION_20260926.md.'
   last_updated_20260925D: '2026-09-25D (Claude B, session close, full
     governance, FINAL for this session): merged 2 more rounds of Claude
     A drift (fd87e76: cow-resolution WORKSTATE/migration cleanup + new
@@ -4054,7 +4078,67 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: "2026-09-24B (Claude B, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260923C.md,
+  next_action: "2026-09-26 (Claude B, session complete -- see
+    docs/CLAUDE_B_SESSION_MIGRATION_20260926.md for full detail). Resumed
+    via a pasted migration-doc pointer
+    (docs/CLAUDE_B_SESSION_MIGRATION_20260925.md) + fresh PAT-cloned
+    repo. Resync clean at 9522be9 == origin/main on arrival (that doc's
+    own final commit landing on 07ec71e, no other drift). Closed both
+    standing open items from that doc: (1) 'several' dropped when
+    composed -- root cause was NOT specific to Maiba Maiba failing to
+    compose (the doc's framing); grammarEngine.js's multi-word object
+    resolver kept only the LAST word's resolved translation whenever
+    every word in the object phrase resolved individually, silently
+    dropping any earlier resolved modifier with no [UNKNOWN] trace --
+    reproduced live for 'several'/'many'/even plain adjectives
+    ('good'/'big') alike. Composes Noun + trailing-quantifier now
+    (scoped to the exact resolved values bang·a/bang·e only, case-
+    insensitive -- not general adjective+noun composition, which stays
+    open, untouched). Follow-up in the same investigation: 'she has
+    several dogs'/'we have many students' surfaced a second, related
+    bug -- plural object nouns with no direct dictionary entry (only
+    the singular does) failed this same per-word resolver, fell through
+    to sov-assembly, whose verb-detection heuristic mis-identifies
+    bang·a/bang·e as the verb (false-positive on its own ·a$ suffix
+    check), producing wrong word order. Fixed by reusing
+    garo_classifier.js's existing singularize() as a fallback in the
+    resolver (exported it for this purpose) -- these sentences now
+    succeed in grammar-assembly and never reach sov-assembly. (2) 'for
+    some reason or other' -> [UNKNOWN] when embedded: 'for' is a
+    STOP_WORD (skipped) and 'some'/'reason'/'other' have no individual
+    dictionary entries, so the phrase fell into the unresolved object
+    slot. Project Owner directive -- Thangseng gave the native
+    construction directly in chat ('he came for some reason or other'
+    -> 'Ua maiaba a.selni gimin re.baaha.') -- grammarEngine.js now
+    matches the literal 5-word phrase as a fixed reason-adjunct
+    (mirrors this function's existing 'to X' purpose-clause/locative-
+    adjunct handling, not a general reason-clause grammar rule, which
+    is not evidenced by one example), placed right before the main verb
+    by sentenceBuilder.js. Content correction mid-session, also logged
+    per Project Owner directive: 'several' went bang·a -> (native-
+    speaker-example-suggested) adita -> final: bang·e ('we will use
+    Bang.e instead of adita, log it.'); 'many' unchanged throughout,
+    still bang·a. The trailing-quantifier composition fix above was
+    generalized from matching only bang·a to matching bang·a OR bang·e
+    case-insensitively so 'several' kept composing correctly through
+    that word swap rather than regressing. Rebased cleanly through 3
+    rounds of concurrent Claude A/D drift this session (buffalo=Matma,
+    finished=Matchotaha, mosquito net=Mosori, evidence-package handoff,
+    session-close docs -- all docs/dictionary-content-layer, zero file
+    overlap with this session's engine-layer edits); one
+    compiled_dict.json conflict on a rebase, resolved by regenerating
+    via prepare-data.js rather than hand-merging, not by trusting
+    either side's pre-rebase artifact. Added
+    tests/unit/several_many_quantifier_composition.test.js (9 tests)
+    and tests/unit/reason_adjunct_composition.test.js (4 tests). Gate
+    green throughout and at final close: 8922/8922 dictionary, 470/470
+    unit tests (later builds may show 474+ as Claude A's concurrent
+    entries land), 0 new repository-intelligence violations, npm run
+    build clean end-to-end. Every touched/new construction live-
+    verified via translate() post-build, not just compiled_dict.json
+    inspection. Pushed clean, final HEAD to be confirmed at close,
+    verified == origin/main, clean tree."
+  next_action_prior_20260924B: "2026-09-24B (Claude B, resumed via docs/CLAUDE_B_SESSION_MIGRATION_20260923C.md,
     resynced first -- doc's pinned commit b4a0d81 matched both origin/main and the
     local clone exactly, zero drift, confirmed via full gate re-run before
     continuing). Project Owner relayed a Thangseng-confirmed correction in
