@@ -11358,7 +11358,7 @@
     "garo": "ang ong·a chak",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give food",
@@ -11397,7 +11397,7 @@
     "garo": "ang ong·a chik",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give water",
@@ -11433,7 +11433,7 @@
     "english": "i have book",
     "garo": "ang ong·a ki·tap",
     "category": "education",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family.",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
     "confidence": "superseded"
   },
   {
@@ -11471,7 +11471,7 @@
     "garo": "ang ong·a rang",
     "category": "home",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give house",
@@ -11508,7 +11508,7 @@
     "garo": "ang ong·a mot",
     "category": "travel",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give car",
@@ -11545,7 +11545,7 @@
     "garo": "ang ong·a pisa",
     "category": "work",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give money",
@@ -11582,7 +11582,7 @@
     "garo": "na· ong·a chak",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give food",
@@ -11619,7 +11619,7 @@
     "garo": "na· ong·a chik",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give water",
@@ -11655,7 +11655,7 @@
     "english": "you have book",
     "garo": "na· ong·a ki·tap",
     "category": "education",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family.",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
     "confidence": "superseded"
   },
   {
@@ -11693,7 +11693,7 @@
     "garo": "na· ong·a rang",
     "category": "home",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give house",
@@ -11730,7 +11730,7 @@
     "garo": "na· ong·a mot",
     "category": "travel",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give car",
@@ -11767,7 +11767,7 @@
     "garo": "na· ong·a pisa",
     "category": "work",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give money",
@@ -11804,7 +11804,7 @@
     "garo": "u ong·a chak",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give food",
@@ -11841,7 +11841,7 @@
     "garo": "u ong·a chik",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give water",
@@ -11877,7 +11877,7 @@
     "english": "he have book",
     "garo": "u ong·a ki·tap",
     "category": "education",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family.",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
     "confidence": "superseded"
   },
   {
@@ -11915,7 +11915,7 @@
     "garo": "u ong·a rang",
     "category": "home",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give house",
@@ -11952,7 +11952,7 @@
     "garo": "u ong·a mot",
     "category": "travel",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give car",
@@ -11989,7 +11989,7 @@
     "garo": "u ong·a pisa",
     "category": "work",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give money",
@@ -12026,7 +12026,7 @@
     "garo": "u ong·a chak",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give food",
@@ -12063,7 +12063,7 @@
     "garo": "u ong·a chik",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give water",
@@ -12099,7 +12099,7 @@
     "english": "she have book",
     "garo": "u ong·a ki·tap",
     "category": "education",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family.",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
     "confidence": "superseded"
   },
   {
@@ -12137,7 +12137,7 @@
     "garo": "u ong·a rang",
     "category": "home",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give house",
@@ -12174,7 +12174,7 @@
     "garo": "u ong·a mot",
     "category": "travel",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give car",
@@ -12211,7 +12211,7 @@
     "garo": "u ong·a pisa",
     "category": "work",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give money",
@@ -12248,7 +12248,7 @@
     "garo": "i ong·a chak",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give food",
@@ -12285,7 +12285,7 @@
     "garo": "i ong·a chik",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give water",
@@ -12321,7 +12321,7 @@
     "english": "we have book",
     "garo": "i ong·a ki·tap",
     "category": "education",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family.",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
     "confidence": "superseded"
   },
   {
@@ -12359,7 +12359,7 @@
     "garo": "i ong·a rang",
     "category": "home",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give house",
@@ -12396,7 +12396,7 @@
     "garo": "i ong·a mot",
     "category": "travel",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give car",
@@ -12433,7 +12433,7 @@
     "garo": "i ong·a pisa",
     "category": "work",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give money",
@@ -12470,7 +12470,7 @@
     "garo": "bi ong·a chak",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give food",
@@ -12507,7 +12507,7 @@
     "garo": "bi ong·a chik",
     "category": "food",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give water",
@@ -12543,7 +12543,7 @@
     "english": "they have book",
     "garo": "bi ong·a ki·tap",
     "category": "education",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family.",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
     "confidence": "superseded"
   },
   {
@@ -12581,7 +12581,7 @@
     "garo": "bi ong·a rang",
     "category": "home",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give house",
@@ -12618,7 +12618,7 @@
     "garo": "bi ong·a mot",
     "category": "travel",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give car",
@@ -12655,7 +12655,7 @@
     "garo": "bi ong·a pisa",
     "category": "work",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — Owner one-time-exception directive 2026-09-27 (Claude B, acting outside normal lane, Claude A out of tokens): this bulk '<pronoun> ong·a <noun>' batch mistook ong·a (copula 'to be', RULE-005, Verified/High -- 'Anga kusi ong·a'='I am happy', 'Nama ong·a'='it is good') for a possession verb. Possession is existential donga (RULE-G7, Verified/High -- 'Uo bi·sa sakgittam donga'='she has three children'), cross-confirmed by VERB_INVENTORY.md's dong entry. All 36 entries in this batch shared one unverified confidence tier and zero individual native citations -- see docs/CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md for full evidence. Retained per citation discipline, not deleted; superseding removes them from the compiled short-circuit so grammar-assembly's already-correct donga composition becomes reachable for this sentence family."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give money",
