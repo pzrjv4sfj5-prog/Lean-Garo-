@@ -35,33 +35,50 @@
 //    incorrect -- "Anga; ang+o = ango". Fixed in sentenceBuilder.js,
 //    scoped to "Anga" specifically (not generalized to other pronouns).
 //
-// 7. 2026-09-27, later same day, Project Owner overrules step 4's
-//    "bang·e" resolution: "we will use i have several books = Ango
-//    adita ki.taprang donga not Ango bang·e ki·tap donga" -- several =
-//    adita, final. garo_dictionary.json/corrections.json's "several"
-//    entry updated; "i have several books" also given its own
-//    exact-phrase correction (only entry attested with -rang, per
-//    CLAUDE_A_RANG_PLURAL_RULING_20260825.md -- not generalized to
-//    other nouns, see below). This exposed a real regression: the
-//    quantifier-preservation composition path (grammarEngine.js) only
-//    recognized the literal words "bang·a"/"bang·e", so every OTHER
-//    "several X" sentence (not the exact-phrase-covered "books")
-//    silently dropped "adita" entirely -- an AI-002-shaped bug,
-//    surfaced by this content swap, fixed same session by adding
-//    "adita" to that literal match.
+// 7. 2026-09-27, Claude A session, Project Owner directive (chat, no
+//    transcript): "we will use Bang.a for several, close it." -> several
+//    = bang·a (not bang·e, not adita) -- interim, later reversed.
+// 8. 2026-09-27, same Claude A session, "final clarification" (chat, no
+//    transcript, citing the source print dictionary directly): "Adita
+//    (adj) = some, somehow, in some measure, to some extent... several
+//    can also be adita. So use adita only. Many = Bang.a." -> several =
+//    adita (reversing step 7), many = bang·a unchanged. This is the
+//    fourth value several has held across two days (bang·a -> adita ->
+//    bang·e -> bang·a -> adita).
+// 9. 2026-09-27, separately in this (Claude B) session, Project Owner
+//    reconfirms the same adita conclusion via a direct example: "we
+//    will use i have several books = Ango adita ki.taprang donga not
+//    Ango bang·e ki·tap donga" -- converges with step 8 on the same
+//    final answer via a different message. garo_dictionary.json/
+//    corrections.json's "several" entry updated; "i have several
+//    books" also given its own exact-phrase correction (only entry
+//    attested with -rang, per CLAUDE_A_RANG_PLURAL_RULING_20260825.md
+//    -- not generalized to other nouns).
+// 10. Both sessions independently found the same regression: the
+//    quantifier-preservation composition path (grammarEngine.js) was
+//    scoped to the literal regex /^bang·[ae]$/i and did not recognize
+//    "adita" -- every "several X" sentence except the one exact-phrase-
+//    covered "books" silently dropped the quantifier entirely (AI-002-
+//    shaped bug, surfaced by the content swap in both sessions). Claude
+//    A's session logged it as a handoff item (tests marked .todo,
+//    broken output recorded, not fixed). RESOLVED in this (Claude B)
+//    session: "adita" added to the literal match in grammarEngine.js;
+//    tests below restored from .todo to real passing assertions.
 //
 // Current, live state: several = adita, many = bang·a, quantifier
-// composes BEFORE the head noun, 1st-person possessor is "Ango".
-// "i have several books" ships as an exact-phrase correction (with
-// -rang); every other "several X" composes via grammar-assembly
+// composes BEFORE the head noun for both, 1st-person possessor is
+// "Ango". "i have several books" ships as an exact-phrase correction
+// (with -rang); every other "several X" composes via grammar-assembly
 // without -rang (unmarked), since -rang is not computed anywhere in
 // this codebase -- see CLAUDE_A_RANG_PLURAL_RULING_20260825.md.
 //
-// STILL NOT addressed (flagged to the Project Owner, awaiting direction,
-// not implemented here): whether "-rang" plural marking or the
-// quantifier-before-noun order generalizes to other quantifiers/nouns
-// beyond the individually native-confirmed cases is an open question --
-// not implemented until answered.
+// STILL NOT addressed (relayed to Thangseng 2026-09-27, awaiting
+// response, not implemented here): whether "-rang" plural marking or
+// the quantifier-before-noun order generalizes beyond the individually
+// native-confirmed cases; the noun-then-quantifier order in the two
+// pre-existing static citations ("Wak be·en mit·am bang·a", "Man·derang
+// bang·e re·baa"); adjective position in noun phrases; adverb position.
+
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { translate } from '../../src/translationEngine.js';
@@ -103,7 +120,7 @@ test('"she has several dogs" uses grammar-assembly with correct SOV order (adita
   assert.equal(r.garo, 'Uao adita achak donga');
 });
 
-test('regression guard: "adita" survives quantifier-preservation composition like bang·a/bang·e do (AI-002-shaped bug, fixed 2026-09-27)', async () => {
+test('regression guard: "adita" survives quantifier-preservation composition like bang·a/bang·e do (AI-002-shaped bug, independently found by both Claude A and Claude B sessions 2026-09-27, fixed in this one)', async () => {
   const r = await translate('he has several trees');
   assert.equal(r.method, 'grammar-assembly');
   assert.match(r.garo, /adita/);
