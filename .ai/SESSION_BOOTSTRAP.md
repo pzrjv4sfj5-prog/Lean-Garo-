@@ -8,23 +8,34 @@ Before starting work, agents should read the role-specific live audit handoff:
 
 These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
 
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-26B by Claude A
-(same-day continuation. Full migration doc:
-docs/CLAUDE_A_SESSION_MIGRATION_20260926B.md — READ IT FIRST, this line
-is just a pointer. Summary: read `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`
-in full, retroactively applied its mandatory structure to this session's
-work. Fast-forwarded onto 4 commits of Claude B drift, no conflicts.
-Closed 2 new items sharing the Matchota root: finished=Matchotaha (also
-resolves that key's POS/sense default, see doc §10), to get something
-completed=Matchotata. Duplicate-representation check re-run against
-garo_dictionary.json explicitly. EXPLICIT DRIFT FLAG for the Project
-Owner: no new grammar rule since RULE-050 (2026-09-21) — every session
-since has been vocabulary-only, past the 3-session threshold; see the
-migration doc's Rule-generalization check section. Standing Claude B
-handoff restated: sov-assembly's "where is the X?" still fails on
-multi-word nouns. Gate green at close: 8922/8922 dictionary, unit tests
-passing, 0 new repository-intelligence violations. Pushed clean, verified
-== origin/main.)
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-27 by Claude A
+(resume-and-close, zero linguistic work. Full migration doc:
+docs/CLAUDE_A_SESSION_MIGRATION_20260927.md — READ IT FIRST, this line
+is just a pointer. Summary: fresh PAT clone, git fetch found no drift,
+HEAD == origin/main == d0d251c on arrival, matching the prior session's
+stated close exactly. Project Owner gave no new item and instructed
+session close. Gate not re-run — no changes since the last confirmed-
+green state. Standing items restated, both still open: Claude B
+territory — sov-assembly's "where is the X?" still fails on multi-word
+nouns; §5 drift flag — no new grammar rule since RULE-050 (2026-09-21),
+now 6+ consecutive vocabulary-only sessions, past the 3-session
+threshold, still awaiting Project Owner direction.)
+
+---PRIOR (2026-09-26B, superseded above, kept for history)---
+(read `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` in full, retroactively
+applied its mandatory structure to that session's work. Fast-forwarded
+onto 4 commits of Claude B drift, no conflicts. Closed 2 new items
+sharing the Matchota root: finished=Matchotaha (also resolves that key's
+POS/sense default, see doc §10), to get something completed=Matchotata.
+Duplicate-representation check re-run against garo_dictionary.json
+explicitly. EXPLICIT DRIFT FLAG for the Project Owner: no new grammar
+rule since RULE-050 (2026-09-21) — every session since has been
+vocabulary-only, past the 3-session threshold; see the migration doc's
+Rule-generalization check section. Standing Claude B handoff restated:
+sov-assembly's "where is the X?" still fails on multi-word nouns. Gate
+green at close: 8922/8922 dictionary, unit tests passing, 0 new
+repository-intelligence violations. Pushed clean, verified ==
+origin/main. Full migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260926B.md)
 
 ---PRIOR (2026-09-26, same day, superseded above, kept for history)---
 (resumed via a pasted migration-doc pointer + fresh PAT-cloned repo. Full
