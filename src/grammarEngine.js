@@ -904,8 +904,22 @@ export function analyzeGrammar(input) {
           const allWordsResolved = perWordGaro.every((g) => g !== null);
           const quantifierIdx = perWordGaro.length > 1 ? perWordGaro.findIndex((g) => g && /^bang·[ae]$/i.test(g)) : -1;
           if (allWordsResolved && quantifierIdx !== -1 && quantifierIdx === perWordGaro.length - 2) {
-            // quantifier directly precedes the head noun ("several/many books") -- compose Noun + quantifier.
-            objGaro = perWordGaro[perWordGaro.length - 1] + ' ' + perWordGaro[quantifierIdx].toLowerCase();
+            // Quantifier directly precedes the head noun in English
+            // ("several/many books"). Compose Quantifier + Noun (reversed
+            // 2026-09-27, Project Owner relaying Thangseng: "Bang.a
+            // chattrorang" [quantifier-noun] is correct for "many
+            // students" -- "chattrorang bang.e" [noun-quantifier, the
+            // prior order shipped 2026-09-26] would instead read as
+            // "students in large numbers". Confirmed again with "we have
+            // many students" -> "Chingo bang·a chattrorang donga".
+            // NOTE: this reverses the order used in two pre-existing
+            // static corrections.json citations ("the pork meat has a lot
+            // of fat" -> "Wak be·en mit·am bang·a", "so many people came"
+            // -> "Man·derang bang·e re·baa"), which still use noun-then-
+            // quantifier. That conflict is flagged, not resolved here --
+            // those are static exact-phrase entries (Claude A's lane),
+            // untouched by this composition-path fix.
+            objGaro = perWordGaro[quantifierIdx].toLowerCase() + ' ' + perWordGaro[perWordGaro.length - 1];
           } else {
             objGaro = allWordsResolved ? perWordGaro[perWordGaro.length - 1] : '[UNKNOWN]';
           }

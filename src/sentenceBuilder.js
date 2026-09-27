@@ -348,7 +348,17 @@ export function assembleGrammar(grammar, allowUnknown = false) {
     grammar.object &&
     !grammar.possessive
   );
-  parts.push(isPossessionConstruction ? grammar.subject.garo + 'o' : grammar.subject.garo);
+  // "Anga" + "o" bug (2026-09-27, Project Owner relaying Thangseng):
+  // naive concatenation produced "Angao", which Thangseng flagged as
+  // incorrect -- the letter-drop-before-suffix rule for this pronoun is
+  // "Anga (I); ang + o = ango". Scoped to "Anga" specifically, not
+  // generalized to other vowel-final subjects (e.g. "Ua"->"Uao" in the
+  // existing "she has several dogs" citation, or "Me·a bi·sa"->"Me·a
+  // bi·sao" in the already-confirmed-live "the boy has a dog" citation)
+  // -- neither of those has native confirmation of the same drop, so
+  // changing them would be guessing at an unconfirmed general rule.
+  const possessorGaro = grammar.subject.garo === 'Anga' ? 'Ango' : grammar.subject.garo + 'o';
+  parts.push(isPossessionConstruction ? possessorGaro : grammar.subject.garo);
 
   // Destination/location + -chi marker (docs/BUG_location_noun_dropped.md
   // fix, engine-level 2026-08-12). Placed right after subject, ahead of

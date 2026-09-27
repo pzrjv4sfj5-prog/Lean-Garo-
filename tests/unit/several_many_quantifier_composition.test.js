@@ -24,20 +24,26 @@
 //    superseded again, same message: "we will use Bang.e instead of
 //    adita, log it." -> several = bang·e (not adita, not bang·a).
 //
-// Current, live state: several = bang·e, many = bang·a. Both are
-// recognized by grammarEngine.js's trailing-quantifier composition
-// (Noun + quantifier order), which matches the two existing citations
-// that already put a quantifier after its noun: "the pork meat has a lot
-// of fat" -> "Wak be·en mit·am bang·a" and "so many people came" ->
-// "Man·derang bang·e re·baa".
+// 5. 2026-09-27, Project Owner relaying Thangseng again: quantifier order
+//    reversed to Quantifier + Noun ("Bang.a chattrorang", not "chattrorang
+//    bang.e") -- confirmed deliberate, not a typo: noun-then-quantifier
+//    would read as "students in large numbers". Conflicts with two
+//    pre-existing static corrections.json citations that still use
+//    noun-then-quantifier ("Wak be·en mit·am bang·a", "Man·derang bang·e
+//    re·baa") -- flagged, not touched (Claude A's lane, static entries).
+// 6. Same message: "Angao" (naive "Anga"+"o" concatenation) flagged
+//    incorrect -- "Anga; ang+o = ango". Fixed in sentenceBuilder.js,
+//    scoped to "Anga" specifically (not generalized to other pronouns).
 //
-// NOT yet addressed (flagged to the Project Owner, awaiting direction,
+// Current, live state: several = bang·e, many = bang·a, quantifier
+// composes BEFORE the head noun, 1st-person possessor is "Ango".
+//
+// STILL NOT addressed (flagged to the Project Owner, awaiting direction,
 // not implemented here): Thangseng's own "Ango adita ki.taprang donga"
-// example shows the modifier BEFORE the noun and a "-rang" plural suffix
-// on the noun, both of which the engine does not currently do anywhere.
-// Whether that's a general rule (quantifiers before the noun, plurals
-// always take -rang) or specific to "adita" (now superseded) is an open
-// question — scope not extended past the bang·e swap until answered.
+// example also shows a "-rang" plural suffix on the counted noun, which
+// the engine does not currently do anywhere. Whether that's a general
+// rule (plurals always take -rang) or specific to "adita" (now
+// superseded) is an open question — not implemented until answered.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { translate } from '../../src/translationEngine.js';
@@ -77,13 +83,19 @@ test('numeral object composition (a different, already-working path) is untouche
 test('"she has several dogs" uses grammar-assembly with correct SOV order (bang·e), not the sov-assembly fallback', async () => {
   const r = await translate('she has several dogs');
   assert.equal(r.method, 'grammar-assembly');
-  assert.equal(r.garo, 'Uao achak bang·e donga');
+  assert.equal(r.garo, 'Uao bang·e achak donga');
 });
 
 test('"we have many students" uses grammar-assembly with correct SOV order (bang·a), not the sov-assembly fallback', async () => {
   const r = await translate('we have many students');
   assert.equal(r.method, 'grammar-assembly');
-  assert.equal(r.garo, 'An·chingo chattro bang·a donga');
+  assert.equal(r.garo, 'An·chingo bang·a chattro donga');
+});
+
+test('"i have several books" uses "Ango" (not "Angao") for the 1st-person possessor', async () => {
+  const r = await translate('i have several books');
+  assert.match(r.garo, /^Ango\b/);
+  assert.doesNotMatch(r.garo, /Angao/);
 });
 
 test('plural object noun with no quantifier still resolves via the singularize fallback ("she has cats")', async () => {
