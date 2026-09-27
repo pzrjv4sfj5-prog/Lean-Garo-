@@ -9,17 +9,27 @@ Before starting work, agents should read the role-specific live audit handoff:
 These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
 
 _Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-27 by Claude A
-(resume-and-close, zero linguistic work. Full migration doc:
+(full repo audit at Project Owner request. Full migration doc:
 docs/CLAUDE_A_SESSION_MIGRATION_20260927.md — READ IT FIRST, this line
 is just a pointer. Summary: fresh PAT clone, git fetch found no drift,
-HEAD == origin/main == d0d251c on arrival, matching the prior session's
-stated close exactly. Project Owner gave no new item and instructed
-session close. Gate not re-run — no changes since the last confirmed-
-green state. Standing items restated, both still open: Claude B
-territory — sov-assembly's "where is the X?" still fails on multi-word
-nouns; §5 drift flag — no new grammar rule since RULE-050 (2026-09-21),
-now 6+ consecutive vocabulary-only sessions, past the 3-session
-threshold, still awaiting Project Owner direction.)
+HEAD == origin/main == d0d251c on arrival. Ran repository-intelligence.js
+(8 checks) + resync-stale-overrides.mjs: 0 new violations, everything
+flagged pre-existing/allowlisted. Spot-check surfaced one
+allowlisted-but-never-resolved live gap: bare key "build" in
+phrase_maps.js shipped the unverified/superseded spelling "Rika" (no
+raka dot) despite an existing VERIFIED/HIGH citation "Rik·a"
+(Thangseng-confirmed 2026-08-09, under "build (verb, general)") whose
+own note explicitly intended to prevent this. Fixed the override to
+Rik·a per Project Owner direction; "to build" (separate unverified key)
+deliberately left untouched. Live-verified bare build/Build now resolve
+Rik·a, "i build a house" now composes correctly through grammar-assembly.
+Gate re-run clean post-fix: 8922/8922 dictionary, 9/9 grammatical
+corrections, 474/474 unit tests, 0 new violations; compiled_dict.json
+unaffected (override-layer-only fix). Standing items restated, both
+still open: Claude B territory — sov-assembly's "where is the X?" still
+fails on multi-word nouns; §5 drift flag — no new grammar rule since
+RULE-050 (2026-09-21), now 6+ consecutive vocabulary-only sessions, past
+the 3-session threshold, still awaiting Project Owner direction.)
 
 ---PRIOR (2026-09-26B, superseded above, kept for history)---
 (read `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md` in full, retroactively

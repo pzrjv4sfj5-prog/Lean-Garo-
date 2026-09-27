@@ -330,7 +330,7 @@ export const PHRASE_MAPS = {
   'fry': 'Jo·a',
   'boil': 'Rita',
   'cut': 'Den·a',
-  'build': 'Rika',
+  'build': 'Rik·a',
   'fly': 'Tampi',
   'swim': 'Jroa',
   'climb': 'Maldoa',
