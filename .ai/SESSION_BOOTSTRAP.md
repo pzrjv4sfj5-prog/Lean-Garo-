@@ -8,7 +8,25 @@ Before starting work, agents should read the role-specific live audit handoff:
 
 These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
 
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-26 by Claude A
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-26B by Claude A
+(same-day continuation. Full migration doc:
+docs/CLAUDE_A_SESSION_MIGRATION_20260926B.md — READ IT FIRST, this line
+is just a pointer. Summary: read `.ai/CLAUDE_A_OPERATING_GOVERNANCE.md`
+in full, retroactively applied its mandatory structure to this session's
+work. Fast-forwarded onto 4 commits of Claude B drift, no conflicts.
+Closed 2 new items sharing the Matchota root: finished=Matchotaha (also
+resolves that key's POS/sense default, see doc §10), to get something
+completed=Matchotata. Duplicate-representation check re-run against
+garo_dictionary.json explicitly. EXPLICIT DRIFT FLAG for the Project
+Owner: no new grammar rule since RULE-050 (2026-09-21) — every session
+since has been vocabulary-only, past the 3-session threshold; see the
+migration doc's Rule-generalization check section. Standing Claude B
+handoff restated: sov-assembly's "where is the X?" still fails on
+multi-word nouns. Gate green at close: 8922/8922 dictionary, unit tests
+passing, 0 new repository-intelligence violations. Pushed clean, verified
+== origin/main.)
+
+---PRIOR (2026-09-26, same day, superseded above, kept for history)---
 (resumed via a pasted migration-doc pointer + fresh PAT-cloned repo. Full
 migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260926.md — READ IT
 FIRST, this line is just a pointer. Summary: resync clean, HEAD 07ec71e ==
