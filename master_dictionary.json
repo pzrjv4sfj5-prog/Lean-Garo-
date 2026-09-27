@@ -11357,7 +11357,8 @@
     "english": "i have food",
     "garo": "ang ong·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give food",
@@ -11395,7 +11396,8 @@
     "english": "i have water",
     "garo": "ang ong·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give water",
@@ -11431,7 +11433,8 @@
     "english": "i have book",
     "garo": "ang ong·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang ong·a kitab'."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "i give book",
@@ -11467,7 +11470,8 @@
     "english": "i have house",
     "garo": "ang ong·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give house",
@@ -11503,7 +11507,8 @@
     "english": "i have car",
     "garo": "ang ong·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give car",
@@ -11539,7 +11544,8 @@
     "english": "i have money",
     "garo": "ang ong·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "i give money",
@@ -11575,7 +11581,8 @@
     "english": "you have food",
     "garo": "na· ong·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give food",
@@ -11611,7 +11618,8 @@
     "english": "you have water",
     "garo": "na· ong·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give water",
@@ -11647,7 +11655,8 @@
     "english": "you have book",
     "garo": "na· ong·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· ong·a kitab'."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "you give book",
@@ -11683,7 +11692,8 @@
     "english": "you have house",
     "garo": "na· ong·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give house",
@@ -11719,7 +11729,8 @@
     "english": "you have car",
     "garo": "na· ong·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give car",
@@ -11755,7 +11766,8 @@
     "english": "you have money",
     "garo": "na· ong·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "you give money",
@@ -11791,7 +11803,8 @@
     "english": "he have food",
     "garo": "u ong·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give food",
@@ -11827,7 +11840,8 @@
     "english": "he have water",
     "garo": "u ong·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give water",
@@ -11863,7 +11877,8 @@
     "english": "he have book",
     "garo": "u ong·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u ong·a kitab'."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "he give book",
@@ -11899,7 +11914,8 @@
     "english": "he have house",
     "garo": "u ong·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give house",
@@ -11935,7 +11951,8 @@
     "english": "he have car",
     "garo": "u ong·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give car",
@@ -11971,7 +11988,8 @@
     "english": "he have money",
     "garo": "u ong·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "he give money",
@@ -12007,7 +12025,8 @@
     "english": "she have food",
     "garo": "u ong·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give food",
@@ -12043,7 +12062,8 @@
     "english": "she have water",
     "garo": "u ong·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give water",
@@ -12079,7 +12099,8 @@
     "english": "she have book",
     "garo": "u ong·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u ong·a kitab'."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "she give book",
@@ -12115,7 +12136,8 @@
     "english": "she have house",
     "garo": "u ong·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give house",
@@ -12151,7 +12173,8 @@
     "english": "she have car",
     "garo": "u ong·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give car",
@@ -12187,7 +12210,8 @@
     "english": "she have money",
     "garo": "u ong·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "she give money",
@@ -12223,7 +12247,8 @@
     "english": "we have food",
     "garo": "i ong·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give food",
@@ -12259,7 +12284,8 @@
     "english": "we have water",
     "garo": "i ong·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give water",
@@ -12295,7 +12321,8 @@
     "english": "we have book",
     "garo": "i ong·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i ong·a kitab'."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "we give book",
@@ -12331,7 +12358,8 @@
     "english": "we have house",
     "garo": "i ong·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give house",
@@ -12367,7 +12395,8 @@
     "english": "we have car",
     "garo": "i ong·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give car",
@@ -12403,7 +12432,8 @@
     "english": "we have money",
     "garo": "i ong·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "we give money",
@@ -12439,7 +12469,8 @@
     "english": "they have food",
     "garo": "bi ong·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give food",
@@ -12475,7 +12506,8 @@
     "english": "they have water",
     "garo": "bi ong·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give water",
@@ -12511,7 +12543,8 @@
     "english": "they have book",
     "garo": "bi ong·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi ong·a kitab'."
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "they give book",
@@ -12547,7 +12580,8 @@
     "english": "they have house",
     "garo": "bi ong·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give house",
@@ -12583,7 +12617,8 @@
     "english": "they have car",
     "garo": "bi ong·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give car",
@@ -12619,7 +12654,8 @@
     "english": "they have money",
     "garo": "bi ong·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED 2026-09-27B — bare 'X have/has Y' entry used a malformed, uncited ong·a construction with non-standard pronoun spelling (ang/na·/u/i/bi, none matching a VERIFIED pronoun form), silently pre-empting the well-established, citation-backed donga-existential pattern used throughout corrections.json (e.g. 'i have two dogs'->'Ango achak manggni donga', 'she has three children'->'Ua bi·sa sakgittam donga', 'she has a book'->'Uo ki·tap donga') and confirmed via grammar-assembly elsewhere. Superseded per Claude B's 2026-09-27 precedence-bug handoff (docs/CLAUDE_B_SESSION_MIGRATION_20260927.md) -- corpus-internal resolution, no new native evidence needed, retained not deleted."
   },
   {
     "english": "they give money",
