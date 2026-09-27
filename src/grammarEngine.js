@@ -902,7 +902,18 @@ export function analyzeGrammar(input) {
               || null;
           });
           const allWordsResolved = perWordGaro.every((g) => g !== null);
-          const quantifierIdx = perWordGaro.length > 1 ? perWordGaro.findIndex((g) => g && /^bang·[ae]$/i.test(g)) : -1;
+          // 2026-09-27 (later same day): "several" -> "adita" (native-
+          // confirmed, "Ango adita ki.taprang donga", overrides the
+          // bang·e value this file's comment above still narrates).
+          // Added to this literal match for the same reason bang·a/
+          // bang·e are here -- without it, "adita" silently vanishes via
+          // the allWordsResolved-but-no-quantifier-detected branch below,
+          // an AI-002-shaped regression exposed by the dictionary swap,
+          // not by this composition logic itself. Kept as a literal
+          // word-list match, not a POS-based rule -- matches the existing
+          // discipline of only recognizing individually native-confirmed
+          // quantifier words here, not guessing at the class in general.
+          const quantifierIdx = perWordGaro.length > 1 ? perWordGaro.findIndex((g) => g && /^(bang·[ae]|adita)$/i.test(g)) : -1;
           if (allWordsResolved && quantifierIdx !== -1 && quantifierIdx === perWordGaro.length - 2) {
             // Quantifier directly precedes the head noun in English
             // ("several/many books"). Compose Quantifier + Noun (reversed

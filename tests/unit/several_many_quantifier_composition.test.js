@@ -35,23 +35,40 @@
 //    incorrect -- "Anga; ang+o = ango". Fixed in sentenceBuilder.js,
 //    scoped to "Anga" specifically (not generalized to other pronouns).
 //
-// Current, live state: several = bang·e, many = bang·a, quantifier
+// 7. 2026-09-27, later same day, Project Owner overrules step 4's
+//    "bang·e" resolution: "we will use i have several books = Ango
+//    adita ki.taprang donga not Ango bang·e ki·tap donga" -- several =
+//    adita, final. garo_dictionary.json/corrections.json's "several"
+//    entry updated; "i have several books" also given its own
+//    exact-phrase correction (only entry attested with -rang, per
+//    CLAUDE_A_RANG_PLURAL_RULING_20260825.md -- not generalized to
+//    other nouns, see below). This exposed a real regression: the
+//    quantifier-preservation composition path (grammarEngine.js) only
+//    recognized the literal words "bang·a"/"bang·e", so every OTHER
+//    "several X" sentence (not the exact-phrase-covered "books")
+//    silently dropped "adita" entirely -- an AI-002-shaped bug,
+//    surfaced by this content swap, fixed same session by adding
+//    "adita" to that literal match.
+//
+// Current, live state: several = adita, many = bang·a, quantifier
 // composes BEFORE the head noun, 1st-person possessor is "Ango".
+// "i have several books" ships as an exact-phrase correction (with
+// -rang); every other "several X" composes via grammar-assembly
+// without -rang (unmarked), since -rang is not computed anywhere in
+// this codebase -- see CLAUDE_A_RANG_PLURAL_RULING_20260825.md.
 //
 // STILL NOT addressed (flagged to the Project Owner, awaiting direction,
-// not implemented here): Thangseng's own "Ango adita ki.taprang donga"
-// example also shows a "-rang" plural suffix on the counted noun, which
-// the engine does not currently do anywhere. Whether that's a general
-// rule (plurals always take -rang) or specific to "adita" (now
-// superseded) is an open question — not implemented until answered.
+// not implemented here): whether "-rang" plural marking or the
+// quantifier-before-noun order generalizes to other quantifiers/nouns
+// beyond the individually native-confirmed cases is an open question --
+// not implemented until answered.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { translate } from '../../src/translationEngine.js';
 
-test('"i have several books" keeps the quantifier (bang·e), not silently dropped', async () => {
+test('"i have several books" uses the Owner-confirmed exact form (adita, with -rang)', async () => {
   const r = await translate('i have several books');
-  assert.match(r.garo, /bang·e/);
-  assert.match(r.garo, /ki·tap/i);
+  assert.equal(r.garo, 'Ango adita ki.taprang donga');
 });
 
 test('"i have many books" keeps the quantifier (bang·a), not silently dropped', async () => {
@@ -60,9 +77,9 @@ test('"i have many books" keeps the quantifier (bang·a), not silently dropped',
   assert.match(r.garo, /ki·tap/i);
 });
 
-test('"several" alone resolves to bang·e via the corrections override', async () => {
+test('"several" alone resolves to adita via the corrections override', async () => {
   const r = await translate('several');
-  assert.equal(r.garo, 'bang·e');
+  assert.equal(r.garo, 'adita');
 });
 
 test('"many" alone resolves to bang·a via the corrections override', async () => {
@@ -80,10 +97,16 @@ test('numeral object composition (a different, already-working path) is untouche
   assert.match(r.garo, /king·gittam/);
 });
 
-test('"she has several dogs" uses grammar-assembly with correct SOV order (bang·e), not the sov-assembly fallback', async () => {
+test('"she has several dogs" uses grammar-assembly with correct SOV order (adita), not the sov-assembly fallback', async () => {
   const r = await translate('she has several dogs');
   assert.equal(r.method, 'grammar-assembly');
-  assert.equal(r.garo, 'Uao bang·e achak donga');
+  assert.equal(r.garo, 'Uao adita achak donga');
+});
+
+test('regression guard: "adita" survives quantifier-preservation composition like bang·a/bang·e do (AI-002-shaped bug, fixed 2026-09-27)', async () => {
+  const r = await translate('he has several trees');
+  assert.equal(r.method, 'grammar-assembly');
+  assert.match(r.garo, /adita/);
 });
 
 test('"we have many students" uses grammar-assembly with correct SOV order (bang·a), not the sov-assembly fallback', async () => {
