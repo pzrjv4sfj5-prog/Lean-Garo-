@@ -15,7 +15,7 @@ import MODAL_CAN_MAP from './data/modal_can_map.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import POSSESSIVES from './data/possessives.json' with { type: 'json' };
 import { NUMBER_WORDS, countNoun, parseCountingPhrase, singularize } from './garo_classifier.js';
-import { lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
+import { lookupGaro, VERB_LEMMAS, matchMultiWordVerbLemma } from './lookupEngine.js';
 import { lookupPhrase } from './data/phrase_maps.js';
 import { applyNegation, applyTense, findVerbForm, getConjugationRoot, applyTopicSuffix, composeBoundOnlyObject, applyDeclarativeEndingAia } from './morphologyEngine.js';
 import { STOP_WORDS, AUXILIARY_SKIP, INTENSIFIER_WORDS } from './normalizationEngine.js';
@@ -265,6 +265,8 @@ export function analyzeGrammar(input) {
         || VERB_LEMMAS.has(nextTok.replace(/ing$/, ''))
         || VERB_LEMMAS.has(nextTok.replace(/ed$/, ''))
         || VERB_LEMMAS.has(nextTok.replace(/s$/, ''))
+        // AI-003: 2-word particle verb ("the wall crumbles down")
+        || !!matchMultiWordVerbLemma(nextTok, words[3] ? words[3].toLowerCase().replace(/[^a-z]/g,'') : null)
       );
       // has/have coherence fix (2026-09-24, Claude B, engineering-only,
       // confirmed live): the coherent-nextTok check accepted is/are/was/
@@ -296,6 +298,7 @@ export function analyzeGrammar(input) {
     // Find verb — skip stop words, possessives, and auxiliary tense markers
     const SPECIAL_TENSES = ['discontinued','completed','chim','pastcont'];
     let pendingLocativeVerbGuard = false;
+    let multiWordConsumedIdx = -1;
     for (let i = subjectEndIndex + 1; i < words.length; i++) {
       const w = words[i].toLowerCase().replace(/[^a-z]/g,'');
       const prevWv = i > 0 ? words[i-1].toLowerCase().replace(/[^a-z]/g,'') : '';
@@ -328,7 +331,8 @@ export function analyzeGrammar(input) {
         if ((words[j] || '').toLowerCase().replace(/[^a-z]/g,'') === 'to') j++;
         const nextW = (words[j] || '').toLowerCase().replace(/[^a-z]/g,'');
         const nextLemma = nextW.replace(/ing$|ed$|s$/, '');
-        const introducesInfinitiveVerb = !!nextW && (!!PURPOSE_MAP[nextW] || VERB_LEMMAS.has(nextW) || VERB_LEMMAS.has(nextLemma));
+        const nextW2 = (words[j + 1] || '').toLowerCase().replace(/[^a-z]/g,'');
+        const introducesInfinitiveVerb = !!nextW && (!!PURPOSE_MAP[nextW] || VERB_LEMMAS.has(nextW) || VERB_LEMMAS.has(nextLemma) || !!matchMultiWordVerbLemma(nextW, nextW2));
         if (!introducesInfinitiveVerb) {
           // "going" is the finite verb here — do NOT skip; fall through
           // to normal verb resolution below exactly like any other word.
@@ -444,7 +448,16 @@ export function analyzeGrammar(input) {
       if (w === 'bed') continue;
       let isIrregular = !!IRREGULAR_VERBS[w] || !!IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')];
       let garoVerb;
-      if (SPECIAL_TENSES.includes(detectedTense)) {
+      // AI-003 (2026-09-28, Claude B): dictionary-attested 2-word particle
+      // verb ("crumble down") checked before single-token resolution;
+      // consumes the next word so the object loop doesn't re-use it.
+      const mwNext = words[i + 1] ? words[i + 1].toLowerCase().replace(/[^a-z]/g,'') : null;
+      const mwVerb = matchMultiWordVerbLemma(w, mwNext);
+      if (mwVerb) {
+        garoVerb = mwVerb.garo;
+        isIrregular = false;
+        multiWordConsumedIdx = i + 1;
+      } else if (SPECIAL_TENSES.includes(detectedTense)) {
         // Pre-inflected IRREGULAR_VERBS forms (e.g. "eating"->"cha·enga")
         // can't be safely re-suffixed with jaha/manaha/chim/engachim — go
         // straight to the dictionary root (present-tense) form instead.
@@ -530,7 +543,7 @@ export function analyzeGrammar(input) {
           // and never reaches this line.
           garoWithTense = applyNegation(getConjugationRoot(w, garoWithTense));
         }
-        verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i };
+        verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i, consumedIndex: multiWordConsumedIdx };
         break;
       }
     }
@@ -701,6 +714,7 @@ export function analyzeGrammar(input) {
       // words here loses no information.
       if (/^(not|never)$/.test(w)) continue;
       if (verb && words[i] === verb.english) continue;
+      if (verb && verb.consumedIndex === i) continue; // AI-003 particle of a 2-word verb
       if (IRREGULAR_VERBS[w] || IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')]) continue;
       // Push the cleaned `w` (punctuation-stripped), not raw words[i]
       // (2026-08-20, Claude B, engineering-only): pre-existing bug,

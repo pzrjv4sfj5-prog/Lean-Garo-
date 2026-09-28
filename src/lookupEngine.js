@@ -115,6 +115,42 @@ for (const key of Object.keys(compiledDictRaw)) {
   }
 }
 
+// AI-003 fix (2026-09-28, Claude B, engineering-only): VERB_LEMMAS above
+// is single-token by construction, so multi-word "to X Y" headwords could
+// never match any consumer (609/955 entries; "it crumbled down" silently
+// dropped the verb and shipped "down"->Ka·ma in its place). Cutoff decided
+// structurally BEFORE coding, per docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md
+// AI-003: exactly-2-word lemmas only (165 entries, the particle-verb
+// shape). 3+ word entries are mostly OCR gloss sentences and are
+// deliberately excluded -- matching them risks coincidental n-gram hits.
+// Map: "crumble down" -> Garo value of "to crumble down".
+export const MULTI_WORD_VERB_LEMMAS = new Map();
+for (const key of Object.keys(compiledDictRaw)) {
+  if (!key.startsWith('to ')) continue;
+  const lemma = key.slice(3).split('(')[0].trim().toLowerCase();
+  if (lemma.split(/\s+/).length !== 2) continue;
+  const garo = normalizeEntry(compiledDictRaw[key])?.garo;
+  if (garo && !MULTI_WORD_VERB_LEMMAS.has(lemma)) MULTI_WORD_VERB_LEMMAS.set(lemma, garo);
+}
+
+// Bigram matcher: w1/w2 are adjacent lowercase, punctuation-stripped
+// English tokens. w1 may be inflected (-ing/-ed/-s), mirroring the
+// single-token consumers' stripping; w2 (the particle/object) is exact.
+export function matchMultiWordVerbLemma(w1, w2) {
+  if (!w1 || !w2) return null;
+  // "be X" lemmas (be able, be angry...) are copula+predicate, not particle
+  // verbs; 'be' is an auxiliary skipped by every consumer, so matching it
+  // here made "going to be surprised" treat "going" as a pure auxiliary.
+  if (w1 === 'be') return null;
+  // Variants cover crumbled->crumble (-d), walked->walk (-ed), crumbling->
+  // crumble (-ing+e), walking->walk (-ing), crumbles->crumble (-s), -es.
+  for (const c of [w1, w1.replace(/ing$/, ''), w1.replace(/ing$/, 'e'), w1.replace(/ed$/, ''), w1.replace(/d$/, ''), w1.replace(/es$/, ''), w1.replace(/s$/, '')]) {
+    const lemma = c + ' ' + w2;
+    if (MULTI_WORD_VERB_LEMMAS.has(lemma)) return { lemma, garo: MULTI_WORD_VERB_LEMMAS.get(lemma) };
+  }
+  return null;
+}
+
 export function lookup(key) {
   const entry = EN_INDEX[key.toLowerCase().trim()];
   return entry ? normalizeEntry(entry) : null;
