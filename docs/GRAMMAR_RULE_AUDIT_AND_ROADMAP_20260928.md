@@ -64,7 +64,7 @@ Totals: 94 pairs, 50 match runtime (53%), 49 in master, 50 in corrections/phrase
 - G1 RULE-038 says mang/king/gong take the raka dot and its notes say "sak takes NO dot, unlike mang/king/gong". Dictionary holds mang without dot (PO directive 2026-09-13; achak mangsa). Rule YAML is stale on mang; also lists `do·a mang·chiking`, `mewa rongbri`, `manderang saksa` which conflict with live/superseded rows (D4-class).
 - G2 RULE-030 (re· vs re·ang) has both verified/high and needs_native_validation/high claims; RULE-030 examples contain mixed apostrophe/raka forms (re'angjaenga) vs live `re·ang·ja`.
 - G3 RULE-049 has no launch_priority/last_updated (schema-incomplete); RULE-050 mixes verified and derived claims.
-- G4 26 of 48 rules carry at least one needs_native_validation claim. Verified/high claims dominate P0, but RULE-014, 024, 034, 043 rest only on unvalidated claims.
+- G4 18 of 48 rules carry at least one needs_native_validation claim (RULE-005, RULE-006, RULE-009, RULE-014, RULE-018, RULE-024, RULE-026, RULE-030, RULE-031, RULE-034, RULE-035, RULE-036, RULE-037, RULE-038, RULE-039, RULE-041, RULE-043, RULE-G2). Rules resting ONLY on unvalidated claims: RULE-014, RULE-024, RULE-034.
 - G5 Dependency graph points to non-existent rule IDs (RULE-011 in RULE-013; no RULE-010/011/012/016/019/022 files) and 5 rules have migration_flags open.
 ### R. Runtime does not implement or honour the rule (Claude B, evidence from Claude A)
 - R-a -ja/-jaha/-manaha family (RULE-017/025/026/027/028): "does not"->[UNKNOWN]; "has stopped eating" and "has eaten" go to sov-assembly `donga cha·enga`/`donga cha·jok` (English-shaped periphrasis, not -jaha/-manaha).
@@ -98,7 +98,7 @@ Sequenced by dependency and risk; each phase ends with the full gate (prepare-da
 Priority order by user-visible harm: 3.1 [UNKNOWN] leaks (R3/R4/R-i, "does not"). 3.2 Dropped verbs/aspects: R-d, R-a, R-c. 3.3 Imperative/hortative -bo (R-b). 3.4 Classifier/number formatting: R1, R2, R-f (ge vs mang for birds, sak in "two persons", teens glue). 3.5 Question forms R-g (RULE-046/048). 3.6 Casing and pronoun consistency R7/R8. Regression tests: one unit test per rule ID using the rule's own example, generated from the conformance script, so rule to engine linkage becomes enforced (currently 0).
 
 ### Phase 4: Native validation relay (Thangseng, batched)
-4.1 Claims marked needs_native_validation on P0/P1 rules: RULE-005, 018, 024, 026, 030, 034, 043, 047 (see rule map). 4.2 Lexical variant questions surfaced here: Bao vs Bano, Antichi vs Bajalchi, mewa vs bite, a'bil vs Bol, why/because Maina. 4.3 -jaha vs -manaha overlap forms for "has stopped/has eaten". Each batch as THANGSENG_RELAY_QUESTION doc; no rule promoted without native evidence.
+4.1 Claims marked needs_native_validation on P0/P1 rules: 005, 006, 009, 014, 018, 024, 026, 030, 031, 034, 035, 036, 037, 038, 039, 041, 043, G2 (RULE- prefix omitted; see rule map). 4.2 Lexical variant questions surfaced here: Bao vs Bano, Antichi vs Bajalchi, mewa vs bite, a'bil vs Bol, why/because Maina. 4.3 -jaha vs -manaha overlap forms for "has stopped/has eaten". Each batch as THANGSENG_RELAY_QUESTION doc; no rule promoted without native evidence.
 
 ### Phase 5: Close-out
 Rebuild map, target: runtime match >= 90% on rule examples, 0 orphan examples, 0 verified ties untracked, lint green, npm audit triaged. Set lint and rule-conformance as gates in `npm run build`.
