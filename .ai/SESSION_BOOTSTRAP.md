@@ -8,9 +8,9 @@ Before starting work, agents should read the role-specific live audit handoff:
 
 These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
 
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-27B by
-Claude A (same-day continuation, "several" content fix). Full migration
-doc: docs/CLAUDE_A_SESSION_MIGRATION_20260927B.md — READ IT FIRST, this
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-27C by
+Claude A (ong·a have/has supersession, converged with Claude B). Full migration
+doc: docs/CLAUDE_A_SESSION_MIGRATION_20260927C.md — READ IT FIRST, this
 line is just a pointer. Summary: fresh PAT clone, HEAD == origin/main ==
 b3a9baf5 on arrival (no drift). Project Owner directive resolved the
 standing "several" = bang·e/adita/bang·a tension (Claude B's dc28574
