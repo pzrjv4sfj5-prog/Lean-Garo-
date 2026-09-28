@@ -6,7 +6,7 @@ prepare-data OK (8886 compiled) · test-dictionary 8886/8886, 9/9 · repository-
 
 ## Findings
 ### Process / hygiene
-- F1 `.ai/WORKSTATE.yaml` `repository.head: d0d251c` and SESSION_BOOTSTRAP pointers are stale (real HEAD 51ca8d6); latest entry there is 20260926, 20260927B/C entries not reflected at top.
+- F1 (WITHDRAWN 2026-09-28: `head` is a deliberate pre-commit checkpoint per head_convention, not stale) `.ai/WORKSTATE.yaml` `repository.head: d0d251c` and SESSION_BOOTSTRAP pointers are stale (real HEAD 51ca8d6); latest entry there is 20260926, 20260927B/C entries not reflected at top.
 - F2 `npm run lint` fails (9 errors, no-unused-vars in src/research/demo.js, researchFallback.js). Not in the build chain, so ungated.
 - F3 `npm audit`: 5 moderate (react-router/@remix-run/router, qs) — dev-time, unpatched.
 - F4 Committed docs contain a truncated PAT prefix (docs/CLAUDE_A_SESSION_MIGRATION_20260927B.md line 93, plus 5 CLAUDE_B docs mention token patterns). No full token found; recommend scrubbing prefixes anyway.

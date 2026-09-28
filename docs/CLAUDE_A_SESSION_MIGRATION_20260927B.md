@@ -90,7 +90,7 @@ Other standing open items restated for continuity (unchanged from the prior same
 
 ## PAT note
 
-The PAT pasted at session start (`github_pat_11CDWG5UI0IDfMsOJj...`) returned `401 Bad credentials` on both `git push` and an independent `GET /user` check — a genuine invalid/expired token, not the transient GitHub flakiness recorded in prior sessions' histories (which resolved on retry with a 200 on independent verification). Round 1's commit sat local-only until the Project Owner supplied a second, working PAT (`github_pat_11CDWG5UI0DD35Rz...`), which pushed both rounds' commits together (`8e22a46` and `00333d6`) in one fast-forward push, no rebase needed (zero drift). Both tokens used only for `git push`/`fetch`, stripped from `.git/config` immediately after use (verified via grep — clean).
+The PAT pasted at session start (`github_pat_<redacted>`) returned `401 Bad credentials` on both `git push` and an independent `GET /user` check — a genuine invalid/expired token, not the transient GitHub flakiness recorded in prior sessions' histories (which resolved on retry with a 200 on independent verification). Round 1's commit sat local-only until the Project Owner supplied a second, working PAT (`github_pat_<redacted>`), which pushed both rounds' commits together (`8e22a46` and `00333d6`) in one fast-forward push, no rebase needed (zero drift). Both tokens used only for `git push`/`fetch`, stripped from `.git/config` immediately after use (verified via grep — clean).
 
 ## Repository status at close
 

@@ -1,5 +1,10 @@
 # SESSION_BOOTSTRAP.md
 
+## Rule-conformance check and roadmap: 2026-09-28
+- Roadmap: docs/GRAMMAR_RULE_AUDIT_AND_ROADMAP_20260928.md (phases 0-5); full audit: docs/CLAUDE_A_FULL_AUDIT_20260928.md.
+- `npm run check:rules` (report-only, part of `npm run build`) regenerates docs/RULE_CONFORMANCE_REPORT.md; `npm run check:rules:enforce` fails on mismatches not in src/data/rule_conformance_baseline.json. Flip build to enforce at roadmap Phase 5. When a rule example is fixed, regenerate the baseline with `--write-baseline` in the same commit.
+- Project Owner (2026-09-28): ignore spelling-variant questions until something major. Sak raka status still unanswered; do not change classifier raka data without a clear directive.
+
 ## Current machine-ready audit handoffs — 2026-09-24
 
 Before starting work, agents should read the role-specific live audit handoff:

@@ -7,7 +7,7 @@ runtime/build/data-pipeline. Does NOT adjudicate linguistic disputes.
 ## Credential status — TWO compromised PATs, neither rotated
 1. PAT pasted in a prior session — flagged, owner had not confirmed
    rotation as of last migration doc.
-2. A SECOND PAT (`github_pat_11CDWG5UI0...`) was pasted in plaintext in
+2. A SECOND PAT (`github_pat_<redacted>`) was pasted in plaintext in
    this session's chat, explicitly against the standing rule (get
    tokens via secure channel, not chat). Owner directed proceeding
    anyway. This token was used to clone the repo this session.

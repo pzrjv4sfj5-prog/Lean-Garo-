@@ -9,7 +9,7 @@ HEAD = origin/main = `2b78781`. Working tree clean. Git identity this
 session: `user.name "Claude B"`, `user.email claude-b@anthropic-session.local`.
 
 ## Credential status — TWO compromised PATs, neither rotated
-Unchanged from prior doc. A github_pat_11CDWG5UI0... token was pasted in
+Unchanged from prior doc. A github_pat_<redacted> token was pasted in
 plaintext in this session's chat (again against the standing rule) and
 used to clone/push. **Both known tokens remain compromised and unrotated.
 Do not reuse either. Get any replacement via a secure channel, not chat.**

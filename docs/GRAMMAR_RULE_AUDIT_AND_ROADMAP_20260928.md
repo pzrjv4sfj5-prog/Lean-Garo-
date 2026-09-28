@@ -108,3 +108,9 @@ Claude A: Phases 0, 1, 2. Claude B: Phase 3 (needs handoff; not touched by A). T
 
 ## Repository status at close
 Docs only. WORKSTATE/SESSION_BOOTSTRAP not updated (Phase 0.1). Verify HEAD vs origin/main after push.
+
+## Update 2026-09-28 (Project Owner answers, Phase 0 executed)
+- Gate: delegated to Claude A. Decision: report-only in `npm run build` now (only 53% of examples match, enforcing would block deploy); `--enforce` with a baseline (44 known mismatches) is available now and becomes the build gate at Phase 5. Provenance: Project Owner directive, chat, no transcript.
+- Spelling variants (nokkimao/kokkimao, Uo/Ua, Bao/Bano, a'bil/Bol, Antichi/Bajalchi, mewa/bite): deferred by Project Owner until something major; Phase 4.2 items on hold.
+- Sak raka: Owner wrote "anything with (-) (') take the raka. Sak is a classifier." Not applied. It does not say whether sak takes a dot before number suffixes (current data: no dot, 60 rows; king/gong dot; mang/pang none), and the apostrophe part conflicts with the standing normalization ruling that `'` is a distinct prefix, not raka. Awaiting one clear answer; RULE-038 sak/mang wording stays untouched until then.
+- Phase 0 done: 0.2 PAT prefixes scrubbed (5 docs); 0.3 scripts/audit-rule-conformance.mjs + docs/RULE_CONFORMANCE_REPORT.md + baseline. 0.1 reduced to a next_action entry: audit finding F1 (stale WORKSTATE head) is withdrawn; per head_convention `head` deliberately lags.
