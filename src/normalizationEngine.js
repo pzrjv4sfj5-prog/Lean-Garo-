@@ -9,7 +9,7 @@
  * identical via the full 237-sentence stress benchmark diff before/after.
  */
 
-import { levenshtein } from './utils.js';
+import { levenshteinBounded } from './utils.js';
 import { EN_INDEX } from './lookupEngine.js';
 
 export const STOP_WORDS = new Set([
@@ -97,8 +97,14 @@ export function fuzzyMatch(input) {
   let best = null, bestDist = Infinity;
   for (const key of Object.keys(EN_INDEX)) {
     if (key.length <= 5) continue;
-    const dist = levenshtein(lower, key);
+    // Perf (2026-09-28): threshold depends only on key length, and edit
+    // distance >= length difference, so keys whose length differs by more
+    // than the threshold can never match. Bounded DP with the same
+    // threshold gives identical accept/reject and identical distances for
+    // every accepted key -> result byte-identical to the unbounded scan.
     const threshold = Math.max(1, Math.floor(key.length * 0.15));
+    if (Math.abs(lower.length - key.length) > threshold) continue;
+    const dist = levenshteinBounded(lower, key, threshold);
     if (dist < bestDist && dist <= threshold) { bestDist = dist; best = key; }
   }
   return best ? { key: best, distance: bestDist } : null;
