@@ -14,6 +14,15 @@ import { buildClassifierPhrase } from '../../src/garo_classifier.js';
 // full reasoning on why the no-dot reading of this same docx table was
 // traced to a transcription gap rather than treated as authoritative.
 // jol/se are not in this table at all and remain fully unconfirmed.
+//
+// king UPDATE 2026-09-28/29 (Claude A resume session): reversed again,
+// now WITH the dot ("king·kolgrik" etc) -- direct Project Owner
+// statement in chat ("king has a rakka"), which also matches all 11
+// verified_high master_dictionary.json rows for king (never matched
+// the no-dot reading this test previously asserted). See
+// garo_classifier.js RAKA_CLASSIFIERS/CONFIRMED_COMPOUND_CLASSIFIERS
+// comments for the full chain. bol/ge/te are unaffected -- only king
+// moved.
 
 test('bol (cars) 20-99 compound: fused, no dot', () => {
   assert.equal(buildClassifierPhrase('bol', 20), 'bolkolgrik');
@@ -24,10 +33,10 @@ test('bol (cars) 20-99 compound: fused, no dot', () => {
   assert.equal(buildClassifierPhrase('bol', 41), 'bolsotbrisa');
 });
 
-test('king (books) 20-99 compound: fused, no dot', () => {
-  assert.equal(buildClassifierPhrase('king', 20), 'kingkolgrik');
-  assert.equal(buildClassifierPhrase('king', 21), 'kingkolgriksa');
-  assert.equal(buildClassifierPhrase('king', 41), 'kingsotbrisa');
+test('king (books) 20-99 compound: fused, WITH dot (reversed 2026-09-28/29)', () => {
+  assert.equal(buildClassifierPhrase('king', 20), 'king·kolgrik');
+  assert.equal(buildClassifierPhrase('king', 21), 'king·kolgriksa');
+  assert.equal(buildClassifierPhrase('king', 41), 'king·sotbrisa');
 });
 
 test('ge (pens) 20-99 compound: fused, no dot', () => {

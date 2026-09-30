@@ -31,7 +31,7 @@ Examples: 93 | runtime matches rule: 51 (55%) | orphan (in no entry layer): 22 |
 | RULE-033 | the dog is under the table. | Achak tebil nokkimao ong·a | Achak tebil kokkimao ong·a | correction | 1 |
 | RULE-036 | Wait, let me eat. | Da·mo, anga mi cha·kuna | Damo [UNKNOWN] Angko Cha·a | morphology | 0.65 |
 | RULE-037 | to take revenge | a'jak soka | a'jak sok·na | exact-phrase | 0.98 |
-| RULE-038 | two chicken | do·o manggni | do·o ge·gni | classifier | 0.96 |
+| RULE-038 | two chicken | do·o mang·gni | do·o ge·gni | classifier | 0.96 |
 | RULE-038 | one person | manderang saksa | mande saksa | exact-phrase | 0.98 |
 | RULE-038 | four fruits | mewa rongbri | bite rongbri | exact-phrase | 0.98 |
 | RULE-044 | where? | Bao | Bano | sov-assembly | 0.75 |

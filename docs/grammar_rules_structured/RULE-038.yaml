@@ -5,18 +5,18 @@ description: >-
   number word. The specific noun is always stated, followed by a
   classifier root selected by the noun's semantic class, fused with a
   number suffix (sa=1, gni=2, gittam=3...). Classifier roots confirmed
-  so far via direct native citation: mang (animals/birds/fish, NO raka
-  dot before a single-digit suffix, dot:false confirmed 2026-09-18/19
-  after two prior reversals -- see native_notes), sak (people, no raka
-  dot before the number), king (books/flat objects -- engine composition
-  treats king as no-dot per 2026-09-19 Owner directive, but 10 existing
-  verified_high dictionary rows for "one book".."ten books" still ship
-  WITH the dot; unresolved, see native_notes CONTRADICTION note, do not
-  resolve without a fresh citation), gong (money/currency, WITH raka dot,
-  confirmed 2026-09-18), rong (roundish objects - fruits, alcohol, no
-  dot), ge (general objects/tools/furniture/containers - NOT fruit,
-  corrected 2026-08-01, WITH dot), and te (houses - added 2026-09-12,
-  WITH dot, see native_notes).
+  so far via direct native/Owner citation: mang (animals/birds/fish,
+  WITH raka dot before the number suffix, both n<20 and the n20-99
+  compound -- dot:true, reconfirmed 2026-09-28/29 after four total
+  reversals, see native_notes), sak (people, no raka dot before the
+  number), king (books/flat objects, WITH raka dot -- dot:true,
+  reconfirmed 2026-09-28/29, matching all 11 existing verified_high
+  dictionary rows, closing the prior code/data contradiction, see
+  native_notes), gong (money/currency, WITH raka dot, confirmed
+  2026-09-18), rong (roundish objects - fruits, alcohol, NO raka dot,
+  reconfirmed 2026-09-28/29), ge (general objects/tools/furniture/
+  containers - NOT fruit, corrected 2026-08-01, WITH dot), and te
+  (houses - added 2026-09-12, WITH dot, see native_notes).
   Additionally, the 2026-09-10/11 Project Owner-supplied
   data/garo_number_classifier_engine_machine_ready.json contract adds a
   further confirmed set for other categories (pang=trees/plants, dot=
@@ -42,22 +42,22 @@ claims:
     confidence: low
     status_note: "Thangseng was asked for the full list 2026-07-21; 2026-08-01 relay answered rong (roundish objects, incl. alcohol) but did not confirm the list is now complete - still awaiting full confirmation"
 examples:
-  - "achak mangsa=\"one dog\", achak manggni=\"two dogs\""
-  - "do·o manggni=\"two chicken\" (do·o=\"chicken\", NOT a number or generic animal word — see RC-CANDIDATE-022/NV-025 for the corruption this caused when the noun was dropped)"
-  - "na·tok manggittam=\"three fish\""
-  - "manderang saksa=\"one person\", skigipa sakgni=\"two teachers\" (sak takes NO raka dot before the number suffix — corrected 2026-09-03, see NV-124; RE-CONFIRMED 2026-09-28 direct Project Owner statement in chat, no change to data or code needed, engine already shipped this correctly. Note: unlike gong/ge/te, which DO take the dot -- mang and king do NOT take the dot either, despite this example's older wording; see native_notes)"
+  - "achak mang·sa=\"one dog\", achak mang·gni=\"two dogs\""
+  - "do·o mang·gni=\"two chicken\" (do·o=\"chicken\", NOT a number or generic animal word — see RC-CANDIDATE-022/NV-025 for the corruption this caused when the noun was dropped)"
+  - "na·tok mang·gittam=\"three fish\""
+  - "manderang saksa=\"one person\", skigipa sakgni=\"two teachers\" (sak takes NO raka dot before the number suffix — corrected 2026-09-03, see NV-124; RE-CONFIRMED 2026-09-28/29 direct Project Owner statement in chat, no change to data or code needed, engine already shipped this correctly. Note: sak and rong are the no-dot outliers here -- mang/king/gong/ge/te ALL take the dot)"
   - "ki·tap king·sa=\"one book\", ki·tap king·gittam=\"three books\""
   - "kettal ge·gni=\"two knives\""
-  - "do·o mangchiking=\"ten birds\" (CORRECTED 2026-09-28: prior wording cited \"do·a\", which is only a superseded/stale master_dictionary.json row; the current verified_high row for \"ten birds\" is do·o, the same word already used for \"chicken\" elsewhere in this rule -- the do·a/do·o \"real minimal pair\" claim is CONTRADICTED by current data and needs native re-validation, not asserted here; see native_notes)"
-  - "mewa rongbri=\"four fruits\" (rong, no raka — corrected 2026-08-01, was wrongly ge)"
+  - "do·o mang·chiking=\"ten birds\" (CORRECTED 2026-09-28: prior wording cited \"do·a\", which is only a superseded/stale master_dictionary.json row; the current verified_high row for \"ten birds\" is do·o, the same word already used for \"chicken\" elsewhere in this rule -- the do·a/do·o \"real minimal pair\" claim is CONTRADICTED by current data and needs native re-validation, not asserted here; see native_notes)"
+  - "mewa rongbri=\"four fruits\" (rong, no raka — corrected 2026-08-01, was wrongly ge; reconfirmed 2026-09-28/29, \"rong doesn't have rakka\")"
   - "chu rong sa=\"one alcohol\", chu rong bonga=\"five alcohol\" (rong extends to alcohol; chu=\"alcohol\", covers beer/gin/etc; SPACED, corrected 2026-09-13 per direct Owner confirmation -- was previously listed fused as \"chu rongsa\", now understood to be the stale assumption; per-noun exception to rong's otherwise-fused default, see SPACED_NOUNS in garo_classifier.js -- NOT a change to fruit/solid rong nouns like mewa)"
-  - "nok te·sa=\"one house\" ... nok te·chiking=\"ten houses\" (te takes the raka dot, like ge/gong (NOT like mang, which is no-dot; king is contested, see native_notes) — full 10-item VERIFIED/HIGH paradigm, native-confirmed 2026-08-13/14, NV-072/NV-075 lineage)"
+  - "nok te·sa=\"one house\" ... nok te·chiking=\"ten houses\" (te takes the raka dot, same as mang/king/gong/ge now -- full 10-item VERIFIED/HIGH paradigm, native-confirmed 2026-08-13/14, NV-072/NV-075 lineage)"
   - "kolom ge·sa=\"one pen\" ... kolom ge·Chi·chet=\"eighteen pens\" (ge takes the raka dot — full VERIFIED/HIGH paradigm, native-confirmed 2026-08-11)"
 counterexamples:
   note: >-
     the pre-existing master_dictionary.json numbers-category entries
     that drop the noun entirely and reuse a single classifier-number
-    phrase across unrelated nouns (e.g. the now-fixed do·o manggni
+    phrase across unrelated nouns (e.g. the now-fixed do·o mang·gni
     wrongly standing for "two dogs"/"two birds"/"two fish"
     simultaneously) are the corrupted, NOT the correct form — see
     docs/DICTIONARY_ERROR_AUDIT_20260719.md and RC-CANDIDATE-022 for
@@ -94,8 +94,7 @@ native_notes: >-
   bisil gong·sa"). This corrects the raka dot previously (and
   incorrectly) inserted into all sak-classifier entries when NV-072/
   NV-073 were first processed. sak now confirmed to take NO raka dot
-  before the number suffix, unlike gong (dotted) -- mang and king are
-  NOT reliable "does take the dot" comparators either, see below.
+  before the number suffix, unlike gong/mang/king/ge/te (all dotted).
   Applied directly
   across all 65 affected sak-classifier entries in
   master_dictionary.json plus 3 children-counting entries in
@@ -112,13 +111,13 @@ native_notes: >-
   te·chiking, NV-072/075 lineage, 2026-08-13/14) that was never folded
   into this rule's example list until now (a documentation gap, not a
   runtime bug — the dictionary rows were always correct). Both take
-  the raka dot, same as gong. CORRECTED 2026-09-28: mang does NOT take
-  the dot (dot:false, confirmed 2026-09-18/19, see below); king's dot
-  status is CONTESTED, not "same as" -- RAKA_CLASSIFIERS excludes king
-  by direct 2026-09-19 Owner directive, but 10 existing verified_high
-  book-counting rows in master_dictionary.json still ship WITH the dot
-  and were never corrected to match. CLOSED for ge/te only; king
-  reopened, see the new finding below.
+  the raka dot, same as gong. mang and king were CORRECTED 2026-09-28
+  (both to dot:false) and then REVERSED BACK 2026-09-28/29 (both to
+  dot:true) -- see the mang/king reversal history below and in
+  garo_classifier.js's RAKA_CLASSIFIERS comment for the full chain on
+  each. CLOSED for ge/te/mang/king/gong: all five take the dot, sak and
+  rong are the only no-dot classifiers currently confirmed among these
+  seven.
   Space-before-number question (2026-09-12, CORRECTED — retracting
   my own earlier note today): originally closed this as "settled,
   plain space" citing the contract's surface_policy.default_display
@@ -141,43 +140,34 @@ native_notes: >-
   examples added to
   data/garo_number_classifier_engine_machine_ready.json.
 
-finding_20260928: >-
-  Claude A, in-chat audit + Claude A resume session, 2026-09-28. Two
-  corrections to this rule's own examples, both confirmed against
-  master_dictionary.json (no data changed, doc-only): (1) mang's
-  examples previously showed the raka dot (mang·sa etc); mang is
-  dot:false, confirmed 2026-09-18/19 in src/garo_classifier.js after
-  three total reversals -- corrected to mangsa/manggni/etc, matching
-  what the engine and the verified_high dictionary rows already ship.
-  (2) "ten birds" previously cited "do·a mangchiking" as a "real
-  minimal pair" distinguishing do·a=bird from do·o=chicken; the
-  verified_high dictionary row for "ten birds" is actually "do·o
-  mangchiking" (do·a only survives in a superseded row) -- corrected
-  the example and flagged the minimal-pair claim itself as
-  data-contradicted, not resolved linguistically here.
-  NEW OPEN FINDING (not fixed, needs Owner/native decision, not
-  guessed): king's raka-dot status is internally contradictory across
-  the codebase. src/garo_classifier.js excludes king from
-  RAKA_CLASSIFIERS and lists it dot:false in
-  CONFIRMED_COMPOUND_CLASSIFIERS, both sourced to a direct 2026-09-19
-  Owner directive ("king doesn't use rakka") and a docx table read as
-  consistently undotted. But master_dictionary.json ships 10
-  verified_high rows -- "one book" through "ten books" -- all WITH the
-  dot (ki·tap king·sa .. king·chiking), never corrected to match the
-  2026-09-19 directive. Net effect at runtime: existing book-counting
-  phrases resolve WITH a dot (dictionary lookup wins), while any new
-  book-like noun composed at runtime would get NO dot (classifier
-  engine wins) -- the same classifier produces inconsistent output
-  depending on whether the phrase happens to already be in the
-  dictionary. Given the documented history of mang/gong/jol/se each
-  flipping 2-3 times on this exact question, this is NOT being
-  resolved by inference here; it needs one fresh direct citation
-  (native or Owner) confirming which is current, then a coordinated
-  fix across master_dictionary.json, compiled_dict.json, and this
-  rule's own "nok te·sa...(like mang/king/gong/ge)" line. Filed to
-  roadmap Phase 2 (data) / Phase 4 (native relay) in
-  docs/GRAMMAR_RULE_AUDIT_AND_ROADMAP_20260928.md.
+  mang/king raka-dot, 2026-09-28/29 (Claude A resume session, direct
+  Project Owner statement in chat, made twice for emphasis: "mang·sa
+  not mangsa (mang has rakka)... king has a rakka, rong doesn't have
+  rakka"): REVERSES the same-day-earlier 2026-09-28 correction below
+  (mang:false, king:false) and mang's 2026-09-18 dot:false citation.
+  This is mang's FOURTH total reversal and king's SECOND. Before
+  applying, the Project Owner was shown the exact conflict this
+  creates with the 2026-09-18 Thangseng "No" citation for mang
+  (via Tridip WhatsApp relay) and restated dot:true regardless, which
+  is being treated as the informed, direct citation the project's own
+  standing rule requires before touching this fact again. For king,
+  the new dot:true state matches all 11 existing verified_high
+  master_dictionary.json rows (never matched the intervening dot:false
+  code state), so it also resolves in the dictionary's favor the
+  contradiction flagged in docs/GRAMMAR_RULE_AUDIT_AND_ROADMAP_20260928.md.
+  rong was reconfirmed dot:false in the same message, unaffected.
+  KNOWN OPEN GAP, not fixed by this reversal: all 37 verified_high
+  master_dictionary.json rows for mang still ship WITHOUT the dot
+  (exact-phrase dictionary lookup wins over composition), so existing
+  phrases like "one dog" still surface without a dot at runtime even
+  though the classifier-composition engine now produces the dotted
+  form for anything not already in the dictionary. This mirrors
+  king's now-closed gap and is filed to roadmap Phase 2 (data
+  correction) in docs/GRAMMAR_RULE_AUDIT_AND_ROADMAP_20260928.md. src/
+  garo_classifier.js and its test suite (tests/unit/mang_king_raka_dot
+  .test.js and 5 other files) were updated to match in the same
+  commit; see git history for the mechanical diff.
 
-last_updated: "2026-09-28"
+last_updated: "2026-09-29"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-038"

@@ -50,7 +50,7 @@ test('regression guard: jol at n=1 (the actually-cited form) is unaffected -- st
 
 test('regression guard: mang/gong/sak 20-99 counts are unaffected by the jol guess path -- still full-confidence classifier', async () => {
   const dog = await translate('41 dogs');
-  assert.equal(dog.garo, 'achak mangsotbrisa');
+  assert.equal(dog.garo, 'achak mang·sotbrisa'); // mang reversed to dot:true 2026-09-28/29, see garo_classifier.js
   assert.equal(dog.method, 'classifier');
   assert.equal(dog.confidence, 0.96);
 

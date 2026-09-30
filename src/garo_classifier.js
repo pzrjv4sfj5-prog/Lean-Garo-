@@ -148,34 +148,45 @@ function getClassifierSuffix(count) {
   return null;
 }
 
-// Owner-confirmed 2026-09-13 (live chat, direct Thangseng citation via
-// Claude B): "Ango na·tok manggittam donga" = "I have three fish" --
-// mang (animals classifier) has NO raka dot, confirmed explicitly
-// ("Real — mang genuinely has no raka dot, full stop") when asked
-// whether this was a real point vs. a typing/relay artifact (the raka
-// dot '·' is an easy character to drop when typing casually, so this
-// was checked rather than assumed). This REVERSES the RAKA_CLASSIFIERS
-// membership this project has run with for a long time — see the huge
-// body of prior 'mang·'-dotted citations throughout
-// docs/THANGSENG_NATIVE_VALIDATION.md and elsewhere.
+// mang: dot:true. CORRECTED 2026-09-28/29 (Claude A resume session,
+// direct Project Owner statement in this chat: "mang·sa not mangsa
+// (mang has rakka)"). This is mang's FOURTH reversal on this exact
+// question (dot:true bug -> de-dotted 2026-09-13 Owner directive ->
+// re-dotted 5a900ac 2026-09-17 -> de-dotted again 2026-09-18 on a
+// fresh Thangseng "No" via Tridip WhatsApp relay -> re-dotted here).
+// The 2026-09-18 "No" citation is not being treated as overridden by
+// inference -- the Project Owner was shown this exact conflict (all
+// 37 verified_high master_dictionary.json rows for mang currently
+// ship WITHOUT the dot, matching that 2026-09-18 citation) and
+// restated the dot form regardless. Per the project's own standing
+// rule ("do not touch this again without a citation at least this
+// direct"), a live, informed, repeated Project Owner statement in
+// chat is being accepted as exactly that citation, same precedent as
+// gong's own third flip below. UNRESOLVED, flagged not fixed here:
+// this reopens the same dictionary/engine mismatch previously found
+// for king (see king's note just below) -- the 37 mang rows in
+// master_dictionary.json still ship dot-free and were not bulk-edited
+// in this pass; that is a separate, large data-correction task, not a
+// mechanical engine fix. See docs/GRAMMAR_RULE_AUDIT_AND_ROADMAP_20260928.md
+// Phase 2.
 //
-// IMPORTANT — scope of this fix: this only changes the runtime
-// classifier-COMPOSITION fallback (used when no literal dictionary
-// entry exists for a given noun+count). It does NOT retroactively
-// correct the ~151 existing master_dictionary.json rows (110 tagged
-// verified_high) that literally store the old dotted 'mang·' form as
-// a hardcoded string, nor the ~28 test assertions across 6 files that
-// still expect it (both flagged in chat, not touched in this commit --
-// that's a large data-correction pass, outside a mechanical engine
-// fix, needs its own dedicated audit).
-// king removed 2026-09-19 (direct Owner directive: "king doesn't use
-// rakka") -- resolves the conflict flagged 2026-09-18 between this
-// set's prior 'king' membership (sourced to commit 3ba97c3, itself
-// only citing "per Claude A 8a12eca resolution" -- a commit whose own
-// diff never actually mentions king) and the docx table's consistent
-// undotted "Kingsa" across 15 rows. The docx reading wins outright now
-// by direct instruction, not inference.
-const RAKA_CLASSIFIERS = new Set(['ge', 'gong', 'te']);
+// king: dot:true. CORRECTED 2026-09-28/29 (same session, same direct
+// Project Owner statement: "king has a rakka"). This REVERSES the
+// 2026-09-19 Owner directive below ("king doesn't use rakka") that had
+// removed king from this set -- but it now matches all 11
+// verified_high master_dictionary.json rows for king (all shipped
+// WITH the dot, e.g. "ki·tap king·sa"), resolving in the dictionary's
+// favor the exact-phrase/composition contradiction flagged in the
+// 2026-09-28 audit (docs/GRAMMAR_RULE_AUDIT_AND_ROADMAP_20260928.md)
+// rather than requiring a further data change. Prior text, kept for
+// the record: "king removed 2026-09-19 (direct Owner directive: 'king
+// doesn't use rakka') -- resolves the conflict flagged 2026-09-18
+// between this set's prior 'king' membership (sourced to commit
+// 3ba97c3, itself only citing 'per Claude A 8a12eca resolution' -- a
+// commit whose own diff never actually mentions king) and the docx
+// table's consistent undotted 'Kingsa' across 15 rows. The docx
+// reading wins outright now by direct instruction, not inference."
+const RAKA_CLASSIFIERS = new Set(['ge', 'gong', 'te', 'mang', 'king']);
 
 // Owner-confirmed 2026-09-13 (in-chat, live conversation): "beer rong sa"
 // is correct with a literal space before the number -- NOT the fused
@@ -284,17 +295,16 @@ function composeLargeBareNumber(n) {
 // it), not a real split in the language -- so gong carries the dot at
 // every number, 1 to infinity, no exception.
 //
-// mang: dot:false. CORRECTED 2026-09-18 (same Claude D findings doc),
-// reversing 5a900ac. This is mang's THIRD reversal on this exact
-// question (dot:true bug -> de-dotted by Owner directive 2026-09-13 ->
-// reopened to dot:true by 5a900ac 2026-09-17). Reverted again on a fresh
-// direct Thangseng citation, dated the day after 5a900ac, relayed via
-// WhatsApp/Tridip: "[18/9/2026] Tridip: Mang and rong uses rakka or
-// not? Thangseng: No." rong's dot:false (also from 5a900ac) is
-// unaffected -- this citation corroborates rong, only reverses mang.
-// Given three flips on one fact, do not touch this again without a
-// citation at least this direct -- see standing rule §4 in the
-// migration docs against "applying logic" to fill the gap instead.
+// mang: dot:false as of 2026-09-18 (Claude D findings doc, reversing
+// 5a900ac, itself citing "[18/9/2026] Tridip: Mang and rong uses rakka
+// or not? Thangseng: No." via WhatsApp). rong's dot:false (also from
+// 5a900ac) is unaffected by what follows -- only mang moved again.
+// REVERSED A FOURTH TIME 2026-09-28/29: see the RAKA_CLASSIFIERS
+// comment above for the current dot:true state and its citation
+// (direct Project Owner statement, this chat, shown the 2026-09-18
+// conflict and restating dot:true regardless). This comment block is
+// kept for the historical chain, not the current fact -- see
+// CONFIRMED_COMPOUND_CLASSIFIERS below for what actually ships.
 //
 // bol/king/ge/te 20-41 compounds: CONFIRMED (2026-09-18, Counting_docx_
 // thanseng.docx). Verified mechanically against number_engine.
@@ -309,10 +319,10 @@ function composeLargeBareNumber(n) {
 // its compound shape.)
 const CONFIRMED_COMPOUND_CLASSIFIERS = {
   sak: { dot: false },
-  mang: { dot: false },
+  mang: { dot: true }, // FOURTH reversal, 2026-09-28/29, see comments above
   rong: { dot: false },
   bol: { dot: false },
-  king: { dot: false },
+  king: { dot: true }, // reversed 2026-09-28/29, see comments above
   ge: { dot: false },
   te: { dot: false },
   gong: { dot: true },

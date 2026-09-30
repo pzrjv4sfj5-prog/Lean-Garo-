@@ -6,7 +6,8 @@ import { countNoun, getClassifier, CLASSIFIER_MAP } from '../../src/garo_classif
 // 'rong' classifier (roundish-shape class), not the 'ge' general
 // fallback previously assumed. Thangseng's own typed examples
 // ("rongsa", "rongbonga") carry no raka mark, so rong is a no-raka
-// classifier (like king/jol/sak), unlike mang/ge/gong. (sak corrected
+// classifier (like jol/sak), unlike ge/gong/mang/king -- mang and king
+// reconfirmed WITH the dot 2026-09-28/29, see garo_classifier.js. (sak corrected
 // to no-raka 2026-09-03, NV-124 — dictionary data fixed then; engine's
 // RAKA_CLASSIFIERS set fixed 2026-09-05, same handoff, see below.)
 
@@ -47,23 +48,28 @@ test('regression: ge fallback still applies to genuinely uncategorized/tool noun
 });
 
 test('regression: existing classifier roots unaffected by rong addition', () => {
-  // CORRECTED (2026-09-13, Claude B, direct Thangseng citation): mang
-  // (animals) has NO raka dot, confirmed via "Ango na·tok manggittam
-  // donga" = "I have three fish" -- was previously "achak mang·sa" here.
-  assert.equal(countNoun('achak', 1, 'dog'), 'achak mangsa');
+  // mang's dot status has flipped four times total; current state
+  // (2026-09-28/29, direct Project Owner statement in chat, shown and
+  // overriding a 2026-09-18 Thangseng "No" citation) is WITH the dot --
+  // see garo_classifier.js RAKA_CLASSIFIERS comment for the full chain.
+  assert.equal(countNoun('achak', 1, 'dog'), 'achak mang·sa');
   // FIXED (NV-124 engine handoff, closed 2026-09-05): 'sak' removed from
   // RAKA_CLASSIFIERS in src/garo_classifier.js, so the classifier-
   // composition fallback (for phrases with no exact dictionary match)
   // now matches the already-corrected dictionary data (no raka dot).
+  // Re-confirmed 2026-09-28/29, same message as the mang/king reversal.
   assert.equal(countNoun('mande', 1, 'person'), 'mande saksa');
-  // king's dot status flip-flopped: added 2026-09-12 (commit 3ba97c3,
-  // citing a "Claude A 8a12eca resolution" that never actually
-  // mentioned king), then removed again 2026-09-19 (direct Owner
-  // directive: "king doesn't use rakka" -- see garo_classifier.js
-  // RAKA_CLASSIFIERS comment for the full conflict this resolves).
-  assert.equal(countNoun('ki·tap', 3, 'book'), 'ki·tap kinggittam');
+  // king's dot status flip-flopped twice: added 2026-09-12, removed
+  // 2026-09-19 (direct Owner directive: "king doesn't use rakka"),
+  // restored 2026-09-28/29 (direct Owner statement in chat, matching
+  // all 11 verified_high master_dictionary.json rows for king -- see
+  // garo_classifier.js RAKA_CLASSIFIERS comment for the full chain).
+  assert.equal(countNoun('ki·tap', 3, 'book'), 'ki·tap king·gittam');
   assert.equal(countNoun('tangka', 5, 'coin'), 'tangka gong·bonga');
-  assert.equal(countNoun('do·a', 10, 'bird'), 'do·a mangchiking');
+  // "do·a" corrected to "do·o" 2026-09-28 (docs/GRAMMAR_RULE_AUDIT_AND_
+  // ROADMAP_20260928.md) to match the verified_high dictionary row for
+  // "ten birds" -- do·a only survives in a superseded row.
+  assert.equal(countNoun('do·o', 10, 'bird'), 'do·o mang·chiking');
 });
 
 test('CLASSIFIER_MAP sanity: rong entries present', () => {

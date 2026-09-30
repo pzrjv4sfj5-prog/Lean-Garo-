@@ -17,12 +17,19 @@ import { translate } from '../../src/translationEngine.js';
 // CONFIRMED_COMPOUND_CLASSIFIERS comment for the full flip history on
 // mang/gong -- both have reversed multiple times on direct citations):
 //   sak (person): fused, no raka dot  -- "saksotbrisa"
-//   mang (animal): fused, NO raka dot -- "mangsotbrisa" (reverted
-//     2026-09-18 on a direct Thangseng "No" citation -- was briefly
-//     dot:true, see git history for the full chain)
+//   mang (animal): fused, WITH raka dot -- "mang·sotbrisa" (reversed a
+//     FOURTH time 2026-09-28/29 on a direct Project Owner statement in
+//     chat, shown and overriding the 2026-09-18 Thangseng "No" citation
+//     -- see git history / garo_classifier.js comment for the full
+//     chain. This engine fix does not touch the ~37 existing
+//     verified_high master_dictionary.json rows for mang, e.g. "three
+//     dogs" below, which still ship dot-free via exact-phrase lookup)
 //   rong (fruit): fused, no raka dot  -- "rongkolgrikbonga"
-//   bol/king/ge/te: fused, no raka dot (2026-09-18, Counting_docx_
+//   bol/ge/te: fused, no raka dot (2026-09-18, Counting_docx_
 //     thanseng.docx) -- e.g. "bolsotbrisa", "tesotbrisa"
+//   king: fused, WITH raka dot (reversed 2026-09-28/29, same Owner
+//     statement as mang) -- "king·sotbrisa", see
+//     bol_king_ge_te_compound.test.js
 //   gong (money): fused, WITH a raka dot -- "gong·sotbrisa" (corrected
 //     2026-09-18: Owner's explicit "rakka at every number, 1 to
 //     infinity" directive, after the earlier docx no-dot reading was
@@ -36,10 +43,10 @@ test('translate: sak 20-99 compound is fused with no raka dot, no space', async 
   assert.equal(r.garo, 'chattro saksotbrisa');
 });
 
-test('translate: mang 20-99 compound is fused with NO raka dot (reverted 2026-09-18 on direct Thangseng "No" citation)', async () => {
+test('translate: mang 20-99 compound is fused WITH a raka dot (reversed a fourth time 2026-09-28/29 on direct Project Owner statement)', async () => {
   const r = await translate('41 dogs');
   assert.equal(r.method, 'classifier');
-  assert.equal(r.garo, 'achak mangsotbrisa');
+  assert.equal(r.garo, 'achak mang·sotbrisa');
 });
 
 test('translate: rong 20-99 compound is fused with no raka dot', async () => {

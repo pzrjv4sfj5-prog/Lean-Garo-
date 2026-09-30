@@ -30,8 +30,14 @@ test('bare number words: 100 vs 101 no longer collide, match published dictionar
 });
 
 test('classifier composition: 100 vs 101 no longer collide, mang matches direct citation exactly', () => {
-  assert.equal(buildClassifierPhrase('mang', 100), 'mangritcha'); // "achak mangritcha" cited directly
-  assert.equal(buildClassifierPhrase('mang', 101), 'ritcha mangsa');
+  assert.equal(buildClassifierPhrase('mang', 100), 'mangritcha'); // "achak mangritcha" cited directly, exact-hundred construction, unaffected by the 2026-09-28/29 dot reversal below
+  // 101 = 100 + a single-digit remainder, which goes through the
+  // ordinary n<20 classifierTail path -- so it now picks up the dot
+  // that path carries as of 2026-09-28/29 (see garo_classifier.js
+  // RAKA_CLASSIFIERS comment). Not independently cited for n=101
+  // itself; mechanically follows from the n<20 rule plus the n=100
+  // no-filler mechanism above, same as the 200/300 case further down.
+  assert.equal(buildClassifierPhrase('mang', 101), 'ritcha mang·sa');
   assert.notEqual(buildClassifierPhrase('mang', 100), buildClassifierPhrase('mang', 101));
 });
 
