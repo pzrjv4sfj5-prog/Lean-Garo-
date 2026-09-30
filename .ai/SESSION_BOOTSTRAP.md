@@ -13,30 +13,63 @@ Before starting work, agents should read the role-specific live audit handoff:
 
 These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
 
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-27C by
-Claude A (ong·a have/has supersession, converged with Claude B). Full migration
-doc: docs/CLAUDE_A_SESSION_MIGRATION_20260927C.md — READ IT FIRST, this
-line is just a pointer. Summary: fresh PAT clone, HEAD == origin/main ==
-b3a9baf5 on arrival (no drift). Project Owner directive resolved the
-standing "several" = bang·e/adita/bang·a tension (Claude B's dc28574
-flag): round 1, "we will use Bang.a for several" -> bang·a (8e22a46);
-round 2 same day, "final clarification" citing the print dictionary's
-own Adita entry -> several = adita, superseding round 1 (00333d6). Both
-rounds: src/data/corrections.json + garo_dictionary.json only, no
-master_dictionary.json row exists for bare "several" (override-only
-key). Round 2 surfaced a REGRESSION, flagged not fixed (Claude B
-territory): grammarEngine.js's quantifier composer only recognizes
-/^bang·[ae]$/i, not "adita" — "i have several books"/"she has several
-dogs" now silently drop the quantifier on composition again, same
-defect class fixed 2026-09-26. "many" (bang·a) unaffected. 2 tests
-marked test.todo with the live broken output recorded, not silently
-patched to pass. PAT note: session-start PAT returned genuine 401 Bad
-credentials (independently confirmed, not transient flakiness);
-Project Owner supplied a working second PAT, both rounds pushed
-together, zero drift, token stripped from .git/config after use. Gate
-at close: 8922/8922 dictionary, 9/9 grammatical corrections, 0 new
-repository-intelligence violations, 475 unit tests (473 pass, 2 todo,
-0 fail). Pushed clean, HEAD 00333d6, verified == origin/main.
+_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-29 by
+Claude B (donga/ong·a convergent merge + AI-003 fix + fuzzyMatch perf fix).
+Full migration doc: docs/CLAUDE_B_SESSION_MIGRATION_20260929.md — READ IT
+FIRST, this line is just a pointer. Summary: fresh PAT clone, resumed via
+pasted pointer to docs/CLAUDE_B_SESSION_MIGRATION_20260927B.md (one commit
+stale — that doc's own add-commit, 3ea6fcb — no real drift). (1) Owner
+one-time-exception directive: applied the ong·a/donga handoff's disposition
+directly (36 possession entries superseded, RULE-005 copula vs RULE-G7
+existential); Claude A independently reached the same disposition in
+parallel — merged honestly, kept Claude A's version as content-lane
+authority, both commits on record (855db97, d455686, merge 2bed05d). (2)
+AI-003 fixed (51ca8d6): 2-word verb-lemma matching (≤2-word band, 165
+entries, "be X" copula excluded), wired into grammarEngine.js's verb
+loop/NP-coherence/going-to checks. "it crumbled down" → "Ua Be·ruruaha" (was
+"Ua ka·ma·ko", verb silently dropped, unrelated "down"→Ka·ma shipped as
+object). Verified via 486-sentence before/after diff: 7 changed, all
+improvements; 1 regression caught by that diff and fixed pre-commit. (3)
+Performance fix (cda2422), not Owner-directed — person asked for a perf
+scan: fuzzyMatch() ran unbounded O(n·m) Levenshtein against every 6+ char
+dictionary key for any OOV word >5 chars, no early exit — 7.4s worst case
+for a 30-char token, the default path for typos/unknown words, not an edge
+case. Fixed with levenshteinBounded (rolling rows, early exit) + length-
+diff pre-filter; proved byte-identical output against the old function
+(240 cases, 0 differences) rather than only inferring equivalence. 30-char
+OOV: 7388ms → 1.8ms. Two push collisions, both handled by fetch/rebase/
+rebuild-artifacts-fresh/re-gate/push, zero src/ overlap either time. Gate
+at close: 8886/8886 dictionary, 9/9 grammatical corrections, 0 new
+repository-intelligence violations, 484/484 unit tests, 15825/15825
+runtime-sweep calls 0 errors. Standing open items unchanged: 3 Thangseng
+questions still unanswered (quantity-word-order exception, -rang plural
+generality, adjective/adverb position); sentenceBuilder.js's SOV-fallback
+still lacks multi-word-verb support. Pushed clean, HEAD to be confirmed at
+close, verified == origin/main.
+
+---PRIOR (2026-09-27C, superseded above, kept for history)---
+(Claude A, ong·a have/has supersession, converged with Claude B. Full
+migration doc: docs/CLAUDE_A_SESSION_MIGRATION_20260927C.md. Summary: fresh
+PAT clone, HEAD == origin/main == b3a9baf5 on arrival (no drift). Project
+Owner directive resolved the standing "several" = bang·e/adita/bang·a
+tension (Claude B's dc28574 flag): round 1, "we will use Bang.a for
+several" -> bang·a (8e22a46); round 2 same day, "final clarification"
+citing the print dictionary's own Adita entry -> several = adita,
+superseding round 1 (00333d6). Both rounds: src/data/corrections.json +
+garo_dictionary.json only, no master_dictionary.json row exists for bare
+"several" (override-only key). Round 2 surfaced a REGRESSION, flagged not
+fixed (Claude B territory): grammarEngine.js's quantifier composer only
+recognizes /^bang·[ae]$/i, not "adita" — "i have several books"/"she has
+several dogs" now silently drop the quantifier on composition again, same
+defect class fixed 2026-09-26. "many" (bang·a) unaffected. 2 tests marked
+test.todo with the live broken output recorded, not silently patched to
+pass. PAT note: session-start PAT returned genuine 401 Bad credentials
+(independently confirmed, not transient flakiness); Project Owner supplied
+a working second PAT, both rounds pushed together, zero drift, token
+stripped from .git/config after use. Gate at close: 8922/8922 dictionary,
+9/9 grammatical corrections, 0 new repository-intelligence violations, 475
+unit tests (473 pass, 2 todo, 0 fail). Pushed clean, HEAD 00333d6, verified
+== origin/main.)
 
 ---PRIOR (2026-09-27, superseded above, kept for history)---
 (full repo audit at Project Owner request. Full migration doc:

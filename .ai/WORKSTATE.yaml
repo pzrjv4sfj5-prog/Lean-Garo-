@@ -4086,7 +4086,73 @@ claude_c:
     remaining 249-entry (was 334) baseline.'
 claude_b:
   status: active
-  next_action: "2026-09-27 (Claude B, session complete -- see
+  next_action: "2026-09-29 (Claude B, session complete -- see
+    docs/CLAUDE_B_SESSION_MIGRATION_20260929.md for full detail). Resumed
+    via a pasted pointer to docs/CLAUDE_B_SESSION_MIGRATION_20260927B.md
+    + fresh PAT-cloned repo. Resync found the pinned doc's own HEAD
+    (47ddeb9) was one commit stale (3ea6fcb, the doc's own add-commit) --
+    no drift, gate re-confirmed clean before continuing. Three items this
+    session, all Owner-directed or Owner-approved before landing: (1)
+    Owner one-time-exception directive (Claude A reported out of tokens,
+    later turned out not to be) -- applied docs/
+    CLAUDE_B_HANDOFF_20260927_donga_onga_precedence.md''s disposition
+    directly: 36 ''<pronoun> ong·a <noun>'' possession entries superseded
+    (RULE-005 copula vs RULE-G7 existential donga), commit 855db97;
+    Claude A independently reached the identical disposition in parallel
+    (d455686) -- merged honestly rather than force-pushed, kept Claude
+    A''s version verbatim as the content-lane authority, both provenance
+    chains on record (commit 2bed05d). (2) AI-003 fixed (commit 51ca8d6):
+    the multi-word-verb-lemma gap logged-not-fixed since 2026-09-23B is
+    closed for the ≤2-word band (165 entries; 3+ word OCR-gloss keys and
+    ''be X'' copula lemmas excluded by design, decided before coding, not
+    inferred from the fix). MULTI_WORD_VERB_LEMMAS +
+    matchMultiWordVerbLemma in lookupEngine.js; wired into
+    grammarEngine.js''s verb-search loop (consumes the particle so it
+    can''t double as the object), NP-subject-coherence check, and
+    going-to-infinitive check. ''it crumbled down'' -> ''Ua Be·ruruaha'' (was
+    ''Ua ka·ma·ko'', silently dropping the verb and shipping an unrelated
+    ''down''->Ka·ma as object). Verified via a 486-sentence before/after
+    diff, not just the repro case: 7 changed, all improvements; one
+    regression (''going to be surprised'', ''be'' matching as a lemma head)
+    caught by that diff and fixed pre-commit, not shipped. sentenceBuilder.js''s
+    SOV fallback deliberately left untouched -- it already bails honestly
+    on [UNKNOWN] rather than shipping a wrong guess, lower risk than
+    extending it blind. Tests: tests/unit/ai003_multiword_verb_lemma.test.js
+    (+4). (3) Performance bug found and fixed, not Owner-directed --
+    person asked for a perf scan (commit cda2422): fuzzyMatch()
+    (normalizationEngine.js) ran an unbounded O(n·m) Levenshtein against
+    every 6+ char dictionary key for any out-of-vocabulary word longer
+    than 5 chars, no early exit -- live-confirmed 7.4s for a 30-char OOV
+    token, not a rare edge case (the default path for typos/garbage/
+    unknown words once long enough to survive the length<=5 exclusion).
+    Fixed with levenshteinBounded(a,b,max) in utils.js (two rolling rows,
+    early exit once a row''s minimum exceeds max) plus a length-difference
+    pre-filter; proved equivalence rather than only inferring it from the
+    math -- 240 mutated/random/real-key cases against the old unbounded
+    function, 160 fuzzy hits, 0 output differences. 30-char OOV: 7388ms ->
+    1.8ms. Unbounded levenshtein() kept in utils.js, unused elsewhere, for
+    API/test compatibility. Tests: tests/unit/perf_fuzzy_match.test.js
+    (+4). Two push collisions this session, both handled the same way
+    (fetch, rebase, rebuild compiled artifacts fresh, re-run full gate,
+    then push): Claude A''s session-close (cda9c17) before the AI-003
+    push, and 5 Claude A commits (RULE-038/roadmap/audit docs-only, ending
+    6bf3856) before the perf-fix push -- zero src/ overlap either time.
+    Gate at close: test-dictionary.js 8886/8886, 9/9 grammatical
+    corrections, 0 new repository-intelligence violations (8 checks),
+    node --test tests/unit/*.test.js 484/484 (476 carried forward + 4
+    AI-003 + 4 perf-fix), runtime-error-sweep.mjs 15825/15825 calls, 0
+    errors across the full compiled-dict/edge-case/API sweep. Standing open items restated, unchanged by this session: the 3
+    questions relayed to Thangseng (quantity-word-order exception, -rang
+    plural generality, adjective/adverb position) still unanswered;
+    sentenceBuilder.js''s SOV-fallback path still has no multi-word-verb
+    support (lower priority now that the higher-traffic grammar-assembly
+    path is fixed); AI-003''s own tense-suffixing limitation (multi-word
+    verbs get the same bare-form tense handling single-word verbs already
+    had, not a new gap). Session-start PAT pasted directly in chat, same
+    token reused throughout, flagged for rotation once this close is
+    merged. Pushed clean, final HEAD to be confirmed at close, verified ==
+    origin/main, clean tree."
+  next_action_prior_20260927B: "2026-09-27 (Claude B, session complete -- see
     docs/CLAUDE_B_SESSION_MIGRATION_20260927.md for full detail). Resumed
     via a pasted migration-doc pointer (docs/CLAUDE_B_SESSION_MIGRATION_
     20260925.md); that doc was one day stale -- actual ground truth was
