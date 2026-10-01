@@ -127,3 +127,8 @@ Applied as a real engine fix this time: `src/garo_classifier.js` RAKA_CLASSIFIER
 Rong: reconfirmed dot:false in the same message, unaffected, no change needed.
 New open gap (Phase 2, not fixed here): all 37 verified_high master_dictionary.json rows for mang still ship without the dot, since exact-phrase dictionary lookup wins over composition -- mirrors the king gap that this update just closed. Data correction, not an engine fix; needs its own pass.
 Gate green: 8886/8886, 9/9, 0 new violations, 482/482 tests, rule-conformance baseline regenerated (51/93, 0 unbaselined).
+
+## Update 2026-09-29B (Phase 2: closed the mang dictionary gap flagged in the prior update)
+Bulk-corrected all 111 verified_high master_dictionary.json rows for mang that still shipped without the raka dot (dog/cat/bird/fish, 1-9, teens, twenty) to match the 2026-09-28/29 reversal to dot:true. Notes fields got an appended, dated citation rather than being overwritten; 18 superseded/unverified mang rows were left untouched (out of scope, don't ship). Fixed 6 unit tests whose hardcoded expectations assumed the old no-dot form; one turned out to be correctly dot-free on inspection ("two birds" has no verified_high row) and was reverted rather than changed.
+Gate green: 8886/8886, 9/9, 0 new violations, 486/486 tests (up from 482), runtime sweep 15825/15825 clean, rule-conformance baseline regenerated (51/93, 0 unbaselined).
+No remaining known mang/king/rong gaps.

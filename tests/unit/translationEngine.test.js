@@ -474,7 +474,10 @@ test('number word is never picked as the verb; "has" resolves as an irregular fo
   // transitive accusative-object construction. See sentenceBuilder.js
   // assembleGrammar's isPossessionConstruction comment for the full
   // citation and scope of that fix.
-  assert.equal(r.garo, 'Uao achak manggni donga');
+  // mang raka dot restored 2026-09-29 (111 verified_high
+  // master_dictionary.json rows, direct Project Owner statement in
+  // chat), 'two dogs'=achak mang·gni among them.
+  assert.equal(r.garo, 'Uao achak mang·gni donga');
 });
 
 // --- Second half of the same 2026-07-13 fix's benchmark claim ("exactly
@@ -1415,10 +1418,12 @@ test('object-loop classifier fix does not touch already-resolved counting phrase
 // level, not derived by engine code.
 test('"<number> dogs" counting phrases use the correct, natively-confirmed classifier suffix for their count', async () => {
   const { default: compiledDict } = await import('../../src/compiled_dict.json', { with: { type: 'json' } });
+  // mang raka dot restored 2026-09-29, see translationEngine.test.js's
+  // "he has two dogs" test above for the same fix.
   const cases = [
-    ['two dogs', 'achak manggni'],
-    ['three dogs', 'achak manggittam'],
-    ['four dogs', 'achak mangbri'],
+    ['two dogs', 'achak mang·gni'],
+    ['three dogs', 'achak mang·gittam'],
+    ['four dogs', 'achak mang·bri'],
   ];
   for (const [key, expected] of cases) {
     assert.equal(compiledDict[key], expected, `compiled_dict["${key}"] should match the native-confirmed value`);

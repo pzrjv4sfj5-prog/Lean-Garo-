@@ -76,5 +76,7 @@ test('regression guard: sak/mang/rong counts under 20 are unaffected by the comp
   const student = await translate('three students');
   assert.equal(student.garo, 'Chattro sakgittam');
   const dog = await translate('three dogs');
-  assert.equal(dog.garo, 'achak manggittam');
+  // mang raka dot restored 2026-09-29 in master_dictionary.json (111
+  // verified_high rows), matching the classifier engine's dot:true.
+  assert.equal(dog.garo, 'achak mang·gittam');
 });

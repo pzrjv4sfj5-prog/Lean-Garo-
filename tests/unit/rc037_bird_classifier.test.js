@@ -48,24 +48,33 @@ test('RC-CANDIDATE-037 follow-up: "two cars" (SUPERSEDED, no replacement) is hel
 });
 
 test('RC-CANDIDATE-037: dog/cat entries get the correct noun substituted, not just stripped', () => {
-  assert.equal(compiled['two dogs'], 'achak manggni');
+  // mang raka dot restored 2026-09-29 (111 verified_high
+  // master_dictionary.json rows, direct Project Owner statement in
+  // chat) -- all four assertions below updated to the dotted form.
+  assert.equal(compiled['two dogs'], 'achak mang·gni');
   // "three dogs" was corrected 2026-08-09 (NV-071 follow-up, Thangseng
   // direct) from the shared-with-"two" placeholder to the numerically
   // correct achak+mang·+gittam('three') form. "three cat" was closed the
   // same way 2026-08-11 (Thangseng direct, WhatsApp relay via Tridip):
   // 'three cat'=Menggo manggittam, confirming the identical manggittam
   // pattern for the cat root.
-  assert.equal(compiled['three dogs'], 'achak manggittam');
-  assert.equal(compiled['two cat'], 'menggo manggni');
-  assert.equal(compiled['three cat'], 'menggo manggittam');
+  assert.equal(compiled['three dogs'], 'achak mang·gittam');
+  assert.equal(compiled['two cat'], 'menggo mang·gni');
+  assert.equal(compiled['three cat'], 'menggo mang·gittam');
 });
 
 test('RC-CANDIDATE-037: genuine bird/chicken/fish entries are unaffected', () => {
+  // "two birds" has no verified_high row (unlike two/three dogs/cat
+  // above) -- it ships from the sole unverified row, which the
+  // 2026-09-29 mang raka-dot fix correctly left untouched (scoped to
+  // verified_high only, not inferred onto unverified data). So this
+  // one stays dot-free; genuinely different from the rows above, not
+  // a leftover bug.
   assert.equal(compiled['two birds'], 'do·o manggni');
   // "three fish" was corrected 2026-08-11 (Claude B, mechanical regeneration
   // per docs/COUNTING_PHRASE_AUDIT_20260810.md mang section, same formula/
   // precedent as Claude A's dog/cat/bird fix in 3ec06ee): na·tok (fish root)
   // + mang classifier + the confirmed "three"=gittam suffix, replacing the
   // stale shared-with-"two" placeholder "na·tok manggni".
-  assert.equal(compiled['three fish'], 'na·tok manggittam');
+  assert.equal(compiled['three fish'], 'na·tok mang·gittam');
 });
