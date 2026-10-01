@@ -12,8 +12,15 @@ test('AI-003: map holds only exactly-2-word lemmas', () => {
 });
 
 test('AI-003: matcher handles inflected head word', () => {
+  // "crumble down" updated 2026-09-30 (Claude A): "Be·rurua" was an
+  // OCR print-dictionary import with no native citation
+  // (docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md: "weak/OCR"); a direct
+  // Thangseng relay answer (docs/THANGSENG_RELAY_ANSWERS_20260930.md)
+  // gives "be.grua" -> normalized "be·grua", now the verified_high
+  // dictionary value. "Be·rurua" stays on file as a coexisting weaker
+  // candidate, not deleted.
   for (const w of ['crumble', 'crumbled', 'crumbles', 'crumbling']) {
-    assert.equal(matchMultiWordVerbLemma(w, 'down')?.garo, 'Be·rurua', w);
+    assert.equal(matchMultiWordVerbLemma(w, 'down')?.garo, 'be·grua', w);
   }
   assert.equal(matchMultiWordVerbLemma('it', 'crumbled'), null);
 });
@@ -21,15 +28,15 @@ test('AI-003: matcher handles inflected head word', () => {
 test('AI-003: "it crumbled down" no longer ships "down"->Ka·ma as object', async () => {
   const g = analyzeGrammar('it crumbled down');
   assert.ok(g.verb, 'verb must be detected');
-  assert.equal(g.verb.garo, 'Be·rurua');
+  assert.equal(g.verb.garo, 'be·grua');
   assert.equal(g.object, null);
   const out = await translationEngine.translate('it crumbled down');
   assert.ok(!out.includes('Ka·ma'));
-  assert.ok(out.includes('Be·rurua'));
+  assert.ok(out.includes('be·grua'));
 });
 
 test('AI-003: NP subject + particle verb resolves without [UNKNOWN]', async () => {
   const out = await translationEngine.translate('the wall crumbles down');
   assert.ok(!out.includes('[UNKNOWN]'));
-  assert.ok(out.includes('Be·rurua'));
+  assert.ok(out.includes('be·grua'));
 });

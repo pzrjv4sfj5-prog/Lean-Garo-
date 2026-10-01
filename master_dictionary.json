@@ -7476,7 +7476,8 @@
     "english": "eat!",
     "garo": "Cha·bo!",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026 (filed verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed 2026-09-30 by Claude A, see RULE-052 adverb position). Promoted unverified->verified_high: the root \"Cha·bo\" is directly confirmed by the same relay's \"eat slowly\"=\"Ka'sine cha'bo\" sentence (this entry's own trailing \"!\" is a formatting addition, not separately evidenced, left as-is)."
   },
   {
     "english": "he went",
@@ -78430,5 +78431,45 @@
     "pos": "v.",
     "confidence": "verified_high",
     "notes": "Project Owner directive (2026-09-26, chat, this Claude A session, no transcript, per .ai/PROJECT_OWNER_AUTHORITY.md): to get something completed = Matchotata. Shares the Matchota root, distinct causative/completive sense from bare 'to finish/complete/to end'."
+  },
+  {
+    "english": "crumble down",
+    "garo": "be·grua",
+    "category": null,
+    "pos": "v.",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026 (filed verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed 2026-09-30 by Claude A). Thangseng wrote \"be.grua\" (period as casual raka notation, same pattern as apostrophe-for-raka elsewhere in this relay -- normalized '.'->'·' per the project's standing raka-normalization convention). Coexists with, does not override or delete, the existing OCR-sourced \"Gropa\"/\"Be·rurua\" candidates for \"to crumble down\" -- both of those are print-dictionary imports with no native citation (docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md: \"candidates — Gropa (weak/OCR), Be·rurua (weak/OCR)\"), genuinely weaker evidence than this direct native quote. A different, unrelated Garo word from either OCR candidate -- flagged, not silently reconciled; if a future native session clarifies these are register/dialect variants of the same verb rather than two different words, that is a separate question."
+  },
+  {
+    "english": "to crumble down",
+    "garo": "be·grua",
+    "category": null,
+    "pos": "v.",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026 (filed verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed 2026-09-30 by Claude A). Same citation and scope note as the bare \"crumble down\" row above -- added under this key too so the existing VERB_LEMMAS-driven \"to X\" infinitive-detection path (see docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md AI-003) picks up the native-confirmed form rather than the weaker OCR \"Be·rurua\"."
+  },
+  {
+    "english": "hen lays eggs",
+    "garo": "do·o Bitchi·chi·a",
+    "category": "general",
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026 (filed verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed 2026-09-30 by Claude A). New sentence, not previously in the dictionary (checked; live translate('hen lays eggs') previously fell through to broken morphology composition). do·o = hen/chicken (already-established root). Capitalization/raka-dot convention matches the sibling, already-VERIFIED \"he lays eggs\" = \"Ua Bitchi·chi·a\" (native's own casual rendering \"do'o bitchi chi'a\" matches modulo that same convention, same as \"he lays eggs\" did). \"he lays eggs\" itself needs no change -- already correct and live per Claude B's AI-003 fix, confirmed by this same relay, not touched again here."
+  },
+  {
+    "english": "slowly",
+    "garo": "Ka·sine",
+    "category": null,
+    "pos": "adv.",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026 (filed verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed 2026-09-30 by Claude A, see RULE-052 adverb position). Thangseng wrote \"ka'sine\" (apostrophe as casual raka notation, same pattern as do'o/chi'a elsewhere in this relay -- normalized \"'\"->'·' per the project's standing raka-normalization convention). Coexists with, does not override or delete, the existing \"Jom-pe jom-pe\" (confidence: None) candidate -- that one is unprovenanced and genuinely weaker evidence than this direct native quote, flagged not reconciled."
+  },
+  {
+    "english": "eat slowly",
+    "garo": "Ka·sine cha·bo",
+    "category": "general",
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026 (filed verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed 2026-09-30 by Claude A, see RULE-052 adverb position). The literal worked example Thangseng supplied for the ADVERB+VERB word-order question. Confirms both \"slowly\"=Ka·sine (see that row) and the existing unverified \"eat!\"=Cha·bo in a cited sentence context."
   }
 ]

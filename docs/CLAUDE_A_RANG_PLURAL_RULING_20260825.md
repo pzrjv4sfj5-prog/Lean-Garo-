@@ -61,3 +61,62 @@ discipline, not an unaddressed gap.
 
 No `master_dictionary.json` / `corrections.json` / `phrase_maps.js`
 content changed. No engine code touched.
+
+## Update 2026-09-30 (Claude A) — superseded by direct native confirmation
+
+**This ruling's "status quo, not productive" conclusion is superseded.**
+The exact open relay question this doc itself flagged ("does `-rang`
+generalize to other count nouns?") was sent and answered.
+
+Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026, filed
+verbatim in `docs/THANGSENG_RELAY_ANSWERS_20260930.md`, processed
+2026-09-30. Machine-rule-format question (A/B/C: general rule / only
+certain nouns / depends on context), answer **A**, unambiguous: "Yes.
+-rang can be added to any countable nouns to make it plural."
+
+### New ruling
+
+**`-rang` is a productive plural marker for countable nouns in
+general, not confirmed-only-where-cited.** This reverses the original
+ruling's core conclusion, not just adds a data point to it — the
+2026-08-25 reasoning (three data points too thin to generalize from)
+no longer applies once a direct, general native answer exists; this
+is not a case of inferring productivity from an accumulation of
+individually-cited examples, which the original ruling correctly
+declined to do.
+
+### What this does and doesn't settle
+
+- Settled: `-rang` is not restricted to an unknown closed list or a
+  noun-class gate. Any countable noun can in principle take it.
+- NOT settled by this answer alone: the exact surface form `-rang`
+  takes when suffixed to a given noun (vowel/consonant-final
+  adjustments, if any — the three existing confirmed forms,
+  `Bi·sarang`/`biterang`/`tangka bisilrang`, all simply append `-rang`
+  with no visible alternation, but that's 3 data points, not a
+  phonological rule). Generating a `-rang` form for a noun with no
+  individual citation is therefore still a prediction, not a citation
+  — correct under the new general rule, but engineering should treat
+  it as rule-generated content, not dictionary-sourced content, same
+  distinction the project draws elsewhere between composed and
+  looked-up output.
+- The original ruling's engineering-consequence point stands even
+  under the new conclusion: implementing general `-rang` generation
+  (e.g. at `assembleSentenceSOV`'s pluralization fallback) is new
+  scope for Claude B, not something this update does by itself. Filed
+  as a Claude B handoff, not implemented here.
+
+### Disposition (supersedes the original "Disposition" section above)
+
+- The three existing `-rang` forms keep shipping via their own
+  dictionary rows, unaffected.
+- No dictionary-wide `-rang` generation added in this update — that is
+  an engine-layer change, left for Claude B, now unblocked by this
+  ruling rather than blocked by it.
+- `.ai/SESSION_BOOTSTRAP.md`'s 2026-08-25 standing-rule note is
+  updated alongside this doc (see that file) to point here rather than
+  restate the now-superseded status-quo conclusion.
+
+The original ruling and its reasoning above are kept on the record,
+not deleted — it was the correct call on the evidence available on
+2026-08-25.

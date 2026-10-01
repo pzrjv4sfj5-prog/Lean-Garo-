@@ -1,0 +1,58 @@
+id: RULE-051
+title: "Quantity-Noun Word Order and its Description/Exclamation Exception"
+description: >-
+  Default order is QUANTITY + NOUN ("adita ki·taprang" = "many books",
+  "bang·a chattrorang" = "many students"). Two older phrases instead show
+  NOUN + QUANTITY: "Wak be·en mit·am bang·a" (the pork meat has a lot of
+  fat) and "Man·derang bang·e re·baa" (so many people came). Direct
+  Thangseng confirmation (relay 2026-09-30): this is because those two
+  are a different sentence type — description/exclamation — not the
+  possession/counting construction QUANTITY+NOUN covers. The two
+  orders are not free variants of each other; which one applies is
+  conditioned by sentence type, not noun choice.
+dependencies: []
+claims:
+  - scope: "QUANTITY + NOUN is the default order for possession/counting constructions"
+    status: verified
+    confidence: high
+  - scope: "NOUN + QUANTITY for description/exclamation sentence types, as opposed to a free variant or an error"
+    status: verified
+    confidence: medium
+    confidence_note: >-
+      direct, unambiguous Thangseng answer (A: "different sentence
+      type will use different order"), but still only the original 2
+      example sentences back it — no new description/exclamation
+      examples were supplied with this answer, so the general boundary
+      of which sentence types take NOUN+QUANTITY (beyond these two)
+      is not yet mapped. Medium, not high: the explanation is
+      confirmed, the full rule surface is not.
+examples:
+  - "adita ki·taprang=\"many books\" (QUANTITY+NOUN, counting construction)"
+  - "bang·a chattrorang=\"many students\" (QUANTITY+NOUN, counting construction)"
+  - "Wak be·en mit·am bang·a=\"the pork meat has a lot of fat\" (NOUN+QUANTITY, description sentence)"
+  - "Man·derang bang·e re·baa=\"so many people came\" (NOUN+QUANTITY, exclamation sentence)"
+counterexamples:
+  note: >-
+    none identified; the two NOUN+QUANTITY phrases were the original
+    puzzle this rule resolves, not counterexamples to it.
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+    note: >-
+      resolves a previously-unexplained two-pattern split in existing
+      shipped sentences; does not itself unblock new translator output
+      the way a P0 item would, since both orders already ship
+      correctly for their own sentences.
+native_notes: >-
+  Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026, filed
+  verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed
+  2026-09-30 (Claude A). Machine-rule-format question (A/B/C), answer
+  A: "Yes. different sentence type will use different order." No new
+  example sentences supplied beyond the two already on file -- the
+  *general* boundary rule (which further sentence types, if any, take
+  NOUN+QUANTITY) is not concretely specified and should not be assumed
+  beyond what's cited here.
+last_updated: "2026-09-30"
+updated_by: "Claude A"
+source_ref: "docs/THANGSENG_RELAY_ANSWERS_20260930.md, Q1"

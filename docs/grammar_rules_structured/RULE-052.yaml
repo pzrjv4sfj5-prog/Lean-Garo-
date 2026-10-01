@@ -1,0 +1,53 @@
+id: RULE-052
+title: "Adverb Position: ADVERB + VERB"
+description: >-
+  Manner adverbs precede the verb they modify (ADVERB + VERB), the
+  mirror image of English's VERB + ADVERB default ("eat slowly" ->
+  "Ka'sine cha'bo", literally slowly+eat). Established from a single
+  direct worked example; treated the same evidentiary way as RULE-047
+  (comitative -ming), which was also built from a similarly-sized
+  evidence base and left ungeneralized beyond what was cited.
+dependencies: []
+claims:
+  - scope: "\"eat slowly\" = Ka'sine cha'bo (ADVERB+VERB order for this verb/adverb pair)"
+    status: verified
+    confidence: high
+  - scope: "generalization of ADVERB+VERB order to other adverb/verb pairs"
+    status: unknown
+    confidence: n/a
+    status_note: >-
+      single data point; the relay question itself offered a "C.
+      Depends on the adverb" option that was not selected (B was), so
+      the native answer does assert a general default rather than
+      per-adverb variation -- but only one adverb/verb pair has been
+      directly tested. Not assumed to extend further without more
+      examples, same caution as RULE-047's pronoun scope note.
+examples:
+  - "Ka'sine cha'bo. = Eat slowly. (ka'sine=slowly, cha'bo=eat/imperative; ADVERB+VERB)"
+counterexamples:
+  note: "none identified."
+  items: []
+launch_priority:
+  - scope: null
+    tier: P2
+    note: >-
+      new grammar fact, not yet known to block any specific translator
+      output -- no adverb-modified sentence in the current corpus was
+      flagged as broken by the old (unknown/default) ordering prior to
+      this.
+native_notes: >-
+  Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026, filed
+  verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed
+  2026-09-30 (Claude A). Machine-rule-format question (A/B/C: VERB+ADV
+  / ADV+VERB / depends-on-adverb), answer B with a worked example:
+  "B. Adverb + Verb. E.g. Eat slowly. = Ka'sine cha'bo." The selection
+  of a flat B over the offered "depends on the adverb" option is
+  itself evidence the native speaker intends a general default, not
+  just this one pair -- but the project's evidence-first discipline
+  still treats one worked example as one worked example; a second,
+  independent adverb/verb pair would move this from "high confidence,
+  narrow scope" toward "high confidence, general rule" the way
+  RULE-038's classifier list grew one citation at a time.
+last_updated: "2026-09-30"
+updated_by: "Claude A"
+source_ref: "docs/THANGSENG_RELAY_ANSWERS_20260930.md, Q4"
