@@ -1,0 +1,62 @@
+// Claude B, 2026-10-16: regression tests for Claude A's Phase 3 handoff
+// (docs/HANDOFF_CLAUDE_B_20261016.md, R1-R8). Engine behaviour only.
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { translate } from '../../src/translationEngine.js';
+
+test('R1: teens fused onto a classifier carry no mid-word capital', async () => {
+  assert.equal((await translate('eleven dogs')).garo, 'achak mang·chi·sa');
+  assert.equal((await translate('nineteen dogs')).garo, 'achak mang·chi·sku');
+  assert.equal((await translate('eleven')).garo, 'Chi·sa'); // bare number unchanged
+});
+
+test('R2: "N persons" resolves like "N people" (sak classifier, consistent 1 and 2+)', async () => {
+  assert.equal((await translate('one person')).garo, 'mande saksa');
+  assert.equal((await translate('two persons')).garo, 'mande sakgni');
+  assert.equal((await translate('three persons')).garo, 'mande sakgittam');
+  assert.equal((await translate('two persons')).garo, (await translate('two people')).garo);
+});
+
+test('R3: unresolved proper noun is left as written, no [UNKNOWN]', async () => {
+  const r = await translate('my name is Tridip');
+  assert.ok(r.garo.endsWith('Tridip'), r.garo);
+  assert.ok(!r.garo.includes('[UNKNOWN]'), r.garo);
+});
+
+test('R4: bare passthrough carries no [UNKNOWN], flagged unresolved at confidence 0', async () => {
+  const r = await translate('not');
+  assert.equal(r.garo, 'not');
+  assert.equal(r.confidence, 0);
+  assert.equal(r.unresolved, true);
+});
+
+test('R5: stripping a copula/demonstrative lowers confidence and reports what was dropped', async () => {
+  const r = await translate('this is my book');
+  assert.ok(r.confidence <= 0.5, `confidence ${r.confidence}`);
+  assert.ok(r.droppedWords.includes('this') && r.droppedWords.includes('is'));
+});
+
+test('R6/R7: sov-assembly capitalises only the sentence-initial word', async () => {
+  for (const input of ['where is the big house?', 'how many?']) {
+    const r = await translate(input);
+    assert.equal(r.method, 'sov-assembly');
+    const rest = r.garo.split(' ').slice(1);
+    for (const w of rest) assert.ok(!/^[A-Z]/.test(w), `${input} -> ${r.garo}`);
+  }
+});
+
+test('R8: constructed he/she output is deterministic (Ua); verified full-sentence rows ship verbatim', async () => {
+  for (const input of ['he', 'she', 'he is angry', 'she is angry', 'is she angry?']) {
+    assert.ok((await translate(input)).garo.startsWith('Ua'), input);
+  }
+  // Native-confirmed whole phrase (corrections.json) keeps its cited form.
+  assert.equal((await translate('is he angry?')).garo, "Bia ka'o nangengama?");
+});
+
+test('Item 8 / RULE-052: "slowly" is a bare adverb before the verb, never an -ko object; real objects survive', async () => {
+  const a = await translate('I eat rice slowly');
+  assert.ok(!a.garo.includes('sine·ko'), a.garo);
+  assert.ok(a.garo.includes('mi·ko'), `object "rice" must not be dropped: ${a.garo}`);
+  const b = await translate('I go to the market slowly');
+  assert.ok(/Ka·sine re·a$/i.test(b.garo), b.garo);
+});

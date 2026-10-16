@@ -535,7 +535,7 @@ test('RC-CANDIDATE-018(b): sov-assembly fallback attaches ·gen to the verb inst
   const r = await translate('a big dog will eat rice');
   assert.equal(r.method, 'sov-assembly');
   assert.ok(!/\s·gen(\s|$)/.test(r.garo), `·gen must not appear as its own space-separated token, got: ${r.garo}`);
-  assert.ok(r.garo.includes('Cha·gen'), `·gen must be suffixed onto the verb, got: ${r.garo}`);
+  assert.ok(r.garo.includes('cha·gen'), `·gen must be suffixed onto the verb, got: ${r.garo}`);
 });
 
 test('RC-CANDIDATE-018: "will" is never treated as lexical content in either assembly path', async () => {
@@ -1509,8 +1509,8 @@ test('item 3: attributive adjective ending in ·a stays adjacent to its noun ins
   const r = await translate('the tall man is carrying four heavy boxes to the river');
   assert.equal(r.method, 'sov-assembly');
   const words = r.garo.split(/\s+/);
-  const tallIdx = words.indexOf('Chu·a');
-  const manIdx = words.indexOf('Me·asa');
+  const tallIdx = words.map(w => w.toLowerCase()).indexOf('chu·a');
+  const manIdx = words.map(w => w.toLowerCase()).indexOf('me·asa');
   assert.ok(tallIdx !== -1 && manIdx !== -1, `both "tall" and "man" must be present, got: ${r.garo}`);
   assert.equal(manIdx, tallIdx + 1, `"tall" must sit immediately before "man", got: ${r.garo}`);
 });
@@ -1529,8 +1529,8 @@ test('item 3/5 regression guard: "did you see the two small dogs" — adjective 
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('did you see the two small dogs');
   const words = r.garo.split(/\s+/);
-  const smallIdx = words.indexOf('Chon·a');
-  const dogIdx = words.indexOf('Achak');
+  const smallIdx = words.map(w => w.toLowerCase()).indexOf('chon·a');
+  const dogIdx = words.map(w => w.toLowerCase()).indexOf('achak');
   assert.ok(smallIdx !== -1 && dogIdx !== -1, `both "small" and "dog" must be present, got: ${r.garo}`);
   // Item 5's VERB_LEMMAS fix (below) additionally lets "see" be
   // correctly identified as the verb instead of "small" - so "small"
@@ -1546,7 +1546,7 @@ test('item 5 fix: "did you see the two small dogs" — "see" (bare-root Garo ver
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('did you see the two small dogs');
   const words = r.garo.split(/\s+/);
-  assert.equal(words[words.length - 1], 'Nia', `"see" (Nia) must be the sentence-final verb per SOV, got: ${r.garo}`);
+  assert.equal(words[words.length - 1], 'nia', `"see" (Nia) must be the sentence-final verb per SOV, got: ${r.garo}`);
 });
 
 test('item 5 fix regression guard: VERB_LEMMAS is dictionary-derived, not guessed — a definitive lemma match anywhere in the sentence takes priority over an ambiguous suffix match elsewhere', async () => {
@@ -1778,7 +1778,7 @@ test('morphology ing$-stripping pronoun-collision guard: "she is using her phone
 test('negation-word content-filter guard: "a big dog will not eat rice" still assembles the correct negative-future form', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('a big dog will not eat rice');
-  assert.equal(r.garo, 'dal·a Achak Mi Cha·jawa');
+  assert.equal(r.garo, 'dal·a achak mi cha·jawa');
   assert.equal(r.method, 'sov-assembly');
 });
 

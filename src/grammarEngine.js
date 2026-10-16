@@ -137,6 +137,7 @@ export function analyzeGrammar(input) {
   }
 
   let subject = null, verb = null, object = null;
+  let mannerAdverb = null; // RULE-052 (evidence-bound to 'slowly'): bare ADVERB before the verb, never an object
   // RC-CANDIDATE-033 resolution (2026-07-31, Claude B): this array was
   // flagged as "computed every call, never consumed" - true for the
   // translation-assembly pipeline (assembleGrammar/assembleSentenceSOV
@@ -696,6 +697,14 @@ export function analyzeGrammar(input) {
           continue;
         }
       }
+      // R8-item8 (Claude A handoff 2026-10-16): RULE-052's only evidence is the bare
+      // adverb 'Ka'sine' before the verb (no -ko). Capturing 'slowly' as the OBJECT
+      // appended the accusative -ko and silently dropped real objects ('I eat rice
+      // slowly'). Scope is limited to the one adverb the rule has evidence for.
+      if (w === 'slowly' && !mannerAdverb) {
+        const g = lookupPhrase('slowly') || lookupGaro('slowly');
+        if (g) { mannerAdverb = { english: 'slowly', garo: g }; continue; }
+      }
       if (POSSESSIVES[w] || STOP_WORDS.has(w) || AUXILIARY_SKIP.has(w) || subjectWords.has(w) || INTENSIFIER_WORDS.has(w)) {
         if (/^(in|on|at)$/.test(w)) pendingLocative = true;
         continue;
@@ -958,7 +967,7 @@ export function analyzeGrammar(input) {
       wordCount, detectedTense, tenseEvidence, isNegative, isQuestion,
       garoTenseSuffix: null, // removed 2026-07-05, see comment above
       structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
-      subject, verb, object, possessive, purposeAction, location, reasonAdjunct, classifierHints,
+      subject, verb, object, possessive, purposeAction, location, reasonAdjunct, classifierHints, mannerAdverb,
       garoWordOrder: 'SOV (Subject → Object → Verb)',
       notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
     };
@@ -970,7 +979,7 @@ export function analyzeGrammar(input) {
     wordCount, detectedTense, tenseEvidence, isNegative, isQuestion,
     garoTenseSuffix: null, // removed 2026-07-05, see comment above
     structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
-    subject, verb, object, classifierHints,
+    subject, verb, object, classifierHints, mannerAdverb,
     garoWordOrder: 'SOV (Subject → Object → Verb)',
     notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
   };

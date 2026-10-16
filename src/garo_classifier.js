@@ -393,7 +393,11 @@ function classifierTail(classifier, n, spaced = false) {
   const suffix = getClassifierSuffix(n);
   if (suffix === null) return null;
   if (spaced) return `${classifier} ${suffix}`;
-  return RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·${suffix}` : `${classifier}${suffix}`;
+  // R1 (Claude A audit 2026-09-28 / handoff 2026-10-16): teens table entries
+  // are capitalised ('Chi·sa') for the bare-number form; fused onto a
+  // classifier they must not leave a mid-word capital ('mang·Chi·sa').
+  const fusedSuffix = suffix.charAt(0).toLowerCase() + suffix.slice(1);
+  return RAKA_CLASSIFIERS.has(classifier) ? `${classifier}·${fusedSuffix}` : `${classifier}${fusedSuffix}`;
 }
 
 // Exported so translationEngine.js can tell a cited compound-classifier

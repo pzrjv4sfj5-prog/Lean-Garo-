@@ -117,7 +117,34 @@ import { assembleSentenceSOV, assembleGrammar, translateIfClause, translateMulti
 // same grammatical concept is exactly the kind of duplicated/contradictory
 // logic flagged in the 2026-07-05 audit — consolidated into one.
 
+// R3/R4 (Claude A handoff 2026-10-16): '[UNKNOWN]' must not reach the user for
+//  - a proper noun (capitalised, non-initial, no dictionary entry): leave the
+//    name as written, e.g. 'my name is Tridip' -> '... daka Tridip';
+//  - a bare passthrough (nothing resolved at all): return the input unchanged
+//    with confidence 0 and `unresolved: true` instead of 'x [UNKNOWN]'.
+// Anything else keeps the existing visible-gap marker (tests rely on it).
 export async function translate(input) {
+  let result = await translateCore(input);
+  // R6/R7: sov-assembly joins dictionary headwords, which carry their own
+  // initial capital ('Nok', 'Chon·a'). Only the sentence-initial word keeps it.
+  if (result && result.method === 'sov-assembly' && typeof result.garo === 'string') {
+    result = { ...result, garo: result.garo.split(' ').map((w, i) => (i === 0 ? w : w.charAt(0).toLowerCase() + w.slice(1))).join(' ') };
+  }
+  if (!result || typeof result.garo !== 'string' || !result.garo.includes('[UNKNOWN]')) return result;
+  if (result.method === 'passthrough') {
+    return { ...result, garo: result.garo.replace(/\s*\[UNKNOWN\]/g, '').trim() || String(input).trim(), unresolved: true };
+  }
+  const markers = (result.garo.match(/\[UNKNOWN\]/g) || []).length;
+  const tokens = String(input).trim().replace(/[?!.,;]+$/g, '').split(/\s+/);
+  const names = tokens.slice(1).filter(t => /^[A-Z][\w'-]*$/.test(t) && !lookupGaro(t.toLowerCase()));
+  if (markers > 0 && names.length === markers) {
+    let i = 0;
+    return { ...result, garo: result.garo.replace(/\[UNKNOWN\]/g, () => names[i++]) };
+  }
+  return result;
+}
+
+async function translateCore(input) {
   if (!input || typeof input !== 'string') return { garo: '', method: 'empty', confidence: 0 };
 
 
@@ -146,7 +173,13 @@ export async function translate(input) {
   // never mean "belonging to him/her" — that's "his"/"her", distinct word
   // forms), so leaving them as-is is both correct and lower-risk than an
   // unneeded change.
-  const cleaned = normalizeInput(input.trim().replace(/’/g, "'")).replace(/\bit['’]s\b/gi, 'it is');
+  const cleaned = normalizeInput(input.trim().replace(/’/g, "'")).replace(/\bit['’]s\b/gi, 'it is')
+    // R2 (Claude A handoff 2026-10-16): "<number> persons" exact-phrase rows are
+    // legacy corpus-internal placeholders (e.g. 'three persons' -> 'mande·gni',
+    // the 'two' form, with no classifier 'sak'), inconsistent with 'N people' /
+    // 'N person' (mande sak<N>, counting rule). Route the plural 'persons' with
+    // a number through the same path as 'people'. No dictionary rows changed.
+    .replace(/\b(\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\s+persons\b/gi, '$1 people');
   // Normalize: strip apostrophes for lookup consistency
   const lower = cleaned.toLowerCase().replace(/[''\u2019]/g, '');
   const words = lower.split(/\s+/);
@@ -436,7 +469,17 @@ export async function translate(input) {
       if (isNegativeShortcut && /a$/i.test(sm)) {
         sm = applyNegation(sm);
       }
-      return { garo: sm, method: 'stopword-stripped', confidence: capLookupConfidence(stripped, 0.88) };
+      // R5 (Claude A handoff 2026-10-16): when the strip discarded a copula or
+      // demonstrative ('this is my book' -> 'angni ki·tap'), the output no longer
+      // says everything the input did. Don't claim full confidence; report what
+      // was dropped. Native-confirmed whole-phrase hits ('this is a demand') have
+      // their own exact/phrase entries earlier in the cascade and are unaffected.
+      const lossy = words.filter(w => STOP_WORDS.has(w) && /^(is|am|are|was|were|this|that|these|those)$/.test(w));
+      const conf = capLookupConfidence(stripped, 0.88);
+      if (lossy.length) {
+        return { garo: sm, method: 'stopword-stripped', confidence: Math.min(conf, 0.5), droppedWords: lossy };
+      }
+      return { garo: sm, method: 'stopword-stripped', confidence: conf };
     }
   }
 

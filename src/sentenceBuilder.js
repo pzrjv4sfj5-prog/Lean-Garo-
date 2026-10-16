@@ -474,6 +474,7 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   }
 
   // Main verb
+  if (grammar.mannerAdverb) parts.push(grammar.mannerAdverb.garo); // RULE-052: ADVERB + VERB, bare
   if (grammar.verb) {
     parts.push(grammar.verb.garoWithTense || grammar.verb.garo);
   } else if (grammar.isNegative && grammar.object && grammar.object.isLocativeAdjunct) {
