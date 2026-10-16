@@ -330,7 +330,7 @@ export const PHRASE_MAPS = {
   'fry': 'Jo·a',
   'boil': 'Rita',
   'cut': 'Den·a',
-  'build': 'Rik·a',
+  'build': 'Taria', // CORRECTED 2026-10-01 (Claude A): was 'Rik·a', house-specific per direct Thangseng/Project Owner clarification (Rika=build houses only; Taria=general make/build). Rik·a kept for 'build a house'.
   'fly': 'Tampi',
   'swim': 'Jroa',
   'climb': 'Maldoa',

@@ -67291,12 +67291,12 @@
     "confidence": "verified_high"
   },
   {
-    "english": "I build (general)",
+    "english": "I build (a house, general statement)",
     "garo": "Rik·a",
     "pos": "v.",
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Corrects prior UNVERIFIED status of the existing 'rik·a' build candidate (now this VERIFIED entry supersedes it for compile purposes; other build candidates ba·nai·a/dim·a/gat·a left UNVERIFIED, not contradicted). Example: 'Anga nokko rika.' = 'I build the house.'",
+    "notes": "VERIFIED/HIGH. Confirmed 2026-08-09 (Project Owner relay, Thangseng direct). Corrects prior UNVERIFIED status of the existing 'rik·a' build candidate (now this VERIFIED entry supersedes it for compile purposes; other build candidates ba·nai·a/dim·a/gat·a left UNVERIFIED, not contradicted). Example: 'Anga nokko rika.' = 'I build the house.' | VERIFIED/HIGH — direct Thangseng relay via Project Owner, chat, 2026-10-01 (no transcript, Project Owner authority per .ai/PROJECT_OWNER_AUTHORITY.md): \"Rika is used for building of houses only. Others use taria (to make). But 'rika' also has another meaning. It not only means 'to build,' it can also mean 'to chase'. No spelling change, no pronunciation change.\" Corrected: renamed from \"I build (general)\", same reasoning as \"build (a house)\".",
     "confidence": "verified_high"
   },
   {
@@ -75837,12 +75837,12 @@
     "confidence": "verified_high"
   },
   {
-    "english": "build (verb, general)",
+    "english": "build (a house)",
     "garo": "Rik·a",
     "pos": "v.",
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH. Sense-tagged bare-verb exposure of the already-VERIFIED/HIGH 'I build (general)' root (2026-08-09, reconfirmed via 2026-09-08 Thangseng transcript, see 'I build the house'). Distinct key from the pre-existing unverified 'to build'=Rika (no raka dot, unconfirmed variant, left untouched) so a lookup on bare 'build' doesn't silently prefer the unconfirmed spelling.",
+    "notes": "VERIFIED/HIGH. Sense-tagged bare-verb exposure of the already-VERIFIED/HIGH 'I build (general)' root (2026-08-09, reconfirmed via 2026-09-08 Thangseng transcript, see 'I build the house'). Distinct key from the pre-existing unverified 'to build'=Rika (no raka dot, unconfirmed variant, left untouched) so a lookup on bare 'build' doesn't silently prefer the unconfirmed spelling. | VERIFIED/HIGH — direct Thangseng relay via Project Owner, chat, 2026-10-01 (no transcript, Project Owner authority per .ai/PROJECT_OWNER_AUTHORITY.md): \"Rika is used for building of houses only. Others use taria (to make). But 'rika' also has another meaning. It not only means 'to build,' it can also mean 'to chase'. No spelling change, no pronunciation change.\" Corrected: wrongly labeled \"general\" -- Rik·a is house-specific. Renamed from \"build (verb, general)\" (same garo, key corrected, not deleted/recreated). The general sense ships separately via \"build\"/\"to make\"=Taria.",
     "confidence": "verified_high"
   },
   {
@@ -78471,5 +78471,77 @@
     "pos": null,
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, WhatsApp, 28-29/9/2026 (filed verbatim in docs/THANGSENG_RELAY_ANSWERS_20260930.md, processed 2026-09-30 by Claude A, see RULE-052 adverb position). The literal worked example Thangseng supplied for the ADVERB+VERB word-order question. Confirms both \"slowly\"=Ka·sine (see that row) and the existing unverified \"eat!\"=Cha·bo in a cited sentence context."
+  },
+  {
+    "english": "build",
+    "garo": "Taria",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, chat, 2026-10-01 (no transcript, Project Owner authority per .ai/PROJECT_OWNER_AUTHORITY.md): \"Rika is used for building of houses only. Others use taria (to make). But 'rika' also has another meaning. It not only means 'to build,' it can also mean 'to chase'. No spelling change, no pronunciation change.\" New general sense (generic build/make), distinct from house-specific Rik·a. Coexists with, does not delete, unverified ba·nai·a/dim·a/gat·a and superseded rik·a -- none independently cited."
+  },
+  {
+    "english": "to make",
+    "garo": "Taria",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, chat, 2026-10-01 (no transcript, Project Owner authority per .ai/PROJECT_OWNER_AUTHORITY.md): \"Rika is used for building of houses only. Others use taria (to make). But 'rika' also has another meaning. It not only means 'to build,' it can also mean 'to chase'. No spelling change, no pronunciation change.\" T glossed \"taria\" as \"(to make)\". Coexists with unverified \"dok·a\"/\"daka\" for make, not deleted; possible near-synonym, not reconciled."
+  },
+  {
+    "english": "make",
+    "garo": "Taria",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, chat, 2026-10-01 (no transcript, Project Owner authority per .ai/PROJECT_OWNER_AUTHORITY.md): \"Rika is used for building of houses only. Others use taria (to make). But 'rika' also has another meaning. It not only means 'to build,' it can also mean 'to chase'. No spelling change, no pronunciation change.\" Same citation as \"to make\"."
+  },
+  {
+    "english": "to build",
+    "garo": "Taria",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, chat, 2026-10-01 (no transcript, Project Owner authority per .ai/PROJECT_OWNER_AUTHORITY.md): \"Rika is used for building of houses only. Others use taria (to make). But 'rika' also has another meaning. It not only means 'to build,' it can also mean 'to chase'. No spelling change, no pronunciation change.\" General sense, infinitive. Pre-existing unverified \"to build\"=\"Rika\" (missing raka dot, and now semantically wrong for the general sense) left on file, flagged not silently fixed."
+  },
+  {
+    "english": "chase",
+    "garo": "Rik·a",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — direct Thangseng relay via Project Owner, chat, 2026-10-01 (no transcript, Project Owner authority per .ai/PROJECT_OWNER_AUTHORITY.md): \"Rika is used for building of houses only. Others use taria (to make). But 'rika' also has another meaning. It not only means 'to build,' it can also mean 'to chase'. No spelling change, no pronunciation change.\" New distinct sense: bare rika is a genuine homonym (same spelling/pronunciation) of the house-building word. Coexists with unverified \"chase\"=\"ha·rik·a\" (longer, different word), not reconciled."
+  },
+  {
+    "english": "build a house",
+    "garo": "Nokko rika",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH house-specific build, per direct Thangseng/Project Owner clarification 2026-10-01 (Rika = build houses only). Form composed from the already-VERIFIED sibling \"I build the house\"=\"Anga nokko rika\" (same nokko object pattern, subject dropped) -- not separately cited as a bare phrase. Added so the house sense does not fall through to the general Taria verb after the build/Taria split."
+  },
+  {
+    "english": "to build a house",
+    "garo": "Nokko rika",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH house-specific build, per direct Thangseng/Project Owner clarification 2026-10-01 (Rika = build houses only). Form composed from the already-VERIFIED sibling \"I build the house\"=\"Anga nokko rika\" (same nokko object pattern, subject dropped) -- not separately cited as a bare phrase. Added so the house sense does not fall through to the general Taria verb after the build/Taria split."
+  },
+  {
+    "english": "I build a house",
+    "garo": "Anga nokko rika",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH house-specific build, per direct Thangseng/Project Owner clarification 2026-10-01 (Rika = build houses only). Same form as already-VERIFIED sibling \"I build the house\"=\"Anga nokko rika\" (article \"a\" vs \"the\" does not change the Garo); added so the house sense does not fall through to the general Taria verb after the build/Taria split."
+  },
+  {
+    "english": "I am building a house",
+    "garo": "Anga nokko rikenga",
+    "category": null,
+    "pos": null,
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH house-specific build, per direct Thangseng/Project Owner clarification 2026-10-01 (Rika = build houses only). Same form as already-VERIFIED sibling \"I am building the house\"=\"Anga nokko rikenga\" (article \"a\" vs \"the\" does not change the Garo); added so the house sense does not fall through to the general Taria verb after the build/Taria split."
   }
 ]
