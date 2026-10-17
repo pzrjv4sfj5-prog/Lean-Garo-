@@ -78567,5 +78567,11 @@
     "garo": "Hai kal·na",
     "notes": "VERIFIED/HIGH — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165) (raka dot on stem kal·, matches play=kal·a)",
     "confidence": "verified_high"
+  },
+  {
+    "english": "go and eat",
+    "garo": "Hai cha·bo",
+    "notes": "VERIFIED/HIGH — Project Owner chat 2026-10-16, stated as Thangseng's final validation (NV-165): Hai cha·bo = \"go and eat\" / \"eat\" (imperative), not \"let's eat\". Added on Project Owner approval 2026-10-16.",
+    "confidence": "verified_high"
   }
 ]
