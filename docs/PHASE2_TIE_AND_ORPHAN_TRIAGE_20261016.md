@@ -58,3 +58,7 @@ Recommendation: the examples are the rules' own evidence, so before adding entri
 
 ## D. Update 2026-10-16 (later): extractor fix applied (Project Owner approved)
 `scripts/audit-rule-conformance.mjs` now splits `X / Y` into two examples and strips observed English lead-ins (`vs.`, leading commas, `go to the shop`, `native reply confirmed as`). Result: 100 examples (was 97), 57 match (was 53), **17 orphans (was 23)**, 0 mismatches outside the regenerated baseline. This corrects the earlier "would drop to 15" estimate: 3 of the 8 fragment cases (`nokchi re·anggen`, `Antichi re·angbo`, `re·angja`) are real orphans once cleaned, and only 6 were false (`cha·manaha` plus the 5 halves of the RULE-050 pairs). The RULE-050 `ama` halves now show as baselined mismatches because the runtime ships only `man·a` (both are native-valid, NV-117).
+
+## E. RULE-007 resolved (2026-10-16, NV-165)
+Project Owner relayed Thangseng's final validation: `Hai cha·na` = "let's eat" (now the shipped value); `Hai cha·bo` = "go and eat", not "let's eat"; `cha·ha` = "I ate". The `Hai cha·na` orphan and the `cha·na`/`cha·ha` mismatch are closed. After the change: 102 examples, 61 match, 16 orphans, 0 unbaselined mismatches. Open from this ruling: reconcile PO's `cha·ha` ("I ate") with the verified `Anga cha·aha` (NV-089), and RULE-029's now-unsupported "-bo also hortative" claim.
+

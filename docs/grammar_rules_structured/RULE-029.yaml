@@ -21,8 +21,17 @@ launch_priority:
   - scope: null
     tier: P0
 native_notes: "Source Rule 29, corrects an earlier imperative-only assumption."
-last_updated: "2026-07-26"
+last_updated: "2026-10-16"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-029"
 migration_flags:
   - "Sengbo glossed here (and in RULE-003b) as 'stop!', while NV-015 glosses it as imperative 'wait!' - two independent rule entries agree with each other on 'stop!', which is worth noting for the reconciliation pass (may mean 'stop!' is also a legitimate sense, not simply wrong) - not resolved here, logged only."
+corrections:
+  - date: "2026-10-16"
+    note: >-
+      FLAGGED, description not rewritten: RULE-007 no longer treats `-bo` as a
+      hortative alternative (Hai cha·bo = "go and eat", not "let's eat").
+      This rule's claim that one suffix serves both imperative and hortative
+      functions now has no remaining example on file; needs a native check
+      before the description is changed. Source: NV-165 (Project Owner relay of
+      Thangseng final validation, 2026-10-16).

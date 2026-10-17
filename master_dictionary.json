@@ -5106,8 +5106,8 @@
     "english": "let's eat",
     "garo": "Hai cha·ha",
     "category": "food",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part B)",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165): reverses NV-083 (2026-08-20). Replaced by 'Hai cha·na'. Retained per retain-and-tag.",
+    "confidence": "superseded"
   },
   {
     "english": "let's go",
@@ -7087,8 +7087,8 @@
     "english": "let's drink",
     "garo": "Hai ringaha",
     "category": "food",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part B)",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165): reverses NV-083 (2026-08-20). Replaced by 'Hai ringna'. Retained per retain-and-tag.",
+    "confidence": "superseded"
   },
   {
     "english": "let's sit",
@@ -51701,8 +51701,8 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/200sentences",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165): reverses NV-083 (2026-08-20). Replaced by 'Hai cha·na.'. Retained per retain-and-tag.",
+    "confidence": "superseded"
   },
   {
     "english": "My name is Tridip.",
@@ -72481,13 +72481,13 @@
   {
     "english": "let's play",
     "garo": "Hai kalna",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part B)",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165): reverses NV-083 (2026-08-20). Replaced by 'Hai kal·na'. Retained per retain-and-tag.",
+    "confidence": "superseded"
   },
   {
     "english": "let's sit",
     "garo": "Hai asongna",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part B)",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-20 (NV-083, Thangseng relay via Tridip, THANGSENG_RELAY_BATCH_20260820 Part B) Re-validated unchanged: PO chat 2026-10-16, stated as Thangseng's final validation (NV-165).",
     "confidence": "verified_high"
   },
   {
@@ -78543,5 +78543,29 @@
     "pos": null,
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH house-specific build, per direct Thangseng/Project Owner clarification 2026-10-01 (Rika = build houses only). Same form as already-VERIFIED sibling \"I am building the house\"=\"Anga nokko rikenga\" (article \"a\" vs \"the\" does not change the Garo); added so the house sense does not fall through to the general Taria verb after the build/Taria split."
+  },
+  {
+    "english": "let's eat",
+    "garo": "Hai cha·na",
+    "notes": "VERIFIED/HIGH — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165) (matches Thangseng's own words in the July 3-5 transcript)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "Let's eat.",
+    "garo": "Hai cha·na.",
+    "notes": "VERIFIED/HIGH — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "let's drink",
+    "garo": "Hai ringna",
+    "notes": "VERIFIED/HIGH — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "let's play",
+    "garo": "Hai kal·na",
+    "notes": "VERIFIED/HIGH — PO chat 2026-10-16, stated as Thangseng's final validation (NV-165) (raka dot on stem kal·, matches play=kal·a)",
+    "confidence": "verified_high"
   }
 ]

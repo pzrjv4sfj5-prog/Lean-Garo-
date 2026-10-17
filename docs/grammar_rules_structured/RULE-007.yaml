@@ -1,16 +1,16 @@
 id: RULE-007
 title: "`Hai` Construction (Hortative)"
 description: >-
-  `Hai` = "let's," precedes a verb in `-na` (infinitive, standard) or
-  `-bo` (imperative-extended, "not so strict" register) form to form
-  a hortative.
+  `Hai` = "let's," precedes a verb in `-na` (infinitive) form to form a
+  hortative. (2026-10-16: the earlier `-bo` casual-hortative reading is
+  retracted; `Hai cha·bo` = "go and eat", not "let's eat". See corrections.)
 dependencies:
   - id: RULE-015
     name: "Stem Formation"
     note: null
   - id: RULE-029
     name: "Hortative/Imperative -bo"
-    note: "shares the casual-register form"
+    note: "-bo is imperative, not a hortative alternative (2026-10-16 ruling)"
 claims:
   - scope: null
     status: verified
@@ -18,7 +18,9 @@ claims:
     confidence_note: "now 6 corpus examples across distinct verb roots, one of the better-evidenced rules in the catalogue"
 examples:
   - 'Hai cha·na="let''s eat" (standard)'
-  - 'Hai cha·bo="let''s eat" (casual register — Thangseng''s own words)'
+  - 'Hai ringna="let''s drink" (2026-10-16, Thangseng final validation via Project Owner; supersedes NV-083 Hai ringaha)'
+  - 'Hai kal·na="let''s play" (2026-10-16; raka on stem kal·, supersedes NV-083 Hai kalna)'
+  - 'Hai asongna="let''s sit" (NV-083, re-validated unchanged 2026-10-16)'
   - 'Hai re·naha="let''s go"'
   - 'Hai ring·na="let''s sing" (2026-07-14, raka confirmed, matches ring·="sing")'
   - 'Hai chrokna="let''s dance" (2026-07-14, regular -na on Chroka)'
@@ -26,8 +28,10 @@ examples:
   - 'Hai bajalchi re·na="let''s go to market" (non-immediate/general urge) vs. Hai re·naha="let''s go (now)" (immediate urge) — same -na infinitive vs. -naha contrast, NV-154'
   - 'Song·bo="cook!" (imperative) — -bo suffix on a different verb root, NV-154'
 counterexamples:
-  note: "none recorded"
-  items: []
+  note: "recorded 2026-10-16"
+  items:
+    - 'Hai cha·bo is NOT "let''s eat": Project Owner, relaying Thangseng final validation, 2026-10-16: "go and eat" / "eat" (imperative). Hortative "let''s eat" is Hai cha·na.'
+    - 'Hai cha·ha is NOT "let''s eat": cha·ha = "I ate" (past). NV-083 Hai cha·ha superseded. (Existing verified past form is Anga cha·aha, NV-089; spelling of the PO''s cha·ha vs cha·aha not yet reconciled.)'
 launch_priority:
   - scope: null
     tier: P0
@@ -42,7 +46,7 @@ native_notes: >-
   ring·na, hai (chio) jrona" — the parenthetical subjects don't all
   match known pronouns (an·ching="we" does; git/chio don't), flagged
   in NV-013 rather than assumed.
-last_updated: "2026-09-09"
+last_updated: "2026-10-16"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-007"
 corrections:
@@ -72,3 +76,7 @@ corrections:
       Song·ahama?, Song·engama?, Song·ama?) added to
       master_dictionary.json this session. See
       docs/THANGSENG_NATIVE_VALIDATION.md NV-154.
+  - date: "2026-10-16"
+    note: >-
+      CORRECTED (supersedes parts of the July 3-5 transcript reading and NV-083).
+      Project Owner direct chat statement 2026-10-16, given as Thangseng's final validation (original Thangseng message not seen by Claude A; recorded as relayed): `Hai cha·bo` = "go and eat" / imperative "eat", NOT "let's eat"; "let's eat" = `Hai cha·na`; `cha·ha` = "I ate" (past, not hortative); let's drink = `Hai ringna`, let's eat = `Hai cha·na`, let's play = `Hai kal·na`, let's sit = `Hai asongna`. Reverses (a) the July 3-5 transcript reading of `-bo` as a casual hortative for cha·bo and (b) NV-083 (2026-08-20) `Hai cha·ha`, `Hai ringaha`, `Hai kalna`. Old rows retained and tagged superseded.

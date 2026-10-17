@@ -4,14 +4,15 @@ Structured per Sprint Work Package schema. Rule IDs map to
 `THANGSENG_RULES_LOOKUP.md` source rules where applicable (cited).
 
 ### RULE-007 — `Hai` Construction (Hortative)
-**Description:** `Hai` = "let's," precedes a verb in `-na` (infinitive, standard) or `-bo` (imperative-extended, "not so strict" register) form to form a hortative.
-**Examples:** `Hai cha·na`="let's eat" (standard), `Hai cha·bo`="let's eat" (casual register — Thangseng's own words), `Hai re·naha`="let's go", `Hai ring·na`="let's sing" (2026-07-14, raka confirmed, matches `ring·`="sing"), `Hai chrokna`="let's dance" (2026-07-14, regular `-na` on `Chroka`), `Hai jrona`="let's swim" (2026-07-14, root `jroa`, corroborated independently by a printed-dictionary source the same day).
-**Counterexamples:** none recorded.
-**Dependencies:** RULE-015 (Stem Formation), RULE-029 (Hortative/Imperative `-bo`, shares the casual-register form).
+**Description:** `Hai` = "let's," precedes a verb in `-na` (infinitive) form to form a hortative. *(2026-10-16: the `-bo` casual-hortative reading is retracted, see correction below.)*
+**Examples:** `Hai cha·na`="let's eat" (standard), `Hai ringna`="let's drink", `Hai kal·na`="let's play", `Hai asongna`="let's sit" (2026-10-16 final validation), `Hai re·naha`="let's go", `Hai ring·na`="let's sing" (2026-07-14, raka confirmed, matches `ring·`="sing"), `Hai chrokna`="let's dance" (2026-07-14, regular `-na` on `Chroka`), `Hai jrona`="let's swim" (2026-07-14, root `jroa`, corroborated independently by a printed-dictionary source the same day).
+**Counterexamples:** `Hai cha·bo` is NOT "let's eat" (= "go and eat", imperative); `cha·ha` is NOT hortative (= "I ate"). Project Owner relay of Thangseng final validation, 2026-10-16.
+**Dependencies:** RULE-015 (Stem Formation), RULE-029 (Hortative/Imperative `-bo`; -bo is imperative, not a hortative alternative, per 2026-10-16 ruling).
 **Native Notes:** Primary source: July 3-5 chat transcript — Thangseng explicitly: *"'bo' is essentially imperative. But it may also be used in a hortative sense also... 'let us eat' is expressed by saying 'hai cha·na'. But in a not so strict manner it may also be done by saying 'hai cha·bo'."* Additional examples confirmed 2026-07-14 (June 25 chat, relayed later): `"Hai (an·ching) chrokna, hai (git) ring·na, hai (chio) jrona"` — the parenthetical subjects don't all match known pronouns (`an·ching`="we" does; `git`/`chio` don't), flagged in `NV-013` rather than assumed.
 **Validation Status:** Verified.
 **Confidence:** High — now 6 corpus examples across distinct verb roots, one of the better-evidenced rules in the catalogue.
 **Launch Priority:** P0 — implemented, 6 corpus examples (was 2).
+**2026-10-16 Correction (NV-165):** Project Owner direct chat statement 2026-10-16, given as Thangseng's final validation (original Thangseng message not seen by Claude A; recorded as relayed): `Hai cha·bo` = "go and eat" / imperative "eat", NOT "let's eat"; "let's eat" = `Hai cha·na`; `cha·ha` = "I ate" (past, not hortative); let's drink = `Hai ringna`, let's eat = `Hai cha·na`, let's play = `Hai kal·na`, let's sit = `Hai asongna`. Reverses (a) the July 3-5 transcript reading of `-bo` as a casual hortative for cha·bo and (b) NV-083 (2026-08-20) `Hai cha·ha`, `Hai ringaha`, `Hai kalna`. Old rows retained and tagged superseded.
 
 ---
 ### RULE-G2 — Pre-verbal Clustering (Locative Phrases)
@@ -323,6 +324,7 @@ labeling gap in this rule's example, not a factual conflict.
 **Validation Status:** Verified.
 **Confidence:** High.
 **Launch Priority:** P0.
+**2026-10-16 Flag (NV-165):** RULE-007 no longer treats `-bo` as a hortative alternative (`Hai cha·bo` = "go and eat"). The claim here that one suffix serves both imperative and hortative functions has no example left on file; needs native check before the description changes.
 
 ---
 ### RULE-030 — `re·` vs. `re·ang` for "Go" [RESOLVED]

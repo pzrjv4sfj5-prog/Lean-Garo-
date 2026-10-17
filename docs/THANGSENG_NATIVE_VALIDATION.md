@@ -4499,6 +4499,8 @@ not applied.
 
 ## NV-083 (2026-08-20) — "let's..." verbs + "my dog", relay batch confirmation
 
+> **SUPERSEDED IN PART by NV-165 (2026-10-16):** `Hai cha·ha`, `Hai ringaha`, `Hai kalna` replaced by `Hai cha·na`, `Hai ringna`, `Hai kal·na`. `Hai asongna`, `Hai dakna`, `Hai kalna`-sibling `my dog` rows unaffected.
+
 Source: Thangseng relay via Tridip, responding to
 `docs/THANGSENG_RELAY_BATCH_20260820.md` Part B. Confirmed correct as
 sent, no corrections given:
@@ -7600,3 +7602,17 @@ Not touched: `at`=`·o` (already VERIFIED/HIGH, NV-070), `go`=`re·a`
 (already VERIFIED/HIGH, NV-100), `tomorrow`=`Knal` (already
 VERIFIED/HIGH) — all pre-existing citations for this batch's
 component words, no gaps found beyond `nearby`/`market day`.
+
+## NV-165 (2026-10-16, Project Owner direct chat statement, relayed as Thangseng's final validation)
+
+Source: Project Owner (T) in chat, stated as Thangseng's final validation; the original Thangseng message was not provided to Claude A, so this is recorded as relayed. Direct statement counts as the citation (standing rule).
+
+Verbatim from the Project Owner: "Hai Cha.bo= Go and eat or eat not let's eat. Let's eat= Hai. cha.na cha.ha=i ate" and "let's drink: Hai ringna / let's eat: Hai cha.na / let's play: Hai kal.na / let's sit: Hai asongna". Dots read as raka (`·`), per the Project Owner's usage.
+
+Rulings and effect:
+- `Hai cha·bo` = "go and eat" / "eat" (imperative), NOT "let's eat". Reverses the July 3-5 transcript reading used in RULE-007. Consistent with existing `Cha·bo` = "go to eat" and "eat!" (verified).
+- "let's eat" = `Hai cha·na`. Supersedes NV-083 `Hai cha·ha`.
+- `cha·ha` = "I ate". Existing verified past form is `Anga cha·aha` (NV-089); whether the PO's `cha·ha` is shorthand for `cha·aha` is **unreconciled**, no past-tense row changed.
+- let's drink `Hai ringna` (supersedes `Hai ringaha`); let's play `Hai kal·na` (supersedes `Hai kalna`, raka now on the stem to match play=kal·a); let's sit `Hai asongna` re-validated unchanged.
+
+Applied: master rows retained and tagged SUPERSEDED, new VERIFIED/HIGH rows added (let's eat, Let's eat., let's drink, let's play); corrections.json updated (let's eat, let's eat food, let us eat, let's drink, let's play); allowlist in known_dictionary_conflicts.json; RULE-007 rewritten (description, examples, counterexamples, correction chain), RULE-029 flagged, catalogue mirrored. **Not directly validated:** `let's eat food` = `Hai mi cha·na` (reverts to its pre-2026-08-16 value as a consequence of this ruling), and `let us eat`.
