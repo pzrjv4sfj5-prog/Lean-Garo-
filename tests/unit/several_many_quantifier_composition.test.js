@@ -117,7 +117,7 @@ test('numeral object composition (a different, already-working path) is untouche
 test('"she has several dogs" uses grammar-assembly with correct SOV order (adita), not the sov-assembly fallback', async () => {
   const r = await translate('she has several dogs');
   assert.equal(r.method, 'grammar-assembly');
-  assert.equal(r.garo, 'Uao adita achak donga');
+  assert.equal(r.garo, 'Uao adita achakrang donga');
 });
 
 test('regression guard: "adita" survives quantifier-preservation composition like bang·a/bang·e do (AI-002-shaped bug, independently found by both Claude A and Claude B sessions 2026-09-27, fixed in this one)', async () => {
@@ -129,7 +129,7 @@ test('regression guard: "adita" survives quantifier-preservation composition lik
 test('"we have many students" uses grammar-assembly with correct SOV order (bang·a), not the sov-assembly fallback', async () => {
   const r = await translate('we have many students');
   assert.equal(r.method, 'grammar-assembly');
-  assert.equal(r.garo, 'An·chingo bang·a chattro donga');
+  assert.equal(r.garo, 'An·chingo bang·a chattrorang donga');
 });
 
 test('"i have several books" uses "Ango" (not "Angao") for the 1st-person possessor', async () => {

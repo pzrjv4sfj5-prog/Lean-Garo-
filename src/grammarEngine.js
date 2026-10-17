@@ -959,6 +959,37 @@ export function analyzeGrammar(input) {
           }
         }
       }
+      // 2026-10-17 (Claude B): general -rang plural generation. Thangseng
+      // relay 2026-09-30 Q2 (docs/THANGSENG_RELAY_ANSWERS_20260930.md):
+      // "-rang can be added to any countable nouns to make it plural";
+      // Project Owner go-ahead 2026-10-17 for the object slot. Scope:
+      //  - English plural nouns only (singularize() must change the word);
+      //  - the plural form resolves to the SAME Garo as its singular, i.e.
+      //    no lexicalized plural exists (children -> Bi·sarang, friends ->
+      //    cham·e are left exactly as the data has them);
+      //  - never when a number word is present (counted nouns such as
+      //    "two dogs" go through the classifier path and stay -rang-free);
+      //  - never over a multi-word dictionary row (data is authoritative);
+      //  - plain concatenation, raka dot kept (ki·tap -> ki·taprang).
+      // QUANTITY + NOUN order is unchanged (bang·a ki·taprang); the
+      // description/exclamation NOUN + QUANTITY exceptions are static
+      // corrections rows and are not generated here.
+      if (objGaro && objGaro !== '[UNKNOWN]' && !objectIsThirdPersonAccusative
+          && !objectWords.some((w) => NUMBER_WORDS[w.toLowerCase()] !== undefined)
+          && !(objectWords.length > 1 && existingFullPhrase)) {
+        const lw = lastWord.toLowerCase();
+        const sing = singularize(lw);
+        if (sing !== lw && !/rang$/i.test(objGaro)) {
+          const singGaro = lookupPhrase(sing) || lookupGaro(sing);
+          // No plural row at all (dogs, students) counts as "no
+          // lexicalized plural"; a plural row must equal the singular.
+          const pluralGaro = lookupPhrase(lw) || lookupGaro(lw) || singGaro;
+          if (pluralGaro && singGaro && String(pluralGaro).toLowerCase() === String(singGaro).toLowerCase()
+              && objGaro.toLowerCase().endsWith(String(singGaro).toLowerCase())) {
+            objGaro = objGaro + 'rang';
+          }
+        }
+      }
       const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
       object = { english: objEng, garo: objGaro, withMarker: objGaro + marker, isLocativeAdjunct: objectIsLocativeAdjunct };
     }
