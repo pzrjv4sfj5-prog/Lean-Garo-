@@ -7638,7 +7638,7 @@ Source: Project Owner in chat, no transcript; direct statement counts as the cit
 
 Applied: the sentence "the pork meat has a lot of fat" now has two master rows, `Wak be·en mit·am bang·a` (primary, matches the shipped corrections.json override, runtime output unchanged) and `Wak be·enan mitim rarasa` (variant/VERIFIED/HIGH). Primary is an ordering choice, not a native ranking. Key allowlisted in known_dictionary_conflicts.json as an intentional cited pair.
 
-Normalization notes: `be'enan` is stored as `be·enan` (apostrophe to · per the repo convention the PO confirmed for be'en = be·en; the `-an` is not glossed). `mitim` is stored as typed, not folded into `mit·am`.
+Normalization notes: `be'enan` is stored as `be·enan` (apostrophe to · per the repo convention the PO confirmed for be'en = be·en; the `-an` is not glossed). **Directly confirmed by the Project Owner later the same day (verbatim "be'enan=be.enan"):** the stored spelling `be·enan` is correct. `mitim` is stored as typed, not folded into `mit·am`.
 
 Still unconfirmed (no data created for them): whether `mitim` is a spelling variant of `mit·am`, and the standalone meaning of `rarasa`. No standalone `rarasa` or `mitim` row was added.
 

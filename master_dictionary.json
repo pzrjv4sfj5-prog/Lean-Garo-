@@ -78604,7 +78604,7 @@
   {
     "english": "the pork meat has a lot of fat",
     "garo": "Wak be·enan mitim rarasa",
-    "notes": "variant/VERIFIED/HIGH — Project Owner direct in chat (first form 2026-09-25 via Claude B, spelling of rarasa confirmed 2026-10-16: \"rarasa=rarasa\"; NV-167). No transcript. Second acceptable form, typed by the PO as \"Wak be'enan mitim rarasa\"; apostrophe normalized to · per repo convention (PO confirmed be'en = be·en), so be'enan -> be·enan. `mitim` and `rarasa` kept exactly as typed; `mitim` not normalized to mit·am (variant status unconfirmed). Not glossed word-by-word.",
+    "notes": "variant/VERIFIED/HIGH — Project Owner direct in chat (first form 2026-09-25 via Claude B, spelling of rarasa confirmed 2026-10-16: \"rarasa=rarasa\"; NV-167). No transcript. Second acceptable form, typed by the PO as \"Wak be'enan mitim rarasa\"; apostrophe normalized to · per repo convention (PO confirmed be'en = be·en), so be'enan -> be·enan; PO directly confirmed this normalization 2026-10-16: \"be'enan=be.enan\" (NV-167). `mitim` and `rarasa` kept exactly as typed; `mitim` not normalized to mit·am (variant status unconfirmed). Not glossed word-by-word.",
     "confidence": "verified_high"
   }
 ]
