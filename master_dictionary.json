@@ -78604,7 +78604,25 @@
   {
     "english": "the pork meat has a lot of fat",
     "garo": "Wak be·enan mitim rarasa",
-    "notes": "variant/VERIFIED/HIGH — Project Owner direct in chat (first form 2026-09-25 via Claude B, spelling of rarasa confirmed 2026-10-16: \"rarasa=rarasa\"; NV-167). No transcript. Second acceptable form, typed by the PO as \"Wak be'enan mitim rarasa\"; apostrophe normalized to · per repo convention (PO confirmed be'en = be·en), so be'enan -> be·enan; PO directly confirmed this normalization 2026-10-16: \"be'enan=be.enan\" (NV-167). `mitim` and `rarasa` kept exactly as typed; `mitim` not normalized to mit·am (variant status unconfirmed). Not glossed word-by-word.",
+    "notes": "SUPERSEDED — spelling corrected by Project Owner direct in chat 2026-10-16 (NV-168): \"Mitam is the right spelling\", so `mitim` was a misspelling of `mit·am`. Replaced by 'Wak be·enan mit·am rarasa'. Retained per retain-and-tag. Earlier provenance: NV-167.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "the pork meat has a lot of fat",
+    "garo": "Wak be·enan mit·am rarasa",
+    "notes": "variant/VERIFIED/HIGH — Project Owner direct in chat 2026-10-16 (NV-168). No transcript. Second acceptable form of the sentence (first given 2026-09-25 as typed 'Wak be'enan mitim rarasa'); `mitim` corrected to `mit·am` and `be'enan` to `be·enan` (both confirmed by the PO 2026-10-16); `rarasa` as typed. Not glossed word-by-word beyond rarasa = a lot (NV-168).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "a lot",
+    "garo": "bang·a",
+    "notes": "VERIFIED/HIGH — Project Owner direct in chat 2026-10-16 (NV-168). No transcript. Basis: PO said rarasa 'means a lot, same like bang·a', and bang·a is the quantifier in the PO-confirmed sentence 'Wak be·en mit·am bang·a' (the pork meat has a lot of fat). Primary over rarasa: ordering/consistency choice (matches existing many/much -> bang·a), not a native ranking. Existing unverified 'many'/'much' rows untouched.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "a lot",
+    "garo": "rarasa",
+    "notes": "variant/VERIFIED/HIGH — Project Owner direct in chat 2026-10-16 (NV-168). No transcript. Verbatim: \"rarasa= means a lot, same like bang·a\". Spelling confirmed 'rarasa' (NV-167). Accepted alternate to bang·a.",
     "confidence": "verified_high"
   }
 ]

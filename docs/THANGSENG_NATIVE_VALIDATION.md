@@ -7640,5 +7640,13 @@ Applied: the sentence "the pork meat has a lot of fat" now has two master rows, 
 
 Normalization notes: `be'enan` is stored as `be·enan` (apostrophe to · per the repo convention the PO confirmed for be'en = be·en; the `-an` is not glossed). **Directly confirmed by the Project Owner later the same day (verbatim "be'enan=be.enan"):** the stored spelling `be·enan` is correct. `mitim` is stored as typed, not folded into `mit·am`.
 
-Still unconfirmed (no data created for them): whether `mitim` is a spelling variant of `mit·am`, and the standalone meaning of `rarasa`. No standalone `rarasa` or `mitim` row was added.
+Still unconfirmed (no data created for them): whether `mitim` is a spelling variant of `mit·am`, and the standalone meaning of `rarasa`. No standalone `rarasa` or `mitim` row was added. **RESOLVED the same day by NV-168:** `mitim` was a misspelling of `mit·am`, and `rarasa` = "a lot" like `bang·a`.
+
+## NV-168 (2026-10-16, Project Owner direct chat answer)
+
+Source: Project Owner in chat, no transcript; direct statement counts as the citation. Verbatim: "1. Mitam is the right spelling, rarasa= means a lot, same like bang·a". Answers the two questions left open by NV-167.
+
+- **`mitim` is a misspelling; `mit·am` is correct.** Row `Wak be·enan mitim rarasa` retained and tagged SUPERSEDED; new variant row `Wak be·enan mit·am rarasa` added (be·enan confirmed in NV-167). Primary for the sentence is unchanged: `Wak be·en mit·am bang·a`.
+- **`rarasa` = "a lot", same as `bang·a`.** New master rows for the key `a lot`: `bang·a` (verified_high, primary) and `rarasa` (variant/VERIFIED/HIGH). `bang·a` is verified for "a lot" on two grounds: the PO's equation with rarasa, and the PO-confirmed sentence that already uses it. The key is allowlisted as an intentional cited pair. Primary is an ordering and consistency choice, not a native ranking.
+- **Not changed:** existing unverified `many` / `much` / `lots` rows and the `many` -> `bang·a` correction. The PO's answer was about "a lot" only. Whether `rarasa` also covers many/much is not established.
 
