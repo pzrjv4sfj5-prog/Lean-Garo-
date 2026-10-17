@@ -50,7 +50,7 @@ import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
 import { countNoun, countNounWithClassifier, parseCountingPhrase, getClassifier, isUnverifiedCompoundGuess } from './garo_classifier.js';
 import { toGaroNumber as toGaroNumberBare } from './number_engine.js';
-import { corrections, normalizeEntry, EN_INDEX, lookupGaro } from './lookupEngine.js';
+import { corrections, normalizeEntry, EN_INDEX, lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { applyNegation } from './morphologyEngine.js';
 import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js';
 // analyzeGrammar, tryWithoutGijaConstruction extracted to
@@ -129,6 +129,18 @@ export async function translate(input) {
   // initial capital ('Nok', 'Chon·a'). Only the sentence-initial word keeps it.
   if (result && result.method === 'sov-assembly' && typeof result.garo === 'string') {
     result = { ...result, garo: result.garo.split(' ').map((w, i) => (i === 0 ? w : w.charAt(0).toLowerCase() + w.slice(1))).join(' ') };
+  }
+  // R-b (Claude A audit 2026-09-28 / RULE-029, verified high, four independent verb roots:
+  // Song·bo, Sengbo, sandibo, cha·bo): a bare single-verb command takes -bo in place of
+  // the citation-form final -a. Scoped to one English verb + '!' that fell through to
+  // sov-assembly with a plain -a form; exact rows and inflected forms are untouched.
+  {
+    const m = String(input).trim().match(/^([A-Za-z]+)!$/);
+    if (m && result && result.method === 'sov-assembly' && typeof result.garo === 'string'
+        && (VERB_LEMMAS.has(m[1].toLowerCase()) || !!lookupGaro('to ' + m[1].toLowerCase())) && !result.garo.includes(' ')
+        && /a$/i.test(result.garo) && !/(enga|aha|jok|gen|jawa|ja|na)$/i.test(result.garo)) {
+      result = { ...result, garo: result.garo.replace(/a$/i, 'bo'), method: 'imperative-bo' };
+    }
   }
   if (!result || typeof result.garo !== 'string' || !result.garo.includes('[UNKNOWN]')) return result;
   if (result.method === 'passthrough') {

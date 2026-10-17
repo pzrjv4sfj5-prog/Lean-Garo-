@@ -68,3 +68,17 @@ test('mit·am is fat (Project Owner 2026-10-16), never "some"', async () => {
     assert.ok(!(await translate(input)).garo.toLowerCase().includes('mit·am'), input);
   }
 });
+
+test('R-d: negative "going to the market" keeps its verb (determiner-led lemma is not a particle verb)', async () => {
+  for (const input of ['I am not going to the market', 'he is not going to the river', 'I was not going to the market']) {
+    const r = await translate(input);
+    assert.ok(/Re·angjawa$/.test(r.garo), `${input} -> ${r.garo}`);
+  }
+  assert.equal((await translate('I am going to the market')).garo, 'Anga bajalchi re·angenga');
+});
+
+test('R-b / RULE-029: bare single-verb command takes -bo (cook! -> Song·bo)', async () => {
+  assert.equal((await translate('cook!')).garo, 'Song·bo');
+  assert.equal((await translate('eat!')).garo, 'Cha·bo!'); // exact row untouched
+  assert.ok(!/bo$/.test((await translate('big!')).garo)); // adjectives untouched
+});

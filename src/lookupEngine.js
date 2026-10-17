@@ -129,6 +129,10 @@ for (const key of Object.keys(compiledDictRaw)) {
   if (!key.startsWith('to ')) continue;
   const lemma = key.slice(3).split('(')[0].trim().toLowerCase();
   if (lemma.split(/\s+/).length !== 2) continue;
+  // 'to the market' (a destination phrase) is not a particle verb: a determiner-led
+  // lemma made 'going to the market' read 'going' as a pure auxiliary and dropped
+  // the verb in the negative (R-d, Claude B 2026-10-16).
+  if (/^(the|a|an|my|your|his|her|its|our|their|this|that|these|those|some|any)$/.test(lemma.split(/\s+/)[0])) continue;
   const garo = normalizeEntry(compiledDictRaw[key])?.garo;
   if (garo && !MULTI_WORD_VERB_LEMMAS.has(lemma)) MULTI_WORD_VERB_LEMMAS.set(lemma, garo);
 }
