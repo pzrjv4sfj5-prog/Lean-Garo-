@@ -78610,8 +78610,8 @@
   {
     "english": "the pork meat has a lot of fat",
     "garo": "Wak be·enan mit·am rarasa",
-    "notes": "variant/VERIFIED/HIGH — Project Owner direct in chat 2026-10-16 (NV-168). No transcript. Second acceptable form of the sentence (first given 2026-09-25 as typed 'Wak be'enan mitim rarasa'); `mitim` corrected to `mit·am` and `be'enan` to `be·enan` (both confirmed by the PO 2026-10-16); `rarasa` as typed. Not glossed word-by-word beyond rarasa = a lot (NV-168).",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — WITHDRAWN FROM RUNTIME by Project Owner instruction 2026-10-16 (\"don't use rarasa\", NV-168 addendum). Not a correction: the PO confirmed rarasa = a lot (NV-168); this is a policy hold. Retained per retain-and-tag, not shipped. Original provenance: Project Owner direct in chat 2026-10-16 (NV-168). No transcript. Second acceptable form of the sentence (first given 2026-09-25 as typed 'Wak be'enan mitim rarasa'); `mitim` corrected to `mit·am` and `be'enan` to `be·enan` (both confirmed by the PO 2026-10-16); `rarasa` as typed. Not glossed word-by-word beyond rarasa = a lot (NV-168).",
+    "confidence": "superseded"
   },
   {
     "english": "a lot",
@@ -78622,7 +78622,7 @@
   {
     "english": "a lot",
     "garo": "rarasa",
-    "notes": "variant/VERIFIED/HIGH — Project Owner direct in chat 2026-10-16 (NV-168). No transcript. Verbatim: \"rarasa= means a lot, same like bang·a\". Spelling confirmed 'rarasa' (NV-167). Accepted alternate to bang·a.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — WITHDRAWN FROM RUNTIME by Project Owner instruction 2026-10-16 (\"don't use rarasa\", NV-168 addendum). Not a correction: the PO confirmed rarasa = a lot (NV-168); this is a policy hold. Retained per retain-and-tag, not shipped. Original provenance: Project Owner direct in chat 2026-10-16 (NV-168). No transcript. Verbatim: \"rarasa= means a lot, same like bang·a\". Spelling confirmed 'rarasa' (NV-167). Accepted alternate to bang·a.",
+    "confidence": "superseded"
   }
 ]
