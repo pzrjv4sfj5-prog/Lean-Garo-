@@ -21099,7 +21099,16 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "SUPERSEDED — Project Owner direct in chat 2026-10-16: mit·am means fat (pork fat), not some. Prior variant/VERIFIED/HIGH 'Some' gloss had no citation text. No replacement Garo for 'some' asserted (honest gap). Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "fat",
+    "garo": "mit·am",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "Project Owner direct in chat 2026-10-16: mit·am is fat (pork fat); consistent with corrections.json 'the pork meat has a lot of fat' = Wak be·en mit·am bang·a. No transcript.",
     "confidence": "verified_high"
   },
   {

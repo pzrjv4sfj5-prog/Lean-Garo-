@@ -392,7 +392,8 @@ function classifierTail(classifier, n, spaced = false) {
   if (n > 19) return null; // unconfirmed classifier for 20-99 -- don't guess
   const suffix = getClassifierSuffix(n);
   if (suffix === null) return null;
-  if (spaced) return `${classifier} ${suffix}`;
+  // Sentence-initial/standalone keeps the capital; anywhere else it is lowercase (Project Owner 2026-10-16).
+  if (spaced) return `${classifier} ${suffix.charAt(0).toLowerCase() + suffix.slice(1)}`;
   // R1 (Claude A audit 2026-09-28 / handoff 2026-10-16): teens table entries
   // are capitalised ('Chi·sa') for the bare-number form; fused onto a
   // classifier they must not leave a mid-word capital ('mang·Chi·sa').
