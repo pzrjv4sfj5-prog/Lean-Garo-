@@ -55,3 +55,6 @@ Recommendation: the examples are the rules' own evidence, so before adding entri
 1. Fix the extractor (B1), regenerate the report and baseline.
 2. Project Owner decisions: RULE-007 `cha·na` vs `cha·ha`; the A3 sense splits.
 3. Thangseng relay batch: A2 (5 keys), A3 (3 keys), plus uncited B2 items.
+
+## D. Update 2026-10-16 (later): extractor fix applied (Project Owner approved)
+`scripts/audit-rule-conformance.mjs` now splits `X / Y` into two examples and strips observed English lead-ins (`vs.`, leading commas, `go to the shop`, `native reply confirmed as`). Result: 100 examples (was 97), 57 match (was 53), **17 orphans (was 23)**, 0 mismatches outside the regenerated baseline. This corrects the earlier "would drop to 15" estimate: 3 of the 8 fragment cases (`nokchi re·anggen`, `Antichi re·angbo`, `re·angja`) are real orphans once cleaned, and only 6 were false (`cha·manaha` plus the 5 halves of the RULE-050 pairs). The RULE-050 `ama` halves now show as baselined mismatches because the runtime ships only `man·a` (both are native-valid, NV-117).

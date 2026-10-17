@@ -26,13 +26,21 @@ async function main() {
     for (const e of ex) {
       const s = typeof e === 'string' ? e : (e && e.garo && e.english ? `${e.garo} = "${e.english}"` : '');
       for (const m of s.matchAll(/([^=;"“”]+?)\s*=\s*["“]([^"”]+)["”]/g)) {
-        const garo = m[1].replace(/^[\s'`*]+|[\s'`*]+$/g, '').replace(/^.*?:\s*/, '');
+        const garoRaw = m[1].replace(/^[\s'`*]+|[\s'`*]+$/g, '').replace(/^.*?:\s*/, '');
         const en = m[2].split('/')[0].trim();
-        if (!garo || garo.length > 80 || /[→(]/.test(garo)) continue;
-        let out = '', meth = '', conf = 0;
-        try { const o = await translate(en); out = o.garo || ''; meth = o.method; conf = o.confidence; } catch { out = 'ERR'; }
-        rows.push({ rule: d.id, en, garo, out, meth, conf, match: N(out) === N(garo),
-          present: inMaster.has(N(garo)) || layers.includes(N(garo)) });
+        if (!garoRaw || garoRaw.length > 80 || /[→(]/.test(garoRaw)) continue;
+        // Extractor hygiene (2026-10-16): "X / Y" is two examples, and leading prose
+        // (vs., commas, the observed English lead-in words) is not part of the Garo.
+        // Conservative explicit word list on purpose; no linguistic content involved.
+        for (const part of garoRaw.split(/\s+\/\s+/)) {
+          const garo = part.replace(/^[\s,]*(?:(?:vs\.?|go|to|the|shop|native|reply|confirmed|as)[\s,]+)*/i, '')
+            .replace(/^[\s'`*.]+|[\s'`*]+$/g, '');
+          if (!garo) continue;
+          let out = '', meth = '', conf = 0;
+          try { const o = await translate(en); out = o.garo || ''; meth = o.method; conf = o.confidence; } catch { out = 'ERR'; }
+          rows.push({ rule: d.id, en, garo, out, meth, conf, match: N(out) === N(garo),
+            present: inMaster.has(N(garo)) || layers.includes(N(garo)) });
+        }
       }
     }
   }
