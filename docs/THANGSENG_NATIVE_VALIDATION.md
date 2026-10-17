@@ -4955,6 +4955,8 @@ Check A–F violations.
 
 ## NV-089 (2026-08-21 relay, processed 2026-08-22, Claude A)
 
+> **PARTLY SUPERSEDED by NV-166 (2026-10-16):** the rejection of `Sengbo` as 'stop' no longer holds for the imperative `stop!` (Project Owner: `Sengbo` or `Damo`). `stop` = `dontonga` as the verb stands.
+
 Source: `docs/THANGSENG_RELAY_TABLE_20260821B.md` (Claude C, WhatsApp
 transcript 2026-08-21 afternoon, Tridip↔Thangseng, ~150 rows cross-checked
 against live `master_dictionary.json`). Processed per SESSION_BOOTSTRAP.md
@@ -7621,3 +7623,11 @@ Applied: master rows retained and tagged SUPERSEDED, new VERIFIED/HIGH rows adde
 - **`cha·ha` vs `cha·aha`:** asked whether the PO's `cha·ha` ("I ate") is shorthand for the verified `Anga cha·aha` (NV-089), the Project Owner answered "yes". Resolved as shorthand; no dictionary row changed.
 - **Examples the PO gave with that answer** (verbatim, dots read as raka): "Who ate? = sawa cha.a? / What did you eat? = Na.a maiko cha.a? / Where did you eat? = Na.a bano cha.a?" These are **already on file** as VERIFIED/HIGH rows from NV-158 (Thangseng WhatsApp transcript via Tridip, 2026-09-19): `Sawa cha·a?`, `Na·a maiko cha·a?`, `Na·a bano cha·a?`. No new row, no conflict. They show the past wh-question taking bare `-a`, not `-aha`. Note this differs from the declarative `Anga cha·aha` (NV-089); the PO's "yes" and these examples were not further reconciled by Claude A.
 - **`mit·am` = fat:** the Project Owner confirmed again ("Yes it's Fat"). Already applied by Claude B in d2250a7 (Some row superseded, `fat` = `mit·am` verified_high, `some` phrase map dropped). Claude A made no further change. Still open: the second pork-fat form `Wak be'enan mitim rarasa` (normalized spelling of `rarasa` and which form is primary).
+
+## NV-166 (2026-10-16, Project Owner direct chat answers)
+
+Source: Project Owner in chat, no transcript; direct statement counts as the citation (standing rule). Verbatim: "mit·am = Fat , Stop= Sengbo or Damo".
+
+- **`stop!` = `Sengbo` or `Damo`.** Project Owner direct chat answer 2026-10-16 (NV-166): "Stop = Sengbo or Damo", i.e. imperative stop! has two valid forms, `Sengbo` and `Da·mo`. Reverses NV-089's explicit rejection of `Sengbo` as 'stop' for the imperative sense only. `stop` = `dontonga` (NV-089) is retained as the verb. Shipped primary is `Sengbo!` (PO listed it first; RULE-029 example) and `Damo!` is the accepted alternate; that primary is an ordering choice, not a native ranking. Applied: master rows `stop!` = `Sengbo!` (primary) and `Damo!` (variant/VERIFIED/HIGH); `stop!` allowlisted in known_dictionary_conflicts.json as an intentional cited pair; RULE-029 flag resolved; RULE-036 extended. Live: `stop!` gives `Sengbo!`. Existing rows untouched: `stop`=`dontonga`, `you stop`=`Sengbo`, `damo`=`wait/stop`, `wait`=`Damo/Sengbo`.
+- **`mit·am` = fat:** third confirmation; `mit·am` is the form to ship (already applied by Claude B in d2250a7). The variant `mitim` and the spelling of `rarasa` in `Wak be'enan mitim rarasa` remain unconfirmed.
+- **Not covered by this answer:** compound imperatives such as `Stop eating!` (engine still gives `dontonga cha·enga`; Claude B lane), `search for him!`, and the `Da·mo, anga mi cha·kuna` orphan (RULE-036).

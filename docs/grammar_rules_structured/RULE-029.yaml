@@ -35,3 +35,7 @@ corrections:
       functions now has no remaining example on file; needs a native check
       before the description is changed. Source: NV-165 (Project Owner relay of
       Thangseng final validation, 2026-10-16).
+  - date: "2026-10-16"
+    note: >-
+      RESOLVED the Sengbo glossing flag (stop! vs wait!): both senses are valid.
+      Project Owner direct chat answer 2026-10-16 (NV-166): "Stop = Sengbo or Damo", i.e. imperative stop! has two valid forms, `Sengbo` and `Da·mo`. Reverses NV-089's explicit rejection of `Sengbo` as 'stop' for the imperative sense only. `stop` = `dontonga` (NV-089) is retained as the verb. Shipped primary is `Sengbo!` (PO listed it first; RULE-029 example) and `Damo!` is the accepted alternate; that primary is an ordering choice, not a native ranking.

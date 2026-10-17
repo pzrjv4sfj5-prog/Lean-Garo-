@@ -78582,5 +78582,17 @@
     "garo": "Hai cha·bo",
     "notes": "VERIFIED/HIGH — Project Owner chat 2026-10-16, stated as Thangseng's final validation (NV-165): Hai cha·bo = \"go and eat\" / \"eat\" (imperative), not \"let's eat\". Added on Project Owner approval 2026-10-16.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "stop!",
+    "garo": "Sengbo!",
+    "notes": "VERIFIED/HIGH — Project Owner direct chat 2026-10-16 (NV-166): \"Stop = Sengbo or Damo\" (imperative stop!). Reverses NV-089's rejection of Sengbo for 'stop' for the imperative sense only; 'stop' = dontonga (NV-089) retained for the verb. Listed first by the PO and matches RULE-029's 'Sengbo = stop!' example, so shipped as primary; this is an ordering choice, not a native ranking.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "stop!",
+    "garo": "Damo!",
+    "notes": "variant/VERIFIED/HIGH — Project Owner direct chat 2026-10-16 (NV-166): \"Stop = Sengbo or Damo\" (imperative stop!). Reverses NV-089's rejection of Sengbo for 'stop' for the imperative sense only; 'stop' = dontonga (NV-089) retained for the verb. Accepted alternate to Sengbo!; also consistent with existing corrections 'damo' = 'wait/stop'.",
+    "confidence": "verified_high"
   }
 ]

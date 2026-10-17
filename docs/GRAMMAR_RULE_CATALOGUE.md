@@ -325,6 +325,7 @@ labeling gap in this rule's example, not a factual conflict.
 **Confidence:** High.
 **Launch Priority:** P0.
 **2026-10-16 Flag (NV-165):** RULE-007 no longer treats `-bo` as a hortative alternative (`Hai cha·bo` = "go and eat"). The claim here that one suffix serves both imperative and hortative functions has no example left on file; needs native check before the description changes.
+**2026-10-16 Resolution (NV-166):** the `Sengbo` stop!/wait! glossing flag is resolved: both senses valid. Project Owner: "Stop = Sengbo or Damo" (imperative). `stop` = `dontonga` (NV-089) stays as the verb.
 
 ---
 ### RULE-030 — `re·` vs. `re·ang` for "Go" [RESOLVED]
@@ -515,6 +516,7 @@ cases).
 **Validation Status:** Verified.
 **Confidence:** High for `Da·mo` specifically; Low/Unknown for the category's full membership (only one confirmed member so far — "class exists" is High confidence, "class is fully enumerated" is not).
 **Launch Priority:** P0 — directly explains a live, confirmed-wrong translator output (see engineering handoff, `docs/PENDING_REGRESSION_CASES.md`).
+**2026-10-16 Extension (NV-166):** `Da·mo` is also valid as imperative "stop!" alongside `Sengbo`; still a fixed expression with no suffix.
 
 ---
 ### RULE-037 — `a'`/`an'`/`am'` Compound Prefix (Distinct from Raka)

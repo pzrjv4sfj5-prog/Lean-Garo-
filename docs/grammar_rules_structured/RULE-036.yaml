@@ -43,6 +43,10 @@ native_notes: >-
   "Da·mo is used when you want someone to wait for you. It cannot be
   changed into any other form." Confirmed in response to a direct
   question about the engine's actual (wrong) output.
-last_updated: "2026-07-26"
+last_updated: "2026-10-16"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-036"
+corrections:
+  - date: "2026-10-16"
+    note: >-
+      EXTENDED: `Da·mo` is also valid as imperative "stop!" alongside `Sengbo` (not only "wait!"). Still a fixed expression with no suffix. Project Owner direct chat answer 2026-10-16 (NV-166): "Stop = Sengbo or Damo", i.e. imperative stop! has two valid forms, `Sengbo` and `Da·mo`. Reverses NV-089's explicit rejection of `Sengbo` as 'stop' for the imperative sense only. `stop` = `dontonga` (NV-089) is retained as the verb. Shipped primary is `Sengbo!` (PO listed it first; RULE-029 example) and `Damo!` is the accepted alternate; that primary is an ordering choice, not a native ranking.
