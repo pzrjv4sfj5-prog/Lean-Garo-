@@ -78594,5 +78594,17 @@
     "garo": "Damo!",
     "notes": "variant/VERIFIED/HIGH — Project Owner direct chat 2026-10-16 (NV-166): \"Stop = Sengbo or Damo\" (imperative stop!). Reverses NV-089's rejection of Sengbo for 'stop' for the imperative sense only; 'stop' = dontonga (NV-089) retained for the verb. Accepted alternate to Sengbo!; also consistent with existing corrections 'damo' = 'wait/stop'.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "the pork meat has a lot of fat",
+    "garo": "Wak be·en mit·am bang·a",
+    "notes": "VERIFIED/HIGH — Project Owner direct in chat (first form 2026-09-25 via Claude B, spelling of rarasa confirmed 2026-10-16: \"rarasa=rarasa\"; NV-167). No transcript. Matches the shipped corrections.json override. Primary: ordering choice (first form given, and PO 2026-10-16 mit·am = fat), not a native ranking.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the pork meat has a lot of fat",
+    "garo": "Wak be·enan mitim rarasa",
+    "notes": "variant/VERIFIED/HIGH — Project Owner direct in chat (first form 2026-09-25 via Claude B, spelling of rarasa confirmed 2026-10-16: \"rarasa=rarasa\"; NV-167). No transcript. Second acceptable form, typed by the PO as \"Wak be'enan mitim rarasa\"; apostrophe normalized to · per repo convention (PO confirmed be'en = be·en), so be'enan -> be·enan. `mitim` and `rarasa` kept exactly as typed; `mitim` not normalized to mit·am (variant status unconfirmed). Not glossed word-by-word.",
+    "confidence": "verified_high"
   }
 ]

@@ -7631,3 +7631,14 @@ Source: Project Owner in chat, no transcript; direct statement counts as the cit
 - **`stop!` = `Sengbo` or `Damo`.** Project Owner direct chat answer 2026-10-16 (NV-166): "Stop = Sengbo or Damo", i.e. imperative stop! has two valid forms, `Sengbo` and `Da·mo`. Reverses NV-089's explicit rejection of `Sengbo` as 'stop' for the imperative sense only. `stop` = `dontonga` (NV-089) is retained as the verb. Shipped primary is `Sengbo!` (PO listed it first; RULE-029 example) and `Damo!` is the accepted alternate; that primary is an ordering choice, not a native ranking. Applied: master rows `stop!` = `Sengbo!` (primary) and `Damo!` (variant/VERIFIED/HIGH); `stop!` allowlisted in known_dictionary_conflicts.json as an intentional cited pair; RULE-029 flag resolved; RULE-036 extended. Live: `stop!` gives `Sengbo!`. Existing rows untouched: `stop`=`dontonga`, `you stop`=`Sengbo`, `damo`=`wait/stop`, `wait`=`Damo/Sengbo`.
 - **`mit·am` = fat:** third confirmation; `mit·am` is the form to ship (already applied by Claude B in d2250a7). The variant `mitim` and the spelling of `rarasa` in `Wak be'enan mitim rarasa` remain unconfirmed.
 - **Not covered by this answer:** compound imperatives such as `Stop eating!` (engine still gives `dontonga cha·enga`; Claude B lane), `search for him!`, and the `Da·mo, anga mi cha·kuna` orphan (RULE-036).
+
+## NV-167 (2026-10-16, Project Owner direct chat answer)
+
+Source: Project Owner in chat, no transcript; direct statement counts as the citation. Verbatim: "rarasa=rarasa". Answers the open question from Claude B's 2026-09-25 session and handoff: the normalized spelling of `rarasa` in the second pork-fat form `Wak be'enan mitim rarasa`. Reading: the spelling is `rarasa` exactly as typed, no raka dot, no change.
+
+Applied: the sentence "the pork meat has a lot of fat" now has two master rows, `Wak be·en mit·am bang·a` (primary, matches the shipped corrections.json override, runtime output unchanged) and `Wak be·enan mitim rarasa` (variant/VERIFIED/HIGH). Primary is an ordering choice, not a native ranking. Key allowlisted in known_dictionary_conflicts.json as an intentional cited pair.
+
+Normalization notes: `be'enan` is stored as `be·enan` (apostrophe to · per the repo convention the PO confirmed for be'en = be·en; the `-an` is not glossed). `mitim` is stored as typed, not folded into `mit·am`.
+
+Still unconfirmed (no data created for them): whether `mitim` is a spelling variant of `mit·am`, and the standalone meaning of `rarasa`. No standalone `rarasa` or `mitim` row was added.
+
