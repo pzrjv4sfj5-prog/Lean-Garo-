@@ -165,6 +165,13 @@ const REGRESSION_CASES = [
   // the RC-CANDIDATE-015 fix immediately below.
   { in: 'wait', expectGaro: 'Damo', expectMethod: ['correction'] },
 
+  // RULE-036 orphan example promoted (2026-10-18, Claude B): Thangseng confirmed (relayed by PO)
+  // "Da·mo, anga mi cha·kuna" = "Wait, let me eat" (the English gloss
+  // in the brackets is the correct one). Previously fell through to
+  // "Damo [UNKNOWN] Angko Chaa".
+  { in: 'wait, let me eat', expectGaro: 'Da·mo, anga mi cha·kuna', expectMethod: ['correction'] },
+  { in: 'Wait let me eat.', expectGaro: 'Da·mo, anga mi cha·kuna', expectMethod: ['correction'] },
+
   // RC-CANDIDATE-015 fix (2026-07-25, Claude B): master_dictionary.json's
   // "wait"/"to wait" headwords were a literal unresolved "Damo / Sengbo"
   // placeholder (never a real value) — corrected to the native-confirmed
