@@ -172,6 +172,12 @@ const REGRESSION_CASES = [
   { in: 'wait, let me eat', expectGaro: 'Da·mo, anga mi cha·kuna', expectMethod: ['correction'] },
   { in: 'Wait let me eat.', expectGaro: 'Da·mo, anga mi cha·kuna', expectMethod: ['correction'] },
 
+  // Thangseng relay 2026-10-18 (via Tridip WhatsApp): subject-position
+  // plurals take -rang. Exact sentences only; general subject-slot -rang
+  // generation (noun-subject sov-assembly path) is NOT built, needs PO go-ahead.
+  { in: 'dogs eat rice', expectGaro: 'Achakrang mi·ko cha·a', expectMethod: ['correction'] },
+  { in: 'my books are heavy', expectGaro: 'Angni lekkarang jria', expectMethod: ['correction'] },
+
   // RC-CANDIDATE-015 fix (2026-07-25, Claude B): master_dictionary.json's
   // "wait"/"to wait" headwords were a literal unresolved "Damo / Sengbo"
   // placeholder (never a real value) — corrected to the native-confirmed
