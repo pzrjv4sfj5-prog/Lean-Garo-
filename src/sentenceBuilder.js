@@ -37,7 +37,62 @@ import { lookupPhrase } from './data/phrase_maps.js';
 import { lookup, lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { applyNegation, applyTense, stripToStem, getConjugationRoot } from './morphologyEngine.js';
 import { STOP_WORDS, AUXILIARY_SKIP, MID_JOIN_CONNECTIVES } from './normalizationEngine.js';
+import { NUMBER_WORDS, singularize } from './garo_classifier.js';
 import { translate } from './translationEngine.js';
+
+// 2026-10-18 (Claude B): subject-position -rang plural generation for the
+// noun-subject fallback. Authority: Claude A ruling
+// docs/CLAUDE_A_RANG_SUBJECT_BARE_RULING_20261018.md; Thangseng relay
+// 2026-09-30 Q2 ("-rang can be added to any countable nouns to make it
+// plural") and 2026-10-18 ("Achakrang miko cha.a." = dogs eat rice).
+// Counting and plural are different: a numeral anywhere in the sentence
+// switches this off (counted nouns belong to the classifier path), and bare
+// standalone plurals never reach this function's subject logic. Conservative
+// by design; every uncertainty resolves to "no -rang" (status quo):
+//  - candidate must be the first content word, or follow only possessives/
+//    quantifier determiners (my cats, many dogs), i.e. subject position,
+//    and sit before the verb (or in a verbless/copular clause);
+//  - the English word must be a plural (singularize() changes it) whose
+//    singular is not a verb lemma (eats, runs) and is not a known
+//    singular-looking -s word (news);
+//  - the plural must resolve to the SAME Garo as its singular, i.e. no
+//    lexicalized plural exists (children, friends are left as the data has
+//    them); never when the word already ends in -rang;
+//  - plain concatenation, raka dot kept (Achak -> Achakrang).
+const SUBJECT_RANG_DETERMINERS = new Set(['my', 'your', 'his', 'her', 'our', 'their', 'many', 'some', 'several', 'all', 'few', 'these', 'those']);
+const NOT_PLURAL_S_WORDS = new Set(['news', 'thanks', 'series', 'species', 'means', 'always', 'sometimes', 'perhaps', 'besides', 'yes', 'this', 'his', 'its', 'us', 'has', 'does', 'goes', 'was', 'is', 'gas', 'bus', 'glass', 'class']);
+function subjectRangForm(eng, garo, idx, pairs, lastVerbIdx, words) {
+  if (words.some(w => NUMBER_WORDS[w.toLowerCase().replace(/[^a-z]/g, '')] !== undefined)) return garo;
+  if (!garo || garo === '[UNKNOWN]' || /rang$/i.test(garo)) return garo;
+  if (lastVerbIdx !== -1 && idx > lastVerbIdx) return garo;
+  // A composed sentence only: a predicate must follow the candidate (a
+  // content word after it) and the clause needs a verb or copula. Bare
+  // noun phrases ("dogs", "my books") are lookups, not sentences, and stay
+  // unchanged (Claude A ruling: bare plurals need their own citation).
+  if (idx >= pairs.length - 1) return garo;
+  // Some intransitives (sleep, run) are not in VERB_LEMMAS and so leave
+  // lastVerbIdx at -1; a following word whose Garo carries the same verb-final
+  // shape this function already uses as its fallback verb signal counts too.
+  const hasPredicate = lastVerbIdx !== -1
+    || words.some(w => /^(am|is|are|was|were|be|been|being)$/.test(w.toLowerCase().replace(/[^a-z]/g, '')))
+    || pairs.slice(idx + 1).some(p => /enga$|aha$|gen$|bo$|na$|a$/i.test(String(p.garo)));
+  if (!hasPredicate) return garo;
+  for (let j = 0; j < idx; j++) {
+    const prev = pairs[j].eng.toLowerCase().replace(/[^a-z]/g, '');
+    if (!SUBJECT_RANG_DETERMINERS.has(prev)) return garo;
+  }
+  const lw = eng.toLowerCase().replace(/[^a-z]/g, '');
+  if (lw.length < 4 || NOT_PLURAL_S_WORDS.has(lw)) return garo;
+  // Regular -s/-es/-ies plurals only; suppletive English plurals (people,
+  // men, women, feet) are left exactly as the data has them.
+  if (!lw.endsWith('s')) return garo;
+  const sing = singularize(lw);
+  if (sing === lw || sing.length < 3) return garo;
+  if (VERB_LEMMAS.has(sing) || VERB_LEMMAS.has(lw)) return garo;
+  const singGaro = lookupPhrase(sing) || lookupGaro(sing);
+  if (!singGaro || String(singGaro).toLowerCase() !== String(garo).toLowerCase()) return garo;
+  return garo + 'rang';
+}
 
 export function assembleSentenceSOV(words, isNegative = false, detectedTense = 'present') {
   // RC-CANDIDATE-018 fix, part (b) (2026-07-18, Claude A confirmed
@@ -250,7 +305,7 @@ export function assembleSentenceSOV(words, isNegative = false, detectedTense = '
       verbs.push(getConjugationRoot(lw, t));
       lastVerbIsIrregular = !!(IRREGULAR_VERBS[lw] || IRREGULAR_VERBS[lw.replace(/ing$|ed$|es$|s$/, '')]);
     } else {
-      nonVerbs.push(t);
+      nonVerbs.push(subjectRangForm(eng, t, i, pairs, lastVerbIdx, words));
     }
   });
   // Future-tense suffix attachment (RC-CANDIDATE-018 part b) — same
