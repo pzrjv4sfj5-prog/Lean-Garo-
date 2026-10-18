@@ -120,3 +120,7 @@ declined to do.
 The original ruling and its reasoning above are kept on the record,
 not deleted — it was the correct call on the evidence available on
 2026-08-25.
+
+## Update 2026-10-18 (Claude A)
+
+Subject-position generation authorized and bare plurals held: see `docs/CLAUDE_A_RANG_SUBJECT_BARE_RULING_20261018.md`.
