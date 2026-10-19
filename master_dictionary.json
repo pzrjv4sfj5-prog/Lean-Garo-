@@ -78669,5 +78669,41 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — Thangseng confirmation relayed by the PO 2026-10-18 (RULE-036 orphan example; already in corrections.json, Claude B 0a2ab50). Closes the Da·mo, anga mi cha·kuna question.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "search for him",
+    "garo": "Biko sandibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-170, Project Owner direct chat 2026-10-19 (\"Biko sandibo is fine search for him or look for him\"); labeled Project Owner-confirmed, not a Thangseng quote. Confirms the previously cited Biko sandibo (corrections.json, RULE-029 example) and extends it to both English glosses. Imperative (-bo); not a hortative.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "search for him!",
+    "garo": "Biko sandibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-170, Project Owner direct chat 2026-10-19 (\"Biko sandibo is fine search for him or look for him\"); labeled Project Owner-confirmed, not a Thangseng quote. Confirms the previously cited Biko sandibo (corrections.json, RULE-029 example) and extends it to both English glosses. Imperative (-bo); not a hortative.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "look for him",
+    "garo": "Biko sandibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-170, Project Owner direct chat 2026-10-19 (\"Biko sandibo is fine search for him or look for him\"); labeled Project Owner-confirmed, not a Thangseng quote. Confirms the previously cited Biko sandibo (corrections.json, RULE-029 example) and extends it to both English glosses. Imperative (-bo); not a hortative.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "look for him!",
+    "garo": "Biko sandibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-170, Project Owner direct chat 2026-10-19 (\"Biko sandibo is fine search for him or look for him\"); labeled Project Owner-confirmed, not a Thangseng quote. Confirms the previously cited Biko sandibo (corrections.json, RULE-029 example) and extends it to both English glosses. Imperative (-bo); not a hortative.",
+    "confidence": "verified_high"
   }
 ]

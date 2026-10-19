@@ -7663,3 +7663,10 @@ Source: `docs/THANGSENG_RELAY_ANSWERS_20261018.md` (verbatim). Question: "Dogs e
 - **`lekka` and `Ki·tap` both valid for book.** `book` = `lekka` added as variant/VERIFIED/HIGH; `Ki·tap` stays primary (NV-069). Not a reversal. The `books` row was not promoted.
 - **`mi·ko` orthography:** the native typed `miko` (no dot). Stored as `mi·ko` per the repo object-marker spelling (`Anga mi·ko Cha·a`), as Claude B did. Dot placement is normalization, not a separate native claim.
 - **`Da·mo, anga mi cha·kuna` = "Wait, let me eat"** (Thangseng via PO, 2026-10-18): master row `wait, let me eat` added (Claude B already had it in corrections). RULE-036 orphan resolved.
+
+## NV-170 (2026-10-19, Project Owner direct chat answer)
+
+Source: Project Owner in chat, no transcript; direct statement counts as the citation. Verbatim: "Biko sandibo is fine search for him or look for him". Provenance label: Project Owner-confirmed (not a Thangseng quote). Answers open issue 1 from the 2026-10-17 migration doc.
+
+- **`Biko sandibo` = "search for him" / "look for him"**, imperative. Four master rows added (verified_high): `search for him`, `search for him!`, `look for him`, `look for him!`. The first matches the existing `corrections.json` key byte-for-byte. Runtime: all four now return `Biko sandibo`; before, `search for him!` gave `Sandia bichi` and `look for him` gave `Bichi nibo`.
+- **Not changed:** `search for her` (`Sandia uni`) and `look for her` (`Uni nibo`) still come from the engine; no `her` form was cited. RULE-029's `-bo` imperative-versus-hortative question is untouched. Conformance 64 -> 65/102 (15 orphans, 0 unbaselined).
