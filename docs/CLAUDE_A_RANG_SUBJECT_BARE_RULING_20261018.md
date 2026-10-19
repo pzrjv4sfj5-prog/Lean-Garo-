@@ -25,3 +25,6 @@ Authority: Thangseng relay 2026-09-30 Q2 (`docs/THANGSENG_RELAY_ANSWERS_20260930
 Extend the generation to the subject slot with tests first. Do not touch bare plurals or any dictionary row. If a native example contradicts the rule, stop and flag it.
 
 No `master_dictionary.json`, `corrections.json`, `phrase_maps.js` or engine change in this commit.
+
+## Closed 2026-10-18 (NV-169)
+Thangseng gave `Achakrang miko cha.a.` and `Angni lekkarang jria.`; Claude B built subject-slot generation (`a571fcc`). The PO closed the `-rang` topic. Q-a and Q-b are not being asked. Master rows added in NV-169.

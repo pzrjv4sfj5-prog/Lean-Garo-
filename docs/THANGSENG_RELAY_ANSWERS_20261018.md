@@ -32,3 +32,6 @@ Scope note from Claude B: the `-rang` confirmation is evidence from a SENTENCE (
 - Add `heavy` = `jria` as a native-confirmed row (currently chrim·a and je·et·je·et, both unverified).
 - Tag `book`/`books` with `lekka` as a confirmed variant alongside `Ki·tap`; consider promoting the `books` row from unverified.
 - Engine impact once done: `my book is heavy` / `the books are heavy` will still go through sov-assembly and emit je·et·je·et until the heavy row changes.
+
+## Processed by Claude A (2026-10-18, NV-169)
+Master rows added (verified_high): `dogs eat rice` = `Achakrang mi·ko cha·a`, `my books are heavy` = `Angni lekkarang jria`, `heavy` = `jria` (existing unverified `chrim·a` and `je·et·je·et` retained), `wait, let me eat` = `Da·mo, anga mi cha·kuna`, and `book` = `lekka` as variant/VERIFIED/HIGH (PO: both valid; `Ki·tap` stays primary, an ordering choice). Bare `dogs`/`books` rows untouched (Q-a not asked; `-rang` closed by the PO). One test expectation updated: `my cats are heavy` now `Angni menggorang jria`.

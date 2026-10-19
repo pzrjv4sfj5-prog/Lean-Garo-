@@ -7653,3 +7653,13 @@ Source: Project Owner in chat, no transcript; direct statement counts as the cit
 ### NV-168 addendum (2026-10-16, Project Owner instruction)
 Verbatim: "don't use rarasa, push all no runtime". Read as: `rarasa` must not reach the runtime; everything else is pushed as is. Applied: the two master rows containing `rarasa` (`a lot` = `rarasa`, and `Wak be·enan mit·am rarasa` for the pork-fat sentence) are tagged SUPERSEDED as a policy hold (not a correction; rarasa = a lot stays on record as confirmed in NV-168), so they are not compiled. `compiled_dict_alternates.json` no longer contains `rarasa`. Unchanged: `a lot` = `bang·a` (verified, primary), the shipped pork-fat sentence `Wak be·en mit·am bang·a`, and every other row. If `rarasa` should ever ship, re-promote those two rows.
 
+
+## NV-169 (2026-10-18, Thangseng direct native answer via Tridip WhatsApp relay + PO chat confirmations)
+
+Source: `docs/THANGSENG_RELAY_ANSWERS_20261018.md` (verbatim). Question: "Dogs eat rice and my books ate [are] heavy". Answer: `Achakrang miko cha.a.` / `Angni lekkarang jria.` PO confirmations in chat the same day: `book` = both `lekka` and `Ki·tap` are right; `heavy` = `jria`; "-rang is the plural for dogs: Achakrang". The PO then closed the `-rang` topic.
+
+- **`-rang` on a subject noun is native-attested** (`Achakrang`, plain concatenation). Closes Q-c of `docs/CLAUDE_A_RANG_SUBJECT_BARE_RULING_20261018.md`. Q-a (bare standalone plural) and Q-b (numeral plus `-rang`) were not asked: bare `dogs`/`books` rows and numeral behavior stay as shipped.
+- **`jria` = heavy** (predicate, no copula). New verified row. Runtime: `heavy` -> `jria`, `my cats are heavy` -> `Angni menggorang jria`.
+- **`lekka` and `Ki·tap` both valid for book.** `book` = `lekka` added as variant/VERIFIED/HIGH; `Ki·tap` stays primary (NV-069). Not a reversal. The `books` row was not promoted.
+- **`mi·ko` orthography:** the native typed `miko` (no dot). Stored as `mi·ko` per the repo object-marker spelling (`Anga mi·ko Cha·a`), as Claude B did. Dot placement is normalization, not a separate native claim.
+- **`Da·mo, anga mi cha·kuna` = "Wait, let me eat"** (Thangseng via PO, 2026-10-18): master row `wait, let me eat` added (Claude B already had it in corrections). RULE-036 orphan resolved.

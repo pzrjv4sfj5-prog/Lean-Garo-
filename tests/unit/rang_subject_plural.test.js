@@ -17,7 +17,7 @@ const GENERATED = [
   ['students run', 'Chattrorang kata'],
   ['cows are here', 'Matchurang iano'],
   ['the dogs came', 'Achakrang re·ba·aha'],
-  ['my cats are heavy', 'Angni menggorang je·et·je·et'],
+  ['my cats are heavy', 'Angni menggorang jria'],
   ['many dogs eat rice', 'Bang·a achakrang mi cha·a'],
 ];
 for (const [en, garo] of GENERATED) {

@@ -78624,5 +78624,50 @@
     "garo": "rarasa",
     "notes": "SUPERSEDED — WITHDRAWN FROM RUNTIME by Project Owner instruction 2026-10-16 (\"don't use rarasa\", NV-168 addendum). Not a correction: the PO confirmed rarasa = a lot (NV-168); this is a policy hold. Retained per retain-and-tag, not shipped. Original provenance: Project Owner direct in chat 2026-10-16 (NV-168). No transcript. Verbatim: \"rarasa= means a lot, same like bang·a\". Spelling confirmed 'rarasa' (NV-167). Accepted alternate to bang·a.",
     "confidence": "superseded"
+  },
+  {
+    "english": "dogs eat rice",
+    "garo": "Achakrang mi·ko cha·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-169, Thangseng direct native answer via Tridip WhatsApp relay 2026-10-18 (docs/THANGSENG_RELAY_ANSWERS_20261018.md). Native example of -rang on a subject noun. Thangseng typed miko (no dot); stored as mi·ko per the repo object-marker orthography (same as Anga mi·ko Cha·a), as Claude B did in corrections.json. Dot placement is a normalization, not a separate native claim.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "my books are heavy",
+    "garo": "Angni lekkarang jria",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-169, Thangseng direct native answer via Tridip WhatsApp relay 2026-10-18 13:21-13:22 (docs/THANGSENG_RELAY_ANSWERS_20261018.md). Relay text said \"ate\"; read as \"are\" (typo; PO confirmed jria = heavy). No copula.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "heavy",
+    "garo": "jria",
+    "pos": null,
+    "category": "uncategorized",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-169, Thangseng direct native answer via Tridip WhatsApp relay 2026-10-18 13:21-13:22 (docs/THANGSENG_RELAY_ANSWERS_20261018.md); PO direct chat confirmation 2026-10-18 (\"heavy: jria\"). Existing unverified chrim·a and je·et·je·et retained, not deleted.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "book",
+    "garo": "lekka",
+    "pos": null,
+    "category": "education",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — PO direct chat 2026-10-18: both lekka and Ki·tap are right (two valid native words). Thangseng used lekka in Angni lekkarang jria (NV-169) and in NV-054 sentences. Ki·tap stays primary (NV-069, an ordering choice, not a native ranking).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "wait, let me eat",
+    "garo": "Da·mo, anga mi cha·kuna",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Thangseng confirmation relayed by the PO 2026-10-18 (RULE-036 orphan example; already in corrections.json, Claude B 0a2ab50). Closes the Da·mo, anga mi cha·kuna question.",
+    "confidence": "verified_high"
   }
 ]
