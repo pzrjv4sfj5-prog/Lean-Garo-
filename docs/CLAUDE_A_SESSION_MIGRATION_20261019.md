@@ -20,6 +20,11 @@ Supersedes `docs/CLAUDE_A_SESSION_MIGRATION_20261017.md`. Paste this into a new 
 - NV-175 (`558cfcf`): no gendered pronoun; search/look for her = `Biko sandibo` (4 rows).
 - Claude B shipped: object-slot and subject `-rang` generation, counted-subject Formula B, noun-subject `-ko`, irregular plurals, counted adjective+noun classifier.
 
+## PO update NV-176 (pronouns, sight verbs, adjectives, little/small), recorded, NOT applied
+- Adjective rule conflicts with native data: PO says modifiers go BEFORE the noun, but verified `Menggo chona` (NV-144, Thangseng) and RULE-006 are noun-then-adjective, and the PO's own example 4 is `menggo chona`. Needs a PO decision or Thangseng's Q3 examples. Predicate order is consistent.
+- `nia`/`nika`: `see` = `nia` is a verified variant (Thangseng 2026-05-10) and `look` = `Ni·bo`; "never `Anga bichiko nika`" and `nia` + `-chi` pronoun are PO-provided, untested. Engine today gives `I see him` = `Anga bichi·ko Nika`.
+- `biko` human-only / `uko` universal: new, unattested. `on·tisa` (quantity) vs `chona` (size): consistent with data, no change.
+
 ## Provenance rule (new)
 Questions Claude A drafted and the PO answered directly (NV-173, NV-174, NV-175) were never sent to Thangseng. Label them "Project Owner-provided", not native quotes, even when they agree with native data.
 
@@ -31,7 +36,7 @@ Questions Claude A drafted and the PO answered directly (NV-173, NV-174, NV-175)
 - Bare plural rows (`books` = `Ki·tap`, `dogs` = `Achak`) and numeral + `-rang` untouched (not asked).
 
 ## Open issues
-1. **PO-only:** the Garo for "some"; the Garo for bare "not"; the verified object form of he/she (engine gives `I see him` = `Anga bichi·ko Nika` but `I see her` = `Anga uko Nika`).
+1. **PO-only:** which adjective order governs (NV-176 conflict); the Garo for "some"; the Garo for bare "not"; the verified object form of he/she (engine gives `I see him` = `Anga bichi·ko Nika` but `I see her` = `Anga uko Nika`).
 2. **Thangseng batch, not yet sent or saved as a doc:** Q3 adjective position reminder (he will send examples; don't build engine support until then); five uncited ties (agree: kin·a·chak·a / ku·chak·a / ku·ra·chak·a; brave: pa·a / sang·chak·a; fever: ding·du·a / han·ding·a / jom·a; greedy: mat·u·a / mik·bok·a / mik·ni·a; horn: a·du·ri / sing·ga); three sense splits (last: bon·kamgipa, ja·mangipa vs bai·a, ses; outside: A·pal, a'palo, bai·re, ha·gat·e; how: Maikai vs maidake); optional `-bo` same-form-for-many claim and the `Hai sakprak Agana skiebo` meaning.
 3. Claude B's queue for A: R-a (-jaha/-manaha, does not), R-c (-ode, -gen, aspect), R-f classifier variants, R-g question forms need the rules' exact scope read first.
 4. Claude B engine handoff `docs/HANDOFF_CLAUDE_B_20261019_temporal_locative.md`: no `-ko` on time words (`I eat rice today` -> `Anga da.alo·ko Cha·a`), isolated vs event `today`, parse `-chi`-less destinations.

@@ -7711,3 +7711,14 @@ Source: Project Owner in chat: "search for her will be the same ... There is no 
 
 - **Applied (4 master rows, verified_high):** `search for her`, `search for her!`, `look for her`, `look for her!` = `Biko sandibo`, same as the NV-170 him rows. Runtime before: `Sandia uni` / `Uni nibo`.
 - **Not changed, flagged for Claude B:** engine object forms still differ by English gender: `I see him` -> `Anga bichi·ko Nika`, `I see her` -> `Anga uko Nika`. With no gendered pronoun the two should presumably match, but the verified object form of he/she is not settled here (Uko vs Biko vs Bichi·ko), so no data change.
+
+## NV-176 (2026-10-19, Project Owner pasted "System rule update": pronouns, sight verbs, adjectives, quantifiers)
+
+Source: Project Owner pasted rule update with four parts. Provenance: Project Owner-provided, no native attribution. NOT applied to data or engine; checked against the repo, with one direct conflict held for a PO decision.
+
+1. **Pronouns (zero gender; `biko` human-only, `uko` universal).** Zero gender agrees with NV-071/NV-175. "`biko` NEVER for objects" and "`uko` also him/her" are new and not natively attested. No data change. The "I see him/her = `Anga biko nika`" target differs from today's engine (`Anga bichi·ko Nika` for him, `Anga uko Nika` for her): Claude B item, settled form still unknown.
+2. **`nika` (see) vs `nia` (look at, with `-chi` pronoun: `bichiko`/`uachiko`).** Partly in tension with native data: `see` = `nia` is a verified variant ("valid alternate to Nika", Thangseng WhatsApp 2026-05-10), and verified `look` = `Ni·bo`. "NEVER `Anga bichiko nika`" and the `nia` + `-chi` pairing are new. No data change; engine constraint passed to Claude B as PO-provided, untested.
+3. **Adjective placement (predicate after noun, modifier BEFORE noun, plurality irrelevant).** **Direct conflict held.** Native-verified `small cat` = `Menggo chona` (NV-144, Thangseng direct) is noun-then-adjective inside a noun phrase and replaced the adjective-first `chik Menggo`. RULE-006 ("Adjectives follow the noun", attributive use confirmed) says the same. The update's own example 4 also uses `menggo chona`, contradicting its modifier-before-noun rule. Thangseng's earlier Q3 answer was "depends on the sentence", examples still owed. Rule not applied; RULE-006 unchanged. PO to say which governs, or wait for Thangseng's examples. Predicate order (`Gari sila` = the car is beautiful; `sila` beautiful is verified) is consistent with RULE-006.
+4. **Little vs small.** Consistent with data: `on·tisa` verified ("a little / somewhat", NV-071), `Chon·a` verified `small` and `Menggo chona`. No `bang·gija` row exists as a verified quantity word (not added). No change.
+
+Applied: nothing in master, rules or engine. Recorded here, in the migration doc, and in WORKSTATE.
