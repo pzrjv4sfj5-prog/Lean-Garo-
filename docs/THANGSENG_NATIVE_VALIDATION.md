@@ -7688,3 +7688,12 @@ Source: Project Owner pasted "SYSTEM UPDATE ADDENDUM: DIRECTIONAL SUFFIX (-chi) 
 - **Already native-supported, no data change:** `-chi` = goal of movement (RULE-044, given directly by Thangseng; RULE-009/030); `bajal` = market, `bajalchi` = to the market (NV-051/052/060 and the verified sentences `Anga bajalchi re·angenga`, `Hai bajalchi re·na`); `nang'chi` = to you (NV-107). Restated in RULE-044 (`po_addendum_20261019`).
 - **Project Owner-provided, untested natively:** speakers often drop `-chi` when `re·anga` makes the destination obvious (`Mijalo anga bajal re·anga`). Recorded as such; no dictionary row added. Resolves the `bajal` vs `bajalchi` question raised after NV-171: not a conflict. Parsing treats both as valid; generation defaults to `-chi` (engine already does).
 - **Correction to NV-171 / RULE-053:** native sentences in RULE-042 already put the time suffix `-de` on Da·al / Mijal / Knal (`Mijalde bajalchi re·anga`). `-o` and `-de` are both attested on time words, so "event + time must take -o" is not exclusive. Which one applies when is open; RULE-053 now says so. No runtime change.
+
+## NV-173 (2026-10-19, Project Owner-provided answers to the -bo question batch)
+
+Source: Project Owner pasted answers to the five `-bo` questions Claude A drafted (the batch was NOT sent to Thangseng) plus a "SYSTEM RULE UPDATE" restating them. Provenance label: Project Owner-provided, not a native quote. The answers follow the reasoning already in the repo (NV-165, NV-166, NV-170), not new native data.
+
+- **Q1/Q2/Q3/Q5:** `-bo` is strictly imperative, never "let's"; hortative = `Hai` + root + `-na` (`Hai cha·na`); `Hai cha·bo` = "come on, eat" / "go and eat" (matches NV-165); `Hai re·bo` = "go on, go" (new, not natively attested); `Biko sandibo` is an order to the listener (NV-170).
+- **Q4 (new claim, no native evidence):** `-bo` has the same form for one listener or many. Recorded as Project Owner-provided with low confidence; no singular/plural `-bo` distinction is generated.
+- **Applied (docs and one note, no runtime change):** RULE-029 rewritten (title, description, claims, examples; resolves the 2026-10-16 flag that its hortative claim had no example left). Legacy unverified row `let us practice garo together` = `Hai sakprak Agana skiebo.` flagged in its note: a "let us" gloss on a `-bo` form conflicts with this rule. Not changed or superseded; needs a native check.
+- **Still queued for Thangseng (optional now):** a direct check of Q4 and of `Hai sakprak Agana skiebo`.

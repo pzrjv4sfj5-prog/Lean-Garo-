@@ -51639,7 +51639,8 @@
     "english": "let us practice garo together",
     "garo": "Hai sakprak Agana skiebo.",
     "category": "culture",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "UNVERIFIED — FLAG 2026-10-19 (NV-173): gloss \"let us\" conflicts with RULE-029 (-bo is strictly imperative; Hai + -bo = urging). Probably \"come on, practice Garo together\" but not natively checked. Retained, not changed."
   },
   {
     "english": "I am fine.",

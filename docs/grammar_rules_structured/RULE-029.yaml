@@ -1,21 +1,36 @@
 id: RULE-029
-title: "Hortative/Imperative `-bo`"
+title: "Imperative `-bo` (never hortative); `Hai` + `-bo` = urging"
 description: >-
-  Single suffix form serves both imperative (command) and hortative
-  ("let's") functions.
+  `-bo` is strictly imperative: a command to someone else (Cha·bo = eat!).
+  It never means "let's". The hortative (speaker included) is Hai + verb
+  root + `-na` (Hai cha·na = let's eat). Hai + `-bo` is urging, still
+  directed at the listener (Hai cha·bo = come on, eat / go and eat).
+  Rewritten 2026-10-19 (NV-173, Project Owner-provided answers); replaces
+  the earlier claim that one suffix served both imperative and hortative
+  functions.
 dependencies:
   - id: RULE-003b
     name: null
     note: null
 claims:
-  - scope: null
+  - scope: "-bo is strictly imperative (command to another person), never 'let's'"
+    status: po_provided
+    confidence: high
+    status_note: "NV-173, Project Owner-provided 2026-10-19; consistent with NV-165 (Hai cha·bo = go and eat, Thangseng final validation relayed by the Project Owner) and NV-166. Not a direct native quote."
+  - scope: "Hai + -bo = urging (come on / go ahead), directed at the listener; Hai + -na = hortative"
     status: verified
     confidence: high
+    status_note: "Hai cha·bo / Hai cha·na split from NV-165; Hai re·bo = go on, go is Project Owner-provided (NV-173), not natively attested."
+  - scope: "-bo takes the same form for one listener or many"
+    status: po_provided
+    confidence: low
+    status_note: "NV-173 answer, untested natively; no data either way. Do not generate any singular/plural -bo distinction."
 examples:
   - 'Sengbo = "stop!" (imperative)'
-  - 'Biko sandibo = "search for him!" (imperative); hortative use disambiguated by subject/context'
+  - 'Biko sandibo = "search for him!" or "look for him" (imperative, order to the listener; NV-170, NV-173)'
+  - 'Hai cha·bo = "go and eat" (urging, also "come on, eat"; not "let''s eat")'
 counterexamples:
-  note: "none confirmed"
+  note: "none confirmed; legacy unverified row Hai sakprak Agana skiebo (glossed let us practice garo together) uses -bo with a let us gloss, flagged in NV-173"
   items: []
 launch_priority:
   - scope: null
@@ -39,3 +54,9 @@ corrections:
     note: >-
       RESOLVED the Sengbo glossing flag (stop! vs wait!): both senses are valid.
       Project Owner direct chat answer 2026-10-16 (NV-166): "Stop = Sengbo or Damo", i.e. imperative stop! has two valid forms, `Sengbo` and `Da·mo`. Reverses NV-089's explicit rejection of `Sengbo` as 'stop' for the imperative sense only. `stop` = `dontonga` (NV-089) is retained as the verb. Shipped primary is `Sengbo!` (PO listed it first; RULE-029 example) and `Damo!` is the accepted alternate; that primary is an ordering choice, not a native ranking.
+  - date: "2026-10-19"
+    note: >-
+      RESOLVED the 2026-10-16 flag (description claimed -bo is also
+      hortative): the description and claims are rewritten per NV-173
+      (Project Owner-provided answers to the -bo question batch; the batch
+      was not sent to Thangseng). -bo is strictly imperative.
