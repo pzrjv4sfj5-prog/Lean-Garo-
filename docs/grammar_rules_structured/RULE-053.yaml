@@ -20,10 +20,17 @@ claims:
       (Da.alo, with variant Da·al) but the base/locative split itself is
       not a native quote. Supersedes the PO scenario 3 string
       Da·al achak manggni mi·ko cha·a (2026-10-18) for event sentences.
-  - scope: "relation to RULE-042 (-de 'at that time'): native sentences already use Da·alde / Mijalde / Knalde + bajalchi re·angen*; -o and -de are both attested on time words, so the addendum's 'must add -o' is not exclusive"
-    status: needs_native_validation
-    confidence: n/a
-    status_note: "Open: when -o versus -de is used (same frame, 'today I will go to the market'). Not resolved by the addendum."
+  - scope: "-o vs -de on time words: -o = neutral locative time stamp (on/at that day); -de = contrastive/emphatic temporal focus (RULE-042)"
+    status: po_provided
+    confidence: medium
+    status_note: >-
+      Resolved 2026-10-19 (NV-174, Project Owner-provided answer; the question was not sent
+      to Thangseng). Consistent with native data: RULE-042 (Thangseng 2026-07-23) already
+      describes -de as "not a neutral time-stamp; contrastive/emphatic temporal focus"
+      (of all the things, this one is done at that time; may imply something else was planned
+      but did not happen), and -o on time words is native-attested (mijalo, Mejao). The "As
+      for yesterday..." gloss is the Project Owner's paraphrase. Engine default: -o for
+      neutral time statements, -de only for explicit contrast or emphasis.
   - scope: "generalization to other time words (tomorrow knal/knalo, etc.)"
     status: unknown
     confidence: n/a

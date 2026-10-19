@@ -10,3 +10,6 @@ Rule: `docs/grammar_rules_structured/RULE-053.yaml`. Provenance: Project Owner a
 ## Not decided / not added
 - The addendum's example `Mijalo anga bajal re·anga` conflicts with verified `Anga bajalchi re·angenga` and `Hai bajalchi re·na`; no row added. PO to say which is right.
 - Other time words (`tomorrow` = `Knal`): no locative form stated, do not generate.
+
+## Addendum 2026-10-19 (NV-174): -o vs -de
+Project Owner-provided, consistent with native RULE-042: for event sentences with a time word, default to the locative `-o` (`mijalo`, `da·alo`). Use `-de` (`Mijalde`, `Da·alde`) only for explicit contrast or emphasis ("as for today..."); never generate `-de` by default. Existing verified `-de` sentences (RULE-042) stay as they are.

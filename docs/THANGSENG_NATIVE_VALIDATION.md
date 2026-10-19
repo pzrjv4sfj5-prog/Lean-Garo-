@@ -7697,3 +7697,10 @@ Source: Project Owner pasted answers to the five `-bo` questions Claude A drafte
 - **Q4 (new claim, no native evidence):** `-bo` has the same form for one listener or many. Recorded as Project Owner-provided with low confidence; no singular/plural `-bo` distinction is generated.
 - **Applied (docs and one note, no runtime change):** RULE-029 rewritten (title, description, claims, examples; resolves the 2026-10-16 flag that its hortative claim had no example left). Legacy unverified row `let us practice garo together` = `Hai sakprak Agana skiebo.` flagged in its note: a "let us" gloss on a `-bo` form conflicts with this rule. Not changed or superseded; needs a native check.
 - **Still queued for Thangseng (optional now):** a direct check of Q4 and of `Hai sakprak Agana skiebo`.
+
+## NV-174 (2026-10-19, Project Owner-provided answer: time words -o vs -de)
+
+Source: Project Owner pasted a resolution to question 1 of the pending Thangseng batch (the batch was NOT sent to Thangseng). Provenance label: Project Owner-provided, not a native quote. Content: `-o` is the neutral locative time stamp ("on/at that day", `Mijalo anga re·anga` = I went yesterday); `-de` is contrastive/topical emphasis ("as for yesterday..."). Instruction: `-o` for neutral time statements, `-de` only for contrast or emphasis.
+
+- **Native consistency:** RULE-042 (Thangseng relay 2026-07-23) already describes `-de` as not a neutral time-stamp but a contrastive/emphatic temporal focus ("of all the things, this one is done at that time"; may imply something else was planned and did not happen). `-o` on time words is native-attested (`Bia bus o raba·a mijalo`, NV-104; `Mejao`, NV-107). So the answer restates existing native data; the "as for..." wording is the Project Owner's paraphrase.
+- **Applied (docs only, no runtime change):** RULE-053's `-o` vs `-de` claim moved from needs_native_validation to po_provided (medium); note added to RULE-042; engine default added to the Claude B temporal handoff. Closes the open question raised in NV-172, so this item is dropped from the Thangseng batch.

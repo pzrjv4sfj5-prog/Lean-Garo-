@@ -51,3 +51,6 @@ native_notes: >-
 last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-042"
+po_addendum_20261019:
+  provenance: "Project Owner-provided answer 2026-10-19 (NV-174); not sent to Thangseng."
+  note: "Contrast with -o: -o is the neutral locative time stamp (Mijalo anga re·anga = I went yesterday); -de adds contrastive/topical emphasis (As for yesterday...). Matches the native description above. Use -o by default, -de only for emphasis. See RULE-053."
