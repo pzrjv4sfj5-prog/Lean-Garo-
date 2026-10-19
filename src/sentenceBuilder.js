@@ -80,6 +80,20 @@ export function resolveSubjectNoun(eng) {
       if (direct) return { garo: direct, plural: true }; // lexicalized plural row
     }
   }
+  // Irregular English plurals (people, men, women, feet): PO rule 2026-10-18,
+  // Garo has no irregulars, the untouched singular root takes -rang. A
+  // dictionary row holding a different, lexicalized plural (children ->
+  // Bi·sarang, teeth -> Wagam) is kept as is.
+  if (!lw.endsWith('s')) {
+    const sing = singularize(lw);
+    if (sing !== lw) {
+      const singGaro = lookupPhrase(sing) || lookupGaro(sing);
+      if (direct && (!singGaro || String(direct).toLowerCase() !== String(singGaro).toLowerCase())) {
+        return { garo: direct, plural: true };
+      }
+      if (singGaro) return { garo: /rang$/i.test(singGaro) ? singGaro : singGaro + 'rang', plural: true };
+    }
+  }
   return direct ? { garo: direct, plural: false } : null;
 }
 

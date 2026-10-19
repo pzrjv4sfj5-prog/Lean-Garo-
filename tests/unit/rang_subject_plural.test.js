@@ -37,7 +37,7 @@ const UNCHANGED = [
   ['his dog eats', 'Uni achak cha·a'],            // singular subject
   ['he eats rice', 'Ua mi·ko Cha·a'],
   ['two dogs eat rice', 'Achak mang·gni mi·ko Cha·a'], // counted: Formula B (see counted_subject_formula_b.test.js), never -rang
-  ['people work', 'mande dak·a'],                // suppletive English plural: regular -s plurals only
+  ['people', 'mande'],                           // bare plural headword unchanged (irregular plurals in a clause are covered by irregular_plural_subject.test.js)
   ['my cats', 'Angni menggo'],                    // bare noun phrase, no predicate: not a sentence
   ['dogs', 'Achak'],                              // bare plural headword: no ruling, unchanged
   ['books', 'Ki·tap'],

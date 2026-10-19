@@ -148,7 +148,7 @@ const NOUN_SUBJECT_POSSESSIVES = new Set(['my', 'your', 'his', 'her', 'our', 'th
 async function translateNounSubjectClause(cleaned) {
   const tokens = String(cleaned).toLowerCase().replace(/[.!?,;]+$/g, '').split(/\s+/).filter(Boolean);
   const isNum = w => /^\d+$/.test(w) || NUMBER_WORDS[w] !== undefined || w === 'hundred' || w === 'thousand';
-  if (tokens.length < 3 || tokens.some(isNum)) return null;
+  if (tokens.length < 2 || tokens.some(isNum)) return null;
   // Single simple clause only: no internal punctuation, no question, no
   // conjunction/subordinator (those have their own paths).
   if (/[,;?]/.test(String(cleaned).replace(/[.!?,;]+$/g, '')) || /\?/.test(String(cleaned))) return null;
