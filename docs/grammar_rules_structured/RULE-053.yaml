@@ -1,0 +1,50 @@
+id: RULE-053
+title: "Temporal nouns: base form vs locative -o"
+description: >-
+  Time words (da·al = today, mijal = yesterday) have a base form and a
+  locative form with suffix -o (da·alo, mijalo) that locates an action or
+  event in time ("on/during that day"). Event sentence: TIME-o + clause.
+  Isolated time word, not acting as a timestamp: base form, no suffix.
+dependencies: []
+claims:
+  - scope: "mijal + -o = mijalo locates an action in yesterday (native sentence Bia bus o raba·a mijalo = he came by bus yesterday)"
+    status: verified
+    confidence: high
+    status_note: "NV-104 (Thangseng via Project Owner relay). Related native -o on a time word: Mejao anga nang'chi re'angachim (NV-107)."
+  - scope: "da·al + -o = da·alo locates an action in today; isolated 'today' = da·al"
+    status: po_provided
+    confidence: medium
+    status_note: >-
+      Project Owner addendum 2026-10-19 (NV-171), pasted, no native
+      attribution. Consistent with the already-verified Today rows
+      (Da.alo, with variant Da·al) but the base/locative split itself is
+      not a native quote. Supersedes the PO scenario 3 string
+      Da·al achak manggni mi·ko cha·a (2026-10-18) for event sentences.
+  - scope: "generalization to other time words (tomorrow knal/knalo, etc.)"
+    status: unknown
+    confidence: n/a
+    status_note: "Not stated in the addendum and not generated; Knal is the only verified tomorrow form on file."
+examples:
+  - "Bia bus o raba·a mijalo. = He came by bus yesterday. (NV-104)"
+counterexamples:
+  note: "none identified; open conflict noted below."
+  items: []
+po_provided_examples_not_native_attested:
+  - "Mijalo anga bajal re·anga. (I went to the market yesterday.) CONFLICT: verified sentences use bajalchi (Anga bajalchi re·angenga, NV-060 Hai bajalchi re·na); not added to the dictionary."
+  - "Da·alo anga mi cha·a. (Today I eat rice.) Not added as a row; engine already gives Da.alo anga mi cha·a for 'today I eat rice'."
+launch_priority:
+  - scope: null
+    tier: P2
+    note: >-
+      Live engine bug: time words take the object marker -ko in
+      sentences (I eat rice today -> Anga da.alo·ko Cha·a with mi dropped;
+      I went to the market yesterday -> Anga bajalchi mejal·ko re·anga).
+      Isolated 'today' still ships Da.alo (the locative form): a data-only
+      pin of Da·al leaks into sentence composition (tested: it turns
+      'today I eat rice' and Formula B clauses into Da·al, against this
+      rule), so the isolated/event split needs engine support.
+      See docs/HANDOFF_CLAUDE_B_20261019_temporal_locative.md.
+native_notes: "Project Owner addendum 2026-10-19 plus NV-104/NV-107 native sentences; processed by Claude A as NV-171."
+last_updated: "2026-10-19"
+updated_by: "Claude A"
+source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md NV-171"

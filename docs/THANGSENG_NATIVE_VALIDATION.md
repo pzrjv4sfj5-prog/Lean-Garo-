@@ -7670,3 +7670,13 @@ Source: Project Owner in chat, no transcript; direct statement counts as the cit
 
 - **`Biko sandibo` = "search for him" / "look for him"**, imperative. Four master rows added (verified_high): `search for him`, `search for him!`, `look for him`, `look for him!`. The first matches the existing `corrections.json` key byte-for-byte. Runtime: all four now return `Biko sandibo`; before, `search for him!` gave `Sandia bichi` and `look for him` gave `Bichi nibo`.
 - **Not changed:** `search for her` (`Sandia uni`) and `look for her` (`Uni nibo`) still come from the engine; no `her` form was cited. RULE-029's `-bo` imperative-versus-hortative question is untouched. Conformance 64 -> 65/102 (15 orphans, 0 unbaselined).
+
+## NV-171 (2026-10-19, Project Owner pasted addendum: temporal nouns and locative -o)
+
+Source: Project Owner pasted "SYSTEM UPDATE ADDENDUM: TEMPORAL NOUNS AND THE LOCATIVE SUFFIX (-o)". Provenance label: Project Owner-provided rule, no native attribution. Content: time words have a base form (`da·al`, `mijal`) and a locative `-o` form (`da·alo`, `mijalo`); event + time takes `-o`, an isolated time word takes the base form.
+
+- **Supported by earlier native data:** `mijalo` in the NV-104 native sentence `Bia bus o raba·a mijalo`, and `Mejao` with `-o` in NV-107. Both `Da.alo` and `Da·al` were already verified `Today` rows, so the today/yesterday split is consistent with the corpus. The base/locative contrast itself was never stated by a native.
+- **Applied:** new `yesterday` = `Mijal` row (verified_high, primary); `Mejal` and `me·ja·o` rows retagged variant/VERIFIED/HIGH (kept; NV-107 broader sense unchanged); `phrase_maps` `yesterday` fixed to `Mijal`. New `docs/grammar_rules_structured/RULE-053.yaml`.
+- **Not applied:** isolated `today` stays `Da.alo` (a data pin leaks into sentences and breaks the rule). Engine split handed to Claude B (`docs/HANDOFF_CLAUDE_B_20261019_temporal_locative.md`).
+- **Conflict held:** addendum example `Mijalo anga bajal re·anga` vs verified `bajalchi ... re·angenga`; no row added, PO to rule.
+- **Resolves** the open `today` Da·al vs Da.alo question (both valid; Da·al base, Da·alo locative). The 2026-10-18 scenario 3 string `Da·al achak manggni ...` is superseded for event sentences.

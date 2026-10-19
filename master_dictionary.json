@@ -22353,7 +22353,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH v:Meja / me-ja-o | SEMANTIC CLARIFICATION (NV-107, 2026-09-02, Thangseng direct confirmation via Project Owner relay): this word is not limited to the calendar day before today. Thangseng: \"Mejao refers to a specific time, not so long ago in the past. But it is specific only in the sense that it refers to a particular time that the speaker and hearer may both know about. It can be a week ago or two weeks ago.\" Native example: `Mejao anga nang'chi re'angachim.` = \"I had gone to you (or visited you) recently.\" This 'Yesterday' gloss/translation remains correct for literal yesterday-referring sentences (a valid, common instance of the underlying meaning) but should not be assumed to exclude other recent, contextually-known past times. Does not affect NV-104 (`Mijal` = yesterday, closed separately, not reopened).",
+    "notes": "variant/VERIFIED/HIGH | v:Meja / me-ja-o | SEMANTIC CLARIFICATION (NV-107, 2026-09-02, Thangseng direct confirmation via Project Owner relay): this word is not limited to the calendar day before today. Thangseng: \"Mejao refers to a specific time, not so long ago in the past. But it is specific only in the sense that it refers to a particular time that the speaker and hearer may both know about. It can be a week ago or two weeks ago.\" Native example: `Mejao anga nang'chi re'angachim.` = \"I had gone to you (or visited you) recently.\" This 'Yesterday' gloss/translation remains correct for literal yesterday-referring sentences (a valid, common instance of the underlying meaning) but should not be assumed to exclude other recent, contextually-known past times. Does not affect NV-104 (`Mijal` = yesterday, closed separately, not reopened). | RETAGGED variant 2026-10-19 (NV-171, RULE-053, Project Owner addendum): isolated-form primary is now Mijal (NV-104 + addendum); this form keeps its broader recent-past sense (NV-107).",
     "confidence": "verified_high"
   },
   {
@@ -22362,7 +22362,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH | SEMANTIC CLARIFICATION (NV-107, 2026-09-02, Thangseng direct confirmation via Project Owner relay): this word is not limited to the calendar day before today. Thangseng: \"Mejao refers to a specific time, not so long ago in the past. But it is specific only in the sense that it refers to a particular time that the speaker and hearer may both know about. It can be a week ago or two weeks ago.\" Native example: `Mejao anga nang'chi re'angachim.` = \"I had gone to you (or visited you) recently.\" This 'Yesterday' gloss/translation remains correct for literal yesterday-referring sentences (a valid, common instance of the underlying meaning) but should not be assumed to exclude other recent, contextually-known past times. Does not affect NV-104 (`Mijal` = yesterday, closed separately, not reopened).",
+    "notes": "variant/VERIFIED/HIGH | | SEMANTIC CLARIFICATION (NV-107, 2026-09-02, Thangseng direct confirmation via Project Owner relay): this word is not limited to the calendar day before today. Thangseng: \"Mejao refers to a specific time, not so long ago in the past. But it is specific only in the sense that it refers to a particular time that the speaker and hearer may both know about. It can be a week ago or two weeks ago.\" Native example: `Mejao anga nang'chi re'angachim.` = \"I had gone to you (or visited you) recently.\" This 'Yesterday' gloss/translation remains correct for literal yesterday-referring sentences (a valid, common instance of the underlying meaning) but should not be assumed to exclude other recent, contextually-known past times. Does not affect NV-104 (`Mijal` = yesterday, closed separately, not reopened). | RETAGGED variant 2026-10-19 (NV-171, RULE-053, Project Owner addendum): isolated-form primary is now Mijal (NV-104 + addendum); this form keeps its broader recent-past sense (NV-107).",
     "confidence": "verified_high"
   },
   {
@@ -78704,6 +78704,15 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-170, Project Owner direct chat 2026-10-19 (\"Biko sandibo is fine search for him or look for him\"); labeled Project Owner-confirmed, not a Thangseng quote. Confirms the previously cited Biko sandibo (corrections.json, RULE-029 example) and extends it to both English glosses. Imperative (-bo); not a hortative.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "yesterday",
+    "garo": "Mijal",
+    "category": "time",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Mijal confirmed as yesterday by Thangseng (NV-104, 2026-09-01, native sentence Bia bus o raba·a mijalo) and given as the isolated base form in the Project Owner addendum 2026-10-19 (NV-171, Project Owner-provided, not a native quote). Shipped isolated primary is an ordering choice; Mejal / me·ja·o retained as confirmed variants (NV-107: broader recent-past sense).",
     "confidence": "verified_high"
   }
 ]

@@ -103,7 +103,7 @@ export const PHRASE_MAPS = {
   'i want to buy this': 'Anga iako brena ska.',
   'do you have': 'Nang·o ... dongama?',
   'today': 'Da.alo',
-  'yesterday': 'Mejal',
+  'yesterday': 'Mijal',
   'tomorrow': 'Knal',
   'now': 'Da·o',
   'later': 'Ja·mano',

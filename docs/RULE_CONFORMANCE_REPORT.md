@@ -15,7 +15,7 @@ Examples: 102 | runtime matches rule: 65 (64%) | orphan (in no entry layer): 15 
 | RULE-023 | will be strong | bilakgen | Bilaka | sov-assembly | 0.75 |
 | RULE-025 | has stopped eating | cha·jaha | donga cha·enga | sov-assembly | 0.75 |
 | RULE-026 | has eaten | cha·manaha | donga cha·jok | sov-assembly | 0.75 |
-| RULE-027 | did you go to the market yesterday? | na·a mijalo anti re·angama? | Na·a bajalchi mejal·ko re·ahama? | grammar-assembly | 0.82 |
+| RULE-027 | did you go to the market yesterday? | na·a mijalo anti re·angama? | Na·a bajalchi mijal·ko re·ahama? | grammar-assembly | 0.82 |
 | RULE-028 | ate | cha·manaha | Cha·aha | correction | 1 |
 | RULE-030 | I will not go | Re·jawa | Anga re·jawa | correction | 1 |
 | RULE-030 | I am not going | Anga re'angjaenga | Anga re·ang·ja | correction | 1 |
