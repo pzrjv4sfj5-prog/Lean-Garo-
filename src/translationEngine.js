@@ -49,7 +49,7 @@ import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import IRREGULAR_VERBS_COUNTED from './data/irregular_verbs.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
-import { countNoun, countNounWithClassifier, parseCountingPhrase, getClassifier, isUnverifiedCompoundGuess, NUMBER_WORDS } from './garo_classifier.js';
+import { countNoun, countNounWithClassifier, parseCountingPhrase, getClassifier, isUnverifiedCompoundGuess, NUMBER_WORDS, singularize } from './garo_classifier.js';
 import { toGaroNumber as toGaroNumberBare } from './number_engine.js';
 import { corrections, normalizeEntry, EN_INDEX, lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { applyNegation } from './morphologyEngine.js';
@@ -203,25 +203,36 @@ async function translateCountedSubjectClause(cleaned) {
   let k = 0;
   while (start + k < tokens.length && isNum(tokens[start + k])) k++;
   if (k === 0 || start + k >= tokens.length - 1) return null; // need noun AND a following clause
-  const rest = tokens.slice(start + k + 1);
+  let rest = tokens.slice(start + k + 1);
   if (!rest.length || rest[0] === 'of') return null;
-  // The clause after the counted noun must open with a predicate: an
-  // auxiliary/copula, a known verb lemma, an irregular verb form, or one of
-  // a few common intransitives missing from VERB_LEMMAS. Deliberately a
-  // closed test (no Garo-suffix guessing), so noun phrases such as
-  // "two red apples", "two big dogs", "three sugar cane" stay out.
-  if (!startsWithPredicate(rest[0])) return null;
   const counting = parseCountingPhrase(tokens.slice(start, start + k + 1).join(' '));
   if (!counting || counting.unit || !counting.count) return null;
-  // A multi-word noun that is itself a dictionary entry ("sugar cane") is a
-  // counted noun phrase, not a clause: leave it to the classifier path.
-  const wholeTail = parseCountingPhrase(tokens.slice(start).join(' '));
-  if (wholeTail && wholeTail.englishNoun !== counting.englishNoun
-      && !corrections?.[wholeTail.englishNoun]
-      && (lookupPhrase(wholeTail.englishNoun) || EN_INDEX[wholeTail.englishNoun])) return null;
-  const garoNoun = lookupPhrase(counting.englishNoun) || lookupGaro(counting.englishNoun);
+  // The clause after the counted noun must open with a predicate (see
+  // startsWithPredicate: closed list, no Garo-suffix guessing), so noun
+  // phrases such as "two red apples" and "three sugar cane" stay out.
+  // One exception: a verified attributive phrase row ("big dog" = dal·gipa
+  // achak) may sit between the numeral and the predicate; its head noun
+  // carries the classifier ("two big dogs eat rice").
+  let nounEnglish = counting.englishNoun;
+  let garoNoun = null;
+  if (!startsWithPredicate(rest[0])) {
+    if (rest.length < 2 || !startsWithPredicate(rest[1])) return null;
+    const phraseEnglish = `${tokens[start + k]} ${singularize(rest[0])}`;
+    garoNoun = lookupPhrase(phraseEnglish) || (!corrections?.[phraseEnglish] && EN_INDEX[phraseEnglish] ? lookupGaro(phraseEnglish) : null);
+    if (!garoNoun) return null;
+    nounEnglish = phraseEnglish;
+    rest = rest.slice(1);
+  } else {
+    // A multi-word noun that is itself a dictionary entry ("sugar cane") is
+    // a counted noun phrase, not a clause: leave it to the classifier path.
+    const wholeTail = parseCountingPhrase(tokens.slice(start).join(' '));
+    if (wholeTail && wholeTail.englishNoun !== counting.englishNoun
+        && !corrections?.[wholeTail.englishNoun]
+        && (lookupPhrase(wholeTail.englishNoun) || EN_INDEX[wholeTail.englishNoun])) return null;
+    garoNoun = lookupPhrase(counting.englishNoun) || lookupGaro(counting.englishNoun);
+  }
   if (!garoNoun) return null;
-  const counted = countNoun(garoNoun, counting.count, counting.englishNoun);
+  const counted = countNoun(garoNoun, counting.count, nounEnglish);
   if (!counted) return null;
   const pron = counting.count === 1 ? 'he' : 'they';
   const inner = await translate(`${pron} ${rest.join(' ')}`);

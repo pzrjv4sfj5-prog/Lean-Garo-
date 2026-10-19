@@ -130,7 +130,16 @@ export const CLASSIFIERS = CLASSIFIER_MAP;
 
 export function getClassifier(noun) {
   if (!noun) return 'ge';
-  return CLASSIFIER_MAP[noun.toLowerCase().trim()] || 'ge';
+  const key = noun.toLowerCase().trim();
+  if (CLASSIFIER_MAP[key]) return CLASSIFIER_MAP[key];
+  // 2026-10-19 (Claude B): an unmapped multi-word phrase ("big dog") takes
+  // its HEAD (last) noun's classifier (dog -> mang), not the generic ge-
+  // fallback. "two big dogs" was "dal·gipa achak ge·gni".
+  if (key.includes(' ')) {
+    const head = key.split(/\s+/).pop();
+    if (CLASSIFIER_MAP[head]) return CLASSIFIER_MAP[head];
+  }
+  return 'ge';
 }
 
 function getClassifierSuffix(count) {
