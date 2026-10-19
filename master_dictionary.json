@@ -78715,5 +78715,41 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — Mijal confirmed as yesterday by Thangseng (NV-104, 2026-09-01, native sentence Bia bus o raba·a mijalo) and given as the isolated base form in the Project Owner addendum 2026-10-19 (NV-171, Project Owner-provided, not a native quote). Shipped isolated primary is an ordering choice; Mejal / me·ja·o retained as confirmed variants (NV-107: broader recent-past sense).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "search for her",
+    "garo": "Biko sandibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-175, Project Owner direct chat 2026-10-19 (\"search for her will be the same... There is no gendered pronoun in Garo\"); labeled Project Owner statement, not a Thangseng quote. Same form as the NV-170 him rows. Consistent with native-confirmed gender-neutral Ua / Bia (NV-071, 2026-09-19 relay).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "search for her!",
+    "garo": "Biko sandibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-175, Project Owner direct chat 2026-10-19 (\"search for her will be the same... There is no gendered pronoun in Garo\"); labeled Project Owner statement, not a Thangseng quote. Same form as the NV-170 him rows. Consistent with native-confirmed gender-neutral Ua / Bia (NV-071, 2026-09-19 relay).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "look for her",
+    "garo": "Biko sandibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-175, Project Owner direct chat 2026-10-19 (\"search for her will be the same... There is no gendered pronoun in Garo\"); labeled Project Owner statement, not a Thangseng quote. Same form as the NV-170 him rows. Consistent with native-confirmed gender-neutral Ua / Bia (NV-071, 2026-09-19 relay).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "look for her!",
+    "garo": "Biko sandibo",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-175, Project Owner direct chat 2026-10-19 (\"search for her will be the same... There is no gendered pronoun in Garo\"); labeled Project Owner statement, not a Thangseng quote. Same form as the NV-170 him rows. Consistent with native-confirmed gender-neutral Ua / Bia (NV-071, 2026-09-19 relay).",
+    "confidence": "verified_high"
   }
 ]

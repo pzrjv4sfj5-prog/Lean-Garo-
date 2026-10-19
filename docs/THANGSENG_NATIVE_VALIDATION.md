@@ -7704,3 +7704,10 @@ Source: Project Owner pasted a resolution to question 1 of the pending Thangseng
 
 - **Native consistency:** RULE-042 (Thangseng relay 2026-07-23) already describes `-de` as not a neutral time-stamp but a contrastive/emphatic temporal focus ("of all the things, this one is done at that time"; may imply something else was planned and did not happen). `-o` on time words is native-attested (`Bia bus o raba·a mijalo`, NV-104; `Mejao`, NV-107). So the answer restates existing native data; the "as for..." wording is the Project Owner's paraphrase.
 - **Applied (docs only, no runtime change):** RULE-053's `-o` vs `-de` claim moved from needs_native_validation to po_provided (medium); note added to RULE-042; engine default added to the Claude B temporal handoff. Closes the open question raised in NV-172, so this item is dropped from the Thangseng batch.
+
+## NV-175 (2026-10-19, Project Owner statement: no gendered pronoun; "search for her" = "search for him")
+
+Source: Project Owner in chat: "search for her will be the same ... There is no gendered pronoun in Garo" (provenance as stated by the Project Owner; no native quote attached). Consistent with native data already on file: `she` = `Ua` and `he` = `Ua` (NV-071, native sentence `ua ga·soltapaha` = he slipped) and `Bia`/`Ua` confirmed synonyms for he/she (2026-09-19 relay).
+
+- **Applied (4 master rows, verified_high):** `search for her`, `search for her!`, `look for her`, `look for her!` = `Biko sandibo`, same as the NV-170 him rows. Runtime before: `Sandia uni` / `Uni nibo`.
+- **Not changed, flagged for Claude B:** engine object forms still differ by English gender: `I see him` -> `Anga bichi·ko Nika`, `I see her` -> `Anga uko Nika`. With no gendered pronoun the two should presumably match, but the verified object form of he/she is not settled here (Uko vs Biko vs Bichi·ko), so no data change.
