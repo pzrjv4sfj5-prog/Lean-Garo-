@@ -61,6 +61,28 @@ import { translate } from './translationEngine.js';
 //  - plain concatenation, raka dot kept (Achak -> Achakrang).
 const SUBJECT_RANG_DETERMINERS = new Set(['my', 'your', 'his', 'her', 'our', 'their', 'many', 'some', 'several', 'all', 'few', 'these', 'those']);
 const NOT_PLURAL_S_WORDS = new Set(['news', 'thanks', 'series', 'species', 'means', 'always', 'sometimes', 'perhaps', 'besides', 'yes', 'this', 'his', 'its', 'us', 'has', 'does', 'goes', 'was', 'is', 'gas', 'bus', 'glass', 'class']);
+// Noun-level companion to subjectRangForm for the noun-subject clause
+// handler in translationEngine.js: resolves ONE English noun to its Garo
+// subject form. Regular plurals whose plural and singular resolve to the
+// same Garo get -rang (Formula A); a lexicalized plural row is used as is;
+// anything else resolves as a singular. Returns null when unresolved.
+export function resolveSubjectNoun(eng) {
+  const lw = String(eng).toLowerCase().replace(/[^a-z']/g, '');
+  if (!lw) return null;
+  const direct = lookupPhrase(lw) || lookupGaro(lw);
+  if (lw.length >= 4 && lw.endsWith('s') && !NOT_PLURAL_S_WORDS.has(lw)) {
+    const sing = singularize(lw);
+    if (sing !== lw && sing.length >= 3 && !VERB_LEMMAS.has(sing) && !VERB_LEMMAS.has(lw)) {
+      const singGaro = lookupPhrase(sing) || lookupGaro(sing);
+      if (singGaro && (!direct || String(direct).toLowerCase() === String(singGaro).toLowerCase())) {
+        return { garo: /rang$/i.test(singGaro) ? singGaro : singGaro + 'rang', plural: true };
+      }
+      if (direct) return { garo: direct, plural: true }; // lexicalized plural row
+    }
+  }
+  return direct ? { garo: direct, plural: false } : null;
+}
+
 function subjectRangForm(eng, garo, idx, pairs, lastVerbIdx, words) {
   if (words.some(w => NUMBER_WORDS[w.toLowerCase().replace(/[^a-z]/g, '')] !== undefined)) return garo;
   if (!garo || garo === '[UNKNOWN]' || /rang$/i.test(garo)) return garo;

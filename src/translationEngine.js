@@ -65,7 +65,7 @@ export { analyzeGrammar };
 // byte-identical 237-sentence stress benchmark diff. Circular import
 // (sentenceBuilder.js imports `translate` back from this file) — see
 // sentenceBuilder.js's header comment for why this is safe.
-import { assembleSentenceSOV, assembleGrammar, translateIfClause, translateMultiClause } from './sentenceBuilder.js';
+import { assembleSentenceSOV, assembleGrammar, translateIfClause, translateMultiClause, resolveSubjectNoun } from './sentenceBuilder.js';
 // Gemini import removed 2026-07-05 (dead fallback, see step 10 below)
 
 // STOP_WORDS, AUXILIARY_SKIP extracted to src/normalizationEngine.js
@@ -124,6 +124,71 @@ import { assembleSentenceSOV, assembleGrammar, translateIfClause, translateMulti
 //  - a bare passthrough (nothing resolved at all): return the input unchanged
 //    with confidence 0 and `unresolved: true` instead of 'x [UNKNOWN]'.
 // Anything else keeps the existing visible-gap marker (tests rely on it).
+// Closed test for "this word opens a predicate": an auxiliary/copula, a
+// known verb lemma, an irregular verb form, or a few common intransitives
+// missing from VERB_LEMMAS. Deliberately no Garo-suffix guessing, so noun
+// phrases ("two red apples", "three sugar cane") never qualify.
+const PREDICATE_AUX = /^(am|is|are|was|were|be|been|will|would|shall|should|can|could|may|might|must|do|does|did|have|has|had|not|never)$/;
+const PREDICATE_EXTRA_VERBS = new Set(['sleep', 'run', 'sit', 'sing', 'dance', 'read', 'write', 'live', 'stay', 'rest', 'die', 'look', 'eat', 'drink', 'go', 'come', 'came', 'went', 'ate', 'drank', 'ran', 'slept']);
+function startsWithPredicate(w0) {
+  const stems = [w0, w0.replace(/(ing|ed|es|s)$/, ''), w0.replace(/ed$/, 'e')];
+  return PREDICATE_AUX.test(w0)
+    || stems.some(x => VERB_LEMMAS.has(x) || PREDICATE_EXTRA_VERBS.has(x) || IRREGULAR_VERBS_COUNTED[x] !== undefined);
+}
+
+// 2026-10-19 (Claude B): noun-subject clause -> object -ko, tense and
+// negation via the verified grammar-assembly path. Translate the clause with
+// a pronoun in place of the subject noun phrase, then put the subject (with
+// -rang when it is a regular plural) where the pronoun stood. Only the
+// shape [time adverb] [the|a|an] [possessive] NOUN + predicate, no numeral
+// anywhere (counted subjects are Formula B, translateCountedSubjectClause).
+// Any doubt returns null and the existing cascade is unchanged.
+const NOUN_SUBJECT_DETERMINERS = new Set(['the', 'a', 'an']);
+const NOUN_SUBJECT_POSSESSIVES = new Set(['my', 'your', 'his', 'her', 'our', 'their']);
+async function translateNounSubjectClause(cleaned) {
+  const tokens = String(cleaned).toLowerCase().replace(/[.!?,;]+$/g, '').split(/\s+/).filter(Boolean);
+  const isNum = w => /^\d+$/.test(w) || NUMBER_WORDS[w] !== undefined || w === 'hundred' || w === 'thousand';
+  if (tokens.length < 3 || tokens.some(isNum)) return null;
+  // Single simple clause only: no internal punctuation, no question, no
+  // conjunction/subordinator (those have their own paths).
+  if (/[,;?]/.test(String(cleaned).replace(/[.!?,;]+$/g, '')) || /\?/.test(String(cleaned))) return null;
+  if (tokens.some(w => /^(and|or|but|if|because|when|while|that|so|then|who|which|whom|whose|than)$/.test(w))) return null;
+  let i = 0;
+  let prefixGaro = null;
+  if (COUNTED_CLAUSE_TIME_ADVERBS.has(tokens[0])) {
+    prefixGaro = lookupGaro(tokens[0]);
+    if (!prefixGaro) return null;
+    i = 1;
+  }
+  if (NOUN_SUBJECT_DETERMINERS.has(tokens[i])) i++;
+  let possGaro = null;
+  if (NOUN_SUBJECT_POSSESSIVES.has(tokens[i])) {
+    possGaro = lookupGaro(tokens[i]);
+    if (!possGaro) return null;
+    i++;
+  }
+  const nounTok = tokens[i];
+  const rest = tokens.slice(i + 1);
+  if (!nounTok || !rest.length) return null;
+  if (nounTok in PRONOUN_MAP || STOP_WORDS.has(nounTok) || PREDICATE_AUX.test(nounTok)) return null;
+  if (!startsWithPredicate(rest[0])) return null;
+  const subj = resolveSubjectNoun(nounTok);
+  if (!subj) return null;
+  const pron = subj.plural ? 'they' : 'he';
+  const inner = await translate(`${pron} ${rest.join(' ')}`);
+  if (!inner || inner.method !== 'grammar-assembly' || !inner.garo || inner.garo.includes('[UNKNOWN]')) return null;
+  const pronGaro = PRONOUN_MAP[pron];
+  if (!pronGaro || !inner.garo.toLowerCase().startsWith(pronGaro.toLowerCase() + ' ')) return null;
+  const tail = inner.garo.slice(pronGaro.length + 1).trim();
+  if (!tail) return null;
+  // A noun that is not sentence-initial loses the dictionary's capital.
+  const subjText = (possGaro || prefixGaro) ? subj.garo.charAt(0).toLowerCase() + subj.garo.slice(1) : subj.garo;
+  let garo = `${possGaro ? possGaro + ' ' : ''}${subjText} ${tail}`;
+  if (prefixGaro) garo = `${prefixGaro} ${garo}`;
+  else garo = garo.charAt(0).toUpperCase() + garo.slice(1);
+  return { garo, method: 'noun-subject-clause', confidence: 0.8 };
+}
+
 const COUNTED_CLAUSE_TIME_ADVERBS = new Set(['today', 'yesterday', 'tomorrow', 'now']);
 async function translateCountedSubjectClause(cleaned) {
   const tokens = String(cleaned).toLowerCase().replace(/[.!?,;]+$/g, '').split(/\s+/).filter(Boolean);
@@ -145,13 +210,7 @@ async function translateCountedSubjectClause(cleaned) {
   // a few common intransitives missing from VERB_LEMMAS. Deliberately a
   // closed test (no Garo-suffix guessing), so noun phrases such as
   // "two red apples", "two big dogs", "three sugar cane" stay out.
-  const w0 = rest[0];
-  const AUX = /^(am|is|are|was|were|be|been|will|would|shall|should|can|could|may|might|must|do|does|did|have|has|had|not|never)$/;
-  const EXTRA_VERBS = new Set(['sleep', 'run', 'sit', 'sing', 'dance', 'read', 'write', 'live', 'stay', 'rest', 'die', 'look', 'eat', 'drink', 'go', 'come', 'came', 'went', 'ate', 'drank', 'ran', 'slept']);
-  const stems = [w0, w0.replace(/(ing|ed|es|s)$/, ''), w0.replace(/ed$/, 'e')];
-  const looksPredicate = AUX.test(w0)
-    || stems.some(x => VERB_LEMMAS.has(x) || EXTRA_VERBS.has(x) || IRREGULAR_VERBS_COUNTED[x] !== undefined);
-  if (!looksPredicate) return null;
+  if (!startsWithPredicate(rest[0])) return null;
   const counting = parseCountingPhrase(tokens.slice(start, start + k + 1).join(' '));
   if (!counting || counting.unit || !counting.count) return null;
   // A multi-word noun that is itself a dictionary entry ("sugar cane") is a
@@ -621,6 +680,11 @@ async function translateCore(input) {
   // where this fallback path had zero negation awareness (fixed earlier)
   // and, as of RC-CANDIDATE-018, zero future-tense awareness either.
   const sov = assembleSentenceSOV(words, grammar?.isNegative || false, grammar?.detectedTense || 'present');
+  // Noun-subject clause via the verified pronoun path (object -ko, tense,
+  // negation). Used only when it actually differs from the fallback's own
+  // result ignoring case, so purely cosmetic casing never causes churn.
+  const nounSubjectClause = await translateNounSubjectClause(cleaned);
+  if (nounSubjectClause && (!sov || nounSubjectClause.garo.toLowerCase() !== sov.toLowerCase())) return nounSubjectClause;
   if (sov) return { garo: sov, method: 'sov-assembly', confidence: 0.75 };
 
   // 6.5 Grammar-assembly, unknown-tolerant (2026-09-23, Claude B,

@@ -21,3 +21,8 @@ Not done / for others:
 - Bare plurals: unchanged, Q-a open.
 - `stories`, `knives`, `potatoes`, `fish` skipped because plural and singular lookups differ or are unchanged; irregular verbs/adjectives never touched.
 - Definiteness and vowel/consonant alternation of -rang: no evidence, plain concatenation.
+
+## Addendum 2026-10-19: object -ko on noun-subject sentences
+`translateNounSubjectClause()` in `src/translationEngine.js` (tests `tests/unit/noun_subject_object_ko.test.js`). A noun-subject clause used to fall to `assembleSentenceSOV`, which has no object -ko and sometimes misordered the sentence (`my cats drink water` -> `... ringa chi`). Now the clause is translated with a pronoun placeholder (`they`/`he`) through the verified grammar-assembly path (object -ko, tense, negation), then the subject noun phrase replaces the pronoun; regular plurals get -rang via `resolveSubjectNoun()` (sentenceBuilder.js, same guards as `subjectRangForm`).
+Shape: `[time adverb] [the|a|an] [possessive] NOUN + predicate`, one simple clause, no numeral, no question, no conjunction. Used only when its result differs from the fallback ignoring case. Examples: `cats eat rice` -> `Menggorang mi·ko Cha·a`; `my cats drink water` -> `Angni menggorang chi·ko Ringa`; `cats see dogs` -> `Menggorang achakrang·ko Nika`; `dogs go home` -> `Achakrang nok·ko rea`.
+Snapshot diff over 2,944 outputs: 90 changed, all noun-subject clauses with a transitive or locative predicate; intransitives and copulas unchanged. Shared predicate test `startsWithPredicate()` is also used by the counted-subject handler.

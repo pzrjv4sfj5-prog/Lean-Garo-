@@ -11,7 +11,7 @@ import { translate } from '../../src/translationEngine.js';
 // and are never touched here; bare standalone plurals are never touched.
 
 const GENERATED = [
-  ['cats eat rice', 'Menggorang mi cha·a'],
+  ['cats eat rice', 'Menggorang mi·ko Cha·a'],
   ['dogs sleep', 'Achakrang tusia'],
   ['pigs sleep', 'Wakrang tusia'],
   ['students run', 'Chattrorang kata'],
@@ -30,10 +30,10 @@ for (const [en, garo] of GENERATED) {
 // Must stay exactly as before (no -rang): lexicalized plurals, non-plural
 // -s words, singular nouns, verbs ending in -s, bare plurals, counted nouns.
 const UNCHANGED = [
-  ['children eat rice', 'Bi·sarang mi cha·a'],   // lexicalized plural
+  ['children eat rice', 'Bi·sarang mi·ko Cha·a'],   // lexicalized plural
   ['friends came', 'cham·e re·ba·aha'],           // lexicalized plural
   ['news today', 'Gital da.alo'],                 // "news" is not plural "new"
-  ['mother eats rice', 'a.ai mi cha·a'],          // verb "eats" is not a plural noun
+  ['mother eats rice', 'A.ai mi·ko Cha·a'],          // verb "eats" is not a plural noun
   ['his dog eats', 'Uni achak cha·a'],            // singular subject
   ['he eats rice', 'Ua mi·ko Cha·a'],
   ['two dogs eat rice', 'Achak mang·gni mi·ko Cha·a'], // counted: Formula B (see counted_subject_formula_b.test.js), never -rang
