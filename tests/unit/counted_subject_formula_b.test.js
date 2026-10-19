@@ -15,7 +15,7 @@ const COUNTED = [
   ['two dogs eat rice', 'Achak mang·gni mi·ko Cha·a'],
   ['one dog eats rice', 'Achak mang·sa mi·ko Cha·a'],
   ['two people eat rice', 'Mande sakgni mi·ko Cha·a'],
-  ['two books are heavy', 'Ki·tap king·gni je·et·je·et'],
+  ['two books are heavy', 'Ki·tap king·gni jria'],
   ['three birds sleep', 'Do·o mang·gittam Tusia'],
   ['today two dogs eat rice', 'Da.alo achak mang·gni mi·ko Cha·a'],
 ];
