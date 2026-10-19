@@ -36,7 +36,7 @@ const UNCHANGED = [
   ['mother eats rice', 'a.ai mi cha·a'],          // verb "eats" is not a plural noun
   ['his dog eats', 'Uni achak cha·a'],            // singular subject
   ['he eats rice', 'Ua mi·ko Cha·a'],
-  ['two dogs eat rice', 'achakrang mi·ko cha·a ge·gni'], // counted: classifier path, untouched
+  ['two dogs eat rice', 'Achak mang·gni mi·ko Cha·a'], // counted: Formula B (see counted_subject_formula_b.test.js), never -rang
   ['people work', 'mande dak·a'],                // suppletive English plural: regular -s plurals only
   ['my cats', 'Angni menggo'],                    // bare noun phrase, no predicate: not a sentence
   ['dogs', 'Achak'],                              // bare plural headword: no ruling, unchanged

@@ -47,8 +47,9 @@ import CONFIRMED_LOANWORDS_RAW from './data/confirmed_loanwords.json' with { typ
 const CONFIRMED_LOANWORDS = new Set(CONFIRMED_LOANWORDS_RAW.words.map(w => w.toLowerCase()));
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
+import IRREGULAR_VERBS_COUNTED from './data/irregular_verbs.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
-import { countNoun, countNounWithClassifier, parseCountingPhrase, getClassifier, isUnverifiedCompoundGuess } from './garo_classifier.js';
+import { countNoun, countNounWithClassifier, parseCountingPhrase, getClassifier, isUnverifiedCompoundGuess, NUMBER_WORDS } from './garo_classifier.js';
 import { toGaroNumber as toGaroNumberBare } from './number_engine.js';
 import { corrections, normalizeEntry, EN_INDEX, lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
 import { applyNegation } from './morphologyEngine.js';
@@ -123,6 +124,59 @@ import { assembleSentenceSOV, assembleGrammar, translateIfClause, translateMulti
 //  - a bare passthrough (nothing resolved at all): return the input unchanged
 //    with confidence 0 and `unresolved: true` instead of 'x [UNKNOWN]'.
 // Anything else keeps the existing visible-gap marker (tests rely on it).
+const COUNTED_CLAUSE_TIME_ADVERBS = new Set(['today', 'yesterday', 'tomorrow', 'now']);
+async function translateCountedSubjectClause(cleaned) {
+  const tokens = String(cleaned).toLowerCase().replace(/[.!?,;]+$/g, '').split(/\s+/).filter(Boolean);
+  let start = 0;
+  let prefixGaro = null;
+  if (COUNTED_CLAUSE_TIME_ADVERBS.has(tokens[0])) {
+    prefixGaro = lookupGaro(tokens[0]);
+    if (!prefixGaro) return null;
+    start = 1;
+  }
+  const isNum = w => /^\d+$/.test(w) || NUMBER_WORDS[w] !== undefined || w === 'hundred' || w === 'thousand';
+  let k = 0;
+  while (start + k < tokens.length && isNum(tokens[start + k])) k++;
+  if (k === 0 || start + k >= tokens.length - 1) return null; // need noun AND a following clause
+  const rest = tokens.slice(start + k + 1);
+  if (!rest.length || rest[0] === 'of') return null;
+  // The clause after the counted noun must open with a predicate: an
+  // auxiliary/copula, a known verb lemma, an irregular verb form, or one of
+  // a few common intransitives missing from VERB_LEMMAS. Deliberately a
+  // closed test (no Garo-suffix guessing), so noun phrases such as
+  // "two red apples", "two big dogs", "three sugar cane" stay out.
+  const w0 = rest[0];
+  const AUX = /^(am|is|are|was|were|be|been|will|would|shall|should|can|could|may|might|must|do|does|did|have|has|had|not|never)$/;
+  const EXTRA_VERBS = new Set(['sleep', 'run', 'sit', 'sing', 'dance', 'read', 'write', 'live', 'stay', 'rest', 'die', 'look', 'eat', 'drink', 'go', 'come', 'came', 'went', 'ate', 'drank', 'ran', 'slept']);
+  const stems = [w0, w0.replace(/(ing|ed|es|s)$/, ''), w0.replace(/ed$/, 'e')];
+  const looksPredicate = AUX.test(w0)
+    || stems.some(x => VERB_LEMMAS.has(x) || EXTRA_VERBS.has(x) || IRREGULAR_VERBS_COUNTED[x] !== undefined);
+  if (!looksPredicate) return null;
+  const counting = parseCountingPhrase(tokens.slice(start, start + k + 1).join(' '));
+  if (!counting || counting.unit || !counting.count) return null;
+  // A multi-word noun that is itself a dictionary entry ("sugar cane") is a
+  // counted noun phrase, not a clause: leave it to the classifier path.
+  const wholeTail = parseCountingPhrase(tokens.slice(start).join(' '));
+  if (wholeTail && wholeTail.englishNoun !== counting.englishNoun
+      && !corrections?.[wholeTail.englishNoun]
+      && (lookupPhrase(wholeTail.englishNoun) || EN_INDEX[wholeTail.englishNoun])) return null;
+  const garoNoun = lookupPhrase(counting.englishNoun) || lookupGaro(counting.englishNoun);
+  if (!garoNoun) return null;
+  const counted = countNoun(garoNoun, counting.count, counting.englishNoun);
+  if (!counted) return null;
+  const pron = counting.count === 1 ? 'he' : 'they';
+  const inner = await translate(`${pron} ${rest.join(' ')}`);
+  if (!inner || inner.method !== 'grammar-assembly' || !inner.garo || inner.garo.includes('[UNKNOWN]')) return null;
+  const pronGaro = PRONOUN_MAP[pron];
+  if (!pronGaro || !inner.garo.toLowerCase().startsWith(pronGaro.toLowerCase() + ' ')) return null;
+  const tail = inner.garo.slice(pronGaro.length + 1).trim();
+  if (!tail) return null;
+  let garo = `${counted} ${tail}`;
+  if (prefixGaro) garo = `${prefixGaro} ${garo}`;
+  else garo = garo.charAt(0).toUpperCase() + garo.slice(1);
+  return { garo, method: 'counted-subject-clause', confidence: 0.8 };
+}
+
 export async function translate(input) {
   let result = await translateCore(input);
   // R6/R7: sov-assembly joins dictionary headwords, which carry their own
@@ -321,6 +375,21 @@ async function translateCore(input) {
   if (exactPhrase) return { garo: exactPhrase, method: 'exact-phrase', confidence: capLookupConfidence(lower, 0.98) };
 
   // 1.6 Classifier counting — "2 dogs", "one teacher", "5 birds"
+  // 2026-10-18 (Claude B): Formula B for a COUNTED SUBJECT inside a clause.
+  // Counting and plural are different: a specific count is
+  // [untouched root noun] + [classifier + number], adjacent to the noun
+  // (achak mang·gni), and -rang is never combined with it. Before this,
+  // parseCountingPhrase swallowed the whole clause as the "noun"
+  // ("two dogs eat rice" -> "achakrang miko chaa gegni", "two people eat
+  // rice" -> "mi gegni", subject dropped). Approach: translate the clause
+  // with a pronoun in place of the counted noun phrase through the verified
+  // grammar-assembly path (verb, tense, negation, object -ko all handled
+  // there), then put the counted phrase where the pronoun stood. Any doubt
+  // (not grammar-assembly, pronoun not first, unresolved noun, unit word)
+  // falls through to the existing cascade unchanged.
+  const countedClause = await translateCountedSubjectClause(cleaned);
+  if (countedClause) return countedClause;
+
   const countPhrase = parseCountingPhrase(cleaned);
   if (countPhrase) {
     // Bug 5 fix (2026-09-12, Claude B): countPhrase.englishNoun is
