@@ -20,6 +20,10 @@ claims:
       (Da.alo, with variant Da·al) but the base/locative split itself is
       not a native quote. Supersedes the PO scenario 3 string
       Da·al achak manggni mi·ko cha·a (2026-10-18) for event sentences.
+  - scope: "relation to RULE-042 (-de 'at that time'): native sentences already use Da·alde / Mijalde / Knalde + bajalchi re·angen*; -o and -de are both attested on time words, so the addendum's 'must add -o' is not exclusive"
+    status: needs_native_validation
+    confidence: n/a
+    status_note: "Open: when -o versus -de is used (same frame, 'today I will go to the market'). Not resolved by the addendum."
   - scope: "generalization to other time words (tomorrow knal/knalo, etc.)"
     status: unknown
     confidence: n/a
@@ -30,7 +34,7 @@ counterexamples:
   note: "none identified; open conflict noted below."
   items: []
 po_provided_examples_not_native_attested:
-  - "Mijalo anga bajal re·anga. (I went to the market yesterday.) CONFLICT: verified sentences use bajalchi (Anga bajalchi re·angenga, NV-060 Hai bajalchi re·na); not added to the dictionary."
+  - "Mijalo anga bajal re·anga. (I went to the market yesterday.) Resolved by NV-172: not a conflict. bajalchi (-chi = to the market) is the generation default; bajal with -chi dropped is a Project Owner-provided colloquial form, untested natively (RULE-044). Not added as a dictionary row."
   - "Da·alo anga mi cha·a. (Today I eat rice.) Not added as a row; engine already gives Da.alo anga mi cha·a for 'today I eat rice'."
 launch_priority:
   - scope: null

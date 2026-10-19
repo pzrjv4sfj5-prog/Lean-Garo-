@@ -7680,3 +7680,11 @@ Source: Project Owner pasted "SYSTEM UPDATE ADDENDUM: TEMPORAL NOUNS AND THE LOC
 - **Not applied:** isolated `today` stays `Da.alo` (a data pin leaks into sentences and breaks the rule). Engine split handed to Claude B (`docs/HANDOFF_CLAUDE_B_20261019_temporal_locative.md`).
 - **Conflict held:** addendum example `Mijalo anga bajal re·anga` vs verified `bajalchi ... re·angenga`; no row added, PO to rule.
 - **Resolves** the open `today` Da·al vs Da.alo question (both valid; Da·al base, Da·alo locative). The 2026-10-18 scenario 3 string `Da·al achak manggni ...` is superseded for event sentences.
+
+## NV-172 (2026-10-19, Project Owner pasted addendum: directional suffix -chi vs base noun)
+
+Source: Project Owner pasted "SYSTEM UPDATE ADDENDUM: DIRECTIONAL SUFFIX (-chi) VS. BASE NOUN", asking Claude to acknowledge and track -chi as a directional destination marker. Provenance: Project Owner-provided, no native attribution.
+
+- **Already native-supported, no data change:** `-chi` = goal of movement (RULE-044, given directly by Thangseng; RULE-009/030); `bajal` = market, `bajalchi` = to the market (NV-051/052/060 and the verified sentences `Anga bajalchi re·angenga`, `Hai bajalchi re·na`); `nang'chi` = to you (NV-107). Restated in RULE-044 (`po_addendum_20261019`).
+- **Project Owner-provided, untested natively:** speakers often drop `-chi` when `re·anga` makes the destination obvious (`Mijalo anga bajal re·anga`). Recorded as such; no dictionary row added. Resolves the `bajal` vs `bajalchi` question raised after NV-171: not a conflict. Parsing treats both as valid; generation defaults to `-chi` (engine already does).
+- **Correction to NV-171 / RULE-053:** native sentences in RULE-042 already put the time suffix `-de` on Da·al / Mijal / Knal (`Mijalde bajalchi re·anga`). `-o` and `-de` are both attested on time words, so "event + time must take -o" is not exclusive. Which one applies when is open; RULE-053 now says so. No runtime change.

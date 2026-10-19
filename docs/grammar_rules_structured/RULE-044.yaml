@@ -150,3 +150,15 @@ native_notes: >-
 last_updated: "2026-08-10"
 updated_by: "Claude A"
 source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-047 (CLOSED), NV-051 (CLOSED), NV-052 (CLOSED), NV-054 (CLOSED), NV-056 (CLOSED), and NV-071 follow-up (CLOSED, 2026-08-10)"
+po_addendum_20261019:
+  provenance: "Project Owner pasted addendum 2026-10-19 (NV-172), no native attribution."
+  restated_from_native_evidence: "-chi marks a destination/goal of movement (this rule, NV-054; bajalchi = to the market in the verified sentences Anga bajalchi re·angenga and Hai bajalchi re·na; nang'chi = to you in the native sentence of NV-107). bajal = market (the place), bajalchi = to/towards the market."
+  po_provided_not_native_attested: >-
+    The claim that native speakers frequently drop -chi when re·anga already
+    makes the destination obvious (Mijalo anga bajal re·anga = I went to the
+    market yesterday) is Project Owner-provided and untested natively.
+  generation_and_parsing: >-
+    Parsing: treat both [Noun] + re·anga and [Noun]-chi + re·anga as valid.
+    Generation: default to -chi for physical destinations (bajalchi).
+    Not an open conflict: bajal and bajalchi are different forms, not
+    competing spellings of one word.
