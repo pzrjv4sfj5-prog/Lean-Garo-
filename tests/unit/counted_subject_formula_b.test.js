@@ -12,12 +12,12 @@ import { translate } from '../../src/translationEngine.js';
 // "two people eat rice" gave "mi gegni" (subject dropped).
 
 const COUNTED = [
-  ['two dogs eat rice', 'Achak mang·gni mi·ko Cha·a'],
-  ['one dog eats rice', 'Achak mang·sa mi·ko Cha·a'],
-  ['two people eat rice', 'Mande sakgni mi·ko Cha·a'],
+  ['two dogs eat rice', 'Achak mang·gni miko Cha·a'],
+  ['one dog eats rice', 'Achak mang·sa miko Cha·a'],
+  ['two people eat rice', 'Mande sakgni miko Cha·a'],
   ['two books are heavy', 'Ki·tap king·gni jria'],
   ['three birds sleep', 'Do·o mang·gittam Tusia'],
-  ['today two dogs eat rice', 'Da·alo achak mang·gni mi·ko Cha·a'] // RULE-053 2026-10-20: time word takes -o,
+  ['today two dogs eat rice', 'Da·alo achak mang·gni miko Cha·a'] // RULE-053 2026-10-20: time word takes -o,
 ];
 for (const [en, garo] of COUNTED) {
   test(`counted subject (Formula B): "${en}"`, async () => {
@@ -38,7 +38,7 @@ const UNCHANGED = [
   ['two kg of rice', 'merong kg gni'],
   ['two cups of tea', 'cha ge·gni'],
   ['i see two dogs', 'Anga achak mang·gni·ko Nika'],
-  ['dogs eat rice', 'Achakrang mi·ko cha·a'],
+  ['dogs eat rice', 'Achakrang miko cha·a'],
 ];
 for (const [en, garo] of UNCHANGED) {
   test(`counting guard unchanged: "${en}"`, async () => {

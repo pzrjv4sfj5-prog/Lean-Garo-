@@ -175,7 +175,7 @@ const REGRESSION_CASES = [
   // Thangseng relay 2026-10-18 (via Tridip WhatsApp): subject-position
   // plurals take -rang. Exact sentences only; general subject-slot -rang
   // generation (noun-subject sov-assembly path) is NOT built, needs PO go-ahead.
-  { in: 'dogs eat rice', expectGaro: 'Achakrang mi·ko cha·a', expectMethod: ['correction'] },
+  { in: 'dogs eat rice', expectGaro: 'Achakrang miko cha·a', expectMethod: ['correction'] },
   { in: 'my books are heavy', expectGaro: 'Angni lekkarang jria', expectMethod: ['correction'] },
 
   // RC-CANDIDATE-015 fix (2026-07-25, Claude B): master_dictionary.json's
@@ -527,11 +527,11 @@ test('RC-CANDIDATE-018(a): NP-subject future reaches grammar-assembly, ·gen suf
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('the dog will eat rice');
   assert.equal(r.method, 'grammar-assembly');
-  assert.equal(r.garo, 'Achak mi·ko Cha·gen');
-  // object ("mi·ko") between subject ("Achak") and verb ("Cha·gen") —
+  assert.equal(r.garo, 'Achak miko Cha·gen');
+  // object ("miko") between subject ("Achak") and verb ("Cha·gen") —
   // Project Owner directive root cause 5, SOV order preserved.
-  assert.ok(r.garo.indexOf('mi·ko') > r.garo.indexOf('Achak'));
-  assert.ok(r.garo.indexOf('Cha·gen') > r.garo.indexOf('mi·ko'));
+  assert.ok(r.garo.indexOf('miko') > r.garo.indexOf('Achak'));
+  assert.ok(r.garo.indexOf('Cha·gen') > r.garo.indexOf('miko'));
 });
 
 test('RC-CANDIDATE-018(a) regression guard: pronoun-subject future unaffected by the coherence-check widening', async () => {

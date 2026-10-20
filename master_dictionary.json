@@ -78628,11 +78628,11 @@
   },
   {
     "english": "dogs eat rice",
-    "garo": "Achakrang mi·ko cha·a",
+    "garo": "Achakrang miko cha·a",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-169, Thangseng direct native answer via Tridip WhatsApp relay 2026-10-18 (docs/THANGSENG_RELAY_ANSWERS_20261018.md). Native example of -rang on a subject noun. Thangseng typed miko (no dot); stored as mi·ko per the repo object-marker orthography (same as Anga mi·ko Cha·a), as Claude B did in corrections.json. Dot placement is a normalization, not a separate native claim.",
+    "notes": "VERIFIED/HIGH — NV-169, Thangseng direct native answer via Tridip WhatsApp relay 2026-10-18 (docs/THANGSENG_RELAY_ANSWERS_20261018.md). Native example of -rang on a subject noun. Thangseng typed miko (no dot); stored as mi·ko per the repo object-marker orthography (same as Anga mi·ko Cha·a), as Claude B did in corrections.json. Dot placement is a normalization, not a separate native claim. UPDATED NV-179 (2026-10-20): Project Owner direct in chat, \"miko does not have a raka\". Spelling now miko (no dot), matching what Thangseng typed; the earlier mi·ko was a repo normalization, not a native claim.",
     "confidence": "verified_high"
   },
   {

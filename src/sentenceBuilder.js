@@ -541,12 +541,14 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   // — since the possessor, not the object, carries the case marking in
   // this existential construction. See comment at parts.push(subject).
   const objMarker = isPossessionConstruction ? '' : (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked || grammar.purposeAction) ? '' : '·ko';
+  // PO 2026-10-20 (NV-179 pending): 'mi' + ko is written 'miko', no raka dot.
+  const koMarker = (t, m) => (m === '·ko' && String(t).toLowerCase() === 'mi') ? 'ko' : m;
   if (grammar.possessive && grammar.object) {
     const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
-    parts.push(grammar.possessive.garo + ' ' + objText + objMarker);
+    parts.push(grammar.possessive.garo + ' ' + objText + koMarker(objText, objMarker));
   } else if (grammar.object) {
     const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
-    parts.push(objText + objMarker);
+    parts.push(objText + koMarker(objText, objMarker));
   }
 
   // Purpose clause
@@ -714,7 +716,7 @@ export async function translateIfClause(input) {
     // "Mikode" example exactly; this is the suffix-juncture, not the
     // verb-stem rule, so stripToStem is NOT used here).
     for (let i = 0; i < verbIdx; i++) {
-      if (/·ko$/i.test(condWords[i])) {
+      if (/·ko$/i.test(condWords[i]) || /^miko$/i.test(condWords[i])) {
         condWords[i] = condWords[i].replace(/·ko$/i, 'ko') + 'de';
       }
     }

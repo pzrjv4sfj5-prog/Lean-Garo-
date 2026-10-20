@@ -7667,6 +7667,8 @@ Source: `docs/THANGSENG_RELAY_ANSWERS_20261018.md` (verbatim). Question: "Dogs e
 - **`mi·ko` orthography:** the native typed `miko` (no dot). Stored as `mi·ko` per the repo object-marker spelling (`Anga mi·ko Cha·a`), as Claude B did. Dot placement is normalization, not a separate native claim.
 - **`Da·mo, anga mi cha·kuna` = "Wait, let me eat"** (Thangseng via PO, 2026-10-18): master row `wait, let me eat` added (Claude B already had it in corrections). RULE-036 orphan resolved.
 
+> Pointer (2026-10-20): the `mi·ko` spelling in this entry was revised to `miko` (no raka) by NV-179.
+
 ## NV-170 (2026-10-19, Project Owner direct chat answer)
 
 Source: Project Owner in chat, no transcript; direct statement counts as the citation. Verbatim: "Biko sandibo is fine search for him or look for him". Provenance label: Project Owner-confirmed (not a Thangseng quote). Answers open issue 1 from the 2026-10-17 migration doc.
@@ -7751,3 +7753,12 @@ Source: Project Owner pasted "NV-178 RESOLUTIONS (PARTIAL)" and asked for the an
 - **Item 12, adjectives:** absolute rule: pre-noun `-gipa`, post-noun/predicate `-a`; `Dal·a achak` is structurally wrong. RULE-006 updated.
 - **Item 13, -bo:** same form for one or many listeners. RULE-029 claim moved from po_provided/low to verified/medium. **Item 14:** `Hai sakprak Agana skiebo` = "come on, practice speaking!", an imperative; `Hai` = urging, not "let us". The legacy row glossed "let us practice garo together" is superseded (retained); new row `come on, practice speaking!`. `phrase_maps.js` still maps the old English key to the same Garo, so output is unchanged (Claude B can retire the key).
 
+## NV-179 (2026-10-20, Project Owner correction: `miko` has no raka; `dogs eat rice today`)
+
+Source: Project Owner in chat: "dogs eat rice today=Achakrang da·alo mi·ko Cha·a, miko does not have a raka". Provenance: Project Owner-provided, direct in chat; not a native quote.
+
+1. **`miko` (mi + -ko, rice as object) is written without a raka dot.** Consistent with the NV-169 note that Thangseng typed `miko`; the earlier `mi·ko` was a repo normalization. Applied narrowly to the stem `mi`: engine object marker (`sentenceBuilder.js`, `grammarEngine.js`), `-ode` junction (`mikode`), `dogs eat rice` and `i have eaten food` pins, master NV-169 row updated. Superseded rows (e.g. `Anga mi·ko sikenga`) left as is.
+2. **Not applied: the PO's word order.** The PO's example puts `da·alo` after the subject (`Achakrang da·alo miko cha·a`). The engine and `temporal_locative_o.test.js` put the time word first (`Da·alo achakrang miko cha·a`). No exact-phrase row added; only the `miko` spelling changed. Awaiting PO confirmation of time-word position.
+3. **Open (PO):** does the no-dot rule extend to other `-ko` objects, or is `mi` special? The engine still writes `X·ko` for all other nouns.
+4. **Open (Claude B / PO):** time-word position (before vs after the subject).
+5. Pointer added under NV-169. The Thangseng synonym ties 1-5 and bare "not" will be NV-180.

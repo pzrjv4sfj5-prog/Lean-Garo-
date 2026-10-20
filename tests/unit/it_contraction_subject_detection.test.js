@@ -85,5 +85,5 @@ test('regression guard: "she\'s eating" unaffected by this fix', async () => {
 
 test('regression guard: ordinary sentence "i eat rice" unaffected', async () => {
   const { garo } = await translate('i eat rice');
-  assert.equal(garo, 'Anga mi·ko Cha·a');
+  assert.equal(garo, 'Anga miko Cha·a');
 });

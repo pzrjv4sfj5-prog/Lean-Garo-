@@ -993,7 +993,7 @@ export function analyzeGrammar(input) {
           }
         }
       }
-      const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
+      const marker = objectIsLocativeAdjunct ? '·o' : (String(objGaro).toLowerCase() === 'mi' ? 'ko' : '·ko'); // 'miko': no raka (PO 2026-10-20)
       object = { english: objEng, garo: objGaro, withMarker: objGaro + marker, isLocativeAdjunct: objectIsLocativeAdjunct };
     }
 

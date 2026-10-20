@@ -11,8 +11,8 @@ import { translate } from '../../src/translationEngine.js';
 // holds a lexicalized plural (children -> Bi·sarang) is kept as is.
 
 const GENERATED = [
-  ['people eat rice', 'Manderang mi·ko Cha·a'],
-  ['men eat rice', 'Me·asarang mi·ko Cha·a'],
+  ['people eat rice', 'Manderang miko Cha·a'],
+  ['men eat rice', 'Me·asarang miko Cha·a'],
   ['women drink water', 'Me·chikrang chi·ko Ringa'],
   ['people are here', 'Manderang Iano'],
   ['the men are here', 'Me·asarang Iano'],
@@ -26,8 +26,8 @@ for (const [en, garo] of GENERATED) {
 
 const UNCHANGED = [
   ['children drink water', 'Bi·sarang chi·ko Ringa'], // lexicalized row kept
-  ['two people eat rice', 'Mande sakgni mi·ko Cha·a'],   // counted: Formula B
-  ['person eats rice', 'Mande mi·ko Cha·a'],             // singular
+  ['two people eat rice', 'Mande sakgni miko Cha·a'],   // counted: Formula B
+  ['person eats rice', 'Mande miko Cha·a'],             // singular
   ['people', 'mande'],                                   // bare plural headword: no ruling
 ];
 for (const [en, garo] of UNCHANGED) {

@@ -15,12 +15,12 @@ import { translate } from '../../src/translationEngine.js';
 const norm = (s) => String(s).toLowerCase().replace(/[^\p{L} ]/gu, '').replace(/\s+/g, ' ').trim();
 
 const EVENT = [
-  ['i eat rice today', 'Da·alo anga mi·ko cha·a'],
-  ['dogs eat rice today', 'Da·alo achakrang mi·ko cha·a'],
-  ['two dogs eat rice today', 'Da·alo achak manggni mi·ko cha·a'],
+  ['i eat rice today', 'Da·alo anga miko cha·a'],
+  ['dogs eat rice today', 'Da·alo achakrang miko cha·a'],
+  ['two dogs eat rice today', 'Da·alo achak manggni miko cha·a'],
   ['i went to the market yesterday', 'Mijalo anga bajalchi re·anga'],
-  ['i eat rice tomorrow', 'Knalo anga mi·ko cha·a'],
-  ['i eat rice now', 'Da·o anga mi·ko cha·a'],
+  ['i eat rice tomorrow', 'Knalo anga miko cha·a'],
+  ['i eat rice now', 'Da·o anga miko cha·a'],
 ];
 for (const [eng, garo] of EVENT) {
   test(`time word takes -o, object keeps -ko: ${eng}`, async () => {

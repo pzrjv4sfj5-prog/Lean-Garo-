@@ -52,7 +52,7 @@ test('"she is really happy" elects the real predicate ("happy") as the verb, not
 
 test('regression guard: ordinary object sentences are unaffected by the intensifier guard', async () => {
   const r = await translate('i eat rice');
-  assert.equal(r.garo, 'Anga mi\u00b7ko Cha\u00b7a');
+  assert.equal(r.garo, 'Anga miko Cha\u00b7a');
 });
 
 test('regression guard: "it is very hot" (attested construction) is unaffected by this fix', async () => {

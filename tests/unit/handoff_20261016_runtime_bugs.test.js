@@ -56,7 +56,7 @@ test('R8: constructed he/she output is deterministic (Ua); verified full-sentenc
 test('Item 8 / RULE-052: "slowly" is a bare adverb before the verb, never an -ko object; real objects survive', async () => {
   const a = await translate('I eat rice slowly');
   assert.ok(!a.garo.includes('sine·ko'), a.garo);
-  assert.ok(a.garo.includes('mi·ko'), `object "rice" must not be dropped: ${a.garo}`);
+  assert.ok(a.garo.includes('miko'), `object "rice" must not be dropped: ${a.garo}`);
   const b = await translate('I go to the market slowly');
   assert.ok(/Ka·sine re·a$/i.test(b.garo), b.garo);
 });
