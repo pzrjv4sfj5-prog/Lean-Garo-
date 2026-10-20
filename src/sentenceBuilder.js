@@ -585,6 +585,12 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   }
 
   if (parts.length < 2) return null;
+  // RULE-053 (2026-10-20): a time word leads the clause in its locative -o
+  // event form; the subject, no longer sentence-initial, loses its capital.
+  if (grammar.timeAdverb) {
+    parts[0] = parts[0].charAt(0).toLowerCase() + parts[0].slice(1);
+    parts.unshift(grammar.timeAdverb.garo);
+  }
   const result = parts.join(' ');
   // allowUnknown (2026-09-23, Claude B, engineering-only, confirmed live):
   // additive parameter, defaults to false so every existing caller and

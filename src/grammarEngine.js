@@ -9,6 +9,7 @@
  * after the move — see docs/ARCHITECTURE.md BACKLOG-003 Phase 5 entry.
  */
 
+import { TIME_ADVERB_FORMS, isTimeAdverb } from './garo_time_adverbs.js';
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
 import MODAL_CAN_MAP from './data/modal_can_map.json' with { type: 'json' };
@@ -137,6 +138,7 @@ export function analyzeGrammar(input) {
   }
 
   let subject = null, verb = null, object = null;
+  let timeAdverb = null; // RULE-053: time word takes locative -o, never object -ko (see garo_time_adverbs.js)
   let mannerAdverb = null; // RULE-052 (evidence-bound to 'slowly'): bare ADVERB before the verb, never an object
   // RC-CANDIDATE-033 resolution (2026-07-31, Claude B): this array was
   // flagged as "computed every call, never consumed" - true for the
@@ -701,6 +703,7 @@ export function analyzeGrammar(input) {
       // adverb 'Ka'sine' before the verb (no -ko). Capturing 'slowly' as the OBJECT
       // appended the accusative -ko and silently dropped real objects ('I eat rice
       // slowly'). Scope is limited to the one adverb the rule has evidence for.
+      if (isTimeAdverb(w) && !timeAdverb) { timeAdverb = { english: w, garo: TIME_ADVERB_FORMS[w].event }; continue; }
       if (w === 'slowly' && !mannerAdverb) {
         const g = lookupPhrase('slowly') || lookupGaro('slowly');
         if (g) { mannerAdverb = { english: 'slowly', garo: g }; continue; }
@@ -998,7 +1001,7 @@ export function analyzeGrammar(input) {
       wordCount, detectedTense, tenseEvidence, isNegative, isQuestion,
       garoTenseSuffix: null, // removed 2026-07-05, see comment above
       structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
-      subject, verb, object, possessive, purposeAction, location, reasonAdjunct, classifierHints, mannerAdverb,
+      subject, verb, object, possessive, purposeAction, location, reasonAdjunct, classifierHints, mannerAdverb, timeAdverb,
       garoWordOrder: 'SOV (Subject → Object → Verb)',
       notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
     };
@@ -1010,7 +1013,7 @@ export function analyzeGrammar(input) {
     wordCount, detectedTense, tenseEvidence, isNegative, isQuestion,
     garoTenseSuffix: null, // removed 2026-07-05, see comment above
     structure: subject ? 'SVO → SOV (Garo)' : 'unknown',
-    subject, verb, object, classifierHints, mannerAdverb,
+    subject, verb, object, classifierHints, mannerAdverb, timeAdverb,
     garoWordOrder: 'SOV (Subject → Object → Verb)',
     notes: wordCount === 1 ? 'Single word — direct lookup' : wordCount <= 3 ? 'Short phrase' : 'Complex sentence — SOV assembly',
   };

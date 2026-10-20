@@ -17,7 +17,7 @@ const COUNTED = [
   ['two people eat rice', 'Mande sakgni mi·ko Cha·a'],
   ['two books are heavy', 'Ki·tap king·gni jria'],
   ['three birds sleep', 'Do·o mang·gittam Tusia'],
-  ['today two dogs eat rice', 'Da.alo achak mang·gni mi·ko Cha·a'],
+  ['today two dogs eat rice', 'Da·alo achak mang·gni mi·ko Cha·a'] // RULE-053 2026-10-20: time word takes -o,
 ];
 for (const [en, garo] of COUNTED) {
   test(`counted subject (Formula B): "${en}"`, async () => {

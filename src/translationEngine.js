@@ -65,6 +65,7 @@ export { analyzeGrammar };
 // byte-identical 237-sentence stress benchmark diff. Circular import
 // (sentenceBuilder.js imports `translate` back from this file) — see
 // sentenceBuilder.js's header comment for why this is safe.
+import { TIME_ADVERB_FORMS, isTimeAdverb, splitLeadingTimeForm } from './garo_time_adverbs.js';
 import { assembleSentenceSOV, assembleGrammar, translateIfClause, translateMultiClause, resolveSubjectNoun } from './sentenceBuilder.js';
 // Gemini import removed 2026-07-05 (dead fallback, see step 10 below)
 
@@ -156,7 +157,7 @@ async function translateNounSubjectClause(cleaned) {
   let i = 0;
   let prefixGaro = null;
   if (COUNTED_CLAUSE_TIME_ADVERBS.has(tokens[0])) {
-    prefixGaro = lookupGaro(tokens[0]);
+    prefixGaro = TIME_ADVERB_FORMS[tokens[0]].event;
     if (!prefixGaro) return null;
     i = 1;
   }
@@ -178,8 +179,12 @@ async function translateNounSubjectClause(cleaned) {
   const inner = await translate(`${pron} ${rest.join(' ')}`);
   if (!inner || inner.method !== 'grammar-assembly' || !inner.garo || inner.garo.includes('[UNKNOWN]')) return null;
   const pronGaro = PRONOUN_MAP[pron];
-  if (!pronGaro || !inner.garo.toLowerCase().startsWith(pronGaro.toLowerCase() + ' ')) return null;
-  const tail = inner.garo.slice(pronGaro.length + 1).trim();
+  // RULE-053: a trailing time word comes back as a leading -o form; lift it.
+  let innerGaro = inner.garo;
+  const lead = splitLeadingTimeForm(innerGaro);
+  if (lead) { if (prefixGaro) return null; prefixGaro = lead.time; innerGaro = lead.rest; }
+  if (!pronGaro || !innerGaro.toLowerCase().startsWith(pronGaro.toLowerCase() + ' ')) return null;
+  const tail = innerGaro.slice(pronGaro.length + 1).trim();
   if (!tail) return null;
   // A noun that is not sentence-initial loses the dictionary's capital.
   const subjText = (possGaro || prefixGaro) ? subj.garo.charAt(0).toLowerCase() + subj.garo.slice(1) : subj.garo;
@@ -189,13 +194,13 @@ async function translateNounSubjectClause(cleaned) {
   return { garo, method: 'noun-subject-clause', confidence: 0.8 };
 }
 
-const COUNTED_CLAUSE_TIME_ADVERBS = new Set(['today', 'yesterday', 'tomorrow', 'now']);
+const COUNTED_CLAUSE_TIME_ADVERBS = { has: isTimeAdverb }; // RULE-053 forms: see garo_time_adverbs.js
 async function translateCountedSubjectClause(cleaned) {
   const tokens = String(cleaned).toLowerCase().replace(/[.!?,;]+$/g, '').split(/\s+/).filter(Boolean);
   let start = 0;
   let prefixGaro = null;
   if (COUNTED_CLAUSE_TIME_ADVERBS.has(tokens[0])) {
-    prefixGaro = lookupGaro(tokens[0]);
+    prefixGaro = TIME_ADVERB_FORMS[tokens[0]].event;
     if (!prefixGaro) return null;
     start = 1;
   }
@@ -238,8 +243,12 @@ async function translateCountedSubjectClause(cleaned) {
   const inner = await translate(`${pron} ${rest.join(' ')}`);
   if (!inner || inner.method !== 'grammar-assembly' || !inner.garo || inner.garo.includes('[UNKNOWN]')) return null;
   const pronGaro = PRONOUN_MAP[pron];
-  if (!pronGaro || !inner.garo.toLowerCase().startsWith(pronGaro.toLowerCase() + ' ')) return null;
-  const tail = inner.garo.slice(pronGaro.length + 1).trim();
+  // RULE-053: a trailing time word comes back as a leading -o form; lift it.
+  let innerGaro = inner.garo;
+  const lead = splitLeadingTimeForm(innerGaro);
+  if (lead) { if (prefixGaro) return null; prefixGaro = lead.time; innerGaro = lead.rest; }
+  if (!pronGaro || !innerGaro.toLowerCase().startsWith(pronGaro.toLowerCase() + ' ')) return null;
+  const tail = innerGaro.slice(pronGaro.length + 1).trim();
   if (!tail) return null;
   let garo = `${counted} ${tail}`;
   if (prefixGaro) garo = `${prefixGaro} ${garo}`;
@@ -248,6 +257,10 @@ async function translateCountedSubjectClause(cleaned) {
 }
 
 export async function translate(input) {
+  // RULE-053 (2026-10-20): isolated `today` is the base Da·al; the -o form is
+  // for event sentences only. Handled here, not as a data pin, because a pin
+  // would leak into sentence composition.
+  if (/^\s*today\s*[.!]?\s*$/i.test(String(input))) return { garo: TIME_ADVERB_FORMS.today.base, method: 'time-adverb-base', confidence: 0.98 };
   let result = await translateCore(input);
   // R6/R7: sov-assembly joins dictionary headwords, which carry their own
   // initial capital ('Nok', 'Chon·a'). Only the sentence-initial word keeps it.
