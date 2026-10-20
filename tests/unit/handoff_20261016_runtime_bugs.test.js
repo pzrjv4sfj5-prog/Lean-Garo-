@@ -61,11 +61,12 @@ test('Item 8 / RULE-052: "slowly" is a bare adverb before the verb, never an -ko
   assert.ok(/Ka·sine re·a$/i.test(b.garo), b.garo);
 });
 
-test('mit·am is fat (Project Owner 2026-10-16), never "some"', async () => {
-  assert.equal((await translate('fat')).garo, 'mit·am');
-  assert.equal((await translate('the pork meat has a lot of fat')).garo, 'Wak be·en mit·am bang·a');
+test('NV-177 (PO 2026-10-20, reverses NV-168): mitim is fat, mitam is some', async () => {
+  assert.equal((await translate('fat')).garo, 'mitim');
+  assert.equal((await translate('some')).garo, 'mitam');
+  assert.equal((await translate('the pork meat has a lot of fat')).garo, 'Wak be·en mitim bang·a');
   for (const input of ['some', 'some books', 'some rice']) {
-    assert.ok(!(await translate(input)).garo.toLowerCase().includes('mit·am'), input);
+    assert.ok(!(await translate(input)).garo.toLowerCase().includes('mitim'), input);
   }
 });
 

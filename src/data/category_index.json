@@ -4056,5 +4056,15 @@
   "search for her": "phrases",
   "search for her!": "phrases",
   "look for her": "phrases",
-  "look for her!": "phrases"
+  "look for her!": "phrases",
+  "fat": "general",
+  "the pork meat has a lot of fat": "general",
+  "a big dog is sleeping": "phrases",
+  "the car is beautiful": "phrases",
+  "that house is very big": "phrases",
+  "i see him": "phrases",
+  "i see her": "phrases",
+  "i look at him": "phrases",
+  "i look at her": "phrases",
+  "look (directional gaze)": "verbs"
 }

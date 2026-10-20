@@ -7644,6 +7644,9 @@ Still unconfirmed (no data created for them): whether `mitim` is a spelling vari
 
 ## NV-168 (2026-10-16, Project Owner direct chat answer)
 
+> **Partly reversed by NV-177 (2026-10-20):** the PO now says `mitam` = some and `mitim` = fat. See NV-177 item 4.
+
+
 Source: Project Owner in chat, no transcript; direct statement counts as the citation. Verbatim: "1. Mitam is the right spelling, rarasa= means a lot, same like bang·a". Answers the two questions left open by NV-167.
 
 - **`mitim` is a misspelling; `mit·am` is correct.** Row `Wak be·enan mitim rarasa` retained and tagged SUPERSEDED; new variant row `Wak be·enan mit·am rarasa` added (be·enan confirmed in NV-167). Primary for the sentence is unchanged: `Wak be·en mit·am bang·a`.
@@ -7714,6 +7717,8 @@ Source: Project Owner in chat: "search for her will be the same ... There is no 
 
 ## NV-176 (2026-10-19, Project Owner pasted "System rule update": pronouns, sight verbs, adjectives, quantifiers)
 
+> **RESOLVED by NV-177 (2026-10-20):** the adjective-order conflict was two suffix patterns (-a post-noun, -gipa pre-noun); the rest was applied as PO-provided.
+
 Source: Project Owner pasted rule update with four parts. Provenance: Project Owner-provided, no native attribution. NOT applied to data or engine; checked against the repo, with one direct conflict held for a PO decision.
 
 1. **Pronouns (zero gender; `biko` human-only, `uko` universal).** Zero gender agrees with NV-071/NV-175. "`biko` NEVER for objects" and "`uko` also him/her" are new and not natively attested. No data change. The "I see him/her = `Anga biko nika`" target differs from today's engine (`Anga bichi·ko Nika` for him, `Anga uko Nika` for her): Claude B item, settled form still unknown.
@@ -7722,3 +7727,14 @@ Source: Project Owner pasted rule update with four parts. Provenance: Project Ow
 4. **Little vs small.** Consistent with data: `on·tisa` verified ("a little / somewhat", NV-071), `Chon·a` verified `small` and `Menggo chona`. No `bang·gija` row exists as a verified quantity word (not added). No change.
 
 Applied: nothing in master, rules or engine. Recorded here, in the migration doc, and in WORKSTATE.
+
+## NV-177 (2026-10-20, Project Owner final rules: adjective -a/-gipa, pronoun animacy, nika/nia, little vs some, mitam vs mitim)
+
+Source: Project Owner in chat, "Response to NV-176 update inquiry and new rule integration". Provenance: Project Owner-provided. The PO states that Thangseng's Q3 adjective examples were received and are the basis of item 1; the raw Thangseng message is NOT on file, so label these "Thangseng Q3 examples, relayed by the Project Owner", not native quotes. Items 2 to 4 are Project Owner statements with no native attribution. Resolves NV-176 and the PO-only item "some".
+
+1. **Adjective position (-a vs -gipa):** post-noun adjective takes `-a` (noun phrase or predicate); pre-noun adjective MUST take `-gipa`, and pre-noun adjectives stack (size, colour, noun). Consistent with NV-136 (`dal·gipa nok`), NV-110 and NV-132 (stacking), NV-144 (`Menggo chona`). This removes the NV-176 conflict. Applied: RULE-006 rewritten; rows `a big dog is sleeping` = `Achak dal·a tusienga.`, `the car is beautiful` = `Gari sila.`, `that house is very big` = `Ua nok namen dal·a.`
+2. **Pronouns and sight verbs:** `biko` = him/her, humans only; `uko` = him/her/it, universal. `nika` = see (direct perception, direct-object pronoun); `nia` = look (directional, MUST take `-chi` pronoun: `Anga bichiko nia`); never `Anga bichiko nika`. Applied (data only): `i see him/her` = `Anga biko nika` (variant `Anga uko nika`), `i look at him/her` = `Anga bichiko nia`, `look (directional gaze)` = `nia`, `see` = `nik·a` promoted to verified_high. **Tension kept on record:** native 2026-05-10 (Thangseng WhatsApp) gave `nia` as a valid alternate for plain `see`; that row is retained with a note. The biko-human-only and nia-needs-`-chi` claims are not natively attested. Engine still outputs `Anga bichi·ko Nika` for `I see him` outside the pinned sentence rows: Claude B item.
+3. **Little vs some:** `chona` = physical size, never `on·tisa`; `on·tisa` or `bang·gija` = quantity. No data change (consistent with NV-071/NV-144; `Bang-gija` unverified rows left as they are, no new quantity sentence invented).
+4. **`mitam` = some, `mitim` = fat. REVERSES NV-168 / 2026-10-16** ("Mitam is the right spelling", `mit·am` = fat, `mitim` a misspelling). Chain: NV-167, NV-168 -> NV-177. Applied: new `some` = `mitam`; new `fat` = `mitim`; old `fat` = `mit·am` row superseded (retained); `the pork meat has a lot of fat` primary changed to `Wak be·en mitim bang·a` (DERIVED: only the fat word swapped; the PO has not re-confirmed the full sentence), old row superseded; `corrections.json` override updated to match. `mitam` is typed without a raka dot, so the existing `mit·am` superseded "Some" rows were not touched. To revert: restore the two superseded rows and the corrections value.
+5. **Still open:** Garo for bare "not" (PO: wait for more native data); verified object form of he/she in general sentences (engine).
+6. Pointers added under NV-168 and NV-176 (resolved by this entry).

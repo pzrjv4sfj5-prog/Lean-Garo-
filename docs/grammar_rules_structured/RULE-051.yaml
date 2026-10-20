@@ -3,7 +3,7 @@ title: "Quantity-Noun Word Order and its Description/Exclamation Exception"
 description: >-
   Default order is QUANTITY + NOUN ("adita ki·taprang" = "many books",
   "bang·a chattrorang" = "many students"). Two older phrases instead show
-  NOUN + QUANTITY: "Wak be·en mit·am bang·a" (the pork meat has a lot of
+  NOUN + QUANTITY: "Wak be·en mitim bang·a" (the pork meat has a lot of
   fat) and "Man·derang bang·e re·baa" (so many people came). Direct
   Thangseng confirmation (relay 2026-09-30): this is because those two
   are a different sentence type — description/exclamation — not the
@@ -29,7 +29,7 @@ claims:
 examples:
   - "adita ki·taprang=\"many books\" (QUANTITY+NOUN, counting construction)"
   - "bang·a chattrorang=\"many students\" (QUANTITY+NOUN, counting construction)"
-  - "Wak be·en mit·am bang·a=\"the pork meat has a lot of fat\" (NOUN+QUANTITY, description sentence)"
+  - "Wak be·en mitim bang·a=\"the pork meat has a lot of fat\" (NOUN+QUANTITY, description sentence)"
   - "Man·derang bang·e re·baa=\"so many people came\" (NOUN+QUANTITY, exclamation sentence)"
 counterexamples:
   note: >-
@@ -56,3 +56,4 @@ native_notes: >-
 last_updated: "2026-09-30"
 updated_by: "Claude A"
 source_ref: "docs/THANGSENG_RELAY_ANSWERS_20260930.md, Q1"
+# 2026-10-20 (Claude A, NV-177): fat word swapped mit·am -> mitim per PO ruling (reverses NV-168); derived swap, sentence not re-confirmed by the PO.

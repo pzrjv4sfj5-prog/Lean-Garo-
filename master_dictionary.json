@@ -21108,8 +21108,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "Project Owner direct in chat 2026-10-16: mit·am is fat (pork fat); consistent with corrections.json 'the pork meat has a lot of fat' = Wak be·en mit·am bang·a. No transcript.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — Project Owner-provided (chat 2026-10-20, NV-177): `mitim` = fat, `mitam` = some; the two must not be confused. Reverses NV-168 (2026-10-16, mit·am = fat). Retained per retain-and-tag, not deleted. Original: Project Owner direct in chat 2026-10-16: mit·am is fat (pork fat); consistent with corrections.json 'the pork meat has a lot of fat' = Wak be·en mit·am bang·a. No transcript.",
+    "confidence": "superseded"
   },
   {
     "english": "Sometimes",
@@ -42106,8 +42106,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nika` = to see (direct perception, pairs with direct object pronouns biko/uko). Consistent with native 2026-05-10 (nia = valid alternate to Nika). Was UNVERIFIED/HIGH.",
+    "confidence": "verified_high"
   },
   {
     "english": "seed",
@@ -52427,7 +52427,7 @@
     "english": "see",
     "garo": "nia",
     "category": "verbs",
-    "notes": "variant/VERIFIED/HIGH — native speaker (Thangseng), WhatsApp 2026-05-10, confirms nia as valid alternate to Nika/nik·a",
+    "notes": "variant/VERIFIED/HIGH — native speaker (Thangseng), WhatsApp 2026-05-10, confirms nia as valid alternate to Nika/nik·a | NV-177 (2026-10-20): PO now treats `nia` as directional 'look' (with -chi pronoun), not plain 'see'. Row retained; conflict with native alternate-for-see recorded in NV-177.",
     "confidence": "verified_high"
   },
   {
@@ -78599,8 +78599,8 @@
   {
     "english": "the pork meat has a lot of fat",
     "garo": "Wak be·en mit·am bang·a",
-    "notes": "VERIFIED/HIGH — Project Owner direct in chat (first form 2026-09-25 via Claude B, spelling of rarasa confirmed 2026-10-16: \"rarasa=rarasa\"; NV-167). No transcript. Matches the shipped corrections.json override. Primary: ordering choice (first form given, and PO 2026-10-16 mit·am = fat), not a native ranking.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-177 (2026-10-20): PO ruled `mitim` = fat and `mitam` = some, so `mit·am` here no longer reads as fat. Replaced by 'Wak be·en mitim bang·a' (derived swap, only the fat word changed; PO to confirm). Retained per retain-and-tag. Original: VERIFIED/HIGH — Project Owner direct in chat (first form 2026-09-25 via Claude B, spelling of rarasa confirmed 2026-10-16: \"rarasa=rarasa\"; NV-167). No transcript. Matches the shipped corrections.json override. Primary: ordering choice (first form given, and PO 2026-10-16 mit·am = fat), not a native ranking.",
+    "confidence": "superseded"
   },
   {
     "english": "the pork meat has a lot of fat",
@@ -78751,5 +78751,94 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-175, Project Owner direct chat 2026-10-19 (\"search for her will be the same... There is no gendered pronoun in Garo\"); labeled Project Owner statement, not a Thangseng quote. Same form as the NV-170 him rows. Consistent with native-confirmed gender-neutral Ua / Bia (NV-071, 2026-09-19 relay).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "some",
+    "garo": "mitam",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `mitam` = some (a portion of a group or quantity); NOT fat. No native transcript. Reverses the NV-168 / 2026-10-16 reading that mit·am = fat; chain recorded in NV-177. Raka: PO typed `mitam` without a dot; not changed."
+  },
+  {
+    "english": "fat",
+    "garo": "mitim",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `mitim` = fat (the physical substance/noun). Reverses NV-168, which had read the fat word as mit·am. No native transcript."
+  },
+  {
+    "english": "the pork meat has a lot of fat",
+    "garo": "Wak be·en mitim bang·a",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — DERIVED from the PO-confirmed sentence 'Wak be·en mit·am bang·a' (NV-167/168) with the fat word swapped to `mitim` per NV-177 (PO 2026-10-20). Only the fat word changed; the full sentence has not been re-confirmed by the PO. Primary: ordering choice, not a native ranking."
+  },
+  {
+    "english": "a big dog is sleeping",
+    "garo": "Achak dal·a tusienga.",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Thangseng Q3 adjective-position example, relayed by the Project Owner 2026-10-20 (NV-177); raw message not on file. Post-noun adjective takes -a. `tusienga` typed without raka (existing rows: 'Ua tusienga')."
+  },
+  {
+    "english": "the car is beautiful",
+    "garo": "Gari sila",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Thangseng Q3 adjective-position example, relayed by the Project Owner 2026-10-20 (NV-177); raw message not on file. Predicate use, same as RULE-006 predicative claim."
+  },
+  {
+    "english": "that house is very big",
+    "garo": "Ua nok namen dal·a.",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Thangseng Q3 adjective-position example, relayed by the Project Owner 2026-10-20 (NV-177); raw message not on file. Predicate use."
+  },
+  {
+    "english": "i see him",
+    "garo": "Anga biko nika",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): direct perception; `biko` = him/her (humans only) + nika. PO-provided, not natively attested. Variant: 'Anga uko nika'."
+  },
+  {
+    "english": "i see him",
+    "garo": "Anga uko nika",
+    "category": "phrases",
+    "notes": "variant/VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `uko` is the universal object pronoun (human or object)."
+  },
+  {
+    "english": "i see her",
+    "garo": "Anga biko nika",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): no gendered pronoun, same as 'i see him' (NV-175 + NV-177)."
+  },
+  {
+    "english": "i see her",
+    "garo": "Anga uko nika",
+    "category": "phrases",
+    "notes": "variant/VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `uko` universal."
+  },
+  {
+    "english": "i look at him",
+    "garo": "Anga bichiko nia",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nia` = directional gaze and MUST pair with -chi on the pronoun; never 'Anga bichiko nika'. PO-provided, untested natively."
+  },
+  {
+    "english": "i look at her",
+    "garo": "Anga bichiko nia",
+    "category": "phrases",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): same as 'i look at him'."
+  },
+  {
+    "english": "look (directional gaze)",
+    "garo": "nia",
+    "category": "verbs",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nia` = to look (directional), pairs with -chi pronoun. Tension noted: native 2026-05-10 (Thangseng WhatsApp) listed `nia` as a valid alternate for 'see' (row see/nia kept). Verified `look` = Ni·bo (NV-093) is unchanged."
   }
 ]

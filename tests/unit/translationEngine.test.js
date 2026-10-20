@@ -539,7 +539,9 @@ test('RC-CANDIDATE-018(a) regression guard: pronoun-subject future unaffected by
 
 test('RC-CANDIDATE-018(a) regression guard: adjective-modified subjects still correctly fall to sov-assembly (RC-010 documented exclusion, unaffected by this fix)', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const r = await translate('a big dog is sleeping');
+  // NV-177 (2026-10-20): 'a big dog is sleeping' now has a Thangseng Q3 row,
+  // so it is an exact-phrase hit; the sov-assembly guard uses an unlisted sentence.
+  const r = await translate('a big dog is eating rice');
   assert.equal(r.method, 'sov-assembly');
 });
 
@@ -1530,7 +1532,10 @@ test('item 3: attributive adjective ending in ·a stays adjacent to its noun ins
 
 test('item 3 regression guard: single-predicate-adjective sentences (RC-CANDIDATE-018 family) are unaffected — the lone ·a-ending word is still elected as the verb', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const r = await translate('a big dog is sleeping');
+  // NV-177: 'a big dog is sleeping' is now an exact-phrase row (Achak dal·a tusienga.).
+  const exact = await translate('a big dog is sleeping');
+  assert.equal(exact.garo, 'Achak dal·a tusienga.');
+  const r = await translate('a big cat is sleeping');
   assert.equal(r.method, 'sov-assembly');
   // "sleeping" resolves to the true verb and, being the last ·a-ending
   // content word, must still be the elected verb — same behavior as before

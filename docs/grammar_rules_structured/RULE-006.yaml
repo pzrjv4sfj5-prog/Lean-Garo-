@@ -1,37 +1,54 @@
 id: RULE-006
-title: "Adjective Placement"
+title: "Adjective Placement: post-noun `-a`, pre-noun `-gipa`"
 description: >-
-  Adjectives follow the noun they modify (confirmed pattern across
-  attested examples), not preceding it as in English.
+  An adjective may stand after or before the noun, and its suffix must match
+  its position. After the noun it takes the base `-a` suffix (Menggo chona =
+  small cat; also the predicate, Gari sila = the car is beautiful). Before the
+  noun it MUST take `-gipa` (Dal·gipa nok = a big house); pre-noun adjectives
+  stack directly, size then colour then noun (Dal·gipa gitchak nok = the big
+  red house). Rewritten 2026-10-20 (NV-177) from the earlier "adjectives
+  follow the noun" description; resolves the NV-176 conflict (no contradiction:
+  the two orders are two suffix patterns).
 dependencies:
   - id: RULE-031
     name: null
     note: "shares evidence with the bare-adjective predicative strategy"
 claims:
-  - scope: "predicative use"
+  - scope: "predicative use: Noun + Adjective-a (Gari sila; Ua nok namen dal·a)"
     status: verified
     confidence: medium
-    confidence_note: >-
-      source gives one overall "Confidence: Medium" not split by
-      claim - assigned here to the predicative claim since it's the
-      one marked Verified; the attributive claim's confidence is left
-      unspecified below rather than guessed, since the source doesn't
-      clearly attribute the Medium rating to one claim or the other.
-  - scope: "attributive use (noun+adjective within a noun phrase, rather than as a predicate)"
-    status: needs_native_validation
-    status_note: "no clean example distinguishing this from predicative use found yet"
-    confidence: unspecified
-    confidence_note: "see the predicative claim's confidence_note - source's single Medium rating not clearly attributable to this claim specifically"
+    confidence_note: "original claim, unchanged; one overall Medium rating in the source"
+  - scope: "post-noun attributive use: Noun + Adjective-a inside a noun phrase (Menggo chona; Achak dal·a tusienga)"
+    status: verified
+    confidence: high
+    status_note: "Menggo chona = NV-144 (Thangseng direct). Achak dal·a tusienga = Thangseng Q3 example relayed by the Project Owner 2026-10-20 (NV-177); raw message not on file."
+  - scope: "pre-noun attributive use: Adjective-gipa + Noun, stacking directly (Dal·gipa nok; Dal·gipa gitchak nok; Chon·gipa gipok nok)"
+    status: verified
+    confidence: high
+    status_note: "NV-136 (dal·gipa nok), NV-110 and NV-132 (stacking), Thangseng direct via the Project Owner. The rule that pre-noun position REQUIRES -gipa is the Project Owner's statement of the Q3 answer (NV-177)."
 examples:
-  - 'Gari sila = "the car is beautiful" (predicative use); attributive use not separately attested with its own example'
+  - 'Gari sila = "the car is beautiful" (predicative)'
+  - 'Ua nok namen dal·a = "that house is very big" (predicative)'
+  - 'Menggo chona = "small cat" (post-noun)'
+  - 'Achak dal·a tusienga = "a big dog is sleeping" (post-noun inside a sentence)'
+  - 'Dal·gipa nok = "a big house" (pre-noun)'
+  - 'Dal·gipa gitchak nok = "the big red house" (pre-noun, stacked)'
+  - 'Chon·gipa gipok nok = "the small white house" (pre-noun, stacked)'
 counterexamples:
-  note: "none recorded"
+  note: "none recorded; adjective-first without -gipa (e.g. the old chik Menggo) is not attested and stays superseded"
   items: []
 launch_priority:
   - scope: null
     tier: P1
-    note: "not modeled in the engine at all (GRAMMAR_SPEC.md's own note)"
-native_notes: "Source Rule 6, GRAMMAR_SPEC.md."
-last_updated: "2026-07-26"
+    note: "engine support for choosing -a vs -gipa by position is a Claude B item (see docs/HANDOFF_CLAUDE_B_20261020_adjective_pronoun_nia.md)"
+native_notes: "Source Rule 6, GRAMMAR_SPEC.md; rewritten per NV-177."
+last_updated: "2026-10-20"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-006"
+corrections:
+  - date: "2026-10-20"
+    note: >-
+      Description and claims rewritten (NV-177). Earlier text said adjectives
+      only follow the noun and that the attributive claim needed native
+      validation. Thangseng's Q3 examples, relayed by the Project Owner, show
+      both orders exist, distinguished by -a (post-noun) vs -gipa (pre-noun).
