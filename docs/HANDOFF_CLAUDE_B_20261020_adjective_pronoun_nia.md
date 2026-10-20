@@ -9,3 +9,9 @@ Data and rules are updated; engine work is yours. All of this is Project Owner-p
 5. **Little:** size = `chona`, never `on·tisa`; quantity = `on·tisa` / `bang·gija`.
 
 **Known engine gap found while updating tests (not fixed):** sov-assembly still puts the bare `-a` adjective before the noun: `a big dog is eating rice` -> `dal·a achak mi cha·enga`, `a big cat is sleeping` -> `dal·a menggo tusienga`. Under RULE-006 the pre-noun form needs `-gipa` (`dal·gipa achak ...`) or the adjective goes after the noun (`achak dal·a ...`). Two unit tests that used `a big dog is sleeping` as a sov-assembly guard were repointed to unlisted sentences because that sentence is now an exact-phrase row.
+
+## Addendum (NV-178, 2026-10-20)
+- Adjective rule is now confirmed as absolute: never generate a bare `-a` adjective before the noun (`Dal·a achak` is wrong). The sov-assembly gap above is a real bug, not a PO preference.
+- `how` = `maidake` (method); `maikai` = so that / in order that only. Check any engine path that uses `Maikai` for plain `how`.
+- `phrase_maps.js` still has the English key `let us practice garo together` (gloss now known wrong; correct gloss `come on, practice speaking!`). Same Garo, so output is unchanged.
+

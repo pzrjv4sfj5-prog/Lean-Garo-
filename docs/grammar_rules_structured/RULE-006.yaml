@@ -25,7 +25,7 @@ claims:
   - scope: "pre-noun attributive use: Adjective-gipa + Noun, stacking directly (Dal·gipa nok; Dal·gipa gitchak nok; Chon·gipa gipok nok)"
     status: verified
     confidence: high
-    status_note: "NV-136 (dal·gipa nok), NV-110 and NV-132 (stacking), Thangseng direct via the Project Owner. The rule that pre-noun position REQUIRES -gipa is the Project Owner's statement of the Q3 answer (NV-177)."
+    status_note: "NV-136 (dal·gipa nok), NV-110 and NV-132 (stacking), Thangseng direct via the Project Owner. Pre-noun `-gipa` is REQUIRED and post-noun `-a` is REQUIRED, an absolute rule; `Dal·a achak` is structurally wrong (NV-178, Project Owner-relayed answer attributed to Thangseng; raw message not on file)."
 examples:
   - 'Gari sila = "the car is beautiful" (predicative)'
   - 'Ua nok namen dal·a = "that house is very big" (predicative)'
@@ -52,3 +52,7 @@ corrections:
       only follow the noun and that the attributive claim needed native
       validation. Thangseng's Q3 examples, relayed by the Project Owner, show
       both orders exist, distinguished by -a (post-noun) vs -gipa (pre-noun).
+  - date: "2026-10-20"
+    note: >-
+      NV-178: the -a (post-noun) / -gipa (pre-noun) pattern is confirmed as an
+      absolute rule; generating Dal·a achak (bare -a before the noun) is wrong.

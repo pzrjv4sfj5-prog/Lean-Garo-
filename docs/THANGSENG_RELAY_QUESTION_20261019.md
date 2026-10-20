@@ -1,5 +1,7 @@
 # Thangseng relay questions, batch of 2026-10-19 (saved 2026-10-20, Claude A)
 
+> **Update 2026-10-20 (NV-178):** items 6 to 14 below (last, outside, how, mitam/mitim, biko/uko, nia, adjectives, `-bo` one/many, `Hai sakprak Agana skiebo`) are ANSWERED. **Still outstanding: section A (ties 1-5) and bare "not".**
+
 Not yet sent. For the Project Owner to relay to Thangseng via Tridip. Answers come back as native quotes; log them as new NV entries.
 
 **Already resolved, dropped from this batch**

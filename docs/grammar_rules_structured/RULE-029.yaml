@@ -22,15 +22,16 @@ claims:
     confidence: high
     status_note: "Hai cha·bo / Hai cha·na split from NV-165; Hai re·bo = go on, go is Project Owner-provided (NV-173), not natively attested."
   - scope: "-bo takes the same form for one listener or many"
-    status: po_provided
-    confidence: low
-    status_note: "NV-173 answer, untested natively; no data either way. Do not generate any singular/plural -bo distinction."
+    status: verified
+    confidence: medium
+    status_note: "NV-173 (Project Owner-provided) then confirmed by NV-178 (2026-10-20, Project Owner-relayed answer attributed to Thangseng; raw message not on file): Garo verbs do not change with the number of listeners. Do not generate any singular/plural -bo distinction."
 examples:
   - 'Sengbo = "stop!" (imperative)'
   - 'Biko sandibo = "search for him!" or "look for him" (imperative, order to the listener; NV-170, NV-173)'
+  - 'Hai sakprak Agana skiebo = "come on, practice speaking!" (urging imperative to the listeners; NV-178)'
   - 'Hai cha·bo = "go and eat" (urging, also "come on, eat"; not "let''s eat")'
 counterexamples:
-  note: "none confirmed; legacy unverified row Hai sakprak Agana skiebo (glossed let us practice garo together) uses -bo with a let us gloss, flagged in NV-173"
+  note: "none confirmed; the legacy 'let us practice garo together' gloss for Hai sakprak Agana skiebo was wrong and is superseded (NV-178)"
   items: []
 launch_priority:
   - scope: null

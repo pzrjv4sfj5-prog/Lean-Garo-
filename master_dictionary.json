@@ -2449,7 +2449,7 @@
     "english": "outside",
     "garo": "A·pal",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-089 (2026-08-21 relay): un-superseded on direct native reconfirmation. Thangseng gives A·pal as the wider general sense of 'outside', with an explicit collocation caveat: 'A·pal + re·a' idiomatically means 'to defecate' — that collocation should not be used/translated literally as a generic 'go outside'. bai·re/ha·gat·e (existing VERIFIED/HIGH) and a'palo (locative, existing) remain valid coexisting forms, not superseded by this.",
+    "notes": "VERIFIED/HIGH — NV-089 (2026-08-21 relay): un-superseded on direct native reconfirmation. Thangseng gives A·pal as the wider general sense of 'outside', with an explicit collocation caveat: 'A·pal + re·a' idiomatically means 'to defecate' — that collocation should not be used/translated literally as a generic 'go outside'. bai·re/ha·gat·e (existing VERIFIED/HIGH) and a'palo (locative, existing) remain valid coexisting forms, not superseded by this. | NV-178 (2026-10-20): `a·pal`/`a·palo` = the native word for outside/outdoors. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
     "confidence": "verified_high",
     "pos": "n."
   },
@@ -3754,8 +3754,8 @@
     "english": "how",
     "garo": "Maikai",
     "category": "general",
-    "confidence": "verified_high",
-    "notes": "Promoted unverified->verified_high, NV-122, direct native gloss (\"Maikai = How, in order that, so that\"). More versatile than maidake per native framing; also covers purpose sense, not yet sentence-cited."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-178 (2026-10-20): `maikai` is the conjunction 'so that / in order that', not 'how'; `maidake` = 'in what way / by what method' is the 'how' word. Narrows NV-122. Retained per retain-and-tag, not deleted; the 'in order that' sense moved to its own row. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file. Original: Promoted unverified->verified_high, NV-122, direct native gloss (\"Maikai = How, in order that, so that\"). More versatile than maidake per native framing; also covers purpose sense, not yet sentence-cited."
   },
   {
     "english": "and",
@@ -19029,7 +19029,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH FLAGGED 2026-09-24 (Claude A): tagged variant/VERIFIED/HIGH with no citation text present in this note -- provenance unclear, unlike bon·kamgipa/ja·mangipa (NV-082, cited) which were split into their own sense-labeled headwords this session. Left untouched pending citation lookup; do not treat as equivalent-strength evidence to the NV-082 pair.",
+    "notes": "variant/VERIFIED/HIGH FLAGGED 2026-09-24 (Claude A): tagged variant/VERIFIED/HIGH with no citation text present in this note -- provenance unclear, unlike bon·kamgipa/ja·mangipa (NV-082, cited) which were split into their own sense-labeled headwords this session. Left untouched pending citation lookup; do not treat as equivalent-strength evidence to the NV-082 pair. | NV-178 (2026-10-20) now cites this row: bai·a = to endure/survive (to last a long time), NOT the ordinal 'last'; see rows 'to last' / 'the end'. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
     "confidence": "verified_high"
   },
   {
@@ -19038,7 +19038,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH FLAGGED 2026-09-24 (Claude A): tagged variant/VERIFIED/HIGH with no citation text present in this note -- provenance unclear, unlike bon·kamgipa/ja·mangipa (NV-082, cited) which were split into their own sense-labeled headwords this session. Left untouched pending citation lookup; do not treat as equivalent-strength evidence to the NV-082 pair.",
+    "notes": "variant/VERIFIED/HIGH FLAGGED 2026-09-24 (Claude A): tagged variant/VERIFIED/HIGH with no citation text present in this note -- provenance unclear, unlike bon·kamgipa/ja·mangipa (NV-082, cited) which were split into their own sense-labeled headwords this session. Left untouched pending citation lookup; do not treat as equivalent-strength evidence to the NV-082 pair. | NV-178 (2026-10-20) now cites this row: ses = finished / the end (loanword), NOT the ordinal 'last'; see rows 'to last' / 'the end'. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
     "confidence": "verified_high"
   },
   {
@@ -19820,7 +19820,7 @@
     "pos": null,
     "category": "travel",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH | NV-178 (2026-10-20): `baire` is an Assamese/Bengali loanword meaning the same as `a·pal`/`a·palo`; interchangeable, `a·pal` is the native word. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
     "confidence": "verified_high"
   },
   {
@@ -42106,7 +42106,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nika` = to see (direct perception, pairs with direct object pronouns biko/uko). Consistent with native 2026-05-10 (nia = valid alternate to Nika). Was UNVERIFIED/HIGH.",
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nika` = to see (direct perception, pairs with direct object pronouns biko/uko). Consistent with native 2026-05-10 (nia = valid alternate to Nika). Was UNVERIFIED/HIGH. | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
     "confidence": "verified_high"
   },
   {
@@ -51639,8 +51639,8 @@
     "english": "let us practice garo together",
     "garo": "Hai sakprak Agana skiebo.",
     "category": "culture",
-    "confidence": "unverified",
-    "notes": "UNVERIFIED — FLAG 2026-10-19 (NV-173): gloss \"let us\" conflicts with RULE-029 (-bo is strictly imperative; Hai + -bo = urging). Probably \"come on, practice Garo together\" but not natively checked. Retained, not changed."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-178 (2026-10-20): the 'let us' gloss is wrong; the sentence means 'come on, practice speaking!' (imperative to the listeners, `Hai` = urging; inclusive 'let us' would need -na). Replaced by the row 'come on, practice speaking!'. Retained per retain-and-tag. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file. Original: UNVERIFIED — FLAG 2026-10-19 (NV-173): gloss \"let us\" conflicts with RULE-029 (-bo is strictly imperative; Hai + -bo = urging). Probably \"come on, practice Garo together\" but not natively checked. Retained, not changed."
   },
   {
     "english": "I am fine.",
@@ -65510,7 +65510,7 @@
     "garo": "a'palo",
     "category": "general",
     "pos": null,
-    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'.",
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'. | NV-178 (2026-10-20): `a·pal`/`a·palo` = the native word for outside/outdoors. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
     "confidence": "verified_high"
   },
   {
@@ -72467,7 +72467,7 @@
     "pos": "adj.",
     "category": "general",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-082, Thangseng relay via Tridip, 2026-08-19. Ordinal/final-in-sequence sense, e.g. 'last page'. Distinct from ja·mangipa (last one/specific person) and from Mija (temporal recency, e.g. 'last week' — see NV-081). Closes item 26 ('no native entry for the ordinal/final sense').",
+    "notes": "VERIFIED/HIGH — NV-082, Thangseng relay via Tridip, 2026-08-19. Ordinal/final-in-sequence sense, e.g. 'last page'. Distinct from ja·mangipa (last one/specific person) and from Mija (temporal recency, e.g. 'last week' — see NV-081). Closes item 26 ('no native entry for the ordinal/final sense'). | NV-178 (2026-10-20): answer glosses bon·kamgipa as 'the final item in a sequence (e.g. last page or last person)'. ja·mangipa was not mentioned in that answer, so the NV-082 split is left unchanged; overlap on 'last person' noted for a later check.",
     "confidence": "verified_high"
   },
   {
@@ -73301,7 +73301,7 @@
     "english": "how",
     "garo": "maidake",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\") | NV-178 (2026-10-20): `maidake` = in what way / by what method (asking how to do something); now the 'how' primary. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
     "confidence": "verified_high"
   },
   {
@@ -78757,21 +78757,21 @@
     "garo": "mitam",
     "category": "general",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `mitam` = some (a portion of a group or quantity); NOT fat. No native transcript. Reverses the NV-168 / 2026-10-16 reading that mit·am = fat; chain recorded in NV-177. Raka: PO typed `mitam` without a dot; not changed."
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `mitam` = some (a portion of a group or quantity); NOT fat. No native transcript. Reverses the NV-168 / 2026-10-16 reading that mit·am = fat; chain recorded in NV-177. Raka: PO typed `mitam` without a dot; not changed. | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
   },
   {
     "english": "fat",
     "garo": "mitim",
     "category": "general",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `mitim` = fat (the physical substance/noun). Reverses NV-168, which had read the fat word as mit·am. No native transcript."
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `mitim` = fat (the physical substance/noun). Reverses NV-168, which had read the fat word as mit·am. No native transcript. | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
   },
   {
     "english": "the pork meat has a lot of fat",
     "garo": "Wak be·en mitim bang·a",
     "category": "general",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — DERIVED from the PO-confirmed sentence 'Wak be·en mit·am bang·a' (NV-167/168) with the fat word swapped to `mitim` per NV-177 (PO 2026-10-20). Only the fat word changed; the full sentence has not been re-confirmed by the PO. Primary: ordering choice, not a native ranking."
+    "notes": "VERIFIED/HIGH — DERIVED from the PO-confirmed sentence 'Wak be·en mit·am bang·a' (NV-167/168) with the fat word swapped to `mitim` per NV-177 (PO 2026-10-20). Only the fat word changed; the full sentence has not been re-confirmed by the PO. Primary: ordering choice, not a native ranking. | CONFIRMED by the Project Owner in chat 2026-10-20 (\"this is correct\"): no longer merely derived (NV-178). No transcript."
   },
   {
     "english": "a big dog is sleeping",
@@ -78799,46 +78799,74 @@
     "garo": "Anga biko nika",
     "category": "phrases",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): direct perception; `biko` = him/her (humans only) + nika. PO-provided, not natively attested. Variant: 'Anga uko nika'."
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): direct perception; `biko` = him/her (humans only) + nika. PO-provided, not natively attested. Variant: 'Anga uko nika'. | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
   },
   {
     "english": "i see him",
     "garo": "Anga uko nika",
     "category": "phrases",
-    "notes": "variant/VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `uko` is the universal object pronoun (human or object)."
+    "notes": "variant/VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `uko` is the universal object pronoun (human or object). | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
   },
   {
     "english": "i see her",
     "garo": "Anga biko nika",
     "category": "phrases",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): no gendered pronoun, same as 'i see him' (NV-175 + NV-177)."
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): no gendered pronoun, same as 'i see him' (NV-175 + NV-177). | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
   },
   {
     "english": "i see her",
     "garo": "Anga uko nika",
     "category": "phrases",
-    "notes": "variant/VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `uko` universal."
+    "notes": "variant/VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `uko` universal. | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
   },
   {
     "english": "i look at him",
     "garo": "Anga bichiko nia",
     "category": "phrases",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nia` = directional gaze and MUST pair with -chi on the pronoun; never 'Anga bichiko nika'. PO-provided, untested natively."
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nia` = directional gaze and MUST pair with -chi on the pronoun; never 'Anga bichiko nika'. PO-provided, untested natively. | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
   },
   {
     "english": "i look at her",
     "garo": "Anga bichiko nia",
     "category": "phrases",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): same as 'i look at him'."
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): same as 'i look at him'. | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
   },
   {
     "english": "look (directional gaze)",
     "garo": "nia",
     "category": "verbs",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nia` = to look (directional), pairs with -chi pronoun. Tension noted: native 2026-05-10 (Thangseng WhatsApp) listed `nia` as a valid alternate for 'see' (row see/nia kept). Verified `look` = Ni·bo (NV-093) is unchanged."
+    "notes": "VERIFIED/HIGH — Project Owner-provided (chat 2026-10-20, NV-177): `nia` = to look (directional), pairs with -chi pronoun. Tension noted: native 2026-05-10 (Thangseng WhatsApp) listed `nia` as a valid alternate for 'see' (row see/nia kept). Verified `look` = Ni·bo (NV-093) is unchanged. | CONFIRMED NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file."
+  },
+  {
+    "english": "to last",
+    "garo": "bai·a",
+    "category": "verbs",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file: `bai·a` = to endure or survive, 'to last a long time'. Not the ordinal 'last'."
+  },
+  {
+    "english": "the end",
+    "garo": "ses",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file: `ses` = finished / the end (also glossed 'finished'); a loanword."
+  },
+  {
+    "english": "in order that",
+    "garo": "maikai",
+    "category": "general",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file: `maikai` = 'so that / in order that', a conjunction connecting phrases. Consistent with NV-129 (purpose sense, 'Gisik nange poraibo maikai ...')."
+  },
+  {
+    "english": "come on, practice speaking!",
+    "garo": "Hai sakprak Agana skiebo.",
+    "category": "culture",
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file: 'Come on, practice speaking!' directed at the listeners; `-bo` is strictly imperative and `Hai` is the urging word. Corrects the earlier 'let us practice garo together' gloss (NV-173 flag)."
   }
 ]
