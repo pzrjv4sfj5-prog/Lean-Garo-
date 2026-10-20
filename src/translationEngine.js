@@ -146,6 +146,15 @@ function startsWithPredicate(w0) {
 // Any doubt returns null and the existing cascade is unchanged.
 const NOUN_SUBJECT_DETERMINERS = new Set(['the', 'a', 'an']);
 const NOUN_SUBJECT_POSSESSIVES = new Set(['my', 'your', 'his', 'her', 'our', 'their']);
+// RULE-006 (2026-10-20, NV-177): pre-noun adjective takes -gipa and stacks
+// directly (size, then colour, then noun: Dalgipa gitchak nok); post-noun /
+// predicate adjective is the base -a form. Pre-noun forms are generated only
+// for adjectives with attested evidence: big = dalgipa (NV-136), small =
+// chongipa (NV-110/132); red is the bare colour word (gitchak). Any other
+// adjective keeps the previous cascade; add a row here once Claude A has
+// evidence for its pre-noun form.
+const PRE_NOUN_SIZE_ADJ = { big: 'dalgipa', small: 'chongipa' };
+const PRE_NOUN_COLOUR_ADJ = { red: 'gitchak' };
 async function translateNounSubjectClause(cleaned) {
   const tokens = String(cleaned).toLowerCase().replace(/[.!?,;]+$/g, '').split(/\s+/).filter(Boolean);
   const isNum = w => /^\d+$/.test(w) || NUMBER_WORDS[w] !== undefined || w === 'hundred' || w === 'thousand';
@@ -168,6 +177,13 @@ async function translateNounSubjectClause(cleaned) {
     if (!possGaro) return null;
     i++;
   }
+  let adjGaro = null;
+  if (PRE_NOUN_SIZE_ADJ[tokens[i]] || PRE_NOUN_COLOUR_ADJ[tokens[i]]) {
+    const adjParts = [];
+    if (PRE_NOUN_SIZE_ADJ[tokens[i]]) adjParts.push(PRE_NOUN_SIZE_ADJ[tokens[i]]), i++;
+    while (PRE_NOUN_COLOUR_ADJ[tokens[i]]) adjParts.push(PRE_NOUN_COLOUR_ADJ[tokens[i]]), i++;
+    adjGaro = adjParts.join(' ');
+  }
   const nounTok = tokens[i];
   const rest = tokens.slice(i + 1);
   if (!nounTok || !rest.length) return null;
@@ -177,18 +193,24 @@ async function translateNounSubjectClause(cleaned) {
   if (!subj) return null;
   const pron = subj.plural ? 'they' : 'he';
   const inner = await translate(`${pron} ${rest.join(' ')}`);
-  if (!inner || inner.method !== 'grammar-assembly' || !inner.garo || inner.garo.includes('[UNKNOWN]')) return null;
+  // Adjective clauses also accept a verified pronoun correction as the inner
+  // clause (\"he is sleeping\" is a correction row, not grammar-assembly).
+  const innerOk = inner && inner.garo && !inner.garo.includes('[UNKNOWN]')
+    && (inner.method === 'grammar-assembly' || (adjGaro && inner.method === 'correction'));
+  if (!innerOk) return null;
   const pronGaro = PRONOUN_MAP[pron];
   // RULE-053: a trailing time word comes back as a leading -o form; lift it.
-  let innerGaro = inner.garo;
+  let innerGaro = inner.garo.replace(/[.!?]+$/, '');
   const lead = splitLeadingTimeForm(innerGaro);
   if (lead) { if (prefixGaro) return null; prefixGaro = lead.time; innerGaro = lead.rest; }
   if (!pronGaro || !innerGaro.toLowerCase().startsWith(pronGaro.toLowerCase() + ' ')) return null;
   const tail = innerGaro.slice(pronGaro.length + 1).trim();
   if (!tail) return null;
   // A noun that is not sentence-initial loses the dictionary's capital.
-  const subjText = (possGaro || prefixGaro) ? subj.garo.charAt(0).toLowerCase() + subj.garo.slice(1) : subj.garo;
-  let garo = `${possGaro ? possGaro + ' ' : ''}${subjText} ${tail}`;
+  const subjText = (possGaro || prefixGaro || adjGaro) ? subj.garo.charAt(0).toLowerCase() + subj.garo.slice(1) : subj.garo;
+  // A possessive that follows a leading time word is not sentence-initial.
+  const possText = possGaro && prefixGaro ? possGaro.charAt(0).toLowerCase() + possGaro.slice(1) : possGaro;
+  let garo = `${possText ? possText + ' ' : ''}${adjGaro ? adjGaro + ' ' : ''}${subjText} ${tail}`;
   if (prefixGaro) garo = `${prefixGaro} ${garo}`;
   else garo = garo.charAt(0).toUpperCase() + garo.slice(1);
   return { garo, method: 'noun-subject-clause', confidence: 0.8 };

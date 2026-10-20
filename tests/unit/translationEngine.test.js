@@ -421,7 +421,10 @@ test('RC-CANDIDATE-010 boundary: adjective-modified NP subject safely falls back
   const g = analyzeGrammar('a big dog is running');
   assert.notEqual(g.subject?.english, 'big');
   const r = await translate('a big dog is running');
-  assert.equal(r.method, 'sov-assembly', 'should safely fall back, not confidently mislabel via grammar-assembly');
+  // RULE-006 (2026-10-20): handled by noun-subject-clause (Dalgipa achak ...), never grammar-assembly.
+  assert.equal(r.method, 'noun-subject-clause');
+  assert.ok(/^dalgipa achak /i.test(r.garo), `got: ${r.garo}`);
+  assert.equal((await translate('an old dog is running')).method, 'sov-assembly', 'unattested pre-noun adjective still safely falls back');
 });
 
 // --- RC-CANDIDATE-012 fix (2026-07-12): non-first-person "sad"/"bright"
@@ -542,12 +545,18 @@ test('RC-CANDIDATE-018(a) regression guard: adjective-modified subjects still co
   // NV-177 (2026-10-20): 'a big dog is sleeping' now has a Thangseng Q3 row,
   // so it is an exact-phrase hit; the sov-assembly guard uses an unlisted sentence.
   const r = await translate('a big dog is eating rice');
-  assert.equal(r.method, 'sov-assembly');
+  // RULE-006 (2026-10-20): attested size adjectives go through noun-subject-clause.
+  assert.equal(r.method, 'noun-subject-clause');
+  assert.ok(/^dalgipa achak /i.test(r.garo), `got: ${r.garo}`);
+  assert.equal((await translate('an old dog is eating rice')).method, 'sov-assembly');
 });
 
 test('RC-CANDIDATE-018(b): sov-assembly fallback attaches ·gen to the verb instead of leaving it as a floating token', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const r = await translate('a big dog will eat rice');
+  // RULE-006 (2026-10-20, NV-177): big/small/red NP subjects now go through noun-subject-clause
+  // with pre-noun -gipa; this guard keeps the old fallback path under test via 'old'
+  // (no attested pre-noun form).
+  const r = await translate('an old dog will eat rice');
   assert.equal(r.method, 'sov-assembly');
   assert.ok(!/\s·gen(\s|$)/.test(r.garo), `·gen must not appear as its own space-separated token, got: ${r.garo}`);
   assert.ok(r.garo.includes('cha·gen'), `·gen must be suffixed onto the verb, got: ${r.garo}`);
@@ -564,7 +573,10 @@ test('RC-CANDIDATE-018: "will" is never treated as lexical content in either ass
 
 test('RC-CANDIDATE-018: negative future uses stem+jawa directly (Rule 5), not gen+ja stacked, in the sov-assembly path', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const r = await translate('a big dog will not eat rice');
+  // RULE-006 (2026-10-20, NV-177): big/small/red NP subjects now go through noun-subject-clause
+  // with pre-noun -gipa; this guard keeps the old fallback path under test via 'old'
+  // (no attested pre-noun form).
+  const r = await translate('an old dog will not eat rice');
   assert.equal(r.method, 'sov-assembly');
   assert.ok(!r.garo.includes('genja'), `must not stack gen+ja (confirmed bug shape, Rule 5), got: ${r.garo}`);
   assert.ok(r.garo.includes('Cha·jawa') || r.garo.includes('jawa'), `expected negative-future jawa suffix, got: ${r.garo}`);
@@ -1536,7 +1548,9 @@ test('item 3 regression guard: single-predicate-adjective sentences (RC-CANDIDAT
   const exact = await translate('a big dog is sleeping');
   assert.equal(exact.garo, 'Achak dal·a tusienga.');
   const r = await translate('a big cat is sleeping');
-  assert.equal(r.method, 'sov-assembly');
+  // RULE-006 (2026-10-20): pre-noun big takes -gipa; old fallback stays under test via 'old'.
+  assert.equal(r.method, 'noun-subject-clause');
+  assert.equal((await translate('an old cat is sleeping')).method, 'sov-assembly');
   // "sleeping" resolves to the true verb and, being the last ·a-ending
   // content word, must still be the elected verb — same behavior as before
   // this fix for the ordinary single-verb case.
@@ -1762,7 +1776,10 @@ test('OOV proper noun regression guard: multiple different OOV city names all co
 
 test('OOV proper noun regression guard: a fully-resolved sentence with no unknown words is completely unaffected by the sov-assembly bail change', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const r = await translate('a big dog will not eat rice');
+  // RULE-006 (2026-10-20, NV-177): big/small/red NP subjects now go through noun-subject-clause
+  // with pre-noun -gipa; this guard keeps the old fallback path under test via 'old'
+  // (no attested pre-noun form).
+  const r = await translate('an old dog will not eat rice');
   assert.equal(r.method, 'sov-assembly');
   assert.ok(!r.garo.includes('[UNKNOWN]'), `got: ${r.garo}`);
 });
@@ -1795,9 +1812,13 @@ test('morphology ing$-stripping pronoun-collision guard: "she is using her phone
 // two words, not a new linguistic rule.
 test('negation-word content-filter guard: "a big dog will not eat rice" still assembles the correct negative-future form', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const r = await translate('a big dog will not eat rice');
-  assert.equal(r.garo, 'dal·a achak mi cha·jawa');
+  // RULE-006 (2026-10-20): the 'big' form is now Dalgipa achak ... Cha·jawa; the original bare
+  // fallback string stays pinned via 'old' (no attested pre-noun form).
+  const r = await translate('an old dog will not eat rice');
+  assert.equal(r.garo, 'git·cham achak mi cha·jawa');
   assert.equal(r.method, 'sov-assembly');
+  const rb = await translate('a big dog will not eat rice');
+  assert.ok(/^dalgipa achak /i.test(rb.garo) && /cha·?jawa$/i.test(rb.garo), `got: ${rb.garo}`);
 });
 
 // 2026-08-30, Claude B — runtime silent-data-loss audit (docs/CLAUDE_B_
