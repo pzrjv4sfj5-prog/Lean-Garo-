@@ -18,7 +18,7 @@ claims:
 examples:
   - "Maina na·a ka·dinga? = \"Why are you laughing?\" (mai-family, no -ma) — NV-113"
   - "Na·a maina re·baa? = \"Why did you come?\" (mai-family, no -ma) — NV-113"
-  - "Na·a badita cha·gimin? = \"How much did you eat?\" (badita, no -ma) — NV-113"
+  - "Na·a badita cha·aha? = \"How much did you eat?\" (badita, no -ma) — NV-182 (was cha·gimin, NV-113)"
   - "Sawa re·baa? = \"Who came?\" (sawa, no -ma) — NV-121"
   - "Na·a maiko cha·aha? = \"What did you eat?\" (maiko, no -ma) — NV-121"
   - "Na·a bachi re·anga? = \"Where did you go?\" (bachi, no -ma) — NV-121"
@@ -55,3 +55,8 @@ native_notes: >-
 last_updated: "2026-09-04"
 updated_by: "Claude B"
 source_ref: "docs/THANGSENG_NATIVE_VALIDATION.md, NV-113, NV-121, NV-128"
+po_updates:
+  - date: 2026-10-21
+    nv: NV-182
+    provenance: "Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote"
+    note: "How much did you eat? = Na·a badita cha·aha? (-aha = simple past 'did'); variant Na·a badita bang·e cha·aha?. Reverses the cha·gimin example. Conflicts with NV-158 bare -a past wh-questions; open for PO."

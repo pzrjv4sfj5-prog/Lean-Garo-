@@ -10,7 +10,7 @@ const cases = [
   ['I will do', 'Anga ka·gen'],
   ['has stopped eating', 'cha·jaha'],
   ['two chicken', 'do·o mang·gni'],
-  ['How much did you eat?', 'Na·a badita cha·a?'],
+  ['How much did you eat?', 'Na·a badita cha·aha?'], // NV-182 reverses cha·a
   ['How many apples are on the table?', 'Tableo badita rong apple donga?'],
   ['How are you going to do it?', 'Na·a uako maikai dakna am·enga?'],
   ['How is your grandmother?', 'Nang·ni ambide mai rokom?'],

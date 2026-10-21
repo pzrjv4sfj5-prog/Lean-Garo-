@@ -10,7 +10,7 @@ Not yet sent. For the Project Owner to relay to Thangseng via Tridip. Answers co
 - `-o` vs `-de` on time words: NV-174.
 
 ## A. Five uncited ties (which form is primary, or are they all valid?)
-1. agree: `kin·a·chak·a` / `ku·chak·a` / `ku·ra·chak·a`
+1. agree: `kin·a·chak·a` / `ku·chak·a` / `ku·ra·chak·a`  *(2026-10-21, NV-182: PO-relayed answer says `kina·chak·a` = listen/heed advice and `ku·chak·a` = respond/confess, so neither is "agree". `ku·ra·chak·a` still unanswered.)*
 2. brave: `pa·a` / `sang·chak·a`
 3. fever: `ding·du·a` / `han·ding·a` / `jom·a`
 4. greedy: `mat·u·a` / `mik·bok·a` / `mik·ni·a`

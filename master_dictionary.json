@@ -16537,8 +16537,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): kina·chak·a / ku·chak·a are not direct synonyms of \"agree\" (kina·chak·a = to listen / heed advice; ku·chak·a = to respond to a call, to confess). Retained per citation discipline, not deleted. Was: variant/VERIFIED/HIGH",
+    "confidence": "superseded"
   },
   {
     "english": "Agree",
@@ -16546,8 +16546,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): kina·chak·a / ku·chak·a are not direct synonyms of \"agree\" (kina·chak·a = to listen / heed advice; ku·chak·a = to respond to a call, to confess). Retained per citation discipline, not deleted. Was: variant/VERIFIED/HIGH",
+    "confidence": "superseded"
   },
   {
     "english": "Agree",
@@ -40976,8 +40976,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): ku·chak·a = to respond (to a call), or to confess; ku· relates to mouth/voice. Same form is also the NV-080 native-confirmed \"promise\" (polysemy; both retained).",
+    "confidence": "verified_high"
   },
   {
     "english": "rest",
@@ -78879,5 +78879,47 @@
     "category": "culture",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file: 'Come on, practice speaking!' directed at the listeners; `-bo` is strictly imperative and `Hai` is the urging word. Corrects the earlier 'let us practice garo together' gloss (NV-173 flag)."
+  },
+  {
+    "english": "How much did you eat?",
+    "garo": "Na·a badita cha·aha?",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): -aha is the simple past marker mapping to \"did\"; replaces cha·a (read as present/habitual) and cha·gimin (read as perfective participle). Reverses the RULE-048 / NV-113 example and the 2026-10-21 NV-181 pin; see conflict note under NV-158 (bare -a past wh-questions) in THANGSENG_NATIVE_VALIDATION.md NV-182.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "How much did you eat?",
+    "garo": "Na·a badita bang·e cha·aha?",
+    "category": "sentences",
+    "notes": "variant/VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): bang·e = adverbial \"in quantity/volume\", emphasizes the amount. Variant of Na·a badita cha·aha?",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "heed advice",
+    "garo": "kina·chak·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): kina·chak·a = to listen, to heed advice. Spelling as given (one raka); the earlier uncited agree row was kin·a·chak·a (three-part). Spelling to be confirmed.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to heed advice",
+    "garo": "kina·chak·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): see \"heed advice\".",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "confess",
+    "garo": "ku·chak·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): ku·chak·a = to confess, or to respond to a call; ku· relates to mouth/voice.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to confess",
+    "garo": "ku·chak·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): see \"confess\".",
+    "confidence": "verified_high"
   }
 ]

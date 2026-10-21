@@ -5983,6 +5983,8 @@ is no live code path to fix or regress. This closes the relay-log gap
 only; RULE-047 is recorded for whenever question-construction becomes a
 general engine feature.
 
+> **Pointer (2026-10-21, NV-182):** the `Na·a badita cha·gimin?` example is reversed to `Na·a badita cha·aha?` (PO-relayed, attributed to Thangseng).
+
 ## NV-114 — "only" construction: speak-type vs eat-type divergence CONFIRMED verb-driven — CLOSED 2026-09-02
 
 **Source:** Thangseng, via Project Owner relay (2026-09-02), answering
@@ -7422,6 +7424,8 @@ split), 0 new repository-intelligence violations, 0 resync
 candidates. Live-verified all 5 new full-sentence keys plus "who
 called?" via `translate()`.
 
+> **Pointer (2026-10-21, NV-182):** NV-182 reads bare `-a` as present only, which conflicts with these rows. Open, PO decision needed. Rows unchanged.
+
 ## NV-159 (2026-09-19, direct Thangseng WhatsApp transcript via Tridip, same session)
 
 Closed a small "smell" batch, no separate relay question needed —
@@ -7793,4 +7797,22 @@ Source: Project Owner pasted block in chat; not native quotes; raw message not o
 
 **Not done (engine lane, Claude B):** general composition for the three `have` roles (`I have to go` still gives `Anga re·ang·na donga`; `you have` + object is still `-ko`-marked outside the pin), general `do` as main verb, `has stopped` for other subjects (`he has stopped eating` gives `Ua donga`), `how` classification by context, and `how much did X do`-type templates.
 
-Next NV is NV-182: Thangseng ties 1-5 and bare "not".
+Next NV is NV-183. (NV-182 below partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
+
+## NV-182 (2026-10-21, past-tense wh-question `How much did you eat?` and `kina·chak·a` / `ku·chak·a`)
+
+Source: Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote. Project Owner pasted block in chat; the input already used `·`.
+
+**1. `How much did you eat?` -> `Na·a badita cha·aha?`** (pin in `corrections.json` overwritten; master primary row added). Variant: `Na·a badita bang·e cha·aha?` (`variant/VERIFIED/HIGH`; `bang·e` = adverbial "in quantity/volume", stresses the amount). Reasoning as relayed: bare `-a` (`cha·a`) reads as present/habitual; `-gimin` (`cha·gimin`) reads as a perfective participle, wrong for a direct active question; `-aha` is the simple past marker and maps to "did". Reverses the RULE-048 / NV-113 example `Na·a badita cha·gimin?` and the NV-181 pin `cha·a`. `Na·a badita cha·a?` / `cha·gimin` are no longer produced. Allowlisted `how much did you eat?` in `known_dictionary_conflicts.json` (primary + variant).
+
+**CONFLICT, not resolved here (PO decision needed):** NV-158 (2026-09-19, direct Thangseng WhatsApp transcript) recorded bare `-a` as valid in past wh-questions, with verified rows `Sawa cha·a?`, `Na·a maiko cha·a?`, `Na·a bano cha·a?`. The NV-182 reasoning ("`-a` is present only") disagrees with those. Those rows are untouched. Only the `how much` pin follows NV-182.
+
+**2. Claude B directive (logged, not implemented):** for English past-tense questions with "did" (`did you go`, `did you eat`), attach `-aha` (or completive `-jok`) to the verb stem; never default to bare `-a`. Caveat for B: do not apply this to the NV-158 `cha·a` rows or strip their `-a` forms until the conflict above is ruled on. See `docs/HANDOFF_CLAUDE_B_20261021_past_interrogative_aha.md`.
+
+**3. Vocabulary (tie 1, `agree`):** `kina·chak·a` = to listen / heed advice; `ku·chak·a` = to respond (to a call) or to confess (`ku·` = mouth/voice). Neither is "agree".
+- New verified_high rows: `heed advice`, `to heed advice` = `kina·chak·a`; `confess`, `to confess` = `ku·chak·a`. `respond` = `ku·chak·a` promoted unverified -> verified_high.
+- `Agree` rows `kin·a·chak·a` and `ku·chak·a` tagged SUPERSEDED (retained). `agree` now resolves to `ku·ra·chak·a`, the one remaining uncited candidate, not addressed by this update.
+- `ku·chak·a` is also the NV-080 native-confirmed `promise`. Treated as polysemy; all rows retained.
+- **Spelling to confirm:** the update writes `kina·chak·a`; the earlier agree row was `kin·a·chak·a`. Assumed the same word, stored as given. `listen` already has verified `Knachika`, `kin·a·a`, `kin·a·tim·a` (unchanged).
+
+Pointers: see NV-182 under NV-113 and NV-158.
