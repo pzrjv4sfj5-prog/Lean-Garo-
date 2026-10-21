@@ -7,8 +7,8 @@ Supersedes the 2026-10-20 migration doc (never committed; its content is carried
 - Roles: T = Project Owner (PO). Claude A = data, rules, audits. Claude B = engine fixes. Thangseng = native validator via the Tridip relay.
 
 ## Current state
-- Content head: see `.ai/WORKSTATE.yaml` line 2 `head:` (pointer commit on top). Based on origin/main after Claude B `e992a3d`.
-- Full gate green: dictionary 8918/8918, 9/9 corrections; repository-intelligence 0 new violations; resync clean; unit 612/612; sweep 15880 calls 0 errors; conformance 75/110 (15 orphans, 0 unbaselined, report-only); vite build OK.
+- Content head: see `.ai/WORKSTATE.yaml` line 2 `head:` (pointer commit on top). Rebased over Claude B `74094d5` (universal -a->-gipa, biko/uko/bichiko+nia, post-rebase -ko fix); no conflicts.
+- Full gate green: dictionary 8918/8918, 9/9 corrections; repository-intelligence 0 new violations; resync clean; unit 627/627; sweep 15880 calls 0 errors; conformance 75/110 (15 orphans, 0 unbaselined, report-only); vite build OK.
 
 ## Done this session (all pushed)
 - **NV-179:** PO: `miko` has no raka.
