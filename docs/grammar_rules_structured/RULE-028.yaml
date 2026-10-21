@@ -37,3 +37,9 @@ native_notes: >-
 last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-028"
+
+po_updates:
+  - date: 2026-10-20
+    nv: NV-180
+    provenance: "Project Owner-provided (pasted in chat 2026-10-20, attributed by the PO to native speakers / Holbrook; raw message not on file)"
+    note: "-aha / -manaha / -jok are all Simple Past (no present perfect); see RULE-026 note. 'has stopped X' (-jaha) not covered by this update, left unchanged."

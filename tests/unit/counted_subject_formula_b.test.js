@@ -37,7 +37,7 @@ const UNCHANGED = [
   ['two red apples', 'apple ronggni'],
   ['two kg of rice', 'merong kg gni'],
   ['two cups of tea', 'cha ge·gni'],
-  ['i see two dogs', 'Anga achak mang·gni·ko Nika'],
+  ['i see two dogs', 'Anga achak mang·gniko Nika'],
   ['dogs eat rice', 'Achakrang miko cha·a'],
 ];
 for (const [en, garo] of UNCHANGED) {

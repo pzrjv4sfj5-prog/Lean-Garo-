@@ -29,3 +29,9 @@ native_notes: "Source Rule 28."
 last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-026"
+
+po_updates:
+  - date: 2026-10-20
+    nv: NV-180
+    provenance: "Project Owner-provided (pasted in chat 2026-10-20, attributed by the PO to native speakers / Holbrook; raw message not on file)"
+    note: "No distinct present perfect in Garo: English 'has/have X-ed' maps to Simple Past. -jok and -manaha are both classified Simple Past. Engine currently gives cha·jok for 'has eaten' (consistent)."

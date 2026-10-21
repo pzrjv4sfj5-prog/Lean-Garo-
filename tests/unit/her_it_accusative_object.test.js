@@ -22,7 +22,7 @@ import { translate } from '../../src/translationEngine.js';
 // object-loop fix alone surfaced a second, independent bug — phrase_maps.js
 // has a bare 'her': 'Uni' entry mapping to the POSSESSIVE sense only, so
 // the naive fix produced a confidently WRONG translation ("Anga Uni
-// uni·ko dakchakgen") instead of an honest drop. This version resolves
+// uniko dakchakgen") instead of an honest drop. This version resolves
 // 'her'/'it' in true sentence-final object position directly to 'uko',
 // bypassing lookupPhrase/lookupGaro entirely for that token so the
 // phrase_maps.js collision is never consulted.
@@ -39,13 +39,13 @@ import { translate } from '../../src/translationEngine.js';
 // a complete '-ko'-suffixed accusative pronoun (same shape as the
 // existing 'Angko' case, docs/CLAUDE_B_SESSION_MIGRATION_20260920.md
 // §3.2) — sentenceBuilder.js's objAlreadyMarked exemption was extended to
-// 'uko' so the accusative marker isn't doubled ("uko·ko").
+// 'uko' so the accusative marker isn't doubled ("ukoko").
 
 test('translate: "her" as a sentence-final accusative object resolves to uko, not dropped', async () => {
   const r = await translate('i will help her');
   assert.equal(r.method, 'grammar-assembly');
   assert.match(r.garo, /\buko\b/, `expected "uko" in the output, got "${r.garo}"`);
-  assert.doesNotMatch(r.garo, /uko·ko/, 'accusative marker must not be doubled on uko');
+  assert.doesNotMatch(r.garo, /ukoko/, 'accusative marker must not be doubled on uko');
   assert.doesNotMatch(r.garo, /\bUni\b/, 'must not also carry the stray possessive "Uni"');
 });
 
@@ -53,7 +53,7 @@ test('translate: "it" as a sentence-final accusative object resolves to uko, not
   const r = await translate('i will help it');
   assert.equal(r.method, 'grammar-assembly');
   assert.match(r.garo, /\buko\b/, `expected "uko" in the output, got "${r.garo}"`);
-  assert.doesNotMatch(r.garo, /uko·ko/, 'accusative marker must not be doubled on uko');
+  assert.doesNotMatch(r.garo, /ukoko/, 'accusative marker must not be doubled on uko');
 });
 
 test('regression guard: corrections.json-shortcircuited "her"/"him" sentences are byte-for-byte unaffected', async () => {
@@ -68,19 +68,19 @@ test('regression guard: corrections.json-shortcircuited "her"/"him" sentences ar
 
 test('regression guard: him/us/them objects are unaffected by this fix (still ·ko-suffixed, untouched code path)', async () => {
   const him = await translate('i will help him');
-  assert.match(him.garo, /bichi·ko/i);
+  assert.match(him.garo, /bichiko/i);
 
   const us = await translate('i will help us');
-  assert.match(us.garo, /chingna·ko/i);
+  assert.match(us.garo, /chingnako/i);
 
   const them = await translate('i will help them');
-  assert.match(them.garo, /uamangna·ko/i);
+  assert.match(them.garo, /uamangnako/i);
 });
 
 test('regression guard: "me" (angko) object is unaffected by this fix', async () => {
   const r = await translate('i will help me');
   assert.match(r.garo, /\bangko\b/i);
-  assert.doesNotMatch(r.garo, /angko·ko/i);
+  assert.doesNotMatch(r.garo, /angkoko/i);
 });
 
 test('regression guard: "her" as a possessive determiner is NOT swept into the accusative-object fix', async () => {

@@ -509,7 +509,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `annoying`: candidates — `Jala·gipa` (weak/OCR) — shipped: `Jala·gipa`
 - `anoint`: candidates — `sit·a` (weak/OCR) — shipped: `sit·a`
 - `another`: candidates — `a·git·cha` (weak/OCR), `gip·in` (weak/OCR) — shipped: `gip·in`
-- `answer the question`: candidates — `Sing·ani·ko aganchaka·bo` (weak/OCR) — shipped: `Sing·ani·ko aganchaka·bo`
+- `answer the question`: candidates — `Sing·ani·ko aganchaka·bo` (weak/OCR), `Sing·aniko aganchaka·bo` (weak/OCR) — shipped: `Sing·aniko aganchaka·bo`
 - `anthill`: candidates — `ha·pru` (weak/OCR) — shipped: `ha·pru`
 - `anticipate`: candidates — `hai·chak·a` (weak/OCR) — shipped: `hai·chak·a`
 - `anus`: candidates — `Ki·sangkol` (weak/OCR), `ki·sam·bu` (weak/OCR) — shipped: `ki·sam·bu`
@@ -2195,7 +2195,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `i don't have time`: candidates — `A·gimiko dongja` (weak/OCR) — shipped: `A·gimiko dongja`
 - `i don't want`: candidates — `Anga nang·ja` (weak/OCR) — shipped: `Anga nang·ja`
 - `i feel lonely`: candidates — `Anga saksan gisik·o nanga` (weak/OCR) — shipped: `Anga saksan gisik·o nanga`
-- `i forgive you`: candidates — `Anga nang·ko kema ka·ra` (weak/OCR) — shipped: `Anga nang·ko kema ka·ra`
+- `i forgive you`: candidates — `Anga nang·ko kema ka·ra` (weak/OCR), `Anga nangko kema ka·ra` (weak/OCR) — shipped: `Anga nangko kema ka·ra`
 - `i gave you water`: candidates — `Anga nang·na chi on·a` (weak/OCR) — shipped: `Anga nang·na chi on·a`
 - `i give book`: candidates — `ang on·a ki·tap` (weak/OCR) — shipped: `ang on·a ki·tap`
 - `i give car`: candidates — `ang on·a mot` (weak/OCR) — shipped: `ang on·a mot`
@@ -2228,7 +2228,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `i run (future)`: candidates — `ang rungen` (weak/OCR) — shipped: `ang rungen`
 - `i run (past)`: candidates — `ang runaha` (weak/OCR) — shipped: `ang runaha`
 - `i run (present)`: candidates — `ang runa` (weak/OCR) — shipped: `ang runa`
-- `i saw a bird in the tree`: candidates — `Anga bol·o do·o·ko nikaha` (weak/OCR) — shipped: `Anga bol·o do·o·ko nikaha`
+- `i saw a bird in the tree`: candidates — `Anga bol·o do·oko nikaha` (weak/OCR) — shipped: `Anga bol·o do·oko nikaha`
 - `i sell (future)`: candidates — `ang sellgen` (weak/OCR) — shipped: `ang sellgen`
 - `i sell (past)`: candidates — `ang sellaha` (weak/OCR) — shipped: `ang sellaha`
 - `i sell (present)`: candidates — `ang sella` (weak/OCR) — shipped: `ang sella`
@@ -2250,7 +2250,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `i take money`: candidates — `ang na·a pisa` (weak/OCR) — shipped: `ang na·a pisa`
 - `i take water`: candidates — `ang na·a chik` (weak/OCR) — shipped: `ang na·a chik`
 - `i thought it was you`: candidates — `angade na·akon inesa chanchiachim` (weak/OCR) — shipped: `angade na·akon inesa chanchiachim`
-- `i trust you`: candidates — `Nang·ko bebe ra·a` (weak/OCR) — shipped: `Nang·ko bebe ra·a`
+- `i trust you`: candidates — `Nang·ko bebe ra·a` (weak/OCR), `Nangko bebe ra·a` (weak/OCR) — shipped: `Nangko bebe ra·a`
 - `i walk (future)`: candidates — `ang walkgen` (weak/OCR) — shipped: `ang walkgen`
 - `i walk (past)`: candidates — `ang walkaha` (weak/OCR) — shipped: `ang walkaha`
 - `i walk (present)`: candidates — `ang walka` (weak/OCR) — shipped: `ang walka`
@@ -3316,7 +3316,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `red water`: candidates — `bilak chik` (weak/OCR) — shipped: `bilak chik`
 - `reddish`: candidates — `gang·git·chak` (weak/OCR), `git·chak·mrang·a` (weak/OCR) — shipped: `git·chak·mrang·a`
 - `reduce`: candidates — `kom·i·a` (weak/OCR) — shipped: `kom·i·a`
-- `reduce the price`: candidates — `Dam·ko on·tisa komiatbo.` (weak/OCR) — shipped: `Dam·ko on·tisa komiatbo.`
+- `reduce the price`: candidates — `Dam·ko on·tisa komiatbo.` (weak/OCR), `Damko on·tisa komiatbo.` (weak/OCR) — shipped: `Damko on·tisa komiatbo.`
 - `reed`: candidates — `gong` (weak/OCR) — shipped: `gong`
 - `reflect`: candidates — `rik·rak·a` (weak/OCR) — shipped: `rik·rak·a`
 - `reflection`: candidates — `ja·gring` (weak/OCR) — shipped: `ja·gring`
@@ -3605,7 +3605,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `she want house`: candidates — `u nama rang` (weak/OCR) — shipped: `u nama rang`
 - `she want money`: candidates — `u nama pisa` (weak/OCR) — shipped: `u nama pisa`
 - `she want water`: candidates — `u nama chik` (weak/OCR) — shipped: `u nama chik`
-- `she will not be able to finish the difficult work tomorrow`: candidates — `Ua man·a·chi knal·ko man·jawa` (weak/OCR), `rakbegipa kamko ua knalo matchotatna man·jawa` (weak/OCR) — shipped: `rakbegipa kamko ua knalo matchotatna man·jawa`
+- `she will not be able to finish the difficult work tomorrow`: candidates — `Ua man·a·chi knalko man·jawa` (weak/OCR), `rakbegipa kamko ua knalo matchotatna man·jawa` (weak/OCR) — shipped: `rakbegipa kamko ua knalo matchotatna man·jawa`
 - `shed skin`: candidates — `gil·si·ri·a` (weak/OCR) — shipped: `gil·si·ri·a`
 - `sheep`: candidates — `be·ra` (weak/OCR), `do·omok·me·ra` (weak/OCR) — shipped: `do·omok·me·ra`
 - `shell`: candidates — `a·kam·pi` (weak/OCR), `bi·kil·ap` (weak/OCR), `bi·king` (weak/OCR) — shipped: `bi·king`
@@ -5931,7 +5931,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `yikes! / oh no!`: candidates — `Himanga!` (weak/OCR) — shipped: `Himanga!`
 - `yoke`: candidates — `ju·al` (weak/OCR) — shipped: `ju·al`
 - `yolk`: candidates — `a·no` (weak/OCR) — shipped: `a·no`
-- `you (object)`: candidates — `Nang·na / Nang·ko` (weak/OCR) — shipped: `Nang·na / Nang·ko`
+- `you (object)`: candidates — `Nang·na / Nang·ko` (weak/OCR), `Nang·na / Nangko` (weak/OCR) — shipped: `Nang·na / Nangko`
 - `you (plural) buy (future)`: candidates — `si buygen` (weak/OCR) — shipped: `si buygen`
 - `you (plural) buy (past)`: candidates — `si buyaha` (weak/OCR) — shipped: `si buyaha`
 - `you (plural) buy (present)`: candidates — `si buya` (weak/OCR) — shipped: `si buya`

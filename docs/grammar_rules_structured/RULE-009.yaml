@@ -62,3 +62,9 @@ native_notes: >-
 last_updated: "2026-09-04"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-009"
+
+po_updates:
+  - date: 2026-10-20
+    nv: NV-180
+    provenance: "Project Owner-provided (pasted in chat 2026-10-20, attributed by the PO to native speakers / Holbrook; raw message not on file)"
+    note: "No artificial raka before -ko: the suffix is strictly -ko and attaches directly (miko, appleko, achakko); a dot appears only if the base noun has one (do·oko). Applies to every object. Locative -o not addressed."

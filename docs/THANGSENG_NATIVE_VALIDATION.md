@@ -7762,3 +7762,16 @@ Source: Project Owner in chat: "dogs eat rice today=Achakrang da·alo mi·ko Cha
 3. **Open (PO):** does the no-dot rule extend to other `-ko` objects, or is `mi` special? The engine still writes `X·ko` for all other nouns.
 4. **Open (Claude B / PO):** time-word position (before vs after the subject).
 5. Pointer added under NV-169. The Thangseng synonym ties 1-5 and bare "not" will be NV-180.
+
+> Pointer (2026-10-20): open items 2-3 above are answered by NV-180 (both word orders valid; no-dot applies to every -ko object).
+
+## NV-180 (2026-10-20, Project Owner-provided rule block: stems, tense classification, -chim, time-word order, no artificial raka before -ko)
+
+Source: Project Owner pasted block in chat, attributed to native speakers / Holbrook; raw message not on file. Not native quotes. The block writes the raka as `.`; read here as `·`. Apostrophes were not touched (still a distinct character).
+
+1. **Stems keep the raka; suffixes `-gen` (will), `-bo` (imperative), `-nabe` (don't), `-jawa` (will not).** Already in verified rows and live output (`cha·gen`, `Cha·bo!`, `cha·nabe`, `cha·jawa`). No change. The "remove the final letter" recipe is not applied as a general algorithm.
+2. **No present perfect.** `has/have X-ed` maps to Simple Past; `-jok` and `-manaha` are both Simple Past. Answers the NV-179 `has eaten` question: `cha·jok` stays. `has stopped` (-jaha) not addressed, unchanged.
+3. **`-chim`:** remote past / past continuous (`poraiengachim` = was studying), past perfect/conditional (`Kataha.chim`), contextual plural (`Mai·a sing·ani chim?`). Recorded on RULE-013, not applied: fused vs free-standing, "no longer" nuance and the raka position in `Kataha.chim` are unresolved; the plural does not replace `-rang`.
+4. **Time-word order is flexible.** `Da·alo anga miko cha·a` and `Anga da·alo miko cha·a` are both valid. Engine keeps time-first. Resolves NV-179 open item 4; no row added.
+5. **No artificial raka before `-ko`, for every object** (`miko`, `appleko`, `achakko`; `do·oko` because `do·o` has its own). Engine object marker and the `-ode` junction (`applekode`) changed; 10 master rows, 11 pins and the tests updated; superseded rows and inherent-dot words (`Ko·ko·rika`, `pul·ko·pi`) untouched. Locative `-o` still written `·o` (not addressed).
+6. Synonym ties 1-5 and bare "not" will be NV-181.

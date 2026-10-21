@@ -15,8 +15,8 @@ const IMPROVED = [
   ['cats will eat rice', 'Menggorang miko Cha·gen'],
   ['cats did not eat rice', 'Menggorang miko Cha·ja'],
   ['the dog eats rice', 'Achak miko Cha·a'],
-  ['my cats drink water', 'Angni menggorang chi·ko Ringa'],
-  ['cats see dogs', 'Menggorang achakrang·ko Nika'],
+  ['my cats drink water', 'Angni menggorang chiko Ringa'],
+  ['cats see dogs', 'Menggorang achakrangko Nika'],
 ];
 for (const [en, garo] of IMPROVED) {
   test(`noun subject gets object -ko: "${en}"`, async () => {

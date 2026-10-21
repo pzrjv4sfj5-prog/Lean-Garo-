@@ -139,7 +139,7 @@ const REGRESSION_CASES = [
   // "lying" yet (that needs native validation, tracked NV-007) - this
   // only guards against the confirmed-invalid output, per Claude A's
   // explicit "graceful gap over invalid Garo" directive.
-  { in: 'I am lying down', expectGaro: 'Anga ka·ma·ko', expectMethod: ['grammar-assembly'] },
+  { in: 'I am lying down', expectGaro: 'Anga ka·mako', expectMethod: ['grammar-assembly'] },
   // RC-006: purpose_map.json 'search' fixed from the retired
   // am·e·nik·na contamination to Sandi·na (regular -na on the confirmed
   // Sandia/RULE-032 stem).
@@ -474,7 +474,7 @@ test('number word is never picked as the verb; "has" resolves as an irregular fo
   assert.equal(g.verb?.english, 'has');
   assert.equal(g.verb?.garo, 'donga');
   const r = await translate('he has two dogs');
-  // RC-CANDIDATE-036: was 'Ua do·o manggni·ko donga' - 'do·o manggni'
+  // RC-CANDIDATE-036: was 'Ua do·o manggniko donga' - 'do·o manggni'
   // literally means "two birds" (do·o = chicken/bird; confirmed via
   // "two birds" itself compiling to the identical string). That was the
   // pre-fix compiler bug's output, not the correct translation. Master
@@ -482,7 +482,7 @@ test('number word is never picked as the verb; "has" resolves as an irregular fo
   // is 'achak manggni' (achak = dog). This assertion was locking in the
   // bug; the verb-guard behavior under test here is unaffected.
   // UPDATED (2026-09-24, Claude B, Project Owner directive relaying
-  // Thangseng-confirmed native evidence): 'achak manggni·ko donga' locked
+  // Thangseng-confirmed native evidence): 'achak manggniko donga' locked
   // in the pre-existing ordinary-transitive-object marker pattern, which
   // the "the boy has a dog" -> "Me·a bi·sao achak donga" citation shows
   // is wrong for this verb — "has/have" is existential possession
@@ -685,7 +685,7 @@ test('RC-CANDIDATE-026: verb present for a silent-e base with an object present 
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('she tickles the baby');
   assert.ok(r.garo.includes('lek·gu·a'), `verb must not be silently dropped, got: ${r.garo}`);
-  assert.ok(r.garo.includes('gen·da·ko'), `object must carry its ·ko marker, got: ${r.garo}`);
+  assert.ok(r.garo.includes('gen·dako'), `object must carry its ·ko marker, got: ${r.garo}`);
 });
 
 test('RC-CANDIDATE-026: verb present for a silent-e base with an object present ("like")', async () => {
@@ -703,7 +703,7 @@ test('RC-CANDIDATE-026: verb present for a silent-e base with an object present 
 test('RC-CANDIDATE-026 regression guard: genuine sibilant -es verbs are unaffected ("watch")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('he watches the dog');
-  assert.equal(r.garo, 'Ua achak·ko ni·rik·a');
+  assert.equal(r.garo, 'Ua achakko ni·rik·a');
 });
 
 // --- Two page-113 dictionary entries had a corrupted English headword
@@ -1408,7 +1408,7 @@ test('"she has N children" for counts without a corrections.json entry still app
   // UPDATED (2026-09-24, Claude B, Project Owner directive relaying
   // Thangseng-confirmed native evidence): see the "he has two dogs" test
   // above for the same existential-possession fix (possessor -o,
-  // possessed object bare) — 'sakbonga·ko' locked in the ordinary
+  // possessed object bare) — 'sakbongako' locked in the ordinary
   // transitive-object marker pattern this fix corrects.
   assert.equal(result.garo, 'Uao bi·sa sakbonga donga');
   assert.ok(!result.garo.includes('bi·sarang'), 'should not fall back to the bare plural noun with no classifier');
@@ -1634,7 +1634,7 @@ test('item 2 regression guard: plain [NUMBER][NOUN] phrases (no adjective) are u
 // plain drop, since no '[UNKNOWN]' string was ever produced, so this
 // evaded the existing `result.includes('[UNKNOWN]')` safety check in
 // sentenceBuilder.js entirely. Confirmed live pre-fix:
-// "i bought a gadget yesterday" -> "Anga mejal·ko breaha" ("mejal" =
+// "i bought a gadget yesterday" -> "Anga mejalko breaha" ("mejal" =
 // "yesterday" wrongly took the object slot, "gadget" vanished).
 //
 // Fixture words used below, confirmed directly via lookupGaro():
@@ -1685,13 +1685,13 @@ test('AI-002: object-word resolution is tracked per-word, not by last-word-only 
 
 test('AI-002: end-to-end translate() no longer ships the wrong-substitution output for the confirmed live repro case', async () => {
   const result = await translate('i bought a gadget yesterday');
-  // Pre-fix, this was 'Anga mejal·ko breaha' via method 'grammar-
+  // Pre-fix, this was 'Anga mejalko breaha' via method 'grammar-
   // assembly' — grammar-assembly incorrectly succeeded by mislabeling
   // "yesterday" as the object. Post-fix, grammar-assembly must
   // recognize the object as unresolved (see the unit-level test above)
   // and correctly decline (return null), so translate() falls through
   // to a different method rather than shipping the wrong substitution.
-  assert.notEqual(result.garo, 'Anga mejal·ko breaha');
+  assert.notEqual(result.garo, 'Anga mejalko breaha');
   assert.notEqual(result.method, 'grammar-assembly',
     'grammar-assembly must not silently succeed when a genuine object word is unresolved');
 });
@@ -2349,8 +2349,8 @@ test('NV-165 regression guard: the fix is scoped to has/have+donga and does not 
 test('NV-165 regression guard: possessive object ("the boy has his dog") is a distinct construction and is deliberately left untouched by this fix', async () => {
   const r = await translate('the boy has his dog');
   // Untouched means: the ordinary possessive+accusative-object pattern
-  // (subject bare, object '·ko'-marked) still applies — the new
+  // (subject bare, object 'ko'-marked) still applies — the new
   // possessor -o / bare-object rule does not fire when grammar.possessive
   // is present, since that combination has no citation on record.
-  assert.equal(r.garo, 'me\u00b7a bi\u00b7sa Uni achak\u00b7ko donga');
+  assert.equal(r.garo, 'me\u00b7a bi\u00b7sa Uni achakko donga');
 });

@@ -34,3 +34,9 @@ native_notes: >-
 last_updated: "2026-07-26"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-013"
+
+po_updates:
+  - date: 2026-10-20
+    nv: NV-180
+    provenance: "Project Owner-provided (pasted in chat 2026-10-20, attributed by the PO to native speakers / Holbrook; raw message not on file)"
+    note: "PO-provided: chim is primarily Remote Past / past continuous (poraiengachim = was studying); also Past Perfect/conditional (stem+tense+chim, e.g. 'Kataha.chim' = would have / had run) and a contextual plural (Mai·a sing·ani chim?). UNRESOLVED vs this rule: the PO wrote chim fused (poraiengachim) while this rule says free-standing; 'no longer' nuance not confirmed; raka position in 'Kataha.chim' unclear. Not applied to engine; plural use does not replace -rang."

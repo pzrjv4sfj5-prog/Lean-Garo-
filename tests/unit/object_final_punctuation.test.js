@@ -44,7 +44,7 @@ test('translate: sentence-final object with "?" now composes via grammar-assembl
 
   const water = await translate('did you eat water?');
   assert.equal(water.method, 'grammar-assembly');
-  assert.equal(water.garo, 'Na·a chi·ko Cha·ahama?');
+  assert.equal(water.garo, 'Na·a chiko Cha·ahama?');
 });
 
 test('regression guard: object-less questions are unaffected by the fix', async () => {

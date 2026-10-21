@@ -4484,9 +4484,10 @@
   },
   {
     "english": "you (object)",
-    "garo": "Nang·na / Nang·ko",
+    "garo": "Nang·na / Nangko",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one)."
   },
   {
     "english": "he / she",
@@ -4734,9 +4735,10 @@
   },
   {
     "english": "reduce the price",
-    "garo": "Dam·ko on·tisa komiatbo.",
+    "garo": "Damko on·tisa komiatbo.",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one)."
   },
   {
     "english": "i want to buy this",
@@ -5315,9 +5317,10 @@
   },
   {
     "english": "i forgive you",
-    "garo": "Anga nang·ko kema ka·ra",
+    "garo": "Anga nangko kema ka·ra",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one)."
   },
   {
     "english": "i am grateful",
@@ -5327,9 +5330,10 @@
   },
   {
     "english": "i trust you",
-    "garo": "Nang·ko bebe ra·a",
+    "garo": "Nangko bebe ra·a",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one)."
   },
   {
     "english": "i am surprised",
@@ -6185,9 +6189,9 @@
   },
   {
     "english": "answer the question",
-    "garo": "Sing·ani·ko aganchaka·bo",
+    "garo": "Sing·aniko aganchaka·bo",
     "category": "general",
-    "notes": "Usage example — verb sense (NV-077, 2026-08-16 annotation): demonstrates 'aganchaka' (root Aganchaka) in imperative/command form '-bo'. Companion noun-sense example: idx 1008."
+    "notes": "Usage example — verb sense (NV-077, 2026-08-16 annotation): demonstrates 'aganchaka' (root Aganchaka) in imperative/command form '-bo'. Companion noun-sense example: idx 1008. ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one)."
   },
   {
     "english": "i have a question",
@@ -6521,10 +6525,10 @@
   },
   {
     "english": "i saw the film last week.",
-    "garo": "Anga ia film·ko mija antio nia.",
+    "garo": "Anga ia filmko mija antio nia.",
     "category": "time",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-29 (NV-099, Project Owner-relayed Thangseng evidence). Confirms the sentence AND the 'film-ko' direct-object construction of the already-VERIFIED 'film' loanword (RULE-009 -ko accusative marker, general system already verified/high; this is a confirming instance, not a new rule). Superseded prior unverified row 'Ang·a ia film ko nia mija antio.' (word-order variant, no prior native backing). Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation."
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-29 (NV-099, Project Owner-relayed Thangseng evidence). Confirms the sentence AND the 'film-ko' direct-object construction of the already-VERIFIED 'film' loanword (RULE-009 -ko accusative marker, general system already verified/high; this is a confirming instance, not a new rule). Superseded prior unverified row 'Ang·a ia film ko nia mija antio.' (word-order variant, no prior native backing). Orthography fixed 2026-09-07 (Claude A, raka cleanup pass): apostrophe/hyphen -> raka (·), matches established spelling of this root elsewhere in the corpus. No change to confidence tier or citation. ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one)."
   },
   {
     "english": "how was the journey yesterday?",
@@ -15910,11 +15914,11 @@
   },
   {
     "english": "i saw a bird in the tree",
-    "garo": "Anga bol·o do·o·ko nikaha",
+    "garo": "Anga bol·o do·oko nikaha",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
+    "notes": "ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one).",
     "confidence": "unverified"
   },
   {
@@ -52013,11 +52017,11 @@
   },
   {
     "english": "I forgot the word",
-    "garo": "Anga ku·sik·ko sik·jokaha",
+    "garo": "Anga ku·sikko sik·jokaha",
     "pos": null,
     "category": "travel",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/200sentences",
+    "notes": "VERIFIED/HIGH/200sentences ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one).",
     "confidence": "verified_high"
   },
   {
@@ -66964,11 +66968,11 @@
   },
   {
     "english": "i want to see you",
-    "garo": "Anga nang·ko nina skenga",
+    "garo": "Anga nangko nina skenga",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Unlike water/food, this already has its own verb ('nina', to see) — the native's eat/drink ko-drop peculiarity was stated specifically for wanting-to-eat/drink, not generalized to other verbs here, so 'ko' is retained on the object. Root corrected 'sikenga'->'skenga' (continuous of 'ska'/want, not 'sika'/push-insert) to match today's directly-evidenced form. NOTE: this creates an unresolved tension with the already-implemented, already-VERIFIED 10 'i want to X' sentences (NV-021, 2026-07-18), which use bare 'ska' rather than 'skenga' for the identical verb+na+X frame (e.g. 'Anga cha·na ska' = 'i want to eat', vs. today's 'apple cha'na skenga' = 'i want to eat apple') - flagged as a genuine open question (register/tense-aspect distinction vs. free variation), NOT resolved here, the 10 prior entries left untouched pending clarification.",
+    "notes": "VERIFIED/HIGH — NV-021 follow-up, direct Thangseng native validation via Tridip WhatsApp, 2026-07-19 (relayed to Claude A 2026-08-03). Unlike water/food, this already has its own verb ('nina', to see) — the native's eat/drink ko-drop peculiarity was stated specifically for wanting-to-eat/drink, not generalized to other verbs here, so 'ko' is retained on the object. Root corrected 'sikenga'->'skenga' (continuous of 'ska'/want, not 'sika'/push-insert) to match today's directly-evidenced form. NOTE: this creates an unresolved tension with the already-implemented, already-VERIFIED 10 'i want to X' sentences (NV-021, 2026-07-18), which use bare 'ska' rather than 'skenga' for the identical verb+na+X frame (e.g. 'Anga cha·na ska' = 'i want to eat', vs. today's 'apple cha'na skenga' = 'i want to eat apple') - flagged as a genuine open question (register/tense-aspect distinction vs. free variation), NOT resolved here, the 10 prior entries left untouched pending clarification. ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one).",
     "confidence": "verified_high"
   },
   {
@@ -74733,10 +74737,10 @@
   },
   {
     "english": "she will not be able to finish the difficult work tomorrow",
-    "garo": "Ua man·a·chi knal·ko man·jawa",
+    "garo": "Ua man·a·chi knalko man·jawa",
     "category": "phrases",
     "confidence": "unverified",
-    "notes": "UNVERIFIED — tied candidate, no native confirmation of which is preferred. Checked against a fresh clone; the discrepancy between this and its sibling candidate is real, not a subtle artifact. Flagged for Thangseng disambiguation rather than picked -- see docs/THANGSENG_RELAY_QUESTION_20260906.md. Same treatment as the existing docs/PICKPRIMARY_VERIFIED_TIES.md ties, logged manually here since neither candidate is yet verified_high."
+    "notes": "UNVERIFIED — tied candidate, no native confirmation of which is preferred. Checked against a fresh clone; the discrepancy between this and its sibling candidate is real, not a subtle artifact. Flagged for Thangseng disambiguation rather than picked -- see docs/THANGSENG_RELAY_QUESTION_20260906.md. Same treatment as the existing docs/PICKPRIMARY_VERIFIED_TIES.md ties, logged manually here since neither candidate is yet verified_high. ORTHOGRAPHY NV-180 (2026-10-20): artificial raka before -ko removed per Project Owner-provided directive (-ko attaches directly; dot only if the base noun has one)."
   },
   {
     "english": "she will not be able to finish the difficult work tomorrow",

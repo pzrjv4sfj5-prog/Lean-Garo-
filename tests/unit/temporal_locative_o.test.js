@@ -8,7 +8,7 @@ import { translate } from '../../src/translationEngine.js';
 // "now" = da·o already ends in -o), NEVER object -ko, and the real object
 // (mi) keeps its own -ko. Isolated forms: today = Da·al, yesterday = Mijal,
 // tomorrow = Knal. Destinations default to the -chi form (bajalchi).
-// Pre-fix: "i eat rice today" -> "Anga da·alo·ko Cha·a" (rice dropped).
+// Pre-fix: "i eat rice today" -> "Anga da·aloko Cha·a" (rice dropped).
 // Evidence class: PO-pasted rule, no native attribution (see handoff).
 // Comparison ignores case and raka/apostrophe punctuation (cosmetic verb
 // capitalization is a separate known item).
