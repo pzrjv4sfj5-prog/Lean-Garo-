@@ -21,7 +21,15 @@ const PRE_NOUN_ADJ_ENGLISH = new Set([
   'busy', 'ready', 'green',
 ]);
 export const PRE_NOUN_COLOUR_ADJ = { red: 'gitchak' };
-export function preNounAdjectiveForm(english) {
+// "little": size sense = chona (same word as small), quantity sense =
+// ontisa / banggija, never chona (NV-177 item 5). A mass noun after "little"
+// ("a little rice") is the quantity sense, so no size form is generated.
+const MASS_NOUNS = new Set(['rice', 'water', 'milk', 'salt', 'sugar', 'oil', 'food', 'money', 'time', 'bread', 'tea', 'coffee', 'meat', 'soup', 'flour', 'juice', 'wine', 'beer', 'butter', 'honey', 'air', 'rain', 'wind', 'help', 'work']);
+export function preNounAdjectiveForm(english, nextWord) {
+  if (english === 'little') {
+    if (!nextWord || MASS_NOUNS.has(String(nextWord).toLowerCase())) return null;
+    english = 'small';
+  }
   if (!PRE_NOUN_ADJ_ENGLISH.has(english)) return null;
   const base = String(lookupPhrase(english) || lookupGaro(english) || '');
   if (!base || /\s/.test(base) || !/a$/i.test(base)) return null;
@@ -34,7 +42,7 @@ export function splitPreNounAdjectives(words) {
   const parts = []; let i = 0;
   while (i < words.length - 1) {
     const w = words[i].toLowerCase();
-    const form = preNounAdjectiveForm(w) || PRE_NOUN_COLOUR_ADJ[w];
+    const form = preNounAdjectiveForm(w, words[i + 1]) || PRE_NOUN_COLOUR_ADJ[w];
     if (!form) break;
     parts.push(form); i++;
   }

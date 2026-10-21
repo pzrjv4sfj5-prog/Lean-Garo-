@@ -519,7 +519,7 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   // identically — exact-match on the resolved Garo value, not a
   // pattern/prefix check, so it can't accidentally catch an unrelated
   // word that happens to start with "u".
-  const objAlreadyMarked = grammar.object && (grammar.object.garo === 'Angko' || grammar.object.garo === 'uko');
+  const objAlreadyMarked = grammar.object && (['Angko', 'uko', 'biko', 'bichiko'].includes(grammar.object.garo));
   // NEW FIX (2026-09-21, Claude B): when the object is incorporated into a
   // "want to eat/drink X" construction (grammar.purposeAction present),
   // the accusative -ko marker is dropped entirely — a native-confirmed

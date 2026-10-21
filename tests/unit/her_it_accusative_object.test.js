@@ -41,11 +41,12 @@ import { translate } from '../../src/translationEngine.js';
 // §3.2) — sentenceBuilder.js's objAlreadyMarked exemption was extended to
 // 'uko' so the accusative marker isn't doubled ("ukoko").
 
-test('translate: "her" as a sentence-final accusative object resolves to uko, not dropped', async () => {
+test('translate: "her" as a sentence-final accusative object resolves to biko (humans only), not dropped', async () => {
+  // NV-177/178 (2026-10-20): biko = him/her, humans only; uko stays the universal form for "it".
   const r = await translate('i will help her');
   assert.equal(r.method, 'grammar-assembly');
-  assert.match(r.garo, /\buko\b/, `expected "uko" in the output, got "${r.garo}"`);
-  assert.doesNotMatch(r.garo, /ukoko/, 'accusative marker must not be doubled on uko');
+  assert.match(r.garo, /\bbiko\b/, `expected "biko" in the output, got "${r.garo}"`);
+  assert.doesNotMatch(r.garo, /biko·?ko/, 'accusative marker must not be doubled on biko');
   assert.doesNotMatch(r.garo, /\bUni\b/, 'must not also carry the stray possessive "Uni"');
 });
 
@@ -68,7 +69,9 @@ test('regression guard: corrections.json-shortcircuited "her"/"him" sentences ar
 
 test('regression guard: him/us/them objects are unaffected by this fix (still ·ko-suffixed, untouched code path)', async () => {
   const him = await translate('i will help him');
-  assert.match(him.garo, /bichiko/i);
+  // NV-177/178 (2026-10-20): a direct object him is biko, not the -chi form bichiko.
+  assert.match(him.garo, /\bbiko\b/i);
+  assert.doesNotMatch(him.garo, /bichi/i);
 
   const us = await translate('i will help us');
   assert.match(us.garo, /chingnako/i);

@@ -239,7 +239,7 @@ export const PHRASE_MAPS = {
   'expensive': 'rak·a',
   'cheap': 'Dam·nom·a',
   'all': 'Gimikan', // native-confirmed 2026-08-17 (NV-080, Thangseng relay) as 'Gimikan', superseding the earlier 2026-08-06 provisional 3-way tie (be·bak / gim·ik / ·tok·) referenced in prior versions of this comment -- no longer provisional
-  // 'some' mapping removed 2026-10-16: Project Owner confirmed mit·am means fat (pork fat), not 'some'. No replacement Garo asserted.
+  // 2026-10-20 (NV-177): supersedes the 2026-10-16 note that said mitam = fat. Final rule: some = mitam, fat = mitim. The 'some' row lives in the dictionary, not in this map.
   'many': 'Bang·a',
   'few': 'On·titi',
   'red': 'Gitchak',

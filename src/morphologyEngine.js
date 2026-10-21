@@ -205,6 +205,18 @@ export function findVerbForm(w) {
       // the noun the moment 'hope' gained a senses map.
       if (lookupGaro(eForm, 'v.')) return lookupGaro(eForm, 'v.');
     }
+    // Bare "+s" fallback (2026-10-20, Claude B): "sees" strips to "se" via
+    // es$, and the silent-e fallback above is skipped because "se" already
+    // ends in 'e', so the verb never resolved and "she sees him" came out as
+    // "Ua niarang\u00b7ko Bichi" (see parsed as a plural noun). When the es$
+    // form did not resolve, the real lemma is the word minus its final 's'
+    // (sees, agrees, flees, foresees). Only reached after every earlier
+    // resolution failed, so genuine -es verbs (watches, fixes) are untouched.
+    if (/es$/.test(w)) {
+      const sForm = w.slice(0, -1);
+      if (IRREGULAR_VERBS[sForm]) return IRREGULAR_VERBS[sForm];
+      if (lookupGaro(sForm, 'v.') && !(sForm in PRONOUN_MAP)) return lookupGaro(sForm, 'v.');
+    }
     // Silent-e "+d" fallback (found 2026-09-21, Claude B, session
     // migration — docs/CLAUDE_B_SESSION_MIGRATION_20260921.md §sentence-
     // builder gaps): same collision class as the "+s" fallback directly

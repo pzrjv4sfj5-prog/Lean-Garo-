@@ -173,7 +173,7 @@ async function translateNounSubjectClause(cleaned) {
   {
     const adjParts = [];
     while (i < tokens.length - 1) {
-      const form = preNounAdjectiveForm(tokens[i]) || PRE_NOUN_COLOUR_ADJ[tokens[i]];
+      const form = preNounAdjectiveForm(tokens[i], tokens[i + 1]) || PRE_NOUN_COLOUR_ADJ[tokens[i]];
       if (!form) break;
       adjParts.push(form); i++;
     }

@@ -621,6 +621,9 @@ export function analyzeGrammar(input) {
     // See the "her"/"it" accusative-object fix below (2026-09-20,
     // Claude B) for what sets this.
     let objectIsThirdPersonAccusative = false;
+    // NV-177/178 (2026-10-20): biko = him/her (humans only), uko = it. A direct
+    // object him/her is biko, never the -chi form (bichi+ko).
+    let thirdPersonAccusativeGaro = 'uko';
     // Reason-adjunct fix (2026-09-26, Claude B, Project Owner directive:
     // Thangseng in chat gave the native construction directly -- "he came
     // for some reason or other" -> "Ua maiaba a·selni gimin re·ba·aha").
@@ -689,7 +692,7 @@ export function analyzeGrammar(input) {
       // attempted. 'him' is already unaffected: it was never in
       // POSSESSIVES or STOP_WORDS and already resolves correctly via the
       // existing path below (Bichi, unchanged).
-      if ((w === 'her' || w === 'it') && verb) {
+      if ((w === 'her' || w === 'it' || w === 'him') && verb) {
         const hasFollowingContent = words.slice(i + 1).some((fw) => {
           const cleaned = fw.toLowerCase().replace(/[^a-z]/g, '');
           return cleaned && !STOP_WORDS.has(cleaned);
@@ -697,6 +700,7 @@ export function analyzeGrammar(input) {
         if (!hasFollowingContent) {
           objectWords.push(words[i].replace(/[?.!,;:]+$/, ''));
           objectIsThirdPersonAccusative = true;
+          thirdPersonAccusativeGaro = w === 'it' ? 'uko' : 'biko';
           continue;
         }
       }
@@ -850,7 +854,7 @@ export function analyzeGrammar(input) {
       // would otherwise resolve via phrase_maps.js's possessive-sense
       // 'Uni' entry, not the accusative 'uko' this flag confirms.
       if (objectIsThirdPersonAccusative) {
-        objGaro = 'uko';
+        objGaro = thirdPersonAccusativeGaro;
       }
       const existingFullPhrase = lookupPhrase(objEng) || lookupGaro(objEng);
       // RULE-006 (2026-10-20): an object noun phrase with leading -a-final
@@ -1005,6 +1009,18 @@ export function analyzeGrammar(input) {
           }
         }
       }
+      // NV-177/178 (2026-10-20): "look at him/her" is the directional verb nia,
+      // which needs the -chi pronoun (Anga bichiko nia); never bichiko + nika.
+      // Present tense only: the nia past/future forms have no evidence yet.
+      if (verb && /^looks?$/i.test(verb.english) && verb.tense === 'present'
+          && words.some((x) => x.toLowerCase() === 'at') && /^(him|her)$/i.test(objEng)) {
+        objGaro = 'bichiko';
+        objectIsThirdPersonAccusative = true;
+        objectIsLocativeAdjunct = false;
+        verb.garo = 'nia';
+        verb.garoWithTense = 'nia';
+      }
+      const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
       const marker = objectIsLocativeAdjunct ? '·o' : 'ko'; // NV-180: no artificial raka before -ko
       object = { english: objEng, garo: objGaro, withMarker: objGaro + marker, isLocativeAdjunct: objectIsLocativeAdjunct };
     }
