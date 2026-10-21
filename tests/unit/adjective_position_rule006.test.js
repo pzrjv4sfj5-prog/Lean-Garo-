@@ -76,7 +76,7 @@ test('universal -gipa: stacks, colour stays bare', async () => {
 });
 
 test('-rang attaches to the noun only', async () => {
-  assert.equal(await exact('big dogs eat rice'), 'dal·gipa achakrang mi·ko cha·a');
+  assert.equal(await exact('big dogs eat rice'), 'dal·gipa achakrang miko cha·a');
   const g = await exact('good dogs sleep');
   assert.ok(/^namgipa achakrang /.test(g), g);
   assert.ok(!/gipa\w*rang/.test(g.replace(/\u00b7/g, '')), `adjective must not take -rang: ${g}`);
@@ -100,12 +100,12 @@ test('adjectives without a -a-final base are not given a derived -gipa (old/new/
 // Object noun phrases (grammar path): same rule, and the adjective is never
 // silently dropped. Pre-fix: "i eat a sweet fruit" -> "Anga bite·ko Cha·a".
 test('object NP with -a-final adjective takes -gipa and is not dropped', async () => {
-  assert.equal(await exact('i eat a sweet fruit'), 'anga chi·gipa bite·ko cha·a');
-  assert.equal(await exact('i like the hot food'), 'anga ding·gipa al·a·ko sin·a');
-  assert.equal(await exact('i buy a heavy bag'), 'anga jrigipa jol·a·ko bre·a');
-  assert.equal(await exact('i eat sweet rice'), 'anga chi·gipa mi·ko cha·a');
+  assert.equal(await exact('i eat a sweet fruit'), 'anga chi·gipa biteko cha·a');
+  assert.equal(await exact('i like the hot food'), 'anga ding·gipa al·ako sin·a');
+  assert.equal(await exact('i buy a heavy bag'), 'anga jrigipa jol·ako bre·a');
+  assert.equal(await exact('i eat sweet rice'), 'anga chi·gipa miko cha·a');
 });
 test('object NP: stacked adjectives, verified rows untouched', async () => {
-  assert.equal(await exact('i see a big red dog'), 'anga dal·gipa gitchak achak·ko nika');
+  assert.equal(await exact('i see a big red dog'), 'anga dal·gipa gitchak achakko nika');
   assert.equal(norm(await exact('i see a big dog')), 'anga dalgipa achakko nika');
 });

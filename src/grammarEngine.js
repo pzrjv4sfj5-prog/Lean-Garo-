@@ -1020,7 +1020,6 @@ export function analyzeGrammar(input) {
         verb.garo = 'nia';
         verb.garoWithTense = 'nia';
       }
-      const marker = objectIsLocativeAdjunct ? '·o' : '·ko';
       const marker = objectIsLocativeAdjunct ? '·o' : 'ko'; // NV-180: no artificial raka before -ko
       object = { english: objEng, garo: objGaro, withMarker: objGaro + marker, isLocativeAdjunct: objectIsLocativeAdjunct };
     }
