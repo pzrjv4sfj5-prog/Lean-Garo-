@@ -7775,3 +7775,22 @@ Source: Project Owner pasted block in chat, attributed to native speakers / Holb
 4. **Time-word order is flexible.** `Da·alo anga miko cha·a` and `Anga da·alo miko cha·a` are both valid. Engine keeps time-first. Resolves NV-179 open item 4; no row added.
 5. **No artificial raka before `-ko`, for every object** (`miko`, `appleko`, `achakko`; `do·oko` because `do·o` has its own). Engine object marker and the `-ode` junction (`applekode`) changed; 10 master rows, 11 pins and the tests updated; superseded rows and inherent-dot words (`Ko·ko·rika`, `pul·ko·pi`) untouched. Locative `-o` still written `·o` (not addressed).
 6. Synonym ties 1-5 and bare "not" will be NV-181.
+
+## NV-181 (2026-10-21, Project Owner-provided response to the fac54aa live outputs; contextual `how` and `have`)
+
+Source: Project Owner pasted block in chat; not native quotes; raw message not on file. `.` read as `·`.
+
+**Applied (general):** `him/her` / `her/him` is routed to `him` before lookup (`I see him/her` = `Anga biko nika`, `I look at him/her` = `Anga bichiko nia`, no `[UNKNOWN]`); `chicken` and `rooster` take classifier `mang` (`two chicken` = `do·o mang·gni`); phrase map `how much` = `Badita` (was stale `Baita?`).
+
+**Applied as exact-phrase pins only (the PO's own examples; the general rule is not generalized):** `I will do` = `Anga ka·gen` (ka·a chosen over dak·a, the PO offered both); `has stopped eating` = `cha·jaha` (RULE-025); `How much did you eat?`, `How many apples are on the table?`, `How are you going to do it?`, `How is your grandmother?`, `I have a dog.`, `Do you have my book?`, `Have you eaten your lunch?`, `I have come to you.`, `Do you have to go to the market?` (all as given).
+
+**`how` split (PO):** quantity = `badita`; method = `maikai`; condition = `mai rokom`.
+- **CONFLICT, needs PO:** NV-178 (PO-relayed, attributed to Thangseng) made `maidake` the plain-`how` primary (method) and `maikai` = "so that / in order that" (verified row `in order that`). The method rule now says `maikai`. Only the one example sentence is pinned; bare `how` stays `maidake` and no NV-178 row was changed.
+
+**`have` split (PO):** possession = locative + object + `donga`; tense auxiliary = omit, past of main verb; obligation = `nangenga`.
+- `Have you eaten your lunch?` primary is now `cha·ahama`. The NV-153 `cha·jokma` row is kept as `variant/VERIFIED/HIGH` (both Simple Past per NV-180) and the key is allowlisted for Check C.
+- The pinned market example uses `antichi`; the held `Antichi/Bajalchi` spelling question is untouched.
+
+**Not done (engine lane, Claude B):** general composition for the three `have` roles (`I have to go` still gives `Anga re·ang·na donga`; `you have` + object is still `-ko`-marked outside the pin), general `do` as main verb, `has stopped` for other subjects (`he has stopped eating` gives `Ua donga`), `how` classification by context, and `how much did X do`-type templates.
+
+Next NV is NV-182: Thangseng ties 1-5 and bare "not".

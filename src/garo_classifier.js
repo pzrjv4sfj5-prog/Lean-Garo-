@@ -35,7 +35,7 @@ export const CLASSIFIER_MAP = {
   'dog':'mang','achak':'mang','cat':'mang','menggo':'mang',
   'cow':'mang','matchu':'mang','goat':'mang','dobok':'mang',
   'pig':'mang','wak':'mang','bird':'mang','do·o':'mang',
-  'fish':'mang','na·tok':'mang','hen':'mang','duck':'mang',
+  'fish':'mang','na·tok':'mang','hen':'mang','chicken':'mang','rooster':'mang','duck':'mang',
   'horse':'mang','buffalo':'mang','elephant':'mang','tiger':'mang',
   'monkey':'mang','rat':'mang','snake':'mang','butterfly':'mang',
   'bee':'mang','ant':'mang','mosquito':'mang','frog':'mang',

@@ -96,7 +96,7 @@ export const PHRASE_MAPS = {
   // separate, still-open question (NV-059, Claude A) — this bare-word
   // fallback isn't that idiom and shouldn't borrow its unresolved evidence.
   'market': 'Bajal',
-  'how much': 'Baita?',
+  'how much': 'Badita',
   'how much is this': 'Iara badita?',
   'it is too expensive': 'Ia dam rakduga.',
   'reduce the price': 'Damko on·tisa komiatbo.',

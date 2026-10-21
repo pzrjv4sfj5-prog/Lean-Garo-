@@ -274,6 +274,8 @@ async function translateCountedSubjectClause(cleaned) {
 }
 
 export async function translate(input) {
+  // NV-181 (PO, 2026-10-21): 'him/her' routes to the established human object pronouns (same as 'him'); the slash otherwise leaves [UNKNOWN].
+  input = String(input).replace(/\b(?:him\s*\/\s*her|her\s*\/\s*him)\b/gi, 'him');
   // RULE-053 (2026-10-20): isolated `today` is the base Da·al; the -o form is
   // for event sentences only. Handled here, not as a data pin, because a pin
   // would leak into sentence composition.
