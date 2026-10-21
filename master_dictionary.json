@@ -73564,14 +73564,14 @@
     "english": "have you eaten your lunch?",
     "garo": "Na·a mipring cha·jokma?",
     "category": "phrases",
-    "notes": "variant/VERIFIED/HIGH — kept as the alternate (NV-181: -jok, -aha and -manaha are all Simple Past per NV-180, so both forms are valid; the primary is now cha·ahama per the PO example). VERIFIED/HIGH — 2026-09-09 (Claude A, NV-153): Thangseng directly confirmed (via Tridip, WhatsApp). Distinct English phrasing/object from the existing 'did you have lunch?'->'Na·a mi cha·jokma?' (NV-092-lineage, uses 'mi'=cooked food/rice as object) — this key explicitly names 'mipring'=lunch itself as the object, also with -ko dropped, consistent with the noun-incorporation pattern. Fixes a live sov-assembly fallback (was producing a malformed word-order/case-marking output, confidence 0.75, no dictionary entry existed before this row).",
+    "notes": "PRIMARY restored (NV-181 resolution, PO 2026-10-21: -jok is the most natural completive; cha·ahama is the valid variant). VERIFIED/HIGH — 2026-09-09 (Claude A, NV-153): Thangseng directly confirmed (via Tridip, WhatsApp). Distinct English phrasing/object from the existing 'did you have lunch?'->'Na·a mi cha·jokma?' (NV-092-lineage, uses 'mi'=cooked food/rice as object) — this key explicitly names 'mipring'=lunch itself as the object, also with -ko dropped, consistent with the noun-incorporation pattern. Fixes a live sov-assembly fallback (was producing a malformed word-order/case-marking output, confidence 0.75, no dictionary entry existed before this row).",
     "confidence": "verified_high"
   },
   {
     "english": "have you eaten your lunch?",
     "garo": "Na·a mipring cha·ahama?",
     "category": "phrases",
-    "notes": "VERIFIED/HIGH — NV-181 (2026-10-21), Project Owner-provided example in chat, not a native quote: \"Have you eaten your lunch? -> Na.a mipring cha.ahama?\" (tense auxiliary 'have' omitted, past of the main verb). Alternate with -jok retained above (NV-153).",
+    "notes": "variant/VERIFIED/HIGH — NV-181 (2026-10-21), Project Owner-provided example in chat, not a native quote: \"Have you eaten your lunch? -> Na.a mipring cha.ahama?\" (tense auxiliary 'have' omitted, past of the main verb). Variant of the NV-153 primary cha·jokma (both Simple Past per NV-180); PO resolution 2026-10-21: cha·jokma is primary.",
     "confidence": "verified_high"
   },
   {

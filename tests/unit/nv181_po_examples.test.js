@@ -17,7 +17,7 @@ const cases = [
   ['how much', 'Badita'],
   ['I have a dog.', 'Ango achak mangsa donga.'],
   ['Do you have my book?', 'Nang·o angni ki·tap dongama?'],
-  ['Have you eaten your lunch?', 'Na·a mipring cha·ahama?'],
+  ['Have you eaten your lunch?', 'Na·a mipring cha·jokma?'],
   ['I have come to you.', 'Anga nang·ona re·baaha.'],
   ['Do you have to go to the market?', 'Na·a antichi re·angna nangengama?'],
 ];
