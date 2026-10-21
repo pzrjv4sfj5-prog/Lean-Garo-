@@ -65,6 +65,7 @@ export { analyzeGrammar };
 // byte-identical 237-sentence stress benchmark diff. Circular import
 // (sentenceBuilder.js imports `translate` back from this file) — see
 // sentenceBuilder.js's header comment for why this is safe.
+import { preNounAdjectiveForm, PRE_NOUN_COLOUR_ADJ } from './garo_adjectives.js';
 import { TIME_ADVERB_FORMS, isTimeAdverb, splitLeadingTimeForm } from './garo_time_adverbs.js';
 import { assembleSentenceSOV, assembleGrammar, translateIfClause, translateMultiClause, resolveSubjectNoun } from './sentenceBuilder.js';
 // Gemini import removed 2026-07-05 (dead fallback, see step 10 below)
@@ -146,15 +147,6 @@ function startsWithPredicate(w0) {
 // Any doubt returns null and the existing cascade is unchanged.
 const NOUN_SUBJECT_DETERMINERS = new Set(['the', 'a', 'an']);
 const NOUN_SUBJECT_POSSESSIVES = new Set(['my', 'your', 'his', 'her', 'our', 'their']);
-// RULE-006 (2026-10-20, NV-177): pre-noun adjective takes -gipa and stacks
-// directly (size, then colour, then noun: Dalgipa gitchak nok); post-noun /
-// predicate adjective is the base -a form. Pre-noun forms are generated only
-// for adjectives with attested evidence: big = dalgipa (NV-136), small =
-// chongipa (NV-110/132); red is the bare colour word (gitchak). Any other
-// adjective keeps the previous cascade; add a row here once Claude A has
-// evidence for its pre-noun form.
-const PRE_NOUN_SIZE_ADJ = { big: 'dalgipa', small: 'chongipa' };
-const PRE_NOUN_COLOUR_ADJ = { red: 'gitchak' };
 async function translateNounSubjectClause(cleaned) {
   const tokens = String(cleaned).toLowerCase().replace(/[.!?,;]+$/g, '').split(/\s+/).filter(Boolean);
   const isNum = w => /^\d+$/.test(w) || NUMBER_WORDS[w] !== undefined || w === 'hundred' || w === 'thousand';
@@ -178,11 +170,14 @@ async function translateNounSubjectClause(cleaned) {
     i++;
   }
   let adjGaro = null;
-  if (PRE_NOUN_SIZE_ADJ[tokens[i]] || PRE_NOUN_COLOUR_ADJ[tokens[i]]) {
+  {
     const adjParts = [];
-    if (PRE_NOUN_SIZE_ADJ[tokens[i]]) adjParts.push(PRE_NOUN_SIZE_ADJ[tokens[i]]), i++;
-    while (PRE_NOUN_COLOUR_ADJ[tokens[i]]) adjParts.push(PRE_NOUN_COLOUR_ADJ[tokens[i]]), i++;
-    adjGaro = adjParts.join(' ');
+    while (i < tokens.length - 1) {
+      const form = preNounAdjectiveForm(tokens[i]) || PRE_NOUN_COLOUR_ADJ[tokens[i]];
+      if (!form) break;
+      adjParts.push(form); i++;
+    }
+    if (adjParts.length) adjGaro = adjParts.join(' ');
   }
   const nounTok = tokens[i];
   const rest = tokens.slice(i + 1);

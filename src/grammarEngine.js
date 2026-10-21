@@ -10,6 +10,7 @@
  */
 
 import { TIME_ADVERB_FORMS, isTimeAdverb } from './garo_time_adverbs.js';
+import { splitPreNounAdjectives } from './garo_adjectives.js';
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
 import PURPOSE_MAP from './data/purpose_map.json' with { type: 'json' };
 import MODAL_CAN_MAP from './data/modal_can_map.json' with { type: 'json' };
@@ -852,6 +853,17 @@ export function analyzeGrammar(input) {
         objGaro = 'uko';
       }
       const existingFullPhrase = lookupPhrase(objEng) || lookupGaro(objEng);
+      // RULE-006 (2026-10-20): an object noun phrase with leading -a-final
+      // adjectives takes pre-noun -gipa (Dal·gipa achak), never a bare -a
+      // adjective and never silently dropped. Only when no verified full
+      // phrase row exists, so attested rows are untouched.
+      if (!objGaro && !existingFullPhrase && objectWords.length >= 2) {
+        const np = splitPreNounAdjectives(objectWords);
+        if (np && np.rest.length === 1) {
+          const nounG = lookupPhrase(np.rest[0]) || lookupGaro(np.rest[0]);
+          if (nounG && !/\s/.test(String(nounG))) objGaro = `${np.adj} ${String(nounG).toLowerCase()}`;
+        }
+      }
       if (!objGaro && !existingFullPhrase) {
         const countPhrase = parseCountingPhrase(objEng);
         if (countPhrase) {

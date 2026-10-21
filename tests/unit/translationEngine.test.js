@@ -423,7 +423,7 @@ test('RC-CANDIDATE-010 boundary: adjective-modified NP subject safely falls back
   const r = await translate('a big dog is running');
   // RULE-006 (2026-10-20): handled by noun-subject-clause (Dalgipa achak ...), never grammar-assembly.
   assert.equal(r.method, 'noun-subject-clause');
-  assert.ok(/^dalgipa achak /i.test(r.garo), `got: ${r.garo}`);
+  assert.ok(/^dal·?gipa achak /i.test(r.garo), `got: ${r.garo}`);
   assert.equal((await translate('an old dog is running')).method, 'sov-assembly', 'unattested pre-noun adjective still safely falls back');
 });
 
@@ -547,7 +547,7 @@ test('RC-CANDIDATE-018(a) regression guard: adjective-modified subjects still co
   const r = await translate('a big dog is eating rice');
   // RULE-006 (2026-10-20): attested size adjectives go through noun-subject-clause.
   assert.equal(r.method, 'noun-subject-clause');
-  assert.ok(/^dalgipa achak /i.test(r.garo), `got: ${r.garo}`);
+  assert.ok(/^dal·?gipa achak /i.test(r.garo), `got: ${r.garo}`);
   assert.equal((await translate('an old dog is eating rice')).method, 'sov-assembly');
 });
 
@@ -1818,7 +1818,7 @@ test('negation-word content-filter guard: "a big dog will not eat rice" still as
   assert.equal(r.garo, 'git·cham achak mi cha·jawa');
   assert.equal(r.method, 'sov-assembly');
   const rb = await translate('a big dog will not eat rice');
-  assert.ok(/^dalgipa achak /i.test(rb.garo) && /cha·?jawa$/i.test(rb.garo), `got: ${rb.garo}`);
+  assert.ok(/^dal·?gipa achak /i.test(rb.garo) && /cha·?jawa$/i.test(rb.garo), `got: ${rb.garo}`);
 });
 
 // 2026-08-30, Claude B — runtime silent-data-loss audit (docs/CLAUDE_B_
