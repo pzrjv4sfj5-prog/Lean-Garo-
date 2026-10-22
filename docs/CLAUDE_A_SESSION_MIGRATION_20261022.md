@@ -6,10 +6,10 @@ Supersedes `CLAUDE_A_SESSION_MIGRATION_20261021.md`. Its Project identity, Prove
 - Lean-Garo: Garo dictionary and English-to-Garo engine. Repo `github.com/pzrjv4sfj5-prog/Lean-Garo-` (public read; clone needs no token). T = Project Owner (PO). Claude A = data, rules, audits. Claude B = engine. Thangseng = native validator via the Tridip relay.
 
 ## Current state
-- Base = origin/main `df5db3e`. Local is 12 commits ahead (NV-182..NV-186, this doc, and WORKSTATE pointers; `git log origin/main..HEAD`). **NOTHING IS PUSHED: no PAT was available.** The sandbox can reset: the work is also saved as `lean-garo-unpushed.bundle` (`git bundle`), restore with `git clone <repo> && git pull <bundle> main`, or `git fetch <bundle> main:refs/heads/main`.
+- **All pushed.** origin/main = `a792232` (PAT supplied by T this session, one-shot header, push verified: origin equals local). The 12 session commits (NV-182..NV-186, this doc, WORKSTATE pointers) sit on `df5db3e`; this doc's status edit lands as one more commit on top. T should rotate the token.
 - Full gate green on the last content commit: dictionary 8926/8926, 9/9 corrections; repository-intelligence 0 new violations (cross-table, self-consistency, placeholder, cascade, modifier+noun); resync clean; unit 640/640; sweep 15892 calls 0 errors; conformance 76/110 (14 orphans, 0 unbaselined, report-only); vite build OK.
 
-## Done this session (all local, unpushed)
+## Done this session (all pushed)
 All entries are Project Owner-provided or -relayed; none is a native quote (raw messages not on file). Logged in `docs/THANGSENG_NATIVE_VALIDATION.md`.
 - **NV-182:** `How much did you eat?` = `Na·a badita cha·aha?`, variant `Na·a badita bang·e cha·aha?` (replaces `cha·a` / `cha·gimin`; RULE-048 example updated). `kina·chak·a` = listen / heed advice; `ku·chak·a` = respond / confess; both superseded as `agree` (`agree` now `ku·ra·chak·a`, uncited). B handoff `docs/HANDOFF_CLAUDE_B_20261021_past_interrogative_aha.md`: past "did" questions take `-aha` / `-jok`, never bare `-a`.
 - **NV-183:** 9 exact-phrase pins (`seata`, `tuaha`, `badia room o tusia`, `namen seataha`, `man·gengma`, `dongachim`, `sala` x2, `tangkako gama`), test file `tests/unit/nv183_po_pins.test.js`. `pay` = `gama` (superseded uncited `bet·ton`), `drive` / `pull` = `sala` (superseded uncited `sal·a` Pull variant), `well (adverb)` = `namen`. Live effect: `I pay` = `Anga gama`, `pull!` = `salbo`.
@@ -49,19 +49,19 @@ PO-provided and PO-relayed answers are never native quotes. Label "Project Owner
 - `translate()` is async and returns `{ garo, method }`. Token discipline: lead with the result, do not restate background, do not re-test unchanged things.
 
 ## Repository status at close
-- HEAD: this doc's commit plus a WORKSTATE pointer commit on top of `9358f14` (NV-186 pointer). See `.ai/WORKSTATE.yaml` line 2.
-- origin/main match: **NO** (base `df5db3e`, 12 local commits ahead, unpushed).
-- git status: clean after the doc commit. Dist restored.
+- HEAD: see `.ai/WORKSTATE.yaml` line 2 `head:` (pointer commit on top).
+- origin/main match: **YES**, verified after push (`git fetch` then `git rev-parse`); fresh-clone gate re-run below.
+- git status: clean. Dist restored. No local-only commits.
 - WORKSTATE.yaml `claude_a.next_action`: updated.
 - SESSION_BOOTSTRAP.md: **not updated** (no new permanent rule beyond the standing-rule lines above; add them if T wants them there).
-- Local commits: **yes, 12**, needs push.
 - Native-validation status: NV-182..NV-186 are PO-provided only; open items 1-6 above.
 - Runtime handoff: B handoff `HANDOFF_CLAUDE_B_20261021_past_interrogative_aha.md` (hold until open item 1 is ruled). No other engine changes.
+- Token: T pasted a PAT in chat; it was used only as a one-shot header and is not in any file or git config. **T should rotate it.**
 
 ## Exact next step
-1. Start a new conversation and paste this doc. Re-sync: clone, restore the bundle if the local work is lost, `npm ci`, `node prepare-data.js`, `git log` against origin/main, read WORKSTATE `claude_a.next_action`, run the gate.
-2. Ask T for a fresh PAT (Contents read/write on `pzrjv4sfj5-prog`), fetch and rebase over any Claude B push, re-run the gate, push, verify `origin` equals local, ask T to rotate the token.
-3. Then, with T: rule on open items 1-3; log Thangseng's answers for ties 2-5 and bare "not".
+1. Start a new conversation and paste this doc. Re-sync: clone, `npm ci`, `node prepare-data.js`, `git log` against origin/main, read WORKSTATE `claude_a.next_action`, run the gate (Claude B may have pushed).
+2. Ask T for a fresh PAT only if something needs pushing; fetch and rebase first.
+3. With T: rule on open items 1-3; log Thangseng's answers for ties 2-5 and bare "not".
 
 ## On resume
 Treat this doc as ground truth, re-sync with actual repo state, do not re-open settled decisions (raka classifiers, `-ko` no raka, present perfect = simple past, `miko`, `maidake` default, `cha·jokma` lunch primary, `sala` vs `sal·a` distinct, `sea` no raka, `man·a` raka, `man·gengma` = can you).
