@@ -6,7 +6,7 @@ Supersedes `CLAUDE_A_SESSION_MIGRATION_20261021.md`. Its Project identity, Prove
 - Lean-Garo: Garo dictionary and English-to-Garo engine. Repo `github.com/pzrjv4sfj5-prog/Lean-Garo-` (public read; clone needs no token). T = Project Owner (PO). Claude A = data, rules, audits. Claude B = engine. Thangseng = native validator via the Tridip relay.
 
 ## Current state
-- Base = origin/main `df5db3e`. Local is 10 commits ahead (NV-182..NV-186 plus WORKSTATE pointers) and this doc makes it 11. **NOTHING IS PUSHED: no PAT was available.** The sandbox can reset: the work is also saved as `lean-garo-unpushed.bundle` (`git bundle`), restore with `git clone <repo> && git pull <bundle> main`, or `git fetch <bundle> main:refs/heads/main`.
+- Base = origin/main `df5db3e`. Local is 12 commits ahead (NV-182..NV-186, this doc, and WORKSTATE pointers; `git log origin/main..HEAD`). **NOTHING IS PUSHED: no PAT was available.** The sandbox can reset: the work is also saved as `lean-garo-unpushed.bundle` (`git bundle`), restore with `git clone <repo> && git pull <bundle> main`, or `git fetch <bundle> main:refs/heads/main`.
 - Full gate green on the last content commit: dictionary 8926/8926, 9/9 corrections; repository-intelligence 0 new violations (cross-table, self-consistency, placeholder, cascade, modifier+noun); resync clean; unit 640/640; sweep 15892 calls 0 errors; conformance 76/110 (14 orphans, 0 unbaselined, report-only); vite build OK.
 
 ## Done this session (all local, unpushed)
@@ -50,11 +50,11 @@ PO-provided and PO-relayed answers are never native quotes. Label "Project Owner
 
 ## Repository status at close
 - HEAD: this doc's commit plus a WORKSTATE pointer commit on top of `9358f14` (NV-186 pointer). See `.ai/WORKSTATE.yaml` line 2.
-- origin/main match: **NO** (base `df5db3e`, 11 local commits ahead, unpushed).
+- origin/main match: **NO** (base `df5db3e`, 12 local commits ahead, unpushed).
 - git status: clean after the doc commit. Dist restored.
 - WORKSTATE.yaml `claude_a.next_action`: updated.
 - SESSION_BOOTSTRAP.md: **not updated** (no new permanent rule beyond the standing-rule lines above; add them if T wants them there).
-- Local commits: **yes, 11**, needs push.
+- Local commits: **yes, 12**, needs push.
 - Native-validation status: NV-182..NV-186 are PO-provided only; open items 1-6 above.
 - Runtime handoff: B handoff `HANDOFF_CLAUDE_B_20261021_past_interrogative_aha.md` (hold until open item 1 is ruled). No other engine changes.
 
