@@ -1591,9 +1591,10 @@
   },
   {
     "english": "pull / drive",
-    "garo": "Sal·a (⚠ same word)",
+    "garo": "sala (⚠ same word)",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): sala has no raka (drive / pull)."
   },
   {
     "english": "break (glass/stick)",
@@ -6480,10 +6481,10 @@
   },
   {
     "english": "he wrote well in the exam.",
-    "garo": "Bia porikka namen se·ataha.",
+    "garo": "Bia porikka namen seataha.",
     "category": "education",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)"
+    "notes": "VERIFIED/HIGH — NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): sea has no raka, so seata/seataha take none; dot removed (was se·ataha, NV-183)."
   },
   {
     "english": "how did you write?",
@@ -6694,9 +6695,9 @@
   },
   {
     "english": "can you give me your pen?",
-    "garo": "Na·a nang kolom ko on·a mangenma?",
+    "garo": "Na·a nang kolom ko on·a man·genma?",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): embedded English loanword 'pen' -> 'kolom' per pen-root closure. Was: 'Na·a nang pen ko on·a mangenma?'."
+    "notes": "Root corrected 2026-08-11 (Claude A): embedded English loanword 'pen' -> 'kolom' per pen-root closure. Was: 'Na·a nang pen ko on·a mangenma?'. | NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): man·a root takes raka: man·genma."
   },
   {
     "english": "yes, of course.",
@@ -6706,9 +6707,10 @@
   },
   {
     "english": "can you lift the box?",
-    "garo": "Na·a box ko dena mangenma?",
+    "garo": "Na·a box ko dena man·genma?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): man·a root takes raka: man·genma."
   },
   {
     "english": "may i sit down?",
@@ -6946,9 +6948,10 @@
   },
   {
     "english": "ability / permission ?",
-    "garo": "verb + mangenma?",
+    "garo": "verb + man·genma?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): man·a root takes raka: man·genma."
   },
   {
     "english": "ability / permission ✓",
@@ -14664,9 +14667,10 @@
   },
   {
     "english": "the pull / drive",
-    "garo": "Sal·a (⚠ same word)",
+    "garo": "sala (⚠ same word)",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): sala has no raka (drive / pull)."
   },
   {
     "english": "the break (glass/stick)",
@@ -79016,5 +79020,54 @@
     "category": "general",
     "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): gama = to pay.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "he wrote well in the exam.",
+    "garo": "Bia porikka namen se·ataha.",
+    "category": "education",
+    "notes": "SUPERSEDED — NV-184 (2026-10-21, Project Owner-provided raka audit; raw message not on file): sea takes no raka. Old spelling retained so legacy-source copies are filtered; not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "can you give me your pen?",
+    "garo": "Na·a nang pen ko on·a mangenma?",
+    "category": "general",
+    "notes": "SUPERSEDED — NV-184 (2026-10-21, Project Owner-provided raka audit; raw message not on file): man·a root takes raka (man·genma). Old spelling retained so legacy-source copies are filtered; not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "can you give me your pen?",
+    "garo": "Na·a nang kolom ko on·a mangenma?",
+    "category": "general",
+    "notes": "SUPERSEDED — NV-184 (2026-10-21, Project Owner-provided raka audit; raw message not on file): man·a root takes raka (man·genma). Old spelling retained so legacy-source copies are filtered; not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "can you lift the box?",
+    "garo": "Na·a box ko dena mangenma?",
+    "category": "general",
+    "notes": "SUPERSEDED — NV-184 (2026-10-21, Project Owner-provided raka audit; raw message not on file): man·a root takes raka (man·genma). Old spelling retained so legacy-source copies are filtered; not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "ability / permission ?",
+    "garo": "verb + mangenma?",
+    "category": "grammar",
+    "notes": "SUPERSEDED — NV-184 (2026-10-21, Project Owner-provided raka audit; raw message not on file): man·a root takes raka (man·genma). Old spelling retained so legacy-source copies are filtered; not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "pull / drive",
+    "garo": "Sal·a (⚠ same word)",
+    "category": "general",
+    "notes": "SUPERSEDED — NV-184 (2026-10-21, Project Owner-provided raka audit; raw message not on file): sala has no raka (drive / pull). Old spelling retained so legacy-source copies are filtered; not deleted.",
+    "confidence": "superseded"
+  },
+  {
+    "english": "the pull / drive",
+    "garo": "Sal·a (⚠ same word)",
+    "category": "general",
+    "notes": "SUPERSEDED — NV-184 (2026-10-21, Project Owner-provided raka audit; raw message not on file): sala has no raka (drive / pull). Old spelling retained so legacy-source copies are filtered; not deleted.",
+    "confidence": "superseded"
   }
 ]

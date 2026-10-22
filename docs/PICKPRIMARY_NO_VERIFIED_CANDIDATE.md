@@ -376,7 +376,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `abatement of storm.`: candidates — `Balwa nama` (weak/OCR) — shipped: `Balwa nama`
 - `abbreviated`: candidates — `tong·kap·a` (weak/OCR), `·kim·bak·` (weak/OCR), `tong·tang·ga·tang` (weak/OCR) — shipped: `tong·tang·ga·tang`
 - `ability`: candidates — `Maiba kamko dakna changani` (weak/OCR) — shipped: `Maiba kamko dakna changani`
-- `ability / permission ?`: candidates — `verb + mangenma?` (weak/OCR) — shipped: `verb + mangenma?`
+- `ability / permission ?`: candidates — `verb + man·genma?` (weak/OCR) — shipped: `verb + man·genma?`
 - `ability / permission ✓`: candidates — `mangenva` (weak/OCR) — shipped: `mangenva`
 - `abnormal`: candidates — `ong·ronggijagipa` (weak/OCR), `Ong·ronggijagipa` (weak/OCR) — shipped: `Ong·ronggijagipa`
 - `aboriginal`: candidates — `a·di·ba·si` (weak/OCR) — shipped: `a·di·ba·si`
@@ -899,8 +899,8 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `camp`: candidates — `Baga` (weak/OCR) — shipped: `Baga`
 - `can for food`: candidates — `ko·ta` (weak/OCR) — shipped: `ko·ta`
 - `can you give me water?`: candidates — `Angna chi on·a mangengma?` (weak/OCR) — shipped: `Angna chi on·a mangengma?`
-- `can you give me your pen?`: candidates — `Na·a nang pen ko on·a mangenma?` (weak/OCR), `Na·a nang kolom ko on·a mangenma?` (weak/OCR) — shipped: `Na·a nang kolom ko on·a mangenma?`
-- `can you lift the box?`: candidates — `Na·a box ko dena mangenma?` (weak/OCR) — shipped: `Na·a box ko dena mangenma?`
+- `can you give me your pen?`: candidates — `Na·a nang kolom ko on·a man·genma?` (weak/OCR) — shipped: `Na·a nang kolom ko on·a man·genma?`
+- `can you lift the box?`: candidates — `Na·a box ko dena man·genma?` (weak/OCR) — shipped: `Na·a box ko dena man·genma?`
 - `candy`: candidates — `mi·sti` (weak/OCR) — shipped: `mi·sti`
 - `cane`: candidates — `ko·a` (weak/OCR), `re` (weak/OCR), `Bet` (weak/OCR) — shipped: `Bet`
 - `canine teeth`: candidates — `wa·chu` (weak/OCR) — shipped: `wa·chu`
@@ -3220,7 +3220,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `puckering taste`: candidates — `spak·a` (weak/OCR) — shipped: `spak·a`
 - `puddle`: candidates — `chi·bil·ok` (weak/OCR), `chi·bol` (weak/OCR), `chi·ting·kil·ok` (weak/OCR) — shipped: `chi·ting·kil·ok`
 - `puffed rice`: candidates — `koi` (weak/OCR), `mu·ri` (weak/OCR) — shipped: `mu·ri`
-- `pull / drive`: candidates — `Sal·a (⚠ same word)` (weak/OCR) — shipped: `Sal·a (⚠ same word)`
+- `pull / drive`: candidates — `sala (⚠ same word)` (weak/OCR) — shipped: `sala (⚠ same word)`
 - `pull open`: candidates — `sal·kil·ak·a` (weak/OCR) — shipped: `sal·kil·ak·a`
 - `pull out`: candidates — `ok·a` (weak/OCR), `pik·a` (weak/OCR) — shipped: `pik·a`
 - `pull tightly`: candidates — `sal·jret·jret·a` (weak/OCR) — shipped: `sal·jret·jret·a`
@@ -4221,7 +4221,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the position towards which the wind blows.`: candidates — `Baljanggil` (weak/OCR) — shipped: `Baljanggil`
 - `the potato`: candidates — `Alu` (weak/OCR) — shipped: `Alu`
 - `the pride`: candidates — `Gaora` (weak/OCR) — shipped: `Gaora`
-- `the pull / drive`: candidates — `Sal·a (⚠ same word)` (weak/OCR) — shipped: `Sal·a (⚠ same word)`
+- `the pull / drive`: candidates — `sala (⚠ same word)` (weak/OCR) — shipped: `sala (⚠ same word)`
 - `the pumpkin`: candidates — `Gominda` (weak/OCR) — shipped: `Gominda`
 - `the push`: candidates — `Jitpaka` (weak/OCR) — shipped: `Jitpaka`
 - `the quantity of water or any drink swallowed at a time.`: candidates — `Grok` (weak/OCR) — shipped: `Grok`

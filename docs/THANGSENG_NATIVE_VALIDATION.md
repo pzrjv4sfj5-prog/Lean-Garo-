@@ -7797,7 +7797,7 @@ Source: Project Owner pasted block in chat; not native quotes; raw message not o
 
 **Not done (engine lane, Claude B):** general composition for the three `have` roles (`I have to go` still gives `Anga re·ang·na donga`; `you have` + object is still `-ko`-marked outside the pin), general `do` as main verb, `has stopped` for other subjects (`he has stopped eating` gives `Ua donga`), `how` classification by context, and `how much did X do`-type templates.
 
-Next NV is NV-184. (NV-182 partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
+Next NV is NV-185. (NV-182 partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
 
 ## NV-182 (2026-10-21, past-tense wh-question `How much did you eat?` and `kina·chak·a` / `ku·chak·a`)
 
@@ -7838,3 +7838,18 @@ Source: Project Owner-provided (pasted block described as native-verified; no sp
 1. **`-chim` is not "previously established".** NV-180 recorded it but did NOT apply it; decisions are still open. The letter pin is an exact phrase only. It is a data point for NV-180 item 5: PO writes `-chim` fused (`dongachim`).
 2. **Raka inconsistencies within the block (stored as given):** `sea` (letter) and `seata` have no dot but `se·ataha` has one; `sena` no dot; `sala` no dot vs earlier `sal·a`; `man·genma` has a dot while the pin `can you help me` uses `mangenma`. Native spelling not confirmed.
 3. **`seata` / `tuaha` / `sea`:** `-aha` past forms are consistent with NV-182. `tusia` (past "did sleep" in the room pin) is unchanged from the prior row.
+
+## NV-184 (2026-10-21, raka audit: `sea`, `sala`, `man·a`)
+
+Source: Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote.
+
+- **`sea` (to write): no raka**, so `seata` / `seataha` take none. Pin `He wrote well in the exam.` = `Bia porikka namen seataha.` (was `se·ataha`, NV-183), in master, `corrections.json` and the NV-183 test. `How did you write?` = `Na·a maidake seata?` confirmed unchanged. The superseded legacy `Write` = `se·a` row stays as history.
+- **`sala` (to drive / to pull): no raka.** The two active `pull / drive` rows are now `sala`. NV-183 rows were already `sala`.
+- **`man·a` (can / able): raka.** `can you help me` pin is now `Na·a angna dakchakna man·genma?`; master rows `can you give me your pen?`, `can you lift the box?`, `ability / permission ?` now use `man·genma`. New test for the pin.
+- Old spellings are kept as SUPERSEDED rows (and the 6 keys allowlisted) so untagged copies in legacy source files are filtered from alternates. Compiled alternates no longer list them.
+
+**Not changed (needs PO decision):**
+1. `sal·a` is also the verified words `Broom` (`sal·a`), `East` (`sal·a·ram`), `Sunrise` (`Sal·aram`), `Afternoon` (superseded `Sal·aksol`). They are different lexemes, so the "remove every `sal·a`" instruction was applied to the drive/pull rows only.
+2. `man·a` takes a raka, but the native-verified `may i sit` row uses `mangengma` (no dot, 2026-08-22 direct), and `mangenva` is also dotless. Left as is.
+3. There was no literal `[PENDING_RAKA_AUDIT]` flag anywhere in the repo, so nothing to remove.
+4. Legacy source files (`garo_dictionary.json`, `final_entries.json`, `sentences200.json`) still contain old spellings, filtered at build time and not edited.
