@@ -150,7 +150,7 @@ export const PHRASE_MAPS = {
   'just joking': 'Anga kalake roega',
   'chill out': 'Nom·a bo',
   'may i sit down': 'Anga asongna mangengma?',
-  'can you give me water': 'Angna chi on·a mangengma?',
+  'can you give me water': 'Angna chi on·a man·gengma?',
   'water': 'Chi',
   'food': 'al·a',
   'rice': 'Mi',

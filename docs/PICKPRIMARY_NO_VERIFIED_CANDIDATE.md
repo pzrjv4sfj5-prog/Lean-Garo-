@@ -376,7 +376,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `abatement of storm.`: candidates — `Balwa nama` (weak/OCR) — shipped: `Balwa nama`
 - `abbreviated`: candidates — `tong·kap·a` (weak/OCR), `·kim·bak·` (weak/OCR), `tong·tang·ga·tang` (weak/OCR) — shipped: `tong·tang·ga·tang`
 - `ability`: candidates — `Maiba kamko dakna changani` (weak/OCR) — shipped: `Maiba kamko dakna changani`
-- `ability / permission ?`: candidates — `verb + man·genma?` (weak/OCR) — shipped: `verb + man·genma?`
+- `ability / permission ?`: candidates — `verb + man·gengma?` (weak/OCR) — shipped: `verb + man·gengma?`
 - `ability / permission ✓`: candidates — `mangenva` (weak/OCR) — shipped: `mangenva`
 - `abnormal`: candidates — `ong·ronggijagipa` (weak/OCR), `Ong·ronggijagipa` (weak/OCR) — shipped: `Ong·ronggijagipa`
 - `aboriginal`: candidates — `a·di·ba·si` (weak/OCR) — shipped: `a·di·ba·si`
@@ -898,9 +898,9 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `came (past)`: candidates — `Reba·aha` (weak/OCR) — shipped: `Reba·aha`
 - `camp`: candidates — `Baga` (weak/OCR) — shipped: `Baga`
 - `can for food`: candidates — `ko·ta` (weak/OCR) — shipped: `ko·ta`
-- `can you give me water?`: candidates — `Angna chi on·a mangengma?` (weak/OCR) — shipped: `Angna chi on·a mangengma?`
-- `can you give me your pen?`: candidates — `Na·a nang kolom ko on·a man·genma?` (weak/OCR) — shipped: `Na·a nang kolom ko on·a man·genma?`
-- `can you lift the box?`: candidates — `Na·a box ko dena man·genma?` (weak/OCR) — shipped: `Na·a box ko dena man·genma?`
+- `can you give me water?`: candidates — `Angna chi on·a man·gengma?` (weak/OCR) — shipped: `Angna chi on·a man·gengma?`
+- `can you give me your pen?`: candidates — `Na·a nang kolom ko on·a man·gengma?` (weak/OCR) — shipped: `Na·a nang kolom ko on·a man·gengma?`
+- `can you lift the box?`: candidates — `Na·a box ko dena man·gengma?` (weak/OCR) — shipped: `Na·a box ko dena man·gengma?`
 - `candy`: candidates — `mi·sti` (weak/OCR) — shipped: `mi·sti`
 - `cane`: candidates — `ko·a` (weak/OCR), `re` (weak/OCR), `Bet` (weak/OCR) — shipped: `Bet`
 - `canine teeth`: candidates — `wa·chu` (weak/OCR) — shipped: `wa·chu`

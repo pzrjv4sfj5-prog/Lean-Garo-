@@ -6695,9 +6695,9 @@
   },
   {
     "english": "can you give me your pen?",
-    "garo": "Na·a nang kolom ko on·a man·genma?",
+    "garo": "Na·a nang kolom ko on·a man·gengma?",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): embedded English loanword 'pen' -> 'kolom' per pen-root closure. Was: 'Na·a nang pen ko on·a mangenma?'. | NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): man·a root takes raka: man·genma."
+    "notes": "NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma)."
   },
   {
     "english": "yes, of course.",
@@ -6707,10 +6707,10 @@
   },
   {
     "english": "can you lift the box?",
-    "garo": "Na·a box ko dena man·genma?",
+    "garo": "Na·a box ko dena man·gengma?",
     "category": "general",
     "confidence": "unverified",
-    "notes": "NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): man·a root takes raka: man·genma."
+    "notes": "NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma)."
   },
   {
     "english": "may i sit down?",
@@ -6720,9 +6720,10 @@
   },
   {
     "english": "can you give me water?",
-    "garo": "Angna chi on·a mangengma?",
+    "garo": "Angna chi on·a man·gengma?",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": "NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was mangengma)."
   },
   {
     "english": "do you love me?",
@@ -6948,10 +6949,10 @@
   },
   {
     "english": "ability / permission ?",
-    "garo": "verb + man·genma?",
+    "garo": "verb + man·gengma?",
     "category": "general",
     "confidence": "unverified",
-    "notes": "NV-184 (2026-10-21, Project Owner-provided (pasted block described as final native confirmation; no speaker named; raw message not on file), not a native quote): man·a root takes raka: man·genma."
+    "notes": "NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma)."
   },
   {
     "english": "ability / permission ✓",
@@ -73906,11 +73907,11 @@
   },
   {
     "english": "can you help me with the address",
-    "garo": "Ia biap/nok bano dakchakna man·genma?",
+    "garo": "Ia biap/nok bano dakchakna man·gengma?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-01 (NV-103, Thangseng direct native evidence relay via Tridip/Project Owner, unprompted batch). New ability-modal inflection: man·gen (future) + -ma (question), not previously attested in the corpus -- man·a paradigm now has present (man·a/man·ama), future (man·gen/man·genma), negative-present (man·ja), and negative-future (man·jawa) forms attested across this single relay batch. dakchakna = dakchak(a) 'help' (NV-095 VERIFIED/HIGH) + -na infinitive. biap/nok bano left as given (address/place + bano locative-no-movement suffix, RULE-044); not split into separate headwords this session.",
+    "notes": "VERIFIED/HIGH — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma). Reverses the NV-103 direct-citation spelling man·genma; PO ruling.",
     "confidence": "verified_high"
   },
   {
@@ -78953,9 +78954,9 @@
   },
   {
     "english": "can you write the exam?",
-    "garo": "Na·a porikka sena man·genma?",
+    "garo": "Na·a porikka sena man·gengma?",
     "category": "education",
-    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)",
+    "notes": "VERIFIED/HIGH — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma).",
     "confidence": "verified_high"
   },
   {
@@ -78981,9 +78982,9 @@
   },
   {
     "english": "can you (ability / permission)",
-    "garo": "man·genma",
+    "garo": "man·gengma",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): man·genma = can you? from man·a (can/able) + gen (future) + ma (question); decomposition as given, not separately validated. Existing pin `can you help me` still uses mangenma (no dot), untouched.",
+    "notes": "VERIFIED/HIGH — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma).",
     "confidence": "verified_high"
   },
   {
@@ -79069,5 +79070,56 @@
     "category": "general",
     "notes": "SUPERSEDED — NV-184 (2026-10-21, Project Owner-provided raka audit; raw message not on file): sala has no raka (drive / pull). Old spelling retained so legacy-source copies are filtered; not deleted.",
     "confidence": "superseded"
+  },
+  {
+    "english": "can you write the exam?",
+    "garo": "Na·a porikka sena man·genma?",
+    "category": "education",
+    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
+  },
+  {
+    "english": "can you (ability / permission)",
+    "garo": "man·genma",
+    "category": "general",
+    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
+  },
+  {
+    "english": "can you help me with the address",
+    "garo": "Ia biap/nok bano dakchakna man·genma?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
+  },
+  {
+    "english": "can you give me your pen?",
+    "garo": "Na·a nang kolom ko on·a man·genma?",
+    "category": "education",
+    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: undefined",
+    "confidence": "superseded"
+  },
+  {
+    "english": "can you lift the box?",
+    "garo": "Na·a box ko dena man·genma?",
+    "category": "general",
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: unverified"
+  },
+  {
+    "english": "ability / permission ?",
+    "garo": "verb + man·genma?",
+    "category": "general",
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: unverified"
+  },
+  {
+    "english": "can you give me water?",
+    "garo": "Angna chi on·a mangengma?",
+    "category": "food",
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: unverified"
   }
 ]

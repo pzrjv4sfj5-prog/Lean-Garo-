@@ -7797,7 +7797,7 @@ Source: Project Owner pasted block in chat; not native quotes; raw message not o
 
 **Not done (engine lane, Claude B):** general composition for the three `have` roles (`I have to go` still gives `Anga re·ang·na donga`; `you have` + object is still `-ko`-marked outside the pin), general `do` as main verb, `has stopped` for other subjects (`he has stopped eating` gives `Ua donga`), `how` classification by context, and `how much did X do`-type templates.
 
-Next NV is NV-185. (NV-182 partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
+Next NV is NV-186. (NV-182 partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
 
 ## NV-182 (2026-10-21, past-tense wh-question `How much did you eat?` and `kina·chak·a` / `ku·chak·a`)
 
@@ -7853,3 +7853,16 @@ Source: Project Owner-provided (pasted block described as final native confirmat
 2. `man·a` takes a raka, but the native-verified `may i sit` row uses `mangengma` (no dot, 2026-08-22 direct), and `mangenva` is also dotless. Left as is.
 3. There was no literal `[PENDING_RAKA_AUDIT]` flag anywhere in the repo, so nothing to remove.
 4. Legacy source files (`garo_dictionary.json`, `final_entries.json`, `sentences200.json`) still contain old spellings, filtered at build time and not edited.
+
+## NV-185 (2026-10-21, `sala` vs `sal·a` distinction; "can you?" = `man·gengma`)
+
+Source: Project Owner-provided (pasted block; no speaker named; raw message not on file), not a native quote.
+
+- **`sala` (no raka) = to drive / to pull; `sal·a` (raka) is a different word, not interchangeable.** Already enforced for drive/pull since NV-184 (`drive`, `to drive`, `pull`, `to pull`, both pins, `pull!` = `salbo`). This confirms the NV-184 decision to leave `Broom` (`sal·a`), `East` (`sal·a·ram`) and `Sunrise` (`Sal·aram`) untouched. No code change needed.
+- **"Can you?" = `man·gengma`** (not `mangenva`, `mangenma` or `man·genma`). Updated: pins `can you help me` and `can you write the exam` (= `Na·a porikka sena man·gengma?`), `phrase_maps.js` `can you give me water`, and master rows `can you write the exam?`, `can you (ability / permission)`, `can you help me with the address`, `can you give me your pen?`, `can you lift the box?`, `can you give me water?`, `ability / permission ?`. Old spellings retained as SUPERSEDED rows (keys allowlisted).
+- **Reverses a direct citation:** `can you help me with the address` was NV-103 (2026-09-01, Thangseng direct) spelled `man·genma`. Changed per the PO ruling; the NV-103 spelling is kept as a superseded row.
+
+**Not changed (needs PO decision):**
+1. Permission rows `may i sit`, `may i sit down?`, `permission request` (and phrase map `may i sit down`) keep `mangengma` (no dot). The PO block covers "can you?" only, and `may i sit` is native-verified direct (2026-08-22). If the same suffix should take the raka, they become `man·gengma`.
+2. `mangenva` (`ability / permission ✓`, `yes, of course. Hoe mangenva.`) left as is: the block says "can you?" is not `mangenva`, but does not give the declarative form.
+3. Pin `i work so i can eat` uses `man·gen` (the "can" stem), unchanged.
