@@ -7797,7 +7797,7 @@ Source: Project Owner pasted block in chat; not native quotes; raw message not o
 
 **Not done (engine lane, Claude B):** general composition for the three `have` roles (`I have to go` still gives `Anga re·ang·na donga`; `you have` + object is still `-ko`-marked outside the pin), general `do` as main verb, `has stopped` for other subjects (`he has stopped eating` gives `Ua donga`), `how` classification by context, and `how much did X do`-type templates.
 
-Next NV is NV-186. (NV-182 partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
+Next NV is NV-187. (NV-182 partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
 
 ## NV-182 (2026-10-21, past-tense wh-question `How much did you eat?` and `kina·chak·a` / `ku·chak·a`)
 
@@ -7866,3 +7866,7 @@ Source: Project Owner-provided (pasted block; no speaker named; raw message not 
 1. Permission rows `may i sit`, `may i sit down?`, `permission request` (and phrase map `may i sit down`) keep `mangengma` (no dot). The PO block covers "can you?" only, and `may i sit` is native-verified direct (2026-08-22). If the same suffix should take the raka, they become `man·gengma`.
 2. `mangenva` (`ability / permission ✓`, `yes, of course. Hoe mangenva.`) left as is: the block says "can you?" is not `mangenva`, but does not give the declarative form.
 3. Pin `i work so i can eat` uses `man·gen` (the "can" stem), unchanged.
+
+## NV-186 (2026-10-21, `sal·a` = broom)
+
+Source: Project Owner-provided in chat ("sal.a (n) is broom"; `.` read as raka), not a native quote. `Broom` = `sal·a` (noun, with raka) confirmed; its note now carries this citation (was a bare `variant/VERIFIED/HIGH`). Distinct from `sala` (no raka) = to drive / to pull (NV-185). No spelling change.
