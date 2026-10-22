@@ -7797,7 +7797,7 @@ Source: Project Owner pasted block in chat; not native quotes; raw message not o
 
 **Not done (engine lane, Claude B):** general composition for the three `have` roles (`I have to go` still gives `Anga re·ang·na donga`; `you have` + object is still `-ko`-marked outside the pin), general `do` as main verb, `has stopped` for other subjects (`he has stopped eating` gives `Ua donga`), `how` classification by context, and `how much did X do`-type templates.
 
-Next NV is NV-183. (NV-182 below partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
+Next NV is NV-184. (NV-182 partly answers tie 1 only; ties 2-5 and bare "not" are still outstanding.)
 
 ## NV-182 (2026-10-21, past-tense wh-question `How much did you eat?` and `kina·chak·a` / `ku·chak·a`)
 
@@ -7816,3 +7816,25 @@ Source: Project Owner-relayed, attributed to Thangseng; raw message not on file,
 - **Spelling to confirm:** the update writes `kina·chak·a`; the earlier agree row was `kin·a·chak·a`. Assumed the same word, stored as given. `listen` already has verified `Knachika`, `kin·a·a`, `kin·a·tim·a` (unchanged).
 
 Pointers: see NV-182 under NV-113 and NV-158.
+
+## NV-183 (2026-10-21, nine exact-phrase pins and six vocabulary items)
+
+Source: Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote. The input already used `·`; no `•` present. Labeled PO-provided, not Thangseng-attributed, because the block names no speaker.
+
+**Pins (corrections.json + master verified_high rows + `tests/unit/nv183_po_pins.test.js`):**
+`How did you write?` = `Na·a maidake seata?`; `He slept the whole night.` = `Bia walgimik tuaha.`; `In which room did you sleep?` = `Na·a badia room o tusia?`; `He wrote well in the exam.` = `Bia porikka namen se·ataha.`; `Can you write the exam?` = `Na·a porikka sena man·genma?`; `What is written in the letter?` = `Chitthio mai sea dongachim?`; `How did you drive?` = `Na·a maidake sala?`; `Why do you drive the car?` = `Na·a maina gariko sala?`; `Why did she pay the money?` = `Bia maina tangkako gama?`.
+- 3 rows already existed unverified with the same Garo (room, wrote well, letter): promoted in place.
+- 6 rows differed (`se·a`, `tua`, `mangenma`, `sal·a` x2, `tangka ko`): old rows tagged SUPERSEDED and retained, new verified rows added, the 7 keys allowlisted in `known_dictionary_conflicts.json`.
+
+**Vocabulary:**
+- `badia` = which and `walgimik` = whole night: already verified_high (2026-08-22, NV-102). No change.
+- `namen` = well/very: `well (adverb)` promoted to verified_high. Plain `well` keeps `chiakol` (NV-095); `very` already `namen`.
+- `man·genma` = can you? (man·a + gen + ma, decomposition as given): new row `can you (ability / permission)`. Keyed this way so it does not leak into other "can you X" sentences.
+- `sala` = to drive / to pull: `drive` promoted; new `to drive`, `pull`, `to pull`. `Pull` = `sal·a` (uncited variant) SUPERSEDED. `phrase_maps.js` `pull` fixed to `sala`.
+- `gama` = to pay: new `pay`, `to pay`. `Pay` = `bet·ton` (uncited variant) SUPERSEDED.
+- Live effect: `pay` now `gama` (was `bet·ton`; `I pay` = `Anga gama`, `I will pay` = `Anga gamgen`); `pull!` now `salbo` (was `Sal·a`).
+
+**Flags, not resolved:**
+1. **`-chim` is not "previously established".** NV-180 recorded it but did NOT apply it; decisions are still open. The letter pin is an exact phrase only. It is a data point for NV-180 item 5: PO writes `-chim` fused (`dongachim`).
+2. **Raka inconsistencies within the block (stored as given):** `sea` (letter) and `seata` have no dot but `se·ataha` has one; `sena` no dot; `sala` no dot vs earlier `sal·a`; `man·genma` has a dot while the pin `can you help me` uses `mangenma`. Native spelling not confirmed.
+3. **`seata` / `tuaha` / `sea`:** `-aha` past forms are consistent with NV-182. `tusia` (past "did sleep" in the room pin) is unchanged from the prior row.

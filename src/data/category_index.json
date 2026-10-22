@@ -1049,7 +1049,7 @@
   "largest / most": "general",
   "well (adverb)": "general",
   "lift / carry (ability)": "general",
-  "pay": "business",
+  "pay": "general",
   "mosque": "general",
   "letter (written)": "general",
   "population": "general",
@@ -4075,5 +4075,9 @@
   "heed advice": "general",
   "to heed advice": "general",
   "confess": "general",
-  "to confess": "general"
+  "to confess": "general",
+  "can you (ability / permission)": "general",
+  "to drive": "general",
+  "to pull": "general",
+  "to pay": "general"
 }

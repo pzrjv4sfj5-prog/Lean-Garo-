@@ -5351,7 +5351,8 @@
     "english": "drive",
     "garo": "Sala",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): sala = to drive / to pull."
   },
   {
     "english": "pull",
@@ -6467,55 +6468,64 @@
     "english": "he slept the whole night.",
     "garo": "Bia walgimik tua.",
     "category": "time",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): replaced by \"Bia walgimik tuaha.\". Retained per citation discipline, not deleted. Was: unverified"
   },
   {
     "english": "in which room did you sleep?",
     "garo": "Na·a badia room o tusia?",
     "category": "health",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)"
   },
   {
     "english": "he wrote well in the exam.",
     "garo": "Bia porikka namen se·ataha.",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)"
   },
   {
     "english": "how did you write?",
     "garo": "Na·a maidake se·a?",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): replaced by \"Na·a maidake seata?\". Retained per citation discipline, not deleted. Was: unverified"
   },
   {
     "english": "can you write the exam?",
     "garo": "Na·a porikka sena mangenma?",
     "category": "education",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): replaced by \"Na·a porikka sena man·genma?\". Retained per citation discipline, not deleted. Was: unverified"
   },
   {
     "english": "what is written in the letter?",
     "garo": "Chitthio mai sea dongachim?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): exact-phrase pin only. Ends in -chim fused to donga (dongachim); data point for the open -chim decisions (NV-180 item 5), the -chim rule itself is NOT applied or generalized."
   },
   {
     "english": "how did you drive?",
     "garo": "Na·a maidake sal·a?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): replaced by \"Na·a maidake sala?\". Retained per citation discipline, not deleted. Was: unverified"
   },
   {
     "english": "why do you drive the car?",
     "garo": "Na·a maina gariko sal·a?",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): replaced by \"Na·a maina gariko sala?\". Retained per citation discipline, not deleted. Was: unverified"
   },
   {
     "english": "why did she pay the money?",
     "garo": "Bia maina tangka ko gama?",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): replaced by \"Bia maina tangkako gama?\". Retained per citation discipline, not deleted. Was: unverified"
   },
   {
     "english": "why did he bring the bag?",
@@ -6808,7 +6818,8 @@
     "english": "well (adverb)",
     "garo": "Namen",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): namen = well / very (adverb of degree or quality). `well` plain key keeps chiakol (NV-095); namen already verified for `very`."
   },
   {
     "english": "lift / carry (ability)",
@@ -19896,8 +19907,8 @@
     "pos": null,
     "category": "business",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): gama = to pay per the PO block; bet·ton carried no citation text. Retained per citation discipline, not deleted. Was: variant/VERIFIED/HIGH",
+    "confidence": "superseded"
   },
   {
     "english": "Peace",
@@ -20289,8 +20300,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): sala (no raka) = to drive / to pull per the PO block; same lexeme assumed, raka placement as given. Retained per citation discipline, not deleted. Was: variant/VERIFIED/HIGH",
+    "confidence": "superseded"
   },
   {
     "english": "Push",
@@ -78920,6 +78931,90 @@
     "garo": "ku·chak·a",
     "category": "general",
     "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): see \"confess\".",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how did you write?",
+    "garo": "Na·a maidake seata?",
+    "category": "education",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "he slept the whole night.",
+    "garo": "Bia walgimik tuaha.",
+    "category": "time",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you write the exam?",
+    "garo": "Na·a porikka sena man·genma?",
+    "category": "education",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how did you drive?",
+    "garo": "Na·a maidake sala?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "why do you drive the car?",
+    "garo": "Na·a maina gariko sala?",
+    "category": "travel",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "why did she pay the money?",
+    "garo": "Bia maina tangkako gama?",
+    "category": "work",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you (ability / permission)",
+    "garo": "man·genma",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): man·genma = can you? from man·a (can/able) + gen (future) + ma (question); decomposition as given, not separately validated. Existing pin `can you help me` still uses mangenma (no dot), untouched.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to drive",
+    "garo": "sala",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): sala = to drive / to pull.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "pull",
+    "garo": "sala",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): sala = to drive / to pull.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to pull",
+    "garo": "sala",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): sala = to drive / to pull.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "pay",
+    "garo": "gama",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): gama = to pay.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to pay",
+    "garo": "gama",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-183 (2026-10-21, Project Owner-provided (pasted block described as native-verified; no speaker named; raw message not on file), not a native quote): gama = to pay.",
     "confidence": "verified_high"
   }
 ]

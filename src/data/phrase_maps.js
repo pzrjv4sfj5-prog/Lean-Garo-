@@ -322,7 +322,7 @@ export const PHRASE_MAPS = {
   'open': 'Oa',
   'close': 'Chip·a',
   'push': 'Jit·pak·a',
-  'pull': 'Sal·a',
+  'pull': 'sala',
   'throw': 'Gal·a / Goata',
   'catch': 'rim·a',
   'wash': 'Su·sranga',
