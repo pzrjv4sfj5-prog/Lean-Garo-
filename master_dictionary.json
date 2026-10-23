@@ -6716,14 +6716,15 @@
     "english": "may i sit down?",
     "garo": "Anga asongna mangengma?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-187 (2026-10-22, Project Owner-relayed pin block): permission/ability form now `Anga asongna man·gengma?` (raka per NV-187, aligned with NV-185). Old spelling retained so legacy-source copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "can you give me water?",
     "garo": "Angna chi on·a man·gengma?",
     "category": "food",
-    "confidence": "unverified",
-    "notes": "NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was mangengma)."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-187 (2026-10-22, Project Owner-relayed pin block): primary is now `Angna chi on·na man·gengma?` (dropped pronoun). Old spelling retained so legacy-source copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "do you love me?",
@@ -7244,8 +7245,8 @@
     "english": "may i sit?",
     "garo": "Anga asongna mangengma?",
     "category": "general",
-    "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, NV-091 batch) (also phrased 'May I sit down?' this batch — same value, not duplicated as a separate key.)"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-187 (2026-10-22, Project Owner-relayed pin block): permission/ability form now `Anga asongna man·gengma?` (raka per NV-187, aligned with NV-185). Old spelling retained so legacy-source copies are filtered; not deleted. Was: verified_high"
   },
   {
     "english": "is he coming?",
@@ -79121,5 +79122,40 @@
     "category": "food",
     "confidence": "superseded",
     "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: unverified"
+  },
+  {
+    "english": "can you give me water?",
+    "garo": "Angna chi on·na man·gengma?",
+    "category": "food",
+    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: primary, natural dropped-pronoun form. Block spelled `man·genma`; aligned to `man·gengma` per NV-185.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you give me water? (explicit pronoun)",
+    "garo": "Na·a angna chi on·ana man·gengma?",
+    "category": "food",
+    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: variant with explicit `Na·a`. `on·ana` stored as given; `man·genma` aligned to `man·gengma`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "may i sit?",
+    "garo": "Anga asongna man·gengma?",
+    "category": "general",
+    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: primary (ability/permission). Also covers `May I sit down?` — `down` is not parsed; `sit` and `sit down` are the same verb `asong`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "may i sit down?",
+    "garo": "Anga asongna man·gengma?",
+    "category": "general",
+    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: same value as `may i sit?`; English `down` adds nothing.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "may i sit? (polite request)",
+    "garo": "Anga asongboma?",
+    "category": "general",
+    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: variant, polite request structure (`...boma?`).",
+    "confidence": "verified_high"
   }
 ]

@@ -7870,3 +7870,14 @@ Source: Project Owner-provided (pasted block; no speaker named; raw message not 
 ## NV-186 (2026-10-21, `sal·a` = broom)
 
 Source: Project Owner-provided in chat ("sal.a (n) is broom"; `.` read as raka), not a native quote. `Broom` = `sal·a` (noun, with raka) confirmed; its note now carries this citation (was a bare `variant/VERIFIED/HIGH`). Distinct from `sala` (no raka) = to drive / to pull (NV-185). No spelling change.
+
+## NV-187 (2026-10-22, "give water" / "may I sit" pins; pro-drop in requests; sit = sit down)
+
+Source: Project Owner-relayed, attributed to Thangseng; raw message not on file. Not a native quote. Block already used `·`.
+
+- **Pins:** `Can you give me water?` = `Angna chi on·na man·gengma?` (primary, pronoun dropped); variant `Na·a angna chi on·ana man·gengma?`. `May I sit?` / `May I sit down?` = `Anga asongna man·gengma?`; variant (polite request) `Anga asongboma?`.
+- **Spelling alignment:** the block wrote `man·genma`; aligned to `man·gengma` per the block's own instruction and NV-185. **Reverses** the 2026-08-22 native-verified no-dot `mangengma` on `may i sit?` (kept as a superseded row). This resolves NV-185 not-changed item 1 (permission rows) for `may i sit` / `may i sit down?`; `permission request` (`verb + na + mangengma?`) left unchanged.
+- **Changed `on·a` to `on·na`** in the water pin (`phrase_maps.js` and master). Old `on·a` row retained as superseded.
+- **`sit` = `sit down`:** same verb `asong`; English `down` is not parsed. Existing rows untouched (`sit` = `Asonga`, `sit down` = `Asongbo` imperative, both stem `asong`).
+- **Rule:** pro-drop in requests recorded as a dated note in RULE-004. **Not yet engine behaviour** (Claude B).
+- **Open:** `-bo` is strictly imperative (NV-173) yet `asongboma?` is a polite-request question; `on·ana` form unexplained; `Can I sit?` runtime gives `Anga asonga` (engine gap).

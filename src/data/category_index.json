@@ -4079,5 +4079,7 @@
   "can you (ability / permission)": "general",
   "to drive": "general",
   "to pull": "general",
-  "to pay": "general"
+  "to pay": "general",
+  "can you give me water? (explicit pronoun)": "food",
+  "may i sit? (polite request)": "general"
 }
