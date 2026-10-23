@@ -1296,6 +1296,29 @@ export function tryModalCanConstruction(input) {
   return parts.join(' ');
 }
 
+// NV-187 (2026-10-23, Claude B; PO-relayed ruling attributed to Thangseng,
+// docs/HANDOFF_CLAUDE_A_B_20261022 / HANDOFF_CLAUDE_B_20261022_prodrop_may_i.md):
+// "May I / Can I + VERB" request -> "Anga VERB-na man·genma?". Same shape as
+// the PO pins "May I sit?" = "Anga asongna man·genma?" and NV-185 "Can you
+// ... man·genma?". Intransitive only, and only verbs with an attested
+// infinitive stem (modal_can_map.json eat/go/work + sit = asongna, master
+// NV-187 row). "sit down" shares the stem; "down" is not parsed. No object
+// (no evidence for object placement here) and no other verbs: bail so the
+// normal pipeline runs rather than guessing a stem.
+const MAY_I_VERBS = {
+  ...Object.fromEntries(Object.entries(MODAL_CAN_MAP.verbs).filter(([, v]) => !v.transitive).map(([k, v]) => [k, v.verbGaro])),
+  sit: 'asongna',
+};
+export function tryMayICanIRequestConstruction(input) {
+  const m = String(input).trim().match(/^(?:may|can)\s+i\s+([a-z]+)(?:\s+down)?\s*[?.!]?$/i);
+  if (!m) return null;
+  const verbWord = m[1].toLowerCase();
+  if (/\sdown/i.test(m[0]) && verbWord !== 'sit') return null;
+  const verbGaro = MAY_I_VERBS[verbWord];
+  if (!verbGaro) return null;
+  return `Anga ${verbGaro} man\u00b7genma?`;
+}
+
 // NV-120 (2026-09-03, Claude B). "-ma" polar-question construction —
 // Claude A's 2026-09-03 handoff (Finding 2) reproduced live: paraphrases
 // of the "did you have lunch?" citation produce broken, verb-salvaged

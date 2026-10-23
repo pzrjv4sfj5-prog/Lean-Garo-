@@ -57,7 +57,7 @@ import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js
 // analyzeGrammar, tryWithoutGijaConstruction extracted to
 // src/grammarEngine.js (2026-07-29, BACKLOG-003 Phase 5). Verified zero
 // logic change via byte-identical 237-sentence stress benchmark diff.
-import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryPolarQuestionLunchConstruction, tryVeryHotConstruction } from './grammarEngine.js';
+import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryMayICanIRequestConstruction, tryPolarQuestionLunchConstruction, tryVeryHotConstruction } from './grammarEngine.js';
 export { analyzeGrammar };
 // assembleSentenceSOV, assembleGrammar, translateIfClause,
 // translateMultiClause extracted to src/sentenceBuilder.js
@@ -692,6 +692,10 @@ async function translateCore(input) {
   // -> "Ua Cha·a", confirmed live, Claude A's 2026-09-03 handoff).
   const modalCan = tryModalCanConstruction(cleaned);
   if (modalCan) return { garo: modalCan, method: 'modal-can-construction', confidence: 0.85 };
+
+  // 5.85 NV-187 "May I / Can I + verb" request (see grammarEngine.js).
+  const mayI = tryMayICanIRequestConstruction(String(input));
+  if (mayI) return { garo: mayI, method: 'may-i-request-construction', confidence: 0.85 };
 
   // 5.9 NV-120 "did SUBJ have lunch" polar-question pronoun-substitution
   // (2026-09-03, Claude B — see grammarEngine.js's
