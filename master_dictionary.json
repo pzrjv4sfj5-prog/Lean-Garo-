@@ -4590,7 +4590,8 @@
     "english": "that",
     "garo": "Ua",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): replaced by `that (default)` / `that (far/there, distance emphasised)` rows. Retained so legacy copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "these",
@@ -6703,14 +6704,15 @@
     "english": "yes, of course.",
     "garo": "Hoe mangenva.",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): now `Oe, man·gengba.`. Retained so legacy copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "can you lift the box?",
     "garo": "Na·a box ko dena man·gengma?",
     "category": "general",
-    "confidence": "unverified",
-    "notes": "NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma)."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): now `Na·a boxko de·na man·gengma?`. Retained so legacy copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "may i sit down?",
@@ -6730,14 +6732,15 @@
     "english": "do you love me?",
     "garo": "Na·a angna kasa·ama?",
     "category": "emotions",
-    "confidence": "unverified",
-    "notes": " RULE-046 SWEEP FIX (2026-08-28, Claude A, DERIVED/mechanical — applying already-VERIFIED grammar rule, not new native evidence): removed the space before the -ma question particle per docs/grammar_rules_structured/RULE-046.yaml (-ma joins directly to the inflected verb, no space/period). Was flagged as a P1 backlog item in RULE-046's own counterexamples field since 2026-08-21."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): now `Na·a angna ka·saama?`. Retained so legacy copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "yes, i love you.",
     "garo": "Hoe, ang·a nangna kasa·a.",
     "category": "emotions",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): now `Oe, anga nang·na ka·saa.`. Retained so legacy copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "i am fine.",
@@ -6750,7 +6753,8 @@
     "english": "that (far/there)",
     "garo": "Haiwa",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): replaced by `that (default)` / `that (far/there, distance emphasised)` rows. Retained so legacy copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "which",
@@ -79141,21 +79145,84 @@
     "english": "may i sit?",
     "garo": "Anga asongna man·gengma?",
     "category": "general",
-    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: primary (ability/permission). Also covers `May I sit down?` — `down` is not parsed; `sit` and `sit down` are the same verb `asong`.",
+    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: primary (ability/permission). Also covers `May I sit down?` — `down` is not parsed; `sit` and `sit down` are the same verb `asong`. Polite-request variant `asongboma?` dropped per PO directive (NV-188).",
     "confidence": "verified_high"
   },
   {
     "english": "may i sit down?",
     "garo": "Anga asongna man·gengma?",
     "category": "general",
-    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: same value as `may i sit?`; English `down` adds nothing.",
+    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: same value as `may i sit?`; English `down` adds nothing. Polite-request variant `asongboma?` dropped per PO directive (NV-188).",
     "confidence": "verified_high"
   },
   {
-    "english": "may i sit? (polite request)",
-    "garo": "Anga asongboma?",
+    "english": "yes, of course.",
+    "garo": "Oe, man·gengba.",
     "category": "general",
-    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: variant, polite request structure (`...boma?`).",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `man·genba` aligned to `man·gengba` per NV-185. `Oe` here sits against NV-095 (yes = `Am`); see `yes (alt 3)`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you lift the box?",
+    "garo": "Na·a boxko de·na man·gengma?",
+    "category": "general",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `man·genma` aligned to `man·gengma`; `boxko` joined and `de·na` as given.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "do you love me?",
+    "garo": "Na·a angna ka·saama?",
+    "category": "emotions",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: raka placement `ka·saa` as given; conflicts with verified `ka·sa·a` (Love), held for ruling.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "yes, i love you.",
+    "garo": "Oe, anga nang·na ka·saa.",
+    "category": "emotions",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: as given; `ka·saa` and `nang·na` raka placement unreconciled with `ka·sa·a`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i am fine (affirmative response)",
+    "garo": "Namengaba.",
+    "category": "phrases",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `Anga namenga.` (already verified) is the statement; `Namengaba` is the strict affirmative response form.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "yes (alt 3)",
+    "garo": "Oe",
+    "category": "general",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: lexicon `oe` = yes. Does NOT change NV-095: primary `yes` stays `Am`, `Hoe` alt 2.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "of course (certainly)",
+    "garo": "Man·gengba",
+    "category": "general",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `man·gengba` = of course / certainly (literally 'will be able').",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to lift",
+    "garo": "De·a",
+    "category": "body",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `de·a` = to lift / to carry.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "that (default)",
+    "garo": "Ua",
+    "category": "general",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: proximal / general demonstrative; default for `that`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "that (far/there, distance emphasised)",
+    "garo": "Haiwa",
+    "category": "general",
+    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: distal demonstrative; used when physical distance is emphasised.",
     "confidence": "verified_high"
   }
 ]

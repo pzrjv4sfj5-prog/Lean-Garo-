@@ -7875,9 +7875,23 @@ Source: Project Owner-provided in chat ("sal.a (n) is broom"; `.` read as raka),
 
 Source: Project Owner-relayed, attributed to Thangseng; raw message not on file. Not a native quote. Block already used `·`.
 
-- **Pins:** `Can you give me water?` = `Angna chi on·na man·gengma?` (primary, pronoun dropped); variant `Na·a angna chi on·ana man·gengma?`. `May I sit?` / `May I sit down?` = `Anga asongna man·gengma?`; variant (polite request) `Anga asongboma?`.
+- **Pins:** `Can you give me water?` = `Angna chi on·na man·gengma?` (primary, pronoun dropped); variant `Na·a angna chi on·ana man·gengma?`. `May I sit?` / `May I sit down?` = `Anga asongna man·gengma?`; ~~variant `Anga asongboma?`~~ (dropped, NV-188).
 - **Spelling alignment:** the block wrote `man·genma`; aligned to `man·gengma` per the block's own instruction and NV-185. **Reverses** the 2026-08-22 native-verified no-dot `mangengma` on `may i sit?` (kept as a superseded row). This resolves NV-185 not-changed item 1 (permission rows) for `may i sit` / `may i sit down?`; `permission request` (`verb + na + mangengma?`) left unchanged.
 - **Changed `on·a` to `on·na`** in the water pin (`phrase_maps.js` and master). Old `on·a` row retained as superseded.
 - **`sit` = `sit down`:** same verb `asong`; English `down` is not parsed. Existing rows untouched (`sit` = `Asonga`, `sit down` = `Asongbo` imperative, both stem `asong`).
 - **Rule:** pro-drop in requests recorded as a dated note in RULE-004. **Not yet engine behaviour** (Claude B).
-- **Open:** `-bo` is strictly imperative (NV-173) yet `asongboma?` is a polite-request question; `on·ana` form unexplained; `Can I sit?` runtime gives `Anga asonga` (engine gap).
+- **Open:** `on·ana` form unexplained; `Can I sit?` runtime gives `Anga asonga` (engine gap).
+
+## NV-188 (2026-10-23, `may i sit` = `may i sit down`; `asongboma` dropped)
+
+Thangseng (relayed by the Project Owner): no distinction is needed between the two English phrases. He gave both `anga asongna man.genma?` and `anga asongboma?` "depending on the context". **Project Owner directive:** ignore `asongboma`; keep only `Anga asongna man·gengma?`. The `may i sit? (polite request)` row is removed from master (not superseded: it never carried an independent native citation beyond NV-187's relay). **Open:** Thangseng wrote `man.genma` (one g) three times now; engine spelling stays `man·gengma` (NV-185) until the Owner rules.
+
+## NV-189 (2026-10-23, pins: of course / lift the box / love; lexicon; `Haiwa` vs `Ua`)
+
+Source: Project Owner-relayed, attributed to Thangseng; raw message not on file. Not a native quote.
+
+- **Pins added (verified_high, relay-labelled):** `Yes, of course.` = `Oe, man·gengba.`; `Can you lift the box?` = `Na·a boxko de·na man·gengma?`; `Do you love me?` = `Na·a angna ka·saama?`; `Yes, I love you.` = `Oe, anga nang·na ka·saa.`. Replaced unverified rows (retained as superseded). `man·genma`/`man·genba` aligned to `man·gengma`/`man·gengba` per NV-185.
+- **Already pinned, no change:** `May I sit down?`, `Can you give me water?` (NV-187), `I am fine.` = `Anga namenga.` (verified earlier).
+- **Lexicon added (4 of 5):** `oe` as `yes (alt 3)` (NV-095 stands: `Am` primary, `Hoe` alt 2), `man·gengba` = of course, `de·a` = to lift, `namengaba` as `i am fine (affirmative response)`. **Held:** `ka·saa` = love, because verified `ka·sa·a` (Love) disagrees on raka placement; the two love pins carry `ka·saa` as given and are flagged.
+- **Demonstratives:** `that (default)` = `Ua`, `that (far/there, distance emphasised)` = `Haiwa` (data rows only). Engine default/selection is Claude B's.
+- **Open for the Owner:** (1) `Oe` against NV-095; (2) `ka·saa` vs `ka·sa·a`; (3) 4 pins have no standalone native quote on file.
