@@ -16138,7 +16138,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": null,
+    "notes": "Project Owner-confirmed 2026-10-23 (chat, no transcript): `Am` also = carpet (homograph of `Am` = ok/okay); '(n)' qualifier in the PO's wording not yet clarified.",
     "confidence": "unverified"
   },
   {
@@ -72974,8 +72974,8 @@
     "english": "yes (alt)",
     "garo": "Am",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — FLAGGED: directly contradicts the existing VERIFIED 'yes'='Oe' entry (also used elsewhere, e.g. 'of course!'='Oe, bebe!'). Not superseding Oe on this alone — both may be genuine register/dialect variants, but this needs an explicit Claude A/Project Owner reconciliation before either is treated as primary.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-191 (2026-10-23, Project Owner directive in chat, no transcript): `yes` = `Oe`, `Am` = ok/okay (NV-190); `Am` is not a yes form. Retained per citation discipline. Earlier note: VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — FLAGGED: directly contradicts the existing VERIFIED 'yes'='Oe' entry (also used elsewhere, e.g. 'of course!'='Oe, bebe!'). Not superseding Oe on this alone — both may be genuine register/dialect variants, but this needs an explicit Claude A/Project Owner reconciliation before either is treated as primary.",
+    "confidence": "superseded"
   },
   {
     "english": "sit (alt)",
