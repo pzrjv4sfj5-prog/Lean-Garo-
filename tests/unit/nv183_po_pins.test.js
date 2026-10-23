@@ -8,7 +8,7 @@ const cases = [
   ['He slept the whole night.', 'Bia walgimik tuaha.'],
   ['In which room did you sleep?', 'Na·a badia room o tusia?'],
   ['He wrote well in the exam.', 'Bia porikka namen seataha.'],
-  ['Can you write the exam?', 'Na·a porikka sena man·gengma?'],
+  ['Can you write the exam?', 'Na·a porikka sena man·genma?'],
   ['What is written in the letter?', 'Chitthio mai sea dongachim?'],
   ['How did you drive?', 'Na·a maidake sala?'],
   ['Why do you drive the car?', 'Na·a maina gariko sala?'],
@@ -27,7 +27,7 @@ for (const [en, garo] of [['to drive', 'sala'], ['to pay', 'gama'], ['pull', 'sa
   });
 }
 // NV-184 (2026-10-21): raka audit
-test('NV-185: can you help me uses man·gengma', async () => {
+test('NV-185: can you help me uses man·genma', async () => {
   const r = await translate('Can you help me');
-  assert.equal(r.garo, 'Na·a angna dakchakna man·gengma?');
+  assert.equal(r.garo, 'Na·a angna dakchakna man·genma?');
 });

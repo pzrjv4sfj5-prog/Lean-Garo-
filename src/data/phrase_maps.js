@@ -21,7 +21,7 @@ export const PHRASE_MAPS = {
   'please': 'Ka·sapae.',
   'sorry': 'Kema·bi·a.',
   'excuse me': 'Angko kema·watbo.',
-  'yes': 'Am',
+  'yes': 'Oe',
   'no': 'Ihing',
   'what is your name': 'Nang·ni bimungara maia?',
   'my name is': 'Angni bimungara...',
@@ -149,8 +149,8 @@ export const PHRASE_MAPS = {
   'no way': 'Ong·ja inde·ba!',
   'just joking': 'Anga kalake roega',
   'chill out': 'Nom·a bo',
-  'may i sit down': 'Anga asongna man·gengma?',
-  'can you give me water': 'Angna chi on·na man·gengma?',
+  'may i sit down': 'Anga asongna man·genma?',
+  'can you give me water': 'Angna chi on·na man·genma?',
   'water': 'Chi',
   'food': 'al·a',
   'rice': 'Mi',
@@ -172,7 +172,7 @@ export const PHRASE_MAPS = {
   'door': 'do·oga', // corrected 2026-08-07: 'Do·ga' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'do·oga', unambiguous
   'god': 'i·sol', // corrected 2026-08-06: 'Isol' was flagged SUPERSEDED; 2 VERIFIED/HIGH candidates exist (dok·gip·a / i·sol), picked i·sol as closest orthographic match to the legacy spelling -- provisional, see docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md
   'church': 'giil·ja·nok',
-  'love': 'ka·sa·a',
+  'love': 'ka·saa',
   'peace': 'Tom·toma',
   'truth': 'Bebe',
   'life': 'jang·gi',

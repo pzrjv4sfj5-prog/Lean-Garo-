@@ -7895,3 +7895,13 @@ Source: Project Owner-relayed, attributed to Thangseng; raw message not on file.
 - **Lexicon added (4 of 5):** `oe` as `yes (alt 3)` (NV-095 stands: `Am` primary, `Hoe` alt 2), `man·gengba` = of course, `de·a` = to lift, `namengaba` as `i am fine (affirmative response)`. **Held:** `ka·saa` = love, because verified `ka·sa·a` (Love) disagrees on raka placement; the two love pins carry `ka·saa` as given and are flagged.
 - **Demonstratives:** `that (default)` = `Ua`, `that (far/there, distance emphasised)` = `Haiwa` (data rows only). Engine default/selection is Claude B's.
 - **Open for the Owner:** (1) `Oe` against NV-095; (2) `ka·saa` vs `ka·sa·a`; (3) 4 pins have no standalone native quote on file.
+
+## NV-190 (2026-10-23, Project Owner rulings: native spelling; `Am` = ok/okay; love = `ka·saa`)
+
+Source: direct Project Owner statements in chat (no transcript), three rulings. Not native quotes.
+
+1. **"We will go by the spelling given by native"** = `man·genma` / `man·genba` (one g). **Reverses NV-185** (`man·gengma`) and the NV-187..NV-189 alignment. 11 active rows respelled (new or restored; `man·gengma` rows kept as superseded), `phrase_maps.js`, `corrections.json`, RULE-004 note and tests (nv183, nv187, nv189) updated. The NV-103 spelling (`can you help me with the address`) is restored. Pins now: `Can you give me water?` = `Angna chi on·na man·genma?`; `May I sit?` / `May I sit down?` = `Anga asongna man·genma?`; `Yes, of course.` = `Oe, man·genba.`; `Can you lift the box?` = `Na·a boxko de·na man·genma?`; `can you (ability / permission)` = `man·genma`.
+2. **`Am` = ok / okay (acknowledgment), not yes.** `yes` primary = `Oe` (NV-095 `Am` row superseded; `Oe` row restored; `corrections.json` and `phrase_maps.js` `yes` = `Oe`). `ok` / `okay` = `Am`. `yes (alt 2)` = `Hoe` unchanged; the transient `yes (alt 3)` row is deleted.
+3. **Love = `ka·saa`.** `Love` = `ka·saa` (the `ka·sa·a` verified row superseded; `love` / `Ka·saa` row restored; `phrase_maps.js` and `corrections.json` `love`). The two love pins (NV-189) now agree with the lexicon.
+
+**Not touched:** `i love you` in `phrase_maps.js` still holds the old `Ang·a nangna kasa·a.` (runtime already returns `Anga nang·na ka·saa`; stale value, flagged). RULE-046 historic note still shows `kasa·a`. `Is that okay?` returns `Am` (pre-existing leak, not new). Standing `man·gen` stem pin (`i work so i can eat`) unchanged.

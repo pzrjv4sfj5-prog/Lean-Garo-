@@ -4082,9 +4082,9 @@
   "to pay": "general",
   "can you give me water? (explicit pronoun)": "food",
   "i am fine (affirmative response)": "phrases",
-  "yes (alt 3)": "general",
   "of course (certainly)": "general",
   "to lift": "body",
   "that (default)": "general",
-  "that (far/there, distance emphasised)": "general"
+  "that (far/there, distance emphasised)": "general",
+  "ok": "general"
 }

@@ -4,10 +4,10 @@ import assert from 'node:assert/strict';
 import { translate } from '../../src/translationEngine.js';
 
 for (const [en, garo] of [
-  ['Yes, of course.', 'Oe, man·gengba.'],
-  ['Can you lift the box?', 'Na·a boxko de·na man·gengma?'],
-  ['May I sit down?', 'Anga asongna man·gengma?'],
-  ['Can you give me water?', 'Angna chi on·na man·gengma?'],
+  ['Yes, of course.', 'Oe, man·genba.'],
+  ['Can you lift the box?', 'Na·a boxko de·na man·genma?'],
+  ['May I sit down?', 'Anga asongna man·genma?'],
+  ['Can you give me water?', 'Angna chi on·na man·genma?'],
   ['Do you love me?', 'Na·a angna ka·saama?'],
   ['Yes, I love you.', 'Oe, anga nang·na ka·saa.'],
 ]) {

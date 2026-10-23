@@ -381,8 +381,8 @@
     "english": "love",
     "garo": "Ka·saa",
     "category": "emotions",
-    "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the now-VERIFIED 'ka·sa·a' row for 'love', differs only in capitalization/spelling. Retained per citation discipline, not deleted, but not a second independent candidate.",
-    "confidence": "superseded"
+    "notes": "RESTORED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): love = `Ka·saa`. Earlier note: SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the now-VERIFIED 'ka·sa·a' row for 'love', differs only in capitalization/spelling. ",
+    "confidence": "verified_high"
   },
   {
     "english": "happiness",
@@ -1339,8 +1339,8 @@
     "english": "yes",
     "garo": "Oe",
     "category": "general",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile. Resolves the long-standing Oe/Am/Hoe three-way tie in favor of 'Am'."
+    "confidence": "verified_high",
+    "notes": "RESTORED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): `yes` = `Oe`; `Am` moves to ok / okay. Earlier note: SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipli"
   },
   {
     "english": "no",
@@ -6698,7 +6698,8 @@
     "english": "can you give me your pen?",
     "garo": "Na·a nang kolom ko on·a man·gengma?",
     "category": "education",
-    "notes": "NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma)."
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: None",
+    "confidence": "superseded"
   },
   {
     "english": "yes, of course.",
@@ -6956,8 +6957,8 @@
     "english": "ability / permission ?",
     "garo": "verb + man·gengma?",
     "category": "general",
-    "confidence": "unverified",
-    "notes": "NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma)."
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: unverified"
   },
   {
     "english": "ability / permission ✓",
@@ -16263,8 +16264,8 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
+    "notes": "RESTORED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): `Am` = ok / okay (acknowledgment). Earlier note: None",
+    "confidence": "verified_high"
   },
   {
     "english": "our",
@@ -19333,8 +19334,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): love = `ka·saa` per PO (native spelling). Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "Love",
@@ -73480,8 +73481,8 @@
     "english": "yes",
     "garo": "Am",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): `Am` is an acknowledgment (ok / okay), not yes. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "you",
@@ -73916,8 +73917,8 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma). Reverses the NV-103 direct-citation spelling man·genma; PO ruling.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "i cannot help you",
@@ -78961,8 +78962,8 @@
     "english": "can you write the exam?",
     "garo": "Na·a porikka sena man·gengma?",
     "category": "education",
-    "notes": "VERIFIED/HIGH — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma).",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "how did you drive?",
@@ -78989,8 +78990,8 @@
     "english": "can you (ability / permission)",
     "garo": "man·gengma",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" spelling is man·gengma (was man·genma).",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "to drive",
@@ -79080,15 +79081,15 @@
     "english": "can you write the exam?",
     "garo": "Na·a porikka sena man·genma?",
     "category": "education",
-    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: verified_high",
-    "confidence": "superseded"
+    "notes": "RESTORED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` restored. Earlier note: SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spellin",
+    "confidence": "verified_high"
   },
   {
     "english": "can you (ability / permission)",
     "garo": "man·genma",
     "category": "general",
-    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: verified_high",
-    "confidence": "superseded"
+    "notes": "RESTORED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` restored. Earlier note: SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spellin",
+    "confidence": "verified_high"
   },
   {
     "english": "can you help me with the address",
@@ -79096,15 +79097,15 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: verified_high",
-    "confidence": "superseded"
+    "notes": "RESTORED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` restored. Earlier note: SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spellin",
+    "confidence": "verified_high"
   },
   {
     "english": "can you give me your pen?",
     "garo": "Na·a nang kolom ko on·a man·genma?",
     "category": "education",
-    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: undefined",
-    "confidence": "superseded"
+    "notes": "RESTORED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` restored. Earlier note: SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spellin",
+    "confidence": "verified_high"
   },
   {
     "english": "can you lift the box?",
@@ -79117,8 +79118,8 @@
     "english": "ability / permission ?",
     "garo": "verb + man·genma?",
     "category": "general",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spelling retained so legacy-source copies are filtered; not deleted. Was: unverified"
+    "confidence": "verified_high",
+    "notes": "RESTORED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` restored. Earlier note: SUPERSEDED — NV-185 (2026-10-21, Project Owner-provided spelling correction; raw message not on file), not a native quote: \"can you?\" is man·gengma. Old spellin"
   },
   {
     "english": "can you give me water?",
@@ -79131,43 +79132,43 @@
     "english": "can you give me water?",
     "garo": "Angna chi on·na man·gengma?",
     "category": "food",
-    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: primary, natural dropped-pronoun form. Block spelled `man·genma`; aligned to `man·gengma` per NV-185.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "can you give me water? (explicit pronoun)",
     "garo": "Na·a angna chi on·ana man·gengma?",
     "category": "food",
-    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: variant with explicit `Na·a`. `on·ana` stored as given; `man·genma` aligned to `man·gengma`.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "may i sit?",
     "garo": "Anga asongna man·gengma?",
     "category": "general",
-    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: primary (ability/permission). Also covers `May I sit down?` — `down` is not parsed; `sit` and `sit down` are the same verb `asong`. Polite-request variant `asongboma?` dropped per PO directive (NV-188).",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "may i sit down?",
     "garo": "Anga asongna man·gengma?",
     "category": "general",
-    "notes": "NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: same value as `may i sit?`; English `down` adds nothing. Polite-request variant `asongboma?` dropped per PO directive (NV-188).",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "yes, of course.",
     "garo": "Oe, man·gengba.",
     "category": "general",
-    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `man·genba` aligned to `man·gengba` per NV-185. `Oe` here sits against NV-095 (yes = `Am`); see `yes (alt 3)`.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "can you lift the box?",
     "garo": "Na·a boxko de·na man·gengma?",
     "category": "general",
-    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `man·genma` aligned to `man·gengma`; `boxko` joined and `de·na` as given.",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-190 (2026-10-23, Project Owner directive in chat, no transcript): spelling follows the native (`man·genma` / `man·genba`); NV-185 `man·gengma` ruling reversed. Retained so legacy copies are filtered; not deleted. Was: verified_high",
+    "confidence": "superseded"
   },
   {
     "english": "do you love me?",
@@ -79188,13 +79189,6 @@
     "garo": "Namengaba.",
     "category": "phrases",
     "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `Anga namenga.` (already verified) is the statement; `Namengaba` is the strict affirmative response form.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "yes (alt 3)",
-    "garo": "Oe",
-    "category": "general",
-    "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: lexicon `oe` = yes. Does NOT change NV-095: primary `yes` stays `Am`, `Hoe` alt 2.",
     "confidence": "verified_high"
   },
   {
@@ -79223,6 +79217,55 @@
     "garo": "Haiwa",
     "category": "general",
     "notes": "NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: distal demonstrative; used when physical distance is emphasised.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you give me water?",
+    "garo": "Angna chi on·na man·genma?",
+    "category": "food",
+    "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` / `man·genba` as written by Thangseng; replaces NV-185 `man·gengma`. Earlier note: NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: primary, natural dropped-pronoun form. Block spelled `man·genma`; aligned to `man·geng",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you give me water? (explicit pronoun)",
+    "garo": "Na·a angna chi on·ana man·genma?",
+    "category": "food",
+    "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` / `man·genba` as written by Thangseng; replaces NV-185 `man·gengma`. Earlier note: NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: variant with explicit `Na·a`. `on·ana` stored as given; `man·genma` aligned to `man·ge",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "may i sit?",
+    "garo": "Anga asongna man·genma?",
+    "category": "general",
+    "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` / `man·genba` as written by Thangseng; replaces NV-185 `man·gengma`. Earlier note: NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: primary (ability/permission). Also covers `May I sit down?` — `down` is not parsed; `s",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "may i sit down?",
+    "garo": "Anga asongna man·genma?",
+    "category": "general",
+    "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` / `man·genba` as written by Thangseng; replaces NV-185 `man·gengma`. Earlier note: NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: same value as `may i sit?`; English `down` adds nothing. Polite-request variant `asong",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "yes, of course.",
+    "garo": "Oe, man·genba.",
+    "category": "general",
+    "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` / `man·genba` as written by Thangseng; replaces NV-185 `man·gengma`. Earlier note: NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `man·genba` aligned to `man·gengba` per NV-185. `Oe` here sits against NV-095 (y",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you lift the box?",
+    "garo": "Na·a boxko de·na man·genma?",
+    "category": "general",
+    "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` / `man·genba` as written by Thangseng; replaces NV-185 `man·gengma`. Earlier note: NV-189 (2026-10-23, Project Owner-relayed block, attributed to Thangseng; raw message not on file), not a native quote: `man·genma` aligned to `man·gengma`; `boxko` joined and `de·na` as given.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "ok",
+    "garo": "Am",
+    "category": "general",
+    "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): `Am` = ok / acknowledgment (same as `okay`).",
     "confidence": "verified_high"
   }
 ]

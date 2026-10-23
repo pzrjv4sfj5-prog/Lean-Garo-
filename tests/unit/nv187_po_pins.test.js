@@ -4,9 +4,9 @@ import assert from 'node:assert/strict';
 import { translate } from '../../src/translationEngine.js';
 
 for (const [en, garo] of [
-  ['Can you give me water?', 'Angna chi on·na man·gengma?'],
-  ['May I sit?', 'Anga asongna man·gengma?'],
-  ['May I sit down?', 'Anga asongna man·gengma?'],
+  ['Can you give me water?', 'Angna chi on·na man·genma?'],
+  ['May I sit?', 'Anga asongna man·genma?'],
+  ['May I sit down?', 'Anga asongna man·genma?'],
 ]) {
   test(`NV-187: ${en}`, async () => {
     const r = await translate(en);
