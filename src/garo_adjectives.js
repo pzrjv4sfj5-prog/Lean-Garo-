@@ -21,6 +21,13 @@ const PRE_NOUN_ADJ_ENGLISH = new Set([
   'busy', 'ready', 'green',
 ]);
 export const PRE_NOUN_COLOUR_ADJ = { red: 'gitchak' };
+// NV-189: closed English adjective test (no POS data in the engine), used to
+// keep "that + ADJECTIVE" out of the "that NOUN" demonstrative construction.
+const OTHER_ADJ_ENGLISH = new Set(['little', 'old', 'new', 'young', 'weak', 'kind', 'bad', 'clean', 'expensive', 'black', 'white', 'blue', 'yellow', 'brown', 'red']);
+export function isKnownAdjectiveEnglish(w) {
+  const k = String(w).toLowerCase();
+  return PRE_NOUN_ADJ_ENGLISH.has(k) || OTHER_ADJ_ENGLISH.has(k);
+}
 // "little": size sense = chona (same word as small), quantity sense =
 // ontisa / banggija, never chona (NV-177 item 5). A mass noun after "little"
 // ("a little rice") is the quantity sense, so no size form is generated.

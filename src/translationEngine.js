@@ -57,7 +57,7 @@ import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js
 // analyzeGrammar, tryWithoutGijaConstruction extracted to
 // src/grammarEngine.js (2026-07-29, BACKLOG-003 Phase 5). Verified zero
 // logic change via byte-identical 237-sentence stress benchmark diff.
-import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryMayICanIRequestConstruction, tryPolarQuestionLunchConstruction, tryVeryHotConstruction } from './grammarEngine.js';
+import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryMayICanIRequestConstruction, tryThatNounConstruction, tryPolarQuestionLunchConstruction, tryVeryHotConstruction } from './grammarEngine.js';
 export { analyzeGrammar };
 // assembleSentenceSOV, assembleGrammar, translateIfClause,
 // translateMultiClause extracted to src/sentenceBuilder.js
@@ -593,6 +593,10 @@ async function translateCore(input) {
 
   const multiClauseResult = await translateMultiClause(cleaned);
   if (multiClauseResult) return multiClauseResult;
+
+  // 3.9 (before stop-word strip, which drops "that") NV-189 "that NOUN" -> "Ua NOUN" (see grammarEngine.js).
+  const thatNoun = tryThatNounConstruction(String(input));
+  if (thatNoun) return { garo: thatNoun, method: 'demonstrative-that-construction', confidence: 0.85 };
 
   // 4. Stop-word strip
   // Negation-aware: this step previously had zero awareness of negation

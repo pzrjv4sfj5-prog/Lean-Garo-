@@ -9,6 +9,7 @@
  * after the move — see docs/ARCHITECTURE.md BACKLOG-003 Phase 5 entry.
  */
 
+import { isKnownAdjectiveEnglish } from './garo_adjectives.js';
 import { TIME_ADVERB_FORMS, isTimeAdverb } from './garo_time_adverbs.js';
 import { splitPreNounAdjectives } from './garo_adjectives.js';
 import IRREGULAR_VERBS from './data/irregular_verbs.json' with { type: 'json' };
@@ -1317,6 +1318,24 @@ export function tryMayICanIRequestConstruction(input) {
   const verbGaro = MAY_I_VERBS[verbWord];
   if (!verbGaro) return null;
   return `Anga ${verbGaro} man\u00b7genma?`;
+}
+
+// NV-189 (2026-10-23, Claude B; PO-relayed, attributed to Thangseng): default
+// demonstrative "that" = Ua, placed BEFORE the noun (attested placement:
+// "Ua nok namen dal·a" = that house is very big, NV-177). Before this,
+// stopword stripping silently dropped "that" ("that dog" -> "Achak").
+// Scope: exactly "that NOUN" (one word, must resolve as a noun). "Haiwa"
+// (distance emphasised) has no verified trigger list, so it is never
+// emitted here. "this" has no placement evidence and is untouched.
+const THAT_NOUN_DENY = new Set(['is','was','one','far','are','will','can','way','much','many','all','time','good','bad']);
+export function tryThatNounConstruction(input) {
+  const m = String(input).trim().match(/^that\s+([a-z]+)\s*[?.!]?$/i);
+  if (!m) return null;
+  const w = m[1].toLowerCase();
+  if (THAT_NOUN_DENY.has(w) || isKnownAdjectiveEnglish(w)) return null;
+  const noun = lookupGaro(w, 'n.');
+  if (!noun || /\[UNKNOWN\]/.test(noun)) return null;
+  return `Ua ${noun}`;
 }
 
 // NV-120 (2026-09-03, Claude B). "-ma" polar-question construction —
