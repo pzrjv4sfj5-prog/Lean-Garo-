@@ -7911,3 +7911,4 @@ Source: direct Project Owner statements in chat (no transcript), three rulings. 
 Project Owner directive in chat (no transcript; not a native quote), following the NV-190 audit of `Am` used as "yes":
 1. **`yes (alt)` = `Am` superseded** (was verified_high from the 2026-08-22 relay, flagged as contradicting `yes` = `Oe`). Consistent with NV-190: `yes` = `Oe`, `Am` = ok / okay. Row retained as superseded. No sentence row, rule or override used `Am` for yes (audit clean). `yes (alt)` now falls through to morphology (`Oe [UNKNOWN]`); harmless.
 2. **`carpet` = `Am` confirmed** by the PO as a homograph of `Am` = ok. Note added; confidence unchanged (unverified). The PO's wording "Am(n)" is unclear (noun marker? separate form?); not applied, awaiting clarification.
+3. **Stale `i love you` fixed** (NV-190 leftover, Rule 8): `phrase_maps.js` `i love you` = `Anga nang·na ka·saa` (was `Ang·a nangna kasa·a.`), matching `corrections.json` and runtime. No behaviour change.

@@ -128,7 +128,7 @@ export const PHRASE_MAPS = {
   'maybe': 'Ong·naba donga',
   'no problem': 'Maming ba ong·ja',
   'never mind': 'Maming ba ong·ja',
-  'i love you': 'Ang·a nangna kasa·a.',
+  'i love you': 'Anga nang·na ka·saa',
   'i believe in you': 'Anga nang·na bebe ra·a',
   'i trust you': 'Nangko bebe ra·a',
   'i forgive you': 'Anga nangko kema ka·ra',
