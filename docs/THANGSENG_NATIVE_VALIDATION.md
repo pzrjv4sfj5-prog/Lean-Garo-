@@ -7929,3 +7929,10 @@ Relayed as native-verified in chat (raw message not on file, not a native quote)
 **Object incorporation (`-ko` drop):** `I ate rice` = `Anga mi cha·aha` was already pinned. No general engine rule was added: `I eat rice` still gives `Anga miko Cha·a` and `I ate fish` gives `Anga na·tokko Cha·aha`, because only the `mi` + `cha·` pair has native evidence. Handoff for Claude B: `docs/CLAUDE_B_HANDOFF_20261023_object_incorporation.md`.
 4. **`Am(n)` clarified (PO, 2026-10-23):** `Am(n)` = carpet. Read `(n)` as the noun marker: `carpet` = `Am`, `pos` n., now verified_high (PO directive, not a native quote). Supersedes the 'wording unclear' note in item 2 above.
 
+## NV-193 (2026-10-24, Project Owner rulings: `stay` = `roa` / `donga` split; `eaten` stays `cha·jok`)
+
+Project Owner rulings in chat (not native quotes), resolving the two NV-192 flags.
+1. **`stay` splits by sense.** `roa` = visit / spend time / vacation / hang around (`How many years has your stay there been?` = `Na·a uano roa badita bilsi ong·aha?`); `donga` = exist / be present / reside (`I will stay here` = `Anga iano donggen.`, pinned; the engine's old `Anga ianoko donggen` wrongly put `-ko` on the locative `iano`). **Engine:** `stay` routes to the visit verb (`roa`) only on an explicit temporary-visit cue (vacation, holiday, trip, visit, hang around / out, spend time, temporary, sightseeing); everything else stays `donga` (default, existing tests unchanged). Cue list is deliberately narrow and extendable. **Open:** `-ko` on `ianoko` / `antiko` with `donga` in other sentences (`we stay here`, `Do you stay here?`) has one native example only; not generalised.
+2. **`eaten` = `cha·jok` primary** (perfective / completive, NV-180); `ate` = `cha·aha` primary. The NV-192 `eaten` = `cha·aha` strict-map is reversed: that row is now `eaten (alt, formal)` and `corrections.json` `eaten` = `cha·jok`. `cha·manaha` / `cha·manjok` unchanged.
+Tests: `tests/unit/nv193_stay_eaten_rulings.test.js` (NV-192 `eaten` case updated).
+

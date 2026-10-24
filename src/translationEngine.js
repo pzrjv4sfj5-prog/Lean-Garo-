@@ -276,6 +276,14 @@ async function translateCountedSubjectClause(cleaned) {
 export async function translate(input) {
   // NV-181 (PO, 2026-10-21): 'him/her' routes to the established human object pronouns (same as 'him'); the slash otherwise leaves [UNKNOWN].
   input = String(input).replace(/\b(?:him\s*\/\s*her|her\s*\/\s*him)\b/gi, 'him');
+  // NV-193 (PO ruling, 2026-10-24): 'stay' splits by sense. Temporary visit / vacation / hanging
+  // around -> `roa` (the visit verb); physical presence / residing -> `donga` (the default, unchanged).
+  // Cue-based and deliberately narrow: only a sentence with an explicit temporary-visit cue is routed.
+  if (/\bstay(?:s|ed|ing)?\b/i.test(input)
+      && /\b(?:vacation|holidays?|trip|visit(?:s|ed|ing)?|hang(?:ing)?\s+(?:around|out)|spend(?:ing)?\s+time|temporar(?:y|ily)|sightseeing)\b/i.test(input)) {
+    const STAY_TO_VISIT = { stay: 'visit', stays: 'visits', stayed: 'visited', staying: 'visiting' };
+    input = String(input).replace(/\bstay(?:s|ed|ing)?\b/gi, (w) => STAY_TO_VISIT[w.toLowerCase()]);
+  }
   // RULE-053 (2026-10-20): isolated `today` is the base Da·al; the -o form is
   // for event sentences only. Handled here, not as a data pin, because a pin
   // would leak into sentence composition.

@@ -79273,7 +79273,7 @@
     "garo": "roa",
     "pos": "v.",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): `roa` = to stay / to visit / to hang around (one root, three senses. Keyed `stay (alt, roa)` so the existing `stay` = `donga` sentence behaviour is unchanged: a plain `to stay` key made `Ua Dak·ako ka·gija` switch from `dongaha` to `roaha` (engine test 605). Which of `donga` / `roa` is primary for which sense needs a native/PO ruling)",
+    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): NV-193 ruling (PO, 2026-10-24): `roa` = stay in the visit / spend-time / vacation / hang-around sense; `donga` = stay in the exist / be present / reside sense (default). Engine routes `stay` to the visit verb only on an explicit temporary-visit cue (translationEngine.js); the existing `stay` = `donga` is the default.",
     "confidence": "verified_high"
   },
   {
@@ -79308,10 +79308,17 @@
     "confidence": "verified_high"
   },
   {
-    "english": "eaten",
+    "english": "eaten (alt, formal)",
     "garo": "cha·aha",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): strict-map: perfective 'eaten' takes `-aha`, same as simple past. PRIMARY for bare `eaten`. CONFLICT FLAGGED: `cha·jok` (NV-095, NV-093 alt perfective) and `cha·manaha`/`cha·manjok` (NV-097) stay as verified variants, not superseded; `have you eaten your lunch?` = `cha·jokma?` unchanged (NV-181)",
+    "notes": "variant/VERIFIED/HIGH — NV-192 (2026-10-23) then NV-193 ruling (2026-10-24, Project Owner, not a native quote): `cha·aha` is the formal simple-past form of 'eaten'; `cha·jok` stays PRIMARY for 'eaten' (perfective / completive, NV-180). 'ate' (simple past) = `cha·aha` primary. Keyed as an alt so it does not tie with `cha·jok`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i will stay here",
+    "garo": "Anga iano donggen.",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — NV-193 (2026-10-24, Project Owner ruling example in chat, not a native quote): `donga` = physical presence; the locative adverb `iano` takes no `-ko` here (the engine's `Anga ianoko donggen` was wrong).",
     "confidence": "verified_high"
   }
 ]

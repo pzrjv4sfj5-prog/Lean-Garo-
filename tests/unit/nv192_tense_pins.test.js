@@ -9,7 +9,7 @@ const cases = [
   ['cooked', 'song·aha'],
   ['smiled', 'ka·dingsmitaha'],
   ['I ate', 'Anga cha·aha'],
-  ['eaten', 'cha·aha'],
+  ['eaten', 'cha·jok'], // NV-193 ruling reverses the NV-192 strict-map
   ['I ate rice', 'Anga mi cha·aha'],
   ['How many years has your stay there been?', 'Na·a uano roa badita bilsi ong·aha?'],
   ['to visit', 'roa'],
