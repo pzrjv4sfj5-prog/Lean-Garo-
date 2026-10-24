@@ -79267,5 +79267,51 @@
     "category": "general",
     "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): `Am` = ok / acknowledgment (same as `okay`).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "stay (alt, roa)",
+    "garo": "roa",
+    "pos": "v.",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): `roa` = to stay / to visit / to hang around (one root, three senses. Keyed `stay (alt, roa)` so the existing `stay` = `donga` sentence behaviour is unchanged: a plain `to stay` key made `Ua Dak·ako ka·gija` switch from `dongaha` to `roaha` (engine test 605). Which of `donga` / `roa` is primary for which sense needs a native/PO ruling)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to visit",
+    "garo": "roa",
+    "pos": "v.",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): same root as `to stay`",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to hang around",
+    "garo": "roa",
+    "pos": "v.",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): same root as `to stay`",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to be",
+    "garo": "ong·a",
+    "pos": "v.",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): root `ong·a` = to be; its past `ong·aha` maps the English 'has been' state. Existing `be` = `Ong.bo` and the unverified `ong·a` = exist/equivalent rows are unchanged",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "how many years has your stay there been?",
+    "garo": "Na·a uano roa badita bilsi ong·aha?",
+    "category": "sentences",
+    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): uses the past `ong·aha` for 'has been'; `roa` = stay",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eaten",
+    "garo": "cha·aha",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-192 (2026-10-23, Project Owner directive in chat, relayed as native-verified; raw native message not on file, not a native quote): strict-map: perfective 'eaten' takes `-aha`, same as simple past. PRIMARY for bare `eaten`. CONFLICT FLAGGED: `cha·jok` (NV-095, NV-093 alt perfective) and `cha·manaha`/`cha·manjok` (NV-097) stay as verified variants, not superseded; `have you eaten your lunch?` = `cha·jokma?` unchanged (NV-181)",
+    "confidence": "verified_high"
   }
 ]

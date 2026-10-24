@@ -13,7 +13,7 @@ Examples: 110 | runtime matches rule: 76 (69%) | orphan (in no entry layer): 14 
 | RULE-017 | does not | cha·ja | does not | passthrough | 0 |
 | RULE-020 | she | Ua an·tangni kamko dakjaha | Ua | phrase-map | 0.99 |
 | RULE-023 | will be strong | bilakgen | Bilaka | sov-assembly | 0.75 |
-| RULE-026 | has eaten | cha·manaha | donga cha·jok | sov-assembly | 0.75 |
+| RULE-026 | has eaten | cha·manaha | donga cha·aha | sov-assembly | 0.75 |
 | RULE-027 | did you go to the market yesterday? | na·a mijalo anti re·angama? | Mijalo na·a bajalchi re·ahama? | grammar-assembly | 0.82 |
 | RULE-028 | ate | cha·manaha | Cha·aha | correction | 1 |
 | RULE-030 | I will not go | Re·jawa | Anga re·jawa | correction | 1 |

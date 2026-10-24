@@ -4086,5 +4086,10 @@
   "to lift": "body",
   "that (default)": "general",
   "that (far/there, distance emphasised)": "general",
-  "ok": "general"
+  "ok": "general",
+  "stay (alt, roa)": "general",
+  "to visit": "general",
+  "to hang around": "general",
+  "to be": "general",
+  "how many years has your stay there been?": "sentences"
 }

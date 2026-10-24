@@ -7912,3 +7912,19 @@ Project Owner directive in chat (no transcript; not a native quote), following t
 1. **`yes (alt)` = `Am` superseded** (was verified_high from the 2026-08-22 relay, flagged as contradicting `yes` = `Oe`). Consistent with NV-190: `yes` = `Oe`, `Am` = ok / okay. Row retained as superseded. No sentence row, rule or override used `Am` for yes (audit clean). `yes (alt)` now falls through to morphology (`Oe [UNKNOWN]`); harmless.
 2. **`carpet` = `Am` confirmed** by the PO as a homograph of `Am` = ok. Note added; confidence unchanged (unverified). The PO's wording "Am(n)" is unclear (noun marker? separate form?); not applied, awaiting clarification.
 3. **Stale `i love you` fixed** (NV-190 leftover, Rule 8): `phrase_maps.js` `i love you` = `Anga nang·na ka·saa` (was `Ang·a nangna kasa·a.`), matching `corrections.json` and runtime. No behaviour change.
+
+## NV-192 (2026-10-23, Project Owner directive: tense pins, `roa` / `ong·a` roots, `eaten` strict-map, object incorporation)
+
+Relayed as native-verified in chat (raw message not on file, not a native quote). Conditional directive: implement only what is missing.
+
+**Already present (no change):** `song·a` = to cook, `ka·dingsmita` = to smile, `cooking` = `song·enga`, `cooked` = `song·aha`, `smiled` = `ka·dingsmitaha`, `I ate` = `Anga cha·aha`, `I ate rice` = `Anga mi cha·aha` (NV-089).
+
+**Implemented:**
+1. `roa` added as `stay (alt, roa)`, `to visit`, `to hang around`. **Deviation:** a plain `to stay` key switched `Ua Dak·ako ka·gija` from `dongaha` to `roaha` (engine test 605), so the stay sense is keyed as an alt and `stay` = `donga` is unchanged. Needs a native/PO ruling on which of `donga` / `roa` is primary for which sense.
+2. `ong·a` added as `to be` (the existing `ong·a` rows were only unverified exist / equivalent; `be` = `Ong.bo` unchanged).
+3. Pin `how many years has your stay there been?` = `Na·a uano roa badita bilsi ong·aha?`.
+4. `eaten` = `cha·aha` is now the shipped primary (`corrections.json` + new verified row). **Conflict flagged:** this differs from NV-095 / NV-093 `cha·jok` and NV-097 `cha·manaha` / `cha·manjok`, which stay as verified variants (not superseded). `have you eaten your lunch?` = `cha·jokma?` (NV-181) is unchanged. `irregular_verbs.json` `eaten` = `cha·jok` is unchanged (engine test pins it), so that table now differs from the bare `eaten` output.
+5. Tests: `tests/unit/nv192_tense_pins.test.js`.
+
+**Object incorporation (`-ko` drop):** `I ate rice` = `Anga mi cha·aha` was already pinned. No general engine rule was added: `I eat rice` still gives `Anga miko Cha·a` and `I ate fish` gives `Anga na·tokko Cha·aha`, because only the `mi` + `cha·` pair has native evidence. Handoff for Claude B: `docs/CLAUDE_B_HANDOFF_20261023_object_incorporation.md`.
+
