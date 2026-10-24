@@ -7936,3 +7936,11 @@ Project Owner rulings in chat (not native quotes), resolving the two NV-192 flag
 2. **`eaten` = `cha·jok` primary** (perfective / completive, NV-180); `ate` = `cha·aha` primary. The NV-192 `eaten` = `cha·aha` strict-map is reversed: that row is now `eaten (alt, formal)` and `corrections.json` `eaten` = `cha·jok`. `cha·manaha` / `cha·manjok` unchanged.
 Tests: `tests/unit/nv193_stay_eaten_rulings.test.js` (NV-192 `eaten` case updated).
 
+## NV-194 (2026-10-24, Project Owner ruling: NV-158 is final for past wh-questions; NV-182 conflict closed)
+
+Project Owner ruling in chat (not a native quote), with the NV-158 native transcript re-pasted (Thangseng, 2026-09-19, 8:06-8:07 pm): `Who ate?` = `sawa cha.a?`, `What did you eat?` = `na.a maiko cha.a?`, `Where did you eat?` = `Na.a bano cha.a?`, `Why did you eat?` = `na.a maina cha'a?`, `How did you eat?` = `Na'a maidake cha.a?`, `Which food did you eat?` = `Na'a badia cha.aniko cha.a?`.
+1. **Bare `-a` is primary for past wh-questions.** `what did you eat?` primary = `Na·a maiko cha·a?` (the NV-158 row). The NV-121 `Na·a maiko cha·aha?` is kept as `what did you eat? (alt, -aha)`, a variant, not superseded.
+2. **`How much did you eat?` = `Na·a badita cha·a?`** (by analogy with the six NV-158 forms; restores the NV-181 pin). The NV-182 `cha·aha` pin and the `bang·e` variant are kept as `(alt, -aha)` / `(alt, bang·e)`. NV-182's reasoning ("`-a` is present only") is overruled.
+3. **Claude B directive rescinded:** "never default to bare `-a` in `did` questions" no longer holds for wh-questions (see `docs/HANDOFF_CLAUDE_B_20261021_past_interrogative_aha.md`). Non-wh simple past is unchanged: `I ate` = `Anga cha·aha`, `Did you eat?` = `Na·a Cha·ahama?`.
+Tests: `tests/unit/nv194_wh_past_bare_a.test.js`; NV-181 `how much` case updated.
+

@@ -3799,7 +3799,7 @@
   "i can work": "phrases",
   "i had gone to you (recently)": "sentences",
   "who came?": "sentences",
-  "what did you eat?": "sentences",
+  "what did you eat? (alt, -aha)": "sentences",
   "where did you go?": "sentences",
   "which one did you take?": "sentences",
   "two people": "general",
@@ -4021,7 +4021,7 @@
   "building (verb, continuous)": "phrases",
   "shower (verb, continuous)": "phrases",
   "who ate?": "questions",
-  "what did you eat? (bare, no -aha)": "questions",
+  "what did you eat?": "questions",
   "where did you eat?": "questions",
   "why did you eat?": "questions",
   "how did you eat?": "questions",
@@ -4071,7 +4071,8 @@
   "the end": "general",
   "in order that": "general",
   "come on, practice speaking!": "culture",
-  "how much did you eat?": "sentences",
+  "how much did you eat? (alt, -aha)": "sentences",
+  "how much did you eat? (alt, bang·e)": "sentences",
   "heed advice": "general",
   "to heed advice": "general",
   "confess": "general",
@@ -4093,5 +4094,6 @@
   "to be": "general",
   "how many years has your stay there been?": "sentences",
   "eaten (alt, formal)": "general",
-  "i will stay here": "sentences"
+  "i will stay here": "sentences",
+  "how much did you eat?": "sentences"
 }

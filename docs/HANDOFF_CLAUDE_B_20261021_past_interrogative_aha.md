@@ -1,3 +1,5 @@
+**RESCINDED 2026-10-24 (NV-194, Project Owner):** NV-158 (direct native transcript) is final. Past wh-questions take bare `-a` (`Na·a maiko cha·a?`, `Na·a badita cha·a?`). Do not implement the rule below for wh-questions. Non-wh simple past is unaffected.
+
 # Handoff to Claude B, 2026-10-21 (Claude A, NV-182)
 
 Source: Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote.
