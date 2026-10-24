@@ -20,3 +20,10 @@ Evidence-first, never infer linguistic facts; engine-only unless PO directs; tes
 ## Exact next step
 1. Clone, `npm ci`, `git log`, read `.ai/WORKSTATE.yaml` `claude_b.next_action`, re-run the gate.
 2. Pick up Claude A's answers on the items above; do not touch did-questions or wh+aux without a PO ruling.
+
+## Addendum (close, same day) — resynced onto origin/main 3dd6a7a
+- Drift: Claude A NV-191..NV-194 only (data + one narrow engine edit). Read `CLAUDE_A_TO_B_SYNC_20261024.md`.
+- Gate (no runtime sweep, per PO): unit 693/693, dictionary 8939/8939, repository-intelligence 0 new, resync 0, conformance 76/110 0 unbaselined, vite build ok.
+- Closed: NV-193 `stay`→`roa` cue router reviewed and accepted as-is; did-questions hold resolved by NV-194 (NV-158 final, bare `-a` in past wh-questions; NV-182 directive rescinded); `.ai/WORKSTATE.yaml` stale `claude_b.next_action` replaced and 6 duplicate mapping keys renamed `_dupN` (strict YAML parse clean).
+- Still open, not B's call: donga/roa outside cue list, `-ko` on locatives, `kina·chak·a` spelling, `Haiwa` triggers, `Ia`+noun, `that` predicate uses, `kam ka·na` vs `dakna`, `May I` pro-drop.
+- PAT was pasted in chat again: PO to rotate. Used inline for the push only; not stored.
