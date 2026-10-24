@@ -16135,11 +16135,11 @@
   {
     "english": "carpet",
     "garo": "Am",
-    "pos": null,
+    "pos": "n.",
     "category": "uncategorized",
     "classifier": null,
-    "notes": "Project Owner-confirmed 2026-10-23 (chat, no transcript): `Am` also = carpet (homograph of `Am` = ok/okay); '(n)' qualifier in the PO's wording not yet clarified.",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-191 (2026-10-23, Project Owner directive in chat, not a native quote): `Am(n)` = carpet, read as `Am` (noun) = carpet, a homograph of `Am` = ok / okay (NV-190).",
+    "confidence": "verified_high"
   },
   {
     "english": "child",

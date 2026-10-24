@@ -7927,4 +7927,5 @@ Relayed as native-verified in chat (raw message not on file, not a native quote)
 5. Tests: `tests/unit/nv192_tense_pins.test.js`.
 
 **Object incorporation (`-ko` drop):** `I ate rice` = `Anga mi cha·aha` was already pinned. No general engine rule was added: `I eat rice` still gives `Anga miko Cha·a` and `I ate fish` gives `Anga na·tokko Cha·aha`, because only the `mi` + `cha·` pair has native evidence. Handoff for Claude B: `docs/CLAUDE_B_HANDOFF_20261023_object_incorporation.md`.
+4. **`Am(n)` clarified (PO, 2026-10-23):** `Am(n)` = carpet. Read `(n)` as the noun marker: `carpet` = `Am`, `pos` n., now verified_high (PO directive, not a native quote). Supersedes the 'wording unclear' note in item 2 above.
 
