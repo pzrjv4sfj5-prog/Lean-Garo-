@@ -24130,8 +24130,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-206 (2026-10-25): Project Owner supplied belly=Ok; consistent with NV-080 where native-confirmed 'stomach'=Ok and bik·ma was not selected. Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "belong",
@@ -44749,8 +44749,8 @@
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-206 (2026-10-25): spelling variant of the same sense; Project Owner supplied 'Ok saa' (no raka). Project Owner-relayed, not a native quote. Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "stool",
@@ -79639,5 +79639,50 @@
     "pos": "pr.",
     "notes": "variant/VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `bisong` is a direct synonym of `uamang` ('they'); valid generative output, not the default.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "belly",
+    "garo": "Ok",
+    "pos": "n.",
+    "category": "body",
+    "classifier": null,
+    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "stomach ache",
+    "garo": "Ok saa",
+    "pos": "n.",
+    "category": "health",
+    "classifier": null,
+    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Existing unverified 'ok sa·a' / 'Ok·saa' rows for the same sense differ in spelling; not reconciled, awaiting Owner ruling.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "to rumble",
+    "garo": "Ok gam·a",
+    "pos": "v.",
+    "category": "health",
+    "classifier": null,
+    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Stomach rumbling. Same form as T's 'to grumble' sense.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "to grumble",
+    "garo": "Ok gam·a",
+    "pos": "v.",
+    "category": "health",
+    "classifier": null,
+    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Stomach grumbling. Same form as T's 'to rumble' sense. Distinct from superseded 'call'=ok·gam·a (NV-041).",
+    "confidence": "unverified"
+  },
+  {
+    "english": "windiness due to gases",
+    "garo": "Okdita",
+    "pos": "n.",
+    "category": "health",
+    "classifier": null,
+    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified.",
+    "confidence": "unverified"
   }
 ]

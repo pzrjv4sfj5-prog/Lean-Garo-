@@ -4130,5 +4130,9 @@
   "it is he": "general",
   "it is she": "general",
   "that it is": "general",
-  "it is it": "general"
+  "it is it": "general",
+  "belly": "body",
+  "to rumble": "health",
+  "to grumble": "health",
+  "windiness due to gases": "health"
 }
