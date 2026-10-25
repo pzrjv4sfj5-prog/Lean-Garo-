@@ -23,7 +23,7 @@ test('NV-198: adjectives / unrelated forms are not captured', async () => {
     const g = (await translate(en)).garo;
     assert.ok(!/haiwa/i.test(g) && !/^(Ia|Ua) /.test(g), `${en} -> ${g}`);
   }
-  assert.ok(!/haiwa/i.test((await translate('that is far away')).garo));
+  // NV-201: `that is far away` is now Haiwa by PO ruling (see nv201_haiwa_distal.test.js).
 });
 test('NV-198: prior NV-189 rows unchanged', async () => {
   assert.equal((await translate('that house is very big')).garo, 'Ua nok namen dal·a.');

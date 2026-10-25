@@ -17,8 +17,9 @@ test('NV-189: exact rows unchanged', async () => {
   assert.equal((await translate('give me that')).garo, 'Iako angna on·bo');
   assert.equal((await translate('who is that')).garo, 'Ua sawa?');
 });
-test('NV-189: no guessed Haiwa, no leakage to this/that one', async () => {
-  for (const en of ['that dog over there','that is far away','that far','that one','this dog','I see that dog']) {
+// NV-201 supersedes: `that is far away` etc. now -> Haiwa (see nv201_haiwa_distal.test.js).
+test('NV-189: no guessed Haiwa (non-far cues), no leakage to this/that one', async () => {
+  for (const en of ['that dog over there','that far','that one','this dog','I see that dog']) {
     const g = (await translate(en)).garo;
     assert.ok(!/haiwa/i.test(g), `${en} -> ${g}`);
   }

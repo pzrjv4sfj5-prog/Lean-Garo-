@@ -1348,6 +1348,27 @@ export function tryThatNounConstruction(input) {
   return `${dem(m[1])} ${noun}`;
 }
 
+// NV-201 (2026-10-25, PO ruling "Haiwa = when the object is very far or far
+// away", a ruling NOT a native quote): distal demonstrative. Design: emit
+// Haiwa ONLY when the English states the distance outright (far / very far /
+// far away / faraway) about a `that` object; every other `that` stays Ua
+// (NV-189/198). Not triggers: `this`, `over there`, `yonder`, bare `that far`
+// (= to that extent), `it/the X is far`. Position mirrors attested `Ua NOUN`;
+// Garo has no copula so `that is far away` -> bare `Haiwa`.
+const HAIWA_FAR = '(?:very\\s+)?(?:far(?:\\s+away)?|faraway)';
+export function tryHaiwaDistalConstruction(input) {
+  const raw = String(input).trim().replace(/[?.!]+$/, '');
+  if (new RegExp(`^that\\s+(?:is\\s+|one\\s+(?:is\\s+)?)${HAIWA_FAR}$`, 'i').test(raw)) return 'Haiwa';
+  const m = raw.match(new RegExp(`^that\\s+${HAIWA_FAR}\\s+([a-z]+)$`, 'i'))
+    || raw.match(new RegExp(`^that\\s+([a-z]+)\\s+is\\s+${HAIWA_FAR}$`, 'i'));
+  if (!m) return null;
+  const w = m[1].toLowerCase();
+  if (THAT_NOUN_DENY.has(w) || isKnownAdjectiveEnglish(w) || PRONOUN_MAP[w]) return null;
+  const noun = lookupGaro(w, 'n.');
+  if (!noun || /\[UNKNOWN\]/.test(noun)) return null;
+  return `Haiwa ${noun}`;
+}
+
 // NV-199 (2026-10-25, PO ruling "rice is there = Mi donga", not a native quote):
 // existential `there is/are NOUN` and `NOUN is/are there` -> `NOUN donga`
 // (donga = to exist; same shape as attested "...guang donga" in corrections.json).
