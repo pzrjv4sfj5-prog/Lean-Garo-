@@ -547,7 +547,16 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   const locativeBareWithDonga = !!(grammar.object && grammar.verb &&
     String(grammar.object.garo).toLowerCase() === 'iano' &&
     /^dong/i.test(String(grammar.verb.garo || '')));
-  const objMarker = isPossessionConstruction ? '' : (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked || grammar.purposeAction || locativeBareWithDonga) ? '' : 'ko'; // NV-180: -ko attaches directly, no artificial raka
+  // NV-200 (2026-10-25, PO submission + grammar logic, not a native quote):
+  // with a motion verb (go/come) `there`/`here` are directional, Uchi / Iachi
+  // ("to that/this place"), bare, instead of Uano/Iano + ko. Static verbs
+  // (stay/eat/...) are untouched. Non-negative clauses only.
+  const DIRECTIONAL_ADV = { uano: 'Uchi', iano: 'Iachi' };
+  const directionalAdv = (grammar.object && grammar.verb && !grammar.isNegative &&
+    /^(go|goes|going|went|gone|come|comes|coming|came)$/i.test(String(grammar.verb.english || '')))
+    ? DIRECTIONAL_ADV[String(grammar.object.garo).toLowerCase()] : null;
+  if (directionalAdv) grammar.object.garo = directionalAdv;
+  const objMarker = directionalAdv ? '' : isPossessionConstruction ? '' : (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked || grammar.purposeAction || locativeBareWithDonga) ? '' : 'ko'; // NV-180: -ko attaches directly, no artificial raka
   if (grammar.possessive && grammar.object) {
     const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
     parts.push(grammar.possessive.garo + ' ' + objText + objMarker);

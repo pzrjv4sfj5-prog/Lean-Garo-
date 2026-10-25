@@ -79507,5 +79507,68 @@
     "classifier": null,
     "confidence": "unverified",
     "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Ua (int.) = an expression of surprise; distinct from Ua (pr.) he/she/it/that."
+  },
+  {
+    "english": "to that place",
+    "garo": "Uchi",
+    "pos": "adv.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): Uchi (adv) = there; to that place. Ua elides -a before -chi (Ua+chi=Uchi); Ia keeps it (Iachi)."
+  },
+  {
+    "english": "there (direction)",
+    "garo": "Uchi",
+    "pos": "adv.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): "
+  },
+  {
+    "english": "that side",
+    "garo": "Uchipak",
+    "pos": "adv.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): Uchipak (adv) = that side; that way; towards that. Pairs with Iachipak = this side."
+  },
+  {
+    "english": "that way",
+    "garo": "Uchipak",
+    "pos": "adv.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): "
+  },
+  {
+    "english": "towards that",
+    "garo": "Uchipak",
+    "pos": "adv.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): "
+  },
+  {
+    "english": "to them",
+    "garo": "Uamangna",
+    "pos": "pr.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): PO: Uamangna = to them or them."
+  },
+  {
+    "english": "him / her / it (accusative, alt)",
+    "garo": "Uako",
+    "pos": "pr.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): PO: Uako is the same as Uko (accusative). Primary uko unchanged."
   }
 ]

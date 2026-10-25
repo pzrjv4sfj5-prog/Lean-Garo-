@@ -41,3 +41,9 @@ Evidence-first, never infer linguistic facts; engine-only unless PO directs; tes
 - Shipped: 14 unverified master rows; existential `X donga` rule (tests `nv199_ia_ua_paradigm.test.js`). Not inferred: Uachi, Uachipak, Uanoni, Uantok, Iakai.
 - Open for A/PO: `Uako (pr)=Sane` gloss; Uamangchi 'to them'; promote rows on Thangseng confirmation.
 - Gate: unit 743/743, dictionary ok, repo-intel 0 new, resync 0, conformance 76/110 0 unbaselined, vite ok.
+
+## Addendum 4 (2026-10-25): NV-200 Uchi / Uchipak / Uko
+- PO: Uamangna = to them / them; Uamangchi = by them; Uako = Uko (acc. him/her/it); Uchi (adv) = there / to that place; Uchipak = that side/way/towards (Iachipak = this side).
+- Morphology: Ua elides -a before -chi, -chipak, -ko (Uchi, Uchipak, Uko; Uako the unelided variant); Ia keeps it (Iachi, Iachipak). Uano, Uakai, Uamang keep -a.
+- Engine: go/come + there/here -> Uchi/Iachi (bare, non-negative only); `I see it` already `uko` (verified). Tests `nv200_directional_uchi_iachi.test.js`.
+- Not generated: Uachi, Uachipak, Uanoni, Uantok, Iakai. Negative motion clauses not covered.
