@@ -13,7 +13,7 @@ Before starting work, agents should read the role-specific live audit handoff:
 
 These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
 
-_Read this first, before `.ai/WORKSTATE.yaml`. Last updated: 2026-09-29 by
+_Read this first, before `.ai/WORKSTATE.yaml`. Latest Claude A close: 2026-10-25B, docs/CLAUDE_A_SESSION_MIGRATION_20261025B.md (NV-207/208, verb paradigm gap report) — READ IT FIRST. Previous update line: 2026-09-29 by
 Claude B (donga/ong·a convergent merge + AI-003 fix + fuzzyMatch perf fix).
 Full migration doc: docs/CLAUDE_B_SESSION_MIGRATION_20260929.md — READ IT
 FIRST, this line is just a pointer. Summary: fresh PAT clone, resumed via
