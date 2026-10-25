@@ -19,7 +19,8 @@ test('NV-189: exact rows unchanged', async () => {
 });
 // NV-201 supersedes: `that is far away` etc. now -> Haiwa (see nv201_haiwa_distal.test.js).
 test('NV-189: no guessed Haiwa (non-far cues), no leakage to this/that one', async () => {
-  for (const en of ['that dog over there','that far','that one','this dog','I see that dog']) {
+  // NV-202 (PO ruling 2026-10-25): `that dog over there` now gives Haiwa, removed from this list.
+  for (const en of ['that far','that one','this dog','I see that dog']) {
     const g = (await translate(en)).garo;
     assert.ok(!/haiwa/i.test(g), `${en} -> ${g}`);
   }

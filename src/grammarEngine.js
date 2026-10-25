@@ -1352,15 +1352,21 @@ export function tryThatNounConstruction(input) {
 // away", a ruling NOT a native quote): distal demonstrative. Design: emit
 // Haiwa ONLY when the English states the distance outright (far / very far /
 // far away / faraway) about a `that` object; every other `that` stays Ua
-// (NV-189/198). Not triggers: `this`, `over there`, `yonder`, bare `that far`
+// (NV-189/198). NV-202 (2026-10-25, PO ruling \"over there / yonder signify
+// something far\", not a native quote): `over there` / `yonder` about a `that`
+// object are far-cues too. Not triggers: `this`, bare `that far`
 // (= to that extent), `it/the X is far`. Position mirrors attested `Ua NOUN`;
 // Garo has no copula so `that is far away` -> bare `Haiwa`.
 const HAIWA_FAR = '(?:very\\s+)?(?:far(?:\\s+away)?|faraway)';
+const HAIWA_LOC = '(?:over\\s+there|yonder)';
 export function tryHaiwaDistalConstruction(input) {
   const raw = String(input).trim().replace(/[?.!]+$/, '');
   if (new RegExp(`^that\\s+(?:is\\s+|one\\s+(?:is\\s+)?)${HAIWA_FAR}$`, 'i').test(raw)) return 'Haiwa';
+  if (new RegExp(`^that\\s+(?:one\\s+)?(?:is\\s+)?${HAIWA_LOC}$`, 'i').test(raw)) return 'Haiwa';
   const m = raw.match(new RegExp(`^that\\s+${HAIWA_FAR}\\s+([a-z]+)$`, 'i'))
-    || raw.match(new RegExp(`^that\\s+([a-z]+)\\s+is\\s+${HAIWA_FAR}$`, 'i'));
+    || raw.match(new RegExp(`^that\\s+([a-z]+)\\s+is\\s+${HAIWA_FAR}$`, 'i'))
+    || raw.match(new RegExp(`^that\\s+yonder\\s+([a-z]+)$`, 'i'))
+    || raw.match(new RegExp(`^that\\s+([a-z]+)\\s+(?:is\\s+)?${HAIWA_LOC}$`, 'i'));
   if (!m) return null;
   const w = m[1].toLowerCase();
   if (THAT_NOUN_DENY.has(w) || isKnownAdjectiveEnglish(w) || PRONOUN_MAP[w]) return null;
