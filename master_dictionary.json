@@ -78920,7 +78920,7 @@
     "english": "heed advice",
     "garo": "kina·chak·a",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): kina·chak·a = to listen, to heed advice. Spelling as given (one raka); the earlier uncited agree row was kin·a·chak·a (three-part). Spelling to be confirmed.",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): kina·chak·a = to listen, to heed advice. Spelling as given (one raka); the earlier uncited agree row was kin·a·chak·a (three-part). Spelling CONFIRMED NV-195 (2026-10-25, Project Owner ruling, not a native quote): `kina·chak·a` is the canonical form; `kin·a·chak·a` is superseded.",
     "confidence": "verified_high"
   },
   {
@@ -79326,6 +79326,27 @@
     "garo": "Na·a badita cha·a?",
     "category": "sentences",
     "notes": "VERIFIED/HIGH — NV-194 (2026-10-24, Project Owner ruling in chat, not a native quote): NV-158 (direct native transcript) is the final verdict for past wh-questions; bare `-a` is primary. Applied by analogy to the six NV-158 wh-questions (`badita` = how much); restores the NV-181 pin that NV-182 had replaced. `cha·aha` and `bang·e ... cha·aha` kept as alternates.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to have",
+    "garo": "donga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-195 (2026-10-25, Project Owner ruling in chat, not a native quote): `donga` = to have / to exist / to lodge. The ruling listed 'to exist' twice; recorded once, no further sense inferred.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to exist",
+    "garo": "donga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-195 (2026-10-25, Project Owner ruling in chat, not a native quote): `donga` = to have / to exist / to lodge. The ruling listed 'to exist' twice; recorded once, no further sense inferred.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to lodge",
+    "garo": "donga",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-195 (2026-10-25, Project Owner ruling in chat, not a native quote): `donga` = to have / to exist / to lodge. The ruling listed 'to exist' twice; recorded once, no further sense inferred.",
     "confidence": "verified_high"
   }
 ]

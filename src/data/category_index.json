@@ -4095,5 +4095,8 @@
   "how many years has your stay there been?": "sentences",
   "eaten (alt, formal)": "general",
   "i will stay here": "sentences",
-  "how much did you eat?": "sentences"
+  "how much did you eat?": "sentences",
+  "to have": "general",
+  "to exist": "general",
+  "to lodge": "general"
 }

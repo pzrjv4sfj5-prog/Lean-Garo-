@@ -7944,3 +7944,11 @@ Project Owner ruling in chat (not a native quote), with the NV-158 native transc
 3. **Claude B directive rescinded:** "never default to bare `-a` in `did` questions" no longer holds for wh-questions (see `docs/HANDOFF_CLAUDE_B_20261021_past_interrogative_aha.md`). Non-wh simple past is unchanged: `I ate` = `Anga cha·aha`, `Did you eat?` = `Na·a Cha·ahama?`.
 Tests: `tests/unit/nv194_wh_past_bare_a.test.js`; NV-181 `how much` case updated.
 
+## NV-195 (2026-10-25, Project Owner rulings on open items 1-3)
+
+Project Owner rulings in chat (not native quotes). Raw text: "1.kina·chak·a 2. iano 3. donga=to have/to exist/to lodge/to exist".
+1. **Spelling:** `kina·chak·a` is canonical (= listen / heed advice, NV-182). The three-part `kin·a·chak·a` rows stay superseded. Assumed reading: the PO gave the spelling to keep; no new sense added.
+2. **`iano` bare with `donga`:** `we stay here` = `An·ching iano donga`, `Do you stay here?` = `Na·a iano dongama?`, `they live here` = `Uamang iano donga`. Engine: the default `-ko` is dropped for `iano` when the verb is a `donga` form (`sentenceBuilder.js`). **Not generalized:** `uano` (`I stay there` still `uanoko donga`) and `iano` with other verbs (`I ate here` still `ianoko`) have no ruling.
+3. **`donga` senses:** `to have`, `to exist`, `to lodge` = `donga` (master rows verified_high per PO; `corrections.json` pins). The ruling listed `to exist` twice; recorded once, nothing inferred for the repeat (PO may have meant a different fourth sense). Bare `exist` = `ong·a` (unverified) unchanged.
+Tests: `tests/unit/nv195_iano_donga_rulings.test.js`.
+

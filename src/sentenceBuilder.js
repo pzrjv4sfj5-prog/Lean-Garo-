@@ -540,7 +540,14 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   // possessed object in "SUBJ has OBJECT" is bare — no accusative marker
   // — since the possessor, not the object, carries the case marking in
   // this existential construction. See comment at parts.push(subject).
-  const objMarker = isPossessionConstruction ? '' : (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked || grammar.purposeAction) ? '' : 'ko'; // NV-180: -ko attaches directly, no artificial raka
+  // NV-195 (2026-10-25, Project Owner ruling, not a native quote): the
+  // locative `iano` ("here") stays bare with `donga` ("stay/exist/reside").
+  // Scoped to exactly `iano` + a `donga` verb; `uano` / `anti` etc. are NOT
+  // ruled and are left on the existing default.
+  const locativeBareWithDonga = !!(grammar.object && grammar.verb &&
+    String(grammar.object.garo).toLowerCase() === 'iano' &&
+    /^dong/i.test(String(grammar.verb.garo || '')));
+  const objMarker = isPossessionConstruction ? '' : (grammar.object && grammar.object.isLocativeAdjunct) ? '·o' : (objAlreadyMarked || grammar.purposeAction || locativeBareWithDonga) ? '' : 'ko'; // NV-180: -ko attaches directly, no artificial raka
   if (grammar.possessive && grammar.object) {
     const objText = grammar.object.garo === '[UNKNOWN]' ? grammar.object.garo : grammar.object.garo.toLowerCase();
     parts.push(grammar.possessive.garo + ' ' + objText + objMarker);
