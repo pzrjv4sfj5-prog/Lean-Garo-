@@ -1,4 +1,4 @@
-// NV-207 (2026-10-25): Project Owner-supplied words (relayed, not native quotes; unverified):
+// NV-207 (2026-10-25): Project Owner-supplied words (relayed, not native quotes; Project Owner-confirmed verified, native dictionary):
 // belly = Ok; stomach ache = Ok saa (no raka); to rumble / to grumble = Ok gam·a;
 // windiness due to gases = Okdita. Older unverified belly=bik·ma and stomach ache=ok sa·a superseded.
 import test from 'node:test';

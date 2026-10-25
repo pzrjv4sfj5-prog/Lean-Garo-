@@ -79646,8 +79646,8 @@
     "pos": "n.",
     "category": "body",
     "classifier": null,
-    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified.",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-207 (2026-10-25): Project Owner-confirmed (chat) as verified against the native dictionary. Project Owner directive, not a Thangseng quote.",
+    "confidence": "verified_high"
   },
   {
     "english": "stomach ache",
@@ -79655,8 +79655,8 @@
     "pos": "n.",
     "category": "health",
     "classifier": null,
-    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Existing unverified 'ok sa·a' / 'Ok·saa' rows for the same sense differ in spelling; not reconciled, awaiting Owner ruling.",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-207 (2026-10-25): Project Owner-confirmed (chat) as verified against the native dictionary. Project Owner directive, not a Thangseng quote. Existing unverified 'ok sa·a' / 'Ok·saa' rows for the same sense differ in spelling; not reconciled, awaiting Owner ruling.",
+    "confidence": "verified_high"
   },
   {
     "english": "to rumble",
@@ -79664,8 +79664,8 @@
     "pos": "v.",
     "category": "health",
     "classifier": null,
-    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Stomach rumbling. Same form as T's 'to grumble' sense.",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-207 (2026-10-25): Project Owner-confirmed (chat) as verified against the native dictionary. Project Owner directive, not a Thangseng quote. Stomach rumbling. Same form as T's 'to grumble' sense.",
+    "confidence": "verified_high"
   },
   {
     "english": "to grumble",
@@ -79673,8 +79673,8 @@
     "pos": "v.",
     "category": "health",
     "classifier": null,
-    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Stomach grumbling. Same form as T's 'to rumble' sense. Distinct from superseded 'call'=ok·gam·a (NV-041).",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-207 (2026-10-25): Project Owner-confirmed (chat) as verified against the native dictionary. Project Owner directive, not a Thangseng quote. Stomach grumbling. Same form as T's 'to rumble' sense. Distinct from superseded 'call'=ok·gam·a (NV-041).",
+    "confidence": "verified_high"
   },
   {
     "english": "windiness due to gases",
@@ -79682,7 +79682,7 @@
     "pos": "n.",
     "category": "health",
     "classifier": null,
-    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified.",
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-207 (2026-10-25): Project Owner-confirmed (chat) as verified against the native dictionary. Project Owner directive, not a Thangseng quote.",
+    "confidence": "verified_high"
   }
 ]
