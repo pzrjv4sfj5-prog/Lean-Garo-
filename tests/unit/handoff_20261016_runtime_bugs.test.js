@@ -50,7 +50,7 @@ test('R8: constructed he/she output is deterministic (Ua); verified full-sentenc
     assert.ok((await translate(input)).garo.startsWith('Ua'), input);
   }
   // Native-confirmed whole phrase (corrections.json) keeps its cited form.
-  assert.equal((await translate('is he angry?')).garo, "Bia ka'o nangengama?");
+  assert.equal((await translate('is he angry?')).garo, "Bia ka·o nangengama?");
 });
 
 test('Item 8 / RULE-052: "slowly" is a bare adverb before the verb, never an -ko object; real objects survive', async () => {

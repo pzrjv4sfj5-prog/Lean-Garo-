@@ -4100,5 +4100,7 @@
   "to exist": "general",
   "to lodge": "general",
   "sneak": "general",
-  "slink": "general"
+  "slink": "general",
+  "what did you do yesterday?": "general",
+  "why did you avoid me yesterday?": "general"
 }

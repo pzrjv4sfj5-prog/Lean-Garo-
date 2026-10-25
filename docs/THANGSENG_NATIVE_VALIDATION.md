@@ -7962,3 +7962,25 @@ Two pasted blocks (a vocabulary/tense update and a typo correction). Provenance:
 3. From the earlier block, not yet applied: `uana` (repo has `uano`), `Bisong` vs verified `Uamang` for "they", `a'palo` vs `a·palo`, the `a·pal` / `a·palo` locative engine rule, `Anga asongboma?` for "Shall I sit?", `Why did they sit there?` pin (stale `a·songenga`), `What did you do yesterday?` (currently broken), saniba/sani/whose, and the scope of the contextual past-tense rule (recommend wh-questions only, per NV-194).
 Tests: `tests/unit/nv196_anga_joma_mikboka.test.js`.
 
+## NV-197 (2026-10-25, Thangseng raw reply relayed by the Project Owner; first raw native text for the tense question)
+
+Raw text as pasted (apostrophes are raka typos per the Project Owner, kept verbatim here):
+
+> What did you do?	Na·a maiko daka?	Maiko = what (object form)
+> What should I do?	Ang·a maiko dakgen?	Dakgen = will do / should do
+> The sentence itself is grammatically correct. The issue arises due to the fact that the English sentence is in past tense while the Garo translation is in Garo. However, it is also true that Garo  does not need the verb to be in the past form if the sense of the past is supplied by the use of time denoting word, such as mijalo (yesterday). For example, Na'a mijalo maiko daka? (note that the verb itself is in the normal/present form; however English does not function that way. What did you do yesterday? has the past did alongside yesterday.
+> In fact, if in the conversation the sense of the past event has been inform in the previous sentences. The a sentence such as "na'a maiko daka?" does not even require a word denoting past time. For example, Mijalo na'a maina angko gela? Na'a maiko daka? (why did you avoid me yesterday? What did you do?) Notice that the second sentence is grammatically in present tense in Garo, but it is translated as past (correctly) into English.
+> This is not a general rule. It may depend on the verb.
+
+Project Owner ruling (same message): `a'palo` is `a·palo` (typo); **convert all apostrophes to raka**.
+
+**Applied**
+- **Apostrophe to raka:** 100 master Garo rows and 6 `corrections.json` values (e.g. `a'ba` to `a·ba`, `A'bri` to `A·bri`, `ku'chil` to `ku·chil`, `a'palo` to `a·palo`, `a'a banggri·a` to `a·a banggri·a`). The English row `don't do` was left alone. Two old tests that guarded apostrophe words were updated to the new rule.
+- **Side effect:** the stale override `mountain: "A'bri"` became `A·bri` after conversion, matched the SUPERSEDED row, and was mechanically resynced to the native-confirmed `ha·bri` (NV-080). `mountain` now outputs `ha·bri`.
+- **Pins:** `What did you do?` verified_high; new `What did you do yesterday?` = `Na·a mijalo maiko daka?`; new `Why did you avoid me yesterday?` = `Mijalo na·a maina angko gela?`. Glosses: `maiko` = what (object form), `dakgen` = will do / should do.
+
+**Decisions**
+- The "contextual past tense" rule from the earlier AI-formatted block is **not adopted as general**. Thangseng says it is not a general rule and may depend on the verb. NV-194 (past wh-questions take bare `-a`) is unchanged; declaratives keep `-aha` (`Mijalo anga Cha·aha`).
+- **Unresolved:** his table row reads `Ang·a maiko dakgen?` and he calls the sentence grammatically correct, while NV-196 (Project Owner-relayed) says `Anga`. The table may be our own pin list rather than his spelling. The pin stays `Anga maiko dakgen?` and is NOT promoted to verified.
+- `a·pal` / `a·palo` locative rule (engine) still not implemented.
+Tests: `tests/unit/nv197_apostrophe_raka_native_tense.test.js`.

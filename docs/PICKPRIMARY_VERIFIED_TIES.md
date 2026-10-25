@@ -29,7 +29,7 @@ Claude A whenever there's time — same shape as the `answer`
 - `i can work`: candidates — `Anga kam ka·na ama`, `Anga kam ka·na man·a` — shipped: `Anga kam ka·na man·a`
 - `last`: candidates — `bon·kamgipa`, `ja·mangipa` — shipped: `ja·mangipa`
 - `leaf`: candidates — `bi·jak`, `bol·bi·jak` — shipped: `bol·bi·jak`
-- `outside`: candidates — `A·pal`, `a'palo` — shipped: `a'palo`
+- `outside`: candidates — `A·pal`, `a·palo` — shipped: `a·palo`
 - `she can cook`: candidates — `Ua Song·na ama.`, `Ua Song·na man·a.` — shipped: `Ua Song·na man·a.`
 - `the market is nearby`: candidates — `Bajalde sambaon`, `Bajalara sambaon`, `Bajal sambaon` — shipped: `Bajal sambaon`
 - `where (relative pronoun)`: candidates — `jeon`, `jeo` — shipped: `jeo`

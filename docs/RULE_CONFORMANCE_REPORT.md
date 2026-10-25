@@ -22,7 +22,7 @@ Examples: 110 | runtime matches rule: 76 (69%) | orphan (in no entry layer): 14 
 | RULE-030 | will go home now | nokchi re·anggen | Nok da·o re·anggen | sov-assembly | 0.75 |
 | RULE-030 | go to the market | Antichi re·angbo | Bajalchi re·angbo | correction | 1 |
 | RULE-033 | the dog is under the table. | Achak tebil nokkimao ong·a | Achak tebil kokkimao ong·a | correction | 1 |
-| RULE-037 | to take revenge | a'jak soka | a'jak sok·na | exact-phrase | 0.98 |
+| RULE-037 | to take revenge | a'jak soka | a·jak sok·na | exact-phrase | 0.98 |
 | RULE-038 | one person | manderang saksa | mande saksa | exact-phrase | 0.98 |
 | RULE-038 | four fruits | mewa rongbri | bite rongbri | exact-phrase | 0.98 |
 | RULE-044 | where? | Bao | Bano | sov-assembly | 0.75 |

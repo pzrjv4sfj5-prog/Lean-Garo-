@@ -6559,7 +6559,8 @@
     "english": "what did you do?",
     "garo": "Na·a maiko daka?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": " NV-197 (2026-10-25, Thangseng raw reply relayed by Project Owner): Thangseng: 'Maiko = what (object form)'; sentence grammatically correct; past sense supplied by context, not a general rule (verb-dependent)."
   },
   {
     "english": "what should i do?",
@@ -21974,7 +21975,7 @@
   },
   {
     "english": "Vagina",
-    "garo": "Si'i",
+    "garo": "Si·i",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -49312,7 +49313,7 @@
   },
   {
     "english": "avenger",
-    "garo": "a'jak sok·gipa",
+    "garo": "a·jak sok·gipa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -49330,7 +49331,7 @@
   },
   {
     "english": "axis of the earth",
-    "garo": "a'bi·brong",
+    "garo": "a·bi·brong",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49357,7 +49358,7 @@
   },
   {
     "english": "Barren land",
-    "garo": "a'ku·ro",
+    "garo": "a·ku·ro",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49375,7 +49376,7 @@
   },
   {
     "english": "beginner",
-    "garo": "a'ba·cheng·gipa",
+    "garo": "a·ba·cheng·gipa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -49384,7 +49385,7 @@
   },
   {
     "english": "Beginning",
-    "garo": "a'ba·cheng·a·ni",
+    "garo": "a·ba·cheng·a·ni",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -49402,7 +49403,7 @@
   },
   {
     "english": "blood blister",
-    "garo": "an'chi kam·a",
+    "garo": "an·chi kam·a",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -49411,7 +49412,7 @@
   },
   {
     "english": "blood vessel",
-    "garo": "an'chi ja'dil",
+    "garo": "an·chi ja·dil",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -49420,7 +49421,7 @@
   },
   {
     "english": "blue crystal bead necklace",
-    "garo": "a'bang·gi",
+    "garo": "a·bang·gi",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49429,7 +49430,7 @@
   },
   {
     "english": "Bodily impurities from pores of skin",
-    "garo": "an'chin·ek",
+    "garo": "an·chin·ek",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49438,7 +49439,7 @@
   },
   {
     "english": "bog",
-    "garo": "a'bel",
+    "garo": "a·bel",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49447,7 +49448,7 @@
   },
   {
     "english": "bottom of a field",
-    "garo": "a'ki·sang",
+    "garo": "a·ki·sang",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49456,7 +49457,7 @@
   },
   {
     "english": "boundary between two fields",
-    "garo": "a'mal",
+    "garo": "a·mal",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49483,7 +49484,7 @@
   },
   {
     "english": "Carnal, worldly, earthly",
-    "garo": "a'gil·sak·ni",
+    "garo": "a·gil·sak·ni",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49510,7 +49511,7 @@
   },
   {
     "english": "Cloudy",
-    "garo": "a'ki a'ki",
+    "garo": "a·ki a·ki",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -49555,7 +49556,7 @@
   },
   {
     "english": "Custom: widow may not remarry without husband's family permission",
-    "garo": "a'kim",
+    "garo": "a·kim",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49582,7 +49583,7 @@
   },
   {
     "english": "desert",
-    "garo": "a'gi·si",
+    "garo": "a·gi·si",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49600,7 +49601,7 @@
   },
   {
     "english": "Dry land",
-    "garo": "a'ging",
+    "garo": "a·ging",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49609,7 +49610,7 @@
   },
   {
     "english": "Dry, unfertile land",
-    "garo": "a'kak·ka·fek",
+    "garo": "a·kak·ka·fek",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49618,7 +49619,7 @@
   },
   {
     "english": "Dry/rocky/uneven land",
-    "garo": "a'ging",
+    "garo": "a·ging",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49636,7 +49637,7 @@
   },
   {
     "english": "earth",
-    "garo": "a'gil·sak",
+    "garo": "a·gil·sak",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49645,7 +49646,7 @@
   },
   {
     "english": "Earth, land, ground, soil",
-    "garo": "a'a",
+    "garo": "a·a",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49654,7 +49655,7 @@
   },
   {
     "english": "Earthen, of earth",
-    "garo": "a'a·ni",
+    "garo": "a·a·ni",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49663,7 +49664,7 @@
   },
   {
     "english": "earthquake",
-    "garo": "a'a banggri·a",
+    "garo": "a·a banggri·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -49690,7 +49691,7 @@
   },
   {
     "english": "end of the earth",
-    "garo": "a'ki·tik",
+    "garo": "a·ki·tik",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49744,7 +49745,7 @@
   },
   {
     "english": "Fallow land",
-    "garo": "a'gram",
+    "garo": "a·gram",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49762,7 +49763,7 @@
   },
   {
     "english": "Fertile land",
-    "garo": "a'be·en",
+    "garo": "a·be·en",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49771,7 +49772,7 @@
   },
   {
     "english": "field",
-    "garo": "a'ba",
+    "garo": "a·ba",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49780,7 +49781,7 @@
   },
   {
     "english": "field after the third year harvesting",
-    "garo": "a'jri·me·gap",
+    "garo": "a·jri·me·gap",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49789,7 +49790,7 @@
   },
   {
     "english": "Fine sand",
-    "garo": "an'cheng·smit",
+    "garo": "an·cheng·smit",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49852,7 +49853,7 @@
   },
   {
     "english": "hole in the ground",
-    "garo": "a'kel·ok",
+    "garo": "a·kel·ok",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49861,7 +49862,7 @@
   },
   {
     "english": "hole, a pit, a den, a cave, a lair",
-    "garo": "a'kol",
+    "garo": "a·kol",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49906,7 +49907,7 @@
   },
   {
     "english": "jurisdiction or territory of a nokma",
-    "garo": "a'king",
+    "garo": "a·king",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49915,7 +49916,7 @@
   },
   {
     "english": "Land elevated by debris or earth",
-    "garo": "a'gat·a",
+    "garo": "a·gat·a",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49924,7 +49925,7 @@
   },
   {
     "english": "Land left to become fallow",
-    "garo": "a'jri / a'jru",
+    "garo": "a·jri / a·jru",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -49933,7 +49934,7 @@
   },
   {
     "english": "Land tax",
-    "garo": "a'kim·il",
+    "garo": "a·kim·il",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49942,7 +49943,7 @@
   },
   {
     "english": "landslide",
-    "garo": "a'be·a",
+    "garo": "a·be·a",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -49987,7 +49988,7 @@
   },
   {
     "english": "Medium complexion",
-    "garo": "an'chi gnk",
+    "garo": "an·chi gnk",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -50014,7 +50015,7 @@
   },
   {
     "english": "Moss",
-    "garo": "a'ku·si·mang",
+    "garo": "a·ku·si·mang",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -50032,7 +50033,7 @@
   },
   {
     "english": "mound of earth",
-    "garo": "a'a thang·a",
+    "garo": "a·a thang·a",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -50068,7 +50069,7 @@
   },
   {
     "english": "narrow strip of land",
-    "garo": "a'jang·jot",
+    "garo": "a·jang·jot",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50086,7 +50087,7 @@
   },
   {
     "english": "New, unknown, strange",
-    "garo": "a'git·al",
+    "garo": "a·git·al",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50176,7 +50177,7 @@
   },
   {
     "english": "pass",
-    "garo": "a'git·ok",
+    "garo": "a·git·ok",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -50221,7 +50222,7 @@
   },
   {
     "english": "plain, a valley, a dale",
-    "garo": "a'ka·we",
+    "garo": "a·ka·we",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50230,7 +50231,7 @@
   },
   {
     "english": "Plasma",
-    "garo": "an'chi·ni chi",
+    "garo": "an·chi·ni chi",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -50239,7 +50240,7 @@
   },
   {
     "english": "plot of ground between jurisdictions",
-    "garo": "a'mil·am",
+    "garo": "a·mil·am",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50248,7 +50249,7 @@
   },
   {
     "english": "plot of ground between neighbouring jurisdictions",
-    "garo": "a'mil·am",
+    "garo": "a·mil·am",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50266,7 +50267,7 @@
   },
   {
     "english": "precipice",
-    "garo": "a'ku·ang",
+    "garo": "a·ku·ang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -50284,7 +50285,7 @@
   },
   {
     "english": "Prepared land",
-    "garo": "a'a nun·a",
+    "garo": "a·a nun·a",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -50356,7 +50357,7 @@
   },
   {
     "english": "range of hills or mountains",
-    "garo": "a'bi·ding",
+    "garo": "a·bi·ding",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50365,7 +50366,7 @@
   },
   {
     "english": "ravine covered with growth",
-    "garo": "a'kong·gnp",
+    "garo": "a·kong·gnp",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50383,7 +50384,7 @@
   },
   {
     "english": "Retaliation",
-    "garo": "a'jak",
+    "garo": "a·jak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -50392,7 +50393,7 @@
   },
   {
     "english": "Revenge",
-    "garo": "a'jak sok·a·ni",
+    "garo": "a·jak sok·a·ni",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -50410,7 +50411,7 @@
   },
   {
     "english": "ridge of earth dividing fields",
-    "garo": "a'al·i",
+    "garo": "a·al·i",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50419,7 +50420,7 @@
   },
   {
     "english": "ridged wooden hammer for pounding bark",
-    "garo": "an'chik·ing",
+    "garo": "an·chik·ing",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50437,7 +50438,7 @@
   },
   {
     "english": "Rough, stony land",
-    "garo": "a'kek·krak",
+    "garo": "a·kek·krak",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -50455,7 +50456,7 @@
   },
   {
     "english": "Sandy",
-    "garo": "an'cheng·ra·ra·gipa",
+    "garo": "an·cheng·ra·ra·gipa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -50491,7 +50492,7 @@
   },
   {
     "english": "Slime",
-    "garo": "a'a·m chachat",
+    "garo": "a·a·m chachat",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -50572,7 +50573,7 @@
   },
   {
     "english": "Spot where person was killed by wild beast",
-    "garo": "a'krom",
+    "garo": "a·krom",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50590,7 +50591,7 @@
   },
   {
     "english": "summit",
-    "garo": "a'kim·bu",
+    "garo": "a·kim·bu",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -50599,7 +50600,7 @@
   },
   {
     "english": "Swift",
-    "garo": "a'ba·cha·a",
+    "garo": "a·ba·cha·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -50608,7 +50609,7 @@
   },
   {
     "english": "Swift, quick, speedy while working",
-    "garo": "a'ba·cha·a",
+    "garo": "a·ba·cha·a",
     "pos": null,
     "category": "culture",
     "classifier": null,
@@ -50644,7 +50645,7 @@
   },
   {
     "english": "To abandon a field or portion of land",
-    "garo": "a'gram gal·na",
+    "garo": "a·gram gal·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50680,7 +50681,7 @@
   },
   {
     "english": "To be angry",
-    "garo": "an'chi ding·na",
+    "garo": "an·chi ding·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50725,7 +50726,7 @@
   },
   {
     "english": "To be released from marrying relative of deceased",
-    "garo": "a'kim wat·na",
+    "garo": "a·kim wat·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50770,7 +50771,7 @@
   },
   {
     "english": "To be under obligation to marry relative of deceased",
-    "garo": "a'kim·kang·na",
+    "garo": "a·kim·kang·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50797,7 +50798,7 @@
   },
   {
     "english": "To begin",
-    "garo": "a'ba·cheng·na",
+    "garo": "a·ba·cheng·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50806,7 +50807,7 @@
   },
   {
     "english": "To burn land over before planting",
-    "garo": "a'a sona",
+    "garo": "a·a sona",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50815,7 +50816,7 @@
   },
   {
     "english": "To call neighbours to help",
-    "garo": "a'jak nim·na",
+    "garo": "a·jak nim·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50878,7 +50879,7 @@
   },
   {
     "english": "To cultivate a jhum field for the first time",
-    "garo": "a'jak ra su·na",
+    "garo": "a·jak ra su·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50887,7 +50888,7 @@
   },
   {
     "english": "To cultivate cotton after other crops harvested",
-    "garo": "a'ba be·na",
+    "garo": "a·ba be·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50896,7 +50897,7 @@
   },
   {
     "english": "To cultivate, to till",
-    "garo": "a'a gam·na",
+    "garo": "a·a gam·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -50995,7 +50996,7 @@
   },
   {
     "english": "To guard a field at night",
-    "garo": "a'ba tu·na",
+    "garo": "a·ba tu·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51049,7 +51050,7 @@
   },
   {
     "english": "To make a continuous clearing",
-    "garo": "a'a o·nni·na",
+    "garo": "a·a o·nni·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51076,7 +51077,7 @@
   },
   {
     "english": "To open a jhum cultivation",
-    "garo": "a'ba cha·na",
+    "garo": "a·ba cha·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51085,7 +51086,7 @@
   },
   {
     "english": "To originate",
-    "garo": "a'ba·cheng·at·na",
+    "garo": "a·ba·cheng·at·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51175,7 +51176,7 @@
   },
   {
     "english": "To quiver",
-    "garo": "an'chi·mit·chok·cha·katna",
+    "garo": "an·chi·mit·chok·cha·katna",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51202,7 +51203,7 @@
   },
   {
     "english": "To resume",
-    "garo": "a'ba·cheng·tai·na",
+    "garo": "a·ba·cheng·tai·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51229,7 +51230,7 @@
   },
   {
     "english": "To search aimlessly",
-    "garo": "am'ram·ram·na",
+    "garo": "am·ram·ram·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51238,7 +51239,7 @@
   },
   {
     "english": "To search from place to place",
-    "garo": "am'ro·ro·na",
+    "garo": "am·ro·ro·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51247,7 +51248,7 @@
   },
   {
     "english": "To search out secretly",
-    "garo": "am'pru·na",
+    "garo": "am·pru·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51256,7 +51257,7 @@
   },
   {
     "english": "To search thoroughly",
-    "garo": "am'rik·it·na",
+    "garo": "am·rik·it·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51274,7 +51275,7 @@
   },
   {
     "english": "To sharpen knives/swords with sand",
-    "garo": "an'cheng sit·na",
+    "garo": "an·cheng sit·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51391,7 +51392,7 @@
   },
   {
     "english": "To stop work for the night",
-    "garo": "a'ba wat·na",
+    "garo": "a·ba wat·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51418,7 +51419,7 @@
   },
   {
     "english": "To take revenge",
-    "garo": "a'jak sok·na",
+    "garo": "a·jak sok·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51481,7 +51482,7 @@
   },
   {
     "english": "To try",
-    "garo": "a'bik·na",
+    "garo": "a·bik·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51490,7 +51491,7 @@
   },
   {
     "english": "To weed a jhum cultivation for the first time",
-    "garo": "a'jak ra gam·na",
+    "garo": "a·jak ra gam·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51508,7 +51509,7 @@
   },
   {
     "english": "To work in payment for work done",
-    "garo": "a'jak chot·na",
+    "garo": "a·jak chot·na",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -51517,7 +51518,7 @@
   },
   {
     "english": "tree",
-    "garo": "a'bil",
+    "garo": "a·bil",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -51534,7 +51535,7 @@
   },
   {
     "english": "uninhabited region",
-    "garo": "a'ju·al",
+    "garo": "a·ju·al",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -51543,7 +51544,7 @@
   },
   {
     "english": "valley, low land",
-    "garo": "a'kong",
+    "garo": "a·kong",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -51579,7 +51580,7 @@
   },
   {
     "english": "whole earth",
-    "garo": "a'gim·ik",
+    "garo": "a·gim·ik",
     "pos": null,
     "category": "nature",
     "classifier": null,
@@ -65535,7 +65536,7 @@
   },
   {
     "english": "outside",
-    "garo": "a'palo",
+    "garo": "a·palo",
     "category": "general",
     "pos": null,
     "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'. | NV-178 (2026-10-20): `a·pal`/`a·palo` = the native word for outside/outdoors. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
@@ -66947,7 +66948,7 @@
   },
   {
     "english": "do not be angry.",
-    "garo": "Ka'o nangnabe.",
+    "garo": "Ka·o nangnabe.",
     "category": "phrases",
     "pos": null,
     "classifier": null,
@@ -66956,7 +66957,7 @@
   },
   {
     "english": "is he angry?",
-    "garo": "Bia ka'o nangengama?",
+    "garo": "Bia ka·o nangengama?",
     "category": "phrases",
     "pos": null,
     "classifier": null,
@@ -66965,7 +66966,7 @@
   },
   {
     "english": "do not make the children angry.",
-    "garo": "Bi'sarangko ka'o nangatnabe.",
+    "garo": "Bi·sarangko ka·o nangatnabe.",
     "category": "phrases",
     "pos": null,
     "classifier": null,
@@ -67156,7 +67157,7 @@
   },
   {
     "english": "adultery",
-    "garo": "Til'eka",
+    "garo": "Til·eka",
     "category": "uncategorized",
     "pos": "n.",
     "classifier": null,
@@ -67174,7 +67175,7 @@
   },
   {
     "english": "angry",
-    "garo": "bika ding'a",
+    "garo": "bika ding·a",
     "category": "emotions",
     "pos": null,
     "classifier": null,
@@ -73133,7 +73134,7 @@
   },
   {
     "english": "begin (infinitive)",
-    "garo": "a'bachengna",
+    "garo": "a·bachengna",
     "pos": "",
     "classifier": "",
     "category": "",
@@ -73621,7 +73622,7 @@
   },
   {
     "english": "begin",
-    "garo": "a'bachengna",
+    "garo": "a·bachengna",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -79365,6 +79366,20 @@
     "garo": "jom·a",
     "category": "general",
     "notes": "VERIFIED/HIGH — NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `jom·a` (with raka) = to sneak / slink; NOT `joma` (get unwell).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "what did you do yesterday?",
+    "garo": "Na·a mijalo maiko daka?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-197 (2026-10-25, Thangseng raw reply relayed by Project Owner): Thangseng's own example (his text `Na'a mijalo maiko daka?`, apostrophe = raka typo, PO). Verb stays base form because `mijalo` supplies the past.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "why did you avoid me yesterday?",
+    "garo": "Mijalo na·a maina angko gela?",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-197 (2026-10-25, Thangseng raw reply relayed by Project Owner): Thangseng's own example, opener of his two-sentence demo (`Mijalo na'a maina angko gela?`).",
     "confidence": "verified_high"
   }
 ]

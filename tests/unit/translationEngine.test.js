@@ -451,10 +451,11 @@ test('RC-CANDIDATE-012: non-first-person predicate adjectives use raka, not apos
   assert.ok(bright.garo.toLowerCase().includes('ching·a'), `bright should use raka, got: ${bright.garo}`);
 });
 
-test('RC-CANDIDATE-012 boundary: legitimate a\'/an\'/am\' prefix words are untouched', async () => {
+test('RC-CANDIDATE-012 boundary (superseded by NV-197): a\'/an\'/am\' prefix words now use raka', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('earthquake');
-  assert.equal(r.garo, "a'a banggri·a", 'genuine prefix morpheme must not be altered by the raka-typo fix');
+  // NV-197 (2026-10-25, Project Owner via Thangseng): every Garo apostrophe is a raka typo.
+  assert.equal(r.garo, "a·a banggri·a", 'apostrophe-as-raka converted everywhere per NV-197');
 });
 
 // --- Number-word-as-verb + 'has' inflection fix (2026-07-13), same "no
