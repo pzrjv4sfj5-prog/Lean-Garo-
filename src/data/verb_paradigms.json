@@ -1,0 +1,6481 @@
+{
+ "_meta": {
+  "generated": "2026-10-25",
+  "note": "derived = rule-based, unverified; pinned = also present as a row in corrections/irregular_verbs"
+ },
+ "verbs": {
+  "advise": {
+   "root": "bu·jai·a",
+   "forms": {
+    "present": "bu·jai·a",
+    "continuous": "bu·jai·enga",
+    "past": "bu·jai·aha",
+    "future": "bu·jai·gen",
+    "negative": "bu·jai·ja",
+    "negative_future": "bu·jai·jawa",
+    "command": "bu·jai·bo",
+    "negative_command": "bu·jai·nabe",
+    "infinitive": "bu·jai·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "allote": {
+   "root": "chama",
+   "forms": {
+    "present": "chama",
+    "continuous": "chamenga",
+    "past": "chamaha",
+    "future": "chamgen",
+    "negative": "chamja",
+    "negative_future": "chamjawa",
+    "command": "chambo",
+    "negative_command": "chamnabe",
+    "infinitive": "chamna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "animate": {
+   "root": "ka·dongata",
+   "forms": {
+    "present": "ka·dongata",
+    "continuous": "ka·dongatenga",
+    "past": "ka·dongataha",
+    "future": "ka·dongatgen",
+    "negative": "ka·dongatja",
+    "negative_future": "ka·dongatjawa",
+    "command": "ka·dongatbo",
+    "negative_command": "ka·dongatnabe",
+    "infinitive": "ka·dongatna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "answer": {
+   "root": "aganchaka",
+   "forms": {
+    "present": "aganchaka",
+    "continuous": "aganchakenga",
+    "past": "aganchakaha",
+    "future": "aganchakgen",
+    "negative": "aganchakja",
+    "negative_future": "aganchakjawa",
+    "command": "aganchakbo",
+    "negative_command": "aganchaknabe",
+    "infinitive": "aganchakna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "anticipate": {
+   "root": "hai·chak·a",
+   "forms": {
+    "present": "hai·chak·a",
+    "continuous": "hai·chak·enga",
+    "past": "hai·chak·aha",
+    "future": "hai·chak·gen",
+    "negative": "hai·chak·ja",
+    "negative_future": "hai·chak·jawa",
+    "command": "hai·chak·bo",
+    "negative_command": "hai·chak·nabe",
+    "infinitive": "hai·chak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "apportion": {
+   "root": "su·al·a",
+   "forms": {
+    "present": "su·al·a",
+    "continuous": "su·al·enga",
+    "past": "su·al·aha",
+    "future": "su·al·gen",
+    "negative": "su·al·ja",
+    "negative_future": "su·al·jawa",
+    "command": "su·al·bo",
+    "negative_command": "su·al·nabe",
+    "infinitive": "su·al·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "argue": {
+   "root": "aganchaka",
+   "forms": {
+    "present": "aganchaka",
+    "continuous": "aganchakenga",
+    "past": "aganchakaha",
+    "future": "aganchakgen",
+    "negative": "aganchakja",
+    "negative_future": "aganchakjawa",
+    "command": "aganchakbo",
+    "negative_command": "aganchaknabe",
+    "infinitive": "aganchakna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "arrive": {
+   "root": "sok·a",
+   "forms": {
+    "present": "sok·a",
+    "continuous": "sok·enga",
+    "past": "sok·aha",
+    "future": "sok·gen",
+    "negative": "sok·ja",
+    "negative_future": "sok·jawa",
+    "command": "sok·bo",
+    "negative_command": "sok·nabe",
+    "infinitive": "sok·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "ask": {
+   "root": "sing·a",
+   "forms": {
+    "present": "sing·a",
+    "continuous": "sing·enga",
+    "past": "sing·aha",
+    "future": "sing·gen",
+    "negative": "sing·ja",
+    "negative_future": "sing·jawa",
+    "command": "sing·bo",
+    "negative_command": "sing·nabe",
+    "infinitive": "sing·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "assist": {
+   "root": "chaka",
+   "forms": {
+    "present": "chaka",
+    "continuous": "chakenga",
+    "past": "chakaha",
+    "future": "chakgen",
+    "negative": "chakja",
+    "negative_future": "chakjawa",
+    "command": "chakbo",
+    "negative_command": "chaknabe",
+    "infinitive": "chakna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "bandage": {
+   "root": "kagopa",
+   "forms": {
+    "present": "kagopa",
+    "continuous": "kagopenga",
+    "past": "kagopaha",
+    "future": "kagopgen",
+    "negative": "kagopja",
+    "negative_future": "kagopjawa",
+    "command": "kagopbo",
+    "negative_command": "kagopnabe",
+    "infinitive": "kagopna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "bathe": {
+   "root": "ha·bu·dil·a",
+   "forms": {
+    "present": "ha·bu·dil·a",
+    "continuous": "ha·bu·dil·enga",
+    "past": "ha·bu·dil·aha",
+    "future": "ha·bu·dil·gen",
+    "negative": "ha·bu·dil·ja",
+    "negative_future": "ha·bu·dil·jawa",
+    "command": "ha·bu·dil·bo",
+    "negative_command": "ha·bu·dil·nabe",
+    "infinitive": "ha·bu·dil·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "beg": {
+   "root": "gil·a",
+   "forms": {
+    "present": "gil·a",
+    "continuous": "gil·enga",
+    "past": "gil·aha",
+    "future": "gil·gen",
+    "negative": "gil·ja",
+    "negative_future": "gil·jawa",
+    "command": "gil·bo",
+    "negative_command": "gil·nabe",
+    "infinitive": "gil·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "beget": {
+   "root": "ba·a",
+   "forms": {
+    "present": "ba·a",
+    "continuous": "ba·enga",
+    "past": "ba·aha",
+    "future": "ba·gen",
+    "negative": "ba·ja",
+    "negative_future": "ba·jawa",
+    "command": "ba·bo",
+    "negative_command": "ba·nabe",
+    "infinitive": "ba·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "begin": {
+   "root": "a·ba·cheng·na",
+   "forms": {
+    "present": "a·ba·cheng·na",
+    "continuous": "a·ba·cheng·nenga",
+    "past": "a·ba·cheng·naha",
+    "future": "a·ba·cheng·ngen",
+    "negative": "a·ba·cheng·nja",
+    "negative_future": "a·ba·cheng·njawa",
+    "command": "a·ba·cheng·nbo",
+    "negative_command": "a·ba·cheng·nnabe",
+    "infinitive": "a·ba·cheng·nna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "bend": {
+   "root": "be·gop·a",
+   "forms": {
+    "present": "be·gop·a",
+    "continuous": "be·gop·enga",
+    "past": "be·gop·aha",
+    "future": "be·gop·gen",
+    "negative": "be·gop·ja",
+    "negative_future": "be·gop·jawa",
+    "command": "be·gop·bo",
+    "negative_command": "be·gop·nabe",
+    "infinitive": "be·gop·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "bind": {
+   "root": "kadima",
+   "forms": {
+    "present": "kadima",
+    "continuous": "kadimenga",
+    "past": "kadimaha",
+    "future": "kadimgen",
+    "negative": "kadimja",
+    "negative_future": "kadimjawa",
+    "command": "kadimbo",
+    "negative_command": "kadimnabe",
+    "infinitive": "kadimna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "bite": {
+   "root": "chik·ku·rak·a",
+   "forms": {
+    "present": "chik·ku·rak·a",
+    "continuous": "chik·ku·rak·enga",
+    "past": "chik·ku·rak·aha",
+    "future": "chik·ku·rak·gen",
+    "negative": "chik·ku·rak·ja",
+    "negative_future": "chik·ku·rak·jawa",
+    "command": "chik·ku·rak·bo",
+    "negative_command": "chik·ku·rak·nabe",
+    "infinitive": "chik·ku·rak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "blaspheme": {
+   "root": "kal·stapa",
+   "forms": {
+    "present": "kal·stapa",
+    "continuous": "kal·stapenga",
+    "past": "kal·stapaha",
+    "future": "kal·stapgen",
+    "negative": "kal·stapja",
+    "negative_future": "kal·stapjawa",
+    "command": "kal·stapbo",
+    "negative_command": "kal·stapnabe",
+    "infinitive": "kal·stapna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "blaze": {
+   "root": "kam·a",
+   "forms": {
+    "present": "kam·a",
+    "continuous": "kam·enga",
+    "past": "kam·aha",
+    "future": "kam·gen",
+    "negative": "kam·ja",
+    "negative_future": "kam·jawa",
+    "command": "kam·bo",
+    "negative_command": "kam·nabe",
+    "infinitive": "kam·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "bloom": {
+   "root": "bal·a",
+   "forms": {
+    "present": "bal·a",
+    "continuous": "bal·enga",
+    "past": "bal·aha",
+    "future": "bal·gen",
+    "negative": "bal·ja",
+    "negative_future": "bal·jawa",
+    "command": "bal·bo",
+    "negative_command": "bal·nabe",
+    "infinitive": "bal·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "blow": {
+   "root": "spo·a",
+   "forms": {
+    "present": "spo·a",
+    "continuous": "spo·enga",
+    "past": "spo·aha",
+    "future": "spo·gen",
+    "negative": "spo·ja",
+    "negative_future": "spo·jawa",
+    "command": "spo·bo",
+    "negative_command": "spo·nabe",
+    "infinitive": "spo·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "boast": {
+   "root": "badaa",
+   "forms": {
+    "present": "badaa",
+    "continuous": "badaenga",
+    "past": "badaaha",
+    "future": "badagen",
+    "negative": "badaja",
+    "negative_future": "badajawa",
+    "command": "badabo",
+    "negative_command": "badanabe",
+    "infinitive": "badana"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "boil": {
+   "root": "rita",
+   "forms": {
+    "present": "rita",
+    "continuous": "ritenga",
+    "past": "ritaha",
+    "future": "ritgen",
+    "negative": "ritja",
+    "negative_future": "ritjawa",
+    "command": "ritbo",
+    "negative_command": "ritnabe",
+    "infinitive": "ritna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "brag": {
+   "root": "badaa",
+   "forms": {
+    "present": "badaa",
+    "continuous": "badaenga",
+    "past": "badaaha",
+    "future": "badagen",
+    "negative": "badaja",
+    "negative_future": "badajawa",
+    "command": "badabo",
+    "negative_command": "badanabe",
+    "infinitive": "badana"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "break": {
+   "root": "pe·a",
+   "forms": {
+    "present": "pe·a",
+    "continuous": "pe·enga",
+    "past": "pe·aha",
+    "future": "pe·gen",
+    "negative": "pe·ja",
+    "negative_future": "pe·jawa",
+    "command": "pe·bo",
+    "negative_command": "pe·nabe",
+    "infinitive": "pe·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "bring": {
+   "root": "ra·ba·a",
+   "forms": {
+    "present": "ra·ba·a",
+    "continuous": "ra·ba·enga",
+    "past": "ra·ba·aha",
+    "future": "ra·ba·gen",
+    "negative": "ra·ba·ja",
+    "negative_future": "ra·ba·jawa",
+    "command": "ra·ba·bo",
+    "negative_command": "ra·ba·nabe",
+    "infinitive": "ra·ba·na"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "brood": {
+   "root": "bam·a",
+   "forms": {
+    "present": "bam·a",
+    "continuous": "bam·enga",
+    "past": "bam·aha",
+    "future": "bam·gen",
+    "negative": "bam·ja",
+    "negative_future": "bam·jawa",
+    "command": "bam·bo",
+    "negative_command": "bam·nabe",
+    "infinitive": "bam·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "build": {
+   "root": "taria",
+   "forms": {
+    "present": "taria",
+    "continuous": "rik·enga",
+    "past": "tariaha",
+    "future": "tarigen",
+    "negative": "tarija",
+    "negative_future": "tarijawa",
+    "command": "taribo",
+    "negative_command": "tarinabe",
+    "infinitive": "tarina"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "engine",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "burn": {
+   "root": "so·a",
+   "forms": {
+    "present": "so·a",
+    "continuous": "so·enga",
+    "past": "so·aha",
+    "future": "so·gen",
+    "negative": "so·ja",
+    "negative_future": "so·jawa",
+    "command": "so·bo",
+    "negative_command": "so·nabe",
+    "infinitive": "so·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "burrow": {
+   "root": "bit·a",
+   "forms": {
+    "present": "bit·a",
+    "continuous": "bit·enga",
+    "past": "bit·aha",
+    "future": "bit·gen",
+    "negative": "bit·ja",
+    "negative_future": "bit·jawa",
+    "command": "bit·bo",
+    "negative_command": "bit·nabe",
+    "infinitive": "bit·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "burst": {
+   "root": "pret·a",
+   "forms": {
+    "present": "pret·a",
+    "continuous": "pret·enga",
+    "past": "pret·aha",
+    "future": "pret·gen",
+    "negative": "pret·ja",
+    "negative_future": "pret·jawa",
+    "command": "pret·bo",
+    "negative_command": "pret·nabe",
+    "infinitive": "pret·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "bury": {
+   "root": "ha·dap·a",
+   "forms": {
+    "present": "ha·dap·a",
+    "continuous": "ha·dap·enga",
+    "past": "ha·dap·aha",
+    "future": "ha·dap·gen",
+    "negative": "ha·dap·ja",
+    "negative_future": "ha·dap·jawa",
+    "command": "ha·dap·bo",
+    "negative_command": "ha·dap·nabe",
+    "infinitive": "ha·dap·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "buy": {
+   "root": "bre·a",
+   "forms": {
+    "present": "bre·a",
+    "continuous": "breaenga",
+    "past": "bre·aha",
+    "future": "bre·gen",
+    "negative": "bre·ja",
+    "negative_future": "bre·jawa",
+    "command": "bre·bo",
+    "negative_command": "bre·nabe",
+    "infinitive": "bre·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "calculate": {
+   "root": "chana",
+   "forms": {
+    "present": "chana",
+    "continuous": "chanenga",
+    "past": "chanaha",
+    "future": "changen",
+    "negative": "chanja",
+    "negative_future": "chanjawa",
+    "command": "chanbo",
+    "negative_command": "channabe",
+    "infinitive": "channa"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "call": {
+   "root": "okama",
+   "forms": {
+    "present": "okama",
+    "continuous": "okamenga",
+    "past": "okamaha",
+    "future": "okamgen",
+    "negative": "okamja",
+    "negative_future": "okamjawa",
+    "command": "okambo",
+    "negative_command": "okamnabe",
+    "infinitive": "okamna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "carry": {
+   "root": "gat·a",
+   "forms": {
+    "present": "gat·a",
+    "continuous": "gat·enga",
+    "past": "gat·aha",
+    "future": "gat·gen",
+    "negative": "gat·ja",
+    "negative_future": "gat·jawa",
+    "command": "gat·bo",
+    "negative_command": "gat·nabe",
+    "infinitive": "gat·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "cast": {
+   "root": "go·a",
+   "forms": {
+    "present": "go·a",
+    "continuous": "go·enga",
+    "past": "go·aha",
+    "future": "go·gen",
+    "negative": "go·ja",
+    "negative_future": "go·jawa",
+    "command": "go·bo",
+    "negative_command": "go·nabe",
+    "infinitive": "go·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "catch": {
+   "root": "rim·a",
+   "forms": {
+    "present": "rim·a",
+    "continuous": "rim·enga",
+    "past": "rim·aha",
+    "future": "rim·gen",
+    "negative": "rim·ja",
+    "negative_future": "rim·jawa",
+    "command": "rim·bo",
+    "negative_command": "rim·nabe",
+    "infinitive": "rim·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "challenge": {
+   "root": "bot·a",
+   "forms": {
+    "present": "bot·a",
+    "continuous": "bot·enga",
+    "past": "bot·aha",
+    "future": "bot·gen",
+    "negative": "bot·ja",
+    "negative_future": "bot·jawa",
+    "command": "bot·bo",
+    "negative_command": "bot·nabe",
+    "infinitive": "bot·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "change": {
+   "root": "bodolea",
+   "forms": {
+    "present": "bodolea",
+    "continuous": "bodoleenga",
+    "past": "bodoleaha",
+    "future": "bodolegen",
+    "negative": "bodoleja",
+    "negative_future": "bodolejawa",
+    "command": "bodolebo",
+    "negative_command": "bodolenabe",
+    "infinitive": "bodolena"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "clean": {
+   "root": "rongtal·ata",
+   "forms": {
+    "present": "rongtal·ata",
+    "continuous": "rongtal·atenga",
+    "past": "rongtal·ataha",
+    "future": "rongtal·atgen",
+    "negative": "rongtal·atja",
+    "negative_future": "rongtal·atjawa",
+    "command": "rongtal·atbo",
+    "negative_command": "rongtal·atnabe",
+    "infinitive": "rongtal·atna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "close": {
+   "root": "chip·a",
+   "forms": {
+    "present": "chip·a",
+    "continuous": "chip·enga",
+    "past": "chip·aha",
+    "future": "chip·gen",
+    "negative": "chip·ja",
+    "negative_future": "chip·jawa",
+    "command": "chip·bo",
+    "negative_command": "chip·nabe",
+    "infinitive": "chip·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "come": {
+   "root": "re·ba·a",
+   "forms": {
+    "present": "re·ba·a",
+    "continuous": "re·baenga",
+    "past": "re·ba·aha",
+    "future": "re·ba·gen",
+    "negative": "re·ba·ja",
+    "negative_future": "re·ba·jawa",
+    "command": "re·ba·bo",
+    "negative_command": "re·ba·nabe",
+    "infinitive": "re·ba·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "commence": {
+   "root": "a·bachenga",
+   "forms": {
+    "present": "a·bachenga",
+    "continuous": "a·bachengenga",
+    "past": "a·bachengaha",
+    "future": "a·bachenggen",
+    "negative": "a·bachengja",
+    "negative_future": "a·bachengjawa",
+    "command": "a·bachengbo",
+    "negative_command": "a·bachengnabe",
+    "infinitive": "a·bachengna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "compute": {
+   "root": "chana",
+   "forms": {
+    "present": "chana",
+    "continuous": "chanenga",
+    "past": "chanaha",
+    "future": "changen",
+    "negative": "chanja",
+    "negative_future": "chanjawa",
+    "command": "chanbo",
+    "negative_command": "channabe",
+    "infinitive": "channa"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "confess": {
+   "root": "ku·chak·a",
+   "forms": {
+    "present": "ku·chak·a",
+    "continuous": "ku·chak·enga",
+    "past": "ku·chak·aha",
+    "future": "ku·chak·gen",
+    "negative": "ku·chak·ja",
+    "negative_future": "ku·chak·jawa",
+    "command": "ku·chak·bo",
+    "negative_command": "ku·chak·nabe",
+    "infinitive": "ku·chak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "conquer": {
+   "root": "am·na",
+   "forms": {
+    "present": "am·na",
+    "continuous": "am·nenga",
+    "past": "am·naha",
+    "future": "am·ngen",
+    "negative": "am·nja",
+    "negative_future": "am·njawa",
+    "command": "am·nbo",
+    "negative_command": "am·nnabe",
+    "infinitive": "am·nna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "console": {
+   "root": "ka·dimea",
+   "forms": {
+    "present": "ka·dimea",
+    "continuous": "ka·dimeenga",
+    "past": "ka·dimeaha",
+    "future": "ka·dimegen",
+    "negative": "ka·dimeja",
+    "negative_future": "ka·dimejawa",
+    "command": "ka·dimebo",
+    "negative_command": "ka·dimenabe",
+    "infinitive": "ka·dimena"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "converse": {
+   "root": "bol·grik·a",
+   "forms": {
+    "present": "bol·grik·a",
+    "continuous": "bol·grik·enga",
+    "past": "bol·grik·aha",
+    "future": "bol·grik·gen",
+    "negative": "bol·grik·ja",
+    "negative_future": "bol·grik·jawa",
+    "command": "bol·grik·bo",
+    "negative_command": "bol·grik·nabe",
+    "infinitive": "bol·grik·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "cook": {
+   "root": "song·a",
+   "forms": {
+    "present": "song·a",
+    "continuous": "song·enga",
+    "past": "song·aha",
+    "future": "song·gen",
+    "negative": "song·ja",
+    "negative_future": "song·jawa",
+    "command": "song·bo",
+    "negative_command": "song·nabe",
+    "infinitive": "song·na"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "pinned",
+    "negative": "derived",
+    "negative_future": "pinned",
+    "command": "pinned",
+    "negative_command": "pinned",
+    "infinitive": "derived"
+   }
+  },
+  "count": {
+   "root": "chan·a",
+   "forms": {
+    "present": "chan·a",
+    "continuous": "chan·enga",
+    "past": "chan·aha",
+    "future": "chan·gen",
+    "negative": "chan·ja",
+    "negative_future": "chan·jawa",
+    "command": "chan·bo",
+    "negative_command": "chan·nabe",
+    "infinitive": "chan·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "crack": {
+   "root": "bret·a",
+   "forms": {
+    "present": "bret·a",
+    "continuous": "bret·enga",
+    "past": "bret·aha",
+    "future": "bret·gen",
+    "negative": "bret·ja",
+    "negative_future": "bret·jawa",
+    "command": "bret·bo",
+    "negative_command": "bret·nabe",
+    "infinitive": "bret·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "crawl": {
+   "root": "mal·am·a",
+   "forms": {
+    "present": "mal·am·a",
+    "continuous": "mal·am·enga",
+    "past": "mal·am·aha",
+    "future": "mal·am·gen",
+    "negative": "mal·am·ja",
+    "negative_future": "mal·am·jawa",
+    "command": "mal·am·bo",
+    "negative_command": "mal·am·nabe",
+    "infinitive": "mal·am·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "cry": {
+   "root": "grap·a",
+   "forms": {
+    "present": "grap·a",
+    "continuous": "grapenga",
+    "past": "grap·aha",
+    "future": "grap·gen",
+    "negative": "grap·ja",
+    "negative_future": "grap·jawa",
+    "command": "grap·bo",
+    "negative_command": "grap·nabe",
+    "infinitive": "grap·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "cut": {
+   "root": "den·a",
+   "forms": {
+    "present": "den·a",
+    "continuous": "den·enga",
+    "past": "den·aha",
+    "future": "den·gen",
+    "negative": "den·ja",
+    "negative_future": "den·jawa",
+    "command": "den·bo",
+    "negative_command": "den·nabe",
+    "infinitive": "den·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "dance": {
+   "root": "chroka",
+   "forms": {
+    "present": "chroka",
+    "continuous": "chrokenga",
+    "past": "chrokaha",
+    "future": "chrokgen",
+    "negative": "chrokja",
+    "negative_future": "chrokjawa",
+    "command": "chrokbo",
+    "negative_command": "chroknabe",
+    "infinitive": "chrokna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "decrease": {
+   "root": "ba·chepa",
+   "forms": {
+    "present": "ba·chepa",
+    "continuous": "ba·chepenga",
+    "past": "ba·chepaha",
+    "future": "ba·chepgen",
+    "negative": "ba·chepja",
+    "negative_future": "ba·chepjawa",
+    "command": "ba·chepbo",
+    "negative_command": "ba·chepnabe",
+    "infinitive": "ba·chepna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "defeat": {
+   "root": "am·al·na",
+   "forms": {
+    "present": "am·al·na",
+    "continuous": "am·al·nenga",
+    "past": "am·al·naha",
+    "future": "am·al·ngen",
+    "negative": "am·al·nja",
+    "negative_future": "am·al·njawa",
+    "command": "am·al·nbo",
+    "negative_command": "am·al·nnabe",
+    "infinitive": "am·al·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "demand": {
+   "root": "dabia",
+   "forms": {
+    "present": "dabia",
+    "continuous": "dabienga",
+    "past": "dabiaha",
+    "future": "dabigen",
+    "negative": "dabija",
+    "negative_future": "dabijawa",
+    "command": "dabibo",
+    "negative_command": "dabinabe",
+    "infinitive": "dabina"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "deride": {
+   "root": "kal·steka",
+   "forms": {
+    "present": "kal·steka",
+    "continuous": "kal·stekenga",
+    "past": "kal·stekaha",
+    "future": "kal·stekgen",
+    "negative": "kal·stekja",
+    "negative_future": "kal·stekjawa",
+    "command": "kal·stekbo",
+    "negative_command": "kal·steknabe",
+    "infinitive": "kal·stekna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "die": {
+   "root": "si·a",
+   "forms": {
+    "present": "si·a",
+    "continuous": "si·enga",
+    "past": "si·aha",
+    "future": "si·gen",
+    "negative": "si·ja",
+    "negative_future": "si·jawa",
+    "command": "si·bo",
+    "negative_command": "si·nabe",
+    "infinitive": "si·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "dig": {
+   "root": "kong·a",
+   "forms": {
+    "present": "kong·a",
+    "continuous": "kong·enga",
+    "past": "kong·aha",
+    "future": "kong·gen",
+    "negative": "kong·ja",
+    "negative_future": "kong·jawa",
+    "command": "kong·bo",
+    "negative_command": "kong·nabe",
+    "infinitive": "kong·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "discharge": {
+   "root": "gotila",
+   "forms": {
+    "present": "gotila",
+    "continuous": "gotilenga",
+    "past": "gotilaha",
+    "future": "gotilgen",
+    "negative": "gotilja",
+    "negative_future": "gotiljawa",
+    "command": "gotilbo",
+    "negative_command": "gotilnabe",
+    "infinitive": "gotilna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "disclose": {
+   "root": "aganparaka",
+   "forms": {
+    "present": "aganparaka",
+    "continuous": "aganparakenga",
+    "past": "aganparakaha",
+    "future": "aganparakgen",
+    "negative": "aganparakja",
+    "negative_future": "aganparakjawa",
+    "command": "aganparakbo",
+    "negative_command": "aganparaknabe",
+    "infinitive": "aganparakna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "discover": {
+   "root": "nik·man·a",
+   "forms": {
+    "present": "nik·man·a",
+    "continuous": "nik·man·enga",
+    "past": "nik·man·aha",
+    "future": "nik·man·gen",
+    "negative": "nik·man·ja",
+    "negative_future": "nik·man·jawa",
+    "command": "nik·man·bo",
+    "negative_command": "nik·man·nabe",
+    "infinitive": "nik·man·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "dismantle": {
+   "root": "grua",
+   "forms": {
+    "present": "grua",
+    "continuous": "gruenga",
+    "past": "gruaha",
+    "future": "grugen",
+    "negative": "gruja",
+    "negative_future": "grujawa",
+    "command": "grubo",
+    "negative_command": "grunabe",
+    "infinitive": "gruna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "dispute": {
+   "root": "kajia",
+   "forms": {
+    "present": "kajia",
+    "continuous": "kajienga",
+    "past": "kajiaha",
+    "future": "kajigen",
+    "negative": "kajija",
+    "negative_future": "kajijawa",
+    "command": "kajibo",
+    "negative_command": "kajinabe",
+    "infinitive": "kajina"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "dissolve": {
+   "root": "jim·a",
+   "forms": {
+    "present": "jim·a",
+    "continuous": "jim·enga",
+    "past": "jim·aha",
+    "future": "jim·gen",
+    "negative": "jim·ja",
+    "negative_future": "jim·jawa",
+    "command": "jim·bo",
+    "negative_command": "jim·nabe",
+    "infinitive": "jim·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "distribute": {
+   "root": "chama",
+   "forms": {
+    "present": "chama",
+    "continuous": "chamenga",
+    "past": "chamaha",
+    "future": "chamgen",
+    "negative": "chamja",
+    "negative_future": "chamjawa",
+    "command": "chambo",
+    "negative_command": "chamnabe",
+    "infinitive": "chamna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "drink": {
+   "root": "ringa",
+   "forms": {
+    "present": "ringa",
+    "continuous": "ringenga",
+    "past": "ringaha",
+    "future": "ringgen",
+    "negative": "ringja",
+    "negative_future": "ringjawa",
+    "command": "ringbo",
+    "negative_command": "ringnabe",
+    "infinitive": "ringna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "pinned",
+    "command": "pinned",
+    "negative_command": "pinned",
+    "infinitive": "derived"
+   }
+  },
+  "drive": {
+   "root": "sala",
+   "forms": {
+    "present": "sala",
+    "continuous": "salenga",
+    "past": "salaha",
+    "future": "salgen",
+    "negative": "salja",
+    "negative_future": "saljawa",
+    "command": "salbo",
+    "negative_command": "salnabe",
+    "infinitive": "salna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "drop": {
+   "root": "jak·wat·a",
+   "forms": {
+    "present": "jak·wat·a",
+    "continuous": "jak·wat·enga",
+    "past": "jak·wat·aha",
+    "future": "jak·wat·gen",
+    "negative": "jak·wat·ja",
+    "negative_future": "jak·wat·jawa",
+    "command": "jak·wat·bo",
+    "negative_command": "jak·wat·nabe",
+    "infinitive": "jak·wat·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "dry": {
+   "root": "ran·a",
+   "forms": {
+    "present": "ran·a",
+    "continuous": "ranenga",
+    "past": "ran·aha",
+    "future": "ran·gen",
+    "negative": "ran·ja",
+    "negative_future": "ran·jawa",
+    "command": "ran·bo",
+    "negative_command": "ran·nabe",
+    "infinitive": "ran·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "eat": {
+   "root": "cha·a",
+   "forms": {
+    "present": "cha·a",
+    "continuous": "cha·enga",
+    "past": "cha·aha",
+    "future": "cha·gen",
+    "negative": "cha·ja",
+    "negative_future": "cha·jawa",
+    "command": "cha·bo",
+    "negative_command": "cha·nabe",
+    "infinitive": "cha·na"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "pinned",
+    "command": "pinned",
+    "negative_command": "pinned",
+    "infinitive": "derived"
+   }
+  },
+  "elapse": {
+   "root": "badeanga",
+   "forms": {
+    "present": "badeanga",
+    "continuous": "badeangenga",
+    "past": "badeangaha",
+    "future": "badeanggen",
+    "negative": "badeangja",
+    "negative_future": "badeangjawa",
+    "command": "badeangbo",
+    "negative_command": "badeangnabe",
+    "infinitive": "badeangna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "embolden": {
+   "root": "ka·dongata",
+   "forms": {
+    "present": "ka·dongata",
+    "continuous": "ka·dongatenga",
+    "past": "ka·dongataha",
+    "future": "ka·dongatgen",
+    "negative": "ka·dongatja",
+    "negative_future": "ka·dongatjawa",
+    "command": "ka·dongatbo",
+    "negative_command": "ka·dongatnabe",
+    "infinitive": "ka·dongatna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "employ": {
+   "root": "ka·ata",
+   "forms": {
+    "present": "ka·ata",
+    "continuous": "ka·atenga",
+    "past": "ka·ataha",
+    "future": "ka·atgen",
+    "negative": "ka·atja",
+    "negative_future": "ka·atjawa",
+    "command": "ka·atbo",
+    "negative_command": "ka·atnabe",
+    "infinitive": "ka·atna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "encourage": {
+   "root": "mal·mok·a",
+   "forms": {
+    "present": "mal·mok·a",
+    "continuous": "mal·mok·enga",
+    "past": "mal·mok·aha",
+    "future": "mal·mok·gen",
+    "negative": "mal·mok·ja",
+    "negative_future": "mal·mok·jawa",
+    "command": "mal·mok·bo",
+    "negative_command": "mal·mok·nabe",
+    "infinitive": "mal·mok·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "endure": {
+   "root": "han·chak·a",
+   "forms": {
+    "present": "han·chak·a",
+    "continuous": "han·chak·enga",
+    "past": "han·chak·aha",
+    "future": "han·chak·gen",
+    "negative": "han·chak·ja",
+    "negative_future": "han·chak·jawa",
+    "command": "han·chak·bo",
+    "negative_command": "han·chak·nabe",
+    "infinitive": "han·chak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "entertain": {
+   "root": "chakakinga",
+   "forms": {
+    "present": "chakakinga",
+    "continuous": "chakakingenga",
+    "past": "chakakingaha",
+    "future": "chakakinggen",
+    "negative": "chakakingja",
+    "negative_future": "chakakingjawa",
+    "command": "chakakingbo",
+    "negative_command": "chakakingnabe",
+    "infinitive": "chakakingna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "estrange": {
+   "root": "bigraia",
+   "forms": {
+    "present": "bigraia",
+    "continuous": "bigraienga",
+    "past": "bigraiaha",
+    "future": "bigraigen",
+    "negative": "bigraija",
+    "negative_future": "bigraijawa",
+    "command": "bigraibo",
+    "negative_command": "bigrainabe",
+    "infinitive": "bigraina"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "exceed": {
+   "root": "bat·a",
+   "forms": {
+    "present": "bat·a",
+    "continuous": "bat·enga",
+    "past": "bat·aha",
+    "future": "bat·gen",
+    "negative": "bat·ja",
+    "negative_future": "bat·jawa",
+    "command": "bat·bo",
+    "negative_command": "bat·nabe",
+    "infinitive": "bat·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "excel": {
+   "root": "badea",
+   "forms": {
+    "present": "badea",
+    "continuous": "badeenga",
+    "past": "badeaha",
+    "future": "badegen",
+    "negative": "badeja",
+    "negative_future": "badejawa",
+    "command": "badebo",
+    "negative_command": "badenabe",
+    "infinitive": "badena"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "exchange": {
+   "root": "sre·grik·a",
+   "forms": {
+    "present": "sre·grik·a",
+    "continuous": "sre·grik·enga",
+    "past": "sre·grik·aha",
+    "future": "sre·grik·gen",
+    "negative": "sre·grik·ja",
+    "negative_future": "sre·grik·jawa",
+    "command": "sre·grik·bo",
+    "negative_command": "sre·grik·nabe",
+    "infinitive": "sre·grik·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "exist": {
+   "root": "ong·a",
+   "forms": {
+    "present": "ong·a",
+    "continuous": "ong·enga",
+    "past": "ong·aha",
+    "future": "ong·gen",
+    "negative": "ong·ja",
+    "negative_future": "ong·jawa",
+    "command": "ong·bo",
+    "negative_command": "ong·nabe",
+    "infinitive": "ong·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "expand": {
+   "root": "bariata",
+   "forms": {
+    "present": "bariata",
+    "continuous": "bariatenga",
+    "past": "bariataha",
+    "future": "bariatgen",
+    "negative": "bariatja",
+    "negative_future": "bariatjawa",
+    "command": "bariatbo",
+    "negative_command": "bariatnabe",
+    "infinitive": "bariatna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "expect": {
+   "root": "mik·sok·a",
+   "forms": {
+    "present": "mik·sok·a",
+    "continuous": "mik·sok·enga",
+    "past": "mik·sok·aha",
+    "future": "mik·sok·gen",
+    "negative": "mik·sok·ja",
+    "negative_future": "mik·sok·jawa",
+    "command": "mik·sok·bo",
+    "negative_command": "mik·sok·nabe",
+    "infinitive": "mik·sok·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "explode": {
+   "root": "gopreta",
+   "forms": {
+    "present": "gopreta",
+    "continuous": "gopretenga",
+    "past": "gopretaha",
+    "future": "gopretgen",
+    "negative": "gopretja",
+    "negative_future": "gopretjawa",
+    "command": "gopretbo",
+    "negative_command": "gopretnabe",
+    "infinitive": "gopretna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "fall": {
+   "root": "ru·rong·a",
+   "forms": {
+    "present": "ru·rong·a",
+    "continuous": "ru·rong·enga",
+    "past": "ru·rong·aha",
+    "future": "ru·rong·gen",
+    "negative": "ru·rong·ja",
+    "negative_future": "ru·rong·jawa",
+    "command": "ru·rong·bo",
+    "negative_command": "ru·rong·nabe",
+    "infinitive": "ru·rong·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "feed": {
+   "root": "kan·a",
+   "forms": {
+    "present": "kan·a",
+    "continuous": "kan·enga",
+    "past": "kan·aha",
+    "future": "kan·gen",
+    "negative": "kan·ja",
+    "negative_future": "kan·jawa",
+    "command": "kan·bo",
+    "negative_command": "kan·nabe",
+    "infinitive": "kan·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "flame": {
+   "root": "ba·a",
+   "forms": {
+    "present": "ba·a",
+    "continuous": "ba·enga",
+    "past": "ba·aha",
+    "future": "ba·gen",
+    "negative": "ba·ja",
+    "negative_future": "ba·jawa",
+    "command": "ba·bo",
+    "negative_command": "ba·nabe",
+    "infinitive": "ba·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "float": {
+   "root": "bal·ju·ri·a",
+   "forms": {
+    "present": "bal·ju·ri·a",
+    "continuous": "bal·ju·ri·enga",
+    "past": "bal·ju·ri·aha",
+    "future": "bal·ju·ri·gen",
+    "negative": "bal·ju·ri·ja",
+    "negative_future": "bal·ju·ri·jawa",
+    "command": "bal·ju·ri·bo",
+    "negative_command": "bal·ju·ri·nabe",
+    "infinitive": "bal·ju·ri·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "forbid": {
+   "root": "nim·a",
+   "forms": {
+    "present": "nim·a",
+    "continuous": "nim·enga",
+    "past": "nim·aha",
+    "future": "nim·gen",
+    "negative": "nim·ja",
+    "negative_future": "nim·jawa",
+    "command": "nim·bo",
+    "negative_command": "nim·nabe",
+    "infinitive": "nim·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "forebear": {
+   "root": "chakchika",
+   "forms": {
+    "present": "chakchika",
+    "continuous": "chakchikenga",
+    "past": "chakchikaha",
+    "future": "chakchikgen",
+    "negative": "chakchikja",
+    "negative_future": "chakchikjawa",
+    "command": "chakchikbo",
+    "negative_command": "chakchiknabe",
+    "infinitive": "chakchikna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "foretell": {
+   "root": "agansoa",
+   "forms": {
+    "present": "agansoa",
+    "continuous": "agansoenga",
+    "past": "agansoaha",
+    "future": "agansogen",
+    "negative": "agansoja",
+    "negative_future": "agansojawa",
+    "command": "agansobo",
+    "negative_command": "agansonabe",
+    "infinitive": "agansona"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "forget": {
+   "root": "guala",
+   "forms": {
+    "present": "guala",
+    "continuous": "gualenga",
+    "past": "gualaha",
+    "future": "gualgen",
+    "negative": "gualja",
+    "negative_future": "gualjawa",
+    "command": "gualbo",
+    "negative_command": "gualnabe",
+    "infinitive": "gualna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "fry": {
+   "root": "jo·a",
+   "forms": {
+    "present": "jo·a",
+    "continuous": "jo·enga",
+    "past": "jo·aha",
+    "future": "jo·gen",
+    "negative": "jo·ja",
+    "negative_future": "jo·jawa",
+    "command": "jo·bo",
+    "negative_command": "jo·nabe",
+    "infinitive": "jo·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "gaggle": {
+   "root": "ka·dinga",
+   "forms": {
+    "present": "ka·dinga",
+    "continuous": "ka·dingenga",
+    "past": "ka·dingaha",
+    "future": "ka·dinggen",
+    "negative": "ka·dingja",
+    "negative_future": "ka·dingjawa",
+    "command": "ka·dingbo",
+    "negative_command": "ka·dingnabe",
+    "infinitive": "ka·dingna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "give": {
+   "root": "on·a",
+   "forms": {
+    "present": "on·a",
+    "continuous": "onenga",
+    "past": "on·aha",
+    "future": "on·gen",
+    "negative": "on·ja",
+    "negative_future": "on·jawa",
+    "command": "on·bo",
+    "negative_command": "on·nabe",
+    "infinitive": "on·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "glean": {
+   "root": "amkol·am·na",
+   "forms": {
+    "present": "amkol·am·na",
+    "continuous": "amkol·am·nenga",
+    "past": "amkol·am·naha",
+    "future": "amkol·am·ngen",
+    "negative": "amkol·am·nja",
+    "negative_future": "amkol·am·njawa",
+    "command": "amkol·am·nbo",
+    "negative_command": "amkol·am·nnabe",
+    "infinitive": "amkol·am·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "gossip": {
+   "root": "aganjojoa",
+   "forms": {
+    "present": "aganjojoa",
+    "continuous": "aganjojoenga",
+    "past": "aganjojoaha",
+    "future": "aganjojogen",
+    "negative": "aganjojoja",
+    "negative_future": "aganjojojawa",
+    "command": "aganjojobo",
+    "negative_command": "aganjojonabe",
+    "infinitive": "aganjojona"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "growl": {
+   "root": "ran·a",
+   "forms": {
+    "present": "ran·a",
+    "continuous": "ran·enga",
+    "past": "ran·aha",
+    "future": "ran·gen",
+    "negative": "ran·ja",
+    "negative_future": "ran·jawa",
+    "command": "ran·bo",
+    "negative_command": "ran·nabe",
+    "infinitive": "ran·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "hang": {
+   "root": "sring·a",
+   "forms": {
+    "present": "sring·a",
+    "continuous": "sring·enga",
+    "past": "sring·aha",
+    "future": "sring·gen",
+    "negative": "sring·ja",
+    "negative_future": "sring·jawa",
+    "command": "sring·bo",
+    "negative_command": "sring·nabe",
+    "infinitive": "sring·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "hasten": {
+   "root": "gong·raka",
+   "forms": {
+    "present": "gong·raka",
+    "continuous": "gong·rakenga",
+    "past": "gong·rakaha",
+    "future": "gong·rakgen",
+    "negative": "gong·rakja",
+    "negative_future": "gong·rakjawa",
+    "command": "gong·rakbo",
+    "negative_command": "gong·raknabe",
+    "infinitive": "gong·rakna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "have": {
+   "root": "donga",
+   "forms": {
+    "present": "donga",
+    "continuous": "dongenga",
+    "past": "dongaha",
+    "future": "donggen",
+    "negative": "dongja",
+    "negative_future": "dongjawa",
+    "command": "dongbo",
+    "negative_command": "dongnabe",
+    "infinitive": "dongna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "pinned",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "heal": {
+   "root": "an·sengpila",
+   "forms": {
+    "present": "an·sengpila",
+    "continuous": "an·sengpilenga",
+    "past": "an·sengpilaha",
+    "future": "an·sengpilgen",
+    "negative": "an·sengpilja",
+    "negative_future": "an·sengpiljawa",
+    "command": "an·sengpilbo",
+    "negative_command": "an·sengpilnabe",
+    "infinitive": "an·sengpilna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "hear": {
+   "root": "kin·a·a",
+   "forms": {
+    "present": "kin·a·a",
+    "continuous": "knachik·enga",
+    "past": "kin·a·aha",
+    "future": "kin·a·gen",
+    "negative": "kin·a·ja",
+    "negative_future": "kin·a·jawa",
+    "command": "kin·a·bo",
+    "negative_command": "kin·a·nabe",
+    "infinitive": "kin·a·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "help": {
+   "root": "dakchaka",
+   "forms": {
+    "present": "dakchaka",
+    "continuous": "dakchakenga",
+    "past": "dakchakaha",
+    "future": "dakchakgen",
+    "negative": "dakchakja",
+    "negative_future": "dakchakjawa",
+    "command": "dakchakbo",
+    "negative_command": "dakchaknabe",
+    "infinitive": "dakchakna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "hit": {
+   "root": "nang·a",
+   "forms": {
+    "present": "nang·a",
+    "continuous": "nang·enga",
+    "past": "nang·aha",
+    "future": "nang·gen",
+    "negative": "nang·ja",
+    "negative_future": "nang·jawa",
+    "command": "nang·bo",
+    "negative_command": "nang·nabe",
+    "infinitive": "nang·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "hold": {
+   "root": "tom·a",
+   "forms": {
+    "present": "tom·a",
+    "continuous": "tom·enga",
+    "past": "tom·aha",
+    "future": "tom·gen",
+    "negative": "tom·ja",
+    "negative_future": "tom·jawa",
+    "command": "tom·bo",
+    "negative_command": "tom·nabe",
+    "infinitive": "tom·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "hope": {
+   "root": "ka·donga",
+   "forms": {
+    "present": "ka·donga",
+    "continuous": "ka·dongenga",
+    "past": "ka·dongaha",
+    "future": "ka·donggen",
+    "negative": "ka·dongja",
+    "negative_future": "ka·dongjawa",
+    "command": "ka·dongbo",
+    "negative_command": "ka·dongnabe",
+    "infinitive": "ka·dongna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "howl": {
+   "root": "gring·a",
+   "forms": {
+    "present": "gring·a",
+    "continuous": "gring·enga",
+    "past": "gring·aha",
+    "future": "gring·gen",
+    "negative": "gring·ja",
+    "negative_future": "gring·jawa",
+    "command": "gring·bo",
+    "negative_command": "gring·nabe",
+    "infinitive": "gring·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "hurt": {
+   "root": "sa·dik·a",
+   "forms": {
+    "present": "sa·dik·a",
+    "continuous": "sadikenga",
+    "past": "sa·dik·aha",
+    "future": "sa·dik·gen",
+    "negative": "sa·dik·ja",
+    "negative_future": "sa·dik·jawa",
+    "command": "sa·dik·bo",
+    "negative_command": "sa·dik·nabe",
+    "infinitive": "sa·dik·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "imagine": {
+   "root": "chanchichipa",
+   "forms": {
+    "present": "chanchichipa",
+    "continuous": "chanchichipenga",
+    "past": "chanchichipaha",
+    "future": "chanchichipgen",
+    "negative": "chanchichipja",
+    "negative_future": "chanchichipjawa",
+    "command": "chanchichipbo",
+    "negative_command": "chanchichipnabe",
+    "infinitive": "chanchichipna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "intercept": {
+   "root": "champenga",
+   "forms": {
+    "present": "champenga",
+    "continuous": "champenga",
+    "past": "champengaha",
+    "future": "champenggen",
+    "negative": "champengja",
+    "negative_future": "champengjawa",
+    "command": "champengbo",
+    "negative_command": "champengnabe",
+    "infinitive": "champengna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "engine",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "interpret": {
+   "root": "a·gan·ska·na",
+   "forms": {
+    "present": "a·gan·ska·na",
+    "continuous": "a·gan·ska·nenga",
+    "past": "a·gan·ska·naha",
+    "future": "a·gan·ska·ngen",
+    "negative": "a·gan·ska·nja",
+    "negative_future": "a·gan·ska·njawa",
+    "command": "a·gan·ska·nbo",
+    "negative_command": "a·gan·ska·nnabe",
+    "infinitive": "a·gan·ska·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "interrupt": {
+   "root": "a·gan·jot·na",
+   "forms": {
+    "present": "a·gan·jot·na",
+    "continuous": "a·gan·jot·nenga",
+    "past": "a·gan·jot·naha",
+    "future": "a·gan·jot·ngen",
+    "negative": "a·gan·jot·nja",
+    "negative_future": "a·gan·jot·njawa",
+    "command": "a·gan·jot·nbo",
+    "negative_command": "a·gan·jot·nnabe",
+    "infinitive": "a·gan·jot·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "intimidate": {
+   "root": "ka·mikkenata",
+   "forms": {
+    "present": "ka·mikkenata",
+    "continuous": "ka·mikkenatenga",
+    "past": "ka·mikkenataha",
+    "future": "ka·mikkenatgen",
+    "negative": "ka·mikkenatja",
+    "negative_future": "ka·mikkenatjawa",
+    "command": "ka·mikkenatbo",
+    "negative_command": "ka·mikkenatnabe",
+    "infinitive": "ka·mikkenatna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "itch": {
+   "root": "ka·kit·a",
+   "forms": {
+    "present": "ka·kit·a",
+    "continuous": "ka·kit·enga",
+    "past": "ka·kit·aha",
+    "future": "ka·kit·gen",
+    "negative": "ka·kit·ja",
+    "negative_future": "ka·kit·jawa",
+    "command": "ka·kit·bo",
+    "negative_command": "ka·kit·nabe",
+    "infinitive": "ka·kit·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "join": {
+   "root": "rit·chu·a",
+   "forms": {
+    "present": "rit·chu·a",
+    "continuous": "rit·chu·enga",
+    "past": "rit·chu·aha",
+    "future": "rit·chu·gen",
+    "negative": "rit·chu·ja",
+    "negative_future": "rit·chu·jawa",
+    "command": "rit·chu·bo",
+    "negative_command": "rit·chu·nabe",
+    "infinitive": "rit·chu·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "jump": {
+   "root": "bildoa",
+   "forms": {
+    "present": "bildoa",
+    "continuous": "bildoenga",
+    "past": "bildoaha",
+    "future": "bildogen",
+    "negative": "bildoja",
+    "negative_future": "bildojawa",
+    "command": "bildobo",
+    "negative_command": "bildonabe",
+    "infinitive": "bildona"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "keep": {
+   "root": "rak·ki·a",
+   "forms": {
+    "present": "rak·ki·a",
+    "continuous": "rak·ki·enga",
+    "past": "rak·ki·aha",
+    "future": "rak·ki·gen",
+    "negative": "rak·ki·ja",
+    "negative_future": "rak·ki·jawa",
+    "command": "rak·ki·bo",
+    "negative_command": "rak·ki·nabe",
+    "infinitive": "rak·ki·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "know": {
+   "root": "hai·a",
+   "forms": {
+    "present": "hai·a",
+    "continuous": "hai·enga",
+    "past": "hai·aha",
+    "future": "hai·gen",
+    "negative": "hai·ja",
+    "negative_future": "hai·jawa",
+    "command": "hai·bo",
+    "negative_command": "hai·nabe",
+    "infinitive": "hai·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "knuckle": {
+   "root": "goteka",
+   "forms": {
+    "present": "goteka",
+    "continuous": "gotekenga",
+    "past": "gotekaha",
+    "future": "gotekgen",
+    "negative": "gotekja",
+    "negative_future": "gotekjawa",
+    "command": "gotekbo",
+    "negative_command": "goteknabe",
+    "infinitive": "gotekna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "lament": {
+   "root": "kalima",
+   "forms": {
+    "present": "kalima",
+    "continuous": "kalimenga",
+    "past": "kalimaha",
+    "future": "kalimgen",
+    "negative": "kalimja",
+    "negative_future": "kalimjawa",
+    "command": "kalimbo",
+    "negative_command": "kalimnabe",
+    "infinitive": "kalimna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "last": {
+   "root": "ja·mangipa",
+   "forms": {
+    "present": "ja·mangipa",
+    "continuous": "ja·mangipenga",
+    "past": "ja·mangipaha",
+    "future": "ja·mangipgen",
+    "negative": "ja·mangipja",
+    "negative_future": "ja·mangipjawa",
+    "command": "ja·mangipbo",
+    "negative_command": "ja·mangipnabe",
+    "infinitive": "ja·mangipna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "laugh": {
+   "root": "ka·dinga",
+   "forms": {
+    "present": "ka·dinga",
+    "continuous": "ka·dingenga",
+    "past": "ka·dingaha",
+    "future": "ka·dinggen",
+    "negative": "ka·dingja",
+    "negative_future": "ka·dingjawa",
+    "command": "ka·dingbo",
+    "negative_command": "ka·dingnabe",
+    "infinitive": "ka·dingna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "learn": {
+   "root": "ski·a",
+   "forms": {
+    "present": "ski·a",
+    "continuous": "ski·enga",
+    "past": "ski·aha",
+    "future": "ski·gen",
+    "negative": "ski·ja",
+    "negative_future": "ski·jawa",
+    "command": "ski·bo",
+    "negative_command": "ski·nabe",
+    "infinitive": "ski·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "lie": {
+   "root": "tol·a",
+   "forms": {
+    "present": "tol·a",
+    "continuous": "tol·enga",
+    "past": "tol·aha",
+    "future": "tol·gen",
+    "negative": "tol·ja",
+    "negative_future": "tol·jawa",
+    "command": "tol·bo",
+    "negative_command": "tol·nabe",
+    "infinitive": "tol·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "lift": {
+   "root": "de·tom·brot·a",
+   "forms": {
+    "present": "de·tom·brot·a",
+    "continuous": "de·tom·brot·enga",
+    "past": "de·tom·brot·aha",
+    "future": "de·tom·brot·gen",
+    "negative": "de·tom·brot·ja",
+    "negative_future": "de·tom·brot·jawa",
+    "command": "de·tom·brot·bo",
+    "negative_command": "de·tom·brot·nabe",
+    "infinitive": "de·tom·brot·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "light": {
+   "root": "ja·seng·a",
+   "forms": {
+    "present": "ja·seng·a",
+    "continuous": "ja·seng·enga",
+    "past": "ja·seng·aha",
+    "future": "ja·seng·gen",
+    "negative": "ja·seng·ja",
+    "negative_future": "ja·seng·jawa",
+    "command": "ja·seng·bo",
+    "negative_command": "ja·seng·nabe",
+    "infinitive": "ja·seng·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "like": {
+   "root": "sin·a",
+   "forms": {
+    "present": "sin·a",
+    "continuous": "sin·enga",
+    "past": "sin·aha",
+    "future": "sin·gen",
+    "negative": "sin·ja",
+    "negative_future": "sin·jawa",
+    "command": "sin·bo",
+    "negative_command": "sin·nabe",
+    "infinitive": "sin·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "live": {
+   "root": "donga",
+   "forms": {
+    "present": "donga",
+    "continuous": "dongenga",
+    "past": "dongaha",
+    "future": "donggen",
+    "negative": "dongja",
+    "negative_future": "dongjawa",
+    "command": "dongbo",
+    "negative_command": "dongnabe",
+    "infinitive": "dongna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "pinned",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "lodge": {
+   "root": "donga",
+   "forms": {
+    "present": "donga",
+    "continuous": "dongenga",
+    "past": "dongaha",
+    "future": "donggen",
+    "negative": "dongja",
+    "negative_future": "dongjawa",
+    "command": "dongbo",
+    "negative_command": "dongnabe",
+    "infinitive": "dongna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "pinned",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "love": {
+   "root": "ka·saa",
+   "forms": {
+    "present": "ka·saa",
+    "continuous": "ka·saenga",
+    "past": "ka·saaha",
+    "future": "ka·sagen",
+    "negative": "ka·saja",
+    "negative_future": "ka·sajawa",
+    "command": "ka·sabo",
+    "negative_command": "ka·sanabe",
+    "infinitive": "ka·sana"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "lower": {
+   "root": "ka·monga",
+   "forms": {
+    "present": "ka·monga",
+    "continuous": "ka·mongenga",
+    "past": "ka·mongaha",
+    "future": "ka·monggen",
+    "negative": "ka·mongja",
+    "negative_future": "ka·mongjawa",
+    "command": "ka·mongbo",
+    "negative_command": "ka·mongnabe",
+    "infinitive": "ka·mongna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "make": {
+   "root": "taria",
+   "forms": {
+    "present": "taria",
+    "continuous": "tarienga",
+    "past": "tariaha",
+    "future": "tarigen",
+    "negative": "tarija",
+    "negative_future": "tarijawa",
+    "command": "taribo",
+    "negative_command": "tarinabe",
+    "infinitive": "tarina"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "marry": {
+   "root": "kim·a",
+   "forms": {
+    "present": "kim·a",
+    "continuous": "kim·enga",
+    "past": "kim·aha",
+    "future": "kim·gen",
+    "negative": "kim·ja",
+    "negative_future": "kim·jawa",
+    "command": "kim·bo",
+    "negative_command": "kim·nabe",
+    "infinitive": "kim·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "meet": {
+   "root": "grong·a",
+   "forms": {
+    "present": "grong·a",
+    "continuous": "grong·enga",
+    "past": "grong·aha",
+    "future": "grong·gen",
+    "negative": "grong·ja",
+    "negative_future": "grong·jawa",
+    "command": "grong·bo",
+    "negative_command": "grong·nabe",
+    "infinitive": "grong·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "melt": {
+   "root": "jim·a",
+   "forms": {
+    "present": "jim·a",
+    "continuous": "jim·enga",
+    "past": "jim·aha",
+    "future": "jim·gen",
+    "negative": "jim·ja",
+    "negative_future": "jim·jawa",
+    "command": "jim·bo",
+    "negative_command": "jim·nabe",
+    "infinitive": "jim·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "miscarry": {
+   "root": "ba·gala",
+   "forms": {
+    "present": "ba·gala",
+    "continuous": "ba·galenga",
+    "past": "ba·galaha",
+    "future": "ba·galgen",
+    "negative": "ba·galja",
+    "negative_future": "ba·galjawa",
+    "command": "ba·galbo",
+    "negative_command": "ba·galnabe",
+    "infinitive": "ba·galna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "mix": {
+   "root": "brin·a",
+   "forms": {
+    "present": "brin·a",
+    "continuous": "brin·enga",
+    "past": "brin·aha",
+    "future": "brin·gen",
+    "negative": "brin·ja",
+    "negative_future": "brin·jawa",
+    "command": "brin·bo",
+    "negative_command": "brin·nabe",
+    "infinitive": "brin·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "mock": {
+   "root": "agangitchia",
+   "forms": {
+    "present": "agangitchia",
+    "continuous": "agangitchienga",
+    "past": "agangitchiaha",
+    "future": "agangitchigen",
+    "negative": "agangitchija",
+    "negative_future": "agangitchijawa",
+    "command": "agangitchibo",
+    "negative_command": "agangitchinabe",
+    "infinitive": "agangitchina"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "mourn": {
+   "root": "mang·wa·a",
+   "forms": {
+    "present": "mang·wa·a",
+    "continuous": "mang·wa·enga",
+    "past": "mang·wa·aha",
+    "future": "mang·wa·gen",
+    "negative": "mang·wa·ja",
+    "negative_future": "mang·wa·jawa",
+    "command": "mang·wa·bo",
+    "negative_command": "mang·wa·nabe",
+    "infinitive": "mang·wa·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "move": {
+   "root": "jit·a",
+   "forms": {
+    "present": "jit·a",
+    "continuous": "jit·enga",
+    "past": "jit·aha",
+    "future": "jit·gen",
+    "negative": "jit·ja",
+    "negative_future": "jit·jawa",
+    "command": "jit·bo",
+    "negative_command": "jit·nabe",
+    "infinitive": "jit·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "obey": {
+   "root": "ra·chak·a",
+   "forms": {
+    "present": "ra·chak·a",
+    "continuous": "ra·chak·enga",
+    "past": "ra·chak·aha",
+    "future": "ra·chak·gen",
+    "negative": "ra·chak·ja",
+    "negative_future": "ra·chak·jawa",
+    "command": "ra·chak·bo",
+    "negative_command": "ra·chak·nabe",
+    "infinitive": "ra·chak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "obstruct": {
+   "root": "peng·a",
+   "forms": {
+    "present": "peng·a",
+    "continuous": "champenga",
+    "past": "peng·aha",
+    "future": "peng·gen",
+    "negative": "peng·ja",
+    "negative_future": "peng·jawa",
+    "command": "peng·bo",
+    "negative_command": "peng·nabe",
+    "infinitive": "peng·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "engine",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "open": {
+   "root": "oa",
+   "forms": {
+    "present": "oa",
+    "continuous": "oenga",
+    "past": "oaha",
+    "future": "ogen",
+    "negative": "oja",
+    "negative_future": "ojawa",
+    "command": "obo",
+    "negative_command": "onabe",
+    "infinitive": "ona"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "originate": {
+   "root": "a·ba·cheng·at·na",
+   "forms": {
+    "present": "a·ba·cheng·at·na",
+    "continuous": "a·ba·cheng·at·nenga",
+    "past": "a·ba·cheng·at·naha",
+    "future": "a·ba·cheng·at·ngen",
+    "negative": "a·ba·cheng·at·nja",
+    "negative_future": "a·ba·cheng·at·njawa",
+    "command": "a·ba·cheng·at·nbo",
+    "negative_command": "a·ba·cheng·at·nnabe",
+    "infinitive": "a·ba·cheng·at·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "pay": {
+   "root": "gama",
+   "forms": {
+    "present": "gama",
+    "continuous": "gamenga",
+    "past": "gamaha",
+    "future": "gamgen",
+    "negative": "gamja",
+    "negative_future": "gamjawa",
+    "command": "gambo",
+    "negative_command": "gamnabe",
+    "infinitive": "gamna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "perch": {
+   "root": "ba·a",
+   "forms": {
+    "present": "ba·a",
+    "continuous": "ba·enga",
+    "past": "ba·aha",
+    "future": "ba·gen",
+    "negative": "ba·ja",
+    "negative_future": "ba·jawa",
+    "command": "ba·bo",
+    "negative_command": "ba·nabe",
+    "infinitive": "ba·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "perspire": {
+   "root": "kram·chi·a",
+   "forms": {
+    "present": "kram·chi·a",
+    "continuous": "kram·chi·enga",
+    "past": "kram·chi·aha",
+    "future": "kram·chi·gen",
+    "negative": "kram·chi·ja",
+    "negative_future": "kram·chi·jawa",
+    "command": "kram·chi·bo",
+    "negative_command": "kram·chi·nabe",
+    "infinitive": "kram·chi·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "pervert": {
+   "root": "a·gan·at·na",
+   "forms": {
+    "present": "a·gan·at·na",
+    "continuous": "a·gan·at·nenga",
+    "past": "a·gan·at·naha",
+    "future": "a·gan·at·ngen",
+    "negative": "a·gan·at·nja",
+    "negative_future": "a·gan·at·njawa",
+    "command": "a·gan·at·nbo",
+    "negative_command": "a·gan·at·nnabe",
+    "infinitive": "a·gan·at·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "pierce": {
+   "root": "su·a",
+   "forms": {
+    "present": "su·a",
+    "continuous": "su·enga",
+    "past": "su·aha",
+    "future": "su·gen",
+    "negative": "su·ja",
+    "negative_future": "su·jawa",
+    "command": "su·bo",
+    "negative_command": "su·nabe",
+    "infinitive": "su·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "pinch": {
+   "root": "se·et·a",
+   "forms": {
+    "present": "se·et·a",
+    "continuous": "se·et·enga",
+    "past": "se·et·aha",
+    "future": "se·et·gen",
+    "negative": "se·et·ja",
+    "negative_future": "se·et·jawa",
+    "command": "se·et·bo",
+    "negative_command": "se·et·nabe",
+    "infinitive": "se·et·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "plant": {
+   "root": "songna",
+   "forms": {
+    "present": "songna",
+    "continuous": "songnenga",
+    "past": "songnaha",
+    "future": "songngen",
+    "negative": "songnja",
+    "negative_future": "songnjawa",
+    "command": "songnbo",
+    "negative_command": "songnnabe",
+    "infinitive": "songnna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "play": {
+   "root": "kal·a",
+   "forms": {
+    "present": "kal·a",
+    "continuous": "kal·enga",
+    "past": "kal·aha",
+    "future": "kal·gen",
+    "negative": "kal·ja",
+    "negative_future": "kal·jawa",
+    "command": "kal·bo",
+    "negative_command": "kal·nabe",
+    "infinitive": "kal·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "pluck": {
+   "root": "ak·a",
+   "forms": {
+    "present": "ak·a",
+    "continuous": "ak·enga",
+    "past": "ak·aha",
+    "future": "ak·gen",
+    "negative": "ak·ja",
+    "negative_future": "ak·jawa",
+    "command": "ak·bo",
+    "negative_command": "ak·nabe",
+    "infinitive": "ak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "point": {
+   "root": "sil·a",
+   "forms": {
+    "present": "sil·a",
+    "continuous": "sil·enga",
+    "past": "sil·aha",
+    "future": "sil·gen",
+    "negative": "sil·ja",
+    "negative_future": "sil·jawa",
+    "command": "sil·bo",
+    "negative_command": "sil·nabe",
+    "infinitive": "sil·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "preach": {
+   "root": "aganpraka",
+   "forms": {
+    "present": "aganpraka",
+    "continuous": "aganprakenga",
+    "past": "aganprakaha",
+    "future": "aganprakgen",
+    "negative": "aganprakja",
+    "negative_future": "aganprakjawa",
+    "command": "aganprakbo",
+    "negative_command": "aganpraknabe",
+    "infinitive": "aganprakna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "predict": {
+   "root": "a·gan·so·na",
+   "forms": {
+    "present": "a·gan·so·na",
+    "continuous": "a·gan·so·nenga",
+    "past": "a·gan·so·naha",
+    "future": "a·gan·so·ngen",
+    "negative": "a·gan·so·nja",
+    "negative_future": "a·gan·so·njawa",
+    "command": "a·gan·so·nbo",
+    "negative_command": "a·gan·so·nnabe",
+    "infinitive": "a·gan·so·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "prevent": {
+   "root": "peng·a",
+   "forms": {
+    "present": "peng·a",
+    "continuous": "champenga",
+    "past": "peng·aha",
+    "future": "peng·gen",
+    "negative": "peng·ja",
+    "negative_future": "peng·jawa",
+    "command": "peng·bo",
+    "negative_command": "peng·nabe",
+    "infinitive": "peng·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "engine",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "prick": {
+   "root": "bu·a",
+   "forms": {
+    "present": "bu·a",
+    "continuous": "bu·enga",
+    "past": "bu·aha",
+    "future": "bu·gen",
+    "negative": "bu·ja",
+    "negative_future": "bu·jawa",
+    "command": "bu·bo",
+    "negative_command": "bu·nabe",
+    "infinitive": "bu·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "proclaim": {
+   "root": "a·gan·prak·a",
+   "forms": {
+    "present": "a·gan·prak·a",
+    "continuous": "a·gan·prak·enga",
+    "past": "a·gan·prak·aha",
+    "future": "a·gan·prak·gen",
+    "negative": "a·gan·prak·ja",
+    "negative_future": "a·gan·prak·jawa",
+    "command": "a·gan·prak·bo",
+    "negative_command": "a·gan·prak·nabe",
+    "infinitive": "a·gan·prak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "prune": {
+   "root": "ak·kre·na",
+   "forms": {
+    "present": "ak·kre·na",
+    "continuous": "ak·kre·nenga",
+    "past": "ak·kre·naha",
+    "future": "ak·kre·ngen",
+    "negative": "ak·kre·nja",
+    "negative_future": "ak·kre·njawa",
+    "command": "ak·kre·nbo",
+    "negative_command": "ak·kre·nnabe",
+    "infinitive": "ak·kre·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "pull": {
+   "root": "sala",
+   "forms": {
+    "present": "sala",
+    "continuous": "salenga",
+    "past": "salaha",
+    "future": "salgen",
+    "negative": "salja",
+    "negative_future": "saljawa",
+    "command": "salbo",
+    "negative_command": "salnabe",
+    "infinitive": "salna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "quell": {
+   "root": "bamata",
+   "forms": {
+    "present": "bamata",
+    "continuous": "bamatenga",
+    "past": "bamataha",
+    "future": "bamatgen",
+    "negative": "bamatja",
+    "negative_future": "bamatjawa",
+    "command": "bamatbo",
+    "negative_command": "bamatnabe",
+    "infinitive": "bamatna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "quiver": {
+   "root": "an·chi·mit·chok·cha·katna",
+   "forms": {
+    "present": "an·chi·mit·chok·cha·katna",
+    "continuous": "an·chi·mit·chok·cha·katnenga",
+    "past": "an·chi·mit·chok·cha·katnaha",
+    "future": "an·chi·mit·chok·cha·katngen",
+    "negative": "an·chi·mit·chok·cha·katnja",
+    "negative_future": "an·chi·mit·chok·cha·katnjawa",
+    "command": "an·chi·mit·chok·cha·katnbo",
+    "negative_command": "an·chi·mit·chok·cha·katnnabe",
+    "infinitive": "an·chi·mit·chok·cha·katnna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "read": {
+   "root": "po·ri·a",
+   "forms": {
+    "present": "po·ri·a",
+    "continuous": "poraienga",
+    "past": "po·ri·aha",
+    "future": "po·ri·gen",
+    "negative": "po·ri·ja",
+    "negative_future": "po·ri·jawa",
+    "command": "po·ri·bo",
+    "negative_command": "po·ri·nabe",
+    "infinitive": "po·ri·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "reckon": {
+   "root": "chana",
+   "forms": {
+    "present": "chana",
+    "continuous": "chanenga",
+    "past": "chanaha",
+    "future": "changen",
+    "negative": "chanja",
+    "negative_future": "chanjawa",
+    "command": "chanbo",
+    "negative_command": "channabe",
+    "infinitive": "channa"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "refrain": {
+   "root": "chakchika",
+   "forms": {
+    "present": "chakchika",
+    "continuous": "chakchikenga",
+    "past": "chakchikaha",
+    "future": "chakchikgen",
+    "negative": "chakchikja",
+    "negative_future": "chakchikjawa",
+    "command": "chakchikbo",
+    "negative_command": "chakchiknabe",
+    "infinitive": "chakchikna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "replace": {
+   "root": "bodolea",
+   "forms": {
+    "present": "bodolea",
+    "continuous": "bodoleenga",
+    "past": "bodoleaha",
+    "future": "bodolegen",
+    "negative": "bodoleja",
+    "negative_future": "bodolejawa",
+    "command": "bodolebo",
+    "negative_command": "bodolenabe",
+    "infinitive": "bodolena"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "replenish": {
+   "root": "bodolea",
+   "forms": {
+    "present": "bodolea",
+    "continuous": "bodoleenga",
+    "past": "bodoleaha",
+    "future": "bodolegen",
+    "negative": "bodoleja",
+    "negative_future": "bodolejawa",
+    "command": "bodolebo",
+    "negative_command": "bodolenabe",
+    "infinitive": "bodolena"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "reply": {
+   "root": "in·chak·a",
+   "forms": {
+    "present": "in·chak·a",
+    "continuous": "in·chak·enga",
+    "past": "in·chak·aha",
+    "future": "in·chak·gen",
+    "negative": "in·chak·ja",
+    "negative_future": "in·chak·jawa",
+    "command": "in·chak·bo",
+    "negative_command": "in·chak·nabe",
+    "infinitive": "in·chak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "respond": {
+   "root": "ku·chak·a",
+   "forms": {
+    "present": "ku·chak·a",
+    "continuous": "ku·chak·enga",
+    "past": "ku·chak·aha",
+    "future": "ku·chak·gen",
+    "negative": "ku·chak·ja",
+    "negative_future": "ku·chak·jawa",
+    "command": "ku·chak·bo",
+    "negative_command": "ku·chak·nabe",
+    "infinitive": "ku·chak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "restrain": {
+   "root": "chakchika",
+   "forms": {
+    "present": "chakchika",
+    "continuous": "chakchikenga",
+    "past": "chakchikaha",
+    "future": "chakchikgen",
+    "negative": "chakchikja",
+    "negative_future": "chakchikjawa",
+    "command": "chakchikbo",
+    "negative_command": "chakchiknabe",
+    "infinitive": "chakchikna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "resume": {
+   "root": "a·ba·cheng·tai·na",
+   "forms": {
+    "present": "a·ba·cheng·tai·na",
+    "continuous": "a·ba·cheng·tai·nenga",
+    "past": "a·ba·cheng·tai·naha",
+    "future": "a·ba·cheng·tai·ngen",
+    "negative": "a·ba·cheng·tai·nja",
+    "negative_future": "a·ba·cheng·tai·njawa",
+    "command": "a·ba·cheng·tai·nbo",
+    "negative_command": "a·ba·cheng·tai·nnabe",
+    "infinitive": "a·ba·cheng·tai·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "reveal": {
+   "root": "a·gan·pa·rak·na",
+   "forms": {
+    "present": "a·gan·pa·rak·na",
+    "continuous": "a·gan·pa·rak·nenga",
+    "past": "a·gan·pa·rak·naha",
+    "future": "a·gan·pa·rak·ngen",
+    "negative": "a·gan·pa·rak·nja",
+    "negative_future": "a·gan·pa·rak·njawa",
+    "command": "a·gan·pa·rak·nbo",
+    "negative_command": "a·gan·pa·rak·nnabe",
+    "infinitive": "a·gan·pa·rak·nna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "rise": {
+   "root": "na·a",
+   "forms": {
+    "present": "na·a",
+    "continuous": "na·enga",
+    "past": "na·aha",
+    "future": "na·gen",
+    "negative": "na·ja",
+    "negative_future": "na·jawa",
+    "command": "na·bo",
+    "negative_command": "na·nabe",
+    "infinitive": "na·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "roll": {
+   "root": "romroma",
+   "forms": {
+    "present": "romroma",
+    "continuous": "romromenga",
+    "past": "romromaha",
+    "future": "romromgen",
+    "negative": "romromja",
+    "negative_future": "romromjawa",
+    "command": "romrombo",
+    "negative_command": "romromnabe",
+    "infinitive": "romromna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "roost": {
+   "root": "bama",
+   "forms": {
+    "present": "bama",
+    "continuous": "bamenga",
+    "past": "bamaha",
+    "future": "bamgen",
+    "negative": "bamja",
+    "negative_future": "bamjawa",
+    "command": "bambo",
+    "negative_command": "bamnabe",
+    "infinitive": "bamna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "run": {
+   "root": "kata",
+   "forms": {
+    "present": "kata",
+    "continuous": "katenga",
+    "past": "kataha",
+    "future": "katgen",
+    "negative": "katja",
+    "negative_future": "katjawa",
+    "command": "katbo",
+    "negative_command": "katnabe",
+    "infinitive": "katna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "pinned",
+    "command": "derived",
+    "negative_command": "pinned",
+    "infinitive": "derived"
+   }
+  },
+  "say": {
+   "root": "in·a",
+   "forms": {
+    "present": "in·a",
+    "continuous": "aganenga",
+    "past": "in·aha",
+    "future": "in·gen",
+    "negative": "in·ja",
+    "negative_future": "in·jawa",
+    "command": "in·bo",
+    "negative_command": "in·nabe",
+    "infinitive": "in·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "scorch": {
+   "root": "so·sim·prak·a",
+   "forms": {
+    "present": "so·sim·prak·a",
+    "continuous": "so·sim·prak·enga",
+    "past": "so·sim·prak·aha",
+    "future": "so·sim·prak·gen",
+    "negative": "so·sim·prak·ja",
+    "negative_future": "so·sim·prak·jawa",
+    "command": "so·sim·prak·bo",
+    "negative_command": "so·sim·prak·nabe",
+    "infinitive": "so·sim·prak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "scrape": {
+   "root": "rok·a",
+   "forms": {
+    "present": "rok·a",
+    "continuous": "rok·enga",
+    "past": "rok·aha",
+    "future": "rok·gen",
+    "negative": "rok·ja",
+    "negative_future": "rok·jawa",
+    "command": "rok·bo",
+    "negative_command": "rok·nabe",
+    "infinitive": "rok·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "scratch": {
+   "root": "mat·chrit·a",
+   "forms": {
+    "present": "mat·chrit·a",
+    "continuous": "mat·chrit·enga",
+    "past": "mat·chrit·aha",
+    "future": "mat·chrit·gen",
+    "negative": "mat·chrit·ja",
+    "negative_future": "mat·chrit·jawa",
+    "command": "mat·chrit·bo",
+    "negative_command": "mat·chrit·nabe",
+    "infinitive": "mat·chrit·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "see": {
+   "root": "nika",
+   "forms": {
+    "present": "nika",
+    "continuous": "nikenga",
+    "past": "nikaha",
+    "future": "nikgen",
+    "negative": "nikja",
+    "negative_future": "nikjawa",
+    "command": "nikbo",
+    "negative_command": "niknabe",
+    "infinitive": "nikna"
+   },
+   "status": {
+    "present": "native",
+    "continuous": "pinned",
+    "past": "native",
+    "future": "native",
+    "negative": "derived",
+    "negative_future": "native",
+    "command": "native",
+    "negative_command": "native",
+    "infinitive": "derived"
+   }
+  },
+  "sell": {
+   "root": "pala",
+   "forms": {
+    "present": "pala",
+    "continuous": "palaenga",
+    "past": "palaha",
+    "future": "palgen",
+    "negative": "palja",
+    "negative_future": "paljawa",
+    "command": "palbo",
+    "negative_command": "palnabe",
+    "infinitive": "palna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "send": {
+   "root": "wat·a",
+   "forms": {
+    "present": "wat·a",
+    "continuous": "wat·enga",
+    "past": "wat·aha",
+    "future": "wat·gen",
+    "negative": "wat·ja",
+    "negative_future": "wat·jawa",
+    "command": "wat·bo",
+    "negative_command": "wat·nabe",
+    "infinitive": "wat·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "settle": {
+   "root": "wat·a",
+   "forms": {
+    "present": "wat·a",
+    "continuous": "wat·enga",
+    "past": "wat·aha",
+    "future": "wat·gen",
+    "negative": "wat·ja",
+    "negative_future": "wat·jawa",
+    "command": "wat·bo",
+    "negative_command": "wat·nabe",
+    "infinitive": "wat·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "shake": {
+   "root": "moa",
+   "forms": {
+    "present": "moa",
+    "continuous": "moenga",
+    "past": "moaha",
+    "future": "mogen",
+    "negative": "moja",
+    "negative_future": "mojawa",
+    "command": "mobo",
+    "negative_command": "monabe",
+    "infinitive": "mona"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "share": {
+   "root": "su·al·a",
+   "forms": {
+    "present": "su·al·a",
+    "continuous": "su·al·enga",
+    "past": "su·al·aha",
+    "future": "su·al·gen",
+    "negative": "su·al·ja",
+    "negative_future": "su·al·jawa",
+    "command": "su·al·bo",
+    "negative_command": "su·al·nabe",
+    "infinitive": "su·al·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "shout": {
+   "root": "ku·rak·a",
+   "forms": {
+    "present": "ku·rak·a",
+    "continuous": "ku·rak·enga",
+    "past": "ku·rak·aha",
+    "future": "ku·rak·gen",
+    "negative": "ku·rak·ja",
+    "negative_future": "ku·rak·jawa",
+    "command": "ku·rak·bo",
+    "negative_command": "ku·rak·nabe",
+    "infinitive": "ku·rak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "sing": {
+   "root": "ring·a",
+   "forms": {
+    "present": "ring·a",
+    "continuous": "ring·enga",
+    "past": "ring·aha",
+    "future": "ring·gen",
+    "negative": "ring·ja",
+    "negative_future": "ring·jawa",
+    "command": "ring·bo",
+    "negative_command": "ring·nabe",
+    "infinitive": "ring·na"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "singe": {
+   "root": "so·a",
+   "forms": {
+    "present": "so·a",
+    "continuous": "ring·enga",
+    "past": "so·aha",
+    "future": "so·gen",
+    "negative": "so·ja",
+    "negative_future": "so·jawa",
+    "command": "so·bo",
+    "negative_command": "so·nabe",
+    "infinitive": "so·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "sit": {
+   "root": "asonga",
+   "forms": {
+    "present": "asonga",
+    "continuous": "asongenga",
+    "past": "asongaha",
+    "future": "asonggen",
+    "negative": "asongja",
+    "negative_future": "asongjawa",
+    "command": "asongbo",
+    "negative_command": "asongnabe",
+    "infinitive": "asongna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "pinned",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "sleep": {
+   "root": "tusia",
+   "forms": {
+    "present": "tusia",
+    "continuous": "tusienga",
+    "past": "tusiaha",
+    "future": "tusigen",
+    "negative": "tusija",
+    "negative_future": "tusijawa",
+    "command": "tusibo",
+    "negative_command": "tusinabe",
+    "infinitive": "tusina"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "pinned",
+    "negative_command": "derived",
+    "infinitive": "pinned"
+   }
+  },
+  "smell": {
+   "root": "biba",
+   "forms": {
+    "present": "biba",
+    "continuous": "bibenga",
+    "past": "bibaha",
+    "future": "bibgen",
+    "negative": "bibja",
+    "negative_future": "bibjawa",
+    "command": "bibbo",
+    "negative_command": "bibnabe",
+    "infinitive": "bibna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "smile": {
+   "root": "ka·dingsmita",
+   "forms": {
+    "present": "ka·dingsmita",
+    "continuous": "ka·dingsmitenga",
+    "past": "ka·dingsmitaha",
+    "future": "ka·dingsmitgen",
+    "negative": "ka·dingsmitja",
+    "negative_future": "ka·dingsmitjawa",
+    "command": "ka·dingsmitbo",
+    "negative_command": "ka·dingsmitnabe",
+    "infinitive": "ka·dingsmitna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "smoulder": {
+   "root": "kamchipila",
+   "forms": {
+    "present": "kamchipila",
+    "continuous": "kamchipilenga",
+    "past": "kamchipilaha",
+    "future": "kamchipilgen",
+    "negative": "kamchipilja",
+    "negative_future": "kamchipiljawa",
+    "command": "kamchipilbo",
+    "negative_command": "kamchipilnabe",
+    "infinitive": "kamchipilna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "solace": {
+   "root": "ka·dimea",
+   "forms": {
+    "present": "ka·dimea",
+    "continuous": "ka·dimeenga",
+    "past": "ka·dimeaha",
+    "future": "ka·dimegen",
+    "negative": "ka·dimeja",
+    "negative_future": "ka·dimejawa",
+    "command": "ka·dimebo",
+    "negative_command": "ka·dimenabe",
+    "infinitive": "ka·dimena"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "speak": {
+   "root": "agana",
+   "forms": {
+    "present": "agana",
+    "continuous": "aganenga",
+    "past": "aganaha",
+    "future": "agangen",
+    "negative": "aganja",
+    "negative_future": "aganjawa",
+    "command": "aganbo",
+    "negative_command": "agannabe",
+    "infinitive": "aganna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "spread": {
+   "root": "barama",
+   "forms": {
+    "present": "barama",
+    "continuous": "baramenga",
+    "past": "baramaha",
+    "future": "baramgen",
+    "negative": "baramja",
+    "negative_future": "baramjawa",
+    "command": "barambo",
+    "negative_command": "baramnabe",
+    "infinitive": "baramna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "stammer": {
+   "root": "tu·ta·ban·ta",
+   "forms": {
+    "present": "tu·ta·ban·ta",
+    "continuous": "tu·ta·ban·tenga",
+    "past": "tu·ta·ban·taha",
+    "future": "tu·ta·ban·tgen",
+    "negative": "tu·ta·ban·tja",
+    "negative_future": "tu·ta·ban·tjawa",
+    "command": "tu·ta·ban·tbo",
+    "negative_command": "tu·ta·ban·tnabe",
+    "infinitive": "tu·ta·ban·tna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "stand": {
+   "root": "chadenga",
+   "forms": {
+    "present": "chadenga",
+    "continuous": "chadatenga",
+    "past": "chadengaha",
+    "future": "chadenggen",
+    "negative": "chadengja",
+    "negative_future": "chadengjawa",
+    "command": "chadengbo",
+    "negative_command": "chadengnabe",
+    "infinitive": "chadengna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "pinned",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "start": {
+   "root": "a·bachenga",
+   "forms": {
+    "present": "a·bachenga",
+    "continuous": "a·bachenga",
+    "past": "a·bachengaha",
+    "future": "a·bachenggen",
+    "negative": "a·bachengja",
+    "negative_future": "a·bachengjawa",
+    "command": "a·bachengbo",
+    "negative_command": "a·bachengnabe",
+    "infinitive": "a·bachengna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "engine",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "stay": {
+   "root": "donga",
+   "forms": {
+    "present": "donga",
+    "continuous": "dongenga",
+    "past": "dongaha",
+    "future": "donggen",
+    "negative": "dongja",
+    "negative_future": "dongjawa",
+    "command": "dongbo",
+    "negative_command": "dongnabe",
+    "infinitive": "dongna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "pinned",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "stir": {
+   "root": "gon·gon·a",
+   "forms": {
+    "present": "gon·gon·a",
+    "continuous": "gon·gon·enga",
+    "past": "gon·gon·aha",
+    "future": "gon·gon·gen",
+    "negative": "gon·gon·ja",
+    "negative_future": "gon·gon·jawa",
+    "command": "gon·gon·bo",
+    "negative_command": "gon·gon·nabe",
+    "infinitive": "gon·gon·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "stop": {
+   "root": "dontonga",
+   "forms": {
+    "present": "dontonga",
+    "continuous": "dontongenga",
+    "past": "dontongaha",
+    "future": "dontonggen",
+    "negative": "dontongja",
+    "negative_future": "dontongjawa",
+    "command": "dontongbo",
+    "negative_command": "dontongnabe",
+    "infinitive": "dontongna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "stretch": {
+   "root": "han·sal·a",
+   "forms": {
+    "present": "han·sal·a",
+    "continuous": "han·sal·enga",
+    "past": "han·sal·aha",
+    "future": "han·sal·gen",
+    "negative": "han·sal·ja",
+    "negative_future": "han·sal·jawa",
+    "command": "han·sal·bo",
+    "negative_command": "han·sal·nabe",
+    "infinitive": "han·sal·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "strip": {
+   "root": "grua",
+   "forms": {
+    "present": "grua",
+    "continuous": "gruenga",
+    "past": "gruaha",
+    "future": "grugen",
+    "negative": "gruja",
+    "negative_future": "grujawa",
+    "command": "grubo",
+    "negative_command": "grunabe",
+    "infinitive": "gruna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "suffer": {
+   "root": "jom·a",
+   "forms": {
+    "present": "jom·a",
+    "continuous": "jom·enga",
+    "past": "jom·aha",
+    "future": "jom·gen",
+    "negative": "jom·ja",
+    "negative_future": "jom·jawa",
+    "command": "jom·bo",
+    "negative_command": "jom·nabe",
+    "infinitive": "jom·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "support": {
+   "root": "sin·chak·a",
+   "forms": {
+    "present": "sin·chak·a",
+    "continuous": "sin·chak·enga",
+    "past": "sin·chak·aha",
+    "future": "sin·chak·gen",
+    "negative": "sin·chak·ja",
+    "negative_future": "sin·chak·jawa",
+    "command": "sin·chak·bo",
+    "negative_command": "sin·chak·nabe",
+    "infinitive": "sin·chak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "surrender": {
+   "root": "bama",
+   "forms": {
+    "present": "bama",
+    "continuous": "bamenga",
+    "past": "bamaha",
+    "future": "bamgen",
+    "negative": "bamja",
+    "negative_future": "bamjawa",
+    "command": "bambo",
+    "negative_command": "bamnabe",
+    "infinitive": "bamna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "suspect": {
+   "root": "mik·sok·a",
+   "forms": {
+    "present": "mik·sok·a",
+    "continuous": "mik·sok·enga",
+    "past": "mik·sok·aha",
+    "future": "mik·sok·gen",
+    "negative": "mik·sok·ja",
+    "negative_future": "mik·sok·jawa",
+    "command": "mik·sok·bo",
+    "negative_command": "mik·sok·nabe",
+    "infinitive": "mik·sok·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "suspend": {
+   "root": "kadingde·a",
+   "forms": {
+    "present": "kadingde·a",
+    "continuous": "kadingde·enga",
+    "past": "kadingde·aha",
+    "future": "kadingde·gen",
+    "negative": "kadingde·ja",
+    "negative_future": "kadingde·jawa",
+    "command": "kadingde·bo",
+    "negative_command": "kadingde·nabe",
+    "infinitive": "kadingde·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "sweep": {
+   "root": "ot·rok·a",
+   "forms": {
+    "present": "ot·rok·a",
+    "continuous": "ot·rok·enga",
+    "past": "ot·rok·aha",
+    "future": "ot·rok·gen",
+    "negative": "ot·rok·ja",
+    "negative_future": "ot·rok·jawa",
+    "command": "ot·rok·bo",
+    "negative_command": "ot·rok·nabe",
+    "infinitive": "ot·rok·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "swim": {
+   "root": "jroa",
+   "forms": {
+    "present": "jroa",
+    "continuous": "jroenga",
+    "past": "jroaha",
+    "future": "jrogen",
+    "negative": "jroja",
+    "negative_future": "jrojawa",
+    "command": "jrobo",
+    "negative_command": "jronabe",
+    "infinitive": "jrona"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "take": {
+   "root": "ra·a",
+   "forms": {
+    "present": "ra·a",
+    "continuous": "ra·enga",
+    "past": "ra·aha",
+    "future": "ra·gen",
+    "negative": "ra·ja",
+    "negative_future": "ra·jawa",
+    "command": "ra·bo",
+    "negative_command": "ra·nabe",
+    "infinitive": "ra·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "talk": {
+   "root": "bol·a",
+   "forms": {
+    "present": "bol·a",
+    "continuous": "bol·enga",
+    "past": "bol·aha",
+    "future": "bol·gen",
+    "negative": "bol·ja",
+    "negative_future": "bol·jawa",
+    "command": "bol·bo",
+    "negative_command": "bol·nabe",
+    "infinitive": "bol·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "tax": {
+   "root": "kajina",
+   "forms": {
+    "present": "kajina",
+    "continuous": "kajinenga",
+    "past": "kajinaha",
+    "future": "kajingen",
+    "negative": "kajinja",
+    "negative_future": "kajinjawa",
+    "command": "kajinbo",
+    "negative_command": "kajinnabe",
+    "infinitive": "kajinna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "tease": {
+   "root": "rong·kal·a",
+   "forms": {
+    "present": "rong·kal·a",
+    "continuous": "rong·kal·enga",
+    "past": "rong·kal·aha",
+    "future": "rong·kal·gen",
+    "negative": "rong·kal·ja",
+    "negative_future": "rong·kal·jawa",
+    "command": "rong·kal·bo",
+    "negative_command": "rong·kal·nabe",
+    "infinitive": "rong·kal·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "tell": {
+   "root": "agana",
+   "forms": {
+    "present": "agana",
+    "continuous": "aganenga",
+    "past": "aganaha",
+    "future": "agangen",
+    "negative": "aganja",
+    "negative_future": "aganjawa",
+    "command": "aganbo",
+    "negative_command": "agannabe",
+    "infinitive": "aganna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "thatch": {
+   "root": "ja·ku·a",
+   "forms": {
+    "present": "ja·ku·a",
+    "continuous": "ja·ku·enga",
+    "past": "ja·ku·aha",
+    "future": "ja·ku·gen",
+    "negative": "ja·ku·ja",
+    "negative_future": "ja·ku·jawa",
+    "command": "ja·ku·bo",
+    "negative_command": "ja·ku·nabe",
+    "infinitive": "ja·ku·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "think": {
+   "root": "chan·chi·a",
+   "forms": {
+    "present": "chan·chi·a",
+    "continuous": "chan·chi·enga",
+    "past": "chan·chi·aha",
+    "future": "chan·chi·gen",
+    "negative": "chan·chi·ja",
+    "negative_future": "chan·chi·jawa",
+    "command": "chan·chi·bo",
+    "negative_command": "chan·chi·nabe",
+    "infinitive": "chan·chi·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "threaten": {
+   "root": "ku·ching·a",
+   "forms": {
+    "present": "ku·ching·a",
+    "continuous": "ku·ching·enga",
+    "past": "ku·ching·aha",
+    "future": "ku·ching·gen",
+    "negative": "ku·ching·ja",
+    "negative_future": "ku·ching·jawa",
+    "command": "ku·ching·bo",
+    "negative_command": "ku·ching·nabe",
+    "infinitive": "ku·ching·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "thwart": {
+   "root": "champenga",
+   "forms": {
+    "present": "champenga",
+    "continuous": "champenga",
+    "past": "champengaha",
+    "future": "champenggen",
+    "negative": "champengja",
+    "negative_future": "champengjawa",
+    "command": "champengbo",
+    "negative_command": "champengnabe",
+    "infinitive": "champengna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "engine",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "tickle": {
+   "root": "lek·gu·a",
+   "forms": {
+    "present": "lek·gu·a",
+    "continuous": "lek·gu·enga",
+    "past": "lek·gu·aha",
+    "future": "lek·gu·gen",
+    "negative": "lek·gu·ja",
+    "negative_future": "lek·gu·jawa",
+    "command": "lek·gu·bo",
+    "negative_command": "lek·gu·nabe",
+    "infinitive": "lek·gu·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "tie": {
+   "root": "ka·a",
+   "forms": {
+    "present": "ka·a",
+    "continuous": "ka·enga",
+    "past": "ka·aha",
+    "future": "ka·gen",
+    "negative": "ka·ja",
+    "negative_future": "ka·jawa",
+    "command": "ka·bo",
+    "negative_command": "ka·nabe",
+    "infinitive": "ka·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "tiltilate": {
+   "root": "ka·jikata",
+   "forms": {
+    "present": "ka·jikata",
+    "continuous": "ka·jikatenga",
+    "past": "ka·jikataha",
+    "future": "ka·jikatgen",
+    "negative": "ka·jikatja",
+    "negative_future": "ka·jikatjawa",
+    "command": "ka·jikatbo",
+    "negative_command": "ka·jikatnabe",
+    "infinitive": "ka·jikatna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "tolerate": {
+   "root": "chak·a",
+   "forms": {
+    "present": "chak·a",
+    "continuous": "chak·enga",
+    "past": "chak·aha",
+    "future": "chak·gen",
+    "negative": "chak·ja",
+    "negative_future": "chak·jawa",
+    "command": "chak·bo",
+    "negative_command": "chak·nabe",
+    "infinitive": "chak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "touch": {
+   "root": "rim·a",
+   "forms": {
+    "present": "rim·a",
+    "continuous": "rim·enga",
+    "past": "rim·aha",
+    "future": "rim·gen",
+    "negative": "rim·ja",
+    "negative_future": "rim·jawa",
+    "command": "rim·bo",
+    "negative_command": "rim·nabe",
+    "infinitive": "rim·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "trade": {
+   "root": "sre·grik·a",
+   "forms": {
+    "present": "sre·grik·a",
+    "continuous": "sre·grik·enga",
+    "past": "sre·grik·aha",
+    "future": "sre·grik·gen",
+    "negative": "sre·grik·ja",
+    "negative_future": "sre·grik·jawa",
+    "command": "sre·grik·bo",
+    "negative_command": "sre·grik·nabe",
+    "infinitive": "sre·grik·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "trust": {
+   "root": "ka·donga",
+   "forms": {
+    "present": "ka·donga",
+    "continuous": "ka·dongenga",
+    "past": "ka·dongaha",
+    "future": "ka·donggen",
+    "negative": "ka·dongja",
+    "negative_future": "ka·dongjawa",
+    "command": "ka·dongbo",
+    "negative_command": "ka·dongnabe",
+    "infinitive": "ka·dongna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "try": {
+   "root": "ni·a",
+   "forms": {
+    "present": "ni·a",
+    "continuous": "ni·enga",
+    "past": "ni·aha",
+    "future": "ni·gen",
+    "negative": "ni·ja",
+    "negative_future": "ni·jawa",
+    "command": "ni·bo",
+    "negative_command": "ni·nabe",
+    "infinitive": "ni·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "twist": {
+   "root": "sak·a",
+   "forms": {
+    "present": "sak·a",
+    "continuous": "sak·enga",
+    "past": "sak·aha",
+    "future": "sak·gen",
+    "negative": "sak·ja",
+    "negative_future": "sak·jawa",
+    "command": "sak·bo",
+    "negative_command": "sak·nabe",
+    "infinitive": "sak·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "unfurl": {
+   "root": "badala",
+   "forms": {
+    "present": "badala",
+    "continuous": "badalenga",
+    "past": "badalaha",
+    "future": "badalgen",
+    "negative": "badalja",
+    "negative_future": "badaljawa",
+    "command": "badalbo",
+    "negative_command": "badalnabe",
+    "infinitive": "badalna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "unravel": {
+   "root": "gru·a",
+   "forms": {
+    "present": "gru·a",
+    "continuous": "gru·enga",
+    "past": "gru·aha",
+    "future": "gru·gen",
+    "negative": "gru·ja",
+    "negative_future": "gru·jawa",
+    "command": "gru·bo",
+    "negative_command": "gru·nabe",
+    "infinitive": "gru·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "unseam": {
+   "root": "grua",
+   "forms": {
+    "present": "grua",
+    "continuous": "gruenga",
+    "past": "gruaha",
+    "future": "grugen",
+    "negative": "gruja",
+    "negative_future": "grujawa",
+    "command": "grubo",
+    "negative_command": "grunabe",
+    "infinitive": "gruna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "unstitch": {
+   "root": "grua",
+   "forms": {
+    "present": "grua",
+    "continuous": "gruenga",
+    "past": "gruaha",
+    "future": "grugen",
+    "negative": "gruja",
+    "negative_future": "grujawa",
+    "command": "grubo",
+    "negative_command": "grunabe",
+    "infinitive": "gruna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "untie": {
+   "root": "eng·a",
+   "forms": {
+    "present": "eng·a",
+    "continuous": "eng·enga",
+    "past": "eng·aha",
+    "future": "eng·gen",
+    "negative": "eng·ja",
+    "negative_future": "eng·jawa",
+    "command": "eng·bo",
+    "negative_command": "eng·nabe",
+    "infinitive": "eng·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "use": {
+   "root": "jak·kal·a",
+   "forms": {
+    "present": "jak·kal·a",
+    "continuous": "jak·kal·enga",
+    "past": "jak·kal·aha",
+    "future": "jak·kal·gen",
+    "negative": "jak·kal·ja",
+    "negative_future": "jak·kal·jawa",
+    "command": "jak·kal·bo",
+    "negative_command": "jak·kal·nabe",
+    "infinitive": "jak·kal·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "visit": {
+   "root": "roa",
+   "forms": {
+    "present": "roa",
+    "continuous": "roenga",
+    "past": "roaha",
+    "future": "rogen",
+    "negative": "roja",
+    "negative_future": "rojawa",
+    "command": "robo",
+    "negative_command": "ronabe",
+    "infinitive": "rona"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "wail": {
+   "root": "grap·a",
+   "forms": {
+    "present": "grap·a",
+    "continuous": "grap·enga",
+    "past": "grap·aha",
+    "future": "grap·gen",
+    "negative": "grap·ja",
+    "negative_future": "grap·jawa",
+    "command": "grap·bo",
+    "negative_command": "grap·nabe",
+    "infinitive": "grap·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "walk": {
+   "root": "re·a",
+   "forms": {
+    "present": "re·a",
+    "continuous": "re·enga",
+    "past": "re·aha",
+    "future": "re·gen",
+    "negative": "re·ja",
+    "negative_future": "re·jawa",
+    "command": "re·bo",
+    "negative_command": "re·nabe",
+    "infinitive": "re·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "pinned",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "warn": {
+   "root": "ku·ron·a",
+   "forms": {
+    "present": "ku·ron·a",
+    "continuous": "ku·ron·enga",
+    "past": "ku·ron·aha",
+    "future": "ku·ron·gen",
+    "negative": "ku·ron·ja",
+    "negative_future": "ku·ron·jawa",
+    "command": "ku·ron·bo",
+    "negative_command": "ku·ron·nabe",
+    "infinitive": "ku·ron·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "wash": {
+   "root": "su·sranga",
+   "forms": {
+    "present": "su·sranga",
+    "continuous": "su·galenga",
+    "past": "su·srangaha",
+    "future": "su·sranggen",
+    "negative": "su·srangja",
+    "negative_future": "su·srangjawa",
+    "command": "su·srangbo",
+    "negative_command": "su·srangnabe",
+    "infinitive": "su·srangna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "wear": {
+   "root": "krok·a",
+   "forms": {
+    "present": "krok·a",
+    "continuous": "krok·enga",
+    "past": "krok·aha",
+    "future": "krok·gen",
+    "negative": "krok·ja",
+    "negative_future": "krok·jawa",
+    "command": "krok·bo",
+    "negative_command": "krok·nabe",
+    "infinitive": "krok·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "weep": {
+   "root": "grap·a",
+   "forms": {
+    "present": "grap·a",
+    "continuous": "grap·enga",
+    "past": "grap·aha",
+    "future": "grap·gen",
+    "negative": "grap·ja",
+    "negative_future": "grap·jawa",
+    "command": "grap·bo",
+    "negative_command": "grap·nabe",
+    "infinitive": "grap·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "whisper": {
+   "root": "ku·mi·si·a",
+   "forms": {
+    "present": "ku·mi·si·a",
+    "continuous": "ku·mi·si·enga",
+    "past": "ku·mi·si·aha",
+    "future": "ku·mi·si·gen",
+    "negative": "ku·mi·si·ja",
+    "negative_future": "ku·mi·si·jawa",
+    "command": "ku·mi·si·bo",
+    "negative_command": "ku·mi·si·nabe",
+    "infinitive": "ku·mi·si·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "wrap": {
+   "root": "tep·a",
+   "forms": {
+    "present": "tep·a",
+    "continuous": "tep·enga",
+    "past": "tep·aha",
+    "future": "tep·gen",
+    "negative": "tep·ja",
+    "negative_future": "tep·jawa",
+    "command": "tep·bo",
+    "negative_command": "tep·nabe",
+    "infinitive": "tep·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "write": {
+   "root": "sea",
+   "forms": {
+    "present": "sea",
+    "continuous": "seenga",
+    "past": "seaha",
+    "future": "segen",
+    "negative": "seja",
+    "negative_future": "sejawa",
+    "command": "sebo",
+    "negative_command": "senabe",
+    "infinitive": "sena"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "watch": {
+   "root": "nia",
+   "forms": {
+    "present": "nia",
+    "continuous": "nienga",
+    "past": "niaha",
+    "future": "nigen",
+    "negative": "nija",
+    "negative_future": "nijawa",
+    "command": "nibo",
+    "negative_command": "ninabe",
+    "infinitive": "nina"
+   },
+   "status": {
+    "present": "native",
+    "continuous": "native",
+    "past": "native",
+    "future": "native",
+    "negative": "derived",
+    "negative_future": "native",
+    "command": "native",
+    "negative_command": "native",
+    "infinitive": "native"
+   }
+  },
+  "find": {
+   "root": "nika",
+   "forms": {
+    "present": "nika",
+    "continuous": "nikenga",
+    "past": "nikaha",
+    "future": "nikgen",
+    "negative": "nikja",
+    "negative_future": "nikjawa",
+    "command": "nikbo",
+    "negative_command": "niknabe",
+    "infinitive": "nikna"
+   },
+   "status": {
+    "present": "native",
+    "continuous": "derived",
+    "past": "native",
+    "future": "native",
+    "negative": "derived",
+    "negative_future": "native",
+    "command": "native",
+    "negative_command": "native",
+    "infinitive": "native"
+   }
+  }
+ },
+ "manual": [
+  "alight",
+  "bark",
+  "bask",
+  "bay",
+  "be",
+  "bear",
+  "blossom",
+  "buzz",
+  "cajole",
+  "cane",
+  "chew",
+  "circumcise",
+  "consider",
+  "court",
+  "croak",
+  "curse",
+  "drown",
+  "enforce",
+  "entice",
+  "evaporate",
+  "feast",
+  "feel",
+  "flower",
+  "fly",
+  "grumble",
+  "hoe",
+  "hunt",
+  "judge",
+  "leach",
+  "leave",
+  "lop",
+  "masticate",
+  "mingle",
+  "narrate",
+  "overcharge",
+  "owe",
+  "pray",
+  "relate",
+  "remain",
+  "resign",
+  "ridicule",
+  "ripen",
+  "ruffle",
+  "rumble",
+  "seek",
+  "skin",
+  "spring",
+  "sting",
+  "suppose",
+  "suppress",
+  "teach",
+  "testify",
+  "throb",
+  "throw",
+  "ventilate",
+  "wait",
+  "wake",
+  "woo",
+  "yield"
+ ],
+ "review": {
+  "do": {
+   "root": "ka·a",
+   "derived_future": "ka·gen",
+   "engine_future": "ka·gen",
+   "derived_neg_future": "ka·jawa",
+   "engine_neg_future": "ihing anga"
+  },
+  "go": {
+   "root": "re·a",
+   "derived_future": "re·gen",
+   "engine_future": "re·anggen",
+   "derived_neg_future": "re·jawa",
+   "engine_neg_future": "re·jawa"
+  },
+  "need": {
+   "root": "nanga",
+   "derived_future": "nanggen",
+   "engine_future": "nanga",
+   "derived_neg_future": "nangjawa",
+   "engine_neg_future": "nangja"
+  },
+  "want": {
+   "root": "ska",
+   "derived_future": "skgen",
+   "engine_future": "ska",
+   "derived_neg_future": "skjawa",
+   "engine_neg_future": "skja"
+  },
+  "work": {
+   "root": "dak·a",
+   "derived_future": "dak·gen",
+   "engine_future": "dakgen",
+   "derived_neg_future": "dak·jawa",
+   "engine_neg_future": "dak·jawa"
+  }
+ }
+}

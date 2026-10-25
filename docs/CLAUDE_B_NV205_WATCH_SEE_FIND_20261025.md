@@ -20,3 +20,6 @@ Tests: `nv205_watch_see_find.test.js`; superseded the ni·rik·a assertion and t
 4. Retire / annotate `ni·rik·a`, `go·ri`, `ni·chak·a` as `watch` candidates in master_dictionary.
 5. Earlier held items: Uchi/Iachi in negatives, `look at that` / object `that`, `Uamangchi`, NV-199/200 verification.
 - NV-206 (Thangseng): `I am watching TV.` = `Anga TV nienga`; TV is written TV and unmarked with watch (no -ko); `watch TV!` -> `TV nibo`.
+
+## NV-207: verb paradigms for all verbs
+`scripts/generate-verb-paradigms.mjs` -> `src/data/verb_paradigms.json`, `docs/VERB_PARADIGMS.md`, helper `src/verbParadigm.js` (`getVerbParadigm`). 255 verbs with 9 forms each (present, continuous, past, future, negative, negative future, command, negative command, infinitive). Status per form: native (watch / see / find), pinned (already a row in corrections / irregular_verbs), engine (live `I am V-ing`), derived (suffix rules, NOT native-verified). 5 verbs disagree with the live engine (listed under Review) and 59 have irregular or unclean roots (Manual); neither group is guessed. Re-run the script after any verb data change.
