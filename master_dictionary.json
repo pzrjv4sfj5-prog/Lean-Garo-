@@ -24130,7 +24130,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — NV-206 (2026-10-25): Project Owner supplied belly=Ok; consistent with NV-080 where native-confirmed 'stomach'=Ok and bik·ma was not selected. Retained per citation discipline, not deleted.",
+    "notes": "SUPERSEDED — NV-207 (2026-10-25): Project Owner supplied belly=Ok; consistent with NV-080 where native-confirmed 'stomach'=Ok and bik·ma was not selected. Retained per citation discipline, not deleted.",
     "confidence": "superseded"
   },
   {
@@ -44749,7 +44749,7 @@
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "SUPERSEDED — NV-206 (2026-10-25): spelling variant of the same sense; Project Owner supplied 'Ok saa' (no raka). Project Owner-relayed, not a native quote. Retained per citation discipline, not deleted.",
+    "notes": "SUPERSEDED — NV-207 (2026-10-25): spelling variant of the same sense; Project Owner supplied 'Ok saa' (no raka). Project Owner-relayed, not a native quote. Retained per citation discipline, not deleted.",
     "confidence": "superseded"
   },
   {
@@ -79646,7 +79646,7 @@
     "pos": "n.",
     "category": "body",
     "classifier": null,
-    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified.",
+    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified.",
     "confidence": "unverified"
   },
   {
@@ -79655,7 +79655,7 @@
     "pos": "n.",
     "category": "health",
     "classifier": null,
-    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Existing unverified 'ok sa·a' / 'Ok·saa' rows for the same sense differ in spelling; not reconciled, awaiting Owner ruling.",
+    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Existing unverified 'ok sa·a' / 'Ok·saa' rows for the same sense differ in spelling; not reconciled, awaiting Owner ruling.",
     "confidence": "unverified"
   },
   {
@@ -79664,7 +79664,7 @@
     "pos": "v.",
     "category": "health",
     "classifier": null,
-    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Stomach rumbling. Same form as T's 'to grumble' sense.",
+    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Stomach rumbling. Same form as T's 'to grumble' sense.",
     "confidence": "unverified"
   },
   {
@@ -79673,7 +79673,7 @@
     "pos": "v.",
     "category": "health",
     "classifier": null,
-    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Stomach grumbling. Same form as T's 'to rumble' sense. Distinct from superseded 'call'=ok·gam·a (NV-041).",
+    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified. Stomach grumbling. Same form as T's 'to rumble' sense. Distinct from superseded 'call'=ok·gam·a (NV-041).",
     "confidence": "unverified"
   },
   {
@@ -79682,7 +79682,7 @@
     "pos": "n.",
     "category": "health",
     "classifier": null,
-    "notes": "NV-206 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified.",
+    "notes": "NV-207 (2026-10-25): new word supplied by the Project Owner (T) in chat; Project Owner-relayed, not a native (Thangseng) quote; source not stated, so unverified.",
     "confidence": "unverified"
   }
 ]
