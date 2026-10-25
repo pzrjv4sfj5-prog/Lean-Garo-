@@ -1329,13 +1329,23 @@ export function tryMayICanIRequestConstruction(input) {
 // emitted here. "this" has no placement evidence and is untouched.
 const THAT_NOUN_DENY = new Set(['is','was','one','far','are','will','can','way','much','many','all','time','good','bad']);
 export function tryThatNounConstruction(input) {
-  const m = String(input).trim().match(/^that\s+([a-z]+)\s*[?.!]?$/i);
+  // NV-198 (2026-10-25, PO authorized grammar-logic closure; NOT native
+  // evidence): proximal `this NOUN` -> `Ia NOUN`, mirroring attested `Ua NOUN`
+  // (Ia/Ua = proximal/distal pair; `Iako angna on·bo` attests Ia = this).
+  // Also `this/that is a(n) NOUN` -> `Dem NOUN` (Garo has no copula; same shape
+  // as `Ua sawa?`) and `this/that one` -> bare `Ia`/`Ua`. Haiwa never emitted.
+  const raw = String(input).trim();
+  const dem = (d) => (d.toLowerCase() === 'this' ? 'Ia' : 'Ua');
+  const one = raw.match(/^(this|that)\s+one\s*[?.!]?$/i);
+  if (one) return dem(one[1]);
+  const cop = raw.match(/^(this|that)\s+is\s+(?:a|an)\s+([a-z]+)\s*[?.!]?$/i);
+  const m = cop || raw.match(/^(this|that)\s+([a-z]+)\s*[?.!]?$/i);
   if (!m) return null;
-  const w = m[1].toLowerCase();
+  const w = m[2].toLowerCase();
   if (THAT_NOUN_DENY.has(w) || isKnownAdjectiveEnglish(w)) return null;
   const noun = lookupGaro(w, 'n.');
   if (!noun || /\[UNKNOWN\]/.test(noun)) return null;
-  return `Ua ${noun}`;
+  return `${dem(m[1])} ${noun}`;
 }
 
 // NV-120 (2026-09-03, Claude B). "-ma" polar-question construction —

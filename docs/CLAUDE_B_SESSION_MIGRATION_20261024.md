@@ -27,3 +27,11 @@ Evidence-first, never infer linguistic facts; engine-only unless PO directs; tes
 - Closed: NV-193 `stay`→`roa` cue router reviewed and accepted as-is; did-questions hold resolved by NV-194 (NV-158 final, bare `-a` in past wh-questions; NV-182 directive rescinded); `.ai/WORKSTATE.yaml` stale `claude_b.next_action` replaced and 6 duplicate mapping keys renamed `_dupN` (strict YAML parse clean).
 - Still open, not B's call: donga/roa outside cue list, `-ko` on locatives, `kina·chak·a` spelling, `Haiwa` triggers, `Ia`+noun, `that` predicate uses, `kam ka·na` vs `dakna`, `May I` pro-drop.
 - PAT was pasted in chat again: PO to rotate. Used inline for the push only; not stored.
+
+## Addendum 2 (2026-10-25): NV-198, PO-authorized closure
+- PO ruled kam ka·na = dakna (synonyms) and told B to close open items by grammar logic. These are PO rulings, not native evidence.
+- Shipped (tests first, `nv196_demonstratives_close.test.js`): `this NOUN`->`Ia NOUN`; `this/that is a NOUN`->`Ia/Ua NOUN`; `this/that one`->`Ia/Ua`; standalone `that`->`Ua`.
+- Closed, no change: work stem (keep kam ka·na), May I keeps Anga, donga/roa and -ko on other locatives keep defaults; A's iano+donga scoping reviewed OK (prefix match on `dong`).
+- Still open (needs evidence): Haiwa triggers (never emitted), `look at that`/object `that`.
+- Gate: unit 713/713, dictionary ok, repository-intelligence 0 new, resync 0, conformance 76/110 0 unbaselined, vite ok.
+- PAT pasted in chat again: rotate. Used inline for push only.
