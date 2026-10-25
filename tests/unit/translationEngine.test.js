@@ -250,7 +250,7 @@ for (const c of REGRESSION_CASES) {
 // Protects against accidental corruption of the JSON file specifically. ---
 test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
   const { default: irregularVerbs } = await import('../../src/data/irregular_verbs.json', { with: { type: 'json' } });
-  assert.equal(Object.keys(irregularVerbs).length, 51, 'entry count: 49 from the original extraction + "has" added 2026-07-13 (suppletive form of "have", same confirmed value "donga") + "smiled" added 2026-08-06 (Ka·dingsmitaha, confirmed same date as the Ka·dingsmita "smile" root)');
+  assert.equal(Object.keys(irregularVerbs).length, 54, 'entry count (NV-205 2026-10-25: + found/watched/watching): 49 from the original extraction + "has" added 2026-07-13 (suppletive form of "have", same confirmed value "donga") + "smiled" added 2026-08-06 (Ka·dingsmitaha, confirmed same date as the Ka·dingsmita "smile" root)');
   assert.equal(irregularVerbs['went'], 're·anga');
   assert.equal(irregularVerbs['ate'], 'cha·aha');
   assert.equal(irregularVerbs['eaten'], 'cha·jok', 'corrected 2026-08-23 (NV-095, Thangseng final reconciliation relay) from cha·manaha');
@@ -274,7 +274,7 @@ test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
 // same pattern as irregular_verbs.json above. ---
 test('purpose_map.json data integrity (BACKLOG-001)', async () => {
   const { default: purposeMap } = await import('../../src/data/purpose_map.json', { with: { type: 'json' } });
-  assert.equal(Object.keys(purposeMap).length, 37);
+  assert.equal(Object.keys(purposeMap).length, 38); // NV-205: + watch (nina)
   assert.equal(purposeMap['eat'], 'cha·na');
   assert.equal(purposeMap['go'], 're·ang·na');
   assert.equal(purposeMap['begin'], "a'ba·cheng·na");
@@ -704,7 +704,7 @@ test('RC-CANDIDATE-026: verb present for a silent-e base with an object present 
 test('RC-CANDIDATE-026 regression guard: genuine sibilant -es verbs are unaffected ("watch")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('he watches the dog');
-  assert.equal(r.garo, 'Ua achakko ni·rik·a');
+  assert.equal(r.garo, 'Ua achakko nia'); // NV-205 (Thangseng): watch = Nia, supersedes ni·rik·a
 });
 
 // --- Two page-113 dictionary entries had a corrupted English headword

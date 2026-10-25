@@ -299,6 +299,21 @@ export async function translate(input) {
   if (result && result.method === 'sov-assembly' && typeof result.garo === 'string' && /\b(to|for)\s+them\b/i.test(String(input))) {
     result = { ...result, garo: result.garo.replace(/\buamangko\b/gi, m => (m[0] === 'U' ? 'Uamangna' : 'uamangna')) };
   }
+  // NV-204 (2026-10-25, grammar logic, not a native quote): command with the object `it`.
+  // `VERB it!` / `do not VERB it` -> `Uko <bare command>` (object before verb, SOV; same
+  // `uko` as attested `Anga uko nika`). Only fires when the bare command already resolves
+  // to a clean -bo / -nabe form, so nothing unverified is composed.
+  {
+    const mi = String(input).trim().match(/^(?:(do\s+not|don'?t)\s+)?([a-z]+)\s+it\s*[!.]?$/i);
+    if (mi && (mi[1] || /!\s*$/.test(String(input).trim()))) {
+      const bare = await translate(mi[1] ? `do not ${mi[2]}` : `${mi[2]}!`);
+      if (bare && typeof bare.garo === 'string' && !bare.garo.includes('[UNKNOWN]') && !bare.garo.includes(' ')
+          && /(bo|nabe|na·be)!?$/i.test(bare.garo) && bare.method !== 'passthrough') {
+        const g = bare.garo.replace(/!$/, '');
+        return { garo: `Uko ${g.charAt(0).toLowerCase()}${g.slice(1)}`, method: 'imperative-object-it', confidence: 0.8 };
+      }
+    }
+  }
   // R-b (Claude A audit 2026-09-28 / RULE-029, verified high, four independent verb roots:
   // Song·bo, Sengbo, sandibo, cha·bo): a bare single-verb command takes -bo in place of
   // the citation-form final -a. Scoped to one English verb + '!' that fell through to
