@@ -79381,5 +79381,131 @@
     "category": "general",
     "notes": "VERIFIED/HIGH — NV-197 (2026-10-25, Thangseng raw reply relayed by Project Owner): Thangseng's own example, opener of his two-sentence demo (`Mijalo na'a maina angko gela?`).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "from here",
+    "garo": "Ianoni",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Ia (pr, this) + -no (locative) + -ni (from/of)."
+  },
+  {
+    "english": "this side",
+    "garo": "Iachipak",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Ia + -chi (directional, RULE-044) + -pak (side). 'on this side, this side'."
+  },
+  {
+    "english": "on this side",
+    "garo": "Iachipak",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): "
+  },
+  {
+    "english": "this much",
+    "garo": "Iantok",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): 'This is all; only this much.' Not generalised to Uantok (unattested)."
+  },
+  {
+    "english": "only this much",
+    "garo": "Iantok",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): "
+  },
+  {
+    "english": "this and that (alt)",
+    "garo": "Iaba uaba",
+    "pos": "pr.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Ia + -ba, Ua + -ba: 'this and that'. Existing primary nang·a·nang·ja kept."
+  },
+  {
+    "english": "there (alt)",
+    "garo": "Uakai",
+    "pos": "adv.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): PO print dictionary; primary `there` = Uano unchanged."
+  },
+  {
+    "english": "by them",
+    "garo": "Uamangchi",
+    "pos": "pr.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Uamang + -chi (agentive/instrumental). PO glossed 'by them; to them'; `to them` left on Uamangna (not ruled)."
+  },
+  {
+    "english": "them (alt)",
+    "garo": "Uamangko",
+    "pos": "pr.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Pronoun case set: Uamangko, Uamangna, Uamangni, Uamangchi."
+  },
+  {
+    "english": "they (alt)",
+    "garo": "Bisong",
+    "pos": "pr.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): PO: bisong and Uamang are synonyms."
+  },
+  {
+    "english": "herewith",
+    "garo": "Iachi",
+    "pos": "prep.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): PO print dictionary: Iachi = 'here, to this place; herewith; hereby'."
+  },
+  {
+    "english": "hereby",
+    "garo": "Iachi",
+    "pos": "prep.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): "
+  },
+  {
+    "english": "to this place",
+    "garo": "Iachi",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): "
+  },
+  {
+    "english": "expression of surprise",
+    "garo": "Ua",
+    "pos": "int.",
+    "category": "general",
+    "classifier": null,
+    "confidence": "unverified",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Ua (int.) = an expression of surprise; distinct from Ua (pr.) he/she/it/that."
   }
 ]

@@ -35,3 +35,9 @@ Evidence-first, never infer linguistic facts; engine-only unless PO directs; tes
 - Still open (needs evidence): Haiwa triggers (never emitted), `look at that`/object `that`.
 - Gate: unit 713/713, dictionary ok, repository-intelligence 0 new, resync 0, conformance 76/110 0 unbaselined, vite ok.
 - PAT pasted in chat again: rotate. Used inline for push only.
+
+## Addendum 3 (2026-10-25): NV-199 Ia/Ua paradigm
+- Grammar: Ia / Ua are pronoun bases (Ua also he/she/it/that, int. surprise). Suffix system: -no locative (Iano), -noni from (Ianoni), -chi directional (Iachi), -chipak side (Iachipak), -ntok only/all (Iantok), -ke excl. (Iake), -ba 'and' (Iaba uaba), -kai adverb (Uakai). Uamang base takes -ko/-na/-ni/-chi.
+- Shipped: 14 unverified master rows; existential `X donga` rule (tests `nv199_ia_ua_paradigm.test.js`). Not inferred: Uachi, Uachipak, Uanoni, Uantok, Iakai.
+- Open for A/PO: `Uako (pr)=Sane` gloss; Uamangchi 'to them'; promote rows on Thangseng confirmation.
+- Gate: unit 743/743, dictionary ok, repo-intel 0 new, resync 0, conformance 76/110 0 unbaselined, vite ok.

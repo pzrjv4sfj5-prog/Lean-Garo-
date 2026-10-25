@@ -1348,6 +1348,22 @@ export function tryThatNounConstruction(input) {
   return `${dem(m[1])} ${noun}`;
 }
 
+// NV-199 (2026-10-25, PO ruling "rice is there = Mi donga", not a native quote):
+// existential `there is/are NOUN` and `NOUN is/are there` -> `NOUN donga`
+// (donga = to exist; same shape as attested "...guang donga" in corrections.json).
+// Bare singular/plural noun only; articles dropped; unknown nouns bail.
+export function tryExistentialThereConstruction(input) {
+  const raw = String(input).trim().replace(/[?.!]+$/, '');
+  const m = raw.match(/^there\s+(?:is|are)\s+(?:(?:a|an|the|some)\s+)?([a-z]+)$/i)
+    || raw.match(/^(?:(?:the|some)\s+)?([a-z]+)\s+(?:is|are)\s+there$/i);
+  if (!m) return null;
+  const w = m[1].toLowerCase();
+  if (THAT_NOUN_DENY.has(w) || isKnownAdjectiveEnglish(w) || PRONOUN_MAP[w]) return null;
+  const noun = lookupGaro(w, 'n.');
+  if (!noun || /\[UNKNOWN\]/.test(noun)) return null;
+  return `${noun} donga`;
+}
+
 // NV-120 (2026-09-03, Claude B). "-ma" polar-question construction —
 // Claude A's 2026-09-03 handoff (Finding 2) reproduced live: paraphrases
 // of the "did you have lunch?" citation produce broken, verb-salvaged
