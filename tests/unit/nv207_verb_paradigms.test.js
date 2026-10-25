@@ -28,3 +28,15 @@ test('NV-207: every emitted verb agrees with the live engine (future, negative f
     assert.equal(await g('I will not ' + v), p.forms.negative_future.toLowerCase(), v);
   }
 });
+
+// NV-207b (PO/Thangseng 2026-10-25): go = Re·a; re·anga is its own verb, "go away"
+test('NV-207b: go = re·a, go away = re·anga are separate verbs', async () => {
+  assert.equal(getVerbParadigm('go').forms.present, 're·a');
+  assert.equal(getVerbParadigm('go away').forms.present, 're·anga');
+  assert.notEqual(getVerbParadigm('go').forms.present, getVerbParadigm('go away').forms.present);
+  const lc = async (en) => (await translate(en)).garo.toLowerCase().replace(/[.!?]$/, '');
+  assert.equal(await lc('go'), 're·a');
+  assert.equal(await lc('I go'), 'anga re·a');
+  assert.equal(await lc('to go away'), 're·anga');
+  assert.equal(await lc('I go away'), 'anga re·anga');
+});

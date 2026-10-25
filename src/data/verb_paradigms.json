@@ -6329,6 +6329,58 @@
     "infinitive": "derived"
    }
   },
+  "go": {
+   "root": "re·a",
+   "note": "root confirmed 2026-10-25; forms derived; engine currently uses the go-away stem for I will go / go! (PO ruling needed)",
+   "forms": {
+    "present": "re·a",
+    "continuous": "re·enga",
+    "past": "re·aha",
+    "future": "re·gen",
+    "negative": "re·ja",
+    "negative_future": "re·jawa",
+    "command": "re·bo",
+    "negative_command": "re·nabe",
+    "infinitive": "re·na"
+   },
+   "status": {
+    "present": "native",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "pinned",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "go away": {
+   "root": "re·anga",
+   "note": "verb confirmed 2026-10-25; engine uses these forms for went / going / will go / go!",
+   "forms": {
+    "present": "re·anga",
+    "continuous": "re·angenga",
+    "past": "re·angaha",
+    "future": "re·anggen",
+    "negative": "re·angja",
+    "negative_future": "re·angjawa",
+    "command": "re·angbo",
+    "negative_command": "re·angnabe",
+    "infinitive": "re·angna"
+   },
+   "status": {
+    "present": "native",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "pinned",
+    "negative_command": "pinned",
+    "infinitive": "derived"
+   }
+  },
   "watch": {
    "root": "nia",
    "forms": {
@@ -6448,13 +6500,6 @@
    "engine_future": "ka·gen",
    "derived_neg_future": "ka·jawa",
    "engine_neg_future": "ihing anga"
-  },
-  "go": {
-   "root": "re·a",
-   "derived_future": "re·gen",
-   "engine_future": "re·anggen",
-   "derived_neg_future": "re·jawa",
-   "engine_neg_future": "re·jawa"
   },
   "need": {
    "root": "nanga",

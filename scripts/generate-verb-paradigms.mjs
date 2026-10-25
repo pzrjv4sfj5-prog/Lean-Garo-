@@ -45,6 +45,17 @@ for (const v of [...new Set([...VERB_LEMMAS, ...EXTRA])].sort()) {
   if (/^[^\s\[]+enga$/.test(ec)) { if (ec !== f.continuous.toLowerCase()) f.continuous = ec; contSrc = 'engine'; }
   out.verbs[v] = { root: r, forms: f, status: Object.fromEntries(Object.entries(f).map(([k, x]) => [k, pinnedSet.has(x.toLowerCase()) ? 'pinned' : (k === 'continuous' && contSrc === 'engine' ? 'engine' : 'derived')])) };
 }
+// NV-207b (PO/Thangseng, 2026-10-25): go = Re·a. `re·anga` is its OWN verb, "go away" (not the past of go).
+// The live engine still builds `I will go` / `go!` from the go-away stem (Re·anggen, Re·ang·bo), so both paradigms are
+// emitted and the disagreement is recorded in `note` for a PO ruling instead of being silently changed.
+for (const [v, root, note] of [
+  ['go', 're·a', 'root confirmed 2026-10-25; forms derived; engine currently uses the go-away stem for I will go / go! (PO ruling needed)'],
+  ['go away', 're·anga', 'verb confirmed 2026-10-25; engine uses these forms for went / going / will go / go!'],
+]) {
+  const f = forms(root);
+  out.verbs[v] = { root, note, forms: f, status: Object.fromEntries(Object.entries(f).map(([k, x]) => [k, k === 'present' ? 'native' : (pinnedSet.has(x.toLowerCase()) ? 'pinned' : 'derived')])) };
+  delete out.review[v]; out.manual = out.manual.filter(m => m !== v);
+}
 // Native Thangseng paradigms override the rule output (NV-205): watch = Nia, see / find = Nika.
 const NATIVE = {
   watch: { present: 'nia', continuous: 'nienga', command: 'nibo', negative_command: 'ninabe', past: 'niaha', future: 'nigen', negative_future: 'nijawa', infinitive: 'nina' },
