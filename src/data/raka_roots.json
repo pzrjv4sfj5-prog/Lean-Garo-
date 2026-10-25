@@ -48,6 +48,11 @@
       "notes": "kata, kataha, katenga, katbo, katgen - NEVER kat·anything"
     },
     {
+      "root": "ring·",
+      "has_raka": true,
+      "notes": "sing sense (NV-208, Project Owner directive 2026-10-25; native 'Hai ring·na' 2026-07-14): ring·a, ring·gen, ring·na, ring·ja, ring·enga (singing is rule-derived, not native-attested). Distinct from drink root 'ring' (no raka)."
+    },
+    {
       "root": "ring",
       "has_raka": false,
       "notes": "Ringa, ring·aha has raka but that's the NOUN ring's possessive, not this verb suffix - excluded from this table's scope. RC-CANDIDATE-009 (2026-07-23): corrections.json had \"ring·na\"/\"ring·gen\" wrongly using the raka'd ring·a=\"sing\" homophone for \"drink\" - fixed to ringna/ringgen."
