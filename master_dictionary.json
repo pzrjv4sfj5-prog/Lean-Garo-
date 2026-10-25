@@ -6563,15 +6563,17 @@
   },
   {
     "english": "what should i do?",
-    "garo": "Ang·a maiko dakgen?",
+    "garo": "Anga maiko dakgen?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): first-person pronoun is `Anga` (no raka); `Ang·a` was a relay typo."
   },
   {
     "english": "what can i do?",
-    "garo": "Ang·a maiko dakgen?",
+    "garo": "Anga maiko dakgen?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): first-person pronoun is `Anga` (no raka); `Ang·a` was a relay typo."
   },
   {
     "english": "what are the questions?",
@@ -18584,11 +18586,11 @@
   },
   {
     "english": "Greedy",
-    "garo": "mik·bok·a",
+    "garo": "mikboka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `mikboka` has NO raka; `mik·bok·a` superseded spelling.",
     "confidence": "verified_high"
   },
   {
@@ -27773,11 +27775,11 @@
   },
   {
     "english": "covet",
-    "garo": "mik·bok·a",
+    "garo": "mikboka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
+    "notes": "variant/UNVERIFIED/HIGH NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `mikboka` has NO raka; `mik·bok·a` superseded spelling.",
     "confidence": "unverified"
   },
   {
@@ -28790,11 +28792,11 @@
   },
   {
     "english": "desire",
-    "garo": "mik·bok·a",
+    "garo": "mikboka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
+    "notes": "variant/UNVERIFIED/HIGH NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `mikboka` has NO raka; `mik·bok·a` superseded spelling.",
     "confidence": "unverified"
   },
   {
@@ -36350,11 +36352,11 @@
   },
   {
     "english": "lust",
-    "garo": "mik·bok·a",
+    "garo": "mikboka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:mik-sil-ek-a / na-si-a",
+    "notes": "UNVERIFIED/HIGH v:mik-sil-ek-a / na-si-a NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `mikboka` has NO raka; `mik·bok·a` superseded spelling.",
     "confidence": "unverified"
   },
   {
@@ -77157,14 +77159,16 @@
     "garo": "Joma",
     "category": null,
     "pos": "v.",
-    "notes": "To get unwell; to be sick."
+    "notes": "To get unwell; to be sick. NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `joma` (no raka) = get unwell / be sick; `jom·a` (raka) is a different verb (sneak/slink).",
+    "confidence": "verified_high"
   },
   {
     "english": "be sick",
     "garo": "Joma",
     "category": null,
     "pos": "v.",
-    "notes": "To get unwell; to be sick."
+    "notes": "To get unwell; to be sick. NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `joma` (no raka) = get unwell / be sick; `jom·a` (raka) is a different verb (sneak/slink).",
+    "confidence": "verified_high"
   },
   {
     "english": "go by stealth",
@@ -79347,6 +79351,20 @@
     "garo": "donga",
     "category": "general",
     "notes": "VERIFIED/HIGH — NV-195 (2026-10-25, Project Owner ruling in chat, not a native quote): `donga` = to have / to exist / to lodge. The ruling listed 'to exist' twice; recorded once, no further sense inferred.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "sneak",
+    "garo": "jom·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `jom·a` (with raka) = to sneak / slink; NOT `joma` (get unwell).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "slink",
+    "garo": "jom·a",
+    "category": "general",
+    "notes": "VERIFIED/HIGH — NV-196 (2026-10-25, Project Owner-relayed, AI-formatted block, no raw native quote): `jom·a` (with raka) = to sneak / slink; NOT `joma` (get unwell).",
     "confidence": "verified_high"
   }
 ]

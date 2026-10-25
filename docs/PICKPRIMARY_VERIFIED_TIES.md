@@ -20,7 +20,7 @@ Claude A whenever there's time — same shape as the `answer`
 - `big red house`: candidates — `dal·gipa nok git·chak`, `dal·gipa git·chak`, `nok git·chak dal·gipa` — shipped: `nok git·chak dal·gipa`
 - `brave`: candidates — `pa·a`, `sang·chak·a` — shipped: `sang·chak·a`
 - `fever`: candidates — `ding·du·a`, `han·ding·a`, `jom·a` — shipped: `jom·a`
-- `greedy`: candidates — `mat·u·a`, `mik·bok·a`, `mik·ni·a` — shipped: `mik·ni·a`
+- `greedy`: candidates — `mat·u·a`, `mikboka`, `mik·ni·a` — shipped: `mik·ni·a`
 - `he`: candidates — `Ua`, `Bia` — shipped: `Bia`
 - `hoe`: candidates — `git·chi`, `ko·dal` — shipped: `ko·dal`
 - `horn`: candidates — `a·du·ri`, `sing·ga` — shipped: `sing·ga`

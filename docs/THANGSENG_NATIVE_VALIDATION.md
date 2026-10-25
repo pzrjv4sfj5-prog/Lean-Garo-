@@ -7952,3 +7952,13 @@ Project Owner rulings in chat (not native quotes). Raw text: "1.kina·chak·a 2.
 3. **`donga` senses:** `to have`, `to exist`, `to lodge` = `donga` (master rows verified_high per PO; `corrections.json` pins). The ruling listed `to exist` twice; recorded once, nothing inferred for the repeat (PO may have meant a different fourth sense). Bare `exist` = `ong·a` (unverified) unchanged.
 Tests: `tests/unit/nv195_iano_donga_rulings.test.js`.
 
+## NV-196 (2026-10-25, Project Owner-relayed, AI-formatted blocks; no raw native quotes)
+
+Two pasted blocks (a vocabulary/tense update and a typo correction). Provenance: summaries written by an intermediary AI, not Thangseng's own words. Log as PO-relayed until raw text arrives.
+**Applied (data only):** `What should I do?` / `What can I do?` = `Anga maiko dakgen?` (`Ang·a` was a relay typo); `joma` (no raka) = get unwell / be sick (existing `be sick` / `get unwell` rows promoted to verified_high); `jom·a` (raka) = sneak / slink (new rows); `mikboka` (no raka) replaces `mik·bok·a` on the greedy / covet / desire / lust rows.
+**Not applied, needs a ruling:**
+1. Seven live rows still use `jom·a` for illness-type senses: Fever (verified_high), Sleepy (`mik·gil jom·a`, verified_high), suffer, doze, improve, unhappy, upset. If `jom·a` means sneak/slink these are wrong; the correct forms were not given. `sick` = `Sakama` (NV-080) unchanged.
+2. `greedy` still outputs `mik·ni·a` (tie 4 unresolved); the block gives only the spelling `mikboka`, not which form is primary. `Mikboka` also remains the unverified `jealousy` row (collision).
+3. From the earlier block, not yet applied: `uana` (repo has `uano`), `Bisong` vs verified `Uamang` for "they", `a'palo` vs `a·palo`, the `a·pal` / `a·palo` locative engine rule, `Anga asongboma?` for "Shall I sit?", `Why did they sit there?` pin (stale `a·songenga`), `What did you do yesterday?` (currently broken), saniba/sani/whose, and the scope of the contextual past-tense rule (recommend wh-questions only, per NV-194).
+Tests: `tests/unit/nv196_anga_joma_mikboka.test.js`.
+
