@@ -31,8 +31,14 @@ Lean-Garo: Garo dictionary + English-to-Garo engine. Repo `github.com/pzrjv4sfj5
 ## Standing rules (unchanged; do not re-litigate)
 Anga always; apostrophes in Garo words are raka typos; provenance labels (raw Thangseng = native quote, Owner = "Project Owner directive/-confirmed"); apply only what is ruled; never store a PAT (use a one-shot header; rotate); fetch + compare before push; do not delete the clone until local == origin/main.
 
-## Repository status at close
-Filled in from the actual repo at close (see final chat message / `git status`): HEAD == origin/main, tree clean, WORKSTATE.yaml and SESSION_BOOTSTRAP.md updated, migration doc complete, no local commits, no uncommitted changes.
+## Repository status at close (verified against the repo)
+- [x] Content head e05bee9 (migration doc + WORKSTATE + BOOTSTRAP) == origin/main when checked; this checklist is a docs-only follow-up commit
+- [x] git status clean; no uncommitted changes; no local commits ahead of origin/main
+- [x] WORKSTATE.yaml updated (head 120f66d, next_action_claude_a_20261025e; YAML parses)
+- [x] SESSION_BOOTSTRAP.md updated (pointer to this doc)
+- [x] Migration doc complete (Runtime Handoff included)
+- [x] Gate on content commit 120f66d: unit 859/859, sweep 0 errors, 0 new violations, build OK
+- [x] Native-validation status: no new Thangseng evidence this session; open items listed above
 
 ## Exact next step
 New conversation: paste this file, `git clone` with a fresh PAT, re-sync, run the gate, then take Owner rulings on open items 3-4 and the go/no-go on item 7.
