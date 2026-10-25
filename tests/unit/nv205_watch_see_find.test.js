@@ -43,3 +43,14 @@ test('NV-204: object-it imperative leaves other verbs and plain sentences alone'
   assert.equal(await lc('I eat it'), (await lc('I eat it')));
   assert.ok(!/\[unknown\]/i.test((await translate('I want to eat it')).garo));
 });
+
+// NV-206 (Thangseng 2026-10-25): `I am watching TV.` = `Anga TV nienga` (TV unmarked, no -ko)
+test('NV-206: TV object with watch is written TV, unmarked', async () => {
+  const t = async (en) => (await translate(en)).garo.replace(/[.!?]$/, '');
+  assert.equal(await t('I am watching TV.'), 'Anga TV nienga');
+  assert.equal((await t('I watched TV')).toLowerCase(), 'anga tv niaha');
+  assert.equal((await t('I will not watch TV')).toLowerCase(), 'anga tv nijawa');
+  assert.equal(await t('I want to watch TV'), 'Anga TV nina ska');
+  assert.equal(await t('watch TV!'), 'TV nibo');
+  assert.equal(await t('do not watch TV'), 'TV ninabe');
+});

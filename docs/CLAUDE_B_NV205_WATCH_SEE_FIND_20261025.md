@@ -19,3 +19,4 @@ Tests: `nv205_watch_see_find.test.js`; superseded the ni·rik·a assertion and t
 3. Nik- continuous (`nikenga`) is from the old irregular entry, not Thangseng.
 4. Retire / annotate `ni·rik·a`, `go·ri`, `ni·chak·a` as `watch` candidates in master_dictionary.
 5. Earlier held items: Uchi/Iachi in negatives, `look at that` / object `that`, `Uamangchi`, NV-199/200 verification.
+- NV-206 (Thangseng): `I am watching TV.` = `Anga TV nienga`; TV is written TV and unmarked with watch (no -ko); `watch TV!` -> `TV nibo`.

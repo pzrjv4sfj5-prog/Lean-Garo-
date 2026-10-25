@@ -289,6 +289,10 @@ export async function translate(input) {
   // would leak into sentence composition.
   if (/^\s*today\s*[.!]?\s*$/i.test(String(input))) return { garo: TIME_ADVERB_FORMS.today.base, method: 'time-adverb-base', confidence: 0.98 };
   let result = await translateCore(input);
+  // NV-206: with watch, the loanword object `TV` is written `TV` and takes no -ko (attested `Anga TV nienga`).
+  if (result && typeof result.garo === 'string' && /\bwatch(?:es|ed|ing)?\b/i.test(String(input)) && /\b(?:tv|television)\b/i.test(String(input))) {
+    result = { ...result, garo: result.garo.replace(/\btv(?:ko)?\b/gi, 'TV') };
+  }
   // R6/R7: sov-assembly joins dictionary headwords, which carry their own
   // initial capital ('Nok', 'Chon·a'). Only the sentence-initial word keeps it.
   if (result && result.method === 'sov-assembly' && typeof result.garo === 'string') {
@@ -304,13 +308,16 @@ export async function translate(input) {
   // `uko` as attested `Anga uko nika`). Only fires when the bare command already resolves
   // to a clean -bo / -nabe form, so nothing unverified is composed.
   {
-    const mi = String(input).trim().match(/^(?:(do\s+not|don'?t)\s+)?([a-z]+)\s+it\s*[!.]?$/i);
-    if (mi && (mi[1] || /!\s*$/.test(String(input).trim()))) {
+    // NV-206 (Thangseng, 2026-10-25): `I am watching TV.` = `Anga TV nienga` - TV stays `TV`, unmarked (no -ko).
+    // Same object-before-verb command shape for watch only: `watch TV!` -> `TV nibo`.
+    const mi = String(input).trim().match(/^(?:(do\s+not|don'?t)\s+)?([a-z]+)\s+(it|(?:the\s+)?tv)\s*[!.]?$/i);
+    const tvObj = mi && /tv$/i.test(mi[3]);
+    if (mi && (!tvObj || mi[2].toLowerCase() === 'watch') && (mi[1] || /!\s*$/.test(String(input).trim()))) {
       const bare = await translate(mi[1] ? `do not ${mi[2]}` : `${mi[2]}!`);
       if (bare && typeof bare.garo === 'string' && !bare.garo.includes('[UNKNOWN]') && !bare.garo.includes(' ')
           && /(bo|nabe|na·be)!?$/i.test(bare.garo) && bare.method !== 'passthrough') {
         const g = bare.garo.replace(/!$/, '');
-        return { garo: `Uko ${g.charAt(0).toLowerCase()}${g.slice(1)}`, method: 'imperative-object-it', confidence: 0.8 };
+        return { garo: `${tvObj ? 'TV' : 'Uko'} ${g.charAt(0).toLowerCase()}${g.slice(1)}`, method: 'imperative-object-it', confidence: 0.8 };
       }
     }
   }
