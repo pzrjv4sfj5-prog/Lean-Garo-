@@ -374,7 +374,7 @@
   "front": "general",
   "back": "general",
   "inside": "general",
-  "outside": "general",
+  "outside": "travel",
   "far": "travel",
   "near": "general",
   "north": "travel",
@@ -3092,6 +3092,7 @@
   "behind": "general",
   "behind (other side, preferred for doors)": "general",
   "beside": "general",
+  "outdoors": "general",
   "have you had breakfast? (idiom, lit. \"have you had tea?\")": "phrases",
   "to call (someone) on the phone": "phrases",
   "calling (someone) on the phone": "phrases",
@@ -4123,5 +4124,11 @@
   "that way": "general",
   "towards that": "general",
   "to them": "general",
-  "him / her / it (accusative, alt)": "general"
+  "him / her / it (accusative, alt)": "general",
+  "for them": "general",
+  "outward": "general",
+  "it is he": "general",
+  "it is she": "general",
+  "that it is": "general",
+  "it is it": "general"
 }

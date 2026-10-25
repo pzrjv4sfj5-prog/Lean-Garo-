@@ -464,7 +464,7 @@ export function assembleGrammar(grammar, allowUnknown = false) {
     // would double it ("bajalchi·chi"). Only the bare-noun fallback case
     // (unconfirmed destinations, no dedicated "to X" entry) still needs
     // the suffix appended here.
-    parts.push(/chi$/.test(locText) ? locText : locText + '·chi');
+    parts.push(/chi$/.test(locText) || /^uamangna$/i.test(locText) ? locText : locText + '·chi'); // NV-202: dative `uamangna` takes no extra -chi
   }
 
   // Possessive + Object + -ko/-o marker
@@ -519,7 +519,7 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   // identically — exact-match on the resolved Garo value, not a
   // pattern/prefix check, so it can't accidentally catch an unrelated
   // word that happens to start with "u".
-  const objAlreadyMarked = grammar.object && (['Angko', 'uko', 'biko', 'bichiko'].includes(grammar.object.garo));
+  const objAlreadyMarked = grammar.object && (['Angko', 'uko', 'biko', 'bichiko', 'uamangko'].includes(grammar.object.garo) || String(grammar.object.garo).toLowerCase() === 'uamangko');
   // NEW FIX (2026-09-21, Claude B): when the object is incorporated into a
   // "want to eat/drink X" construction (grammar.purposeAction present),
   // the accusative -ko marker is dropped entirely — a native-confirmed

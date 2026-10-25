@@ -77,7 +77,7 @@ test('regression guard: him/us/them objects are unaffected by this fix (still ·
   assert.match(us.garo, /chingnako/i);
 
   const them = await translate('i will help them');
-  assert.match(them.garo, /uamangnako/i);
+  assert.match(them.garo, /uamangko/i); // NV-202: accusative `uamangko` (was unverified `uamangnako`)
 });
 
 test('regression guard: "me" (angko) object is unaffected by this fix', async () => {

@@ -19,7 +19,7 @@ for (const [en, garo] of [
 test('NV-199: unchanged bases', async () => {
   assert.equal(await lc('there'), 'uano');
   assert.equal(await lc('here'), 'iano');
-  assert.equal(await lc('them'), 'uamangna');
+  assert.equal(await lc('them'), 'uamangko'); // NV-202: accusative `uamangko` (Project Owner relay); `uamangna` is the dative (to/for them)
   assert.equal((await translate('there\'s a spider under your bed')).garo, 'Aiwa nang·ni palang ning·o guang donga.');
 });
 test('NV-199: no inferred cells', async () => {

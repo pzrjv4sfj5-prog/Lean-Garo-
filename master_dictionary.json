@@ -73,9 +73,10 @@
   },
   {
     "english": "re·ang (to go)",
-    "garo": "re·ang·a (past), re·angenga (continuous)",
+    "garo": "re·anga (past), re·angenga (continuous)",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "on· (to give)",
@@ -4524,13 +4525,17 @@
     "english": "they",
     "garo": "Uamang",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "pos": "pr.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `uamang` and `bisong` are synonyms for 'they'; `uamang` stays the engine default."
   },
   {
     "english": "them",
-    "garo": "Uamangna",
+    "garo": "uamangko",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "pos": "pr.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): accusative `uamangko` = them (persons only)."
   },
   {
     "english": "my / mine",
@@ -4558,9 +4563,11 @@
   },
   {
     "english": "their / theirs",
-    "garo": "Uamangni",
+    "garo": "uamangni",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "pos": "pr.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): genitive `uamangni` = their / belonging to them."
   },
   {
     "english": "whose?",
@@ -6327,9 +6334,10 @@
   },
   {
     "english": "i shall come with you.",
-    "garo": "Ang·a nangming reangen.",
+    "garo": "Anga nangming reangen.",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "he will come.",
@@ -6741,16 +6749,16 @@
   },
   {
     "english": "yes, i love you.",
-    "garo": "Hoe, ang·a nangna kasa·a.",
+    "garo": "Hoe, anga nangna kasa·a.",
     "category": "emotions",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): now `Oe, anga nang·na ka·saa.`. Retained so legacy copies are filtered; not deleted. Was: unverified"
+    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): now `Oe, anga nang·na ka·saa.`. Retained so legacy copies are filtered; not deleted. Was: unverified NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "i am fine.",
-    "garo": "Ang·a namengava.",
+    "garo": "Anga namengava.",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'i am fine.' has VERIFIED/HIGH form(s) ['Anga namenga.']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'i am fine.' has VERIFIED/HIGH form(s) ['Anga namenga.']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "superseded"
   },
   {
@@ -7166,9 +7174,10 @@
   },
   {
     "english": "i went",
-    "garo": "Anga re·ang·a",
+    "garo": "Anga re·anga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "i ate",
@@ -7509,9 +7518,10 @@
   },
   {
     "english": "he went",
-    "garo": "Ua re·ang·a",
+    "garo": "Ua re·anga",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "go!",
@@ -7907,33 +7917,33 @@
   },
   {
     "english": "their house",
-    "garo": "bini Nok",
+    "garo": "Uamangni nok",
     "category": "home",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their book",
-    "garo": "bini ki·tap",
+    "garo": "Uamangni ki·tap",
     "category": "education",
     "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bini kitab'."
   },
   {
     "english": "their car",
-    "garo": "bini mot",
+    "garo": "Uamangni mot",
     "category": "travel",
     "confidence": "unverified"
   },
   {
     "english": "their food",
-    "garo": "bini al·a",
+    "garo": "Uamangni al·a",
     "category": "food",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their water",
-    "garo": "bini Chi",
+    "garo": "Uamangni chi",
     "category": "food",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
@@ -9574,99 +9584,100 @@
   },
   {
     "english": "their person",
-    "garo": "bini mande",
+    "garo": "Uamangni mande",
     "category": "general",
     "confidence": "unverified"
   },
   {
     "english": "their dog",
-    "garo": "bini Achak",
+    "garo": "Uamangni achak",
     "category": "animals",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "their cat",
-    "garo": "bini Menggo",
+    "garo": "Uamangni menggo",
     "category": "animals",
     "confidence": "unverified",
     "notes": "Fixed per defect-class-3 generalization (docs/CLAUDE_B_SESSION_MIGRATION_20260905D.md) — cat root was blocked pending NV-134/135 adjudication; now unblocked by NV-135 (cat=Menggo). Noun half replaced with canonical root, modifier untouched, matching the same fix already applied to dog/bird/fish/house/tree/water/student/river/food/rice."
   },
   {
     "english": "their bird",
-    "garo": "bini do·o",
+    "garo": "Uamangni do·o",
     "category": "animals",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "their fish",
-    "garo": "bini na·tok",
+    "garo": "Uamangni na·tok",
     "category": "food",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md."
   },
   {
     "english": "their teacher",
-    "garo": "bini skigipa",
+    "garo": "Uamangni skigipa",
     "category": "education",
     "confidence": "unverified"
   },
   {
     "english": "their student",
-    "garo": "bini Chattro",
+    "garo": "Uamangni chattro",
     "category": "education",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their tree",
-    "garo": "bini Bol",
+    "garo": "Uamangni bol",
     "category": "nature",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their apple",
-    "garo": "bini se",
+    "garo": "Uamangni se",
     "category": "general",
     "confidence": "unverified"
   },
   {
     "english": "their banana",
-    "garo": "bini sobo",
+    "garo": "Uamangni sobo",
     "category": "general",
     "confidence": "unverified"
   },
   {
     "english": "their rice",
-    "garo": "bini mi",
+    "garo": "Uamangni mi",
     "category": "food",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their road",
-    "garo": "bini lam",
+    "garo": "Uamangni lam",
     "category": "travel",
     "confidence": "unverified"
   },
   {
     "english": "their river",
-    "garo": "bini chi·bi·ma",
+    "garo": "Uamangni chi·bi·ma",
     "category": "nature",
     "confidence": "unverified",
     "notes": "Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree."
   },
   {
     "english": "their mountain",
-    "garo": "bini nok",
+    "garo": "Uamangni ha·bri",
     "category": "nature",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-202: legacy row was `bini nok` (a house word, not mountain); recomposed from genitive `uamangni` + verified `ha·bri` (NV-080). Unverified composition."
   },
   {
     "english": "their village",
-    "garo": "bini rim",
+    "garo": "Uamangni rim",
     "category": "general",
     "confidence": "unverified"
   },
@@ -13282,9 +13293,10 @@
   },
   {
     "english": "the re·ang (to go)",
-    "garo": "re·ang·a (past), re·angenga (continuous)",
+    "garo": "re·anga (past), re·angenga (continuous)",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "the on· (to give)",
@@ -13963,9 +13975,10 @@
   },
   {
     "english": "the go",
-    "garo": "Re·ang·a",
+    "garo": "Re·anga",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "the father",
@@ -15750,11 +15763,11 @@
   },
   {
     "english": "i need to sleep early tonight",
-    "garo": "Ang.a da.al atamo seng.gnang tusina nang.a",
+    "garo": "Anga da.al atamo seng.gnang tusina nang.a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": null,
+    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "unverified"
   },
   {
@@ -16362,12 +16375,12 @@
   },
   {
     "english": "their",
-    "garo": "Uamangni",
-    "pos": null,
+    "garo": "uamangni",
+    "pos": "pr.",
     "category": "uncategorized",
     "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): genitive `uamangni` = their / belonging to them.",
+    "confidence": "verified_high"
   },
   {
     "english": "thief",
@@ -18857,11 +18870,11 @@
   },
   {
     "english": "I am fine",
-    "garo": "Ang·a namengava.",
+    "garo": "Anga namengava.",
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "verified_high"
   },
   {
@@ -21529,11 +21542,11 @@
   },
   {
     "english": "Take",
-    "garo": "ra·ang·a",
+    "garo": "ra·anga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'take' is 'ra·a'. Retained per citation discipline, not deleted.",
+    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'take' is 'ra·a'. Retained per citation discipline, not deleted. NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "superseded"
   },
   {
@@ -21655,11 +21668,11 @@
   },
   {
     "english": "Thin",
-    "garo": "ba·ang·a",
+    "garo": "ba·anga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'thin' is 'Ba·renga'. Retained per citation discipline, not deleted.",
+    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'thin' is 'Ba·renga'. Retained per citation discipline, not deleted. NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "superseded"
   },
   {
@@ -23636,11 +23649,11 @@
   },
   {
     "english": "bald",
-    "garo": "chi·kil·ang·a",
+    "garo": "chi·kil·anga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ko-ka-rok",
+    "notes": "UNVERIFIED/HIGH v:ko-ka-rok NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "unverified"
   },
   {
@@ -39764,11 +39777,11 @@
   },
   {
     "english": "pregnant",
-    "garo": "ok·gin·ang·a",
+    "garo": "ok·gin·anga",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
+    "notes": "variant/UNVERIFIED/HIGH NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "unverified"
   },
   {
@@ -46190,11 +46203,11 @@
   },
   {
     "english": "thin of forest",
-    "garo": "ba·ang·a",
+    "garo": "ba·anga",
     "pos": null,
     "category": "travel",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
+    "notes": "UNVERIFIED/HIGH NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "unverified"
   },
   {
@@ -65535,11 +65548,11 @@
     "confidence": "verified_high"
   },
   {
-    "english": "outside",
+    "english": "outdoors",
     "garo": "a·palo",
     "category": "general",
-    "pos": null,
-    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'. | NV-178 (2026-10-20): `a·pal`/`a·palo` = the native word for outside/outdoors. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
+    "pos": "adj.",
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'. | NV-178 (2026-10-20): `a·pal`/`a·palo` = the native word for outside/outdoors. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file. NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): Project Owner: `a·pal` = outside, `a·palo` (adj.) = outdoors, `a·palni` (adj.) = outward. `a'palo` was a raka typo.",
     "confidence": "verified_high"
   },
   {
@@ -79447,12 +79460,12 @@
   },
   {
     "english": "by them",
-    "garo": "Uamangchi",
+    "garo": "uamangchi",
     "pos": "pr.",
     "category": "general",
     "classifier": null,
-    "confidence": "unverified",
-    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Uamang + -chi (agentive/instrumental). PO glossed 'by them; to them'; `to them` left on Uamangna (not ruled)."
+    "confidence": "verified_high",
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Uamang + -chi (agentive/instrumental). PO glossed 'by them; to them'; `to them` left on Uamangna (not ruled). | NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): instrumental/directional `uamangchi` = by them / to them (movement or agency)."
   },
   {
     "english": "them (alt)",
@@ -79555,12 +79568,12 @@
   },
   {
     "english": "to them",
-    "garo": "Uamangna",
+    "garo": "uamangna",
     "pos": "pr.",
     "category": "general",
     "classifier": null,
-    "confidence": "unverified",
-    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): PO: Uamangna = to them or them."
+    "confidence": "verified_high",
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): PO: Uamangna = to them or them. | NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): dative `uamangna` = to/for them."
   },
   {
     "english": "him / her / it (accusative, alt)",
@@ -79570,5 +79583,61 @@
     "classifier": null,
     "confidence": "unverified",
     "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): PO: Uako is the same as Uko (accusative). Primary uko unchanged."
+  },
+  {
+    "english": "for them",
+    "garo": "uamangna",
+    "category": "general",
+    "pos": "pr.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): dative `uamangna` = to/for them (indirect object).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "outward",
+    "garo": "a·palni",
+    "category": "general",
+    "pos": "adj.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `a·palni` (adj.) = outward.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "it is he",
+    "garo": "uan",
+    "category": "general",
+    "pos": "pr.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "it is she",
+    "garo": "uan",
+    "category": "general",
+    "pos": "pr.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "that it is",
+    "garo": "uan",
+    "category": "general",
+    "pos": "pr.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "it is it",
+    "garo": "uan",
+    "category": "general",
+    "pos": "pr.",
+    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "they",
+    "garo": "bisong",
+    "category": "general",
+    "pos": "pr.",
+    "notes": "variant/VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `bisong` is a direct synonym of `uamang` ('they'); valid generative output, not the default.",
+    "confidence": "verified_high"
   }
 ]
