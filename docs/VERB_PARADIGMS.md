@@ -207,6 +207,7 @@
 | smoulder | kamchipila | kamchipilenga | kamchipilaha | kamchipilgen | kamchipilja | kamchipiljawa | kamchipilbo | kamchipilnabe | kamchipilna |
 | solace | ka·dimea | ka·dimeenga | ka·dimeaha | ka·dimegen | ka·dimeja | ka·dimejawa | ka·dimebo | ka·dimenabe | ka·dimena |
 | speak | agana 📌 | aganenga 📌 | aganaha 📌 | agangen | aganja | aganjawa | aganbo | agannabe | aganna |
+| spend | re·ata ✅ | re·atenga 📌 | re·ataha 📌 | re·atgen | re·atja | re·atjawa | re·atbo | re·atnabe | re·atna |
 | spread | barama 📌 | baramenga | baramaha | baramgen | baramja | baramjawa | barambo | baramnabe | baramna |
 | stammer | tu·ta·ban·ta | tu·ta·ban·tenga | tu·ta·ban·taha | tu·ta·ban·tgen | tu·ta·ban·tja | tu·ta·ban·tjawa | tu·ta·ban·tbo | tu·ta·ban·tnabe | tu·ta·ban·tna |
 | stand | chadenga 📌 | chadatenga 📌 | chadengaha | chadenggen | chadengja | chadengjawa | chadengbo 📌 | chadengnabe | chadengna |

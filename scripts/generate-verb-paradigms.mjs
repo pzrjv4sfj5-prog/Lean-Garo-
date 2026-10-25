@@ -26,7 +26,7 @@ const forms = (root) => ({
 });
 const out = { _meta: { generated: '2026-10-25', note: 'derived = rule-based, unverified; pinned = also present as a row in corrections/irregular_verbs' }, verbs: {}, manual: [], review: {} };
 // common verbs whose dictionary key is the bare English word (not `to X`), so VERB_LEMMAS misses them
-const EXTRA = ['eat','drink','give','run','sleep','work','walk','sit','stand','speak','say','come','go','buy','sell','play','sing','laugh','wash','hear','take','want','need','like','know','do','make','read','write','cook','carry','call','wait','help','love','open','close','ask','tell','think','learn','teach','live','die','cry','dance','swim','jump','throw','catch','bring','send','keep','stay','meet','start','stop','try','use','wear','wake'];
+const EXTRA = ['eat','drink','give','run','sleep','work','walk','sit','stand','speak','say','come','go','buy','sell','play','sing','laugh','wash','hear','take','want','need','like','know','do','make','read','write','cook','carry','call','wait','help','love','open','close','ask','tell','think','learn','teach','live','die','cry','dance','swim','jump','throw','catch','bring','send','keep','stay','meet','start','stop','try','use','wear','wake','spend'];
 for (const v of [...new Set([...VERB_LEMMAS, ...EXTRA])].sort()) {
   if (!/^[a-z]+$/.test(v)) continue;
   const root = lookupGaro(v);
@@ -50,6 +50,7 @@ for (const v of [...new Set([...VERB_LEMMAS, ...EXTRA])].sort()) {
 // emitted and the disagreement is recorded in `note` for a PO ruling instead of being silently changed.
 for (const [v, root, note] of [
   ['go', 're·a', 'root confirmed 2026-10-25; forms derived; engine currently uses the go-away stem for I will go / go! (PO ruling needed)'],
+  ['spend', 're·ata', 'Re·ata (PO/Thangseng 2026-10-25): to cause to go; to make someone go; to spend time, money. Forms derived; one verb, three senses.'],
   ['go away', 're·anga', 'verb confirmed 2026-10-25; engine uses these forms for went / going / will go / go!'],
 ]) {
   const f = forms(root);

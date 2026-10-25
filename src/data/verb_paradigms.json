@@ -5079,6 +5079,32 @@
     "infinitive": "derived"
    }
   },
+  "spend": {
+   "root": "re·ata",
+   "note": "Re·ata (PO/Thangseng 2026-10-25): to cause to go; to make someone go; to spend time, money. Forms derived; one verb, three senses.",
+   "forms": {
+    "present": "re·ata",
+    "continuous": "re·atenga",
+    "past": "re·ataha",
+    "future": "re·atgen",
+    "negative": "re·atja",
+    "negative_future": "re·atjawa",
+    "command": "re·atbo",
+    "negative_command": "re·atnabe",
+    "infinitive": "re·atna"
+   },
+   "status": {
+    "present": "native",
+    "continuous": "pinned",
+    "past": "pinned",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
   "spread": {
    "root": "barama",
    "forms": {

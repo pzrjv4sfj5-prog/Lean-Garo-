@@ -40,3 +40,18 @@ test('NV-207b: go = re·a, go away = re·anga are separate verbs', async () => {
   assert.equal(await lc('to go away'), 're·anga');
   assert.equal(await lc('I go away'), 'anga re·anga');
 });
+
+// NV-207c (PO/Thangseng 2026-10-25): Re·ata = to cause to go; to make someone go; to spend time, money
+test('NV-207c: re·ata (cause to go / spend)', async () => {
+  const lc = async (en) => (await translate(en)).garo.toLowerCase().replace(/[.!?]$/, '');
+  assert.equal(getVerbParadigm('spend').forms.present, 're·ata');
+  assert.notEqual(getVerbParadigm('spend').forms.present, getVerbParadigm('go').forms.present);
+  for (const en of ['to spend', 'cause to go', 'to make someone go']) assert.equal(await lc(en), 're·ata', en);
+  assert.equal(await lc('spend time'), 'somoi re·ata');
+  assert.equal(await lc('I spend money'), 'anga dang·gako re·ata');
+  assert.equal(await lc('I spent money'), 'anga dang·gako re·ataha');
+  assert.equal(await lc('I will spend money'), 'anga dang·gako re·atgen');
+  assert.equal(await lc('I am spending money'), 'anga dang·gako re·atenga');
+  assert.equal(await lc('I want to spend money'), 'anga dang·ga re·atna ska');
+  assert.equal(await lc('spend money!'), 'dang·ga re·atbo');
+});

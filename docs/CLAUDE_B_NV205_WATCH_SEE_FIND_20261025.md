@@ -26,3 +26,6 @@ Tests: `nv205_watch_see_find.test.js`; superseded the ni·rik·a assertion and t
 
 ## NV-207b: go = Re·a, re·anga = go away (own verb)
 Both paradigms are in verb_paradigms.json. The engine still uses the go-away stem for `I will go` (Re·anggen), `go!` (Re·ang·bo), `do not go` (Re·angna·be), `I want to go` (re·ang·na ska) while `I will not go` = re·jawa uses the go stem. **PO ruling needed:** should those use go (re·gen, re·bo, re·nabe, re·na) or stay go-away?
+
+## NV-207c: Re·ata = to cause to go; to make someone go; to spend time, money (PO/Thangseng 2026-10-25)
+One verb, three senses, so `to spend`, `cause to go` and `make someone go` all give `re·ata`. `spend money` = `dang·ga re·ata`, `spend time` = `Somoi re·ata`. Past `re·ataha`, continuous `re·atenga`, future `re·atgen`, infinitive `re·atna`, command `re·atbo` are rule-derived (unverified). Open: causative sentences (`I make him go` still gives `Anga re·ako Taria`, wrong) need a native pattern.
