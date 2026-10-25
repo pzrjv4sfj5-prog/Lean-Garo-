@@ -4,17 +4,17 @@
 Lean-Garo: Garo dictionary and English-to-Garo translation engine. Repo `github.com/pzrjv4sfj5-prog/Lean-Garo-`, branch `main`. Owner: T (Project Owner). Relay: Tridip. Native validator: Thangseng. Claude A = linguistic data + governance; Claude B = engine (also read `docs/CLAUDE_B_SESSION_MIGRATION_20261025B.md`); Claude D = other.
 
 ## Current state
-- Head on `main` = the commit this file ships in (`git log --oneline -3`). Content work through NV-202 is pushed, rebased on Claude B's NV-201 (`5b258f4`). `.ai/WORKSTATE.yaml` `repository.head` and `claude_a.next_action_claude_a_20261025{,b,c,d}` hold the pointers.
-- Gate on the content commit: dictionary 8979/8979; repository-intelligence 0 NEW; resync 0; unit 791/791; runtime sweep 0 errors; conformance 76/110 (14 orphan, 0 new mismatch); vite build OK (restore `dist/index.html` with `git checkout dist/index.html` afterwards).
+- Head on `main` = the commit this file ships in (`git log --oneline -3`). Content work through NV-203 is pushed, rebased on Claude B's NV-202 (`7ea0ea3`). `.ai/WORKSTATE.yaml` `repository.head` and `claude_a.next_action_claude_a_20261025{,b,c,d}` hold the pointers.
+- Gate on the content commit: dictionary 8979/8979; repository-intelligence 0 NEW; resync 0; unit 799/799; runtime sweep 0 errors; conformance 76/110 (14 orphan, 0 new mismatch); vite build OK (restore `dist/index.html` with `git checkout dist/index.html` afterwards).
 - Gate order: `npm ci`, `node prepare-data.js`, `node test-dictionary.js`, `node repository-intelligence.js`, `node scripts/resync-stale-overrides.mjs`, `node --test tests/unit/*.test.js`, `node scripts/runtime-error-sweep.mjs`, `node scripts/audit-rule-conformance.mjs`, `npx vite build`.
 - Edit `master_dictionary.json` (source) then `prepare-data.js`; never hand-edit compiled files. Serialize with `json.dumps(indent=2, ensure_ascii=False)` and keep the original trailing newline.
-- Parallel lanes push to `main`: always `git fetch` and check `git log HEAD..origin/main` before pushing, and do NOT delete the clone until `local == origin/main` is confirmed. NV numbers are shared: check `ls tests/unit | grep nv2` first (B used NV-198..201; A used 195-197 and 202).
+- Parallel lanes push to `main`: always `git fetch` and check `git log HEAD..origin/main` before pushing, and do NOT delete the clone until `local == origin/main` is confirmed. NV numbers are shared: check `ls tests/unit | grep nv2` first (B used NV-198..202; A used 195-197 and 203).
 
-## Done (NV-195 to NV-202)
+## Done (NV-195 to NV-203)
 - NV-195: `kina·chak·a` canonical; `iano` bare with `donga` (not `uano`, not other verbs); `donga` = to have / to exist / to lodge ("to exist" listed twice by the Owner, recorded once).
 - NV-196: `Anga maiko dakgen?`; `joma` (no raka) = get unwell/be sick, `jom·a` = sneak/slink; `mikboka` (no raka) on greedy/covet/desire/lust rows.
 - NV-197: Thangseng's RAW tense reply logged. Contextual past tense is NOT a general rule ("may depend on the verb"); NV-194 stays (past wh-questions take bare `-a`). Pins `What did you do yesterday?` = `Na·a mijalo maiko daka?`, `Why did you avoid me yesterday?` = `Mijalo na·a maina angko gela?`. All Garo apostrophes converted to raka (100 master rows, 6 corrections); `mountain` resynced to `ha·bri`.
-- NV-202: standing `Anga` rule applied; `a·pal` outside / `a·palo` outdoors / `a·palni` outward; `uamang` = `bisong`; cases `uamangko` / `uamangni` / `uamangna` / `uamangchi`; emphatic `uan`; all `pr.`; dative hook for "to/for them".
+- NV-203: standing `Anga` rule applied; `a·pal` outside / `a·palo` outdoors / `a·palni` outward; `uamang` = `bisong`; cases `uamangko` / `uamangni` / `uamangna` / `uamangchi`; emphatic `uan`; all `pr.`; dative hook for "to/for them".
 
 ## Standing rules (do not re-litigate)
 1. The first-person pronoun is ALWAYS `Anga` (Owner, final). Never `Ang·a`. Only the superseded bake/roast verb rows keep `Ang·a`.

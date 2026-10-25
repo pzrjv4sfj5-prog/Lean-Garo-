@@ -464,7 +464,7 @@ export function assembleGrammar(grammar, allowUnknown = false) {
     // would double it ("bajalchi·chi"). Only the bare-noun fallback case
     // (unconfirmed destinations, no dedicated "to X" entry) still needs
     // the suffix appended here.
-    parts.push(/chi$/.test(locText) || /^uamangna$/i.test(locText) ? locText : locText + '·chi'); // NV-202: dative `uamangna` takes no extra -chi
+    parts.push(/chi$/.test(locText) || /^uamangna$/i.test(locText) ? locText : locText + '·chi'); // NV-203: dative `uamangna` takes no extra -chi
   }
 
   // Possessive + Object + -ko/-o marker

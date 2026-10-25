@@ -1,4 +1,4 @@
-// NV-202 (2026-10-25, Project Owner decisions, AI-formatted relay, no raw native quote):
+// NV-203 (2026-10-25, Project Owner decisions, AI-formatted relay, no raw native quote):
 // Anga is always `Anga`; uamang/bisong synonyms + case suffixes; uan emphatic; a·pal / a·palo / a·palni.
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -25,15 +25,15 @@ const cases = [
   ['outward', 'a·palni'],
 ];
 for (const [en, garo] of cases) {
-  test(`NV-202: ${en}`, async () => {
+  test(`NV-203: ${en}`, async () => {
     assert.equal((await translate(en)).garo, garo);
   });
 }
-test('NV-202: no `Ang·a` pronoun remains (only the two superseded bake/roast verb rows)', () => {
+test('NV-203: no `Ang·a` pronoun remains (only the two superseded bake/roast verb rows)', () => {
   const left = master.filter(r => /\bAng[·.'’]a\b/i.test(r.garo || '') && !/bake \/ roast/i.test(r.english));
   assert.deepEqual(left.map(r => r.garo), []);
 });
-test('NV-202: new pronoun forms are tagged pr.', () => {
+test('NV-203: new pronoun forms are tagged pr.', () => {
   for (const g of ['uamangko', 'uamangni', 'uamangna', 'uamangchi', 'uan', 'bisong']) {
     const rows = master.filter(r => (r.garo || '').toLowerCase() === g && r.confidence === 'verified_high');
     assert.ok(rows.length > 0 && rows.every(r => r.pos === 'pr.'), g);

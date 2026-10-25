@@ -105,7 +105,7 @@ for (const [key, val] of Object.entries(compiledDictRaw)) {
 // headword is untouched. If a future dictionary edit adds another "to X"
 // destination/object entry that isn't an infinitive verb, it will need
 // the same treatment; this is not a general fix for the whole class.
-const NON_VERB_TO_X_KEYS = new Set(['to school', 'to home', 'to him', 'to them', 'for them']); // NV-202: dative `uamangna` rows
+const NON_VERB_TO_X_KEYS = new Set(['to school', 'to home', 'to him', 'to them', 'for them']); // NV-203: dative `uamangna` rows
 
 export const VERB_LEMMAS = new Set();
 for (const key of Object.keys(compiledDictRaw)) {

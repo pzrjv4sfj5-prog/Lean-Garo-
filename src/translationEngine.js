@@ -294,7 +294,7 @@ export async function translate(input) {
   if (result && result.method === 'sov-assembly' && typeof result.garo === 'string') {
     result = { ...result, garo: result.garo.split(' ').map((w, i) => (i === 0 ? w : w.charAt(0).toLowerCase() + w.slice(1))).join(' ') };
   }
-  // NV-202: "to them" / "for them" is the dative `uamangna`; bare "them" is the accusative `uamangko`.
+  // NV-203: "to them" / "for them" is the dative `uamangna`; bare "them" is the accusative `uamangko`.
   // sov-assembly joins headwords, so it only sees "them"; swap the case when the input has to/for them.
   if (result && result.method === 'sov-assembly' && typeof result.garo === 'string' && /\b(to|for)\s+them\b/i.test(String(input))) {
     result = { ...result, garo: result.garo.replace(/\buamangko\b/gi, m => (m[0] === 'U' ? 'Uamangna' : 'uamangna')) };

@@ -7985,9 +7985,9 @@ Project Owner ruling (same message): `a'palo` is `a·palo` (typo); **convert all
 - `a·pal` / `a·palo` locative rule (engine) still not implemented.
 Tests: `tests/unit/nv197_apostrophe_raka_native_tense.test.js`.
 
-## NV-202 (2026-10-25, Project Owner decisions + AI-formatted relay; no raw native quote)
+## NV-203 (2026-10-25, Project Owner decisions + AI-formatted relay; no raw native quote)
 
-Numbering note: Claude B used NV-198..NV-201 in parallel (demonstratives, Uchi/Iachi, Haiwa); this entry is NV-202 to avoid a clash.
+Numbering note: Claude B used NV-198..NV-202 in parallel (demonstratives, Uchi/Iachi, Haiwa, over there/yonder); this entry is NV-203 to avoid a clash.
 **Standing rule (Project Owner, final, no further discussion): the first-person pronoun is always `Anga`.** Every `Ang·a` / `Ang.a` Garo form was converted (15 master rows, `phrase_maps.js` `i am fine`). Only the two SUPERSEDED `bake / roast` verb rows keep `Ang·a` (different word, retained per citation discipline).
 **outside set (Project Owner, kept simple):** `a·pal` = outside; `a·palo` (adj.) = outdoors; `a·palni` (adj.) = outward. The old single-word `outside = a·palo` row became `outdoors`.
 **they / them / their (relay):** `uamang` and `bisong` are synonyms (`uamang` stays default; `bisong` added as variant; `they` allowlisted as an intentional synonym conflict). Cases: accusative `uamangko` (persons only), genitive `uamangni`, dative `uamangna` (to/for them), instrumental/directional `uamangchi` (by them / to them). Emphatic `uan` = that it is / it is he / it is she / it is it. All tagged `pr.`. Claude B's NV-199/200 rows `to them` / `by them` were promoted in place (unverified to verified_high, lowercase); B's `them = uamangna` assertion was updated to `uamangko`.

@@ -76,7 +76,7 @@
     "garo": "re·anga (past), re·angenga (continuous)",
     "category": "travel",
     "confidence": "unverified",
-    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
+    "notes": " NV-203: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "on· (to give)",
@@ -4527,7 +4527,7 @@
     "category": "general",
     "confidence": "verified_high",
     "pos": "pr.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `uamang` and `bisong` are synonyms for 'they'; `uamang` stays the engine default."
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `uamang` and `bisong` are synonyms for 'they'; `uamang` stays the engine default."
   },
   {
     "english": "them",
@@ -4535,7 +4535,7 @@
     "category": "general",
     "confidence": "verified_high",
     "pos": "pr.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): accusative `uamangko` = them (persons only)."
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): accusative `uamangko` = them (persons only)."
   },
   {
     "english": "my / mine",
@@ -4567,7 +4567,7 @@
     "category": "general",
     "confidence": "verified_high",
     "pos": "pr.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): genitive `uamangni` = their / belonging to them."
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): genitive `uamangni` = their / belonging to them."
   },
   {
     "english": "whose?",
@@ -6337,7 +6337,7 @@
     "garo": "Anga nangming reangen.",
     "category": "travel",
     "confidence": "unverified",
-    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
+    "notes": " NV-203: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "he will come.",
@@ -6752,13 +6752,13 @@
     "garo": "Hoe, anga nangna kasa·a.",
     "category": "emotions",
     "confidence": "superseded",
-    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): now `Oe, anga nang·na ka·saa.`. Retained so legacy copies are filtered; not deleted. Was: unverified NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
+    "notes": "SUPERSEDED — NV-189 (2026-10-23, Project Owner-relayed pin block): now `Oe, anga nang·na ka·saa.`. Retained so legacy copies are filtered; not deleted. Was: unverified NV-203: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "i am fine.",
     "garo": "Anga namengava.",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'i am fine.' has VERIFIED/HIGH form(s) ['Anga namenga.']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
+    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'i am fine.' has VERIFIED/HIGH form(s) ['Anga namenga.']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. NV-203: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "superseded"
   },
   {
@@ -7177,7 +7177,7 @@
     "garo": "Anga re·anga",
     "category": "general",
     "confidence": "unverified",
-    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
+    "notes": " NV-203: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "i ate",
@@ -7521,7 +7521,7 @@
     "garo": "Ua re·anga",
     "category": "general",
     "confidence": "unverified",
-    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
+    "notes": " NV-203: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "go!",
@@ -9673,7 +9673,7 @@
     "garo": "Uamangni ha·bri",
     "category": "nature",
     "confidence": "unverified",
-    "notes": " NV-202: legacy row was `bini nok` (a house word, not mountain); recomposed from genitive `uamangni` + verified `ha·bri` (NV-080). Unverified composition."
+    "notes": " NV-203: legacy row was `bini nok` (a house word, not mountain); recomposed from genitive `uamangni` + verified `ha·bri` (NV-080). Unverified composition."
   },
   {
     "english": "their village",
@@ -13296,7 +13296,7 @@
     "garo": "re·anga (past), re·angenga (continuous)",
     "category": "travel",
     "confidence": "unverified",
-    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
+    "notes": " NV-203: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "the on· (to give)",
@@ -13978,7 +13978,7 @@
     "garo": "Re·anga",
     "category": "travel",
     "confidence": "unverified",
-    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule)."
+    "notes": " NV-203: first-person pronoun is always `Anga` (Project Owner standing rule)."
   },
   {
     "english": "the father",
@@ -15767,7 +15767,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": " NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
+    "notes": " NV-203: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "unverified"
   },
   {
@@ -16379,7 +16379,7 @@
     "pos": "pr.",
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): genitive `uamangni` = their / belonging to them.",
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): genitive `uamangni` = their / belonging to them.",
     "confidence": "verified_high"
   },
   {
@@ -18874,7 +18874,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
+    "notes": "variant/VERIFIED/HIGH NV-203: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "verified_high"
   },
   {
@@ -21546,7 +21546,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'take' is 'ra·a'. Retained per citation discipline, not deleted. NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
+    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'take' is 'ra·a'. Retained per citation discipline, not deleted. NV-203: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "superseded"
   },
   {
@@ -21672,7 +21672,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'thin' is 'Ba·renga'. Retained per citation discipline, not deleted. NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
+    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'thin' is 'Ba·renga'. Retained per citation discipline, not deleted. NV-203: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "superseded"
   },
   {
@@ -23653,7 +23653,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ko-ka-rok NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
+    "notes": "UNVERIFIED/HIGH v:ko-ka-rok NV-203: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "unverified"
   },
   {
@@ -39781,7 +39781,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
+    "notes": "variant/UNVERIFIED/HIGH NV-203: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "unverified"
   },
   {
@@ -46207,7 +46207,7 @@
     "pos": null,
     "category": "travel",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH NV-202: first-person pronoun is always `Anga` (Project Owner standing rule).",
+    "notes": "UNVERIFIED/HIGH NV-203: first-person pronoun is always `Anga` (Project Owner standing rule).",
     "confidence": "unverified"
   },
   {
@@ -65552,7 +65552,7 @@
     "garo": "a·palo",
     "category": "general",
     "pos": "adj.",
-    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'. | NV-178 (2026-10-20): `a·pal`/`a·palo` = the native word for outside/outdoors. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file. NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): Project Owner: `a·pal` = outside, `a·palo` (adj.) = outdoors, `a·palni` (adj.) = outward. `a'palo` was a raka typo.",
+    "notes": "CONFIRMED 2026-07-25, direct native answer, from 'the book is outside the house' = 'Ki'tap nokni a'palo ong'a'. | NV-178 (2026-10-20): `a·pal`/`a·palo` = the native word for outside/outdoors. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file. NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): Project Owner: `a·pal` = outside, `a·palo` (adj.) = outdoors, `a·palni` (adj.) = outward. `a'palo` was a raka typo.",
     "confidence": "verified_high"
   },
   {
@@ -79465,7 +79465,7 @@
     "category": "general",
     "classifier": null,
     "confidence": "verified_high",
-    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Uamang + -chi (agentive/instrumental). PO glossed 'by them; to them'; `to them` left on Uamangna (not ruled). | NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): instrumental/directional `uamangchi` = by them / to them (movement or agency)."
+    "notes": "NV-199 (2026-10-25, Project Owner direct print-dictionary submission in chat, not a native quote): Uamang + -chi (agentive/instrumental). PO glossed 'by them; to them'; `to them` left on Uamangna (not ruled). | NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): instrumental/directional `uamangchi` = by them / to them (movement or agency)."
   },
   {
     "english": "them (alt)",
@@ -79573,7 +79573,7 @@
     "category": "general",
     "classifier": null,
     "confidence": "verified_high",
-    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): PO: Uamangna = to them or them. | NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): dative `uamangna` = to/for them."
+    "notes": "NV-200 (2026-10-25, Project Owner direct submission in chat, not a native quote): PO: Uamangna = to them or them. | NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): dative `uamangna` = to/for them."
   },
   {
     "english": "him / her / it (accusative, alt)",
@@ -79589,7 +79589,7 @@
     "garo": "uamangna",
     "category": "general",
     "pos": "pr.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): dative `uamangna` = to/for them (indirect object).",
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): dative `uamangna` = to/for them (indirect object).",
     "confidence": "verified_high"
   },
   {
@@ -79597,7 +79597,7 @@
     "garo": "a·palni",
     "category": "general",
     "pos": "adj.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `a·palni` (adj.) = outward.",
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `a·palni` (adj.) = outward.",
     "confidence": "verified_high"
   },
   {
@@ -79605,7 +79605,7 @@
     "garo": "uan",
     "category": "general",
     "pos": "pr.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
     "confidence": "verified_high"
   },
   {
@@ -79613,7 +79613,7 @@
     "garo": "uan",
     "category": "general",
     "pos": "pr.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
     "confidence": "verified_high"
   },
   {
@@ -79621,7 +79621,7 @@
     "garo": "uan",
     "category": "general",
     "pos": "pr.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
     "confidence": "verified_high"
   },
   {
@@ -79629,7 +79629,7 @@
     "garo": "uan",
     "category": "general",
     "pos": "pr.",
-    "notes": "VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
+    "notes": "VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): emphatic `uan` = that it is / it is he / it is she / it is it; emphatic variant of `ua`.",
     "confidence": "verified_high"
   },
   {
@@ -79637,7 +79637,7 @@
     "garo": "bisong",
     "category": "general",
     "pos": "pr.",
-    "notes": "variant/VERIFIED/HIGH — NV-202 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `bisong` is a direct synonym of `uamang` ('they'); valid generative output, not the default.",
+    "notes": "variant/VERIFIED/HIGH — NV-203 (2026-10-25, Project Owner decision/relay, AI-formatted block, no raw native quote): `bisong` is a direct synonym of `uamang` ('they'); valid generative output, not the default.",
     "confidence": "verified_high"
   }
 ]
