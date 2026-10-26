@@ -1,0 +1,2847 @@
+{
+ "date": "2026-10-26",
+ "master_commit": "6a66985",
+ "records": 10230,
+ "tierA_groups": 199,
+ "tierA_rows": 405,
+ "tierB_groups": 1967,
+ "tierC_groups": 1410,
+ "tierA_no_verified_row": 39,
+ "tierA_by_confidence": {
+  "superseded": 183,
+  "verified_high": 169,
+  "unverified": 37,
+  "null": 12,
+  "ocr_flagged": 4
+ },
+ "groups": [
+  [
+   {
+    "row_index": 6191,
+    "garo": "a·ba·cheng·a·ni",
+    "english": "Beginning",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 8106,
+    "garo": "A·bachengani",
+    "english": "beginning",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 6213,
+    "garo": "a·gi·si",
+    "english": "desert",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 6875,
+    "garo": "A·gisi",
+    "english": "Desert.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 826,
+    "garo": "Aka",
+    "english": "pluck",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2931,
+    "garo": "ak·a",
+    "english": "Pluck",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 33,
+    "garo": "Alu",
+    "english": "potato",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 6288,
+    "garo": "al·u",
+    "english": "potato",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 12,
+    "garo": "Anaros",
+    "english": "pineapple",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2928,
+    "garo": "a·na·ros",
+    "english": "Pineapple",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2502,
+    "garo": "An.chingni",
+    "english": "our",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 2899,
+    "garo": "An·ching·ni",
+    "english": "Our",
+    "confidence": null
+   },
+   {
+    "row_index": 8446,
+    "garo": "An·chingni",
+    "english": "Our.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 1022,
+    "garo": "Anga asongna mangengma?",
+    "english": "may i sit down?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10076,
+    "garo": "Anga asongna man·gengma?",
+    "english": "may i sit down?",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 1103,
+    "garo": "Anga asongna mangengma?",
+    "english": "may i sit?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10075,
+    "garo": "Anga asongna man·gengma?",
+    "english": "may i sit?",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 789,
+    "garo": "Anga dukonga",
+    "english": "i am sad",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9229,
+    "garo": "Anga duk ong·a",
+    "english": "i am sad",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 788,
+    "garo": "Anga kusionga",
+    "english": "i am happy",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9182,
+    "garo": "Anga kusi ong·a",
+    "english": "i am happy",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 191,
+    "garo": "Anga namenga.",
+    "english": "i am fine",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 6448,
+    "garo": "Anga namenga.",
+    "english": "I am fine.",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 1026,
+    "garo": "Anga namengava.",
+    "english": "i am fine.",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2795,
+    "garo": "Anga namengava.",
+    "english": "I am fine",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 3631,
+    "garo": "ang·gal",
+    "english": "charcoal",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 8466,
+    "garo": "Anggal",
+    "english": "Charcoal.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 1023,
+    "garo": "Angna chi on·a man·gengma?",
+    "english": "can you give me water?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10072,
+    "garo": "Angna chi on·a mangengma?",
+    "english": "can you give me water?",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 2383,
+    "garo": "an·sengengama?",
+    "english": "are you having fun?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2555,
+    "garo": "An·sengengama?",
+    "english": "Are you having fun?",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 8515,
+    "garo": "An·tang",
+    "english": "Self.",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 9195,
+    "garo": "an·tang",
+    "english": "self",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 662,
+    "garo": "Apchona",
+    "english": "narrow",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2873,
+    "garo": "ap·chon·a",
+    "english": "Narrow",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 614,
+    "garo": "A·song",
+    "english": "country",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 2490,
+    "garo": "A.song",
+    "english": "country",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 27,
+    "garo": "Atapol",
+    "english": "custard apple",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2663,
+    "garo": "a·ta·pol",
+    "english": "Custard Apple",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 3109,
+    "garo": "ba·a",
+    "english": "Thin",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 6784,
+    "garo": "Ba·a",
+    "english": "Thin",
+    "confidence": "ocr_flagged"
+   }
+  ],
+  [
+   {
+    "row_index": 6863,
+    "garo": "Badita",
+    "english": "how much.",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 9339,
+    "garo": "Badita",
+    "english": "how much",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 6698,
+    "garo": "Baia",
+    "english": "to last",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 10037,
+    "garo": "bai·a",
+    "english": "to last",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 737,
+    "garo": "Baksa",
+    "english": "with",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 6552,
+    "garo": "Baksa",
+    "english": "With.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 6600,
+    "garo": "Balangga",
+    "english": "Uncovered",
+    "confidence": "ocr_flagged"
+   },
+   {
+    "row_index": 6604,
+    "garo": "Balangga",
+    "english": "uncovered.",
+    "confidence": "ocr_flagged"
+   }
+  ],
+  [
+   {
+    "row_index": 252,
+    "garo": "Balwa",
+    "english": "wind",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3172,
+    "garo": "bal·wa",
+    "english": "Wind",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 9723,
+    "garo": "Bamil rata",
+    "english": "last weeding of a jhum",
+    "confidence": null
+   },
+   {
+    "row_index": 9724,
+    "garo": "Bamil rata",
+    "english": "last weeding of a jhum",
+    "confidence": null
+   }
+  ],
+  [
+   {
+    "row_index": 9721,
+    "garo": "Bamil rata",
+    "english": "second",
+    "confidence": null
+   },
+   {
+    "row_index": 9722,
+    "garo": "Bamil rata",
+    "english": "second",
+    "confidence": null
+   }
+  ],
+  [
+   {
+    "row_index": 9725,
+    "garo": "Ban be·praka",
+    "english": "bursting of a dam",
+    "confidence": null
+   },
+   {
+    "row_index": 9726,
+    "garo": "Ban be·praka",
+    "english": "bursting of a dam",
+    "confidence": null
+   }
+  ],
+  [
+   {
+    "row_index": 485,
+    "garo": "Bangbang",
+    "english": "empty",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2706,
+    "garo": "bang·bang",
+    "english": "Empty",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 542,
+    "garo": "Ba·ra",
+    "english": "cloth",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2637,
+    "garo": "ba·ra",
+    "english": "Cloth",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 289,
+    "garo": "Ba·ra",
+    "english": "clothes",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2639,
+    "garo": "ba·ra",
+    "english": "Clothes",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 495,
+    "garo": "Be·en",
+    "english": "meat",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2852,
+    "garo": "be·en",
+    "english": "Meat",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 991,
+    "garo": "Bia maina tangka ko gama?",
+    "english": "why did she pay the money?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10052,
+    "garo": "Bia maina tangkako gama?",
+    "english": "why did she pay the money?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 985,
+    "garo": "Bia porikka namen seataha.",
+    "english": "he wrote well in the exam.",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 10059,
+    "garo": "Bia porikka namen se·ataha.",
+    "english": "he wrote well in the exam.",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 144,
+    "garo": "Bigil",
+    "english": "skin",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3025,
+    "garo": "Bigil",
+    "english": "Skin",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 565,
+    "garo": "Bija",
+    "english": "bee",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2571,
+    "garo": "bi·ja",
+    "english": "Bee",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 265,
+    "garo": "Bijak",
+    "english": "leaf",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2825,
+    "garo": "bi·jak",
+    "english": "Leaf",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 568,
+    "garo": "Bila",
+    "english": "fly",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2735,
+    "garo": "bil·a",
+    "english": "Fly",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 424,
+    "garo": "Bilaka",
+    "english": "strong",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 6169,
+    "garo": "bil·ak·a",
+    "english": "strong",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 533,
+    "garo": "Bobil",
+    "english": "enemy",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2708,
+    "garo": "bo·bil",
+    "english": "Enemy",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 119,
+    "garo": "Brea",
+    "english": "buy",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2604,
+    "garo": "bre·a",
+    "english": "Buy",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 155,
+    "garo": "Bri",
+    "english": "four",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 7119,
+    "garo": "Bri",
+    "english": "Four.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 101,
+    "garo": "Cha·a",
+    "english": "eat",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2701,
+    "garo": "cha·a",
+    "english": "Eat",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 294,
+    "garo": "Chabi",
+    "english": "key",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2806,
+    "garo": "cha·bi",
+    "english": "Key",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2335,
+    "garo": "cha·man·aha",
+    "english": "eaten",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9329,
+    "garo": "cha·manaha",
+    "english": "eaten",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 104,
+    "garo": "cha·na ska·",
+    "english": "want to eat",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 105,
+    "garo": "cha·na ska",
+    "english": "want to eat",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 366,
+    "garo": "Chel·a",
+    "english": "far",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2716,
+    "garo": "chel·a",
+    "english": "Far",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 206,
+    "garo": "Chi·a",
+    "english": "sweet",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3086,
+    "garo": "chi·a",
+    "english": "Sweet",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 260,
+    "garo": "Chibima",
+    "english": "river",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2983,
+    "garo": "chi·bi·ma",
+    "english": "River",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2323,
+    "garo": "ching·a",
+    "english": "bright",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2485,
+    "garo": "Ching·a",
+    "english": "bright",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 492,
+    "garo": "Chini",
+    "english": "sugar",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3081,
+    "garo": "chi·ni",
+    "english": "Sugar",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 323,
+    "garo": "Chola",
+    "english": "shirt",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3013,
+    "garo": "chol·a",
+    "english": "Shirt",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 334,
+    "garo": "Chon·a",
+    "english": "small",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 6166,
+    "garo": "chon·a",
+    "english": "small",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 2318,
+    "garo": "chong·motan",
+    "english": "basically",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2482,
+    "garo": "Chong.motan",
+    "english": "basically",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 487,
+    "garo": "Chu·onga",
+    "english": "enough",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2709,
+    "garo": "chu·ong·a",
+    "english": "Enough",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 303,
+    "garo": "Da·alo",
+    "english": "today",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3128,
+    "garo": "Da.alo",
+    "english": "Today",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 333,
+    "garo": "Dal·a",
+    "english": "big",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2577,
+    "garo": "dal·a",
+    "english": "Big",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2605,
+    "garo": "De",
+    "english": "Bye",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 6452,
+    "garo": "De.",
+    "english": "Bye.",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 124,
+    "garo": "Demechik",
+    "english": "daughter",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2667,
+    "garo": "De·me·chik",
+    "english": "Daughter",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 123,
+    "garo": "Depante",
+    "english": "son",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3053,
+    "garo": "de·pan·te",
+    "english": "Son",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 1081,
+    "garo": "do·a mangchiking",
+    "english": "ten birds",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3103,
+    "garo": "do·a mangchiking",
+    "english": "ten birds",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 356,
+    "garo": "Dokan",
+    "english": "shop",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3017,
+    "garo": "do·kan",
+    "english": "Shop",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2347,
+    "garo": "duk ong·a",
+    "english": "sad",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2503,
+    "garo": "Duk ong·a",
+    "english": "sad",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 1040,
+    "garo": "Gama",
+    "english": "pay",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10057,
+    "garo": "gama",
+    "english": "pay",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 471,
+    "garo": "Gam·a",
+    "english": "sound",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3054,
+    "garo": "gam·a",
+    "english": "Sound",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 486,
+    "garo": "Gapa",
+    "english": "full",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2748,
+    "garo": "gap·a",
+    "english": "Full",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 8247,
+    "garo": "Gapa",
+    "english": "full.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 698,
+    "garo": "Gipin",
+    "english": "other",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 4944,
+    "garo": "gip·in",
+    "english": "other",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 148,
+    "garo": "Gisim",
+    "english": "black",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2581,
+    "garo": "gi·sim",
+    "english": "Black",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 338,
+    "garo": "Gital",
+    "english": "new",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2879,
+    "garo": "git·al",
+    "english": "New",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 146,
+    "garo": "Gitchak",
+    "english": "red",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2978,
+    "garo": "git·chak",
+    "english": "Red",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 339,
+    "garo": "Gitcham",
+    "english": "old",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2888,
+    "garo": "git·cham",
+    "english": "Old",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2356,
+    "garo": "Gitelna rasong",
+    "english": "praise the lord",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2454,
+    "garo": "Gitel na rasong",
+    "english": "praise the lord",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 1075,
+    "garo": "gittam",
+    "english": "3",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2530,
+    "garo": "gittam",
+    "english": "3",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 818,
+    "garo": "Goa",
+    "english": "shoot",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3016,
+    "garo": "go·a",
+    "english": "Shoot",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 409,
+    "garo": "Golpo",
+    "english": "story",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3076,
+    "garo": "gol·po",
+    "english": "Story",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2721,
+    "garo": "grang",
+    "english": "Feather",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 7507,
+    "garo": "Grang",
+    "english": "feather.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 421,
+    "garo": "Greng",
+    "english": "bone",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 7526,
+    "garo": "Greng",
+    "english": "Bone.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 5971,
+    "garo": "grip·grap",
+    "english": "unexpectedly",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 7547,
+    "garo": "Gripgrap",
+    "english": "unexpectedly",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 841,
+    "garo": "Guala",
+    "english": "forget",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2739,
+    "garo": "gu·al·a",
+    "english": "Forget",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9352,
+    "garo": "Guala",
+    "english": "forget",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 768,
+    "garo": "Hai cha·ha",
+    "english": "let's eat",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 6455,
+    "garo": "Hai cha·ha.",
+    "english": "Let's eat.",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 9998,
+    "garo": "Hai cha·na",
+    "english": "let's eat",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 9999,
+    "garo": "Hai cha·na.",
+    "english": "Let's eat.",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 9176,
+    "garo": "Hai kalna",
+    "english": "let's play",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10001,
+    "garo": "Hai kal·na",
+    "english": "let's play",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 769,
+    "garo": "Hai re·naha",
+    "english": "let's go",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 6454,
+    "garo": "Hai re·naha.",
+    "english": "Let's go.",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 498,
+    "garo": "Holdi",
+    "english": "turmeric",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3137,
+    "garo": "hol·di",
+    "english": "Turmeric",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 592,
+    "garo": "Isol",
+    "english": "god",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2755,
+    "garo": "i·sol",
+    "english": "God",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 3260,
+    "garo": "ja·git·ok",
+    "english": "ankle",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 8343,
+    "garo": "Ja·gitok",
+    "english": "ankle.",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 478,
+    "garo": "Jagring",
+    "english": "shadow",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3005,
+    "garo": "ja·gring",
+    "english": "Shadow",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 247,
+    "garo": "Jajong",
+    "english": "moon",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2862,
+    "garo": "ja·jong",
+    "english": "Moon",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 360,
+    "garo": "Jak·asi",
+    "english": "left",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2829,
+    "garo": "jak·a·si",
+    "english": "Left",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 580,
+    "garo": "Jakskil",
+    "english": "claw",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2624,
+    "garo": "jak·skil",
+    "english": "Claw",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 499,
+    "garo": "Jal·ik",
+    "english": "chili",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2618,
+    "garo": "jal·ik",
+    "english": "Chili",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 321,
+    "garo": "Ja·man·chak·a",
+    "english": "late",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2497,
+    "garo": "Ja·manchaka",
+    "english": "late",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 465,
+    "garo": "Janggi",
+    "english": "life",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2835,
+    "garo": "jang·gi",
+    "english": "Life",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 238,
+    "garo": "Jitpaka",
+    "english": "push",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2959,
+    "garo": "Jit·pak·a",
+    "english": "Push",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 828,
+    "garo": "Jo·a",
+    "english": "fry",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2747,
+    "garo": "jo·a",
+    "english": "Fry",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 9783,
+    "garo": "·jola",
+    "english": "while doing something else",
+    "confidence": null
+   },
+   {
+    "row_index": 9784,
+    "garo": "Jola",
+    "english": "while doing something else",
+    "confidence": null
+   }
+  ],
+  [
+   {
+    "row_index": 9787,
+    "garo": "Jola jola dakgipa",
+    "english": "one who says yes to everything",
+    "confidence": null
+   },
+   {
+    "row_index": 9788,
+    "garo": "Jola jola dakgipa",
+    "english": "one who says yes to everything",
+    "confidence": null
+   }
+  ],
+  [
+   {
+    "row_index": 809,
+    "garo": "Jroa",
+    "english": "swim",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3090,
+    "garo": "jroa",
+    "english": "Swim",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 470,
+    "garo": "Jumang",
+    "english": "dream",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2687,
+    "garo": "ju·mang",
+    "english": "Dream",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 208,
+    "garo": "Ka·a",
+    "english": "bitter",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2580,
+    "garo": "ka·a",
+    "english": "Bitter",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 617,
+    "garo": "Kajina",
+    "english": "tax",
+    "confidence": null
+   },
+   {
+    "row_index": 7765,
+    "garo": "Kajina",
+    "english": "Tax",
+    "confidence": "ocr_flagged"
+   }
+  ],
+  [
+   {
+    "row_index": 430,
+    "garo": "Ka·kita",
+    "english": "itch",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2798,
+    "garo": "ka·kit·a",
+    "english": "Itch",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 5918,
+    "garo": "kak·ket",
+    "english": "true",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 7812,
+    "garo": "Kakket",
+    "english": "true",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 116,
+    "garo": "Kal·a",
+    "english": "play",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2930,
+    "garo": "kal·a",
+    "english": "Play",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2306,
+    "garo": "kal·akenga",
+    "english": "joking",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2477,
+    "garo": "Ka·lakenga",
+    "english": "joking",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 399,
+    "garo": "Kali",
+    "english": "ink",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2797,
+    "garo": "ka·li",
+    "english": "Ink",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 604,
+    "garo": "Kamal",
+    "english": "priest",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2952,
+    "garo": "ka·mal",
+    "english": "Priest",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 3255,
+    "garo": "Ka·o nangnabe",
+    "english": "do not be angry",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 8550,
+    "garo": "Ka·o nangnabe.",
+    "english": "do not be angry.",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 57,
+    "garo": "Ka·saa",
+    "english": "love",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2848,
+    "garo": "ka·sa·a",
+    "english": "Love",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 343,
+    "garo": "Ka·sina",
+    "english": "slow",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3032,
+    "garo": "ka·sin·a",
+    "english": "Slow",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 109,
+    "garo": "Kata",
+    "english": "run",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9274,
+    "garo": "Kata",
+    "english": "run",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 145,
+    "garo": "Ka·tong",
+    "english": "heart",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2783,
+    "garo": "ka·tong",
+    "english": "Heart",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 573,
+    "garo": "Ki·me",
+    "english": "tail",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3092,
+    "garo": "ki·me",
+    "english": "Tail",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2324,
+    "garo": "ki·sang",
+    "english": "butt",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2602,
+    "garo": "Ki·sang",
+    "english": "Butt",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 1078,
+    "garo": "ki·tap king·gittam",
+    "english": "three books",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3113,
+    "garo": "ki·tap king·gittam",
+    "english": "three books",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2920,
+    "garo": "kol·om",
+    "english": "Pen",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 8836,
+    "garo": "kolom",
+    "english": "pen",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 326,
+    "garo": "Kotip",
+    "english": "turban",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3136,
+    "garo": "ko·tip",
+    "english": "Turban",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 472,
+    "garo": "Ku·rang",
+    "english": "voice",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3147,
+    "garo": "ku·rang",
+    "english": "Voice",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 58,
+    "garo": "Kusi",
+    "english": "happiness",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2775,
+    "garo": "ku·si",
+    "english": "Happiness",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 137,
+    "garo": "Ku·sik",
+    "english": "mouth",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2499,
+    "garo": "Kusik",
+    "english": "mouth",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 2483,
+    "garo": "Kusi ong.bo",
+    "english": "be happy",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9183,
+    "garo": "Kusi ong·bo",
+    "english": "be happy",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 812,
+    "garo": "Malama",
+    "english": "crawl",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2654,
+    "garo": "mal·am·a",
+    "english": "Crawl",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2409,
+    "garo": "mamingba ong·ja",
+    "english": "you're welcome",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 6450,
+    "garo": "Mamingba ong·ja.",
+    "english": "You're welcome.",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 653,
+    "garo": "Mata",
+    "english": "sharp",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3011,
+    "garo": "mat·a",
+    "english": "Sharp",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 80,
+    "garo": "Matcha",
+    "english": "tiger",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3122,
+    "garo": "mat·cha",
+    "english": "Tiger",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 81,
+    "garo": "Matchok",
+    "english": "deer",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2673,
+    "garo": "mat·chok",
+    "english": "Deer",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 526,
+    "garo": "Me·chik",
+    "english": "woman",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3178,
+    "garo": "me·chik",
+    "english": "Woman",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 475,
+    "garo": "Me·mang",
+    "english": "ghost",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2750,
+    "garo": "me·mang",
+    "english": "Ghost",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 87,
+    "garo": "Mese",
+    "english": "rat",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2973,
+    "garo": "me·se",
+    "english": "Rat",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 207,
+    "garo": "Mesenga",
+    "english": "sour",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3057,
+    "garo": "me·seng·a",
+    "english": "Sour",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 251,
+    "garo": "Mikka",
+    "english": "rain",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2970,
+    "garo": "mik·ka",
+    "english": "Rain",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 362,
+    "garo": "Mikkang",
+    "english": "front",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2745,
+    "garo": "mik·kang",
+    "english": "Front",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 9060,
+    "garo": "mi plate sa",
+    "english": "one plate of rice",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9062,
+    "garo": "mi plate sa",
+    "english": "one plate of rice",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 480,
+    "garo": "Mitam",
+    "english": "some",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3049,
+    "garo": "mit·am",
+    "english": "Some",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10024,
+    "garo": "mitam",
+    "english": "some",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 192,
+    "garo": "Mittela.",
+    "english": "thank you",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 6449,
+    "garo": "Mittela.",
+    "english": "Thank you.",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 16,
+    "garo": "Modu",
+    "english": "papaya",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2910,
+    "garo": "mo·du",
+    "english": "Papaya",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 328,
+    "garo": "Moja",
+    "english": "socks",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3045,
+    "garo": "mo·ja",
+    "english": "Socks",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 1024,
+    "garo": "Na·a angna kasa·ama?",
+    "english": "do you love me?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10079,
+    "garo": "Na·a angna ka·saama?",
+    "english": "do you love me?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 726,
+    "garo": "Na·a bano·ni?",
+    "english": "where are you from?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 6462,
+    "garo": "Na·a banoni?",
+    "english": "Where are you from?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 1021,
+    "garo": "Na·a box ko dena man·gengma?",
+    "english": "can you lift the box?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10078,
+    "garo": "Na·a boxko de·na man·gengma?",
+    "english": "can you lift the box?",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 10062,
+    "garo": "Na·a box ko dena mangenma?",
+    "english": "can you lift the box?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10070,
+    "garo": "Na·a box ko dena man·genma?",
+    "english": "can you lift the box?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10091,
+    "garo": "Na·a boxko de·na man·genma?",
+    "english": "can you lift the box?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 989,
+    "garo": "Na·a maidake sal·a?",
+    "english": "how did you drive?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10050,
+    "garo": "Na·a maidake sala?",
+    "english": "how did you drive?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 990,
+    "garo": "Na·a maina gariko sal·a?",
+    "english": "why do you drive the car?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10051,
+    "garo": "Na·a maina gariko sala?",
+    "english": "why do you drive the car?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 972,
+    "garo": "Na·a mi chajokma?",
+    "english": "did you have lunch?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9311,
+    "garo": "Na·a mi cha·jokma?",
+    "english": "did you have lunch?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 10061,
+    "garo": "Na·a nang kolom ko on·a mangenma?",
+    "english": "can you give me your pen?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10069,
+    "garo": "Na·a nang kolom ko on·a man·genma?",
+    "english": "can you give me your pen?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2398,
+    "garo": "na·a nastha cha·aha ma?",
+    "english": "have you eaten breakfast?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 6460,
+    "garo": "Na·a nastha cha·ahama?",
+    "english": "Have you eaten breakfast?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 987,
+    "garo": "Na·a porikka sena mangenma?",
+    "english": "can you write the exam?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10066,
+    "garo": "Na·a porikka sena man·genma?",
+    "english": "can you write the exam?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 135,
+    "garo": "Nachil",
+    "english": "ear",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2696,
+    "garo": "na·chil",
+    "english": "Ear",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 340,
+    "garo": "Nama",
+    "english": "good",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2760,
+    "garo": "nama",
+    "english": "Good",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2500,
+    "garo": "Nang.a",
+    "english": "must",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9272,
+    "garo": "nanga",
+    "english": "must",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2408,
+    "garo": "nang·ni ja·a senga",
+    "english": "your feet stinks",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 2473,
+    "garo": "Nangni ja·a senga",
+    "english": "your feet stinks",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 14,
+    "garo": "Narang",
+    "english": "orange",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2898,
+    "garo": "na·rang",
+    "english": "Orange",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 20,
+    "garo": "Narikel",
+    "english": "coconut",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2643,
+    "garo": "na·ri·kel",
+    "english": "Coconut",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 496,
+    "garo": "Na·tok",
+    "english": "fish",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2731,
+    "garo": "na·tok",
+    "english": "Fish",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 646,
+    "garo": "Neng·a",
+    "english": "tired",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3127,
+    "garo": "neng·a",
+    "english": "Tired",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 536,
+    "garo": "Nokkol",
+    "english": "servant",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3002,
+    "garo": "nok·kol",
+    "english": "Servant",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 825,
+    "garo": "Nonga",
+    "english": "apply",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9167,
+    "garo": "Nonga",
+    "english": "apply",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2312,
+    "garo": "·o",
+    "english": "at",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2480,
+    "garo": "O",
+    "english": "at",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 644,
+    "garo": "Okkria",
+    "english": "hungry",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2794,
+    "garo": "ok·kri·a",
+    "english": "Hungry",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 5673,
+    "garo": "ok sa·a",
+    "english": "stomach ache",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10137,
+    "garo": "Ok saa",
+    "english": "stomach ache",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2320,
+    "garo": "ong·bo",
+    "english": "be",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2567,
+    "garo": "Ong.bo",
+    "english": "Be",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 200,
+    "garo": "Ong·ja",
+    "english": "no",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 9273,
+    "garo": "ong·ja",
+    "english": "no",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 2310,
+    "garo": "ong·ronggijagipa",
+    "english": "abnormal",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 2479,
+    "garo": "Ong·ronggijagipa",
+    "english": "abnormal",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 120,
+    "garo": "Pala",
+    "english": "sell",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3001,
+    "garo": "pal·a",
+    "english": "Sell",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 114,
+    "garo": "Ra·a",
+    "english": "take",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3093,
+    "garo": "ra·a",
+    "english": "Take",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 548,
+    "garo": "Rak·a",
+    "english": "hard",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2776,
+    "garo": "Raka",
+    "english": "Hard",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 353,
+    "garo": "Rama",
+    "english": "road",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2986,
+    "garo": "ra·ma",
+    "english": "Road",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 346,
+    "garo": "Ran·a",
+    "english": "dry",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2691,
+    "garo": "ran·a",
+    "english": "Dry",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 243,
+    "garo": "Rim·a",
+    "english": "catch",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2613,
+    "garo": "rim·a",
+    "english": "Catch",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 151,
+    "garo": "Rimit",
+    "english": "yellow",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3188,
+    "garo": "rim·it",
+    "english": "Yellow",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 106,
+    "garo": "Ringa",
+    "english": "drink",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2688,
+    "garo": "ring·a",
+    "english": "Drink",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 655,
+    "garo": "Rinoka",
+    "english": "smooth",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3041,
+    "garo": "rin·ok·a",
+    "english": "Smooth",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 132,
+    "garo": "Ripeng",
+    "english": "friend",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2740,
+    "garo": "Ripeng",
+    "english": "Friend",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 335,
+    "garo": "Ro·a",
+    "english": "long",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2846,
+    "garo": "ro·a",
+    "english": "Long",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2560,
+    "garo": "Rua",
+    "english": "Axe",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2561,
+    "garo": "ru·a",
+    "english": "Axe",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 824,
+    "garo": "Rua",
+    "english": "pour",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2944,
+    "garo": "ru·a",
+    "english": "Pour",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 541,
+    "garo": "Rupa",
+    "english": "silver",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3024,
+    "garo": "ru·pa",
+    "english": "Silver",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 619,
+    "garo": "Sakki",
+    "english": "witness",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3177,
+    "garo": "sak·ki",
+    "english": "Witness",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 808,
+    "garo": "Sala",
+    "english": "pull",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2958,
+    "garo": "sal·a",
+    "english": "Pull",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10055,
+    "garo": "sala",
+    "english": "pull",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 239,
+    "garo": "sala (⚠ same word)",
+    "english": "pull / drive",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 10064,
+    "garo": "Sal·a (⚠ same word)",
+    "english": "pull / drive",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 2282,
+    "garo": "sala (⚠ same word)",
+    "english": "the pull / drive",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 10065,
+    "garo": "Sal·a (⚠ same word)",
+    "english": "the pull / drive",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 370,
+    "garo": "Salaram",
+    "english": "east",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2700,
+    "garo": "sal·a·ram",
+    "english": "East",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 594,
+    "garo": "Salgi",
+    "english": "heaven",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2784,
+    "garo": "sal·gi",
+    "english": "Heaven",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 369,
+    "garo": "Salgipeng",
+    "english": "south",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3059,
+    "garo": "sal·gip·eng",
+    "english": "South",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 368,
+    "garo": "Salgro",
+    "english": "north",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2883,
+    "garo": "sal·gro",
+    "english": "North",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 371,
+    "garo": "Saliram",
+    "english": "west",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3152,
+    "garo": "sal·i·ram",
+    "english": "West",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 301,
+    "garo": "Sal·jatchi",
+    "english": "noon",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2881,
+    "garo": "Saljatchi",
+    "english": "Noon",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2882,
+    "garo": "sal·jat·chi",
+    "english": "Noon",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 850,
+    "garo": "Sea",
+    "english": "write",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 3185,
+    "garo": "se·a",
+    "english": "Write",
+    "confidence": "superseded"
+   }
+  ],
+  [
+   {
+    "row_index": 504,
+    "garo": "Song·a",
+    "english": "to cook",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2649,
+    "garo": "song·a",
+    "english": "to cook",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 2734,
+    "garo": "Tampi",
+    "english": "Fly",
+    "confidence": "verified_high"
+   },
+   {
+    "row_index": 2736,
+    "garo": "tam·pi",
+    "english": "Fly",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 342,
+    "garo": "Ta·raka",
+    "english": "fast",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2717,
+    "garo": "Ta·rak·a",
+    "english": "Fast",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 17,
+    "garo": "Te·brong",
+    "english": "jackfruit",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2800,
+    "garo": "te·brong",
+    "english": "Jackfruit",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 817,
+    "garo": "Teka",
+    "english": "lock",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2844,
+    "garo": "tek·a",
+    "english": "Lock",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 13,
+    "garo": "Te·rik",
+    "english": "banana",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2566,
+    "garo": "te·rik",
+    "english": "Banana",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 3929,
+    "garo": "tong·tang",
+    "english": "direct",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 3930,
+    "garo": "·tong·tang·",
+    "english": "direct",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 5685,
+    "garo": "·tong·tang·",
+    "english": "straight",
+    "confidence": "unverified"
+   },
+   {
+    "row_index": 5686,
+    "garo": "tong·tang",
+    "english": "straight",
+    "confidence": "unverified"
+   }
+  ],
+  [
+   {
+    "row_index": 107,
+    "garo": "Tusia",
+    "english": "sleep",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 3029,
+    "garo": "tu·si·a",
+    "english": "Sleep",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 10063,
+    "garo": "verb + mangenma?",
+    "english": "ability / permission ?",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 10071,
+    "garo": "verb + man·genma?",
+    "english": "ability / permission ?",
+    "confidence": "verified_high"
+   }
+  ],
+  [
+   {
+    "row_index": 731,
+    "garo": "Wal·jatchi",
+    "english": "midnight",
+    "confidence": "superseded"
+   },
+   {
+    "row_index": 2854,
+    "garo": "wal·jat·chi",
+    "english": "Midnight",
+    "confidence": "verified_high"
+   }
+  ]
+ ]
+}
