@@ -73,3 +73,12 @@ test('come paradigm: stem re·ba, native imperative re·babo, distinct from go',
   assert.equal(c.forms.continuous, 're·baenga'); assert.equal(c.forms.infinitive, 're·bana');
   assert.notEqual(c.forms.present, getVerbParadigm('go').forms.present);
 });
+
+// come imperative (PO answer 2026-10-25: `re·babo`): no stray raka, don't come = re·banabe
+test('come! = Re·babo!, do not come = re·banabe', async () => {
+  const t = async (en) => (await translate(en)).garo;
+  assert.equal(await t('come!'), 'Re·babo!');
+  assert.equal(await t('do not come'), 're·banabe');
+  assert.equal(await t("don't come"), 're·banabe');
+  assert.equal(await t('come with me'), 'Ang·ming re·babo');
+});
