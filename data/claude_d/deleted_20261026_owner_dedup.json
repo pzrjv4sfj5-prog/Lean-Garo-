@@ -1,0 +1,89 @@
+{
+  "directive": "Project Owner, chat, 2026-10-26: replace/delete listed duplicates; mang dot forms (mang·sa, mang·gni) kept per Owner statement 2026-09-28/29 (mang has rakka)",
+  "master_before_records": 10166,
+  "replaced": [
+    {
+      "row_index_before": 9185,
+      "english": "my dog",
+      "old_garo": "ang·ni achak",
+      "new_garo": "angni Achak"
+    },
+    {
+      "row_index_before": 1167,
+      "english": "my house",
+      "old_garo": "ang·ni Nok",
+      "new_garo": "angni Nok"
+    }
+  ],
+  "deleted": [
+    {
+      "row_index_before": 0,
+      "record": {
+        "english": "one dog",
+        "garo": "achak mangsa",
+        "category": "animals",
+        "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'one dog' has VERIFIED/HIGH form(s) ['achak mang·sa']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
+        "confidence": "superseded"
+      },
+      "kept_instead_row_index_before": 2896
+    },
+    {
+      "row_index_before": 1080,
+      "record": {
+        "english": "two dogs",
+        "garo": "achak manggni",
+        "category": "numbers",
+        "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'two dogs' has VERIFIED/HIGH form(s) ['achak mang·gni']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B. RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched.",
+        "confidence": "superseded"
+      },
+      "kept_instead_row_index_before": 3146
+    },
+    {
+      "row_index_before": 355,
+      "record": {
+        "english": "field",
+        "garo": "A·ba",
+        "category": "general",
+        "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'field' has VERIFIED/HIGH form(s) [\"a'ba\"]. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
+        "confidence": "superseded"
+      },
+      "kept_instead_row_index_before": 6240
+    },
+    {
+      "row_index_before": 6159,
+      "record": {
+        "english": "answer",
+        "garo": "a·gan·chak·a",
+        "pos": null,
+        "category": "uncategorized",
+        "classifier": null,
+        "notes": "SUPERSEDED (2026-08-15, Claude A) - superseded by NV-077 (Aganchaka VERIFIED/HIGH, verb sense; Aganchakani VERIFIED/HIGH, noun sense, POS split). This UNVERIFIED row was never explicitly tagged despite NV-077 superseding it linguistically; flagged by Claude C audit 20260815B. Retained per citation discipline, not deleted. Was: UNVERIFIED/HIGH v:in-chak-a / ku·-chak-a",
+        "confidence": "superseded"
+      },
+      "kept_instead_row_index_before": 407
+    },
+    {
+      "row_index_before": 1411,
+      "record": {
+        "english": "my dog",
+        "garo": "angni Achak",
+        "category": "animals",
+        "notes": "SUPERSEDED — native relay NV-083 (2026-08-20, Thangseng via Tridip): not confirmed, superseded by 'ang·ni achak'. | Root corrected 2026-09-05 (Claude B, NV-audit remediation): noun part was the generic animal-classifier placeholder 'mang' left over from bulk template generation (same placeholder shipped identically for dog/cat/bird/fish across 15 modifiers). Replaced with the canonical standalone noun already used by the working sov-assembly composition path for this animal, so both paths now agree. 'cat' rows in this same batch are deliberately NOT touched here — cat's own canonical root is unresolved pending Thangseng adjudication (menggo vs meng·gong), see docs/CLAUDE_B_SESSION_MIGRATION_20260905C.md.",
+        "confidence": "unverified"
+      },
+      "kept_instead_row_index_before": 9185
+    },
+    {
+      "row_index_before": 1166,
+      "record": {
+        "english": "my house",
+        "garo": "angni Nok",
+        "category": "home",
+        "notes": "SUPERSEDED — native relay NV-088 (2026-08-20, Thangseng via Tridip): not confirmed, superseded by 'ang·ni nok'. | Root corrected 2026-09-05 (Claude B, NV-audit remediation, generalized pass): noun part was a generic-classifier placeholder ('rang'/'chik'/'chak' etc, reused verbatim from a different noun's bulk-generated batch) instead of this word's own root — same defect class/root cause as the dog/cat/bird/fish 'mang' collision (finding #3), just recurring on non-animal nouns. Replaced with the canonical standalone/compiled root for this exact word, matching what the sov-assembly composition path already produces, so both paths now agree.",
+        "confidence": "unverified"
+      },
+      "kept_instead_row_index_before": 1167
+    }
+  ],
+  "master_after_records": 10160
+}

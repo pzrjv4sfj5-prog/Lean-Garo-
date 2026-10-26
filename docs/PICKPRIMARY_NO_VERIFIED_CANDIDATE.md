@@ -2734,7 +2734,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `my food`: candidates — `angni food` (weak/OCR), `angni chak` (weak/OCR), `angni al·a` (weak/OCR) — shipped: `angni al·a`
 - `my grandfather`: candidates — `angni atong` (weak/OCR) — shipped: `angni atong`
 - `my grandmother`: candidates — `angni atongni` (weak/OCR) — shipped: `angni atongni`
-- `my house`: candidates — `Angni nok` (weak/OCR), `angni house` (weak/OCR), `angni rang` (weak/OCR), `ang·ni Nok` (weak/OCR) — shipped: `ang·ni Nok`
+- `my house`: candidates — `Angni nok` (weak/OCR), `angni house` (weak/OCR), `angni rang` (weak/OCR), `angni Nok` (weak/OCR) — shipped: `angni Nok`
 - `my mountain`: candidates — `angni nok` (weak/OCR) — shipped: `angni nok`
 - `my person`: candidates — `angni mande` (weak/OCR) — shipped: `angni mande`
 - `my rice`: candidates — `angni chak` (weak/OCR), `angni mi` (weak/OCR) — shipped: `angni mi`
