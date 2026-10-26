@@ -79684,5 +79684,23 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-207 (2026-10-25): Project Owner-confirmed (chat) as verified against the native dictionary. Project Owner directive, not a Thangseng quote.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "go together",
+    "garo": "Re·mola",
+    "pos": "v.",
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-209 (2026-10-26): Project Owner directive (chat, new word), not a Thangseng quote. Owner typed 'Re.mola'; period read as raka typo per standing rule, written Re·mola. Same root re· as re·a (go) + -mola (together).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to go together",
+    "garo": "Re·mola",
+    "pos": "v.",
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-209 (2026-10-26): Project Owner directive (chat, new word), not a Thangseng quote. Owner typed 'Re.mola'; period read as raka typo per standing rule, written Re·mola. Same root re· as re·a (go) + -mola (together).",
+    "confidence": "verified_high"
   }
 ]

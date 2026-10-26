@@ -4134,5 +4134,7 @@
   "belly": "body",
   "to rumble": "health",
   "to grumble": "health",
-  "windiness due to gases": "health"
+  "windiness due to gases": "health",
+  "go together": "travel",
+  "to go together": "travel"
 }

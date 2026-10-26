@@ -6693,7 +6693,7 @@
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "SUPERSEDED 2026-09-16 (Project Owner directive, correcting this session's master_dictionary.json mango reversal): Te·gachu is the canonical spelling, not this te·ga·chu-family variant (which also carries a stray combining-dot encoding artifact, te\u02d9\u00b7ga\u00b7chu, distinct from the plain te\u00b7ga\u00b7chu spelling elsewhere). Retained per citation discipline, not deleted. This file is archival only, not read by prepare-data.js."
+    "notes": "SUPERSEDED 2026-09-16 (Project Owner directive, correcting this session's master_dictionary.json mango reversal): Te·gachu is the canonical spelling, not this te·ga·chu-family variant (which also carries a stray combining-dot encoding artifact, te˙·ga·chu, distinct from the plain te·ga·chu spelling elsewhere). Retained per citation discipline, not deleted. This file is archival only, not read by prepare-data.js."
   },
   {
     "english": "Many / Much",
@@ -37558,5 +37558,23 @@
     "category": "general",
     "classifier": null,
     "notes": "VERIFIED/HIGH — 2026-08-08: native direct confirmation, universal. See NV-069."
+  },
+  {
+    "english": "go together",
+    "garo": "Re·mola",
+    "pos": "v.",
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-209 (2026-10-26): Project Owner directive (chat, new word), not a Thangseng quote. Owner typed 'Re.mola'; period read as raka typo per standing rule, written Re·mola. Same root re· as re·a (go) + -mola (together).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to go together",
+    "garo": "Re·mola",
+    "pos": "v.",
+    "category": "travel",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-209 (2026-10-26): Project Owner directive (chat, new word), not a Thangseng quote. Owner typed 'Re.mola'; period read as raka typo per standing rule, written Re·mola. Same root re· as re·a (go) + -mola (together).",
+    "confidence": "verified_high"
   }
 ]
