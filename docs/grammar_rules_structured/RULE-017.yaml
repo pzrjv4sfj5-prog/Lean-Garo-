@@ -11,8 +11,12 @@ claims:
   - scope: null
     status: verified
     confidence: high
+  - scope: "-ja on adjectives (NV-210, 2026-10-26, pasted native-writer text relayed by Project Owner, author unattributed): dal·a = big, dal·ja = not big. Separate word ong·ja can also mean 'not' but gives a different sense: dal·gipa ong·ja = 'not the big one' (not simply 'not big')."
+    status: po_provided
+    confidence: high
 examples:
   - 'cha·ja = "does not / did not eat."'
+  - 'dal·ja = "not big" (NV-210); dal·gipa ong·ja = "not the big one" (NV-210)'
 counterexamples:
   note: "-jaha does NOT mean past negation (see RULE-025)."
   items:

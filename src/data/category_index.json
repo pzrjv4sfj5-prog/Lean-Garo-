@@ -4082,7 +4082,7 @@
   "to drive": "general",
   "to pull": "general",
   "to pay": "general",
-  "can you give me water? (explicit pronoun)": "food",
+  "can you give me water? (explicit pronoun)": "sentences",
   "i am fine (affirmative response)": "phrases",
   "of course (certainly)": "general",
   "to lift": "body",
@@ -4136,5 +4136,13 @@
   "to grumble": "health",
   "windiness due to gases": "health",
   "go together": "travel",
-  "to go together": "travel"
+  "to go together": "travel",
+  "not big": "adjectives",
+  "not the big one": "adjectives",
+  "to give (requested / expected sense)": "verbs",
+  "to give (causal clause, because gave)": "verbs",
+  "he gives me water": "sentences",
+  "she gives me water": "sentences",
+  "because he gave me water i was very happy": "sentences",
+  "because she gave me water i was very happy": "sentences"
 }

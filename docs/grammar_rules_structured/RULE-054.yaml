@@ -1,0 +1,30 @@
+id: RULE-054
+title: "Give: on·a vs on·na vs on·ana"
+description: >-
+  Three related forms of "give". on·a = act of giving, complete or incomplete
+  (plain statement). on·na = giving not yet complete but expected (requests,
+  e.g. "can you give me water?"). on·ana = causal-clause form ("because
+  (he) gave"). Some writers do not keep the on·a/on·na spelling distinction;
+  either spelling is accepted as correct.
+dependencies: []
+claims:
+  - scope: "on·a / on·na sense distinction and on·ana as causal-clause form"
+    status: po_provided
+    confidence: high
+    status_note: >-
+      NV-210 (2026-10-26): pasted native-writer text relayed by the Project Owner;
+      author unattributed, not a direct Thangseng quote, raw text not on file.
+      Raka restored from period/apostrophe typos per standing rule.
+examples:
+  - "Angna chi on·na man·genma? = Can you give me water?"
+  - "Ua angna chiko on·a. = He/she gives me water."
+  - "Uni angna chi on·ana anga kusi ong·beaha. = Because he gave me water, I was very happy."
+counterexamples:
+  note: "Explicit-pronoun request is Na·a angna chi on·na man·genma?, not on·ana (superseded NV-190 variant)."
+  items: []
+launch_priority:
+  - scope: null
+    tier: P1
+last_updated: "2026-10-26"
+updated_by: "Claude A"
+source_ref: "NV-210"

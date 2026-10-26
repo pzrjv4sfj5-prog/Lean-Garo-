@@ -79248,8 +79248,8 @@
     "english": "can you give me water? (explicit pronoun)",
     "garo": "Na·a angna chi on·ana man·genma?",
     "category": "food",
-    "notes": "NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` / `man·genba` as written by Thangseng; replaces NV-185 `man·gengma`. Earlier note: NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: variant with explicit `Na·a`. `on·ana` stored as given; `man·genma` aligned to `man·ge",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — NV-210 (2026-10-26): pasted native-writer text gives the explicit-pronoun request as `Na·a angna chi on·na man·genma?`, and defines on·ana as the causal-clause form (because gave), so on·ana is wrong here. Retained per citation discipline, not deleted. Prior: NV-190 (2026-10-23, Project Owner directive in chat, no transcript): native spelling `man·genma` / `man·genba` as written by Thangseng; replaces NV-185 `man·gengma`. Earlier note: NV-187 (2026-10-22, Project Owner-relayed, attributed to Thangseng; raw message not on file), not a native quote: variant with explicit `Na·a`. `on·ana` stored as given; `man·genma` aligned to `man·ge",
+    "confidence": "superseded"
   },
   {
     "english": "may i sit?",
@@ -79701,6 +79701,87 @@
     "category": "travel",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-209 (2026-10-26): Project Owner directive (chat, new word), not a Thangseng quote. Owner typed 'Re.mola'; period read as raka typo per standing rule, written Re·mola. Same root re· as re·a (go) + -mola (together).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "not big",
+    "garo": "Dal·ja",
+    "pos": null,
+    "category": "adjectives",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. Suffix -ja on the adjective: dal·a (big) -> dal·ja (not big).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "not the big one",
+    "garo": "Dal·gipa ong·ja",
+    "pos": null,
+    "category": "adjectives",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. Separate ong·ja gives a different sense: 'not the big one', not simply 'not big'.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to give (requested / expected sense)",
+    "garo": "On·na",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. on·a vs on·na: both 'give'; on·na = giving not yet complete but expected (requests, e.g. Angna chi on·na man·genma?). Some writers do not keep the spelling distinction; either spelling accepted.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to give (causal clause, because gave)",
+    "garo": "On·ana",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. Comes from on·a; causal-clause function: Uni angna chi on·ana anga kusi ong·beaha.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "he gives me water",
+    "garo": "Ua angna chiko on·a.",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. on·a = act of giving, complete or incomplete (plain statement).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "she gives me water",
+    "garo": "Ua angna chiko on·a.",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. No gendered pronoun (NV-175); same as 'he gives me water'.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "because he gave me water i was very happy",
+    "garo": "Uni angna chi on·ana anga kusi ong·beaha.",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "because she gave me water i was very happy",
+    "garo": "Uni angna chi on·ana anga kusi ong·beaha.",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. No gendered pronoun (NV-175).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "can you give me water? (explicit pronoun)",
+    "garo": "Na·a angna chi on·na man·genma?",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. Explicit-pronoun form uses on·na, not on·ana (on·ana is the causal form).",
     "confidence": "verified_high"
   }
 ]
