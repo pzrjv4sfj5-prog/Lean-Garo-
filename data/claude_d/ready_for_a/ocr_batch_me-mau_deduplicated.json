@@ -1,0 +1,1295 @@
+{
+ "schema": "lean-garo.claude_a_review_input.v1",
+ "source_page": null,
+ "source_type": "OCR (Gemini) batch 1, Me..Mau; proofread against raw OCR text",
+ "status": "NEW_ENTRIES",
+ "deduplication": {
+  "raka_normalization": "Convert hyphen to · only inside Garo fields",
+  "master_records": 10166,
+  "master_commit": "8fc00d8",
+  "level1": "Garo form (any variant) already anywhere in master => row dropped whole",
+  "level2": "English sense, or parenthetical Garo synonym, already in master => row dropped (no second word for an existing word)"
+ },
+ "summary": {
+  "ocr_records_reviewed": 121,
+  "new_records_for_claude_a": 61,
+  "dropped_garo_in_master": 31,
+  "dropped_english_or_synonym_in_master": 21,
+  "held": 8
+ },
+ "entries": [
+  {
+   "english": "An old or elderly man ; a patriarch ; forefather.",
+   "garo": "Me·apa·chagitcham",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 9
+  },
+  {
+   "english": "A kind of tree, the leaves of which are used as vegetable.",
+   "garo": "Me·bitchi",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 11
+  },
+  {
+   "english": "(Zanthoxylum Bud-runga ; Z. acanthopodium ; Z oxyphyllum). A prickly middle-sized tree with aromatic taste leaves of which are used as vegetable.",
+   "garo": "Me·cheng",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 13
+  },
+  {
+   "english": "A thin watery soup made by boiling meat, fish or vegetables ; broth ; soup.",
+   "garo": "Me·chi",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 14
+  },
+  {
+   "english": "Belonging to woman ; feminine ; feminist.",
+   "garo": "Me·chikni",
+   "pos": [
+    "adj."
+   ],
+   "source_page": null,
+   "ocr_row": 16
+  },
+  {
+   "english": "Girlish ; like a girl.",
+   "garo": "Me·chik bi·sa gita",
+   "pos": [
+    "adj."
+   ],
+   "source_page": null,
+   "ocr_row": 20
+  },
+  {
+   "english": "Petticoat government.",
+   "garo": "Me·chikni sason",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 23
+  },
+  {
+   "english": "Paddy seed ; paddy kept for sowing.",
+   "garo": "Mechil, Michil",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 24
+  },
+  {
+   "english": "A medal.",
+   "garo": "Medal",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 25
+  },
+  {
+   "english": "set on the pot (in the fire).",
+   "garo": "Me·dik chana",
+   "pos": [
+    "v."
+   ],
+   "source_page": null,
+   "ocr_row": 27,
+   "english_raw": "to set on the pot (in the fire)."
+  },
+  {
+   "english": "The ear of rice.",
+   "garo": "Medong, Midong",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 28
+  },
+  {
+   "english": "A stick to stir rice when being cooked.",
+   "garo": "Me·gol (Kanchi)",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 32
+  },
+  {
+   "english": "A thin long insect with long slender legs.",
+   "garo": "Me·mang me·gol",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 33
+  },
+  {
+   "english": "(Barebinia xarie-gata). A middle-sized flowering tree, the new soft leaves of which is eaten cooked.",
+   "garo": "Me·gong",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 34
+  },
+  {
+   "english": "Yesterday morning.",
+   "garo": "Mejapring",
+   "pos": [
+    "n.",
+    "adv."
+   ],
+   "source_page": null,
+   "ocr_row": 38
+  },
+  {
+   "english": "Last evening.",
+   "garo": "Meja atam",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 39
+  },
+  {
+   "english": "Last night.",
+   "garo": "Meja walo",
+   "pos": [
+    "n.",
+    "adv."
+   ],
+   "source_page": null,
+   "ocr_row": 40
+  },
+  {
+   "english": "A mustard-like plant grown in jhum-land for vegetable.",
+   "garo": "Me·jak",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 41
+  },
+  {
+   "english": "Only recently ; not long ago ; a few days ago ; of late.",
+   "garo": "Mejamangmang",
+   "pos": [
+    "adv."
+   ],
+   "source_page": null,
+   "ocr_row": 42
+  },
+  {
+   "english": "caress a baby making it to laugh.",
+   "garo": "Mejeka",
+   "pos": [
+    "v."
+   ],
+   "source_page": null,
+   "ocr_row": 44,
+   "english_raw": "To caress a baby making it to laugh."
+  },
+  {
+   "english": "Slightly burnt cooked rice at the bottom of the pot ; a scorched bits of rice adhering to the bottom or sides of the pot.",
+   "garo": "Me·kam",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 46
+  },
+  {
+   "english": "A small deciduous tree.",
+   "garo": "Me·kret",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 51
+  },
+  {
+   "english": "(Hibiscus surratensis). A trailing plant with prickles having the taste of sorrel used as vegetable.",
+   "garo": "Me·kri",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 52
+  },
+  {
+   "english": "Assembly ; meeting ; gathering ; congregation.",
+   "garo": "Melaa",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 55
+  },
+  {
+   "english": "hold secret meeting ; hold unlawful assembly.",
+   "garo": "Melaprua",
+   "pos": [
+    "v."
+   ],
+   "source_page": null,
+   "ocr_row": 56,
+   "english_raw": "To hold secret meeting ; to hold unlawful assembly."
+  },
+  {
+   "english": "Secret meeting.",
+   "garo": "Melaprua",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 57
+  },
+  {
+   "english": "get on together ; be friendly with ; be amiable with.",
+   "garo": "Meligrika",
+   "pos": [
+    "v."
+   ],
+   "source_page": null,
+   "ocr_row": 61,
+   "english_raw": "To get on together ; to be friendly with ; to be amiable with."
+  },
+  {
+   "english": "One knot ; one hitch.",
+   "garo": "Mel·sa",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 62
+  },
+  {
+   "english": "A kind of scorpion.",
+   "garo": "Me·mang (Mi·mang) ang·ke",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 65
+  },
+  {
+   "english": "A plant growing wild that looks like a paddy.",
+   "garo": "Me·mang (mi·mang) mi",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 66
+  },
+  {
+   "english": "A pitcher plant ; a monkey cup ; nepenthes.",
+   "garo": "Me·mang (Mi·mang) koksi",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 67
+  },
+  {
+   "english": "cast out evil spirit.",
+   "garo": "Me·mang a·rika",
+   "pos": [
+    "v."
+   ],
+   "source_page": null,
+   "ocr_row": 68,
+   "english_raw": "To cast out evil spirit."
+  },
+  {
+   "english": "be haunted by ghosts.",
+   "garo": "Me·mang kal·aka",
+   "pos": [
+    "v."
+   ],
+   "source_page": null,
+   "ocr_row": 69,
+   "english_raw": "To be haunted by ghosts."
+  },
+  {
+   "english": "A spirit-land ; the abode of the spirits or ghosts.",
+   "garo": "Me·mana·song",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 70
+  },
+  {
+   "english": "The path or way to spirit land.",
+   "garo": "Me·mang rama",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 71
+  },
+  {
+   "english": "A woman having no children living ; a woman whose children all died.",
+   "garo": "Me·mangma",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 72
+  },
+  {
+   "english": "A man whose children all died.",
+   "garo": "Me·mangpa",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 73
+  },
+  {
+   "english": "A bamboo-like grass generally found growing in rocks.",
+   "garo": "Me·mang·wa·ge",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 75
+  },
+  {
+   "english": "Rice-water ; rice-gruel.",
+   "garo": "Men·di",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 76
+  },
+  {
+   "english": "A fawn.",
+   "garo": "Matchok bi·sa",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 80
+  },
+  {
+   "english": "Musk.",
+   "garo": "Matchok ganduri",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 81
+  },
+  {
+   "english": "(Clerodendorn serratum). A small tree the leaves of which are used as vegetable.",
+   "garo": "Matchok nachil",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 82
+  },
+  {
+   "english": "A small nocturnal carnivorous animal of the genus Viverra ; a civet.",
+   "garo": "Matchru",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 86
+  },
+  {
+   "english": "An ox.",
+   "garo": "Matchu bolot",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 91
+  },
+  {
+   "english": "Food for cattle, such as grass or hay ; fodder.",
+   "garo": "Matchu jeng ba dachi",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 93
+  },
+  {
+   "english": "(Micromelum pubescens). An evergreen tree.",
+   "garo": "Matchu·rispil",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 95
+  },
+  {
+   "english": "A bison.",
+   "garo": "Matdi",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 96
+  },
+  {
+   "english": "Avarice ; greed for something ; covetiousness.",
+   "garo": "Matdua",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 98,
+   "english_raw": "Avarice ; greed for something ; onvetiousness."
+  },
+  {
+   "english": "A slight cut or wound ; a bruise.",
+   "garo": "Matgilsninga",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 99
+  },
+  {
+   "english": "A suffix added to verbs meaning to have a delicate feeling as, Ua angko watmatja, He has a delicate feeling to leave me.",
+   "garo": "-matja",
+   "pos": [],
+   "source_page": null,
+   "ocr_row": 100
+  },
+  {
+   "english": "A kind of a small stage ; a hog-deer.",
+   "garo": "Matkalsi",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 102
+  },
+  {
+   "english": "Milkyway ; galaxy.",
+   "garo": "Matma·ja·kol",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 104
+  },
+  {
+   "english": "(Holarrhena antidysenterica). A kind of a small tree.",
+   "garo": "Matmande",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 105
+  },
+  {
+   "english": "Blame ; accusation ; condemnation.",
+   "garo": "Matnanga",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 108
+  },
+  {
+   "english": "A breeding bull ; a big bull.",
+   "garo": "Matpang",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 109
+  },
+  {
+   "english": "A wild beast track ; a resort of animals.",
+   "garo": "Matrama (Mat·ra·ma)",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 111
+  },
+  {
+   "english": "A disease of the children ; a fit.",
+   "garo": "Matri (Mat·ri)",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 113
+  },
+  {
+   "english": "A mountain goat ; a serow ; an antelope.",
+   "garo": "Matrong",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 114,
+   "english_raw": "A mountain goat ; a serow ; an antellope."
+  },
+  {
+   "english": "Very sharp ; keen.",
+   "garo": "Matsramgipa",
+   "pos": [
+    "adj."
+   ],
+   "source_page": null,
+   "ocr_row": 115
+  },
+  {
+   "english": "A bat-like animal ; a flying-squirrel ; a beaver.",
+   "garo": "Matwan",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 119
+  },
+  {
+   "english": "(Hibiscus macrophylious). A tall deciduous tree chiefly used in building houses.",
+   "garo": "Mau",
+   "pos": [
+    "n."
+   ],
+   "source_page": null,
+   "ocr_row": 120
+  }
+ ],
+ "already_processed": [
+  {
+   "ocr_row": 3,
+   "garo": "Me·a",
+   "pos": [
+    "n.",
+    "adj."
+   ],
+   "english": "Male ; man.",
+   "reason": "Garo form already in master",
+   "master_form": "Me·a",
+   "master_english": "bamboo shoot",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 4,
+   "garo": "Me·a bi·sa",
+   "pos": [],
+   "english": "A boy ; a lad.",
+   "reason": "Garo form already in master",
+   "master_form": "me·a bi·sa",
+   "master_english": "boy",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 5,
+   "garo": "Me-a",
+   "pos": [
+    "n."
+   ],
+   "english": "An edible bamboo shoot; the eatable young shoot of bamboo.",
+   "reason": "Garo form already in master",
+   "master_form": "Me·a",
+   "master_english": "bamboo shoot",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 6,
+   "garo": "Me·a-meseng",
+   "pos": [
+    "n."
+   ],
+   "english": "Bamboo shoot kept in the bamboo tube or-pots that becomes sour.",
+   "reason": "Garo form already in master",
+   "master_form": "Me·a meseng",
+   "master_english": "fermented bamboo shoot",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 8,
+   "garo": "Me·apa",
+   "pos": [
+    "n."
+   ],
+   "english": "A married man ; an elderly man.",
+   "reason": "Garo form already in master",
+   "master_form": "me·apa",
+   "master_english": "married or elderly man",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 10,
+   "garo": "Me·asa",
+   "pos": [
+    "n.",
+    "adj."
+   ],
+   "english": "Male ; man.",
+   "reason": "Garo form already in master",
+   "master_form": "Me·asa",
+   "master_english": "man",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 15,
+   "garo": "Me·chik",
+   "pos": [
+    "n.",
+    "adj."
+   ],
+   "english": "(Human) female ; woman ; a female of human race.",
+   "reason": "Garo form already in master",
+   "master_form": "Me·chik",
+   "master_english": "woman",
+   "master_confidence": "superseded"
+  },
+  {
+   "ocr_row": 19,
+   "garo": "Me·chik bi·sa",
+   "pos": [
+    "n."
+   ],
+   "english": "A girl ; a lass ; a female child.",
+   "reason": "Garo form already in master",
+   "master_form": "me·chik bi·sa",
+   "master_english": "girl",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 22,
+   "garo": "Me·chikma",
+   "pos": [
+    "n."
+   ],
+   "english": "Same as Me·ama.",
+   "reason": "Garo form already in master",
+   "master_form": "Me·chikma",
+   "master_english": "married or elderly woman",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 26,
+   "garo": "Me·dik",
+   "pos": [
+    "n."
+   ],
+   "english": "A cooking pot ; a cooking utensil.",
+   "reason": "Garo form already in master",
+   "master_form": "Me.dik",
+   "master_english": "pot",
+   "master_confidence": "superseded"
+  },
+  {
+   "ocr_row": 30,
+   "garo": "Megaru",
+   "pos": [
+    "n."
+   ],
+   "english": "A hard, capsulelike cereal akin to Job's-tears.",
+   "reason": "Garo form already in master",
+   "master_form": "me·ga·ru",
+   "master_english": "Job's tears",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 35,
+   "garo": "Meja, Mija",
+   "pos": [
+    "adj."
+   ],
+   "english": "A few days ago; of late ; the other day.",
+   "reason": "Garo form already in master",
+   "master_form": "Meja",
+   "master_english": "yesterday",
+   "master_confidence": "superseded"
+  },
+  {
+   "ocr_row": 36,
+   "garo": "Meja sal, Mejal",
+   "pos": [
+    "adv."
+   ],
+   "english": "Yesterday.",
+   "reason": "Garo form already in master",
+   "master_form": "Mejal",
+   "master_english": "Yesterday",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 43,
+   "garo": "Mejal",
+   "pos": [
+    "adv."
+   ],
+   "english": "See Mejal sal.",
+   "reason": "Garo form already in master",
+   "master_form": "Mejal",
+   "master_english": "Yesterday",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 50,
+   "garo": "Me·kop",
+   "pos": [
+    "n."
+   ],
+   "english": "A corn ; a maize.",
+   "reason": "Garo form already in master",
+   "master_form": "me·kop",
+   "master_english": "maize",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 58,
+   "garo": "Melia",
+   "pos": [
+    "v.",
+    "adj."
+   ],
+   "english": "To fit ; to agree ; to make a good match ; to get the correct answer (of a sum) ; fit ; fitting ; friendly ; amiable ; suitable ; matching against one another.",
+   "reason": "Garo form already in master",
+   "master_form": "me·li·a",
+   "master_english": "get along well",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 63,
+   "garo": "Me·mang",
+   "pos": [
+    "n."
+   ],
+   "english": "A ghost ; a spirit.",
+   "reason": "Garo form already in master",
+   "master_form": "Me·mang",
+   "master_english": "ghost",
+   "master_confidence": "superseded"
+  },
+  {
+   "ocr_row": 77,
+   "garo": "Mendu",
+   "pos": [
+    "n."
+   ],
+   "english": "(Cytsus Canjan). A small tree planted in jhum-land for its bean or for the cultivation of lac yielding scale insect.",
+   "reason": "Garo form already in master",
+   "master_form": "men·du",
+   "master_english": "pea",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 79,
+   "garo": "Matchok",
+   "pos": [
+    "n."
+   ],
+   "english": "A deer ; a stag.",
+   "reason": "Garo form already in master",
+   "master_form": "Matchok",
+   "master_english": "deer",
+   "master_confidence": "superseded"
+  },
+  {
+   "ocr_row": 83,
+   "garo": "Matchota",
+   "pos": [
+    "v."
+   ],
+   "english": "To finish ; to complete ; to end ; to come to an end.",
+   "reason": "Garo form already in master",
+   "master_form": "mat·chot·a",
+   "master_english": "done",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 84,
+   "garo": "Matchotata",
+   "pos": [
+    "v."
+   ],
+   "english": "To complete ; to finish ; to bring to a close.",
+   "reason": "Garo form already in master",
+   "master_form": "Matchotata",
+   "master_english": "to get something completed",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 85,
+   "garo": "Matchraka, Matchrita",
+   "pos": [
+    "v."
+   ],
+   "english": "To cut or bruise (slightly).",
+   "reason": "Garo form already in master",
+   "master_form": "mat·chrit·a",
+   "master_english": "scratch",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 87,
+   "garo": "Matchu",
+   "pos": [
+    "n."
+   ],
+   "english": "A cow ; a bull ; an ox.",
+   "reason": "Garo form already in master",
+   "master_form": "Matchu",
+   "master_english": "cow",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 89,
+   "garo": "Matchu bi·sa",
+   "pos": [
+    "n."
+   ],
+   "english": "A calf ; a heifer.",
+   "reason": "Garo form already in master",
+   "master_form": "matchu bi·sa",
+   "master_english": "calf",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 90,
+   "garo": "Matchu bipa",
+   "pos": [
+    "n."
+   ],
+   "english": "A bull.",
+   "reason": "Garo form already in master",
+   "master_form": "Matchu Bipa",
+   "master_english": "a bull",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 94,
+   "garo": "Matchu be·en",
+   "pos": [
+    "n."
+   ],
+   "english": "Beef.",
+   "reason": "Garo form already in master",
+   "master_form": "matchu be·en",
+   "master_english": "beef",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 103,
+   "garo": "Matma",
+   "pos": [
+    "n."
+   ],
+   "english": "A burfalo.",
+   "reason": "Garo form already in master",
+   "master_form": "Matma",
+   "master_english": "buffalo",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 106,
+   "garo": "Matmatchi",
+   "pos": [
+    "n."
+   ],
+   "english": "A hedge hog ; a porcupine.",
+   "reason": "Garo form already in master",
+   "master_form": "mat·mat·chi",
+   "master_english": "porcupine",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 110,
+   "garo": "Matram",
+   "pos": [
+    "n."
+   ],
+   "english": "An otter ; a furry fish-eating animal living in and near water.",
+   "reason": "Garo form already in master",
+   "master_form": "mat·ram",
+   "master_english": "otter",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 116,
+   "garo": "Matta",
+   "pos": [
+    "n."
+   ],
+   "english": "A wooden stick pointed at one end used in making holes in the ground for putting seeds in hill paddy cultivation.",
+   "reason": "Garo form already in master",
+   "master_form": "mat·ta",
+   "master_english": "digging stick",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 117,
+   "garo": "Matte (Mat-te)",
+   "pos": [
+    "n."
+   ],
+   "english": "An animal that roams alone ; one who does not like the company of others.",
+   "reason": "Garo form already in master",
+   "master_form": "mat·te",
+   "master_english": "rogue",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 2,
+   "garo": "Me, Me·me",
+   "pos": [
+    "v."
+   ],
+   "english": "To cry like a sheep or goat ; to bleat.",
+   "reason": "English meaning already in master",
+   "matched": "to bleat.",
+   "master_form": "im·be·a",
+   "master_english": "bleat",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 17,
+   "garo": "Me·chiksru",
+   "pos": [
+    "adj."
+   ],
+   "english": "Womanish ; characteristic of a woman ; effeminate.",
+   "reason": "English meaning already in master",
+   "matched": "effeminate.",
+   "master_form": "Jol-jibrak",
+   "master_english": "effeminate",
+   "master_confidence": null
+  },
+  {
+   "ocr_row": 18,
+   "garo": "Me·chiksru gita",
+   "pos": [
+    "adj."
+   ],
+   "english": "Like a woman ; unmanly ; effeminate ; womanish.",
+   "reason": "English meaning already in master",
+   "matched": "effeminate",
+   "master_form": "Jol-jibrak",
+   "master_english": "effeminate",
+   "master_confidence": null
+  },
+  {
+   "ocr_row": 21,
+   "garo": "Me·chik dari",
+   "pos": [
+    "n."
+   ],
+   "english": "A woman of loose morals ; a base woman ; a harlot ; a prostitute.",
+   "reason": "English meaning already in master",
+   "matched": "a prostitute.",
+   "master_form": "pal·ding·a",
+   "master_english": "prostitute",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 29,
+   "garo": "Megap, Migap",
+   "pos": [
+    "n."
+   ],
+   "english": "Straw ; stubble.",
+   "reason": "English meaning already in master",
+   "matched": "Straw",
+   "master_form": "bi·dang",
+   "master_english": "straw",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 31,
+   "garo": "Me·gimu (Me·gim-mu)",
+   "pos": [
+    "n."
+   ],
+   "english": "An edible fungus ; a mushroom.",
+   "reason": "English meaning already in master",
+   "matched": "An edible fungus",
+   "master_form": "Adambong",
+   "master_english": "An edible fungus",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 37,
+   "garo": "Mejalni salsa",
+   "pos": [
+    "adv."
+   ],
+   "english": "The day before yesterday.",
+   "reason": "English meaning already in master",
+   "matched": "The day before yesterday.",
+   "master_form": "Me·si·ja",
+   "master_english": "day before yesterday",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 45,
+   "garo": "Me·ka (Pat)",
+   "pos": [
+    "n."
+   ],
+   "english": "A jute.",
+   "reason": "parenthetical Garo synonym already in master",
+   "matched": "Pat",
+   "master_form": "pat",
+   "master_english": "burlap",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 48,
+   "garo": "Me·kin (So·bok)",
+   "pos": [
+    "n."
+   ],
+   "english": "A plantain flower.",
+   "reason": "parenthetical Garo synonym already in master",
+   "matched": "So·bok",
+   "master_form": "so·bok",
+   "master_english": "banana flower",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 49,
+   "garo": "Me·konchek (Me·mang ang·ke)",
+   "pos": [
+    "n."
+   ],
+   "english": "A scorpion.",
+   "reason": "English meaning already in master",
+   "matched": "A scorpion.",
+   "master_form": "Mangkram",
+   "master_english": "scorpion",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 53,
+   "garo": "Mela",
+   "pos": [
+    "v."
+   ],
+   "english": "To dance.",
+   "reason": "English meaning already in master",
+   "matched": "To dance.",
+   "master_form": "Chroka",
+   "master_english": "dance (alt)",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 54,
+   "garo": "Melaa",
+   "pos": [
+    "v."
+   ],
+   "english": "To gather ; to assemble ; to meet ; to congregate ; to collect together.",
+   "reason": "English meaning already in master",
+   "matched": "To gather",
+   "master_form": "cha·tip·tip·a",
+   "master_english": "gather",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 88,
+   "garo": "Matchu bima",
+   "pos": [
+    "n."
+   ],
+   "english": "A cow.",
+   "reason": "English meaning already in master",
+   "matched": "A cow.",
+   "master_form": "Matchu",
+   "master_english": "cow",
+   "master_confidence": "verified_high"
+  },
+  {
+   "ocr_row": 97,
+   "garo": "Matdua",
+   "pos": [
+    "v."
+   ],
+   "english": "To covet ; to desire earnestly to obtain ; to be covetious.",
+   "reason": "English meaning already in master",
+   "matched": "To covet",
+   "master_form": "mat·u·a",
+   "master_english": "covet",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 101,
+   "garo": "Matgrik",
+   "pos": [
+    "n."
+   ],
+   "english": "A clever and mighty man ; a warrior.",
+   "reason": "English meaning already in master",
+   "matched": "a warrior.",
+   "master_form": "Chalang",
+   "master_english": "A warrior.",
+   "master_confidence": "ocr_flagged"
+  },
+  {
+   "ocr_row": 107,
+   "garo": "Matnanga",
+   "pos": [
+    "v."
+   ],
+   "english": "To blame ; to accuse ; to find fault with ; to condemn.",
+   "reason": "English meaning already in master",
+   "matched": "to accuse",
+   "master_form": "a·mut·a",
+   "master_english": "accuse",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 112,
+   "garo": "Matrengkap nae",
+   "pos": [
+    "adv."
+   ],
+   "english": "With one's all might ; trying one's best ; strenuously ; vigorously.",
+   "reason": "English meaning already in master",
+   "matched": "strenuously",
+   "master_form": "Amapet·amjapet",
+   "master_english": "With great difficulty; strenuously; to one's fill.",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 118,
+   "garo": "Matteka",
+   "pos": [
+    "v."
+   ],
+   "english": "To set apart ; to separate ; to single out.",
+   "reason": "English meaning already in master",
+   "matched": "to separate",
+   "master_form": "al·a·da",
+   "master_english": "separate",
+   "master_confidence": "unverified"
+  },
+  {
+   "ocr_row": 7,
+   "garo": "Me·ama",
+   "pos": [
+    "n."
+   ],
+   "english": "Variation of Me·chik-ma; a married woman ; an elderly woman.",
+   "reason": "variant of Me·chikma, which is in master (Me·chikma = married or elderly woman)"
+  },
+  {
+   "ocr_row": 12,
+   "garo": "Mebol",
+   "pos": [
+    "n."
+   ],
+   "english": "A corn or maize.",
+   "reason": "\"corn or maize\": maize already in master as me·kop"
+  },
+  {
+   "ocr_row": 47,
+   "garo": "Me·katchi",
+   "pos": [
+    "n."
+   ],
+   "english": "Variation of Me·ka.",
+   "reason": "variant of Me·ka, whose meaning (jute) is already in master as pat"
+  }
+ ],
+ "held": [
+  {
+   "ocr_row": 1,
+   "garo": "child or other young animal to a want of the breast",
+   "pos": [],
+   "english": "to accustom to food different from its mother's milk ; to wean.",
+   "reason": "fragment headword (no Garo); continuation of Ma·wata, row 121"
+  },
+  {
+   "ocr_row": 59,
+   "garo": "Meliata",
+   "pos": [
+    "v."
+   ],
+   "english": "To square (a number) ; to reconcil the difference (in figure) ; to get the correct answer (of the sum) ; to fit in. such as Lonchodes mematodes, with a long slender body like a piece of stock; a walking-stick; a stick insect.",
+   "reason": "gloss contaminated by text of a different entry (\"Lonchodes ... stick insect\")"
+  },
+  {
+   "ocr_row": 60,
+   "garo": "Me·mang sina",
+   "pos": [
+    "n."
+   ],
+   "english": "",
+   "reason": "empty gloss; its text is displaced into row 59"
+  },
+  {
+   "ocr_row": 64,
+   "garo": "Me·mang-kanchi",
+   "pos": [
+    "n."
+   ],
+   "english": "An insect A dreadful dream in which one has a sense of powerlessness in facing some terrible thing ; a nightmare.",
+   "reason": "same headword appears twice (hyphen vs space); one gloss merged with nightmare text; pair held for image check"
+  },
+  {
+   "ocr_row": 74,
+   "garo": "Me·mang kanchi",
+   "pos": [
+    "n."
+   ],
+   "english": "An insect with long and slender body and long legs believed to be the stick to stire rice when cooking.",
+   "reason": "same headword appears twice (hyphen vs space); one gloss merged with nightmare text; pair held for image check"
+  },
+  {
+   "ocr_row": 78,
+   "garo": "yak",
+   "pos": [],
+   "english": "a bison.",
+   "reason": "fragment headword; gloss \"a bison\""
+  },
+  {
+   "ocr_row": 121,
+   "garo": "Ma·wata",
+   "pos": [
+    "v."
+   ],
+   "english": "To accustom, as a",
+   "reason": "gloss truncated (\"To accustom, as a\")"
+  },
+  {
+   "ocr_row": 92,
+   "garo": "Matchu mikoa",
+   "pos": [
+    "v."
+   ],
+   "english": "To low ; to below.",
+   "reason": "gloss \"To low ; to below\" is ambiguous (moo/bellow vs adjective low/below); bare form would collide with master \"low\"/\"below\""
+  }
+ ],
+ "manual_review_flags": [
+  "Rows kept but worth Claude A's eye (borderline English overlap): Me·apa·chagitcham (elderly man = master me·apa; patriarch/forefather are new); Matgilsninga (wound = master mat·a); Matri (a fit = seizure, not master adjective 'fit'); Melaa n. (assembly/meeting; Melaa v. was dropped as gather/meet exist); Matnanga n. (blame/accusation; Matnanga v. dropped as accuse exists).",
+  "Melaa, Melaprua, Matdua, Matnanga each exist as both a dropped and a kept row of different POS; Garo form itself is not in master.",
+  "Source/OCR suspects left verbatim: Matkalsi 'small stage' (likely stag); Me·mana·song (likely Me·mang·song); Me·gong, Me·kri, Me·cheng, Mau, Matchu·rispil, Matmande, Matchok nachil botanical names carry apparent spelling slips (Barebinia xarie-gata, surratensis, Bud-runga, macrophylious, Clerodendorn) - not altered.",
+  "-matja is a suffix with no POS in source; pos left empty.",
+  "Verb glosses have the leading 'to' stripped (Owner rule 2026-09-21); originals in english_raw. Two plain-English typo fixes: antellope->antelope, onvetiousness->covetiousness (english_raw kept).",
+  "Me·mang (Mi·mang) ang·ke, Me·mang (mi·mang) mi, Me·mang (Mi·mang) koksi: parenthetical is an alternate spelling; Me·gol (Kanchi) parenthetical is a synonym - all left inside the Garo field as printed."
+ ],
+ "repository_note": "pos retained as list per entry for Claude B SOV mapping. source_page null: page numbers not supplied. Not pushed."
+}
