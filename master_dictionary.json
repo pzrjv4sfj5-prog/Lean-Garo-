@@ -79899,5 +79899,554 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — Project Owner directive (chat), NV-216 (2026-10-26); not a Thangseng quote. Re·rika (v.) = to follow; to accompany.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "An old or elderly man ; a patriarch ; forefather.",
+    "garo": "Me·apa·chagitcham",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: elderly man overlaps master me·apa; patriarch/forefather are new.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A kind of tree, the leaves of which are used as vegetable.",
+    "garo": "Me·bitchi",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "(Zanthoxylum Bud-runga ; Z. acanthopodium ; Z oxyphyllum). A prickly middle-sized tree with aromatic taste leaves of which are used as vegetable.",
+    "garo": "Me·cheng",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A thin watery soup made by boiling meat, fish or vegetables ; broth ; soup.",
+    "garo": "Me·chi",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Belonging to woman ; feminine ; feminist.",
+    "garo": "Me·chikni",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Girlish ; like a girl.",
+    "garo": "Me·chik bi·sa gita",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Petticoat government.",
+    "garo": "Me·chikni sason",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Paddy seed ; paddy kept for sowing.",
+    "garo": "Mechil, Michil",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A medal.",
+    "garo": "Medal",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "set on the pot (in the fire).",
+    "garo": "Me·dik chana",
+    "pos": "v.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "The ear of rice.",
+    "garo": "Medong, Midong",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A stick to stir rice when being cooked.",
+    "garo": "Me·gol (Kanchi)",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A thin long insect with long slender legs.",
+    "garo": "Me·mang me·gol",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "(Barebinia xarie-gata). A middle-sized flowering tree, the new soft leaves of which is eaten cooked.",
+    "garo": "Me·gong",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Yesterday morning.",
+    "garo": "Mejapring",
+    "pos": "n. & adv.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Last evening.",
+    "garo": "Meja atam",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Last night.",
+    "garo": "Meja walo",
+    "pos": "n. & adv.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A mustard-like plant grown in jhum-land for vegetable.",
+    "garo": "Me·jak",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Only recently ; not long ago ; a few days ago ; of late.",
+    "garo": "Mejamangmang",
+    "pos": "adv.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "caress a baby making it to laugh.",
+    "garo": "Mejeka",
+    "pos": "v.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Slightly burnt cooked rice at the bottom of the pot ; a scorched bits of rice adhering to the bottom or sides of the pot.",
+    "garo": "Me·kam",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A small deciduous tree.",
+    "garo": "Me·kret",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "(Hibiscus surratensis). A trailing plant with prickles having the taste of sorrel used as vegetable.",
+    "garo": "Me·kri",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Assembly ; meeting ; gathering ; congregation.",
+    "garo": "Melaa",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: noun kept; verb row dropped as gather/meet exist.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "hold secret meeting ; hold unlawful assembly.",
+    "garo": "Melaprua",
+    "pos": "v.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: noun and verb rows share this Garo form (different POS).",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Secret meeting.",
+    "garo": "Melaprua",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: noun and verb rows share this Garo form (different POS).",
+    "confidence": "unverified"
+  },
+  {
+    "english": "get on together ; be friendly with ; be amiable with.",
+    "garo": "Meligrika",
+    "pos": "v.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "One knot ; one hitch.",
+    "garo": "Mel·sa",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A kind of scorpion.",
+    "garo": "Me·mang (Mi·mang) ang·ke",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A plant growing wild that looks like a paddy.",
+    "garo": "Me·mang (mi·mang) mi",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A pitcher plant ; a monkey cup ; nepenthes.",
+    "garo": "Me·mang (Mi·mang) koksi",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "cast out evil spirit.",
+    "garo": "Me·mang a·rika",
+    "pos": "v.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "be haunted by ghosts.",
+    "garo": "Me·mang kal·aka",
+    "pos": "v.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A spirit-land ; the abode of the spirits or ghosts.",
+    "garo": "Me·mana·song",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: likely Me·mang·song (source slip, left verbatim).",
+    "confidence": "unverified"
+  },
+  {
+    "english": "The path or way to spirit land.",
+    "garo": "Me·mang rama",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A woman having no children living ; a woman whose children all died.",
+    "garo": "Me·mangma",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A man whose children all died.",
+    "garo": "Me·mangpa",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A bamboo-like grass generally found growing in rocks.",
+    "garo": "Me·mang·wa·ge",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Rice-water ; rice-gruel.",
+    "garo": "Men·di",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A fawn.",
+    "garo": "Matchok bi·sa",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Musk.",
+    "garo": "Matchok ganduri",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "(Clerodendorn serratum). A small tree the leaves of which are used as vegetable.",
+    "garo": "Matchok nachil",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A small nocturnal carnivorous animal of the genus Viverra ; a civet.",
+    "garo": "Matchru",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "An ox.",
+    "garo": "Matchu bolot",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Food for cattle, such as grass or hay ; fodder.",
+    "garo": "Matchu jeng ba dachi",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "(Micromelum pubescens). An evergreen tree.",
+    "garo": "Matchu·rispil",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A bison.",
+    "garo": "Matdi",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Avarice ; greed for something ; covetiousness.",
+    "garo": "Matdua",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: noun kept; verb row dropped on English match.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A slight cut or wound ; a bruise.",
+    "garo": "Matgilsninga",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: wound overlaps master mat·a.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A suffix added to verbs meaning to have a delicate feeling as, Ua angko watmatja, He has a delicate feeling to leave me.",
+    "garo": "-matja",
+    "pos": null,
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A kind of a small stage ; a hog-deer.",
+    "garo": "Matkalsi",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: source gloss 'small stage' is likely 'stag' (OCR/source slip, left verbatim).",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Milkyway ; galaxy.",
+    "garo": "Matma·ja·kol",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "(Holarrhena antidysenterica). A kind of a small tree.",
+    "garo": "Matmande",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Blame ; accusation ; condemnation.",
+    "garo": "Matnanga",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: noun (blame/accusation) kept; verb dropped as accuse exists.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A breeding bull ; a big bull.",
+    "garo": "Matpang",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A wild beast track ; a resort of animals.",
+    "garo": "Matrama (Mat·ra·ma)",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A disease of the children ; a fit.",
+    "garo": "Matri (Mat·ri)",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated. Review flag: a fit = seizure, not the adjective 'fit'.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A mountain goat ; a serow ; an antelope.",
+    "garo": "Matrong",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "Very sharp ; keen.",
+    "garo": "Matsramgipa",
+    "pos": "adj.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "A bat-like animal ; a flying-squirrel ; a beaver.",
+    "garo": "Matwan",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "(Hibiscus macrophylious). A tall deciduous tree chiefly used in building houses.",
+    "garo": "Mau",
+    "pos": "n.",
+    "category": "general",
+    "classifier": null,
+    "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
+    "confidence": "unverified"
   }
 ]
