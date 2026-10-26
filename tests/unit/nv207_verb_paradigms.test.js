@@ -56,3 +56,12 @@ test('NV-207c: re·ata (cause to go / spend)', async () => {
   assert.equal(await lc('I want to spend money'), 'anga dang·ga re·atna ska');
   assert.equal(await lc('spend money!'), 'dang·ga re·atbo');
 });
+
+// Re·mola (v) = to go together (PO/Thangseng 2026-10-25): its own verb, not go (re·a) and not re·ata
+test('Re·mola: go together is its own verb; only present is native', async () => {
+  const m = getVerbParadigm('go together');
+  assert.equal(m.forms.present, 're·mola'); assert.equal(m.status.present, 'native');
+  assert.equal(m.forms.future, 're·molgen'); assert.equal(m.status.future, 'derived');
+  assert.notEqual(m.forms.present, getVerbParadigm('go').forms.present);
+  assert.equal((await translate('go together')).garo, 'Re·mola');
+});

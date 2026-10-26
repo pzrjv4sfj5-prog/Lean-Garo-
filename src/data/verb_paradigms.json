@@ -3155,17 +3155,17 @@
    }
   },
   "last": {
-   "root": "ja·mangipa",
+   "root": "bon·kamgipa",
    "forms": {
-    "present": "ja·mangipa",
-    "continuous": "ja·mangipenga",
-    "past": "ja·mangipaha",
-    "future": "ja·mangipgen",
-    "negative": "ja·mangipja",
-    "negative_future": "ja·mangipjawa",
-    "command": "ja·mangipbo",
-    "negative_command": "ja·mangipnabe",
-    "infinitive": "ja·mangipna"
+    "present": "bon·kamgipa",
+    "continuous": "bon·kamgipenga",
+    "past": "bon·kamgipaha",
+    "future": "bon·kamgipgen",
+    "negative": "bon·kamgipja",
+    "negative_future": "bon·kamgipjawa",
+    "command": "bon·kamgipbo",
+    "negative_command": "bon·kamgipnabe",
+    "infinitive": "bon·kamgipna"
    },
    "status": {
     "present": "derived",
@@ -5331,17 +5331,17 @@
    }
   },
   "suffer": {
-   "root": "jom·a",
+   "root": "joma",
    "forms": {
-    "present": "jom·a",
-    "continuous": "jom·enga",
-    "past": "jom·aha",
-    "future": "jom·gen",
-    "negative": "jom·ja",
-    "negative_future": "jom·jawa",
-    "command": "jom·bo",
-    "negative_command": "jom·nabe",
-    "infinitive": "jom·na"
+    "present": "joma",
+    "continuous": "jomenga",
+    "past": "jomaha",
+    "future": "jomgen",
+    "negative": "jomja",
+    "negative_future": "jomjawa",
+    "command": "jombo",
+    "negative_command": "jomnabe",
+    "infinitive": "jomna"
    },
    "status": {
     "present": "derived",
@@ -6384,6 +6384,32 @@
     "will_not_be_going": "re·angjawa",
     "lets_go": "re·naha",
     "question_did_you_go": "re·angama"
+   }
+  },
+  "go together": {
+   "root": "re·mola",
+   "note": "Re·mola: to go together. Only present is native; rest derived (unverified). Engine still builds other forms from dam·san + re·ang-.",
+   "forms": {
+    "present": "re·mola",
+    "continuous": "re·molenga",
+    "past": "re·molaha",
+    "future": "re·molgen",
+    "negative": "re·molja",
+    "negative_future": "re·moljawa",
+    "command": "re·molbo",
+    "negative_command": "re·molnabe",
+    "infinitive": "re·molna"
+   },
+   "status": {
+    "present": "native",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
    }
   },
   "watch": {

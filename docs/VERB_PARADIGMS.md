@@ -130,7 +130,7 @@
 | know | hai·a | hai·enga | hai·aha | hai·gen | hai·ja | hai·jawa | hai·bo | hai·nabe | hai·na |
 | knuckle | goteka | gotekenga | gotekaha | gotekgen | gotekja | gotekjawa | gotekbo | goteknabe | gotekna |
 | lament | kalima | kalimenga | kalimaha | kalimgen | kalimja | kalimjawa | kalimbo | kalimnabe | kalimna |
-| last | ja·mangipa | ja·mangipenga | ja·mangipaha | ja·mangipgen | ja·mangipja | ja·mangipjawa | ja·mangipbo | ja·mangipnabe | ja·mangipna |
+| last | bon·kamgipa | bon·kamgipenga | bon·kamgipaha | bon·kamgipgen | bon·kamgipja | bon·kamgipjawa | bon·kamgipbo | bon·kamgipnabe | bon·kamgipna |
 | laugh | ka·dinga | ka·dingenga 📌 | ka·dingaha 📌 | ka·dinggen | ka·dingja | ka·dingjawa | ka·dingbo | ka·dingnabe | ka·dingna |
 | learn | ski·a | ski·enga | ski·aha | ski·gen | ski·ja | ski·jawa | ski·bo | ski·nabe | ski·na |
 | lie | tol·a | tol·enga | tol·aha | tol·gen | tol·ja | tol·jawa | tol·bo | tol·nabe | tol·na |
@@ -217,7 +217,7 @@
 | stop | dontonga 📌 | dontongenga | dontongaha | dontonggen | dontongja | dontongjawa | dontongbo | dontongnabe | dontongna |
 | stretch | han·sal·a | han·sal·enga | han·sal·aha | han·sal·gen | han·sal·ja | han·sal·jawa | han·sal·bo | han·sal·nabe | han·sal·na |
 | strip | grua | gruenga | gruaha | grugen | gruja | grujawa | grubo | grunabe | gruna |
-| suffer | jom·a | jom·enga | jom·aha | jom·gen | jom·ja | jom·jawa | jom·bo | jom·nabe | jom·na |
+| suffer | joma | jomenga | jomaha | jomgen | jomja | jomjawa | jombo | jomnabe | jomna |
 | support | sin·chak·a | sin·chak·enga | sin·chak·aha | sin·chak·gen | sin·chak·ja | sin·chak·jawa | sin·chak·bo | sin·chak·nabe | sin·chak·na |
 | surrender | bama | bamenga | bamaha | bamgen | bamja | bamjawa | bambo | bamnabe | bamna |
 | suspect | mik·sok·a | mik·sok·enga | mik·sok·aha | mik·sok·gen | mik·sok·ja | mik·sok·jawa | mik·sok·bo | mik·sok·nabe | mik·sok·na |
@@ -259,6 +259,7 @@
 | wrap | tep·a | tep·enga | tep·aha | tep·gen | tep·ja | tep·jawa | tep·bo | tep·nabe | tep·na |
 | write | sea | seenga | seaha | segen | seja | sejawa | sebo | senabe | sena |
 | go | re·a ✅ | re·angenga ✅ | re·anga ✅ | re·anggen ✅ | re·angja ✅ | re·jawa ✅ | re·angbo ✅ | re·angnabe ✅ | re·angna ✅ |
+| go together | re·mola ✅ | re·molenga | re·molaha | re·molgen | re·molja | re·moljawa | re·molbo | re·molnabe | re·molna |
 | watch | nia ✅ | nienga ✅ | niaha ✅ | nigen ✅ | nija | nijawa ✅ | nibo ✅ | ninabe ✅ | nina ✅ |
 | find | nika ✅ | nikenga | nikaha ✅ | nikgen ✅ | nikja | nikjawa ✅ | nikbo ✅ | niknabe ✅ | nikna ✅ |
 

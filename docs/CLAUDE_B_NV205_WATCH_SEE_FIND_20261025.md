@@ -31,3 +31,6 @@ Pattern seen: stem **re·ang-** carries past / continuous / future / command / n
 
 ## NV-207c: Re·ata = to cause to go; to make someone go; to spend time, money (PO/Thangseng 2026-10-25)
 One verb, three senses, so `to spend`, `cause to go` and `make someone go` all give `re·ata`. `spend money` = `dang·ga re·ata`, `spend time` = `Somoi re·ata`. Past `re·ataha`, continuous `re·atenga`, future `re·atgen`, infinitive `re·atna`, command `re·atbo` are rule-derived (unverified). Open: causative sentences (`I make him go` still gives `Anga re·ako Taria`, wrong) need a native pattern.
+
+## Re·mola (v) = to go together (2026-10-25)
+Own verb (not go + dam·san, not re·ata). Added to verb_paradigms.json: only `re·mola` is native; re·molenga / re·molaha / re·molgen / re·molja / re·moljawa / re·molbo / re·molnabe / re·molna are suffix-rule derived and unverified. The engine still builds `we went together` = `An·ching dam·sanko re·anga`, `we will go together` = `An·ching Re·anggen` (together dropped), `go together!` = `dam·san re·ang` (no -bo); unchanged pending rulings.

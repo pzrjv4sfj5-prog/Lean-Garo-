@@ -63,6 +63,15 @@ delete out.review.go; out.manual = out.manual.filter(m => m !== 'go');
     status: Object.fromEntries(Object.entries(f).map(([k, x]) => [k, k === 'present' ? 'native' : (pinnedSet.has(x.toLowerCase()) ? 'pinned' : 'derived')])) };
   delete out.review.spend; out.manual = out.manual.filter(m => m !== 'spend');
 }
+// Re·mola (v) = to go together (PO/Thangseng 2026-10-25; Claude A's NV-209 rows cover the bare phrase). A verb of its
+// own, not go + dam·san. Only the citation form is native; the other forms are suffix rules (kata / kataha / katenga /
+// katbo / katgen shape: the final -a drops before the suffix) and UNVERIFIED.
+{
+  const f = forms('re·mola');
+  out.verbs['go together'] = { root: 're·mola', note: 'Re·mola: to go together. Only present is native; rest derived (unverified). Engine still builds other forms from dam·san + re·ang-.', forms: f,
+    status: Object.fromEntries(Object.entries(f).map(([k, x]) => [k, k === 'present' ? 'native' : (pinnedSet.has(x.toLowerCase()) ? 'pinned' : 'derived')])) };
+  delete out.review['go together']; out.manual = out.manual.filter(m => m !== 'go together');
+}
 // Native Thangseng paradigms override the rule output (NV-205): watch = Nia, see / find = Nika.
 const NATIVE = {
   watch: { present: 'nia', continuous: 'nienga', command: 'nibo', negative_command: 'ninabe', past: 'niaha', future: 'nigen', negative_future: 'nijawa', infinitive: 'nina' },
