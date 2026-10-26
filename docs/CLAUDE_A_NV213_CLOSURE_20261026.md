@@ -20,3 +20,6 @@ Authority: Project Owner rulings in chat (man·a and ama are synonyms; `Anga Gar
 
 ## NV-213 (A), 2026-10-26: sani/saniba closed, Mangchut added
 Authority: Project Owner chat directive. `Sani?`/`whose` and `Saniba`/`someone's` came from the native dictionary; promoted unverified -> verified_high (provenance: Project Owner-confirmed, not a Thangseng quote). Added bare `whose` = Sani. New word `mouse` (n.) = Mangchut, verified_high; older unverified `me·se` superseded (retained, not deleted). `mouse` allowlisted in known_dictionary_conflicts.json (superseded row still counted by Check C, same as other keys). Test: tests/unit/nv213_sani_mangchut.test.js. Closes open item sani/saniba/whose.
+
+## NV-214 (A), 2026-10-26: walk vs roam
+Project Owner directive. walk/to walk = Re·mama (verified_high, raka kept); roam/to roam/wander/to wander = rorama (no raka). Re·a and re·am·a demoted to variant, retained. phrase_maps.js pins walk, to walk. "to walk" allowlisted in known_dictionary_conflicts.json. Test: tests/unit/nv214_walk_roam.test.js. Engine/paradigm follow-ups: docs/HANDOFF_CLAUDE_B_20261026_walk_rere.md.

@@ -37584,5 +37584,45 @@
     "category": "animals",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-213"
+  },
+  {
+    "english": "walk",
+    "garo": "Re·mama",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-214"
+  },
+  {
+    "english": "to walk",
+    "garo": "Re·mama",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-214"
+  },
+  {
+    "english": "wander",
+    "garo": "rorama",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-214"
+  },
+  {
+    "english": "to wander",
+    "garo": "rorama",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-214"
+  },
+  {
+    "english": "to roam",
+    "garo": "rorama",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-214"
   }
 ]
