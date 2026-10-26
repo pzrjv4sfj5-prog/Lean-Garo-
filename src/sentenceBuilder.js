@@ -544,9 +544,11 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   // locative `iano` ("here") stays bare with `donga` ("stay/exist/reside").
   // Scoped to exactly `iano` + a `donga` verb; `uano` / `anti` etc. are NOT
   // ruled and are left on the existing default.
+  // NV-209 (Thangseng, relayed 2026-10-25): "Iano and uano are correct" - both locatives are bare for every
+  // verb that is not the directional go/come (non-negative) case below, so the same bareness now covers
+  // `uano` and all verbs (sit / live / eat ...) and negative motion (`Anga uano re·angja`), not only `iano` + donga.
   const locativeBareWithDonga = !!(grammar.object && grammar.verb &&
-    String(grammar.object.garo).toLowerCase() === 'iano' &&
-    /^dong/i.test(String(grammar.verb.garo || '')));
+    /^(iano|uano)$/i.test(String(grammar.object.garo)));
   // NV-200 (2026-10-25, PO submission + grammar logic, not a native quote):
   // with a motion verb (go/come) `there`/`here` are directional, Uchi / Iachi
   // ("to that/this place"), bare, instead of Uano/Iano + ko. Static verbs

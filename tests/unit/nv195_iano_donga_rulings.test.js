@@ -21,8 +21,9 @@ for (const [en, garo] of cases) {
   });
 }
 test('NV-195: bare iano is scoped to donga (other verbs keep default -ko)', async () => {
-  assert.equal((await translate('I ate here')).garo, 'Anga ianoko Cha·aha');
+  // NV-209 (Thangseng 2026-10-25): iano and uano are correct, bare for all verbs - supersedes the NV-195 scoped default
+  assert.equal((await translate('I ate here')).garo, 'Anga iano Cha·aha');
 });
 test('NV-195: uano is NOT ruled, default unchanged', async () => {
-  assert.equal((await translate('I stay there')).garo, 'Anga uanoko donga');
+  assert.equal((await translate('I stay there')).garo, 'Anga uano donga');
 });

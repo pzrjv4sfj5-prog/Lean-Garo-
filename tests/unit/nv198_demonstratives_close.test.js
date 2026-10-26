@@ -32,5 +32,5 @@ test('NV-198: prior NV-189 rows unchanged', async () => {
 });
 test('NV-198: May I work / pro-drop / locatives unchanged (PO: synonyms, keep)', async () => {
   assert.equal((await translate('May I work?')).garo, 'Anga kam ka·na man·genma?');
-  assert.equal((await translate('I stay there')).garo, 'Anga uanoko donga');
+  assert.equal((await translate('I stay there')).garo, 'Anga uano donga');
 });

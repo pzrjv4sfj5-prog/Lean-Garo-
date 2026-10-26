@@ -16,7 +16,7 @@ for (const [en, garo] of [
 
 test('NV-200: unchanged (static verbs, home, accusative uko)', async () => {
   assert.equal(await lc('I stay here'), 'anga iano donga');
-  assert.equal(await lc('I eat there'), 'anga uanoko cha·a');
+  assert.equal(await lc('I eat there'), 'anga uano cha·a');
   assert.equal(await lc('I go home'), 'anga nokko re·a');
   assert.equal(await lc('I see it'), 'anga uko nika');
   assert.equal(await lc('there'), 'uano');
