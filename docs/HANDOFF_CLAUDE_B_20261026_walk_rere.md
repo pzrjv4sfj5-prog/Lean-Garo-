@@ -7,3 +7,4 @@ Still to do (engine/paradigm, B territory):
 3. purpose_map `walk` = re·a·na unchanged.
 4. Routing: Walk -> Re·mama; Roam/Wander -> rorama.
 Open for T: NV-100 (Thangseng: Re.a = to walk; re·anga = went) and the 2026-09-09 PO directive (walk = Re·a) are overridden by this directive; Re·a kept as variant. Is Re·mama meant to be the existing re·am·a?
+Allowlisted phrase_maps:to walk (compiled_dict still picks Re·a; Claude B item 1 in the NV-214 handoff).
