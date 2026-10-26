@@ -45400,11 +45400,11 @@
   },
   {
     "english": "swallow",
-    "garo": "min·ok·a",
-    "pos": null,
+    "garo": "Minoka",
+    "pos": "v.",
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
+    "notes": "UNVERIFIED/HIGH | OWNER DIRECTIVE 2026-10-26 (Project Owner, chat; Claude D): headword is Minoka (no raka dots), v., to swallow; garo 'min·ok·a' replaced by 'Minoka', pos set to v.; confidence left unverified for Claude A's evidence rules",
     "confidence": "unverified"
   },
   {
