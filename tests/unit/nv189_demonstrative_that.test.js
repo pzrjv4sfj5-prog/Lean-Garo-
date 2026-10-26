@@ -24,7 +24,8 @@ test('NV-189: no guessed Haiwa (non-far cues), no leakage to this/that one', asy
     const g = (await translate(en)).garo;
     assert.ok(!/haiwa/i.test(g), `${en} -> ${g}`);
   }
-  assert.equal((await translate('I see that dog')).garo, 'Anga achakko Nika');
+  // NV-215 (native-verified PO relay 2026-10-25): `that` is kept before the noun, case marker on the noun
+  assert.equal((await translate('I see that dog')).garo.toLowerCase(), 'anga ua achakko nika');
   assert.equal((await translate('this dog')).garo, (await translate('this dog')).garo);
 });
 test('NV-189: that + adjective is not treated as that + noun', async () => {

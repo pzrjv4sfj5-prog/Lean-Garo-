@@ -1,0 +1,7 @@
+# NV-215: demonstrative + noun keeps ua / ia (Claude B, 2026-10-25)
+Native-verified PO relay. Rule: `that` + noun = `ua` + noun; `this` + noun = `ia` + noun, immediately BEFORE the noun; the case marker (-ko) attaches to the noun, never the demonstrative (`ua achakko`, not `uako achak`).
+- **Pins:** `Look at that dog.` = Ua achakko nibo. `I see that dog.` = Anga ua achakko nika.
+- **Engine:** `translationEngine.js` re-inserts the demonstrative before the noun's translated token for sentence paths that used to drop it (`I see that dog` was `Anga achakko Nika`). Guards: adjectives (`that big`, `this good`), pronouns / copula / `that one`, complementizer `know/think/say that ...`, Haiwa results, and exact-phrase / correction rows are untouched. `he sees this house` = `Ua ia nokko nika` (subject Ua, then demonstrative Ia).
+- **Examples:** `I want that dog` = Anga ua achakko ska; `I bought this house` = Anga ia nokko breaha; `I do not see that dog` = Anga ua achakko nikja; `that dog is big` = Ua achak dal·a; `look at this dog` = Ia achakko nibo (this mirrors that).
+- **Not covered / open:** plurals (`those dogs`, `these dogs` still drop the demonstrative), `I like that house` (verb `like` path unresolved), bare `I see that` / `I see this` (object `that` alone; `look at that` = Uko nibo is the only bare form ruled).
+Tests: `nv215_demonstrative_noun.test.js`; two older assertions that encoded the old drop (NV-189, NV-211/212) updated.

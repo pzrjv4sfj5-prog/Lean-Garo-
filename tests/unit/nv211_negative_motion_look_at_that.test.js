@@ -10,5 +10,5 @@ for (const [en, garo] of [
   ['I go there', 'anga uachi re·a'], ['he comes here', 'ua iachi re·ba·a'],
   ['I did not eat there', 'anga uano cha·ja'],            // static verb: bare locative, unchanged
   ['Look at that dog.', 'ua achakko nibo'], ['look at that house', 'ua nokko nibo'], ['look at that', 'uko nibo'],
-  ['I see that dog', 'anga achakko nika'],
+  ['I see that dog', 'anga ua achakko nika'],  // NV-215
 ]) test(`NV-211/212: ${en}`, async () => assert.equal(await lc(en), garo));
