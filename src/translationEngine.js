@@ -298,10 +298,16 @@ export async function translate(input) {
   if (result && result.method === 'sov-assembly' && typeof result.garo === 'string') {
     result = { ...result, garo: result.garo.split(' ').map((w, i) => (i === 0 ? w : w.charAt(0).toLowerCase() + w.slice(1))).join(' ') };
   }
-  // NV-203: "to them" / "for them" is the dative `uamangna`; bare "them" is the accusative `uamangko`.
-  // sov-assembly joins headwords, so it only sees "them"; swap the case when the input has to/for them.
-  if (result && result.method === 'sov-assembly' && typeof result.garo === 'string' && /\b(to|for)\s+them\b/i.test(String(input))) {
-    result = { ...result, garo: result.garo.replace(/\buamangko\b/gi, m => (m[0] === 'U' ? 'Uamangna' : 'uamangna')) };
+  // NV-214 (native-verified PO relay, 2026-10-25) supersedes the NV-203 single dative: `uamangna` = "for them" ONLY
+  // (benefactive); `uamangchi` = "to them" ONLY (directional / recipient). Bare "them" stays the accusative `uamangko`.
+  // The sentence builders only see "them", so swap the case by the English preposition.
+  if (result && typeof result.garo === 'string' && /\buamang(?:ko|na|chi)\b/i.test(result.garo)) {
+    const inp = String(input);
+    const toT = /\bto\s+them\b/i.test(inp), forT = /\bfor\s+them\b/i.test(inp);
+    if (toT !== forT) {
+      const tgt = toT ? 'uamangchi' : 'uamangna';
+      result = { ...result, garo: result.garo.replace(/\buamang(?:ko|na|chi)\b/gi, m => (m[0] === 'U' ? tgt.charAt(0).toUpperCase() + tgt.slice(1) : tgt)) };
+    }
   }
   // NV-212 (Thangseng 2026-10-25): `Look at that dog.` = `Ua achakko nibo` (that = Ua, noun takes -ko, verb last).
   // Bare `look at that` -> `Uko nibo` (same uko as attested `I see it` = Anga uko nika; confirmed correct by the PO 2026-10-25).
