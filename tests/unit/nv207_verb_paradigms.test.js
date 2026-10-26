@@ -65,3 +65,11 @@ test('Re·mola: go together is its own verb; only present is native', async () =
   assert.notEqual(m.forms.present, getVerbParadigm('go').forms.present);
   assert.equal((await translate('go together')).garo, 'Re·mola');
 });
+
+// come: stem re·ba; Thangseng 2026-10-25 "Re·ba verb is an imperative mood meaning come"
+test('come paradigm: stem re·ba, native imperative re·babo, distinct from go', () => {
+  const c = getVerbParadigm('come');
+  assert.equal(c.forms.command, 're·babo'); assert.equal(c.status.command, 'native');
+  assert.equal(c.forms.continuous, 're·baenga'); assert.equal(c.forms.infinitive, 're·bana');
+  assert.notEqual(c.forms.present, getVerbParadigm('go').forms.present);
+});

@@ -1080,28 +1080,29 @@
    }
   },
   "come": {
-   "root": "re·ba·a",
+   "root": "re·ba",
+   "note": "stem re·ba; native: come/coming/came(-aha)/come!/want to come; others derived. Thangseng 2026-10-25: Re·ba verb is an imperative mood meaning come.",
    "forms": {
-    "present": "re·ba·a",
+    "present": "re·baa",
     "continuous": "re·baenga",
-    "past": "re·ba·aha",
-    "future": "re·ba·gen",
-    "negative": "re·ba·ja",
-    "negative_future": "re·ba·jawa",
-    "command": "re·ba·bo",
-    "negative_command": "re·ba·nabe",
-    "infinitive": "re·ba·na"
+    "past": "re·baaha",
+    "future": "re·bagen",
+    "negative": "re·baja",
+    "negative_future": "re·bajawa",
+    "command": "re·babo",
+    "negative_command": "re·banabe",
+    "infinitive": "re·bana"
    },
    "status": {
-    "present": "derived",
-    "continuous": "pinned",
-    "past": "pinned",
+    "present": "native",
+    "continuous": "native",
+    "past": "native",
     "future": "derived",
     "negative": "derived",
     "negative_future": "derived",
-    "command": "derived",
-    "negative_command": "derived",
-    "infinitive": "derived"
+    "command": "native",
+    "negative_command": "pinned",
+    "infinitive": "native"
    }
   },
   "commence": {

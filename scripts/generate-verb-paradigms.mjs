@@ -63,6 +63,18 @@ delete out.review.go; out.manual = out.manual.filter(m => m !== 'go');
     status: Object.fromEntries(Object.entries(f).map(([k, x]) => [k, k === 'present' ? 'native' : (pinnedSet.has(x.toLowerCase()) ? 'pinned' : 'derived')])) };
   delete out.review.spend; out.manual = out.manual.filter(m => m !== 'spend');
 }
+// come: stem re·ba (with raka). Native-verified in master_dictionary / VALIDATION_CORPUS: come re·baa, coming re·baenga,
+// come! re·babo (`Ang·ming re·babo`, `Iachi on·tisa re·babo`), I want to come `re·bana ska`, did you come `Re·baaha ma`.
+// PO/Thangseng 2026-10-25: "Re·ba verb is an imperative mood meaning come" (recorded; see docs, clarification asked).
+// Remaining forms are suffix-rule derived and unverified.
+{
+  const f = { present: 're·baa', continuous: 're·baenga', past: 're·baaha', future: 're·bagen', negative: 're·baja',
+    negative_future: 're·bajawa', command: 're·babo', negative_command: 're·banabe', infinitive: 're·bana' };
+  const native = new Set(['present', 'continuous', 'past', 'command', 'infinitive']);
+  out.verbs.come = { root: 're·ba', note: 'stem re·ba; native: come/coming/came(-aha)/come!/want to come; others derived. Thangseng 2026-10-25: Re·ba verb is an imperative mood meaning come.', forms: f,
+    status: Object.fromEntries(Object.keys(f).map(k => [k, native.has(k) ? 'native' : (pinnedSet.has(f[k].toLowerCase()) ? 'pinned' : 'derived')])) };
+  delete out.review.come; out.manual = out.manual.filter(m => m !== 'come');
+}
 // Re·mola (v) = to go together (PO/Thangseng 2026-10-25; Claude A's NV-209 rows cover the bare phrase). A verb of its
 // own, not go + dam·san. Only the citation form is native; the other forms are suffix rules (kata / kataha / katenga /
 // katbo / katgen shape: the final -a drops before the suffix) and UNVERIFIED.

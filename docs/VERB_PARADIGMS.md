@@ -47,7 +47,7 @@
 | change | bodolea | bodoleenga | bodoleaha | bodolegen | bodoleja | bodolejawa | bodolebo | bodolenabe | bodolena |
 | clean | rongtal·ata | rongtal·atenga | rongtal·ataha | rongtal·atgen | rongtal·atja | rongtal·atjawa | rongtal·atbo | rongtal·atnabe | rongtal·atna |
 | close | chip·a | chip·enga | chip·aha | chip·gen | chip·ja | chip·jawa | chip·bo | chip·nabe | chip·na |
-| come | re·ba·a | re·baenga 📌 | re·ba·aha 📌 | re·ba·gen | re·ba·ja | re·ba·jawa | re·ba·bo | re·ba·nabe | re·ba·na |
+| come | re·baa ✅ | re·baenga ✅ | re·baaha ✅ | re·bagen | re·baja | re·bajawa | re·babo ✅ | re·banabe 📌 | re·bana ✅ |
 | commence | a·bachenga | a·bachengenga | a·bachengaha | a·bachenggen | a·bachengja | a·bachengjawa | a·bachengbo | a·bachengnabe | a·bachengna |
 | compute | chana | chanenga | chanaha | changen | chanja | chanjawa | chanbo | channabe | channa |
 | confess | ku·chak·a | ku·chak·enga | ku·chak·aha | ku·chak·gen | ku·chak·ja | ku·chak·jawa | ku·chak·bo | ku·chak·nabe | ku·chak·na |

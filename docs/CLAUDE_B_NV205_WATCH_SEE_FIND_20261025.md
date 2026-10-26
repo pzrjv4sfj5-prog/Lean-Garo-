@@ -34,3 +34,6 @@ One verb, three senses, so `to spend`, `cause to go` and `make someone go` all g
 
 ## Re·mola (v) = to go together (2026-10-25)
 Own verb (not go + dam·san, not re·ata). Added to verb_paradigms.json: only `re·mola` is native; re·molenga / re·molaha / re·molgen / re·molja / re·moljawa / re·molbo / re·molnabe / re·molna are suffix-rule derived and unverified. The engine still builds `we went together` = `An·ching dam·sanko re·anga`, `we will go together` = `An·ching Re·anggen` (together dropped), `go together!` = `dam·san re·ang` (no -bo); unchanged pending rulings.
+
+## come = re·ba (2026-10-25)
+Thangseng: "Re·ba verb is an imperative mood meaning come." Recorded; the `come` paradigm is now in verb_paradigms.json (stem re·ba; native: re·baa, re·baenga, re·baaha, re·babo, re·bana; derived: re·bagen, re·baja, re·bajawa, re·banabe). No engine output changed. **Clarification needed:** does this mean bare `Re·ba!` is itself a valid imperative (without -bo), or only that `re·ba-` + `-bo` forms the imperative? Unverified engine rows to settle after the answer: `come!` = `Re·ba·bo!` (stray raka vs verified `re·babo`), `do not come` = `Re·ba·ja` (don't come is `re·banabe`).
