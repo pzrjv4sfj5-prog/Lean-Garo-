@@ -5,8 +5,8 @@ import assert from 'node:assert/strict';
 import { translate } from '../../src/translationEngine.js';
 
 test('R1: teens fused onto a classifier carry no mid-word capital', async () => {
-  assert.equal((await translate('eleven dogs')).garo, 'achak mang·chi·sa');
-  assert.equal((await translate('nineteen dogs')).garo, 'achak mang·chi·sku');
+  assert.equal((await translate('eleven dogs')).garo, 'achak mangchi·sa');
+  assert.equal((await translate('nineteen dogs')).garo, 'achak mangchi·sku');
   assert.equal((await translate('eleven')).garo, 'Chi·sa'); // bare number unchanged
 });
 

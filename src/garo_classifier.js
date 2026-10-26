@@ -195,7 +195,11 @@ function getClassifierSuffix(count) {
 // commit whose own diff never actually mentions king) and the docx
 // table's consistent undotted 'Kingsa' across 15 rows. The docx
 // reading wins outright now by direct instruction, not inference."
-const RAKA_CLASSIFIERS = new Set(['ge', 'gong', 'te', 'mang', 'king']);
+// 2026-10-26 (NV-217): 'mang' REMOVED -- Project Owner directive (chat, via the Claude D audit
+// data/claude_d/audit/mang_classifier_dot_audit_20261026.json): mang takes NO dot as a classifier
+// (mangsa, manggni). This supersedes the 2026-09-28/29 re-dot above. One-token edit made by Claude A
+// at the Owner's direction so master, engine and tests land in one green push; Claude B to review.
+const RAKA_CLASSIFIERS = new Set(['ge', 'gong', 'te', 'king']);
 
 // Owner-confirmed 2026-09-13 (in-chat, live conversation): "beer rong sa"
 // is correct with a literal space before the number -- NOT the fused

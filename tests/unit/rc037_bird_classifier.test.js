@@ -51,16 +51,16 @@ test('RC-CANDIDATE-037: dog/cat entries get the correct noun substituted, not ju
   // mang raka dot restored 2026-09-29 (111 verified_high
   // master_dictionary.json rows, direct Project Owner statement in
   // chat) -- all four assertions below updated to the dotted form.
-  assert.equal(compiled['two dogs'], 'achak mang·gni');
+  assert.equal(compiled['two dogs'], 'achak manggni');
   // "three dogs" was corrected 2026-08-09 (NV-071 follow-up, Thangseng
   // direct) from the shared-with-"two" placeholder to the numerically
   // correct achak+mang·+gittam('three') form. "three cat" was closed the
   // same way 2026-08-11 (Thangseng direct, WhatsApp relay via Tridip):
   // 'three cat'=Menggo manggittam, confirming the identical manggittam
   // pattern for the cat root.
-  assert.equal(compiled['three dogs'], 'achak mang·gittam');
-  assert.equal(compiled['two cat'], 'menggo mang·gni');
-  assert.equal(compiled['three cat'], 'menggo mang·gittam');
+  assert.equal(compiled['three dogs'], 'achak manggittam');
+  assert.equal(compiled['two cat'], 'menggo manggni');
+  assert.equal(compiled['three cat'], 'menggo manggittam');
 });
 
 test('RC-CANDIDATE-037: genuine bird/chicken/fish entries are unaffected', () => {
@@ -76,5 +76,5 @@ test('RC-CANDIDATE-037: genuine bird/chicken/fish entries are unaffected', () =>
   // precedent as Claude A's dog/cat/bird fix in 3ec06ee): na·tok (fish root)
   // + mang classifier + the confirmed "three"=gittam suffix, replacing the
   // stale shared-with-"two" placeholder "na·tok manggni".
-  assert.equal(compiled['three fish'], 'na·tok mang·gittam');
+  assert.equal(compiled['three fish'], 'na·tok manggittam');
 });

@@ -21,10 +21,10 @@ import { countNoun } from '../../src/garo_classifier.js';
 // Flagged for a dedicated data-correction pass, not attempted here --
 // see docs/GRAMMAR_RULE_AUDIT_AND_ROADMAP_20260928.md Phase 2.
 
-test('mang (animals) classifier composition takes the raka dot', () => {
-  assert.equal(countNoun('na·tok', 3, 'fish'), 'na·tok mang·gittam');
-  assert.equal(countNoun('achak', 1, 'dog'), 'achak mang·sa');
-  assert.equal(countNoun('do·o', 10, 'bird'), 'do·o mang·chiking');
+test('mang (animals) classifier composition takes NO raka dot (NV-217, 2026-10-26 Owner directive; supersedes 2026-09-28/29)', () => {
+  assert.equal(countNoun('na·tok', 3, 'fish'), 'na·tok manggittam');
+  assert.equal(countNoun('achak', 1, 'dog'), 'achak mangsa');
+  assert.equal(countNoun('do·o', 10, 'bird'), 'do·o mangchiking');
 });
 
 test('king classifier composition takes the raka dot', () => {
@@ -34,7 +34,7 @@ test('king classifier composition takes the raka dot', () => {
 test('translate: fallback composition (no exact-phrase entry) surfaces the dotted mang form end-to-end', async () => {
   const r = await translate('six elephants');
   assert.equal(r.method, 'classifier');
-  assert.equal(r.garo, 'mongma mang·dok');
+  assert.equal(r.garo, 'mongma mangdok');
 });
 
 test('other raka classifiers unaffected by the mang/king fix', () => {

@@ -36,7 +36,7 @@ const UNCHANGED = [
   ['mother eats rice', 'A.ai miko Cha·a'],          // verb "eats" is not a plural noun
   ['his dog eats', 'Uni achak cha·a'],            // singular subject
   ['he eats rice', 'Ua miko Cha·a'],
-  ['two dogs eat rice', 'Achak mang·gni miko Cha·a'], // counted: Formula B (see counted_subject_formula_b.test.js), never -rang
+  ['two dogs eat rice', 'Achak manggni miko Cha·a'], // counted: Formula B (see counted_subject_formula_b.test.js), never -rang
   ['people', 'mande'],                           // bare plural headword unchanged (irregular plurals in a clause are covered by irregular_plural_subject.test.js)
   ['my cats', 'Angni menggo'],                    // bare noun phrase, no predicate: not a sentence
   ['dogs', 'Achak'],                              // bare plural headword: no ruling, unchanged

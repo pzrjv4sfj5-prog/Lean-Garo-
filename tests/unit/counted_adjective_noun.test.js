@@ -11,12 +11,12 @@ import { translate } from '../../src/translationEngine.js';
 // dropped). Counted -> never -rang.
 
 const CASES = [
-  ['two big dogs', 'dal·gipa achak mang·gni'],
-  ['three big cats', 'dal·gipa menggo mang·gittam'],
+  ['two big dogs', 'dal·gipa achak manggni'],
+  ['three big cats', 'dal·gipa menggo manggittam'],
   ['two big books', 'dal·gipa ki·tap king·gni'],
-  ['five big birds', 'dal·gipa do·o mang·bonga'],
-  ['two big dogs eat rice', 'Dal·gipa achak mang·gni miko Cha·a'],
-  ['two big dogs sleep', 'Dal·gipa achak mang·gni Tusia'],
+  ['five big birds', 'dal·gipa do·o mangbonga'],
+  ['two big dogs eat rice', 'Dal·gipa achak manggni miko Cha·a'],
+  ['two big dogs sleep', 'Dal·gipa achak manggni Tusia'],
 ];
 for (const [en, garo] of CASES) {
   test(`counted adjective+noun: "${en}"`, async () => {
@@ -27,10 +27,10 @@ for (const [en, garo] of CASES) {
 }
 
 const UNCHANGED = [
-  ['two dogs', 'achak mang·gni'],
+  ['two dogs', 'achak manggni'],
   ['two red apples', 'apple ronggni'],
   ['three sugar canes', 'grit ge·gittam'],
-  ['two dogs eat rice', 'Achak mang·gni miko Cha·a'],
+  ['two dogs eat rice', 'Achak manggni miko Cha·a'],
 ];
 for (const [en, garo] of UNCHANGED) {
   test(`counted adjective guard: "${en}"`, async () => {

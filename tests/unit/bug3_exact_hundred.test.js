@@ -37,12 +37,12 @@ test('classifier composition: 100 vs 101 no longer collide, mang matches direct 
   // RAKA_CLASSIFIERS comment). Not independently cited for n=101
   // itself; mechanically follows from the n<20 rule plus the n=100
   // no-filler mechanism above, same as the 200/300 case further down.
-  assert.equal(buildClassifierPhrase('mang', 101), 'ritcha mang·sa');
+  assert.equal(buildClassifierPhrase('mang', 101), 'ritcha mangsa');
   assert.notEqual(buildClassifierPhrase('mang', 100), buildClassifierPhrase('mang', 101));
 });
 
 test('classifier composition: exact hundred has NO raka dot, even for classifiers that are otherwise dot-carrying', () => {
-  // mang is dot-carrying at n<20 ("mang·sa") but the citation shows no
+  // mang is dot-carrying at n<20 ("mangsa") but the citation shows no
   // dot at all for the exact-hundred construction -- a different,
   // explicitly confirmed fact for this specific construction, not a
   // contradiction of the n<20 rule.

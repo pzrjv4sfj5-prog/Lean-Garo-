@@ -64,14 +64,14 @@ test('finalizeDictionary: master\'s own live re-confirmation of a value is NOT f
   // must only strip source !== 2 (non-master) duplicates.
   const mergedValues = {
     'two dogs': [
-      { v: 'achak mang·gni', isVariant: false, isVerified: true, rawKey: 'two dogs', source: 2 },
+      { v: 'achak manggni', isVariant: false, isVerified: true, rawKey: 'two dogs', source: 2 },
     ],
   };
   const supersededByKey = {
-    'two dogs': new Set(['achak mang·gni']),
+    'two dogs': new Set(['achak manggni']),
   };
   const { finalized, heldSupersededOnly } = finalizeDictionary(mergedValues, {}, supersededByKey);
-  assert.equal(finalized['two dogs'], 'achak mang·gni',
+  assert.equal(finalized['two dogs'], 'achak manggni',
     'master\'s own live-sourced (source===2) candidate must survive even if a stale sibling note shares its value');
   assert.equal(heldSupersededOnly['two dogs'], undefined);
 });

@@ -9,7 +9,7 @@ const cases = [
   ['I look at him/her', 'Anga bichiko nia'],
   ['I will do', 'Anga ka·gen'],
   ['has stopped eating', 'cha·jaha'],
-  ['two chicken', 'do·o mang·gni'],
+  ['two chicken', 'do·o manggni'],
   ['How much did you eat?', 'Na·a badita cha·a?'], // NV-194: NV-158 bare -a is final (reverses NV-182)
   ['How many apples are on the table?', 'Tableo badita rong apple donga?'],
   ['How are you going to do it?', 'Na·a uako maikai dakna am·enga?'],

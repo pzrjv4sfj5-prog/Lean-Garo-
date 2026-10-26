@@ -30,7 +30,7 @@ const UNCHANGED = [
   ['cats sleep', 'Menggorang tusia'],             // intransitive: no object, nothing to add
   ['dogs run', 'Achakrang kata'],
   ['dogs eat rice', 'Achakrang miko cha·a'],     // native-confirmed correction row
-  ['two dogs eat rice', 'Achak mang·gni miko Cha·a'], // counted: Formula B
+  ['two dogs eat rice', 'Achak manggni miko Cha·a'], // counted: Formula B
   ['he eats rice', 'Ua miko Cha·a'],
   ['children eat rice', 'Bi·sarang miko Cha·a'],  // lexicalized plural kept, now with -ko
   ['dogs', 'Achak'],

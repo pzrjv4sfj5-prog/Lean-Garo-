@@ -16,7 +16,7 @@ claims:
     confidence_note: "5 independent examples across distinct classifier classes, the best-evidenced morphological category in the repository alongside RULE-001"
 examples:
   - 'ki·tap kinggittam="three books" (king, no raka)'
-  - 'achak mang·gni="two dogs" (mang·, raka)'
+  - 'achak manggni="two dogs" (mang·, raka)'
   - 'wa·a jolsa="one stalk of bamboo" (jol, no raka)'
   - "a'bil panggni=\"two trees\" (pang, no raka)"
   - 'kolom ge·sa="a pen" (ge·, raka)'

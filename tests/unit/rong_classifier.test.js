@@ -52,7 +52,7 @@ test('regression: existing classifier roots unaffected by rong addition', () => 
   // (2026-09-28/29, direct Project Owner statement in chat, shown and
   // overriding a 2026-09-18 Thangseng "No" citation) is WITH the dot --
   // see garo_classifier.js RAKA_CLASSIFIERS comment for the full chain.
-  assert.equal(countNoun('achak', 1, 'dog'), 'achak mang·sa');
+  assert.equal(countNoun('achak', 1, 'dog'), 'achak mangsa');
   // FIXED (NV-124 engine handoff, closed 2026-09-05): 'sak' removed from
   // RAKA_CLASSIFIERS in src/garo_classifier.js, so the classifier-
   // composition fallback (for phrases with no exact dictionary match)
@@ -69,7 +69,7 @@ test('regression: existing classifier roots unaffected by rong addition', () => 
   // "do·a" corrected to "do·o" 2026-09-28 (docs/GRAMMAR_RULE_AUDIT_AND_
   // ROADMAP_20260928.md) to match the verified_high dictionary row for
   // "ten birds" -- do·a only survives in a superseded row.
-  assert.equal(countNoun('do·o', 10, 'bird'), 'do·o mang·chiking');
+  assert.equal(countNoun('do·o', 10, 'bird'), 'do·o mangchiking');
 });
 
 test('CLASSIFIER_MAP sanity: rong entries present', () => {

@@ -12,12 +12,12 @@ import { translate } from '../../src/translationEngine.js';
 // "two people eat rice" gave "mi gegni" (subject dropped).
 
 const COUNTED = [
-  ['two dogs eat rice', 'Achak mang·gni miko Cha·a'],
-  ['one dog eats rice', 'Achak mang·sa miko Cha·a'],
+  ['two dogs eat rice', 'Achak manggni miko Cha·a'],
+  ['one dog eats rice', 'Achak mangsa miko Cha·a'],
   ['two people eat rice', 'Mande sakgni miko Cha·a'],
   ['two books are heavy', 'Ki·tap king·gni jria'],
-  ['three birds sleep', 'Do·o mang·gittam Tusia'],
-  ['today two dogs eat rice', 'Da·alo achak mang·gni miko Cha·a'] // RULE-053 2026-10-20: time word takes -o,
+  ['three birds sleep', 'Do·o manggittam Tusia'],
+  ['today two dogs eat rice', 'Da·alo achak manggni miko Cha·a'] // RULE-053 2026-10-20: time word takes -o,
 ];
 for (const [en, garo] of COUNTED) {
   test(`counted subject (Formula B): "${en}"`, async () => {
@@ -30,14 +30,14 @@ for (const [en, garo] of COUNTED) {
 
 // Must not change.
 const UNCHANGED = [
-  ['two dogs', 'achak mang·gni'],
+  ['two dogs', 'achak manggni'],
   ['three sugar cane', 'grit ge·gittam'],           // multi-word dictionary noun whose tail is also a verb lemma
   ['three sugar canes', 'grit ge·gittam'],
-  ['2 dogs', 'achak mang·gni'],
+  ['2 dogs', 'achak manggni'],
   ['two red apples', 'apple ronggni'],
   ['two kg of rice', 'merong kg gni'],
   ['two cups of tea', 'cha ge·gni'],
-  ['i see two dogs', 'Anga achak mang·gniko Nika'],
+  ['i see two dogs', 'Anga achak manggniko Nika'],
   ['dogs eat rice', 'Achakrang miko cha·a'],
 ];
 for (const [en, garo] of UNCHANGED) {

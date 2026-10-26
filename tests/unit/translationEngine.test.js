@@ -493,8 +493,8 @@ test('number word is never picked as the verb; "has" resolves as an irregular fo
   // citation and scope of that fix.
   // mang raka dot restored 2026-09-29 (111 verified_high
   // master_dictionary.json rows, direct Project Owner statement in
-  // chat), 'two dogs'=achak mang·gni among them.
-  assert.equal(r.garo, 'Uao achak mang·gni donga');
+  // chat), 'two dogs'=achak manggni among them.
+  assert.equal(r.garo, 'Uao achak manggni donga');
 });
 
 // --- Second half of the same 2026-07-13 fix's benchmark claim ("exactly
@@ -1449,9 +1449,9 @@ test('"<number> dogs" counting phrases use the correct, natively-confirmed class
   // mang raka dot restored 2026-09-29, see translationEngine.test.js's
   // "he has two dogs" test above for the same fix.
   const cases = [
-    ['two dogs', 'achak mang·gni'],
-    ['three dogs', 'achak mang·gittam'],
-    ['four dogs', 'achak mang·bri'],
+    ['two dogs', 'achak manggni'],
+    ['three dogs', 'achak manggittam'],
+    ['four dogs', 'achak mangbri'],
   ];
   for (const [key, expected] of cases) {
     assert.equal(compiledDict[key], expected, `compiled_dict["${key}"] should match the native-confirmed value`);
@@ -1491,7 +1491,7 @@ test('runtime propagation: classifier composition still runs as the fallback whe
   // garo_classifier.js RAKA_CLASSIFIERS comment for the full chain);
   // current state (2026-09-28/29, direct Project Owner statement in
   // chat) is WITH the dot.
-  assert.equal(r.garo, 'achak mang·dok');
+  assert.equal(r.garo, 'achak mangdok');
 });
 
 // --- Plural counted-noun generation defect (2026-08-14, Claude B, per
