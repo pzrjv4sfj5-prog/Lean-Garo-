@@ -45,17 +45,23 @@ for (const v of [...new Set([...VERB_LEMMAS, ...EXTRA])].sort()) {
   if (/^[^\s\[]+enga$/.test(ec)) { if (ec !== f.continuous.toLowerCase()) f.continuous = ec; contSrc = 'engine'; }
   out.verbs[v] = { root: r, forms: f, status: Object.fromEntries(Object.entries(f).map(([k, x]) => [k, pinnedSet.has(x.toLowerCase()) ? 'pinned' : (k === 'continuous' && contSrc === 'engine' ? 'engine' : 'derived')])) };
 }
-// NV-207b (PO/Thangseng, 2026-10-25): go = Re·a. `re·anga` is its OWN verb, "go away" (not the past of go).
-// The live engine still builds `I will go` / `go!` from the go-away stem (Re·anggen, Re·ang·bo), so both paradigms are
-// emitted and the disagreement is recorded in `note` for a PO ruling instead of being silently changed.
-for (const [v, root, note] of [
-  ['go', 're·a', 'root confirmed 2026-10-25; forms derived; engine currently uses the go-away stem for I will go / go! (PO ruling needed)'],
-  ['spend', 're·ata', 'Re·ata (PO/Thangseng 2026-10-25): to cause to go; to make someone go; to spend time, money. Forms derived; one verb, three senses.'],
-  ['go away', 're·anga', 'verb confirmed 2026-10-25; engine uses these forms for went / going / will go / go!'],
-]) {
-  const f = forms(root);
-  out.verbs[v] = { root, note, forms: f, status: Object.fromEntries(Object.entries(f).map(([k, x]) => [k, k === 'present' ? 'native' : (pinnedSet.has(x.toLowerCase()) ? 'pinned' : 'derived')])) };
-  delete out.review[v]; out.manual = out.manual.filter(m => m !== v);
+// NV-207b/NV-100 (Thangseng): go = Re·a (to walk; go). Re·anga = went, DERIVED from re·a (not a separate verb).
+// Every form below is native-verified in master_dictionary (verified_high) or Thangseng's own words; the stem is
+// re·ang- for past / continuous / future / command / negatives and bare re· for -jawa (will not go), -naha (let's go).
+const GO = {
+  present: 're·a', continuous: 're·angenga', past: 're·anga', future: 're·anggen', negative: 're·angja',
+  negative_future: 're·jawa', command: 're·angbo', negative_command: 're·angnabe', infinitive: 're·angna',
+};
+out.verbs.go = { root: 're·a', note: 'Thangseng NV-100/NV-097/NV-086; re·anga = went (derived from re·a); stem re·ang- vs re· see docs',
+  forms: GO, status: Object.fromEntries(Object.keys(GO).map(k => [k, 'native'])),
+  extra: { will_not_be_going: 're·angjawa', lets_go: 're·naha', question_did_you_go: 're·angama' } };
+delete out.review.go; out.manual = out.manual.filter(m => m !== 'go');
+// Re·ata (PO/Thangseng 2026-10-25): to cause to go; to make someone go; to spend time, money
+{
+  const f = forms('re·ata');
+  out.verbs.spend = { root: 're·ata', note: 'Re·ata: to cause to go; to make someone go; to spend time, money. Forms derived (unverified).', forms: f,
+    status: Object.fromEntries(Object.entries(f).map(([k, x]) => [k, k === 'present' ? 'native' : (pinnedSet.has(x.toLowerCase()) ? 'pinned' : 'derived')])) };
+  delete out.review.spend; out.manual = out.manual.filter(m => m !== 'spend');
 }
 // Native Thangseng paradigms override the rule output (NV-205): watch = Nia, see / find = Nika.
 const NATIVE = {

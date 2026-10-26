@@ -29,23 +29,24 @@ test('NV-207: every emitted verb agrees with the live engine (future, negative f
   }
 });
 
-// NV-207b (PO/Thangseng 2026-10-25): go = Re·a; re·anga is its own verb, "go away"
-test('NV-207b: go = re·a, go away = re·anga are separate verbs', async () => {
-  assert.equal(getVerbParadigm('go').forms.present, 're·a');
-  assert.equal(getVerbParadigm('go away').forms.present, 're·anga');
-  assert.notEqual(getVerbParadigm('go').forms.present, getVerbParadigm('go away').forms.present);
+// NV-207b (Thangseng NV-100): go = re·a; re·anga = went (derived from re·a), not a separate verb
+test('NV-207b: go paradigm is native-verified, re·ang- stem', async () => {
+  const g = getVerbParadigm('go');
+  assert.deepEqual([g.forms.present, g.forms.past, g.forms.continuous, g.forms.future, g.forms.negative, g.forms.negative_future, g.forms.command, g.forms.negative_command],
+    ['re·a', 're·anga', 're·angenga', 're·anggen', 're·angja', 're·jawa', 're·angbo', 're·angnabe']);
+  assert.equal(g.extra.will_not_be_going, 're·angjawa'); assert.equal(g.extra.lets_go, 're·naha');
+  assert.equal(getVerbParadigm('go away'), null);
   const lc = async (en) => (await translate(en)).garo.toLowerCase().replace(/[.!?]$/, '');
-  assert.equal(await lc('go'), 're·a');
-  assert.equal(await lc('I go'), 'anga re·a');
-  assert.equal(await lc('to go away'), 're·anga');
-  assert.equal(await lc('I go away'), 'anga re·anga');
+  assert.equal(await lc('go'), 're·a'); assert.equal(await lc('I went'), 'anga re·anga');
+  assert.equal(await lc('I will not go'), 'anga re·jawa'); assert.equal(await lc('will not be going'), 're·angjawa');
+  assert.equal(await lc("don't go"), 're·angnabe');
 });
 
 // NV-207c (PO/Thangseng 2026-10-25): Re·ata = to cause to go; to make someone go; to spend time, money
 test('NV-207c: re·ata (cause to go / spend)', async () => {
   const lc = async (en) => (await translate(en)).garo.toLowerCase().replace(/[.!?]$/, '');
   assert.equal(getVerbParadigm('spend').forms.present, 're·ata');
-  assert.notEqual(getVerbParadigm('spend').forms.present, getVerbParadigm('go').forms.present);
+  assert.notEqual(getVerbParadigm('spend').forms.present, getVerbParadigm('go').forms.present); // re·ata != re·a
   for (const en of ['to spend', 'cause to go', 'to make someone go']) assert.equal(await lc(en), 're·ata', en);
   assert.equal(await lc('spend time'), 'somoi re·ata');
   assert.equal(await lc('I spend money'), 'anga dang·gako re·ata');

@@ -5081,7 +5081,7 @@
   },
   "spend": {
    "root": "re·ata",
-   "note": "Re·ata (PO/Thangseng 2026-10-25): to cause to go; to make someone go; to spend time, money. Forms derived; one verb, three senses.",
+   "note": "Re·ata: to cause to go; to make someone go; to spend time, money. Forms derived (unverified).",
    "forms": {
     "present": "re·ata",
     "continuous": "re·atenga",
@@ -6357,54 +6357,33 @@
   },
   "go": {
    "root": "re·a",
-   "note": "root confirmed 2026-10-25; forms derived; engine currently uses the go-away stem for I will go / go! (PO ruling needed)",
+   "note": "Thangseng NV-100/NV-097/NV-086; re·anga = went (derived from re·a); stem re·ang- vs re· see docs",
    "forms": {
     "present": "re·a",
-    "continuous": "re·enga",
-    "past": "re·aha",
-    "future": "re·gen",
-    "negative": "re·ja",
-    "negative_future": "re·jawa",
-    "command": "re·bo",
-    "negative_command": "re·nabe",
-    "infinitive": "re·na"
-   },
-   "status": {
-    "present": "native",
-    "continuous": "pinned",
-    "past": "pinned",
-    "future": "derived",
-    "negative": "derived",
-    "negative_future": "pinned",
-    "command": "derived",
-    "negative_command": "derived",
-    "infinitive": "derived"
-   }
-  },
-  "go away": {
-   "root": "re·anga",
-   "note": "verb confirmed 2026-10-25; engine uses these forms for went / going / will go / go!",
-   "forms": {
-    "present": "re·anga",
     "continuous": "re·angenga",
-    "past": "re·angaha",
+    "past": "re·anga",
     "future": "re·anggen",
     "negative": "re·angja",
-    "negative_future": "re·angjawa",
+    "negative_future": "re·jawa",
     "command": "re·angbo",
     "negative_command": "re·angnabe",
     "infinitive": "re·angna"
    },
    "status": {
     "present": "native",
-    "continuous": "pinned",
-    "past": "derived",
-    "future": "derived",
-    "negative": "derived",
-    "negative_future": "derived",
-    "command": "pinned",
-    "negative_command": "pinned",
-    "infinitive": "derived"
+    "continuous": "native",
+    "past": "native",
+    "future": "native",
+    "negative": "native",
+    "negative_future": "native",
+    "command": "native",
+    "negative_command": "native",
+    "infinitive": "native"
+   },
+   "extra": {
+    "will_not_be_going": "re·angjawa",
+    "lets_go": "re·naha",
+    "question_did_you_go": "re·angama"
    }
   },
   "watch": {

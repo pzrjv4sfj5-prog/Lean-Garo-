@@ -258,8 +258,7 @@
 | whisper | ku·mi·si·a | ku·mi·si·enga | ku·mi·si·aha | ku·mi·si·gen | ku·mi·si·ja | ku·mi·si·jawa | ku·mi·si·bo | ku·mi·si·nabe | ku·mi·si·na |
 | wrap | tep·a | tep·enga | tep·aha | tep·gen | tep·ja | tep·jawa | tep·bo | tep·nabe | tep·na |
 | write | sea | seenga | seaha | segen | seja | sejawa | sebo | senabe | sena |
-| go | re·a ✅ | re·enga 📌 | re·aha 📌 | re·gen | re·ja | re·jawa 📌 | re·bo | re·nabe | re·na |
-| go away | re·anga ✅ | re·angenga 📌 | re·angaha | re·anggen | re·angja | re·angjawa | re·angbo 📌 | re·angnabe 📌 | re·angna |
+| go | re·a ✅ | re·angenga ✅ | re·anga ✅ | re·anggen ✅ | re·angja ✅ | re·jawa ✅ | re·angbo ✅ | re·angnabe ✅ | re·angna ✅ |
 | watch | nia ✅ | nienga ✅ | niaha ✅ | nigen ✅ | nija | nijawa ✅ | nibo ✅ | ninabe ✅ | nina ✅ |
 | find | nika ✅ | nikenga | nikaha ✅ | nikgen ✅ | nikja | nikjawa ✅ | nikbo ✅ | niknabe ✅ | nikna ✅ |
 
