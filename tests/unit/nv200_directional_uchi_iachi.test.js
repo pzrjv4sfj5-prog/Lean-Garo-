@@ -10,8 +10,8 @@ const lc = async (en) => (await translate(en)).garo.toLowerCase().replace(/[.!?]
 for (const [en, garo] of [
   ['to that place', 'uchi'], ['that side', 'uchipak'], ['that way', 'uchipak'], ['towards that', 'uchipak'],
   ['this side', 'iachipak'], ['to them', 'uamangna'], ['by them', 'uamangchi'],
-  ['I go there', 'anga uchi re·a'], ['I come here', 'anga iachi re·ba·a'],
-  ['We went there', 'an·ching uchi re·anga'], ['She will go there', 'ua uchi re·anggen'],
+  ['I go there', 'anga uachi re·a'], ['I come here', 'anga iachi re·ba·a'],
+  ['We went there', 'an·ching uachi re·anga'], ['She will go there', 'ua uachi re·anggen'],
 ]) test(`NV-200: ${en}`, async () => assert.equal(await lc(en), garo));
 
 test('NV-200: unchanged (static verbs, home, accusative uko)', async () => {

@@ -303,6 +303,16 @@ export async function translate(input) {
   if (result && result.method === 'sov-assembly' && typeof result.garo === 'string' && /\b(to|for)\s+them\b/i.test(String(input))) {
     result = { ...result, garo: result.garo.replace(/\buamangko\b/gi, m => (m[0] === 'U' ? 'Uamangna' : 'uamangna')) };
   }
+  // NV-212 (Thangseng 2026-10-25): `Look at that dog.` = `Ua achakko nibo` (that = Ua, noun takes -ko, verb last).
+  // Bare `look at that` -> `Uko nibo` (same uko as attested `I see it` = Anga uko nika; derived, not a native quote).
+  {
+    const ml = String(input).trim().match(/^look\s+at\s+that(?:\s+([a-z]+))?\s*[!.]?$/i);
+    if (ml) {
+      if (!ml[1]) return { garo: 'Uko nibo', method: 'look-at-that', confidence: 0.8 };
+      const n = lookupGaro(ml[1].toLowerCase());
+      if (n && !/\[UNKNOWN\]|[\s,;()]/.test(n)) return { garo: `Ua ${n.charAt(0).toLowerCase()}${n.slice(1)}ko nibo`, method: 'look-at-that', confidence: 0.85 };
+    }
+  }
   // NV-204 (2026-10-25, grammar logic, not a native quote): command with the object `it`.
   // `VERB it!` / `do not VERB it` -> `Uko <bare command>` (object before verb, SOV; same
   // `uko` as attested `Anga uko nika`). Only fires when the bare command already resolves

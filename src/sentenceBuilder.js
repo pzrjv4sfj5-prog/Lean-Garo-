@@ -553,8 +553,11 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   // with a motion verb (go/come) `there`/`here` are directional, Uchi / Iachi
   // ("to that/this place"), bare, instead of Uano/Iano + ko. Static verbs
   // (stay/eat/...) are untouched. Non-negative clauses only.
-  const DIRECTIONAL_ADV = { uano: 'Uchi', iano: 'Iachi' };
-  const directionalAdv = (grammar.object && grammar.verb && !grammar.isNegative &&
+  // NV-211: native spelling is Uachi (master_dictionary verified_high `there (towards/that side)`, `Uachi on·tisa re·angbo`); `Uchi` was unverified.
+  const DIRECTIONAL_ADV = { uano: 'Uachi', iano: 'Iachi' };
+  // NV-211 (Thangseng 2026-10-25): iachi / uachi never take the negative suffix; it goes on the verb (`Anga uachi re·angja`),
+  // so negative motion clauses are directional too (the old non-negative-only scope is dropped).
+  const directionalAdv = (grammar.object && grammar.verb &&
     /^(go|goes|going|went|gone|come|comes|coming|came)$/i.test(String(grammar.verb.english || '')))
     ? DIRECTIONAL_ADV[String(grammar.object.garo).toLowerCase()] : null;
   if (directionalAdv) grammar.object.garo = directionalAdv;
