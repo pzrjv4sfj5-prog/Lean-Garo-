@@ -8,3 +8,6 @@ Still to do (engine/paradigm, B territory):
 4. Routing: Walk -> Re·mama; Roam/Wander -> rorama.
 Open for T: NV-100 (Thangseng: Re.a = to walk; re·anga = went) and the 2026-09-09 PO directive (walk = Re·a) are overridden by this directive; Re·a kept as variant. Is Re·mama meant to be the existing re·am·a?
 Allowlisted phrase_maps:to walk (compiled_dict still picks Re·a; Claude B item 1 in the NV-214 handoff).
+
+## Update NV-216
+PO: Re·a is a valid synonym for walk (equal to Re·mama; Re·mama stays primary). So paradigm item 2 is no longer a bug: re·aha/re·enga etc. are valid synonym forms; only Re·mama's own forms are missing. PO also wrote the synonym as `Re.rama` (vs `Re·mama` earlier): spelling unconfirmed, nothing changed. New: Re·rika (v.) = follow/accompany.

@@ -718,7 +718,7 @@
     "english": "walk",
     "garo": "Re·a",
     "category": "travel",
-    "notes": "variant/VERIFIED/HIGH — demoted from primary by NV-214 (2026-10-26): Project Owner directive routes walk -> Re·mama. Prior evidence kept for audit: VERIFIED/HIGH, PROMOTED TO PRIMARY 2026-09-09 (Claude A) — Project Owner directive explicitly promoted 're·a' to primary for the bare 'walk' key (the separate explicit decision this entry's prior note said it was waiting for), provenance-labeled per .ai/PROJECT_OWNER_AUTHORITY.md. Fixed the actual runtime-shipping layer: src/data/phrase_maps.js['walk'] changed from 're·am·a' to 'Re·a'. Deliberately did NOT retag or otherwise touch the sibling 'Walk'->'re·am·a' row (still verified_high, untagged/neutral) — the re·a/re·am·a relationship (free variant vs. root-vs-durative) remains unconfirmed; that row is left exactly as-is per the same non-single-winner caution used elsewhere (e.g. the pumpkin/ginger/tomato precedent). NOTE: this promotion resolves the phrase_maps.js layer only — compiled_dict.json's own pickPrimary tie-break for the bare 'walk' key is untouched and would still resolve to 're·am·a' if phrase_maps.js's override were ever removed, since re·am·a remains the sole non-variant-tagged candidate there. Flagged as a Runtime Handoff for Claude B, not resolved in this data-layer fix. ORIGINAL 2026-08-30 note (kept for the audit trail, no longer the current status): \"variant/VERIFIED/HIGH — RE-PROMOTED 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip), overriding the 2026-08-01 corpus-internal-audit SUPERSEDED tag below. Thangseng's own words this session: \"Re.a = to walk\" — direct native confirmation, not corpus-internal reasoning. Tagged as a co-existing variant (not the primary) deliberately: this evidence confirms re·a is a genuine, correct word for \"walk\", but does not address its relationship to the already-VERIFIED 're·am·a' (same key) — whether they're free variants, root-vs-durative forms, or something else is unconfirmed, so the current shipped primary (re·am·a) is left undisturbed rather than silently flipped on an unrelated relay answer. If the Owner wants re·a promoted to primary instead, that is a separate explicit decision. ORIGINAL 2026-08-01 SUPERSEDED note (kept for the audit trail, no longer the current status): \"corpus-internal audit (Claude A): legacy unannotated import, same english key 'walk' has VERIFIED/HIGH form(s) ['re·am·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.\" See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.\"",
+    "notes": "variant/VERIFIED/HIGH — NV-216 (2026-10-26): Project Owner directive: Re·a is a valid SYNONYM for walk (equal in validity to Re·mama; Re·mama stays the shipped primary per NV-214). Prior evidence: VERIFIED/HIGH, PROMOTED TO PRIMARY 2026-09-09 (Claude A) — Project Owner directive explicitly promoted 're·a' to primary for the bare 'walk' key (the separate explicit decision this entry's prior note said it was waiting for), provenance-labeled per .ai/PROJECT_OWNER_AUTHORITY.md. Fixed the actual runtime-shipping layer: src/data/phrase_maps.js['walk'] changed from 're·am·a' to 'Re·a'. Deliberately did NOT retag or otherwise touch the sibling 'Walk'->'re·am·a' row (still verified_high, untagged/neutral) — the re·a/re·am·a relationship (free variant vs. root-vs-durative) remains unconfirmed; that row is left exactly as-is per the same non-single-winner caution used elsewhere (e.g. the pumpkin/ginger/tomato precedent). NOTE: this promotion resolves the phrase_maps.js layer only — compiled_dict.json's own pickPrimary tie-break for the bare 'walk' key is untouched and would still resolve to 're·am·a' if phrase_maps.js's override were ever removed, since re·am·a remains the sole non-variant-tagged candidate there. Flagged as a Runtime Handoff for Claude B, not resolved in this data-layer fix. ORIGINAL 2026-08-30 note (kept for the audit trail, no longer the current status): \"variant/VERIFIED/HIGH — RE-PROMOTED 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip), overriding the 2026-08-01 corpus-internal-audit SUPERSEDED tag below. Thangseng's own words this session: \"Re.a = to walk\" — direct native confirmation, not corpus-internal reasoning. Tagged as a co-existing variant (not the primary) deliberately: this evidence confirms re·a is a genuine, correct word for \"walk\", but does not address its relationship to the already-VERIFIED 're·am·a' (same key) — whether they're free variants, root-vs-durative forms, or something else is unconfirmed, so the current shipped primary (re·am·a) is left undisturbed rather than silently flipped on an unrelated relay answer. If the Owner wants re·a promoted to primary instead, that is a separate explicit decision. ORIGINAL 2026-08-01 SUPERSEDED note (kept for the audit trail, no longer the current status): \"corpus-internal audit (Claude A): legacy unannotated import, same english key 'walk' has VERIFIED/HIGH form(s) ['re·am·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.\" See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.\"",
     "confidence": "verified_high"
   },
   {
@@ -73786,7 +73786,7 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH — demoted from primary by NV-214 (2026-10-26): Project Owner directive routes walk -> Re·mama. Prior evidence kept for audit: VERIFIED/HIGH — native-confirmed 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip): \"Re.a = to walk.\" Root/infinitive form; re·anga (\"went\") is derived from it per Thangseng's own statement. Distinct dictionary key from the existing 'walk'=Re·a row (idx 111, SUPERSEDED 2026-08-01 corpus-internal audit, retained per citation discipline, not re-promoted this session — that audit's judgment about the bare 'walk' key vs. 're·am·a' is a separate question this new evidence doesn't directly settle, left for that row's own review). See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.",
+    "notes": "variant/VERIFIED/HIGH — NV-216 (2026-10-26): Project Owner directive: Re·a is a valid SYNONYM for walk (equal in validity to Re·mama; Re·mama stays the shipped primary per NV-214). Prior evidence: VERIFIED/HIGH — native-confirmed 2026-08-30 (NV-100, direct Thangseng relay via Project Owner/Tridip): \"Re.a = to walk.\" Root/infinitive form; re·anga (\"went\") is derived from it per Thangseng's own statement. Distinct dictionary key from the existing 'walk'=Re·a row (idx 111, SUPERSEDED 2026-08-01 corpus-internal audit, retained per citation discipline, not re-promoted this session — that audit's judgment about the bare 'walk' key vs. 're·am·a' is a separate question this new evidence doesn't directly settle, left for that row's own review). See docs/THANGSENG_NATIVE_VALIDATION.md NV-100.",
     "confidence": "verified_high"
   },
   {
@@ -79862,6 +79862,42 @@
     "category": "verbs",
     "classifier": null,
     "notes": "VERIFIED/HIGH — Project Owner directive (chat), NV-214 (2026-10-26); provenance unattributed ('newly verified' semantic split), NOT a Thangseng quote. Roam/wander aimlessly, no specific destination; builds on roa (NV-192). Same word as roam=rorama (NV-095, native), no raka.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "follow",
+    "garo": "Re·rika",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (chat), NV-216 (2026-10-26); not a Thangseng quote. Re·rika (v.) = to follow; to accompany.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to follow",
+    "garo": "Re·rika",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (chat), NV-216 (2026-10-26); not a Thangseng quote. Re·rika (v.) = to follow; to accompany.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "accompany",
+    "garo": "Re·rika",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (chat), NV-216 (2026-10-26); not a Thangseng quote. Re·rika (v.) = to follow; to accompany.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to accompany",
+    "garo": "Re·rika",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — Project Owner directive (chat), NV-216 (2026-10-26); not a Thangseng quote. Re·rika (v.) = to follow; to accompany.",
     "confidence": "verified_high"
   }
 ]

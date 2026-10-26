@@ -37624,5 +37624,37 @@
     "category": "verbs",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-214"
+  },
+  {
+    "english": "follow",
+    "garo": "Re·rika",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-216"
+  },
+  {
+    "english": "to follow",
+    "garo": "Re·rika",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-216"
+  },
+  {
+    "english": "accompany",
+    "garo": "Re·rika",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-216"
+  },
+  {
+    "english": "to accompany",
+    "garo": "Re·rika",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-216"
   }
 ]

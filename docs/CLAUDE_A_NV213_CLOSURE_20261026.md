@@ -23,3 +23,6 @@ Authority: Project Owner chat directive. `Sani?`/`whose` and `Saniba`/`someone's
 
 ## NV-214 (A), 2026-10-26: walk vs roam
 Project Owner directive. walk/to walk = Re·mama (verified_high, raka kept); roam/to roam/wander/to wander = rorama (no raka). Re·a and re·am·a demoted to variant, retained. phrase_maps.js pins walk, to walk. "to walk" allowlisted in known_dictionary_conflicts.json. Test: tests/unit/nv214_walk_roam.test.js. Engine/paradigm follow-ups: docs/HANDOFF_CLAUDE_B_20261026_walk_rere.md.
+
+## NV-216 (A), 2026-10-26
+Project Owner directive: Re·a = valid synonym for walk (kept as verified variant, Re·mama primary). New verb Re·rika = to follow; to accompany (follow/to follow/accompany/to accompany, verified_high; unverified i·rik·a, ja·rik·a etc. remain as lower-confidence rows). Spelling of the walk synonym "Re.rama" vs "Re·mama" awaits T. Claude D sync: pulled to 1f2e11a; D's staged items for A are the mang no-dot correction (112 rows, needs B engine+tests in the same push) and OCR batch Me..Mau (61 entries); neither started.
