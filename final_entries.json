@@ -26877,7 +26877,7 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
+    "notes": "SUPERSEDED — NV-213"
   },
   {
     "english": "move",
@@ -37576,5 +37576,13 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-209 (2026-10-26): Project Owner directive (chat, new word), not a Thangseng quote. Owner typed 'Re.mola'; period read as raka typo per standing rule, written Re·mola. Same root re· as re·a (go) + -mola (together).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "mouse",
+    "garo": "Mangchut",
+    "pos": "n.",
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-213"
   }
 ]

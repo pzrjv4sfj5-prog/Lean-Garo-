@@ -4573,13 +4573,17 @@
     "english": "whose?",
     "garo": "Sani?",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "pos": "pron.",
+    "notes": "VERIFIED/HIGH — NV-213 (2026-10-26): Project Owner-confirmed (chat) as taken from the native dictionary. Project Owner directive, not a Thangseng quote."
   },
   {
     "english": "someone's",
     "garo": "Saniba",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "pos": "pron.",
+    "notes": "VERIFIED/HIGH — NV-213 (2026-10-26): Project Owner-confirmed (chat) as taken from the native dictionary. Project Owner directive, not a Thangseng quote."
   },
   {
     "english": "everyone's",
@@ -37218,8 +37222,8 @@
     "pos": null,
     "category": "animals",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-213 (2026-10-26): Project Owner supplied mouse = Mangchut (native dictionary). Retained per citation discipline, not deleted.",
+    "confidence": "superseded"
   },
   {
     "english": "move",
@@ -79839,5 +79843,23 @@
     "classifier": null,
     "notes": "UNVERIFIED/rule-derived — NV-211 (2026-10-26): negative of the Owner-ruled 'i can X' (X-na man·a) by -ja on man· (RULE-017); man·ja is native-attested ('Anga man·ja', 'Angade Garo man·ja'). No native quote for this exact sentence.",
     "confidence": "unverified"
+  },
+  {
+    "english": "whose",
+    "garo": "Sani",
+    "pos": "pron.",
+    "category": "general",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-213 (2026-10-26): Project Owner-confirmed (chat) as taken from the native dictionary. Project Owner directive, not a Thangseng quote.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "mouse",
+    "garo": "Mangchut",
+    "pos": "n.",
+    "category": "animals",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-213 (2026-10-26): Project Owner-supplied new word, confirmed (chat) as taken from the native dictionary. Project Owner directive, not a Thangseng quote.",
+    "confidence": "verified_high"
   }
 ]

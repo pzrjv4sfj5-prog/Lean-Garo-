@@ -17,3 +17,6 @@ Authority: Project Owner rulings in chat (man·a and ama are synonyms; `Anga Gar
 
 ## Not closable without new evidence
 - sani/saniba (whose/someone's) stay unverified; `Shall I sit?` has no data; `uan`/`uamangko` generation and the `i cannot X` engine path are Claude B.
+
+## NV-213 (A), 2026-10-26: sani/saniba closed, Mangchut added
+Authority: Project Owner chat directive. `Sani?`/`whose` and `Saniba`/`someone's` came from the native dictionary; promoted unverified -> verified_high (provenance: Project Owner-confirmed, not a Thangseng quote). Added bare `whose` = Sani. New word `mouse` (n.) = Mangchut, verified_high; older unverified `me·se` superseded (retained, not deleted). `mouse` allowlisted in known_dictionary_conflicts.json (superseded row still counted by Check C, same as other keys). Test: tests/unit/nv213_sani_mangchut.test.js. Closes open item sani/saniba/whose.
