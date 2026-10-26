@@ -1,0 +1,1535 @@
+{
+ "schema": "lean-garo.claude_d_audit.v1",
+ "title": "mang classifier raka-dot audit of master_dictionary.json",
+ "date": "2026-10-26",
+ "directive": "Project Owner, chat 2026-10-26: mang takes NO dot/raka when used as a classifier (supersedes the 2026-09-28/29 statement recorded in tests/unit/mang_king_raka_dot.test.js)",
+ "master_base": "git 16a8c03 (row_index = position in master_dictionary.json at this commit, after the 2026-10-26 owner dedup)",
+ "master_records": 10160,
+ "method": "regex over every master garo: whole-word mang + (raka/hyphen/dot) + number suffix {sa,gni,gittam,bri,bonga,dok,sni,chet,sku,chi,chiking,kolgrik,ritchasa}; case/U+02D9 normalised",
+ "summary": {
+  "dotted_classifier_rows_to_correct": 112,
+  "by_kind": {
+   "simple_1_10": 60,
+   "compound_11_20": 50,
+   "in_sentence": 1,
+   "hundred": 1
+  },
+  "by_confidence": {
+   "verified_high": 112
+  },
+  "excluded_lexical_or_headword": 21,
+  "excluded_embedded": 3,
+  "already_nodot_classifier_rows": 16
+ },
+ "rows_to_correct": [
+  {
+   "row_index": 1217,
+   "garo": "menggo mang·gni",
+   "english": "two cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo manggni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 2040,
+   "garo": "na·tok mang·gittam",
+   "english": "the three fish",
+   "confidence": "verified_high",
+   "category": "food",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok manggittam",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 2891,
+   "garo": "achak mang·sa",
+   "english": "one dog",
+   "confidence": "verified_high",
+   "category": "numbers",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangsa",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 3141,
+   "garo": "achak mang·gni",
+   "english": "two dogs",
+   "confidence": "verified_high",
+   "category": "numbers",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak manggni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8618,
+   "garo": "achak mang·gittam",
+   "english": "three dogs",
+   "confidence": "verified_high",
+   "category": "numbers",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak manggittam",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8619,
+   "garo": "achak mang·bri",
+   "english": "four dogs",
+   "confidence": "verified_high",
+   "category": "numbers",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangbri",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8620,
+   "garo": "achak mang·gittam",
+   "english": "three dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak manggittam",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8621,
+   "garo": "achak mang·bri",
+   "english": "four dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangbri",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8626,
+   "garo": "achak mang·bonga",
+   "english": "five dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangbonga",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8627,
+   "garo": "achak mang·dok",
+   "english": "six dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangdok",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8628,
+   "garo": "achak mang·sni",
+   "english": "seven dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangsni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8629,
+   "garo": "achak mang·chet",
+   "english": "eight dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangchet",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8630,
+   "garo": "achak mang·sku",
+   "english": "nine dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangsku",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8631,
+   "garo": "achak mang·chiking",
+   "english": "ten dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "achak mangchiking",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8632,
+   "garo": "menggo mang·sa",
+   "english": "one cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo mangsa",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8633,
+   "garo": "menggo mang·gittam",
+   "english": "three cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo manggittam",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8634,
+   "garo": "menggo mang·bri",
+   "english": "four cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo mangbri",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8635,
+   "garo": "menggo mang·bonga",
+   "english": "five cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo mangbonga",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8636,
+   "garo": "menggo mang·dok",
+   "english": "six cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo mangdok",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8637,
+   "garo": "menggo mang·sni",
+   "english": "seven cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo mangsni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8638,
+   "garo": "menggo mang·chet",
+   "english": "eight cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo mangchet",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8639,
+   "garo": "menggo mang·sku",
+   "english": "nine cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo mangsku",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8640,
+   "garo": "menggo mang·chiking",
+   "english": "ten cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "menggo mangchiking",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8642,
+   "garo": "do·o mang·chiking",
+   "english": "ten bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangchiking",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8643,
+   "garo": "do·o mang·chiking",
+   "english": "ten birds",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangchiking",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8644,
+   "garo": "do·o mang·sa",
+   "english": "one bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangsa",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8645,
+   "garo": "do·o mang·gittam",
+   "english": "three bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o manggittam",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8646,
+   "garo": "do·o mang·gittam",
+   "english": "three birds",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o manggittam",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8647,
+   "garo": "do·o mang·bri",
+   "english": "four bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangbri",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8648,
+   "garo": "do·o mang·bri",
+   "english": "four birds",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangbri",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8649,
+   "garo": "do·o mang·bonga",
+   "english": "five bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangbonga",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8650,
+   "garo": "do·o mang·bonga",
+   "english": "five birds",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangbonga",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8651,
+   "garo": "do·o mang·dok",
+   "english": "six bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangdok",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8652,
+   "garo": "do·o mang·dok",
+   "english": "six birds",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangdok",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8653,
+   "garo": "do·o mang·sni",
+   "english": "seven bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangsni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8654,
+   "garo": "do·o mang·sni",
+   "english": "seven birds",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangsni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8655,
+   "garo": "do·o mang·chet",
+   "english": "eight bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangchet",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8656,
+   "garo": "do·o mang·chet",
+   "english": "eight birds",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangchet",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8657,
+   "garo": "do·o mang·sku",
+   "english": "nine bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangsku",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8658,
+   "garo": "do·o mang·sku",
+   "english": "nine birds",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "do·o mangsku",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8659,
+   "garo": "achak mang·Chi·sa",
+   "english": "eleven dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·sa",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8660,
+   "garo": "achak mang·Chi·gni",
+   "english": "twelve dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·gni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8661,
+   "garo": "achak mang·Chi·gittam",
+   "english": "thirteen dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·gittam",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8662,
+   "garo": "achak mang·Chi·bri",
+   "english": "fourteen dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·bri",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8663,
+   "garo": "achak mang·Chi·bonga",
+   "english": "fifteen dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·bonga",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8664,
+   "garo": "achak mang·Chi·dok",
+   "english": "sixteen dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·dok",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8665,
+   "garo": "achak mang·Chi·sni",
+   "english": "seventeen dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·sni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8666,
+   "garo": "achak mang·Chi·chet",
+   "english": "eighteen dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·chet",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8667,
+   "garo": "achak mang·Chi·sku",
+   "english": "nineteen dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangChi·sku",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8668,
+   "garo": "achak mang·Kolgrik",
+   "english": "twenty dog",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "achak mangKolgrik",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8669,
+   "garo": "menggo mang·Chi·sa",
+   "english": "eleven cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·sa",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8670,
+   "garo": "menggo mang·Chi·gni",
+   "english": "twelve cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·gni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8671,
+   "garo": "menggo mang·Chi·gittam",
+   "english": "thirteen cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·gittam",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8672,
+   "garo": "menggo mang·Chi·bri",
+   "english": "fourteen cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·bri",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8673,
+   "garo": "menggo mang·Chi·bonga",
+   "english": "fifteen cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·bonga",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8674,
+   "garo": "menggo mang·Chi·dok",
+   "english": "sixteen cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·dok",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8675,
+   "garo": "menggo mang·Chi·sni",
+   "english": "seventeen cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·sni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8676,
+   "garo": "menggo mang·Chi·chet",
+   "english": "eighteen cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·chet",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8677,
+   "garo": "menggo mang·Chi·sku",
+   "english": "nineteen cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangChi·sku",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8678,
+   "garo": "menggo mang·Kolgrik",
+   "english": "twenty cat",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "menggo mangKolgrik",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8679,
+   "garo": "do·o mang·Chi·sa",
+   "english": "eleven bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·sa",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8680,
+   "garo": "do·o mang·Chi·gni",
+   "english": "twelve bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·gni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8681,
+   "garo": "do·o mang·Chi·gittam",
+   "english": "thirteen bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·gittam",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8682,
+   "garo": "do·o mang·Chi·bri",
+   "english": "fourteen bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·bri",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8683,
+   "garo": "do·o mang·Chi·bonga",
+   "english": "fifteen bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·bonga",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8684,
+   "garo": "do·o mang·Chi·dok",
+   "english": "sixteen bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·dok",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8685,
+   "garo": "do·o mang·Chi·sni",
+   "english": "seventeen bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·sni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8686,
+   "garo": "do·o mang·Chi·chet",
+   "english": "eighteen bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·chet",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8687,
+   "garo": "do·o mang·Chi·sku",
+   "english": "nineteen bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangChi·sku",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8688,
+   "garo": "do·o mang·Kolgrik",
+   "english": "twenty bird",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "do·o mangKolgrik",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8716,
+   "garo": "na·tok mang·sa",
+   "english": "one fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangsa",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8717,
+   "garo": "na·tok mang·sa",
+   "english": "one fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangsa",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8718,
+   "garo": "na·tok mang·gni",
+   "english": "two fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok manggni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8719,
+   "garo": "na·tok mang·gni",
+   "english": "two fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok manggni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8720,
+   "garo": "na·tok mang·gittam",
+   "english": "three fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok manggittam",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8721,
+   "garo": "na·tok mang·gittam",
+   "english": "three fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok manggittam",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8722,
+   "garo": "na·tok mang·bri",
+   "english": "four fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangbri",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8723,
+   "garo": "na·tok mang·bri",
+   "english": "four fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangbri",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8724,
+   "garo": "na·tok mang·bonga",
+   "english": "five fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangbonga",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8725,
+   "garo": "na·tok mang·bonga",
+   "english": "five fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangbonga",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8726,
+   "garo": "na·tok mang·dok",
+   "english": "six fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangdok",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8727,
+   "garo": "na·tok mang·dok",
+   "english": "six fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangdok",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8728,
+   "garo": "na·tok mang·sni",
+   "english": "seven fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangsni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8729,
+   "garo": "na·tok mang·sni",
+   "english": "seven fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangsni",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8730,
+   "garo": "na·tok mang·chet",
+   "english": "eight fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangchet",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8731,
+   "garo": "na·tok mang·chet",
+   "english": "eight fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangchet",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8732,
+   "garo": "na·tok mang·sku",
+   "english": "nine fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangsku",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8733,
+   "garo": "na·tok mang·sku",
+   "english": "nine fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangsku",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8734,
+   "garo": "na·tok mang·chiking",
+   "english": "ten fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangchiking",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8735,
+   "garo": "na·tok mang·chiking",
+   "english": "ten fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "simple_1_10",
+   "proposed_garo_boundary_only": "na·tok mangchiking",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 8736,
+   "garo": "na·tok mang·Chi·sa",
+   "english": "eleven fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·sa",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8737,
+   "garo": "na·tok mang·Chi·sa",
+   "english": "eleven fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·sa",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8738,
+   "garo": "na·tok mang·Chi·gni",
+   "english": "twelve fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·gni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8739,
+   "garo": "na·tok mang·Chi·gni",
+   "english": "twelve fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·gni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8740,
+   "garo": "na·tok mang·Chi·gittam",
+   "english": "thirteen fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·gittam",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8741,
+   "garo": "na·tok mang·Chi·gittam",
+   "english": "thirteen fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·gittam",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8742,
+   "garo": "na·tok mang·Chi·bri",
+   "english": "fourteen fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·bri",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8743,
+   "garo": "na·tok mang·Chi·bri",
+   "english": "fourteen fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·bri",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8744,
+   "garo": "na·tok mang·Chi·bonga",
+   "english": "fifteen fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·bonga",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8745,
+   "garo": "na·tok mang·Chi·bonga",
+   "english": "fifteen fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·bonga",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8746,
+   "garo": "na·tok mang·Chi·dok",
+   "english": "sixteen fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·dok",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8747,
+   "garo": "na·tok mang·Chi·dok",
+   "english": "sixteen fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·dok",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8748,
+   "garo": "na·tok mang·Chi·sni",
+   "english": "seventeen fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·sni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8749,
+   "garo": "na·tok mang·Chi·sni",
+   "english": "seventeen fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·sni",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8750,
+   "garo": "na·tok mang·Chi·chet",
+   "english": "eighteen fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·chet",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8751,
+   "garo": "na·tok mang·Chi·chet",
+   "english": "eighteen fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·chet",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8752,
+   "garo": "na·tok mang·Chi·sku",
+   "english": "nineteen fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·sku",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8753,
+   "garo": "na·tok mang·Chi·sku",
+   "english": "nineteen fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangChi·sku",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8754,
+   "garo": "na·tok mang·Kolgrik",
+   "english": "twenty fish",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangKolgrik",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 8755,
+   "garo": "na·tok mang·Kolgrik",
+   "english": "twenty fishs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "compound_11_20",
+   "proposed_garo_boundary_only": "na·tok mangKolgrik",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  },
+  {
+   "row_index": 9602,
+   "garo": "Ango na·tok mang·gittam donga",
+   "english": "i have three fish",
+   "confidence": "verified_high",
+   "category": "food",
+   "kind": "in_sentence",
+   "proposed_garo_boundary_only": "Ango na·tok manggittam donga",
+   "needs_A_decision": false,
+   "note": "mechanical boundary change"
+  },
+  {
+   "row_index": 9905,
+   "garo": "Achak mang·ritchasa",
+   "english": "one hundred dogs",
+   "confidence": "verified_high",
+   "category": "animals",
+   "kind": "hundred",
+   "proposed_garo_boundary_only": "Achak mangritchasa",
+   "needs_A_decision": true,
+   "note": "mechanical: only the mang·->mang boundary is changed; internal dots/capitalisation in the suffix (e.g. ·Chi·sa, ·Kolgrik) untouched"
+  }
+ ],
+ "excluded": [
+  {
+   "row_index": 2781,
+   "garo": "mang·rak·a",
+   "english": "Healthy",
+   "confidence": "superseded",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 3079,
+   "garo": "mang·rak·a",
+   "english": "Strong",
+   "confidence": "superseded",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 3126,
+   "garo": "mang·meng·a",
+   "english": "Tired",
+   "confidence": "superseded",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 3257,
+   "garo": "mang·",
+   "english": "animals",
+   "confidence": "unverified",
+   "reason": "bare classifier headword (per 2026-09-13 scope, untouched)"
+  },
+  {
+   "row_index": 3264,
+   "garo": "mang·kal·a",
+   "english": "annoy",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 3265,
+   "garo": "mang·meng·dil·a",
+   "english": "annoy",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 3614,
+   "garo": "mang·tip",
+   "english": "caterpillar",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 3619,
+   "garo": "mang·gu·ak",
+   "english": "centipede",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4234,
+   "garo": "mang·kal·a",
+   "english": "fool around",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4271,
+   "garo": "mang·kal·a",
+   "english": "fuss with",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4272,
+   "garo": "mang·meng·a",
+   "english": "fussy",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4329,
+   "garo": "mang·ru·dam",
+   "english": "graveyard",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4465,
+   "garo": "mang·meng·a",
+   "english": "impatient",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4516,
+   "garo": "mang·sok·a",
+   "english": "intend",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4517,
+   "garo": "mang·song·a",
+   "english": "intend",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4527,
+   "garo": "mang·meng·a",
+   "english": "irritated",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4812,
+   "garo": "mang·kal·a",
+   "english": "mischief",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 4835,
+   "garo": "mang·wa·a",
+   "english": "mourn",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 5048,
+   "garo": "mang·sok·a",
+   "english": "plan",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 5049,
+   "garo": "mang·song·a",
+   "english": "plan",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 5808,
+   "garo": "mang·kal·a",
+   "english": "tease",
+   "confidence": "unverified",
+   "reason": "lexical word containing mang· (not a classifier use)"
+  },
+  {
+   "row_index": 3234,
+   "garo": "mi·mang·sa",
+   "english": "agreement",
+   "reason": "mang· embedded inside another word (mi·mang·sa), not the classifier"
+  },
+  {
+   "row_index": 5220,
+   "garo": "mi·mang·sa",
+   "english": "reconciliation",
+   "reason": "mang· embedded inside another word (mi·mang·sa), not the classifier"
+  },
+  {
+   "row_index": 5413,
+   "garo": "mi·mang·sa",
+   "english": "settlement",
+   "reason": "mang· embedded inside another word (mi·mang·sa), not the classifier"
+  }
+ ],
+ "already_nodot_rows_for_info": [
+  {
+   "row_index": 0,
+   "garo": "do·o manggni",
+   "english": "two birds",
+   "confidence": "unverified"
+  },
+  {
+   "row_index": 1081,
+   "garo": "do·a mangchiking",
+   "english": "ten birds",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 1182,
+   "garo": "do·o manggni",
+   "english": "two fishs",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 1183,
+   "garo": "achak manggni",
+   "english": "three dogs",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 1184,
+   "garo": "na·tok manggni",
+   "english": "three birds",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 1185,
+   "garo": "na·tok manggni",
+   "english": "three fishs",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 1216,
+   "garo": "achak manggni",
+   "english": "two dog",
+   "confidence": "unverified"
+  },
+  {
+   "row_index": 1218,
+   "garo": "do·o manggni",
+   "english": "two bird",
+   "confidence": "unverified"
+  },
+  {
+   "row_index": 1221,
+   "garo": "achak manggni",
+   "english": "three dog",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 1222,
+   "garo": "menggo manggni",
+   "english": "three cat",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 1223,
+   "garo": "na·tok manggni",
+   "english": "three bird",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 2038,
+   "garo": "achak mangsa",
+   "english": "the one dog",
+   "confidence": "unverified"
+  },
+  {
+   "row_index": 2039,
+   "garo": "do·o manggni",
+   "english": "the two birds",
+   "confidence": "unverified"
+  },
+  {
+   "row_index": 3103,
+   "garo": "do·a mangchiking",
+   "english": "ten birds",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 9601,
+   "garo": "dokka manggni",
+   "english": "six dogs",
+   "confidence": "superseded"
+  },
+  {
+   "row_index": 9603,
+   "garo": "chet manggni",
+   "english": "eight dogs",
+   "confidence": "superseded"
+  }
+ ],
+ "downstream_for_claude_b": [
+  "src/garo_classifier.js line 198: RAKA_CLASSIFIERS includes mang (and the countNoun/compose paths that emit mang·)",
+  "14 unit-test files assert dotted mang forms: bug2_classifier_20_99_compound, bug3_exact_hundred, bug4_hundred_thousand_word_parsing, bug5_counting_phrase_es_plurals, counted_adjective_noun, counted_subject_formula_b, mang_king_raka_dot, noun_subject_object_ko, nv181_po_examples, prepare-data, rang_subject_plural, rc037_bird_classifier, rong_classifier, translationEngine",
+  "src/compiled_dict.json and compiled_dict_alternates.json regenerate via prepare-data.js after master is corrected",
+  "master, engine and tests must land together: correcting master alone turns 7+ unit tests red and blocks the Render build"
+ ],
+ "other_observations": [
+  "16 legacy no-dot mang rows already exist (superseded/unverified) and several carry wrong English (e.g. achak manggni = three dogs); not touched",
+  "English glosses such as \"one fishs\", \"two fishs\" appear in the verified rows; not touched here",
+  "king classifier (mang_king_raka_dot test) is out of scope of this directive; not audited"
+ ],
+ "claude_d_changes_to_master_dictionary": "none for this audit (audit and flag only)"
+}
