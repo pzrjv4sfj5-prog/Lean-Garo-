@@ -304,7 +304,7 @@ export async function translate(input) {
     result = { ...result, garo: result.garo.replace(/\buamangko\b/gi, m => (m[0] === 'U' ? 'Uamangna' : 'uamangna')) };
   }
   // NV-212 (Thangseng 2026-10-25): `Look at that dog.` = `Ua achakko nibo` (that = Ua, noun takes -ko, verb last).
-  // Bare `look at that` -> `Uko nibo` (same uko as attested `I see it` = Anga uko nika; derived, not a native quote).
+  // Bare `look at that` -> `Uko nibo` (same uko as attested `I see it` = Anga uko nika; confirmed correct by the PO 2026-10-25).
   {
     const ml = String(input).trim().match(/^look\s+at\s+that(?:\s+([a-z]+))?\s*[!.]?$/i);
     if (ml) {
