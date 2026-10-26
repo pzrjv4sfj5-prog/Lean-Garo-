@@ -763,7 +763,7 @@
   "quick / hurry": "general",
   "look": "general",
   "tell me": "general",
-  "i know": "general",
+  "i know": "sentences",
   "no more": "general",
   "it exists / it's there": "general",
   "i don't care": "emotions",
@@ -4144,5 +4144,10 @@
   "he gives me water": "sentences",
   "she gives me water": "sentences",
   "because he gave me water i was very happy": "sentences",
-  "because she gave me water i was very happy": "sentences"
+  "because she gave me water i was very happy": "sentences",
+  "not (separate word ong·ja; negation is the suffix -ja)": "grammar",
+  "i cannot eat": "sentences",
+  "i cannot go": "sentences",
+  "i cannot work": "sentences",
+  "i cannot speak garo": "sentences"
 }

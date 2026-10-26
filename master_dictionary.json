@@ -4622,7 +4622,8 @@
     "english": "there",
     "garo": "Uano",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "verified_high",
+    "notes": "VERIFIED/HIGH — NV-211 (2026-10-26): attested inside verified NV-192 sentence 'Na·a uano roa badita bilsi ong·aha?' and parallels NV-195 bare `iano`. (uana rejected: no attestation.)"
   },
   {
     "english": "myself",
@@ -5030,7 +5031,8 @@
     "english": "i know",
     "garo": "Anga uia.",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-211 (2026-10-26): unverified, stray period; Anga + verified 'know'=hai·a is preferred. Retained per citation discipline. "
   },
   {
     "english": "no more",
@@ -17090,7 +17092,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH",
     "confidence": "verified_high"
   },
   {
@@ -18232,11 +18234,11 @@
   },
   {
     "english": "Fever",
-    "garo": "jom·a",
+    "garo": "joma",
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH | NV-211 (2026-10-26): spelling fixed jom·a -> joma (no raka): NV-196 says joma = get unwell, jom·a = sneak/slink; Wiktionary Garo 'joma' = to be ill, suffer, have a fever.",
     "confidence": "verified_high"
   },
   {
@@ -18613,7 +18615,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH",
     "confidence": "verified_high"
   },
   {
@@ -18802,7 +18804,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, NV-080): native gave BOTH 'Gitchima' (=git·chi) and 'kodal' (=ko·dal) as distinct valid forms — not a single winner, genuine dual-valid pair. The pickPrimary tie between them is expected/correct, not a defect.",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, NV-080): native gave BOTH 'Gitchima' (=git·chi) and 'kodal' (=ko·dal) as distinct valid forms — not a single winner, genuine dual-valid pair. The pickPrimary tie between them is expected/correct, not a defect.",
     "confidence": "verified_high"
   },
   {
@@ -18838,7 +18840,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "VERIFIED/HIGH",
     "confidence": "verified_high"
   },
   {
@@ -19152,7 +19154,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH (alternate) — reopened and corrected by NV-145 (2026-09-06 evening, direct Thangseng relay): this same-session citation confirms 'bol bijak' (tree+leaf compound) as a genuine alternate form for singular 'leaf', existing alongside 'bijak' rather than being a rejected candidate. 'bi·jak'/'bijak' stays primary per this same relay. Supersedes this row's prior NV-080 framing ('not selected'), which is now understood to have been a primary-selection choice, not a rejection of validity.",
+    "notes": "variant/VERIFIED/HIGH (alternate) — reopened and corrected by NV-145 (2026-09-06 evening, direct Thangseng relay): this same-session citation confirms 'bol bijak' (tree+leaf compound) as a genuine alternate form for singular 'leaf', existing alongside 'bijak' rather than being a rejected candidate. 'bi·jak'/'bijak' stays primary per this same relay. Supersedes this row's prior NV-080 framing ('not selected'), which is now understood to have been a primary-selection choice, not a rejection of validity.",
     "confidence": "verified_high"
   },
   {
@@ -20966,11 +20968,11 @@
   },
   {
     "english": "Sleepy",
-    "garo": "mik·gil jom·a",
+    "garo": "mik·gil joma",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH | NV-211 (2026-10-26): spelling fixed jom·a -> joma (no raka): NV-196 says joma = get unwell, jom·a = sneak/slink; Wiktionary Garo 'joma' = to be ill, suffer, have a fever.",
     "confidence": "verified_high"
   },
   {
@@ -22465,7 +22467,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2 / AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json), promoting on cited native evidence: english_can/english_able both = [ama, man·a]. Supporting relayed native evidence (Project Owner-confirmed, Thangseng via Tridip WhatsApp): 'It is better to leave ama and man·a to be used freely; no strict rule regarding use/non-use of one or the other is recalled.' Parallels the already-VERIFIED/HIGH can->man·a entry. Promoted from variant/UNVERIFIED/HIGH. Also tagged variant per NV-160/RULE-050 closure (2026-09-21) — same ama/man·a ability-modal synonymy.",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-08, .ai/PROJECT_OWNER_DIRECTIVE_PROTOCOL.json schema 2026-09-08.2 / AGENT_A_B_C_LANGUAGE_ENGINEERING_HANDOFF_20260908.json), promoting on cited native evidence: english_can/english_able both = [ama, man·a]. Supporting relayed native evidence (Project Owner-confirmed, Thangseng via Tridip WhatsApp): 'It is better to leave ama and man·a to be used freely; no strict rule regarding use/non-use of one or the other is recalled.' Parallels the already-VERIFIED/HIGH can->man·a entry. Promoted from variant/UNVERIFIED/HIGH. Also tagged variant per NV-160/RULE-050 closure (2026-09-21) — same ama/man·a ability-modal synonymy.",
     "confidence": "verified_high"
   },
   {
@@ -22897,7 +22899,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-151 (2026-09-07, direct Thangseng relay via Project Owner): confirmed synonymous with 'saksan' (used in the 'leave me alone' sentence, NV-146) -- both mean 'alone', interchangeable. Closes the NV-146 open tension. Not addressed here: whether 'saksan' also separately covers 'loneliness' (see unverified 'loneliness'=Saksan row) -- still open.",
+    "notes": "variant/VERIFIED/HIGH — NV-151 (2026-09-07, direct Thangseng relay via Project Owner): confirmed synonymous with 'saksan' (used in the 'leave me alone' sentence, NV-146) -- both mean 'alone', interchangeable. Closes the NV-146 open tension. Not addressed here: whether 'saksan' also separately covers 'loneliness' (see unverified 'loneliness'=Saksan row) -- still open.",
     "confidence": "verified_high"
   },
   {
@@ -29562,11 +29564,11 @@
   },
   {
     "english": "doze",
-    "garo": "mik·gil jom·a",
+    "garo": "mik·gil joma",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
+    "notes": "variant/UNVERIFIED/HIGH | NV-211 (2026-10-26): spelling fixed jom·a -> joma (no raka): NV-196 says joma = get unwell, jom·a = sneak/slink; Wiktionary Garo 'joma' = to be ill, suffer, have a fever.",
     "confidence": "unverified"
   },
   {
@@ -33918,11 +33920,11 @@
   },
   {
     "english": "improve",
-    "garo": "jom·a gri·a",
+    "garo": "joma gri·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
+    "notes": "variant/UNVERIFIED/HIGH | NV-211 (2026-10-26): spelling fixed jom·a -> joma (no raka): NV-196 says joma = get unwell, jom·a = sneak/slink; Wiktionary Garo 'joma' = to be ill, suffer, have a fever.",
     "confidence": "unverified"
   },
   {
@@ -45213,11 +45215,11 @@
   },
   {
     "english": "suffer",
-    "garo": "jom·a",
+    "garo": "joma",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
+    "notes": "variant/UNVERIFIED/HIGH | NV-211 (2026-10-26): spelling fixed jom·a -> joma (no raka): NV-196 says joma = get unwell, jom·a = sneak/slink; Wiktionary Garo 'joma' = to be ill, suffer, have a fever.",
     "confidence": "unverified"
   },
   {
@@ -47445,11 +47447,11 @@
   },
   {
     "english": "unhappy",
-    "garo": "gi·sik jom·a",
+    "garo": "gi·sik joma",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:gi-sik sa-a",
+    "notes": "UNVERIFIED/HIGH v:gi-sik sa-a | NV-211 (2026-10-26): spelling fixed jom·a -> joma (no raka): NV-196 says joma = get unwell, jom·a = sneak/slink; Wiktionary Garo 'joma' = to be ill, suffer, have a fever.",
     "confidence": "unverified"
   },
   {
@@ -47589,11 +47591,11 @@
   },
   {
     "english": "upset",
-    "garo": "gi·sik jom·a",
+    "garo": "gi·sik joma",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:pang-pil-ek-chu-pil-ek / ul-tai-a",
+    "notes": "UNVERIFIED/HIGH v:pang-pil-ek-chu-pil-ek / ul-tai-a | NV-211 (2026-10-26): spelling fixed jom·a -> joma (no raka): NV-196 says joma = get unwell, jom·a = sneak/slink; Wiktionary Garo 'joma' = to be ill, suffer, have a fever.",
     "confidence": "unverified"
   },
   {
@@ -66884,7 +66886,7 @@
     "category": "grammar",
     "pos": "pr.",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Relative pronoun 'where'. Free variant of 'jeo'. Reconfirmed as native's final word 2026-08-06 (Project Owner relay).",
+    "notes": "variant/VERIFIED/HIGH — NV-054, Thangseng direct native validation via Tridip WhatsApp relay, 2026-08-03. Relative pronoun 'where'. Free variant of 'jeo'. Reconfirmed as native's final word 2026-08-06 (Project Owner relay).",
     "confidence": "verified_high"
   },
   {
@@ -67138,7 +67140,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-164 (2026-09-22, Project Owner direct decision): resolves the NV-060/NV-080 contradiction below by ruling all three forms ('Bajal sambaon', 'Bajalde sambaon', 'Bajalara sambaon') coexisting free-variant synonyms rather than NV-080 rejecting this one — same resolution class as NV-080's own 'hoe' dual-valid tie (cited in the same relay: 'tie is correct not a defect'). Un-superseded from that prior status. Original citation: NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Topic marker -de. Coexists with 'Bajalara sambaon' (-ara marker, see separate entry) and 'Bajal sambaon' (unsuffixed, NV-080).",
+    "notes": "variant/VERIFIED/HIGH — NV-164 (2026-09-22, Project Owner direct decision): resolves the NV-060/NV-080 contradiction below by ruling all three forms ('Bajal sambaon', 'Bajalde sambaon', 'Bajalara sambaon') coexisting free-variant synonyms rather than NV-080 rejecting this one — same resolution class as NV-080's own 'hoe' dual-valid tie (cited in the same relay: 'tie is correct not a defect'). Un-superseded from that prior status. Original citation: NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Topic marker -de. Coexists with 'Bajalara sambaon' (-ara marker, see separate entry) and 'Bajal sambaon' (unsuffixed, NV-080).",
     "confidence": "verified_high"
   },
   {
@@ -67147,7 +67149,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-164 (2026-09-22, Project Owner direct decision): resolves the NV-060/NV-080 contradiction below by ruling all three forms ('Bajal sambaon', 'Bajalde sambaon', 'Bajalara sambaon') coexisting free-variant synonyms rather than NV-080 rejecting this one — same resolution class as NV-080's own 'hoe' dual-valid tie (cited in the same relay: 'tie is correct not a defect'). Un-superseded from that prior status. Original citation: NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Alternate form of 'Bajalde sambaon', -ara marker instead of -de; distinction between the two markers still not characterized (open, unaffected by this decision). Coexists with unsuffixed 'Bajal sambaon' (NV-080).",
+    "notes": "variant/VERIFIED/HIGH — NV-164 (2026-09-22, Project Owner direct decision): resolves the NV-060/NV-080 contradiction below by ruling all three forms ('Bajal sambaon', 'Bajalde sambaon', 'Bajalara sambaon') coexisting free-variant synonyms rather than NV-080 rejecting this one — same resolution class as NV-080's own 'hoe' dual-valid tie (cited in the same relay: 'tie is correct not a defect'). Un-superseded from that prior status. Original citation: NV-060, Thangseng direct native validation via Tridip WhatsApp, 2026-08-05. Alternate form of 'Bajalde sambaon', -ara marker instead of -de; distinction between the two markers still not characterized (open, unaffected by this decision). Coexists with unsuffixed 'Bajal sambaon' (NV-080).",
     "confidence": "verified_high"
   },
   {
@@ -72518,7 +72520,7 @@
     "pos": "adj.",
     "category": "general",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-082, Thangseng relay via Tridip, 2026-08-19. Ordinal/final sense specifically 'the last one / last person'. Distinct from bon·kamgipa (final, e.g. 'last page') and from Mija (temporal recency — see NV-081). Closes item 26 together with bon·kamgipa.",
+    "notes": "variant/VERIFIED/HIGH — NV-082, Thangseng relay via Tridip, 2026-08-19. Ordinal/final sense specifically 'the last one / last person'. Distinct from bon·kamgipa (final, e.g. 'last page') and from Mija (temporal recency — see NV-081). Closes item 26 together with bon·kamgipa.",
     "confidence": "verified_high"
   },
   {
@@ -73960,7 +73962,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-02, NV-108), answering the word-order half of relay item 1 (docs/THANGSENG_RELAY_QUESTION_20260901B.md). Confirms the ability modal 'can' is placed after the infinitive-marked main verb, at the end of the sentence: Subject + Object + Verb-na + can-word. Uses `man·a` here (not `ama`) — see NV-108 for the full discussion; this does not resolve whether `ama`/`man·a` are always interchangeable.",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-02, NV-108), answering the word-order half of relay item 1 (docs/THANGSENG_RELAY_QUESTION_20260901B.md). Confirms the ability modal 'can' is placed after the infinitive-marked main verb, at the end of the sentence: Subject + Object + Verb-na + can-word. Uses `man·a` here (not `ama`) — see NV-108 for the full discussion; this does not resolve whether `ama`/`man·a` are always interchangeable. | NV-211 (2026-10-26): Project Owner re-ruled in chat: man·a and ama are synonyms; 'Anga Garo aganna man.a.' confirmed (period = raka/sentence end).",
     "confidence": "verified_high"
   },
   {
@@ -73978,7 +73980,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — alternate rendering, Thangseng direct confirmation (2026-09-02, NV-110). Given exactly as relayed, without 'nok'/house stated explicitly — quoted verbatim, not corrected or assumed to be an omission. See the other two rows sharing this english key for the other two valid renderings.",
+    "notes": "variant/VERIFIED/HIGH — alternate rendering, Thangseng direct confirmation (2026-09-02, NV-110). Given exactly as relayed, without 'nok'/house stated explicitly — quoted verbatim, not corrected or assumed to be an omission. See the other two rows sharing this english key for the other two valid renderings.",
     "confidence": "verified_high"
   },
   {
@@ -73987,7 +73989,7 @@
     "pos": null,
     "category": "phrases",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — alternate rendering, Thangseng direct confirmation (2026-09-02, NV-110). See the other two rows sharing this english key for the other two valid renderings; Thangseng noted stress may differ between them but all three are natural.",
+    "notes": "variant/VERIFIED/HIGH — alternate rendering, Thangseng direct confirmation (2026-09-02, NV-110). See the other two rows sharing this english key for the other two valid renderings; Thangseng noted stress may differ between them but all three are natural.",
     "confidence": "verified_high"
   },
   {
@@ -74019,14 +74021,14 @@
     "english": "i can eat",
     "garo": "Anga cha·na man·a",
     "category": "phrases",
-    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
     "english": "i can go",
     "garo": "Anga re·angna ama",
     "category": "phrases",
-    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
@@ -74047,7 +74049,7 @@
     "english": "i can work",
     "garo": "Anga kam ka·na man·a",
     "category": "phrases",
-    "notes": "variant/VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
+    "notes": "VERIFIED/HIGH — Thangseng direct confirmation via Project Owner relay (2026-09-03, NV-117), closing the ama/man·a identity question with a real native citation (not just Project Owner instruction): both ama and man·a are valid/interchangeable in this exact slot. Tied variant, see sibling row for the other modal word. NV-160 (2026-09-21): Project Owner reconfirmed ama/man·a are full synonyms for the ability modal \"can\" across this paradigm — tagged variant so pickPrimary treats both as co-existing, not a forced primary.",
     "confidence": "verified_high"
   },
   {
@@ -77856,7 +77858,7 @@
     "garo": "Bia",
     "category": "general",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-09-19 (Project Owner relay, direct: \"Bia and Ua are synonyms, confirmed hence no confusion, we can use either\"). Confirmed synonym of the existing VERIFIED 'he / she'->'Ua' (2026-08-09) -- both usable, not merged into one row."
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-09-19 (Project Owner relay, direct: \"Bia and Ua are synonyms, confirmed hence no confusion, we can use either\"). Confirmed synonym of the existing VERIFIED 'he / she'->'Ua' (2026-08-09) -- both usable, not merged into one row."
   },
   {
     "english": "bark",
@@ -78004,7 +78006,7 @@
     "garo": "Ua Song·na man·a.",
     "category": "general",
     "pos": null,
-    "notes": "variant/VERIFIED/HIGH — NV-162 (2026-09-22, Thangseng direct WhatsApp confirmation, relayed by Tridip/Project Owner, 11:47am/12:02pm): Thangseng directly confirmed 'Ua Song·na ama.' / 'Ua Song·na man·a.' both correct for 'She can cook.' Closes the composed-but-unconfirmed candidate flagged in the 2026-09-21B session (built by rule composition — RULE-009 -na infinitive + RULE-050 ama/man·a synonymy — but deliberately not filed VERIFIED on Claude A's own inference at the time). Also the first native-verified bare-verb infinitive citation for the 'cook' (song-) root — the noun Song·timgipa/song·a (occupation sense) was the only prior native-adjacent form; this does not supersede those, distinct sense. Tagged variant, tied with the ama form above — both equally correct per Thangseng, no preference stated.",
+    "notes": "VERIFIED/HIGH — NV-162 (2026-09-22, Thangseng direct WhatsApp confirmation, relayed by Tridip/Project Owner, 11:47am/12:02pm): Thangseng directly confirmed 'Ua Song·na ama.' / 'Ua Song·na man·a.' both correct for 'She can cook.' Closes the composed-but-unconfirmed candidate flagged in the 2026-09-21B session (built by rule composition — RULE-009 -na infinitive + RULE-050 ama/man·a synonymy — but deliberately not filed VERIFIED on Claude A's own inference at the time). Also the first native-verified bare-verb infinitive citation for the 'cook' (song-) root — the noun Song·timgipa/song·a (occupation sense) was the only prior native-adjacent form; this does not supersede those, distinct sense. Tagged variant, tied with the ama form above — both equally correct per Thangseng, no preference stated.",
     "confidence": "verified_high"
   },
   {
@@ -79783,5 +79785,59 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-210 (2026-10-26): Project Owner-relayed native-writer text (pasted in chat; author unattributed, not a direct Thangseng quote; raw text not on file). Period/apostrophe/curly-apostrophe in Garo words written as raka ·. Explicit-pronoun form uses on·na, not on·ana (on·ana is the causal form).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "i know",
+    "garo": "Anga hai·a",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-211 (2026-10-26): Project Owner-delegated logic closure: Anga + know=hai·a (verified_high, variant/VERIFIED/HIGH) in the same shape as verified 'i ate'/'i am eating'. Not a direct native quote.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "not (separate word ong·ja; negation is the suffix -ja)",
+    "garo": "Ong·ja",
+    "pos": null,
+    "category": "grammar",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-211 (2026-10-26): NV-210 pasted native-writer text: ong·ja can mean 'not'; in sentences suffix -ja is appended to the adjective/verb (dal·ja = not big); ong·ja as a separate word gives a different sense (dal·gipa ong·ja = not the big one). Engine should keep using suffix -ja for plain negation.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i cannot eat",
+    "garo": "Anga cha·na man·ja",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "UNVERIFIED/rule-derived — NV-211 (2026-10-26): negative of the Owner-ruled 'i can X' (X-na man·a) by -ja on man· (RULE-017); man·ja is native-attested ('Anga man·ja', 'Angade Garo man·ja'). No native quote for this exact sentence.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "i cannot go",
+    "garo": "Anga re·angna man·ja",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "UNVERIFIED/rule-derived — NV-211 (2026-10-26): negative of the Owner-ruled 'i can X' (X-na man·a) by -ja on man· (RULE-017); man·ja is native-attested ('Anga man·ja', 'Angade Garo man·ja'). No native quote for this exact sentence.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "i cannot work",
+    "garo": "Anga kam ka·na man·ja",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "UNVERIFIED/rule-derived — NV-211 (2026-10-26): negative of the Owner-ruled 'i can X' (X-na man·a) by -ja on man· (RULE-017); man·ja is native-attested ('Anga man·ja', 'Angade Garo man·ja'). No native quote for this exact sentence.",
+    "confidence": "unverified"
+  },
+  {
+    "english": "i cannot speak garo",
+    "garo": "Anga Garo aganna man·ja",
+    "pos": null,
+    "category": "sentences",
+    "classifier": null,
+    "notes": "UNVERIFIED/rule-derived — NV-211 (2026-10-26): negative of the Owner-ruled 'i can X' (X-na man·a) by -ja on man· (RULE-017); man·ja is native-attested ('Anga man·ja', 'Angade Garo man·ja'). No native quote for this exact sentence.",
+    "confidence": "unverified"
   }
 ]
